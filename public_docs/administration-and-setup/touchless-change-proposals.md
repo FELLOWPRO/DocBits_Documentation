@@ -6,13 +6,13 @@ Une recommandation peut s'accompagner d'une **proposition de modification**, un 
 1. **Aperçu** : montre la modification (valeur actuelle → valeur proposée) et ce que DocBits en attend. Rien n'est enregistré. **Appliquer** n'est possible qu'après avoir consulté un aperçu.
 2. **Appliquer** : enregistre exactement la modification prévisualisée. Elle est consignée dans le journal.
 3. **Mesurer** : DocBits compare le taux touchless du même type de document **avant et après**, sur des périodes de même durée. Il faut au moins **20 documents** dans chaque période, sinon il indique *non mesurable*.
-4. **Annuler** : reprend la modification.
+4. **Annuler** : rétablit le paramètre si la proposition permet ce retour. Vérifiez sa disponibilité et la valeur restaurée.
 
 {% hint style="warning" %}
 Un écart avant/après est une **observation**, pas une preuve de cause. D'autres éléments peuvent changer en même temps (un nouveau fournisseur, un pic saisonnier).
 {% endhint %}
 
-**Exemple.** Vous appliquez *Activer le rapprochement automatique avec le BC et l'exportation* pour les factures. Deux semaines plus tard, l'**Historique des modifications** indique : taux pur avant 52 % (210 documents), après 61 % (198 documents). Cela fait +9 pp, avec assez de documents pour être mesurable.
+**Exemple illustratif.** Après activation du rapprochement et de l’export automatiques, le taux AP Touchless passe de 52 % (210 documents) à 61 % (198 documents), soit +9 points. Il comprend Pure et approbation seule ; il ne mesure pas l’extraction. Vérifiez aussi toute correction Infor dans l’import et les factures suivantes ; ne supposez pas qu’elle figure comme modification de paramètre DocBits. L’avant/après reste une observation, pas une preuve de causalité.
 
 
 Les administrateurs voient aussi deux sections entre les chiffres clés et les graphiques :
@@ -31,8 +31,14 @@ Les administrateurs trouvent le **rapport de conseil** (Consulting report) en ba
 
 Les valeurs d'effet sont des **estimations**. Si le rapport répond *forbidden*, votre rôle ne l'autorise pas.
 
+Les outils et la classification des actions humaines sont expliqués dans [Touchless avec MCP](touchless-mcp.md).
+
 ## Pages connexes
 
 * [Touchless Intelligence](touchless-intelligence.md)
 * [Diagnostic fournisseur et clusters de problèmes](touchless-supplier-diagnosis.md)
 * [Diagnostic du rapprochement avec le BC](touchless-po-matching-diagnosis.md)
+
+<!-- Touchless documentation alignment 2026-11-04: extraction quality is distinct from process automation. KPI definition checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4; existing native screenshots and video sources preserved except unsafe historical list images. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

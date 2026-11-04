@@ -7,7 +7,7 @@ Cliquez sur un fournisseur dans la file d'attente pour ouvrir sa page de diagnos
 
 La page affiche :
 
-* **Six tuiles de résultats** (Touchless pur, Touchless AP, AP assisté, Exception de processus, En cours, Non éligible), chacune liée aux documents.
+* **Quatre tuiles de résultats finaux** : Pure Touchless, AP Touchless, AP Assisted et exception de processus ; chacune mène aux documents.
 * **La tendance** avec son propre sélecteur de période : 30 jours, 90 jours, 6 mois, 1 an ou une plage personnalisée (jusqu'à deux ans). Cela ne modifie que le graphique.
 * **Les clusters de problèmes** (voir ci-dessous).
 * **Historique des modifications** (Change history) : les modifications que vous avez appliquées pour ce fournisseur et leur effet.
@@ -20,14 +20,14 @@ Une courte note explique une page vide, par exemple : *5 documents de ce fournis
 
 Un **cluster** regroupe les documents d'un fournisseur qui se sont arrêtés pour le **même premier motif**. Au lieu de 40 problèmes isolés, vous voyez « 3 problèmes ».
 
-<figure><img src="../.gitbook/assets/touchless-issue-cluster-fr.png" alt="Une carte de cluster de problèmes ouverte avec le premier bloqueur, que modifier et la proposition de modification"><figcaption><p>Une carte de cluster ouverte : le premier bloqueur, <strong>Que modifier</strong> (What to change) et une <strong>Proposition de modification</strong> (Change proposal) avec risque, périmètre et questions ouvertes. Ici, le cluster couvre 58 documents et vaut +18,7 pp. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-issue-cluster-fr.png" alt="Groupes de problèmes dans l’interface française : les documents partagent un premier blocage. Une cause non confirmée nécessite de vérifier les preuves ; le potentiel affiché n’est pas un gain déjà mesuré."><figcaption><p>Groupes de problèmes dans l’interface française : les documents partagent un premier blocage. Une cause non confirmée nécessite de vérifier les preuves ; le potentiel affiché n’est pas un gain déjà mesuré.</p></figcaption></figure>
 
 **Exemple de cluster (illustratif).**
 
 * **Titre** : *Champ obligatoire manquant* à l'étape *Validation des champs*
 * **Concernés** : 28 documents. **Récupérables** : 28 documents. **Gain attendu** : +2,8 pp
 * **Cause présumée** : le fournisseur imprime le numéro de BC sous le tableau, là où l'extraction ne cherche pas
-* **Que modifier** : *Modification des données de base* : ajouter la mise en page de ce fournisseur. **Ouvrir** vous mène à la bonne page de paramètres
+* **Prochaine vérification** : comparez le numéro de commande imprimé et extrait, puis contrôlez la configuration d’extraction avant de proposer une modification
 * **Responsable** : Consultant. **Confiance** : Moyenne. **Source** : Hypothèse
 
 Ce qu'une carte de cluster affiche :
@@ -56,9 +56,22 @@ Chaque cause affiche sa **source**, pour que vous puissiez distinguer un constat
 
 Les textes de l'IA sont rédigés dans la langue de votre organisation. Si un cluster a été analysé dans une autre langue, utilisez **Analyser dans cette langue**.
 
+## Qui doit corriger les données ?
+
+| Preuve | Où examiner ou corriger |
+| --- | --- |
+| L’original diffère de l’extraction | Extraction ou modèle fournisseur |
+| Extraction correcte ; prix, quantité ou unité Infor confirmés incorrects | Données source ; AP coordonne avec les achats ou le responsable des données de référence |
+| Infor correct ; copie importée ancienne ou incomplète | Import ou intégration ERP |
+| Écart présent, mais conditions convenues encore inconnues | Clarification métier ; cause non confirmée |
+
+Les tuiles et segments comptent des résultats distincts ; AP Touchless signifie ici approbation seule. Le taux AP en tête inclut également Pure. Une petite intervention peut terminer une facture tout en laissant sa cause récurrente. Consignez l’action immédiate et la correction durable. Voir [le cas Infor](touchless-po-matching-diagnosis.md).
+
 ## Clusters de rapprochement avec le BC
 
 Si le premier bloqueur d'un cluster est un motif de rapprochement avec le BC (par exemple *Écart d'article du BC* ou *Bon de commande introuvable*), la carte du cluster montre comment DocBits essaie de rapprocher la facture du bon de commande. Voir [Diagnostic du rapprochement avec le BC](touchless-po-matching-diagnosis.md).
+
+Les outils et la classification des actions humaines sont expliqués dans [Touchless avec MCP](touchless-mcp.md).
 
 ## Pages connexes
 
@@ -66,3 +79,7 @@ Si le premier bloqueur d'un cluster est un motif de rapprochement avec le BC (pa
 * [Diagnostic du rapprochement avec le BC](touchless-po-matching-diagnosis.md)
 * [Trace du document](touchless-document-trace.md)
 * [Propositions de modification et rapports](touchless-change-proposals.md)
+
+<!-- Touchless documentation alignment 2026-11-04: extraction quality is distinct from process automation. KPI definition checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4; existing native screenshots and video sources preserved except unsafe historical list images. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

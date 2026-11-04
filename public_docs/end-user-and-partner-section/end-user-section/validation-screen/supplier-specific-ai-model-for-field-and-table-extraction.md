@@ -31,3 +31,7 @@
 如果字段或表格提取结果不理想，可在获准测试文档中比较其他模型，并逐项检查提取值、处理时间和费用。切换模型可能重新处理文档，且不保证改善结果。
 
 如需为**未设置自定义模型的供应商全局配置 AI 模型**，或**管理每个供应商启用的模型**，请参阅相应文档[**此处**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md)。
+
+## 设置与覆盖
+
+Structured Output 有独立的组织/提取模板设置，与 AI 模型档位不同。在文档的更多选项中更改；确认后保存覆盖并重新启动该文档。设置列表中的状态仅供查看。删除条目可能同时移除多个覆盖值。 [表格的 Structured Output](../ai-table/structured-output.md).

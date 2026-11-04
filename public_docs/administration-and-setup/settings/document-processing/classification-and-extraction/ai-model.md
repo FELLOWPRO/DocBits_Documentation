@@ -56,3 +56,7 @@
     <!-- Obsolete illustration retired: Obsolete English menu/example illustration retired; instructions remain, and no unsafely opened menu, saved rule, or completed operation is claimed. -->
 
 删除后，该模板失去相应覆盖值，后续处理按组织配置和系统回退逻辑读取设置；同一供应商的其他模板条目可能仍有独立设置。此操作不会自动重处理历史文档。本文没有执行删除或验证删除后的提取结果。
+
+## 设置与覆盖
+
+Structured Output 有独立的组织/提取模板设置，与 AI 模型档位不同。在文档的更多选项中更改；确认后保存覆盖并重新启动该文档。设置列表中的状态仅供查看。删除条目可能同时移除多个覆盖值。 [表格的 Structured Output](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

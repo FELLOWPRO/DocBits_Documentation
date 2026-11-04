@@ -28,13 +28,13 @@
 
 <figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-zh.png" alt="确认对话框“创建新的表格列？”及“取消”和“创建列”按钮"><figcaption><p>在为所有供应商创建该列之前进行确认。</p></figcaption></figure>
 
-5. 选择**创建列**保存，或选择**取消**返回且不创建任何内容。该列会出现在列表中，且 _Read Only_、_Hidden_ 和 _Use AI_ 标记均未设置。如有需要，可在列表中切换这些标记，参见[编辑和删除列](editing-and-deleting-columns.md)。
+5. 创建列后，在列表中检查设置。只读和隐藏初始为关闭。Use AI 初始为默认；自定义列通常不会因此被请求。如需结构化 AI 提取该列，请选择是。
 
 ## 添加后
 
 * **现有文档中的该列为空**。更改后上传或重新启动的文档会填充该列。
 * 对于配置了**训练规则**的供应商，请在表格训练中打开该供应商的一份文档，并映射新列；否则该供应商的该列会一直为空。参见[定义表格和列](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md)。
-* 使用**AI 表格提取**时，如果该值能在文档中识别，AI 就会填充该列。如果供应商配置了训练规则，但该列仍应由 AI 提取，请将该列标记为 _Use AI_。
+* 对结构化 AI 提取，将自定义列的 Use AI 设为是，并检查预览。仅创建列不会请求它。还需检查供应商映射和指令，重新处理测试文档并核对结果。
 * 如果 ERP 需要接收该列，请将其添加到**导出映射**中，参见[导出](../../../document-processing/export/)。
 
 ## 消息
@@ -44,3 +44,5 @@
 | _Column name already exists_                                               | 表格中已存在具有此技术名称的列。请选择其他标题。          |
 | _Column name already exists – Please activate it in Table Column settings_ | 此名称对应一个隐藏的默认列。请取消设置其 _Hidden_ 标记，而不是创建新列。 |
 | _No table exists. Please create table before creating columns._            | 此文档类型尚无表格：请先点击 **Create new table**。                         |
+
+[表格的 Structured Output](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

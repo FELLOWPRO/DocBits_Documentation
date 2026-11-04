@@ -1,5 +1,9 @@
 # 分类与提取
 
+<figure><img src="../../../../.gitbook/assets/classification-general-zh-20261104.png" alt="常规选项卡及文档处理设置。组织专用条码模式已隐藏；未更改任何设置。"><figcaption><p>常规选项卡及文档处理设置。组织专用条码模式已隐藏；未更改任何设置。</p></figcaption></figure>
+
+[AI Table](../../../../end-user-and-partner-section/end-user-section/ai-table/README.md) · [表格的 Structured Output](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
+
 ## 哪种设置适用于哪个流程步骤？
 
 <figure><img src="../../../../.gitbook/assets/process-extraction-zh-20261028.png" alt="从文件到识别数据: 分别查看文档类型、数据源和提取路径。"><figcaption><p>分别查看文档类型、数据源和提取路径。 该图是示意性的；您组织的活动设置决定了实际行为。</p></figcaption></figure>
@@ -38,7 +42,6 @@
 **设置 → 文档处理 → 分类与提取**
 
 
-
 ## 文档拆分
 
 在**文档拆分**部分，您可以配置：上传的文档页面上出现**条形码**时，是否将该文档拆分为多个文档。
@@ -48,17 +51,17 @@
 1. 前往**文档拆分**部分。
 2.  打开下拉菜单。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
+    
 3.  选择**按条形码/QR 码拆分**。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+    
 
 随后，您可以：
 
 * 选择要检测的一种或多种条形码类型。
 *   指定条形码必须匹配的正则表达式模式，以触发文档拆分。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+    
 
 ## 金额格式
 
@@ -100,7 +103,7 @@
 
 此模式存储在偏好设置键 `TABLE_EXTRACTION_VISION_MODE` 下；旧版开关 `TABLE_EXTRACTION_USE_VISION` 仍然保留，实际含义等同于*仅图像*。
 
-**使用结构化提取（AI）：**AI 按固定结构返回表格，直接映射到已配置的表格列。当文档中的列标题差异较大时，推荐使用此选项。点击此设置会打开预览，准确显示 AI 将接收哪些字段和列：预览会列出表头字段和行项目列及其来源（请求的字段或已禁用的标准字段），并显示预期输出模式（例如 *strict* – 不添加其他列）。为文档类型配置但已关闭的字段不会请求 AI 提取。
+**使用结构化提取（人工智能）:** 此开关设置组织的结构化输出默认值。实际请求的列取决于 Use AI 的默认/是/否选择、模板覆盖及供应商训练。完整指南说明配置、预览及示例。 [表格的 Structured Output](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
 
 **表格提取（成本要素）：**启用后，DocBits 可以在行项目级别从表格中提取成本要素，并据此进行分类。\
 [此处](table-extraction-for-costing-element.md)提供详细说明。
@@ -167,7 +170,6 @@
 
 要访问此部分，请点击页面顶部的**分类规则**选项卡。
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
 
 ### **添加新的分类规则**
 
@@ -175,7 +177,7 @@
 
 1.  点击右上角的**添加**。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
+    
 2. 填写以下字段：
    * **模式**：系统用于触发分类的正则表达式模式。
    * **类型**：指定要在哪个位置搜索该模式（例如 **Barcode**）。
@@ -183,10 +185,10 @@
    * **文档类型**：定义匹配该模式时要分配的文档类型。
    *   **子文档类型** _(可选)_: 指定更具体的分类子类型。
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
+       
 3.  点击**保存**以保存分类规则。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    
 
 ### **编辑分类规则**
 
@@ -194,14 +196,14 @@
 
 1.  点击**操作**列中的三个点。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    
 2.  选择**编辑**。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
+    
 3. 按需进行修改。
 4.  点击**保存**以应用更改。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    
 
 ### **删除分类规则**
 
@@ -209,10 +211,10 @@
 
 1.  点击**操作**列中的三个点。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    
 2.  选择**删除**。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+    
 
 ## AI 模型
 
@@ -222,14 +224,12 @@
 
 要打开此部分，请点击页面顶部的 **AI 模型**选项卡。
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
 
 ### 模型类别
 
 模型按类别组织。每个类别名称下方会显示该类别包含的模型数量。\
 点击类别可查看详情。
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
 
 在所选类别页面顶部，您可以查看每个模型的重要信息：
 
@@ -247,7 +247,6 @@
 * **文档子类型**：文档进一步细分的子类型。
 * **优先级**：决定模型在分类队列中位置的优先级。
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
 
 ### 编辑模型
 
@@ -255,10 +254,12 @@
 
 1.  点击要编辑的模型对应的**操作**列中的笔形图标。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
+    
 2. 更新可用字段：
    * **下一个模型**：选择应处理当前模型输出的模型。
    * **文档类型**：选择模型应将输入分类为何种文档类型。
 3.  点击**保存**以应用更改。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+    
+
+<figure><img src="../../../../.gitbook/assets/structured-output-settings-zh-20261104.png" alt="当前提取设置。此现有配置关闭了 Structured Output，因此不显示架构预览。未更改任何提取设置。"><figcaption><p>当前提取设置。此现有配置关闭了 Structured Output，因此不显示架构预览。未更改任何提取设置。</p></figcaption></figure>

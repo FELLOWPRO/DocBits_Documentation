@@ -80,8 +80,6 @@
   * [理解供应商交付统计](end-user-and-partner-section/end-user-section/supplier-statistics.md)
   * [发货订单仪表板](end-user-and-partner-section/end-user-section/shipment-order-dashboard.md)
   * [用户配置选项](end-user-and-partner-section/end-user-section/user-configuration-options.md)
-  * [AI 表格](end-user-and-partner-section/end-user-section/ai-table/README.md)
-    * [AI 表格标签和指令](end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md)
   * [验证界面](end-user-and-partner-section/end-user-section/validation-screen/README.md)
     * [选择用于字段和表格提取的供应商专属 AI 模型](end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
     * [验证屏幕上的自动检查](end-user-and-partner-section/end-user-section/validation-screen/automatic-checks-on-the-validation-screen.md)
@@ -126,6 +124,17 @@
     * [支持门户状态](end-user-and-partner-section/end-user-section/ressources-and-support/support-portal-status.md)
 * [合作伙伴专区](end-user-and-partner-section/partner-section/README.md)
   * [使用 DocBits 测试发票自动化](end-user-and-partner-section/partner-section/invoice-automation-testing-with-docbits.md)
+
+
+* [AI Table](end-user-and-partner-section/end-user-section/ai-table/README.md)
+  * [设置与覆盖](end-user-and-partner-section/end-user-section/ai-table/configuration.md)
+  * [表格的 Structured Output](end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
+  * [列与修正](end-user-and-partner-section/end-user-section/ai-table/columns-and-corrections.md)
+  * [AI 指令](end-user-and-partner-section/end-user-section/ai-table/ai-instructions.md)
+  * [AI 表格标签和指令](end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md)
+  * [提取说明与问题诊断](end-user-and-partner-section/end-user-section/ai-table/explain-extraction.md)
+  * [助手与权限](end-user-and-partner-section/end-user-section/ai-table/assistant-and-permissions.md)
+  * [视频](end-user-and-partner-section/end-user-section/ai-table/videos.md)
 
 ## 管理与设置 <a href="#administration-and-setup" id="administration-and-setup"></a>
 

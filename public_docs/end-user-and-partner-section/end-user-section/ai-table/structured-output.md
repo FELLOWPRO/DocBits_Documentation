@@ -70,6 +70,10 @@ Structured Output 根据配置生成输出架构，明确要求 AI 返回哪些�
 
 没有可用的表头字段配置时，无法生成完整结构化架构，因此开关开启本身不能证明使用了架构。请通过 **Explain extraction** 和可用文档日志检查实际运行；[AI 表格](README.md)说明了这些视图及访问权限。
 
+在此配置示例中，INVOICE_TABLE 请求的列包括 `ITEM_NUMBER`、`SUPPLIER_ITEM_NUMBER`、`QUANTITY`、`UNIT_PRICE`、`TOTAL_AMOUNT` 和 `PROJECT_CODE`。自定义项目列已明确设为“是”，与下方示例第 2 步一致。预览还包含其他已配置的发票列，因此您的选择和数量可能不同。**12** 是此表格请求的列数，不是行数，也不是整个架构的属性总数。这是配置预览，不是提取结果。
+
+<figure><img src="../../../.gitbook/assets/structured-output-schema-preview-zh-20261104.png" alt="已启用 Structured Output 的发票架构预览局部。INVOICE_TABLE 请求 12 列，其中 PROJECT_CODE 的 Use AI 明确设为“是”。其他已配置表格及属性计数器不在此局部画面中。"><figcaption><p>已启用 Structured Output 的发票架构预览局部。INVOICE_TABLE 请求 12 列，其中 PROJECT_CODE 的 Use AI 明确设为“是”。其他已配置表格及属性计数器不在此局部画面中。</p></figcaption></figure>
+
 ## 5. 示例：包含两种物料编号及项目的发票
 
 以下为合成示例，用来定义核对目标，并非已执行的提取结果。

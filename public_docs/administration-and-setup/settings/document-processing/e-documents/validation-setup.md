@@ -1,20 +1,20 @@
 # Configuração da validação e versões aceites
 
-Esta página explica o assistente de configuração, as versões XRechnung aceites e os perfis aceites da página [Validação de faturas eletrônicas](validation-rules.md). Só os administradores da organização podem alterar estas definições.
+Esta página explica o assistente de configuração, as versões XRechnung aceites e os perfis aceites da página [Validação de faturas eletrónicas](validation-rules.md). Só os administradores da organização podem alterar estas definições.
 
 ## Configuração da validação
 
-<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-pt.png" alt="Configuração de validação e versões aceites"><figcaption><p>Configuração de validação e versões XRechnung aceites</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-pt-20261104.png" alt="Versões XRechnung aceites na organização de exemplo Dev. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações."><figcaption><p>Versões XRechnung aceites na organização de exemplo Dev. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações.</p></figcaption></figure>
 
 O cartão **Configuração da validação** mostra o seu perfil de validação atual (por exemplo, *B2G — Public Sector Receiver*). Clique em **Editar respostas** para voltar a executar o assistente de configuração e alterar o padrão face ao qual valida.
 
 ## Versões XRechnung aceites
 
-A barreira **Versões XRechnung aceites** lista todas as versões de XRechnung. Marque as versões que aceita — os documentos cujo CustomizationID fica fora desta lista são rejeitados com `VAL-VERSION-NOT-ALLOWED` antes de qualquer outra verificação. Uma lista vazia significa "aceitar tudo". Cada versão é marcada como **current**, **deprecated** ou **EOL** juntamente com a respetiva data de lançamento.
+O controlo de aceitação **Versões XRechnung aceites** lista todas as versões de XRechnung. Marque as versões que aceita — os documentos cujo CustomizationID fica fora desta lista são rejeitados com `VAL-VERSION-NOT-ALLOWED` antes de qualquer outra verificação. Uma lista vazia significa "aceitar tudo". Cada versão é marcada como **current**, **deprecated** ou **EOL** juntamente com a respetiva data de lançamento.
 
 ## Perfis aceites e modelo de gravidade
 
-<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-pt.png" alt="Perfis aceites e legenda de gravidade"><figcaption><p>Perfis aceites e o significado de cada gravidade</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-pt-20261104.png" alt="Perfis ZUGFeRD e Factur-X aceites. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações."><figcaption><p>Perfis ZUGFeRD e Factur-X aceites. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações.</p></figcaption></figure>
 
 Escolha que **perfis** aceita (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)) através de **Aceitar tudo** / **Limpar** e, em seguida, **Guardar**.
 
@@ -22,10 +22,10 @@ Cada regra de validação tem uma **gravidade** que decide o que acontece quando
 
 | Gravidade | Efeito |
 |-----------|--------|
-| **FATAL** | Para o processamento de imediato. Nenhuma camada seguinte é verificada; o documento passa a Erro. |
-| **ERROR** | O documento é rejeitado. Os restantes resultados do mesmo documento continuam a ser apresentados; a notificação ao fornecedor (se ativada) é despoletada. |
+| **FATAL** | Interrompe a etapa de validação atual se o erro impedir as verificações seguintes. O bloqueio do processamento depende também de **Bloqueio** no tipo de documento. |
+| **ERROR** | Um erro de validação. Com **Bloqueio** ativo, o documento passa ao estado **Erro**. É diferente da ação manual **Rejeitar documento**. |
 | **WARNING** | Surge no relatório de validação, mas o documento prossegue normalmente no fluxo. |
-| **INFO** | Apenas registo de auditoria. Sem efeito visível para o utilizador nem rejeição. |
+| **INFO** | Uma mensagem informativa no relatório de validação. Não bloqueia o documento. |
 
 ### O que o assistente altera
 

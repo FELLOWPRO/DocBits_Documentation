@@ -508,7 +508,7 @@
     * [Cálculo da data de vencimento](administration-and-setup/settings/document-processing/due-date-calculation.md)
     * [Validade dos documentos](administration-and-setup/settings/document-processing/documents-expiry.md)
     * [Documentos eletrónicos](administration-and-setup/settings/document-processing/e-documents/README.md)
-      * [Validação de faturas eletrônicas](administration-and-setup/settings/document-processing/e-documents/validation-rules.md)
+      * [Validação de faturas eletrónicas](administration-and-setup/settings/document-processing/e-documents/validation-rules.md)
         * [Configuração da validação e versões aceites](administration-and-setup/settings/document-processing/e-documents/validation-setup.md)
         * [Gravidade das regras](administration-and-setup/settings/document-processing/e-documents/validation-rule-severities.md)
         * [Validação para cada tipo de documento](administration-and-setup/settings/document-processing/e-documents/validation-per-document-type.md)

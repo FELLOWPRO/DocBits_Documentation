@@ -1,10 +1,10 @@
 # Registo de alterações
 
-O **Registo de alterações** regista todas as alterações das definições de validação. Faz parte de [Validação de faturas eletrônicas](validation-rules.md). Só os administradores da organização o podem ver.
+O **Registo de alterações** regista todas as alterações das definições de validação. Faz parte de [Validação de faturas eletrónicas](validation-rules.md). Só os administradores da organização o podem ver.
 
-Abra o separador **Registro de alterações**, ao lado de **Regras e políticas**.
+Abra o separador **Registo de alterações**, ao lado de **Regras e políticas**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-pt.png" alt="O separador Registro de alterações com as colunas Quando, Quem, Regra, De → Para e Ação"><figcaption><p>O registo de alterações com quatro entradas de exemplo. O nome do utilizador foi substituído por um nome de exemplo.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-pt-20261104.png" alt="Excerto do registo de alterações. Os dados dos utilizadores estão ocultos."><figcaption><p>Excerto do registo de alterações. Os dados dos utilizadores estão ocultos.</p></figcaption></figure>
 
 | Coluna | O que mostra |
 | --- | --- |

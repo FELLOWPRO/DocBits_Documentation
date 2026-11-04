@@ -23,30 +23,30 @@ Prüfen Sie vor einer Regelanwendung immer den Dokumenttyp direkt am Abschnitt. 
 
 ### Die fünf Kennzahlen
 
-**Im folgenden Bild:** Pure ist vollständig automatisch. Der Prozentwert von AP Touchless enthält Pure zusätzlich zu den reinen Freigaben; die Dokumentanzahl darunter enthält nur die reinen Freigaben.
+**Im folgenden Bild (aktueller Bericht):** Die Karte **AP Touchless** enthält Pure und die reinen Freigaben – sowohl im Prozentwert als auch in der Dokumentanzahl. Das Ergebnis „nur Freigabe“ bleibt in der Detailauswertung eine eigene Kategorie.
 
-<figure><img src="../.gitbook/assets/touchless-kpi-cards-de.png" alt="Die fünf Kennzahlen: 156 Pure-Dokumente und 11 reine Freigaben ergeben zusammen 167 von 310, also 53,9 % AP Touchless. Die 11 Dokumente unter dem AP-Prozentwert bezeichnen nur Freigaben. Pure allein sind 50,3 %; die beiden Quoten überschneiden sich. Beispielorganisation mit Demodaten."><figcaption><p>Die fünf Kennzahlen: 156 Pure-Dokumente und 11 reine Freigaben ergeben zusammen 167 von 310, also 53,9 % AP Touchless. Die 11 Dokumente unter dem AP-Prozentwert bezeichnen nur Freigaben. Pure allein sind 50,3 %; die beiden Quoten überschneiden sich. Beispielorganisation mit Demodaten.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-kpi-de-20261104.png" alt="Aktueller Touchless-Bericht für Rechnungen über 30 Tage: 107 vollständig automatische und 11 nur freigegebene Rechnungen ergeben zusammen 118 von 201, also 58,7 % AP Touchless. Pure allein sind 53,2 %. Die AP-Karte nennt bereits die gemeinsame Anzahl 118. Fiktiver Schulungsbestand; kein Nachweis eines durchgeführten ERP-Exports."><figcaption><p>Aktueller Touchless-Bericht für Rechnungen über 30 Tage: 107 vollständig automatische und 11 nur freigegebene Rechnungen ergeben zusammen 118 von 201, also 58,7 % AP Touchless. Pure allein sind 53,2 %. Die AP-Karte nennt bereits die gemeinsame Anzahl 118. Fiktiver Schulungsbestand; kein Nachweis eines durchgeführten ERP-Exports.</p></figcaption></figure>
 
 | Karte | Zeigt | Beispiel (zur Veranschaulichung) |
 | --- | --- | --- |
 | **Pure Touchless** | Den Prozentwert und die Abweichung vom Ziel | **63,2 %** · „120 Dokumente“ · „−6,8 PP zum Ziel von 70 %“ (rot, unter dem Ziel) |
-| **AP Touchless** | Gemeinsame Quote aus Pure und reiner Freigabe; die Dokumentanzahl darunter bezeichnet die Fälle mit reiner Freigabe | **78,9 %** · „30 Dokumente“ (nur Freigabe) |
+| **AP Touchless** | Gemeinsame Quote und gemeinsame Anzahl aus Pure und reiner Freigabe | **78,9 %** · „150 Dokumente“ im Rechenbeispiel mit 120 Pure und 30 reinen Freigaben |
 | **AP mit Eingriff** | Die Anzahl der Dokumente und ihren Anteil | **30** · 15,8 % |
 | **Prozessausnahmen** | Die Anzahl der Dokumente und ihren Anteil | **10** · 5,3 % |
 | **Diagnoseabdeckung** (Diagnosis coverage) | Bei wie vielen blockierten Dokumenten die Ursache **bekannt** ist | **80 %** · „10 ohne bekannte Ursache“ |
 
-* Im Screenshot ergeben 156 vollständig automatische plus 11 nur freigegebene Dokumente **167 ÷ 310 = 53,9 % AP Touchless**. Pure allein sind **156 ÷ 310 = 50,3 %**. Die Prozentwerte überschneiden sich.
+* Im Screenshot ergeben 107 vollständig automatische plus 11 nur freigegebene Rechnungen **118 ÷ 201 = 58,7 % AP Touchless**. Pure allein sind **107 ÷ 201 = 53,2 %**. Die Prozentwerte überschneiden sich.
 * Eine Karte zeigt einen Strich (—) statt **0 %**, wenn es nichts zu messen gibt. Ein Strich bedeutet „keine Daten“, nicht „null“.
 * **Diagnoseabdeckung** = Dokumente mit bekanntem Blockadegrund ÷ alle blockierten Dokumente. Beispiel: 50 blockierte Dokumente, 10 davon mit unbekannter Ursache → 40 ÷ 50 = **80 %**. Ein niedriger Wert bedeutet „wir verstehen noch nicht, warum Dokumente stehen bleiben“. Verbessern Sie ihn, bevor Sie einzelne Ursachen beheben.
 * **Klicken Sie auf eine Karte**, um die Dokumentenliste hinter der Zahl in einem neuen Tab zu öffnen („Dokumente zu dieser Zahl anzeigen“). Karten mit 0 Dokumenten sind nicht anklickbar.
 
 ### Touchless-Quote im Zeitverlauf
 
-**Im folgenden Bild:** Die blaue AP-Linie ist der getrennte Ergebnisanteil mit reiner Freigabe. Verwenden Sie sie nicht als Ersatz für den gemeinsamen AP-Prozentwert der Übersicht.
+**Im folgenden aktuellen Bild:** Rosa zeigt Pure Touchless. Blau zeigt die gemeinsame Quote einschließlich reiner Freigaben. Die blaue Linie liegt deshalb auf oder über der rosa Linie; die beiden Werte werden nicht addiert.
 
-<figure><img src="../.gitbook/assets/touchless-trend-de.png" alt="Getrennte Ergebnisanteile pro Tag: Rosa zeigt Pure Touchless, Blau nur die Kategorie mit reiner Freigabe. Die blaue Linie ist nicht die gemeinsame AP-Quote der Übersicht. Die gestrichelte Linie zeigt das Ziel von 70 %. Beispielorganisation mit Demodaten."><figcaption><p>Getrennte Ergebnisanteile pro Tag: Rosa zeigt Pure Touchless, Blau nur die Kategorie mit reiner Freigabe. Die blaue Linie ist nicht die gemeinsame AP-Quote der Übersicht. Die gestrichelte Linie zeigt das Ziel von 70 %. Beispielorganisation mit Demodaten.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-trend-de-20261104.png" alt="Zeitverlauf im aktuellen Bericht: Rosa zeigt Pure Touchless, Blau die gemeinsame Touchless-Quote einschließlich reiner Freigaben. Die gestrichelte Linie markiert das Ziel von 70 %. Die Kurven stammen aus fiktiven Schulungsfällen und belegen keine tatsächlich erzielte Prozessverbesserung."><figcaption><p>Zeitverlauf im aktuellen Bericht: Rosa zeigt Pure Touchless, Blau die gemeinsame Touchless-Quote einschließlich reiner Freigaben. Die gestrichelte Linie markiert das Ziel von 70 %. Die Kurven stammen aus fiktiven Schulungsfällen und belegen keine tatsächlich erzielte Prozessverbesserung.</p></figcaption></figure>
 
-Der Screenshot zeigt getrennte Ergebnisanteile: **Pure Touchless** und **AP Touchless** (nur Freigabe) sowie die **Ziellinie**. Die blaue Linie dieser Aufnahme ist der Anteil mit reiner Freigabe, nicht die gemeinsame AP-Kennzahl im Kopfbereich. Für die gemeinsame Quote werden Pure und reine Freigaben über dieselbe Grundgesamtheit addiert. Unterscheiden Sie beim Lesen der Diagramme Ergebnisanteile und gemeinsame Kennzahl. Kurze Zeiträume zeigen Tagespunkte, lange Zeiträume Wochenpunkte.
+Das aktuelle Diagramm zeigt **Pure Touchless**, die **gemeinsame AP-Touchless-Quote** und die **Ziellinie**. Jeder Zeitpunkt hat seine eigene Anzahl geeigneter, abgeschlossener Dokumente. Ein Tageswert ist daher nicht automatisch die Quote des gesamten ausgewählten Zeitraums. Kurze Zeiträume zeigen Tagespunkte, lange Zeiträume Wochenpunkte. Die separate Ergebnis-Kategorie „nur Freigabe“ ist von dieser gemeinsamen Linie zu unterscheiden.
 
 **Beispiel.** Nach Aktivierung des automatischen Bestellabgleichs steigt die Pure-Quote in einem vergleichbaren Zeitraum von 55 % auf 68 %. Prüfen Sie Dokumenttyp, Lieferantenmix und weitere Änderungen. Der zeitliche Zusammenhang ist eine Beobachtung; er beweist nicht allein, dass diese Einstellung den Anstieg verursacht hat.
 

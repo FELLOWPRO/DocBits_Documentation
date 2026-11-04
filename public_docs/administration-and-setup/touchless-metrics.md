@@ -73,7 +73,7 @@ Der Tab zeigt ein **Ziel** (70 %, sofern Ihre Organisation kein anderes verwende
 
 Klicken Sie oben rechts auf **Wie Touchless berechnet wird** (How touchless is calculated), um diese Erklärung direkt in DocBits zu öffnen, mit den Zahlen Ihres eigenen Zeitraums (Dokumente im Zeitraum, noch in Bearbeitung, ausgeschlossen, gemessen).
 
-<figure><img src="../.gitbook/assets/touchless-methodology-de.png" alt="Die Seitenleiste „Wie Touchless berechnet wird“ mit 310 gemessenen Dokumenten, 50,3 Prozent Pure Touchless und 53,9 Prozent Touchless inklusive Freigabe"><figcaption><p>Die Seitenleiste <strong>Wie Touchless berechnet wird</strong>: hier 3.606 Dokumente, davon 3.296 noch in Bearbeitung und 310 gemessen. 156 vollständig automatische Dokumente ergeben 50,3 % Pure Touchless; zusammen mit 11 Dokumenten mit reiner Freigabe sind es 167 und damit 53,9 % AP Touchless. Diese Zahlen beschreiben den Prozess, nicht die Auslesegenauigkeit. Beispielorganisation mit Demodaten.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-methodology-de-20261104.png" alt="Berechnung für den aktuellen Schulungsbestand: 201 geeignete, abgeschlossene Rechnungen, keine noch laufenden oder ausgeschlossenen Dokumente. 107 vollständig automatische Rechnungen ergeben 53,2 %; zusammen mit 11 reinen Freigaben sind es 118 und 58,7 %. Diese Prozessquoten messen nicht die Auslesegenauigkeit."><figcaption><p>Berechnung für den aktuellen Schulungsbestand: 201 geeignete, abgeschlossene Rechnungen, keine noch laufenden oder ausgeschlossenen Dokumente. 107 vollständig automatische Rechnungen ergeben 53,2 %; zusammen mit 11 reinen Freigaben sind es 118 und 58,7 %. Diese Prozessquoten messen nicht die Auslesegenauigkeit.</p></figcaption></figure>
 
 ### Beispiel: 100 % richtig ausgelesen, 80 % AP Touchless
 
@@ -123,14 +123,14 @@ Die Tabelle setzt eine erfolgreiche Verarbeitung voraus, einschließlich der erf
 
 **Grenzfall „Speichern“:** Eine gespeicherte Feldänderung zählt als Korrektur. Aus einem geöffneten Fenster oder einem Klick ohne nachgewiesene Änderung lässt sich dagegen kein Bearbeitungseingriff ableiten. Prüfen Sie zusätzlich, ob die Aktion eine manuelle Validierung oder einen Neustart ausgelöst hat.
 
-### Dieselbe Beschriftung, zwei unterschiedliche Aussagen
+### Ergebnis-Kategorie und gemeinsame Anzeige unterscheiden
 
 | Wo Sie AP Touchless lesen | Gemeint ist | Lesebeispiel |
 | --- | --- | --- |
 | Prozentwert der AP-Karte auf der Übersicht | Gemeinsame Quote aus Pure und reiner Freigabe | (120 + 30) ÷ 190 = 78,9 % |
-| Dokumentanzahl unter diesem Prozentwert | Nur Dokumente mit reiner Freigabe | 30, nicht 150 |
-| Ergebniskachel oder Segment der Lieferantendiagnose | Eigenständige Kategorie „nur Freigabe“ | 30 ÷ 190 = 15,8 % |
-| Blaue AP-Linie der [Trendaufnahme](touchless-dashboard.md) | Anteil der Kategorie „nur Freigabe“ | Nicht mit der gemeinsamen AP-Karte gleichsetzen |
+| Dokumentanzahl unter diesem Prozentwert im aktuellen Bericht | Pure plus reine Freigaben | 150 = 120 + 30 |
+| Ergebnis-Kategorie AP Touchless, etwa der MCP-Bucket `AP_TOUCHLESS` | Eigenständige Kategorie „nur Freigabe“ | 30 ÷ 190 = 15,8 % |
+| Blaue AP-Linie der aktuellen [Trendaufnahme](touchless-dashboard.md) | Gemeinsame Quote aus Pure und reiner Freigabe je Zeitpunkt | Tages- bzw. Wochenwert mit eigener Fallzahl |
 
 Die Kategorien ergeben zusammen 100 % der abgeschlossenen, berücksichtigten Dokumente. Die Prozentwerte der Pure-Karte und der gemeinsamen AP-Karte überlappen sich und dürfen nicht addiert werden.
 

@@ -34,3 +34,7 @@ Om het model te wijzigen, opent u het optiemenu door op de knop **Meer opties** 
 Als de resultaten van de **veldextractie** of **tabelextractie** niet bevredigend zijn, probeer dan over te schakelen naar een ander model om de nauwkeurigheid te verbeteren.
 
 Om het AI-model **globaal te configureren voor leveranciers zonder aangepast model** of om te **beheren welk model actief is voor elke leverancier**, raadpleegt u de bijbehorende documentatie [**hier**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
+
+## Instellingen en sjabloonafwijkingen
+
+Structured Output heeft een eigen organisatie-/sjablooninstelling, los van het AI-modelniveau. Wijzig die via Meer opties bij het document; bevestigen slaat de afwijking op en herstart dat document. De indicatoren in de lijst zijn alleen-lezen. Een vermelding verwijderen kan meerdere afwijkingen tegelijk wissen. [Structured Output voor tabellen](../ai-table/structured-output.md).

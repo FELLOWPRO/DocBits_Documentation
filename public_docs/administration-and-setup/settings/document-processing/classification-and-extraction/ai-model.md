@@ -65,3 +65,7 @@ Om de AI-modelinstelling van een leverancier terug te zetten naar de standaard:
     <figure><img src="../../../../.gitbook/assets/dbdc863-ai-model-delete-confirm-nl-20261012.png" alt="Bevestigingsdialoog die vraagt of de invoer moet worden verwijderd"><figcaption><p>Bevestig de verwijdering in de dialoog.</p></figcaption></figure>
 
 Zodra de invoer is verwijderd, valt de leverancier terug op het standaard **AI-model** voor **veldextractie** en **tabelextractie**.
+
+## Instellingen en sjabloonafwijkingen
+
+Structured Output heeft een eigen organisatie-/sjablooninstelling, los van het AI-modelniveau. Wijzig die via Meer opties bij het document; bevestigen slaat de afwijking op en herstart dat document. De indicatoren in de lijst zijn alleen-lezen. Een vermelding verwijderen kan meerdere afwijkingen tegelijk wissen. [Structured Output voor tabellen](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

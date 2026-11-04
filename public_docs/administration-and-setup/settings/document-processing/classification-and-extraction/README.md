@@ -1,5 +1,9 @@
 # Classificatie en extractie
 
+<figure><img src="../../../../.gitbook/assets/classification-general-nl-20261104.png" alt="Tab Algemeen met verwerkingsinstellingen. Het organisatiespecifieke barcodepatroon is verborgen; er is geen instelling gewijzigd."><figcaption><p>Tab Algemeen met verwerkingsinstellingen. Het organisatiespecifieke barcodepatroon is verborgen; er is geen instelling gewijzigd.</p></figcaption></figure>
+
+[AI Table](../../../../end-user-and-partner-section/end-user-section/ai-table/README.md) · [Structured Output voor tabellen](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
+
 ## Welke instelling werkt bij welke processtap?
 
 <figure><img src="../../../../.gitbook/assets/process-extraction-nl-20261028.png" alt="Van bestand naar herkende data: Bekijk documenttype, gegevensbron en extractiepad afzonderlijk."><figcaption><p>Bekijk documenttype, gegevensbron en extractiepad afzonderlijk. Het diagram is schematisch; de actieve instellingen van uw organisatie bepalen het daadwerkelijke gedrag.</p></figcaption></figure>
@@ -35,7 +39,6 @@ Deze pagina biedt een gedetailleerde uitleg van alle beschikbare instellingen.
 Ga naar de Instellingen voor **Classificatie en Extractie** via:\
 **Instellingen → Documentverwerking → Classificatie en Extractie**
 
-<figure><img src="../../../../.gitbook/assets/dbdc863-settings-nav-nl-20261012.png" alt="Navigatie in de instellingen met Documentverwerking en Classificatie en Extractie gemarkeerd"><figcaption><p>Open <strong>Instellingen → Documentverwerking → Classificatie en Extractie</strong>.</p></figcaption></figure>
 
 ## Documenten splitsen
 
@@ -98,7 +101,7 @@ Meer informatie over training vind je [hier](../../../setup/document-training/tr
 
 De modus wordt opgeslagen onder de voorkeurssleutel `TABLE_EXTRACTION_VISION_MODE`; de oude schakelaar `TABLE_EXTRACTION_USE_VISION` blijft bestaan en betekent in de praktijk *Alleen afbeeldingen*.
 
-**Gebruik gestructureerde extractie (AI):** De AI geeft de tabel terug in een vaste structuur die direct op de geconfigureerde tabelkolommen wordt afgebeeld. Aanbevolen wanneer de kolomkoppen op de documenten sterk variëren. Als je op de instelling klikt, opent een voorbeeld van precies welke velden en kolommen er van de AI worden gevraagd: de kopvelden en de kolomvelden per regel worden weergegeven met hun bron (aangevraagde of uitgeschakelde standaardvelden) en de verwachte uitvoermodus (bijvoorbeeld *strict* – geen extra kolommen). Velden die wel voor het documenttype zijn geconfigureerd maar zijn uitgeschakeld, worden niet bij de AI opgevraagd.
+**Gebruik gestructureerde extractie (AI):** De schakelaar bepaalt de organisatiestandaard voor gestructureerde uitvoer. Gevraagde kolommen hangen af van Standaard/Ja/Nee onder Use AI, sjabloonafwijkingen en leverancierstraining. De volledige handleiding behandelt instellingen, voorbeeldweergave en praktijkvoorbeeld. [Structured Output voor tabellen](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
 
 **Tabelextractie voor kostenelement:** Wanneer ingeschakeld, kan DocBits kostenelementen uit tabellen op regelniveau extraheren en deze dienovereenkomstig classificeren.\
 Een gedetailleerde uitleg is beschikbaar [hier](table-extraction-for-costing-element.md).
@@ -260,3 +263,5 @@ Om een model te bewerken:
 3.  Klik op **Opslaan** om je wijzigingen toe te passen.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_12.png)
+
+<figure><img src="../../../../.gitbook/assets/structured-output-settings-nl-20261104.png" alt="Huidige extractie-instellingen. Structured Output staat uit in deze bestaande configuratie; daarom wordt geen schemavoorbeeld getoond. Er is geen extractie-instelling gewijzigd."><figcaption><p>Huidige extractie-instellingen. Structured Output staat uit in deze bestaande configuratie; daarom wordt geen schemavoorbeeld getoond. Er is geen extractie-instelling gewijzigd.</p></figcaption></figure>

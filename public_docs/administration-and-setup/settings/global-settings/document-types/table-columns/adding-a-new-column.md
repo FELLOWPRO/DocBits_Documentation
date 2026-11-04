@@ -28,13 +28,13 @@ Voeg een kolom toe wanneer per regelitem een waarde moet worden vastgelegd die d
 
 <figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-nl.png" alt="Bevestigingsvenster ‘Een nieuwe tabelkolom aanmaken?’ met de knoppen Annuleren en Kolom maken"><figcaption><p>Bevestig voordat de kolom voor alle leveranciers wordt aangemaakt.</p></figcaption></figure>
 
-5. Kies **Kolom maken** om op te slaan, of **Annuleren** om terug te gaan zonder iets aan te maken. De kolom verschijnt in de lijst met *Alleen-lezen*, *Verborgen* en *AI gebruiken* uitgeschakeld. Schakel die vlaggen indien nodig in de lijst om, zie [Kolommen bewerken en verwijderen](editing-and-deleting-columns.md).
+5. Controleer na het aanmaken de instellingen in de lijst. Alleen-lezen en Verborgen staan aanvankelijk uit. Use AI begint op Standaard; een eigen kolom wordt daarmee normaal niet gevraagd. Kies Ja als gestructureerde extractie haar moet vragen.
 
 ## Na het toevoegen
 
 * De kolom is **leeg op bestaande documenten**. Ze wordt gevuld op documenten die na de wijziging worden geüpload of opnieuw gestart.
 * Voor leveranciers met **getrainde regels** opent u een van hun documenten in de tabeltraining en koppelt u de nieuwe kolom; anders blijft de kolom voor die leverancier leeg. Zie [Tabellen en kolommen definiëren](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
-* Met **AI-tabelextractie** vult de AI de kolom als de waarde op het document herkenbaar is. Markeer de kolom met *AI gebruiken* als de leverancier getrainde regels heeft, maar deze kolom toch uit de AI moet komen.
+* Zet voor gestructureerde AI-extractie Use AI van de eigen kolom op Ja en controleer het voorbeeld. Alleen de kolom aanmaken vraagt haar niet aan. Controleer leverancierskoppelingen en instructies, verwerk een testdocument opnieuw en controleer het resultaat.
 * Voeg de kolom toe aan de **exportmapping** als het ERP de kolom moet ontvangen, zie [Exporteren](../../../document-processing/export.md).
 
 ## Meldingen
@@ -44,3 +44,5 @@ Voeg een kolom toe wanneer per regelitem een waarde moet worden vastgelegd die d
 | *Column name already exists* | Een kolom met deze technische naam staat al in de tabel. Kies een andere titel. |
 | *Column name already exists – Please activate it in Table Column settings* | Een verborgen standaardkolom heeft deze naam. Schakel de vlag *Verborgen* van die kolom uit in plaats van een nieuwe kolom aan te maken. |
 | *No table exists. Please create table before creating columns.* | Het documenttype heeft nog geen tabel: klik eerst op **Nieuwe tabel maken**. |
+
+[Structured Output voor tabellen](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

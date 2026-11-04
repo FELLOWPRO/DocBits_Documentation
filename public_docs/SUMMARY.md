@@ -511,7 +511,7 @@
     * [Dokumenty elektroniczne](administration-and-setup/settings/document-processing/e-documents/README.md)
       * [Walidacja e-faktury](administration-and-setup/settings/document-processing/e-documents/validation-rules.md)
         * [Konfiguracja walidacji i akceptowane wersje](administration-and-setup/settings/document-processing/e-documents/validation-setup.md)
-        * [Wagi reguł](administration-and-setup/settings/document-processing/e-documents/validation-rule-severities.md)
+        * [Poziomy ważności reguł](administration-and-setup/settings/document-processing/e-documents/validation-rule-severities.md)
         * [Walidacja dla każdego typu dokumentu](administration-and-setup/settings/document-processing/e-documents/validation-per-document-type.md)
         * [Dziennik zmian](administration-and-setup/settings/document-processing/e-documents/validation-change-log.md)
         * [Ekran błędu odrzuconej e-faktury](administration-and-setup/settings/document-processing/e-documents/validation-error-screen.md)

@@ -2,7 +2,7 @@
 
 ## Descripción general
 
-Muchas facturas se detienen en la orden de compra. La factura dice una cosa, la orden de compra (OC) dice otra, y DocBits no puede decidir por sí solo si corresponden entre sí. Cada documento de este tipo necesita a una persona, por lo que **no es touchless**.
+Una factura correctamente extraída puede detenerse porque los datos de la orden de compra difieren y las reglas no resuelven la discrepancia. Un bloqueo temporal aún no es un resultado final: un reintento automático puede tener éxito; una corrección o un reinicio manual registrado seguido de éxito da AP Assisted.
 
 Touchless Intelligence le muestra **por qué** falló una coincidencia con la OC y **cómo** intentó DocBits hacerla. Esta página explica las dos etapas del pipeline implicadas, los motivos que verá y el **flujo de decisión de la coincidencia con la OC**, un diagrama que muestra los pasos de la coincidencia uno tras otro.
 
@@ -40,6 +40,9 @@ Un documento que se detiene en la etapa 9 o 10 aparece en la cola de proveedores
 {% hint style="info" %}
 No todos los motivos de coincidencia con la OC se pueden corregir en DocBits. Si el proveedor envía un número de OC incorrecto, la tarjeta indica **Supplier action only**: el proveedor tiene que corregir el documento y volver a enviarlo.
 {% endhint %}
+
+Consulte los casos separados de precio y cantidad y sus pruebas en [Ejemplos](touchless-examples.md).
+
 
 ## El flujo de decisión de la coincidencia con la OC
 
@@ -100,7 +103,7 @@ Un proveedor factura el artículo **"A-4711-X"**, su OC dice **"4711"**. Ninguna
 
 * En el clúster lee *27 affected, 27 recoverable*, con una mejora esperada de, por ejemplo, **+8.7 pp**.
 * La solución está de su lado: añada o reordene una regla que haga la coincidencia por el número de artículo del proveedor o por la descripción, o mantenga los números de artículo del proveedor en los datos maestros.
-* Después de cambiar la regla, aplique el cambio con una [propuesta de cambio](touchless-change-proposals.md) y lea el **Change history** dos semanas más tarde: tasa pura antes y después.
+* Después de cambiar la regla, aplique el cambio con una [propuesta de cambio](touchless-change-proposals.md) y lea el **Change history** dos semanas más tarde: tasa AP Touchless combinada antes y después.
 
 ### Ejemplo 3: La orden de compra todavía no está
 
@@ -127,3 +130,7 @@ Después de que entrara en vigor una regla de transformación para la tabla de u
 * [Propuestas de cambio e informes](touchless-change-proposals.md)
 * [Reglas de Coincidencia de Órdenes de Compra](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
 * [PO Tarjetas coincidentes - Guía completa](workflow/and/compare-with-purchase-order/po-matching-complete-guide.md)
+
+<!-- Touchless documentation alignment 2026-11-04: extraction quality is distinct from process automation. KPI definition checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4; existing native screenshots and video sources preserved except unsafe historical list images. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

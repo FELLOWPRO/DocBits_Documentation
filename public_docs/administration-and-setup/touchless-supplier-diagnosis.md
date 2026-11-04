@@ -7,7 +7,7 @@ Haga clic en un proveedor de la cola para abrir su página de diagnóstico.
 
 La página muestra:
 
-* **Seis bloques de resultados** (Pure touchless, AP touchless, AP assisted, Process exception, In progress, Not eligible), cada uno enlazado con los documentos.
+* **Cuatro tarjetas de resultados finales**: Pure Touchless, AP Touchless, AP Assisted y excepción de proceso; cada una enlaza sus documentos.
 * **La tendencia** con su propio selector de período: 30 días, 90 días, 6 meses, 1 año o un intervalo personalizado (hasta dos años). Esto solo cambia el gráfico.
 * **Issue clusters** (clústeres de problemas, véase más abajo).
 * **Change history**: los cambios que aplicó para este proveedor y lo que lograron.
@@ -20,14 +20,14 @@ Una breve nota explica una página vacía, por ejemplo: *5 documents from this s
 
 Un **clúster** agrupa los documentos de un proveedor que se detuvieron por el **mismo primer motivo**. En lugar de 40 problemas individuales, ve "3 problemas".
 
-<figure><img src="../.gitbook/assets/touchless-issue-cluster-es.png" alt="Una tarjeta de clúster de problemas abierta con el primer bloqueo, qué cambiar y la propuesta de cambio"><figcaption><p>Una tarjeta de clúster abierta: el primer bloqueo, <strong>What to change</strong> y una <strong>Change proposal</strong> con riesgo, alcance y preguntas abiertas. Aquí el clúster abarca 58 documentos y vale +18.7 pp. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-issue-cluster-es.png" alt="Grupos de problemas en español: los documentos comparten un primer bloqueo. El mensaje de causa no confirmada exige revisar la evidencia; el potencial de mejora no es una mejora ya medida."><figcaption><p>Grupos de problemas en español: los documentos comparten un primer bloqueo. El mensaje de causa no confirmada exige revisar la evidencia; el potencial de mejora no es una mejora ya medida.</p></figcaption></figure>
 
 **Clúster de ejemplo (ilustrativo).**
 
 * **Headline**: *Required field missing* en la etapa *Field Validation*
 * **Afectados**: 28 documentos. **Recuperable**: 28 documentos. **Aumento esperado**: +2.8 pp
 * **Suspected cause**: el proveedor imprime el número de OC debajo de la tabla, donde la extracción no busca
-* **What to change**: *Master data change*: añadir el diseño de este proveedor. **Open** le lleva a la página de ajustes correcta
+* **Siguiente comprobación**: compare el número de OC impreso y extraído y revise la configuración de extracción antes de proponer un cambio
 * **Propietario**: Consultor. **Confianza**: Media. **Fuente**: Hipótesis
 
 Qué muestra una tarjeta de clúster:
@@ -56,9 +56,22 @@ Cada causa muestra su **fuente**, de modo que pueda distinguir un hallazgo deriv
 
 Los textos de IA se escriben en el idioma de su organización. Si un clúster se analizó en otro idioma, utilice **Analyse in this language**.
 
+## ¿Quién debe corregir los datos?
+
+| Evidencia | Dónde investigar o corregir |
+| --- | --- |
+| El original y la extracción difieren | Extracción o plantilla del proveedor |
+| Extracción correcta; pedido de Infor con precio, cantidad o unidad incorrectos confirmados | Datos de origen; AP coordina con compras o el responsable de datos maestros |
+| Infor correcto; copia importada antigua o incompleta | Importación o integración ERP |
+| Los valores difieren, pero aún no se conoce lo acordado | Aclaración de negocio; causa no confirmada |
+
+Las tarjetas y segmentos de resultados cuentan categorías separadas; AP Touchless significa aquí solo aprobación. La tasa AP de la cabecera también incluye Pure. Una pequeña intervención puede terminar la factura y dejar pendiente la causa recurrente. Registre la solución inmediata y la definitiva. Consulte [el caso de Infor](touchless-po-matching-diagnosis.md).
+
 ## Clústeres de coincidencia con la OC
 
 Si el primer bloqueo de un clúster es un motivo de coincidencia con la OC (por ejemplo, *PO item mismatch* o *Purchase order not found*), la tarjeta del clúster muestra cómo intenta DocBits hacer coincidir la factura con la orden de compra. Véase [Diagnóstico de la coincidencia con la OC](touchless-po-matching-diagnosis.md).
+
+Las herramientas y la clasificación de las acciones humanas se explican en [Touchless con MCP](touchless-mcp.md).
 
 ## Páginas relacionadas
 
@@ -66,3 +79,7 @@ Si el primer bloqueo de un clúster es un motivo de coincidencia con la OC (por 
 * [Diagnóstico de la coincidencia con la OC](touchless-po-matching-diagnosis.md)
 * [Seguimiento del documento](touchless-document-trace.md)
 * [Propuestas de cambio e informes](touchless-change-proposals.md)
+
+<!-- Touchless documentation alignment 2026-11-04: extraction quality is distinct from process automation. KPI definition checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4; existing native screenshots and video sources preserved except unsafe historical list images. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

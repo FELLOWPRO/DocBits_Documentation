@@ -65,3 +65,7 @@ Aby zresetować ustawienie modelu AI dostawcy do domyślnych:
     <figure><img src="../../../../.gitbook/assets/dbdc864-ai-model-delete-confirm-pl-20261012.png" alt="Okno potwierdzenia z pytaniem, czy usunąć wpis"><figcaption><p>Potwierdź usunięcie w oknie dialogowym.</p></figcaption></figure>
 
 Po usunięciu dostawca wróci do korzystania z domyślnego **modelu AI** do **ekstrakcji pól** i **ekstrakcji tabeli**.
+
+## Ustawienia i nadpisania
+
+Structured Output ma oddzielne ustawienie organizacji/szablonu, niezależne od poziomu modelu AI. Zmień je w Więcej opcji dokumentu; potwierdzenie zapisuje nadpisanie i uruchamia ten dokument ponownie. Wskaźniki na liście są tylko do odczytu. Usunięcie wpisu może usunąć kilka nadpisań jednocześnie. [Structured Output dla tabel](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

@@ -28,13 +28,13 @@ Dodaj kolumnę, gdy dla każdej pozycji trzeba zapisać wartość, której nie o
 
 <figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-pl.png" alt="Okno potwierdzenia „Utworzyć nową kolumnę tabeli?” z przyciskami Anulować i Utwórz kolumnę"><figcaption><p>Potwierdź, zanim kolumna zostanie utworzona dla wszystkich dostawców.</p></figcaption></figure>
 
-5. Wybierz **Utwórz kolumnę**, aby zapisać, lub **Anulować**, aby wrócić bez tworzenia kolumny. Kolumna pojawi się na liście z niezaznaczonymi flagami *Read Only*, *Hidden* i *Use AI*. W razie potrzeby przełącz te flagi na liście, zobacz [Edytowanie i usuwanie kolumn](editing-and-deleting-columns.md).
+5. Po utworzeniu sprawdź ustawienia na liście. Tylko do odczytu i Ukryta są początkowo wyłączone. Use AI zaczyna od Domyślne; własna kolumna zwykle nie jest wtedy żądana. Wybierz Tak, jeśli ekstrakcja strukturalna ma jej żądać.
 
 ## Po dodaniu
 
 * Kolumna jest **pusta w istniejących dokumentach**. Jest wypełniana w dokumentach przesłanych lub zrestartowanych po zmianie.
 * Dla dostawców z **wytrenowanymi regułami** otwórz jeden z ich dokumentów w trenowaniu tabel i zmapuj nową kolumnę, w przeciwnym razie kolumna pozostanie dla tego dostawcy pusta. Zobacz [Defining tables and columns](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
-* Przy **wyodrębnianiu tabel przez AI** AI wypełnia kolumnę, jeśli wartość jest rozpoznawalna w dokumencie. Oznacz kolumnę flagą *Use AI*, jeśli dostawca ma wytrenowane reguły, ale ta kolumna nadal ma pochodzić z AI.
+* Dla strukturalnej ekstrakcji AI ustaw Use AI własnej kolumny na Tak i sprawdź podgląd. Samo utworzenie kolumny nie wystarcza. Sprawdź mapowania i instrukcje dostawcy, ponownie przetwórz dokument testowy i zweryfikuj wynik.
 * Dodaj kolumnę do **mapowania eksportu**, jeśli system ERP ma ją otrzymywać, zobacz [Export](../../../document-processing/export.md).
 
 ## Komunikaty
@@ -44,3 +44,5 @@ Dodaj kolumnę, gdy dla każdej pozycji trzeba zapisać wartość, której nie o
 | *Column name already exists* | Kolumna o tej nazwie technicznej już istnieje w tabeli. Wybierz inny tytuł. |
 | *Column name already exists – Please activate it in Table Column settings* | Ukryta kolumna domyślna ma tę nazwę. Zamiast tworzyć nową, wyłącz jej flagę *Hidden*. |
 | *No table exists. Please create table before creating columns.* | Typ dokumentu nie ma jeszcze tabeli: najpierw kliknij **Create new table**. |
+
+[Structured Output dla tabel](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

@@ -1,5 +1,7 @@
 # Edytowanie i usuwanie kolumn
 
+Pola wyboru sterują wymaganymi wartościami, edycją i widocznością. Use AI konfiguruje się osobno na opisanej poniżej liście trzech stanów.
+
 Wszystko oprócz tytułu zmienia się bezpośrednio na liście; nie ma okna edycji.
 
 **Gdzie:** Ustawienia → Ustawienia globalne → Typy dokumentów → Kolumny tabeli
@@ -13,7 +15,7 @@ Zaznacz lub odznacz pole wyboru w wierszu. Zmiana jest zapisywana natychmiast (*
 | **Is Required** | Zatwierdzenie jest blokowane, dopóki kolumna jest pusta w którymkolwiek wierszu; ekran walidacji oznacza komórkę. | Puste komórki są dozwolone. |
 | **Read Only** | Wartość jest wyświetlana, ale nie można jej nadpisać. Używaj dla wartości pochodzących z wyszukiwania lub ze skryptu. | Użytkownicy mogą edytować komórkę. |
 | **Hidden** | Kolumna znika z ekranu walidacji i z eksportu. Jej dane są zachowane. | Kolumna jest wyświetlana i eksportowana. |
-| **Use AI** | Kolumnę wypełnia ekstrakcja tabel przez AI, również dla dostawców z wytrenowanymi regułami. | Kolumnę wypełniają wytrenowane reguły albo AI, gdy reguł nie ma. |
+
 
 {% hint style="info" %}
 Flagi obowiązują dla dokumentów przesłanych lub uruchomionych ponownie **po** zmianie. Otwarte dokumenty zachowują bieżącą tabelę, dopóki nie zostaną uruchomione ponownie.
@@ -44,3 +46,19 @@ Co się dzieje:
 ## Cofnięcie usunięcia
 
 Usuniętej kolumny nie można przywrócić z listy. Dodaj ją ponownie z tym samym tytułem: nazwa techniczna jest tworzona na podstawie tytułu, więc kolumna utworzona z tym samym tytułem otrzymuje tę samą *Column name* i istniejące mapowania znów do niej pasują.
+
+## Use AI: Domyślne, Tak lub Nie
+
+Otwórz [Kolumny tabeli](README.md) dla właściwego typu dokumentu i tabeli. **Użyj sztucznej inteligencji (Use AI)** jest listą trzech stanów, a nie polem wyboru. Zmiana zapisuje się natychmiast.
+
+| Aktualna opcja | Wpływ na schemat bazowy |
+| --- | --- |
+| **Domyślne · żądane** lub **Domyślne · nie zażądano** | Przyjmuje ustawienie DocBits dla tego typu i nazwy kolumny. Domyślne nie oznacza zawsze włączone ani zawsze wyłączone. |
+| **Tak · poproszono** | Jawnie żąda skonfigurowanej kolumny od AI. |
+| **Nie · nie poproszono** | Wyklucza ją ze schematu bazowego, nawet jeśli normalnie jest żądana. |
+
+Powrót do **Domyślne** usuwa jawny wybór. Nowa własna kolumna zwykle nie należy do domyślnego zestawu AI: wybierz **Tak**, aby AI ją zwracała. Domyślny zestaw AI nie oznacza wszystkich kolumn dostarczonych z DocBits. Sprawdź wskazany efekt i podgląd.
+
+**Wymagana**, **Tylko do odczytu** i **Ukryta** sterują kompletnością, edycją i widocznością; nie zastępują wyboru AI. **Nie** nie usuwa kolumny ani jej wartości i nie blokuje reguł, skryptów lub innych źródeł danych. Trening dostawcy i dodatkowe tagi AI mogą rozszerzyć faktyczne żądanie: rozwiąż sprzeczności także tam. Przełącznik nie zastępuje automatycznie wyniku pochodzącego wyłącznie z reguł.
+
+[Structured Output dla tabel](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

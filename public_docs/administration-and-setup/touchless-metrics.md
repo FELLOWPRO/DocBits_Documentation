@@ -1,5 +1,9 @@
 # Indicateurs et calcul
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Chapitre vidéo (version de contrôle):** [Calculer les taux](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/fr.html#chapter=03).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### Extraction correcte et traitement sans intervention
 
 **DocBits peut extraire correctement toutes les valeurs alors qu’une intervention reste nécessaire parce que les données du système source diffèrent.** AP désigne Accounts Payable, la comptabilité fournisseurs.
@@ -61,7 +65,7 @@ Avec un objectif de 70 %, le taux AP combiné est au-dessus et le taux Pure en d
 
 Cliquez sur **Comment le touchless est calculé** (How touchless is calculated) en haut à droite pour ouvrir cette explication dans DocBits, avec les chiffres de votre propre période (documents de la période, encore en cours, exclus, mesurés).
 
-<figure><img src="../.gitbook/assets/touchless-methodology-fr.png" alt="Méthode de calcul dans l’interface française : seuls les documents avec résultat final sont comptés. Le taux AP regroupe les documents entièrement automatiques et ceux nécessitant seulement une approbation. Il décrit le processus, pas la précision d’extraction ; données de démonstration."><figcaption><p>Méthode de calcul dans l’interface française : seuls les documents avec résultat final sont comptés. Le taux AP regroupe les documents entièrement automatiques et ceux nécessitant seulement une approbation. Il décrit le processus, pas la précision d’extraction ; données de démonstration.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-methodology-fr-20261104.png" alt="Population actuelle de formation : 201 factures terminées et éligibles, aucune en cours ni exclue. Les 107 entièrement automatiques donnent 53,2 % ; avec 11 approbations seules, le total est de 118 et 58,7 %. Ces taux mesurent le processus, pas la précision d’extraction."><figcaption><p>Population actuelle de formation : 201 factures terminées et éligibles, aucune en cours ni exclue. Les 107 entièrement automatiques donnent 53,2 % ; avec 11 approbations seules, le total est de 118 et 58,7 %. Ces taux mesurent le processus, pas la précision d’extraction.</p></figcaption></figure>
 
 ### Exemple : extraction correcte à 100 %, taux AP Touchless de 80 %
 
@@ -110,7 +114,7 @@ Un clic sur Enregistrer sans changement démontré ne prouve pas une correction.
 
 ### Une étiquette AP, deux significations
 
-Le **pourcentage AP en tête** combine Pure et approbation seule : (120 + 30) / 190 = 78,9 %. Le **nombre dessous** compte seulement les 30 approbations. Les tuiles fournisseur et la ligne bleue AP du graphique documenté représentent la catégorie distincte « approbation seule », soit 15,8 %. Les pourcentages Pure et AP combiné se recouvrent : ne les additionnez pas.
+Le pourcentage et le nombre de la carte AP actuelle combinent Pure et approbation seule. Dans l’exemple de calcul, cela donne 150 = 120 + 30 documents et 78,9 %. Dans la capture actuelle, cela donne 118 = 107 + 11 factures et 58,7 %. La catégorie de résultat distincte, comme le groupe MCP `AP_TOUCHLESS`, compte seulement les 11 approbations. La courbe bleue actuelle montre le taux combiné, avec la population propre à chaque point. Pure et AP combiné se recouvrent : ne les additionnez pas.
 
 ### Quelle est l'actualité des chiffres
 

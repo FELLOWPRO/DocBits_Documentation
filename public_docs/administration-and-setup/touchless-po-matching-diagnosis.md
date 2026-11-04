@@ -1,5 +1,9 @@
 # Touchless Intelligence : Diagnostic du rapprochement avec le BC
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Chapitre vidéo (version de contrôle):** [Suivre un document](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/fr.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## Vue d'ensemble
 
 Une facture correctement extraite peut être bloquée lorsque les données de commande diffèrent et que les règles ne résolvent pas cet écart. Un arrêt temporaire n’est pas encore un résultat final : une reprise automatique peut réussir ; une correction ou relance manuelle enregistrée suivie de réussite donne AP Assisted.

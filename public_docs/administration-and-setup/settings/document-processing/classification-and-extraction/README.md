@@ -61,6 +61,10 @@ Avrai quindi la possibilità di:
 
     
 
+Dopo una suddivisione riuscita, il documento originale viene eliminato e le pagine proseguono come documenti separati che condividono lo stesso batch.
+
+<figure><img src="../../../../.gitbook/assets/anatomy-barcode-split.svg" alt="Illustrazione isometrica di otto fogli in un vassoio, con uno scanner che legge un codice a barre sul foglio 6. Dei separatori stanno davanti ai fogli 3 e 6 e dividono i fogli in tre documenti; un elastico circonda l&#x27;intero vassoio."><figcaption><p>Esempio con il pattern <code>^INV\d{6}$</code>: i codici sui fogli 3 e 6 corrispondono e ciascuno avvia un nuovo documento, il codice sul foglio 4 non corrisponde e non suddivide nulla, e l&#x27;elastico rappresenta il batch condiviso dai documenti risultanti.</p></figcaption></figure>
+
 ## Formattazione degli importi
 
 Nella sezione **Formattazione degli importi** hai due opzioni:

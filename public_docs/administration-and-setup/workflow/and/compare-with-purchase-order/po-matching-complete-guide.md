@@ -33,10 +33,12 @@ Quando ricevi una fattura, questa deve corrispondere all'ordine di acquisto (PO)
 **Il quadro generale:**
 
 ```
-PO Placed     Invoice Arrives     PO Matching     Decision
-(€100)    →   (€103)          →   (Check if       → Approve/Reject
-Qty: 100      Qty: 100            within tolerance)
+PO emesso     Fattura ricevuta    Corrispondenza PO   Decisione
+(€100)    →   (€103)          →   (Verifica se        → Approva/Rifiuta
+Qtà: 100      Qtà: 100            entro tolleranza)
 ```
+
+<figure><img src="../../../../.gitbook/assets/anatomy-po-matching.svg" alt="Bilancia a bracci isometrica: sul piatto sinistro il prezzo unitario del PO di 100, su quello destro il prezzo unitario della fattura di 103 (100 più un piccolo peso aggiuntivo). Il braccio si inclina e la lancetta si ferma all&#x27;interno della fascia verde che indica la tolleranza del 5%." width="768"><figcaption><p>Il prezzo del PO (€100) sta sul piatto sinistro e il prezzo della fattura (€103) su quello destro. La differenza di €3 è il 3% del prezzo del PO, quindi la lancetta resta nella fascia verde di tolleranza ±5% e il controllo viene superato. Oltre ±5% (rosso) la fattura richiede una verifica.</p></figcaption></figure>
 
 ***
 
@@ -70,16 +72,16 @@ Il sistema confronta:
 
 ```
 PO:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+- Articolo ABC: Qtà 100, Prezzo unitario €50 = €5000
+- Articolo XYZ: Qtà 50, Prezzo unitario €20 = €1000
+- Totale: €6000
 
-Invoice:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+Fattura:
+- Articolo ABC: Qtà 100, Prezzo unitario €50 = €5000
+- Articolo XYZ: Qtà 50, Prezzo unitario €20 = €1000
+- Totale: €6000
 
-Result: ✅ FULL MATCH
+Risultato: ✅ CORRISPONDENZA COMPLETA
 ```
 
 ***
@@ -101,28 +103,28 @@ Confronta il prezzo unitario sulla fattura con il prezzo unitario sull'ordine d'
 **Formula:**
 
 ```
-Variance % = |(Invoice Price - PO Price)| / PO Price × 100
+Scostamento % = |(Prezzo fattura - Prezzo PO)| / Prezzo PO × 100
 
-Check: Is Variance % ≤ Tolerance %?
+Verifica: lo scostamento % è ≤ tolleranza %?
 ```
 
 **Esempio passo passo:**
 
 ```
-Step 1: Get prices
-  PO Unit Price: €100.00
-  Invoice Unit Price: €103.00
+Passaggio 1: ottenere i prezzi
+  Prezzo unitario PO: €100.00
+  Prezzo unitario fattura: €103.00
 
-Step 2: Calculate difference
-  Difference = |€103.00 - €100.00| = €3.00
+Passaggio 2: calcolare la differenza
+  Differenza = |€103.00 - €100.00| = €3.00
 
-Step 3: Calculate percentage
-  Percentage = (€3.00 / €100.00) × 100 = 3%
+Passaggio 3: calcolare la percentuale
+  Percentuale = (€3.00 / €100.00) × 100 = 3%
 
-Step 4: Check tolerance (5% allowed)
-  Is 3% ≤ 5%? YES ✅
+Passaggio 4: verificare la tolleranza (5% consentito)
+  3% ≤ 5%? SÌ ✅
 
-Result: PASS - Within tolerance
+Risultato: PASS - entro la tolleranza
 ```
 
 ### Esempi del mondo reale
@@ -130,56 +132,56 @@ Result: PASS - Within tolerance
 #### Esempio 1: piccolo aumento (accettato)
 
 ```
-PO Price: €50.00
-Invoice Price: €51.50
-Tolerance: ±3%
+Prezzo PO: €50.00
+Prezzo fattura: €51.50
+Tolleranza: ±3%
 
-Calculation:
-  Variance = |(€51.50 - €50.00)| / €50.00 × 100
-  Variance = €1.50 / €50.00 × 100 = 3%
+Calcolo:
+  Scostamento = |(€51.50 - €50.00)| / €50.00 × 100
+  Scostamento = €1.50 / €50.00 × 100 = 3%
 
-Is 3% ≤ 3%? YES ✅ ACCEPT
+3% ≤ 3%? SÌ ✅ ACCETTA
 ```
 
 #### Esempio 2: aumento significativo (rifiutato)
 
 ```
-PO Price: €50.00
-Invoice Price: €55.00
-Tolerance: ±3%
+Prezzo PO: €50.00
+Prezzo fattura: €55.00
+Tolleranza: ±3%
 
-Calculation:
-  Variance = |(€55.00 - €50.00)| / €50.00 × 100
-  Variance = €5.00 / €50.00 × 100 = 10%
+Calcolo:
+  Scostamento = |(€55.00 - €50.00)| / €50.00 × 100
+  Scostamento = €5.00 / €50.00 × 100 = 10%
 
-Is 10% ≤ 3%? NO ❌ REJECT - NEEDS REVIEW
+10% ≤ 3%? NO ❌ RIFIUTA - RICHIEDE VERIFICA
 ```
 
 #### Esempio 3: sconto (anche controllato)
 
 ```
-PO Price: €100.00
-Invoice Price: €97.00
-Tolerance: ±5%
+Prezzo PO: €100.00
+Prezzo fattura: €97.00
+Tolleranza: ±5%
 
-Calculation:
-  Variance = |(€97.00 - €100.00)| / €100.00 × 100
-  Variance = €3.00 / €100.00 × 100 = 3%
+Calcolo:
+  Scostamento = |(€97.00 - €100.00)| / €100.00 × 100
+  Scostamento = €3.00 / €100.00 × 100 = 3%
 
-Is 3% ≤ 5%? YES ✅ ACCEPT (Discount is within tolerance)
+3% ≤ 5%? SÌ ✅ ACCETTA (lo sconto rientra nella tolleranza)
 ```
 
 #### Esempio 4: Tolleranza del valore assoluto
 
 ```
-PO Price: €10.00
-Invoice Price: €10.50
-Tolerance: ±€1.00 (absolute, not %)
+Prezzo PO: €10.00
+Prezzo fattura: €10.50
+Tolleranza: ±€1.00 (assoluta, non %)
 
-Calculation:
-  Variance = |€10.50 - €10.00| = €0.50
+Calcolo:
+  Scostamento = |€10.50 - €10.00| = €0.50
 
-Is €0.50 ≤ €1.00? YES ✅ ACCEPT
+€0.50 ≤ €1.00? SÌ ✅ ACCETTA
 ```
 
 ### Cosa fare con i risultati
@@ -217,33 +219,33 @@ Controlla se la quantità ordinata corrisponde alla quantità fatturata
 
 ```
 Formula:
-  Quantity Variance % = |(Invoice Qty - PO Qty)| / PO Qty × 100
+  Scostamento quantità % = |(Qtà fattura - Qtà PO)| / Qtà PO × 100
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 103 units
-  Tolerance: ±5%
+Esempio:
+  Quantità PO: 100 unità
+  Quantità fattura: 103 unità
+  Tolleranza: ±5%
 
-  Variance = |(103 - 100)| / 100 × 100
-  Variance = 3 / 100 × 100 = 3%
+  Scostamento = |(103 - 100)| / 100 × 100
+  Scostamento = 3 / 100 × 100 = 3%
 
-  Is 3% ≤ 5%? YES ✅ ACCEPT
+  3% ≤ 5%? SÌ ✅ ACCETTA
 ```
 
 **Tolleranza assoluta:**
 
 ```
 Formula:
-  Quantity Variance = |Invoice Qty - PO Qty|
+  Scostamento quantità = |Qtà fattura - Qtà PO|
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 102 units
-  Tolerance: ±5 units
+Esempio:
+  Quantità PO: 100 unità
+  Quantità fattura: 102 unità
+  Tolleranza: ±5 unità
 
-  Variance = |102 - 100| = 2 units
+  Scostamento = |102 - 100| = 2 unità
 
-  Is 2 units ≤ 5 units? YES ✅ ACCEPT
+  2 unità ≤ 5 unità? SÌ ✅ ACCETTA
 ```
 
 ### Scenari del mondo reale
@@ -251,31 +253,31 @@ Example:
 #### Consegna eccessiva (più di quanto ordinato)
 
 ```
-Ordered: 100 units
-Invoiced: 110 units
-Tolerance: ±5%
+Ordinato: 100 unità
+Fatturato: 110 unità
+Tolleranza: ±5%
 
-Variance = |(110-100)|/100 × 100 = 10%
+Scostamento = |(110-100)|/100 × 100 = 10%
 
-Is 10% ≤ 5%? NO ❌
+10% ≤ 5%? NO ❌
 
-Decision: Contact supplier - more delivered than ordered
-Possible reason: Error by supplier, partial shipment already received
+Decisione: contattare il fornitore - consegnato più di quanto ordinato
+Possibile motivo: errore del fornitore, spedizione parziale già ricevuta
 ```
 
 #### Sottoconsegna (meno di quanto ordinato)
 
 ```
-Ordered: 100 units
-Invoiced: 95 units
-Tolerance: ±5%
+Ordinato: 100 unità
+Fatturato: 95 unità
+Tolleranza: ±5%
 
-Variance = |(95-100)|/100 × 100 = 5%
+Scostamento = |(95-100)|/100 × 100 = 5%
 
-Is 5% ≤ 5%? YES ✅
+5% ≤ 5%? SÌ ✅
 
-Decision: Accept - within tolerance
-Possible reason: Partial shipment, rest to follow
+Decisione: accettare - entro la tolleranza
+Possibile motivo: spedizione parziale, il resto seguirà
 ```
 
 ***
@@ -289,10 +291,10 @@ Quando la quantità differisce, calcola se la differenza di prezzo totale è acc
 ### Perché questo è importante
 
 ```
-Scenario: You ordered 100 units but received 110
-- Quantity is 10% over (bad)
-- BUT: You're only charged for 10% extra
-- Combined effect might be acceptable
+Scenario: avete ordinato 100 unità ma ne avete ricevute 110
+- La quantità è superiore del 10% (negativo)
+- MA: vi viene addebitato solo il 10% di unità in più
+- L'effetto combinato potrebbe essere accettabile
 ```
 
 ### Calcolo
@@ -300,30 +302,30 @@ Scenario: You ordered 100 units but received 110
 **Formula:**
 
 ```
-Combined Variance = Quantity Variance × Price Variance
+Scostamento combinato = Scostamento quantità × Scostamento prezzo
 
-If both are within tolerance, combined is usually acceptable
+Se entrambi rientrano nella tolleranza, l'effetto combinato di solito è accettabile
 ```
 
 **Esempio:**
 
 ```
 PO:
-- Unit Price: €100
-- Quantity: 100
-- Total: €10,000
+- Prezzo unitario: €100
+- Quantità: 100
+- Totale: €10,000
 
-Invoice:
-- Unit Price: €102 (2% higher)
-- Quantity: 105 (5% higher)
-- Total: €10,710
+Fattura:
+- Prezzo unitario: €102 (2% in più)
+- Quantità: 105 (5% in più)
+- Totale: €10,710
 
-Analysis:
-- Price variance: 2% ✅
-- Quantity variance: 5% ✅
-- Combined effect: 1.02 × 1.05 = 1.071 = 7.1% total increase
+Analisi:
+- Scostamento prezzo: 2% ✅
+- Scostamento quantità: 5% ✅
+- Effetto combinato: 1.02 × 1.05 = 1.071 = aumento totale del 7.1%
 
-Is combined variance acceptable? Usually YES ✅
+Lo scostamento combinato è accettabile? Di solito SÌ ✅
 ```
 
 ***
@@ -339,32 +341,32 @@ Controlla se gli articoli nella fattura corrispondono agli articoli nell'ordine 
 **Corrispondenza esatta (più semplice):**
 
 ```
-PO Item ID: ABC-123
-Invoice Item ID: ABC-123
-Result: ✅ MATCH
+ID articolo PO: ABC-123
+ID articolo fattura: ABC-123
+Risultato: ✅ CORRISPONDENZA
 ```
 
 **Numero articolo fornitore (più comune):**
 
 ```
-PO Item: ABC-123 (Our internal code)
-Supplier Item: SUPP-456 (Their code for same item)
-System matches these as same item
-Result: ✅ MATCH
+Articolo PO: ABC-123 (nostro codice interno)
+Articolo fornitore: SUPP-456 (il loro codice per lo stesso articolo)
+Il sistema li riconosce come lo stesso articolo
+Risultato: ✅ CORRISPONDENZA
 ```
 
 ### Scenario: cosa succede se non corrisponde?
 
 ```
-PO Item: ABC-123 (Copper Wire, 2mm)
-Invoice Item: ABC-124 (Steel Wire, 2mm)
+Articolo PO: ABC-123 (filo di rame, 2mm)
+Articolo fattura: ABC-124 (filo d'acciaio, 2mm)
 
-Result: ❌ NO MATCH
+Risultato: ❌ NESSUNA CORRISPONDENZA
 
-Actions:
-1. Is this a substitution? Check with procurement
-2. Is this an error? Contact supplier
-3. Is the description similar? Verify manually
+Azioni:
+1. Si tratta di una sostituzione? Verificare con gli acquisti
+2. Si tratta di un errore? Contattare il fornitore
+3. La descrizione è simile? Verificare manualmente
 ```
 
 ***
@@ -377,20 +379,20 @@ Verifica che il tipo di ordine di acquisto sia corretto
 
 ### Tipi di ordine
 
-* **Norma dell'Ordine**: acquisto regolare
-* **Rush Order**: urgente, potrebbe avere un premio
+* **Ordine standard**: acquisto regolare
+* **Ordine urgente**: urgente, potrebbe avere un sovrapprezzo
 * **Accordo quadro**: Contratto a lungo termine
 * **Ordine Globale**: Contratto a tempo indeterminato
-* **Spedizione**: Non paghi fino all'utilizzo
+* **Conto deposito**: non si paga fino all'utilizzo
 
 ### Controlla l'esempio
 
 ```
-PO Order Type: Standard Order
-Invoice Order Type: Standard Order
-Result: ✅ MATCH
+Tipo di ordine PO: Ordine standard
+Tipo di ordine fattura: Ordine standard
+Risultato: ✅ CORRISPONDENZA
 
-If mismatch: Could affect terms, payment, pricing
+In caso di mancata corrispondenza: potrebbe influire su condizioni, pagamento, prezzi
 ```
 
 ***
@@ -407,38 +409,38 @@ Controlla se la data di consegna corrisponde alla data promessa sull'ordine d'ac
 
 ```
 Formula:
-  Days Late = Invoice Delivery Date - PO Promised Date
+  Giorni di ritardo = Data di consegna fattura - Data promessa PO
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-22
-  Days Late = 7 days
+Esempio:
+  Data promessa PO: 2025-10-15
+  Consegna effettiva: 2025-10-22
+  Giorni di ritardo = 7 giorni
 
-If tolerance is ±3 days:
-  Is 7 ≤ 3? NO ❌ LATE
+Se la tolleranza è ±3 giorni:
+  7 ≤ 3? NO ❌ IN RITARDO
 ```
 
 **Consegna anticipata:**
 
 ```
 Formula:
-  Days Early = PO Promised Date - Invoice Delivery Date
+  Giorni di anticipo = Data promessa PO - Data di consegna fattura
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-10
-  Days Early = 5 days
+Esempio:
+  Data promessa PO: 2025-10-15
+  Consegna effettiva: 2025-10-10
+  Giorni di anticipo = 5 giorni
 
-Early delivery is usually OK ✅
-Unless you need it at specific time
+La consegna anticipata di solito va bene ✅
+A meno che non serva in un momento specifico
 ```
 
 ### Impostazioni di tolleranza
 
 ```
-±3 days: Allow 3 days late or early
-±5 days: Allow up to 5 days variance
-0 days: Must match exactly
+±3 giorni: consente 3 giorni di ritardo o anticipo
+±5 giorni: consente fino a 5 giorni di scostamento
+0 giorni: deve coincidere esattamente
 ```
 
 ***
@@ -452,11 +454,11 @@ Controlla se i costi aggiuntivi (tasse, spedizione, gestione) corrispondono all'
 ### Spese comuni
 
 ```
-- Shipping: €50
-- Handling: €10
-- Packaging: €5
-- Insurance: €15
-- Taxes: €300
+- Spedizione: €50
+- Gestione: €10
+- Imballaggio: €5
+- Assicurazione: €15
+- Imposte: €300
 ```
 
 ### Calcolo
@@ -464,32 +466,32 @@ Controlla se i costi aggiuntivi (tasse, spedizione, gestione) corrispondono all'
 **Esempio: controllo delle spese di spedizione**
 
 ```
-PO Shipping: €50.00
-Invoice Shipping: €51.00
-Tolerance: ±3%
+Spedizione PO: €50.00
+Spedizione fattura: €51.00
+Tolleranza: ±3%
 
-Variance = |€51.00 - €50.00| / €50.00 × 100 = 2%
+Scostamento = |€51.00 - €50.00| / €50.00 × 100 = 2%
 
-Is 2% ≤ 3%? YES ✅ ACCEPT
+2% ≤ 3%? SÌ ✅ ACCETTA
 ```
 
 **Esempio: addebiti multipli**
 
 ```
-PO Total Charges:
-  - Shipping: €50
-  - Taxes: €300
-  - Handling: €10
-  Total: €360
+Spese totali PO:
+  - Spedizione: €50
+  - Imposte: €300
+  - Gestione: €10
+  Totale: €360
 
-Invoice Total Charges:
-  - Shipping: €50
-  - Taxes: €312 (11% tax)
-  - Handling: €10
-  Total: €372
+Spese totali fattura:
+  - Spedizione: €50
+  - Imposte: €312 (imposta all'11%)
+  - Gestione: €10
+  Totale: €372
 
-Difference: €12
-Check if within tolerance ✅ or ❌
+Differenza: €12
+Verificare se rientra nella tolleranza ✅ o ❌
 ```
 
 ***
@@ -505,37 +507,37 @@ Verifica che gli importi delle imposte siano calcolati correttamente
 **Formula:**
 
 ```
-Tax Amount = Subtotal × Tax Rate
+Importo imposta = Subtotale × Aliquota
 
-Example:
-  Subtotal: €1000
-  Tax Rate: 19%
-  Expected Tax: €1000 × 0.19 = €190
+Esempio:
+  Subtotale: €1000
+  Aliquota: 19%
+  Imposta attesa: €1000 × 0.19 = €190
 
-Invoice Tax: €190
-Match? YES ✅
+Imposta fattura: €190
+Corrisponde? SÌ ✅
 ```
 
 **Problemi comuni:**
 
 ```
-1. Tax rate changed (region-based)
-2. Tax applied to wrong amount (before/after discounts)
-3. Multiple tax rates (some items 7%, others 19%)
-4. Tax exempt items (0% tax)
+1. Aliquota modificata (in base alla regione)
+2. Imposta applicata all'importo sbagliato (prima/dopo gli sconti)
+3. Più aliquote (alcuni articoli al 7%, altri al 19%)
+4. Articoli esenti (0% di imposta)
 ```
 
 **Esempio: tassazione multialiquota**
 
 ```
-Item A: €100 @ 19% tax = €119
-Item B: €100 @ 7% tax = €107
-Item C: €100 @ 0% tax = €100
-Total: €326
+Articolo A: €100 @ 19% imposta = €119
+Articolo B: €100 @ 7% imposta = €107
+Articolo C: €100 @ 0% imposta = €100
+Totale: €326
 
-Invoice shows €325 (€1 error)
+La fattura mostra €325 (errore di €1)
 
-Check: Within tolerance or needs attention?
+Verifica: entro la tolleranza o richiede attenzione?
 ```
 
 ***
@@ -549,15 +551,15 @@ Garantisce che la fattura sia per la struttura/centro di costo corretto
 ### Esempio
 
 ```
-PO is for:
-- Facility: Berlin Plant
-- Cost Center: CC-2025
+Il PO è per:
+- Sede: stabilimento di Berlino
+- Centro di costo: CC-2025
 
-Invoice should have:
-- Facility: Berlin Plant ✅
-- Cost Center: CC-2025 ✅
+La fattura dovrebbe avere:
+- Sede: stabilimento di Berlino ✅
+- Centro di costo: CC-2025 ✅
 
-If different facility: May need different approval
+Se la sede è diversa: potrebbe servire un'approvazione diversa
 ```
 
 ***
@@ -571,21 +573,21 @@ Controlla se il fornitore è ancora approvato/attivo
 ### Tipi di stato
 
 ```
-✅ ACTIVE: Approved, can do business
-⚠️ ON HOLD: Temporarily blocked
-❌ INACTIVE: No longer doing business
-⚠️ CONDITIONAL: Only for specific items
+✅ ACTIVE: Approvato, si può operare
+⚠️ ON HOLD: Temporaneamente bloccato
+❌ INACTIVE: Non si opera più con il fornitore
+⚠️ CONDITIONAL: Solo per articoli specifici
 ```
 
 ### Controlla l'esempio
 
 ```
-Supplier: ABC Corp
-Status in Database: ACTIVE
-Status when creating PO: ACTIVE
-Status when invoice arrives: INACTIVE
+Fornitore: ABC Corp
+Stato nel database: ACTIVE
+Stato alla creazione del PO: ACTIVE
+Stato all'arrivo della fattura: INACTIVE
 
-Alert: Supplier status changed! Investigate why.
+Avviso: lo stato del fornitore è cambiato! Verificare il motivo.
 ```
 
 ***
@@ -595,46 +597,46 @@ Alert: Supplier status changed! Investigate why.
 ### Tolleranze rigorose (rischio inferiore, più lavoro manuale)
 
 ```
-Use for:
-- High-value items
-- Items where exactness matters
-- Regulated industries
+Da usare per:
+- Articoli di valore elevato
+- Articoli in cui l'esattezza è importante
+- Settori regolamentati
 
-Settings:
-- Unit Price: ±1%
-- Quantity: ±1%
-- Delivery Date: ±1 day
-- Charges: ±1%
+Impostazioni:
+- Prezzo unitario: ±1%
+- Quantità: ±1%
+- Data di consegna: ±1 giorno
+- Spese: ±1%
 ```
 
 ### Tolleranze moderate (bilanciate)
 
 ```
-Use for:
-- Most business transactions
-- Standard items
-- Normal purchasing
+Da usare per:
+- La maggior parte delle transazioni commerciali
+- Articoli standard
+- Acquisti normali
 
-Settings:
-- Unit Price: ±3-5%
-- Quantity: ±3-5%
-- Delivery Date: ±3 days
-- Charges: ±5%
+Impostazioni:
+- Prezzo unitario: ±3-5%
+- Quantità: ±3-5%
+- Data di consegna: ±3 giorni
+- Spese: ±5%
 ```
 
 ### Tolleranze allentate (rischio più elevato, meno lavoro manuale)
 
 ```
-Use for:
-- Low-value items
-- Bulk purchases
-- Supplier agreements with flexibility
+Da usare per:
+- Articoli di basso valore
+- Acquisti all'ingrosso
+- Accordi con fornitori flessibili
 
-Settings:
-- Unit Price: ±10%
-- Quantity: ±10%
-- Delivery Date: ±7 days
-- Charges: ±10%
+Impostazioni:
+- Prezzo unitario: ±10%
+- Quantità: ±10%
+- Data di consegna: ±7 giorni
+- Spese: ±10%
 ```
 
 ***
@@ -642,24 +644,24 @@ Settings:
 ## Esempio di flusso di lavoro di corrispondenza PO
 
 ```
-Invoice Arrives
+Fattura ricevuta
     ↓
-Condition: "Is amount > €5000?" → YES
+Condizione: "L'importo è > €5000?" → SÌ
     ↓
-Check: Full Match? → NO (10% price difference)
+Verifica: corrispondenza completa? → NO (differenza di prezzo del 10%)
     ↓
-Check: Unit Price within 5%? → NO (12% difference)
+Verifica: prezzo unitario entro il 5%? → NO (differenza del 12%)
     ↓
-Check: Quantity within 5%? → YES (2% difference)
+Verifica: quantità entro il 5%? → SÌ (differenza del 2%)
     ↓
-Decision: FAIL - Price variance too high
+Decisione: FAIL - scostamento di prezzo troppo alto
     ↓
-Flag for: Manual review / Buyer approval
+Segnalare per: verifica manuale / approvazione dell'acquirente
     ↓
-Wait for: Buyer comment
+In attesa di: commento dell'acquirente
     ↓
-If Approved: Continue to Export
-If Rejected: Return to Supplier
+Se approvata: continuare con l'esportazione
+Se rifiutata: restituire al fornitore
 ```
 
 ***
@@ -669,46 +671,46 @@ If Rejected: Return to Supplier
 ### "PO non trovato"
 
 ```
-Cause: Invoice PO number doesn't exist in system
-Fix:
-1. Verify PO number spelling
-2. Check if PO was created
-3. Verify PO is in correct organization
-4. Ask supplier for PO reference
+Causa: il numero PO della fattura non esiste nel sistema
+Soluzione:
+1. Verificare l'ortografia del numero PO
+2. Controllare se il PO è stato creato
+3. Verificare che il PO sia nell'organizzazione corretta
+4. Chiedere al fornitore il riferimento del PO
 ```
 
 ### "Gli articoli non corrispondono"
 
 ```
-Cause: Invoice items are different from PO items
-Possible Reasons:
-1. Substitution approved by procurement
-2. Different item numbers for same item
-3. Error by supplier
-Fix: Contact procurement or supplier
+Causa: gli articoli della fattura sono diversi da quelli del PO
+Possibili motivi:
+1. Sostituzione approvata dagli acquisti
+2. Numeri articolo diversi per lo stesso articolo
+3. Errore del fornitore
+Soluzione: contattare gli acquisti o il fornitore
 ```
 
 ### "Prezzo superiore al PO"
 
 ```
-Cause: Invoice price > PO price
-Possible Reasons:
-1. Price increase approved
-2. Supplier error
-3. Currency difference
-4. Additional services included
-Fix: Verify with procurement
+Causa: prezzo fattura > prezzo PO
+Possibili motivi:
+1. Aumento di prezzo approvato
+2. Errore del fornitore
+3. Differenza di valuta
+4. Servizi aggiuntivi inclusi
+Soluzione: verificare con gli acquisti
 ```
 
 ### "Data di consegna errata"
 
 ```
-Cause: Invoice dated after promised delivery
-Possible Reasons:
-1. Shipment was delayed
-2. Receiving date different from invoice date
-3. Partial shipment
-Fix: Check shipping documents or contact supplier
+Causa: fattura datata dopo la consegna promessa
+Possibili motivi:
+1. La spedizione è stata ritardata
+2. Data di ricezione diversa dalla data della fattura
+3. Spedizione parziale
+Soluzione: controllare i documenti di spedizione o contattare il fornitore
 ```
 
 ***
@@ -717,16 +719,16 @@ Fix: Check shipping documents or contact supplier
 
 | Carta           | Cosa controlla        | Calcolo principale     | Tolleranza comune |
 | -------------- | --------------------- | -------------------- | ---------------- |
-| Partita completa     | Tutto            | Tutti i controlli           | Varia           |
+| Corrispondenza completa     | Tutto            | Tutti i controlli           | Varia           |
 | Prezzo unitario     | Prezzo per unità        | % o € di differenza    | ±3-5%            |
-| Quantità       | Importo ordinato        | % o differenza unitaria | ±3-5%            |
+| Quantità       | Quantità ordinata        | % o differenza unitaria | ±3-5%            |
 | Prezzo combinato | Totale con cambio quantità | Quantità × Prezzo          | ±5-10%           |
-| ID articolo        | Articoli giusti           | Corrispondenza di corde         | Esatto            |
-| Tipo di ordine     | Tipologia di acquisto      | Corrispondenza di corde         | Esatto            |
-| Data di consegna  | Quando è arrivato          | Differenza di giorno       | ±3 giorni          |
-| Spese        | Commissioni aggiuntive            | % o € di differenza    | ±5%              |
-| Tassa            | Importo fiscale            | Calcolo della % dell'imposta    | ±1%              |
-| Struttura       | Centro di costo           | Corrispondenza di corde         | Esatto            |
+| ID articolo        | Articoli giusti           | Corrispondenza di stringhe         | Esatto            |
+| Tipo di ordine     | Tipologia di acquisto      | Corrispondenza di stringhe         | Esatto            |
+| Data di consegna  | Quando è arrivato          | Differenza in giorni       | ±3 giorni          |
+| Spese        | Costi aggiuntivi            | % o € di differenza    | ±5%              |
+| Imposta          | Importo fiscale            | Calcolo della % d'imposta    | ±1%              |
+| Struttura       | Centro di costo           | Corrispondenza di stringhe         | Esatto            |
 | Fornitore       | Approvato?             | Controllo dello stato         | Solo attivo      |
 
 ***

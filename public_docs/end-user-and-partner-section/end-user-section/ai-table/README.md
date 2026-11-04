@@ -10,6 +10,8 @@ AI Table permette di verificare le righe estratte, correggere colonne e salvare 
 * [Spiegare l'estrazione e diagnosticare](explain-extraction.md)
 * [Assistente e permessi](assistant-and-permissions.md)
 
+<figure><img src="../../../.gitbook/assets/anatomy-ai-table.svg" alt="Illustrazione isometrica di un lettore di tabelle: una testina di lettura con una cartuccia di istruzioni scansiona la tabella di un documento, un pannello di connessione collega ogni colonna restituita a una colonna configurata, e le colonne configurate sono contenitori con una manopola Use AI a tre posizioni ciascuna."><figcaption><p>L&#x27;AI legge la tabella e restituisce colonne. Ogni colonna restituita viene associata a una colonna di tabella configurata (una colonna restituita senza associazione resta nascosta), ogni colonna configurata ha la propria impostazione Use AI (Predefinito, Sì o No), e le istruzioni AI e <strong>Salva come addestramento</strong> influenzano il modo in cui vengono letti i documenti successivi con lo stesso layout del fornitore.</p></figcaption></figure>
+
 ## Quando ottieni la tabella AI
 
 * Un amministratore ha attivato l'**Estrazione della tabella AI** (Impostazioni → Elaborazione del documento → Tipi di Documento → Classificazione ed estrazione, vedi [Impostazioni per gli amministratori](#impostazioni-per-gli-amministratori)). Se è disattivata, l'area della tabella mostra *La tabella AI verrà visualizzata qui. Abilitazione in …*.

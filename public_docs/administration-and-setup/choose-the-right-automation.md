@@ -24,6 +24,8 @@ DocBits offre diversi modi per modificare, controllare e instradare i documenti:
 
 Ogni documento attraversa gli stessi passaggi. Ogni strumento ha il suo posto in questo flusso, e quel posto determina cosa può vedere e cosa può ancora modificare.
 
+<figure><img src="../.gitbook/assets/anatomy-automation.svg" alt="Scalo ferroviario isometrico: un vagone-documento supera le Regole di Trasformazione, le Regole di Corrispondenza PO, di nuovo le Regole di Trasformazione e le Regole di convalida personalizzate, poi un segnale Pronto per la convalida, quindi Flusso di lavoro standard, Flusso di lavoro avanzato e una scheda Workflow SDK"><figcaption>Un vagone-documento percorre da sinistra a destra 1 Regole di Trasformazione, 2 Regole di Corrispondenza PO (le Regole di Trasformazione vengono eseguite di nuovo dopo l&#x27;abbinamento) e 3 Regole di convalida personalizzate; solo dopo il segnale acceso Pronto per la convalida può partire un workflow, cioè 4 Flusso di lavoro standard, 5 Flusso di lavoro avanzato (il binario con le diramazioni) oppure 6 una scheda Workflow SDK, mentre gli Script (&#x3C;/>) si agganciano ai punti di attivazione lungo il percorso prima del segnale.</figcaption></figure>
+
 <figure><img src="../.gitbook/assets/automation-flow-it.svg" alt="Dove vengono eseguiti Regole di Trasformazione, Regole di Corrispondenza PO, Regole di convalida personalizzate, Script e Workflow nel flusso del documento"><figcaption></figcaption></figure>
 
 In parole:

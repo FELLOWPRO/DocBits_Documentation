@@ -33,9 +33,9 @@ Cuando reciba una factura, debe coincidir con la Orden de compra (PO) realizada 
 **El panorama general:**
 
 ```
-PO Placed     Invoice Arrives     PO Matching     Decision
-(€100)    →   (€103)          →   (Check if       → Approve/Reject
-Qty: 100      Qty: 100            within tolerance)
+OC emitida    Llega la factura    Coincidencia    Decisión
+(€100)    →   (€103)          →   (Verificar si   → Aprobar/Rechazar
+Cant.: 100    Cant.: 100          está dentro de la tolerancia)
 ```
 
 <figure><img src="../../../../.gitbook/assets/anatomy-po-matching.svg" alt="Balanza isométrica de brazos: el platillo izquierdo contiene el precio unitario de la orden de compra de 100, el derecho el precio unitario de la factura de 103 (100 más un pequeño peso adicional). El brazo se inclina y su aguja queda dentro de la banda verde que marca la tolerancia del 5 %." width="768"><figcaption><p>El precio de la OC (100 €) está en el platillo izquierdo y el de la factura (103 €) en el derecho. La diferencia de 3 € es el 3 % del precio de la OC, así que la aguja permanece dentro de la banda verde de tolerancia de ±5 % y la comprobación se supera. Por encima de ±5 % (rojo) la factura requiere revisión.</p></figcaption></figure>
@@ -48,7 +48,7 @@ Qty: 100      Qty: 100            within tolerance)
 
 Comprueba si toda la factura coincide con la orden de compra perfectamente o dentro de la tolerancia
 
-### Cuando usar
+### Cuándo usar
 
 * Antes de aprobar una factura
 * Como control de calidad preliminar
@@ -71,17 +71,17 @@ El sistema compara:
 ### Ejemplo
 
 ```
-PO:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
+OC:
+- Artículo ABC: Cant. 100, Precio unitario €50 = €5000
+- Artículo XYZ: Cant. 50, Precio unitario €20 = €1000
 - Total: €6000
 
-Invoice:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
+Factura:
+- Artículo ABC: Cant. 100, Precio unitario €50 = €5000
+- Artículo XYZ: Cant. 50, Precio unitario €20 = €1000
 - Total: €6000
 
-Result: ✅ FULL MATCH
+Resultado: ✅ COINCIDENCIA TOTAL
 ```
 
 ***
@@ -103,28 +103,28 @@ Compara el precio unitario en la factura con el precio unitario en la orden de c
 **Fórmula:**
 
 ```
-Variance % = |(Invoice Price - PO Price)| / PO Price × 100
+Desviación % = |(Precio de factura - Precio de OC)| / Precio de OC × 100
 
-Check: Is Variance % ≤ Tolerance %?
+Comprobación: ¿Desviación % ≤ Tolerancia %?
 ```
 
 **Ejemplo paso a paso:**
 
 ```
-Step 1: Get prices
-  PO Unit Price: €100.00
-  Invoice Unit Price: €103.00
+Paso 1: Obtener los precios
+  Precio unitario de OC: €100.00
+  Precio unitario de factura: €103.00
 
-Step 2: Calculate difference
-  Difference = |€103.00 - €100.00| = €3.00
+Paso 2: Calcular la diferencia
+  Diferencia = |€103.00 - €100.00| = €3.00
 
-Step 3: Calculate percentage
-  Percentage = (€3.00 / €100.00) × 100 = 3%
+Paso 3: Calcular el porcentaje
+  Porcentaje = (€3.00 / €100.00) × 100 = 3%
 
-Step 4: Check tolerance (5% allowed)
-  Is 3% ≤ 5%? YES ✅
+Paso 4: Comprobar la tolerancia (5 % permitido)
+  ¿3% ≤ 5%? SÍ ✅
 
-Result: PASS - Within tolerance
+Resultado: PASS - Dentro de la tolerancia
 ```
 
 ### Ejemplos del mundo real
@@ -132,56 +132,56 @@ Result: PASS - Within tolerance
 #### Ejemplo 1: Pequeño aumento (aceptado)
 
 ```
-PO Price: €50.00
-Invoice Price: €51.50
-Tolerance: ±3%
+Precio de OC: €50.00
+Precio de factura: €51.50
+Tolerancia: ±3%
 
-Calculation:
-  Variance = |(€51.50 - €50.00)| / €50.00 × 100
-  Variance = €1.50 / €50.00 × 100 = 3%
+Cálculo:
+  Desviación = |(€51.50 - €50.00)| / €50.00 × 100
+  Desviación = €1.50 / €50.00 × 100 = 3%
 
-Is 3% ≤ 3%? YES ✅ ACCEPT
+¿3% ≤ 3%? SÍ ✅ ACEPTAR
 ```
 
 #### Ejemplo 2: Aumento grande (rechazado)
 
 ```
-PO Price: €50.00
-Invoice Price: €55.00
-Tolerance: ±3%
+Precio de OC: €50.00
+Precio de factura: €55.00
+Tolerancia: ±3%
 
-Calculation:
-  Variance = |(€55.00 - €50.00)| / €50.00 × 100
-  Variance = €5.00 / €50.00 × 100 = 10%
+Cálculo:
+  Desviación = |(€55.00 - €50.00)| / €50.00 × 100
+  Desviación = €5.00 / €50.00 × 100 = 10%
 
-Is 10% ≤ 3%? NO ❌ REJECT - NEEDS REVIEW
+¿10% ≤ 3%? NO ❌ RECHAZAR - REQUIERE REVISIÓN
 ```
 
 #### Ejemplo 3: Descuento (también marcado)
 
 ```
-PO Price: €100.00
-Invoice Price: €97.00
-Tolerance: ±5%
+Precio de OC: €100.00
+Precio de factura: €97.00
+Tolerancia: ±5%
 
-Calculation:
-  Variance = |(€97.00 - €100.00)| / €100.00 × 100
-  Variance = €3.00 / €100.00 × 100 = 3%
+Cálculo:
+  Desviación = |(€97.00 - €100.00)| / €100.00 × 100
+  Desviación = €3.00 / €100.00 × 100 = 3%
 
-Is 3% ≤ 5%? YES ✅ ACCEPT (Discount is within tolerance)
+¿3% ≤ 5%? SÍ ✅ ACEPTAR (el descuento está dentro de la tolerancia)
 ```
 
 #### Ejemplo 4: Tolerancia de valor absoluto
 
 ```
-PO Price: €10.00
-Invoice Price: €10.50
-Tolerance: ±€1.00 (absolute, not %)
+Precio de OC: €10.00
+Precio de factura: €10.50
+Tolerancia: ±€1.00 (absoluta, no %)
 
-Calculation:
-  Variance = |€10.50 - €10.00| = €0.50
+Cálculo:
+  Desviación = |€10.50 - €10.00| = €0.50
 
-Is €0.50 ≤ €1.00? YES ✅ ACCEPT
+¿€0.50 ≤ €1.00? SÍ ✅ ACEPTAR
 ```
 
 ### Qué hacer con los resultados
@@ -218,34 +218,34 @@ Comprueba si la cantidad pedida coincide con la cantidad facturada
 **Tolerancia porcentual:**
 
 ```
-Formula:
-  Quantity Variance % = |(Invoice Qty - PO Qty)| / PO Qty × 100
+Fórmula:
+  Desviación de cantidad % = |(Cant. de factura - Cant. de OC)| / Cant. de OC × 100
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 103 units
-  Tolerance: ±5%
+Ejemplo:
+  Cantidad de OC: 100 unidades
+  Cantidad de factura: 103 unidades
+  Tolerancia: ±5%
 
-  Variance = |(103 - 100)| / 100 × 100
-  Variance = 3 / 100 × 100 = 3%
+  Desviación = |(103 - 100)| / 100 × 100
+  Desviación = 3 / 100 × 100 = 3%
 
-  Is 3% ≤ 5%? YES ✅ ACCEPT
+  ¿3% ≤ 5%? SÍ ✅ ACEPTAR
 ```
 
 **Tolerancia absoluta:**
 
 ```
-Formula:
-  Quantity Variance = |Invoice Qty - PO Qty|
+Fórmula:
+  Desviación de cantidad = |Cant. de factura - Cant. de OC|
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 102 units
-  Tolerance: ±5 units
+Ejemplo:
+  Cantidad de OC: 100 unidades
+  Cantidad de factura: 102 unidades
+  Tolerancia: ±5 unidades
 
-  Variance = |102 - 100| = 2 units
+  Desviación = |102 - 100| = 2 unidades
 
-  Is 2 units ≤ 5 units? YES ✅ ACCEPT
+  ¿2 unidades ≤ 5 unidades? SÍ ✅ ACEPTAR
 ```
 
 ### Escenarios del mundo real
@@ -253,31 +253,31 @@ Example:
 #### Sobreentrega (más de lo pedido)
 
 ```
-Ordered: 100 units
-Invoiced: 110 units
-Tolerance: ±5%
+Pedido: 100 unidades
+Facturado: 110 unidades
+Tolerancia: ±5%
 
-Variance = |(110-100)|/100 × 100 = 10%
+Desviación = |(110-100)|/100 × 100 = 10%
 
-Is 10% ≤ 5%? NO ❌
+¿10% ≤ 5%? NO ❌
 
-Decision: Contact supplier - more delivered than ordered
-Possible reason: Error by supplier, partial shipment already received
+Decisión: Contactar al proveedor - se entregó más de lo pedido
+Posible motivo: Error del proveedor, envío parcial ya recibido
 ```
 
 #### Entrega insuficiente (menos de lo pedido)
 
 ```
-Ordered: 100 units
-Invoiced: 95 units
-Tolerance: ±5%
+Pedido: 100 unidades
+Facturado: 95 unidades
+Tolerancia: ±5%
 
-Variance = |(95-100)|/100 × 100 = 5%
+Desviación = |(95-100)|/100 × 100 = 5%
 
-Is 5% ≤ 5%? YES ✅
+¿5% ≤ 5%? SÍ ✅
 
-Decision: Accept - within tolerance
-Possible reason: Partial shipment, rest to follow
+Decisión: Aceptar - dentro de la tolerancia
+Posible motivo: Envío parcial, el resto llegará después
 ```
 
 ***
@@ -291,10 +291,10 @@ Cuando la cantidad difiere, calcula si la diferencia de precio total es aceptabl
 ### Por qué esto importa
 
 ```
-Scenario: You ordered 100 units but received 110
-- Quantity is 10% over (bad)
-- BUT: You're only charged for 10% extra
-- Combined effect might be acceptable
+Escenario: Pidió 100 unidades pero recibió 110
+- La cantidad excede en un 10% (malo)
+- PERO: solo se le cobra ese 10% adicional
+- El efecto combinado podría ser aceptable
 ```
 
 ### Cálculo
@@ -302,30 +302,30 @@ Scenario: You ordered 100 units but received 110
 **Fórmula:**
 
 ```
-Combined Variance = Quantity Variance × Price Variance
+Desviación combinada = Desviación de cantidad × Desviación de precio
 
-If both are within tolerance, combined is usually acceptable
+Si ambas están dentro de la tolerancia, la combinada suele ser aceptable
 ```
 
 **Ejemplo:**
 
 ```
-PO:
-- Unit Price: €100
-- Quantity: 100
+OC:
+- Precio unitario: €100
+- Cantidad: 100
 - Total: €10,000
 
-Invoice:
-- Unit Price: €102 (2% higher)
-- Quantity: 105 (5% higher)
+Factura:
+- Precio unitario: €102 (2% más alto)
+- Cantidad: 105 (5% más alta)
 - Total: €10,710
 
-Analysis:
-- Price variance: 2% ✅
-- Quantity variance: 5% ✅
-- Combined effect: 1.02 × 1.05 = 1.071 = 7.1% total increase
+Análisis:
+- Desviación de precio: 2% ✅
+- Desviación de cantidad: 5% ✅
+- Efecto combinado: 1.02 × 1.05 = 1.071 = 7.1% de aumento total
 
-Is combined variance acceptable? Usually YES ✅
+¿Es aceptable la desviación combinada? Normalmente SÍ ✅
 ```
 
 ***
@@ -341,32 +341,32 @@ Comprueba si los artículos de la factura coinciden con los artículos de la ord
 **Coincidencia exacta (más simple):**
 
 ```
-PO Item ID: ABC-123
-Invoice Item ID: ABC-123
-Result: ✅ MATCH
+ID de artículo de OC: ABC-123
+ID de artículo de factura: ABC-123
+Resultado: ✅ COINCIDE
 ```
 
 **Número de artículo del proveedor (más común):**
 
 ```
-PO Item: ABC-123 (Our internal code)
-Supplier Item: SUPP-456 (Their code for same item)
-System matches these as same item
-Result: ✅ MATCH
+Artículo de OC: ABC-123 (nuestro código interno)
+Artículo del proveedor: SUPP-456 (su código para el mismo artículo)
+El sistema los reconoce como el mismo artículo
+Resultado: ✅ COINCIDE
 ```
 
 ### Escenario: ¿Qué pasa si no coincide?
 
 ```
-PO Item: ABC-123 (Copper Wire, 2mm)
-Invoice Item: ABC-124 (Steel Wire, 2mm)
+Artículo de OC: ABC-123 (cable de cobre, 2 mm)
+Artículo de factura: ABC-124 (cable de acero, 2 mm)
 
-Result: ❌ NO MATCH
+Resultado: ❌ NO COINCIDE
 
-Actions:
-1. Is this a substitution? Check with procurement
-2. Is this an error? Contact supplier
-3. Is the description similar? Verify manually
+Acciones:
+1. ¿Es una sustitución? Consulte con compras
+2. ¿Es un error? Contacte al proveedor
+3. ¿La descripción es similar? Verifique manualmente
 ```
 
 ***
@@ -383,16 +383,16 @@ Verifica que el tipo de orden de compra sea correcto
 * **Pedido urgente**: Urgente, puede tener prima
 * **Acuerdo Marco**: Contrato a largo plazo
 * **Pedido general**: Contrato indefinido
-* **Consignación**: No pagas hasta usarlo
+* **Consignación**: No se paga hasta usarlo
 
 ### Ejemplo de verificación
 
 ```
-PO Order Type: Standard Order
-Invoice Order Type: Standard Order
-Result: ✅ MATCH
+Tipo de pedido de OC: Pedido estándar
+Tipo de pedido de factura: Pedido estándar
+Resultado: ✅ COINCIDE
 
-If mismatch: Could affect terms, payment, pricing
+Si no coincide: podría afectar a las condiciones, el pago y los precios
 ```
 
 ***
@@ -408,39 +408,39 @@ Comprueba si la fecha de entrega coincide con la fecha prometida en la orden de 
 **Entrega tardía:**
 
 ```
-Formula:
-  Days Late = Invoice Delivery Date - PO Promised Date
+Fórmula:
+  Días de retraso = Fecha de entrega de la factura - Fecha prometida de la OC
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-22
-  Days Late = 7 days
+Ejemplo:
+  Prometido en la OC: 2025-10-15
+  Entrega real: 2025-10-22
+  Días de retraso = 7 días
 
-If tolerance is ±3 days:
-  Is 7 ≤ 3? NO ❌ LATE
+Si la tolerancia es de ±3 días:
+  ¿7 ≤ 3? NO ❌ TARDÍA
 ```
 
 **Entrega anticipada:**
 
 ```
-Formula:
-  Days Early = PO Promised Date - Invoice Delivery Date
+Fórmula:
+  Días de adelanto = Fecha prometida de la OC - Fecha de entrega de la factura
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-10
-  Days Early = 5 days
+Ejemplo:
+  Prometido en la OC: 2025-10-15
+  Entrega real: 2025-10-10
+  Días de adelanto = 5 días
 
-Early delivery is usually OK ✅
-Unless you need it at specific time
+La entrega anticipada suele estar bien ✅
+A menos que la necesite en un momento concreto
 ```
 
 ### Configuración de tolerancia
 
 ```
-±3 days: Allow 3 days late or early
-±5 days: Allow up to 5 days variance
-0 days: Must match exactly
+±3 días: permite 3 días de retraso o de adelanto
+±5 días: permite hasta 5 días de desviación
+0 días: debe coincidir exactamente
 ```
 
 ***
@@ -454,11 +454,11 @@ Comprueba si los cargos adicionales (impuestos, envío, manipulación) coinciden
 ### Cargos comunes
 
 ```
-- Shipping: €50
-- Handling: €10
-- Packaging: €5
-- Insurance: €15
-- Taxes: €300
+- Envío: €50
+- Manipulación: €10
+- Embalaje: €5
+- Seguro: €15
+- Impuestos: €300
 ```
 
 ### Cálculo
@@ -466,32 +466,32 @@ Comprueba si los cargos adicionales (impuestos, envío, manipulación) coinciden
 **Ejemplo: Verificación de cargo de envío**
 
 ```
-PO Shipping: €50.00
-Invoice Shipping: €51.00
-Tolerance: ±3%
+Envío de OC: €50.00
+Envío de factura: €51.00
+Tolerancia: ±3%
 
-Variance = |€51.00 - €50.00| / €50.00 × 100 = 2%
+Desviación = |€51.00 - €50.00| / €50.00 × 100 = 2%
 
-Is 2% ≤ 3%? YES ✅ ACCEPT
+¿2% ≤ 3%? SÍ ✅ ACEPTAR
 ```
 
 **Ejemplo: Múltiples Cargos**
 
 ```
-PO Total Charges:
-  - Shipping: €50
-  - Taxes: €300
-  - Handling: €10
+Cargos totales de la OC:
+  - Envío: €50
+  - Impuestos: €300
+  - Manipulación: €10
   Total: €360
 
-Invoice Total Charges:
-  - Shipping: €50
-  - Taxes: €312 (11% tax)
-  - Handling: €10
+Cargos totales de la factura:
+  - Envío: €50
+  - Impuestos: €312 (11% de impuesto)
+  - Manipulación: €10
   Total: €372
 
-Difference: €12
-Check if within tolerance ✅ or ❌
+Diferencia: €12
+Comprobar si está dentro de la tolerancia ✅ o ❌
 ```
 
 ***
@@ -507,37 +507,37 @@ Verifica que los montos de impuestos se calculen correctamente
 **Fórmula:**
 
 ```
-Tax Amount = Subtotal × Tax Rate
+Importe del impuesto = Subtotal × Tipo impositivo
 
-Example:
+Ejemplo:
   Subtotal: €1000
-  Tax Rate: 19%
-  Expected Tax: €1000 × 0.19 = €190
+  Tipo impositivo: 19%
+  Impuesto esperado: €1000 × 0.19 = €190
 
-Invoice Tax: €190
-Match? YES ✅
+Impuesto de la factura: €190
+¿Coincide? SÍ ✅
 ```
 
 **Problemas comunes:**
 
 ```
-1. Tax rate changed (region-based)
-2. Tax applied to wrong amount (before/after discounts)
-3. Multiple tax rates (some items 7%, others 19%)
-4. Tax exempt items (0% tax)
+1. El tipo impositivo cambió (según la región)
+2. Impuesto aplicado sobre un importe incorrecto (antes/después de descuentos)
+3. Varios tipos impositivos (algunos artículos al 7%, otros al 19%)
+4. Artículos exentos de impuestos (0% de impuesto)
 ```
 
-**Ejemplo: Tributación multitasa**
+**Ejemplo: Impuestos con varios tipos**
 
 ```
-Item A: €100 @ 19% tax = €119
-Item B: €100 @ 7% tax = €107
-Item C: €100 @ 0% tax = €100
+Artículo A: €100 @ 19% de impuesto = €119
+Artículo B: €100 @ 7% de impuesto = €107
+Artículo C: €100 @ 0% de impuesto = €100
 Total: €326
 
-Invoice shows €325 (€1 error)
+La factura muestra €325 (error de €1)
 
-Check: Within tolerance or needs attention?
+Comprobación: ¿dentro de la tolerancia o requiere atención?
 ```
 
 ***
@@ -551,15 +551,15 @@ Garantiza que la factura sea para la instalación/centro de costos correcto
 ### Ejemplo
 
 ```
-PO is for:
-- Facility: Berlin Plant
+La OC corresponde a:
+- Instalación: Planta de Berlín
 - Cost Center: CC-2025
 
-Invoice should have:
-- Facility: Berlin Plant ✅
+La factura debe tener:
+- Instalación: Planta de Berlín ✅
 - Cost Center: CC-2025 ✅
 
-If different facility: May need different approval
+Si la instalación es distinta: puede requerir otra aprobación
 ```
 
 ***
@@ -573,21 +573,21 @@ Comprueba si el proveedor todavía está aprobado/activo
 ### Tipos de estado
 
 ```
-✅ ACTIVE: Approved, can do business
-⚠️ ON HOLD: Temporarily blocked
-❌ INACTIVE: No longer doing business
-⚠️ CONDITIONAL: Only for specific items
+✅ ACTIVE: Aprobado, se puede operar
+⚠️ ON HOLD: Bloqueado temporalmente
+❌ INACTIVE: Ya no se opera con él
+⚠️ CONDITIONAL: Solo para artículos específicos
 ```
 
 ### Ejemplo de verificación
 
 ```
-Supplier: ABC Corp
-Status in Database: ACTIVE
-Status when creating PO: ACTIVE
-Status when invoice arrives: INACTIVE
+Proveedor: ABC Corp
+Estado en la base de datos: ACTIVE
+Estado al crear la OC: ACTIVE
+Estado al llegar la factura: INACTIVE
 
-Alert: Supplier status changed! Investigate why.
+Alerta: ¡el estado del proveedor cambió! Investigue por qué.
 ```
 
 ***
@@ -597,46 +597,46 @@ Alert: Supplier status changed! Investigate why.
 ### Tolerancias estrictas (menor riesgo, más trabajo manual)
 
 ```
-Use for:
-- High-value items
-- Items where exactness matters
-- Regulated industries
+Usar para:
+- Artículos de alto valor
+- Artículos donde importa la exactitud
+- Sectores regulados
 
-Settings:
-- Unit Price: ±1%
-- Quantity: ±1%
-- Delivery Date: ±1 day
-- Charges: ±1%
+Configuración:
+- Precio unitario: ±1%
+- Cantidad: ±1%
+- Fecha de entrega: ±1 día
+- Cargos: ±1%
 ```
 
 ### Tolerancias moderadas (equilibradas)
 
 ```
-Use for:
-- Most business transactions
-- Standard items
-- Normal purchasing
+Usar para:
+- La mayoría de las transacciones comerciales
+- Artículos estándar
+- Compras habituales
 
-Settings:
-- Unit Price: ±3-5%
-- Quantity: ±3-5%
-- Delivery Date: ±3 days
-- Charges: ±5%
+Configuración:
+- Precio unitario: ±3-5%
+- Cantidad: ±3-5%
+- Fecha de entrega: ±3 días
+- Cargos: ±5%
 ```
 
 ### Tolerancias flexibles (mayor riesgo, menos trabajo manual)
 
 ```
-Use for:
-- Low-value items
-- Bulk purchases
-- Supplier agreements with flexibility
+Usar para:
+- Artículos de bajo valor
+- Compras al por mayor
+- Acuerdos con proveedores que admiten flexibilidad
 
-Settings:
-- Unit Price: ±10%
-- Quantity: ±10%
-- Delivery Date: ±7 days
-- Charges: ±10%
+Configuración:
+- Precio unitario: ±10%
+- Cantidad: ±10%
+- Fecha de entrega: ±7 días
+- Cargos: ±10%
 ```
 
 ***
@@ -644,24 +644,24 @@ Settings:
 ## Ejemplo de flujo de trabajo de coincidencia de órdenes de compra
 
 ```
-Invoice Arrives
+Llega la factura
     ↓
-Condition: "Is amount > €5000?" → YES
+Condición: "¿El importe es > €5000?" → SÍ
     ↓
-Check: Full Match? → NO (10% price difference)
+Comprobar: ¿Coincidencia total? → NO (10% de diferencia de precio)
     ↓
-Check: Unit Price within 5%? → NO (12% difference)
+Comprobar: ¿Precio unitario dentro del 5%? → NO (12% de diferencia)
     ↓
-Check: Quantity within 5%? → YES (2% difference)
+Comprobar: ¿Cantidad dentro del 5%? → SÍ (2% de diferencia)
     ↓
-Decision: FAIL - Price variance too high
+Decisión: FAIL - Desviación de precio demasiado alta
     ↓
-Flag for: Manual review / Buyer approval
+Marcar para: Revisión manual / Aprobación del comprador
     ↓
-Wait for: Buyer comment
+Esperar: Comentario del comprador
     ↓
-If Approved: Continue to Export
-If Rejected: Return to Supplier
+Si se aprueba: Continuar con la exportación
+Si se rechaza: Devolver al proveedor
 ```
 
 ***
@@ -671,65 +671,65 @@ If Rejected: Return to Supplier
 ### "Orden de compra no encontrada"
 
 ```
-Cause: Invoice PO number doesn't exist in system
-Fix:
-1. Verify PO number spelling
-2. Check if PO was created
-3. Verify PO is in correct organization
-4. Ask supplier for PO reference
+Causa: El número de OC de la factura no existe en el sistema
+Solución:
+1. Verifique la ortografía del número de OC
+2. Compruebe si la OC fue creada
+3. Verifique que la OC esté en la organización correcta
+4. Solicite al proveedor la referencia de la OC
 ```
 
 ### "Los elementos no coinciden"
 
 ```
-Cause: Invoice items are different from PO items
-Possible Reasons:
-1. Substitution approved by procurement
-2. Different item numbers for same item
-3. Error by supplier
-Fix: Contact procurement or supplier
+Causa: Los artículos de la factura son distintos de los de la OC
+Posibles motivos:
+1. Sustitución aprobada por compras
+2. Números de artículo distintos para el mismo artículo
+3. Error del proveedor
+Solución: Contacte a compras o al proveedor
 ```
 
 ### "Precio superior al pedido"
 
 ```
-Cause: Invoice price > PO price
-Possible Reasons:
-1. Price increase approved
-2. Supplier error
-3. Currency difference
-4. Additional services included
-Fix: Verify with procurement
+Causa: Precio de la factura > precio de la OC
+Posibles motivos:
+1. Aumento de precio aprobado
+2. Error del proveedor
+3. Diferencia de moneda
+4. Servicios adicionales incluidos
+Solución: Verifique con compras
 ```
 
 ### "Fecha de entrega incorrecta"
 
 ```
-Cause: Invoice dated after promised delivery
-Possible Reasons:
-1. Shipment was delayed
-2. Receiving date different from invoice date
-3. Partial shipment
-Fix: Check shipping documents or contact supplier
+Causa: Factura fechada después de la entrega prometida
+Posibles motivos:
+1. El envío se retrasó
+2. La fecha de recepción difiere de la fecha de la factura
+3. Envío parcial
+Solución: Revise los documentos de envío o contacte al proveedor
 ```
 
 ***
 
 ## Tabla resumen
 
-| tarjeta           | Lo que comprueba        | Cálculo principal     | Tolerancia común |
+| Tarjeta           | Qué comprueba           | Cálculo principal     | Tolerancia común |
 | -------------- | --------------------- | -------------------- | ---------------- |
-| Partido completo     | todo            | Todos los cheques           | Varía           |
+| Coincidencia total   | Todo            | Todas las comprobaciones    | Varía           |
 | Precio unitario     | Precio por unidad        | % o € de diferencia    | ±3-5%            |
 | Cantidad       | Cantidad pedida        | % o diferencia unitaria | ±3-5%            |
 | Precio combinado | Total con cambio de cantidad | Cantidad × Precio          | ±5-10%           |
-| ID del artículo        | Artículos correctos           | Coincidencia de cuerdas         | exacto            |
-| Tipo de orden     | Tipo de compra      | Coincidencia de cuerdas         | exacto            |
-| Fecha de entrega  | cuando llego          | diferencia de dia       | ±3 días          |
+| ID del artículo        | Artículos correctos           | Coincidencia de cadenas         | Exacto            |
+| Tipo de orden     | Tipo de compra      | Coincidencia de cadenas         | Exacto            |
+| Fecha de entrega  | Cuándo llegó          | Diferencia de días      | ±3 días          |
 | Cargos        | Tarifas adicionales            | % o € de diferencia    | ±5%              |
 | Impuesto            | Monto del impuesto            | Cálculo del porcentaje de impuestos    | ±1%              |
-| Instalación       | centro de costos           | Coincidencia de cuerdas         | exacto            |
-| Proveedor       | ¿Aprobado?             | Verificación de estado         | Sólo activo      |
+| Instalación       | Centro de costos           | Coincidencia de cadenas         | Exacto            |
+| Proveedor       | ¿Aprobado?             | Verificación de estado         | Solo activo      |
 
 ***
 
@@ -748,7 +748,7 @@ Fix: Check shipping documents or contact supplier
 
 `CONDITION_PROMISED_DELIVERY_DATE_TO_CURRENT` · versión 2
 
-Suponga una fecha de referencia de `2026-10-21` y una fecha de entrega de línea prometida de `2026-10-23`. Seleccione la comparación posterior a la y la tolerancia de día cero. La fecha futura satisface esa comparación; `2026-10-20` no lo hace. Configure deliberadamente las opciones Cualquiera/Todos y los días de tolerancia aceptados y pruebe una fecha faltante por separado.
+Suponga una fecha de referencia de `2026-10-21` y una fecha de entrega de línea prometida de `2026-10-23`. Seleccione la comparación «posterior a» y la tolerancia de cero días. La fecha futura satisface esa comparación; `2026-10-20` no lo hace. Configure deliberadamente las opciones Cualquiera/Todos y los días de tolerancia aceptados y pruebe una fecha faltante por separado.
 
 <!-- workflow-card-example-condition_po_extracted_table_column-20261021 -->
 
@@ -762,13 +762,13 @@ Compare la columna del artículo de orden de compra coincidente con la columna e
 
 <!-- workflow-card-example-condition_check_facility_in_po-20261021 -->
 
-### Facilidades de orden de compra permitidas
+### Instalaciones permitidas en la orden de compra
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-813ff783b1f2-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
 
 `CONDITION_CHECK_FACILITY_IN_PO` · versión 2
 
-Seleccione Todo, la comparación de entrada y el código de instalación configurado `DEMO-NORTH`. Líneas de orden de compra coincidentes en ese pase de instalación; una línea en `DEMO-SOUTH` falla. Utilice códigos de instalación de los datos de la orden de compra en lugar de asumir que una etiqueta de visualización es su código.
+Seleccione Todo, la comparación de entrada y el código de instalación configurado `DEMO-NORTH`. Las líneas de orden de compra coincidentes con esa instalación pasan; una línea en `DEMO-SOUTH` falla. Utilice códigos de instalación de los datos de la orden de compra en lugar de asumir que una etiqueta de visualización es su código.
 
 <!-- workflow-card-example-condition_purchase_order_full_match-20261021 -->
 

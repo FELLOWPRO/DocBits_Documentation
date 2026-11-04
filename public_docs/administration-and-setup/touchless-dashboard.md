@@ -1,5 +1,9 @@
 # Dashboard bedienen
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Video-Kapitel (Prüffassung):** [Auswahl und Datenstand](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/de.html#chapter=01).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### Filter
 
 | Filter | Was er bewirkt |

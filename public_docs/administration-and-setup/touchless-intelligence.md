@@ -4,9 +4,15 @@ Touchless Intelligence erklärt zwei unterschiedliche Fragen: **Hat DocBits die 
 
 <figure><img src="../.gitbook/assets/anatomy-touchless-de.svg" alt="Isometrische Sortierstrecke: ein Förderband mit 14 Toren, ein Schieber, der ein Dokument in ein Prüffach umleitet, ein Exportbehälter mit einem Dokumentenstapel und eine Anzeige mit 78,9 Prozent"><figcaption><p>Touchless als Sortierstrecke, mit den Beispielzahlen aus der Rechenbeispiel-Tabelle: Die 14 Tore sind die Schritte des Verarbeitungspfads, Blätter, die noch auf dem Band liegen, sind in Bearbeitung und werden nicht gezählt, ein Dokument, das an einem Tor stoppt, landet im Prüffach bei den Dokumenten mit AP Assisted (30) und den Prozessausnahmen (10), und die Dokumente mit Pure Touchless (120) und reiner Freigabe (30) im Exportbehälter ergeben 150 von 190 beziehungsweise 78,9 % auf der Anzeige, über der Zielmarke von 70 %.</p></figcaption></figure>
 
-## Videoanleitung wird aktualisiert
+## Video: Funktionen des Touchless-Berichts
 
-Die Videoanleitung wird mit verständlichen deutschen Bezeichnungen und einem gefüllten Touchless-Bericht überarbeitet. Die neue Fassung konzentriert sich auf die Funktionen der Auswertung und echte Diagnoseergebnisse über die Assistenzschnittstelle.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/de.mp4" %}
+
+Die neue deutsche Prüffassung (5:42 Minuten) zeigt einen gefüllten Bericht: Filter, Kennzahlen und Berechnung, Trends, erste Blocker, Ursachenanalyse, Dokumentverlauf, Laufvergleich, gelernte Regeln, Änderungsvorschläge, Verlauf, Beratungsbericht und konkrete MCP-Abfragen.
+
+[Video mit deutschen Untertiteln und 16 direkt anwählbaren Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/de.html). Die Hörprüfung der neuen Fassung steht noch aus.
+
+Die gezeigten Schulungsfälle erklären die Berichtsfunktionen. Die MCP-Ergebnisse stammen aus tatsächlich ausgeführten Abfragen zu demselben Beispielbestand. Der gezeigte Änderungsvorschlag benötigt noch eine konkrete Zielkonfiguration; Vorschau und Anwenden sind dafür noch nicht verfügbar. Eine Empfehlung belegt keine gespeicherte Änderung und keinen gemessenen Erfolg.
 
 ## Die passende Unterseite finden
 

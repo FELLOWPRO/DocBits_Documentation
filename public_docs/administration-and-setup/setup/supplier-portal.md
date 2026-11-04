@@ -8,16 +8,16 @@ Esta página explica como ativar e usar o **Portal do Fornecedor**, bem como ond
 
 1.  Vá para **Configurações → Processamento de documentos → Módulo**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_module.png)
 2.  Na seção **Envio e Fornecedor**, ative a opção **Portal do Fornecedor**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/supplier_portal_1.png)
 
 ## Configurações do Fornecedor
 
 Uma vez que o recurso **Portal do Fornecedor** está ativado, uma nova seção **Configurações do Fornecedor** aparecerá na parte inferior do menu **Configurações**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_suppplier_settings.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_suppplier_settings.png)
 
 [**Configurações gerais do fornecedor**](../settings/supplier-setting/supplier-general-settings.md): Aqui, você pode personalizar o **Portal do Fornecedor** fazendo o upload do logotipo da sua empresa—exibido no cabeçalho de todos os modelos de e-mail—e gerenciando documentos legais, como os Termos de Uso e a Política de Privacidade.
 
@@ -35,7 +35,7 @@ Um guia detalhado sobre todas as Configurações do Fornecedor pode ser encontra
 
 Você pode acessar o **Painel do Fornecedor** no menu à esquerda, conforme mostrado abaixo.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/supplier_portal_2.png)
 
 Todos os seus Fornecedores criados são exibidos aqui.
 
@@ -49,11 +49,11 @@ Você pode pesquisar fornecedores por N**ome** ou N**úmero**, ou usar os filtro
 
 Você também pode especificar quantos fornecedores devem ser exibidos por página.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/supplier_portal_9.png)
 
 Além disso, você pode rapidamente filtrar pelos status **Aprovação pendente** ou **Registro pendente** clicando na categoria correspondente à esquerda da barra de filtro.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/10.png)
 
 ## Status do Fornecedor
 
@@ -73,26 +73,26 @@ Se você estiver usando o **Portal do Fornecedor**, é importante entender os di
 
 ### Atualizar tabela <a href="#refresh-table" id="refresh-table"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/supplier_portal_3.png)
 
 Clique neste botão para atualizar o painel e carregar os dados e status mais recentes.
 
 ### Definir colunas da tabela para organização <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/supplier_portal_4.png)
 
 Clique neste botão para abrir um menu onde você pode gerenciar a visibilidade das colunas na tabela de pedidos de compra. Use as caixas de seleção e os botões de seta para mover colunas entre as seções visíveis e ocultas. Você também pode reordenar colunas arrastando e soltando os nomes das colunas. Clique em **Feito** para salvar suas alterações.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/supplier_portal_7.png)
 
 ### Análise <a href="#analytics" id="analytics"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/supplier_portal_5.png)
 
 Clicar neste botão abrirá uma nova seção mostrando quantos fornecedores estão prestes a expirar e quando.\
 Clique em qualquer categoria para aplicar um filtro e visualizar apenas aqueles fornecedores.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/supplier_portal_8.png)
 
 ## Criar Fornecedor e Enviar E-mail de Registro
 
@@ -100,10 +100,10 @@ Clique em qualquer categoria para aplicar um filtro e visualizar apenas aqueles 
 
 1.  Clique no ícone de mais (+) no canto superior direito.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/supplier_portal_6.png)
 2.  Preencha os campos obrigatórios e clique em **Salvar**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/supplier_portal_11.png)
 3. O fornecedor receberá automaticamente um e-mail com um link para criar sua conta.
 
 ### **Para enviar um e-mail de registro a um fornecedor existente:**
@@ -112,11 +112,11 @@ Clique em qualquer categoria para aplicar um filtro e visualizar apenas aqueles 
 2. Clique no menu de três pontos na coluna **Ações**.
 3.  Selecione **Link Mágico**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/supplier_portal_12.png)
 4. Verifique os detalhes do fornecedor.
 5.  Clique em **Enviar** para enviar o link de registro por e-mail.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/supplier_portal_13.png)
 
 ## Como Funciona o Processo de Registro para o Fornecedor?
 

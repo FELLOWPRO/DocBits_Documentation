@@ -7,7 +7,7 @@ Clique em um fornecedor na fila para abrir a sua página de diagnóstico.
 
 A página mostra:
 
-* **Seis cartões de resultados** (Pure touchless, AP touchless, AP assisted, Process exception, In progress, Not eligible), cada um com link para os documentos.
+* **Quatro cartões de resultados finais**: Pure Touchless, AP Touchless, AP Assisted e exceção de processo; cada um abre os documentos.
 * **A tendência** com o seu próprio seletor de período: 30 dias, 90 dias, 6 meses, 1 ano ou um intervalo personalizado (até dois anos). Isso altera apenas o gráfico.
 * **Clusters de problemas** (veja abaixo).
 * **Change history** (histórico de alterações): as alterações que você aplicou para este fornecedor e o que elas fizeram.
@@ -27,7 +27,7 @@ Um **cluster** agrupa os documentos de um fornecedor que pararam pelo **mesmo pr
 * **Headline**: *Required field missing* na etapa *Field Validation*
 * **Affected**: 28 documentos. **Recoverable**: 28 documentos. **Expected lift**: +2,8 pp
 * **Suspected cause**: o fornecedor imprime o número do PO abaixo da tabela, onde a extração não procura
-* **What to change**: *Master data change*: adicionar o layout deste fornecedor. **Open** leva você à página de configurações certa
+* **Próxima verificação**: compare o número de encomenda impresso e extraído, depois a configuração de extração antes de propor alterações
 * **Owner**: Consultant. **Confidence**: Medium. **Source**: Hypothesis
 
 O que um cartão de cluster mostra:
@@ -60,9 +60,26 @@ Os textos de IA são escritos no idioma da sua organização. Se um cluster foi 
 
 Se o primeiro bloqueio de um cluster for um motivo de PO Matching (por exemplo, *PO item mismatch* ou *Purchase order not found*), o cartão do cluster mostra como o DocBits tenta fazer o match da fatura com o pedido de compra. Veja [Diagnóstico de PO Matching](touchless-po-matching-diagnosis.md).
 
+## Quem deve corrigir os dados?
+
+| Prova | Onde agir |
+| --- | --- |
+| Original e extração diferem | Extração ou configuração do fornecedor |
+| Extração correta, erro Infor de preço/quantidade/unidade confirmado | Origem; AP coordena compras ou responsáveis pelos dados |
+| Infor correto, cópia antiga/incompleta | Importação ou integração ERP |
+| Valores diferentes, acordo desconhecido | Esclarecimento de negócio; causa não confirmada |
+
+A categoria AP do fornecedor é apenas aprovação; a taxa combinada inclui também Pure. Separe resolução imediata da fatura e eliminação duradoura da causa.
+
+Ferramentas e classificação de ações em [Touchless com MCP](touchless-mcp.md).
+
 ## Páginas relacionadas
 
 * [Touchless Intelligence](touchless-intelligence.md)
 * [Diagnóstico de PO Matching](touchless-po-matching-diagnosis.md)
 * [Rastreamento do documento](touchless-document-trace.md)
 * [Propostas de alteração e relatórios](touchless-change-proposals.md)
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

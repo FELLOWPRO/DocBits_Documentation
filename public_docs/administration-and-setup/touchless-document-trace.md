@@ -36,6 +36,20 @@ O cartão **Documento** ao lado do registo de etapas indica o tipo de documento,
 
 **Exemplo.** Os documentos de um fornecedor param todos na etapa 8. No rastreamento vê sempre os mesmos campos em falta. Não é um problema de extração de documentos isolados, mas um valor predefinido em falta na sua configuração de campos: corrija-o uma vez e todo o cluster passa a ser recuperável.
 
+## Separar extração e dados de origem
+
+Compare original e campos/linhas anteriores às correções. Depois compare a encomenda importada com o Infor atual, incluindo unidades, unidades de preço e data de importação. Sem prova, mantenha a causa em aberto.
+
+**Exemplo:** original e extração indicam 10 €, encomenda importada 9 €. É uma divergência com a encomenda, não um erro de extração comprovado. Confirme o preço acordado. Reinício humano seguido de sucesso dá AP Assisted. Veja [métricas](touchless-metrics.md). Campos ausentes recorrentes não comprovam um valor predefinido em falta: examine original, extração, validação e configuração.
+
+## Provar a extração inicial e os bloqueios sucessivos
+
+Compare original e execução corretos: encomenda, moeda, quantidades, unidades, unidades de preço, preços e totais. Separe valores atuais dos anteriores às correções. Mudar de execução não garante recuperar cada célula antiga. Sem valor inicial, indique **não avaliável**; defina âmbito e tamanho da amostra. Compare cópia importada, data e Infor atual.
+
+Uma execução pode aguardar a encomenda; outra revelar um preço divergente depois da importação. A primeira não prova que chegou à verificação seguinte. Reinício humano permanece AP Assisted após sucesso; erro ERP definitivo prevalece. Ausência de registo significa ausência de prova.
+
+Ferramentas e classificação de ações em [Touchless com MCP](touchless-mcp.md).
+
 ## Páginas relacionadas
 
 * [Touchless Intelligence](touchless-intelligence.md)
@@ -43,3 +57,7 @@ O cartão **Documento** ao lado do registo de etapas indica o tipo de documento,
 * [Diagnóstico de PO Matching](touchless-po-matching-diagnosis.md)
 
 As capturas de ecrã desta página mostram a interface em português.
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

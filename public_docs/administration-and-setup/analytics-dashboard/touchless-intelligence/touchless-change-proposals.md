@@ -28,22 +28,7 @@ Administrators find the **Consulting report** at the bottom of the tab. Click **
 
 The effect values are **estimates**. If the report answers _forbidden_, your role does not allow it.
 
-## Preview, apply and measure with MCP
-
-> Explain the confirmed cause and list supported proposals. Preview the selected change, its scope and risks. Apply only that chosen change, then verify the saved setting, change history and measurable effect.
-
-| Step | Tool and actual returned identifiers | What it proves |
-| --- | --- | --- |
-| List | `touchless_list_change_proposals`, optional `issue_signature`, `window: "30d"`, `lang: "en"` | Available proposals; no setting saved |
-| Preview | `touchless_preview_change` with the returned `proposal_id` and matching `issue_signature` | Concrete scope and a bound `preview_token` when permitted |
-| Apply selected change | `touchless_apply_change` with the same IDs, `preview_token`, `overrides` and `window` | **Writes** the supported setting; successful response returns a `change_id` |
-| Read effect | `touchless_verify_change` with that `change_id` and the same `window` | Before/after measurement; at least 20 eligible completed documents per period still required |
-
-Copy IDs and tokens from genuine responses. A token previewing one value cannot apply a different value. An expired, forbidden or incomplete preview is not evidence of an applied change. Read-only tools and apply must not be described as equivalent. This table explains the tool sequence; it does not claim that the demo executed a proposal or measured a gain.
-
-**Configuration example:** After a confirmed configuration fix, inspect the actual saved value and new invoices. 52% before and 61% after is an observed 9 percentage-point difference, not proof that this change alone caused it. **Source-data example:** A wrong Infor PO needs a business correction and a verified import. `touchless_apply_change` is not a general Infor-write tool. Do not widen tolerances to conceal wrong source data.
-
-The report screenshot shows recommendations and estimated impact, not application or rollback. A successful apply needs a success response and history entry. Undo is available only where the selected proposal supports it; verify the actual restored setting. Reloading history does not apply a setting, and rollback does not delete past document interventions.
+See [Touchless with MCP](touchless-mcp.md) for the matching tool calls and classification of human actions.
 
 ## Related pages
 

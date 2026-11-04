@@ -4,17 +4,9 @@ Touchless Intelligence erklärt zwei unterschiedliche Fragen: **Hat DocBits die 
 
 <figure><img src="../.gitbook/assets/anatomy-touchless-de.svg" alt="Isometrische Sortierstrecke: ein Förderband mit 14 Toren, ein Schieber, der ein Dokument in ein Prüffach umleitet, ein Exportbehälter mit einem Dokumentenstapel und eine Anzeige mit 78,9 Prozent"><figcaption><p>Touchless als Sortierstrecke, mit den Beispielzahlen aus der Rechenbeispiel-Tabelle: Die 14 Tore sind die Schritte des Verarbeitungspfads, Blätter, die noch auf dem Band liegen, sind in Bearbeitung und werden nicht gezählt, ein Dokument, das an einem Tor stoppt, landet im Prüffach bei den Dokumenten mit AP Assisted (30) und den Prozessausnahmen (10), und die Dokumente mit Pure Touchless (120) und reiner Freigabe (30) im Exportbehälter ergeben 150 von 190 beziehungsweise 78,9 % auf der Anzeige, über der Zielmarke von 70 %.</p></figcaption></figure>
 
-## Aktualisierte Videoanleitung: Touchless auf NOVA
+## Videoanleitung wird aktualisiert
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v1/de.mp4" %}
-
-**Prüffassung vom 4. November 2026 · 4:24 Minuten.** Der neue Film zeigt echte Aufnahmen von Dev NOVA 11.0.3: Kennzahlen und Berechnung, Original und Auslesung, Verarbeitungspfad, Tabellen- und Lieferantendetails sowie den Vergleich zweier Läufe. Die Rechenbeispiele und MCP-Aufrufbeispiele sind ausdrücklich von tatsächlich ausgeführten Aktionen getrennt. Hör- und Akzentprüfung sind noch offen.
-
-[Video mit Untertiteln, 13 Kapiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v1/de.html). Der Player unterstützt Hell- und Dunkelmodus sowie eine vergrößerte Ansicht mit eigener Untertitelzeile.
-
-Der fiktive Testbeleg bleibt in Bearbeitung und zeigt einen Pflichtfeldblocker sowie einen manuellen Neustart. Der Film belegt weder einen erfolgreichen Infor-Abgleich noch einen Export oder einen gemessenen Touchless-Zuwachs. Native Anzeige- und Übersetzungslücken sind unverändert sichtbar und müssen bei der Diagnose berücksichtigt werden.
-
-[Frühere Videoanleitung mit älterer Dashboardansicht](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/de.mp4).
+Die Videoanleitung wird mit verständlichen deutschen Bezeichnungen und einem gefüllten Touchless-Bericht überarbeitet. Die neue Fassung konzentriert sich auf die Funktionen der Auswertung und echte Diagnoseergebnisse über die Assistenzschnittstelle.
 
 ## Die passende Unterseite finden
 

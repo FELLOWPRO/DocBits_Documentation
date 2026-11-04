@@ -1,9 +1,5 @@
 # Praxisbeispiele: Preis und Menge
 
-<!-- touchless-admin-video-20261104:start -->
-**Video-Kapitel (Prüffassung):** [Auslesung und Infor trennen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v1/de.html#chapter=04).
-<!-- touchless-admin-video-20261104:end -->
-
 ## Durchgängiges Beispiel: richtig ausgelesen, andere Infor-Daten
 
 Der folgende Schulungsfall verbindet Original, Auslesung, Quelldaten und Endergebnis. Die Screenshots zeigen die zugehörigen Ansichten der Anwendung; sie sind kein aufgezeichneter Infor-Durchlauf dieser Beispielrechnung. Die Rechnung enthält **10 Stück zu je 10,00 €**, insgesamt **100,00 €**. DocBits liest alle drei Werte korrekt aus. Die importierte Infor-Bestellung enthält **10 Stück zu je 9,00 €**, insgesamt **90,00 €**. Angenommen, die konfigurierten Abgleichprüfungen blockieren diese Preisabweichung.

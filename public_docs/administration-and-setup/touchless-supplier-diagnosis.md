@@ -1,9 +1,5 @@
 # Touchless Intelligence: Lieferantendiagnose und Fehlermuster
 
-<!-- touchless-admin-video-20261104:start -->
-**Video-Kapitel (Prüffassung):** [Lieferantenzuordnung prüfen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v1/de.html#chapter=08).
-<!-- touchless-admin-video-20261104:end -->
-
 
 Klicken Sie in der Warteschlange auf einen Lieferanten, um dessen Diagnoseseite zu öffnen.
 

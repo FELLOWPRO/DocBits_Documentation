@@ -8,7 +8,7 @@ Le entrate merci arrivano normalmente in DocBits in automatico attraverso il flu
 
 ## Due modi per inviare lo stesso BOD
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-endpoints.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-rd-endpoints.png)
 
 | Endpoint | Quando usarlo |
 | --- | --- |
@@ -25,7 +25,7 @@ Serviranno:
 * **Il BOD** — un file XML `SyncReceiveDelivery`, oppure il suo contenuto.
 * **Il proprio Org ID**, da **Settings → Integration & SSO**, nella sezione **ID**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-org-id.png)
 
 {% hint style="info" %}
 **Sub Org ID** mostra la sotto-organizzazione selezionata nell'intestazione. Con **CROSS** selezionato — la vista su tutte le sotto-organizzazioni — mostra lo stesso valore di **Org ID**. Passare prima a una sotto-organizzazione specifica se ne serve l'ID.
@@ -58,20 +58,20 @@ Tutto ciò che sta sotto **import** è bloccato finché non ci si autorizza. Ci 
 
 * Fare clic sull'**icona del lucchetto** a destra dell'endpoint.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-lock.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-rd-lock.png)
 
 * Si apre la finestra **Available authorizations** con due voci.
 * Incollare il proprio **Org ID** in **X-ORG-ID** e fare clic su **Authorize**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-orgid.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-orgid-done.png)
 
 * Scorrere fino a **X-API-KEY**, incollare la propria API key e fare clic su **Authorize**. In DocBits la si trova in **Settings → Integration & SSO**, nella sezione **API Key**, oppure si può [creare una nuova chiave](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md#creare-una-chiave-api).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-apikey.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-apikey-done.png)
 
 * Fare clic su **Close**.
 
@@ -81,13 +81,13 @@ Incollare la chiave da sola — non scrivere `Bearer` davanti. Entrambe le autor
 
 ### 3. Compilare i campi
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-rd.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-tryitout-rd.png)
 
 Fare clic su **Try it out**, poi compilare il modulo dell'endpoint scelto.
 
 #### Caricare un file — `/import/receive_delivery_bod`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-form.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-rd-form.png)
 
 | Campo | |
 | --- | --- |
@@ -148,7 +148,7 @@ Verificare a quale ambiente e a quale organizzazione si punta prima di eseguire.
 
 Prima di eseguire, controllare il menu a discesa **Servers** in fondo al modulo. Decide a quale ambiente viene effettivamente inviata la richiesta, e può differire dalla pagina che si è aperta.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-execute.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-rd-execute.png)
 
 Fare clic su **Execute**. Un'importazione riuscita restituisce:
 
@@ -159,7 +159,7 @@ Fare clic su **Execute**. Un'importazione riuscita restituisce:
 }
 ```
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-response.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-rd-response.png)
 
 I receive delivery BOD vengono elaborati mentre si attende, quindi quando si vede questo messaggio i dati sono già dentro.
 

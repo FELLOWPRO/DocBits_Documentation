@@ -2,7 +2,7 @@
 
 Se stai cercando uno o più documenti specifici, le seguenti opzioni sono disponibili per te. All'interno della barra di ricerca, ti abbiamo fornito vari strumenti per aiutarti a trovare il documento che stai cercando. Per accedervi, seleziona l'icona seguente.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_1.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_1.png)
 
 Utilizzare i filtri consente agli utenti di trovare rapidamente informazioni pertinenti e ridurre la quantità di dati all'essenziale.
 
@@ -16,7 +16,7 @@ Utilizzare i filtri consente agli utenti di trovare rapidamente informazioni per
 
 * Fai clic sull'icona del filtro o sul campo di ricerca.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_2.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_2.png)
 
 ### Personalizzazione dei filtri
 
@@ -30,23 +30,23 @@ Utilizzare i filtri consente agli utenti di trovare rapidamente informazioni per
 
 * Apri il menu dei filtri nelle impostazioni sotto Cruscotto e fai clic su "Filtri".
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_3.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_3.png)
 
 * Seleziona il campo da filtrare (ad es. Stato).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_4.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_4.png)
 
 * Definisci i criteri del filtro, ad es.: stile del filtro Stato.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_4.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_4.png)
 
 * Menu a discesa: Scegli tra opzioni predefinite.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_6.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_6.png)
 
 * Salva il filtro personalizzato facendo clic su "Applicare".
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_7.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_7.png)
 
 #### **Utilizza filtri combinati**
 
@@ -66,10 +66,10 @@ Utilizzare i filtri consente agli utenti di trovare rapidamente informazioni per
 * Apri il menu Filtri.
 * Passo 2: Cancella o rimuovi i filtri applicati facendo clic su "Cancella i filtri", sull'icona X accanto al filtro selezionato sia nel menu Filtri che sotto la barra dei Filtri.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_8.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_8.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_9.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_9.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_10.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_10.png)
 
 * I dati vengono visualizzati nuovamente senza i criteri di filtro precedenti.

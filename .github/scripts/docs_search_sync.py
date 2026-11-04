@@ -33,7 +33,8 @@ skipped rather than ingested as dead links.
 
 DOCS_INGEST_URL / DOCS_INGEST_KEY come from the environment (the workflow
 maps them from `secrets.DOCS_INGEST_URL` / `secrets.DOCS_INGEST_KEY`).
-Never logged, never printed — only sent in the request itself.
+Credentials and the full URL are never logged; the preflight reports only
+the hostname so an incorrectly configured target can be identified.
 """
 
 from __future__ import annotations
@@ -914,7 +915,7 @@ def verify_lang(lang: str, *, dry_run: bool) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("mode", choices=["diff", "full", "purge", "verify"])
+    parser.add_argument("mode", choices=["diff", "full", "purge", "verify", "preflight"])
     parser.add_argument("--lang", required=True)
     parser.add_argument("--before")
     parser.add_argument("--after")
@@ -935,6 +936,27 @@ def main() -> None:
             file=sys.stderr,
         )
         sys.exit(1)
+
+    if args.lang not in VERIFY_QUERIES and not (args.mode == "preflight" and args.lang == "all"):
+        parser.error("unsupported documentation language")
+
+    # Probe through the SAME authenticated docs route as ingest. An
+    # unauthenticated OpenAPI request can be routed to another release lane.
+    # This is read-only and accepts empty indices: it checks language support,
+    # while `verify` checks relevance and hybrid search after synchronization.
+    if args.mode != "verify" and not args.dry_run:
+        host = urllib.parse.urlsplit(os.environ["DOCS_INGEST_URL"]).hostname
+        print(f"service preflight: host={host}", flush=True)
+        languages = VERIFY_QUERIES if args.lang == "all" else [args.lang]
+        for lang in languages:
+            _call_endpoint(
+                "/docs/search",
+                {"query": "documentation language compatibility check", "lang": lang, "k": 1},
+                dry_run=False,
+            )
+            print(f"service preflight: lang={lang} OK", flush=True)
+    if args.mode == "preflight":
+        return
 
     if args.mode == "purge":
         purge_lang(args.lang, dry_run=args.dry_run)

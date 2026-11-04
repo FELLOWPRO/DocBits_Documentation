@@ -1,0 +1,34 @@
+name: Docs Search Service Contract
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/scripts/docs_search_sync.py"
+      - ".github/scripts/test_docs_search_sync*.py"
+      - ".github/workflows/docs-search-service-contract.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  service-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/scripts
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Check search sync regressions
+        run: python -m unittest discover -s .github/scripts -p 'test_docs_search_sync*.py'
+      - name: Check deployed language support (read-only)
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
+          DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
+        run: python .github/scripts/docs_search_sync.py preflight --lang all

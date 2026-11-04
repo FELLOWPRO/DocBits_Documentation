@@ -1,5 +1,9 @@
 # Touchless Intelligence: Diagnosi del fornitore e cluster di problemi
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capitolo video (versione di verifica):** [Esaminare problemi ricorrenti](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/it.html#chapter=06).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 
 Fai clic su un fornitore nella coda per aprire la sua pagina di diagnosi.
 

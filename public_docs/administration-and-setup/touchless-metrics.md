@@ -1,5 +1,9 @@
 # Metriche e calcolo
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capitolo video (versione di verifica):** [Calcolare le percentuali](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/it.html#chapter=03).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### Estrazione corretta e processo senza interventi
 
 **DocBits può estrarre correttamente la fattura mentre i dati di Infor richiedono comunque un intervento.** AP indica il reparto umano di contabilità fornitori, non un assistente IA.

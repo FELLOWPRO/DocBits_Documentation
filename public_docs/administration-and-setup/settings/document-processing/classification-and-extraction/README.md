@@ -62,6 +62,10 @@ Anschließend können Sie:
 
     
 
+Nach einer erfolgreichen Aufteilung wird das Ausgangsdokument gelöscht, und die Seiten werden als eigenständige Dokumente weiterverarbeitet, die denselben Batch teilen.
+
+<figure><img src="../../../../.gitbook/assets/anatomy-barcode-split.svg" alt="Isometrische Darstellung von acht Blättern in einer Ablage, über denen ein Scanner den Barcode auf Blatt 6 liest. Trennkarten stehen vor Blatt 3 und Blatt 6 und teilen die Blätter in drei Dokumente, und ein Gummiband umschließt die gesamte Ablage."><figcaption><p>Beispiel mit dem Muster <code>^INV\d{6}$</code>: Die Codes auf Blatt 3 und 6 passen und beginnen jeweils ein neues Dokument, der Code auf Blatt 4 passt nicht und teilt nichts, und das Gummiband steht für den Batch, den die entstehenden Dokumente gemeinsam haben.</p></figcaption></figure>
+
 ## Betragsformatierung
 
 Im Abschnitt **Amount Formatting** stehen Ihnen zwei Optionen zur Verfügung:

@@ -6,7 +6,7 @@
 
 ***
 
-Die PO-Vergleichskarten auf dieser Seite gehen in die **Und** Gruppe des Workflow Builders – sie vergleichen Rechnungsdaten mit der abgeglichenen Bestellung, bevor die Then-Aktionen ausgeführt werden:
+Die PO-Vergleichskarten auf dieser Seite gehen in die **Und**-Gruppe des Workflow Builders – sie vergleichen Rechnungsdaten mit der abgeglichenen Bestellung, bevor die Dann-Aktionen ausgeführt werden:
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-de.png" alt="Nicht gespeichertes Beispiel mit Wenn-, Und- und Dann-Karten. Füllen Sie alle Platzhalter vor der Ausführung aus."><figcaption><p>Nicht gespeichertes Beispiel mit Wenn-, Und- und Dann-Karten. Füllen Sie alle Platzhalter vor der Ausführung aus.</p></figcaption></figure>
 
@@ -16,7 +16,7 @@ Die PO-Vergleichskarten auf dieser Seite gehen in die **Und** Gruppe des Workflo
 
 **Am weitesten entwickelte Karte:** CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE (5 Versionen, neueste Version 5) **Andere komplexe Karten:** CONDITION\_OC\_TO\_PO\_ITEMS (Version 4), CONDITION\_LESS\_THAN\_TOLERANCE\_AS\_VALUE\_OF\_ORDERED\_QUANTITY (Version 4)
 
-**Tastenmuster:**
+**Versionsmuster:**
 
 * **v2 → v3+:** Hinzufügung von Toleranzparametern für eine flexible Anpassung
 * **v3 → v4:** Hinzufügung von Vergleichsmodus-Parametern
@@ -33,10 +33,12 @@ Wenn Sie eine Rechnung erhalten, sollte diese mit der zuvor aufgegebenen Bestell
 **Das große Ganze:**
 
 ```
-PO Placed     Invoice Arrives     PO Matching     Decision
-(€100)    →   (€103)          →   (Check if       → Approve/Reject
-Qty: 100      Qty: 100            within tolerance)
+PO aufgegeben    Rechnung trifft ein    PO-Matching        Entscheidung
+(€100)     →     (€103)             →   (Prüfen, ob        → Genehmigen/Ablehnen
+Menge: 100       Menge: 100             innerhalb der Toleranz)
 ```
+
+<figure><img src="../../../../.gitbook/assets/anatomy-po-matching.svg" alt="Isometrische Balkenwaage: Die linke Schale trägt den Bestell-Stückpreis von 100, die rechte Schale den Rechnungs-Stückpreis von 103 (100 plus ein kleines Zusatzgewicht). Der Waagebalken neigt sich leicht, und sein Zeiger steht im grünen Band, das die Toleranz von 5 % markiert." width="768"><figcaption><p>Der Bestellpreis (€100) liegt auf der linken Schale, der Rechnungspreis (€103) auf der rechten. Die Differenz von €3 entspricht 3 % des Bestellpreises, der Zeiger bleibt also im grünen Toleranzband von ±5 %, und die Prüfung gilt als bestanden. Jenseits von ±5 % (rot) muss die Rechnung geprüft werden.</p></figcaption></figure>
 
 ***
 
@@ -69,17 +71,17 @@ System vergleicht:
 ### Beispiel
 
 ```
-PO:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+Bestellung:
+- Artikel ABC: Menge 100, Stückpreis €50 = €5000
+- Artikel XYZ: Menge 50, Stückpreis €20 = €1000
+- Gesamt: €6000
 
-Invoice:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+Rechnung:
+- Artikel ABC: Menge 100, Stückpreis €50 = €5000
+- Artikel XYZ: Menge 50, Stückpreis €20 = €1000
+- Gesamt: €6000
 
-Result: ✅ FULL MATCH
+Ergebnis: ✅ VOLLSTÄNDIGE ÜBEREINSTIMMUNG
 ```
 
 ***
@@ -101,28 +103,28 @@ Vergleicht den Stückpreis auf der Rechnung mit dem Stückpreis auf der Bestellu
 **Formel:**
 
 ```
-Variance % = |(Invoice Price - PO Price)| / PO Price × 100
+Abweichung % = |(Rechnungspreis - Bestellpreis)| / Bestellpreis × 100
 
-Check: Is Variance % ≤ Tolerance %?
+Prüfung: Ist Abweichung % ≤ Toleranz %?
 ```
 
 **Schritt-für-Schritt-Beispiel:**
 
 ```
-Step 1: Get prices
-  PO Unit Price: €100.00
-  Invoice Unit Price: €103.00
+Schritt 1: Preise ermitteln
+  Bestell-Stückpreis: €100.00
+  Rechnungs-Stückpreis: €103.00
 
-Step 2: Calculate difference
-  Difference = |€103.00 - €100.00| = €3.00
+Schritt 2: Differenz berechnen
+  Differenz = |€103.00 - €100.00| = €3.00
 
-Step 3: Calculate percentage
-  Percentage = (€3.00 / €100.00) × 100 = 3%
+Schritt 3: Prozentsatz berechnen
+  Prozentsatz = (€3.00 / €100.00) × 100 = 3%
 
-Step 4: Check tolerance (5% allowed)
-  Is 3% ≤ 5%? YES ✅
+Schritt 4: Toleranz prüfen (5 % erlaubt)
+  Ist 3% ≤ 5%? JA ✅
 
-Result: PASS - Within tolerance
+Ergebnis: PASS - Innerhalb der Toleranz
 ```
 
 ### Beispiele aus der Praxis
@@ -130,56 +132,56 @@ Result: PASS - Within tolerance
 #### Beispiel 1: Kleine Erhöhung (akzeptiert)
 
 ```
-PO Price: €50.00
-Invoice Price: €51.50
-Tolerance: ±3%
+Bestellpreis: €50.00
+Rechnungspreis: €51.50
+Toleranz: ±3%
 
-Calculation:
-  Variance = |(€51.50 - €50.00)| / €50.00 × 100
-  Variance = €1.50 / €50.00 × 100 = 3%
+Berechnung:
+  Abweichung = |(€51.50 - €50.00)| / €50.00 × 100
+  Abweichung = €1.50 / €50.00 × 100 = 3%
 
-Is 3% ≤ 3%? YES ✅ ACCEPT
+Ist 3% ≤ 3%? JA ✅ AKZEPTIEREN
 ```
 
 #### Beispiel 2: Große Erhöhung (abgelehnt)
 
 ```
-PO Price: €50.00
-Invoice Price: €55.00
-Tolerance: ±3%
+Bestellpreis: €50.00
+Rechnungspreis: €55.00
+Toleranz: ±3%
 
-Calculation:
-  Variance = |(€55.00 - €50.00)| / €50.00 × 100
-  Variance = €5.00 / €50.00 × 100 = 10%
+Berechnung:
+  Abweichung = |(€55.00 - €50.00)| / €50.00 × 100
+  Abweichung = €5.00 / €50.00 × 100 = 10%
 
-Is 10% ≤ 3%? NO ❌ REJECT - NEEDS REVIEW
+Ist 10% ≤ 3%? NEIN ❌ ABLEHNEN - PRÜFUNG ERFORDERLICH
 ```
 
 #### Beispiel 3: Rabatt (auch geprüft)
 
 ```
-PO Price: €100.00
-Invoice Price: €97.00
-Tolerance: ±5%
+Bestellpreis: €100.00
+Rechnungspreis: €97.00
+Toleranz: ±5%
 
-Calculation:
-  Variance = |(€97.00 - €100.00)| / €100.00 × 100
-  Variance = €3.00 / €100.00 × 100 = 3%
+Berechnung:
+  Abweichung = |(€97.00 - €100.00)| / €100.00 × 100
+  Abweichung = €3.00 / €100.00 × 100 = 3%
 
-Is 3% ≤ 5%? YES ✅ ACCEPT (Discount is within tolerance)
+Ist 3% ≤ 5%? JA ✅ AKZEPTIEREN (Rabatt liegt innerhalb der Toleranz)
 ```
 
 #### Beispiel 4: Absolute Werttoleranz
 
 ```
-PO Price: €10.00
-Invoice Price: €10.50
-Tolerance: ±€1.00 (absolute, not %)
+Bestellpreis: €10.00
+Rechnungspreis: €10.50
+Toleranz: ±€1.00 (absolut, nicht %)
 
-Calculation:
-  Variance = |€10.50 - €10.00| = €0.50
+Berechnung:
+  Abweichung = |€10.50 - €10.00| = €0.50
 
-Is €0.50 ≤ €1.00? YES ✅ ACCEPT
+Ist €0.50 ≤ €1.00? JA ✅ AKZEPTIEREN
 ```
 
 ### Was tun mit Ergebnissen?
@@ -216,34 +218,34 @@ Prüft, ob die bestellte Menge mit der in Rechnung gestellten Menge übereinstim
 **Prozent-Toleranz:**
 
 ```
-Formula:
-  Quantity Variance % = |(Invoice Qty - PO Qty)| / PO Qty × 100
+Formel:
+  Mengenabweichung % = |(Rechnungsmenge - Bestellmenge)| / Bestellmenge × 100
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 103 units
-  Tolerance: ±5%
+Beispiel:
+  Bestellmenge: 100 Einheiten
+  Rechnungsmenge: 103 Einheiten
+  Toleranz: ±5%
 
-  Variance = |(103 - 100)| / 100 × 100
-  Variance = 3 / 100 × 100 = 3%
+  Abweichung = |(103 - 100)| / 100 × 100
+  Abweichung = 3 / 100 × 100 = 3%
 
-  Is 3% ≤ 5%? YES ✅ ACCEPT
+  Ist 3% ≤ 5%? JA ✅ AKZEPTIEREN
 ```
 
 **Absolute Toleranz:**
 
 ```
-Formula:
-  Quantity Variance = |Invoice Qty - PO Qty|
+Formel:
+  Mengenabweichung = |Rechnungsmenge - Bestellmenge|
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 102 units
-  Tolerance: ±5 units
+Beispiel:
+  Bestellmenge: 100 Einheiten
+  Rechnungsmenge: 102 Einheiten
+  Toleranz: ±5 Einheiten
 
-  Variance = |102 - 100| = 2 units
+  Abweichung = |102 - 100| = 2 Einheiten
 
-  Is 2 units ≤ 5 units? YES ✅ ACCEPT
+  Ist 2 Einheiten ≤ 5 Einheiten? JA ✅ AKZEPTIEREN
 ```
 
 ### Szenarien aus der realen Welt
@@ -251,31 +253,31 @@ Example:
 #### Überlieferung (mehr als bestellt)
 
 ```
-Ordered: 100 units
-Invoiced: 110 units
-Tolerance: ±5%
+Bestellt: 100 Einheiten
+In Rechnung gestellt: 110 Einheiten
+Toleranz: ±5%
 
-Variance = |(110-100)|/100 × 100 = 10%
+Abweichung = |(110-100)|/100 × 100 = 10%
 
-Is 10% ≤ 5%? NO ❌
+Ist 10% ≤ 5%? NEIN ❌
 
-Decision: Contact supplier - more delivered than ordered
-Possible reason: Error by supplier, partial shipment already received
+Entscheidung: Lieferanten kontaktieren - mehr geliefert als bestellt
+Mögliche Ursache: Fehler des Lieferanten, Teillieferung bereits erhalten
 ```
 
 #### Unterlieferung (weniger als bestellt)
 
 ```
-Ordered: 100 units
-Invoiced: 95 units
-Tolerance: ±5%
+Bestellt: 100 Einheiten
+In Rechnung gestellt: 95 Einheiten
+Toleranz: ±5%
 
-Variance = |(95-100)|/100 × 100 = 5%
+Abweichung = |(95-100)|/100 × 100 = 5%
 
-Is 5% ≤ 5%? YES ✅
+Ist 5% ≤ 5%? JA ✅
 
-Decision: Accept - within tolerance
-Possible reason: Partial shipment, rest to follow
+Entscheidung: Akzeptieren - innerhalb der Toleranz
+Mögliche Ursache: Teillieferung, Rest folgt
 ```
 
 ***
@@ -289,10 +291,10 @@ Bei Mengenunterschieden wird berechnet, ob der Gesamtpreisunterschied akzeptabel
 ### Warum das wichtig ist
 
 ```
-Scenario: You ordered 100 units but received 110
-- Quantity is 10% over (bad)
-- BUT: You're only charged for 10% extra
-- Combined effect might be acceptable
+Szenario: Sie haben 100 Einheiten bestellt, aber 110 erhalten
+- Die Menge liegt 10 % darüber (schlecht)
+- ABER: Ihnen werden nur 10 % Mehrmenge berechnet
+- Die kombinierte Wirkung kann akzeptabel sein
 ```
 
 ### Berechnung
@@ -300,30 +302,30 @@ Scenario: You ordered 100 units but received 110
 **Formel:**
 
 ```
-Combined Variance = Quantity Variance × Price Variance
+Kombinierte Abweichung = Mengenabweichung × Preisabweichung
 
-If both are within tolerance, combined is usually acceptable
+Wenn beide innerhalb der Toleranz liegen, ist die Kombination in der Regel akzeptabel
 ```
 
 **Beispiel:**
 
 ```
-PO:
-- Unit Price: €100
-- Quantity: 100
-- Total: €10,000
+Bestellung:
+- Stückpreis: €100
+- Menge: 100
+- Gesamt: €10,000
 
-Invoice:
-- Unit Price: €102 (2% higher)
-- Quantity: 105 (5% higher)
-- Total: €10,710
+Rechnung:
+- Stückpreis: €102 (2 % höher)
+- Menge: 105 (5 % höher)
+- Gesamt: €10,710
 
-Analysis:
-- Price variance: 2% ✅
-- Quantity variance: 5% ✅
-- Combined effect: 1.02 × 1.05 = 1.071 = 7.1% total increase
+Analyse:
+- Preisabweichung: 2% ✅
+- Mengenabweichung: 5% ✅
+- Kombinierte Wirkung: 1.02 × 1.05 = 1.071 = 7.1% Gesamtanstieg
 
-Is combined variance acceptable? Usually YES ✅
+Ist die kombinierte Abweichung akzeptabel? In der Regel JA ✅
 ```
 
 ***
@@ -339,32 +341,32 @@ Prüft, ob die Artikel in der Rechnung mit den Artikeln in der Bestellung übere
 **Genaue Übereinstimmung (am einfachsten):**
 
 ```
-PO Item ID: ABC-123
-Invoice Item ID: ABC-123
-Result: ✅ MATCH
+Artikel-ID der Bestellung: ABC-123
+Artikel-ID der Rechnung: ABC-123
+Ergebnis: ✅ ÜBEREINSTIMMUNG
 ```
 
 **Lieferantenartikelnummer (häufiger):**
 
 ```
-PO Item: ABC-123 (Our internal code)
-Supplier Item: SUPP-456 (Their code for same item)
-System matches these as same item
-Result: ✅ MATCH
+Bestellartikel: ABC-123 (Unser interner Code)
+Lieferantenartikel: SUPP-456 (Dessen Code für denselben Artikel)
+Das System ordnet diese als denselben Artikel zu
+Ergebnis: ✅ ÜBEREINSTIMMUNG
 ```
 
 ### Szenario: Was passiert, wenn es nicht übereinstimmt?
 
 ```
-PO Item: ABC-123 (Copper Wire, 2mm)
-Invoice Item: ABC-124 (Steel Wire, 2mm)
+Bestellartikel: ABC-123 (Kupferdraht, 2 mm)
+Rechnungsartikel: ABC-124 (Stahldraht, 2 mm)
 
-Result: ❌ NO MATCH
+Ergebnis: ❌ KEINE ÜBEREINSTIMMUNG
 
-Actions:
-1. Is this a substitution? Check with procurement
-2. Is this an error? Contact supplier
-3. Is the description similar? Verify manually
+Maßnahmen:
+1. Handelt es sich um eine Substitution? Mit dem Einkauf klären
+2. Handelt es sich um einen Fehler? Lieferanten kontaktieren
+3. Ist die Beschreibung ähnlich? Manuell prüfen
 ```
 
 ***
@@ -383,14 +385,14 @@ Actions:
 * **Pauschalauftrag**: Unbefristeter Vertrag
 * **Einlieferung**: Sie zahlen erst bei Nutzung
 
-### Überprüfen Sie das Beispiel
+### Beispielprüfung
 
 ```
-PO Order Type: Standard Order
-Invoice Order Type: Standard Order
-Result: ✅ MATCH
+Bestellart der Bestellung: Standardbestellung
+Bestellart der Rechnung: Standardbestellung
+Ergebnis: ✅ ÜBEREINSTIMMUNG
 
-If mismatch: Could affect terms, payment, pricing
+Bei Abweichung: Kann Konditionen, Zahlung und Preise beeinflussen
 ```
 
 ***
@@ -406,39 +408,39 @@ If mismatch: Could affect terms, payment, pricing
 **Verspätete Lieferung:**
 
 ```
-Formula:
-  Days Late = Invoice Delivery Date - PO Promised Date
+Formel:
+  Tage zu spät = Lieferdatum der Rechnung - zugesagtes Bestelldatum
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-22
-  Days Late = 7 days
+Beispiel:
+  Bestellung zugesagt: 2025-10-15
+  Tatsächliche Lieferung: 2025-10-22
+  Tage zu spät = 7 Tage
 
-If tolerance is ±3 days:
-  Is 7 ≤ 3? NO ❌ LATE
+Bei einer Toleranz von ±3 Tagen:
+  Ist 7 ≤ 3? NEIN ❌ ZU SPÄT
 ```
 
 **Frühe Lieferung:**
 
 ```
-Formula:
-  Days Early = PO Promised Date - Invoice Delivery Date
+Formel:
+  Tage zu früh = zugesagtes Bestelldatum - Lieferdatum der Rechnung
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-10
-  Days Early = 5 days
+Beispiel:
+  Bestellung zugesagt: 2025-10-15
+  Tatsächliche Lieferung: 2025-10-10
+  Tage zu früh = 5 Tage
 
-Early delivery is usually OK ✅
-Unless you need it at specific time
+Eine frühe Lieferung ist in der Regel in Ordnung ✅
+Es sei denn, Sie benötigen sie zu einem bestimmten Zeitpunkt
 ```
 
 ### Toleranzeinstellungen
 
 ```
-±3 days: Allow 3 days late or early
-±5 days: Allow up to 5 days variance
-0 days: Must match exactly
+±3 Tage: 3 Tage zu spät oder zu früh zulassen
+±5 Tage: Abweichung von bis zu 5 Tagen zulassen
+0 Tage: Muss exakt übereinstimmen
 ```
 
 ***
@@ -449,14 +451,14 @@ Unless you need it at specific time
 
 Prüft, ob zusätzliche Kosten (Steuern, Versand, Bearbeitung) mit der Bestellung übereinstimmen
 
-### Gemeinsame Gebühren
+### Typische Gebühren
 
 ```
-- Shipping: €50
-- Handling: €10
-- Packaging: €5
-- Insurance: €15
-- Taxes: €300
+- Versand: €50
+- Bearbeitung: €10
+- Verpackung: €5
+- Versicherung: €15
+- Steuern: €300
 ```
 
 ### Berechnung
@@ -464,32 +466,32 @@ Prüft, ob zusätzliche Kosten (Steuern, Versand, Bearbeitung) mit der Bestellun
 **Beispiel: Versandkostenprüfung**
 
 ```
-PO Shipping: €50.00
-Invoice Shipping: €51.00
-Tolerance: ±3%
+Bestellversand: €50.00
+Rechnungsversand: €51.00
+Toleranz: ±3%
 
-Variance = |€51.00 - €50.00| / €50.00 × 100 = 2%
+Abweichung = |€51.00 - €50.00| / €50.00 × 100 = 2%
 
-Is 2% ≤ 3%? YES ✅ ACCEPT
+Ist 2% ≤ 3%? JA ✅ AKZEPTIEREN
 ```
 
 **Beispiel: Mehrfachladungen**
 
 ```
-PO Total Charges:
-  - Shipping: €50
-  - Taxes: €300
-  - Handling: €10
-  Total: €360
+Gesamtgebühren der Bestellung:
+  - Versand: €50
+  - Steuern: €300
+  - Bearbeitung: €10
+  Gesamt: €360
 
-Invoice Total Charges:
-  - Shipping: €50
-  - Taxes: €312 (11% tax)
-  - Handling: €10
-  Total: €372
+Gesamtgebühren der Rechnung:
+  - Versand: €50
+  - Steuern: €312 (11 % Steuer)
+  - Bearbeitung: €10
+  Gesamt: €372
 
-Difference: €12
-Check if within tolerance ✅ or ❌
+Differenz: €12
+Prüfen, ob innerhalb der Toleranz ✅ oder ❌
 ```
 
 ***
@@ -505,37 +507,37 @@ Check if within tolerance ✅ or ❌
 **Formel:**
 
 ```
-Tax Amount = Subtotal × Tax Rate
+Steuerbetrag = Zwischensumme × Steuersatz
 
-Example:
-  Subtotal: €1000
-  Tax Rate: 19%
-  Expected Tax: €1000 × 0.19 = €190
+Beispiel:
+  Zwischensumme: €1000
+  Steuersatz: 19%
+  Erwartete Steuer: €1000 × 0.19 = €190
 
-Invoice Tax: €190
-Match? YES ✅
+Steuer auf der Rechnung: €190
+Übereinstimmung? JA ✅
 ```
 
 **Häufige Probleme:**
 
 ```
-1. Tax rate changed (region-based)
-2. Tax applied to wrong amount (before/after discounts)
-3. Multiple tax rates (some items 7%, others 19%)
-4. Tax exempt items (0% tax)
+1. Steuersatz geändert (regionsabhängig)
+2. Steuer auf falschen Betrag angewendet (vor/nach Rabatten)
+3. Mehrere Steuersätze (einige Artikel 7 %, andere 19 %)
+4. Steuerbefreite Artikel (0 % Steuer)
 ```
 
 **Beispiel: Mehrfachbesteuerung**
 
 ```
-Item A: €100 @ 19% tax = €119
-Item B: €100 @ 7% tax = €107
-Item C: €100 @ 0% tax = €100
-Total: €326
+Artikel A: €100 @ 19% Steuer = €119
+Artikel B: €100 @ 7% Steuer = €107
+Artikel C: €100 @ 0% Steuer = €100
+Gesamt: €326
 
-Invoice shows €325 (€1 error)
+Die Rechnung zeigt €325 (€1 Fehler)
 
-Check: Within tolerance or needs attention?
+Prüfung: Innerhalb der Toleranz oder Handlungsbedarf?
 ```
 
 ***
@@ -549,15 +551,15 @@ Stellt sicher, dass die Rechnung für die richtige Einrichtung/Kostenstelle ausg
 ### Beispiel
 
 ```
-PO is for:
-- Facility: Berlin Plant
-- Cost Center: CC-2025
+Die Bestellung gilt für:
+- Einrichtung: Werk Berlin
+- Kostenstelle: CC-2025
 
-Invoice should have:
-- Facility: Berlin Plant ✅
-- Cost Center: CC-2025 ✅
+Die Rechnung sollte enthalten:
+- Einrichtung: Werk Berlin ✅
+- Kostenstelle: CC-2025 ✅
 
-If different facility: May need different approval
+Bei abweichender Einrichtung: Möglicherweise ist eine andere Freigabe erforderlich
 ```
 
 ***
@@ -571,21 +573,21 @@ Prüft, ob der Lieferant noch zugelassen/aktiv ist
 ### Statustypen
 
 ```
-✅ ACTIVE: Approved, can do business
-⚠️ ON HOLD: Temporarily blocked
-❌ INACTIVE: No longer doing business
-⚠️ CONDITIONAL: Only for specific items
+✅ ACTIVE: Zugelassen, Geschäftsbeziehung möglich
+⚠️ ON HOLD: Vorübergehend gesperrt
+❌ INACTIVE: Keine Geschäftsbeziehung mehr
+⚠️ CONDITIONAL: Nur für bestimmte Artikel
 ```
 
-### Überprüfen Sie das Beispiel
+### Beispielprüfung
 
 ```
-Supplier: ABC Corp
-Status in Database: ACTIVE
-Status when creating PO: ACTIVE
-Status when invoice arrives: INACTIVE
+Lieferant: ABC Corp
+Status in der Datenbank: ACTIVE
+Status beim Erstellen der Bestellung: ACTIVE
+Status beim Eingang der Rechnung: INACTIVE
 
-Alert: Supplier status changed! Investigate why.
+Warnung: Der Lieferantenstatus hat sich geändert! Ursache prüfen.
 ```
 
 ***
@@ -595,46 +597,46 @@ Alert: Supplier status changed! Investigate why.
 ### Strenge Toleranzen (geringeres Risiko, mehr manuelle Arbeit)
 
 ```
-Use for:
-- High-value items
-- Items where exactness matters
-- Regulated industries
+Verwenden für:
+- Artikel mit hohem Wert
+- Artikel, bei denen Genauigkeit wichtig ist
+- Regulierte Branchen
 
-Settings:
-- Unit Price: ±1%
-- Quantity: ±1%
-- Delivery Date: ±1 day
-- Charges: ±1%
+Einstellungen:
+- Stückpreis: ±1%
+- Menge: ±1%
+- Lieferdatum: ±1 Tag
+- Gebühren: ±1%
 ```
 
 ### Moderate Toleranzen (ausgewogen)
 
 ```
-Use for:
-- Most business transactions
-- Standard items
-- Normal purchasing
+Verwenden für:
+- Die meisten Geschäftsvorgänge
+- Standardartikel
+- Normaler Einkauf
 
-Settings:
-- Unit Price: ±3-5%
-- Quantity: ±3-5%
-- Delivery Date: ±3 days
-- Charges: ±5%
+Einstellungen:
+- Stückpreis: ±3-5%
+- Menge: ±3-5%
+- Lieferdatum: ±3 Tage
+- Gebühren: ±5%
 ```
 
 ### Lockere Toleranzen (höheres Risiko, weniger manuelle Arbeit)
 
 ```
-Use for:
-- Low-value items
-- Bulk purchases
-- Supplier agreements with flexibility
+Verwenden für:
+- Artikel mit geringem Wert
+- Großeinkäufe
+- Lieferantenvereinbarungen mit Spielraum
 
-Settings:
-- Unit Price: ±10%
-- Quantity: ±10%
-- Delivery Date: ±7 days
-- Charges: ±10%
+Einstellungen:
+- Stückpreis: ±10%
+- Menge: ±10%
+- Lieferdatum: ±7 Tage
+- Gebühren: ±10%
 ```
 
 ***
@@ -642,24 +644,24 @@ Settings:
 ## Beispiel für einen PO-Matching-Workflow
 
 ```
-Invoice Arrives
+Rechnung trifft ein
     ↓
-Condition: "Is amount > €5000?" → YES
+Bedingung: „Ist der Betrag > €5000?“ → JA
     ↓
-Check: Full Match? → NO (10% price difference)
+Prüfung: Vollständige Übereinstimmung? → NEIN (10 % Preisdifferenz)
     ↓
-Check: Unit Price within 5%? → NO (12% difference)
+Prüfung: Stückpreis innerhalb von 5 %? → NEIN (12 % Differenz)
     ↓
-Check: Quantity within 5%? → YES (2% difference)
+Prüfung: Menge innerhalb von 5 %? → JA (2 % Differenz)
     ↓
-Decision: FAIL - Price variance too high
+Entscheidung: FAIL - Preisabweichung zu hoch
     ↓
-Flag for: Manual review / Buyer approval
+Kennzeichnen für: Manuelle Prüfung / Freigabe durch den Einkäufer
     ↓
-Wait for: Buyer comment
+Warten auf: Kommentar des Einkäufers
     ↓
-If Approved: Continue to Export
-If Rejected: Return to Supplier
+Bei Genehmigung: Weiter zum Export
+Bei Ablehnung: An den Lieferanten zurücksenden
 ```
 
 ***
@@ -669,61 +671,61 @@ If Rejected: Return to Supplier
 ### „Bestellung nicht gefunden“
 
 ```
-Cause: Invoice PO number doesn't exist in system
-Fix:
-1. Verify PO number spelling
-2. Check if PO was created
-3. Verify PO is in correct organization
-4. Ask supplier for PO reference
+Ursache: Die Bestellnummer der Rechnung existiert nicht im System
+Lösung:
+1. Schreibweise der Bestellnummer prüfen
+2. Prüfen, ob die Bestellung angelegt wurde
+3. Prüfen, ob die Bestellung in der richtigen Organisation liegt
+4. Lieferanten nach der Bestellreferenz fragen
 ```
 
 ### „Artikel stimmen nicht überein“
 
 ```
-Cause: Invoice items are different from PO items
-Possible Reasons:
-1. Substitution approved by procurement
-2. Different item numbers for same item
-3. Error by supplier
-Fix: Contact procurement or supplier
+Ursache: Die Rechnungsartikel unterscheiden sich von den Bestellartikeln
+Mögliche Ursachen:
+1. Substitution vom Einkauf genehmigt
+2. Unterschiedliche Artikelnummern für denselben Artikel
+3. Fehler des Lieferanten
+Lösung: Einkauf oder Lieferanten kontaktieren
 ```
 
 ### „Preis höher als Bestellwert“
 
 ```
-Cause: Invoice price > PO price
-Possible Reasons:
-1. Price increase approved
-2. Supplier error
-3. Currency difference
-4. Additional services included
-Fix: Verify with procurement
+Ursache: Rechnungspreis > Bestellpreis
+Mögliche Ursachen:
+1. Preiserhöhung genehmigt
+2. Fehler des Lieferanten
+3. Währungsunterschied
+4. Zusätzliche Leistungen enthalten
+Lösung: Mit dem Einkauf abklären
 ```
 
 ### „Lieferdatum falsch“
 
 ```
-Cause: Invoice dated after promised delivery
-Possible Reasons:
-1. Shipment was delayed
-2. Receiving date different from invoice date
-3. Partial shipment
-Fix: Check shipping documents or contact supplier
+Ursache: Die Rechnung ist nach der zugesagten Lieferung datiert
+Mögliche Ursachen:
+1. Lieferung verzögerte sich
+2. Wareneingangsdatum weicht vom Rechnungsdatum ab
+3. Teillieferung
+Lösung: Versanddokumente prüfen oder Lieferanten kontaktieren
 ```
 
 ***
 
 ## Übersichtstabelle
 
-| Karte           | Was es überprüft        | Hauptberechnung     | Gemeinsame Toleranz |
+| Karte           | Was es überprüft        | Hauptberechnung     | Übliche Toleranz |
 | -------------- | --------------------- | -------------------- | ---------------- |
-| Vollständige Übereinstimmung     | Alles            | Alle Schecks           | Variiert           |
+| Vollständige Übereinstimmung     | Alles            | Alle Prüfungen         | Variiert           |
 | Stückpreis     | Preis pro Einheit        | % oder € Differenz    | ±3-5%            |
 | Menge       | Bestellte Menge        | % oder Einheitsdifferenz | ±3-5%            |
 | Kombipreis | Gesamt mit Mengenänderung | Menge × Preis          | ±5-10%           |
 | Artikel-ID        | Richtige Artikel           | Zeichenfolgenübereinstimmung         | Genau            |
 | Auftragsart     | Art des Kaufs      | Zeichenfolgenübereinstimmung         | Genau            |
-| Liefertermin  | Als angekommen          | Tagesunterschied       | ±3 Tage          |
+| Liefertermin  | Wann geliefert         | Tagesunterschied       | ±3 Tage          |
 | Gebühren        | Zusätzliche Gebühren            | % oder € Differenz    | ±5%              |
 | Steuer            | Steuerbetrag            | Berechnung des Steuerprozentsatzes    | ±1%              |
 | Einrichtung       | Kostenstelle           | Zeichenfolgenübereinstimmung         | Genau            |
@@ -746,7 +748,7 @@ Fix: Check shipping documents or contact supplier
 
 `CONDITION_PROMISED_DELIVERY_DATE_TO_CURRENT` · Version 2
 
-Gehen Sie von einem Referenzdatum von `2026-10-21` und einem versprochenen Linienlieferdatum von `2026-10-23` aus. Wählen Sie den Später-als-Vergleich und die Null-Tage-Toleranz aus. Das zukünftige Datum erfüllt diesen Vergleich; `2026-10-20` nicht. Konfigurieren Sie die Optionen „Alle/Alle“ und „Akzeptierter Toleranztag“ gezielt und testen Sie ein fehlendes Datum separat.
+Gehen Sie von einem Referenzdatum von `2026-10-21` und einem versprochenen Positionslieferdatum von `2026-10-23` aus. Wählen Sie den Später-als-Vergleich und die Null-Tage-Toleranz aus. Das zukünftige Datum erfüllt diesen Vergleich; `2026-10-20` nicht. Konfigurieren Sie die Optionen „Alle/Alle“ und „Akzeptierter Toleranztag“ gezielt und testen Sie ein fehlendes Datum separat.
 
 <!-- workflow-card-example-condition_po_extracted_table_column-20261021 -->
 
@@ -760,13 +762,13 @@ Vergleichen Sie die übereinstimmende Bestellartikelspalte mit der extrahierten 
 
 <!-- workflow-card-example-condition_check_facility_in_po-20261021 -->
 
-### Zulässige Bestellmöglichkeiten
+### Zulässige Einrichtungen in der Bestellung
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-813ff783b1f2-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 `CONDITION_CHECK_FACILITY_IN_PO` · Version 2
 
-Wählen Sie „Alle“, den Ist-Vergleich und den konfigurierten Anlagencode `DEMO-NORTH`. Übereinstimmende Bestellposten in diesem Einrichtungspass; eine Zeile in `DEMO-SOUTH` schlägt fehl. Verwenden Sie Einrichtungscodes aus den Bestelldaten, anstatt davon auszugehen, dass es sich bei einem Anzeigeetikett um den Code handelt.
+Wählen Sie „Alle“, den Ist-Vergleich und den konfigurierten Anlagencode `DEMO-NORTH`. Übereinstimmende Bestellposten in diesem Einrichtungspass; eine Position mit `DEMO-SOUTH` schlägt fehl. Verwenden Sie Einrichtungscodes aus den Bestelldaten, anstatt davon auszugehen, dass es sich bei einem Anzeigeetikett um den Code handelt.
 
 <!-- workflow-card-example-condition_purchase_order_full_match-20261021 -->
 
@@ -806,7 +808,7 @@ Beispiel: Bestelleinheitspreis `200`, Grundpreis `100` und konfigurierte Toleran
 
 `CONDITION_COMPARE_PO_LINE_VALUE` · Version 2
 
-Wählen Sie die übereinstimmende PO-Spalte `item_number`, Gleichheit und Wert `DEMO-A` aus. Eine Linie mit `DEMO-A` geht durch; `DEMO-B` schlägt fehl. Verwenden Sie nur Operatoren, die für den ausgewählten Datentyp unterstützt werden, und testen Sie fehlende Matched-Line-Daten separat.
+Wählen Sie die übereinstimmende PO-Spalte `item_number`, Gleichheit und Wert `DEMO-A` aus. Eine Position mit `DEMO-A` besteht die Prüfung; `DEMO-B` schlägt fehl. Verwenden Sie nur Operatoren, die für den ausgewählten Datentyp unterstützt werden, und testen Sie fehlende Daten der abgeglichenen Position separat.
 
 
 ## Aktueller Konfigurations- und Ergebnisvertrag

@@ -8,7 +8,7 @@ La page **Validation des factures électroniques** (**Paramètres → Documents 
 
 ## Ce que contient cette page
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-fr.png" alt="La page Validation des factures électroniques avec le tableau Validation pour chaque type de document"><figcaption><p>La page Validation des factures électroniques. L'onglet <strong>Règles et politique</strong> commence par le tableau <strong>Validation pour chaque type de document</strong>. Exemple d'organisation.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-fr-20261104.png" alt="Validation et blocage par type de document. Les noms configurés sont masqués. Exemple sur Dev."><figcaption><p>Validation et blocage par type de document. Les noms configurés sont masqués. Exemple sur Dev.</p></figcaption></figure>
 
 | Sujet | Ce que cela permet | Qui |
 | --- | --- | --- |

@@ -1,16 +1,18 @@
 # Étape suivante et rejet d'un document
 
+> Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.
+
 Après la lecture du [rapport de validation](validation-report.md), le rapport vous indique quoi faire. Vous pouvez aussi rejeter le document.
 
 ## Que faire ensuite
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-next-step-fr.png" alt="La fin du rapport avec l'évaluation, l'étape suivante et les boutons"><figcaption><p>L'évaluation, l'étape suivante et les boutons à la fin du rapport</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-report-next-step-fr-20261104-v2.png" alt="Évaluation, étape suivante et actions du rapport."><figcaption><p>Évaluation, étape suivante et actions du rapport.</p></figcaption></figure>
 
 L'**Évaluation** indique en une phrase si la facture est conforme. Le bloc **Étape suivante** vous dit quoi faire :
 
 | Résultat | Étape suivante |
 | --- | --- |
-| Au moins une **erreur** | Demandez à l'expéditeur une facture corrigée, ou refusez le document. Une facture corrigée est un nouveau document. |
+| Au moins une **erreur** | Demandez à l'expéditeur une facture corrigée, ou rejetez le document. Une facture corrigée est un nouveau document. |
 | Uniquement des **avertissements** | Vous pouvez poursuivre avec le document. |
 
 Les boutons à la fin du rapport :
@@ -21,7 +23,7 @@ Les boutons à la fin du rapport :
 
 ## Rejeter un document
 
-<figure><img src="../../../../.gitbook/assets/einvoice-reject-dialog-fr.png" alt="La boîte de dialogue Rejeter le document avec le motif repris du rapport"><figcaption><p>Le motif est repris des erreurs du rapport. Vous pouvez le modifier.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-reject-dialog-fr-20261104-v2.png" alt="Boîte de dialogue de rejet de la facture fictive. Le rejet a été annulé."><figcaption><p>Boîte de dialogue de rejet de la facture fictive. Le rejet a été annulé.</p></figcaption></figure>
 
 1. Dans le rapport, cliquez sur **Rejeter le document**.
 2. Vérifiez le **Motif**. DocBits le remplit à partir des erreurs du rapport. Vous pouvez modifier le texte.

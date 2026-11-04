@@ -4,7 +4,7 @@ Saisissez un ID de document dans **ID du document** (Document ID), ou ouvrez un 
 
 L'en-tête affiche le fichier, son statut (par exemple **En cours**), l'exécution que vous consultez et son premier bloqueur, ainsi qu'un bouton **Document** avec l'ID du document.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace-pipeline-fr.png" alt="La page Trace du document avec l'en-tête du fichier, le Chemin du pipeline en 14 étapes et le début du journal des étapes"><figcaption><p>La trace du document : le chemin du pipeline avec toutes les étapes, et le journal des étapes avec ce que chacune a enregistré.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-nova-trace-overview-fr.png" alt="Dev NOVA : parcours et valeurs enregistrées lors de la première exécution de test"><figcaption><p>Nouvelle capture sur Dev NOVA 11.0.3, le 4 novembre 2026. La facture fictive s’arrête à la validation des champs. Classification, recherche du fournisseur et extraction de l’en-tête et du tableau contiennent des valeurs réellement enregistrées. Les cartes montrent le document et son historique. Il s’agit de l’interface du produit en fonctionnement. Dans cette version, les noms d’étape du parcours restent en anglais ; Validation sur le terrain désigne ici la validation des champs et Historique des courses désigne les exécutions, sans rapport avec des courses.</p></figcaption></figure>
 
 Le **Chemin du pipeline** affiche 14 étapes : Réception, Classification, Validation du document électronique, Identification du fournisseur, Reconnaissance de texte, Extraction de l'en-tête, Extraction du tableau, Validation des champs, Recherche du BC, Rapprochement des lignes de BC, Approbation, Routage du workflow, Exportation, Accusé de réception de l'ERP. Chaque étape porte un seul état :
 
@@ -12,7 +12,7 @@ Le **Chemin du pipeline** affiche 14 étapes : Réception, Classification, Valid
 | --- | --- |
 | **Passé** (vert) | L'étape s'est bien déroulée |
 | **Arrêté ici** (orange) | L'étape a bloqué le document |
-| **À suivre** | Le document n'est jamais allé aussi loin |
+| **Non atteint** | Étape située après le premier blocage dans le parcours ; vérifier les éventuelles exécutions supplémentaires dans le journal |
 | **Aucun enregistrement** (en pointillés) | Aucune donnée n'a été enregistrée pour cette étape |
 | **Sans objet** | L'étape ne s'applique pas à ce document |
 
@@ -26,13 +26,29 @@ Le **journal des étapes** sous le chemin liste les mêmes étapes avec ce que c
 * Une valeur qu'aucune étape n'a enregistrée s'affiche comme **Non enregistré**, jamais comme une valeur inventée. Les valeurs sont des nombres et des termes fixes, jamais du texte du document.
 * **Afficher les diagnostics bruts** active les données brutes lorsque le support les demande.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace-stage-log-fr.png" alt="Journal des étapes en français avec validation des champs bloquée. Les valeurs non enregistrées restent signalées comme telles : ce blocage ne prouve à lui seul ni une erreur d’extraction ni des données Infor incorrectes."><figcaption><p>Journal des étapes en français avec validation des champs bloquée. Les valeurs non enregistrées restent signalées comme telles : ce blocage ne prouve à lui seul ni une erreur d’extraction ni des données Infor incorrectes.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-nova-trace-stage-log-fr.png" alt="Dev NOVA : journal avec confiance, valeurs d’extraction et validation bloquée"><figcaption><p>Première exécution réelle : confiance de classification de 100 %, 0 fournisseur candidat, 1 ligne et 7 écarts de correspondance. Une étape réussie confirme son exécution, pas l’identification du fournisseur ni l’exactitude de toutes les valeurs. La validation signale un champ obligatoire manquant.</p></figcaption></figure>
 
 ### Exécutions et changements
 
-Le sélecteur d'exécution en haut du journal des étapes (**Exécuter 1 · Actuel**) permet de passer d'une exécution du document à l'autre. L'**historique des exécutions** à droite liste chaque exécution avec son résultat et l'endroit où elle s'est arrêtée. Lorsqu'un document a été exécuté plusieurs fois, choisissez une exécution dans le sélecteur pour la comparer à l'exécution actuelle : les valeurs modifiées portent alors un badge indiquant l'écart et son unité, par exemple **−2 champs** ou **+3 %**.
+Le sélecteur permet de choisir une tentative ; l’historique indique son résultat et son premier blocage. Les différences enregistrées comparent l’exécution sélectionnée à la précédente, pas automatiquement à l’exécution actuelle. Chaque différence porte son unité ; des valeurs identiques restent inchangées.
 
-La carte **Document** à côté du journal des étapes indique le type de document, le fournisseur, le numéro de facture, le bon de commande, le nombre de pages et si l'analyse est **basée sur des règles** ou rédigée par l'IA.
+La carte Document présente le type, le fournisseur, le numéro de facture, la commande, les pages et la méthode d’analyse enregistrée. Ici, Manuel correspond au type fourni lors de l’import de test. Les 100 % ne prouvent donc pas indépendamment la précision d’une classification automatique.
+
+### Lire les détails du fournisseur et du tableau
+
+<figure><img src="../.gitbook/assets/touchless-nova-trace-supplier-fr.png" alt="Dev NOVA : identifiants détectés, recherche dans les données de référence et attribution du fournisseur"><figcaption><p>Le nom figure sur la facture et fait l’objet d’une recherche dans les données de référence, sans fournisseur attribué. Cette facture ne contient ni numéro de TVA, ni IBAN, ni adresse e-mail, ni GLN. L’absence de correspondance dans les données de référence diffère d’une valeur non trouvée sur la facture. Pour les identifiants non recherchés, le libellé Aucune correspondance trouvée ne prouve pas une recherche : aucune tentative de rapprochement n’a eu lieu.</p></figcaption></figure>
+
+Vérifiez séparément si l’identifiant figure sur le document, s’il a été recherché et si un fournisseur a été attribué. Une étape verte ne répond pas à elle seule à ces trois questions.
+
+<figure><img src="../.gitbook/assets/touchless-nova-trace-table-fr.png" alt="Dev NOVA : détails de la première exécution avec sept écarts de correspondance"><figcaption><p>Les détails signalent 7 écarts de correspondance pour 1 tableau et 1 ligne. Vérifiez le mappage des colonnes avant de conclure à un échec d’extraction. Le pied de comparaison ne constitue pas une référence valide pour la première exécution sélectionnée, qui n’a pas de prédécesseur.</p></figcaption></figure>
+
+### Reconnaître une véritable relance
+
+<figure><img src="../.gitbook/assets/touchless-nova-trace-runs-fr.png" alt="Dev NOVA : comparaison de deux exécutions réelles dont les valeurs enregistrées sont identiques"><figcaption><p>La même facture après une véritable relance manuelle, sans correction des champs. Une nouvelle exécution prouve une nouvelle tentative, pas une amélioration. Les valeurs identiques restent sans changement ; aucune différence n’a été inventée.</p></figcaption></figure>
+
+Une relance manuelle constitue une intervention humaine. Ce cas ne sera classé AP Assisted qu’après une éventuelle réussite ultérieure. Tant qu’il est en cours, il est exclu du dénominateur des documents finalisés.
+
+Limites des preuves. Ce cas ne démontre ni approbation métier, ni export réussi, ni confirmation ERP. L’ancien moteur de rapprochement ne fournit ici aucun parcours de décision enregistré ; ce n’est pas la preuve d’une comparaison avec Infor. Dans NOVA 11.0.3, le journal peut signaler une recherche de commande réussie après une validation bloquée alors que le parcours la présente comme étape suivante. Vérifiez les deux vues. Le résumé indique aussi que le numéro de facture n’est pas enregistré, bien qu’il figure dans l’extraction ; comparez l’original et les champs extraits.
 
 ## Distinguer extraction et données source
 
@@ -68,3 +84,5 @@ Les captures d'écran de cette page montrent l'interface en français.
 <!-- Touchless documentation alignment 2026-11-04: extraction quality is distinct from process automation. KPI definition checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4; existing native screenshots and video sources preserved except unsafe historical list images. -->
 
 <!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->
+
+Les cinq nouvelles captures montrent l’interface localisée de Dev NOVA 11.0.3 et la même facture créée pour la documentation. Toute illustration distincte de l’original et de ses champs reste limitée à cette comparaison.

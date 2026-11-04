@@ -4,7 +4,7 @@ Tabellenspalten legen fest, welche Spalten die Positionstabelle eines Dokumentty
 
 **Wo:** Settings → Global Settings → Document Types → Table Columns
 
-<figure><img src="../../../../../.gitbook/assets/table-columns_list-de.png" alt="Liste der Table Columns mit den Flags Required, Read Only, Hidden und Use AI pro Spalte"><figcaption><p>Table Columns: eine Zeile pro Spalte, die Flags werden direkt in der Liste umgeschaltet</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-de-20261104.png" alt="Aktuelle Use-AI-Auswahl mit Standard, Ja und Nein. Es wurde keine Option geändert. Titelzellen sind aus Datenschutzgründen ausgeblendet."><figcaption><p>Aktuelle Use-AI-Auswahl mit Standard, Ja und Nein. Es wurde keine Option geändert. Titelzellen sind aus Datenschutzgründen ausgeblendet.</p></figcaption></figure>
 
 ## Was Sie sehen
 
@@ -19,7 +19,7 @@ Jede Zeile ist eine Spalte einer Tabelle. Die Liste zeigt:
 | **Is Required** | Das Dokument kann nicht freigegeben werden, solange diese Spalte in einer beliebigen Zeile leer ist. |
 | **Read Only** | Benutzer sehen den Wert, können ihn aber nicht bearbeiten. |
 | **Hidden** | Die Spalte wird weder angezeigt noch exportiert. Damit schalten Sie Standardspalten ab, die Sie nicht benötigen. |
-| **Use AI** | Die KI-Tabellenextraktion füllt diese Spalte, auch wenn für einen Lieferanten trainierte Regeln vorhanden sind. |
+| **Use AI** | Dreistufige KI-Auswahl: Standard übernimmt die KI-Vorgabe des Dokumenttyps, Ja fordert die Spalte ausdrücklich an, Nein schließt sie aus dem Basisschema aus. Dies ist von Pflichtfeld, Schreibgeschützt und Ausgeblendet getrennt. |
 | **Actions** | Übersetzungs-Symbol: Titel umbenennen. Info-Symbol: woher die angezeigte Bezeichnung stammt (Ihre Übersetzung, der Standard, der Schlüssel). Drei-Punkte-Menü: *Delete*, nur für Spalten, die Ihre Organisation angelegt hat; Standardspalten können nur ausgeblendet werden. |
 
 Zwei Schaltflächen über der Liste:
@@ -44,3 +44,19 @@ Jeder Dokumenttyp wird mit einer Reihe von Standardspalten ausgeliefert (für Re
 * [Fehlerbehebung](troubleshooting-1.md)
 * [Positionsfelder und Tabellen trainieren](../../../../setup/document-training/training-line-fields-table-training/README.md): DocBits beibringen, wo sich die Tabelle eines Lieferanten befindet
 * [KI-Tabelle](../../../../../end-user-and-partner-section/end-user-section/ai-table/README.md): was der Benutzer in der Validierungsmaske sieht
+
+## Use AI: Standard, Ja oder Nein
+
+Öffnen Sie die [Tabellenspalten](README.md) des richtigen Dokumenttyps und der richtigen Tabelle. **KI nutzen (Use AI)** ist eine dreistufige Auswahl, keine Checkbox. Die Auswahl wird unmittelbar gespeichert.
+
+| Auswahl im aktuellen Menü | Bedeutung für das Basisschema |
+| --- | --- |
+| **Standard · angefordert** oder **Standard · nicht angefordert** | Übernimmt die DocBits-Vorgabe für diesen Dokumenttyp und Spaltennamen. Standard bedeutet weder immer an noch immer aus. |
+| **Ja · angefordert** | Fordert diese konfigurierte Spalte ausdrücklich von der KI an. |
+| **Nein · nicht angefordert** | Fordert sie im Basisschema nicht an, auch wenn sie zur KI-Standardauswahl gehört. |
+
+Zurück auf **Standard** entfernt die ausdrückliche Ja-/Nein-Auswahl. Eine neu angelegte eigene Spalte gehört normalerweise nicht zur KI-Standardauswahl; setzen Sie sie auf **Ja**, wenn die KI sie liefern soll. Die Liste der KI-Standardspalten ist nicht identisch mit allen mitgelieferten Spalten. Die angezeigte Wirkung und die Vorschau sind maßgeblich.
+
+**Pflichtfeld**, **Schreibgeschützt** und **Ausgeblendet** haben andere Aufgaben: Vollständigkeitsprüfung, Bearbeitbarkeit und Sichtbarkeit. Keines dieser Merkmale ersetzt die KI-Auswahl. **Nein** löscht weder die Spalte noch vorhandene Werte und verhindert nicht, dass Regeln, Skripte oder andere Quellen Werte liefern. Lieferantentraining und zusätzliche KI-Tags können den Laufauftrag erweitern; lösen Sie Widersprüche dort ebenfalls auf. Ein rein regelbasiertes Ergebnis wird durch den Structured-Output-Schalter nicht automatisch ersetzt.
+
+[Structured Output für Tabellen](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

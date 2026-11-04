@@ -28,13 +28,13 @@ Fügen Sie eine Spalte hinzu, wenn pro Position ein Wert erfasst werden muss, de
 
 <figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-de.png" alt="Bestätigungsdialog „Neue Tabellenspalte anlegen?“ mit den Schaltflächen Abbrechen und Spalte anlegen"><figcaption><p>Bestätigung, bevor die Spalte für alle Lieferanten angelegt wird.</p></figcaption></figure>
 
-5. Wählen Sie **Spalte anlegen**, um zu speichern, oder **Abbrechen**, um ohne Änderung zurückzugehen. Die Spalte erscheint in der Liste, wobei *Read Only*, *Hidden* und *Use AI* nicht gesetzt sind. Schalten Sie diese Flags bei Bedarf in der Liste um, siehe [Spalten bearbeiten und löschen](editing-and-deleting-columns.md).
+5. Prüfen Sie nach dem Anlegen die Einstellungen in der Liste. Read Only und Hidden sind zunächst aus. Use AI steht auf Standard; eine eigene Spalte wird damit normalerweise nicht angefordert. Wählen Sie Ja, wenn die strukturierte KI-Extraktion diese Spalte anfordern soll.
 
 ## Nach dem Hinzufügen
 
 * Die Spalte ist bei **bestehenden Dokumenten leer**. Sie wird bei Dokumenten gefüllt, die nach der Änderung hochgeladen oder neu gestartet werden.
 * Bei Lieferanten mit **trainierten Regeln** öffnen Sie eines ihrer Dokumente im Tabellentraining und ordnen die neue Spalte zu, sonst bleibt die Spalte für diesen Lieferanten leer. Siehe [Tabellen und Spalten definieren](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
-* Bei der **KI-Tabellenextraktion** füllt die KI die Spalte, wenn der Wert auf dem Dokument erkennbar ist. Markieren Sie die Spalte mit *Use AI*, wenn der Lieferant trainierte Regeln hat, diese Spalte aber trotzdem von der KI stammen soll.
+* Setzen Sie bei strukturierter KI-Extraktion die eigene Spalte unter Use AI auf Ja und kontrollieren Sie die Vorschau. Das Anlegen allein fordert sie nicht an. Prüfen Sie gespeicherte Lieferantenzuordnungen und Anweisungen, verarbeiten Sie einen Testbeleg erneut und kontrollieren Sie das Ergebnis.
 * Fügen Sie die Spalte dem **Export-Mapping** hinzu, wenn das ERP sie erhalten soll, siehe [Export](../../../document-processing/export.md).
 
 ## Meldungen
@@ -44,3 +44,5 @@ Fügen Sie eine Spalte hinzu, wenn pro Position ein Wert erfasst werden muss, de
 | *Column name already exists* | Eine Spalte mit diesem technischen Namen ist bereits in der Tabelle vorhanden. Wählen Sie einen anderen Titel. |
 | *Column name already exists – Please activate it in Table Column settings* | Eine ausgeblendete Standardspalte hat diesen Namen. Entfernen Sie deren Flag *Hidden*, statt eine neue Spalte anzulegen. |
 | *No table exists. Please create table before creating columns.* | Der Dokumenttyp hat noch keine Tabelle: Klicken Sie zuerst auf **Create new table**. |
+
+[Structured Output für Tabellen](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

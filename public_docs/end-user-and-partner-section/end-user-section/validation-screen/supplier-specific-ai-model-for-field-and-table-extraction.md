@@ -31,3 +31,7 @@ Ein Modellwechsel kann eine Bestätigung erfordern und die Extraktion erneut sta
 Vergleichen Sie verfügbare Modelle mit freigegebenen Testdokumenten und prüfen Sie extrahierte Werte, Laufzeit und Kosten. Ein Wechsel kann ein Dokument erneut verarbeiten und garantiert keine Verbesserung.
 
 Um den **Organisationsstandard** zu konfigurieren oder **vorlagenbezogene Überschreibungen** zu prüfen, lesen Sie bitte die entsprechende Dokumentation [**hier**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
+
+## Einstellungen und Überschreibungen
+
+Structured Output hat eine eigene Organisations-/Vorlageneinstellung, getrennt von der Modellstufe. Ändern Sie sie unter Mehr Optionen am Dokument; die Bestätigung speichert die Überschreibung und startet dieses Dokument neu. Die Anzeigen in der Einstellungsliste sind schreibgeschützt. Eintrag löschen kann mehrere Überschreibungen zugleich entfernen. [Structured Output für Tabellen](../ai-table/structured-output.md).

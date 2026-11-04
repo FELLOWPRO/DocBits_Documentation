@@ -8,15 +8,17 @@ Der Abschnitt **PO Versandauftrag** bietet eine Aufschlüsselung des Liefer- und
 
 Um diese Funktion zu aktivieren:
 
-1. Gehe zu **Einstellungen** → **Dokumentenverarbeitung** → **Modul**.
-2. Wähle **Bestellung** aus.
-3.  Aktiviere die Option **PO Versandbestellung**.
+1. Gehe zu **Einstellungen** → **Module**.
+2. Öffne den Abschnitt **Bestellung** (*PO-Abgleich & Validierung*).
+3.  Aktiviere die Option **PO-Versandauftrag**.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2ZdK2XuCIjc4Hz3W0s5H%252FPO-Shipment-Order-Setting.jpg%3Falt%3Dmedia%26token%3Dbe657223-f04e-4326-a284-bb29bae148e0\&width=768\&dpr=4\&quality=100\&sign=97986166\&sv=2)
+    <div align="left"><figure><img src="../../../../.gitbook/assets/po-shipment-order-module-setting-de.png" alt="Abschnitt Bestellung unter Einstellungen → Module mit dem Schalter PO-Versandauftrag" width="563"><figcaption><p>Einstellungen → Module → Bestellung</p></figcaption></figure></div>
+
+Derselbe Abschnitt enthält zwei weitere Schalter: **PO-Dashboard** ergänzt die Navigation um ein Dashboard für Bestellungen, und **Dashboard für Versandaufträge** ergänzt ein Versandauftrags-Dashboard, das eingehende Lieferungen je Bestellposition auflistet.
 
 ## **Wo es erscheint**
 
-Nach der Aktivierung wird der Abschnitt PO Versandbestellung im Interface für den Bestellungsabgleich sichtbar.
+Nach der Aktivierung wird der Abschnitt PO-Versandauftrag im Interface für den Bestellungsabgleich sichtbar.
 
 ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2R9tB3JySdIMk8meRSVZ%252FPO-Shipment-Order-1.jpg%3Falt%3Dmedia%26token%3D70aa50f4-84cd-4a55-b580-037b893d1f5b\&width=768\&dpr=4\&quality=100\&sign=e4619335\&sv=2)
 

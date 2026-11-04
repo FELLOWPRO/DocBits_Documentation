@@ -70,6 +70,10 @@ A prévia não inclui treinamento nem tags do fornecedor. Instruções adicionai
 
 Sem configuração utilizável dos campos de cabeçalho, não é possível construir um esquema completo. Um interruptor ativado, sozinho, não comprova seu uso. Confira a execução em **Explicar extração** e nos logs disponíveis; [Tabela de IA](README.md) explica essas telas e permissões.
 
+Neste exemplo de configuração, as colunas solicitadas de INVOICE_TABLE incluem `ITEM_NUMBER`, `SUPPLIER_ITEM_NUMBER`, `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT` e `PROJECT_CODE`. A coluna própria de projeto está explicitamente em **Sim**, como na etapa 2 do exemplo abaixo. A prévia também inclui outras colunas de fatura configuradas; a seleção e a quantidade da sua organização podem, portanto, variar. **12** é a quantidade de colunas solicitadas desta tabela, não a quantidade de linhas nem o total de propriedades do esquema. É uma prévia de configuração, não um resultado de extração.
+
+<figure><img src="../../../.gitbook/assets/structured-output-schema-preview-pt-20261104.png" alt="Detalhe da prévia do esquema de Fatura com Structured Output ativado. INVOICE_TABLE solicita 12 colunas, incluindo PROJECT_CODE com Usar IA em Sim. As outras tabelas configuradas e o contador de propriedades ficam fora deste detalhe."><figcaption><p>Detalhe da prévia do esquema de Fatura com Structured Output ativado. INVOICE_TABLE solicita 12 colunas, incluindo PROJECT_CODE com Usar IA em Sim. As outras tabelas configuradas e o contador de propriedades ficam fora deste detalhe.</p></figcaption></figure>
+
 ## 5. Exemplo: fatura com dois códigos e projeto
 
 Este exemplo sintético define um resultado a verificar, não uma extração executada.

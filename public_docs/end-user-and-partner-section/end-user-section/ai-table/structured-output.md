@@ -70,6 +70,10 @@ L'anteprima esclude addestramento e tag del fornitore. Istruzioni aggiuntive pos
 
 Senza una configurazione utilizzabile dei campi di intestazione non può essere costruito uno schema completo. Un interruttore attivo non ne dimostra l'uso. Controllare l'esecuzione tramite **Spiega estrazione** e i log disponibili; [Tabella AI](README.md) descrive viste e permessi.
 
+In questo esempio di configurazione, le colonne richieste di INVOICE_TABLE includono `ITEM_NUMBER`, `SUPPLIER_ITEM_NUMBER`, `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT` e `PROJECT_CODE`. La colonna personalizzata del progetto è impostata esplicitamente su **Sì**, come nel passaggio 2 dell’esempio seguente. L’anteprima include anche altre colonne di fattura configurate; la selezione e il conteggio della propria organizzazione possono quindi differire. **12** è il numero di colonne richieste di questa tabella, non il numero di righe o il totale delle proprietà dello schema. È un’anteprima di configurazione, non un risultato di estrazione.
+
+<figure><img src="../../../.gitbook/assets/structured-output-schema-preview-it-20261104.png" alt="Dettaglio dell’anteprima dello schema Fattura con Structured Output attivo. INVOICE_TABLE richiede 12 colonne, inclusa PROJECT_CODE con Use AI su Sì. Le altre tabelle configurate e il contatore delle proprietà non sono inclusi nel dettaglio."><figcaption><p>Dettaglio dell’anteprima dello schema Fattura con Structured Output attivo. INVOICE_TABLE richiede 12 colonne, inclusa PROJECT_CODE con Use AI su Sì. Le altre tabelle configurate e il contatore delle proprietà non sono inclusi nel dettaglio.</p></figcaption></figure>
+
 ## 5. Esempio: fattura con due codici e un progetto
 
 Questo esempio sintetico definisce un risultato da verificare, non un'estrazione eseguita.

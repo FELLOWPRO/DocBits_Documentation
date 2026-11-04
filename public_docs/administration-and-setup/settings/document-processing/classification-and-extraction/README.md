@@ -61,6 +61,10 @@ Będziesz wtedy mieć możliwość:
 
     
 
+Po udanym podziale dokument źródłowy zostaje usunięty, a strony są dalej przetwarzane jako osobne dokumenty, które współdzielą ten sam batch.
+
+<figure><img src="../../../../.gitbook/assets/anatomy-barcode-split.svg" alt="Izometryczna ilustracja ośmiu arkuszy w tacy, nad którymi skaner odczytuje kod kreskowy na arkuszu 6. Przekładki stoją przed arkuszami 3 i 6 i dzielą arkusze na trzy dokumenty, a jedna gumka recepturka obejmuje całą tacę."><figcaption><p>Przykład ze wzorcem <code>^INV\d{6}$</code>: kody na arkuszach 3 i 6 pasują i każdy z nich rozpoczyna nowy dokument, kod na arkuszu 4 nie pasuje i niczego nie dzieli, a gumka recepturka oznacza batch, który współdzielą powstałe dokumenty.</p></figcaption></figure>
+
 ## Formatowanie kwot
 
 W sekcji **Formatowanie kwoty** masz dwie opcje:

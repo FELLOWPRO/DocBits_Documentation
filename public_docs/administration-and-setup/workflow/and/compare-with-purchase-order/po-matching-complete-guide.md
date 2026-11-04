@@ -33,10 +33,12 @@ Otrzymana faktura powinna być zgodna z wcześniej złożonym zamówieniem (PO).
 **Ogólny obraz:**
 
 ```
-PO Placed     Invoice Arrives     PO Matching     Decision
-(€100)    →   (€103)          →   (Check if       → Approve/Reject
-Qty: 100      Qty: 100            within tolerance)
+Zamówienie    Nadejście faktury   Dopasowanie PO  Decyzja
+(€100)    →   (€103)          →   (Sprawdzenie    → Zatwierdź/Odrzuć
+Ilość: 100    Ilość: 100          tolerancji)
 ```
+
+<figure><img src="../../../../.gitbook/assets/anatomy-po-matching.svg" alt="Izometryczna waga belkowa: na lewej szalce leży cena jednostkowa z zamówienia (PO) równa 100, na prawej cena jednostkowa z faktury równa 103 (100 plus mały dodatkowy odważnik). Belka lekko się przechyla, a jej wskazówka znajduje się w zielonym pasie oznaczającym tolerancję 5 %." width="768"><figcaption><p>Cena z zamówienia (€100) leży na lewej szalce, a cena z faktury (€103) na prawej. Różnica €3 to 3 % ceny z zamówienia, więc wskazówka pozostaje w zielonym pasie tolerancji ±5 % i kontrola kończy się wynikiem pozytywnym. Powyżej ±5 % (kolor czerwony) faktura wymaga sprawdzenia.</p></figcaption></figure>
 
 ***
 
@@ -57,34 +59,34 @@ Sprawdza, czy cała faktura pasuje idealnie do zamówienia lub mieści się w to
 System porównuje:
 
 * Ilości na fakturze a ilości na PO
-* Ceny na fakturze vs ceny PO
+* Ceny na fakturze a ceny w PO
 * Pozycje na fakturze a pozycje PO
-* Suma faktury vs suma zamówienia
+* Suma faktury a suma zamówienia
 
 ### Wynik
 
-* **TRUE** (Pełny mecz): Wszystko pasuje, kontynuuj
+* **TRUE** (Pełne dopasowanie): Wszystko pasuje, kontynuuj
 * **FALSE** (Niedopasowanie): Coś nie pasuje, wymaga sprawdzenia
 
 ### Przykład
 
 ```
 PO:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+- Pozycja ABC: ilość 100, cena jednostkowa €50 = €5000
+- Pozycja XYZ: ilość 50, cena jednostkowa €20 = €1000
+- Suma: €6000
 
-Invoice:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+Faktura:
+- Pozycja ABC: ilość 100, cena jednostkowa €50 = €5000
+- Pozycja XYZ: ilość 50, cena jednostkowa €20 = €1000
+- Suma: €6000
 
-Result: ✅ FULL MATCH
+Wynik: ✅ PEŁNE DOPASOWANIE
 ```
 
 ***
 
-## 2. Porównanie cen jednostkowych (dokument vs zamówienie)
+## 2. Porównanie cen jednostkowych (dokument a zamówienie)
 
 ### Cel
 
@@ -92,37 +94,37 @@ Porównuje cenę jednostkową na fakturze z ceną jednostkową na PO
 
 ### Parametry
 
-* **Tolerancja ceny jednostkowej**: Zezwól na różnicę do tej kwoty
+* **Tolerancja ceny jednostkowej**: Dopuszczalna różnica do tej kwoty
 * **Typ tolerancji**: Procent (%) lub bezwzględny (€/$)
-* **Operatora**: Jest równy, Jest większy niż, Jest mniejszy niż itp.
+* **Operator**: Jest równy, Jest większy niż, Jest mniejszy niż itp.
 
 ### Jak to działa (tolerancja procentowa)
 
 **Wzór:**
 
 ```
-Variance % = |(Invoice Price - PO Price)| / PO Price × 100
+Odchylenie % = |(cena z faktury - cena z PO)| / cena z PO × 100
 
-Check: Is Variance % ≤ Tolerance %?
+Kontrola: Czy odchylenie % ≤ tolerancja %?
 ```
 
 **Przykład krok po kroku:**
 
 ```
-Step 1: Get prices
-  PO Unit Price: €100.00
-  Invoice Unit Price: €103.00
+Krok 1: Pobierz ceny
+  Cena jednostkowa z PO: €100.00
+  Cena jednostkowa z faktury: €103.00
 
-Step 2: Calculate difference
-  Difference = |€103.00 - €100.00| = €3.00
+Krok 2: Oblicz różnicę
+  Różnica = |€103.00 - €100.00| = €3.00
 
-Step 3: Calculate percentage
-  Percentage = (€3.00 / €100.00) × 100 = 3%
+Krok 3: Oblicz wartość procentową
+  Procent = (€3.00 / €100.00) × 100 = 3%
 
-Step 4: Check tolerance (5% allowed)
-  Is 3% ≤ 5%? YES ✅
+Krok 4: Sprawdź tolerancję (dozwolone 5%)
+  Czy 3% ≤ 5%? TAK ✅
 
-Result: PASS - Within tolerance
+Wynik: PASS - w granicach tolerancji
 ```
 
 ### Przykłady ze świata rzeczywistego
@@ -130,56 +132,56 @@ Result: PASS - Within tolerance
 #### Przykład 1: Mały wzrost (zaakceptowany)
 
 ```
-PO Price: €50.00
-Invoice Price: €51.50
-Tolerance: ±3%
+Cena z PO: €50.00
+Cena z faktury: €51.50
+Tolerancja: ±3%
 
-Calculation:
-  Variance = |(€51.50 - €50.00)| / €50.00 × 100
-  Variance = €1.50 / €50.00 × 100 = 3%
+Obliczenia:
+  Odchylenie = |(€51.50 - €50.00)| / €50.00 × 100
+  Odchylenie = €1.50 / €50.00 × 100 = 3%
 
-Is 3% ≤ 3%? YES ✅ ACCEPT
+Czy 3% ≤ 3%? TAK ✅ AKCEPTACJA
 ```
 
 #### Przykład 2: Duża podwyżka (odrzucona)
 
 ```
-PO Price: €50.00
-Invoice Price: €55.00
-Tolerance: ±3%
+Cena z PO: €50.00
+Cena z faktury: €55.00
+Tolerancja: ±3%
 
-Calculation:
-  Variance = |(€55.00 - €50.00)| / €50.00 × 100
-  Variance = €5.00 / €50.00 × 100 = 10%
+Obliczenia:
+  Odchylenie = |(€55.00 - €50.00)| / €50.00 × 100
+  Odchylenie = €5.00 / €50.00 × 100 = 10%
 
-Is 10% ≤ 3%? NO ❌ REJECT - NEEDS REVIEW
+Czy 10% ≤ 3%? NIE ❌ ODRZUCENIE - WYMAGA SPRAWDZENIA
 ```
 
 #### Przykład 3: Rabat (również sprawdzony)
 
 ```
-PO Price: €100.00
-Invoice Price: €97.00
-Tolerance: ±5%
+Cena z PO: €100.00
+Cena z faktury: €97.00
+Tolerancja: ±5%
 
-Calculation:
-  Variance = |(€97.00 - €100.00)| / €100.00 × 100
-  Variance = €3.00 / €100.00 × 100 = 3%
+Obliczenia:
+  Odchylenie = |(€97.00 - €100.00)| / €100.00 × 100
+  Odchylenie = €3.00 / €100.00 × 100 = 3%
 
-Is 3% ≤ 5%? YES ✅ ACCEPT (Discount is within tolerance)
+Czy 3% ≤ 5%? TAK ✅ AKCEPTACJA (rabat mieści się w tolerancji)
 ```
 
 #### Przykład 4: Tolerancja wartości bezwzględnej
 
 ```
-PO Price: €10.00
-Invoice Price: €10.50
-Tolerance: ±€1.00 (absolute, not %)
+Cena z PO: €10.00
+Cena z faktury: €10.50
+Tolerancja: ±€1.00 (wartość bezwzględna, nie %)
 
-Calculation:
-  Variance = |€10.50 - €10.00| = €0.50
+Obliczenia:
+  Odchylenie = |€10.50 - €10.00| = €0.50
 
-Is €0.50 ≤ €1.00? YES ✅ ACCEPT
+Czy €0.50 ≤ €1.00? TAK ✅ AKCEPTACJA
 ```
 
 ### Co zrobić z wynikami
@@ -207,8 +209,8 @@ Sprawdza, czy zamówiona ilość odpowiada ilości zafakturowanej
 
 ### Parametry
 
-* **Tolerancja**: Kwota lub %, które mogą się różnić
-* **Operatora**: Równa się, Większe niż, Mniejsze niż
+* **Tolerancja**: Kwota lub %, o którą wartości mogą się różnić
+* **Operator**: Równa się, Większe niż, Mniejsze niż
 * **Typ ilości**: Zamówiona, Otrzymana, Otwarta
 
 ### Przykład obliczeń
@@ -216,34 +218,34 @@ Sprawdza, czy zamówiona ilość odpowiada ilości zafakturowanej
 **Tolerancja procentowa:**
 
 ```
-Formula:
-  Quantity Variance % = |(Invoice Qty - PO Qty)| / PO Qty × 100
+Wzór:
+  Odchylenie ilości % = |(ilość z faktury - ilość z PO)| / ilość z PO × 100
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 103 units
-  Tolerance: ±5%
+Przykład:
+  Ilość z PO: 100 szt.
+  Ilość z faktury: 103 szt.
+  Tolerancja: ±5%
 
-  Variance = |(103 - 100)| / 100 × 100
-  Variance = 3 / 100 × 100 = 3%
+  Odchylenie = |(103 - 100)| / 100 × 100
+  Odchylenie = 3 / 100 × 100 = 3%
 
-  Is 3% ≤ 5%? YES ✅ ACCEPT
+  Czy 3% ≤ 5%? TAK ✅ AKCEPTACJA
 ```
 
 **Tolerancja absolutna:**
 
 ```
-Formula:
-  Quantity Variance = |Invoice Qty - PO Qty|
+Wzór:
+  Odchylenie ilości = |ilość z faktury - ilość z PO|
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 102 units
-  Tolerance: ±5 units
+Przykład:
+  Ilość z PO: 100 szt.
+  Ilość z faktury: 102 szt.
+  Tolerancja: ±5 szt.
 
-  Variance = |102 - 100| = 2 units
+  Odchylenie = |102 - 100| = 2 szt.
 
-  Is 2 units ≤ 5 units? YES ✅ ACCEPT
+  Czy 2 szt. ≤ 5 szt.? TAK ✅ AKCEPTACJA
 ```
 
 ### Scenariusze ze świata rzeczywistego
@@ -251,31 +253,31 @@ Example:
 #### Nadmierna dostawa (więcej niż zamówiono)
 
 ```
-Ordered: 100 units
-Invoiced: 110 units
-Tolerance: ±5%
+Zamówiono: 100 szt.
+Zafakturowano: 110 szt.
+Tolerancja: ±5%
 
-Variance = |(110-100)|/100 × 100 = 10%
+Odchylenie = |(110-100)|/100 × 100 = 10%
 
-Is 10% ≤ 5%? NO ❌
+Czy 10% ≤ 5%? NIE ❌
 
-Decision: Contact supplier - more delivered than ordered
-Possible reason: Error by supplier, partial shipment already received
+Decyzja: Skontaktuj się z dostawcą - dostarczono więcej, niż zamówiono
+Możliwa przyczyna: błąd dostawcy, częściowa dostawa już odebrana
 ```
 
 #### Niedostarczenie (mniej niż zamówiono)
 
 ```
-Ordered: 100 units
-Invoiced: 95 units
-Tolerance: ±5%
+Zamówiono: 100 szt.
+Zafakturowano: 95 szt.
+Tolerancja: ±5%
 
-Variance = |(95-100)|/100 × 100 = 5%
+Odchylenie = |(95-100)|/100 × 100 = 5%
 
-Is 5% ≤ 5%? YES ✅
+Czy 5% ≤ 5%? TAK ✅
 
-Decision: Accept - within tolerance
-Possible reason: Partial shipment, rest to follow
+Decyzja: Zaakceptuj - w granicach tolerancji
+Możliwa przyczyna: dostawa częściowa, reszta zostanie dosłana
 ```
 
 ***
@@ -289,10 +291,10 @@ W przypadku różnic w ilościach oblicza, czy łączna różnica w cenie jest a
 ### Dlaczego to ma znaczenie
 
 ```
-Scenario: You ordered 100 units but received 110
-- Quantity is 10% over (bad)
-- BUT: You're only charged for 10% extra
-- Combined effect might be acceptable
+Scenariusz: Zamówiono 100 szt., a otrzymano 110
+- Ilość jest o 10% większa (źle)
+- ALE: płacisz tylko za dodatkowe 10%
+- Łączny efekt może być akceptowalny
 ```
 
 ### Obliczenia
@@ -300,30 +302,30 @@ Scenario: You ordered 100 units but received 110
 **Wzór:**
 
 ```
-Combined Variance = Quantity Variance × Price Variance
+Łączne odchylenie = odchylenie ilości × odchylenie ceny
 
-If both are within tolerance, combined is usually acceptable
+Jeśli oba mieszczą się w tolerancji, łączne odchylenie jest zwykle akceptowalne
 ```
 
 **Przykład:**
 
 ```
 PO:
-- Unit Price: €100
-- Quantity: 100
-- Total: €10,000
+- Cena jednostkowa: €100
+- Ilość: 100
+- Suma: €10,000
 
-Invoice:
-- Unit Price: €102 (2% higher)
-- Quantity: 105 (5% higher)
-- Total: €10,710
+Faktura:
+- Cena jednostkowa: €102 (o 2% wyższa)
+- Ilość: 105 (o 5% wyższa)
+- Suma: €10,710
 
-Analysis:
-- Price variance: 2% ✅
-- Quantity variance: 5% ✅
-- Combined effect: 1.02 × 1.05 = 1.071 = 7.1% total increase
+Analiza:
+- Odchylenie ceny: 2% ✅
+- Odchylenie ilości: 5% ✅
+- Łączny efekt: 1.02 × 1.05 = 1.071 = 7,1% wzrostu łącznie
 
-Is combined variance acceptable? Usually YES ✅
+Czy łączne odchylenie jest akceptowalne? Zazwyczaj TAK ✅
 ```
 
 ***
@@ -339,32 +341,32 @@ Sprawdza, czy pozycje na fakturze są zgodne z pozycjami w zamówieniu zakupu
 **Dokładne dopasowanie (najprostsze):**
 
 ```
-PO Item ID: ABC-123
-Invoice Item ID: ABC-123
-Result: ✅ MATCH
+Identyfikator pozycji w PO: ABC-123
+Identyfikator pozycji na fakturze: ABC-123
+Wynik: ✅ ZGODNE
 ```
 
 **Numer pozycji dostawcy (częściej spotykany):**
 
 ```
-PO Item: ABC-123 (Our internal code)
-Supplier Item: SUPP-456 (Their code for same item)
-System matches these as same item
-Result: ✅ MATCH
+Pozycja w PO: ABC-123 (nasz kod wewnętrzny)
+Pozycja dostawcy: SUPP-456 (jego kod tej samej pozycji)
+System dopasowuje je jako tę samą pozycję
+Wynik: ✅ ZGODNE
 ```
 
 ### Scenariusz: co się stanie, jeśli nie będzie pasować?
 
 ```
-PO Item: ABC-123 (Copper Wire, 2mm)
-Invoice Item: ABC-124 (Steel Wire, 2mm)
+Pozycja w PO: ABC-123 (drut miedziany, 2 mm)
+Pozycja na fakturze: ABC-124 (drut stalowy, 2 mm)
 
-Result: ❌ NO MATCH
+Wynik: ❌ NIEZGODNE
 
-Actions:
-1. Is this a substitution? Check with procurement
-2. Is this an error? Contact supplier
-3. Is the description similar? Verify manually
+Działania:
+1. Czy to zamiennik? Sprawdź w dziale zakupów
+2. Czy to błąd? Skontaktuj się z dostawcą
+3. Czy opis jest podobny? Zweryfikuj ręcznie
 ```
 
 ***
@@ -378,19 +380,19 @@ Sprawdza, czy typ zamówienia zakupu jest poprawny
 ### Typy zamówień
 
 * **Zamówienie standardowe**: Regularny zakup
-* **Zamówienie pilne**: Pilne, może mieć wersję premium
-* **Umowa Ramowa**: Umowa długoterminowa
-* **Zamówienie ogólne**: Umowa na czas nieokreślony
-* **Przesyłka**: Nie płacisz aż do wykorzystania
+* **Zamówienie pilne**: Pilne, może wiązać się z dopłatą
+* **Umowa ramowa**: Umowa długoterminowa
+* **Zamówienie blankietowe**: Umowa bezterminowa
+* **Konsygnacja**: Płatność dopiero po wykorzystaniu towaru
 
 ### Sprawdź przykład
 
 ```
-PO Order Type: Standard Order
-Invoice Order Type: Standard Order
-Result: ✅ MATCH
+Typ zamówienia w PO: Zamówienie standardowe
+Typ zamówienia na fakturze: Zamówienie standardowe
+Wynik: ✅ ZGODNE
 
-If mismatch: Could affect terms, payment, pricing
+W razie niezgodności: może wpłynąć na warunki, płatność i ceny
 ```
 
 ***
@@ -406,39 +408,39 @@ Sprawdza, czy data dostawy jest zgodna z datą obiecaną w PO
 **Opóźniona dostawa:**
 
 ```
-Formula:
-  Days Late = Invoice Delivery Date - PO Promised Date
+Wzór:
+  Dni opóźnienia = data dostawy z faktury - data obiecana w PO
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-22
-  Days Late = 7 days
+Przykład:
+  Obiecana w PO: 2025-10-15
+  Faktyczna dostawa: 2025-10-22
+  Dni opóźnienia = 7 dni
 
-If tolerance is ±3 days:
-  Is 7 ≤ 3? NO ❌ LATE
+Jeśli tolerancja wynosi ±3 dni:
+  Czy 7 ≤ 3? NIE ❌ OPÓŹNIONA
 ```
 
 **Wczesna dostawa:**
 
 ```
-Formula:
-  Days Early = PO Promised Date - Invoice Delivery Date
+Wzór:
+  Dni wcześniej = data obiecana w PO - data dostawy z faktury
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-10
-  Days Early = 5 days
+Przykład:
+  Obiecana w PO: 2025-10-15
+  Faktyczna dostawa: 2025-10-10
+  Dni wcześniej = 5 dni
 
-Early delivery is usually OK ✅
-Unless you need it at specific time
+Wcześniejsza dostawa jest zwykle w porządku ✅
+Chyba że towar jest potrzebny w konkretnym terminie
 ```
 
 ### Ustawienia tolerancji
 
 ```
-±3 days: Allow 3 days late or early
-±5 days: Allow up to 5 days variance
-0 days: Must match exactly
+±3 dni: Dopuszczalne 3 dni opóźnienia lub wcześniejszej dostawy
+±5 dni: Dopuszczalne odchylenie do 5 dni
+0 dni: Daty muszą być identyczne
 ```
 
 ***
@@ -452,11 +454,11 @@ Sprawdza, czy dodatkowe opłaty (podatki, wysyłka, obsługa) odpowiadają PO
 ### Wspólne opłaty
 
 ```
-- Shipping: €50
-- Handling: €10
-- Packaging: €5
-- Insurance: €15
-- Taxes: €300
+- Wysyłka: €50
+- Obsługa: €10
+- Pakowanie: €5
+- Ubezpieczenie: €15
+- Podatki: €300
 ```
 
 ### Obliczenia
@@ -464,32 +466,32 @@ Sprawdza, czy dodatkowe opłaty (podatki, wysyłka, obsługa) odpowiadają PO
 **Przykład: Kontrola kosztów wysyłki**
 
 ```
-PO Shipping: €50.00
-Invoice Shipping: €51.00
-Tolerance: ±3%
+Wysyłka w PO: €50.00
+Wysyłka na fakturze: €51.00
+Tolerancja: ±3%
 
-Variance = |€51.00 - €50.00| / €50.00 × 100 = 2%
+Odchylenie = |€51.00 - €50.00| / €50.00 × 100 = 2%
 
-Is 2% ≤ 3%? YES ✅ ACCEPT
+Czy 2% ≤ 3%? TAK ✅ AKCEPTACJA
 ```
 
 **Przykład: wielokrotne ładowanie**
 
 ```
-PO Total Charges:
-  - Shipping: €50
-  - Taxes: €300
-  - Handling: €10
-  Total: €360
+Łączne opłaty w PO:
+  - Wysyłka: €50
+  - Podatki: €300
+  - Obsługa: €10
+  Suma: €360
 
-Invoice Total Charges:
-  - Shipping: €50
-  - Taxes: €312 (11% tax)
-  - Handling: €10
-  Total: €372
+Łączne opłaty na fakturze:
+  - Wysyłka: €50
+  - Podatki: €312 (11% podatku)
+  - Obsługa: €10
+  Suma: €372
 
-Difference: €12
-Check if within tolerance ✅ or ❌
+Różnica: €12
+Sprawdź, czy mieści się w tolerancji ✅ czy ❌
 ```
 
 ***
@@ -505,37 +507,37 @@ Sprawdza, czy kwoty podatku zostały obliczone prawidłowo
 **Wzór:**
 
 ```
-Tax Amount = Subtotal × Tax Rate
+Kwota podatku = suma częściowa × stawka podatku
 
-Example:
-  Subtotal: €1000
-  Tax Rate: 19%
-  Expected Tax: €1000 × 0.19 = €190
+Przykład:
+  Suma częściowa: €1000
+  Stawka podatku: 19%
+  Oczekiwany podatek: €1000 × 0.19 = €190
 
-Invoice Tax: €190
-Match? YES ✅
+Podatek na fakturze: €190
+Zgodne? TAK ✅
 ```
 
 **Częste problemy:**
 
 ```
-1. Tax rate changed (region-based)
-2. Tax applied to wrong amount (before/after discounts)
-3. Multiple tax rates (some items 7%, others 19%)
-4. Tax exempt items (0% tax)
+1. Zmieniła się stawka podatku (zależnie od regionu)
+2. Podatek naliczony od niewłaściwej kwoty (przed/po rabatach)
+3. Wiele stawek podatku (część pozycji 7%, reszta 19%)
+4. Pozycje zwolnione z podatku (podatek 0%)
 ```
 
 **Przykład: opodatkowanie wielostawkowe**
 
 ```
-Item A: €100 @ 19% tax = €119
-Item B: €100 @ 7% tax = €107
-Item C: €100 @ 0% tax = €100
-Total: €326
+Pozycja A: €100 @ 19% podatku = €119
+Pozycja B: €100 @ 7% podatku = €107
+Pozycja C: €100 @ 0% podatku = €100
+Suma: €326
 
-Invoice shows €325 (€1 error)
+Faktura wykazuje €325 (błąd €1)
 
-Check: Within tolerance or needs attention?
+Sprawdź: w granicach tolerancji czy wymaga uwagi?
 ```
 
 ***
@@ -549,15 +551,15 @@ Zapewnia, że faktura dotyczy właściwego obiektu/centrum kosztów
 ### Przykład
 
 ```
-PO is for:
-- Facility: Berlin Plant
-- Cost Center: CC-2025
+PO dotyczy:
+- Obiekt: zakład w Berlinie
+- Centrum kosztów: CC-2025
 
-Invoice should have:
-- Facility: Berlin Plant ✅
-- Cost Center: CC-2025 ✅
+Faktura powinna zawierać:
+- Obiekt: zakład w Berlinie ✅
+- Centrum kosztów: CC-2025 ✅
 
-If different facility: May need different approval
+W razie innego obiektu: może być potrzebna inna akceptacja
 ```
 
 ***
@@ -571,21 +573,21 @@ Sprawdza, czy dostawca jest nadal zatwierdzony/aktywny
 ### Typy statusu
 
 ```
-✅ ACTIVE: Approved, can do business
-⚠️ ON HOLD: Temporarily blocked
-❌ INACTIVE: No longer doing business
-⚠️ CONDITIONAL: Only for specific items
+✅ ACTIVE: Zatwierdzony, można prowadzić współpracę
+⚠️ ON HOLD: Tymczasowo zablokowany
+❌ INACTIVE: Współpraca zakończona
+⚠️ CONDITIONAL: Tylko dla określonych pozycji
 ```
 
 ### Sprawdź przykład
 
 ```
-Supplier: ABC Corp
-Status in Database: ACTIVE
-Status when creating PO: ACTIVE
-Status when invoice arrives: INACTIVE
+Dostawca: ABC Corp
+Status w bazie danych: ACTIVE
+Status przy tworzeniu PO: ACTIVE
+Status w chwili nadejścia faktury: INACTIVE
 
-Alert: Supplier status changed! Investigate why.
+Alert: Status dostawcy uległ zmianie! Sprawdź dlaczego.
 ```
 
 ***
@@ -595,46 +597,46 @@ Alert: Supplier status changed! Investigate why.
 ### Ścisłe tolerancje (mniejsze ryzyko, więcej pracy ręcznej)
 
 ```
-Use for:
-- High-value items
-- Items where exactness matters
-- Regulated industries
+Stosuj dla:
+- Pozycji o wysokiej wartości
+- Pozycji, w których liczy się dokładność
+- Branż regulowanych
 
-Settings:
-- Unit Price: ±1%
-- Quantity: ±1%
-- Delivery Date: ±1 day
-- Charges: ±1%
+Ustawienia:
+- Cena jednostkowa: ±1%
+- Ilość: ±1%
+- Data dostawy: ±1 dzień
+- Opłaty: ±1%
 ```
 
 ### Umiarkowane tolerancje (zrównoważone)
 
 ```
-Use for:
-- Most business transactions
-- Standard items
-- Normal purchasing
+Stosuj dla:
+- Większości transakcji biznesowych
+- Pozycji standardowych
+- Zwykłych zakupów
 
-Settings:
-- Unit Price: ±3-5%
-- Quantity: ±3-5%
-- Delivery Date: ±3 days
-- Charges: ±5%
+Ustawienia:
+- Cena jednostkowa: ±3-5%
+- Ilość: ±3-5%
+- Data dostawy: ±3 dni
+- Opłaty: ±5%
 ```
 
 ### Luźne tolerancje (wyższe ryzyko, mniej pracy ręcznej)
 
 ```
-Use for:
-- Low-value items
-- Bulk purchases
-- Supplier agreements with flexibility
+Stosuj dla:
+- Pozycji o niskiej wartości
+- Zakupów hurtowych
+- Umów z dostawcami z elastycznymi warunkami
 
-Settings:
-- Unit Price: ±10%
-- Quantity: ±10%
-- Delivery Date: ±7 days
-- Charges: ±10%
+Ustawienia:
+- Cena jednostkowa: ±10%
+- Ilość: ±10%
+- Data dostawy: ±7 dni
+- Opłaty: ±10%
 ```
 
 ***
@@ -642,24 +644,24 @@ Settings:
 ## Przykład przepływu pracy dopasowywania PO
 
 ```
-Invoice Arrives
+Nadejście faktury
     ↓
-Condition: "Is amount > €5000?" → YES
+Warunek: „Czy kwota > €5000?” → TAK
     ↓
-Check: Full Match? → NO (10% price difference)
+Kontrola: Pełne dopasowanie? → NIE (10% różnicy w cenie)
     ↓
-Check: Unit Price within 5%? → NO (12% difference)
+Kontrola: Cena jednostkowa w granicach 5%? → NIE (12% różnicy)
     ↓
-Check: Quantity within 5%? → YES (2% difference)
+Kontrola: Ilość w granicach 5%? → TAK (2% różnicy)
     ↓
-Decision: FAIL - Price variance too high
+Decyzja: FAIL - zbyt duże odchylenie ceny
     ↓
-Flag for: Manual review / Buyer approval
+Oznacz do: ręcznego sprawdzenia / akceptacji kupca
     ↓
-Wait for: Buyer comment
+Czekaj na: komentarz kupca
     ↓
-If Approved: Continue to Export
-If Rejected: Return to Supplier
+Jeśli zatwierdzono: przejdź do eksportu
+Jeśli odrzucono: zwróć dostawcy
 ```
 
 ***
@@ -669,46 +671,46 @@ If Rejected: Return to Supplier
 ### „Nie znaleziono PO”
 
 ```
-Cause: Invoice PO number doesn't exist in system
-Fix:
-1. Verify PO number spelling
-2. Check if PO was created
-3. Verify PO is in correct organization
-4. Ask supplier for PO reference
+Przyczyna: Numer PO z faktury nie istnieje w systemie
+Rozwiązanie:
+1. Sprawdź pisownię numeru PO
+2. Sprawdź, czy PO zostało utworzone
+3. Sprawdź, czy PO znajduje się we właściwej organizacji
+4. Poproś dostawcę o numer referencyjny PO
 ```
 
 ### „Elementy nie pasują”
 
 ```
-Cause: Invoice items are different from PO items
-Possible Reasons:
-1. Substitution approved by procurement
-2. Different item numbers for same item
-3. Error by supplier
-Fix: Contact procurement or supplier
+Przyczyna: Pozycje na fakturze różnią się od pozycji w PO
+Możliwe powody:
+1. Zamiennik zatwierdzony przez dział zakupów
+2. Różne numery pozycji dla tej samej pozycji
+3. Błąd dostawcy
+Rozwiązanie: Skontaktuj się z działem zakupów lub dostawcą
 ```
 
 ### „Cena wyższa niż w PO”
 
 ```
-Cause: Invoice price > PO price
-Possible Reasons:
-1. Price increase approved
-2. Supplier error
-3. Currency difference
-4. Additional services included
-Fix: Verify with procurement
+Przyczyna: Cena na fakturze > cena w PO
+Możliwe powody:
+1. Zatwierdzona podwyżka ceny
+2. Błąd dostawcy
+3. Różnica walutowa
+4. Dodatkowe usługi wliczone w cenę
+Rozwiązanie: Zweryfikuj w dziale zakupów
 ```
 
 ### „Błędna data dostawy”
 
 ```
-Cause: Invoice dated after promised delivery
-Possible Reasons:
-1. Shipment was delayed
-2. Receiving date different from invoice date
-3. Partial shipment
-Fix: Check shipping documents or contact supplier
+Przyczyna: Faktura datowana po obiecanej dacie dostawy
+Możliwe powody:
+1. Przesyłka została opóźniona
+2. Data odbioru różni się od daty faktury
+3. Dostawa częściowa
+Rozwiązanie: Sprawdź dokumenty wysyłkowe lub skontaktuj się z dostawcą
 ```
 
 ***
@@ -717,16 +719,16 @@ Fix: Check shipping documents or contact supplier
 
 | Karta           | Co sprawdza        | Główne obliczenia     | Wspólna tolerancja |
 | -------------- | --------------------- | -------------------- | ---------------- |
-| Pełny mecz     | Wszystko            | Wszystkie kontrole           | Różnie           |
+| Pełne dopasowanie | Wszystko         | Wszystkie kontrole        | Różnie           |
 | Cena jednostkowa     | Cena za jednostkę        | % lub € różnicy    | ±3-5%            |
 | Ilość       | Zamówiona ilość        | % lub różnica jednostkowa | ±3-5%            |
 | Łączna cena | Razem ze zmianą ilości | Ilość × cena          | ±5-10%           |
-| Identyfikator przedmiotu        | Właściwe przedmioty           | Dopasowanie ciągu         | Dokładne            |
-| Typ zamówienia     | Rodzaj zakupu      | Dopasowanie ciągu         | Dokładne            |
+| Identyfikator pozycji | Właściwe pozycje   | Dopasowanie tekstu        | Dokładne         |
+| Typ zamówienia | Rodzaj zakupu         | Dopasowanie tekstu        | Dokładne         |
 | Data dostawy  | Kiedy przybył          | Różnica dnia       | ± 3 dni          |
 | Opłaty        | Dodatkowe opłaty            | % lub € różnicy    | ±5%              |
 | Podatek            | Kwota podatku            | Obliczanie % podatku    | ±1%              |
-| Obiekt       | Centrum kosztów           | Dopasowanie ciągu         | Dokładne            |
+| Obiekt         | Centrum kosztów       | Dopasowanie tekstu        | Dokładne         |
 | Dostawca       | Zatwierdzone?             | Kontrola stanu         | Tylko aktywne      |
 
 ***
@@ -756,7 +758,7 @@ Załóżmy, że datą referencyjną jest `2026-10-21` i obiecaną datą dostawy 
 
 `CONDITION_PO_EXTRACTED_TABLE_COLUMN` · wersja 2
 
-Porównaj dopasowaną kolumnę artykułu PO z wyodrębnioną kolumną `article_number`, używając równości i All. Pasujące wartości `DEMO-A` spełniają; wyodrębniona wartość `DEMO-B` kończy się niepowodzeniem. Wybierz tabelę przeglądową tylko wtedy, gdy wymagana jest udokumentowana zamiana identyfikatora na wartość; sprawdź to mapowanie przed porównaniem.
+Porównaj dopasowaną kolumnę artykułu PO z wyodrębnioną kolumną `article_number`, używając równości i opcji Wszystkie. Pasujące wartości `DEMO-A` spełniają; wyodrębniona wartość `DEMO-B` kończy się niepowodzeniem. Wybierz tabelę przeglądową tylko wtedy, gdy wymagana jest udokumentowana zamiana identyfikatora na wartość; sprawdź to mapowanie przed porównaniem.
 
 <!-- workflow-card-example-condition_check_facility_in_po-20261021 -->
 
@@ -786,7 +788,7 @@ Użyj całkowicie dopasowanej faktury demonstracyjnej i zamówienia zakupu z ilo
 
 `CONDITION_PO_UPDATE_EMPTY_COLUMN_CHECK` · wersja 2
 
-Wybierz prawidłową tabelę i kolumnę PO oferowaną przez kartę i operatora is-pusty. W przypadku istniejącego pasującego rekordu zamówienia zakupu z pustą wartością warunek zostaje spełniony; wypełnienie wartości kończy się niepowodzeniem. Najpierw sprawdź odwołanie do zamówienia i mapowanie tabeli/kolumny. Wartość logiczna `false` jest nadal aktualną wartością logiczną; brakujący rekord zamówienia zakupu jest odrębnym błędem danych.
+Wybierz prawidłową tabelę i kolumnę PO oferowaną przez kartę i operatora „jest pusty”. W przypadku istniejącego pasującego rekordu zamówienia zakupu z pustą wartością warunek zostaje spełniony; wypełnienie wartości kończy się niepowodzeniem. Najpierw sprawdź odwołanie do zamówienia i mapowanie tabeli/kolumny. Wartość logiczna `false` jest nadal aktualną wartością logiczną; brakujący rekord zamówienia zakupu jest odrębnym błędem danych.
 
 <!-- workflow-card-example-condition_compare_unit_price_percent_per-20261021 -->
 

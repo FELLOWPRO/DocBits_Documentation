@@ -4,6 +4,8 @@
 
 Touchless Intelligence rozdziela dwie kwestie: **czy DocBits poprawnie odczytał fakturę?** oraz **czy cały proces zakończył się bez ręcznej ingerencji?** Poprawny odczyt nie wyklucza pracy nad rozbieżnymi danymi Infor. AP oznacza pracowników zobowiązań.
 
+<figure><img src="../.gitbook/assets/anatomy-touchless-pl.svg" alt="Izometryczna linia sortownicza: przenośnik taśmowy z 14 bramkami, popychacz kierujący jeden dokument do tacy kontrolnej, kosz eksportu ze stosem dokumentów oraz wskaźnik pokazujący 78,9 procent"><figcaption><p>Touchless jako linia sortownicza, z przykładowymi liczbami z tabeli Przykład obliczeń: 14 bramek to etapy Ścieżki rurociągu, arkusze nadal leżące na taśmie są w toku i nie są liczone, dokument zatrzymany na bramce trafia do tacy kontrolnej razem z dokumentami AP Assisted (30) i Wyjątkami procesu (10), a dokumenty Pure Touchless (120) i Tylko zatwierdzenie (30) w koszu eksportu dają na wskaźniku 150 ze 190, czyli 78,9 %, powyżej znacznika celu 70 %.</p></figcaption></figure>
+
 ## Wybierz właściwy przewodnik
 
 | Przewodnik | Zawartość |

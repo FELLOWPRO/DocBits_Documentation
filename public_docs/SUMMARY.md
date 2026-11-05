@@ -93,6 +93,7 @@
     * [Automatyczne Dopasowywanie Danych Zamówień Zakupu](end-user-and-partner-section/end-user-section/purchase-order-matching/automatic-purchase-order-data-matching.md)
     * [Mapa Numerów Przedmiotów Dostawcy](end-user-and-partner-section/end-user-section/purchase-order-matching/supplier-item-number-map.md)
     * [Skróty Klawiaturowe](end-user-and-partner-section/end-user-section/purchase-order-matching/keyboard-shortcuts.md)
+  * [Przyjmowanie zamówień](end-user-and-partner-section/end-user-section/order-intake.md)
   * [Księgowanie faktur kosztowych i sprzedaży pośredniej](end-user-and-partner-section/end-user-section/accounting-for-cost-invoice-and-indirect-sales.md)
   * [Jak importować dokumenty](end-user-and-partner-section/end-user-section/how-to-import-documents/README.md)
     * [Import przez FTP i SFTP](end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md)

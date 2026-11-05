@@ -35,7 +35,7 @@ Os seguintes detalhes estão incluídos:
 * **Solicitado em**: A data e hora em que a exportação foi iniciada.
 * **Concluído em**: A data e hora em que a exportação foi concluída.
 * **Formato**: O formato de arquivo usado para a exportação (CSV, XLSX).
-* **Filtros Usados**: Até três filtros ativos aparecem como chips em uma única linha. Se mais filtros foram aplicados, um chip **+N** mostra quantos há além desses. Aponte para a célula de filtros para ver a lista completa em uma dica.
+* **Filtros Usados**: Até três filtros ativos aparecem como chips em uma única linha. Se mais filtros foram aplicados, um chip **+N** mostra quantos há além desses. Aponte para a célula de filtros para ver a lista completa em uma dica. Os filtros com o valor **None** são omitidos.
 
 <mark style="color:red;">**Nota**</mark>: Para exportar tabelas, a opção Exportar dados do painel na seção [Em geral](./#em-geral) deve estar ativa.
 

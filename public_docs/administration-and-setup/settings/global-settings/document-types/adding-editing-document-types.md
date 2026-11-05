@@ -2,7 +2,7 @@
 
 Administratoren können einen benutzerdefinierten Dokumenttyp anlegen oder die Einstellungen eines bestehenden ändern. Öffnen Sie **Einstellungen → Dokumentenverarbeitung → Dokumenttypen**. Die Seite trennt die mitgelieferten **Standard-Dokumenttypen** von den **Benutzerdefinierten Dokumenttypen**.
 
-<figure><img src="../../../../.gitbook/assets/dbdc611-doctypes-overview-de.png" alt="Seite Dokumenttypen mit der Rechnung-Karte und den Schaltflächen Aktivieren, Extraction, Einstellungen sowie Links zu Layouts, Felder, Tabellen, Skripte und Modell Training"><figcaption><p>Öffnen Sie über eine Dokumenttyp-Karte die Einstellung, die Sie ändern möchten.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document-types-overview-20261104-de.png" alt="Die Seite Dokumenttypen: der Bereich Standard-Dokumenttypen mit der Rechnung-Karte, die die Schalter Aktivieren und Extraction, das Zahnrad für Weitere Einstellungen und die Links Layouts, Felder, Tabellen, Validierungsregeln, Transformationsregeln, Skripte, Modell Training, E-Doc, Untertypen von Dokumenten und Logs zeigt; die übrigen Karten zeigen weniger Links."><figcaption><p>Öffnen Sie über eine Dokumenttyp-Karte die Einstellung, die Sie ändern möchten. Die Rechnung-Karte bietet die meisten Links, weil für sie Validierungs- und Transformationsregeln aktiviert sind.</p></figcaption></figure>
 
 ## Einen benutzerdefinierten Dokumenttyp erstellen
 
@@ -28,9 +28,12 @@ Suchen Sie die Karte des Typs unter **Standard-Dokumenttypen** oder **Benutzerde
 | **Layouts** | Öffnet das Validierungslayout. Siehe [Navigieren im Layout-Manager](layout-manager/navigating-the-layout-manager.md). |
 | **Felder** | Öffnet die Feldkonfiguration. Siehe [Hinzufügen und Bearbeiten von Feldern](fields/adding-and-editing-fields.md). |
 | **Tabellen** | Öffnet die Tabellenspalten für diesen Dokumenttyp. |
+| **Validierungsregeln** | Öffnet die [benutzerdefinierten Validierungsregeln](custom-validation-rules.md) dieses Dokumenttyps. Wird angezeigt, wenn der Regelmanager verfügbar ist. |
+| **Transformationsregeln** | Öffnet die [Transformationsregeln](transformation-rules.md) dieses Dokumenttyps. Wird angezeigt, wenn der Regelmanager verfügbar ist. |
 | **Skripte** | Öffnet die Verarbeitungsskripte, wenn diese Funktion verfügbar ist. |
 | **Modell Training** | Öffnet Trainingsdaten und Modelloptionen. |
 | **E-Doc** | Öffnet die E-Dokument-Einstellungen, sofern verfügbar. Siehe [E-Dokumente](edi/README.md). |
 | **Untertypen von Dokumenten** | Öffnet die Untertyp-Einstellungen; siehe [Dokumentuntertypen](document-sub-types.md). |
+| **Logs** | Öffnet die Regelausführungsprotokolle dieses Dokumenttyps, eine Zeile pro ausgewerteter Regel; siehe [Benutzerdefinierte Validierungsregeln](custom-validation-rules.md). |
 
 Die auf einer Karte angezeigten Links hängen von den aktivierten Funktionen der Organisation und vom Dokumenttyp ab. Öffnen Sie den betreffenden Bereich, nehmen Sie dort die gewünschte Änderung vor und prüfen Sie ein Beispieldokument in der Validierungsansicht, bevor Sie den aktualisierten Typ im regulären Betrieb verwenden.

@@ -32,7 +32,7 @@ Rules are defined per **document type** and run on every document of that type: 
 
 Custom validation rules are switched on **per document type**. There is no organisation-wide switch.
 
-1. Go to **Settings → Global Settings → Document Types**.
+1. Go to **Settings → Document Processing → Document Types**.
 2. On the card of the document type, click the **settings** (gear) icon.
 3. Open the **Custom Validation Rules** section and turn the toggle on.
 4. Click **Manage validation rules** to open the rule list.
@@ -53,7 +53,7 @@ From now on the card of the document type also shows a **Validation Rules** link
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list.png" alt="Custom validation rule management with configuration names hidden."><figcaption><p>Custom validation rule management with configuration names hidden.</p></figcaption></figure>
 
-Each card shows the rule's name and description, and the badges for its **level** (Header / Line / Table), **severity** (Error / Warning), the **field** the error is attached to and its **source**. Use the switch on the right to activate or deactivate a rule, and the **⋮** menu to duplicate or delete it. Filter the list by level (**All / Header / Line / Table**) and by state (**All / Active / Inactive**), or search it.
+Each card shows the rule's name and description, and the badges for its **level** (Header / Line / Table), **severity** (Error / Warning), the **field** the error is attached to and its **source**. Use the switch on the right to activate or deactivate a rule, and the **⋮** menu to edit, duplicate or delete it. Filter the list by level (**All / Header / Line / Table**) and by state (**All / Active / Inactive**), or search it.
 
 ### System default, Customized and Custom rules
 

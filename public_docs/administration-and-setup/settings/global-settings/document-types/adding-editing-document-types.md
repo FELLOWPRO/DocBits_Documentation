@@ -2,7 +2,7 @@
 
 Gli amministratori possono creare un tipo di documento personalizzato o modificare le impostazioni di uno esistente. Aprire **Impostazioni → Elaborazione documenti → Tipi di documento**. La pagina separa i **Tipi di documento predefiniti** integrati dai **Tipi di documenti personalizzati**.
 
-<figure><img src="../../../../.gitbook/assets/dbdc180-document-types-overview-it.png" alt="Pagina Tipi di documento con la carta Fattura che mostra Attivare, Extraction, Altre impostazioni e i collegamenti a Layout, Campi, Tavoli, Script e Modello di formazione"><figcaption><p>Usare una carta di tipo di documento per aprire l'impostazione che si desidera modificare.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document-types-overview-20261104-it.png" alt="La pagina Tipi di documento: la sezione Tipi di documento predefiniti con la scheda Fattura, che mostra gli interruttori Attivare ed Extraction, l'ingranaggio Altre impostazioni e i collegamenti Layout, Campi, Tabelle, Regole di convalida, Regole di trasformazione, Script, Modello di formazione, E-Doc, Sottotipi di documento e Registri; le altre schede mostrano meno collegamenti."><figcaption><p>Dalla scheda di un tipo di documento si apre l'impostazione da modificare. La scheda Fattura offre più collegamenti perché per essa sono attive le regole di convalida e di trasformazione.</p></figcaption></figure>
 
 ## Creare un tipo di documento personalizzato
 
@@ -28,9 +28,12 @@ Trovare la carta del tipo sotto **Tipi di documento predefiniti** o **Tipi di do
 | **Layout** | Apre il layout di validazione. Vedere [navigare il Layout Manager](layout-manager/navigating-the-layout-manager.md). |
 | **Campi** | Apre la configurazione dei campi. Vedere la pagina dei [Campi](fields/adding-and-editing-fields.md). |
 | **Tavoli** | Apre le colonne della tabella per questo tipo di documento. |
+| **Regole di convalida** | Apre le [regole di convalida personalizzate](custom-validation-rules.md) di questo tipo di documento. Visibile quando il gestore delle regole è disponibile. |
+| **Regole di trasformazione** | Apre le [regole di trasformazione](transformation-rules.md) di questo tipo di documento. Visibile quando il gestore delle regole è disponibile. |
 | **Script** | Apre gli script di elaborazione quando la funzione è disponibile. |
 | **Modello di formazione** | Apre i dati di addestramento e le opzioni del modello. |
 | **E-Doc** | Apre le impostazioni dei documenti elettronici quando disponibili. Vedere [Documenti elettronici](edi/README.md). |
 | **Sottotipi di documento** | Apre le impostazioni dei sottotipi; vedere [Sottotipi di Documento](document-sub-types.md). |
+| **Registri** | Apre i registri di esecuzione delle regole di questo tipo di documento, una riga per ogni regola valutata; vedere [Regole di convalida personalizzate](custom-validation-rules.md). |
 
 I collegamenti mostrati su una carta dipendono dalle funzioni abilitate dell'organizzazione e dal tipo di documento. Aprire la sezione pertinente, apportare lì la modifica prevista e verificare un documento di esempio nella vista di validazione prima di usare il tipo aggiornato nell'elaborazione ordinaria.

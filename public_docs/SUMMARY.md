@@ -102,6 +102,7 @@
     * [Automatic Purchase Order Data Matching](end-user-and-partner-section/end-user-section/review-quote-details/automatic-purchase-order-data-matching.md)
     * [Supplier Item Number Map](end-user-and-partner-section/end-user-section/review-quote-details/supplier-item-number-map.md)
     * [Keyboard Shortcuts](end-user-and-partner-section/end-user-section/review-quote-details/keyboard-shortcuts.md)
+  * [Order Intake](end-user-and-partner-section/end-user-section/order-intake.md)
   * [Accounting for Cost Invoice and Indirect Sales](end-user-and-partner-section/end-user-section/accounting-for-cost-invoice-and-indirect-sales.md)
   * [How to Import Documents](end-user-and-partner-section/end-user-section/how-to-import-documents/README.md)
     * [FTP](end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md)

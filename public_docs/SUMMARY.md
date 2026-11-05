@@ -93,6 +93,7 @@
     * [Automatische Afstemming van Inkoopordergegevens](end-user-and-partner-section/end-user-section/purchase-order-matching/automatic-purchase-order-data-matching.md)
     * [Leverancier Artikelnummer Map](end-user-and-partner-section/end-user-section/purchase-order-matching/supplier-item-number-map.md)
     * [Toetsenbord Sneltoetsen](end-user-and-partner-section/end-user-section/purchase-order-matching/keyboard-shortcuts.md)
+  * [Orderverwerking](end-user-and-partner-section/end-user-section/order-intake.md)
   * [Boekhouding voor Kostfactuur en Indirecte Verkoop](end-user-and-partner-section/end-user-section/accounting-for-cost-invoice-and-indirect-sales.md)
   * [Hoe Documenten te Importeren](end-user-and-partner-section/end-user-section/how-to-import-documents/README.md)
     * [Import via FTP en SFTP](end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md)

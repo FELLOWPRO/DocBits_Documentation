@@ -1,5 +1,9 @@
 # Het dashboard gebruiken
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Videohoofdstuk (controleversie):** [Selectie en gegevenstijdstip](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/nl.html#chapter=01).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### Filters
 
 | Filter | Wat het doet |

@@ -1,5 +1,9 @@
 # Touchless Intelligence: Wijzigingsvoorstellen en rapporten
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Videohoofdstuk (controleversie):** [Voorstellen en geschiedenis](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/nl.html#chapter=10).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 
 Een aanbeveling kan vergezeld gaan van een **wijzigingsvoorstel** (change proposal): één instellingswijziging die zou moeten helpen. Beheerders werken ermee in vier stappen:
 

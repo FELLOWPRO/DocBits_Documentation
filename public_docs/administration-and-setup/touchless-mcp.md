@@ -1,5 +1,9 @@
 # Touchless uitleggen en verbeteren met MCP
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Videohoofdstuk (controleversie):** [Cijfers opvragen met MCP](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/nl.html#chapter=12).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 Deze werkwijzen gebruiken daadwerkelijk aangeboden DocBits MCP-tools. Scheid lezen/uitleg van schrijven. Controleer organisatie, rol, type, periode en peildatum; verzin geen ontbrekend bewijs.
 
 <figure><img src="../.gitbook/assets/touchless-owned-po-price-nl.png" alt="Echte Nederlandse Dev-weergave van een fictieve order: 10 × 9 = 90. Dit is een bronvergelijking voor MCP-diagnose, geen screenshot van een MCP-client of bewijs van geslaagde extractie/verwerking."><figcaption><p>Echte Nederlandse Dev-weergave van een fictieve order: 10 × 9 = 90. Dit is een bronvergelijking voor MCP-diagnose, geen screenshot van een MCP-client of bewijs van geslaagde extractie/verwerking.</p></figcaption></figure>

@@ -1,5 +1,9 @@
 # Touchless Intelligence: Documentspoor
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Videohoofdstuk (controleversie):** [Uitvoeringen vergelijken](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/nl.html#chapter=08).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 Voer een document-ID in bij **Document ID**, of open een voorbeelddocument uit een cluster, om te zien **wat er met dit ene document is gebeurd**.
 
 De kop toont het bestand, de status ervan (bijvoorbeeld **In uitvoering**), de uitvoering die u bekijkt en de eerste blokkeerder daarvan, en een knop **Document** met het document-ID.

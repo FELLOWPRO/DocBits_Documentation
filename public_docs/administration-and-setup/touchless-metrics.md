@@ -1,5 +1,9 @@
 # Metrieken en berekening
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Videohoofdstuk (controleversie):** [De percentages berekenen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/nl.html#chapter=03).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### Correct uitlezen en verwerking zonder ingreep zijn verschillende zaken
 
 **DocBits kan de factuur correct uitlezen terwijl afwijkende Infor-gegevens toch werk veroorzaken.** AP is de menselijke crediteurenadministratie, geen AI-assistent.

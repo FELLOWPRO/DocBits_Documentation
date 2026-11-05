@@ -1,5 +1,9 @@
 # Touchless Intelligence: PO-matchingdiagnose
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Videohoofdstuk (controleversie):** [Een document volgen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/nl.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## Overzicht
 
 Een correct uitgelezen factuur kan stoppen wanneer ordergegevens afwijken en de regels dat verschil niet oplossen. Een tijdelijke blokkade is nog geen einduitkomst: automatische hervatting kan slagen; geregistreerde correctie of menselijke herstart geeft AP Assisted na succes.

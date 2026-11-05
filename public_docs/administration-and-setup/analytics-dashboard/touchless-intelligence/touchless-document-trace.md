@@ -1,5 +1,9 @@
 # 文档追踪
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**视频章节（审核版）:** [比较执行记录](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.html#chapter=08).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 在 **Document ID** 中输入文档 ID，或从集群中打开一个示例文档，即可查看 **这份文档发生了什么** 。
 
 页眉显示文件、其状态（例如 **进行中** ）、您正在查看的运行及其首个阻塞点，以及一个带有文档 ID 的 **文档** 按钮。

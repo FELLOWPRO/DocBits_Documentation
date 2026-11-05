@@ -1,5 +1,9 @@
 # 采购订单匹配诊断
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**视频章节（审核版）:** [跟踪文档](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## 概述
 
 正确提取的发票也可能因订单数据不同而暂停。临时阻塞不是最终结果；自动恢复可能保持 Pure。已记录的人工更正或重启在成功后归为 AP Assisted。

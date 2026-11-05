@@ -1,10 +1,16 @@
 # 无接触智能
 
-本页保留的既有视频使用英语；以下文字、说明卡和界面截图为中文。
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4" %}
-
 Touchless Intelligence 区分两个问题： **DocBits 是否正确提取发票？** 以及 **整个流程是否无人工处理干预地完成？** 提取正确也可能需要处理不同的 Infor 数据。AP 指人工应付账款团队。
+
+## 视频：Touchless 报告功能
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.mp4" %}
+
+这份 4:49 的审核版展示有实际数据的报告：筛选、指标与计算、趋势、首次阻塞点、已记录证据、文档历史、执行对比、学习规则、改进与历史记录、咨询报告，以及实际 MCP 查询结果。
+
+[打开含中文字幕和 16 个章节的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.html). 本次新版的人工试听评估尚未完成。
+
+这些教学案例用于解释报告功能。建议或预览不能证明修改已生效，也不能证明已取得实际改善。 画面中的 MCP 修改建议还需要明确具体目标配置，暂不支持预览和应用。部分产品原生文本可能仍保留原始语言。 已学习规则中的“21份中20份”表示规则匹配的案例数。反例显示规则会替换某个已被接受的值；部分原生界面标签的翻译不准确。
 
 <figure><img src="../../../.gitbook/assets/anatomy-touchless-zh.svg" alt="等距分拣线示意图：传送带上有 14 道闸门，一个推杆将一份文档推入审核托盘，导出箱中有一叠文档，表盘显示 78.9 %"><figcaption><p>将 Touchless 比作分拣线，数字取自示例计算：14 道闸门是 Pipeline Path 的各个阶段，仍在传送带上的纸张处于处理中，不计入统计；在闸门处停下的文档会被推入审核托盘，与 AP 辅助（30）和流程异常（10）文档放在一起；导出箱中的纯无接触（120）和仅需审批（30）文档合计 190 份中的 150 份，即表盘上的 78.9 %，高于 70 % 的目标标记。</p></figcaption></figure>
 

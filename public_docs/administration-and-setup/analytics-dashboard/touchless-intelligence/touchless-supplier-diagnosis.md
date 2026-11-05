@@ -1,5 +1,9 @@
 # 供应商诊断与问题集群
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**视频章节（审核版）:** [调查重复问题](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.html#chapter=06).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 点击队列中的供应商即可打开其诊断页面。
 
 <figure><img src="../../../.gitbook/assets/site-complete-touchless-supplier-completed-zh.png" alt="当前中文供应商诊断的已有结果示例，显示“未知/未识别供应商”分组的处理异常和问题簇。身份数据已隐藏，已有分析文本仍包含英文；这里没有重新运行 AI 分析、应用建议或证明某个具体供应商的修复结果。"><figcaption><p>当前中文供应商诊断的已有结果示例，显示“未知/未识别供应商”分组的处理异常和问题簇。身份数据已隐藏，已有分析文本仍包含英文；这里没有重新运行 AI 分析、应用建议或证明某个具体供应商的修复结果。</p></figcaption></figure>

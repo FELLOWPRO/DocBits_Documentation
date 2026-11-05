@@ -1,5 +1,9 @@
 # 指标与计算
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**视频章节（审核版）:** [计算自动处理率](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.html#chapter=03).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### 正确提取与流程自动化是两回事
 
  **DocBits 可以正确读取发票，但 Infor 数据不同仍可能需要人工处理。**  AP 指人工应付账款团队，不是 AI 助手。先比较原件与更正前的提取值，再比较导入的源数据。绿色步骤或高置信度不能证明每个值都正确；已经更正的值也不能证明最初的提取结果。

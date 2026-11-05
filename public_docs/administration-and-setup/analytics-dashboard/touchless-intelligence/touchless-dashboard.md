@@ -1,5 +1,9 @@
 # 使用仪表板
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**视频章节（审核版）:** [筛选与数据时间](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.html#chapter=01).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 
 
 ### 筛选条件

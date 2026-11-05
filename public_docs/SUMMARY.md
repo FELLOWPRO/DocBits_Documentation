@@ -98,6 +98,7 @@
     * [采购订单数据自动匹配](end-user-and-partner-section/end-user-section/purchase-order-matching/automatic-purchase-order-data-matching.md)
     * [供应商物料编号映射](end-user-and-partner-section/end-user-section/purchase-order-matching/supplier-item-number-map.md)
     * [键盘快捷键](end-user-and-partner-section/end-user-section/purchase-order-matching/keyboard-shortcuts.md)
+  * [订单接收](end-user-and-partner-section/end-user-section/order-intake.md)
   * [成本发票和间接销售会计](end-user-and-partner-section/end-user-section/accounting-for-cost-invoice-and-indirect-sales.md)
   * [如何导入文档](end-user-and-partner-section/end-user-section/how-to-import-documents/README.md)
     * [FTP 导入](end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md)

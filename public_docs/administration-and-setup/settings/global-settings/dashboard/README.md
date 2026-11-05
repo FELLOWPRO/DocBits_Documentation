@@ -35,7 +35,7 @@ Sono inclusi i seguenti dettagli:
 * **Richiesto il**: La data e l'ora in cui l'esportazione è stata avviata.
 * **Completato il**: La data e l'ora in cui l'esportazione è stata completata.
 * **Formato**: Il formato del file utilizzato per l'esportazione (CSV, XLSX).
-* **Filtri Usati**: Fino a tre filtri attivi compaiono come chip su una sola riga. Se sono stati applicati altri filtri, un chip **+N** indica quanti altri ce ne sono. Passa il puntatore sulla cella dei filtri per vedere l'elenco completo in un suggerimento.
+* **Filtri Usati**: Fino a tre filtri attivi compaiono come chip su una sola riga. Se sono stati applicati altri filtri, un chip **+N** indica quanti altri ce ne sono. Passa il puntatore sulla cella dei filtri per vedere l'elenco completo in un suggerimento. I filtri con valore **None** non vengono mostrati.
 
 <mark style="color:red;">**Nota**</mark>: Per esportare le tabelle, l'opzione Esporta Dati Dashboard nella sezione [Generale](./#generale) deve essere attiva.
 

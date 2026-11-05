@@ -26,16 +26,16 @@ Om toegang te krijgen tot de dashboardinstellingen, navigeer naar:\
 
 In de **Exportgeschiedenis** zie je een tabel met alle eerdere exports, samen met belangrijke informatie over elk verzoek.
 
-![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_4.png)
+![Exportgeschiedenis met compacte rijen en filterchips op één regel; e-mailadressen en organisatie-ID's zijn gemaskeerd](../../../../.gitbook/assets/core-6845-export-history-compact-nl.png)
 
 De volgende details zijn inbegrepen:
 
 * **E-mail**: Het e-mailadres van waaruit de export is aangevraagd.
-* **Status**: De huidige status van de export (In afwachting, Voltooid).
+* **Status**: De huidige status van de export (In afwachting, Voltooid of Mislukt).
 * **Aangevraagd op**: De datum en tijd waarop de export is gestart.
 * **Voltooid op**: De datum en tijd waarop de export is voltooid.
 * **Formaat**: Het bestandsformaat dat is gebruikt voor de export (CSV, XLSX).
-* **Gebruikte filters**: Eventuele filters die op het dashboard zijn toegepast op het moment van export.
+* **Gebruikte filters**: Maximaal drie actieve filters verschijnen als chips op één regel. Zijn er meer filters toegepast, dan toont een **+N**-chip hoeveel extra er zijn. Wijs de filtercel aan om de volledige lijst in een tooltip te zien.
 
 <mark style="color:red;">**Opmerking**</mark>: Om tabellen te exporteren, moet de optie Dashboardgegevens exporteren in de [Algemeen](./#algemeen) sectie actief zijn.
 

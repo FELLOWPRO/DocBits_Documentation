@@ -26,16 +26,16 @@ Um auf die Dashboard-Einstellungen zuzugreifen, navigieren Sie zu:\
 
 Im **Exportverlauf** sehen Sie eine Tabelle, die alle vergangenen Exporte zusammen mit wichtigen Informationen zu jeder Anfrage auflistet.
 
-<figure><img src="../../../../.gitbook/assets/dashboard-settings_4-de.png" alt="Der Exportverlauf mit den Spalten Email, Status, Requested At, Completed At, Format und Filters Used"><figcaption><p>Der Exportverlauf listet alle vergangenen Exporte auf.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/core-6845-export-history-compact-de.png" alt="Der Exportverlauf mit kompakten Zeilen und einzeiligen Filter-Chips; E-Mail-Adressen und Organisations-IDs sind maskiert"><figcaption><p>Kompakte Zeilen im Exportverlauf mit Filter-Chips und +N-Zählern für weitere Filter. In dieser Dev-Aufnahme sind E-Mail-Adressen und Organisations-IDs maskiert.</p></figcaption></figure>
 
 Die folgenden Details sind enthalten:
 
 * **E-Mail**: Die E-Mail-Adresse, von der der Export angefordert wurde.
-* **Status**: Der aktuelle Status des Exports (Ausstehend, Abgeschlossen).
+* **Status**: Der aktuelle Status des Exports (Ausstehend, Abgeschlossen oder Fehlgeschlagen).
 * **Angefordert am**: Das Datum und die Uhrzeit, zu der der Export initiiert wurde.
 * **Abgeschlossen am**: Das Datum und die Uhrzeit, zu der der Export abgeschlossen wurde.
 * **Format**: Das für den Export verwendete Dateiformat (CSV, XLSX).
-* **Verwendete Filter**: Alle Filter, die zum Zeitpunkt des Exports auf das Dashboard angewendet wurden.
+* **Verwendete Filter**: Bis zu drei aktive Filter erscheinen als Chips in einer Zeile. Wurden mehr Filter angewendet, zeigt ein **+N**-Chip, wie viele weitere es sind. Zeigen Sie auf die Filterzelle, um die vollständige Liste in einem Tooltip zu sehen. Filter mit dem Wert **None** werden nicht angezeigt.
 
 <mark style="color:red;">**Hinweis**</mark>: Um Tabellen zu exportieren, muss die Option Dashboard-Daten exportieren im [Allgemein](./#allgemein) Abschnitt aktiviert sein.
 

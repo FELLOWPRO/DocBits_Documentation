@@ -2,7 +2,7 @@
 
 Les administrateurs peuvent créer un type de document personnalisé ou modifier les paramètres d'un type existant. Ouvrez **Paramètres → Traitement des documents → Types de Documents**. La page sépare les **Types de documents par défaut** intégrés des **Types de documents personnalisés**.
 
-<figure><img src="../../../../.gitbook/assets/dbdc180-document-types-overview-fr.png" alt="Page Types de Documents montrant la carte Facture avec Activer, Extraction, Plus de paramètres et les liens vers les mises en page, les champs, les tables, les scripts et la formation du modèle"><figcaption><p>Utilisez la carte d'un type de document pour ouvrir le paramètre que vous souhaitez modifier.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document-types-overview-20261104-fr.png" alt="La page Types de documents : la section Types de documents par défaut avec la carte Facture, qui affiche les interrupteurs Activer et Extraction, l'engrenage Plus de paramètres et les liens Plans, Champs, Tables, Règles de validation, Règles de transformation, Scénarios, Formation du modèle, E-Doc, Sous-types de documents et Journaux ; les autres cartes affichent moins de liens."><figcaption><p>Ouvrez le paramètre à modifier depuis la carte d'un type de document. La carte Facture propose le plus de liens, car les règles de validation et de transformation sont activées pour elle.</p></figcaption></figure>
 
 ## Créer un type de document personnalisé
 
@@ -28,9 +28,12 @@ Trouvez la carte du type sous **Types de documents par défaut** ou **Types de d
 | **Plans** | Ouvre la mise en page de validation. Voir [Navigation dans le Gestionnaire de Mise en Page](layout-manager/navigating-the-layout-manager.md). |
 | **Champs** | Ouvre la configuration des champs. Voir [Ajout et Édition de Champs](fields/adding-and-editing-fields.md). |
 | **Tables** | Ouvre les colonnes de table de ce type de document. |
+| **Règles de validation** | Ouvre les [règles de validation personnalisées](custom-validation-rules.md) de ce type de document. Affiché lorsque le gestionnaire de règles est disponible. |
+| **Règles de transformation** | Ouvre les [règles de transformation](transformation-rules.md) de ce type de document. Affiché lorsque le gestionnaire de règles est disponible. |
 | **Scénarios** | Ouvre les scripts de traitement lorsque cette fonctionnalité est disponible. |
 | **Formation du modèle** | Ouvre les données d'entraînement et les options du modèle. |
 | **E-Doc** | Ouvre les paramètres des documents électroniques lorsqu'ils sont disponibles. Voir [Paramètres e-docs](edi/README.md). |
 | **Sous-types de documents** | Ouvre les paramètres des sous-types ; voir [Sous-Types de Document](document-sub-types.md). |
+| **Journaux** | Ouvre les journaux d'exécution des règles de ce type de document, une ligne par règle évaluée ; voir [Règles de validation personnalisées](custom-validation-rules.md). |
 
 Les liens affichés sur une carte dépendent des fonctionnalités activées de l'organisation et du type de document. Ouvrez la section concernée, effectuez la modification prévue à cet endroit, puis vérifiez un document exemple dans la vue de validation avant d'utiliser le type mis à jour dans le traitement régulier.

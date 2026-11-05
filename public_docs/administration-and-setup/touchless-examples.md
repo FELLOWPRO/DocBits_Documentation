@@ -1,5 +1,9 @@
 # Przykłady: cena i ilość
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Rozdział filmu (wersja do oceny):** [Śledzenie dokumentu](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pl.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## Pełny przykład: poprawny odczyt, inne dane Infor
 
 Przykład ilustracyjny: faktura **10 sztuk × 10 € = 100 €**, odczyt poprawny. Importowane zamówienie **10 × 9 € = 90 €**. Zakładamy, że aktywne reguły blokują różnicę.

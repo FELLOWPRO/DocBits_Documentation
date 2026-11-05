@@ -1,5 +1,9 @@
 # Korzystanie z panelu
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Rozdział filmu (wersja do oceny):** [Wybór i aktualność danych](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pl.html#chapter=01).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### Filtry
 
 | Filtr | Co robi |

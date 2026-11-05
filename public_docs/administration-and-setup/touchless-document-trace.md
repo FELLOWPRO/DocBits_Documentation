@@ -1,5 +1,9 @@
 # Touchless Intelligence: Ślad dokumentu
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Rozdział filmu (wersja do oceny):** [Porównywanie przebiegów](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pl.html#chapter=08).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 Wpisz identyfikator dokumentu w polu **Document ID** albo otwórz dokument przykładowy z klastra, aby zobaczyć, **co stało się z tym jednym dokumentem**.
 
 Nagłówek pokazuje plik, jego status (na przykład **W toku**), przeglądane uruchomienie i jego pierwszą blokadę oraz przycisk **Dokument** z identyfikatorem dokumentu.

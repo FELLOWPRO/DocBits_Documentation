@@ -1,5 +1,9 @@
 # Wskaźniki i obliczenia
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Rozdział filmu (wersja do oceny):** [Obliczanie wskaźników](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pl.html#chapter=03).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### Poprawny odczyt i automatyzacja to różne rzeczy
 
 **DocBits może poprawnie odczytać fakturę, choć rozbieżne dane Infor wymagają pracy.** AP oznacza pracowników zobowiązań, nie asystenta AI. Porównaj oryginał z odczytem sprzed korekt, a następnie z danymi importowanymi. Zielony etap i wysoka pewność nie dowodzą poprawności wszystkich wartości. Wartości po korekcie nie dowodzą początkowego odczytu.

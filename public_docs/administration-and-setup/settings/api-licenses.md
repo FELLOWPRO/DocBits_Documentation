@@ -1,5 +1,5 @@
 # Licenze di sistema
 
-<figure><img src="../../.gitbook/assets/system_licenses.png" alt="Licenze di sistema"><figcaption><p>Pagina delle licenze di sistema</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/api-licenses-page-20261104-it.png" alt="La pagina Licenze API nelle impostazioni, con le colonne Nome, Licenza e Versione e una riga per ogni pacchetto di terze parti"><figcaption><p>La pagina <strong>Licenze API</strong> nelle impostazioni.</p></figcaption></figure>
 
-La pagina Licenze di sistema (chiamata anche Licenze API) mostra tutti i pacchetti software di terze parti utilizzati da DocBits, con i relativi numeri di versione e le licenze open source associate. Queste informazioni sono fornite a scopo di conformità e trasparenza.
+La pagina **Licenze API** nelle impostazioni elenca tutti i pacchetti software di terze parti usati da DocBits con **Nome**, **Licenza** e **Versione**. La pagina è in sola lettura e serve per conformità e trasparenza: consultala per verificare quali licenze open source utilizza la tua installazione di DocBits.

@@ -20,7 +20,7 @@ Header fields carry their own source badge next to the value: *Extracted using A
 
 * **Settings → Document Processing → Classification and Extraction → AI Model**: the table under the selector lists every supplier with a stored model or training. A supplier in this list with *training data* has saved rules; *reset the training data* removes them.
 * **Settings → Document Processing → OCR Settings**: *Use E-Text if available* and *Use AI data for tables* change what text the extraction sees. A supplier can override E-Text under *More settings* on the validation screen.
-* **Settings → Global Settings → Document Types → Table Columns**: hidden, required and *Use AI* flags. A hidden column is never filled; a *Use AI* column is filled by the AI even for suppliers with rules.
+* **Settings → Document Processing → Document Types → Table Columns**: hidden, required and *Use AI* flags. A hidden column is never filled; a *Use AI* column is filled by the AI even for suppliers with rules.
 
 ## 3. Reproduce without the UI (API / MCP)
 

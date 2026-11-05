@@ -6,7 +6,7 @@ You can choose to automatically calculate the **unit price** of every purchase o
 
 ## **Activation Steps**
 
-1.  Navigate to **Settings** -> **Global Settings** -> **Document Types**.
+1.  Navigate to **Settings** -> **Document Processing** -> **Document Types**.
 
 2.  Select the desired document type and click on **More Settings**.
 

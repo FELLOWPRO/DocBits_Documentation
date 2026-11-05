@@ -2,7 +2,7 @@
 
 Table columns define which columns the line-item table of a document type has: what DocBits extracts into each column, what the user sees on the validation screen, and what is sent to the ERP on export.
 
-**Where:** Settings → Global Settings → Document Types → Table Columns
+**Where:** Settings → Document Processing → Document Types → Table Columns
 
 <figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-en-20261104.png" alt="Current Use AI dropdown with Default, Yes and No. No option was changed. Title cells are hidden for privacy."><figcaption><p>Current Use AI dropdown with Default, Yes and No. No option was changed. Title cells are hidden for privacy.</p></figcaption></figure>
 

@@ -26,7 +26,7 @@ The origin is still available — as one condition among many. A rule can just a
 
 Rule-based layouts are switched on **per document type** by an **organisation administrator**.
 
-1. Go to **Settings → Global Settings → Document Types**.
+1. Go to **Settings → Document Processing → Document Types**.
 2. Click the **settings** (gear) icon on the document type card.
 3. Open **Manage Layouts** and turn the toggle on.
 

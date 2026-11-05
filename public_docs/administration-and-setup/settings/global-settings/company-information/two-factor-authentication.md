@@ -6,11 +6,11 @@ As an organisation administrator you can **require every member to use two-facto
 
 Single sign-on (SSO) logins — Google, Microsoft, SAML — are **exempt**: their identity provider already enforces its own MFA, so the requirement only affects password logins.
 
-This setting lives in **Settings → Global Settings → Company Information → Two-factor authentication** and is available to organisation administrators only.
+This setting lives in **Settings → Organization & Access → Company Information → Two-factor authentication** and is available to organisation administrators only.
 
 ## Require MFA for your organisation
 
-1. Go to **Settings → Global Settings → Company Information**.
+1. Go to **Settings → Organization & Access → Company Information**.
 2. Open the **Two-factor authentication** section.
 3. Turn on **Require two-factor authentication for all members** and click **Save**.
 

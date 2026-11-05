@@ -91,7 +91,7 @@ Only one of the two switches can be active at a time; enabling one disables the 
 {% hint style="info" %}
 **Prerequisites for a working table extraction**
 
-* The document type has **table columns** (Settings → Global Settings → Document Types → [Table Columns](../../global-settings/document-types/table-columns/README.md)). Without columns there is nothing to extract into.
+* The document type has **table columns** (Settings → Document Processing → Document Types → [Table Columns](../../global-settings/document-types/table-columns/README.md)). Without columns there is nothing to extract into.
 * **Table Extraction** or **AI Table Extraction** is switched on below, for the whole organization.
 * The document has readable text: OCR ran, or E-Text is used for born-digital PDFs ([OCR Settings](../ocr-settings.md)).
 * Training and AI models are **per supplier**. A trained table applies only to documents of the supplier it was trained on.

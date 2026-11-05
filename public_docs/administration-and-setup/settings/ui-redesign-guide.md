@@ -29,7 +29,7 @@ Page positions inside each group are arranged with the most-used pages near the 
 
 ## Long settings pages — anchor navigation
 
-Settings pages that contain many sections (for example Global Settings or a Document Type configuration) show a list of anchor links in the page header. Click an anchor to jump to that section. The URL updates as you scroll, so the link to a specific section can be copied or bookmarked.
+Settings pages that contain many sections (for example the settings overview or a Document Type configuration) show a list of anchor links in the page header. Click an anchor to jump to that section. The URL updates as you scroll, so the link to a specific section can be copied or bookmarked.
 
 ## Finding documentation while you work — help icons
 

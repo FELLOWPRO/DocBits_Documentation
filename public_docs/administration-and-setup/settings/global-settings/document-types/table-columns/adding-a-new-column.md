@@ -10,7 +10,7 @@ Add a column when a value has to be captured per line item that the default colu
 
 ## Steps
 
-1. Open **Settings → Global Settings → Document Types → Table Columns**.
+1. Open **Settings → Document Processing → Document Types → Table Columns**.
 2. Click **Add new table column**.
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Add new table column dialog with Title, Is column required, Select column type and Select Table"><figcaption><p>Add new table column</p></figcaption></figure>

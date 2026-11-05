@@ -4,7 +4,7 @@ The checkbox flags control required values, editability and visibility. Use AI i
 
 Everything except the title is changed directly in the list; there is no edit dialog.
 
-**Where:** Settings → Global Settings → Document Types → Table Columns
+**Where:** Settings → Document Processing → Document Types → Table Columns
 
 ## Switching a flag
 

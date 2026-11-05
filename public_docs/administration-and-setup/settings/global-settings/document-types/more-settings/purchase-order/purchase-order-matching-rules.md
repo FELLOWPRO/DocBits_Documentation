@@ -22,7 +22,7 @@ This configuration page is used to define and manage the rules that determine _h
 
 ## How to Access
 
-1. Navigate to **Settings** → **Global Settings** → **Document Types**, select the document type and click **More Settings**.
+1. Navigate to **Settings** → **Document Processing** → **Document Types**, select the document type and click **More Settings**.
 2. In the **Purchase Order** card switch **PO match server side** on.
 3. Click **Configure PO Matching Rules** next to the switch.
 

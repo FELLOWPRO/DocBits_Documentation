@@ -53,7 +53,7 @@ Transformation rules replace most of the small scripts organisations used to wri
 
 Transformation rules are switched on **per document type** by an **organisation administrator**.
 
-1. Go to **Settings → Global Settings → Document Types**.
+1. Go to **Settings → Document Processing → Document Types**.
 2. Click the **settings** (gear) icon on the document type card.
 3. Open **Transformation Rules** and turn the toggle on. Click **Manage transformation rules** to open the list.
 

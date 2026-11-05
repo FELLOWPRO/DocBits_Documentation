@@ -14,7 +14,7 @@ Access Control settings only apply if the feature is **enabled**.
 
 Ensure the user is correctly assigned to the appropriate group(s):
 
-* Navigate to: `Settings` > `Global Settings` > `Groups, Users and Permissions`.
+* Navigate to: `Settings` > `Organization & Access` > `Groups and Permissions`.
 * Select **Groups and Permissions**.
 * Confirm the user is listed under the expected group.
 * If the group uses specific access control, missing group assignment will block access to documents and actions.
@@ -42,7 +42,7 @@ Access can also be restricted at the **field level**, which may block editing or
 
 This global setting limits document visibility:
 
-* Navigate to: `Settings` > `Global Settings` > `Groups, Users and Permissions`.
+* Navigate to: `Settings` > `Organization & Access` > `Groups and Permissions`.
 * If **Only Assigned Documents** is **enabled**, users can only see documents explicitly assigned to them or their group.
 * If users can’t see expected documents:
   * Check document assignments.

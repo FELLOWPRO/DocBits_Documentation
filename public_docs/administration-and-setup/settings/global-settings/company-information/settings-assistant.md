@@ -16,7 +16,7 @@ The assistant is **off by default**. This page shows where to turn it on and how
 
 ## Turn it on
 
-1. Go to **Settings → Global Settings → Company Information**. The page header shows **Company Settings**.
+1. Go to **Settings → Organization & Access → Company Information**. The page header shows **Company Settings**.
 2. Open the **Assistants** section.
 3. Turn on **Enable the settings assistant**.
 

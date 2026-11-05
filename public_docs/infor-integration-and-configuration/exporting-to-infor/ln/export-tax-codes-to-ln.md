@@ -40,7 +40,7 @@ This guide will walk you through the setup process to ensure tax codes are corre
 
 ### **Step 2: Add Fields in DocBits**
 
-1.  Navigate to **Settings** -> **Global Settings** -> **Document Types**.
+1.  Navigate to **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-en.png" alt="Document types: select the fields for the relevant type. No switches were changed."><figcaption><p>Document types: select the fields for the relevant type. No switches were changed.</p></figcaption></figure>
 2.  Choose the **Fields** menu corresponding to the Document Type where you wish to add the fields.
@@ -62,7 +62,7 @@ This guide will walk you through the setup process to ensure tax codes are corre
 
 ### **Step 3: Edit Layout**
 
-1.  Go to **Settings** -> **Global Settings** -> **Document Types**.
+1.  Go to **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-en.png" alt="Document types: select the fields for the relevant type. No switches were changed."><figcaption><p>Document types: select the fields for the relevant type. No switches were changed.</p></figcaption></figure>
 2.  Open the **Edit Layout** menu for the Document Type you want to edit.
@@ -130,7 +130,7 @@ After uploading a new document into DocBits with the correct document settings s
 
 ### **Step 2: Add Fields in DocBits**
 
-1.  Navigate to **Settings** -> **Global Settings** -> **Document Types**.
+1.  Navigate to **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-en.png" alt="Document types: select the fields for the relevant type. No switches were changed."><figcaption><p>Document types: select the fields for the relevant type. No switches were changed.</p></figcaption></figure>
 2.  Choose the **Fields** menu corresponding to the Document Type where you wish to add the fields.
@@ -152,7 +152,7 @@ After uploading a new document into DocBits with the correct document settings s
 
 ### **Step 3: Edit Layout**
 
-1.  Go to **Settings** -> **Global Settings** -> **Document Types**.
+1.  Go to **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-en.png" alt="Document types: select the fields for the relevant type. No switches were changed."><figcaption><p>Document types: select the fields for the relevant type. No switches were changed.</p></figcaption></figure>
 2.  Open the **Edit Layout** menu for the Document Type you want to edit.

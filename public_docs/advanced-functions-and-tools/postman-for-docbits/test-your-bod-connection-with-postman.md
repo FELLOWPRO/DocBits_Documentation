@@ -8,7 +8,7 @@ This page explains how to verify the successful processing of your BOD (Business
 
 ### Retrieving Your API Key
 
-1.  Go to **Settings → Global Settings → Integration & SSO**.
+1.  Go to **Settings → System & Administration → Integration & SSO**.
 
     <figure><img src="../../.gitbook/assets/test-bod-connection-integration-sso-20261014.png" alt="The API Keys table on the Integration &amp; SSO settings page, showing each key's masked prefix, name, expiry, last use, status, copy icon and three-dot Actions menu."><figcaption><p>The <strong>API Keys</strong> table on the <strong>Integration &amp; SSO</strong> page. Each row shows the key's masked prefix, name, expiry, last use and status.</p></figcaption></figure>
 2.  You can either manually copy your **API key** or click the copy button to copy it to your clipboard.

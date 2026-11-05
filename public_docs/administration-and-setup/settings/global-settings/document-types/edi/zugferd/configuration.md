@@ -21,7 +21,7 @@ The ZUGFeRD standard is always active by default, but you can make modifications
 
 ### **Steps to Modify ZUGFeRD Settings:**
 
-1. Navigate to **Settings → Global Settings → Document Types → Invoice**.
+1. Navigate to **Settings → Document Processing → Document Types → Invoice**.
 2. Click on **E-Doc**.\\
 3. A list of all available e-docs will appear.
 4. Locate the **ZUGFeRD** version you want to modify.\\
@@ -67,7 +67,7 @@ The **Extraction Paths Configuration** is used to extract data and populate fiel
 2. Create a new draft by clicking the **pencil icon**.
 3. Select the newly created draft.
 4. Create a new field or modify an existing one.
-5. The left side represents the **DocBits field ID**, which can be found in the **Settings → Global Settings → Document Types → Invoice → Fields**.\\
+5. The left side represents the **DocBits field ID**, which can be found in the **Settings → Document Processing → Document Types → Invoice → Fields**.\\
 6. The right side represents the **path to the field** created in the Transformation.
 7. Click **Save**.
 

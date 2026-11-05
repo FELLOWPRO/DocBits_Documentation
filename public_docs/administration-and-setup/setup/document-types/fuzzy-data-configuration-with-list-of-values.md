@@ -10,7 +10,7 @@ Each document type has its own List of Values (LoV) configurations, which must b
 
 ### To configure List of Values, navigate to:
 
-Settings → Global Settings → Document Types → Invoice → Fields → Master Data Settings → LOV Master Data
+Settings → Document Processing → Document Types → Invoice → Fields → Master Data Settings → LOV Master Data
 
 ### **Creating a New List of Values Configuration**
 

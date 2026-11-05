@@ -35,7 +35,7 @@ Zawarte są następujące szczegóły:
 * **Data żądania**: Data i godzina, kiedy eksport został zainicjowany.
 * **Data zakończenia**: Data i godzina, kiedy eksport został zakończony.
 * **Format**: Format pliku użyty do eksportu (CSV, XLSX).
-* **Użyte filtry**: Maksymalnie trzy aktywne filtry są widoczne jako chipy w jednym wierszu. Jeśli zastosowano więcej filtrów, chip **+N** pokazuje, ile ich jeszcze jest. Wskaż komórkę filtrów, aby zobaczyć pełną listę w podpowiedzi.
+* **Użyte filtry**: Maksymalnie trzy aktywne filtry są widoczne jako chipy w jednym wierszu. Jeśli zastosowano więcej filtrów, chip **+N** pokazuje, ile ich jeszcze jest. Wskaż komórkę filtrów, aby zobaczyć pełną listę w podpowiedzi. Filtry o wartości **None** są pomijane.
 
 <mark style="color:red;">**Uwaga**</mark>: Aby eksportować tabele, opcja Eksportuj dane pulpitu nawigacyjnego w sekcji [Ogólny](./#ogolny) musi być aktywna.
 

@@ -26,16 +26,16 @@ Para acessar as configurações do painel, navegue até:\
 
 No **Histórico de Exportação**, você verá uma tabela listando todas as exportações anteriores junto com informações-chave sobre cada solicitação.
 
-![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_4.png)
+![Histórico de exportação com linhas compactas e chips de filtro em uma única linha; endereços de e-mail e IDs de organização mascarados](../../../../.gitbook/assets/core-6845-export-history-compact-pt.png)
 
 Os seguintes detalhes estão incluídos:
 
 * **E-mail**: O endereço de e-mail de onde a exportação foi solicitada.
-* **Status**: O status atual da exportação (Pendente, Concluído).
+* **Status**: O status atual da exportação (Pendente, Concluído ou Com falha).
 * **Solicitado em**: A data e hora em que a exportação foi iniciada.
 * **Concluído em**: A data e hora em que a exportação foi concluída.
 * **Formato**: O formato de arquivo usado para a exportação (CSV, XLSX).
-* **Filtros Usados**: Quaisquer filtros que foram aplicados ao painel no momento da exportação.
+* **Filtros Usados**: Até três filtros ativos aparecem como chips em uma única linha. Se mais filtros foram aplicados, um chip **+N** mostra quantos há além desses. Aponte para a célula de filtros para ver a lista completa em uma dica. Os filtros com o valor **None** são omitidos.
 
 <mark style="color:red;">**Nota**</mark>: Para exportar tabelas, a opção Exportar dados do painel na seção [Em geral](./#em-geral) deve estar ativa.
 

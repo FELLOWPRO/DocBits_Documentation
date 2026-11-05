@@ -93,6 +93,7 @@
     * [Correspondance Automatique des Données de Bon de Commande](end-user-and-partner-section/end-user-section/purchase-order-matching/automatic-purchase-order-data-matching.md)
     * [Correspondance des numéros d'article du fournisseur](end-user-and-partner-section/end-user-section/purchase-order-matching/supplier-item-number-map.md)
     * [Raccourcis Clavier](end-user-and-partner-section/end-user-section/purchase-order-matching/keyboard-shortcuts.md)
+  * [Prise de commandes](end-user-and-partner-section/end-user-section/order-intake.md)
   * [Comptabilité pour les factures de coûts et les ventes indirectes](end-user-and-partner-section/end-user-section/accounting-for-cost-invoice-and-indirect-sales.md)
   * [Comment importer des documents](end-user-and-partner-section/end-user-section/how-to-import-documents/README.md)
     * [Import FTP et SFTP](end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md)

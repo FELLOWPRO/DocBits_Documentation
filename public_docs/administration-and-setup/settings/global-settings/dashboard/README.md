@@ -26,16 +26,16 @@ Pour accéder aux paramètres du tableau de bord, naviguez vers :\
 
 Dans l'**Historique des exportations**, vous verrez un tableau répertoriant toutes les exportations passées avec des informations clés sur chaque demande.
 
-![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_4.png)
+![Historique des exportations avec des lignes compactes et des pastilles de filtre sur une seule ligne ; adresses e-mail et identifiants d'organisation masqués](../../../../.gitbook/assets/core-6845-export-history-compact-fr.png)
 
 Les détails suivants sont inclus :
 
 * **E-mail** : L'adresse e-mail à partir de laquelle l'exportation a été demandée.
-* **Statut** : Le statut actuel de l'exportation (En attente, Terminé).
+* **Statut** : Le statut actuel de l'exportation (En attente, Terminé ou Échoué).
 * **Demandé le** : La date et l'heure auxquelles l'exportation a été initiée.
 * **Terminé le** : La date et l'heure auxquelles l'exportation a été complétée.
 * **Format** : Le format de fichier utilisé pour l'exportation (CSV, XLSX).
-* **Filtres utilisés** : Tous les filtres qui ont été appliqués au tableau de bord au moment de l'exportation.
+* **Filtres utilisés** : Jusqu'à trois filtres actifs apparaissent sous forme de pastilles sur une seule ligne. Si davantage de filtres ont été appliqués, une pastille **+N** indique combien il y en a en plus. Pointez la cellule des filtres pour afficher la liste complète dans une infobulle.
 
 <mark style="color:red;">**Remarque**</mark> : Pour exporter des tableaux, l'option Exporter les données du tableau de bord dans la section [Général](./#general) doit être active.
 

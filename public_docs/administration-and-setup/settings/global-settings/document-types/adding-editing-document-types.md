@@ -2,7 +2,7 @@
 
 Administratorzy mogą utworzyć niestandardowy typ dokumentu lub zmienić ustawienia istniejącego. Otwórz **Ustawienia → Przetwarzanie dokumentów → Typy dokumentów**. Strona oddziela wbudowane **Domyślne typy dokumentów** od **Niestandardowych typów dokumentów**.
 
-<figure><img src="../../../../.gitbook/assets/dbdc180-document-types-overview-pl.png" alt="Strona Typy dokumentów z kartą Faktura oraz przyciskami Aktywować, Extraction, Ustawienia i linkami do układów, pól, tabel, skryptów i szkolenia modelowego"><figcaption><p>Użyj karty typu dokumentu, aby otworzyć ustawienie, które chcesz zmienić.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document-types-overview-20261104-pl.png" alt="Strona Typy dokumentów: sekcja Domyślne typy dokumentów z kartą Faktura, która pokazuje przełączniki Aktywować i Extraction, koło zębate Więcej ustawień oraz linki Układy, Pola, Tabele, Zasady walidacji, Zasady transformacji, Skrypty, Szkolenie modelowe, E-dokument, Podtypy dokumentów i Dzienniki; pozostałe karty pokazują mniej linków."><figcaption><p>Z karty typu dokumentu otworzysz ustawienie, które chcesz zmienić. Karta Faktura ma najwięcej linków, ponieważ ma włączone zasady walidacji i transformacji.</p></figcaption></figure>
 
 ## Tworzenie niestandardowego typu dokumentu
 
@@ -28,9 +28,12 @@ Znajdź kartę typu w sekcji **Domyślne typy dokumentów** lub **Niestandardowe
 | **Układy** | Otwiera układ walidacji. Zobacz [Nawigacja w Menedżerze Układów](layout-manager/navigating-the-layout-manager.md). |
 | **Pola** | Otwiera konfigurację pól. Zobacz [Dodawanie i Edytowanie Pól](fields/adding-and-editing-fields.md). |
 | **Tabele** | Otwiera kolumny tabeli dla tego typu dokumentu. |
+| **Zasady walidacji** | Otwiera [niestandardowe reguły walidacji](custom-validation-rules.md) tego typu dokumentu. Widoczne, gdy menedżer reguł jest dostępny. |
+| **Zasady transformacji** | Otwiera [zasady transformacji](transformation-rules.md) tego typu dokumentu. Widoczne, gdy menedżer reguł jest dostępny. |
 | **Skrypty** | Otwiera skrypty przetwarzania, gdy ta funkcja jest dostępna. |
 | **Szkolenie modelowe** | Otwiera dane treningowe i opcje modelu. |
 | **E-dokument** | Otwiera ustawienia dokumentów elektronicznych, jeśli są dostępne. Zobacz [Dokumenty elektroniczne](edi/README.md). |
 | **Podtypy dokumentów** | Otwiera ustawienia podtypów; zobacz [Podtypy Dokumentów](document-sub-types.md). |
+| **Dzienniki** | Otwiera dzienniki wykonywania reguł tego typu dokumentu, jeden wiersz na ocenioną regułę; zobacz [Niestandardowe reguły walidacji](custom-validation-rules.md). |
 
 Linki widoczne na karcie zależą od włączonych funkcji organizacji i od typu dokumentu. Otwórz odpowiednią sekcję, wprowadź tam zamierzoną zmianę i sprawdź przykładowy dokument w widoku walidacji, zanim użyjesz zaktualizowanego typu w normalnym przetwarzaniu.

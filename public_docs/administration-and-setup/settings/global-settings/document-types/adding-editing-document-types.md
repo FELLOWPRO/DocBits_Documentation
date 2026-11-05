@@ -2,7 +2,7 @@
 
 Administradores podem criar um tipo de documento personalizado ou alterar as configurações de um existente. Abra **Configurações → Processamento de Documentos → Tipos de documentos**. A página separa os **Tipos de documento padrão** integrados dos **Tipos de documentos personalizados**.
 
-<figure><img src="../../../../.gitbook/assets/dbdc180-document-types-overview-pt.png" alt="Página Tipos de documentos com o cartão Fatura e os controles Ativar, Extraction, Configurações e links para Layouts, Campos, Tabelas, Roteiros e Treinamento de modelo"><figcaption><p>Use o cartão de um tipo de documento para abrir a configuração que deseja alterar.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document-types-overview-20261104-pt.png" alt="A página Tipos de documento: a secção Tipos de documento padrão com o cartão Fatura, que mostra os interruptores Ativar e Extraction, a engrenagem Mais Configurações e as ligações Layouts, Campos, Tabelas, Regras de Validação, Regras de Transformação, Roteiros, Treinamento de modelo, E-Doc, Subtipos de documentos e Registros; os outros cartões mostram menos ligações."><figcaption><p>Abra no cartão de um tipo de documento a configuração que pretende alterar. O cartão Fatura oferece mais ligações porque tem as regras de validação e de transformação ativas.</p></figcaption></figure>
 
 ## Criar um tipo de documento personalizado
 
@@ -28,9 +28,12 @@ Encontre o cartão do tipo em **Tipos de documento padrão** ou **Tipos de docum
 | **Layouts** | Abre o layout de validação. Consulte [Navegando no Construtor de Layout](layout-manager/navigating-the-layout-manager.md). |
 | **Campos** | Abre a configuração de campos. Consulte [Adicionando e Editando Campos](fields/adding-and-editing-fields.md). |
 | **Tabelas** | Abre as colunas de tabela deste tipo de documento. |
+| **Regras de Validação** | Abre as [regras de validação personalizadas](custom-validation-rules.md) deste tipo de documento. Exibido quando o gestor de regras está disponível. |
+| **Regras de Transformação** | Abre as [regras de transformação](transformation-rules.md) deste tipo de documento. Exibido quando o gestor de regras está disponível. |
 | **Roteiros** | Abre os scripts de processamento quando esse recurso está disponível. |
 | **Treinamento de modelo** | Abre os dados de treinamento e as opções do modelo. |
 | **E-Doc** | Abre as configurações de documentos eletrônicos quando disponíveis. Consulte [e-docs](edi/README.md). |
 | **Subtipos de documentos** | Abre as configurações de subtipos; consulte [Tipos de Documentos Secundários](document-sub-types.md). |
+| **Registros** | Abre os registos de execução de regras deste tipo de documento, uma linha por regra avaliada; consulte [Regras de Validação Personalizadas](custom-validation-rules.md). |
 
 Os links exibidos em um cartão dependem dos recursos habilitados da organização e do tipo de documento. Abra a seção relevante, faça a alteração desejada nela e verifique um documento de exemplo na visualização de validação antes de usar o tipo atualizado no processamento normal.

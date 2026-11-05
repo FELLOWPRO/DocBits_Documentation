@@ -35,7 +35,7 @@ Die folgenden Details sind enthalten:
 * **Angefordert am**: Das Datum und die Uhrzeit, zu der der Export initiiert wurde.
 * **Abgeschlossen am**: Das Datum und die Uhrzeit, zu der der Export abgeschlossen wurde.
 * **Format**: Das für den Export verwendete Dateiformat (CSV, XLSX).
-* **Verwendete Filter**: Bis zu drei aktive Filter erscheinen als Chips in einer Zeile. Wurden mehr Filter angewendet, zeigt ein **+N**-Chip, wie viele weitere es sind. Zeigen Sie auf die Filterzelle, um die vollständige Liste in einem Tooltip zu sehen.
+* **Verwendete Filter**: Bis zu drei aktive Filter erscheinen als Chips in einer Zeile. Wurden mehr Filter angewendet, zeigt ein **+N**-Chip, wie viele weitere es sind. Zeigen Sie auf die Filterzelle, um die vollständige Liste in einem Tooltip zu sehen. Filter mit dem Wert **None** werden nicht angezeigt.
 
 <mark style="color:red;">**Hinweis**</mark>: Um Tabellen zu exportieren, muss die Option Dashboard-Daten exportieren im [Allgemein](./#allgemein) Abschnitt aktiviert sein.
 

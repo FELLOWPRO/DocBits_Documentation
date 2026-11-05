@@ -1,5 +1,9 @@
 # Voorbeelden: prijs en aantal
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Videohoofdstuk (controleversie):** [Een document volgen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/nl.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## Volledig voorbeeld: correcte extractie, afwijkende Infor-gegevens
 
 Illustratief geval: factuur **10 stuks × €10 = €100**, correct uitgelezen. Geïmporteerde inkooporder **10 × €9 = €90**. Neem aan dat de actieve regels dit prijsverschil blokkeren.

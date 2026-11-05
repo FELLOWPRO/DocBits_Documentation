@@ -35,7 +35,7 @@ Les détails suivants sont inclus :
 * **Demandé le** : La date et l'heure auxquelles l'exportation a été initiée.
 * **Terminé le** : La date et l'heure auxquelles l'exportation a été complétée.
 * **Format** : Le format de fichier utilisé pour l'exportation (CSV, XLSX).
-* **Filtres utilisés** : Jusqu'à trois filtres actifs apparaissent sous forme de pastilles sur une seule ligne. Si davantage de filtres ont été appliqués, une pastille **+N** indique combien il y en a en plus. Pointez la cellule des filtres pour afficher la liste complète dans une infobulle.
+* **Filtres utilisés** : Jusqu'à trois filtres actifs apparaissent sous forme de pastilles sur une seule ligne. Si davantage de filtres ont été appliqués, une pastille **+N** indique combien il y en a en plus. Pointez la cellule des filtres pour afficher la liste complète dans une infobulle. Les filtres dont la valeur est **None** ne sont pas affichés.
 
 <mark style="color:red;">**Remarque**</mark> : Pour exporter des tableaux, l'option Exporter les données du tableau de bord dans la section [Général](./#general) doit être active.
 

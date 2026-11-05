@@ -70,12 +70,13 @@ parameters it needs. You can change every step afterwards.
 ### Upload document and wait until processed
 
 Use this block when a later step needs the document that the test has just uploaded. It recognises the new document
-by itself, not by the top row of the list, so an older document is never picked by mistake. It then reads the
-document ID from the page address and waits until the document reaches the expected status
-(default *Ready for validation*, up to 10 minutes; it stops at once if the document gets the status *Error*).
+by itself, not by the top row of the list, so an older document is never picked by mistake. It then reads
+`document_id` from **Field value → Validation header**, remembers it for the status check and waits until the
+document reaches the expected status (default *Ready for validation*, up to 10 minutes; it stops at once if the
+document gets the status *Error*).
 It adds the input values **fixture** (the test file) and **expected_status**, and raises the time of the whole test to at least 15 minutes.
 
-<figure><img src="../../../../.gitbook/assets/testing-24-upload-and-wait.png" alt="Steps of the block Upload document and wait until processed"><figcaption><p>Steps of the block Upload document and wait until processed</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/testing-upload-and-wait-validation-header-20261106.png" alt="Steps of the block Upload document and wait until processed, with document_id read from the validation header"><figcaption><p>Steps of the block Upload document and wait until processed</p></figcaption></figure>
 
 {% hint style="info" %}
 **Where uploads go:** if your organisation has sub-organisations and the dashboard shows all of them, the upload

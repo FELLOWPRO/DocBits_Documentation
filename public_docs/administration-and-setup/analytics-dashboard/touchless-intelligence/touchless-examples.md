@@ -1,5 +1,9 @@
 # 示例：价格与数量
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**视频章节（审核版）:** [跟踪文档](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## 完整示例：提取正确，Infor 数据不同
 
 说明性案例：发票 **10 件 × 10 € = 100 €** ，提取正确；导入订单 **10 × 9 € = 90 €** 。假设有效规则会阻止该差异。

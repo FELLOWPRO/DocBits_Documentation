@@ -1,5 +1,9 @@
 # 变更提案和报告
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**视频章节（审核版）:** [建议与历史记录](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.html#chapter=10).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 推荐内容可能附带一个 **变更提案** ，即一项有助于改进的设置变更。管理员分四个步骤处理：
 
 1. **预览** ：显示变更内容（当前值 → 提议值）以及 DocBits 的预期结果。不会保存任何内容。只有查看预览后，才能 **应用** 。

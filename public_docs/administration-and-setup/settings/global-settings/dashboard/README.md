@@ -26,16 +26,16 @@ Aby uzyskać dostęp do ustawień panelu, przejdź do:\
 
 W **Historii eksportu** zobaczysz tabelę z listą wszystkich wcześniejszych eksportów wraz z kluczowymi informacjami o każdym żądaniu.
 
-![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_4.png)
+![Historia eksportu ze zwartymi wierszami i chipami filtrów w jednym wierszu; adresy e-mail i identyfikatory organizacji zamaskowane](../../../../.gitbook/assets/core-6845-export-history-compact-pl.png)
 
 Zawarte są następujące szczegóły:
 
 * **E-mail**: Adres e-mail, z którego żądano eksportu.
-* **Status**: Bieżący status eksportu (Oczekujące, Zakończone).
+* **Status**: Bieżący status eksportu (Oczekujące, Zakończone lub Niepowodzenie).
 * **Data żądania**: Data i godzina, kiedy eksport został zainicjowany.
 * **Data zakończenia**: Data i godzina, kiedy eksport został zakończony.
 * **Format**: Format pliku użyty do eksportu (CSV, XLSX).
-* **Użyte filtry**: Jakiekolwiek filtry, które były zastosowane do panelu w momencie eksportu.
+* **Użyte filtry**: Maksymalnie trzy aktywne filtry są widoczne jako chipy w jednym wierszu. Jeśli zastosowano więcej filtrów, chip **+N** pokazuje, ile ich jeszcze jest. Wskaż komórkę filtrów, aby zobaczyć pełną listę w podpowiedzi. Filtry o wartości **None** są pomijane.
 
 <mark style="color:red;">**Uwaga**</mark>: Aby eksportować tabele, opcja Eksportuj dane pulpitu nawigacyjnego w sekcji [Ogólny](./#ogolny) musi być aktywna.
 

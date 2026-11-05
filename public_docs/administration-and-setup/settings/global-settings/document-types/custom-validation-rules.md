@@ -12,7 +12,7 @@ A rule answers three questions:
 2. **When** does the rule apply? Always, or only for documents (or rows) that meet a condition — see [Rule Conditions (Applies when)](rule-conditions-applies-when.md).
 3. **What** must be true? A field must be filled, match a format, lie in a range, match a list, compare correctly with another field, or add up.
 
-When the check fails, DocBits marks the field or cell on the **validation screen** and shows your message — exactly like a built-in check. With the severity **Error** the document cannot be validated until the problem is fixed; with **Warning** the user only sees a hint.
+When the check fails, DocBits marks the field or cell on the **validation screen** and shows your message — exactly like a built-in check. With the severity **Error** the document cannot be validated until the problem is fixed. With **Warning** the document is held as well, but the user can clear it by acknowledging the message on the field, without changing the value — see [Acknowledge a warning on the validation screen](custom-validation-rules.md#acknowledge-a-warning-on-the-validation-screen).
 
 Rules are defined per **document type** and run on every document of that type: during processing and every time the document is saved.
 
@@ -26,7 +26,7 @@ Rules are defined per **document type** and run on every document of that type: 
 | The due date must not be before the invoice date             | wrong payment runs                     | **Compare fields**: Due Date on or after Invoice Date                                             |
 | The lines must add up to the net amount                      | only the fixed built-in check          | **Formula** `sum(row.NET_AMOUNT) == header.total_net_amount` with your own tolerance              |
 | Only currencies your ERP knows are allowed                   | export errors in the ERP               | **List of Values** on Currency                                                                    |
-| Tell users about unusual values without blocking them        | not possible                           | any rule with the severity **Warning**                                                            |
+| Flag unusual values without forcing a correction             | a script, or users have to remember it | any rule with the severity **Warning** — the user confirms the value with **Acknowledge**         |
 
 ## Enable custom validation rules
 
@@ -76,7 +76,7 @@ Click **New rule**. The builder has three steps. **Test rule** and **Save** are 
 | Setting                            | What it does                                                                                                                                                                      |
 | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Rule level**                     | What the rule looks at and where the error is shown — see [Rule levels](custom-validation-rules.md#rule-levels).                                                                  |
-| **Severity**                       | **Error** marks the field invalid and blocks validation. **Warning** shows the message but never blocks.                                                                          |
+| **Severity**                       | **Error** marks the field invalid and blocks validation until the value is corrected. **Warning** also holds the document, but the user can clear it with **Acknowledge** on the validation screen without changing the value. |
 | **Rule Name**                      | Shown in the list, in the logs and to administrators. Make it describe the rule ("Supplier tax ID required for German invoices").                                                 |
 | **Rule key**                       | A technical key generated from the name. It stays the same when you rename the rule later. Click the pencil to choose your own key before the first save; after that it is fixed. |
 | **Description**                    | Optional explanation for other administrators.                                                                                                                                    |
@@ -212,8 +212,20 @@ Test every new rule on at least one document that should fail, one that should p
 * **On every save** of the document on the validation screen.
 * **After a rule change**, existing documents are **not** re-checked all at once. Each document is re-checked with the new rules the next time it is saved or reprocessed. Documents that are already exported are not affected.
 * Rules run in order of priority (then by key). A field shows **one** error: if two rules fail on the same field, the first one wins; later rules do not overwrite it.
-* Warnings are collected separately and never hide an error.
+* Warnings are collected separately and never hide an error: a field that also fails a hard rule shows only the error, and there is nothing to acknowledge there.
 * If a rule cannot be evaluated — for example a division by zero in a formula — it is skipped. A broken rule never marks a document invalid by mistake.
+
+## Acknowledge a warning on the validation screen
+
+A failing rule with the severity **Warning** holds the document the same way an error does: until the field is acknowledged, the document cannot be validated. The difference is what the user has to do.
+
+On the validation screen the rule's message appears under the field, together with the button **Acknowledge**. One click confirms every warning on that field without changing its value. The message is then replaced by the note **Acknowledged. Changing the value asks again.**
+
+The confirmation belongs to the value it was given for. If the user edits the value, re-extracts it or the field is re-checked with a different result, the warning comes back and has to be acknowledged again. A field that shows a hard error instead is not acknowledgeable — correct the value there.
+
+On a read-only document the button is not shown, so a warning there has to be resolved by someone who can edit the field.
+
+The **Acknowledge** button is offered for header fields.
 
 ## Logs
 
@@ -247,13 +259,13 @@ Copy these rules as a starting point. Field and column keys are those of the sta
 
 **8. No invoices dated in the future** Header field · Error · _Invoice Date_ · always · **Compare fields** Invoice Date _on or before (≤)_ today.
 
-**9. Only approved currencies (hint only)** Header field · **Warning** · _Currency_ · always · **List of Values** _approved\_currencies_ · Code `VALUE_NOT_ALLOWED`.
+**9. Only approved currencies (confirm instead of correct)** Header field · **Warning** · _Currency_ · always · **List of Values** _approved\_currencies_ · Code `VALUE_NOT_ALLOWED`. The user has to acknowledge the warning before the document can be validated.
 
 **10. Purchase order required above 5,000** Header field · Error · _Purchase Order_ · Applies when _Total Amount_ greater than _5000_ · **Required**.
 
 ## Best practices
 
-* **Start as a warning.** Save a new rule with the severity **Warning**, watch it for a few days (Test rule, logs), then switch it to **Error**.
+* **Start as a warning.** Save a new rule with the severity **Warning**, watch it for a few days (Test rule, logs), then switch it to **Error**. Users are not forced to correct the value, but they are stopped until they acknowledge each hit.
 * **One rule, one message.** Several small rules with clear messages are easier to understand than one big formula.
 * **Use Applies when instead of copies.** One rule with a condition is better than five copies for five suppliers.
 * **Be tolerant with money.** Always give amount formulas a tolerance.

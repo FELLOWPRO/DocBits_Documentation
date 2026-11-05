@@ -56,7 +56,11 @@ The video shows a workflow in which the reviewed invoice is submitted for approv
 
 A red border or warning icon calls attention to a field. Read its information message to find out whether a required value is missing, extraction needs review, or a configured check failed. A visible value alone does not prove that the field is valid.
 
-Compare supplier, invoice number, dates, amounts and currency with the original. For totals, check the relevant header values and any line items. Correct the cause described in the message before continuing. The checks depend on the document type and your organization's configuration; see [Automatic Checks](automatic-checks-on-the-validation-screen.md).
+Compare supplier, invoice number, dates, amounts and currency with the original. For totals, check the relevant header values and any line items. Correct the cause described in the message before continuing.
+
+Some messages come from a **Warning** rule. They do not go away by themselves: select **Acknowledge** below the field to confirm the value, and the message is replaced by **Acknowledged. Changing the value asks again.** If you edit the value afterwards, the warning returns and you have to acknowledge it again. A field that shows a hard error has to be corrected instead — there is no button for it.
+
+The checks depend on the document type and your organization's configuration; see [Automatic Checks](automatic-checks-on-the-validation-screen.md).
 
 ## Use the Assistant
 

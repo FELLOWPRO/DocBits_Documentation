@@ -2,7 +2,7 @@
 
 管理员可以创建自定义文档类型，也可以更改现有文档类型的设置。打开 **设置 → 文档处理 → 文档类型**。此页面将内置的 **默认文档类型** 与 **自定义文档类型** 分开展示。
 
-<figure><img src="../../../../.gitbook/assets/site-extra-document-types-zh.png" alt="中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。"><figcaption><p>中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document-types-overview-20261104-zh.png" alt="“文档类型”页面：默认文档类型分区及发票卡片，卡片上有“激活”和“萃取”开关、更多设置齿轮，以及布局、字段、表格、验证规则、转换规则、脚本、模型训练、电子文档、文档子类型和日志链接；其他卡片的链接较少。"><figcaption><p>通过文档类型卡片打开要修改的设置。发票卡片提供的链接最多，因为已为其启用验证规则和转换规则。</p></figcaption></figure>
 
 ## 创建自定义文档类型
 
@@ -28,9 +28,12 @@
 | **布局**            | 打开验证布局。请参阅[导航布局管理器](layout-manager/navigating-the-layout-manager.md)。                                                                          |
 | **字段**             | 打开字段配置。请参阅[添加和编辑字段](fields/adding-and-editing-fields.md)。                                                                                     |
 | **Tables**             | 打开此文档类型的表格列设置。                                                                                                                                   |
+| **验证规则** | 打开此文档类型的[自定义验证规则](custom-validation-rules.md)。规则管理器可用时显示。 |
+| **转换规则** | 打开此文档类型的[转换规则](transformation-rules.md)。规则管理器可用时显示。 |
 | **Scripts**            | 如果该功能可用，则打开处理脚本。                                                                                                                               |
 | **Model Training**     | 打开训练数据和模型选项。                                                                                                                                       |
 | **E-Doc**              | 如果可用，则打开电子文档设置。请参阅 [E-Doc 设置](edi/)。                                                                                                       |
 | **Document Sub Types**（文档子类型） | 打开子类型设置；请参阅 [文档子类型](document-sub-types.md)。                                                                                                   |
+| **日志** | 打开此文档类型的规则执行日志，每条被评估的规则一行；请参阅[自定义验证规则](custom-validation-rules.md)。 |
 
 卡片上显示的链接取决于组织启用的功能和文档类型。打开相关部分并进行所需更改，然后在验证视图中检查示例文档，再将更新后的类型用于常规处理。

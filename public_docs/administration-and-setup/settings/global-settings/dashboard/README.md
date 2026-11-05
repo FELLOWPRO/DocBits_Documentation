@@ -35,7 +35,7 @@ De volgende details zijn inbegrepen:
 * **Aangevraagd op**: De datum en tijd waarop de export is gestart.
 * **Voltooid op**: De datum en tijd waarop de export is voltooid.
 * **Formaat**: Het bestandsformaat dat is gebruikt voor de export (CSV, XLSX).
-* **Gebruikte filters**: Maximaal drie actieve filters verschijnen als chips op één regel. Zijn er meer filters toegepast, dan toont een **+N**-chip hoeveel extra er zijn. Wijs de filtercel aan om de volledige lijst in een tooltip te zien.
+* **Gebruikte filters**: Maximaal drie actieve filters verschijnen als chips op één regel. Zijn er meer filters toegepast, dan toont een **+N**-chip hoeveel extra er zijn. Wijs de filtercel aan om de volledige lijst in een tooltip te zien. Filters met de waarde **None** worden niet weergegeven.
 
 <mark style="color:red;">**Opmerking**</mark>: Om tabellen te exporteren, moet de optie Dashboardgegevens exporteren in de [Algemeen](./#algemeen) sectie actief zijn.
 

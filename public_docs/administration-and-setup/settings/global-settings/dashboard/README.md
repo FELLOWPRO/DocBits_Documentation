@@ -26,16 +26,16 @@ Per accedere alle impostazioni della dashboard, vai a:
 
 Nella **Cronologia Esportazioni**, vedrai una tabella che elenca tutte le esportazioni passate insieme alle informazioni chiave su ogni richiesta.
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/core-6845-export-history-compact-it.png" alt="Cronologia delle esportazioni con righe compatte e chip dei filtri su una sola riga; indirizzi e-mail e ID organizzazione oscurati"><figcaption><p>Righe compatte della cronologia esportazioni con chip dei filtri e contatori +N per i filtri aggiuntivi. In questa cattura di dev gli indirizzi e-mail e gli ID organizzazione sono oscurati.</p></figcaption></figure>
 
 Sono inclusi i seguenti dettagli:
 
 * **Email**: L'indirizzo email da cui è stata richiesta l'esportazione.
-* **Stato**: Lo stato corrente dell'esportazione (In attesa, Completata).
+* **Stato**: Lo stato corrente dell'esportazione (In attesa, Completata o Non riuscita).
 * **Richiesto il**: La data e l'ora in cui l'esportazione è stata avviata.
 * **Completato il**: La data e l'ora in cui l'esportazione è stata completata.
 * **Formato**: Il formato del file utilizzato per l'esportazione (CSV, XLSX).
-* **Filtri Usati**: Eventuali filtri applicati alla dashboard al momento dell'esportazione.
+* **Filtri Usati**: Fino a tre filtri attivi compaiono come chip su una sola riga. Se sono stati applicati altri filtri, un chip **+N** indica quanti altri ce ne sono. Passa il puntatore sulla cella dei filtri per vedere l'elenco completo in un suggerimento. I filtri con valore **None** non vengono mostrati.
 
 <mark style="color:red;">**Nota**</mark>: Per esportare le tabelle, l'opzione Esporta Dati Dashboard nella sezione [Generale](./#generale) deve essere attiva.
 

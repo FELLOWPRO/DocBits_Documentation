@@ -1,5 +1,9 @@
 # Usar o painel
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capítulo do vídeo (versão de revisão):** [Seleção e data dos dados](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pt.html#chapter=01).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### Filtros
 
 | Filtro | O que faz |

@@ -1,5 +1,9 @@
 # Explicar e melhorar Touchless com MCP
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capítulo do vídeo (versão de revisão):** [Consultar indicadores com MCP](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pt.html#chapter=12).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 Use ferramentas DocBits MCP realmente oferecidas. Separe leitura de escrita. Verifique organização, função, tipo, período e data; não invente provas.
 
 <figure><img src="../.gitbook/assets/touchless-owned-po-price-pt.png" alt="Vista portuguesa real de encomenda fictícia em Dev: 10 × 9 = 90. Comparação de origem para diagnóstico MCP, não captura de cliente MCP nem prova de extração/processamento bem-sucedido."><figcaption><p>Vista portuguesa real de encomenda fictícia em Dev: 10 × 9 = 90. Comparação de origem para diagnóstico MCP, não captura de cliente MCP nem prova de extração/processamento bem-sucedido.</p></figcaption></figure>

@@ -1,5 +1,9 @@
 # Métricas e cálculo
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capítulo do vídeo (versão de revisão):** [Calcular as taxas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pt.html#chapter=03).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### Extração correta e automação são medidas diferentes
 
 **O DocBits pode extrair corretamente a fatura e ainda assim haver trabalho devido a dados divergentes no Infor.** AP é a equipa humana de contas a pagar, não um assistente de IA. Compare o original com os valores anteriores às correções e depois com a cópia importada. Uma etapa verde ou confiança elevada não comprova todos os valores. Valores já corrigidos não comprovam a extração inicial.

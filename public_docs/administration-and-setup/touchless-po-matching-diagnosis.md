@@ -1,5 +1,9 @@
 # Touchless Intelligence: diagnóstico de PO Matching
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capítulo do vídeo (versão de revisão):** [Seguir um documento](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pt.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## Visão geral
 
 Uma fatura corretamente extraída pode parar se os dados da encomenda divergirem. Um bloqueio temporário não é um resultado final. Retoma automática pode manter Pure; correção ou reinício humano registado dá AP Assisted após sucesso.

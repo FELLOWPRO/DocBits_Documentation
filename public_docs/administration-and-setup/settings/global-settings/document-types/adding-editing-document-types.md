@@ -2,7 +2,7 @@
 
 Beheerders kunnen een aangepast documenttype maken of de instellingen van een bestaand type wijzigen. Open **Instellingen → Documentverwerking → Documenttypen**. De pagina maakt onderscheid tussen de ingebouwde **Standaarddocumenttypen** en **Aangepaste documenttypen**.
 
-<figure><img src="../../../../.gitbook/assets/dbdc180-document-types-overview-nl.png" alt="Pagina Documenttypen met de kaart Factuur met Activeren, Extraction, Instellingen en links naar indelingen, velden, tabellen, scripts en modeltraining"><figcaption><p>Gebruik de kaart van een documenttype om de instelling te openen die u wilt wijzigen.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document-types-overview-20261104-nl.png" alt="De pagina Documenttypen: de sectie Standaarddocumenttypen met de kaart Factuur, met de schakelaars Activeren en Extraction, het tandwiel Meer instellingen en de koppelingen Indelingen, Velden, Tabellen, Validatieregels, Transformatieregels, Scripts, Modeltraining, E-Doc, Document-subtypen en Logboeken; de andere kaarten tonen minder koppelingen."><figcaption><p>Open via de kaart van een documenttype de instelling die u wilt wijzigen. De kaart Factuur biedt de meeste koppelingen, omdat voor dit type validatie- en transformatieregels zijn ingeschakeld.</p></figcaption></figure>
 
 ## Een aangepast documenttype maken
 
@@ -28,9 +28,12 @@ Zoek de kaart van het type onder **Standaarddocumenttypen** of **Aangepaste docu
 | **Indelingen** | Opent de validatie-indeling. Zie [Navigeren in de Lay-outbouwer](layout-manager/navigating-the-layout-manager.md). |
 | **Velden** | Opent de veldconfiguratie. Zie [Velden toevoegen en bewerken](fields/adding-and-editing-fields.md). |
 | **Tabellen** | Opent de tabelkolommen van dit documenttype. |
+| **Validatieregels** | Opent de [aangepaste validatieregels](custom-validation-rules.md) van dit documenttype. Wordt getoond wanneer de regelbeheerder beschikbaar is. |
+| **Transformatieregels** | Opent de [transformatieregels](transformation-rules.md) van dit documenttype. Wordt getoond wanneer de regelbeheerder beschikbaar is. |
 | **Scripts** | Opent verwerkingsscripts wanneer die functie beschikbaar is. |
 | **Modeltraining** | Opent trainingsgegevens en modelopties. |
 | **E-Doc** | Opent de instellingen voor elektronische documenten wanneer beschikbaar. Zie [e-docs](edi/README.md). |
 | **Document-subtypen** | Opent de subtypinstellingen; zie [Document Sub Types](document-sub-types.md) (Document-subtypen). |
+| **Logboeken** | Opent de uitvoeringslogboeken van regels voor dit documenttype, één regel per geëvalueerde regel; zie [Aangepaste validatieregels](custom-validation-rules.md). |
 
 De links die op een kaart worden getoond, zijn afhankelijk van de ingeschakelde functies van de organisatie en het documenttype. Open de betreffende sectie, voer de beoogde wijziging daar door en controleer een voorbeelddocument in de validatieweergave voordat u het bijgewerkte type in de normale verwerking gebruikt.

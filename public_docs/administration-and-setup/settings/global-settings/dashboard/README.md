@@ -26,16 +26,16 @@ Para acceder a los ajustes del panel, navega a:\
 
 En el **Historial de exportaciones**, verás una tabla que lista todas las exportaciones pasadas junto con información clave sobre cada solicitud.
 
-![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_4.png)
+![Historial de exportaciones con filas compactas y chips de filtro en una sola línea; direcciones de correo e identificadores de organización enmascarados](../../../../.gitbook/assets/core-6845-export-history-compact-es.png)
 
 Los siguientes detalles están incluidos:
 
 * **Correo electrónico**: La dirección de correo electrónico desde la cual se solicitó la exportación.
-* **Estado**: El estado actual de la exportación (Pendiente, Completado).
+* **Estado**: El estado actual de la exportación (Pendiente, Completado o Fallido).
 * **Solicitado en**: La fecha y hora en que se inició la exportación.
 * **Completado en**: La fecha y hora en que se completó la exportación.
 * **Formato**: El formato de archivo utilizado para la exportación (CSV, XLSX).
-* **Filtros utilizados**: Cualquier filtro que se aplicó al panel en el momento de la exportación.
+* **Filtros utilizados**: Hasta tres filtros activos aparecen como chips en una sola línea. Si se aplicaron más filtros, un chip **+N** indica cuántos más hay. Pase el puntero sobre la celda de filtros para ver la lista completa en una información emergente. Se omiten los filtros con el valor **None**.
 
 <mark style="color:red;">**Nota**</mark>: Para exportar tablas, la opción Exportar datos del cuadro de mandos en la sección [General](./#general) debe estar activa.
 

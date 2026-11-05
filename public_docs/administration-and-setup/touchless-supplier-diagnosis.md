@@ -1,5 +1,9 @@
 # Touchless Intelligence: Diagnoza dostawcy i klastry problemów
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Rozdział filmu (wersja do oceny):** [Badanie powtarzalnych problemów](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pl.html#chapter=06).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 
 Kliknij dostawcę w kolejce, aby otworzyć stronę jego diagnozy.
 

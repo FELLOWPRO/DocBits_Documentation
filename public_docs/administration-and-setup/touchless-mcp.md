@@ -1,5 +1,9 @@
 # Wyjaśnianie i poprawa Touchless przez MCP
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Rozdział filmu (wersja do oceny):** [Odczyt wskaźników przez MCP](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pl.html#chapter=12).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 Używaj rzeczywiście oferowanych narzędzi DocBits MCP. Oddziel odczyt od zapisu. Sprawdź organizację, rolę, typ, okres i datę; nie wymyślaj brakujących dowodów.
 
 <figure><img src="../.gitbook/assets/touchless-owned-po-price-pl.png" alt="Prawdziwy polski widok fikcyjnego zamówienia na Dev: 10 × 9 = 90. To porównanie źródła do diagnozy MCP, nie zrzut klienta MCP ani dowód udanej ekstrakcji/przetwarzania."><figcaption><p>Prawdziwy polski widok fikcyjnego zamówienia na Dev: 10 × 9 = 90. To porównanie źródła do diagnozy MCP, nie zrzut klienta MCP ani dowód udanej ekstrakcji/przetwarzania.</p></figcaption></figure>

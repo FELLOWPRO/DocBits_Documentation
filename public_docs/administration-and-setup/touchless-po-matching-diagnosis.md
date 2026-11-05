@@ -1,5 +1,9 @@
 # Touchless Intelligence: Diagnoza dopasowania PO
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Rozdział filmu (wersja do oceny):** [Śledzenie dokumentu](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pl.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## Przegląd
 
 Poprawnie odczytana faktura może się zatrzymać przy rozbieżnych danych zamówienia. Tymczasowa blokada nie jest wynikiem końcowym. Automatyczne wznowienie może zachować Pure; zapisana korekta lub ręczny restart oznaczają po sukcesie AP Assisted.

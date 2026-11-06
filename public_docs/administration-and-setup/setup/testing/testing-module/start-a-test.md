@@ -53,6 +53,39 @@ O editor de entradas lembra as três formas em **Comece de fora:** **Esta págin
 
 <figure><img src="../../../../.gitbook/assets/testing-16-start-from-outside-pt.png" alt="Linha Comece de fora no editor de entradas"><figcaption><p>Linha Comece de fora no editor de entradas.</p></figcaption></figure>
 
+## Compartilhar um link de início
+
+Um link de início abre a caixa de diálogo de início de um modelo, já preenchida, para que um colega ou um pipeline de CI não precise
+escolher novamente o modelo e seus valores:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+| Parte | O que faz |
+|---|---|---|
+| **run** | O modelo que será aberto, identificado pela sua chave (a linha sob o nome do modelo na caixa de diálogo, por exemplo `default-smoke-analytics`). Obrigatório. |
+| **version** | Abre esta versão salva. Sem ela, a versão mais recente será aberta. |
+| **input** | Preenche uma entrada salva, pelo nome ou pelo ID. Os parâmetros marcados como sensíveis nunca são preenchidos. |
+| **autostart=1** | Inicia o teste assim que a página é aberta, mas somente quando o modelo apenas lê dados. Um modelo que grava dados ainda aguarda a confirmação. |
+
+Para obter o link, abra a caixa de diálogo de início de um modelo e alterne para **Comece de fora**. O bloco **Link de início**
+contém o link desse modelo, e o bloco **Playwright com link de início** contém um trecho de código que abre o link e aguarda
+o resultado.
+
+<figure><img src="../../../../.gitbook/assets/testing-start-link-dialog-pt.png" alt="Caixa de diálogo de início na visão Comece de fora com o link de início copiável e um exemplo em Playwright"><figcaption><p>A caixa de diálogo de início na visão <strong>Comece de fora</strong>: o link de início copiável e um exemplo em Playwright que o abre. Uma sessão aparece em <strong>Sessão que executa o teste</strong> quando uma aba aceita inícios a partir de fora.</p></figcaption></figure>
+
+O que acontece quando alguém abre o link:
+
+* O DocBits abre **Configurações → Testing**, aba **Modelos**, com a caixa de diálogo de início do modelo. O link só funciona para
+  quem pode abrir Configurações → Testing, pois a execução usa a aba do navegador e as permissões dessa pessoa.
+* Se o modelo, a versão ou a entrada forem desconhecidos, o DocBits mostra um erro sob as abas e não inicia nenhum teste.
+* Com `autostart=1`, um modelo que apenas lê dados é iniciado imediatamente. Em todos os outros casos, o teste aguarda que você
+  selecione **Iniciar**, e um modelo que grava dados continua exigindo confirmação.
+* Os parâmetros são removidos da barra de endereço depois de lidos, para que recarregar a página não inicie o teste uma
+  segunda vez.
+
+O **?** ao lado das abas e na caixa de diálogo de início abre a página correspondente desta documentação no idioma da sua
+interface.
+
 ## Iniciar a partir de um assistente de IA (MCP)
 
 Se o seu assistente de IA estiver conectado ao DocBits (veja [DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)

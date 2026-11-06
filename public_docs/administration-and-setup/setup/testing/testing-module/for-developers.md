@@ -63,6 +63,31 @@ const { log_id } = await res.json();
 Use o host de API da sua região (veja [DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp) para a lista de hosts).
 CSV dos registros: `GET /testing/logs/export.csv` (mesmos filtros da lista) e `GET /testing/logs/<log_id>/export.csv`.
 
+## Iniciar abrindo um link de início
+
+Se a sua automação controla um navegador no qual você já fez login, abra o link de início do modelo em vez de chamar a API:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+`run` é a chave do modelo (obrigatória), `version` fixa uma versão salva (padrão: a mais recente), `input` identifica uma entrada salva
+pelo nome ou ID, e `autostart=1` inicia um modelo que apenas lê dados sem necessidade de clique. Um modelo que
+grava dados continua exigindo confirmação, portanto a execução aguarda `testing-start-confirm`. O link só funciona em um
+navegador em que um administrador da organização tenha feito login; os cliques acontecem nessa aba.
+
+```ts
+// signed in as an organisation admin (your login helper)
+await page.goto('https://<your-environment>/settings/testing?run=default-smoke-analytics&version=1.0.0');
+const start = page.getByTestId('testing-start-confirm');
+const status = page.getByTestId('testing-run-status');
+await start.or(status).first().waitFor();
+if (await start.isVisible()) await start.click();
+await expect(status).toHaveAttribute('data-status', /(passed|failed|blocked|cancelled)$/);
+```
+
+`data-status` é `running`, `passed`, `failed`, `blocked` ou `cancelled`. `blocked` significa que uma regra interrompeu a execução
+antes da execução das etapas. Os parâmetros são removidos da URL depois de lidos, portanto recarregar a página não
+inicia o teste novamente. Copie o link na caixa de diálogo de início, em **Comece de fora → Link de início**.
+
 ## Iniciar via MCP
 
 O servidor MCP do DocBits oferece as ferramentas de Testing `testing_list_templates`, `testing_list_inputs`, `testing_start`,

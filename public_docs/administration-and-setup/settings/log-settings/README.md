@@ -32,6 +32,14 @@ At the top of the page, a banner links to the **Analytics Dashboard** for charts
 
 Results are paginated — use the controls at the bottom to navigate pages.
 
+## Log Details
+
+Select a log row to open its detail view. The summary shows the severity, timestamp, service, and log ID, with the event message below it.
+
+The **Log Details** section contains the complete event as formatted JSON. Depending on the event, this can include metadata such as the source, environment, user, resource, action, and network or client information. Fields without a value can appear as `null`.
+
+Select the copy icon at the lower right of **Log Details** to copy the complete JSON record to the clipboard. Use the back arrow next to **Activity Logging** to return to the list.
+
 ## Footer Actions
 
 | Action | Description |

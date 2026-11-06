@@ -32,7 +32,7 @@ Les règles sont définies par **type de document** et s'exécutent sur chaque d
 
 Les règles de validation personnalisées s'activent **par type de document**. Il n'existe pas de commutateur à l'échelle de l'organisation.
 
-1. Accédez à **Paramètres → Paramètres généraux → Types de documents**.
+1. Accédez à **Paramètres → Traitement des Documents → Types de documents**.
 2. Sur la carte du type de document, cliquez sur l'icône **Paramètres** (engrenage).
 3. Ouvrez la section **Règles de validation personnalisées** et activez le bouton.
 4. Cliquez sur **Gérer les règles de validation** pour ouvrir la liste des règles.
@@ -53,7 +53,7 @@ Désormais, la carte du type de document affiche aussi un lien **Règles de vali
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-fr.png" alt="Gestion des règles de validation avec les noms configurés masqués."><figcaption><p>Gestion des règles de validation avec les noms configurés masqués.</p></figcaption></figure>
 
-Chaque carte affiche le nom et la description de la règle, ainsi que les badges de son **niveau** (Header / Line / Table), de sa **gravité** (Error / Warning), du **champ** auquel l'erreur est rattachée et de sa **source**. Utilisez l'interrupteur à droite pour activer ou désactiver une règle, et le menu **⋮** pour la dupliquer ou la supprimer. Filtrez la liste par niveau (**All / Header / Line / Table**) et par état (**All / Active / Inactive**), ou effectuez une recherche.
+Chaque carte affiche le nom et la description de la règle, ainsi que les badges de son **niveau** (Header / Line / Table), de sa **gravité** (Error / Warning), du **champ** auquel l'erreur est rattachée et de sa **source**. Utilisez l'interrupteur à droite pour activer ou désactiver une règle, et le menu **⋮** pour la modifier, la dupliquer ou la supprimer. Filtrez la liste par niveau (**All / Header / Line / Table**) et par état (**All / Active / Inactive**), ou effectuez une recherche.
 
 ### Règles System default, Customized et Custom
 

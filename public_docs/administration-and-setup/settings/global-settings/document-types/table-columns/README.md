@@ -2,7 +2,7 @@
 
 Les Table Columns définissent les colonnes du tableau des lignes d'un type de document : ce que DocBits extrait dans chaque colonne, ce que l'utilisateur voit sur l'écran de validation et ce qui est envoyé à l'ERP lors de l'export.
 
-**Où :** Paramètres → Paramètres globaux → Types de documents → Colonnes du tableau
+**Où :** Paramètres → Traitement des Documents → Types de documents → Colonnes du tableau
 
 <figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-fr-20261104.png" alt="Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n&#x27;a été modifiée. Les cellules de titre sont masquées pour protéger les données."><figcaption><p>Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n&#x27;a été modifiée. Les cellules de titre sont masquées pour protéger les données.</p></figcaption></figure>
 

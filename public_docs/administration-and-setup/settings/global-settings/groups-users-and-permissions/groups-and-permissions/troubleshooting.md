@@ -14,7 +14,7 @@ Les paramètres de contrôle d'accès s'appliquent uniquement si la fonctionnali
 
 Assurez-vous que l'utilisateur est correctement affecté au(x) groupe(s) approprié(s) :
 
-* Accédez à : `Paramètres` > `Paramètres globaux` > `Groupes, utilisateurs et autorisations`.
+* Accédez à : `Paramètres` > `Organisation et Accès` > `Groupes et Autorisations`.
 * Sélectionnez **Groupes et autorisations**.
 * Confirmez que l'utilisateur est répertorié sous le groupe attendu.
 * Si le groupe utilise un contrôle d'accès spécifique, une affectation de groupe manquante bloquera l'accès aux documents et aux actions.
@@ -42,7 +42,7 @@ L'accès peut également être restreint au niveau des **champs**, ce qui peut b
 
 Ce paramètre global limite la visibilité des documents :
 
-* Accédez à : `Paramètres` > `Paramètres globaux` > `Groupes, utilisateurs et autorisations`.
+* Accédez à : `Paramètres` > `Organisation et Accès` > `Groupes et Autorisations`.
 * Si **Uniquement les documents assignés** sont **activés**, les utilisateurs ne peuvent voir que les documents qui leur sont explicitement assignés ou à leur groupe.
 * Si les utilisateurs ne peuvent pas voir les documents attendus :
   * Vérifiez les affectations de documents.

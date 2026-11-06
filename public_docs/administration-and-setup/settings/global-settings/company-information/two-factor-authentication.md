@@ -6,11 +6,11 @@ En tant qu'administrateur d'organisation, vous pouvez **exiger que chaque membre
 
 Les connexions par authentification unique (SSO) — Google, Microsoft, SAML — sont **exemptées** : leur fournisseur d'identité applique déjà sa propre MFA, de sorte que l'exigence n'affecte que les connexions par mot de passe.
 
-Ce paramètre se trouve dans **Paramètres → Paramètres globaux → Informations sur l'entreprise → Authentification à deux facteurs** et n'est accessible qu'aux administrateurs d'organisation.
+Ce paramètre se trouve dans **Paramètres → Organisation et Accès → Informations sur l'entreprise → Authentification à deux facteurs** et n'est accessible qu'aux administrateurs d'organisation.
 
 ## Exiger la MFA pour votre organisation
 
-1. Accédez à **Paramètres → Paramètres globaux → Informations sur l'entreprise**.
+1. Accédez à **Paramètres → Organisation et Accès → Informations sur l'entreprise**.
 2. Ouvrez la section **Authentification à deux facteurs**.
 3. Activez **Exiger l'authentification à deux facteurs pour tous les membres** et cliquez sur **Enregistrer**.
 

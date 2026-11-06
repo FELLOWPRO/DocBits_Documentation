@@ -20,7 +20,7 @@ Les champs d'en-tête portent leur propre badge de source à côté de la valeur
 
 * **Paramètres → Traitement des documents → Classification et extraction → Modèle d'IA** : le tableau sous le sélecteur liste chaque fournisseur disposant d'un modèle ou d'un entraînement enregistré. Un fournisseur de cette liste avec des *données d'entraînement* a des règles enregistrées ; *réinitialiser les données d'entraînement* les supprime.
 * **Paramètres → Traitement des documents → Paramètres de l'OCR** : *Utiliser l'E-Text si disponible* et *Utiliser les données IA pour les tableaux* changent le texte que l'extraction voit. Un fournisseur peut remplacer le réglage E-Text sous *Plus de paramètres* sur l'écran de validation.
-* **Paramètres → Paramètres globaux → Types de documents → Colonnes de tableau** : indicateurs Masquée, Obligatoire et *Utiliser l'IA*. Une colonne masquée n'est jamais remplie ; une colonne *Utiliser l'IA* est remplie par l'IA même pour les fournisseurs disposant de règles.
+* **Paramètres → Traitement des Documents → Types de documents → Colonnes de tableau** : indicateurs Masquée, Obligatoire et *Utiliser l'IA*. Une colonne masquée n'est jamais remplie ; une colonne *Utiliser l'IA* est remplie par l'IA même pour les fournisseurs disposant de règles.
 
 ## 3. Reproduire sans l'interface (API / MCP)
 

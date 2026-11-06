@@ -28,11 +28,9 @@ Chaque groupe peut être configuré pour :
 ## Ouvrir le Contrôle d'Accès d'un groupe
 
 1. Accédez aux **Paramètres**.
-2. Allez dans **Paramètres Globaux**.
-3. Sélectionnez **Groupes, Utilisateurs et Autorisations**.
-4. Sélectionnez **Groupes et Autorisations**.
-5. Pour gérer les autorisations d'un groupe (par exemple PROCUREMENT\_DIRECTOR), cliquez sur les trois points à droite.
-6. Sélectionnez **Gérer le Contrôle d'Accès**.
+2. Sous **Organisation et Accès**, sélectionnez **Groupes et Autorisations**.
+3. Pour gérer les autorisations d'un groupe (par exemple PROCUREMENT\_DIRECTOR), cliquez sur les trois points à droite.
+4. Sélectionnez **Gérer le Contrôle d'Accès**.
 
 <figure><img src="../../../../../.gitbook/assets/access_control_open_menu.png" alt="Ouvrir le menu de ligne d'un groupe et choisir Gérer le Contrôle d'Accès"><figcaption><p>Sur la page « Groupes et Autorisations », ouvrez le menu <strong>⋮</strong> d'un groupe et choisissez <strong>Gérer le Contrôle d'Accès</strong>.</p></figcaption></figure>
 

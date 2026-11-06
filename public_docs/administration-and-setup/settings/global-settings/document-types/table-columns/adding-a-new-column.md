@@ -10,7 +10,7 @@ Ajoutez une colonne lorsqu'une valeur doit être saisie pour chaque ligne et que
 
 ## Étapes
 
-1. Ouvrez **Settings → Global Settings → Document Types → Table Columns**.
+1. Ouvrez **Paramètres → Traitement des Documents → Types de Documents → Colonnes du tableau**.
 2. Cliquez sur **Add new table column**.
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Boîte de dialogue Add new table column avec Title, Is column required, Select column type et Select Table"><figcaption><p>Add new table column</p></figcaption></figure>

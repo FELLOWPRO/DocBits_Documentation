@@ -21,7 +21,7 @@ Le standard ZUGFeRD est toujours actif par défaut, mais vous pouvez le modifier
 
 ### **Étapes pour modifier les paramètres ZUGFeRD :**
 
-1. Accédez à **Settings → Global Settings → Document Types → Invoice**.
+1. Accédez à **Paramètres → Traitement des Documents → Types de Documents → Facture**.
 2. Cliquez sur **E-Doc**.\\
 3. Une liste de tous les e-docs disponibles apparaît.
 4. Repérez la version de **ZUGFeRD** que vous souhaitez modifier.\\
@@ -67,7 +67,7 @@ La **configuration des chemins d'extraction** sert à extraire des données et �
 2. Créez un nouveau brouillon en cliquant sur l'**icône de crayon**.
 3. Sélectionnez le brouillon que vous venez de créer.
 4. Créez un nouveau champ ou modifiez un champ existant.
-5. Le côté gauche représente l'**ID de champ DocBits**, que vous trouvez sous **Settings → Global Settings → Document Types → Invoice → Fields**.\\
+5. Le côté gauche représente l'**ID de champ DocBits**, que vous trouvez sous **Paramètres → Traitement des Documents → Types de Documents → Facture → Champs**.\\
 6. Le côté droit représente le **chemin vers le champ** créé dans la transformation.
 7. Cliquez sur **Save**.
 

@@ -40,7 +40,7 @@ Ce guide vous accompagnera dans le processus de configuration pour garantir que 
 
 ### **Étape 2 : Ajouter des champs dans DocBits**
 
-1.  Naviguez vers **Paramètres** -> **Paramètres globaux** -> **Types de documents**.
+1.  Naviguez vers **Paramètres** -> **Traitement des Documents** -> **Types de documents**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié."><figcaption><p>Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié.</p></figcaption></figure>
 2.  Choisissez le menu **Champs** correspondant au type de document où vous souhaitez ajouter les champs.
@@ -62,7 +62,7 @@ Ce guide vous accompagnera dans le processus de configuration pour garantir que 
 
 ### **Étape 3 : Modifier la mise en page**
 
-1.  Allez dans **Paramètres** -> **Paramètres globaux** -> **Types de documents**.
+1.  Allez dans **Paramètres** -> **Traitement des Documents** -> **Types de documents**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié."><figcaption><p>Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié.</p></figcaption></figure>
 2.  Ouvrez le menu **Modifier la mise en page** pour le type de document que vous souhaitez modifier.
@@ -130,7 +130,7 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
 
 ### **Étape 2 : Ajouter des champs dans DocBits**
 
-1.  Naviguez vers **Paramètres** -> **Paramètres globaux** -> **Types de documents**.
+1.  Naviguez vers **Paramètres** -> **Traitement des Documents** -> **Types de documents**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié."><figcaption><p>Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié.</p></figcaption></figure>
 2.  Choisissez le menu **Champs** correspondant au type de document où vous souhaitez ajouter les champs.
@@ -152,7 +152,7 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
 
 ### **Étape 3 : Modifier la mise en page**
 
-1.  Allez dans **Paramètres** -> **Paramètres globaux** -> **Types de documents**.
+1.  Allez dans **Paramètres** -> **Traitement des Documents** -> **Types de documents**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié."><figcaption><p>Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié.</p></figcaption></figure>
 2.  Ouvrez le menu **Modifier la mise en page** pour le type de document que vous souhaitez modifier.

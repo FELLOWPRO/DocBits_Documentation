@@ -16,7 +16,7 @@ L'assistant est **désactivé par défaut**. Cette page montre où l'activer et 
 
 ## L'activer
 
-1. Allez dans **Paramètres → Paramètres globaux → Informations sur l'entreprise**. L'en-tête de la page affiche **Paramètres de l'entreprise** (Company Settings).
+1. Allez dans **Paramètres → Organisation et Accès → Informations sur l'entreprise**. L'en-tête de la page affiche **Paramètres de l'entreprise** (Company Settings).
 2. Ouvrez la section **Assistants**.
 3. Activez **Activer l'assistant de paramètres** (Enable the settings assistant).
 

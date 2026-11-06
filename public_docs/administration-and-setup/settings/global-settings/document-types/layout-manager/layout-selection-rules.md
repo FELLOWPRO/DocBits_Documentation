@@ -26,7 +26,7 @@ L'origine reste disponible — comme une condition parmi d'autres. Une règle pe
 
 Les mises en page basées sur des règles s'activent **par type de document** par un **administrateur de l'organisation**.
 
-1. Allez dans **Paramètres → Paramètres globaux → Types de documents**.
+1. Allez dans **Paramètres → Traitement des Documents → Types de documents**.
 2. Cliquez sur l'icône **paramètres** (engrenage) sur la carte du type de document.
 3. Ouvrez **Gérer les mises en page** et activez l'interrupteur.
 

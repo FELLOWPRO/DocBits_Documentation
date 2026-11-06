@@ -8,7 +8,7 @@ Cette page explique comment vérifier le traitement réussi de votre BOD (Busine
 
 ### Récupérer votre Clé API
 
-1.  Allez dans **Paramètres → Paramètres globaux → Intégration et SSO**.
+1.  Allez dans **Paramètres → Système et Administration → Intégration et SSO**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_integration.png)
 2.  Vous pouvez soit copier manuellement votre **clé API**, soit cliquer sur le bouton de copie pour la copier dans votre presse-papiers.

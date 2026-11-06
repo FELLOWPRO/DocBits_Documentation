@@ -4,7 +4,7 @@ Les cases contrôlent les valeurs obligatoires, la modification et la visibilit�
 
 Tout, à l'exception du titre, se modifie directement dans la liste ; il n'y a pas de boîte de dialogue de modification.
 
-**Où :** Paramètres → Paramètres globaux → Types de documents → Colonnes du tableau
+**Où :** Paramètres → Traitement des Documents → Types de documents → Colonnes du tableau
 
 ## Activer ou désactiver une option
 

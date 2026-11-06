@@ -22,7 +22,7 @@ Cette page de configuration est utilisée pour définir et gérer les règles qu
 
 ## Comment y accéder
 
-1. Naviguez vers **Paramètres** → **Paramètres globaux** → **Types de documents**, sélectionnez le type de document et cliquez sur **Plus de paramètres**.
+1. Naviguez vers **Paramètres** → **Traitement des Documents** → **Types de documents**, sélectionnez le type de document et cliquez sur **Plus de paramètres**.
 2. Dans la carte **Bon de commande**, activez **Correspondance des commandes côté serveur**.
 3. Cliquez sur **Configurer les règles de correspondance des commandes d'achat** à côté de l'interrupteur.
 

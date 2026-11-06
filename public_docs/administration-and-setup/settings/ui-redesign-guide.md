@@ -29,7 +29,7 @@ Le menu Paramètres est regroupé par intention plutôt que par modèle de donn�
 
 ## Longues pages de paramètres — navigation par ancres
 
-Les pages de paramètres comportant de nombreuses sections (comme les Paramètres Globaux ou la configuration d'un Type de Document) exposent désormais une liste de liens d'ancres dans l'en-tête. Cliquez sur une ancre pour sauter à cette section. L'URL se met à jour pendant le défilement, de sorte que le lien vers une section précise peut être partagé ou ajouté aux favoris.
+Les pages de paramètres comportant de nombreuses sections (comme l'aperçu des paramètres ou la configuration d'un Type de Document) exposent désormais une liste de liens d'ancres dans l'en-tête. Cliquez sur une ancre pour sauter à cette section. L'URL se met à jour pendant le défilement, de sorte que le lien vers une section précise peut être partagé ou ajouté aux favoris.
 
 ## Trouver la documentation pendant que vous travaillez — icônes d'aide
 

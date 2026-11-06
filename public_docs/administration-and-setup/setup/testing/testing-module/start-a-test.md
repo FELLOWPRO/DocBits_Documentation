@@ -49,6 +49,32 @@ AI 助手或 Playwright 脚本无法自行点击；它们会请求 DocBits 在 *
 
 <figure><img src="../../../../.gitbook/assets/testing-16-start-from-outside-zh.png" alt="输入编辑器中的“从外部开始”一行"><figcaption><p>输入编辑器中的“从外部开始”一行。</p></figcaption></figure>
 
+## 分享开始链接
+
+开始链接会打开某个模板的启动对话框，并预先填好相关内容，同事或 CI 流水线无需再次选择模板和相应的值：
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+| 部分 | 作用 |
+|---|---|---|
+| **run** | 指定要打开的模板，使用模板键（对话框中模板名称下方的一行，例如 `default-smoke-analytics`）。必填。 |
+| **version** | 打开指定的已保存版本。省略此参数时，打开最新版本。 |
+| **input** | 按名称或 ID 填入某个已保存输入的值。标记为敏感的参数一律不予填入。 |
+| **autostart=1** | 页面打开后立即启动测试，但仅适用于只读取数据的模板。会写入数据的模板仍需等待确认。 |
+
+要获取链接，请打开模板的启动对话框，然后切换到 **从外部开始**。**开始链接** 区域包含该模板的链接，**带开始链接的 Playwright** 区域则包含一个代码片段，用于打开该链接并等待结果。
+
+<figure><img src="../../../../.gitbook/assets/testing-start-link-dialog-zh.png" alt="“从外部开始”视图中的启动对话框，其中包含可复制的“开始链接”和 Playwright 示例"><figcaption><p><strong>从外部开始</strong> 视图中的启动对话框：可复制的开始链接，以及用于打开该链接的 Playwright 示例。当某个标签页开始接受外部启动请求后，<strong>运行测试的会话</strong> 下会显示相应会话。</p></figcaption></figure>
+
+打开链接的人会看到以下情况：
+
+* DocBits 会打开 **设置 → Testing** 的 **模板** 标签页，并显示该模板的启动对话框。该链接仅对能够打开 **设置 → Testing** 的用户有效，因为测试会在其浏览器标签页中运行，并使用其权限。
+* 未知的模板、版本或输入会在标签页下方显示错误，且不会启动任何测试。
+* 使用 `autostart=1` 时，只读取数据的模板会立即启动。其他所有情况都会等待用户点击 **开始**，会写入数据的模板仍保留确认步骤。
+* 参数被读取后会从地址栏中移除，因此重新加载页面不会再次启动测试。
+
+标签页旁和启动对话框中的 **?** 都会以您的界面语言打开本文档中的对应页面。
+
 ## 从 AI 助手启动（MCP）
 
 如果您的 AI 助手已连接到 DocBits（请参阅 [DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)

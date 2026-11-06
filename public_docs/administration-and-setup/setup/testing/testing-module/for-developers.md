@@ -62,6 +62,26 @@ const { log_id } = await res.json();
 请使用您所在区域的 API 主机（主机列表请参阅 [DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)）。
 日志的 CSV：`GET /testing/logs/export.csv`（筛选条件与列表相同）和 `GET /testing/logs/<log_id>/export.csv`。
 
+## 通过打开开始链接启动
+
+如果您的自动化程序控制的是已登录的浏览器，请打开模板的开始链接，而不是调用 API：
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+`run` 是模板键（必填），`version` 固定使用某个已保存版本（默认：最新版本），`input` 按名称或 ID 指定已保存的输入，`autostart=1` 可让只读取数据的模板无需点击即可启动。会写入数据的模板仍保留确认步骤，因此运行会等待 `testing-start-confirm`。该链接仅在组织管理员已登录的浏览器中有效；点击操作发生在该标签页中。
+
+```ts
+// signed in as an organisation admin (your login helper)
+await page.goto('https://<your-environment>/settings/testing?run=default-smoke-analytics&version=1.0.0');
+const start = page.getByTestId('testing-start-confirm');
+const status = page.getByTestId('testing-run-status');
+await start.or(status).first().waitFor();
+if (await start.isVisible()) await start.click();
+await expect(status).toHaveAttribute('data-status', /(passed|failed|blocked|cancelled)$/);
+```
+
+`data-status` 的值为 `running`、`passed`、`failed`、`blocked` 或 `cancelled`。`blocked` 表示规则在测试步骤运行之前阻止了本次运行。参数被读取后会从 URL 中移除，因此重新加载页面不会再次启动测试。可在启动对话框的 **从外部开始 → 开始链接** 下复制该链接。
+
 ## 通过 MCP 启动
 
 DocBits MCP 服务器提供 Testing 工具 `testing_list_templates`、`testing_list_inputs`、`testing_start`、

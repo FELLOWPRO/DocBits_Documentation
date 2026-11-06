@@ -16,7 +16,7 @@
 
 ## 启用助手
 
-1. 前往 **Settings → Global Settings → Company Information**。页面标题显示为 **Company Settings**。
+1. 前往 **设置 → 组织与访问 → 公司信息**。页面标题显示为 **Company Settings**。
 2. 打开 **Assistants** 部分。
 3. 开启 **Enable the settings assistant**。
 

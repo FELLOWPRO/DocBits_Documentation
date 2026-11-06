@@ -27,12 +27,10 @@
 
 ## 打开组的访问控制
 
-1. 转到 **Settings**（设置）。
-2. 转到 **Global Settings.**（全局设置）。
-3. 选择 **Groups, Users and Permissions.**（组、用户和权限）。
-4. 选择 **Groups and Permissions**（组和权限）。
-5. 要管理某个组（例如 PROCUREMENT\_DIRECTOR）的权限，请点击屏幕右侧的三个点。
-6. 选择 **Manage Access Control**（管理访问控制）。
+1. 转到 **设置**。
+2. 在 **组织与访问** 下选择 **组和权限**。
+3. 要管理某个组（例如 PROCUREMENT\_DIRECTOR）的权限，请点击屏幕右侧的三个点。
+4. 选择 **管理访问控制**。
 
 <!-- Obsolete illustration retired: Retire an obsolete English menu/scope/example illustration. Complete access-scope and field-permission explanations remain; the native matrix is shown separately without claiming hidden policy values. -->
 

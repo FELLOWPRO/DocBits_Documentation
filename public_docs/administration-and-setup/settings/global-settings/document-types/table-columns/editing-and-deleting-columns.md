@@ -4,7 +4,7 @@
 
 除了标题以外，所有内容都直接在列表中更改；没有编辑对话框。
 
-**位置：** Settings → Global Settings → Document Types → Table Columns
+**位置：** 设置 → 文档处理 → 文档类型 → 表格列
 
 ## 切换标记
 

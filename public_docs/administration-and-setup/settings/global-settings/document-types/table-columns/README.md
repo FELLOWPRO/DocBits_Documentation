@@ -2,7 +2,7 @@
 
 表格列定义文档类型的行项目表包含哪些列：DocBits 会向每列提取什么内容、用户在验证屏幕上看到什么内容，以及导出时发送到 ERP 的内容。
 
-**位置：**设置 → 全局设置 → 文档类型 → 表格列
+**位置：**设置 → 文档处理 → 文档类型 → 表格列
 
 <figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-zh-20261104.png" alt="当前 Use AI 下拉菜单，包含默认、是和否。未更改任何选项。标题单元格已隐藏以保护数据。"><figcaption><p>当前 Use AI 下拉菜单，包含默认、是和否。未更改任何选项。标题单元格已隐藏以保护数据。</p></figcaption></figure>
 

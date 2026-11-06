@@ -14,7 +14,7 @@
 
 确认用户已正确分配到相应的组：
 
-* 前往：`Settings` > `Global Settings` > `Groups, Users and Permissions`。
+* 前往：`设置` > `组织与访问` > `组和权限`。
 * 选择 **Groups and Permissions**。
 * 确认该用户列在预期的组中。
 * 如果该组使用了特定的访问控制，未将用户分配到该组会阻止其访问文档和执行操作。
@@ -42,7 +42,7 @@
 
 此全局设置会限制文档的可见范围：
 
-* 前往：`Settings` > `Global Settings` > `Groups, Users and Permissions`。
+* 前往：`设置` > `组织与访问` > `组和权限`。
 * 如果已**启用** **Only Assigned Documents**，用户只能查看明确分配给自己或其所在组的文档。
 * 如果用户看不到预期的文档：
   * 检查文档分配情况。

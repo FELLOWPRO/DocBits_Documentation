@@ -20,7 +20,7 @@
 
 * **Settings → Document Processing → Classification and Extraction → AI Model**：选择器下方的表格会列出所有已保存模型或训练数据的供应商。列表中带有 *training data* 的供应商已有已保存的规则；*reset the training data* 会移除这些规则。
 * **Settings → Document Processing → OCR Settings**：*Use E-Text if available* 和 *Use AI data for tables* 会改变提取过程所读取的文本。供应商可以在验证界面的 *More settings* 中覆盖 E-Text 设置。
-* **Settings → Global Settings → Document Types → Table Columns**：此处设有隐藏、必填和 *Use AI* 标记。隐藏列永远不会填充；即使供应商已有规则，标记为 *Use AI* 的列也会由 AI 填充。
+* **设置 → 文档处理 → 文档类型 → 表格列**：此处设有隐藏、必填和 *Use AI* 标记。隐藏列永远不会填充；即使供应商已有规则，标记为 *Use AI* 的列也会由 AI 填充。
 
 ## 3. 不使用界面进行复现（API / MCP）
 

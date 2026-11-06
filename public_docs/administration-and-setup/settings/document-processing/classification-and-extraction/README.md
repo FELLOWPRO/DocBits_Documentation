@@ -85,7 +85,7 @@
 {% hint style="info" %}
 **表格提取的运行前提**
 
-* 文档类型已配置**表格列**（设置 → 全局设置 → 文档类型 → [表格列](../../global-settings/document-types/table-columns/README.md)）。没有列就没有可供提取填入的字段。
+* 文档类型已配置**表格列**（设置 → 文档处理 → 文档类型 → [表格列](../../global-settings/document-types/table-columns/README.md)）。没有列就没有可供提取填入的字段。
 * 已在下方为整个组织启用**表格提取**或 **AI 表格提取**。
 * 文档包含可读取的文本：已运行 OCR，或者数字原生 PDF 使用了 E-Text（[OCR 设置](../ocr-settings.md)）。
 * 训练数据和 AI 模型均按**供应商**区分。训练好的表格仅适用于该供应商的文档。

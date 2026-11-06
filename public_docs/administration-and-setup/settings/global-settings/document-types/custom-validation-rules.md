@@ -32,7 +32,7 @@
 
 自定义验证规则按**文档类型**启用。没有面向整个组织的开关。
 
-1. 前往 **Settings → Global Settings → Document Types**。
+1. 前往 **设置 → 文档处理 → 文档类型**。
 2. 在文档类型卡片上，点击 **设置**（齿轮）图标。
 3. 打开 **自定义验证规则** 区域并开启开关。
 4. 点击 **管理验证规则** 打开规则列表。
@@ -53,7 +53,7 @@
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-zh.png" alt="验证规则管理；已配置的名称已隐藏。 表格类别在界面中误译为“桌子”，部分相对时间仍为德语；实际含义是数据表格。"><figcaption><p>验证规则管理；已配置的名称已隐藏。 表格类别在界面中误译为“桌子”，部分相对时间仍为德语；实际含义是数据表格。</p></figcaption></figure>
 
-每张卡片都会显示规则名称和说明，以及表示其**级别**（Header / Line / Table）、**严重级别**（Error / Warning）、错误所关联的**字段**和**来源**的徽标。使用右侧的开关可启用或停用规则；使用 **⋮** 菜单可复制或删除规则。可按级别（**All / Header / Line / Table**）和状态（**All / Active / Inactive**）筛选列表，也可以搜索规则。
+每张卡片都会显示规则名称和说明，以及表示其**级别**（Header / Line / Table）、**严重级别**（Error / Warning）、错误所关联的**字段**和**来源**的徽标。使用右侧的开关可启用或停用规则；使用 **⋮** 菜单可编辑、复制或删除规则。可按级别（**All / Header / Line / Table**）和状态（**All / Active / Inactive**）筛选列表，也可以搜索规则。
 
 ### System default、Customized 和 Custom 规则
 

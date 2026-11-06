@@ -64,6 +64,32 @@ const { log_id } = await res.json();
 Verwenden Sie den API-Host Ihrer Region (Liste auf der Seite *DocBits MCP*). CSV der Protokolle:
 `GET /testing/logs/export.csv` (dieselben Filter wie die Liste) und `GET /testing/logs/<log_id>/export.csv`.
 
+## Start über einen Start-Link
+
+Wenn Ihre Automatisierung einen angemeldeten Browser steuert, öffnen Sie den Start-Link des Templates, anstatt die API aufzurufen:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+`run` ist der Schlüssel des Templates (erforderlich), `version` legt eine gespeicherte Version fest (Standard: die neueste),
+`input` gibt eine gespeicherte Eingabe anhand ihres Namens oder ihrer ID an, und `autostart=1` startet ein Template, das
+ausschließlich Daten liest, ohne Klick. Bei einem Template, das Daten schreibt, bleibt die Bestätigung erforderlich, sodass der
+Lauf auf `testing-start-confirm` wartet. Der Link funktioniert nur in einem angemeldeten Browser eines Organisations-Admins;
+die Klicks erfolgen in diesem Tab.
+
+```ts
+// signed in as an organisation admin (your login helper)
+await page.goto('https://<your-environment>/settings/testing?run=default-smoke-analytics&version=1.0.0');
+const start = page.getByTestId('testing-start-confirm');
+const status = page.getByTestId('testing-run-status');
+await start.or(status).first().waitFor();
+if (await start.isVisible()) await start.click();
+await expect(status).toHaveAttribute('data-status', /(passed|failed|blocked|cancelled)$/);
+```
+
+`data-status` ist `running`, `passed`, `failed`, `blocked` oder `cancelled`. `blocked` bedeutet, dass eine Regel den Lauf
+gestoppt hat, bevor die Schritte ausgeführt wurden. Nach dem Auslesen werden die Parameter aus der URL entfernt, sodass ein
+erneutes Laden der Seite den Test nicht erneut startet. Kopieren Sie den Link im Startdialog unter **Von außen starten → Start-Link**.
+
 ## Start per MCP
 
 Der DocBits-MCP-Server bietet für das Testing-Modul die Werkzeuge `testing_list_templates`, `testing_list_inputs`,

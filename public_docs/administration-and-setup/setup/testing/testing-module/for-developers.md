@@ -63,6 +63,31 @@ const { log_id } = await res.json();
 Gebruik de API-host van uw regio (zie [DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp) voor de lijst met hosts).
 CSV van de logboeken: `GET /testing/logs/export.csv` (dezelfde filters als de lijst) en `GET /testing/logs/<log_id>/export.csv`.
 
+## Starten door een startlink te openen
+
+Als uw automatisering een aangemelde browser aanstuurt, opent u de startlink van het sjabloon in plaats van de API aan te roepen:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+`run` is de sjabloonsleutel (verplicht), `version` legt een opgeslagen versie vast (standaard: de nieuwste), `input` verwijst naar een opgeslagen
+invoer via de naam of het ID ervan, en `autostart=1` start een sjabloon dat uitsluitend gegevens leest zonder dat u hoeft te klikken. Voor een
+sjabloon dat gegevens schrijft, blijft de bevestiging vereist, zodat de run wacht op `testing-start-confirm`. De link werkt alleen in een aangemelde
+browser van een organisatiebeheerder; de klikken vinden plaats in dat tabblad.
+
+```ts
+// signed in as an organisation admin (your login helper)
+await page.goto('https://<your-environment>/settings/testing?run=default-smoke-analytics&version=1.0.0');
+const start = page.getByTestId('testing-start-confirm');
+const status = page.getByTestId('testing-run-status');
+await start.or(status).first().waitFor();
+if (await start.isVisible()) await start.click();
+await expect(status).toHaveAttribute('data-status', /(passed|failed|blocked|cancelled)$/);
+```
+
+`data-status` is `running`, `passed`, `failed`, `blocked` of `cancelled`. `blocked` betekent dat een regel de run heeft gestopt voordat de stappen
+werden uitgevoerd. Nadat de parameters zijn gelezen, worden ze uit de URL verwijderd, zodat de test niet opnieuw start wanneer de pagina opnieuw
+wordt geladen. Kopieer de link in het startdialoogvenster onder **Van buitenaf starten → Startlink**.
+
 ## Starten via MCP
 
 De DocBits MCP-server biedt de Testing-tools `testing_list_templates`, `testing_list_inputs`, `testing_start`,

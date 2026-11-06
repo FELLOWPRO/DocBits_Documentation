@@ -53,6 +53,37 @@ De invoereditor herinnert u aan de drie manieren onder **Van buitenaf starten:**
 
 <figure><img src="../../../../.gitbook/assets/testing-16-start-from-outside-nl.png" alt="Regel Van buitenaf starten in de invoereditor"><figcaption><p>Regel Van buitenaf starten in de invoereditor.</p></figcaption></figure>
 
+## Een startlink delen
+
+Een startlink opent het startdialoogvenster van één sjabloon, al ingevuld, zodat een collega of een CI-pipeline het sjabloon en de waarden
+niet opnieuw hoeft te kiezen:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+| Onderdeel | Wat het doet |
+|---|---|
+| **run** | Het sjabloon dat wordt geopend, aan de hand van zijn sleutel (de regel onder de sjabloonnaam in het dialoogvenster, bijvoorbeeld `default-smoke-analytics`). Verplicht. |
+| **version** | Opent deze opgeslagen versie. Zonder deze parameter wordt de nieuwste versie geopend. |
+| **input** | Vult een opgeslagen invoer in, aan de hand van de naam of het ID ervan. Parameters die als gevoelig zijn gemarkeerd, worden nooit ingevuld. |
+| **autostart=1** | Start de test zodra de pagina is geopend, maar alleen als het sjabloon uitsluitend gegevens leest. Een sjabloon dat gegevens schrijft, wacht nog steeds op de bevestiging. |
+
+Open het startdialoogvenster van een sjabloon en schakel over naar **Van buitenaf starten** om de link te krijgen. Het blok **Startlink**
+bevat de link van dat sjabloon en **Playwright met startlink** een codefragment dat de link opent en op het resultaat wacht.
+
+<figure><img src="../../../../.gitbook/assets/testing-start-link-dialog-nl.png" alt="Startdialoogvenster in de weergave Van buitenaf starten met de kopieerbare startlink en een Playwright-voorbeeld"><figcaption><p>Het startdialoogvenster in de weergave <strong>Van buitenaf starten</strong>: de kopieerbare startlink en een Playwright-voorbeeld dat deze opent. Zodra een tabblad starts van buitenaf accepteert, verschijnt een sessie onder <strong>Sessie die de test uitvoert</strong>.</p></figcaption></figure>
+
+Wat de persoon die de link opent te zien krijgt:
+
+* DocBits opent **Instellingen → Testing**, tabblad **Sjablonen**, met het startdialoogvenster van het sjabloon. De link werkt alleen voor
+  iemand die Instellingen → Testing kan openen, omdat de run gebruikmaakt van diens browsertabblad en rechten.
+* Bij een onbekend sjabloon, een onbekende versie of een onbekende invoer verschijnt een foutmelding onder de tabbladen en wordt niets gestart.
+* Met `autostart=1` start een sjabloon dat uitsluitend gegevens leest onmiddellijk. In alle andere gevallen wordt gewacht op **Starten** en blijft
+  voor een sjabloon dat gegevens schrijft de bevestiging vereist.
+* Zodra de parameters zijn gelezen, worden ze uit de adresbalk verwijderd. De test start daarom niet opnieuw wanneer de pagina opnieuw wordt
+  geladen.
+
+Via de **?** naast de tabbladen en in het startdialoogvenster opent u de bijbehorende pagina van deze documentatie in uw interfacetaal.
+
 ## Starten vanuit een AI-assistent (MCP)
 
 Als uw AI-assistent met DocBits is verbonden (zie [DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)

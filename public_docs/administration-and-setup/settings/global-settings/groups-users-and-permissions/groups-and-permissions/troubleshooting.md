@@ -14,7 +14,7 @@ Ustawienia kontroli dostępu mają zastosowanie tylko wtedy, gdy funkcja jest **
 
 Upewnij się, że użytkownik jest poprawnie przypisany do odpowiednich grup:
 
-* Przejdź do: `Ustawienia` > `Ustawienia globalne` > `Grupy, Użytkownicy i Uprawnienia`.
+* Przejdź do: `Ustawienia` > `Organizacja i dostęp` > `Grupy i uprawnienia`.
 * Wybierz **Grupy i Uprawnienia**.
 * Potwierdź, że użytkownik jest wymieniony w oczekiwanej grupie.
 * Jeśli grupa korzysta z określonej kontroli dostępu, brak przypisania do grupy zablokuje dostęp do dokumentów i działań.
@@ -42,7 +42,7 @@ Dostęp może być również ograniczony na poziomie **pola**, co może blokowa�
 
 To globalne ustawienie ogranicza widoczność dokumentów:
 
-* Przejdź do: `Ustawienia` > `Ustawienia globalne` > `Grupy, Użytkownicy i Uprawnienia`.
+* Przejdź do: `Ustawienia` > `Organizacja i dostęp` > `Grupy i uprawnienia`.
 * Jeśli **Tylko przypisane dokumenty** są **włączone**, użytkownicy mogą widzieć tylko dokumenty przypisane bezpośrednio do nich lub ich grupy.
 * Jeśli użytkownicy nie widzą oczekiwanych dokumentów:
   * Sprawdź przypisanie dokumentów.

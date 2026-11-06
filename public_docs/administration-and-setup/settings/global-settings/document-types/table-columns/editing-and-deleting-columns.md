@@ -4,7 +4,7 @@ Pola wyboru sterują wymaganymi wartościami, edycją i widocznością. Use AI k
 
 Wszystko oprócz tytułu zmienia się bezpośrednio na liście; nie ma okna edycji.
 
-**Gdzie:** Ustawienia → Ustawienia globalne → Typy dokumentów → Kolumny tabeli
+**Gdzie:** Ustawienia → Przetwarzanie dokumentów → Typy dokumentów → Kolumny tabeli
 
 ## Przełączanie flagi
 

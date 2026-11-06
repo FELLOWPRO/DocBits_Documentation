@@ -26,7 +26,7 @@ Pochodzenie nadal jest dostępne — jako jeden z wielu warunków. Reguła może
 
 Układy oparte na regułach włącza się **dla każdego typu dokumentu** osobno, jako **administrator organizacji**.
 
-1. Przejdź do **Ustawienia → Ustawienia ogólne → Typy dokumentów**.
+1. Przejdź do **Ustawienia → Przetwarzanie dokumentów → Typy dokumentów**.
 2. Kliknij ikonę **ustawień** (koło zębate) na karcie typu dokumentu.
 3. Otwórz **Zarządzaj układami** i włącz przełącznik.
 

@@ -29,7 +29,7 @@ W każdej grupie najczęściej używane strony są umieszczone na górze.
 
 ## Długie strony ustawień — nawigacja kotwicowa
 
-Strony ustawień z wieloma sekcjami (takie jak Ustawienia Globalne lub konfiguracja Typu Dokumentu) pokazują teraz w nagłówku listę linków kotwicowych. Kliknij kotwicę, aby przeskoczyć do tej sekcji. Adres URL aktualizuje się podczas przewijania, dzięki czemu link do konkretnej sekcji można udostępnić lub dodać do zakładek.
+Strony ustawień z wieloma sekcjami (takie jak przegląd ustawień lub konfiguracja Typu Dokumentu) pokazują teraz w nagłówku listę linków kotwicowych. Kliknij kotwicę, aby przeskoczyć do tej sekcji. Adres URL aktualizuje się podczas przewijania, dzięki czemu link do konkretnej sekcji można udostępnić lub dodać do zakładek.
 
 ## Znajdowanie dokumentacji podczas pracy — ikony pomocy
 

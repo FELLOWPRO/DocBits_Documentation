@@ -16,7 +16,7 @@ Asystent jest **domyślnie wyłączony**. Ta strona pokazuje, gdzie go włączy�
 
 ## Włączanie
 
-1. Przejdź do **Ustawienia → Ustawienia globalne → Informacje o firmie**. Nagłówek strony pokazuje **Company Settings** (Ustawienia firmy).
+1. Przejdź do **Ustawienia → Organizacja i dostęp → Informacje o firmie**. Nagłówek strony pokazuje **Company Settings** (Ustawienia firmy).
 2. Otwórz sekcję **Asystenci** (Assistants).
 3. Włącz **Włącz asystenta ustawień** (Enable the settings assistant).
 

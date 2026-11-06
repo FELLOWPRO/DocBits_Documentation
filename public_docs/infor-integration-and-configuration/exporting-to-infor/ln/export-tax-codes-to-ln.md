@@ -40,7 +40,7 @@ Ten przewodnik przeprowadzi Cię przez proces konfiguracji, aby upewnić się, �
 
 ### **Krok 2: Dodaj Pola w DocBits**
 
-1.  Przejdź do **Ustawienia** -> **Ustawienia Globalne** -> **Typy Dokumentów**.
+1.  Przejdź do **Ustawienia** -> **Przetwarzanie dokumentów** -> **Typy Dokumentów**.
 
     ![Otwarte menu Ustawienia Globalne z pozycją Typy Dokumentów](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJFsiV4Pzbj8vIhqJfDaJ%252FTaxCodes_6.png%3Falt%3Dmedia%26token%3D203ddd31-195e-4cc3-87f7-d1b12fc3013c\&width=768\&dpr=4\&quality=100\&sign=a64ef7b9\&sv=2)
 2.  Wybierz menu **Pola** odpowiadające Typowi Dokumentu, w którym chcesz dodać pola.
@@ -62,7 +62,7 @@ Ten przewodnik przeprowadzi Cię przez proces konfiguracji, aby upewnić się, �
 
 ### **Krok 3: Edytuj Układ**
 
-1.  Przejdź do **Ustawienia** -> **Ustawienia Globalne** -> **Typy Dokumentów**.
+1.  Przejdź do **Ustawienia** -> **Przetwarzanie dokumentów** -> **Typy Dokumentów**.
 
     ![Otwarte menu Ustawienia Globalne z pozycją Typy Dokumentów](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJFsiV4Pzbj8vIhqJfDaJ%252FTaxCodes_6.png%3Falt%3Dmedia%26token%3D203ddd31-195e-4cc3-87f7-d1b12fc3013c\&width=768\&dpr=4\&quality=100\&sign=a64ef7b9\&sv=2)
 2.  Otwórz menu **Edytuj Układ** dla Typu Dokumentu, który chcesz edytować.
@@ -130,7 +130,7 @@ Po przesłaniu nowego dokumentu do DocBits z wybranymi odpowiednimi ustawieniami
 
 ### **Krok 2: Dodaj Pola w DocBits**
 
-1.  Przejdź do **Ustawienia** -> **Ustawienia Globalne** -> **Typy Dokumentów**.
+1.  Przejdź do **Ustawienia** -> **Przetwarzanie dokumentów** -> **Typy Dokumentów**.
 
     ![Otwarte menu Ustawienia Globalne z pozycją Typy Dokumentów](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJFsiV4Pzbj8vIhqJfDaJ%252FTaxCodes_6.png%3Falt%3Dmedia%26token%3D203ddd31-195e-4cc3-87f7-d1b12fc3013c\&width=768\&dpr=4\&quality=100\&sign=a64ef7b9\&sv=2)
 2.  Wybierz menu **Pola** odpowiadające Typowi Dokumentu, w którym chcesz dodać pola.
@@ -152,7 +152,7 @@ Po przesłaniu nowego dokumentu do DocBits z wybranymi odpowiednimi ustawieniami
 
 ### **Krok 3: Edytuj Układ**
 
-1.  Przejdź do **Ustawienia** -> **Ustawienia Globalne** -> **Typy Dokumentów**.
+1.  Przejdź do **Ustawienia** -> **Przetwarzanie dokumentów** -> **Typy Dokumentów**.
 
     ![Otwarte menu Ustawienia Globalne z pozycją Typy Dokumentów](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJFsiV4Pzbj8vIhqJfDaJ%252FTaxCodes_6.png%3Falt%3Dmedia%26token%3D203ddd31-195e-4cc3-87f7-d1b12fc3013c\&width=768\&dpr=4\&quality=100\&sign=a64ef7b9\&sv=2)
 2.  Otwórz menu **Edytuj Układ** dla Typu Dokumentu, który chcesz edytować.

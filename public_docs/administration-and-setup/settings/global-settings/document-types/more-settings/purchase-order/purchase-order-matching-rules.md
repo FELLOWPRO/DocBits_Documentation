@@ -22,7 +22,7 @@ Ta strona konfiguracji służy do definiowania i zarządzania zasadami, które o
 
 ## Jak uzyskać dostęp
 
-1. Przejdź do **Ustawienia** → **Ustawienia globalne** → **Typy dokumentów**, wybierz typ dokumentu i kliknij **Więcej ustawień**.
+1. Przejdź do **Ustawienia** → **Przetwarzanie dokumentów** → **Typy dokumentów**, wybierz typ dokumentu i kliknij **Więcej ustawień**.
 2. Na karcie **Zamówienie zakupu** włącz **Serwer dopasowania PO**.
 3. Kliknij **Konfiguruj reguły dopasowywania zamówień** obok przełącznika.
 

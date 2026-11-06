@@ -28,11 +28,9 @@ Każdą grupę można skonfigurować pod kątem:
 ## Otwieranie Kontroli Dostępu grupy
 
 1. Przejdź do **Ustawień**.
-2. Przejdź do **Ustawień Globalnych**.
-3. Wybierz **Grupy, Użytkownicy i Uprawnienia**.
-4. Wybierz **Grupy i Uprawnienia**.
-5. Aby zarządzać uprawnieniami grupy (np. PROCUREMENT\_DIRECTOR), kliknij trzy kropki po prawej stronie.
-6. Wybierz **Zarządzaj Kontrolą Dostępu**.
+2. W sekcji **Organizacja i dostęp** wybierz **Grupy i uprawnienia**.
+3. Aby zarządzać uprawnieniami grupy (np. PROCUREMENT\_DIRECTOR), kliknij trzy kropki po prawej stronie.
+4. Wybierz **Zarządzaj Kontrolą Dostępu**.
 
 <figure><img src="../../../../../.gitbook/assets/access_control_open_menu.png" alt="Otwórz menu wiersza grupy i wybierz Zarządzaj Kontrolą Dostępu"><figcaption><p>Na stronie „Grupy i Uprawnienia" otwórz menu <strong>⋮</strong> grupy i wybierz <strong>Zarządzaj Kontrolą Dostępu</strong>.</p></figcaption></figure>
 

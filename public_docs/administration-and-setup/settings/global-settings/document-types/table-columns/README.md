@@ -2,7 +2,7 @@
 
 Kolumny tabeli określają, jakie kolumny ma tabela pozycji dokumentu danego typu: co DocBits wyodrębnia do każdej kolumny, co użytkownik widzi na ekranie walidacji oraz co jest wysyłane do systemu ERP podczas eksportu.
 
-**Gdzie:** Ustawienia → Ustawienia globalne → Typy dokumentów → Kolumny tabeli
+**Gdzie:** Ustawienia → Przetwarzanie dokumentów → Typy dokumentów → Kolumny tabeli
 
 <figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-pl-20261104.png" alt="Aktualna lista Use AI z opcjami Domyślne, Tak i Nie. Nie zmieniono żadnej opcji. Komórki tytułów ukryto w celu ochrony danych."><figcaption><p>Aktualna lista Use AI z opcjami Domyślne, Tak i Nie. Nie zmieniono żadnej opcji. Komórki tytułów ukryto w celu ochrony danych.</p></figcaption></figure>
 

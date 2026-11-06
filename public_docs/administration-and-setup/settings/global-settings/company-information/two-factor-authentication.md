@@ -6,11 +6,11 @@ Jako administrator organizacji możesz **wymagać od każdego członka używania
 
 Logowania przez pojedyncze logowanie (SSO) — Google, Microsoft, SAML — są **wyłączone**: ich dostawca tożsamości egzekwuje już własne MFA, więc wymóg dotyczy tylko logowań hasłem.
 
-To ustawienie znajduje się w **Ustawienia → Ustawienia globalne → Informacje o firmie → Uwierzytelnianie dwuskładnikowe** i jest dostępne tylko dla administratorów organizacji.
+To ustawienie znajduje się w **Ustawienia → Organizacja i dostęp → Informacje o firmie → Uwierzytelnianie dwuskładnikowe** i jest dostępne tylko dla administratorów organizacji.
 
 ## Wymaganie MFA w Twojej organizacji
 
-1. Przejdź do **Ustawienia → Ustawienia globalne → Informacje o firmie**.
+1. Przejdź do **Ustawienia → Organizacja i dostęp → Informacje o firmie**.
 2. Otwórz sekcję **Uwierzytelnianie dwuskładnikowe**.
 3. Włącz **Wymagaj uwierzytelniania dwuskładnikowego od wszystkich członków** i kliknij **Zapisz**.
 

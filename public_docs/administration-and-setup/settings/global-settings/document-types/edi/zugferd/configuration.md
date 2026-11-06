@@ -21,7 +21,7 @@ Standard ZUGFeRD jest domyślnie zawsze aktywny, ale w razie potrzeby możesz go
 
 ### **Kroki modyfikacji ustawień ZUGFeRD:**
 
-1. Przejdź do **Settings → Global Settings → Document Types → Invoice**.
+1. Przejdź do **Ustawienia → Przetwarzanie dokumentów → Typy dokumentów → Faktura**.
 2. Kliknij **E-Doc**.\\
 3. Pojawi się lista wszystkich dostępnych e-dokumentów.
 4. Znajdź wersję **ZUGFeRD**, którą chcesz zmodyfikować.\\
@@ -67,7 +67,7 @@ W **ustawieniach transformacji** możesz zdefiniować ścieżkę do konkretnych 
 2. Utwórz nowy szkic, klikając **ikonę ołówka**.
 3. Wybierz nowo utworzony szkic.
 4. Utwórz nowe pole lub zmodyfikuj istniejące.
-5. Lewa strona reprezentuje **ID pola DocBits**, które znajdziesz w **Settings → Global Settings → Document Types → Invoice → Fields**.\\
+5. Lewa strona reprezentuje **ID pola DocBits**, które znajdziesz w **Ustawienia → Przetwarzanie dokumentów → Typy dokumentów → Faktura → Pola**.\\
 6. Prawa strona reprezentuje **ścieżkę do pola** utworzonego w Transformation.
 7. Kliknij **Save**.
 

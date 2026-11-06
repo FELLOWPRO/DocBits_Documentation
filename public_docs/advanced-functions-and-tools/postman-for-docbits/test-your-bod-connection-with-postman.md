@@ -8,7 +8,7 @@ Ta strona wyjaśnia, jak zweryfikować pomyślne przetwarzanie twojego BOD (Busi
 
 ### Pobieranie Klucza API
 
-1.  Przejdź do **Ustawienia → Ustawienia globalne → Integracja i SSO**.
+1.  Przejdź do **Ustawienia → System i administracja → Integracja i SSO**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_integration.png)
 2.  Możesz ręcznie skopiować swój **Klucz API** lub kliknąć przycisk kopiowania, aby skopiować go do schowka.

@@ -20,7 +20,7 @@ Pola nagłówka mają własną etykietę źródła obok wartości: *Extracted us
 
 * **Ustawienia → Przetwarzanie dokumentów → Klasyfikacja i ekstrakcja → Model AI**: tabela pod selektorem wymienia każdego dostawcę z zapisanym modelem lub szkoleniem. Dostawca na tej liście z *danymi szkoleniowymi* ma zapisane reguły; *zresetowanie danych szkoleniowych* je usuwa.
 * **Ustawienia → Przetwarzanie dokumentów → Ustawienia OCR**: opcje *Use E-Text if available* i *Use AI data for tables* zmieniają tekst, który widzi ekstrakcja. Dostawca może nadpisać E-Text w *More settings* na ekranie walidacji.
-* **Ustawienia → Ustawienia globalne → Typy dokumentów → Kolumny tabeli**: flagi ukryta, wymagana i *Use AI*. Ukryta kolumna nigdy nie jest wypełniana; kolumnę *Use AI* wypełnia AI nawet u dostawców z regułami.
+* **Ustawienia → Przetwarzanie dokumentów → Typy dokumentów → Kolumny tabeli**: flagi ukryta, wymagana i *Use AI*. Ukryta kolumna nigdy nie jest wypełniana; kolumnę *Use AI* wypełnia AI nawet u dostawców z regułami.
 
 ## 3. Odtwórz bez interfejsu (API / MCP)
 

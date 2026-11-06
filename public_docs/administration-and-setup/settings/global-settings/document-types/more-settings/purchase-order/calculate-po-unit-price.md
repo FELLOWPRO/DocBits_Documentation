@@ -6,7 +6,7 @@ Możesz wybrać automatyczne obliczanie **ceny jednostkowej** każdej pozycji za
 
 ## **Kroki aktywacji**
 
-1.  Przejdź do **Ustawienia** -> **Ustawienia globalne** -> **Typy dokumentów**.
+1.  Przejdź do **Ustawienia** -> **Przetwarzanie dokumentów** -> **Typy dokumentów**.
 
 2.  Wybierz żądany typ dokumentu i kliknij **Więcej ustawień**.
 

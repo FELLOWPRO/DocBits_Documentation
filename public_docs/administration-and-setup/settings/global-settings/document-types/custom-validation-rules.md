@@ -32,7 +32,7 @@ Reguły są definiowane dla każdego **typu dokumentu** i działają na każdym 
 
 Niestandardowe reguły walidacji włącza się **dla każdego typu dokumentu**. Nie ma przełącznika obejmującego całą organizację.
 
-1. Przejdź do **Ustawienia → Ustawienia globalne → Typy dokumentów**.
+1. Przejdź do **Ustawienia → Przetwarzanie dokumentów → Typy dokumentów**.
 2. Na karcie typu dokumentu kliknij ikonę **ustawień** (koło zębate).
 3. Otwórz sekcję **Niestandardowe reguły walidacji** i włącz przełącznik.
 4. Kliknij **Zarządzaj regułami walidacji**, aby otworzyć listę reguł.
@@ -53,7 +53,7 @@ Od tej chwili karta typu dokumentu pokazuje także link **Reguły walidacji**.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-pl.png" alt="Zarządzanie regułami walidacji z ukrytymi skonfigurowanymi nazwami. Błędna etykieta Chodnikowiec oznacza pole nagłówka, a Zwyczaj regułę niestandardową. Względne daty pozostają w języku niemieckim."><figcaption><p>Zarządzanie regułami walidacji z ukrytymi skonfigurowanymi nazwami. Błędna etykieta Chodnikowiec oznacza pole nagłówka, a Zwyczaj regułę niestandardową. Względne daty pozostają w języku niemieckim.</p></figcaption></figure>
 
-Każda karta pokazuje nazwę i opis reguły oraz plakietki jej **poziomu** (Header / Line / Table), **ważności** (Error / Warning), **pola**, do którego przypisany jest błąd, oraz jej **źródła**. Użyj przełącznika po prawej stronie, aby aktywować lub dezaktywować regułę, oraz menu **⋮**, aby ją zduplikować lub usunąć. Listę można filtrować według poziomu (**Wszystkie / Header / Line / Table**) i stanu (**Wszystkie / Aktywne / Nieaktywne**) lub przeszukiwać.
+Każda karta pokazuje nazwę i opis reguły oraz plakietki jej **poziomu** (Header / Line / Table), **ważności** (Error / Warning), **pola**, do którego przypisany jest błąd, oraz jej **źródła**. Użyj przełącznika po prawej stronie, aby aktywować lub dezaktywować regułę, oraz menu **⋮**, aby ją edytować, zduplikować lub usunąć. Listę można filtrować według poziomu (**Wszystkie / Header / Line / Table**) i stanu (**Wszystkie / Aktywne / Nieaktywne**) lub przeszukiwać.
 
 ### Reguły systemowe, dostosowane i niestandardowe
 

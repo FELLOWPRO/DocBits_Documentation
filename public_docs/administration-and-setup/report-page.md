@@ -1,81 +1,62 @@
 # Rapport Pagina
 
-## 1. Hoe de Rapport Pagina inschakelen
+De pagina **Rapport** geeft een overzicht van de documentstroom in DocBits gedurende een bepaalde periode: hoeveel documenten er binnenkwamen, hoe lang de verwerking duurde, welke velden handmatig zijn gecorrigeerd en waar de documenten uiteindelijk terechtkwamen. De pagina is bedoeld voor beheerders en teamleiders die het intake- en validatiewerk als geheel willen bekijken, niet een afzonderlijk document.
 
-Ga naar **Instellingen** → **Document Verwerking** → **Module** → **Document Type** → Schakel de knop om de instelling in te schakelen.
+{% embed url="https://www.youtube.com/watch?v=ar9jXYJo_AM" %}
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FrFhJhMpPIpjVG8tTBWQg%252Fimage.png%3Falt%3Dmedia%26token%3D3b3e434e-a1f1-48e1-b143-cc77b6b15eb5\&width=768\&dpr=4\&quality=100\&sign=da674fae\&sv=2)
+## De pagina Rapport inschakelen
 
-## 2. **Hoe toegang krijgen tot de Rapport Pagina**
+De pagina wordt met een moduleschakelaar beheerd. Schakel deze eenmalig in voor de organisatie:
 
-Volg deze stappen om toegang te krijgen tot de **Rapport Pagina** in DocBits:
+1. Ga naar **Instellingen → Module** en open de groep **Documentintegratie**.
+2. Schakel op de kaart **Documenttype** de optie **Rapport weergeven** in.
+3. Het item **Rapport** verschijnt vervolgens in de zijbalk voor de gebruikers van de organisatie.
 
-1. **Log in op DocBits**
-   * Open DocBits en log in met uw referenties.
-2. **Klik op het Rapport Icoon**
-   * Aan de linkerkant, zoek en klik op het **Rapport** icoon (afgebeeld als een grafiek of diagram).
+<figure><img src="../.gitbook/assets/report-show-report-setting-nl.png" alt="De schakelaar Rapport weergeven."><figcaption><p>De schakelaar <strong>Rapport weergeven</strong>.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZoVXkhMetw2tSOxr7hwm%252Fimage.png%3Falt%3Dmedia%26token%3Df34e3503-b51b-465b-82eb-83e1932d2c7e\&width=768\&dpr=4\&quality=100\&sign=bd6d6fdf\&sv=2)
+## De pagina Rapport openen
 
-## **3. Gebruik van de Tijdseenheid Filter**
+Selecteer het grafiekpictogram in de zijbalk. De pagina wordt geopend met het tijdfilter, de kerncijfers van de periode en de veldstatistieken.
 
-*   Bovenaan de pagina kunt u de **Tijdseenheid** filter aanpassen om het tijdsbereik voor uw rapport te selecteren:
+<figure><img src="../.gitbook/assets/report-sidebar-icon-nl.png" alt="De DocBits-zijbalk met het gemarkeerde grafiekpictogram en de tooltip Rapport."><figcaption><p>Het item <strong>Rapport</strong> in de zijbalk.</p></figcaption></figure>
 
-    * **Laatste 30 Dagen**
-    * **Laatste 7 Dagen**
-    * **Aangepast Tijdsbestek** (aangepast datumbereik)
+## Het tijdsbestek kiezen
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fwvc6buYYssqhBZ9PhmlZ%252Fimage.png%3Falt%3Dmedia%26token%3D36e476be-41d5-4228-aac5-f380685adc41\&width=768\&dpr=4\&quality=100\&sign=dd45a28b\&sv=2)
+Met het filter **Tijdseenheid** bovenaan de pagina bepaalt u de periode voor alle cijfers en onderdelen eronder. U kunt kiezen uit **Laatste 7 dagen**, **Laatste 30 dagen** en **Selecteer tijdsbereik**. Met de laatste optie opent u een kalender waarin u een begin- en einddatum kiest.
 
-## **4. Weergave Nieuwe Documenten**
+<figure><img src="../.gitbook/assets/dbdc-19-report-time-options-native-20261103-nl.png" alt="Opties voor Tijdseenheid: Laatste 7 dagen, Laatste 30 dagen en Selecteer tijdsbereik. De applicatieheader en de navigatie vallen buiten de afbeelding."><figcaption><p>Opties voor <strong>Tijdseenheid</strong>: <strong>Laatste 7 dagen</strong>, <strong>Laatste 30 dagen</strong> en <strong>Selecteer tijdsbereik</strong>. De applicatieheader en de navigatie vallen buiten de afbeelding.</p></figcaption></figure>
 
-* Naast de **Tijdseenheid** filter, is er een informatieweergave met de naam **Nieuwe Documenten**. Dit toont het aantal nieuwe documenten dat is geïmporteerd tijdens het geselecteerde tijdsbestek.
+## De cijfers naast het filter
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F4Kmp6wx16x8thEEVVlpp%252Fimage.png%3Falt%3Dmedia%26token%3D90418c4b-5f39-4749-be46-a0efd30502d5\&width=768\&dpr=4\&quality=100\&sign=7dfef60e\&sv=2)
+<figure><img src="../.gitbook/assets/report-time-unit-filter-nl.png" alt="De bovenste rij van de pagina Rapport met het filter Tijdseenheid, de kaart Nieuwe documenten, de kaart Gemiddelde systeemtijd en de downloadknop."><figcaption><p><strong>Tijdseenheid</strong>, <strong>Nieuwe documenten</strong>, <strong>Gemiddelde systeemtijd</strong> en de downloadknop.</p></figcaption></figure>
 
-## **5. Gemiddelde Systeemtijd Weergave**
+- **Nieuwe documenten** geeft aan hoeveel documenten er in de geselecteerde periode zijn geïmporteerd.
+- **Gemiddelde systeemtijd** geeft aan hoeveel tijd in seconden DocBits in die periode gemiddeld nodig had om een document te verwerken.
+- Met de downloadknop rechts in de rij exporteert u het rapport voor de geselecteerde periode als Excel-bestand (XLSX).
 
-* Na de **Nieuwe Documenten** label, vindt u de **Gemiddelde Systeemtijd** weergave. Dit toont de gemiddelde tijd, in seconden, die het systeem nodig had om een nieuw document te verwerken tijdens het geselecteerde tijdsbestek.
+## Gewijzigde velden
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FlhHdV0vXDzkWC4jZYvqk%252Fimage.png%3Falt%3Dmedia%26token%3D167caeba-b75d-404a-8e52-54014b5eb980\&width=768\&dpr=4\&quality=100\&sign=10e01de0\&sv=2)
+De grafiek **Gewijzigde velden** telt hoe vaak elk veld in de geselecteerde periode handmatig is gecorrigeerd. Wanneer er gegevens beschikbaar zijn, krijgt elk veld een eigen balk, zodat u direct ziet welke velden uw team het vaakst bewerkt. Het vraagteken naast de kop legt uit wat de grafiek telt.
 
-## **6. Gewijzigde Velden Sectie**
+<figure><img src="../.gitbook/assets/report-changed-fields-nl.png" alt="De kaart Gewijzigde velden met de melding Er zijn geen gegevensitems gevonden in het betreffende tijdsbestek. Er zijn geen balken zichtbaar; rechtsboven staat het grafiekmenu."><figcaption><p>De kaart <strong>Gewijzigde velden</strong> zonder gegevens voor het geselecteerde tijdsbestek.</p></figcaption></figure>
 
-* Onder de tijdgerelateerde informatie, vindt u de **Gewijzigde Velden** sectie. Deze sectie toont een diagram dat laat zien hoe vaak elk documentveld handmatig is gewijzigd door gebruikers tijdens het geselecteerde tijdsbestek.
-* Elk veld wordt weergegeven met het overeenkomstige aantal wijzigingen, weergegeven als balken in het diagram.
+De kaart is leeg omdat er voor het geselecteerde tijdsbestek geen gegevens over handmatig gewijzigde velden beschikbaar zijn; daarom ziet u de melding **Er zijn geen gegevensitems gevonden in het betreffende tijdsbestek.** en geen balken.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FTXhCeKcLoyhG8luDxZwl%252Fimage.png%3Falt%3Dmedia%26token%3D3c76ddd1-31ed-401c-8305-44a1743118b4\&width=768\&dpr=4\&quality=100\&sign=d907ec72\&sv=2)
+Gebruik het menu rechtsboven in de grafiek om het diagram zelf te downloaden als **SVG**, **PNG** of **CSV**.
 
-* **Download Opties voor het Diagram**
-  * Aan de rechterkant van het **Gewijzigde Velden** diagram, is er een klein menu waarmee u het diagram in verschillende formaten kunt downloaden. U kunt het diagram downloaden als:
-    * **SVG**
-    * **PNG**
-    * **CSV**
-  * Om het diagram te downloaden, klikt u op het menu en selecteert u uw voorkeursbestandsindeling.
+## Aanvullende rapportonderdelen
 
-## **7. Aanvullende Rapport Secties**
+Onder de grafiek staan vier kaarten. Deze zijn standaard samengevouwen. Selecteer een kop om de bijbehorende tabel te openen en selecteer de kop opnieuw om deze te sluiten.
 
-Onder de **Gewijzigde Velden** sectie, vindt u vier extra knoppen die meer gedetailleerde informatie bieden wanneer erop wordt geklikt. Elke knop breidt uit om meer informatie te tonen wanneer erop wordt geklikt.
+1. **Totaal aantal documenten per type** geeft elk documenttype weer met de kolommen **Type** en **Graaf**. Bij een type met subdocumenttypen staat een **+** waarmee u het aantal kunt uitsplitsen.
+2. **Dagelijks gemiddelde per doctype** toont dezelfde lijst als een dagelijks gemiddelde per documenttype.
+3. **Statusstatistiek** splitst de documenten uit op verwerkingsstatus, met de kolommen **Type**, **Status** en **Graaf**.
+4. **Exportstatistieken** geeft eerst de organisaties van uw account weer. Vouw een organisatie uit om te zien welke exportformaten zijn gebruikt, met de kolommen **Gebruikers**, **Type** en **Geëxporteerd**.
 
-1.  **Totaal Documenten per Type**
+<figure><img src="../.gitbook/assets/report-total-documents-per-type-nl.png" alt="De uitgevouwen kaart Totaal aantal documenten per type met de kolommen Type en Graaf."><figcaption><p><strong>Totaal aantal documenten per type</strong>.</p></figcaption></figure>
 
-    * Deze knop toont het totale aantal documenten voor elk documenttype (bijv. Factuur, Inkooporder, enz.) tijdens het geselecteerde tijdsbestek.
-    * Wanneer u op de knop klikt, breidt deze uit om een lijst van documenttypen te tonen en het overeenkomstige aantal documenten van elk type dat is verwerkt in het geselecteerde tijdsbestek.
+<figure><img src="../.gitbook/assets/report-daily-average-per-doctype-nl.png" alt="De uitgevouwen kaart Dagelijks gemiddelde per doctype met de kolommen Type en Graaf."><figcaption><p><strong>Dagelijks gemiddelde per doctype</strong>.</p></figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FuDsfH9AwYObR5ypnhbXz%252Fimage.png%3Falt%3Dmedia%26token%3D029f854d-db83-4e5f-8919-7a1068636ebe\&width=768\&dpr=4\&quality=100\&sign=8eae7861\&sv=2)
-2.  **Dagelijks Gemiddelde per Doctype**
+<figure><img src="../.gitbook/assets/report-status-statistic-nl.png" alt="De uitgevouwen kaart Statusstatistiek met de kolommen Type, Status en Graaf."><figcaption><p><strong>Statusstatistiek</strong>.</p></figcaption></figure>
 
-    * Deze knop toont het dagelijkse gemiddelde aantal verwerkte documenten, gecategoriseerd per documenttype.
-    * Wanneer u op de knop klikt, breidt deze uit om de documenttypen en hun overeenkomstige dagelijkse gemiddelde te tonen.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FfqUOVDfb9TUhY900X3iF%252Fimage.png%3Falt%3Dmedia%26token%3D474ef6a4-970b-46fb-8d91-3e8f0dcf38fa\&width=768\&dpr=4\&quality=100\&sign=cbb8e97d\&sv=2)
-3.  **Status Statistiek**
-
-    * Deze knop toont de statusverdeling voor elk documenttype (bijv. Factuur, Inkooporder, enz.). Wanneer erop wordt geklikt, wordt deze uitgebreid om de status van documenten binnen elk documenttype weer te geven, waarbij wordt getoond hoeveel documenten er in elke statuscategorie zijn.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FQZUyAFuy30WBGNSnuzww%252Fimage.png%3Falt%3Dmedia%26token%3D9ca5513b-0163-4067-9ef4-117e43075569\&width=768\&dpr=4\&quality=100\&sign=b23b87f2\&sv=2)
-4.  **Export Statistiek**
-
-    * Deze knop stelt u in staat om exportstatistieken voor uw documenten te bekijken. Wanneer erop wordt geklikt, wordt deze uitgebreid om gegevens te verstrekken met betrekking tot documentexports, zoals het aantal exports, succes-/faalpercentages en andere relevante informatie.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F3XMcZ35ZVpKBmP1M8sXO%252Fimage.png%3Falt%3Dmedia%26token%3Ddc89131a-de1c-4300-862a-1da99c96b742\&width=768\&dpr=4\&quality=100\&sign=21667099\&sv=2)
+<figure><img src="../.gitbook/assets/dbdc-19-report-export-stats-native-20261103-nl.png" alt="Exportstatistieken met een uitgevouwen gedeelte voor een bestaande organisatie. Organisatienamen en rijwaarden zijn gemaskeerd; de afbeelding toont bestaande statistieken."><figcaption><p><strong>Exportstatistieken</strong> met een uitgevouwen gedeelte voor een bestaande organisatie. Organisatienamen en rijwaarden zijn gemaskeerd; de afbeelding toont bestaande statistieken.</p></figcaption></figure>

@@ -56,7 +56,8 @@ exportação, exclusão ou aprovação são bloqueadas, a menos que o modelo dec
 ## Como funciona: modelo, entrada, início, registro
 
 A página tem três abas: **Modelos**, **Entradas** e **Registros**. Um modelo descreve o fluxo, uma entrada decide
-com o que ele será executado e o registro mostra o resultado.
+com o que ele será executado e o registro mostra o resultado. O **?** ao lado das abas abre a página correspondente desta
+documentação no idioma da sua interface.
 
 <figure><img src="../../../../.gitbook/assets/testing-00-diagram-pt.png" alt="Diagrama: modelo mais entrada resulta em um teste; ele é iniciado no navegador, por um assistente de IA ou de fora; toda execução termina nos Registros"><figcaption><p>Diagrama: modelo mais entrada resulta em um teste; ele é iniciado no navegador, por um assistente de IA ou de fora; toda execução termina nos Registros.</p></figcaption></figure>
 
@@ -89,7 +90,7 @@ Continue lendo:
 * [Escolher um elemento no aplicativo](pick-in-app.md): escolha um elemento apontando para ele
 * [Recarregar e retomar](reload-and-resume.md): recarregue a página no meio de um teste
 * [Entradas](inputs.md): salve os valores da sua organização
-* [Iniciar um teste](start-a-test.md): no navegador, a partir de um assistente de IA ou do Playwright
+* [Iniciar um teste](start-a-test.md): no navegador, a partir de um link de início, de um assistente de IA ou do Playwright
 * [Registros e histórico](logs.md): resultados, gráfico e exportação em CSV
 * [Solução de problemas](troubleshooting.md)
 * [Para desenvolvedores](for-developers.md)

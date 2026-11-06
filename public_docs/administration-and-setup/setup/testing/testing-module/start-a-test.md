@@ -53,6 +53,39 @@ El editor de entradas le recuerda las tres formas en **Iniciar desde fuera:** **
 
 <figure><img src="../../../../.gitbook/assets/testing-16-start-from-outside-es.png" alt="Línea Iniciar desde fuera en el editor de entradas"><figcaption><p>Línea Iniciar desde fuera en el editor de entradas.</p></figcaption></figure>
 
+## Compartir un enlace de inicio
+
+Un enlace de inicio abre el cuadro de diálogo de inicio de una plantilla, ya cumplimentado, para que un compañero o un pipeline de CI no tenga
+que volver a elegir la plantilla y sus valores:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+| Parte | Qué hace |
+|---|---|---|
+| **run** | La plantilla que se abre, indicada mediante su clave (la línea situada bajo el nombre de la plantilla en el cuadro de diálogo, por ejemplo `default-smoke-analytics`). Obligatorio. |
+| **version** | Abre esta versión guardada. Si no se indica, se abre la última versión. |
+| **input** | Rellena los parámetros con una entrada guardada, indicada por su nombre o su ID. Los parámetros marcados como confidenciales nunca se rellenan. |
+| **autostart=1** | Inicia la prueba en cuanto se abre la página, pero solo cuando la plantilla se limita a leer datos. Si la plantilla escribe datos, sigue esperando la confirmación. |
+
+Para obtener el enlace, abra el cuadro de diálogo de inicio de una plantilla y cambie a **Comience desde afuera**. El bloque **Enlace de inicio**
+contiene el enlace de esa plantilla, mientras que **Playwright con enlace de inicio** incluye un fragmento de código que lo abre y espera el
+resultado.
+
+<figure><img src="../../../../.gitbook/assets/testing-start-link-dialog-es.png" alt="Cuadro de diálogo de inicio en la vista Comience desde afuera, con el enlace de inicio que se puede copiar y un ejemplo de Playwright"><figcaption><p>El cuadro de diálogo de inicio en la vista <strong>Comience desde afuera</strong>: el enlace de inicio que se puede copiar y un ejemplo de Playwright que lo abre. Una sesión aparece bajo <strong>Sesión que ejecuta la prueba</strong> en cuanto una pestaña acepta inicios desde fuera.</p></figcaption></figure>
+
+Qué ocurre al abrir el enlace:
+
+* DocBits abre **Configuración → Testing**, pestaña **Plantillas**, con el cuadro de diálogo de inicio de la plantilla. El enlace solo funciona para
+  quienes pueden abrir Configuración → Testing, porque la ejecución utiliza su pestaña del navegador y sus permisos.
+* Si no se encuentra la plantilla, la versión o la entrada, aparece un error bajo las pestañas y no se inicia nada.
+* Con `autostart=1`, una plantilla que solo lee datos se inicia inmediatamente. En los demás casos, hay que seleccionar **Iniciar**, y las
+  plantillas que escriben datos siguen requiriendo confirmación.
+* Los parámetros se eliminan de la barra de direcciones una vez leídos, de modo que recargar la página no inicia la prueba una
+  segunda vez.
+
+El **?** situado junto a las pestañas y en el cuadro de diálogo de inicio abre la página correspondiente de esta documentación en el idioma de su
+interfaz.
+
 ## Iniciar desde un asistente de IA (MCP)
 
 Si su asistente de IA está conectado a DocBits (consulte [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md)

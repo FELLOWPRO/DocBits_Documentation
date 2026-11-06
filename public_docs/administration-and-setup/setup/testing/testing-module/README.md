@@ -56,7 +56,8 @@ aprobar se bloquean a menos que la plantilla declare que escribe datos.
 ## Cómo funciona: plantilla, entrada, inicio, registro
 
 La página tiene tres pestañas: **Plantillas**, **Entradas** y **Registros**. Una plantilla describe el flujo, una entrada determina
-con qué se ejecuta y el registro muestra el resultado.
+con qué se ejecuta y el registro muestra el resultado. El **?** situado junto a las pestañas abre la página correspondiente de esta
+documentación en el idioma de su interfaz.
 
 <figure><img src="../../../../.gitbook/assets/testing-00-diagram-es.png" alt="Diagrama: plantilla más entrada da una prueba; se inicia en el navegador, mediante un asistente de IA o desde fuera; cada ejecución termina en los registros"><figcaption><p>Diagrama: plantilla más entrada da una prueba; se inicia en el navegador, mediante un asistente de IA o desde fuera; cada ejecución termina en los registros.</p></figcaption></figure>
 
@@ -89,7 +90,7 @@ Continúe con:
 * [Seleccionar un elemento en la app](pick-in-app.md): elegir un elemento señalándolo
 * [Recargar y reanudar](reload-and-resume.md): recargar la página en mitad de una prueba
 * [Entradas](inputs.md): guardar los valores de su organización
-* [Iniciar una prueba](start-a-test.md): en el navegador, desde un asistente de IA o desde Playwright
+* [Iniciar una prueba](start-a-test.md): en el navegador, mediante un enlace de inicio, desde un asistente de IA o desde Playwright
 * [Registros e historial](logs.md): resultados, gráfico y exportación a CSV
 * [Solución de problemas](troubleshooting.md)
 * [Para desarrolladores](for-developers.md)

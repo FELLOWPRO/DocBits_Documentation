@@ -63,6 +63,31 @@ const { log_id } = await res.json();
 Utilice el host de API de su región (consulte [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md) para ver la lista de hosts).
 CSV de los registros: `GET /testing/logs/export.csv` (mismos filtros que la lista) y `GET /testing/logs/<log_id>/export.csv`.
 
+## Iniciar una prueba mediante un enlace de inicio
+
+Si su automatización controla un navegador con la sesión iniciada, abra el enlace de inicio de la plantilla en lugar de llamar a la API:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+`run` es la clave de la plantilla (obligatoria), `version` fija una versión guardada (de forma predeterminada, la última), `input` indica una
+entrada guardada por su nombre o su ID, y `autostart=1` inicia sin ningún clic una plantilla que solo lee datos. Una plantilla que
+escribe datos sigue requiriendo confirmación, por lo que la ejecución espera a `testing-start-confirm`. El enlace solo funciona en el navegador
+de un administrador de la organización con la sesión iniciada; los clics se producen en esa pestaña.
+
+```ts
+// signed in as an organisation admin (your login helper)
+await page.goto('https://<your-environment>/settings/testing?run=default-smoke-analytics&version=1.0.0');
+const start = page.getByTestId('testing-start-confirm');
+const status = page.getByTestId('testing-run-status');
+await start.or(status).first().waitFor();
+if (await start.isVisible()) await start.click();
+await expect(status).toHaveAttribute('data-status', /(passed|failed|blocked|cancelled)$/);
+```
+
+`data-status` es `running`, `passed`, `failed`, `blocked` o `cancelled`. `blocked` significa que una regla detuvo la ejecución
+antes de que se ejecutaran sus pasos. Los parámetros se eliminan de la URL después de leerse, por lo que recargar la página no
+vuelve a iniciar la prueba. Copie el enlace en el cuadro de diálogo de inicio, en **Comience desde afuera → Enlace de inicio**.
+
 ## Iniciar mediante MCP
 
 El servidor MCP de DocBits ofrece las herramientas de Testing `testing_list_templates`, `testing_list_inputs`, `testing_start`,

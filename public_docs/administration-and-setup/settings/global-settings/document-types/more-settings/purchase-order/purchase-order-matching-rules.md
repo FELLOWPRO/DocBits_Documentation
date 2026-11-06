@@ -22,7 +22,7 @@ Questa pagina di configurazione viene utilizzata per definire e gestire le regol
 
 ## Come Accedere
 
-1. Navigare su **Impostazioni** → **Impostazioni globali** → **Tipi di Documento**, selezionare il tipo di documento e cliccare su **Altre impostazioni**.
+1. Navigare su **Impostazioni** → **Elaborazione Documenti** → **Tipi di Documento**, selezionare il tipo di documento e cliccare su **Altre impostazioni**.
 2. Nella scheda **Ordine di acquisto** attivare **Lato server di corrispondenza PO**.
 3. Cliccare su **Configurare le regole di corrispondenza degli ordini di acquisto** accanto all’interruttore.
 

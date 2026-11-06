@@ -21,7 +21,7 @@ Lo standard ZUGFeRD è sempre attivo per impostazione predefinita, ma se necessa
 
 ### **Passaggi per modificare le impostazioni di ZUGFeRD:**
 
-1. Vai su **Impostazioni → Impostazioni globali → Tipi di documento → Fattura**.
+1. Vai su **Impostazioni → Elaborazione Documenti → Tipi di documento → Fattura**.
 2. Fai clic su **E-Doc**.\\
 3. Viene visualizzato l'elenco di tutti gli e-doc disponibili.
 4. Individua la versione di **ZUGFeRD** che vuoi modificare.\\
@@ -67,7 +67,7 @@ La **configurazione dei percorsi di estrazione** serve a estrarre i dati e a pop
 2. Crea una nuova bozza facendo clic sull'**icona della matita**.
 3. Seleziona la bozza appena creata.
 4. Crea un nuovo campo oppure modifica uno esistente.
-5. Il lato sinistro rappresenta l'**ID del campo DocBits**, che si trova in **Impostazioni → Impostazioni globali → Tipi di documento → Fattura → Campi**.\\
+5. Il lato sinistro rappresenta l'**ID del campo DocBits**, che si trova in **Impostazioni → Elaborazione Documenti → Tipi di documento → Fattura → Campi**.\\
 6. Il lato destro rappresenta il **percorso del campo** creato nella Trasformazione.
 7. Fai clic su **Salva**.
 

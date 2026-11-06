@@ -14,7 +14,7 @@ Le impostazioni di Controllo degli Accessi si applicano solo se la funzionalità
 
 Assicurati che l'utente sia correttamente assegnato ai gruppi appropriati:
 
-* Naviga su: `Impostazioni` > `Impostazioni Globali` > `Gruppi, Utenti e Autorizzazioni`.
+* Naviga su: `Impostazioni` > `Organizzazione e Accesso` > `Gruppi e autorizzazioni`.
 * Seleziona **Gruppi e Autorizzazioni**.
 * Conferma che l'utente sia elencato nel gruppo previsto.
 * Se il gruppo utilizza un controllo degli accessi specifico, l'assegnazione mancante del gruppo bloccherà l'accesso ai documenti e alle azioni.
@@ -42,7 +42,7 @@ L'accesso può essere anche limitato al **livello di campo**, il che potrebbe bl
 
 Questa impostazione globale limita la visibilità dei documenti:
 
-* Naviga su: `Impostazioni` > `Impostazioni Globali` > `Gruppi, Utenti e Autorizzazioni`.
+* Naviga su: `Impostazioni` > `Organizzazione e Accesso` > `Gruppi e autorizzazioni`.
 * Se **Solo Documenti Assegnati** è **abilitato**, gli utenti possono vedere solo i documenti assegnati esplicitamente a loro o al loro gruppo.
 * Se gli utenti non riescono a vedere i documenti attesi:
   * Controlla le assegnazioni dei documenti.

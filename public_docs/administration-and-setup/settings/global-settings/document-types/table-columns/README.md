@@ -2,7 +2,7 @@
 
 Le colonne della tabella definiscono quali colonne ha la tabella delle voci di riga di un tipo di documento: cosa DocBits estrae in ogni colonna, cosa vede l'utente nella schermata di validazione e cosa viene inviato all'ERP in fase di esportazione.
 
-**Dove:** Impostazioni → Impostazioni Globali → Tipi di Documento → Colonne della Tabella
+**Dove:** Impostazioni → Elaborazione Documenti → Tipi di Documento → Colonne della Tabella
 
 <figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-it-20261104.png" alt="Menu Use AI attuale con Predefinito, Sì e No. Nessuna opzione è stata modificata. Le celle dei titoli sono nascoste per riservatezza."><figcaption><p>Menu Use AI attuale con Predefinito, Sì e No. Nessuna opzione è stata modificata. Le celle dei titoli sono nascoste per riservatezza.</p></figcaption></figure>
 

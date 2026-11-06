@@ -10,7 +10,7 @@ Aggiungi una colonna quando per ogni voce di riga deve essere acquisito un valor
 
 ## Passaggi
 
-1. Apri **Impostazioni → Impostazioni Globali → Tipi di Documento → Colonne della Tabella**.
+1. Apri **Impostazioni → Elaborazione Documenti → Tipi di Documento → Colonne della Tabella**.
 2. Fai clic su **Aggiungi nuova colonna della tabella**.
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Finestra di dialogo Aggiungi nuova colonna della tabella con Titolo, La colonna è obbligatoria, Seleziona tipo di colonna e Seleziona tabella"><figcaption><p>Aggiungi nuova colonna della tabella</p></figcaption></figure>

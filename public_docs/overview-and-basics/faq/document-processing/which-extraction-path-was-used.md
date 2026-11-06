@@ -20,7 +20,7 @@ I campi di intestazione hanno un proprio indicatore di origine accanto al valore
 
 * **Impostazioni → Elaborazione del documento → Classificazione ed estrazione → Modello AI**: la tabella sotto il selettore elenca ogni fornitore con un modello memorizzato o un addestramento. Un fornitore in questo elenco con *dati di addestramento* ha regole salvate; *reimposta i dati di addestramento* le rimuove.
 * **Impostazioni → Elaborazione del documento → Impostazioni OCR**: *Usa E-Text se disponibile* e *Usa i dati AI per le tabelle* cambiano il testo che l'estrazione vede. Un fornitore può sovrascrivere l'E-Text in *Altre impostazioni* nella schermata di validazione.
-* **Impostazioni → Impostazioni Globali → Tipi di Documento → Colonne della Tabella**: flag nascosta, obbligatoria e *Usa AI*. Una colonna nascosta non viene mai compilata; una colonna *Usa AI* viene compilata dall'AI anche per i fornitori con regole.
+* **Impostazioni → Elaborazione Documenti → Tipi di Documento → Colonne della Tabella**: flag nascosta, obbligatoria e *Usa AI*. Una colonna nascosta non viene mai compilata; una colonna *Usa AI* viene compilata dall'AI anche per i fornitori con regole.
 
 ## 3. Riproduci senza l'interfaccia (API / MCP)
 

@@ -32,7 +32,7 @@ Le regole sono definite per **tipo di documento** e vengono eseguite su ogni doc
 
 Le regole di convalida personalizzate si attivano **per tipo di documento**. Non esiste un interruttore valido per l'intera organizzazione.
 
-1. Vai su **Impostazioni → Impostazioni generali → Tipi di documento**.
+1. Vai su **Impostazioni → Elaborazione Documenti → Tipi di documento**.
 2. Sulla scheda del tipo di documento, clicca sull'icona delle **impostazioni** (ingranaggio).
 3. Apri la sezione **Regole di convalida personalizzate** e attiva l'interruttore.
 4. Clicca su **Gestisci le regole di convalida** per aprire l'elenco delle regole.
@@ -53,7 +53,7 @@ Da questo momento la scheda del tipo di documento mostra anche un link **Regole 
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-it.png" alt="Gestione delle regole di convalida con i nomi configurati nascosti. Le date relative restano in tedesco nel prodotto."><figcaption><p>Gestione delle regole di convalida con i nomi configurati nascosti. Le date relative restano in tedesco nel prodotto.</p></figcaption></figure>
 
-Ogni scheda mostra il nome e la descrizione della regola e i badge del suo **livello** (Header / Line / Table), della **gravità** (Error / Warning), del **campo** a cui è associato l'errore e della sua **origine**. Usa l'interruttore a destra per attivare o disattivare una regola e il menu **⋮** per duplicarla o eliminarla. Filtra l'elenco per livello (**All / Header / Line / Table**) e per stato (**All / Active / Inactive**), oppure cercalo.
+Ogni scheda mostra il nome e la descrizione della regola e i badge del suo **livello** (Header / Line / Table), della **gravità** (Error / Warning), del **campo** a cui è associato l'errore e della sua **origine**. Usa l'interruttore a destra per attivare o disattivare una regola e il menu **⋮** per modificarla, duplicarla o eliminarla. Filtra l'elenco per livello (**All / Header / Line / Table**) e per stato (**All / Active / Inactive**), oppure cercalo.
 
 ### Regole System default, Customized e Custom
 

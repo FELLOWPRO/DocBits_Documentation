@@ -29,7 +29,7 @@ All'interno di ogni gruppo, le pagine più usate sono posizionate in cima.
 
 ## Pagine di impostazioni lunghe — navigazione per àncore
 
-Le pagine di impostazioni con molte sezioni (come le Impostazioni Globali o la configurazione di un Tipo di Documento) ora mostrano una lista di link àncora nell'intestazione. Clicca su un'àncora per saltare a quella sezione. L'URL si aggiorna durante lo scorrimento, così il link a una sezione specifica può essere condiviso o salvato nei preferiti.
+Le pagine di impostazioni con molte sezioni (come la panoramica delle impostazioni o la configurazione di un Tipo di Documento) ora mostrano una lista di link àncora nell'intestazione. Clicca su un'àncora per saltare a quella sezione. L'URL si aggiorna durante lo scorrimento, così il link a una sezione specifica può essere condiviso o salvato nei preferiti.
 
 ## Trovare la documentazione mentre lavori — icone di aiuto
 

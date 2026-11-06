@@ -6,11 +6,11 @@ In qualità di amministratore dell'organizzazione puoi **richiedere a ogni membr
 
 Gli accessi tramite single sign-on (SSO) — Google, Microsoft, SAML — sono **esenti**: il loro provider di identità applica già la propria MFA, quindi il requisito riguarda solo gli accessi con password.
 
-Questa impostazione si trova in **Impostazioni → Impostazioni Globali → Informazioni sulla Società → Autenticazione a due fattori** ed è disponibile solo per gli amministratori dell'organizzazione.
+Questa impostazione si trova in **Impostazioni → Organizzazione e Accesso → Informazioni sulla Società → Autenticazione a due fattori** ed è disponibile solo per gli amministratori dell'organizzazione.
 
 ## Richiedere la MFA per la tua organizzazione
 
-1. Vai su **Impostazioni → Impostazioni Globali → Informazioni sulla Società**.
+1. Vai su **Impostazioni → Organizzazione e Accesso → Informazioni sulla Società**.
 2. Apri la sezione **Autenticazione a due fattori**.
 3. Attiva **Richiedi l'autenticazione a due fattori per tutti i membri** e fai clic su **Salva**.
 

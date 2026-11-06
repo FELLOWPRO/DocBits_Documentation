@@ -8,7 +8,7 @@ Questa pagina spiega come verificare l'elaborazione riuscita del tuo BOD (Busine
 
 ### Recupero della tua Chiave API
 
-1.  Vai a **Impostazioni → Impostazioni globali → Integrazione e SSO**.
+1.  Vai a **Impostazioni → Sistema e Amministrazione → Integrazione e SSO**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_integration.png)
 2.  Puoi copiare manualmente la tua **Chiave API** oppure cliccare sul pulsante di copia per copiarla negli appunti.

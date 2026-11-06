@@ -26,7 +26,7 @@ L'origine resta disponibile, ma come una condizione tra le tante. Una regola pu�
 
 I layout basati su regole vengono attivati **per tipo di documento** da un **amministratore dell'organizzazione**.
 
-1. Andare su **Impostazioni → Impostazioni globali → Tipi di documento**.
+1. Andare su **Impostazioni → Elaborazione Documenti → Tipi di documento**.
 2. Fare clic sull'icona **impostazioni** (ingranaggio) sulla scheda del tipo di documento.
 3. Aprire **Gestisci i layout** e attivare l'interruttore.
 

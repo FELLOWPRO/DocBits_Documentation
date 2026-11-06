@@ -4,7 +4,7 @@ Le caselle controllano valori obbligatori, modificabilità e visibilità. Use AI
 
 Tutto, tranne il titolo, si modifica direttamente nell'elenco; non esiste una finestra di modifica.
 
-**Dove:** Impostazioni → Impostazioni Globali → Tipi di Documento → Colonne della Tabella
+**Dove:** Impostazioni → Elaborazione Documenti → Tipi di Documento → Colonne della Tabella
 
 ## Attivare o disattivare un flag
 

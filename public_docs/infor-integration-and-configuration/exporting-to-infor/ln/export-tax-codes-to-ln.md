@@ -40,7 +40,7 @@ Questa guida ti guiderà attraverso il processo di configurazione per preparare 
 
 ### **Passo 2: Aggiungi Campi in DocBits**
 
-1.  Naviga su **Impostazioni** -> **Impostazioni Globali** -> **Tipi di Documento**.
+1.  Naviga su **Impostazioni** -> **Elaborazione Documenti** -> **Tipi di Documento**.
 
     <figure><img src="../../../.gitbook/assets/native-document-types-it-20261023.png" alt="Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato."><figcaption><p>Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato.</p></figcaption></figure>
 2.  Scegli il menu **Campi** corrispondente al Tipo di Documento dove desideri aggiungere i campi.
@@ -62,7 +62,7 @@ Questa guida ti guiderà attraverso il processo di configurazione per preparare 
 
 ### **Passo 3: Modifica Layout**
 
-1.  Vai su **Impostazioni** -> **Impostazioni Globali** -> **Tipi di Documento**.
+1.  Vai su **Impostazioni** -> **Elaborazione Documenti** -> **Tipi di Documento**.
 
     <figure><img src="../../../.gitbook/assets/native-document-types-it-20261023.png" alt="Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato."><figcaption><p>Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato.</p></figcaption></figure>
 2.  Apri il menu **Modifica layout** per il Tipo di Documento che desideri modificare.
@@ -130,7 +130,7 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 
 ### **Passo 2: Aggiungi Campi in DocBits**
 
-1.  Naviga su **Impostazioni** -> **Impostazioni Globali** -> **Tipi di Documento**.
+1.  Naviga su **Impostazioni** -> **Elaborazione Documenti** -> **Tipi di Documento**.
 
     <figure><img src="../../../.gitbook/assets/native-document-types-it-20261023.png" alt="Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato."><figcaption><p>Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato.</p></figcaption></figure>
 2.  Scegli il menu **Campi** corrispondente al Tipo di Documento dove desideri aggiungere i campi.
@@ -152,7 +152,7 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 
 ### **Passo 3: Modifica Layout**
 
-1.  Vai su **Impostazioni** -> **Impostazioni Globali** -> **Tipi di Documento**.
+1.  Vai su **Impostazioni** -> **Elaborazione Documenti** -> **Tipi di Documento**.
 
     <figure><img src="../../../.gitbook/assets/native-document-types-it-20261023.png" alt="Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato."><figcaption><p>Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato.</p></figcaption></figure>
 2.  Apri il menu **Modifica layout** per il Tipo di Documento che desideri modificare.

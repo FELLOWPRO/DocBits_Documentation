@@ -16,7 +16,7 @@ L'assistente è **disattivato per impostazione predefinita**. Questa pagina most
 
 ## Attivarlo
 
-1. Vai su **Impostazioni → Impostazioni globali → Informazioni sulla società**. L'intestazione della pagina mostra **Company Settings**.
+1. Vai su **Impostazioni → Organizzazione e Accesso → Informazioni sulla società**. L'intestazione della pagina mostra **Company Settings**.
 2. Apri la sezione **Assistenti** (Assistants).
 3. Attiva **Abilita l'assistente impostazioni** (Enable the settings assistant).
 

@@ -10,7 +10,7 @@ Ogni tipo di documento ha le proprie configurazioni List of Values (LoV), che de
 
 ### Per configurare List of Values, vai a:
 
-Impostazioni → Impostazioni globali → Tipi di documenti → Fattura → Campi → Impostazioni dati anagrafici → LOV Dati anagrafici
+Impostazioni → Elaborazione Documenti → Tipi di documenti → Fattura → Campi → Impostazioni dati anagrafici → LOV Dati anagrafici
 
 ### **Creare una nuova configurazione List of Values**
 

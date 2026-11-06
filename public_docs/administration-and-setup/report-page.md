@@ -1,83 +1,60 @@
 # Page de rapport
 
+La page **Rapport** résume le traitement des documents dans DocBits au cours d’une période : nombre de documents reçus, durée de traitement, champs corrigés par les utilisateurs et destination finale des documents. Elle s’adresse aux administrateurs et aux responsables d’équipe qui suivent globalement la réception et la validation des documents, et non un document particulier.
+
 {% embed url="https://www.youtube.com/watch?v=ar9jXYJo_AM" %}
 
-### 1. Comment activer la page de rapport
+## Activer la page Rapport
 
-Accédez à **Settings** → **Document Processing** → **Module** → **Document Type** → **Show Report** et activez le bouton pour activer ce paramètre.
+L’affichage de cette page dépend d’un module. Activez-le une seule fois pour l’organisation :
 
-<figure><img src="../.gitbook/assets/enable_report_page_setting.png" alt="Paramètre d'activation de la page de rapport"><figcaption></figcaption></figure>
+1. Accédez à **Paramètres → Module** et ouvrez le groupe **Intégration de documents**.
+2. Dans la carte **Type de document**, activez l’option **Afficher le rapport**.
+3. L’entrée **Rapport** apparaît alors dans la barre latérale pour les utilisateurs de l’organisation.
 
-### 2. **Comment accéder à la page de rapport**
+<figure><img src="../.gitbook/assets/report-show-report-setting-fr.png" alt="L’interrupteur Afficher le rapport."><figcaption><p>L’interrupteur Afficher le rapport.</p></figcaption></figure>
 
-Suivez ces étapes pour accéder à la **page de rapport** dans DocBits :
+## Ouvrir la page Rapport
 
-1. **Connectez-vous à DocBits**
-   * Ouvrez DocBits et connectez-vous avec vos identifiants.
-2. **Cliquez sur l'icône Report**
-   * Dans la barre latérale gauche, repérez l'icône **Report** (représentée par un graphique) et cliquez dessus.
+Sélectionnez l’icône représentant un graphique dans la barre latérale. La page s’ouvre avec le filtre de période, les chiffres clés de la période et les statistiques de champs.
 
-<figure><img src="../.gitbook/assets/image (311).png" alt="Icône Report dans la barre latérale" width="314"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/report-sidebar-icon-fr.png" alt="La barre latérale de DocBits avec l’icône de graphique mise en évidence et l’info-bulle Rapport"><figcaption><p>L’entrée <strong>Rapport</strong> dans la barre latérale.</p></figcaption></figure>
 
-### **3. Utiliser le filtre Time Unit**
+## Choisir la période
 
-*   En haut de la page, vous pouvez ajuster le filtre **Time Unit** pour sélectionner la période de votre rapport :
+Le filtre **Unité de temps**, en haut de la page, définit la période pour tous les indicateurs et toutes les sections ci-dessous. Il propose **7 derniers jours**, **Les 30 derniers jours** et **Sélectionnez la plage horaire**, qui ouvre un calendrier dans lequel vous choisissez une date de début et une date de fin.
 
-    * **Last 30 Days**
-    * **Last 7 Days**
-    * **Custom Time Frame** (plage de dates personnalisée)
+<figure><img src="../.gitbook/assets/dbdc-19-report-time-options-native-20261103-fr.png" alt="Options d’Unité de temps : 7 derniers jours, Les 30 derniers jours et Sélectionnez la plage horaire. L’en-tête et la navigation de l’application sont hors image."><figcaption><p>Options d’Unité de temps : 7 derniers jours, Les 30 derniers jours et Sélectionnez la plage horaire. L’en-tête et la navigation de l’application sont hors image.</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/time_unit_filter.png" alt="Filtre Time Unit" width="563"><figcaption></figcaption></figure>
+## Les indicateurs à côté du filtre
 
-### **4. Affichage New Documents**
+<figure><img src="../.gitbook/assets/report-time-unit-filter-fr.png" alt="La ligne supérieure de la page Rapport : le filtre Unité de temps, la carte Nouveaux documents, la carte Temps système moyen et le bouton de téléchargement"><figcaption><p><strong>Unité de temps</strong>, <strong>Nouveaux documents</strong>, <strong>Temps système moyen</strong> et le bouton de téléchargement.</p></figcaption></figure>
 
-* À côté du filtre **Time Unit**, un affichage d'information intitulé **New Documents** indique le nombre de nouveaux documents importés pendant la période sélectionnée.
+- **Nouveaux documents** indique le nombre de documents importés au cours de la période sélectionnée.
+- **Temps système moyen** indique le temps moyen, en secondes, nécessaire à DocBits pour traiter un document au cours de cette période.
+- Le bouton de téléchargement à droite de la ligne exporte le rapport sous forme de fichier Excel (XLSX) pour la période sélectionnée.
 
-<figure><img src="../.gitbook/assets/new_documents_display.png" alt="Affichage New Documents" width="315"><figcaption></figcaption></figure>
+## Champs modifiés
 
-### **5. Affichage Average System Time**
+La section **Champs modifiés** indique combien de fois chaque champ a été corrigé manuellement au cours de la période sélectionnée. Lorsque des données sont disponibles, le graphique présente une barre par champ, ce qui permet de repérer facilement les champs que votre équipe modifie le plus. Le point d’interrogation à côté du titre explique ce que compte le graphique.
 
-* Après l'affichage **New Documents**, vous trouverez l'affichage **Average System Time**. Il indique le temps moyen, en secondes, que le système a mis pour traiter un nouveau document pendant la période sélectionnée.
+<figure><img src="../.gitbook/assets/report-changed-fields-fr.png" alt="La section Champs modifiés affiche le message « Aucune donnée n'a été trouvée dans la période concernée. » ; aucune barre n’est affichée."><figcaption><p>La section <strong>Champs modifiés</strong> affiche le message « Aucune donnée n'a été trouvée dans la période concernée. » ; aucune barre n’est affichée. Ce message apparaît lorsqu’aucun champ n’a été corrigé pendant la période sélectionnée.</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/average_system_time_display.png" alt="Affichage Average System Time" width="437"><figcaption></figcaption></figure>
+Utilisez le menu dans le coin supérieur droit du graphique pour télécharger celui-ci au format **SVG**, **PNG** ou **CSV**.
 
-### **6. Section Champs modifiés**
+## Sections supplémentaires du rapport
 
-* Sous les informations relatives au temps, vous trouverez la section **Changed Fields**. Elle affiche un diagramme montrant à quelle fréquence chaque champ du document a été modifié manuellement par les utilisateurs pendant la période sélectionnée.
-* Chaque champ est affiché avec le nombre de modifications correspondant, représenté par des barres dans le diagramme.
+Sous le graphique se trouvent quatre cartes. Elles sont repliées par défaut ; sélectionnez l’en-tête d’une carte pour afficher son tableau, puis sélectionnez-le à nouveau pour la replier.
 
-<figure><img src="../.gitbook/assets/image (321).png" alt="Diagramme Changed Fields" width="563"><figcaption></figcaption></figure>
+1. **Nombre total de documents par type** répertorie chaque type de document avec les colonnes **Type** et **Nombre**, cette dernière indiquant le nombre de documents. Un type qui comporte des sous-types de documents affiche un **+** permettant de ventiler ce total.
+2. **Moyenne quotidienne par type de document** présente la même liste sous forme de moyenne quotidienne pour chaque type de document.
+3. **Statistique d'état** répartit les documents par statut de traitement, avec les colonnes **Type**, **Statut** et **Nombre**.
+4. **Statistiques d'exportation** répertorie d’abord les organisations de votre compte ; développez-en une pour voir les formats d’exportation utilisés, avec les colonnes **Utilisateurs**, **Type** et **Exporté**.
 
-* **Options de téléchargement du diagramme**
-  * Sur le côté droit du diagramme **Changed Fields**, un petit menu permet de télécharger le diagramme dans différents formats. Vous pouvez le télécharger au format :
-    * **SVG**
-    * **PNG**
-    * **CSV**
-  * Pour télécharger le diagramme, cliquez sur le menu et sélectionnez le format de fichier de votre choix.
+<figure><img src="../.gitbook/assets/report-total-documents-per-type-fr.png" alt="La carte Nombre total de documents par type développée, avec les colonnes Type et Nombre"><figcaption><p><strong>Nombre total de documents par type</strong>.</p></figcaption></figure>
 
-### **7. Autres sections du rapport**
+<figure><img src="../.gitbook/assets/report-daily-average-per-doctype-fr.png" alt="La carte Moyenne quotidienne par type de document développée, avec les colonnes Type et Nombre"><figcaption><p><strong>Moyenne quotidienne par type de document</strong>.</p></figcaption></figure>
 
-Sous la section **Changed Fields**, vous trouverez quatre boutons supplémentaires qui fournissent des informations plus détaillées. Chaque bouton se déploie au clic pour afficher davantage d'informations.
+<figure><img src="../.gitbook/assets/report-status-statistic-fr.png" alt="La carte Statistique d'état développée, avec les colonnes Type, Statut et Nombre"><figcaption><p><strong>Statistique d'état</strong>.</p></figcaption></figure>
 
-1.  **Total Documents per Type**
-
-    * Ce bouton affiche le nombre total de documents pour chaque type de document (par exemple Invoice, Purchase Order, etc.) pendant la période sélectionnée.
-    * Lorsque vous cliquez sur le bouton, il se déploie et affiche la liste des types de documents avec le nombre de documents de chaque type traités pendant la période sélectionnée.
-
-    <figure><img src="../.gitbook/assets/total_documents_per_type_report.png" alt="Rapport Total Documents per Type" width="563"><figcaption></figcaption></figure>
-2.  **Moyenne quotidienne par Doctype**
-
-    * Ce bouton affiche le nombre moyen quotidien de documents traités, par type de document.
-    * Lorsque vous cliquez sur le bouton, il se déploie et affiche les types de documents avec leur moyenne quotidienne correspondante.
-
-    <figure><img src="../.gitbook/assets/image (324).png" alt="Rapport Daily Average per Doctype" width="563"><figcaption></figcaption></figure>
-3.  **Status Statistic**
-
-    * Ce bouton affiche la répartition des statuts pour chaque type de document (par exemple Invoice, Purchase Order, etc.). Au clic, il se déploie pour afficher le statut des documents de chaque type de document et indique combien de documents se trouvent dans chaque catégorie de statut.
-
-    <figure><img src="../.gitbook/assets/status_statistic_report.png" alt="Rapport Status Statistic" width="563"><figcaption></figcaption></figure>
-4.  **Export Statistic**
-
-    * Ce bouton permet de consulter les statistiques d'export de vos documents. Au clic, il se déploie pour fournir des données relatives aux exports de documents, comme le nombre d'exports, les taux de réussite et d'échec et d'autres informations utiles.
-
-    <figure><img src="../.gitbook/assets/export_statistic_report.png" alt="Rapport Export Statistic" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/dbdc-19-report-export-stats-native-20261103-fr.png" alt="Statistiques d'exportation avec une organisation existante développée. Les noms des organisations et les valeurs des lignes sont masqués ; cette image présente des statistiques existantes."><figcaption><p><strong>Statistiques d'exportation</strong> avec une organisation existante développée. Les noms des organisations et les valeurs des lignes sont masqués ; cette image présente des statistiques existantes.</p></figcaption></figure>

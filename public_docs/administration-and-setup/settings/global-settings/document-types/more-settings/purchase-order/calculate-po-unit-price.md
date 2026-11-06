@@ -6,7 +6,7 @@ Je kunt ervoor kiezen om de **eenheidsprijs** van elke inkooporderregel automati
 
 ## **Activeringsstappen**
 
-1.  Navigeer naar **Instellingen** -> **Globale Instellingen** -> **Documenttypen**.
+1.  Navigeer naar **Instellingen** -> **Documentverwerking** -> **Documenttypen**.
 
 2.  Selecteer het gewenste documenttype en open de aanvullende instellingen via het **tandwiel**.
 

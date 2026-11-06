@@ -16,7 +16,7 @@ De assistent staat **standaard uit**. Deze pagina laat zien waar u hem inschakel
 
 ## Inschakelen
 
-1. Ga naar **Instellingen → Globale instellingen → Bedrijfsinformatie**. De paginakop toont **Company Settings** (bedrijfsinstellingen).
+1. Ga naar **Instellingen → Organisatie & Toegang → Bedrijfsinformatie**. De paginakop toont **Company Settings** (bedrijfsinstellingen).
 2. Open de sectie **Assistants** (assistenten).
 3. Schakel **Enable the settings assistant** (de instellingenassistent inschakelen) in.
 

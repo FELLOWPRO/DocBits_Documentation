@@ -32,7 +32,7 @@ Regels worden per **documenttype** gedefinieerd en worden uitgevoerd op elk docu
 
 Aangepaste validatieregels worden **per documenttype** ingeschakeld. Er is geen schakelaar voor de hele organisatie.
 
-1. Ga naar **Instellingen → Algemene instellingen → Documenttypen**.
+1. Ga naar **Instellingen → Documentverwerking → Documenttypen**.
 2. Klik op de kaart van het documenttype op het **instellingen**-pictogram (tandwiel).
 3. Open het gedeelte **Aangepaste validatieregels** en zet de schakelaar aan.
 4. Klik op **Validatieregels beheren** om de regellijst te openen.
@@ -53,7 +53,7 @@ Vanaf nu toont de kaart van het documenttype ook een link **Validatieregels**.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-nl.png" alt="Beheer van validatieregels met afgeschermde geconfigureerde namen. Relatieve datumaanduidingen blijven in deze productweergave Duitstalig."><figcaption><p>Beheer van validatieregels met afgeschermde geconfigureerde namen. Relatieve datumaanduidingen blijven in deze productweergave Duitstalig.</p></figcaption></figure>
 
-Elke kaart toont de naam en beschrijving van de regel en de badges voor het **niveau** (Header / Line / Table), de **ernst** (Error / Warning), het **veld** waaraan de fout is gekoppeld en de **bron**. Gebruik de schakelaar rechts om een regel te activeren of te deactiveren en het menu **⋮** om de regel te dupliceren of te verwijderen. Filter de lijst op niveau (**All / Header / Line / Table**) en op status (**All / Active / Inactive**), of doorzoek hem.
+Elke kaart toont de naam en beschrijving van de regel en de badges voor het **niveau** (Header / Line / Table), de **ernst** (Error / Warning), het **veld** waaraan de fout is gekoppeld en de **bron**. Gebruik de schakelaar rechts om een regel te activeren of te deactiveren en het menu **⋮** om de regel te bewerken, te dupliceren of te verwijderen. Filter de lijst op niveau (**All / Header / Line / Table**) en op status (**All / Active / Inactive**), of doorzoek hem.
 
 ### Systeemstandaard-, aangepaste en eigen regels
 

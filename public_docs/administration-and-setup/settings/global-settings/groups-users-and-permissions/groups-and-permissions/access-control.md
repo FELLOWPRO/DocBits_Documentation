@@ -28,11 +28,9 @@ Elke groep kan worden geconfigureerd voor:
 ## De Toegangscontrole van een groep openen
 
 1. Ga naar **Instellingen**.
-2. Ga naar **Globale Instellingen**.
-3. Selecteer **Groepen, Gebruikers en Machtigingen**.
-4. Selecteer **Groepen en Machtigingen**.
-5. Om de machtigingen van een groep te beheren (bijvoorbeeld PROCUREMENT\_DIRECTOR), klikt u op de drie puntjes aan de rechterkant.
-6. Selecteer **Toegangscontrole beheren**.
+2. Selecteer onder **Organisatie & Toegang** de optie **Groepen en machtigingen**.
+3. Om de machtigingen van een groep te beheren (bijvoorbeeld PROCUREMENT\_DIRECTOR), klikt u op de drie puntjes aan de rechterkant.
+4. Selecteer **Toegangscontrole beheren**.
 
 <figure><img src="../../../../../.gitbook/assets/access_control_open_menu.png" alt="Het rijmenu van een groep openen en Toegangscontrole beheren kiezen"><figcaption><p>Open op de pagina 'Groepen en Machtigingen' het <strong>⋮</strong>-menu van een groep en kies <strong>Toegangscontrole beheren</strong>.</p></figcaption></figure>
 

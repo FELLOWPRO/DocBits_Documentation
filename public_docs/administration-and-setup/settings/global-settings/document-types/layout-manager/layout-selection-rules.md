@@ -26,7 +26,7 @@ De herkomst blijft beschikbaar — als één voorwaarde van vele. Een regel kan 
 
 Op regels gebaseerde lay-outs worden **per documenttype** ingeschakeld door een **organisatiebeheerder**.
 
-1. Ga naar **Instellingen → Globale instellingen → Documenttypen**.
+1. Ga naar **Instellingen → Documentverwerking → Documenttypen**.
 2. Klik op het **instellingen**-pictogram (tandwiel) op de kaart van het documenttype.
 3. Open **Lay-outs beheren** en zet de schakelaar aan.
 

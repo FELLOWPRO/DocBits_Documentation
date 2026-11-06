@@ -8,7 +8,7 @@ Deze pagina legt uit hoe u de succesvolle verwerking van uw BOD (Business Object
 
 ### Ophalen van uw API-sleutel
 
-1.  Ga naar **Instellingen → Globale instellingen → Integratie en SSO**.
+1.  Ga naar **Instellingen → Systeem & Beheer → Integratie en SSO**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_integration.png)
 2.  U kunt uw **API-sleutel** handmatig kopiëren of op de kopieerknop klikken om deze naar uw klembord te kopiëren.

@@ -22,7 +22,7 @@ Deze configuratiepagina wordt gebruikt om de regels te definiëren en te beheren
 
 ## Toegang
 
-1. Navigeer naar **Instellingen** → **Globale instellingen** → **Documenttypen**, selecteer het documenttype en klik op **Meer instellingen**.
+1. Navigeer naar **Instellingen** → **Documentverwerking** → **Documenttypen**, selecteer het documenttype en klik op **Meer instellingen**.
 2. Schakel op de kaart **Inkooporder** **PO-match serverzijde** in.
 3. Klik naast de schakelaar op **PO-matchingregels configureren**.
 

@@ -4,7 +4,7 @@ Selectievakjes regelen verplichte waarden, bewerkbaarheid en zichtbaarheid. Use 
 
 Alles behalve de titel wordt direct in de lijst gewijzigd; er is geen bewerkingsdialoog.
 
-**Waar:** Instellingen → Globale instellingen → Documenttypen → Tabelkolommen
+**Waar:** Instellingen → Documentverwerking → Documenttypen → Tabelkolommen
 
 ## Een vlag omschakelen
 

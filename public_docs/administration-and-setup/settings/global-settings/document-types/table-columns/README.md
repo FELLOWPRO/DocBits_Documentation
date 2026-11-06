@@ -2,7 +2,7 @@
 
 Tabelkolommen bepalen welke kolommen de regelitemtabel van een documenttype heeft: wat DocBits in elke kolom extraheert, wat de gebruiker op het validatiescherm ziet en wat bij het exporteren naar het ERP wordt verzonden.
 
-**Waar:** Instellingen → Globale instellingen → Documenttypen → Tabelkolommen
+**Waar:** Instellingen → Documentverwerking → Documenttypen → Tabelkolommen
 
 <figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-nl-20261104.png" alt="Huidige Use AI-keuzelijst met Standaard, Ja en Nee. Er is geen optie gewijzigd. Titelcellen zijn verborgen ter bescherming van gegevens."><figcaption><p>Huidige Use AI-keuzelijst met Standaard, Ja en Nee. Er is geen optie gewijzigd. Titelcellen zijn verborgen ter bescherming van gegevens.</p></figcaption></figure>
 

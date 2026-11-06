@@ -29,7 +29,7 @@ Binnen elke groep staan de meest gebruikte pagina's bovenaan.
 
 ## Lange instellingenpagina's — ankernavigatie
 
-Instellingenpagina's met veel secties (zoals Globale Instellingen of de configuratie van een Documenttype) tonen nu een lijst met ankerlinks in de paginakop. Klik op een anker om naar die sectie te springen. De URL wordt bijgewerkt tijdens het scrollen, zodat de link naar een specifieke sectie kan worden gedeeld of als bladwijzer opgeslagen.
+Instellingenpagina's met veel secties (zoals het instellingenoverzicht of de configuratie van een Documenttype) tonen nu een lijst met ankerlinks in de paginakop. Klik op een anker om naar die sectie te springen. De URL wordt bijgewerkt tijdens het scrollen, zodat de link naar een specifieke sectie kan worden gedeeld of als bladwijzer opgeslagen.
 
 ## Documentatie vinden tijdens uw werk — helppictogrammen
 

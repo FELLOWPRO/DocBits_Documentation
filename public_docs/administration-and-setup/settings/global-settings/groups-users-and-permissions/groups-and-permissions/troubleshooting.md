@@ -14,7 +14,7 @@ Toegangscontrole-instellingen zijn alleen van toepassing als de functie is **ing
 
 Zorg ervoor dat de gebruiker correct is toegewezen aan de juiste groep(en):
 
-* Ga naar: `Instellingen` > `Algemene instellingen` > `Groepen, gebruikers en machtigingen`.
+* Ga naar: `Instellingen` > `Organisatie & Toegang` > `Groepen en machtigingen`.
 * Selecteer **Groepen en machtigingen**.
 * Bevestig dat de gebruiker wordt vermeld onder de verwachte groep.
 * Als de groep specifieke toegangscontrole gebruikt, zal een ontbrekende groepstoewijzing de toegang tot documenten en acties blokkeren.
@@ -42,7 +42,7 @@ Toegang kan ook worden beperkt op veldniveau, wat bewerken of zichtbaarheid kan 
 
 Deze wereldwijde instelling beperkt de zichtbaarheid van documenten:
 
-* Ga naar: `Instellingen` > `Algemene instellingen` > `Groepen, gebruikers en machtigingen`.
+* Ga naar: `Instellingen` > `Organisatie & Toegang` > `Groepen en machtigingen`.
 * Als **Alleen toegewezen documenten** is **ingeschakeld**, kunnen gebruikers alleen documenten zien die expliciet aan hen of hun groep zijn toegewezen.
 * Als gebruikers verwachte documenten niet kunnen zien:
   * Controleer documenttoewijzingen.

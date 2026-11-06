@@ -20,7 +20,7 @@ Koptekstvelden hebben hun eigen bronlabel naast de waarde: *Extracted using AI*,
 
 * **Instellingen → Documentverwerking → Classificatie en extractie → AI-model**: de tabel onder de keuzelijst toont elke leverancier met een opgeslagen model of training. Een leverancier in deze lijst met *trainingsgegevens* heeft opgeslagen regels; *trainingsgegevens resetten* verwijdert ze.
 * **Instellingen → Documentverwerking → OCR-instellingen**: *Gebruik E-Text indien beschikbaar* en *Gebruik AI-gegevens voor tabellen* bepalen welke tekst de extractie te zien krijgt. Een leverancier kan E-Text overschrijven onder *Meer instellingen* op het validatiescherm.
-* **Instellingen → Globale instellingen → Documenttypen → Tabelkolommen**: de vlaggen Verborgen, Verplicht en *AI gebruiken*. Een verborgen kolom wordt nooit gevuld; een kolom met *AI gebruiken* wordt door de AI gevuld, ook voor leveranciers met regels.
+* **Instellingen → Documentverwerking → Documenttypen → Tabelkolommen**: de vlaggen Verborgen, Verplicht en *AI gebruiken*. Een verborgen kolom wordt nooit gevuld; een kolom met *AI gebruiken* wordt door de AI gevuld, ook voor leveranciers met regels.
 
 ## 3. Reproduceren zonder de UI (API / MCP)
 

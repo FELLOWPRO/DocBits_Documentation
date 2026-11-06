@@ -10,7 +10,7 @@ Elk documenttype heeft zijn eigen Lijst van Waarden (LoV) configuraties, die afz
 
 ### Om Lijst van Waarden te configureren, navigeer naar:
 
-Instellingen → Algemene Instellingen → Documenttypen → Factuur → Velden → Stamgegevens Instellingen → LOV Stamgegevens
+Instellingen → Documentverwerking → Documenttypen → Factuur → Velden → Stamgegevens Instellingen → LOV Stamgegevens
 
 ### **Een Nieuwe Lijst van Waarden Configuratie Maken**
 

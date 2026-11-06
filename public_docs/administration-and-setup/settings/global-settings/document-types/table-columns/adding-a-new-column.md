@@ -10,7 +10,7 @@ Voeg een kolom toe wanneer per regelitem een waarde moet worden vastgelegd die d
 
 ## Stappen
 
-1. Open **Instellingen → Globale instellingen → Documenttypen → Tabelkolommen**.
+1. Open **Instellingen → Documentverwerking → Documenttypen → Tabelkolommen**.
 2. Klik op **Nieuwe tabelkolom toevoegen**.
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Dialoogvenster Nieuwe tabelkolom toevoegen met Titel, Is kolom verplicht, Selecteer kolomtype en Selecteer tabel"><figcaption><p>Nieuwe tabelkolom toevoegen</p></figcaption></figure>

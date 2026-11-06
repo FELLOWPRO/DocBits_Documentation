@@ -125,9 +125,11 @@ In the examples below, `·` marks one space so that leading, trailing and repeat
 | **Find & replace** | pattern, replace with, count (0 = all)                                                    | pattern `\s+`, replace with one space: `ACME····GmbH` → `ACME·GmbH`                        |
 | **Map values**     | mappings (from → to), value when no match (blank = keep input), ignore case               | `STK → PCE`: `stk` → `PCE`                                                                 |
 | **Reformat date**  | output pattern (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`)                           | `%d.%m.%Y`: `2026-09-29` → `29.09.2026`                                                    |
-| **Format number**  | locale (de\_DE, en\_US, en\_GB, fr\_FR), min. and max. decimals                           | de\_DE, 2 decimals: `1234.5` → `1.234,50`                                                  |
+| **Format number**  | locale (de\_DE, en\_US, en\_GB, fr\_FR), min. and max. decimals                           | de\_DE, 2 decimals: `1234.5` → `1234,50`                                                   |
 | **Fix value**      | the value                                                                                 | always writes the value, whatever the field contained                                      |
 | **Clear**          | –                                                                                         | empties the field                                                                          |
+
+**Capitalise first** changes `hELLO wORLD` to `Hello world`; **Title Case** changes it to `Hello World`. Both modes lowercase the remaining letters.
 
 **Table rows** rules use two different steps, which work on rows instead of values:
 

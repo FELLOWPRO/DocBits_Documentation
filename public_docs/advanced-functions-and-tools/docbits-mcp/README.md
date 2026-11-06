@@ -12,7 +12,7 @@ The server is mounted on the DocBits API at `/v3/mcp` and is scoped to your orga
 * Production (EU) — `https://eu.api.docbits.com/v3/mcp`
 * Production (US) — `https://us.api.docbits.com/v3/mcp`
 
-See [Setup & Configuration](setup-and-configuration.md) for the full host matrix and how to sign in with OAuth.
+Use [Quick Connect](quick-connect.md) for copy-and-paste commands per environment (Sandbox and Production, EU and US). See [Setup & Configuration](setup-and-configuration.md) for API key login and how the OAuth sign-in works.
 {% endhint %}
 
 ## What Can You Do?

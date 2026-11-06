@@ -16,7 +16,7 @@ O assistente vem **desativado por padrão**. Esta página mostra onde ativá-lo 
 
 ## Ativar
 
-1. Acesse **Configurações → Configurações globais → Informações da empresa**. O cabeçalho da página mostra **Company Settings** (Configurações da empresa).
+1. Acesse **Configurações → Organização e Acesso → Informações da empresa**. O cabeçalho da página mostra **Company Settings** (Configurações da empresa).
 2. Abra a seção **Assistants** (Assistentes).
 3. Ative **Enable the settings assistant** (Habilitar o assistente de configurações).
 

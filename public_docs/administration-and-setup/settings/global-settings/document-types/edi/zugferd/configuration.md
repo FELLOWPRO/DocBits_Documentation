@@ -21,7 +21,7 @@ O padrão ZUGFeRD está sempre ativo por padrão, mas você pode modificá-lo se
 
 ### **Passos para modificar as configurações do ZUGFeRD:**
 
-1. Acesse **Settings → Global Settings → Document Types → Invoice**.
+1. Acesse **Configurações → Processamento de documentos → Tipos de documentos → Fatura**.
 2. Clique em **E-Doc**.\\
 3. Uma lista de todos os e-docs disponíveis será exibida.
 4. Localize a versão do **ZUGFeRD** que você deseja modificar.\\
@@ -67,7 +67,7 @@ A **configuração dos Extraction Paths** é usada para extrair dados e preenche
 2. Crie um novo rascunho clicando no **ícone de lápis**.
 3. Selecione o rascunho recém-criado.
 4. Crie um novo campo ou modifique um existente.
-5. O lado esquerdo representa o **ID do campo do DocBits**, que pode ser encontrado em **Settings → Global Settings → Document Types → Invoice → Fields**.\\
+5. O lado esquerdo representa o **ID do campo do DocBits**, que pode ser encontrado em **Configurações → Processamento de documentos → Tipos de documentos → Fatura → Campos**.\\
 6. O lado direito representa o **caminho para o campo** criado na Transformation.
 7. Clique em **Save**.
 

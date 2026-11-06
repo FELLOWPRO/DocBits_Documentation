@@ -2,7 +2,7 @@
 
 As colunas de tabela definem quais colunas a tabela de itens de linha de um tipo de documento possui: o que o DocBits extrai para cada coluna, o que o usuário vê na tela de validação e o que é enviado ao ERP na exportação.
 
-**Onde:** Settings → Global Settings → Document Types → Table Columns
+**Onde:** Configurações → Processamento de documentos → Tipos de documentos → Colunas da tabela
 
 <figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-pt-20261104.png" alt="Lista Use AI atual com Padrão, Sim e Não. Nenhuma opção foi alterada. As células de título estão ocultas para proteger dados."><figcaption><p>Lista Use AI atual com Padrão, Sim e Não. Nenhuma opção foi alterada. As células de título estão ocultas para proteger dados.</p></figcaption></figure>
 

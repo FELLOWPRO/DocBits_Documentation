@@ -4,7 +4,7 @@ As caixas controlam valores obrigatórios, edição e visibilidade. Use AI é co
 
 Tudo, exceto o título, é alterado diretamente na lista; não há caixa de diálogo de edição.
 
-**Onde:** Settings → Global Settings → Document Types → Table Columns
+**Onde:** Configurações → Processamento de documentos → Tipos de documentos → Colunas da tabela
 
 ## Alterando um indicador
 

@@ -8,7 +8,7 @@ Esta página explica como verificar o processamento bem-sucedido do seu BOD (Bus
 
 ### Recuperando sua Chave de API
 
-1.  Vá para **Configurações → Configurações globais → Integração e SSO**.
+1.  Vá para **Configurações → Sistema e Administração → Integração e SSO**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_integration.png)
 2.  Você pode copiar manualmente sua **Chave de API** ou clicar no botão de copiar para copiá-la para a área de transferência.

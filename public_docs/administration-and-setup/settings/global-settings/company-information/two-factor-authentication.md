@@ -6,11 +6,11 @@ Como administrador de uma organização, você pode **exigir que cada membro use
 
 Os logins com Single Sign-On (SSO) — Google, Microsoft, SAML — estão **isentos**: o provedor de identidade deles já aplica o próprio MFA, portanto a exigência afeta apenas os logins com senha.
 
-Essa configuração fica em **Configurações → Configurações Globais → Informações da Empresa → Autenticação de dois fatores** e está disponível apenas para administradores da organização.
+Essa configuração fica em **Configurações → Organização e Acesso → Informações da Empresa → Autenticação de dois fatores** e está disponível apenas para administradores da organização.
 
 ## Exigir MFA para a sua organização
 
-1. Vá para **Configurações → Configurações Globais → Informações da Empresa**.
+1. Vá para **Configurações → Organização e Acesso → Informações da Empresa**.
 2. Abra a seção **Autenticação de dois fatores**.
 3. Ative **Exigir autenticação de dois fatores para todos os membros** e clique em **Salvar**.
 

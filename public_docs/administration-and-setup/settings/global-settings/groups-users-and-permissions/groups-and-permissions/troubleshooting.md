@@ -14,7 +14,7 @@ As configurações de Controle de Acesso se aplicam apenas se o recurso estiver 
 
 Certifique-se de que o usuário esteja corretamente atribuído ao(s) grupo(s) apropriado(s):
 
-* Navegue até: `Configurações` > `Configurações Globais` > `Grupos, Usuários e Permissões`.
+* Navegue até: `Configurações` > `Organização e Acesso` > `Grupos e Permissões`.
 * Selecione **Grupos e Permissões**.
 * Confirme se o usuário está listado sob o grupo esperado.
 * Se o grupo usar controle de acesso específico, a falta de atribuição de grupo bloqueará o acesso a documentos e ações.
@@ -42,7 +42,7 @@ O acesso também pode ser restrito no **nível de campo**, o que pode bloquear a
 
 Essa configuração global limita a visibilidade do documento:
 
-* Navegue até: `Configurações` > `Configurações Globais` > `Grupos, Usuários e Permissões`.
+* Navegue até: `Configurações` > `Organização e Acesso` > `Grupos e Permissões`.
 * Se **Apenas Documentos Atribuídos** estiver **habilitado**, os usuários só podem ver documentos atribuídos explicitamente a eles ou ao seu grupo.
 * Se os usuários não puderem ver os documentos esperados:
   * Verifique as atribuições de documentos.

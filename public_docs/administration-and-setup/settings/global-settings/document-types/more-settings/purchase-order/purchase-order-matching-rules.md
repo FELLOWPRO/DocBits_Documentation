@@ -22,7 +22,7 @@ Esta página de configuração é usada para definir e gerenciar as regras que d
 
 ## Como Acessar
 
-1. Navegue até **Configurações** → **Configurações globais** → **Tipos de documentos**, selecione o tipo de documento e clique em **Mais configurações**.
+1. Navegue até **Configurações** → **Processamento de documentos** → **Tipos de documentos**, selecione o tipo de documento e clique em **Mais configurações**.
 2. No cartão **Ordem de compra**, ative **PO corresponde ao lado do servidor**.
 3. Clique em **Configurar regras de correspondência de pedidos de compra** ao lado do interruptor.
 

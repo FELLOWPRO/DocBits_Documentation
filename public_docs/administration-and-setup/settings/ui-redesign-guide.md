@@ -29,7 +29,7 @@ Dentro de cada grupo, as páginas mais usadas ficam no topo.
 
 ## Páginas de configurações longas — navegação por âncoras
 
-As páginas de configurações com muitas seções (como Configurações Globais ou a configuração de um Tipo de Documento) agora exibem uma lista de links de âncora no cabeçalho. Clique em uma âncora para saltar até aquela seção. A URL é atualizada conforme você rola, então o link para uma seção específica pode ser compartilhado ou favoritado.
+As páginas de configurações com muitas seções (como a visão geral das configurações ou a configuração de um Tipo de Documento) agora exibem uma lista de links de âncora no cabeçalho. Clique em uma âncora para saltar até aquela seção. A URL é atualizada conforme você rola, então o link para uma seção específica pode ser compartilhado ou favoritado.
 
 ## Encontrando documentação enquanto trabalha — ícones de ajuda
 

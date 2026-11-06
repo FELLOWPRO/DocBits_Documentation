@@ -40,7 +40,7 @@ Este guia irá orientá-lo através do processo de configuração para garantir 
 
 ### **Passo 2: Adicionar Campos no DocBits**
 
-1.  Navegue até **Configurações** -> **Configurações Globais** -> **Tipos de Documentos**.
+1.  Navegue até **Configurações** -> **Processamento de documentos** -> **Tipos de Documentos**.
 
     ![Menu Configurações Globais aberto com a entrada Tipos de Documentos](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJFsiV4Pzbj8vIhqJfDaJ%252FTaxCodes_6.png%3Falt%3Dmedia%26token%3D203ddd31-195e-4cc3-87f7-d1b12fc3013c\&width=768\&dpr=4\&quality=100\&sign=a64ef7b9\&sv=2)
 2.  Escolha o menu **Campos** correspondente ao Tipo de Documento onde você deseja adicionar os campos.
@@ -62,7 +62,7 @@ Este guia irá orientá-lo através do processo de configuração para garantir 
 
 ### **Passo 3: Editar Layout**
 
-1.  Vá para **Configurações** -> **Configurações Globais** -> **Tipos de Documentos**.
+1.  Vá para **Configurações** -> **Processamento de documentos** -> **Tipos de Documentos**.
 
     ![Menu Configurações Globais aberto com a entrada Tipos de Documentos](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJFsiV4Pzbj8vIhqJfDaJ%252FTaxCodes_6.png%3Falt%3Dmedia%26token%3D203ddd31-195e-4cc3-87f7-d1b12fc3013c\&width=768\&dpr=4\&quality=100\&sign=a64ef7b9\&sv=2)
 2.  Abra o menu **Editar Layout** para o Tipo de Documento que você deseja editar.
@@ -130,7 +130,7 @@ Após fazer o upload de um novo documento no DocBits com as configurações de d
 
 ### **Passo 2: Adicionar Campos no DocBits**
 
-1.  Navegue até **Configurações** -> **Configurações Globais** -> **Tipos de Documentos**.
+1.  Navegue até **Configurações** -> **Processamento de documentos** -> **Tipos de Documentos**.
 
     ![Menu Configurações Globais aberto com a entrada Tipos de Documentos](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJFsiV4Pzbj8vIhqJfDaJ%252FTaxCodes_6.png%3Falt%3Dmedia%26token%3D203ddd31-195e-4cc3-87f7-d1b12fc3013c\&width=768\&dpr=4\&quality=100\&sign=a64ef7b9\&sv=2)
 2.  Escolha o menu **Campos** correspondente ao Tipo de Documento onde você deseja adicionar os campos.
@@ -152,7 +152,7 @@ Após fazer o upload de um novo documento no DocBits com as configurações de d
 
 ### **Passo 3: Editar Layout**
 
-1.  Vá para **Configurações** -> **Configurações Globais** -> **Tipos de Documentos**.
+1.  Vá para **Configurações** -> **Processamento de documentos** -> **Tipos de Documentos**.
 
     ![Menu Configurações Globais aberto com a entrada Tipos de Documentos](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJFsiV4Pzbj8vIhqJfDaJ%252FTaxCodes_6.png%3Falt%3Dmedia%26token%3D203ddd31-195e-4cc3-87f7-d1b12fc3013c\&width=768\&dpr=4\&quality=100\&sign=a64ef7b9\&sv=2)
 2.  Abra o menu **Editar Layout** para o Tipo de Documento que você deseja editar.

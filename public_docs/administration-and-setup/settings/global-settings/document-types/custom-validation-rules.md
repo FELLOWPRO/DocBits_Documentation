@@ -51,7 +51,7 @@ A partir de agora, o cartão do tipo de documento também mostra um link **Regra
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-pt.png" alt="Gestão de regras de validação com nomes configurados ocultos. Algumas datas relativas continuam em alemão; Mesa significa aqui tabela de dados."><figcaption><p>Gestão de regras de validação com nomes configurados ocultos. Algumas datas relativas continuam em alemão; Mesa significa aqui tabela de dados.</p></figcaption></figure>
 
-Cada cartão mostra o nome e a descrição da regra, além dos selos de seu **nível** (Header / Line / Table), **severidade** (Error / Warning), do **campo** ao qual o erro está associado e de sua **origem**. Use o interruptor à direita para ativar ou desativar uma regra e o menu **⋮** para duplicá-la ou excluí-la. Filtre a lista por nível (**All / Header / Line / Table**) e por estado (**All / Active / Inactive**), ou pesquise nela.
+Cada cartão mostra o nome e a descrição da regra, além dos selos de seu **nível** (Header / Line / Table), **severidade** (Error / Warning), do **campo** ao qual o erro está associado e de sua **origem**. Use o interruptor à direita para ativar ou desativar uma regra e o menu **⋮** para editá-la, duplicá-la ou excluí-la. Filtre a lista por nível (**All / Header / Line / Table**) e por estado (**All / Active / Inactive**), ou pesquise nela.
 
 ### Regras System default, Customized e Custom
 

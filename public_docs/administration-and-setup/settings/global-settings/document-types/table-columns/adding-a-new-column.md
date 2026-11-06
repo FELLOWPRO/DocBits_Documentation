@@ -10,7 +10,7 @@ Adicione uma coluna quando um valor precisar ser capturado por item de linha e a
 
 ## Etapas
 
-1. Abra **Settings → Global Settings → Document Types → Table Columns**.
+1. Abra **Configurações → Processamento de documentos → Tipos de documentos → Colunas da tabela**.
 2. Clique em **Add new table column**.
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Caixa de diálogo Add new table column com Title, Is column required, Select column type e Select Table"><figcaption><p>Add new table column</p></figcaption></figure>

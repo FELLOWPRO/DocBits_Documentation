@@ -12,7 +12,7 @@ Der Server ist in die DocBits-API unter `/v3/mcp` eingebunden und auf Ihre Organ
 - Produktion (EU) — `https://eu.api.docbits.com/v3/mcp`
 - Produktion (US) — `https://us.api.docbits.com/v3/mcp`
 
-Die vollständige Host-Matrix und die Anmeldung per OAuth finden Sie unter [Einrichtung & Konfiguration](setup-and-configuration.md).
+Kopierfertige Befehle je Umgebung (Sandbox und Produktion, EU und US) finden Sie unter [Schnellverbindung](quick-connect.md). Anmeldung per API-Schlüssel und die Funktionsweise der OAuth-Anmeldung stehen unter [Einrichtung & Konfiguration](setup-and-configuration.md).
 {% endhint %}
 
 ## Was können Sie tun?

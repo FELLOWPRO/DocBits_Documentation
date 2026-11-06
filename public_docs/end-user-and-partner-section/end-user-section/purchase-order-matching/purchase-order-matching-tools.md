@@ -6,9 +6,9 @@ The PO Matching screen places the purchase order search and tools above the PO l
 
 ## Find the right purchase order
 
-Enter a purchase order number in **Search purchase order number** and select a result. The filter icon beside the field opens additional search options: keyword, supplier, status, order status, date range, order amount, sort order, and number of records. Choose **Apply** to use the filters or **Clear** to reset them. Filtering the list does not match or export the invoice.
+Enter a purchase order number in **Search purchase order number** and select a result. The filter icon beside the field opens the search options across the PO lines area: keyword, supplier, status, order status, date range, order amount, sort order, and number of records. Choose **Apply** to use the filters or **Clear** to reset them. Filtering the list does not match or export the invoice.
 
-<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-filter-en.png" alt="Purchase order search filter with supplier, status, dates, amount and sorting fields"><figcaption><p>Open the filter icon beside the PO search field for more search options.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-matching-tools-filter-en-20261106.png" alt="Purchase order search filter spanning the PO lines area, with keyword, supplier, status, dates, amount and sorting fields"><figcaption><p>Open the filter icon beside the PO search field for more search options.</p></figcaption></figure>
 
 ## Toolbar actions
 

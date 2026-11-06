@@ -63,6 +63,33 @@ const { log_id } = await res.json();
 Utilizzare l'host API della propria regione (per l'elenco degli host vedere [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md)).
 CSV dei log: `GET /testing/logs/export.csv` (stessi filtri dell'elenco) e `GET /testing/logs/<log_id>/export.csv`.
 
+## Avviare aprendo un link di avvio
+
+Se l'automazione controlla un browser autenticato, aprire il link di avvio del modello invece di chiamare l'API:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+`run` è la chiave del modello (obbligatoria), `version` specifica la versione salvata da utilizzare (predefinita: la
+più recente), `input` indica un input salvato tramite nome o ID e `autostart=1` avvia senza clic un modello di sola
+lettura. Un modello che scrive dati mantiene la richiesta di conferma, quindi l'esecuzione attende
+`testing-start-confirm`. Il link funziona solo nel browser autenticato di un amministratore dell'organizzazione; i
+clic avvengono in quella scheda.
+
+```ts
+// signed in as an organisation admin (your login helper)
+await page.goto('https://<your-environment>/settings/testing?run=default-smoke-analytics&version=1.0.0');
+const start = page.getByTestId('testing-start-confirm');
+const status = page.getByTestId('testing-run-status');
+await start.or(status).first().waitFor();
+if (await start.isVisible()) await start.click();
+await expect(status).toHaveAttribute('data-status', /(passed|failed|blocked|cancelled)$/);
+```
+
+`data-status` può essere `running`, `passed`, `failed`, `blocked` o `cancelled`. `blocked` indica che una regola ha
+interrotto l'esecuzione prima che venissero eseguiti i passaggi. Dopo la lettura, i parametri vengono rimossi
+dall'URL, quindi ricaricando la pagina il test non viene avviato di nuovo. Copiare il link nella finestra di avvio
+sotto **Avvia dall'esterno → Link di avvio**.
+
 ## Avviare tramite MCP
 
 Il server DocBits MCP offre gli strumenti Testing `testing_list_templates`, `testing_list_inputs`, `testing_start`,

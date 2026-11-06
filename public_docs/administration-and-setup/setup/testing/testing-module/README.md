@@ -56,7 +56,8 @@ approvazione vengono bloccati, a meno che il modello non dichiari di scrivere da
 ## Come funziona: modello, input, avvio, log
 
 La pagina ha tre schede: **Modelli**, **Input** e **Log**. Un modello descrive il flusso, un input stabilisce con quali
-valori viene eseguito e il log mostra il risultato.
+valori viene eseguito e il log mostra il risultato. Il **?** accanto alle schede apre la pagina corrispondente di
+questa documentazione nella lingua dell'interfaccia.
 
 <figure><img src="../../../../.gitbook/assets/testing-00-diagram-it.png" alt="Diagramma: modello più input dà un test; viene avviato nel browser, da un assistente AI o dall'esterno; ogni esecuzione termina nei Log"><figcaption><p>Diagramma: modello più input dà un test; viene avviato nel browser, da un assistente AI o dall'esterno; ogni esecuzione termina nei Log.</p></figcaption></figure>
 
@@ -89,7 +90,7 @@ Per approfondire:
 * [Selezionare un elemento nell'app](pick-in-app.md): scegliere un elemento indicandolo direttamente
 * [Ricaricare e riprendere](reload-and-resume.md): ricaricare la pagina nel mezzo di un test
 * [Input](inputs.md): salvare i valori della propria organizzazione
-* [Avviare un test](start-a-test.md): nel browser, da un assistente AI o da Playwright
+* [Avviare un test](start-a-test.md): nel browser, tramite un link di avvio, da un assistente AI o da Playwright
 * [Log e cronologia](logs.md): risultati, grafico ed esportazione CSV
 * [Risoluzione dei problemi](troubleshooting.md)
 * [Per sviluppatori](for-developers.md)

@@ -57,7 +57,8 @@ oder Freigabeschritte sind gesperrt, solange das Template nicht erklärt, dass e
 ## So funktioniert es: Template, Eingabe, Start, Protokoll
 
 Die Seite hat drei Reiter: **Templates**, **Eingaben** und **Protokolle**. Ein Template beschreibt den Ablauf, eine
-Eingabe bestimmt, womit er läuft, und das Protokoll zeigt das Ergebnis.
+Eingabe bestimmt, womit er läuft, und das Protokoll zeigt das Ergebnis. Das **?** neben den Reitern öffnet die
+passende Seite dieser Dokumentation in Ihrer Oberflächensprache.
 
 <figure><img src="../../../../.gitbook/assets/testing-00-diagram-de.png" alt="Schaubild: Template plus Eingabe ergibt einen Test; er wird im Browser, von einem KI-Assistenten oder von außen gestartet; jeder Lauf landet in den Protokollen"><figcaption><p>Schaubild: Template plus Eingabe ergibt einen Test; er wird im Browser, von einem KI-Assistenten oder von außen gestartet; jeder Lauf landet in den Protokollen.</p></figcaption></figure>
 
@@ -91,7 +92,7 @@ Weiterlesen:
 * [Element in der App auswählen](pick-in-app.md): ein Element durch Zeigen wählen
 * [Neu laden und fortsetzen](reload-and-resume.md): die Seite mitten im Test neu laden
 * [Eingaben](inputs.md): Werte Ihrer Organisation speichern
-* [Test starten](start-a-test.md): im Browser, über einen KI-Assistenten oder mit Playwright
+* [Test starten](start-a-test.md): im Browser, über einen Start-Link, über einen KI-Assistenten oder mit Playwright
 * [Protokolle und Verlauf](logs.md): Ergebnisse, Diagramm und CSV-Export
 * [Fehlerbehebung](troubleshooting.md)
 * [Für Entwickler](for-developers.md)

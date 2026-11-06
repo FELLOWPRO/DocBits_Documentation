@@ -52,6 +52,35 @@ Der Eingabe-Editor erinnert unter **Von außen starten:** an die drei Wege **Die
 
 <figure><img src="../../../../.gitbook/assets/testing-16-start-from-outside-de.png" alt="Zeile Von außen starten im Eingabe-Editor"><figcaption><p>Zeile Von außen starten im Eingabe-Editor.</p></figcaption></figure>
 
+## Einen Start-Link teilen
+
+Ein Start-Link öffnet den bereits ausgefüllten Startdialog eines Templates. Andere Personen oder eine CI-Pipeline müssen das Template und seine Werte so nicht erneut auswählen:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+| Teil | Was er bewirkt |
+|---|---|
+| **run** | Schlüssel des Templates, das geöffnet wird (die Zeile unter dem Template-Namen im Dialog, zum Beispiel `default-smoke-analytics`). Erforderlich. |
+| **version** | Öffnet diese gespeicherte Version. Ohne diese Angabe wird die neueste Version geöffnet. |
+| **input** | Füllt eine gespeicherte Eingabe anhand ihres Namens oder ihrer ID aus. Als vertraulich gekennzeichnete Parameter werden niemals ausgefüllt. |
+| **autostart=1** | Startet den Test, sobald die Seite geöffnet ist, aber nur, wenn das Template ausschließlich Daten liest. Ein Template, das Daten schreibt, wartet weiterhin auf die Bestätigung. |
+
+Um den Link zu erhalten, öffnen Sie den Startdialog eines Templates und wechseln Sie zu **Von außen starten**. Der Bereich **Start-Link** enthält den Link dieses Templates. Unter **Playwright mit Start-Link** finden Sie ein Codebeispiel, das den Link öffnet und auf das Ergebnis wartet.
+
+<figure><img src="../../../../.gitbook/assets/testing-start-link-dialog-de.png" alt="Startdialog in der Ansicht Von außen starten mit kopierbarem Start-Link und einem Playwright-Beispiel"><figcaption><p>Der Startdialog in der Ansicht <strong>Von außen starten</strong>: der kopierbare Start-Link und ein Playwright-Beispiel, das ihn öffnet. Sobald ein Tab Starts von außen annimmt, erscheint eine Sitzung unter <strong>Sitzung, die den Test ausführt</strong>.</p></figcaption></figure>
+
+Beim Öffnen des Links gilt Folgendes:
+
+* DocBits öffnet **Einstellungen → Testing**, Reiter **Templates**, mit dem Startdialog des Templates. Der Link funktioniert nur für
+  Personen, die Einstellungen → Testing öffnen können, da der Test in ihrem Browser-Tab und mit ihren Berechtigungen läuft.
+* Bei unbekanntem Template, unbekannter Version oder unbekannter Eingabe erscheint unter den Reitern eine Fehlermeldung; es wird nichts gestartet.
+* Mit `autostart=1` startet ein Template, das ausschließlich Daten liest, sofort. In allen anderen Fällen wartet der Test auf **Starten**.
+  Bei einem Template, das Daten schreibt, ist weiterhin eine Bestätigung erforderlich.
+* Nach dem Auslesen werden die Parameter aus der Adressleiste entfernt, sodass ein erneutes Laden der Seite den Test nicht ein zweites
+  Mal startet.
+
+Das **?** neben den Reitern und im Startdialog öffnet die passende Seite dieser Dokumentation in Ihrer Oberflächensprache.
+
 ## Über einen KI-Assistenten starten (MCP)
 
 Wenn Ihr KI-Assistent mit DocBits verbunden ist (siehe die Seite [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md)):

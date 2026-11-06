@@ -63,6 +63,32 @@ const { log_id } = await res.json();
 Użyj hosta API swojego regionu (listę hostów znajdziesz w [DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)).
 CSV dzienników: `GET /testing/logs/export.csv` (te same filtry co na liście) oraz `GET /testing/logs/<log_id>/export.csv`.
 
+## Uruchamianie przez otwarcie linku startowego
+
+Jeśli Twoja automatyzacja steruje przeglądarką, w której użytkownik jest zalogowany, otwórz link startowy szablonu zamiast wywoływać API:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+`run` to klucz szablonu (wymagany), `version` wskazuje zapisaną wersję (domyślnie najnowszą), `input` wskazuje zapisane
+dane wejściowe według ich nazwy lub identyfikatora, a `autostart=1` uruchamia bez kliknięcia szablon, który tylko odczytuje dane.
+Szablon zapisujący dane nadal wymaga potwierdzenia, więc uruchomienie czeka na `testing-start-confirm`. Link działa tylko
+w przeglądarce administratora organizacji z aktywną sesją logowania; kliknięcia są wykonywane w tej karcie.
+
+```ts
+// signed in as an organisation admin (your login helper)
+await page.goto('https://<your-environment>/settings/testing?run=default-smoke-analytics&version=1.0.0');
+const start = page.getByTestId('testing-start-confirm');
+const status = page.getByTestId('testing-run-status');
+await start.or(status).first().waitFor();
+if (await start.isVisible()) await start.click();
+await expect(status).toHaveAttribute('data-status', /(passed|failed|blocked|cancelled)$/);
+```
+
+`data-status` przyjmuje wartość `running`, `passed`, `failed`, `blocked` lub `cancelled`. Wartość `blocked` oznacza, że reguła
+zatrzymała przebieg przed wykonaniem jego kroków. Parametry są usuwane z adresu URL po ich odczytaniu, więc ponowne
+załadowanie strony nie uruchamia testu jeszcze raz. Link możesz skopiować w oknie uruchamiania, w sekcji
+**Uruchom z zewnątrz → Link startowy**.
+
 ## Uruchamianie przez MCP
 
 Serwer MCP DocBits udostępnia narzędzia Testing `testing_list_templates`, `testing_list_inputs`, `testing_start`,

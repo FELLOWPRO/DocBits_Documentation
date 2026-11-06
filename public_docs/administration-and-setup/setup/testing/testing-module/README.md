@@ -56,7 +56,8 @@ usuwania i zatwierdzania są blokowane, chyba że szablon deklaruje, że zapisuj
 ## Jak to działa: szablon, dane wejściowe, start, dziennik
 
 Strona ma trzy zakładki: **Szablony**, **Dane wejściowe** i **Dziennik**. Szablon opisuje przepływ, dane wejściowe
-decydują o tym, z czym test jest uruchamiany, a dziennik pokazuje wynik.
+decydują o tym, z czym test jest uruchamiany, a dziennik pokazuje wynik. Znak **?** obok zakładek otwiera odpowiednią stronę tej dokumentacji
+w języku interfejsu.
 
 <figure><img src="../../../../.gitbook/assets/testing-00-diagram-pl.png" alt="Diagram: szablon plus dane wejściowe dają test; jest on uruchamiany w przeglądarce, przez asystenta AI lub z zewnątrz; każdy przebieg kończy się w Dzienniku"><figcaption><p>Diagram: szablon plus dane wejściowe dają test; jest on uruchamiany w przeglądarce, przez asystenta AI lub z zewnątrz; każdy przebieg kończy się w Dzienniku.</p></figcaption></figure>
 
@@ -89,7 +90,7 @@ Czytaj dalej:
 * [Wybieranie elementu w aplikacji](pick-in-app.md): wybierz element, wskazując go
 * [Ponowne załadowanie i wznowienie](reload-and-resume.md): ponowne załadowanie strony w trakcie testu
 * [Dane wejściowe](inputs.md): zapisz wartości swojej organizacji
-* [Uruchamianie testu](start-a-test.md): w przeglądarce, z asystenta AI lub z Playwright
+* [Uruchamianie testu](start-a-test.md): w przeglądarce, przez link startowy, z asystenta AI lub z Playwright
 * [Dziennik i historia](logs.md): wyniki, wykres i eksport do CSV
 * [Rozwiązywanie problemów](troubleshooting.md)
 * [Dla programistów](for-developers.md)

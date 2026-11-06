@@ -53,6 +53,39 @@ Edytor danych wejściowych przypomina o trzech sposobach w wierszu **Uruchom z z
 
 <figure><img src="../../../../.gitbook/assets/testing-16-start-from-outside-pl.png" alt="Wiersz Uruchom z zewnątrz w edytorze danych wejściowych"><figcaption><p>Wiersz Uruchom z zewnątrz w edytorze danych wejściowych.</p></figcaption></figure>
 
+## Udostępnianie linku startowego
+
+Link startowy otwiera okno uruchamiania jednego szablonu z już uzupełnionymi danymi, dzięki czemu współpracownik lub potok CI
+nie musi ponownie wybierać szablonu ani jego wartości:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+| Element | Działanie |
+|---|---|
+| **run** | Szablon, który ma zostać otwarty, określony za pomocą klucza (wiersz pod nazwą szablonu w oknie dialogowym, na przykład `default-smoke-analytics`). Wymagany. |
+| **version** | Otwiera wskazaną zapisaną wersję. Bez tego parametru otwierana jest najnowsza wersja. |
+| **input** | Uzupełnia zapisane dane wejściowe na podstawie ich nazwy lub identyfikatora. Parametry oznaczone jako wrażliwe nigdy nie są uzupełniane. |
+| **autostart=1** | Uruchamia test natychmiast po otwarciu strony, ale tylko jeśli szablon wyłącznie odczytuje dane. Szablon zapisujący dane nadal czeka na potwierdzenie. |
+
+Aby uzyskać link, otwórz okno uruchamiania szablonu i przejdź do widoku **Uruchom z zewnątrz**. Blok **Link startowy**
+zawiera link tego szablonu, a blok **Playwright z linkiem startowym** — fragment kodu, który otwiera link i czeka na
+wynik.
+
+<figure><img src="../../../../.gitbook/assets/testing-start-link-dialog-pl.png" alt="Okno uruchamiania w widoku Uruchom z zewnątrz z linkiem startowym do skopiowania i przykładem kodu Playwright"><figcaption><p>Okno uruchamiania w widoku <strong>Uruchom z zewnątrz</strong>: link startowy do skopiowania oraz przykład kodu Playwright, który go otwiera. Gdy karta zacznie obsługiwać uruchamianie z zewnątrz, jej sesja pojawi się w sekcji <strong>Sesja uruchamiająca test</strong>.</p></figcaption></figure>
+
+Co dzieje się po otwarciu linku:
+
+* DocBits otwiera **Ustawienia → Testing**, zakładka **Szablony**, z oknem uruchamiania szablonu. Link działa tylko dla
+  osób, które mogą otworzyć Ustawienia → Testing, ponieważ test jest uruchamiany w ich karcie przeglądarki i z ich uprawnieniami.
+* Jeśli link wskazuje nieznany szablon, nieznaną wersję lub nieznane dane wejściowe, pod zakładkami pojawia się błąd,
+  a test nie zostaje uruchomiony.
+* Z parametrem `autostart=1` szablon, który tylko odczytuje dane, uruchamia się natychmiast. W każdym innym przypadku
+  przebieg czeka na wybranie **Start**, a dla szablonu zapisującego dane nadal wymagane jest potwierdzenie.
+* Parametry są usuwane z paska adresu po ich odczytaniu, dzięki czemu ponowne załadowanie strony nie uruchamia testu
+  po raz drugi.
+
+Znak **?** obok zakładek i w oknie uruchamiania otwiera odpowiednią stronę tej dokumentacji w języku interfejsu.
+
 ## Uruchamianie z asystenta AI (MCP)
 
 Jeśli Twój asystent AI jest połączony z DocBits (zobacz [DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)

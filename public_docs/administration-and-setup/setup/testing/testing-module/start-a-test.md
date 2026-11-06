@@ -53,6 +53,39 @@ L'éditeur d'entrée vous rappelle les trois méthodes sous **Démarrer depuis l
 
 <figure><img src="../../../../.gitbook/assets/testing-16-start-from-outside-fr.png" alt="Ligne Démarrer depuis l'extérieur dans l'éditeur d'entrée"><figcaption><p>Ligne Démarrer depuis l'extérieur dans l'éditeur d'entrée.</p></figcaption></figure>
 
+## Partager un lien de démarrage
+
+Un lien de démarrage ouvre la boîte de dialogue de démarrage d'un modèle, déjà remplie, afin qu'un collègue ou un pipeline CI n'ait
+pas à choisir à nouveau le modèle et ses valeurs :
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+| Élément | Rôle |
+|---|---|
+| **run** | Le modèle qui s'ouvre, identifié par sa clé (la ligne sous le nom du modèle dans la boîte de dialogue, par exemple `default-smoke-analytics`). Obligatoire. |
+| **version** | Ouvre cette version enregistrée. Si ce paramètre est absent, la dernière version s'ouvre. |
+| **input** | Utilise une entrée enregistrée, désignée par son nom ou son ID, pour préremplir les valeurs. Les paramètres marqués comme sensibles ne sont jamais renseignés. |
+| **autostart=1** | Démarre le test dès l'ouverture de la page, mais uniquement si le modèle ne fait que lire des données. Un modèle qui écrit des données attend toujours la confirmation. |
+
+Pour obtenir le lien, ouvrez la boîte de dialogue de démarrage d'un modèle et sélectionnez **Démarrer depuis l'extérieur**. Le bloc **Lien de démarrage**
+contient le lien de ce modèle, tandis que **Playwright avec lien de démarrage** contient un extrait de code qui ouvre le lien et attend le
+résultat.
+
+<figure><img src="../../../../.gitbook/assets/testing-start-link-dialog-fr.png" alt="Boîte de dialogue de démarrage dans la vue Démarrer depuis l'extérieur avec le lien de démarrage à copier et un exemple Playwright"><figcaption><p>La boîte de dialogue de démarrage dans la vue <strong>Démarrer depuis l'extérieur</strong> : le lien de démarrage à copier et un exemple Playwright qui l'ouvre. Une session apparaît sous <strong>Session qui exécute le test</strong> dès qu'un onglet accepte les démarrages depuis l'extérieur.</p></figcaption></figure>
+
+Ce qui se passe lorsqu'une personne ouvre le lien :
+
+* DocBits ouvre **Paramètres → Testing**, onglet **Modèles**, avec la boîte de dialogue de démarrage du modèle. Le lien fonctionne uniquement pour
+  une personne qui peut ouvrir Paramètres → Testing, car l'exécution utilise son onglet de navigateur et ses autorisations.
+* Si le modèle, la version ou l'entrée est introuvable, une erreur s'affiche sous les onglets et aucun test ne démarre.
+* Avec `autostart=1`, un modèle qui ne fait que lire des données démarre immédiatement. Dans tous les autres cas, le test attend que l'utilisateur sélectionne **Démarrer**, et la
+  confirmation reste nécessaire pour un modèle qui écrit des données.
+* Les paramètres sont supprimés de la barre d'adresse après leur lecture, de sorte que recharger la page ne démarre pas le test une
+  seconde fois.
+
+Le **?** à côté des onglets et dans la boîte de dialogue de démarrage ouvre la page correspondante de cette documentation dans la langue de votre
+interface.
+
 ## Démarrer depuis un assistant IA (MCP)
 
 Si votre assistant IA est connecté à DocBits (voir [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md)

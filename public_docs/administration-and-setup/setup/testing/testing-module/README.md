@@ -57,6 +57,7 @@ et DocBits applique une protection supplémentaire : les tests qui modifient des
 
 La page comporte trois onglets : **Modèles**, **Entrées** et **Journaux**. Un modèle décrit le déroulement, une entrée détermine
 avec quoi il s'exécute, et le journal affiche le résultat.
+Le **?** à côté des onglets ouvre la page correspondante de cette documentation dans la langue de votre interface.
 
 <figure><img src="../../../../.gitbook/assets/testing-00-diagram-fr.png" alt="Schéma : modèle plus entrée donne un test ; il est lancé dans le navigateur, par un assistant IA ou depuis l'extérieur ; chaque exécution se termine dans les journaux"><figcaption><p>Schéma : modèle plus entrée donne un test ; il est lancé dans le navigateur, par un assistant IA ou depuis l'extérieur ; chaque exécution se termine dans les journaux.</p></figcaption></figure>
 
@@ -89,7 +90,7 @@ Pour aller plus loin :
 * [Sélectionner un élément dans l'application](pick-in-app.md) : choisir un élément en le désignant
 * [Rechargement et reprise](reload-and-resume.md) : recharger la page au milieu d'un test
 * [Entrées](inputs.md) : enregistrer les valeurs de votre organisation
-* [Démarrer un test](start-a-test.md) : dans le navigateur, depuis un assistant IA ou depuis Playwright
+* [Démarrer un test](start-a-test.md) : dans le navigateur, via un lien de démarrage, depuis un assistant IA ou depuis Playwright
 * [Journaux et historique](logs.md) : résultats, graphique et export CSV
 * [Dépannage](troubleshooting.md)
 * [Pour les développeurs](for-developers.md)

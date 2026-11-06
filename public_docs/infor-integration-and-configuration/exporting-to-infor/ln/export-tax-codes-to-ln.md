@@ -40,7 +40,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
 ### **Schritt 2: Felder in DocBits hinzufügen**
 
-1.  Navigieren Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
+1.  Navigieren Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Dokumenttypen**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Wählen Sie das Menü **Felder** für den Dokumenttyp, in dem Sie die Felder hinzufügen möchten.
@@ -62,7 +62,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
 ### **Schritt 3: Layout bearbeiten**
 
-1.  Gehen Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
+1.  Gehen Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Dokumenttypen**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Öffnen Sie das Menü **Layout bearbeiten** für den Dokumenttyp, den Sie bearbeiten möchten.
@@ -130,7 +130,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
 ### **Schritt 2: Felder in DocBits hinzufügen**
 
-1.  Navigieren Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
+1.  Navigieren Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Dokumenttypen**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Wählen Sie das Menü **Felder** für den Dokumenttyp, in dem Sie die Felder hinzufügen möchten.
@@ -152,7 +152,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
 ### **Schritt 3: Layout bearbeiten**
 
-1.  Gehen Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
+1.  Gehen Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Dokumenttypen**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Öffnen Sie das Menü **Layout bearbeiten** für den Dokumenttyp, den Sie bearbeiten möchten.

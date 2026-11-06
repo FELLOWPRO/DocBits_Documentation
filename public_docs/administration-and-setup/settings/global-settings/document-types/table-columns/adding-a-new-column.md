@@ -10,7 +10,7 @@ Fügen Sie eine Spalte hinzu, wenn pro Position ein Wert erfasst werden muss, de
 
 ## Schritte
 
-1. Öffnen Sie **Settings → Global Settings → Document Types → Table Columns**.
+1. Öffnen Sie **Einstellungen → Dokumentenverarbeitung → Dokumenttypen → Tabellenspalten**.
 2. Klicken Sie auf **Add new table column**.
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog-de.png" alt="Dialog Add new table column mit Title, Is column required, Select column type und Select Table"><figcaption><p>Dialog zum Hinzufügen einer neuen Tabellenspalte</p></figcaption></figure>

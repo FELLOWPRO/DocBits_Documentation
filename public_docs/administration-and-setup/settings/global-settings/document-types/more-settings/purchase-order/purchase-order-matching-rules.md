@@ -26,7 +26,7 @@ Diese Konfigurationsseite dient dazu, die Regeln zu definieren und zu verwalten,
 
 ## Zugriff
 
-1. Navigieren Sie zu **Einstellungen** → **Dokumenttypen**, wählen Sie den Dokumenttyp aus und klicken Sie auf **Weitere Einstellungen**.
+1. Navigieren Sie zu **Einstellungen** → **Dokumentenverarbeitung** → **Dokumenttypen**, wählen Sie den Dokumenttyp aus und klicken Sie auf **Weitere Einstellungen**.
 2. Aktivieren Sie in der Karte **Bestellung** den Schalter **PO-Match serverseitig**.
 3. Klicken Sie neben dem Schalter auf **PO-Abgleichsregeln konfigurieren**.
 

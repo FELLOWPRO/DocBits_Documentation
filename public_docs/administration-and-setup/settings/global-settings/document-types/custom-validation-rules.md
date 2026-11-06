@@ -32,7 +32,7 @@ Regeln werden pro **Dokumenttyp** definiert und laufen für jedes Dokument diese
 
 Benutzerdefinierte Validierungsregeln werden **pro Dokumenttyp** eingeschaltet. Es gibt keinen organisationsweiten Schalter.
 
-1. Gehen Sie zu **Einstellungen → Globale Einstellungen → Dokumenttypen**.
+1. Gehen Sie zu **Einstellungen → Dokumentenverarbeitung → Dokumenttypen**.
 2. Klicken Sie auf der Karte des Dokumenttyps auf das **Einstellungen**-Symbol (Zahnrad).
 3. Öffnen Sie den Abschnitt **Benutzerdefinierte Validierungsregeln** und schalten Sie den Schalter ein.
 4. Klicken Sie auf **Validierungsregeln verwalten**, um die Regelliste zu öffnen.
@@ -53,7 +53,7 @@ Ab sofort zeigt die Karte des Dokumenttyps zusätzlich einen Link **Validierungs
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-de.png" alt="Verwaltung benutzerdefinierter Validierungsregeln mit ausgeblendeten Konfigurationsnamen."><figcaption><p>Verwaltung benutzerdefinierter Validierungsregeln mit ausgeblendeten Konfigurationsnamen.</p></figcaption></figure>
 
-Jede Karte zeigt Namen und Beschreibung der Regel sowie die Badges für ihre **Ebene** (Header / Line / Table), **Schwere** (Error / Warning), das **Feld**, an dem der Fehler angezeigt wird, und ihre **Quelle**. Mit dem Schalter rechts aktivieren oder deaktivieren Sie eine Regel, über das Menü **⋮** duplizieren oder löschen Sie sie. Filtern Sie die Liste nach Ebene (**All / Header / Line / Table**) und Status (**All / Active / Inactive**) oder durchsuchen Sie sie.
+Jede Karte zeigt Namen und Beschreibung der Regel sowie die Badges für ihre **Ebene** (Header / Line / Table), **Schwere** (Error / Warning), das **Feld**, an dem der Fehler angezeigt wird, und ihre **Quelle**. Mit dem Schalter rechts aktivieren oder deaktivieren Sie eine Regel, über das Menü **⋮** bearbeiten, duplizieren oder löschen Sie sie. Filtern Sie die Liste nach Ebene (**All / Header / Line / Table**) und Status (**All / Active / Inactive**) oder durchsuchen Sie sie.
 
 ### System-Standardregeln, angepasste und benutzerdefinierte Regeln
 

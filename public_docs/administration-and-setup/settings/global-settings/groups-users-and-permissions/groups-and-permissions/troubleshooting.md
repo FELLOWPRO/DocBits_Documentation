@@ -14,7 +14,7 @@ Zugriffssteuerungseinstellungen gelten nur, wenn die Funktion **aktiviert** ist.
 
 Stellen Sie sicher, dass der Benutzer korrekt den entsprechenden Gruppen zugeordnet ist:
 
-* Navigieren Sie zu: `Einstellungen` > `Globale Einstellungen` > `Gruppen, Benutzer und Berechtigungen`.
+* Navigieren Sie zu: `Einstellungen` > `Organisation & Zugang` > `Gruppen und Berechtigungen`.
 * Wählen Sie **Gruppen und Berechtigungen** aus.
 * Bestätigen Sie, dass der Benutzer unter der erwarteten Gruppe aufgeführt ist.
 * Wenn die Gruppe spezifische Zugriffssteuerung verwendet, blockiert eine fehlende Gruppenzuweisung den Zugriff auf Dokumente und Aktionen.
@@ -42,7 +42,7 @@ Der Zugriff kann auch auf Felderebene eingeschränkt sein, was das Bearbeiten od
 
 Diese globale Einstellung beschränkt die Dokumentsichtbarkeit:
 
-* Navigieren Sie zu: `Einstellungen` > `Globale Einstellungen` > `Gruppen, Benutzer und Berechtigungen`.
+* Navigieren Sie zu: `Einstellungen` > `Organisation & Zugang` > `Gruppen und Berechtigungen`.
 * Wenn **Nur zugewiesene Dokumente** aktiviert ist, können Benutzer nur Dokumente sehen, die ihnen oder ihrer Gruppe explizit zugewiesen sind.
 * Wenn Benutzer erwartete Dokumente nicht sehen können:
   * Überprüfen Sie die Dokumentenzuweisungen.

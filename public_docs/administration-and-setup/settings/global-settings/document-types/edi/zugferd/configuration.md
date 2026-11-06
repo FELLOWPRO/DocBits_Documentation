@@ -21,7 +21,7 @@ Der ZUGFeRD-Standard ist standardmäßig immer aktiv, Sie können ihn jedoch bei
 
 ### **Schritte zur Änderung der ZUGFeRD-Einstellungen:**
 
-1. Navigieren Sie zu **Einstellungen → Globale Einstellungen → Dokumententypen → Rechnung**.
+1. Navigieren Sie zu **Einstellungen → Dokumentenverarbeitung → Dokumententypen → Rechnung**.
 2. Klicken Sie auf **E-Doc**.\\
 3. Eine Liste aller verfügbaren E-Docs wird angezeigt.
 4. Suchen Sie die **ZUGFeRD**-Version, die Sie ändern möchten.\\
@@ -67,7 +67,7 @@ Die **Konfiguration der Extraktionspfade** wird verwendet, um Daten zu extrahier
 2. Erstellen Sie einen neuen Entwurf, indem Sie auf das **Stiftsymbol** klicken.
 3. Wählen Sie den neu erstellten Entwurf aus.
 4. Erstellen Sie ein neues Feld oder ändern Sie ein bestehendes.
-5. Die linke Seite steht für die **DocBits-Feld-ID**, die Sie unter **Einstellungen → Globale Einstellungen → Dokumententypen → Rechnung → Felder** finden.\\
+5. Die linke Seite steht für die **DocBits-Feld-ID**, die Sie unter **Einstellungen → Dokumentenverarbeitung → Dokumententypen → Rechnung → Felder** finden.\\
 6. Die rechte Seite steht für den **Pfad zum Feld**, das in der Transformation erstellt wurde.
 7. Klicken Sie auf **Speichern**.
 

@@ -2,7 +2,7 @@
 
 Tabellenspalten legen fest, welche Spalten die Positionstabelle eines Dokumenttyps hat: was DocBits in jede Spalte extrahiert, was der Benutzer in der Validierungsmaske sieht und was beim Export an das ERP gesendet wird.
 
-**Wo:** Settings → Global Settings → Document Types → Table Columns
+**Wo:** Einstellungen → Dokumentenverarbeitung → Dokumenttypen → Tabellenspalten
 
 <figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-de-20261104.png" alt="Aktuelle Use-AI-Auswahl mit Standard, Ja und Nein. Es wurde keine Option geändert. Titelzellen sind aus Datenschutzgründen ausgeblendet."><figcaption><p>Aktuelle Use-AI-Auswahl mit Standard, Ja und Nein. Es wurde keine Option geändert. Titelzellen sind aus Datenschutzgründen ausgeblendet.</p></figcaption></figure>
 

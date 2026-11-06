@@ -29,7 +29,7 @@ Innerhalb jeder Gruppe sind die am häufigsten genutzten Seiten oben angeordnet.
 
 ## Lange Einstellungsseiten — Anker-Navigation
 
-Einstellungsseiten mit vielen Abschnitten (etwa Globale Einstellungen oder die Konfiguration eines Dokumenttyps) zeigen im Seitenkopf eine Liste mit Anker-Links. Klicken Sie auf einen Anker, um zu diesem Abschnitt zu springen. Die URL aktualisiert sich beim Scrollen, sodass der Link zu einem bestimmten Abschnitt kopiert oder als Lesezeichen gespeichert werden kann.
+Einstellungsseiten mit vielen Abschnitten (etwa die Einstellungsübersicht oder die Konfiguration eines Dokumenttyps) zeigen im Seitenkopf eine Liste mit Anker-Links. Klicken Sie auf einen Anker, um zu diesem Abschnitt zu springen. Die URL aktualisiert sich beim Scrollen, sodass der Link zu einem bestimmten Abschnitt kopiert oder als Lesezeichen gespeichert werden kann.
 
 ## Dokumentation während der Arbeit — Hilfe-Symbole
 

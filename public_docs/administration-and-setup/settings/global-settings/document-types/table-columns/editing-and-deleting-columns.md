@@ -4,7 +4,7 @@ Die Checkboxen steuern Pflichtwerte, Bearbeitbarkeit und Sichtbarkeit. Use AI wi
 
 Alles außer dem Titel wird direkt in der Liste geändert; es gibt keinen Bearbeiten-Dialog.
 
-**Wo:** Settings → Global Settings → Document Types → Table Columns
+**Wo:** Einstellungen → Dokumentenverarbeitung → Dokumenttypen → Tabellenspalten
 
 ## Ein Flag umschalten
 

@@ -8,7 +8,7 @@ Diese Seite erklärt, wie Sie die erfolgreiche Verarbeitung Ihres BOD (Business 
 
 ### Abrufen Ihres API-Schlüssels
 
-1.  Gehen Sie zu **Einstellungen → Globale Einstellungen → Integration und SSO**.
+1.  Gehen Sie zu **Einstellungen → System & Administration → Integration und SSO**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_integration.png)
 2.  Sie können entweder Ihren **API-Schlüssel** manuell kopieren oder auf die Schaltfläche "Kopieren" klicken, um ihn in Ihre Zwischenablage zu kopieren.

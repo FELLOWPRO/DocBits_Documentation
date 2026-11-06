@@ -28,11 +28,9 @@ Jede Gruppe kann konfiguriert werden für:
 ## Zugriffskontrolle einer Gruppe öffnen
 
 1. Navigieren Sie zu **Einstellungen**.
-2. Gehen Sie zu **Globale Einstellungen**.
-3. Wählen Sie **Gruppen, Benutzer und Berechtigungen**.
-4. Wählen Sie **Gruppen und Berechtigungen**.
-5. Um die Berechtigungen einer Gruppe (z. B. PROCUREMENT\_DIRECTOR) zu verwalten, klicken Sie auf die drei Punkte auf der rechten Seite.
-6. Wählen Sie **Zugriffskontrolle verwalten**.
+2. Wählen Sie unter **Organisation & Zugang** die Option **Gruppen und Berechtigungen**.
+3. Um die Berechtigungen einer Gruppe (z. B. PROCUREMENT\_DIRECTOR) zu verwalten, klicken Sie auf die drei Punkte auf der rechten Seite.
+4. Wählen Sie **Zugriffskontrolle verwalten**.
 
 <figure><img src="../../../../../.gitbook/assets/access_control_open_menu.png" alt="Zeilenmenü einer Gruppe öffnen und Zugriffskontrolle verwalten wählen"><figcaption><p>Öffnen Sie auf der Seite „Gruppen und Berechtigungen" das <strong>⋮</strong>-Menü einer Gruppe und wählen Sie <strong>Zugriffskontrolle verwalten</strong>.</p></figcaption></figure>
 

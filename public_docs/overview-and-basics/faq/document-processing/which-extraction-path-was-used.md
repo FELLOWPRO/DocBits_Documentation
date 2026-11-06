@@ -20,7 +20,7 @@ Kopffelder tragen neben dem Wert ein eigenes Quellen-Kennzeichen: *Extracted usi
 
 * **Einstellungen → Dokumentenverarbeitung → Klassifizierung und Extraktion → AI-Modell**: Die Tabelle unter der Auswahl listet jeden Lieferanten mit einem gespeicherten Modell oder Training. Ein Lieferant in dieser Liste mit *Trainingsdaten* hat gespeicherte Regeln; *Trainingsdaten zurücksetzen* entfernt sie.
 * **Einstellungen → Dokumentenverarbeitung → OCR-Einstellungen**: *E-Text verwenden, falls verfügbar* und *Verwenden Sie AI-Daten für Tabellen, falls verfügbar* ändern, welchen Text die Extraktion sieht. Ein Lieferant kann E-Text unter *Weitere Einstellungen* im Validierungsbildschirm überschreiben.
-* **Einstellungen → Globale Einstellungen → Dokumenttypen → Tabellenspalten**: die Kennzeichen Versteckt, Erforderlich und *KI nutzen*. Eine versteckte Spalte wird nie gefüllt; eine Spalte mit *KI nutzen* wird auch bei Lieferanten mit Regeln von der KI gefüllt.
+* **Einstellungen → Dokumentenverarbeitung → Dokumenttypen → Tabellenspalten**: die Kennzeichen Versteckt, Erforderlich und *KI nutzen*. Eine versteckte Spalte wird nie gefüllt; eine Spalte mit *KI nutzen* wird auch bei Lieferanten mit Regeln von der KI gefüllt.
 
 ## 3. Ohne die Oberfläche reproduzieren (API / MCP)
 

@@ -40,13 +40,18 @@ This section lists every DocBits app and feature and whether it is enabled for y
 
 ## Subscription Usage
 
-<figure><img src="../../../.gitbook/assets/subscriptions_usage.png" alt="Subscription Usage"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/subscription-usage-analytics-20261107-en.png" alt="Subscription Usage with current billing-period token balances and a six-month app usage chart"><figcaption><p>Subscription Usage for the current billing period and the last six months</p></figcaption></figure>
 
-Monitor your token and workflow usage over a selected period. Use the **Select** button to choose the date range.
+The **Subscription Usage** card shows token consumption for your current billing period. The billing-period dates appear above the list.
 
-| Column               | Description                                                           |
-| -------------------- | --------------------------------------------------------------------- |
-| **Type**             | The usage category — Document, Workflow, Advanced Workflow or DocNet. |
-| **From / To**        | The period the usage is reported for.                                 |
-| **Tokens Used**      | Tokens consumed in the period.                                        |
-| **Remaining Tokens** | Tokens left for the period.                                           |
+Each row shows the app and its subscription plan. Depending on the plan, the row also shows:
+
+- The included token allowance.
+- The number of tokens used and the percentage of the included allowance consumed.
+- **Within limit** or **Over limit** status.
+
+A warning starts at **80%** of the included amount. Usage is **Over limit** from **100%**. Plans without an included token allowance show only the tokens used. If usage cannot be provided, the row shows **Usage is not available yet for this subscription**.
+
+### Usage over the last six months
+
+Use the **App** drop-down to select an app. The chart shows its monthly token usage over the last six months.

@@ -207,27 +207,39 @@ Short English videos on single workflow topics, from Standard workflows to the A
 | Video | Duration |
 | --- | --- |
 | [1. Building a Standard workflow](#building-a-standard-workflow) | 1:09 |
-| [2. Searching and filtering on the workflow dashboard](#searching-and-filtering-on-the-workflow-dashboard) | 0:54 |
-| [3. When a workflow starts](#when-a-workflow-starts) | 0:42 |
-| [4. Reading the workflow logs](#reading-the-workflow-logs) | 1:34 |
-| [5. Success, failed condition and error in a workflow run](#success-failed-condition-and-error-in-a-workflow-run) | 1:28 |
-| [6. Workflow execution order](#workflow-execution-order) | 1:14 |
-| [7. Converting a Standard workflow to Advanced](#converting-a-standard-workflow-to-advanced) | 1:15 |
-| [8. Advanced Workflow Designer: cards and paths](#advanced-workflow-designer-cards-and-paths) | 2:19 |
-| [9. Workflow descriptions and notes](#workflow-descriptions-and-notes) | 0:57 |
-| [10. Keyboard shortcuts in the Advanced Workflow designer](#keyboard-shortcuts-in-the-advanced-workflow-designer) | 1:06 |
-| [11. Validate a workflow](#validate-a-workflow) | 0:50 |
-| [12. Testing a workflow](#testing-a-workflow) | 1:42 |
-| [13. AND and OR: combining conditions](#and-and-or-combining-conditions) | 2:28 |
-| [14. Decision tables in assignment cards](#decision-tables-in-assignment-cards) | 1:59 |
-| [15. Date tolerances and range checks](#date-tolerances-and-range-checks) | 2:13 |
-| [16. Workflow execution limits](#workflow-execution-limits) | 0:49 |
+| [2. Testing cards in a Standard workflow](#testing-cards-in-a-standard-workflow) | 0:51 |
+| [3. Searching and filtering on the workflow dashboard](#searching-and-filtering-on-the-workflow-dashboard) | 0:54 |
+| [4. When a workflow starts](#when-a-workflow-starts) | 0:42 |
+| [5. Reading the workflow logs](#reading-the-workflow-logs) | 1:34 |
+| [6. Success, failed condition and error in a workflow run](#success-failed-condition-and-error-in-a-workflow-run) | 1:28 |
+| [7. Workflow execution order](#workflow-execution-order) | 1:14 |
+| [8. Converting a Standard workflow to Advanced](#converting-a-standard-workflow-to-advanced) | 1:15 |
+| [9. Advanced Workflow Designer: cards and paths](#advanced-workflow-designer-cards-and-paths) | 2:19 |
+| [10. Workflow descriptions and notes](#workflow-descriptions-and-notes) | 0:57 |
+| [11. Keyboard shortcuts in the Advanced Workflow designer](#keyboard-shortcuts-in-the-advanced-workflow-designer) | 1:06 |
+| [12. Validate a workflow](#validate-a-workflow) | 0:50 |
+| [13. Testing a workflow](#testing-a-workflow) | 1:42 |
+| [14. AND and OR: combining conditions](#and-and-or-combining-conditions) | 2:28 |
+| [15. Decision tables in assignment cards](#decision-tables-in-assignment-cards) | 1:59 |
+| [16. Two-step approval with decision tables](#two-step-approval-with-decision-tables) | 3:03 |
+| [17. Date tolerances and range checks](#date-tolerances-and-range-checks) | 2:13 |
+| [18. Workflow execution limits](#workflow-execution-limits) | 0:49 |
+| [19. Workflow terms: what is what](#workflow-terms-what-is-what) | 1:34 |
+| [20. Changing the version of a card](#changing-the-version-of-a-card) | 0:39 |
+| [21. Download and upload a workflow as JSON](#download-and-upload-a-workflow-as-json) | 0:51 |
+| [22. Change status card and loop prevention](#change-status-card-and-loop-prevention) | 0:44 |
 
 ### Building a Standard workflow
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.mp4" %}
 
 [Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.vtt) · 1:09
+
+### Testing cards in a Standard workflow
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/en.vtt) · 0:51
 
 ### Searching and filtering on the workflow dashboard
 
@@ -307,6 +319,12 @@ Short English videos on single workflow topics, from Standard workflows to the A
 
 [Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.vtt) · 1:59
 
+### Two-step approval with decision tables
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.vtt) · 3:03
+
 ### Date tolerances and range checks
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4" %}
@@ -318,3 +336,27 @@ Short English videos on single workflow topics, from Standard workflows to the A
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/en.mp4" %}
 
 [Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/en.vtt) · 0:49
+
+### Workflow terms: what is what
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.vtt) · 1:34
+
+### Changing the version of a card
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/en.vtt) · 0:39
+
+### Download and upload a workflow as JSON
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/en.vtt) · 0:51
+
+### Change status card and loop prevention
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/en.vtt) · 0:44

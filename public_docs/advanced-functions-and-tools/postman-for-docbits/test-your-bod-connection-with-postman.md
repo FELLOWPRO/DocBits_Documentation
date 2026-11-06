@@ -8,7 +8,7 @@ Esta página explica cómo verificar el procesamiento exitoso de tu BOD (Documen
 
 ### Recuperando tu Clave API
 
-1.  Ve a **Ajustes → Ajustes globales → Integración y SSO**.
+1.  Ve a **Ajustes → Sistema y Administración → Integración y SSO**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_integration.png)
 2.  Puedes copiar manualmente tu **clave API** o hacer clic en el botón de copiar para copiarla en tu portapapeles.

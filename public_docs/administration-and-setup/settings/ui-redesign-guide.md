@@ -29,7 +29,7 @@ Dentro de cada grupo, las páginas más usadas están situadas arriba.
 
 ## Páginas de configuración largas — navegación por anclas
 
-Las páginas de configuración con muchas secciones (como Configuración Global o la configuración de un Tipo de Documento) muestran una lista de enlaces de ancla en la cabecera. Haga clic en un ancla para saltar a esa sección. La URL se actualiza al desplazarse, por lo que el enlace a una sección concreta se puede compartir o guardar como marcador.
+Las páginas de configuración con muchas secciones (como la descripción general de la configuración o la configuración de un Tipo de Documento) muestran una lista de enlaces de ancla en la cabecera. Haga clic en un ancla para saltar a esa sección. La URL se actualiza al desplazarse, por lo que el enlace a una sección concreta se puede compartir o guardar como marcador.
 
 ## Encontrar documentación mientras trabaja — iconos de ayuda
 

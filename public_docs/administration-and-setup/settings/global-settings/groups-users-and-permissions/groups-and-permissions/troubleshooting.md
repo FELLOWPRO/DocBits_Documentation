@@ -14,7 +14,7 @@ La configuración de Control de Acceso solo se aplica si la función está **hab
 
 Asegurarse de que el usuario esté asignado correctamente al grupo apropiado(s):
 
-* Navegar a: `Configuración` > `Configuración Global` > `Grupos, Usuarios y Permisos`.
+* Navegar a: `Ajustes` > `Organización y Acceso` > `Grupos y Permisos`.
 * Seleccionar **Grupos y Permisos**.
 * Confirmar que el usuario esté listado bajo el grupo esperado.
 * Si el grupo utiliza control de acceso específico, la falta de asignación de grupo bloqueará el acceso a documentos y acciones.
@@ -42,7 +42,7 @@ El acceso también puede estar restringido a nivel de **campo**, lo que puede bl
 
 Esta configuración global limita la visibilidad de documentos:
 
-* Navegar a: `Configuración` > `Configuración Global` > `Grupos, Usuarios y Permisos`.
+* Navegar a: `Ajustes` > `Organización y Acceso` > `Grupos y Permisos`.
 * Si **Solo Documentos Asignados** está **habilitado**, los usuarios solo pueden ver documentos asignados explícitamente a ellos o a su grupo.
 * Si los usuarios no pueden ver los documentos esperados:
   * Verificar las asignaciones de documentos.

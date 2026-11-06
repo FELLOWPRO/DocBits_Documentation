@@ -20,7 +20,7 @@ Los campos de cabecera llevan su propia insignia de origen junto al valor: *Extr
 
 * **Configuración → Procesamiento de documentos → Clasificación y extracción → Modelo de IA**: la tabla debajo del selector lista todos los proveedores con un modelo o un entrenamiento almacenado. Un proveedor de esta lista con *datos de entrenamiento* tiene reglas guardadas; *restablecer los datos de entrenamiento* las elimina.
 * **Configuración → Procesamiento de documentos → Configuración de OCR**: *Usar E-Text si está disponible* y *Usar datos de IA para tablas* cambian el texto que ve la extracción. Un proveedor puede sobrescribir E-Text en *Más ajustes* de la pantalla de validación.
-* **Configuración → Configuración global → Tipos de documentos → Columnas de tabla**: indicadores de oculta, obligatoria y *Usar IA*. Una columna oculta nunca se rellena; una columna con *Usar IA* la rellena la IA incluso en proveedores con reglas.
+* **Configuración → Procesamiento de Documentos → Tipos de documentos → Columnas de tabla**: indicadores de oculta, obligatoria y *Usar IA*. Una columna oculta nunca se rellena; una columna con *Usar IA* la rellena la IA incluso en proveedores con reglas.
 
 ## 3. Reproducir sin la interfaz (API / MCP)
 

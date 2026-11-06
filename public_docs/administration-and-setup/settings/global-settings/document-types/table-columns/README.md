@@ -2,7 +2,7 @@
 
 Table Columns define qué columnas tiene la tabla de líneas de un tipo de documento: qué extrae DocBits en cada columna, qué ve el usuario en la pantalla de validación y qué se envía al ERP en la exportación.
 
-**Dónde:** Configuración → Configuración global → Tipos de documento → Columnas de tabla
+**Dónde:** Configuración → Procesamiento de Documentos → Tipos de documento → Columnas de tabla
 
 <figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-es-20261104.png" alt="Desplegable actual Use AI con Predeterminado, Sí y No. No se cambió ninguna opción. Las celdas de título están ocultas por privacidad."><figcaption><p>Desplegable actual Use AI con Predeterminado, Sí y No. No se cambió ninguna opción. Las celdas de título están ocultas por privacidad.</p></figcaption></figure>
 

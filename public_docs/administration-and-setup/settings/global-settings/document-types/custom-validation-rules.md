@@ -35,7 +35,7 @@ Las reglas se definen por **tipo de documento** y se ejecutan en cada documento 
 
 Las reglas de validación personalizadas se activan **por tipo de documento**. No existe un interruptor para toda la organización.
 
-1. Vaya a **Ajustes → Ajustes generales → Tipos de documento**.
+1. Vaya a **Ajustes → Procesamiento de Documentos → Tipos de documento**.
 2. En la tarjeta del tipo de documento, haga clic en el icono de **ajustes** (engranaje).
 3. Abra la sección **Reglas de validación personalizadas** y active el interruptor.
 4. Haga clic en **Gestionar reglas de validación** para abrir la lista de reglas.
@@ -56,7 +56,7 @@ A partir de ese momento, la tarjeta del tipo de documento también muestra un en
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-es.png" alt="Reglas de validación personalizadas con los nombres ocultos."><figcaption><p>Reglas de validación personalizadas con los nombres ocultos.</p></figcaption></figure>
 
-Cada tarjeta muestra el nombre y la descripción de la regla, y las insignias de su **nivel** (Header / Line / Table), **gravedad** (Error / Warning), el **campo** al que se asocia el error y su **origen**. Utilice el interruptor de la derecha para activar o desactivar una regla, y el menú **⋮** para duplicarla o eliminarla. Filtre la lista por nivel (**All / Header / Line / Table**) y por estado (**All / Active / Inactive**), o búsquela.
+Cada tarjeta muestra el nombre y la descripción de la regla, y las insignias de su **nivel** (Header / Line / Table), **gravedad** (Error / Warning), el **campo** al que se asocia el error y su **origen**. Utilice el interruptor de la derecha para activar o desactivar una regla, y el menú **⋮** para editarla, duplicarla o eliminarla. Filtre la lista por nivel (**All / Header / Line / Table**) y por estado (**All / Active / Inactive**), o búsquela.
 
 ### Sistema de Reglas por defecto, Personalizadas y Personalizadas
 

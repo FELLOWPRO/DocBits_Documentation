@@ -4,7 +4,7 @@ Las casillas controlan obligatoriedad, edición y visibilidad. Use AI se configu
 
 Todo excepto el título se cambia directamente en la lista; no hay cuadro de diálogo de edición.
 
-**Dónde:** Configuración → Configuración global → Tipos de documento → Columnas de tabla
+**Dónde:** Configuración → Procesamiento de Documentos → Tipos de documento → Columnas de tabla
 
 ## Cambiar un indicador
 

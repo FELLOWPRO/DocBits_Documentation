@@ -22,7 +22,7 @@ Esta página de configuración se utiliza para definir y gestionar las reglas qu
 
 ## Cómo acceder
 
-1. Navega a **Ajustes** → **Ajustes globales** → **Tipos de documentos**, selecciona el tipo de documento y haz clic en **Más ajustes**.
+1. Navega a **Ajustes** → **Procesamiento de Documentos** → **Tipos de documentos**, selecciona el tipo de documento y haz clic en **Más ajustes**.
 2. En la tarjeta **Orden de compra**, activa **lado del servidor de coincidencia de PO**.
 3. Haz clic en **Configurar reglas de coincidencia de órdenes de compra** junto al interruptor.
 

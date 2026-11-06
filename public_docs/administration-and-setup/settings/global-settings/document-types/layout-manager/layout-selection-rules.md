@@ -26,7 +26,7 @@ El origen sigue estando disponible, como una condición más entre muchas. Una r
 
 Los diseños basados en reglas los activa **por tipo de documento** un **administrador de la organización**.
 
-1. Vaya a **Ajustes → Ajustes generales → Tipos de documento**.
+1. Vaya a **Ajustes → Procesamiento de Documentos → Tipos de documento**.
 2. Haga clic en el icono de **ajustes** (engranaje) de la tarjeta del tipo de documento.
 3. Abra **Gestionar diseños** y active el interruptor.
 

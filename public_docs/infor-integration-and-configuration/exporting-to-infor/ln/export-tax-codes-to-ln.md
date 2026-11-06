@@ -40,7 +40,7 @@ Esta guía te guiará a través del proceso de configuración para asegurar que 
 
 ### **Paso 2: Agregar Campos en DocBits**
 
-1.  Navega a **Ajustes** -> **Ajustes globales** -> **Tipos de documentos**.
+1.  Navega a **Ajustes** -> **Procesamiento de Documentos** -> **Tipos de documentos**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 2.  Elige el menú **Campos** correspondiente al Tipo de Documento donde deseas agregar los campos.
@@ -62,7 +62,7 @@ Esta guía te guiará a través del proceso de configuración para asegurar que 
 
 ### **Paso 3: Editar diseño**
 
-1.  Ve a **Ajustes** -> **Ajustes globales** -> **Tipos de documentos**.
+1.  Ve a **Ajustes** -> **Procesamiento de Documentos** -> **Tipos de documentos**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 2.  Abre el menú **Editar diseño** para el Tipo de Documento que deseas editar.
@@ -130,7 +130,7 @@ Después de subir un nuevo documento a DocBits con la configuración de document
 
 ### **Paso 2: Agregar Campos en DocBits**
 
-1.  Navega a **Ajustes** -> **Ajustes globales** -> **Tipos de documentos**.
+1.  Navega a **Ajustes** -> **Procesamiento de Documentos** -> **Tipos de documentos**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 2.  Elige el menú **Campos** correspondiente al Tipo de Documento donde deseas agregar los campos.
@@ -152,7 +152,7 @@ Después de subir un nuevo documento a DocBits con la configuración de document
 
 ### **Paso 3: Editar diseño**
 
-1.  Ve a **Ajustes** -> **Ajustes globales** -> **Tipos de documentos**.
+1.  Ve a **Ajustes** -> **Procesamiento de Documentos** -> **Tipos de documentos**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 2.  Abre el menú **Editar diseño** para el Tipo de Documento que deseas editar.

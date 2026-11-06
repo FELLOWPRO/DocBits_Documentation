@@ -6,11 +6,11 @@ Como administrador de la organización, puedes **exigir que todos los miembros u
 
 Los inicios de sesión con inicio de sesión único (SSO) — Google, Microsoft, SAML — están **exentos**: su proveedor de identidad ya aplica su propia MFA, por lo que el requisito solo afecta a los inicios de sesión con contraseña.
 
-Esta configuración se encuentra en **Configuración → Configuración Global → Información de la Empresa → Autenticación de dos factores** y está disponible únicamente para los administradores de la organización.
+Esta configuración se encuentra en **Configuración → Organización y Acceso → Información de la Empresa → Autenticación de dos factores** y está disponible únicamente para los administradores de la organización.
 
 ## Exige la MFA para tu organización
 
-1. Ve a **Configuración → Configuración Global → Información de la Empresa**.
+1. Ve a **Configuración → Organización y Acceso → Información de la Empresa**.
 2. Abre la sección **Autenticación de dos factores**.
 3. Activa **Requerir autenticación de dos factores para todos los miembros** y haz clic en **Guardar**.
 

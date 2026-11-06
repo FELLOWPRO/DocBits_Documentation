@@ -16,7 +16,7 @@ El asistente está **desactivado por defecto**. Esta página muestra dónde acti
 
 ## Activarlo
 
-1. Vaya a **Settings → Global Settings → Company Information**. El encabezado de la página muestra **Company Settings**.
+1. Vaya a **Ajustes → Organización y Acceso → Información de la empresa**. El encabezado de la página muestra **Company Settings**.
 2. Abra la sección **Assistants**.
 3. Activo **Habilita el asistente de configuración**.
 

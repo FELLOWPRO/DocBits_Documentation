@@ -63,6 +63,31 @@ const { log_id } = await res.json();
 Utilisez l'hôte d'API de votre région (voir [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md) pour la liste des hôtes).
 CSV des journaux : `GET /testing/logs/export.csv` (mêmes filtres que la liste) et `GET /testing/logs/<log_id>/export.csv`.
 
+## Démarrer en ouvrant un lien de démarrage
+
+Si votre automatisation pilote un navigateur où une session est ouverte, ouvrez le lien de démarrage du modèle au lieu d'appeler l'API :
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+`run` est la clé du modèle (obligatoire), `version` fixe une version enregistrée (par défaut : la dernière), `input` désigne une entrée enregistrée
+par son nom ou son ID, et `autostart=1` démarre sans clic un modèle qui ne fait que lire des données. Pour un modèle qui
+écrit des données, la confirmation reste nécessaire : l'exécution attend donc `testing-start-confirm`. Le lien fonctionne uniquement dans un
+navigateur où un administrateur de l'organisation est connecté ; les clics ont lieu dans cet onglet.
+
+```ts
+// signed in as an organisation admin (your login helper)
+await page.goto('https://<your-environment>/settings/testing?run=default-smoke-analytics&version=1.0.0');
+const start = page.getByTestId('testing-start-confirm');
+const status = page.getByTestId('testing-run-status');
+await start.or(status).first().waitFor();
+if (await start.isVisible()) await start.click();
+await expect(status).toHaveAttribute('data-status', /(passed|failed|blocked|cancelled)$/);
+```
+
+`data-status` vaut `running`, `passed`, `failed`, `blocked` ou `cancelled`. `blocked` signifie qu'une règle a arrêté l'exécution
+avant que ses étapes ne s'exécutent. Les paramètres sont supprimés de l'URL après leur lecture, de sorte que recharger la page ne
+démarre pas le test à nouveau. Copiez le lien dans la boîte de dialogue de démarrage sous **Démarrer depuis l'extérieur → Lien de démarrage**.
+
 ## Démarrer via MCP
 
 Le serveur MCP DocBits propose les outils Testing `testing_list_templates`, `testing_list_inputs`, `testing_start`,

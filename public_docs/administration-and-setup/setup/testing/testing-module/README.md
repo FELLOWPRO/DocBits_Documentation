@@ -56,7 +56,8 @@ exporteer-, verwijder- of goedkeurstappen worden geblokkeerd, tenzij het sjabloo
 ## Hoe het werkt: sjabloon, invoer, start, logboek
 
 De pagina heeft drie tabbladen: **Sjablonen**, **Invoer** en **Logboek**. Een sjabloon beschrijft de workflow, een invoer bepaalt
-waarmee het wordt uitgevoerd, en het logboek toont het resultaat.
+waarmee het wordt uitgevoerd, en het logboek toont het resultaat. Via de **?** naast de tabbladen opent u de bijbehorende pagina van deze
+documentatie in uw interfacetaal.
 
 <figure><img src="../../../../.gitbook/assets/testing-00-diagram-nl.png" alt="Diagram: sjabloon plus invoer vormt een test; die wordt gestart in de browser, door een AI-assistent of van buitenaf; elke run eindigt in het logboek"><figcaption><p>Diagram: sjabloon plus invoer vormt een test; die wordt gestart in de browser, door een AI-assistent of van buitenaf; elke run eindigt in het logboek.</p></figcaption></figure>
 
@@ -89,7 +90,7 @@ Lees verder:
 * [Een element in de app kiezen](pick-in-app.md): een element kiezen door ernaar te wijzen
 * [Opnieuw laden en hervatten](reload-and-resume.md): de pagina opnieuw laden midden in een test
 * [Invoer](inputs.md): de waarden van uw organisatie opslaan
-* [Een test starten](start-a-test.md): in de browser, vanuit een AI-assistent of vanuit Playwright
+* [Een test starten](start-a-test.md): in de browser, via een startlink, vanuit een AI-assistent of vanuit Playwright
 * [Logboek en geschiedenis](logs.md): resultaten, grafiek en CSV-export
 * [Probleemoplossing](troubleshooting.md)
 * [Voor ontwikkelaars](for-developers.md)

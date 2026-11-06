@@ -53,6 +53,39 @@ L'editor degli input ricorda i tre modi sotto **Avvia dall'esterno:** **Questa p
 
 <figure><img src="../../../../.gitbook/assets/testing-16-start-from-outside-it.png" alt="Riga Avvia dall'esterno nell'editor degli input"><figcaption><p>Riga Avvia dall'esterno nell'editor degli input.</p></figcaption></figure>
 
+## Condividere un link di avvio
+
+Un link di avvio apre la finestra di avvio di un modello, già compilata, così un collega o una pipeline CI non deve
+scegliere nuovamente il modello e i relativi valori:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+| Elemento | Funzione |
+|---|---|---|
+| **run** | Il modello da aprire, identificato dalla sua chiave (la riga sotto il nome del modello nella finestra, ad esempio `default-smoke-analytics`). Obbligatorio. |
+| **version** | Apre questa versione salvata. Se omesso, viene aperta la versione più recente. |
+| **input** | Precompila i campi con un input salvato, indicato tramite nome o ID. I parametri contrassegnati come sensibili non vengono mai compilati. |
+| **autostart=1** | Avvia il test non appena la pagina è aperta, ma solo se il modello è di sola lettura. Un modello che scrive dati attende comunque la conferma. |
+
+Per ottenere il link, aprire la finestra di avvio di un modello e passare ad **Avvia dall'esterno**. Il blocco
+**Link di avvio** contiene il link di quel modello, mentre **Playwright con link di avvio** contiene uno snippet che
+apre il link e attende il risultato.
+
+<figure><img src="../../../../.gitbook/assets/testing-start-link-dialog-it.png" alt="Finestra di avvio nella vista Avvia dall'esterno con il link di avvio copiabile e un esempio Playwright"><figcaption><p>La finestra di avvio nella vista <strong>Avvia dall'esterno</strong>: il link di avvio copiabile e un esempio Playwright che lo apre. Una sessione compare sotto <strong>Sessione che esegue il test</strong> quando una scheda accetta avvii dall'esterno.</p></figcaption></figure>
+
+Per chi apre il link:
+
+* DocBits apre **Impostazioni → Testing**, scheda **Modelli**, con la finestra di avvio del modello. Il link funziona
+  solo per chi può aprire Impostazioni → Testing, perché l'esecuzione utilizza la scheda del browser e i permessi di quella persona.
+* Un modello, una versione o un input non riconosciuto genera un errore sotto le schede e non avvia nulla.
+* Con `autostart=1`, un modello di sola lettura si avvia immediatamente. In tutti gli altri casi il test attende che si
+  selezioni **Avvia**; un modello che scrive dati richiede comunque la conferma.
+* Dopo la lettura, i parametri vengono rimossi dalla barra degli indirizzi: ricaricando la pagina, il test non viene
+  avviato una seconda volta.
+
+Il **?** accanto alle schede e nella finestra di avvio apre la pagina corrispondente di questa documentazione nella
+lingua dell'interfaccia.
+
 ## Avviare da un assistente AI (MCP)
 
 Se il proprio assistente AI è collegato a DocBits (vedere [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md)

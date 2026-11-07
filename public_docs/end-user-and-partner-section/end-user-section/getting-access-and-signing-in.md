@@ -15,6 +15,8 @@
 
 <figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/getting-access-login-en-20261107.png" alt="英文 DocBits 登录屏幕，E-Mail 和 Password 字段为空，包含 Remember me、设置为 Europe 的 Auth region 选择器、Log In、Sign in with a passkey、Sign in with Google 和 Sign in with Microsoft"><figcaption><p>登录屏幕：电子邮件和密码、Remember me、Auth region 选择器、Log In、passkey 以及 Google 和 Microsoft 登录按钮。</p></figcaption></figure>
 
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/getting-access-login-en-20261107.png -->
+
 1. **E-Mail** — 创建 DocBits 账户时使用的地址。
 2. **Password** — 您的 DocBits 密码。字段中的眼睛图标用于显示或隐藏您输入的内容。
 3. **Remember me** — 下次打开登录屏幕时自动填入您的电子邮件地址。

@@ -6,12 +6,12 @@ Je kunt ervoor kiezen om de **eenheidsprijs** van elke inkooporderregel automati
 
 ## **Activeringsstappen**
 
-1.  Navigeer naar **Instellingen** -> **Documentverwerking** -> **Documenttypen**.
+1.  Navigeer naar **Settings** -> **Document Processing** -> **Document Types**.
 
 2.  Selecteer het gewenste documenttype en open de aanvullende instellingen via het **tandwiel**.
 
     <figure><img src="../../../../../../.gitbook/assets/prior-u044-nl.png" alt="Documenttype Factuur met het tandwiel voor aanvullende instellingen."><figcaption><p>Documenttype Factuur met het tandwiel voor aanvullende instellingen.</p></figcaption></figure>
-3.  Schakel in de sectie **Inkooporder** de optie **Bereken PO-eenheidsprijs** in.
+3.  Schakel in de sectie **Purchase Order** de optie **Bereken PO-eenheidsprijs** in.
 
     <figure><img src="../../../../../../.gitbook/assets/prior-u045-nl.png" alt="Inkooporderinstellingen met Bereken PO-eenheidsprijs; er is geen instelling gewijzigd."><figcaption><p>Inkooporderinstellingen met Bereken PO-eenheidsprijs; er is geen instelling gewijzigd.</p></figcaption></figure>
 

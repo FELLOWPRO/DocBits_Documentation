@@ -11,7 +11,7 @@ Deze handleiding leidt u door het installatieproces om ervoor te zorgen dat bela
 
 ### **Stap 1: Lijst met waarden instellen**
 
-1.  Ga naar **Instellingen** -> **Documentverwerking** -> **Lijst met waarden**.
+1.  Ga naar **Settings** -> **Document Processing** -> **List of Values**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-nl.png" alt="Waardenlijsten in DocBits; de namen van organisatiespecifieke lijsten zijn afgeschermd."><figcaption><p>Waardenlijsten in DocBits; de namen van organisatiespecifieke lijsten zijn afgeschermd.</p></figcaption></figure>
 2.  Klik op **New**.
@@ -46,7 +46,7 @@ Deze handleiding leidt u door het installatieproces om ervoor te zorgen dat bela
 
 ### **Stap 2: Velden toevoegen in DocBits**
 
-1.  Ga naar **Instellingen** -> **Documentverwerking** -> **Documenttypen**.
+1.  Ga naar **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-nl.png" alt="Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2.  Kies het menu **Fields** van het documenttype waaraan u de velden wilt toevoegen.
@@ -68,7 +68,7 @@ Deze handleiding leidt u door het installatieproces om ervoor te zorgen dat bela
 
 ### **Stap 3: Lay-out bewerken**
 
-1.  Ga naar **Instellingen** -> **Documentverwerking** -> **Documenttypen**.
+1.  Ga naar **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-nl.png" alt="Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2.  Open het menu **Edit Layout** voor het documenttype dat u wilt bewerken.
@@ -105,7 +105,7 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
 
 ### **Stap 1: Lijst met waarden instellen**
 
-1.  Ga naar **Instellingen** -> **Documentverwerking** -> **Lijst met waarden**.
+1.  Ga naar **Settings** -> **Document Processing** -> **List of Values**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-nl.png" alt="Waardenlijsten in DocBits; de namen van organisatiespecifieke lijsten zijn afgeschermd."><figcaption><p>Waardenlijsten in DocBits; de namen van organisatiespecifieke lijsten zijn afgeschermd.</p></figcaption></figure>
 2.  Klik op **New**.
@@ -140,7 +140,7 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
 
 ### **Stap 2: Velden toevoegen in DocBits**
 
-1.  Ga naar **Instellingen** -> **Documentverwerking** -> **Documenttypen**.
+1.  Ga naar **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-nl.png" alt="Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2.  Kies het menu **Fields** van het documenttype waaraan u de velden wilt toevoegen.
@@ -162,7 +162,7 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
 
 ### **Stap 3: Lay-out bewerken**
 
-1.  Ga naar **Instellingen** -> **Documentverwerking** -> **Documenttypen**.
+1.  Ga naar **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-nl.png" alt="Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2.  Open het menu **Edit Layout** voor het documenttype dat u wilt bewerken.

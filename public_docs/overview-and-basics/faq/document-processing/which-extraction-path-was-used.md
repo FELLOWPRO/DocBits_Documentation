@@ -9,7 +9,7 @@ Open het document en kijk naar de tabbladen boven de regelitemtabel:
 | Wat u ziet | Pad |
 |---|---|
 | Rijen in het tabblad **Geëxtraheerde tabel** | Regelgebaseerd pad. De leverancier heeft een getrainde tabel; de rijen komen uit de opgeslagen coördinaatregels en de AI was er niet bij betrokken (behalve voor kolommen met *AI gebruiken*). |
-| Rijen in het tabblad **AI Geëxtraheerde tabel**, veld *Tags* eronder | AI-pad. Geen opgeslagen regels kwamen overeen; de AI-tabelextractie heeft de rijen geproduceerd, met de AI-tier van de organisatie of de tier die voor deze leverancier is ingesteld onder *Meer instellingen* → *Leverancierspecifiek AI-model*. |
+| Rijen in het tabblad **AI Geëxtraheerde tabel**, veld *Tags* eronder | AI-pad. Geen opgeslagen regels kwamen overeen; de AI-tabelextractie heeft de rijen geproduceerd, met de AI-tier van de organisatie of de tier die voor deze leverancier is ingesteld onder *More Settings* → *Leverancierspecifiek AI-model*. |
 | Tooltip *AI table not found* op het AI-tabblad | Het AI-pad is uitgevoerd en heeft voor dit document niets teruggegeven. |
 | Helemaal geen tabeltabbladen | Beide tabelinstellingen zijn voor de organisatie uitgeschakeld; niets heeft de tabel geëxtraheerd. |
 | *No line items yet* | Het pad is uitgevoerd, maar heeft geen rijen gevonden (geen leesbare tekst, geen tabel op de pagina, of de regels kwamen niet overeen met deze lay-out). |
@@ -18,9 +18,9 @@ Koptekstvelden hebben hun eigen bronlabel naast de waarde: *Extracted using AI*,
 
 ## 2. Controleer de configuratie van de leverancier
 
-* **Instellingen → Documentverwerking → Classificatie en extractie → AI-model**: de tabel onder de keuzelijst toont elke leverancier met een opgeslagen model of training. Een leverancier in deze lijst met *trainingsgegevens* heeft opgeslagen regels; *trainingsgegevens resetten* verwijdert ze.
-* **Instellingen → Documentverwerking → OCR-instellingen**: *Gebruik E-Text indien beschikbaar* en *Gebruik AI-gegevens voor tabellen* bepalen welke tekst de extractie te zien krijgt. Een leverancier kan E-Text overschrijven onder *Meer instellingen* op het validatiescherm.
-* **Instellingen → Documentverwerking → Documenttypen → Tabelkolommen**: de vlaggen Verborgen, Verplicht en *AI gebruiken*. Een verborgen kolom wordt nooit gevuld; een kolom met *AI gebruiken* wordt door de AI gevuld, ook voor leveranciers met regels.
+* **Settings → Document Processing → Classificatie en extractie → AI-model**: de tabel onder de keuzelijst toont elke leverancier met een opgeslagen model of training. Een leverancier in deze lijst met *trainingsgegevens* heeft opgeslagen regels; *trainingsgegevens resetten* verwijdert ze.
+* **Settings → Document Processing → OCR Settings**: *Gebruik E-Text indien beschikbaar* en *Gebruik AI-gegevens voor tabellen* bepalen welke tekst de extractie te zien krijgt. Een leverancier kan E-Text overschrijven onder *More Settings* op het validatiescherm.
+* **Settings → Document Processing → Document Types → Table Columns**: de vlaggen Verborgen, Verplicht en *AI gebruiken*. Een verborgen kolom wordt nooit gevuld; een kolom met *AI gebruiken* wordt door de AI gevuld, ook voor leveranciers met regels.
 
 ## 3. Reproduceren zonder de UI (API / MCP)
 
@@ -39,7 +39,7 @@ De DocBits MCP-tools worden beschreven in de documentatie van de DocBits MCP.
 
 ## 4. Lees de logs
 
-**Instellingen → Loginstellingen** (Activity Logging) toont de gebeurtenissen van alle services. Voor een tabelvraag:
+**Settings → Loginstellingen** (Activity Logging) toont de gebeurtenissen van alle services. Voor een tabelvraag:
 
 * Filter op de bestandsnaam of het ID van het document in *Search logs*.
 * Gebruik het filter *Service*: de extractie zelf draait in de extractieservice en de Celery-workers, niet in de service `api`. Als u alleen `api`-regels ziet, verbreed dan het filter.

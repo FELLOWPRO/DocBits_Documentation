@@ -15,15 +15,15 @@ Het matchen van inkooporders (PO) is een cruciaal proces om consistentie te waar
 Deze configuratiepagina wordt gebruikt om de regels te definiëren en te beheren die bepalen _hoe_ PO-regelitems worden gematcht met het bijbehorende binnenkomende document (factuur, orderbevestiging).
 
 {% hint style="info" %}
-**Vereiste:** de matchregels worden alleen gebruikt wanneer **PO-match serverzijde** is ingeschakeld voor het documenttype (Instellingen → Documenttypen → Meer instellingen → Inkooporder). Bij een uitgeschakelde schakelaar matcht DocBits met zijn ingebouwde matcher (hoeveelheid, eenheidsprijs, artikelnummer, inkoopordernummer) en negeert de regelset.
+**Vereiste:** de matchregels worden alleen gebruikt wanneer **PO-match serverzijde** is ingeschakeld voor het documenttype (Settings → Document Types → More Settings → Inkooporder). Bij een uitgeschakelde schakelaar matcht DocBits met zijn ingebouwde matcher (hoeveelheid, eenheidsprijs, artikelnummer, inkoopordernummer) en negeert de regelset.
 {% endhint %}
 
 ***
 
 ## Toegang
 
-1. Navigeer naar **Instellingen** → **Documentverwerking** → **Documenttypen**, selecteer het documenttype en klik op **Meer instellingen**.
-2. Schakel op de kaart **Inkooporder** **PO-match serverzijde** in.
+1. Navigeer naar **Settings** → **Document Processing** → **Document Types**, selecteer het documenttype en klik op **More Settings**.
+2. Schakel op de kaart **Purchase Order** **PO-match serverzijde** in.
 3. Klik naast de schakelaar op **PO-matchingregels configureren**.
 
 <figure><img src="../../../../../../.gitbook/assets/doc-type-settings-po-options-nl.png" alt="De kaart Inkooporder met PO-match serverzijde en PO-matchingregels configureren"><figcaption><p>De kaart Inkooporder. <strong>PO-matchingregels configureren</strong> staat naast <strong>PO-match serverzijde</strong>.</p></figcaption></figure>
@@ -38,7 +38,7 @@ De pagina heeft drie knoppen bovenaan:
 * **Regels opslaan** slaat je wijzigingen op in het concept dat je bewerkt.
 * **Versiebeheer configureren** opent de versiegeschiedenis. Zie Versies en concepten.
 
-Onder de knoppen verschijnt een melding **Alleen lezen** wanneer je naar een gepubliceerde versie kijkt: *Dit is een gepubliceerde versie en kan niet worden bewerkt. Kloon als concept om wijzigingen aan te brengen.* Daaronder staan de kaart **Globale instellingen (Basisregels)** en de **Regellijst**. Selecteer een regel in de lijst om deze te configureren in het gebied **Regelconfiguratie** onder de lijst.
+Onder de knoppen verschijnt een melding **Read Only** wanneer je naar een gepubliceerde versie kijkt: *Dit is een gepubliceerde versie en kan niet worden bewerkt. Kloon als concept om wijzigingen aan te brengen.* Daaronder staan de kaart **Globale instellingen (Basisregels)** en de **Regellijst**. Selecteer een regel in de lijst om deze te configureren in het gebied **Regelconfiguratie** onder de lijst.
 
 ***
 
@@ -72,7 +72,7 @@ De Regellijst toont alle beschikbare matchregels en beheert hun uitvoeringsvolgo
 
 * **Prioriteit:** Dit numerieke veld (bijv. 1, 2, 3) bepaalt de uitvoeringsvolgorde van de regels. Regels met een lagere prioriteitswaarde worden eerst geprobeerd. Dit stelt beheerders in staat een hiërarchie te structureren, meestal beginnend met de meest specifieke en strenge regels (bijv. matchen op zowel regelnummer als artikelnummer) en terugvallend op bredere of minder restrictieve regels.
 * **Naam & beschrijving:** Biedt een duidelijke identificatie en context voor de regel, waarin de primaire criteria worden uitgelegd (bijv. "Standaardregel nr. 1: match op basis van regelnummer, artikel-ID en hoeveelheid").
-* **Actief:** Een eenvoudige schakelaar waarmee de regel direct kan worden geactiveerd of gedeactiveerd zonder de configuratie te verwijderen.
+* **Active:** Een eenvoudige schakelaar waarmee de regel direct kan worden geactiveerd of gedeactiveerd zonder de configuratie te verwijderen.
 
 **Uitvoeringsstroom:** Het systeem voert de matching uit in een cascaderende volgorde. Als een regel (bijv. prioriteit 1) een regelitem succesvol matcht, stopt het proces voor dat item. Als er geen match wordt gevonden, gaat het systeem door naar de volgende regel in de prioriteitsvolgorde (bijv. prioriteit 2). Elke uitvoering wordt geregistreerd op het document; de **matchgeschiedenis** in het scherm Inkoopordermatching toont welke regel is geprobeerd, welke matchte en welke werden overgeslagen en waarom.
 

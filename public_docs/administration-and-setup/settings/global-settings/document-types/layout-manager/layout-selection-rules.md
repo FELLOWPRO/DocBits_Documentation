@@ -26,7 +26,7 @@ De herkomst blijft beschikbaar — als één voorwaarde van vele. Een regel kan 
 
 Op regels gebaseerde lay-outs worden **per documenttype** ingeschakeld door een **organisatiebeheerder**.
 
-1. Ga naar **Instellingen → Documentverwerking → Documenttypen**.
+1. Ga naar **Settings → Document Processing → Document Types**.
 2. Klik op het **instellingen**-pictogram (tandwiel) op de kaart van het documenttype.
 3. Open **Lay-outs beheren** en zet de schakelaar aan.
 
@@ -99,14 +99,14 @@ De lay-out wordt altijd gekozen op basis van de **huidige** waarden van het docu
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-nl.png" alt="Selectieregels met afgeschermde geconfigureerde namen. De schermnaam Field validation blijft Engelstalig in het product."><figcaption><p>Selectieregels met afgeschermde geconfigureerde namen. De schermnaam Field validation blijft Engelstalig in het product.</p></figcaption></figure>
 
-Elke rij toont de **prioriteit** (de eerste rij is gemarkeerd met **FIRST**), de **regelnaam en -sleutel** met de bijbehorende **voorwaarden**, de **doellay-out**, de **bron**-badge en een **Actief**-schakelaar.
+Elke rij toont de **prioriteit** (de eerste rij is gemarkeerd met **FIRST**), de **regelnaam en -sleutel** met de bijbehorende **voorwaarden**, de **doellay-out**, de **bron**-badge en een **Active**-schakelaar.
 
 | Taak | Hoe |
 | --- | --- |
-| Een regel aanmaken | **Nieuwe regel** |
+| Een regel aanmaken | **New rule** |
 | Een regel bewerken | Klik op de rij |
 | De volgorde wijzigen | Sleep de greep links van een rij omhoog of omlaag. De nieuwe volgorde wordt direct opgeslagen. |
-| Een regel uitschakelen | Schakelaar **Actief**. Inactieve regels worden genegeerd. |
+| Een regel uitschakelen | Schakelaar **Active**. Inactieve regels worden genegeerd. |
 | Dupliceren of verwijderen | Menu **⋮** van de rij |
 | Een regel zoeken | **Search rules…** |
 
@@ -122,7 +122,7 @@ Om een andere terugvallay-out te gebruiken, maakt u een regel **zonder enige voo
 
 ## Een regel aanmaken
 
-Klik op **Nieuwe regel** op het tabblad Selection rules van het scherm dat u wilt wijzigen.
+Klik op **New rule** op het tabblad Selection rules van het scherm dat u wilt wijzigen.
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-nl.png" alt="Bereik, voorwaarden en doellay-out van een selectieregel. De schermnaam Field validation blijft Engelstalig in het product."><figcaption><p>Bereik, voorwaarden en doellay-out van een selectieregel. De schermnaam Field validation blijft Engelstalig in het product.</p></figcaption></figure>
 
@@ -132,9 +132,9 @@ De zin bovenaan vat de regel samen terwijl u hem opbouwt — "When header.suppli
 
 | Instelling | Wat het doet |
 | --- | --- |
-| **Regelnaam** | Wordt getoond in de regellijst. Beschrijf de zakelijke aanleiding: "Facturen van voorbeeldleverancier", "E-facturen", "Goedkeuring hoge waarde". |
-| **Regelsleutel** | Gegenereerd uit de naam; blijft gelijk wanneer u de regel hernoemt. |
-| **Documenttype** / **Indelingstype** | Het documenttype en het scherm waarvoor de regel geldt. Overgenomen van waar u op **Nieuwe regel** klikte. |
+| **Rule Name** | Wordt getoond in de regellijst. Beschrijf de zakelijke aanleiding: "Facturen van voorbeeldleverancier", "E-facturen", "Goedkeuring hoge waarde". |
+| **Rule key** | Gegenereerd uit de naam; blijft gelijk wanneer u de regel hernoemt. |
+| **Documenttype** / **Indelingstype** | Het documenttype en het scherm waarvoor de regel geldt. Overgenomen van waar u op **New rule** klikte. |
 | **Prioriteit** | Lagere nummers worden eerst gecontroleerd. Laat tussenruimte (5, 10, 20 …) zodat u later regels kunt invoegen. |
 
 ### Stap 2 — Applies when
@@ -209,7 +209,7 @@ Scherm **Afwijzen** · prioriteit **10** · *Supplier ID is one of* `10040, 1004
 | Symptoom | Wat te controleren |
 | --- | --- |
 | Een document krijgt de verkeerde lay-out | Een eerdere regel komt als eerste overeen. Bekijk de regels erboven, of de **Prioriteit van de overeenkomende regel** in de voorvertoning. |
-| De standaard wordt gebruikt hoewel een regel zou moeten overeenkomen | Is de regel **Actief**? Komt de voorwaarde overeen met de exacte waarde (hoofdletters, spaties)? Staat de regel op het juiste **scherm**-tabblad? |
+| De standaard wordt gebruikt hoewel een regel zou moeten overeenkomen | Is de regel **Active**? Komt de voorwaarde overeen met de exacte waarde (hoofdletters, spaties)? Staat de regel op het juiste **scherm**-tabblad? |
 | De lay-out verandert terwijl een gebruiker werkt | Een veld in **watched_fields** is gewijzigd. Baseer de regel op een stabieler veld. |
 | Een lay-out kan niet worden verwijderd | Een regel verwijst er nog naar. Wijs die regel eerst opnieuw toe of verwijder hem. |
 | Er wordt helemaal geen lay-out getoond | Geen enkele regel kwam overeen, er is geen standaard en er bestaat geen lay-out op basis van herkomst voor dit scherm. Voeg een regel zonder voorwaarde toe als vangnet. |

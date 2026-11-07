@@ -7,7 +7,7 @@ Deze pagina is een korte oriëntatie op de huidige DocBits-indeling — waar u d
 De hoofd-zijbalk toont elke sectie van DocBits waarvoor u toestemming hebt. Twee manieren om hem te bedienen:
 
 * **Mini-modus** — klik op de schakelaar bovenaan de zijbalk om hem terug te brengen tot alleen pictogrammen. Beweeg uw muis over een pictogram om het label te lezen. De zijbalk onthoudt of u hem het laatst uitgevouwen of ingeklapt had.
-* **Aanpassen** — onderaan de uitgevouwen zijbalk staat een **Aanpassen**-vermelding. Gebruik die om het menu opnieuw te ordenen, vermeldingen die u niet gebruikt te verbergen of degene die u het vaakst opent bovenaan te pinnen.
+* **Customize** — onderaan de uitgevouwen zijbalk staat een **Customize**-vermelding. Gebruik die om het menu opnieuw te ordenen, vermeldingen die u niet gebruikt te verbergen of degene die u het vaakst opent bovenaan te pinnen.
 
 Voor de volledige uitleg over herrangschikken, verbergen en pinnen, zie [Aanpasbare Zijbalk](../../end-user-and-partner-section/end-user-section/customizable-sidebar.md).
 
@@ -15,9 +15,9 @@ Voor de volledige uitleg over herrangschikken, verbergen en pinnen, zie [Aanpasb
 
 Het menu Instellingen is gegroepeerd naar bedoeling in plaats van datamodel. Als u zich een instelling herinnert maar hem niet kunt vinden, probeer de bijbehorende groep hieronder:
 
-| U zoekt… | Open Instellingen → |
+| U zoekt… | Open Settings → |
 |---|---|
-| Bedrijfsnaam, logo, tijdzone, app-kleur | Bedrijf & Gebruikers → Bedrijfsinformatie |
+| Bedrijfsnaam, logo, tijdzone, app-kleur | Bedrijf & Gebruikers → Company Information |
 | Gebruikers, groepen, machtigingen | Bedrijf & Gebruikers → Groepen, Gebruikers en Machtigingen |
 | API-sleutels, ERP-verbindingen, exportconfiguraties | Integratie |
 | Documenttypes, velden, scripts, EDI, modeltraining | Documenttypes |

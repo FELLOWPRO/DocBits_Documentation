@@ -6,13 +6,13 @@ Als organisatiebeheerder kunt u **elk lid verplichten om twee-factor-authenticat
 
 Single sign-on (SSO)-aanmeldingen — Google, Microsoft, SAML — zijn **vrijgesteld**: hun identiteitsprovider dwingt al zijn eigen MFA af, dus de verplichting geldt alleen voor wachtwoordaanmeldingen.
 
-Deze instelling bevindt zich in **Instellingen → Organisatie & Toegang → Bedrijfsinformatie → Twee-factor-authenticatie** en is alleen beschikbaar voor organisatiebeheerders.
+Deze instelling bevindt zich in **Settings → Organization & Access → Company Information → Twee-factor-authenticatie** en is alleen beschikbaar voor organisatiebeheerders.
 
 ## MFA verplicht stellen voor uw organisatie
 
-1. Ga naar **Instellingen → Organisatie & Toegang → Bedrijfsinformatie**.
+1. Ga naar **Settings → Organization & Access → Company Information**.
 2. Open de sectie **Twee-factor-authenticatie**.
-3. Schakel **Twee-factor-authenticatie vereisen voor alle leden** in en klik op **Opslaan**.
+3. Schakel **Twee-factor-authenticatie vereisen voor alle leden** in en klik op **Save**.
 
 <figure><img src="../../../../.gitbook/assets/prior-t001-nl.png" alt="Vereiste voor tweefactorauthenticatie binnen de organisatie. Het product gebruikt Wachtwoord bij de passkey-teller; deze teller gaat over geregistreerde passkeys."><figcaption><p>Vereiste voor tweefactorauthenticatie binnen de organisatie. Het product gebruikt Wachtwoord bij de passkey-teller; deze teller gaat over geregistreerde passkeys.</p></figcaption></figure>
 

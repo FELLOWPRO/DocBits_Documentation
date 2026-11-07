@@ -6,9 +6,9 @@ Auf dem PO-Abgleich-Bildschirm befinden sich die Bestellnummer-Suche und die Wer
 
 ## Die richtige Bestellnummer finden
 
-Geben Sie eine Bestellnummer in **Bestellnummer suchen** ein und wählen Sie ein Ergebnis. Das Filter-Symbol neben dem Feld öffnet weitere Suchoptionen: Schlüsselwort, Lieferant, Status, Status der Bestellung, Nach Datum, Vor Datum, Mindestbestellwert, Maximaler Bestellwert, Sortieren nach, Richtung sortieren und Anzahl der anzuzeigenden Datensätze. Wählen Sie **Anwenden**, um die Filter zu nutzen, oder **Löschen**, um sie zurückzusetzen. Das Filtern der Liste gleicht die Rechnung nicht ab und exportiert sie nicht.
+Geben Sie eine Bestellnummer in **Search purchase order number** ein und wählen Sie ein Ergebnis. Das Filter-Symbol neben dem Feld öffnet die Suchoptionen über den Bereich der Bestellpositionen hinweg: Schlüsselwort, Lieferant, Status, Status der Bestellung, Nach Datum, Vor Datum, Mindestbestellwert, Maximaler Bestellwert, Sortieren nach, Richtung sortieren und Anzahl der anzuzeigenden Datensätze. Wählen Sie **Apply**, um die Filter zu nutzen, oder **Clear**, um sie zurückzusetzen. Das Filtern der Liste gleicht die Rechnung nicht ab und exportiert sie nicht.
 
-<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-filter-de.png" alt="Suchfilter für Bestellnummern auf Deutsch mit Feldern für Lieferant, Status, Status der Bestellung, Datum, Bestellwert und Sortierung"><figcaption><p>Öffnen Sie das Filter-Symbol neben dem Suchfeld, um weitere Suchoptionen zu erhalten.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-matching-tools-filter-de-20261107.png" alt="Suchfilter für Bestellnummern über den Bereich der Bestellpositionen, mit Feldern für Schlüsselwort, Lieferant, Status, Datum, Bestellwert und Sortierung"><figcaption><p>Öffnen Sie das Filter-Symbol neben dem Suchfeld, um weitere Suchoptionen zu erhalten.</p></figcaption></figure>
 
 ## Aktionen der Werkzeugleiste
 
@@ -16,16 +16,16 @@ Lesen Sie den Tooltip eines Symbols, bevor Sie es auswählen. Die Werkzeugleiste
 
 | Aktion | Wirkung |
 | --- | --- |
-| **Abgleich-Historie** (Uhr) | Öffnet frühere Abgleich-Aktivitäten für dieses Dokument. Sie startet keinen neuen Abgleich. |
-| **Hilfe** (?) | Öffnet die Hilfeseite zum Bestellnummer-Abgleich in einem neuen Browser-Tab. |
-| **Tastenkombinationen** (Tastatur) | Zeigt die auf diesem Bildschirm verfügbaren Tastenkombinationen. Siehe [Tastenkombinationen](keyboard-shortcuts.md). |
-| **Trainingsmodus** (Tabelle) | Schaltet das Ziehen von Bestellnummer-Zeilen in die Rechnungstabelle ein oder aus. Sinnvoll ist das nur, wenn das Dokument Rechnungspositionen hat; die Beispielansicht unten hat keine. |
-| **Aufgaben / Aufgabe erstellen** | Öffnet Dokument-Aufgaben oder erstellt eine Aufgabe, wenn diese Aktionen für Ihr Dokument und Ihre Rolle verfügbar sind. Siehe [Aufgaben](../tasks.md). |
+| **Matching history** (clock) | Öffnet frühere Abgleich-Aktivitäten für dieses Dokument. Sie startet keinen neuen Abgleich. |
+| **Help** (?) | Öffnet die Hilfeseite zum Bestellnummer-Abgleich in einem neuen Browser-Tab. |
+| **Keyboard shortcuts** (keyboard) | Zeigt die auf diesem Bildschirm verfügbaren Tastenkombinationen. Siehe [Tastenkombinationen](keyboard-shortcuts.md). |
+| **Training mode** (table) | Schaltet das Ziehen von Bestellnummer-Zeilen in die Rechnungstabelle ein oder aus. Sinnvoll ist das nur, wenn das Dokument Rechnungspositionen hat; die Beispielansicht unten hat keine. |
+| **Tasks / Create task** | Öffnet Dokument-Aufgaben oder erstellt eine Aufgabe, wenn diese Aktionen für Ihr Dokument und Ihre Rolle verfügbar sind. Siehe [Aufgaben](../tasks.md). |
 | **Auto Accounting** | Öffnet die Buchhaltung für dieses Dokument, wenn Buchhaltungsdaten vorhanden sind. |
-| **Automatischer PO-Abgleich** (Zauberstab) | Führt den automatischen Abgleich aus. Wenn die Organisation den automatischen Export aktiviert hat und das Ergebnis dessen Bedingungen erfüllt, kann diese Aktion auch exportieren. Prüfen Sie das Dokument vorher. Siehe [Automatischer Bestelldaten-Abgleich](automatic-purchase-order-data-matching.md). |
-| **Speichern** (Diskette) | Speichert die Änderungen am Bestellnummer-Abgleich des Dokuments. |
-| **Daten synchronisieren** | Nur für die passende Bestellnummer-Mengeneinstellung verfügbar; aktualisiert ausgewählte Bestellnummer-Daten aus dem verbundenen System. Nutzen Sie die angezeigte Bestellnummer und die verfügbaren Synchronisierungsoptionen. |
-| **Exportieren** | Exportiert das Dokument nach dem Abgleich. Wenn Ihre Organisation mehrere Exportziele anbietet, wählen Sie über den Pfeil neben **Exportieren** ein Ziel aus. |
+| **Auto PO match** (wand) | Führt den automatischen Abgleich aus. Wenn die Organisation den automatischen Export aktiviert hat und das Ergebnis dessen Bedingungen erfüllt, kann diese Aktion auch exportieren. Prüfen Sie das Dokument vorher. Siehe [Automatischer Bestelldaten-Abgleich](automatic-purchase-order-data-matching.md). |
+| **Save** (disk) | Speichert die Änderungen am Bestellnummer-Abgleich des Dokuments. |
+| **Sync Data** | Nur für die passende Bestellnummer-Mengeneinstellung verfügbar; aktualisiert ausgewählte Bestellnummer-Daten aus dem verbundenen System. Nutzen Sie die angezeigte Bestellnummer und die verfügbaren Synchronisierungsoptionen. |
+| **Export** | Exportiert das Dokument nach dem Abgleich. Wenn Ihre Organisation mehrere Exportziele anbietet, wählen Sie über den Pfeil neben **Export** ein Ziel aus. |
 
 Der Bestellnummer-Tab hat außerdem ein Aktualisierungs-Symbol zum Neuladen der Bestellnummer. Das Symbol für Spalteneinstellungen rechts in der Tabellenkopfzeile steuert, welche Bestellnummer-Spalten sichtbar sind. Beides ändert nur die Ansicht der Bestellnummer-Tabelle, nicht die extrahierten Werte der Rechnung.
 

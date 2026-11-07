@@ -8,11 +8,7 @@ Commencez par cette présentation de 1 min 48, puis suivez les instructions dét
 
 {% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/fr.mp4" %}
 
-[Lecteur avec sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/fr.html) · [Sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/fr.vtt) · [Textes à l’écran](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/fr.txt) · 1:48 · Full HD
-
 [Voir la page de la fonctionnalité et l’exemple de facture](../../feature-videos/advanced-workflow.md)
-
-La vidéo associe des cartes animées à de vrais enregistrements de l’interface Dev en anglais. Elle contient de la musique et des textes en français, sans narration. Les actions de test affectent `Approval` ou `Standard` au champ d’exemple `approval_route` ; un processus complet d’approbation humaine nécessite ses propres actions métier. Cette démonstration n’a été ni enregistrée ni activée. Les animations des jonctions illustrent les résultats requis, pas le moment d’exécution. Testez l’accessibilité et le parcours complet du document ; un test partiel réussi ne prouve pas le fonctionnement en production.
 
 ## Vidéo : routage des factures dans DocBits
 

@@ -4,11 +4,11 @@
 
 De OCR e IDP a la lógica de negocio, las aprobaciones y Advanced Workflows: descubre la evolución de DocBits.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/es.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/es.mp4" %}
 
-*90 segundos · Interfaz del producto en inglés · Escenas históricas creadas con IA*
+*90 segundos · FullHD (1920 × 1080) · De OCR e IDP a una automatización completa*
 
-[Leer la transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/es-transcript.md) · [Descargar el vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/es.mp4)
+[Vídeo con subtítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/es.html) · [Leer la transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/es-transcript.md) · [Descargar el vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/es.mp4)
 
 Bienvenido a DocBits
 

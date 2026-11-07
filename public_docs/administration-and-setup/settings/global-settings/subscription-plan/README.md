@@ -50,3 +50,16 @@ Supervise el uso de tokens y de flujos de trabajo durante un período selecciona
 | **Desde / Hasta** | El período del que se informa el uso. |
 | **Tokens usados** | Tokens consumidos en el período. |
 | **Tokens restantes** | Tokens disponibles para el período. |
+
+## Usage
+
+El panel **Usage** bajo la tarjeta está contraído de forma predeterminada. Ábrelo para ver lo que consumió tu organización por periodo.
+
+| Columna | Descripción |
+| --- | --- |
+| **Type** | La categoría de uso: Document, Workflow, Advanced Workflow o DocNet. |
+| **From / To** | El periodo para el que se informa el uso. |
+| **Tokens used** | Tokens consumidos en el periodo. |
+| **Remaining tokens** | Tokens restantes para el periodo. |
+
+Usa **Select** para elegir el intervalo de fechas que cubre la tabla y haz clic en el encabezado de una columna para ordenar las filas por esa columna.

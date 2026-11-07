@@ -215,6 +215,16 @@ El conjunto de reglas definido rige directamente la eficiencia e integridad del 
 * [**Calcular el precio unitario del pedido**](calculate-po-unit-price.md) cambia qué precio unitario comparan las reglas en el lado de la orden de compra.
 * La [**configuración de tolerancia**](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) y los [**estados desactivados**](purchase-order-disable-statuses.md) deciden lo estricta que es la comparación y qué líneas de orden de compra se ofrecen.
 
+## Cuando la conciliación omite reglas
+
+Una regla necesita una columna que la tabla extraída tenga realmente; una regla que empareja líneas por número de artículo no puede ejecutarse en una factura que no imprime ninguno.
+
+En su lugar, la conciliación automática ejecuta las reglas que puede y deja sin emparejar las líneas de las demás. Después informa **Some PO match rules were not tried**, indicando cada regla omitida y cada columna que falta en la tabla. Las líneas afectadas siguen sin coincidencia hasta que añadas la columna que falta o las emparejes a mano.
+
+{% hint style="info" %}
+Una condición de activación falsa también omite una regla, pero es un caso distinto: aparece en el historial de conciliación, no en este aviso.
+{% endhint %}
+
 ## Solución de problemas
 
 | Síntoma | Qué comprobar |

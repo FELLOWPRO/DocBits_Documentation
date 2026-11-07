@@ -163,6 +163,8 @@ El valor debe coincidir con una **expresión regular**. La expresión busca dent
 
 #### Range — entre mínimo y máximo
 
+Los límites se introducen como números simples: un signo opcional y dígitos, con la coma aceptada como separador decimal (`0,5`). Los separadores de miles, los exponentes y las palabras se rechazan al guardar, con un aviso de que el límite no es un número. Introduce al menos un límite, porque un rango sin mínimo ni máximo no se guarda, y mantén el mínimo igual o inferior al máximo.
+
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-range.png" alt="Una comprobación Range"><figcaption><p>Range solo con mínimo: las cantidades deben ser al menos 0,01</p></figcaption></figure>
 
 El valor debe ser un número comprendido entre **Mínimo** y **Máximo** (ambos incluidos). Rellene uno o ambos. Un valor que no sea un número falla. Se entienden importes con formato como `1.234,56`.

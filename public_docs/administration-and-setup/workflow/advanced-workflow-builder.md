@@ -8,11 +8,7 @@ Zacznij od prezentacji trwającej 1:48, a następnie przejdź do szczegółowych
 
 {% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/pl.mp4" %}
 
-[Odtwarzacz z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/pl.html) · [Napisy](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/pl.vtt) · [Teksty ekranowe](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/pl.txt) · 1:48 · Full HD
-
 [Zobacz stronę funkcji i przykład faktury](../../feature-videos/advanced-workflow.md)
-
-Film łączy animowane karty z rzeczywistymi nagraniami angielskiego interfejsu Dev. Zawiera muzykę i polskie teksty ekranowe, bez narracji. Akcje testowe ustawiają przykładowe pole `approval_route` na `Approval` lub `Standard`; pełny proces zatwierdzania przez człowieka wymaga własnych akcji biznesowych. Demonstracji nie zapisano ani nie aktywowano. Animacje łączenia pokazują wymagane wyniki, a nie czas wykonania. Przetestuj osiągalność i pełne wykonanie dla dokumentu; poprawny test częściowy nie dowodzi działania w produkcji.
 
 ## Wideo: ścieżki przetwarzania faktur w DocBits
 

@@ -2,6 +2,18 @@
 
 Kreator **Zaawansowany przepływ pracy** to edytor grafu węzłów dla przepływów pracy, które wymagają rozgałęzień, równoległych ścieżek i kontroli przepływu — wykraczających poza liniowy model When/And/Then z kreatora Standard. Układasz węzły na obszarze roboczym i łączysz je, aby zdefiniować przebieg wykonywania.
 
+## Prezentacja funkcji: DocBits Advanced Workflow
+
+Zacznij od prezentacji trwającej 1:48, a następnie przejdź do szczegółowych instrukcji konfiguracji.
+
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/pl.mp4" %}
+
+[Odtwarzacz z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/pl.html) · [Napisy](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/pl.vtt) · [Teksty ekranowe](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/pl.txt) · 1:48 · Full HD
+
+[Zobacz stronę funkcji i przykład faktury](../../feature-videos/advanced-workflow.md)
+
+Film łączy animowane karty z rzeczywistymi nagraniami angielskiego interfejsu Dev. Zawiera muzykę i polskie teksty ekranowe, bez narracji. Akcje testowe ustawiają przykładowe pole `approval_route` na `Approval` lub `Standard`; pełny proces zatwierdzania przez człowieka wymaga własnych akcji biznesowych. Demonstracji nie zapisano ani nie aktywowano. Animacje łączenia pokazują wymagane wyniki, a nie czas wykonania. Przetestuj osiągalność i pełne wykonanie dla dokumentu; poprawny test częściowy nie dowodzi działania w produkcji.
+
 ## Wideo: ścieżki przetwarzania faktur w DocBits
 
 Poznaj Piotra i śledź jego wyjaśnienia w rzeczywistym polskim interfejsie DocBits. Sprawdza pulpit, listę workflow i licencję, a następnie otwiera niezapisany szkic w projektancie. Krok po kroku nadaje nazwę workflow, konfiguruje kontrolę kwoty oraz dwie akcje, rozmieszcza karty i łączy obie ścieżki. Następnie pokazuje przygotowanie testów z dokumentem lub własnymi danymi. Konto demonstracyjne nie ma subskrypcji Advanced Workflow i blokuje walidację; szkic pozostaje niezapisany i nieaktywny.

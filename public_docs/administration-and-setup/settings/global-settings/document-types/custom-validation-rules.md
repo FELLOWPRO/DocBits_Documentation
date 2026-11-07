@@ -186,6 +186,12 @@ Except for **Required**, every check **passes when the value is empty**. A Patte
 * **Error message shown to the processing user** — the text on the validation screen. Say what is wrong **and** what to do: "Supplier tax ID is missing. German invoices over 250 EUR must show it."
 * **Error code** — a short technical code, for example `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. It appears in exports and logs and lets you group errors.
 
+#### When a save skips a field
+
+A validation rule needs a position on the document page. If a field carries a value but has no position on the page, no rule can be attached to it — and saving then does not report a plain success: DocBits names each skipped field and says that the rule was not saved for it.
+
+Give the field a position in the template or in the mapping, then save the rule again.
+
 ## Test rule
 
 Click **Test rule** to run the current version of the rule — saved or not — against a document. Enter a **Document ID**, or switch to **By Document JSON** and paste extracted data. **Nothing is saved**, and the document is not changed.

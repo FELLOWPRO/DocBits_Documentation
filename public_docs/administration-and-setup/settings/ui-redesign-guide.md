@@ -7,7 +7,7 @@ Esta página es una orientación rápida al diseño actual de DocBits — dónde
 La barra lateral principal lista cada sección de DocBits para la que tenga permiso. Dos formas de controlarla:
 
 * **Modo mini** — haga clic en el conmutador de la parte superior para reducir la barra a solo iconos. Pase el cursor sobre cualquier icono para leer su nombre. La barra recuerda si la dejó expandida o contraída.
-* **Personalizar** — al final de la barra expandida hay una entrada **Personalizar**. Úsela para reordenar el menú, ocultar entradas que no usa o fijar arriba las que abre más a menudo.
+* **Customize** — al final de la barra expandida hay una entrada **Customize**. Úsela para reordenar el menú, ocultar entradas que no usa o fijar arriba las que abre más a menudo.
 
 Para el paseo completo por reordenar, ocultar y fijar, consulte [Barra Lateral Personalizable](../../end-user-and-partner-section/end-user-section/customizable-sidebar.md).
 
@@ -15,10 +15,10 @@ Para el paseo completo por reordenar, ocultar y fijar, consulte [Barra Lateral P
 
 El menú Configuración está agrupado por intención y no por modelo de datos. Si recuerda una opción pero no la encuentra, pruebe el grupo correspondiente a continuación:
 
-| Si busca… | Abra Configuración → |
+| Si busca… | Abra Settings → |
 |---|---|
-| Nombre de la empresa, logotipo, zona horaria, color de la aplicación | Empresa y Usuarios → Información de la Empresa |
-| Usuarios, grupos, permisos | Empresa y Usuarios → Grupos, Usuarios y Permisos |
+| Nombre de la empresa, logotipo, zona horaria, color de la aplicación | Empresa y Usuarios → Company Information |
+| Usuarios, grupos, permisos | Empresa y Usuarios → Groups, Users and Permissions |
 | Claves de API, conexiones ERP, configuraciones de exportación | Integración |
 | Tipos de documento, campos, scripts, EDI, entrenamiento de modelos | Tipos de Documento |
 | Configuración OCR, árboles de decisión, listas de valores, gestor de reglas | Procesamiento de Documentos |

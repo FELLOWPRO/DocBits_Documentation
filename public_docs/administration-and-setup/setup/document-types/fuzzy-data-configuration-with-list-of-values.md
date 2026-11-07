@@ -10,7 +10,7 @@ Cada tipo de documento tiene sus propias configuraciones de Lista de Valores (Lo
 
 ### Para configurar la Lista de Valores, navegue a:
 
-Configuración → Procesamiento de Documentos → Tipos de Documento → Factura → Campos → Configuración de Datos Maestros → Datos Maestros LOV
+Settings → Document Processing → Document Types → Invoice → Fields → Settings de Datos Maestros → Datos Maestros LOV
 
 ### **Crear una nueva configuración de Lista de Valores**
 

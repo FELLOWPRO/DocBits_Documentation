@@ -15,15 +15,15 @@ La Coincidencia de Órdenes de Compra (OC) es un proceso crítico para asegurar 
 Esta página de configuración se utiliza para definir y gestionar las reglas que determinan _cómo_ se emparejan las líneas de la OC con el documento entrante correspondiente (factura, confirmación de pedido).
 
 {% hint style="info" %}
-**Requisito previo:** las reglas de coincidencia solo se usan cuando **lado del servidor de coincidencia de PO** está activado para el tipo de documento (Ajustes → Tipos de documentos → Más ajustes → Orden de compra). Con el interruptor desactivado, DocBits realiza la coincidencia con su comparador incorporado (cantidad, precio unitario, número de artículo, número de orden de compra) e ignora el conjunto de reglas.
+**Requisito previo:** las reglas de coincidencia solo se usan cuando **lado del servidor de coincidencia de PO** está activado para el tipo de documento (Settings → Document Types → More Settings → Orden de compra). Con el interruptor desactivado, DocBits realiza la coincidencia con su comparador incorporado (cantidad, precio unitario, número de artículo, número de orden de compra) e ignora el conjunto de reglas.
 {% endhint %}
 
 ***
 
 ## Cómo acceder
 
-1. Navega a **Ajustes** → **Procesamiento de Documentos** → **Tipos de documentos**, selecciona el tipo de documento y haz clic en **Más ajustes**.
-2. En la tarjeta **Orden de compra**, activa **lado del servidor de coincidencia de PO**.
+1. Navega a **Settings** → **Document Processing** → **Document Types**, selecciona el tipo de documento y haz clic en **More Settings**.
+2. En la tarjeta **Purchase Order**, activa **lado del servidor de coincidencia de PO**.
 3. Haz clic en **Configurar reglas de coincidencia de órdenes de compra** junto al interruptor.
 
 <figure><img src="../../../../../../.gitbook/assets/doc-type-settings-po-options-es.png" alt="La tarjeta Orden de compra con lado del servidor de coincidencia de PO y Configurar reglas de coincidencia de órdenes de compra"><figcaption><p>La tarjeta Orden de compra. <strong>Configurar reglas de coincidencia de órdenes de compra</strong> está junto a <strong>lado del servidor de coincidencia de PO</strong>.</p></figcaption></figure>
@@ -38,7 +38,7 @@ La página tiene tres botones en la parte superior:
 * **Guardar reglas** guarda tus cambios en el borrador que estás editando.
 * **Configurar el control de versiones** abre el historial de versiones. Consulta Versiones y borradores más abajo.
 
-Debajo de los botones aparece un aviso **Solo lectura** cuando miras una versión publicada: *Esta es una versión publicada y no se puede editar. Clónela como borrador para realizar cambios.* Debajo vienen la tarjeta **Configuración global (reglas básicas)** y la **Lista de reglas**. Selecciona una regla de la lista para configurarla en el área **Configuración de reglas** situada debajo de la lista.
+Debajo de los botones aparece un aviso **Read Only** cuando miras una versión publicada: *Esta es una versión publicada y no se puede editar. Clónela como borrador para realizar cambios.* Debajo vienen la tarjeta **Configuración global (reglas básicas)** y la **Lista de reglas**. Selecciona una regla de la lista para configurarla en el área **Configuración de reglas** situada debajo de la lista.
 
 ***
 
@@ -72,7 +72,7 @@ La Lista de reglas muestra todas las reglas de coincidencia disponibles y gestio
 
 * **Prioridad:** Este campo numérico (por ejemplo, 1, 2, 3) determina la secuencia de ejecución de las reglas. Las reglas con un número de prioridad menor se intentan primero. Esto permite a los administradores estructurar una jerarquía, que normalmente comienza con las reglas más específicas y estrictas (por ejemplo, coincidencia por número de línea y número de pieza) y recurre a reglas más amplias o menos restrictivas.
 * **Nombre y descripción:** Proporciona una identificación clara y el contexto de la regla, y explica los criterios principales que usa (por ejemplo, "Regla estándar n.º 1: coincidencia basada en número de línea, ID de pieza y cantidad").
-* **Activo:** Un interruptor simple que permite activar o desactivar la regla al instante sin tener que eliminar su configuración.
+* **Active:** Un interruptor simple que permite activar o desactivar la regla al instante sin tener que eliminar su configuración.
 
 **Flujo de ejecución:** El sistema realiza la coincidencia en una secuencia en cascada. Si una regla (por ejemplo, prioridad 1) empareja correctamente una línea, el proceso para esa línea se detiene. Si no se encuentra ninguna coincidencia, el sistema pasa a la siguiente regla de la secuencia de prioridad (por ejemplo, prioridad 2). Cada ejecución queda registrada en el documento; el **historial de coincidencias** de la pantalla de coincidencia de órdenes de compra muestra qué regla se intentó, cuál coincidió y cuáles se omitieron y por qué.
 

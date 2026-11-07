@@ -8,7 +8,7 @@ Esta página explica cómo verificar el procesamiento exitoso de tu BOD (Documen
 
 ### Recuperando tu Clave API
 
-1.  Ve a **Ajustes → Sistema y Administración → Integración y SSO**.
+1.  Ve a **Settings → System & Administration → Integración y SSO**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_integration.png)
 2.  Puedes copiar manualmente tu **clave API** o hacer clic en el botón de copiar para copiarla en tu portapapeles.
@@ -17,10 +17,10 @@ Esta página explica cómo verificar el procesamiento exitoso de tu BOD (Documen
 
 ### **Descargando el Archivo de mapeo de BOD**
 
-1.  Ve a **Ajustes → Procesamiento de documentos → Exportar**.
+1.  Ve a **Settings → Document Processing → Exportar**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_export.png)
-2.  En la columna de **Comportamiento** de la entrada de exportación relevante, haz clic en el menú de tres puntos y selecciona **Editar**.
+2.  En la columna de **Comportamiento** de la entrada de exportación relevante, haz clic en el menú de tres puntos y selecciona **Edit**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/test_bod_connection_postman_2.png)
 3.  Localiza el **Archivo de mapeo de BOD** y haz clic en el botón **Descargar** para guardarlo.

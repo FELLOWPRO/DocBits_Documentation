@@ -10,7 +10,7 @@ Añada una columna cuando deba capturarse por línea un valor que las columnas p
 
 ## Pasos
 
-1. Abra **Configuración → Procesamiento de Documentos → Tipos de documentos → Columnas de tabla**.
+1. Abra **Settings → Document Processing → Document Types → Table Columns**.
 2. Haga clic en **Add new table column**.
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Cuadro de diálogo Add new table column con Title, Is column required, Select column type y Select Table"><figcaption><p>Add new table column</p></figcaption></figure>

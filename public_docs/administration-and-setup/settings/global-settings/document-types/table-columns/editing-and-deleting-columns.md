@@ -4,7 +4,7 @@ Las casillas controlan obligatoriedad, edición y visibilidad. Use AI se configu
 
 Todo excepto el título se cambia directamente en la lista; no hay cuadro de diálogo de edición.
 
-**Dónde:** Configuración → Procesamiento de Documentos → Tipos de documento → Columnas de tabla
+**Dónde:** Settings → Document Processing → Document Types → Table Columns
 
 ## Cambiar un indicador
 
@@ -53,12 +53,12 @@ Abra las [columnas de tabla](README.md) del tipo de documento y tabla correctos.
 
 | Opción actual | Efecto en el esquema base |
 | --- | --- |
-| **Predeterminado · solicitado** o **Predeterminado · no solicitado** | Usa la selección predeterminada de DocBits para ese tipo y nombre de columna. No significa siempre activado ni siempre desactivado. |
-| **Sí · solicitado** | Solicita expresamente la columna configurada. |
+| **Default · solicitado** o **Default · no solicitado** | Usa la selección predeterminada de DocBits para ese tipo y nombre de columna. No significa siempre activado ni siempre desactivado. |
+| **Yes · solicitado** | Solicita expresamente la columna configurada. |
 | **No · no solicitado** | La excluye del esquema base, incluso si normalmente se solicita. |
 
-Volver a **Predeterminado** elimina la elección explícita. Una columna propia nueva normalmente no pertenece a la selección predeterminada de IA: seleccione **Sí** para solicitarla. Las columnas predeterminadas de IA no son todas las columnas incluidas en DocBits; compruebe el efecto indicado y la vista previa.
+Volver a **Default** elimina la elección explícita. Una columna propia nueva normalmente no pertenece a la selección predeterminada de IA: seleccione **Yes** para solicitarla. Las columnas predeterminadas de IA no son todas las columnas incluidas en DocBits; compruebe el efecto indicado y la vista previa.
 
-**Obligatoria**, **Solo lectura** y **Oculta** controlan integridad, edición y visibilidad; no sustituyen la elección de IA. **No** no elimina la columna ni borra valores, y no impide que reglas, scripts u otras fuentes la rellenen. El entrenamiento y las etiquetas adicionales pueden ampliar la solicitud del proveedor: resuelva también allí las contradicciones. Este ajuste no sustituye automáticamente un resultado obtenido solo mediante reglas.
+**Required**, **Read Only** y **Hidden** controlan integridad, edición y visibilidad; no sustituyen la elección de IA. **No** no elimina la columna ni borra valores, y no impide que reglas, scripts u otras fuentes la rellenen. El entrenamiento y las etiquetas adicionales pueden ampliar la solicitud del proveedor: resuelva también allí las contradicciones. Este ajuste no sustituye automáticamente un resultado obtenido solo mediante reglas.
 
 [Structured Output para tablas](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

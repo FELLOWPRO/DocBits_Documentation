@@ -26,7 +26,7 @@ El origen sigue estando disponible, como una condición más entre muchas. Una r
 
 Los diseños basados en reglas los activa **por tipo de documento** un **administrador de la organización**.
 
-1. Vaya a **Ajustes → Procesamiento de Documentos → Tipos de documento**.
+1. Vaya a **Settings → Document Processing → Document Types**.
 2. Haga clic en el icono de **ajustes** (engranaje) de la tarjeta del tipo de documento.
 3. Abra **Gestionar diseños** y active el interruptor.
 
@@ -99,18 +99,18 @@ El diseño se elige siempre a partir de los valores **actuales** del documento. 
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-es.png" alt="Reglas de selección de diseño con los nombres configurados ocultos."><figcaption><p>Reglas de selección de diseño con los nombres configurados ocultos.</p></figcaption></figure>
 
-Cada fila muestra la **prioridad** (la primera fila está marcada como **FIRST**), el **nombre y la clave de la regla** con sus **condiciones**, el **diseño de destino**, la insignia de **origen** y un interruptor **Activo**.
+Cada fila muestra la **prioridad** (la primera fila está marcada como **FIRST**), el **nombre y la clave de la regla** con sus **condiciones**, el **diseño de destino**, la insignia de **origen** y un interruptor **Active**.
 
 | Tarea | Cómo |
 | --- | --- |
-| Crear una regla | **Nueva regla** |
+| Crear una regla | **New rule** |
 | Editar una regla | Haga clic en la fila |
 | Cambiar el orden | Arrastre el tirador de la izquierda de una fila hacia arriba o hacia abajo. El nuevo orden se guarda de inmediato. |
-| Desactivar una regla | Interruptor **Activo**. Las reglas inactivas se ignoran. |
+| Desactivar una regla | Interruptor **Active**. Las reglas inactivas se ignoran. |
 | Duplicar o eliminar | Menú **⋮** de la fila |
 | Buscar una regla | **Search rules…** |
 
-La insignia de **origen** indica de dónde procede una regla: las reglas **Sistema** se incluyen con DocBits. Al editar una se crea una copia para su organización, que se muestra como **Personalizado**; el original permanece intacto y se puede restaurar. Las reglas que usted crea son **A medida**.
+La insignia de **origen** indica de dónde procede una regla: las reglas **Sistema** se incluyen con DocBits. Al editar una se crea una copia para su organización, que se muestra como **Personalizado**; el original permanece intacto y se puede restaurar. Las reglas que usted crea son **Custom**.
 
 ### El diseño predeterminado
 
@@ -122,7 +122,7 @@ Para usar otro diseño de reserva, cree una regla **sin ninguna condición** y a
 
 ## Crear una regla
 
-Haga clic en **Nueva regla** en la pestaña Selection rules de la pantalla que desea cambiar.
+Haga clic en **New rule** en la pestaña Selection rules de la pantalla que desea cambiar.
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-es.png" alt="Ámbito, condiciones y diseño de destino en el editor de reglas."><figcaption><p>Ámbito, condiciones y diseño de destino en el editor de reglas.</p></figcaption></figure>
 
@@ -132,9 +132,9 @@ La frase de la parte superior resume la regla a medida que la construye: “When
 
 | Ajuste | Qué hace |
 | --- | --- |
-| **Nombre de la regla** | Se muestra en la lista de reglas. Describa el caso de negocio: “Behaelterbau invoices”, “E-invoices”, “High value approval”. |
-| **Clave de la regla** | Se genera a partir del nombre; se mantiene igual cuando cambia el nombre de la regla. |
-| **Tipo de Documento** / **Tipo de diseño** | El tipo de documento y la pantalla a los que se dirige la regla. Se toman del lugar donde hizo clic en **Nueva regla**. |
+| **Rule Name** | Se muestra en la lista de reglas. Describa el caso de negocio: “Behaelterbau invoices”, “E-invoices”, “High value approval”. |
+| **Rule key** | Se genera a partir del nombre; se mantiene igual cuando cambia el nombre de la regla. |
+| **Tipo de Documento** / **Tipo de diseño** | El tipo de documento y la pantalla a los que se dirige la regla. Se toman del lugar donde hizo clic en **New rule**. |
 | **Prioridad** | Los números más bajos se comprueban primero. Deje huecos (5, 10, 20 …) para poder insertar reglas más adelante. |
 
 ### Paso 2 — Applies when
@@ -209,7 +209,7 @@ Pantalla **Rechazar** · prioridad **10** · *Supplier ID is one of* `10040, 100
 | Síntoma | Qué comprobar |
 | --- | --- |
 | Un documento recibe el diseño equivocado | Coincide antes una regla anterior. Revise las reglas situadas por encima o el **Golpe de prioridad** de la vista previa. |
-| Se usa el predeterminado aunque una regla debería coincidir | ¿Está la regla **Activo**? ¿La condición coincide con el valor exacto (mayúsculas, espacios)? ¿Está la regla en la pestaña de **pantalla** correcta? |
+| Se usa el predeterminado aunque una regla debería coincidir | ¿Está la regla **Active**? ¿La condición coincide con el valor exacto (mayúsculas, espacios)? ¿Está la regla en la pestaña de **pantalla** correcta? |
 | El diseño cambia mientras un usuario trabaja | Se ha cambiado un campo de **watched_fields**. Base la regla en un campo más estable. |
 | Un diseño no se puede eliminar | Una regla todavía apunta a él. Cambie el destino de esa regla o elimínela primero. |
 | No se muestra ningún diseño | Ninguna regla coincidió, no hay predeterminado y no existe un diseño basado en el origen para esta pantalla. Añada una regla sin condición como regla comodín. |

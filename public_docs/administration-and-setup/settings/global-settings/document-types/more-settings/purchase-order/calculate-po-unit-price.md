@@ -6,11 +6,11 @@ Puede elegir calcular automáticamente el **precio unitario** de cada línea de 
 
 ## Encontrar el ajuste
 
-1. Abra **Ajustes → Tipos de Documento** y el engranaje del tipo correspondiente.
+1. Abra **Settings → Document Types** y el engranaje del tipo correspondiente.
 
 <figure><img src="../../../../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 
-2. Despliegue **Orden de compra** y localice **Calcular el precio unitario del pedido**.
+2. Despliegue **Purchase Order** y localice **Calcular el precio unitario del pedido**.
 
 <figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-po-settings-es.png" alt="Configuración actual de Orden de compra, incluido Calcular el precio unitario del pedido. Los valores privados están ocultos; no se cambió la configuración ni se ejecutó una conciliación."><figcaption><p>Configuración actual de Orden de compra, incluido Calcular el precio unitario del pedido. Los valores privados están ocultos; no se cambió la configuración ni se ejecutó una conciliación.</p></figcaption></figure>
 

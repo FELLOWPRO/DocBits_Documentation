@@ -215,6 +215,16 @@ O conjunto de regras definido governa diretamente a eficiência e a integridade 
 * [**Calcular preço unitário do pedido de compra**](calculate-po-unit-price.md) altera qual preço unitário as regras comparam no lado do pedido de compra.
 * [**Configurações de tolerância**](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) e [**status desativados**](purchase-order-disable-statuses.md) decidem quão rigorosa é a comparação e quais linhas do pedido de compra são oferecidas.
 
+## Quando a correspondência ignora regras
+
+Uma regra precisa de uma coluna que a tabela extraída realmente tenha; uma regra que emparelha linhas pelo número do artigo não pode ser executada numa fatura que não imprime nenhum.
+
+Em vez disso, a correspondência automática executa as regras que consegue e deixa as linhas das outras sem correspondência. Depois indica **Some PO match rules were not tried**, nomeando cada regra ignorada e cada coluna em falta na tabela. As linhas afetadas ficam sem correspondência até adicionar a coluna em falta ou emparelhá-las manualmente.
+
+{% hint style="info" %}
+Uma condição de ativação falsa também ignora uma regra, mas é um caso diferente: aparece no histórico de correspondência, não neste aviso.
+{% endhint %}
+
 ## Solução de Problemas
 
 | Sintoma | O que verificar |

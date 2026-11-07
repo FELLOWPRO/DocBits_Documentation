@@ -36,8 +36,8 @@ Deze pagina biedt een gedetailleerde uitleg van alle beschikbare instellingen.
 
 ## Toegang tot Instellingen voor Classificatie en extractie
 
-Ga naar de Instellingen voor **Classificatie en Extractie** via:\
-**Instellingen → Documentverwerking → Classificatie en Extractie**
+Ga naar de Instellingen voor **Classification and Extraction** via:\
+**Settings → Document Processing → Classification and Extraction**
 
 
 ## Documenten splitsen
@@ -83,7 +83,7 @@ In de sectie **Bedrag opmaak** heb je twee opties:
 {% hint style="info" %}
 **Voorwaarden voor een werkende tabelextractie**
 
-* Het documenttype heeft **tabelkolommen** (Instellingen → Documentverwerking → Documenttypen → [Tabelkolommen](../../global-settings/document-types/table-columns/README.md)). Zonder kolommen is er niets om naar te extraheren.
+* Het documenttype heeft **tabelkolommen** (Settings → Document Processing → Document Types → [Tabelkolommen](../../global-settings/document-types/table-columns/README.md)). Zonder kolommen is er niets om naar te extraheren.
 * **Tabel extractie** of **AI-tabel extractie** is hieronder ingeschakeld, voor de hele organisatie.
 * Het document heeft leesbare tekst: OCR is uitgevoerd, of E-Text wordt gebruikt voor digitaal aangemaakte pdf's ([OCR-instellingen](../ocr-settings.md)).
 * Training en AI-modellen gelden **per leverancier**. Een getrainde tabel geldt alleen voor documenten van de leverancier waarop ze is getraind.
@@ -115,7 +115,7 @@ Meer informatie over deze instelling vind je [hier](auto-extract-tax-code.md).
 
 **Extractieregels opslaan (alleen admin):** Alleen beheerders kunnen in de tabeltraining op *Regels opslaan* klikken. Schakel dit in wanneer gebruikers steeds regels opslaan die de extractie van een leverancier verstoren.
 
-**AI-model:** Stelt het organisatiemodel in voor veld- en tabelextractie. Het menu biedt Full, Fast, Nexus, Nexus Flash, Auto en Auto Nexus. Controleer beschikbaarheid, kwaliteit, looptijd en kosten met representatieve documenten. Een laag is niet altijd de meest nauwkeurige of snelste voor elk document. Sjabloonoverschrijvingen kunnen de organisatie-instelling vervangen. De tabel onder de selector toont:
+**AI Model:** Stelt het organisatiemodel in voor veld- en tabelextractie. Het menu biedt Full, Fast, Nexus, Nexus Flash, Auto en Auto Nexus. Controleer beschikbaarheid, kwaliteit, looptijd en kosten met representatieve documenten. Een laag is niet altijd de meest nauwkeurige of snelste voor elk document. Sjabloonoverschrijvingen kunnen de organisatie-instelling vervangen. De tabel onder de selector toont:
 
 * Welke **leveranciers** welk AI-model gebruiken
 * Of ze gestructureerde extractie (AI) en E-Text gebruiken
@@ -149,8 +149,8 @@ Elke schakelaar in deze sectie wordt opgeslagen als een organisatievoorkeur. Geb
 | Extractieregels opslaan (alleen admin) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
 | AI-model | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Tabelextractieversie (bevestigingsdialoog) | `TBL_EXT_VERSION` | versiestring |
-| OCR-instellingen → Gebruik AI-gegevens voor tabellen indien beschikbaar | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
-| OCR-instellingen → Gebruik E-Text indien beschikbaar | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+| OCR Settings → Gebruik AI-gegevens voor tabellen indien beschikbaar | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR Settings → Gebruik E-Text indien beschikbaar | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
 
 Opmerkingen:
 
@@ -189,7 +189,7 @@ Om een nieuwe regel te maken:
    *   **Subdocumenttype** _(optioneel)_: Geef een subtype op voor een gedetailleerdere classificatie.
 
        ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_3.png)
-3.  Klik op **Opslaan** om je classificatieregel op te slaan.
+3.  Klik op **Save** om je classificatieregel op te slaan.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_4.png)
 
@@ -204,7 +204,7 @@ Om een bestaande regel te bewerken:
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_6.png)
 3. Breng de gewenste wijzigingen aan.
-4.  Klik op **Opslaan** om de updates toe te passen.
+4.  Klik op **Save** om de updates toe te passen.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_4.png)
 
@@ -215,7 +215,7 @@ Om een regel te verwijderen:
 1.  Klik op de drie puntjes in de kolom **Acties**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_5.png)
-2.  Selecteer **Verwijderen**.
+2.  Selecteer **Delete**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_7.png)
 
@@ -264,7 +264,7 @@ Om een model te bewerken:
 2. Werk de beschikbare velden bij:
    * **Volgend model**: Selecteer het model dat de output van het huidige model moet verwerken.
    * **Documenttype**: Kies het documenttype waarmee het model de input moet classificeren.
-3.  Klik op **Opslaan** om je wijzigingen toe te passen.
+3.  Klik op **Save** om je wijzigingen toe te passen.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_12.png)
 

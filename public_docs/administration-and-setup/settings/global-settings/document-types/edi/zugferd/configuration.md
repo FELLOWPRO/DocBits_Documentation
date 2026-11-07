@@ -21,7 +21,7 @@ De ZUGFeRD-standaard is standaard altijd actief, maar u kunt er indien nodig wij
 
 ### **Stappen om ZUGFeRD-instellingen te wijzigen:**
 
-1. Navigeer naar **Instellingen → Documentverwerking → Documenttypen → Factuur**.
+1. Navigeer naar **Settings → Document Processing → Document Types → Invoice**.
 2. Klik op **E-Doc**.\\
 3. Er verschijnt een lijst met alle beschikbare e-docs.
 4. Zoek de **ZUGFeRD**-versie die u wilt wijzigen.\\
@@ -67,7 +67,7 @@ De **Extraction Paths Configuration** wordt gebruikt om gegevens te extraheren e
 2. Maak een nieuw concept aan door op het **potloodpictogram** te klikken.
 3. Selecteer het nieuw aangemaakte concept.
 4. Maak een nieuw veld aan of wijzig een bestaand veld.
-5. De linkerkant vertegenwoordigt de **DocBits-veld-ID**, die u kunt vinden onder **Instellingen → Documentverwerking → Documenttypen → Factuur → Velden**.\\
+5. De linkerkant vertegenwoordigt de **DocBits-veld-ID**, die u kunt vinden onder **Settings → Document Processing → Document Types → Invoice → Velden**.\\
 6. De rechterkant vertegenwoordigt het **pad naar het veld** dat in de Transformation is aangemaakt.
 7. Klik op **Save**.
 

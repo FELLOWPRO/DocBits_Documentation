@@ -25,7 +25,7 @@ Toegang wordt verleend per documenttype en per actie:
 
 * Controleer in het scherm **Toegangscontrole** voor de groep het documenttype (bijv. Factuur, Inkooporder).
 * Valideer machtigingen zoals:
-  * **Lijst**, **Weergave**, **Bewerken**, **Verwijderen**, **Massaal bijwerken**
+  * **Lijst**, **Weergave**, **Edit**, **Delete**, **Massaal bijwerken**
   * **Goedkeuringsniveaus** (1e, 2e), **Document ontgrendelen**
 * Zorg ervoor dat het toegangsniveau niet beperkt is tot **Eigenaar** of **Beheerder** tenzij passend.
 
@@ -35,7 +35,7 @@ Toegang kan ook worden beperkt op veldniveau, wat bewerken of zichtbaarheid kan 
 
 * Ga naar de toegangscontroleconfiguratie van de groep, navigeer naar het documenttype en controleer de instellingen op veldniveau.
 * Bevestig of velden zijn ingesteld op:
-  * **Lezen/Schrijven**, **Alleen lezen**, **Eigenaar schrijven**, **Geen**
+  * **Lezen/Schrijven**, **Read Only**, **Eigenaar schrijven**, **Geen**
 * Pas indien nodig aan op basis van de rol van de gebruiker.
 
 ### 5. Controleer de instelling "Alleen toegewezen documenten"

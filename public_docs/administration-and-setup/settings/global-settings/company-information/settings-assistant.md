@@ -11,12 +11,12 @@ De assistent staat **standaard uit**. Deze pagina laat zien waar u hem inschakel
 ## Wie het kan gebruiken
 
 * De **organisatiebeheerder** schakelt de assistent in of uit voor de hele organisatie.
-* Zodra hij aan staat, kan elke beheerder die **Instellingen** kan openen het paneel voor zichzelf tonen of verbergen.
+* Zodra hij aan staat, kan elke beheerder die **Settings** kan openen het paneel voor zichzelf tonen of verbergen.
 * Wijzigingen (een aanbeveling toepassen, een importverbinding uitschakelen of verwijderen, een regel aanmaken) zijn beperkt tot **organisatiebeheerders**. Andere gebruikers krijgen de melding *Available to administrators only.* (alleen beschikbaar voor beheerders).
 
 ## Inschakelen
 
-1. Ga naar **Instellingen → Organisatie & Toegang → Bedrijfsinformatie**. De paginakop toont **Company Settings** (bedrijfsinstellingen).
+1. Ga naar **Settings → Organization & Access → Company Information**. De paginakop toont **Company Settings** (bedrijfsinstellingen).
 2. Open de sectie **Assistants** (assistenten).
 3. Schakel **Enable the settings assistant** (de instellingenassistent inschakelen) in.
 
@@ -32,7 +32,7 @@ De **Validation assistant** (validatieassistent) in dezelfde sectie is een ander
 
 Op elke pagina van het gedeelte Instellingen vindt u naast het zoekveld voor instellingen een kleine **knop met een geestenlamp**. Klik erop om de assistent te **tonen** of te **verbergen**.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-nl.png" alt="De pagina Bedrijfsinformatie in Instellingen met de instellingennavigatie links, de pagina in het midden en het paneel van de Settings Assistant rechts"><figcaption><p>De assistent staat aan de <strong>rechterkant</strong> van elke instellingenpagina: navigatie links, de pagina in het midden, de assistent ernaast. Hier op <strong>Company Settings → Company Information</strong>. De knop om hem te tonen of te verbergen is het lampicoon naast <strong>Search Settings</strong> bovenaan de navigatie.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-nl.png" alt="De pagina Company Information in Settings met de instellingennavigatie links, de pagina in het midden en het paneel van de Settings Assistant rechts"><figcaption><p>De assistent staat aan de <strong>rechterkant</strong> van elke instellingenpagina: navigatie links, de pagina in het midden, de assistent ernaast. Hier op <strong>Company Settings → Company Information</strong>. De knop om hem te tonen of te verbergen is het lampicoon naast <strong>Search Settings</strong> bovenaan de navigatie.</p></figcaption></figure>
 
 * Het paneel onthoudt uw keuze per gebruiker, dus het blijft open wanneer u terugkomt.
 * Op een breed scherm (1280 pixels en meer) staat het naast de pagina. U kunt aan de rand slepen om de breedte te wijzigen.
@@ -48,7 +48,7 @@ Op elke pagina van het gedeelte Instellingen vindt u naast het zoekveld voor ins
 
 | Probleem | Oorzaak en oplossing |
 | --- | --- |
-| Er is geen knop met een geestenlamp in het gedeelte Instellingen | De schakelaar van de organisatie staat uit. Een organisatiebeheerder schakelt hem in onder **Bedrijfsinformatie → Assistants** |
+| Er is geen knop met een geestenlamp in het gedeelte Settings | De schakelaar van de organisatie staat uit. Een organisatiebeheerder schakelt hem in onder **Company Information → Assistants** |
 | De sectie **Assistants** ontbreekt in Bedrijfsinformatie | Alleen organisatiebeheerders zien haar |
 | Het paneel zegt **The assistant is being set up** (de assistent wordt ingesteld) | De functie is nog niet beschikbaar in uw omgeving |
 | Het paneel is er, maar de antwoorden zeggen *Available to administrators only.* | Uw account is geen organisatiebeheerder |

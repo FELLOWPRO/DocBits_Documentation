@@ -6,11 +6,11 @@ Voeg een kolom toe wanneer per regelitem een waarde moet worden vastgelegd die d
 
 * Bepaal bij welke **tabel** de kolom hoort. De meeste documenttypen hebben één tabel (bijvoorbeeld `INVOICE_TABLE`). Als de lijst leeg is, klikt u eerst op **Nieuwe tabel maken**; het dialoogvenster vraagt alleen om een tabelnaam.
 * Bepaal het **type**: `AMOUNT` voor geldbedragen, `NUMBER` voor hoeveelheden, `DATE`, `BOOLEAN` voor ja/nee, `CURRENCY` voor een ISO-valutacode, `STRING` voor al het andere. Het type kan na het opslaan niet meer worden gewijzigd.
-* Controleer of er al een **standaardkolom** met dezelfde betekenis bestaat die verborgen is. Verborgen kolommen staan in de lijst met de vlag *Verborgen* ingeschakeld; maak die zichtbaar in plaats van een duplicaat aan te maken.
+* Controleer of er al een **standaardkolom** met dezelfde betekenis bestaat die verborgen is. Verborgen kolommen staan in de lijst met de vlag *Hidden* ingeschakeld; maak die zichtbaar in plaats van een duplicaat aan te maken.
 
 ## Stappen
 
-1. Open **Instellingen → Documentverwerking → Documenttypen → Tabelkolommen**.
+1. Open **Settings → Document Processing → Document Types → Table Columns**.
 2. Klik op **Nieuwe tabelkolom toevoegen**.
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Dialoogvenster Nieuwe tabelkolom toevoegen met Titel, Is kolom verplicht, Selecteer kolomtype en Selecteer tabel"><figcaption><p>Nieuwe tabelkolom toevoegen</p></figcaption></figure>
@@ -19,7 +19,7 @@ Voeg een kolom toe wanneer per regelitem een waarde moet worden vastgelegd die d
 
 | Veld | Wat u invoert |
 |---|---|
-| **Titel** | Label dat de gebruiker op het validatiescherm ziet, bijvoorbeeld `Cost Centre`. Alleen letters en cijfers. DocBits leidt hieruit de technische *Kolomnaam* af (`COST_CENTRE`). |
+| **Title** | Label dat de gebruiker op het validatiescherm ziet, bijvoorbeeld `Cost Centre`. Alleen letters en cijfers. DocBits leidt hieruit de technische *Kolomnaam* af (`COST_CENTRE`). |
 | **Is kolom verplicht?** | Vink aan wanneer het document niet mag worden goedgekeurd zolang de kolom in een rij leeg is. |
 | **Selecteer kolomtype** | Zie de typelijst hierboven. |
 | **Selecteer tabel** | De tabel die de kolom krijgt. |
@@ -42,7 +42,7 @@ Voeg een kolom toe wanneer per regelitem een waarde moet worden vastgelegd die d
 | Melding | Betekenis |
 |---|---|
 | *Column name already exists* | Een kolom met deze technische naam staat al in de tabel. Kies een andere titel. |
-| *Column name already exists – Please activate it in Table Column settings* | Een verborgen standaardkolom heeft deze naam. Schakel de vlag *Verborgen* van die kolom uit in plaats van een nieuwe kolom aan te maken. |
+| *Column name already exists – Please activate it in Table Column settings* | Een verborgen standaardkolom heeft deze naam. Schakel de vlag *Hidden* van die kolom uit in plaats van een nieuwe kolom aan te maken. |
 | *No table exists. Please create table before creating columns.* | Het documenttype heeft nog geen tabel: klik eerst op **Nieuwe tabel maken**. |
 
 [Structured Output voor tabellen](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

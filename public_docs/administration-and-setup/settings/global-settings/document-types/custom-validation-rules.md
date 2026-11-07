@@ -20,26 +20,26 @@ Regels worden per **documenttype** gedefinieerd en worden uitgevoerd op elk docu
 
 | Zakelijke eis | Zonder aangepaste regels | Met een aangepaste regel |
 | --- | --- | --- |
-| Duitse facturen boven 250 EUR moeten het btw-nummer van de leverancier vermelden | een script, of gebruikers moeten eraan denken | **Verplicht** op Supplier Tax ID, *applies when* de herkomst DE is en het totaalbedrag groter is dan 250 |
+| Duitse facturen boven 250 EUR moeten het btw-nummer van de leverancier vermelden | een script, of gebruikers moeten eraan denken | **Required** op Supplier Tax ID, *applies when* de herkomst DE is en het totaalbedrag groter is dan 250 |
 | De factuurnummers van een leverancier zien er altijd uit als `INV-123456` | typefouten bereiken het ERP | **Patroon** `^INV-\d{6}$` op Invoice Number voor die leverancier |
 | Elke artikelregel heeft een hoeveelheid groter dan nul nodig | regels met hoeveelheid 0 worden geëxporteerd | **Bereik** (minimum 0.01) op de kolom Quantity |
 | De vervaldatum mag niet vóór de factuurdatum liggen | verkeerde betaalruns | **Vergelijk velden**: Due Date op of na Invoice Date |
 | De regels moeten optellen tot het nettobedrag | alleen de vaste ingebouwde controle | **Formule** `sum(row.NET_AMOUNT) == header.total_net_amount` met uw eigen tolerantie |
-| Alleen valuta's die uw ERP kent zijn toegestaan | exportfouten in het ERP | **Lijst met waarden** op Currency |
+| Alleen valuta's die uw ERP kent zijn toegestaan | exportfouten in het ERP | **List of Values** op Currency |
 | Gebruikers informeren over ongebruikelijke waarden zonder hen te blokkeren | niet mogelijk | elke regel met de ernst **Waarschuwing** |
 
 ## Aangepaste validatieregels inschakelen
 
 Aangepaste validatieregels worden **per documenttype** ingeschakeld. Er is geen schakelaar voor de hele organisatie.
 
-1. Ga naar **Instellingen → Documentverwerking → Documenttypen**.
+1. Ga naar **Settings → Document Processing → Document Types**.
 2. Klik op de kaart van het documenttype op het **instellingen**-pictogram (tandwiel).
 3. Open het gedeelte **Aangepaste validatieregels** en zet de schakelaar aan.
 4. Klik op **Validatieregels beheren** om de regellijst te openen.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="De regelschakelaars in de aanvullende instellingen van een documenttype"><figcaption><p>De schakelaars voor Manage Layouts, Custom Validation Rules en Transformation Rules</p></figcaption></figure>
 
-Vanaf nu toont de kaart van het documenttype ook een link **Validatieregels**.
+Vanaf nu toont de kaart van het documenttype ook een link **Validation Rules**.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-card-links.png" alt="De kaart van het documenttype met de link Validation Rules"><figcaption><p>De links op de kaart van het documenttype</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Vanaf nu toont de kaart van het documenttype ook een link **Validatieregels**.
 
 ## De regellijst
 
-**Documenttypen → (documenttype) → Validatieregels** toont alle regels van het documenttype.
+**Document Types → (documenttype) → Validation Rules** toont alle regels van het documenttype.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-nl.png" alt="Beheer van validatieregels met afgeschermde geconfigureerde namen. Relatieve datumaanduidingen blijven in deze productweergave Duitstalig."><figcaption><p>Beheer van validatieregels met afgeschermde geconfigureerde namen. Relatieve datumaanduidingen blijven in deze productweergave Duitstalig.</p></figcaption></figure>
 
@@ -59,15 +59,15 @@ Elke kaart toont de naam en beschrijving van de regel en de badges voor het **ni
 
 | Bron | Wat het is | Wat u kunt doen |
 | --- | --- | --- |
-| **Systeemstandaard** | Een regel die met DocBits wordt meegeleverd voor alle organisaties. | Kan niet rechtstreeks worden bewerkt — de builder toont "This is a system default rule and cannot be edited." Klik op **Aanpassen** om uw eigen bewerkbare kopie te maken, of schakel de regel uit om hem voor uw organisatie te stoppen. |
+| **Systeemstandaard** | Een regel die met DocBits wordt meegeleverd voor alle organisaties. | Kan niet rechtstreeks worden bewerkt — de builder toont "This is a system default rule and cannot be edited." Klik op **Customize** om uw eigen bewerkbare kopie te maken, of schakel de regel uit om hem voor uw organisatie te stoppen. |
 | **Op maat gemaakt** | Een systeemstandaard die uw organisatie heeft gewijzigd of uitgeschakeld. | Bewerk hem zoals uw eigen regel. **Terugzetten naar standaardinstellingen** verwijdert uw kopie en brengt het origineel terug. |
-| **Aangepast** | Een regel die uw organisatie heeft aangemaakt. | Bewerken, **Dupliceren**, **Verwijderen**. |
+| **Aangepast** | Een regel die uw organisatie heeft aangemaakt. | Bewerken, **Duplicate**, **Delete**. |
 
 Wijzigingen aan systeemstandaarden hebben nooit invloed op andere organisaties.
 
 ## Een regel aanmaken
 
-Klik op **Nieuwe regel**. De builder heeft drie stappen. **Testregel** en **Opslaan** staan rechtsboven.
+Klik op **New rule**. De builder heeft drie stappen. **Test rule** en **Save** staan rechtsboven.
 
 ### Stap 1 — Naam en bereik
 
@@ -77,10 +77,10 @@ Klik op **Nieuwe regel**. De builder heeft drie stappen. **Testregel** en **Opsl
 | --- | --- |
 | **Regelniveau** | Waar de regel naar kijkt en waar de fout wordt getoond — zie [Regelniveaus](#regelniveaus). |
 | **Ernst** | **Fout** markeert het veld als ongeldig en blokkeert de validatie. **Waarschuwing** toont het bericht maar blokkeert nooit. |
-| **Regelnaam** | Wordt getoond in de lijst, in de logboeken en aan beheerders. Laat de naam de regel beschrijven ("Btw-nummer leverancier verplicht voor Duitse facturen"). |
-| **Regelsleutel** | Een technische sleutel die uit de naam wordt gegenereerd. Hij blijft gelijk wanneer u de regel later hernoemt. Klik op het potlood om vóór de eerste keer opslaan een eigen sleutel te kiezen; daarna staat hij vast. |
+| **Rule Name** | Wordt getoond in de lijst, in de logboeken en aan beheerders. Laat de naam de regel beschrijven ("Btw-nummer leverancier verplicht voor Duitse facturen"). |
+| **Rule key** | Een technische sleutel die uit de naam wordt gegenereerd. Hij blijft gelijk wanneer u de regel later hernoemt. Klik op het potlood om vóór de eerste keer opslaan een eigen sleutel te kiezen; daarna staat hij vast. |
 | **Beschrijving** | Optionele toelichting voor andere beheerders. |
-| **Tabelnaam** | *Alleen tabelregel.* De tabel waarvan de rijen worden gecontroleerd, bijvoorbeeld `INVOICE_TABLE`. |
+| **Table name** | *Alleen tabelregel.* De tabel waarvan de rijen worden gecontroleerd, bijvoorbeeld `INVOICE_TABLE`. |
 | **Attach error to field / column** | Het veld (of, bij tabelregels, de kolom) dat de fout op het validatiescherm toont. |
 
 #### Regelniveaus
@@ -184,10 +184,10 @@ De waarde moet een van de door u getypte waarden zijn, **één waarde per regel*
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-lov.png" alt="een List of Values-controle"><figcaption><p>List of Values: de waarden komen uit een benoemde lijst uit de instellingen</p></figcaption></figure>
 
-Zoals *Allowed values*, maar de waarden komen uit een gedeelde **Lijst met waarden** die u beheert onder **Settings › List of Values**. Kies de lijst in plaats van haar opnieuw te typen; wanneer de lijst verandert, gebruikt de regel de nieuwe waarden (na een korte cachevertraging). Alleen de waarden van de lijstitems tellen, niet hun labels.
+Zoals *Allowed values*, maar de waarden komen uit een gedeelde **List of Values** die u beheert onder **Settings › List of Values**. Kies de lijst in plaats van haar opnieuw te typen; wanneer de lijst verandert, gebruikt de regel de nieuwe waarden (na een korte cachevertraging). Alleen de waarden van de lijstitems tellen, niet hun labels.
 
 {% hint style="info" %}
-Behalve **Verplicht** **slaagt** elke controle **wanneer de waarde leeg is**. Een Pattern-regel op de inkooporder klaagt niet over facturen zonder inkooporder. Als een lege waarde ook een probleem is, voeg dan een Required-regel toe of beperk de regel met *Applies when … is not empty*.
+Behalve **Required** **slaagt** elke controle **wanneer de waarde leeg is**. Een Pattern-regel op de inkooporder klaagt niet over facturen zonder inkooporder. Als een lege waarde ook een probleem is, voeg dan een Required-regel toe of beperk de regel met *Applies when … is not empty*.
 {% endhint %}
 
 #### Foutmelding en foutcode
@@ -197,7 +197,7 @@ Behalve **Verplicht** **slaagt** elke controle **wanneer de waarde leeg is**. Ee
 
 ## Regel testen
 
-Klik op **Testregel** om de huidige versie van de regel — opgeslagen of niet — uit te voeren op een document. Voer een **Document-ID** in, of schakel over naar **Per document JSON** en plak geëxtraheerde gegevens. **Er wordt niets opgeslagen** en het document wordt niet gewijzigd.
+Klik op **Test rule** om de huidige versie van de regel — opgeslagen of niet — uit te voeren op een document. Voer een **Document-ID** in, of schakel over naar **Per document JSON** en plak geëxtraheerde gegevens. **Er wordt niets opgeslagen** en het document wordt niet gewijzigd.
 
 Het resultaat is een van drie uitkomsten:
 
@@ -228,7 +228,7 @@ Test elke nieuwe regel op minstens één document dat moet mislukken, één dat 
 
 Elke regel kan zijn uitvoeringen laten vastleggen. Open daarvoor de pagina **Logboeken van regeluitvoering** van het documenttype: de kop noemt het documenttype en het vernieuwingspictogram laadt de lijst opnieuw.
 
-Met **Zoek via** kiest u waarop u zoekt (standaard **Regelsleutel**); de waarde typt u in het veld ernaast. Bij zoeken op document is **Regeltype** verplicht. Verfijn het resultaat met **Resultaat**, **Uitgevoerd**, **Vanaf datum** en **Tot nu toe**.
+Met **Zoek via** kiest u waarop u zoekt (standaard **Rule key**); de waarde typt u in het veld ernaast. Bij zoeken op document is **Regeltype** verplicht. Verfijn het resultaat met **Resultaat**, **Uitgevoerd**, **Vanaf datum** en **Tot nu toe**.
 
 <figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-nl.png" alt="De logboeken van regeluitvoering"><figcaption><p>De pagina Logboeken van regeluitvoering: boven de filters, daaronder een rij per uitvoering. Zolang u niet hebt gezocht, zegt de tabel wat u moet invoeren.</p></figcaption></figure>
 
@@ -238,10 +238,10 @@ Dezelfde pagina toont ook de logboeken van de transformatie- en layoutselectiere
 
 ## Recepten
 
-Kopieer deze regels als uitgangspunt. De veld- en kolomsleutels zijn die van het standaarddocumenttype **Factuur**; pas ze aan uw documenttypen aan.
+Kopieer deze regels als uitgangspunt. De veld- en kolomsleutels zijn die van het standaarddocumenttype **Invoice**; pas ze aan uw documenttypen aan.
 
 **1. Btw-nummer van de leverancier voor Duitse facturen boven 250 EUR**
-Header field · Error · koppelen aan *Supplier Tax ID* · Applies when **Alle**: *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Controle **Verplicht** · Bericht "Btw-nummer leverancier ontbreekt. Duitse facturen boven 250 EUR moeten het vermelden." · Code `REQUIRED_CONDITIONAL`.
+Header field · Error · koppelen aan *Supplier Tax ID* · Applies when **Alle**: *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Controle **Required** · Bericht "Btw-nummer leverancier ontbreekt. Duitse facturen boven 250 EUR moeten het vermelden." · Code `REQUIRED_CONDITIONAL`.
 
 **2. Headertotalen tellen op** (vervangt de ingebouwde controle)
 Header field · Error · koppelen aan *Total Amount* · altijd · **Formule** `header.total_amount == header.total_net_amount + header.total_tax_amount`, tolerantie `0.01` · Bericht "Totaal {actual} is niet gelijk aan netto plus btw ({expected})."
@@ -265,10 +265,10 @@ Header field · Error · *Due Date* · altijd · **Vergelijk velden** Due Date *
 Header field · Error · *Invoice Date* · altijd · **Vergelijk velden** Invoice Date *op of vóór (≤)* vandaag.
 
 **9. Alleen goedgekeurde valuta's (alleen als melding)**
-Header field · **Waarschuwing** · *Currency* · altijd · **Lijst met waarden** *approved_currencies* · Code `VALUE_NOT_ALLOWED`.
+Header field · **Waarschuwing** · *Currency* · altijd · **List of Values** *approved_currencies* · Code `VALUE_NOT_ALLOWED`.
 
 **10. Inkooporder verplicht boven 5.000**
-Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Verplicht**.
+Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Required**.
 
 ## Aanbevolen werkwijzen
 
@@ -282,14 +282,14 @@ Header field · Error · *Purchase Order* · Applies when *Total Amount* greater
 
 | Symptoom | Wat te controleren |
 | --- | --- |
-| De regel meldt nooit een fout | Is de functie ingeschakeld voor het documenttype en is de regel **Actief**? Voer **Testregel** uit op het document: "skipped" betekent dat *Applies when* onwaar was. |
-| Een leeg veld wordt niet gemeld | Alleen **Verplicht** meldt lege waarden. Voeg een Required-regel toe. |
+| De regel meldt nooit een fout | Is de functie ingeschakeld voor het documenttype en is de regel **Active**? Voer **Test rule** uit op het document: "skipped" betekent dat *Applies when* onwaar was. |
+| Een leeg veld wordt niet gemeld | Alleen **Required** meldt lege waarden. Voeg een Required-regel toe. |
 | De ingebouwde totaalcontroles zijn verdwenen | Verwacht zolang aangepaste regels aan staan. Maak ze opnieuw aan als Formula-regels (recepten 2 en 3). |
 | Een gewijzigde regel heeft geen effect op een document | Documenten worden bij hun volgende keer opslaan opnieuw gecontroleerd. Sla het document op of verwerk het opnieuw. |
 | Een Pattern komt overeen met waarden die dat niet zouden moeten | Patronen zoeken binnen de waarde. Veranker met `^` en `$`. |
 | Van twee fouten wordt er maar één op een veld getoond | Een veld toont alleen de eerste mislukte regel. Pas de prioriteiten aan of koppel een van de regels aan een ander veld. |
 | Tabelkolommen ontbreken in *Applies when* | Ze zijn alleen beschikbaar op het niveau **Tabelrij**. |
-| De systeemstandaardregel kan niet worden gewijzigd | Klik op **Aanpassen** om uw eigen kopie te maken. |
+| De systeemstandaardregel kan niet worden gewijzigd | Klik op **Customize** om uw eigen kopie te maken. |
 
 ## Gerelateerd
 

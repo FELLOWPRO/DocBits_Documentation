@@ -18,8 +18,8 @@ Elke groep kan worden geconfigureerd voor:
 
 ## Activering
 
-1. Ga naar **Instellingen**.
-2. Selecteer **Documentverwerking**.
+1. Ga naar **Settings**.
+2. Selecteer **Document Processing**.
 3. Selecteer **Module.**
 4. Activeer **Toegangscontrole** door de schuifregelaar in te schakelen.
 
@@ -27,8 +27,8 @@ Elke groep kan worden geconfigureerd voor:
 
 ## De Toegangscontrole van een groep openen
 
-1. Ga naar **Instellingen**.
-2. Selecteer onder **Organisatie & Toegang** de optie **Groepen en machtigingen**.
+1. Ga naar **Settings**.
+2. Selecteer onder **Organization & Access** de optie **Groepen en machtigingen**.
 3. Om de machtigingen van een groep te beheren (bijvoorbeeld PROCUREMENT\_DIRECTOR), klikt u op de drie puntjes aan de rechterkant.
 4. Selecteer **Toegangscontrole beheren**.
 
@@ -53,11 +53,11 @@ De eerste kolom is een schakelaar **Ingeschakeld / Uitgeschakeld**. Schakel hem 
 |-------|--------------------------|
 | **Lijst** | het documenttype in de dashboardlijst zien. |
 | **Bekijken** | een document openen en de details bekijken. |
-| **Bewerken** | veldwaarden van een document wijzigen. |
-| **Verwijderen** | een document verwijderen. |
+| **Edit** | veldwaarden van een document wijzigen. |
+| **Delete** | een document verwijderen. |
 | **Bulkupdate** | meerdere documenten tegelijk bijwerken. |
-| **Eerste Goedkeuring** | de goedkeuring van het eerste niveau verlenen. |
-| **Tweede Goedkeuring** | de goedkeuring van het tweede niveau verlenen. |
+| **First Approval** | de goedkeuring van het eerste niveau verlenen. |
+| **Second Approval** | de goedkeuring van het tweede niveau verlenen. |
 
 ### Toegangsbereiken
 
@@ -81,22 +81,22 @@ Elke actiekolom is een vervolgkeuzelijst. De gekozen waarde beantwoordt de vraag
 
 ### Goedkeuring vereist ook Bewerken
 
-Het goedkeuren van een document veroorzaakt op de achtergrond **twee acties**: DocBits **slaat** eerst het document op en zet het daarna op de goedgekeurde status. De opslagstap vereist de machtiging **Bewerken**, dus de twee machtigingen zijn gekoppeld.
+Het goedkeuren van een document veroorzaakt op de achtergrond **twee acties**: DocBits **slaat** eerst het document op en zet het daarna op de goedgekeurde status. De opslagstap vereist de machtiging **Edit**, dus de twee machtigingen zijn gekoppeld.
 
-Een gebruiker die alleen **Eerste Goedkeuring** of **Tweede Goedkeuring** krijgt — maar *niet* **Bewerken** — krijgt een machtigingsfout bij de opslagstap en kan het document niet goedkeuren.
+Een gebruiker die alleen **First Approval** of **Second Approval** krijgt — maar *niet* **Edit** — krijgt een machtigingsfout bij de opslagstap en kan het document niet goedkeuren.
 
 {% hint style="warning" %}
-Telkens wanneer u **Eerste Goedkeuring** of **Tweede Goedkeuring** verleent, verleen dan ook **Bewerken** (en **Bekijken**) voor hetzelfde documenttype. Een goedkeuringsmachtiging op zichzelf is niet voldoende.
+Telkens wanneer u **First Approval** of **Second Approval** verleent, verleen dan ook **Edit** (en **Bekijken**) voor hetzelfde documenttype. Een goedkeuringsmachtiging op zichzelf is niet voldoende.
 {% endhint %}
 
 ## Machtigingen op veldniveau
 
-Klik op een documenttype-rij om eronder het paneel **Veldmachtigingen** te openen. Velden zijn georganiseerd in tabbladen (bijvoorbeeld *Tabelkolommen*, *Factuurgegevens*, *Betalingsgegevens*, *Belastingen en bedragen*). Elk veld heeft zijn eigen toegangsniveau:
+Klik op een documenttype-rij om eronder het paneel **Veldmachtigingen** te openen. Velden zijn georganiseerd in tabbladen (bijvoorbeeld *Table Columns*, *Factuurgegevens*, *Betalingsgegevens*, *Belastingen en bedragen*). Elk veld heeft zijn eigen toegangsniveau:
 
 | Niveau | Effect op het veld |
 |--------|--------------------|
 | **Lezen/Schrijven** | Het veld is zichtbaar **en** bewerkbaar. |
-| **Alleen-lezen** | Het veld is zichtbaar maar **kan niet worden bewerkt** (grijs). |
+| **Read Only** | Het veld is zichtbaar maar **kan niet worden bewerkt** (grijs). |
 | **Goedkeuring** | Het veld kan worden bewerkt, maar de wijziging moet eerst een **goedkeuringsworkflow** doorlopen. |
 | **Geen toegang** | Het veld is **volledig verborgen** — de gebruiker ziet het nooit. |
 
@@ -140,7 +140,7 @@ Volg nu één concreet document — de factuur **INV-4711**, die **Maria heeft g
 * ✅ Bewerkt de leveranciersnaam en regels *(Bewerken = Owner & Assignee — zij is de eigenaar)*.
 * 🔒 Ziet `TOTAL_AMOUNT`, maar het veld is grijs en ze kan het niet wijzigen *(Alleen-lezen)*.
 * 🚫 Ziet het veld `CUSTOMER_DISCOUNT` nooit *(Geen toegang)*.
-* 🚫 De knop **Verwijderen** is verborgen *(Verwijderen = No Access — niemand in de groep mag verwijderen)*.
+* 🚫 De knop **Delete** is verborgen *(Verwijderen = No Access — niemand in de groep mag verwijderen)*.
 * ✅ Kan de **eerste goedkeuring** verlenen *(Eerste Goedkeuring = Assignee — zij is de toegewezene)*.
 
 **Tom (zelfde groep, maar heeft INV-4711 *niet* geüpload en het is *niet* aan hem toegewezen):**
@@ -155,5 +155,5 @@ Volg nu één concreet document — de factuur **INV-4711**, die **Maria heeft g
 
 * **Everyone** opent een document voor alle groepsleden; **Owner / Assignee** beperkt een actie tot de personen die met dat specifieke document verbonden zijn.
 * **No Access** verwijdert een actie (Verwijderen) of verbergt een veld (`CUSTOMER_DISCOUNT`) voor de hele groep.
-* **Alleen-lezen** houdt een veld zichtbaar ter referentie (`TOTAL_AMOUNT`) maar voorkomt wijzigingen.
+* **Read Only** houdt een veld zichtbaar ter referentie (`TOTAL_AMOUNT`) maar voorkomt wijzigingen.
 * Twee personen in **dezelfde groep** kunnen **verschillende rechten op dezelfde factuur** hebben, puur door wie hem heeft geüpload en aan wie hij is toegewezen.

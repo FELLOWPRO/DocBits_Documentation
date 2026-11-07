@@ -8,7 +8,7 @@ Deze pagina legt uit hoe u de succesvolle verwerking van uw BOD (Business Object
 
 ### Ophalen van uw API-sleutel
 
-1.  Ga naar **Instellingen → Systeem & Beheer → Integratie en SSO**.
+1.  Ga naar **Settings → Systeem & Beheer → Integratie en SSO**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_integration.png)
 2.  U kunt uw **API-sleutel** handmatig kopiëren of op de kopieerknop klikken om deze naar uw klembord te kopiëren.
@@ -17,7 +17,7 @@ Deze pagina legt uit hoe u de succesvolle verwerking van uw BOD (Business Object
 
 ### **Downloaden van het BOD-mappingbestand**
 
-1.  Ga naar **Instellingen → Documentverwerking → Exporteren**.
+1.  Ga naar **Settings → Document Processing → Exporteren**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_export.png)
 2.  In de kolom **Acties** van de relevante exportvermelding, klik op het menu met drie stippen en selecteer **Bewerking**.

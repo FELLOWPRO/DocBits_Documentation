@@ -18,8 +18,8 @@ As regras são definidas por **tipo de documento** e são executadas em todos os
 
 | Requisito de negócio | Sem regras personalizadas | Com uma regra personalizada |
 | --- | --- | --- |
-| Faturas alemãs acima de 250 EUR devem exibir o número de identificação fiscal do fornecedor | um script, ou os usuários precisam se lembrar | **Obrigatório** em Supplier Tax ID, *applies when* a origem é DE e o valor total é maior que 250 |
-| Os números de fatura de um fornecedor sempre têm o formato `INV-123456` | erros de digitação chegam ao ERP | **Padrão** `^INV-\d{6}$` em Invoice Number para esse fornecedor |
+| Faturas alemãs acima de 250 EUR devem exibir o número de identificação fiscal do fornecedor | um script, ou os usuários precisam se lembrar | **Required** em Supplier Tax ID, *applies when* a origem é DE e o valor total é maior que 250 |
+| Os números de fatura de um fornecedor sempre têm o formato `INV-123456` | erros de digitação chegam ao ERP | **Default** `^INV-\d{6}$` em Invoice Number para esse fornecedor |
 | Toda linha de artigo precisa de uma quantidade maior que zero | linhas com quantidade 0 são exportadas | **Faixa** (mínimo 0,01) na coluna Quantity |
 | A data de vencimento não pode ser anterior à data da fatura | execuções de pagamento incorretas | **Comparar campos**: Due Date na data da fatura ou depois dela (Invoice Date) |
 | As linhas devem somar o valor líquido | apenas a verificação nativa fixa | **Fórmula** `sum(row.NET_AMOUNT) == header.total_net_amount` com a sua própria tolerância |
@@ -30,7 +30,7 @@ As regras são definidas por **tipo de documento** e são executadas em todos os
 
 As regras de validação personalizadas são ativadas **por tipo de documento**. Não existe uma chave geral para toda a organização.
 
-1. Acesse **Definições → Definições gerais → Tipos de documento**.
+1. Acesse **Definições → Definições gerais → Document Types**.
 2. No cartão do tipo de documento, clique no ícone de **configurações** (engrenagem).
 3. Abra a seção **Regras de Validação Personalizadas** e ative o alternador.
 4. Clique em **Gerenciar regras de validação** para abrir a lista de regras.
@@ -47,7 +47,7 @@ A partir de agora, o cartão do tipo de documento também mostra um link **Regra
 
 ## A lista de regras
 
-**Tipos de documento → (tipo de documento) → Regras de validação** lista todas as regras do tipo de documento.
+**Document Types → (tipo de documento) → Validation Rules** lista todas as regras do tipo de documento.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-pt.png" alt="Gestão de regras de validação com nomes configurados ocultos. Algumas datas relativas continuam em alemão; Mesa significa aqui tabela de dados."><figcaption><p>Gestão de regras de validação com nomes configurados ocultos. Algumas datas relativas continuam em alemão; Mesa significa aqui tabela de dados.</p></figcaption></figure>
 
@@ -57,15 +57,15 @@ Cada cartão mostra o nome e a descrição da regra, além dos selos de seu **n�
 
 | Origem | O que é | O que você pode fazer |
 | --- | --- | --- |
-| **Padrão do sistema** | Uma regra fornecida com o DocBits para todas as organizações. | Ela não pode ser editada diretamente — o construtor exibe "This is a system default rule and cannot be edited." Clique em **Personalizar** para criar sua própria cópia editável, ou desative-a para que deixe de valer para a sua organização. |
+| **Padrão do sistema** | Uma regra fornecida com o DocBits para todas as organizações. | Ela não pode ser editada diretamente — o construtor exibe "This is a system default rule and cannot be edited." Clique em **Customize** para criar sua própria cópia editável, ou desative-a para que deixe de valer para a sua organização. |
 | **Personalizado** | Uma regra padrão do sistema que a sua organização alterou ou desativou. | Edite-a como uma regra própria. **Restaurar padrões de fábrica** exclui a sua cópia e restaura a original. |
-| **Personalizado** | Uma regra criada pela sua organização. | Editar, **Duplicar**, **Excluir**. |
+| **Personalizado** | Uma regra criada pela sua organização. | Editar, **Duplicate**, **Delete**. |
 
 As alterações nas regras padrão do sistema nunca afetam outras organizações.
 
 ## Criar uma regra
 
-Clique em **Nova regra**. O construtor tem três etapas. **Regra de teste** e **Salvar** ficam no canto superior direito.
+Clique em **New rule**. O construtor tem três etapas. **Test rule** e **Save** ficam no canto superior direito.
 
 ### Etapa 1 — Nome e escopo
 
@@ -75,8 +75,8 @@ Clique em **Nova regra**. O construtor tem três etapas. **Regra de teste** e **
 | --- | --- |
 | **Nível da regra** | O que a regra analisa e onde o erro é exibido — veja [Níveis de regra](#niveis-de-regra). |
 | **Gravidade** | **Erro** marca o campo como inválido e bloqueia a validação. **Aviso** mostra a mensagem, mas nunca bloqueia. |
-| **Nome da regra** | Exibido na lista e para os administradores. Faça com que descreva a regra ("Supplier tax ID required for German invoices"). |
-| **Chave da regra** | Uma chave técnica gerada a partir do nome. Ela permanece a mesma quando você renomeia a regra mais tarde. Clique no lápis para escolher sua própria chave antes do primeiro salvamento; depois disso, ela fica fixa. |
+| **Rule Name** | Exibido na lista e para os administradores. Faça com que descreva a regra ("Supplier tax ID required for German invoices"). |
+| **Rule key** | Uma chave técnica gerada a partir do nome. Ela permanece a mesma quando você renomeia a regra mais tarde. Clique no lápis para escolher sua própria chave antes do primeiro salvamento; depois disso, ela fica fixa. |
 | **Descrição** | Explicação opcional para outros administradores. |
 | **Nome da tabela** | *Somente para linha de tabela.* A tabela cujas linhas são verificadas, por exemplo `INVOICE_TABLE`. |
 | **Attach error to field / column** | O campo (ou, para linhas de tabela, a coluna) que exibe o erro na tela de validação. |
@@ -185,7 +185,7 @@ O valor deve ser um dos valores que você digitar, **um valor por linha**. Opcio
 Como *Allowed values*, mas os valores vêm de uma **Lista de Valores** compartilhada, gerenciada em **Settings › List of Values**. Escolha a lista em vez de digitá-la novamente; quando a lista muda, a regra passa a usar os novos valores (após um breve atraso de cache). Contam apenas os valores das entradas da lista, não os seus rótulos.
 
 {% hint style="info" %}
-Exceto **Obrigatório**, toda verificação **é aprovada quando o valor está vazio**. Uma regra Pattern no Purchase Order não reclama de faturas sem pedido de compra. Se um valor vazio também for um problema, adicione uma regra Required ou limite a regra com *Applies when … is not empty*.
+Exceto **Required**, toda verificação **é aprovada quando o valor está vazio**. Uma regra Pattern no Purchase Order não reclama de faturas sem pedido de compra. Se um valor vazio também for um problema, adicione uma regra Required ou limite a regra com *Applies when … is not empty*.
 {% endhint %}
 
 #### Mensagem de erro e código de erro
@@ -195,7 +195,7 @@ Exceto **Obrigatório**, toda verificação **é aprovada quando o valor está v
 
 ## Testar a regra
 
-Clique em **Regra de teste** para executar a versão atual da regra — salva ou não — em um documento. Informe um **ID do documento** ou mude para **Por documento JSON** e cole os dados extraídos. **Nada é salvo** e o documento não é alterado.
+Clique em **Test rule** para executar a versão atual da regra — salva ou não — em um documento. Informe um **ID do documento** ou mude para **Por documento JSON** e cole os dados extraídos. **Nada é salvo** e o documento não é alterado.
 
 O resultado é um destes três desfechos:
 
@@ -226,7 +226,7 @@ Teste cada nova regra em pelo menos um documento que deva falhar, um que deva se
 
 Cada regra pode registar as suas avaliações. Para isso abra a página **Registros de execução de regras** do tipo de documento: o cabeçalho indica o tipo de documento e o ícone de atualização recarrega a lista.
 
-**Encontre por** define o que é pesquisado (por omissão **Chave da regra**) e o valor escreve-se no campo ao lado. Ao pesquisar por documento, **Tipo de regra** é obrigatório. Restrinja o resultado com **Resultado**, **Executado**, **A partir da data** e **A data**.
+**Encontre por** define o que é pesquisado (por omissão **Rule key**) e o valor escreve-se no campo ao lado. Ao pesquisar por documento, **Tipo de regra** é obrigatório. Restrinja o resultado com **Resultado**, **Executado**, **A partir da data** e **A data**.
 
 <figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-pt.png" alt="Os registos de execução de regras"><figcaption><p>A página dos registos de execução: os filtros em cima e uma linha por avaliação abaixo. Enquanto não houver pesquisa, a tabela indica o que introduzir.</p></figcaption></figure>
 
@@ -236,10 +236,10 @@ A mesma página mostra também os registos das regras de transformação e de se
 
 ## Receitas
 
-Copie estas regras como ponto de partida. As chaves de campos e colunas são as do tipo de documento **Fatura** padrão; ajuste-as aos seus tipos de documento.
+Copie estas regras como ponto de partida. As chaves de campos e colunas são as do tipo de documento **Invoice** padrão; ajuste-as aos seus tipos de documento.
 
 **1. Número de identificação fiscal do fornecedor para faturas alemãs acima de 250 EUR**
-Header field · Error · associar a *Supplier Tax ID* · Applies when **Todos**: *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Verificação **Obrigatório** · Mensagem "Supplier tax ID is missing. German invoices over 250 EUR must show it." · Código `REQUIRED_CONDITIONAL`.
+Header field · Error · associar a *Supplier Tax ID* · Applies when **Todos**: *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Verificação **Required** · Mensagem "Supplier tax ID is missing. German invoices over 250 EUR must show it." · Código `REQUIRED_CONDITIONAL`.
 
 **2. Os totais do cabeçalho fecham a soma** (substitui a verificação nativa)
 Header field · Error · associar a *Total Amount* · sempre · **Fórmula** `header.total_amount == header.total_net_amount + header.total_tax_amount`, tolerância `0.01` · Mensagem "Total {actual} does not equal net plus tax ({expected})."
@@ -254,7 +254,7 @@ Table line · Error · tabela `INVOICE_TABLE`, coluna `QUANTITY` · Applies when
 Table line · Warning · coluna `NET_AMOUNT` · sempre · **Fórmula** `row.NET_AMOUNT == row.QUANTITY * row.UNIT_PRICE`, tolerância `0.01`.
 
 **6. Formato do número de fatura de um fornecedor**
-Header field · Error · *Invoice Number* · Applies when *Supplier ID* is *20723* · **Padrão** `^INV-\d{6}$`.
+Header field · Error · *Invoice Number* · Applies when *Supplier ID* is *20723* · **Default** `^INV-\d{6}$`.
 
 **7. Vencimento não anterior à data da fatura**
 Header field · Error · *Due Date* · sempre · **Comparar campos** Due Date *na data ou depois (≥)* de Invoice Date · Código `DATE_ORDER`.
@@ -266,7 +266,7 @@ Header field · Error · *Invoice Date* · sempre · **Comparar campos** Invoice
 Header field · **Aviso** · *Currency* · sempre · **Lista de Valores** *approved_currencies* · Código `VALUE_NOT_ALLOWED`.
 
 **10. Pedido de compra obrigatório acima de 5.000**
-Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Obrigatório**.
+Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Required**.
 
 ## Boas práticas
 
@@ -280,14 +280,14 @@ Header field · Error · *Purchase Order* · Applies when *Total Amount* greater
 
 | Sintoma | O que verificar |
 | --- | --- |
-| A regra nunca gera um erro | O recurso está ativado para o tipo de documento e a regra está **Ativo**? Execute **Regra de teste** no documento: "skipped" significa que *Applies when* era falso. |
-| Um campo vazio não é reportado | Somente **Obrigatório** reporta valores vazios. Adicione uma regra Required. |
+| A regra nunca gera um erro | O recurso está ativado para o tipo de documento e a regra está **Active**? Execute **Test rule** no documento: "skipped" significa que *Applies when* era falso. |
+| Um campo vazio não é reportado | Somente **Required** reporta valores vazios. Adicione uma regra Required. |
 | As verificações de total nativas desapareceram | Esperado enquanto as regras personalizadas estão ativadas. Recrie-as como regras Formula (receitas 2 e 3). |
 | Uma regra alterada não tem efeito em um documento | Os documentos são reverificados no próximo salvamento. Salve ou reprocesse o documento. |
 | Um Pattern corresponde a valores que não deveria | Os padrões procuram dentro do valor. Ancore com `^` e `$`. |
 | Apenas um de dois erros é exibido em um campo | Um campo exibe somente a primeira regra com falha. Ajuste as prioridades ou associe uma das regras a outro campo. |
 | Colunas de tabela ausentes em *Applies when* | Elas só estão disponíveis no nível **Linha da tabela**. |
-| A regra padrão do sistema não pode ser alterada | Clique em **Personalizar** para criar sua própria cópia. |
+| A regra padrão do sistema não pode ser alterada | Clique em **Customize** para criar sua própria cópia. |
 
 ## Relacionado
 

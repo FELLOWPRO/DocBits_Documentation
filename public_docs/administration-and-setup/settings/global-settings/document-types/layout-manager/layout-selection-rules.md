@@ -26,7 +26,7 @@ A origem continua disponível — como uma condição entre muitas. Uma regra ta
 
 Os layouts baseados em regras são ativados **por tipo de documento** por um **administrador da organização**.
 
-1. Acesse **Definições → Definições gerais → Tipos de documento**.
+1. Acesse **Definições → Definições gerais → Document Types**.
 2. Clique no ícone de **configurações** (engrenagem) no card do tipo de documento.
 3. Abra **Gerenciar layouts** e ative o interruptor.
 
@@ -99,14 +99,14 @@ O layout é sempre escolhido a partir dos valores **atuais** do documento. Se um
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-pt.png" alt="Regras de seleção com nomes configurados ocultos. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos."><figcaption><p>Regras de seleção com nomes configurados ocultos. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos.</p></figcaption></figure>
 
-Cada linha mostra a **prioridade** (a primeira linha é marcada como **FIRST**), o **nome e a chave da regra** com suas **condições**, o **layout de destino**, o selo de **origem** e um interruptor **Ativo**.
+Cada linha mostra a **prioridade** (a primeira linha é marcada como **FIRST**), o **nome e a chave da regra** com suas **condições**, o **layout de destino**, o selo de **origem** e um interruptor **Active**.
 
 | Tarefa | Como |
 | --- | --- |
-| Criar uma regra | **Nova regra** |
+| Criar uma regra | **New rule** |
 | Editar uma regra | Clique na linha |
 | Alterar a ordem | Arraste a alça à esquerda de uma linha para cima ou para baixo. A nova ordem é salva imediatamente. |
-| Desativar uma regra | Interruptor **Ativo**. As regras inativas são ignoradas. |
+| Desativar uma regra | Interruptor **Active**. As regras inativas são ignoradas. |
 | Duplicar ou excluir | Menu **⋮** da linha |
 | Encontrar uma regra | **Search rules…** |
 
@@ -122,7 +122,7 @@ Para usar outro layout de fallback, crie uma regra **sem nenhuma condição** e 
 
 ## Criar uma regra
 
-Clique em **Nova regra** na aba Selection rules da tela que você quer alterar.
+Clique em **New rule** na aba Selection rules da tela que você quer alterar.
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-pt.png" alt="Âmbito, condições e layout de destino de uma regra de seleção. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos."><figcaption><p>Âmbito, condições e layout de destino de uma regra de seleção. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos.</p></figcaption></figure>
 
@@ -132,9 +132,9 @@ A frase no topo resume a regra à medida que você a constrói — "When header.
 
 | Configuração | O que faz |
 | --- | --- |
-| **Nome da regra** | Exibido na lista de regras. Descreva o caso de negócio: "Example Supplier invoices", "E-invoices", "High value approval". |
-| **Chave da regra** | Gerada a partir do nome; permanece a mesma quando você renomeia a regra. |
-| **Tipo de documento** / **Tipo de layout** | O tipo de documento e a tela para os quais a regra vale. Obtidos do local onde você clicou em **Nova regra**. |
+| **Rule Name** | Exibido na lista de regras. Descreva o caso de negócio: "Example Supplier invoices", "E-invoices", "High value approval". |
+| **Rule key** | Gerada a partir do nome; permanece a mesma quando você renomeia a regra. |
+| **Tipo de documento** / **Tipo de layout** | O tipo de documento e a tela para os quais a regra vale. Obtidos do local onde você clicou em **New rule**. |
 | **Prioridade** | Os números menores são verificados primeiro. Deixe intervalos (5, 10, 20 …) para poder inserir regras depois. |
 
 ### Passo 2 — Condições de aplicação (Applies when)
@@ -209,7 +209,7 @@ Tela **Rejeitar** · prioridade **10** · *Supplier ID is one of* `10040, 10041`
 | Sintoma | O que verificar |
 | --- | --- |
 | Um documento recebe o layout errado | Uma regra anterior corresponde primeiro. Veja as regras acima dela, ou o **Prioridade da regra correspondente** na pré-visualização. |
-| O padrão é usado embora uma regra devesse corresponder | A regra está **Ativo**? A condição corresponde ao valor exato (maiúsculas/minúsculas, espaços)? A regra está na aba de **tela** correta? |
+| O padrão é usado embora uma regra devesse corresponder | A regra está **Active**? A condição corresponde ao valor exato (maiúsculas/minúsculas, espaços)? A regra está na aba de **tela** correta? |
 | O layout muda enquanto um usuário trabalha | Um campo em **watched_fields** foi alterado. Baseie a regra em um campo mais estável. |
 | Um layout não pode ser excluído | Uma regra ainda aponta para ele. Redirecione ou exclua essa regra primeiro. |
 | Nenhum layout é exibido | Nenhuma regra correspondeu, não há padrão e não existe layout baseado em origem para esta tela. Adicione uma regra sem condição como coringa. |

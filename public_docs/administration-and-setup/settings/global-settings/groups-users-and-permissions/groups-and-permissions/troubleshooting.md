@@ -25,7 +25,7 @@ O acesso é concedido por tipo de documento e por ação:
 
 * Na tela de **Controle de Acesso** do grupo, verifique o tipo de documento (por exemplo, Fatura, Ordem de Compra).
 * Valide permissões como:
-  * **Listar**, **Visualizar**, **Editar**, **Excluir**, **Atualização em Massa**
+  * **Listar**, **View**, **Edit**, **Delete**, **Atualização em Massa**
   * **Níveis de Aprovação** (1º, 2º), **Desbloquear Documento**
 * Certifique-se de que o nível de acesso não esteja limitado a **Proprietário** ou **Administrador**, a menos que seja apropriado.
 

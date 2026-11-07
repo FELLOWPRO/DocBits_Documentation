@@ -15,15 +15,15 @@ A Correspondência de Pedido de Compra (PO) é um processo crítico para garanti
 Esta página de configuração é usada para definir e gerenciar as regras que determinam _como_ os itens das linhas do PO são correspondidos ao documento de entrada correspondente (Fatura, Confirmação de Pedido).
 
 {% hint style="info" %}
-**Pré-requisito:** as regras de correspondência são usadas apenas quando **PO corresponde ao lado do servidor** está ativado para o tipo de documento (Configurações → Tipos de documentos → Mais configurações → Ordem de compra). Com o interruptor desligado, o DocBits faz a correspondência com seu mecanismo interno (quantidade, preço unitário, número do item, número do pedido de compra) e ignora o conjunto de regras.
+**Pré-requisito:** as regras de correspondência são usadas apenas quando **PO corresponde ao lado do servidor** está ativado para o tipo de documento (Settings → Document Types → More Settings → Ordem de compra). Com o interruptor desligado, o DocBits faz a correspondência com seu mecanismo interno (quantidade, preço unitário, número do item, número do pedido de compra) e ignora o conjunto de regras.
 {% endhint %}
 
 ***
 
 ## Como Acessar
 
-1. Navegue até **Configurações** → **Processamento de documentos** → **Tipos de documentos**, selecione o tipo de documento e clique em **Mais configurações**.
-2. No cartão **Ordem de compra**, ative **PO corresponde ao lado do servidor**.
+1. Navegue até **Settings** → **Document Processing** → **Document Types**, selecione o tipo de documento e clique em **More Settings**.
+2. No cartão **Purchase Order**, ative **PO corresponde ao lado do servidor**.
 3. Clique em **Configurar regras de correspondência de pedidos de compra** ao lado do interruptor.
 
 <figure><img src="../../../../../../.gitbook/assets/doc-type-settings-po-options-pt.png" alt="O cartão Ordem de compra com PO corresponde ao lado do servidor e Configurar regras de correspondência de pedidos de compra"><figcaption><p>O cartão Ordem de compra. <strong>Configurar regras de correspondência de pedidos de compra</strong> fica ao lado de <strong>PO corresponde ao lado do servidor</strong>.</p></figcaption></figure>
@@ -38,7 +38,7 @@ A página tem três botões no topo:
 * **Salvar regras** salva suas alterações no rascunho que você está editando.
 * **Configurar versionamento** abre o histórico de versões. Veja Versões e rascunhos.
 
-Abaixo dos botões, um aviso **Somente leitura** aparece quando você visualiza uma versão publicada: *Esta é uma versão publicada e não pode ser editada. Clone como rascunho para fazer alterações.* Abaixo dele vêm o cartão **Configurações globais (Regras básicas)** e a **Lista de regras**. Selecione uma regra na lista para configurá-la na área **Configuração de regras** abaixo da lista.
+Abaixo dos botões, um aviso **Read Only** aparece quando você visualiza uma versão publicada: *Esta é uma versão publicada e não pode ser editada. Clone como rascunho para fazer alterações.* Abaixo dele vêm o cartão **Configurações globais (Regras básicas)** e a **Lista de regras**. Selecione uma regra na lista para configurá-la na área **Configuração de regras** abaixo da lista.
 
 ***
 
@@ -72,7 +72,7 @@ A Lista de regras exibe todas as regras de correspondência disponíveis e geren
 
 * **Prioridade:** Este campo numérico (ex.: 1, 2, 3) dita a sequência de execução das regras. Regras com número de prioridade menor são tentadas primeiro. Isso permite que os administradores estruturem uma hierarquia, normalmente começando pelas regras mais específicas e rigorosas (ex.: correspondência por número de linha e número da peça) e recuando para regras mais amplas ou menos restritivas.
 * **Nome & Descrição:** Fornece identificação clara e contexto para a regra, explicando os critérios principais usados (ex.: "Regra Padrão Nº 1: Correspondência baseada em Número da Linha, ID do Item e Quantidade").
-* **Ativo:** Um simples interruptor que permite ativar ou desativar instantaneamente a regra sem precisar excluir sua configuração.
+* **Active:** Um simples interruptor que permite ativar ou desativar instantaneamente a regra sem precisar excluir sua configuração.
 
 **Fluxo de Execução:** O sistema realiza a correspondência em sequência cascata. Se uma regra (ex.: Prioridade 1) corresponder com sucesso a um item da linha, o processo para aquele item é interrompido. Se nenhuma correspondência for encontrada, o sistema passa para a próxima regra na sequência de prioridade (ex.: Prioridade 2). Cada execução é registrada no documento; o **Histórico de correspondência** na tela de Correspondência de Pedido de Compra mostra qual regra foi tentada, qual correspondeu e quais foram puladas e por quê.
 

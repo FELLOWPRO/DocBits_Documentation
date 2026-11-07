@@ -10,7 +10,7 @@ Cada tipo de documento tem suas próprias configurações de List of Values (LoV
 
 ### Para configurar a List of Values, navegue até:
 
-Configurações → Processamento de documentos → Tipos de documentos → Fatura → Campos → Configurações de dados mestre → Dados Mestres LOV
+Settings → Document Processing → Document Types → Invoice → Fields → Settings de dados mestre → Dados Mestres LOV
 
 ### **Criando uma Nova Configuração de List of Values**
 

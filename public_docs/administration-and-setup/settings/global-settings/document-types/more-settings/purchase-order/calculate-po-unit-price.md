@@ -6,7 +6,7 @@ Você pode optar por calcular automaticamente o **preço unitário** de cada lin
 
 ## **Passos para ativação**
 
-1.  Navegue até **Configurações** -> **Processamento de documentos** -> **Tipos de Documento**.
+1.  Navegue até **Settings** -> **Document Processing** -> **Tipos de Documento**.
 
 2.  Selecione o tipo de documento desejado e clique em **Mais Configurações**.
 

@@ -8,11 +8,7 @@
 
 {% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/zh.mp4" %}
 
-[带字幕的播放器](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/zh.html) · [字幕](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/zh.vtt) · [画面文字](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/zh.txt) · 1:48 · Full HD
-
 [查看功能介绍和发票示例](../../../feature-videos/advanced-workflow.md)
-
-视频结合了动画卡片和英文 Dev 界面的真实录屏，包含音乐和中文画面文字，没有旁白。测试操作将示例字段 `approval_route` 设置为 `Approval` 或 `Standard`；完整的人工审批流程需要单独配置业务操作。本演示未保存或激活。 汇合节点动画展示的是结果要求，而非执行时序。请测试节点可达性及完整的文档运行；仅通过局部测试不能证明生产流程能够完成。
 
 ## 视频：在 DocBits 中配置发票处理路径
 

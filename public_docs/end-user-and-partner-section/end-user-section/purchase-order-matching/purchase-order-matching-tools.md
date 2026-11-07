@@ -6,9 +6,9 @@ Het PO-matching scherm plaatst het zoeken naar inkooporders en de hulpmiddelen b
 
 ## De juiste inkooporder vinden
 
-Voer een inkoopordernummer in bij **Zoek inkoopordernummer** en selecteer een resultaat. Het filterpictogram naast het veld opent extra zoekopties: trefwoord, leverancier, status, bestelstatus, datumbereik, bestelbedrag, sorteervolgorde en aantal records. Kies **Toepassen** om de filters te gebruiken of **Duidelijk** om ze te wissen. Het filteren van de lijst matcht of exporteert de factuur niet.
+Voer een inkoopordernummer in bij **Search purchase order number** en selecteer een resultaat. Het filterpictogram naast het veld opent de zoekopties over het hele gebied van de inkooporderregels: trefwoord, leverancier, status, bestelstatus, datumbereik, bestelbedrag, sorteervolgorde en aantal records. Kies **Apply** om de filters te gebruiken of **Clear** om ze te wissen. Het filteren van de lijst matcht of exporteert de factuur niet.
 
-<figure><img src="../../../.gitbook/assets/dbdc-601-po-tools-filter-nl.png" alt="Zoekfilters voor inkooporders in het Nederlands: leverancier, statussen, datums, bedrag en sortering"><figcaption><p>Open het filterpictogram naast het zoekveld voor meer zoekopties.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-matching-tools-filter-nl-20261107.png" alt="Zoekfilter voor inkooporders over het gebied van de inkooporderregels, met velden voor trefwoord, leverancier, status, datums, bedrag en sortering"><figcaption><p>Open het filterpictogram naast het zoekveld voor meer zoekopties.</p></figcaption></figure>
 
 ## Acties in de werkbalk
 
@@ -16,16 +16,16 @@ Lees de tooltip van een pictogram voordat u het selecteert. De werkbalk kan het 
 
 | Actie | Wat het doet |
 | --- | --- |
-| **Matchgeschiedenis** (klok) | Opent eerdere matchingactiviteit voor dit document. Er wordt geen nieuwe match gestart. |
+| **Matching history** (clock) | Opent eerdere matchingactiviteit voor dit document. Er wordt geen nieuwe match gestart. |
 | **Help** (?) | Opent de helppagina van PO-matching in een nieuw browsertabblad. |
-| **Sneltoetsen** (toetsenbord) | Toont de sneltoetsen die op dit scherm beschikbaar zijn. Zie [Toetsenbord Sneltoetsen](keyboard-shortcuts.md). |
-| **Trainingsmodus** (tabel) | Schakelt het slepen van inkooporderregels naar de factuurtabel in of uit. Dit is alleen nuttig wanneer het document factuurregelposten heeft; het voorbeeldscherm hieronder heeft die niet. |
-| **Taken / Taak maken** | Opent documenttaken of maakt een taak aan wanneer deze acties beschikbaar zijn voor uw document en rol. Zie [Taken](../tasks.md). |
-| **Automatische boekhouding** | Opent de boekhouding voor dit document wanneer boekhoudgegevens aanwezig zijn. |
-| **Automatische PO-match** (toverstaf) | Voert automatische matching uit. Als de organisatie automatische export heeft ingeschakeld en de resulterende match aan de voorwaarden voldoet, kan deze actie ook exporteren. Controleer het document voordat u deze gebruikt. Zie [Automatische Afstemming van Inkoopordergegevens](automatic-purchase-order-data-matching.md). |
-| **Opslaan** (diskette) | Slaat de PO-matchingwijzigingen op in het document. |
-| **Gegevens synchroniseren** | Alleen beschikbaar bij de overeenkomstige instelling voor inkooporderhoeveelheid; ververst geselecteerde inkoopordergegevens uit het gekoppelde systeem. Gebruik het weergegeven inkoopordernummer en de beschikbare synchronisatieopties. |
-| **Exporteren** | Exporteert het document na het matchen. Als uw organisatie meerdere exportdoelen biedt, gebruikt u de pijl naast **Exporteren** om er een te selecteren. |
+| **Keyboard shortcuts** (keyboard) | Toont de sneltoetsen die op dit scherm beschikbaar zijn. Zie [Toetsenbord Sneltoetsen](keyboard-shortcuts.md). |
+| **Training mode** (table) | Schakelt het slepen van inkooporderregels naar de factuurtabel in of uit. Dit is alleen nuttig wanneer het document factuurregelposten heeft; het voorbeeldscherm hieronder heeft die niet. |
+| **Tasks / Create task** | Opent documenttaken of maakt een taak aan wanneer deze acties beschikbaar zijn voor uw document en rol. Zie [Taken](../tasks.md). |
+| **Auto Accounting** | Opent de boekhouding voor dit document wanneer boekhoudgegevens aanwezig zijn. |
+| **Auto PO match** (wand) | Voert automatische matching uit. Als de organisatie automatische export heeft ingeschakeld en de resulterende match aan de voorwaarden voldoet, kan deze actie ook exporteren. Controleer het document voordat u deze gebruikt. Zie [Automatische Afstemming van Inkoopordergegevens](automatic-purchase-order-data-matching.md). |
+| **Save** (disk) | Slaat de PO-matchingwijzigingen op in het document. |
+| **Sync Data** | Alleen beschikbaar bij de overeenkomstige instelling voor inkooporderhoeveelheid; ververst geselecteerde inkoopordergegevens uit het gekoppelde systeem. Gebruik het weergegeven inkoopordernummer en de beschikbare synchronisatieopties. |
+| **Export** | Exporteert het document na het matchen. Als uw organisatie meerdere exportdoelen biedt, gebruikt u de pijl naast **Export** om er een te selecteren. |
 
 Het tabblad van de inkooporder heeft ook een vernieuwingspictogram om die inkooporder opnieuw te laden. Het pictogram voor kolominstellingen rechts van de tabelkop bepaalt welke inkoopordekolommen zichtbaar zijn. Deze wijzigen de weergave van de inkoopordertabel, niet de geëxtraheerde waarden van de factuur.
 

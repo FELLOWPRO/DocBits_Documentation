@@ -4,6 +4,8 @@
 
 * [DocBits](README.md)
   * [DocBits 的主要功能](overview-and-basics/readme/key-features-of-docbits.md)
+* [功能视频](feature-videos/README.md)
+  * [DocBits Advanced Workflow](feature-videos/advanced-workflow.md)
 * [关于我们的培训视频](about-training-videos.md)
 * [架构](overview-and-basics/architecture/README.md)
   * [DocBits Infor 本地部署客户](overview-and-basics/architecture/docbits-infor-on-premise-customer.md)

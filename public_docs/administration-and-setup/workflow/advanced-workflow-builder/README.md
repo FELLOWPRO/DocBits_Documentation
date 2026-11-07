@@ -2,6 +2,18 @@
 
 **高级工作流**构建器是一种节点图编辑器，适用于需要分支、并行路径和流程控制的工作流，可实现标准构建器中线性的 When/And/Then 流程无法满足的需求。你可以在画布上排列节点并将它们连接起来，以定义执行流程。
 
+## 功能概览：DocBits Advanced Workflow
+
+先观看这段 1 分 48 秒的功能概览，再按照下面的详细说明进行配置。
+
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/zh.mp4" %}
+
+[带字幕的播放器](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/zh.html) · [字幕](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/zh.vtt) · [画面文字](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/zh.txt) · 1:48 · Full HD
+
+[查看功能介绍和发票示例](../../../feature-videos/advanced-workflow.md)
+
+视频结合了动画卡片和英文 Dev 界面的真实录屏，包含音乐和中文画面文字，没有旁白。测试操作将示例字段 `approval_route` 设置为 `Approval` 或 `Standard`；完整的人工审批流程需要单独配置业务操作。本演示未保存或激活。 汇合节点动画展示的是结果要求，而非执行时序。请测试节点可达性及完整的文档运行；仅通过局部测试不能证明生产流程能够完成。
+
 ## 视频：在 DocBits 中配置发票处理路径
 
 认识陈伟，并在真实的中文 DocBits 界面中跟随他的讲解。他先检查工作流仪表板、工作流列表和许可证，然后打开未保存的设计器草稿。接下来，他逐步命名工作流、配置发票金额条件和两个操作、排列卡片，并连接两条处理路径，最后演示如何使用文档或自定义数据准备测试。演示账号没有 Advanced Workflow 订阅，因此验证被阻止；草稿保持未保存、未激活状态。

@@ -20,7 +20,7 @@ Les règles sont définies par **type de document** et s'exécutent sur chaque d
 
 | Exigence métier | Sans règles personnalisées | Avec une règle personnalisée |
 | --- | --- | --- |
-| Les factures allemandes de plus de 250 EUR doivent indiquer le numéro fiscal du fournisseur | un script, ou les utilisateurs doivent y penser | **Obligatoire** sur Supplier Tax ID, *applies when* l'origine est DE et le montant total est supérieur à 250 |
+| Les factures allemandes de plus de 250 EUR doivent indiquer le numéro fiscal du fournisseur | un script, ou les utilisateurs doivent y penser | **Required** sur Supplier Tax ID, *applies when* l'origine est DE et le montant total est supérieur à 250 |
 | Les numéros de facture d'un fournisseur ressemblent toujours à `INV-123456` | les fautes de frappe arrivent jusqu'à l'ERP | **Modèle** `^INV-\d{6}$` sur Invoice Number pour ce fournisseur |
 | Chaque ligne d'article doit avoir une quantité supérieure à zéro | des lignes avec une quantité de 0 sont exportées | **Gamme** (minimum 0.01) sur la colonne Quantity |
 | La date d'échéance ne doit pas précéder la date de facture | exécutions de paiement erronées | **Comparer les champs** : Due Date égale ou postérieure à Invoice Date |
@@ -32,14 +32,14 @@ Les règles sont définies par **type de document** et s'exécutent sur chaque d
 
 Les règles de validation personnalisées s'activent **par type de document**. Il n'existe pas de commutateur à l'échelle de l'organisation.
 
-1. Accédez à **Paramètres → Traitement des Documents → Types de documents**.
-2. Sur la carte du type de document, cliquez sur l'icône **Paramètres** (engrenage).
+1. Accédez à **Settings → Document Processing → Document Types**.
+2. Sur la carte du type de document, cliquez sur l'icône **Settings** (engrenage).
 3. Ouvrez la section **Règles de validation personnalisées** et activez le bouton.
 4. Cliquez sur **Gérer les règles de validation** pour ouvrir la liste des règles.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="Les boutons de règles dans les paramètres supplémentaires d'un type de document"><figcaption><p>Les boutons pour Manage Layouts, Custom Validation Rules et Transformation Rules</p></figcaption></figure>
 
-Désormais, la carte du type de document affiche aussi un lien **Règles de validation**.
+Désormais, la carte du type de document affiche aussi un lien **Validation Rules**.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-card-links.png" alt="La carte du type de document avec le lien Validation Rules"><figcaption><p>Les liens sur la carte du type de document</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Désormais, la carte du type de document affiche aussi un lien **Règles de vali
 
 ## La liste des règles
 
-**Types de documents → (type de document) → Règles de validation** répertorie toutes les règles du type de document.
+**Document Types → (type de document) → Validation Rules** répertorie toutes les règles du type de document.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-fr.png" alt="Gestion des règles de validation avec les noms configurés masqués."><figcaption><p>Gestion des règles de validation avec les noms configurés masqués.</p></figcaption></figure>
 
@@ -59,15 +59,15 @@ Chaque carte affiche le nom et la description de la règle, ainsi que les badges
 
 | Source | De quoi s'agit-il | Ce que vous pouvez faire |
 | --- | --- | --- |
-| **Valeurs par défaut du système** | Une règle livrée avec DocBits pour toutes les organisations. | Elle ne peut pas être modifiée directement : le générateur affiche « This is a system default rule and cannot be edited. » Cliquez sur **Personnaliser** pour créer votre propre copie modifiable, ou désactivez-la pour l'arrêter dans votre organisation. |
+| **Valeurs par défaut du système** | Une règle livrée avec DocBits pour toutes les organisations. | Elle ne peut pas être modifiée directement : le générateur affiche « This is a system default rule and cannot be edited. » Cliquez sur **Customize** pour créer votre propre copie modifiable, ou désactivez-la pour l'arrêter dans votre organisation. |
 | **Personnalisé** | Une règle système par défaut que votre organisation a modifiée ou désactivée. | Modifiez-la comme votre propre règle. **Réinitialiser par défaut** supprime votre copie et rétablit l'original. |
-| **Coutume** | Une règle créée par votre organisation. | Modifier, **Dupliquer**, **Supprimer**. |
+| **Coutume** | Une règle créée par votre organisation. | Modifier, **Duplicate**, **Delete**. |
 
 Les modifications apportées aux règles système par défaut n'affectent jamais les autres organisations.
 
 ## Créer une règle
 
-Cliquez sur **Nouvelle règle**. Le générateur comporte trois étapes. **Règle de test** et **Enregistrer** se trouvent en haut à droite.
+Cliquez sur **New rule**. Le générateur comporte trois étapes. **Test rule** et **Save** se trouvent en haut à droite.
 
 ### Étape 1 : Nom et portée (Name & scope)
 
@@ -77,7 +77,7 @@ Cliquez sur **Nouvelle règle**. Le générateur comporte trois étapes. **Règl
 | --- | --- |
 | **Niveau de règle** | Ce que la règle examine et où l'erreur est affichée. Voir [Niveaux de règle](#niveaux-de-regle). |
 | **Gravité** | **Erreur** marque le champ comme invalide et bloque la validation. **Avertissement** affiche le message mais ne bloque jamais. |
-| **Nom de la règle** | Affiché dans la liste, dans les journaux et aux administrateurs. Faites-en une description de la règle (« Numéro fiscal du fournisseur obligatoire pour les factures allemandes »). |
+| **Rule Name** | Affiché dans la liste, dans les journaux et aux administrateurs. Faites-en une description de la règle (« Numéro fiscal du fournisseur obligatoire pour les factures allemandes »). |
 | **Clé de règle** | Une clé technique générée à partir du nom. Elle reste identique si vous renommez la règle par la suite. Cliquez sur le crayon pour choisir votre propre clé avant le premier enregistrement ; ensuite, elle est figée. |
 | **Description** | Explication facultative pour les autres administrateurs. |
 | **Nom de la table** | *Table line uniquement.* Le tableau dont les lignes sont contrôlées, par exemple `INVOICE_TABLE`. |
@@ -187,7 +187,7 @@ La valeur doit être l'une des valeurs que vous saisissez, **une valeur par lign
 Comme *Allowed values*, mais les valeurs proviennent d'une **Liste des valeurs** partagée, gérée sous **Settings › List of Values**. Choisissez la liste au lieu de la ressaisir ; lorsque la liste change, la règle utilise les nouvelles valeurs (après un court délai de mise en cache). Seules les valeurs des entrées de la liste comptent, pas leurs libellés.
 
 {% hint style="info" %}
-À l'exception de **Obligatoire**, chaque contrôle **réussit lorsque la valeur est vide**. Une règle Pattern sur le Purchase Order ne se plaint pas des factures sans commande d'achat. Si une valeur vide pose aussi problème, ajoutez une règle Required, ou limitez la règle avec *Applies when … is not empty*.
+À l'exception de **Required**, chaque contrôle **réussit lorsque la valeur est vide**. Une règle Pattern sur le Purchase Order ne se plaint pas des factures sans commande d'achat. Si une valeur vide pose aussi problème, ajoutez une règle Required, ou limitez la règle avec *Applies when … is not empty*.
 {% endhint %}
 
 #### Message d'erreur et code d'erreur
@@ -197,7 +197,7 @@ Comme *Allowed values*, mais les valeurs proviennent d'une **Liste des valeurs**
 
 ## Tester la règle
 
-Cliquez sur **Règle de test** pour exécuter la version actuelle de la règle (enregistrée ou non) sur un document. Saisissez un **ID du document**, ou passez à **Par document JSON** et collez des données extraites. **Rien n'est enregistré**, et le document n'est pas modifié.
+Cliquez sur **Test rule** pour exécuter la version actuelle de la règle (enregistrée ou non) sur un document. Saisissez un **ID du document**, ou passez à **Par document JSON** et collez des données extraites. **Rien n'est enregistré**, et le document n'est pas modifié.
 
 Le résultat correspond à l'un des trois cas suivants :
 
@@ -238,10 +238,10 @@ La même page affiche aussi les journaux des règles de transformation et de sé
 
 ## Recettes
 
-Copiez ces règles comme point de départ. Les clés de champs et de colonnes sont celles du type de document standard **Facture** ; adaptez-les à vos types de documents.
+Copiez ces règles comme point de départ. Les clés de champs et de colonnes sont celles du type de document standard **Invoice** ; adaptez-les à vos types de documents.
 
 **1. Numéro fiscal du fournisseur pour les factures allemandes supérieures à 250 EUR**
-Header field · Error · rattaché à *Supplier Tax ID* · Applies when **Tous** : *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Contrôle **Obligatoire** · Message « Le numéro fiscal du fournisseur est manquant. Les factures allemandes de plus de 250 EUR doivent l'indiquer. » · Code `REQUIRED_CONDITIONAL`.
+Header field · Error · rattaché à *Supplier Tax ID* · Applies when **Tous** : *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Contrôle **Required** · Message « Le numéro fiscal du fournisseur est manquant. Les factures allemandes de plus de 250 EUR doivent l'indiquer. » · Code `REQUIRED_CONDITIONAL`.
 
 **2. Les totaux d'en-tête s'additionnent** (remplace le contrôle intégré)
 Header field · Error · rattaché à *Total Amount* · toujours · **Formule** `header.total_amount == header.total_net_amount + header.total_tax_amount`, tolérance `0.01` · Message « Le total {actual} ne correspond pas au net plus la taxe ({expected}). »
@@ -268,7 +268,7 @@ Header field · Error · *Invoice Date* · toujours · **Comparer les champs** I
 Header field · **Avertissement** · *Currency* · toujours · **Liste des valeurs** *approved_currencies* · Code `VALUE_NOT_ALLOWED`.
 
 **10. Commande d'achat obligatoire au-dessus de 5 000**
-Champ d'en-tête · Erreur · *Bon de commande* · S'applique lorsque *Montant total* supérieur à *5000* · **Obligatoire**.
+Champ d'en-tête · Erreur · *Bon de commande* · S'applique lorsque *Montant total* supérieur à *5000* · **Required**.
 
 ## Bonnes pratiques
 
@@ -282,14 +282,14 @@ Champ d'en-tête · Erreur · *Bon de commande* · S'applique lorsque *Montant t
 
 | Symptôme | Ce qu'il faut vérifier |
 | --- | --- |
-| La règle ne lève jamais d'erreur | La fonctionnalité est-elle activée pour le type de document et la règle **Actif** ? Exécutez **Règle de test** sur le document : « skipped » signifie que *Applies when* était faux. |
-| Un champ vide n'est pas signalé | Seul **Obligatoire** signale les valeurs vides. Ajoutez une règle Required. |
+| La règle ne lève jamais d'erreur | La fonctionnalité est-elle activée pour le type de document et la règle **Active** ? Exécutez **Test rule** sur le document : « skipped » signifie que *Applies when* était faux. |
+| Un champ vide n'est pas signalé | Seul **Required** signale les valeurs vides. Ajoutez une règle Required. |
 | Les contrôles de totaux intégrés ont disparu | Comportement attendu tant que les règles personnalisées sont activées. Recréez-les sous forme de règles Formula (recettes 2 et 3). |
 | Une règle modifiée n'a aucun effet sur un document | Les documents sont recontrôlés à leur prochain enregistrement. Enregistrez ou retraitez le document. |
 | Un Pattern correspond à des valeurs qu'il ne devrait pas | Les motifs recherchent à l'intérieur de la valeur. Ancrez avec `^` et `$`. |
 | Une seule de deux erreurs est affichée sur un champ | Un champ n'affiche que la première règle en échec. Ajustez les priorités ou rattachez l'une des règles à un autre champ. |
 | Les colonnes de tableau manquent dans *Applies when* | Elles ne sont disponibles qu'au niveau **Ligne du tableau**. |
-| La règle système par défaut ne peut pas être modifiée | Cliquez sur **Personnaliser** pour créer votre propre copie. |
+| La règle système par défaut ne peut pas être modifiée | Cliquez sur **Customize** pour créer votre propre copie. |
 
 ## Voir aussi
 

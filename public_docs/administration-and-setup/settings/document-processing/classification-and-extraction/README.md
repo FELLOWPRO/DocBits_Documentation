@@ -23,7 +23,7 @@ Le guide de diagnostic [Quel chemin d’extraction a été utilisé ?](../../..
 
 ## Vue d'ensemble
 
-Dans les paramètres **Classification et extraction**, vous pouvez :
+Dans les paramètres **Classification and Extraction**, vous pouvez :
 
 * Activer la **division des documents** sur la base des codes QR
 * Configurer le **formatage des montants**
@@ -36,8 +36,8 @@ Cette page décrit en détail tous les paramètres disponibles.
 
 ## **Accéder aux paramètres de classification et d'extraction**
 
-Pour accéder aux paramètres **Classification et extraction**, allez dans :\
-**Paramètres → Traitement des documents → Classification et extraction**
+Pour accéder aux paramètres **Classification and Extraction**, allez dans :\
+**Settings → Document Processing → Classification and Extraction**
 
 
 ## Division des documents
@@ -83,7 +83,7 @@ Dans la section **Formatage des montants**, vous disposez de deux options :
 {% hint style="info" %}
 **Prérequis pour une extraction de tableaux fonctionnelle**
 
-* Le type de document dispose de **colonnes de tableau** (Paramètres → Traitement des Documents → Types de documents → [Colonnes de tableau](../../global-settings/document-types/table-columns/README.md)). Sans colonnes, il n'y a rien dans quoi extraire.
+* Le type de document dispose de **colonnes de tableau** (Settings → Document Processing → Document Types → [Colonnes de tableau](../../global-settings/document-types/table-columns/README.md)). Sans colonnes, il n'y a rien dans quoi extraire.
 * **Extraction de tableaux** ou **Extraction de tableaux par IA** est activée ci-dessous, pour toute l'organisation.
 * Le document contient du texte lisible : l'OCR a été exécuté, ou l'E-Text est utilisé pour les PDF nativement numériques ([Paramètres de l'OCR](../ocr-settings.md)).
 * L'entraînement et les modèles d'IA sont définis **par fournisseur**. Un tableau entraîné ne s'applique qu'aux documents du fournisseur sur lequel il a été entraîné.
@@ -149,8 +149,8 @@ Chaque option de cette section est stockée sous forme de préférence d'organis
 | Enregistrer les règles d'extraction (administrateurs uniquement) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
 | Modèle d'IA | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Version de l'extraction de tableaux (boîte de dialogue de confirmation) | `TBL_EXT_VERSION` | chaîne de version |
-| Paramètres de l'OCR → Utiliser les données IA pour les tableaux si disponibles | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
-| Paramètres de l'OCR → Utiliser l'E-Text si disponible | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+| OCR Settings → Utiliser les données IA pour les tableaux si disponibles | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR Settings → Utiliser l'E-Text si disponible | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
 
 Remarques :
 
@@ -188,7 +188,7 @@ Pour créer une nouvelle règle :
    *   **Sous-type de document** _(facultatif)_ : indique un sous-type pour une classification plus fine.
 
        
-3.  Cliquez sur **Enregistrer** pour enregistrer votre règle de classification.
+3.  Cliquez sur **Save** pour enregistrer votre règle de classification.
 
     
 
@@ -199,11 +199,11 @@ Pour modifier une règle existante :
 1.  Cliquez sur les trois points dans la colonne **Actions**.
 
     
-2.  Sélectionnez **Modifier**.
+2.  Sélectionnez **Edit**.
 
     
 3. Apportez les modifications souhaitées.
-4.  Cliquez sur **Enregistrer** pour appliquer les mises à jour.
+4.  Cliquez sur **Save** pour appliquer les mises à jour.
 
     
 
@@ -214,7 +214,7 @@ Pour supprimer une règle :
 1.  Cliquez sur les trois points dans la colonne **Actions**.
 
     
-2.  Sélectionnez **Supprimer**.
+2.  Sélectionnez **Delete**.
 
     
 
@@ -260,7 +260,7 @@ Pour modifier un modèle :
 2. Mettez à jour les champs disponibles :
    * **Modèle suivant** : sélectionnez le modèle qui doit traiter la sortie du modèle actuel.
    * **Type de document** : choisissez le type de document dans lequel le modèle doit classer l'entrée.
-3.  Cliquez sur **Enregistrer** pour appliquer vos modifications.
+3.  Cliquez sur **Save** pour appliquer vos modifications.
 
     
 

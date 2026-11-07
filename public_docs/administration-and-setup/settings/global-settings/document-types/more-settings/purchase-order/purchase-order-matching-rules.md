@@ -15,14 +15,14 @@ La correspondance des Bons de Commande (BC) est un processus crucial pour garant
 Cette page de configuration est utilisée pour définir et gérer les règles qui déterminent _comment_ les lignes de BC sont appariées au document entrant correspondant (Facture, Confirmation de commande).
 
 {% hint style="info" %}
-**Prérequis :** les règles de correspondance ne sont utilisées que lorsque **Correspondance des commandes côté serveur** est activé pour le type de document (Paramètres → Types de documents → Plus de paramètres → Bon de commande). Lorsque ce paramètre est désactivé, DocBits utilise son moteur de correspondance intégré (quantité, prix unitaire, numéro d'article, numéro de bon de commande) et ignore l'ensemble des règles.
+**Prérequis :** les règles de correspondance ne sont utilisées que lorsque **Correspondance des commandes côté serveur** est activé pour le type de document (Settings → Document Types → More Settings → Bon de commande). Lorsque ce paramètre est désactivé, DocBits utilise son moteur de correspondance intégré (quantité, prix unitaire, numéro d'article, numéro de bon de commande) et ignore l'ensemble des règles.
 {% endhint %}
 
 ***
 
 ## Comment y accéder
 
-1. Naviguez vers **Paramètres** → **Traitement des Documents** → **Types de documents**, sélectionnez le type de document et cliquez sur **Plus de paramètres**.
+1. Naviguez vers **Settings** → **Document Processing** → **Document Types**, sélectionnez le type de document et cliquez sur **More Settings**.
 2. Dans la carte **Bon de commande**, activez **Correspondance des commandes côté serveur**.
 3. Cliquez sur **Configurer les règles de correspondance des commandes d'achat** à côté de l'interrupteur.
 
@@ -38,7 +38,7 @@ La page comporte trois boutons en haut :
 * **Règles de sauvegarde** enregistre vos modifications dans le brouillon que vous éditez.
 * **Configurer le versionnage** ouvre l'historique des versions. Voir Versions et brouillons ci-dessous.
 
-Sous les boutons, un avis **Lecture seule** apparaît lorsque vous consultez une version publiée : *Ceci est une version publiée et ne peut être modifiée. Clonez-la en tant que brouillon pour y apporter des modifications.* Viennent ensuite la carte **Paramètres globaux (Règles de base)** et la **Liste des règles**. Sélectionnez une règle dans la liste pour la configurer dans la zone **Configuration des règles** sous la liste.
+Sous les boutons, un avis **Read Only** apparaît lorsque vous consultez une version publiée : *Ceci est une version publiée et ne peut être modifiée. Clonez-la en tant que brouillon pour y apporter des modifications.* Viennent ensuite la carte **Paramètres globaux (Règles de base)** et la **Liste des règles**. Sélectionnez une règle dans la liste pour la configurer dans la zone **Configuration des règles** sous la liste.
 
 ***
 
@@ -72,7 +72,7 @@ La liste des règles affiche toutes les règles de correspondance disponibles et
 
 * **Priorité :** Ce champ numérique (par ex., 1, 2, 3) dicte la séquence d'exécution des règles. Les règles avec un numéro de priorité plus bas sont tentées en premier. Cela permet aux administrateurs de structurer une hiérarchie, commençant typiquement par les règles les plus spécifiques et strictes (par ex., correspondance à la fois par numéro de ligne et numéro de pièce) et en revenant à des règles plus larges ou moins restrictives.
 * **Nom & Description :** Fournit une identification claire et un contexte pour la règle, expliquant les critères principaux utilisés (par ex., "Règle standard n° 1 : Correspondance basée sur le numéro de ligne, l'ID de pièce et la quantité").
-* **Actif :** Un simple interrupteur qui permet d'activer ou de désactiver instantanément la règle sans avoir besoin de supprimer sa configuration.
+* **Active :** Un simple interrupteur qui permet d'activer ou de désactiver instantanément la règle sans avoir besoin de supprimer sa configuration.
 
 **Flux d'exécution :** Le système effectue la correspondance en séquence en cascade. Si une règle (par ex., priorité 1) correspond avec succès à une ligne, le processus pour cet article s'arrête. Si aucune correspondance n'est trouvée, le système passe à la règle suivante dans la séquence de priorité (par ex., priorité 2). Chaque exécution est enregistrée sur le document ; l'**historique des correspondances** dans l'écran de correspondance des bons de commande montre quelle règle a été testée, laquelle a correspondu, et lesquelles ont été ignorées ainsi que la raison.
 

@@ -4,7 +4,7 @@ Les cases contrôlent les valeurs obligatoires, la modification et la visibilit�
 
 Tout, à l'exception du titre, se modifie directement dans la liste ; il n'y a pas de boîte de dialogue de modification.
 
-**Où :** Paramètres → Traitement des Documents → Types de documents → Colonnes du tableau
+**Où :** Settings → Document Processing → Document Types → Table Columns
 
 ## Activer ou désactiver une option
 
@@ -53,12 +53,12 @@ Ouvrez les [colonnes de tableau](README.md) du bon type de document et du bon ta
 
 | Choix actuel | Effet sur le schéma de base |
 | --- | --- |
-| **Par défaut · demandé** ou **Par défaut · non demandé** | Applique la sélection DocBits pour ce type et ce nom de colonne. Par défaut ne signifie ni toujours activé ni toujours désactivé. |
-| **Oui · demandé** | Demande explicitement cette colonne configurée à l'IA. |
-| **Non · non demandé** | L'exclut du schéma de base, même si elle est normalement demandée. |
+| **Default · demandé** ou **Default · non demandé** | Applique la sélection DocBits pour ce type et ce nom de colonne. Par défaut ne signifie ni toujours activé ni toujours désactivé. |
+| **Yes · demandé** | Demande explicitement cette colonne configurée à l'IA. |
+| **No · non demandé** | L'exclut du schéma de base, même si elle est normalement demandée. |
 
-Revenir à **Par défaut** supprime le choix explicite. Une nouvelle colonne personnalisée n'appartient normalement pas à la sélection IA par défaut : choisissez **Oui** pour la demander. Les colonnes IA par défaut ne correspondent pas à toutes les colonnes fournies. Vérifiez l'effet affiché et l'aperçu.
+Revenir à **Default** supprime le choix explicite. Une nouvelle colonne personnalisée n'appartient normalement pas à la sélection IA par défaut : choisissez **Yes** pour la demander. Les colonnes IA par défaut ne correspondent pas à toutes les colonnes fournies. Vérifiez l'effet affiché et l'aperçu.
 
-**Obligatoire**, **Lecture seule** et **Masqué** concernent les contrôles de complétude, la modification et la visibilité ; ils ne remplacent pas le choix IA. **Non** ne supprime ni la colonne ni ses valeurs et n'empêche pas des règles, scripts ou autres sources de la renseigner. L'apprentissage fournisseur et les tags IA peuvent étendre la demande effective : résolvez aussi leurs contradictions. Le commutateur ne remplace pas automatiquement un résultat purement issu de règles.
+**Required**, **Read Only** et **Hidden** concernent les contrôles de complétude, la modification et la visibilité ; ils ne remplacent pas le choix IA. **No** ne supprime ni la colonne ni ses valeurs et n'empêche pas des règles, scripts ou autres sources de la renseigner. L'apprentissage fournisseur et les tags IA peuvent étendre la demande effective : résolvez aussi leurs contradictions. Le commutateur ne remplace pas automatiquement un résultat purement issu de règles.
 
 [Structured Output pour les tableaux](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

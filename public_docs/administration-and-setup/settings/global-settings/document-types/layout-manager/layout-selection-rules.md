@@ -26,7 +26,7 @@ L'origine reste disponible — comme une condition parmi d'autres. Une règle pe
 
 Les mises en page basées sur des règles s'activent **par type de document** par un **administrateur de l'organisation**.
 
-1. Allez dans **Paramètres → Traitement des Documents → Types de documents**.
+1. Allez dans **Settings → Document Processing → Document Types**.
 2. Cliquez sur l'icône **paramètres** (engrenage) sur la carte du type de document.
 3. Ouvrez **Gérer les mises en page** et activez l'interrupteur.
 
@@ -99,14 +99,14 @@ La mise en page est toujours choisie à partir des valeurs **actuelles** du docu
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-fr.png" alt="Règles de sélection avec les noms configurés masqués. Le nom d’écran « Field validation » reste en anglais dans le produit."><figcaption><p>Règles de sélection avec les noms configurés masqués. Le nom d’écran « Field validation » reste en anglais dans le produit.</p></figcaption></figure>
 
-Chaque ligne affiche la **priorité** (la première ligne est marquée **FIRST**), le **nom et la clé de la règle** avec ses **conditions**, la **mise en page cible**, le badge de **source** et un interrupteur **Actif**.
+Chaque ligne affiche la **priorité** (la première ligne est marquée **FIRST**), le **nom et la clé de la règle** avec ses **conditions**, la **mise en page cible**, le badge de **source** et un interrupteur **Active**.
 
 | Tâche | Comment |
 | --- | --- |
-| Créer une règle | **Nouvelle règle** |
+| Créer une règle | **New rule** |
 | Modifier une règle | Cliquez sur la ligne |
 | Changer l'ordre | Faites glisser la poignée à gauche d'une ligne vers le haut ou le bas. Le nouvel ordre est enregistré immédiatement. |
-| Désactiver une règle | Interrupteur **Actif**. Les règles inactives sont ignorées. |
+| Désactiver une règle | Interrupteur **Active**. Les règles inactives sont ignorées. |
 | Dupliquer ou supprimer | Menu **⋮** de la ligne |
 | Trouver une règle | **Rechercher des règles…** |
 
@@ -122,7 +122,7 @@ Pour utiliser une autre mise en page de repli, créez une règle **sans aucune c
 
 ## Créer une règle
 
-Cliquez sur **Nouvelle règle** dans l'onglet Règles de sélection de l'écran que vous souhaitez modifier.
+Cliquez sur **New rule** dans l'onglet Règles de sélection de l'écran que vous souhaitez modifier.
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-fr.png" alt="Portée, conditions et mise en page cible de la règle. Le nom d’écran « Field validation » reste en anglais dans le produit."><figcaption><p>Portée, conditions et mise en page cible de la règle. Le nom d’écran « Field validation » reste en anglais dans le produit.</p></figcaption></figure>
 
@@ -132,9 +132,9 @@ La phrase en haut résume la règle au fur et à mesure de sa construction — �
 
 | Paramètre | Ce qu'il fait |
 | --- | --- |
-| **Nom de la règle** | Affiché dans la liste des règles. Décrivez le cas métier : « Factures Behaelterbau », « Factures électroniques », « Approbation montant élevé ». |
-| **Clé de la règle** | Générée à partir du nom ; reste identique si vous renommez la règle. |
-| **Type de document** / **Type de mise en page** | Le type de document et l'écran concernés par la règle. Repris de l'endroit où vous avez cliqué sur **Nouvelle règle**. |
+| **Rule Name** | Affiché dans la liste des règles. Décrivez le cas métier : « Factures Behaelterbau », « Factures électroniques », « Approbation montant élevé ». |
+| **Rule key** | Générée à partir du nom ; reste identique si vous renommez la règle. |
+| **Type de document** / **Type de mise en page** | Le type de document et l'écran concernés par la règle. Repris de l'endroit où vous avez cliqué sur **New rule**. |
 | **Priorité** | Les nombres les plus bas sont vérifiés en premier. Laissez des écarts (5, 10, 20 …) pour pouvoir insérer des règles plus tard. |
 
 ### Étape 2 — S'applique quand
@@ -209,7 +209,7 @@ Cliquez sur **Créer la règle** (ou **Enregistrer la règle** lors d'une modifi
 | Symptôme | Ce qu'il faut vérifier |
 | --- | --- |
 | Un document obtient la mauvaise mise en page | Une règle précédente correspond en premier. Examinez les règles au-dessus, ou le **Coup prioritaire** dans l'aperçu. |
-| La mise en page par défaut est utilisée alors qu'une règle devrait correspondre | La règle est-elle **Actif** ? La condition correspond-elle exactement à la valeur (casse, espaces) ? La règle est-elle sur le bon onglet d'**écran** ? |
+| La mise en page par défaut est utilisée alors qu'une règle devrait correspondre | La règle est-elle **Active** ? La condition correspond-elle exactement à la valeur (casse, espaces) ? La règle est-elle sur le bon onglet d'**écran** ? |
 | La mise en page change pendant le travail d'un utilisateur | Un champ de **watched_fields** a été modifié. Basez la règle sur un champ plus stable. |
 | Une mise en page ne peut pas être supprimée | Une règle y renvoie encore. Redirigez ou supprimez d'abord cette règle. |
 | Aucune mise en page n'est affichée | Aucune règle n'a correspondu, il n'y a pas de mise en page par défaut et aucune mise en page basée sur l'origine n'existe pour cet écran. Ajoutez une règle sans condition comme règle fourre-tout. |

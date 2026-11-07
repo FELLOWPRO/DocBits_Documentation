@@ -11,12 +11,12 @@ L'assistant est **désactivé par défaut**. Cette page montre où l'activer et 
 ## Qui peut l'utiliser
 
 * L'**administrateur de l'organisation** active ou désactive l'assistant pour toute l'organisation.
-* Une fois activé, chaque administrateur qui peut ouvrir les **Paramètres** peut afficher ou masquer le panneau pour lui-même.
+* Une fois activé, chaque administrateur qui peut ouvrir les **Settings** peut afficher ou masquer le panneau pour lui-même.
 * Les modifications (appliquer une recommandation, désactiver ou supprimer une connexion d'importation, créer une règle) sont réservées aux **administrateurs de l'organisation**. Les autres utilisateurs reçoivent le message *Réservé aux administrateurs.* (Available to administrators only.)
 
 ## L'activer
 
-1. Allez dans **Paramètres → Organisation et Accès → Informations sur l'entreprise**. L'en-tête de la page affiche **Paramètres de l'entreprise** (Company Settings).
+1. Allez dans **Settings → Organization & Access → Company Information**. L'en-tête de la page affiche **Company Settings**.
 2. Ouvrez la section **Assistants**.
 3. Activez **Activer l'assistant de paramètres** (Enable the settings assistant).
 
@@ -32,7 +32,7 @@ L'**Assistant de validation** de la même section est une fonction différente. 
 
 Sur chaque page de la zone Paramètres, vous trouvez un petit **bouton en forme de lampe de génie** à côté du champ de recherche des paramètres. Cliquez dessus pour **afficher** ou **masquer** l'assistant.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-fr.png" alt="La page Informations sur l'entreprise dans Paramètres avec la navigation des paramètres à gauche, la page au milieu et le panneau de l'Assistant de paramètres à droite"><figcaption><p>L'assistant se trouve sur le <strong>côté droit</strong> de chaque page Paramètres : la navigation à gauche, la page au milieu, l'assistant à côté. Ici sur <strong>Paramètres de l'entreprise → Informations sur l'entreprise</strong>. Le bouton pour l'afficher ou le masquer est l'icône de lampe à côté de <strong>Rechercher dans les paramètres</strong> (Search Settings) en haut de la navigation.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-fr.png" alt="La page Company Information dans Settings avec la navigation des paramètres à gauche, la page au milieu et le panneau de l'Assistant de paramètres à droite"><figcaption><p>L'assistant se trouve sur le <strong>côté droit</strong> de chaque page Settings : la navigation à gauche, la page au milieu, l'assistant à côté. Ici sur <strong>Company Settings → Company Information</strong>. Le bouton pour l'afficher ou le masquer est l'icône de lampe à côté de <strong>Search Settings</strong> en haut de la navigation.</p></figcaption></figure>
 
 * Le panneau mémorise votre choix par utilisateur, il reste donc ouvert la prochaine fois que vous revenez.
 * Sur un grand écran (1 280 pixels et plus), il se place à côté de la page. Vous pouvez faire glisser son bord pour modifier la largeur.
@@ -48,7 +48,7 @@ Sur chaque page de la zone Paramètres, vous trouvez un petit **bouton en forme 
 
 | Problème | Cause et solution |
 | --- | --- |
-| Il n'y a pas de bouton en forme de lampe de génie dans la zone Paramètres | L'interrupteur de l'organisation est désactivé. Un administrateur de l'organisation l'active sous **Informations sur l'entreprise → Assistants** |
+| Il n'y a pas de bouton en forme de lampe de génie dans la zone Settings | L'interrupteur de l'organisation est désactivé. Un administrateur de l'organisation l'active sous **Company Information → Assistants** |
 | La section **Assistants** est absente dans Informations sur l'entreprise | Seuls les administrateurs de l'organisation la voient |
 | Le panneau indique **L'assistant est en cours de configuration** (The assistant is being set up) | La fonction n'est pas encore disponible dans votre environnement |
 | Le panneau est là, mais les réponses indiquent *Réservé aux administrateurs.* | Votre compte n'est pas administrateur de l'organisation |

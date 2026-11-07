@@ -6,7 +6,7 @@ Vous pouvez choisir de calculer automatiquement le **prix unitaire** de chaque l
 
 ## Activer le réglage
 
-Ouvrez **Paramètres → Types de Documents**, puis l’engrenage du type concerné. Dans **Bon de commande**, repérez **Calculer le prix unitaire de la commande** et examinez son effet avant de modifier le réglage.
+Ouvrez **Settings → Document Types**, puis l’engrenage du type concerné. Dans **Bon de commande**, repérez **Calculer le prix unitaire de la commande** et examinez son effet avant de modifier le réglage.
 
 <figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-po-settings-fr.png" alt="Partie supérieure des réglages Bon de commande avec Calculer le prix unitaire de la commande et les tolérances. Les valeurs privées sont masquées ; aucun interrupteur ni paramètre n’a été modifié."><figcaption><p>Partie supérieure des réglages Bon de commande avec Calculer le prix unitaire de la commande et les tolérances. Les valeurs privées sont masquées ; aucun interrupteur ni paramètre n’a été modifié.</p></figcaption></figure>
 

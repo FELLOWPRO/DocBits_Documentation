@@ -2,7 +2,7 @@
 
 Les Table Columns définissent les colonnes du tableau des lignes d'un type de document : ce que DocBits extrait dans chaque colonne, ce que l'utilisateur voit sur l'écran de validation et ce qui est envoyé à l'ERP lors de l'export.
 
-**Où :** Paramètres → Traitement des Documents → Types de documents → Colonnes du tableau
+**Où :** Settings → Document Processing → Document Types → Table Columns
 
 <figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-fr-20261104.png" alt="Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n&#x27;a été modifiée. Les cellules de titre sont masquées pour protéger les données."><figcaption><p>Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n&#x27;a été modifiée. Les cellules de titre sont masquées pour protéger les données.</p></figcaption></figure>
 
@@ -51,12 +51,12 @@ Ouvrez les [colonnes de tableau](README.md) du bon type de document et du bon ta
 
 | Choix actuel | Effet sur le schéma de base |
 | --- | --- |
-| **Par défaut · demandé** ou **Par défaut · non demandé** | Applique la sélection DocBits pour ce type et ce nom de colonne. Par défaut ne signifie ni toujours activé ni toujours désactivé. |
-| **Oui · demandé** | Demande explicitement cette colonne configurée à l'IA. |
-| **Non · non demandé** | L'exclut du schéma de base, même si elle est normalement demandée. |
+| **Default · demandé** ou **Default · non demandé** | Applique la sélection DocBits pour ce type et ce nom de colonne. Par défaut ne signifie ni toujours activé ni toujours désactivé. |
+| **Yes · demandé** | Demande explicitement cette colonne configurée à l'IA. |
+| **No · non demandé** | L'exclut du schéma de base, même si elle est normalement demandée. |
 
-Revenir à **Par défaut** supprime le choix explicite. Une nouvelle colonne personnalisée n'appartient normalement pas à la sélection IA par défaut : choisissez **Oui** pour la demander. Les colonnes IA par défaut ne correspondent pas à toutes les colonnes fournies. Vérifiez l'effet affiché et l'aperçu.
+Revenir à **Default** supprime le choix explicite. Une nouvelle colonne personnalisée n'appartient normalement pas à la sélection IA par défaut : choisissez **Yes** pour la demander. Les colonnes IA par défaut ne correspondent pas à toutes les colonnes fournies. Vérifiez l'effet affiché et l'aperçu.
 
-**Obligatoire**, **Lecture seule** et **Masqué** concernent les contrôles de complétude, la modification et la visibilité ; ils ne remplacent pas le choix IA. **Non** ne supprime ni la colonne ni ses valeurs et n'empêche pas des règles, scripts ou autres sources de la renseigner. L'apprentissage fournisseur et les tags IA peuvent étendre la demande effective : résolvez aussi leurs contradictions. Le commutateur ne remplace pas automatiquement un résultat purement issu de règles.
+**Required**, **Read Only** et **Hidden** concernent les contrôles de complétude, la modification et la visibilité ; ils ne remplacent pas le choix IA. **No** ne supprime ni la colonne ni ses valeurs et n'empêche pas des règles, scripts ou autres sources de la renseigner. L'apprentissage fournisseur et les tags IA peuvent étendre la demande effective : résolvez aussi leurs contradictions. Le commutateur ne remplace pas automatiquement un résultat purement issu de règles.
 
 [Structured Output pour les tableaux](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

@@ -35,7 +35,7 @@ L'accès peut également être restreint au niveau des **champs**, ce qui peut b
 
 * Dans la configuration de contrôle d'accès du groupe, accédez au type de document et vérifiez les paramètres au niveau des champs.
 * Confirmez si les champs sont définis comme :
-  * **Lecture/Écriture**, **Lecture seule**, **Écriture propriétaire**, **Aucun**
+  * **Lecture/Écriture**, **Read Only**, **Écriture propriétaire**, **Aucun**
 * Ajustez si nécessaire en fonction du rôle de l'utilisateur.
 
 ### 5. Vérifier le paramètre "Uniquement les documents assignés"

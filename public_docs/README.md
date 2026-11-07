@@ -1,14 +1,14 @@
 # DocBits
 
-**DocBits. Make room for ambition.**
+**DocBits. Dê espaço à ambição.**
 
 Do OCR/IDP à lógica de negócio, aprovações e Advanced Workflows.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/pt.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/pt.mp4" %}
 
-*90 segundos · interface de produto em inglês · cenas históricas imaginadas por IA*
+*90 segundos · FullHD (1920 × 1080) · De OCR e IDP à automatização completa*
 
-[Ler transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/pt-transcript.md) · [Descarregar vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/pt.mp4)
+[Vídeo com legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/pt.html) · [Ler transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/pt-transcript.md) · [Descarregar vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/pt.mp4)
 
 Bem-vindo ao DocBits
 

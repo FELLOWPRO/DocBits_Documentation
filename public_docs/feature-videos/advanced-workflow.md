@@ -1,5 +1,5 @@
 ---
-description: "Build document workflows with connected cards. Route by conditions, join results and give errors their own path — with the complete process in view."
+description: "Your process. Your logic. Clearly connected."
 ---
 
 # DocBits Advanced Workflow

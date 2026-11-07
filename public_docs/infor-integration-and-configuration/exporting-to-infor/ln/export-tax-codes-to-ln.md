@@ -9,13 +9,13 @@ Este guia irá orientá-lo através do processo de configuração para garantir 
 
 ### **Passo 1: Configurar Lista de Valores**
 
-1.  Vá para **Configurações** -> **Processamento de Documentos** -> **Lista de Valores**.
+1.  Vá para **Settings** -> **Document Processing** -> **Lista de Valores**.
 
     ![Menu Configurações aberto com o grupo Processamento de Documentos e a entrada Lista de Valores](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FsOvkQi6jHPOqhlU2lCRO%252FTaxCodes_1.png%3Falt%3Dmedia%26token%3Dbf6cb4a5-9d82-40d0-8222-68788d44bf16\&width=768\&dpr=4\&quality=100\&sign=5145579e\&sv=2)
-2.  Clique em **Novo**.
+2.  Clique em **New**.
 
     ![Página Lista de Valores com as listas existentes e o botão Novo](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fnnoys71KFjrJz97lPu2F%252FTaxCodes_2.png%3Falt%3Dmedia%26token%3D26c8ba44-7e3f-437e-abd6-d09993231f2a\&width=768\&dpr=4\&quality=100\&sign=20bede4e\&sv=2)
-3.  Crie uma lista com o nome `Tax_Country` e clique em **Salvar**.
+3.  Crie uma lista com o nome `Tax_Country` e clique em **Save**.
 
     ![Diálogo Nova lista com o nome Tax_Country](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FVH48FUS9K0rT7PoTNqnw%252FTaxCodes_3.png%3Falt%3Dmedia%26token%3Daf31c7a7-28d5-48cd-98b0-40a7a4370168\&width=768\&dpr=4\&quality=100\&sign=7627670e\&sv=2)
 4.  Crie as seguintes três listas adicionais:
@@ -28,7 +28,7 @@ Este guia irá orientá-lo através do processo de configuração para garantir 
 5.  Clique em uma das listas recém-criadas para abri-la. Em seguida, pressione o botão **Adicionar Linha** para adicionar uma nova linha.
 
     ![Página Lista de Valores com o botão Adicionar Linha abaixo da lista aberta](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FIQ9cEPZ9lnn2SP00Y63z%252FTaxCode_4.png%3Falt%3Dmedia%26token%3D52497d98-a1d9-4bbb-a097-36d065b5bbe6\&width=768\&dpr=4\&quality=100\&sign=c85a13ef\&sv=2)
-6.  Insira os valores respectivos desejados do **LN** e pressione **Salvar** para salvar as alterações.
+6.  Insira os valores respectivos desejados do **LN** e pressione **Save** para salvar as alterações.
 
     * Se você tiver vários valores, pode clicar em **Adicionar Mais Valores** para adicioná-los.
 
@@ -40,10 +40,10 @@ Este guia irá orientá-lo através do processo de configuração para garantir 
 
 ### **Passo 2: Adicionar Campos no DocBits**
 
-1.  Navegue até **Configurações** -> **Processamento de documentos** -> **Tipos de Documentos**.
+1.  Navegue até **Settings** -> **Document Processing** -> **Document Types**.
 
     ![Menu Configurações Globais aberto com a entrada Tipos de Documentos](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJFsiV4Pzbj8vIhqJfDaJ%252FTaxCodes_6.png%3Falt%3Dmedia%26token%3D203ddd31-195e-4cc3-87f7-d1b12fc3013c\&width=768\&dpr=4\&quality=100\&sign=a64ef7b9\&sv=2)
-2.  Escolha o menu **Campos** correspondente ao Tipo de Documento onde você deseja adicionar os campos.
+2.  Escolha o menu **Fields** correspondente ao Tipo de Documento onde você deseja adicionar os campos.
 
     ![Página Tipos de Documentos com o menu Campos abaixo de cada tipo de documento](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff653FGmIYXrNbhOzfSP8%252FTaxCodes_7.png%3Falt%3Dmedia%26token%3D1bd1abe5-8921-4e36-8e92-581c30c4bfbf\&width=768\&dpr=4\&quality=100\&sign=2b6009a0\&sv=2)
 3.  Sob **IVA & Valores**, crie seis novos campos da seguinte forma:
@@ -62,7 +62,7 @@ Este guia irá orientá-lo através do processo de configuração para garantir 
 
 ### **Passo 3: Editar Layout**
 
-1.  Vá para **Configurações** -> **Processamento de documentos** -> **Tipos de Documentos**.
+1.  Vá para **Settings** -> **Document Processing** -> **Document Types**.
 
     ![Menu Configurações Globais aberto com a entrada Tipos de Documentos](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJFsiV4Pzbj8vIhqJfDaJ%252FTaxCodes_6.png%3Falt%3Dmedia%26token%3D203ddd31-195e-4cc3-87f7-d1b12fc3013c\&width=768\&dpr=4\&quality=100\&sign=a64ef7b9\&sv=2)
 2.  Abra o menu **Editar Layout** para o Tipo de Documento que você deseja editar.
@@ -99,13 +99,13 @@ Após fazer o upload de um novo documento no DocBits com as configurações de d
 
 ### **Passo 1: Configurar Lista de Valores**
 
-1.  Vá para **Configurações** -> **Processamento de Documentos** -> **Lista de Valores**.
+1.  Vá para **Settings** -> **Document Processing** -> **Lista de Valores**.
 
     ![Menu Configurações aberto com o grupo Processamento de Documentos e a entrada Lista de Valores](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FsOvkQi6jHPOqhlU2lCRO%252FTaxCodes_1.png%3Falt%3Dmedia%26token%3Dbf6cb4a5-9d82-40d0-8222-68788d44bf16\&width=768\&dpr=4\&quality=100\&sign=5145579e\&sv=2)
-2.  Clique em **Novo**.
+2.  Clique em **New**.
 
     ![Página Lista de Valores com as listas existentes e o botão Novo](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fnnoys71KFjrJz97lPu2F%252FTaxCodes_2.png%3Falt%3Dmedia%26token%3D26c8ba44-7e3f-437e-abd6-d09993231f2a\&width=768\&dpr=4\&quality=100\&sign=20bede4e\&sv=2)
-3.  Crie uma lista com o nome `Tax_Country` e clique em **Salvar**.
+3.  Crie uma lista com o nome `Tax_Country` e clique em **Save**.
 
     ![Diálogo Nova lista com o nome Tax_Country](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FVH48FUS9K0rT7PoTNqnw%252FTaxCodes_3.png%3Falt%3Dmedia%26token%3Daf31c7a7-28d5-48cd-98b0-40a7a4370168\&width=768\&dpr=4\&quality=100\&sign=7627670e\&sv=2)
 4.  Crie as seguintes três listas adicionais:
@@ -118,7 +118,7 @@ Após fazer o upload de um novo documento no DocBits com as configurações de d
 5.  Clique em uma das listas recém-criadas para abri-la. Em seguida, pressione o botão **Adicionar Linha** para adicionar uma nova linha.
 
     ![Página Lista de Valores com o botão Adicionar Linha abaixo da lista aberta](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FIQ9cEPZ9lnn2SP00Y63z%252FTaxCode_4.png%3Falt%3Dmedia%26token%3D52497d98-a1d9-4bbb-a097-36d065b5bbe6\&width=768\&dpr=4\&quality=100\&sign=c85a13ef\&sv=2)
-6.  Insira os valores respectivos desejados do **LN** e pressione **Salvar** para salvar as alterações.
+6.  Insira os valores respectivos desejados do **LN** e pressione **Save** para salvar as alterações.
 
     * Se você tiver vários valores, pode clicar em **Adicionar Mais Valores** para adicioná-los.
 
@@ -130,10 +130,10 @@ Após fazer o upload de um novo documento no DocBits com as configurações de d
 
 ### **Passo 2: Adicionar Campos no DocBits**
 
-1.  Navegue até **Configurações** -> **Processamento de documentos** -> **Tipos de Documentos**.
+1.  Navegue até **Settings** -> **Document Processing** -> **Document Types**.
 
     ![Menu Configurações Globais aberto com a entrada Tipos de Documentos](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJFsiV4Pzbj8vIhqJfDaJ%252FTaxCodes_6.png%3Falt%3Dmedia%26token%3D203ddd31-195e-4cc3-87f7-d1b12fc3013c\&width=768\&dpr=4\&quality=100\&sign=a64ef7b9\&sv=2)
-2.  Escolha o menu **Campos** correspondente ao Tipo de Documento onde você deseja adicionar os campos.
+2.  Escolha o menu **Fields** correspondente ao Tipo de Documento onde você deseja adicionar os campos.
 
     ![Página Tipos de Documentos com o menu Campos abaixo de cada tipo de documento](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff653FGmIYXrNbhOzfSP8%252FTaxCodes_7.png%3Falt%3Dmedia%26token%3D1bd1abe5-8921-4e36-8e92-581c30c4bfbf\&width=768\&dpr=4\&quality=100\&sign=2b6009a0\&sv=2)
 3.  Sob **IVA & Valores**, crie seis novos campos da seguinte forma:
@@ -152,7 +152,7 @@ Após fazer o upload de um novo documento no DocBits com as configurações de d
 
 ### **Passo 3: Editar Layout**
 
-1.  Vá para **Configurações** -> **Processamento de documentos** -> **Tipos de Documentos**.
+1.  Vá para **Settings** -> **Document Processing** -> **Document Types**.
 
     ![Menu Configurações Globais aberto com a entrada Tipos de Documentos](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJFsiV4Pzbj8vIhqJfDaJ%252FTaxCodes_6.png%3Falt%3Dmedia%26token%3D203ddd31-195e-4cc3-87f7-d1b12fc3013c\&width=768\&dpr=4\&quality=100\&sign=a64ef7b9\&sv=2)
 2.  Abra o menu **Editar Layout** para o Tipo de Documento que você deseja editar.
@@ -174,7 +174,7 @@ Após fazer o upload de um novo documento no DocBits com as configurações de d
 8.  Arraste e solte os campos que correspondem a este grupo no campo **Sub Group**.
 
     ![Layout Builder com os campos de imposto movidos para o novo subgrupo](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FhN7BvWWdS2yXCJN5WQyM%252FTaxCodeMulti_4.png%3Falt%3Dmedia%26token%3D5c7b668b-a24e-488e-a89d-348ab9f20b48\&width=768\&dpr=4\&quality=100\&sign=41300825\&sv=2)
-9. Expanda o menu suspenso **Campos**.
+9. Expanda o menu suspenso **Fields**.
 10. Pesquise por **Tax** e arraste e solte os campos respectivos, como **Tax Country** e **Tax Code**, no subgroup correspondente.
 
     ![Layout Builder com Tax Country e Tax Code dentro do subgrupo](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff1i9nvAjHZ2iElDkaD0L%252FTaxCodeMulti_5.png%3Falt%3Dmedia%26token%3D072cf596-0c91-42aa-8053-c5f3434fe8ed\&width=768\&dpr=4\&quality=100\&sign=ff055219\&sv=2)

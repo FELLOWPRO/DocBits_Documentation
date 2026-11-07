@@ -18,8 +18,8 @@ Os campos de cabeçalho têm o seu próprio distintivo de origem ao lado do valo
 
 ## 2. Verifique a configuração do fornecedor
 
-* **Definições → Processamento de Documentos → Classificação e Extração → Modelo de IA**: a tabela por baixo do seletor lista todos os fornecedores com um modelo guardado ou treino. Um fornecedor nesta lista com *dados de treino* tem regras guardadas; *repor os dados de treino* remove-as.
-* **Definições → Processamento de Documentos → Definições OCR**: *Usar E-Text, se disponível* e *Usar dados de IA para tabelas* alteram o texto que a extração vê. Um fornecedor pode substituir a definição de E-Text em *Mais definições* no ecrã de validação.
+* **Definições → Document Processing → Classificação e Extração → Modelo de IA**: a tabela por baixo do seletor lista todos os fornecedores com um modelo guardado ou treino. Um fornecedor nesta lista com *dados de treino* tem regras guardadas; *repor os dados de treino* remove-as.
+* **Definições → Document Processing → Definições OCR**: *Usar E-Text, se disponível* e *Usar dados de IA para tabelas* alteram o texto que a extração vê. Um fornecedor pode substituir a definição de E-Text em *Mais definições* no ecrã de validação.
 * **Definições → Definições Globais → Tipos de Documento → Colunas da Tabela**: as opções oculta, obrigatória e *Usar IA*. Uma coluna oculta nunca é preenchida; uma coluna *Usar IA* é preenchida pela IA mesmo para fornecedores com regras.
 
 ## 3. Reproduza sem a interface (API / MCP)

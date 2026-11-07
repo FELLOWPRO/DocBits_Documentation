@@ -23,7 +23,7 @@ O guia de diagnóstico [Qual caminho de extração foi usado?](../../../../overv
 
 ## Visão geral
 
-Nas configurações de **Classificação e extração**, pode:
+Nas configurações de **Classification and Extraction**, pode:
 
 * Ativar a **divisão de documentos** com base em códigos QR
 * Configurar a **formatação de valores**
@@ -36,8 +36,8 @@ Esta página explica as configurações disponíveis.
 
 ## **Aceder às configurações de classificação e extração**
 
-Para abrir as configurações de **Classificação e extração**, aceda a:\
-**Configurações → Processamento de documentos → Classificação e extração**
+Para abrir as configurações de **Classification and Extraction**, aceda a:\
+**Settings → Document Processing → Classification and Extraction**
 
 
 ## Divisão de documentos
@@ -195,7 +195,7 @@ Para criar uma regra:
 
     
 2. Preencha os campos seguintes:
-   * **Padrão**: expressão regular que o sistema deve procurar para iniciar a classificação.
+   * **Default**: expressão regular que o sistema deve procurar para iniciar a classificação.
    * **Tipo**: local onde o padrão deve ser procurado, por exemplo no **código de barras**.
    * **Suborganização** _(opcional)_: suborganização à qual a regra se aplica.
    * **Tipo de documento**: tipo a atribuir ao documento quando o padrão corresponder.
@@ -213,7 +213,7 @@ Para editar uma regra existente:
 1.  Clique nos três pontos da coluna **Ações**.
 
     
-2.  Selecione **Editar**.
+2.  Selecione **Edit**.
 
     
 3. Efetue as alterações pretendidas.

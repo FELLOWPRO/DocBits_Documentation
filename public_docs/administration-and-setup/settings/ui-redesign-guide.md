@@ -7,7 +7,7 @@ Esta página é uma orientação rápida ao layout atual do DocBits — onde enc
 A barra lateral principal lista cada seção do DocBits para a qual você tem permissão. Duas formas de controlá-la:
 
 * **Modo mini** — clique no botão no topo da barra lateral para reduzi-la a apenas ícones. Passe o cursor sobre qualquer ícone para ler o rótulo. A barra se lembra se você a deixou expandida ou recolhida da última vez.
-* **Personalizar** — no final da barra expandida há uma entrada **Personalizar**. Use-a para reorganizar o menu, ocultar entradas que você não usa ou fixar no topo as que abre com mais frequência.
+* **Customize** — no final da barra expandida há uma entrada **Customize**. Use-a para reorganizar o menu, ocultar entradas que você não usa ou fixar no topo as que abre com mais frequência.
 
 Para a explicação completa de reordenar, ocultar e fixar, veja [Barra Lateral Personalizável](../../end-user-and-partner-section/end-user-section/customizable-sidebar.md).
 
@@ -15,9 +15,9 @@ Para a explicação completa de reordenar, ocultar e fixar, veja [Barra Lateral 
 
 O menu Configurações está agrupado por intenção, e não por modelo de dados. Se você lembra de uma configuração mas não consegue encontrá-la, tente o grupo correspondente abaixo:
 
-| Você procura… | Abra Configurações → |
+| Você procura… | Abra Settings → |
 |---|---|
-| Nome da empresa, logotipo, fuso horário, cor do app | Empresa e Usuários → Informações da Empresa |
+| Nome da empresa, logotipo, fuso horário, cor do app | Empresa e Usuários → Company Information |
 | Usuários, grupos, permissões | Empresa e Usuários → Grupos, Usuários e Permissões |
 | Chaves de API, conexões ERP, configurações de exportação | Integração |
 | Tipos de documento, campos, scripts, EDI, treinamento de modelo | Tipos de Documento |

@@ -2,7 +2,7 @@
 
 As colunas de tabela definem quais colunas a tabela de itens de linha de um tipo de documento possui: o que o DocBits extrai para cada coluna, o que o usuário vê na tela de validação e o que é enviado ao ERP na exportação.
 
-**Onde:** Configurações → Processamento de documentos → Tipos de documentos → Colunas da tabela
+**Onde:** Settings → Document Processing → Document Types → Table Columns
 
 <figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-pt-20261104.png" alt="Lista Use AI atual com Padrão, Sim e Não. Nenhuma opção foi alterada. As células de título estão ocultas para proteger dados."><figcaption><p>Lista Use AI atual com Padrão, Sim e Não. Nenhuma opção foi alterada. As células de título estão ocultas para proteger dados.</p></figcaption></figure>
 
@@ -51,12 +51,12 @@ Abra [Colunas de tabela](README.md) para o tipo de documento e a tabela corretos
 
 | Opção atual | Efeito no esquema base |
 | --- | --- |
-| **Padrão · solicitado** ou **Padrão · não solicitado** | Usa a seleção DocBits para esse tipo e nome de coluna. Padrão não significa sempre ativado nem sempre desativado. |
-| **Sim · solicitado** | Solicita explicitamente essa coluna configurada à IA. |
+| **Default · solicitado** ou **Default · não solicitado** | Usa a seleção DocBits para esse tipo e nome de coluna. Padrão não significa sempre ativado nem sempre desativado. |
+| **Yes · solicitado** | Solicita explicitamente essa coluna configurada à IA. |
 | **Não · não solicitado** | Exclui a coluna do esquema base, mesmo que normalmente seja solicitada. |
 
-Voltar a **Padrão** remove a escolha explícita. Uma coluna própria recém-criada normalmente não pertence à seleção padrão de IA: escolha **Sim** para solicitá-la. As colunas padrão de IA não são todas as colunas fornecidas. Verifique o efeito indicado e a prévia.
+Voltar a **Default** remove a escolha explícita. Uma coluna própria recém-criada normalmente não pertence à seleção padrão de IA: escolha **Yes** para solicitá-la. As colunas padrão de IA não são todas as colunas fornecidas. Verifique o efeito indicado e a prévia.
 
-**Obrigatória**, **Somente leitura** e **Oculta** controlam completude, edição e visibilidade; não substituem a escolha de IA. **Não** não exclui a coluna nem apaga valores, e não impede que regras, scripts ou outras fontes a preencham. Treinamento do fornecedor e tags de IA podem ampliar a solicitação efetiva: resolva também ali as contradições. O interruptor não substitui automaticamente um resultado obtido apenas por regras.
+**Required**, **Read Only** e **Hidden** controlam completude, edição e visibilidade; não substituem a escolha de IA. **Não** não exclui a coluna nem apaga valores, e não impede que regras, scripts ou outras fontes a preencham. Treinamento do fornecedor e tags de IA podem ampliar a solicitação efetiva: resolva também ali as contradições. O interruptor não substitui automaticamente um resultado obtido apenas por regras.
 
 [Structured Output para tabelas](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

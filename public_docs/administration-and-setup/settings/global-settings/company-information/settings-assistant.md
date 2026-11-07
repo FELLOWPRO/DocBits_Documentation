@@ -11,12 +11,12 @@ O assistente vem **desativado por padrão**. Esta página mostra onde ativá-lo 
 ## Quem pode usá-lo
 
 * O **administrador da organização** ativa ou desativa o assistente para toda a organização.
-* Depois de ativado, todo administrador que pode abrir **Configurações** pode mostrar ou ocultar o painel para si mesmo.
+* Depois de ativado, todo administrador que pode abrir **Settings** pode mostrar ou ocultar o painel para si mesmo.
 * As alterações (aplicar uma recomendação, desativar ou excluir uma conexão de importação, criar uma regra) são limitadas aos **administradores da organização**. Os demais usuários recebem a mensagem *Available to administrators only.* (disponível somente para administradores).
 
 ## Ativar
 
-1. Acesse **Configurações → Organização e Acesso → Informações da empresa**. O cabeçalho da página mostra **Company Settings** (Configurações da empresa).
+1. Acesse **Settings → Organization & Access → Company Information**. O cabeçalho da página mostra **Company Settings** (Settings da empresa).
 2. Abra a seção **Assistants** (Assistentes).
 3. Ative **Enable the settings assistant** (Habilitar o assistente de configurações).
 
@@ -32,7 +32,7 @@ O **Validation assistant** (assistente de validação) na mesma seção é outro
 
 Em todas as páginas da área de Configurações há um pequeno **botão em forma de lâmpada de gênio** ao lado do campo de busca de configurações. Clique nele para **mostrar** ou **ocultar** o assistente.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-pt.png" alt="A página Informações da empresa em Configurações com a navegação de configurações à esquerda, a página no meio e o painel do Assistente de Configurações à direita"><figcaption><p>O assistente fica no <strong>lado direito</strong> de cada página de Configurações: navegação à esquerda, a página no meio e o assistente ao lado dela. Aqui em <strong>Company Settings → Company Information</strong>. O botão para mostrá-lo ou ocultá-lo é o ícone de lâmpada ao lado de <strong>Search Settings</strong>, no topo da navegação.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-pt.png" alt="A página Company Information em Settings com a navegação de configurações à esquerda, a página no meio e o painel do Assistente de Settings à direita"><figcaption><p>O assistente fica no <strong>lado direito</strong> de cada página de Settings: navegação à esquerda, a página no meio e o assistente ao lado dela. Aqui em <strong>Company Settings → Company Information</strong>. O botão para mostrá-lo ou ocultá-lo é o ícone de lâmpada ao lado de <strong>Search Settings</strong>, no topo da navegação.</p></figcaption></figure>
 
 * O painel lembra a sua escolha por usuário, então ele continua aberto na próxima vez que você voltar.
 * Em uma tela larga (1280 pixels ou mais), ele fica ao lado da página. Você pode arrastar a borda para alterar a largura.
@@ -48,7 +48,7 @@ Em todas as páginas da área de Configurações há um pequeno **botão em form
 
 | Problema | Causa e solução |
 | --- | --- |
-| Não há botão de lâmpada de gênio na área de Configurações | A chave da organização está desativada. Um administrador da organização a ativa em **Informações da empresa → Assistants** |
+| Não há botão de lâmpada de gênio na área de Settings | A chave da organização está desativada. Um administrador da organização a ativa em **Company Information → Assistants** |
 | A seção **Assistants** não aparece em Informações da empresa | Somente administradores da organização a veem |
 | O painel mostra **The assistant is being set up** (o assistente está sendo configurado) | O recurso ainda não está disponível no seu ambiente |
 | O painel está lá, mas as respostas dizem *Available to administrators only.* | A sua conta não é de administrador da organização |

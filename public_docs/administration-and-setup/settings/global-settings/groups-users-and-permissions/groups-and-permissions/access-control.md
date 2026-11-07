@@ -18,8 +18,8 @@ Cada grupo pode ser configurado para:
 
 ## Ativação
 
-1. Vá para **Configurações**.
-2. Selecione **Processamento de Documentos**.
+1. Vá para **Settings**.
+2. Selecione **Document Processing**.
 3. Selecione **Módulo.**
 4. Ative o **Controle de Acesso** habilitando o controle deslizante.
 
@@ -27,8 +27,8 @@ Cada grupo pode ser configurado para:
 
 ## Abrir o Controle de Acesso de um grupo
 
-1. Vá para **Configurações**.
-2. Em **Organização e Acesso**, selecione **Grupos e Permissões**.
+1. Vá para **Settings**.
+2. Em **Organization & Access**, selecione **Grupos e Permissões**.
 3. Para gerenciar as permissões de um grupo (por exemplo, PROCUREMENT\_DIRECTOR), clique nos três pontos do lado direito.
 4. Selecione **Gerenciar Controle de Acesso**.
 
@@ -52,9 +52,9 @@ A primeira coluna é um interruptor **Habilitado / Desabilitado**. Desabilite-o 
 | Ação | Determina se o grupo pode… |
 |------|----------------------------|
 | **Listar** | ver o tipo de documento na lista do painel. |
-| **Visualizar** | abrir um documento e ver seus detalhes. |
-| **Editar** | alterar os valores dos campos de um documento. |
-| **Excluir** | excluir um documento. |
+| **View** | abrir um documento e ver seus detalhes. |
+| **Edit** | alterar os valores dos campos de um documento. |
+| **Delete** | excluir um documento. |
 | **Atualização em Massa** | aplicar uma atualização em massa a vários documentos de uma vez. |
 | **Primeira Aprovação** | conceder a aprovação de primeiro nível. |
 | **Segunda Aprovação** | conceder a aprovação de segundo nível. |
@@ -81,22 +81,22 @@ Cada coluna de ação é um menu suspenso. O valor escolhido responde à pergunt
 
 ### A aprovação também requer Editar
 
-Aprovar um documento aciona **duas ações** nos bastidores: o DocBits primeiro **salva** o documento e depois o move para o status aprovado. A etapa de salvamento precisa da permissão **Editar**, portanto as duas permissões estão vinculadas.
+Aprovar um documento aciona **duas ações** nos bastidores: o DocBits primeiro **salva** o documento e depois o move para o status aprovado. A etapa de salvamento precisa da permissão **Edit**, portanto as duas permissões estão vinculadas.
 
-Um usuário a quem se concede apenas **Primeira Aprovação** ou **Segunda Aprovação** — mas *não* **Editar** — encontra um erro de permissão na etapa de salvamento e não consegue aprovar o documento.
+Um usuário a quem se concede apenas **Primeira Aprovação** ou **Segunda Aprovação** — mas *não* **Edit** — encontra um erro de permissão na etapa de salvamento e não consegue aprovar o documento.
 
 {% hint style="warning" %}
-Sempre que conceder **Primeira Aprovação** ou **Segunda Aprovação**, conceda também **Editar** (e **Visualizar**) para o mesmo tipo de documento. Uma permissão de aprovação por si só não é suficiente.
+Sempre que conceder **Primeira Aprovação** ou **Segunda Aprovação**, conceda também **Edit** (e **View**) para o mesmo tipo de documento. Uma permissão de aprovação por si só não é suficiente.
 {% endhint %}
 
 ## Permissões no nível do campo
 
-Clique em uma linha de tipo de documento para abrir o painel **Permissões de Campo** abaixo. Os campos são organizados em abas (por exemplo, *Colunas da tabela*, *Detalhes da fatura*, *Detalhes de pagamento*, *Impostos e valores*). Cada campo tem seu próprio nível de acesso:
+Clique em uma linha de tipo de documento para abrir o painel **Permissões de Campo** abaixo. Os campos são organizados em abas (por exemplo, *Table Columns*, *Detalhes da fatura*, *Detalhes de pagamento*, *Impostos e valores*). Cada campo tem seu próprio nível de acesso:
 
 | Nível | Efeito no campo |
 |-------|-----------------|
 | **Leitura/Escrita** | O campo é visível **e** editável. |
-| **Somente leitura** | O campo é visível, mas **não pode ser editado** (esmaecido). |
+| **Read Only** | O campo é visível, mas **não pode ser editado** (esmaecido). |
 | **Aprovação** | O campo pode ser editado, mas a alteração deve passar por um **fluxo de aprovação** antes de ser aplicada. |
 | **Sem acesso** | O campo fica **totalmente oculto** — o usuário nunca o vê. |
 
@@ -140,7 +140,7 @@ Agora acompanhe um documento concreto — a fatura **INV-4711**, que **Maria car
 * ✅ Edita o nome do fornecedor e os itens *(Editar = Owner & Assignee — ela é a proprietária)*.
 * 🔒 Vê `TOTAL_AMOUNT`, mas o campo está esmaecido e ela não pode alterá-lo *(Somente leitura)*.
 * 🚫 Nunca vê o campo `CUSTOMER_DISCOUNT` *(Sem acesso)*.
-* 🚫 O botão **Excluir** está oculto *(Excluir = No Access — ninguém no grupo pode excluir)*.
+* 🚫 O botão **Delete** está oculto *(Excluir = No Access — ninguém no grupo pode excluir)*.
 * ✅ Pode conceder a **primeira aprovação** *(Primeira Aprovação = Assignee — ela é a responsável)*.
 
 **Tom (mesmo grupo, mas *não* carregou INV-4711 e ela *não* está atribuída a ele):**
@@ -155,5 +155,5 @@ Agora acompanhe um documento concreto — a fatura **INV-4711**, que **Maria car
 
 * **Everyone** abre um documento para todos os membros do grupo; **Owner / Assignee** restringe uma ação às pessoas vinculadas àquele documento específico.
 * **No Access** remove uma ação (Excluir) ou oculta um campo (`CUSTOMER_DISCOUNT`) para o grupo inteiro.
-* **Somente leitura** mantém um campo visível para referência (`TOTAL_AMOUNT`), mas impede alterações.
+* **Read Only** mantém um campo visível para referência (`TOTAL_AMOUNT`), mas impede alterações.
 * Duas pessoas no **mesmo grupo** podem ter **direitos diferentes sobre a mesma fatura**, apenas por causa de quem a carregou e a quem ela está atribuída.

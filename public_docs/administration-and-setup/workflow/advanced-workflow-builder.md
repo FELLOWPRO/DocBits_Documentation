@@ -2,6 +2,18 @@
 
 Le constructeur **Flux de travail avancé** est un éditeur de graphe de nœuds pour les workflows nécessitant des branches, des chemins parallèles et un contrôle de flux — au-delà du modèle linéaire When/And/Then du constructeur Standard. Vous disposez des nœuds sur un canevas et les reliez pour définir le flux d'exécution.
 
+## Présentation : DocBits Advanced Workflow
+
+Commencez par cette présentation de 1 min 48, puis suivez les instructions détaillées ci-dessous.
+
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/fr.mp4" %}
+
+[Lecteur avec sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/fr.html) · [Sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/fr.vtt) · [Textes à l’écran](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/fr.txt) · 1:48 · Full HD
+
+[Voir la page de la fonctionnalité et l’exemple de facture](../../feature-videos/advanced-workflow.md)
+
+La vidéo associe des cartes animées à de vrais enregistrements de l’interface Dev en anglais. Elle contient de la musique et des textes en français, sans narration. Les actions de test affectent `Approval` ou `Standard` au champ d’exemple `approval_route` ; un processus complet d’approbation humaine nécessite ses propres actions métier. Cette démonstration n’a été ni enregistrée ni activée. Les animations des jonctions illustrent les résultats requis, pas le moment d’exécution. Testez l’accessibilité et le parcours complet du document ; un test partiel réussi ne prouve pas le fonctionnement en production.
+
 ## Vidéo : routage des factures dans DocBits
 
 Rencontrez Alain et suivez ses explications dans la véritable interface française de DocBits. Il vérifie le tableau de bord, la liste des workflows et la licence, puis ouvre un brouillon non enregistré dans le concepteur. Il nomme le workflow, configure le contrôle du montant et deux actions, dispose les cartes et relie les deux chemins, étape par étape. Il présente ensuite la préparation des tests avec un document ou des données personnalisées. Le compte de démonstration ne dispose pas d’abonnement Advanced Workflow et bloque la validation ; le brouillon reste non enregistré et inactif.

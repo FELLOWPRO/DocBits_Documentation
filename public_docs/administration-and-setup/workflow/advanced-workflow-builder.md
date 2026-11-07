@@ -2,6 +2,18 @@
 
 Il builder **Flusso di lavoro avanzato** è un editor a grafo di nodi per i workflow che necessitano di ramificazioni, percorsi paralleli e controllo del flusso — oltre il modello lineare When/And/Then del builder Standard. Disponi i nodi su un canvas e li colleghi per definire il flusso di esecuzione.
 
+## Presentazione: DocBits Advanced Workflow
+
+Inizia con questa presentazione di 1:48, poi segui le istruzioni dettagliate di configurazione.
+
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/it.mp4" %}
+
+[Player con sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/it.html) · [Sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/it.vtt) · [Testi sullo schermo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/it.txt) · 1:48 · Full HD
+
+[Vedi la pagina della funzionalità e l’esempio di fattura](../../feature-videos/advanced-workflow.md)
+
+Il video combina schede animate e registrazioni reali dell’interfaccia Dev in inglese. Include musica e testi in italiano, senza voce narrante. Le azioni di test impostano il campo di esempio `approval_route` su `Approval` o `Standard`; un processo completo di approvazione umana richiede azioni aziendali dedicate. Questa dimostrazione non è stata salvata né attivata. Le animazioni delle unioni illustrano i risultati richiesti, non i tempi di esecuzione. Verifica la raggiungibilità e l’intero percorso del documento; un test parziale riuscito non dimostra il funzionamento in produzione.
+
 ## Video: percorsi delle fatture in DocBits
 
 Conosci Roberto e segui la sua spiegazione nell’interfaccia reale di DocBits in italiano. Controlla la dashboard, l’elenco dei workflow e la licenza, poi apre una bozza non salvata nel designer. Passo dopo passo assegna un nome al workflow, configura il controllo dell’importo e due azioni, dispone le schede e collega entrambi i percorsi. Mostra poi come preparare i test con un documento o dati personalizzati. L’account dimostrativo non dispone di un abbonamento Advanced Workflow e blocca la validazione; la bozza rimane non salvata e inattiva.

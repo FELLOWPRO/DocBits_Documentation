@@ -1,12 +1,36 @@
 # Accéder à DocBits et se connecter
 
-Cette page explique comment obtenir un compte DocBits et comment vous connecter lorsque vous n'avez pas votre mot de passe :
+Cette page explique comment obtenir un compte DocBits et comment vous connecter :
 
+* [Se connecter avec un compte existant](#se-connecter-avec-un-compte-existant) — les champs de l'écran de connexion et le sélecteur de région.
 * [Inscription](#inscription) — créez votre propre compte DocBits.
 * [Mot de passe oublié](#mot-de-passe-oublie) — réinitialisez votre mot de passe avec un lien de réinitialisation.
 * [Premier mot de passe pour les comptes créés par un administrateur](#premier-mot-de-passe-pour-les-comptes-crees-par-un-administrateur) — définissez le premier mot de passe d'un compte créé pour vous par votre administrateur.
 
-La connexion avec un compte existant et l'authentification à deux facteurs sont décrites dans [Authentification à deux facteurs (2FA)](../../security/two-factor-authentication.md). Utilisez le menu des langues en haut à droite de ces formulaires si vous avez besoin d'une autre langue d'affichage.
+L'authentification à deux facteurs, les passkeys et la deuxième étape de connexion sont décrites dans [Authentification à deux facteurs (2FA)](../../security/two-factor-authentication.md). Utilisez le menu des langues en haut à droite de ces formulaires si vous avez besoin d'une autre langue d'affichage.
+
+## Se connecter avec un compte existant
+
+Ouvrez l'adresse web DocBits fournie à votre organisation — par exemple `https://app.docbits.com` — et connectez-vous sur l'écran de connexion.
+
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/getting-access-login-en-20261107.png" alt="Écran de connexion DocBits en anglais avec les champs E-Mail et Password vides, Remember me, le sélecteur Auth region réglé sur Europe, Log In, Sign in with a passkey, Sign in with Google et Sign in with Microsoft"><figcaption><p>L'écran de connexion : e-mail et mot de passe, Remember me, le sélecteur Auth region, Log In, la passkey et les boutons de connexion Google et Microsoft.</p></figcaption></figure>
+
+1. **E-Mail** — l'adresse avec laquelle votre compte DocBits a été créé.
+2. **Password** — votre mot de passe DocBits. L'icône en forme d'œil dans le champ affiche ou masque ce que vous avez saisi.
+3. **Remember me** — préremplit votre adresse e-mail la prochaine fois que vous ouvrez l'écran de connexion.
+4. **Auth region** — DocBits fonctionne dans deux régions, **Europe** et **United States**, et chacune dispose de son propre service de connexion. Le sélecteur apparaît sur les déploiements qui utilisent les deux (production, dev et sandbox). DocBits présélectionne votre dernier choix, sinon la région correspondant au fuseau horaire de votre ordinateur, sinon Europe. Si votre compte a été créé dans l'autre région, sélectionnez-la ici avant de cliquer sur **Log In**.
+5. Cliquez sur **Log In**.
+
+Sous les champs de mot de passe :
+
+* **Sign in with a passkey** — apparaît lorsque votre navigateur prend en charge les passkeys. Elle vous connecte sans votre mot de passe. Voir [Connexion sans mot de passe](../../security/two-factor-authentication.md).
+* **Sign in with Google** et **Sign in with Microsoft** — pour les organisations qui utilisent l'authentification unique avec ces fournisseurs. Le fournisseur d'identité gère la connexion, le mot de passe DocBits et l'exigence de double facteur DocBits ne s'appliquent donc pas.
+* **Forgot password?** — voir [Mot de passe oublié](#mot-de-passe-oublie) ci-dessous.
+* **Register** — voir [Inscription](#inscription) ci-dessous.
+
+{% hint style="info" %}
+Choisissez l'**Auth region** utilisée par votre organisation avant de cliquer sur **Log In** : ce choix détermine quel service de connexion de la région reçoit vos identifiants. En cas de doute, demandez à votre administrateur.
+{% endhint %}
 
 ## Inscription
 

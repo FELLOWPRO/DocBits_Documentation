@@ -50,3 +50,16 @@ Monitora l'utilizzo di token e flussi di lavoro in un periodo selezionato. Usa i
 | **Da / A** | Il periodo per cui viene riportato l'utilizzo. |
 | **Token utilizzati** | Token consumati nel periodo. |
 | **Token rimanenti** | Token disponibili per il periodo. |
+
+## Usage
+
+Il pannello **Usage** sotto la scheda è compresso per impostazione predefinita. Aprilo per vedere quanto ha consumato la tua organizzazione per periodo.
+
+| Colonna | Descrizione |
+| --- | --- |
+| **Type** | La categoria di utilizzo: Document, Workflow, Advanced Workflow o DocNet. |
+| **From / To** | Il periodo per cui viene riportato l'utilizzo. |
+| **Tokens used** | Token consumati nel periodo. |
+| **Remaining tokens** | Token rimanenti per il periodo. |
+
+Usa **Select** per scegliere l'intervallo di date coperto dalla tabella e fai clic sull'intestazione di una colonna per ordinare le righe in base a quella colonna.

@@ -162,6 +162,8 @@ Wartość musi pasować do **wyrażenia regularnego**. Wyrażenie przeszukuje wa
 
 Wartość musi być liczbą pomiędzy **Minimum** a **Maksimum** (włącznie). Wypełnij jedno lub oba. Wartość, która nie jest liczbą, nie przechodzi kontroli. Sformatowane kwoty, takie jak `1.234,56`, są rozpoznawane.
 
+Same granice wpisuje się jako zwykłe liczby: opcjonalny znak i cyfry, przy czym przecinek jest akceptowany jako separator dziesiętny (`0,5`). Separatory tysięcy, wykładniki i słowa są odrzucane przy zapisie, z komunikatem, że granica nie jest liczbą. Wpisz co najmniej jedną granicę, ponieważ zakres bez minimum i maksimum nie zostanie zapisany, a minimum ustaw na wartość równą maksimum lub niższą.
+
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-range.png" alt="Kontrola Range"><figcaption><p>Range tylko z minimum: ilości muszą wynosić co najmniej 0,01</p></figcaption></figure>
 
 #### Compare fields — np. termin płatności ≥ data faktury

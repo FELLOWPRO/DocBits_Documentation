@@ -1,12 +1,36 @@
 # Erste Schritte und Anmeldung
 
-Diese Seite erklärt, wie Sie ein DocBits-Konto erhalten und wie Sie sich anmelden, wenn Sie Ihr Passwort nicht haben:
+Diese Seite erklärt, wie Sie ein DocBits-Konto erhalten und wie Sie sich anmelden:
 
+* [Anmeldung mit einem bestehenden Konto](#anmeldung-mit-einem-bestehenden-konto) — die Felder auf dem Anmeldebildschirm und die Regionsauswahl.
 * [Registrierung](#registrierung) — erstellen Sie Ihr eigenes DocBits-Konto.
 * [Passwort vergessen](#passwort-vergessen) — setzen Sie Ihr Passwort mit einem Reset-Link zurück.
 * [Erstes Passwort für vom Administrator angelegte Konten](#erstes-passwort-fur-vom-administrator-angelegte-konten) — legen Sie das erste Passwort für ein Konto fest, das Ihr Administrator für Sie erstellt hat.
 
-Die Anmeldung mit einem bestehenden Konto und die Zwei-Faktor-Authentifizierung werden unter [Zwei-Faktor-Authentifizierung (2FA)](../../security/two-factor-authentication.md) behandelt. Verwenden Sie das Sprachmenü oben rechts auf diesen Formularen, wenn Sie eine andere Anzeigesprache benötigen.
+Zwei-Faktor-Authentifizierung, Passkeys und der zweite Anmeldeschritt werden unter [Zwei-Faktor-Authentifizierung (2FA)](../../security/two-factor-authentication.md) behandelt. Verwenden Sie das Sprachmenü oben rechts auf diesen Formularen, wenn Sie eine andere Anzeigesprache benötigen.
+
+## Anmeldung mit einem bestehenden Konto
+
+Öffnen Sie die DocBits-Webadresse, die Ihre Organisation erhalten hat — zum Beispiel `https://app.docbits.com` — und melden Sie sich auf dem Anmeldebildschirm an.
+
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/getting-access-login-en-20261107.png" alt="Englischer DocBits-Anmeldebildschirm mit leeren Feldern E-Mail und Password, Remember me, dem auf Europe gestellten Auth region, Log In, Sign in with a passkey, Sign in with Google und Sign in with Microsoft"><figcaption><p>Der Anmeldebildschirm: E-Mail und Passwort, Remember me, der Auth region, Log In, Passkey sowie die Anmeldeschaltflächen von Google und Microsoft.</p></figcaption></figure>
+
+1. **E-Mail** — die Adresse, mit der Ihr DocBits-Konto erstellt wurde.
+2. **Password** — Ihr DocBits-Passwort. Das Augensymbol im Feld zeigt die eingegebenen Zeichen an oder verbirgt sie.
+3. **Remember me** — füllt Ihre E-Mail-Adresse beim nächsten Öffnen des Anmeldebildschirms aus.
+4. **Auth region** — DocBits läuft in zwei Regionen, **Europe** und **United States**, und jede hat ihren eigenen Anmeldedienst. Die Auswahl wird in Instanzen angezeigt, die beide nutzen (production, dev und sandbox). DocBits wählt Ihre letzte Auswahl vor, sonst die Region, die zur Zeitzone Ihres Computers passt, sonst Europe. Wenn Ihr Konto in der anderen Region erstellt wurde, wählen Sie diese hier aus, bevor Sie auf **Log In** klicken.
+5. Klicken Sie auf **Log In**.
+
+Unter den Passwortfeldern:
+
+* **Sign in with a passkey** — erscheint, wenn Ihr Browser Passkeys unterstützt. Damit melden Sie sich ohne Passwort an. Siehe [Passwortlose Anmeldung](../../security/two-factor-authentication.md).
+* **Sign in with Google** und **Sign in with Microsoft** — für Organisationen, die Single Sign-on mit diesen Anbietern verwenden. Der Identitätsanbieter übernimmt die Anmeldung, daher gelten das DocBits-Passwort und die DocBits-Zwei-Faktor-Anforderung nicht.
+* **Forgot password?** — siehe [Passwort vergessen](#passwort-vergessen) unten.
+* **Register** — siehe [Registrierung](#registrierung) unten.
+
+{% hint style="info" %}
+Wählen Sie den **Auth region**, den Ihre Organisation verwendet, bevor Sie auf **Log In** klicken: Die Auswahl entscheidet, welcher Anmeldedienst der Region Ihre Zugangsdaten erhält. Wenn Sie unsicher sind, fragen Sie Ihren Administrator.
+{% endhint %}
 
 ## Registrierung
 

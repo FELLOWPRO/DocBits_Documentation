@@ -16,11 +16,7 @@ Start with this 1:48 feature overview, then follow the detailed setup instructio
 
 {% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/en.mp4" %}
 
-[Player with captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/en.html) · [Captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/en.vtt) · [On-screen text](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/en.txt) · 1:48 · Full HD
-
 [See the feature page and invoice example](../../../feature-videos/advanced-workflow.md)
-
-The film combines animated feature cards with genuine recordings of the English Dev interface. It has music and on-screen text, with no narration. The test actions set the example field `approval_route` to `Approval` or `Standard`; a complete human approval process needs its own business actions. This demonstration was not saved or activated. The gate animations illustrate result requirements, not execution timing. Test reachability and the complete document run; a passing partial test alone does not prove the production flow.
 
 ## Watch: an invoice routing example
 

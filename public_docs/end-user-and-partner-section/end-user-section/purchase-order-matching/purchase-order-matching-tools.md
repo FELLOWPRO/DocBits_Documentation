@@ -6,9 +6,9 @@ Nella schermata di abbinamento PO la ricerca degli ordini di acquisto e gli stru
 
 ## Trovare l'ordine di acquisto giusto
 
-Inserisci un numero d'ordine di acquisto in **Cerca il numero dell'ordine di acquisto** e seleziona un risultato. L'icona del filtro accanto al campo apre altre opzioni di ricerca: Parola chiave, Fornitore, Stato, Stato dell'ordine, Dopo la data, Prima della data, Importo minimo dell'ordine, Importo massimo dell'ordine, Ordina per, Direzione di ordinamento e Numero di record da visualizzare. Scegli **Applicare** per usare i filtri oppure **Libero** per reimpostarli. Filtrare l'elenco non abbina e non esporta la fattura.
+Inserisci un numero d'ordine di acquisto in **Search purchase order number** e seleziona un risultato. L'icona del filtro accanto al campo apre le opzioni di ricerca su tutta l'area delle righe dell'ordine di acquisto: Parola chiave, Fornitore, Stato, Stato dell'ordine, Dopo la data, Prima della data, Importo minimo dell'ordine, Importo massimo dell'ordine, Ordina per, Direzione di ordinamento e Numero di record da visualizzare. Scegli **Apply** per usare i filtri oppure **Clear** per reimpostarli. Filtrare l'elenco non abbina e non esporta la fattura.
 
-<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-filter-it.png" alt="Filtro di ricerca degli ordini di acquisto in italiano con i campi Fornitore, Stato, Stato dell'ordine, data, importo e ordinamento"><figcaption><p>Apri l'icona del filtro accanto al campo di ricerca per altre opzioni di ricerca.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-matching-tools-filter-it-20261107.png" alt="Filtro di ricerca degli ordini di acquisto su tutta l'area delle righe dell'ordine, con i campi parola chiave, fornitore, stato, date, importo e ordinamento"><figcaption><p>Apri l'icona del filtro accanto al campo di ricerca per altre opzioni di ricerca.</p></figcaption></figure>
 
 ## Azioni della barra degli strumenti
 
@@ -16,16 +16,16 @@ Leggi il suggerimento di un'icona prima di selezionarla. La barra degli strument
 
 | Azione | Cosa fa |
 | --- | --- |
-| **Cronologia abbinamenti** (orologio) | Apre le attività di abbinamento precedenti per questo documento. Non avvia un nuovo abbinamento. |
-| **Guida** (?) | Apre la pagina di guida sull'abbinamento PO in una nuova scheda del browser. |
-| **Scorciatoie da tastiera** (tastiera) | Mostra le scorciatoie disponibili in questa schermata. Vedi [Scorciatoie da tastiera](keyboard-shortcuts.md). |
-| **Modalità di formazione** (tabella) | Attiva o disattiva lo trascinamento delle righe PO nella tabella della fattura. È utile solo quando il documento ha righe di fattura; la schermata di esempio qui sotto non ne ha. |
-| **Attività / Crea attività** | Apre le attività del documento o ne crea una quando queste azioni sono disponibili per il tuo documento e il tuo ruolo. Vedi [Attività](../tasks.md). |
-| **Contabilità automatica** | Apre la contabilità per questo documento quando i dati contabili sono presenti. |
-| **Abbinamento PO automatico** (bacchetta) | Esegue l'abbinamento automatico. Se l'organizzazione ha attivato l'esportazione automatica e il risultato ne rispetta le condizioni, questa azione può anche esportare. Controlla il documento prima di usarla. Vedi [Abbinamento automatico dei dati degli ordini di acquisto](automatic-purchase-order-data-matching.md). |
-| **Salvare** (dischetto) | Salva le modifiche all'abbinamento PO del documento. |
-| **Sincronizzare i dati** | Disponibile solo per la corrispondente impostazione sulla quantità dell'ordine di acquisto; aggiorna i dati selezionati dell'ordine dal sistema collegato. Usa il numero d'ordine visualizzato e le opzioni di sincronizzazione disponibili. |
-| **Esportazione** | Esporta il documento dopo l'abbinamento. Se la tua organizzazione offre più destinazioni di esportazione, usa la freccia accanto a **Esportazione** per sceglierne una. |
+| **Matching history** (clock) | Apre le attività di abbinamento precedenti per questo documento. Non avvia un nuovo abbinamento. |
+| **Help** (?) | Apre la pagina di guida sull'abbinamento PO in una nuova scheda del browser. |
+| **Keyboard shortcuts** (keyboard) | Mostra le scorciatoie disponibili in questa schermata. Vedi [Scorciatoie da tastiera](keyboard-shortcuts.md). |
+| **Training mode** (table) | Attiva o disattiva lo trascinamento delle righe PO nella tabella della fattura. È utile solo quando il documento ha righe di fattura; la schermata di esempio qui sotto non ne ha. |
+| **Tasks / Create task** | Apre le attività del documento o ne crea una quando queste azioni sono disponibili per il tuo documento e il tuo ruolo. Vedi [Attività](../tasks.md). |
+| **Auto Accounting** | Apre la contabilità per questo documento quando i dati contabili sono presenti. |
+| **Auto PO match** (wand) | Esegue l'abbinamento automatico. Se l'organizzazione ha attivato l'esportazione automatica e il risultato ne rispetta le condizioni, questa azione può anche esportare. Controlla il documento prima di usarla. Vedi [Abbinamento automatico dei dati degli ordini di acquisto](automatic-purchase-order-data-matching.md). |
+| **Save** (disk) | Salva le modifiche all'abbinamento PO del documento. |
+| **Sync Data** | Disponibile solo per la corrispondente impostazione sulla quantità dell'ordine di acquisto; aggiorna i dati selezionati dell'ordine dal sistema collegato. Usa il numero d'ordine visualizzato e le opzioni di sincronizzazione disponibili. |
+| **Export** | Esporta il documento dopo l'abbinamento. Se la tua organizzazione offre più destinazioni di esportazione, usa la freccia accanto a **Export** per sceglierne una. |
 
 La scheda dell'ordine di acquisto ha anche un'icona di aggiornamento per ricaricare quell'ordine di acquisto. L'icona delle impostazioni delle colonne all'estrema destra dell'intestazione della tabella decide quali colonne dell'ordine di acquisto sono visibili. Entrambi cambiano la vista della tabella PO, non i valori estratti della fattura.
 

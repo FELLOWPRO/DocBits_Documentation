@@ -38,6 +38,29 @@ This section lists every DocBits app and feature and whether it is enabled for y
 | **Days Left**             | Days remaining until the end date.                                                                             |
 | **Actions**               | Per-app actions menu.                                                                                          |
 
+## Usage analytics
+
+<figure><img src="../../../.gitbook/assets/subscriptions_usage_analytics.png" alt="Usage analytics"><figcaption><p>Usage analytics card</p></figcaption></figure>
+
+The **Usage analytics** card shows how much of the included token allowance your subscribed apps have used in the current billing period. Its header line names that period, for example `Current billing period: Jan 1, 2026 – Dec 31, 2026`.
+
+Each app with a token allowance has one row:
+
+| Element                | Description                                                                                                       |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **App** and plan       | The app and the subscription the allowance belongs to (e.g. AI Workforce, DocNet).                                |
+| Progress bar           | Share of the included tokens already used.                                                                        |
+| Usage text             | Tokens used out of the included amount, with the percentage, e.g. `5,040,000 of 12,000,000 tokens used (42%)`.     |
+| Status                 | **Within limit**, **Approaching limit** from 80% of the included amount, or **Over limit** from 100%.             |
+
+The card states the thresholds itself: warning from 80% of the included amount, over limit from 100%.
+
+### Usage over the last six months
+
+The chart below the rows shows the monthly token consumption of a single app — the current month and the five months before it. Choose the app in the **App** list above the chart.
+
+If no subscription carries a token allowance, the card shows **No active subscription with a token allowance** and the chart shows **No usage recorded in the last six months**.
+
 ## Subscription Usage
 
 <figure><img src="../../../.gitbook/assets/subscriptions_usage.png" alt="Subscription Usage"><figcaption></figcaption></figure>

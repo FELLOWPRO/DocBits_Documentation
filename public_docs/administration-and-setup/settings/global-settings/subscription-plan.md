@@ -60,16 +60,3 @@ The card states the thresholds itself: warning from 80% of the included amount, 
 The chart below the rows shows the monthly token consumption of a single app — the current month and the five months before it. Choose the app in the **App** list above the chart.
 
 If no subscription carries a token allowance, the card shows **No active subscription with a token allowance** and the chart shows **No usage recorded in the last six months**.
-
-## Subscription Usage
-
-<figure><img src="../../../.gitbook/assets/subscriptions_usage.png" alt="Subscription Usage"><figcaption></figcaption></figure>
-
-Monitor your token and workflow usage over a selected period. Use the **Select** button to choose the date range.
-
-| Column               | Description                                                           |
-| -------------------- | --------------------------------------------------------------------- |
-| **Type**             | The usage category — Document, Workflow, Advanced Workflow or DocNet. |
-| **From / To**        | The period the usage is reported for.                                 |
-| **Tokens Used**      | Tokens consumed in the period.                                        |
-| **Remaining Tokens** | Tokens left for the period.                                           |

@@ -44,6 +44,14 @@ Use approval to record your business decision on an invoice that has already bee
 
 <figure><img src="../../.gitbook/assets/customer-rejected-en-a48081418929.png" alt="Saved rejection and its recorded reason after reopening the invoice."><figcaption><p>Saved rejection and its recorded reason after reopening the invoice.</p></figcaption></figure>
 
+### Download the original file
+
+**Download** next to the file name in the document panel saves the imported file to your computer. The download icon in the status bar at the bottom does the same.
+
+The saved file keeps the name and format it had when it arrived. An XML invoice stays an XML file, a PDF stays a PDF. Download the file when the preview is not enough, for example to read the original electronic invoice structure, raw tax lines, or a value that the preview shows differently.
+
+A download changes neither the document nor its approval stage.
+
 ## Check the next stage
 
 When a second approval is configured, your first approval leaves the invoice waiting for another authorized reviewer. It is not yet fully approved. A rejection needs business clarification; correction and resubmission follow your configured process.

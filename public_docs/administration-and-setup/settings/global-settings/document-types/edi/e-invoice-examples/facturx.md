@@ -6,9 +6,9 @@ Exports to the document management system (IDM):
 
 <figure><img src="../../../../../../.gitbook/assets/facturx_extended_idm_export.png" alt="FacturX Extended IDM Export"><figcaption></figcaption></figure>
 
-Exported to Infor LN:
+Exported to Infor ERP / SAP:
 
-<figure><img src="../../../../../../.gitbook/assets/facturx_extended_infor_ln_export.png" alt="FacturX Extended Infor LN Export"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/facturx_extended_infor_ln_export.png" alt="FacturX Extended Infor ERP / SAP Export"><figcaption></figcaption></figure>
 
 Exported to Infor M3:
 
@@ -20,9 +20,9 @@ Exports to the document management system (IDM):
 
 <figure><img src="../../../../../../.gitbook/assets/facturx_basic_idm_export.png" alt="FacturX Basic IDM Export"><figcaption></figcaption></figure>
 
-Exported to Infor LN:
+Exported to Infor ERP / SAP:
 
-<figure><img src="../../../../../../.gitbook/assets/facturx_basic_infor_ln_export.png" alt="FacturX Basic Infor LN Export"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/facturx_basic_infor_ln_export.png" alt="FacturX Basic Infor ERP / SAP Export"><figcaption></figcaption></figure>
 
 Exported to Infor M3:
 

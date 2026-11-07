@@ -4,7 +4,7 @@ Die Checkboxen steuern Pflichtwerte, Bearbeitbarkeit und Sichtbarkeit. Use AI wi
 
 Alles außer dem Titel wird direkt in der Liste geändert; es gibt keinen Bearbeiten-Dialog.
 
-**Wo:** Einstellungen → Dokumentenverarbeitung → Dokumenttypen → Tabellenspalten
+**Wo:** Settings → Document Processing → Document Types → Table Columns
 
 ## Ein Flag umschalten
 
@@ -49,16 +49,16 @@ Eine gelöschte Spalte kann nicht aus der Liste wiederhergestellt werden. Fügen
 
 ## Use AI: Standard, Ja oder Nein
 
-Öffnen Sie die [Tabellenspalten](README.md) des richtigen Dokumenttyps und der richtigen Tabelle. **KI nutzen (Use AI)** ist eine dreistufige Auswahl, keine Checkbox. Die Auswahl wird unmittelbar gespeichert.
+Öffnen Sie die [Tabellenspalten](README.md) des richtigen Dokumenttyps und der richtigen Tabelle. **Use AI** ist eine dreistufige Auswahl, keine Checkbox. Die Auswahl wird unmittelbar gespeichert.
 
 | Auswahl im aktuellen Menü | Bedeutung für das Basisschema |
 | --- | --- |
-| **Standard · angefordert** oder **Standard · nicht angefordert** | Übernimmt die DocBits-Vorgabe für diesen Dokumenttyp und Spaltennamen. Standard bedeutet weder immer an noch immer aus. |
-| **Ja · angefordert** | Fordert diese konfigurierte Spalte ausdrücklich von der KI an. |
-| **Nein · nicht angefordert** | Fordert sie im Basisschema nicht an, auch wenn sie zur KI-Standardauswahl gehört. |
+| **Default · requested** oder **Default · not requested** | Übernimmt die DocBits-Vorgabe für diesen Dokumenttyp und Spaltennamen. Standard bedeutet weder immer an noch immer aus. |
+| **Yes · requested** | Fordert diese konfigurierte Spalte ausdrücklich von der KI an. |
+| **No · not requested** | Fordert sie im Basisschema nicht an, auch wenn sie zur KI-Standardauswahl gehört. |
 
-Zurück auf **Standard** entfernt die ausdrückliche Ja-/Nein-Auswahl. Eine neu angelegte eigene Spalte gehört normalerweise nicht zur KI-Standardauswahl; setzen Sie sie auf **Ja**, wenn die KI sie liefern soll. Die Liste der KI-Standardspalten ist nicht identisch mit allen mitgelieferten Spalten. Die angezeigte Wirkung und die Vorschau sind maßgeblich.
+Zurück auf **Default** entfernt die ausdrückliche Ja-/Nein-Auswahl. Eine neu angelegte eigene Spalte gehört normalerweise nicht zur KI-Standardauswahl; setzen Sie sie auf **Yes**, wenn die KI sie liefern soll. Die Liste der KI-Standardspalten ist nicht identisch mit allen mitgelieferten Spalten. Die angezeigte Wirkung und die Vorschau sind maßgeblich.
 
-**Pflichtfeld**, **Schreibgeschützt** und **Ausgeblendet** haben andere Aufgaben: Vollständigkeitsprüfung, Bearbeitbarkeit und Sichtbarkeit. Keines dieser Merkmale ersetzt die KI-Auswahl. **Nein** löscht weder die Spalte noch vorhandene Werte und verhindert nicht, dass Regeln, Skripte oder andere Quellen Werte liefern. Lieferantentraining und zusätzliche KI-Tags können den Laufauftrag erweitern; lösen Sie Widersprüche dort ebenfalls auf. Ein rein regelbasiertes Ergebnis wird durch den Structured-Output-Schalter nicht automatisch ersetzt.
+**Required**, **Read Only** und **Hidden** haben andere Aufgaben: Vollständigkeitsprüfung, Bearbeitbarkeit und Sichtbarkeit. Keines dieser Merkmale ersetzt die KI-Auswahl. **No** löscht weder die Spalte noch vorhandene Werte und verhindert nicht, dass Regeln, Skripte oder andere Quellen Werte liefern. Lieferantentraining und zusätzliche KI-Tags können den Laufauftrag erweitern; lösen Sie Widersprüche dort ebenfalls auf. Ein rein regelbasiertes Ergebnis wird durch den Structured-Output-Schalter nicht automatisch ersetzt.
 
 [Structured Output für Tabellen](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

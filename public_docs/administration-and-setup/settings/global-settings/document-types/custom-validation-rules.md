@@ -14,13 +14,13 @@ Eine Regel beantwortet drei Fragen:
 
 Schlägt die Prüfung fehl, markiert DocBits das Feld oder die Zelle auf dem **Validierungsbildschirm** und zeigt Ihre Meldung an, genau wie bei einer integrierten Prüfung. Bei der Schwere **FEHLER** kann das Dokument erst validiert werden, wenn das Problem behoben ist; bei **Warnung** sieht der Benutzer lediglich einen Hinweis.
 
-Regeln werden pro **Dokumenttyp** definiert und laufen für jedes Dokument dieses Typs: bei der Verarbeitung und bei jedem Speichern des Dokuments.
+Regeln werden pro **Document Type** definiert und laufen für jedes Dokument dieses Typs: bei der Verarbeitung und bei jedem Speichern des Dokuments.
 
 ### Probleme, die sie lösen
 
 | Geschäftliche Anforderung | Ohne benutzerdefinierte Regeln | Mit einer benutzerdefinierten Regel |
 | --- | --- | --- |
-| Deutsche Rechnungen über 250 EUR müssen die Steuernummer des Lieferanten enthalten | ein Skript, oder Benutzer müssen daran denken | **Pflichtfeld** für Supplier Tax ID, *applies when* Herkunft ist DE und Gesamtbetrag ist größer als 250 |
+| Deutsche Rechnungen über 250 EUR müssen die Steuernummer des Lieferanten enthalten | ein Skript, oder Benutzer müssen daran denken | **Required** für Supplier Tax ID, *applies when* Herkunft ist DE und Gesamtbetrag ist größer als 250 |
 | Die Rechnungsnummern eines Lieferanten sehen immer aus wie `INV-123456` | Tippfehler gelangen ins ERP | **Muster** `^INV-\d{6}$` für Invoice Number bei diesem Lieferanten |
 | Jede Artikelzeile braucht eine Menge größer als null | Zeilen mit Menge 0 werden exportiert | **Reichweite** (Minimum 0.01) für die Spalte Quantity |
 | Das Fälligkeitsdatum darf nicht vor dem Rechnungsdatum liegen | falsche Zahlläufe | **Vergleichsfelder**: Due Date am oder nach Invoice Date |
@@ -32,14 +32,14 @@ Regeln werden pro **Dokumenttyp** definiert und laufen für jedes Dokument diese
 
 Benutzerdefinierte Validierungsregeln werden **pro Dokumenttyp** eingeschaltet. Es gibt keinen organisationsweiten Schalter.
 
-1. Gehen Sie zu **Einstellungen → Dokumentenverarbeitung → Dokumenttypen**.
-2. Klicken Sie auf der Karte des Dokumenttyps auf das **Einstellungen**-Symbol (Zahnrad).
+1. Gehen Sie zu **Settings → Document Processing → Document Types**.
+2. Klicken Sie auf der Karte des Dokumenttyps auf das **Settings**-Symbol (Zahnrad).
 3. Öffnen Sie den Abschnitt **Benutzerdefinierte Validierungsregeln** und schalten Sie den Schalter ein.
 4. Klicken Sie auf **Validierungsregeln verwalten**, um die Regelliste zu öffnen.
 
 <figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles-de.png" alt="Die Regelschalter in den zusätzlichen Einstellungen eines Dokumenttyps"><figcaption><p>Die Schalter für Manage Layouts, Custom Validation Rules und Transformation Rules</p></figcaption></figure>
 
-Ab sofort zeigt die Karte des Dokumenttyps zusätzlich einen Link **Validierungsregeln**.
+Ab sofort zeigt die Karte des Dokumenttyps zusätzlich einen Link **Validation Rules**.
 
 <figure><img src="../../../../.gitbook/assets/doc-types-rules-links.png" alt="Die Dokumenttyp-Karte mit dem Link Validation Rules"><figcaption><p>Die Links auf der Dokumenttyp-Karte</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Ab sofort zeigt die Karte des Dokumenttyps zusätzlich einen Link **Validierungs
 
 ## Die Regelliste
 
-**Dokumenttypen → (Dokumenttyp) → Validierungsregeln** listet jede Regel des Dokumenttyps auf.
+**Document Types → (Dokumenttyp) → Validation Rules** listet jede Regel des Dokumenttyps auf.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-de.png" alt="Verwaltung benutzerdefinierter Validierungsregeln mit ausgeblendeten Konfigurationsnamen."><figcaption><p>Verwaltung benutzerdefinierter Validierungsregeln mit ausgeblendeten Konfigurationsnamen.</p></figcaption></figure>
 
@@ -59,15 +59,15 @@ Jede Karte zeigt Namen und Beschreibung der Regel sowie die Badges für ihre **E
 
 | Quelle | Was es ist | Was Sie tun können |
 | --- | --- | --- |
-| **Systemstandard** | Eine Regel, die mit DocBits für alle Organisationen ausgeliefert wird. | Sie kann nicht direkt bearbeitet werden, der Builder zeigt „This is a system default rule and cannot be edited.“ Klicken Sie auf **Anpassen**, um eine eigene bearbeitbare Kopie zu erstellen, oder schalten Sie sie aus, um sie für Ihre Organisation zu deaktivieren. |
+| **System default** | Eine Regel, die mit DocBits für alle Organisationen ausgeliefert wird. | Sie kann nicht direkt bearbeitet werden, der Builder zeigt „This is a system default rule and cannot be edited.“ Klicken Sie auf **Customize**, um eine eigene bearbeitbare Kopie zu erstellen, oder schalten Sie sie aus, um sie für Ihre Organisation zu deaktivieren. |
 | **Maßgeschneidert** | Eine System-Standardregel, die Ihre Organisation geändert oder ausgeschaltet hat. | Bearbeiten Sie sie wie Ihre eigene Regel. **Auf Standard zurücksetzen** löscht Ihre Kopie und stellt das Original wieder her. |
-| **BENUTZERDEFINIERT** | Eine Regel, die Ihre Organisation erstellt hat. | Bearbeiten, **Duplizieren**, **Löschen**. |
+| **BENUTZERDEFINIERT** | Eine Regel, die Ihre Organisation erstellt hat. | Bearbeiten, **Duplicate**, **Delete**. |
 
 Änderungen an System-Standardregeln wirken sich nie auf andere Organisationen aus.
 
 ## Eine Regel erstellen
 
-Klicken Sie auf **Neue Regel**. Der Builder besteht aus drei Schritten. **Testregel** und **Speichern** befinden sich oben rechts.
+Klicken Sie auf **New rule**. Der Builder besteht aus drei Schritten. **Test rule** und **Save** befinden sich oben rechts.
 
 ### Schritt 1: Name & Geltungsbereich
 
@@ -77,8 +77,8 @@ Klicken Sie auf **Neue Regel**. Der Builder besteht aus drei Schritten. **Testre
 | --- | --- |
 | **Regelebene** | Worauf die Regel schaut und wo der Fehler angezeigt wird, siehe [Regelebenen](#regelebenen). |
 | **Schwere** | **FEHLER** markiert das Feld als ungültig und blockiert die Validierung. **Warnung** zeigt die Meldung an, blockiert aber nie. |
-| **Regelname** | Wird in der Liste und für Administratoren angezeigt. Beschreiben Sie darin die Regel („Steuernummer des Lieferanten für deutsche Rechnungen erforderlich“). |
-| **Regelschlüssel** | Ein technischer Schlüssel, der aus dem Namen erzeugt wird. Er bleibt gleich, wenn Sie die Regel später umbenennen. Klicken Sie auf den Stift, um vor dem ersten Speichern einen eigenen Schlüssel zu wählen; danach ist er fest. |
+| **Rule Name** | Wird in der Liste und für Administratoren angezeigt. Beschreiben Sie darin die Regel („Steuernummer des Lieferanten für deutsche Rechnungen erforderlich“). |
+| **Rule key** | Ein technischer Schlüssel, der aus dem Namen erzeugt wird. Er bleibt gleich, wenn Sie die Regel später umbenennen. Klicken Sie auf den Stift, um vor dem ersten Speichern einen eigenen Schlüssel zu wählen; danach ist er fest. |
 | **Beschreibung** | Optionale Erläuterung für andere Administratoren. |
 | **Name der Tabelle** | *Nur Tabellenzeile.* Die Tabelle, deren Zeilen geprüft werden, zum Beispiel `INVOICE_TABLE`. |
 | **Attach error to field / column** | Das Feld (bei Tabellenzeilen die Spalte), das den Fehler auf dem Validierungsbildschirm anzeigt. |
@@ -187,7 +187,7 @@ Wie *Allowed values*, aber die Werte stammen aus einer gemeinsamen **Wertelisten
 <figure><img src="../../../../.gitbook/assets/validation-cvr-check-lov.png" alt="Die Prüfung List of Values"><figcaption><p>List of Values: die Werte kommen aus einer benannten Liste aus den Einstellungen</p></figcaption></figure>
 
 {% hint style="info" %}
-Mit Ausnahme von **Pflichtfeld** **bestehen** alle Prüfungen, **wenn der Wert leer ist**. Eine Pattern-Regel für die Bestellung beanstandet keine Rechnungen ohne Bestellung. Wenn auch ein leerer Wert ein Problem darstellt, fügen Sie eine Required-Regel hinzu oder beschränken Sie die Regel mit *Applies when … is not empty*.
+Mit Ausnahme von **Required** **bestehen** alle Prüfungen, **wenn der Wert leer ist**. Eine Pattern-Regel für die Bestellung beanstandet keine Rechnungen ohne Bestellung. Wenn auch ein leerer Wert ein Problem darstellt, fügen Sie eine Required-Regel hinzu oder beschränken Sie die Regel mit *Applies when … is not empty*.
 {% endhint %}
 
 #### Fehlermeldung und Fehlercode
@@ -197,7 +197,7 @@ Mit Ausnahme von **Pflichtfeld** **bestehen** alle Prüfungen, **wenn der Wert l
 
 ## Regel testen
 
-Klicken Sie auf **Testregel**, um die aktuelle Version der Regel, ob gespeichert oder nicht, an einem Dokument auszuführen. Geben Sie eine **Dokument-ID** ein oder wechseln Sie zu **Nach Dokument-JSON** und fügen Sie extrahierte Daten ein. **Es wird nichts gespeichert**, und das Dokument wird nicht verändert.
+Klicken Sie auf **Test rule**, um die aktuelle Version der Regel, ob gespeichert oder nicht, an einem Dokument auszuführen. Geben Sie eine **Dokument-ID** ein oder wechseln Sie zu **Nach Dokument-JSON** und fügen Sie extrahierte Daten ein. **Es wird nichts gespeichert**, und das Dokument wird nicht verändert.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-test-dialog.png" alt="Der Test-rule-Dialog"><figcaption><p>Test rule: die Regel an einem echten Dokument oder an eingefügten JSON-Daten prüfen</p></figcaption></figure>
 
@@ -230,7 +230,7 @@ Testen Sie jede neue Regel an mindestens einem Dokument, das fehlschlagen soll, 
 
 Jede Regel kann ihre Auswertungen protokollieren lassen. Öffnen Sie dazu beim Dokumenttyp die Seite **Regelausführungsprotokolle**: Der Seitenkopf nennt den Dokumenttyp, das Aktualisieren-Symbol oben rechts lädt die Liste neu.
 
-Mit **Finden durch** legen Sie fest, wonach gesucht wird; voreingestellt ist **Regelschlüssel**, den Wert tragen Sie in das Suchfeld daneben ein. Beim Suchen nach einem Dokument ist **Regeltyp** erforderlich. Mit **Ergebnis**, **Ausgeführt**, **Von Datum** und **Miteinander ausgehen** grenzen Sie die Treffer weiter ein — das Bis-Datum trägt in der Oberfläche die Beschriftung **Miteinander ausgehen**.
+Mit **Finden durch** legen Sie fest, wonach gesucht wird; voreingestellt ist **Rule key**, den Wert tragen Sie in das Suchfeld daneben ein. Beim Suchen nach einem Dokument ist **Regeltyp** erforderlich. Mit **Ergebnis**, **Ausgeführt**, **Von Datum** und **Miteinander ausgehen** grenzen Sie die Treffer weiter ein — das Bis-Datum trägt in der Oberfläche die Beschriftung **Miteinander ausgehen**.
 
 <figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-de.png" alt="Die Regelausführungsprotokolle"><figcaption><p>Die Seite Regelausführungsprotokolle: oben die Filter, darunter eine Zeile pro Auswertung. Solange nicht gesucht wurde, nennt die Tabelle den Suchweg.</p></figcaption></figure>
 
@@ -240,10 +240,10 @@ Dieselbe Seite zeigt auch die Protokolle der Transformations- und Layout-Auswahl
 
 ## Rezepte
 
-Kopieren Sie diese Regeln als Ausgangspunkt. Feld- und Spaltenschlüssel stammen vom Standard-Dokumenttyp **Rechnung**; passen Sie sie an Ihre Dokumenttypen an.
+Kopieren Sie diese Regeln als Ausgangspunkt. Feld- und Spaltenschlüssel stammen vom Standard-Dokumenttyp **Invoice**; passen Sie sie an Ihre Dokumenttypen an.
 
 **1. Steuernummer des Lieferanten bei deutschen Rechnungen über 250 EUR**
-Header field · Error · an *Supplier Tax ID* anhängen · Applies when **Alle**: *Document Origin* ist *Deutsch*, *Total Amount* greater than *250* · Prüfung **Pflichtfeld** · Meldung „Die Steuernummer des Lieferanten fehlt. Deutsche Rechnungen über 250 EUR müssen sie enthalten.“ · Code `REQUIRED_CONDITIONAL`.
+Header field · Error · an *Supplier Tax ID* anhängen · Applies when **Alle**: *Document Origin* ist *Deutsch*, *Total Amount* greater than *250* · Prüfung **Required** · Meldung „Die Steuernummer des Lieferanten fehlt. Deutsche Rechnungen über 250 EUR müssen sie enthalten.“ · Code `REQUIRED_CONDITIONAL`.
 
 **2. Kopfsummen ergeben die Gesamtsumme** (ersetzt die integrierte Prüfung)
 Header field · Error · an *Total Amount* anhängen · immer · **Formel** `header.total_amount == header.total_net_amount + header.total_tax_amount`, Toleranz `0.01` · Meldung „Die Summe {actual} entspricht nicht Netto plus Steuer ({expected}).“
@@ -270,7 +270,7 @@ Header field · Error · *Invoice Date* · immer · **Vergleichsfelder** Invoice
 Header field · **Warnung** · *Currency* · immer · **Wertelisten** *approved_currencies* · Code `VALUE_NOT_ALLOWED`.
 
 **10. Bestellung erforderlich ab 5.000**
-Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Pflichtfeld**.
+Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Required**.
 
 ## Bewährte Vorgehensweisen
 
@@ -284,14 +284,14 @@ Header field · Error · *Purchase Order* · Applies when *Total Amount* greater
 
 | Symptom | Was zu prüfen ist |
 | --- | --- |
-| Die Regel löst nie einen Fehler aus | Ist die Funktion für den Dokumenttyp aktiviert und die Regel **aktiv**? Führen Sie **Testregel** am Dokument aus: „skipped“ bedeutet, dass *Applies when* falsch war. |
-| Ein leeres Feld wird nicht gemeldet | Nur **Pflichtfeld** meldet leere Werte. Fügen Sie eine Required-Regel hinzu. |
+| Die Regel löst nie einen Fehler aus | Ist die Funktion für den Dokumenttyp aktiviert und die Regel **aktiv**? Führen Sie **Test rule** am Dokument aus: „skipped“ bedeutet, dass *Applies when* falsch war. |
+| Ein leeres Feld wird nicht gemeldet | Nur **Required** meldet leere Werte. Fügen Sie eine Required-Regel hinzu. |
 | Die integrierten Summenprüfungen sind verschwunden | Erwartetes Verhalten, solange benutzerdefinierte Regeln aktiv sind. Bilden Sie sie als Formula-Regeln nach (Rezepte 2 und 3). |
 | Eine geänderte Regel hat keine Wirkung auf ein Dokument | Dokumente werden beim nächsten Speichern erneut geprüft. Speichern Sie das Dokument oder verarbeiten Sie es erneut. |
 | Ein Pattern trifft auf Werte zu, auf die es nicht zutreffen sollte | Patterns durchsuchen den Wert. Verankern Sie sie mit `^` und `$`. |
 | An einem Feld wird nur einer von zwei Fehlern angezeigt | Ein Feld zeigt nur die erste fehlgeschlagene Regel. Passen Sie die Prioritäten an oder hängen Sie eine der Regeln an ein anderes Feld an. |
 | Tabellenspalten fehlen in *Applies when* | Sie stehen nur auf der Ebene **Tabellenzeile** zur Verfügung. |
-| Die System-Standardregel kann nicht geändert werden | Klicken Sie auf **Anpassen**, um eine eigene Kopie zu erstellen. |
+| Die System-Standardregel kann nicht geändert werden | Klicken Sie auf **Customize**, um eine eigene Kopie zu erstellen. |
 
 ## Verwandte Themen
 

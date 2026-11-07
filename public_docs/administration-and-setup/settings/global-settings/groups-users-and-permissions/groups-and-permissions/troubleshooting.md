@@ -7,7 +7,7 @@ Wenn Benutzer unerwartete Zugriffsbeschränkungen erleben - wie fehlende Dokumen
 Zugriffssteuerungseinstellungen gelten nur, wenn die Funktion **aktiviert** ist.
 
 * Navigieren Sie zu: `Einstellungen` > `Dokumentenverarbeitung` > `Modul`.
-* Stellen Sie sicher, dass der **Zugriffssteuerung**-Schalter **aktiviert** ist.
+* Stellen Sie sicher, dass der **Access Control**-Schalter **aktiviert** ist.
 * Wenn deaktiviert, haben in der Regel alle Benutzer uneingeschränkten Zugriff, unabhängig von Gruppen- oder Feldberechtigungen.
 
 ### 2. Überprüfen Sie Gruppenzuweisungen
@@ -15,7 +15,7 @@ Zugriffssteuerungseinstellungen gelten nur, wenn die Funktion **aktiviert** ist.
 Stellen Sie sicher, dass der Benutzer korrekt den entsprechenden Gruppen zugeordnet ist:
 
 * Navigieren Sie zu: `Einstellungen` > `Organisation & Zugang` > `Gruppen und Berechtigungen`.
-* Wählen Sie **Gruppen und Berechtigungen** aus.
+* Wählen Sie **Groups and Permissions** aus.
 * Bestätigen Sie, dass der Benutzer unter der erwarteten Gruppe aufgeführt ist.
 * Wenn die Gruppe spezifische Zugriffssteuerung verwendet, blockiert eine fehlende Gruppenzuweisung den Zugriff auf Dokumente und Aktionen.
 
@@ -23,9 +23,9 @@ Stellen Sie sicher, dass der Benutzer korrekt den entsprechenden Gruppen zugeord
 
 Der Zugriff wird pro Dokumententyp und pro Aktion gewährt:
 
-* Überprüfen Sie im **Zugriffssteuerung**-Bildschirm für die Gruppe den Dokumententyp (z. B. Rechnung, Bestellung).
+* Überprüfen Sie im **Access Control**-Bildschirm für die Gruppe den Dokumententyp (z. B. Rechnung, Bestellung).
 * Validieren Sie Berechtigungen wie:
-  * **Auflisten**, **Anzeigen**, **Bearbeiten**, **Löschen**, **Massenaktualisierung**
+  * **Auflisten**, **View**, **Edit**, **Delete**, **Mass Update**
   * **Genehmigungsstufen** (1., 2.), **Dokument entsperren**
 * Stellen Sie sicher, dass die Zugriffsebene nicht auf **Besitzer** oder **Admin** beschränkt ist, es sei denn, dies ist angemessen.
 
@@ -35,7 +35,7 @@ Der Zugriff kann auch auf Felderebene eingeschränkt sein, was das Bearbeiten od
 
 * Navigieren Sie in der Zugriffskontiguration der Gruppe zum Dokumententyp und überprüfen Sie die Einstellungen auf Felderebene.
 * Bestätigen Sie, ob Felder auf Folgendes eingestellt sind:
-  * **Lesen/Schreiben**, **Nur Lesen**, **Besitzer Schreiben**, **Keine**
+  * **Lesen/Schreiben**, **Read Only**, **Besitzer Schreiben**, **Keine**
 * Passen Sie bei Bedarf basierend auf der Benutzerrolle an.
 
 ### 5. Überprüfen Sie die Einstellung "Nur zugewiesene Dokumente"

@@ -8,8 +8,8 @@
 
 | Was Sie sehen | Pfad |
 |---|---|
-| Zeilen im Tab **Extrahierte Tabelle** | Regelbasierter Pfad. Der Lieferant hat eine trainierte Tabelle; die Zeilen stammen aus den gespeicherten Koordinatenregeln, und die KI war nicht beteiligt (außer bei Spalten mit *KI nutzen*). |
-| Zeilen im Tab **KI Extrahierte Tabelle**, Feld *Tags* darunter | KI-Pfad. Keine gespeicherten Regeln haben gepasst; die KI-Tabellenextraktion hat die Zeilen erzeugt, mit der KI-Stufe der Organisation oder der Stufe, die für diesen Lieferanten unter *Weitere Einstellungen* → *Lieferantenbasiertes KI-Modell* festgelegt ist. |
+| Zeilen im Tab **Extracted table** | Regelbasierter Pfad. Der Lieferant hat eine trainierte Tabelle; die Zeilen stammen aus den gespeicherten Koordinatenregeln, und die KI war nicht beteiligt (außer bei Spalten mit *KI nutzen*). |
+| Zeilen im Tab **AI Extracted table**, Feld *Tags* darunter | KI-Pfad. Keine gespeicherten Regeln haben gepasst; die KI-Tabellenextraktion hat die Zeilen erzeugt, mit der KI-Stufe der Organisation oder der Stufe, die für diesen Lieferanten unter *More Settings* → *Lieferantenbasiertes KI-Modell* festgelegt ist. |
 | Tooltip *AI table not found* am KI-Tab | Der KI-Pfad ist gelaufen und hat für dieses Dokument nichts geliefert. |
 | Gar keine Tabellen-Tabs | Beide Tabelleneinstellungen sind für die Organisation ausgeschaltet; nichts hat die Tabelle extrahiert. |
 | *No line items yet* (Noch keine Einzelposten) | Der Pfad ist gelaufen, hat aber keine Zeilen gefunden (kein lesbarer Text, keine Tabelle auf der Seite, oder die Regeln haben auf dieses Layout nicht gepasst). |
@@ -18,9 +18,9 @@ Kopffelder tragen neben dem Wert ein eigenes Quellen-Kennzeichen: *Extracted usi
 
 ## 2. Die Konfiguration des Lieferanten prüfen
 
-* **Einstellungen → Dokumentenverarbeitung → Klassifizierung und Extraktion → AI-Modell**: Die Tabelle unter der Auswahl listet jeden Lieferanten mit einem gespeicherten Modell oder Training. Ein Lieferant in dieser Liste mit *Trainingsdaten* hat gespeicherte Regeln; *Trainingsdaten zurücksetzen* entfernt sie.
-* **Einstellungen → Dokumentenverarbeitung → OCR-Einstellungen**: *E-Text verwenden, falls verfügbar* und *Verwenden Sie AI-Daten für Tabellen, falls verfügbar* ändern, welchen Text die Extraktion sieht. Ein Lieferant kann E-Text unter *Weitere Einstellungen* im Validierungsbildschirm überschreiben.
-* **Einstellungen → Dokumentenverarbeitung → Dokumenttypen → Tabellenspalten**: die Kennzeichen Versteckt, Erforderlich und *KI nutzen*. Eine versteckte Spalte wird nie gefüllt; eine Spalte mit *KI nutzen* wird auch bei Lieferanten mit Regeln von der KI gefüllt.
+* **Settings → Document Processing → Classification and Extraction → AI-Modell**: Die Tabelle unter der Auswahl listet jeden Lieferanten mit einem gespeicherten Modell oder Training. Ein Lieferant in dieser Liste mit *Trainingsdaten* hat gespeicherte Regeln; *Trainingsdaten zurücksetzen* entfernt sie.
+* **Settings → Document Processing → OCR Settings**: *E-Text verwenden, falls verfügbar* und *Verwenden Sie AI-Daten für Tabellen, falls verfügbar* ändern, welchen Text die Extraktion sieht. Ein Lieferant kann E-Text unter *More Settings* im Validierungsbildschirm überschreiben.
+* **Settings → Document Processing → Document Types → Table Columns**: die Kennzeichen Versteckt, Erforderlich und *KI nutzen*. Eine versteckte Spalte wird nie gefüllt; eine Spalte mit *KI nutzen* wird auch bei Lieferanten mit Regeln von der KI gefüllt.
 
 ## 3. Ohne die Oberfläche reproduzieren (API / MCP)
 
@@ -39,7 +39,7 @@ Die DocBits-MCP-Tools sind auf der Seite *DocBits MCP* der englischen Dokumentat
 
 ## 4. Die Protokolle lesen
 
-**Einstellungen → Log-Einstellungen** (Aktivitätsprotokollierung) zeigt die Ereignisse aller Dienste. Für eine Tabellenfrage:
+**Settings → Log Settings** (Aktivitätsprotokollierung) zeigt die Ereignisse aller Dienste. Für eine Tabellenfrage:
 
 * Filtern Sie unter *Protokolle durchsuchen* nach dem Dateinamen oder der ID des Dokuments.
 * Verwenden Sie den Filter *Dienst*: Die Extraktion selbst läuft im Extraktionsdienst und in den Celery-Workern, nicht im Dienst `api`. Sehen Sie nur `api`-Zeilen, erweitern Sie den Filter.

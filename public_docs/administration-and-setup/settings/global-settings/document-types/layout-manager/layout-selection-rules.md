@@ -16,18 +16,18 @@ Die Herkunft steht weiterhin zur Verfügung – als eine Bedingung unter vielen.
 
 | Anforderung | Klassische herkunftsbasierte Layouts | Mit Auswahlregeln |
 | --- | --- | --- |
-| Die Rechnungen eines Lieferanten benötigen zusätzliche Felder (Projekt, Zollnummer) | ohne neue Herkunft nicht möglich | Regel *Supplier ID is 20723* → Layout „Rechnung mit Projektfeldern“ |
+| Die Rechnungen eines Lieferanten benötigen zusätzliche Fields (Projekt, Zollnummer) | ohne neue Herkunft nicht möglich | Regel *Supplier ID is 20723* → Layout „Rechnung mit Projektfeldern“ |
 | DE-, AT- und CH-Dokumente sollen gleich aussehen | drei Kopien desselben Layouts, die gepflegt werden müssen | ein Layout, eine Regel pro Herkunft (oder eine ANY-Gruppe), die darauf verweist |
 | E-Rechnungen benötigen einen einfacheren Bildschirm als gescannte PDFs | nicht möglich | Regel *Extraction Method is ELECTRONIC_DOCUMENT* → Layout „E-Rechnung“ |
-| Rechnungen mit hohem Wert benötigen mehr Felder auf dem Genehmigungsbildschirm | nicht möglich | Approval-Regel *Total Amount greater than 10000* → Layout „Genehmigung hoher Beträge“ |
+| Rechnungen mit hohem Wert benötigen mehr Fields auf dem Genehmigungsbildschirm | nicht möglich | Approval-Regel *Total Amount greater than 10000* → Layout „Genehmigung hoher Beträge“ |
 | Der zweite Genehmiger soll einen anderen Bildschirm sehen als der erste | eigener Layouttyp „zweite Genehmigung“ | Approval-Regel *Document Status is Pending second approval* → Layout „Zweite Genehmigung“ |
 
 ## Regelbasierte Layouts aktivieren
 
 Regelbasierte Layouts werden **pro Dokumenttyp** von einem **Organisationsadministrator** eingeschaltet.
 
-1. Gehen Sie zu **Einstellungen → Dokumenttypen**.
-2. Klicken Sie auf das **Einstellungen**-Symbol (Zahnrad) auf der Karte des Dokumenttyps.
+1. Gehen Sie zu **Settings → Document Types**.
+2. Klicken Sie auf das **Settings**-Symbol (Zahnrad) auf der Karte des Dokumenttyps.
 3. Öffnen Sie **Layouts verwalten** und schalten Sie den Schalter ein.
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles-de.png" alt="Der Schalter Manage Layouts"><figcaption><p>Der Schalter Manage Layouts in den zusätzlichen Einstellungen eines Dokumenttyps</p></figcaption></figure>
@@ -63,7 +63,7 @@ Erste und zweite Genehmigung teilen sich die **Freigabe**-Layouts und -Regeln. D
 
 Jedes Mal, wenn ein Dokument geöffnet wird, und erneut nach dem Speichern, bestimmt DocBits dessen Layout für den aktuellen Bildschirm:
 
-1. Die **aktiven Regeln** des Bildschirms werden in der Reihenfolge ihrer **Priorität** geprüft (niedrigste Zahl zuerst). **Die erste Regel, deren Bedingung zutrifft, gewinnt**, und ihr Layout wird verwendet.
+1. Die **aktiven Regeln** des Bildschirms werden in der Reihenfolge ihrer **Priority** geprüft (niedrigste Zahl zuerst). **Die erste Regel, deren Bedingung zutrifft, gewinnt**, und ihr Layout wird verwendet.
 2. Passt keine Regel, wird das **Standardlayout** verwendet.
 3. Gibt es auch kein Standardlayout, greift DocBits auf die klassische herkunftsbasierte Auswahl zurück.
 
@@ -87,7 +87,7 @@ Welches Layout jedes Dokument erhält:
 | 1 | DEMO-LIEFERANT-01 | E-Rechnung | DE | Rechnung mit Projektfeldern | Priorität 5 passt zuerst; spätere Regeln werden nicht geprüft |
 | 2 | 10040 | E-Rechnung | DE | E-Rechnung | Priorität 5 passt nicht, Priorität 10 schon |
 | 3 | 10040 | gescanntes PDF | DE | Field Validation Layout (DE) | nur die Herkunftsregel passt |
-| 4 | 10040 | gescanntes PDF | US | Field Validation Layout (Base) | keine Regel passt → Standard |
+| 4 | 10040 | gescanntes PDF | US | Field Validation Layout (Base) | keine Regel passt → Default |
 
 **Die Reihenfolge ist entscheidend**: Platzieren Sie spezifische Regeln (ein Lieferant) oberhalb allgemeiner Regeln (ein Land).
 
@@ -99,14 +99,14 @@ Das Layout wird immer anhand der **aktuellen** Werte des Dokuments gewählt. Kor
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-de.png" alt="Deutsche Liste der Layout-Auswahlregeln; konfigurierte Namen sind ausgeblendet."><figcaption><p>Deutsche Liste der Layout-Auswahlregeln; konfigurierte Namen sind ausgeblendet.</p></figcaption></figure>
 
-Jede Zeile zeigt die **Priorität** (die erste Zeile ist mit **FIRST** markiert), den **Regelnamen und -schlüssel** mit den zugehörigen **Bedingungen**, das **Ziellayout**, das **Quellen**-Badge und einen Schalter **Aktiv**.
+Jede Zeile zeigt die **Priority** (die erste Zeile ist mit **FIRST** markiert), den **Regelnamen und -schlüssel** mit den zugehörigen **Bedingungen**, das **Ziellayout**, das **Quellen**-Badge und einen Schalter **Active**.
 
 | Aufgabe | Vorgehen |
 | --- | --- |
-| Eine Regel erstellen | **Neue Regel** |
+| Eine Regel erstellen | **New rule** |
 | Eine Regel bearbeiten | Auf die Zeile klicken |
 | Die Reihenfolge ändern | Den Griff links in der Zeile nach oben oder unten ziehen. Die neue Reihenfolge wird sofort gespeichert. |
-| Eine Regel ausschalten | Schalter **Aktiv**. Inaktive Regeln werden ignoriert. |
+| Eine Regel ausschalten | Schalter **Active**. Inaktive Regeln werden ignoriert. |
 | Duplizieren oder löschen | Menü **⋮** der Zeile |
 | Eine Regel suchen | **Regeln durchsuchen…** |
 
@@ -122,7 +122,7 @@ Um ein anderes Fallback-Layout zu verwenden, erstellen Sie eine Regel **ohne jed
 
 ## Eine Regel erstellen
 
-Klicken Sie auf dem Tab Selection rules des Bildschirms, den Sie ändern möchten, auf **Neue Regel**.
+Klicken Sie auf dem Tab Selection rules des Bildschirms, den Sie ändern möchten, auf **New rule**.
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-de.png" alt="Geltungsbereich, Bedingungen und Ziellayout im deutschen Regeleditor."><figcaption><p>Geltungsbereich, Bedingungen und Ziellayout im deutschen Regeleditor.</p></figcaption></figure>
 
@@ -132,10 +132,10 @@ Der Satz oben fasst die Regel zusammen, während Sie Geltungsbereich, Bedingunge
 
 | Einstellung | Wirkung |
 | --- | --- |
-| **Regelname** | Wird in der Regelliste angezeigt. Beschreiben Sie den Geschäftsfall: „Beispiel-Lieferant-Rechnungen“, „E-Rechnungen“, „Genehmigung hoher Beträge“. |
-| **Regelschlüssel** | Wird aus dem Namen erzeugt und bleibt gleich, wenn Sie die Regel umbenennen. |
-| **Dokumenttyp** / **Layouttyp** | Der Dokumenttyp und der Bildschirm, für den die Regel gilt. Wird übernommen von der Stelle, an der Sie **Neue Regel** angeklickt haben. |
-| **Priorität** | Niedrigere Zahlen werden zuerst geprüft. Lassen Sie Lücken (5, 10, 20 …), damit Sie später Regeln einfügen können. |
+| **Rule Name** | Wird in der Regelliste angezeigt. Beschreiben Sie den Geschäftsfall: „Beispiel-Lieferant-Rechnungen“, „E-Rechnungen“, „Genehmigung hoher Beträge“. |
+| **Rule key** | Wird aus dem Namen erzeugt und bleibt gleich, wenn Sie die Regel umbenennen. |
+| **Document Type** / **Layout type** | Der Dokumenttyp und der Bildschirm, für den die Regel gilt. Wird übernommen von der Stelle, an der Sie **New rule** angeklickt haben. |
+| **Priority** | Niedrigere Zahlen werden zuerst geprüft. Lassen Sie Lücken (5, 10, 20 …), damit Sie später Regeln einfügen können. |
 
 ### Schritt 2 – Applies when
 
@@ -209,7 +209,7 @@ Bildschirm **Ablehnen** · Priorität **10** · *Supplier ID is one of* `10040, 
 | Symptom | Was zu prüfen ist |
 | --- | --- |
 | Ein Dokument erhält das falsche Layout | Eine frühere Regel passt zuerst. Sehen Sie sich die Regeln darüber an oder den **Prioritätstreffer** in der Vorschau. |
-| Das Standardlayout wird verwendet, obwohl eine Regel passen sollte | Ist die Regel **Aktiv**? Passt die Bedingung auf den exakten Wert (Groß-/Kleinschreibung, Leerzeichen)? Befindet sich die Regel auf dem richtigen **Bildschirm**-Tab? |
+| Das Standardlayout wird verwendet, obwohl eine Regel passen sollte | Ist die Regel **Active**? Passt die Bedingung auf den exakten Wert (Groß-/Kleinschreibung, Leerzeichen)? Befindet sich die Regel auf dem richtigen **Bildschirm**-Tab? |
 | Das Layout wechselt, während ein Benutzer arbeitet | Ein Feld in **watched_fields** wurde geändert. Stützen Sie die Regel auf ein stabileres Feld. |
 | Ein Layout kann nicht gelöscht werden | Eine Regel verweist noch darauf. Ändern Sie zuerst das Ziel dieser Regel oder löschen Sie sie. |
 | Es wird überhaupt kein Layout angezeigt | Keine Regel hat gepasst, es gibt kein Standardlayout und kein herkunftsbasiertes Layout für diesen Bildschirm. Fügen Sie eine Regel ohne Bedingung als Auffangregel hinzu. |

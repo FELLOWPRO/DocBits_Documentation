@@ -8,7 +8,7 @@ Diese Seite erklärt, wie Sie die erfolgreiche Verarbeitung Ihres BOD (Business 
 
 ### Abrufen Ihres API-Schlüssels
 
-1.  Gehen Sie zu **Einstellungen → System & Administration → Integration und SSO**.
+1.  Gehen Sie zu **Settings → System & Administration → Integration & SSO**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_integration.png)
 2.  Sie können entweder Ihren **API-Schlüssel** manuell kopieren oder auf die Schaltfläche "Kopieren" klicken, um ihn in Ihre Zwischenablage zu kopieren.
@@ -17,10 +17,10 @@ Diese Seite erklärt, wie Sie die erfolgreiche Verarbeitung Ihres BOD (Business 
 
 ### **Herunterladen der BOD-Mapping-Datei**
 
-1.  Gehen Sie zu **Einstellungen → Verarbeitung von Dokumenten → Exportieren**.
+1.  Gehen Sie zu **Settings → Document Processing → Export**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_export.png)
-2.  Klicken Sie in der **Aktionen**-Spalte des relevanten Exporteintrags auf das Drei-Punkte-Menü und wählen Sie **Bearbeiten**.
+2.  Klicken Sie in der **Aktionen**-Spalte des relevanten Exporteintrags auf das Drei-Punkte-Menü und wählen Sie **Edit**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/test_bod_connection_postman_2.png)
 3.  Suchen Sie die **BOD-Mapping-Datei** und klicken Sie auf die Schaltfläche **Herunterladen**, um sie zu speichern.

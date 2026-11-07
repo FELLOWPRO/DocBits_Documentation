@@ -10,7 +10,7 @@ Jeder Dokumenttyp hat eigene Konfigurationen für Wertelisten (List of Values, L
 
 ### Um List of Values zu konfigurieren, navigieren Sie zu:
 
-Einstellungen → Dokumentenverarbeitung → Dokumenttypen → Rechnung → Felder → Stammdaten-Einstellungen → LOV-Stammdaten
+Settings → Document Processing → Document Types → Invoice → Fields → Master Data Settings → LOV Master Data
 
 ### **Neue List-of-Values-Konfiguration erstellen**
 

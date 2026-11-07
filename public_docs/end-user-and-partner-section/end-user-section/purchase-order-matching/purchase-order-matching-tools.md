@@ -6,9 +6,9 @@ A tela de Correspondência de PO coloca a pesquisa e as ferramentas de pedidos d
 
 ## Encontrar o pedido de compra certo
 
-Digite um número de pedido de compra em **Pesquisar número do pedido de compra** e selecione um resultado. O ícone de filtro ao lado do campo abre opções de pesquisa adicionais: palavra-chave, fornecedor, status, status do pedido, intervalo de datas, valor do pedido, ordenação e número de registros. Escolha **Aplicar** para usar os filtros ou **Claro** para redefini-los. Filtrar a lista não realiza a correspondência nem exporta a fatura.
+Digite um número de pedido de compra em **Search purchase order number** e selecione um resultado. O ícone de filtro ao lado do campo abre as opções de pesquisa em toda a área das linhas do pedido: palavra-chave, fornecedor, status, status do pedido, intervalo de datas, valor do pedido, ordenação e número de registros. Escolha **Apply** para usar os filtros ou **Clear** para redefini-los. Filtrar a lista não realiza a correspondência nem exporta a fatura.
 
-<figure><img src="../../../.gitbook/assets/dbdc-603-po-tools-filter-pt.png" alt="Filtro de pesquisa de pedidos de compra com campos de fornecedor, status, datas, valor e ordenação"><figcaption><p>Abra o ícone de filtro ao lado do campo de pesquisa de pedidos de compra para mais opções de pesquisa.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-matching-tools-filter-pt-20261107.png" alt="Filtro de pesquisa de pedidos de compra em toda a área das linhas do pedido, com campos de palavra-chave, fornecedor, status, datas, valor e ordenação"><figcaption><p>Abra o ícone de filtro ao lado do campo de pesquisa de pedidos de compra para mais opções de pesquisa.</p></figcaption></figure>
 
 ## Ações da barra de ferramentas
 
@@ -16,16 +16,16 @@ Leia a dica de ferramenta de um ícone antes de selecioná-lo. A barra de ferram
 
 | Ação | O que ela faz |
 | --- | --- |
-| **Histórico de correspondência** (relógio) | Abre atividades de correspondência anteriores deste documento. Não inicia uma nova correspondência. |
-| **Ajuda** (?) | Abre a página de ajuda da Correspondência de PO em uma nova aba do navegador. |
-| **Atalhos de teclado** (teclado) | Mostra os atalhos disponíveis nesta tela. Veja [Atalhos de Teclado](keyboard-shortcuts.md). |
-| **Modo de treinamento** (tabela) | Ativa ou desativa arrastar linhas do pedido de compra para a tabela da fatura. É útil apenas quando o documento possui itens de linha de fatura; a tela de exemplo abaixo não possui. |
-| **Tarefas / Criar tarefa** | Abre as tarefas do documento ou cria uma tarefa quando essas ações estão disponíveis para o seu documento e função. Veja [Tarefas](../tasks.md). |
-| **Contabilidade Automática** | Abre a contabilidade deste documento quando há dados contábeis. |
-| **Correspondência Automática de PO** (varinha) | Executa a correspondência automática. Se a organização ativou a exportação automática e a correspondência resultante atender às suas condições, esta ação também poderá exportar. Revise o documento antes de usá-la. Veja [Correspondência Automática de Dados de Pedido de Compra](automatic-purchase-order-data-matching.md). |
-| **Salvar** (disquete) | Salva as alterações da correspondência de PO no documento. |
-| **Sincronizar dados** | Disponível apenas para a configuração de quantidade de pedido de compra correspondente; atualiza os dados selecionados do pedido de compra a partir do sistema conectado. Use o número de pedido de compra exibido e as opções de sincronização disponíveis. |
-| **Exportar** | Exporta o documento após a correspondência. Se a sua organização oferecer vários destinos de exportação, use a seta ao lado de **Exportar** para selecionar um. |
+| **Matching history** (clock) | Abre atividades de correspondência anteriores deste documento. Não inicia uma nova correspondência. |
+| **Help** (?) | Abre a página de ajuda da Correspondência de PO em uma nova aba do navegador. |
+| **Keyboard shortcuts** (keyboard) | Mostra os atalhos disponíveis nesta tela. Veja [Atalhos de Teclado](keyboard-shortcuts.md). |
+| **Training mode** (table) | Ativa ou desativa arrastar linhas do pedido de compra para a tabela da fatura. É útil apenas quando o documento possui itens de linha de fatura; a tela de exemplo abaixo não possui. |
+| **Tasks / Create task** | Abre as tarefas do documento ou cria uma tarefa quando essas ações estão disponíveis para o seu documento e função. Veja [Tarefas](../tasks.md). |
+| **Auto Accounting** | Abre a contabilidade deste documento quando há dados contábeis. |
+| **Auto PO match** (wand) | Executa a correspondência automática. Se a organização ativou a exportação automática e a correspondência resultante atender às suas condições, esta ação também poderá exportar. Revise o documento antes de usá-la. Veja [Correspondência Automática de Dados de Pedido de Compra](automatic-purchase-order-data-matching.md). |
+| **Save** (disk) | Salva as alterações da correspondência de PO no documento. |
+| **Sync Data** | Disponível apenas para a configuração de quantidade de pedido de compra correspondente; atualiza os dados selecionados do pedido de compra a partir do sistema conectado. Use o número de pedido de compra exibido e as opções de sincronização disponíveis. |
+| **Export** | Exporta o documento após a correspondência. Se a sua organização oferecer vários destinos de exportação, use a seta ao lado de **Export** para selecionar um. |
 
 A aba do pedido de compra também tem um ícone de atualização para recarregar esse pedido de compra. O ícone de configurações de coluna à direita do cabeçalho da tabela controla quais colunas do pedido de compra ficam visíveis. Eles alteram a visão da tabela do pedido de compra, não os valores extraídos da fatura.
 

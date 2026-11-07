@@ -46,7 +46,7 @@ Use approval to record your business decision on an invoice that has already bee
 
 ### Download the original file
 
-**Download** next to the file name in the document panel saves the imported file to your computer. The download icon in the status bar at the bottom does the same.
+The uppercase **DOWNLOAD** link at the right of the document panel header saves the imported file to your computer. On small screens the link is hidden and the status bar is the way to download. In the status bar at the bottom, the download icon next to the file name does the same.
 
 The saved file keeps the name and format it had when it arrived. An XML invoice stays an XML file, a PDF stays a PDF. Download the file when the preview is not enough, for example to read the original electronic invoice structure, raw tax lines, or a value that the preview shows differently.
 

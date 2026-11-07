@@ -6,11 +6,11 @@ Aggiungi una colonna quando per ogni voce di riga deve essere acquisito un valor
 
 * Decidi a quale **tabella** appartiene la colonna. La maggior parte dei tipi di documento ha una sola tabella (ad esempio `INVOICE_TABLE`). Se l'elenco è vuoto, fai prima clic su **Crea nuova tabella**; la finestra di dialogo chiede solo il nome della tabella.
 * Decidi il **tipo**: `AMOUNT` per gli importi, `NUMBER` per le quantità, `DATE`, `BOOLEAN` per sì/no, `CURRENCY` per un codice valuta ISO, `STRING` per tutto il resto. Il tipo non può essere modificato dopo il salvataggio.
-* Verifica se esiste già una **colonna predefinita** con lo stesso significato ma nascosta. Le colonne nascoste compaiono nell'elenco con il flag *Nascosta* attivo: rendila di nuovo visibile invece di creare un duplicato.
+* Verifica se esiste già una **colonna predefinita** con lo stesso significato ma nascosta. Le colonne nascoste compaiono nell'elenco con il flag *Hidden* attivo: rendila di nuovo visibile invece di creare un duplicato.
 
 ## Passaggi
 
-1. Apri **Impostazioni → Elaborazione Documenti → Tipi di Documento → Colonne della Tabella**.
+1. Apri **Settings → Document Processing → Document Types → Colonne della Tabella**.
 2. Fai clic su **Aggiungi nuova colonna della tabella**.
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Finestra di dialogo Aggiungi nuova colonna della tabella con Titolo, La colonna è obbligatoria, Seleziona tipo di colonna e Seleziona tabella"><figcaption><p>Aggiungi nuova colonna della tabella</p></figcaption></figure>
@@ -42,7 +42,7 @@ Aggiungi una colonna quando per ogni voce di riga deve essere acquisito un valor
 | Messaggio | Significato |
 |---|---|
 | *Column name already exists* | Nella tabella esiste già una colonna con questo nome tecnico. Scegli un titolo diverso. |
-| *Column name already exists – Please activate it in Table Column settings* | Una colonna predefinita nascosta ha questo nome. Disattiva il suo flag *Nascosta* invece di crearne una nuova. |
+| *Column name already exists – Please activate it in Table Column settings* | Una colonna predefinita nascosta ha questo nome. Disattiva il suo flag *Hidden* invece di crearne una nuova. |
 | *No table exists. Please create table before creating columns.* | Il tipo di documento non ha ancora una tabella: fai prima clic su **Crea nuova tabella**. |
 
 [Structured Output per le tabelle](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

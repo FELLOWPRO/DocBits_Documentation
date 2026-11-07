@@ -4,7 +4,7 @@ Le caselle controllano valori obbligatori, modificabilità e visibilità. Use AI
 
 Tutto, tranne il titolo, si modifica direttamente nell'elenco; non esiste una finestra di modifica.
 
-**Dove:** Impostazioni → Elaborazione Documenti → Tipi di Documento → Colonne della Tabella
+**Dove:** Settings → Document Processing → Document Types → Colonne della Tabella
 
 ## Attivare o disattivare un flag
 
@@ -13,8 +13,8 @@ Spunta o togli la spunta alla casella nella riga. La modifica viene salvata imme
 | Flag | Attivo | Disattivo |
 |---|---|---|
 | **Obbligatoria** | L'approvazione è bloccata finché la colonna è vuota in una qualsiasi riga; la schermata di validazione evidenzia la cella. | Le celle vuote sono ammesse. |
-| **Sola lettura** | Il valore viene mostrato ma non può essere sovrascritto. Usalo per i valori che provengono da una ricerca o da uno script. | Gli utenti possono modificare la cella. |
-| **Nascosta** | La colonna scompare dalla schermata di validazione e dall'esportazione. I suoi dati vengono conservati. | La colonna viene mostrata ed esportata. |
+| **Read Only** | Il valore viene mostrato ma non può essere sovrascritto. Usalo per i valori che provengono da una ricerca o da uno script. | Gli utenti possono modificare la cella. |
+| **Hidden** | La colonna scompare dalla schermata di validazione e dall'esportazione. I suoi dati vengono conservati. | La colonna viene mostrata ed esportata. |
 
 
 {% hint style="info" %}
@@ -33,7 +33,7 @@ Non è possibile. Nascondi la colonna (o eliminala se è una colonna personalizz
 
 L'azione di eliminazione è disponibile solo per le colonne create dalla tua organizzazione. Le colonne predefinite non possono essere eliminate: nascondile.
 
-1. Apri il menu a tre punti nella colonna *Azioni* e scegli **Elimina**. La voce non compare per le colonne predefinite.
+1. Apri il menu a tre punti nella colonna *Azioni* e scegli **Delete**. La voce non compare per le colonne predefinite.
 2. Conferma.
 
 Cosa succede:
@@ -53,12 +53,12 @@ Aprire le [colonne di tabella](README.md) del tipo di documento e della tabella 
 
 | Scelta attuale | Effetto sullo schema base |
 | --- | --- |
-| **Predefinito · richiesto** oppure **Predefinito · non richiesto** | Usa la selezione DocBits per quel tipo e nome di colonna. Predefinito non significa sempre attivo né sempre disattivo. |
-| **Sì · richiesto** | Richiede esplicitamente la colonna configurata all'AI. |
+| **Default · richiesto** oppure **Default · non richiesto** | Usa la selezione DocBits per quel tipo e nome di colonna. Predefinito non significa sempre attivo né sempre disattivo. |
+| **Yes · richiesto** | Richiede esplicitamente la colonna configurata all'AI. |
 | **No · non richiesto** | La esclude dallo schema base anche se normalmente viene richiesta. |
 
-Tornare a **Predefinito** rimuove la scelta esplicita. Una nuova colonna personalizzata normalmente non appartiene alla selezione AI predefinita: scegliere **Sì** per richiederla. Le colonne AI predefinite non coincidono con tutte le colonne fornite. Verificare effetto indicato e anteprima.
+Tornare a **Default** rimuove la scelta esplicita. Una nuova colonna personalizzata normalmente non appartiene alla selezione AI predefinita: scegliere **Yes** per richiederla. Le colonne AI predefinite non coincidono con tutte le colonne fornite. Verificare effetto indicato e anteprima.
 
-**Obbligatoria**, **Sola lettura** e **Nascosta** controllano completezza, modificabilità e visibilità; non sostituiscono la scelta AI. **No** non elimina la colonna né cancella valori e non impedisce a regole, script o altre fonti di compilarla. Addestramento del fornitore e tag AI possono ampliare la richiesta effettiva: risolvere anche lì eventuali contraddizioni. L'interruttore non sostituisce automaticamente un risultato basato soltanto su regole.
+**Obbligatoria**, **Read Only** e **Hidden** controllano completezza, modificabilità e visibilità; non sostituiscono la scelta AI. **No** non elimina la colonna né cancella valori e non impedisce a regole, script o altre fonti di compilarla. Addestramento del fornitore e tag AI possono ampliare la richiesta effettiva: risolvere anche lì eventuali contraddizioni. L'interruttore non sostituisce automaticamente un risultato basato soltanto su regole.
 
 [Structured Output per le tabelle](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

@@ -23,7 +23,7 @@ La guida diagnostica [Quale percorso di estrazione è stato utilizzato?](../../.
 
 ## Panoramica
 
-Nelle impostazioni di **Classificazione ed estrazione** puoi:
+Nelle impostazioni di **Classification and Extraction** puoi:
 
 * Abilitare la **suddivisione dei documenti** in base ai codici QR
 * Configurare la **formattazione degli importi**
@@ -36,8 +36,8 @@ Questa pagina spiega in dettaglio tutte le impostazioni disponibili.
 
 ## **Accedere alle impostazioni di Classificazione ed estrazione**
 
-Per accedere alle impostazioni di **Classificazione ed estrazione**, vai su:\
-**Impostazioni → Elaborazione Documenti → Classificazione ed Estrazione**
+Per accedere alle impostazioni di **Classification and Extraction**, vai su:\
+**Settings → Document Processing → Classification and Extraction**
 
 
 ## Suddivisione dei documenti
@@ -83,7 +83,7 @@ Nella sezione **Formattazione degli importi** hai due opzioni:
 {% hint style="info" %}
 **Prerequisiti per un'estrazione delle tabelle funzionante**
 
-* Il tipo di documento ha delle **colonne della tabella** (Impostazioni → Elaborazione Documenti → Tipi di Documento → [Colonne della Tabella](../../global-settings/document-types/table-columns/README.md)). Senza colonne non c'è nulla in cui estrarre i dati.
+* Il tipo di documento ha delle **colonne della tabella** (Settings → Document Processing → Document Types → [Colonne della Tabella](../../global-settings/document-types/table-columns/README.md)). Senza colonne non c'è nulla in cui estrarre i dati.
 * **Estrazione delle tabelle** o **Estrazione AI delle tabelle** è attivata qui sotto, per l'intera organizzazione.
 * Il documento ha testo leggibile: l'OCR è stato eseguito, oppure viene usato l'E-Text per i PDF nativi digitali ([Impostazioni OCR](../ocr-settings.md)).
 * L'addestramento e i modelli AI sono **per fornitore**. Una tabella addestrata vale solo per i documenti del fornitore su cui è stata addestrata.
@@ -115,7 +115,7 @@ Maggiori informazioni su questa impostazione [qui](auto-extract-tax-code.md).
 
 **Salva regole di estrazione (solo Admin):** solo gli amministratori possono fare clic su *Salva regole* nell'addestramento della tabella. Attivala quando gli utenti continuano a salvare regole che compromettono l'estrazione di un fornitore.
 
-**Modello AI:** imposta il modello organizzativo per l'estrazione di campi e tabelle. Il menu offre Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus. Verifica disponibilità, qualità, durata e costi con documenti rappresentativi. Un livello non è sempre il più accurato o il più veloce per ogni documento. Le sostituzioni del modello possono sostituire l'impostazione dell'organizzazione. La tabella sotto il selettore mostra:
+**AI Model:** imposta il modello organizzativo per l'estrazione di campi e tabelle. Il menu offre Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus. Verifica disponibilità, qualità, durata e costi con documenti rappresentativi. Un livello non è sempre il più accurato o il più veloce per ogni documento. Le sostituzioni del modello possono sostituire l'impostazione dell'organizzazione. La tabella sotto il selettore mostra:
 
 * Quali **fornitori** usano quale modello AI
 * Se usano l'estrazione strutturata (AI) e l'E-Text
@@ -149,8 +149,8 @@ Ogni interruttore di questa sezione viene memorizzato come preferenza dell'organ
 | Salva regole di estrazione (solo Admin) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
 | Modello AI | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Versione dell'estrazione delle tabelle (finestra di conferma) | `TBL_EXT_VERSION` | stringa di versione |
-| Impostazioni OCR → Usa i dati AI per le tabelle se disponibili | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
-| Impostazioni OCR → Usa E-Text se disponibile | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+| OCR Settings → Usa i dati AI per le tabelle se disponibili | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR Settings → Usa E-Text se disponibile | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
 
 Note:
 
@@ -188,7 +188,7 @@ Per creare una nuova regola:
    *   **Sottotipo di documento** _(facoltativo)_: specifica un sottotipo per una classificazione più dettagliata.
 
        
-3.  Fai clic su **Salva** per salvare la regola di classificazione.
+3.  Fai clic su **Save** per salvare la regola di classificazione.
 
     
 
@@ -199,11 +199,11 @@ Per modificare una regola esistente:
 1.  Fai clic sui tre punti nella colonna **Azioni**.
 
     
-2.  Seleziona **Modifica**.
+2.  Seleziona **Edit**.
 
     
 3. Apporta le modifiche desiderate.
-4.  Fai clic su **Salva** per applicare gli aggiornamenti.
+4.  Fai clic su **Save** per applicare gli aggiornamenti.
 
     
 
@@ -214,7 +214,7 @@ Per eliminare una regola:
 1.  Fai clic sui tre punti nella colonna **Azioni**.
 
     
-2.  Seleziona **Elimina**.
+2.  Seleziona **Delete**.
 
     
 
@@ -260,7 +260,7 @@ Per modificare un modello:
 2. Aggiorna i campi disponibili:
    * **Modello successivo**: seleziona il modello che deve elaborare l'output del modello corrente.
    * **Tipo di documento**: scegli il tipo di documento con cui il modello deve classificare l'input.
-3.  Fai clic su **Salva** per applicare le modifiche.
+3.  Fai clic su **Save** per applicare le modifiche.
 
     
 

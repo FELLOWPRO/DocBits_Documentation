@@ -21,7 +21,7 @@ Lo standard ZUGFeRD è sempre attivo per impostazione predefinita, ma se necessa
 
 ### **Passaggi per modificare le impostazioni di ZUGFeRD:**
 
-1. Vai su **Impostazioni → Elaborazione Documenti → Tipi di documento → Fattura**.
+1. Vai su **Settings → Document Processing → Document Types → Invoice**.
 2. Fai clic su **E-Doc**.\\
 3. Viene visualizzato l'elenco di tutti gli e-doc disponibili.
 4. Individua la versione di **ZUGFeRD** che vuoi modificare.\\
@@ -29,7 +29,7 @@ Lo standard ZUGFeRD è sempre attivo per impostazione predefinita, ma se necessa
 ## **Configurazione della trasformazione e dei percorsi XML:**
 
 Nelle **impostazioni di trasformazione** puoi definire il percorso per individuare informazioni specifiche all'interno del file XML e salvarle in una nuova struttura, così da accedere ai dati più facilmente.\
-<mark style="color:red;">**Nota**</mark>: se utilizzi questa funzione, nell'**Anteprima** e nel **Percorso di estrazione** devi usare i nuovi percorsi XML creati, non quelli XML originali.
+<mark style="color:red;">**Nota**</mark>: se utilizzi questa funzione, nell'**Preview** e nel **Percorso di estrazione** devi usare i nuovi percorsi XML creati, non quelli XML originali.
 
 ### **Passaggi per modificare il file di trasformazione:**
 
@@ -38,7 +38,7 @@ Nelle **impostazioni di trasformazione** puoi definire il percorso per individua
 3. Seleziona la bozza appena creata.
 4. Crea un nuovo campo oppure modifica uno esistente.
 5. Imposta il percorso desiderato per l'estrazione dei dati.
-6. Fai clic su **Salva**.
+6. Fai clic su **Save**.
 
 ### Note importanti:
 
@@ -50,12 +50,12 @@ La **configurazione del PDF di anteprima** serve a generare una versione del doc
 
 ### **Passaggi per modificare il file di anteprima:**
 
-1. Apri l'**Anteprima**.
+1. Apri l'**Preview**.
 2. Crea una nuova bozza facendo clic sull'**icona della matita**.
 3. Seleziona la bozza appena creata.
 4. Crea un nuovo campo oppure modifica uno esistente.
 5. Imposta il percorso desiderato per l'estrazione dei dati.
-6. Fai clic su **Salva**.
+6. Fai clic su **Save**.
 
 ## Configurazione dei percorsi di estrazione
 
@@ -67,9 +67,9 @@ La **configurazione dei percorsi di estrazione** serve a estrarre i dati e a pop
 2. Crea una nuova bozza facendo clic sull'**icona della matita**.
 3. Seleziona la bozza appena creata.
 4. Crea un nuovo campo oppure modifica uno esistente.
-5. Il lato sinistro rappresenta l'**ID del campo DocBits**, che si trova in **Impostazioni → Elaborazione Documenti → Tipi di documento → Fattura → Campi**.\\
+5. Il lato sinistro rappresenta l'**ID del campo DocBits**, che si trova in **Settings → Document Processing → Document Types → Invoice → Fields**.\\
 6. Il lato destro rappresenta il **percorso del campo** creato nella Trasformazione.
-7. Fai clic su **Salva**.
+7. Fai clic su **Save**.
 
 Seguendo questi passaggi puoi garantire un'estrazione e una convalida accurate dei dati per le fatture ZUGFeRD.
 

@@ -20,7 +20,7 @@ Le regole sono definite per **tipo di documento** e vengono eseguite su ogni doc
 
 | Requisito aziendale | Senza regole personalizzate | Con una regola personalizzata |
 | --- | --- | --- |
-| Le fatture tedesche superiori a 250 EUR devono riportare la partita IVA del fornitore | uno script, oppure gli utenti devono ricordarselo | **Obbligatorio** su Supplier Tax ID, *applies when* l'origine è DE e l'importo totale è maggiore di 250 |
+| Le fatture tedesche superiori a 250 EUR devono riportare la partita IVA del fornitore | uno script, oppure gli utenti devono ricordarselo | **Required** su Supplier Tax ID, *applies when* l'origine è DE e l'importo totale è maggiore di 250 |
 | I numeri di fattura di un fornitore hanno sempre un aspetto come `INV-123456` | i refusi arrivano all'ERP | **Modello** `^INV-\d{6}$` su Invoice Number per quel fornitore |
 | Ogni riga articolo deve avere una quantità maggiore di zero | le righe con quantità 0 vengono esportate | **Intervallo** (minimo 0,01) sulla colonna Quantity |
 | La data di scadenza non deve precedere la data della fattura | pagamenti errati | **Confronta i campi**: Due Date uguale o successiva a Invoice Date |
@@ -32,14 +32,14 @@ Le regole sono definite per **tipo di documento** e vengono eseguite su ogni doc
 
 Le regole di convalida personalizzate si attivano **per tipo di documento**. Non esiste un interruttore valido per l'intera organizzazione.
 
-1. Vai su **Impostazioni → Elaborazione Documenti → Tipi di documento**.
+1. Vai su **Settings → Document Processing → Document Types**.
 2. Sulla scheda del tipo di documento, clicca sull'icona delle **impostazioni** (ingranaggio).
 3. Apri la sezione **Regole di convalida personalizzate** e attiva l'interruttore.
 4. Clicca su **Gestisci le regole di convalida** per aprire l'elenco delle regole.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="Gli interruttori delle regole nelle impostazioni aggiuntive di un tipo di documento"><figcaption><p>Gli interruttori per Manage Layouts, Custom Validation Rules e Transformation Rules</p></figcaption></figure>
 
-Da questo momento la scheda del tipo di documento mostra anche un link **Regole di convalida**.
+Da questo momento la scheda del tipo di documento mostra anche un link **Validation Rules**.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-card-links.png" alt="La scheda del tipo di documento con il link Validation Rules"><figcaption><p>I link sulla scheda del tipo di documento</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Da questo momento la scheda del tipo di documento mostra anche un link **Regole 
 
 ## L'elenco delle regole
 
-**Tipi di documento → (tipo di documento) → Regole di convalida** elenca tutte le regole del tipo di documento.
+**Document Types → (tipo di documento) → Validation Rules** elenca tutte le regole del tipo di documento.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-it.png" alt="Gestione delle regole di convalida con i nomi configurati nascosti. Le date relative restano in tedesco nel prodotto."><figcaption><p>Gestione delle regole di convalida con i nomi configurati nascosti. Le date relative restano in tedesco nel prodotto.</p></figcaption></figure>
 
@@ -61,13 +61,13 @@ Ogni scheda mostra il nome e la descrizione della regola e i badge del suo **liv
 | --- | --- | --- |
 | **Impostazioni predefinite del sistema** | Una regola fornita con DocBits per tutte le organizzazioni. | Non può essere modificata direttamente: il builder mostra "This is a system default rule and cannot be edited." Clicca su **Personalizzazione** per creare una tua copia modificabile, oppure disattivala per fermarla nella tua organizzazione. |
 | **Personalizzato** | Una regola predefinita di sistema che la tua organizzazione ha modificato o disattivato. | Modificala come una regola tua. **Ripristina impostazioni predefinite** elimina la tua copia e ripristina l'originale. |
-| **Personalizzato** | Una regola creata dalla tua organizzazione. | Modifica, **Duplica**, **Cancellare**. |
+| **Personalizzato** | Una regola creata dalla tua organizzazione. | Modifica, **Duplicate**, **Cancellare**. |
 
 Le modifiche alle regole predefinite di sistema non influiscono mai sulle altre organizzazioni.
 
 ## Creare una regola
 
-Clicca su **Nuova regola**. Il builder ha tre passaggi. **Regola di prova** e **Salva** si trovano in alto a destra.
+Clicca su **New rule**. Il builder ha tre passaggi. **Regola di prova** e **Save** si trovano in alto a destra.
 
 ### Passaggio 1 — Name & scope
 
@@ -77,8 +77,8 @@ Clicca su **Nuova regola**. Il builder ha tre passaggi. **Regola di prova** e **
 | --- | --- |
 | **Livello di regola** | Cosa guarda la regola e dove viene mostrato l'errore: vedi [Livelli delle regole](#livelli-delle-regole). |
 | **Gravità** | **Errore** contrassegna il campo come non valido e blocca la convalida. **Avvertimento** mostra il messaggio ma non blocca mai. |
-| **Nome della regola** | Mostrato nell'elenco e agli amministratori. Scegli un nome che descriva la regola ("Partita IVA del fornitore obbligatoria per le fatture tedesche"). |
-| **Chiave della regola** | Una chiave tecnica generata dal nome. Resta invariata se in seguito rinomini la regola. Clicca sulla matita per scegliere una chiave tua prima del primo salvataggio; dopo non è più modificabile. |
+| **Rule Name** | Mostrato nell'elenco e agli amministratori. Scegli un nome che descriva la regola ("Partita IVA del fornitore obbligatoria per le fatture tedesche"). |
+| **Rule key** | Una chiave tecnica generata dal nome. Resta invariata se in seguito rinomini la regola. Clicca sulla matita per scegliere una chiave tua prima del primo salvataggio; dopo non è più modificabile. |
 | **Descrizione** | Spiegazione facoltativa per gli altri amministratori. |
 | **Nome della tabella** | *Solo per Table line.* La tabella di cui vengono controllate le righe, ad esempio `INVOICE_TABLE`. |
 | **Attach error to field / column** | Il campo (o, per le righe di tabella, la colonna) che mostra l'errore nella schermata di convalida. |
@@ -187,7 +187,7 @@ Il valore deve essere uno di quelli che digiti, **un valore per riga**. Facoltat
 Come *Allowed values*, ma i valori provengono da una **Elenco dei valori** condivisa, gestita in **Settings › List of Values**. Scegli l'elenco invece di digitarlo di nuovo; quando l'elenco cambia, la regola usa i nuovi valori (dopo un breve ritardo dovuto alla cache). Contano solo i valori delle voci dell'elenco, non le loro etichette.
 
 {% hint style="info" %}
-Ad eccezione di **Obbligatorio**, ogni controllo **viene superato quando il valore è vuoto**. Una regola Pattern su Purchase Order non segnala le fatture senza ordine di acquisto. Se anche un valore vuoto è un problema, aggiungi una regola Required oppure limita la regola con *Applies when … is not empty*.
+Ad eccezione di **Required**, ogni controllo **viene superato quando il valore è vuoto**. Una regola Pattern su Purchase Order non segnala le fatture senza ordine di acquisto. Se anche un valore vuoto è un problema, aggiungi una regola Required oppure limita la regola con *Applies when … is not empty*.
 {% endhint %}
 
 #### Messaggio di errore e codice di errore
@@ -228,7 +228,7 @@ Testa ogni nuova regola su almeno un documento che dovrebbe fallire, uno che dov
 
 Ogni regola può registrare le proprie valutazioni. Aprire la pagina **Log di esecuzione delle regole** del tipo di documento: l'intestazione riporta il tipo di documento e l'icona di aggiornamento ricarica l'elenco.
 
-**Trova per** stabilisce cosa cercare (il valore predefinito è **Chiave della regola**) e il valore va inserito nel campo accanto. Quando si cerca per documento, **Tipo di regola** è obbligatorio. Restringere il risultato con **Risultato**, **Eseguito**, **Da Data** e **Ad oggi**.
+**Trova per** stabilisce cosa cercare (il valore predefinito è **Rule key**) e il valore va inserito nel campo accanto. Quando si cerca per documento, **Tipo di regola** è obbligatorio. Restringere il risultato con **Risultato**, **Eseguito**, **Da Data** e **Ad oggi**.
 
 <figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-it.png" alt="I log di esecuzione delle regole"><figcaption><p>La pagina dei log di esecuzione: i filtri in alto, una riga per valutazione sotto. Finché non si cerca, la tabella indica cosa inserire.</p></figcaption></figure>
 
@@ -238,10 +238,10 @@ La stessa pagina mostra anche i log delle regole di trasformazione e di selezion
 
 ## Esempi pratici
 
-Copia queste regole come punto di partenza. Le chiavi di campi e colonne sono quelle del tipo di documento **Fattura** standard; adattale ai tuoi tipi di documento.
+Copia queste regole come punto di partenza. Le chiavi di campi e colonne sono quelle del tipo di documento **Invoice** standard; adattale ai tuoi tipi di documento.
 
 **1. Partita IVA del fornitore per le fatture tedesche superiori a 250 EUR**
-Header field · Error · associa a *Supplier Tax ID* · Applies when **Tutti**: *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Check **Obbligatorio** · Messaggio "La partita IVA del fornitore manca. Le fatture tedesche superiori a 250 EUR devono riportarla." · Codice `REQUIRED_CONDITIONAL`.
+Header field · Error · associa a *Supplier Tax ID* · Applies when **Tutti**: *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Check **Required** · Messaggio "La partita IVA del fornitore manca. Le fatture tedesche superiori a 250 EUR devono riportarla." · Codice `REQUIRED_CONDITIONAL`.
 
 **2. I totali di testata tornano** (sostituisce il controllo integrato)
 Header field · Error · associa a *Total Amount* · sempre · **Formula** `header.total_amount == header.total_net_amount + header.total_tax_amount`, tolleranza `0.01` · Messaggio "Il totale {actual} non corrisponde a netto più imposta ({expected})."
@@ -268,7 +268,7 @@ Campo intestazione · Errore · *Data fattura* · sempre · **Confronta i campi*
 Header field · **Avvertimento** · *Currency* · sempre · **Elenco dei valori** *approved_currencies* · Codice `VALUE_NOT_ALLOWED`.
 
 **10. Ordine di acquisto obbligatorio oltre 5.000**
-Campo intestazione · Errore · *Ordine d'acquisto* · Si applica quando *Importo totale* maggiore di *5000* · **Obbligatorio**.
+Campo intestazione · Errore · *Ordine d'acquisto* · Si applica quando *Importo totale* maggiore di *5000* · **Required**.
 
 ## Buone pratiche
 
@@ -282,8 +282,8 @@ Campo intestazione · Errore · *Ordine d'acquisto* · Si applica quando *Import
 
 | Sintomo | Cosa controllare |
 | --- | --- |
-| La regola non genera mai un errore | La funzione è attivata per il tipo di documento e la regola è **Attivo**? Esegui **Regola di prova** sul documento: "skipped" significa che *Applies when* era falsa. |
-| Un campo vuoto non viene segnalato | Solo **Obbligatorio** segnala i valori vuoti. Aggiungi una regola Required. |
+| La regola non genera mai un errore | La funzione è attivata per il tipo di documento e la regola è **Active**? Esegui **Regola di prova** sul documento: "skipped" significa che *Applies when* era falsa. |
+| Un campo vuoto non viene segnalato | Solo **Required** segnala i valori vuoti. Aggiungi una regola Required. |
 | I controlli integrati sui totali sono scomparsi | È previsto finché le regole personalizzate sono attive. Ricreali come regole Formula (esempi 2 e 3). |
 | Una regola modificata non ha effetto su un documento | I documenti vengono ricontrollati al successivo salvataggio. Salva o rielabora il documento. |
 | Un Pattern corrisponde a valori che non dovrebbe | I pattern cercano all'interno del valore. Ancorali con `^` e `$`. |

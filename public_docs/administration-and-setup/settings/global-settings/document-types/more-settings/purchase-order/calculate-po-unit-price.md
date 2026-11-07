@@ -6,7 +6,7 @@ Puoi scegliere di calcolare automaticamente il **prezzo unitario** di ogni riga 
 
 ## Aprire il controllo
 
-Apri **Impostazioni → Tipi di documenti**, scegli l’ingranaggio del tipo interessato e individua **Calcolo del prezzo unitario dell’OP** nella sezione dell’ordine di acquisto. Esamina l’effetto prima di cambiare il controllo.
+Apri **Settings → Tipi di documenti**, scegli l’ingranaggio del tipo interessato e individua **Calcolo del prezzo unitario dell’OP** nella sezione dell’ordine di acquisto. Esamina l’effetto prima di cambiare il controllo.
 
 <figure><img src="../../../../../../.gitbook/assets/native-invoice-po-settings-it-20261023.png" alt="Parte superiore delle impostazioni dell’ordine di acquisto con Calcolo del prezzo unitario dell’OP e tolleranze. I valori privati sono mascherati. L’immagine non documenta le sezioni inferiori; nessun controllo è stato modificato."><figcaption><p>Parte superiore delle impostazioni dell’ordine di acquisto con Calcolo del prezzo unitario dell’OP e tolleranze. I valori privati sono mascherati. L’immagine non documenta le sezioni inferiori; nessun controllo è stato modificato.</p></figcaption></figure>
 

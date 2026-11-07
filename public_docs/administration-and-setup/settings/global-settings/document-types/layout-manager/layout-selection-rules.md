@@ -26,7 +26,7 @@ L'origine resta disponibile, ma come una condizione tra le tante. Una regola pu�
 
 I layout basati su regole vengono attivati **per tipo di documento** da un **amministratore dell'organizzazione**.
 
-1. Andare su **Impostazioni → Elaborazione Documenti → Tipi di documento**.
+1. Andare su **Settings → Document Processing → Document Types**.
 2. Fare clic sull'icona **impostazioni** (ingranaggio) sulla scheda del tipo di documento.
 3. Aprire **Gestisci i layout** e attivare l'interruttore.
 
@@ -99,14 +99,14 @@ Il layout viene sempre scelto in base ai valori **correnti** del documento. Se u
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-it.png" alt="Regole di selezione con i nomi configurati nascosti. Il nome della schermata Field validation resta in inglese nel prodotto."><figcaption><p>Regole di selezione con i nomi configurati nascosti. Il nome della schermata Field validation resta in inglese nel prodotto.</p></figcaption></figure>
 
-Ogni riga mostra la **priorità** (la prima riga è contrassegnata da **FIRST**), il **nome e la chiave della regola** con le sue **condizioni**, il **layout di destinazione**, il badge dell'**origine** e un interruttore **Attivo**.
+Ogni riga mostra la **priorità** (la prima riga è contrassegnata da **FIRST**), il **nome e la chiave della regola** con le sue **condizioni**, il **layout di destinazione**, il badge dell'**origine** e un interruttore **Active**.
 
 | Attività | Come |
 | --- | --- |
-| Creare una regola | **Nuova regola** |
+| Creare una regola | **New rule** |
 | Modificare una regola | Fare clic sulla riga |
 | Cambiare l'ordine | Trascinare la maniglia a sinistra della riga verso l'alto o verso il basso. Il nuovo ordine viene salvato subito. |
-| Disattivare una regola | Interruttore **Attivo**. Le regole inattive vengono ignorate. |
+| Disattivare una regola | Interruttore **Active**. Le regole inattive vengono ignorate. |
 | Duplicare o eliminare | Menu **⋮** della riga |
 | Cercare una regola | **Search rules…** |
 
@@ -122,7 +122,7 @@ Per usare un altro layout di fallback, creare una regola **senza alcuna condizio
 
 ## Creare una regola
 
-Fare clic su **Nuova regola** nella scheda Selection rules della schermata che si desidera modificare.
+Fare clic su **New rule** nella scheda Selection rules della schermata che si desidera modificare.
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-it.png" alt="Ambito, condizioni e layout di destinazione della regola. Il nome della schermata Field validation resta in inglese nel prodotto."><figcaption><p>Ambito, condizioni e layout di destinazione della regola. Il nome della schermata Field validation resta in inglese nel prodotto.</p></figcaption></figure>
 
@@ -132,9 +132,9 @@ La frase in alto riassume la regola man mano che viene costruita — "When heade
 
 | Impostazione | Cosa fa |
 | --- | --- |
-| **Nome della regola** | Mostrato nell'elenco delle regole. Descrivere il caso aziendale: "Fatture del fornitore di esempio", "Fatture elettroniche", "Approvazione importi elevati". |
-| **Chiave della regola** | Generata dal nome; resta invariata se si rinomina la regola. |
-| **Tipo di documento** / **Tipo di layout** | Il tipo di documento e la schermata a cui si riferisce la regola. Ricavati dal punto in cui si è fatto clic su **Nuova regola**. |
+| **Rule Name** | Mostrato nell'elenco delle regole. Descrivere il caso aziendale: "Fatture del fornitore di esempio", "Fatture elettroniche", "Approvazione importi elevati". |
+| **Rule key** | Generata dal nome; resta invariata se si rinomina la regola. |
+| **Tipo di documento** / **Tipo di layout** | Il tipo di documento e la schermata a cui si riferisce la regola. Ricavati dal punto in cui si è fatto clic su **New rule**. |
 | **Priorità** | I numeri più bassi vengono verificati per primi. Lasciare degli intervalli (5, 10, 20 …) per poter inserire regole in seguito. |
 
 ### Passaggio 2 — Applies when
@@ -209,7 +209,7 @@ Schermata **Rifiuta** · priorità **10** · *Supplier ID is one of* `10040, 100
 | Sintomo | Cosa controllare |
 | --- | --- |
 | Un documento riceve il layout sbagliato | Corrisponde prima una regola precedente. Esaminare le regole sopra di essa, oppure il **Priorità della regola corrispondente** nell'anteprima. |
-| Viene usato il layout predefinito anche se una regola dovrebbe corrispondere | La regola è **Attivo**? La condizione corrisponde al valore esatto (maiuscole/minuscole, spazi)? La regola si trova nella scheda della **schermata** giusta? |
+| Viene usato il layout predefinito anche se una regola dovrebbe corrispondere | La regola è **Active**? La condizione corrisponde al valore esatto (maiuscole/minuscole, spazi)? La regola si trova nella scheda della **schermata** giusta? |
 | Il layout cambia mentre un utente lavora | È stato modificato un campo in **watched_fields**. Basare la regola su un campo più stabile. |
 | Un layout non può essere eliminato | Una regola punta ancora ad esso. Cambiare prima la destinazione di quella regola o eliminarla. |
 | Non viene mostrato alcun layout | Nessuna regola ha corrisposto, non esiste un layout predefinito e per questa schermata non esiste un layout basato sull'origine. Aggiungere una regola senza condizione come catch-all. |

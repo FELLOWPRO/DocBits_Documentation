@@ -11,13 +11,13 @@ Asystent jest **domyślnie wyłączony**. Ta strona pokazuje, gdzie go włączy�
 ## Kto może z niego korzystać
 
 * **Administrator organizacji** włącza lub wyłącza asystenta dla całej organizacji.
-* Po włączeniu każdy administrator, który może otworzyć **Ustawienia**, może pokazać lub ukryć panel dla siebie.
+* Po włączeniu każdy administrator, który może otworzyć **Settings**, może pokazać lub ukryć panel dla siebie.
 * Zmiany (zastosowanie rekomendacji, wyłączenie lub usunięcie połączenia importu, utworzenie reguły) są ograniczone do **administratorów organizacji**. Inni użytkownicy dostają komunikat *Available to administrators only.* (Dostępne tylko dla administratorów).
 
 ## Włączanie
 
-1. Przejdź do **Ustawienia → Organizacja i dostęp → Informacje o firmie**. Nagłówek strony pokazuje **Company Settings** (Ustawienia firmy).
-2. Otwórz sekcję **Asystenci** (Assistants).
+1. Przejdź do **Settings → Organization & Access → Company Information**. Nagłówek strony pokazuje **Company Settings** (Settings firmy).
+2. Otwórz sekcję **Assistants**.
 3. Włącz **Włącz asystenta ustawień** (Enable the settings assistant).
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch-pl.png" alt="Sekcja Asystenci w Informacjach o firmie z przełącznikami asystenta ustawień, asystenta walidacji i lektora objaśnień"><figcaption><p>Sekcja Asystenci. Asystent ustawień ma własny przełącznik. Asystent walidacji i lektor objaśnień to osobne funkcje.</p></figcaption></figure>
@@ -32,7 +32,7 @@ Krótki komunikat potwierdza **Settings assistant enabled** (Asystent ustawień 
 
 Na każdej stronie obszaru Ustawień znajdziesz mały **przycisk z lampą dżina** obok pola wyszukiwania ustawień. Kliknij go, aby **pokazać** lub **ukryć** asystenta.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-pl.png" alt="Strona Informacje o firmie w Ustawieniach z nawigacją ustawień po lewej, stroną pośrodku i panelem Asystenta ustawień po prawej"><figcaption><p>Asystent znajduje się po <strong>prawej stronie</strong> każdej strony Ustawień: nawigacja po lewej, strona pośrodku, asystent obok niej. Tutaj na stronie <strong>Company Settings → Company Information</strong>. Przycisk do pokazywania lub ukrywania to ikona lampy obok pola <strong>Search Settings</strong> (Szukaj w ustawieniach) na górze nawigacji.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-pl.png" alt="Strona Company Information w Ustawieniach z nawigacją ustawień po lewej, stroną pośrodku i panelem Asystenta ustawień po prawej"><figcaption><p>Asystent znajduje się po <strong>prawej stronie</strong> każdej strony Ustawień: nawigacja po lewej, strona pośrodku, asystent obok niej. Tutaj na stronie <strong>Company Settings → Company Information</strong>. Przycisk do pokazywania lub ukrywania to ikona lampy obok pola <strong>Search Settings</strong> (Szukaj w ustawieniach) na górze nawigacji.</p></figcaption></figure>
 
 * Panel zapamiętuje Twój wybór dla każdego użytkownika, więc przy następnej wizycie pozostaje otwarty.
 * Na szerokim ekranie (1280 pikseli i więcej) znajduje się obok strony. Możesz przeciągnąć jego krawędź, aby zmienić szerokość.
@@ -48,8 +48,8 @@ Na każdej stronie obszaru Ustawień znajdziesz mały **przycisk z lampą dżina
 
 | Problem | Przyczyna i rozwiązanie |
 | --- | --- |
-| W obszarze Ustawień nie ma przycisku z lampą dżina | Przełącznik organizacji jest wyłączony. Administrator organizacji włącza go w **Informacje o firmie → Asystenci** |
-| Brakuje sekcji **Asystenci** w Informacjach o firmie | Widzą ją tylko administratorzy organizacji |
+| W obszarze Ustawień nie ma przycisku z lampą dżina | Przełącznik organizacji jest wyłączony. Administrator organizacji włącza go w **Company Information → Assistants** |
+| Brakuje sekcji **Assistants** w Informacjach o firmie | Widzą ją tylko administratorzy organizacji |
 | Panel pokazuje **The assistant is being set up** (Asystent jest konfigurowany) | Funkcja nie jest jeszcze dostępna w Twoim środowisku |
 | Panel jest, ale odpowiedzi brzmią *Available to administrators only.* | Twoje konto nie jest administratorem organizacji |
 

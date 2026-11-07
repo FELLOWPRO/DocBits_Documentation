@@ -26,7 +26,7 @@ Pochodzenie nadal jest dostępne — jako jeden z wielu warunków. Reguła może
 
 Układy oparte na regułach włącza się **dla każdego typu dokumentu** osobno, jako **administrator organizacji**.
 
-1. Przejdź do **Ustawienia → Przetwarzanie dokumentów → Typy dokumentów**.
+1. Przejdź do **Settings → Document Processing → Document Types**.
 2. Kliknij ikonę **ustawień** (koło zębate) na karcie typu dokumentu.
 3. Otwórz **Zarządzaj układami** i włącz przełącznik.
 
@@ -99,14 +99,14 @@ Układ jest zawsze wybierany na podstawie **bieżących** wartości dokumentu. J
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-pl.png" alt="Reguły wyboru z ukrytymi skonfigurowanymi nazwami. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian."><figcaption><p>Reguły wyboru z ukrytymi skonfigurowanymi nazwami. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian.</p></figcaption></figure>
 
-Każdy wiersz pokazuje **priorytet** (pierwszy wiersz jest oznaczony **FIRST**), **nazwę i klucz reguły** wraz z jej **warunkami**, **układ docelowy**, plakietkę **źródła** oraz przełącznik **Aktywny**.
+Każdy wiersz pokazuje **priorytet** (pierwszy wiersz jest oznaczony **FIRST**), **nazwę i klucz reguły** wraz z jej **warunkami**, **układ docelowy**, plakietkę **źródła** oraz przełącznik **Active**.
 
 | Zadanie | Jak |
 | --- | --- |
-| Utworzenie reguły | **Nowa zasada** |
+| Utworzenie reguły | **New rule** |
 | Edycja reguły | Kliknij wiersz |
 | Zmiana kolejności | Przeciągnij uchwyt po lewej stronie wiersza w górę lub w dół. Nowa kolejność jest zapisywana natychmiast. |
-| Wyłączenie reguły | Przełącznik **Aktywny**. Nieaktywne reguły są ignorowane. |
+| Wyłączenie reguły | Przełącznik **Active**. Nieaktywne reguły są ignorowane. |
 | Duplikowanie lub usuwanie | Menu **⋮** wiersza |
 | Wyszukiwanie reguły | **Search rules…** |
 
@@ -122,7 +122,7 @@ Aby użyć innego układu awaryjnego, utwórz regułę **bez żadnego warunku** 
 
 ## Tworzenie reguły
 
-Kliknij **Nowa zasada** na zakładce Selection rules ekranu, który chcesz zmienić.
+Kliknij **New rule** na zakładce Selection rules ekranu, który chcesz zmienić.
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-pl.png" alt="Zakres, warunki i układ docelowy reguły wyboru. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian."><figcaption><p>Zakres, warunki i układ docelowy reguły wyboru. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian.</p></figcaption></figure>
 
@@ -132,9 +132,9 @@ Zdanie u góry podsumowuje regułę w trakcie jej budowania — „When header.s
 
 | Ustawienie | Co robi |
 | --- | --- |
-| **Nazwa reguły** | Wyświetlana na liście reguł. Opisz przypadek biznesowy: „Faktury Example Supplier”, „E-faktury”, „Akceptacja wysokich kwot”. |
-| **Klucz reguły** | Generowany z nazwy; pozostaje taki sam po zmianie nazwy reguły. |
-| **Typ dokumentu** / **Typ układu** | Typ dokumentu i ekran, dla którego jest reguła. Przejmowane z miejsca, w którym kliknięto **Nowa zasada**. |
+| **Rule Name** | Wyświetlana na liście reguł. Opisz przypadek biznesowy: „Faktury Example Supplier”, „E-faktury”, „Akceptacja wysokich kwot”. |
+| **Rule key** | Generowany z nazwy; pozostaje taki sam po zmianie nazwy reguły. |
+| **Typ dokumentu** / **Typ układu** | Typ dokumentu i ekran, dla którego jest reguła. Przejmowane z miejsca, w którym kliknięto **New rule**. |
 | **Priorytet** | Niższe numery są sprawdzane jako pierwsze. Zostawiaj odstępy (5, 10, 20 …), aby móc później wstawiać reguły. |
 
 ### Krok 2 — Dotyczy, gdy
@@ -209,7 +209,7 @@ Ekran **Odrzuć** · priorytet **10** · *Supplier ID is one of* `10040, 10041` 
 | Objaw | Co sprawdzić |
 | --- | --- |
 | Dokument otrzymuje zły układ | Wcześniejsza reguła pasuje jako pierwsza. Sprawdź reguły powyżej lub **Priorytet dopasowanej reguły** w podglądzie. |
-| Używany jest układ domyślny, choć reguła powinna pasować | Czy reguła jest **Aktywny**? Czy warunek pasuje do dokładnej wartości (wielkość liter, spacje)? Czy reguła jest na właściwej zakładce **ekranu**? |
+| Używany jest układ domyślny, choć reguła powinna pasować | Czy reguła jest **Active**? Czy warunek pasuje do dokładnej wartości (wielkość liter, spacje)? Czy reguła jest na właściwej zakładce **ekranu**? |
 | Układ zmienia się w trakcie pracy użytkownika | Zmieniono pole z **watched_fields**. Oprzyj regułę na bardziej stabilnym polu. |
 | Nie można usunąć układu | Nadal wskazuje na niego jakaś reguła. Najpierw zmień cel tej reguły lub ją usuń. |
 | Nie jest wyświetlany żaden układ | Żadna reguła nie pasowała, nie ma układu domyślnego i dla tego ekranu nie istnieje układ oparty na pochodzeniu. Dodaj regułę bez warunku jako rozwiązanie zbiorcze. |

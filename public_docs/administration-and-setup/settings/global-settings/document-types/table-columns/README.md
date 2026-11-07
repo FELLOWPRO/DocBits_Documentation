@@ -2,7 +2,7 @@
 
 Kolumny tabeli określają, jakie kolumny ma tabela pozycji dokumentu danego typu: co DocBits wyodrębnia do każdej kolumny, co użytkownik widzi na ekranie walidacji oraz co jest wysyłane do systemu ERP podczas eksportu.
 
-**Gdzie:** Ustawienia → Przetwarzanie dokumentów → Typy dokumentów → Kolumny tabeli
+**Gdzie:** Settings → Document Processing → Document Types → Table Columns
 
 <figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-pl-20261104.png" alt="Aktualna lista Use AI z opcjami Domyślne, Tak i Nie. Nie zmieniono żadnej opcji. Komórki tytułów ukryto w celu ochrony danych."><figcaption><p>Aktualna lista Use AI z opcjami Domyślne, Tak i Nie. Nie zmieniono żadnej opcji. Komórki tytułów ukryto w celu ochrony danych.</p></figcaption></figure>
 
@@ -51,12 +51,12 @@ Otwórz [Kolumny tabeli](README.md) dla właściwego typu dokumentu i tabeli. **
 
 | Aktualna opcja | Wpływ na schemat bazowy |
 | --- | --- |
-| **Domyślne · żądane** lub **Domyślne · nie zażądano** | Przyjmuje ustawienie DocBits dla tego typu i nazwy kolumny. Domyślne nie oznacza zawsze włączone ani zawsze wyłączone. |
-| **Tak · poproszono** | Jawnie żąda skonfigurowanej kolumny od AI. |
+| **Default · żądane** lub **Default · nie zażądano** | Przyjmuje ustawienie DocBits dla tego typu i nazwy kolumny. Domyślne nie oznacza zawsze włączone ani zawsze wyłączone. |
+| **Yes · poproszono** | Jawnie żąda skonfigurowanej kolumny od AI. |
 | **Nie · nie poproszono** | Wyklucza ją ze schematu bazowego, nawet jeśli normalnie jest żądana. |
 
-Powrót do **Domyślne** usuwa jawny wybór. Nowa własna kolumna zwykle nie należy do domyślnego zestawu AI: wybierz **Tak**, aby AI ją zwracała. Domyślny zestaw AI nie oznacza wszystkich kolumn dostarczonych z DocBits. Sprawdź wskazany efekt i podgląd.
+Powrót do **Default** usuwa jawny wybór. Nowa własna kolumna zwykle nie należy do domyślnego zestawu AI: wybierz **Yes**, aby AI ją zwracała. Domyślny zestaw AI nie oznacza wszystkich kolumn dostarczonych z DocBits. Sprawdź wskazany efekt i podgląd.
 
-**Wymagana**, **Tylko do odczytu** i **Ukryta** sterują kompletnością, edycją i widocznością; nie zastępują wyboru AI. **Nie** nie usuwa kolumny ani jej wartości i nie blokuje reguł, skryptów lub innych źródeł danych. Trening dostawcy i dodatkowe tagi AI mogą rozszerzyć faktyczne żądanie: rozwiąż sprzeczności także tam. Przełącznik nie zastępuje automatycznie wyniku pochodzącego wyłącznie z reguł.
+**Required**, **Read Only** i **Hidden** sterują kompletnością, edycją i widocznością; nie zastępują wyboru AI. **Nie** nie usuwa kolumny ani jej wartości i nie blokuje reguł, skryptów lub innych źródeł danych. Trening dostawcy i dodatkowe tagi AI mogą rozszerzyć faktyczne żądanie: rozwiąż sprzeczności także tam. Przełącznik nie zastępuje automatycznie wyniku pochodzącego wyłącznie z reguł.
 
 [Structured Output dla tabel](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

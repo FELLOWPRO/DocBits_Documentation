@@ -25,21 +25,21 @@ Reguły są definiowane dla każdego **typu dokumentu** i działają na każdym 
 | Każda pozycja towarowa musi mieć ilość większą od zera | pozycje z ilością 0 są eksportowane | **Zakres** (minimum 0,01) dla kolumny Quantity |
 | Termin płatności nie może być wcześniejszy niż data faktury | błędne przebiegi płatności | **Porównaj pola**: Due Date w dniu lub po Invoice Date |
 | Pozycje muszą sumować się do kwoty netto | tylko stała wbudowana kontrola | **Formuła** `sum(row.NET_AMOUNT) == header.total_net_amount` z własną tolerancją |
-| Dozwolone są tylko waluty znane Twojemu ERP | błędy eksportu w ERP | **Lista wartości** dla Currency |
+| Dozwolone są tylko waluty znane Twojemu ERP | błędy eksportu w ERP | **List of Values** dla Currency |
 | Informowanie użytkowników o nietypowych wartościach bez blokowania | niemożliwe | dowolna reguła o ważności **Ostrzeżenie** |
 
 ## Włączanie niestandardowych reguł walidacji
 
 Niestandardowe reguły walidacji włącza się **dla każdego typu dokumentu**. Nie ma przełącznika obejmującego całą organizację.
 
-1. Przejdź do **Ustawienia → Przetwarzanie dokumentów → Typy dokumentów**.
+1. Przejdź do **Settings → Document Processing → Document Types**.
 2. Na karcie typu dokumentu kliknij ikonę **ustawień** (koło zębate).
 3. Otwórz sekcję **Niestandardowe reguły walidacji** i włącz przełącznik.
 4. Kliknij **Zarządzaj regułami walidacji**, aby otworzyć listę reguł.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="Przełączniki reguł w ustawieniach dodatkowych typu dokumentu"><figcaption><p>Przełączniki Manage Layouts, Custom Validation Rules i Transformation Rules</p></figcaption></figure>
 
-Od tej chwili karta typu dokumentu pokazuje także link **Reguły walidacji**.
+Od tej chwili karta typu dokumentu pokazuje także link **Validation Rules**.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-card-links.png" alt="Karta typu dokumentu z linkiem Reguły walidacji"><figcaption><p>Linki na karcie typu dokumentu</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Od tej chwili karta typu dokumentu pokazuje także link **Reguły walidacji**.
 
 ## Lista reguł
 
-**Typy dokumentów → (typ dokumentu) → Reguły walidacji** wyświetla wszystkie reguły danego typu dokumentu.
+**Document Types → (typ dokumentu) → Validation Rules** wyświetla wszystkie reguły danego typu dokumentu.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-pl.png" alt="Zarządzanie regułami walidacji z ukrytymi skonfigurowanymi nazwami. Błędna etykieta Chodnikowiec oznacza pole nagłówka, a Zwyczaj regułę niestandardową. Względne daty pozostają w języku niemieckim."><figcaption><p>Zarządzanie regułami walidacji z ukrytymi skonfigurowanymi nazwami. Błędna etykieta Chodnikowiec oznacza pole nagłówka, a Zwyczaj regułę niestandardową. Względne daty pozostają w języku niemieckim.</p></figcaption></figure>
 
@@ -59,15 +59,15 @@ Każda karta pokazuje nazwę i opis reguły oraz plakietki jej **poziomu** (Head
 
 | Źródło | Co to jest | Co możesz zrobić |
 | --- | --- | --- |
-| **Domyślne ustawienie systemu** | Reguła dostarczana z DocBits dla wszystkich organizacji. | Nie można jej edytować bezpośrednio — kreator pokazuje komunikat „This is a system default rule and cannot be edited.” Kliknij **Dostosuj**, aby utworzyć własną edytowalną kopię, lub wyłącz regułę, aby przestała działać w Twojej organizacji. |
+| **Domyślne ustawienie systemu** | Reguła dostarczana z DocBits dla wszystkich organizacji. | Nie można jej edytować bezpośrednio — kreator pokazuje komunikat „This is a system default rule and cannot be edited.” Kliknij **Customize**, aby utworzyć własną edytowalną kopię, lub wyłącz regułę, aby przestała działać w Twojej organizacji. |
 | **Dostosowane** | Reguła systemowa, którą Twoja organizacja zmieniła lub wyłączyła. | Edytuj ją jak własną regułę. **Przywróć ustawienia domyślne** usuwa Twoją kopię i przywraca oryginał. |
-| **Niestandardowy** | Reguła utworzona przez Twoją organizację. | Edytuj, **Duplikuj**, **Usuwać**. |
+| **Niestandardowy** | Reguła utworzona przez Twoją organizację. | Edytuj, **Duplicate**, **Usuwać**. |
 
 Zmiany reguł systemowych nigdy nie wpływają na inne organizacje.
 
 ## Tworzenie reguły
 
-Kliknij **Nowa reguła**. Kreator ma trzy kroki. **Reguła testowa** i **Zapisz** znajdują się w prawym górnym rogu.
+Kliknij **Nowa reguła**. Kreator ma trzy kroki. **Test rule** i **Save** znajdują się w prawym górnym rogu.
 
 ### Krok 1 — Nazwa i zakres
 
@@ -77,8 +77,8 @@ Kliknij **Nowa reguła**. Kreator ma trzy kroki. **Reguła testowa** i **Zapisz*
 | --- | --- |
 | **Poziom reguły** | Na co patrzy reguła i gdzie pokazywany jest błąd — zobacz [Poziomy reguł](#poziomy-regul). |
 | **Ważność** | **Błąd** oznacza pole jako nieprawidłowe i blokuje walidację. **Ostrzeżenie** pokazuje komunikat, ale nigdy nie blokuje. |
-| **Nazwa reguły** | Wyświetlana na liście, w logach i dla administratorów. Niech opisuje regułę („Numer identyfikacji podatkowej dostawcy wymagany dla niemieckich faktur”). |
-| **Klucz reguły** | Klucz techniczny generowany z nazwy. Pozostaje taki sam, gdy później zmienisz nazwę reguły. Kliknij ołówek, aby wybrać własny klucz przed pierwszym zapisem; potem jest on stały. |
+| **Rule Name** | Wyświetlana na liście, w logach i dla administratorów. Niech opisuje regułę („Numer identyfikacji podatkowej dostawcy wymagany dla niemieckich faktur”). |
+| **Rule key** | Klucz techniczny generowany z nazwy. Pozostaje taki sam, gdy później zmienisz nazwę reguły. Kliknij ołówek, aby wybrać własny klucz przed pierwszym zapisem; potem jest on stały. |
 | **Opis** | Opcjonalne wyjaśnienie dla innych administratorów. |
 | **Nazwa tabeli** | *Tylko wiersz tabeli.* Tabela, której wiersze są sprawdzane, na przykład `INVOICE_TABLE`. |
 | **Przypisz błąd do pola / kolumny** | Pole (a dla wierszy tabeli — kolumna), które pokazuje błąd na ekranie walidacji. |
@@ -197,7 +197,7 @@ Z wyjątkiem **Obowiązkowe**, każda kontrola **przechodzi, gdy wartość jest 
 
 ## Test reguły
 
-Kliknij **Reguła testowa**, aby uruchomić bieżącą wersję reguły — zapisaną lub nie — na dokumencie. Wpisz **ID dokumentu** lub przełącz na **Według dokumentu JSON** i wklej wyekstrahowane dane. **Nic nie jest zapisywane**, a dokument nie jest zmieniany.
+Kliknij **Test rule**, aby uruchomić bieżącą wersję reguły — zapisaną lub nie — na dokumencie. Wpisz **ID dokumentu** lub przełącz na **Według dokumentu JSON** i wklej wyekstrahowane dane. **Nic nie jest zapisywane**, a dokument nie jest zmieniany.
 
 Wynik to jeden z trzech rezultatów:
 
@@ -228,7 +228,7 @@ Przetestuj każdą nową regułę na co najmniej jednym dokumencie, który powin
 
 Każda reguła może zapisywać swoje oceny. Otwórz stronę **Rejestry wykonywania reguł** danego typu dokumentu: nagłówek podaje typ dokumentu, a ikona odświeżania ładuje listę ponownie.
 
-**Znajdź według** określa, czego szukasz (domyślnie **Klucz reguły**), a wartość wpisujesz w polu obok. Przy szukaniu po dokumencie **Typ reguły** jest wymagany. Zawęź wynik za pomocą **Wynik**, **Wykonany**, **Od daty** i **Do tej pory**.
+**Znajdź według** określa, czego szukasz (domyślnie **Rule key**), a wartość wpisujesz w polu obok. Przy szukaniu po dokumencie **Typ reguły** jest wymagany. Zawęź wynik za pomocą **Wynik**, **Wykonany**, **Od daty** i **Do tej pory**.
 
 <figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-pl.png" alt="Rejestry wykonywania reguł"><figcaption><p>Strona rejestrów wykonywania reguł: u góry filtry, poniżej jeden wiersz na ocenę. Dopóki nie wyszukasz, tabela podpowiada, co wpisać.</p></figcaption></figure>
 
@@ -238,7 +238,7 @@ Ta sama strona pokazuje też logi reguł transformacji i wyboru układu.
 
 ## Przepisy
 
-Skopiuj te reguły jako punkt wyjścia. Klucze pól i kolumn pochodzą ze standardowego typu dokumentu **Faktura**; dostosuj je do swoich typów dokumentów.
+Skopiuj te reguły jako punkt wyjścia. Klucze pól i kolumn pochodzą ze standardowego typu dokumentu **Invoice**; dostosuj je do swoich typów dokumentów.
 
 **1. Numer identyfikacji podatkowej dostawcy dla niemieckich faktur powyżej 250 EUR**
 Header field · Error · przypisz do *Supplier Tax ID* · Dotyczy, gdy **Wszystko**: *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Kontrola **Obowiązkowe** · Komunikat „Brak numeru identyfikacji podatkowej dostawcy. Niemieckie faktury powyżej 250 EUR muszą go zawierać.” · Kod `REQUIRED_CONDITIONAL`.
@@ -265,7 +265,7 @@ Header field · Error · *Due Date* · zawsze · **Porównaj pola** Due Date *w 
 Header field · Error · *Invoice Date* · zawsze · **Porównaj pola** Invoice Date *w dniu lub przed (≤)* dzisiaj.
 
 **9. Tylko zatwierdzone waluty (wyłącznie podpowiedź)**
-Header field · **Ostrzeżenie** · *Currency* · zawsze · **Lista wartości** *approved_currencies* · Kod `VALUE_NOT_ALLOWED`.
+Header field · **Ostrzeżenie** · *Currency* · zawsze · **List of Values** *approved_currencies* · Kod `VALUE_NOT_ALLOWED`.
 
 **10. Zamówienie zakupu wymagane powyżej 5 000**
 Header field · Error · *Purchase Order* · Dotyczy, gdy *Total Amount* greater than *5000* · **Obowiązkowe**.
@@ -282,14 +282,14 @@ Header field · Error · *Purchase Order* · Dotyczy, gdy *Total Amount* greater
 
 | Objaw | Co sprawdzić |
 | --- | --- |
-| Reguła nigdy nie zgłasza błędu | Czy funkcja jest włączona dla typu dokumentu, a reguła jest **aktywna**? Uruchom **Reguła testowa** na dokumencie: „skipped” oznacza, że *Dotyczy, gdy* było fałszywe. |
+| Reguła nigdy nie zgłasza błędu | Czy funkcja jest włączona dla typu dokumentu, a reguła jest **aktywna**? Uruchom **Test rule** na dokumencie: „skipped” oznacza, że *Dotyczy, gdy* było fałszywe. |
 | Puste pole nie jest zgłaszane | Tylko **Obowiązkowe** zgłasza puste wartości. Dodaj regułę Required. |
 | Wbudowane kontrole sum zniknęły | Oczekiwane, gdy reguły niestandardowe są włączone. Odtwórz je jako reguły Formula (przepisy 2 i 3). |
 | Zmieniona reguła nie wpływa na dokument | Dokumenty są sprawdzane ponownie przy następnym zapisie. Zapisz lub przetwórz dokument ponownie. |
 | Pattern pasuje do wartości, do których nie powinien | Wzorce przeszukują wnętrze wartości. Zakotwicz za pomocą `^` i `$`. |
 | Dla pola wyświetlany jest tylko jeden z dwóch błędów | Pole pokazuje tylko pierwszą regułę, która nie przeszła. Dostosuj priorytety lub przypisz jedną z reguł do innego pola. |
 | Brakuje kolumn tabeli w *Dotyczy, gdy* | Są dostępne tylko na poziomie **Wiersz tabeli**. |
-| Reguły systemowej nie można zmienić | Kliknij **Dostosuj**, aby utworzyć własną kopię. |
+| Reguły systemowej nie można zmienić | Kliknij **Customize**, aby utworzyć własną kopię. |
 
 ## Powiązane
 

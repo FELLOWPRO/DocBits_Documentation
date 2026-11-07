@@ -15,15 +15,15 @@ Dopasowywanie Zamówień Zakupu (PO) to kluczowy proces zapewniający spójnoś�
 Ta strona konfiguracji służy do definiowania i zarządzania zasadami, które określają _jak_ pozycje zamówienia PO są dopasowywane do odpowiadającego dokumentu przychodzącego (Faktura, Potwierdzenie Zamówienia).
 
 {% hint style="info" %}
-**Wymaganie wstępne:** zasady dopasowywania są używane tylko wtedy, gdy **Serwer dopasowania PO** jest włączony dla typu dokumentu (Ustawienia → Typy dokumentów → Więcej ustawień → Zamówienie zakupu). Przy wyłączonym przełączniku DocBits dopasowuje za pomocą wbudowanego mechanizmu (ilość, cena jednostkowa, numer pozycji, numer zamówienia) i ignoruje zestaw zasad.
+**Wymaganie wstępne:** zasady dopasowywania są używane tylko wtedy, gdy **Serwer dopasowania PO** jest włączony dla typu dokumentu (Settings → Document Types → More Settings → Zamówienie zakupu). Przy wyłączonym przełączniku DocBits dopasowuje za pomocą wbudowanego mechanizmu (ilość, cena jednostkowa, numer pozycji, numer zamówienia) i ignoruje zestaw zasad.
 {% endhint %}
 
 ***
 
 ## Jak uzyskać dostęp
 
-1. Przejdź do **Ustawienia** → **Przetwarzanie dokumentów** → **Typy dokumentów**, wybierz typ dokumentu i kliknij **Więcej ustawień**.
-2. Na karcie **Zamówienie zakupu** włącz **Serwer dopasowania PO**.
+1. Przejdź do **Settings** → **Document Processing** → **Document Types**, wybierz typ dokumentu i kliknij **More Settings**.
+2. Na karcie **Purchase Order** włącz **Serwer dopasowania PO**.
 3. Kliknij **Konfiguruj reguły dopasowywania zamówień** obok przełącznika.
 
 <figure><img src="../../../../../../.gitbook/assets/doc-type-settings-po-options-pl.png" alt="Karta Zamówienie zakupu z opcjami Serwer dopasowania PO i Konfiguruj reguły dopasowywania zamówień"><figcaption><p>Karta Zamówienie zakupu. <strong>Konfiguruj reguły dopasowywania zamówień</strong> znajduje się obok <strong>Serwer dopasowania PO</strong>.</p></figcaption></figure>
@@ -38,7 +38,7 @@ U góry strony znajdują się trzy przyciski:
 * **Zapisz zasady** zapisuje zmiany w wersji roboczej, którą edytujesz.
 * **Konfiguruj wersjonowanie** otwiera historię wersji. Zobacz Wersje i wersje robocze.
 
-Pod przyciskami pojawia się informacja **Tylko do odczytu**, gdy oglądasz opublikowaną wersję: *To jest opublikowana wersja i nie można jej edytować. Sklonuj jako wersję roboczą, aby wprowadzić zmiany.* Poniżej znajdują się karta **Ustawienia globalne (Zasady podstawowe)** i **Lista zasad**. Wybierz zasadę na liście, aby skonfigurować ją w obszarze **Konfiguracja reguł** pod listą.
+Pod przyciskami pojawia się informacja **Read Only**, gdy oglądasz opublikowaną wersję: *To jest opublikowana wersja i nie można jej edytować. Sklonuj jako wersję roboczą, aby wprowadzić zmiany.* Poniżej znajdują się karta **Ustawienia globalne (Zasady podstawowe)** i **Lista zasad**. Wybierz zasadę na liście, aby skonfigurować ją w obszarze **Konfiguracja reguł** pod listą.
 
 ***
 
@@ -72,7 +72,7 @@ Lista zasad wyświetla wszystkie dostępne zasady dopasowywania i zarządza ich 
 
 * **Priorytet:** To pole liczbowe (np. 1, 2, 3) określa kolejność wykonywania zasad. Zasady o niższym numerze priorytetu są próbowane jako pierwsze. Pozwala to administratorom na stworzenie hierarchii, zwykle zaczynając od najbardziej specyficznych i rygorystycznych zasad (np. dopasowanie według numeru linii i numeru części) i przechodząc do szerszych lub mniej restrykcyjnych zasad.
 * **Nazwa i opis:** Zapewnia jasną identyfikację i kontekst zasady, wyjaśniając główne kryteria użyte (np. "Standardowa zasada nr 1: Dopasowanie według numeru linii, ID części i ilości").
-* **Aktywny:** Prosty przełącznik umożliwiający natychmiastowe włączenie lub wyłączenie zasady bez konieczności usuwania jej konfiguracji.
+* **Active:** Prosty przełącznik umożliwiający natychmiastowe włączenie lub wyłączenie zasady bez konieczności usuwania jej konfiguracji.
 
 **Przebieg wykonania:** System wykonuje dopasowywanie w sekwencji kaskadowej. Jeśli zasada (np. priorytet 1) pomyślnie dopasuje pozycję, proces dla tej pozycji się zatrzymuje. Jeśli nie znaleziono dopasowania, system przechodzi do następnej zasady w kolejności priorytetu (np. priorytet 2). Każde uruchomienie jest rejestrowane w dokumencie; **Historia dopasowania** na ekranie Dopasowywania Zamówień Zakupu pokazuje, która zasada była próbowana, która dopasowała oraz które zostały pominięte i dlaczego.
 

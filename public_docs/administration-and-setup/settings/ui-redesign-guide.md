@@ -7,7 +7,7 @@ Ta strona to krótka orientacja w bieżącym układzie DocBits — gdzie znaleź
 Główny pasek boczny wymienia każdą sekcję DocBits, do której masz uprawnienia. Dwa sposoby sterowania nim:
 
 * **Tryb mini** — kliknij przełącznik u góry paska bocznego, aby ograniczyć go tylko do ikon. Najedź kursorem na dowolną ikonę, aby przeczytać etykietę. Pasek pamięta, czy ostatnio był rozwinięty czy zwinięty.
-* **Dostosuj** — na dole rozwiniętego paska bocznego jest wpis **Dostosuj**. Użyj go, aby uporządkować menu, ukryć wpisy, których nie używasz, lub przypiąć na górze te, które otwierasz najczęściej.
+* **Customize** — na dole rozwiniętego paska bocznego jest wpis **Customize**. Użyj go, aby uporządkować menu, ukryć wpisy, których nie używasz, lub przypiąć na górze te, które otwierasz najczęściej.
 
 Pełny przewodnik po porządkowaniu, ukrywaniu i przypinaniu znajdziesz w [Konfigurowalnym Pasku Bocznym](../../end-user-and-partner-section/end-user-section/customizable-sidebar.md).
 
@@ -15,7 +15,7 @@ Pełny przewodnik po porządkowaniu, ukrywaniu i przypinaniu znajdziesz w [Konfi
 
 Menu Ustawienia jest pogrupowane według zamiaru, a nie modelu danych. Jeśli pamiętasz ustawienie, ale nie potrafisz go znaleźć, spróbuj odpowiedniej grupy poniżej:
 
-| Szukasz… | Otwórz Ustawienia → |
+| Szukasz… | Otwórz Settings → |
 |---|---|
 | Nazwa firmy, logo, strefa czasowa, kolor aplikacji | Firma i Użytkownicy → Informacje o Firmie |
 | Użytkownicy, grupy, uprawnienia | Firma i Użytkownicy → Grupy, Użytkownicy i Uprawnienia |

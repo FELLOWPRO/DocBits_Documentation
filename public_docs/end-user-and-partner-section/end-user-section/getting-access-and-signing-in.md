@@ -1,12 +1,36 @@
 # Getting Access and Signing In
 
-This page explains how to get a DocBits account and how to sign in when you do not have your password:
+This page explains how to get a DocBits account and how to sign in:
 
+* [Sign in with an existing account](#sign-in-with-an-existing-account) — the fields on the login screen and the region selector.
 * [Registration](#registration) — create your own DocBits account.
 * [Forgot password](#forgot-password) — reset your password with a reset link.
 * [First password for admin-created accounts](#first-password-for-admin-created-accounts) — set the first password for an account your administrator created for you.
 
-Signing in with an existing account, and Two-Factor Authentication, are covered in [Two-Factor Authentication (2FA)](../../security/two-factor-authentication.md). Use the language menu at the top right of these forms if you need another display language.
+Two-Factor Authentication, passkeys and the second sign-in step are covered in [Two-Factor Authentication (2FA)](../../security/two-factor-authentication.md). Use the language menu at the top right of these forms if you need another display language.
+
+## Sign in with an existing account
+
+Open the DocBits web address your organisation was given — for example `https://app.docbits.com` — and sign in on the login screen.
+
+<figure><img src="../../.gitbook/assets/getting-access-login-en-20261107.png" alt="English DocBits login screen with empty E-Mail and Password fields, Remember me, the Auth region selector set to Europe, Log In, Sign in with a passkey, Sign in with Google and Sign in with Microsoft"><figcaption><p>The login screen: email and password, Remember me, the Auth region selector, Log In, passkey and the Google and Microsoft sign-in buttons.</p></figcaption></figure>
+
+1. **E-Mail** — the address your DocBits account was created with.
+2. **Password** — your DocBits password. The eye icon in the field shows or hides what you typed.
+3. **Remember me** — fills in your email address the next time you open the login screen.
+4. **Auth region** — DocBits runs in two regions, **Europe** and **United States**, and each has its own sign-in service. The selector is shown on deployments that use both (production, dev and sandbox). DocBits preselects your last choice, otherwise the region that matches your computer's time zone, otherwise Europe. If your account was created in the other region, select it here before you click **Log In**.
+5. Click **Log In**.
+
+Below the password fields:
+
+* **Sign in with a passkey** — appears when your browser supports passkeys. It signs you in without your password. See [Passwordless sign-in](../../security/two-factor-authentication.md).
+* **Sign in with Google** and **Sign in with Microsoft** — for organisations that use single sign-on with these providers. The identity provider handles the sign-in, so the DocBits password and the DocBits two-factor requirement do not apply.
+* **Forgot password?** — see [Forgot password](#forgot-password) below.
+* **Register** — see [Registration](#registration) below.
+
+{% hint style="info" %}
+Pick the **Auth region** your organisation uses before you click **Log In**: the choice decides which region's sign-in service receives your credentials. If you are unsure, ask your administrator.
+{% endhint %}
 
 ## Registration
 

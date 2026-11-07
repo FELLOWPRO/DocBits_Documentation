@@ -72,4 +72,6 @@ The **Usage** panel under the card starts collapsed. Open it to see what your or
 | **Tokens used** | Tokens consumed in the period. |
 | **Remaining tokens** | Tokens left for the period. |
 
-Use **Select** to choose the date range the table covers, and click a column header to sort the rows by that column.
+Use **Select** to choose the date range the table covers. To sort, click the small up or down arrow beside the label of **Type**, **From**, **To** or **Remaining tokens**; clicking the label itself does not sort.
+
+A **DocNet** row appears only when DocNet is active for your organisation.

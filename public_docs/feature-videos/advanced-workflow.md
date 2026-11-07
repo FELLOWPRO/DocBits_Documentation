@@ -4,8 +4,6 @@ description: "Build document workflows with connected cards. Route by conditions
 
 # DocBits Advanced Workflow
 
-**Your process. Your logic. Clearly connected.**
-
 Build document workflows with connected cards. Route by conditions, join results and give errors their own path — with the complete process in view.
 
 ## Watch the feature overview

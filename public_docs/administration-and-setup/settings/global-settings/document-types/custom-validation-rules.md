@@ -159,6 +159,8 @@ The value must match a **regular expression**. The expression searches the value
 
 The value must be a number between **Minimum** and **Maximum** (both included). Fill in one or both. A value that is not a number fails. Formatted amounts such as `1.234,56` are understood.
 
+The bounds themselves are typed as plain numbers: an optional sign and digits, with a comma accepted as the decimal separator (`0,5`). Thousands separators, exponents and words are refused when you save, with a hint that the bound is not a number. Fill in at least one bound, because a range without a minimum and a maximum is not saved, and keep the minimum at or below the maximum.
+
 <figure><img src="../../../../.gitbook/assets/validation-rule-line-range.png" alt="A Range check"><figcaption><p>Range with a minimum only: quantities must be at least 0.01</p></figcaption></figure>
 
 #### Compare fields — e.g. due date ≥ invoice date

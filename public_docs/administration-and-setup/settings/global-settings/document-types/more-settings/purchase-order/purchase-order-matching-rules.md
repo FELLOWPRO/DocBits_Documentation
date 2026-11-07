@@ -215,6 +215,16 @@ De gedefinieerde regelset bepaalt direct de efficiëntie en integriteit van de P
 * [**Bereken PO-eenheidsprijs**](calculate-po-unit-price.md) verandert welke eenheidsprijs de regels aan de inkooporderzijde vergelijken.
 * [**Tolerantie-instellingen**](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) en [**uitgeschakelde statussen**](purchase-order-disable-statuses.md) bepalen hoe strikt de vergelijking is en welke inkooporderregels überhaupt worden aangeboden.
 
+## Wanneer de match regels overslaat
+
+Een regel heeft een kolom nodig die de geëxtraheerde tabel echt heeft; een regel die regels op artikelnummer koppelt, kan niet lopen op een factuur die er geen afdrukt.
+
+In plaats daarvan voert de automatische match de regels uit die kunnen en laat de regels van de andere ongematcht. Daarna meldt hij **Some PO match rules were not tried** en noemt elke overgeslagen regel en elke kolom die in de tabel ontbreekt. De betrokken regels blijven zonder match tot u de ontbrekende kolom toevoegt of ze handmatig koppelt.
+
+{% hint style="info" %}
+Een onjuiste activeringsvoorwaarde slaat ook een regel over, maar dat is een ander geval: het verschijnt in de matchgeschiedenis, niet in deze melding.
+{% endhint %}
+
 ## Probleemoplossing
 
 | Symptoom | Wat te controleren |

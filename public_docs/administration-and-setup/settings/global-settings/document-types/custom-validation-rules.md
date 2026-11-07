@@ -162,6 +162,8 @@ De waarde moet overeenkomen met een **reguliere expressie**. De expressie zoekt 
 
 De waarde moet een getal zijn tussen **Minimum** en **Maximaal** (beide inbegrepen). Vul er één of beide in. Een waarde die geen getal is, mislukt. Opgemaakte bedragen zoals `1.234,56` worden begrepen.
 
+De grenzen zelf voert u in als gewone getallen: een optioneel teken en cijfers, waarbij een komma als decimaalteken wordt geaccepteerd (`0,5`). Duizendscheidingstekens, exponenten en woorden worden bij het opslaan geweigerd, met de melding dat de grens geen getal is. Vul minstens één grens in, want een bereik zonder minimum en maximum wordt niet opgeslagen, en houd het minimum gelijk aan of lager dan het maximum.
+
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-range.png" alt="Een Range-controle"><figcaption><p>Range met alleen een minimum: hoeveelheden moeten minstens 0.01 zijn</p></figcaption></figure>
 
 #### Compare fields — bijv. vervaldatum ≥ factuurdatum

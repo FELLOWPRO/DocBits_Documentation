@@ -50,3 +50,16 @@ Houd uw token- en workflowgebruik over een geselecteerde periode bij. Gebruik de
 | **Van / Tot** | De periode waarover het gebruik wordt gerapporteerd. |
 | **Gebruikte tokens** | In de periode verbruikte tokens. |
 | **Resterende tokens** | Voor de periode beschikbare tokens. |
+
+## Usage
+
+Het paneel **Usage** onder de kaart staat standaard ingeklapt. Open het om te zien wat uw organisatie per periode heeft verbruikt.
+
+| Kolom | Beschrijving |
+| --- | --- |
+| **Type** | De gebruikscategorie: Document, Workflow, Advanced Workflow of DocNet. |
+| **From / To** | De periode waarvoor het gebruik wordt gerapporteerd. |
+| **Tokens used** | In de periode verbruikte tokens. |
+| **Remaining tokens** | Resterende tokens voor de periode. |
+
+Kies met **Select** het datumbereik dat de tabel dekt en klik op een kolomkop om de rijen op die kolom te sorteren.

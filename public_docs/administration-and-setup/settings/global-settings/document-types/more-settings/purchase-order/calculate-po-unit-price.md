@@ -6,12 +6,12 @@
 
 ## **启用步骤**
 
-1.  前往 **设置** -> **文档处理** -> **文档类型**。
+1.  前往 **Settings** -> **Document Processing** -> **Document Types**。
 
-2.  选择所需的文档类型，然后点击 **更多设置**。
+2.  选择所需的文档类型，然后点击 **More Settings**。
 
     <figure><img src="../../../../../../.gitbook/assets/prior-u044-zh.png" alt="打开发票文档类型的更多设置。 “Standard”和“Extraction”仍是当前界面保留的英文标签。"><figcaption><p>打开发票文档类型的更多设置。 “Standard”和“Extraction”仍是当前界面保留的英文标签。</p></figcaption></figure>
-3.  在 **采购订单** 部分，启用 **计算采购订单单价** 选项。
+3.  在 **Purchase Order** 部分，启用 **计算采购订单单价** 选项。
 
     <figure><img src="../../../../../../.gitbook/assets/prior-u045-zh.png" alt="已使用采购订单行的状态设置。"><figcaption><p>已使用采购订单行的状态设置。</p></figcaption></figure>
 

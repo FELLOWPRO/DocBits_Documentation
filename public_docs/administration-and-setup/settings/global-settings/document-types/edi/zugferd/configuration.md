@@ -21,7 +21,7 @@ ZUGFeRD 标准默认始终处于启用状态，但您可以根据需要进行修
 
 ### **修改 ZUGFeRD 设置的步骤：**
 
-1. 前往 **设置 → 文档处理 → 文档类型 → 发票**。
+1. 前往 **Settings → Document Processing → Document Types → 发票**。
 2. 点击 **E-Doc**。\\
 3. 系统将显示所有可用电子文档的列表。
 4. 找到要修改的 **ZUGFeRD** 版本。\\
@@ -67,7 +67,7 @@ ZUGFeRD 标准默认始终处于启用状态，但您可以根据需要进行修
 2. 点击**铅笔图标**创建新草稿。
 3. 选择新创建的草稿。
 4. 创建新字段或修改现有字段。
-5. 左侧表示 **DocBits 字段 ID**，可在 **设置 → 文档处理 → 文档类型 → 发票 → 字段** 中找到。\\
+5. 左侧表示 **DocBits 字段 ID**，可在 **Settings → Document Processing → Document Types → Invoice → 字段** 中找到。\\
 6. 右侧表示在 Transformation 中创建的**字段路径**。
 7. 点击 **Save**。
 

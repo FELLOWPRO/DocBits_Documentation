@@ -25,7 +25,7 @@
 
 ## 概述
 
-在**分类与提取**设置中，您可以：
+在**Classification and Extraction**设置中，您可以：
 
 * 启用基于 QR 码的**文档拆分**
 * 配置**金额格式**
@@ -38,8 +38,8 @@
 
 ## **访问分类与提取设置**
 
-要访问**分类与提取**设置，请前往：\
-**设置 → 文档处理 → 分类与提取**
+要访问**Classification and Extraction**设置，请前往：\
+**Settings → Document Processing → Classification and Extraction**
 
 
 ## 文档拆分
@@ -85,7 +85,7 @@
 {% hint style="info" %}
 **表格提取的运行前提**
 
-* 文档类型已配置**表格列**（设置 → 文档处理 → 文档类型 → [表格列](../../global-settings/document-types/table-columns/README.md)）。没有列就没有可供提取填入的字段。
+* Document Types已配置**Table Columns**（Settings → Document Processing → Document Types → [表格列](../../global-settings/document-types/table-columns/README.md)）。没有列就没有可供提取填入的字段。
 * 已在下方为整个组织启用**表格提取**或 **AI 表格提取**。
 * 文档包含可读取的文本：已运行 OCR，或者数字原生 PDF 使用了 E-Text（[OCR 设置](../ocr-settings.md)）。
 * 训练数据和 AI 模型均按**供应商**区分。训练好的表格仅适用于该供应商的文档。
@@ -151,8 +151,8 @@
 | 保存提取规则（仅管理员） | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
 | AI 模型 | `AI_MODEL` | `gpt-6-sol`（Full）、`gpt-6-luna`（Fast）、`qwen3.8-max`（Nexus）、`glm-5.3-flash`（Nexus Flash）、`auto`（Auto）、`auto-nexus`（Auto Nexus） |
 | 表格提取版本（确认对话框） | `TBL_EXT_VERSION` | 版本字符串 |
-| OCR 设置 → 有可用 AI 数据时对表格使用 AI 数据 | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
-| OCR 设置 → 有可用 E-Text 时使用 E-Text | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+| OCR Settings → 有可用 AI 数据时对表格使用 AI 数据 | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR Settings → 有可用 E-Text 时使用 E-Text | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
 
 说明：
 
@@ -186,11 +186,11 @@
    * **模式**：系统用于触发分类的正则表达式模式。
    * **类型**：指定要在哪个位置搜索该模式（例如 **Barcode**）。
    * **子组织** _(可选)_: 指定此规则适用的子组织。
-   * **文档类型**：定义匹配该模式时要分配的文档类型。
+   * **Document Types**：定义匹配该模式时要分配的文档类型。
    *   **子文档类型** _(可选)_: 指定更具体的分类子类型。
 
        
-3.  点击**保存**以保存分类规则。
+3.  点击**Save**以保存分类规则。
 
     
 
@@ -201,11 +201,11 @@
 1.  点击**操作**列中的三个点。
 
     
-2.  选择**编辑**。
+2.  选择**Edit**。
 
     
 3. 按需进行修改。
-4.  点击**保存**以应用更改。
+4.  点击**Save**以应用更改。
 
     
 
@@ -216,7 +216,7 @@
 1.  点击**操作**列中的三个点。
 
     
-2.  选择**删除**。
+2.  选择**Delete**。
 
     
 
@@ -247,7 +247,7 @@
 
 * **名称**：模型的名称。
 * **下一个模型**：将进一步处理当前模型输出的模型。
-* **文档类型**：模型在分类过程中分配的主要文档类型。
+* **Document Types**：模型在分类过程中分配的主要文档类型。
 * **文档子类型**：文档进一步细分的子类型。
 * **优先级**：决定模型在分类队列中位置的优先级。
 
@@ -261,8 +261,8 @@
     
 2. 更新可用字段：
    * **下一个模型**：选择应处理当前模型输出的模型。
-   * **文档类型**：选择模型应将输入分类为何种文档类型。
-3.  点击**保存**以应用更改。
+   * **Document Types**：选择模型应将输入分类为何种文档类型。
+3.  点击**Save**以应用更改。
 
     
 

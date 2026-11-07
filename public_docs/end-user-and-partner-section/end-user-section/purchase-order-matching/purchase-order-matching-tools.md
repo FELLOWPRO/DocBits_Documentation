@@ -6,9 +6,9 @@ Na ekranie dopasowywania zamówień zakupu wyszukiwanie zamówień i narzędzia 
 
 ## Znajdowanie właściwego zamówienia zakupu
 
-Wpisz numer zamówienia zakupu w polu **Wyszukaj numer zamówienia zakupu** i wybierz wynik. Ikona filtra obok pola otwiera dodatkowe opcje wyszukiwania: Słowo kluczowe, Dostawca, Status, Status zamówienia, Po dacie, Przed datą, Minimalna kwota zamówienia, Maksymalna kwota zamówienia, Sortuj według, Sortuj kierunek i Liczba rekordów do wyświetlenia. Wybierz **Stosować**, aby użyć filtrów, albo **Jasne**, aby je zresetować. Filtrowanie listy nie dopasowuje i nie eksportuje faktury.
+Wpisz numer zamówienia zakupu w polu **Search purchase order number** i wybierz wynik. Ikona filtra obok pola otwiera opcje wyszukiwania na całym obszarze wierszy zamówienia zakupu: Słowo kluczowe, Dostawca, Status, Status zamówienia, Po dacie, Przed datą, Minimalna kwota zamówienia, Maksymalna kwota zamówienia, Sortuj według, Sortuj kierunek i Liczba rekordów do wyświetlenia. Wybierz **Apply**, aby użyć filtrów, albo **Clear**, aby je zresetować. Filtrowanie listy nie dopasowuje i nie eksportuje faktury.
 
-<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-filter-pl.png" alt="Polski filtr wyszukiwania zamówień zakupu z polami Dostawca, Status, Status zamówienia, data, kwota i sortowanie"><figcaption><p>Kliknij ikonę filtra obok pola wyszukiwania zamówienia, aby otworzyć więcej opcji wyszukiwania.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-matching-tools-filter-pl-20261107.png" alt="Filtr wyszukiwania zamówień zakupu na całym obszarze wierszy zamówienia, z polami słowa kluczowego, dostawcy, statusu, dat, kwoty i sortowania"><figcaption><p>Kliknij ikonę filtra obok pola wyszukiwania zamówienia, aby otworzyć więcej opcji wyszukiwania.</p></figcaption></figure>
 
 ## Akcje na pasku narzędzi
 
@@ -16,16 +16,16 @@ Przed wybraniem ikony przeczytaj jej podpowiedź. Pasek narzędzi może pokazywa
 
 | Akcja | Co robi |
 | --- | --- |
-| **Historia dopasowań** (zegar) | Otwiera wcześniejsze działania dopasowań dla tego dokumentu. Nie uruchamia nowego dopasowania. |
-| **Pomoc** (?) | Otwiera stronę pomocy o dopasowywaniu zamówień zakupu w nowej karcie przeglądarki. |
-| **Skróty klawiaturowe** (klawiatura) | Pokazuje skróty dostępne na tym ekranie. Zobacz [Skróty klawiaturowe](keyboard-shortcuts.md). |
-| **Tryb szkoleniowy** (tabela) | Włącza lub wyłącza przeciąganie wierszy zamówienia zakupu do tabeli faktury. Przydatny tylko wtedy, gdy dokument ma wiersze faktury; przykładowy ekran poniżej ich nie ma. |
-| **Zadania / Utwórz zadanie** | Otwiera zadania dokumentu lub tworzy zadanie, gdy te akcje są dostępne dla Twojego dokumentu i roli. Zobacz [Zadania](../tasks.md). |
-| **Automatyczne rozliczanie** | Otwiera rozliczanie dla tego dokumentu, gdy dane księgowe są dostępne. |
-| **Automatyczne dopasowanie zamówienia** (różdżka) | Uruchamia dopasowanie automatyczne. Jeśli organizacja włączyła eksport automatyczny, a wynik spełnia jego warunki, ta akcja może również wyeksportować dokument. Sprawdź dokument, zanim jej użyjesz. Zobacz [Automatyczne dopasowywanie danych zamówień zakupu](automatic-purchase-order-data-matching.md). |
-| **Zapisz** (dyskietka) | Zapisuje zmiany dopasowania zamówienia zakupu w dokumencie. |
-| **Synchronizuj dane** | Dostępne tylko dla odpowiedniego ustawienia ilości zamówienia zakupu; odświeża wybrane dane zamówienia z połączonego systemu. Użyj wyświetlonego numeru zamówienia i dostępnych opcji synchronizacji. |
-| **Eksport** | Eksportuje dokument po dopasowaniu. Jeśli Twoja organizacja oferuje wiele celów eksportu, użyj strzałki obok **Eksport**, aby wybrać jeden. |
+| **Matching history** (clock) | Otwiera wcześniejsze działania dopasowań dla tego dokumentu. Nie uruchamia nowego dopasowania. |
+| **Help** (?) | Otwiera stronę pomocy o dopasowywaniu zamówień zakupu w nowej karcie przeglądarki. |
+| **Keyboard shortcuts** (keyboard) | Pokazuje skróty dostępne na tym ekranie. Zobacz [Skróty klawiaturowe](keyboard-shortcuts.md). |
+| **Training mode** (table) | Włącza lub wyłącza przeciąganie wierszy zamówienia zakupu do tabeli faktury. Przydatny tylko wtedy, gdy dokument ma wiersze faktury; przykładowy ekran poniżej ich nie ma. |
+| **Tasks / Create task** | Otwiera zadania dokumentu lub tworzy zadanie, gdy te akcje są dostępne dla Twojego dokumentu i roli. Zobacz [Zadania](../tasks.md). |
+| **Auto Accounting** | Otwiera rozliczanie dla tego dokumentu, gdy dane księgowe są dostępne. |
+| **Auto PO match** (wand) | Uruchamia dopasowanie automatyczne. Jeśli organizacja włączyła eksport automatyczny, a wynik spełnia jego warunki, ta akcja może również wyeksportować dokument. Sprawdź dokument, zanim jej użyjesz. Zobacz [Automatyczne dopasowywanie danych zamówień zakupu](automatic-purchase-order-data-matching.md). |
+| **Save** (disk) | Zapisuje zmiany dopasowania zamówienia zakupu w dokumencie. |
+| **Sync Data** | Dostępne tylko dla odpowiedniego ustawienia ilości zamówienia zakupu; odświeża wybrane dane zamówienia z połączonego systemu. Użyj wyświetlonego numeru zamówienia i dostępnych opcji synchronizacji. |
+| **Export** | Eksportuje dokument po dopasowaniu. Jeśli Twoja organizacja oferuje wiele celów eksportu, użyj strzałki obok **Export**, aby wybrać jeden. |
 
 Zakładka zamówienia zakupu ma też ikonę odświeżenia do ponownego wczytania tego zamówienia. Ikona ustawień kolumn po prawej stronie nagłówka tabeli decyduje, które kolumny zamówienia zakupu są widoczne. Obie zmieniają widok tabeli zamówienia zakupu, a nie wartości wyodrębnione z faktury.
 

@@ -8,11 +8,7 @@ Begin met dit overzicht van 1:48 en volg daarna de uitgebreide instructies hiero
 
 {% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/nl.mp4" %}
 
-[Speler met ondertitels](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/nl.html) · [Ondertitels](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/nl.vtt) · [Schermteksten](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/nl.txt) · 1:48 · Full HD
-
 [Bekijk de functiepagina en het factuurvoorbeeld](../../feature-videos/advanced-workflow.md)
-
-De video combineert geanimeerde kaarten met echte opnamen van de Engelse Dev-interface. Hij bevat muziek en Nederlandse schermteksten, zonder gesproken uitleg. De testacties zetten het voorbeeldveld `approval_route` op `Approval` of `Standard`; een volledig menselijk goedkeuringsproces vereist eigen bedrijfsacties. Deze demonstratie is niet opgeslagen of geactiveerd. De animaties van samenvoegingen tonen resultaatvereisten, geen uitvoeringstijden. Test bereikbaarheid en de volledige documentverwerking; een geslaagde deeltest bewijst het productieproces niet.
 
 ## Video: factuurroutes in DocBits
 

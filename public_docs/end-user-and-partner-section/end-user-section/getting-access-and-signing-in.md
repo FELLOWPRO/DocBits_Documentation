@@ -1,12 +1,36 @@
 # Obter acesso e iniciar sessão
 
-Esta página explica como obter uma conta DocBits e como iniciar sessão quando não tem a sua palavra-passe:
+Esta página explica como obter uma conta DocBits e como iniciar sessão:
 
+* [Iniciar sessão com uma conta existente](#iniciar-sessao-com-uma-conta-existente) — os campos do ecrã de início de sessão e o seletor de região.
 * [Registo](#registo) — crie a sua própria conta DocBits.
 * [Esqueceu-se da palavra-passe](#esqueceu-se-da-palavra-passe) — redefina a sua palavra-passe com uma ligação de redefinição.
 * [Primeira palavra-passe para contas criadas pelo administrador](#primeira-palavra-passe-para-contas-criadas-pelo-administrador) — defina a primeira palavra-passe de uma conta que o seu administrador criou para você.
 
-Iniciar sessão com uma conta existente e a Autenticação de Dois Fatores estão cobertos em [Autenticação de Dois Fatores (2FA)](../../security/two-factor-authentication.md). Use o menu de idioma no canto superior direito destes formulários se precisar de outro idioma de exibição.
+A Autenticação de Dois Fatores, as passkeys e o segundo passo de início de sessão estão cobertos em [Autenticação de Dois Fatores (2FA)](../../security/two-factor-authentication.md). Use o menu de idioma no canto superior direito destes formulários se precisar de outro idioma de exibição.
+
+## Iniciar sessão com uma conta existente
+
+Abra o endereço web do DocBits que a sua organização recebeu — por exemplo `https://app.docbits.com` — e inicie sessão no ecrã de início de sessão.
+
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/getting-access-login-en-20261107.png" alt="Ecrã de início de sessão do DocBits em inglês com os campos E-Mail e Password vazios, Remember me, o seletor Auth region definido como Europe, Log In, Sign in with a passkey, Sign in with Google e Sign in with Microsoft"><figcaption><p>O ecrã de início de sessão: e-mail e palavra-passe, Remember me, o seletor Auth region, Log In, passkey e os botões de início de sessão Google e Microsoft.</p></figcaption></figure>
+
+1. **E-Mail** — o endereço com que a sua conta DocBits foi criada.
+2. **Password** — a sua palavra-passe do DocBits. O ícone de olho no campo mostra ou oculta o que escreveu.
+3. **Remember me** — preenche o seu endereço de e-mail na próxima vez que abrir o ecrã de início de sessão.
+4. **Auth region** — o DocBits funciona em duas regiões, **Europe** e **United States**, e cada uma tem o seu próprio serviço de início de sessão. O seletor é mostrado nas implementações que usam ambas (production, dev e sandbox). O DocBits pré-seleciona a sua última escolha; caso contrário, a região que corresponde ao fuso horário do seu computador; caso contrário, Europe. Se a sua conta foi criada na outra região, selecione-a aqui antes de clicar em **Log In**.
+5. Clique em **Log In**.
+
+Abaixo dos campos de palavra-passe:
+
+* **Sign in with a passkey** — aparece quando o seu navegador suporta passkeys. Permite-lhe iniciar sessão sem palavra-passe. Consulte [Início de sessão sem palavra-passe](../../security/two-factor-authentication.md).
+* **Sign in with Google** e **Sign in with Microsoft** — para organizações que usam início de sessão único com estes fornecedores. O fornecedor de identidade trata do início de sessão, pelo que a palavra-passe do DocBits e o requisito de dois fatores do DocBits não se aplicam.
+* **Forgot password?** — consulte [Esqueceu-se da palavra-passe](#esqueceu-se-da-palavra-passe) abaixo.
+* **Register** — consulte [Registo](#registo) abaixo.
+
+{% hint style="info" %}
+Escolha a **Auth region** que a sua organização usa antes de clicar em **Log In**: a escolha decide qual serviço de início de sessão da região recebe as suas credenciais. Se não tiver a certeza, pergunte ao seu administrador.
+{% endhint %}
 
 ## Registo
 

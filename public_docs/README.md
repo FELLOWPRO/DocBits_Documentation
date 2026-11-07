@@ -1,14 +1,14 @@
 # DocBits
 
-**DocBits. Make room for ambition.**
+**DocBits. 为雄心留出空间。**
 
 从 OCR/IDP 走到业务逻辑、审批与 Advanced Workflows 的演进之旅。
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/zh.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/zh.mp4" %}
 
-*90 秒 · 英文产品 UI · AI 想象的历史场景*
+*90秒 · FullHD（1920 × 1080）· 从OCR和IDP发展到全面自动化*
 
-[阅读文稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/zh-transcript.md) · [下载视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/zh.mp4)
+[带字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/zh.html) · [阅读文稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/zh-transcript.md) · [下载视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/zh.mp4)
 
 欢迎使用 DocBits
 

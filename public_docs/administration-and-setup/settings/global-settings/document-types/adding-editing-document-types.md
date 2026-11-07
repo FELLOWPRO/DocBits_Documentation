@@ -29,7 +29,7 @@ Find the type's card under **Default Document Types** or **Custom Document Types
 | **Fields**             | Opens field configuration. See [adding and editing fields](fields/adding-and-editing-fields.md).                                                                 |
 | **Tables**             | Opens table columns for this document type.                                                                                                                      |
 | **Validation Rules**   | Opens the [custom validation rules](custom-validation-rules.md) of this document type. Shown when the rule manager is available.                                |
-| **Transformation Rules** | Opens the [transformation rules](transformation-rules.md) of this document type. Shown when the rule manager is available.                                    |
+| **Transformation Rules** | Opens the [transformation rules](transformation-rules/README.md) of this document type. Shown when the rule manager is available.                                    |
 | **Scripts**            | Opens processing scripts when that feature is available.                                                                                                         |
 | **Model Training**     | Opens training data and model options.                                                                                                                           |
 | **E-Doc**              | Opens electronic document settings when available. See [E-Doc settings](edi/).                                                                                   |

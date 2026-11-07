@@ -42,6 +42,10 @@ For an invoice number that was not read correctly:
 Typing a replacement value corrects this document; it does not create the source-area assignment needed for this extraction training. Select the value on the original, confirm the assignment and save the rule so DocBits can reuse it for matching documents from that supplier. Image-based training is unavailable for documents read directly as electronic-invoice data.
 {% endhint %}
 
+### The buttons in the field-value popup
+
+Selecting an area on the document opens a small popup with round buttons above the selection. Hover over a button to read what it does: delete the extracted value, clear it, or confirm the assignment. The tooltip appears after a short delay and uses the same wording as the accessible name of the button.
+
 ## Save, save rules and continue processing
 
 | Action | What it does |

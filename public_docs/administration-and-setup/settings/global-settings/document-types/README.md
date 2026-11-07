@@ -33,7 +33,7 @@ Under the Activate and Extraction switches, each card carries links to the confi
 | **Fields** | The data fields DocBits extracts from this document type. | [Fields](fields/README.md) |
 | **Tables** | The columns of the line-item table. | [Table Columns](table-columns/README.md) |
 | **Validation Rules** | Your own rules for values that must be correct before a document can be exported. | [Custom Validation Rules](custom-validation-rules.md) |
-| **Transformation Rules** | Steps that correct values after extraction and before validation. | [Transformation Rules](transformation-rules.md) |
+| **Transformation Rules** | Steps that correct values after extraction and before validation. | [Transformation Rules](transformation-rules/README.md) |
 | **Scripts** | Scripts that run while a document is processed. | [Scripts](script/README.md) |
 | **Model Training** | The training data and the model for this document type. | [Model Training](model-training/README.md) |
 | **E-Doc** | Electronic document standards such as XRechnung, ZUGFeRD, EDI and FatturaPA. | [E-Docs](edi/README.md) |

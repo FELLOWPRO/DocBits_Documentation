@@ -9,7 +9,7 @@ Ouvrez le document et regardez les onglets au-dessus du tableau des éléments d
 | Ce que vous voyez | Chemin |
 |---|---|
 | Des lignes dans l'onglet **Tableau extrait** | Chemin basé sur des règles. Le fournisseur dispose d'un tableau entraîné ; les lignes proviennent des règles de coordonnées enregistrées et l'IA n'est pas intervenue (sauf pour les colonnes marquées *Utiliser l'IA*). |
-| Des lignes dans l'onglet **Tableau extrait par IA**, champ *Étiquettes* en dessous | Chemin IA. Aucune règle enregistrée ne correspondait ; l'extraction de tableau par IA a produit les lignes, avec le niveau d'IA de l'organisation ou celui défini pour ce fournisseur sous *Plus de paramètres* → *Modèle AI basé sur le fournisseur*. |
+| Des lignes dans l'onglet **Tableau extrait par IA**, champ *Étiquettes* en dessous | Chemin IA. Aucune règle enregistrée ne correspondait ; l'extraction de tableau par IA a produit les lignes, avec le niveau d'IA de l'organisation ou celui défini pour ce fournisseur sous *More Settings* → *Modèle AI basé sur le fournisseur*. |
 | Info-bulle *AI table not found* sur l'onglet IA | Le chemin IA s'est exécuté et n'a rien renvoyé pour ce document. |
 | Aucun onglet de tableau | Les deux paramètres de tableau sont désactivés pour l'organisation ; rien n'a extrait le tableau. |
 | *No line items yet* | Le chemin s'est exécuté mais n'a trouvé aucune ligne (pas de texte lisible, pas de tableau sur la page, ou les règles ne correspondaient pas à cette mise en page). |
@@ -18,9 +18,9 @@ Les champs d'en-tête portent leur propre badge de source à côté de la valeur
 
 ## 2. Vérifiez la configuration du fournisseur
 
-* **Paramètres → Traitement des documents → Classification et extraction → Modèle d'IA** : le tableau sous le sélecteur liste chaque fournisseur disposant d'un modèle ou d'un entraînement enregistré. Un fournisseur de cette liste avec des *données d'entraînement* a des règles enregistrées ; *réinitialiser les données d'entraînement* les supprime.
-* **Paramètres → Traitement des documents → Paramètres de l'OCR** : *Utiliser l'E-Text si disponible* et *Utiliser les données IA pour les tableaux* changent le texte que l'extraction voit. Un fournisseur peut remplacer le réglage E-Text sous *Plus de paramètres* sur l'écran de validation.
-* **Paramètres → Traitement des Documents → Types de documents → Colonnes de tableau** : indicateurs Masquée, Obligatoire et *Utiliser l'IA*. Une colonne masquée n'est jamais remplie ; une colonne *Utiliser l'IA* est remplie par l'IA même pour les fournisseurs disposant de règles.
+* **Settings → Document Processing → Classification and Extraction → Modèle d'IA** : le tableau sous le sélecteur liste chaque fournisseur disposant d'un modèle ou d'un entraînement enregistré. Un fournisseur de cette liste avec des *données d'entraînement* a des règles enregistrées ; *réinitialiser les données d'entraînement* les supprime.
+* **Settings → Document Processing → OCR Settings** : *Utiliser l'E-Text si disponible* et *Utiliser les données IA pour les tableaux* changent le texte que l'extraction voit. Un fournisseur peut remplacer le réglage E-Text sous *More Settings* sur l'écran de validation.
+* **Settings → Document Processing → Document Types → Colonnes de tableau** : indicateurs Masquée, Obligatoire et *Utiliser l'IA*. Une colonne masquée n'est jamais remplie ; une colonne *Utiliser l'IA* est remplie par l'IA même pour les fournisseurs disposant de règles.
 
 ## 3. Reproduire sans l'interface (API / MCP)
 
@@ -39,7 +39,7 @@ Les outils du DocBits MCP sont décrits sous [DocBits MCP](https://docs.docbits.
 
 ## 4. Lisez les journaux
 
-**Paramètres → Paramètres de journal** (journalisation des activités) affiche les événements de tous les services. Pour une question de tableau :
+**Settings → Log Settings** (journalisation des activités) affiche les événements de tous les services. Pour une question de tableau :
 
 * Filtrez par nom de fichier ou ID du document dans *Rechercher dans les journaux*.
 * Utilisez le filtre *Service* : l'extraction elle-même s'exécute dans le service d'extraction et les workers Celery, pas dans le service `api`. Si vous ne voyez que des lignes `api`, élargissez le filtre.

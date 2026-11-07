@@ -8,7 +8,7 @@ Cette page explique comment vérifier le traitement réussi de votre BOD (Busine
 
 ### Récupérer votre Clé API
 
-1.  Allez dans **Paramètres → Système et Administration → Intégration et SSO**.
+1.  Allez dans **Settings → Système et Administration → Intégration et SSO**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_integration.png)
 2.  Vous pouvez soit copier manuellement votre **clé API**, soit cliquer sur le bouton de copie pour la copier dans votre presse-papiers.
@@ -17,7 +17,7 @@ Cette page explique comment vérifier le traitement réussi de votre BOD (Busine
 
 ### **Télécharger le Fichier de mappage BOD**
 
-1.  Allez dans **Paramètres → Traitement des documents → Exporter**.
+1.  Allez dans **Settings → Document Processing → Exporter**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_export.png)
 2.  Dans la colonne **Actions** de l'entrée d'exportation pertinente, cliquez sur le menu à trois points et sélectionnez **Éditer**.

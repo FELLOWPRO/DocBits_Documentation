@@ -7,7 +7,7 @@ Cette page est une orientation rapide à l'interface actuelle de DocBits — où
 La barre latérale principale liste chaque section de DocBits pour laquelle vous avez une autorisation. Deux façons de la contrôler :
 
 * **Mode mini** — cliquez sur le bouton en haut de la barre latérale pour la réduire à des icônes seules. Survolez une icône avec la souris pour lire son nom. La barre se souvient si vous l'aviez dépliée ou repliée la dernière fois.
-* **Personnaliser** — en bas de la barre dépliée, il y a une entrée **Personnaliser**. Utilisez-la pour réorganiser le menu, masquer les entrées que vous n'utilisez pas ou épingler en haut celles que vous ouvrez le plus souvent.
+* **Customize** — en bas de la barre dépliée, il y a une entrée **Customize**. Utilisez-la pour réorganiser le menu, masquer les entrées que vous n'utilisez pas ou épingler en haut celles que vous ouvrez le plus souvent.
 
 Pour la procédure complète de réorganisation, masquage et épinglage, voir [Barre Latérale Personnalisable](../../end-user-and-partner-section/end-user-section/customizable-sidebar.md).
 
@@ -15,9 +15,9 @@ Pour la procédure complète de réorganisation, masquage et épinglage, voir [B
 
 Le menu Paramètres est regroupé par intention plutôt que par modèle de données. Si vous vous souvenez d'un paramètre mais ne le retrouvez plus, essayez le groupe correspondant ci-dessous :
 
-| Vous cherchez… | Ouvrez Paramètres → |
+| Vous cherchez… | Ouvrez Settings → |
 |---|---|
-| Nom de l'entreprise, logo, fuseau horaire, couleur de l'application | Entreprise & Utilisateurs → Informations sur l'entreprise |
+| Nom de l'entreprise, logo, fuseau horaire, couleur de l'application | Entreprise & Utilisateurs → Company Information |
 | Utilisateurs, groupes, autorisations | Entreprise & Utilisateurs → Groupes, Utilisateurs et Autorisations |
 | Clés API, connexions ERP, configurations d'export | Intégration |
 | Types de document, champs, scripts, EDI, entraînement de modèle | Types de Document |

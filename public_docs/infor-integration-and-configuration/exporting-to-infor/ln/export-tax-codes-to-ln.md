@@ -1,6 +1,6 @@
 # Exporter les codes de taxe vers LN
 
-## **Aperçu :**
+## **Preview :**
 
 \
 Ce guide vous accompagnera dans le processus de configuration pour garantir que les codes de taxe sont correctement exportés de DocBits vers LN.
@@ -9,13 +9,13 @@ Ce guide vous accompagnera dans le processus de configuration pour garantir que 
 
 ### **Étape 1 : Configurer la liste de valeurs**
 
-1.  Allez dans **Paramètres** -> **Traitement des documents** -> **Liste de valeurs**.
+1.  Allez dans **Settings** -> **Document Processing** -> **List of Values**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-fr.png" alt="Liste de valeurs dans l’interface française actuelle. Les noms des listes propres à l’organisation sont masqués ; aucune liste n’a été créée."><figcaption><p>Liste de valeurs dans l’interface française actuelle. Les noms des listes propres à l’organisation sont masqués ; aucune liste n’a été créée.</p></figcaption></figure>
-2.  Cliquez sur **Nouveau**.
+2.  Cliquez sur **New**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt="Page Liste de valeurs avec les listes existantes et le bouton Nouveau"><figcaption>Liste de valeurs avec les listes existantes</figcaption></figure>
-3.  Créez une liste avec le nom `Tax_Country` et cliquez sur **ENREGISTRER**.
+3.  Créez une liste avec le nom `Tax_Country` et cliquez sur **Save**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="Boîte de dialogue Nouvelle liste avec le nom Tax_Country" width="563"><figcaption>Créer la liste Tax_Country</figcaption></figure>
 4.  Créez les trois listes supplémentaires suivantes :
@@ -28,7 +28,7 @@ Ce guide vous accompagnera dans le processus de configuration pour garantir que 
 5.  Cliquez sur l'une des listes nouvellement créées pour l'ouvrir. Ensuite, appuyez sur le bouton **Ajouter une ligne** pour ajouter une nouvelle ligne.
 
     <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt="Page Liste de valeurs avec le bouton Ajouter une ligne sous la liste ouverte"><figcaption>Ajouter une ligne à la liste ouverte</figcaption></figure>
-6.  Entrez les valeurs respectives souhaitées de **LN** et appuyez sur **ENREGISTRER** pour sauvegarder les modifications.
+6.  Entrez les valeurs respectives souhaitées de **LN** et appuyez sur **Save** pour sauvegarder les modifications.
 
     * Pour plusieurs codes, ajoutez et enregistrez une ligne par valeur dans la liste concernée.
 
@@ -40,10 +40,10 @@ Ce guide vous accompagnera dans le processus de configuration pour garantir que 
 
 ### **Étape 2 : Ajouter des champs dans DocBits**
 
-1.  Naviguez vers **Paramètres** -> **Traitement des Documents** -> **Types de documents**.
+1.  Naviguez vers **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié."><figcaption><p>Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié.</p></figcaption></figure>
-2.  Choisissez le menu **Champs** correspondant au type de document où vous souhaitez ajouter les champs.
+2.  Choisissez le menu **Fields** correspondant au type de document où vous souhaitez ajouter les champs.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt="Page Types de documents avec le menu Champs sous chaque type de document"><figcaption>Ouvrir le menu Champs du type de document</figcaption></figure>
 3.  Sous **TVA et montants**, créez six nouveaux champs comme suit:
@@ -62,7 +62,7 @@ Ce guide vous accompagnera dans le processus de configuration pour garantir que 
 
 ### **Étape 3 : Modifier la mise en page**
 
-1.  Allez dans **Paramètres** -> **Traitement des Documents** -> **Types de documents**.
+1.  Allez dans **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié."><figcaption><p>Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié.</p></figcaption></figure>
 2.  Ouvrez le menu **Modifier la mise en page** pour le type de document que vous souhaitez modifier.
@@ -78,7 +78,7 @@ Ce guide vous accompagnera dans le processus de configuration pour garantir que 
 6.  Dans la section **Tax Details**, utilisez l'outil **Horizontal Separator**. Faites-le glisser et déposez-le entre les sous-sections dans la section fiscale pour les séparer clairement et réduire la confusion.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_22.png" alt="Layout Builder avec la liste Éléments de formulaire déroulée"><figcaption>Dérouler Éléments de formulaire</figcaption></figure>
-7. Développez le menu déroulant **Champs**.
+7. Développez le menu déroulant **Fields**.
 8.  Recherchez **Tax Country** et faites glisser le champ dans son domaine respectif.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_23.png" alt="Layout Builder avec le champ Tax Country déposé dans la zone Détails de taxe"><figcaption>Glisser Tax Country dans la zone Détails de taxe</figcaption></figure>
@@ -99,13 +99,13 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
 
 ### **Étape 1 : Configurer la liste de valeurs**
 
-1.  Allez dans **Paramètres** -> **Traitement des documents** -> **Liste de valeurs**.
+1.  Allez dans **Settings** -> **Document Processing** -> **List of Values**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-fr.png" alt="Liste de valeurs dans l’interface française actuelle. Les noms des listes propres à l’organisation sont masqués ; aucune liste n’a été créée."><figcaption><p>Liste de valeurs dans l’interface française actuelle. Les noms des listes propres à l’organisation sont masqués ; aucune liste n’a été créée.</p></figcaption></figure>
-2.  Cliquez sur **Nouveau**.
+2.  Cliquez sur **New**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt="Page Liste de valeurs avec les listes existantes et le bouton Nouveau"><figcaption>Liste de valeurs avec les listes existantes</figcaption></figure>
-3.  Créez une liste avec le nom `Tax_Country` et cliquez sur **ENREGISTRER**.
+3.  Créez une liste avec le nom `Tax_Country` et cliquez sur **Save**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="Boîte de dialogue Nouvelle liste avec le nom Tax_Country" width="563"><figcaption>Créer la liste Tax_Country</figcaption></figure>
 4.  Créez les trois listes supplémentaires suivantes :
@@ -118,7 +118,7 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
 5.  Cliquez sur l'une des listes nouvellement créées pour l'ouvrir. Ensuite, appuyez sur le bouton **Ajouter une ligne** pour ajouter une nouvelle ligne.
 
     <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt="Page Liste de valeurs avec le bouton Ajouter une ligne sous la liste ouverte"><figcaption>Ajouter une ligne à la liste ouverte</figcaption></figure>
-6.  Entrez les valeurs respectives souhaitées de **LN** et appuyez sur **ENREGISTRER** pour sauvegarder les modifications.
+6.  Entrez les valeurs respectives souhaitées de **LN** et appuyez sur **Save** pour sauvegarder les modifications.
 
     * Pour plusieurs codes, ajoutez et enregistrez une ligne par valeur dans la liste concernée.
 
@@ -130,10 +130,10 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
 
 ### **Étape 2 : Ajouter des champs dans DocBits**
 
-1.  Naviguez vers **Paramètres** -> **Traitement des Documents** -> **Types de documents**.
+1.  Naviguez vers **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié."><figcaption><p>Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié.</p></figcaption></figure>
-2.  Choisissez le menu **Champs** correspondant au type de document où vous souhaitez ajouter les champs.
+2.  Choisissez le menu **Fields** correspondant au type de document où vous souhaitez ajouter les champs.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt="Page Types de documents avec le menu Champs sous chaque type de document"><figcaption>Ouvrir le menu Champs du type de document</figcaption></figure>
 3.  Sous **TVA et montants**, créez six nouveaux champs comme suit:
@@ -152,7 +152,7 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
 
 ### **Étape 3 : Modifier la mise en page**
 
-1.  Allez dans **Paramètres** -> **Traitement des Documents** -> **Types de documents**.
+1.  Allez dans **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié."><figcaption><p>Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié.</p></figcaption></figure>
 2.  Ouvrez le menu **Modifier la mise en page** pour le type de document que vous souhaitez modifier.
@@ -174,7 +174,7 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
 8.  Faites glisser et déposez les champs qui correspondent à ce groupe dans le champ **Sub Group**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_4.png" alt="Layout Builder avec les champs de taxe déplacés dans le nouveau sous-groupe"><figcaption>Déplacer les champs de taxe dans le sous-groupe</figcaption></figure>
-9. Développez le menu déroulant **Champs**.
+9. Développez le menu déroulant **Fields**.
 10. Recherchez **Tax** et faites glisser et déposer les champs respectifs, tels que **Tax Country** et **Tax Code**, dans le sous-groupe correspondant.
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_5.png" alt="Layout Builder avec Tax Country et Tax Code dans le sous-groupe"><figcaption>Tax Country et Tax Code dans le sous-groupe</figcaption></figure>

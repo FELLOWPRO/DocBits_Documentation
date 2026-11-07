@@ -44,7 +44,7 @@ Rellena el formulario:
 
 1. **First name** y **Last name** — tu nombre tal como debe aparecer en DocBits.
 2. **E-Mail** — tu dirección de correo electrónico de trabajo. Es tu identificador de inicio de sesión.
-3. Los dos campos **Password** — escribe la contraseña en el primero y repítela en el segundo; consulta las reglas de contraseña más abajo. Una lista de verificación bajo el campo de contraseña muestra qué reglas ya cumple tu contraseña.
+3. **Password** y **Confirm password** — escribe la contraseña en el primero y repítela en el segundo; consulta las reglas de contraseña más abajo. Una lista de verificación bajo el campo de contraseña muestra qué reglas ya cumple tu contraseña.
 4. Si la página muestra un widget de **reCAPTCHA**, complétalo. El widget solo aparece cuando tu despliegue de DocBits tiene la protección contra bots activada.
 5. Marca la casilla para confirmar que aceptas los **Terms and Conditions**.
 6. Haz clic en **Get Started**. Si ya tienes una cuenta, haz clic en **Login** en la parte inferior para volver a la página de inicio de sesión. **Visit website** abre el sitio web de DocBits para obtener información del producto.

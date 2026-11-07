@@ -9,13 +9,13 @@ Questa guida ti guiderà attraverso il processo di configurazione per preparare 
 
 ### **Passo 1: Configura Elenco di Valori**
 
-1.  Vai su **Impostazioni** -> **Elaborazione Documenti** -> **Elenco di Valori**.
+1.  Vai su **Settings** -> **Document Processing** -> **Elenco di Valori**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-it.png" alt="Elenco dei valori nell’interfaccia italiana. I nomi degli elenchi dell’organizzazione sono nascosti; nessun elenco è stato creato."><figcaption><p>Elenco dei valori nell’interfaccia italiana. I nomi degli elenchi dell’organizzazione sono nascosti; nessun elenco è stato creato.</p></figcaption></figure>
-2.  Clicca su **Nuovo**.
+2.  Clicca su **New**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
-3.  Crea un elenco con il nome `Tax_Country` e clicca su **Salva**.
+3.  Crea un elenco con il nome `Tax_Country` e clicca su **Save**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="" width="563"><figcaption></figcaption></figure>
 4.  Crea i seguenti tre elenchi aggiuntivi:
@@ -28,7 +28,7 @@ Questa guida ti guiderà attraverso il processo di configurazione per preparare 
 5.  Clicca su uno degli elenchi appena creati per aprirlo. Poi, premi il pulsante **Aggiungi riga** per aggiungere una nuova riga.
 
     <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
-6.  Inserisci i valori rispettivi desiderati da **LN** e premi **Salva** per salvare le modifiche.
+6.  Inserisci i valori rispettivi desiderati da **LN** e premi **Save** per salvare le modifiche.
 
     * Se hai più valori, puoi cliccare su **Aggiungi altri valori** per aggiungerli.
 
@@ -40,10 +40,10 @@ Questa guida ti guiderà attraverso il processo di configurazione per preparare 
 
 ### **Passo 2: Aggiungi Campi in DocBits**
 
-1.  Naviga su **Impostazioni** -> **Elaborazione Documenti** -> **Tipi di Documento**.
+1.  Naviga su **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/native-document-types-it-20261023.png" alt="Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato."><figcaption><p>Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato.</p></figcaption></figure>
-2.  Scegli il menu **Campi** corrispondente al Tipo di Documento dove desideri aggiungere i campi.
+2.  Scegli il menu **Fields** corrispondente al Tipo di Documento dove desideri aggiungere i campi.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
 3.  Sotto **IVA & IMPORTI**, crea sei nuovi campi come segue:
@@ -62,7 +62,7 @@ Questa guida ti guiderà attraverso il processo di configurazione per preparare 
 
 ### **Passo 3: Modifica Layout**
 
-1.  Vai su **Impostazioni** -> **Elaborazione Documenti** -> **Tipi di Documento**.
+1.  Vai su **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/native-document-types-it-20261023.png" alt="Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato."><figcaption><p>Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato.</p></figcaption></figure>
 2.  Apri il menu **Modifica layout** per il Tipo di Documento che desideri modificare.
@@ -78,7 +78,7 @@ Questa guida ti guiderà attraverso il processo di configurazione per preparare 
 6.  Nella sezione **Tax Details**, utilizza lo strumento **Horizontal Separator**. Trascinalo e rilascialo tra le sottosezioni all'interno della sezione fiscale per separarle chiaramente e ridurre la confusione.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_22.png" alt=""><figcaption></figcaption></figure>
-7. Espandi il menu a discesa **Campi**.
+7. Espandi il menu a discesa **Fields**.
 8.  Cerca **Tax Country** e trascina e rilascia il campo nella sua area rispettiva.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_23.png" alt=""><figcaption></figcaption></figure>
@@ -99,13 +99,13 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 
 ### **Passo 1: Configura Elenco di Valori**
 
-1.  Vai su **Impostazioni** -> **Elaborazione Documenti** -> **Elenco di Valori**.
+1.  Vai su **Settings** -> **Document Processing** -> **Elenco di Valori**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-it.png" alt="Elenco dei valori nell’interfaccia italiana. I nomi degli elenchi dell’organizzazione sono nascosti; nessun elenco è stato creato."><figcaption><p>Elenco dei valori nell’interfaccia italiana. I nomi degli elenchi dell’organizzazione sono nascosti; nessun elenco è stato creato.</p></figcaption></figure>
-2.  Clicca su **Nuovo**.
+2.  Clicca su **New**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
-3.  Crea un elenco con il nome `Tax_Country` e clicca su **Salva**.
+3.  Crea un elenco con il nome `Tax_Country` e clicca su **Save**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="" width="563"><figcaption></figcaption></figure>
 4.  Crea i seguenti tre elenchi aggiuntivi:
@@ -118,7 +118,7 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 5.  Clicca su uno degli elenchi appena creati per aprirlo. Poi, premi il pulsante **Aggiungi riga** per aggiungere una nuova riga.
 
     <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
-6.  Inserisci i valori rispettivi desiderati da **LN** e premi **Salva** per salvare le modifiche.
+6.  Inserisci i valori rispettivi desiderati da **LN** e premi **Save** per salvare le modifiche.
 
     * Se hai più valori, puoi cliccare su **Aggiungi altri valori** per aggiungerli.
 
@@ -130,10 +130,10 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 
 ### **Passo 2: Aggiungi Campi in DocBits**
 
-1.  Naviga su **Impostazioni** -> **Elaborazione Documenti** -> **Tipi di Documento**.
+1.  Naviga su **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/native-document-types-it-20261023.png" alt="Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato."><figcaption><p>Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato.</p></figcaption></figure>
-2.  Scegli il menu **Campi** corrispondente al Tipo di Documento dove desideri aggiungere i campi.
+2.  Scegli il menu **Fields** corrispondente al Tipo di Documento dove desideri aggiungere i campi.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
 3.  Sotto **IVA & IMPORTI**, crea sei nuovi campi come segue:
@@ -152,7 +152,7 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 
 ### **Passo 3: Modifica Layout**
 
-1.  Vai su **Impostazioni** -> **Elaborazione Documenti** -> **Tipi di Documento**.
+1.  Vai su **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/native-document-types-it-20261023.png" alt="Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato."><figcaption><p>Tipi di documento e accesso alle impostazioni del tipo interessato. Contrarre è un’etichetta errata del tipo Contratto. La schermata documenta il punto di accesso, non i campi d’imposta o un layout già configurato. Nessun controllo è stato modificato.</p></figcaption></figure>
 2.  Apri il menu **Modifica layout** per il Tipo di Documento che desideri modificare.
@@ -174,7 +174,7 @@ Dopo aver caricato un nuovo documento in DocBits con le impostazioni di document
 8.  Trascina e rilascia i campi che corrispondono a questo gruppo nel campo **Sub Group**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_4.png" alt=""><figcaption></figcaption></figure>
-9. Espandi il menu a discesa **Campi**.
+9. Espandi il menu a discesa **Fields**.
 10. Cerca **Tax** e trascina e rilascia i rispettivi campi, come **Tax Country** e **Tax Code**, nel corrispondente sottogruppo.
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_5.png" alt=""><figcaption></figcaption></figure>

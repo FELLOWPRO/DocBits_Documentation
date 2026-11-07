@@ -7,7 +7,7 @@ Questa pagina è un breve orientamento al layout attuale di DocBits — dove tro
 La barra laterale principale elenca ogni sezione di DocBits per cui hai un permesso. Due modi per controllarla:
 
 * **Modalità mini** — clicca sull'interruttore in cima alla barra laterale per ridurla a solo icone. Passa il puntatore sopra un'icona per leggerne il nome. La barra ricorda se l'hai lasciata espansa o compressa l'ultima volta.
-* **Personalizza** — in fondo alla barra espansa c'è una voce **Personalizza**. Usala per riorganizzare il menu, nascondere le voci che non usi o fissare in alto quelle che apri più spesso.
+* **Customize** — in fondo alla barra espansa c'è una voce **Customize**. Usala per riorganizzare il menu, nascondere le voci che non usi o fissare in alto quelle che apri più spesso.
 
 Per la procedura completa di riordinamento, nascondimento e fissaggio, consulta [Barra Laterale Personalizzabile](../../end-user-and-partner-section/end-user-section/customizable-sidebar.md).
 
@@ -15,7 +15,7 @@ Per la procedura completa di riordinamento, nascondimento e fissaggio, consulta 
 
 Il menu Impostazioni è raggruppato per intento invece che per modello dei dati. Se ricordi un'impostazione ma non la ritrovi, prova il gruppo corrispondente qui sotto:
 
-| Stai cercando… | Apri Impostazioni → |
+| Stai cercando… | Apri Settings → |
 |---|---|
 | Nome azienda, logo, fuso orario, colore dell'app | Azienda e Utenti → Informazioni Azienda |
 | Utenti, gruppi, permessi | Azienda e Utenti → Gruppi, Utenti e Permessi |

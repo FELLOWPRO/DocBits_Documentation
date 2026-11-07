@@ -8,7 +8,7 @@ Questa pagina spiega come verificare l'elaborazione riuscita del tuo BOD (Busine
 
 ### Recupero della tua Chiave API
 
-1.  Vai a **Impostazioni → Sistema e Amministrazione → Integrazione e SSO**.
+1.  Vai a **Settings → Sistema e Amministrazione → Integrazione e SSO**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_integration.png)
 2.  Puoi copiare manualmente la tua **Chiave API** oppure cliccare sul pulsante di copia per copiarla negli appunti.
@@ -17,10 +17,10 @@ Questa pagina spiega come verificare l'elaborazione riuscita del tuo BOD (Busine
 
 ### **Scaricare il File di mappatura BOD**
 
-1.  Vai a **Impostazioni → Elaborazione dei documenti → Esportazione**.
+1.  Vai a **Settings → Elaborazione dei documenti → Esportazione**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_export.png)
-2.  Nella colonna **Azioni** della voce di esportazione pertinente, clicca sul menu a tre punti e seleziona **Modifica**.
+2.  Nella colonna **Azioni** della voce di esportazione pertinente, clicca sul menu a tre punti e seleziona **Edit**.
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/test_bod_connection_postman_2.png)
 3.  Trova il **File di mappatura BOD** e clicca sul pulsante **Scaricare** per salvarlo.

@@ -15,15 +15,15 @@ La corrispondenza degli Ordini di Acquisto (PO) è un processo critico per garan
 Questa pagina di configurazione viene utilizzata per definire e gestire le regole che determinano _come_ le righe dell’ordine di acquisto vengono abbinate al documento in entrata corrispondente (Fattura, Conferma d’Ordine).
 
 {% hint style="info" %}
-**Prerequisito:** le regole di corrispondenza sono utilizzate solo quando **Lato server di corrispondenza PO** è attivato per il tipo di documento (Impostazioni → Tipi di Documento → Altre impostazioni → Ordine di acquisto). Con l’interruttore disattivato, DocBits esegue la corrispondenza con il suo matcher integrato (quantità, prezzo unitario, numero articolo, numero ordine di acquisto) e ignora il set di regole.
+**Prerequisito:** le regole di corrispondenza sono utilizzate solo quando **Lato server di corrispondenza PO** è attivato per il tipo di documento (Settings → Document Types → More Settings → Ordine di acquisto). Con l’interruttore disattivato, DocBits esegue la corrispondenza con il suo matcher integrato (quantità, prezzo unitario, numero articolo, numero ordine di acquisto) e ignora il set di regole.
 {% endhint %}
 
 ***
 
 ## Come Accedere
 
-1. Navigare su **Impostazioni** → **Elaborazione Documenti** → **Tipi di Documento**, selezionare il tipo di documento e cliccare su **Altre impostazioni**.
-2. Nella scheda **Ordine di acquisto** attivare **Lato server di corrispondenza PO**.
+1. Navigare su **Settings** → **Document Processing** → **Document Types**, selezionare il tipo di documento e cliccare su **More Settings**.
+2. Nella scheda **Purchase Order** attivare **Lato server di corrispondenza PO**.
 3. Cliccare su **Configurare le regole di corrispondenza degli ordini di acquisto** accanto all’interruttore.
 
 <figure><img src="../../../../../../.gitbook/assets/doc-type-settings-po-options-it.png" alt="La scheda Ordine di acquisto con Lato server di corrispondenza PO e Configurare le regole di corrispondenza degli ordini di acquisto"><figcaption><p>La scheda Ordine di acquisto. <strong>Configurare le regole di corrispondenza degli ordini di acquisto</strong> si trova accanto a <strong>Lato server di corrispondenza PO</strong>.</p></figcaption></figure>
@@ -72,7 +72,7 @@ L’Elenco delle regole mostra tutte le regole di corrispondenza disponibili e g
 
 * **Priorità:** Questo campo numerico (es. 1, 2, 3) determina la sequenza di esecuzione delle regole. Le regole con un numero di priorità più basso vengono tentate per prime. Questo permette agli amministratori di strutturare una gerarchia, tipicamente iniziando con le regole più specifiche e rigorose (es. corrispondenza sia per numero riga che per numero articolo) e passando a regole più ampie o meno restrittive.
 * **Nome & Descrizione:** Fornisce un’identificazione chiara e il contesto della regola, spiegando i criteri principali utilizzati (es. "Regola Standard N. 1: Corrispondenza basata su Numero Riga, ID Articolo e Quantità").
-* **Attivo:** Un semplice interruttore che consente di attivare o disattivare immediatamente la regola senza dover eliminare la sua configurazione.
+* **Active:** Un semplice interruttore che consente di attivare o disattivare immediatamente la regola senza dover eliminare la sua configurazione.
 
 **Flusso di Esecuzione:** Il sistema esegue la corrispondenza in sequenza a cascata. Se una regola (es. Priorità 1) corrisponde con successo a una riga, il processo per quella riga si interrompe. Se non viene trovata corrispondenza, il sistema procede alla regola successiva nella sequenza di priorità (es. Priorità 2). Ogni esecuzione è registrata sul documento; la **Cronologia delle corrispondenze** nella schermata di Corrispondenza Ordine di Acquisto mostra quale regola è stata tentata, quale ha corrisposto e quali sono state saltate e perché.
 

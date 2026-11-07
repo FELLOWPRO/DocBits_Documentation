@@ -18,8 +18,8 @@ Ogni gruppo può essere configurato per:
 
 ## Attivazione
 
-1. Vai su **Impostazioni**.
-2. Seleziona **Elaborazione Documenti**.
+1. Vai su **Settings**.
+2. Seleziona **Document Processing**.
 3. Seleziona **Modulo.**
 4. Attiva il **Controllo Accessi** abilitando il cursore.
 
@@ -27,8 +27,8 @@ Ogni gruppo può essere configurato per:
 
 ## Aprire il Controllo Accessi di un gruppo
 
-1. Vai su **Impostazioni**.
-2. In **Organizzazione e Accesso**, seleziona **Gruppi e autorizzazioni**.
+1. Vai su **Settings**.
+2. In **Organization & Access**, seleziona **Gruppi e autorizzazioni**.
 3. Per gestire le autorizzazioni di un gruppo (ad esempio PROCUREMENT\_DIRECTOR), fai clic sui tre puntini a destra.
 4. Seleziona **Gestisci Controllo Accessi**.
 
@@ -52,9 +52,9 @@ La prima colonna è un interruttore **Abilitato / Disabilitato**. Disabilitalo e
 | Azione | Determina se il gruppo può… |
 |--------|------------------------------|
 | **Elenco** | vedere il tipo di documento nell'elenco della dashboard. |
-| **Visualizza** | aprire un documento e vederne i dettagli. |
-| **Modifica** | modificare i valori dei campi di un documento. |
-| **Elimina** | eliminare un documento. |
+| **View** | aprire un documento e vederne i dettagli. |
+| **Edit** | modificare i valori dei campi di un documento. |
+| **Delete** | eliminare un documento. |
 | **Aggiornamento di massa** | applicare un aggiornamento di massa a più documenti contemporaneamente. |
 | **Prima Approvazione** | concedere l'approvazione di primo livello. |
 | **Seconda Approvazione** | concedere l'approvazione di secondo livello. |
@@ -81,12 +81,12 @@ Ogni colonna di azione è un menu a discesa. Il valore scelto risponde alla doma
 
 ### L'approvazione richiede anche Modifica
 
-Approvare un documento attiva **due azioni** dietro le quinte: DocBits prima **salva** il documento e poi lo porta allo stato approvato. Il passaggio di salvataggio richiede l'autorizzazione **Modifica**, quindi le due autorizzazioni sono collegate.
+Approvare un documento attiva **due azioni** dietro le quinte: DocBits prima **salva** il documento e poi lo porta allo stato approvato. Il passaggio di salvataggio richiede l'autorizzazione **Edit**, quindi le due autorizzazioni sono collegate.
 
-Un utente a cui viene concessa solo la **Prima Approvazione** o la **Seconda Approvazione** — ma *non* **Modifica** — incontra un errore di autorizzazione nel passaggio di salvataggio e non può approvare il documento.
+Un utente a cui viene concessa solo la **Prima Approvazione** o la **Seconda Approvazione** — ma *non* **Edit** — incontra un errore di autorizzazione nel passaggio di salvataggio e non può approvare il documento.
 
 {% hint style="warning" %}
-Ogni volta che concedi la **Prima Approvazione** o la **Seconda Approvazione**, concedi anche **Modifica** (e **Visualizza**) per lo stesso tipo di documento. Un'autorizzazione di approvazione da sola non è sufficiente.
+Ogni volta che concedi la **Prima Approvazione** o la **Seconda Approvazione**, concedi anche **Edit** (e **View**) per lo stesso tipo di documento. Un'autorizzazione di approvazione da sola non è sufficiente.
 {% endhint %}
 
 ## Autorizzazioni a livello di campo
@@ -96,7 +96,7 @@ Fai clic su una riga di tipo di documento per aprire il pannello **Autorizzazion
 | Livello | Effetto sul campo |
 |---------|-------------------|
 | **Lettura/Scrittura** | Il campo è visibile **e** modificabile. |
-| **Sola lettura** | Il campo è visibile ma **non può essere modificato** (in grigio). |
+| **Read Only** | Il campo è visibile ma **non può essere modificato** (in grigio). |
 | **Approvazione** | Il campo può essere modificato, ma la modifica deve passare per un **flusso di approvazione** prima di essere applicata. |
 | **Nessun accesso** | Il campo è **completamente nascosto** — l'utente non lo vede mai. |
 
@@ -140,7 +140,7 @@ Ora segui un documento concreto — la fattura **INV-4711**, che **Maria ha cari
 * ✅ Modifica il nome del fornitore e le righe *(Modifica = Owner & Assignee — è la proprietaria)*.
 * 🔒 Vede `TOTAL_AMOUNT`, ma il campo è in grigio e non può modificarlo *(Sola lettura)*.
 * 🚫 Non vede mai il campo `CUSTOMER_DISCOUNT` *(Nessun accesso)*.
-* 🚫 Il pulsante **Elimina** è nascosto *(Elimina = No Access — nessuno nel gruppo può eliminare)*.
+* 🚫 Il pulsante **Delete** è nascosto *(Elimina = No Access — nessuno nel gruppo può eliminare)*.
 * ✅ Può concedere la **prima approvazione** *(Prima Approvazione = Assignee — è l'assegnataria)*.
 
 **Tom (stesso gruppo, ma *non* ha caricato INV-4711 e *non* gli è assegnata):**
@@ -155,5 +155,5 @@ Ora segui un documento concreto — la fattura **INV-4711**, che **Maria ha cari
 
 * **Everyone** apre un documento a tutti i membri del gruppo; **Owner / Assignee** restringe un'azione alle persone collegate a quel documento specifico.
 * **No Access** rimuove un'azione (Elimina) o nasconde un campo (`CUSTOMER_DISCOUNT`) per l'intero gruppo.
-* **Sola lettura** mantiene un campo visibile come riferimento (`TOTAL_AMOUNT`) ma impedisce le modifiche.
+* **Read Only** mantiene un campo visibile come riferimento (`TOTAL_AMOUNT`) ma impedisce le modifiche.
 * Due persone nello **stesso gruppo** possono avere **diritti diversi sulla stessa fattura**, solo in base a chi l'ha caricata e a chi è assegnata.

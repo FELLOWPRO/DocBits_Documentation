@@ -11,13 +11,13 @@ L'assistente è **disattivato per impostazione predefinita**. Questa pagina most
 ## Chi può usarlo
 
 * L'**amministratore dell'organizzazione** attiva o disattiva l'assistente per l'intera organizzazione.
-* Una volta attivato, ogni amministratore che può aprire le **Impostazioni** può mostrare o nascondere il pannello per sé.
+* Una volta attivato, ogni amministratore che può aprire le **Settings** può mostrare o nascondere il pannello per sé.
 * Le modifiche (applicare una raccomandazione, disattivare o eliminare una connessione di importazione, creare una regola) sono limitate agli **amministratori dell'organizzazione**. Gli altri utenti ricevono il messaggio *Available to administrators only.*
 
 ## Attivarlo
 
-1. Vai su **Impostazioni → Organizzazione e Accesso → Informazioni sulla società**. L'intestazione della pagina mostra **Company Settings**.
-2. Apri la sezione **Assistenti** (Assistants).
+1. Vai su **Settings → Organization & Access → Company Information**. L'intestazione della pagina mostra **Company Settings**.
+2. Apri la sezione **Assistants**.
 3. Attiva **Abilita l'assistente impostazioni** (Enable the settings assistant).
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch-it.png" alt="La sezione Assistants in Informazioni sulla società con gli interruttori per l'assistente impostazioni, l'assistente di convalida e la voce narrante delle spiegazioni"><figcaption><p>La sezione Assistenti. L'assistente impostazioni ha un proprio interruttore. L'assistente di convalida e la voce narrante delle spiegazioni sono funzioni separate.</p></figcaption></figure>
@@ -32,7 +32,7 @@ L'**Assistente di convalida** (Validation assistant) nella stessa sezione è una
 
 In ogni pagina dell'area Impostazioni trovi un piccolo **pulsante a forma di lampada del genio** accanto al campo di ricerca delle impostazioni. Fai clic per **mostrare** o **nascondere** l'assistente.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-it.png" alt="La pagina Informazioni sulla società nelle Impostazioni con la navigazione delle impostazioni a sinistra, la pagina al centro e il pannello Settings Assistant a destra"><figcaption><p>L'assistente si trova sul <strong>lato destro</strong> di ogni pagina delle Impostazioni: navigazione a sinistra, la pagina al centro, l'assistente accanto. Qui in <strong>Company Settings → Company Information</strong>. Il pulsante per mostrarlo o nasconderlo è l'icona della lampada accanto a <strong>Search Settings</strong> in alto nella navigazione.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-it.png" alt="La pagina Company Information nelle Settings con la navigazione delle impostazioni a sinistra, la pagina al centro e il pannello Settings Assistant a destra"><figcaption><p>L'assistente si trova sul <strong>lato destro</strong> di ogni pagina delle Settings: navigazione a sinistra, la pagina al centro, l'assistente accanto. Qui in <strong>Company Settings → Company Information</strong>. Il pulsante per mostrarlo o nasconderlo è l'icona della lampada accanto a <strong>Search Settings</strong> in alto nella navigazione.</p></figcaption></figure>
 
 * Il pannello ricorda la tua scelta per ogni utente, quindi resta aperto la volta successiva.
 * Su uno schermo largo (1280 pixel o più) si trova accanto alla pagina. Puoi trascinarne il bordo per cambiare la larghezza.
@@ -48,8 +48,8 @@ In ogni pagina dell'area Impostazioni trovi un piccolo **pulsante a forma di lam
 
 | Problema | Causa e soluzione |
 | --- | --- |
-| Nell'area Impostazioni non c'è il pulsante a forma di lampada del genio | L'interruttore dell'organizzazione è disattivato. Un amministratore dell'organizzazione lo attiva in **Informazioni sulla società → Assistenti** |
-| La sezione **Assistenti** manca in Informazioni sulla società | Solo gli amministratori dell'organizzazione la vedono |
+| Nell'area Settings non c'è il pulsante a forma di lampada del genio | L'interruttore dell'organizzazione è disattivato. Un amministratore dell'organizzazione lo attiva in **Company Information → Assistants** |
+| La sezione **Assistants** manca in Informazioni sulla società | Solo gli amministratori dell'organizzazione la vedono |
 | Il pannello dice **The assistant is being set up** | La funzione non è ancora disponibile nel tuo ambiente |
 | Il pannello c'è, ma le risposte dicono *Available to administrators only.* | Il tuo account non è un amministratore dell'organizzazione |
 

@@ -25,7 +25,7 @@ L'accesso è concesso per tipo di documento e per azione:
 
 * Nella schermata di **Controllo degli Accessi** per il gruppo, controlla il tipo di documento (ad esempio, Fattura, Ordine di Acquisto).
 * Convalida autorizzazioni come:
-  * **Elenco**, **Visualizza**, **Modifica**, **Elimina**, **Aggiornamento di Massa**
+  * **Elenco**, **View**, **Edit**, **Delete**, **Aggiornamento di Massa**
   * Livelli di **Approvazione** (1°, 2°), **Sblocca Documento**
 * Assicurati che il livello di accesso non sia limitato a **Proprietario** o **Amministratore** a meno che appropriato.
 

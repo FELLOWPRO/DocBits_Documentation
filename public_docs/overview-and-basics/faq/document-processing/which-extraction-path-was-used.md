@@ -9,7 +9,7 @@ Apri il documento e osserva le schede sopra la tabella delle voci di riga:
 | Cosa vedi | Percorso |
 |---|---|
 | Righe nella scheda **Tabella estratta** | Percorso basato su regole. Il fornitore ha una tabella addestrata; le righe provengono dalle regole di coordinate salvate e l'AI non è intervenuta (tranne che per le colonne contrassegnate *Usa AI*). |
-| Righe nella scheda **Tabella estratta dall'AI**, campo *Tag* sotto | Percorso AI. Nessuna regola salvata ha trovato corrispondenza; l'estrazione AI della tabella ha prodotto le righe, usando il livello AI dell'organizzazione oppure il livello impostato per questo fornitore in *Altre impostazioni* → *Modello AI basato sul fornitore*. |
+| Righe nella scheda **Tabella estratta dall'AI**, campo *Tag* sotto | Percorso AI. Nessuna regola salvata ha trovato corrispondenza; l'estrazione AI della tabella ha prodotto le righe, usando il livello AI dell'organizzazione oppure il livello impostato per questo fornitore in *More Settings* → *Modello AI basato sul fornitore*. |
 | Tooltip *AI table not found* sulla scheda AI | Il percorso AI è stato eseguito e non ha restituito nulla per questo documento. |
 | Nessuna scheda della tabella | Entrambe le impostazioni delle tabelle sono disattivate per l'organizzazione: nulla ha estratto la tabella. |
 | *No line items yet* | Il percorso è stato eseguito ma non ha trovato righe (nessun testo leggibile, nessuna tabella sulla pagina, oppure le regole non corrispondono a questo layout). |
@@ -18,9 +18,9 @@ I campi di intestazione hanno un proprio indicatore di origine accanto al valore
 
 ## 2. Controlla la configurazione del fornitore
 
-* **Impostazioni → Elaborazione del documento → Classificazione ed estrazione → Modello AI**: la tabella sotto il selettore elenca ogni fornitore con un modello memorizzato o un addestramento. Un fornitore in questo elenco con *dati di addestramento* ha regole salvate; *reimposta i dati di addestramento* le rimuove.
-* **Impostazioni → Elaborazione del documento → Impostazioni OCR**: *Usa E-Text se disponibile* e *Usa i dati AI per le tabelle* cambiano il testo che l'estrazione vede. Un fornitore può sovrascrivere l'E-Text in *Altre impostazioni* nella schermata di validazione.
-* **Impostazioni → Elaborazione Documenti → Tipi di Documento → Colonne della Tabella**: flag nascosta, obbligatoria e *Usa AI*. Una colonna nascosta non viene mai compilata; una colonna *Usa AI* viene compilata dall'AI anche per i fornitori con regole.
+* **Settings → Elaborazione del documento → Classification and Extraction → Modello AI**: la tabella sotto il selettore elenca ogni fornitore con un modello memorizzato o un addestramento. Un fornitore in questo elenco con *dati di addestramento* ha regole salvate; *reimposta i dati di addestramento* le rimuove.
+* **Settings → Elaborazione del documento → OCR Settings**: *Usa E-Text se disponibile* e *Usa i dati AI per le tabelle* cambiano il testo che l'estrazione vede. Un fornitore può sovrascrivere l'E-Text in *More Settings* nella schermata di validazione.
+* **Settings → Document Processing → Document Types → Colonne della Tabella**: flag nascosta, obbligatoria e *Usa AI*. Una colonna nascosta non viene mai compilata; una colonna *Usa AI* viene compilata dall'AI anche per i fornitori con regole.
 
 ## 3. Riproduci senza l'interfaccia (API / MCP)
 
@@ -39,7 +39,7 @@ Gli strumenti del DocBits MCP sono descritti nella pagina DocBits MCP della docu
 
 ## 4. Leggi i log
 
-**Impostazioni → Impostazioni Log** (registrazione delle attività) mostra gli eventi di tutti i servizi. Per una domanda sulla tabella:
+**Settings → Settings Log** (registrazione delle attività) mostra gli eventi di tutti i servizi. Per una domanda sulla tabella:
 
 * Filtra per nome file o ID del documento in *Cerca nei log*.
 * Usa il filtro *Servizio*: l'estrazione vera e propria viene eseguita nel servizio di estrazione e nei worker Celery, non nel servizio `api`. Se vedi solo righe `api`, allarga il filtro.

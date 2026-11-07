@@ -160,6 +160,8 @@ La valeur doit correspondre à une **expression régulière**. L'expression rech
 
 #### Range : entre un minimum et un maximum
 
+Les bornes se saisissent comme des nombres simples : un signe facultatif et des chiffres, la virgule étant acceptée comme séparateur décimal (`0,5`). Les séparateurs de milliers, les exposants et les mots sont refusés à l'enregistrement, avec un message indiquant que la borne n'est pas un nombre. Saisissez au moins une borne, car une plage sans minimum ni maximum n'est pas enregistrée, et gardez le minimum inférieur ou égal au maximum.
+
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-range.png" alt="un contrôle Range"><figcaption><p>Range avec un minimum uniquement : les quantités doivent être d'au moins 0.01</p></figcaption></figure>
 
 La valeur doit être un nombre compris entre **Minimum** et **Maximum** (inclus). Renseignez l'un des deux ou les deux. Une valeur qui n'est pas un nombre échoue. Les montants formatés tels que `1.234,56` sont compris.

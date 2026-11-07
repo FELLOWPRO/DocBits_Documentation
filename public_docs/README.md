@@ -4,11 +4,11 @@
 
 From OCR and IDP to business logic, approvals and Advanced Workflows: discover the evolution of DocBits.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/en.mp4" %}
 
-_90 seconds · English-language product UI · AI-imagined historical scenes_
+_90 seconds · English · FullHD · From OCR and IDP to automation_
 
-[Read transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/en-transcript.md) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/en.mp4)
+[Video with captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/en.html) · [Read transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/en-transcript.md) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/en.mp4)
 
 Welcome to DocBits
 

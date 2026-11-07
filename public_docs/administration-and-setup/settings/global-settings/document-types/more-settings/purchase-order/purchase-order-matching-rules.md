@@ -215,6 +215,16 @@ DocBits 会从上到下依次处理五个阶段。每个阶段最多包含三次
 * [**Calculate PO unit price**](calculate-po-unit-price.md)会更改规则在采购订单侧比较的单价。
 * [**容差设置**](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md)和[**禁用状态**](purchase-order-disable-statuses.md)决定比较的严格程度，以及哪些采购订单行会被提供用于匹配。
 
+## 匹配跳过规则的情况
+
+规则需要提取表格中真实存在的列；按物料编号配对行的规则，无法在未打印物料编号的发票上运行。
+
+此时，自动匹配会执行能够执行的规则，并让其他规则的行保持未匹配。随后它会提示 **Some PO match rules were not tried**，列出每条被跳过的规则和表格中缺失的每一列。在您补充缺失的列或手动匹配之前，受影响的行将保持未匹配状态。
+
+{% hint style="info" %}
+错误的激活条件也会跳过规则，但这是另一种情况：它会出现在匹配历史记录中，而不是在这个提示里。
+{% endhint %}
+
 ## 故障排除
 
 | 现象                                             | 检查内容                                                                                                                                                     |

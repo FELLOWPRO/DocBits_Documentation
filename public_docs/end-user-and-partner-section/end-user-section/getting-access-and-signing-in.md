@@ -15,6 +15,8 @@ Ouvrez l'adresse web DocBits fournie à votre organisation — par exemple `http
 
 <figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/getting-access-login-en-20261107.png" alt="Écran de connexion DocBits en anglais avec les champs E-Mail et Password vides, Remember me, le sélecteur Auth region réglé sur Europe, Log In, Sign in with a passkey, Sign in with Google et Sign in with Microsoft"><figcaption><p>L'écran de connexion : e-mail et mot de passe, Remember me, le sélecteur Auth region, Log In, la passkey et les boutons de connexion Google et Microsoft.</p></figcaption></figure>
 
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/getting-access-login-en-20261107.png -->
+
 1. **E-Mail** — l'adresse avec laquelle votre compte DocBits a été créé.
 2. **Password** — votre mot de passe DocBits. L'icône en forme d'œil dans le champ affiche ou masque ce que vous avez saisi.
 3. **Remember me** — préremplit votre adresse e-mail la prochaine fois que vous ouvrez l'écran de connexion.
@@ -34,18 +36,18 @@ Choisissez l'**Auth region** utilisée par votre organisation avant de cliquer s
 
 ## Inscription
 
-Vous pouvez créer vous-même un compte DocBits sur la page d'inscription. Ouvrez-la depuis le lien **Registre** sur l'écran de connexion, ou accédez à `https://app.docbits.com/register` (utilisez l'adresse web communiquée à votre organisation).
+Vous pouvez créer vous-même un compte DocBits sur la page d'inscription. Ouvrez-la depuis le lien **Register** sur l'écran de connexion, ou accédez à `https://app.docbits.com/register` (utilisez l'adresse web communiquée à votre organisation).
 
 <figure><img src="../../.gitbook/assets/dbdc-8-register-native-fr-20261101.png" alt="Formulaire français d’inscription DocBits avec cinq champs vides, reCAPTCHA non coché, conditions générales, Commencer, Google, Microsoft et Se connecter"><figcaption><p>Inscription : renseignez Prénom, Nom de famille, E-mail, Mot de passe et Confirmer le mot de passe. Résolvez reCAPTCHA s’il apparaît, acceptez les conditions générales et choisissez Commencer. Se connecter revient à la connexion.</p></figcaption></figure>
 
 Remplissez le formulaire :
 
-1. **Prénom** et **Nom de famille** — votre nom tel qu'il doit apparaître dans DocBits.
-2. **E-mail** — votre adresse e-mail professionnelle. C'est votre identifiant de connexion.
-3. **Mot de passe** et **Confirmer le mot de passe** — voir les règles de mot de passe ci-dessous. Une liste de contrôle sous le champ du mot de passe indique quelles règles votre mot de passe remplit déjà.
+1. **First name** et **Last name** — votre nom tel qu'il doit apparaître dans DocBits.
+2. **E-Mail** — votre adresse e-mail professionnelle. C'est votre identifiant de connexion.
+3. **Password** et **Confirm password** — voir les règles de mot de passe ci-dessous. Une liste de contrôle sous le champ du mot de passe indique quelles règles votre mot de passe remplit déjà.
 4. Si la page affiche un widget **reCAPTCHA**, complétez-le. Le widget n'apparaît que lorsque le déploiement DocBits de votre organisation dispose d'une protection contre les robots.
-5. Cochez la case pour confirmer que vous acceptez les **conditions générales**.
-6. Cliquez sur **Commencer**. Si vous avez déjà un compte, cliquez sur **Se connecter** en bas pour revenir à la page de connexion. **Visitez le site web** ouvre le site web de DocBits pour obtenir des informations sur le produit.
+5. Cochez la case pour confirmer que vous acceptez les **Terms and Conditions**.
+6. Cliquez sur **Get Started**. Si vous avez déjà un compte, cliquez sur **Login** en bas pour revenir à la page de connexion. **Visit website** ouvre le site web de DocBits pour obtenir des informations sur le produit.
 
 Utilisez l'icône en forme d'œil à côté d'un champ de mot de passe pour afficher ou masquer les caractères saisis.
 
@@ -62,11 +64,11 @@ Seules les lettres, les chiffres et ces caractères spéciaux sont autorisés.
 
 ### S'inscrire avec Google ou Microsoft
 
-Au lieu d'un mot de passe, vous pouvez cliquer sur le bouton **Google** ou **Microsoft** sous **OU INSCRIVEZ-VOUS AVEC**. DocBits crée votre compte via votre fournisseur d'identité, et vous vous connecterez plus tard de la même manière.
+Au lieu d'un mot de passe, vous pouvez cliquer sur le bouton **Google** ou **Microsoft** sous **Or sign up with**. DocBits crée votre compte via votre fournisseur d'identité, et vous vous connecterez plus tard de la même manière.
 
 ### Confirmer votre adresse e-mail
 
-Après avoir soumis le formulaire, DocBits affiche une page de confirmation et envoie un **e-mail de vérification** à l'adresse que vous avez saisie. Ouvrez l'e-mail et cliquez sur le lien qu'il contient — il vous amène à une page de confirmation qui vérifie votre adresse. Si l'e-mail n'arrive pas, la page de confirmation propose une option de **renvoi**. Une fois l'adresse vérifiée, cliquez sur **Se connecter** et connectez-vous avec votre e-mail et votre mot de passe.
+Après avoir soumis le formulaire, DocBits affiche une page de confirmation et envoie un **e-mail de vérification** à l'adresse que vous avez saisie. Ouvrez l'e-mail et cliquez sur le lien qu'il contient — il vous amène à une page de confirmation qui vérifie votre adresse. Si l'e-mail n'arrive pas, la page de confirmation propose une option de **renvoi**. Une fois l'adresse vérifiée, cliquez sur **Sign in** et connectez-vous avec votre e-mail et votre mot de passe.
 
 ## Mot de passe oublié
 
@@ -74,16 +76,16 @@ DocBits stocke les mots de passe sous forme de hachages salés à sens unique. U
 
 Si vous avez oublié votre mot de passe :
 
-1. Sur l'écran de connexion, cliquez sur **Mot de passe oublié ?**.
-2. Sur la page **Mot de passe oublié**, saisissez votre adresse **E-mail** et cliquez sur **Réinitialiser le mot de passe**. Si un widget reCAPTCHA est affiché, complétez-le d'abord.
+1. Sur l'écran de connexion, cliquez sur **Forgot password?**.
+2. Sur la page **Forgot Password**, saisissez votre adresse **E-Mail** et cliquez sur **Reset Password**. Si un widget reCAPTCHA est affiché, complétez-le d'abord.
 
    <figure><img src="../../.gitbook/assets/dbdc-8-forget-password-native-fr-20261101.png" alt="Formulaire français Mot de passe oublié avec le champ E-mail vide, reCAPTCHA non coché, Réinitialiser le mot de passe et Retour à la connexion"><figcaption><p>Saisissez votre E-mail et choisissez Réinitialiser le mot de passe pour demander un lien, ou utilisez Retour à la connexion. Résolvez reCAPTCHA lorsqu’il apparaît.</p></figcaption></figure>
 
-   Si vous ne souhaitez pas réinitialiser votre mot de passe, cliquez sur **Retour à la connexion** pour revenir à la page de connexion.
+   Si vous ne souhaitez pas réinitialiser votre mot de passe, cliquez sur **Back to Login** pour revenir à la page de connexion.
 
 3. DocBits vous envoie par e-mail un **lien de réinitialisation de mot de passe**. Ouvrez l'e-mail et cliquez sur le lien — il ouvre la page de réinitialisation.
 4. Saisissez votre **nouveau mot de passe deux fois**. Les mêmes règles de mot de passe que lors de l'[inscription](#regles-de-mot-de-passe) s'appliquent, et une liste de contrôle indique les règles déjà remplies.
-5. Cliquez sur **Réinitialiser le mot de passe**. DocBits confirme la modification et vous ramène à l'écran de connexion, où vous pouvez vous connecter avec le nouveau mot de passe.
+5. Cliquez sur **Reset Password**. DocBits confirme la modification et vous ramène à l'écran de connexion, où vous pouvez vous connecter avec le nouveau mot de passe.
 
 {% hint style="info" %}
 Les liens de réinitialisation expirent après un court délai. Si le lien ne fonctionne plus, recommencez les étapes ci-dessus pour en demander un nouveau.
@@ -91,14 +93,14 @@ Les liens de réinitialisation expirent après un court délai. Si le lien ne fo
 
 ## Premier mot de passe pour les comptes créés par un administrateur
 
-Lorsque votre administrateur vous ajoute comme utilisateur (voir [Utilisateurs](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), vous recevez un e-mail avec vos identifiants de connexion et un lien pour définir votre **premier mot de passe**. Le lien ouvre la page **Définir le mot de passe** :
+Lorsque votre administrateur vous ajoute comme utilisateur (voir [Utilisateurs](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), vous recevez un e-mail avec vos identifiants de connexion et un lien pour définir votre **premier mot de passe**. Le lien ouvre la page **Set Password** :
 
 <figure><img src="../../.gitbook/assets/dbdc-8-set-password-native-fr-20261101.png" alt="Formulaire français Définir le mot de passe avec le message de bienvenue, les deux champs vides, les icônes d’œil, Définir le mot de passe et Aller à la connexion"><figcaption><p>Définition du premier mot de passe d’un compte créé par un administrateur : renseignez Mot de passe et Confirmer le mot de passe, puis choisissez Définir le mot de passe. Aller à la connexion revient à l’identification.</p></figcaption></figure>
 
 1. Cliquez sur le lien dans l'e-mail d'invitation. La page vous accueille avec « Bienvenue sur DocBits ! Votre compte a été créé. Veuillez définir votre mot de passe pour commencer. »
 2. Saisissez votre mot de passe deux fois — les mêmes [règles de mot de passe](#regles-de-mot-de-passe) s'appliquent.
-3. Cliquez sur **Définir le mot de passe**. Vous pouvez ensuite vous connecter avec votre e-mail et ce mot de passe.
+3. Cliquez sur **Set Password**. Vous pouvez ensuite vous connecter avec votre e-mail et ce mot de passe.
 
-Les icônes en forme d'œil affichent ou masquent ce que vous avez saisi. Si vous partez avant de définir un mot de passe, **Aller à la connexion** ramène à la page de connexion.
+Les icônes en forme d'œil affichent ou masquent ce que vous avez saisi. Si vous partez avant de définir un mot de passe, **Go to Login** ramène à la page de connexion.
 
-Le lien est lié à votre compte et ne fonctionne qu'une seule fois. S'il expire avant que vous ne l'utilisiez, demandez à votre administrateur de renvoyer l'invitation ou utilisez **Mot de passe oublié ?** avec votre adresse e-mail.
+Le lien est lié à votre compte et ne fonctionne qu'une seule fois. S'il expire avant que vous ne l'utilisiez, demandez à votre administrateur de renvoyer l'invitation ou utilisez **Forgot password?** avec votre adresse e-mail.

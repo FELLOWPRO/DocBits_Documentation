@@ -1,12 +1,36 @@
 # Uzyskiwanie dostępu i logowanie
 
-Na tej stronie opisano, jak uzyskać konto DocBits i jak się zalogować, gdy nie masz swojego hasła:
+Na tej stronie opisano, jak uzyskać konto DocBits i jak się zalogować:
 
+* [Logowanie na istniejące konto](#logowanie-na-istniejace-konto) — pola na ekranie logowania i wybór regionu.
 * [Rejestracja](#rejestracja) — utwórz własne konto DocBits.
 * [Zapomniane hasło](#zapomniane-haslo) — zresetuj hasło za pomocą linku do resetowania.
 * [Pierwsze hasło dla kont utworzonych przez administratora](#pierwsze-haslo-dla-kont-utworzonych-przez-administratora) — ustaw pierwsze hasło do konta, które administrator utworzył dla Ciebie.
 
-Logowanie do istniejącego konta oraz Uwierzytelnianie dwuskładnikowe są opisane na stronie [Uwierzytelnianie dwuskładnikowe (2FA)](../../security/two-factor-authentication.md). Jeśli potrzebujesz innego języka wyświetlania, użyj menu języka w prawym górnym rogu tych formularzy.
+Uwierzytelnianie dwuskładnikowe, passkeys i drugi krok logowania są opisane na stronie [Uwierzytelnianie dwuskładnikowe (2FA)](../../security/two-factor-authentication.md). Jeśli potrzebujesz innego języka wyświetlania, użyj menu języka w prawym górnym rogu tych formularzy.
+
+## Logowanie na istniejące konto
+
+Otwórz adres internetowy DocBits podany Twojej organizacji — na przykład `https://app.docbits.com` — i zaloguj się na ekranie logowania.
+
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/getting-access-login-en-20261107.png" alt="Angielski ekran logowania DocBits z pustymi polami E-Mail i Password, Remember me, selektorem Auth region ustawionym na Europe, Log In, Sign in with a passkey, Sign in with Google i Sign in with Microsoft"><figcaption><p>Ekran logowania: e-mail i hasło, Remember me, selektor Auth region, Log In, passkey oraz przyciski logowania Google i Microsoft.</p></figcaption></figure>
+
+1. **E-Mail** — adres, na który utworzono Twoje konto DocBits.
+2. **Password** — Twoje hasło DocBits. Ikona oka w polu pokazuje lub ukrywa wpisane znaki.
+3. **Remember me** — wypełnia Twój adres e-mail przy następnym otwarciu ekranu logowania.
+4. **Auth region** — DocBits działa w dwóch regionach, **Europe** i **United States**, a każdy ma własną usługę logowania. Selektor jest widoczny w instalacjach, które używają obu (production, dev i sandbox). DocBits wstępnie wybiera Twój ostatni wybór, w przeciwnym razie region zgodny ze strefą czasową komputera, a w przeciwnym razie Europe. Jeśli Twoje konto utworzono w drugim regionie, wybierz go tutaj przed kliknięciem **Log In**.
+5. Kliknij **Log In**.
+
+Pod polami hasła:
+
+* **Sign in with a passkey** — pojawia się, gdy przeglądarka obsługuje passkeys. Loguje Cię bez hasła. Zobacz [Logowanie bez hasła](../../security/two-factor-authentication.md).
+* **Sign in with Google** i **Sign in with Microsoft** — dla organizacji korzystających z logowania jednokrotnego u tych dostawców. Logowanie obsługuje dostawca tożsamości, więc hasło DocBits i wymóg dwuskładnikowy DocBits nie mają zastosowania.
+* **Forgot password?** — zobacz [Zapomniane hasło](#zapomniane-haslo) poniżej.
+* **Register** — zobacz [Rejestracja](#rejestracja) poniżej.
+
+{% hint style="info" %}
+Wybierz **Auth region**, którego używa Twoja organizacja, przed kliknięciem **Log In**: wybór decyduje, która usługa logowania regionu otrzyma Twoje dane logowania. Jeśli nie masz pewności, zapytaj administratora.
+{% endhint %}
 
 ## Rejestracja
 

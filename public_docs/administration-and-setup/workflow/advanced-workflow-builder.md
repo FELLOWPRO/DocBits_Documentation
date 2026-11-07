@@ -2,6 +2,18 @@
 
 De **Geavanceerde workflow** builder is een node-grafiek-editor voor workflows die vertakkingen, parallelle paden en flow-besturing nodig hebben — verder dan de lineaire When/And/Then van de Standard builder. U plaatst nodes op een canvas en verbindt ze om de uitvoeringsstroom te definiëren.
 
+## Functieoverzicht: DocBits Advanced Workflow
+
+Begin met dit overzicht van 1:48 en volg daarna de uitgebreide instructies hieronder.
+
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/nl.mp4" %}
+
+[Speler met ondertitels](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/nl.html) · [Ondertitels](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/nl.vtt) · [Schermteksten](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/nl.txt) · 1:48 · Full HD
+
+[Bekijk de functiepagina en het factuurvoorbeeld](../../feature-videos/advanced-workflow.md)
+
+De video combineert geanimeerde kaarten met echte opnamen van de Engelse Dev-interface. Hij bevat muziek en Nederlandse schermteksten, zonder gesproken uitleg. De testacties zetten het voorbeeldveld `approval_route` op `Approval` of `Standard`; een volledig menselijk goedkeuringsproces vereist eigen bedrijfsacties. Deze demonstratie is niet opgeslagen of geactiveerd. De animaties van samenvoegingen tonen resultaatvereisten, geen uitvoeringstijden. Test bereikbaarheid en de volledige documentverwerking; een geslaagde deeltest bewijst het productieproces niet.
+
 ## Video: factuurroutes in DocBits
 
 Maak kennis met Jan en volg zijn uitleg in de echte Nederlandstalige DocBits-interface. Hij controleert het workflowdashboard, de workflowlijst en de licentie en opent daarna een niet-opgeslagen concept in de ontwerper. Stap voor stap geeft hij de workflow een naam, stelt hij de bedragcontrole en twee acties in, plaatst hij de kaarten en verbindt hij beide routes. Daarna laat hij zien hoe je tests voorbereidt met een document of eigen gegevens. Het demoaccount heeft geen Advanced Workflow-abonnement en blokkeert de validatie; het concept blijft niet opgeslagen en inactief.

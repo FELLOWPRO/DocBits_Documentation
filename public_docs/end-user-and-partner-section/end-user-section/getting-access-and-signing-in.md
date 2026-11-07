@@ -1,12 +1,36 @@
 # Toegang verkrijgen en inloggen
 
-Deze pagina legt uit hoe u een DocBits-account krijgt en hoe u inlogt wanneer u uw wachtwoord niet meer weet:
+Deze pagina legt uit hoe u een DocBits-account krijgt en hoe u inlogt:
 
+* [Inloggen met een bestaand account](#inloggen-met-een-bestaand-account) — de velden op het inlogscherm en de regiokeuze.
 * [Registratie](#registratie) — maak zelf een DocBits-account aan.
 * [Wachtwoord vergeten](#wachtwoord-vergeten) — stel uw wachtwoord opnieuw in met een herstellink.
 * [Eerste wachtwoord voor door de beheerder aangemaakte accounts](#eerste-wachtwoord-voor-door-de-beheerder-aangemaakte-accounts) — stel het eerste wachtwoord in voor een account dat uw beheerder voor u heeft aangemaakt.
 
-Inloggen met een bestaand account en Tweefactorauthenticatie worden behandeld in [Tweefactorauthenticatie (2FA)](../../security/two-factor-authentication.md). Gebruik het taalmenu rechtsboven op deze formulieren als u een andere weergavetaal nodig heeft.
+Tweefactorauthenticatie, passkeys en de tweede inlogstap worden behandeld in [Tweefactorauthenticatie (2FA)](../../security/two-factor-authentication.md). Gebruik het taalmenu rechtsboven op deze formulieren als u een andere weergavetaal nodig heeft.
+
+## Inloggen met een bestaand account
+
+Open het DocBits-webadres dat uw organisatie heeft gekregen — bijvoorbeeld `https://app.docbits.com` — en log in op het inlogscherm.
+
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/getting-access-login-en-20261107.png" alt="Engels DocBits-inlogscherm met lege velden E-Mail en Password, Remember me, de Auth region-keuze op Europe, Log In, Sign in with a passkey, Sign in with Google en Sign in with Microsoft"><figcaption><p>Het inlogscherm: e-mail en wachtwoord, Remember me, de Auth region-keuze, Log In, passkey en de inlogknoppen van Google en Microsoft.</p></figcaption></figure>
+
+1. **E-Mail** — het adres waarmee uw DocBits-account is aangemaakt.
+2. **Password** — uw DocBits-wachtwoord. Het oogpictogram in het veld toont of verbergt wat u heeft getypt.
+3. **Remember me** — vult uw e-mailadres in de volgende keer dat u het inlogscherm opent.
+4. **Auth region** — DocBits draait in twee regio's, **Europe** en **United States**, en elke regio heeft een eigen inlogdienst. De keuze wordt getoond in implementaties die beide gebruiken (production, dev en sandbox). DocBits selecteert uw laatste keuze voor, anders de regio die bij de tijdzone van uw computer past, anders Europe. Is uw account in de andere regio aangemaakt, selecteer die dan hier voordat u op **Log In** klikt.
+5. Klik op **Log In**.
+
+Onder de wachtwoordvelden:
+
+* **Sign in with a passkey** — verschijnt wanneer uw browser passkeys ondersteunt. U logt dan in zonder wachtwoord. Zie [Inloggen zonder wachtwoord](../../security/two-factor-authentication.md).
+* **Sign in with Google** en **Sign in with Microsoft** — voor organisaties die single sign-on met deze aanbieders gebruiken. De identiteitsaanbieder regelt het inloggen, dus het DocBits-wachtwoord en de tweefactorvereiste van DocBits gelden niet.
+* **Forgot password?** — zie [Wachtwoord vergeten](#wachtwoord-vergeten) hieronder.
+* **Register** — zie [Registratie](#registratie) hieronder.
+
+{% hint style="info" %}
+Kies de **Auth region** die uw organisatie gebruikt voordat u op **Log In** klikt: de keuze bepaalt welke inlogdienst van de regio uw inloggegevens ontvangt. Weet u het niet zeker, vraag het dan aan uw beheerder.
+{% endhint %}
 
 ## Registratie
 

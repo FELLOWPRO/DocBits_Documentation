@@ -26,7 +26,7 @@ The **"Send HTTPS Request"** workflow card enables users to send HTTPS requests 
    * **Detail:** Use this to send filters or additional data required by the endpoint in a valid JSON format. See example for Headers.
 5. **Data**
    * **Description:** The body of the HTTPS request.
-   * **Detail:** Provide the payload in in a valid JSON format. See example for Headers.
+   * **Detail:** Provide the payload in a valid JSON format. See example for Headers.
 
 ## Functionality:
 

@@ -1,27 +1,53 @@
 # Obter acesso e iniciar sessão
 
-Esta página explica como obter uma conta DocBits e como iniciar sessão quando não tem a sua palavra-passe:
+Esta página explica como obter uma conta DocBits e como iniciar sessão:
 
+* [Iniciar sessão com uma conta existente](#iniciar-sessao-com-uma-conta-existente) — os campos do ecrã de início de sessão e o seletor de região.
 * [Registo](#registo) — crie a sua própria conta DocBits.
 * [Esqueceu-se da palavra-passe](#esqueceu-se-da-palavra-passe) — redefina a sua palavra-passe com uma ligação de redefinição.
 * [Primeira palavra-passe para contas criadas pelo administrador](#primeira-palavra-passe-para-contas-criadas-pelo-administrador) — defina a primeira palavra-passe de uma conta que o seu administrador criou para você.
 
-Iniciar sessão com uma conta existente e a Autenticação de Dois Fatores estão cobertos em [Autenticação de Dois Fatores (2FA)](../../security/two-factor-authentication.md). Use o menu de idioma no canto superior direito destes formulários se precisar de outro idioma de exibição.
+A Autenticação de Dois Fatores, as passkeys e o segundo passo de início de sessão estão cobertos em [Autenticação de Dois Fatores (2FA)](../../security/two-factor-authentication.md). Use o menu de idioma no canto superior direito destes formulários se precisar de outro idioma de exibição.
+
+## Iniciar sessão com uma conta existente
+
+Abra o endereço web do DocBits que a sua organização recebeu — por exemplo `https://app.docbits.com` — e inicie sessão no ecrã de início de sessão.
+
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/getting-access-login-en-20261107.png" alt="Ecrã de início de sessão do DocBits em inglês com os campos E-Mail e Password vazios, Remember me, o seletor Auth region definido como Europe, Log In, Sign in with a passkey, Sign in with Google e Sign in with Microsoft"><figcaption><p>O ecrã de início de sessão: e-mail e palavra-passe, Remember me, o seletor Auth region, Log In, passkey e os botões de início de sessão Google e Microsoft.</p></figcaption></figure>
+
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/getting-access-login-en-20261107.png -->
+
+1. **E-Mail** — o endereço com que a sua conta DocBits foi criada.
+2. **Password** — a sua palavra-passe do DocBits. O ícone de olho no campo mostra ou oculta o que escreveu.
+3. **Remember me** — preenche o seu endereço de e-mail na próxima vez que abrir o ecrã de início de sessão.
+4. **Auth region** — o DocBits funciona em duas regiões, **Europe** e **United States**, e cada uma tem o seu próprio serviço de início de sessão. O seletor é mostrado nas implementações que usam ambas (production, dev e sandbox). O DocBits pré-seleciona a sua última escolha; caso contrário, a região que corresponde ao fuso horário do seu computador; caso contrário, Europe. Se a sua conta foi criada na outra região, selecione-a aqui antes de clicar em **Log In**.
+5. Clique em **Log In**.
+
+Abaixo dos campos de palavra-passe:
+
+* **Sign in with a passkey** — aparece quando o seu navegador suporta passkeys. Permite-lhe iniciar sessão sem palavra-passe. Consulte [Início de sessão sem palavra-passe](../../security/two-factor-authentication.md).
+* **Sign in with Google** e **Sign in with Microsoft** — para organizações que usam início de sessão único com estes fornecedores. O fornecedor de identidade trata do início de sessão, pelo que a palavra-passe do DocBits e o requisito de dois fatores do DocBits não se aplicam.
+* **Forgot password?** — consulte [Esqueceu-se da palavra-passe](#esqueceu-se-da-palavra-passe) abaixo.
+* **Register** — consulte [Registo](#registo) abaixo.
+
+{% hint style="info" %}
+Escolha a **Auth region** que a sua organização usa antes de clicar em **Log In**: a escolha decide qual serviço de início de sessão da região recebe as suas credenciais. Se não tiver a certeza, pergunte ao seu administrador.
+{% endhint %}
 
 ## Registo
 
-Pode criar uma conta DocBits você mesmo na página de registo. Abra-a a partir da ligação **Registar** no ecrã de início de sessão ou navegue para `https://app.docbits.com/register` (use o endereço web que a sua organização recebeu).
+Pode criar uma conta DocBits você mesmo na página de registo. Abra-a a partir da ligação **Register** no ecrã de início de sessão ou navegue para `https://app.docbits.com/register` (use o endereço web que a sua organização recebeu).
 
 <figure><img src="../../.gitbook/assets/dbdc-8-register-native-pt-20261101.png" alt="Formulário português de registo do DocBits com cinco campos vazios, reCAPTCHA desmarcado, Termos e Condições, Começar, Google, Microsoft e Conecte-se"><figcaption><p>Registo: preencha Primeiro nome, Sobrenome, E-mail, Senha e Confirme sua senha. Complete o reCAPTCHA, se aparecer, aceite os Termos e Condições e escolha Começar. Conecte-se volta ao início de sessão.</p></figcaption></figure>
 
 Preencha o formulário:
 
-1. **Primeiro nome** e **Sobrenome** — o seu nome como deve aparecer no DocBits.
+1. **First name** e **Last name** — o seu nome como deve aparecer no DocBits.
 2. **E-mail** — o seu endereço de e-mail profissional. Este é o seu identificador de início de sessão.
-3. **Senha** e **Confirme sua senha** — veja as regras de palavra-passe abaixo. Uma lista de verificação por baixo do campo da palavra-passe mostra que regras a sua palavra-passe já cumpre.
+3. **Password** e **Confirm password** — veja as regras de palavra-passe abaixo. Uma lista de verificação por baixo do campo da palavra-passe mostra que regras a sua palavra-passe já cumpre.
 4. Se a página mostrar um widget **reCAPTCHA**, complete-o. O widget só aparece quando a sua instalação do DocBits tem a proteção contra bots ativada.
-5. Marque a caixa de verificação para confirmar que concorda com os **Termos e Condições**.
-6. Clique em **Começar**. Se já tem uma conta, clique em **Conecte-se** na parte inferior para voltar ao ecrã de início de sessão. **Visite o site** abre o website do DocBits com informações sobre o produto.
+5. Marque a caixa de verificação para confirmar que concorda com os **Terms and Conditions**.
+6. Clique em **Get Started**. Se já tem uma conta, clique em **Login** na parte inferior para voltar ao ecrã de início de sessão. **Visit website** abre o website do DocBits com informações sobre o produto.
 
 Use o ícone de olho junto a um campo de palavra-passe para mostrar ou ocultar os caracteres que introduziu.
 
@@ -38,11 +64,11 @@ Apenas letras, dígitos e estes caracteres especiais são permitidos.
 
 ### Registar-se com Google ou Microsoft
 
-Em vez de uma palavra-passe, pode clicar no botão **Google** ou **Microsoft** em **OU INSCREVA-SE COM**. O DocBits cria a sua conta através do seu fornecedor de identidade e, mais tarde, inicia sessão da mesma forma.
+Em vez de uma palavra-passe, pode clicar no botão **Google** ou **Microsoft** em **Or sign up with**. O DocBits cria a sua conta através do seu fornecedor de identidade e, mais tarde, inicia sessão da mesma forma.
 
 ### Confirme o seu endereço de e-mail
 
-Depois de enviar o formulário, o DocBits mostra uma página de confirmação e envia um **e-mail de verificação** para o endereço que introduziu. Abra o e-mail e clique na ligação — ela leva-o a uma página de confirmação que verifica o seu endereço. Se o e-mail não chegar, a página de confirmação oferece uma opção de **reenvio**. Assim que o endereço estiver verificado, clique em **Conecte-se** e inicie sessão com o seu e-mail e palavra-passe.
+Depois de enviar o formulário, o DocBits mostra uma página de confirmação e envia um **e-mail de verificação** para o endereço que introduziu. Abra o e-mail e clique na ligação — ela leva-o a uma página de confirmação que verifica o seu endereço. Se o e-mail não chegar, a página de confirmação oferece uma opção de **reenvio**. Assim que o endereço estiver verificado, clique em **Sign in** e inicie sessão com o seu e-mail e palavra-passe.
 
 ## Esqueceu-se da palavra-passe
 
@@ -50,16 +76,16 @@ O DocBits guarda as palavras-passe como hashes unidirecionais com salt. Uma pala
 
 Se se esqueceu da sua palavra-passe:
 
-1. No ecrã de início de sessão, clique em **Esqueceu sua senha**.
-2. Na página **Esqueceu sua senha**, introduza o seu endereço de **E-mail** e clique em **Redefinir senha**. Se for mostrado um widget reCAPTCHA, complete-o primeiro.
+1. No ecrã de início de sessão, clique em **Forgot password?**.
+2. Na página **Forgot Password**, introduza o seu endereço de **E-mail** e clique em **Reset Password**. Se for mostrado um widget reCAPTCHA, complete-o primeiro.
 
    <figure><img src="../../.gitbook/assets/dbdc-8-forget-password-native-pt-20261101.png" alt="Formulário português Esqueceu sua senha com o campo E-mail vazio, reCAPTCHA desmarcado, Redefinir senha e Voltar ao login"><figcaption><p>Introduza o E-mail e escolha Redefinir senha para pedir uma ligação de redefinição, ou use Voltar ao login. Complete o reCAPTCHA quando aparecer.</p></figcaption></figure>
 
-   Se não quiser redefinir a sua palavra-passe, clique em **Voltar ao login** para voltar ao início de sessão.
+   Se não quiser redefinir a sua palavra-passe, clique em **Back to Login** para voltar ao início de sessão.
 
 3. O DocBits envia-lhe uma **ligação de redefinição de palavra-passe** por e-mail. Abra o e-mail e clique na ligação — ela abre a página de redefinição.
 4. Introduza a sua **nova palavra-passe duas vezes**. Aplicam-se as mesmas regras de palavra-passe do [registo](#regras-de-palavra-passe) e uma lista de verificação mostra que regras são cumpridas.
-5. Clique em **Redefinir senha**. O DocBits confirma a alteração e devolve-o ao ecrã de início de sessão, onde pode iniciar sessão com a nova palavra-passe.
+5. Clique em **Reset Password**. O DocBits confirma a alteração e devolve-o ao ecrã de início de sessão, onde pode iniciar sessão com a nova palavra-passe.
 
 {% hint style="info" %}
 As ligações de redefinição expiram após um curto período de tempo. Se a ligação já não funcionar, repita os passos acima para pedir uma nova.
@@ -67,14 +93,14 @@ As ligações de redefinição expiram após um curto período de tempo. Se a li
 
 ## Primeira palavra-passe para contas criadas pelo administrador
 
-Quando o seu administrador o adiciona como utilizador (consulte [Usuários](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), recebe um e-mail com os seus dados de início de sessão e uma ligação para definir a sua **primeira palavra-passe**. A ligação abre a página **Definir senha**:
+Quando o seu administrador o adiciona como utilizador (consulte [Usuários](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), recebe um e-mail com os seus dados de início de sessão e uma ligação para definir a sua **primeira palavra-passe**. A ligação abre a página **Set Password**:
 
 <figure><img src="../../.gitbook/assets/dbdc-8-set-password-native-pt-20261101.png" alt="Formulário português Definir senha com mensagem de boas-vindas, Senha e Confirme sua senha vazios, ícones de olho e Acesse a página de login"><figcaption><p>Primeira palavra-passe de uma conta criada pelo administrador: preencha Senha e Confirme sua senha e escolha Definir senha. Acesse a página de login volta ao início de sessão.</p></figcaption></figure>
 
 1. Clique na ligação no e-mail de convite. A página dá-lhe as boas-vindas com "Bem-vindo ao DocBits! Sua conta foi criada. Por favor, defina sua senha para começar."
 2. Introduza a sua palavra-passe duas vezes — aplicam-se as mesmas [regras de palavra-passe](#regras-de-palavra-passe).
-3. Clique em **Definir senha**. Depois pode iniciar sessão com o seu e-mail e esta palavra-passe.
+3. Clique em **Set Password**. Depois pode iniciar sessão com o seu e-mail e esta palavra-passe.
 
-Os ícones de olho mostram ou ocultam o que introduziu. Se sair antes de definir uma palavra-passe, **Acesse a página de login** devolve-o ao início de sessão.
+Os ícones de olho mostram ou ocultam o que introduziu. Se sair antes de definir uma palavra-passe, **Go to Login** devolve-o ao início de sessão.
 
-A ligação está associada à sua conta e funciona apenas uma vez. Se expirar antes de a utilizar, peça ao seu administrador para reenviar o convite ou use **Esqueceu sua senha** com o seu endereço de e-mail.
+A ligação está associada à sua conta e funciona apenas uma vez. Se expirar antes de a utilizar, peça ao seu administrador para reenviar o convite ou use **Forgot password?** com o seu endereço de e-mail.

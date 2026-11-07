@@ -23,7 +23,7 @@ La guía de diagnóstico [¿Qué ruta de extracción se utilizó?](../../../../o
 
 ## Descripción general
 
-En la configuración de **Clasificación y extracción** puedes:
+En la configuración de **Classification and Extraction** puedes:
 
 * Activar la **división de documentos** basada en códigos QR
 * Configurar el **formato de importes**
@@ -36,8 +36,8 @@ Esta página explica en detalle todos los ajustes disponibles.
 
 ## **Acceder a la configuración de Clasificación y extracción**
 
-Para acceder a la configuración de **Clasificación y extracción**, ve a:\
-**Configuración → Procesamiento de documentos → Clasificación y extracción**
+Para acceder a la configuración de **Classification and Extraction**, ve a:\
+**Settings → Document Processing → Classification and Extraction**
 
 
 ## División de documentos
@@ -83,7 +83,7 @@ En la sección **Formato de importes** tienes dos opciones:
 {% hint style="info" %}
 **Requisitos para que la extracción de tablas funcione**
 
-* El tipo de documento tiene **columnas de tabla** (Configuración → Procesamiento de Documentos → Tipos de documentos → [Columnas de tabla](../../global-settings/document-types/table-columns/README.md)). Sin columnas no hay dónde extraer.
+* El tipo de documento tiene **columnas de tabla** (Settings → Document Processing → Document Types → [Columnas de tabla](../../global-settings/document-types/table-columns/README.md)). Sin columnas no hay dónde extraer.
 * **Extracción de tablas** o **Extracción de tablas por IA** está activada más abajo, para toda la organización.
 * El documento tiene texto legible: se ejecutó el OCR, o se usa E-Text en los PDF generados digitalmente ([Configuración de OCR](../ocr-settings.md)).
 * El entrenamiento y los modelos de IA son **por proveedor**. Una tabla entrenada solo se aplica a los documentos del proveedor con el que se entrenó.
@@ -151,8 +151,8 @@ Cada interruptor de esta sección se guarda como una preferencia de la organizac
 | Guardar reglas de extracción (solo para administradores) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
 | Modelo de IA | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Versión de extracción de tablas (cuadro de confirmación) | `TBL_EXT_VERSION` | cadena de versión |
-| Configuración de OCR → Usar datos de IA para tablas si están disponibles | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
-| Configuración de OCR → Utilice E-Text si está disponible | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+| OCR Settings → Usar datos de IA para tablas si están disponibles | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR Settings → Utilice E-Text si está disponible | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
 
 Notas:
 
@@ -190,7 +190,7 @@ Para crear una nueva regla:
    *   **Subtipo de documento** _(opcional)_: Indica un subtipo para una clasificación más detallada.
 
        
-3.  Haz clic en **Guardar** para guardar la regla de clasificación.
+3.  Haz clic en **Save** para guardar la regla de clasificación.
 
     
 
@@ -201,11 +201,11 @@ Para editar una regla existente:
 1.  Haz clic en los tres puntos de la columna **Acciones**.
 
     
-2.  Selecciona **Editar**.
+2.  Selecciona **Edit**.
 
     
 3. Realiza los cambios que desees.
-4.  Haz clic en **Guardar** para aplicar los cambios.
+4.  Haz clic en **Save** para aplicar los cambios.
 
     
 
@@ -216,7 +216,7 @@ Para eliminar una regla:
 1.  Haz clic en los tres puntos de la columna **Acciones**.
 
     
-2.  Selecciona **Eliminar**.
+2.  Selecciona **Delete**.
 
     
 
@@ -262,7 +262,7 @@ Para editar un modelo:
 2. Actualiza los campos disponibles:
    * **Siguiente modelo**: Selecciona el modelo que debe procesar la salida del modelo actual.
    * **Tipo de documento**: Elige el tipo de documento con el que el modelo debe clasificar la entrada.
-3.  Haz clic en **Guardar** para aplicar los cambios.
+3.  Haz clic en **Save** para aplicar los cambios.
 
     
 

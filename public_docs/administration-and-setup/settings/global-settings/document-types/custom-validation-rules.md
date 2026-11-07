@@ -22,12 +22,12 @@ Las reglas se definen por **tipo de documento** y se ejecutan en cada documento 
 
 | Requisito de negocio | Sin reglas personalizadas | Con una regla personalizada |
 | --- | --- | --- |
-| Las facturas alemanas de más de 250 EUR deben mostrar el número de identificación fiscal del proveedor | un script, o los usuarios deben recordarlo | **Obligatorio** en Supplier Tax ID, *applies when* el origen es DE y el importe total es mayor que 250 |
+| Las facturas alemanas de más de 250 EUR deben mostrar el número de identificación fiscal del proveedor | un script, o los usuarios deben recordarlo | **Required** en Supplier Tax ID, *applies when* el origen es DE y el importe total es mayor que 250 |
 | Los números de factura de un proveedor siempre tienen el aspecto `INV-123456` | los errores tipográficos llegan al ERP | **Patrón** `^INV-\d{6}$` en Invoice Number para ese proveedor |
 | Cada línea de artículo necesita una cantidad superior a cero | se exportan líneas con cantidad 0 | **Rango** (mínimo 0,01) en la columna Quantity |
 | La fecha de vencimiento no debe ser anterior a la fecha de la factura | ejecuciones de pago erróneas | **Comparar campos**: Due Date igual o posterior a Invoice Date |
 | Las líneas deben sumar el importe neto | solo la comprobación integrada fija | **Fórmula** `sum(row.NET_AMOUNT) == header.total_net_amount` con su propia tolerancia |
-| Solo se permiten las monedas que conoce su ERP | errores de exportación en el ERP | **Lista de valores** en Currency |
+| Solo se permiten las monedas que conoce su ERP | errores de exportación en el ERP | **List of Values** en Currency |
 | Avisar a los usuarios de valores inusuales sin bloquearlos | no es posible | cualquier regla con la gravedad **Advertencia** |
 
 
@@ -35,14 +35,14 @@ Las reglas se definen por **tipo de documento** y se ejecutan en cada documento 
 
 Las reglas de validación personalizadas se activan **por tipo de documento**. No existe un interruptor para toda la organización.
 
-1. Vaya a **Ajustes → Procesamiento de Documentos → Tipos de documento**.
+1. Vaya a **Settings → Document Processing → Document Types**.
 2. En la tarjeta del tipo de documento, haga clic en el icono de **ajustes** (engranaje).
 3. Abra la sección **Reglas de validación personalizadas** y active el interruptor.
 4. Haga clic en **Gestionar reglas de validación** para abrir la lista de reglas.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="Los interruptores de reglas en los ajustes adicionales de un tipo de documento"><figcaption><p>Los interruptores de Manage Layouts, Custom Validation Rules y Transformation Rules</p></figcaption></figure>
 
-A partir de ese momento, la tarjeta del tipo de documento también muestra un enlace **Reglas de validación** y un enlace **Registros** para los registros de ejecución.
+A partir de ese momento, la tarjeta del tipo de documento también muestra un enlace **Validation Rules** y un enlace **Registros** para los registros de ejecución.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-card-links.png" alt="La tarjeta del tipo de documento con el enlace Validation Rules"><figcaption><p>Los enlaces de la tarjeta del tipo de documento</p></figcaption></figure>
 
@@ -52,7 +52,7 @@ A partir de ese momento, la tarjeta del tipo de documento también muestra un en
 
 ## La lista de reglas
 
-**Tipos de documento → (tipo de documento) → Reglas de validación** muestra todas las reglas del tipo de documento.
+**Document Types → (tipo de documento) → Validation Rules** muestra todas las reglas del tipo de documento.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-es.png" alt="Reglas de validación personalizadas con los nombres ocultos."><figcaption><p>Reglas de validación personalizadas con los nombres ocultos.</p></figcaption></figure>
 
@@ -62,15 +62,15 @@ Cada tarjeta muestra el nombre y la descripción de la regla, y las insignias de
 
 | Origen | Qué es | Qué puede hacer |
 | --- | --- | --- |
-| **Configuración predeterminada del sistema** | Una regla incluida con DocBits para todas las organizaciones. | No se puede editar directamente: el constructor muestra “This is a system default rule and cannot be edited.” Haga clic en **Personalizar** para crear su propia copia editable, o desactívela para detenerla en su organización. |
+| **Configuración predeterminada del sistema** | Una regla incluida con DocBits para todas las organizaciones. | No se puede editar directamente: el constructor muestra “This is a system default rule and cannot be edited.” Haga clic en **Customize** para crear su propia copia editable, o desactívela para detenerla en su organización. |
 | **Personalizado** | Una regla System default que su organización ha modificado o desactivado. | Edítela como una regla propia. **Restablecer a valores predeterminados** elimina su copia y restaura la original. |
-| **A medida** | Una regla creada por su organización. | Editar, **Duplicar**, **Borrar**. |
+| **Custom** | Una regla creada por su organización. | Editar, **Duplicate**, **Delete**. |
 
 Los cambios en las reglas System default nunca afectan a otras organizaciones.
 
 ## Crear una regla
 
-Haga clic en **Nueva regla**. El constructor tiene tres pasos. **Regla de prueba** y **Guardar** están en la parte superior derecha.
+Haga clic en **New rule**. El constructor tiene tres pasos. **Test rule** y **Save** están en la parte superior derecha.
 
 ### Paso 1 — Name & scope
 
@@ -80,8 +80,8 @@ Haga clic en **Nueva regla**. El constructor tiene tres pasos. **Regla de prueba
 | --- | --- |
 | **Nivel de regla** | Qué examina la regla y dónde se muestra el error; consulte [Niveles de regla](#niveles-de-regla). |
 | **Gravedad** | **Error** marca el campo como no válido y bloquea la validación. **Advertencia** muestra el mensaje pero nunca bloquea. |
-| **Nombre de la regla** | Se muestra en la lista y a los administradores. Haga que describa la regla (“Supplier tax ID required for German invoices”). |
-| **Clave de la regla** | Una clave técnica generada a partir del nombre. Se mantiene igual cuando más adelante cambia el nombre de la regla. Haga clic en el lápiz para elegir su propia clave antes del primer guardado; después queda fija. |
+| **Rule Name** | Se muestra en la lista y a los administradores. Haga que describa la regla (“Supplier tax ID required for German invoices”). |
+| **Rule key** | Una clave técnica generada a partir del nombre. Se mantiene igual cuando más adelante cambia el nombre de la regla. Haga clic en el lápiz para elegir su propia clave antes del primer guardado; después queda fija. |
 | **Descripción** | Explicación opcional para otros administradores. |
 | **Nombre de la tabla** | *Solo Table line.* La tabla cuyas filas se comprueban, por ejemplo `INVOICE_TABLE`. |
 | **Attach error to field / column** | El campo (o, en las líneas de tabla, la columna) que muestra el error en la pantalla de validación. |
@@ -187,10 +187,10 @@ El valor debe ser uno de los valores que usted escriba, **un valor por línea**.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-lov.png" alt="Una comprobación List of Values"><figcaption><p>List of Values: los valores proceden de una lista con nombre de los ajustes</p></figcaption></figure>
 
-Como *Allowed values*, pero los valores proceden de una **Lista de valores** compartida que se gestiona en **Settings › List of Values**. Elija la lista en lugar de volver a escribirla; cuando la lista cambia, la regla usa los nuevos valores (tras un breve retraso de caché). Solo cuentan los valores de las entradas de la lista, no sus etiquetas.
+Como *Allowed values*, pero los valores proceden de una **List of Values** compartida que se gestiona en **Settings › List of Values**. Elija la lista en lugar de volver a escribirla; cuando la lista cambia, la regla usa los nuevos valores (tras un breve retraso de caché). Solo cuentan los valores de las entradas de la lista, no sus etiquetas.
 
 {% hint style="info" %}
-Salvo **Obligatorio**, todas las comprobaciones **se superan cuando el valor está vacío**. Una regla Pattern sobre el pedido de compra no se queja de las facturas sin pedido de compra. Si un valor vacío también es un problema, añada una regla Required o limite la regla con *Applies when … is not empty*.
+Salvo **Required**, todas las comprobaciones **se superan cuando el valor está vacío**. Una regla Pattern sobre el pedido de compra no se queja de las facturas sin pedido de compra. Si un valor vacío también es un problema, añada una regla Required o limite la regla con *Applies when … is not empty*.
 {% endhint %}
 
 #### Mensaje de error y código de error
@@ -200,7 +200,7 @@ Salvo **Obligatorio**, todas las comprobaciones **se superan cuando el valor est
 
 ## Probar regla
 
-Haga clic en **Regla de prueba** para ejecutar la versión actual de la regla, guardada o no, contra un documento. Introduzca un **ID del documento** o cambie a **Por documento JSON** y pegue datos extraídos. **No se guarda nada** y el documento no se modifica.
+Haga clic en **Test rule** para ejecutar la versión actual de la regla, guardada o no, contra un documento. Introduzca un **ID del documento** o cambie a **Por documento JSON** y pegue datos extraídos. **No se guarda nada** y el documento no se modifica.
 
 El resultado es uno de tres desenlaces:
 
@@ -232,7 +232,7 @@ Pruebe cada regla nueva al menos con un documento que deba fallar, uno que deba 
 
 Cada regla puede registrar sus evaluaciones. Para ello abra la página **Registros de ejecución de reglas** del tipo de documento: la cabecera indica el tipo de documento y el icono de actualizar recarga la lista.
 
-**Encontrar por** decide qué se busca (por defecto **Clave de la regla**) y el valor se escribe en el campo de al lado. Al buscar por documento, **Tipo de regla** es obligatorio. Acote el resultado con **Resultado**, **Ejecutado**, **Desde Fecha** y **Hasta la fecha**.
+**Encontrar por** decide qué se busca (por defecto **Rule key**) y el valor se escribe en el campo de al lado. Al buscar por documento, **Tipo de regla** es obligatorio. Acote el resultado con **Resultado**, **Ejecutado**, **Desde Fecha** y **Hasta la fecha**.
 
 <figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-es.png" alt="Los registros de ejecución de reglas"><figcaption><p>La página de registros de ejecución: los filtros arriba y una fila por evaluación debajo. Mientras no se busque, la tabla indica qué introducir.</p></figcaption></figure>
 
@@ -242,10 +242,10 @@ La misma página muestra también los registros de las reglas de transformación
 
 ## Recetas
 
-Copie estas reglas como punto de partida. Las claves de campos y columnas son las del tipo de documento estándar **Factura**; adáptelas a sus tipos de documento.
+Copie estas reglas como punto de partida. Las claves de campos y columnas son las del tipo de documento estándar **Invoice**; adáptelas a sus tipos de documento.
 
 **1. Número de identificación fiscal del proveedor en facturas alemanas de más de 250 EUR**
-Header field · Error · asociar a *Supplier Tax ID* · Applies when **Todos**: *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Check **Obligatorio** · Mensaje “Supplier tax ID is missing. German invoices over 250 EUR must show it.” · Código `REQUIRED_CONDITIONAL`.
+Header field · Error · asociar a *Supplier Tax ID* · Applies when **Todos**: *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Check **Required** · Mensaje “Supplier tax ID is missing. German invoices over 250 EUR must show it.” · Código `REQUIRED_CONDITIONAL`.
 
 **2. Los totales de cabecera cuadran** (sustituye la comprobación integrada)
 Header field · Error · asociar a *Total Amount* · siempre · **Fórmula** `header.total_amount == header.total_net_amount + header.total_tax_amount`, tolerancia `0.01` · Mensaje “Total {actual} does not equal net plus tax ({expected}).”
@@ -269,10 +269,10 @@ Header field · Error · *Due Date* · siempre · **Comparar campos** Due Date *
 Campo de encabezado · Error · *Fecha de factura* · siempre · **Comparar campos** Fecha de factura *en o antes (≤)* hoy.
 
 **9. Solo monedas aprobadas (solo aviso)**
-Header field · **Advertencia** · *Currency* · siempre · **Lista de valores** *approved_currencies* · Código `VALUE_NOT_ALLOWED`.
+Header field · **Advertencia** · *Currency* · siempre · **List of Values** *approved_currencies* · Código `VALUE_NOT_ALLOWED`.
 
 **10. Pedido de compra obligatorio a partir de 5.000**
-Campo de encabezado · Error · *Orden de Compra* · Aplica cuando *Monto Total* mayor a *5000* · **Obligatorio**.
+Campo de encabezado · Error · *Orden de Compra* · Aplica cuando *Monto Total* mayor a *5000* · **Required**.
 
 ## Buenas prácticas
 
@@ -286,14 +286,14 @@ Campo de encabezado · Error · *Orden de Compra* · Aplica cuando *Monto Total*
 
 | Síntoma | Qué comprobar |
 | --- | --- |
-| La regla nunca genera un error | ¿Está activada la función para el tipo de documento y la regla está **Activo**? Ejecute **Regla de prueba** en el documento: “skipped” significa que *Applies when* era falso. |
-| No se informa de un campo vacío | Solo **Obligatorio** informa de valores vacíos. Añada una regla Required. |
+| La regla nunca genera un error | ¿Está activada la función para el tipo de documento y la regla está **Active**? Ejecute **Test rule** en el documento: “skipped” significa que *Applies when* era falso. |
+| No se informa de un campo vacío | Solo **Required** informa de valores vacíos. Añada una regla Required. |
 | Las comprobaciones de totales integradas han desaparecido | Es lo esperado mientras las reglas personalizadas están activadas. Recréelas como reglas Formula (recetas 2 y 3). |
 | Una regla modificada no tiene efecto en un documento | Los documentos se vuelven a comprobar en su siguiente guardado. Guarde o reprocese el documento. |
 | Un Pattern coincide con valores que no debería | Los patrones buscan dentro del valor. Ancle con `^` y `$`. |
 | Solo se muestra uno de dos errores en un campo | Un campo solo muestra la primera regla que falla. Ajuste las prioridades o asocie una de las reglas a otro campo. |
 | Faltan columnas de tabla en *Applies when* | Solo están disponibles en el nivel **Línea de la tabla**. |
-| La regla System default no se puede cambiar | Haga clic en **Personalizar** para crear su propia copia. |
+| La regla System default no se puede cambiar | Haga clic en **Customize** para crear su propia copia. |
 
 ## Relacionado
 

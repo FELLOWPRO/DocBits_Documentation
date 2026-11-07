@@ -9,13 +9,13 @@ Esta guía te guiará a través del proceso de configuración para asegurar que 
 
 ### **Paso 1: Configurar Lista de Valores**
 
-1.  Ve a **Ajustes** -> **Procesamiento de documentos** -> **Lista de valores**.
+1.  Ve a **Settings** -> **Document Processing** -> **List of Values**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-es.png" alt="Listas de valores de DocBits; los nombres específicos de la organización están ocultos."><figcaption><p>Listas de valores de DocBits; los nombres específicos de la organización están ocultos.</p></figcaption></figure>
-2.  Haz clic en **Nuevo**.
+2.  Haz clic en **New**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
-3.  Crea una lista con el nombre `Tax_Country` y haz clic en **Guardar**.
+3.  Crea una lista con el nombre `Tax_Country` y haz clic en **Save**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="" width="563"><figcaption></figcaption></figure>
 4.  Crea las siguientes tres listas adicionales:
@@ -28,7 +28,7 @@ Esta guía te guiará a través del proceso de configuración para asegurar que 
 5.  Haz clic en una de las listas recién creadas para abrirla. Luego, presiona el botón **Añadir fila** para agregar una nueva fila.
 
     <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
-6.  Ingresa los valores respectivos deseados de **LN** y presiona **Guardar** para guardar los cambios.
+6.  Ingresa los valores respectivos deseados de **LN** y presiona **Save** para guardar los cambios.
 
     * Si tienes múltiples valores, puedes hacer clic en **Añadir más valores** para agregarlos.
 
@@ -40,10 +40,10 @@ Esta guía te guiará a través del proceso de configuración para asegurar que 
 
 ### **Paso 2: Agregar Campos en DocBits**
 
-1.  Navega a **Ajustes** -> **Procesamiento de Documentos** -> **Tipos de documentos**.
+1.  Navega a **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
-2.  Elige el menú **Campos** correspondiente al Tipo de Documento donde deseas agregar los campos.
+2.  Elige el menú **Fields** correspondiente al Tipo de Documento donde deseas agregar los campos.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
 3.  Bajo **Desglose IVA y Base**, crea seis nuevos campos de la siguiente manera:
@@ -62,7 +62,7 @@ Esta guía te guiará a través del proceso de configuración para asegurar que 
 
 ### **Paso 3: Editar diseño**
 
-1.  Ve a **Ajustes** -> **Procesamiento de Documentos** -> **Tipos de documentos**.
+1.  Ve a **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 2.  Abre el menú **Editar diseño** para el Tipo de Documento que deseas editar.
@@ -78,7 +78,7 @@ Esta guía te guiará a través del proceso de configuración para asegurar que 
 6.  En la sección **Tax Details**, utiliza la herramienta **Horizontal Separator**. Arrástrala y suéltala entre las subsecciones dentro de la sección de impuestos para separarlas claramente y reducir la confusión.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_22.png" alt=""><figcaption></figcaption></figure>
-7. Expanda el menú desplegable **Campos**.
+7. Expanda el menú desplegable **Fields**.
 8.  Busca **Tax Country** y arrastra y suelta el campo en su área respectiva.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_23.png" alt=""><figcaption></figcaption></figure>
@@ -99,13 +99,13 @@ Después de subir un nuevo documento a DocBits con la configuración de document
 
 ### **Paso 1: Configurar Lista de Valores**
 
-1.  Ve a **Ajustes** -> **Procesamiento de documentos** -> **Lista de valores**.
+1.  Ve a **Settings** -> **Document Processing** -> **List of Values**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-es.png" alt="Listas de valores de DocBits; los nombres específicos de la organización están ocultos."><figcaption><p>Listas de valores de DocBits; los nombres específicos de la organización están ocultos.</p></figcaption></figure>
-2.  Haz clic en **Nuevo**.
+2.  Haz clic en **New**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
-3.  Crea una lista con el nombre `Tax_Country` y haz clic en **Guardar**.
+3.  Crea una lista con el nombre `Tax_Country` y haz clic en **Save**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="" width="375"><figcaption></figcaption></figure>
 4.  Crea las siguientes tres listas adicionales:
@@ -118,7 +118,7 @@ Después de subir un nuevo documento a DocBits con la configuración de document
 5.  Haz clic en una de las listas recién creadas para abrirla. Luego, presiona el botón **Añadir fila** para agregar una nueva fila.
 
     <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
-6.  Ingresa los valores respectivos deseados de **LN** y presiona **Guardar** para guardar los cambios.
+6.  Ingresa los valores respectivos deseados de **LN** y presiona **Save** para guardar los cambios.
 
     * Si tienes múltiples valores, puedes hacer clic en **Añadir más valores** para agregarlos.
 
@@ -130,10 +130,10 @@ Después de subir un nuevo documento a DocBits con la configuración de document
 
 ### **Paso 2: Agregar Campos en DocBits**
 
-1.  Navega a **Ajustes** -> **Procesamiento de Documentos** -> **Tipos de documentos**.
+1.  Navega a **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
-2.  Elige el menú **Campos** correspondiente al Tipo de Documento donde deseas agregar los campos.
+2.  Elige el menú **Fields** correspondiente al Tipo de Documento donde deseas agregar los campos.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
 3.  Bajo **Desglose IVA y Base**, crea seis nuevos campos de la siguiente manera:
@@ -152,7 +152,7 @@ Después de subir un nuevo documento a DocBits con la configuración de document
 
 ### **Paso 3: Editar diseño**
 
-1.  Ve a **Ajustes** -> **Procesamiento de Documentos** -> **Tipos de documentos**.
+1.  Ve a **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 2.  Abre el menú **Editar diseño** para el Tipo de Documento que deseas editar.
@@ -174,7 +174,7 @@ Después de subir un nuevo documento a DocBits con la configuración de document
 8.  Arrastra y suelta los campos que correspondan a este grupo en el campo **Sub Group**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_4.png" alt=""><figcaption></figcaption></figure>
-9. Expanda el menú desplegable **Campos**.
+9. Expanda el menú desplegable **Fields**.
 10. Busca **Tax** y arrastra y suelta los campos respectivos, como **Tax Country** y **Tax Code**, en el subgrupo correspondiente.
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_5.png" alt=""><figcaption></figcaption></figure>

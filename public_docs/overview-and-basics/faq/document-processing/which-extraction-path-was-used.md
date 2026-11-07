@@ -9,7 +9,7 @@ Abre el documento y mira las pestañas encima de la tabla de líneas de detalle:
 | Qué ves | Ruta |
 |---|---|
 | Filas en la pestaña **Tabla extraída** (*Extracted table*) | Ruta basada en reglas. El proveedor tiene una tabla entrenada; las filas proceden de las reglas de coordenadas guardadas y la IA no ha intervenido (salvo en las columnas marcadas como *Usar IA*). |
-| Filas en la pestaña **Tabla extraída por IA** (*AI Extracted table*), campo *Etiquetas* debajo | Ruta de IA. Ninguna regla guardada coincidió; la extracción de tablas por IA generó las filas, usando el nivel de IA de la organización o el nivel establecido para este proveedor en *Más ajustes* → *Modelo de IA basado en proveedor*. |
+| Filas en la pestaña **Tabla extraída por IA** (*AI Extracted table*), campo *Etiquetas* debajo | Ruta de IA. Ninguna regla guardada coincidió; la extracción de tablas por IA generó las filas, usando el nivel de IA de la organización o el nivel establecido para este proveedor en *More Settings* → *Modelo de IA basado en proveedor*. |
 | Tooltip *AI table not found* en la pestaña de IA | La ruta de IA se ejecutó y no devolvió nada para este documento. |
 | Ninguna pestaña de tabla | Ambos ajustes de tabla están desactivados para la organización; nada extrajo la tabla. |
 | *No line items yet* | La ruta se ejecutó pero no encontró filas (sin texto legible, sin tabla en la página, o las reglas no coincidieron con este diseño). |
@@ -18,9 +18,9 @@ Los campos de cabecera llevan su propia insignia de origen junto al valor: *Extr
 
 ## 2. Comprueba la configuración del proveedor
 
-* **Configuración → Procesamiento de documentos → Clasificación y extracción → Modelo de IA**: la tabla debajo del selector lista todos los proveedores con un modelo o un entrenamiento almacenado. Un proveedor de esta lista con *datos de entrenamiento* tiene reglas guardadas; *restablecer los datos de entrenamiento* las elimina.
-* **Configuración → Procesamiento de documentos → Configuración de OCR**: *Usar E-Text si está disponible* y *Usar datos de IA para tablas* cambian el texto que ve la extracción. Un proveedor puede sobrescribir E-Text en *Más ajustes* de la pantalla de validación.
-* **Configuración → Procesamiento de Documentos → Tipos de documentos → Columnas de tabla**: indicadores de oculta, obligatoria y *Usar IA*. Una columna oculta nunca se rellena; una columna con *Usar IA* la rellena la IA incluso en proveedores con reglas.
+* **Settings → Document Processing → Classification and Extraction → Modelo de IA**: la tabla debajo del selector lista todos los proveedores con un modelo o un entrenamiento almacenado. Un proveedor de esta lista con *datos de entrenamiento* tiene reglas guardadas; *restablecer los datos de entrenamiento* las elimina.
+* **Settings → Document Processing → OCR Settings**: *Usar E-Text si está disponible* y *Usar datos de IA para tablas* cambian el texto que ve la extracción. Un proveedor puede sobrescribir E-Text en *More Settings* de la pantalla de validación.
+* **Settings → Document Processing → Document Types → Table Columns**: indicadores de oculta, obligatoria y *Usar IA*. Una columna oculta nunca se rellena; una columna con *Usar IA* la rellena la IA incluso en proveedores con reglas.
 
 ## 3. Reproducir sin la interfaz (API / MCP)
 
@@ -39,7 +39,7 @@ Las herramientas del DocBits MCP se describen en la documentación de [DocBits M
 
 ## 4. Lee los registros
 
-**Configuración → Configuración de Registros** (registro de actividad) muestra los eventos de todos los servicios. Para una pregunta sobre tablas:
+**Settings → Settings de Registros** (registro de actividad) muestra los eventos de todos los servicios. Para una pregunta sobre tablas:
 
 * Filtra por el nombre de archivo o el ID del documento en *Buscar registros*.
 * Usa el filtro *Servicio*: la extracción en sí se ejecuta en el servicio de extracción y en los workers de Celery, no en el servicio `api`. Si solo ves líneas de `api`, amplía el filtro.

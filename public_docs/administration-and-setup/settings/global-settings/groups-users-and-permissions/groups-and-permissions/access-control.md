@@ -18,8 +18,8 @@ Cada grupo puede configurarse para:
 
 ## Activación
 
-1. Vaya a **Configuración**.
-2. Seleccione **Procesamiento de Documentos**.
+1. Vaya a **Settings**.
+2. Seleccione **Document Processing**.
 3. Seleccione **Módulo.**
 4. Active el **Control de Acceso** habilitando el control deslizante.
 
@@ -27,8 +27,8 @@ Cada grupo puede configurarse para:
 
 ## Abrir el Control de Acceso de un grupo
 
-1. Vaya a **Configuración**.
-2. En **Organización y Acceso**, seleccione **Grupos y Permisos**.
+1. Vaya a **Settings**.
+2. En **Organization & Access**, seleccione **Grupos y Permisos**.
 3. Para gestionar los permisos de un grupo (por ejemplo, PROCUREMENT\_DIRECTOR), haga clic en los tres puntos del lado derecho.
 4. Seleccione **Gestionar Control de Acceso**.
 
@@ -52,9 +52,9 @@ La primera columna es un interruptor **Habilitado / Deshabilitado**. Deshabilít
 | Acción | Determina si el grupo puede… |
 |--------|------------------------------|
 | **Listar** | ver el tipo de documento en la lista del panel. |
-| **Ver** | abrir un documento y ver sus detalles. |
-| **Editar** | cambiar los valores de los campos de un documento. |
-| **Eliminar** | eliminar un documento. |
+| **View** | abrir un documento y ver sus detalles. |
+| **Edit** | cambiar los valores de los campos de un documento. |
+| **Delete** | eliminar un documento. |
 | **Actualización Masiva** | aplicar una actualización masiva a varios documentos a la vez. |
 | **Primera Aprobación** | otorgar la aprobación de primer nivel. |
 | **Segunda Aprobación** | otorgar la aprobación de segundo nivel. |
@@ -81,22 +81,22 @@ Cada columna de acción es un desplegable. El valor que elija responde a la preg
 
 ### La aprobación también requiere Editar
 
-Aprobar un documento desencadena **dos acciones** internamente: DocBits primero **guarda** el documento y luego lo pasa al estado aprobado. El paso de guardado necesita el permiso **Editar**, por lo que ambos permisos están vinculados.
+Aprobar un documento desencadena **dos acciones** internamente: DocBits primero **guarda** el documento y luego lo pasa al estado aprobado. El paso de guardado necesita el permiso **Edit**, por lo que ambos permisos están vinculados.
 
-Un usuario al que solo se le concede **Primera Aprobación** o **Segunda Aprobación** — pero *no* **Editar** — se encuentra con un error de permisos en el paso de guardado y no puede aprobar el documento.
+Un usuario al que solo se le concede **Primera Aprobación** o **Segunda Aprobación** — pero *no* **Edit** — se encuentra con un error de permisos en el paso de guardado y no puede aprobar el documento.
 
 {% hint style="warning" %}
-Siempre que conceda **Primera Aprobación** o **Segunda Aprobación**, conceda también **Editar** (y **Ver**) para el mismo tipo de documento. Un permiso de aprobación por sí solo no es suficiente.
+Siempre que conceda **Primera Aprobación** o **Segunda Aprobación**, conceda también **Edit** (y **View**) para el mismo tipo de documento. Un permiso de aprobación por sí solo no es suficiente.
 {% endhint %}
 
 ## Permisos a nivel de campo
 
-Haga clic en una fila de tipo de documento para abrir el panel **Permisos de Campo** debajo. Los campos están organizados en pestañas (por ejemplo, *Columnas de tabla*, *Detalles de la factura*, *Detalles de pago*, *Tasas e importes*). Cada campo tiene su propio nivel de acceso:
+Haga clic en una fila de tipo de documento para abrir el panel **Permisos de Campo** debajo. Los campos están organizados en pestañas (por ejemplo, *Table Columns*, *Detalles de la factura*, *Detalles de pago*, *Tasas e importes*). Cada campo tiene su propio nivel de acceso:
 
 | Nivel | Efecto en el campo |
 |-------|--------------------|
 | **Lectura/Escritura** | El campo es visible **y** editable. |
-| **Solo lectura** | El campo es visible pero **no se puede editar** (atenuado). |
+| **Read Only** | El campo es visible pero **no se puede editar** (atenuado). |
 | **Aprobación** | El campo puede editarse, pero el cambio debe pasar por un **flujo de aprobación** antes de aplicarse. |
 | **Sin acceso** | El campo está **completamente oculto** — el usuario nunca lo ve. |
 
@@ -140,7 +140,7 @@ Ahora siga un documento concreto — la factura **INV-4711**, que **Maria cargó
 * ✅ Edita el nombre del proveedor y las líneas *(Editar = Owner & Assignee — es la propietaria)*.
 * 🔒 Ve `TOTAL_AMOUNT`, pero el campo está atenuado y no puede cambiarlo *(Solo lectura)*.
 * 🚫 Nunca ve el campo `CUSTOMER_DISCOUNT` *(Sin acceso)*.
-* 🚫 El botón **Eliminar** está oculto *(Eliminar = No Access — nadie en el grupo puede eliminar)*.
+* 🚫 El botón **Delete** está oculto *(Eliminar = No Access — nadie en el grupo puede eliminar)*.
 * ✅ Puede otorgar la **primera aprobación** *(Primera Aprobación = Assignee — es la asignada)*.
 
 **Tom (mismo grupo, pero *no* cargó INV-4711 y *no* le está asignada):**
@@ -155,5 +155,5 @@ Ahora siga un documento concreto — la factura **INV-4711**, que **Maria cargó
 
 * **Everyone** abre un documento para todos los miembros del grupo; **Owner / Assignee** reduce una acción a las personas vinculadas a ese documento concreto.
 * **No Access** elimina una acción (Eliminar) u oculta un campo (`CUSTOMER_DISCOUNT`) para todo el grupo.
-* **Solo lectura** mantiene un campo visible como referencia (`TOTAL_AMOUNT`) pero impide cambios.
+* **Read Only** mantiene un campo visible como referencia (`TOTAL_AMOUNT`) pero impide cambios.
 * Dos personas del **mismo grupo** pueden tener **derechos diferentes sobre la misma factura**, únicamente por quién la cargó y a quién está asignada.

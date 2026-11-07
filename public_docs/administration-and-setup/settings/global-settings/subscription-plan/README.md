@@ -50,3 +50,16 @@ Dieser Abschnitt listet jede DocBits-App und -Funktion auf und zeigt, ob sie fü
 | **Von / Bis** | Der Zeitraum, für den die Nutzung ausgewiesen wird. |
 | **Verbrauchte Tokens** | Im Zeitraum verbrauchte Tokens. |
 | **Verbleibende Tokens** | Im Zeitraum verbleibende Tokens. |
+
+## Usage
+
+Das Panel **Usage** unter der Karte ist standardmäßig zugeklappt. Öffnen Sie es, um zu sehen, was Ihre Organisation je Zeitraum verbraucht hat.
+
+| Spalte | Beschreibung |
+| --- | --- |
+| **Type** | Die Nutzungskategorie: Document, Workflow, Advanced Workflow oder DocNet. |
+| **From / To** | Der Zeitraum, für den die Nutzung ausgewiesen wird. |
+| **Tokens used** | Im Zeitraum verbrauchte Tokens. |
+| **Remaining tokens** | Im Zeitraum verbleibende Tokens. |
+
+Wählen Sie mit **Select** den Zeitraum, den die Tabelle abdeckt, und klicken Sie auf eine Spaltenüberschrift, um die Zeilen nach dieser Spalte zu sortieren.

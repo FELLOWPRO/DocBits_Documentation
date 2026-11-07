@@ -215,6 +215,16 @@ Das definierte Regelwerk steuert direkt die Effizienz und Integrität des PO-Mat
 * [**Berechnung des PO-Einzelpreises**](calculate-po-unit-price.md) ändert, welchen Stückpreis die Regeln auf der Bestellseite vergleichen.
 * [**Toleranzeinstellungen**](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) und [**deaktivierte Status**](purchase-order-disable-statuses.md) bestimmen, wie streng der Vergleich ist und welche Bestellpositionen überhaupt angeboten werden.
 
+## Wenn der Abgleich Regeln überspringt
+
+Eine Regel braucht eine Spalte, die die extrahierte Tabelle tatsächlich hat; eine Regel, die Zeilen über die Artikelnummer paart, kann auf einer Rechnung nicht laufen, die keine druckt.
+
+Stattdessen führt der automatische Abgleich die Regeln aus, die er kann, und lässt die Zeilen der anderen ohne Treffer. Danach meldet er **Some PO match rules were not tried** und nennt jede übersprungene Regel und jede in der Tabelle fehlende Spalte. Die betroffenen Zeilen bleiben ohne Treffer, bis Sie die fehlende Spalte ergänzen oder sie von Hand zuordnen.
+
+{% hint style="info" %}
+Auch eine falsche Aktivierungsbedingung überspringt eine Regel, aber das ist ein anderer Fall: Er erscheint im Abgleichsverlauf, nicht in diesem Hinweis.
+{% endhint %}
+
 ## Fehlerbehebung
 
 | Symptom                                                   | Was zu prüfen ist                                                                                                                                                                                  |

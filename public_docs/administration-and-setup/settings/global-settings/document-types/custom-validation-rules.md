@@ -162,6 +162,8 @@ Der Wert muss einem **regulären Ausdruck** entsprechen. Der Ausdruck durchsucht
 
 Der Wert muss eine Zahl zwischen **Minimum** und **Maximum** sein (beide eingeschlossen). Füllen Sie eines oder beide aus. Ein Wert, der keine Zahl ist, schlägt fehl. Formatierte Beträge wie `1.234,56` werden verstanden.
 
+Die Grenzen selbst werden als einfache Zahlen eingegeben: ein optionales Vorzeichen und Ziffern, wobei ein Komma als Dezimaltrennzeichen akzeptiert wird (`0,5`). Tausendertrennzeichen, Exponenten und Wörter werden beim Speichern abgelehnt, mit dem Hinweis, dass die Grenze keine Zahl ist. Tragen Sie mindestens eine Grenze ein, denn ein Bereich ohne Minimum und Maximum wird nicht gespeichert, und halten Sie das Minimum gleich oder kleiner als das Maximum.
+
 <figure><img src="../../../../.gitbook/assets/validation-cvr-check-range.png" alt="Eine Range-Prüfung"><figcaption><p>Range nur mit Minimum: Mengen müssen mindestens 0.01 betragen</p></figcaption></figure>
 
 #### Compare fields: z. B. Fälligkeitsdatum ≥ Rechnungsdatum

@@ -116,7 +116,7 @@ Choose **UPPERCASE**, **lowercase**, **Title Case**, or **Capitalise first** (`u
 - Title Case: `acme gmbh` → `Acme Gmbh`.
 - Capitalise first: the reviewed server changes `aCME GMBH` → `Acme gmbh`.
 
-**Check:** abbreviations and proper names may change undesirably. For `capitalize`, the reviewed browser preview leaves the remaining letters unchanged while the server lowercases them; verify the server value separately.
+**Check:** abbreviations and proper names change more than expected. In version 11.23.7 the browser preview applies the same rule as the server: `title` and `capitalize` lower-case the remaining letters, so `ACME GMBH` becomes `Acme Gmbh` in the preview and in the stored value.
 
 ### Trim (`trim`)
 
@@ -264,11 +264,14 @@ Use an isolated test scope before enabling a rule for production documents.
 
 ## 6. Know the limits
 
-### Known preview and server differences
+### Preview and server differences
 
-**Checked on 29 October 2026, version 11.15.2:** adding prefix `INV-` to `INV-4711` produced `INV-INV-4711` in the browser preview. The independently checked server test kept `INV-4711`. Verify repeated execution server-side, and check the behavior of your deployed version.
+Two preview differences were observed in earlier builds and are fixed in the delivered version 11.23.7.
 
-The `capitalize` browser/server difference is described under Change case. A correct preview alone does not establish the complete save-time result.
+- **Affix:** in version 11.15.2, adding prefix `INV-` to `INV-4711` produced `INV-INV-4711` in the browser preview, while the server kept `INV-4711`. The preview now keeps a value that already carries the prefix or suffix, so both show `INV-4711`. Strip steps still remove one occurrence per run.
+- **Change case:** the browser preview of `capitalize` used to leave the remaining letters unchanged, while the server lower-cased them. It now lower-cases them as well, so `title` and `capitalize` agree with the server.
+
+A correct preview does not establish the stored result: save a test document and check the value as described in the verification steps above.
 
 ### What these rules do not establish
 

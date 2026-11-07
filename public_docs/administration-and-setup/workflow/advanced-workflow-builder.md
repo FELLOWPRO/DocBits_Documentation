@@ -8,11 +8,7 @@ Inizia con questa presentazione di 1:48, poi segui le istruzioni dettagliate di 
 
 {% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/it.mp4" %}
 
-[Player con sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/it.html) · [Sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/it.vtt) · [Testi sullo schermo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/it.txt) · 1:48 · Full HD
-
 [Vedi la pagina della funzionalità e l’esempio di fattura](../../feature-videos/advanced-workflow.md)
-
-Il video combina schede animate e registrazioni reali dell’interfaccia Dev in inglese. Include musica e testi in italiano, senza voce narrante. Le azioni di test impostano il campo di esempio `approval_route` su `Approval` o `Standard`; un processo completo di approvazione umana richiede azioni aziendali dedicate. Questa dimostrazione non è stata salvata né attivata. Le animazioni delle unioni illustrano i risultati richiesti, non i tempi di esecuzione. Verifica la raggiungibilità e l’intero percorso del documento; un test parziale riuscito non dimostra il funzionamento in produzione.
 
 ## Video: percorsi delle fatture in DocBits
 

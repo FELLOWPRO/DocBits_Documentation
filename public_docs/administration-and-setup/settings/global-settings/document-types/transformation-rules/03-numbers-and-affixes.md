@@ -1,6 +1,6 @@
 # Shaping Numbers: Padding, Truncating, Prefix and Suffix
 
-> Known preview limitation (checked on 29 October 2026, version 11.15.2): when adding the prefix `INV-`, the preview incorrectly changes `INV-4711` to `INV-INV-4711`. The independently checked server test retains `INV-4711`. Check repeated execution with a server test as well; a correct preview result alone does not prove the complete save-time execution.
+> Preview note: version 11.15.2 turned `INV-4711` into `INV-INV-4711` when you added the prefix `INV-`. The delivered version 11.23.7 keeps `INV-4711`, because the preview leaves a value that already carries the prefix or suffix unchanged. Check repeated execution with a server test as well; a correct preview alone does not prove the complete save-time execution.
 
 [Back to the full practice overview](complete-practical-guide.md)
 

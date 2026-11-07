@@ -4,11 +4,11 @@
 
 Van OCR/IDP naar businesslogica, goedkeuringen en Advanced Workflows.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/nl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/nl.mp4" %}
 
-*90 seconden · Productinterface in het Engels · Historische scènes gemaakt met AI*
+*90 seconden · FullHD (1920 × 1080) · Van OCR en IDP naar volledige automatisering*
 
-[Lees transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/nl-transcript.md) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/nl.mp4)
+[Video met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/nl.html) · [Lees transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/nl-transcript.md) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/nl.mp4)
 
 Welkom bij DocBits
 

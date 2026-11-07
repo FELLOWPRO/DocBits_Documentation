@@ -2,6 +2,8 @@
 
 ## Overview and Basics
 
+* [Feature videos](feature-videos/README.md)
+  * [DocBits Advanced Workflow](feature-videos/advanced-workflow.md)
 * [DocBits](README.md)
   * [Key Features of DocBits](overview-and-basics/readme/key-features-of-docbits.md)
 * [About our training videos](overview-and-basics/about-training-videos.md)

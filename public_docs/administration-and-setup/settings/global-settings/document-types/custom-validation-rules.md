@@ -14,32 +14,32 @@
 
 检查失败时，DocBits 会在**验证界面**上标记该字段或单元格，并显示您设置的消息——与内置检查完全一样。严重级别为 **错误** 时，必须修复问题后才能验证文档；为 **警告** 时，用户只会看到提示。
 
-规则按**文档类型**定义，并在该类型的每份文档上运行：处理期间以及每次保存文档时都会运行。
+规则按**Document Types**定义，并在该类型的每份文档上运行：处理期间以及每次保存文档时都会运行。
 
 ### 可解决的问题
 
 | 业务需求 | 不使用自定义规则 | 使用自定义规则 |
 | --- | --- | --- |
-| 超过 250 EUR 的德国发票必须显示供应商税号 | 需要脚本，或者要求用户牢记 | 在 Supplier Tax ID 上设置 **必填**，*应用条件*为原产地是 DE 且总金额大于 250 |
+| 超过 250 EUR 的德国发票必须显示供应商税号 | 需要脚本，或者要求用户牢记 | 在 Supplier Tax ID 上设置 **Required**，*应用条件*为原产地是 DE 且总金额大于 250 |
 | 供应商的发票编号始终采用 `INV-123456` 格式 | 错别字会进入 ERP | 为该供应商的 Invoice Number 设置 **图案** `^INV-\d{6}$` |
 | 每个商品行的数量都必须大于零 | 数量为 0 的行会被导出 | 在 Quantity 列设置 **范围**（最小值为 0.01） |
 | 到期日不能早于发票日期 | 可能导致错误的付款批次 | **比较字段**：Due Date 不早于 Invoice Date |
 | 各行金额的总和必须等于净额 | 只能使用固定的内置检查 | **公式** `sum(row.NET_AMOUNT) == header.total_net_amount`，并设置自定义容差 |
-| 只允许使用 ERP 认可的币种 | ERP 中会出现导出错误 | 在 Currency 上设置 **值列表** |
+| 只允许使用 ERP 认可的币种 | ERP 中会出现导出错误 | 在 Currency 上设置 **List of Values** |
 | 提醒用户注意异常值，但不阻止他们继续操作 | 无法实现 | 将任意规则的严重级别设为 **警告** |
 
 ## 启用自定义验证规则
 
-自定义验证规则按**文档类型**启用。没有面向整个组织的开关。
+自定义验证规则按**Document Types**启用。没有面向整个组织的开关。
 
-1. 前往 **设置 → 文档处理 → 文档类型**。
-2. 在文档类型卡片上，点击 **设置**（齿轮）图标。
+1. 前往 **Settings → Document Processing → Document Types**。
+2. 在文档类型卡片上，点击 **Settings**（齿轮）图标。
 3. 打开 **自定义验证规则** 区域并开启开关。
 4. 点击 **管理验证规则** 打开规则列表。
 
 <figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="文档类型其他设置中的规则开关"><figcaption><p>Manage Layouts、Custom Validation Rules 和 Transformation Rules 的开关</p></figcaption></figure>
 
-之后，文档类型卡片还会显示 **验证规则** 链接，以及用于查看执行日志的 **日志** 链接。
+之后，文档类型卡片还会显示 **Validation Rules** 链接，以及用于查看执行日志的 **日志** 链接。
 
 <figure><img src="../../../../.gitbook/assets/doc-types-rules-links.png" alt="带有 Validation Rules 链接的文档类型卡片"><figcaption><p>文档类型卡片上的链接</p></figcaption></figure>
 
@@ -49,11 +49,11 @@
 
 ## 规则列表
 
-**Document Types →（文档类型）→ Validation Rules**会列出该文档类型的所有规则。
+**Document Types →（Document Types）→ Validation Rules**会列出该Document Types的所有规则。
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-zh.png" alt="验证规则管理；已配置的名称已隐藏。 表格类别在界面中误译为“桌子”，部分相对时间仍为德语；实际含义是数据表格。"><figcaption><p>验证规则管理；已配置的名称已隐藏。 表格类别在界面中误译为“桌子”，部分相对时间仍为德语；实际含义是数据表格。</p></figcaption></figure>
 
-每张卡片都会显示规则名称和说明，以及表示其**级别**（Header / Line / Table）、**严重级别**（Error / Warning）、错误所关联的**字段**和**来源**的徽标。使用右侧的开关可启用或停用规则；使用 **⋮** 菜单可编辑、复制或删除规则。可按级别（**All / Header / Line / Table**）和状态（**All / Active / Inactive**）筛选列表，也可以搜索规则。
+每张卡片都会显示规则名称和说明，以及表示其**级别**（Header / Line / Table）、**严重级别**（Error / Warning）、错误所关联的**Fields**和**来源**的徽标。使用右侧的开关可启用或停用规则；使用 **⋮** 菜单可编辑、复制或删除规则。可按级别（**All / Header / Line / Table**）和状态（**All / Active / Inactive**）筛选列表，也可以搜索规则。
 
 ### System default、Customized 和 Custom 规则
 
@@ -61,13 +61,13 @@
 | --- | --- | --- |
 | **系统默认设置** | DocBits 为所有组织提供的规则。 | 不能直接编辑——构建器会显示“This is a system default rule and cannot be edited.”。点击 **定制** 可创建可编辑副本，也可以关闭该规则，使其不再应用于您的组织。 |
 | **定制** | 已由您的组织修改或关闭的系统默认规则。 | 可以像编辑自己的规则一样编辑。**重置为默认值** 会删除您的副本并恢复原始规则。 |
-| **自定义** | 您的组织创建的规则。 | 可以编辑、**复制** 或 **删除**。 |
+| **Custom** | 您的组织创建的规则。 | 可以编辑、**Duplicate** 或 **Delete**。 |
 
 对系统默认规则所做的更改不会影响其他组织。
 
 ## 创建规则
 
-点击 **新规**。构建器分为三个步骤。右上角有 **测试规则** 和 **保存**。
+点击 **新规**。构建器分为三个步骤。右上角有 **Test rule** 和 **Save**。
 
 ### 步骤 1 — 名称和范围
 
@@ -77,8 +77,8 @@
 | --- | --- |
 | **规则级别** | 规则检查的内容和显示错误的位置——请参阅[规则级别](#rule-levels)。 |
 | **严重程度** | **错误** 会将字段标记为无效并阻止验证。**警告** 会显示消息，但不会阻止验证。 |
-| **规则名称** | 显示在列表、日志中以及供管理员查看。名称应能描述规则（例如“德国发票必须填写供应商税号”）。 |
-| **规则键** | 根据名称生成的技术键。之后重命名规则时，该键会保持不变。首次保存前，点击铅笔图标可以自行选择规则键；之后规则键将固定。 |
+| **Rule Name** | 显示在列表、日志中以及供管理员查看。名称应能描述规则（例如“德国发票必须填写供应商税号”）。 |
+| **Rule key** | 根据名称生成的技术键。之后重命名规则时，该键会保持不变。首次保存前，点击铅笔图标可以自行选择规则键；之后规则键将固定。 |
 | **描述** | 可选内容，用于向其他管理员说明规则。 |
 | **表名** | *仅适用于表格行。* 要检查其行的表格，例如 `INVOICE_TABLE`。 |
 | **Attach error to field / column** | 在验证界面上显示错误的字段（对于表格行规则，则是列）。 |
@@ -175,10 +175,10 @@
 
 #### List of Values — 从命名 LOV 中选择
 
-与 *Allowed values* 类似，但值来自在 **Settings › List of Values** 下管理的共享**值列表**。选择相应列表即可，无需重新输入值；列表更改后（经过短暂的缓存延迟），规则会使用新值。系统只会检查列表项的值，不会检查其标签。
+与 *Allowed values* 类似，但值来自在 **Settings › List of Values** 下管理的共享**List of Values**。选择相应列表即可，无需重新输入值；列表更改后（经过短暂的缓存延迟），规则会使用新值。系统只会检查列表项的值，不会检查其标签。
 
 {% hint style="info" %}
-除 **必填** 外，其他检查在**字段为空时均视为通过**。如果发票没有采购订单，Purchase Order 上的 Pattern 规则不会报错。如果空值也有问题，请添加 Required 规则，或通过 *Applies when … is not empty* 限定规则的适用范围。
+除 **Required** 外，其他检查在**字段为空时均视为通过**。如果发票没有采购订单，Purchase Order 上的 Pattern 规则不会报错。如果空值也有问题，请添加 Required 规则，或通过 *Applies when … is not empty* 限定规则的适用范围。
 {% endhint %}
 
 #### 错误消息和错误代码
@@ -188,7 +188,7 @@
 
 ## 测试规则 <a id="test-rule"></a>
 
-点击 **测试规则**，即可针对某份文档运行当前版本的规则，无论该规则是否已保存。输入 **文档 ID**，或者切换到 **通过文档 JSON** 并粘贴提取的数据。**不会保存任何内容**，也不会更改文档。
+点击 **Test rule**，即可针对某份文档运行当前版本的规则，无论该规则是否已保存。输入 **文档 ID**，或者切换到 **通过文档 JSON** 并粘贴提取的数据。**不会保存任何内容**，也不会更改文档。
 
 测试结果分为以下三种：
 
@@ -219,7 +219,7 @@
 
 每条规则都可以记录自己的每次评估。打开该文档类型的 **规则执行日志** 页面：页头显示文档类型，右上角的刷新图标重新加载列表。
 
-**查找** 决定搜索依据，默认是 **规则键**，在该字段旁的输入框中填写要搜索的值。按文档搜索时，**规则类型** 为必填项。可用 **结果**、**已执行**、**起始日期** 和 **迄今为止** 缩小结果范围。
+**查找** 决定搜索依据，默认是 **Rule key**，在该字段旁的输入框中填写要搜索的值。按文档搜索时，**规则类型** 为必填项。可用 **结果**、**已执行**、**起始日期** 和 **迄今为止** 缩小结果范围。
 
 <figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-zh.png" alt="规则执行日志"><figcaption><p>规则执行日志页面：上方是筛选条件，下方每次评估对应一行。在开始搜索之前，表格会提示应输入什么。</p></figcaption></figure>
 
@@ -229,10 +229,10 @@
 
 ## 示例 <a id="recipes"></a>
 
-复制以下规则并以此为起点。字段和列键对应标准 **发票** 文档类型；请根据您的文档类型进行调整。
+复制以下规则并以此为起点。字段和列键对应标准 **Invoice** 文档类型；请根据您的文档类型进行调整。
 
 **1. 超过 250 EUR 的德国发票必须填写供应商税号**
-Header field · Error · 关联到 *Supplier Tax ID* · **全部** 应用条件：*Document Origin* 为 *Deutsch*，*Total Amount* 大于 *250* · 选择 **必填** 检查 · 消息“Supplier tax ID is missing. German invoices over 250 EUR must show it.” · 代码 `REQUIRED_CONDITIONAL`。
+Header field · Error · 关联到 *Supplier Tax ID* · **全部** 应用条件：*Document Origin* 为 *Deutsch*，*Total Amount* 大于 *250* · 选择 **Required** 检查 · 消息“Supplier tax ID is missing. German invoices over 250 EUR must show it.” · 代码 `REQUIRED_CONDITIONAL`。
 
 **2. 表头金额加总一致**（替代内置检查）
 Header field · Error · 关联到 *Total Amount* · 始终适用 · **公式** `header.total_amount == header.total_net_amount + header.total_tax_amount`，容差 `0.01` · 消息“Total {actual} does not equal net plus tax ({expected}).”
@@ -256,10 +256,10 @@ Header field · Error · *Due Date* · 始终适用 · **比较字段**：Due Da
 Header field · Error · *Invoice Date* · 始终适用 · **比较字段**：Invoice Date *不晚于（≤）* 今天。
 
 **9. 仅允许使用已批准的币种（仅提示）**
-Header field · **警告** · *Currency* · 始终适用 · **值列表** *approved_currencies* · 代码 `VALUE_NOT_ALLOWED`。
+Header field · **警告** · *Currency* · 始终适用 · **List of Values** *approved_currencies* · 代码 `VALUE_NOT_ALLOWED`。
 
 **10. 金额超过 5,000 时必须填写采购订单**
-Header field · Error · *Purchase Order* · 应用条件为 *Total Amount* 大于 *5000* · **必填**。
+Header field · Error · *Purchase Order* · 应用条件为 *Total Amount* 大于 *5000* · **Required**。
 
 ## 最佳实践
 
@@ -274,8 +274,8 @@ Header field · Error · *Purchase Order* · 应用条件为 *Total Amount* 大�
 
 | 症状 | 检查项 |
 | --- | --- |
-| 规则从未引发错误 | 是否已为该文档类型启用此功能，且规则处于 **积极的** 状态？使用 **测试规则** 测试该文档：“skipped”表示 *Applies when* 条件不成立。 |
-| 空字段未报告错误 | 只有 **必填** 会报告空值。请添加 Required 规则。 |
+| 规则从未引发错误 | 是否已为该文档类型启用此功能，且规则处于 **积极的** 状态？使用 **Test rule** 测试该文档：“skipped”表示 *Applies when* 条件不成立。 |
+| 空字段未报告错误 | 只有 **Required** 会报告空值。请添加 Required 规则。 |
 | 内置总额检查消失 | 启用自定义规则时这是预期行为。请将检查重新创建为 Formula 规则（示例 2 和 3）。 |
 | 修改规则后，文档没有受到影响 | 文档会在下次保存时重新检查。请保存或重新处理该文档。 |
 | Pattern 匹配了不应匹配的值 | Pattern 会在值中搜索。请使用 `^` 和 `$` 锚定表达式。 |

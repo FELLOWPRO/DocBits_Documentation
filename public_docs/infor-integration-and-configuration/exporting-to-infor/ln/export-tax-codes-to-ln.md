@@ -40,7 +40,7 @@
 
 ### **步骤 2：在 DocBits 中添加字段**
 
-1.  前往 **设置** -> **文档处理** -> **文档类型**。
+1.  前往 **Settings** -> **Document Processing** -> **Document Types**。
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-zh.png" alt="中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。"><figcaption><p>中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。</p></figcaption></figure>
 2.  在要添加字段的文档类型对应的菜单中选择 **Fields**。
@@ -62,7 +62,7 @@
 
 ### **步骤 3：编辑布局**
 
-1.  前往 **设置** -> **文档处理** -> **文档类型**。
+1.  前往 **Settings** -> **Document Processing** -> **Document Types**。
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-zh.png" alt="中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。"><figcaption><p>中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。</p></figcaption></figure>
 2.  打开要编辑的文档类型对应的 **Edit Layout** 菜单。
@@ -130,7 +130,7 @@
 
 ### **步骤 2：在 DocBits 中添加字段**
 
-1.  前往 **设置** -> **文档处理** -> **文档类型**。
+1.  前往 **Settings** -> **Document Processing** -> **Document Types**。
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-zh.png" alt="中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。"><figcaption><p>中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。</p></figcaption></figure>
 2.  在要添加字段的文档类型对应的菜单中选择 **Fields**。
@@ -152,7 +152,7 @@
 
 ### **步骤 3：编辑布局**
 
-1.  前往 **设置** -> **文档处理** -> **文档类型**。
+1.  前往 **Settings** -> **Document Processing** -> **Document Types**。
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-zh.png" alt="中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。"><figcaption><p>中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。</p></figcaption></figure>
 2.  打开要编辑的文档类型对应的 **Edit Layout** 菜单。

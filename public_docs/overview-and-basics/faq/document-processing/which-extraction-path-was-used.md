@@ -9,7 +9,7 @@
 | 看到的内容 | 路径 |
 |---|---|
 | **Extracted table** 选项卡中的行 | 基于规则的路径。该供应商已有经过训练的表格；这些行来自已保存的坐标规则，未使用 AI（标记为 *Use AI* 的列除外）。 |
-| **AI Extracted table** 选项卡中的行，以及下方的 *Tags* 字段 | AI 路径。没有匹配的已保存规则；AI 表格提取生成了这些行，使用的是组织的 AI 层级，或在 *More settings* → *Supplier-Based AI Model* 中为该供应商设置的层级。 |
+| **AI Extracted table** 选项卡中的行，以及下方的 *Tags* 字段 | AI 路径。没有匹配的已保存规则；AI 表格提取生成了这些行，使用的是组织的 AI 层级，或在 *More settings* → *Supplier-Based AI Model* 中为该供应商Settings的层级。 |
 | AI 选项卡上的 *AI table not found* 提示 | AI 路径已运行，但没有为此文档返回内容。 |
 | 没有任何表格选项卡 | 组织已关闭两项表格设置，因此没有任何内容提取表格。 |
 | *No line items yet* | 路径已运行，但未找到行（没有可读取的文本、页面上没有表格，或规则与此版式不匹配）。 |
@@ -19,8 +19,8 @@
 ## 2. 检查供应商的配置
 
 * **Settings → Document Processing → Classification and Extraction → AI Model**：选择器下方的表格会列出所有已保存模型或训练数据的供应商。列表中带有 *training data* 的供应商已有已保存的规则；*reset the training data* 会移除这些规则。
-* **Settings → Document Processing → OCR Settings**：*Use E-Text if available* 和 *Use AI data for tables* 会改变提取过程所读取的文本。供应商可以在验证界面的 *More settings* 中覆盖 E-Text 设置。
-* **设置 → 文档处理 → 文档类型 → 表格列**：此处设有隐藏、必填和 *Use AI* 标记。隐藏列永远不会填充；即使供应商已有规则，标记为 *Use AI* 的列也会由 AI 填充。
+* **Settings → Document Processing → OCR Settings**：*Use E-Text if available* 和 *Use AI data for tables* 会改变提取过程所读取的文本。供应商可以在验证界面的 *More settings* 中覆盖 E-Text Settings。
+* **Settings → Document Processing → Document Types → Table Columns**：此处设有隐藏、必填和 *Use AI* 标记。隐藏列永远不会填充；即使供应商已有规则，标记为 *Use AI* 的列也会由 AI 填充。
 
 ## 3. 不使用界面进行复现（API / MCP）
 

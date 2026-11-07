@@ -6,13 +6,13 @@
 
 单点登录（SSO）方式——Google、Microsoft、SAML——**不受此要求限制**：其身份提供方已强制执行自己的多重身份验证（MFA），因此此要求仅影响密码登录。
 
-此设置位于 **设置 → 组织与访问 → 公司信息 → 双因素身份验证**，仅组织管理员可以使用。
+此Settings位于 **Settings → Organization & Access → Company Information → 双因素身份验证**，仅组织管理员可以使用。
 
 ## 为组织要求启用 MFA
 
-1. 前往 **设置 → 组织与访问 → 公司信息**。
+1. 前往 **Settings → Organization & Access → Company Information**。
 2. 打开 **双因素身份验证** 部分。
-3. 开启 **要求所有成员启用双因素身份验证**，然后点击 **保存**。
+3. 开启 **要求所有成员启用双因素身份验证**，然后点击 **Save**。
 
 <figure><img src="../../../../.gitbook/assets/prior-t001-zh.png" alt="组织的双因素身份验证要求。 “节省”按钮实际表示保存；本例未更改 MFA 要求。"><figcaption><p>组织的双因素身份验证要求。 “节省”按钮实际表示保存；本例未更改 MFA 要求。</p></figcaption></figure>
 

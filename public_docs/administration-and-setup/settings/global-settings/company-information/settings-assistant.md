@@ -11,12 +11,12 @@
 ## 谁可以使用
 
 * **组织管理员**可以为整个组织启用或关闭该助手。
-* 启用后，所有能够打开**设置**的管理员都可以自行显示或隐藏面板。
+* 启用后，所有能够打开**Settings**的管理员都可以自行显示或隐藏面板。
 * 更改操作（应用建议、关闭或删除导入连接、创建规则）仅限**组织管理员**。其他用户会看到消息 *Available to administrators only.*（仅管理员可用）。
 
 ## 启用助手
 
-1. 前往 **设置 → 组织与访问 → 公司信息**。页面标题显示为 **Company Settings**。
+1. 前往 **Settings → Organization & Access → Company Information**。页面标题显示为 **Company Settings**。
 2. 打开 **Assistants** 部分。
 3. 开启 **Enable the settings assistant**。
 
@@ -32,7 +32,7 @@
 
 在设置区域的每个页面上，你都可以在设置搜索框旁找到一个小型**神灯按钮**。点击即可**显示**或**隐藏**助手。
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings.png" alt="设置中的 Company Information 页面，左侧为设置导航，中间为页面内容，右侧为设置助手面板"><figcaption><p>在每个设置页面上，助手都位于<strong>右侧</strong>：左侧是导航，中间是页面内容，旁边是助手。此处显示的是 <strong>Company Settings → Company Information</strong>。用于显示或隐藏助手的按钮是导航顶部 <strong>Search Settings</strong> 旁的灯泡图标。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings.png" alt="Settings中的 Company Information 页面，左侧为Settings导航，中间为页面内容，右侧为Settings助手面板"><figcaption><p>在每个Settings页面上，助手都位于<strong>右侧</strong>：左侧是导航，中间是页面内容，旁边是助手。此处显示的是 <strong>Company Settings → Company Information</strong>。用于显示或隐藏助手的按钮是导航顶部 <strong>Search Settings</strong> 旁的灯泡图标。</p></figcaption></figure>
 
 * 面板会按用户记住你的选择，因此你下次返回时会保持打开状态。
 * 在宽度为 1280 像素及以上的屏幕上，面板会显示在页面旁边。你可以拖动面板边缘调整宽度。
@@ -48,7 +48,7 @@
 
 | 问题 | 原因和解决方案 |
 | --- | --- |
-| 设置区域中没有神灯按钮 | 组织开关处于关闭状态。组织管理员可在 **Company Information → Assistants** 中启用该功能 |
+| Settings区域中没有神灯按钮 | 组织开关处于关闭状态。组织管理员可在 **Company Information → Assistants** 中启用该功能 |
 | Company Information 中缺少 **Assistants** 部分 | 只有组织管理员可以看到该部分 |
 | 面板显示 **The assistant is being set up** | 该功能尚未在你的环境中开放 |
 | 面板已显示，但回答提示 *Available to administrators only.* | 你的账户不是组织管理员 |

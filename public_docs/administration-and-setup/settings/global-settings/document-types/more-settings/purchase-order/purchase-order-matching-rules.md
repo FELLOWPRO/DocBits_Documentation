@@ -15,15 +15,15 @@
 此配置页面用于定义和管理规则，这些规则决定如何将采购订单行项目与相应的收到的文档（发票、订单确认）进行匹配。
 
 {% hint style="info" %}
-**前提条件：**只有在文档类型中启用了 **PO match server side**，匹配规则才会生效（设置 → 文档类型 → 更多设置 → 采购订单）。关闭此开关后，DocBits 会使用内置匹配器（数量、单价、项目编号、采购订单编号）进行匹配，并忽略规则集。
+**前提条件：**只有在Document Types中启用了 **PO match server side**，匹配规则才会生效（Settings → Document Types → More Settings → 采购订单）。关闭此开关后，DocBits 会使用内置匹配器（数量、单价、项目编号、采购订单编号）进行匹配，并忽略规则集。
 {% endhint %}
 
 ***
 
 ## 如何访问
 
-1. 前往 **设置** → **文档处理** → **文档类型**，选择文档类型，然后点击 **更多设置**。
-2. 在 **采购订单** 卡片中启用 **PO match server side**。
+1. 前往 **Settings** → **Document Processing** → **Document Types**，选择Document Types，然后点击 **More Settings**。
+2. 在 **Purchase Order** 卡片中启用 **PO match server side**。
 3. 点击开关旁边的 **Configure PO Matching Rules**。
 
 <figure><img src="../../../../../../.gitbook/assets/doc-type-settings-po-options.png" alt="显示 PO match server side 和 Configure PO Matching Rules 的采购订单卡片"><figcaption><p>采购订单卡片。<strong>Configure PO Matching Rules</strong> 位于 <strong>PO match server side</strong> 旁边。</p></figcaption></figure>

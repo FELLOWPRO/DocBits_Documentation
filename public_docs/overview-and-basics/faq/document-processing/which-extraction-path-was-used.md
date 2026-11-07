@@ -18,9 +18,9 @@ Pola nagłówka mają własną etykietę źródła obok wartości: *Extracted us
 
 ## 2. Sprawdź konfigurację dostawcy
 
-* **Ustawienia → Przetwarzanie dokumentów → Klasyfikacja i ekstrakcja → Model AI**: tabela pod selektorem wymienia każdego dostawcę z zapisanym modelem lub szkoleniem. Dostawca na tej liście z *danymi szkoleniowymi* ma zapisane reguły; *zresetowanie danych szkoleniowych* je usuwa.
-* **Ustawienia → Przetwarzanie dokumentów → Ustawienia OCR**: opcje *Use E-Text if available* i *Use AI data for tables* zmieniają tekst, który widzi ekstrakcja. Dostawca może nadpisać E-Text w *More settings* na ekranie walidacji.
-* **Ustawienia → Przetwarzanie dokumentów → Typy dokumentów → Kolumny tabeli**: flagi ukryta, wymagana i *Use AI*. Ukryta kolumna nigdy nie jest wypełniana; kolumnę *Use AI* wypełnia AI nawet u dostawców z regułami.
+* **Settings → Document Processing → Classification and Extraction → Model AI**: tabela pod selektorem wymienia każdego dostawcę z zapisanym modelem lub szkoleniem. Dostawca na tej liście z *danymi szkoleniowymi* ma zapisane reguły; *zresetowanie danych szkoleniowych* je usuwa.
+* **Settings → Document Processing → OCR Settings**: opcje *Use E-Text if available* i *Use AI data for tables* zmieniają tekst, który widzi ekstrakcja. Dostawca może nadpisać E-Text w *More settings* na ekranie walidacji.
+* **Settings → Document Processing → Document Types → Table Columns**: flagi ukryta, wymagana i *Use AI*. Ukryta kolumna nigdy nie jest wypełniana; kolumnę *Use AI* wypełnia AI nawet u dostawców z regułami.
 
 ## 3. Odtwórz bez interfejsu (API / MCP)
 
@@ -39,7 +39,7 @@ Narzędzia DocBits MCP są opisane na stronie DocBits MCP w angielskiej wersji d
 
 ## 4. Przeczytaj logi
 
-**Ustawienia → Ustawienia logów** (Activity Logging) pokazuje zdarzenia wszystkich usług. W przypadku pytania o tabelę:
+**Settings → Settings logów** (Activity Logging) pokazuje zdarzenia wszystkich usług. W przypadku pytania o tabelę:
 
 * Filtruj po nazwie pliku lub ID dokumentu w polu *Search logs*.
 * Użyj filtra *Service*: sama ekstrakcja działa w usłudze ekstrakcji i w workerach Celery, a nie w usłudze `api`. Jeśli widzisz tylko wiersze `api`, rozszerz filtr.

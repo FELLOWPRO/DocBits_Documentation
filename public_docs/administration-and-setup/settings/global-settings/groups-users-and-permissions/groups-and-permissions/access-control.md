@@ -19,7 +19,7 @@ Każdą grupę można skonfigurować pod kątem:
 ## Aktywacja
 
 1. Przejdź do **Ustawień**.
-2. Wybierz **Przetwarzanie Dokumentów**.
+2. Wybierz **Document Processing**.
 3. Wybierz **Moduł.**
 4. Aktywuj **Kontrolę Dostępu**, włączając przełącznik.
 
@@ -28,7 +28,7 @@ Każdą grupę można skonfigurować pod kątem:
 ## Otwieranie Kontroli Dostępu grupy
 
 1. Przejdź do **Ustawień**.
-2. W sekcji **Organizacja i dostęp** wybierz **Grupy i uprawnienia**.
+2. W sekcji **Organization & Access** wybierz **Grupy i uprawnienia**.
 3. Aby zarządzać uprawnieniami grupy (np. PROCUREMENT\_DIRECTOR), kliknij trzy kropki po prawej stronie.
 4. Wybierz **Zarządzaj Kontrolą Dostępu**.
 
@@ -52,7 +52,7 @@ Pierwsza kolumna to przełącznik **Włączone / Wyłączone**. Wyłącz go, a g
 | Akcja | Określa, czy grupa może… |
 |-------|--------------------------|
 | **Lista** | widzieć typ dokumentu na liście pulpitu. |
-| **Podgląd** | otworzyć dokument i zobaczyć jego szczegóły. |
+| **Preview** | otworzyć dokument i zobaczyć jego szczegóły. |
 | **Edycja** | zmieniać wartości pól dokumentu. |
 | **Usuwanie** | usunąć dokument. |
 | **Aktualizacja masowa** | zastosować masową aktualizację wielu dokumentów naraz. |
@@ -86,17 +86,17 @@ Zatwierdzenie dokumentu uruchamia w tle **dwie akcje**: DocBits najpierw **zapis
 Użytkownik, któremu przyznano wyłącznie **Pierwsze Zatwierdzenie** lub **Drugie Zatwierdzenie** — ale *nie* **Edycję** — napotyka błąd uprawnień na kroku zapisu i nie może zatwierdzić dokumentu.
 
 {% hint style="warning" %}
-Za każdym razem, gdy przyznajesz **Pierwsze Zatwierdzenie** lub **Drugie Zatwierdzenie**, przyznaj również **Edycję** (i **Podgląd**) dla tego samego typu dokumentu. Samo uprawnienie do zatwierdzania nie wystarczy.
+Za każdym razem, gdy przyznajesz **Pierwsze Zatwierdzenie** lub **Drugie Zatwierdzenie**, przyznaj również **Edycję** (i **Preview**) dla tego samego typu dokumentu. Samo uprawnienie do zatwierdzania nie wystarczy.
 {% endhint %}
 
 ## Uprawnienia na poziomie pola
 
-Kliknij wiersz typu dokumentu, aby otworzyć poniżej panel **Uprawnienia Pól**. Pola są podzielone na karty (np. *Kolumny tabeli*, *Szczegóły faktury*, *Szczegóły płatności*, *Podatki i kwoty*). Każde pole ma własny poziom dostępu:
+Kliknij wiersz typu dokumentu, aby otworzyć poniżej panel **Uprawnienia Pól**. Pola są podzielone na karty (np. *Table Columns*, *Szczegóły faktury*, *Szczegóły płatności*, *Podatki i kwoty*). Każde pole ma własny poziom dostępu:
 
 | Poziom | Wpływ na pole |
 |--------|---------------|
 | **Odczyt/Zapis** | Pole jest widoczne **i** edytowalne. |
-| **Tylko odczyt** | Pole jest widoczne, ale **nie można go edytować** (wyszarzone). |
+| **Read Only** | Pole jest widoczne, ale **nie można go edytować** (wyszarzone). |
 | **Zatwierdzenie** | Pole można edytować, ale zmiana musi przejść przez **przepływ zatwierdzania** przed zastosowaniem. |
 | **Brak dostępu** | Pole jest **całkowicie ukryte** — użytkownik nigdy go nie widzi. |
 
@@ -140,7 +140,7 @@ Prześledź teraz jeden konkretny dokument — fakturę **INV-4711**, którą **
 * ✅ Edytuje nazwę dostawcy i pozycje *(Edycja = Owner & Assignee — jest właścicielką)*.
 * 🔒 Widzi `TOTAL_AMOUNT`, ale pole jest wyszarzone i nie może go zmienić *(Tylko odczyt)*.
 * 🚫 W ogóle nie widzi pola `CUSTOMER_DISCOUNT` *(Brak dostępu)*.
-* 🚫 Przycisk **Usuń** jest ukryty *(Usuwanie = No Access — nikt w grupie nie może usuwać)*.
+* 🚫 Przycisk **Delete** jest ukryty *(Usuwanie = No Access — nikt w grupie nie może usuwać)*.
 * ✅ Może udzielić **pierwszego zatwierdzenia** *(Pierwsze Zatwierdzenie = Assignee — jest przypisana)*.
 
 **Tom (ta sama grupa, ale *nie* przesłał INV-4711 i *nie* jest do niego przypisana):**
@@ -155,5 +155,5 @@ Prześledź teraz jeden konkretny dokument — fakturę **INV-4711**, którą **
 
 * **Everyone** otwiera dokument dla wszystkich członków grupy; **Owner / Assignee** zawęża akcję do osób powiązanych z tym konkretnym dokumentem.
 * **No Access** usuwa akcję (Usuwanie) lub ukrywa pole (`CUSTOMER_DISCOUNT`) dla całej grupy.
-* **Tylko odczyt** utrzymuje pole widoczne jako odniesienie (`TOTAL_AMOUNT`), ale uniemożliwia zmiany.
+* **Read Only** utrzymuje pole widoczne jako odniesienie (`TOTAL_AMOUNT`), ale uniemożliwia zmiany.
 * Dwie osoby w **tej samej grupie** mogą mieć **różne prawa do tej samej faktury**, wyłącznie ze względu na to, kto ją przesłał i do kogo jest przypisana.

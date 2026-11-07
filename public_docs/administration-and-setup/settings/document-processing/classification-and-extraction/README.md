@@ -23,7 +23,7 @@ Przewodnik diagnostyczny [Która ścieżka ekstrakcji została wykorzystana?](..
 
 ## Przegląd
 
-W ustawieniach **Klasyfikacja i ekstrakcja** możesz:
+W ustawieniach **Classification and Extraction** możesz:
 
 * Włącz **Podział dokumentu** w oparciu o kody QR
 * Skonfiguruj **formatowanie kwoty**
@@ -36,8 +36,8 @@ Na tej stronie znajduje się szczegółowy opis wszystkich dostępnych ustawień
 
 ## **Dostęp do ustawień klasyfikacji i wyodrębniania**
 
-Aby uzyskać dostęp do ustawień **Klasyfikacja i wyodrębnianie**, przejdź do:\
-**Ustawienia → Przetwarzanie dokumentu → Klasyfikacja i wyodrębnianie**
+Aby uzyskać dostęp do ustawień **Classification and Extraction**, przejdź do:\
+**Settings → Document Processing → Classification and Extraction**
 
 
 ## Document Splitting
@@ -83,7 +83,7 @@ W sekcji **Formatowanie kwoty** masz dwie opcje:
 {% hint style="info" %}
 **Warunki wstępne działającej ekstrakcji tabeli**
 
-* Typ dokumentu ma **kolumny tabeli** (Ustawienia → Przetwarzanie dokumentów → Typy dokumentów → [Kolumny tabeli](../../global-settings/document-types/table-columns/README.md)). Bez kolumn nie ma do czego wyodrębniać.
+* Typ dokumentu ma **kolumny tabeli** (Settings → Document Processing → Document Types → [Kolumny tabeli](../../global-settings/document-types/table-columns/README.md)). Bez kolumn nie ma do czego wyodrębniać.
 * Poniżej włączona jest opcja **Ekstrakcja tabeli** lub **Ekstrakcja tabeli AI**, dla całej organizacji.
 * Dokument ma czytelny tekst: wykonano OCR albo dla plików PDF utworzonych cyfrowo używany jest E-Text ([Ustawienia OCR](../ocr-settings.md)).
 * Szkolenie i modele AI działają **dla każdego dostawcy osobno**. Wytrenowana tabela dotyczy tylko dokumentów dostawcy, na którym została wytrenowana.
@@ -149,8 +149,8 @@ Każdy przełącznik w tej sekcji jest zapisywany jako preferencja organizacji. 
 | Zapisz reguły wyodrębniania (tylko administrator) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
 | Model sztucznej inteligencji | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Wersja ekstrakcji tabeli (okno potwierdzenia) | `TBL_EXT_VERSION` | ciąg wersji |
-| Ustawienia OCR → Use AI data for tables if available | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
-| Ustawienia OCR → Use E-Text if available | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+| OCR Settings → Use AI data for tables if available | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR Settings → Use E-Text if available | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
 
 Uwagi:
 
@@ -188,7 +188,7 @@ Aby utworzyć nową regułę:
    *   **Podtyp dokumentu** _(opcjonalnie)_: Określ podtyp w celu uzyskania bardziej szczegółowej klasyfikacji.
 
        
-3.  Kliknij **Zapisz**, aby zapisać regułę klasyfikacji.
+3.  Kliknij **Save**, aby zapisać regułę klasyfikacji.
 
     
 
@@ -203,7 +203,7 @@ Aby edytować istniejącą regułę:
 
     
 3. Wprowadź żądane zmiany.
-4.  Kliknij **Zapisz**, aby zastosować aktualizacje.
+4.  Kliknij **Save**, aby zastosować aktualizacje.
 
     
 
@@ -260,7 +260,7 @@ Aby edytować model:
 2. Zaktualizuj dostępne pola:
    * **Następny model**: Wybierz model, który powinien przetwarzać dane wyjściowe z bieżącego modelu.
    * **Typ dokumentu**: Wybierz typ dokumentu, jako który model powinien klasyfikować dane wejściowe.
-3.  Kliknij **Zapisz**, aby zastosować zmiany.
+3.  Kliknij **Save**, aby zastosować zmiany.
 
     
 

@@ -25,7 +25,7 @@ Dostęp jest udzielany na podstawie typu dokumentu i działania:
 
 * Na ekranie **Kontroli dostępu** dla grupy sprawdź typ dokumentu (np. Faktura, Zamówienie zakupu).
 * Zweryfikuj uprawnienia takie jak:
-  * **Lista**, **Wyświetl**, **Edytuj**, **Usuń**, **Masowa aktualizacja**
+  * **Lista**, **View**, **Edit**, **Delete**, **Masowa aktualizacja**
   * **Poziomy zatwierdzenia** (1., 2.), **Odblokuj dokument**
 * Upewnij się, że poziom dostępu nie jest ograniczony do **Właściciela** lub **Administratora**, chyba że jest to odpowiednie.
 
@@ -35,7 +35,7 @@ Dostęp może być również ograniczony na poziomie **pola**, co może blokowa�
 
 * W konfiguracji Kontroli dostępu grupy przejdź do typu dokumentu i sprawdź ustawienia na poziomie pól.
 * Zweryfikuj, czy pola są ustawione na:
-  * **Odczyt/Zapis**, **Tylko odczyt**, **Zapis Właściciela**, **Brak**
+  * **Odczyt/Zapis**, **Read Only**, **Zapis Właściciela**, **Brak**
 * Dostosuj, jeśli konieczne, w zależności od roli użytkownika.
 
 ### 5. Sprawdź ustawienie "Tylko przypisane dokumenty"

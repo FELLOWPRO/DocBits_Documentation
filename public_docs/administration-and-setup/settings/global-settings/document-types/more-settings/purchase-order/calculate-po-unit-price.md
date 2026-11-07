@@ -6,12 +6,12 @@ Możesz wybrać automatyczne obliczanie **ceny jednostkowej** każdej pozycji za
 
 ## **Kroki aktywacji**
 
-1.  Przejdź do **Ustawienia** -> **Przetwarzanie dokumentów** -> **Typy dokumentów**.
+1.  Przejdź do **Settings** -> **Document Processing** -> **Document Types**.
 
-2.  Wybierz żądany typ dokumentu i kliknij **Więcej ustawień**.
+2.  Wybierz żądany typ dokumentu i kliknij **More Settings**.
 
     <figure><img src="../../../../../../.gitbook/assets/prior-u044-pl.png" alt="Dostęp do dodatkowych ustawień typu dokumentu Faktura."><figcaption><p>Dostęp do dodatkowych ustawień typu dokumentu Faktura.</p></figcaption></figure>
-3.  W sekcji **Zamówienie zakupu** włącz opcję **Oblicz cenę jednostkową zamówienia**.
+3.  W sekcji **Purchase Order** włącz opcję **Oblicz cenę jednostkową zamówienia**.
 
     <figure><img src="../../../../../../.gitbook/assets/prior-u045-pl.png" alt="Ustawienia statusów wykorzystanych wierszy zamówienia."><figcaption><p>Ustawienia statusów wykorzystanych wierszy zamówienia.</p></figcaption></figure>
 

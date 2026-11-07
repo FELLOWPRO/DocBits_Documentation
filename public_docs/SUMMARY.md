@@ -4,6 +4,8 @@
 
 * [DocBits](README.md)
   * [Hauptmerkmale von DocBits](overview-and-basics/docbits/key-features-of-docbits.md)
+* [Feature-Videos](feature-videos/README.md)
+  * [DocBits Advanced Workflow](feature-videos/advanced-workflow.md)
 * [Hinweise zu unseren Schulungsvideos](about-training-videos.md)
 * [Architektur](overview-and-basics/architecture/README.md)
   * [DocBits für Infor-On-Premise-Kunden](overview-and-basics/architecture/docbits-infor-on-premise-customer.md)

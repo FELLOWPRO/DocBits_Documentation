@@ -2,6 +2,18 @@
 
 Der **Erweiterter Workflow**-Builder ist ein Node-Graph-Editor für Workflows, die Verzweigungen, parallele Pfade und Ablaufsteuerung benötigen — über das lineare When/And/Then des Standard-Builders hinaus. Sie ordnen Knoten auf einer Canvas an und verbinden sie, um den Ausführungsfluss zu definieren.
 
+## Funktionsüberblick: DocBits Advanced Workflow
+
+Der 1:48-Film zeigt die Funktionen im Überblick. Darunter folgt die ausführliche Anleitung zur Einrichtung.
+
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/de.mp4" %}
+
+[Player mit Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/de.html) · [Untertitel](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/de.vtt) · [Bildschirmtexte](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/de.txt) · 1:48 · Full HD
+
+[Zur Feature-Seite mit Rechnungsbeispiel](../../feature-videos/advanced-workflow.md)
+
+Der Film kombiniert animierte Funktionskarten mit echten Aufnahmen der englischen Dev-Oberfläche. Er enthält Musik und deutsche Einblendungen, ohne Sprechertext. Die Testaktionen setzen das Beispielfeld `approval_route` auf `Approval` oder `Standard`; eine vollständige menschliche Freigabe benötigt eigene Geschäftsaktionen. Diese Demonstration wurde weder gespeichert noch aktiviert. Die Animationen der Zusammenführungen zeigen Ergebnisanforderungen, keine Ausführungszeiten. Erreichbarkeit und vollständigen Dokumentlauf testen; ein erfolgreicher Teiltest allein belegt den Produktivablauf nicht.
+
 ## Aktueller Konfigurations- und Ergebnisvertrag
 
 ALL verlangt einen passenden verbundenen Ausgang von **jeder unterschiedlichen Quelle**. ANY und OR benötigen mindestens eine passende Quelle. Verbinden Sie eine Quelle über Grün und Orange, zählt sie weiterhin einmal. OR erzeugt keine exklusive Verzweigung und beendet andere Aktionen nicht. Auch ANY ist keine Zusage „der schnellste Zweig gewinnt“.

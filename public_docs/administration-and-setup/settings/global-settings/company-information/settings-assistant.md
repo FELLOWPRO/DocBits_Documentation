@@ -11,13 +11,13 @@ Der Assistent ist **standardmäßig aus**. Diese Seite zeigt, wo Sie ihn einscha
 ## Wer ihn nutzen kann
 
 * Der **Organisations-Administrator** schaltet den Assistenten für die gesamte Organisation ein oder aus.
-* Ist er eingeschaltet, kann jeder Administrator, der die **Einstellungen** öffnen kann, das Panel für sich selbst ein- oder ausblenden.
+* Ist er eingeschaltet, kann jeder Administrator, der die **Settings** öffnen kann, das Panel für sich selbst ein- oder ausblenden.
 * Änderungen (eine Empfehlung anwenden, eine Importverbindung ausschalten oder löschen, eine Regel anlegen) sind auf **Organisations-Administratoren** beschränkt. Andere Benutzer erhalten die Meldung *Nur für Administratoren verfügbar.*
 
 ## Einschalten
 
-1. Gehen Sie zu **Einstellungen → Organisation & Zugang → Unternehmensinformationen** (Company Information). Die Seitenüberschrift zeigt **Unternehmenseinstellungen** (Company Settings).
-2. Öffnen Sie den Abschnitt **Assistenten** (Assistants).
+1. Gehen Sie zu **Settings → Organization & Access → Company Information** (Company Information). Die Seitenüberschrift zeigt **Company Settings**.
+2. Öffnen Sie den Abschnitt **Assistants**.
 3. Schalten Sie **Einstellungs-Assistent aktivieren** (Enable the settings assistant) ein.
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch-de.png" alt="Der Abschnitt Assistenten in den Unternehmensinformationen mit den Schaltern für den Einstellungs-Assistenten, den Validierungsassistenten und die Erklär-Sprachausgabe"><figcaption><p>Der Abschnitt „Assistenten“. Der Einstellungs-Assistent hat einen eigenen Schalter. Der Validierungsassistent und die Erklär-Sprachausgabe sind eigene Funktionen.</p></figcaption></figure>
@@ -32,7 +32,7 @@ Der **Validierungsassistent** (Validation assistant) im selben Abschnitt ist ein
 
 Auf jeder Seite im Bereich „Einstellungen“ finden Sie neben dem Suchfeld für Einstellungen eine kleine **Wunderlampen-Schaltfläche**. Ein Klick darauf **zeigt** den Assistenten **an** oder **blendet** ihn **aus**.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-de.png" alt="Die Seite Unternehmensinformationen in den Einstellungen mit der Einstellungsnavigation links, der Seite in der Mitte und dem Panel des Einstellungs-Assistenten rechts"><figcaption><p>Der Assistent sitzt auf der <strong>rechten Seite</strong> jeder Einstellungsseite: Navigation links, die Seite in der Mitte, der Assistent daneben. Hier auf <strong>Unternehmenseinstellungen → Unternehmensinformationen</strong>. Die Schaltfläche zum Ein- und Ausblenden ist das Lampen-Symbol neben <strong>Sucheinstellungen</strong> (Search Settings) oben in der Navigation.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-de.png" alt="Die Seite Company Information in den Settings mit der Einstellungsnavigation links, der Seite in der Mitte und dem Panel des Einstellungs-Assistenten rechts"><figcaption><p>Der Assistent sitzt auf der <strong>rechten Seite</strong> jeder Einstellungsseite: Navigation links, die Seite in der Mitte, der Assistent daneben. Hier auf <strong>Company Settings → Company Information</strong>. Die Schaltfläche zum Ein- und Ausblenden ist das Lampen-Symbol neben <strong>Search Settings</strong> oben in der Navigation.</p></figcaption></figure>
 
 * Das Panel merkt sich Ihre Wahl pro Benutzer, sodass es beim nächsten Besuch geöffnet bleibt.
 * Auf einem breiten Bildschirm (ab 1280 Pixeln) sitzt es neben der Seite. Sie können an seinem Rand ziehen, um die Breite zu ändern.
@@ -48,8 +48,8 @@ Auf jeder Seite im Bereich „Einstellungen“ finden Sie neben dem Suchfeld fü
 
 | Problem | Ursache und Lösung |
 | --- | --- |
-| Im Bereich „Einstellungen“ gibt es keine Wunderlampen-Schaltfläche | Der Schalter der Organisation ist aus. Ein Organisations-Administrator schaltet ihn unter **Unternehmensinformationen → Assistenten** ein |
-| Der Abschnitt **Assistenten** fehlt in den Unternehmensinformationen | Nur Organisations-Administratoren sehen ihn |
+| Im Bereich „Settings“ gibt es keine Wunderlampen-Schaltfläche | Der Schalter der Organisation ist aus. Ein Organisations-Administrator schaltet ihn unter **Company Information → Assistants** ein |
+| Der Abschnitt **Assistants** fehlt in den Unternehmensinformationen | Nur Organisations-Administratoren sehen ihn |
 | Das Panel sagt **Der Assistent wird gerade eingerichtet** | Die Funktion ist in Ihrer Umgebung noch nicht verfügbar |
 | Das Panel ist da, aber die Antworten lauten *Nur für Administratoren verfügbar.* | Ihr Konto ist kein Organisations-Administrator |
 

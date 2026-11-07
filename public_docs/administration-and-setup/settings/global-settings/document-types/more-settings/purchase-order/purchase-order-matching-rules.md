@@ -19,15 +19,15 @@ Die PO-Abgleichsregeln bestimmen, welche Rechnungs- und Bestellpositionen zusamm
 Diese Konfigurationsseite dient dazu, die Regeln zu definieren und zu verwalten, die bestimmen, _wie_ PO-Positionen mit dem entsprechenden eingehenden Dokument (Rechnung, Auftragsbestätigung) abgeglichen werden.
 
 {% hint style="info" %}
-**Voraussetzung:** Die Matching-Regeln werden nur verwendet, wenn **PO-Match serverseitig** für den Dokumenttyp aktiviert ist (Einstellungen → Dokumenttypen → Weitere Einstellungen → Bestellung). Ist der Schalter deaktiviert, führt DocBits den Abgleich mit seinem eingebauten Matcher durch (Menge, Stückpreis, Artikelnummer, Bestellnummer) und ignoriert das Regelwerk.
+**Voraussetzung:** Die Matching-Regeln werden nur verwendet, wenn **PO-Match serverseitig** für den Dokumenttyp aktiviert ist (Settings → Document Types → More Settings → Bestellung). Ist der Schalter deaktiviert, führt DocBits den Abgleich mit seinem eingebauten Matcher durch (Menge, Stückpreis, Artikelnummer, Bestellnummer) und ignoriert das Regelwerk.
 {% endhint %}
 
 ***
 
 ## Zugriff
 
-1. Navigieren Sie zu **Einstellungen** → **Dokumentenverarbeitung** → **Dokumenttypen**, wählen Sie den Dokumenttyp aus und klicken Sie auf **Weitere Einstellungen**.
-2. Aktivieren Sie in der Karte **Bestellung** den Schalter **PO-Match serverseitig**.
+1. Navigieren Sie zu **Settings** → **Document Processing** → **Document Types**, wählen Sie den Dokumenttyp aus und klicken Sie auf **More Settings**.
+2. Aktivieren Sie in der Karte **Purchase Order** den Schalter **PO-Match serverseitig**.
 3. Klicken Sie neben dem Schalter auf **PO-Abgleichsregeln konfigurieren**.
 
 <figure><img src="../../../../../../.gitbook/assets/doc-type-settings-po-options-de.png" alt="Die Karte Bestellung mit PO-Match serverseitig und PO-Abgleichsregeln konfigurieren"><figcaption><p>Die Karte Bestellung. <strong>PO-Abgleichsregeln konfigurieren</strong> steht neben <strong>PO-Match serverseitig</strong>.</p></figcaption></figure>
@@ -42,7 +42,7 @@ Die Seite hat oben drei Schaltflächen:
 * **Regeln speichern** speichert Ihre Änderungen im Entwurf, den Sie bearbeiten.
 * **Versionierung konfigurieren** öffnet den Versionsverlauf. Siehe Abschnitt "Versionen und Entwürfe".
 
-Unter den Schaltflächen erscheint ein Hinweis **Schreibgeschützt**, wenn Sie eine veröffentlichte Version ansehen: *Dies ist eine veröffentlichte Version und kann nicht bearbeitet werden. Um Änderungen vorzunehmen, kopieren Sie die Datei als Entwurf.* Darunter folgen die Karte **Globale Einstellungen (Basisregeln)** und die **Regelliste**. Wählen Sie eine Regel in der Liste aus, um sie im Bereich **Regelkonfiguration** unter der Liste zu konfigurieren.
+Unter den Schaltflächen erscheint ein Hinweis **Read Only**, wenn Sie eine veröffentlichte Version ansehen: *Dies ist eine veröffentlichte Version und kann nicht bearbeitet werden. Um Änderungen vorzunehmen, kopieren Sie die Datei als Entwurf.* Darunter folgen die Karte **Globale Einstellungen (Basisregeln)** und die **Regelliste**. Wählen Sie eine Regel in der Liste aus, um sie im Bereich **Regelkonfiguration** unter der Liste zu konfigurieren.
 
 ***
 
@@ -70,9 +70,9 @@ Die Regelliste zeigt alle verfügbaren Matching-Regeln an und verwaltet deren Au
 
 #### Aufbau und Ausführung
 
-* **Priorität:** Dieses numerische Feld (z. B. 1, 2, 3) bestimmt die Reihenfolge innerhalb der jeweiligen Verarbeitungsstufe. Regeln mit einer niedrigeren Prioritätsnummer werden dort zuerst versucht. Die Priorität einer Einzelregel ändert nicht die Reihenfolge der Regeltypen und Stufen. Dies ermöglicht Administratoren, eine Hierarchie zu strukturieren, typischerweise beginnend mit den spezifischsten und strengsten Regeln (z. B. Abgleich nach Zeilennummer und Artikelnummer) und als Rückfall auf breitere oder weniger restriktive Regeln.
+* **Priority:** Dieses numerische Feld (z. B. 1, 2, 3) bestimmt die Reihenfolge innerhalb der jeweiligen Verarbeitungsstufe. Regeln mit einer niedrigeren Prioritätsnummer werden dort zuerst versucht. Die Priorität einer Einzelregel ändert nicht die Reihenfolge der Regeltypen und Stufen. Dies ermöglicht Administratoren, eine Hierarchie zu strukturieren, typischerweise beginnend mit den spezifischsten und strengsten Regeln (z. B. Abgleich nach Zeilennummer und Artikelnummer) und als Rückfall auf breitere oder weniger restriktive Regeln.
 * **Name & Beschreibung:** Bietet eine klare Identifikation und Kontext für die Regel, erklärt die primären Kriterien (z. B. „Standardregel Nr. 1: Abgleich basierend auf Zeilennummer, Artikel-ID und Menge“).
-* **Aktiv:** Bestimmt, ob die Regel im gewählten Regelwerk verwendet wird. Bei der Bearbeitung eines Entwurfs ändern Sie zunächst diesen Entwurf; Speichern, Genehmigen und Aktivieren der Version sind getrennte Schritte.
+* **Active:** Bestimmt, ob die Regel im gewählten Regelwerk verwendet wird. Bei der Bearbeitung eines Entwurfs ändern Sie zunächst diesen Entwurf; Speichern, Genehmigen und Aktivieren der Version sind getrennte Schritte.
 
 **Ausführungsablauf:** Das System führt den Abgleich in Verarbeitungsstufen durch, unter anderem Einzel-, Mehrfach- und Summenabgleich sowie Rückfallstufen. Innerhalb einer Stufe werden die passenden aktiven Regeln nach ihrer Priorität versucht. Wenn eine Regel (z. B. Priorität 1) eine Position erfolgreich abgleicht, wird der Prozess für diese Position beendet. Wird keine Übereinstimmung gefunden, fährt das System mit der nächsten Regel in der Prioritätsreihenfolge fort (z. B. Priorität 2). Jeder Lauf wird im Dokument protokolliert; der **Matching-Verlauf** im Bildschirm zur Bestellabstimmung zeigt, welche Regel versucht wurde, welche übereinstimmte und welche übersprungen wurden und warum.
 

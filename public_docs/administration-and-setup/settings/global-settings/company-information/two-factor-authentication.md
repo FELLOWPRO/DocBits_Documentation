@@ -6,13 +6,13 @@ Als Administrator einer Organisation können Sie **für jedes Mitglied die Nutzu
 
 Single-Sign-On-Anmeldungen (SSO) — Google, Microsoft, SAML — sind **ausgenommen**: Ihr Identitätsanbieter erzwingt bereits seine eigene MFA, sodass die Anforderung nur Passwort-Anmeldungen betrifft.
 
-Diese Einstellung finden Sie unter **Einstellungen → Organisation & Zugang → Unternehmensinformationen → Zwei-Faktor-Authentifizierung** und ist nur für Administratoren der Organisation verfügbar.
+Diese Einstellung finden Sie unter **Settings → Organization & Access → Company Information → Two-factor authentication** und ist nur für Administratoren der Organisation verfügbar.
 
 ## MFA für Ihre Organisation verlangen
 
-1. Gehen Sie zu **Einstellungen → Organisation & Zugang → Unternehmensinformationen**.
-2. Öffnen Sie den Abschnitt **Zwei-Faktor-Authentifizierung**.
-3. Aktivieren Sie **Zwei-Faktor-Authentifizierung für alle Mitglieder erzwingen** und klicken Sie auf **Speichern**.
+1. Gehen Sie zu **Settings → Organization & Access → Company Information**.
+2. Öffnen Sie den Abschnitt **Two-factor authentication**.
+3. Aktivieren Sie **Zwei-Faktor-Authentifizierung für alle Mitglieder erzwingen** und klicken Sie auf **Save**.
 
 <figure><img src="../../../../.gitbook/assets/mfa-admin-requirement-de.png" alt="Deutsche Einstellung zur organisationsweiten Zwei-Faktor-Authentifizierung"><figcaption><p>Deutschsprachiger Abschnitt zur MFA-Anforderung. Der Schalter ist in dieser Ansicht deaktiviert; Voraussetzungen und verfügbare Steuerelemente hängen vom Zustand der Organisation ab.</p></figcaption></figure>
 

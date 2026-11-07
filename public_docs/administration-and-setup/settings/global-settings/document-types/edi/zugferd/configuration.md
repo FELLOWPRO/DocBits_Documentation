@@ -21,7 +21,7 @@ Der ZUGFeRD-Standard ist standardmäßig immer aktiv, Sie können ihn jedoch bei
 
 ### **Schritte zur Änderung der ZUGFeRD-Einstellungen:**
 
-1. Navigieren Sie zu **Einstellungen → Dokumentenverarbeitung → Dokumententypen → Rechnung**.
+1. Navigieren Sie zu **Settings → Document Processing → Document Types → Invoice**.
 2. Klicken Sie auf **E-Doc**.\\
 3. Eine Liste aller verfügbaren E-Docs wird angezeigt.
 4. Suchen Sie die **ZUGFeRD**-Version, die Sie ändern möchten.\\
@@ -29,7 +29,7 @@ Der ZUGFeRD-Standard ist standardmäßig immer aktiv, Sie können ihn jedoch bei
 ## **Konfiguration von Transformation und XML-Pfad:**
 
 In den **Transformations-Einstellungen** können Sie den Pfad definieren, um bestimmte Informationen innerhalb der XML-Datei zu finden und in einer neuen Struktur zu speichern, was den Zugriff auf die Daten erleichtert.\
-<mark style="color:red;">**Hinweis**</mark>: Wenn Sie diese Funktionalität nutzen, müssen Sie in der **Vorschau** und im **Extraktionspfad** die neu erstellten XML-Pfade verwenden, nicht die ursprünglichen XML-Pfade.
+<mark style="color:red;">**Hinweis**</mark>: Wenn Sie diese Funktionalität nutzen, müssen Sie in der **Preview** und im **Extraktionspfad** die neu erstellten XML-Pfade verwenden, nicht die ursprünglichen XML-Pfade.
 
 ### **Schritte zur Änderung der Transformationsdatei:**
 
@@ -38,7 +38,7 @@ In den **Transformations-Einstellungen** können Sie den Pfad definieren, um bes
 3. Wählen Sie den neu erstellten Entwurf aus.
 4. Erstellen Sie entweder ein neues Feld oder ändern Sie ein bestehendes.
 5. Legen Sie den gewünschten Pfad für die Datenextraktion fest.
-6. Klicken Sie auf **Speichern**.
+6. Klicken Sie auf **Save**.
 
 ### Wichtige Hinweise:
 
@@ -50,12 +50,12 @@ Die **Vorschau-PDF-Konfiguration** wird verwendet, um eine für Benutzer lesbare
 
 ### **Schritte zur Änderung der Vorschaudatei:**
 
-1. Öffnen Sie die **Vorschau**.
+1. Öffnen Sie die **Preview**.
 2. Erstellen Sie einen neuen Entwurf, indem Sie auf das **Stiftsymbol** klicken.
 3. Wählen Sie den neu erstellten Entwurf aus.
 4. Erstellen Sie entweder ein neues Feld oder ändern Sie ein bestehendes.
 5. Legen Sie den gewünschten Pfad für die Datenextraktion fest.
-6. Klicken Sie auf **Speichern**.
+6. Klicken Sie auf **Save**.
 
 ## Konfiguration der Extraktionspfade
 
@@ -67,9 +67,9 @@ Die **Konfiguration der Extraktionspfade** wird verwendet, um Daten zu extrahier
 2. Erstellen Sie einen neuen Entwurf, indem Sie auf das **Stiftsymbol** klicken.
 3. Wählen Sie den neu erstellten Entwurf aus.
 4. Erstellen Sie ein neues Feld oder ändern Sie ein bestehendes.
-5. Die linke Seite steht für die **DocBits-Feld-ID**, die Sie unter **Einstellungen → Dokumentenverarbeitung → Dokumententypen → Rechnung → Felder** finden.\\
+5. Die linke Seite steht für die **DocBits-Feld-ID**, die Sie unter **Settings → Document Processing → Document Types → Invoice → Fields** finden.\\
 6. Die rechte Seite steht für den **Pfad zum Feld**, das in der Transformation erstellt wurde.
-7. Klicken Sie auf **Speichern**.
+7. Klicken Sie auf **Save**.
 
 Wenn Sie diese Schritte befolgen, stellen Sie eine genaue Datenextraktion und Validierung für ZUGFeRD-Rechnungen sicher.
 

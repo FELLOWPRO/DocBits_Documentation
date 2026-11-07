@@ -7,7 +7,7 @@ Diese Seite ist eine kurze Orientierung für das aktuelle DocBits-Layout — wo 
 Die Hauptseitenleiste listet jeden Bereich von DocBits, für den Sie eine Berechtigung haben. Es gibt zwei Möglichkeiten, sie zu steuern:
 
 * **Mini-Modus** — klicken Sie oben in der Seitenleiste auf den Umschalter, um sie auf reine Symbole zu reduzieren. Fahren Sie mit der Maus über ein Symbol, um seine Bezeichnung zu lesen. Die Seitenleiste merkt sich, ob sie zuletzt aufgeklappt oder eingeklappt war.
-* **Anpassen** — unten in der aufgeklappten Seitenleiste finden Sie den Eintrag **Anpassen**. Damit ordnen Sie das Menü um, blenden ungenutzte Einträge aus oder heften häufig geöffnete oben an.
+* **Customize** — unten in der aufgeklappten Seitenleiste finden Sie den Eintrag **Customize**. Damit ordnen Sie das Menü um, blenden ungenutzte Einträge aus oder heften häufig geöffnete oben an.
 
 Die vollständige Anleitung für Anordnen, Ausblenden und Anheften finden Sie unter [Anpassbare Seitenleiste](../../end-user-and-partner-section/end-user-section/customizable-sidebar.md).
 
@@ -15,10 +15,10 @@ Die vollständige Anleitung für Anordnen, Ausblenden und Anheften finden Sie un
 
 Das Menü Einstellungen ist nach Absicht statt nach Datenmodell gruppiert. Wenn Sie eine Einstellung suchen, sich aber nicht erinnern, wo sie war, probieren Sie die passende Gruppe unten:
 
-| Sie suchen … | Öffnen Sie Einstellungen → |
+| Sie suchen … | Öffnen Sie Settings → |
 |---|---|
-| Firmenname, Logo, Zeitzone, App-Farbe | Unternehmen & Benutzer → Unternehmensinformationen |
-| Benutzer, Gruppen, Berechtigungen | Unternehmen & Benutzer → Gruppen, Benutzer & Berechtigungen |
+| Firmenname, Logo, Zeitzone, App-Farbe | Company & Users → Company Information |
+| Benutzer, Gruppen, Berechtigungen | Company & Users → Groups, Users and Permissions |
 | API-Schlüssel, ERP-Verbindungen, Export-Konfigurationen | Integration |
 | Dokumenttypen, Felder, Skripte, EDI, Modelltraining | Dokumenttypen |
 | OCR-Einstellungen, Entscheidungsbäume, Wertelisten, Regelmanager | Dokumentenverarbeitung |

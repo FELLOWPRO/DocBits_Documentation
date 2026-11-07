@@ -9,13 +9,13 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
 ### **Schritt 1: Liste von Werten einrichten**
 
-1.  Gehen Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Liste von Werten**.
+1.  Gehen Sie zu **Settings** -> **Document Processing** -> **List of Values**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-de.png" alt="Wertelisten in DocBits; organisationsbezogene Listennamen sind ausgeblendet."><figcaption><p>Wertelisten in DocBits; organisationsbezogene Listennamen sind ausgeblendet.</p></figcaption></figure>
-2.  Klicken Sie auf **Neu**.
+2.  Klicken Sie auf **New**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
-3.  Erstellen Sie eine Liste mit dem Namen `Tax_Country` und klicken Sie auf **Speichern**.
+3.  Erstellen Sie eine Liste mit dem Namen `Tax_Country` und klicken Sie auf **Save**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="" width="563"><figcaption></figcaption></figure>
 4.  Erstellen Sie die folgenden drei zusätzlichen Listen:
@@ -28,7 +28,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 5.  Klicken Sie auf eine der neu erstellten Listen, um sie zu öffnen. Drücken Sie dann die Schaltfläche **Zeile hinzufügen**, um eine neue Zeile hinzuzufügen.
 
     <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
-6.  Geben Sie die gewünschten jeweiligen Werte aus **LN** ein und drücken Sie **Speichern**, um die Änderungen zu speichern.
+6.  Geben Sie die gewünschten jeweiligen Werte aus **LN** ein und drücken Sie **Save**, um die Änderungen zu speichern.
 
     * Wenn Sie mehrere Werte haben, können Sie auf **Weitere Werte hinzufügen** klicken, um diese hinzuzufügen.
 
@@ -40,10 +40,10 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
 ### **Schritt 2: Felder in DocBits hinzufügen**
 
-1.  Navigieren Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Dokumenttypen**.
+1.  Navigieren Sie zu **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
-2.  Wählen Sie das Menü **Felder** für den Dokumenttyp, in dem Sie die Felder hinzufügen möchten.
+2.  Wählen Sie das Menü **Fields** für den Dokumenttyp, in dem Sie die Felder hinzufügen möchten.
 
     <figure><img src="../../../.gitbook/assets/docbits_docbits_image_8.png" alt="DocBits Bild"><figcaption></figcaption></figure>
 3.  Unter **Mehrwertsteuer & Beträge** erstellen Sie sechs neue Felder wie folgt:
@@ -62,7 +62,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
 ### **Schritt 3: Layout bearbeiten**
 
-1.  Gehen Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Dokumenttypen**.
+1.  Gehen Sie zu **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Öffnen Sie das Menü **Layout bearbeiten** für den Dokumenttyp, den Sie bearbeiten möchten.
@@ -78,7 +78,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 6.  Verwenden Sie im Abschnitt Tax Details den **Horizontal Separator**. Ziehen Sie ihn zwischen die Unterabschnitte in Tax Details, um diese klar zu trennen und es übersichtlich zu halten.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_22.png" alt=""><figcaption></figcaption></figure>
-7. Erweitern Sie das Dropdown-Menü **Felder**.
+7. Erweitern Sie das Dropdown-Menü **Fields**.
 8.  Suchen Sie nach **Tax Country** und ziehen Sie das Feld in den entsprechenden Bereich.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_23.png" alt=""><figcaption></figcaption></figure>
@@ -99,13 +99,13 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
 ### **Schritt 1: Liste von Werten einrichten**
 
-1.  Gehen Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Liste von Werten**.
+1.  Gehen Sie zu **Settings** -> **Document Processing** -> **List of Values**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-de.png" alt="Wertelisten in DocBits; organisationsbezogene Listennamen sind ausgeblendet."><figcaption><p>Wertelisten in DocBits; organisationsbezogene Listennamen sind ausgeblendet.</p></figcaption></figure>
-2.  Klicken Sie auf **Neu**.
+2.  Klicken Sie auf **New**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
-3.  Erstellen Sie eine Liste mit dem Namen `Tax_Country` und klicken Sie auf **Speichern**.
+3.  Erstellen Sie eine Liste mit dem Namen `Tax_Country` und klicken Sie auf **Save**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="" width="563"><figcaption></figcaption></figure>
 4.  Erstellen Sie die folgenden drei zusätzlichen Listen:
@@ -118,7 +118,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 5.  Klicken Sie auf eine der neu erstellten Listen, um sie zu öffnen. Drücken Sie dann die Schaltfläche **Zeile hinzufügen**, um eine neue Zeile hinzuzufügen.
 
     <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
-6.  Geben Sie die gewünschten jeweiligen Werte aus **LN** ein und drücken Sie **Speichern**, um die Änderungen zu speichern.
+6.  Geben Sie die gewünschten jeweiligen Werte aus **LN** ein und drücken Sie **Save**, um die Änderungen zu speichern.
 
     * Wenn Sie mehrere Werte haben, können Sie auf **Weitere Werte hinzufügen** klicken, um diese hinzuzufügen.
 
@@ -130,10 +130,10 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
 ### **Schritt 2: Felder in DocBits hinzufügen**
 
-1.  Navigieren Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Dokumenttypen**.
+1.  Navigieren Sie zu **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
-2.  Wählen Sie das Menü **Felder** für den Dokumenttyp, in dem Sie die Felder hinzufügen möchten.
+2.  Wählen Sie das Menü **Fields** für den Dokumenttyp, in dem Sie die Felder hinzufügen möchten.
 
     <figure><img src="../../../.gitbook/assets/docbits_docbits_image_8.png" alt="DocBits Bild"><figcaption></figcaption></figure>
 3.  Unter **Mehrwertsteuer & Beträge** erstellen Sie sechs neue Felder wie folgt:
@@ -152,7 +152,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
 ### **Schritt 3: Layout bearbeiten**
 
-1.  Gehen Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Dokumenttypen**.
+1.  Gehen Sie zu **Settings** -> **Document Processing** -> **Document Types**.
 
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Öffnen Sie das Menü **Layout bearbeiten** für den Dokumenttyp, den Sie bearbeiten möchten.
@@ -174,7 +174,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 8.  Ziehen Sie die Felder, die zu dieser Gruppe gehören, in das **Sub Group** Feld.
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_4.png" alt=""><figcaption></figcaption></figure>
-9. Erweitern Sie das Dropdown-Menü **Felder**.
+9. Erweitern Sie das Dropdown-Menü **Fields**.
 10. Suchen Sie nach **Tax** und ziehen Sie die entsprechenden Felder, wie **Tax Country** und **Tax Code**, in die entsprechende Sub Group.
 
     <figure><img src="../../../.gitbook/assets/TaxCodeMulti_5.png" alt=""><figcaption></figcaption></figure>

@@ -84,7 +84,7 @@ Im Abschnitt **Amount Formatting** stehen Ihnen zwei Optionen zur Verfügung:
 {% hint style="info" %}
 **Voraussetzungen für eine funktionierende Tabellenextraktion**
 
-* Der Dokumenttyp hat **Tabellenspalten** (Einstellungen → Dokumentenverarbeitung → Dokumenttypen → [Tabellenspalten](../../global-settings/document-types/table-columns/README.md)). Ohne Spalten gibt es nichts, in das extrahiert werden könnte.
+* Der Dokumenttyp hat **Table Columns** (Settings → Document Processing → Document Types → [Tabellenspalten](../../global-settings/document-types/table-columns/README.md)). Ohne Spalten gibt es nichts, in das extrahiert werden könnte.
 * Für den hier beschriebenen PDF-Pfad sind **Table Extraction** und ein aktiver Dokumenttyp mit Tabellen erforderlich. Der KI-Fallback benötigt zusätzlich **AI Table Extraction**.
 * Das Dokument enthält lesbaren Text: OCR wurde ausgeführt, oder bei digital erzeugten PDFs wird E-Text verwendet ([OCR-Einstellungen](../ocr-settings.md)).
 * Die im Validierungsbildschirm gewählte **KI-Modellüberschreibung** gilt für die aktuelle Extraktionsvorlage innerhalb Ihrer Organisation. Sie stellt nicht automatisch alle Vorlagen eines Lieferanten um. Eine trainierte Tabelle wird nur auf Dokumente des Lieferanten angewendet, für den sie trainiert wurde.

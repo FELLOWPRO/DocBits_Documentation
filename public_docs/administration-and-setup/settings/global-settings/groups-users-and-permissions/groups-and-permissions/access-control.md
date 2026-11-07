@@ -18,8 +18,8 @@ Jede Gruppe kann konfiguriert werden für:
 
 ## Aktivierung
 
-1. Navigieren Sie zu **Einstellungen**.
-2. Wählen Sie **Dokumentenverarbeitung**.
+1. Navigieren Sie zu **Settings**.
+2. Wählen Sie **Document Processing**.
 3. Wählen Sie **Module.**
 4. Aktivieren Sie die **Zugriffskontrolle**, indem Sie den Schieberegler aktivieren.
 
@@ -27,8 +27,8 @@ Jede Gruppe kann konfiguriert werden für:
 
 ## Zugriffskontrolle einer Gruppe öffnen
 
-1. Navigieren Sie zu **Einstellungen**.
-2. Wählen Sie unter **Organisation & Zugang** die Option **Gruppen und Berechtigungen**.
+1. Navigieren Sie zu **Settings**.
+2. Wählen Sie unter **Organization & Access** die Option **Groups and Permissions**.
 3. Um die Berechtigungen einer Gruppe (z. B. PROCUREMENT\_DIRECTOR) zu verwalten, klicken Sie auf die drei Punkte auf der rechten Seite.
 4. Wählen Sie **Zugriffskontrolle verwalten**.
 
@@ -52,12 +52,12 @@ Die erste Spalte ist ein Schalter **Aktiviert / Deaktiviert**. Deaktivieren Sie 
 | Aktion | Bestimmt, ob die Gruppe … |
 |--------|----------------------------|
 | **Liste** | den Dokumenttyp in der Dashboard-Liste sehen darf. |
-| **Anzeigen** | ein Dokument öffnen und seine Details ansehen darf. |
-| **Bearbeiten** | Feldwerte eines Dokuments ändern darf. |
-| **Löschen** | ein Dokument löschen darf. |
-| **Massenaktualisierung** | mehrere Dokumente auf einmal aktualisieren darf. |
-| **Erste Genehmigung** | die Genehmigung der ersten Stufe erteilen darf. |
-| **Zweite Genehmigung** | die Genehmigung der zweiten Stufe erteilen darf. |
+| **View** | ein Dokument öffnen und seine Details ansehen darf. |
+| **Edit** | Feldwerte eines Dokuments ändern darf. |
+| **Delete** | ein Dokument löschen darf. |
+| **Mass Update** | mehrere Dokumente auf einmal aktualisieren darf. |
+| **First Approval** | die Genehmigung der ersten Stufe erteilen darf. |
+| **Second Approval** | die Genehmigung der zweiten Stufe erteilen darf. |
 
 ### Zugriffsbereiche
 
@@ -81,22 +81,22 @@ Jede Aktionsspalte ist ein Dropdown. Der gewählte Wert beantwortet die Frage *�
 
 ### Genehmigung erfordert auch Bearbeiten
 
-Das Genehmigen eines Dokuments löst im Hintergrund **zwei Aktionen** aus: DocBits **speichert** zuerst das Dokument und setzt es dann auf den genehmigten Status. Der Speicherschritt benötigt die Berechtigung **Bearbeiten** — die beiden Berechtigungen sind also verknüpft.
+Das Genehmigen eines Dokuments löst im Hintergrund **zwei Aktionen** aus: DocBits **speichert** zuerst das Dokument und setzt es dann auf den genehmigten Status. Der Speicherschritt benötigt die Berechtigung **Edit** — die beiden Berechtigungen sind also verknüpft.
 
-Ein Benutzer, der nur **Erste Genehmigung** oder **Zweite Genehmigung** erhält — aber *nicht* **Bearbeiten** —, läuft beim Speicherschritt in einen Berechtigungsfehler und kann das Dokument nicht genehmigen.
+Ein Benutzer, der nur **First Approval** oder **Second Approval** erhält — aber *nicht* **Edit** —, läuft beim Speicherschritt in einen Berechtigungsfehler und kann das Dokument nicht genehmigen.
 
 {% hint style="warning" %}
-Wann immer Sie **Erste Genehmigung** oder **Zweite Genehmigung** vergeben, vergeben Sie auch **Bearbeiten** (und **Anzeigen**) für denselben Dokumenttyp. Eine Genehmigungsberechtigung allein reicht nicht aus.
+Wann immer Sie **First Approval** oder **Second Approval** vergeben, vergeben Sie auch **Edit** (und **View**) für denselben Dokumenttyp. Eine Genehmigungsberechtigung allein reicht nicht aus.
 {% endhint %}
 
 ## Feldberechtigungen
 
-Klicken Sie auf eine Dokumenttyp-Zeile, um darunter das Panel **Feldberechtigungen** zu öffnen. Felder sind in Reiter gegliedert (z. B. *Tabellenspalten*, *Details der Rechnung*, *Einzelheiten zur Zahlung*, *Steuersätze & Beträge*). Jedes Feld hat seine eigene Zugriffsstufe:
+Klicken Sie auf eine Dokumenttyp-Zeile, um darunter das Panel **Feldberechtigungen** zu öffnen. Felder sind in Reiter gegliedert (z. B. *Table Columns*, *Details der Rechnung*, *Einzelheiten zur Zahlung*, *Steuersätze & Beträge*). Jedes Feld hat seine eigene Zugriffsstufe:
 
 | Stufe | Wirkung auf das Feld |
 |-------|----------------------|
 | **Lesen/Schreiben** | Das Feld ist sichtbar **und** bearbeitbar. |
-| **Nur Lesen** | Das Feld ist sichtbar, kann aber **nicht bearbeitet** werden (ausgegraut). |
+| **Read Only** | Das Feld ist sichtbar, kann aber **nicht bearbeitet** werden (ausgegraut). |
 | **Genehmigung** | Das Feld kann bearbeitet werden, die Änderung durchläuft aber zuerst einen **Genehmigungs-Workflow**. |
 | **Kein Zugriff** | Das Feld ist **vollständig ausgeblendet** — der Benutzer sieht es nie. |
 
@@ -140,7 +140,7 @@ Verfolgen Sie nun ein konkretes Dokument — den Beleg **INV-4711**, den **Maria
 * ✅ Bearbeitet Lieferantennamen und Positionen *(Bearbeiten = Owner & Assignee — sie ist die Eigentümerin)*.
 * 🔒 Sieht `TOTAL_AMOUNT`, das Feld ist aber ausgegraut und nicht änderbar *(Nur Lesen)*.
 * 🚫 Sieht das Feld `CUSTOMER_DISCOUNT` gar nicht *(Kein Zugriff)*.
-* 🚫 Die Schaltfläche **Löschen** ist ausgeblendet *(Löschen = No Access — niemand in der Gruppe darf löschen)*.
+* 🚫 Die Schaltfläche **Delete** ist ausgeblendet *(Löschen = No Access — niemand in der Gruppe darf löschen)*.
 * ✅ Kann die **erste Genehmigung** erteilen *(Erste Genehmigung = Assignee — sie ist die Zugewiesene)*.
 
 **Tom (gleiche Gruppe, hat INV-4711 aber *nicht* hochgeladen und er ist ihm *nicht* zugewiesen):**
@@ -155,5 +155,5 @@ Verfolgen Sie nun ein konkretes Dokument — den Beleg **INV-4711**, den **Maria
 
 * **Everyone** öffnet ein Dokument für alle Gruppenmitglieder; **Owner / Assignee** schränkt eine Aktion auf die Personen ein, die mit dem konkreten Dokument verbunden sind.
 * **No Access** entfernt eine Aktion (Löschen) oder blendet ein Feld (`CUSTOMER_DISCOUNT`) für die gesamte Gruppe aus.
-* **Nur Lesen** hält ein Feld sichtbar zur Referenz (`TOTAL_AMOUNT`), verhindert aber Änderungen.
+* **Read Only** hält ein Feld sichtbar zur Referenz (`TOTAL_AMOUNT`), verhindert aber Änderungen.
 * Zwei Personen in **derselben Gruppe** können beim **selben Beleg unterschiedliche Rechte** haben — allein deshalb, wer ihn hochgeladen hat und wem er zugewiesen ist.

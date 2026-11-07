@@ -4,6 +4,8 @@
 
 * [DocBits](README.md)
   * [Belangrijkste functies van DocBits](overview-and-basics/docbits/key-features-of-docbits.md)
+* [Functievideo’s](feature-videos/README.md)
+  * [DocBits Advanced Workflow](feature-videos/advanced-workflow.md)
 * [Over onze trainingsvideo’s](about-training-videos.md)
 * [Architectuur](overview-and-basics/architecture/README.md)
   * [DocBits Infor on Premise-klant](overview-and-basics/architecture/docbits-infor-on-premise-customer.md)

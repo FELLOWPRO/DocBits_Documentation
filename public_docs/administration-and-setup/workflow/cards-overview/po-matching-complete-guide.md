@@ -1,10 +1,10 @@
-# PO Matching Cards - Complete Guide
+# PO-Matching-Karten – vollständiger Leitfaden
 
-## Purchase Order (PO) Matching Cards - Complete Guide
+## Bestellabgleich-Karten (PO Matching) – vollständiger Leitfaden
 
-Die PO-Abgleichskarten auf dieser Seite gehören in die **And**-Gruppe des Workflow-Builders – sie vergleichen die Rechnungsdaten mit der zugeordneten Bestellung, bevor die Then-Aktionen laufen:
+Die PO-Abgleichskarten auf dieser Seite gehören in die **And**-Gruppe des Workflow Builders – sie vergleichen die Rechnungsdaten mit der zugeordneten Bestellung, bevor die Then-Aktionen laufen:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_button.png" alt="Workflow Builder"><figcaption><p>PO-Abgleichskarten werden über <strong>Add Card</strong> zur <strong>And</strong>-Gruppe hinzugefügt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Arbeitsfläche des Workflow-Builders mit den Kartengruppen When, And und Then"><figcaption><p>PO-Abgleichskarten werden über <strong>Add Card</strong> zur <strong>And</strong>-Gruppe hinzugefügt.</p></figcaption></figure>
 
 {% embed url="https://youtu.be/qR-lrSaj4Ug" %}
 DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch Indicators
@@ -14,7 +14,7 @@ DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch I
 
 ***
 
-### 📌 Version Information
+### 📌 Versionsinformationen
 
 **Most Evolved Card:** CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE (5 versions, v5 latest) **Other Complex Cards:** CONDITION\_OC\_TO\_PO\_ITEMS (v4), CONDITION\_LESS\_THAN\_TOLERANCE\_AS\_VALUE\_OF\_ORDERED\_QUANTITY (v4)
 
@@ -24,15 +24,15 @@ DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch I
 * **v3 → v4:** Addition of comparison mode parameters
 * **v4 → v5:** Enhanced tolerance with multiple units (%, EUR, $, etc.)
 
-📖 [Complete Version History](../../changelog/release.md#-po-comparison--validation-cards) | [Card Version Database](../../../DocFlow/docs/card_version.md)
+📖 [Vollständige Versionsgeschichte](../release.md) | [Kartenversionen und Verhalten](card-versions-guide.md)
 
 ***
 
-### Understanding PO Matching
+### Bestellabgleich verstehen
 
-When you receive an invoice, it should match the Purchase Order (PO) placed earlier. PO matching cards automatically check if invoice data matches PO data.
+Wenn Sie eine Rechnung erhalten, sollte sie zur zuvor aufgegebenen Bestellung (Purchase Order, PO) passen. PO-Matching-Karten prüfen automatisch, ob die Rechnungsdaten zu den Bestelldaten passen.
 
-**The Big Picture:**
+**Das Gesamtbild:**
 
 ```
 PO Placed     Invoice Arrives     PO Matching     Decision
@@ -40,21 +40,23 @@ PO Placed     Invoice Arrives     PO Matching     Decision
 Qty: 100      Qty: 100            within tolerance)
 ```
 
+<figure><img src="../../../.gitbook/assets/anatomy-po-matching.svg" alt="Isometrische Balkenwaage: Die linke Waagschale trägt den Stückpreis der Bestellung von 100, die rechte den Stückpreis der Rechnung von 103 (100 plus ein kleines Zusatzgewicht). Der Balken neigt sich, und sein Zeiger steht in dem grünen Band, das die Toleranz von 5 % markiert." width="768"><figcaption><p>Der Bestellpreis (100 €) liegt auf der linken Waagschale, der Rechnungspreis (103 €) auf der rechten. Die Differenz von 3 € sind 3 % des Bestellpreises, der Zeiger bleibt daher im grünen Toleranzband von ±5 % und die Prüfung besteht. Jenseits von ±5 % (rot) muss die Rechnung geprüft werden.</p></figcaption></figure>
+
 ***
 
-## 1. Purchase Order Full Match
+## 1. Vollständiger Bestellabgleich
 
-### Purpose
+### Zweck
 
 Checks if the entire invoice matches the PO perfectly or within tolerance
 
-### When to Use
+### Wann verwenden
 
 * Before approving an invoice
 * As a preliminary quality check
 * To identify problems early
 
-### How It Works
+### So funktioniert es
 
 System compares:
 
@@ -63,12 +65,12 @@ System compares:
 * Invoice items vs PO items
 * Invoice total vs PO total
 
-### Result
+### Ergebnis
 
 * **TRUE** (Full Match): Everything matches, proceed
 * **FALSE** (Mismatch): Something doesn't match, needs review
 
-### Example
+### Beispiel
 
 ```
 PO:
@@ -86,19 +88,19 @@ Result: ✅ FULL MATCH
 
 ***
 
-## 2. Unit Price Comparison (Document vs PO)
+## 2. Stückpreisvergleich (Dokument gegenüber Bestellung)
 
-### Purpose
+### Zweck
 
-Compares the unit price on the invoice with the unit price on the PO
+Vergleicht den Stückpreis auf der Rechnung mit dem Stückpreis der Bestellung
 
-### Parameters
+### Parameter
 
 * **Unit Price Tolerance**: Allow variance up to this amount
 * **Tolerance Type**: Percentage (%) or Absolute (€/$)
 * **Operator**: Is Equal to, Is Greater than, Is Less than, etc.
 
-### How It Works (Percentage Tolerance)
+### So funktioniert es (prozentuale Toleranz)
 
 **Formula:**
 
@@ -127,9 +129,9 @@ Step 4: Check tolerance (5% allowed)
 Result: PASS - Within tolerance
 ```
 
-### Real-World Examples
+### Beispiele aus der Praxis
 
-#### Example 1: Small Increase (Accepted)
+#### Beispiel 1: geringe Erhöhung (akzeptiert)
 
 ```
 PO Price: €50.00
@@ -143,7 +145,7 @@ Calculation:
 Is 3% ≤ 3%? YES ✅ ACCEPT
 ```
 
-#### Example 2: Large Increase (Rejected)
+#### Beispiel 2: große Erhöhung (abgelehnt)
 
 ```
 PO Price: €50.00
@@ -157,7 +159,7 @@ Calculation:
 Is 10% ≤ 3%? NO ❌ REJECT - NEEDS REVIEW
 ```
 
-#### Example 3: Discount (Also Checked)
+#### Beispiel 3: Rabatt (ebenfalls geprüft)
 
 ```
 PO Price: €100.00
@@ -171,7 +173,7 @@ Calculation:
 Is 3% ≤ 5%? YES ✅ ACCEPT (Discount is within tolerance)
 ```
 
-#### Example 4: Absolute Value Tolerance
+#### Beispiel 4: absolute Werttoleranz
 
 ```
 PO Price: €10.00
@@ -184,7 +186,7 @@ Calculation:
 Is €0.50 ≤ €1.00? YES ✅ ACCEPT
 ```
 
-### What to Do With Results
+### Was mit den Ergebnissen tun
 
 **If PASS ✅:**
 
@@ -201,19 +203,19 @@ Is €0.50 ≤ €1.00? YES ✅ ACCEPT
 
 ***
 
-## 3. Quantity Comparison
+## 3. Mengenvergleich
 
-### Purpose
+### Zweck
 
 Checks if the quantity ordered matches the quantity invoiced
 
-### Parameters
+### Parameter
 
 * **Tolerance**: Amount or % allowed to differ
 * **Operator**: Equals, Greater than, Less than
 * **Quantity Type**: Ordered, Received, Open
 
-### Calculation Example
+### Berechnungsbeispiel
 
 **Percentage Tolerance:**
 
@@ -248,9 +250,9 @@ Example:
   Is 2 units ≤ 5 units? YES ✅ ACCEPT
 ```
 
-### Real-World Scenarios
+### Szenarien aus der Praxis
 
-#### Over-Delivery (More than Ordered)
+#### Überlieferung (mehr als bestellt)
 
 ```
 Ordered: 100 units
@@ -265,7 +267,7 @@ Decision: Contact supplier - more delivered than ordered
 Possible reason: Error by supplier, partial shipment already received
 ```
 
-#### Under-Delivery (Less than Ordered)
+#### Unterlieferung (weniger als bestellt)
 
 ```
 Ordered: 100 units
@@ -282,13 +284,13 @@ Possible reason: Partial shipment, rest to follow
 
 ***
 
-## 4. Combined Price of Quantity Difference
+## 4. Kombinierter Preis der Mengenabweichung
 
-### Purpose
+### Zweck
 
 When quantity differs, calculates if the total price difference is acceptable
 
-### Why This Matters
+### Warum das wichtig ist
 
 ```
 Scenario: You ordered 100 units but received 110
@@ -297,7 +299,7 @@ Scenario: You ordered 100 units but received 110
 - Combined effect might be acceptable
 ```
 
-### Calculation
+### Berechnung
 
 **Formula:**
 
@@ -330,13 +332,13 @@ Is combined variance acceptable? Usually YES ✅
 
 ***
 
-## 5. Item ID / Supplier Item Number Comparison
+## 5. Vergleich von Artikel-ID und Lieferanten-Artikelnummer
 
-### Purpose
+### Zweck
 
-Checks if the items in the invoice match the items in the PO
+Prüft, ob die Positionen der Rechnung zu den Positionen der Bestellung passen
 
-### How It Works
+### So funktioniert es
 
 **Exact Match (Simplest):**
 
@@ -371,13 +373,13 @@ Actions:
 
 ***
 
-## 6. Order Type Verification
+## 6. Prüfung des Bestelltyps
 
-### Purpose
+### Zweck
 
 Verifies the purchase order type is correct
 
-### Order Types
+### Bestelltypen
 
 * **Standard Order**: Regular purchase
 * **Rush Order**: Urgent, may have premium
@@ -385,7 +387,7 @@ Verifies the purchase order type is correct
 * **Blanket Order**: Open-ended contract
 * **Consignment**: You don't pay until used
 
-### Check Example
+### Prüfbeispiel
 
 ```
 PO Order Type: Standard Order
@@ -397,13 +399,13 @@ If mismatch: Could affect terms, payment, pricing
 
 ***
 
-## 7. Delivery Date Verification
+## 7. Prüfung des Liefertermins
 
-### Purpose
+### Zweck
 
 Checks if delivery date matches the promised date on the PO
 
-### Calculation
+### Berechnung
 
 **Late Delivery:**
 
@@ -435,7 +437,7 @@ Early delivery is usually OK ✅
 Unless you need it at specific time
 ```
 
-### Tolerance Settings
+### Toleranzeinstellungen
 
 ```
 ±3 days: Allow 3 days late or early
@@ -445,13 +447,13 @@ Unless you need it at specific time
 
 ***
 
-## 8. Charge Verification (Taxes, Shipping, Etc.)
+## 8. Prüfung von Zuschlägen (Steuern, Versand usw.)
 
-### Purpose
+### Zweck
 
 Checks if additional charges (taxes, shipping, handling) match PO
 
-### Common Charges
+### Häufige Zuschläge
 
 ```
 - Shipping: €50
@@ -461,7 +463,7 @@ Checks if additional charges (taxes, shipping, handling) match PO
 - Taxes: €300
 ```
 
-### Calculation
+### Berechnung
 
 **Example: Shipping Charge Check**
 
@@ -496,13 +498,13 @@ Check if within tolerance ✅ or ❌
 
 ***
 
-## 9. Tax Verification
+## 9. Steuerprüfung
 
-### Purpose
+### Zweck
 
 Verifies tax amounts are calculated correctly
 
-### Calculation
+### Berechnung
 
 **Formula:**
 
@@ -542,13 +544,13 @@ Check: Within tolerance or needs attention?
 
 ***
 
-## 10. Facility/Cost Center Matching
+## 10. Abgleich von Einrichtung und Kostenstelle
 
-### Purpose
+### Zweck
 
-Ensures the invoice is for the correct facility/cost center
+Stellt sicher, dass die Rechnung zur richtigen Einrichtung bzw. Kostenstelle gehört
 
-### Example
+### Beispiel
 
 ```
 PO is for:
@@ -564,13 +566,13 @@ If different facility: May need different approval
 
 ***
 
-## 11. Supplier Status Validation
+## 11. Prüfung des Lieferantenstatus
 
-### Purpose
+### Zweck
 
 Checks if the supplier is still approved/active
 
-### Status Types
+### Statustypen
 
 ```
 ✅ ACTIVE: Approved, can do business
@@ -579,7 +581,7 @@ Checks if the supplier is still approved/active
 ⚠️ CONDITIONAL: Only for specific items
 ```
 
-### Check Example
+### Prüfbeispiel
 
 ```
 Supplier: ABC Corp
@@ -592,9 +594,9 @@ Alert: Supplier status changed! Investigate why.
 
 ***
 
-## Which Tolerance Should I Use?
+## Welche Toleranz sollte ich verwenden?
 
-### Strict Tolerances (Lower Risk, More Manual Work)
+### Strenge Toleranzen (geringeres Risiko, mehr manuelle Arbeit)
 
 ```
 Use for:
@@ -609,7 +611,7 @@ Settings:
 - Charges: ±1%
 ```
 
-### Moderate Tolerances (Balanced)
+### Moderate Toleranzen (ausgewogen)
 
 ```
 Use for:
@@ -624,7 +626,7 @@ Settings:
 - Charges: ±5%
 ```
 
-### Loose Tolerances (Higher Risk, Less Manual Work)
+### Lockere Toleranzen (höheres Risiko, weniger manuelle Arbeit)
 
 ```
 Use for:
@@ -641,7 +643,7 @@ Settings:
 
 ***
 
-## PO Matching Workflow Example
+## Beispiel für einen PO-Matching-Workflow
 
 ```
 Invoice Arrives
@@ -666,9 +668,9 @@ If Rejected: Return to Supplier
 
 ***
 
-## Troubleshooting PO Matching
+## Fehlerbehebung beim Bestellabgleich
 
-### "PO Not Found"
+### „Bestellung nicht gefunden“
 
 ```
 Cause: Invoice PO number doesn't exist in system
@@ -679,7 +681,7 @@ Fix:
 4. Ask supplier for PO reference
 ```
 
-### "Items Don't Match"
+### „Positionen stimmen nicht überein“
 
 ```
 Cause: Invoice items are different from PO items
@@ -690,7 +692,7 @@ Possible Reasons:
 Fix: Contact procurement or supplier
 ```
 
-### "Price Higher Than PO"
+### „Preis höher als in der Bestellung“
 
 ```
 Cause: Invoice price > PO price
@@ -702,7 +704,7 @@ Possible Reasons:
 Fix: Verify with procurement
 ```
 
-### "Delivery Date Wrong"
+### „Liefertermin falsch“
 
 ```
 Cause: Invoice dated after promised delivery
@@ -715,7 +717,7 @@ Fix: Check shipping documents or contact supplier
 
 ***
 
-## Summary Table
+## Übersichtstabelle
 
 | Card           | What It Checks        | Main Calculation     | Common Tolerance |
 | -------------- | --------------------- | -------------------- | ---------------- |
@@ -733,12 +735,82 @@ Fix: Check shipping documents or contact supplier
 
 ***
 
-## Related Documentation
+## Weiterführende Dokumentation
 
 * See "Invoice Validation" guide for complete workflow
 * See "Tolerance Settings" for recommended values by industry
 * See "Exception Handling" for what to do with failures
 * Contact your procurement team for specific tolerance policies
+
+<!-- workflow-card-example-condition_promised_delivery_date_to_current-20261021 -->
+
+### Zugesagter Liefertermin gegenüber dem Referenzdatum
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-ca4dcfa998e7-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert.</p></figcaption></figure>
+
+`CONDITION_PROMISED_DELIVERY_DATE_TO_CURRENT` · version 2
+
+Gehen Sie von einem Referenzdatum von `2026-10-21` und einem zugesagten Liefertermin der Position von `2026-10-23` aus. Wählen Sie den Vergleich „später als“ und eine Toleranz von null Tagen. Das zukünftige Datum erfüllt diesen Vergleich, `2026-10-20` nicht. Konfigurieren Sie die Optionen Any/All und die akzeptierten Toleranztage bewusst und testen Sie ein fehlendes Datum separat.
+
+<!-- workflow-card-example-condition_po_extracted_table_column-20261021 -->
+
+### Bestellspalte gegenüber einer ausgelesenen Spalte
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-e2c12dd67cc0-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert.</p></figcaption></figure>
+
+`CONDITION_PO_EXTRACTED_TABLE_COLUMN` · version 2
+
+Vergleichen Sie die übereinstimmende Artikelspalte der Bestellung mit der ausgelesenen Spalte `article_number`, mit Gleichheit und All. Übereinstimmende Werte `DEMO-A` bestehen die Prüfung; ein ausgelesener Wert `DEMO-B` scheitert. Wählen Sie nur dann eine Lookup-Tabelle, wenn eine dokumentierte Ersetzung von ID zu Wert nötig ist; prüfen Sie diese Zuordnung vor dem Vergleich.
+
+<!-- workflow-card-example-condition_check_facility_in_po-20261021 -->
+
+### Zulässige Einrichtungen der Bestellung
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-813ff783b1f2-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert.</p></figcaption></figure>
+
+`CONDITION_CHECK_FACILITY_IN_PO` · version 2
+
+Wählen Sie All, den Vergleich „ist enthalten in“ und den konfigurierten Einrichtungscode `DEMO-NORTH`. Übereinstimmende Bestellpositionen dieser Einrichtung bestehen die Prüfung; eine Position in `DEMO-SOUTH` scheitert. Verwenden Sie Einrichtungscodes aus den Bestelldaten, statt anzunehmen, eine Anzeigebezeichnung sei der Code.
+
+<!-- workflow-card-example-condition_purchase_order_full_match-20261021 -->
+
+### Vollständiger Bestellabgleich
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-91a5b2a70e88-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert.</p></figcaption></figure>
+
+`CONDITION_PURCHASE_ORDER_FULL_MATCH` · version 2
+
+Verwenden Sie eine vollständig übereinstimmende Demo-Rechnung und Bestellung mit der Menge `2` und dem Stückpreis `100` auf beiden Seiten sowie konfigurierten Mengen- und Preistoleranzen. Wählen Sie die Bedingung für den vollständigen Abgleich: Sie besteht die Prüfung. Testen Sie anschließend einen Preis außerhalb der konfigurierten Toleranz. Fehlende Vergleichsdaten oder eine fehlende Bestellung sind kein erfolgreicher vollständiger Abgleich. Ein Lieferschein hat einen reinen Mengenvergleich; gehen Sie nicht davon aus, dass die Preisregeln der Rechnung dafür gelten.
+
+<!-- workflow-card-example-condition_po_update_empty_column_check-20261021 -->
+
+### Leere Spalte in der Bestelldatenbank
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-f20345d72edd-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert.</p></figcaption></figure>
+
+`CONDITION_PO_UPDATE_EMPTY_COLUMN_CHECK` · version 2
+
+Wählen Sie eine gültige, von der Karte angebotene Tabelle und Spalte der Bestellung sowie den Operator „ist leer“. Bei einem vorhandenen übereinstimmenden Bestelldatensatz mit leerem Wert besteht die Bedingung die Prüfung; ein gefüllter Wert scheitert. Prüfen Sie zuerst die Bestellreferenz und die Zuordnung von Tabelle und Spalte. Der boolesche Wert `false` ist weiterhin ein vorhandener boolescher Wert; ein fehlender Bestelldatensatz ist ein eigener Datenfehler.
+
+<!-- workflow-card-example-condition_compare_unit_price_percent_per-20261021 -->
+
+### Prozentuale Toleranz je Preisbasis
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-14ec95131dfc-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert.</p></figcaption></figure>
+
+`CONDITION_COMPARE_UNIT_PRICE_PERCENT_PER` · version 2
+
+Beispiel: Bestell-Stückpreis `200`, Grundpreis `100` und konfigurierte Toleranz `1` ergeben einen wirksamen Satz von `(200 / 100) * (1 / 100) = 0.02`, also `2%`. Das Vergleichsband ist `196–204`. Gleichheit innerhalb der Toleranz akzeptiert einen Dokumentpreis von `203` und lehnt `210` ab. Gehen Sie nicht davon aus, dass diese Karte einer festen Toleranz von 1 % entspricht.
+
+<!-- workflow-card-example-condition_compare_po_line_value-20261021 -->
+
+### Wert der Bestellposition gegenüber einer Referenz
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-43a5d2686fb7-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind nicht konfiguriert.</p></figcaption></figure>
+
+`CONDITION_COMPARE_PO_LINE_VALUE` · version 2
+
+Wählen Sie die übereinstimmende Spalte der Bestellung `item_number`, Gleichheit und den Wert `DEMO-A`. Eine Position mit `DEMO-A` besteht die Prüfung; `DEMO-B` scheitert. Verwenden Sie nur Operatoren, die für den ausgewählten Datentyp unterstützt werden, und testen Sie fehlende Daten der abgeglichenen Position separat.
 
 ## Aktueller Konfigurations- und Ergebnisvertrag
 

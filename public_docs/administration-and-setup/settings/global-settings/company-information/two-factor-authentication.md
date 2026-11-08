@@ -15,6 +15,7 @@ Diese Einstellung finden Sie unter **Settings → Organization & Access → Comp
 3. Aktivieren Sie **Zwei-Faktor-Authentifizierung für alle Mitglieder erzwingen** und klicken Sie auf **Save**.
 
 <figure><img src="../../../../.gitbook/assets/mfa-admin-requirement-de.png" alt="Deutsche Einstellung zur organisationsweiten Zwei-Faktor-Authentifizierung"><figcaption><p>Deutschsprachiger Abschnitt zur MFA-Anforderung. Der Schalter ist in dieser Ansicht deaktiviert; Voraussetzungen und verfügbare Steuerelemente hängen vom Zustand der Organisation ab.</p></figcaption></figure>
+<!-- English source image: prior-t001-en.png -->
 
 Nach dem Speichern wird die Änderung innerhalb einer Minute wirksam. Ab diesem Zeitpunkt gilt:
 

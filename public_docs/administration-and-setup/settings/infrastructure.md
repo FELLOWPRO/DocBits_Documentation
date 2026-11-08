@@ -1,10 +1,10 @@
 # Infraestrutura
 
-A página **Infrastructure** dá aos administradores uma visão atual de onde cada parte da plataforma é executada (EU ou US) e se o processamento está saudável. É só de leitura, portanto nada aqui é configurado.
+A página **Infrastructure** dá aos administradores uma visão atual de onde cada parte da plataforma é executada (EU ou US) e se o processamento está saudável. A página é só de leitura, portanto nada aqui é configurado.
 
 > **Access:** Infrastructure é uma página apenas para administradores. Abra **Settings → Organization & Access → Infrastructure**.
 
-A página tem três abas. Cada uma carrega os seus dados na primeira vez que é aberta, por isso alternar entre elas não volta a buscar tudo.
+A página tem três abas. Cada aba carrega os seus dados na primeira vez que é aberta, por isso alternar entre elas não volta a pedir tudo.
 
 | Tab | Answers |
 |-----|---------|

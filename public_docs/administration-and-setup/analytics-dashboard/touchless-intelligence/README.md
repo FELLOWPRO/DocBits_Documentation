@@ -6,7 +6,7 @@ Touchless Intelligence beantwoordt twee afzonderlijke vragen: **Heeft DocBits de
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/nl.mp4" %}
 
-Deze controleversie van 4:22 toont een gevuld rapport: filters, kerncijfers en berekening, trends, eerste blokkades, vastgelegd bewijs, documentgeschiedenis, vergelijking van uitvoeringen, geleerde regels, verbeteringen en geschiedenis, adviesrapporten en werkelijke MCP-resultaten.
+Deze controleversie van 4:21 toont een gevuld rapport: filters, kerncijfers en berekening, trends, eerste blokkades, vastgelegd bewijs, documentgeschiedenis, vergelijking van uitvoeringen, geleerde regels, verbeteringen en geschiedenis, adviesrapporten en werkelijke MCP-resultaten.
 
 [Open de video met Nederlandse ondertitels en 16 hoofdstukken](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/nl.html). De luisterbeoordeling van deze nieuwe versie is nog niet afgerond.
 
@@ -18,11 +18,11 @@ Deze leervoorbeelden verklaren functies van het rapport. Een aanbeveling of voor
 
 | Handleiding | Inhoud |
 | --- | --- |
-| [Metrieken en berekening](../../touchless-metrics.md) | Uitkomstcategorieën, teller en noemer, AP-acties en berekeningen |
+| [Metrieken en berekening](touchless-metrics.md) | Uitkomstcategorieën, teller en noemer, AP-acties en berekeningen |
 | [Het dashboard gebruiken](touchless-dashboard.md) | Filters, KPI-kaarten, trends, eerste blokkades en bediening |
 | [Uitgewerkte voorbeelden: prijs en aantal](touchless-examples.md) | Fictieve facturen en echte Dev-PO-weergaven met prijs- en aantalverschillen |
-| [Leveranciersdiagnose en probleemclusters](../../touchless-supplier-diagnosis.md) | Leveranciers en terugkerende oorzaken prioriteren |
-| [PO-matchingdiagnose](../../touchless-po-matching-diagnosis.md) | Actieve regels, toleranties en de beslissingsstroom begrijpen |
+| [Leveranciersdiagnose en probleemclusters](touchless-supplier-diagnosis.md) | Leveranciers en terugkerende oorzaken prioriteren |
+| [PO-matchingdiagnose](touchless-po-matching-diagnosis.md) | Actieve regels, toleranties en de beslissingsstroom begrijpen |
 | [Document Trace](touchless-document-trace.md) | Originele waarden, verwerkingsuitvoeringen, blokkades en ingrepen controleren |
 | [Wijzigingsvoorstellen en rapporten](touchless-change-proposals.md) | Voorvertoning, toepassing, effectmeting en terugdraaien onderscheiden |
 | [Touchless uitleggen en verbeteren met MCP](touchless-mcp.md) | Uitleggen, diagnosticeren en gecontroleerd verbeteren via MCP |
@@ -44,7 +44,7 @@ De API controleert de bewaarde waarden opnieuw en gebruikt de standaardwaarde vo
 
 ## Toegang
 
-Dit onderdeel valt onder het [Analytics Dashboard](../). Beheerders hebben toegang; andere gebruikers hebben de bijbehorende rolmachtiging nodig. AI-analyse, ondersteunde wijzigingen en adviesrapporten kunnen beheerdersrechten vereisen.
+Dit onderdeel valt onder het [Analytics Dashboard](..). Beheerders hebben toegang; andere gebruikers hebben de bijbehorende rolmachtiging nodig. AI-analyse, ondersteunde wijzigingen en adviesrapporten kunnen beheerdersrechten vereisen.
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 <!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

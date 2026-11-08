@@ -40,10 +40,10 @@ Deze PO's zijn speciaal in **Dev** aangemaakt. De leverancier, het artikel en de
 ## Gerelateerde pagina's
 
 * [Touchless Intelligence](./)
-* [Metrieken en berekening](../../touchless-metrics.md)
+* [Metrieken en berekening](touchless-metrics.md)
 * [Het dashboard gebruiken](touchless-dashboard.md)
-* [Leveranciersdiagnose en probleemclusters](../../touchless-supplier-diagnosis.md)
-* [PO-matchingdiagnose](../../touchless-po-matching-diagnosis.md)
+* [Leveranciersdiagnose en probleemclusters](touchless-supplier-diagnosis.md)
+* [PO-matchingdiagnose](touchless-po-matching-diagnosis.md)
 * [Document Trace](touchless-document-trace.md)
 * [Wijzigingsvoorstellen en rapporten](touchless-change-proposals.md)
 * [Touchless uitleggen en verbeteren met MCP](touchless-mcp.md)

@@ -62,7 +62,7 @@ Beperkingen van het bewijs. Dit geval toont geen zakelijke goedkeuring, geslaagd
 4. Leg het bevestigde verschil vast: **factuur versus extractie**, **correcte extractie versus geïmporteerde brongegevens**, of **Infor versus de geïmporteerde kopie**. Laat de oorzaak open als het vereiste bewijs niet is vastgelegd.
 5. Controleer de uitvoeringshistorie op een handmatige correctie, goedkeuring of herstart, en op de definitieve uitkomst. De uitkomst en de oorzaak beantwoorden verschillende vragen.
 
-**Voorbeeld.** De factuur en de geëxtraheerde waarde zeggen beide €10,00, terwijl de geïmporteerde order €9,00 zegt. Dat stelt een afwijking met de ordergegevens vast, geen extractiefout. Bevestig welke prijs is afgesproken en of Infor zelf of de geïmporteerde kopie correctie nodig heeft. Herstart AP de factuur handmatig en wordt die daarna succesvol afgerond, dan is ze AP assisted ondanks de correcte extractie. Zie de [uitgewerkte voorbeelden en berekening](./#example-100-correct-extraction-80-ap-touchless).
+**Voorbeeld.** De factuur en de geëxtraheerde waarde zeggen beide €10,00, terwijl de geïmporteerde order €9,00 zegt. Dat stelt een afwijking met de ordergegevens vast, geen extractiefout. Bevestig welke prijs is afgesproken en of Infor zelf of de geïmporteerde kopie correctie nodig heeft. Herstart AP de factuur handmatig en wordt die daarna succesvol afgerond, dan is ze AP assisted ondanks de correcte extractie. Zie de [uitgewerkte voorbeelden en berekening](.#example-100-correct-extraction-80-ap-touchless).
 
 **Herhaald ontbrekende velden.** Meerdere documenten die bij Field Validation stoppen, stellen een terugkerende blokkade vast. Mogelijke oorzaken zijn extractie, een werkelijk ontbrekende factuurwaarde, een validatieregel of een ontbrekende geconfigureerde standaardwaarde. Vergelijk het bewijs voordat u een oplossing kiest; herhaling alleen bewijst geen enkele oorzaak.
 
@@ -80,8 +80,8 @@ Zie [Touchless met MCP](touchless-mcp.md) voor de bijbehorende toolaanroepen en 
 ## Gerelateerde pagina's
 
 * [Touchless Intelligence](./)
-* [Leveranciersdiagnose en probleemclusters](../../touchless-supplier-diagnosis.md)
-* [PO-matchingdiagnose](../../touchless-po-matching-diagnosis.md)
+* [Leveranciersdiagnose en probleemclusters](touchless-supplier-diagnosis.md)
+* [PO-matchingdiagnose](touchless-po-matching-diagnosis.md)
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 

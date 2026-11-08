@@ -119,10 +119,10 @@ Hebt u geen toestemming, dan toont de pagina *Action not allowed, please contact
 ## Gerelateerde pagina's
 
 * [Touchless Intelligence](./)
-* [Metrieken en berekening](../../touchless-metrics.md)
+* [Metrieken en berekening](touchless-metrics.md)
 * [Uitgewerkte voorbeelden: prijs en aantal](touchless-examples.md)
-* [Leveranciersdiagnose en probleemclusters](../../touchless-supplier-diagnosis.md)
-* [PO-matchingdiagnose](../../touchless-po-matching-diagnosis.md)
+* [Leveranciersdiagnose en probleemclusters](touchless-supplier-diagnosis.md)
+* [PO-matchingdiagnose](touchless-po-matching-diagnosis.md)
 * [Document Trace](touchless-document-trace.md)
 * [Wijzigingsvoorstellen en rapporten](touchless-change-proposals.md)
 * [Touchless uitleggen en verbeteren met MCP](touchless-mcp.md)

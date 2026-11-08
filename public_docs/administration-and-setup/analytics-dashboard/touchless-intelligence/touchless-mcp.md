@@ -99,11 +99,11 @@ De schermopname van het rapport toont aanbevelingen en geschatte impact, niet to
 ## Gerelateerde pagina's
 
 * [Touchless Intelligence](./)
-* [Metrieken en berekening](../../touchless-metrics.md)
+* [Metrieken en berekening](touchless-metrics.md)
 * [Het dashboard gebruiken](touchless-dashboard.md)
 * [Uitgewerkte voorbeelden: prijs en aantal](touchless-examples.md)
-* [Leveranciersdiagnose en probleemclusters](../../touchless-supplier-diagnosis.md)
-* [PO-matchingdiagnose](../../touchless-po-matching-diagnosis.md)
+* [Leveranciersdiagnose en probleemclusters](touchless-supplier-diagnosis.md)
+* [PO-matchingdiagnose](touchless-po-matching-diagnosis.md)
 * [Document Trace](touchless-document-trace.md)
 * [Wijzigingsvoorstellen en rapporten](touchless-change-proposals.md)
 

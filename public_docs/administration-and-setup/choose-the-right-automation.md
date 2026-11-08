@@ -26,7 +26,7 @@ Jedes Dokument durchläuft dieselben Schritte. Jedes Werkzeug hat seinen eigenen
 
 <figure><img src="../.gitbook/assets/anatomy-automation.svg" alt="Isometrischer Rangierbahnhof: Ein Dokumentenwagen passiert Transformationsregeln, PO-Abgleichsregeln, erneut Transformationsregeln und Benutzerdefinierte Validierungsregeln, danach ein Signal „Bereit zur Validierung“, dann Standard-Workflow, Erweiterter Workflow und eine Workflow-SDK-Karte"><figcaption>Ein Dokumentenwagen fährt von links nach rechts durch 1 Transformationsregeln, 2 PO-Abgleichsregeln (nach dem Abgleich laufen die Transformationsregeln erneut) und 3 Benutzerdefinierte Validierungsregeln; erst nach dem leuchtenden Signal „Bereit zur Validierung“ kann ein Workflow starten, entweder 4 Standard-Workflow, 5 Erweiterter Workflow (das Abzweiggleis) oder 6 eine Workflow-SDK-Karte, während Skripte (&#x3C;/>) vor dem Signal an Auslösepunkten entlang des Wegs eingreifen.</figcaption></figure>
 
-<figure><img src="../.gitbook/assets/automation-flow-de.svg" alt="Wo Transformationsregeln, PO-Abgleichsregeln, Benutzerdefinierte Validierungsregeln, Skripte und Workflows im Dokumentenfluss laufen"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/automation-flow-de.svg" alt="Wo Transformationsregeln, PO-Abgleichsregeln, Benutzerdefinierte Validierungsregeln, Skripte und Workflows im Dokumentenfluss laufen"></figure>
 
 In Worten:
 

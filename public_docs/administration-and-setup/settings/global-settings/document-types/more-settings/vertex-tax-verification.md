@@ -20,6 +20,13 @@ Die Ergebnismeldung nennt die Beträge, zum Beispiel: *Rejected: vendor tax $380
 
 Benutzer öffnen das Ergebnis über das Vertex-Symbol in der Dashboard-Zeile des Dokuments. Der Bildschirm **Vertex Tax Verifizierung** zeigt ein Banner (**Überprüfung fehlgeschlagen** mit der Meldung oder **Verifizierung erfolgreich**), die Felder des von Ihnen gestalteten Layouts und die Vertex-Tabellen mit der Steuer pro Position.
 
+Der Bildschirm bietet außerdem die beiden Layout-Schaltflächen, die das Dokument weiterführen oder zurückgeben:
+
+* Eine Schaltfläche **Approve** startet die normale Freigabe: Das Dokument geht in die Genehmigung, wenn für den Dokumenttyp eine Genehmigung aktiviert ist, andernfalls wird es exportiert.
+* Eine Schaltfläche **Restart workflow** schickt das Dokument zurück in die Validierung. Offene Genehmigungsaufgaben für das Dokument werden abgelehnt und der Bildschirm der Feldvalidierung öffnet sich, sodass ein Benutzer die Rechnung korrigieren kann, bevor sie erneut geprüft wird.
+
+Welche der beiden Schaltflächen ein Benutzer sieht, hängt von dem Layout ab, das Sie für den Dokumenttyp gestaltet haben.
+
 {% hint style="info" %}
 Die Verifizierung läuft nur für Dokumenttypen, die eine Exportkonfiguration vom Typ **Vertex** haben. Ohne eine solche läuft das Dokument ohne Verifizierung weiter.
 {% endhint %}

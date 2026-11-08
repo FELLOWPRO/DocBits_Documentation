@@ -308,7 +308,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 * **Dokumenttyp** Dropdown-Liste aller verfügbaren Dokumententypen. Dies bestimmt, auf welchen Dokumenttyp diese Exportkonfiguration angewendet wird.
 * **ION API-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager.
 * **IDM-Mapping-Datei** Wählen Sie eine Mapping-Datei aus dem Dateimanager. [Benötigen Sie Hilfe bei der Erstellung? Siehe IDM-Mapping-Leitfaden](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3-TOML-Zuordnungsdatei** Wählen Sie eine Mapping-Datei aus dem Dateimanager oder verwenden Sie die Option Toml auswählen, um ein mit dem Regel-Manager erstelltes toml zu verwenden. [Benötigen Sie Hilfe bei der Erstellung? Siehe Regel-Manager-Leitfaden](rule-manager/)
+* **M3-TOML-Zuordnungsdatei** Wählen Sie eine Mapping-Datei aus dem Dateimanager oder verwenden Sie die Option Select TOML, um eine mit dem Regel-Manager erstellte TOML-Datei zu verwenden. [Benötigen Sie Hilfe bei der Erstellung? Siehe Regel-Manager-Leitfaden](rule-manager/)
 
 </details>
 

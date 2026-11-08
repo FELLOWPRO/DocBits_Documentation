@@ -29,6 +29,19 @@ Die gezeigten Schulungsfälle erklären die Berichtsfunktionen. Die MCP-Ergebnis
 
 <figure><img src="../.gitbook/assets/touchless-overview-de.png" alt="Der Tab Touchless Intelligence mit fünf Kennzahlen, Verbesserungsvorschlägen und dem Diagramm der Touchless-Quote"><figcaption><p>Der Tab Touchless Intelligence: Kennzahlen, Verbesserungen, die Quote im Zeitverlauf und das Diagramm „Wo Touchless zuerst verloren geht“. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
+## Berichtseinstellungen
+
+Der Bericht liest vier Organisationseinstellungen, die ein Administrator unter **Settings → Module → Dashboards & Analytics** pflegt. Sie legen Ziel und Kostenansicht fest; ein leeres Feld bedeutet, dass DocBits den Standardwert verwendet.
+
+| Einstellung | Standard | Was sie steuert |
+| --- | --- | --- |
+| Touchless target | 70 % | Der Anteil der Dokumente, der ohne Bearbeitungseingriff durchlaufen soll. Der Bericht verwendet ihn als Zielmarke im Quotendiagramm. |
+| Minutes per AP intervention | 6 min | Die Zeit, die ein AP-Mitarbeiter benötigt, um ein Dokument zu korrigieren und freizugeben. |
+| Hourly cost | 40 | Die Kosten einer Stunde AP-Arbeit in der unten genannten Währung. |
+| Currency | EUR | Die Währung der Kostenansicht als dreistelliger ISO 4217-Code wie `EUR`, `CHF` oder `USD`. DocBits speichert den Code in Großbuchstaben und weist jeden Wert zurück, der kein Währungscode ist, sodass ein Tippfehler den Bericht nicht erreichen kann. |
+
+Die API prüft die gespeicherten Werte erneut und verwendet den Standardwert, wenn sie mit einem Wert nicht arbeiten kann.
+
 ## Zugriff
 
 Der Bereich gehört zum [Analytics Dashboard](analytics-dashboard.md). Administratoren haben Zugriff; weitere Benutzer benötigen die entsprechende Rollenzuweisung. KI-Analyse, unterstützte Änderungen und Consulting-Berichte können zusätzliche Administratorrechte erfordern.

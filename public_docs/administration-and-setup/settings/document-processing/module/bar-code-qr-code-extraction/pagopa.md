@@ -2,11 +2,11 @@
 
 ## Überblick
 
-**PagoPA** ist der Payment-QR-Standard der italienischen öffentlichen Verwaltung. Jede Rechnung einer italienischen PA-Stelle (Gemeinden, Universitäten, Gesundheitswesen, Steuerbehörden) trägt einen PagoPA-QR-Code. DocBits decodiert die Payload und liefert die vier Pflichtfelder in der Dokumenten-API-Antwort.
+**PagoPA** ist der Payment-QR-Standard der italienischen öffentlichen Verwaltung. Jede Rechnung einer italienischen PA-Stelle (Gemeinden, Universitäten, Gesundheitswesen, Steuerbehörden) trägt einen PagoPA-QR-Code. DocBits decodiert die Payload und liefert die Zahlungsfelder in der Dokumenten-API-Antwort.
 
 ### Funktions-Überblick
 
-PagoPA-Payloads sind kompakt und streng strukturiert: Genau **fünf durch Pipes getrennte Felder** in einer Zeile. Beträge sind in **Cent** (Ganzzahl) codiert und werden vom Extraktor automatisch in Euro-Dezimalwerte umgerechnet. Die führenden Nullen des `codice_avviso` (18-stellige Zahlungsanzeige) bleiben erhalten — er darf nie als Integer interpretiert werden, da es sich um einen Bezeichner fester Länge handelt.
+PagoPA-Payloads sind kompakt und streng strukturiert: Genau **sechs durch Pipes getrennte Segmente** in einer Zeile. Beträge sind in **Cent** (Ganzzahl) codiert und werden vom Extraktor automatisch in Euro-Dezimalwerte umgerechnet. Die führenden Nullen des `codice_avviso` (18-stellige Zahlungsanzeige) bleiben erhalten — er darf nie als Integer interpretiert werden, da es sich um einen Bezeichner fester Länge handelt.
 
 #### Hauptvorteile
 
@@ -18,7 +18,7 @@ PagoPA-Payloads sind kompakt und streng strukturiert: Genau **fünf durch Pipes 
 ### Erkennung
 
 - Magic-Präfix: `PAGOPA|002|`
-- Genau **5 durch Pipes getrennte Felder** nach dem Präfix: `PAGOPA|002|<codice_avviso>|<fiscal_code_creditor>|<amount_cents>|<auth>`
+- Genau **4 durch Pipes getrennte Felder** nach dem Präfix `PAGOPA|002|`: `PAGOPA|002|<codice_avviso>|<fiscal_code_creditor>|<amount_cents>|<auth>`
 - **Nur EUR** — keine andere Währung ist laut Spezifikation gültig
 
 ### Extrahierte Felder

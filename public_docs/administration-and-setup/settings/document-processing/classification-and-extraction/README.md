@@ -99,7 +99,7 @@ Mehr zum Training erfahren Sie [hier](../../../setup/document-training/training-
 
 **Use Table Extraction Vision (AI):** Die KI liest das Seitenbild statt der Textebene. Hilft bei gescannten Dokumenten und Tabellen ohne klare Textstruktur; langsamer.
 
-**Strukturierte Extraktion nutzen (KI):** Der Schalter setzt den Organisationsstandard für strukturierte Ausgabe. Welche Spalten angefordert werden, hängt von Standard/Ja/Nein unter Use AI ab; auch Vorlagenüberschreibungen und Lieferantentraining wirken mit. Die vollständige Anleitung erklärt Konfiguration, Vorschau und Beispiel. [Structured Output für Tabellen](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
+**Strukturierte Extraktion nutzen (KI):** Der Schalter setzt den Organisationsstandard für strukturierte Ausgabe. Welche Spalten angefordert werden, hängt von Standard/Ja/Nein unter Use AI ab; auch Vorlagenüberschreibungen und Lieferantentraining wirken mit. Lesen Sie die vollständige [Anleitung zu Konfiguration, Vorschau und Beispiel](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md) für Structured Output für Tabellen.
 
 **Table Extraction for Costing Element:** Wenn aktiviert, kann DocBits Kostenelemente aus Tabellen auf Positionsebene extrahieren und entsprechend klassifizieren.\
 Eine ausführliche Erklärung finden Sie [hier](table-extraction-for-costing-element.md).

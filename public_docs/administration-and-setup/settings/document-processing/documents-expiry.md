@@ -24,14 +24,7 @@ Prüfen Sie die Fristen vor Änderungen und stimmen Sie das Zielarchiv sowie die
 
 Unter **Document Processing → Documents Expiry** konfigurieren Sie die Dokumentenaufbewahrung. Bestätigen Sie vor Änderungen die wirksamen Fristen, das Zielarchiv und den Löschumfang für Ihre Organisation. Die Einstellung allein belegt weder die Einhaltung rechtlicher Aufbewahrungspflichten noch die gleichzeitige Löschung unabhängig gespeicherter Archiv- und Sicherungskopien.
 
-Zwei Einstellungen steuern die automatische Löschung:
-
-| Einstellung | Was sie steuert |
-|---------|------------------|
-| **Delete document after** | Wie lange ein verarbeitetes Dokument aufbewahrt wird, bevor es automatisch gelöscht wird. |
-| **Delete finished document after** | Wie lange ein abgeschlossenes (vollständig verarbeitetes und exportiertes) Dokument aufbewahrt wird, bevor es automatisch gelöscht wird. |
-
-Für jede Einstellung wählen Sie im Dropdown-Menü einen Zeitraum:
+Für jede der beiden Einstellungen wählen Sie im Dropdown-Menü einen Zeitraum. **Delete document after** gilt für jedes verarbeitete Dokument; **Delete finished document after** gilt für Dokumente, die vollständig verarbeitet und exportiert sind.
 
 <figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Optionen für den Dokumentenablauf"><figcaption><p>Verfügbare Aufbewahrungszeiträume</p></figcaption></figure>
 

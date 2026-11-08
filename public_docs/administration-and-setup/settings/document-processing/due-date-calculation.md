@@ -54,7 +54,7 @@ DocBits erkennt die folgenden Zahlungsbedingungs- und Skonto-Codes.
 | Infor M3 | `NET` | Zahlbar bei Erhalt |
 | Infor M3 | `M20` | 20. des Folgemonats |
 | Infor M3 | `E15` | Monatsende + 15 Tage |
-| Infor LN | `030`, `30` | Netto 30 Tage |
+| Infor ERP / SAP | `030`, `30` | Netto 30 Tage |
 | Reversed | `14N`, `30N` | Netto 14 / 30 Tage |
 | Text-Codes | `REC`, `DUE`, `COD` | Zahlbar bei Erhalt |
 

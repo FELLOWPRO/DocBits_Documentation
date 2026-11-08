@@ -6,6 +6,20 @@ description: Ask Claude to turn Infor-related information in DocBits into charts
 
 Turn the ERP context available in DocBits into a clear overview. Ask Claude to group exceptions, show the pattern in a chart, and explain what needs attention first.
 
+## ERP Insights · London
+
+English office video preview. Compare purchase-order, delivery-note and invoice quantities in Claude. The office example shows a three-way chart for matching document lines, conflicting delivery records to investigate, and a proposed morning briefing.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-erp-insights-office-preview-admin/v3/en.mp4" %}
+
+[Watch with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-erp-insights-office-preview-admin/v3/en.html)
+
+> Compare what we ordered, what the delivery records show, and what was invoiced for each purchase-order line. Create a chart, keep units separate, and identify quantity differences or conflicting records that need attention.
+
+The example uses ERP data available through DocBits. Actual receipt dates are needed to measure supplier lateness; a delivery-note date alone does not establish when goods arrived.
+
+## Infor insights and morning briefings: explainer
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-infor-insights-feature/v1/en.mp4" %}
 
 [Open the video player](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-infor-insights-feature/v1/en.html)

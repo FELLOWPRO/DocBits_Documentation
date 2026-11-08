@@ -1,62 +1,68 @@
-# AI 模型
+# AI Model
 
 ## 概述
 
-**AI 模型**设置用于定义文档处理期间默认用于**字段提取**和**表格提取**的 AI 模型。\
-在本部分中，您可以查看每种模型的令牌成本，以及当前为每个供应商分配的模型。
+**AI Model** 设置用于定义在文档处理过程中，**字段抽取**和**表格抽取**默认使用哪个 AI 模型。\
+使用当前的模型选择器和模板偏好表来查看组织设置和覆盖项。关于费用，请查阅您所在环境中可用的信息和您的订阅条款。
 
 ## 如何访问
 
-1.  前往**设置 → 文档处理 → 分类与提取**。
+1.  转到 **Settings** → **Document Types** → **Classification and Extraction** → **General**
 
-    <figure><img src="../../../../.gitbook/assets/site-complete-global-ai-model-options-zh.png" alt="当前中文全局提取设置的实际模型菜单：Full、Fast、Nexus、Nexus Flash、Auto 和 Auto Nexus。图中当前选中 Full；只展开菜单，未更改模型或开关。产品将税码选项误标为“税号”，此处指税码（tax code），不指纳税人识别号。"><figcaption><p>当前中文全局提取设置的实际模型菜单：Full、Fast、Nexus、Nexus Flash、Auto 和 Auto Nexus。图中当前选中 Full；只展开菜单，未更改模型或开关。产品将税码选项误标为“税号”，此处指税码（tax code），不指纳税人识别号。</p></figcaption></figure>
-2.  展开提取设置并找到 **AI 模型**菜单。
+    <figure><img src="../../../../.gitbook/assets/site-complete-global-ai-model-options-zh.png" alt="当前的抽取设置和 AI Model 菜单：Full、Fast、Nexus、Nexus Flash、Auto 和 Auto Nexus。表中的私有值已隐藏；未选择模型，也未删除偏好。"><figcaption><p>当前的抽取设置和 AI Model 菜单：Full、Fast、Nexus、Nexus Flash、Auto 和 Auto Nexus。表中的私有值已隐藏；未选择模型，也未删除偏好。</p></figcaption></figure>
+2.  展开 **Extraction**，找到 **AI Model** 设置。
 
 
 
 ## AI 模型选项
 
-当前界面提供 **Full、Fast、Nexus、Nexus Flash、Auto、Auto Nexus** 六个选项。它们是产品级别名称；实际可用项和令牌费用以当前环境中的菜单、信息提示及订阅约定为准。不要把固定的底层模型名称或历史费用当作长期承诺。
+当前菜单提供 **Full**、**Fast**、**Nexus**、**Nexus Flash**、**Auto** 和 **Auto Nexus**。这些是产品层级名称。可用选项、底层模型和 token 费用都可能变化；请查看当前环境中的信息和您的订阅条款，而不要依赖历史上的供应商模型名称或固定价格。
 
-| 选项 | 选择时应验证的内容 |
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-3-six-model-options-en-20261031.png" alt="当前的 AI Model 下拉菜单，列出 Full、Fast、Nexus、Nexus Flash、Auto 和 Auto Nexus"><figcaption><p>当前开发环境菜单中六个抽取层级的细节。打开和关闭菜单后，原有选择保持不变。</p></figcaption></figure>
+
+| 选项 | 用代表性文档需要核实的内容 |
 | --- | --- |
-| **Full** | 用代表性复杂文档检查提取效果、处理时间和费用。 |
-| **Fast** | 用日常文档比较效果与处理时间；名称不保证每份文档更快。 |
-| **Nexus** | 作为替代级别，与其他选项比较同一组文档。 |
-| **Nexus Flash** | 对实际文档验证速度和质量，不只根据名称判断。 |
-| **Auto** | 自动选择模式；检查实际处理结果和费用。 |
-| **Auto Nexus** | Nexus 系列的自动选择模式；同样需要验证结果。 |
+| **Full** | 复杂版式的抽取结果、处理时间和费用。 |
+| **Fast** | 日常文档的结果和处理时间；名称并不保证适用于每个文档。 |
+| **Nexus** | 用相同的文档样本比较这一替代选项。 |
+| **Nexus Flash** | 在实际版式上同时检查质量和延迟。 |
+| **Auto** | 检查自动选择的结果和费用。 |
+| **Auto Nexus** | 检查 Nexus 自动选择选项的结果和费用。 |
 
-没有针对当前提取模板设置覆盖值时，会回退到组织的全局配置；不能一概认为所有未配置的供应商都使用 Fast。截图中的全局选择是 Full。模型切换不保证必填字段、采购订单匹配、审批或导出一定成功。
+当当前抽取模板没有覆盖项时，其模型设置会回退到组织配置。未设置的供应商特定值并不普遍意味着 Fast。更改模型前请用固定样本进行比较；仅更改模型并不能保证字段校验、PO 匹配、审批或导出成功。
+
+
 
 ## AI 模型分配表
 
-您也可以在**验证界面**中通过供应商特定模型入口设置覆盖值。该设置按组织和当前提取模板（`tfidf_id`）保存，不应理解为无条件覆盖同一供应商的所有模板和历史文档。详细步骤见[供应商专属 AI 模型](../../../../end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)。
+**Validation screen** 提供供应商特定模型的入口。其覆盖项按组织和当前抽取模板（`tfidf_id`）保存；它不会无条件更新同一供应商的每个模板或历史文档。\
+\
+更多信息请参阅相应文档[此处](../../../../end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)。
 
-分配表汇总模板相关的提取设置。可见列随版本而异；请按当前表头检查供应商标识、模型、提取选项和审计信息：
+分配表汇总了与模板相关的抽取偏好。列会因产品版本而异；请使用当前的列标题查看供应商关联、模型、抽取选项和审计信息：
 
 * **Supplier ID** – 供应商的唯一标识符
-* **AI Model** – 该模板条目的 AI 模型级别
-* **Use Structured Extraction (AI)**（如当前版本显示）– 该条目的结构化提取设置
+* **AI Model** – 为此模板条目配置的层级
+* **Use Structured Extraction (AI)**（如存在）– 此条目的结构化抽取偏好
 * **E-Text** – 指示是否启用了 E-Text 功能
-* **Created By / Modified By / Created On / Modified On** – 设置条目的人员以及设置或修改时间
-* **Action** – 包含删除条目的选项
+* **Created By / Modified By / Created On / Modified On** – 谁设置了该条目以及何时设置
+* **Action** – 包含删除该条目的选项
 
 
 
-### 删除条目 – 重置供应商专属设置
+### 删除条目——移除模板覆盖项
 
-管理员移除条目前，应核对它对应的提取模板和其他覆盖设置。删除操作可能移除该模板条目的多项偏好，而不仅是 AI 模型：
+管理员删除条目之前，应先确定它属于哪个抽取模板以及其中包含的所有偏好。删除可能移除模板的多个覆盖项，而不只是模型设置：
 
-1.  点击供应商条目旁 **Action** 列中的三点菜单，然后选择 **Delete**。
+1.  在供应商条目旁的 **Action** 列中点击三个点，然后选择 **Delete**。
 
-    <!-- Obsolete illustration retired: Obsolete English menu/example illustration retired; instructions remain, and no unsafely opened menu, saved rule, or completed operation is claimed. -->
-2.  系统会显示确认对话框，请确认要删除该条目。
 
-    <!-- Obsolete illustration retired: Obsolete English menu/example illustration retired; instructions remain, and no unsafely opened menu, saved rule, or completed operation is claimed. -->
+2.  会出现确认对话框——确认您要删除该条目。
 
-删除后，该模板失去相应覆盖值，后续处理按组织配置和系统回退逻辑读取设置；同一供应商的其他模板条目可能仍有独立设置。此操作不会自动重处理历史文档。本文没有执行删除或验证删除后的提取结果。
 
-## 设置与覆盖
 
-Structured Output 有独立的组织/提取模板设置，与 AI 模型档位不同。在文档的更多选项中更改；确认后保存覆盖并重新启动该文档。设置列表中的状态仅供查看。删除条目可能同时移除多个覆盖值。 [表格的 Structured Output](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
+删除后，后续处理会读取适用的组织配置和此模板的回退值。与同一供应商关联的其他模板可能保留各自的覆盖项。删除不会自动重新处理历史文档。本指南未执行任何删除，也未产生相应的抽取结果。
+
+## 设置与覆盖项
+
+Structured Output 有独立的组织/模板设置，与模型层级分开。请在文档上的 More options 中更改；确认后会保存覆盖项并重新启动该文档。设置列表中的指示器为只读。删除偏好条目可能同时移除多个覆盖项。[表格的 Structured Output](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)。

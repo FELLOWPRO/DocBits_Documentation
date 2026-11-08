@@ -1,10 +1,10 @@
 # Validatie-instellingen en geaccepteerde versies
 
-Op deze pagina leest u over de installatiewizard, de geaccepteerde XRechnung-versies en de geaccepteerde profielen van de pagina [Validatie van elektronische facturen](validation-rules.md). Alleen organisatiebeheerders kunnen deze instellingen wijzigen.
+Op deze pagina leest u over de installatiewizard, de geaccepteerde XRechnung-versies en de geaccepteerde profielen van de pagina [Validatie van elektronische facturen](README.md). Alleen organisatiebeheerders kunnen deze instellingen wijzigen.
 
 ## Validatie-instellingen
 
-<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-nl-20261104.png" alt="Geaccepteerde XRechnung-versies in de voorbeeldorganisatie op Dev. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Geaccepteerde XRechnung-versies in de voorbeeldorganisatie op Dev. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-setup-versions-nl-20261104.png" alt="Geaccepteerde XRechnung-versies in de voorbeeldorganisatie op Dev. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Geaccepteerde XRechnung-versies in de voorbeeldorganisatie op Dev. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
 
 De kaart **Validatie-instellingen** toont uw huidige validatieprofiel (bijvoorbeeld *B2G — Public Sector Receiver*). Klik op **Antwoorden bewerken** om de installatiewizard opnieuw uit te voeren en de standaard te wijzigen waartegen u valideert.
 
@@ -14,7 +14,7 @@ De acceptatiecontrole **Geaccepteerde XRechnung-versies** somt elke XRechnung-ve
 
 ## Geaccepteerde profielen en het ernstmodel
 
-<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-nl-20261104.png" alt="Geaccepteerde ZUGFeRD- en Factur-X-profielen. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Geaccepteerde ZUGFeRD- en Factur-X-profielen. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-profiles-severity-nl-20261104.png" alt="Geaccepteerde ZUGFeRD- en Factur-X-profielen. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Geaccepteerde ZUGFeRD- en Factur-X-profielen. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
 
 Kies welke **profielen** u accepteert (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)) met **Alles accepteren** / **Wissen** en daarna **Opslaan**.
 

@@ -6,7 +6,7 @@ Nadat u het [validatierapport](validation-report.md) hebt gelezen, vertelt het r
 
 ## Wat u hierna doet
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-next-step-nl-20261104-v2.png" alt="Beoordeling, volgende stap en rapportacties."><figcaption><p>Beoordeling, volgende stap en rapportacties.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-next-step-nl-20261104-v2.png" alt="Beoordeling, volgende stap en rapportacties."><figcaption><p>Beoordeling, volgende stap en rapportacties.</p></figcaption></figure>
 
 Het blok **Beoordeling** zegt in één zin of de factuur conform is. Het blok **Volgende stap** vertelt u wat u moet doen:
 
@@ -23,7 +23,7 @@ De knoppen aan het einde van het rapport:
 
 ## Een document afwijzen
 
-<figure><img src="../../../../.gitbook/assets/einvoice-reject-dialog-nl-20261104-v2.png" alt="Dialoogvenster voor het afwijzen van de fictieve factuur. De afwijzing is geannuleerd."><figcaption><p>Dialoogvenster voor het afwijzen van de fictieve factuur. De afwijzing is geannuleerd.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-reject-dialog-nl-20261104-v2.png" alt="Dialoogvenster voor het afwijzen van de fictieve factuur. De afwijzing is geannuleerd."><figcaption><p>Dialoogvenster voor het afwijzen van de fictieve factuur. De afwijzing is geannuleerd.</p></figcaption></figure>
 
 1. Selecteer in het rapport **Document afwijzen**.
 2. Controleer de **Reden**. DocBits vult ze in vanuit de fouten in het rapport. U kunt de tekst bewerken.

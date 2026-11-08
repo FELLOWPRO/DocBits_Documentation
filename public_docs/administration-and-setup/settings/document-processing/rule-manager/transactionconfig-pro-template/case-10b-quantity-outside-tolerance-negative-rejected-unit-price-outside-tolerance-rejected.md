@@ -17,8 +17,8 @@ The system rejects the invoice data, adjusts the values to match the purchase or
   * Unit Price: $30.00 per unit
   * Total Amount: $4,500.00
 * **Invoice Received:**
-  * Quantity: 140 units (outside tolerance of -6.67%, rejected)
-  * Unit Price: $33.00 per unit (outside tolerance of 10%, rejected)
+  * Quantity: 140 units — 6.67% below the PO value, outside the configured ±5% tolerance; rejected.
+  * Unit Price: $33.00 per unit — 10% above the PO value, outside the configured ±2% tolerance; rejected.
   * Total Amount: $4,620.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%

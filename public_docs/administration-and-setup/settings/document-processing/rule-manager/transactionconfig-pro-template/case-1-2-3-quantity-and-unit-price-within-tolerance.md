@@ -22,9 +22,9 @@ Total Amount: $1,000.00
 
 **Invoice Received:**
 
-Quantity: 101 units (within tolerance of 1%)
+Quantity: 101 units — 1% above the PO value, within the configured ±2% tolerance.
 
-Unit Price: $10.05 per unit (within tolerance of 0.5%)
+Unit Price: $10.05 per unit — 0.5% above the PO value, within the configured ±1% tolerance.
 
 Total Amount: $1,015.05
 

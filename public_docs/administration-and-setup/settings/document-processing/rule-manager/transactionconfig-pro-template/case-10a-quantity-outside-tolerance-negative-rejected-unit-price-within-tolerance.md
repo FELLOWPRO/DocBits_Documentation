@@ -17,14 +17,14 @@ The system adjusts the quantity to match the approved level, keeping the unit pr
   * Unit Price: $20.00 per unit
   * Total Amount: $3,000.00
 * **Invoice Received:**
-  * Quantity: 140 units (outside tolerance of -6.67%, rejected)
+  * Quantity: 140 units — 6.67% below the PO value, outside the configured ±5% tolerance; rejected.
   * Unit Price: $20.00 per unit (within tolerance)
   * Total Amount: $2,800.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
   * Unit Price Tolerance: ±2%
 
-Since the quantity (140 units) is below the acceptable tolerance limit (negative variance of -6.67%) and is not approved, but the unit price ($20.00) is within tolerance, the system will:
+Since the quantity (140 units) is below the acceptable tolerance limit (6.67% below the PO value) and is not approved, but the unit price ($20.00) is within tolerance, the system will:
 
 1. **Reject the Lower Quantity:** The system does not accept the lower quantity since it is outside the approved tolerance range.
 2. **Adjust the Quantity:** The system adjusts the quantity to match the approved level specified in the purchase order.

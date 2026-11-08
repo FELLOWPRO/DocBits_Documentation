@@ -2,7 +2,7 @@
 
 ## Overview
 
-**PagoPA** is the payment QR standard of the Italian public administration. Every invoice issued by an Italian public-administration body (municipalities, universities, healthcare, tax authorities) carries a PagoPA QR code. DocBits decodes the payload and returns all four required payment fields in the document API response.
+**PagoPA** is the payment QR standard of the Italian public administration. Every invoice issued by an Italian public-administration body (municipalities, universities, healthcare, tax authorities) carries a PagoPA QR code. DocBits decodes the payload and returns the payment fields in the document API response.
 
 ### Feature Overview
 

@@ -16,7 +16,7 @@ Zarządzanie dokumentami jest łatwe z Docbits. Wszystkie przesłane dokumenty s
 
 ### Bezpieczeństwo ruchu sieciowego
 
-Zezwalamy tylko na połączenia zabezpieczone HTTPS do komunikacji z naszymi serwerami. To zapewnia, że wszystkie przesyłane dane są szyfrowane, co chroni Twoje wrażliwe informacje. To jak posiadanie ochroniarza dla Twoich danych, 24/7.
+Połączenia z naszymi serwerami korzystają wyłącznie z HTTPS. Dane są szyfrowane podczas przesyłania.
 
 ### Infor Cloud
 

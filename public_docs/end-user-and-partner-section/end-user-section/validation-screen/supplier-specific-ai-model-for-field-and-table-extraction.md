@@ -1,34 +1,37 @@
-# Modelo de IA Específico del Proveedor para Extracción de Campos y Tablas
+# Seleccionar un modelo de IA específico del proveedor para la extracción de campos y tablas
 
-## Del estándar organizacional al modelo efectivo
+## Del estándar de la organización al modelo efectivo
 
-<figure><img src="../../../.gitbook/assets/process-ai-model-es-20261028.png" alt="¿Qué modelo de IA se aplica a la plantilla de extracción?: Valor predeterminado de la organización y configuración específica por plantilla."><figcaption><p>Valor predeterminado de la organización y configuración específica por plantilla. El diagrama es esquemático; La configuración activa de su organización determina el comportamiento real.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/process-ai-model-es-20261028.png" alt="¿Qué modelo de IA se aplica a la plantilla?: valor predeterminado de la organización y anulación relacionada con la plantilla."><figcaption><p>Valor predeterminado de la organización y anulación relacionada con la plantilla. El diagrama es esquemático; los ajustes activos de su organización determinan el comportamiento real.</p></figcaption></figure>
 
-La entrada en la pantalla de validación se denomina modelo de IA específico del proveedor. Sin embargo, el **contexto de la plantilla de extracción actual** es crucial: la configuración específica se guarda por organización y plantilla. Un proveedor puede tener varias plantillas con diferentes configuraciones.
+La entrada de la pantalla de validación se llama modelo de IA específico del proveedor. Sin embargo, el **contexto de la plantilla de extracción actual** es decisivo: la anulación se guarda por organización y por plantilla. Un proveedor puede tener varias plantillas con ajustes distintos.
 
-1. **Determinar el contexto:** Revise la organización, el documento y la plantilla de extracción actual antes de modificar un modelo.
-2. **Anulación de verificación:** Si se almacena un modelo para esta plantilla, esta selección surte efecto dentro de su alcance. Si falta una configuración específica, se aplica la configuración de organización aplicable.
-3. **Confirma el cambio deliberadamente:** Selecciona solo una opción disponible en tu entorno. Un cambio puede requerir confirmación y desencadenar la extracción nuevamente. Abrir el menú por sí solo no cambia la selección.
-4. **Comparar resultados:** Verifique los valores de campo, tablas, tiempo de ejecución y costos con una muestra fija. Un nivel de modelo diferente no garantiza una mejor extracción, una validación exitosa o una coincidencia PO.
+1. **Determinar el contexto:** revise la organización, el documento y la plantilla de extracción actual antes de modificar un modelo.
+2. **Comprobar la anulación:** si hay un modelo guardado para esta plantilla, esa selección se aplica en su ámbito. Si falta la anulación, se aplica el ajuste de organización correspondiente.
+3. **Confirmar el cambio de forma consciente:** seleccione solo una opción disponible en su entorno. Un cambio puede requerir confirmación y volver a lanzar la extracción. Abrir el menú por sí solo no cambia la selección.
+4. **Comparar resultados:** compruebe los valores de campo, las tablas, el tiempo de ejecución y los costes con una muestra fija. Un nivel de modelo distinto no garantiza una mejor extracción, una validación correcta ni la conciliación con pedidos.
 
-**Ejemplo:** El proveedor A utiliza las plantillas “Factura nacional” y “Factura extranjera”. Una configuración específica de "Factura nacional" no cambia todas las facturas de ese proveedor. Para otro documento, verifique nuevamente su plantilla y configuración efectiva.
+**Ejemplo:** el proveedor A usa las plantillas «Factura nacional» y «Factura extranjera». Una anulación para «Factura nacional» no cambia todas las facturas de ese proveedor. Para otro documento, compruebe de nuevo su plantilla y el ajuste efectivo.
 
-El gráfico muestra la jerarquía de selección, no una recomendación para un nivel de modelo específico. La información sobre el diagnóstico [Estándar organizacional y configuraciones específicas](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md) y [¿Qué ruta de extracción se utilizó?](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) ayuda a clasificar el resultado real.
+El gráfico muestra la jerarquía de selección, no una recomendación de un nivel de modelo concreto. La información sobre el [estándar de la organización y las anulaciones](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md) y el diagnóstico [¿Qué ruta de extracción se ha usado?](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) ayudan a clasificar el resultado real.
 
-En las herramientas de la pantalla de validación puede elegir el modelo de extracción de campos y tablas para el contexto de la plantilla actual. La preferencia se guarda por organización y plantilla (`tfidf_id`); no modifica automáticamente todas las plantillas o documentos históricos del mismo proveedor. Sin una preferencia específica se utiliza la configuración aplicable de la organización.
+En la sección de herramientas de la **pantalla de validación** puede elegir el modelo de IA que se usa para **Field Extraction** y **Table Extraction**.\
+Este punto de entrada cambia la anulación del contexto de la plantilla de extracción actual. La preferencia se guarda por organización y plantilla (`tfidf_id`); la asociación de proveedor no garantiza que cambien todas las plantillas ni los documentos históricos de ese proveedor. Sin anulación, se aplica el ajuste de organización correspondiente.
 
-Abra **Más opciones** y el selector del modelo de IA. El menú ofrece **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** y **Auto Nexus**. Consulte la disponibilidad y los costes actuales de su entorno y las condiciones contratadas. Ninguna opción es siempre la más precisa o rápida; Fast no es un valor predeterminado universal.
+Para cambiar el modelo, abra el menú de opciones haciendo clic en el botón **More options** (tres puntos) a la derecha de la pantalla y elija uno de los modelos disponibles:<br>
 
-Un cambio puede requerir confirmación y reiniciar la extracción. Compruebe primero el documento y el ámbito del cambio. Abrir el menú no cambia la preferencia; las ilustraciones no demuestran un cambio de modelo ejecutado.
+El menú ofrece actualmente **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** y **Auto Nexus**. Consulte la información actual de la interfaz y las condiciones de su suscripción para disponibilidad y costes. No dé por hecho que una opción es siempre la más precisa o la más rápida, ni que todas las organizaciones usan Fast de forma predeterminada.
 
-<figure><img src="../../../.gitbook/assets/dbdc860-supplier-ai-model-menu-es-20261012.png" alt="Vista de ejemplo existente con una factura sintética: Más opciones abre el menú Modelo de IA para el contexto de la plantilla actual. Los títulos de grupos y Go to Layout Template permanecen en inglés en este ejemplo."><figcaption><p>Vista de ejemplo existente con una factura sintética: Más opciones abre el menú Modelo de IA para el contexto de la plantilla actual. Los títulos de grupos y Go to Layout Template permanecen en inglés en este ejemplo.</p></figcaption></figure>
+Seleccionar otro modelo puede requerir confirmación y reiniciar la extracción. Compruebe el documento y el ámbito antes de confirmar. Abrir el menú por sí solo no cambia el ajuste; para estas ilustraciones no se ha seleccionado ni confirmado ningún modelo.
 
-<figure><img src="../../../.gitbook/assets/dbdc860-supplier-ai-model-options-es-20261012.png" alt="Vista de ejemplo existente del menú Modelo de IA con Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus. Son nombres de niveles del producto; los títulos de grupos del ejemplo permanecen en inglés. No se ejecutó ningún cambio de modelo."><figcaption><p>Vista de ejemplo existente del menú Modelo de IA con Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus. Son nombres de niveles del producto; los títulos de grupos del ejemplo permanecen en inglés. No se ejecutó ningún cambio de modelo.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/selecting_a_supplier_specific_ai_model_1.png" alt="Menú de opciones para el contexto de plantilla de extracción ilustrado, con una factura de ejemplo sintética."><figcaption><p>Menú de opciones para el contexto de plantilla de extracción ilustrado, con una factura de ejemplo sintética.</p></figcaption></figure>
 
-Compare los modelos con documentos de prueba autorizados y compruebe valores, tiempos y costes. Cambiar de modelo puede volver a procesar un documento y no garantiza una mejora. Para configurar el valor de la organización o revisar preferencias de plantillas, consulte la documentación relacionada.
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/selecting_a_supplier_specific_ai_model_2.png" alt="El desplegable AI Model con seis opciones y una factura de ejemplo sintética; no se muestra ningún cambio de modelo."><figcaption><p>El desplegable AI Model con seis opciones y una factura de ejemplo sintética; no se muestra ningún cambio de modelo.</p></figcaption></figure>
 
-[**aquí**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md)
+Si los resultados de extracción no son satisfactorios, compare otros modelos disponibles con documentos de prueba aprobados y compruebe los valores extraídos, el tiempo de procesamiento y los costes. Un cambio puede reprocesar un documento y no garantiza una mejora.
 
-## Ajustes y configuraciones específicas
+Para configurar el **valor predeterminado de la organización** o revisar las **anulaciones específicas de plantilla**, consulte la documentación correspondiente [**aquí**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
 
-Structured Output tiene su propio ajuste de organización y plantilla, independiente del nivel de modelo. Cámbielo en Más opciones del documento; confirmar guarda el valor y reinicia ese documento. Los indicadores de la lista son de solo lectura. Eliminar una entrada puede borrar varios valores específicos a la vez. [Structured Output para tablas](../ai-table/structured-output.md).
+## Ajustes y anulaciones
+
+Structured Output tiene un ajuste de organización/plantilla propio, separado del nivel de modelo. Cámbielo en More options del documento; la confirmación guarda la anulación y reinicia ese documento. Los indicadores de la lista de ajustes son de solo lectura. Eliminar una entrada de preferencia puede quitar varias anulaciones a la vez. [Structured Output para tablas](../ai-table/structured-output.md).

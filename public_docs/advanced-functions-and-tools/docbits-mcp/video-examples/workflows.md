@@ -10,9 +10,9 @@ Describe the process you want to automate and work through it with Claude. You c
 
 Start with a rule you already use in your business. Here, invoices above 1,000 go for review, while totals of 1,000 or less follow the standard route. Claude helps explain the decisions and test a custom condition. You can then inspect the connected flow in the DocBits Workflow Builder.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-workflow-design-office-preview-admin/v4/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-workflow-design-office-preview-admin/v5/en.mp4" %}
 
-[Watch with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-workflow-design-office-preview-admin/v4/en.html)
+[Watch with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-workflow-design-office-preview-admin/v5/en.html)
 
 > Help me design an invoice workflow. Route invoices with a total above 1,000 for review, process totals up to 1,000 normally, and send invalid values to a correction route. Explain which cards to use and how to test the conditions. Then help me check the routing in DocBits before I activate it.
 

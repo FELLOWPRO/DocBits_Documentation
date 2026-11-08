@@ -4,7 +4,7 @@ description: Connect DocBits to Claude to ask about your synced ERP data, compar
 
 # Your ERP data in Claude
 
-Connect DocBits to Claude and ask about the data synced from your ERP system. You can compare an order with its delivery notes and invoices, find out why quantities differ, and ask Claude to show the results in a chart.
+Ask Claude to compare what you ordered, what arrived and what was invoiced. It uses the ERP records synced to DocBits, so you can follow up on a quantity difference, ask for the source documents and turn the result into a chart.
 
 ## Connect DocBits to Claude
 
@@ -18,9 +18,9 @@ Claude uses your DocBits account's permissions. The ERP records you can ask abou
 
 Start with a purchase order and ask Claude to check it against the delivery notes and invoices. You can follow up on any difference in the same conversation and ask which documents it used.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-erp-insights-office-preview-admin/v4/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-erp-insights-office-preview-admin/v5/en.mp4" %}
 
-[Watch with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-erp-insights-office-preview-admin/v4/en.html)
+[Watch with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-erp-insights-office-preview-admin/v5/en.html)
 
 > Compare purchase order [number] with its delivery notes and invoices. Show the quantities for each line in a chart and explain any differences. Keep different units separate and list the documents you compared.
 

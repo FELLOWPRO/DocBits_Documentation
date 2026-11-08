@@ -18,11 +18,11 @@ Estes casos de treinamento explicam funções do relatório. Uma recomendação 
 
 | Guia | O que cobre |
 | --- | --- |
-| [Métricas e cálculo](../../touchless-metrics.md) | Categorias de resultado, numerador e denominador, ações de AP e cálculos |
+| [Métricas e cálculo](touchless-metrics.md) | Categorias de resultado, numerador e denominador, ações de AP e cálculos |
 | [Usar o painel](touchless-dashboard.md) | Filtros, cartões de KPI, tendências, primeiros bloqueios e controles |
 | [Exemplos práticos: preço e quantidade](touchless-examples.md) | Faturas fictícias e visões reais de PO em Dev com diferenças de preço e quantidade |
-| [Supplier Diagnosis e clusters de problemas](../../touchless-supplier-diagnosis.md) | Priorizar fornecedores e causas recorrentes |
-| [PO Matching Diagnosis](../../touchless-po-matching-diagnosis.md) | Entender regras ativas, tolerâncias e o fluxo de decisão |
+| [Supplier Diagnosis e clusters de problemas](touchless-supplier-diagnosis.md) | Priorizar fornecedores e causas recorrentes |
+| [PO Matching Diagnosis](touchless-po-matching-diagnosis.md) | Entender regras ativas, tolerâncias e o fluxo de decisão |
 | [Document Trace](touchless-document-trace.md) | Inspecionar valores originais, execuções de processamento, bloqueios e intervenções |
 | [Change Proposals e relatórios](touchless-change-proposals.md) | Distinguir pré-visualização, aplicação, medição de efeito e reversão |
 | [Explicar e melhorar o Touchless com MCP](touchless-mcp.md) | Explicar, diagnosticar e fazer melhorias controladas via MCP |
@@ -31,7 +31,7 @@ Estes casos de treinamento explicam funções do relatório. Uma recomendação 
 
 ## Configurações do relatório
 
-O relatório lê quatro configurações da organização que um administrador mantém em **Settings > Module > Dashboards & Analytics**. Elas definem a meta e a visão de custos; um campo vazio significa que o DocBits usa o padrão.
+O relatório lê quatro configurações da organização que um administrador mantém em **Settings → Module → Dashboards & Analytics**. Elas definem a meta e a visão de custos; um campo vazio significa que o DocBits usa o padrão.
 
 | Configuração | Padrão | O que controla |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ A API verifica os valores armazenados novamente e usa o padrão para um valor co
 
 ## Acesso
 
-Esta área pertence ao [Analytics Dashboard](../). Administradores têm acesso; outros usuários precisam da concessão de função correspondente. Análise com IA, alterações suportadas e relatórios de consultoria podem exigir direitos de administrador.
+Esta área pertence ao [Analytics Dashboard](..). Administradores têm acesso; outros usuários precisam da concessão de função correspondente. Análise com IA, alterações suportadas e relatórios de consultoria podem exigir direitos de administrador.
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 <!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

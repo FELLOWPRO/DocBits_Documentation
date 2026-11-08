@@ -111,7 +111,7 @@ Enquanto ele é executado, você vê **Queued**, **Running**, **Done**, **Alread
 
 * A aba faz parte do Analytics Dashboard. O seu administrador a habilita para a organização. Se a aba estiver faltando, pergunte ao seu administrador.
 * **Administradores da organização** sempre a veem.
-* Outros usuários a veem quando um administrador concedeu à função deles a aba **Analytics dashboard** (**Settings > Roles**). Sem essa concessão, somente administradores têm acesso.
+* Outros usuários a veem quando um administrador concedeu à função deles a aba **Analytics dashboard** (**Settings → Roles**). Sem essa concessão, somente administradores têm acesso.
 * Algumas ações são exclusivas de administradores: **AI analysis**, **aplicar e desfazer uma alteração**, **learned rule proposals** e o **Consulting report**.
 
 Se você não tiver permissão, a página mostra _Action not allowed, please contact the administrator_.
@@ -119,10 +119,10 @@ Se você não tiver permissão, a página mostra _Action not allowed, please con
 ## Páginas relacionadas
 
 * [Touchless Intelligence](./)
-* [Métricas e cálculo](../../touchless-metrics.md)
+* [Métricas e cálculo](touchless-metrics.md)
 * [Exemplos práticos: preço e quantidade](touchless-examples.md)
-* [Supplier Diagnosis e clusters de problemas](../../touchless-supplier-diagnosis.md)
-* [PO Matching Diagnosis](../../touchless-po-matching-diagnosis.md)
+* [Supplier Diagnosis e clusters de problemas](touchless-supplier-diagnosis.md)
+* [PO Matching Diagnosis](touchless-po-matching-diagnosis.md)
 * [Document Trace](touchless-document-trace.md)
 * [Change Proposals e relatórios](touchless-change-proposals.md)
 * [Explicar e melhorar o Touchless com MCP](touchless-mcp.md)

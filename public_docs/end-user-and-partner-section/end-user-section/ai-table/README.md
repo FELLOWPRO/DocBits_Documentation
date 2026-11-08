@@ -15,7 +15,7 @@ Use o AI Table para revisar itens de linha extraídos, corrigir colunas e salvar
 
 ## Quando você obtém a tabela de IA
 
-* Um administrador ativou a **AI Table extraction** (Settings > Document Processing > Classification and Extraction, veja [Configurações para administradores](./#settings-for-admins)). Se estiver desativada, a área da tabela mostra _AI Table will display here. Enable in …_.
+* Um administrador ativou a **AI Table extraction** (Settings → Document Processing → Classification and Extraction, veja [Configurações para administradores](./#settings-for-admins)). Se estiver desativada, a área da tabela mostra _AI Table will display here. Enable in …_.
 * Verifique o texto legível ou a entrada Vision selecionada. Regras de tabela clássicas salvas ainda podem determinar o caminho efetivo da tabela; verifique [qual caminho de extração foi realmente usado](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md).
 * As colunas individuais têm a sua própria seleção Use AI de três estados. Verifique a origem efetiva e as regras do fornecedor, além desta seleção; ativar o Structured Output não substitui todas as tabelas baseadas em regras.
 

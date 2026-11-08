@@ -99,11 +99,11 @@ A captura do relatório mostra recomendações e impacto estimado, não aplicaç
 ## Páginas relacionadas
 
 * [Touchless Intelligence](./)
-* [Métricas e cálculo](../../touchless-metrics.md)
+* [Métricas e cálculo](touchless-metrics.md)
 * [Usar o painel](touchless-dashboard.md)
 * [Exemplos práticos: preço e quantidade](touchless-examples.md)
-* [Supplier Diagnosis e clusters de problemas](../../touchless-supplier-diagnosis.md)
-* [PO Matching Diagnosis](../../touchless-po-matching-diagnosis.md)
+* [Supplier Diagnosis e clusters de problemas](touchless-supplier-diagnosis.md)
+* [PO Matching Diagnosis](touchless-po-matching-diagnosis.md)
 * [Document Trace](touchless-document-trace.md)
 * [Change Proposals e relatórios](touchless-change-proposals.md)
 

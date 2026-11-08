@@ -37,8 +37,8 @@ Consulte [Touchless com MCP](touchless-mcp.md) para as chamadas de ferramenta co
 ## Páginas relacionadas
 
 * [Touchless Intelligence](./)
-* [Supplier Diagnosis e clusters de problemas](../../touchless-supplier-diagnosis.md)
-* [PO Matching Diagnosis](../../touchless-po-matching-diagnosis.md)
+* [Supplier Diagnosis e clusters de problemas](touchless-supplier-diagnosis.md)
+* [PO Matching Diagnosis](touchless-po-matching-diagnosis.md)
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 

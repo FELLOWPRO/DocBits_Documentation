@@ -63,7 +63,7 @@ Limites das evidências. Este caso não demonstra aprovação de negócio, expor
 5. Verifique o histórico de execuções para uma correção manual, aprovação ou reinício, e o resultado final. O resultado e a causa respondem a perguntas diferentes.
 
 <a id="example-100-correct-extraction-80-ap-touchless"></a>
-**Exemplo.** A fatura e o valor extraído dizem ambos €10.00, enquanto o pedido importado diz €9.00. Isso estabelece uma divergência com os dados do pedido, não um erro de extração. Confirme qual preço foi acordado e se o próprio Infor ou a sua cópia importada precisa de correção. Se a equipe de AP reiniciar a fatura manualmente e ela terminar com sucesso, ela é AP assisted apesar da extração correta. Veja os [exemplos práticos e o cálculo](./#example-100-correct-extraction-80-ap-touchless).
+**Exemplo.** A fatura e o valor extraído dizem ambos €10.00, enquanto o pedido importado diz €9.00. Isso estabelece uma divergência com os dados do pedido, não um erro de extração. Confirme qual preço foi acordado e se o próprio Infor ou a sua cópia importada precisa de correção. Se a equipe de AP reiniciar a fatura manualmente e ela terminar com sucesso, ela é AP assisted apesar da extração correta. Veja os [exemplos práticos e o cálculo](.#example-100-correct-extraction-80-ap-touchless).
 
 **Campos ausentes repetidos.** Vários documentos que param em Field Validation estabelecem um bloqueio repetido. As causas possíveis incluem extração, um valor genuinamente ausente na fatura, uma regra de validação ou um padrão configurado ausente. Compare as evidências antes de escolher uma correção; a repetição por si só não prova nenhuma causa específica.
 
@@ -81,8 +81,8 @@ Consulte [Touchless com MCP](touchless-mcp.md) para as chamadas de ferramenta co
 ## Páginas relacionadas
 
 * [Touchless Intelligence](./)
-* [Supplier Diagnosis e clusters de problemas](../../touchless-supplier-diagnosis.md)
-* [PO Matching Diagnosis](../../touchless-po-matching-diagnosis.md)
+* [Supplier Diagnosis e clusters de problemas](touchless-supplier-diagnosis.md)
+* [PO Matching Diagnosis](touchless-po-matching-diagnosis.md)
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 

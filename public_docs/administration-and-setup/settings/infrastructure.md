@@ -1,90 +1,83 @@
 # Infraestructura
 
-La página **Infraestructura** ofrece a los administradores una vista en vivo de dónde se ejecuta cada parte de DocBits (UE o EE. UU.), cómo fluye un documento por el sistema y si el procesamiento en segundo plano está en buen estado. Es de solo lectura — aquí no se configura nada; responde a la pregunta: *«¿está todo funcionando y mis datos permanecen en mi región?»*
+La página **Infrastructure** ofrece a los administradores una visión actual de dónde se ejecuta cada parte de la plataforma (EU o US) y de si el procesamiento está en buen estado. Es de solo lectura, por lo que aquí no se configura nada.
 
-> **Acceso:** Infraestructura es una página exclusiva para administradores. Abra **Configuración → Organización y Acceso → Infraestructura**.
+> **Access:** Infrastructure es una página solo para administradores. Abra **Settings → Organization & Access → Infrastructure**.
 
-<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-es.png" alt="Resumen de la infraestructura en español."><figcaption><p>Resumen de la infraestructura en español.</p></figcaption></figure>
+La página tiene tres pestañas. Cada una carga sus datos la primera vez que se abre, así que cambiar de una a otra no lo vuelve a solicitar todo.
 
-La página se divide en tres pestañas:
+| Tab | Answers |
+|-----|---------|
+| **Topology** | ¿Dónde se ejecuta cada componente y cómo recorre un documento DocBits? |
+| **Processing** | ¿Se ejecutan los pasos del procesamiento de documentos y se acumula trabajo? |
+| **Scheduled Tasks** | ¿Se ejecutan a tiempo las tareas en segundo plano recurrentes? |
 
-| Pestaña | Responde |
-|---------|----------|
-| **Topología** | ¿Dónde se ejecuta cada componente y está todo en mi región? |
-| **Procesamiento** | ¿Se están ejecutando los pasos de procesamiento (OCR, extracción, conciliación de PO …) y están al día? |
-| **Tareas programadas** | ¿Se ejecutan los trabajos recurrentes en segundo plano según lo previsto? |
+## Topology
 
-## Topología
+**Topology** se abre de forma predeterminada. Muestra la plataforma en dos vistas: **Architecture** y **Process**. Con el conmutador situado encima del diagrama cambia entre ellas; el indicador que lo acompaña muestra **live** mientras la vista transmite su estado.
 
-La pestaña Topología dibuja toda la plataforma DocBits como un diagrama, agrupado en capas — **Edge / Web**, **Core API**, **Importación**, **Servicios en segundo plano**, **Almacenes de datos** y **Autenticación**. Cada recuadro es un componente (la Web App/CDN, la pasarela de API, el worker de OCR, la base de datos, etc.).
+Un aviso encima del diagrama resume la comprobación de regiones:
 
-<figure><img src="../../.gitbook/assets/infrastructure_topology.png" alt="Diagrama de topología con distintivos de región"><figcaption><p>Cada componente está etiquetado con la región en la que se ejecuta</p></figcaption></figure>
+* **Green**: todos los componentes se ejecutan en la región de su organización y el aviso indica esa región (por ejemplo **EU**).
+* **Red**: un componente marcado como crítico se ejecuta fuera de la región de su organización.
+* **Amber**: el aviso indica componentes que están en otra región aunque la comprobación general se supere. Es una diferencia de región, no un fallo.
 
-### Transparencia de región
+### Vista de arquitectura
 
-Cada componente lleva un distintivo de región para que pueda confirmar la residencia de sus datos de un vistazo:
+La vista de arquitectura dibuja la plataforma como carriles de tarjetas de componentes, por ejemplo Edge / Web, Core API, Import, Background Services y Modules. Las flechas muestran las conexiones entre las tarjetas.
 
-| Distintivo | Significado |
-|------------|-------------|
-| **UE ✓** / **US ✓** | El componente se ejecuta en la región de su organización. |
-| **SHARED** | Un componente global (p. ej. la CDN) sin una región única — esto es lo esperado y no supone ningún problema. |
-| **Discrepancia de región** | El componente se ejecuta en una región *diferente* a la de su organización. Se resalta para que pueda plantearlo al soporte. |
+Cada tarjeta muestra el nombre del componente, una insignia de región y, en los componentes críticos, un punto de estado que se vuelve verde cuando el componente responde y muestra su latencia en milisegundos cuando se informa de un valor.
 
-El banner superior resume el resultado: **«Todos los componentes se ejecutan en su región (UE)»** cuando todo coincide, o una advertencia si algún componente crítico está en otra región.
+| Badge | Meaning |
+|-------|---------|
+| **EU ✓** / **US ✓** | El componente se ejecuta en la región de su organización. |
+| **SHARED** | Un componente global, como la CDN, que no tiene una región única. Es lo esperado. |
+| **EU ⓘ** / **US ⓘ** | El componente se ejecuta en otra región y se informa como aviso. |
+| **EU ⚠** / **US ⚠** | El componente se ejecuta en otra región y se informa como error. Consúltelo con el soporte. |
+| Insignia gris, sin marca | No se conoce la región de este componente. |
 
-### Arquitectura vs. Reproducir proceso
+### Vista de proceso
 
-Use el conmutador situado sobre el diagrama para cambiar de vista:
+La vista de proceso anima un único documento por la canalización: las fuentes de entrada **Email**, **FTP** y **Web** convergen en **API** y después pasan por **OCR**, **Extraction**, **PO matching**, **Auto Accounting** y **Export**. Cada etapa se conecta con una barra de almacenes de datos con **Postgres** y almacenamiento de archivos. Un pie de ilustración indica el paso que se está animando y el botón de reproducción pausa o reanuda la animación.
 
-- **Arquitectura** — el mapa estático de todos los componentes y cómo se conectan.
-- **Reproducir proceso** — anima el recorrido de un documento por el sistema, paso a paso, para que vea el orden en que intervienen los componentes.
-
-El indicador **● live** muestra que la información de estado del diagrama refleja el estado actual del sistema.
+PO matching y Auto Accounting son opcionales. Cuando uno de ellos está desactivado para su organización, su etapa aparece en gris y la animación lo omite.
 
 ### Módulos opcionales
 
-Los componentes que pertenecen a un módulo opcional (Búsqueda de texto completo, DocFlow, Auto-Accounting, DocNet, Conciliación de PO) muestran un distintivo **activado** o **desactivado**. Al hacer clic en un módulo desactivado, irá directamente a la página donde puede activarlo — **Configuración → Módulo** para la mayoría de los módulos, o **Tipos de documento** para la Conciliación de PO (que se activa por tipo de documento).
+Los módulos opcionales (Full-Text Search, DocFlow, Auto-Accounting, DocNet y PO Matching) llevan una insignia **active** o **inactive** en su tarjeta. Un módulo desactivado ofrece un botón **Activate** que le lleva a la página donde se activa: los ajustes de Modules para la mayoría de los módulos, o **Document Types** para PO Matching, que se activa por tipo de documento.
 
-## Procesamiento
+## Processing
 
-La pestaña Procesamiento muestra la canalización de procesamiento de documentos de **su organización** — cuándo se ejecutó cada paso por última vez y si el trabajo fluye o se acumula.
+La pestaña **Processing** enumera los pasos del procesamiento de documentos de su organización e indica si el trabajo fluye o se acumula.
 
-<figure><img src="../../.gitbook/assets/prior-t004-es.png" alt="Procesos de infraestructura y última ejecución."><figcaption><p>Procesos de infraestructura y última ejecución.</p></figcaption></figure>
+| Column | Description |
+|--------|-------------|
+| **Process** | El paso de procesamiento: Document Processing, OCR, TR-OCR, Barcode Split, Barcode Extraction, Extraction y PO Match. |
+| **Last run** | Cuánto tiempo hace que se ejecutó el paso por última vez. Pase el cursor por encima para ver la marca de tiempo exacta. **Never run** significa que ningún documento ha llegado todavía a este paso. |
+| **Status** | Una o varias insignias (véase más abajo). |
 
-| Columna | Descripción |
-|---------|-------------|
-| **Proceso** | El paso de procesamiento — Procesamiento de documentos, OCR, TR-OCR, División de código de barras, Extracción de código de barras, Extracción, Conciliación de PO. |
-| **Última ejecución** | Hace cuánto se ejecutó el paso por última vez. Pase el ratón por encima para ver la marca de tiempo exacta. *«Nunca ejecutado»* significa que aún ningún documento ha llegado a este paso. |
-| **Estado** | Un distintivo tipo semáforo (véase abajo). |
+Las insignias de estado son señales independientes:
 
-Distintivos de estado:
+* Insignia roja **Errors (N)**: `N` documentos han fallado recientemente en este paso.
+* Insignia ámbar con un recuento: `N` documentos se están procesando en este paso ahora mismo.
+* Insignia verde **OK**: no hay errores recientes ni nada en espera.
 
-| Distintivo | Significado |
-|------------|-------------|
-| **DE ACUERDO** (verde) | Sin errores recientes y nada en espera — el paso está sano. |
-| **En curso (N)** (ámbar) | `N` documentos se están procesando actualmente en este paso. |
-| **Error (N)** (rojo) | `N` documentos fallaron recientemente en este paso. |
+Como los errores y el trabajo en curso se cuentan por separado, un paso puede mostrar ambos a la vez, de modo que un fallo sigue visible mientras otros documentos se siguen procesando.
 
-Los errores y *en curso* son señales independientes, por lo que un paso puede mostrar ambos distintivos a la vez — así ve un fallo aunque otro trabajo siga en marcha. Use **Actualizar** (arriba a la derecha) para obtener las cifras más recientes.
+## Scheduled Tasks
 
-## Tareas programadas
+La pestaña **Scheduled Tasks** enumera las tareas en segundo plano recurrentes que mantienen DocBits en funcionamiento, por ejemplo actualizaciones de caché, alertas de estado, tiempos de espera de documentos y sincronizaciones salientes. Cada fila indica si la tarea se ejecuta a su hora.
 
-La pestaña Tareas programadas enumera los trabajos recurrentes en segundo plano que mantienen DocBits en funcionamiento (actualizaciones de caché, alertas de estado, tiempos de espera de documentos, sincronizaciones salientes y más) y confirma que cada uno se ejecuta puntualmente.
+| Column | Description |
+|--------|-------------|
+| **Task** | El nombre de la tarea programada, con los separadores sustituidos por espacios. |
+| **Last run** | Cuánto tiempo hace que se ejecutó por última vez. Pase el cursor por encima para ver la marca de tiempo exacta. **Never run** significa que aún no se ha ejecutado. |
+| **Status** | Estado de la programación (véase más abajo). |
 
-<figure><img src="../../.gitbook/assets/prior-t005-es.png" alt="Tareas programadas de infraestructura."><figcaption><p>Tareas programadas de infraestructura.</p></figcaption></figure>
+| Status | Meaning |
+|--------|---------|
+| **On schedule** (verde) | La tarea se ejecuta en el intervalo previsto. |
+| **Delayed** (rojo) | La tarea no se ha ejecutado cuando se esperaba. Investíguelo o consúltelo con el soporte. |
+| **Unknown** (gris) | No se ha podido determinar el estado de la programación. |
 
-| Columna | Descripción |
-|---------|-------------|
-| **Tarea** | El nombre del trabajo programado. |
-| **Última ejecución** | Hace cuánto se ejecutó por última vez. Pase el ratón por encima para ver la marca de tiempo exacta; *«Nunca ejecutado»* significa que aún no se ha disparado. |
-| **Estado** | Estado de planificación (véase abajo). |
-
-Valores de estado:
-
-| Distintivo | Significado |
-|------------|-------------|
-| **En horario** (verde) | La tarea se ejecuta en su intervalo previsto. |
-| **Retrasada** (rojo) | La tarea no se ha ejecutado cuando se esperaba — conviene investigar o plantearlo al soporte. |
-| **Desconocido** (gris) | No se pudo determinar el estado de planificación. |
-
-Use **Actualizar** para volver a comprobar el estado de planificación cuando lo necesite.
+Ambas tablas tienen un botón **Refresh** que vuelve a cargar las cifras actuales a petición.

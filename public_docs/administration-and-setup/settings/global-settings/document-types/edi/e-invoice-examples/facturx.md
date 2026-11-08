@@ -6,7 +6,7 @@ Exportaciones al sistema de gestión documental (IDM):
 
 <figure><img src="../../../../../../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
 
-Exportado a Infor LN:
+Exportado a Infor ERP / SAP:
 
 <figure><img src="../../../../../../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
 
@@ -20,7 +20,7 @@ Exportaciones al sistema de gestión documental (IDM):
 
 <figure><img src="../../../../../../.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
 
-Exportado a Infor LN:
+Exportado a Infor ERP / SAP:
 
 <figure><img src="../../../../../../.gitbook/assets/image (365).png" alt=""><figcaption></figcaption></figure>
 

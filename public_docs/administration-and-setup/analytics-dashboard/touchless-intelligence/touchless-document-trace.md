@@ -62,8 +62,6 @@ Limites des preuves. Ce cas ne démontre ni approbation métier, ni export réus
 4. Consignez la différence confirmée : **facture vs extraction**, **extraction correcte vs données source importées**, ou **Infor vs sa copie importée**. Laissez la cause ouverte si les preuves nécessaires ne sont pas enregistrées.
 5. Consultez l'historique des exécutions pour une correction manuelle, une approbation ou une relance, ainsi que le résultat final. Le résultat et la cause répondent à des questions différentes.
 
-<a id="example-100-correct-extraction-80-ap-touchless"></a>
-
 **Exemple.** La facture et la valeur extraite indiquent toutes deux 10,00 €, alors que la commande importée indique 9,00 €. Cela établit un écart avec les données de commande, pas une erreur d'extraction. Confirmez quel prix a été convenu et si c'est Infor lui-même ou sa copie importée qui doit être corrigé. Si AP relance manuellement la facture et qu'elle se termine ensuite correctement, elle est AP assisted malgré l'extraction correcte. Voir les [exemples pratiques et le calcul](./#example-100-correct-extraction-80-ap-touchless).
 
 **Champs manquants répétés.** Plusieurs documents qui s'arrêtent à Field Validation établissent un blocage répété. Les causes possibles incluent l'extraction, une valeur de facture réellement absente, une règle de validation ou une valeur par défaut configurée manquante. Comparez les preuves avant de choisir une correction ; la répétition seule ne prouve aucune cause en particulier.

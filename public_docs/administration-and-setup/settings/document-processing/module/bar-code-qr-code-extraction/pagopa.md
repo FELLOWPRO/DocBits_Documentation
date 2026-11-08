@@ -2,11 +2,11 @@
 
 ## Overview
 
-**PagoPA** is the payment QR standard of the Italian public administration. Every invoice issued by an Italian public-administration body (municipalities, universities, healthcare, tax authorities) carries a PagoPA QR code. DocBits decodes the payload and returns all four required payment fields in the document API response.
+**PagoPA** is the payment QR standard of the Italian public administration. Every invoice issued by an Italian public-administration body (municipalities, universities, healthcare, tax authorities) carries a PagoPA QR code. DocBits decodes the payload and returns the payment fields in the document API response.
 
 ### Feature Overview
 
-PagoPA payloads are compact and strictly structured: exactly **five pipe-separated fields** on a single line. Amounts are encoded in **cents** (integer) and automatically converted to a euro decimal by the extractor. The leading zeros of the `codice_avviso` (18-digit payment notice) are preserved — they must never be parsed as integer because the notice is a fixed-width identifier.
+PagoPA payloads are compact and strictly structured: exactly **six pipe-separated segments** on a single line. Amounts are encoded in **cents** (integer) and automatically converted to a euro decimal by the extractor. The leading zeros of the `codice_avviso` (18-digit payment notice) are preserved — they must never be parsed as integer because the notice is a fixed-width identifier.
 
 #### Key Benefits
 
@@ -18,7 +18,7 @@ PagoPA payloads are compact and strictly structured: exactly **five pipe-separat
 ### Detection
 
 - Magic prefix: `PAGOPA|002|`
-- Exactly **5 pipe-separated fields** after the prefix: `PAGOPA|002|<codice_avviso>|<fiscal_code_creditor>|<amount_cents>|<auth>`
+- Exactly **4 pipe-separated fields** after the `PAGOPA|002|` prefix: `PAGOPA|002|<codice_avviso>|<fiscal_code_creditor>|<amount_cents>|<auth>`
 - **EUR-only** — no other currency is valid under the specification
 
 ### Extracted Fields

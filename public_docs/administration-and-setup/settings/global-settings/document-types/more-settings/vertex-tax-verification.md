@@ -20,6 +20,13 @@ The result message names the amounts, for example: *Rejected: vendor tax $380.00
 
 Users open the result from the vertex icon in the dashboard row of the document. The **Vertex Tax Verification** screen shows a banner (**Verification Failed** with the message, or **Verification Successful**), the fields of the layout you designed and the Vertex tables with the tax per line.
 
+The screen also handles the two layout buttons that continue or return the document:
+
+* An **Approve** button starts the normal release: the document goes to approval when approval is enabled for the document type, otherwise it is exported.
+* A **Restart workflow** button sends the document back to validation. Open approval tasks for the document are rejected and the field validation screen opens, so a user can correct the invoice before it is checked again.
+
+Which of the two buttons a user sees depends on the layout you designed for the document type.
+
 {% hint style="info" %}
 The verification only runs for document types that have an export configuration of type **Vertex**. Without one, the document continues without verification.
 {% endhint %}

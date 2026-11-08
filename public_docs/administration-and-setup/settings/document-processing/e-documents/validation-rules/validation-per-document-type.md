@@ -8,7 +8,7 @@ Os administradores decidem, para cada tipo de documento, se o DocBits valida as 
 
 Vá a **Definições → Documentos eletrónicos → Validação de faturas eletrónicas**. O separador **Regras e políticas** começa com a tabela **Validação para cada tipo de documento**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-pt-20261104.png" alt="Validação e bloqueio por tipo de documento. Os nomes configurados estão ocultos. Exemplo em Dev."><figcaption><p>Validação e bloqueio por tipo de documento. Os nomes configurados estão ocultos. Exemplo em Dev.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-validation-settings-pt-20261104.png" alt="Validação e bloqueio por tipo de documento. Os nomes configurados estão ocultos. Exemplo em Dev."><figcaption><p>Validação e bloqueio por tipo de documento. Os nomes configurados estão ocultos. Exemplo em Dev.</p></figcaption></figure>
 
 | Interruptor | O que faz |
 | --- | --- |
@@ -22,7 +22,7 @@ Se um tipo de documento tiver substituições por subtipo, a tabela mostra uma n
 1. Selecione o interruptor que quer alterar.
 2. O DocBits mostra **Confirme a alteração de validação.** com o tipo de documento e a alteração, por exemplo *QUOTE: Ativado → Ligado*.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-confirm-pt-20261104.png" alt="Confirmação de uma alteração das definições. A alteração foi cancelada para esta captura."><figcaption><p>Confirmação de uma alteração das definições. A alteração foi cancelada para esta captura.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-validation-confirm-pt-20261104.png" alt="Confirmação de uma alteração das definições. A alteração foi cancelada para esta captura."><figcaption><p>Confirmação de uma alteração das definições. A alteração foi cancelada para esta captura.</p></figcaption></figure>
 
 3. Leia a nota: **Os relatórios já guardados não serão alterados.** A alteração aplica-se apenas a novas verificações, inclusive quando reinicia o processamento de um documento.
 4. Selecione **Confirme a alteração.**, ou **Cancelar** para manter a definição anterior.
@@ -31,7 +31,7 @@ Se não tiver a permissão, o DocBits mostra uma mensagem a dizer que é necess�
 
 ## Páginas relacionadas
 
-* [Validação de faturas eletrónicas](validation-rules.md)
+* [Validação de faturas eletrónicas](README.md)
 * [Registo de alterações](validation-change-log.md)
 * [Configuração da validação e versões aceites](validation-setup.md)
 * [Relatório de validação](validation-report.md)

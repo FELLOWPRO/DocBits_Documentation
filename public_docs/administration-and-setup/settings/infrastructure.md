@@ -42,7 +42,7 @@
 
 PO matching 和 Auto Accounting 是可选的。当其中之一对您组织关闭时，相应阶段显示为灰色，动画会跳过它。
 
-### 可选模块
+### Optional modules
 
 可选模块（Full-Text Search、DocFlow、Auto-Accounting、DocNet 和 PO Matching）在其卡片上带有 **active** 或 **inactive** 标记。已停用的模块会提供一个 **Activate** 按钮，带您前往启用它的页面：大多数模块是 Modules 设置，PO Matching 则是 **Document Types**，因为它按文档类型启用。
 

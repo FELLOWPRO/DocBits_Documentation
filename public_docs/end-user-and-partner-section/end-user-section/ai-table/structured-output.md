@@ -23,7 +23,7 @@ Aprire [Classificazione ed estrazione](../../../administration-and-setup/setting
 3. Impostare **Utilizzare l'estrazione strutturata (IA)** come valore dell'organizzazione. La preferenza tecnica è `USE_STRUCTURED_EXTRACTION`.
 4. Verificare testo leggibile o ingresso Vision. Le regole classiche salvate possono ancora determinare il percorso effettivo; controllare [quale percorso è stato usato](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md).
 
-<figure><img src="../../../.gitbook/assets/structured-output-settings-it-20261104.png" alt="Controlli attuali di estrazione. Structured Output è disattivato in questa configurazione esistente, quindi l&#x27;anteprima dello schema non appare. Nessuna impostazione di estrazione è stata modificata."><figcaption><p>Controlli attuali di estrazione. Structured Output è disattivato in questa configurazione esistente, quindi l&#x27;anteprima dello schema non appare. Nessuna impostazione di estrazione è stata modificata.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/structured-output-settings-it-20261104.png" alt="Controlli attuali di estrazione. Structured Output è disattivato in questa configurazione esistente, quindi l'anteprima dello schema non appare. Nessuna impostazione di estrazione è stata modificata."><figcaption><p>Controlli attuali di estrazione. Structured Output è disattivato in questa configurazione esistente, quindi l'anteprima dello schema non appare. Nessuna impostazione di estrazione è stata modificata.</p></figcaption></figure>
 
 ## 2. Impostazioni specifiche del modello di estrazione
 

@@ -40,4 +40,4 @@ For a detailed walkthrough and editing instructions, see the [**Preview File Gui
 {% embed url="https://youtu.be/9xcXZY73GmE" %}
 
 **Related Guide**:\
-For a detailed walkthrough and editing instructions, see the [**Extraction Pahts File Guide**](edi-extraction-paths-file-guide.md)
+For a detailed walkthrough and editing instructions, see the [**Extraction Paths File Guide**](edi-extraction-paths-file-guide.md)

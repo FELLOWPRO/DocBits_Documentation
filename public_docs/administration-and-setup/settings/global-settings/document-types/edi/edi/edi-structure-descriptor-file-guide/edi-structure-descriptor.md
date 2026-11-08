@@ -1,6 +1,6 @@
 # EDI Structure descriptor
 
-The primary goal of the structure descriptor is to outline the elements of an EDI message in a logical and organized manner, making it easier to manage and parse the data. By accurately reflecting the hierarchy of the message.
+The primary goal of the structure descriptor is to outline the elements of an EDI message in a logical and organized manner, so that the data is easier to manage and parse. It reflects the hierarchy of the message.
 
 ### Elements of the structure descriptor
 
@@ -41,40 +41,44 @@ The primary goal of the structure descriptor is to outline the elements of an ED
 {
     "N1": {
         "fields": [
-            "N1",  
-            "N2",   
-            "N3",   
-            "N4"    
+            "N1",
+            "N2",
+            "N3",
+            "N4"
         ]
     },
     "N9": {
         "fields": [
-            "N9"    
+            "N9"
         ],
         "loops": {
             "MSG01": {
                 "fields": [
-                    "MSG01"   
+                    "MSG01"
+                ]
             }
         }
     },
     "IT1": {
         "fields": [
-            "IT1",   
-            "QTY",   
-            "TXI",   
-            "REF"    
+            "IT1",
+            "QTY",
+            "TXI",
+            "REF"
+        ],
         "loops": {
             "SAC": {
                 "fields": [
-                    "SAC",   
-                    "TXI"    
+                    "SAC",
+                    "TXI"
+                ]
+            }
         }
     },
     "SAC": {
         "fields": [
-            "SAC",   
-            "TXI"    
+            "SAC",
+            "TXI"
         ]
     }
 }

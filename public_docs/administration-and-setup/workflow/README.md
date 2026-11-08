@@ -112,10 +112,6 @@ O Motor de Fluxo de Trabalho DocBits opera em um princípio básico, mas poderos
 
 Ao reunir esses três componentes—Gatilho, Condição e Ação—o Motor de Fluxo de Trabalho DocBits permite aos usuários criar fluxos de trabalho altamente personalizados e eficientes. Esta abordagem modular não apenas simplifica o processo de configuração de automações, mas também oferece a flexibilidade para criar fluxos de trabalho complexos capazes de lidar com uma ampla gama de tarefas e processos.
 
-### Conclusão
-
-A regra "Easy When-And-Then" do Motor de Fluxo de Trabalho DocBits exemplifica o compromisso do motor em fornecer uma plataforma amigável ao usuário para automatizar processos. Esta regra direta, ao dividir a automação nos elementos essenciais de Gatilho, Condição e Ação, torna mais fácil para os usuários conceituar, criar e gerenciar fluxos de trabalho. Seja você novo na automação de fluxos de trabalho ou um profissional experiente, o Motor de Fluxo de Trabalho DocBits oferece uma ferramenta eficiente e acessível para aumentar a produtividade e otimizar as operações.
-
 ## Percurso de principiante a especialista
 
 [Percurso de principiante a especialista](workflow-learning-path.md). Percorra os níveis por ordem. Ler não basta: cada nível termina com configuração própria, expectativa verificável e provas. P0 evita erros fundamentais de execução; P1 aprofunda dados, decisões de negócio e integrações.

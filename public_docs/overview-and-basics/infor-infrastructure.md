@@ -16,7 +16,7 @@ O manuseio de documentos é fácil com o Docbits. Todos os documentos enviados s
 
 ### Segurança do tráfego
 
-Permitimos apenas conexões seguras por HTTPS para comunicar com nossos servidores. Isso garante que todos os dados transferidos sejam criptografados, mantendo suas informações sensíveis seguras e protegidas. É como ter um segurança para seus dados, 24 horas por dia, 7 dias por semana.
+A comunicação com nossos servidores usa apenas HTTPS. Os dados são criptografados durante a transmissão.
 
 ### Infor Cloud
 

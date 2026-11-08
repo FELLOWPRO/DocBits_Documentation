@@ -1,6 +1,6 @@
 # Tabela de IA
 
-Explore as capacidades revolucionárias do **DocBits**, uma ferramenta de manuseio de documentos de última geração que simplifica as complexidades da extração de tabelas, correspondência de Pedido de Compra (PO) e gerenciamento de faturas de custo.
+O DocBits permite extrair tabelas, fazer a correspondência com pedidos de compra (PO) e processar faturas de custo.
 
 {% embed url="https://youtu.be/89uEFyKKLCk" %}
 

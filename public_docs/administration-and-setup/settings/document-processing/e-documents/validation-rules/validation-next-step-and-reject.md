@@ -6,9 +6,9 @@ Po przeczytaniu [raportu walidacyjnego](validation-report.md) raport podpowiada,
 
 ## Co zrobić dalej
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-next-step-pl-20261104-v2.png" alt="Ocena, następny krok i działania w raporcie."><figcaption><p>Ocena, następny krok i działania w raporcie.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-next-step-pl.png" alt="Ocena, następny krok i działania w raporcie."><figcaption><p>Ocena, następny krok i działania w raporcie.</p></figcaption></figure>
 
-**Ocena** mówi jednym zdaniem, czy faktura jest zgodna. Blok **Następny krok** mówi, co zrobić:
+**Assessment** mówi jednym zdaniem, czy faktura jest zgodna. Blok **Next step** mówi, co zrobić:
 
 | Wynik | Następny krok |
 | --- | --- |
@@ -17,18 +17,18 @@ Po przeczytaniu [raportu walidacyjnego](validation-report.md) raport podpowiada,
 
 Przyciski na końcu raportu:
 
-* **Odrzuć dokument**: otwiera okno odrzucenia (patrz niżej).
-* **Raport (HTML)** i **Raport (XML)**: pobierają raport, na przykład aby wysłać go dostawcy.
-* **Zamknij**: wraca do dokumentu.
+* **Reject document**: otwiera okno odrzucenia (patrz niżej).
+* **Report (HTML)** i **Report (XML)**: pobierają raport, na przykład aby wysłać go dostawcy.
+* **Close** (lub **Back to document**): wraca do dokumentu.
 
 ## Odrzucanie dokumentu
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-reject-dialog-pl-20261104-v2.png" alt="Okno odrzucenia fikcyjnej faktury. Odrzucenie zostało anulowane."><figcaption><p>Okno odrzucenia fikcyjnej faktury. Odrzucenie zostało anulowane.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-reject-dialog-pl.png" alt="Okno odrzucenia fikcyjnej faktury. Odrzucenie zostało anulowane."><figcaption><p>Okno odrzucenia fikcyjnej faktury. Odrzucenie zostało anulowane.</p></figcaption></figure>
 
-1. W raporcie wybierz **Odrzuć dokument**.
-2. Sprawdź **Powód**. DocBits wypełnia go na podstawie błędów z raportu. Możesz edytować tekst.
-3. Wybierz **Odrzuć dokument**, aby potwierdzić. Status zmienia się na **Odrzucony**. Powód jest zapisywany jako notatka, a raport pozostaje w dokumencie.
+1. W raporcie wybierz **Reject document**.
+2. Sprawdź **Reason**. DocBits wypełnia go na podstawie błędów z raportu. Możesz edytować tekst.
+3. Wybierz **Reject document**, aby potwierdzić. Status zmienia się na **Rejected**. Powód jest zapisywany jako notatka, a raport pozostaje w dokumencie.
 
-Wybierz **Anuluj**, aby zostawić dokument bez zmian.
+Wybierz **Cancel**, aby zostawić dokument bez zmian.
 
-> **Odrzuć dokument** widzą tylko użytkownicy, którzy mogą edytować dokumenty. Przycisk jest ukryty, gdy dokument jest już odrzucony lub zakończony.
+> **Reject document** widzą tylko użytkownicy, którzy mogą edytować dokumenty. Przycisk jest ukryty, gdy dokument jest już odrzucony lub zakończony.

@@ -4,7 +4,7 @@ Esportazioni al sistema di gestione documentale (IDM):
 
 <figure><img src="../../../../../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
 
-Esportato in Infor LN:
+Esportato in Infor ERP / SAP:
 
 <figure><img src="../../../../../../.gitbook/assets/image2-1.png" alt=""><figcaption></figcaption></figure>
 

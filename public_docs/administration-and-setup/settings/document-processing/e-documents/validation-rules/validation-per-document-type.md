@@ -8,7 +8,7 @@ Les administrateurs décident, pour chaque type de document, si DocBits valide l
 
 Accédez à **Paramètres → Documents électroniques → Validation des factures électroniques**. L'onglet **Règles et politique** commence par le tableau **Validation pour chaque type de document**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-fr-20261104.png" alt="Validation et blocage par type de document. Les noms configurés sont masqués. Exemple sur Dev."><figcaption><p>Validation et blocage par type de document. Les noms configurés sont masqués. Exemple sur Dev.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-validation-settings-fr-20261104.png" alt="Validation et blocage par type de document. Les noms configurés sont masqués. Exemple sur Dev."><figcaption><p>Validation et blocage par type de document. Les noms configurés sont masqués. Exemple sur Dev.</p></figcaption></figure>
 
 | Interrupteur | Ce qu'il fait |
 | --- | --- |
@@ -22,7 +22,7 @@ Si un type de document a des exceptions pour des sous-types, le tableau affiche 
 1. Cliquez sur l'interrupteur que vous voulez modifier.
 2. DocBits affiche **Confirmer la modification de validation** avec le type de document et la modification, par exemple *QUOTE : activer la validation*.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-confirm-fr-20261104.png" alt="Confirmation d’une modification des paramètres. La modification a été annulée pour cette capture."><figcaption><p>Confirmation d’une modification des paramètres. La modification a été annulée pour cette capture.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-validation-confirm-fr-20261104.png" alt="Confirmation d’une modification des paramètres. La modification a été annulée pour cette capture."><figcaption><p>Confirmation d’une modification des paramètres. La modification a été annulée pour cette capture.</p></figcaption></figure>
 
 3. Lisez la remarque : **Les rapports déjà enregistrés restent inchangés.** La modification s'applique uniquement aux nouveaux contrôles, y compris en cas de redémarrage du traitement d'un document.
 4. Cliquez sur **Confirmer la modification**, ou sur **Annuler** pour conserver l'ancien paramètre.
@@ -31,7 +31,7 @@ Si vous n'avez pas l'autorisation, DocBits affiche un message indiquant qu'un ad
 
 ## Pages associées
 
-* [Validation des factures électroniques](validation-rules.md)
+* [Validation des factures électroniques](README.md)
 * [Journal des modifications](validation-change-log.md)
 * [Configuration de la validation et versions acceptées](validation-setup.md)
 * [Rapport de validation](validation-report.md)

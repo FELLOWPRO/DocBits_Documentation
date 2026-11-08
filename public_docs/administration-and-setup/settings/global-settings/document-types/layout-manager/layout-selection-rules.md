@@ -2,223 +2,230 @@
 
 ## Visão geral
 
-Um **layout** decide quais campos e grupos um usuário vê — e em que ordem — nas telas de **validação**, **aprovação**, **rejeição** e **revisão** de um documento. Você cria os layouts no [Layout Manager](README.md).
+Um **layout** decide quais campos e grupos um utilizador vê — e em que ordem — nos ecrãs de **validação**, **aprovação**, **rejeição** e **revisão** de um documento. Você cria os layouts no [Layout Manager](./).
 
-Classicamente, o DocBits escolhia o layout pela **origem** do documento: o país ou a região obtidos das configurações de idioma do documento, como `DE` ou `US`. Cada origem tinha sua própria cópia do layout, e nada mais podia influenciar a escolha.
+Classicamente, o DocBits escolhia o layout pela **origem** do documento: o país ou a região obtidos das configurações de idioma do documento, como `DE` ou `US`. Cada origem tinha a sua própria cópia do layout, e nada mais podia influenciar a escolha.
 
-Com as **regras de seleção de layout**, os layouts passam a ser blocos reutilizáveis, independentes da origem, e as **regras** decidem qual layout um documento recebe:
+Com as **regras de seleção de layout**, os layouts passam a ser blocos reutilizáveis independentes da origem, e as **regras** decidem qual layout um documento recebe:
 
-> *Quando* o documento atende a uma condição, *então* ele recebe este layout. As regras são verificadas de cima para baixo; **a primeira regra que corresponder vence**. Se nenhuma regra corresponder, é usado o **layout padrão**.
+> *Quando* o documento cumpre uma condição, *então* recebe este layout. As regras são verificadas de cima para baixo; **a primeira regra que corresponder vence**. Se nenhuma regra corresponder, é usado o **layout padrão**.
 
-A origem continua disponível — como uma condição entre muitas. Uma regra também pode considerar o fornecedor, o valor, o status do documento, o método de extração ou qualquer campo do cabeçalho.
+A origem continua disponível — como uma condição entre muitas. Uma regra pode igualmente considerar o fornecedor, o valor, o estado do documento, o método de extração ou qualquer campo do cabeçalho.
 
 ### Problemas que elas resolvem
 
-| Requisito | Layouts clássicos baseados na origem | Com regras de seleção |
-| --- | --- | --- |
-| As faturas de um fornecedor precisam de campos extras (projeto, número aduaneiro) | impossível sem uma nova origem | regra *Supplier ID is 20723* → layout "Invoice with project fields" |
-| Os documentos de DE, AT e CH devem ter a mesma aparência | três cópias do mesmo layout para manter | um layout, uma regra por origem (ou um grupo ANY) apontando para ele |
-| As faturas eletrônicas precisam de uma tela mais simples do que os PDFs digitalizados | não é possível | regra *Extraction Method is ELECTRONIC_DOCUMENT* → layout "E-invoice" |
-| As faturas de alto valor precisam de mais campos na tela de aprovação | não é possível | regra de Approval *Total Amount greater than 10000* → layout "High value approval" |
-| O segundo aprovador deve ver uma tela diferente da do primeiro | tipo de layout separado "segunda aprovação" | regra de Approval *Document Status is Pending second approval* → layout "Second approval" |
+| Requisito                                                          | Layouts clássicos baseados na origem        | Com regras de seleção                                                                 |
+| ------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------- |
+| As faturas de um fornecedor precisam de campos extra (projeto, número aduaneiro) | impossível sem uma nova origem              | regra _Supplier ID is 20723_ → layout "Invoice with project fields"                   |
+| Os documentos de DE, AT e CH devem ter o mesmo aspeto               | três cópias do mesmo layout a manter        | um layout, uma regra por origem (ou um grupo ANY) a apontar para ele                  |
+| As faturas eletrónicas precisam de um ecrã mais simples do que os PDF digitalizados | não é possível                              | regra _Extraction Method is ELECTRONIC\_DOCUMENT_ → layout "E-invoice"                |
+| As faturas de valor elevado precisam de mais campos no ecrã de aprovação | não é possível                              | regra de Approval _Total Amount greater than 10000_ → layout "High value approval"    |
+| O segundo aprovador deve ver um ecrã diferente do primeiro          | tipo de layout separado "second approval"   | regra de Approval _Document Status is Pending second approval_ → layout "Second approval" |
 
 ## Ativar os layouts baseados em regras
 
 Os layouts baseados em regras são ativados **por tipo de documento** por um **administrador da organização**.
 
-1. Acesse **Definições → Definições gerais → Document Types**.
-2. Clique no ícone de **configurações** (engrenagem) no card do tipo de documento.
-3. Abra **Gerenciar layouts** e ative o interruptor.
+1. Aceda a **Settings → Document Processing → Document Types**.
+2. Clique no ícone de **settings** (engrenagem) no cartão do tipo de documento.
+3. Abra **Manage Layouts** e ligue o interruptor.
 
-<figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="O interruptor Manage Layouts"><figcaption><p>O interruptor Manage Layouts nas configurações adicionais de um tipo de documento</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/lsr-manage-layouts-toggle-en-20261102.png" alt="A secção Manage Layouts nas configurações adicionais de um tipo de documento, com o subtítulo Enable Layout Management, e o interruptor Manage Layouts ligado."><figcaption><p>O interruptor Manage Layouts nas configurações adicionais de um tipo de documento</p></figcaption></figure>
+<!-- English source image: lsr-manage-layouts-toggle-en-20261102.png -->
 
-O link **Layouts** no card do tipo de documento agora abre **Regras de layout e seleção**.
+O link **Layouts** no cartão do tipo de documento passa a abrir **Layouts & Selection Rules**.
 
-### O que acontece quando você o ativa
+### O que acontece quando o ativa
 
-O DocBits converte seus layouts existentes baseados em origem em regras — uma única vez, para este tipo de documento e para cada tela:
+O DocBits converte os layouts existentes baseados na origem em regras — uma única vez, para este tipo de documento e para cada ecrã:
 
 * O layout da origem **DEFAULT** passa a ser o **layout padrão** (o fallback).
-* Cada layout de uma origem específica passa a ser uma regra **"Layout for XX"**, com a condição *Document Origin is XX*, apontando para esse layout. Essas regras recebem prioridades em intervalos de 10 (por exemplo 2000, 2010, 2020 …), para que você possa posicionar suas próprias regras antes, entre ou depois delas.
+* Cada layout de uma origem específica passa a ser uma regra **"Layout for XX"** com a condição _Document Origin is XX_, a apontar para esse layout. Estas regras recebem prioridades em passos de 10 (por exemplo 2000, 2010, 2020 …), para poder colocar as suas próprias regras antes, entre ou depois delas.
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-default-row-pt.png" alt="Layout de recurso no final da lista de regras de seleção. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos. CAIR PRA TRÁS identifica o layout de recurso usado quando nenhuma regra corresponde."><figcaption><p>Layout de recurso no final da lista de regras de seleção. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos. CAIR PRA TRÁS identifica o layout de recurso usado quando nenhuma regra corresponde.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/lsr-default-layout-row-en-20261102.png" alt="O fim da lista de regras de seleção: as últimas regras de origem Layout for UY e Layout for VN, seguidas da linha FALLBACK Default layout marcada is_default, que é usada quando nenhuma regra acima corresponde."><figcaption><p>As regras de origem criadas na ativação, seguidas do layout padrão (FALLBACK)</p></figcaption></figure>
+<!-- English source image: lsr-default-layout-row-en-20261102.png -->
 
-Nada é excluído nem alterado nos próprios layouts. Logo após a ativação, portanto, cada documento recebe exatamente o layout que recebia antes. O comportamento só muda quando você adiciona ou altera regras.
+Nada é eliminado nem alterado nos próprios layouts. Logo após a ativação, cada documento recebe portanto exatamente o layout que recebia antes. O comportamento só muda quando adiciona ou altera regras.
 
-**Desativá-lo** faz o tipo de documento voltar imediatamente à seleção baseada em origem. As regras são mantidas, mas não são usadas, e voltam a valer quando você reativa o interruptor.
+**Desativá-lo** devolve o tipo de documento imediatamente à seleção baseada na origem. As regras são mantidas mas não são usadas, e voltam a ter efeito quando ligar novamente o interruptor.
 
-## A tela Layouts & Selection Rules
+## O ecrã Layouts & Selection Rules
 
-<figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-pt.png" alt="Resumo dos layouts e das regras de seleção. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos."><figcaption><p>Resumo dos layouts e das regras de seleção. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/lsr-layouts-overview-en-20261102.png" alt="O separador Layouts de Layouts and Selection Rules para o tipo de documento INVOICE: os separadores de ecrã Field Validation, Approval, Reject e Review, o filtro All, My layouts e System, o botão New layout e cartões de layout com Edit, Clone e Delete."><figcaption><p>O separador Layouts: cada layout do tipo de documento como um cartão</p></figcaption></figure>
+<!-- English source image: lsr-layouts-overview-en-20261102.png -->
 
-* **Layouts / Selection rules** (canto superior direito) alternam entre a lista de layouts e a lista de regras. Os números mostram quantos existem.
-* **Field Validation / Approval / Reject / Review** alternam a **tela**. Cada tela tem seus próprios layouts, suas próprias regras e seu próprio layout padrão — uma regra de Approval nunca altera a tela de validação.
-* Na aba **Layouts** você pode criar, editar, clonar e excluir layouts. Cada card mostra se uma regra usa o layout ("Not targeted by rules" quando nenhuma o usa). Filtre com **All / My layouts / System**; os layouts de sistema vêm com o DocBits e podem ser visualizados e clonados, mas não alterados.
+* **Layouts / Selection rules** (no cabeçalho da página) alternam entre a lista de layouts e a lista de regras. Os números mostram quantos existem.
+* **Field Validation / Approval / Reject / Review** alternam o **ecrã**. Cada ecrã tem os seus próprios layouts, as suas próprias regras e o seu próprio layout padrão — uma regra de Approval nunca altera o ecrã de validação.
+* No separador **Layouts** pode criar, editar, clonar e eliminar layouts. Cada cartão mostra se uma regra usa o layout ("Not targeted by rules" quando nenhuma usa). Filtre com **All / My layouts / System**; os layouts de sistema vêm com o DocBits e podem ser vistos e clonados, mas não alterados.
 
 {% hint style="info" %}
-A primeira e a segunda aprovação compartilham os layouts e as regras de **Aprovação**. Para dar à segunda etapa de aprovação uma tela própria, adicione uma regra de Approval com a condição *Document Status is Pending second approval* — veja o [exemplo](#telas-diferentes-para-a-primeira-e-a-segunda-aprovacao).
+A primeira e a segunda aprovação partilham os layouts e as regras de **Approval**. Para dar à segunda etapa de aprovação um ecrã próprio, adicione uma regra de Approval com a condição _Document Status is Pending second approval_ — veja o [exemplo](layout-selection-rules.md#different-screens-for-first-and-second-approval).
 {% endhint %}
 
 ## Como um layout é escolhido
 
-Cada vez que um documento é aberto, e novamente depois que é salvo, o DocBits decide o layout para a tela atual:
+Cada vez que um documento é aberto, e novamente depois de ser guardado, o DocBits decide o seu layout para o ecrã atual:
 
-1. As **regras ativas** da tela são verificadas em ordem de **prioridade** (o menor número primeiro). **A primeira regra cuja condição for verdadeira vence**, e seu layout é usado.
+1. As **regras ativas** do ecrã são verificadas por ordem de **prioridade** (o número mais baixo primeiro). **A primeira regra cuja condição é verdadeira vence**, e o seu layout é usado.
 2. Se nenhuma regra corresponder, é usado o **layout padrão**.
-3. Se também não houver um layout padrão, o DocBits volta à escolha clássica baseada em origem.
+3. Se também não houver layout padrão, o DocBits recorre à escolha clássica baseada na origem.
 
-As regras cujo layout foi excluído ou está vazio são ignoradas.
+As regras cujo layout foi eliminado ou está vazio são ignoradas.
 
 ### Um exemplo prático
 
-Regras da tela **Validação de Campo**:
+Regras do ecrã **Field Validation**:
 
-| Prioridade | Regra | Condição | Layout |
-| --- | --- | --- | --- |
-| 5 | Example Supplier invoices | *Supplier ID is HP0000278* | Invoice with project fields |
-| 10 | E-invoices | *Extraction Method is ELECTRONIC_DOCUMENT* | E-invoice |
-| 2020 | Layout for DE | *Document Origin is DE* | Field Validation Layout (DE) |
-| — | Layout padrão | — | Field Validation Layout (Base) |
+| Prioridade | Regra                 | Condição                                    | Layout                         |
+| -------- | --------------------- | ------------------------------------------- | ------------------------------ |
+| 5        | Behaelterbau invoices | _Supplier ID is HP0000278_                  | Invoice with project fields    |
+| 10       | E-invoices            | _Extraction Method is ELECTRONIC\_DOCUMENT_ | E-invoice                      |
+| 2020     | Layout for DE         | _Document Origin is DE_                     | Field Validation Layout (DE)   |
+| —        | Default layout        | —                                           | Field Validation Layout (Base) |
 
-Qual layout cada documento recebe:
+Que layout cada documento recebe:
 
-| Documento | Fornecedor | Extração | Origem | Layout | Porque |
-| --- | --- | --- | --- | --- | --- |
-| 1 | HP0000278 | fatura eletrônica | DE | Invoice with project fields | a prioridade 5 corresponde primeiro; as regras seguintes não são verificadas |
-| 2 | 10040 | fatura eletrônica | DE | E-invoice | a prioridade 5 não corresponde, a 10 sim |
-| 3 | 10040 | PDF digitalizado | DE | Field Validation Layout (DE) | apenas a regra de origem corresponde |
-| 4 | 10040 | PDF digitalizado | US | Field Validation Layout (Base) | nenhuma regra corresponde → padrão |
+| Documento | Fornecedor  | Extração  | Origem | Layout                         | Porque                                               |
+| -------- | --------- | ----------- | ------ | ------------------------------ | ----------------------------------------------------- |
+| 1        | HP0000278 | e-invoice   | DE     | Invoice with project fields    | a prioridade 5 corresponde primeiro; as regras seguintes não são verificadas |
+| 2        | 10040     | e-invoice   | DE     | E-invoice                      | a prioridade 5 não corresponde, a 10 corresponde      |
+| 3        | 10040     | scanned PDF | DE     | Field Validation Layout (DE)   | só a regra de origem corresponde                      |
+| 4        | 10040     | scanned PDF | US     | Field Validation Layout (Base) | nenhuma regra corresponde → padrão                    |
 
 **A ordem importa**: coloque as regras específicas (um fornecedor) acima das regras gerais (um país).
 
-### Quando um usuário altera um campo que as regras consideram
+### Quando um utilizador altera um campo que as regras consideram
 
-O layout é sempre escolhido a partir dos valores **atuais** do documento. Se um usuário corrigir, por exemplo, o fornecedor na tela de validação, o DocBits escolhe o layout novamente após o salvamento, e a tela pode passar para outro layout. Nenhum dado é perdido: um campo que não faz parte do novo layout mantém seu valor; ele apenas não é exibido até que volte a ser aplicado um layout que o contenha.
+O layout é sempre escolhido a partir dos valores **atuais** do documento. Se um utilizador corrigir, por exemplo, o fornecedor no ecrã de validação, o DocBits escolhe o layout novamente após guardar, e o ecrã pode mudar para outro layout. Nenhum dado é perdido: um campo que não faz parte do novo layout mantém o seu valor; apenas não é apresentado até voltar a aplicar-se um layout que o contenha.
 
-## Gerenciar as regras de seleção
+## Gerir as regras de seleção
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-pt.png" alt="Regras de seleção com nomes configurados ocultos. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos."><figcaption><p>Regras de seleção com nomes configurados ocultos. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/lsr-rules-list-en-20261102.png" alt="O separador Selection rules do ecrã Field Validation: uma tabela com as colunas Priority, Rule e condições, Target layout, Source e Active, a primeira linha marcada FIRST, pegas de arrasto à esquerda e um menu de três pontos em cada linha."><figcaption><p>O separador Selection rules do ecrã Field Validation</p></figcaption></figure>
+<!-- English source image: lsr-rules-list-en-20261102.png -->
 
-Cada linha mostra a **prioridade** (a primeira linha é marcada como **FIRST**), o **nome e a chave da regra** com suas **condições**, o **layout de destino**, o selo de **origem** e um interruptor **Active**.
+Cada linha mostra a **prioridade** (a primeira linha está marcada **FIRST**), o **nome e a chave da regra** com as suas **condições**, o **layout de destino**, o selo de **origem** e um interruptor **Active**.
 
-| Tarefa | Como |
-| --- | --- |
-| Criar uma regra | **New rule** |
-| Editar uma regra | Clique na linha |
-| Alterar a ordem | Arraste a alça à esquerda de uma linha para cima ou para baixo. A nova ordem é salva imediatamente. |
-| Desativar uma regra | Interruptor **Active**. As regras inativas são ignoradas. |
-| Duplicar ou excluir | Menu **⋮** da linha |
-| Encontrar uma regra | **Search rules…** |
+| Tarefa                | Como                                                                                |
+| ------------------- | ---------------------------------------------------------------------------------- |
+| Criar uma regra       | **New rule**                                                                       |
+| Editar uma regra      | Clique na linha                                                                     |
+| Alterar a ordem       | Arraste a pega à esquerda de uma linha para cima ou para baixo. A nova ordem é guardada imediatamente. |
+| Desligar uma regra    | Interruptor **Active**. As regras inativas são ignoradas.                           |
+| Duplicar ou eliminar  | Menu **⋮** da linha                                                                 |
+| Encontrar uma regra   | **Search rules…**                                                                   |
 
-O selo de **origem** indica de onde vem uma regra: as regras **Sistema** vêm com o DocBits. Editar uma delas cria uma cópia para a sua organização, exibida como **Personalizado**; o original permanece intacto e pode ser restaurado. As regras que você cria são **Personalizado**.
+O selo de **origem** indica de onde vem uma regra: as regras **System** vêm com o DocBits. Editar uma cria uma cópia para a sua organização, apresentada como **Customized**; o original mantém-se intacto e pode ser reposto. As regras que cria são **Custom**.
 
 ### O layout padrão
 
-A última linha, marcada como **FALLBACK** e **is_default**, é o layout padrão: ele é usado sempre que nenhuma regra acima corresponde e não tem condição. É criado quando você ativa o recurso (a partir do layout da origem DEFAULT).
+A última linha, marcada **FALLBACK** e **is\_default**, é o layout padrão: é usado sempre que nenhuma regra acima corresponder e não tem condição. É criado quando ativa a funcionalidade (a partir do layout da origem DEFAULT).
 
 {% hint style="info" %}
-Para usar outro layout de fallback, crie uma regra **sem nenhuma condição** e atribua-lhe o maior número de prioridade, para que seja verificada por último. Ela corresponde a todos os documentos que nenhuma regra anterior atendeu, antes de se chegar ao padrão.
+Para usar outro layout de fallback, crie uma regra **sem qualquer condição** e dê-lhe o número de prioridade mais alto, para que seja verificada em último lugar. Corresponde a todos os documentos que nenhuma regra anterior correspondeu, antes de se chegar ao padrão.
 {% endhint %}
 
 ## Criar uma regra
 
-Clique em **New rule** na aba Selection rules da tela que você quer alterar.
+Clique em **New rule** no separador Selection rules do ecrã que pretende alterar.
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-pt.png" alt="Âmbito, condições e layout de destino de uma regra de seleção. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos."><figcaption><p>Âmbito, condições e layout de destino de uma regra de seleção. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/lsr-rule-editor-en-20261104.png" alt="O editor de regras de seleção de layout para uma fatura: a frase de resumo no topo, depois Step 1 Scope and priority com Rule name, Rule key, Document Type, Layout Type, Priority e uma caixa Log execution, Step 2 Applies when com a condição Document Origin is AR e os botões Add Condition e Add nested group, Step 3 Target layout com o Field Validation Layout (AR) selecionado, e o painel de pré-visualização em tempo real à direita com Sample document, matched_by, Resolved layout, Priority hit e watched_fields."><figcaption><p>O editor de regras: âmbito e prioridade, as condições, o layout de destino e a pré-visualização em tempo real do que a regra faria.</p></figcaption></figure>
+<!-- English source image: lsr-rule-editor-en-20261104.png -->
 
-A frase no topo resume a regra à medida que você a constrói — "When header.supplier_id = HP0000278, an INVOICE document gets the Field Validation Layout (Base) layout for Field validation. Checked at priority 5 — the first matching rule wins."
+A frase no topo resume a regra à medida que a constrói — "When doc.doc_origin = AR, an INVOICE document gets the origin-ar layout for Field validation. Checked at priority 0 — the first matching rule wins."
 
-### Etapa 1 — Escopo e prioridade
+### Step 1 — Scope & priority
 
-| Configuração | O que faz |
-| --- | --- |
-| **Rule Name** | Exibido na lista de regras. Descreva o caso de negócio: "Example Supplier invoices", "E-invoices", "High value approval". |
-| **Rule key** | Gerada a partir do nome; permanece a mesma quando você renomeia a regra. |
-| **Tipo de documento** / **Tipo de layout** | O tipo de documento e a tela para os quais a regra vale. Obtidos do local onde você clicou em **New rule**. |
-| **Prioridade** | Os números menores são verificados primeiro. Deixe intervalos (5, 10, 20 …) para poder inserir regras depois. |
+| Configuração                        | O que faz                                                                                                          |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Rule Name**                       | Apresentado na lista de regras. Descreva o caso de negócio: "Behaelterbau invoices", "E-invoices", "High value approval". |
+| **Rule key**                        | Gerada a partir do nome; mantém-se igual quando renomeia a regra.                                                  |
+| **Document Type** / **Layout type** | O tipo de documento e o ecrã a que a regra se destina. Obtidos do local onde clicou em **New rule**.               |
+| **Priority**                        | Os números mais baixos são verificados primeiro. Deixe intervalos (5, 10, 20 …) para poder inserir regras depois.   |
+| **Log execution**                   | Regista cada avaliação da regra, para poder seguir mais tarde porque é que um documento correspondeu ou não. Deixe desligado até precisar desse rasto. |
 
-### Passo 2 — Condições de aplicação (Applies when)
+### Step 2 — Applies when
 
-A condição que um documento deve atender. Você pode usar:
+A condição que um documento tem de cumprir. Pode usar:
 
-* **atributos do documento**: Document Origin, Extraction Method, Document Status, Sub Document Type,
-* **campos do cabeçalho**: Supplier ID, Total Amount, Currency, Purchase Order e todos os demais campos do tipo de documento,
+* **document attributes**: Document Origin, Extraction Method, Document Status, Sub Document Type,
+* **header fields**: Supplier ID, Total Amount, Currency, Purchase Order e todos os outros campos do tipo de documento,
 * um **caminho JSON personalizado** (Advanced).
 
 As colunas de tabela não estão disponíveis: o layout é escolhido uma única vez para o documento inteiro.
 
-Deixe a etapa vazia para corresponder a todos os documentos nessa prioridade. Como as condições funcionam — ALL / ANY, grupos aninhados, todos os operadores, valores vazios, maiúsculas/minúsculas — é explicado em [Condições da regra (Applies when)](../rule-conditions-applies-when.md).
+Deixe a etapa vazia para corresponder a todos os documentos nesta prioridade. Como funcionam as condições — ALL / ANY, grupos aninhados, todos os operadores, valores vazios, maiúsculas/minúsculas — está explicado em [Rule Conditions (Applies when)](../rule-conditions-applies-when.md).
 
-### Etapa 3 — Layout de destino
+### Step 3 — Target layout
 
-Clique no layout que o documento deve receber. A lista mostra seus próprios layouts e os layouts de sistema da tela selecionada. Um layout não pode ser excluído enquanto uma regra ainda apontar para ele.
+Clique no layout que o documento deve receber. A lista mostra os seus próprios layouts e os layouts de sistema do ecrã selecionado. Um layout não pode ser eliminado enquanto uma regra ainda apontar para ele.
 
 ### Pré-visualização em tempo real · /resolve
 
-O painel à direita mostra o que a regra faz com um documento de exemplo que tem os valores das suas condições:
+O painel à direita mostra o que a regra faz para um documento de exemplo com os valores das suas condições:
 
-| Linha | Significado |
-| --- | --- |
-| **Documento de exemplo** | Os valores usados na pré-visualização, obtidos das suas condições |
-| **matched_by** | `rule` se uma regra correspondeu; caso contrário, o padrão |
-| **Layout resolvido** | O layout que o documento de exemplo receberia |
-| **Prioridade da regra correspondente** | A prioridade da regra que correspondeu |
-| **watched_fields** | Os campos dos quais a escolha do layout depende. Quando um usuário altera um deles, o layout é escolhido novamente. |
+| Linha               | Significado                                                                                            |
+| ------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Sample document** | Os valores usados na pré-visualização, obtidos das suas condições                                      |
+| **matched\_by**     | `rule` se uma regra correspondeu, caso contrário o padrão                                              |
+| **Resolved layout** | O layout que o documento de exemplo receberia                                                          |
+| **Priority hit**    | A prioridade da regra que correspondeu                                                                 |
+| **watched\_fields** | Os campos de que depende a escolha do layout. Quando um utilizador altera um deles, o layout é escolhido novamente. |
 
-Clique em **Criar regra** (ou **Regra de salvar**, ao editar) para salvar. **Cancelar** volta à lista de regras.
+Clique em **Create Rule** (ou **Save rule** ao editar) para guardar. **Cancel** volta à lista de regras.
 
 ## Exemplos
 
-### Campos extras para um fornecedor
+### Campos extra para um fornecedor
 
-Tela **Validação de Campo** · prioridade **5** · *Supplier ID is HP0000278* · destino *Invoice with project fields* (um clone do seu layout padrão com os campos adicionais de projeto e centro de custo).
+Ecrã **Field Validation** · prioridade **5** · _Supplier ID is HP0000278_ · destino _Invoice with project fields_ (um clone do seu layout padrão com os campos adicionais de projeto e centro de custo).
 
 ### Um layout para vários países
 
-Tela **Validação de Campo** · prioridade **100** · **Qualquer uma das condições**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · destino *DACH invoice*. Desative as regras migradas "Layout for AT" e "Layout for CH" se elas apontarem para cópias mais antigas.
+Ecrã **Field Validation** · prioridade **100** · **ANY of**: _Document Origin is Deutsch_, _Document Origin is Austria_, _Document Origin is Switzerland_ · destino _DACH invoice_. Desative as regras migradas "Layout for AT" e "Layout for CH" se apontarem para cópias mais antigas.
 
-### Uma tela mais simples para faturas eletrônicas
+### Um ecrã mais simples para faturas eletrónicas
 
-Tela **Validação de Campo** · prioridade **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · destino *E-invoice* (sem campos relacionados ao OCR).
+Ecrã **Field Validation** · prioridade **10** · _Extraction Method is ELECTRONIC\_DOCUMENT_ · destino _E-invoice_ (sem campos relacionados com OCR).
 
-### Uma tela de aprovação mais rigorosa para valores altos
+### Um ecrã de aprovação mais rigoroso para montantes elevados
 
-Tela **Aprovação** · prioridade **10** · *Total Amount greater than 10000* · destino *High value approval* (exibindo centro de custo, responsável pelo orçamento e número do contrato).
+Ecrã **Approval** · prioridade **10** · _Total Amount greater than 10000_ · destino _High value approval_ (a mostrar centro de custo, responsável pelo orçamento e número do contrato).
 
-### Telas diferentes para a primeira e a segunda aprovação
+### Ecrãs diferentes para a primeira e a segunda aprovação
 
-Tela **Aprovação** · prioridade **5** · *Document Status is Pending second approval* · destino *Second Approval Layout*. Os documentos na primeira etapa de aprovação não correspondem e recebem o layout padrão de Approval.
+Ecrã **Approval** · prioridade **5** · _Document Status is Pending second approval_ · destino _Second Approval Layout_. Os documentos na primeira etapa de aprovação não correspondem e recebem o layout padrão de Approval.
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status-pt.png" alt="Rascunho de regra de seleção de layout sem guardar. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos."><figcaption><p>Rascunho de regra de seleção de layout sem guardar. O tipo de layout Field validation permanece em inglês e refere-se à validação de campos.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/lsr-rule-editor-approval-en-20261104.png" alt="Uma regra de seleção de Approval no editor: Rule name Layout for DE, prioridade 2000, as condições Document Status is Pending second approval e Document Origin is Deutsch, o layout de destino Second Approval Layout (DE), e a pré-visualização em tempo real a mostrar o documento de exemplo, matched_by rule, o layout resolvido e priority hit 2000."><figcaption><p>Uma regra de Approval para a segunda etapa de aprovação — a pré-visualização à direita mostra já que esta regra vence com prioridade 2000.</p></figcaption></figure>
+<!-- English source image: lsr-rule-editor-approval-en-20261104.png -->
 
-### Uma tela de rejeição especial para alguns fornecedores
+### Um ecrã de rejeição especial para alguns fornecedores
 
-Tela **Rejeitar** · prioridade **10** · *Supplier ID is one of* `10040, 10041` · destino *Reject with reason codes*.
+Ecrã **Reject** · prioridade **10** · _Supplier ID is one of_ `10040, 10041` · destino _Reject with reason codes_.
 
 ## Boas práticas
 
 * **O específico antes do geral.** Regras de fornecedor acima das regras de país, regras de país acima do padrão.
-* **Deixe intervalos de prioridade** (5, 10, 20 …) para que novas regras caibam sem renumeração.
-* **Baseie as condições em campos confiáveis.** Fornecedor e origem são definidos cedo e raramente mudam. Condições sobre campos que os usuários editam com frequência fazem a tela trocar de layout enquanto eles trabalham.
-* **Clone, não comece do zero.** Clone seu layout padrão e ajuste-o, para que todos os layouts mantenham a mesma estrutura básica.
-* **Verifique a pré-visualização em tempo real** e abra um documento real de cada tipo após alterar as regras.
-* **Mantenha um padrão útil** para cada tela, para que nenhum documento fique sem layout.
+* **Deixe intervalos de prioridade** (5, 10, 20 …) para que novas regras caibam sem renumerar.
+* **Baseie as condições em campos fiáveis.** O fornecedor e a origem são definidos cedo e raramente mudam. Condições em campos que os utilizadores editam com frequência fazem o ecrã trocar de layout enquanto trabalham.
+* **Clone, não comece do zero.** Clone o seu layout padrão e ajuste-o, para que todos os layouts mantenham a mesma estrutura básica.
+* **Verifique a pré-visualização em tempo real** e abra um documento real de cada tipo depois de alterar regras.
+* **Mantenha um padrão útil** para cada ecrã, para que nenhum documento fique sem layout.
 
-## Solução de problemas
+## Resolução de problemas
 
-| Sintoma | O que verificar |
-| --- | --- |
-| Um documento recebe o layout errado | Uma regra anterior corresponde primeiro. Veja as regras acima dela, ou o **Prioridade da regra correspondente** na pré-visualização. |
-| O padrão é usado embora uma regra devesse corresponder | A regra está **Active**? A condição corresponde ao valor exato (maiúsculas/minúsculas, espaços)? A regra está na aba de **tela** correta? |
-| O layout muda enquanto um usuário trabalha | Um campo em **watched_fields** foi alterado. Baseie a regra em um campo mais estável. |
-| Um layout não pode ser excluído | Uma regra ainda aponta para ele. Redirecione ou exclua essa regra primeiro. |
-| Nenhum layout é exibido | Nenhuma regra correspondeu, não há padrão e não existe layout baseado em origem para esta tela. Adicione uma regra sem condição como coringa. |
-| Nada mudou após a ativação | Esperado: a ativação reproduz a escolha anterior baseada em origem. Adicione suas próprias regras. |
-| A segunda aprovação mostra o layout da primeira aprovação | Adicione uma regra de Approval com *Document Status is Pending second approval* acima das outras regras de Approval. |
+| Sintoma                                          | O que verificar                                                                                                                        |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Um documento recebe o layout errado              | Uma regra anterior corresponde primeiro. Veja as regras acima dela, ou o **Priority hit** na pré-visualização.                        |
+| O padrão é usado embora uma regra devesse corresponder | A regra está **Active**? A condição corresponde ao valor exato (maiúsculas/minúsculas, espaços)? A regra está no separador de **ecrã** correto? |
+| O layout muda enquanto um utilizador trabalha       | Um campo em **watched\_fields** foi alterado. Baseie a regra num campo mais estável.                                                  |
+| Um layout não pode ser eliminado                 | Uma regra ainda aponta para ele. Redirecione ou elimine essa regra primeiro.                                                          |
+| Não é apresentado nenhum layout                  | Nenhuma regra correspondeu, não há padrão e não existe layout baseado na origem para este ecrã. Adicione uma regra sem condição como apanha-tudo. |
+| Nada mudou após a ativação                       | É o esperado: a ativação reproduz a escolha anterior baseada na origem. Adicione as suas próprias regras.                             |
+| A segunda aprovação mostra o layout da primeira  | Adicione uma regra de Approval com _Document Status is Pending second approval_ acima das outras regras de Approval.                  |
 
 ## Relacionados
 
-* [Condições da regra (Applies when)](../rule-conditions-applies-when.md)
+* [Rule Conditions (Applies when)](../rule-conditions-applies-when.md)
 * [Regras de Validação Personalizadas](../custom-validation-rules.md)
-* [Regras de Transformação](../transformation-rules.md)
-* [Navegando no Layout Manager](navigating-the-layout-manager.md)
+* [Regras de Transformação](../transformation-rules/)
+* [Navegar no Layout Manager](navigating-the-layout-manager.md)

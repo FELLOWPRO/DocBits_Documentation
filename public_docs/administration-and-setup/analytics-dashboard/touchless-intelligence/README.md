@@ -31,9 +31,7 @@ Ces cas de formation expliquent les fonctions du rapport. Une recommandation ou 
 
 ## Paramètres du rapport
 
-Le rapport lit quatre paramètres d'organisation qu'un administrateur tient à jour :
-
-* **Settings → Module → Dashboards & Analytics** — ils définissent l'objectif et la vue des coûts ; un champ vide signifie que DocBits utilise la valeur par défaut.
+Le rapport lit quatre paramètres d'organisation qu'un administrateur tient à jour sous **Settings → Module → Dashboards & Analytics**. Ils définissent l'objectif et la vue des coûts ; un champ vide signifie que DocBits utilise la valeur par défaut.
 
 | Paramètre | Valeur par défaut | Ce qu'il contrôle |
 | --- | --- | --- |

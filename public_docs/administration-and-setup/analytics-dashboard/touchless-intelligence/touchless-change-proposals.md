@@ -6,7 +6,7 @@
 
 Une recommandation peut s'accompagner d'une **change proposal**, une modification unique de paramètre qui devrait aider. Les administrateurs la traitent en quatre étapes :
 
-1. **Preview** : affiche la modification (valeur actuelle ➜ valeur proposée) et ce que DocBits attend. Rien n'est enregistré. **Apply** n'est possible qu'après avoir consulté un aperçu.
+1. **Preview** : affiche la modification (valeur actuelle → valeur proposée) et ce que DocBits attend. Rien n'est enregistré. **Apply** n'est possible qu'après avoir consulté un aperçu.
 2. **Apply** : enregistre exactement la modification prévisualisée. L'opération est journalisée.
 3. **Measure** : DocBits compare le taux touchless du même type de document **avant et après**, sur des périodes de même durée. Au moins **20 documents** sont nécessaires dans chaque période, sinon le résultat indique _not measurable_.
 4. **Undo** : annule la modification si cette proposition permet l'inversion. Vérifiez la disponibilité et contrôlez le paramètre restauré.

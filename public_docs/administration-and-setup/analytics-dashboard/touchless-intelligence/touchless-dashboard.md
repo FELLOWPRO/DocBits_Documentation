@@ -111,7 +111,7 @@ Pendant l'exécution, vous voyez **Queued**, **Running**, **Done**, **Already an
 
 * L'onglet fait partie du Dashboard Analytics. Votre administrateur l'active pour l'organisation. Si l'onglet manque, demandez à votre administrateur.
 * Les **administrateurs de l'organisation** le voient toujours.
-* **Settings → Roles** — un administrateur y accorde l'onglet **Analytics dashboard** au rôle des autres utilisateurs, qui le voient alors. Sans cette autorisation, seuls les administrateurs y ont accès.
+* Les autres utilisateurs le voient lorsqu'un administrateur a accordé à leur rôle l'onglet **Analytics dashboard** (**Settings → Roles**). Sans cette autorisation, seuls les administrateurs y ont accès.
 * Certaines actions sont réservées aux administrateurs : l'**AI analysis**, l'**application et l'annulation d'une modification**, les **learned rule proposals** et le **Consulting report**.
 
 Si vous n'y êtes pas autorisé, la page affiche _Action not allowed, please contact the administrator_.

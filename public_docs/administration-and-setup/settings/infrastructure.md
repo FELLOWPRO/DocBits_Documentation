@@ -1,90 +1,83 @@
 # Infrastructuur
 
-De pagina **Infrastructuur** biedt beheerders een live overzicht van waar elk onderdeel van DocBits draait (EU of VS), hoe een document door het systeem stroomt en of de achtergrondverwerking gezond is. De pagina is alleen-lezen — er wordt hier niets geconfigureerd; ze beantwoordt de vraag: *"draait alles, en blijven mijn gegevens in mijn regio?"*
+De pagina **Infrastructure** geeft beheerders een actueel overzicht van waar elk onderdeel van het platform draait (EU of US) en of de verwerking gezond is. De pagina is alleen-lezen, er wordt hier dus niets geconfigureerd.
 
-> **Toegang:** Infrastructuur is een pagina alleen voor beheerders. Open **Instellingen → Organisatie en Toegang → Infrastructuur**.
+> **Access:** Infrastructure is een pagina die alleen voor beheerders toegankelijk is. Open **Settings → Organization & Access → Infrastructure**.
 
-<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-nl.png" alt="Overzicht van de infrastructuur."><figcaption><p>Overzicht van de infrastructuur.</p></figcaption></figure>
+De pagina heeft drie tabs. Elk tabblad laadt zijn gegevens de eerste keer dat u het opent, heen en weer schakelen haalt dus niet alles opnieuw op.
 
-De pagina is verdeeld in drie tabbladen:
+| Tab | Answers |
+|-----|---------|
+| **Topology** | Waar draait elke component, en hoe reist een document door DocBits? |
+| **Processing** | Draaien de stappen van de documentverwerking, en loopt het werk achterop? |
+| **Scheduled Tasks** | Worden de terugkerende achtergrondtaken volgens schema uitgevoerd? |
 
-| Tabblad | Beantwoordt |
-|---------|-------------|
-| **Topologie** | Waar draait elk onderdeel, en staat alles in mijn regio? |
-| **Verwerking** | Draaien de verwerkingsstappen (OCR, extractie, PO-matching …) en zijn ze up-to-date? |
-| **Geplande taken** | Worden de terugkerende achtergrondtaken volgens schema uitgevoerd? |
+## Topology
 
-## Topologie
+**Topology** opent standaard. De weergave toont het platform in twee aanzichten: **Architecture** en **Process**. Met de schakelaar boven het diagram wisselt u tussen beide; de indicator ernaast toont **live** zolang de weergave zijn status streamt.
 
-Het tabblad Topologie tekent het volledige DocBits-platform als een diagram, gegroepeerd in lagen — **Edge / Web**, **Core API**, **Importeren**, **Achtergronddiensten**, **Datastores** en **Authenticatie**. Elk vak is één onderdeel (de Web-app/CDN, de API-gateway, de OCR-worker, de database, enzovoort).
+Een banner boven het diagram vat de regiocontrole samen:
 
-<figure><img src="../../.gitbook/assets/infrastructure_topology.png" alt="Topologiediagram met regiobadges"><figcaption><p>Elk onderdeel is gelabeld met de regio waarin het draait</p></figcaption></figure>
+* **Green**: alle componenten draaien in de regio van uw organisatie, en de banner noemt die regio (bijvoorbeeld **EU**).
+* **Red**: een component die als kritiek is gemarkeerd, draait buiten de regio van uw organisatie.
+* **Amber**: de melding noemt componenten die in een andere regio staan, terwijl de totale controle slaagt. Dat is een regioafwijking, geen fout.
 
-### Regiotransparantie
+### Architectuurweergave
 
-Elk onderdeel draagt een regiobadge zodat u in één oogopslag de gegevensresidentie kunt bevestigen:
+De architectuurweergave tekent het platform als rijbanen met componentkaarten, bijvoorbeeld Edge / Web, Core API, Import, Background Services en Modules. Pijlen tonen de verbindingen tussen de kaarten.
 
-| Badge | Betekenis |
-|-------|-----------|
-| **EU ✓** / **US ✓** | Het onderdeel draait in de regio van uw organisatie. |
-| **SHARED** | Een globaal onderdeel (bijv. de CDN) zonder één enkele regio — dit is verwacht en geen probleem. |
-| **Regio-afwijking** | Het onderdeel draait in een *andere* regio dan uw organisatie. Het wordt gemarkeerd zodat u het bij de support kunt aankaarten. |
+Elke kaart toont de naam van de component, een regiobadge en, bij kritieke componenten, een statusstip die groen wordt wanneer de component antwoordt en de latentie in milliseconden toont wanneer een waarde wordt gemeld.
 
-De banner bovenaan vat het resultaat samen: **"Alle onderdelen draaien in uw regio (EU)"** wanneer alles overeenkomt, of een waarschuwing als een kritiek onderdeel zich in een andere regio bevindt.
+| Badge | Meaning |
+|-------|---------|
+| **EU ✓** / **US ✓** | De component draait in de regio van uw organisatie. |
+| **SHARED** | Een globale component zoals de CDN, zonder eigen regio. Dat is normaal. |
+| **EU ⓘ** / **US ⓘ** | De component draait in een andere regio en wordt als melding gerapporteerd. |
+| **EU ⚠** / **US ⚠** | De component draait in een andere regio en wordt als fout gerapporteerd. Meld dit bij de support. |
+| Grijze badge, geen teken | De regio van deze component is niet bekend. |
 
-### Architectuur vs. Proces afspelen
+### Procesweergave
 
-Gebruik de schakelaar boven het diagram om van weergave te wisselen:
+De procesweergave animeert één document door de pipeline: de invoerbronnen **Email**, **FTP** en **Web** komen samen op **API** en gaan daarna door **OCR**, **Extraction**, **PO matching**, **Auto Accounting** en **Export**. Elke fase is verbonden met een balk voor de gegevensopslag met **Postgres** en bestandsopslag. Een bijschrift noemt de stap die op dat moment wordt geanimeerd, en de afspeelknop pauzeert of hervat de animatie.
 
-- **Architectuur** — de statische kaart van alle onderdelen en hoe ze met elkaar verbonden zijn.
-- **Proces afspelen** — animeert de reis van een document door het systeem, stap voor stap, zodat u de volgorde ziet waarin onderdelen betrokken zijn.
-
-De indicator **● live** geeft aan dat de gezondheidsinformatie in het diagram de actuele toestand van het systeem weergeeft.
+PO matching en Auto Accounting zijn optioneel. Wanneer een ervan voor uw organisatie is uitgeschakeld, is de bijbehorende fase grijs en slaat de animatie die over.
 
 ### Optionele modules
 
-Onderdelen die bij een optionele module horen (Volledige-tekst zoeken, DocFlow, Auto-Accounting, DocNet, PO-matching) tonen een badge **geactiveerd** of **gedeactiveerd**. Klikken op een gedeactiveerde module brengt u rechtstreeks naar de pagina waar u deze kunt inschakelen — **Instellingen → Module** voor de meeste modules, of **Documenttypen** voor PO-matching (die per documenttype wordt ingeschakeld).
+Optionele modules (Full-Text Search, DocFlow, Auto-Accounting, DocNet en PO Matching) dragen een badge **active** of **inactive** op hun kaart. Een gedeactiveerde module biedt een knop **Activate** die u naar de pagina brengt waar u hem inschakelt: de instellingen van Modules voor de meeste modules, of **Document Types** voor PO Matching, dat per documenttype wordt ingeschakeld.
 
-## Verwerking
+## Processing
 
-Het tabblad Verwerking toont de documentverwerkings-pijplijn voor **uw organisatie** — wanneer elke stap voor het laatst draaide en of het werk doorstroomt of zich opstapelt.
+Het tabblad **Processing** vermeldt de stappen van de documentverwerking voor uw organisatie en geeft aan of het werk doorstroomt of achteroploopt.
 
-<figure><img src="../../.gitbook/assets/prior-t004-nl.png" alt="Infrastructuurprocessen en laatste uitvoering. Relatieve tijdsaanduidingen blijven Duitstalig in het product."><figcaption><p>Infrastructuurprocessen en laatste uitvoering. Relatieve tijdsaanduidingen blijven Duitstalig in het product.</p></figcaption></figure>
+| Column | Description |
+|--------|-------------|
+| **Process** | De verwerkingsstap: Document Processing, OCR, TR-OCR, Barcode Split, Barcode Extraction, Extraction en PO Match. |
+| **Last run** | Hoe lang geleden de stap voor het laatst liep. Beweeg de muis erover voor de exacte tijdstempel. **Never run** betekent dat er nog geen document bij deze stap is aangekomen. |
+| **Status** | Een of meer badges (zie hieronder). |
 
-| Kolom | Beschrijving |
-|-------|--------------|
-| **Proces** | De verwerkingsstap — Documentverwerking, OCR, TR-OCR, Barcode-splitsing, Barcode-extractie, Extractie, PO-matching. |
-| **Laatste run** | Hoe lang geleden de stap voor het laatst draaide. Beweeg de muis erover voor de exacte tijdstempel. *"Nooit uitgevoerd"* betekent dat nog geen document deze stap heeft bereikt. |
-| **Status** | Een stoplicht-badge (zie hieronder). |
+De statusbadges zijn onafhankelijke signalen:
 
-Statusbadges:
+* Rode badge **Errors (N)**: `N` documenten zijn bij deze stap onlangs mislukt.
+* Gele badge met een aantal: `N` documenten worden op dit moment door deze stap verwerkt.
+* Groene badge **OK**: geen recente fouten en niets in de wachtrij.
 
-| Badge | Betekenis |
-|-------|-----------|
-| **OK** (groen) | Geen recente fouten en niets in de wacht — de stap is gezond. |
-| **Bezig (N)** (oranje) | `N` documenten worden momenteel door deze stap verwerkt. |
-| **Fout (N)** (rood) | `N` documenten zijn recent mislukt bij deze stap. |
+Omdat fouten en lopend werk apart worden geteld, kan een stap beide tegelijk tonen; een fout blijft dus zichtbaar terwijl andere documenten nog lopen.
 
-Fouten en *bezig* zijn onafhankelijke signalen, dus een stap kan beide badges tegelijk tonen — zo ziet u een fout zelfs terwijl ander werk nog loopt. Gebruik **Vernieuwen** (rechtsboven) om de nieuwste cijfers op te halen.
+## Scheduled Tasks
 
-## Geplande taken
+Het tabblad **Scheduled Tasks** vermeldt de terugkerende achtergrondtaken die DocBits draaiende houden, bijvoorbeeld cacheverversingen, statuswaarschuwingen, documenttime-outs en uitgaande synchronisaties. Elke rij toont of de taak op tijd wordt uitgevoerd.
 
-Het tabblad Geplande taken somt de terugkerende achtergrondtaken op die DocBits draaiende houden (cache-verversingen, statuswaarschuwingen, document-time-outs, uitgaande synchronisaties en meer) en bevestigt dat elke taak op tijd wordt uitgevoerd.
+| Column | Description |
+|--------|-------------|
+| **Task** | De naam van de geplande taak, waarbij scheidingstekens door spaties zijn vervangen. |
+| **Last run** | Hoe lang geleden de taak voor het laatst liep. Beweeg de muis erover voor de exacte tijdstempel. **Never run** betekent dat de taak nog niet is uitgevoerd. |
+| **Status** | Gezondheid van het schema (zie hieronder). |
 
-<figure><img src="../../.gitbook/assets/prior-t005-nl.png" alt="Geplande infrastructuurtaken. Relatieve tijdsaanduidingen blijven Duitstalig in het product."><figcaption><p>Geplande infrastructuurtaken. Relatieve tijdsaanduidingen blijven Duitstalig in het product.</p></figcaption></figure>
+| Status | Meaning |
+|--------|---------|
+| **On schedule** (groen) | De taak loopt volgens het verwachte interval. |
+| **Delayed** (rood) | De taak is niet op het verwachte moment gelopen. Onderzoek dit of meld het bij de support. |
+| **Unknown** (grijs) | De status van het schema kon niet worden vastgesteld. |
 
-| Kolom | Beschrijving |
-|-------|--------------|
-| **Taak** | De naam van de geplande taak. |
-| **Laatste run** | Hoe lang geleden ze voor het laatst draaide. Beweeg de muis erover voor de exacte tijdstempel; *"Nooit uitgevoerd"* betekent dat ze nog niet is gestart. |
-| **Status** | Planningsstatus (zie hieronder). |
-
-Statuswaarden:
-
-| Badge | Betekenis |
-|-------|-----------|
-| **Op schema** (groen) | De taak draait op het verwachte interval. |
-| **Vertraagd** (rood) | De taak is niet uitgevoerd toen verwacht — de moeite waard om te onderzoeken of bij de support aan te kaarten. |
-| **Onbekend** (grijs) | De planningsstatus kon niet worden bepaald. |
-
-Gebruik **Vernieuwen** om de planningsstatus op aanvraag opnieuw te controleren.
+Beide tabellen hebben een knop **Refresh** die de actuele cijfers op verzoek opnieuw laadt.

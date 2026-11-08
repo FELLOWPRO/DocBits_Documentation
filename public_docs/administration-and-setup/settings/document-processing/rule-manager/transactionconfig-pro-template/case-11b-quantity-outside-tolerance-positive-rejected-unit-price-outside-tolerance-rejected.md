@@ -17,8 +17,8 @@ The system adjusts the quantity and unit price to match the approved levels from
   * Unit Price: $50.00 per unit
   * Total Amount: $10,000.00
 * **Invoice Received:**
-  * Quantity: 220 units (outside tolerance of 10%, rejected)
-  * Unit Price: $55.00 per unit (outside tolerance of 10%, rejected)
+  * Quantity: 220 units (deviation +10%, outside the ±5% tolerance, rejected)
+  * Unit Price: $55.00 per unit (deviation +10%, outside the ±2% tolerance, rejected)
   * Total Amount: $12,100.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%

@@ -17,8 +17,8 @@ The system processes the transaction using the invoice values for both quantity 
   * Unit Price: $25.00 per unit
   * Total Amount: $5,000.00
 * **Invoice Received:**
-  * Quantity: 220 units (outside tolerance of 10%, approved)
-  * Unit Price: $27.00 per unit (outside tolerance of 8%, approved)
+  * Quantity: 220 units (deviation +10%, outside the ±5% tolerance, approved)
+  * Unit Price: $27.00 per unit (deviation +8%, outside the ±2% tolerance, approved)
   * Total Amount: $5,940.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%

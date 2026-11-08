@@ -17,7 +17,7 @@ The system adjusts the header charge to match the purchase order, processing the
   * Quantity: 1,500 units
   * Total Header Charge Amount: $6,000.00
 * **Invoice Received:**
-  * Header Charge Per Unit: $5.00 (outside tolerance of 25%, rejected)
+  * Header Charge Per Unit: $5.00 (deviation +25%, outside the ±5% tolerance, rejected)
   * Quantity: 1,500 units
   * Total Header Charge Amount: $7,500.00
 * **Tolerance Levels:**

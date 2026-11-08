@@ -14,4 +14,4 @@ If the total amount is **1500**, the rules evaluated will be:
 * **Rule 4**: Total Amount <= 4000 (matches)
 * **Rule 5**: Total Amount <= 5000 (matches)
 
-Since the priority is applied in the order **5, 4, 3, 2, 1**, the highest priority matching rule will be **Rule 5** (**GROUP_5**). The decision tree will return **GROUP_5** because **Rule 5** has the highest priority (priority 1).
+Several rules match this amount, and DocBits applies the matching rule with the highest priority. **Rule 5** carries priority 1, so the decision tree returns **GROUP_5**.

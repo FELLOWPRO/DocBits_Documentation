@@ -4,26 +4,26 @@
 
 Exportações para o sistema de gerenciamento de documentos (IDM):
 
-<figure><img src="../../../../../../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/facturx_extended_idm_export.png" alt="FacturX Extended IDM Export"><figcaption></figcaption></figure>
 
-Exportado para Infor LN:
+Exportado para Infor ERP / SAP:
 
-<figure><img src="../../../../../../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/facturx_extended_infor_ln_export.png" alt="FacturX Extended Infor ERP / SAP Export"><figcaption></figcaption></figure>
 
 Exportado para Infor M3:
 
-<figure><img src="../../../../../../.gitbook/assets/image (367).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/facturx_extended_infor_m3_export.png" alt="FacturX Extended Infor M3 Export"><figcaption></figcaption></figure>
 
 ### **Básico:**
 
 Exportações para o sistema de gerenciamento de documentos (IDM):
 
-<figure><img src="../../../../../../.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/facturx_basic_idm_export.png" alt="FacturX Basic IDM Export"><figcaption></figcaption></figure>
 
-Exportado para Infor LN:
+Exportado para Infor ERP / SAP:
 
-<figure><img src="../../../../../../.gitbook/assets/image (365).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/facturx_basic_infor_ln_export.png" alt="FacturX Basic Infor ERP / SAP Export"><figcaption></figcaption></figure>
 
 Exportado para Infor M3:
 
-<figure><img src="../../../../../../.gitbook/assets/image (366).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/facturx_basic_infor_m3_export.png" alt="FacturX Basic Infor M3 Export"><figcaption></figcaption></figure>

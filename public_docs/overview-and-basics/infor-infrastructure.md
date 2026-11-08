@@ -16,7 +16,7 @@ Documentbeheer is een fluitje van een cent met Docbits. Alle geüploade document
 
 ### Beveiliging van netwerkverkeer
 
-We staan alleen HTTPS-beveiligde verbindingen toe voor communicatie met onze servers. Dit zorgt ervoor dat alle overgedragen gegevens versleuteld zijn, waardoor uw gevoelige informatie veilig en wel blijft. Het is alsof je een beveiligingsagent voor je gegevens hebt, 24/7.
+Verbindingen met onze servers gebruiken uitsluitend HTTPS. De gegevens worden tijdens de overdracht versleuteld.
 
 ### Infor Cloud
 

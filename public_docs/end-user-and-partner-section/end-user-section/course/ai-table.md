@@ -1,6 +1,6 @@
 # AI-tabel
 
-Verken de revolutionaire mogelijkheden van **DocBits**, een geavanceerde documentverwerkingstool die de complexiteit van tabelextractie, inkooporder (PO) matching en kostenfactuurbeheer vereenvoudigt.
+DocBits ondersteunt tabelextractie, matching met inkooporders (PO) en de verwerking van kostenfacturen.
 
 {% embed url="https://youtu.be/89uEFyKKLCk" %}
 

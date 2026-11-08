@@ -15,7 +15,9 @@ Utilisez AI Table pour vérifier les lignes extraites, corriger les colonnes et 
 
 ## Quand obtenez-vous le tableau AI
 
-* Un administrateur a activé **AI Table extraction** (Settings → Document Processing → Classification and Extraction, voir [Paramètres pour les administrateurs](./#settings-for-admins)). Si l'option est désactivée, la zone du tableau affiche _AI Table will display here. Enable in …_.
+* **Settings →
+  Document Processing →
+  Classification and Extraction** : un administrateur y a activé **AI Table extraction** (voir [Paramètres pour les administrateurs](./#settings-for-admins)). Si l'option est désactivée, la zone du tableau affiche _AI Table will display here. Enable in …_.
 * Vérifiez le texte lisible ou l'entrée Vision sélectionnée. Des règles de tableau classiques enregistrées peuvent encore déterminer le chemin de tableau effectif ; vérifiez [quel chemin d'extraction a réellement été utilisé](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md).
 * Chaque colonne dispose de sa propre sélection Use AI à trois états. Vérifiez la source effective et les règles fournisseur ainsi que cette sélection ; activer Structured Output ne remplace pas tous les tableaux issus de règles.
 

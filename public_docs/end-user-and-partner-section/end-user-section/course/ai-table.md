@@ -1,6 +1,6 @@
 # Tableau AI
 
-Explorez les capacités révolutionnaires de **DocBits**, un outil de gestion de documents de pointe qui simplifie les complexités de l'extraction de tableaux, de la correspondance des bons de commande (PO) et de la gestion des factures de coûts.
+DocBits permet d’extraire des tableaux, de rapprocher les bons de commande (PO) et de traiter les factures de coûts.
 
 {% embed url="https://youtu.be/89uEFyKKLCk" %}
 

@@ -1,45 +1,45 @@
-# 变更提案和报告
+# 变更提案与报告
 
 <!-- touchless-admin-video-v2-20261104:start -->
-**视频章节（审核版）:** [建议与历史记录](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.html#chapter=10).
+**视频章节（审核版）：** [提案与历史](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.html#chapter=10)。
 <!-- touchless-admin-video-v2-20261104:end -->
 
-推荐内容可能附带一个 **变更提案** ，即一项有助于改进的设置变更。管理员分四个步骤处理：
+建议可能附带一个**变更提案**，即一项应当有所帮助的单项设置变更。管理员分四步处理：
 
-1. **预览** ：显示变更内容（当前值 → 提议值）以及 DocBits 的预期结果。不会保存任何内容。只有查看预览后，才能 **应用** 。
-2. **应用** ：准确保存预览中的变更。系统会记录此操作。
-3. **衡量** ：DocBits 会比较同一文档类型在 **变更前后** 相同时长期间内的无接触率。每个期间至少需要 **20 份文档** ，否则结果会显示为 _无法衡量_ 。
-4. **撤销** ：只有提案支持时才恢复设置。核实可用性和恢复的值。
+1. **Preview**：显示该变更（当前 → 提议值）以及 DocBits 的预期。不会保存任何内容。只有在查看过预览之后才能 **Apply**。
+2. **Apply**：准确保存预览过的变更。该操作会被记录。
+3. **Measure**：DocBits 在等长的期间内比较同一文档类型在**变更前后**的 touchless 比率。每个期间至少需要 **20 份文档**，否则会显示 _not measurable_。
+4. **Undo**：在该提案支持回退时撤销变更。请检查可用性并核实恢复后的设置。
 
 {% hint style="warning" %}
-变更前后的差异只是 **观察结果** ，并不能证明因果关系。其他因素也可能同时发生变化（例如新增供应商或季节性高峰）。
+前后差异是一种**观察**，而不是因果证明。其他因素可能同时发生变化（例如新增供应商、季节性高峰）。
 {% endhint %}
 
- **说明性示例。**  配置更改后 AP 从 52 %（210 份）到 61 %（198 份），上升 9 个百分点。包括 Pure 和仅审批，不衡量提取准确性。每个可比期间至少需 20 份已完成且符合条件的文档。前后比较是观察，不证明单一因果；Infor 更正需另行检查导入和新发票，不应假定有 DocBits 设置变更记录。
+**示例（说明性）。**您为发票应用了 _Switch on automatic PO match and export_。两周后，**Change history** 显示 AP touchless 比率从 52 %（210 份文档）变为 61 %（198 份文档）。这是 +9 pp，文档量足以计量。测得的比率包含 pure 和仅审批文档；它并不衡量提取准确率。Infor 中的源数据更正还必须对照导入的数据和后续发票检查；不要假定它是 DocBits 设置变更，也不要假定它会自动列在此历史中。
 
-管理员还会在关键指标和图表之间看到两个版块：
+管理员还会在关键指标和图表之间看到两个区域：
 
-* **改进请求** ：用户通过验证助手发送的建议，分为 **待处理** 和 **历史记录** 两个标签页。
-* **已学习的规则提案** ：DocBits 根据团队的更正学到的规则，例如“对于供应商 X，将字段 Y 中的值替换为某个值”。创建规则前，请检查它会替换团队已接受值的文档。 **激活后** 版块会显示规则生效前后目标字段的手动更正情况。
+* **Improvement requests**：用户从验证助手发送的建议，分为 **Open** 和 **History** 两个选项卡。
+* **Learned rule proposals**：DocBits 从团队的更正中学到的规则，例如“对于供应商 X，替换字段 Y 中的值”。创建规则之前，请检查它将要替换的、团队已接受过的值所在的文档。**After activation** 区域显示规则生效前后目标字段的人工更正情况。
 
-<figure><img src="../../../.gitbook/assets/touchless-consulting-report-zh.png" alt="真实中文 Dev 咨询报告的节选，显示 60 天窗口和前三项提案，不显示完整排行榜或配置检查。界面“美元”是误译，这些数字是每月估计文档数，不是金额；“萃取”和“评论提取”在这里应理解为数据提取及检查提取。报告没有应用、撤销设置或证明改善效果。"><figcaption><p>真实中文 Dev 咨询报告的节选，显示 60 天窗口和前三项提案，不显示完整排行榜或配置检查。界面“美元”是误译，这些数字是每月估计文档数，不是金额；“萃取”和“评论提取”在这里应理解为数据提取及检查提取。报告没有应用、撤销设置或证明改善效果。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-consulting-report-zh.png" alt="Consulting report，包含前三项提案、一张排名表和按领域划分的问题"><figcaption><p>Consulting report：首要提案、所有阻塞点按每月文档数和预计影响的排名，以及按领域划分的问题。示例组织，使用演示数据；供应商名称为虚构。</p></figcaption></figure>
 
-管理员可以在标签页底部找到 **咨询报告** 。点击 **创建报告** 即可加载报告。报告汇总了组织中的以下内容：
+管理员可在该选项卡底部找到 **Consulting report**。点击 **Create report** 即可加载。它会针对您的组织汇总：
 
-* **影响最大的变更** ，按排名列出，并显示各项的领域、问题、推荐操作、文档数量和每月的 **预估** 影响；
-* **每个问题所属的领域** （提取、主数据、PO 匹配、自动记账、设置、流程）；
-* **表格配置检查** ，例如按文档类型和列列出的 _未使用结构化表格输出_ 或 _表格列类型不匹配_ 。
+* **影响最大的变更**，按排名列出，每项包含领域、问题、建议操作、文档数量以及每月的**预计**影响，
+* **每个问题所属的领域**（extraction、master data、PO matching、auto accounting、settings、process），
+* **表格配置检查**，例如按文档类型和列列出的 _structured table output not used_ 或 _table column type mismatch_。
 
-影响数值均为 **估算值** 。如果报告返回 _禁止访问_ ，说明你的角色无权查看。
+影响数值均为**估算值**。如果报告返回 _forbidden_，说明您的角色无权查看。
 
-工具及人工操作分类见[Touchless 与 MCP](touchless-mcp.md)。
+关于对应的工具调用和人工操作的分类，参见 [Touchless with MCP](touchless-mcp.md)。
 
 ## 相关页面
 
-* [无接触智能](./)
-* [供应商诊断和问题集群](touchless-supplier-diagnosis.md)
+* [Touchless Intelligence](./)
+* [供应商诊断与问题集群](touchless-supplier-diagnosis.md)
 * [PO 匹配诊断](touchless-po-matching-diagnosis.md)
 
-<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+<!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 
-<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->
+<!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

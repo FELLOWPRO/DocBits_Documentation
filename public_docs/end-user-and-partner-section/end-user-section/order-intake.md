@@ -36,7 +36,7 @@ description: >-
 2. 开启**激活订单接收仪表板**。侧边栏中随即显示“订单接收”。
 3. 在**设置 › 组和权限**下为业务员的角色授予订单接收的访问权限（管理员始终拥有访问权限）。
 
-<figure><img src="../../.gitbook/assets/order-intake-settings-module-zh.png" alt="订单接收设置位于“设置 › 模块 › 订单与财务”下；末尾是“ERP 导出”部分，此处尚未设置 ERP 导出。"><figcaption><p>订单接收设置位于“设置 › 模块 › 订单与财务”下；末尾是“ERP 导出”部分，此处尚未设置 ERP 导出。</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/order-intake-settings-module-zh.png" alt="订单接收设置位于 Settings › Module › Order &#x26; Finance 下；末尾是 ERP 导出部分，此处尚未设置 ERP 导出。"><figcaption><p>订单接收设置位于 Settings › Module › Order &#x26; Finance 下；末尾是 ERP 导出部分，此处尚未设置 ERP 导出。</p></figcaption></figure>
 
 管理员在同一部分中决定模块的工作方式：
 

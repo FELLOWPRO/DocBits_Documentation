@@ -1,269 +1,310 @@
 # 分类与提取
 
-<figure><img src="../../../../.gitbook/assets/classification-general-zh-20261104.png" alt="常规选项卡及文档处理设置。组织专用条码模式已隐藏；未更改任何设置。"><figcaption><p>常规选项卡及文档处理设置。组织专用条码模式已隐藏；未更改任何设置。</p></figcaption></figure>
+[AI Table](../../../../end-user-and-partner-section/end-user-section/ai-table/README.md) · [Structured Output for Tables](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
 
-[AI Table](../../../../end-user-and-partner-section/end-user-section/ai-table/README.md) · [表格的 Structured Output](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
+## 哪个设置作用于哪个处理步骤？
 
-## 哪种设置适用于哪个流程步骤？
+<figure><img src="../../../../.gitbook/assets/process-extraction-zh-20261028.png" alt="从文件到识别数据：分别查看文档类型、数据源和提取路径。"><figcaption><p>分别查看文档类型、数据源和提取路径。该图是示意性的；您组织的活动设置决定实际行为。</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/process-extraction-zh-20261028.png" alt="从文件到识别数据: 分别查看文档类型、数据源和提取路径。"><figcaption><p>分别查看文档类型、数据源和提取路径。 该图是示意性的；您组织的活动设置决定了实际行为。</p></figcaption></figure>
+分类回答的是**“这是什么类型的文档？”**这个问题。提取回答的是**“它包含哪些值？”**。本页上的设置影响处理过程中的不同环节，不应把它们理解为一个统一的 AI 开关。
 
-分类回答了问题**“这是什么类型的文档？”**。提取答案**“它包含什么值？”**。此页面上的设置会影响不同的处理点，不应将其理解为单个 AI 开关。
+1. **准备输入：** 对于 PDF，可以使用已有的文本或 OCR；受支持的电子文档可以提供结构化值。已启用的拆分可以根据配置的条形码或二维码条件，把收到的文档分开。
+2. **确定文档类型：** 分类规则和模型把文档归入某个类型，并在必要时归入某个子类型。这一归类要与后续的字段和表格提取区分开来。
+3. **提取值：** 表格可能根据配置和适用的已保存规则走不同路径。标题字段有自己的来源标示。因此，仅凭所选的 AI 模型并不能解释每一行或每一个字段值。
+4. **追踪结果：** 在验证界面中，检查包含这些行的表格选项卡是哪一个，以及某个标题字段的来源标示是什么。如果缺少某个处理步骤，请在更改设置之前阅读文档日志。
 
-1. **准备输入：** 对于PDFs，可以使用现有文本或OCR；支持的电子文档可以提供结构化的价值。激活的拆分可以根据配置的条形码或 QR 标准分离传入文档。
-2. **确定文档类型：** 分类规则和模型将文档分配给一个类型，并在必要时分配给一个子类型。这个赋值是为了和后面的字段、表提取区分开来。
-3. **提取值：** 表可以遵循不同的路径，具体取决于配置和适用的保存规则。标头字段有自己的源指示符。因此，所选的人工智能模型本身并不能解释每一行或字段值。
-4. **跟踪结果：** 在验证屏幕中，检查哪个表选项卡包含行以及页眉字段具有哪个源指示符。如果缺少处理步骤，请在更改设置之前阅读文档日志。
+### 区分规则路径与 AI 路径
 
-### 区分规则路径和AI路径
+合适的已保存表格规则可以决定相应模板或供应商的表格提取。在没有合适规则的情况下，如果已启用 AI 表格提取，就可以走 AI 路径。个别列可以有自己的 AI 选项。某个标题字段来自 AI，并不意味着整张表格都来自 AI。
 
-适当的保存表格规则可以确定相关模板或供应商的表格提取。如果没有合适的规则，则激活AI表提取时可以使用AI路径。各个列可以有自己的 AI 选项。标头字段的 AI 来源并不意味着整个表都来自 AI。
+[使用了哪条提取路径？](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) 这份诊断指南解释了选项卡、来源标识和协议。页面 [AI 模型](ai-model.md) 说明了组织标准以及与模板相关的覆盖设置。
 
-[使用了哪条提取路径？](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) 诊断指南解释了选项卡、源标识符和日志。 [人工智能模型](ai-model.md) 页面解释了组织标准和模板相关的覆盖。
-
-<figure><img src="../../../../.gitbook/assets/site-complete-classification-extraction-zh.png" alt="当前中文“分类与提取”中的提取设置；AI、税码和成本要素选项以组织订阅及配置为准。图中的“自动提取税号”指税码提取，未更改任何开关。"><figcaption><p>当前中文“分类与提取”中的提取设置；AI、税码和成本要素选项以组织订阅及配置为准。图中的“自动提取税号”指税码提取，未更改任何开关。</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-general-overview-en-20261030.png" alt="分类与提取，包含 General、Classification Rules 和 AI Models，以及 Document Splitting 和 Document Processing"><figcaption><p>General 包含处理设置。此处能看到 AI Models，是因为该模块已启用；它的自定义分类模型与提取层级选择器是相互独立的。已存储的条形码模式已被遮盖。</p></figcaption></figure>
+<!-- English source image: dbdc-193-general-overview-en-20261030.png -->
 
 ## 概述
 
-在**Classification and Extraction**设置中，您可以：
+在**分类与提取**设置中，您可以：
 
-* 启用基于 QR 码的**文档拆分**
-* 配置**金额格式**
-* 设置**表格提取**
+* 控制上传的文档如何被**拆分**，以及处理多少页
+* 为金额比较配置**金额格式**
+* 设置**表格提取**，包括每个供应商使用的 AI 模型
 * 切换是否处理不受支持的 **ZUGFeRD** 文件
-* 定义特殊分类规则
-* 监控分类过程中使用的自定义训练 **AI 模型**
+* 定义可自动分配文档类型的**分类规则**
+* 查看 **AI Models** 及其训练过的标签
 
-本页详细介绍所有可用设置。
+该页面包含 **General** 和 **Classification Rules**，当您的组织启用了模型与标签模块时还包含 **AI Models**。**AI Models** 中的自定义分类模型和标签与 **General → Extraction** 下的提取层级选择器相互独立。
 
-## **访问分类与提取设置**
+| 选项卡 | 内容 |
+|---|---|
+| General | Document Splitting、Document Processing、Amount Formatting、Table Extraction、Electronic Document |
+| Classification Rules | 按来源名称对文档分类的正则规则 |
+| AI Models | 带标签、文档类型和优先级的自定义训练模型 |
 
-要访问**Classification and Extraction**设置，请前往：\
-**Settings → Document Processing → Classification and Extraction**
+## 访问分类与提取设置
 
+前往 **Settings → Document Types → Classification and Extraction**。
 
-## 文档拆分
+## General
 
-在**文档拆分**部分，您可以配置：上传的文档页面上出现**条形码**时，是否将该文档拆分为多个文档。
+**General** 选项卡把设置分为可折叠的区块。大多数控件在值发生变化时即保存。更改后的非空 **Barcode Pattern** 使用其验证/**Save** 操作，而表格提取版本变更需要确认。编辑控件前，请先了解组织情况与预期行为。
 
-要启用此功能：
+### Document Splitting
 
-1. 前往**文档拆分**部分。
-2.  打开下拉菜单。
+**Split** 决定当上传文档的某一页出现条形码时，是否将其拆分为多个文档。下拉列表提供：
 
-    
-3.  选择**按条形码/QR 码拆分**。
+* **Do not split uploaded documents** – 默认值；文档作为一个文件处理。
+* **Split by Barcode/QR-Code** – 在每个检测到的条形码处拆分文档。
 
-    
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-document-splitting-en-20261030.png" alt="Document Splitting，包含条形码和二维码拆分、所选的条形码类型以及被遮盖的 Barcode Pattern 字段"><figcaption><p>更改拆分方式和条形码类型前请先核对。组织专用的模式已被遮盖；未更改任何值。</p></figcaption></figure>
+<!-- English source image: dbdc-193-document-splitting-en-20261030.png -->
 
-随后，您可以：
+选择 **Split by Barcode/QR-Code** 时，会再出现两个字段：
 
-* 选择要检测的一种或多种条形码类型。
-*   指定条形码必须匹配的正则表达式模式，以触发文档拆分。
+* **Barcode Type** – 要检测的一种或多种条形码类型，例如 *CODE-128* 或 *QR-CODE*。
+* **Barcode Pattern** – 条形码值在触发拆分前必须匹配的正则表达式。留空则对所选类型的任意条形码拆分。该模式在存储前会经过验证；无效的表达式会立即报告。
 
-    
-
-拆分成功后，原始（父）文档会被删除，各页面将作为共享同一批次的独立文档继续处理。
+拆分成功后，父文档会被删除，各页作为独立文档继续处理，并共享同一个批次。
 
 <figure><img src="../../../../.gitbook/assets/anatomy-barcode-split.svg" alt="等距示意图：托盘中有八张纸，扫描仪正在读取第 6 张纸上的条形码。分隔片立在第 3 张和第 6 张纸前，将纸张分成三份文档，一根橡皮筋套住整个托盘。"><figcaption><p>以模式 <code>^INV\d{6}$</code> 为例：第 3 张和第 6 张纸上的条形码匹配，各自开始一份新文档；第 4 张纸上的条形码不匹配，不会拆分；橡皮筋代表拆分后各文档共享的批次。</p></figcaption></figure>
 
-## 金额格式
+### Document Processing
 
-在**金额格式**部分，您有两个选项：
+**Pages to process** 限制每份文档被 OCR、分类和提取的页数。
 
-* **金额比较时允许舍入：**\
-  启用后，金额比较时允许 ±0.5 的误差范围。\
-  禁用后，默认误差范围为 ±0.05。
-* **金额比较时要求完全匹配：**\
-  启用后，金额必须完全匹配，误差范围为零。\
-  禁用后，允许 ±0.05 的误差范围。
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-document-processing-en-20261030.png" alt="Document Processing，其中 Pages to process 设为 10，并说明了之后的页面仍会保存且为只读"><figcaption><p>此示例的限制为处理 10 页。该字段说明留空或填 0 表示所有页面；显示的值未被更改。</p></figcaption></figure>
+<!-- English source image: dbdc-193-document-processing-en-20261030.png -->
 
-<mark style="color:red;">**注意**</mark>：这两项设置一次只能启用一项。
+* 留空或填 **0** 表示处理所有页面。
+* 数字 *N* 将 OCR、分类和提取限制在前 *N* 页。完整文档仍会被保存、显示和导出；超出限制的页面以只读方式显示。
 
-## 表格提取
+### Amount Formatting
+
+两个开关控制金额如何与主数据和采购订单进行比较。
+
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-amount-formatting-en-20261030.png" alt="Amount Formatting，包含 Allow Rounding During Amount Comparison 和 Require Exact Match for Amount Comparison"><figcaption><p>此示例中两个金额比较开关均为关闭状态。更改任一开关前请先核对预期的策略。</p></figcaption></figure>
+<!-- English source image: dbdc-193-amount-formatting-en-20261030.png -->
+
+* **Allow Rounding During Amount Comparison** – 启用时允许 ±0.5 的容差。禁用时为 ±0.05。
+* **Require Exact Match for Amount Comparison** – 启用时金额必须完全一致，零容差。禁用时为 ±0.05。
+
+两个开关同时只能有一个处于启用状态；启用其中一个会禁用另一个。
+
+### Table Extraction
 
 {% hint style="info" %}
-**表格提取的运行前提**
+**表格提取正常工作所需的前提**
 
-* Document Types已配置**Table Columns**（Settings → Document Processing → Document Types → [表格列](../../global-settings/document-types/table-columns/README.md)）。没有列就没有可供提取填入的字段。
-* 已在下方为整个组织启用**表格提取**或 **AI 表格提取**。
-* 文档包含可读取的文本：已运行 OCR，或者数字原生 PDF 使用了 E-Text（[OCR 设置](../ocr-settings.md)）。
-* 训练数据和 AI 模型均按**供应商**区分。训练好的表格仅适用于该供应商的文档。
+* 文档类型具有**表格列**（Settings → Document Processing → Document Types → [Table Columns](../../global-settings/document-types/table-columns/README.md)）。没有列就没有可提取的目标。
+* 下文中为整个组织启用了 **Table Extraction** 或 **AI Table Extraction**。
+* 文档具有可读文本：已运行 OCR，或对原生数字 PDF 使用 E-Text（[OCR Settings](../ocr-settings.md)）。
+* 训练和 AI 模型是**按供应商**的。已训练的表格仅适用于其训练时所基于的供应商的文档。
 {% endhint %}
 
-启用**表格提取**或 **AI 表格提取**即可从文档中提取表格。无论基于 AI 还是手动训练，训练好的表格始终关联到特定供应商。
+您可以通过启用 **Table Extraction** 或 **AI Table Extraction** 来从文档中提取表格。已训练的表格（无论基于 AI 还是手动训练）始终与特定供应商绑定。
 
-**表格提取：**启用基于规则的表格提取。表格按供应商在验证页面（*转到表格提取视图*）中训练。\
-[点击此处](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md)了解如何训练。
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-table-extraction-en-20261030.png" alt="规则表格提取和 AI 表格提取的提取控件、vision 模式、结构化提取、隐藏字段以及 AI 模型选择器"><figcaption><p>提取层级选择器位于 General → Extraction 内。下方显示供应商覆盖表的表头；现有行数据已被遮盖，未更改任何设置。</p></figcaption></figure>
+<!-- English source image: dbdc-193-table-extraction-en-20261030.png -->
 
-**AI 表格提取：**使用 AI 提取任意供应商的表格，无需训练。如果某个供应商的提取结果不够准确，可以训练该供应商的表格；保存的规则随后会优先于该供应商的 AI 提取结果。
+**Table Extraction：** 启用基于规则的表格提取。表格在验证界面（*Go to table extraction view*）按供应商训练。\
+在此了解有关训练的更多信息： [here](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md)。
 
-**使用表格提取视觉功能（AI）：**AI 读取页面图像，而不是文本层。这有助于处理扫描文档以及文本结构不清晰的表格，但速度较慢。开关旁的下拉菜单用于选择使用页面图像的强度：
+**AI Table Extraction：** 使用 AI 提取任何供应商的表格，无需训练。如果某个供应商的结果不够准确，请训练该供应商的表格；此后已保存的规则对该供应商优先于 AI。
 
-* **关闭（仅文本）** – 仅使用文本层。这是默认模式。
-* **仅图像** – 仅读取页面图像。
-* **混合（文本和图像）** – 在同一请求中结合文本层和页面图像。
-* **自动（按文档决定）** – DocBits 会针对每份文档判断文本层是否足够。
+**Use Table Extraction Vision (AI)：** 通过四模式下拉列表选择 AI 表格提取的输入。这是模式选择，而不是单独的开关。更改所选模式会立即保存该设置：
 
-此模式存储在偏好设置键 `TABLE_EXTRACTION_VISION_MODE` 下；旧版开关 `TABLE_EXTRACTION_USE_VISION` 仍然保留，实际含义等同于*仅图像*。
+* **Off (text only)** – 仅使用 OCR 文本。
+* **Images only** – 仅读取页面图像。
+* **Hybrid (text and images)** – 在同一请求中组合文本层和页面图像。
+* **Auto (decided per document)** – DocBits 为每份文档选择仅文本或混合输入。
 
-**使用结构化提取（人工智能）:** 此开关设置组织的结构化输出默认值。实际请求的列取决于 Use AI 的默认/是/否选择、模板覆盖及供应商训练。完整指南说明配置、预览及示例。 [表格的 Structured Output](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-3-four-vision-options-en-20261031.png" alt="当前英文 Vision 下拉列表，显示 Off (text only)、Images only、Hybrid (text and images) 和 Auto (decided per document)"><figcaption><p>当前英文 Dev 菜单中的四种输入模式。该菜单被打开并关闭，未选择其他模式；未运行任何提取。</p></figcaption></figure>
+<!-- English source image: dbdc-3-four-vision-options-en-20261031.png -->
 
-**表格提取（成本要素）：**启用后，DocBits 可以在行项目级别从表格中提取成本要素，并据此进行分类。\
-[此处](table-extraction-for-costing-element.md)提供详细说明。
+**Use Structured Extraction (AI)：** 该开关设置组织的结构化输出默认值。请求的列取决于三态 Use AI 选择；模板覆盖和供应商训练也有影响。请阅读完整的 [Structured Output for Tables 配置、预览与示例指南](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)。
 
-**自动提取税码：**启用后，如果已配置税码字段，系统会在验证页面自动填充**税码**字段。\
-有关此设置的更多信息，请[点击此处](auto-extract-tax-code.md)。
+**Table Extraction for Costing Element：** 启用后，DocBits 可以在行项目层面从表格中提取成本要素并相应分类。\
+详细说明见 [here](table-extraction-for-costing-element.md)。
 
-**保存提取规则（仅管理员）：**只有管理员可以在表格训练中点击*保存规则*。如果用户反复保存导致某个供应商提取出错的规则，请启用此项。
+**Auto Extract Tax Code：** 启用后，只要配置了税码字段，系统就会在验证界面上自动填写 **Tax Code** 字段。\
+有关此设置的更多信息见 [here](auto-extract-tax-code.md)。
 
-**AI模型：** 设置字段和表提取的组织模型。菜单提供 Full、Fast、Nexus、Nexus Flash、自动和 Auto Nexus。使用代表性文件检查可用性、质量、运行时间和成本。对于每个文档来说，层并不总是最准确或最快的。模板覆盖可以替换组织设置。选择器下方的表格显示：
+**Save extraction rules (Admin only)：** 只有管理员可以在表格训练中点击 *Save Rules*。当用户不断保存破坏某供应商提取的规则时，请启用此项。
 
-* 哪些**供应商**使用哪种 AI 模型
-* 他们是否使用结构化提取（AI）和 E-Text
-* 删除某条记录并将该供应商重置为默认设置的选项
+**Extract hidden fields：** 字段设置中标记为隐藏的字段也会被提取。当某个值需要用于规则或导出，但不应在验证界面上显示时使用此项。
 
-[此处](ai-model.md)详细介绍此设置。
+**AI Model：** 设置用于字段和表格提取的组织模型。菜单提供 Full、Fast、Nexus、Nexus Flash、Auto 和 Auto Nexus。请用有代表性的文档检查可用性、质量、运行时间和成本。某个层级并不总是对每份文档都最准确或最快。模板覆盖可以取代组织设置。选择器下方的表格显示：
 
-### 为什么不同供应商的表格看起来不一样？
+* 哪些**供应商**使用哪个 AI 模型
+* 它们是否使用结构化提取（AI）和 E-Text
+* 删除某个条目、从而把该供应商重置为默认值的选项
 
-表处理取决于相关供应商或模板上下文中保存的规则和设置：
+此设置详见 [here](ai-model.md)。
 
-* **已保存的规则**（表格训练）：表格在该供应商版面中的位置，以及该供应商版面对应的列映射。
-* **AI 表格标签和格式规则**：用户为该供应商的 AI 表格保存的提示。
-* **特定于模板的 AI 模型：** 在验证屏幕上所做的选择将按组织和当前提取模板进行保存。它不会自动更改同一供应商的每个模板。如果没有覆盖，则使用适用的组织设置。
+#### 为什么每个供应商的表格看起来不同？
 
-因此，供应商 A 有已保存的规则时，会在验证页面的*提取的表格*选项卡中显示确定性表格；而没有规则的供应商 B 则会显示 *AI 提取的表格*。要让供应商 B 的行为与 A 一致，请训练一次 B 的表格。要重置某个供应商，请在验证页面删除其规则，或在 AI 模型表格中重置其训练数据。
+表格处理取决于相关供应商或模板上下文中已保存的规则和设置：
 
-### 偏好设置键
+* **已保存的规则**（表格训练）：表格位置及其列在该供应商版式上的映射。
+* **AI 表格标签和格式规则**：用户为该供应商 AI 表格保存的提示。
+* **模板专属 AI 模型：** 在验证界面上做出的选择按组织和当前提取模板保存。它不会自动更改同一供应商的所有模板。没有覆盖时，使用适用的组织设置。
 
-本部分中的每个开关都存储为组织偏好设置。通过 API (`/preferences/set_preference`)、脚本或 DocBits MCP（`get_preference` / `set_preference`）设置值时，请使用对应的键。
+因此，具有已保存规则的供应商 A 会在验证界面的 *Extracted table* 选项卡中显示确定性表格，而没有规则的供应商 B 会得到 *AI Extracted table*。要让供应商 B 表现得像 A，请训练一次 B 的表格。要重置某个供应商，请在验证界面上删除其规则，或在 AI Model 表中重置其训练数据。
 
-| 设置（UI 标签） | 偏好设置键 | 值 |
+#### 偏好键
+
+本节的每个开关都会作为组织偏好保存。当您通过 API（`/preferences/set_preference`）、脚本或 DocBits MCP（`get_preference` / `set_preference`）设置该值时，请使用对应的键。
+
+| 设置（UI 标签） | 偏好键 | 值 |
 |---|---|---|
-| 表格提取 | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
-| AI 表格提取 | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| 使用表格提取视觉功能（AI） | `TABLE_EXTRACTION_VISION_MODE` | `off`（默认）、`vision`、`hybrid`、`auto` |
-| 使用表格提取视觉功能（AI）– 旧版开关 | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`；实际含义等同于 `vision` |
-| 使用结构化提取（AI） | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
-| 成本要素表格提取 | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
-| 自动提取税码 | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
-| 保存提取规则（仅管理员） | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
-| AI 模型 | `AI_MODEL` | `gpt-6-sol`（Full）、`gpt-6-luna`（Fast）、`qwen3.8-max`（Nexus）、`glm-5.3-flash`（Nexus Flash）、`auto`（Auto）、`auto-nexus`（Auto Nexus） |
-| 表格提取版本（确认对话框） | `TBL_EXT_VERSION` | 版本字符串 |
-| OCR Settings → 有可用 AI 数据时对表格使用 AI 数据 | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
-| OCR Settings → 有可用 E-Text 时使用 E-Text | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+| Split | `SPLIT_DOCUMENT_ON_BARCODE` | `true` / `false` |
+| Barcode Type | `SPLIT_DOCUMENT_BARCODE_TYPE` | 条形码类型名称的列表 |
+| Barcode Pattern | `SPLIT_DOCUMENT_BARCODE_PATTERN` | 正则字符串 |
+| Pages to process | `RESTRICT_TO_PAGES` | 数字；空或 `0` = 所有页面 |
+| Allow Rounding During Amount Comparison | `AMOUNTS_ROUNDING` | `true` / `false` |
+| Require Exact Match for Amount Comparison | `AMOUNTS_NO_ROUNDING` | `true` / `false` |
+| Table Extraction | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
+| AI Table extraction | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
+| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off`、`vision`、`hybrid`、`auto`；未设置时由旧版偏好决定模式 |
+| Use Table Extraction Vision (AI) – 旧版开关 | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`；实际含义为 `vision` |
+| Use Structured Extraction (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
+| Table extraction for costing element | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
+| Auto extract tax code | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
+| Save extraction rules (Admin only) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| Extract hidden fields | `EXTRACT_HIDDEN_FIELDS` | `true` / `false` |
+| AI Model | `AI_MODEL` | `gpt-6-sol`（Full）、`gpt-6-luna`（Fast）、`qwen3.8-max`（Nexus）、`glm-5.3-flash`（Nexus Flash）、`auto`（Auto）、`auto-nexus`（Auto Nexus） |
+| Table extraction version（确认对话框） | `TBL_EXT_VERSION` | 版本字符串 |
+| OCR Settings → Use AI data for tables if available | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR Settings → Use E-Text if available | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
 
-说明：
+备注：
 
-* 布尔型偏好设置存储为字符串 `true` / `false`；从未设置过的键按 `false` 处理。如果发送 `1` 或 `0`，DocBits 会将其存储为 `true` / `false`。
-* 未设置 `AI_MODEL` 时，默认使用 **Fast**。
-* 未设置 `TABLE_EXTRACTION_VISION_MODE` 时，会根据旧版 `TABLE_EXTRACTION_USE_VISION` 开关确定：`true` 对应 `vision`，其他值对应 `off`。
-* 更改某个键后，设置会应用于之后处理的文档。要使用新设置重新提取文档，请重新启动该文档。
-* 模板覆盖与组织首选项不同。 AI 模型指南解释了确切的范围。
+* 布尔偏好以字符串 `true` / `false` 保存。未设置的键使用该设置的默认值；未设置时，界面上 **Extract hidden fields** 显示为开启。不要假定每个缺失的键都表示 false。如果发送 `1` 或 `0`，DocBits 会保存 `true` / `false`。
+* `AI_MODEL` 未设置表示 **Fast**。
+* `TABLE_EXTRACTION_VISION_MODE` 未设置时，由旧版 `TABLE_EXTRACTION_USE_VISION` 开关决定：`true` 解析为 `vision`，其他情况解析为 `off`。
+* 更改某个键后，对之后处理的文档生效。重新启动文档即可用新设置重新提取。
+* 模板覆盖与组织偏好不同。AI Model 指南说明了确切的作用范围。
 
-## 电子文档
+### Electronic Document
 
-**处理不受支持的 ZUGFeRD PDF：**启用后，不受支持的 **ZUGFeRD** 版本将作为标准 PDF 处理，并忽略其中嵌入的 XML。
+**Process Unsupported ZUGFeRD PDF：** 如果启用，不受支持的 **ZUGFeRD** 版本将作为标准 PDF 处理，嵌入的 XML 会被忽略。
 
-[此处](../../global-settings/document-types/edi/zugferd/README.md)列出了受支持的 **ZUGFeRD** 版本。
+受支持的 **ZUGFeRD** 版本列表见 [here](../../global-settings/document-types/edi/zugferd/README.md)。
 
-## **分类规则**
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-electronic-document-en-20261030.png" alt="Electronic Document，包含 Process Unsupported ZUGFeRD PDF 开关"><figcaption><p>Electronic Document 包含针对不受支持 ZUGFeRD PDF 的选项。其显示状态是现存的设置；本次截图未执行任何文档处理。</p></figcaption></figure>
+<!-- English source image: dbdc-193-electronic-document-en-20261030.png -->
 
-在**分类规则**部分，您可以定义特定的**正则表达式**模式和条件，以帮助系统在处理过程中自动分类文档。
+## Classification Rules
 
-要访问此部分，请点击页面顶部的**分类规则**选项卡。
+**Classification Rules** 选项卡列出了在处理过程中自动分配文档类型的规则。每条规则把**正则模式**与文档的来源名称进行匹配，匹配时设置文档类型，并可选地设置子文档类型。
 
+点击页面顶部的 **Classification Rules** 切换到该选项卡。
 
-### **添加新的分类规则**
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-rules-list-en-20261030.png" alt="Classification Rules，包含 Search by column、Add 以及规则表的列标题"><figcaption><p>搜索现有规则，或选择 Add 准备创建规则。现有规则行已被遮盖；这不是空列表示例。</p></figcaption></figure>
+<!-- English source image: dbdc-193-rules-list-en-20261030.png -->
 
-要创建新规则：
+表格每条规则一行，包含以下列：
 
-1.  点击右上角的**添加**。
+* **Type** – 模式应用在哪里。有两种类型：**Barcode** 和 **E-Mail**。
+* **Pattern** – 为该规则存储的正则表达式。
+* **Document Type** – 模式匹配时分配的文档类型。
+* **Sub Document Type** – 模式匹配时分配的子文档类型。
+* **Sub Organization** – 规则所限定的子组织。留空表示规则适用于所有子组织。
+* **Actions** – 包含 *Edit* 和 *Delete* 的行菜单。
 
-    
-2. 填写以下字段：
-   * **模式**：系统用于触发分类的正则表达式模式。
-   * **类型**：指定要在哪个位置搜索该模式（例如 **Barcode**）。
-   * **子组织** _(可选)_: 指定此规则适用的子组织。
-   * **Document Types**：定义匹配该模式时要分配的文档类型。
-   *   **子文档类型** _(可选)_: 指定更具体的分类子类型。
+表格上方的搜索字段会筛选所有列，包括下拉列的显示标签。
 
-       
-3.  点击**Save**以保存分类规则。
+### 添加新分类规则
 
-    
+1.  点击表格上方的 **Add**。
 
-### **编辑分类规则**
+    <figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-rule-add-en-20261030.png" alt="空白的 Configure classification Rule 对话框，包含 Pattern、Show help、Type、组织、文档类型、Cancel 和 Save"><figcaption><p>Add 会打开这个空白的规则表单。Save 之前请检查模式和目标类型；Cancel 会关闭它而不创建规则。</p></figcaption></figure>
+    <!-- English source image: dbdc-193-rule-add-en-20261030.png -->
+2. 填写各字段：
+   * **Pattern**（必填）– 规则要查找的正则表达式。
+   * **Type**（必填）– **Barcode** 或 **E-Mail**。它决定模式与哪个来源名称匹配。
+   * **Sub Organization** *（可选）* – 将规则限定到一个子组织。
+   * **Document Type** – 模式匹配时分配的文档类型。
+   * **Sub Document Type** *（可选）* – 更具体的类型；列表取决于所选的文档类型。更改文档类型会清除子文档类型。
+3.  点击 **Save**。
 
-要编辑现有规则：
+对话框在保存前验证模式。已被其他规则使用的模式会被拒绝并提示 *Pattern already exists*；空模式会被拒绝并给出必填字段消息。
 
-1.  点击**操作**列中的三个点。
+#### 模式帮助
 
-    
-2.  选择**Edit**。
+模式字段下方的 **Show help** 开关会打开一份内联参考，说明模式所匹配的来源名称格式：
 
-    
-3. 按需进行修改。
-4.  点击**Save**以应用更改。
+* **O365** – `Shared Email + Folder › Shared Email › Folder › Email › Id`
+* **Gmail** – `Email + Folder › Folder › Email › Id`
 
-    
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-rule-pattern-help-en-20261030.png" alt="Pattern help，显示 O365 和 Gmail 来源名称格式、正则表达式示例和匹配提示"><figcaption><p>Show help 说明该正则会匹配哪个来源名称。参考内容和示例仅作展示，未输入或保存任何规则。</p></figcaption></figure>
+<!-- English source image: dbdc-193-rule-pattern-help-en-20261030.png -->
 
-### **删除分类规则**
+面板中给出的示例：
 
-要删除规则：
+* `.*@acme\.de.*` – 来自该邮箱的任意来源
+* `^ap@acme\.de:.*` – 特定邮箱，任意文件夹
 
-1.  点击**操作**列中的三个点。
+提示：使用 `^` / `$` 锚定以实现精确匹配，用 `\.` 转义点，用 `:` 作为字段分隔符。来源名称中出现的第一组字段生效。
 
-    
-2.  选择**Delete**。
+如果使用 **E-Mail** 类型，模式与所导入邮件的邮箱和文件夹名称匹配，而不是与文档内容匹配。
 
-    
+### 编辑分类规则
 
-## AI 模型
+1.  点击要更改的规则 **Actions** 列中的三个点。
+2.  选择 **Edit**。对话框会打开并显示该规则的当前值。
+3. 更改模式、类型、子组织、文档类型或子文档类型。
+4.  点击 **Save**。
 
-**AI 模型**部分会显示所有专为满足您的需求而定制训练的模型。
+验证规则与添加规则时相同：模式不能为空，也不能与其他规则的模式重复。
 
-### 访问 AI 模型部分
+### 删除分类规则
 
-要打开此部分，请点击页面顶部的 **AI 模型**选项卡。
+1. 点击 **Actions** 列中的三个点。
+2. 选择 **Delete**。
 
+规则会立即从列表中移除。删除规则不会更改已经用它分类过的文档。
 
-### 模型类别
+## AI Models
 
-模型按类别组织。每个类别名称下方会显示该类别包含的模型数量。\
-点击类别可查看详情。
+**AI Models** 选项卡显示可用于文档分类的自定义训练模型及其标签。只有当您的组织启用了模型与标签模块时才会显示。
 
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-ai-models-empty-en-20261030.png" alt="已选择 AI Models 选项卡，当前组织显示 No Record Found"><figcaption><p>AI Models 是用于自定义分类模型和标签的可选选项卡。在本组织中，其成功的列表读取未返回任何模型；这并不描述提取层级设置。</p></figcaption></figure>
+<!-- English source image: dbdc-193-ai-models-empty-en-20261030.png -->
 
-在所选类别页面顶部，您可以查看每个模型的重要信息：
+如果该组织没有可用的自定义模型，选项卡会显示 *No Record Found!*。
 
-* **类型**：模型的类型。
-* **仅第一页**：表示模型是否只处理文档的第一页。
-* **版本**：模型的版本号。
+### 模型
 
-### 模型表格
+每个模型都是一个可展开的条目，包含：
 
-类别中的所有模型都会列在表格中，其中包括以下信息：
+* **模型名称**，以及在该模型为默认使用时显示的 **Default** 徽标。
+* 为该模型训练的**标签**数量。
+* 展开后，每个模型还会显示：**Type**、**First page only** 和 **Version**。
 
-* **名称**：模型的名称。
-* **下一个模型**：将进一步处理当前模型输出的模型。
-* **Document Types**：模型在分类过程中分配的主要文档类型。
-* **文档子类型**：文档进一步细分的子类型。
-* **优先级**：决定模型在分类队列中位置的优先级。
+在这些信息下方，列出该模型的标签。
 
+### 标签
 
-### 编辑模型
+标签是模型学习的内容。每个标签把模型识别的一种模式映射到一个文档类型。
 
-要编辑模型：
+* **Name** – 标签的名称。
+* **Next model** – 继续处理该标签输出的模型。
+* **DOC TYPE** – 该标签分配的文档类型。
+* **Sub Document Type** – 该标签更具体的类型。
+* **Priority** – 标签的评估顺序；数字小的先评估。
 
-1.  点击要编辑的模型对应的**操作**列中的笔形图标。
+标签表上方的搜索字段会筛选所选模型的标签。
 
-    
-2. 更新可用字段：
-   * **下一个模型**：选择应处理当前模型输出的模型。
-   * **Document Types**：选择模型应将输入分类为何种文档类型。
-3.  点击**Save**以应用更改。
+### 编辑标签
 
-    
+点击标签行上的铅笔图标打开编辑对话框。对话框提供 **Next model** 和 **Document Type**；请设置其中一项，因为对话框要求要么有下一个模型，要么有文档类型。点击 **Save** 应用更改。
 
-<figure><img src="../../../../.gitbook/assets/structured-output-settings-zh-20261104.png" alt="当前提取设置。此现有配置关闭了 Structured Output，因此不显示架构预览。未更改任何提取设置。"><figcaption><p>当前提取设置。此现有配置关闭了 Structured Output，因此不显示架构预览。未更改任何提取设置。</p></figcaption></figure>
+## 相关页面
+
+* [AI Model](ai-model.md) – 六个提取层级以及某个供应商如何获得自己的模型
+* [Auto Extract Tax Code](auto-extract-tax-code.md)
+* [Table Extraction for Costing Element](table-extraction-for-costing-element.md)
+* [OCR Settings](../ocr-settings.md)
+
+<figure><img src="../../../../.gitbook/assets/structured-output-settings-zh-20261104.png" alt="当前提取控件。此现存配置中 Structured Output 为关闭，因此不显示架构预览。未更改任何提取设置。"><figcaption><p>当前提取控件。此现存配置中 Structured Output 为关闭，因此不显示架构预览。未更改任何提取设置。</p></figcaption></figure>

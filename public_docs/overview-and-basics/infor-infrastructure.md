@@ -16,7 +16,7 @@ La gestione dei documenti è semplice con Docbits. Tutti i documenti caricati so
 
 ### Sicurezza del traffico di rete
 
-Consentiamo solo connessioni protette da HTTPS per comunicare con i nostri server. Questo garantisce che tutti i dati trasferiti siano crittografati, mantenendo le tue informazioni sensibili al sicuro. È come avere una guardia di sicurezza per i tuoi dati, 24 ore su 24, 7 giorni su 7.
+Le connessioni ai nostri server utilizzano esclusivamente HTTPS. I dati vengono crittografati durante la trasmissione.
 
 ### Infor Cloud
 

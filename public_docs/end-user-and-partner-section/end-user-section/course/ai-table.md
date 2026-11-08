@@ -1,6 +1,6 @@
 # Tabella AI
 
-Esplora le capacità rivoluzionarie di **DocBits**, uno strumento di gestione documentale all'avanguardia che semplifica le complessità dell'estrazione delle tabelle, del matching degli Ordini di Acquisto (PO) e della gestione delle fatture di costo.
+DocBits supporta l’estrazione delle tabelle, il matching degli ordini di acquisto (PO) e la gestione delle fatture di costo.
 
 {% embed url="https://youtu.be/89uEFyKKLCk" %}
 

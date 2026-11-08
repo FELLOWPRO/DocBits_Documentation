@@ -1,10 +1,10 @@
 # Validierungs-Setup und akzeptierte Versionen
 
-Diese Seite erklärt den Setup-Assistenten, die akzeptierten XRechnung-Versionen und die akzeptierten Profile der Seite [E-Rechnungs-Prüfung](validation-rules.md). Nur Organisationsadministratoren können diese Einstellungen ändern.
+Diese Seite erklärt den Setup-Assistenten, die akzeptierten XRechnung-Versionen und die akzeptierten Profile der Seite [E-Rechnungs-Prüfung](README.md). Nur Organisationsadministratoren können diese Einstellungen ändern.
 
 ## Validierungs-Setup
 
-<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-de-20261104.png" alt="Akzeptierte XRechnung-Versionen in der Dev-Beispielorganisation. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Akzeptierte XRechnung-Versionen in der Dev-Beispielorganisation. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-setup-versions-de-20261104.png" alt="Akzeptierte XRechnung-Versionen in der Dev-Beispielorganisation. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Akzeptierte XRechnung-Versionen in der Dev-Beispielorganisation. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
 
 Die Karte **Validierungs-Setup** zeigt Ihr aktuelles Validierungsprofil (zum Beispiel *B2G – Public Sector Receiver*). Klicken Sie auf **Antworten bearbeiten**, um den Setup-Assistenten erneut auszuführen und den Standard zu ändern, gegen den validiert wird.
 
@@ -14,7 +14,7 @@ Das Gate **Akzeptierte XRechnung-Versionen** listet jede XRechnung-Version auf. 
 
 ## Akzeptierte Profile und Schweregrad-Modell
 
-<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-de-20261104.png" alt="Akzeptierte ZUGFeRD- und Factur-X-Profile. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Akzeptierte ZUGFeRD- und Factur-X-Profile. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-profiles-severity-de-20261104.png" alt="Akzeptierte ZUGFeRD- und Factur-X-Profile. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Akzeptierte ZUGFeRD- und Factur-X-Profile. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
 
 Wählen Sie über **Alle akzeptieren** / **Leeren** und anschließend **Speichern**, welche **Profile** Sie akzeptieren (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)).
 

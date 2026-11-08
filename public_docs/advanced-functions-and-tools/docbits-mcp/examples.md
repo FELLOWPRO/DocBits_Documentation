@@ -6,6 +6,10 @@ Once DocBits MCP is connected (see [Setup & Configuration](setup-and-configurati
 These work the same in Claude Code, Gemini CLI, and Codex — the prompts are natural language, not commands.
 {% endhint %}
 
+## Watch the video examples
+
+See [DocBits MCP in practice](video-examples/README.md): everyday work, administration, workflow planning, and Infor insights with charts and morning briefings.
+
 ## Triage the work queue
 
 > *"How many documents are waiting for validation, and what types are they?"*

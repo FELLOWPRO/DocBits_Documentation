@@ -156,7 +156,7 @@ To create a new export:
 * **Password** The corresponding password for SMB authentication.
 * **Server URL** The address of the SMB server.
 * **Port** Port number used to access the SMB share.
-* **Folder** The folder path within the SMB share where documents should be saved(e.g., `/incoming/invoices/`). Must exist and be writable.
+* **Folder** The folder path within the SMB share where documents should be saved (e.g. `/incoming/invoices/`). Must exist and be writable.
 *   **JPL Mapping File (Optional)**
 
     The **JPL file** is used to define a transformation of the exported data before it is written to the SMB share.
@@ -297,7 +297,7 @@ To create a new export:
 * **Document Type** Dropdown listing all available document types. This determines which type of document this export configuration applies to.
 * **ION Mapping File** Select a mapping file from the file manager.
 * **IDM Mapping File** Select a mapping file from the file manager. [Need help creating one? View the IDM Mapping Guide](../../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3 toml Mapping File** Select a mapping file from the file manager or use the select Toml option to use a toml created with the rule manager. [Need help creating one? View the Rule Manager Guide](../rule-manager/)
+* **M3 toml Mapping File** Select a mapping file from the file manager or use the Select TOML option to use a TOML file created with the rule manager. [Need help creating one? View the Rule Manager Guide](../rule-manager/)
 
 </details>
 

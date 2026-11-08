@@ -1,6 +1,6 @@
 # How to Create Database Access for a Specific Organization User
 
-### **1. Login to the Docbits** <a href="#id-1.-login-to-the-docbits" id="id-1.-login-to-the-docbits"></a>
+### **1. Log in to DocBits** <a href="#id-1.-login-to-the-docbits" id="id-1.-login-to-the-docbits"></a>
 
 1. Go to your application login page.
 2. Enter your credentials (username and password) to log in.

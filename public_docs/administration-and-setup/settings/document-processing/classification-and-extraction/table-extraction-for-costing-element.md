@@ -18,4 +18,4 @@ The switch alone does not create costing elements or invoice rows. Configure the
 
 Open a document whose invoice table contains extracted lines and inspect the costing-element icon beside the relevant line. Select the icon to open the available classifications. Choose the correct configured costing element, or choose **Uncategorize** if the line is an ordinary item. Then review the resulting line and totals before saving the document.
 
-If the icon or a classification is missing, first confirm that the document has extracted lines, the feature is enabled, and a costing element is configured for the organization. The document used for this documentation check had no extracted invoice lines, so the classification menu could not be pictured or exercised. The steps above reflect the current document control; no classification was saved during this check.
+If the icon or a classification is missing, first confirm that the document has extracted lines, the feature is enabled, and a costing element is configured for the organization.

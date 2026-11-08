@@ -6,7 +6,7 @@
 
 <figure><img src="../../../../.gitbook/assets/process-extraction-en-20261028.png" alt="From file to recognized data: View document type, data source and extraction path separately."><figcaption><p>View document type, data source and extraction path separately. The diagram is schematic; the active settings of your organization determine the actual behavior.</p></figcaption></figure>
 
-Classification answers the question **“What kind of document is this?”**. Extraction answers **“What values ​​does it contain?”**. The settings on this page affect different points of processing and should not be understood as a single AI switch.
+Classification answers the question **“What kind of document is this?”**. Extraction answers **“What values does it contain?”**. The settings on this page affect different points of processing and should not be understood as a single AI switch.
 
 1. **Prepare input:** For PDFs, existing text or OCR can be used; supported electronic documents can provide structured values. An activated split can separate an incoming document based on the configured barcode or QR criteria.
 2. **Determine document type:** Classification rules and models assign documents to a type and, if necessary, a subtype. This assignment is to be distinguished from the later field and table extraction.
@@ -15,7 +15,7 @@ Classification answers the question **“What kind of document is this?”**. Ex
 
 ### Distinguish between rule path and AI path
 
-Appropriate saved table rules can determine the table extraction for the relevant template or supplier. Without suitable rules, the AI ​​path can be used when AI table extraction is activated. Individual columns can have their own AI options. An AI source for a header field does not mean that the entire table comes from the AI.
+Appropriate saved table rules can determine the table extraction for the relevant template or supplier. Without suitable rules, the AI path can be used when AI table extraction is activated. Individual columns can have their own AI options. An AI source for a header field does not mean that the entire table comes from the AI.
 
 The [Which extraction path was used?](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) diagnostic guide explains tabs, source identifiers and protocols. The page [AI model](ai-model.md) explains the organization standard and template-related overrides.
 
@@ -115,7 +115,7 @@ Learn more about training [here](../../../setup/document-training/training-line-
 
 <figure><img src="../../../../.gitbook/assets/dbdc-3-four-vision-options-en-20261031.png" alt="Current English Vision dropdown showing Off (text only), Images only, Hybrid (text and images) and Auto (decided per document)"><figcaption><p>The four input modes in the current English Dev menu. The menu was opened and closed without selecting a different mode; no extraction was run.</p></figcaption></figure>
 
-**Use Structured Extraction (AI):** The switch sets the organization's structured-output default. The requested columns depend on the three-state Use AI selection; template overrides and supplier training also matter. Read the complete configuration, preview and example guide. [Structured Output for Tables](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
+**Use Structured Extraction (AI):** The switch sets the organization's structured-output default. The requested columns depend on the three-state Use AI selection; template overrides and supplier training also matter. Read the complete [configuration, preview and example guide](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md) for Structured Output for Tables.
 
 **Table Extraction for Costing Element:** When enabled, DocBits can extract costing elements from tables at the line level and classify them accordingly.\
 Detailed explanation available [here](table-extraction-for-costing-element.md).
@@ -275,7 +275,7 @@ Below that information, the labels of the model are listed.
 
 ### Labels
 
-Labels are what the model learns. Each label maps a pattern the model recognises to a document type.
+Labels are what the model learns. Each label maps a pattern the model recognizes to a document type.
 
 * **Name** – the label's name.
 * **Next model** – a model that continues processing the output of this label.

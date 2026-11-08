@@ -11,7 +11,7 @@ What happens to the line-item table when a document is approved and exported dep
 
 ## Receipt lines and cost lines (Infor exports)
 
-An ERP invoice line is either a **receipt line**, it settles a purchase-order receipt, or a **cost line**, it books an amount to a ledger account with dimensions. DocBits decides per invoice line:
+An ERP invoice line is either a **receipt line** that settles a purchase-order receipt, or a **cost line** that books an amount to a ledger account with dimensions. DocBits decides per invoice line:
 
 * **Receipt lines** come from **PO matching**. Every invoice line that was matched to a PO line (Dashboard → PO Match, or automatically with _PO auto match_) becomes a receipt line carrying the PO number, PO line, receipt line and the matched quantity and amount. An invoice with no PO match has **no receipt lines**, the export preview then shows `receipt_lines: []`, which is correct, not a bug.
 * **Cost lines** come from the **accounting record** that the cost-accounting step (or Auto Accounting) creates: ledger account, dimensions, amount, quantity per line. An invoice without an accounting record has no cost lines.

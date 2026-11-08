@@ -24,14 +24,7 @@ Check the deadlines before making changes and agree on the target archive and th
 
 Under Document Processing → Documents Expiry, configure document retention. Check the effective settings, the target archive and the deletion scope for your organization before changing them.
 
-Two settings control the automatic deletion:
-
-| Setting | What it controls |
-|---------|------------------|
-| **Delete document after** | How long any processed document is kept before it is automatically deleted. |
-| **Delete finished document after** | How long a finished (fully processed and exported) document is kept before it is automatically deleted. |
-
-For each setting you choose a time frame from the dropdown:
+For each of the two settings you choose a time frame from the dropdown. **Delete document after** applies to any processed document; **Delete finished document after** applies to documents that are fully processed and exported.
 
 <figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Documents Expiry options"><figcaption><p>Available retention periods</p></figcaption></figure>
 

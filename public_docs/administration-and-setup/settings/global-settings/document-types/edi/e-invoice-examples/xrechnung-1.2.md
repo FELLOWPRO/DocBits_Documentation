@@ -4,7 +4,7 @@ Exportiert in das Dokumentenmanagementsystem (IDM):
 
 <figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Exportiert nach Infor LN:
+Exportiert nach Infor ERP / SAP:
 
 <figure><img src="../../../../../../.gitbook/assets/image (360).png" alt=""><figcaption></figcaption></figure>
 

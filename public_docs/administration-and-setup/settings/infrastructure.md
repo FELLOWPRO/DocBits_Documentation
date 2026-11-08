@@ -1,90 +1,83 @@
 # Infrastruktur
 
-Die Seite **Infrastruktur** bietet Administratoren eine aktuelle Übersicht auf einen Blick darüber, wo jeder Teil von DocBits läuft (EU oder US), wie ein Dokument das System durchläuft und ob die Hintergrundverarbeitung fehlerfrei funktioniert. Sie ist schreibgeschützt – hier wird nichts konfiguriert; sie beantwortet die Frage *„Läuft alles, und bleiben meine Daten in meiner Region?"*
+Die Seite **Infrastructure** gibt Administratoren eine aktuelle Übersicht darüber, wo jeder Teil der Plattform läuft (EU oder US) und ob die Verarbeitung fehlerfrei läuft. Sie ist schreibgeschützt, hier wird also nichts konfiguriert.
 
-> **Zugriff:** Die Infrastruktur ist eine reine Administratorenseite. Öffnen Sie **Einstellungen → Organisation & Zugriff → Infrastruktur**.
+> **Access:** Infrastructure ist eine reine Administratorenseite. Öffnen Sie **Settings → Organization & Access → Infrastructure**.
 
-<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-de.png" alt="Infrastrukturübersicht in deutscher Sprache."><figcaption><p>Infrastrukturübersicht in deutscher Sprache.</p></figcaption></figure>
+Die Seite hat drei Tabs. Jeder lädt seine Daten beim ersten Öffnen, ein Hin- und Herwechseln ruft also nicht alles neu ab.
 
-Die Seite ist in drei Registerkarten unterteilt:
-
-| Registerkarte | Beantwortet |
+| Tab | Answers |
 |-----|---------|
-| **Topologie** | Wo läuft jede Komponente, und befindet sich alles in meiner Region? |
-| **Verarbeitung** | Laufen die Schritte der Dokumentenverarbeitung (OCR, Extraktion, PO-Matching …) und sind sie auf dem aktuellen Stand? |
-| **Geplante Aufgaben** | Laufen die wiederkehrenden Hintergrundaufgaben planmäßig? |
+| **Topology** | Wo läuft jede Komponente, und wie durchläuft ein Dokument DocBits? |
+| **Processing** | Laufen die Schritte der Dokumentenverarbeitung, und staut sich die Arbeit? |
+| **Scheduled Tasks** | Werden die wiederkehrenden Hintergrundaufgaben planmäßig ausgelöst? |
 
-## Topologie
+## Topology
 
-Die Registerkarte „Topologie" stellt die gesamte DocBits-Plattform als Diagramm dar, gruppiert in Ebenen – **Edge / Web**, **Core API**, **Import**, **Hintergrunddienste**, **Datenspeicher** und **Authentifizierung**. Jedes Kästchen ist eine Komponente (die Web-App/CDN, das API-Gateway, der OCR-Worker, die Datenbank usw.).
+**Topology** öffnet standardmäßig. Die Ansicht zeigt die Plattform in zwei Darstellungen: **Architecture** und **Process**. Über den Umschalter oberhalb des Diagramms wechseln Sie zwischen ihnen; die Anzeige daneben lautet **live**, solange die Ansicht ihren Zustand streamt.
 
-<figure><img src="../../.gitbook/assets/infrastructure_topology.png" alt="Topologiediagramm mit Regionskennzeichnungen"><figcaption><p>Jede Komponente ist mit der Region gekennzeichnet, in der sie läuft</p></figcaption></figure>
+Ein Banner oberhalb des Diagramms fasst die Regionsprüfung zusammen:
 
-### Regionserkennung
+* **Green**: alle Komponenten laufen in der Region Ihrer Organisation, und das Banner nennt diese Region (zum Beispiel **EU**).
+* **Red**: eine als kritisch gekennzeichnete Komponente läuft außerhalb der Region Ihrer Organisation.
+* **Amber**: der Hinweis nennt Komponenten, die in einer anderen Region liegen, obwohl die Gesamtprüfung besteht. Das ist eine Regionsabweichung, kein Fehler.
 
-Jede Komponente trägt eine Regionsmarkierung, sodass Sie Ihren Datenspeicherort auf einen Blick bestätigen können:
+### Architekturansicht
 
-| Markierung | Bedeutung |
+Die Architekturansicht zeichnet die Plattform als Spuren von Komponentenkarten, zum Beispiel Edge / Web, Core API, Import, Background Services und Modules. Pfeile zeigen die Verbindungen zwischen den Karten.
+
+Jede Karte zeigt den Komponentennamen, eine Regionsmarkierung und bei kritischen Komponenten einen Statuspunkt, der grün wird, wenn die Komponente antwortet, und ihre Latenz in Millisekunden anzeigt, wenn ein Wert gemeldet wird.
+
+| Badge | Meaning |
 |-------|---------|
 | **EU ✓** / **US ✓** | Die Komponente läuft in der Region Ihrer Organisation. |
-| **SHARED** | Eine globale Komponente (z. B. das CDN) ohne einzelne Region – das ist normal und kein Problem. |
-| **Region mismatch** | Die Komponente läuft in einer *anderen* Region als Ihre Organisation. Sie wird hervorgehoben, damit Sie sie beim Support melden können. |
+| **SHARED** | Eine globale Komponente wie das CDN, die keiner einzelnen Region zugeordnet ist. Das ist erwartet. |
+| **EU ⓘ** / **US ⓘ** | Die Komponente läuft in einer anderen Region und wird als Hinweis gemeldet. |
+| **EU ⚠** / **US ⚠** | Die Komponente läuft in einer anderen Region und wird als Fehler gemeldet. Melden Sie dies dem Support. |
+| Graue Markierung, kein Zeichen | Die Region dieser Komponente ist nicht bekannt. |
 
-Das Banner oben fasst das Ergebnis zusammen: **„Alle Komponenten laufen in Ihrer Region (EU)"**, wenn alles übereinstimmt, oder eine Warnung, falls eine kritische Komponente regionsübergreifend läuft.
+### Prozessansicht
 
-### Architektur vs. Prozessablauf
+Die Prozessansicht animiert ein einzelnes Dokument durch die Pipeline: die Eingangsquellen **Email**, **FTP** und **Web** laufen auf **API** zusammen und durchlaufen dann **OCR**, **Extraction**, **PO matching**, **Auto Accounting** und **Export**. Jede Stufe ist mit einem Balken für die Datenspeicher verbunden, mit **Postgres** und Dateispeicher. Eine Bildunterschrift nennt den Schritt, der gerade animiert wird, und die Wiedergabetaste pausiert die Animation oder setzt sie fort.
 
-Verwenden Sie den Umschalter oberhalb des Diagramms, um die Ansicht zu wechseln:
-
-- **Architektur** – die statische Karte aller Komponenten und ihrer Verbindungen.
-- **Prozessablauf** – animiert den Weg eines Dokuments durch das System Schritt für Schritt, sodass Sie die Reihenfolge sehen, in der die Komponenten beteiligt sind.
-
-Die Anzeige **● live** zeigt, dass die Zustandsinformationen im Diagramm den aktuellen Zustand des Systems widerspiegeln.
+PO matching und Auto Accounting sind optional. Wenn eines davon für Ihre Organisation abgeschaltet ist, ist die zugehörige Stufe ausgegraut und die Animation überspringt sie.
 
 ### Optionale Module
 
-Komponenten, die zu einem optionalen Modul gehören (Volltextsuche, DocFlow, Auto-Accounting, DocNet, PO-Matching), zeigen eine Markierung **aktiviert** oder **deaktiviert** an. Wenn Sie auf ein deaktiviertes Modul klicken, gelangen Sie direkt zu der Seite, auf der Sie es einschalten können – **Einstellungen → Modul** für die meisten Module, oder **Dokumenttypen** für das PO-Matching (das pro Dokumenttyp aktiviert wird).
+Optionale Module (Full-Text Search, DocFlow, Auto-Accounting, DocNet und PO Matching) tragen auf ihrer Karte eine Markierung **active** oder **inactive**. Ein deaktiviertes Modul bietet eine Schaltfläche **Activate**, die Sie auf die Seite führt, auf der Sie es einschalten: die Module-Einstellungen für die meisten Module oder **Document Types** für PO Matching, das je Dokumenttyp aktiviert wird.
 
-## Verarbeitung
+## Processing
 
-Die Registerkarte „Verarbeitung" zeigt die Pipeline der Dokumentenverarbeitung für **Ihre Organisation** – wann jeder Schritt zuletzt ausgeführt wurde und ob die Arbeit fließt oder sich staut.
+Der Tab **Processing** listet die Schritte der Dokumentenverarbeitung für Ihre Organisation auf und sagt Ihnen, ob Arbeit fließt oder sich staut.
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing-de.png" alt="Deutsche Registerkarte Verarbeitung mit Letzte Ausführung und Status"><figcaption><p>Verarbeitungsstatus je Schritt für Ihre Organisation</p></figcaption></figure>
-
-| Spalte | Beschreibung |
+| Column | Description |
 |--------|-------------|
-| **Verarbeitung** | Der Verarbeitungsschritt – Dokumentenverarbeitung, OCR, TR-OCR, Barcode-Split, Barcode-Extraktion, Extraktion, PO-Matching. |
-| **Letzte Ausführung** | Wie lange es her ist, dass der Schritt zuletzt ausgeführt wurde. Bewegen Sie den Mauszeiger darüber, um den genauen Zeitstempel zu sehen. *„Nie ausgeführt"* bedeutet, dass noch kein Dokument diesen Schritt erreicht hat. |
-| **Status** | Eine Ampelmarkierung (siehe unten). |
+| **Process** | Der Verarbeitungsschritt: Document Processing, OCR, TR-OCR, Barcode Split, Barcode Extraction, Extraction und PO Match. |
+| **Last run** | Wie lange die letzte Ausführung zurückliegt. Fahren Sie mit der Maus darüber, um den genauen Zeitstempel zu sehen. **Never run** bedeutet, dass noch kein Dokument diesen Schritt erreicht hat. |
+| **Status** | Eine oder mehrere Markierungen (siehe unten). |
 
-Statusmarkierungen:
+Die Statusmarkierungen sind unabhängige Signale:
 
-| Markierung | Bedeutung |
-|-------|---------|
-| **OK** (grün) | Keine aktuellen Fehler und nichts in Wartestellung – der Schritt funktioniert fehlerfrei. |
-| **In Bearbeitung (N)** (gelb) | `N` Dokumente werden derzeit von diesem Schritt verarbeitet. |
-| **Fehler (N)** (rot) | `N` Dokumente sind bei diesem Schritt kürzlich fehlgeschlagen. |
+* Rote Markierung **Errors (N)**: `N` Dokumente sind bei diesem Schritt kürzlich fehlgeschlagen.
+* Gelbe Markierung mit einer Anzahl: `N` Dokumente werden gerade von diesem Schritt verarbeitet.
+* Grüne Markierung **OK**: keine aktuellen Fehler und nichts in der Warteschlange.
 
-Fehler und *In Bearbeitung* sind unabhängige Signale, sodass ein Schritt beide Markierungen gleichzeitig anzeigen kann – Sie sehen einen Fehler also auch dann, während andere Arbeit läuft. Verwenden Sie **Aktualisieren** (oben rechts), um die neuesten Zahlen abzurufen.
+Da Fehler und laufende Arbeit getrennt gezählt werden, kann ein Schritt beides gleichzeitig zeigen; ein Fehler bleibt also sichtbar, während andere Dokumente noch laufen.
 
-## Geplante Aufgaben
+## Scheduled Tasks
 
-Die Registerkarte „Geplante Aufgaben" listet die wiederkehrenden Hintergrundaufgaben auf, die DocBits am Laufen halten (Cache-Aktualisierungen, Statuswarnungen, Dokument-Timeouts, ausgehende Synchronisierungen und mehr), und bestätigt, dass jede davon pünktlich ausgelöst wird.
+Der Tab **Scheduled Tasks** listet die wiederkehrenden Hintergrundaufgaben auf, die DocBits am Laufen halten, zum Beispiel Cache-Aktualisierungen, Statuswarnungen, Dokument-Timeouts und ausgehende Synchronisierungen. Jede Zeile zeigt, ob die Aufgabe pünktlich ausgelöst wird.
 
-<figure><img src="../../.gitbook/assets/infrastructure_scheduled-de.png" alt="Deutsche Registerkarte Geplante Aufgaben mit Ausführungszeiten und Planmäßig-Status"><figcaption><p>Wiederkehrende Hintergrundaufgaben und ihr Zeitplanstatus. Technische Aufgabennamen werden vom Produkt auf Englisch angezeigt.. Technische Aufgabennamen werden vom Produkt auf Englisch angezeigt.</p></figcaption></figure>
-
-| Spalte | Beschreibung |
+| Column | Description |
 |--------|-------------|
-| **Aufgabe** | Der Name der geplanten Aufgabe. |
-| **Letzte Ausführung** | Wie lange es her ist, dass sie zuletzt ausgeführt wurde. Bewegen Sie den Mauszeiger darüber, um den genauen Zeitstempel zu sehen; *„Nie ausgeführt"* bedeutet, dass sie noch nicht ausgelöst wurde. |
-| **Status** | Zeitplanzustand (siehe unten). |
+| **Task** | Der Name der geplanten Aufgabe, wobei Trennzeichen durch Leerzeichen ersetzt sind. |
+| **Last run** | Wie lange die letzte Ausführung zurückliegt. Fahren Sie mit der Maus darüber, um den genauen Zeitstempel zu sehen. **Never run** bedeutet, dass sie noch nicht ausgelöst wurde. |
+| **Status** | Zustand des Zeitplans (siehe unten). |
 
-Statuswerte:
+| Status | Meaning |
+|--------|---------|
+| **On schedule** (grün) | Die Aufgabe läuft in ihrem erwarteten Intervall. |
+| **Delayed** (rot) | Die Aufgabe ist nicht zur erwarteten Zeit gelaufen. Untersuchen Sie das oder melden Sie es dem Support. |
+| **Unknown** (grau) | Der Zustand des Zeitplans konnte nicht ermittelt werden. |
 
-| Markierung | Bedeutung |
-|-------|---------|
-| **Planmäßig** (grün) | Die Aufgabe läuft in ihrem erwarteten Intervall. |
-| **Verzögert** (rot) | Die Aufgabe ist nicht zum erwarteten Zeitpunkt ausgeführt worden – sollte untersucht oder beim Support gemeldet werden. |
-| **Unbekannt** (grau) | Der Zeitplanstatus konnte nicht ermittelt werden. |
-
-Verwenden Sie **Aktualisieren**, um den Zeitplanstatus bei Bedarf erneut zu überprüfen.
+Beide Tabellen haben eine Schaltfläche **Refresh**, die die aktuellen Zahlen auf Anforderung neu lädt.

@@ -39,7 +39,7 @@ A Entrada de Pedidos requer a assinatura **AI Workforce**.
 2. Ative **Ativar painel de controle de entrada de pedidos**. "Entrada de Pedidos" passa a aparecer na barra lateral.
 3. Dê à função dos atendentes acesso à Entrada de Pedidos em **Configurações › Grupos e Permissões** (administradores sempre têm acesso).
 
-<figure><img src="../../.gitbook/assets/order-intake-settings-module-pt.png" alt="Configurações da Entrada de Pedidos em Configurações › Módulo › Ordem e Finanças; no fim, a seção Exportação para o ERP, aqui ainda sem exportação para o ERP."><figcaption><p>Configurações da Entrada de Pedidos em Configurações › Módulo › Ordem e Finanças; no fim, a seção Exportação para o ERP, aqui ainda sem exportação para o ERP.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/order-intake-settings-module-pt.png" alt="Configurações da Entrada de Pedidos em Settings › Module › Order &#x26; Finance; no fim, a seção ERP export, aqui ainda sem exportação para o ERP."><figcaption><p>Configurações da Entrada de Pedidos em Settings › Module › Order &#x26; Finance; no fim, a seção ERP export, aqui ainda sem exportação para o ERP.</p></figcaption></figure>
 
 Na mesma seção, um administrador define como o módulo funciona:
 

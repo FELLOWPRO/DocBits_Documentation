@@ -10,9 +10,9 @@ Turn the ERP context available in DocBits into a clear overview. Ask Claude to g
 
 English office video preview. Compare purchase-order, delivery-note and invoice quantities in Claude. The office example shows a three-way chart for matching document lines, conflicting delivery records to investigate, and a proposed morning briefing.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-erp-insights-office-preview-admin/v3/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-erp-insights-office-preview-admin/v4/en.mp4" %}
 
-[Watch with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-erp-insights-office-preview-admin/v3/en.html)
+[Watch with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-erp-insights-office-preview-admin/v4/en.html)
 
 > Compare what we ordered, what the delivery records show, and what was invoiced for each purchase-order line. Create a chart, keep units separate, and identify quantity differences or conflicting records that need attention.
 

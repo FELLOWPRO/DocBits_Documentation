@@ -10,9 +10,9 @@ Describe the process you want to automate. Ask Claude to help find the building 
 
 English office video preview. Start with the complete invoice process in Claude: the trigger, amount decision, review route, standard processing and error handling. Inspect eight custom-card unit tests, then review the routing draft in the actual DocBits Workflow Builder.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-workflow-design-office-preview-admin/v3/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-workflow-design-office-preview-admin/v4/en.mp4" %}
 
-[Watch with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-workflow-design-office-preview-admin/v3/en.html)
+[Watch with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-workflow-design-office-preview-admin/v4/en.html)
 
 > Design an invoice workflow with review above 1,000, standard processing at or below 1,000, and a correction route for invalid inputs. Explain the available cards, test the decision logic, and help me review the routing in DocBits before activation.
 

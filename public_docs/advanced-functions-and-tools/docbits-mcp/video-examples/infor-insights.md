@@ -1,22 +1,22 @@
 ---
-description: Ask Claude to turn Infor-related information in DocBits into charts, priorities, and a reusable morning briefing.
+description: Compare orders, delivery notes and invoices with Claude, and plan a morning briefing using the ERP data in DocBits.
 ---
 
 # Infor insights and morning briefings
 
-Turn the ERP context available in DocBits into a clear overview. Ask Claude to group exceptions, show the pattern in a chart, and explain what needs attention first.
+Ask Claude to compare a purchase order with its delivery notes and invoices. Work through the quantities in a chart, then use the same questions to plan a morning briefing.
 
 ## ERP Insights · London
 
-English office video preview. Compare purchase-order, delivery-note and invoice quantities in Claude. The office example shows a three-way chart for matching document lines, conflicting delivery records to investigate, and a proposed morning briefing.
+In the London preview, Claude compares the quantities on linked orders, delivery notes and invoices. It charts the results and works through delivery records that disagree. The example ends with a draft morning briefing.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-erp-insights-office-preview-admin/v4/en.mp4" %}
 
 [Watch with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-erp-insights-office-preview-admin/v4/en.html)
 
-> Compare what we ordered, what the delivery records show, and what was invoiced for each purchase-order line. Create a chart, keep units separate, and identify quantity differences or conflicting records that need attention.
+> For each purchase order line, compare the quantity ordered with the delivery notes and invoices. Show the quantities in a chart. Keep different units separate, and point out mismatches or conflicting records.
 
-The example uses ERP data available through DocBits. Actual receipt dates are needed to measure supplier lateness; a delivery-note date alone does not establish when goods arrived.
+To check whether a supplier delivered late, you also need the actual receipt date. A date on a delivery note does not tell you when the goods arrived.
 
 ## Infor insights and morning briefings: explainer
 
@@ -26,17 +26,17 @@ The example uses ERP data available through DocBits. Actual receipt dates are ne
 
 ## Try this question
 
-> Which Infor-related export problems need attention first? Group the recorded reasons, create a chart, and give me three next actions. Include the data timestamp.
+> Which recorded Infor export problems should we look at first? Group them by reason and show the result in a chart. Give me three actions to take, and include when the data was recorded.
 
-Follow up with:
+For a regular report, add:
 
-> Turn this into a weekday morning briefing for 08:00. Include a chart, the main blockers, and the next actions.
+> Use this format for a weekday briefing at 08:00. Include the chart, the main issues and what I should do next.
 
-This example analyses ERP responses stored in DocBits. Check the data timestamp and connector scope when interpreting a result.
+Claude is reading ERP responses stored in DocBits. Check when they were recorded and which data your connection can read.
 
 ## Make the briefing a routine
 
-The film shows an unsaved weekday 08:00 schedule draft. Scheduling depends on your assistant's available task feature, connector access, timezone, and permissions. Review the setup before creating a task; the scheduled start does not guarantee that the report is complete at exactly 08:00.
+The video shows a draft for a weekday briefing at 08:00. Before you create the task, check that your assistant supports scheduling, has access to DocBits and uses your timezone. 08:00 is the scheduled start time; the report can arrive later.
 
 ## Continue in the documentation
 

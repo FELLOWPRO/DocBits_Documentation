@@ -10,7 +10,7 @@ Quando carichi una fattura elettronica errata, DocBits non la perde. Il document
 
 Un fornitore invia un file XML in cui un tag di chiusura non corrisponde al tag di apertura. Il file non può essere letto, quindi DocBits si ferma al primo controllo, **L1 · Correttezza sintattica XML**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-xml-malformed-it-20261104-v2.png" alt="Schermata di errore di un XML fittizio con un tag di chiusura volutamente errato. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale."><figcaption><p>Schermata di errore di un XML fittizio con un tag di chiusura volutamente errato. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-it-20261104-v2.png" alt="Schermata di errore di un XML fittizio con un tag di chiusura volutamente errato. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale."><figcaption><p>Schermata di errore di un XML fittizio con un tag di chiusura volutamente errato. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale.</p></figcaption></figure>
 
 La schermata ha due lati:
 
@@ -19,7 +19,7 @@ La schermata ha due lati:
 
 Seleziona **Visualizza i dettagli di convalida** per aprire il [rapporto di convalida](validation-report.md) completo.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-xml-malformed-it-20261104-v2.png" alt="Rapporto del file XML fittizio danneggiato."><figcaption><p>Rapporto del file XML fittizio danneggiato.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-it-20261104-v2.png" alt="Rapporto del file XML fittizio danneggiato."><figcaption><p>Rapporto del file XML fittizio danneggiato.</p></figcaption></figure>
 
 Il rapporto indica la posizione esatta (riga e colonna sono indicate nel rapporto) e riporta il messaggio tecnico del parser XML. Seleziona **Mostra in XML** per passare a quella riga. L'indicazione **Come risolvere** ti dice di chiedere al mittente un file corretto.
 
@@ -27,7 +27,7 @@ Il rapporto indica la posizione esatta (riga e colonna sono indicate nel rapport
 
 L'XML è corretto, ma manca un campo obbligatorio. Ad esempio, il venditore non può essere identificato perché non è presente alcun identificativo del venditore, identificativo di registrazione o identificativo IVA (regola `BR-CO-26`).
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-it-20261104-v2.png" alt="Schermata di errore di una fattura di esempio interamente fittizia. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale."><figcaption><p>Schermata di errore di una fattura di esempio interamente fittizia. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-it-20261104-v2.png" alt="Schermata di errore di una fattura di esempio interamente fittizia. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale."><figcaption><p>Schermata di errore di una fattura di esempio interamente fittizia. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale.</p></figcaption></figure>
 
 La scheda mostra il primo esito bloccante. Il rapporto completo include anche il codice `BR-CO-26` e gli altri risultati della fattura.
 

@@ -2,11 +2,11 @@
 
 > Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações.
 
-Cada regra de validação tem uma gravidade. Pode alterar a gravidade de cada regra para a sua organização. Esta página faz parte de [Validação de faturas eletrónicas](validation-rules.md). Só os administradores da organização podem alterar as gravidades.
+Cada regra de validação tem uma gravidade. Pode alterar a gravidade de cada regra para a sua organização. Esta página faz parte de [Validação de faturas eletrónicas](README.md). Só os administradores da organização podem alterar as gravidades.
 
 ## Substituir a gravidade das regras
 
-<figure><img src="../../../../.gitbook/assets/einvoice-rule-table-pt-20261104.png" alt="Tabela de regras com os rótulos reais da interface. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações."><figcaption><p>Tabela de regras com os rótulos reais da interface. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-rule-table-pt-20261104.png" alt="Tabela de regras com os rótulos reais da interface. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações."><figcaption><p>Tabela de regras com os rótulos reais da interface. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações.</p></figcaption></figure>
 
 A tabela de regras lista todas as regras de validação (mais de 1.600 no total). Filtre por **Camada (Layer)**, **Perfil** ou **Versão**, ou pesquise por código ou campo. Para cada regra pode substituir a **Gravidade** no menu pendente para a ajustar à política da sua organização — por exemplo, baixar uma regra de `ERROR` para `WARNING` para que deixe de rejeitar o documento.
 

@@ -4,19 +4,19 @@
 
 Quando o DocBits rejeita uma fatura eletrónica, pode ler exatamente porquê. O **relatório de validação** lista cada resultado em linguagem simples, diz-lhe o que corrigir e mostra o próximo passo. Abre-o a partir do documento, não das definições. O ecrã onde o encontra está descrito em [O ecrã de erro de uma fatura eletrónica rejeitada](validation-error-screen.md).
 
-Esta página é para quem processa faturas. Os administradores definem as regras na página [Validação de faturas eletrónicas](validation-rules.md) e escolhem, por tipo de documento, se uma verificação falhada bloqueia a fatura, ver [Validação para cada tipo de documento](validation-per-document-type.md).
+Esta página é para quem processa faturas. Os administradores definem as regras na página [Validação de faturas eletrónicas](README.md) e escolhem, por tipo de documento, se uma verificação falhada bloqueia a fatura, ver [Validação para cada tipo de documento](validation-per-document-type.md).
 
 ## Quando um documento fica com erro
 
 Se a validação estiver **ativada** e em **bloqueio** para o tipo de documento, uma fatura com um resultado bloqueante fica com o estado **Erro**. Abra o documento no painel. A vista de erro mostra o XML à esquerda e o motivo à direita.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-pt-20261104-v2.png" alt="Ecrã de erro de uma fatura de exemplo inteiramente fictícia. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações."><figcaption><p>Ecrã de erro de uma fatura de exemplo inteiramente fictícia. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-pt-20261104-v2.png" alt="Ecrã de erro de uma fatura de exemplo inteiramente fictícia. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações."><figcaption><p>Ecrã de erro de uma fatura de exemplo inteiramente fictícia. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações.</p></figcaption></figure>
 
 O cartão à direita indica a camada que rejeitou a fatura (por exemplo **L3 · Regras de negócio**), o código da regra (por exemplo `BR-CO-26`), uma explicação curta e um **Próximo passo**. Selecione **Ver detalhes da validação** para abrir o relatório completo.
 
 ## Ler o relatório
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-top-pt-20261104-v2.png" alt="Relatório da fatura fictícia com os dados do ficheiro e o resultado."><figcaption><p>Relatório da fatura fictícia com os dados do ficheiro e o resultado.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-pt-20261104-v2.png" alt="Relatório da fatura fictícia com os dados do ficheiro e o resultado."><figcaption><p>Relatório da fatura fictícia com os dados do ficheiro e o resultado.</p></figcaption></figure>
 
 O relatório começa com os factos sobre o ficheiro:
 
@@ -49,7 +49,7 @@ A tabela **Resultado por nível** mostra quantos erros, avisos e mensagens de in
 
 ## Os resultados
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-findings-pt-20261104-v2.png" alt="Excerto do relatório: falta o identificador do vendedor, regra BR-CO-26."><figcaption><p>Excerto do relatório: falta o identificador do vendedor, regra BR-CO-26.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-pt-20261104-v2.png" alt="Excerto do relatório: falta o identificador do vendedor, regra BR-CO-26."><figcaption><p>Excerto do relatório: falta o identificador do vendedor, regra BR-CO-26.</p></figcaption></figure>
 
 Cada resultado é uma linha:
 
@@ -67,6 +67,6 @@ O DocBits tem textos em linguagem simples para as regras mais comuns. Para uma r
 
 ## Páginas relacionadas
 
-* [Validação de faturas eletrónicas](validation-rules.md): versões aceites, perfis e a gravidade de cada regra.
+* [Validação de faturas eletrónicas](README.md): versões aceites, perfis e a gravidade de cada regra.
 * [Validação para cada tipo de documento](validation-per-document-type.md): ative a validação e defina o bloqueio.
-* [Encaminhamento de notificações](notification-routing.md): quem trata cada resultado.
+* [Encaminhamento de notificações](../notification-routing.md): quem trata cada resultado.

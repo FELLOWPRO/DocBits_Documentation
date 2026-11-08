@@ -1,40 +1,37 @@
-# Selecionar um Modelo de IA Específico do Fornecedor para Extração de Campos e Tabelas
+# Selecionar um modelo de IA específico do fornecedor para extração de campos e tabelas
 
-## Do padrão organizacional ao modelo eficaz
+## Do padrão da organização ao modelo efetivo
 
-<figure><img src="../../../.gitbook/assets/process-ai-model-pt-20261028.png" alt="Que modelo de IA se aplica ao modelo de extração?: Predefinição da organização e definição específica por modelo de extração."><figcaption><p>Predefinição da organização e definição específica por modelo de extração. O diagrama é esquemático; as configurações ativas da sua organização determinam o comportamento real.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/process-ai-model-pt-20261028.png" alt="Que modelo de IA se aplica ao modelo de extração?: predefinição da organização e sobreposição relacionada com o modelo de extração."><figcaption><p>Predefinição da organização e sobreposição relacionada com o modelo de extração. O esquema é indicativo; as definições ativas da sua organização determinam o comportamento real.</p></figcaption></figure>
 
-A entrada na tela de validação é chamada de modelo de IA específico do fornecedor. No entanto, o **contexto atual do modelo de extração** é crucial: a substituição é salva por organização e modelo. Um fornecedor pode ter vários modelos com configurações diferentes.
+A entrada no ecrã de validação chama-se modelo de IA específico do fornecedor. O **contexto do modelo de extração atual** é, no entanto, decisivo: a sobreposição é guardada por organização e por modelo de extração. Um fornecedor pode ter vários modelos de extração com definições diferentes.
 
-1. **Determine o contexto:** revise a organização, o documento e o modelo de extração atual antes de modificar um modelo.
-2. **Substituição de verificação:** Se um modelo for armazenado para este modelo, esta seleção entrará em vigor dentro de seu escopo. Se uma substituição estiver faltando, a configuração da organização aplicável será aplicada.
-3. **Confirme a alteração deliberadamente:** Selecione apenas uma opção disponível em seu ambiente. Uma alteração pode exigir confirmação e acionar a extração novamente. Abrir o menu por si só não altera a seleção.
-4. **Compare resultados:** Verifique os valores dos campos, tabelas, tempo de execução e custos com uma amostra fixa. Um nível de modelo diferente não garante melhor extração, validação bem-sucedida ou correspondência PO.
+1. **Determinar o contexto:** reveja a organização, o documento e o modelo de extração atual antes de alterar um modelo.
+2. **Verificar a sobreposição:** se houver um modelo guardado para este modelo de extração, essa seleção aplica-se no seu âmbito. Se faltar a sobreposição, aplica-se a definição da organização aplicável.
+3. **Confirmar a alteração de forma consciente:** selecione apenas uma opção disponível no seu ambiente. Uma alteração pode exigir confirmação e voltar a lançar a extração. Abrir o menu por si só não altera a seleção.
+4. **Comparar resultados:** verifique os valores dos campos, as tabelas, o tempo de execução e os custos com uma amostra fixa. Um nível de modelo diferente não garante uma extração melhor, uma validação bem-sucedida nem a conciliação com encomendas.
 
-**Exemplo:** O Fornecedor A utiliza os modelos “Fatura Nacional” e “Fatura Estrangeira”. Uma substituição de “Fatura nacional” não altera todas as faturas desse fornecedor. Para outro documento, verifique novamente seu modelo e configuração efetiva.
+**Exemplo:** o fornecedor A usa os modelos de extração «Fatura nacional» e «Fatura estrangeira». Uma sobreposição para «Fatura nacional» não altera todas as faturas desse fornecedor. Para outro documento, verifique novamente o seu modelo de extração e a definição efetiva.
 
-O gráfico mostra a hierarquia de seleção, não uma recomendação para um nível de modelo específico. As informações sobre o diagnóstico [Padrão organizacional e substituições](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md) e [Qual caminho de extração foi usado?](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) ajudam a classificar o resultado real.
+O gráfico mostra a hierarquia de seleção, não uma recomendação de um nível de modelo específico. As informações sobre o [padrão da organização e as sobreposições](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md) e o diagnóstico [Que caminho de extração foi usado?](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) ajudam a enquadrar o resultado real.
 
-Na seção de ferramentas da **Tela de validação**, você pode escolher o modelo de IA usado para **Extração de campos** e **Extração de tabelas**.\\
-O **modelo de IA** selecionado é aplicado apenas a todos os documentos do fornecedor atual.
+Na secção de ferramentas do **ecrã de validação**, pode escolher o modelo de IA usado para **Field Extraction** e **Table Extraction**.\
+Este ponto de entrada altera a sobreposição no contexto do modelo de extração atual. A preferência é guardada por organização e modelo de extração (`tfidf_id`); a associação ao fornecedor não garante que todos os modelos de extração ou documentos históricos desse fornecedor mudem. Sem sobreposição, aplica-se a definição da organização aplicável.
 
-Para alterar o modelo, abra o menu de opções clicando no botão **Mais opções** (três pontos) no lado direito da tela e escolha um dos modelos disponíveis:<br>
+Para alterar o modelo, abra o menu de opções clicando no botão **More options** (três pontos) do lado direito do ecrã e escolha um dos modelos disponíveis:<br>
 
-* **Full** – Maior precisão; custa 2 tokens por documento
-* **Fast** – Nível predefinido; custa 1 token por documento
-* **Nexus** – Custa 1 token por documento
-* **Nexus Flash** – Nível mais rápido da família Nexus; custa 1 token por documento
-* **Auto** – O DocBits decide por documento se o Fast é suficiente ou se é necessário o Full; custa 1 token por documento
-* **Auto Nexus** – Como o Auto, mas restrito à família de modelos Nexus; custa 1 token por documento
+O menu oferece atualmente **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** e **Auto Nexus**. Verifique as informações atuais da interface e as condições da sua subscrição para disponibilidade e custos. Não assuma que uma opção é sempre a mais precisa ou a mais rápida, nem que todas as organizações usam Fast por predefinição.
 
-<figure><img src="../../../.gitbook/assets/dbdc865-supplier-ai-model-menu-pt-20261012.png" alt="Menu de opções da tela de validação com o seletor Modelo de IA"><figcaption><p>Abra o menu de opções e escolha o modelo de IA para este fornecedor.</p></figcaption></figure>
+Selecionar outro modelo pode exigir confirmação e reiniciar a extração. Verifique o documento e o âmbito antes de confirmar. Abrir o menu por si só não altera a definição; para estas ilustrações não foi selecionado nem confirmado qualquer modelo.
 
-<figure><img src="../../../.gitbook/assets/dbdc865-supplier-ai-model-options-pt-20261012.png" alt="Lista Modelo de IA aberta com Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus"><figcaption><p>A lista <strong>Modelo de IA</strong> com as seis opções disponíveis.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/selecting_a_supplier_specific_ai_model_1.png" alt="Menu de opções para o contexto de modelo de extração ilustrado, com uma fatura de exemplo sintética."><figcaption><p>Menu de opções para o contexto de modelo de extração ilustrado, com uma fatura de exemplo sintética.</p></figcaption></figure>
 
-Se os resultados da **extração de campos** ou **extração de tabelas** não forem satisfatórios, tente mudar para outro modelo para melhorar a precisão.
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/selecting_a_supplier_specific_ai_model_2.png" alt="O menu pendente AI Model com seis opções e uma fatura de exemplo sintética; não é mostrada qualquer alteração de modelo."><figcaption><p>O menu pendente AI Model com seis opções e uma fatura de exemplo sintética; não é mostrada qualquer alteração de modelo.</p></figcaption></figure>
 
-Para configurar o modelo de IA **globalmente para fornecedores sem modelo personalizado** ou para **gerenciar qual modelo está ativo para cada fornecedor**, consulte a documentação correspondente [**aqui**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
+Se os resultados da extração não forem satisfatórios, compare outros modelos disponíveis com documentos de teste aprovados e verifique os valores extraídos, o tempo de processamento e os custos. Uma mudança pode reprocessar um documento e não garante uma melhoria.
 
-## Configurações e valores específicos
+Para configurar a **predefinição da organização** ou rever as **sobreposições específicas do modelo de extração**, consulte a documentação correspondente [**aqui**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
 
-Structured Output tem sua própria configuração de organização/modelo de extração, separada do nível de IA. Altere em Mais opções do documento; confirmar salva o valor específico e reinicia esse documento. Os indicadores da lista são somente leitura. Excluir uma entrada pode remover vários valores específicos juntos. [Structured Output para tabelas](../ai-table/structured-output.md).
+## Definições e sobreposições
+
+O Structured Output tem uma definição de organização/modelo separada do nível de modelo. Altere-a em More options no documento; a confirmação guarda a sobreposição e reinicia esse documento. Os indicadores na lista de definições são só de leitura. Eliminar uma entrada de preferência pode remover várias sobreposições de uma vez. [Structured Output para tabelas](../ai-table/structured-output.md).

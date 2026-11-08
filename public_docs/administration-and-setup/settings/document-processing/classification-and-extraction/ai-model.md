@@ -1,71 +1,68 @@
-# Modelo de IA
+# AI Model
 
-## Visão Geral
+## Visão geral
 
-A configuração do **Modelo de IA** permite que você defina qual modelo de IA é usado por padrão para a **extração de campo** e a **extração de tabela** durante o processamento de documentos.\\
-Nesta seção, você pode revisar o custo em tokens para cada modelo e ver qual modelo está atualmente atribuído a cada fornecedor.
+A definição **AI Model** permite definir qual o modelo de IA usado por predefinição para a **extração de campos** e a **extração de tabelas** durante o processamento de documentos.\
+Use o seletor de modelo atual e a tabela de preferências de modelo para rever a definição da organização e as sobreposições. Para custos, consulte as informações disponíveis no seu ambiente e as condições da sua subscrição.
 
-## Como Acessar
+## Como aceder
 
-1.  Navegue até **Configurações** → **Processamento de documentos** → **Classificação e Extração**
+1.  Navegue para **Settings** → **Document Types** → **Classification and Extraction** → **General**
 
-    <figure><img src="../../../../.gitbook/assets/dbdc865-settings-nav-pt-20261012.png" alt="Navegação das configurações com Processamento de documentos e Classificação e Extração realçados"><figcaption><p>Abra <strong>Configurações → Processamento de documentos → Classificação e Extração</strong>.</p></figcaption></figure>
-2.  Role para baixo até a seção **Extração de tabela**
+    <figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/site-complete-global-ai-model-options-en.png" alt="Definições de extração atuais e menu AI Model: Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus. Os valores privados da tabela estão ocultos; nenhum modelo foi selecionado nem nenhuma preferência eliminada."><figcaption><p>Definições de extração atuais e menu AI Model: Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus. Os valores privados da tabela estão ocultos; nenhum modelo foi selecionado nem nenhuma preferência eliminada.</p></figcaption></figure>
+2.  Expanda **Extraction** e localize a definição **AI Model**.
 
-    <figure><img src="../../../../.gitbook/assets/dbdc865-ai-model-overview-pt-20261012.png" alt="Seção Extração com a configuração Modelo de IA e a tabela de atribuição de fornecedores"><figcaption><p>A seção <strong>Extração</strong> contém a configuração <strong>Modelo de IA</strong> e a tabela de atribuição de fornecedores.</p></figcaption></figure>
 
-## Opções de Modelo de IA
 
-O DocBits oferece seis opções de modelo de IA para a extração de campos e tabelas. Elas diferem no equilíbrio entre **precisão de extração**, **velocidade de processamento** e **custo em tokens por documento** — assim você pode adequar a opção ao tipo de documentos que processa. Passe o mouse sobre o ícone de informação ao lado da configuração para ver o custo em tokens da opção atualmente selecionada. Se nenhum modelo estiver definido para um fornecedor, é usado **Fast**.
+## Opções de modelo de IA
 
-* **Full** – A opção mais completa, com a maior precisão de extração. Ideal para layouts complexos, digitalizações de baixa qualidade ou documentos em que a precisão é o mais importante. Por ser a opção mais potente, também é a mais lenta, com **2 tokens por documento**.
-* **Fast** – Uma opção equilibrada que combina boa precisão com processamento mais rápido e custo menor. É o nível predefinido: fornecedores sem modelo de IA próprio usam **Fast**, com **1 token por documento**.
-* **Nexus** – Uma opção de ativação opcional que corre numa família de modelos diferente (Qwen 3.8 Max). Útil quando pretende uma segunda opinião para fornecedores em que Fast e Full discordam, ou quando o modelo alternativo lê melhor um determinado layout, com **1 token por documento**.
-* **Nexus Flash** – Um nível mais rápido da família Nexus (GLM-5.3 Flash). Processa os documentos mais depressa do que o Nexus, com o mesmo custo em tokens, com **1 token por documento**.
-* **Auto** – Não é um modelo próprio: para cada documento, o DocBits decide se o Fast é suficiente ou se é necessário o Full, para que os documentos complexos recebam automaticamente o modelo mais forte, com **1 token por documento**.
-* **Auto Nexus** – Como o Auto, mas restrito à família de modelos Nexus (Nexus Flash e Nexus). Os documentos mantêm-se totalmente fora da família de modelos padrão, com **1 token por documento**.
+O menu atual oferece **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** e **Auto Nexus**. São nomes de níveis de produto. As opções disponíveis, os modelos subjacentes e os custos em tokens podem mudar; verifique as informações do seu ambiente atual e as condições da sua subscrição em vez de confiar num nome histórico de modelo de fornecedor ou num preço fixo.
 
-| Opção | Ideal para | Precisão | Velocidade | Custo em tokens |
-|-------|-----------|----------|------------|-----------------|
-| **Full** | Layouts complexos, digitalizações ruins, alta precisão | Máxima | A mais lenta | 2 / documento |
-| **Fast** | Documentos do dia a dia (predefinição quando nada está definido) | Alta | Rápida | 1 / documento |
-| **Nexus** | Fornecedores em que a família de modelos alternativa tem melhor desempenho (opcional) | Alta | Rápida | 1 / documento |
-| **Nexus Flash** | Qualidade do Nexus com processamento mais rápido | Alta | Mais rápida | 1 / documento |
-| **Auto** | Qualidade de documentos variada sem ajuste manual | Por documento | Por documento | 1 / documento |
-| **Auto Nexus** | Decisões Auto limitadas à família Nexus | Por documento | Por documento | 1 / documento |
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-3-six-model-options-en-20261031.png" alt="Menu pendente AI Model atual com Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus"><figcaption><p>Detalhe dos seis níveis de extração no menu atual do ambiente de desenvolvimento. Abrir e fechar o menu deixou a seleção existente inalterada.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/dbdc865-ai-model-options-pt-20261012.png" alt="Lista Modelo de IA aberta, com as opções Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus"><figcaption><p>A lista <strong>Modelo de IA</strong> com as seis opções disponíveis.</p></figcaption></figure>
+| Opção | O que verificar com documentos representativos |
+| --- | --- |
+| **Full** | Resultados de extração em layouts complexos, tempo de processamento e custo. |
+| **Fast** | Resultados e tempo de processamento em documentos do dia a dia; o nome não é garantia para todos os documentos. |
+| **Nexus** | Compare esta opção alternativa com a mesma amostra de documentos. |
+| **Nexus Flash** | Verifique a qualidade e a latência nos seus layouts reais. |
+| **Auto** | Verifique os resultados e os custos da seleção automática. |
+| **Auto Nexus** | Verifique os resultados e os custos da opção de seleção automática Nexus. |
 
-## Tabela de Atribuição de Modelo de IA
+Quando o modelo de extração atual não tem sobreposição, a sua definição de modelo recorre à configuração da organização. Um valor específico do fornecedor não definido não significa universalmente Fast. Compare uma amostra fixa antes de mudar de modelo; uma mudança de modelo por si só não garante validação de campos, conciliação com encomendas, aprovação ou exportação bem-sucedida.
 
-Você também pode configurar **modelos de IA** específicos por fornecedor diretamente na tela de **Validação**, permitindo ajustar a precisão da extração para fornecedores individuais.\\
-\\
+
+
+## Tabela de atribuição de modelos de IA
+
+O **ecrã de validação** oferece um ponto de entrada para o modelo específico do fornecedor. A sua sobreposição é guardada para a organização e o modelo de extração atual (`tfidf_id`); não atualiza incondicionalmente todos os modelos nem documentos históricos do mesmo fornecedor.\
+\
 Para mais informações, consulte a documentação correspondente [aqui](../../../../end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md).
 
-A tabela de atribuição exibe as configurações do modelo de IA para cada fornecedor e inclui os seguintes detalhes:
+A tabela de atribuição resume as preferências de extração relacionadas com o modelo. As colunas variam conforme a versão do produto; use os cabeçalhos atuais para inspecionar a associação de fornecedor, o modelo, as opções de extração e as informações de auditoria:
 
-* **ID Do Fornecedor** – O identificador único do fornecedor
-* **Modelo De IA** – O nível de modelo de IA atualmente atribuído ao fornecedor
-* **Utilizar Extração Estruturada (IA)** – Se a extração estruturada está ativada para esse fornecedor
-* **E-Text** – Indica se o recurso E-Text está habilitado
-* **Criado Por / Modificado Por / Criado / Modificado** – Quem criou a entrada e quando
-* **Actions** – Contém a opção de excluir a entrada
+* **Supplier ID** – O identificador único do fornecedor
+* **AI Model** – O nível configurado para esta entrada de modelo
+* **Use Structured Extraction (AI)**, quando presente – A preferência de extração estruturada desta entrada
+* **E-Text** – Indica se a funcionalidade E-Text está ativa
+* **Created By / Modified By / Created On / Modified On** – Quem definiu a entrada e quando
+* **Action** – Contém a opção para eliminar a entrada
 
-<figure><img src="../../../../.gitbook/assets/dbdc865-ai-model-table-pt-20261012.png" alt="Tabela de atribuição de Modelo de IA com as colunas ID Do Fornecedor, Modelo De IA, Utilizar Extração Estruturada (IA), E-Text e colunas de auditoria"><figcaption><p>A tabela de atribuição mostra o nome do nível por fornecedor, nunca o identificador do modelo em bruto.</p></figcaption></figure>
 
-### Excluir Entrada – Redefinir Configurações Específicas do Fornecedor
 
-Para redefinir a configuração do modelo de IA de um fornecedor para o padrão:
+### Eliminar entrada: remover sobreposições do modelo
 
-1.  Clique nos três pontos na coluna **Actions** ao lado da entrada do fornecedor e selecione **Excluir**.
+Antes de um administrador eliminar uma entrada, deve identificar o respetivo modelo de extração e todas as preferências que contém. A eliminação pode remover várias sobreposições do modelo, não apenas a definição de modelo:
 
-    <figure><img src="../../../../.gitbook/assets/dbdc865-ai-model-delete-pt-20261012.png" alt="Menu de ações da linha com a opção Excluir na tabela Modelo de IA"><figcaption><p>Abra o menu de ações da linha e escolha <strong>Excluir</strong>.</p></figcaption></figure>
-2.  Um diálogo de confirmação aparecerá—confirme que você deseja excluir a entrada.
+1.  Clique nos três pontos na coluna **Action**, junto à entrada do fornecedor, e selecione **Delete**.
 
-    <figure><img src="../../../../.gitbook/assets/dbdc865-ai-model-delete-confirm-pt-20261012.png" alt="Diálogo de confirmação perguntando se a entrada deve ser excluída"><figcaption><p>Confirme a exclusão no diálogo.</p></figcaption></figure>
 
-Uma vez excluído, o fornecedor voltará a usar o **modelo de IA** padrão para a **extração de campo** e a **extração de tabela**.
+2.  Aparece uma caixa de confirmação — confirme que pretende eliminar a entrada.
 
-## Configurações e valores específicos
 
-Structured Output tem sua própria configuração de organização/modelo de extração, separada do nível de IA. Altere em Mais opções do documento; confirmar salva o valor específico e reinicia esse documento. Os indicadores da lista são somente leitura. Excluir uma entrada pode remover vários valores específicos juntos. [Structured Output para tabelas](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
+
+Após a eliminação, o processamento seguinte lê a configuração da organização aplicável e os valores de recurso para este modelo. Outros modelos associados ao mesmo fornecedor podem manter sobreposições independentes. A eliminação não reprocessa automaticamente documentos históricos. Para este guia não foi eliminada qualquer entrada nem realizada qualquer extração resultante.
+
+## Definições e sobreposições
+
+O Structured Output tem uma definição de organização/modelo separada do nível de modelo. Altere-a em More options no documento; a confirmação guarda a sobreposição e reinicia esse documento. Os indicadores na lista de definições são só de leitura. Eliminar uma entrada de preferência pode remover várias sobreposições de uma vez. [Structured Output para tabelas](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

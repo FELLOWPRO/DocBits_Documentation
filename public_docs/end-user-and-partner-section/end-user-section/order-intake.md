@@ -38,7 +38,7 @@ Moduł Przyjmowanie zamówień wymaga subskrypcji **AI Workforce**.
 2. Włącz opcję **Aktywuj panel Przyjmowanie zamówień**. Na pasku bocznym pojawi się pozycja „Przyjmowanie zamówień”.
 3. Nadaj roli pracowników obsługujących zamówienia dostęp do modułu Przyjmowanie zamówień w **Ustawienia › Grupy i uprawnienia** (administratorzy mają dostęp zawsze).
 
-<figure><img src="../../.gitbook/assets/order-intake-settings-module-pl.png" alt="Ustawienia modułu Przyjmowanie zamówień w sekcji Ustawienia › Moduł › Zamówienia i finanse; na końcu sekcja Eksport do ERP, tu jeszcze bez eksportu do ERP."><figcaption><p>Ustawienia modułu Przyjmowanie zamówień w sekcji Ustawienia › Moduł › Zamówienia i finanse; na końcu sekcja Eksport do ERP, tu jeszcze bez eksportu do ERP.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/order-intake-settings-module-pl.png" alt="Ustawienia modułu Przyjmowanie zamówień w sekcji Settings › Module › Order &#x26; Finance; na końcu sekcja Eksport do ERP, tu jeszcze bez eksportu do ERP."><figcaption><p>Ustawienia modułu Przyjmowanie zamówień w sekcji Settings › Module › Order &#x26; Finance; na końcu sekcja Eksport do ERP, tu jeszcze bez eksportu do ERP.</p></figcaption></figure>
 
 W tej samej sekcji administrator decyduje, jak działa moduł:
 

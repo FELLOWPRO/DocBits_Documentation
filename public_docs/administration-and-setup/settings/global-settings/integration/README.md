@@ -57,4 +57,4 @@ Click **Configure** to save your IdP settings.
 * **Task automation:** Integration allows routine tasks to be automated, saving time and resources. For example, notifications can be triggered automatically when a certain event occurs in another system without the need for manual intervention.
 * **Improved user experience:** A well-configured integration ensures a seamless user experience as users do not have to switch between different systems to access relevant information. This improves user satisfaction and contributes to efficiency.
 
-To properly configure the integration settings, it is important to understand the organization's requirements and ensure that the integration is seamlessly integrated into existing workflows and processes. This requires thorough planning, configuration, and monitoring of the integration to ensure that it works smoothly and delivers the desired value.
+Before configuring the integration, identify which systems need to exchange data and which workflows you want to automate. Plan, configure, and monitor the integration against those requirements.

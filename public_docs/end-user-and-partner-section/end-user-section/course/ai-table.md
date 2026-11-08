@@ -1,6 +1,6 @@
 # AI 表格
 
-探索 **DocBits** 的强大功能。这款先进的文档处理工具简化了表格提取、采购订单（PO）匹配和成本发票管理的复杂流程。
+DocBits 支持表格提取、采购订单（PO）匹配和成本发票处理。
 
 {% embed url="https://youtu.be/89uEFyKKLCk" %}
 

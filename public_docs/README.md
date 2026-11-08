@@ -12,7 +12,7 @@
 
 欢迎使用 DocBits
 
-欢迎来到 **DocBits**，这里汇集了全面的文档策略与见解。在 DocBits，我们致力于为[最终用户](end-user-and-partner-section/end-user-section/)、[管理员](administration-and-setup/settings/)和[合作伙伴](end-user-and-partner-section/partner-section/)提供清晰、简洁且及时更新的文档资源。
+这里提供面向[最终用户](end-user-and-partner-section/end-user-section/)、[管理员](administration-and-setup/settings/)和[合作伙伴](end-user-and-partner-section/partner-section/)的使用指南。
 
 [**DocBits**](https://www.docbits.com) **由** [**FELLOWPRO AG**](https://www.fellowpro.com) 提供，是一款先进的智能文档处理（IDP）解决方案，旨在优化并自动处理业务文档。
 

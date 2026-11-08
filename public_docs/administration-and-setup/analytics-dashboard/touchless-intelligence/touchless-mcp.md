@@ -99,11 +99,11 @@ Zrzut raportu pokazuje rekomendacje i szacowany wpływ, a nie zastosowanie lub w
 ## Powiązane strony
 
 * [Touchless Intelligence](./)
-* [Wskaźniki i obliczenia](../../touchless-metrics.md)
+* [Wskaźniki i obliczenia](touchless-metrics.md)
 * [Korzystanie z panelu](touchless-dashboard.md)
 * [Przykłady: cena i ilość](touchless-examples.md)
-* [Diagnoza dostawcy i klastry problemów](../../touchless-supplier-diagnosis.md)
-* [Diagnoza dopasowania PO](../../touchless-po-matching-diagnosis.md)
+* [Diagnoza dostawcy i klastry problemów](touchless-supplier-diagnosis.md)
+* [Diagnoza dopasowania PO](touchless-po-matching-diagnosis.md)
 * [Ślad dokumentu](touchless-document-trace.md)
 * [Propozycje zmian i raporty](touchless-change-proposals.md)
 

@@ -62,7 +62,7 @@ Ograniczenia dowodów. Ten przypadek nie wykazuje zatwierdzenia biznesowego, pom
 4. Zapisz potwierdzoną różnicę: **faktura a odczyt**, **poprawny odczyt a zaimportowane dane źródłowe** albo **Infor a jego zaimportowana kopia**. Jeśli wymagane dowody nie są zarejestrowane, pozostaw przyczynę otwartą.
 5. Sprawdź historię uruchomień pod kątem ręcznej poprawki, zatwierdzenia lub restartu oraz wyniku końcowego. Wynik i przyczyna odpowiadają na różne pytania.
 
-**Przykład.** Faktura i odczytana wartość mówią €10.00, a zaimportowane zamówienie €9.00. Ustala to rozbieżność z danymi zamówienia, a nie błąd odczytu. Potwierdź, która cena została uzgodniona i czy poprawy wymaga sam Infor, czy jego zaimportowana kopia. Jeśli AP ręcznie uruchomi fakturę ponownie i zakończy się ona pomyślnie, jest AP assisted mimo poprawnego odczytu. Zobacz [przykłady i obliczenie](./#example-100-correct-extraction-80-ap-touchless).
+**Przykład.** Faktura i odczytana wartość mówią €10.00, a zaimportowane zamówienie €9.00. Ustala to rozbieżność z danymi zamówienia, a nie błąd odczytu. Potwierdź, która cena została uzgodniona i czy poprawy wymaga sam Infor, czy jego zaimportowana kopia. Jeśli AP ręcznie uruchomi fakturę ponownie i zakończy się ona pomyślnie, jest AP assisted mimo poprawnego odczytu. Zobacz [przykłady i obliczenie](.#example-100-correct-extraction-80-ap-touchless).
 
 **Powtarzające się brakujące pola.** Kilka dokumentów zatrzymujących się na Field Validation ustala powtarzającą się blokadę. Możliwe przyczyny to odczyt, rzeczywiście nieobecna wartość na fakturze, reguła walidacji lub brakująca skonfigurowana wartość domyślna. Przed wyborem poprawki porównaj dowody; samo powtórzenie nie dowodzi żadnej z tych przyczyn.
 
@@ -80,8 +80,8 @@ Dopasowane wywołania narzędzi i klasyfikację działań człowieka znajdziesz 
 ## Powiązane strony
 
 * [Touchless Intelligence](./)
-* [Diagnoza dostawcy i klastry problemów](../../touchless-supplier-diagnosis.md)
-* [Diagnoza dopasowania PO](../../touchless-po-matching-diagnosis.md)
+* [Diagnoza dostawcy i klastry problemów](touchless-supplier-diagnosis.md)
+* [Diagnoza dopasowania PO](touchless-po-matching-diagnosis.md)
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 

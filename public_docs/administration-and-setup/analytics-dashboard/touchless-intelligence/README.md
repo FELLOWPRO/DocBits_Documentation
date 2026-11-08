@@ -6,7 +6,7 @@ Touchless Intelligence odpowiada na dwa odrębne pytania: **Czy DocBits poprawni
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pl.mp4" %}
 
-Ta wersja przeglądowa 5:41 pokazuje raport z danymi: filtry, KPI i obliczenia, trendy, pierwsze blokady, zarejestrowane dowody, historię dokumentu, porównanie uruchomień, wyuczone reguły, ulepszenia i historię, raporty doradcze oraz rzeczywiste wyniki MCP.
+Ta wersja przeglądowa 3:57 pokazuje raport z danymi: filtry, KPI i obliczenia, trendy, pierwsze blokady, zarejestrowane dowody, historię dokumentu, porównanie uruchomień, wyuczone reguły, ulepszenia i historię, raporty doradcze oraz rzeczywiste wyniki MCP.
 
 [Otwórz film z polskimi napisami i 16 rozdziałami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pl.html). Ludzki przegląd odsłuchowy tej nowej wersji jest nadal w toku.
 
@@ -18,11 +18,11 @@ Te przypadki szkoleniowe wyjaśniają funkcje raportu. Rekomendacja ani podgląd
 
 | Przewodnik | Co obejmuje |
 | --- | --- |
-| [Wskaźniki i obliczenia](../../touchless-metrics.md) | Kategorie wyników, licznik i mianownik, działania AP i obliczenia |
+| [Wskaźniki i obliczenia](touchless-metrics.md) | Kategorie wyników, licznik i mianownik, działania AP i obliczenia |
 | [Korzystanie z panelu](touchless-dashboard.md) | Filtry, karty KPI, trendy, pierwsze blokady i elementy sterowania |
 | [Przykłady: cena i ilość](touchless-examples.md) | Fikcyjne faktury i rzeczywiste widoki PO z Dev z różnicami ceny i ilości |
-| [Diagnoza dostawcy i klastry problemów](../../touchless-supplier-diagnosis.md) | Priorytetyzacja dostawców i powtarzających się przyczyn |
-| [Diagnoza dopasowania PO](../../touchless-po-matching-diagnosis.md) | Zrozumienie aktywnych reguł, tolerancji i przepływu decyzji |
+| [Diagnoza dostawcy i klastry problemów](touchless-supplier-diagnosis.md) | Priorytetyzacja dostawców i powtarzających się przyczyn |
+| [Diagnoza dopasowania PO](touchless-po-matching-diagnosis.md) | Zrozumienie aktywnych reguł, tolerancji i przepływu decyzji |
 | [Ślad dokumentu](touchless-document-trace.md) | Sprawdzanie oryginalnych wartości, uruchomień, blokad i interwencji |
 | [Propozycje zmian i raporty](touchless-change-proposals.md) | Rozróżnianie podglądu, zastosowania, pomiaru efektu i wycofania |
 | [Wyjaśnianie i poprawa Touchless przez MCP](touchless-mcp.md) | Wyjaśnianie, diagnozowanie i kontrolowane ulepszenia przez MCP |
@@ -31,7 +31,7 @@ Te przypadki szkoleniowe wyjaśniają funkcje raportu. Rekomendacja ani podgląd
 
 ## Ustawienia raportu
 
-Raport odczytuje cztery ustawienia organizacji, które administrator prowadzi w **Settings &#8594; Module &#8594; Dashboards &amp; Analytics**. Określają one cel i widok kosztów; puste pole oznacza, że DocBits używa wartości domyślnej.
+Raport odczytuje cztery ustawienia organizacji, które administrator prowadzi w **Settings → Module → Dashboards &amp; Analytics**. Określają one cel i widok kosztów; puste pole oznacza, że DocBits używa wartości domyślnej.
 
 | Ustawienie | Wartość domyślna | Co kontroluje |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ API sprawdza zapisane wartości ponownie i używa wartości domyślnej dla warto
 
 ## Dostęp
 
-Ten obszar należy do [Analytics Dashboard](../). Administratorzy mają dostęp; inni użytkownicy potrzebują odpowiedniego nadania dla swojej roli. Analiza AI, obsługiwane zmiany i raporty doradcze mogą wymagać uprawnień administratora.
+Ten obszar należy do [Analytics Dashboard](..). Administratorzy mają dostęp; inni użytkownicy potrzebują odpowiedniego nadania dla swojej roli. Analiza AI, obsługiwane zmiany i raporty doradcze mogą wymagać uprawnień administratora.
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 <!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

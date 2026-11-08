@@ -111,7 +111,7 @@ W trakcie działania przy każdym klastrze widzisz **Queued**, **Running**, **Do
 
 * Karta jest częścią Analytics Dashboard. Twój administrator włącza ją dla organizacji. Jeśli karty brakuje, zapytaj administratora.
 * **Administratorzy organizacji** widzą ją zawsze.
-* Inni użytkownicy widzą ją, gdy administrator przyznał ich roli kartę **Analytics dashboard** (**Settings &#8594; Roles**). Bez nadania dostęp mają tylko administratorzy.
+* Inni użytkownicy widzą ją, gdy administrator przyznał ich roli kartę **Analytics dashboard** (**Settings → Roles**). Bez nadania dostęp mają tylko administratorzy.
 * Niektóre działania są tylko dla administratorów: **AI analysis**, **applying and undoing a change**, **learned rule proposals** oraz **Consulting report**.
 
 Jeśli nie masz uprawnień, strona pokazuje _Action not allowed, please contact the administrator_.
@@ -119,10 +119,10 @@ Jeśli nie masz uprawnień, strona pokazuje _Action not allowed, please contact 
 ## Powiązane strony
 
 * [Touchless Intelligence](./)
-* [Wskaźniki i obliczenia](../../touchless-metrics.md)
+* [Wskaźniki i obliczenia](touchless-metrics.md)
 * [Przykłady: cena i ilość](touchless-examples.md)
-* [Diagnoza dostawcy i klastry problemów](../../touchless-supplier-diagnosis.md)
-* [Diagnoza dopasowania PO](../../touchless-po-matching-diagnosis.md)
+* [Diagnoza dostawcy i klastry problemów](touchless-supplier-diagnosis.md)
+* [Diagnoza dopasowania PO](touchless-po-matching-diagnosis.md)
 * [Ślad dokumentu](touchless-document-trace.md)
 * [Propozycje zmian i raporty](touchless-change-proposals.md)
 * [Wyjaśnianie i poprawa Touchless przez MCP](touchless-mcp.md)

@@ -15,7 +15,7 @@ Używaj AI Table do przeglądania odczytanych pozycji, poprawiania kolumn i zapi
 
 ## Kiedy otrzymujesz tabelę AI
 
-* Administrator włączył **AI Table extraction** (Settings &#8594; Document Processing &#8594; Classification and Extraction, patrz [Settings for admins](./#settings-for-admins)). Jeśli jest wyłączona, w obszarze tabeli wyświetla się _AI Table will display here. Enable in …_.
+* Administrator włączył **AI Table extraction** (Settings → Document Processing → Classification and Extraction, patrz [Settings for admins](./#settings-for-admins)). Jeśli jest wyłączona, w obszarze tabeli wyświetla się _AI Table will display here. Enable in …_.
 * Sprawdź czytelny tekst lub wybrane wejście Vision. Zapisane klasyczne reguły tabel mogą nadal określać efektywną ścieżkę odczytu tabeli; sprawdź [która ścieżka odczytu została faktycznie użyta](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md).
 * Poszczególne kolumny mają własny, trójstanowy wybór Use AI. Sprawdź efektywne reguły źródła i dostawcy oraz ten wybór; włączenie Structured Output nie zastępuje każdej tabeli opartej na regułach.
 

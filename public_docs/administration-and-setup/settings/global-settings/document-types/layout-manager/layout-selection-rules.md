@@ -227,5 +227,5 @@ Bildschirm **Reject** · Priorität **10** · *Supplier ID is one of* `10040, 10
 
 * [Regelbedingungen (Applies when)](../rule-conditions-applies-when.md)
 * [Benutzerdefinierte Validierungsregeln](../custom-validation-rules.md)
-* [Transformationsregeln](../transformation-rules/)
+* [Transformationsregeln](../transformation-rules.md)
 * [Navigieren im Layout-Manager](navigating-the-layout-manager.md)

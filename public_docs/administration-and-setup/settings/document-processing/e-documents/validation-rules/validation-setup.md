@@ -1,10 +1,10 @@
 # Configuration de la validation et versions acceptées
 
-Cette page explique l'assistant de configuration, les versions XRechnung acceptées et les profils acceptés de la page [Validation des factures électroniques](validation-rules.md). Seuls les administrateurs de l'organisation peuvent modifier ces paramètres.
+Cette page explique l'assistant de configuration, les versions XRechnung acceptées et les profils acceptés de la page [Validation des factures électroniques](README.md). Seuls les administrateurs de l'organisation peuvent modifier ces paramètres.
 
 ## Configuration de la validation
 
-<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-fr-20261104.png" alt="Versions XRechnung acceptées dans l’organisation de démonstration Dev. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification."><figcaption><p>Versions XRechnung acceptées dans l’organisation de démonstration Dev. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-setup-versions-fr-20261104.png" alt="Versions XRechnung acceptées dans l’organisation de démonstration Dev. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification."><figcaption><p>Versions XRechnung acceptées dans l’organisation de démonstration Dev. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
 
 La carte **Configuration de la validation** affiche votre profil de validation actuel (par exemple *B2G — Public Sector Receiver*). Cliquez sur **Modifier les réponses** pour relancer l'assistant de configuration et changer la norme par rapport à laquelle vous validez.
 
@@ -14,7 +14,7 @@ Le contrôle d’acceptation **Versions XRechnung acceptées** répertorie chaqu
 
 ## Profils acceptés et modèle de gravité
 
-<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-fr-20261104.png" alt="Profils ZUGFeRD et Factur-X acceptés. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification."><figcaption><p>Profils ZUGFeRD et Factur-X acceptés. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-profiles-severity-fr-20261104.png" alt="Profils ZUGFeRD et Factur-X acceptés. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification."><figcaption><p>Profils ZUGFeRD et Factur-X acceptés. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
 
 Choisissez les **profils** que vous acceptez (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)) à l'aide de **Tout accepter** / **Effacer**, puis **Enregistrer**.
 

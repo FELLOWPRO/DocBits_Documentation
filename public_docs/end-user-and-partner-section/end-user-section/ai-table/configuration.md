@@ -1,23 +1,23 @@
-# Paramètres et dérogations
+# Paramètres et surcharges
 
 [AI Table](README.md) · [Structured Output pour les tableaux](structured-output.md)
 
 ## Paramètres pour les administrateurs
 
-Ouvrez **Paramètres → Traitement des documents → Types de documents → Classification et extraction**, onglet **Général**, section **Extraction**.
+Ouvrez **Settings → Document Processing → Document Types → Classification and Extraction**, onglet **General**, section **Extraction**.
 
-<figure><img src="../../../.gitbook/assets/structured-output-settings-fr-20261104.png" alt="Commandes actuelles d&#x27;extraction. Structured Output est désactivé dans cette configuration existante ; aucun aperçu de schéma n&#x27;est donc affiché. Aucun paramètre d&#x27;extraction n&#x27;a été modifié."><figcaption><p>Commandes actuelles d&#x27;extraction. Structured Output est désactivé dans cette configuration existante ; aucun aperçu de schéma n&#x27;est donc affiché. Aucun paramètre d&#x27;extraction n&#x27;a été modifié.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/structured-output-settings-fr-20261104.png" alt="Contrôles d'extraction actuels. Structured Output est désactivé dans cette configuration existante, donc aucun aperçu de schéma n'est affiché. Aucun paramètre d'extraction n'a été modifié."><figcaption><p>Contrôles d'extraction actuels. Structured Output est désactivé dans cette configuration existante, donc aucun aperçu de schéma n'est affiché. Aucun paramètre d'extraction n'a été modifié.</p></figcaption></figure>
 
-* **Extraction de table** active le tableau classique.
-* **Extraction de table AI** active ou désactive le tableau AI pour l'organisation.
-* **Utiliser l'extraction structurée (IA)**: Le commutateur définit la valeur d'organisation de la sortie structurée. Les colonnes demandées dépendent de Par défaut/Oui/Non dans Use AI, des dérogations et de l'apprentissage fournisseur. Le guide complet explique configuration, aperçu et exemple. [Structured Output pour les tableaux](structured-output.md).
-* **Règles d'extraction enregistrées (Administrateur uniquement)** : lorsque l'option est activée, seuls les administrateurs de l'organisation peuvent enregistrer et exporter les règles d'extraction.
+* **Table Extraction** active le tableau classique.
+* **AI Table extraction** active ou désactive le tableau IA pour l'organisation.
+* **Use Structured Extraction (AI)** : l'interrupteur définit la valeur par défaut de sortie structurée de l'organisation. Les colonnes demandées dépendent de la sélection Use AI à trois états ; les surcharges de modèle et l'entraînement fournisseur comptent aussi. Lisez la configuration complète, l'aperçu et le guide d'exemple. [Structured Output pour les tableaux](structured-output.md).
+* **Save extraction rules (Admin only)** : lorsqu'il est activé, seuls les administrateurs de l'organisation peuvent enregistrer et exporter les règles d'extraction.
 
-<figure><img src="../../../.gitbook/assets/ai-table-settings-extraction-admin-only-fr.png" alt="Interrupteur Règles d'extraction enregistrées (Administrateur uniquement)"><figcaption><p><strong>Règles d'extraction enregistrées (Administrateur uniquement)</strong> détermine qui peut utiliser <strong>Enregistrer comme formation</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-table-settings-extraction-admin-only-fr.png" alt="Interrupteur Save extraction rules (Admin only)"><figcaption><p><strong>Save extraction rules (Admin only)</strong> détermine qui peut utiliser <strong>Save as training</strong>.</p></figcaption></figure>
 
-### Utiliser l'IA par colonne
+### Use AI par colonne
 
-Sélection à trois états : Par défaut reprend la sélection IA du type de document, Oui demande explicitement la colonne et Non l'exclut du schéma de base. Ce choix est distinct de Obligatoire, Lecture seule et Masqué. [Structured Output pour les tableaux](structured-output.md).
+Sélection IA à trois états : Default hérite de la valeur par défaut IA du type de document, Yes demande explicitement la colonne et No l'exclut du schéma de base. C'est distinct de Required, Read Only et Hidden. [Structured Output pour les tableaux](structured-output.md).
 
 
-Structured Output possède un réglage organisation/modèle d'extraction distinct du niveau d'IA. Modifiez-le dans Plus d'options du document ; confirmer enregistre la dérogation et redémarre ce document. Les indicateurs de la liste sont en lecture seule. Supprimer une entrée peut retirer plusieurs dérogations ensemble. [Structured Output pour les tableaux](structured-output.md).
+Structured Output a un paramètre d'organisation/de modèle distinct du niveau de modèle. Modifiez-le dans More options sur le document ; la confirmation enregistre la surcharge et redémarre ce document. Les indicateurs de la liste des paramètres sont en lecture seule. Supprimer une entrée de préférence peut retirer plusieurs surcharges à la fois. [Structured Output pour les tableaux](structured-output.md).

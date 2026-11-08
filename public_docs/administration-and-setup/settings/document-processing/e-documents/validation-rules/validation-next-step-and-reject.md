@@ -6,7 +6,7 @@ Après la lecture du [rapport de validation](validation-report.md), le rapport v
 
 ## Que faire ensuite
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-next-step-fr-20261104-v2.png" alt="Évaluation, étape suivante et actions du rapport."><figcaption><p>Évaluation, étape suivante et actions du rapport.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-next-step-fr-20261104-v2.png" alt="Évaluation, étape suivante et actions du rapport."><figcaption><p>Évaluation, étape suivante et actions du rapport.</p></figcaption></figure>
 
 L'**Évaluation** indique en une phrase si la facture est conforme. Le bloc **Étape suivante** vous dit quoi faire :
 
@@ -23,7 +23,7 @@ Les boutons à la fin du rapport :
 
 ## Rejeter un document
 
-<figure><img src="../../../../.gitbook/assets/einvoice-reject-dialog-fr-20261104-v2.png" alt="Boîte de dialogue de rejet de la facture fictive. Le rejet a été annulé."><figcaption><p>Boîte de dialogue de rejet de la facture fictive. Le rejet a été annulé.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-reject-dialog-fr-20261104-v2.png" alt="Boîte de dialogue de rejet de la facture fictive. Le rejet a été annulé."><figcaption><p>Boîte de dialogue de rejet de la facture fictive. Le rejet a été annulé.</p></figcaption></figure>
 
 1. Dans le rapport, cliquez sur **Rejeter le document**.
 2. Vérifiez le **Motif**. DocBits le remplit à partir des erreurs du rapport. Vous pouvez modifier le texte.

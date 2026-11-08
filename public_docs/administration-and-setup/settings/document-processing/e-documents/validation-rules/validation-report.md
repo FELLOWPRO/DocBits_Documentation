@@ -4,19 +4,19 @@
 
 Lorsque DocBits rejette une facture électronique, vous pouvez lire exactement pourquoi. Le **rapport de validation** liste chaque résultat en langage clair, vous indique quoi corriger et affiche l'étape suivante. Vous l'ouvrez depuis le document, pas depuis les paramètres. L'écran où vous le trouvez est décrit dans [L'écran d'erreur d'une facture électronique rejetée](validation-error-screen.md).
 
-Cette page s'adresse aux personnes qui traitent les factures. Les administrateurs définissent les règles sur la page [Validation des factures électroniques](validation-rules.md) et choisissent pour chaque type de document si un contrôle échoué bloque la facture, voir [Validation pour chaque type de document](validation-per-document-type.md).
+Cette page s'adresse aux personnes qui traitent les factures. Les administrateurs définissent les règles sur la page [Validation des factures électroniques](README.md) et choisissent pour chaque type de document si un contrôle échoué bloque la facture, voir [Validation pour chaque type de document](validation-per-document-type.md).
 
 ## Quand un document passe en erreur
 
 Si la validation est **activée** et **bloquante** pour le type de document, une facture avec un résultat bloquant obtient le statut **Erreur**. Ouvrez le document depuis le tableau de bord. La vue d'erreur affiche le XML à gauche et le motif à droite.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-fr-20261104-v2.png" alt="Écran d’erreur d’une facture d’exemple entièrement fictive. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification."><figcaption><p>Écran d’erreur d’une facture d’exemple entièrement fictive. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-fr-20261104-v2.png" alt="Écran d’erreur d’une facture d’exemple entièrement fictive. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification."><figcaption><p>Écran d’erreur d’une facture d’exemple entièrement fictive. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
 
 La carte de droite indique la couche qui a rejeté la facture (par exemple **L3 · Règles commerciales**), le code de la règle (par exemple `BR-CO-26`), une courte explication et une **Étape suivante**. Cliquez sur **Afficher les détails de validation** pour ouvrir le rapport complet.
 
 ## Lire le rapport
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-top-fr-20261104-v2.png" alt="Rapport de la facture fictive avec les données du fichier et le résultat."><figcaption><p>Rapport de la facture fictive avec les données du fichier et le résultat.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-fr-20261104-v2.png" alt="Rapport de la facture fictive avec les données du fichier et le résultat."><figcaption><p>Rapport de la facture fictive avec les données du fichier et le résultat.</p></figcaption></figure>
 
 Le rapport commence par les informations sur le fichier :
 
@@ -49,7 +49,7 @@ Le tableau **Résultat par niveau** indique combien d'erreurs, d'avertissements 
 
 ## Les résultats
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-findings-fr-20261104-v2.png" alt="Extrait du rapport : identifiant du vendeur manquant, règle BR-CO-26."><figcaption><p>Extrait du rapport : identifiant du vendeur manquant, règle BR-CO-26.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-fr-20261104-v2.png" alt="Extrait du rapport : identifiant du vendeur manquant, règle BR-CO-26."><figcaption><p>Extrait du rapport : identifiant du vendeur manquant, règle BR-CO-26.</p></figcaption></figure>
 
 Chaque résultat correspond à une ligne :
 
@@ -67,6 +67,6 @@ DocBits propose des textes en langage clair pour les règles les plus courantes.
 
 ## Pages associées
 
-* [Validation des factures électroniques](validation-rules.md) : versions et profils acceptés, gravité de chaque règle.
+* [Validation des factures électroniques](README.md) : versions et profils acceptés, gravité de chaque règle.
 * [Validation pour chaque type de document](validation-per-document-type.md) : activer la validation et définir le blocage.
-* [Routage des notifications](notification-routing.md) : qui traite quel résultat.
+* [Routage des notifications](../notification-routing.md) : qui traite quel résultat.

@@ -39,7 +39,7 @@ La recepción de pedidos requiere la suscripción a **AI Workforce**.
 2. Active **Activar el panel de control de recepción de pedidos**. «Recepción de pedidos» aparece ahora en la barra lateral.
 3. Conceda al rol de los empleados acceso a la recepción de pedidos en **Ajustes › Grupos y Permisos** (los administradores siempre tienen acceso).
 
-<figure><img src="../../.gitbook/assets/order-intake-settings-module-es.png" alt="Ajustes de la recepción de pedidos en Ajustes › Módulo › Pedido y Finanzas; al final, la sección Exportación al ERP, aquí todavía sin exportación al ERP."><figcaption><p>Ajustes de la recepción de pedidos en Ajustes › Módulo › Pedido y Finanzas; al final, la sección Exportación al ERP, aquí todavía sin exportación al ERP.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/order-intake-settings-module-es.png" alt="Ajustes de la recepción de pedidos en Settings › Module › Order &#x26; Finance; al final, la sección Exportación al ERP, aquí todavía sin exportación al ERP."><figcaption><p>Ajustes de la recepción de pedidos en Settings › Module › Order &#x26; Finance; al final, la sección Exportación al ERP, aquí todavía sin exportación al ERP.</p></figcaption></figure>
 
 En la misma sección, un administrador define cómo funciona el módulo:
 

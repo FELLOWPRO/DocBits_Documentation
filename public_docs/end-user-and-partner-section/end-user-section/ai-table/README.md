@@ -1,8 +1,8 @@
 # AI Table
 
-Con AI Table puede revisar posiciones extraídas, corregir columnas y guardar instrucciones para el diseño de un proveedor. Elija la guía para su tarea. Structured Output tiene su propia guía con Predeterminado/Sí/No, configuraciones específicas, vista previa y un ejemplo completo.
+Con AI Table puede revisar las posiciones extraídas, corregir columnas y guardar instrucciones adecuadas para el diseño de un proveedor. Elija la guía para su tarea. Structured Output tiene su propia guía de configuración, con Default/Yes/No, anulaciones, la vista previa y un ejemplo completo.
 
-* [Ajustes y configuraciones específicas](configuration.md)
+* [Ajustes y anulaciones](configuration.md)
 * [Structured Output para tablas](structured-output.md)
 * [Columnas y correcciones](columns-and-corrections.md)
 * [Instrucciones de IA](ai-instructions.md)
@@ -11,92 +11,95 @@ Con AI Table puede revisar posiciones extraídas, corregir columnas y guardar in
 * [Asistente y permisos](assistant-and-permissions.md)
 * [Vídeos](videos.md)
 
-<figure><img src="../../../.gitbook/assets/anatomy-ai-table.svg" alt="Ilustración isométrica de un lector de tablas: un cabezal lector con un cartucho de instrucciones escanea la tabla de un documento, un panel de conexiones enchufa cada columna devuelta en una columna configurada, y las columnas configuradas se alzan como contenedores con un mando de tres posiciones Use AI cada una."><figcaption><p>La IA lee la tabla y devuelve columnas. Cada columna devuelta se asigna a una columna de tabla configurada (una columna devuelta sin asignación permanece oculta), cada columna configurada tiene su propio ajuste Use AI (Predeterminado, Sí o No), y las instrucciones de IA y <strong>Guardar como entrenamiento</strong> determinan cómo se leen los siguientes documentos del diseño del proveedor.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/anatomy-ai-table.svg" alt="Ilustración isométrica de un lector de tablas: un cabezal lector con un cartucho de instrucciones escanea la tabla de un documento, un panel de conexiones enchufa cada columna devuelta en una columna configurada, y las columnas configuradas se alzan como contenedores con un mando Use AI de tres posiciones cada una."><figcaption><p>La IA lee la tabla y devuelve columnas. Cada columna devuelta se asigna a una columna de tabla configurada (una columna devuelta sin asignación permanece oculta), cada columna configurada tiene su propio ajuste Use AI (Default, Yes o No), y las instrucciones de IA y <strong>Save as training</strong> determinan cómo se leen los siguientes documentos del diseño del proveedor.</p></figcaption></figure>
 
-## Cuándo obtienes la tabla AI
+## Cuándo aparece la tabla AI
 
-* Un administrador ha activado la **Extracción de tabla de IA** (Ajustes → Procesamiento de documentos → Clasificación y extracción; consulta [Ajustes para administradores](#ajustes-para-administradores)). Si está desactivada, el área de la tabla muestra *La tabla AI se mostrará aquí. Habilitar en …*.
-* Compruebe el texto legible o la entrada Vision. Las reglas clásicas guardadas pueden seguir determinando la ruta; verifique [qué ruta se utilizó realmente](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md).
-* Cada columna dispone de una selección Use AI de tres estados. Compruebe también la fuente efectiva y las reglas del proveedor; Structured Output no sustituye todas las tablas basadas en reglas.
+* Un administrador ha activado **AI Table extraction** (Settings → Document Processing → Classification and Extraction; consulte [Ajustes para administradores](./#settings-for-admins)). Si está desactivada, el área de la tabla muestra _AI Table will display here. Enable in …_.
+* Compruebe el texto legible o la entrada Vision seleccionada. Las reglas de tabla clásicas guardadas todavía pueden determinar la ruta efectiva de la tabla; verifique [qué ruta de extracción se usó realmente](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md).
+* Cada columna tiene su propia selección Use AI de tres estados. Compruebe también el origen efectivo y las reglas del proveedor; activar Structured Output no sustituye todas las tablas basadas en reglas.
 
-El nivel de IA que lee la tabla (Fast, Full, Nexus) se establece por organización y se puede sobrescribir por proveedor; consulta Modelo de IA Específico del Proveedor para Extracción de Campos y Tablas.
+El nivel de IA que lee la tabla (Fast, Full, Nexus) se define por organización y puede sobrescribirse por proveedor; consulte [Modelo de IA específico del proveedor](../validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md).
 
 ## La tabla AI de un vistazo
 
-<figure><img src="../../../.gitbook/assets/ai-table-overview-es.png" alt="Tabla AI extraída con los encabezados de columna y cuatro filas"><figcaption><p>Las dos pestañas, la Tabla AI extraída y sus encabezados de columna.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-table-overview-es.png" alt="Tabla AI extraída con sus encabezados de columna y cuatro filas"><figcaption><p>Las dos pestañas, la tabla AI extraída y sus encabezados de columna.</p></figcaption></figure>
 
-* **Pestañas.** *Tabla AI extraída* es lo que ha leído la IA. *Tabla extraída* es la tabla clásica de las reglas entrenadas. La pestaña de IA se abre por defecto cuando el documento tiene una tabla AI.
-* **Encabezado de columna.** Cada columna muestra su nombre, un pequeño símbolo de **origen** (pasa el cursor por encima: *IA · cartografía*, *IA · sinónimo*, etc. indican cómo hizo coincidir la IA la columna), un menú de **tres puntos** y, en una columna asignada, un **botón con el nombre** en el que puedes hacer clic para cambiar de qué columna se trata.
-* **Botones de fila.** La **x** al principio de una fila elimina esa fila. Haz clic con el botón derecho en una fila para ver *Seleccionar como costo adicional* / *Remove as additional cost*.
-* **Barra de herramientas del pie.** Los iconos de la parte inferior de la pantalla añaden o ocultan columnas y filas; consulta [Barra de herramientas del pie](#barra-de-herramientas-del-pie).
-* **Tarjeta Instrucciones para la IA** debajo de la tabla: prompt, columnas adicionales, **Cambio de prueba**, **Aplicar**, **Guardar como entrenamiento**, **Borrar**, **Exportar**; consulta [Dar instrucciones a la IA](#dar-instrucciones-a-la-ia).
+* **Pestañas.** _AI Extracted table_ es lo que ha leído la IA. _Extracted table_ es la tabla clásica de las reglas entrenadas. La pestaña AI se abre por defecto cuando el documento tiene una tabla AI.
+* **Encabezado de columna.** Cada columna muestra su nombre, un pequeño símbolo de **origen** (pase el cursor por encima: _AI · mapping_, _AI · synonym_, etc. indican cómo ha emparejado la IA la columna), un menú de **tres puntos** y, en una columna asignada, un **botón con el nombre** en el que puede hacer clic para cambiar de qué columna se trata.
+* **Botones de fila.** La **x** al inicio de una fila elimina esa fila. Haga clic con el botón derecho en una fila para _Select as additional cost_ / _Remove as additional cost_.
+* **Barra de herramientas del pie.** Los iconos de la parte inferior de la pantalla añaden u ocultan columnas y filas; consulte [Barra de herramientas del pie](./#footer-toolbar).
+* **Tarjeta de instrucciones de IA** debajo de la tabla: prompt, columnas adicionales, **Test change**, **Apply**, **Save as training**, **Delete**, **Export**; consulte [Dar instrucciones a la IA](./#give-the-ai-instructions).
 
 {% hint style="info" %}
-Los controles de columna solo funcionan cuando puedes editar el documento. Si aparecen en gris, el documento es de solo lectura o está bloqueado en otra sesión. Cuando el banner rojo indica que el documento está bloqueado por tu propio usuario en otra sesión, **Desbloquear** toma el bloqueo.
+Los controles de columna solo funcionan cuando puede editar el documento. Si aparecen en gris, el documento es de solo lectura o está bloqueado en otra sesión. Cuando el banner rojo indica que el documento está bloqueado por su propio usuario en otra sesión, **Unlock** toma el bloqueo.
 {% endhint %}
 
 
-## Ajustes para administradores
+## Ajustes para administradores <a id="settings-for-admins"></a>
 
-Continuar aquí: [Ajustes y configuraciones específicas](configuration.md).
+Continúe aquí: [Ajustes y anulaciones](configuration.md).
 
-### Utilizar IA por columna
+### Usar IA por columna
 
-Continuar aquí: [Structured Output para tablas](structured-output.md).
+Continúe aquí: [Structured Output para tablas](structured-output.md).
 
-<a id="elegir-la-columna-correcta-reasignar"></a>
-<a id="el-menú-de-tres-puntos"></a>
-<a id="el-menu-de-tres-puntos"></a>
-<a id="barra-de-herramientas-del-pie"></a>
+<a id="pick-the-right-column-remap"></a>
+<a id="the-three-dots-menu"></a>
+<a id="footer-toolbar"></a>
 
 ## Cambiar una columna
 
-Continuar aquí: [Columnas y correcciones](columns-and-corrections.md).
+Continúe aquí: [Columnas y correcciones](columns-and-corrections.md).
 
-<a id="sugerir-con-nexus"></a>
-<a id="probar-aplicar-guardar-qué-hace-cada-botón"></a>
-<a id="probar-aplicar-guardar-que-hace-cada-boton"></a>
+<a id="suggest-with-nexus"></a>
+<a id="test-apply-save-what-each-button-does"></a>
 
-## Dar instrucciones a la IA
+## Dar instrucciones a la IA <a id="give-the-ai-instructions"></a>
 
-Continuar aquí: [Instrucciones de IA](ai-instructions.md).
+Continúe aquí: [Instrucciones de IA](ai-instructions.md).
 
 
-## Ver lo que hizo la IA
+## Ver qué ha hecho la IA
 
-Continuar aquí: [Explicar la extracción y diagnosticar](explain-extraction.md).
+Continúe aquí: [Explicar la extracción y diagnosticar](explain-extraction.md).
 
 
 ## Ejemplos prácticos
 
-Continuar aquí: [Explicar la extracción y diagnosticar](explain-extraction.md).
+Continúe aquí: [Explicar la extracción y diagnosticar](explain-extraction.md).
 
-<a id="sugerir-una-regla-a-tu-administrador"></a>
+<a id="suggest-a-rule-to-your-admin"></a>
 
 ## El Asistente y la tabla AI
 
-Continuar aquí: [Asistente y permisos](assistant-and-permissions.md).
+Continúe aquí: [Asistente y permisos](assistant-and-permissions.md).
 
 
 ## Quién puede hacer qué
 
-Continuar aquí: [Asistente y permisos](assistant-and-permissions.md).
+Continúe aquí: [Asistente y permisos](assistant-and-permissions.md).
 
-<a id="1-leer-la-tabla-ai"></a>
-<a id="2-corregir-una-columna-y-enseñar-a-docbits"></a>
-<a id="2-corregir-una-columna-y-ensenar-a-docbits"></a>
-<a id="3-dos-problemas-típicos"></a>
-<a id="3-dos-problemas-tipicos"></a>
-<a id="4-lo-que-la-ia-lee-bien"></a>
-<a id="5-el-asistente-y-quién-puede-cambiar-qué"></a>
-<a id="5-el-asistente-y-quien-puede-cambiar-que"></a>
+<a id="1-read-the-ai-table"></a>
+<a id="2-fix-a-column-and-teach-docbits"></a>
+<a id="3-three-typical-problems"></a>
+<a id="4-discount-tax-and-zero-quantity-lines"></a>
+<a id="5-what-the-ai-already-reads-correctly"></a>
+<a id="6-the-assistant-and-who-can-change-what"></a>
 
 ## Serie de vídeos
 
-Continuar aquí: [Vídeos](videos.md).
+Continúe aquí: [Vídeos](videos.md).
+
+
+## Vídeo para administradores: cambiar una columna
+
+Continúe aquí: [Vídeos](videos.md).
 
 ## Páginas relacionadas
 
 * [Etiquetas de la tabla AI](ai-table-tags.md)
-* [Entrenamiento de Campos de Línea / Tabla de Entrenamiento](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md)
-* [Touchless Intelligence](../../../administration-and-setup/touchless-intelligence.md)
+* [Entrenamiento de líneas de campo / Entrenamiento de tablas](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/)
+* [Modelo de IA específico del proveedor](../validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
+* [¿Qué ruta de extracción se usó?](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md)
+* [Touchless Intelligence](../../../administration-and-setup/analytics-dashboard/touchless-intelligence/)

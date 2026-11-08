@@ -852,15 +852,15 @@
     * [FAQ administrateur et dépannage de WatchDog](administration-and-setup/setup/watchdog/watchdog-admin-faq.md)
 * [Page de rapport](administration-and-setup/report-page.md)
 * [Tableau de bord analytique](administration-and-setup/analytics-dashboard.md)
-  * [Touchless Intelligence](administration-and-setup/touchless-intelligence.md)
+  * [Touchless Intelligence](administration-and-setup/analytics-dashboard/touchless-intelligence/README.md)
     * [Indicateurs et calcul](administration-and-setup/touchless-metrics.md)
-    * [Utiliser le tableau de bord](administration-and-setup/touchless-dashboard.md)
-    * [Exemples : prix et quantité](administration-and-setup/touchless-examples.md)
+    * [Utiliser le tableau de bord](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-dashboard.md)
+    * [Exemples : prix et quantité](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-examples.md)
     * [Touchless Intelligence : Diagnostic fournisseur et clusters de problèmes](administration-and-setup/touchless-supplier-diagnosis.md)
     * [Touchless Intelligence : Diagnostic du rapprochement avec le BC](administration-and-setup/touchless-po-matching-diagnosis.md)
-    * [Touchless Intelligence : Trace du document](administration-and-setup/touchless-document-trace.md)
-    * [Touchless Intelligence : Propositions de modification et rapports](administration-and-setup/touchless-change-proposals.md)
-    * [Expliquer et améliorer Touchless avec MCP](administration-and-setup/touchless-mcp.md)
+    * [Touchless Intelligence : Trace du document](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-document-trace.md)
+    * [Touchless Intelligence : Propositions de modification et rapports](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-change-proposals.md)
+    * [Expliquer et améliorer Touchless avec MCP](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-mcp.md)
 
 ## Intégration et configuration d'Infor <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>
 

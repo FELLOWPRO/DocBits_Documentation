@@ -39,7 +39,7 @@ Acquisizione ordini richiede l'abbonamento **AI Workforce**.
 2. Attiva **Attiva la dashboard di acquisizione ordini**. Nella barra laterale compare ora "Acquisizione ordini".
 3. Concedi al ruolo degli addetti l'accesso ad Acquisizione ordini in **Impostazioni › Gruppi e autorizzazioni** (gli amministratori hanno sempre accesso).
 
-<figure><img src="../../.gitbook/assets/order-intake-settings-module-it.png" alt="Impostazioni di Acquisizione ordini in Impostazioni › Modulo › Ordini e finanziamenti; in fondo la sezione Esportazione ERP, qui ancora senza esportazione ERP."><figcaption><p>Impostazioni di Acquisizione ordini in Impostazioni › Modulo › Ordini e finanziamenti; in fondo la sezione Esportazione ERP, qui ancora senza esportazione ERP.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/order-intake-settings-module-it.png" alt="Impostazioni di Order Intake in Settings › Module › Order &#x26; Finance; in fondo la sezione ERP-Export, qui ancora senza esportazione ERP."><figcaption><p>Impostazioni di Order Intake in Settings › Module › Order &#x26; Finance; in fondo la sezione ERP-Export, qui ancora senza esportazione ERP.</p></figcaption></figure>
 
 Nella stessa sezione un amministratore stabilisce come funziona il modulo:
 

@@ -6,9 +6,9 @@ Nadat u het [validatierapport](validation-report.md) hebt gelezen, vertelt het r
 
 ## Wat u hierna doet
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-next-step-nl-20261104-v2.png" alt="Beoordeling, volgende stap en rapportacties."><figcaption><p>Beoordeling, volgende stap en rapportacties.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-next-step-nl.png" alt="Beoordeling, volgende stap en rapportacties."><figcaption><p>Beoordeling, volgende stap en rapportacties.</p></figcaption></figure>
 
-Het blok **Beoordeling** zegt in één zin of de factuur conform is. Het blok **Volgende stap** vertelt u wat u moet doen:
+Het blok **Assessment** zegt in één zin of de factuur conform is. Het blok **Next step** vertelt u wat u moet doen:
 
 | Resultaat | Volgende stap |
 | --- | --- |
@@ -17,18 +17,18 @@ Het blok **Beoordeling** zegt in één zin of de factuur conform is. Het blok **
 
 De knoppen aan het einde van het rapport:
 
-* **Document afwijzen**: opent het dialoogvenster om af te wijzen (zie hieronder).
-* **Rapport (HTML)** en **Rapport (XML)**: download het rapport, bijvoorbeeld om het naar de leverancier te sturen.
-* **Sluiten**: keer terug naar het document.
+* **Reject document**: opent het dialoogvenster om af te wijzen (zie hieronder).
+* **Report (HTML)** en **Report (XML)**: download het rapport, bijvoorbeeld om het naar de leverancier te sturen.
+* **Close** (of **Back to document**): keer terug naar het document.
 
 ## Een document afwijzen
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-reject-dialog-nl-20261104-v2.png" alt="Dialoogvenster voor het afwijzen van de fictieve factuur. De afwijzing is geannuleerd."><figcaption><p>Dialoogvenster voor het afwijzen van de fictieve factuur. De afwijzing is geannuleerd.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-reject-dialog-nl.png" alt="Dialoogvenster voor het afwijzen van de fictieve factuur. De afwijzing is geannuleerd."><figcaption><p>Dialoogvenster voor het afwijzen van de fictieve factuur. De afwijzing is geannuleerd.</p></figcaption></figure>
 
-1. Selecteer in het rapport **Document afwijzen**.
-2. Controleer de **Reden**. DocBits vult ze in vanuit de fouten in het rapport. U kunt de tekst bewerken.
-3. Selecteer **Document afwijzen** om te bevestigen. De status verandert in **Afgewezen**. De reden wordt als notitie opgeslagen en het rapport blijft bij het document.
+1. Selecteer in het rapport **Reject document**.
+2. Controleer de **Reason**. DocBits vult ze in vanuit de fouten in het rapport. U kunt de tekst bewerken.
+3. Selecteer **Reject document** om te bevestigen. De status verandert in **Rejected**. De reden wordt als notitie opgeslagen en het rapport blijft bij het document.
 
-Selecteer **Annuleren** om het document ongewijzigd te laten.
+Selecteer **Cancel** om het document ongewijzigd te laten.
 
-> Alleen gebruikers die documenten mogen bewerken, zien **Document afwijzen**. De knop is verborgen wanneer het document al is afgewezen of voltooid.
+> Alleen gebruikers die documenten mogen bewerken, zien **Reject document**. De knop is verborgen wanneer het document al is afgewezen of voltooid.

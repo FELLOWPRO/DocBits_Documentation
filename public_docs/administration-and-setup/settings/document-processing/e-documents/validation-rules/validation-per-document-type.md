@@ -6,33 +6,33 @@ Beheerders bepalen per documenttype of DocBits binnenkomende e-facturen valideer
 
 ## De tabel
 
-Ga naar **Instellingen → E-documenten → Validatie van elektronische facturen**. Het tabblad **Regels en beleid** begint met de tabel **Validatie voor elk documenttype**.
+Ga naar **Settings → E-Documents → E-Invoice Validation**. Het tabblad **Rules and policy** begint met de tabel **Validation for each document type**.
 
 <figure><img src="../../../../../.gitbook/assets/einvoice-validation-settings-nl-20261104.png" alt="Validatie en blokkering per documenttype. Ingestelde namen zijn verborgen. Voorbeeld uit Dev."><figcaption><p>Validatie en blokkering per documenttype. Ingestelde namen zijn verborgen. Voorbeeld uit Dev.</p></figcaption></figure>
 
 | Schakelaar | Wat hij doet |
 | --- | --- |
-| **Ingeschakeld** | DocBits valideert elke binnenkomende e-factuur van dit documenttype en slaat een [validatierapport](validation-report.md) op. |
-| **Blokkeren** | Een bevinding die een fout is, stopt het document. Het krijgt de status **Fout**. Als blokkeren uit staat, slaat DocBits het rapport op en gaat het document verder. U kunt **Blokkeren** alleen inschakelen als **Ingeschakeld** aan staat. |
+| **Enabled** | DocBits valideert elke binnenkomende e-factuur van dit documenttype en slaat een [validatierapport](validation-report.md) op. |
+| **Blocking** | Een bevinding die een fout is, stopt het document. Het krijgt de status **Error**. Als blokkeren uit staat, slaat DocBits het rapport op en gaat het document verder. U kunt **Blocking** alleen inschakelen als **Enabled** aan staat. |
 
 Als een documenttype overschrijvingen voor subtypen heeft, toont de tabel daarover een opmerking.
 
 ## Een instelling wijzigen
 
 1. Selecteer de schakelaar die u wilt wijzigen.
-2. DocBits toont **Bevestig de wijziging in de validatie** met het documenttype en de wijziging, bijvoorbeeld *QUOTE: Ingeschakeld → Aan*.
+2. DocBits toont **Confirm validation change** met het documenttype en de wijziging, bijvoorbeeld *QUOTE: Ingeschakeld → Aan*.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-validation-confirm-nl-20261104.png" alt="Bevestiging van een instellingswijziging. De wijziging is voor deze opname geannuleerd."><figcaption><p>Bevestiging van een instellingswijziging. De wijziging is voor deze opname geannuleerd.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-validation-confirm-nl.png" alt="Bevestiging van een instellingswijziging. De wijziging is voor deze opname geannuleerd."><figcaption><p>Bevestiging van een instellingswijziging. De wijziging is voor deze opname geannuleerd.</p></figcaption></figure>
 
 3. Lees de opmerking: **Reeds opgeslagen rapporten blijven ongewijzigd.** De wijziging geldt alleen voor nieuwe controles, ook wanneer u de verwerking van een document opnieuw start.
-4. Selecteer **Wijziging bevestigen**, of **Annuleren** om de oude instelling te behouden.
+4. Selecteer **Confirm change**, of **Cancel** om de oude instelling te behouden.
 
 Als u de rechten niet hebt, toont DocBits een melding dat een organisatiebeheerder vereist is, en verandert er niets.
 
 ## Gerelateerde pagina's
 
-* [Validatie van elektronische facturen](README.md)
+* [Validatie van elektronische facturen](./)
 * [Wijzigingslogboek](validation-change-log.md)
 * [Validatie-instellingen en geaccepteerde versies](validation-setup.md)
 * [Validatierapport](validation-report.md)
-* [E-factuurvalidatie in- of uitschakelen](README.md#e-factuurvalidatie-in--of-uitschakelen)
+* [E-factuurvalidatie in- of uitschakelen](../#e-factuurvalidatie-in--of-uitschakelen)

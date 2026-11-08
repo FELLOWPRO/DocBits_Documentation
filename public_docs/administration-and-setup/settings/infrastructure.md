@@ -1,90 +1,83 @@
 # Infrastruktura
 
-Strona **Infrastruktura** zapewnia administratorom bieżący wgląd w to, gdzie działa każdy element DocBits (UE lub USA), jak dokument przepływa przez system oraz czy przetwarzanie w tle jest sprawne. Strona jest tylko do odczytu — niczego się tu nie konfiguruje; odpowiada na pytanie: *„czy wszystko działa i czy moje dane pozostają w mojym regionie?"*
+Strona **Infrastructure** daje administratorom aktualny obraz tego, gdzie działa każda część platformy (EU lub US) i czy przetwarzanie jest w dobrym stanie. Jest tylko do odczytu, więc niczego tu nie konfiguruje się.
 
-> **Dostęp:** Infrastruktura to strona wyłącznie dla administratorów. Otwórz **Ustawienia → Organizacja i Dostęp → Infrastruktura**.
+> **Access:** Infrastructure to strona wyłącznie dla administratorów. Otwórz **Settings → Organization & Access → Infrastructure**.
 
-<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-pl.png" alt="Przegląd infrastruktury."><figcaption><p>Przegląd infrastruktury.</p></figcaption></figure>
+Strona ma trzy karty. Każda ładuje swoje dane przy pierwszym otwarciu, więc przełączanie między nimi nie pobiera wszystkiego od nowa.
 
-Strona jest podzielona na trzy karty:
+| Tab | Answers |
+|-----|---------|
+| **Topology** | Gdzie działa każdy komponent i jak dokument przechodzi przez DocBits? |
+| **Processing** | Czy etapy przetwarzania dokumentów działają i czy praca się kumuluje? |
+| **Scheduled Tasks** | Czy cykliczne zadania w tle uruchamiają się zgodnie z harmonogramem? |
 
-| Karta | Odpowiada na |
-|-------|--------------|
-| **Topologia** | Gdzie działa każdy komponent i czy wszystko jest w moim regionie? |
-| **Przetwarzanie** | Czy etapy przetwarzania (OCR, ekstrakcja, dopasowanie PO …) działają i są aktualne? |
-| **Zaplanowane zadania** | Czy cykliczne zadania w tle są wykonywane zgodnie z harmonogramem? |
+## Topology
 
-## Topologia
+**Topology** otwiera się domyślnie. Widok pokazuje platformę w dwóch odsłonach: **Architecture** i **Process**. Przełącznik nad diagramem pozwala przechodzić między nimi; wskaźnik obok pokazuje **live**, dopóki widok transmituje swój stan.
 
-Karta Topologia przedstawia całą platformę DocBits w postaci diagramu, pogrupowanego w warstwy — **Edge / Web**, **Core API**, **Import**, **Usługi w tle**, **Magazyny danych** oraz **Uwierzytelnianie**. Każde pole to jeden komponent (aplikacja webowa/CDN, brama API, worker OCR, baza danych itd.).
+Baner nad diagramem podsumowuje kontrolę regionów:
 
-<figure><img src="../../.gitbook/assets/infrastructure_topology.png" alt="Diagram topologii z odznakami regionu"><figcaption><p>Każdy komponent jest oznaczony regionem, w którym działa</p></figcaption></figure>
+* **Green**: wszystkie komponenty działają w regionie Twojej organizacji, a baner podaje nazwę tego regionu (na przykład **EU**).
+* **Red**: komponent oznaczony jako krytyczny działa poza regionem Twojej organizacji.
+* **Amber**: komunikat wskazuje komponenty znajdujące się w innym regionie, mimo że ogólna kontrola jest zaliczona. To różnica regionów, a nie awaria.
 
-### Przejrzystość regionu
+### Widok architektury
 
-Każdy komponent ma odznakę regionu, dzięki czemu możesz jednym rzutem oka potwierdzić miejsce przechowywania danych:
+Widok architektury przedstawia platformę jako pasy kart komponentów, na przykład Edge / Web, Core API, Import, Background Services i Modules. Strzałki pokazują połączenia między kartami.
 
-| Odznaka | Znaczenie |
-|---------|-----------|
-| **UE ✓** / **US ✓** | Komponent działa w regionie Twojej organizacji. |
-| **SHARED** | Komponent globalny (np. CDN) bez jednego regionu — jest to oczekiwane i nie stanowi problemu. |
-| **Niezgodność regionu** | Komponent działa w *innym* regionie niż Twoja organizacja. Jest podświetlony, abyś mógł zgłosić to do wsparcia. |
+Każda karta pokazuje nazwę komponentu, oznaczenie regionu oraz, w przypadku komponentów krytycznych, kropkę stanu, która zmienia kolor na zielony, gdy komponent odpowiada, i pokazuje jego opóźnienie w milisekundach, gdy zgłaszana jest wartość.
 
-Baner u góry podsumowuje wynik: **„Wszystkie komponenty działają w Twoim regionie (UE)"**, gdy wszystko się zgadza, lub ostrzeżenie, jeśli któryś krytyczny komponent znajduje się w innym regionie.
+| Badge | Meaning |
+|-------|---------|
+| **EU ✓** / **US ✓** | Komponent działa w regionie Twojej organizacji. |
+| **SHARED** | Komponent globalny, taki jak CDN, bez jednego regionu. To jest oczekiwane. |
+| **EU ⓘ** / **US ⓘ** | Komponent działa w innym regionie i jest zgłaszany jako uwaga. |
+| **EU ⚠** / **US ⚠** | Komponent działa w innym regionie i jest zgłaszany jako błąd. Zgłoś to do pomocy technicznej. |
+| Szare oznaczenie, bez znaku | Region tego komponentu nie jest znany. |
 
-### Architektura vs. Odtwórz proces
+### Widok procesu
 
-Użyj przełącznika nad diagramem, aby zmienić widok:
+Widok procesu animuje pojedynczy dokument w potoku: źródła wejściowe **Email**, **FTP** i **Web** zbiegają się w **API**, a następnie przechodzą przez **OCR**, **Extraction**, **PO matching**, **Auto Accounting** i **Export**. Każdy etap łączy się z paskiem magazynów danych z **Postgres** i magazynem plików. Podpis wskazuje etap aktualnie animowany, a przycisk odtwarzania wstrzymuje animację lub ją wznawia.
 
-- **Architektura** — statyczna mapa wszystkich komponentów i ich połączeń.
-- **Odtwórz proces** — animuje drogę dokumentu przez system, krok po kroku, dzięki czemu widzisz kolejność, w jakiej komponenty są zaangażowane.
-
-Wskaźnik **● live** pokazuje, że informacje o stanie na diagramie odzwierciedlają bieżący stan systemu.
+PO matching i Auto Accounting są opcjonalne. Gdy jedno z nich jest wyłączone dla Twojej organizacji, jego etap jest wyszarzony, a animacja go pomija.
 
 ### Moduły opcjonalne
 
-Komponenty należące do modułu opcjonalnego (Wyszukiwanie pełnotekstowe, DocFlow, Auto-Accounting, DocNet, Dopasowanie PO) wyświetlają odznakę **aktywny** lub **nieaktywny**. Kliknięcie nieaktywnego modułu przenosi Cię bezpośrednio na stronę, na której możesz go włączyć — **Ustawienia → Moduł** dla większości modułów lub **Typy dokumentów** dla Dopasowania PO (które jest włączane dla każdego typu dokumentu).
+Moduły opcjonalne (Full-Text Search, DocFlow, Auto-Accounting, DocNet i PO Matching) mają na swojej karcie oznaczenie **active** lub **inactive**. Wyłączony moduł oferuje przycisk **Activate**, który prowadzi do strony, na której można go włączyć: ustawienia Modules dla większości modułów albo **Document Types** dla PO Matching, który włącza się dla każdego typu dokumentu.
 
-## Przetwarzanie
+## Processing
 
-Karta Przetwarzanie pokazuje potok przetwarzania dokumentów dla **Twojej organizacji** — kiedy każdy etap był ostatnio uruchomiony i czy praca przebiega płynnie, czy się piętrzy.
+Karta **Processing** wylicza etapy przetwarzania dokumentów dla Twojej organizacji i informuje, czy praca płynie, czy się kumuluje.
 
-<figure><img src="../../.gitbook/assets/prior-t004-pl.png" alt="Procesy infrastruktury i ostatnie wykonanie. Względne daty pozostają po niemiecku; część nazw procesów i zadań jest angielska. Ostatni Bieg oznacza ostatnie uruchomienie."><figcaption><p>Procesy infrastruktury i ostatnie wykonanie. Względne daty pozostają po niemiecku; część nazw procesów i zadań jest angielska. Ostatni Bieg oznacza ostatnie uruchomienie.</p></figcaption></figure>
+| Column | Description |
+|--------|-------------|
+| **Process** | Etap przetwarzania: Document Processing, OCR, TR-OCR, Barcode Split, Barcode Extraction, Extraction i PO Match. |
+| **Last run** | Jak dawno temu etap był ostatnio uruchamiany. Najedź kursorem, aby zobaczyć dokładny znacznik czasu. **Never run** oznacza, że żaden dokument nie dotarł jeszcze do tego etapu. |
+| **Status** | Jedno lub więcej oznaczeń (patrz poniżej). |
 
-| Kolumna | Opis |
-|---------|------|
-| **Proces** | Etap przetwarzania — Przetwarzanie dokumentów, OCR, TR-OCR, Podział po kodzie kreskowym, Ekstrakcja kodu kreskowego, Ekstrakcja, Dopasowanie PO. |
-| **Ostatnie uruchomienie** | Jak dawno temu etap był uruchomiony. Najedź kursorem, aby zobaczyć dokładny znacznik czasu. *„Nigdy nie uruchomiono"* oznacza, że żaden dokument nie dotarł jeszcze do tego etapu. |
-| **Stan** | Odznaka typu sygnalizacja świetlna (patrz niżej). |
+Oznaczenia stanu są niezależnymi sygnałami:
 
-Odznaki stanu:
+* Czerwone oznaczenie **Errors (N)**: `N` dokumentów niedawno nie powiodło się na tym etapie.
+* Bursztynowe oznaczenie z liczbą: `N` dokumentów jest teraz przetwarzanych przez ten etap.
+* Zielone oznaczenie **OK**: brak niedawnych błędów i nic nie czeka.
 
-| Odznaka | Znaczenie |
-|---------|-----------|
-| **OK** (zielony) | Brak ostatnich błędów i nic nie oczekuje — etap jest sprawny. |
-| **W toku (N)** (bursztynowy) | `N` dokumentów jest obecnie przetwarzanych na tym etapie. |
-| **Błąd (N)** (czerwony) | `N` dokumentów ostatnio nie powiodło się na tym etapie. |
+Ponieważ błędy i trwająca praca są liczone osobno, etap może pokazywać oba jednocześnie, więc awaria pozostaje widoczna, podczas gdy inne dokumenty są nadal przetwarzane.
 
-Błędy i *w toku* to niezależne sygnały, więc etap może pokazywać obie odznaki naraz — dzięki temu widzisz błąd nawet wtedy, gdy inna praca wciąż trwa. Użyj **Odśwież** (u góry po prawej), aby pobrać najnowsze wartości.
+## Scheduled Tasks
 
-## Zaplanowane zadania
+Karta **Scheduled Tasks** wylicza cykliczne zadania w tle, które utrzymują DocBits w działaniu, na przykład odświeżanie pamięci podręcznej, alerty stanu, limity czasu dokumentów i synchronizacje wychodzące. Każdy wiersz pokazuje, czy zadanie uruchamia się na czas.
 
-Karta Zaplanowane zadania zawiera listę cyklicznych zadań w tle, które utrzymują działanie DocBits (odświeżanie pamięci podręcznej, alerty stanu, limity czasu dokumentów, synchronizacje wychodzące i inne) oraz potwierdza, że każde z nich uruchamia się o czasie.
+| Column | Description |
+|--------|-------------|
+| **Task** | Nazwa zadania zaplanowanego, w której separatory zastąpiono spacjami. |
+| **Last run** | Jak dawno temu zadanie zostało uruchomione. Najedź kursorem, aby zobaczyć dokładny znacznik czasu. **Never run** oznacza, że nie zostało jeszcze uruchomione. |
+| **Status** | Stan harmonogramu (patrz poniżej). |
 
-<figure><img src="../../.gitbook/assets/prior-t005-pl.png" alt="Zaplanowane zadania infrastruktury. Względne daty pozostają po niemiecku; część nazw procesów i zadań jest angielska. Ostatni Bieg oznacza ostatnie uruchomienie."><figcaption><p>Zaplanowane zadania infrastruktury. Względne daty pozostają po niemiecku; część nazw procesów i zadań jest angielska. Ostatni Bieg oznacza ostatnie uruchomienie.</p></figcaption></figure>
+| Status | Meaning |
+|--------|---------|
+| **On schedule** (zielone) | Zadanie działa w oczekiwanym interwale. |
+| **Delayed** (czerwone) | Zadanie nie zostało uruchomione w oczekiwanym czasie. Zbadaj to lub zgłoś do pomocy technicznej. |
+| **Unknown** (szare) | Nie udało się ustalić stanu harmonogramu. |
 
-| Kolumna | Opis |
-|---------|------|
-| **Zadanie** | Nazwa zaplanowanego zadania. |
-| **Ostatnie uruchomienie** | Jak dawno temu było uruchomione. Najedź kursorem, aby zobaczyć dokładny znacznik czasu; *„Nigdy nie uruchomiono"* oznacza, że jeszcze się nie uruchomiło. |
-| **Stan** | Stan harmonogramu (patrz niżej). |
-
-Wartości stanu:
-
-| Odznaka | Znaczenie |
-|---------|-----------|
-| **Zgodnie z harmonogramem** (zielony) | Zadanie działa w oczekiwanym interwale. |
-| **Opóźnione** (czerwony) | Zadanie nie zostało uruchomione zgodnie z oczekiwaniami — warto to zbadać lub zgłosić do wsparcia. |
-| **Nieznany** (szary) | Nie udało się ustalić stanu harmonogramu. |
-
-Użyj **Odśwież**, aby ponownie sprawdzić stan harmonogramu na żądanie.
+Obie tabele mają przycisk **Refresh**, który na żądanie ponownie ładuje aktualne wartości.

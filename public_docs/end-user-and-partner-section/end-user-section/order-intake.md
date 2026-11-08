@@ -39,7 +39,7 @@ La Prise de commandes nécessite l'abonnement **AI Workforce**.
 2. Activez **Activer le tableau de bord Prise de commandes**. « Prise de commandes » apparaît alors dans la barre latérale.
 3. Donnez au rôle des gestionnaires l'accès à la Prise de commandes sous **Paramètres › Groupes et Autorisations** (les administrateurs ont toujours accès).
 
-<figure><img src="../../.gitbook/assets/order-intake-settings-module-fr.png" alt="Paramètres de la Prise de commandes sous Paramètres › Module › Commande et financement ; à la fin, la section Export ERP, ici encore sans export ERP."><figcaption><p>Paramètres de la Prise de commandes sous Paramètres › Module › Commande et financement ; à la fin, la section Export ERP, ici encore sans export ERP.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/order-intake-settings-module-fr.png" alt="Paramètres Order Intake sous Settings › Module › Order &#x26; Finance ; à la fin, la section Export ERP, ici sans export ERP."><figcaption><p>Paramètres Order Intake sous Settings › Module › Order &#x26; Finance ; à la fin, la section Export ERP, ici sans export ERP.</p></figcaption></figure>
 
 Dans la même section, un administrateur définit le fonctionnement du module :
 

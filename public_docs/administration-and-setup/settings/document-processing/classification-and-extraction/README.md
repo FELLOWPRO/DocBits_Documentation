@@ -1,121 +1,139 @@
 # Classification et extraction
 
-<figure><img src="../../../../.gitbook/assets/classification-general-fr-20261104.png" alt="Onglet Général avec les paramètres de traitement. Le motif de code-barres propre à l&#x27;organisation est masqué ; aucun paramètre n&#x27;a été modifié."><figcaption><p>Onglet Général avec les paramètres de traitement. Le motif de code-barres propre à l&#x27;organisation est masqué ; aucun paramètre n&#x27;a été modifié.</p></figcaption></figure>
-
 [AI Table](../../../../end-user-and-partner-section/end-user-section/ai-table/README.md) · [Structured Output pour les tableaux](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
 
-## Quel paramètre fonctionne à quelle étape du processus ?
+## Quel paramètre agit à quelle étape du processus ?
 
-<figure><img src="../../../../.gitbook/assets/process-extraction-fr-20261028.png" alt="Du fichier aux données reconnues: Affichez séparément le type de document, la source de données et le chemin d&#x27;extraction."><figcaption><p>Affichez séparément le type de document, la source de données et le chemin d&#x27;extraction. Le diagramme est schématique ; les paramètres actifs de votre organisation déterminent le comportement réel.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/process-extraction-fr-20261028.png" alt="Du fichier aux données reconnues : affichez séparément le type de document, la source de données et le chemin d'extraction."><figcaption><p>Affichez séparément le type de document, la source de données et le chemin d'extraction. Le schéma est schématique ; les paramètres actifs de votre organisation déterminent le comportement réel.</p></figcaption></figure>
 
-La classification répond à la question **« De quel type de document s'agit-il ?**. L'extraction répond **« Quelles valeurs contient-il ?**. Les paramètres de cette page affectent différents points de traitement et ne doivent pas être compris comme un seul commutateur AI.
+La classification répond à la question **« De quel type de document s'agit-il ? »**. L'extraction répond à la question **« Quelles valeurs contient-il ? »**. Les paramètres de cette page agissent à différents points du traitement et ne doivent pas être compris comme un seul interrupteur IA.
 
-1. **Préparer la saisie :** Pour PDFs, le texte existant ou OCR peut être utilisé ; les documents électroniques pris en charge peuvent fournir des valeurs structurées. Une division activée peut séparer un document entrant en fonction du code-barres ou des critères QR configurés.
-2. **Déterminer le type de document :** Les règles et modèles de classification attribuent aux documents un type et, si nécessaire, un sous-type. Cette affectation doit être distinguée de l'extraction ultérieure de champs et de tables.
-3. **Extraire les valeurs :** Les tables peuvent suivre différents chemins en fonction de la configuration et des règles enregistrées applicables. Les champs d'en-tête ont leurs propres indicateurs de source. Le modèle d’IA sélectionné n’explique donc pas à lui seul chaque valeur de ligne ou de champ.
-4. **Tracez le résultat :** Dans l'écran de validation, vérifiez quel onglet du tableau contient les lignes et quel indicateur de source possède un champ d'en-tête. Si une étape de traitement est manquante, lisez les journaux de documents avant de modifier les paramètres.
+1. **Préparer l'entrée :** pour les PDF, le texte existant ou l'OCR peut être utilisé ; les documents électroniques pris en charge peuvent fournir des valeurs structurées. Une division activée peut séparer un document entrant selon le code-barres ou les critères QR configurés.
+2. **Déterminer le type de document :** les règles de classification et les modèles attribuent aux documents un type et, si nécessaire, un sous-type. Cette affectation doit être distinguée de l'extraction ultérieure des champs et des tableaux.
+3. **Extraire les valeurs :** les tableaux peuvent suivre différents chemins selon la configuration et les règles enregistrées applicables. Les champs d'en-tête ont leurs propres indicateurs de source. Le modèle d'IA sélectionné n'explique donc pas à lui seul chaque ligne ni chaque valeur de champ.
+4. **Suivre le résultat :** dans l'écran de validation, vérifiez quel onglet de tableau contient les lignes et quel indicateur de source possède un champ d'en-tête. Si une étape de traitement manque, lisez les journaux du document avant de modifier des paramètres.
 
 ### Distinguer le chemin des règles et le chemin de l'IA
 
-Des règles de table enregistrées appropriées peuvent déterminer l'extraction de table pour le modèle ou le fournisseur concerné. Sans règles adaptées, le chemin AI peut être utilisé lorsque l’extraction de table AI est activée. Les colonnes individuelles peuvent avoir leurs propres options d'IA. Une source AI pour un champ d’en-tête ne signifie pas que la table entière provient de l’AI.
+Des règles de tableau enregistrées appropriées peuvent déterminer l'extraction de tableau pour le modèle ou le fournisseur concerné. Sans règles adaptées, le chemin IA peut être utilisé lorsque l'extraction de tableau IA est activée. Des colonnes individuelles peuvent avoir leurs propres options IA. Une source IA pour un champ d'en-tête ne signifie pas que le tableau entier provient de l'IA.
 
-Le guide de diagnostic [Quel chemin d’extraction a été utilisé ?](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) explique les onglets, les identifiants de source et les journaux. La page [Modèle d'IA](ai-model.md) explique la norme de l'organisation et les remplacements liés aux modèles.
+Le guide de diagnostic [Quel chemin d'extraction a été utilisé ?](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) explique les onglets, les identifiants de source et les journaux. La page [Modèle d'IA](ai-model.md) explique la norme de l'organisation et les dérogations liées aux modèles.
+
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-general-overview-en-20261030.png" alt="Classification et extraction avec General, Classification Rules et AI Models, plus Document Splitting et Document Processing"><figcaption><p>General contient les paramètres de traitement. AI Models est visible ici parce que le module est activé ; ses modèles de classification personnalisés sont distincts du sélecteur de niveau d'extraction. Le motif de code-barres enregistré est masqué.</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/dbdc-193-general-overview-en-20261030.png -->
 
 ## Vue d'ensemble
 
 Dans les paramètres **Classification and Extraction**, vous pouvez :
 
-* Activer la **division des documents** sur la base des codes QR
-* Configurer le **formatage des montants**
-* Configurer l'**extraction de tableaux**
+* Contrôler comment les documents téléversés sont **divisés** et combien de pages sont traitées
+* Configurer le **formatage des montants** pour la comparaison des montants
+* Configurer l'**extraction de tableaux**, y compris le modèle d'IA utilisé par fournisseur
 * Activer ou désactiver le traitement des fichiers **ZUGFeRD** non pris en charge
-* Définir des règles de classification spécifiques
-* Suivre les **modèles d'IA** entraînés sur mesure utilisés dans le processus de classification
+* Définir des **règles de classification** qui attribuent automatiquement un type de document
+* Consulter les **AI Models** et leurs libellés entraînés
 
-Cette page décrit en détail tous les paramètres disponibles.
+La page comporte **General** et **Classification Rules**, plus **AI Models** lorsque le module des modèles et libellés est activé pour votre organisation. Les modèles de classification personnalisés et les libellés dans **AI Models** sont distincts du sélecteur de niveau d'extraction sous **General → Extraction**.
 
-## **Accéder aux paramètres de classification et d'extraction**
+| Onglet | Contenu |
+|---|---|
+| General | Document Splitting, Document Processing, Amount Formatting, Table Extraction, Electronic Document |
+| Classification Rules | Règles regex qui classifient les documents selon le nom de source |
+| AI Models | Modèles entraînés sur mesure avec leurs libellés, types de document et priorité |
 
-Pour accéder aux paramètres **Classification and Extraction**, allez dans :\
-**Settings → Document Processing → Classification and Extraction**
+## Accéder aux paramètres de classification et d'extraction
 
+Allez dans **Settings → Document Types → Classification and Extraction**.
 
-## Division des documents
+## General
 
-Dans la section **Division des documents**, vous pouvez configurer si un document téléversé doit être divisé en plusieurs documents dès qu'un **code-barres** apparaît sur l'une de ses pages.
+L'onglet **General** regroupe les paramètres en sections repliables. La plupart des contrôles s'enregistrent dès que leur valeur change. Un **Barcode Pattern** non vide modifié utilise son action de validation/**Save**, et un changement de version de l'extraction de tableaux demande une confirmation. Vérifiez l'organisation et le comportement attendu avant de modifier un contrôle.
 
-Pour activer cette fonctionnalité :
+### Document Splitting
 
-1. Allez dans la section **Division des documents**.
-2.  Ouvrez le menu déroulant.
+**Split** détermine si un document téléversé est divisé en plusieurs documents lorsqu'un code-barres apparaît sur l'une de ses pages. La liste déroulante propose :
 
-    
-3.  Sélectionnez **Diviser par code-barres/code QR**.
+* **Do not split uploaded documents** – le réglage par défaut ; le document est traité comme un seul fichier.
+* **Split by Barcode/QR-Code** – le document est divisé à chaque code-barres détecté.
 
-    
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-document-splitting-en-20261030.png" alt="Document Splitting avec la division par code-barres et par code QR, les types de codes-barres sélectionnés et le champ Barcode Pattern masqué"><figcaption><p>Vérifiez la méthode de division et les types de codes-barres avant de les modifier. Le motif propre à l'organisation est masqué ; aucune valeur n'a été modifiée.</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/dbdc-193-document-splitting-en-20261030.png -->
 
-Vous aurez ensuite la possibilité de :
+Lorsque **Split by Barcode/QR-Code** est sélectionné, deux champs supplémentaires apparaissent :
 
-* Sélectionner un ou plusieurs types de codes-barres à détecter.
-*   Indiquer un motif regex auquel le code-barres doit correspondre pour déclencher la division du document.
+* **Barcode Type** – un ou plusieurs types de codes-barres à détecter, par exemple *CODE-128* ou *QR-CODE*.
+* **Barcode Pattern** – une regex à laquelle la valeur du code-barres doit correspondre pour déclencher la division. Laissez le champ vide pour diviser sur n'importe quel code-barres des types sélectionnés. Le motif est validé avant d'être enregistré ; une expression invalide est signalée immédiatement.
 
-    
+Après une division réussie, le document parent est supprimé et les pages continuent sous forme de documents distincts qui partagent le même lot.
 
-Après une division réussie, le document parent est supprimé et les pages se poursuivent sous forme de documents distincts qui partagent le même lot.
+<figure><img src="../../../../.gitbook/assets/anatomy-barcode-split.svg" alt="Illustration isométrique de huit feuilles dans un bac, avec un scanner qui lit un code-barres sur la feuille 6. Des intercalaires se dressent devant les feuilles 3 et 6 et répartissent les feuilles en trois documents, et un élastique entoure l'ensemble du bac."><figcaption><p>Exemple avec le motif <code>^INV\\d{6}$</code> : les codes des feuilles 3 et 6 correspondent et chacun démarre un nouveau document, le code de la feuille 4 ne correspond pas et ne divise rien, et l'élastique représente le lot que partagent les documents obtenus.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/anatomy-barcode-split.svg" alt="Illustration isométrique de huit feuilles dans un bac, avec un scanner qui lit un code-barres sur la feuille 6. Des intercalaires se dressent devant les feuilles 3 et 6 et répartissent les feuilles en trois documents ; un élastique entoure l'ensemble du bac."><figcaption><p>Exemple avec le motif <code>^INV\d{6}$</code> : les codes des feuilles 3 et 6 correspondent et chacun démarre un nouveau document, le code de la feuille 4 ne correspond pas et ne divise rien, et l'élastique représente le lot que partagent les documents obtenus.</p></figcaption></figure>
+### Document Processing
 
-## Formatage des montants
+**Pages to process** limite le nombre de pages océrisées, classifiées et extraites par document.
 
-Dans la section **Formatage des montants**, vous disposez de deux options :
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-document-processing-en-20261030.png" alt="Document Processing avec Pages to process réglé sur 10 et l'explication que les pages suivantes restent stockées et en lecture seule"><figcaption><p>Cet exemple a une limite de 10 pages traitées. Le champ explique que vide ou 0 signifie toutes les pages ; la valeur affichée n'a pas été modifiée.</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/dbdc-193-document-processing-en-20261030.png -->
 
-* **Autoriser l'arrondi lors de la comparaison des montants :**\
-  Si cette option est activée, une tolérance de ±0,5 est admise lors de la comparaison des montants.\
-  Si elle est désactivée, une tolérance par défaut de ±0,05 s'applique.
-* **Exiger une correspondance exacte pour la comparaison des montants :**\
-  Si cette option est activée, les montants doivent correspondre exactement, sans aucune tolérance.\
-  Si elle est désactivée, une tolérance de ±0,05 est admise.
+* Vide ou **0** signifie que toutes les pages sont traitées.
+* Un nombre *N* limite l'OCR, la classification et l'extraction aux *N* premières pages. Le document complet est toujours stocké, affiché et exporté ; les pages au-delà de la limite sont affichées en lecture seule.
 
-<mark style="color:red;">**Remarque**</mark> : une seule de ces deux options peut être active à la fois.
+### Amount Formatting
 
-## Extraction de tableaux
+Deux interrupteurs contrôlent la comparaison des montants avec les données de base et les bons de commande.
+
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-amount-formatting-en-20261030.png" alt="Amount Formatting avec Allow Rounding During Amount Comparison et Require Exact Match for Amount Comparison"><figcaption><p>Les deux interrupteurs de comparaison des montants sont désactivés dans cet exemple. Vérifiez la politique attendue avant de modifier l'un des deux.</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/dbdc-193-amount-formatting-en-20261030.png -->
+
+* **Allow Rounding During Amount Comparison** – lorsqu'il est activé, une tolérance de ±0,5 est admise. Lorsqu'il est désactivé, ±0,05 s'applique.
+* **Require Exact Match for Amount Comparison** – lorsqu'il est activé, les montants doivent correspondre exactement, sans aucune tolérance. Lorsqu'il est désactivé, ±0,05 s'applique.
+
+Un seul des deux interrupteurs peut être actif à la fois ; activer l'un désactive l'autre.
+
+### Table Extraction
 
 {% hint style="info" %}
 **Prérequis pour une extraction de tableaux fonctionnelle**
 
-* Le type de document dispose de **colonnes de tableau** (Settings → Document Processing → Document Types → [Colonnes de tableau](../../global-settings/document-types/table-columns/README.md)). Sans colonnes, il n'y a rien dans quoi extraire.
-* **Extraction de tableaux** ou **Extraction de tableaux par IA** est activée ci-dessous, pour toute l'organisation.
-* Le document contient du texte lisible : l'OCR a été exécuté, ou l'E-Text est utilisé pour les PDF nativement numériques ([Paramètres de l'OCR](../ocr-settings.md)).
+* Le type de document dispose de **colonnes de tableau** (Settings → Document Processing → Document Types → [Table Columns](../../global-settings/document-types/table-columns/README.md)). Sans colonnes, il n'y a rien dans quoi extraire.
+* **Table Extraction** ou **AI Table Extraction** est activé ci-dessous, pour toute l'organisation.
+* Le document contient du texte lisible : l'OCR a été exécuté, ou l'E-Text est utilisé pour les PDF nativement numériques ([OCR Settings](../ocr-settings.md)).
 * L'entraînement et les modèles d'IA sont définis **par fournisseur**. Un tableau entraîné ne s'applique qu'aux documents du fournisseur sur lequel il a été entraîné.
 {% endhint %}
 
-Vous pouvez extraire les tableaux des documents en activant soit **Extraction de tableaux**, soit **Extraction de tableaux par IA**. Un tableau entraîné (qu'il soit basé sur l'IA ou manuel) est toujours lié à un fournisseur précis.
+Vous pouvez extraire des tableaux des documents en activant soit **Table Extraction**, soit **AI Table Extraction**. Un tableau entraîné (qu'il soit basé sur l'IA ou manuel) est toujours lié à un fournisseur précis.
 
-**Extraction de tableaux :** active l'extraction de tableaux basée sur des règles. Les tableaux sont entraînés par fournisseur sur l'écran de validation (*Aller à la vue d'extraction de tableau*).\
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-table-extraction-en-20261030.png" alt="Contrôles d'extraction pour l'extraction de tableaux par règles et par IA, le mode vision, l'extraction structurée, les champs masqués et le sélecteur de modèle d'IA"><figcaption><p>Le sélecteur de niveau d'extraction se trouve dans General → Extraction. L'en-tête du tableau des dérogations fournisseur est affiché en dessous ; les données de lignes existantes sont masquées et aucun paramètre n'a été modifié.</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/dbdc-193-table-extraction-en-20261030.png -->
+
+**Table Extraction :** active l'extraction de tableaux basée sur des règles. Les tableaux sont entraînés par fournisseur sur l'écran de validation (*Go to table extraction view*).\
 En savoir plus sur l'entraînement [ici](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
 
-**Extraction de tableaux par IA :** utilise l'IA pour extraire le tableau de n'importe quel fournisseur sans entraînement. Si les résultats pour un fournisseur ne sont pas assez précis, entraînez le tableau de ce fournisseur ; les règles enregistrées prennent alors le pas sur l'IA pour ce fournisseur.
+**AI Table Extraction :** utilise l'IA pour extraire le tableau de n'importe quel fournisseur sans entraînement. Si les résultats pour un fournisseur ne sont pas assez précis, entraînez le tableau de ce fournisseur ; les règles enregistrées prennent alors le pas sur l'IA pour ce fournisseur.
 
-**Utiliser l'extraction de tableaux Vision (IA) :** l'IA lit l'image de la page au lieu de la couche de texte. Utile pour les documents numérisés et les tableaux sans structure de texte claire ; plus lent. Le menu déroulant à côté de l'interrupteur détermine l'intensité avec laquelle l'image de la page est utilisée :
+**Use Table Extraction Vision (AI) :** choisissez l'entrée de l'extraction de tableaux par IA dans une liste déroulante à quatre modes. Il s'agit d'une sélection de mode, et non d'un interrupteur marche/arrêt distinct. Changer le mode sélectionné enregistre immédiatement le paramètre :
 
-* **Désactivé (texte uniquement)** – Seule la couche de texte est utilisée. C'est le réglage par défaut.
-* **Images uniquement** – Seule l'image de la page est lue.
-* **Hybride (texte et images)** – La couche de texte et l'image de la page sont combinées dans la même requête.
-* **Auto (décidé par document)** – DocBits décide par document si la couche de texte suffit.
+* **Off (text only)** – Seul le texte OCR est utilisé.
+* **Images only** – Seule l'image de la page est lue.
+* **Hybrid (text and images)** – La couche de texte et l'image de la page sont combinées dans la même requête.
+* **Auto (decided per document)** – DocBits choisit, pour chaque document, l'entrée texte seule ou hybride.
 
-Le mode est stocké sous la clé de préférence `TABLE_EXTRACTION_VISION_MODE` ; l'ancien interrupteur `TABLE_EXTRACTION_USE_VISION` subsiste et équivaut en pratique à *Images uniquement*.
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-3-four-vision-options-en-20261031.png" alt="Liste déroulante Vision actuelle en anglais montrant Off (text only), Images only, Hybrid (text and images) et Auto (decided per document)"><figcaption><p>Les quatre modes d'entrée dans le menu Dev anglais actuel. Le menu a été ouvert puis fermé sans sélectionner un autre mode ; aucune extraction n'a été lancée.</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/dbdc-3-four-vision-options-en-20261031.png -->
 
-**Utiliser l'extraction structurée (IA):** Le commutateur définit la valeur d'organisation de la sortie structurée. Les colonnes demandées dépendent de Par défaut/Oui/Non dans Use AI, des dérogations et de l'apprentissage fournisseur. Le guide complet explique configuration, aperçu et exemple. [Structured Output pour les tableaux](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
+**Use Structured Extraction (AI) :** l'interrupteur définit la valeur par défaut de l'organisation pour la sortie structurée. Les colonnes demandées dépendent de la sélection Use AI à trois états ; les dérogations de modèle et l'entraînement fournisseur comptent aussi. Lisez le [guide complet de configuration, d'aperçu et d'exemple](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md) pour Structured Output for Tables.
 
-**Extraction de tableaux pour le calcul des coûts :** lorsque cette option est activée, DocBits peut extraire les éléments de coût des tableaux au niveau des lignes et les classer en conséquence.\
-Explication détaillée [ici](table-extraction-for-costing-element.md).
+**Table Extraction for Costing Element :** lorsque cette option est activée, DocBits peut extraire les éléments de coût des tableaux au niveau des lignes et les classer en conséquence.\
+Explication détaillée disponible [ici](table-extraction-for-costing-element.md).
 
-**Extraction automatique du code fiscal :** lorsque cette option est activée, le système remplit automatiquement le champ **Code fiscal** sur l'écran de validation, à condition qu'un champ de code fiscal soit configuré.\
+**Auto Extract Tax Code :** lorsque cette option est activée, le système remplit automatiquement le champ **Tax Code** sur l'écran de validation, à condition qu'un champ de code fiscal soit configuré.\
 Plus d'informations sur ce paramètre [ici](auto-extract-tax-code.md).
 
-**Enregistrer les règles d'extraction (administrateurs uniquement) :** seuls les administrateurs peuvent cliquer sur *Enregistrer les règles* dans l'entraînement de tableau. Activez cette option lorsque des utilisateurs enregistrent régulièrement des règles qui cassent l'extraction d'un fournisseur.
+**Save extraction rules (Admin only) :** seuls les administrateurs peuvent cliquer sur *Save Rules* dans l'entraînement de tableau. Activez cette option lorsque des utilisateurs enregistrent régulièrement des règles qui cassent l'extraction d'un fournisseur.
 
-**Modèle AI :** définit le modèle d'organisation pour l'extraction de champs et de tables. Le menu propose Full, Fast, Nexus, Nexus Flash, Auto et Auto Nexus. Vérifiez la disponibilité, la qualité, la durée d’exécution et le coût avec des documents représentatifs. Un niveau n’est pas toujours le plus précis ou le plus rapide pour chaque document. Les remplacements de modèles peuvent remplacer le paramètre d'organisation. Le tableau sous le sélecteur montre :
+**Extract hidden fields :** les champs marqués comme masqués dans les paramètres de champ sont également extraits. Utilisez cette option lorsqu'une valeur est nécessaire à une règle ou à un export mais ne doit pas être affichée sur l'écran de validation.
+
+**AI Model :** définit le modèle de l'organisation pour l'extraction des champs et des tableaux. Le menu propose Full, Fast, Nexus, Nexus Flash, Auto et Auto Nexus. Vérifiez la disponibilité, la qualité, la durée d'exécution et le coût avec des documents représentatifs. Un niveau n'est pas toujours le plus précis ou le plus rapide pour chaque document. Les dérogations de modèle peuvent remplacer le paramètre de l'organisation. Le tableau sous le sélecteur montre :
 
 * Quels **fournisseurs** utilisent quel modèle d'IA
 * S'ils utilisent l'extraction structurée (IA) et l'E-Text
@@ -123,145 +141,170 @@ Plus d'informations sur ce paramètre [ici](auto-extract-tax-code.md).
 
 Ce paramètre est expliqué en détail [ici](ai-model.md).
 
-### Pourquoi le tableau est-il différent d'un fournisseur à l'autre ?
+#### Pourquoi le tableau est-il différent d'un fournisseur à l'autre ?
 
-Le traitement des tables dépend des règles et paramètres enregistrés dans le contexte du fournisseur ou du modèle concerné :
+Le traitement des tableaux dépend des règles et paramètres enregistrés dans le contexte du fournisseur ou du modèle concerné :
 
 * **Règles enregistrées** (entraînement de tableau) : position du tableau et mappage de ses colonnes sur la mise en page de ce fournisseur.
-* **Étiquettes de tableau AI et règles de formatage** : indications que l'utilisateur a enregistrées pour le tableau AI de ce fournisseur.
-* **Modèle d'IA spécifique au modèle :** La sélection effectuée sur l'écran de validation est enregistrée par organisation et par modèle d'extraction actuel. Cela ne modifie pas automatiquement tous les modèles du même fournisseur. Sans remplacement, le paramètre d’organisation applicable est utilisé.
+* **Étiquettes de tableau IA et règles de formatage** : indications que l'utilisateur a enregistrées pour le tableau IA de ce fournisseur.
+* **Modèle d'IA spécifique au modèle :** la sélection effectuée sur l'écran de validation est enregistrée par organisation et par modèle d'extraction courant. Elle ne modifie pas automatiquement tous les modèles du même fournisseur. Sans dérogation, le paramètre d'organisation applicable est utilisé.
 
-Ainsi, le fournisseur A, qui dispose de règles enregistrées, affiche un tableau déterministe dans l'onglet *Tableau extrait* de l'écran de validation, tandis que le fournisseur B, sans règles, obtient le *Tableau extrait par IA*. Pour que le fournisseur B se comporte comme A, entraînez une fois le tableau de B. Pour réinitialiser un fournisseur, supprimez ses règles sur l'écran de validation ou réinitialisez ses données d'entraînement dans le tableau Modèle d'IA.
+Ainsi, le fournisseur A, qui dispose de règles enregistrées, affiche un tableau déterministe dans l'onglet *Extracted table* de l'écran de validation, tandis que le fournisseur B, sans règles, obtient le *AI Extracted table*. Pour que le fournisseur B se comporte comme A, entraînez une fois le tableau de B. Pour réinitialiser un fournisseur, supprimez ses règles sur l'écran de validation ou réinitialisez ses données d'entraînement dans le tableau AI Model.
 
-### Clés de préférence
+#### Clés de préférence
 
-Chaque option de cette section est stockée sous forme de préférence d'organisation. Utilisez la clé lorsque vous définissez la valeur via l'API (`/preferences/set_preference`), un script ou le DocBits MCP (`get_preference` / `set_preference`).
+Chaque interrupteur de cette section est stocké sous forme de préférence d'organisation. Utilisez la clé lorsque vous définissez la valeur via l'API (`/preferences/set_preference`), un script ou le DocBits MCP (`get_preference` / `set_preference`).
 
 | Paramètre (libellé dans l'interface) | Clé de préférence | Valeurs |
 |---|---|---|
-| Extraction de tableaux | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
-| Extraction de tableaux par IA | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| Utiliser l'extraction de tableaux Vision (IA) | `TABLE_EXTRACTION_VISION_MODE` | `off` (par défaut), `vision`, `hybrid`, `auto` |
-| Utiliser l'extraction de tableaux Vision (IA) – ancien interrupteur | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` ; équivaut en pratique à `vision` |
-| Utiliser l'extraction structurée (IA) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
-| Extraction de tableaux pour le calcul des coûts | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
-| Extraction automatique du code fiscal | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
-| Enregistrer les règles d'extraction (administrateurs uniquement) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
-| Modèle d'IA | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
-| Version de l'extraction de tableaux (boîte de dialogue de confirmation) | `TBL_EXT_VERSION` | chaîne de version |
-| OCR Settings → Utiliser les données IA pour les tableaux si disponibles | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
-| OCR Settings → Utiliser l'E-Text si disponible | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+| Split | `SPLIT_DOCUMENT_ON_BARCODE` | `true` / `false` |
+| Barcode Type | `SPLIT_DOCUMENT_BARCODE_TYPE` | liste des noms de types de codes-barres |
+| Barcode Pattern | `SPLIT_DOCUMENT_BARCODE_PATTERN` | chaîne regex |
+| Pages to process | `RESTRICT_TO_PAGES` | nombre ; vide ou `0` = toutes les pages |
+| Allow Rounding During Amount Comparison | `AMOUNTS_ROUNDING` | `true` / `false` |
+| Require Exact Match for Amount Comparison | `AMOUNTS_NO_ROUNDING` | `true` / `false` |
+| Table Extraction | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
+| AI Table extraction | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
+| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off`, `vision`, `hybrid`, `auto` ; si non défini, la préférence héritée détermine le mode |
+| Use Table Extraction Vision (AI) – legacy switch | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` ; équivaut en pratique à `vision` |
+| Use Structured Extraction (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
+| Table extraction for costing element | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
+| Auto extract tax code | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
+| Save extraction rules (Admin only) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| Extract hidden fields | `EXTRACT_HIDDEN_FIELDS` | `true` / `false` |
+| AI Model | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
+| Table extraction version (confirmation dialog) | `TBL_EXT_VERSION` | chaîne de version |
+| OCR Settings → Use AI data for tables if available | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR Settings → Use E-Text if available | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
 
 Remarques :
 
-* Les préférences booléennes sont stockées sous forme de chaînes `true` / `false` ; une clé jamais définie compte comme `false`. Si vous envoyez `1` ou `0`, DocBits stocke `true` / `false`.
-* `AI_MODEL` non défini équivaut à **Fast**.
-* Un `TABLE_EXTRACTION_VISION_MODE` non défini est déduit de l'ancien interrupteur `TABLE_EXTRACTION_USE_VISION` : `true` donne `vision`, toute autre valeur donne `off`.
+* Les préférences booléennes sont stockées sous forme des chaînes `true` / `false`. Une clé non définie utilise la valeur par défaut de ce paramètre ; l'interface affiche **Extract hidden fields** comme activé lorsqu'il n'est pas défini. Ne partez pas du principe que toute clé absente signifie false. Si vous envoyez `1` ou `0`, DocBits stocke `true` / `false`.
+* `AI_MODEL` non défini signifie **Fast**.
+* `TABLE_EXTRACTION_VISION_MODE` non défini est résolu à partir de l'ancien interrupteur `TABLE_EXTRACTION_USE_VISION` : `true` donne `vision`, toute autre valeur donne `off`.
 * La modification d'une clé prend effet pour les documents traités ensuite. Redémarrez un document pour le réextraire avec le nouveau paramètre.
-* Les remplacements de modèles diffèrent des préférences de l'organisation. Le guide AI Model explique la portée exacte.
+* Les dérogations de modèle diffèrent des préférences d'organisation. Le guide AI Model explique la portée exacte.
 
-## Document électronique
+### Electronic Document
 
-**Traiter les PDF ZUGFeRD non pris en charge :** si cette option est activée, les versions **ZUGFeRD** non prises en charge sont traitées comme des PDF standard et le XML intégré est ignoré.
+**Process Unsupported ZUGFeRD PDF :** si cette option est activée, les versions **ZUGFeRD** non prises en charge sont traitées comme des PDF standard et le XML intégré est ignoré.
 
-La liste des versions **ZUGFeRD** prises en charge est disponible [ici](../../global-settings/document-types/edi/zugferd/README.md).
+La liste des versions **ZUGFeRD** prises en charge se trouve [ici](../../global-settings/document-types/edi/zugferd/README.md).
 
-## **Règles de classification**
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-electronic-document-en-20261030.png" alt="Electronic Document avec l'interrupteur Process Unsupported ZUGFeRD PDF"><figcaption><p>Electronic Document contient l'option pour les PDF ZUGFeRD non pris en charge. L'état affiché correspond à un paramètre existant ; aucun traitement de document n'a été effectué pour cette capture.</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/dbdc-193-electronic-document-en-20261030.png -->
 
-Dans la section **Règles de classification**, vous pouvez définir des motifs **regex** et des critères spécifiques pour aider le système à classer automatiquement les documents lors du traitement.
+## Classification Rules
 
-Pour accéder à cette section, cliquez sur l'onglet **Règles de classification** en haut de la page.
+L'onglet **Classification Rules** liste les règles qui attribuent automatiquement un type de document pendant le traitement. Chaque règle compare un **motif regex** au nom de source du document et, en cas de correspondance, définit le type de document et éventuellement un sous-type de document.
 
+Basculez vers cet onglet en cliquant sur **Classification Rules** en haut de la page.
 
-### **Ajouter une nouvelle règle de classification**
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-rules-list-en-20261030.png" alt="Classification Rules avec Search by column, Add et les en-têtes du tableau des règles"><figcaption><p>Recherchez des règles existantes ou choisissez Add pour préparer une règle. Les lignes de règles existantes sont masquées ; il ne s'agit pas d'un exemple de liste vide.</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/dbdc-193-rules-list-en-20261030.png -->
 
-Pour créer une nouvelle règle :
+Le tableau contient une ligne par règle, avec les colonnes suivantes :
 
-1.  Cliquez sur **Ajouter** dans le coin supérieur droit.
+* **Type** – où le motif est appliqué. Deux types existent : **Barcode** et **E-Mail**.
+* **Pattern** – la regex enregistrée pour la règle.
+* **Document Type** – le type de document attribué lorsque le motif correspond.
+* **Sub Document Type** – le sous-type de document attribué lorsque le motif correspond.
+* **Sub Organization** – la sous-organisation à laquelle la règle est limitée. Vide signifie que la règle s'applique à toutes les sous-organisations.
+* **Actions** – le menu de ligne avec *Edit* et *Delete*.
 
-    
-2. Renseignez les champs suivants :
-   * **Motif** : le motif regex que le système doit rechercher pour déclencher la classification.
-   * **Type** : l'endroit où le motif doit être recherché (par exemple **Code-barres**).
-   * **Sous-organisation** _(facultatif)_ : indique à quelle sous-organisation la règle s'applique.
-   * **Type de document** : le type de document à attribuer lorsque le motif correspond.
-   *   **Sous-type de document** _(facultatif)_ : indique un sous-type pour une classification plus fine.
+Le champ de recherche au-dessus du tableau filtre toutes les colonnes, y compris les libellés affichés des colonnes de liste déroulante.
 
-       
-3.  Cliquez sur **Save** pour enregistrer votre règle de classification.
+### Ajouter une nouvelle règle de classification
 
-    
+1.  Cliquez sur **Add** au-dessus du tableau.
 
-### **Modifier une règle de classification**
+    <figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-rule-add-en-20261030.png" alt="Boîte de dialogue Configure classification Rule vide avec Pattern, Show help, Type, organisation, type de document, Cancel et Save"><figcaption><p>Add ouvre ce formulaire de règle vide. Vérifiez le motif et le type cible avant Save ; Cancel le ferme sans créer de règle.</p></figcaption></figure>
+    <!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/dbdc-193-rule-add-en-20261030.png -->
+2. Renseignez les champs :
+   * **Pattern** (obligatoire) – la regex que la règle recherche.
+   * **Type** (obligatoire) – **Barcode** ou **E-Mail**. Cela détermine le nom de source auquel le motif est comparé.
+   * **Sub Organization** *(facultatif)* – limite la règle à une seule sous-organisation.
+   * **Document Type** – le type de document attribué lorsque le motif correspond.
+   * **Sub Document Type** *(facultatif)* – un type plus spécifique ; la liste dépend du type de document sélectionné. Changer le type de document efface le sous-type de document.
+3.  Cliquez sur **Save**.
 
-Pour modifier une règle existante :
+La boîte de dialogue valide le motif avant l'enregistrement. Un motif déjà utilisé par une autre règle est refusé avec *Pattern already exists* ; un motif vide est refusé avec le message de champ obligatoire.
 
-1.  Cliquez sur les trois points dans la colonne **Actions**.
+#### Aide sur les motifs
 
-    
-2.  Sélectionnez **Edit**.
+L'interrupteur **Show help** sous le champ de motif ouvre une référence intégrée présentant les formats de nom de source auxquels le motif est comparé :
 
-    
-3. Apportez les modifications souhaitées.
-4.  Cliquez sur **Save** pour appliquer les mises à jour.
+* **O365** – `Shared Email + Folder › Shared Email › Folder › Email › Id`
+* **Gmail** – `Email + Folder › Folder › Email › Id`
 
-    
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-rule-pattern-help-en-20261030.png" alt="Aide sur les motifs montrant les formats de nom de source O365 et Gmail, des exemples d'expressions régulières et des conseils de correspondance"><figcaption><p>Show help explique quel nom de source la regex compare. La référence et les exemples sont affichés sans saisir ni enregistrer de règle.</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/dbdc-193-rule-pattern-help-en-20261030.png -->
 
-### **Supprimer une règle de classification**
+Exemples donnés dans le panneau :
 
-Pour supprimer une règle :
+* `.*@acme\.de.*` – n'importe quelle source de cette boîte aux lettres
+* `^ap@acme\.de:.*` – une boîte aux lettres précise, n'importe quel dossier
 
-1.  Cliquez sur les trois points dans la colonne **Actions**.
+Astuce : ancrez avec `^` / `$` pour des correspondances exactes, échappez les points avec `\.`, et utilisez `:` comme séparateur de champs. Le premier ensemble de champs présent dans le nom de source l'emporte.
 
-    
-2.  Sélectionnez **Delete**.
+Si vous utilisez le type **E-Mail**, le motif est comparé aux noms de boîte aux lettres et de dossier du courrier importé, et non au contenu du document.
 
-    
+### Modifier une règle de classification
 
-## Modèles d'IA
+1.  Cliquez sur les trois points dans la colonne **Actions** de la règle à modifier.
+2.  Sélectionnez **Edit**. La boîte de dialogue s'ouvre avec les valeurs actuelles de la règle.
+3. Modifiez le motif, le type, la sous-organisation, le type de document ou le sous-type de document.
+4.  Cliquez sur **Save**.
 
-La section **Modèles d'IA** affiche tous les modèles entraînés sur mesure qui ont été spécifiquement ajustés à vos besoins.
+La même validation que lors de l'ajout s'applique : le motif ne doit être ni vide ni identique à celui d'une autre règle.
 
-### Accéder à la section Modèles d'IA
+### Supprimer une règle de classification
 
-Pour ouvrir cette section, cliquez sur l'onglet **Modèles d'IA** situé en haut de la page.
+1. Cliquez sur les trois points dans la colonne **Actions**.
+2. Sélectionnez **Delete**.
 
+La règle est retirée immédiatement de la liste. Supprimer une règle ne modifie pas les documents déjà classifiés avec elle.
 
-### Catégories de modèles
+## AI Models
 
-Les modèles sont organisés par catégories. Sous le nom de chaque catégorie figure le nombre de modèles qu'elle contient.\
-Cliquez sur une catégorie pour afficher ses détails.
+L'onglet **AI Models** affiche les modèles entraînés sur mesure disponibles pour la classification des documents et leurs libellés. Il n'apparaît que lorsque le module des modèles et libellés est activé pour votre organisation.
 
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-ai-models-empty-en-20261030.png" alt="Onglet AI Models sélectionné avec No Record Found dans l'organisation actuelle"><figcaption><p>AI Models est un onglet facultatif pour les modèles de classification personnalisés et les libellés. Dans cette organisation, la lecture réussie de la liste n'a renvoyé aucun modèle ; cela ne décrit pas le paramètre de niveau d'extraction.</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/dbdc-193-ai-models-empty-en-20261030.png -->
 
-En haut de la page de la catégorie sélectionnée, vous verrez les informations clés de chaque modèle :
+Si aucun modèle personnalisé n'est disponible pour l'organisation, l'onglet affiche *No Record Found!*.
 
-* **Type** : le type de modèle.
-* **Première page uniquement** : indique si le modèle ne traite que la première page d'un document.
-* **Version** : le numéro de version du modèle.
+### Modèles
 
-### Tableau des modèles
+Chaque modèle est une entrée dépliable avec :
 
-Tous les modèles d'une catégorie sont répertoriés dans un tableau qui contient les informations suivantes :
+* Le **nom du modèle** et un badge **Default** sur le modèle utilisé lorsque rien d'autre ne s'applique.
+* Le nombre de **libellés** entraînés pour ce modèle.
+* Par modèle, une fois déplié : **Type**, **First page only** et **Version**.
 
-* **Nom** : le nom du modèle.
-* **Modèle suivant** : le modèle qui traitera ensuite la sortie du modèle actuel.
-* **Type de document** : le type de document principal attribué par le modèle lors de la classification.
-* **Sous-types de document** : les sous-types dans lesquels le document est ensuite classé.
-* **Priorité** : le niveau de priorité qui détermine la position du modèle dans la file de classification.
+Sous ces informations sont listés les libellés du modèle.
 
+### Libellés
 
-### Modifier un modèle
+Les libellés sont ce que le modèle apprend. Chaque libellé associe un motif reconnu par le modèle à un type de document.
 
-Pour modifier un modèle :
+* **Name** – le nom du libellé.
+* **Next model** – un modèle qui poursuit le traitement de la sortie de ce libellé.
+* **DOC TYPE** – le type de document attribué par le libellé.
+* **Sub Document Type** – un type plus spécifique pour le libellé.
+* **Priority** – l'ordre dans lequel les libellés sont évalués ; les nombres les plus bas d'abord.
 
-1.  Cliquez sur l'icône de crayon dans la colonne **Actions** à côté du modèle à modifier.
+Le champ de recherche au-dessus du tableau des libellés filtre les libellés du modèle sélectionné.
 
-    
-2. Mettez à jour les champs disponibles :
-   * **Modèle suivant** : sélectionnez le modèle qui doit traiter la sortie du modèle actuel.
-   * **Type de document** : choisissez le type de document dans lequel le modèle doit classer l'entrée.
-3.  Cliquez sur **Save** pour appliquer vos modifications.
+### Modifier un libellé
 
-    
+Cliquez sur l'icône de crayon d'une ligne de libellé pour ouvrir la boîte de dialogue de modification. Elle propose **Next model** et **Document Type** ; renseignez l'un des deux, car la boîte de dialogue exige soit un modèle suivant, soit un type de document. Cliquez sur **Save** pour appliquer la modification.
 
-<figure><img src="../../../../.gitbook/assets/structured-output-settings-fr-20261104.png" alt="Commandes actuelles d&#x27;extraction. Structured Output est désactivé dans cette configuration existante ; aucun aperçu de schéma n&#x27;est donc affiché. Aucun paramètre d&#x27;extraction n&#x27;a été modifié."><figcaption><p>Commandes actuelles d&#x27;extraction. Structured Output est désactivé dans cette configuration existante ; aucun aperçu de schéma n&#x27;est donc affiché. Aucun paramètre d&#x27;extraction n&#x27;a été modifié.</p></figcaption></figure>
+## Pages connexes
+
+* [Modèle d'IA](ai-model.md) – les six niveaux d'extraction et comment un fournisseur obtient son propre modèle
+* [Extraction automatique du code fiscal](auto-extract-tax-code.md)
+* [Extraction de tableaux pour le calcul des coûts](table-extraction-for-costing-element.md)
+* [OCR Settings](../ocr-settings.md)
+
+<figure><img src="../../../../.gitbook/assets/structured-output-settings-fr-20261104.png" alt="Contrôles actuels d'extraction. Structured Output est désactivé dans cette configuration existante, aucun aperçu de schéma n'est donc affiché. Aucun paramètre d'extraction n'a été modifié."><figcaption><p>Contrôles actuels d'extraction. Structured Output est désactivé dans cette configuration existante, aucun aperçu de schéma n'est donc affiché. Aucun paramètre d'extraction n'a été modifié.</p></figcaption></figure>

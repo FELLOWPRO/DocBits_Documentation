@@ -35,7 +35,7 @@ Sur chaque page de la zone Paramètres, vous trouvez un petit **bouton en forme 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-fr.png" alt="La page Company Information dans Settings avec la navigation des paramètres à gauche, la page au milieu et le panneau de l'Assistant de paramètres à droite"><figcaption><p>L'assistant se trouve sur le <strong>côté droit</strong> de chaque page Settings : la navigation à gauche, la page au milieu, l'assistant à côté. Ici sur <strong>Company Settings → Company Information</strong>. Le bouton pour l'afficher ou le masquer est l'icône de lampe à côté de <strong>Search Settings</strong> en haut de la navigation.</p></figcaption></figure>
 
 * Le panneau mémorise votre choix par utilisateur, il reste donc ouvert la prochaine fois que vous revenez.
-* Sur un grand écran (1 280 pixels et plus), il se place à côté de la page. Vous pouvez faire glisser son bord pour modifier la largeur.
+* Sur un grand écran (1280 pixels et plus), il se place à côté de la page. Vous pouvez faire glisser son bord pour modifier la largeur.
 * Sur un écran étroit, il s'ouvre en superposition. **Échap** ou un clic à l'extérieur le ferme.
 * **Nouvelle discussion** (New chat ; l'icône de bulle de dialogue dans l'en-tête) efface la conversation. La conversation survit aussi à un rechargement de la page, mais pas à la fermeture de l'onglet du navigateur.
 

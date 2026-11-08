@@ -4,19 +4,19 @@
 
 Quando DocBits rifiuta una fattura elettronica, puoi leggere esattamente il perché. Il **rapporto di convalida** elenca ogni risultato in linguaggio semplice, ti dice cosa correggere e mostra il passo successivo. Lo apri dal documento, non dalle impostazioni. La schermata in cui lo trovi è descritta in [La schermata di errore per una fattura elettronica rifiutata](validation-error-screen.md).
 
-Questa pagina è per chi elabora le fatture. Gli amministratori impostano le regole nella pagina [Validazione della fattura elettronica](validation-rules.md) e scelgono per ogni tipo di documento se un controllo non superato blocca la fattura, vedi [Validazione per ogni tipo di documento](validation-per-document-type.md).
+Questa pagina è per chi elabora le fatture. Gli amministratori impostano le regole nella pagina [Validazione della fattura elettronica](README.md) e scelgono per ogni tipo di documento se un controllo non superato blocca la fattura, vedi [Validazione per ogni tipo di documento](validation-per-document-type.md).
 
 ## Quando un documento riceve un errore
 
 Se la validazione è **attiva** e **bloccante** per il tipo di documento, una fattura con un risultato bloccante passa allo stato **Errore**. Apri il documento dal cruscotto. La vista di errore mostra l'XML a sinistra e il motivo a destra.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-it-20261104-v2.png" alt="Schermata di errore di una fattura di esempio interamente fittizia. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale."><figcaption><p>Schermata di errore di una fattura di esempio interamente fittizia. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-it-20261104-v2.png" alt="Schermata di errore di una fattura di esempio interamente fittizia. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale."><figcaption><p>Schermata di errore di una fattura di esempio interamente fittizia. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale.</p></figcaption></figure>
 
 La scheda a destra indica il livello che ha rifiutato la fattura (ad esempio **L3 · Regole aziendali**), il codice della regola (ad esempio `BR-CO-26`), una breve spiegazione e un **Passo successivo**. Seleziona **Visualizza i dettagli di convalida** per aprire il rapporto completo.
 
 ## Leggere il rapporto
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-top-it-20261104-v2.png" alt="Rapporto della fattura fittizia con i dati del file e l’esito."><figcaption><p>Rapporto della fattura fittizia con i dati del file e l’esito.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-it-20261104-v2.png" alt="Rapporto della fattura fittizia con i dati del file e l’esito."><figcaption><p>Rapporto della fattura fittizia con i dati del file e l’esito.</p></figcaption></figure>
 
 Il rapporto inizia con i dati del file:
 
@@ -49,7 +49,7 @@ La tabella **Risultato per livello** mostra quanti errori, avvertenze e informaz
 
 ## I risultati
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-findings-it-20261104-v2.png" alt="Estratto del rapporto: identificativo del venditore mancante, regola BR-CO-26."><figcaption><p>Estratto del rapporto: identificativo del venditore mancante, regola BR-CO-26.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-it-20261104-v2.png" alt="Estratto del rapporto: identificativo del venditore mancante, regola BR-CO-26."><figcaption><p>Estratto del rapporto: identificativo del venditore mancante, regola BR-CO-26.</p></figcaption></figure>
 
 Ogni risultato è una riga:
 
@@ -67,6 +67,6 @@ DocBits ha testi in linguaggio semplice per le regole più comuni. Per una regol
 
 ## Pagine correlate
 
-* [Validazione della fattura elettronica](validation-rules.md): versioni accettate, profili e gravità di ogni regola.
+* [Validazione della fattura elettronica](README.md): versioni accettate, profili e gravità di ogni regola.
 * [Validazione per ogni tipo di documento](validation-per-document-type.md): attiva la validazione e imposta il blocco.
-* [Instradamento delle notifiche](notification-routing.md): chi gestisce quale risultato.
+* [Instradamento delle notifiche](../notification-routing.md): chi gestisce quale risultato.

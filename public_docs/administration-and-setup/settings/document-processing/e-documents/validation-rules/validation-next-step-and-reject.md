@@ -6,7 +6,7 @@ Dopo aver letto il [rapporto di convalida](validation-report.md), il rapporto ti
 
 ## Cosa fare dopo
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-next-step-it-20261104-v2.png" alt="Valutazione, passo successivo e azioni del rapporto."><figcaption><p>Valutazione, passo successivo e azioni del rapporto.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-next-step-it-20261104-v2.png" alt="Valutazione, passo successivo e azioni del rapporto."><figcaption><p>Valutazione, passo successivo e azioni del rapporto.</p></figcaption></figure>
 
 La **Valutazione** dice in una frase se la fattura è conforme. Il blocco **Passo successivo** ti dice cosa fare:
 
@@ -23,7 +23,7 @@ I pulsanti alla fine del rapporto:
 
 ## Rifiutare un documento
 
-<figure><img src="../../../../.gitbook/assets/einvoice-reject-dialog-it-20261104-v2.png" alt="Finestra di rifiuto della fattura fittizia. Il rifiuto è stato annullato."><figcaption><p>Finestra di rifiuto della fattura fittizia. Il rifiuto è stato annullato.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-reject-dialog-it-20261104-v2.png" alt="Finestra di rifiuto della fattura fittizia. Il rifiuto è stato annullato."><figcaption><p>Finestra di rifiuto della fattura fittizia. Il rifiuto è stato annullato.</p></figcaption></figure>
 
 1. Nel rapporto, seleziona **Rifiuta il documento**.
 2. Controlla il **Motivo**. DocBits lo compila dagli errori del rapporto. Puoi modificare il testo.

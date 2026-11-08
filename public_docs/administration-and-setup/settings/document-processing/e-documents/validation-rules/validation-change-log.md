@@ -1,6 +1,6 @@
 # Änderungsprotokoll
 
-Das **Änderungsprotokoll** zeichnet jede Änderung der Validierungseinstellungen auf. Es gehört zur [E-Rechnungs-Prüfung](./). Nur Organisationsadministratoren können es sehen.
+Das **Change log** zeichnet jede Änderung der Validierungseinstellungen auf. Es gehört zur [E-Rechnungs-Prüfung](./). Nur Organisationsadministratoren können es sehen.
 
 Öffnen Sie den Tab **Change log** neben **Rules and policy**.
 

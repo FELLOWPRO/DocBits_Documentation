@@ -10,28 +10,44 @@ Kurze Videos für den Alltag. Schauen Sie sie der Reihe nach oder springen Sie z
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part1/v1/de.mp4" %}
 
-Was Sie in der KI-Tabelle sehen und was jede Schaltfläche macht. Etwa 1,8 Minuten.
+Was Sie im Validierungsbildschirm sehen und was jedes Symbol, jede Spalte und jeder Button macht. Etwa 1,5 Minuten.
 
 ### 2. Eine Spalte korrigieren und DocBits anlernen
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part2/v1/de.mp4" %}
 
-Die richtige Spalte wählen, der KI Anweisungen geben, eine Änderung testen und für die nächsten Rechnungen behalten. Etwa 1,9 Minuten.
+Wie Sie die richtige Spalte wählen, der KI Anweisungen geben, eine Änderung testen und für die nächsten Rechnungen behalten. Etwa 1,7 Minuten.
 
-### 3. Zwei typische Probleme
+### 3. Drei typische Probleme
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part3/v1/de.mp4" %}
 
-Preiseinheit 1.000 oder 100 und ein doppelt abgezogener Rabatt. Was Sie sehen, was Sie schreiben, wie Sie prüfen. Etwa 1,6 Minuten.
+Eine Spalte füllt drei Felder, ein falscher Stückpreis und zusätzliche Zeilen für Fracht und Zuschlag. Was Sie sehen, was Sie schreiben, wie Sie prüfen. Etwa 1,7 Minuten.
 
-### 4. Das liest die KI richtig
+### 4. Rabatt, Steuer und Zeilen mit Menge null
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part4/v1/en.mp4" %}
+
+Fehlender Rabatt und fehlende Steuer auf kanadischen und britischen Rechnungen und Zeilen, die nicht geliefert wurden. Etwa 1,4 Minuten.
+
+### 5. Was die KI bereits richtig liest
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part5/v1/de.mp4" %}
 
-Fünf Layouts, die DocBits ohne Hilfe richtig liest, und was Sie zuerst tun. Etwa 1,3 Minuten.
+Fünf ungewöhnliche Rechnungslayouts, die DocBits ohne jede Hilfe richtig liest, und was Sie zuerst tun.
 
-### 5. Der Assistent und wer was ändern darf
+### 6. Der Assistent und wer was ändern darf
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part6/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part6/v2/en.mp4" %}
 
-Wie der Assistent bei der KI-Tabelle hilft, wie Sie dem Administrator eine Verbesserung vorschlagen und was nur Administratoren ändern dürfen. Etwa 1,5 Minuten.
+Wie der Assistent bei der KI-Tabelle hilft, wie Sie eine Verbesserung vorschlagen und was nur Administratoren ändern können.
+
+## Administratorenvideo: eine Spalte ändern
+
+**Review-Version 2 · Englisch · 3 Minuten 11 Sekunden.** Dieses Administratorenvideo steht zur Prüfung bereit; die endgültige Freigabe steht noch aus.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-change-column-review-preview-admin/v1/en.mp4" %}
+
+Korrigieren Sie eine Spaltenzuordnung der KI-Tabelle, speichern Sie und öffnen Sie die Rechnung erneut, um dann das gespeicherte Layout-Training an einer neuen Rechnung zu prüfen. Der Film zeigt außerdem, warum eine Korrektur der Zuordnung fehlende Preisbasen, Rabatte oder andere Validierungswarnungen nicht auflöst.
+
+[Prüfen mit englischen Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-change-column-review-preview-admin/v1/en.html).

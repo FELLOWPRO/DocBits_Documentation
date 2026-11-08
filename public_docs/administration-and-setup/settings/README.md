@@ -1,5 +1,7 @@
 # Einstellungen
 
+Brauchen Sie Hilfe bei einer Einstellung? Siehe [Dokumentation mit dem Settings Assistant finden](settings-assistant/README.md).
+
 ## Video-Tutorial: Einstellungsübersicht und Module
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/de.mp4" %}
@@ -8,9 +10,9 @@ Einstellungsübersicht und Module in DocBits
 
 Das Video zeigt die fünf Gruppen der Einstellungsübersicht, die Suche und die Schnellzugriffe sowie was die drei Modulseiten steuern.
 
-<figure><img src="../../.gitbook/assets/settings_overview-de.png" alt="Übersicht der Einstellungen"><figcaption><p>Übersichtsseite der Einstellungen</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/site-extra-settings-overview-en.png" alt="Organisationseinstellungen mit ausgeblendeten identifizierenden Werten. Das angezeigte Land ist ein konfigurierter Wert."><figcaption><p>Organisationseinstellungen mit ausgeblendeten identifizierenden Werten. Das angezeigte Land ist ein konfigurierter Wert.</p></figcaption></figure>
 
-Der Bereich „Settings“ ist Ihre zentrale Anlaufstelle für die Konfiguration von DocBits. Er ist in fünf Hauptbereiche gegliedert:
+Der Bereich **Settings** ist Ihre zentrale Anlaufstelle für die Konfiguration von DocBits. Er ist in fünf Hauptbereiche gegliedert:
 
 ## 1. Organisation & Zugriff
 
@@ -26,7 +28,7 @@ Verwalten Sie Ihr Unternehmensprofil und steuern Sie, wer worauf zugreifen darf.
 Konfigurieren Sie, wie Dokumente importiert, verarbeitet und exportiert werden.
 
 * **Documents Expiry**: Legen Sie Regeln für das automatische Löschen von Dokumenten fest (z. B. Löschung nach 48 Stunden, 1 Woche usw.).
-* **Document Types**: Definieren und konfigurieren Sie die Dokumenttypen, die DocBits verarbeitet (Rechnungen, Bestellungen, Lieferscheine usw.), einschließlich Felder, Tabellenspalten, Skripte und mehr.
+* **Document Types**: Definieren und konfigurieren Sie die Dokumenttypen, die DocBits verarbeitet (Invoices, Orders, Delivery Notes usw.), einschließlich Felder, Tabellenspalten, Skripte und mehr.
 * **Import**: Richten Sie ein, wie Dokumente in DocBits gelangen, per E-Mail (IMAP/Office 365), FTP oder Datei-Upload. Konfigurieren Sie Dateitypen und Seitenlimits.
 * **Rule Management**: Definieren Sie Regeln zur Konfliktlösung für den Abgleich von Rechnungen mit Bestellungen, einschließlich Toleranzeinstellungen und Genehmigungsworkflows.
 * **OCR Settings**: Konfigurieren Sie Qualitätsschwellenwerte der optischen Zeichenerkennung (OCR), die Nutzung von E-Text, die AI-OCR-Version und das Verhalten der Tabellenextraktion.
@@ -59,6 +61,7 @@ Steuern Sie, wie DocBits mit Benutzern kommuniziert und eingehende E-Mails verar
 * **System Licenses**: Zeigen Sie Informationen zu API-Lizenzen und deren Nutzung an und verwalten Sie sie.
 * **Cache Management**: Konfigurieren Sie automatische Intervalle (TTL) zum Leeren der Caches für Received Delivery, Purchase Order und Task/Notification.
 * **Fulltext Search Settings**: Konfigurieren Sie die Volltextsuche über Ihre Dokumente und Daten (erfordert, dass das Modul Fulltext Search aktiviert ist).
+* **Appearance**: Passen Sie Farben, Eckenradius, Dichte und Schriftart der Organisation an — die gesamte App folgt diesem Theme im hellen und im dunklen Modus.
 
 ## 5. Lieferanteneinstellungen
 

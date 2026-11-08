@@ -4,19 +4,19 @@
 
 Wenn DocBits eine E-Rechnung ablehnt, können Sie genau nachlesen, warum. Der **Prüfbericht** listet jeden Prüfhinweis in verständlicher Sprache auf, sagt Ihnen, was zu korrigieren ist, und zeigt den nächsten Schritt. Sie öffnen ihn am Dokument, nicht in den Einstellungen. Die Ansicht, in der Sie ihn finden, ist beschrieben unter [Die Fehleransicht einer abgelehnten E-Rechnung](validation-error-screen.md).
 
-Diese Seite richtet sich an Personen, die Rechnungen bearbeiten. Administratoren legen die Regeln auf der Seite [E-Rechnungs-Prüfung](validation-rules.md) fest und wählen je Dokumenttyp, ob eine fehlgeschlagene Prüfung die Rechnung blockiert, siehe [Prüfung je Dokumenttyp](validation-per-document-type.md).
+Diese Seite richtet sich an Personen, die Rechnungen bearbeiten. Administratoren legen die Regeln auf der Seite [E-Rechnungs-Prüfung](README.md) fest und wählen je Dokumenttyp, ob eine fehlgeschlagene Prüfung die Rechnung blockiert, siehe [Prüfung je Dokumenttyp](validation-per-document-type.md).
 
 ## Wann ein Dokument den Status „Fehler" erhält
 
 Ist die Prüfung für den Dokumenttyp **aktiviert** und **blockierend**, erhält eine Rechnung mit einem blockierenden Prüfhinweis den Status **Fehler**. Öffnen Sie das Dokument über das Dashboard. Die Fehleransicht zeigt links das XML und rechts den Grund.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-de-20261104-v2.png" alt="Fehleransicht einer rein synthetischen Beispielrechnung. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Fehleransicht einer rein synthetischen Beispielrechnung. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-de-20261104-v2.png" alt="Fehleransicht einer rein synthetischen Beispielrechnung. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Fehleransicht einer rein synthetischen Beispielrechnung. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
 
 Die Karte rechts nennt die Ebene, die die Rechnung abgelehnt hat (zum Beispiel **L3 · Geschäftsregeln**), den Regelcode (zum Beispiel `BR-CO-26`), eine kurze Erklärung und einen **Nächsten Schritt**. Wählen Sie **Validierungs-Details anzeigen**, um den vollständigen Bericht zu öffnen.
 
 ## Den Bericht lesen
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-top-de-20261104-v2.png" alt="Prüfbericht der synthetischen Beispielrechnung mit Dateiangaben und Prüfergebnis."><figcaption><p>Prüfbericht der synthetischen Beispielrechnung mit Dateiangaben und Prüfergebnis.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-de-20261104-v2.png" alt="Prüfbericht der synthetischen Beispielrechnung mit Dateiangaben und Prüfergebnis."><figcaption><p>Prüfbericht der synthetischen Beispielrechnung mit Dateiangaben und Prüfergebnis.</p></figcaption></figure>
 
 Der Bericht beginnt mit den Fakten zur Datei:
 
@@ -49,7 +49,7 @@ Die Tabelle **Ergebnis je Ebene** zeigt, wie viele Fehler, Warnungen und Hinweis
 
 ## Die Prüfhinweise
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-findings-de-20261104-v2.png" alt="Ausschnitt aus dem Prüfbericht: Verkäuferkennung fehlt, Regel BR-CO-26."><figcaption><p>Ausschnitt aus dem Prüfbericht: Verkäuferkennung fehlt, Regel BR-CO-26.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-de-20261104-v2.png" alt="Ausschnitt aus dem Prüfbericht: Verkäuferkennung fehlt, Regel BR-CO-26."><figcaption><p>Ausschnitt aus dem Prüfbericht: Verkäuferkennung fehlt, Regel BR-CO-26.</p></figcaption></figure>
 
 Jeder Prüfhinweis ist eine Zeile im Abschnitt **Positionen**:
 
@@ -67,6 +67,6 @@ DocBits hat verständliche Texte für die häufigsten Regeln. Für eine Regel oh
 
 ## Verwandte Seiten
 
-* [E-Rechnungs-Prüfung](validation-rules.md): akzeptierte Versionen, Profile und der Schweregrad jeder Regel.
+* [E-Rechnungs-Prüfung](README.md): akzeptierte Versionen, Profile und der Schweregrad jeder Regel.
 * [Prüfung je Dokumenttyp](validation-per-document-type.md): Prüfung aktivieren und Blockieren festlegen.
-* [Benachrichtigungsrouting](notification-routing.md): wer welchen Prüfhinweis bearbeitet.
+* [Benachrichtigungsrouting](../notification-routing.md): wer welchen Prüfhinweis bearbeitet.

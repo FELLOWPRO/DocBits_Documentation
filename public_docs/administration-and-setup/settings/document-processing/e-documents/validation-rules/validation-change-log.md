@@ -1,6 +1,6 @@
 # Dziennik zmian
 
-**Dziennik zmian** rejestruje każdą zmianę ustawień walidacji. Należy do [Walidacja faktur elektronicznych](./). Widzą go tylko administratorzy organizacji.
+**Change log** rejestruje każdą zmianę ustawień walidacji. Należy do [Walidacja faktur elektronicznych](./). Widzą go tylko administratorzy organizacji.
 
 Otwórz zakładkę **Change log** obok **Rules and policy**.
 

@@ -1,40 +1,37 @@
 # Wybór modelu AI specyficznego dla dostawcy do ekstrakcji pól i tabel
 
-## Od standardu organizacyjnego do efektywnego modelu
+## Od standardu organizacji do modelu efektywnego
 
-<figure><img src="../../../.gitbook/assets/process-ai-model-pl-20261028.png" alt="Który model AI obowiązuje dla szablonu ekstrakcji?: Ustawienie domyślne organizacji i ustawienie indywidualne dla szablonu."><figcaption><p>Ustawienie domyślne organizacji i ustawienie indywidualne dla szablonu. Schemat ma charakter schematyczny; aktywne ustawienia Twojej organizacji określają rzeczywiste zachowanie.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/process-ai-model-pl-20261028.png" alt="Który model AI dotyczy szablonu?: domyślne ustawienie organizacji i nadpisanie związane z szablonem ekstrakcji."><figcaption><p>Domyślne ustawienie organizacji i nadpisanie związane z szablonem ekstrakcji. Schemat jest poglądowy; o rzeczywistym zachowaniu decydują aktywne ustawienia Twojej organizacji.</p></figcaption></figure>
 
-Wpis na ekranie walidacji nazywany jest modelem AI specyficznym dla dostawcy. Jednak **bieżący kontekst szablonu wyodrębniania** jest kluczowy: zastąpienie jest zapisywane dla każdej organizacji i szablonu. Dostawca może mieć wiele szablonów z różnymi ustawieniami.
+Wpis na ekranie walidacji nazywa się modelem AI specyficznym dla dostawcy. Decydujący jest jednak **kontekst bieżącego szablonu ekstrakcji**: nadpisanie jest zapisywane dla organizacji i szablonu ekstrakcji. Jeden dostawca może mieć wiele szablonów ekstrakcji z różnymi ustawieniami.
 
-1. **Określ kontekst:** Przed zmodyfikowaniem modelu przejrzyj organizację, dokument i bieżący szablon wyodrębniania.
-2. **Sprawdź zastąpienie:** Jeśli model jest zapisany dla tego szablonu, ten wybór obowiązuje w jego zakresie. Jeśli brakuje zastąpienia, zastosowanie ma odpowiednie ustawienie organizacji.
-3. **Potwierdź zmianę celowo:** Wybierz tylko opcję dostępną w Twoim środowisku. Zmiana może wymagać potwierdzenia i ponownego uruchomienia ekstrakcji. Samo otwarcie menu nie powoduje zmiany wyboru.
-4. **Porównaj wyniki:** Sprawdź wartości pól, tabele, czas wykonania i koszty na podstawie stałej próbki. Inny poziom modelu nie gwarantuje lepszej ekstrakcji, pomyślnej walidacji lub dopasowania PO.
+1. **Ustal kontekst:** przed zmianą modelu sprawdź organizację, dokument i bieżący szablon ekstrakcji.
+2. **Sprawdź nadpisanie:** jeśli dla tego szablonu ekstrakcji zapisano model, ten wybór obowiązuje w jego zakresie. Jeśli nadpisania brakuje, obowiązuje odpowiednie ustawienie organizacji.
+3. **Potwierdź zmianę świadomie:** wybierz tylko opcję dostępną w Twoim środowisku. Zmiana może wymagać potwierdzenia i ponownie uruchomić ekstrakcję. Samo otwarcie menu nie zmienia wyboru.
+4. **Porównaj wyniki:** sprawdź wartości pól, tabele, czas wykonania i koszty na stałej próbce. Inny poziom modelu nie gwarantuje lepszej ekstrakcji, udanej walidacji ani uzgodnienia z zamówieniem.
 
-**Przykład:** Dostawca A korzysta z szablonów „Faktura krajowa” i „Faktura zagraniczna”. Zastąpienie opcji „Faktura krajowa” nie powoduje zmiany wszystkich faktur od tego dostawcy. W przypadku innego dokumentu sprawdź ponownie jego szablon i efektywne ustawienie.
+**Przykład:** dostawca A używa szablonów ekstrakcji „Faktura krajowa” i „Faktura zagraniczna”. Nadpisanie dla „Faktura krajowa” nie zmienia wszystkich faktur tego dostawcy. W przypadku innego dokumentu sprawdź ponownie jego szablon ekstrakcji i obowiązujące ustawienie.
 
-Grafika przedstawia hierarchię wyboru, a nie zalecenie dla konkretnego poziomu modelu. Informacje o diagnostyce [Standard organizacyjny i nadpisania](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md) i [Która ścieżka ekstrakcji została wykorzystana?](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) pomagają sklasyfikować rzeczywisty wynik.
+Grafika pokazuje hierarchię wyboru, a nie zalecenie konkretnego poziomu modelu. Informacje o [standardzie organizacji i nadpisaniach](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md) oraz diagnostyka [Która ścieżka ekstrakcji została użyta?](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) pomagają zinterpretować rzeczywisty wynik.
 
-W sekcji narzędzi **Ekranu Walidacji** możesz wybrać model AI używany do **Ekstrakcji Pól** i **Ekstrakcji Tabel**.\
-Wybrany **model AI** jest stosowany wyłącznie do wszystkich dokumentów bieżącego dostawcy.
+W sekcji narzędzi **ekranu walidacji** możesz wybrać model AI używany do **Field Extraction** i **Table Extraction**.\
+Ten punkt wejścia zmienia nadpisanie w kontekście bieżącego szablonu ekstrakcji. Preferencja jest zapisywana dla organizacji i szablonu ekstrakcji (`tfidf_id`); powiązanie z dostawcą nie gwarantuje, że zmieni się każdy szablon ekstrakcji lub dokument historyczny tego dostawcy. Bez nadpisania obowiązuje odpowiednie ustawienie organizacji.
 
-Aby zmienić model, otwórz menu opcji, klikając przycisk **Więcej opcji** (trzy kropki) po prawej stronie ekranu, a następnie wybierz jeden z dostępnych modeli:<br>
+Aby zmienić model, otwórz menu opcji, klikając przycisk **More options** (trzy kropki) po prawej stronie ekranu, a następnie wybierz jeden z dostępnych modeli:<br>
 
-* **Full** – Najwyższa dokładność; koszt 2 tokeny za dokument
-* **Fast** – Poziom domyślny; koszt 1 token za dokument
-* **Nexus** – Koszt 1 token za dokument
-* **Nexus Flash** – Szybszy poziom z rodziny Nexus; koszt 1 token za dokument
-* **Auto** – DocBits decyduje dla każdego dokumentu, czy wystarczy Fast, czy potrzebny jest Full; koszt 1 token za dokument
-* **Auto Nexus** – Jak Auto, ale ograniczone do rodziny modeli Nexus; koszt 1 token za dokument
+Menu oferuje obecnie **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** i **Auto Nexus**. Sprawdź bieżące informacje w interfejsie i warunki subskrypcji pod kątem dostępności i kosztów. Nie zakładaj, że jedna opcja jest zawsze najdokładniejsza lub najszybsza ani że każda organizacja domyślnie używa Fast.
 
-<figure><img src="../../../.gitbook/assets/dbdc864-supplier-ai-model-menu-pl-20261012.png" alt="Menu opcji ekranu walidacji z listą Model sztucznej inteligencji"><figcaption><p>Otwórz menu opcji i wybierz model AI dla tego dostawcy.</p></figcaption></figure>
+Wybór innego modelu może wymagać potwierdzenia i ponownie uruchomić ekstrakcję. Przed potwierdzeniem sprawdź dokument i zakres. Samo otwarcie menu nie zmienia ustawienia; w tych ilustracjach nie wybrano ani nie potwierdzono żadnego modelu.
 
-<figure><img src="../../../.gitbook/assets/dbdc864-supplier-ai-model-options-pl-20261012.png" alt="Rozwinięta lista Model sztucznej inteligencji z opcjami Full, Fast, Nexus, Nexus Flash, Auto i Auto Nexus"><figcaption><p>Lista <strong>Model sztucznej inteligencji</strong> z sześcioma dostępnymi opcjami.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/selecting_a_supplier_specific_ai_model_1.png" alt="Menu opcji dla zilustrowanego kontekstu szablonu ekstrakcji, z syntetyczną fakturą przykładową."><figcaption><p>Menu opcji dla zilustrowanego kontekstu szablonu ekstrakcji, z syntetyczną fakturą przykładową.</p></figcaption></figure>
 
-Jeśli wyniki **ekstrakcji pól** lub **ekstrakcji tabel** nie są satysfakcjonujące, spróbuj przełączyć się na inny model, aby poprawić dokładność.
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/selecting_a_supplier_specific_ai_model_2.png" alt="Menu rozwijane AI Model z sześcioma opcjami i syntetyczną fakturą przykładową; nie pokazano zmiany modelu."><figcaption><p>Menu rozwijane AI Model z sześcioma opcjami i syntetyczną fakturą przykładową; nie pokazano zmiany modelu.</p></figcaption></figure>
 
-Aby skonfigurować model AI **globalnie dla dostawców bez niestandardowego modelu** lub aby **zarządzać, który model jest aktywny dla każdego dostawcy**, zapoznaj się z odpowiednią dokumentacją [**tutaj**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
+Jeśli wyniki ekstrakcji są niezadowalające, porównaj inne dostępne modele na zatwierdzonych dokumentach testowych i sprawdź wyodrębnione wartości, czas przetwarzania i koszty. Zmiana może ponownie przetworzyć dokument i nie gwarantuje poprawy.
+
+Aby skonfigurować **domyślne ustawienie organizacji** lub przejrzeć **nadpisania specyficzne dla szablonu ekstrakcji**, zapoznaj się z odpowiednią dokumentacją [**tutaj**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
 
 ## Ustawienia i nadpisania
 
-Structured Output ma oddzielne ustawienie organizacji/szablonu, niezależne od poziomu modelu AI. Zmień je w Więcej opcji dokumentu; potwierdzenie zapisuje nadpisanie i uruchamia ten dokument ponownie. Wskaźniki na liście są tylko do odczytu. Usunięcie wpisu może usunąć kilka nadpisań jednocześnie. [Structured Output dla tabel](../ai-table/structured-output.md).
+Structured Output ma osobne ustawienie organizacji/szablonu, niezależne od poziomu modelu. Zmień je w More options na dokumencie; potwierdzenie zapisuje nadpisanie i ponownie uruchamia ten dokument. Wskaźniki na liście ustawień są tylko do odczytu. Usunięcie wpisu preferencji może usunąć kilka nadpisań jednocześnie. [Structured Output dla tabel](../ai-table/structured-output.md).

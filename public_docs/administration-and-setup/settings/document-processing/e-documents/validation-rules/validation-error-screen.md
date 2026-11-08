@@ -10,7 +10,7 @@ Gdy wgrasz błędną e-fakturę, DocBits jej nie gubi. Dokument dostaje status *
 
 Dostawca wysyła plik XML, w którym znacznik zamykający nie pasuje do znacznika otwierającego. Pliku nie można odczytać, więc DocBits zatrzymuje się na pierwszej kontroli, **L1 · Poprawność składni XML**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-xml-malformed-pl-20261104-v2.png" alt="Ekran błędu fikcyjnego pliku XML z celowo uszkodzonym znacznikiem zamykającym. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Ekran błędu fikcyjnego pliku XML z celowo uszkodzonym znacznikiem zamykającym. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-pl-20261104-v2.png" alt="Ekran błędu fikcyjnego pliku XML z celowo uszkodzonym znacznikiem zamykającym. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Ekran błędu fikcyjnego pliku XML z celowo uszkodzonym znacznikiem zamykającym. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
 
 Ekran ma dwie strony:
 
@@ -19,7 +19,7 @@ Ekran ma dwie strony:
 
 Wybierz **Wyświetl szczegóły walidacji**, aby otworzyć pełny [raport walidacyjny](validation-report.md).
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-xml-malformed-pl-20261104-v2.png" alt="Raport uszkodzonego fikcyjnego pliku XML."><figcaption><p>Raport uszkodzonego fikcyjnego pliku XML.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-pl-20261104-v2.png" alt="Raport uszkodzonego fikcyjnego pliku XML."><figcaption><p>Raport uszkodzonego fikcyjnego pliku XML.</p></figcaption></figure>
 
 Raport podaje dokładną pozycję (wiersz i kolumna są podane w raporcie) i techniczny komunikat parsera XML. Wybierz **Pokaż w XML**, aby przejść do tej linii. Wskazówka **Jak naprawić** mówi, że należy poprosić nadawcę o poprawiony plik.
 
@@ -27,7 +27,7 @@ Raport podaje dokładną pozycję (wiersz i kolumna są podane w raporcie) i tec
 
 XML jest poprawny, ale brakuje wymaganego pola. Na przykład nie można zidentyfikować sprzedawcy, ponieważ brak identyfikatora sprzedawcy, identyfikatora rejestracyjnego lub identyfikatora VAT (reguła `BR-CO-26`).
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-pl-20261104-v2.png" alt="Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-pl-20261104-v2.png" alt="Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
 
 Karta pokazuje pierwszy wynik blokujący. Pełny raport zawiera również kod `BR-CO-26` i pozostałe wyniki faktury.
 

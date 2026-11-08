@@ -10,7 +10,7 @@ Administratorzy decydują dla każdego typu dokumentu, czy DocBits waliduje przy
 
 Przejdź do **Ustawienia → Dokumenty elektroniczne → Walidacja e-faktury**. Karta **Zasady i polityka** zaczyna się od tabeli **Walidacja dla każdego typu dokumentu**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-pl-20261104.png" alt="Walidacja i blokowanie według typu dokumentu. Skonfigurowane nazwy są ukryte. Przykład z Dev. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Walidacja i blokowanie według typu dokumentu. Skonfigurowane nazwy są ukryte. Przykład z Dev. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-validation-settings-pl-20261104.png" alt="Walidacja i blokowanie według typu dokumentu. Skonfigurowane nazwy są ukryte. Przykład z Dev. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Walidacja i blokowanie według typu dokumentu. Skonfigurowane nazwy są ukryte. Przykład z Dev. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
 
 | Przełącznik | Co robi |
 | --- | --- |
@@ -24,7 +24,7 @@ Jeśli typ dokumentu ma nadpisania dla podtypów, tabela pokazuje o tym informac
 1. Wybierz przełącznik, który chcesz zmienić.
 2. DocBits pokazuje okno **Potwierdź zmianę walidacji** z typem dokumentu i zmianą, na przykład *QUOTE: Włączony → Włączone*.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-confirm-pl-20261104.png" alt="Potwierdzenie zmiany ustawienia. Zmiana została anulowana na potrzeby tego zrzutu."><figcaption><p>Potwierdzenie zmiany ustawienia. Zmiana została anulowana na potrzeby tego zrzutu.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-validation-confirm-pl-20261104.png" alt="Potwierdzenie zmiany ustawienia. Zmiana została anulowana na potrzeby tego zrzutu."><figcaption><p>Potwierdzenie zmiany ustawienia. Zmiana została anulowana na potrzeby tego zrzutu.</p></figcaption></figure>
 
 3. Przeczytaj informację: **Zapisane już raporty nie ulegają zmianie.** Zmiana dotyczy tylko nowych sprawdzeń, również w przypadku ponownego uruchomienia przetwarzania dokumentu.
 4. Wybierz **Potwierdź zmianę** albo **Anuluj**, aby zachować dotychczasowe ustawienie.
@@ -33,7 +33,7 @@ Jeśli nie masz uprawnień, DocBits pokazuje komunikat, że wymagany jest admini
 
 ## Powiązane strony
 
-* [Walidacja e-faktury](validation-rules.md)
+* [Walidacja e-faktury](README.md)
 * [Dziennik zmian](validation-change-log.md)
 * [Konfiguracja walidacji i akceptowane wersje](validation-setup.md)
 * [Raport walidacyjny](validation-report.md)

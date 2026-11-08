@@ -1,72 +1,75 @@
 # Ustawienia
 
-## Samouczek wideo: Przegląd ustawień i moduły
+Potrzebujesz pomocy z ustawieniem? Zobacz [Znajdowanie dokumentacji za pomocą Settings Assistant](settings-assistant/README.md).
+
+## Samouczek wideo: przegląd Ustawień i modułów
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/pl.mp4" %}
-Przegląd ustawień i moduły w DocBits
+Przegląd ustawień i modułów w DocBits
 {% endembed %}
 
-Film pokazuje pięć grup przeglądu ustawień, wyszukiwarkę i szybkie linki oraz to, czym sterują trzy strony modułów.
+Film pokazuje pięć grup przeglądu Ustawień, wyszukiwanie i szybkie linki oraz to, czym sterują trzy strony modułów.
 
-<figure><img src="../../.gitbook/assets/site-extra-settings-overview-pl.png" alt="Ustawienia organizacji z ukrytymi danymi identyfikacyjnymi. Widoczny kraj jest wartością konfiguracji."><figcaption><p>Ustawienia organizacji z ukrytymi danymi identyfikacyjnymi. Widoczny kraj jest wartością konfiguracji.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-settings-overview-pl.png" alt="Ustawienia organizacji z ukrytymi danymi identyfikującymi. Wyświetlany kraj jest skonfigurowaną wartością."><figcaption><p>Ustawienia organizacji z ukrytymi danymi identyfikującymi. Wyświetlany kraj jest skonfigurowaną wartością.</p></figcaption></figure>
 
-Obszar Ustawień to centralne miejsce konfiguracji DocBits. Jest podzielony na pięć głównych sekcji:
+Obszar **Settings** to centralne miejsce konfiguracji DocBits. Jest podzielony na pięć głównych sekcji:
 
 ## 1. Organizacja i dostęp
 
-Zarządzaj profilem firmy i kontroluj, kto ma dostęp do czego.
+Zarządzaj profilem firmy i kontroluj, kto ma do czego dostęp.
 
-* **Informacje o firmie**: Wprowadź nazwę firmy, adres, numer identyfikacji podatkowej i inne identyfikatory prawne.
-* **Użytkownicy**: Dodawaj, edytuj lub dezaktywuj konta użytkowników i przypisuj role (Admin, System Admin).
-* **Podorganizacje**: Twórz podorganizacje i zarządzaj nimi w konfiguracjach wielopodmiotowych.
-* **Grupy i uprawnienia**: Definiuj grupy użytkowników i konfiguruj szczegółowe uprawnienia dla każdej grupy.
+* **Company Information**: Wprowadź nazwę firmy, adres, NIP i inne identyfikatory prawne.
+* **Users**: Dodawaj, edytuj i dezaktywuj konta użytkowników oraz przypisuj role (Admin, System Admin).
+* **Sub-Organizations**: Twórz podorganizacje i zarządzaj nimi w konfiguracjach z wieloma podmiotami.
+* **Groups and Permissions**: Definiuj grupy użytkowników i konfiguruj szczegółowe uprawnienia dla każdej grupy.
 
 ## 2. Przetwarzanie dokumentów
 
-Skonfiguruj sposób importu, przetwarzania i eksportu dokumentów.
+Konfiguruj sposób importowania, przetwarzania i eksportowania dokumentów.
 
-* **Wygasanie dokumentów**: Ustaw reguły automatycznego usuwania dokumentów (np. usunięcie po 48 godzinach, po tygodniu itd.).
-* **Typy dokumentów**: Definiuj i konfiguruj typy dokumentów przetwarzane przez DocBits (faktury, zamówienia, dowody dostawy itd.), w tym pola, kolumny tabel, skrypty i inne.
-* **Import**: Skonfiguruj sposób, w jaki dokumenty trafiają do DocBits — przez e-mail (IMAP/Office 365), FTP lub przesyłanie plików. Skonfiguruj typy plików i limity stron.
-* **Zarządzanie regułami**: Definiuj reguły rozwiązywania konfliktów przy uzgadnianiu faktur z zamówieniami zakupu, w tym ustawienia tolerancji i przepływy zatwierdzania.
-* **Ustawienia OCR**: Skonfiguruj progi jakości optycznego rozpoznawania znaków, użycie E-Text, wersję AI OCR i sposób ekstrakcji tabel.
-* **Klasyfikacja i ekstrakcja**: Skonfiguruj dzielenie dokumentów, formatowanie kwot, metody ekstrakcji tabel, reguły klasyfikacji i modele AI.
-* **Wyszukiwanie danych podstawowych**: Skonfiguruj sposób walidacji wyodrębnionych danych względem danych podstawowych z systemu ERP (np. konta dostawców, zamówienia zakupu).
-* **Listy wartości**: Twórz predefiniowane listy wartości używane w listach rozwijanych i walidacji danych oraz zarządzaj nimi.
-* **Eksport**: Skonfiguruj, jak i dokąd są wysyłane przetworzone dokumenty — przez Webhook, SFTP, SMB lub integracje Infor (IDM, ION, M3, LN).
-* **Moduł**: Włączaj lub wyłączaj opcjonalne funkcje, takie jak PO Dashboard, Auto Accounting, Supplier Portal, Workflow Builder, ekstrakcja kodów QR i inne.
-* **Drzewa decyzyjne**: Buduj logikę decyzyjną opartą na regułach za pomocą projektanta wizualnego. Obsługuje wiele polityk (Unique, First, Priority, Collect itd.).
-* **Konfiguracja agentów**: Twórz agentów automatyzacji i kanały komunikacji dla zautomatyzowanych przepływów przetwarzania dokumentów oraz zarządzaj nimi.
+* **Documents Expiry**: Ustaw reguły automatycznego usuwania dokumentów (np. usuwanie po 48 godzinach, 1 tygodniu itd.).
+* **Document Types**: Definiuj i konfiguruj typy dokumentów przetwarzane przez DocBits (Invoices, Orders, Delivery Notes itd.), wraz z polami, kolumnami tabel, skryptami i innymi elementami.
+* **Import**: Skonfiguruj, jak dokumenty trafiają do DocBits — przez e-mail (IMAP/Office 365), FTP lub przesyłanie plików. Skonfiguruj typy plików i limity stron.
+* **Rule Management**: Zdefiniuj reguły rozwiązywania konfliktów przy uzgadnianiu faktur z zamówieniami, w tym tolerancje i przepływy zatwierdzania.
+* **OCR Settings**: Skonfiguruj progi jakości optycznego rozpoznawania znaków, korzystanie z E-Text, wersję AI OCR i zachowanie ekstrakcji tabel.
+* **Classification and Extraction**: Skonfiguruj dzielenie dokumentów, format kwot, metody ekstrakcji tabel, reguły klasyfikacji i modele AI.
+* **Lookup Master Data**: Skonfiguruj sprawdzanie wyodrębnionych danych względem danych podstawowych z Twojego systemu ERP (np. konta dostawców, zamówienia).
+* **List of Values**: Twórz listy predefiniowanych wartości używanych w listach rozwijanych i walidacji danych i zarządzaj nimi.
+* **Export**: Skonfiguruj, jak i gdzie wysyłane są przetworzone dokumenty — przez Webhook, SFTP, SMB lub integracje Infor (IDM, ION, M3, LN).
+* **Module**: Włączaj lub wyłączaj opcjonalne funkcje, takie jak PO Dashboard, Auto Accounting, Supplier Portal, Workflow Builder, QR-Code Extraction i inne.
+* **Decision Trees**: Buduj logikę decyzyjną opartą na regułach w wizualnym projektancie. Obsługuje wiele polityk (Unique, First, Priority, Collect itd.).
+* **Agent Setup**: Twórz agentów automatyzacji i kanały komunikacji dla zautomatyzowanych przepływów przetwarzania dokumentów i zarządzaj nimi.
 
 ## 3. Komunikacja i powiadomienia
 
 Kontroluj, jak DocBits komunikuje się z użytkownikami i przetwarza przychodzące e-maile.
 
-* **Powiadomienia e-mail**: Skonfiguruj alerty e-mail dla zdarzeń przetwarzania dokumentów i zmian statusu.
-* **Szablony e-mail**: Twórz wielokrotnego użytku szablony e-mail dla powiadomień, uporządkowane według typu dokumentu, i zarządzaj nimi.
-* **Przyjmowanie e-maili**: Skonfiguruj, jak przychodzące e-maile są automatycznie klasyfikowane i przekształcane w dokumenty. Obejmuje reguły klasyfikacji, ekstrakcji pól, przetwarzania, zarządzanie nadawcami i trenowanie — uporządkowane według typu dokumentu (zamówienia, faktury, oferty, dowody dostawy, COA, potwierdzenia PO).
+* **Email Notification**: Skonfiguruj powiadomienia e-mail dla zdarzeń przetwarzania dokumentów i zmian statusu.
+* **Email Templates**: Twórz wielokrotnego użytku szablony e-mail dla powiadomień i zarządzaj nimi, uporządkowane według typu dokumentu.
+* **Email Ingestion**: Skonfiguruj automatyczną klasyfikację przychodzących e-maili i konwersję na dokumenty. Zawiera reguły klasyfikacji, ekstrakcji pól, przetwarzania, zarządzania nadawcami i uczenia — uporządkowane według typu dokumentu (Orders, Invoices, Quotes, Delivery Notes, COA, PO Confirm).
 
 ## 4. System i administracja
 
 Monitoruj kondycję systemu, zarządzaj integracjami i dbaj o bezpieczeństwo.
 
-* **Integracja i SSO**: Skonfiguruj klucze API dla integracji zewnętrznych oraz jednokrotne logowanie (SSO) z dostawcami tożsamości.
+* **Integration & SSO**: Skonfiguruj klucze API dla integracji zewnętrznych i ustaw Single Sign-On (SSO) z dostawcami tożsamości.
 * **Watchdog**: Skonfiguruj usługę Watchdog do automatycznego importu dokumentów z katalogów lokalnych.
-* **Dashboard**: Dostosuj zachowanie dashboardu — filtry, ustawienia eksportu, uprawnienia do akcji i opcje wyświetlania statusów.
-* **Rejestrowanie aktywności**: Przeglądaj dzienniki zdarzeń systemowych w czasie rzeczywistym, filtrowane według ważności (Debug, Info, Warning, Error), zakresu czasu i usługi.
-* **Analityka**: Uzyskaj dostęp do szczegółowych dashboardów analitycznych, w tym Logs Analytics, monitorowania bezpieczeństwa uwierzytelniania (Auth Security) i metryk API (API Metrics) z Real User Monitoring (RUM).
-* **Audyt dostępu**: Włącz i przeglądaj ścieżki audytu, które śledzą wszystkie akcje tworzenia, aktualizacji i usuwania w całej organizacji na potrzeby zgodności i bezpieczeństwa.
-* **Licencje systemowe**: Wyświetlaj informacje o licencjach API i ich użyciu oraz zarządzaj nimi.
-* **Zarządzanie pamięcią podręczną**: Skonfiguruj interwały automatycznego czyszczenia pamięci podręcznej (TTL) dla pamięci podręcznej przyjętych dostaw, zamówień zakupu oraz zadań i powiadomień.
-* **Ustawienia wyszukiwania pełnotekstowego**: Skonfiguruj możliwości wyszukiwania pełnotekstowego w dokumentach i danych (wymaga włączonego modułu Fulltext Search).
+* **Dashboard**: Dostosuj zachowanie pulpitu — filtry, ustawienia eksportu, uprawnienia do akcji i opcje wyświetlania statusów.
+* **Activity Logging**: Przeglądaj dzienniki zdarzeń systemowych w czasie rzeczywistym, filtrowane według wagi (Debug, Info, Warning, Error), zakresu czasu i usługi.
+* **Analytics**: Korzystaj ze szczegółowych pulpitów analitycznych, w tym Logs Analytics, monitorowania Auth Security i API Metrics z Real User Monitoring (RUM).
+* **Access Audit**: Włączaj i przeglądaj ścieżki audytu rejestrujące wszystkie akcje Create, Update i Delete w organizacji na potrzeby zgodności i bezpieczeństwa.
+* **System Licenses**: Przeglądaj informacje o licencjach API i ich wykorzystaniu oraz zarządzaj nimi.
+* **Cache Management**: Skonfiguruj automatyczne interwały (TTL) czyszczenia pamięci podręcznych Received Delivery, Purchase Order i Task/Notification.
+* **Fulltext Search Settings**: Skonfiguruj wyszukiwanie pełnotekstowe w dokumentach i danych (wymaga włączonego modułu Fulltext Search).
+* **Appearance**: Dostosuj kolory, promień narożników, gęstość i czcionkę organizacji — cała aplikacja stosuje ten motyw w trybie jasnym i ciemnym.
 
 ## 5. Ustawienia dostawców
 
-Skonfiguruj Supplier Portal i zarządzaj przepływami pracy związanymi z dostawcami.
+Skonfiguruj Supplier Portal i zarządzaj przepływami związanymi z dostawcami.
 
-* **Ogólne ustawienia dostawców**: Skonfiguruj pola zaproszeń do portalu dostawców, statusy przepływu pracy (Nie zaproszony, Otwarty, Oczekuje na rejestrację, Zatwierdzony, Odrzucony) i zarządzaj ustawieniami zatwierdzania.
-* **Szablony e-mail**: Twórz szablony e-mail przeznaczone specjalnie do komunikacji z dostawcami i zarządzaj nimi.
-* **Układ dostawcy**: Dostosuj układ i wygląd Supplier Portal.
-* **Konfiguracja eksportu**: Skonfiguruj, jak dane dostawców są eksportowane do systemów zewnętrznych.
-* **Grupa dostawców**: Twórz grupy dostawców, aby kategoryzować i porządkować dostawców, oraz zarządzaj nimi.
-* **Mapowanie użytkowników i grup dostawców**: Powiąż użytkowników wewnętrznych z określonymi grupami dostawców, aby kontrolować widoczność i dostęp.
+* **Supplier General Settings**: Skonfiguruj pola zaproszeń portalu dostawców, statusy przepływu (Not Invited, Open, Pending Registration, Approved, Rejected) i ustawienia zatwierdzania.
+* **Email Templates**: Twórz szablony e-mail przeznaczone do komunikacji z dostawcami i zarządzaj nimi.
+* **Supplier Layout**: Dostosuj układ i wygląd Supplier Portal.
+* **Export Configuration**: Skonfiguruj eksport danych dostawców do systemów zewnętrznych.
+* **Supplier Group**: Twórz grupy dostawców i zarządzaj nimi, aby kategoryzować i porządkować dostawców.
+* **User and Supplier Group Mapping**: Przypisz użytkowników wewnętrznych do określonych grup dostawców, aby kontrolować widoczność i dostęp.

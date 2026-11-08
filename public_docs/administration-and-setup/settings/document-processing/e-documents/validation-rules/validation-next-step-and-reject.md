@@ -6,7 +6,7 @@ Po przeczytaniu [raportu walidacyjnego](validation-report.md) raport podpowiada,
 
 ## Co zrobić dalej
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-next-step-pl-20261104-v2.png" alt="Ocena, następny krok i działania w raporcie."><figcaption><p>Ocena, następny krok i działania w raporcie.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-next-step-pl-20261104-v2.png" alt="Ocena, następny krok i działania w raporcie."><figcaption><p>Ocena, następny krok i działania w raporcie.</p></figcaption></figure>
 
 **Ocena** mówi jednym zdaniem, czy faktura jest zgodna. Blok **Następny krok** mówi, co zrobić:
 
@@ -23,7 +23,7 @@ Przyciski na końcu raportu:
 
 ## Odrzucanie dokumentu
 
-<figure><img src="../../../../.gitbook/assets/einvoice-reject-dialog-pl-20261104-v2.png" alt="Okno odrzucenia fikcyjnej faktury. Odrzucenie zostało anulowane."><figcaption><p>Okno odrzucenia fikcyjnej faktury. Odrzucenie zostało anulowane.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-reject-dialog-pl-20261104-v2.png" alt="Okno odrzucenia fikcyjnej faktury. Odrzucenie zostało anulowane."><figcaption><p>Okno odrzucenia fikcyjnej faktury. Odrzucenie zostało anulowane.</p></figcaption></figure>
 
 1. W raporcie wybierz **Odrzuć dokument**.
 2. Sprawdź **Powód**. DocBits wypełnia go na podstawie błędów z raportu. Możesz edytować tekst.

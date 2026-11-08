@@ -2,7 +2,7 @@
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/es.mp4" %}
 
-La página **Validación de facturas electrónicas** (**Settings → E-Documents → E-Invoice Validation**, ruta `/settings/einvoice-validation`; antes llamada _Validation Rules_) controla cómo valida DocBits las facturas electrónicas entrantes. Se basa en el conjunto de reglas oficial **KoSIT XRechnung + ZUGFeRD** y en los códigos de hallazgo internos del validador, y permite anular la gravedad de cada regla para su organización.
+La página **E-Invoice Validation** (**Settings → E-Documents → E-Invoice Validation**, ruta `/settings/einvoice-validation`; antes llamada _Validation Rules_) controla cómo valida DocBits las facturas electrónicas entrantes. Se basa en el conjunto de reglas oficial **KoSIT XRechnung + ZUGFeRD** y en los códigos de hallazgo internos del validador, y permite anular la gravedad de cada regla para su organización.
 
 > Esta página es para **facturas electrónicas** (XRechnung, ZUGFeRD, Factur-X). No es lo mismo que **Data Validation Rules**, que comprueban campos extraídos de documentos.
 

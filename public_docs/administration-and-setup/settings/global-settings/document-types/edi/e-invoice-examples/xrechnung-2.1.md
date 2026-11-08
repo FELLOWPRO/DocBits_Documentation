@@ -4,7 +4,7 @@ Exporteren naar het documentbeheersysteem (IDM):
 
 <figure><img src="../../../../../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
 
-Exported to Infor LN:
+Exported to Infor ERP / SAP:
 
 <figure><img src="../../../../../../.gitbook/assets/image2-1.png" alt=""><figcaption></figcaption></figure>
 

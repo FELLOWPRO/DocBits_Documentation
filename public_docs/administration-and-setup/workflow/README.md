@@ -112,10 +112,6 @@ Le moteur de workflow DocBits fonctionne sur un principe simple mais puissant qu
 
 En assemblant ces trois composants—Déclencheur, Condition et Action—le moteur de workflow DocBits permet aux utilisateurs de créer des workflows hautement personnalisés et efficaces. Cette approche modulaire simplifie non seulement le processus de configuration des automatisations, mais offre également la flexibilité de créer des workflows complexes capables de gérer un large éventail de tâches et de processus.
 
-### Conclusion
-
-La règle "Quand-Et-Alors facile" du moteur de workflow DocBits illustre l'engagement du moteur à fournir une plateforme conviviale pour l'automatisation des processus. Cette règle simple, en décomposant l'automatisation en éléments essentiels de Déclencheur, Condition et Action, facilite la conceptualisation, la création et la gestion des workflows pour les utilisateurs. Que vous soyez novice en matière d'automatisation de workflows ou un professionnel expérimenté, le moteur de workflow DocBits offre un outil efficace et accessible pour améliorer la productivité et rationaliser les opérations.
-
 ## Parcours du débutant à l’expert
 
 [Parcours du débutant à l’expert](workflow-learning-path.md). Suivez les niveaux dans l’ordre. Lire ne suffit pas : chaque niveau se termine par votre configuration, une attente vérifiable et des preuves. P0 prévient les erreurs fondamentales d’exécution ; P1 approfondit données, décisions métier et intégrations.

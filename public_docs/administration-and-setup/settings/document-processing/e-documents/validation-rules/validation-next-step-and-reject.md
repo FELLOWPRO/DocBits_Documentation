@@ -19,7 +19,7 @@ Die Schaltflächen am Ende des Berichts:
 
 * **Reject document**: öffnet den Dialog zum Ablehnen (siehe unten).
 * **Report (HTML)** und **Report (XML)**: laden den Bericht herunter, zum Beispiel um ihn an den Lieferanten zu senden.
-* **Close**: zurück zum Dokument.
+* **Close** (oder **Back to document**): zurück zum Dokument.
 
 ## Ein Dokument ablehnen
 

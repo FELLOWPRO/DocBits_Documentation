@@ -54,7 +54,7 @@ Die Tabelle **Result per level** zeigt, wie viele Fehler, Warnungen und Hinweise
 Jeder Prüfhinweis ist eine Zeile im Abschnitt **Pos**:
 
 * **Pos** und **Code**: die Position im Bericht und der Regelcode, zum Beispiel `BR-CO-26`.
-* **Severity**: **Error**, **Warning** oder **Information**.
+* **Level**: **Error**, **Warning** oder **Information**.
 * **Your organisation**: der Schweregrad nach den Einstellungen Ihrer Organisation. Ein Strich bedeutet, dass Ihre Organisation den Schweregrad nicht geändert hat.
 * **Field and text**: das Problem in verständlicher Sprache, das betroffene Feld (zum Beispiel *BT-29*), die **Technische Meldung** des Validators und **How to fix**.
 * **Line** und **Show in XML**: Wählen Sie **Show in XML**, um den Bericht zu schließen und zur Zeile im XML-Viewer zu springen.

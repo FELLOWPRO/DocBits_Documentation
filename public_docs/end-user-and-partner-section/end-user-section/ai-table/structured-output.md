@@ -23,7 +23,7 @@ Ouvrez [Classification et extraction](../../../administration-and-setup/settings
 3. Définissez **Utiliser l'extraction structurée (IA)** comme valeur d'organisation. La préférence technique est `USE_STRUCTURED_EXTRACTION`.
 4. Vérifiez le texte lisible ou l'entrée Vision. Des règles classiques enregistrées peuvent encore déterminer le chemin effectif ; contrôlez [le chemin réellement utilisé](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md).
 
-<figure><img src="../../../.gitbook/assets/structured-output-settings-fr-20261104.png" alt="Commandes actuelles d&#x27;extraction. Structured Output est désactivé dans cette configuration existante ; aucun aperçu de schéma n&#x27;est donc affiché. Aucun paramètre d&#x27;extraction n&#x27;a été modifié."><figcaption><p>Commandes actuelles d&#x27;extraction. Structured Output est désactivé dans cette configuration existante ; aucun aperçu de schéma n&#x27;est donc affiché. Aucun paramètre d&#x27;extraction n&#x27;a été modifié.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/structured-output-settings-fr-20261104.png" alt="Commandes actuelles d'extraction. Structured Output est désactivé dans cette configuration existante ; aucun aperçu de schéma n'est donc affiché. Aucun paramètre d'extraction n'a été modifié."><figcaption><p>Commandes actuelles d'extraction. Structured Output est désactivé dans cette configuration existante ; aucun aperçu de schéma n'est donc affiché. Aucun paramètre d'extraction n'a été modifié.</p></figcaption></figure>
 
 ## 2. Priorité des paramètres de modèle d'extraction
 
@@ -55,7 +55,7 @@ Revenir à **Par défaut** supprime le choix explicite. Une nouvelle colonne per
 
 **Obligatoire**, **Lecture seule** et **Masqué** concernent les contrôles de complétude, la modification et la visibilité ; ils ne remplacent pas le choix IA. **Non** ne supprime ni la colonne ni ses valeurs et n'empêche pas des règles, scripts ou autres sources de la renseigner. L'apprentissage fournisseur et les tags IA peuvent étendre la demande effective : résolvez aussi leurs contradictions. Le commutateur ne remplace pas automatiquement un résultat purement issu de règles.
 
-<figure><img src="../../../.gitbook/assets/structured-output-column-choice-fr-20261104.png" alt="Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n&#x27;a été modifiée. Les cellules de titre sont masquées pour protéger les données."><figcaption><p>Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n&#x27;a été modifiée. Les cellules de titre sont masquées pour protéger les données.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/structured-output-column-choice-fr-20261104.png" alt="Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n'a été modifiée. Les cellules de titre sont masquées pour protéger les données."><figcaption><p>Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n'a été modifiée. Les cellules de titre sont masquées pour protéger les données.</p></figcaption></figure>
 
 ## 4. Lire l'aperçu
 

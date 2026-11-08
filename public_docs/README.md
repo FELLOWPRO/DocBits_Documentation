@@ -12,7 +12,7 @@ Do OCR/IDP à lógica de negócio, aprovações e Advanced Workflows.
 
 Bem-vindo ao DocBits
 
-Bem-vindo ao **DocBits**, sua fonte abrangente de estratégias e insights de documentação. No DocBits, nos dedicamos a fornecer recursos de documentação claros, concisos e atualizados para [usuários finais](end-user-and-partner-section/end-user-section/), [administradores](administration-and-setup/settings/) e [parceiros](end-user-and-partner-section/partner-section/).
+Aqui você encontra guias para [usuários finais](end-user-and-partner-section/end-user-section/), [administradores](administration-and-setup/settings/) e [parceiros](end-user-and-partner-section/partner-section/).
 
 [**DocBits**](https://www.docbits.com) **da** [**FELLOWPRO AG**](https://www.fellowpro.com) é uma solução avançada de processamento inteligente de documentos (IDP) criada para otimizar e automatizar o tratamento de documentos comerciais. 
 

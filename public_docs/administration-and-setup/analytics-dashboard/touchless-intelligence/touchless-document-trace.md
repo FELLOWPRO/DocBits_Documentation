@@ -1,83 +1,90 @@
 # 文档追踪
 
 <!-- touchless-admin-video-v2-20261104:start -->
-**视频章节（审核版）:** [比较执行记录](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.html#chapter=08).
+**视频章节（审核版）：** [比较运行](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/zh.html#chapter=08)。
 <!-- touchless-admin-video-v2-20261104:end -->
 
-在 **Document ID** 中输入文档 ID，或从集群中打开一个示例文档，即可查看 **这份文档发生了什么** 。
+在 **Document ID** 中输入文档 ID，或从某个问题集群中打开示例文档，即可查看**这一份文档发生了什么**。
 
-页眉显示文件、其状态（例如 **进行中** ）、您正在查看的运行及其首个阻塞点，以及一个带有文档 ID 的 **文档** 按钮。
+页眉显示文件、其状态（例如 **In progress**）、您正在查看的运行及其首个阻塞点，以及一个带文档 ID 的 **Document** 按钮。
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-zh.png" alt="Dev NOVA：第一次测试运行的处理路径和真实记录值"><figcaption><p>2026 年 11 月 4 日在 Dev NOVA 11.0.3 重新截取。虚构测试发票停在字段验证阶段。分类、供应商查找、表头提取和表格提取均包含真实记录值，右侧卡片显示文档和运行历史。这是正在运行的产品界面。 本版本的路径阶段名称仍为英语；摘要中的“邮政信箱”实际指采购订单号，“已屏蔽”在此表示处理受阻。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-zh.png" alt="Dev NOVA：第一次测试运行的处理路径与已记录的数据点"><figcaption><p>2026 年 11 月 4 日从 Dev NOVA 11.0.3 的新采集。虚构的测试发票停在字段校验。分类、供应商查找、表头提取和表格提取包含真实记录的数据点；卡片显示文档和运行历史。这是正在运行的产品界面。</p></figcaption></figure>
 
- **管道路径** 显示 14 个阶段：Intake、Classification、E-Document Validation、Supplier Identification、Text Recognition、Header Extraction、Table Extraction、Field Validation、PO Lookup、PO Line Match、Approval、Workflow Routing、Export、ERP Acknowledgement。每个阶段带有一种状态：
+**Pipeline Path** 显示 14 个阶段：Intake、Classification、E-Document Validation、Supplier Identification、Text Recognition、Header Extraction、Table Extraction、Field Validation、PO Lookup、PO Line Match、Approval、Workflow Routing、Export、ERP Acknowledgement。每个阶段带有一种状态：
 
 | 状态 | 含义 |
 | --- | --- |
-| **通过** （绿色） | 该阶段顺利完成 |
-| **止步于此** （橙色） | 该阶段阻止了文档 |
-| **未到达** | 路径中位于首个阻塞点之后的阶段；请检查日志中是否还记录了额外执行情况 |
-| **未记录任何内容** （虚线） | 该阶段没有记录任何数据 |
-| **不适用** | 该阶段不适用于此文档 |
+| **Passed**（绿色） | 该阶段已正常执行 |
+| **Stopped Here**（橙色） | 该阶段阻塞了文档 |
+| **Not reached** | 显示在路径中首个阻塞点之后；请查看阶段日志，了解是否还有额外记录的执行 |
+| **Nothing Recorded**（虚线） | 该阶段没有记录任何数据 |
+| **Not applicable** | 该阶段不适用于此文档 |
 
 ### 阶段日志
 
-路径下方的 **阶段日志** 列出相同的阶段以及各阶段记录的内容。每行左右两侧分别是状态圆点和状态词。
+路径下方的 **Stage Log** 列出相同的阶段以及各阶段记录的内容。每一行的左右两侧分别是状态圆点和状态词。
 
-* 每个值都是一个 **值标签** ：带单位的数字，例如 **置信度 100 %** 、 **阈值 60 %** 、 **失败规则 0** 、 **8 个缺失字段** 或 **0 个映射缺口** 。百分比显示为 `97 %`，绝不显示为 `0.97`。
-* **详情** 会展开某个阶段记录的完整值列表，包括它考虑过的备选项。
-* 阻止文档的阶段会说明原因，例如 **字段验证失败** 。
-* 没有任何阶段记录的值显示为 **未记录** ，绝不显示为编造的值。值均为数字和固定词汇，绝不是文档正文。
-* 当支持人员需要时， **显示原始诊断** 可打开原始数据。
+* 每个值都是一个**数据点标签**：带单位的数字，例如 **Confidence 100 %**、**Threshold 60 %**、**Failed rules 0**、**8 missing fields** 或 **0 mapping gaps**。百分比显示为 `97 %`，绝不显示为 `0.97`。
+* **Details** 会展开某个阶段记录的完整数据点列表，包括它考虑过的备选值。
+* 阻塞该文档的阶段会说明原因，例如 **Field validation failed**。
+* 没有任何阶段记录的数据点显示为 **Not recorded**，绝不显示为编造的值。数据点是数字和固定词汇，绝不是文档正文。
+* **Show Raw Diagnostics** 在支持人员需要时打开原始数据。
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-zh.png" alt="Dev NOVA：含置信度、提取记录值和字段验证阻塞的阶段日志"><figcaption><p>真实的第一次运行：分类置信度 100%，供应商候选数 0，表格行数 1，映射缺口 7。阶段通过仅表示该阶段已执行，并不证明供应商匹配成功或所有发票值都正确。字段验证报告缺少必填字段。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-zh.png" alt="Dev NOVA：阶段日志，包含置信度、提取数据点和受阻的字段校验"><figcaption><p>实际的首次运行：分类置信度 100%、0 个供应商候选、1 个表格行和 7 个映射缺口。Passed 表示某阶段已执行；它并不证明供应商匹配成功，也不证明每个发票值都正确。字段校验报告缺少必填字段。</p></figcaption></figure>
 
-### 运行与变化
+### 运行与变更
 
-通过运行选择器选择一次尝试，运行历史显示其结果和首个阻塞点。已记录的差异将所选运行与其前一次运行比较，并非自动与当前运行比较。差异标记包含单位，相同值保持无变化。
+使用运行选择器选择一次尝试。Run History 列出其结果和首个阻塞点。已记录的差异会将所选运行与其前一次运行比较，而不是自动与当前运行比较。差异标记会带上单位；未变化的数据点保持不变。
 
-文档卡片列出类型、供应商、发票号、采购订单、页数及记录的分析方法。本例的手动方法对应测试导入时指定的文档类型。因此，100% 分类值不是自动分类准确率的独立证明。
+Document 卡片列出文档类型、供应商、发票号、采购订单、页数以及记录的分析方法。此处的 Manual 反映测试导入时提供的文档类型。因此 100% 的分类值并不是自动分类准确率的独立证据。
 
-### 阅读供应商和表格详情
+### 查看供应商和表格详情
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-zh.png" alt="Dev NOVA：区分已找到的标识、主数据查询和供应商匹配"><figcaption><p>本次运行在发票上找到供应商名称，并查询主数据，但未匹配到供应商。测试发票未提供增值税号、IBAN、电子邮件地址或 GLN。主数据无匹配与未找到发票值是不同的诊断结果。 底部的“比赛结果由”指匹配判定来源，与比赛无关。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-zh.png" alt="Dev NOVA：供应商详情，区分检出的标识、主数据查询和匹配结果"><figcaption><p>本次运行在发票上找到了供应商名称并查询主数据，但没有分配供应商。此测试发票中没有 VAT ID、IBAN、电子邮件地址和 GLN。主数据无匹配与发票值缺失属于不同的诊断结果。</p></figcaption></figure>
 
-分别检查三个问题：文档上是否存在该标识，是否进行了查询，以及是否匹配到了供应商。绿色阶段本身无法回答这三个问题。
+请分别检查三个问题：文档上是否找到了标识、是否进行了查询，以及是否匹配到了供应商？仅有一个绿色阶段无法回答这些问题。
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-zh.png" alt="Dev NOVA：第一次运行的表格详情显示七个映射缺口"><figcaption><p>详情显示 1 个表格、1 行及 7 个映射缺口。判断提取错误之前，应先检查列映射。底部的比较说明不能作为所选第一次运行的有效比较基准，因为第一次运行没有前一次运行。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-zh.png" alt="Dev NOVA：首次运行的表格详情，报告七个映射缺口"><figcaption><p>表格详情显示 1 个表格、1 行对应 7 个映射缺口。在断定提取失败之前，请先检查列映射。比较页脚不适用于所选的首次运行，因为它没有前一次运行。</p></figcaption></figure>
 
-### 识别真实的人工重启
+### 识别真正的重启
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-zh.png" alt="Dev NOVA：两个真实运行的阶段记录值对比，数值未变化"><figcaption><p>同一张测试发票经过真实的人工重启，期间没有修改发票字段。新增运行只能证明再次尝试，不能证明改进成功。相同值显示为无变化，没有编造差异标记。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-zh.png" alt="Dev NOVA：两次实际测试运行的比较，阶段数据点未变化"><figcaption><p>同一张测试发票经过一次真实的人工重启，期间没有更正任何发票字段。新的运行只证明又尝试了一次，并不证明有所改善。未变化的数据点显示 No change；没有编造差异标记。</p></figcaption></figure>
 
-人工重启属于人工干预。此案例只有在之后成功完成时，才会归入 AP Assisted。只要仍在处理中，就不计入已完成文档的比率分母。
+人工重启属于人工干预。只有后续成功完成，才会将此案例归为 AP Assisted。只要它仍在进行中，就不计入已完成文档的分母。
 
-证据范围。本案例未证明业务审批、成功导出或 ERP 确认。旧版采购订单匹配器在这里没有记录决策路径，因此不能作为已完成 Infor 比对的证据。NOVA 11.0.3 的日志可能在字段验证阻塞后仍记录采购订单查找通过，而处理路径却将其显示为后续阶段，需同时检查两种视图。摘要卡片也可能显示发票号未记录，但提取结果中已存在该值；核对数值时应查看原件与提取字段。
+证据局限。此案例没有展示业务审批、成功导出或 ERP 确认。旧版 PO 匹配器在此没有记录决策路径；这不能作为 Infor 比较的证据。在 NOVA 11.0.3 中，阶段日志可以在字段校验受阻后仍记录 PO 查找通过，而路径却将其标为 Not reached。请两种视图都查看。摘要还会把发票号显示为 Not recorded，尽管提取结果中已有该值；进行值比较时请使用原始值和提取字段。
 
-## 区分提取问题和源数据问题
+## 区分提取问题与源系统数据问题
 
-核对原件与更正前的字段及行项目，再比较导入订单与当前 Infor，包括单位、价格单位及导入时间。证据不足时保持原因未确认。
+1. 打开**原始发票**，将其表头字段和行项目与 DocBits 提取的内容比较。调查较早的运行时应使用人工更正前的值。当前已更正的值无法说明最初提取的是什么。
+2. 阅读追踪中的首个阻塞点。提取阶段通过只表示该阶段已完成；它并不证明每个值都与发票一致。
+3. 对于 PO 差异，请将发票值与 **DocBits 实际可用的订单数据**以及对应的 Infor 记录比较。包括单位、价格单位、数量和导入时间。
+4. 记录已确认的差异：**invoice vs extraction**、**correct extraction vs imported source data**，或 **Infor vs its imported copy**。如果所需证据未被记录，请让原因保持未定。
+5. 检查运行历史中是否存在人工更正、审批或重启，以及最终结果。结果和原因回答的是不同问题。
 
- **示例：**  原件与提取都是 10 €，导入订单为 9 €。这说明订单有差异，不是已证实的提取错误。先确认约定价格。人工重启后成功归为 AP Assisted。参见[指标计算](touchless-metrics.md)。反复缺字段只证明重复阻塞，不一定缺默认值；检查原件、提取、验证及配置。
+**示例。**发票和提取值都显示 €10.00，而导入的订单显示 €9.00。这确立的是与订单数据之间的差异，而不是提取错误。请确认约定的是哪个价格，以及需要更正的是 Infor 本身还是其导入副本。如果 AP 手动重启该发票并随后成功完成，那么尽管提取正确，它仍属于 AP assisted。参见[完整示例与计算](./)。
 
-## 核实初始提取和连续阻塞的证据
+**反复出现的缺失字段。**多份文档停在 Field Validation，说明存在重复的阻塞点。可能原因包括提取问题、发票值确实缺失、校验规则，或缺少已配置的默认值。选择修复方式前请比较证据；仅凭重复本身无法证明其中任何一个原因。
 
-选择同一文档及执行，核对订单号、币种、数量、单位、价格单位、单价和金额。区分当前值与更正前值；切换执行不保证恢复每个历史单元格。缺少初始值时标记为 **无法评估** ，先定义核查范围与样本量。比较导入副本、时间和当前 Infor。
+## 得出结论前先证明原始提取
 
-第一次执行可能等待订单，下一次导入后才发现价格差异；第一次不证明已到达后续检查。人工重启在成功后仍是 AP Assisted；最终 ERP 错误优先。没有记录就是缺少证据。
+1. 从此追踪打开 **Document**，核实文档 ID 和所选运行。将原始 PO 号、币种、数量、单位、价格单位、单价、行金额和相关合计与校验字段及表格比较。
+2. 在更正之前区分当前值与提取值。对于已经编辑过的发票，请使用匹配的历史字段记录或该运行的提取证据。切换运行并不保证能重建每一个旧字段和单元格。
+3. 如果原始提取值不可用，请将其记录为**无法评估**，而不是正确。在报告独立的提取质量结果之前，先界定字段、行覆盖范围、样本选择和样本量。
+4. 将导入的 PO 值和导入时间戳与当前 Infor 值比较。这可以区分源数据错误与副本过时。
 
-工具及人工操作分类见[Touchless 与 MCP](touchless-mcp.md)。
+阻塞点可能相继出现：第 1 次运行可能因 PO 尚未到达而停下；导入之后，第 2 次运行可能暴露出价格差异。两者都不能证明第 1 次运行到达了后面的检查。人工重启在成功后会以 AP Assisted 的形式保留；而最终的 ERP 拒收会优先作为流程异常处理。**Not recorded** 表示缺少证据，而不是检查通过。
+
+关于对应的工具调用和人工操作的分类，参见 [Touchless with MCP](touchless-mcp.md)。
 
 ## 相关页面
 
 * [Touchless Intelligence](./)
-* [供应商诊断和问题集群](touchless-supplier-diagnosis.md)
-* [采购订单匹配诊断](touchless-po-matching-diagnosis.md)
+* [供应商诊断与问题集群](touchless-supplier-diagnosis.md)
+* [PO 匹配诊断](touchless-po-matching-diagnosis.md)
 
-本页面的屏幕截图显示中文界面。
+<!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 
-<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+<!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->
 
-<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->
-
-这五张新截图展示 Dev NOVA 11.0.3 的本地化界面及同一张专门创建的测试发票。任何单独的原件与字段示意图都仅用于说明该数值比较。
+这五张新的追踪截图展示本地化的 Dev NOVA 11.0.3 界面和同一张自建测试发票。任何单独的原件与字段对比图仍只是该比较的有限示例。

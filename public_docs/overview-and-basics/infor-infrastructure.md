@@ -16,7 +16,7 @@ El manejo de documentos es muy sencillo con Docbits. Todos los documentos subido
 
 ### Seguridad del tráfico de red
 
-Solo permitimos conexiones aseguradas por HTTPS para comunicarnos con nuestros servidores. Esto asegura que todos los datos transferidos estén encriptados, manteniendo su información sensible segura y protegida. Es como tener un guardia de seguridad para sus datos, 24/7.
+La comunicación con nuestros servidores se realiza únicamente mediante HTTPS. Los datos se cifran durante la transmisión.
 
 ### Infor Cloud
 

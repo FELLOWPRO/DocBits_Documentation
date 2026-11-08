@@ -1,6 +1,6 @@
 # Tabla AI
 
-Explora las capacidades revolucionarias de **DocBits**, una herramienta de gestión de documentos de última generación que simplifica las complejidades de la extracción de tablas, la coincidencia de órdenes de compra (PO) y la gestión de facturas de costos.
+DocBits permite extraer tablas, realizar la correspondencia con órdenes de compra (PO) y gestionar facturas de costos.
 
 {% embed url="https://youtu.be/89uEFyKKLCk" %}
 

@@ -6,6 +6,20 @@ description: Use Claude to find workflow building blocks, plan conditions, and e
 
 Describe the process you want to automate. Ask Claude to help find the building blocks and make the logic easier to review.
 
+## Design Your Workflow · Berlin
+
+English office video preview. Start with the complete invoice process in Claude: the trigger, amount decision, review route, standard processing and error handling. Inspect eight custom-card unit tests, then review the routing draft in the actual DocBits Workflow Builder.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-workflow-design-office-preview-admin/v4/en.mp4" %}
+
+[Watch with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-workflow-design-office-preview-admin/v4/en.html)
+
+> Design an invoice workflow with review above 1,000, standard processing at or below 1,000, and a correction route for invalid inputs. Explain the available cards, test the decision logic, and help me review the routing in DocBits before activation.
+
+The native designer view uses available standard cards. The custom condition is demonstrated separately through unit tests; those tests do not install or approve the card for a workflow. The illustrated workflow remains a draft.
+
+## Workflow planning: explainer
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-workflows-feature/v1/en.mp4" %}
 
 [Open the video player](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/mcp-workflows-feature/v1/en.html)

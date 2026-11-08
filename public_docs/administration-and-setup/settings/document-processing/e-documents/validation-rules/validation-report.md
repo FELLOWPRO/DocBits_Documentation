@@ -4,19 +4,19 @@
 
 Wanneer DocBits een e-factuur afwijst, kunt u precies lezen waarom. Het **validatierapport** toont elke bevinding in begrijpelijke taal, vertelt u wat u moet herstellen en toont de volgende stap. U opent het vanuit het document, niet vanuit de instellingen. Het scherm waar u het vindt, wordt beschreven in [Het foutscherm voor een afgewezen e-factuur](validation-error-screen.md).
 
-Deze pagina is bedoeld voor mensen die facturen verwerken. Beheerders stellen de regels in op de pagina [Validatie van elektronische facturen](validation-rules.md) en kiezen per documenttype of een mislukte controle de factuur blokkeert, zie [Validatie voor elk documenttype](validation-per-document-type.md).
+Deze pagina is bedoeld voor mensen die facturen verwerken. Beheerders stellen de regels in op de pagina [Validatie van elektronische facturen](README.md) en kiezen per documenttype of een mislukte controle de factuur blokkeert, zie [Validatie voor elk documenttype](validation-per-document-type.md).
 
 ## Wanneer een document een fout krijgt
 
 Als validatie **aan** staat en **blokkeert** voor het documenttype, krijgt een factuur met een blokkerende bevinding de status **Fout**. Open het document vanuit het dashboard. De foutweergave toont links de XML en rechts de reden.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-nl-20261104-v2.png" alt="Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-nl-20261104-v2.png" alt="Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
 
 De kaart rechts noemt de laag die de factuur heeft afgewezen (bijvoorbeeld **L3 · Bedrijfsregels**), de regelcode (bijvoorbeeld `BR-CO-26`), een korte uitleg en een **Volgende stap**. Selecteer **Bekijk validatiegegevens** om het volledige rapport te openen.
 
 ## Het rapport lezen
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-top-nl-20261104-v2.png" alt="Rapport van de fictieve factuur met bestandsgegevens en het resultaat."><figcaption><p>Rapport van de fictieve factuur met bestandsgegevens en het resultaat.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-nl-20261104-v2.png" alt="Rapport van de fictieve factuur met bestandsgegevens en het resultaat."><figcaption><p>Rapport van de fictieve factuur met bestandsgegevens en het resultaat.</p></figcaption></figure>
 
 Het rapport begint met de feiten over het bestand:
 
@@ -49,7 +49,7 @@ De tabel **Resultaat per niveau** toont hoeveel fouten, waarschuwingen en inform
 
 ## De bevindingen
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-findings-nl-20261104-v2.png" alt="Uittreksel uit het rapport: verkopersidentificatie ontbreekt, regel BR-CO-26."><figcaption><p>Uittreksel uit het rapport: verkopersidentificatie ontbreekt, regel BR-CO-26.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-nl-20261104-v2.png" alt="Uittreksel uit het rapport: verkopersidentificatie ontbreekt, regel BR-CO-26."><figcaption><p>Uittreksel uit het rapport: verkopersidentificatie ontbreekt, regel BR-CO-26.</p></figcaption></figure>
 
 Elke bevinding is één rij:
 
@@ -67,6 +67,6 @@ DocBits heeft teksten in begrijpelijke taal voor de meest voorkomende regels. Vo
 
 ## Gerelateerde pagina's
 
-* [Validatie van elektronische facturen](validation-rules.md): geaccepteerde versies, profielen en de ernst van elke regel.
+* [Validatie van elektronische facturen](README.md): geaccepteerde versies, profielen en de ernst van elke regel.
 * [Validatie voor elk documenttype](validation-per-document-type.md): validatie inschakelen en blokkeren instellen.
-* [Notificatierouting](notification-routing.md): wie welke bevinding afhandelt.
+* [Notificatierouting](../notification-routing.md): wie welke bevinding afhandelt.

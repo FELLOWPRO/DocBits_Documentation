@@ -10,7 +10,7 @@ Wanneer u een onjuiste e-factuur uploadt, raakt DocBits die niet kwijt. Het docu
 
 Een leverancier stuurt een XML-bestand waarin een sluittag niet overeenkomt met de openingstag. Het bestand kan niet worden gelezen, dus DocBits stopt bij de eerste controle, **L1 · XML-vormcontrole**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-xml-malformed-nl-20261104-v2.png" alt="Foutscherm van een fictief XML-bestand met een bewust beschadigde sluittag. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Foutscherm van een fictief XML-bestand met een bewust beschadigde sluittag. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-nl-20261104-v2.png" alt="Foutscherm van een fictief XML-bestand met een bewust beschadigde sluittag. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Foutscherm van een fictief XML-bestand met een bewust beschadigde sluittag. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
 
 Het scherm heeft twee kanten:
 
@@ -19,7 +19,7 @@ Het scherm heeft twee kanten:
 
 Selecteer **Bekijk validatiegegevens** om het volledige [validatierapport](validation-report.md) te openen.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-xml-malformed-nl-20261104-v2.png" alt="Rapport van het beschadigde fictieve XML-bestand."><figcaption><p>Rapport van het beschadigde fictieve XML-bestand.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-nl-20261104-v2.png" alt="Rapport van het beschadigde fictieve XML-bestand."><figcaption><p>Rapport van het beschadigde fictieve XML-bestand.</p></figcaption></figure>
 
 Het rapport noemt de exacte positie (regel en kolom staan in het rapport) en geeft het technische bericht van de XML-parser. Selecteer **Weergeven in XML** om naar die regel te springen. De hint **Hoe los ik dit op?** zegt dat u de afzender om een gecorrigeerd bestand moet vragen.
 
@@ -27,7 +27,7 @@ Het rapport noemt de exacte positie (regel en kolom staan in het rapport) en gee
 
 De XML is in orde, maar een verplicht veld ontbreekt. De verkoper kan bijvoorbeeld niet worden geïdentificeerd omdat er geen verkopersidentificatie, registratie-identificatie of btw-identificatie aanwezig is (regel `BR-CO-26`).
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-nl-20261104-v2.png" alt="Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-nl-20261104-v2.png" alt="Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
 
 De kaart toont de eerste blokkerende bevinding. Het volledige rapport bevat ook de code `BR-CO-26` en de overige bevindingen van de factuur.
 

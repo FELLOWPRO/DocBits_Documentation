@@ -2,9 +2,9 @@
 
 > Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.
 
-Elke validatieregel heeft een ernstniveau. U kunt de ernst van elke regel voor uw organisatie wijzigen. Deze pagina hoort bij [Validatie van elektronische facturen](validation-rules.md). Alleen organisatiebeheerders kunnen de ernst wijzigen.
+Elke validatieregel heeft een ernstniveau. U kunt de ernst van elke regel voor uw organisatie wijzigen. Deze pagina hoort bij [Validatie van elektronische facturen](README.md). Alleen organisatiebeheerders kunnen de ernst wijzigen.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-rule-table-nl-20261104.png" alt="Regeltabel met de werkelijke interfacelabels. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Regeltabel met de werkelijke interfacelabels. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-rule-table-nl-20261104.png" alt="Regeltabel met de werkelijke interfacelabels. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Regeltabel met de werkelijke interfacelabels. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
 
 De regeltabel somt elke validatieregel op (in totaal meer dan 1.600). Filter op **Laag (Layer)**, **Profiel** of **Versie**, of zoek op code of veld. Voor elke regel kunt u de **Ernst** in de vervolgkeuzelijst overschrijven om ze af te stemmen op het beleid van uw organisatie — bijvoorbeeld een regel van `ERROR` naar `WARNING` verlagen zodat ze het document niet langer afwijst.
 

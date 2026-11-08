@@ -6,9 +6,9 @@ Después de leer el [informe de validación](validation-report.md), el informe l
 
 ## Qué hacer después
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-next-step-es-20261104-v2.png" alt="Evaluación, siguiente paso y acciones del informe."><figcaption><p>Evaluación, siguiente paso y acciones del informe.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-next-step-es.png" alt="Evaluación, siguiente paso y acciones del informe."><figcaption><p>Evaluación, siguiente paso y acciones del informe.</p></figcaption></figure>
 
-La **Evaluación** dice en una frase si la factura es conforme. El bloque **Siguiente paso** le indica qué hacer:
+La **Assessment** dice en una frase si la factura es conforme. El bloque **Next step** le indica qué hacer:
 
 | Resultado | Siguiente paso |
 | --- | --- |
@@ -17,18 +17,18 @@ La **Evaluación** dice en una frase si la factura es conforme. El bloque **Sigu
 
 Los botones al final del informe:
 
-* **Rechazar documento**: abre el cuadro de diálogo de rechazo (véase más abajo).
-* **Informe (HTML)** e **Informe (XML)**: descargan el informe, por ejemplo para enviarlo al proveedor.
-* **Cerrar**: cierra el informe y vuelve al documento.
+* **Reject document**: abre el cuadro de diálogo de rechazo (véase más abajo).
+* **Report (HTML)** e **Report (XML)**: descargan el informe, por ejemplo para enviarlo al proveedor.
+* **Close** (o **Back to document**): cierra el informe y vuelve al documento.
 
 ## Rechazar un documento
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-reject-dialog-es-20261104-v2.png" alt="Diálogo para rechazar la factura ficticia. Se canceló el rechazo."><figcaption><p>Diálogo para rechazar la factura ficticia. Se canceló el rechazo.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-reject-dialog-es.png" alt="Diálogo para rechazar la factura ficticia. Se canceló el rechazo."><figcaption><p>Diálogo para rechazar la factura ficticia. Se canceló el rechazo.</p></figcaption></figure>
 
-1. En el informe, seleccione **Rechazar documento**.
-2. Revise el **Motivo**. DocBits lo rellena a partir de los errores del informe. Puede editar el texto.
-3. Seleccione **Rechazar documento** para confirmar. El estado cambia a **Rechazado**. El motivo se guarda como nota y el informe permanece asociado al documento.
+1. En el informe, seleccione **Reject document**.
+2. Revise el **Reason**. DocBits lo rellena a partir de los errores del informe. Puede editar el texto.
+3. Seleccione **Reject document** para confirmar. El estado cambia a **Rejected**. El motivo se guarda como nota y el informe permanece asociado al documento.
 
-Seleccione **Cancelar** para dejar el documento como está.
+Seleccione **Cancel** para dejar el documento como está.
 
-> Solo los usuarios con permiso para editar documentos ven **Rechazar documento**. El botón se oculta cuando el documento ya está rechazado o completado.
+> Solo los usuarios con permiso para editar documentos ven **Reject document**. El botón se oculta cuando el documento ya está rechazado o completado.

@@ -4,7 +4,7 @@ Exportações para o sistema de gerenciamento de documentos (IDM):
 
 <figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Exportado para Infor LN:
+Exportado para Infor ERP / SAP:
 
 <figure><img src="../../../../../../.gitbook/assets/image (360).png" alt=""><figcaption></figcaption></figure>
 

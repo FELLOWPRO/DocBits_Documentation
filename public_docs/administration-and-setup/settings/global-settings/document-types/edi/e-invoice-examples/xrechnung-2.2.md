@@ -4,7 +4,7 @@
 
 <figure><img src="../../../../../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
 
-导出到 Infor LN：
+导出到 Infor ERP / SAP：
 
 <figure><img src="../../../../../../.gitbook/assets/image2-2.png" alt=""><figcaption></figcaption></figure>
 

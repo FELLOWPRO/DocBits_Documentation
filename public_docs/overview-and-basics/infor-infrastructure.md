@@ -16,7 +16,7 @@ Mit DocBits ist die Dokumentenverwaltung ein Kinderspiel. Alle hochgeladenen Dok
 
 ### Sicherheit des Datenverkehrs
 
-Wir erlauben für die Kommunikation mit unseren Servern ausschließlich HTTPS-gesicherte Verbindungen. Dadurch wird sichergestellt, dass alle übertragenen Daten verschlüsselt sind und Ihre sensiblen Informationen sicher bleiben. Es ist wie ein Sicherheitsdienst für Ihre Daten, rund um die Uhr.
+Die Verbindung zu unseren Servern erfolgt ausschließlich über HTTPS. Die übertragenen Daten werden verschlüsselt.
 
 ### Infor Cloud
 

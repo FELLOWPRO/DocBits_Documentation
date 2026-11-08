@@ -1,8 +1,6 @@
 # Anpassungsoptionen
 
-## Die Anpassungsoptionen für jeden Dokumenttyp in DocBits sind entscheidend für die Optimierung der Dokumentenverarbeitung und Datenextraktion.
-
-### Hier sind die wichtigsten Anpassungsoptionen im Detail und ihre Auswirkungen auf die Dokumentenverarbeitung und Datenextraktion:
+## Was Sie pro Dokumenttyp festlegen
 
 1.  **Beschreibung der Layoutkonfiguration:**
 
@@ -162,5 +160,3 @@ Kontrolle des Zugriffs auf Dokumenttypen und deren Felder.
 **Benutzerfreundlichkeit:**&#x20;
 
 *   Anpassung der Benutzeroberfläche je nach Rolle und Berechtigung erhöht die Benutzerfreundlichkeit.
-
-Die umfangreichen Anpassungsoptionen für Dokumenttypen in DocBits ermöglichen eine präzise Steuerung der Dokumentenverarbeitung und Datenextraktion. Durch sorgfältige Konfiguration von Layouts, Feldern, Extraktions- und Validierungsregeln, Automatisierungs-Workflows und Benutzerrechten können Organisationen sicherstellen, dass ihre Dokumente effizient, genau und sicher verarbeitet werden. Diese Anpassungsoptionen tragen wesentlich dazu bei, die Gesamtleistung des Dokumentenmanagementsystems zu optimieren und die spezifischen Anforderungen der Organisation zu erfüllen.

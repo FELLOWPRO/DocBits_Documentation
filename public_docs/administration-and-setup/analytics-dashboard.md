@@ -2,7 +2,7 @@
 
 ## Übersicht
 
-Das **Analyse-Dashboard** bietet vollständige Transparenz über die Leistung Ihrer Dokumentenverarbeitung. Es verfolgt, wie lange Dokumente in jeder Phase ihres Wegs verbleiben – vom Import bis zum Export – und hilft Ihnen, Engpässe zu identifizieren, die Leistung über Organisationen, Dokumenttypen und Lieferanten hinweg zu vergleichen und Ihre Ergebnisse mit dem **globalen DocBits-Durchschnitt** zu vergleichen.
+Das Analyse-Dashboard zeigt, wie lange Dokumente vom Import bis zum Export in den einzelnen Verarbeitungsphasen bleiben. Sie können Engpässe erkennen, Organisationen, Dokumenttypen und Lieferanten vergleichen und Ihre Ergebnisse dem globalen DocBits-Durchschnitt gegenüberstellen.
 
 Jedes Dokument durchläuft verschiedene Phasen:
 
@@ -56,13 +56,13 @@ Analysiert die Leistung über alle **technischen Verarbeitungsmodule** (OCR, Kla
 
 ### Benutzerinteraktions-Flow
 
-Konzentriert sich auf **menschliche Berührungspunkte** – Wartezeit in der Warteschlange, manuelle Validierung, Prüfung und Genehmigung – nützlich zur Identifizierung von Workflow- und Personal-Engpässen.
+Zeigt Wartezeiten in der Warteschlange sowie Zeiten für manuelle Validierung, Prüfung und Genehmigung. Damit lassen sich Engpässe im Workflow und bei der Bearbeitung durch Mitarbeiter erkennen.
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_user_interaction_flow-de.png" alt="Benutzeransicht der Analyse; für die gewählten Filter liegen keine Daten vor."><figcaption><p>Benutzeransicht der Analyse; für die gewählten Filter liegen keine Daten vor.</p></figcaption></figure>
 
 ## Filteroptionen
 
-Das Dashboard unterstützt leistungsstarke mehrdimensionale Filterung. Alle Diagramme, Karten und Tabellen aktualisieren sich in Echtzeit basierend auf den aktiven Filtern.
+Sie können mehrere Filter kombinieren. Diagramme, Karten und Tabellen aktualisieren sich in Echtzeit anhand der aktiven Filter.
 
 ### Suche
 

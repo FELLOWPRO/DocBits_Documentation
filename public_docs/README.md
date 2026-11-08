@@ -12,9 +12,9 @@ Von OCR und IDP zu Geschäftslogik, Freigaben und Advanced Workflows.
 
 Willkommen bei DocBits
 
-Willkommen bei **DocBits**, Ihrer umfassenden Quelle für Dokumentationsstrategien und Einblicke. Bei DocBits stellen wir klare, prägnante und aktuelle Dokumentationsressourcen für [Endanwender](end-user-and-partner-section/end-user-section/), [Administratoren](administration-and-setup/settings/) und [Partner](end-user-and-partner-section/partner-section/) bereit.
+Hier finden Sie Anleitungen für [Endanwender](end-user-and-partner-section/end-user-section/), [Administratoren](administration-and-setup/settings/) und [Partner](end-user-and-partner-section/partner-section/).
 
-[**DocBits**](https://www.docbits.com) **von** [**FELLOWPRO AG**](https://www.fellowpro.com) ist eine fortschrittliche Lösung für intelligente Dokumentenverarbeitung (Intelligent Document Processing, IDP), die entwickelt wurde, um den Umgang mit Geschäftsdokumenten zu optimieren und zu automatisieren. 
+[DocBits](https://www.docbits.com) von [FELLOWPRO AG](https://www.fellowpro.com) ist eine Lösung für intelligente Dokumentenverarbeitung (Intelligent Document Processing, IDP). Sie automatisiert die Verarbeitung von Geschäftsdokumenten.
 
 Offizielle Dokumentation: [docs.docbits.com](https://docs.docbits.com/)
 
@@ -27,8 +27,7 @@ Nachfolgend finden Sie eine Zusammenfassung der besonderen Funktionen und Vortei
    * Unterstützt über 120 Sprachen.
    * Kann unstrukturierte Daten sowohl auf Kopf- als auch auf Positionsebene extrahieren.
 2. **Schwarmintelligenz**
-   * Nutzt die Kraft der KI-Schwarmintelligenz, um allen Kunden gemeinschaftliche Vorteile zu bieten.
-   * Verbessert das Training der Klassifizierungs- und Extraktionsmodelle durch Beiträge einer breiten Nutzerbasis.
+   * Beiträge vieler Nutzer fließen in das Training der Klassifizierungs- und Extraktionsmodelle ein.
    * Erreicht eine Genauigkeit von über 96 % bei der Datenextraktion und Klassifizierung.
 3. [**PO Matching**](end-user-and-partner-section/end-user-section/purchase-order-matching/)
    * Automatisiert den Abgleich von Bestellungen mit eingehenden Rechnungen.

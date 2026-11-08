@@ -30,7 +30,8 @@ Les mises en page basées sur des règles s'activent **par type de document** pa
 2. Cliquez sur l'icône **paramètres** (engrenage) sur la carte du type de document.
 3. Ouvrez **Gérer les mises en page** et activez l'interrupteur.
 
-<figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="L'interrupteur Gérer les mises en page"><figcaption><p>L'interrupteur Gérer les mises en page dans les paramètres supplémentaires d'un type de document</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/lsr-manage-layouts-toggle-en-20261102.png" alt="La section Gérer les mises en page dans les paramètres supplémentaires d'un type de document, sous-titrée Enable Layout Management, avec l'interrupteur Gérer les mises en page activé."><figcaption><p>L'interrupteur Gérer les mises en page dans les paramètres supplémentaires d'un type de document</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/lsr-manage-layouts-toggle-en-20261102.png -->
 
 Le lien **Mises en page** sur la carte du type de document ouvre désormais **Mises en page et règles de sélection**.
 
@@ -41,7 +42,8 @@ DocBits convertit vos mises en page existantes basées sur l'origine en règles 
 * La mise en page de l'origine **DEFAULT** devient la **mise en page par défaut** (le repli).
 * Chaque mise en page d'une origine spécifique devient une règle **« Layout for XX »** avec la condition *L'origine du document est XX*, qui renvoie à cette mise en page. Ces règles reçoivent des priorités par pas de 10 (par exemple 2000, 2010, 2020 …), afin que vous puissiez placer vos propres règles avant, entre ou après elles.
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-default-row-fr.png" alt="Mise en page de repli en fin de liste des règles de sélection. Le nom d’écran « Field validation » reste en anglais dans le produit."><figcaption><p>Mise en page de repli en fin de liste des règles de sélection. Le nom d’écran « Field validation » reste en anglais dans le produit.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/lsr-default-layout-row-en-20261102.png" alt="Le bas de la liste des règles de sélection : les dernières règles d'origine Layout for UY et Layout for VN, suivies de la ligne FALLBACK Default layout marquée is_default, utilisée lorsqu'aucune règle ci-dessus ne correspond."><figcaption><p>Les règles d'origine créées à l'activation, suivies de la mise en page par défaut (FALLBACK)</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/lsr-default-layout-row-en-20261102.png -->
 
 Rien n'est supprimé ni modifié dans les mises en page elles-mêmes. Juste après l'activation, chaque document obtient donc exactement la mise en page qu'il obtenait auparavant. Le comportement ne change que lorsque vous ajoutez ou modifiez des règles.
 
@@ -49,7 +51,8 @@ Rien n'est supprimé ni modifié dans les mises en page elles-mêmes. Juste apr�
 
 ## L'écran Mises en page et règles de sélection
 
-<figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-fr.png" alt="Vue d’ensemble des mises en page et règles de sélection. Le nom d’écran « Field validation » reste en anglais dans le produit."><figcaption><p>Vue d’ensemble des mises en page et règles de sélection. Le nom d’écran « Field validation » reste en anglais dans le produit.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/lsr-layouts-overview-en-20261102.png" alt="L'onglet Mises en page de Mises en page et règles de sélection pour le type de document INVOICE : les onglets d'écran Field Validation, Approval, Reject et Review, le filtre All, My layouts et System, le bouton New layout et les cartes de mise en page avec Edit, Clone et Delete."><figcaption><p>L'onglet Mises en page : chaque mise en page du type de document sous forme de carte</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/lsr-layouts-overview-en-20261102.png -->
 
 * **Mises en page / Règles de sélection** (en haut à droite) permettent de basculer entre la liste des mises en page et la liste des règles. Les nombres indiquent combien il y en a.
 * **Validation des champs / Approbation / Rejet / Révision** changent d'**écran**. Chaque écran a ses propres mises en page, ses propres règles et sa propre mise en page par défaut — une règle d'approbation ne modifie jamais l'écran de validation.
@@ -97,7 +100,8 @@ La mise en page est toujours choisie à partir des valeurs **actuelles** du docu
 
 ## Gérer les règles de sélection
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-selection-rules-list-fr.png" alt="Règles de sélection avec les noms configurés masqués. Le nom d’écran « Field validation » reste en anglais dans le produit."><figcaption><p>Règles de sélection avec les noms configurés masqués. Le nom d’écran « Field validation » reste en anglais dans le produit.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/lsr-rules-list-en-20261102.png" alt="L'onglet Règles de sélection de l'écran Field Validation : un tableau avec les colonnes Priority, Rule et conditions, Target layout, Source et Active, la première ligne marquée FIRST, des poignées de glissement à gauche et un menu à trois points sur chaque ligne."><figcaption><p>L'onglet Règles de sélection de l'écran Field Validation</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/lsr-rules-list-en-20261102.png -->
 
 Chaque ligne affiche la **priorité** (la première ligne est marquée **FIRST**), le **nom et la clé de la règle** avec ses **conditions**, la **mise en page cible**, le badge de **source** et un interrupteur **Active**.
 
@@ -124,9 +128,10 @@ Pour utiliser une autre mise en page de repli, créez une règle **sans aucune c
 
 Cliquez sur **New rule** dans l'onglet Règles de sélection de l'écran que vous souhaitez modifier.
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor-fr.png" alt="Portée, conditions et mise en page cible de la règle. Le nom d’écran « Field validation » reste en anglais dans le produit."><figcaption><p>Portée, conditions et mise en page cible de la règle. Le nom d’écran « Field validation » reste en anglais dans le produit.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/lsr-rule-editor-en-20261104.png" alt="L'éditeur de règle de sélection de mise en page pour une facture : la phrase de résumé en haut, puis Step 1 Scope and priority avec Rule name, Rule key, Document Type, Layout Type, Priority et une case Log execution, Step 2 Applies when avec la condition Document Origin is AR et les boutons Add Condition et Add nested group, Step 3 Target layout avec la mise en page Field Validation Layout (AR) sélectionnée, et le panneau d'aperçu en direct à droite avec Sample document, matched_by, Resolved layout, Priority hit et watched_fields."><figcaption><p>L'éditeur de règle : portée et priorité, les conditions, la mise en page cible et l'aperçu en direct de ce que ferait la règle.</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/lsr-rule-editor-en-20261104.png -->
 
-La phrase en haut résume la règle au fur et à mesure de sa construction — « When header.supplier_id = HP0000278, an INVOICE document gets the Field Validation Layout (Base) layout for Field validation. Checked at priority 5 — the first matching rule wins. »
+La phrase en haut résume la règle au fur et à mesure de sa construction — « When doc.doc_origin = AR, an INVOICE document gets the origin-ar layout for Field validation. Checked at priority 0 — the first matching rule wins. »
 
 ### Étape 1 — Portée et priorité
 
@@ -136,6 +141,7 @@ La phrase en haut résume la règle au fur et à mesure de sa construction — �
 | **Rule key** | Générée à partir du nom ; reste identique si vous renommez la règle. |
 | **Type de document** / **Type de mise en page** | Le type de document et l'écran concernés par la règle. Repris de l'endroit où vous avez cliqué sur **New rule**. |
 | **Priorité** | Les nombres les plus bas sont vérifiés en premier. Laissez des écarts (5, 10, 20 …) pour pouvoir insérer des règles plus tard. |
+| **Log execution** | Enregistre chaque évaluation de la règle, afin de pouvoir suivre plus tard pourquoi un document a correspondu ou non. Laissez l'option désactivée tant que vous n'avez pas besoin de cette trace. |
 
 ### Étape 2 — S'applique quand
 
@@ -189,7 +195,8 @@ Cliquez sur **Créer la règle** (ou **Enregistrer la règle** lors d'une modifi
 
 Écran **Approbation** · priorité **5** · *Le statut du document est Pending second approval* · cible *Second Approval Layout*. Les documents en première étape d'approbation ne correspondent pas et obtiennent la mise en page par défaut d'Approbation.
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status-fr.png" alt="Brouillon non enregistré d’une règle de sélection de mise en page. Le nom d’écran « Field validation » reste en anglais dans le produit."><figcaption><p>Brouillon non enregistré d’une règle de sélection de mise en page. Le nom d’écran « Field validation » reste en anglais dans le produit.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/lsr-rule-editor-approval-en-20261104.png" alt="Une règle de sélection d'approbation dans l'éditeur : Rule name Layout for DE, priorité 2000, les conditions Document Status is Pending second approval et Document Origin is Deutsch, la mise en page cible Second Approval Layout (DE) et l'aperçu en direct montrant l'exemple de document, matched_by rule, la mise en page résolue et le coup prioritaire 2000."><figcaption><p>Une règle d'approbation pour la seconde étape d'approbation — l'aperçu en direct à droite montre déjà que cette règle l'emporte à la priorité 2000.</p></figcaption></figure>
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/lsr-rule-editor-approval-en-20261104.png -->
 
 ### Un écran de rejet spécial pour certains fournisseurs
 

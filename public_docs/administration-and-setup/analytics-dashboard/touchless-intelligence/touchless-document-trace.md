@@ -62,7 +62,7 @@ Limiti delle prove. Questo caso non dimostra alcuna approvazione aziendale, espo
 4. Registra la differenza confermata: **fattura rispetto a estrazione**, **estrazione corretta rispetto a dati di origine importati** oppure **Infor rispetto alla sua copia importata**. Lascia aperta la causa se le prove necessarie non sono registrate.
 5. Controlla la cronologia delle esecuzioni per una correzione manuale, un'approvazione o un riavvio, e per l'esito finale. L'esito e la causa rispondono a domande diverse.
 
-**Esempio.** La fattura e il valore estratto indicano entrambi €10,00, mentre l'ordine importato indica €9,00. Questo stabilisce una discrepanza con i dati dell'ordine, non un errore di estrazione. Conferma quale prezzo è stato concordato e se vada corretto Infor stesso o la sua copia importata. Se AP riavvia manualmente la fattura e questa si completa poi con successo, è AP assisted nonostante l'estrazione corretta. Vedi gli [esempi pratici e il calcolo](./#example-100-correct-extraction-80-ap-touchless).
+**Esempio.** La fattura e il valore estratto indicano entrambi €10,00, mentre l'ordine importato indica €9,00. Questo stabilisce una discrepanza con i dati dell'ordine, non un errore di estrazione. Conferma quale prezzo è stato concordato e se vada corretto Infor stesso o la sua copia importata. Se AP riavvia manualmente la fattura e questa si completa poi con successo, è AP assisted nonostante l'estrazione corretta. Vedi gli [esempi pratici e il calcolo](.#example-100-correct-extraction-80-ap-touchless).
 
 **Campi mancanti ricorrenti.** Diversi documenti che si fermano alla Field Validation stabiliscono un bloccante ripetuto. Le cause possibili includono l'estrazione, un valore realmente assente nella fattura, una regola di convalida o un valore predefinito configurato mancante. Confronta le prove prima di scegliere una correzione; la ripetizione da sola non dimostra una singola causa.
 
@@ -80,8 +80,8 @@ Vedi [Touchless con MCP](touchless-mcp.md) per le chiamate agli strumenti corris
 ## Pagine correlate
 
 * [Touchless Intelligence](./)
-* [Diagnosi del fornitore e cluster di problemi](../../touchless-supplier-diagnosis.md)
-* [Diagnosi dell'abbinamento ordini](../../touchless-po-matching-diagnosis.md)
+* [Diagnosi del fornitore e cluster di problemi](touchless-supplier-diagnosis.md)
+* [Diagnosi dell'abbinamento ordini](touchless-po-matching-diagnosis.md)
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 

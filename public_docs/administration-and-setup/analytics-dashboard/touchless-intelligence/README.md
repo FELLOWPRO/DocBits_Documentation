@@ -6,7 +6,7 @@ Touchless Intelligence risponde a due domande distinte: **DocBits ha estratto co
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/it.mp4" %}
 
-Questa versione di verifica di 5:41 mostra un report con dati: filtri, KPI e calcolo, andamento, primi bloccanti, prove registrate, cronologia del documento, confronto delle esecuzioni, regole apprese, miglioramenti e cronologia, report di consulenza e risultati MCP reali.
+Questa versione di verifica di 5:56 mostra un report con dati: filtri, KPI e calcolo, andamento, primi bloccanti, prove registrate, cronologia del documento, confronto delle esecuzioni, regole apprese, miglioramenti e cronologia, report di consulenza e risultati MCP reali.
 
 [Aprire il video con sottotitoli italiani e 16 link ai capitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/it.html). La revisione di ascolto umana di questa nuova versione è ancora in sospeso.
 
@@ -18,11 +18,11 @@ Questi casi didattici spiegano le funzioni del report. Una raccomandazione o un'
 
 | Guida | Che cosa copre |
 | --- | --- |
-| [Metriche e calcolo](../../touchless-metrics.md) | Categorie di esito, numeratore e denominatore, azioni AP e calcoli |
+| [Metriche e calcolo](touchless-metrics.md) | Categorie di esito, numeratore e denominatore, azioni AP e calcoli |
 | [Usare il pannello](touchless-dashboard.md) | Filtri, schede KPI, andamenti, primi bloccanti e controlli |
 | [Esempi pratici: prezzo e quantità](touchless-examples.md) | Fatture fittizie e viste PO reali su Dev con differenze di prezzo e quantità |
-| [Diagnosi del fornitore e cluster di problemi](../../touchless-supplier-diagnosis.md) | Dare priorità ai fornitori e alle cause ricorrenti |
-| [Diagnosi dell'abbinamento ordini](../../touchless-po-matching-diagnosis.md) | Capire le regole attive, le tolleranze e il flusso decisionale |
+| [Diagnosi del fornitore e cluster di problemi](touchless-supplier-diagnosis.md) | Dare priorità ai fornitori e alle cause ricorrenti |
+| [Diagnosi dell'abbinamento ordini](touchless-po-matching-diagnosis.md) | Capire le regole attive, le tolleranze e il flusso decisionale |
 | [Tracciamento del documento](touchless-document-trace.md) | Ispezionare i valori originali, le esecuzioni, i bloccanti e gli interventi |
 | [Proposte di modifica e report](touchless-change-proposals.md) | Distinguere anteprima, applicazione, misurazione dell'effetto e annullamento |
 | [Spiegare e migliorare Touchless con MCP](touchless-mcp.md) | Spiegare, diagnosticare ed effettuare miglioramenti controllati tramite MCP |
@@ -31,7 +31,7 @@ Questi casi didattici spiegano le funzioni del report. Una raccomandazione o un'
 
 ## Impostazioni del report
 
-**Settings &rarr; Module &rarr; Dashboards & Analytics**: qui un amministratore gestisce le quattro impostazioni dell'organizzazione che il report legge. Determinano l'obiettivo e la vista dei costi; un campo vuoto significa che DocBits usa il valore predefinito.
+**Settings → Module → Dashboards & Analytics**: qui un amministratore gestisce le quattro impostazioni dell'organizzazione che il report legge. Determinano l'obiettivo e la vista dei costi; un campo vuoto significa che DocBits usa il valore predefinito.
 
 | Impostazione | Predefinito | Che cosa controlla |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ L'API ricontrolla i valori memorizzati e usa il valore predefinito per un valore
 
 ## Accesso
 
-Questa area appartiene alla [Dashboard di analisi](../). Gli amministratori hanno accesso; gli altri utenti necessitano della concessione del ruolo corrispondente. Analisi IA, modifiche supportate e report di consulenza possono richiedere diritti di amministratore.
+Questa area appartiene alla [Dashboard di analisi](..). Gli amministratori hanno accesso; gli altri utenti necessitano della concessione del ruolo corrispondente. Analisi IA, modifiche supportate e report di consulenza possono richiedere diritti di amministratore.
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 <!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

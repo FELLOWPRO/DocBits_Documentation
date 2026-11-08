@@ -6,7 +6,7 @@
 
 A una raccomandazione può essere associata una **proposta di modifica**, cioè una singola modifica di impostazione che dovrebbe aiutare. Gli amministratori la gestiscono in quattro passaggi:
 
-1. **Preview**: mostra la modifica (valore attuale &rarr; valore proposto) e che cosa si aspetta DocBits. Non viene salvato nulla. **Apply** è possibile solo dopo aver visto un'anteprima.
+1. **Preview**: mostra la modifica (valore attuale → valore proposto) e che cosa si aspetta DocBits. Non viene salvato nulla. **Apply** è possibile solo dopo aver visto un'anteprima.
 2. **Apply**: salva esattamente la modifica mostrata in anteprima. Viene registrata.
 3. **Measure**: DocBits confronta il tasso touchless dello stesso tipo di documento **prima e dopo**, su periodi di pari durata. In ogni periodo servono almeno **20 documenti**, altrimenti indica _not measurable_.
 4. **Undo**: annulla la modifica se questa proposta supporta l'inversione. Controlla la disponibilità e verifica l'impostazione ripristinata.
@@ -37,8 +37,8 @@ Vedi [Touchless con MCP](touchless-mcp.md) per le chiamate agli strumenti corris
 ## Pagine correlate
 
 * [Touchless Intelligence](./)
-* [Diagnosi del fornitore e cluster di problemi](../../touchless-supplier-diagnosis.md)
-* [Diagnosi dell'abbinamento ordini](../../touchless-po-matching-diagnosis.md)
+* [Diagnosi del fornitore e cluster di problemi](touchless-supplier-diagnosis.md)
+* [Diagnosi dell'abbinamento ordini](touchless-po-matching-diagnosis.md)
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 

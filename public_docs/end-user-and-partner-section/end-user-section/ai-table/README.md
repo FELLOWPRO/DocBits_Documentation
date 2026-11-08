@@ -15,7 +15,7 @@ Usa AI Table per verificare le righe estratte, correggere le colonne e salvare i
 
 ## Quando ottieni la tabella AI
 
-* **AI Table extraction** attivata da un amministratore (**Settings &rarr; Document Processing &rarr; Classification and Extraction**, vedi [Impostazioni per gli amministratori](./#settings-for-admins)). Se è disattivata, l'area della tabella mostra _AI Table will display here. Enable in …_.
+* **AI Table extraction** attivata da un amministratore (**Settings → Document Processing → Classification and Extraction**, vedi [Impostazioni per gli amministratori](./#settings-for-admins)). Se è disattivata, l'area della tabella mostra _AI Table will display here. Enable in …_.
 * Controlla il testo leggibile o l'input Vision selezionato. Le regole classiche di tabella salvate possono ancora determinare il percorso effettivo della tabella; controlla [quale percorso di estrazione è stato realmente usato](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md).
 * Le singole colonne hanno una propria selezione Use AI a tre stati. Controlla anche la fonte effettiva e le regole del fornitore, oltre a questa selezione; attivare Structured Output non sostituisce ogni tabella basata su regole.
 

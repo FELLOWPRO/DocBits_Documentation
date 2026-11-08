@@ -99,11 +99,11 @@ La schermata del report mostra raccomandazioni e impatto stimato, non l'applicaz
 ## Pagine correlate
 
 * [Touchless Intelligence](./)
-* [Metriche e calcolo](../../touchless-metrics.md)
+* [Metriche e calcolo](touchless-metrics.md)
 * [Usare il pannello](touchless-dashboard.md)
 * [Esempi pratici: prezzo e quantità](touchless-examples.md)
-* [Diagnosi del fornitore e cluster di problemi](../../touchless-supplier-diagnosis.md)
-* [Diagnosi dell'abbinamento ordini](../../touchless-po-matching-diagnosis.md)
+* [Diagnosi del fornitore e cluster di problemi](touchless-supplier-diagnosis.md)
+* [Diagnosi dell'abbinamento ordini](touchless-po-matching-diagnosis.md)
 * [Tracciamento del documento](touchless-document-trace.md)
 * [Proposte di modifica e report](touchless-change-proposals.md)
 

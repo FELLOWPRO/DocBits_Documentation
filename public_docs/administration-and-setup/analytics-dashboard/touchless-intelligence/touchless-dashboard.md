@@ -119,10 +119,10 @@ Se non hai l'autorizzazione, la pagina mostra _Action not allowed, please contac
 ## Pagine correlate
 
 * [Touchless Intelligence](./)
-* [Metriche e calcolo](../../touchless-metrics.md)
+* [Metriche e calcolo](touchless-metrics.md)
 * [Esempi pratici: prezzo e quantità](touchless-examples.md)
-* [Diagnosi del fornitore e cluster di problemi](../../touchless-supplier-diagnosis.md)
-* [Diagnosi dell'abbinamento ordini](../../touchless-po-matching-diagnosis.md)
+* [Diagnosi del fornitore e cluster di problemi](touchless-supplier-diagnosis.md)
+* [Diagnosi dell'abbinamento ordini](touchless-po-matching-diagnosis.md)
 * [Tracciamento del documento](touchless-document-trace.md)
 * [Proposte di modifica e report](touchless-change-proposals.md)
 * [Spiegare e migliorare Touchless con MCP](touchless-mcp.md)

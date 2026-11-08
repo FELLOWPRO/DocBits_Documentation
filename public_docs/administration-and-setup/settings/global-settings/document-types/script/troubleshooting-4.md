@@ -1,6 +1,6 @@
 # Fehlerbehebung
 
-## Hier sind einige Ratschläge zur Fehlerbehebung bei gängigen Skriptproblemen in DocBits: z. B. Tipps zum Debuggen, zum Umgang mit unerwartetem Skriptverhalten und zur Leistungsoptimierung.
+## Skriptfehler untersuchen
 
 ### Tipps zum Debuggen:
 

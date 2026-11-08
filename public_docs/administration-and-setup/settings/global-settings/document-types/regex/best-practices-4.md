@@ -51,7 +51,3 @@
 * Überprüfen Sie Ihre Regex-Muster regelmäßig auf Aktualisierungen und Verbesserungen.
 * Neue Anforderungen und sich ändernde Datenformate können Änderungen an den Mustern erforderlich machen.
 * Aktualisieren Sie auch die Dokumentation entsprechend.
-
-
-
-Durch die Einhaltung dieser Best Practices können Sie sicherstellen, dass Ihre Regex-Muster robust, effizient und wartbar sind, was wiederum die Zuverlässigkeit und Skalierbarkeit Ihrer Belegverarbeitungslösung verbessert.

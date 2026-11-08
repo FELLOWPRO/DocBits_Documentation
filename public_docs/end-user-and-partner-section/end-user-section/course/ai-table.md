@@ -1,6 +1,6 @@
 # KI-Tabelle
 
-Entdecken Sie die revolutionären Möglichkeiten von **DocBits**, einem hochmodernen Werkzeug für die Dokumentenverarbeitung, das die Komplexität der Tabellenextraktion, des Purchase-Order-(PO-)Matchings und der Verwaltung von Kostenrechnungen vereinfacht.
+DocBits unterstützt die Tabellenextraktion, den Abgleich mit Bestellungen (PO Matching) und die Bearbeitung von Kostenrechnungen.
 
 {% embed url="https://youtu.be/89uEFyKKLCk" %}
 

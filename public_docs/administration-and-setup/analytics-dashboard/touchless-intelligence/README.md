@@ -6,7 +6,7 @@ Touchless Intelligence erklärt zwei unterschiedliche Fragen: **Hat DocBits die 
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/de.mp4" %}
 
-Diese Prüffassung mit 5:41 Minuten zeigt einen gefüllten Bericht: Filter, Kennzahlen und Berechnung, Trends, erste Blocker, aufgezeichnete Nachweise, Dokumentverlauf, Laufvergleich, gelernte Regeln, Verbesserungen und Verlauf, Consulting-Berichte und tatsächliche MCP-Ergebnisse.
+Diese Prüffassung mit 5:42 Minuten zeigt einen gefüllten Bericht: Filter, Kennzahlen und Berechnung, Trends, erste Blocker, aufgezeichnete Nachweise, Dokumentverlauf, Laufvergleich, gelernte Regeln, Verbesserungen und Verlauf, Consulting-Berichte und tatsächliche MCP-Ergebnisse.
 
 [Video mit deutschen Untertiteln und 16 direkt anwählbaren Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/de.html). Die Hörprüfung dieser neuen Fassung steht noch aus.
 
@@ -18,11 +18,11 @@ Diese Schulungsfälle erklären die Berichtsfunktionen. Eine Empfehlung oder Vor
 
 | Anleitung | Inhalt |
 | --- | --- |
-| [Kennzahlen und Berechnung](../../touchless-metrics.md) | Ergebniskategorien, Zähler und Nenner, AP-Aktionen und Berechnungen |
+| [Kennzahlen und Berechnung](touchless-metrics.md) | Ergebniskategorien, Zähler und Nenner, AP-Aktionen und Berechnungen |
 | [Dashboard bedienen](touchless-dashboard.md) | Filter, Kennzahlenkarten, Trends, erste Blocker und Bedienelemente |
 | [Praxisbeispiele: Preis und Menge](touchless-examples.md) | Fiktive Rechnungen und echte Dev-Bestellansichten mit Preis- und Mengenunterschieden |
-| [Lieferantendiagnose und Fehlermuster](../../touchless-supplier-diagnosis.md) | Lieferanten und wiederkehrende Ursachen priorisieren |
-| [Bestellabgleich-Diagnose](../../touchless-po-matching-diagnosis.md) | Aktive Regeln, Toleranzen und den Entscheidungsablauf verstehen |
+| [Lieferantendiagnose und Fehlermuster](touchless-supplier-diagnosis.md) | Lieferanten und wiederkehrende Ursachen priorisieren |
+| [Bestellabgleich-Diagnose](touchless-po-matching-diagnosis.md) | Aktive Regeln, Toleranzen und den Entscheidungsablauf verstehen |
 | [Dokumentverlauf](touchless-document-trace.md) | Originalwerte, Verarbeitungsläufe, Blocker und Eingriffe prüfen |
 | [Änderungsvorschläge und Berichte](touchless-change-proposals.md) | Vorschau, Anwendung, Wirkungsmessung und Rücknahme unterscheiden |
 | [Touchless mit MCP erklären und verbessern](touchless-mcp.md) | Über MCP erklären, diagnostizieren und kontrolliert verbessern |
@@ -31,7 +31,7 @@ Diese Schulungsfälle erklären die Berichtsfunktionen. Eine Empfehlung oder Vor
 
 ## Berichtseinstellungen
 
-Ein Administrator pflegt die vier Organisationseinstellungen, die der Bericht liest, unter Settings > Module > Dashboards & Analytics. Sie legen Ziel und Kostenansicht fest; ein leeres Feld bedeutet, dass DocBits den Standardwert verwendet.
+Ein Administrator pflegt die vier Organisationseinstellungen, die der Bericht liest, unter Settings → Module → Dashboards & Analytics. Sie legen Ziel und Kostenansicht fest; ein leeres Feld bedeutet, dass DocBits den Standardwert verwendet.
 
 | Einstellung | Standard | Was sie steuert |
 | --- | --- | --- |

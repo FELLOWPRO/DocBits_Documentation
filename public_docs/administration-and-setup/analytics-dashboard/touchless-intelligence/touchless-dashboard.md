@@ -111,7 +111,7 @@ Während die Analyse läuft, sehen Sie für jedes Fehlermuster **Queued**, **Run
 
 * Der Tab gehört zum Analytics Dashboard. Ihr Administrator aktiviert ihn für die Organisation. Fehlt der Tab, fragen Sie Ihren Administrator.
 * **Organisation administrators** sehen ihn immer.
-* Andere Benutzer sehen ihn, wenn ein Administrator ihrer Rolle den Tab **Analytics dashboard** freigegeben hat (Settings > Roles). Ohne diese Freigabe haben nur Administratoren Zugriff.
+* Andere Benutzer sehen ihn, wenn ein Administrator ihrer Rolle den Tab **Analytics dashboard** freigegeben hat (Settings → Roles). Ohne diese Freigabe haben nur Administratoren Zugriff.
 * Einige Aktionen sind nur für Administratoren: **AI analysis**, **applying and undoing a change**, **learned rule proposals** und der **Consulting report**.
 
 Wenn Sie keine Berechtigung haben, zeigt die Seite _Action not allowed, please contact the administrator_.
@@ -119,10 +119,10 @@ Wenn Sie keine Berechtigung haben, zeigt die Seite _Action not allowed, please c
 ## Weiterführende Seiten
 
 * [Touchless Intelligence](./)
-* [Kennzahlen und Berechnung](../../touchless-metrics.md)
+* [Kennzahlen und Berechnung](touchless-metrics.md)
 * [Praxisbeispiele: Preis und Menge](touchless-examples.md)
-* [Lieferantendiagnose und Fehlermuster](../../touchless-supplier-diagnosis.md)
-* [Bestellabgleich-Diagnose](../../touchless-po-matching-diagnosis.md)
+* [Lieferantendiagnose und Fehlermuster](touchless-supplier-diagnosis.md)
+* [Bestellabgleich-Diagnose](touchless-po-matching-diagnosis.md)
 * [Dokumentverlauf](touchless-document-trace.md)
 * [Änderungsvorschläge und Berichte](touchless-change-proposals.md)
 * [Touchless mit MCP erklären und verbessern](touchless-mcp.md)

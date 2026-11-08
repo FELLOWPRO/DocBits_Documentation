@@ -15,7 +15,7 @@ Mit AI Table prüfen Sie extrahierte Positionen, korrigieren Spalten und speiche
 
 ## Wann Sie die AI Table erhalten
 
-* Ein Administrator hat **AI Table extraction** eingeschaltet (Settings > Document Processing > Classification and Extraction, siehe [Einstellungen für Administratoren](./#settings-for-admins)). Ist sie ausgeschaltet, zeigt der Tabellenbereich _AI Table will display here. Enable in …_.
+* Ein Administrator hat **AI Table extraction** eingeschaltet (Settings → Document Processing → Classification and Extraction, siehe [Einstellungen für Administratoren](./#settings-for-admins)). Ist sie ausgeschaltet, zeigt der Tabellenbereich _AI Table will display here. Enable in …_.
 * Prüfen Sie lesbaren Text beziehungsweise die gewählte Vision-Eingabe. Gespeicherte klassische Tabellenregeln können weiterhin den wirksamen Tabellenpfad bestimmen; prüfen Sie [welcher Extraktionspfad tatsächlich verwendet wurde](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md).
 * Einzelne Spalten haben ihre eigene dreistufige Use AI-Auswahl. Prüfen Sie neben dieser Auswahl auch die wirksame Quelle und die Lieferantenregeln; das Aktivieren von Structured Output ersetzt nicht jede regelbasierte Tabelle.
 

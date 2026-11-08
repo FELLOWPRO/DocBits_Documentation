@@ -40,10 +40,10 @@ Diese Bestellungen wurden eigens in **Dev** angelegt. Lieferant, Artikel und Rec
 ## Weiterführende Seiten
 
 * [Touchless Intelligence](./)
-* [Kennzahlen und Berechnung](../../touchless-metrics.md)
+* [Kennzahlen und Berechnung](touchless-metrics.md)
 * [Dashboard bedienen](touchless-dashboard.md)
-* [Lieferantendiagnose und Fehlermuster](../../touchless-supplier-diagnosis.md)
-* [Bestellabgleich-Diagnose](../../touchless-po-matching-diagnosis.md)
+* [Lieferantendiagnose und Fehlermuster](touchless-supplier-diagnosis.md)
+* [Bestellabgleich-Diagnose](touchless-po-matching-diagnosis.md)
 * [Dokumentverlauf](touchless-document-trace.md)
 * [Änderungsvorschläge und Berichte](touchless-change-proposals.md)
 * [Touchless mit MCP erklären und verbessern](touchless-mcp.md)

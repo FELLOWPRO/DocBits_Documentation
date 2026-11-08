@@ -37,8 +37,8 @@ Die zugehörigen Werkzeugaufrufe und die Einordnung menschlicher Aktionen sind u
 ## Weiterführende Seiten
 
 * [Touchless Intelligence](./)
-* [Lieferantendiagnose und Fehlermuster](../../touchless-supplier-diagnosis.md)
-* [Bestellabgleich-Diagnose](../../touchless-po-matching-diagnosis.md)
+* [Lieferantendiagnose und Fehlermuster](touchless-supplier-diagnosis.md)
+* [Bestellabgleich-Diagnose](touchless-po-matching-diagnosis.md)
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 

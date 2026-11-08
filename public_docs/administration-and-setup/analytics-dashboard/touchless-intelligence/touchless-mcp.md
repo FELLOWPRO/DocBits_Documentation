@@ -99,11 +99,11 @@ Der Berichtsscreenshot zeigt Empfehlungen und geschätzte Wirkung, nicht die Anw
 ## Weiterführende Seiten
 
 * [Touchless Intelligence](./)
-* [Kennzahlen und Berechnung](../../touchless-metrics.md)
+* [Kennzahlen und Berechnung](touchless-metrics.md)
 * [Dashboard bedienen](touchless-dashboard.md)
 * [Praxisbeispiele: Preis und Menge](touchless-examples.md)
-* [Lieferantendiagnose und Fehlermuster](../../touchless-supplier-diagnosis.md)
-* [Bestellabgleich-Diagnose](../../touchless-po-matching-diagnosis.md)
+* [Lieferantendiagnose und Fehlermuster](touchless-supplier-diagnosis.md)
+* [Bestellabgleich-Diagnose](touchless-po-matching-diagnosis.md)
 * [Dokumentverlauf](touchless-document-trace.md)
 * [Änderungsvorschläge und Berichte](touchless-change-proposals.md)
 

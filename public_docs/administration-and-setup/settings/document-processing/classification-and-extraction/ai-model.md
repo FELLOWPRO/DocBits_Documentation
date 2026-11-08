@@ -1,71 +1,68 @@
-# Model sztucznej inteligencji
+# AI Model
 
 ## Przegląd
 
-Ustawienie **Model sztucznej inteligencji** pozwala zdefiniować, który model AI jest używany domyślnie do **ekstrakcji pól** i **ekstrakcji tabeli** podczas przetwarzania dokumentów.\
-W tej sekcji możesz przejrzeć koszt tokenów dla każdego modelu oraz sprawdzić, który model jest obecnie przypisany do każdego dostawcy.
+Ustawienie **AI Model** pozwala zdefiniować, który model AI jest domyślnie używany do **ekstrakcji pól** i **ekstrakcji tabel** podczas przetwarzania dokumentów.\
+Użyj bieżącego selektora modelu i tabeli preferencji szablonu, aby przejrzeć ustawienie organizacji i nadpisania. W kwestii kosztów zapoznaj się z informacjami dostępnymi w Twoim środowisku i warunkami subskrypcji.
 
 ## Jak uzyskać dostęp
 
-1.  Przejdź do **Ustawienia** → **Przetwarzanie dokumentów** → **Klasyfikacja i ekstrakcja**
+1.  Przejdź do **Settings** → **Document Types** → **Classification and Extraction** → **General**
 
-    <figure><img src="../../../../.gitbook/assets/dbdc864-settings-nav-pl-20261012.png" alt="Nawigacja Ustawień z wyróżnionymi pozycjami Przetwarzanie dokumentów oraz Klasyfikacja i ekstrakcja"><figcaption><p>Otwórz <strong>Ustawienia → Przetwarzanie dokumentów → Klasyfikacja i ekstrakcja</strong>.</p></figcaption></figure>
-2.  Przewiń w dół do sekcji **Ekstrakcja tabeli**
+    <figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/site-complete-global-ai-model-options-en.png" alt="Bieżące ustawienia ekstrakcji i menu AI Model: Full, Fast, Nexus, Nexus Flash, Auto i Auto Nexus. Prywatne wartości tabeli są ukryte; nie wybrano modelu ani nie usunięto preferencji."><figcaption><p>Bieżące ustawienia ekstrakcji i menu AI Model: Full, Fast, Nexus, Nexus Flash, Auto i Auto Nexus. Prywatne wartości tabeli są ukryte; nie wybrano modelu ani nie usunięto preferencji.</p></figcaption></figure>
+2.  Rozwiń **Extraction** i znajdź ustawienie **AI Model**.
 
-    <figure><img src="../../../../.gitbook/assets/dbdc864-ai-model-overview-pl-20261012.png" alt="Sekcja Ekstrakcja z kartą ekstrakcji tabeli i ustawieniem Model sztucznej inteligencji"><figcaption><p>Sekcja <strong>Ekstrakcja</strong> zawiera ustawienie <strong>Model sztucznej inteligencji</strong> oraz tabelę przypisania dostawców.</p></figcaption></figure>
 
-## Opcje Modelu sztucznej inteligencji
 
-DocBits oferuje sześć opcji modelu AI do ekstrakcji pól i tabel. Różnią się równowagą między **dokładnością ekstrakcji**, **szybkością przetwarzania** i **kosztem tokenów na dokument** — dzięki temu możesz dopasować opcję do rodzaju przetwarzanych dokumentów. Najedź kursorem na ikonę informacji obok ustawienia, aby zobaczyć koszt tokenów dla aktualnie wybranej opcji. Jeśli dla dostawcy nie ustawiono żadnego modelu, używany jest model **Fast**.
+## Opcje modelu AI
 
-* **Full** – Najbardziej dokładna opcja, o najwyższej dokładności ekstrakcji. Najlepsza do złożonych układów, skanów niskiej jakości lub dokumentów, w których precyzja jest najważniejsza. Jako najpotężniejsza opcja jest też najwolniejsza, przy **2 tokenach za dokument**.
-* **Fast** – Zrównoważona opcja łącząca wysoką dokładność z szybszym przetwarzaniem przy niższym koszcie. To opcja domyślna: dostawcy bez własnego ustawienia modelu AI używają **Fast**, przy **1 tokenie za dokument**.
-* **Nexus** – Opcjonalna opcja działająca na innej rodzinie modeli (Qwen 3.8 Max). Przydatna, gdy chcesz uzyskać drugą opinię dla dostawców, u których Fast i Full dają rozbieżne wyniki, albo gdy alternatywny model lepiej odczytuje dany układ, przy **1 tokenie za dokument**.
-* **Nexus Flash** – Szybszy poziom z rodziny Nexus (GLM-5.3 Flash). Przetwarza dokumenty szybciej niż Nexus przy tym samym koszcie tokenów, przy **1 tokenie za dokument**.
-* **Auto** – To nie jest osobny model: dla każdego dokumentu DocBits decyduje, czy wystarczy Fast, czy potrzebny jest Full, dzięki czemu złożone dokumenty automatycznie otrzymują silniejszy model, przy **1 tokenie za dokument**.
-* **Auto Nexus** – Jak Auto, ale ograniczone do rodziny modeli Nexus (Nexus Flash i Nexus). Dokumenty pozostają całkowicie poza standardową rodziną modeli, przy **1 tokenie za dokument**.
+Bieżące menu oferuje **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** i **Auto Nexus**. To nazwy poziomów produktu. Dostępne opcje, modele bazowe i koszty tokenów mogą się zmieniać; sprawdzaj informacje w bieżącym środowisku i warunki subskrypcji, zamiast opierać się na historycznej nazwie modelu dostawcy lub stałej cenie.
 
-| Opcja | Najlepsza do | Dokładność | Szybkość | Koszt tokenów |
-|-------|--------------|------------|----------|---------------|
-| **Full** | Złożone układy, słabe skany, wysoka precyzja | Najwyższa | Najwolniejsza | 2 / dokument |
-| **Fast** | Codzienne dokumenty (domyślnie, gdy nic nie ustawiono) | Wysoka | Szybka | 1 / dokument |
-| **Nexus** | Dostawcy, u których alternatywna rodzina modeli działa lepiej (opcjonalnie) | Wysoka | Szybka | 1 / dokument |
-| **Nexus Flash** | Jakość Nexus z szybszym przetwarzaniem | Wysoka | Szybsza | 1 / dokument |
-| **Auto** | Zróżnicowana jakość dokumentów bez ręcznego dostrajania | Za dokument | Za dokument | 1 / dokument |
-| **Auto Nexus** | Decyzje Auto ograniczone do rodziny Nexus | Za dokument | Za dokument | 1 / dokument |
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-3-six-model-options-en-20261031.png" alt="Bieżące menu rozwijane AI Model z opcjami Full, Fast, Nexus, Nexus Flash, Auto i Auto Nexus"><figcaption><p>Szczegół sześciu poziomów ekstrakcji w bieżącym menu środowiska deweloperskiego. Otwarcie i zamknięcie menu pozostawiło istniejący wybór bez zmian.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/dbdc864-ai-model-options-pl-20261012.png" alt="Rozwinięta lista Model sztucznej inteligencji z opcjami Full, Fast, Nexus, Nexus Flash, Auto i Auto Nexus"><figcaption><p>Lista <strong>Model sztucznej inteligencji</strong> z sześcioma dostępnymi opcjami.</p></figcaption></figure>
+| Opcja | Co sprawdzić na reprezentatywnych dokumentach |
+| --- | --- |
+| **Full** | Wyniki ekstrakcji dla złożonych układów, czas przetwarzania i koszt. |
+| **Fast** | Wyniki i czas przetwarzania dla codziennych dokumentów; nazwa nie jest gwarancją dla każdego dokumentu. |
+| **Nexus** | Porównaj tę alternatywną opcję na tej samej próbce dokumentów. |
+| **Nexus Flash** | Sprawdź zarówno jakość, jak i opóźnienie na rzeczywistych układach. |
+| **Auto** | Sprawdź wyniki i koszty automatycznego wyboru. |
+| **Auto Nexus** | Sprawdź wyniki i koszty opcji automatycznego wyboru Nexus. |
 
-## Tabela przypisania Modelu sztucznej inteligencji
+Gdy bieżący szablon ekstrakcji nie ma nadpisania, jego ustawienie modelu przechodzi na konfigurację organizacji. Nieustawiona wartość specyficzna dla dostawcy nie oznacza powszechnie Fast. Porównaj stałą próbkę przed zmianą modelu; sama zmiana modelu nie gwarantuje walidacji pól, uzgodnienia z zamówieniem, zatwierdzenia ani udanego eksportu.
 
-Możesz również skonfigurować specyficzne dla dostawcy **modele AI** bezpośrednio na ekranie **Walidacja**, co pozwala dostosować dokładność ekstrakcji dla poszczególnych dostawców.\
+
+
+## Tabela przypisań modeli AI
+
+**Ekran walidacji** udostępnia punkt wejścia dla modelu specyficznego dla dostawcy. Jego nadpisanie jest zapisywane dla organizacji i bieżącego szablonu ekstrakcji (`tfidf_id`); nie aktualizuje bezwarunkowo każdego szablonu ani dokumentu historycznego należącego do tego samego dostawcy.\
 \
 Więcej informacji znajdziesz w odpowiedniej dokumentacji [tutaj](../../../../end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md).
 
-Tabela przypisania wyświetla ustawienia modelu AI dla każdego dostawcy i zawiera następujące szczegóły:
+Tabela przypisań podsumowuje preferencje ekstrakcji związane z szablonem. Kolumny różnią się w zależności od wersji produktu; używaj bieżących nagłówków, aby sprawdzić powiązanie z dostawcą, model, opcje ekstrakcji i informacje audytowe:
 
-* **ID Dostawcy** – Unikalny identyfikator dostawcy
-* **Model Sztucznej Inteligencji** – Poziom modelu AI obecnie przypisany do dostawcy
-* **Użyj Ekstrakcji Strukturalnej (AI)** – Czy dla tego dostawcy włączono ekstrakcję strukturalną
-* **E-Textu** – Wskazuje, czy funkcja E-Text jest włączona
-* **Stworzone Przez / Zmodyfikowane Przez / Stworzony / Zmodyfikowany** – Kto ustawił wpis i kiedy
-* **Actions** – Zawiera opcję usunięcia wpisu
+* **Supplier ID** – Unikalny identyfikator dostawcy
+* **AI Model** – Poziom skonfigurowany dla tego wpisu szablonu
+* **Use Structured Extraction (AI)**, jeśli występuje – Preferencja ekstrakcji strukturalnej tego wpisu
+* **E-Text** – Wskazuje, czy funkcja E-Text jest włączona
+* **Created By / Modified By / Created On / Modified On** – Kto ustawił wpis i kiedy
+* **Action** – Zawiera opcję usunięcia wpisu
 
-<figure><img src="../../../../.gitbook/assets/dbdc864-ai-model-table-pl-20261012.png" alt="Tabela przypisania Modelu sztucznej inteligencji z kolumnami ID Dostawcy, Model Sztucznej Inteligencji, Użyj Ekstrakcji Strukturalnej (AI), E-Textu oraz kolumnami audytu"><figcaption><p>Tabela przypisania pokazuje etykietę poziomu dla każdego dostawcy, nigdy surowy identyfikator modelu.</p></figcaption></figure>
 
-### Usuń wpis – Zresetuj ustawienia specyficzne dla dostawcy
 
-Aby zresetować ustawienie modelu AI dostawcy do domyślnych:
+### Usuwanie wpisu — usuwanie nadpisań szablonu
 
-1.  Kliknij trzy kropki w kolumnie **Actions** obok wpisu dostawcy i wybierz **Usuwać**.
+Zanim administrator usunie wpis, musi ustalić jego szablon ekstrakcji i wszystkie zawarte w nim preferencje. Usunięcie może usunąć kilka nadpisań szablonu, nie tylko ustawienie modelu:
 
-    <figure><img src="../../../../.gitbook/assets/dbdc864-ai-model-delete-pl-20261012.png" alt="Menu akcji wiersza z opcją Usuwać w tabeli Modelu sztucznej inteligencji"><figcaption><p>Otwórz menu akcji wiersza i wybierz <strong>Usuwać</strong>.</p></figcaption></figure>
+1.  Kliknij trzy kropki w kolumnie **Action** obok wpisu dostawcy i wybierz **Delete**.
+
+
 2.  Pojawi się okno potwierdzenia — potwierdź, że chcesz usunąć wpis.
 
-    <figure><img src="../../../../.gitbook/assets/dbdc864-ai-model-delete-confirm-pl-20261012.png" alt="Okno potwierdzenia z pytaniem, czy usunąć wpis"><figcaption><p>Potwierdź usunięcie w oknie dialogowym.</p></figcaption></figure>
 
-Po usunięciu dostawca wróci do korzystania z domyślnego **modelu AI** do **ekstrakcji pól** i **ekstrakcji tabeli**.
+
+Po usunięciu dalsze przetwarzanie odczytuje obowiązującą konfigurację organizacji i wartości zapasowe dla tego szablonu. Inne szablony powiązane z tym samym dostawcą mogą zachować własne nadpisania. Usunięcie nie przetwarza automatycznie dokumentów historycznych. W tym przewodniku nie usunięto żadnego wpisu ani nie wykonano wynikającej z tego ekstrakcji.
 
 ## Ustawienia i nadpisania
 
-Structured Output ma oddzielne ustawienie organizacji/szablonu, niezależne od poziomu modelu AI. Zmień je w Więcej opcji dokumentu; potwierdzenie zapisuje nadpisanie i uruchamia ten dokument ponownie. Wskaźniki na liście są tylko do odczytu. Usunięcie wpisu może usunąć kilka nadpisań jednocześnie. [Structured Output dla tabel](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
+Structured Output ma osobne ustawienie organizacji/szablonu, niezależne od poziomu modelu. Zmień je w More options na dokumencie; potwierdzenie zapisuje nadpisanie i ponownie uruchamia ten dokument. Wskaźniki na liście ustawień są tylko do odczytu. Usunięcie wpisu preferencji może usunąć kilka nadpisań jednocześnie. [Structured Output dla tabel](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

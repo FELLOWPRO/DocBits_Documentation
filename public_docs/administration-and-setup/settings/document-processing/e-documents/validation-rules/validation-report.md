@@ -4,19 +4,19 @@
 
 Gdy DocBits odrzuca e-fakturę, możesz sprawdzić przyczynę. **Raport walidacyjny** wymienia każdy wynik prostym językiem, mówi, co poprawić, i pokazuje następny krok. Otwierasz go z dokumentu, a nie z ustawień. Ekran, na którym go znajdziesz, opisuje strona [Ekran błędu odrzuconej e-faktury](validation-error-screen.md).
 
-Ta strona jest dla osób, które przetwarzają faktury. Administratorzy ustawiają reguły na stronie [Walidacja e-faktury](validation-rules.md) i wybierają dla każdego typu dokumentu, czy nieudana kontrola blokuje fakturę, zobacz [Walidacja dla każdego typu dokumentu](validation-per-document-type.md).
+Ta strona jest dla osób, które przetwarzają faktury. Administratorzy ustawiają reguły na stronie [Walidacja e-faktury](README.md) i wybierają dla każdego typu dokumentu, czy nieudana kontrola blokuje fakturę, zobacz [Walidacja dla każdego typu dokumentu](validation-per-document-type.md).
 
 ## Kiedy dokument otrzymuje status Błąd
 
 Jeśli walidacja jest **włączona** i **blokująca** dla danego typu dokumentu, faktura z błędem blokującym otrzymuje status **Błąd**. Otwórz dokument z panelu. Widok błędu pokazuje XML po lewej stronie, a powód po prawej.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-pl-20261104-v2.png" alt="Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-pl-20261104-v2.png" alt="Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
 
 Karta po prawej wskazuje warstwę, która odrzuciła fakturę (na przykład **L3 · Zasady biznesowe**), kod reguły (na przykład `BR-CO-26`), krótkie wyjaśnienie i **Następny krok**. Wybierz **Wyświetl szczegóły walidacji**, aby otworzyć pełny raport.
 
 ## Czytanie raportu
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-top-pl-20261104-v2.png" alt="Raport fikcyjnej faktury z danymi pliku i wynikiem."><figcaption><p>Raport fikcyjnej faktury z danymi pliku i wynikiem.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-pl-20261104-v2.png" alt="Raport fikcyjnej faktury z danymi pliku i wynikiem."><figcaption><p>Raport fikcyjnej faktury z danymi pliku i wynikiem.</p></figcaption></figure>
 
 Raport zaczyna się od informacji o pliku:
 
@@ -49,7 +49,7 @@ Tabela **Wyniki według poziomu** pokazuje, ile błędów, ostrzeżeń i informa
 
 ## Wyniki
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-findings-pl-20261104-v2.png" alt="Fragment raportu: brak identyfikatora sprzedawcy, reguła BR-CO-26."><figcaption><p>Fragment raportu: brak identyfikatora sprzedawcy, reguła BR-CO-26.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-pl-20261104-v2.png" alt="Fragment raportu: brak identyfikatora sprzedawcy, reguła BR-CO-26."><figcaption><p>Fragment raportu: brak identyfikatora sprzedawcy, reguła BR-CO-26.</p></figcaption></figure>
 
 Każdy wynik to jeden wiersz:
 
@@ -67,6 +67,6 @@ DocBits ma teksty prostym językiem dla najczęstszych reguł. Dla reguły bez t
 
 ## Powiązane strony
 
-* [Walidacja e-faktury](validation-rules.md): akceptowane wersje, profile i poziom ważności każdej reguły.
+* [Walidacja e-faktury](README.md): akceptowane wersje, profile i poziom ważności każdej reguły.
 * [Walidacja dla każdego typu dokumentu](validation-per-document-type.md): włączanie walidacji i ustawianie blokowania.
-* [Routing powiadomień](notification-routing.md): kto obsługuje który wynik.
+* [Routing powiadomień](../notification-routing.md): kto obsługuje który wynik.

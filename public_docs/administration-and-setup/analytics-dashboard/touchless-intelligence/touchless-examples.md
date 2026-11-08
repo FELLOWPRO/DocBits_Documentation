@@ -40,10 +40,10 @@ Ces PO ont été créés spécialement en **Dev**. Le fournisseur, l'article et 
 ## Pages associées
 
 * [Touchless Intelligence](./)
-* [Indicateurs et calcul](../../touchless-metrics.md)
+* [Indicateurs et calcul](touchless-metrics.md)
 * [Utiliser le tableau de bord](touchless-dashboard.md)
-* [Diagnostic fournisseur et clusters de problèmes](../../touchless-supplier-diagnosis.md)
-* [Diagnostic du rapprochement avec le BC](../../touchless-po-matching-diagnosis.md)
+* [Diagnostic fournisseur et clusters de problèmes](touchless-supplier-diagnosis.md)
+* [Diagnostic du rapprochement avec le BC](touchless-po-matching-diagnosis.md)
 * [Trace du document](touchless-document-trace.md)
 * [Propositions de modification et rapports](touchless-change-proposals.md)
 * [Expliquer et améliorer Touchless avec MCP](touchless-mcp.md)

@@ -99,11 +99,11 @@ La capture du rapport montre des recommandations et un impact estimé, pas une a
 ## Pages associées
 
 * [Touchless Intelligence](./)
-* [Indicateurs et calcul](../../touchless-metrics.md)
+* [Indicateurs et calcul](touchless-metrics.md)
 * [Utiliser le tableau de bord](touchless-dashboard.md)
 * [Exemples pratiques : prix et quantité](touchless-examples.md)
-* [Diagnostic fournisseur et clusters de problèmes](../../touchless-supplier-diagnosis.md)
-* [Diagnostic du rapprochement avec le BC](../../touchless-po-matching-diagnosis.md)
+* [Diagnostic fournisseur et clusters de problèmes](touchless-supplier-diagnosis.md)
+* [Diagnostic du rapprochement avec le BC](touchless-po-matching-diagnosis.md)
 * [Trace du document](touchless-document-trace.md)
 * [Propositions de modification et rapports](touchless-change-proposals.md)
 

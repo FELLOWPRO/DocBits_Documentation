@@ -6,7 +6,7 @@ Touchless Intelligence répond à deux questions distinctes : **DocBits a-t-il c
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/fr.mp4" %}
 
-Cette version de contrôle de 5:41 montre un rapport renseigné : filtres, indicateurs et calcul, tendances, premiers blocages, preuves enregistrées, historique du document, comparaison des exécutions, règles apprises, améliorations et historique, rapports de conseil et résultats MCP réels.
+Cette version de contrôle de 5:45 montre un rapport renseigné : filtres, indicateurs et calcul, tendances, premiers blocages, preuves enregistrées, historique du document, comparaison des exécutions, règles apprises, améliorations et historique, rapports de conseil et résultats MCP réels.
 
 [Ouvrir la vidéo avec des sous-titres français et 16 liens de chapitres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/fr.html). L'écoute humaine de cette nouvelle version reste à faire.
 
@@ -18,11 +18,11 @@ Ces cas de formation expliquent les fonctions du rapport. Une recommandation ou 
 
 | Guide | Contenu |
 | --- | --- |
-| [Indicateurs et calcul](../../touchless-metrics.md) | Catégories de résultats, numérateur et dénominateur, actions AP et calculs |
+| [Indicateurs et calcul](touchless-metrics.md) | Catégories de résultats, numérateur et dénominateur, actions AP et calculs |
 | [Utiliser le tableau de bord](touchless-dashboard.md) | Filtres, cartes d'indicateurs, tendances, premiers blocages et commandes |
 | [Exemples pratiques : prix et quantité](touchless-examples.md) | Factures fictives et vues Dev réelles de PO avec écarts de prix et de quantité |
-| [Diagnostic fournisseur et clusters de problèmes](../../touchless-supplier-diagnosis.md) | Prioriser les fournisseurs et les causes récurrentes |
-| [Diagnostic du rapprochement avec le BC](../../touchless-po-matching-diagnosis.md) | Comprendre les règles actives, les tolérances et le déroulement de la décision |
+| [Diagnostic fournisseur et clusters de problèmes](touchless-supplier-diagnosis.md) | Prioriser les fournisseurs et les causes récurrentes |
+| [Diagnostic du rapprochement avec le BC](touchless-po-matching-diagnosis.md) | Comprendre les règles actives, les tolérances et le déroulement de la décision |
 | [Trace du document](touchless-document-trace.md) | Inspecter les valeurs d'origine, les exécutions, les blocages et les interventions |
 | [Propositions de modification et rapports](touchless-change-proposals.md) | Distinguer aperçu, application, mesure de l'effet et annulation |
 | [Expliquer et améliorer Touchless avec MCP](touchless-mcp.md) | Expliquer, diagnostiquer et apporter des améliorations contrôlées via MCP |
@@ -46,7 +46,7 @@ L'API revérifie les valeurs stockées et utilise la valeur par défaut pour une
 
 ## Accès
 
-Cette zone appartient au [Tableau de bord analytique](../). Les administrateurs y ont accès ; les autres utilisateurs ont besoin de l'attribution de rôle correspondante. L'analyse IA, les modifications prises en charge et les rapports de conseil peuvent exiger des droits administrateur.
+Cette zone appartient au [Tableau de bord analytique](..). Les administrateurs y ont accès ; les autres utilisateurs ont besoin de l'attribution de rôle correspondante. L'analyse IA, les modifications prises en charge et les rapports de conseil peuvent exiger des droits administrateur.
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 <!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

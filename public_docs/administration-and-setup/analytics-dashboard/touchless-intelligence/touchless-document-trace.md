@@ -62,7 +62,7 @@ Limites des preuves. Ce cas ne démontre ni approbation métier, ni export réus
 4. Consignez la différence confirmée : **facture vs extraction**, **extraction correcte vs données source importées**, ou **Infor vs sa copie importée**. Laissez la cause ouverte si les preuves nécessaires ne sont pas enregistrées.
 5. Consultez l'historique des exécutions pour une correction manuelle, une approbation ou une relance, ainsi que le résultat final. Le résultat et la cause répondent à des questions différentes.
 
-**Exemple.** La facture et la valeur extraite indiquent toutes deux 10,00 €, alors que la commande importée indique 9,00 €. Cela établit un écart avec les données de commande, pas une erreur d'extraction. Confirmez quel prix a été convenu et si c'est Infor lui-même ou sa copie importée qui doit être corrigé. Si AP relance manuellement la facture et qu'elle se termine ensuite correctement, elle est AP assisted malgré l'extraction correcte. Voir les [exemples pratiques et le calcul](./#example-100-correct-extraction-80-ap-touchless).
+**Exemple.** La facture et la valeur extraite indiquent toutes deux 10,00 €, alors que la commande importée indique 9,00 €. Cela établit un écart avec les données de commande, pas une erreur d'extraction. Confirmez quel prix a été convenu et si c'est Infor lui-même ou sa copie importée qui doit être corrigé. Si AP relance manuellement la facture et qu'elle se termine ensuite correctement, elle est AP assisted malgré l'extraction correcte. Voir les [exemples pratiques et le calcul](.#example-100-correct-extraction-80-ap-touchless).
 
 **Champs manquants répétés.** Plusieurs documents qui s'arrêtent à Field Validation établissent un blocage répété. Les causes possibles incluent l'extraction, une valeur de facture réellement absente, une règle de validation ou une valeur par défaut configurée manquante. Comparez les preuves avant de choisir une correction ; la répétition seule ne prouve aucune cause en particulier.
 
@@ -80,8 +80,8 @@ Voir [Touchless avec MCP](touchless-mcp.md) pour les appels d'outils corresponda
 ## Pages associées
 
 * [Touchless Intelligence](./)
-* [Diagnostic fournisseur et clusters de problèmes](../../touchless-supplier-diagnosis.md)
-* [Diagnostic du rapprochement avec le BC](../../touchless-po-matching-diagnosis.md)
+* [Diagnostic fournisseur et clusters de problèmes](touchless-supplier-diagnosis.md)
+* [Diagnostic du rapprochement avec le BC](touchless-po-matching-diagnosis.md)
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 

@@ -1,6 +1,6 @@
 # AI Table
 
-Explore the revolutionary capabilities of **DocBits**, a state-of-the-art document handling tool that simplifies the complexities of table extraction, Purchase Order (PO) matching, and cost invoice management.
+DocBits supports table extraction, purchase order (PO) matching, and cost invoice processing.
 
 {% embed url="https://youtu.be/89uEFyKKLCk" %}
 

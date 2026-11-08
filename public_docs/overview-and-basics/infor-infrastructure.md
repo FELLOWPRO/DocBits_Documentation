@@ -16,7 +16,7 @@ Document handling is a breeze with Docbits. All uploaded documents are securely 
 
 ### Traffic Security
 
-We only allow HTTPS-secured connections for communicating with our servers. This ensures that all data transferred is encrypted, keeping your sensitive information safe and sound. It’s like having a security guard for your data, 24/7.
+Connections to our servers use HTTPS only. Data is encrypted in transit.
 
 ### Infor Cloud
 

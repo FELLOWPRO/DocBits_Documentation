@@ -6,7 +6,7 @@
 
 ## **Purpose**
 
-This workflow card is designed to verify that confirmed delivery dates on invoices or shipping documents align with the accepted delivery dates defined in a master data lookup table. By comparing these dates, it helps ensure compliance with agreed delivery schedules and enhances supply chain reliability.
+This card compares confirmed delivery dates on invoices or shipping documents with the accepted delivery dates in a master data lookup table.
 
 ## **Components of the Card**
 
@@ -31,7 +31,3 @@ This workflow card is designed to verify that confirmed delivery dates on invoic
 ## **Example Scenario**
 
 * An invoice lists a confirmed delivery date of June 10th, while the master data lookup table specifies an accepted delivery date of June 15th. Using the **Is Not** operator, the card flags the discrepancy for review, allowing the logistics team to investigate the cause and adjust schedules accordingly.
-
-## **Conclusion**
-
-The **"Confirmed Delivery Date vs. Accepted Delivery Date"** workflow card helps organizations maintain adherence to agreed-upon delivery schedules by automating the comparison of confirmed and accepted delivery dates. This proactive approach to delivery management enhances operational efficiency, reduces delays, and fosters better collaboration across the supply chain.

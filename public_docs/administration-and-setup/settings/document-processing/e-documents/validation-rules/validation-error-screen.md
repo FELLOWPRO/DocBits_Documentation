@@ -12,7 +12,7 @@ Cuando carga una factura electrónica incorrecta, DocBits no la pierde. El docum
 
 Un proveedor envía un archivo XML en el que una etiqueta de cierre no coincide con su etiqueta de apertura. El archivo no se puede leer, por lo que DocBits se detiene en la primera comprobación, **L1 · Bien formado**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-xml-malformed-es-20261104-v2.png" alt="Pantalla de error de un XML ficticio con una etiqueta de cierre dañada intencionadamente. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar."><figcaption><p>Pantalla de error de un XML ficticio con una etiqueta de cierre dañada intencionadamente. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-es-20261104-v2.png" alt="Pantalla de error de un XML ficticio con una etiqueta de cierre dañada intencionadamente. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar."><figcaption><p>Pantalla de error de un XML ficticio con una etiqueta de cierre dañada intencionadamente. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar.</p></figcaption></figure>
 
 La pantalla tiene dos lados:
 
@@ -21,7 +21,7 @@ La pantalla tiene dos lados:
 
 Seleccione **Ver detalles de validación** para abrir el [informe de validación](validation-report.md) completo.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-xml-malformed-es-20261104-v2.png" alt="Informe del archivo XML ficticio dañado."><figcaption><p>Informe del archivo XML ficticio dañado.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-es-20261104-v2.png" alt="Informe del archivo XML ficticio dañado."><figcaption><p>Informe del archivo XML ficticio dañado.</p></figcaption></figure>
 
 El informe indica la posición exacta (la línea y la columna figuran en el informe) y el mensaje técnico del analizador XML. Seleccione **Mostrar en XML** para saltar a esa línea. La indicación **Cómo solucionarlo** le dice que solicite al remitente un archivo corregido.
 
@@ -29,7 +29,7 @@ El informe indica la posición exacta (la línea y la columna figuran en el info
 
 El XML es correcto, pero falta un campo obligatorio. Por ejemplo, no se puede identificar al vendedor porque no hay identificador del vendedor, identificador de registro ni identificador de IVA (regla `BR-CO-26`).
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-es-20261104-v2.png" alt="Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar."><figcaption><p>Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-es-20261104-v2.png" alt="Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar."><figcaption><p>Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar.</p></figcaption></figure>
 
 La tarjeta muestra el primer resultado bloqueante. El informe completo también incluye el código `BR-CO-26` y los demás resultados de la factura.
 

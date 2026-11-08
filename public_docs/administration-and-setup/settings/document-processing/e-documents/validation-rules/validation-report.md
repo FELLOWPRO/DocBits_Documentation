@@ -4,19 +4,19 @@
 
 Cuando DocBits rechaza una factura electrónica, puede ver exactamente el motivo. El **informe de validación** enumera cada hallazgo en lenguaje claro, indica qué corregir y muestra el siguiente paso. Se abre desde el documento, no desde los ajustes. La pantalla donde lo encuentra se describe en [La pantalla de error de una factura electrónica rechazada](validation-error-screen.md).
 
-Esta página es para las personas que procesan facturas. Los administradores configuran las reglas en la página [Validación de facturas electrónicas](validation-rules.md) y eligen por tipo de documento si una comprobación fallida bloquea la factura; consulte [Validación para cada tipo de documento](validation-per-document-type.md).
+Esta página es para las personas que procesan facturas. Los administradores configuran las reglas en la página [Validación de facturas electrónicas](README.md) y eligen por tipo de documento si una comprobación fallida bloquea la factura; consulte [Validación para cada tipo de documento](validation-per-document-type.md).
 
 ## Cuando un documento recibe un error
 
 Si la validación está **activada** y **bloquea** para el tipo de documento, una factura con un hallazgo bloqueante recibe el estado **Error**. Abra el documento desde el panel. La vista de error muestra el XML a la izquierda y el motivo a la derecha.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-es-20261104-v2.png" alt="Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar."><figcaption><p>Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-es-20261104-v2.png" alt="Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar."><figcaption><p>Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar.</p></figcaption></figure>
 
 La tarjeta de la derecha indica la capa que rechazó la factura (por ejemplo, **L3 · Reglas de negocio**), el código de la regla (por ejemplo, `BR-CO-26`), una breve explicación y un **Siguiente paso**. Seleccione **Ver detalles de validación** para abrir el informe completo.
 
 ## Leer el informe
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-top-es-20261104-v2.png" alt="Informe de la factura ficticia con los datos del archivo y el resultado."><figcaption><p>Informe de la factura ficticia con los datos del archivo y el resultado.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-es-20261104-v2.png" alt="Informe de la factura ficticia con los datos del archivo y el resultado."><figcaption><p>Informe de la factura ficticia con los datos del archivo y el resultado.</p></figcaption></figure>
 
 El informe empieza con los datos del archivo:
 
@@ -49,7 +49,7 @@ La tabla **Resultado por nivel** muestra cuántos errores, advertencias y mensaj
 
 ## Los hallazgos
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-findings-es-20261104-v2.png" alt="Extracto del informe: falta el identificador del vendedor, regla BR-CO-26."><figcaption><p>Extracto del informe: falta el identificador del vendedor, regla BR-CO-26.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-es-20261104-v2.png" alt="Extracto del informe: falta el identificador del vendedor, regla BR-CO-26."><figcaption><p>Extracto del informe: falta el identificador del vendedor, regla BR-CO-26.</p></figcaption></figure>
 
 Cada hallazgo es una fila en la sección **Resultados**:
 
@@ -67,6 +67,6 @@ DocBits tiene textos en lenguaje claro para las reglas más habituales. Para una
 
 ## Páginas relacionadas
 
-* [Validación de facturas electrónicas](validation-rules.md): versiones aceptadas, perfiles y la gravedad de cada regla.
+* [Validación de facturas electrónicas](README.md): versiones aceptadas, perfiles y la gravedad de cada regla.
 * [Validación para cada tipo de documento](validation-per-document-type.md): active la validación y defina el bloqueo.
-* [Enrutamiento de notificaciones](notification-routing.md): quién gestiona cada hallazgo.
+* [Enrutamiento de notificaciones](../notification-routing.md): quién gestiona cada hallazgo.

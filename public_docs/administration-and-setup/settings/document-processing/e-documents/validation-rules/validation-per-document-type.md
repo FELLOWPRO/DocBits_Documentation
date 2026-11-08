@@ -8,7 +8,7 @@ Los administradores deciden para cada tipo de documento si DocBits valida las fa
 
 Vaya a **Ajustes → Documentos electrónicos → Validación de facturas electrónicas**. La pestaña **Normas y políticas** empieza con la tabla **Validación para cada tipo de documento**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-es-20261104.png" alt="Validación y bloqueo por tipo de documento. Se han ocultado los nombres configurados. Ejemplo de Dev."><figcaption><p>Validación y bloqueo por tipo de documento. Se han ocultado los nombres configurados. Ejemplo de Dev.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-validation-settings-es-20261104.png" alt="Validación y bloqueo por tipo de documento. Se han ocultado los nombres configurados. Ejemplo de Dev."><figcaption><p>Validación y bloqueo por tipo de documento. Se han ocultado los nombres configurados. Ejemplo de Dev.</p></figcaption></figure>
 
 | Interruptor | Qué hace |
 | --- | --- |
@@ -22,7 +22,7 @@ Si un tipo de documento tiene excepciones por subtipo, la tabla muestra una nota
 1. Seleccione el interruptor que quiere cambiar.
 2. DocBits muestra **Confirmar el cambio de validación** con el tipo de documento y el cambio, por ejemplo *QUOTE: activar la validación*.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-confirm-es-20261104.png" alt="Confirmación de un cambio de configuración. Se canceló el cambio para esta captura."><figcaption><p>Confirmación de un cambio de configuración. Se canceló el cambio para esta captura.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-validation-confirm-es-20261104.png" alt="Confirmación de un cambio de configuración. Se canceló el cambio para esta captura."><figcaption><p>Confirmación de un cambio de configuración. Se canceló el cambio para esta captura.</p></figcaption></figure>
 
 3. Lea la nota: **Los informes ya guardados no se modifican.** El cambio solo se aplica a las nuevas comprobaciones, también cuando se reinicia el procesamiento de un documento.
 4. Seleccione **Confirmar cambio**, o **Cancelar** para mantener el ajuste anterior.
@@ -31,7 +31,7 @@ Si no tiene el permiso, DocBits muestra un mensaje indicando que se necesita un 
 
 ## Páginas relacionadas
 
-* [Validación de facturas electrónicas](validation-rules.md)
+* [Validación de facturas electrónicas](README.md)
 * [Registro de cambios](validation-change-log.md)
 * [Configuración de validación y versiones aceptadas](validation-setup.md)
 * [Informe de validación](validation-report.md)

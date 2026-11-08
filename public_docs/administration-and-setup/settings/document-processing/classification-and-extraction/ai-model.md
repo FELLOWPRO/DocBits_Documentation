@@ -1,43 +1,68 @@
-# Modelo de IA
+# AI Model
 
 ## Descripción general
 
-La configuración del modelo de IA define el modelo de la organización para la extracción de campos y tablas. La tabla de asignación permite revisar las preferencias asociadas a las plantillas. Consulte los costes en la información vigente de su entorno y en las condiciones contratadas.
+La opción **AI Model** permite definir qué modelo de IA se usa de forma predeterminada para la **extracción de campos** y la **extracción de tablas** durante el procesamiento de documentos.\
+Use el selector de modelo actual y la tabla de preferencias de plantilla para revisar la configuración de la organización y las anulaciones. Para los costes, consulte la información disponible en su entorno y las condiciones de su suscripción.
 
 ## Cómo acceder
 
-En **Ajustes**, abra **Clasificación y Extracción** desde **Tipos de Documento** y despliegue **Extracción**. El selector **Modelo de IA** se encuentra en esa sección.
+1.  Vaya a **Settings** → **Document Types** → **Classification and Extraction** → **General**
 
-## Opciones del Modelo de IA
+    <figure><img src="../../../../.gitbook/assets/site-complete-global-ai-model-options-es.png" alt="Ajustes de extracción actuales y menú AI Model: Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus. Los valores privados de la tabla están ocultos; no se ha seleccionado ningún modelo ni eliminado preferencias."><figcaption><p>Ajustes de extracción actuales y menú AI Model: Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus. Los valores privados de la tabla están ocultos; no se ha seleccionado ningún modelo ni eliminado preferencias.</p></figcaption></figure>
+2.  Despliegue **Extraction** y localice la opción **AI Model**.
 
-El menú ofrece **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** y **Auto Nexus**. Son nombres de niveles del producto. Las opciones disponibles, los modelos subyacentes y los costes pueden cambiar; no utilice nombres históricos de proveedores ni precios fijos como una promesa permanente.
 
-Compare los niveles con la misma muestra representativa y compruebe los valores extraídos, el tiempo de procesamiento y los costes. Full no garantiza siempre la mayor precisión, ni Fast o Nexus Flash garantizan siempre el menor tiempo. Auto y Auto Nexus requieren la misma comprobación de resultados y costes.
 
-Cuando no existe una preferencia para la plantilla de extracción actual, se utiliza la configuración de la organización. La ausencia de un modelo específico del proveedor no significa universalmente Fast. Un cambio de modelo no garantiza la validación, la conciliación de pedidos, la aprobación ni la exportación.
+## Opciones de modelo de IA
 
-<figure><img src="../../../../.gitbook/assets/site-complete-global-ai-model-options-es.png" alt="Configuración actual de Extracción con los seis niveles Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus. Los valores privados están ocultos; no se cambió ningún modelo."><figcaption><p>Configuración actual de Extracción con los seis niveles Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus. Los valores privados están ocultos; no se cambió ningún modelo.</p></figcaption></figure>
+El menú actual ofrece **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** y **Auto Nexus**. Son nombres de niveles de producto. Las opciones disponibles, los modelos subyacentes y los costes por token pueden cambiar; compruebe la información de su entorno actual y las condiciones de su suscripción en lugar de fiarse de un nombre histórico de modelo de proveedor o de un precio fijo.
 
-## Tabla de Asignación del Modelo de IA
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-3-six-model-options-en-20261031.png" alt="Menú desplegable AI Model actual con Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus"><figcaption><p>Detalle de los seis niveles de extracción en el menú actual del entorno de desarrollo. Abrir y cerrar el menú dejó la selección existente sin cambios.</p></figcaption></figure>
 
-La pantalla de validación ofrece un acceso a los modelos específicos del proveedor. La preferencia se guarda por organización y plantilla de extracción actual (`tfidf_id`); la asociación con un proveedor no actualiza automáticamente todas sus plantillas ni todos sus documentos históricos.
+| Opción | Qué comprobar con documentos representativos |
+| --- | --- |
+| **Full** | Resultados de extracción en diseños complejos, tiempo de procesamiento y coste. |
+| **Fast** | Resultados y tiempo de procesamiento en documentos del día a día; el nombre no es una garantía para todos los documentos. |
+| **Nexus** | Compare esta opción alternativa con la misma muestra de documentos. |
+| **Nexus Flash** | Compruebe tanto la calidad como la latencia en sus diseños reales. |
+| **Auto** | Compruebe los resultados y los costes de la selección automática. |
+| **Auto Nexus** | Compruebe los resultados y los costes de la opción de selección automática de Nexus. |
 
-Revise las columnas que realmente muestra su versión: asociación del proveedor, nivel del modelo, opciones de extracción e información de creación y modificación. Las columnas pueden variar.
+Cuando la plantilla de extracción actual no tiene anulación, su ajuste de modelo recurre a la configuración de la organización. Un valor específico de proveedor sin definir no significa de forma universal Fast. Compare una muestra fija antes de cambiar de modelo; un cambio de modelo por sí solo no garantiza la validación de campos, la conciliación con pedidos, la aprobación ni un export correcto.
 
-[aquí](../../../../end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
 
-<!-- Obsolete illustration retired: Historical navigation, table or deletion picture is not current read-only model-menu evidence -->
 
-### Eliminar una entrada: quitar preferencias de la plantilla
+## Tabla de asignación de modelos de IA
 
-Antes de eliminar una entrada, identifique la plantilla y todas sus preferencias. La eliminación puede quitar varias preferencias de esa plantilla, no solo el modelo de IA. Si un administrador necesita eliminarla, utilice la acción de eliminación de la fila correspondiente y revise la confirmación antes de continuar.
+La **pantalla de validación** ofrece un punto de entrada para el modelo específico del proveedor. Su anulación se guarda para la organización y la plantilla de extracción actual (`tfidf_id`); no actualiza sin condiciones todas las plantillas ni los documentos históricos del mismo proveedor.\
+\
+Para más información, consulte la documentación correspondiente [aquí](../../../../end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md).
 
-<!-- Obsolete illustration retired: Historical navigation, table or deletion picture is not current read-only model-menu evidence -->
+La tabla de asignación resume las preferencias de extracción relacionadas con la plantilla. Las columnas varían según la versión del producto; use los encabezados actuales para revisar la asociación de proveedor, el modelo, las opciones de extracción y la información de auditoría:
 
-<!-- Obsolete illustration retired: Historical navigation, table or deletion picture is not current read-only model-menu evidence -->
+* **Supplier ID** – El identificador único del proveedor
+* **AI Model** – El nivel configurado para esta entrada de plantilla
+* **Use Structured Extraction (AI)**, si aparece – La preferencia de extracción estructurada de esta entrada
+* **E-Text** – Indica si la función E-Text está activada
+* **Created By / Modified By / Created On / Modified On** – Quién estableció la entrada y cuándo
+* **Action** – Contiene la opción de eliminar la entrada
 
-En el procesamiento posterior se aplican la configuración de la organización y los valores de respaldo pertinentes para esa plantilla. Otras plantillas del mismo proveedor pueden conservar sus propias preferencias. La eliminación no vuelve a procesar automáticamente los documentos históricos. Durante esta revisión no se eliminó ninguna entrada ni se comprobó una extracción posterior a la eliminación.
 
-## Ajustes y configuraciones específicas
 
-Structured Output tiene su propio ajuste de organización y plantilla, independiente del nivel de modelo. Cámbielo en Más opciones del documento; confirmar guarda el valor y reinicia ese documento. Los indicadores de la lista son de solo lectura. Eliminar una entrada puede borrar varios valores específicos a la vez. [Structured Output para tablas](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
+### Eliminar entrada: quitar anulaciones de plantilla
+
+Antes de que un administrador elimine una entrada, debe identificar su plantilla de extracción y todas las preferencias que contiene. Eliminar puede quitar varias anulaciones de la plantilla, no solo el ajuste de modelo:
+
+1.  Haga clic en los tres puntos de la columna **Action**, junto a la entrada del proveedor, y seleccione **Delete**.
+
+
+2.  Aparecerá un diálogo de confirmación: confirme que desea eliminar la entrada.
+
+
+
+Tras la eliminación, el procesamiento posterior lee la configuración de organización aplicable y los valores de reserva de esta plantilla. Otras plantillas asociadas al mismo proveedor pueden conservar anulaciones independientes. La eliminación no reprocesa automáticamente documentos históricos. Para esta guía no se ha eliminado ninguna entrada ni se ha realizado la extracción resultante.
+
+## Ajustes y anulaciones
+
+Structured Output tiene un ajuste de organización/plantilla propio, separado del nivel de modelo. Cámbielo en More options del documento; la confirmación guarda la anulación y reinicia ese documento. Los indicadores de la lista de ajustes son de solo lectura. Eliminar una entrada de preferencia puede quitar varias anulaciones a la vez. [Structured Output para tablas](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

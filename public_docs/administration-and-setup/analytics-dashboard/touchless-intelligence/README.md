@@ -18,11 +18,11 @@ Estos casos didácticos explican funciones del informe. Una recomendación o una
 
 | Guía | Qué cubre |
 | --- | --- |
-| [Métricas y cálculo](../../touchless-metrics.md) | Categorías de resultado, numerador y denominador, acciones de AP y cálculos |
+| [Métricas y cálculo](touchless-metrics.md) | Categorías de resultado, numerador y denominador, acciones de AP y cálculos |
 | [Usar el panel](touchless-dashboard.md) | Filtros, tarjetas KPI, tendencias, primeros bloqueos y controles |
 | [Ejemplos: precio y cantidad](touchless-examples.md) | Facturas ficticias y vistas reales de pedidos en Dev con diferencias de precio y cantidad |
-| [Touchless Intelligence: Diagnóstico de proveedores y clústeres de problemas](../../touchless-supplier-diagnosis.md) | Priorizar proveedores y causas recurrentes |
-| [Touchless Intelligence: Diagnóstico de la coincidencia con la OC](../../touchless-po-matching-diagnosis.md) | Entender reglas activas, tolerancias y el flujo de decisión |
+| [Touchless Intelligence: Diagnóstico de proveedores y clústeres de problemas](touchless-supplier-diagnosis.md) | Priorizar proveedores y causas recurrentes |
+| [Touchless Intelligence: Diagnóstico de la coincidencia con la OC](touchless-po-matching-diagnosis.md) | Entender reglas activas, tolerancias y el flujo de decisión |
 | [Touchless Intelligence: Seguimiento del documento](touchless-document-trace.md) | Inspeccionar valores originales, ejecuciones, bloqueos e intervenciones |
 | [Touchless Intelligence: Propuestas de cambio e informes](touchless-change-proposals.md) | Distinguir vista previa, aplicación, medición del efecto y reversión |
 | [Explicar y mejorar Touchless con MCP](touchless-mcp.md) | Explicar, diagnosticar y aplicar mejoras controladas mediante MCP |
@@ -44,7 +44,7 @@ La API vuelve a comprobar los valores guardados y usa el valor predeterminado pa
 
 ## Acceso
 
-Este apartado pertenece al [Panel de Análisis](../). Los administradores tienen acceso; los demás usuarios necesitan la concesión de rol correspondiente. El análisis con IA, los cambios compatibles y los informes de consultoría pueden requerir derechos de administrador.
+Este apartado pertenece al [Panel de Análisis](..). Los administradores tienen acceso; los demás usuarios necesitan la concesión de rol correspondiente. El análisis con IA, los cambios compatibles y los informes de consultoría pueden requerir derechos de administrador.
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 <!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

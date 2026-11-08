@@ -37,8 +37,8 @@ Véase [Touchless con MCP](touchless-mcp.md) para conocer las llamadas de herram
 ## Páginas relacionadas
 
 * [Touchless Intelligence](./)
-* [Touchless Intelligence: Diagnóstico de proveedores y clústeres de problemas](../../touchless-supplier-diagnosis.md)
-* [Touchless Intelligence: Diagnóstico de la coincidencia con la OC](../../touchless-po-matching-diagnosis.md)
+* [Touchless Intelligence: Diagnóstico de proveedores y clústeres de problemas](touchless-supplier-diagnosis.md)
+* [Touchless Intelligence: Diagnóstico de la coincidencia con la OC](touchless-po-matching-diagnosis.md)
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 

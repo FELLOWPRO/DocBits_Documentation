@@ -62,7 +62,7 @@ Límites de las pruebas. Este caso no demuestra aprobación de negocio, exportac
 4. Registre la diferencia confirmada: **factura frente a extracción**, **extracción correcta frente a datos de origen importados**, o **Infor frente a su copia importada**. Deje la causa abierta si no se registran las pruebas necesarias.
 5. Revise el historial de ejecuciones en busca de una corrección manual, una aprobación o un reinicio, y el resultado final. El resultado y la causa responden a preguntas distintas.
 
-**Ejemplo.** La factura y el valor extraído indican 10,00 €, mientras que el pedido importado indica 9,00 €. Esto establece una discrepancia con los datos del pedido, no un error de extracción. Confirme qué precio se acordó y si hay que corregir Infor o su copia importada. Si AP reinicia la factura manualmente y después termina correctamente, es AP assisted pese a la extracción correcta. Véanse los [ejemplos completos y el cálculo](../../touchless-metrics.md#ejemplo-100-de-extracción-correcta-80-de-ap-touchless).
+**Ejemplo.** La factura y el valor extraído indican 10,00 €, mientras que el pedido importado indica 9,00 €. Esto establece una discrepancia con los datos del pedido, no un error de extracción. Confirme qué precio se acordó y si hay que corregir Infor o su copia importada. Si AP reinicia la factura manualmente y después termina correctamente, es AP assisted pese a la extracción correcta. Véanse los [ejemplos completos y el cálculo](touchless-metrics.md#ejemplo-100-de-extracción-correcta-80-de-ap-touchless).
 
 **Campos ausentes repetidos.** Varios documentos que se detienen en Field Validation establecen un bloqueo repetido. Entre las causas posibles están la extracción, un valor realmente ausente en la factura, una regla de validación o un valor predeterminado configurado que falta. Compare las pruebas antes de elegir una corrección; la repetición por sí sola no demuestra ninguna causa concreta.
 
@@ -80,8 +80,8 @@ Véase [Touchless con MCP](touchless-mcp.md) para conocer las llamadas de herram
 ## Páginas relacionadas
 
 * [Touchless Intelligence](./)
-* [Touchless Intelligence: Diagnóstico de proveedores y clústeres de problemas](../../touchless-supplier-diagnosis.md)
-* [Touchless Intelligence: Diagnóstico de la coincidencia con la OC](../../touchless-po-matching-diagnosis.md)
+* [Touchless Intelligence: Diagnóstico de proveedores y clústeres de problemas](touchless-supplier-diagnosis.md)
+* [Touchless Intelligence: Diagnóstico de la coincidencia con la OC](touchless-po-matching-diagnosis.md)
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 

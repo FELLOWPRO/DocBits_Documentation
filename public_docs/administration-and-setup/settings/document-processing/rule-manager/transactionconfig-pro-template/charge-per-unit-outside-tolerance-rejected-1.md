@@ -1,6 +1,6 @@
 # Zuschlag je Einheit außerhalb der Toleranz (abgelehnt)
 
-> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
+> **Hinweis zu den Beispielen:** Das folgende Szenario ist eine beispielhafte konfigurierte Zuordnung, keine geprüfte, ausgelieferte Standardvorlage. Die tatsächliche Ausgabe, Beträge, Vorzeichen und Dokumenttypen hängen von den aktiven `conflict_resolution`-Regeln und -Ausdrücken, der Exportzuordnung und den Genehmigungsentscheidungen ab. Eine unten beschriebene Belastungsanzeige oder Gutschrift ist von dieser Konfiguration abhängig; das Beispiel garantiert weder eine automatische Ausstellung noch rechtliche Konformität.
 
 
 ## Szenario:
@@ -18,7 +18,7 @@ Das System passt den Zuschlag je Einheit an die Bestellung oder den genehmigten 
   * Menge: 800 Einheiten
   * Zuschlagsgesamtbetrag: $4,800.00
 * **Eingegangene Rechnung:**
-  * Zuschlag je Einheit: $7.00 (Abweichung außerhalb der Toleranz: 16.67%, abgelehnt)
+  * Zuschlag je Einheit: $7.00 (Abweichung 16.67%, außerhalb der ±5%-Toleranz, abgelehnt)
   * Menge: 800 Einheiten
   * Zuschlagsgesamtbetrag: $5,600.00
 * **Toleranzgrenzen:**

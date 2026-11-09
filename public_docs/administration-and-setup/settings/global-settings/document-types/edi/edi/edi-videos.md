@@ -4,7 +4,7 @@ Diese Seite enthält eine Reihe kurzer Videoanleitungen, die erklären, wie DocB
 
 ## **Verstehen der Strukturbeschreibungsdatei**
 
-Dieses Video erklärt den Zweck der Strukturbeschreibungsdatei, die von DocBits verwendet wird, um EDI-Dokumente zu interpretieren.
+&#x20;Dieses Video erklärt den Zweck der Strukturbeschreibungsdatei, die von DocBits verwendet wird, um EDI-Dokumente zu interpretieren.
 
 {% embed url="https://youtu.be/_U6yyYFMo84" %}
 
@@ -13,7 +13,7 @@ Für eine detaillierte Anleitung und Bearbeitungsanweisungen siehe den [**Leitfa
 
 ## **Arbeiten mit der Transformationsdatei**
 
-Dieses Video zeigt, wie die Transformationsdatei die Regeln für die Konvertierung von EDI-Daten in das gewünschte Ausgabeformat innerhalb von DocBits definiert.
+&#x20;Dieses Video zeigt, wie die Transformationsdatei die Regeln für die Konvertierung von EDI-Daten in das gewünschte Ausgabeformat innerhalb von DocBits definiert.
 
 {% embed url="https://www.youtube.com/watch?v=x7ZNkx13D5I" %}
 
@@ -22,7 +22,7 @@ Für eine detaillierte Anleitung und Bearbeitungsanweisungen siehe den [**Leitfa
 
 ## **Erkunden der Vorschaufunktionalität**
 
-Dieses Video zeigt, wie die Vorschaufunktion in DocBits es Ihnen ermöglicht, die verarbeiteten EDI-Daten zu visualisieren.
+&#x20;Dieses Video zeigt, wie die Vorschaufunktion in DocBits es Ihnen ermöglicht, die verarbeiteten EDI-Daten zu visualisieren.
 
 {% embed url="https://youtu.be/9ioes44TAWs" %}
 
@@ -31,7 +31,7 @@ Für eine detaillierte Anleitung und Bearbeitungsanweisungen siehe den [**Leitfa
 
 ## **Zuordnen von Informationen zu Header-Feldern**
 
-Dieses Video beschreibt detailliert den Prozess der Zuordnung spezifischer Datenelemente aus dem EDI-Dokument zu den entsprechenden Header-Feldern innerhalb von DocBits.
+&#x20;Dieses Video beschreibt detailliert den Prozess der Zuordnung spezifischer Datenelemente aus dem EDI-Dokument zu den entsprechenden Header-Feldern innerhalb von DocBits.
 
 {% embed url="https://youtu.be/9xcXZY73GmE" %}
 

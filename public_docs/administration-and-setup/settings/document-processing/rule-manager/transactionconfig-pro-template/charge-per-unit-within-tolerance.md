@@ -17,7 +17,7 @@ El sistema acepta el Charge Per Unit como facturado y procesa la transacción si
   * Quantity: 500 units
   * Total Charge Amount: $2,500.00
 * **Invoice Received:**
-  * Charge Per Unit: $5.10 (variación 2%, dentro de la tolerancia de ±3%)
+  * Charge Per Unit: $5.10 (variance 2%, within the ±3% tolerance)
   * Quantity: 500 units
   * Total Charge Amount: $2,550.00
 * **Tolerance Levels:**

@@ -4,6 +4,8 @@
 
 You need an administrator account to create a connection. Use **Import** to configure automated document import from an FTP/SFTP server, a connected mailbox, or the incoming DocBits email address. Check the current organization and environment before entering connection details.
 
+<figure><img src="../../../../.gitbook/assets/import-settings-overview-en-20261109.png" alt="Import settings page with the Import Pipeline diagram, the FTP Import list with a New button and the Email Import list with a New button"><figcaption><p>The Import page: the read-only Import Pipeline diagram, the FTP Import list and the Email Import list, each with its own <strong>New</strong> button.</p></figcaption></figure>
+
 ## How to Access
 
 1. Navigate to **Settings** → **Document Processing** → **Import**.

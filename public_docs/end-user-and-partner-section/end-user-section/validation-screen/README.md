@@ -56,7 +56,11 @@ In de video wordt de gecontroleerde factuur ter goedkeuring doorgestuurd. Een kn
 
 Een rode rand of waarschuwingspictogram vraagt aandacht voor een veld. Lees de informatie: er kan een verplichte waarde ontbreken, de extractie kan controle vereisen of een ingestelde controle kan zijn mislukt. Een zichtbare waarde bewijst op zichzelf niet dat het veld geldig is.
 
-Vergelijk leverancier, nummer, datums, bedragen en valuta met het origineel. Controleer bij totalen de betreffende kopvelden en eventuele regels. Verhelp de aangegeven oorzaak voordat je verdergaat. De controles hangen af van het documenttype en de organisatie-instellingen; zie [Automatische controles](automatic-checks-on-the-validation-screen.md).
+Vergelijk leverancier, nummer, datums, bedragen en valuta met het origineel. Controleer bij totalen de betreffende kopvelden en eventuele regels. Verhelp de aangegeven oorzaak voordat je verdergaat.
+
+Sommige meldingen komen van een regel met de ernst **Waarschuwing**. Ze verdwijnen niet vanzelf: selecteer **Erkennen** onder het veld om de waarde te bevestigen, waarna de melding wordt vervangen door **Bevestigd. Als de waarde wordt gewijzigd, wordt er opnieuw om gevraagd.** Wijzig je de waarde daarna, dan komt de waarschuwing terug en moet je haar opnieuw bevestigen. Een veld met een harde fout moet je in plaats daarvan corrigeren — daarvoor is er geen knop.
+
+De controles hangen af van het documenttype en de organisatie-instellingen; zie [Automatische controles](automatic-checks-on-the-validation-screen.md).
 
 ## De assistent gebruiken
 

@@ -12,7 +12,7 @@ Een regel beantwoordt drie vragen:
 2. **Wanneer** is de regel van toepassing? Altijd, of alleen voor documenten (of rijen) die aan een voorwaarde voldoen — zie [Regelvoorwaarden (Applies when)](rule-conditions-applies-when.md).
 3. **Wat** moet waar zijn? Een veld moet gevuld zijn, een formaat volgen, binnen een bereik liggen, overeenkomen met een lijst, correct vergelijken met een ander veld of optellen.
 
-Als de controle mislukt, markeert DocBits het veld of de cel op het **validatiescherm** en toont uw bericht — precies zoals bij een ingebouwde controle. Bij de ernst **Fout** kan het document pas worden gevalideerd nadat het probleem is opgelost; bij **Waarschuwing** ziet de gebruiker alleen een melding.
+Als de controle mislukt, markeert DocBits het veld of de cel op het **validatiescherm** en toont uw bericht — precies zoals bij een ingebouwde controle. Bij de ernst **Fout** kan het document pas worden gevalideerd nadat het probleem is opgelost. Bij **Waarschuwing** wordt het document ook tegengehouden, maar de gebruiker kan de melding op het veld bevestigen zonder de waarde te wijzigen — zie [Een waarschuwing bevestigen op het validatiescherm](#acknowledge).
 
 Regels worden per **documenttype** gedefinieerd en worden uitgevoerd op elk document van dat type: tijdens de verwerking en telkens wanneer het document wordt opgeslagen.
 
@@ -26,7 +26,7 @@ Regels worden per **documenttype** gedefinieerd en worden uitgevoerd op elk docu
 | De vervaldatum mag niet vóór de factuurdatum liggen | verkeerde betaalruns | **Vergelijk velden**: Due Date op of na Invoice Date |
 | De regels moeten optellen tot het nettobedrag | alleen de vaste ingebouwde controle | **Formule** `sum(row.NET_AMOUNT) == header.total_net_amount` met uw eigen tolerantie |
 | Alleen valuta's die uw ERP kent zijn toegestaan | exportfouten in het ERP | **List of Values** op Currency |
-| Gebruikers informeren over ongebruikelijke waarden zonder hen te blokkeren | niet mogelijk | elke regel met de ernst **Waarschuwing** |
+| Ongebruikelijke waarden markeren zonder een correctie af te dwingen | een script, of gebruikers moeten eraan denken | elke regel met de ernst **Waarschuwing** — de gebruiker bevestigt de waarde met **Erkennen** |
 
 ## Aangepaste validatieregels inschakelen
 
@@ -76,7 +76,7 @@ Klik op **New rule**. De builder heeft drie stappen. **Test rule** en **Save** s
 | Instelling | Wat het doet |
 | --- | --- |
 | **Regelniveau** | Waar de regel naar kijkt en waar de fout wordt getoond — zie [Regelniveaus](#regelniveaus). |
-| **Ernst** | **Fout** markeert het veld als ongeldig en blokkeert de validatie. **Waarschuwing** toont het bericht maar blokkeert nooit. |
+| **Ernst** | **Fout** markeert het veld als ongeldig en blokkeert de validatie totdat de waarde is gecorrigeerd. **Waarschuwing** houdt het document ook tegen, maar de gebruiker kan het op het validatiescherm met **Erkennen** vrijgeven zonder de waarde te wijzigen. |
 | **Rule Name** | Wordt getoond in de lijst, in de logboeken en aan beheerders. Laat de naam de regel beschrijven ("Btw-nummer leverancier verplicht voor Duitse facturen"). |
 | **Rule key** | Een technische sleutel die uit de naam wordt gegenereerd. Hij blijft gelijk wanneer u de regel later hernoemt. Klik op het potlood om vóór de eerste keer opslaan een eigen sleutel te kiezen; daarna staat hij vast. |
 | **Beschrijving** | Optionele toelichting voor andere beheerders. |
@@ -221,8 +221,20 @@ Test elke nieuwe regel op minstens één document dat moet mislukken, één dat 
 * **Bij elke keer opslaan** van het document op het validatiescherm.
 * **Na een regelwijziging** worden bestaande documenten **niet** allemaal tegelijk opnieuw gecontroleerd. Elk document wordt met de nieuwe regels opnieuw gecontroleerd zodra het de volgende keer wordt opgeslagen of opnieuw wordt verwerkt. Documenten die al zijn geëxporteerd worden niet beïnvloed.
 * Regels worden uitgevoerd op volgorde van prioriteit (daarna op sleutel). Een veld toont **één** fout: als twee regels op hetzelfde veld mislukken, wint de eerste; latere regels overschrijven die niet.
-* Waarschuwingen worden afzonderlijk verzameld en verbergen nooit een fout.
+* Waarschuwingen worden afzonderlijk verzameld: een veld dat ook op een harde regel mislukt, toont alleen de fout, en daar valt niets te bevestigen.
 * Als een regel niet kan worden geëvalueerd — bijvoorbeeld door een deling door nul in een formule — wordt hij overgeslagen. Een kapotte regel markeert een document nooit per ongeluk als ongeldig.
+
+## Een waarschuwing bevestigen op het validatiescherm <a id="acknowledge"></a>
+
+Een mislukte regel met de ernst **Waarschuwing** houdt het document op dezelfde manier tegen als een fout: totdat het veld is bevestigd, kan het document niet worden gevalideerd. Het verschil is wat de gebruiker moet doen.
+
+Op het validatiescherm verschijnt het bericht van de regel onder het veld, samen met de knop **Erkennen**. Eén klik bevestigt alle waarschuwingen op dat veld zonder de waarde te wijzigen. Het bericht wordt dan vervangen door de melding **Bevestigd. Als de waarde wordt gewijzigd, wordt er opnieuw om gevraagd.**
+
+De bevestiging hoort bij de waarde waarvoor zij is gegeven. Wijzigt de gebruiker de waarde, leest hij haar opnieuw uit of wordt het veld met een ander resultaat opnieuw gecontroleerd, dan komt de waarschuwing terug en moet zij opnieuw worden bevestigd. Een veld dat in plaats daarvan een harde fout toont, kan niet worden bevestigd — corrigeer daar de waarde.
+
+Op een alleen-lezen document wordt de knop niet getoond; een waarschuwing moet daar worden opgelost door iemand die het veld kan bewerken.
+
+De knop **Erkennen** wordt aangeboden voor koptekstvelden.
 
 ## Logboeken <a id="logs"></a>
 
@@ -264,15 +276,15 @@ Header field · Error · *Due Date* · altijd · **Vergelijk velden** Due Date *
 **8. Geen facturen met een datum in de toekomst**
 Header field · Error · *Invoice Date* · altijd · **Vergelijk velden** Invoice Date *op of vóór (≤)* vandaag.
 
-**9. Alleen goedgekeurde valuta's (alleen als melding)**
-Header field · **Waarschuwing** · *Currency* · altijd · **List of Values** *approved_currencies* · Code `VALUE_NOT_ALLOWED`.
+**9. Alleen goedgekeurde valuta's (bevestigen in plaats van corrigeren)**
+Header field · **Waarschuwing** · *Currency* · altijd · **List of Values** *approved_currencies* · Code `VALUE_NOT_ALLOWED`. De gebruiker moet de waarschuwing bevestigen voordat het document kan worden gevalideerd.
 
 **10. Inkooporder verplicht boven 5.000**
 Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Required**.
 
 ## Aanbevolen werkwijzen
 
-* **Begin als waarschuwing.** Sla een nieuwe regel op met de ernst **Waarschuwing**, volg haar een paar dagen (Test rule, logboeken) en zet haar daarna om naar **Fout**.
+* **Begin als waarschuwing.** Sla een nieuwe regel op met de ernst **Waarschuwing**, volg haar een paar dagen (Test rule, logboeken) en zet haar daarna om naar **Fout**. Gebruikers hoeven de waarde niet te corrigeren, maar worden tegengehouden totdat ze elke treffer hebben bevestigd.
 * **Eén regel, één bericht.** Meerdere kleine regels met duidelijke berichten zijn gemakkelijker te begrijpen dan één grote formule.
 * **Gebruik Applies when in plaats van kopieën.** Eén regel met een voorwaarde is beter dan vijf kopieën voor vijf leveranciers.
 * **Wees tolerant met geld.** Geef bedragformules altijd een tolerantie.

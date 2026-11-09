@@ -30,6 +30,14 @@ In cima alla pagina, un banner rimanda alla **Dashboard di analisi** per grafici
 
 I risultati sono paginati — usa i controlli in basso per scorrere le pagine.
 
+## Dettagli del registro
+
+Seleziona una riga del registro per aprire la vista di dettaglio. Il riepilogo mostra gravità, marca temporale, servizio e ID del log, con il messaggio dell'evento sotto.
+
+La sezione **Dettagli del registro** contiene l'evento completo in formato JSON. A seconda dell'evento, possono essere inclusi metadati come origine, ambiente, utente, risorsa, azione e informazioni di rete o sul client. I campi senza valore possono apparire come `null`.
+
+Seleziona l'icona di copia in basso a destra in **Dettagli del registro** per copiare il record JSON completo negli appunti. Usa la freccia indietro accanto a **Registro attività** per tornare all'elenco.
+
 ## Azioni a piè di pagina
 
 | Azione | Descrizione |

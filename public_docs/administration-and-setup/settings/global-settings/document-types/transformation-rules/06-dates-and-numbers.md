@@ -10,12 +10,12 @@ Text target · date_format: %d.%m.%Y; number_format: de_DE, min. 2, max. 2 decim
 2. Compare the variants `%m/%d/%Y`, `%Y-%m-%d`, and `%d %b %Y` each with the same unambiguous input. The patterns do not reliably detect every arbitrary date format.
 3. Verify with `kein Datum` and an ambiguous input. For an actual DATE header field, additionally check the stored ISO value and the visible display separately.
 4. In a separate rule **Format number**, select locale `de_DE`, minimum and maximum decimal places both 2. The server input `1234.5` must yield `1234,50`.
-5. Check the same input with `en_US`: server result `1234.50`. The thousands separator of the verified browser preview is not written on the server side.
+5. Check the same input with `en_US`: server result `1234.50`. The live preview writes the value the same way as the server, without a thousands separator; with both decimal limits left empty it uses the server's default of at least 2 and at most 4 decimal places.
 6. Check zero, a negative amount, and additional decimal places. Then reprocess the output and verify the actually stored value.
 
 <figure><img src="../../../../../.gitbook/assets/transformation-series-06-steps-en-20261028.png" alt="Step configuration"><figcaption><p>Step configuration. Actual interface in English (United States). The preview does not change stored documents.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/transformation-series-06-preview-en-20261028.png" alt="Preview with training value"><figcaption><p>Live preview with training values. Actual interface in English (United States). The preview does not change stored documents. The visible thousands separator belongs to the browser preview; the verified server result is 1234,50.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/transformation-series-06-preview-en-20261109.png" alt="Live preview of a Format number step: the table column TOTAL_AMOUNT receives the sample input 1234.5 and the result is 1234,50, without a thousands separator."><figcaption><p>Live preview with the training value 1234.5 and the step <strong>Format number</strong> (de_DE, 2 decimal places): the preview writes 1234,50, exactly as the server does, without a thousands separator. The preview does not change stored documents.</p></figcaption></figure>
 
 ## 1. Date and Data Type
 
@@ -27,7 +27,7 @@ An illegible date is not simply invented. In my server test, the text remains un
 
 ## 3. Number Format
 
-Format number uses a locale and a minimum as well as maximum number of decimal places. This changes the display and possibly rounding, but not an exchange rate and not a unit of measure. For my input one thousand two hundred thirty-four point five, the current server with two decimal places yields German comma notation or English dot notation. A thousands separator is not contained in the verified server result. Therefore, I do not adopt any prettier browser display as proof for export. Zero, negative amounts, additional decimal places, and the stored result value need their own tests.
+Format number uses a locale and a minimum as well as maximum number of decimal places. This changes the display and possibly rounding, but not an exchange rate and not a unit of measure. For my input one thousand two hundred thirty-four point five, the current server with two decimal places yields German comma notation or English dot notation. A thousands separator is not contained in the verified server result, and the live preview writes the value the same way. The preview is still no proof of the stored result — check the value after a real processing run before you rely on it for export. Zero, negative amounts, additional decimal places, and the stored result value need their own tests.
 
 ## Verified Examples and Counterexamples
 
@@ -44,7 +44,7 @@ These values were verified on the server side as a dry test. Such a test does no
 
 Check a matching case, a counterexample, an empty value, and an already processed result. Repeat the document save operation. Check PO matching and ERP receipt additionally if they belong to the business objective.
 
-In the verified state, number preview and server differ with regard to the thousands separator. The table gives the actual server value.
+In the verified state, number preview and server agree: neither writes a thousands separator. The table gives the actual server value.
 
 ## Video tutorial
 

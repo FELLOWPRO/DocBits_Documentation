@@ -17,7 +17,7 @@ Het systeem past de kosten per eenheid aan zodat deze overeenkomen met de inkoop
   * Quantity: 800 units
   * Totaal kostenbedrag: $4,800.00
 * **Invoice Received:**
-  * Kosten per eenheid: $7.00 (buiten de tolerantie van 16.67%, afgewezen)
+  * Kosten per eenheid: $7.00 (afwijking 16.67%, buiten de tolerantie van ±5%, afgewezen)
   * Quantity: 800 units
   * Totaal kostenbedrag: $5,600.00
 * **Tolerance Levels:**

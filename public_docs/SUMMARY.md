@@ -144,7 +144,7 @@
     * [Bedrijfsinformatie](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Bedrijfsvoorkeuren](administration-and-setup/settings/global-settings/company-information/company-preferences.md)
       * [Instellingenassistent](administration-and-setup/settings/global-settings/company-information/settings-assistant.md)
-        * [Instellingenassistent: wat de chat kan doen](administration-and-setup/settings/global-settings/company-information/settings-assistant-chat.md)
+        * [Instellingenassistent: wat de chat kan doen](administration-and-setup/settings/global-settings/company-information/settings-assistant/settings-assistant-chat.md)
       * [Het definiëren van App-kleur in Bedrijfsinstellingen](administration-and-setup/settings/global-settings/company-information/defining-app-color-in-company-settings.md)
       * [Twee-factor-authenticatie (Admin)](administration-and-setup/settings/global-settings/company-information/two-factor-authentication.md)
     * [Groepen, gebruikers en machtigingen](administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md)

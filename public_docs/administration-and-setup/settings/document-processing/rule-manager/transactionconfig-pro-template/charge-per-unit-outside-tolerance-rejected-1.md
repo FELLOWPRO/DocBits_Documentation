@@ -13,26 +13,26 @@ Il sistema adegua l'addebito per unità in modo che corrisponda all'ordine di ac
 ## Esempio:
 
 * **Purchase Order (PO):**
-  * Costo per unità: $6.00
+  * Charge Per Unit: $6.00
   * Quantity: 800 units
-  * Importo totale della commissione: $4,800.00
+  * Total Charge Amount: $4,800.00
 * **Invoice Received:**
   * Addebito per unità: $7.00 (variazione 16.67%, fuori dalla tolleranza del ±5%, rifiutato)
   * Quantity: 800 units
-  * Importo totale della commissione: $5,600.00
+  * Total Charge Amount: $5,600.00
 * **Tolerance Levels:**
-  * Tolleranza tariffa per unità: ±5%
+  * Charge Per Unit Tolerance: ±5%
 
 Poiché l'addebito per unità ($7.00) supera l'intervallo di tolleranza accettabile del 5% e non è stato approvato, il sistema:
 
 1. **Rifiutare l'addebito fatturato per unitàà:** Il sistema non accetta l'addebito fatturato per unità di $7.00 a causa della varianza che supera il limite di tolleranza.
 2. **Rettifica l'addebito per unitàà:** Il sistema adegua l'addebito per unità in modo che corrisponda all'ordine di acquisto o all'addebito per unità approvato:
-   * Commissione rettificata per unità = $6.00 (da PO)
+   * Adjusted Charge Per Unit = $6.00 (da PO)
 3. **Ricalcola l'importo totale della tariffa:** Il sistema ricalcola l'importo totale della tariffa in base alla tariffa modificata per unità:
-   * **Importo totale corretto = Quantità × Addebito rettificato per unitàà**
-   * **Importo totale corretto = 800 unità × $6.00 = $4,800.00**
+   * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
+   * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
 4. **Genera una nota di addebito:** Poiché il totale della fattura originale era superiore al totale corretto, il sistema genera una nota di addebito per l'importo in eccesso:
-   * **Importo della nota di addebito = Totale della fattura originale - Importo totale dell'addebito corretto**
+   * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
    * **Importo della nota di addebito = $5,600.00 - $4,800.00 = $800.00**
 5. **Elabora la fattura:** Il sistema elabora la fattura con l'importo dell'addebito totale corretto di $4,800.00 ed emette una nota di addebito per $800.00 per tenere conto dell'importo addebitato in eccesso.
 

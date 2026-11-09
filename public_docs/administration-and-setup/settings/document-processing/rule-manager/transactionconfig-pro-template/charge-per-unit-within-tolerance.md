@@ -13,22 +13,22 @@ Il sistema accetta l'addebito per unità come fatturato ed elabora la transazion
 ## Esempio:
 
 * **Purchase Order (PO):**
-  * Costo per unità: $5.00
+  * Charge Per Unit: $5.00
   * Quantity: 500 units
-  * Importo totale della commissione: $2,500.00
+  * Total Charge Amount: $2,500.00
 * **Invoice Received:**
-  * Costo per unità: $5.10 (variazione 2%, entro la tolleranza del ±3%)
+  * Charge Per Unit: $5.10 (variazione 2%, entro la tolleranza del ±3%)
   * Quantity: 500 units
-  * Importo totale della commissione: $2,550.00
+  * Total Charge Amount: $2,550.00
 * **Tolerance Levels:**
-  * Tolleranza tariffa per unità: ±3%
+  * Charge Per Unit Tolerance: ±3%
 
 Poiché l'addebito per unità ($5.10) rientra nell'intervallo di tolleranza accettabile del 3% rispetto all'ordine di acquisto, il sistema:
 
 1. **Accetta l'addebito per unitàà:** Il sistema accetta l'addebito fatturato per unità di $5.10 poiché rientra nel limite di tolleranza definito.
 2. **Elabora la transazione:** Il sistema elabora la fattura con l'importo totale dell'addebito in base all'addebito fatturato per unità e quantità:
-   * **Importo addebito totale = Quantità × Addebito per unitàà**
-   * **Importo totale addebitato = 500 unità × $5.10 = $2,550.00**
+   * **Total Charge Amount = Quantity × Charge Per Unit**
+   * **Total Charge Amount = 500 units × $5.10 = $2,550.00**
 3. **Finalizza la fattura:** Il sistema elabora la transazione senza alcuna rettifica, accettando la fattura così com'è.
 
 Questo approccio consente al sistema di accogliere piccole variazioni accettabili delle tariffe, garantendo un'elaborazione regolare ed efficiente delle transazioni senza inutili rifiuti o ritardi.

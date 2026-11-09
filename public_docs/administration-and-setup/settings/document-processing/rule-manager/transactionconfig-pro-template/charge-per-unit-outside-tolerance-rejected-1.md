@@ -25,15 +25,15 @@ El sistema ajusta el cargo por unidad para que coincida con la orden de compra o
 
 Dado que el cargo por unidad ($7.00) excede el rango de tolerancia aceptable del 5% y no ha sido aprobado, el sistema:
 
-1. **Rechazar el cargo facturado por unidad:** El sistema no acepta el cargo facturado por unidad de $7.00 debido a que la variación excede el límite de tolerancia.
-2. **Ajustar el cargo por unidad:** El sistema ajusta el cargo por unidad para que coincida con la orden de compra o el cargo por unidad aprobado:
+1. **Reject the Invoiced Charge Per Unit:** El sistema no acepta el cargo facturado por unidad de $7.00 debido a que la variación excede el límite de tolerancia.
+2. **Adjust the Charge Per Unit:** El sistema ajusta el cargo por unidad para que coincida con la orden de compra o el cargo por unidad aprobado:
    * Adjusted Charge Per Unit = $6.00 (desde PO)
-3. **Recalcular el monto total del cargo:** El sistema vuelve a calcular el monto total del cargo en función del cargo ajustado por unidad:
+3. **Recalculate the Total Charge Amount:** El sistema vuelve a calcular el monto total del cargo en función del cargo ajustado por unidad:
    * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
    * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
-4. **Generar una Nota de Débito:** Dado que el total de la factura original era mayor que el total corregido, el sistema genera una nota de débito por el monto cobrado de más:
+4. **Generate a Debit Note:** Dado que el total de la factura original era mayor que el total corregido, el sistema genera una nota de débito por el monto cobrado de más:
    * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
-   * **Monto de la Nota de Débito = $5,600.00 - $4,800.00 = $800.00**
-5. **Procesar la factura:** El sistema procesa la factura con el monto de cargo total corregido de $4,800.00 y emite una nota de débito por $800.00 para contabilizar el monto cobrado de más.
+   * **Debit Note Amount = $5,600.00 - $4,800.00 = $800.00**
+5. **Process the Invoice:** El sistema procesa la factura con el monto de cargo total corregido de $4,800.00 y emite una nota de débito por $800.00 para contabilizar el monto cobrado de más.
 
 Este enfoque garantiza que las transacciones financieras sean coherentes con los términos de la orden de compra, rechazando variaciones no aprobadas y manteniendo prácticas de facturación precisas.

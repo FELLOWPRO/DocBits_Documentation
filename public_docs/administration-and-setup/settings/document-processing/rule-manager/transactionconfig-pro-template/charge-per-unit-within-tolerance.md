@@ -17,7 +17,7 @@ El sistema acepta el cargo por unidad como facturado y procesa la transacción s
   * Quantity: 500 units
   * Total Charge Amount: $2,500.00
 * **Invoice Received:**
-  * Cargo por unidad: $5.10 (dentro de la tolerancia del 2%)
+  * Cargo por unidad: $5.10 (variación 2%, dentro de la tolerancia de ±3%)
   * Quantity: 500 units
   * Total Charge Amount: $2,550.00
 * **Tolerance Levels:**

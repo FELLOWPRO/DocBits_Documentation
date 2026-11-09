@@ -1,6 +1,6 @@
 # Descripción de la estructura EDI
 
-El objetivo principal del descriptor de estructura es delinear los elementos de un mensaje EDI de manera lógica y organizada, facilitando la gestión y análisis de los datos. Reflejando con precisión la jerarquía del mensaje.
+El objetivo principal del descriptor de estructura es delinear los elementos de un mensaje EDI de manera lógica y organizada, de modo que los datos sean más fáciles de gestionar y analizar. Refleja la jerarquía del mensaje.
 
 ### Elementos del descriptor de estructura
 
@@ -40,40 +40,44 @@ El objetivo principal del descriptor de estructura es delinear los elementos de 
 {
     "N1": {
         "fields": [
-            "N1",  
-            "N2",   
-            "N3",   
-            "N4"    
+            "N1",
+            "N2",
+            "N3",
+            "N4"
         ]
     },
     "N9": {
         "fields": [
-            "N9"    
+            "N9"
         ],
         "loops": {
             "MSG01": {
                 "fields": [
-                    "MSG01"   
+                    "MSG01"
+                ]
             }
         }
     },
     "IT1": {
         "fields": [
-            "IT1",   
-            "QTY",   
-            "TXI",   
-            "REF"    
+            "IT1",
+            "QTY",
+            "TXI",
+            "REF"
+        ],
         "loops": {
             "SAC": {
                 "fields": [
-                    "SAC",   
-                    "TXI"    
+                    "SAC",
+                    "TXI"
+                ]
+            }
         }
     },
     "SAC": {
         "fields": [
-            "SAC",   
-            "TXI"    
+            "SAC",
+            "TXI"
         ]
     }
 }

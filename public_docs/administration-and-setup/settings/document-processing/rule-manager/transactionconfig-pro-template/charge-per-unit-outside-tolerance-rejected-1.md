@@ -17,7 +17,7 @@ El sistema ajusta el cargo por unidad para que coincida con la orden de compra o
   * Quantity: 800 units
   * Total Charge Amount: $4,800.00
 * **Invoice Received:**
-  * Cargo por unidad: $7.00 (fuera de la tolerancia del 16.67%, rechazado)
+  * Cargo por unidad: $7.00 (variación 16.67%, fuera de la tolerancia de ±5%, rechazado)
   * Quantity: 800 units
   * Total Charge Amount: $5,600.00
 * **Tolerance Levels:**

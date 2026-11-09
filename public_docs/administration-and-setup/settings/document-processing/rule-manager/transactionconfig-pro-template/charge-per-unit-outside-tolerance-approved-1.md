@@ -17,7 +17,7 @@ The system accepts the charge per unit and applies the approved charges, process
   * Quantity: 1,000 units
   * Total Charge Amount: $4,500.00
 * **Invoice Received:**
-  * Charge Per Unit: $5.00 (outside tolerance of 11.11%, approved)
+  * Charge Per Unit: $5.00 — 11.11% above the PO value, outside the configured ±5% tolerance; approved.
   * Quantity: 1,000 units
   * Total Charge Amount: $5,000.00
 * **Tolerance Levels:**

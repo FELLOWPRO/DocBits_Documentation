@@ -192,7 +192,7 @@ This screenshot shows the Rule Management interface where administrators can vie
 
 <figure><img src="../../../../.gitbook/assets/s150-rule_detailed_editing.png" alt="English TOML rule editor with a technical configuration example."><figcaption><p>English TOML rule editor with a technical configuration example.</p></figcaption></figure>
 
-his screenshot illustrates the detailed view of a specific rule being edited. Key elements include:
+This screenshot illustrates the detailed view of a specific rule being edited. Key elements include:
 
 • Criteria Section: Defines the conditions under which the rule is triggered. For example, the criteria might specify that if the quantity and unit price differ from the PO but are within tolerance, the rule should be applied.
 

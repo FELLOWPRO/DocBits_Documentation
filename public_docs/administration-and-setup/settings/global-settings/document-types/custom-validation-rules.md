@@ -12,7 +12,7 @@ Una regola risponde a tre domande:
 2. **Quando** si applica la regola? Sempre, oppure solo per i documenti (o le righe) che soddisfano una condizione: vedi [Condizioni delle regole (Applies when)](rule-conditions-applies-when.md).
 3. **Cosa** deve essere vero? Un campo deve essere compilato, rispettare un formato, rientrare in un intervallo, corrispondere a un elenco, confrontarsi correttamente con un altro campo oppure tornare nei totali.
 
-Quando il controllo fallisce, DocBits contrassegna il campo o la cella nella **schermata di convalida** e mostra il tuo messaggio, esattamente come per un controllo integrato. Con la gravità **Errore** il documento non può essere convalidato finché il problema non viene risolto; con **Avvertimento** l'utente vede solo un avviso.
+Quando il controllo fallisce, DocBits contrassegna il campo o la cella nella **schermata di convalida** e mostra il tuo messaggio, esattamente come per un controllo integrato. Con la gravità **Errore** il documento non può essere convalidato finché il problema non viene risolto. Con **Avvertimento** anche il documento viene trattenuto, ma l'utente può sbloccarlo confermando il messaggio sul campo, senza modificarne il valore — vedi [Confermare un avviso nella schermata di convalida](#acknowledge).
 
 Le regole sono definite per **tipo di documento** e vengono eseguite su ogni documento di quel tipo: durante l'elaborazione e a ogni salvataggio del documento.
 
@@ -26,7 +26,7 @@ Le regole sono definite per **tipo di documento** e vengono eseguite su ogni doc
 | La data di scadenza non deve precedere la data della fattura | pagamenti errati | **Confronta i campi**: Due Date uguale o successiva a Invoice Date |
 | Le righe devono tornare con l'importo netto | solo il controllo integrato fisso | **Formula** `sum(row.NET_AMOUNT) == header.total_net_amount` con una tolleranza a tua scelta |
 | Sono ammesse solo le valute note al tuo ERP | errori di esportazione nell'ERP | **Elenco dei valori** su Currency |
-| Segnalare agli utenti valori insoliti senza bloccarli | non possibile | qualsiasi regola con la gravità **Avvertimento** |
+| Segnalare valori insoliti senza forzare una correzione | uno script, oppure gli utenti devono ricordarselo | qualsiasi regola con la gravità **Avvertimento** — l'utente conferma il valore con **Riconoscere** |
 
 ## Attivare le regole di convalida personalizzate
 
@@ -76,7 +76,7 @@ Clicca su **New rule**. Il builder ha tre passaggi. **Regola di prova** e **Save
 | Impostazione | Cosa fa |
 | --- | --- |
 | **Livello di regola** | Cosa guarda la regola e dove viene mostrato l'errore: vedi [Livelli delle regole](#livelli-delle-regole). |
-| **Gravità** | **Errore** contrassegna il campo come non valido e blocca la convalida. **Avvertimento** mostra il messaggio ma non blocca mai. |
+| **Gravità** | **Errore** contrassegna il campo come non valido e blocca la convalida finché il valore non viene corretto. **Avvertimento** trattiene anch'esso il documento, ma l'utente può sbloccarlo con **Riconoscere** nella schermata di convalida senza modificare il valore. |
 | **Rule Name** | Mostrato nell'elenco e agli amministratori. Scegli un nome che descriva la regola ("Partita IVA del fornitore obbligatoria per le fatture tedesche"). |
 | **Rule key** | Una chiave tecnica generata dal nome. Resta invariata se in seguito rinomini la regola. Clicca sulla matita per scegliere una chiave tua prima del primo salvataggio; dopo non è più modificabile. |
 | **Descrizione** | Spiegazione facoltativa per gli altri amministratori. |
@@ -221,8 +221,20 @@ Testa ogni nuova regola su almeno un documento che dovrebbe fallire, uno che dov
 * **A ogni salvataggio** del documento nella schermata di convalida.
 * **Dopo una modifica a una regola**, i documenti esistenti **non** vengono ricontrollati tutti in una volta. Ogni documento viene ricontrollato con le nuove regole al successivo salvataggio o rielaborazione. I documenti già esportati non vengono interessati.
 * Le regole vengono eseguite in ordine di priorità (poi per chiave). Un campo mostra **un solo** errore: se due regole falliscono sullo stesso campo, vince la prima; le regole successive non la sovrascrivono.
-* Gli avvisi vengono raccolti separatamente e non nascondono mai un errore.
+* Gli avvisi vengono raccolti separatamente e non nascondono mai un errore: un campo che non supera anche una regola bloccante mostra solo l'errore, e lì non c'è nulla da riconoscere.
 * Se una regola non può essere valutata, ad esempio per una divisione per zero in una formula, viene saltata. Una regola difettosa non contrassegna mai un documento come non valido per errore.
+
+## Confermare un avviso nella schermata di convalida <a id="acknowledge"></a>
+
+Una regola non superata con la gravità **Avvertimento** trattiene il documento allo stesso modo di un errore: finché il campo non viene riconosciuto, il documento non può essere convalidato. La differenza sta in ciò che deve fare l'utente.
+
+Nella schermata di convalida il messaggio della regola compare sotto il campo, insieme al pulsante **Riconoscere**. Un clic conferma tutti gli avvisi di quel campo senza modificarne il valore. Il messaggio viene quindi sostituito dalla nota *Ricevuto. La modifica del valore richiede nuovamente l'operazione.*
+
+La conferma vale per il valore su cui è stata data. Se l'utente modifica il valore, lo riestrae o il campo viene ricontrollato con un esito diverso, l'avviso ricompare e va riconosciuto di nuovo. Un campo che mostra invece un errore bloccante non è riconoscibile: in quel caso correggi il valore.
+
+Su un documento in sola lettura il pulsante non viene mostrato, quindi un avviso va risolto da chi può modificare il campo.
+
+Il pulsante **Riconoscere** è disponibile per i campi di testata.
 
 ## Log <a id="logs"></a>
 
@@ -264,15 +276,15 @@ Campo intestazione · Errore · *Data di scadenza* · sempre · **Confronta i ca
 **8. Nessuna fattura con data futura**
 Campo intestazione · Errore · *Data fattura* · sempre · **Confronta i campi** Data fattura *on or before (≤)* oggi.
 
-**9. Solo valute approvate (solo avviso)**
-Header field · **Avvertimento** · *Currency* · sempre · **Elenco dei valori** *approved_currencies* · Codice `VALUE_NOT_ALLOWED`.
+**9. Solo valute approvate (confermare invece di correggere)**
+Header field · **Avvertimento** · *Currency* · sempre · **Elenco dei valori** *approved_currencies* · Codice `VALUE_NOT_ALLOWED`. L'utente deve confermare l'avviso prima che il documento possa essere convalidato.
 
 **10. Ordine di acquisto obbligatorio oltre 5.000**
 Campo intestazione · Errore · *Ordine d'acquisto* · Si applica quando *Importo totale* maggiore di *5000* · **Required**.
 
 ## Buone pratiche
 
-* **Inizia con un avviso.** Salva una nuova regola con la gravità **Avvertimento**, osservala per qualche giorno (Test rule) e poi portala a **Errore**.
+* **Inizia con un avviso.** Salva una nuova regola con la gravità **Avvertimento**, osservala per qualche giorno (Test rule) e poi portala a **Errore**. Gli utenti non sono obbligati a correggere il valore, ma vengono fermati finché non confermano ogni occorrenza.
 * **Una regola, un messaggio.** Diverse regole piccole con messaggi chiari sono più facili da capire di un'unica formula grande.
 * **Usa Applies when invece delle copie.** Una regola con una condizione è meglio di cinque copie per cinque fornitori.
 * **Sii tollerante con gli importi.** Assegna sempre una tolleranza alle formule sugli importi.

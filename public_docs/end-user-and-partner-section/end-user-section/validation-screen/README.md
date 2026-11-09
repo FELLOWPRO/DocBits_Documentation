@@ -56,7 +56,11 @@ Nel video la fattura verificata viene inviata per approvazione. Un pulsante **Ex
 
 Un bordo rosso o un’icona di avviso richiama l’attenzione su un campo. Leggi il messaggio informativo: manca un valore obbligatorio, occorre verificare l’estrazione oppure un controllo configurato è fallito? La presenza di un valore non ne dimostra da sola la validità.
 
-Confronta fornitore, numero, date, importi e valuta con l’originale. Per i totali controlla i campi di intestazione interessati e le eventuali righe. Correggi la causa indicata prima di proseguire. I controlli dipendono dal tipo di documento e dalla configurazione dell’organizzazione; vedi [Controlli automatici](automatic-checks-on-the-validation-screen.md).
+Confronta fornitore, numero, date, importi e valuta con l’originale. Per i totali controlla i campi di intestazione interessati e le eventuali righe. Correggi la causa indicata prima di proseguire.
+
+Alcuni messaggi provengono da una regola con la gravità **Avvertimento**. Non scompaiono da soli: seleziona **Riconoscere** sotto il campo per confermare il valore; il messaggio viene sostituito dalla nota “Ricevuto. La modifica del valore richiede nuovamente l’operazione.” Se in seguito modifichi il valore, l’avviso ritorna e occorre riconoscerlo di nuovo. Un campo che mostra un errore bloccante va invece corretto: per esso non esiste alcun pulsante.
+
+I controlli dipendono dal tipo di documento e dalla configurazione dell’organizzazione; vedi [Controlli automatici](automatic-checks-on-the-validation-screen.md).
 
 ## Usare l’assistente
 

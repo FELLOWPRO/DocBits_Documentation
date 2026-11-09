@@ -17,7 +17,7 @@ Le système accepte les frais unitaires tels que facturés et traite la transact
   * Quantity: 500 units
   * Total Charge Amount: $2,500.00
 * **Invoice Received:**
-  * Frais par unité : $5.10 (dans la limite d'une tolérance de 2 %)
+  * Charge Per Unit: $5.10 (variance 2 %, dans la tolérance de ±3 %)
   * Quantity: 500 units
   * Total Charge Amount: $2,550.00
 * **Tolerance Levels:**

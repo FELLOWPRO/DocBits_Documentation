@@ -17,7 +17,7 @@ Le système ajuste les frais par unité pour correspondre au bon de commande ou 
   * Quantity: 800 units
   * Total Charge Amount: $4,800.00
 * **Invoice Received:**
-  * Frais par unité : $7.00 (hors tolérance de 16.67 %, rejeté)
+  * Charge Per Unit: $7.00 (variance 16.67 %, hors de la tolérance de ±5 %, rejeté)
   * Quantity: 800 units
   * Total Charge Amount: $5,600.00
 * **Tolerance Levels:**

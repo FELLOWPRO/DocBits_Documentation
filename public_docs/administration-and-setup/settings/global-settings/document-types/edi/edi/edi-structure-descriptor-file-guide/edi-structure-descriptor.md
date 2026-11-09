@@ -1,6 +1,6 @@
 # Descripteur de structure EDI
 
-L'objectif principal du descripteur de structure est de définir les éléments d'un message EDI de manière logique et organisée, facilitant ainsi la gestion et l'analyse des données. En reflétant avec précision la hiérarchie du message.
+L'objectif principal du descripteur de structure est de définir les éléments d'un message EDI de manière logique et organisée, afin que les données soient plus faciles à gérer et à analyser. Il reflète la hiérarchie du message.
 
 ### Éléments du descripteur de structure
 
@@ -40,40 +40,44 @@ L'objectif principal du descripteur de structure est de définir les éléments 
 {
     "N1": {
         "fields": [
-            "N1",  
-            "N2",   
-            "N3",   
-            "N4"    
+            "N1",
+            "N2",
+            "N3",
+            "N4"
         ]
     },
     "N9": {
         "fields": [
-            "N9"    
+            "N9"
         ],
         "loops": {
             "MSG01": {
                 "fields": [
-                    "MSG01"   
+                    "MSG01"
+                ]
             }
         }
     },
     "IT1": {
         "fields": [
-            "IT1",   
-            "QTY",   
-            "TXI",   
-            "REF"    
+            "IT1",
+            "QTY",
+            "TXI",
+            "REF"
+        ],
         "loops": {
             "SAC": {
                 "fields": [
-                    "SAC",   
-                    "TXI"    
+                    "SAC",
+                    "TXI"
+                ]
+            }
         }
     },
     "SAC": {
         "fields": [
-            "SAC",   
-            "TXI"    
+            "SAC",
+            "TXI"
         ]
     }
 }

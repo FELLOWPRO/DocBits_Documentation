@@ -10,7 +10,7 @@ Uma regra responde a três perguntas:
 2. **Quando** a regra se aplica? Sempre, ou somente para documentos (ou linhas) que atendem a uma condição — veja [Condições da Regra (Applies when)](rule-conditions-applies-when.md).
 3. **O que** deve ser verdadeiro? Um campo deve estar preenchido, corresponder a um formato, estar dentro de um intervalo, corresponder a uma lista, ser comparado corretamente com outro campo ou fechar a soma.
 
-Quando a verificação falha, o DocBits marca o campo ou a célula na **tela de validação** e exibe a sua mensagem — exatamente como uma verificação nativa. Com a severidade **Erro**, o documento não pode ser validado até que o problema seja corrigido; com **Aviso**, o usuário vê apenas uma dica.
+Quando a verificação falha, o DocBits marca o campo ou a célula na **tela de validação** e exibe a sua mensagem — exatamente como uma verificação nativa. Com a severidade **Erro**, o documento não pode ser validado até que o problema seja corrigido; com **Aviso**, o documento também fica retido, mas o usuário pode liberá-lo reconhecendo a mensagem no campo, sem alterar o valor — veja [Confirmar um aviso na tela de validação](#acknowledge).
 
 As regras são definidas por **tipo de documento** e são executadas em todos os documentos desse tipo: durante o processamento e sempre que o documento é salvo.
 
@@ -24,7 +24,7 @@ As regras são definidas por **tipo de documento** e são executadas em todos os
 | A data de vencimento não pode ser anterior à data da fatura | execuções de pagamento incorretas | **Comparar campos**: Due Date na data da fatura ou depois dela (Invoice Date) |
 | As linhas devem somar o valor líquido | apenas a verificação nativa fixa | **Fórmula** `sum(row.NET_AMOUNT) == header.total_net_amount` com a sua própria tolerância |
 | Somente moedas conhecidas pelo seu ERP são permitidas | erros de exportação no ERP | **Lista de Valores** em Currency |
-| Avisar os usuários sobre valores incomuns sem bloqueá-los | não é possível | qualquer regra com a severidade **Aviso** |
+| Sinalizar valores incomuns sem forçar uma correção | um script, ou os usuários precisam se lembrar | qualquer regra com a severidade **Aviso** — o usuário confirma o valor com **Reconhecer** |
 
 ## Ativar as regras de validação personalizadas
 
@@ -74,7 +74,7 @@ Clique em **New rule**. O construtor tem três etapas. **Test rule** e **Save** 
 | Configuração | O que faz |
 | --- | --- |
 | **Nível da regra** | O que a regra analisa e onde o erro é exibido — veja [Níveis de regra](#niveis-de-regra). |
-| **Gravidade** | **Erro** marca o campo como inválido e bloqueia a validação. **Aviso** mostra a mensagem, mas nunca bloqueia. |
+| **Gravidade** | **Erro** marca o campo como inválido e bloqueia a validação até que o valor seja corrigido. **Aviso** também retém o documento, mas o usuário pode liberá-lo com **Reconhecer** na tela de validação, sem alterar o valor. |
 | **Rule Name** | Exibido na lista e para os administradores. Faça com que descreva a regra ("Supplier tax ID required for German invoices"). |
 | **Rule key** | Uma chave técnica gerada a partir do nome. Ela permanece a mesma quando você renomeia a regra mais tarde. Clique no lápis para escolher sua própria chave antes do primeiro salvamento; depois disso, ela fica fixa. |
 | **Descrição** | Explicação opcional para outros administradores. |
@@ -219,8 +219,20 @@ Teste cada nova regra em pelo menos um documento que deva falhar, um que deva se
 * **A cada salvamento** do documento na tela de validação.
 * **Após uma alteração de regra**, os documentos existentes **não** são reverificados de uma só vez. Cada documento é reverificado com as novas regras na próxima vez em que for salvo ou reprocessado. Documentos que já foram exportados não são afetados.
 * As regras são executadas por ordem de prioridade (depois pela chave). Um campo exibe **um** erro: se duas regras falharem no mesmo campo, a primeira prevalece; as regras seguintes não a sobrescrevem.
-* Os avisos são coletados separadamente e nunca ocultam um erro.
+* Os avisos são coletados separadamente e nunca ocultam um erro: um campo que também falha numa regra bloqueante mostra apenas o erro, e não há nada para reconhecer aí.
 * Se uma regra não puder ser avaliada — por exemplo, uma divisão por zero em uma fórmula — ela é ignorada. Uma regra com defeito nunca marca um documento como inválido por engano.
+
+## Confirmar um aviso na tela de validação <a id="acknowledge"></a>
+
+Uma regra com falha e severidade **Aviso** retém o documento da mesma forma que um erro: até o campo ser reconhecido, o documento não pode ser validado. A diferença está no que o usuário precisa fazer.
+
+Na tela de validação, a mensagem da regra aparece por baixo do campo, junto com o botão **Reconhecer**. Um clique confirma todos os avisos desse campo sem alterar o valor. A mensagem é então substituída pela nota **Entendido. Alterar o valor solicita confirmação novamente.**
+
+A confirmação pertence ao valor para o qual foi dada. Se o usuário alterar o valor, voltar a extraí-lo ou o campo for reverificado com um resultado diferente, o aviso reaparece e precisa ser reconhecido novamente. Um campo que mostra um erro bloqueante não pode ser reconhecido — corrija o valor nesse caso.
+
+Em um documento somente de leitura, o botão não é exibido; por isso, um aviso aí precisa ser resolvido por quem possa editar o campo.
+
+O botão **Reconhecer** é oferecido para campos de cabeçalho.
 
 ## Registros <a id="logs"></a>
 
@@ -262,15 +274,15 @@ Header field · Error · *Due Date* · sempre · **Comparar campos** Due Date *n
 **8. Sem faturas com data futura**
 Header field · Error · *Invoice Date* · sempre · **Comparar campos** Invoice Date *na data ou antes (≤)* de hoje.
 
-**9. Somente moedas aprovadas (apenas como dica)**
-Header field · **Aviso** · *Currency* · sempre · **Lista de Valores** *approved_currencies* · Código `VALUE_NOT_ALLOWED`.
+**9. Somente moedas aprovadas (confirmar em vez de corrigir)**
+Header field · **Aviso** · *Currency* · sempre · **Lista de Valores** *approved_currencies* · Código `VALUE_NOT_ALLOWED` · O utilizador tem de confirmar o aviso antes de o documento poder ser validado.
 
 **10. Pedido de compra obrigatório acima de 5.000**
 Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Required**.
 
 ## Boas práticas
 
-* **Comece como aviso.** Salve uma nova regra com a severidade **Aviso**, acompanhe-a por alguns dias (Test rule) e depois mude-a para **Erro**.
+* **Comece como aviso.** Salve uma nova regra com a severidade **Aviso**, acompanhe-a por alguns dias (Test rule) e depois mude-a para **Erro**. Os utilizadores não têm de corrigir o valor, mas ficam retidos até confirmarem cada ocorrência.
 * **Uma regra, uma mensagem.** Várias regras pequenas com mensagens claras são mais fáceis de entender do que uma fórmula grande.
 * **Use Applies when em vez de cópias.** Uma regra com uma condição é melhor do que cinco cópias para cinco fornecedores.
 * **Seja tolerante com valores monetários.** Sempre defina uma tolerância nas fórmulas de valores.

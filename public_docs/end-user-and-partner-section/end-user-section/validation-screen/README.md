@@ -56,7 +56,11 @@ No vídeo, a fatura conferida é submetida para aprovação. Um botão **Export*
 
 Um contorno vermelho ou ícone de aviso chama a atenção para um campo. Leia a mensagem: pode faltar um valor obrigatório, ser necessário conferir a extração ou ter falhado um controlo configurado. A presença de um valor não comprova, por si só, a sua validade.
 
-Compare fornecedor, número, datas, montantes e moeda com o original. Nos totais, confira os campos de cabeçalho afetados e as linhas correspondentes. Corrija a causa indicada antes de prosseguir. Os controlos dependem do tipo de documento e da configuração da organização; consulte [Verificações automáticas](automatic-checks-on-the-validation-screen.md).
+Compare fornecedor, número, datas, montantes e moeda com o original. Nos totais, confira os campos de cabeçalho afetados e as linhas correspondentes. Corrija a causa indicada antes de prosseguir.
+
+Algumas mensagens vêm de uma regra **Aviso**. Não desaparecem sozinhas: selecione **Reconhecer** por baixo do campo para confirmar o valor, e a mensagem é substituída por **Entendido. Alterar o valor solicita confirmação novamente.** Se editar o valor depois, o aviso regressa e tem de o reconhecer novamente. Um campo que mostra um erro bloqueante tem de ser corrigido — não existe botão para o efeito.
+
+Os controlos dependem do tipo de documento e da configuração da organização; consulte [Verificações automáticas](automatic-checks-on-the-validation-screen.md).
 
 ## Utilizar o assistente
 

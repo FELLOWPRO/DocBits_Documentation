@@ -13,22 +13,22 @@ System przyjmuje opłatę jednostkową zgodnie z fakturą i przetwarza transakcj
 ## Przykład:
 
 * **Purchase Order (PO):**
-  * Opłata za jednostkę: $5.00
+  * Charge Per Unit: $5.00
   * Quantity: 500 units
-  * Całkowita kwota opłaty: $2,500.00
+  * Total Charge Amount: $2,500.00
 * **Invoice Received:**
-  * Opłata za jednostkę: $5.10 (odchylenie 2%, w granicach tolerancji ±3%)
+  * Charge Per Unit: $5.10 (odchylenie 2%, w granicach tolerancji ±3%)
   * Quantity: 500 units
-  * Całkowita kwota opłaty: $2,550.00
+  * Total Charge Amount: $2,550.00
 * **Tolerance Levels:**
-  * Tolerancja ładunku na jednostkę: ±3%
+  * Charge Per Unit Tolerance: ±3%
 
 Ponieważ opłata za jednostkę ($5.10) mieści się w akceptowalnym przedziale tolerancji wynoszącym 3% w porównaniu z zamówieniem, system:
 
-1. **Zaakceptuj opłatę jednostkową:** System akceptuje zafakturowaną opłatę jednostkową w wysokości $5.10, ponieważ mieści się ona w zdefiniowanym limicie tolerancji.
-2. **Przetwórz transakcję:** System przetwarza fakturę z całkowitą kwotą opłaty w oparciu o zafakturowaną opłatę za jednostkę i ilość:
-   * **Całkowita kwota opłaty = ilość × opłata za jednostkę**
-   * **Całkowita kwota opłaty = 500 jednostek × $5.10 = $2,550.00**
-3. **Sfinalizuj fakturę:** System przetwarza transakcję bez żadnych korekt, akceptując fakturę taką, jaka jest.
+1. **Accept the Charge Per Unit:** System akceptuje zafakturowaną opłatę jednostkową w wysokości $5.10, ponieważ mieści się ona w zdefiniowanym limicie tolerancji.
+2. **Process the Transaction:** System przetwarza fakturę z całkowitą kwotą opłaty w oparciu o zafakturowaną opłatę za jednostkę i ilość:
+   * **Total Charge Amount = Quantity × Charge Per Unit**
+   * **Total Charge Amount = 500 units × $5.10 = $2,550.00**
+3. **Finalize the Invoice:** System przetwarza transakcję bez żadnych korekt, akceptując fakturę taką, jaka jest.
 
 Takie podejście umożliwia systemowi uwzględnienie niewielkich, akceptowalnych różnic w opłatach, zapewniając płynne i wydajne przetwarzanie transakcji bez zbędnych odrzuceń i opóźnień.

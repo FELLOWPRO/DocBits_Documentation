@@ -16,7 +16,7 @@ The settings page itself becomes available once the module is active.
 
 ## Page layout
 
-The settings page is organised into three tabs: **Documents**, **ERP** and **Templates**. Each tab scopes a different content type that Fulltext Search can index. The pipeline picture is no longer a tab here — select **View search pipeline** at the top of the page to open it on the Infrastructure page.
+The settings page is organised into three tabs: **Documents**, **ERP** and **Templates**. Each tab scopes a different content type that Fulltext Search can index.
 
 ### Documents tab
 
@@ -28,12 +28,6 @@ The Documents tab covers everything related to indexing processed documents:
 * **Sync diagnostics** — on-demand diagnostics for cases when the index appears out of sync with the underlying document store.
 
 <mark>Reindexing is non-destructive — existing search continues to work while the new index is being rebuilt.</mark>
-
-### View the search pipeline
-
-The read-only picture of how document data reaches the search index now lives on the Infrastructure page. Select **View search pipeline** at the top of Fulltext Search Settings to open **Settings → Infrastructure → Search index**.
-
-It does not change any setting; use it to check where the data comes from, which region each component runs in, and how far indexing has progressed — including whether the **vector** phase is filling or shows **off**. See [Infrastructure](../infrastructure.md).
 
 ### ERP tab
 

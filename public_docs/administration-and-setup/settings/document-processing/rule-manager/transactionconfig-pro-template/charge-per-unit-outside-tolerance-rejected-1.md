@@ -23,7 +23,7 @@ Il sistema adegua l'addebito per unità in modo che corrisponda all'ordine di ac
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±5%
 
-Poiché l'addebito per unità ($7.00) supera l'intervallo di tolleranza accettabile del 5% e non è stato approvato, il sistema:
+Poiché Charge Per Unit ($7.00) supera l'intervallo di tolleranza accettabile del 5% e non è stato approvato, il sistema:
 
 1. **Reject the Invoiced Charge Per Unit:** Il sistema non accetta l'addebito fatturato per unità di $7.00 a causa della varianza che supera il limite di tolleranza.
 2. **Adjust the Charge Per Unit:** Il sistema adegua l'addebito per unità in modo che corrisponda all'ordine di acquisto o all'addebito per unità approvato:

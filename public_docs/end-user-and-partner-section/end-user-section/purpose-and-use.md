@@ -42,5 +42,3 @@ The validation screen in DocBits is designed to verify the accuracy and complete
 * **User Guidance**:
   * **Error Messages**: Provides specific and understandable error messages when entries do not comply with requirements.
   * **Help and Hints**: Offers help texts or tooltips to assist users in entering data correctly.
-
-In summary, the validation screen in DocBits is instrumental in ensuring the quality of extracted data, facilitating early error detection and correction, and enhancing the overall efficiency of data processing workflows.

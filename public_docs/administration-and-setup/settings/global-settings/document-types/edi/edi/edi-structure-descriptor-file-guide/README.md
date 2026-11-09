@@ -49,7 +49,7 @@ The **Preview Function** lets you test how an uploaded EDI file is parsed with t
 
 This is especially useful for debugging mappings and validating structural groupings in real time. A representative EDI document of your own format is required; the result shown depends on the uploaded file.
 
-## 6. Video Walkthrough
+## 4. Video Walkthrough
 
 A video guide for this file type is available on the [Videos page.](../edi-videos.md)\
 Use it to follow along with setup, editing, and previewing.

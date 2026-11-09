@@ -29,6 +29,19 @@ These training cases explain report functions. A recommendation or preview prove
 
 <figure><img src="../../../.gitbook/assets/touchless-overview.png" alt="The Touchless Intelligence tab with five key figures, improvement suggestions and the touchless rate chart"><figcaption><p>The Touchless Intelligence tab: key figures, improvements, the rate over time and the lost-first chart. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
 
+## Report settings
+
+The report reads four organisation settings that an administrator maintains under **Settings → Module → Dashboards & Analytics**. They set the target and the cost view; an empty field means DocBits uses the default.
+
+| Setting | Default | What it controls |
+| --- | --- | --- |
+| Touchless target | 70 % | The share of documents that should pass without a processing intervention. The report uses it as the target mark in the rate chart. |
+| Minutes per AP intervention | 6 min | The time an AP employee needs to correct and release one document. |
+| Hourly cost | 40 | The cost of one hour of AP work in the currency below. |
+| Currency | EUR | The currency of the cost view, as a three-letter ISO 4217 code such as `EUR`, `CHF` or `USD`. DocBits stores the code in upper case and rejects a value that is not a currency code, so a typo cannot reach the report. |
+
+The API checks the stored values again and uses the default for a value it cannot work with.
+
 ## Access
 
 This area belongs to the [Analytics Dashboard](../). Administrators have access; other users need the corresponding role grant. AI analysis, supported changes and consulting reports may require administrator rights.

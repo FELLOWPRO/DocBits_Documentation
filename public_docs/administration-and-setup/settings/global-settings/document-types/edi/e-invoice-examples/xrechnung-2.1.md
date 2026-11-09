@@ -4,7 +4,7 @@ Exports to the document management system (IDM):
 
 <figure><img src="../../../../../../.gitbook/assets/image (174).png" alt="Infor IDM document view with the Attributes tab showing invoice fields, supplier details and the PDF preview of invoice TOSL555"><figcaption></figcaption></figure>
 
-Exported to Infor LN:
+Exported to Infor ERP / SAP:
 
 <figure><img src="../../../../../../.gitbook/assets/image2-1.png" alt="Infor received purchase invoice form for invoice TOSL555 with general data, dates, amounts and a tax lines tab"><figcaption></figcaption></figure>
 

@@ -76,6 +76,16 @@ Open a document row to work in the validation screen. Use the row's **Actions** 
 
 Select the checkboxes for several documents and open the menu in the table header for permitted bulk actions, such as assignment, merging, restart, restart export or deletion. Check the selection and confirmation carefully. These actions can change documents; saving a view only changes how the worklist is displayed.
 
+## Document Logs
+
+Open the row's **Actions** menu and choose **Document Logs** to see what happened to a document.
+
+The popup lists the recorded entries in four columns: **Modified By/On**, **Description**, **Previous Status** and **Current Status**. If nothing was recorded for the document, it shows **No Record Found!**.
+
+Widen or narrow a column by dragging the divider between two column headers. When the popup is narrower than the table, scroll sideways to reach the last column; the header stays visible while you scroll through the rows. A description that is cut off in its cell shows the full text when you hover over it.
+
+Close the popup with the X in its title bar.
+
 ## Save a personal dashboard
 
 Open the blue view badge below the search box and choose **Create New Dashboard**. Give the view a name and choose whether it is private, visible to all users or shared with selected groups and users. Save the filters, sort order and columns you need for recurring work.

@@ -22,5 +22,3 @@ This title indicates that the rule pertains specifically to handling purchase in
 * **Accuracy and Compliance**: The rule is vital for ensuring that the invoicing process is accurate and aligns with the terms agreed upon in the purchase order. It helps prevent financial discrepancies and potential inventory errors.
 * **Streamlined Approvals**: Automating the review process for specific discrepancies helps streamline approvals and ensures that any issues are quickly addressed by the appropriate personnel.
 * **Enhanced Financial Oversight**: Requiring a secondary approval for quantity verifications strengthens financial controls and accountability within the organization.
-
-This setup exemplifies how workflow automation can be utilized to enhance operational efficiency and ensure financial integrity, particularly in managing complex purchase processes within a company.

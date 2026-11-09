@@ -38,20 +38,40 @@ This section lists every DocBits app and feature and whether it is enabled for y
 | **Days Left**             | Days remaining until the end date.                                                                             |
 | **Actions**               | Per-app actions menu.                                                                                          |
 
-## Subscription Usage
+## Usage analytics
 
-<figure><img src="../../../.gitbook/assets/subscription-usage-analytics-20261107-en.png" alt="Subscription Usage with current billing-period token balances and a six-month app usage chart"><figcaption><p>Subscription Usage for the current billing period and the last six months</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/subscriptions_usage_analytics.png" alt="Usage analytics"><figcaption><p>Usage analytics card</p></figcaption></figure>
 
-The **Subscription Usage** card shows token consumption for your current billing period. The billing-period dates appear above the list.
+The **Usage analytics** card shows how much of the included token allowance your subscribed apps have used in the current billing period. Its header line names that period, for example `Current billing period: Jan 1, 2026 – Dec 31, 2026`.
 
-Each row shows the app and its subscription plan. Depending on the plan, the row also shows:
+Each app with a token allowance has one row:
 
-- The included token allowance.
-- The number of tokens used and the percentage of the included allowance consumed.
-- **Within limit** or **Over limit** status.
+| Element                | Description                                                                                                       |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **App** and plan       | The app and the subscription the allowance belongs to (e.g. AI Workforce, DocNet).                                |
+| Progress bar           | Share of the included tokens already used.                                                                        |
+| Usage text             | Tokens used out of the included amount, with the percentage, e.g. `5,040,000 of 12,000,000 tokens used (42%)`.     |
+| Status                 | **Within limit**, **Approaching limit** from 80% of the included amount, or **Over limit** from 100%.             |
 
-A warning starts at **80%** of the included amount. Usage is **Over limit** from **100%**. Plans without an included token allowance show only the tokens used. If usage cannot be provided, the row shows **Usage is not available yet for this subscription**.
+The card states the thresholds itself: warning from 80% of the included amount, over limit from 100%.
 
 ### Usage over the last six months
 
-Use the **App** drop-down to select an app. The chart shows its monthly token usage over the last six months.
+The chart below the rows shows the monthly token consumption of a single app — the current month and the five months before it. Choose the app in the **App** list above the chart.
+
+If no subscription carries a token allowance, the card shows **No active subscription with a token allowance** and the chart shows **No usage recorded in the last six months**.
+
+## Usage
+
+The **Usage** panel under the card starts collapsed. Open it to see what your organisation consumed per period.
+
+| Column | Description |
+| --- | --- |
+| **Type** | The usage category: Document, Workflow, Advanced Workflow or DocNet. |
+| **From / To** | The period the usage is reported for. |
+| **Tokens used** | Tokens consumed in the period. |
+| **Remaining tokens** | Tokens left for the period. |
+
+Use **Select** to choose the date range the table covers. To sort, click the small up or down arrow beside the label of **Type**, **From**, **To** or **Remaining tokens**; clicking the label itself does not sort.
+
+A **DocNet** row appears only when DocNet is active for your organisation.

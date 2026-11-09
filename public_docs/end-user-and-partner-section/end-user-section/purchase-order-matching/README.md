@@ -45,7 +45,7 @@ Common messages and next steps:
 | No open order lines | Check the [consumed-line statuses](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) and excluded statuses. |
 
 {% hint style="warning" %}
-Saving can trigger matching again after a changed or newly detected PO number. Check the displayed result after saving. If a match cannot be saved, read the error shown on the screen and ask an administrator to check the [transformation](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) and [matching rules](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+Saving can trigger matching again after a changed or newly detected PO number. Check the displayed result after saving. If a match cannot be saved, read the error shown on the screen and ask an administrator to check the [transformation rules](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules/README.md) and [matching rules](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
 {% endhint %}
 
 Use **Matching history** (clock icon, where your permissions allow it) to inspect how a previous match was decided. It is a read-only view. You can review which rules ran and why a candidate did not match; opening history does not export the document.

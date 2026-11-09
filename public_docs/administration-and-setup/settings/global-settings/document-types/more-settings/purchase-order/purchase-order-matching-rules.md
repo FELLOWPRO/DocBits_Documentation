@@ -215,6 +215,16 @@ The defined rule set directly governs the efficiency and integrity of the PO-mat
 * [**Calculate PO unit price**](calculate-po-unit-price.md) changes which unit price the rules compare on the purchase order side.
 * [**Tolerance settings**](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) and [**disabled statuses**](purchase-order-disable-statuses.md) decide how strict the comparison is and which purchase order lines are offered at all.
 
+## When the match skips rules
+
+A rule needs a column that the extracted table actually has; a rule that pairs lines by item number cannot run on an invoice that prints none.
+
+Instead, the automatic match runs the rules it can and leaves the lines of the others unmatched. It then reports **Some PO match rules were not tried**, naming each skipped rule and each column missing from the table. The affected lines stay without a match until you add the missing column or match them by hand.
+
+{% hint style="info" %}
+A false activation condition also skips a rule, but that is a different case: it appears in the matching history, not in this notice.
+{% endhint %}
+
 ## Troubleshooting
 
 | Symptom                                          | What to check                                                                                                                                                |

@@ -10,6 +10,14 @@ An **Advanced Workflow** routes a document through a graph of triggers, conditio
 
 Use a [Standard Workflow](../standard-workflow-builder/README.md) for a linear **When → And → Then** automation. Both builders use the same [card catalog](../cards-overview/README.md). The advanced builder adds explicit connections and control nodes.
 
+## Feature overview: DocBits Advanced Workflow
+
+Start with this 1:48 feature overview, then follow the detailed setup instructions below.
+
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/advanced-workflow-feature/v5/en.mp4" %}
+
+[See the feature page and invoice example](../../../feature-videos/advanced-workflow.md)
+
 ## Watch: an invoice routing example
 
 Meet Mike, then follow his explanation and real actions in the English DocBits interface: inspect Workflow List and License, name a workflow, configure an invoice amount check and two actions, arrange the cards, connect both routes and inspect the document and Custom Data test options.

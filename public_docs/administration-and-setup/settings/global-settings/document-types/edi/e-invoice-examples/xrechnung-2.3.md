@@ -4,9 +4,9 @@ Exports to the document management system (IDM):
 
 <figure><img src="../../../../../../.gitbook/assets/image (176).png" alt="IDM document with the attributes tab showing invoice number, dates, purchase order, net, tax and total amounts and supplier FELLOWPRO AG next to the invoice preview"><figcaption></figcaption></figure>
 
-Exported to Infor LN:
+Exported to Infor ERP / SAP:
 
-<figure><img src="../../../../../../.gitbook/assets/image2-3.png" alt="Infor LN received purchase invoice with invoice data, dates, amounts of 8.980,00 EUR and a tax line for tax code 004"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image2-3.png" alt="Infor ERP / SAP received purchase invoice with invoice data, dates, amounts of 8.980,00 EUR and a tax line for tax code 004"><figcaption></figcaption></figure>
 
 Exported to Infor M3:
 

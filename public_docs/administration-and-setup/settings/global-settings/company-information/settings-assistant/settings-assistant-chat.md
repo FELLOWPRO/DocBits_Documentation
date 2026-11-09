@@ -165,7 +165,7 @@ The assistant never changes anything on its own. Every change follows the same f
 1. **Preview**: you see the setting, its scope (**Organization**) and the **current → proposed** value. Nothing is saved yet.
 2. **Your confirmation**: you click **Confirm** (or **Yes**). Only an organisation administrator can do this.
 3. **Result line**: the chat shows **Changed: (setting) → (value)**.
-4. **Undo**: a button with a countdown ("14 min left") lets you take the change back. The change is also recorded in the log.
+4. **Undo**: a button with a countdown (for example "14 min left") lets you take the change back within 15 minutes. The change is also recorded in the log.
 
 **Example (illustrative).** A recommendation card for a setting the assistant is allowed to write shows an **Apply** button next to **Open setting**. Say the card is about **Auto export if PO matched 100%**. You click **Apply**. The dialog **Apply this change?** shows _Current: Off → Proposed: On_. You click **Confirm**. A message **Setting updated.** appears with an **Undo** button. If you notice a mistake within about 15 minutes, you click **Undo** and the old value is back. Cards without an **Apply** button are for navigation only: use **Open setting** and change the value yourself.
 

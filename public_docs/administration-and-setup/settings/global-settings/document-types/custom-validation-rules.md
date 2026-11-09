@@ -159,6 +159,8 @@ The value must match a **regular expression**. The expression searches the value
 
 The value must be a number between **Minimum** and **Maximum** (both included). Fill in one or both. A value that is not a number fails. Formatted amounts such as `1.234,56` are understood.
 
+The bounds themselves are typed as plain numbers: an optional sign and digits, with a comma accepted as the decimal separator (`0,5`). Thousands separators, exponents and words are refused when you save, with a hint that the bound is not a number. Fill in at least one bound, because a range without a minimum and a maximum is not saved, and keep the minimum at or below the maximum.
+
 <figure><img src="../../../../.gitbook/assets/validation-rule-line-range.png" alt="A Range check"><figcaption><p>Range with a minimum only: quantities must be at least 0.01</p></figcaption></figure>
 
 #### Compare fields — e.g. due date ≥ invoice date
@@ -185,6 +187,12 @@ Except for **Required**, every check **passes when the value is empty**. A Patte
 
 * **Error message shown to the processing user** — the text on the validation screen. Say what is wrong **and** what to do: "Supplier tax ID is missing. German invoices over 250 EUR must show it."
 * **Error code** — a short technical code, for example `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. It appears in exports and logs and lets you group errors.
+
+#### When a save skips a field
+
+A validation rule needs a position on the document page. If a field carries a value but has no position on the page, no rule can be attached to it — and saving then does not report a plain success: DocBits names each skipped field and says that the rule was not saved for it.
+
+Give the field a position in the template or in the mapping, then save the rule again.
 
 ## Test rule
 

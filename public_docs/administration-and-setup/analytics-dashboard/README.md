@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Analytics Dashboard** provides complete visibility into your document processing performance. It tracks how long documents spend at each stage of their journey — from import to export — and helps you identify bottlenecks, compare performance across organizations, document types, and suppliers, and benchmark your results against the **DocBits Global Average**.
+The Analytics Dashboard shows how long documents spend at each stage from import to export. You can identify bottlenecks, compare organizations, document types, and suppliers, and compare your results with the DocBits Global Average.
 
 Every document travels through distinct stages:
 
@@ -62,7 +62,7 @@ Focuses on **human touchpoints** — queue wait time, manual validation, review 
 
 ## Filter Options
 
-The dashboard supports powerful multi-dimensional filtering. All charts, cards, and tables update in real time based on the active filters.
+You can combine multiple filters. Charts, cards, and tables update in real time based on the active filters.
 
 ### Search
 

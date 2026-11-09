@@ -54,7 +54,7 @@ DocBits recognises the following payment-term and discount-term codes.
 | Infor M3   | `NET`               | Due on receipt         |
 | Infor M3   | `M20`               | 20th of next month     |
 | Infor M3   | `E15`               | End of month + 15 days |
-| Infor LN   | `030`, `30`         | Net 30 days            |
+| Infor ERP / SAP | `030`, `30`         | Net 30 days            |
 | Reversed   | `14N`, `30N`        | Net 14 / 30 days       |
 | Text Codes | `REC`, `DUE`, `COD` | Due on receipt         |
 

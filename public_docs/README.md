@@ -4,17 +4,17 @@
 
 From OCR and IDP to business logic, approvals and Advanced Workflows: discover the evolution of DocBits.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/en.mp4" %}
 
-_90 seconds · English-language product UI · AI-imagined historical scenes_
+_90 seconds · English · FullHD · From OCR and IDP to automation_
 
-[Read transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/en-transcript.md) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/en.mp4)
+[Video with captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/en.html) · [Read transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/en-transcript.md) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-11-07/v4/en.mp4)
 
 Welcome to DocBits
 
-Welcome to **DocBits**, your comprehensive source for documentation strategies and insights. At DocBits, we are dedicated to providing clear, concise, and up-to-date documentation resources for [enduser](end-user-and-partner-section/end-user-section/), [admins](administration-and-setup/settings/), and [partners](end-user-and-partner-section/partner-section/).
+Here you will find guides for [end users](end-user-and-partner-section/end-user-section/), [administrators](administration-and-setup/settings/), and [partners](end-user-and-partner-section/partner-section/).
 
-[**DocBits**](https://www.docbits.com) **by** [**FELLOWPRO AG**](https://www.fellowpro.com) is an advanced intelligent document processing (IDP) solution designed to optimize and automate the handling of business documents.
+[DocBits](https://www.docbits.com) by [FELLOWPRO AG](https://www.fellowpro.com) is an intelligent document processing (IDP) solution that automates the handling of business documents.
 
 Official Documentation: [docs.docbits.com](https://docs.docbits.com/)
 
@@ -27,8 +27,7 @@ Below is a summary of its unique features and benefits:
    * Supports over 120 languages.
    * Capable of extracting unstructured data at both header and line levels.
 2. **Swarm Intelligence**
-   * Leverages the power of AI swarm intelligence to deliver communal benefits across customers.
-   * Enhances the training of classification and extraction models with input from a wide range of users.
+   * Input from a wide range of users helps train the classification and extraction models.
    * Provides over 96% accuracy in data extraction and classification.
 3. [**PO Matching**](end-user-and-partner-section/end-user-section/purchase-order-matching.md)
    * Automates the reconciliation of purchase orders with incoming invoices.

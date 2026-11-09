@@ -38,5 +38,3 @@ The **Selection rules** tab of each screen holds the rules that pick the layout,
 * [Layout Selection Rules](layout-selection-rules.md)
 * [Best practices](best-practices.md)
 * [Troubleshooting](troubleshooting.md)
-
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}

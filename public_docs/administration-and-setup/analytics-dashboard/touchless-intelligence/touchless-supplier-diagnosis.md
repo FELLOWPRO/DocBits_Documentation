@@ -72,7 +72,7 @@ Do not equate **AP assisted** with an extraction failure. For each sample docume
 | Infor is correct, but DocBits has an old or incomplete copy | Import or ERP integration |
 | Invoice and source values differ, but the agreed value is not established | Business clarification; keep the root cause unconfirmed |
 
-A small AP intervention can finish the invoice while leaving a recurring source-data issue unresolved. Record both the immediate action and the lasting fix. The cluster alone does not prove the historical contents of Infor. See the [worked Infor example](touchless-po-matching-diagnosis.md#worked-example-correct-extraction-different-infor-data).
+A small AP intervention can finish the invoice while leaving a recurring source-data issue unresolved. Record both the immediate action and the lasting fix. The cluster alone does not prove the historical contents of Infor. See the [worked Infor example](touchless-examples.md#worked-example-correct-extraction-different-infor-data).
 
 ## PO matching clusters
 

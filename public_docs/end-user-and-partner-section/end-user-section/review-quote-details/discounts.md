@@ -6,7 +6,7 @@ If your extracted table contains the **Discount** or **Discount Percentage** col
 
 ## Exceptions
 
-Discounts will not be automatically applied when the multi-match feature is used. More information about the multi match feature can be found [here](../purchase-order-matching.md#multi-matches).
+Discounts will not be automatically applied when the multi-match feature is used. More information about the multi match feature can be found in [Purchase Order Matching](../purchase-order-matching.md#more-than-one-line-per-match).
 
 ## Discount Calculation
 

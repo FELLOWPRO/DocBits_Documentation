@@ -17,7 +17,7 @@ Charge Per Unit 超出容差，且尚未获得审批。
   * Quantity: 800 units
   * Total Charge Amount: $4,800.00
 * **Invoice Received:**
-  * Charge Per Unit: $7.00（偏差 16.67%，超出 ±5% 的容差，已拒绝）
+  * Charge Per Unit: $7.00 (variance 16.67%, outside the ±5% tolerance, rejected)
   * Quantity: 800 units
   * Total Charge Amount: $5,600.00
 * **Tolerance Levels:**
@@ -27,7 +27,7 @@ Charge Per Unit 超出容差，且尚未获得审批。
 
 1. **Reject the Invoiced Charge Per Unit:**由于差异超出容差限值，系统不接受发票中的 Charge Per Unit $7.00。
 2. **Adjust the Charge Per Unit:**系统会将 Charge Per Unit 调整为与采购订单或已批准的 Charge Per Unit 一致：
-   * Adjusted Charge Per Unit = $6.00（来自 PO）
+   * Adjusted Charge Per Unit = $6.00 (from PO)
 3. **Recalculate the Total Charge Amount:**系统会根据调整后的 Charge Per Unit 重新计算 Total Charge Amount：
    * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
    * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**

@@ -14,7 +14,7 @@ Una regla responde a tres preguntas:
 2. **Cuándo** se aplica la regla. Siempre, o solo para los documentos (o filas) que cumplen una condición; consulte [Rule Conditions (Applies when)](rule-conditions-applies-when.md).
 3. **Qué** debe cumplirse. Un campo debe estar rellenado, coincidir con un formato, estar dentro de un rango, coincidir con una lista, compararse correctamente con otro campo o cuadrar.
 
-Cuando la comprobación falla, DocBits marca el campo o la celda en la **pantalla de validación** y muestra su mensaje, exactamente igual que una comprobación integrada. Con la gravedad **Error**, el documento no se puede validar hasta que se corrija el problema; con **Advertencia**, el usuario solo ve un aviso.
+Cuando la comprobación falla, DocBits marca el campo o la celda en la **pantalla de validación** y muestra su mensaje, exactamente igual que una comprobación integrada. Con la gravedad **Error**, el documento no se puede validar hasta que se corrija el problema. Con **Advertencia**, el documento también queda retenido, pero el usuario puede liberarlo confirmando el mensaje en el campo, sin cambiar el valor; consulte [Confirmar una advertencia en la pantalla de validación](#acknowledge).
 
 Las reglas se definen por **tipo de documento** y se ejecutan en cada documento de ese tipo: durante el procesamiento y cada vez que se guarda el documento.
 
@@ -28,7 +28,7 @@ Las reglas se definen por **tipo de documento** y se ejecutan en cada documento 
 | La fecha de vencimiento no debe ser anterior a la fecha de la factura | ejecuciones de pago erróneas | **Comparar campos**: Due Date igual o posterior a Invoice Date |
 | Las líneas deben sumar el importe neto | solo la comprobación integrada fija | **Fórmula** `sum(row.NET_AMOUNT) == header.total_net_amount` con su propia tolerancia |
 | Solo se permiten las monedas que conoce su ERP | errores de exportación en el ERP | **List of Values** en Currency |
-| Avisar a los usuarios de valores inusuales sin bloquearlos | no es posible | cualquier regla con la gravedad **Advertencia** |
+| Señalar valores inusuales sin obligar a corregirlos | un script, o los usuarios deben recordarlo | cualquier regla con la gravedad **Advertencia**: el usuario confirma el valor con **Reconocer** |
 
 
 ## Activar las reglas de validación personalizadas
@@ -79,7 +79,7 @@ Haga clic en **New rule**. El constructor tiene tres pasos. **Test rule** y **Sa
 | Ajuste | Qué hace |
 | --- | --- |
 | **Nivel de regla** | Qué examina la regla y dónde se muestra el error; consulte [Niveles de regla](#niveles-de-regla). |
-| **Gravedad** | **Error** marca el campo como no válido y bloquea la validación. **Advertencia** muestra el mensaje pero nunca bloquea. |
+| **Gravedad** | **Error** marca el campo como no válido y bloquea la validación hasta que se corrija el valor. **Advertencia** también retiene el documento, pero el usuario puede liberarlo con **Reconocer** en la pantalla de validación sin cambiar el valor. |
 | **Rule Name** | Se muestra en la lista y a los administradores. Haga que describa la regla (“Supplier tax ID required for German invoices”). |
 | **Rule key** | Una clave técnica generada a partir del nombre. Se mantiene igual cuando más adelante cambia el nombre de la regla. Haga clic en el lápiz para elegir su propia clave antes del primer guardado; después queda fija. |
 | **Descripción** | Explicación opcional para otros administradores. |
@@ -224,9 +224,21 @@ Pruebe cada regla nueva al menos con un documento que deba fallar, uno que deba 
 * **En cada guardado** del documento en la pantalla de validación.
 * **Tras un cambio de regla**, los documentos existentes **no** se vuelven a comprobar todos a la vez. Cada documento se vuelve a comprobar con las nuevas reglas la próxima vez que se guarde o se reprocese. Los documentos ya exportados no se ven afectados.
 * Las reglas se ejecutan por orden de prioridad (y después por clave). Un campo muestra **un** error: si dos reglas fallan en el mismo campo, gana la primera; las reglas posteriores no lo sobrescriben.
-* Las advertencias se recopilan por separado y nunca ocultan un error.
+* Las advertencias se recopilan por separado y nunca ocultan un error: un campo que también incumple una regla estricta muestra solo el error y no hay nada que confirmar en él.
 * Si una regla no se puede evaluar (por ejemplo, una división por cero en una fórmula), se omite. Una regla defectuosa nunca marca un documento como no válido por error.
 
+
+## Confirmar una advertencia en la pantalla de validación <a id="acknowledge"></a>
+
+Una regla que falla con la gravedad **Advertencia** retiene el documento igual que un error: hasta que el campo se confirme, el documento no se puede validar. La diferencia está en lo que debe hacer el usuario.
+
+En la pantalla de validación, el mensaje de la regla aparece bajo el campo junto con el botón **Reconocer**. Un solo clic confirma todas las advertencias de ese campo sin cambiar su valor. El mensaje se sustituye entonces por la nota **Entendido. Cambiar el valor vuelve a preguntar.**
+
+La confirmación pertenece al valor para el que se dio. Si el usuario modifica el valor, lo vuelve a extraer o el campo se vuelve a comprobar con un resultado distinto, la advertencia reaparece y hay que confirmarla de nuevo. Un campo que muestra en su lugar un error estricto no se puede confirmar: en ese caso hay que corregir el valor.
+
+En un documento de solo lectura el botón no se muestra, por lo que una advertencia debe resolverla alguien que pueda editar el campo.
+
+El botón **Reconocer** se ofrece para los campos de cabecera.
 
 ## Registros <a id="logs"></a>
 
@@ -268,15 +280,15 @@ Header field · Error · *Due Date* · siempre · **Comparar campos** Due Date *
 **8. Sin facturas con fecha futura**
 Campo de encabezado · Error · *Fecha de factura* · siempre · **Comparar campos** Fecha de factura *en o antes (≤)* hoy.
 
-**9. Solo monedas aprobadas (solo aviso)**
-Header field · **Advertencia** · *Currency* · siempre · **List of Values** *approved_currencies* · Código `VALUE_NOT_ALLOWED`.
+**9. Solo monedas aprobadas (confirmar en lugar de corregir)**
+Header field · **Advertencia** · *Currency* · siempre · **List of Values** *approved_currencies* · Código `VALUE_NOT_ALLOWED`. El usuario debe confirmar la advertencia antes de que el documento se pueda validar.
 
 **10. Pedido de compra obligatorio a partir de 5.000**
 Campo de encabezado · Error · *Orden de Compra* · Aplica cuando *Monto Total* mayor a *5000* · **Required**.
 
 ## Buenas prácticas
 
-* **Empiece como advertencia.** Guarde una regla nueva con la gravedad **Advertencia**, obsérvela durante unos días (Test rule) y después cámbiela a **Error**.
+* **Empiece como advertencia.** Guarde una regla nueva con la gravedad **Advertencia**, obsérvela durante unos días (Test rule) y después cámbiela a **Error**. Los usuarios no tienen que corregir el valor, pero se les detiene hasta que confirmen cada coincidencia.
 * **Una regla, un mensaje.** Varias reglas pequeñas con mensajes claros son más fáciles de entender que una fórmula grande.
 * **Utilice Applies when en lugar de copias.** Una regla con una condición es mejor que cinco copias para cinco proveedores.
 * **Sea tolerante con el dinero.** Dé siempre una tolerancia a las fórmulas de importes.

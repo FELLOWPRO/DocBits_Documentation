@@ -1,6 +1,6 @@
 # Descritor da Estrutura EDI
 
-O objetivo principal do descritor da estrutura é delinear os elementos de uma mensagem EDI de maneira lógica e organizada, tornando mais fácil gerenciar e analisar os dados. Refletindo com precisão a hierarquia da mensagem.
+O objetivo principal do descritor da estrutura é delinear os elementos de uma mensagem EDI de maneira lógica e organizada, para que os dados sejam mais fáceis de gerenciar e analisar. Ele reflete a hierarquia da mensagem.
 
 ### Elementos do descritor da estrutura
 
@@ -40,40 +40,44 @@ O objetivo principal do descritor da estrutura é delinear os elementos de uma m
 {
     "N1": {
         "fields": [
-            "N1",  
-            "N2",   
-            "N3",   
-            "N4"    
+            "N1",
+            "N2",
+            "N3",
+            "N4"
         ]
     },
     "N9": {
         "fields": [
-            "N9"    
+            "N9"
         ],
         "loops": {
             "MSG01": {
                 "fields": [
-                    "MSG01"   
+                    "MSG01"
+                ]
             }
         }
     },
     "IT1": {
         "fields": [
-            "IT1",   
-            "QTY",   
-            "TXI",   
-            "REF"    
+            "IT1",
+            "QTY",
+            "TXI",
+            "REF"
+        ],
         "loops": {
             "SAC": {
                 "fields": [
-                    "SAC",   
-                    "TXI"    
+                    "SAC",
+                    "TXI"
+                ]
+            }
         }
     },
     "SAC": {
         "fields": [
-            "SAC",   
-            "TXI"    
+            "SAC",
+            "TXI"
         ]
     }
 }

@@ -17,7 +17,7 @@ Het systeem accepteert Charge Per Unit zoals gefactureerd en verwerkt de transac
   * Quantity: 500 units
   * Total Charge Amount: $2,500.00
 * **Invoice Received:**
-  * Charge Per Unit: $5.10 (afwijking 2%, binnen de tolerantie van ±3%)
+  * Charge Per Unit: $5.10 (variance 2%, within the ±3% tolerance)
   * Quantity: 500 units
   * Total Charge Amount: $2,550.00
 * **Tolerance Levels:**

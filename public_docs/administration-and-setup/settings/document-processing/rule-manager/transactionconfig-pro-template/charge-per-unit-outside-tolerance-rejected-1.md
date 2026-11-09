@@ -17,7 +17,7 @@ Het systeem past Charge Per Unit aan zodat deze overeenkomt met de inkooporder o
   * Quantity: 800 units
   * Total Charge Amount: $4,800.00
 * **Invoice Received:**
-  * Charge Per Unit: $7.00 (afwijking 16.67%, buiten de tolerantie van ±5%, afgewezen)
+  * Charge Per Unit: $7.00 (variance 16.67%, outside the ±5% tolerance, rejected)
   * Quantity: 800 units
   * Total Charge Amount: $5,600.00
 * **Tolerance Levels:**
@@ -27,7 +27,7 @@ Aangezien Charge Per Unit ($7.00) het aanvaardbare tolerantiebereik van 5% overs
 
 1. **Reject the Invoiced Charge Per Unit:** Het systeem accepteert de gefactureerde Charge Per Unit van $7.00 niet omdat de afwijking de tolerantielimiet overschrijdt.
 2. **Adjust the Charge Per Unit:** Het systeem past Charge Per Unit aan zodat deze overeenkomt met de inkooporder of de goedgekeurde Charge Per Unit:
-   * Adjusted Charge Per Unit = $6.00 (vanaf PO)
+   * Adjusted Charge Per Unit = $6.00 (from PO)
 3. **Recalculate the Total Charge Amount:** Het systeem herberekent het Total Charge Amount op basis van de aangepaste Charge Per Unit:
    * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
    * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**

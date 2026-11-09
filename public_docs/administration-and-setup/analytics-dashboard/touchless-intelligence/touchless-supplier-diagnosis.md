@@ -73,7 +73,7 @@ Als de eerste blokkade van een cluster een reden voor PO-matching is (bijvoorbee
 | Infor correct, importkopie oud of onvolledig | Import of ERP-integratie |
 | Waarden verschillen, afspraak nog onbekend | Inhoudelijke afstemming; oorzaak niet bevestigd |
 
-De AP-tegel bij de leverancier telt alleen goedkeuring; het AP-koppercentage omvat ook Pure. Leg de directe actie en blijvende oplossing apart vast. Een kleine ingreep kan de factuur afronden terwijl de terugkerende oorzaak blijft bestaan.
+De AP-tegel bij de leverancier telt alleen goedkeuring; het AP-koppercentage omvat ook Pure. Leg de directe actie en blijvende oplossing apart vast. Een kleine ingreep kan de factuur afronden terwijl de terugkerende oorzaak blijft bestaan. Eén cluster bewijst de historische inhoud van Infor niet. Zie het [uitgewerkte Infor-voorbeeld](touchless-po-matching-diagnosis.md#worked-example-correct-extraction-different-infor-data).
 
 Tools en menselijke acties worden uitgelegd bij [Touchless met MCP](touchless-mcp.md).
 
@@ -84,6 +84,6 @@ Tools en menselijke acties worden uitgelegd bij [Touchless met MCP](touchless-mc
 * [Documentspoor](touchless-document-trace.md)
 * [Wijzigingsvoorstellen en rapporten](touchless-change-proposals.md)
 
-<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+<!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 
-<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->
+<!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

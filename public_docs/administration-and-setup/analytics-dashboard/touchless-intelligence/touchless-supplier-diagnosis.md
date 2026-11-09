@@ -73,7 +73,7 @@ Jeśli pierwszą blokadą klastra jest powód związany z dopasowaniem PO (na pr
 | Infor poprawny, importowana kopia stara/niepełna | Import lub integracja ERP |
 | Różne wartości, uzgodnienie nieznane | Wyjaśnienie biznesowe; przyczyna niepotwierdzona |
 
-Kategoria AP dostawcy to samo zatwierdzenie, a łączny AP obejmuje też Pure. Oddziel doraźne zakończenie faktury od trwałego usunięcia przyczyny.
+Kategoria AP dostawcy to samo zatwierdzenie, a łączny AP obejmuje też Pure. Oddziel doraźne zakończenie faktury od trwałego usunięcia przyczyny. Sam klaster nie dowodzi historycznej zawartości Infor. Zobacz [przykład praktyczny dla Infor](touchless-po-matching-diagnosis.md#worked-example-correct-extraction-different-infor-data).
 
 Narzędzia i klasyfikację działań opisuje [Touchless przez MCP](touchless-mcp.md).
 
@@ -84,6 +84,6 @@ Narzędzia i klasyfikację działań opisuje [Touchless przez MCP](touchless-mcp
 * [Ślad dokumentu](touchless-document-trace.md)
 * [Propozycje zmian i raporty](touchless-change-proposals.md)
 
-<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+<!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 
-<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->
+<!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

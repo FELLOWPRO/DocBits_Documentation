@@ -32,7 +32,7 @@ Ponieważ opłata jednostkowa ($7.00) przekracza dopuszczalny zakres tolerancji 
    * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
    * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
 4. **Generate a Debit Note:** Ponieważ pierwotna suma faktury była wyższa niż suma skorygowana, system generuje notę debetową na zawyżoną kwotę:
-   * **Kwota noty debetowej = Suma oryginalnej faktury – Skorygowana całkowita kwota obciążenia**
+   * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
    * **Debit Note Amount = $5,600.00 - $4,800.00 = $800.00**
 5. **Process the Invoice:** System przetwarza fakturę zawierającą skorygowaną łączną kwotę obciążenia wynoszącą $4,800.00 i wystawia notę debetową na kwotę $800.00 w celu rozliczenia nadmiernej kwoty.
 

@@ -30,6 +30,14 @@ Na parte superior da página, um banner leva ao **Painel de Análise**, com grá
 
 Os resultados são paginados — use os controles na parte inferior para navegar entre as páginas.
 
+## Detalhes do registo
+
+Selecione uma linha de registo para abrir a vista de detalhes. O resumo mostra a gravidade, o carimbo de data e hora, o serviço e o ID do registo, com a mensagem do evento por baixo.
+
+A secção **Detalhes do registo** contém o evento completo formatado em JSON. Consoante o evento, pode incluir metadados como a origem, o ambiente, o utilizador, o recurso, a ação e informações de rede ou do cliente. Os campos sem valor podem aparecer como `null`.
+
+Selecione o ícone de cópia no canto inferior direito de **Detalhes do registo** para copiar o registo JSON completo para a área de transferência. Use a seta de retrocesso junto a **Registo de atividade** para voltar à lista.
+
 ## Ações do Rodapé
 
 | Ação | Descrição |

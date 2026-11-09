@@ -23,7 +23,7 @@ Le système ajuste les frais par unité pour correspondre au bon de commande ou 
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±5%
 
-Étant donné que les frais par unité ($7.00) dépassent la plage de tolérance acceptable de 5 % et n'ont pas été approuvés, le système :
+Étant donné que Charge Per Unit ($7.00) dépasse la plage de tolérance acceptable de 5 % et n'a pas été approuvé, le système :
 
 1. **Reject the Invoiced Charge Per Unit:** Le système n'accepte pas les frais facturés par unité de $7.00 en raison de l'écart dépassant la limite de tolérance.
 2. **Adjust the Charge Per Unit:** Le système ajuste les frais par unité pour qu'ils correspondent au bon de commande ou aux frais par unité approuvés :

@@ -73,7 +73,7 @@ Se o primeiro bloqueio de um cluster for um motivo de PO Matching (por exemplo, 
 | Infor correto, cópia antiga/incompleta | Importação ou integração ERP |
 | Valores diferentes, acordo desconhecido | Esclarecimento de negócio; causa não confirmada |
 
-A categoria AP do fornecedor é apenas aprovação; a taxa combinada inclui também Pure. Separe resolução imediata da fatura e eliminação duradoura da causa.
+A categoria AP do fornecedor é apenas aprovação; a taxa combinada inclui também Pure. Separe resolução imediata da fatura e eliminação duradoura da causa. Um cluster sozinho não prova o conteúdo histórico no Infor. Veja o [exemplo prático do Infor](touchless-po-matching-diagnosis.md#worked-example-correct-extraction-different-infor-data).
 
 Ferramentas e classificação de ações em [Touchless com MCP](touchless-mcp.md).
 
@@ -84,6 +84,6 @@ Ferramentas e classificação de ações em [Touchless com MCP](touchless-mcp.md
 * [Rastreamento do documento](touchless-document-trace.md)
 * [Propostas de alteração e relatórios](touchless-change-proposals.md)
 
-<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+<!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 
-<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->
+<!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

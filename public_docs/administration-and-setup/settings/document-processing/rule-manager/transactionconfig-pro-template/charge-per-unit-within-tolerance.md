@@ -17,7 +17,7 @@ System przyjmuje opłatę jednostkową zgodnie z fakturą i przetwarza transakcj
   * Quantity: 500 units
   * Całkowita kwota opłaty: $2,500.00
 * **Invoice Received:**
-  * Opłata za jednostkę: $5.10 (w granicach tolerancji 2%)
+  * Opłata za jednostkę: $5.10 (odchylenie 2%, w granicach tolerancji ±3%)
   * Quantity: 500 units
   * Całkowita kwota opłaty: $2,550.00
 * **Tolerance Levels:**

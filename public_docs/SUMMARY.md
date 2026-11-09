@@ -144,7 +144,7 @@
     * [Informacje o firmie](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Preferencje firmy](administration-and-setup/settings/global-settings/company-information/company-preferences.md)
       * [Asystent ustawień: włączanie](administration-and-setup/settings/global-settings/company-information/settings-assistant.md)
-        * [Asystent ustawień: co potrafi czat](administration-and-setup/settings/global-settings/company-information/settings-assistant-chat.md)
+        * [Asystent ustawień: co potrafi czat](administration-and-setup/settings/global-settings/company-information/settings-assistant/settings-assistant-chat.md)
       * [Definiowanie Aplikacja-Kolor w Ustawieniach Firmy](administration-and-setup/settings/global-settings/company-information/defining-app-color-in-company-settings.md)
       * [Uwierzytelnianie dwuskładnikowe (administrator)](administration-and-setup/settings/global-settings/company-information/two-factor-authentication.md)
     * [Grupy, użytkownicy i uprawnienia](administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md)

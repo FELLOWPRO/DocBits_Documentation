@@ -2,7 +2,7 @@
 
 ## Przegląd
 
-Czat **Asystenta ustawień** odpowiada na pytania o Twoje ustawienia, ostrzega, gdy import przestaje działać, i, po Twoim potwierdzeniu, zmienia za Ciebie ustawienie. Zanim go użyjesz, administrator musi [włączyć asystenta](settings-assistant.md).
+Czat **Asystenta ustawień** odpowiada na pytania o Twoje ustawienia, ostrzega, gdy import przestaje działać, i, po Twoim potwierdzeniu, zmienia za Ciebie ustawienie. Zanim go użyjesz, administrator musi [włączyć asystenta](README.md).
 
 ### Co potrafi
 
@@ -41,7 +41,7 @@ Kliknij pytanie, a zostanie wysłane od razu. Pod trzema pytaniami panel mówi *
 
 Pytasz **„Jak zmienić adres naszej firmy?"**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-pl.png" alt="Asystent odpowiada ścieżką do adresu firmy i przyciskiem Open setting"><figcaption><p>Odpowiedź wskazuje miejsce, a karta podaje dokładną ścieżkę i przycisk <strong>Open setting</strong>.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings-assistant-answer-company-address-pl.png" alt="Asystent odpowiada ścieżką do adresu firmy i przyciskiem Open setting"><figcaption><p>Odpowiedź wskazuje miejsce, a karta podaje dokładną ścieżkę i przycisk <strong>Open setting</strong>.</p></figcaption></figure>
 
 Odpowiedź mówi, gdzie znajduje się adres. Karta poniżej pokazuje ścieżkę (**Settings / Company Settings**) i przycisk **Open setting**. Kliknij go: DocBits otwiera stronę, przewija do ustawienia i podświetla je na kilka sekund.
 
@@ -49,7 +49,7 @@ Odpowiedź mówi, gdzie znajduje się adres. Karta poniżej pokazuje ścieżkę 
 
 Pytasz **„Jak włączyć wykrywanie kodów kreskowych?"**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-pl.png" alt="Asystent wyjaśnia trzy ustawienia kodów kreskowych i kiedy włączyć każde z nich"><figcaption><p>Gdy słowo pasuje do kilku ustawień, asystent wymienia każde z nich z informacją <strong>Enable when</strong> (Włącz, gdy) i <strong>Leave off when</strong> (Zostaw wyłączone, gdy).</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings-assistant-answer-barcode-pl.png" alt="Asystent wyjaśnia trzy ustawienia kodów kreskowych i kiedy włączyć każde z nich"><figcaption><p>Gdy słowo pasuje do kilku ustawień, asystent wymienia każde z nich z informacją <strong>Enable when</strong> (Włącz, gdy) i <strong>Leave off when</strong> (Zostaw wyłączone, gdy).</p></figcaption></figure>
 
 „Wykrywanie kodów kreskowych" może oznaczać trzy różne ustawienia, więc asystent pyta *Did you mean: QR Code Extraction, Barcode Assignment, or Split Document on Barcode?* (Czy chodziło o: QR Code Extraction, Barcode Assignment czy Split Document on Barcode?) i wyjaśnia każde z nich:
 
@@ -61,7 +61,7 @@ Pytasz **„Jak włączyć wykrywanie kodów kreskowych?"**
 
 Pytasz **„Dlaczego dopasowanie PO nie jest aktywne?"**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-pl.png" alt="Asystent pokazuje bieżącą wartość każdego ustawienia dopasowania PO"><figcaption><p>Przy pytaniu „dlaczego" asystent odczytuje Twoją konfigurację i pokazuje każde ustawienie z jego wartością <strong>Current</strong> (Bieżąca).</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings-assistant-answer-po-matching-pl.png" alt="Asystent pokazuje bieżącą wartość każdego ustawienia dopasowania PO"><figcaption><p>Przy pytaniu „dlaczego" asystent odczytuje Twoją konfigurację i pokazuje każde ustawienie z jego wartością <strong>Current</strong> (Bieżąca).</p></figcaption></figure>
 
 Asystent odczytuje ustawienia Twojej organizacji i raportuje, co znalazł. W tym przykładzie dopasowanie PO jest **On** (włączone) dla wszystkich czterech typów dokumentów, a ustawienie **Auto export if PO matched 100%** jest **Off** (wyłączone), więc automatyczne dopasowanie i eksport nie działają. Każda karta pokazuje **Current: On / Off** i przycisk **Open setting**, więc możesz od razu to naprawić.
 
@@ -69,20 +69,20 @@ Asystent odczytuje ustawienia Twojej organizacji i raportuje, co znalazł. W tym
 
 Otwierasz **Ustawienia → Typy dokumentów** i pytasz **„Czy dopasowanie PO jest aktywne dla faktur?"** (to pytanie jest też jedną z trzech sugestii na tej stronie).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-pl.png" alt="Strona Typy dokumentów w Ustawieniach z Asystentem ustawień po prawej, odpowiadającym, że dopasowanie PO jest włączone dla faktur, i pokazującym trzy powiązane ustawienia"><figcaption><p>Strona <strong>Document Types</strong> (Typy dokumentów) z asystentem po prawej. Odpowiedź mówi, że <strong>PO Matching is active for invoices in your organisation</strong> (dopasowanie PO jest aktywne dla faktur w Twojej organizacji) i pokazuje trzy powiązane ustawienia: <strong>PO Matching</strong> (Current: On), <strong>PO match rules</strong> i <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-pl.png" alt="Strona Typy dokumentów w Ustawieniach z Asystentem ustawień po prawej, odpowiadającym, że dopasowanie PO jest włączone dla faktur, i pokazującym trzy powiązane ustawienia"><figcaption><p>Strona <strong>Document Types</strong> (Typy dokumentów) z asystentem po prawej. Odpowiedź mówi, że <strong>PO Matching is active for invoices in your organisation</strong> (dopasowanie PO jest aktywne dla faktur w Twojej organizacji) i pokazuje trzy powiązane ustawienia: <strong>PO Matching</strong> (Current: On), <strong>PO match rules</strong> i <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
 
 Asystent odczytuje ustawienie dla typu dokumentu i dodaje ustawienia, które z nim się wiążą. W tym przykładzie dopasowanie jest włączone, ale automatyczny eksport po 100-procentowym dopasowaniu jest wyłączony, więc dopasowane faktury nadal czekają na człowieka. Każda karta ma przycisk **Open setting**.
 
-* Do **reguł dopasowania i tolerancji** użyj strony [Zasady Dopasowywania Zamówień Zakupu](../document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
-* Aby zobaczyć, **dlaczego dokumenty dostawcy nie są dopasowywane**, otwórz [Touchless Intelligence: Diagnoza dopasowania PO](../../../touchless-po-matching-diagnosis.md). Pokazuje powód, dotknięte dokumenty i schemat decyzyjny.
+* Do **reguł dopasowania i tolerancji** użyj strony [Zasady Dopasowywania Zamówień Zakupu](../../document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+* Aby zobaczyć, **dlaczego dokumenty dostawcy nie są dopasowywane**, otwórz [Touchless Intelligence: Diagnoza dopasowania PO](../../../../touchless-po-matching-diagnosis.md). Pokazuje powód, dotknięte dokumenty i schemat decyzyjny.
 
 ### Przykład 5: Walidacja pól (niestandardowe reguły walidacji)
 
 Na stronie **Ustawienia → Typy dokumentów → Niestandardowe reguły walidacji** (Custom Validation Rules) panel wita Cię w kontekście tej strony i sugeruje trzy pytania.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-pl.png" alt="Strona Niestandardowe reguły walidacji w Ustawieniach z listą reguł pośrodku i Asystentem ustawień z trzema sugerowanymi pytaniami po prawej"><figcaption><p>Strona <strong>Custom Validation Rules</strong> z asystentem po prawej. Lista reguł jest pośrodku, a trzy sugestie panelu to: <strong>Which validation rules exist for this document type?</strong> (Jakie reguły walidacji istnieją dla tego typu dokumentu?), <strong>How do I create a new validation rule?</strong> (Jak utworzyć nową regułę walidacji?) i <strong>What happens when a validation rule fails?</strong> (Co się dzieje, gdy reguła walidacji nie przechodzi?)</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-pl.png" alt="Strona Niestandardowe reguły walidacji w Ustawieniach z listą reguł pośrodku i Asystentem ustawień z trzema sugerowanymi pytaniami po prawej"><figcaption><p>Strona <strong>Custom Validation Rules</strong> z asystentem po prawej. Lista reguł jest pośrodku, a trzy sugestie panelu to: <strong>Which validation rules exist for this document type?</strong> (Jakie reguły walidacji istnieją dla tego typu dokumentu?), <strong>How do I create a new validation rule?</strong> (Jak utworzyć nową regułę walidacji?) i <strong>What happens when a validation rule fails?</strong> (Co się dzieje, gdy reguła walidacji nie przechodzi?)</p></figcaption></figure>
 
-Użyj tu asystenta, aby **znaleźć** właściwe ustawienie i dowiedzieć się, co robi reguła. Aby **utworzyć lub zmienić** regułę, pracuj na samej stronie: zobacz [Niestandardowe reguły walidacji](../document-types/custom-validation-rules.md) i [Duplikowanie niestandardowej reguły walidacji](../document-types/duplicate-a-custom-validation-rule.md). Jeśli asystent utworzy dla Ciebie regułę, jest ona zawsze tworzona jako **nieaktywna**, a włączasz ją samodzielnie.
+Użyj tu asystenta, aby **znaleźć** właściwe ustawienie i dowiedzieć się, co robi reguła. Aby **utworzyć lub zmienić** regułę, pracuj na samej stronie: zobacz [Niestandardowe reguły walidacji](../../document-types/custom-validation-rules.md) i [Duplikowanie niestandardowej reguły walidacji](../../document-types/duplicate-a-custom-validation-rule.md). Jeśli asystent utworzy dla Ciebie regułę, jest ona zawsze tworzona jako **nieaktywna**, a włączasz ją samodzielnie.
 
 {% hint style="info" %}
 Nie myl **Niestandardowych reguł walidacji** (reguł dla pól typu dokumentu) z **Walidacją e-faktur** (E-Invoice Validation) (sprawdzaniem plików XRechnung, ZUGFeRD i Factur-X). To dwie różne strony.
@@ -111,7 +111,7 @@ Jeśli pytanie wykracza poza obszar ustawień albo asystent nie znajduje nic na 
 
 Gdy coś w Twojej konfiguracji przestało działać, u góry panelu pojawia się **czerwona karta**. Nie musisz pytać. Asystent sprawdza ponownie za każdym razem, gdy otwierasz panel i gdy wracasz do karty przeglądarki.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded-pl.png" alt="Rozwinięta karta ustalenia pokazująca jedną skrzynkę pocztową wyłączoną po trzech nieudanych próbach"><figcaption><p>Rozwinięte ustalenie: skrzynka pocztowa, jej stan (<strong>Switched off</strong>), liczba nieudanych prób i powód.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings-assistant-finding-expanded-pl.png" alt="Rozwinięta karta ustalenia pokazująca jedną skrzynkę pocztową wyłączoną po trzech nieudanych próbach"><figcaption><p>Rozwinięte ustalenie: skrzynka pocztowa, jej stan (<strong>Switched off</strong>), liczba nieudanych prób i powód.</p></figcaption></figure>
 
 Obecnie są dwie kontrole:
 
@@ -132,7 +132,7 @@ Wiersz podsumowania mówi, jak poważna jest sytuacja:
 | --- | --- |
 | *Switched off: nothing is being imported from here.* (Wyłączone: nic stąd nie jest importowane.) | Wszystkie dotknięte skrzynki są wyłączone. Nic nie przychodzi. |
 | *Still being retried, but imports are probably failing.* (Nadal ponawiane, ale importy prawdopodobnie zawodzą.) | DocBits wciąż próbuje, ale logowanie nie działa. |
-| *1 switched off, 2 still being retried.* (1 wyłączona, 2 nadal ponawiane.) | Mieszanka obu. |
+| *1 switched off, 2 still being retried.* | Mieszanka obu. |
 
 ### Powody, które możesz zobaczyć
 
@@ -165,7 +165,7 @@ Asystent nigdy nie zmienia niczego samodzielnie. Każda zmiana przebiega według
 1. **Podgląd**: widzisz ustawienie, jego zakres (**Organization**) i wartość **bieżąca → proponowana**. Nic nie jest jeszcze zapisane.
 2. **Twoje potwierdzenie**: klikasz **Confirm** (lub **Yes**). Może to zrobić tylko administrator organizacji.
 3. **Wiersz z wynikiem**: czat pokazuje **Changed: (setting) → (value)**.
-4. **Cofnięcie**: przycisk z odliczaniem („14 min left") pozwala wycofać zmianę. Zmiana jest też zapisywana w logu.
+4. **Cofnięcie**: przycisk z odliczaniem (np. „14 min left") pozwala wycofać zmianę w ciągu 15 minut. Zmiana jest też zapisywana w logu.
 
 **Przykład (poglądowy).** Karta rekomendacji dla ustawienia, które asystent może zapisać, pokazuje przycisk **Apply** (Zastosuj) obok **Open setting**. Załóżmy, że karta dotyczy **Auto export if PO matched 100%**. Klikasz **Apply**. Okno **Apply this change?** pokazuje *Current: Off → Proposed: On*. Klikasz **Confirm**. Pojawia się komunikat **Setting updated.** z przyciskiem **Undo**. Jeśli zauważysz pomyłkę w ciągu około 15 minut, klikasz **Undo** i stara wartość wraca. Karty bez przycisku **Apply** służą tylko do nawigacji: użyj **Open setting** i zmień wartość samodzielnie.
 
@@ -190,7 +190,7 @@ Jeśli poprosisz o **regułę transformacji**, asystent najpierw pokazuje **Rule
 
 * nazwę reguły i zwykłe zdanie („Usuń myślniki z numeru VAT dostawcy"),
 * cel (pole nagłówka, kolumna tabeli, wiersze tabeli, atrybut dokumentu),
-* test na przykładowych dokumentach: **Applies to 4 of 5 samples** (Dotyczy 4 z 5 próbek), z każdym dokumentem oznaczonym jako **Applies** (Dotyczy), **Does not apply** (Nie dotyczy) lub **Applies, no change** (Dotyczy, bez zmiany).
+* test na przykładowych dokumentach: **Applies to 4 of 5 samples**, z każdym dokumentem oznaczonym jako **Applies** (Dotyczy), **Does not apply** (Nie dotyczy) lub **Applies, no change** (Dotyczy, bez zmiany).
 
 Przyciskiem **Create rule** (Utwórz regułę) zapisujesz ją. Reguła jest tworzona jako **nieaktywna**: aktywujesz ją samodzielnie po sprawdzeniu. Utworzenie możesz cofnąć w ciągu **15 minut**. Potem usuń regułę na liście reguł. Przez asystenta można utworzyć najwyżej **10 reguł na godzinę**.
 
@@ -222,8 +222,8 @@ Rozmowa przechowuje w Twojej przeglądarce ostatnie 50 tur. Pytanie może mieć 
 
 ## Powiązane strony
 
-* [Asystent ustawień: włączanie](settings-assistant.md)
-* [Panel Analityczny](../../../analytics-dashboard.md)
-* [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md)
+* [Asystent ustawień: włączanie](README.md)
+* [Panel Analityczny](../../../../analytics-dashboard.md)
+* [DocBits MCP](../../../../../advanced-functions-and-tools/docbits-mcp/README.md)
 
-<!-- Source notes (not shown): the assistant answers for custom validation rules and for PO tolerance / "why not matched" questions are weak on dev (tracked in the CORE project, CORE-6433), so this page shows only the greeting for validation and the PO matching status answer. Re-test and add answer screenshots after the fix. facts read from the doc2app code on dev (SettingsAssistant, AssistantChat components) and checked in the dev UI on 14 Oct 2026. "Fast tier, no organisation switch" and "documentation search not configured on Sandbox yet" come from the feature team (CORE-6379). Strings for the apply/action cards not verified in the UI are described, not quoted. -->
+<!-- Source notes (not shown): the assistant answers for custom validation rules and for PO tolerance / "why not matched" questions are weak on dev (tracked in the CORE project), so this page shows only the greeting for validation and the PO matching status answer. Re-test and add answer screenshots after the fix. Facts read from the settings assistant code on dev and checked in the dev UI in October. "Fast tier, no organisation switch" and "documentation search not configured on Sandbox yet" come from the feature team. Strings for the apply/action cards not verified in the UI are described, not quoted. -->

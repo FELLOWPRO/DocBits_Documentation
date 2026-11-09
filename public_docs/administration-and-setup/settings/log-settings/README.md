@@ -30,6 +30,14 @@ En la parte superior de la página, un banner enlaza con el **Panel de análisis
 
 Los resultados están paginados: utilice los controles de la parte inferior para navegar por las páginas.
 
+## Detalles del registro
+
+Seleccione una fila de registro para abrir su vista de detalle. El resumen muestra la gravedad, la marca de tiempo, el servicio y el ID del registro, con el mensaje del evento debajo.
+
+La sección **Detalles del registro** contiene el evento completo en formato JSON. Según el evento, esto puede incluir metadatos como el origen, el entorno, el usuario, el recurso, la acción y la información de red o del cliente. Los campos sin valor pueden aparecer como `null`.
+
+Seleccione el icono de copiar en la esquina inferior derecha de **Detalles del registro** para copiar el registro JSON completo al portapapeles. Utilice la flecha de retroceso junto a **Registro de actividad** para volver a la lista.
+
 ## Acciones del pie de página
 
 | Acción | Descripción |

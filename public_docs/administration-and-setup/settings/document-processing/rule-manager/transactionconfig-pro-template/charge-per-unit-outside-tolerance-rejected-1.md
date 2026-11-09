@@ -1,6 +1,6 @@
 # Encargo por unidade fora da tolerância (Rejeitado)
 
-> **Nota sobre o exemplo:** Este cenário ilustra um mapeamento de exportação configurado. A saída real, os montantes, o sinal e o tipo de documento dependem do mapeamento ativo, das expressões das regras e das decisões de aprovação. A geração de dados para uma nota de débito ou de crédito não significa, por si só, a emissão de um documento fiscal válido. Verifique a configuração e o resultado no ERP; este exemplo não garante conformidade legal.
+> **Nota sobre o exemplo:** O cenário seguinte é um mapeamento configurado a título de exemplo, não um modelo padrão cuja implantação tenha sido verificada. A saída real, os valores, os sinais e os tipos de documento dependem das regras e expressões `conflict_resolution` ativas, do mapeamento de exportação e das decisões de aprovação. Qualquer nota de débito ou de crédito descrita abaixo depende dessa configuração; o exemplo não garante emissão automática nem conformidade legal.
 
 ## Cenário:
 
@@ -17,7 +17,7 @@ O sistema ajusta o encargo por unidade ao pedido de compra ou aos valores aprova
   * Quantidade: 800 unidades
   * Valor total dos encargos: $4,800.00
 * **Fatura recebida:**
-  * Encargo por unidade: $7.00 (fora da tolerância de 16.67%, rejeitado)
+  * Encargo por unidade: $7.00 (variação 16.67%, fora da tolerância de ±5%, rejeitado)
   * Quantidade: 800 unidades
   * Valor total dos encargos: $5,600.00
 * **Níveis de tolerância:**

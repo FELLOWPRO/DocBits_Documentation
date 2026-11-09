@@ -1,6 +1,6 @@
 # Encargo por unidade dentro da tolerância
 
-> **Nota sobre o exemplo:** Este cenário ilustra um mapeamento de exportação configurado. A saída real, os montantes, o sinal e o tipo de documento dependem do mapeamento ativo, das expressões das regras e das decisões de aprovação. A geração de dados para uma nota de débito ou de crédito não significa, por si só, a emissão de um documento fiscal válido. Verifique a configuração e o resultado no ERP; este exemplo não garante conformidade legal.
+> **Nota sobre o exemplo:** O cenário seguinte é um mapeamento configurado a título de exemplo, não um modelo padrão cuja implantação tenha sido verificada. A saída real, os valores, os sinais e os tipos de documento dependem das regras e expressões `conflict_resolution` ativas, do mapeamento de exportação e das decisões de aprovação. Qualquer nota de débito ou de crédito descrita abaixo depende dessa configuração; o exemplo não garante emissão automática nem conformidade legal.
 
 ## Cenário:
 
@@ -17,7 +17,7 @@ O sistema aceita o encargo por unidade faturado e processa a transação sem aju
   * Quantidade: 500 unidades
   * Valor total dos encargos: $2,500.00
 * **Fatura recebida:**
-  * Encargo por unidade: $5.10 (dentro da tolerância de 2%)
+  * Encargo por unidade: $5.10 (variação 2%, dentro da tolerância de ±3%)
   * Quantidade: 500 unidades
   * Valor total dos encargos: $2,550.00
 * **Níveis de tolerância:**

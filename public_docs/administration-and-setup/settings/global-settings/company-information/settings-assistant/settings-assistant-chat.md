@@ -2,7 +2,7 @@
 
 ## Visão geral
 
-O chat do **Assistente de Configurações** responde a perguntas sobre as suas configurações, avisa quando uma importação para de funcionar e, com a sua confirmação, altera uma configuração para você. Antes de usá-lo, um administrador precisa [ativar o assistente](settings-assistant.md).
+O chat do **Assistente de Configurações** responde a perguntas sobre as suas configurações, avisa quando uma importação para de funcionar e, com a sua confirmação, altera uma configuração para você. Antes de usá-lo, um administrador precisa [ativar o assistente](README.md).
 
 ### O que ele pode fazer
 
@@ -41,7 +41,7 @@ Clique em uma pergunta e ela é enviada imediatamente. Abaixo das três pergunta
 
 Você pergunta **"Como altero a morada da nossa empresa?"** (Como altero o endereço da empresa?).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-pt.png" alt="O assistente responde com o caminho até o endereço da empresa e um botão Abrir configuração"><figcaption><p>A resposta indica o local, e o cartão mostra o caminho exato e um botão <strong>Open setting</strong>.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings-assistant-answer-company-address-pt.png" alt="O assistente responde com o caminho até o endereço da empresa e um botão Abrir configuração"><figcaption><p>A resposta indica o local, e o cartão mostra o caminho exato e um botão <strong>Open setting</strong>.</p></figcaption></figure>
 
 A resposta diz onde o endereço fica. O cartão abaixo mostra o caminho (**Settings / Company Settings**) e o botão **Open setting**. Clique nele: o DocBits abre a página, rola até a configuração e a destaca por alguns segundos.
 
@@ -49,7 +49,7 @@ A resposta diz onde o endereço fica. O cartão abaixo mostra o caminho (**Setti
 
 Você pergunta **"Como ativo a deteção de códigos de barras?"** (Como habilito a detecção de código de barras?).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-pt.png" alt="O assistente explica as três configurações de código de barras e quando habilitar cada uma"><figcaption><p>Quando uma palavra corresponde a várias configurações, o assistente lista cada uma com <strong>Enable when</strong> e <strong>Leave off when</strong>.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings-assistant-answer-barcode-pt.png" alt="O assistente explica as três configurações de código de barras e quando habilitar cada uma"><figcaption><p>Quando uma palavra corresponde a várias configurações, o assistente lista cada uma com <strong>Enable when</strong> e <strong>Leave off when</strong>.</p></figcaption></figure>
 
 "Detecção de código de barras" pode significar três configurações diferentes. Por isso o assistente pergunta *Did you mean: QR Code Extraction, Barcode Assignment, or Split Document on Barcode?* e explica cada uma:
 
@@ -61,7 +61,7 @@ Você pergunta **"Como ativo a deteção de códigos de barras?"** (Como habilit
 
 Você pergunta **"Porque não está ativa a correspondência de encomendas?"** (Por que o PO Matching não está ativo?).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-pt.png" alt="O assistente mostra o valor atual de cada configuração de PO Matching"><figcaption><p>Em uma pergunta do tipo "por que", o assistente lê a sua configuração e mostra cada configuração com o seu valor <strong>Current</strong> (atual).</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings-assistant-answer-po-matching-pt.png" alt="O assistente mostra o valor atual de cada configuração de PO Matching"><figcaption><p>Em uma pergunta do tipo "por que", o assistente lê a sua configuração e mostra cada configuração com o seu valor <strong>Current</strong> (atual).</p></figcaption></figure>
 
 O assistente lê as configurações da sua organização e informa o que encontrou. Neste exemplo, o PO Matching está **On** (ativado) para os quatro tipos de documento, e a configuração **Auto export if PO matched 100%** está **Off** (desativada), então o matching e a exportação automáticos não são executados. Cada cartão mostra **Current: On / Off** e um botão **Open setting**, para que você possa corrigir na hora.
 
@@ -69,20 +69,20 @@ O assistente lê as configurações da sua organização e informa o que encontr
 
 Você abre **Configurações → Tipos de documento** e pergunta **"Is PO matching active for invoices?"** (O PO Matching está ativo para faturas?). Esta pergunta também é uma das três sugestões nessa página.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-pt.png" alt="A página Tipos de documento em Configurações com o Assistente de Configurações à direita, respondendo que o PO Matching está ativo para faturas e mostrando três configurações relacionadas"><figcaption><p>A página <strong>Document Types</strong> com o assistente à direita. A resposta diz <strong>PO Matching is active for invoices in your organization</strong> e mostra três configurações relacionadas: <strong>PO Matching</strong> (Current: On), as <strong>PO match rules</strong> e <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-pt.png" alt="A página Tipos de documento em Configurações com o Assistente de Configurações à direita, respondendo que o PO Matching está ativo para faturas e mostrando três configurações relacionadas"><figcaption><p>A página <strong>Document Types</strong> com o assistente à direita. A resposta diz <strong>PO Matching is active for invoices in your organization</strong> e mostra três configurações relacionadas: <strong>PO Matching</strong> (Current: On), as <strong>PO match rules</strong> e <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
 
 O assistente lê a configuração do tipo de documento e acrescenta as configurações que pertencem a ela. Neste exemplo, o matching está ativado, mas a exportação automática após um match de 100 % está desativada, então as faturas com match continuam esperando por uma pessoa. Cada cartão tem um botão **Open setting**.
 
-* Para as **regras e tolerâncias de matching**, use a página [Regras de matching de pedidos de compra](../document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
-* Para ver **por que os documentos de um fornecedor não têm match**, abra [Touchless Intelligence: diagnóstico de PO Matching](../../../touchless-po-matching-diagnosis.md). Ela mostra o motivo, os documentos afetados e o fluxo de decisão.
+* Para as **regras e tolerâncias de matching**, use a página [Regras de matching de pedidos de compra](../../document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+* Para ver **por que os documentos de um fornecedor não têm match**, abra [Touchless Intelligence: diagnóstico de PO Matching](../../../../touchless-po-matching-diagnosis.md). Ela mostra o motivo, os documentos afetados e o fluxo de decisão.
 
 ### Exemplo 5: validação de campos (regras de validação personalizadas)
 
 Na página **Configurações → Tipos de documento → Regras de validação personalizadas**, o painel cumprimenta você por essa página e sugere três perguntas.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-pt.png" alt="A página Regras de validação personalizadas em Configurações com a lista de regras no meio e o Assistente de Configurações com três perguntas sugeridas à direita"><figcaption><p>A página <strong>Custom Validation Rules</strong> com o assistente à direita. A lista de regras fica no meio, e as três sugestões do painel são: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> e <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-pt.png" alt="A página Regras de validação personalizadas em Configurações com a lista de regras no meio e o Assistente de Configurações com três perguntas sugeridas à direita"><figcaption><p>A página <strong>Custom Validation Rules</strong> com o assistente à direita. A lista de regras fica no meio, e as três sugestões do painel são: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> e <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
 
-Use o assistente aqui para **encontrar** a configuração certa e para saber o que uma regra faz. Para **criar ou alterar** uma regra, trabalhe na própria página: veja [Regras de validação personalizadas](../document-types/custom-validation-rules.md) e [Duplicar uma regra de validação personalizada](../document-types/duplicate-a-custom-validation-rule.md). Se o assistente criar uma regra para você, ela sempre é criada **inativa**, e é você quem a ativa.
+Use o assistente aqui para **encontrar** a configuração certa e para saber o que uma regra faz. Para **criar ou alterar** uma regra, trabalhe na própria página: veja [Regras de validação personalizadas](../../document-types/custom-validation-rules.md) e [Duplicar uma regra de validação personalizada](../../document-types/duplicate-a-custom-validation-rule.md). Se o assistente criar uma regra para você, ela sempre é criada **inativa**, e é você quem a ativa.
 
 {% hint style="info" %}
 Não confunda **Regras de validação personalizadas** (regras para os campos de um tipo de documento) com **E-Invoice Validation** (a verificação de arquivos XRechnung, ZUGFeRD e Factur-X). São duas páginas diferentes.
@@ -111,7 +111,7 @@ Se uma pergunta estiver fora da área de configurações, ou se o assistente nã
 
 Quando algo na sua configuração para de funcionar, um **cartão vermelho** aparece no topo do painel. Você não precisa perguntar. O assistente verifica de novo sempre que você abre o painel e sempre que volta para a aba do navegador.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded-pt.png" alt="Um cartão de alerta expandido mostrando uma caixa de e-mail desativada após três tentativas com falha"><figcaption><p>Um alerta expandido: a caixa de e-mail, o seu estado (<strong>Switched off</strong>), o número de tentativas com falha e o motivo.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings-assistant-finding-expanded-pt.png" alt="Um cartão de alerta expandido mostrando uma caixa de e-mail desativada após três tentativas com falha"><figcaption><p>Um alerta expandido: a caixa de e-mail, o seu estado (<strong>Switched off</strong>), o número de tentativas com falha e o motivo.</p></figcaption></figure>
 
 Atualmente há duas verificações:
 
@@ -165,7 +165,7 @@ O assistente nunca altera nada por conta própria. Toda alteração segue os mes
 1. **Preview** (Pré-visualização): você vê a configuração, o seu escopo (**Organization**) e o valor **atual → proposto**. Nada é salvo ainda.
 2. **A sua confirmação**: você clica em **Confirm** (ou **Yes**). Somente um administrador da organização pode fazer isso.
 3. **Linha de resultado**: o chat mostra **Changed: (setting) → (value)**.
-4. **Undo**: um botão com contagem regressiva ("14 min left") permite desfazer a alteração. A alteração também fica registrada no log.
+4. **Undo**: um botão com contagem regressiva (por exemplo "14 min left") permite desfazer a alteração em até 15 minutos. A alteração também fica registrada no log.
 
 **Exemplo (ilustrativo).** Um cartão de recomendação para uma configuração que o assistente pode gravar mostra um botão **Apply** (Aplicar) ao lado de **Open setting**. Digamos que o cartão seja sobre **Auto export if PO matched 100%**. Você clica em **Apply**. A caixa de diálogo **Apply this change?** mostra *Current: Off → Proposed: On*. Você clica em **Confirm**. Uma mensagem **Setting updated.** aparece com um botão **Undo**. Se você notar um erro em cerca de 15 minutos, clica em **Undo** e o valor antigo volta. Cartões sem o botão **Apply** servem somente para navegação: use **Open setting** e altere o valor você mesmo.
 
@@ -222,8 +222,8 @@ Uma conversa mantém as últimas 50 interações no seu navegador. Uma pergunta 
 
 ## Páginas relacionadas
 
-* [Assistente de Configurações: como ativá-lo](settings-assistant.md)
-* [Painel de Análises](../../../analytics-dashboard.md)
-* [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md)
+* [Assistente de Configurações: como ativá-lo](README.md)
+* [Painel de Análises](../../../../analytics-dashboard.md)
+* [DocBits MCP](../../../../../advanced-functions-and-tools/docbits-mcp/README.md)
 
-<!-- Source notes (not shown): the assistant answers for custom validation rules and for PO tolerance / "why not matched" questions are weak on dev (tracked in the CORE project, CORE-6433), so this page shows only the greeting for validation and the PO matching status answer. Re-test and add answer screenshots after the fix. facts read from the doc2app code on dev (SettingsAssistant, AssistantChat components) and checked in the dev UI on 14 Oct 2026. "Fast tier, no organisation switch" and "documentation search not configured on Sandbox yet" come from the feature team (CORE-6379). Strings for the apply/action cards not verified in the UI are described, not quoted. -->
+<!-- Source notes (not shown): the assistant answers for custom validation rules and for PO tolerance / "why not matched" questions are weak on dev (tracked in the CORE project), so this page shows only the greeting for validation and the PO matching status answer. Re-test and add answer screenshots after the fix. Facts read from the settings assistant code on dev and checked in the dev UI in October. "Fast tier, no organisation switch" and "documentation search not configured on Sandbox yet" come from the feature team. Strings for the apply/action cards not verified in the UI are described, not quoted. -->

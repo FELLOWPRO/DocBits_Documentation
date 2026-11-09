@@ -12,7 +12,7 @@ Eine Regel beantwortet drei Fragen:
 2. **Wann** gilt die Regel? Immer oder nur für Dokumente (oder Zeilen), die eine Bedingung erfüllen, siehe [Rule Conditions (Applies when)](rule-conditions-applies-when.md).
 3. **Was** muss zutreffen? Ein Feld muss gefüllt sein, einem Format entsprechen, in einem Bereich liegen, in einer Liste vorkommen, sich korrekt mit einem anderen Feld vergleichen lassen oder sich aufsummieren.
 
-Schlägt die Prüfung fehl, markiert DocBits das Feld oder die Zelle auf dem **Validierungsbildschirm** und zeigt Ihre Meldung an, genau wie bei einer integrierten Prüfung. Bei der Schwere **FEHLER** kann das Dokument erst validiert werden, wenn das Problem behoben ist; bei **Warnung** sieht der Benutzer lediglich einen Hinweis.
+Schlägt die Prüfung fehl, markiert DocBits das Feld oder die Zelle auf dem **Validierungsbildschirm** und zeigt Ihre Meldung an, genau wie bei einer integrierten Prüfung. Bei der Schwere **FEHLER** kann das Dokument erst validiert werden, wenn das Problem behoben ist. Bei **Warnung** wird das Dokument ebenfalls angehalten, der Benutzer kann die Warnung jedoch aufheben, indem er die Meldung am Feld bestätigt, ohne den Wert zu ändern — siehe [Eine Warnung auf dem Validierungsbildschirm bestätigen](#acknowledge).
 
 Regeln werden pro **Document Type** definiert und laufen für jedes Dokument dieses Typs: bei der Verarbeitung und bei jedem Speichern des Dokuments.
 
@@ -26,7 +26,7 @@ Regeln werden pro **Document Type** definiert und laufen für jedes Dokument die
 | Das Fälligkeitsdatum darf nicht vor dem Rechnungsdatum liegen | falsche Zahlläufe | **Vergleichsfelder**: Due Date am oder nach Invoice Date |
 | Die Zeilen müssen sich zum Nettobetrag aufsummieren | nur die feste integrierte Prüfung | **Formel** `sum(row.NET_AMOUNT) == header.total_net_amount` mit eigener Toleranz |
 | Nur Währungen, die Ihr ERP kennt, sind erlaubt | Exportfehler im ERP | **Wertelisten** für Currency |
-| Benutzer auf ungewöhnliche Werte hinweisen, ohne sie zu blockieren | nicht möglich | jede Regel mit der Schwere **Warnung** |
+| Benutzer auf ungewöhnliche Werte hinweisen, ohne sie zu blockieren | ein Skript, oder Benutzer müssen daran denken | jede Regel mit der Schwere **Warnung** — der Benutzer bestätigt den Wert mit **Zur Kenntnis genommen** |
 
 ## Benutzerdefinierte Validierungsregeln aktivieren
 
@@ -76,7 +76,7 @@ Klicken Sie auf **New rule**. Der Builder besteht aus drei Schritten. **Test rul
 | Einstellung | Was sie bewirkt |
 | --- | --- |
 | **Regelebene** | Worauf die Regel schaut und wo der Fehler angezeigt wird, siehe [Regelebenen](#regelebenen). |
-| **Schwere** | **FEHLER** markiert das Feld als ungültig und blockiert die Validierung. **Warnung** zeigt die Meldung an, blockiert aber nie. |
+| **Schwere** | **FEHLER** markiert das Feld als ungültig und blockiert die Validierung, bis der Wert korrigiert ist. **Warnung** hält das Dokument ebenfalls an, der Benutzer kann die Warnung jedoch mit **Zur Kenntnis genommen** auf dem Validierungsbildschirm aufheben, ohne den Wert zu ändern. |
 | **Rule Name** | Wird in der Liste und für Administratoren angezeigt. Beschreiben Sie darin die Regel („Steuernummer des Lieferanten für deutsche Rechnungen erforderlich“). |
 | **Rule key** | Ein technischer Schlüssel, der aus dem Namen erzeugt wird. Er bleibt gleich, wenn Sie die Regel später umbenennen. Klicken Sie auf den Stift, um vor dem ersten Speichern einen eigenen Schlüssel zu wählen; danach ist er fest. |
 | **Beschreibung** | Optionale Erläuterung für andere Administratoren. |
@@ -223,8 +223,20 @@ Testen Sie jede neue Regel an mindestens einem Dokument, das fehlschlagen soll, 
 * **Bei jedem Speichern** des Dokuments auf dem Validierungsbildschirm.
 * **Nach einer Regeländerung** werden bestehende Dokumente **nicht** alle auf einmal erneut geprüft. Jedes Dokument wird beim nächsten Speichern oder bei der nächsten erneuten Verarbeitung mit den neuen Regeln geprüft. Bereits exportierte Dokumente sind nicht betroffen.
 * Regeln laufen in der Reihenfolge ihrer Priorität (danach nach Schlüssel). Ein Feld zeigt **einen** Fehler: Schlagen zwei Regeln für dasselbe Feld fehl, gewinnt die erste; spätere Regeln überschreiben sie nicht.
-* Warnungen werden separat gesammelt und verdecken nie einen Fehler.
+* Warnungen werden separat gesammelt und verdecken nie einen Fehler: Ein Feld, das auch eine harte Regel verletzt, zeigt nur den Fehler, und dort gibt es nichts zu bestätigen.
 * Kann eine Regel nicht ausgewertet werden, zum Beispiel wegen einer Division durch null in einer Formel, wird sie übersprungen. Eine defekte Regel markiert ein Dokument nie fälschlicherweise als ungültig.
+
+## Eine Warnung auf dem Validierungsbildschirm bestätigen <a id="acknowledge"></a>
+
+Eine fehlgeschlagene Regel mit der Schwere **Warnung** hält das Dokument genauso an wie ein Fehler: Solange das Feld nicht bestätigt ist, kann das Dokument nicht validiert werden. Der Unterschied liegt darin, was der Benutzer tun muss.
+
+Auf dem Validierungsbildschirm erscheint die Meldung der Regel unter dem Feld, zusammen mit der Schaltfläche **Zur Kenntnis genommen**. Ein Klick bestätigt alle Warnungen an diesem Feld, ohne seinen Wert zu ändern. Die Meldung wird anschließend durch den Hinweis **Zur Kenntnis genommen. Die Änderung des Wertes erfordert eine erneute Anfrage.** ersetzt.
+
+Die Bestätigung gehört zu dem Wert, für den sie gegeben wurde. Ändert der Benutzer den Wert, wird er neu extrahiert oder wird das Feld mit einem anderen Ergebnis erneut geprüft, kommt die Warnung zurück und muss erneut bestätigt werden. Ein Feld, das stattdessen einen harten Fehler zeigt, lässt sich nicht bestätigen — dort muss der Wert korrigiert werden.
+
+Bei einem schreibgeschützten Dokument wird die Schaltfläche nicht angezeigt; eine Warnung dort muss daher von jemandem aufgelöst werden, der das Feld bearbeiten kann.
+
+Die Schaltfläche **Zur Kenntnis genommen** steht für Kopffelder zur Verfügung.
 
 ## Protokolle <a id="logs"></a>
 
@@ -266,15 +278,15 @@ Header field · Error · *Due Date* · immer · **Vergleichsfelder** Due Date *o
 **8. Keine Rechnungen mit Datum in der Zukunft**
 Header field · Error · *Invoice Date* · immer · **Vergleichsfelder** Invoice Date *on or before (≤)* heute.
 
-**9. Nur genehmigte Währungen (nur Hinweis)**
-Header field · **Warnung** · *Currency* · immer · **Wertelisten** *approved_currencies* · Code `VALUE_NOT_ALLOWED`.
+**9. Nur genehmigte Währungen (bestätigen statt korrigieren)**
+Header field · **Warnung** · *Currency* · immer · **Wertelisten** *approved_currencies* · Code `VALUE_NOT_ALLOWED`. Der Benutzer muss die Warnung bestätigen, bevor das Dokument validiert werden kann.
 
 **10. Bestellung erforderlich ab 5.000**
 Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Required**.
 
 ## Bewährte Vorgehensweisen
 
-* **Beginnen Sie mit einer Warnung.** Speichern Sie eine neue Regel zunächst mit der Schwere **Warnung**, beobachten Sie sie einige Tage (Test rule) und stellen Sie sie dann auf **FEHLER** um.
+* **Beginnen Sie mit einer Warnung.** Speichern Sie eine neue Regel zunächst mit der Schwere **Warnung**, beobachten Sie sie einige Tage (Test rule) und stellen Sie sie dann auf **FEHLER** um. Benutzer müssen den Wert nicht korrigieren, werden aber angehalten, bis sie jeden Treffer bestätigt haben.
 * **Eine Regel, eine Meldung.** Mehrere kleine Regeln mit klaren Meldungen sind leichter zu verstehen als eine große Formel.
 * **Verwenden Sie Applies when statt Kopien.** Eine Regel mit einer Bedingung ist besser als fünf Kopien für fünf Lieferanten.
 * **Seien Sie bei Geldbeträgen tolerant.** Geben Sie Betragsformeln immer eine Toleranz.

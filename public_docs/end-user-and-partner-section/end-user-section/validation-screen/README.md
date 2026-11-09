@@ -56,7 +56,11 @@ Im Video wird die geprüfte Rechnung zur Freigabe eingereicht. Eine Schaltfläch
 
 Ein roter Rahmen oder ein Warnsymbol weist auf ein Feld hin. Lies die Infomeldung: Fehlt ein Pflichtwert, muss die Extraktion geprüft werden oder ist eine konfigurierte Prüfung fehlgeschlagen? Ein sichtbarer Wert allein bestätigt noch nicht, dass das Feld gültig ist.
 
-Vergleiche Lieferant, Rechnungsnummer, Datumsangaben, Beträge und Währung mit dem Original. Prüfe bei Summen die betroffenen Kopffelder und gegebenenfalls die Positionen. Behebe vor dem Weitergeben die in der Meldung genannte Ursache. Die Prüfungen hängen vom Dokumenttyp und der Einrichtung deiner Organisation ab; siehe [Automatische Prüfungen](automatic-checks-on-the-validation-screen.md).
+Vergleiche Lieferant, Rechnungsnummer, Datumsangaben, Beträge und Währung mit dem Original. Prüfe bei Summen die betroffenen Kopffelder und gegebenenfalls die Positionen. Behebe vor dem Weitergeben die in der Meldung genannte Ursache.
+
+Manche Meldungen stammen aus einer Regel mit der Schwere **Warnung**. Sie verschwinden nicht von selbst: Wähle unter dem Feld **Zur Kenntnis genommen**, um den Wert zu bestätigen; die Meldung wird dann durch **Zur Kenntnis genommen. Die Änderung des Wertes erfordert eine erneute Anfrage.** ersetzt. Bearbeitest du den Wert danach, kommt die Warnung zurück und du musst sie erneut bestätigen. Ein Feld mit einem harten Fehler muss stattdessen korrigiert werden — dafür gibt es keine Schaltfläche.
+
+Die Prüfungen hängen vom Dokumenttyp und der Einrichtung deiner Organisation ab; siehe [Automatische Prüfungen](automatic-checks-on-the-validation-screen.md).
 
 ## Den Assistenten nutzen
 

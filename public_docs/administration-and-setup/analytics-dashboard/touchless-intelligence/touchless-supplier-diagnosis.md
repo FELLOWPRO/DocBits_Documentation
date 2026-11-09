@@ -72,7 +72,7 @@
 | Infor 正确，导入副本旧或不完整 | 导入或 ERP 集成 |
 | 值不同但约定不清楚 | 业务澄清；原因未确认 |
 
-供应商 AP 类别仅为审批，顶部 AP 综合率还包括 Pure。区分解决当前发票与长期修复：小操作能完成发票，但未必消除重复原因。
+供应商 AP 类别仅为审批，顶部 AP 综合率还包括 Pure。区分解决当前发票与长期修复：小操作能完成发票，但未必消除重复原因。单个集群并不能证明 Infor 的历史内容。参见 [Infor 示例](touchless-po-matching-diagnosis.md#worked-example-correct-extraction-different-infor-data)。
 
 工具及人工操作分类见[Touchless 与 MCP](touchless-mcp.md)。
 
@@ -83,6 +83,6 @@
 * [文档追踪](touchless-document-trace.md)
 * [变更提案与报告](touchless-change-proposals.md)
 
-<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+<!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 
-<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->
+<!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

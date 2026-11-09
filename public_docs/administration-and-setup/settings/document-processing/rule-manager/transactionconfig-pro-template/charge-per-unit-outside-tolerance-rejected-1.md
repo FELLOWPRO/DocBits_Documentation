@@ -21,7 +21,7 @@ System dostosowuje opłatę jednostkową do zamówienia lub zatwierdzonych pozio
   * Quantity: 800 units
   * Total Charge Amount: $5,600.00
 * **Tolerance Levels:**
-  * Charge Per Unit Tolerance: ± 5%
+  * Charge Per Unit Tolerance: ±5%
 
 Ponieważ opłata jednostkowa ($7.00) przekracza dopuszczalny zakres tolerancji wynoszący 5% i nie została zatwierdzona, system:
 

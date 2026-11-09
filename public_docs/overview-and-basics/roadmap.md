@@ -2,14 +2,14 @@
 
 **Disponibilidad de NOVA N2611:** Disponible en el entorno de pruebas desde el **16 de octubre de 2026**. El lanzamiento en producción está previsto para el **4 de noviembre de 2026**.
 
-_Estado de la planificación a 3 de noviembre de 2026. Cada versión indica la
+_Estado de la planificación a 9 de noviembre de 2026. Cada versión indica la
 fecha prevista en sandbox (cuando los clientes pueden probarla) y la fecha
 prevista en producción. Los temas describen lo que está previsto para la
 versión, no lo que ya se ha publicado; el alcance y las fechas pueden cambiar.
 Las correcciones urgentes entre versiones se documentan en las
 [Notas de versión](release-notes/README.md)._
 
-<table data-search="false"><thead><tr><th>ID de versión</th><th>Canal</th><th>Sandbox</th><th>Producción</th></tr></thead><tbody><tr><td>N2611</td><td>NOVA</td><td>16 de octubre de 2026</td><td>4 de noviembre de 2026</td></tr><tr><td>V2611</td><td>VESTA</td><td>4 de noviembre de 2026</td><td>11 de noviembre de 2026</td></tr><tr><td>V2612</td><td>VESTA</td><td>8 de diciembre de 2026</td><td>15 de diciembre de 2026</td></tr><tr><td>V2702</td><td>VESTA</td><td>10 de febrero de 2027</td><td>17 de febrero de 2027</td></tr><tr><td>N2703</td><td>NOVA</td><td>17 de febrero de 2027</td><td>3 de marzo de 2027</td></tr><tr><td>V2703</td><td>VESTA</td><td>10 de marzo de 2027</td><td>17 de marzo de 2027</td></tr><tr><td>V2705</td><td>VESTA</td><td>5 de mayo de 2027</td><td>12 de mayo de 2027</td></tr><tr><td>N2706</td><td>NOVA</td><td>2 de junio de 2027</td><td>16 de junio de 2027</td></tr><tr><td>N2710</td><td>NOVA</td><td>6 de octubre de 2027</td><td>20 de octubre de 2027</td></tr></tbody></table>
+<table data-search="false"><thead><tr><th>ID de versión</th><th>Canal</th><th>Sandbox</th><th>Producción</th></tr></thead><tbody><tr><td>N2611</td><td>NOVA</td><td>16 de octubre de 2026</td><td>4 de noviembre de 2026</td></tr><tr><td>V2611</td><td>VESTA</td><td>4 de noviembre de 2026</td><td>18 de noviembre de 2026</td></tr><tr><td>N2611-2</td><td>NOVA</td><td>20 de noviembre de 2026</td><td>25 de noviembre de 2026</td></tr><tr><td>V2612</td><td>VESTA</td><td>8 de diciembre de 2026</td><td>15 de diciembre de 2026</td></tr><tr><td>V2702</td><td>VESTA</td><td>10 de febrero de 2027</td><td>17 de febrero de 2027</td></tr><tr><td>N2703</td><td>NOVA</td><td>17 de febrero de 2027</td><td>3 de marzo de 2027</td></tr><tr><td>V2703</td><td>VESTA</td><td>10 de marzo de 2027</td><td>17 de marzo de 2027</td></tr><tr><td>V2705</td><td>VESTA</td><td>5 de mayo de 2027</td><td>12 de mayo de 2027</td></tr><tr><td>N2706</td><td>NOVA</td><td>2 de junio de 2027</td><td>16 de junio de 2027</td></tr><tr><td>N2710</td><td>NOVA</td><td>6 de octubre de 2027</td><td>20 de octubre de 2027</td></tr></tbody></table>
 
 A continuación solo se describen las versiones NOVA. Las versiones de corrección
 de errores VESTA se documentan en las [Notas de versión](release-notes/README.md) poco antes de su publicación.

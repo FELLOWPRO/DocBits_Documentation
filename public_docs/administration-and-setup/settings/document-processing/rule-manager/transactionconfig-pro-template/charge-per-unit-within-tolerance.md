@@ -4,11 +4,11 @@ Lo scenario seguente illustra una mappatura configurata, non un modello predefin
 
 ## Scenario:
 
-L'addebito unitario sulla fattura rientra nell'intervallo di tolleranza accettabile rispetto all'ordine di acquisto.
+Il Charge Per Unit sulla fattura rientra nell'intervallo di tolleranza accettabile rispetto all'ordine di acquisto.
 
 ## Azione:
 
-Il sistema accetta l'addebito per unità come fatturato ed elabora la transazione senza rettifiche.
+Il sistema accetta il Charge Per Unit come fatturato ed elabora la transazione senza rettifiche.
 
 ## Esempio:
 
@@ -23,10 +23,10 @@ Il sistema accetta l'addebito per unità come fatturato ed elabora la transazion
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±3%
 
-Poiché l'addebito per unità ($5.10) rientra nell'intervallo di tolleranza accettabile del 3% rispetto all'ordine di acquisto, il sistema:
+Poiché il Charge Per Unit ($5.10) rientra nell'intervallo di tolleranza accettabile del 3% rispetto all'ordine di acquisto, il sistema:
 
-1. **Accept the Charge Per Unit:** Il sistema accetta l'addebito fatturato per unità di $5.10 poiché rientra nel limite di tolleranza definito.
-2. **Process the Transaction:** Il sistema elabora la fattura con l'importo totale dell'addebito in base all'addebito fatturato per unità e quantità:
+1. **Accept the Charge Per Unit:** Il sistema accetta il Charge Per Unit fatturato di $5.10 poiché rientra nel limite di tolleranza definito.
+2. **Process the Transaction:** Il sistema elabora la fattura con il Total Charge Amount in base al Charge Per Unit fatturato e alla Quantity:
    * **Total Charge Amount = Quantity × Charge Per Unit**
    * **Total Charge Amount = 500 units × $5.10 = $2,550.00**
 3. **Finalize the Invoice:** Il sistema elabora la transazione senza alcuna rettifica, accettando la fattura così com'è.

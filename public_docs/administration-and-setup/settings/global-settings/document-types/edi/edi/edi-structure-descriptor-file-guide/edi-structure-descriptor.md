@@ -1,6 +1,6 @@
 # Opis struktury EDI
 
-Głównym celem deskryptora struktury jest przedstawienie elementów wiadomości EDI w sposób logiczny i zorganizowany, ułatwiając zarządzanie i analizowanie danych. Poprzez dokładne odzwierciedlenie hierarchii wiadomości.
+Głównym celem deskryptora struktury jest przedstawienie elementów wiadomości EDI w sposób logiczny i uporządkowany, aby danymi łatwiej było zarządzać i je analizować. Odzwierciedla on hierarchię wiadomości.
 
 ### Elementy deskryptora struktury
 
@@ -40,40 +40,44 @@ Głównym celem deskryptora struktury jest przedstawienie elementów wiadomości
 {
     "N1": {
         "fields": [
-            "N1",  
-            "N2",   
-            "N3",   
-            "N4"    
+            "N1",
+            "N2",
+            "N3",
+            "N4"
         ]
     },
     "N9": {
         "fields": [
-            "N9"    
+            "N9"
         ],
         "loops": {
             "MSG01": {
                 "fields": [
-                    "MSG01"   
+                    "MSG01"
+                ]
             }
         }
     },
     "IT1": {
         "fields": [
-            "IT1",   
-            "QTY",   
-            "TXI",   
-            "REF"    
+            "IT1",
+            "QTY",
+            "TXI",
+            "REF"
+        ],
         "loops": {
             "SAC": {
                 "fields": [
-                    "SAC",   
-                    "TXI"    
+                    "SAC",
+                    "TXI"
+                ]
+            }
         }
     },
     "SAC": {
         "fields": [
-            "SAC",   
-            "TXI"    
+            "SAC",
+            "TXI"
         ]
     }
 }

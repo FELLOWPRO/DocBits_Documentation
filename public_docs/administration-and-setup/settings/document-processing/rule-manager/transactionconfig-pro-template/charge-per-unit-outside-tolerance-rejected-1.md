@@ -17,7 +17,7 @@ Il sistema adegua il Charge Per Unit in modo che corrisponda all'ordine di acqui
   * Quantity: 800 units
   * Total Charge Amount: $4,800.00
 * **Invoice Received:**
-  * Charge Per Unit: $7.00 (variazione 16.67%, fuori dalla tolleranza del ±5%, rifiutato)
+  * Charge Per Unit: $7.00 (variance 16.67%, outside the ±5% tolerance, rejected)
   * Quantity: 800 units
   * Total Charge Amount: $5,600.00
 * **Tolerance Levels:**
@@ -27,7 +27,7 @@ Poiché Charge Per Unit ($7.00) supera l'intervallo di tolleranza accettabile de
 
 1. **Reject the Invoiced Charge Per Unit:** Il sistema non accetta il Charge Per Unit fatturato di $7.00 a causa della varianza che supera il limite di tolleranza.
 2. **Adjust the Charge Per Unit:** Il sistema adegua il Charge Per Unit in modo che corrisponda all'ordine di acquisto o al Charge Per Unit approvato:
-   * Adjusted Charge Per Unit = $6.00 (da PO)
+   * Adjusted Charge Per Unit = $6.00 (from PO)
 3. **Recalculate the Total Charge Amount:** Il sistema ricalcola il Total Charge Amount in base al Charge Per Unit modificato:
    * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
    * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**

@@ -1,6 +1,6 @@
 # EDI Strukturbeschreibung
 
-Das Hauptziel des Strukturdeskriptors besteht darin, die Elemente einer EDI-Nachricht logisch und organisiert darzustellen, um die Daten einfacher verwalten und analysieren zu können. Indem die Hierarchie der Nachricht genau wiedergegeben wird.
+Das Hauptziel des Strukturdeskriptors besteht darin, die Elemente einer EDI-Nachricht logisch und übersichtlich darzustellen, damit sich die Daten einfacher verwalten und analysieren lassen. Er gibt die Hierarchie der Nachricht wieder.
 
 ### Elemente des Strukturdeskriptors
 
@@ -40,40 +40,44 @@ Das Hauptziel des Strukturdeskriptors besteht darin, die Elemente einer EDI-Nach
 {
     "N1": {
         "fields": [
-            "N1",  
-            "N2",   
-            "N3",   
-            "N4"    
+            "N1",
+            "N2",
+            "N3",
+            "N4"
         ]
     },
     "N9": {
         "fields": [
-            "N9"    
+            "N9"
         ],
         "loops": {
             "MSG01": {
                 "fields": [
-                    "MSG01"   
+                    "MSG01"
+                ]
             }
         }
     },
     "IT1": {
         "fields": [
-            "IT1",   
-            "QTY",   
-            "TXI",   
-            "REF"    
+            "IT1",
+            "QTY",
+            "TXI",
+            "REF"
+        ],
         "loops": {
             "SAC": {
                 "fields": [
-                    "SAC",   
-                    "TXI"    
+                    "SAC",
+                    "TXI"
+                ]
+            }
         }
     },
     "SAC": {
         "fields": [
-            "SAC",   
-            "TXI"    
+            "SAC",
+            "TXI"
         ]
     }
 }

@@ -27,12 +27,12 @@ Le système ajuste les frais par unité pour correspondre au bon de commande ou 
 
 1. **Rejeter les frais facturés par unité :** Le système n'accepte pas les frais facturés par unité de $7.00 en raison de l'écart dépassant la limite de tolérance.
 2. **Ajuster les frais par unité :** Le système ajuste les frais par unité pour qu'ils correspondent au bon de commande ou aux frais par unité approuvés :
-   * Frais par unité ajustés = $6.00 (à partir de PO)
+   * Adjusted Charge Per Unit = $6.00 (à partir de PO)
 3. **Recalculer le montant total des frais :** Le système recalcule le montant total des frais en fonction des frais ajustés par unité :
-   * **Montant total des frais corrigé = Quantité × Frais par unité ajustés**
-   * **Montant total corrigé des frais = 800 unités × $6.00 = $4,800.00**
+   * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
+   * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
 4. **Générer une note de débit :** Le total de la facture originale étant supérieur au total corrigé, le système génère une note de débit pour le montant surfacturé :
-   * **Montant de la note de débit = Total de la facture originale - Montant total des frais corrigés**
+   * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
    * **Montant de la note de débit = $5,600.00 - $4,800.00 = $800.00**
 5. **Traiter la facture :** Le système traite la facture avec des frais totaux corrigés de $4,800.00 et émet une note de débit de $800.00 pour tenir compte du montant surfacturé.
 

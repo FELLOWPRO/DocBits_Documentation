@@ -27,8 +27,8 @@ Le système accepte les frais unitaires tels que facturés et traite la transact
 
 1. **Accepter les frais par unité :** Le système accepte les frais facturés par unité de $5.10 car ils se situent dans la limite de tolérance définie.
 2. **Traitement de la transaction :** Le système traite la facture avec le montant total des frais en fonction des frais facturés par unité et de la quantité :
-   * **Montant total des frais = Quantité × Frais par unité**
-   * **Montant total des frais = 500 unités × $5.10 = $2,550.00**
+   * **Total Charge Amount = Quantity × Charge Per Unit**
+   * **Total Charge Amount = 500 units × $5.10 = $2,550.00**
 3. **Finaliser la facture :** Le système traite la transaction sans aucun ajustement, acceptant la facture telle quelle.
 
 Cette approche permet au système de s'adapter à des écarts mineurs acceptables dans les frais, garantissant ainsi un traitement fluide et efficace des transactions sans rejets ni retards inutiles.

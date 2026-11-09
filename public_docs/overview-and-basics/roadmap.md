@@ -2,14 +2,14 @@
 
 **Verfügbarkeit von NOVA N2611:** Seit dem **16. Oktober 2026** in der Sandbox verfügbar. Der Produktionsrelease ist für den **4. November 2026** geplant.
 
-_Planungsstand 3. November 2026. Jedes Release nennt den geplanten
+_Planungsstand 9. November 2026. Jedes Release nennt den geplanten
 Sandbox-Termin (ab dem Kunden es testen können) und den geplanten
 Produktionstermin. Die Themen beschreiben, was für das Release geplant ist,
 nicht, was bereits ausgeliefert wurde; Umfang und Termine können sich
 verschieben. Hotfixes zwischen den Releases sind in den
 [Release-Notizen](release-notes/README.md) dokumentiert._
 
-<table data-search="false"><thead><tr><th>Release-ID</th><th>Kanal</th><th>Sandbox</th><th>Produktion</th></tr></thead><tbody><tr><td>N2611</td><td>NOVA</td><td>16. Oktober 2026</td><td>4. November 2026</td></tr><tr><td>V2611</td><td>VESTA</td><td>4. November 2026</td><td>11. November 2026</td></tr><tr><td>V2612</td><td>VESTA</td><td>8. Dezember 2026</td><td>15. Dezember 2026</td></tr><tr><td>V2702</td><td>VESTA</td><td>10. Februar 2027</td><td>17. Februar 2027</td></tr><tr><td>N2703</td><td>NOVA</td><td>17. Februar 2027</td><td>3. März 2027</td></tr><tr><td>V2703</td><td>VESTA</td><td>10. März 2027</td><td>17. März 2027</td></tr><tr><td>V2705</td><td>VESTA</td><td>5. Mai 2027</td><td>12. Mai 2027</td></tr><tr><td>N2706</td><td>NOVA</td><td>2. Juni 2027</td><td>16. Juni 2027</td></tr><tr><td>N2710</td><td>NOVA</td><td>6. Oktober 2027</td><td>20. Oktober 2027</td></tr></tbody></table>
+<table data-search="false"><thead><tr><th>Release-ID</th><th>Kanal</th><th>Sandbox</th><th>Produktion</th></tr></thead><tbody><tr><td>N2611</td><td>NOVA</td><td>16. Oktober 2026</td><td>4. November 2026</td></tr><tr><td>V2611</td><td>VESTA</td><td>4. November 2026</td><td>18. November 2026</td></tr><tr><td>N2611-2</td><td>NOVA</td><td>20. November 2026</td><td>25. November 2026</td></tr><tr><td>V2612</td><td>VESTA</td><td>8. Dezember 2026</td><td>15. Dezember 2026</td></tr><tr><td>V2702</td><td>VESTA</td><td>10. Februar 2027</td><td>17. Februar 2027</td></tr><tr><td>N2703</td><td>NOVA</td><td>17. Februar 2027</td><td>3. März 2027</td></tr><tr><td>V2703</td><td>VESTA</td><td>10. März 2027</td><td>17. März 2027</td></tr><tr><td>V2705</td><td>VESTA</td><td>5. Mai 2027</td><td>12. Mai 2027</td></tr><tr><td>N2706</td><td>NOVA</td><td>2. Juni 2027</td><td>16. Juni 2027</td></tr><tr><td>N2710</td><td>NOVA</td><td>6. Oktober 2027</td><td>20. Oktober 2027</td></tr></tbody></table>
 
 Unten werden nur die NOVA-Releases beschrieben. VESTA-Bugfix-Releases werden
 kurz vor ihrer Veröffentlichung in den [Release-Notizen](release-notes/README.md) dokumentiert.

@@ -23,10 +23,10 @@ El sistema ajusta el cargo por unidad para que coincida con la orden de compra o
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±5%
 
-Dado que el cargo por unidad ($7.00) excede el rango de tolerancia aceptable del 5% y no ha sido aprobado, el sistema:
+Dado que Charge Per Unit ($7.00) excede el rango de tolerancia aceptable del 5% y no ha sido aprobado, el sistema:
 
-1. **Reject the Invoiced Charge Per Unit:** El sistema no acepta el cargo facturado por unidad de $7.00 debido a que la variación excede el límite de tolerancia.
-2. **Adjust the Charge Per Unit:** El sistema ajusta el cargo por unidad para que coincida con la orden de compra o el cargo por unidad aprobado:
+1. **Reject the Invoiced Charge Per Unit:** El sistema no acepta el valor de Charge Per Unit de $7.00 debido a que la variación excede el límite de tolerancia.
+2. **Adjust the Charge Per Unit:** El sistema ajusta Charge Per Unit para que coincida con la orden de compra o el valor aprobado de Charge Per Unit:
    * Adjusted Charge Per Unit = $6.00 (desde PO)
 3. **Recalculate the Total Charge Amount:** El sistema vuelve a calcular el monto total del cargo en función del cargo ajustado por unidad:
    * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**

@@ -2,9 +2,9 @@
 
 **NOVA N2611 可用性：**自 **2026 年 10 月 16 日**起可在沙盒中使用。计划于 **2026 年 11 月 4 日**发布到生产环境。
 
-_截至 2026 年 11 月 3 日的规划状态。每个版本都列出了计划的沙盒日期（客户可以开始测试的日期）和计划的生产日期。主题说明的是该版本的计划内容，并非已经发布的内容；范围和日期可能会调整。版本之间的热修复记录在[发布说明](release-notes/README.md)中。_
+_截至 2026 年 11 月 9 日的规划状态。每个版本都列出了计划的沙盒日期（客户可以开始测试的日期）和计划的生产日期。主题说明的是该版本的计划内容，并非已经发布的内容；范围和日期可能会调整。版本之间的热修复记录在[发布说明](release-notes/README.md)中。_
 
-<table data-search="false"><thead><tr><th>版本 ID</th><th>渠道</th><th>沙盒</th><th>生产环境</th></tr></thead><tbody><tr><td>N2611</td><td>NOVA</td><td>2026 年 10 月 16 日</td><td>2026 年 11 月 4 日</td></tr><tr><td>V2611</td><td>VESTA</td><td>2026 年 11 月 4 日</td><td>2026 年 11 月 11 日</td></tr><tr><td>V2612</td><td>VESTA</td><td>2026 年 12 月 8 日</td><td>2026 年 12 月 15 日</td></tr><tr><td>V2702</td><td>VESTA</td><td>2027 年 2 月 10 日</td><td>2027 年 2 月 17 日</td></tr><tr><td>N2703</td><td>NOVA</td><td>2027 年 2 月 17 日</td><td>2027 年 3 月 3 日</td></tr><tr><td>V2703</td><td>VESTA</td><td>2027 年 3 月 10 日</td><td>2027 年 3 月 17 日</td></tr><tr><td>V2705</td><td>VESTA</td><td>2027 年 5 月 5 日</td><td>2027 年 5 月 12 日</td></tr><tr><td>N2706</td><td>NOVA</td><td>2027 年 6 月 2 日</td><td>2027 年 6 月 16 日</td></tr><tr><td>N2710</td><td>NOVA</td><td>2027 年 10 月 6 日</td><td>2027 年 10 月 20 日</td></tr></tbody></table>
+<table data-search="false"><thead><tr><th>版本 ID</th><th>渠道</th><th>沙盒</th><th>生产环境</th></tr></thead><tbody><tr><td>N2611</td><td>NOVA</td><td>2026 年 10 月 16 日</td><td>2026 年 11 月 4 日</td></tr><tr><td>V2611</td><td>VESTA</td><td>2026 年 11 月 4 日</td><td>2026 年 11 月 18 日</td></tr><tr><td>N2611-2</td><td>NOVA</td><td>2026 年 11 月 20 日</td><td>2026 年 11 月 25 日</td></tr><tr><td>V2612</td><td>VESTA</td><td>2026 年 12 月 8 日</td><td>2026 年 12 月 15 日</td></tr><tr><td>V2702</td><td>VESTA</td><td>2027 年 2 月 10 日</td><td>2027 年 2 月 17 日</td></tr><tr><td>N2703</td><td>NOVA</td><td>2027 年 2 月 17 日</td><td>2027 年 3 月 3 日</td></tr><tr><td>V2703</td><td>VESTA</td><td>2027 年 3 月 10 日</td><td>2027 年 3 月 17 日</td></tr><tr><td>V2705</td><td>VESTA</td><td>2027 年 5 月 5 日</td><td>2027 年 5 月 12 日</td></tr><tr><td>N2706</td><td>NOVA</td><td>2027 年 6 月 2 日</td><td>2027 年 6 月 16 日</td></tr><tr><td>N2710</td><td>NOVA</td><td>2027 年 10 月 6 日</td><td>2027 年 10 月 20 日</td></tr></tbody></table>
 
 下文仅介绍 NOVA 版本。VESTA 缺陷修复版本会在发布前不久记录在[发布说明](release-notes/README.md)中。
 

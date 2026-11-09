@@ -13,26 +13,26 @@ Het systeem past de kosten per eenheid aan zodat deze overeenkomen met de inkoop
 ## Voorbeeld:
 
 * **Purchase Order (PO):**
-  * Kosten per eenheid: $6.00
+  * Charge Per Unit: $6.00
   * Quantity: 800 units
-  * Totaal kostenbedrag: $4,800.00
+  * Total Charge Amount: $4,800.00
 * **Invoice Received:**
-  * Kosten per eenheid: $7.00 (afwijking 16.67%, buiten de tolerantie van ±5%, afgewezen)
+  * Charge Per Unit: $7.00 (afwijking 16.67%, buiten de tolerantie van ±5%, afgewezen)
   * Quantity: 800 units
-  * Totaal kostenbedrag: $5,600.00
+  * Total Charge Amount: $5,600.00
 * **Tolerance Levels:**
-  * Tolerantie per eenheid: ±5%
+  * Charge Per Unit Tolerance: ±5%
 
 Aangezien de kosten per eenheid ($7.00) het aanvaardbare tolerantiebereik van 5% overschrijden en niet zijn goedgekeurd, zal het systeem:
 
 1. **De gefactureerde kosten per eenheid afwijzen:** Het systeem accepteert de gefactureerde kosten per eenheid van $7.00 niet omdat de afwijking de tolerantielimiet overschrijdt.
 2. **De kosten per eenheid aanpassen:** Het systeem past de kosten per eenheid aan zodat deze overeenkomen met de inkooporder of de goedgekeurde kosten per eenheid:
-   * Aangepaste kosten per eenheid = $6.00 (vanaf PO)
+   * Adjusted Charge Per Unit = $6.00 (vanaf PO)
 3. **Herbereken het totale kostenbedrag:** Het systeem herberekent het totale kostenbedrag op basis van de aangepaste kosten per eenheid:
-   * **Gecorrigeerd totaalbedrag = Aantal × aangepaste kosten per eenheid**
-   * **Gecorrigeerd totaalbedrag = 800 eenheden × $6.00 = $4,800.00**
+   * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
+   * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
 4. **Een debetnota genereren:** Omdat het oorspronkelijke factuurtotaal hoger was dan het gecorrigeerde totaal, genereert het systeem een debetnota voor het te veel in rekening gebrachte bedrag:
-   * **Bedrag debetnota = Totaal origineel factuur - Gecorrigeerd totaalbedrag**
+   * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
    * **Bedrag debetnota = $5,600.00 - $4,800.00 = $800.00**
 5. **De factuur verwerken:** Het systeem verwerkt de factuur met het gecorrigeerde totale bedrag van $4,800.00 en geeft een debetnota uit van $800.00 om het te veel in rekening gebrachte bedrag te verantwoorden.
 

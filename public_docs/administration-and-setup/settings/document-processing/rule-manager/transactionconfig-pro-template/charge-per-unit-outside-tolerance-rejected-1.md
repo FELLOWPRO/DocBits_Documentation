@@ -25,15 +25,15 @@ Il sistema adegua l'addebito per unità in modo che corrisponda all'ordine di ac
 
 Poiché l'addebito per unità ($7.00) supera l'intervallo di tolleranza accettabile del 5% e non è stato approvato, il sistema:
 
-1. **Rifiutare l'addebito fatturato per unitàà:** Il sistema non accetta l'addebito fatturato per unità di $7.00 a causa della varianza che supera il limite di tolleranza.
-2. **Rettifica l'addebito per unitàà:** Il sistema adegua l'addebito per unità in modo che corrisponda all'ordine di acquisto o all'addebito per unità approvato:
+1. **Reject the Invoiced Charge Per Unit:** Il sistema non accetta l'addebito fatturato per unità di $7.00 a causa della varianza che supera il limite di tolleranza.
+2. **Adjust the Charge Per Unit:** Il sistema adegua l'addebito per unità in modo che corrisponda all'ordine di acquisto o all'addebito per unità approvato:
    * Adjusted Charge Per Unit = $6.00 (da PO)
-3. **Ricalcola l'importo totale della tariffa:** Il sistema ricalcola l'importo totale della tariffa in base alla tariffa modificata per unità:
+3. **Recalculate the Total Charge Amount:** Il sistema ricalcola l'importo totale della tariffa in base alla tariffa modificata per unità:
    * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
    * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
-4. **Genera una nota di addebito:** Poiché il totale della fattura originale era superiore al totale corretto, il sistema genera una nota di addebito per l'importo in eccesso:
+4. **Generate a Debit Note:** Poiché il totale della fattura originale era superiore al totale corretto, il sistema genera una nota di addebito per l'importo in eccesso:
    * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
-   * **Importo della nota di addebito = $5,600.00 - $4,800.00 = $800.00**
-5. **Elabora la fattura:** Il sistema elabora la fattura con l'importo dell'addebito totale corretto di $4,800.00 ed emette una nota di addebito per $800.00 per tenere conto dell'importo addebitato in eccesso.
+   * **Debit Note Amount = $5,600.00 - $4,800.00 = $800.00**
+5. **Process the Invoice:** Il sistema elabora la fattura con l'importo dell'addebito totale corretto di $4,800.00 ed emette una nota di addebito per $800.00 per tenere conto dell'importo addebitato in eccesso.
 
 Questo approccio garantisce che le transazioni finanziarie siano coerenti con i termini dell'ordine di acquisto, rifiutando variazioni non approvate e mantenendo pratiche di fatturazione accurate.

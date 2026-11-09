@@ -1,8 +1,8 @@
 # VESTA novemberrelease V2611
 
-## 11 november 2026
+## 18 november 2026
 
-> **Release-ID:** V2611 · **Releasekanaal:** VESTA · **Status:** Gepland · **Sandbox:** 4 november 2026 · **Productie:** 11 november 2026.
+> **Release-ID:** V2611 · **Releasekanaal:** VESTA · **Status:** Gepland · **Sandbox:** 4 november 2026 · **Productie:** 18 november 2026.
 
 De volgende VESTA-hotfix brengt **alle functies die eerder als bèta in VESTA beschikbaar waren, naar de reguliere VESTA-functieset**. Deze functies zijn al beschikbaar in de [NOVA-sandbox](nova-minor-release-4-november-2026.md#former-vesta-beta-features-included-in-nova); de NOVA-productierelease staat gepland voor **4 november 2026**.
 
@@ -15,7 +15,7 @@ De volgende VESTA-hotfix brengt **alle functies die eerder als bèta in VESTA be
 | Release | Beschikbaarheid van de voormalige VESTA-bètafuncties |
 | --- | --- |
 | **NOVA N2611** | Sinds 16 oktober 2026 beschikbaar in de sandbox; productierelease gepland voor 4 november 2026. |
-| **VESTA V2611 — hotfix van 11 november 2026** | Vanaf 4 november 2026 beschikbaar in de sandbox; geplande introductie in de reguliere VESTA-functieset op 11 november 2026. |
+| **VESTA V2611 — hotfix van 18 november 2026** | Vanaf 4 november 2026 beschikbaar in de sandbox; geplande introductie in de reguliere VESTA-functieset op 18 november 2026. |
 
 ## Handleidingen voor het instellen van regels
 

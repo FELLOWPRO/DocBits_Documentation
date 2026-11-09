@@ -56,7 +56,11 @@ W filmie sprawdzona faktura jest przekazywana do zatwierdzenia. Przycisk **Expor
 
 Czerwona ramka lub ikona ostrzeżenia wskazuje pole wymagające uwagi. Odczytaj komunikat: może brakować wymaganej wartości, ekstrakcja może wymagać kontroli albo skonfigurowany test zakończył się błędem. Sama obecność wartości nie potwierdza poprawności pola.
 
-Porównaj dostawcę, numer, daty, kwoty i walutę z oryginałem. Przy sumach sprawdź odpowiednie pola nagłówka i pozycje. Usuń przyczynę wskazaną w komunikacie przed przekazaniem dalej. Kontrole zależą od typu dokumentu i konfiguracji organizacji; zobacz [Kontrole automatyczne](automatic-checks-on-the-validation-screen.md).
+Porównaj dostawcę, numer, daty, kwoty i walutę z oryginałem. Przy sumach sprawdź odpowiednie pola nagłówka i pozycje. Usuń przyczynę wskazaną w komunikacie przed przekazaniem dalej.
+
+Niektóre komunikaty pochodzą z reguły o ważności **Ostrzeżenie**. Nie znikają same: wybierz **Uznawać** pod polem, aby potwierdzić wartość, a komunikat zastępuje informacja **Potwierdzono. Zmiana wartości powoduje ponowne żądanie.** Jeśli wartość zostanie później zmieniona, ostrzeżenie wraca i trzeba je potwierdzić ponownie. Pole z błędem twardym trzeba natomiast poprawić — nie ma dla niego przycisku.
+
+Kontrole zależą od typu dokumentu i konfiguracji organizacji; zobacz [Kontrole automatyczne](automatic-checks-on-the-validation-screen.md).
 
 ## Korzystanie z asystenta
 

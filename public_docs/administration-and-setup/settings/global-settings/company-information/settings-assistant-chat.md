@@ -2,7 +2,7 @@
 
 ## Overzicht
 
-De chat van de **Settings Assistant** beantwoordt vragen over uw instellingen, waarschuwt u wanneer een import niet meer werkt en wijzigt, met uw bevestiging, een instelling voor u. Voordat u hem gebruikt, moet een beheerder [de assistent inschakelen](README.md).
+De chat van de **Settings Assistant** beantwoordt vragen over uw instellingen, waarschuwt u wanneer een import niet meer werkt en wijzigt, met uw bevestiging, een instelling voor u. Voordat u hem gebruikt, moet een beheerder [de assistent inschakelen](settings-assistant.md).
 
 ### Wat hij kan
 
@@ -41,7 +41,7 @@ Klik op een vraag en ze wordt direct verstuurd. Onder de drie vragen zegt het pa
 
 U vraagt **"Hoe wijzig ik ons bedrijfsadres?"** (hoe wijzig ik ons bedrijfsadres?)
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-answer-company-address-nl.png" alt="De assistent antwoordt met het pad naar het bedrijfsadres en een knop Open setting"><figcaption><p>Het antwoord noemt de plek, en de kaart geeft u het exacte pad en een knop <strong>Open setting</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-nl.png" alt="De assistent antwoordt met het pad naar het bedrijfsadres en een knop Open setting"><figcaption><p>Het antwoord noemt de plek, en de kaart geeft u het exacte pad en een knop <strong>Open setting</strong>.</p></figcaption></figure>
 
 Het antwoord zegt waar het adres staat. De kaart eronder toont het pad (**Settings / Company Settings**) en de knop **Open setting**. Klik erop: DocBits opent de pagina, scrolt naar de instelling en markeert haar een paar seconden.
 
@@ -49,7 +49,7 @@ Het antwoord zegt waar het adres staat. De kaart eronder toont het pad (**Settin
 
 U vraagt **"Hoe schakel ik barcodedetectie in?"** (hoe schakel ik barcodedetectie in?)
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-answer-barcode-nl.png" alt="De assistent legt de drie barcode-instellingen uit en wanneer u elk moet inschakelen"><figcaption><p>Wanneer een woord bij meerdere instellingen past, somt de assistent ze allemaal op met <strong>Enable when</strong> (inschakelen wanneer) en <strong>Leave off when</strong> (uit laten wanneer).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-nl.png" alt="De assistent legt de drie barcode-instellingen uit en wanneer u elk moet inschakelen"><figcaption><p>Wanneer een woord bij meerdere instellingen past, somt de assistent ze allemaal op met <strong>Enable when</strong> (inschakelen wanneer) en <strong>Leave off when</strong> (uit laten wanneer).</p></figcaption></figure>
 
 "Barcodedetectie" kan drie verschillende instellingen betekenen, dus de assistent vraagt *Did you mean: QR Code Extraction, Barcode Assignment, or Split Document on Barcode?* (bedoelde u: QR Code Extraction, Barcode Assignment of Split Document on Barcode?) en legt ze uit:
 
@@ -61,7 +61,7 @@ U vraagt **"Hoe schakel ik barcodedetectie in?"** (hoe schakel ik barcodedetecti
 
 U vraagt **"Waarom is de bestelafstemming niet actief?"** (waarom is PO-matching niet actief?)
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-answer-po-matching-nl.png" alt="De assistent toont de huidige waarde van elke instelling voor PO-matching"><figcaption><p>Bij een "waarom"-vraag leest de assistent uw configuratie en toont elke instelling met haar <strong>Current</strong>-waarde (huidige waarde).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-nl.png" alt="De assistent toont de huidige waarde van elke instelling voor PO-matching"><figcaption><p>Bij een "waarom"-vraag leest de assistent uw configuratie en toont elke instelling met haar <strong>Current</strong>-waarde (huidige waarde).</p></figcaption></figure>
 
 De assistent leest de instellingen van uw organisatie en meldt wat hij heeft gevonden. In dit voorbeeld staat PO-matching **On** (aan) voor alle vier de documenttypen, en de instelling **Auto export if PO matched 100%** staat **Off** (uit), dus automatische matching en export draaien niet. Elke kaart toont **Current: On / Off** en een knop **Open setting**, zodat u het meteen kunt oplossen.
 
@@ -69,20 +69,20 @@ De assistent leest de instellingen van uw organisatie en meldt wat hij heeft gev
 
 U opent **Instellingen → Documenttypen** en vraagt **"Is PO matching active for invoices?"** (is PO-matching actief voor facturen?) (deze vraag is ook een van de drie suggesties op die pagina).
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-nl.png" alt="De pagina Documenttypen in Instellingen met de Settings Assistant rechts, die antwoordt dat PO-matching aan staat voor facturen en drie gerelateerde instellingen toont"><figcaption><p>De pagina <strong>Document Types</strong> met de assistent rechts. Het antwoord zegt <strong>PO Matching is active for invoices in your organisation</strong> en toont drie gerelateerde instellingen: <strong>PO Matching</strong> (Current: On), de <strong>PO match rules</strong> en <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-nl.png" alt="De pagina Documenttypen in Instellingen met de Settings Assistant rechts, die antwoordt dat PO-matching aan staat voor facturen en drie gerelateerde instellingen toont"><figcaption><p>De pagina <strong>Document Types</strong> met de assistent rechts. Het antwoord zegt <strong>PO Matching is active for invoices in your organisation</strong> en toont drie gerelateerde instellingen: <strong>PO Matching</strong> (Current: On), de <strong>PO match rules</strong> en <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
 
 De assistent leest de instelling voor het documenttype en voegt de instellingen toe die erbij horen. In dit voorbeeld staat matching aan, maar automatische export na een match van 100 % staat uit, dus gematchte facturen wachten nog op een persoon. Elke kaart heeft een knop **Open setting**.
 
-* Voor de **matchingregels en toleranties** gebruikt u de pagina [Regels voor het Matchen van Inkooporders](../../document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
-* Om te zien **waarom documenten van een leverancier niet matchen**, opent u [Touchless Intelligence: PO-matchingdiagnose](../../../../touchless-po-matching-diagnosis.md). Die toont de reden, de getroffen documenten en de beslisstroom.
+* Voor de **matchingregels en toleranties** gebruikt u de pagina [Regels voor het Matchen van Inkooporders](../document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+* Om te zien **waarom documenten van een leverancier niet matchen**, opent u [Touchless Intelligence: PO-matchingdiagnose](../../../touchless-po-matching-diagnosis.md). Die toont de reden, de getroffen documenten en de beslisstroom.
 
 ### Voorbeeld 5: Veldvalidatie (aangepaste validatieregels)
 
 Op de pagina **Instellingen → Documenttypen → Custom Validation Rules** begroet het paneel u voor deze pagina en stelt het drie vragen voor.
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-nl.png" alt="De pagina Custom Validation Rules in Instellingen met de regellijst in het midden en de Settings Assistant met drie voorgestelde vragen rechts"><figcaption><p>De pagina <strong>Custom Validation Rules</strong> met de assistent rechts. De lijst met regels staat in het midden, de drie suggesties van het paneel zijn: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> en <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-nl.png" alt="De pagina Custom Validation Rules in Instellingen met de regellijst in het midden en de Settings Assistant met drie voorgestelde vragen rechts"><figcaption><p>De pagina <strong>Custom Validation Rules</strong> met de assistent rechts. De lijst met regels staat in het midden, de drie suggesties van het paneel zijn: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> en <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
 
-Gebruik de assistent hier om de juiste instelling te **vinden** en om te leren wat een regel doet. Om een regel te **maken of te wijzigen**, werkt u op de pagina zelf: zie [Aangepaste validatieregels](../../document-types/custom-validation-rules.md) en [Een aangepaste validatieregel dupliceren](../../document-types/duplicate-a-custom-validation-rule.md). Als de assistent een regel voor u aanmaakt, wordt de regel altijd **inactief** aangemaakt, en schakelt u haar zelf in.
+Gebruik de assistent hier om de juiste instelling te **vinden** en om te leren wat een regel doet. Om een regel te **maken of te wijzigen**, werkt u op de pagina zelf: zie [Aangepaste validatieregels](../document-types/custom-validation-rules.md) en [Een aangepaste validatieregel dupliceren](../document-types/duplicate-a-custom-validation-rule.md). Als de assistent een regel voor u aanmaakt, wordt de regel altijd **inactief** aangemaakt, en schakelt u haar zelf in.
 
 {% hint style="info" %}
 Verwar **Custom Validation Rules** (regels voor de velden van een documenttype) niet met **E-Invoice Validation** (de controle van XRechnung-, ZUGFeRD- en Factur-X-bestanden). Het zijn twee verschillende pagina's.
@@ -111,7 +111,7 @@ Als een vraag buiten het gebied van de instellingen valt, of de assistent er nie
 
 Wanneer iets in uw configuratie niet meer werkt, verschijnt bovenaan het paneel een **rode kaart**. U hoeft niets te vragen. De assistent controleert opnieuw wanneer u het paneel opent en wanneer u terugkeert naar het browsertabblad.
 
-<figure><img src="../../../../../.gitbook/assets/settings-assistant-finding-expanded-nl.png" alt="Een uitgeklapte bevindingskaart met één mailbox die is uitgeschakeld na drie mislukte pogingen"><figcaption><p>Een uitgeklapte bevinding: de mailbox, de status (<strong>Switched off</strong>), het aantal mislukte pogingen en de reden.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded-nl.png" alt="Een uitgeklapte bevindingskaart met één mailbox die is uitgeschakeld na drie mislukte pogingen"><figcaption><p>Een uitgeklapte bevinding: de mailbox, de status (<strong>Switched off</strong>), het aantal mislukte pogingen en de reden.</p></figcaption></figure>
 
 Er zijn momenteel twee controles:
 
@@ -132,7 +132,7 @@ De samenvattingsregel vertelt u hoe erg het is:
 | --- | --- |
 | *Switched off: nothing is being imported from here.* (uitgeschakeld: hier wordt niets geïmporteerd) | Alle getroffen mailboxen zijn uitgeschakeld. Er komt niets binnen. |
 | *Still being retried, but imports are probably failing.* (wordt nog opnieuw geprobeerd, maar imports mislukken waarschijnlijk) | DocBits blijft proberen, maar de aanmelding werkt niet. |
-| *1 switched off, 2 still being retried.* | Een mix van beide. |
+| *1 switched off, 2 still being retried.* (1 uitgeschakeld, 2 worden nog opnieuw geprobeerd) | Een mix van beide. |
 
 ### Redenen die u kunt zien
 
@@ -165,7 +165,7 @@ De assistent wijzigt nooit zelf iets. Elke wijziging volgt dezelfde vier stappen
 1. **Voorbeeld**: u ziet de instelling, haar bereik (**Organization**) en de waarde **huidig → voorgesteld**. Er is nog niets opgeslagen.
 2. **Uw bevestiging**: u klikt op **Confirm** (of **Yes**). Alleen een organisatiebeheerder kan dit doen.
 3. **Resultaatregel**: de chat toont **Changed: (setting) → (value)** (gewijzigd: instelling → waarde).
-4. **Ongedaan maken**: met een knop met aftelling ("14 min left") kunt u de wijziging binnen 15 minuten terugdraaien. De wijziging wordt ook in het logboek vastgelegd.
+4. **Ongedaan maken**: met een knop met aftelling ("14 min left", nog 14 min) kunt u de wijziging terugdraaien. De wijziging wordt ook in het logboek vastgelegd.
 
 **Voorbeeld (illustratief).** Een aanbevelingskaart voor een instelling die de assistent mag schrijven, toont een knop **Apply** (toepassen) naast **Open setting**. Stel dat de kaart over **Auto export if PO matched 100%** gaat. U klikt op **Apply**. Het dialoogvenster **Apply this change?** (deze wijziging toepassen?) toont *Current: Off → Proposed: On*. U klikt op **Confirm**. Er verschijnt een melding **Setting updated.** (instelling bijgewerkt) met een knop **Undo**. Als u binnen ongeveer 15 minuten een fout opmerkt, klikt u op **Undo** en is de oude waarde terug. Kaarten zonder knop **Apply** zijn alleen voor navigatie: gebruik **Open setting** en wijzig de waarde zelf.
 
@@ -190,7 +190,7 @@ Als u om een **transformatieregel** vraagt, toont de assistent eerst een **Rule 
 
 * de naam van de regel en een gewone zin ("Remove dashes from the supplier VAT number"),
 * het doel (headerveld, kolom van een tabel, rijen van een tabel, documentattribuut),
-* een test op voorbeelddocumenten: **Applies to 4 of 5 samples**, waarbij elk document is gemarkeerd als **Applies**, **Does not apply** of **Applies, no change**.
+* een test op voorbeelddocumenten: **Applies to 4 of 5 samples** (is van toepassing op 4 van 5 voorbeelden), waarbij elk document is gemarkeerd als **Applies**, **Does not apply** of **Applies, no change**.
 
 Met **Create rule** (regel aanmaken) slaat u haar op. De regel wordt **inactief** aangemaakt: u activeert haar zelf na controle. U kunt het aanmaken **15 minuten** lang ongedaan maken. Daarna verwijdert u de regel in de regellijst. Via de assistent kunnen maximaal **10 regels per uur** worden aangemaakt.
 
@@ -222,8 +222,8 @@ Een gesprek bewaart de laatste 50 beurten in uw browser. Een vraag kan maximaal 
 
 ## Gerelateerde pagina's
 
-* [Settings Assistant: inschakelen](README.md)
-* [Analyse-dashboard](../../../../analytics-dashboard.md)
-* [DocBits MCP](../../../../../advanced-functions-and-tools/docbits-mcp/README.md)
+* [Settings Assistant: inschakelen](settings-assistant.md)
+* [Analyse-dashboard](../../../analytics-dashboard.md)
+* [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md)
 
-<!-- Source notes (not shown): the assistant answers for custom validation rules and for PO tolerance / "why not matched" questions are weak on dev (tracked in the CORE project), so this page shows only the greeting for validation and the PO matching status answer. Re-test and add answer screenshots after the fix. Facts read from the settings assistant code on dev and checked in the dev UI in October. "Fast tier, no organisation switch" and "documentation search not configured on Sandbox yet" come from the feature team. Strings for the apply/action cards not verified in the UI are described, not quoted. -->
+<!-- Source notes (not shown): the assistant answers for custom validation rules and for PO tolerance / "why not matched" questions are weak on dev (tracked in the CORE project, CORE-6433), so this page shows only the greeting for validation and the PO matching status answer. Re-test and add answer screenshots after the fix. facts read from the doc2app code on dev (SettingsAssistant, AssistantChat components) and checked in the dev UI on 14 Oct 2026. "Fast tier, no organisation switch" and "documentation search not configured on Sandbox yet" come from the feature team (CORE-6379). Strings for the apply/action cards not verified in the UI are described, not quoted. -->

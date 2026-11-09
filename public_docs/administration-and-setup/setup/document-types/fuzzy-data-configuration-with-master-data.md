@@ -43,7 +43,7 @@ Elke opzoekgroep is **standaard geactiveerd** maar kan worden aangepast door op 
 * **Deactiveren** → Deactiveert een groep. _(Alleen beschikbaar voor geactiveerde groepen)_
 * **Activeren** → Activeert een groep. _(Alleen beschikbaar voor gedeactiveerde groepen)_
 * **Dupliceren** → Maakt een kopie die kan worden aangepast zonder de originele te beïnvloeden.
-* **Weergeven** → Toont informatie zoals het **documenttype** waartoe het behoort en de **opzoektafel** die het gebruikt. _(Alleen beschikbaar voor standaardgroepen)_
+* **Weergeven** → Toont informatie zoals het **documenttype** waartoe het behoort en de **opzoektabel** die het gebruikt. _(Alleen beschikbaar voor standaardgroepen)_
 * **Bewerken** → Beschikbaar voor **niet-standaard** groepen. Hiermee kunnen groepsdetails worden aangepast.
 * **Verwijderen** → Verwijdert de groep volledig. _(Alleen voor niet-standaard groepen)_
 
@@ -94,7 +94,7 @@ Om een nieuw veld toe te voegen binnen een groep:
 
     ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FvmIXTEQQHKKNbvTJj1b4%252Fimage.png%3Falt%3Dmedia%26token%3D8569867b-9f5b-4865-90bd-f2e41e846979\&width=768\&dpr=4\&quality=100\&sign=603cb7df\&sv=2)
 2. Geef de volgende details op:
-   * **Opzoekveld** → Kolomnaam uit de mastergegevens opzoektafel.
+   * **Opzoekveld** → Kolomnaam uit de opzoektabel van de mastergegevens.
    * **Validatieveld** → Overeenkomstig DocBits-veld.
    * **Ouder veld** → _(Meer details nodig)_
    * **Zoekoperator** → Kies een:

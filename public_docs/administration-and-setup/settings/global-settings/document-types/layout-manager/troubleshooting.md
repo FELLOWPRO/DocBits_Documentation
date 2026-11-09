@@ -6,7 +6,7 @@
 
 * Compare the layout with the sample document: open the layout in the **Layout Builder** and use **Document** above the canvas to show the scanned document next to the fields.
 * Check that the field you see on the canvas is the field you mean. Select it and read the grey **Field Name** in the **Properties** panel — two fields can carry similar labels, and the technical name is the one that is captured.
-* Check that the field is placed where people expect it. **Structure** shows the layout as a tree in the order it appears on the document; drag groups and fields to reorder them.
+* Check that the field is placed where people expect it. **Structure** shows the layout as a tree in the order it appears on the document; select a row there to select the same element on the canvas, and drag groups and fields on the canvas to reorder them.
 * If a field is missing on the screen, open **Fields**, switch the filter to **Unused** and drag the field into the group where it belongs.
 
 ### A field cannot be entered or is not visible on the document:
@@ -34,7 +34,7 @@
 ### Document layouts are confusing or inefficient:
 
 * Group related fields instead of listing everything in one block, and put the fields people need first inside each group.
-* Keep fields that belong together side by side with **Element width**, and use **Tab Index** to set the order in which the keyboard moves through the fields.
+* Keep fields that belong together side by side with **Element width**, and use **Tab index** to set the order in which the keyboard moves through the fields.
 * Use the **Table** view of the canvas for line items — a long line-item table is easier to read when the important columns come first.
 
 By applying these best practices and troubleshooting as appropriate, you can create efficient and accurate document layouts that enable smooth data capture and processing.

@@ -32,7 +32,7 @@ Como o encargo por unidade ($7.00) excede a tolerância de 5% e não foi aprovad
    * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
    * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
 4. **Generate a Debit Note:** como o total original da fatura é superior ao total corrigido, o sistema gera uma nota de débito para o valor cobrado em excesso:
-   * **Valor da nota de débito = Total original da fatura - Valor total corrigido dos encargos**
+   * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
    * **Debit Note Amount = $5,600.00 - $4,800.00 = $800.00**
 5. **Process the Invoice:** o sistema processa a fatura com o total corrigido dos encargos de $4,800.00 e emite uma nota de débito de $800.00 para refletir o valor cobrado em excesso.
 

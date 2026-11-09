@@ -12,7 +12,7 @@ Une règle répond à trois questions :
 2. **Quand** la règle s'applique-t-elle ? Toujours, ou uniquement pour les documents (ou les lignes) qui remplissent une condition. Voir [Conditions de règle (Applies when)](rule-conditions-applies-when.md).
 3. **Qu'est-ce qui doit être vrai ?** Un champ doit être renseigné, respecter un format, se situer dans une plage, correspondre à une liste, se comparer correctement à un autre champ, ou s'additionner correctement.
 
-Lorsque le contrôle échoue, DocBits marque le champ ou la cellule sur l'**écran de validation** et affiche votre message, exactement comme pour un contrôle intégré. Avec la gravité **Erreur**, le document ne peut pas être validé tant que le problème n'est pas corrigé ; avec **Avertissement**, l'utilisateur ne reçoit qu'une indication.
+Lorsque le contrôle échoue, DocBits marque le champ ou la cellule sur l'**écran de validation** et affiche votre message, exactement comme pour un contrôle intégré. Avec la gravité **Erreur**, le document ne peut pas être validé tant que le problème n'est pas corrigé. Avec **Avertissement**, le document est également retenu, mais l'utilisateur peut le lever en confirmant le message sur le champ, sans modifier la valeur — voir [Confirmer un avertissement sur l'écran de validation](#acknowledge).
 
 Les règles sont définies par **type de document** et s'exécutent sur chaque document de ce type : pendant le traitement et à chaque enregistrement du document.
 
@@ -26,7 +26,7 @@ Les règles sont définies par **type de document** et s'exécutent sur chaque d
 | La date d'échéance ne doit pas précéder la date de facture | exécutions de paiement erronées | **Comparer les champs** : Due Date égale ou postérieure à Invoice Date |
 | Les lignes doivent s'additionner au montant net | seul le contrôle intégré fixe existe | **Formule** `sum(row.NET_AMOUNT) == header.total_net_amount` avec votre propre tolérance |
 | Seules les devises connues de votre ERP sont autorisées | erreurs d'exportation dans l'ERP | **Liste des valeurs** sur Currency |
-| Informer les utilisateurs de valeurs inhabituelles sans les bloquer | impossible | toute règle avec la gravité **Avertissement** |
+| Signaler des valeurs inhabituelles sans imposer de correction | un script, ou les utilisateurs doivent y penser | toute règle avec la gravité **Avertissement** — l'utilisateur confirme la valeur avec **Reconnaître** |
 
 ## Activer les règles de validation personnalisées
 
@@ -76,7 +76,7 @@ Cliquez sur **New rule**. Le générateur comporte trois étapes. **Test rule** 
 | Paramètre | Ce qu'il fait |
 | --- | --- |
 | **Niveau de règle** | Ce que la règle examine et où l'erreur est affichée. Voir [Niveaux de règle](#niveaux-de-regle). |
-| **Gravité** | **Erreur** marque le champ comme invalide et bloque la validation. **Avertissement** affiche le message mais ne bloque jamais. |
+| **Gravité** | **Erreur** marque le champ comme invalide et bloque la validation jusqu'à ce que la valeur soit corrigée. **Avertissement** retient aussi le document, mais l'utilisateur peut le lever avec **Reconnaître** sur l'écran de validation, sans modifier la valeur. |
 | **Rule Name** | Affiché dans la liste, dans les journaux et aux administrateurs. Faites-en une description de la règle (« Numéro fiscal du fournisseur obligatoire pour les factures allemandes »). |
 | **Clé de règle** | Une clé technique générée à partir du nom. Elle reste identique si vous renommez la règle par la suite. Cliquez sur le crayon pour choisir votre propre clé avant le premier enregistrement ; ensuite, elle est figée. |
 | **Description** | Explication facultative pour les autres administrateurs. |
@@ -221,8 +221,20 @@ Testez chaque nouvelle règle sur au moins un document qui doit échouer, un qui
 * **À chaque enregistrement** du document sur l'écran de validation.
 * **Après une modification de règle**, les documents existants ne sont **pas** tous recontrôlés d'un seul coup. Chaque document est recontrôlé avec les nouvelles règles à son prochain enregistrement ou retraitement. Les documents déjà exportés ne sont pas concernés.
 * Les règles s'exécutent par ordre de priorité (puis par clé). Un champ n'affiche qu'**une** erreur : si deux règles échouent sur le même champ, la première l'emporte ; les suivantes ne l'écrasent pas.
-* Les avertissements sont collectés séparément et ne masquent jamais une erreur.
+* Les avertissements sont collectés séparément et ne masquent jamais une erreur : un champ qui échoue aussi à une règle bloquante n'affiche que l'erreur, et il n'y a rien à y reconnaître.
 * Si une règle ne peut pas être évaluée (par exemple une division par zéro dans une formule), elle est ignorée. Une règle défectueuse ne marque jamais un document comme invalide par erreur.
+
+## Confirmer un avertissement sur l'écran de validation <a id="acknowledge"></a>
+
+Une règle en échec de gravité **Avertissement** retient le document comme une erreur : tant que le champ n'est pas reconnu, le document ne peut pas être validé. La différence tient à ce que l'utilisateur doit faire.
+
+Sur l'écran de validation, le message de la règle apparaît sous le champ, avec le bouton **Reconnaître**. Un clic confirme tous les avertissements de ce champ sans modifier sa valeur. Le message est alors remplacé par la note **Compris. La modification de la valeur demande à nouveau confirmation.**
+
+La confirmation est liée à la valeur pour laquelle elle a été donnée. Si l'utilisateur modifie la valeur, la réextrait, ou si le champ est recontrôlé avec un résultat différent, l'avertissement réapparaît et doit être confirmé de nouveau. Un champ qui affiche une erreur bloquante ne peut pas être reconnu : corrigez-y la valeur.
+
+Sur un document en lecture seule, le bouton n'est pas affiché : un avertissement doit donc y être résolu par une personne qui peut modifier le champ.
+
+Le bouton **Reconnaître** est proposé pour les champs d'en-tête.
 
 ## Journaux <a id="logs"></a>
 
@@ -264,15 +276,15 @@ Header field · Error · *Due Date* · toujours · **Comparer les champs** Due D
 **8. Aucune facture datée dans le futur**
 Header field · Error · *Invoice Date* · toujours · **Comparer les champs** Invoice Date *on or before (≤)* aujourd'hui.
 
-**9. Uniquement les devises approuvées (simple avertissement)**
-Header field · **Avertissement** · *Currency* · toujours · **Liste des valeurs** *approved_currencies* · Code `VALUE_NOT_ALLOWED`.
+**9. Uniquement les devises approuvées (confirmer au lieu de corriger)**
+Header field · **Avertissement** · *Currency* · toujours · **Liste des valeurs** *approved_currencies* · Code `VALUE_NOT_ALLOWED`. L'utilisateur doit confirmer l'avertissement avant que le document puisse être validé.
 
 **10. Commande d'achat obligatoire au-dessus de 5 000**
 Champ d'en-tête · Erreur · *Bon de commande* · S'applique lorsque *Montant total* supérieur à *5000* · **Required**.
 
 ## Bonnes pratiques
 
-* **Commencez par un avertissement.** Enregistrez une nouvelle règle avec la gravité **Avertissement**, observez-la pendant quelques jours (Test rule, journaux), puis passez-la en **Erreur**.
+* **Commencez par un avertissement.** Enregistrez une nouvelle règle avec la gravité **Avertissement**, observez-la pendant quelques jours (Test rule, journaux), puis passez-la en **Erreur**. Les utilisateurs ne sont pas obligés de corriger la valeur, mais ils sont bloqués jusqu'à ce qu'ils aient confirmé chaque occurrence.
 * **Une règle, un message.** Plusieurs petites règles avec des messages clairs sont plus faciles à comprendre qu'une grande formule.
 * **Utilisez Applies when plutôt que des copies.** Une règle avec une condition vaut mieux que cinq copies pour cinq fournisseurs.
 * **Soyez tolérant avec les montants.** Donnez toujours une tolérance aux formules de montants.

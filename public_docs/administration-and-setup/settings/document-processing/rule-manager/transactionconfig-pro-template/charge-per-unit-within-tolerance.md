@@ -4,11 +4,11 @@ El siguiente escenario es un ejemplo de asignación configurada, no una plantill
 
 ## Escenario:
 
-El cargo por unidad en la factura está dentro del rango de tolerancia aceptable en comparación con la orden de compra.
+El Charge Per Unit de la factura está dentro del rango de tolerancia aceptable en comparación con la orden de compra.
 
 ## Acción:
 
-El sistema acepta el cargo por unidad como facturado y procesa la transacción sin ajustes.
+El sistema acepta el Charge Per Unit como facturado y procesa la transacción sin ajustes.
 
 ## Ejemplo:
 
@@ -23,10 +23,10 @@ El sistema acepta el cargo por unidad como facturado y procesa la transacción s
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±3%
 
-Dado que el cargo por unidad ($5.10) está dentro del rango de tolerancia aceptable del 3% en comparación con la orden de compra, el sistema:
+Dado que el Charge Per Unit ($5.10) está dentro del rango de tolerancia aceptable del 3% en comparación con la orden de compra, el sistema:
 
-1. **Accept the Charge Per Unit:** El sistema acepta el cargo facturado por unidad de $5.10 ya que se encuentra dentro del límite de tolerancia definido.
-2. **Process the Transaction:** El sistema procesa la factura con el monto total del cargo en función del cargo facturado por unidad y cantidad:
+1. **Accept the Charge Per Unit:** El sistema acepta el Charge Per Unit facturado de $5.10 ya que se encuentra dentro del límite de tolerancia definido.
+2. **Process the Transaction:** El sistema procesa la factura con el Total Charge Amount en función del Charge Per Unit facturado y de la Quantity:
    * **Total Charge Amount = Quantity × Charge Per Unit**
    * **Total Charge Amount = 500 units × $5.10 = $2,550.00**
 3. **Finalize the Invoice:** El sistema procesa la transacción sin ningún ajuste, aceptando la factura tal como está.

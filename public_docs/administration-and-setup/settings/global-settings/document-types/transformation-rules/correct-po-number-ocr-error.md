@@ -2,13 +2,21 @@
 
 Das dritte Zeichen von `06O123` ist der **Buchstabe O**. Wird stattdessen `060123` extrahiert, können Sie das bekannte Muster mit einer bedingten Präfixtransformation ohne eigenes Skript korrigieren.
 
+## Hilfevideo
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-number-ocr-correction-admin/v1/de.mp4" %}
+OCR-Fehler in einer Bestellnummer korrigieren – deutsches Hilfevideo (1:16 Minuten).
+{% endembed %}
+
+[Video mit anklickbarem Transkript öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-number-ocr-correction-admin/v1/de.html)
+
 ## Präfixkorrektur einrichten
 
 1. Öffnen Sie **Einstellungen → Dokumenttypen → Zahnrad → Transformationsregeln → Transformationsregeln verwalten**. Ein Organisationsadministrator muss die Funktion für den ausgewählten Dokumenttyp aktivieren.
 2. Erstellen Sie eine **Kopffeld**-Regel mit **Bestellung (`Purchase Order`)** als Ziel. Lesen Sie aus **dem Feld selbst**.
-3. Wählen Sie unter **Nur wenn…** das Bestellfeld, **beginnt mit (`starts with`)** und `060`.
+3. Wählen Sie unter **Nur wenn…** das Bestellfeld, **beginnt mit** und `060`.
 4. Entfernen Sie den anfänglichen Trim-Schritt. Fügen Sie **Affix → Präfix entfernen → `060`** und danach **Affix → Präfix hinzufügen → `06O`** hinzu. Geben Sie im zweiten Schritt den Großbuchstaben O ein. Die Bedingung begrenzt beide Schritte auf das betroffene Präfix; die restlichen Zeichen bleiben erhalten.
-5. Prüfen Sie die Live-Vorschau, speichern Sie die Regel und öffnen Sie sie erneut. Testen Sie ein Dokument, speichern Sie es und laden Sie es neu, um die gespeicherte Bestellnummer zu kontrollieren.
+5. Prüfen Sie die Live-Vorschau, speichern Sie die Regel und öffnen Sie sie erneut. Testen Sie die Regel an einem neuen oder tatsächlich geänderten Testdokument. Speichern Sie es und laden Sie es neu, um die gespeicherte Bestellnummer zu kontrollieren. Ein unverändertes, bereits gespeichertes Dokument löst durch erneutes Speichern allein keine neue Transformation aus.
 
 ## Ergebnis prüfen
 
@@ -26,4 +34,4 @@ Dieses Beispiel korrigiert ein bekanntes Extraktionsmuster. Es beweist weder die
 
 Der aktuelle Editor verlangt für positionsabhängige Schritte wie **Suchen und Ersetzen** ein separates Quellfeld, auch wenn **Nur einmal pro Dokument ausführen** aktiviert ist. Die beiden Präfix-Schritte funktionieren auf demselben Feld. Nach der Korrektur beginnt der Wert nicht mehr mit `060`; bei weiteren Speichervorgängen greift die Bedingung daher nicht mehr.
 
-In der aufgenommenen Produktoberfläche ist `starts with` noch englisch; **Präfix entfernen** erscheint als **Streifenpräfix**. Gemeint ist das Entfernen des angegebenen Anfangs, nicht das Entfernen aller gleichlautenden Zeichenfolgen.
+In der aufgenommenen Produktoberfläche erscheint **Präfix entfernen** als **Streifenpräfix**. Gemeint ist das Entfernen des angegebenen Anfangs, nicht das Entfernen aller gleichlautenden Zeichenfolgen.

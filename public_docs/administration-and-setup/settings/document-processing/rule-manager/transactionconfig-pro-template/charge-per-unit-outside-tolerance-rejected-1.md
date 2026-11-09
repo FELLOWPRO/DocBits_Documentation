@@ -31,9 +31,9 @@ Le système ajuste les frais par unité pour correspondre au bon de commande ou 
 3. **Recalculer le montant total des frais :** Le système recalcule le montant total des frais en fonction des frais ajustés par unité :
    * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
    * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
-4. **Générer une note de débit :** Le total de la facture originale étant supérieur au total corrigé, le système génère une note de débit pour le montant surfacturé :
+4. **Generate a Debit Note:** Le total de la facture originale étant supérieur au total corrigé, le système génère une note de débit pour le montant surfacturé :
    * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
-   * **Montant de la note de débit = $5,600.00 - $4,800.00 = $800.00**
-5. **Traiter la facture :** Le système traite la facture avec des frais totaux corrigés de $4,800.00 et émet une note de débit de $800.00 pour tenir compte du montant surfacturé.
+   * **Debit Note Amount = $5,600.00 - $4,800.00 = $800.00**
+5. **Process the Invoice:** Le système traite la facture avec des frais totaux corrigés de $4,800.00 et émet une note de débit de $800.00 pour tenir compte du montant surfacturé.
 
 Cette approche garantit que les transactions financières sont conformes aux conditions du bon de commande, en rejetant les écarts non approuvés et en maintenant des pratiques de facturation précises.

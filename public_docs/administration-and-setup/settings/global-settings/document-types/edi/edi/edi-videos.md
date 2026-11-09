@@ -4,7 +4,7 @@ Cette page contient une série de courtes vidéos explicatives sur le traitement
 
 ## **Comprendre le Fichier de Description de Structure**
 
-Cette vidéo explique l'objectif du fichier de description de structure utilisé par DocBits pour interpréter les documents EDI.
+&#x20;Cette vidéo explique l'objectif du fichier de description de structure utilisé par DocBits pour interpréter les documents EDI.
 
 {% embed url="https://youtu.be/_U6yyYFMo84" %}
 
@@ -13,7 +13,7 @@ Pour une visite détaillée et des instructions d'édition, voir le [**Guide du 
 
 ## **Travailler avec le Fichier de Transformation**
 
-Cette vidéo montre comment le fichier de transformation définit les règles de conversion des données EDI au format de sortie souhaité dans DocBits.
+&#x20;Cette vidéo montre comment le fichier de transformation définit les règles de conversion des données EDI au format de sortie souhaité dans DocBits.
 
 {% embed url="https://www.youtube.com/watch?v=x7ZNkx13D5I" %}
 
@@ -22,7 +22,7 @@ Pour une visite détaillée et des instructions d'édition, voir le [**Guide du 
 
 ## **Explorer la Fonctionnalité de Prévisualisation**
 
-Cette vidéo présente comment la fonctionnalité de prévisualisation dans DocBits vous permet de visualiser les données EDI traitées.
+&#x20;Cette vidéo présente comment la fonctionnalité de prévisualisation dans DocBits vous permet de visualiser les données EDI traitées.
 
 {% embed url="https://youtu.be/9ioes44TAWs" %}
 
@@ -31,7 +31,7 @@ Pour une visite détaillée et des instructions d'édition, voir le [**Guide du 
 
 ## **Mappage des Informations aux Champs d'En-tête**
 
-Cette vidéo détaille le processus de mappage d'éléments de données spécifiques du document EDI aux champs d'en-tête correspondants dans DocBits.
+&#x20;Cette vidéo détaille le processus de mappage d'éléments de données spécifiques du document EDI aux champs d'en-tête correspondants dans DocBits.
 
 {% embed url="https://youtu.be/9xcXZY73GmE" %}
 

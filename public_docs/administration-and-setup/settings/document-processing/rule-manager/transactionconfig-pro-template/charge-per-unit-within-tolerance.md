@@ -25,10 +25,10 @@ Het systeem accepteert de kosten per eenheid zoals gefactureerd en verwerkt de t
 
 Aangezien de kosten per eenheid ($5.10) binnen het aanvaardbare tolerantiebereik van 3% vallen in vergelijking met de inkooporder, zal het systeem:
 
-1. **Accepteer de kosten per eenheid:** Het systeem accepteert de gefactureerde kosten per eenheid van $5.10, aangezien deze binnen de gedefinieerde tolerantielimiet vallen.
-2. **De transactie verwerken:** Het systeem verwerkt de factuur met het totale kostenbedrag op basis van de gefactureerde kosten per eenheid en hoeveelheid:
+1. **Accept the Charge Per Unit:** Het systeem accepteert de gefactureerde kosten per eenheid van $5.10, aangezien deze binnen de gedefinieerde tolerantielimiet vallen.
+2. **Process the Transaction:** Het systeem verwerkt de factuur met het totale kostenbedrag op basis van de gefactureerde kosten per eenheid en hoeveelheid:
    * **Total Charge Amount = Quantity × Charge Per Unit**
    * **Total Charge Amount = 500 units × $5.10 = $2,550.00**
-3. **De factuur voltooien:** Het systeem verwerkt de transactie zonder enige aanpassingen en accepteert de factuur zoals deze is.
+3. **Finalize the Invoice:** Het systeem verwerkt de transactie zonder enige aanpassingen en accepteert de factuur zoals deze is.
 
 Dankzij deze aanpak kan het systeem kleine aanvaardbare verschillen in kosten opvangen, waardoor een soepele en efficiënte verwerking van transacties wordt gegarandeerd zonder onnodige afwijzingen of vertragingen.

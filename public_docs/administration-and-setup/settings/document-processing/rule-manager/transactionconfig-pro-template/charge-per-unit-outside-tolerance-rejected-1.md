@@ -23,7 +23,7 @@ Het systeem past de kosten per eenheid aan zodat deze overeenkomen met de inkoop
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±5%
 
-Aangezien de kosten per eenheid ($7.00) het aanvaardbare tolerantiebereik van 5% overschrijden en niet zijn goedgekeurd, zal het systeem:
+Aangezien Charge Per Unit ($7.00) het aanvaardbare tolerantiebereik van 5% overschrijdt en niet zijn goedgekeurd, zal het systeem:
 
 1. **Reject the Invoiced Charge Per Unit:** Het systeem accepteert de gefactureerde kosten per eenheid van $7.00 niet omdat de afwijking de tolerantielimiet overschrijdt.
 2. **Adjust the Charge Per Unit:** Het systeem past de kosten per eenheid aan zodat deze overeenkomen met de inkooporder of de goedgekeurde kosten per eenheid:

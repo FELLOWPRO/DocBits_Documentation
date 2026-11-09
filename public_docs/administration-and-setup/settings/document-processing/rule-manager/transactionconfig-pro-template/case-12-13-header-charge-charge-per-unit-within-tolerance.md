@@ -17,7 +17,7 @@ The system processes the header charge as invoiced, applying it without adjustme
   * Quantity: 1,200 units
   * Total Header Charge Amount: $4,200.00
 * **Invoice Received:**
-  * Header Charge Per Unit: $3.55 (within tolerance of 1.43%)
+  * Header Charge Per Unit: $3.55 — 1.43% above the PO value, within the configured ±2% tolerance.
   * Quantity: 1,200 units
   * Total Header Charge Amount: $4,260.00
 * **Tolerance Levels:**

@@ -17,8 +17,8 @@ The system rejects the invoice unit price, adjusts it to match the purchase orde
   * Unit Price: $15.00 per unit
   * Total Amount: $3,000.00
 * **Invoice Received:**
-  * Quantity: 198 units (within tolerance of 1%)
-  * Unit Price: $17.00 per unit (outside positive tolerance of 13.33%)
+  * Quantity: 198 units — 1% below the PO value, within the configured ±2% tolerance.
+  * Unit Price: $17.00 per unit — 13.33% above the PO value, outside the configured ±1% tolerance.
   * Total Amount: $3,366.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±2%

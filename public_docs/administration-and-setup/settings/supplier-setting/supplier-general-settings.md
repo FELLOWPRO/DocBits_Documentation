@@ -26,7 +26,7 @@ By default, suppliers register with the standard fields of the supplier layout. 
 
 ### Status
 
-The **Status** section defines the workflow a supplier registration moves through. The left panel lists all statuses in order; the right panel configures the status you select. For the meaning of the built-in statuses (Open, Pending Registration, Pending Approval, Approved, and so on), see [Supplier Portal — Supplier Status](../../setup/supplier-portal/README.md#supplier-status).
+The **Status** section defines the workflow a supplier registration moves through. The left panel lists all statuses in order; the right panel configures the status you select. For how activation, invitation, registration and approval states differ, see [Supplier Portal — Understand access and status](../../setup/supplier-portal/README.md#understand-access-and-status).
 
 * **Reorder statuses**: drag a status by the handle on its left. The new order is saved automatically.
 * **Select a status**: click a status in the list to load it into the **Configure Status** panel. Built-in statuses are locked: their name and approval settings cannot be changed, and they cannot be deleted.

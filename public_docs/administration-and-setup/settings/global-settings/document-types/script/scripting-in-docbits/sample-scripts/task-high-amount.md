@@ -44,5 +44,5 @@ except ValueError:
 ## Functions Used
 
 - [get\_field\_value()](../field-functions.md#get\_field\_value) — Read field value
-- [get\_group\_by\_name()](../business-logic-functions.md#get\_group\_by\_id--get\_group\_by\_name) — Find group by name
+- [get\_group\_by\_name()](../business-logic-functions.md#get\_group\_by\_id-get\_group\_by\_name) — Find group by name
 - [create\_document\_task()](../business-logic-functions.md#create\_document\_task) — Create approval task

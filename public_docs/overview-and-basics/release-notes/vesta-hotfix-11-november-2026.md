@@ -1,8 +1,8 @@
 # VESTA version de novembre V2611
 
-## 11 novembre 2026
+## 18 novembre 2026
 
-> **ID de version :** V2611 · **Canal de publication :** VESTA · **Statut :** Prévu · **Environnement de test :** 4 novembre 2026 · **Production :** 11 novembre 2026.
+> **ID de version :** V2611 · **Canal de publication :** VESTA · **Statut :** Prévu · **Environnement de test :** 4 novembre 2026 · **Production :** 18 novembre 2026.
 
 Le prochain correctif VESTA intègre **toutes les fonctionnalités précédemment disponibles en bêta dans VESTA aux fonctionnalités standard de VESTA**. Ces fonctionnalités sont déjà disponibles dans l’[environnement de test de NOVA](nova-minor-release-4-november-2026.md#former-vesta-beta-features-included-in-nova) ; la mise en production de NOVA est prévue le **4 novembre 2026**.
 
@@ -15,7 +15,7 @@ Le prochain correctif VESTA intègre **toutes les fonctionnalités précédemmen
 | Version | Disponibilité des anciennes fonctionnalités bêta VESTA |
 | --- | --- |
 | **NOVA N2611** | Disponible dans l’environnement de test depuis le 16 octobre 2026 ; mise en production prévue le 4 novembre 2026. |
-| **VESTA V2611 — correctif du 11 novembre 2026** | Disponible dans l’environnement de test à partir du 4 novembre 2026 ; introduction prévue dans l'ensemble de fonctionnalités standard de VESTA le 11 novembre 2026. |
+| **VESTA V2611 — correctif du 18 novembre 2026** | Disponible dans l’environnement de test à partir du 4 novembre 2026 ; introduction prévue dans l'ensemble de fonctionnalités standard de VESTA le 18 novembre 2026. |
 
 ## Guides pour la configuration des règles
 

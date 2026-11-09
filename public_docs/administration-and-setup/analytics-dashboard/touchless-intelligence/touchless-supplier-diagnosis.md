@@ -73,7 +73,7 @@ Se il primo blocco di un cluster è un motivo di abbinamento ordini (ad esempio 
 | Infor corretto, copia importata vecchia o incompleta | Importazione o integrazione ERP |
 | Valori diversi ma accordo non ancora noto | Chiarimento aziendale; causa non confermata |
 
-Il riquadro AP del fornitore conta sola approvazione; il tasso AP in intestazione include anche Pure. Registrate rimedio immediato e correzione duratura: un piccolo intervento può terminare la fattura senza eliminare la causa ricorrente.
+Il riquadro AP del fornitore conta sola approvazione; il tasso AP in intestazione include anche Pure. Registrate rimedio immediato e correzione duratura: un piccolo intervento può terminare la fattura senza eliminare la causa ricorrente. Un cluster da solo non dimostra il contenuto storico di Infor. Vedi [l'esempio pratico su Infor](touchless-po-matching-diagnosis.md#worked-example-correct-extraction-different-infor-data).
 
 Strumenti e classificazione delle azioni umane sono spiegati in [Touchless con MCP](touchless-mcp.md).
 
@@ -84,6 +84,6 @@ Strumenti e classificazione delle azioni umane sono spiegati in [Touchless con M
 * [Tracciamento del documento](touchless-document-trace.md)
 * [Proposte di modifica e report](touchless-change-proposals.md)
 
-<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+<!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 
-<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->
+<!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

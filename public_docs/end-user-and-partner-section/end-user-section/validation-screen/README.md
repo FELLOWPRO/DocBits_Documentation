@@ -56,7 +56,11 @@ Dans la vidéo, la facture vérifiée est soumise pour approbation. Un bouton **
 
 Une bordure rouge ou une icône d’avertissement attire l’attention sur un champ. Lisez son message : une valeur obligatoire manque-t-elle, faut-il vérifier l’extraction ou un contrôle configuré a-t-il échoué ? La présence d’une valeur ne suffit pas à prouver sa validité.
 
-Comparez fournisseur, numéro, dates, montants et devise avec l’original. Pour les totaux, vérifiez les champs d’en-tête concernés et les lignes éventuelles. Corrigez la cause indiquée avant de poursuivre. Les contrôles dépendent du type de document et de la configuration de l’organisation ; voir [Contrôles automatiques](automatic-checks-on-the-validation-screen.md).
+Comparez fournisseur, numéro, dates, montants et devise avec l’original. Pour les totaux, vérifiez les champs d’en-tête concernés et les lignes éventuelles. Corrigez la cause indiquée avant de poursuivre.
+
+Certains messages proviennent d’une règle **Avertissement**. Ils ne disparaissent pas d’eux-mêmes : sélectionnez **Reconnaître** sous le champ pour confirmer la valeur, et le message est remplacé par la note **Compris. La modification de la valeur demande à nouveau confirmation.** Si vous modifiez la valeur par la suite, l’avertissement réapparaît et vous devez le confirmer de nouveau. Un champ qui affiche une erreur bloquante doit être corrigé à la place : aucun bouton ne s’y trouve.
+
+Les contrôles dépendent du type de document et de la configuration de l’organisation ; voir [Contrôles automatiques](automatic-checks-on-the-validation-screen.md).
 
 ## Utiliser l’assistant
 

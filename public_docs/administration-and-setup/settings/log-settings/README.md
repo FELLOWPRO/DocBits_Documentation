@@ -28,6 +28,14 @@ Oben auf der Seite verlinkt ein Banner auf das **Analyse-Dashboard** mit Diagram
 
 Die Ergebnisse sind seitenweise aufgeteilt — navigieren Sie mit den Steuerelementen am unteren Rand durch die Seiten.
 
+## Protokolldetails
+
+Wählen Sie eine Protokollzeile aus, um die Detailansicht zu öffnen. Die Zusammenfassung zeigt Schweregrad, Zeitstempel, Service und Protokoll-ID, darunter die Ereignismeldung.
+
+Der Bereich **Protokolldetails** enthält das vollständige Ereignis als formatiertes JSON. Je nach Ereignis können Metadaten wie Quelle, Umgebung, Benutzer, Ressource, Aktion sowie Netzwerk- oder Clientinformationen enthalten sein. Felder ohne Wert können als `null` erscheinen.
+
+Wählen Sie das Kopiersymbol unten rechts in **Protokolldetails**, um den vollständigen JSON-Datensatz in die Zwischenablage zu kopieren. Über den Zurück-Pfeil neben **Aktivitätsprotokollierung** kehren Sie zur Liste zurück.
+
 ## Aktionen in der Fußzeile
 
 | Aktion | Beschreibung |

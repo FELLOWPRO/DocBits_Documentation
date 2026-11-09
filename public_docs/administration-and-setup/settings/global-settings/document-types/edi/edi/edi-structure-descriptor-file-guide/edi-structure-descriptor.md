@@ -1,6 +1,6 @@
 # EDI Structuur beschrijving
 
-Het primaire doel van de structuur beschrijving is om de elementen van een EDI-bericht op een logische en georganiseerde manier te schetsen, waardoor het gemakkelijker wordt om de gegevens te beheren en te parseren. Door nauwkeurig de hiërarchie van het bericht weer te geven.
+Het primaire doel van de structuurbeschrijving is om de elementen van een EDI-bericht op een logische en georganiseerde manier te schetsen, zodat de gegevens gemakkelijker te beheren en te parseren zijn. Het geeft de hiërarchie van het bericht weer.
 
 ### Elementen van de structuur beschrijving
 
@@ -40,40 +40,44 @@ Het primaire doel van de structuur beschrijving is om de elementen van een EDI-b
 {
     "N1": {
         "fields": [
-            "N1",  
-            "N2",   
-            "N3",   
-            "N4"    
+            "N1",
+            "N2",
+            "N3",
+            "N4"
         ]
     },
     "N9": {
         "fields": [
-            "N9"    
+            "N9"
         ],
         "loops": {
             "MSG01": {
                 "fields": [
-                    "MSG01"   
+                    "MSG01"
+                ]
             }
         }
     },
     "IT1": {
         "fields": [
-            "IT1",   
-            "QTY",   
-            "TXI",   
-            "REF"    
+            "IT1",
+            "QTY",
+            "TXI",
+            "REF"
+        ],
         "loops": {
             "SAC": {
                 "fields": [
-                    "SAC",   
-                    "TXI"    
+                    "SAC",
+                    "TXI"
+                ]
+            }
         }
     },
     "SAC": {
         "fields": [
-            "SAC",   
-            "TXI"    
+            "SAC",
+            "TXI"
         ]
     }
 }

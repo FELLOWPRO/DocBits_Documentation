@@ -4,31 +4,31 @@ Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen a
 
 ## Scenario:
 
-De kosten per eenheid op de factuur liggen binnen het aanvaardbare tolerantiebereik vergeleken met de inkooporder.
+Charge Per Unit op de factuur ligt binnen het aanvaardbare tolerantiebereik vergeleken met de inkooporder.
 
 ## Actie:
 
-Het systeem accepteert de kosten per eenheid zoals gefactureerd en verwerkt de transactie zonder aanpassingen.
+Het systeem accepteert Charge Per Unit zoals gefactureerd en verwerkt de transactie zonder aanpassingen.
 
 ## Voorbeeld:
 
 * **Purchase Order (PO):**
-  * Kosten per eenheid: $5.00
+  * Charge Per Unit: $5.00
   * Quantity: 500 units
-  * Totaal kostenbedrag: $2,500.00
+  * Total Charge Amount: $2,500.00
 * **Invoice Received:**
-  * Kosten per eenheid: $5.10 (binnen tolerantie van 2%)
+  * Charge Per Unit: $5.10 (variance 2%, within the ±3% tolerance)
   * Quantity: 500 units
-  * Totaal kostenbedrag: $2,550.00
+  * Total Charge Amount: $2,550.00
 * **Tolerance Levels:**
-  * Tolerantie per eenheid: ±3%
+  * Charge Per Unit Tolerance: ±3%
 
-Aangezien de kosten per eenheid ($5.10) binnen het aanvaardbare tolerantiebereik van 3% vallen in vergelijking met de inkooporder, zal het systeem:
+Aangezien Charge Per Unit ($5.10) binnen het aanvaardbare tolerantiebereik van 3% valt in vergelijking met de inkooporder, zal het systeem:
 
-1. **Accepteer de kosten per eenheid:** Het systeem accepteert de gefactureerde kosten per eenheid van $5.10, aangezien deze binnen de gedefinieerde tolerantielimiet vallen.
-2. **De transactie verwerken:** Het systeem verwerkt de factuur met het totale kostenbedrag op basis van de gefactureerde kosten per eenheid en hoeveelheid:
-   * **Totaal bedrag aan kosten = Aantal × kosten per eenheid**
-   * **Totaal bedrag = 500 eenheden × $5.10 = $2,550.00**
-3. **De factuur voltooien:** Het systeem verwerkt de transactie zonder enige aanpassingen en accepteert de factuur zoals deze is.
+1. **Accept the Charge Per Unit:** Het systeem accepteert de gefactureerde Charge Per Unit van $5.10, aangezien deze binnen de gedefinieerde tolerantielimiet valt.
+2. **Process the Transaction:** Het systeem verwerkt de factuur met het Total Charge Amount op basis van de gefactureerde Charge Per Unit en Quantity:
+   * **Total Charge Amount = Quantity × Charge Per Unit**
+   * **Total Charge Amount = 500 units × $5.10 = $2,550.00**
+3. **Finalize the Invoice:** Het systeem verwerkt de transactie zonder enige aanpassingen en accepteert de factuur zoals deze is.
 
 Dankzij deze aanpak kan het systeem kleine aanvaardbare verschillen in kosten opvangen, waardoor een soepele en efficiënte verwerking van transacties wordt gegarandeerd zonder onnodige afwijzingen of vertragingen.

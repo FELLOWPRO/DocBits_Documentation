@@ -56,7 +56,11 @@ En el vídeo, la factura revisada se envía para su aprobación. Un botón **Exp
 
 Un borde rojo o un icono de aviso llama la atención sobre un campo. Lee su mensaje: puede faltar un valor obligatorio, ser necesario revisar la extracción o haber fallado un control configurado. Que un valor sea visible no demuestra por sí solo que sea válido.
 
-Compara proveedor, número, fechas, importes y moneda con el original. Para los totales, revisa los campos de cabecera afectados y las líneas correspondientes. Corrige la causa indicada antes de continuar. Los controles dependen del tipo de documento y de la configuración de la organización; consulta [Comprobaciones automáticas](automatic-checks-on-the-validation-screen.md).
+Compara proveedor, número, fechas, importes y moneda con el original. Para los totales, revisa los campos de cabecera afectados y las líneas correspondientes. Corrige la causa indicada antes de continuar.
+
+Algunos mensajes proceden de una regla con la gravedad **Advertencia**. No desaparecen por sí solos: selecciona **Reconocer** bajo el campo para confirmar el valor y el mensaje se sustituye por **Entendido. Cambiar el valor vuelve a preguntar.** Si modificas el valor después, la advertencia vuelve y tienes que confirmarla de nuevo. Un campo que muestra un error estricto debe corregirse: no hay botón para él.
+
+Los controles dependen del tipo de documento y de la configuración de la organización; consulta [Comprobaciones automáticas](automatic-checks-on-the-validation-screen.md).
 
 ## Utilizar el asistente
 

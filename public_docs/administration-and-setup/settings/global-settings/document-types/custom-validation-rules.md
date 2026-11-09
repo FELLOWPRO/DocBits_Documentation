@@ -12,7 +12,7 @@ Reguła odpowiada na trzy pytania:
 2. **Kiedy** reguła obowiązuje? Zawsze albo tylko dla dokumentów (lub wierszy) spełniających warunek — zobacz [Warunki reguł (Dotyczy, gdy)](rule-conditions-applies-when.md).
 3. **Co** musi być spełnione? Pole musi być wypełnione, zgodne z formatem, mieścić się w zakresie, pasować do listy, poprawnie porównywać się z innym polem albo się sumować.
 
-Gdy kontrola się nie powiedzie, DocBits oznacza pole lub komórkę na **ekranie walidacji** i wyświetla Twój komunikat — dokładnie tak jak wbudowana kontrola. Przy ważności **Błąd** dokument nie może zostać zwalidowany, dopóki problem nie zostanie usunięty; przy **Ostrzeżenie** użytkownik widzi tylko podpowiedź.
+Gdy kontrola się nie powiedzie, DocBits oznacza pole lub komórkę na **ekranie walidacji** i wyświetla Twój komunikat — dokładnie tak jak wbudowana kontrola. Przy ważności **Błąd** dokument nie może zostać zwalidowany, dopóki problem nie zostanie usunięty. Przy **Ostrzeżenie** dokument również jest zatrzymywany, ale użytkownik może go odblokować, potwierdzając komunikat na polu, bez zmiany wartości — zobacz [Potwierdzanie ostrzeżenia](#acknowledge).
 
 Reguły są definiowane dla każdego **typu dokumentu** i działają na każdym dokumencie tego typu: podczas przetwarzania i przy każdym zapisie dokumentu.
 
@@ -26,7 +26,7 @@ Reguły są definiowane dla każdego **typu dokumentu** i działają na każdym 
 | Termin płatności nie może być wcześniejszy niż data faktury | błędne przebiegi płatności | **Porównaj pola**: Due Date w dniu lub po Invoice Date |
 | Pozycje muszą sumować się do kwoty netto | tylko stała wbudowana kontrola | **Formuła** `sum(row.NET_AMOUNT) == header.total_net_amount` z własną tolerancją |
 | Dozwolone są tylko waluty znane Twojemu ERP | błędy eksportu w ERP | **List of Values** dla Currency |
-| Informowanie użytkowników o nietypowych wartościach bez blokowania | niemożliwe | dowolna reguła o ważności **Ostrzeżenie** |
+| Informowanie użytkowników o nietypowych wartościach bez wymuszania korekty | skrypt albo użytkownicy muszą o tym pamiętać | dowolna reguła o ważności **Ostrzeżenie** — użytkownik potwierdza wartość przyciskiem **Uznawać** |
 
 ## Włączanie niestandardowych reguł walidacji
 
@@ -76,7 +76,7 @@ Kliknij **Nowa reguła**. Kreator ma trzy kroki. **Test rule** i **Save** znajdu
 | Ustawienie | Co robi |
 | --- | --- |
 | **Poziom reguły** | Na co patrzy reguła i gdzie pokazywany jest błąd — zobacz [Poziomy reguł](#poziomy-regul). |
-| **Ważność** | **Błąd** oznacza pole jako nieprawidłowe i blokuje walidację. **Ostrzeżenie** pokazuje komunikat, ale nigdy nie blokuje. |
+| **Ważność** | **Błąd** oznacza pole jako nieprawidłowe i blokuje walidację do czasu poprawienia wartości. **Ostrzeżenie** również zatrzymuje dokument, ale użytkownik może je usunąć przyciskiem **Uznawać** na ekranie walidacji, bez zmiany wartości. |
 | **Rule Name** | Wyświetlana na liście, w logach i dla administratorów. Niech opisuje regułę („Numer identyfikacji podatkowej dostawcy wymagany dla niemieckich faktur”). |
 | **Rule key** | Klucz techniczny generowany z nazwy. Pozostaje taki sam, gdy później zmienisz nazwę reguły. Kliknij ołówek, aby wybrać własny klucz przed pierwszym zapisem; potem jest on stały. |
 | **Opis** | Opcjonalne wyjaśnienie dla innych administratorów. |
@@ -221,8 +221,20 @@ Przetestuj każdą nową regułę na co najmniej jednym dokumencie, który powin
 * **Przy każdym zapisie** dokumentu na ekranie walidacji.
 * **Po zmianie reguły** istniejące dokumenty **nie** są sprawdzane ponownie jednocześnie. Każdy dokument jest sprawdzany ponownie z nowymi regułami przy następnym zapisie lub ponownym przetworzeniu. Dokumenty już wyeksportowane nie są objęte zmianą.
 * Reguły są uruchamiane w kolejności priorytetu (potem według klucza). Pole pokazuje **jeden** błąd: jeśli dwie reguły nie przechodzą dla tego samego pola, wygrywa pierwsza; kolejne reguły jej nie nadpisują.
-* Ostrzeżenia są zbierane osobno i nigdy nie ukrywają błędu.
+* Ostrzeżenia są zbierane osobno i nigdy nie ukrywają błędu: pole, które nie przechodzi także reguły twardej, pokazuje wyłącznie błąd i nie ma tam czego potwierdzać.
 * Jeśli reguły nie da się ocenić — na przykład z powodu dzielenia przez zero w formule — jest pomijana. Uszkodzona reguła nigdy nie oznacza dokumentu omyłkowo jako nieprawidłowego.
+
+## Potwierdzanie ostrzeżenia na ekranie walidacji <a id="acknowledge"></a>
+
+Reguła o ważności **Ostrzeżenie**, która nie przechodzi, zatrzymuje dokument tak samo jak błąd: dopóki pole nie zostanie potwierdzone, dokumentu nie można zwalidować. Różnica polega na tym, co musi zrobić użytkownik.
+
+Na ekranie walidacji komunikat reguły pojawia się pod polem wraz z przyciskiem **Uznawać**. Jedno kliknięcie potwierdza wszystkie ostrzeżenia na tym polu bez zmiany jego wartości. Komunikat zastępuje wtedy informacja **Potwierdzono. Zmiana wartości powoduje ponowne żądanie.**
+
+Potwierdzenie dotyczy wartości, dla której zostało wydane. Jeśli użytkownik zmieni wartość, wyekstrahuje ją ponownie albo pole zostanie sprawdzone ponownie z innym wynikiem, ostrzeżenie wraca i trzeba je potwierdzić jeszcze raz. Pola z błędem twardym nie można potwierdzić — tam wartość trzeba poprawić.
+
+W dokumencie tylko do odczytu przycisk nie jest wyświetlany, więc ostrzeżenie musi rozwiązać osoba, która może edytować pole.
+
+Przycisk **Uznawać** jest dostępny dla pól nagłówka.
 
 ## Dzienniki <a id="logs"></a>
 
@@ -264,15 +276,15 @@ Header field · Error · *Due Date* · zawsze · **Porównaj pola** Due Date *w 
 **8. Brak faktur z datą przyszłą**
 Header field · Error · *Invoice Date* · zawsze · **Porównaj pola** Invoice Date *w dniu lub przed (≤)* dzisiaj.
 
-**9. Tylko zatwierdzone waluty (wyłącznie podpowiedź)**
-Header field · **Ostrzeżenie** · *Currency* · zawsze · **List of Values** *approved_currencies* · Kod `VALUE_NOT_ALLOWED`.
+**9. Tylko zatwierdzone waluty (potwierdzenie zamiast korekty)**
+Header field · **Ostrzeżenie** · *Currency* · zawsze · **List of Values** *approved_currencies* · Kod `VALUE_NOT_ALLOWED`. Użytkownik musi potwierdzić ostrzeżenie, zanim dokument będzie można zwalidować.
 
 **10. Zamówienie zakupu wymagane powyżej 5 000**
 Header field · Error · *Purchase Order* · Dotyczy, gdy *Total Amount* greater than *5000* · **Obowiązkowe**.
 
 ## Dobre praktyki
 
-* **Zacznij od ostrzeżenia.** Zapisz nową regułę z ważnością **Ostrzeżenie**, obserwuj ją przez kilka dni (Test rule, logi), a następnie zmień na **Błąd**.
+* **Zacznij od ostrzeżenia.** Zapisz nową regułę z ważnością **Ostrzeżenie**, obserwuj ją przez kilka dni (Test rule, logi), a następnie zmień na **Błąd**. Użytkownicy nie muszą poprawiać wartości, ale są zatrzymywani, dopóki nie potwierdzą każdego wystąpienia.
 * **Jedna reguła, jeden komunikat.** Kilka małych reguł z jasnymi komunikatami jest łatwiejszych do zrozumienia niż jedna duża formuła.
 * **Używaj Dotyczy, gdy zamiast kopii.** Jedna reguła z warunkiem jest lepsza niż pięć kopii dla pięciu dostawców.
 * **Bądź tolerancyjny przy kwotach.** Zawsze nadawaj formułom kwotowym tolerancję.

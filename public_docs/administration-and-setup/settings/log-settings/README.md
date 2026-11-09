@@ -30,6 +30,14 @@ Bovenaan de pagina verwijst een banner naar het **Analysedashboard** voor grafie
 
 De resultaten zijn gepagineerd — gebruik de bedieningselementen onderaan om door de pagina's te navigeren.
 
+## Logboekdetails
+
+Selecteer een logregel om de detailweergave te openen. De samenvatting toont de ernst, het tijdstip, de dienst en het log-ID, met daaronder het bericht van de gebeurtenis.
+
+De sectie **Logboekdetails** bevat de volledige gebeurtenis als opgemaakte JSON. Afhankelijk van de gebeurtenis kan dit metadata bevatten, zoals de bron, omgeving, gebruiker, resource, actie en netwerk- of clientinformatie. Velden zonder waarde kunnen als `null` worden weergegeven.
+
+Selecteer het kopieerpictogram rechtsonder in **Logboekdetails** om het volledige JSON-record naar het klembord te kopiëren. Gebruik de terugpijl naast **Activiteitenlogboek** om naar de lijst terug te keren.
+
 ## Acties in de voettekst
 
 | Actie | Beschrijving |

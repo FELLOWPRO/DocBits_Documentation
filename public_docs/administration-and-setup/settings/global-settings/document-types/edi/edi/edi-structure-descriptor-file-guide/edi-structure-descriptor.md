@@ -1,6 +1,6 @@
 # Descrittore della struttura EDI
 
-L'obiettivo principale del descrittore della struttura è quello di delineare gli elementi di un messaggio EDI in modo logico e organizzato, rendendo più facile gestire e analizzare i dati. Riflettendo accuratamente la gerarchia del messaggio.
+L'obiettivo principale del descrittore della struttura è quello di delineare gli elementi di un messaggio EDI in modo logico e organizzato, così che i dati siano più facili da gestire e analizzare. Riflette la gerarchia del messaggio.
 
 ### Elementi del descrittore della struttura
 
@@ -40,40 +40,44 @@ L'obiettivo principale del descrittore della struttura è quello di delineare gl
 {
     "N1": {
         "fields": [
-            "N1",  
-            "N2",   
-            "N3",   
-            "N4"    
+            "N1",
+            "N2",
+            "N3",
+            "N4"
         ]
     },
     "N9": {
         "fields": [
-            "N9"    
+            "N9"
         ],
         "loops": {
             "MSG01": {
                 "fields": [
-                    "MSG01"   
+                    "MSG01"
+                ]
             }
         }
     },
     "IT1": {
         "fields": [
-            "IT1",   
-            "QTY",   
-            "TXI",   
-            "REF"    
+            "IT1",
+            "QTY",
+            "TXI",
+            "REF"
+        ],
         "loops": {
             "SAC": {
                 "fields": [
-                    "SAC",   
-                    "TXI"    
+                    "SAC",
+                    "TXI"
+                ]
+            }
         }
     },
     "SAC": {
         "fields": [
-            "SAC",   
-            "TXI"    
+            "SAC",
+            "TXI"
         ]
     }
 }

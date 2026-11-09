@@ -17,7 +17,7 @@ Il sistema accetta l'addebito per unità come fatturato ed elabora la transazion
   * Quantity: 500 units
   * Importo totale della commissione: $2,500.00
 * **Invoice Received:**
-  * Costo per unità: $5.10 (entro la tolleranza del 2%)
+  * Costo per unità: $5.10 (variazione 2%, entro la tolleranza del ±3%)
   * Quantity: 500 units
   * Importo totale della commissione: $2,550.00
 * **Tolerance Levels:**

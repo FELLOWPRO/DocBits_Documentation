@@ -17,7 +17,7 @@ Il sistema adegua l'addebito per unità in modo che corrisponda all'ordine di ac
   * Quantity: 800 units
   * Importo totale della commissione: $4,800.00
 * **Invoice Received:**
-  * Addebito per unità: $7.00 (fuori tolleranza del 16.67%, rifiutato)
+  * Addebito per unità: $7.00 (variazione 16.67%, fuori dalla tolleranza del ±5%, rifiutato)
   * Quantity: 800 units
   * Importo totale della commissione: $5,600.00
 * **Tolerance Levels:**

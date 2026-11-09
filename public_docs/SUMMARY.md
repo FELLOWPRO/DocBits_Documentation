@@ -144,7 +144,7 @@
     * [Informazioni aziendali](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Preferenze aziendali](administration-and-setup/settings/global-settings/company-information/company-preferences.md)
       * [Assistente impostazioni: come attivarlo](administration-and-setup/settings/global-settings/company-information/settings-assistant.md)
-        * [Assistente impostazioni: cosa può fare la chat](administration-and-setup/settings/global-settings/company-information/settings-assistant-chat.md)
+        * [Assistente impostazioni: cosa può fare la chat](administration-and-setup/settings/global-settings/company-information/settings-assistant/settings-assistant-chat.md)
       * [Definire il Colore dell'App nelle Impostazioni della Società](administration-and-setup/settings/global-settings/company-information/defining-app-color-in-company-settings.md)
       * [Autenticazione a due fattori (Admin)](administration-and-setup/settings/global-settings/company-information/two-factor-authentication.md)
     * [Gruppi, Utenti e Autorizzazioni](administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md)

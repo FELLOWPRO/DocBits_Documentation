@@ -62,8 +62,7 @@ Limites das evidências. Este caso não demonstra aprovação de negócio, expor
 4. Registre a diferença confirmada: **fatura vs. extração**, **extração correta vs. dados de origem importados** ou **Infor vs. a sua cópia importada**. Deixe a causa em aberto se as evidências necessárias não estiverem registradas.
 5. Verifique o histórico de execuções para uma correção manual, aprovação ou reinício, e o resultado final. O resultado e a causa respondem a perguntas diferentes.
 
-<a id="example-100-correct-extraction-80-ap-touchless"></a>
-**Exemplo.** A fatura e o valor extraído dizem ambos €10.00, enquanto o pedido importado diz €9.00. Isso estabelece uma divergência com os dados do pedido, não um erro de extração. Confirme qual preço foi acordado e se o próprio Infor ou a sua cópia importada precisa de correção. Se a equipe de AP reiniciar a fatura manualmente e ela terminar com sucesso, ela é AP assisted apesar da extração correta. Veja os [exemplos práticos e o cálculo](.#example-100-correct-extraction-80-ap-touchless).
+**Exemplo.** A fatura e o valor extraído dizem ambos €10.00, enquanto o pedido importado diz €9.00. Isso estabelece uma divergência com os dados do pedido, não um erro de extração. Confirme qual preço foi acordado e se o próprio Infor ou a sua cópia importada precisa de correção. Se a equipe de AP reiniciar a fatura manualmente e ela terminar com sucesso, ela é AP assisted apesar da extração correta. Veja os [exemplos práticos e o cálculo](./#example-100-correct-extraction-80-ap-touchless).
 
 **Campos ausentes repetidos.** Vários documentos que param em Field Validation estabelecem um bloqueio repetido. As causas possíveis incluem extração, um valor genuinamente ausente na fatura, uma regra de validação ou um padrão configurado ausente. Compare as evidências antes de escolher uma correção; a repetição por si só não prova nenhuma causa específica.
 

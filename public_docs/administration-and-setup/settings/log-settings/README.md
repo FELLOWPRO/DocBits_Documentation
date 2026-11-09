@@ -30,6 +30,14 @@ U góry strony baner prowadzi do **Panel analityczny** z wykresami, metrykami i 
 
 Wyniki są podzielone na strony — użyj elementów sterujących na dole, aby przechodzić między stronami.
 
+## Szczegóły dziennika
+
+Wybierz wiersz dziennika, aby otworzyć jego widok szczegółów. Podsumowanie pokazuje poziom ważności, znacznik czasu, usługę i identyfikator logu, a poniżej komunikat zdarzenia.
+
+Sekcja **Szczegóły dziennika** zawiera kompletne zdarzenie w formacie JSON. W zależności od zdarzenia może ono obejmować metadane, takie jak źródło, środowisko, użytkownik, zasób, akcja oraz informacje o sieci lub kliencie. Pola bez wartości mogą być wyświetlane jako `null`.
+
+Wybierz ikonę kopiowania w prawym dolnym rogu sekcji **Szczegóły dziennika**, aby skopiować kompletny rekord JSON do schowka. Użyj strzałki wstecz obok **Dziennik aktywności**, aby wrócić do listy.
+
 ## Akcje w stopce
 
 | Akcja | Opis |

@@ -5,31 +5,31 @@
 
 ## Szenario:
 
-Der Zuschlag je Einheit auf der Rechnung liegt im Vergleich zur Bestellung innerhalb der zulässigen Toleranz.
+Der Charge Per Unit auf der Rechnung liegt im Vergleich zur Bestellung innerhalb der zulässigen Toleranz.
 
 ## Aktion:
 
-Das System übernimmt den Zuschlag je Einheit aus der Rechnung und verarbeitet die Transaktion ohne Anpassungen.
+Das System übernimmt den Charge Per Unit aus der Rechnung und verarbeitet die Transaktion ohne Anpassungen.
 
 ## Beispiel:
 
-* **Bestellung (PO):**
-  * Zuschlag je Einheit: $5.00
-  * Menge: 500 Einheiten
-  * Zuschlagsgesamtbetrag: $2,500.00
-* **Eingegangene Rechnung:**
-  * Zuschlag je Einheit: $5.10 (Abweichung 2%, innerhalb der ±3%-Toleranz)
-  * Menge: 500 Einheiten
-  * Zuschlagsgesamtbetrag: $2,550.00
-* **Toleranzgrenzen:**
-  * Toleranz für Zuschläge je Einheit: ±3%
+* **Purchase Order (PO):**
+  * Charge Per Unit: $5.00
+  * Quantity: 500 units
+  * Total Charge Amount: $2,500.00
+* **Invoice Received:**
+  * Charge Per Unit: $5.10 — 2% above the PO value, within the configured ±3% tolerance.
+  * Quantity: 500 units
+  * Total Charge Amount: $2,550.00
+* **Tolerance Levels:**
+  * Charge Per Unit Tolerance: ±3%
 
-Der Zuschlag je Einheit ($5.10) liegt im Vergleich zur Bestellung innerhalb der zulässigen Toleranz von 3%. Das System führt folgende Schritte aus:
+Da der Charge Per Unit ($5.10) im Vergleich zur Bestellung innerhalb der zulässigen Toleranz von 3% liegt, führt das System folgende Schritte aus:
 
-1. **Zuschlag je Einheit akzeptieren:** Das System akzeptiert den berechneten Zuschlag von $5.10, da er innerhalb der festgelegten Toleranzgrenze liegt.
-2. **Transaktion verarbeiten:** Das System verarbeitet die Rechnung mit dem gesamten Zuschlagsbetrag, der sich aus dem berechneten Zuschlag je Einheit und der Menge ergibt:
-   * **Zuschlagsgesamtbetrag = Menge × Zuschlag je Einheit**
-   * **Zuschlagsgesamtbetrag = 500 Einheiten × $5.10 = $2,550.00**
-3. **Rechnung abschließen:** Das System verarbeitet die Transaktion ohne Anpassungen und übernimmt die Rechnung unverändert.
+1. **Accept the Charge Per Unit:** Das System akzeptiert den fakturierten Charge Per Unit von $5.10, da er innerhalb der festgelegten Toleranzgrenze liegt.
+2. **Process the Transaction:** Das System verarbeitet die Rechnung mit dem Total Charge Amount, der sich aus Charge Per Unit und Quantity der Rechnung ergibt:
+   * **Total Charge Amount = Quantity × Charge Per Unit**
+   * **Total Charge Amount = 500 units × $5.10 = $2,550.00**
+3. **Finalize the Invoice:** Das System verarbeitet die Transaktion ohne Anpassungen und übernimmt die Rechnung unverändert.
 
-Damit kann das System kleine zulässige Zuschlagsabweichungen ohne unnötige Ablehnungen oder Verzögerungen verarbeiten.
+Damit kann das System kleine zulässige Abweichungen bei Charge Per Unit ohne unnötige Ablehnungen oder Verzögerungen verarbeiten.

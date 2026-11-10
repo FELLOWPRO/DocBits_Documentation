@@ -56,6 +56,10 @@ I nodi **When / And / Then** utilizzano esattamente le stesse schede descritte n
 
 ## Collegare i nodi
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/it.mp4" %}
+
+**Video:** Successo, condizione non riuscita ed errore in un'esecuzione · 1:29 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/it.vtt)
+
 I nodi sono collegati da **archi colorati**. Trascina da una maniglia sul lato **destro** di un nodo verso la maniglia di input sul lato **sinistro** di un altro nodo per creare un collegamento. Ogni colore indica un diverso esito di esecuzione:
 
 - **Success** (blu) — il percorso predefinito seguito quando un nodo si completa con successo. Disponibile su tutti i tipi di nodo.

@@ -12,6 +12,10 @@ Evitare un’assegnazione diretta nella stessa esecuzione se si attende il primo
 
 Il collaudo aziendale richiede A→approva→B→approva, rifiuto di A, destinatario assente e attivazione ripetuta. Il rifiuto deve impedire l’export finale; un destinatario non risolto non deve sembrare un’approvazione completata. Verificare separatamente responsabilità e attività. La simulazione non dimostra un passaggio reale tra utenti.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/it.mp4" %}
+
+**Video:** Approvazione in due passi con tabelle decisionali · 3:04 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/it.vtt)
+
 ## Schede e parametri di esempio
 
 I valori descrivono parametri delle schede, non un workflow completo importabile. Sostituire YOUR_* con selezioni proprie di test. Il designer gestisce l’ID nascosto del chiamante. Catalogo: Dev, DocFlow 2.10.38, 21 ottobre 2026; verificare versioni e abilitazioni della propria organizzazione.

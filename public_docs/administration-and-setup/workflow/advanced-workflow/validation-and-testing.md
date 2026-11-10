@@ -41,9 +41,17 @@ Mentre costruisci un Workflow Avanzato, due controlli nella barra degli strument
 
 ## Convalidare
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/it.mp4" %}
+
+**Video:** Convalidare un Workflow · 0:53 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/it.vtt)
+
 Fai clic sul controllo **Validate** (l'icona con il cerchio e la spunta, oppure premi <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). La validazione controlla il grafo alla ricerca di problemi — nodi non collegati, configurazione mancante e connessioni non valide — e li segnala così puoi correggerli prima che il workflow venga eseguito su documenti reali.
 
 ## Test
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/it.mp4" %}
+
+**Video:** Testare un Workflow · 1:47 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/it.vtt)
 
 Fai clic sul controllo **Test** (l'icona di riproduzione, oppure premi <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>) per eseguire il flusso corrente su un campione e osservare come si comporta, senza incidere sui documenti live. È il modo più rapido per fare un controllo di base su una modifica appena apportata sul canvas.
 

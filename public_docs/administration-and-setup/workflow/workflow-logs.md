@@ -83,6 +83,10 @@ I **Registri del Flusso di Lavoro** consentono agli utenti di analizzare quali f
 
 ## **Accesso ai Registri del Flusso di Lavoro**
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/it.mp4" %}
+
+**Video:** Leggere i registri del Workflow · 1:41 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/it.vtt)
+
 Per accedere ai registri del flusso di lavoro:
 
 1. Navigare nel **Dashboard**.

@@ -14,6 +14,10 @@ description: "P1：从决策表追踪到文档分配"
 
 决策表条件会实际调用表格服务求值。测试模式并不保证完全没有副作用；仅使用自有测试数据，并检查涉及的操作。
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/zh.mp4" %}
+
+**视频:** 分配卡中的决策表 · 1:40 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/zh.vtt)
+
 ## 卡片与示例参数
 
 这些值描述单张卡片的参数，不是可直接导入的完整工作流。YOUR_* 必须替换为自有测试选项；隐藏的调用方 ID 由设计器管理。目录依据：Dev、DocFlow 2.10.38、2026 年 10 月 21 日。请另外核对本组织可用版本与授权。

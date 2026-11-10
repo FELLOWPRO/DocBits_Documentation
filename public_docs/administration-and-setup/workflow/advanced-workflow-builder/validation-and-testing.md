@@ -41,9 +41,17 @@
 
 ## 验证
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/zh.mp4" %}
+
+**视频:** 验证 Workflow · 0:44 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/zh.vtt)
+
 点击 **Validate** 控件（圆圈勾选图标，或按 <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>）。验证会检查流程图中的问题，例如未连接的节点、缺少配置和无效连接，并指出这些问题，方便你在工作流处理实际文档前进行修复。
 
 ## 测试
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/zh.mp4" %}
+
+**视频:** 测试 Workflow · 1:28 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/zh.vtt)
 
 点击 **Test** 控件（播放图标，或按 <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>），即可使用样例运行当前流程并观察其行为，且不会影响实际文档。这是快速检查画布上刚完成的更改是否正常的方式。
 

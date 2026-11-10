@@ -12,6 +12,10 @@ description: "P1：区分文档分配、任务与顺序审批"
 
 业务验收包括 A→批准→B→批准、A 拒绝、接收人缺失和重复触发。拒绝后不能执行最终导出，接收人无法解析也不能显示为审批完成。分别检查文档责任人与任务清单。设计器模拟不能证明真实用户交接。
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.mp4" %}
+
+**视频:** 使用决策表的两步审批 · 2:43 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.vtt)
+
 ## 卡片与示例参数
 
 这些值描述单张卡片的参数，不是可直接导入的完整工作流。YOUR_* 必须替换为自有测试选项；隐藏的调用方 ID 由设计器管理。目录依据：Dev、DocFlow 2.10.38、2026 年 10 月 21 日。请另外核对本组织可用版本与授权。

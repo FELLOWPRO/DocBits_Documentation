@@ -4,6 +4,10 @@
 
 ## 创建并测试标准工作流 <a id="standard-workflow-tutorial"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/zh.mp4" %}
+
+**视频:** 创建标准 Workflow · 1:02 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/zh.vtt)
+
 在真实的 DocBits 界面中创建完整的标准工作流：选择发票，检查发票号码和金额是否超过 1000，分配审核人并更改状态。保存规则，运行三个测试场景，然后查看文档的实际结果。
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/zh.mp4" %}

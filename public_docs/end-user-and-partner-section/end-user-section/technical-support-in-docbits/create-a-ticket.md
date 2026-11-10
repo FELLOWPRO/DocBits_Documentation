@@ -1,6 +1,6 @@
 # Crear un ticket
 
-Esta es una herramienta que tienes disponible en la pantalla de validación, en caso de que ocurra algún tipo de problema mientras validas tu documento en DocBits. Cómo revisar un documento en la [pantalla de validación](../validation-screen/README.md) se describe allí.
+Esta es una herramienta que tienes disponible en la pantalla de validación, en caso de que ocurra algún tipo de problema mientras validas tu documento en DocBits. En la [pantalla de validación](../validation-screen/README.md) se describe cómo revisar un documento.
 
 Esta función se encuentra en el menú situado encima del área de vista previa del documento, como se muestra a continuación
 

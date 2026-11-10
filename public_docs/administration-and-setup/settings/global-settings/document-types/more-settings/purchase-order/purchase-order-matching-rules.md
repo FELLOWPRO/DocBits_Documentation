@@ -215,6 +215,16 @@ Zdefiniowany zestaw zasad bezpośrednio wpływa na efektywność i integralnoś�
 * **[Oblicz cenę jednostkową zamówienia](calculate-po-unit-price.md)** zmienia, którą cenę jednostkową zasady porównują po stronie zamówienia.
 * **[Ustawienia tolerancji](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md)** oraz **[wyłączone statusy](purchase-order-disable-statuses.md)** decydują o rygorze porównania i o tym, które linie zamówienia są w ogóle oferowane.
 
+## Gdy dopasowanie pomija reguły
+
+Reguła potrzebuje kolumny, którą wyodrębniona tabela rzeczywiście ma; reguła parująca wiersze po numerze artykułu nie może działać na fakturze, która go nie drukuje.
+
+Dlatego automatyczne dopasowanie wykonuje reguły, które może, a wiersze pozostałych zostawia niedopasowane. Następnie zgłasza **Some PO match rules were not tried**, podając każdą pominiętą regułę i każdą brakującą w tabeli kolumnę. Zmienione wiersze pozostają bez dopasowania, dopóki nie dodasz brakującej kolumny lub nie dopasujesz ich ręcznie.
+
+{% hint style="info" %}
+Błędny warunek aktywacji również pomija regułę, ale to inny przypadek: pojawia się w historii dopasowania, a nie w tym komunikacie.
+{% endhint %}
+
 ## Rozwiązywanie problemów
 
 | Objaw | Co sprawdzić |

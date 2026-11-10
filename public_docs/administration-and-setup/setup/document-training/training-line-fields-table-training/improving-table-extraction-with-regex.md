@@ -48,7 +48,7 @@ Aquí tienes un ejemplo donde la línea "PRAEF" se superpone a **Bezeichnung**, 
 
     <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-es-20261110.png" alt="Tabla extraída con el Modo de edición de datos de fila activado; los encabezados de columna extraíbles aparecen en azul y la leyenda explica el significado de los colores."><figcaption><p>Los encabezados azules marcan columnas extraíbles: sus datos se pueden extraer manualmente.</p></figcaption></figure>
 
-> Nota: Las columnas de color violeta ya están mapeadas por el sistema y no pueden editarse manualmente.
+> Nota: En la leyenda de la tabla, **azul** marca columnas extraíbles cuyos datos puedes asignar manualmente y **violeta** columnas ya mapeadas por el sistema, que no se pueden editar. **Verde** indica valores autocompletados y **amarillo** texto que no se puede extraer.
 
 ## 3. Mapeo de Columnas
 
@@ -62,6 +62,8 @@ Para mapear o remapear una columna:
 <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-mapping-dropdown-es-20261110.png" alt="Tabla extraída con el desplegable del encabezado de columna abierto, que lista las columnas de destino Cantidad, Descripción, Importe neto, Importe total, Número de artículo, Posición, Precio unitario y Unidad."><figcaption><p>Elige la columna de destino en el desplegable del encabezado.</p></figcaption></figure>
 
 Puedes ajustar el mapeo tantas veces como sea necesario.
+
+Para elegir la columna correcta consulta [Definición de tablas y columnas](defining-tables-and-columns.md); los botones **Guardar**, **Guardar reglas** y **Eliminar reglas** se explican en [Guardar y eliminar reglas](save-and-delete-rules.md).
 
 ## 4. Extraer de Arriba / Abajo
 

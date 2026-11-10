@@ -8,6 +8,10 @@ Os cartões que utilizam este cálculo:
 * [Promised delivery date for line items in table with promised delivery date](compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/README.md) – datas de entrega prometidas dos itens de linha comparadas com a data atual.
 * [Promised Delivery Date on Purchase Order](compare-with-purchase-order/promised-delivery-date-on-purchase-order.md) – datas de entrega dos itens de linha comparadas com a data de entrega da ordem de compra.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.mp4" %}
+
+**Vídeo:** Tolerâncias de data e verificação de intervalos · 2:02 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.vtt)
+
 ## A janela de tolerância
 
 A partir da data de referência, a tolerância é contada para trás e para a frente. O resultado é uma **janela de tolerância**: da data de início à data de fim, ambas incluídas.

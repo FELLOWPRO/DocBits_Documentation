@@ -56,6 +56,10 @@ Os nós **When / And / Then** utilizam exatamente os mesmos cartões descritos n
 
 ## Ligar nós
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pt.mp4" %}
+
+**Vídeo:** Sucesso, condição com falha e erro em uma execução · 1:16 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pt.vtt)
+
 Os nós são ligados por **arestas coloridas**. Arraste a partir de um conector no lado **direito** de um nó até ao conector de entrada no lado **esquerdo** de outro nó para criar uma ligação. Cada cor indica um resultado de execução diferente:
 
 - **Success** (azul) — o caminho predefinido percorrido quando um nó é concluído com sucesso. Disponível em todos os tipos de nó.

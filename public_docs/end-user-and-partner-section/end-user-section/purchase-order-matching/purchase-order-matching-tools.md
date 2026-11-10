@@ -31,7 +31,7 @@ A aba do pedido de compra também tem um ícone de atualização para recarregar
 
 ## Atalhos de teclado
 
-Selecione o ícone de teclado para ver a lista atual de atalhos. Exemplos comuns incluem **Ctrl+F** para focar a pesquisa de pedidos de compra, **Ctrl+K** para reabrir o diálogo de atalhos, **Ctrl+S** para salvar e **Ctrl+E** para exportar. O diálogo é a fonte da lista completa na sua tela atual.
+Selecione o ícone de teclado para ver a lista atual de atalhos. Exemplos comuns incluem **CTRL+F** para pesquisar pedidos de compra, **CTRL+K** para reabrir o diálogo de atalhos, **CTRL+S** para salvar e **CTRL+E** para exportar. O diálogo é a fonte da lista completa na sua tela atual.
 
 <figure><img src="../../../.gitbook/assets/purchase-order-matching-tools-shortcuts-pt-20261110.png" alt="Diálogo de atalhos de teclado em português na tela de Correspondência de PO, com as colunas Ação e Atalhos de teclado"><figcaption><p>Abra o ícone de teclado para ver os atalhos suportados por esta tela.</p></figcaption></figure>
 

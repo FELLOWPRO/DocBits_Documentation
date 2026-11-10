@@ -18,7 +18,7 @@ Strona pokazuje:
 * **Ostatnie przykłady** (Recent examples): przykładowe dokumenty w dwóch kartach: **Wymagały uwagi** (Needed attention) i **Przeszły touchless** (Went touchless).
 * **Diagnozuj dostawcę z AI** (Diagnose supplier with AI): analizuje wszystkie klastry dostawcy (administratorzy).
 
-Krótka notatka wyjaśnia pustą stronę, na przykład: *5 documents from this supplier are still being processed and have no analysis result yet.* (5 dokumentów tego dostawcy jest jeszcze przetwarzanych i nie ma jeszcze wyniku analizy) lub *All 40 completed documents from this supplier ran touchless: there is nothing to diagnose.* (Wszystkie 40 zakończonych dokumentów tego dostawcy przeszło touchless: nie ma czego diagnozować).
+Krótka notatka wyjaśnia pustą stronę, na przykład: *5 dokumentów tego dostawcy jest jeszcze przetwarzanych i nie ma jeszcze wyniku analizy* lub *Wszystkie 40 zakończonych dokumentów tego dostawcy przeszło touchless: nie ma czego diagnozować.*
 
 ### Klastry problemów
 

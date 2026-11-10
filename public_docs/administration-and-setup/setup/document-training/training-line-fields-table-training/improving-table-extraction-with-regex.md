@@ -46,7 +46,7 @@ Voici un exemple où la ligne « PRAEF » chevauche **Bezeichnung**, **Menge**, 
 3.  **Sélectionner et mapper le texte**\
     Cliquez sur la partie de texte correcte et attribuez-la à un en-tête de colonne **bleu**.
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-fr-20261009.png" alt="Tableau extrait en mode d'édition des données de ligne avec les en-têtes de colonne bleus, encore vides, pouvant être attribués manuellement."><figcaption><p>Les en-têtes de colonne bleus peuvent être remplis manuellement.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-fr-20261110.png" alt="Tableau extrait en mode d'édition des données de ligne avec les en-têtes de colonne bleus, encore vides, pouvant être attribués manuellement."><figcaption><p>Les en-têtes de colonne bleus peuvent être remplis manuellement.</p></figcaption></figure>
 
 > Remarque : Les colonnes de couleur violette sont déjà mappées par le système et ne peuvent pas être modifiées manuellement.
 

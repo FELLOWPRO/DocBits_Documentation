@@ -14,6 +14,10 @@ Sprawdź jedno, zero i wiele trafień, błędny typ wyniku, nieprawidłowego uż
 
 Warunek tabeli decyzyjnej rzeczywiście wywołuje usługę w celu oceny tabeli. Tryb testowy nie gwarantuje braku wszystkich skutków ubocznych: używaj własnych danych testowych i sprawdzaj użyte działania.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pl.mp4" %}
+
+**Film:** Tabele decyzyjne w kartach przypisania · 2:30 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pl.vtt)
+
 ## Karty i przykładowe parametry
 
 Wartości opisują parametry kart, a nie pełny workflow do importu. Zastąp YOUR_* własnymi wyborami testowymi. Projektant zarządza ukrytym ID wywołującego. Katalog: Dev, DocFlow 2.10.38, 21 października 2026; osobno sprawdź wersje i uprawnienia swojej organizacji.

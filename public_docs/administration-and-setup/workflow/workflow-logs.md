@@ -83,6 +83,10 @@ Zapisz nazwę workflow, odwołanie dokumentu, czas, węzeł i dokładny komunika
 
 ## **Dostęp do Dzienników Przepływu**
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.mp4" %}
+
+**Film:** Czytanie dzienników Workflow · 2:03 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.vtt)
+
 Aby uzyskać dostęp do dzienników przepływu:
 
 1. Przejdź do **Pulpitu**.

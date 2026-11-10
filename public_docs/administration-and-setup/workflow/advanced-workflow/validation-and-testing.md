@@ -41,9 +41,17 @@ Podczas budowania Advanced Workflow dwa elementy sterujące na pasku narzędzi p
 
 ## Walidacja
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/pl.mp4" %}
+
+**Film:** Walidacja Workflow · 1:08 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/pl.vtt)
+
 Kliknij element sterujący **Validate** (ikona okręgu z zaznaczeniem lub naciśnij <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). Walidacja sprawdza graf pod kątem problemów — niepołączonych węzłów, brakującej konfiguracji i nieprawidłowych połączeń — i wskazuje je, abyś mógł je naprawić, zanim przepływ pracy zostanie uruchomiony na rzeczywistych dokumentach.
 
 ## Test
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/pl.mp4" %}
+
+**Film:** Testowanie Workflow · 2:24 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/pl.vtt)
 
 Kliknij element sterujący **Test** (ikona odtwarzania lub naciśnij <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>), aby uruchomić bieżący przepływ na przykładowych danych i obserwować, jak się zachowuje, bez wpływu na rzeczywiste dokumenty. To najszybszy sposób na sprawdzenie poprawności zmiany, którą właśnie wprowadziłeś na kanwie.
 

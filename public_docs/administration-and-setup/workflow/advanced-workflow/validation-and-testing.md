@@ -29,9 +29,17 @@ Während Sie einen Advanced Workflow erstellen, können Sie ihn mit zwei Steuere
 
 ## Validate
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/de.mp4" %}
+
+**Video:** Einen Workflow validieren · 0:52 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/de.vtt)
+
 Klicken Sie auf das Steuerelement **Validate** (das Häkchen-Kreis-Symbol oder drücken Sie <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). Die Validierung prüft den Graphen auf Probleme — nicht verbundene Knoten, fehlende Konfiguration und ungültige Verbindungen — und weist Sie darauf hin, damit Sie sie beheben können, bevor der Workflow auf echten Dokumenten ausgeführt wird.
 
 ## Test
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/de.mp4" %}
+
+**Video:** Einen Workflow testen · 1:45 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/de.vtt)
 
 Klicken Sie auf das Steuerelement **Test** (das Abspielen-Symbol oder drücken Sie <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>), um den aktuellen Ablauf gegen ein Beispiel auszuführen und zu beobachten, wie er sich verhält, ohne Live-Dokumente zu beeinflussen. Dies ist der schnellste Weg, eine soeben auf der Arbeitsfläche vorgenommene Änderung zu überprüfen.
 

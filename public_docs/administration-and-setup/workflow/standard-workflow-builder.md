@@ -4,6 +4,10 @@ Der **Standard-Workflow**-Builder ist der lineare, kartenbasierte Editor zur Aut
 
 ## Einen Standard Workflow erstellen und testen <a id="standard-workflow-tutorial"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/de.mp4" %}
+
+**Video:** Einen Standard-Workflow erstellen · 1:10 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/de.vtt)
+
 Erstellen Sie einen vollständigen Standard Workflow in der echten DocBits-Oberfläche: Rechnung auswählen, Rechnungsnummer und Betrag über 1000 prüfen, einen Prüfer zuweisen und den Status ändern. Speichern Sie die Regel, führen Sie drei Testszenarien aus und prüfen Sie das tatsächliche Ergebnis am Dokument.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/de.mp4" %}

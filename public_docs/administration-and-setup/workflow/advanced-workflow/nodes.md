@@ -57,6 +57,10 @@ Die Knoten **When / And / Then** verwenden exakt dieselben Karten, die im Abschn
 
 ## Knoten verbinden
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/de.mp4" %}
+
+**Video:** Erfolg, fehlgeschlagene Bedingung und Fehler in einem Workflow-Lauf · 1:24 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/de.vtt)
+
 Knoten werden durch **farbige Kanten** verbunden. Ziehen Sie von einem Anschlusspunkt auf der **rechten** Seite eines Knotens zum Eingangsanschluss auf der **linken** Seite eines anderen Knotens, um eine Verbindung zu erstellen. Jede Farbe steht für ein anderes Ausführungsergebnis:
 
 - **Success** (blau) — der Standardpfad, der genommen wird, wenn ein Knoten erfolgreich abgeschlossen wird. Bei allen Knotentypen verfügbar.

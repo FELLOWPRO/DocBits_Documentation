@@ -72,6 +72,14 @@ Die Symbolleiste des Advanced Workflow verläuft am unteren Rand der Arbeitsflä
 
 ## Steuerelemente der Symbolleiste
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/de.mp4" %}
+
+**Video:** Advanced Workflow Designer: Karten und Pfade · 2:19 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/de.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/de.mp4" %}
+
+**Video:** Workflow-Beschreibungen und Notizen · 1:12 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/de.vtt)
+
 - **+ Add** — öffnet das Knotenmenü zum Hinzufügen eines Knotens (siehe [Knoten](nodes.md)).
 - **Undo / Redo** — schrittweise rückwärts oder vorwärts durch Ihre Änderungen.
 - **Zoom in / Zoom out** — ändert die Zoomstufe der Arbeitsfläche.

@@ -72,6 +72,14 @@ De Advanced Workflow-werkbalk loopt langs de onderkant van het canvas en geeft j
 
 ## Werkbalkbedieningen
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4" %}
+
+**Video:** Advanced Workflow-designer: kaarten en paden · 2:20 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.mp4" %}
+
+**Video:** Workflow-beschrijvingen en notities · 1:16 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.vtt)
+
 - **+ Add** — open het nodemenu om een node toe te voegen (zie [Nodes](nodes.md)).
 - **Undo / Redo** — stap achteruit of vooruit door je wijzigingen.
 - **Zoom in / Zoom out** — wijzig het zoomniveau van het canvas.

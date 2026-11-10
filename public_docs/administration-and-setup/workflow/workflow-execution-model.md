@@ -31,6 +31,14 @@ Test Manager en het Advanced-testvenster zijn verschillende uitvoeringsmogelijkh
 
 ## Meerdere workflows en herhaling
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/nl.mp4" %}
+
+**Video:** Uitvoeringsvolgorde van Workflows · 1:15 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/nl.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/nl.mp4" %}
+
+**Video:** Uitvoeringslimieten van Workflows · 0:50 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/nl.vtt)
+
 Lagere waarden van de **uitvoeringsvolgorde** komen eerst. Workflow 100 kan bijvoorbeeld een veld voorbereiden dat workflow 200 controleert. Gebruik verschillende waarden en bevestig de werkelijk gelezen gegevens in een nieuwe uitvoering. De positie van een Advanced-kaart op het canvas bepaalt de volgorde niet.
 
 **Change Status to → Trigger Workflows** kan een nieuwe uitvoering starten. **Run Workflow** roept een geselecteerde workflow aan. Beide vereisen bewuste voorwaarden; geen van beide garandeert eenmalige uitvoering. Beperk taken en exports via de zakelijke verwerkingsstatus en test expliciet een tweede uitvoering. Een voltooiingsmarkering alleen beschermt niet algemeen tegen gelijktijdige dubbele verwerking.

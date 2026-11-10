@@ -4,6 +4,10 @@ De **Standaardworkflow** builder is de lineaire, op kaarten gebaseerde editor vo
 
 ## Een standaard workflow maken en testen <a id="standard-workflow-tutorial"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/nl.mp4" %}
+
+**Video:** Een Standaard-Workflow maken · 1:11 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/nl.vtt)
+
 Maak een volledige Standard Workflow in de echte DocBits-interface: selecteer de factuur, controleer het factuurnummer en een bedrag boven 1000, wijs een beoordelaar toe en wijzig de status. Sla de regel op, voer drie testscenario’s uit en controleer het werkelijke resultaat op het document.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/nl.mp4" %}

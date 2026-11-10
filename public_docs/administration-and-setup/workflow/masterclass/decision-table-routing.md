@@ -14,6 +14,10 @@ Test één, geen en meerdere treffers, verkeerd resultaattype, ongeldig gebruike
 
 De beslissingstabelvoorwaarde roept de tabeldienst werkelijk aan om de tabel te beoordelen. Testmodus garandeert niet dat alle bijwerkingen ontbreken; gebruik uitsluitend eigen testgegevens en controleer de gebruikte acties.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/nl.mp4" %}
+
+**Video:** Beslissingstabellen in toewijzingskaarten · 2:01 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/nl.vtt)
+
 ## Kaarten en voorbeeldparameters
 
 Deze waarden beschrijven kaartparameters, geen volledig importeerbare workflow. Vervang YOUR_* door eigen testkeuzes. De ontwerper beheert het verborgen aanroeper-ID. Catalogus: Dev, DocFlow 2.10.38, 21 oktober 2026; controleer versies en rechten van uw organisatie afzonderlijk.

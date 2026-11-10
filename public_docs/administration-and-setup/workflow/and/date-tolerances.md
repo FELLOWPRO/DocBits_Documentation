@@ -8,6 +8,10 @@ Les cartes qui utilisent ce calcul :
 * [Promised delivery date for line items in table with promised delivery date](compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/README.md) – les dates de livraison promises des postes comparées à la date du jour.
 * [Promised Delivery Date on Purchase Order](compare-with-purchase-order/promised-delivery-date-on-purchase-order.md) – les dates de livraison des postes comparées à la date de livraison du bon de commande.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.mp4" %}
+
+**Vidéo:** Tolérances de date et vérification de plages · 2:05 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.vtt)
+
 ## La fenêtre de tolérance
 
 À partir de la date de référence, la tolérance est comptée vers l'arrière et vers l'avant. Le résultat est une **fenêtre de tolérance** : de la date de début à la date de fin, toutes deux incluses.

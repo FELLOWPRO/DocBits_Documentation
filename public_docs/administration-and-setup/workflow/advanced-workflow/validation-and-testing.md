@@ -41,9 +41,17 @@ Pendant que vous construisez un Advanced Workflow, deux contrôles de la barre d
 
 ## Valider
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/fr.mp4" %}
+
+**Vidéo:** Valider un Workflow · 0:52 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/fr.vtt)
+
 Cliquez sur le contrôle **Validate** (l'icône cercle coché, ou appuyez sur <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). La validation vérifie le graphe à la recherche de problèmes — nœuds non connectés, configuration manquante et connexions invalides — et les signale pour que vous puissiez les corriger avant que le workflow ne s'exécute sur des documents réels.
 
 ## Test
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/fr.mp4" %}
+
+**Vidéo:** Tester un Workflow · 1:45 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/fr.vtt)
 
 Cliquez sur le contrôle **Test** (l'icône lecture, ou appuyez sur <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>) pour exécuter le flux actuel sur un exemple et observer son comportement, sans affecter les documents en production. C'est le moyen le plus rapide de vérifier une modification que vous venez d'apporter sur le canevas.
 

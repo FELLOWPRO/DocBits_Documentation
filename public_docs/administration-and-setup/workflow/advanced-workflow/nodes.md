@@ -56,6 +56,10 @@ Les nœuds **When / And / Then** utilisent exactement les mêmes cartes que cell
 
 ## Relier les nœuds
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/fr.mp4" %}
+
+**Vidéo:** Succès, condition échouée et erreur dans une exécution · 1:24 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/fr.vtt)
+
 Les nœuds sont reliés par des **arêtes colorées**. Faites glisser depuis une poignée située sur le côté **droit** d'un nœud vers la poignée d'entrée située sur le côté **gauche** d'un autre nœud pour créer une connexion. Chaque couleur indique un résultat d'exécution différent :
 
 - **Success** (bleu) — le chemin par défaut emprunté lorsqu'un nœud se termine avec succès. Disponible sur tous les types de nœuds.

@@ -83,6 +83,10 @@ Les **Journaux de flux de travail** permettent aux utilisateurs d'analyser quels
 
 ## **Accès aux journaux de flux de travail**
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4" %}
+
+**Vidéo:** Lire les journaux du Workflow · 1:38 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.vtt)
+
 Pour accéder aux journaux de flux de travail :
 
 1. Naviguez jusqu'au **Tableau de bord**.

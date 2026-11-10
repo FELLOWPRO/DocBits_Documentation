@@ -14,6 +14,10 @@ Testez un, aucun et plusieurs résultats, un mauvais type, un utilisateur invali
 
 La condition de table de décision appelle réellement le service pour évaluer la table. Le mode test ne garantit pas l’absence de tout effet ; utilisez uniquement vos données de test et examinez les actions concernées.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/fr.mp4" %}
+
+**Vidéo:** Tables de décision dans les cartes d'attribution · 2:02 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/fr.vtt)
+
 ## Cartes et paramètres d’exemple
 
 Ces valeurs décrivent des paramètres de cartes, pas un workflow complet importable. Remplacez YOUR_* par vos choix de test. Le concepteur gère l’ID caché de l’appelant. Catalogue : Dev, DocFlow 2.10.38, 21 octobre 2026 ; contrôlez versions et droits de votre organisation.

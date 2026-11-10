@@ -160,6 +160,8 @@ O valor deve corresponder a uma **expressão regular**. A expressão procura den
 
 O valor deve ser um número entre **Mínimo** e **Máximo** (ambos incluídos). Preencha um deles ou ambos. Um valor que não seja um número falha. Valores formatados como `1.234,56` são compreendidos.
 
+Os limites são introduzidos como números simples: um sinal opcional e dígitos, com a vírgula aceite como separador decimal (`0,5`). Separadores de milhares, expoentes e palavras são recusados ao guardar, com um aviso de que o limite não é um número. Introduza pelo menos um limite, porque um intervalo sem mínimo e máximo não é guardado, e mantenha o mínimo igual ou inferior ao máximo.
+
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-range.png" alt="Uma verificação Range"><figcaption><p>Range somente com mínimo: as quantidades devem ser de pelo menos 0,01</p></figcaption></figure>
 
 #### Compare fields — por exemplo, vencimento ≥ data da fatura

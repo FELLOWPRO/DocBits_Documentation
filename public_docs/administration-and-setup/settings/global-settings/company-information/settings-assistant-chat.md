@@ -1,4 +1,4 @@
-# Asistente de configuración: qué puede hacer el chat
+# Settings Assistant: qué puede hacer el chat
 
 ## Descripción general
 
@@ -29,11 +29,11 @@ Cuando abre el panel en una página de ajustes, le saluda para **esa página** y
 
 | Página | Preguntas de ejemplo |
 | --- | --- |
-| Información de la empresa | "¿Cómo cambio la dirección de nuestra empresa?", "¿Dónde subo nuestro logotipo?", "¿Qué dominios están registrados para nuestra organización?" |
-| Importación | "¿Tenemos activada la importación por correo electrónico?", "¿A qué dirección de correo electrónico enviamos los documentos?", "¿Cómo configuro una importación por FTP o SFTP?" |
-| Clasificación y extracción | "¿Qué modelo de IA se utiliza para la extracción?", "¿Tenemos activada la división de documentos por códigos de barras?", "¿Puedo utilizar otro modelo de IA para un proveedor?" |
-| Usuarios | "¿Cómo invito a un nuevo usuario?", "¿Cómo convierto a un usuario en administrador?", "¿Cómo desactivo a un usuario?" |
-| Resumen de ajustes | "¿Cómo activo la detección de códigos de barras?", "¿Por qué no está activo el cotejo de pedidos?", "¿Dónde encuentro los ajustes de importación por correo electrónico?" |
+| Company Information | "¿Cómo cambio la dirección de nuestra empresa?", "¿Dónde subo nuestro logotipo?", "¿Qué dominios están registrados para nuestra organización?" |
+| Import | "¿Tenemos activada la importación por correo electrónico?", "¿A qué dirección de correo electrónico enviamos los documentos?", "¿Cómo configuro una importación por FTP o SFTP?" |
+| Classify & Extract | "¿Qué modelo de IA se utiliza para la extracción?", "¿Tenemos activada la división de documentos por códigos de barras?", "¿Puedo utilizar otro modelo de IA para un proveedor?" |
+| Users | "¿Cómo invito a un nuevo usuario?", "¿Cómo convierto a un usuario en administrador?", "¿Cómo desactivo a un usuario?" |
+| Settings overview | "¿Cómo activo la detección de códigos de barras?", "¿Por qué no está activo el cotejo de pedidos?", "¿Dónde encuentro los ajustes de importación por correo electrónico?" |
 
 Haga clic en una pregunta y se envía de inmediato. Debajo de las tres preguntas, el panel dice *I can also help with any other setting — just ask.* (también puedo ayudarle con cualquier otro ajuste, solo pregunte). Durante una conversación, el chip **Help with this page** permanece en la parte inferior y pregunta "What can I configure on this page?".
 

@@ -47,6 +47,10 @@ A manual Start test does not prove that the event-specific When path is selected
 
 ### Card versions
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/en.mp4" %}
+
+**Video:** Changing the version of a card · 0:39 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/en.vtt)
+
 The version pill on a card opens its available versions. A version change can change fields and behavior: review the configuration and repeat the affected tests. Prefer supported card versions with structured results. A missing-card warning means the saved card is unavailable in the current catalog, for example an unavailable partner card.
 
 **Card version** and **Advanced Workflow type** describe different things. See the [card catalog](../cards-overview/README.md) for card-specific behavior.
@@ -60,6 +64,10 @@ Open **Help → Card setup** for this guidance and the link to Document Types. A
 <figure><img src="../../../.gitbook/assets/advanced_workflows_field_names_en.png" alt="Card setup help explaining document field names and layout-based suggestions"><figcaption><p>Verify field names against the document's layout before relying on a suggested name.</p></figcaption></figure>
 
 ## Result handles
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.mp4" %}
+
+**Video:** Success, failed condition and error in a workflow run · 1:28 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.vtt)
 
 Drag a source handle to the next node's **input**. And has two outcomes on the right and an error output below. Then has success on the right and error below.
 
@@ -76,6 +84,10 @@ Success is **blue in the designer** and **green in execution results**. Card cat
 If the taken result has no connection, that route has no next node. Other reachable routes can still execute. An error handler does not erase the original error from the overall result.
 
 ## Merge branches
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4" %}
+
+**Video:** AND and OR: combining conditions · 2:28 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.vtt)
 
 Merge nodes combine incoming routes; they do not create branches. Connect the intended upstream **outcomes** to the gate's input, then its success output to the next action.
 

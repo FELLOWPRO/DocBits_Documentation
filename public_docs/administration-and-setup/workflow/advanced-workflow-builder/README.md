@@ -90,6 +90,10 @@ Continue with the [five-part video guide](videos.md) for nodes and routes, varia
 
 ## Open or create an Advanced Workflow
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-migration/v1/en.mp4" %}
+
+**Video:** Converting a Standard workflow to Advanced · 1:15 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-migration/v1/en.vtt)
+
 1. Open **Workflow Dashboard → Workflow List**.
 2. Select **New Workflow → Advanced Workflow**. Some versions label the button **Add Workflow**.
 3. Enter a name in the toolbar. Add a description that explains the business purpose.

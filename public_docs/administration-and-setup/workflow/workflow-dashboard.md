@@ -12,6 +12,14 @@ The partial views below show volume metrics, run outcomes and the runs chart. Re
 
 ## Tabs
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/en.mp4" %}
+
+**Video:** Searching and filtering on the workflow dashboard · 0:54 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/en.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/en.mp4" %}
+
+**Video:** Download and upload a workflow as JSON · 0:51 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/en.vtt)
+
 * **Dashboard** — run metrics (illustrated above) and recent activity.
 * **Workflow List** — every workflow with its type, execution order and trigger. Create a new one with **New Workflow**.
 * **Test Manager List** — test scenarios that validate your workflows; run them with **Run All Tests**.

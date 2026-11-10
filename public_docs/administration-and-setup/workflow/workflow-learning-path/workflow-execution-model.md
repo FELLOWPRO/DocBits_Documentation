@@ -12,6 +12,10 @@ A workflow needs an execution event and matching conditions. **Document type is 
 
 ## From event to action
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-start/v1/en.mp4" %}
+
+**Video:** When a workflow starts · 0:42 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-start/v1/en.vtt)
+
 1. Check the organization, permissions and Workflow module, plus the Advanced entitlement where required.
 2. Identify the event: document processing, an explicit manual invocation or a supported event trigger. Use only triggers actually available in your version's card catalog.
 3. In a Standard Workflow, When and every And condition must match. A false condition stops that linear card sequence.
@@ -32,6 +36,14 @@ A workflow needs an execution event and matching conditions. **Document type is 
 Test Manager and the Advanced test dialog are different execution surfaces. A status comparison alone does not confirm assignment, a notification or export delivery. Check the side effects of the selected test surface before running against real documents.
 
 ## Multiple workflows and repeated execution
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/en.mp4" %}
+
+**Video:** Workflow execution order · 1:14 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/en.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/en.mp4" %}
+
+**Video:** Workflow execution limits · 0:49 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/en.vtt)
 
 Lower **execution order** values run first. For example, workflow 100 prepares a field and workflow 200 checks it. Use distinct values and confirm the data actually read in a new run. An Advanced card's canvas position does not determine execution order.
 

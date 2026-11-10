@@ -4,6 +4,14 @@ The **Standard Workflow** builder is the linear, card-based editor for automatin
 
 ## Create and test a Standard Workflow <a id="standard-workflow-tutorial"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.mp4" %}
+
+**Video:** Building a Standard workflow · 1:09 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/en.mp4" %}
+
+**Video:** Testing cards in a Standard workflow · 0:51 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/en.vtt)
+
 Create a complete Standard Workflow in the real DocBits interface: match the invoice, check its number and an amount above 1000, assign a reviewer and change the status. Save the rule, run three test scenarios and confirm the document’s actual result.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/en.mp4" %}

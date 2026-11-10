@@ -8,6 +8,10 @@ The **Workflow Logs** allow users to analyze which workflows were executed for a
 
 ## **Accessing Workflow Logs**
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4" %}
+
+**Video:** Reading the workflow logs · 1:34 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.vtt)
+
 To access workflow logs:
 
 1. Navigate to the **Dashboard**.

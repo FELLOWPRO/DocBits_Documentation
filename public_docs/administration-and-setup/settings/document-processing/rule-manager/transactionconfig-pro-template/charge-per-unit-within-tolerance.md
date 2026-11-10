@@ -4,11 +4,11 @@ Le scénario suivant illustre un mappage configuré ; il ne constitue pas un mod
 
 ## Scénario :
 
-Les frais unitaires indiqués sur la facture se situent dans la plage de tolérance acceptable par rapport au bon de commande.
+Le Charge Per Unit indiqué sur la facture se situe dans la plage de tolérance acceptable par rapport au bon de commande.
 
 ## Action :
 
-Le système accepte les frais unitaires tels que facturés et traite la transaction sans ajustements.
+Le système accepte le Charge Per Unit tel que facturé et traite la transaction sans ajustements.
 
 ## Exemple :
 
@@ -17,16 +17,16 @@ Le système accepte les frais unitaires tels que facturés et traite la transact
   * Quantity: 500 units
   * Total Charge Amount: $2,500.00
 * **Invoice Received:**
-  * Charge Per Unit: $5.10 (variance 2 %, dans la tolérance de ±3 %)
+  * Charge Per Unit: $5.10 (variance 2%, within the ±3% tolerance)
   * Quantity: 500 units
   * Total Charge Amount: $2,550.00
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±3%
 
-Étant donné que les frais par unité ($5.10) se situent dans la plage de tolérance acceptable de 3 % par rapport au bon de commande, le système :
+Étant donné que le Charge Per Unit ($5.10) se situe dans la plage de tolérance acceptable de 3 % par rapport au bon de commande, le système :
 
-1. **Accept the Charge Per Unit:** Le système accepte les frais facturés par unité de $5.10 car ils se situent dans la limite de tolérance définie.
-2. **Process the Transaction:** Le système traite la facture avec le montant total des frais en fonction des frais facturés par unité et de la quantité :
+1. **Accept the Charge Per Unit:** Le système accepte le Charge Per Unit facturé de $5.10 car il se situe dans la limite de tolérance définie.
+2. **Process the Transaction:** Le système traite la facture avec le Total Charge Amount en fonction du Charge Per Unit facturé et de la Quantity :
    * **Total Charge Amount = Quantity × Charge Per Unit**
    * **Total Charge Amount = 500 units × $5.10 = $2,550.00**
 3. **Finalize the Invoice:** Le système traite la transaction sans aucun ajustement, acceptant la facture telle quelle.

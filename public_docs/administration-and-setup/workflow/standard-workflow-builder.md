@@ -4,6 +4,10 @@ Kreator **Standardowy przepływ** to liniowy, oparty na kartach edytor do automa
 
 ## Tworzenie i testowanie Standard Workflow <a id="standard-workflow-tutorial"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pl.mp4" %}
+
+**Film:** Tworzenie Workflow typu Standard · 6:34 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pl.vtt)
+
 Utwórz kompletny Standard Workflow w prawdziwym interfejsie DocBits: wybierz fakturę, sprawdź jej numer i kwotę powyżej 1000, przypisz osobę sprawdzającą i zmień status. Zapisz regułę, uruchom trzy scenariusze testowe i potwierdź rzeczywisty wynik w dokumencie.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/pl.mp4" %}

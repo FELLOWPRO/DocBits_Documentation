@@ -72,6 +72,14 @@ Pasek narzędzi Zaawansowanego Workflow biegnie wzdłuż dolnej krawędzi kanwy 
 
 ## Elementy sterujące paska narzędzi
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4" %}
+
+**Film:** Projektant Advanced Workflow: karty i ścieżki · 3:00 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.mp4" %}
+
+**Film:** Opisy i notatki Workflow · 1:38 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.vtt)
+
 - **+ Add** — otwiera menu węzłów, aby dodać węzeł (zobacz [Węzły](nodes.md)).
 - **Undo / Redo** — cofa lub przywraca Twoje zmiany.
 - **Zoom in / Zoom out** — zmienia poziom powiększenia kanwy.

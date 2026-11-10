@@ -6,6 +6,14 @@
 
 ## Zakładki
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pl.mp4" %}
+
+**Film:** Wyszukiwanie i filtrowanie na panelu Workflows · 1:04 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pl.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pl.mp4" %}
+
+**Film:** Pobieranie i przesyłanie Workflow jako JSON · 1:11 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pl.vtt)
+
 - **Panel** — metryki uruchomień i ostatnia aktywność (pokazane powyżej).
 - **Lista przepływów pracy** — każdy przepływ pracy wraz z typem, kolejnością wykonania i wyzwalaczem. Nowy przepływ pracy utworzysz przyciskiem **Nowy przepływ pracy**.
 - **Lista menedżerów testów** — scenariusze testowe, które walidują Twoje przepływy pracy; uruchom je przyciskiem **Uruchom wszystkie testy**.

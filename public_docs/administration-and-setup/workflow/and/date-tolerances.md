@@ -8,6 +8,10 @@ Karty, które korzystają z tego obliczenia:
 * [Promised delivery date for line items in table with promised delivery date](compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/README.md) – obiecane daty dostawy pozycji porównywane z bieżącą datą.
 * [Promised Delivery Date on Purchase Order](compare-with-purchase-order/promised-delivery-date-on-purchase-order.md) – daty dostawy pozycji porównywane z datą dostawy w zamówieniu zakupu.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4" %}
+
+**Film:** Tolerancje dat i sprawdzanie zakresów · 2:44 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.vtt)
+
 ## Okno tolerancji
 
 Od daty referencyjnej tolerancja jest odliczana do tyłu i do przodu. Wynikiem jest **okno tolerancji**: od daty początkowej do daty końcowej, obie włącznie.

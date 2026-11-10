@@ -56,6 +56,10 @@ Węzły **When / And / Then** korzystają z dokładnie tych samych kart, które 
 
 ## Łączenie węzłów
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.mp4" %}
+
+**Film:** Sukces, niespełniony warunek i błąd w działaniu Workflow · 1:58 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.vtt)
+
 Węzły są połączone **kolorowymi krawędziami**. Przeciągnij od uchwytu po **prawej** stronie węzła do uchwytu wejściowego po **lewej** stronie innego węzła, aby utworzyć połączenie. Każdy kolor oznacza inny wynik wykonania:
 
 - **Success** (niebieski) — domyślna ścieżka wybierana, gdy węzeł zostanie pomyślnie ukończony. Dostępna dla wszystkich typów węzłów.

@@ -31,6 +31,14 @@ Test Manager i okno testu Advanced to różne powierzchnie wykonania. Samo poró
 
 ## Wiele workflow i powtórzenia
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pl.mp4" %}
+
+**Film:** Kolejność wykonywania Workflows · 1:53 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pl.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pl.mp4" %}
+
+**Film:** Limity wykonywania Workflows · 1:05 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pl.vtt)
+
 Niższe wartości **kolejności wykonywania** są realizowane wcześniej. Na przykład workflow 100 przygotowuje pole, a 200 je sprawdza. Stosuj różne wartości i potwierdź faktycznie odczytane dane w nowym wykonaniu. Położenie karty Advanced na płótnie nie wyznacza kolejności.
 
 **Change Status to → Trigger Workflows** może zainicjować kolejne wykonanie. **Run Workflow** wywołuje wybrany workflow. Oba mechanizmy wymagają świadomych warunków; żaden nie gwarantuje jednokrotnego wykonania. Ogranicz zadania i eksport przez stan procesu biznesowego i jawnie przetestuj drugie uruchomienie. Sam znacznik zakończenia nie chroni ogólnie przed równoczesnym podwójnym przetwarzaniem.

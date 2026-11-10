@@ -6,6 +6,10 @@ Die **Workflow-Protokolle** ermöglichen es Benutzern, zu analysieren, welche Wo
 
 ## **Zugriff auf Workflow-Protokolle**
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4" %}
+
+**Video:** Die Workflow-Logs lesen · 1:30 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.vtt)
+
 Um auf die Workflow-Protokolle zuzugreifen:
 
 1. Navigieren Sie zum **Dashboard**.

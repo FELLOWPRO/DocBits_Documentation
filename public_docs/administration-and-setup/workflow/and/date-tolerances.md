@@ -8,6 +8,10 @@ Die Karten, die diese Berechnung verwenden:
 * [Promised delivery date for line items in table with promised delivery date](compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/README.md) – zugesagte Liefertermine von Positionen werden mit dem aktuellen Datum verglichen.
 * [Promised Delivery Date on Purchase Order](compare-with-purchase-order/promised-delivery-date-on-purchase-order.md) – Liefertermine von Positionen werden mit dem Liefertermin der Bestellung verglichen.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.mp4" %}
+
+**Video:** Datumstoleranzen und Bereichsprüfungen · 2:09 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.vtt)
+
 ## Das Toleranzfenster
 
 Vom Referenzdatum aus wird die Toleranz rückwärts und vorwärts gezählt. Das Ergebnis ist ein **Toleranzfenster**: vom Startdatum bis zum Enddatum, beide eingeschlossen.

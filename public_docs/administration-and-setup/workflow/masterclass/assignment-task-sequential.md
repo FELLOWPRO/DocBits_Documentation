@@ -16,6 +16,10 @@ Vermeiden Sie eine unmittelbare Zuweisung im selben Lauf, wenn Sie den ersten se
 
 Die fachliche Abnahme benötigt A→Genehmigung→B→Genehmigung sowie Ablehnung durch A, fehlenden Empfänger und erneutes Auslösen. Nach Ablehnung darf kein Abschluss-Export erfolgen; eine blockierte Empfängerauflösung darf nicht als abgeschlossene Freigabe erscheinen. Prüfen Sie Dokumentzuständigkeit und Aufgabenbestand getrennt. Designer-Simulationen belegen keinen echten Benutzerübergang.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.mp4" %}
+
+**Video:** Zweistufige Genehmigung mit Entscheidungstabellen · 2:58 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.vtt)
+
 ## Einen Übergang von A nach B tatsächlich beobachten
 
 Legen Sie vor der Konfiguration fest, ob Sie die Zuständigkeit ändern, eine Aufgabe erzeugen oder eine persönliche Entscheidung verarbeiten wollen. Verwenden Sie hierfür die jeweils passende Karte; die drei Wirkungen sind nicht gleichbedeutend.

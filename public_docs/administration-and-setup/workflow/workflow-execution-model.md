@@ -31,6 +31,14 @@ Der Test Manager und der Advanced-Testdialog sind verschiedene Ausführungsoberf
 
 ## Mehrere Workflows und erneute Ausführung
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/de.mp4" %}
+
+**Video:** Ausführungsreihenfolge von Workflows · 1:14 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/de.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/de.mp4" %}
+
+**Video:** Ausführungslimits von Workflows · 0:48 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/de.vtt)
+
 Kleinere Werte der **Ausführungsreihenfolge** laufen zuerst. Beispiel: Workflow 100 bereitet ein Feld vor; Workflow 200 prüft dessen Wert. Verwenden Sie unterschiedliche Werte und bestätigen Sie die tatsächlich gelesenen Daten in einem neuen Lauf. Die Position einer Advanced-Karte auf der Arbeitsfläche bestimmt keine Reihenfolge.
 
 **Change Status to → Trigger Workflows** kann eine weitere Workflow-Ausführung anstoßen. **Run Workflow** ruft einen ausgewählten Workflow auf. Beide Mechanismen benötigen bewusst gesetzte Bedingungen; sie sind keine Zusicherung einer einmaligen Ausführung. Begrenzen Sie Aufgaben und Exporte über einen fachlichen Bearbeitungszustand und prüfen Sie den zweiten Lauf ausdrücklich. Ein Erledigt-Merkmal allein ist bei gleichzeitigen Aufrufen kein allgemeiner Schutz vor Doppelverarbeitung.

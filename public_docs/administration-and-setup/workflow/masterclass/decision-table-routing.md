@@ -18,6 +18,10 @@ Prüfen Sie genau einen Treffer, keinen Treffer, mehrere Treffer, falschen Rück
 
 Eine Entscheidungstabelle wird durch ihre Prüfkarte tatsächlich beim Tabellendienst ausgewertet. Testmodus ist keine allgemeine Garantie gegen Nebenwirkungen; verwenden Sie ausschließlich eigene Testdaten und prüfen Sie die verwendeten Aktionen.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/de.mp4" %}
+
+**Video:** Entscheidungstabellen in Zuweisungskarten · 2:04 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/de.vtt)
+
 ## Die Rückgabe bis zum Dokument verfolgen
 
 Erstellen Sie für die Übung zwei überschneidungsfreie Betragsregeln. Schreiben Sie vorab auf, welcher Benutzerbezug bei höchstens 1000 und welcher oberhalb 1000 erwartet wird. Prüfen Sie Regelmodus und Trefferverhalten im tatsächlichen Tabelleneditor.

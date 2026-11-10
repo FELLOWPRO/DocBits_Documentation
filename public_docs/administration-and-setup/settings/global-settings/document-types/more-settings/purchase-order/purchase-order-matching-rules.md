@@ -215,6 +215,16 @@ L'ensemble de règles défini gouverne directement l'efficacité et l'intégrit�
 * [**Calculer le prix unitaire de la commande**](calculate-po-unit-price.md) modifie le prix unitaire que les règles comparent côté bon de commande.
 * Les [**paramètres de tolérance**](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) et les [**statuts désactivés**](purchase-order-disable-statuses.md) déterminent la rigueur de la comparaison et quelles lignes de bon de commande sont proposées.
 
+## Quand le rapprochement ignore des règles
+
+Une règle a besoin d'une colonne que le tableau extrait possède réellement ; une règle qui associe les lignes par numéro d'article ne peut pas s'exécuter sur une facture qui n'en imprime aucun.
+
+À la place, le rapprochement automatique exécute les règles qu'il peut et laisse les lignes des autres sans correspondance. Il signale ensuite **Some PO match rules were not tried**, en nommant chaque règle ignorée et chaque colonne absente du tableau. Les lignes concernées restent sans correspondance jusqu'à ce que vous ajoutiez la colonne manquante ou que vous les rapprochiez manuellement.
+
+{% hint style="info" %}
+Une condition d'activation fausse ignore aussi une règle, mais c'est un autre cas : elle apparaît dans l'historique du rapprochement, pas dans cet avis.
+{% endhint %}
+
 ## Dépannage
 
 | Symptôme | Que vérifier |

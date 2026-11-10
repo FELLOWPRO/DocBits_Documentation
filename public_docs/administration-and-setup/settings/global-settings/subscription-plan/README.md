@@ -50,3 +50,16 @@ Surveillez votre consommation de jetons et de flux de travail sur une période s
 | **De / À** | La période pour laquelle l'utilisation est indiquée. |
 | **Jetons utilisés** | Jetons consommés sur la période. |
 | **Jetons restants** | Jetons disponibles pour la période. |
+
+## Usage
+
+Le panneau **Usage** sous la carte est réduit par défaut. Ouvrez-le pour voir ce que votre organisation a consommé par période.
+
+| Colonne | Description |
+| --- | --- |
+| **Type** | La catégorie d'utilisation : Document, Workflow, Advanced Workflow ou DocNet. |
+| **From / To** | La période pour laquelle l'utilisation est indiquée. |
+| **Tokens used** | Tokens consommés pendant la période. |
+| **Remaining tokens** | Tokens restants pour la période. |
+
+Utilisez **Select** pour choisir la plage de dates couverte par le tableau, et cliquez sur l'en-tête d'une colonne pour trier les lignes selon cette colonne.

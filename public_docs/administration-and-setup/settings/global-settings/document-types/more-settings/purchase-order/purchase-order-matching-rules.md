@@ -215,6 +215,16 @@ Il set di regole definito governa direttamente l’efficienza e l’integrità d
 * [**Calcolo del prezzo unitario dell’OP**](calculate-po-unit-price.md) modifica quale prezzo unitario le regole confrontano sul lato ordine di acquisto.
 * Le [**impostazioni di tolleranza**](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) e gli [**stati disabilitati**](purchase-order-disable-statuses.md) decidono quanto è rigoroso il confronto e quali righe dell’ordine di acquisto sono offerte.
 
+## Quando l'abbinamento salta le regole
+
+Una regola ha bisogno di una colonna che la tabella estratta abbia davvero; una regola che abbina le righe per numero di articolo non può essere eseguita su una fattura che non ne riporta nessuno.
+
+L'abbinamento automatico esegue quindi le regole possibili e lascia senza corrispondenza le righe delle altre. Poi segnala **Some PO match rules were not tried**, indicando ogni regola saltata e ogni colonna mancante dalla tabella. Le righe interessate restano senza corrispondenza finché non aggiungi la colonna mancante o non le abbini manualmente.
+
+{% hint style="info" %}
+Anche una condizione di attivazione errata salta una regola, ma è un caso diverso: compare nella cronologia dell'abbinamento, non in questo avviso.
+{% endhint %}
+
 ## Risoluzione dei problemi
 
 | Sintomo                                                         | Cosa controllare                                                                                                                                                                                   |

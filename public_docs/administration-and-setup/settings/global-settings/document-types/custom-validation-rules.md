@@ -162,6 +162,8 @@ Il valore deve corrispondere a un'**espressione regolare**. L'espressione cerca 
 
 Il valore deve essere un numero compreso tra **Minimo** e **Massimo** (entrambi inclusi). Compila uno o entrambi. Un valore che non è un numero non supera il controllo. Gli importi formattati come `1.234,56` vengono compresi.
 
+I limiti stessi si inseriscono come numeri semplici: un segno facoltativo e cifre, con la virgola accettata come separatore decimale (`0,5`). I separatori delle migliaia, gli esponenti e le parole vengono rifiutati al salvataggio, con un avviso che il limite non è un numero. Inserisci almeno un limite, perché un intervallo senza minimo e massimo non viene salvato, e mantieni il minimo uguale o inferiore al massimo.
+
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-range.png" alt="Un controllo Range"><figcaption><p>Range con solo un minimo: le quantità devono essere almeno 0,01</p></figcaption></figure>
 
 #### Compare fields — ad es. data di scadenza ≥ data della fattura

@@ -1,5 +1,21 @@
 # WatchDog Configuration
 
+**Legacy V2 versus current V3 configuration**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-configuration-management-part1/v1/en.mp4" %}
+
+**Importing a V2 file and creating an import configuration**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-configuration-management-part2/v1/en.mp4" %}
+
+**BOD mapping, overlaps and export settings**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-configuration-management-part3/v1/en.mp4" %}
+
+**How WatchDog fetches and reloads configuration**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-configuration-management-part4/v1/en.mp4" %}
+
 This guide explains how to configure the WatchDog service within the DocBits application. All configurations are managed directly in **Settings → Document Processing → WatchDog**.
 
 <figure><img src="../../../.gitbook/assets/watchdog-v2-config-infographic.svg" alt="WatchDog Configuration Overview"><figcaption></figcaption></figure>
@@ -7,6 +23,18 @@ This guide explains how to configure the WatchDog service within the DocBits app
 ---
 
 ## 1. General Tab
+
+**The idea, the General tab and the commands**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-remote-management-part1/v1/en.mp4" %}
+
+**Restart, update and how commands travel**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-remote-management-part2/v1/en.mp4" %}
+
+**Safety rules, restart files and audit trail**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-remote-management-part3/v1/en.mp4" %}
 
 The General tab provides setup instructions, download links, and update settings.
 
@@ -23,6 +51,18 @@ WatchDog.exe -api YOUR_API_KEY
 ```
 
 ### 1.2 Auto-Update Schedule
+
+**Where updates come from and the release channel**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-auto-update-part1/v1/en.mp4" %}
+
+**Automatic and manual updates, step by step**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-auto-update-part2/v1/en.mp4" %}
+
+**Health check, rollback and after the update**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-auto-update-part3/v1/en.mp4" %}
 
 | Option | Interval |
 | :--- | :--- |
@@ -41,6 +81,22 @@ Create and manage import and export configurations. All configurations are creat
 
 ### 2.1 Import Configurations
 
+**Setting up an import and how WatchDog notices files**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-file-import-part1/v1/en.mp4" %}
+
+**Complete files, retries and file types**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-file-import-part2/v1/en.mp4" %}
+
+**Infor BOD files and where files go afterwards**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-file-import-part3/v1/en.mp4" %}
+
+**Folder checks and recap**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-file-import-part4/v1/en.mp4" %}
+
 Define where WatchDog monitors for new documents.
 
 <figure><img src="../../../.gitbook/assets/watchdog_v2_02.png" alt="WatchDog Import Configuration"><figcaption></figcaption></figure>
@@ -54,6 +110,22 @@ Define where WatchDog monitors for new documents.
 | **Sub-Organisation** | Optional — route documents to a specific sub-org |
 
 ### 2.2 Export Configurations
+
+**Export basics: finding work and matching configurations**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-file-export-part1/v1/en.mp4" %}
+
+**Folder and Infor exports**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-file-export-part2/v1/en.mp4" %}
+
+**GLS840MI and REST API exports**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-file-export-part3/v1/en.mp4" %}
+
+**Export status and recap**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-file-export-part4/v1/en.mp4" %}
 
 Define how and where processed documents are exported.
 
@@ -89,6 +161,18 @@ Define how and where processed documents are exported.
 ---
 
 ## 3. Status Tab
+
+**Heartbeat and the status card**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-monitoring-logging-part1/v1/en.mp4" %}
+
+**Local logs and what is sent to DocBits**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-monitoring-logging-part2/v1/en.mp4" %}
+
+**Crash detection, alerts and the Logs tab**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-monitoring-logging-part3/v1/en.mp4" %}
 
 Monitor WatchDog service health and activity.
 
@@ -129,6 +213,18 @@ View all WatchDog events stored in OpenSearch.
 ---
 
 ## 5. XSLT Templates Tab
+
+**What a template is, creating and validating**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-xslt-templates-part1/v1/en.mp4" %}
+
+**Field analysis, security and the template input**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-xslt-templates-part2/v1/en.mp4" %}
+
+**Assigning templates, export-time process and API**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-xslt-templates-part3/v1/en.mp4" %}
 
 Manage XSLT transformation templates used for XML exports.
 

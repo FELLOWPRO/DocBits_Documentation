@@ -1,46 +1,29 @@
 # Importar documentos de muestra para el entrenamiento del modelo
 
-## Preparar, importar y comprobar documentos de muestra.
+## Preparar, importar y comprobar documentos de muestra
 
-<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-04-trainingsimport-es-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-es-light-20261029.png" alt="Preparar, importar y comprobar documentos de muestra."></picture><figcaption><p>Preparar, importar y comprobar documentos de muestra.</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-04-trainingsimport-es-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-es-light-20261029.png" alt="Preparar, importar y comprobar documentos de muestra"></picture><figcaption><p>Preparar, importar y comprobar documentos de muestra</p></figcaption></figure>
 
-Elija documentos de muestra representativos, prepare las opciones de importación disponibles y verifique el estado de la importación. Sólo las muestras importadas con éxito están listas para una entrenamiento posterior. Resuelva los errores de importación antes del siguiente paso y mantenga los documentos de prueba independientes separados del conjunto de datos de entrenamiento.
+Elija documentos de muestra representativos, prepare las opciones de importación disponibles y compruebe el estado de la importación. Sólo los documentos importados correctamente están listos para el entrenamiento posterior. Resuelva los errores de importación antes del siguiente paso y mantenga los documentos de prueba independientes separados del conjunto de datos de entrenamiento.
 
+Prepare documentos que representen los formatos, los idiomas y los tipos de documento que procesa su organización. Utilice únicamente los formatos de archivo que admita su instalación. Elimine los duplicados y mantenga los documentos de entrenamiento separados de los documentos reservados para la evaluación.
 
-Use esta página para añadir PDFs de muestra a un tipo de documento y luego entrenar o probar su modelo de clasificación. Necesita acceso a **Ajustes** y **Tipos de Documento**. Para el propósito de las funciones de entrenamiento, consulte [Propósito y uso: Entrenamiento del Modelo](purpose-and-use-model-training.md).
+## Abrir la importación
 
-## Abrir el tipo de documento
+Abra el entrenamiento del modelo en los ajustes del tipo de documento correspondiente y seleccione la función de importación.
 
-1. Vaya a **Ajustes → Tipos de Documento**.
-2. Busque el tipo de documento que desea entrenar. En su fila, seleccione **Entrenamiento modelo**. El ejemplo siguiente usa **Factura**.
+<figure><img src="../../../../../.gitbook/assets/model-training-import-data-model-training-overview-es-20261110.png" alt="Vista general del entrenamiento del modelo con el número de muestras y los botones Importar, Entrenar modelo y Clasificación de prueba; no se inició ningún entrenamiento ni ninguna importación."><figcaption><p>Vista general del entrenamiento del modelo: datos y acciones disponibles; no se inició ningún entrenamiento ni ninguna importación.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-647-document-types-es-20261011.png" alt="Fila de Factura en la página Tipos de Documento con el enlace Entrenamiento modelo"><figcaption><p>Abra Entrenamiento modelo desde el tipo de documento elegido.</p></figcaption></figure>
+## Seleccionar formatos y archivos
 
-Los demás controles de esta tarjeta tienen otro propósito: **Activar** habilita el tipo de documento, **Extraction** cambia su modo de extracción, el engranaje abre sus ajustes y los enlaces restantes abren otras áreas de configuración. No necesita cambiarlos solo para abrir el Entrenamiento del Modelo.
+Elija los formatos de número y fecha que coincidan con los archivos y, a continuación, seleccione los documentos que desea importar. Por ejemplo, `1.234,56` y `1,234.56` utilizan separadores distintos. Una fecha como `05/06/2026` también debe interpretarse según el formato seleccionado.
 
-La página **Modelo de tren** muestra el número de muestras y una lista de los documentos de entrenamiento subidos. En la organización de ejemplo, la lista contiene cinco documentos; su organización puede mostrar otros documentos y cifras.
+<figure><img src="../../../../../.gitbook/assets/model-training-import-data-model-training-import-dialog-es-20261110.png" alt="Diálogo Cargador de documentos abierto desde Entrenar modelo, con el selector Formato de cantidad y fecha, el área Arrastrar y soltar archivos aquí y el campo Subir; no hay archivos seleccionados."><figcaption><p>El diálogo <strong>Cargador de documentos</strong>: elija el formato de cantidad y fecha y, a continuación, seleccione los archivos.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-647-model-training-es-20261011.png" alt="Página Modelo de tren de Factura con el número de muestras, Importar, Modelo de tren, Clasificación de prueba y la lista de documentos"><figcaption><p>Las tres acciones están en la parte superior derecha de la lista de entrenamiento.</p></figcaption></figure>
+Compruebe la selección antes de iniciar la importación. Espere a que finalice el procesamiento y revise los errores y los tipos de documento asignados. Corrija los errores de clasificación y extracción antes de utilizar los ejemplos para el entrenamiento.
 
-## Importar PDFs de muestra
+Para las acciones sobre las muestras ya importadas, consulte [Gestionar datos de entrenamiento](manage-training-data.md).
 
-1. Seleccione **Importar**.
-2. Elija el **Formato de cantidad y fecha** que coincida con el documento de muestra. Por ejemplo, elija **Spain** para las convenciones españolas de número y fecha. Esta selección indica a DocBits cómo interpretar los valores del documento subido; no cambia el idioma de la aplicación.
-3. Arrastre los archivos PDF al diálogo o use **Subir** para seleccionarlos. El importador actual de documentos de muestra acepta **archivos PDF**; rechaza otros tipos de archivo. Al seleccionar los archivos se inicia la subida.
-4. Cierre el diálogo y compruebe que los documentos aparecen en la lista de entrenamiento. Si DocBits informa de un error de subida o de que un documento ya existe, corrija el archivo o elija otra muestra antes de continuar.
+## Entrenar y evaluar
 
-<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-es.png" alt="Diálogo de importación con el selector Formato de cantidad y fecha, el área de arrastrar y soltar y el campo Subir"><figcaption><p>Elija un formato antes de seleccionar los PDFs de muestra.</p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/dbdc-647-format-menu-es-20261011.png" alt="Menú Formato de cantidad y fecha con opciones de países y regiones, incluidos Germany, United Kingdom, France y Spain"><figcaption><p>Elija el formato del documento, no su idioma de interfaz preferido.</p></figcaption></figure>
-
-Para las acciones sobre las muestras importadas, consulte [Gestionar datos de entrenamiento](manage-training-data.md).
-
-## Entrenar y comprobar el modelo
-
-Cuando los PDFs de muestra previstos estén en la lista, seleccione **Modelo de tren**. DocBits puede procesar el entrenamiento en segundo plano; espere su mensaje de finalización antes de considerar el nuevo modelo como listo. El número de muestras y cualquier límite de plan que se muestren en esta página pertenecen a su organización.
-
-Para comprobar la clasificación, seleccione **Clasificación de prueba** y suba un archivo de ejemplo aparte en el diálogo. Tras el procesamiento, DocBits indica si el tipo de documento previsto coincide con esta página y muestra los detalles de la clasificación. El diálogo de prueba vacío de abajo se muestra sin enviar ningún archivo.
-
-<figure><img src="../../../../../.gitbook/assets/dbdc-647-test-dialog-es-20261011.png" alt="Diálogo Clasificación de prueba con el área de arrastrar y soltar y el campo Subir"><figcaption><p>Use Clasificación de prueba para comprobar el modelo con otro documento.</p></figcaption></figure>
-
-Para interpretar el resultado, consulte [Probar el modelo](testing-the-model.md). Si el resultado es pobre, revise los [datos de entrenamiento](manage-training-data.md) y la [guía de solución de problemas](troubleshooting.md) antes de añadir más muestras.
+Entrene el modelo con las funciones y los permisos disponibles en su versión. A continuación, evalúelo con una muestra independiente. Añadir documentos no garantiza por sí mismo una mayor precisión. Consulte [Probando el modelo](testing-the-model.md).

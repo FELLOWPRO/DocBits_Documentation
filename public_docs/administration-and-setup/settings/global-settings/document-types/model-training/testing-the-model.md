@@ -16,7 +16,7 @@ Realiza la prueba con documentos representativos que no se hayan utilizado para 
 3. Selecciona la muestra e inicia la evaluación con las opciones disponibles.
 4. Espera a que termine y registra los resultados y los errores. Un fallo técnico o una prueba incompleta no equivale a una clasificación correcta.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-es.png" alt="Vista general del entrenamiento del modelo: datos y acciones disponibles; no se inició ningún entrenamiento ni importación."><figcaption><p>Vista general del entrenamiento del modelo: datos y acciones disponibles; no se inició ningún entrenamiento ni importación.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/model-training-import-data-model-training-overview-es-20261110.png" alt="Vista general del entrenamiento del modelo: datos y acciones disponibles; no se inició ningún entrenamiento ni importación."><figcaption><p>Vista general del entrenamiento del modelo: datos y acciones disponibles; no se inició ningún entrenamiento ni importación.</p></figcaption></figure>
 
 ## Interpretar los resultados
 

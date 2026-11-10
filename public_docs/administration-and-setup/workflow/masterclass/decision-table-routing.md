@@ -14,6 +14,10 @@ Pruebe una, ninguna y varias coincidencias, tipo incorrecto, usuario inválido y
 
 La condición de tabla de decisión llama realmente al servicio para evaluar la tabla. El modo de prueba no garantiza ausencia de efectos secundarios; use datos propios de prueba y revise las acciones empleadas.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v2/es.mp4" %}
+
+**Vídeo:** Tablas de decisión en tarjetas de asignación · 1:49 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v2/es.vtt)
+
 ## Tarjetas y parámetros de ejemplo
 
 Los valores describen parámetros de tarjetas, no un workflow completo importable. Sustituya YOUR_* por selecciones propias de prueba. El diseñador gestiona el ID oculto del llamante. Catálogo: Dev, DocFlow 2.10.38, 21 de octubre de 2026; compruebe versiones y permisos de su organización.

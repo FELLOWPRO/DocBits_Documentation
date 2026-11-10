@@ -56,6 +56,10 @@ Los nodos **When / And / Then** usan exactamente las mismas tarjetas descritas e
 
 ## Conectar nodos
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v2/es.mp4" %}
+
+**Vídeo:** Éxito, condición fallida y error en una ejecución · 1:13 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v2/es.vtt)
+
 Los nodos se conectan mediante **aristas de colores**. Arrastra desde un conector en el lado **derecho** de un nodo hasta el conector de entrada en el lado **izquierdo** de otro nodo para crear una conexión. Cada color indica un resultado de ejecución diferente:
 
 - **Success** (azul) — la ruta predeterminada que se toma cuando un nodo se completa correctamente. Disponible en todos los tipos de nodo.

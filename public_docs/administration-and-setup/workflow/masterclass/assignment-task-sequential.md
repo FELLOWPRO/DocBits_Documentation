@@ -12,6 +12,10 @@ Evite la asignación directa en la misma ejecución si espera al primer destinat
 
 La aceptación requiere A→aprobar→B→aprobar, rechazo por A, destinatario ausente y evento repetido. El rechazo debe impedir la exportación final; un destinatario no resuelto no debe aparecer como aprobación completada. Compruebe responsabilidad documental y tareas por separado. La simulación del diseñador no demuestra un traspaso real entre usuarios.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4" %}
+
+**Vídeo:** Aprobación en dos pasos con tablas de decisión · 2:50 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.vtt)
+
 ## Tarjetas y parámetros de ejemplo
 
 Los valores describen parámetros de tarjetas, no un workflow completo importable. Sustituya YOUR_* por selecciones propias de prueba. El diseñador gestiona el ID oculto del llamante. Catálogo: Dev, DocFlow 2.10.38, 21 de octubre de 2026; compruebe versiones y permisos de su organización.

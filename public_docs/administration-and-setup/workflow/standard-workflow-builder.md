@@ -4,6 +4,10 @@ El constructor **Flujo estándar** es el editor lineal basado en tarjetas para a
 
 ## Crear y probar un Standard Workflow <a id="standard-workflow-tutorial"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/es.mp4" %}
+
+**Vídeo:** Crear un Workflow Estándar · 1:04 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/es.vtt)
+
 Cree un Standard Workflow completo en la interfaz real de DocBits: seleccione la factura, compruebe su número y un importe superior a 1000, asigne un revisor y cambie el estado. Guarde la regla, ejecute tres escenarios de prueba y confirme el resultado real en el documento.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/es.mp4" %}

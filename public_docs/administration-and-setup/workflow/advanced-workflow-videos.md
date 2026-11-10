@@ -227,3 +227,108 @@ Controleer bij Wait ALL elke bron en verbonden uitkomst. Zoek bij ANY of OR een 
 Noteer workflownaam, documentverwijzing, tijdstempel, knooppunt en exacte melding. Corrigeer instellingen of gegevens en test een herhaalbaar scenario. Sla op en controleer activering. Vergelijk een nieuwe uitvoering met de oude; eerdere logboeken beschrijven eerder gedrag.
 
 </details>
+
+## Korte video's
+
+Korte video's over afzonderlijke Workflow-onderwerpen, van Standaard-Workflows tot de Advanced Workflow-designer.
+
+| Video | Duur |
+| --- | --- |
+| 1. Een Standaard-Workflow maken | 1:11 |
+| 2. Zoeken en filteren op het Workflow-dashboard | 0:53 |
+| 3. De Workflowlogboeken lezen | 1:36 |
+| 4. Succes, mislukte conditie en fout in een Workflow-uitvoering | 1:26 |
+| 5. Uitvoeringsvolgorde van Workflows | 1:15 |
+| 6. Advanced Workflow-designer: kaarten en paden | 2:20 |
+| 7. Workflow-beschrijvingen en notities | 1:16 |
+| 8. Een Workflow valideren | 0:52 |
+| 9. Een Workflow testen | 1:45 |
+| 10. Beslissingstabellen in toewijzingskaarten | 2:01 |
+| 11. Goedkeuring in twee stappen met beslissingstabellen | 3:00 |
+| 12. Datumtoleranties en bereikcontroles | 2:11 |
+| 13. Uitvoeringslimieten van Workflows | 0:50 |
+| 14. Een Workflow als JSON downloaden en uploaden | 0:55 |
+
+### Een Standaard-Workflow maken
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/nl.vtt) · 1:11
+
+### Zoeken en filteren op het Workflow-dashboard
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/nl.vtt) · 0:53
+
+### De Workflowlogboeken lezen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.vtt) · 1:36
+
+### Succes, mislukte conditie en fout in een Workflow-uitvoering
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.vtt) · 1:26
+
+### Uitvoeringsvolgorde van Workflows
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/nl.vtt) · 1:15
+
+### Advanced Workflow-designer: kaarten en paden
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.vtt) · 2:20
+
+### Workflow-beschrijvingen en notities
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.vtt) · 1:16
+
+### Een Workflow valideren
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/nl.vtt) · 0:52
+
+### Een Workflow testen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/nl.vtt) · 1:45
+
+### Beslissingstabellen in toewijzingskaarten
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/nl.vtt) · 2:01
+
+### Goedkeuring in twee stappen met beslissingstabellen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.vtt) · 3:00
+
+### Datumtoleranties en bereikcontroles
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.vtt) · 2:11
+
+### Uitvoeringslimieten van Workflows
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/nl.vtt) · 0:50
+
+### Een Workflow als JSON downloaden en uploaden
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/nl.mp4" %}
+
+[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/nl.vtt) · 0:55

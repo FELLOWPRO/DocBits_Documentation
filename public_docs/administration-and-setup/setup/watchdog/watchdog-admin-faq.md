@@ -1,5 +1,21 @@
 # WatchDog Admin FAQ & Troubleshooting
 
+**Method, installation and connection problems**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-troubleshooting-part1/v1/en.mp4" %}
+
+**Configuration and import problems**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-troubleshooting-part2/v1/en.mp4" %}
+
+**Export and update problems, and where to look**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-troubleshooting-part3/v1/en.mp4" %}
+
+**Build-runner cleanup script and recap**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-troubleshooting-part4/v1/en.mp4" %}
+
 <figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-infographic.svg" alt="WatchDog Troubleshooting Quick Reference"><figcaption></figcaption></figure>
 
 This documentation helps administrators understand WatchDog error messages and troubleshoot issues.
@@ -217,6 +233,18 @@ WatchDog sends a heartbeat to DocBits every ~10 seconds with system information:
 ---
 
 ## 9. Command Line Commands
+
+**API endpoints and how WatchDog communicates**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-technical-reference-part1/v1/en.mp4" %}
+
+**Configuration fields and timing values**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-technical-reference-part2/v1/en.mp4" %}
+
+**Versions, history and series wrap-up**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-technical-reference-part3/v1/en.mp4" %}
 
 ```bash
 # Configure API connection

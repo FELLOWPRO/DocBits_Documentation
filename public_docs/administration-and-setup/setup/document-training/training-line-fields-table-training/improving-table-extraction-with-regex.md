@@ -42,7 +42,7 @@ Voici un exemple où la ligne « PRAEF » chevauche **Bezeichnung**, **Menge**, 
     <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-training-mode-fr-20261009.png" alt="Écran d'extraction de tableau avec le mode de formation activé."><figcaption><p>Mode de formation activé.</p></figcaption></figure>
 2.  **Activer le mode d'édition des données de ligne**
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-fr-20261009.png" alt="Écran d'extraction de tableau avec le mode d'édition des données de ligne activé et son infobulle visible."><figcaption><p>Mode d'édition des données de ligne activé.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-fr-20261110.png" alt="Écran d'extraction de tableau avec le mode d'édition des données de ligne activé et son infobulle visible."><figcaption><p>Mode d'édition des données de ligne activé.</p></figcaption></figure>
 3.  **Sélectionner et mapper le texte**\
     Cliquez sur la partie de texte correcte et attribuez-la à un en-tête de colonne **bleu**.
 

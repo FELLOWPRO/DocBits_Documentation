@@ -46,7 +46,7 @@ Hier is een voorbeeld waarbij de regel "PRAEF" overlapt met **Bezeichnung**, **M
 3.  **Selecteer en Koppel Tekst**\
     Klik op het juiste stuk tekst en wijs het toe aan een **blauwe** kolomkop.
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-nl-20261009.png" alt="Geëxtraheerde tabel in de rijgegevensbewerkingsmodus met de blauwe, nog lege kolomkoppen die handmatig kunnen worden toegewezen."><figcaption><p>Blauwe kolomkoppen kunnen handmatig worden ingevuld.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-nl-20261110.png" alt="Geëxtraheerde tabel in de rijgegevensbewerkingsmodus met de blauwe, nog lege kolomkoppen die handmatig kunnen worden toegewezen."><figcaption><p>Blauwe kolomkoppen kunnen handmatig worden ingevuld.</p></figcaption></figure>
 
 > Opmerking: Paarsgekleurde kolommen zijn al systeemtoegewezen en kunnen niet handmatig worden bewerkt.
 

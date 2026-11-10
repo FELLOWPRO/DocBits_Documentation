@@ -1,12 +1,38 @@
 # 获取访问权限并登录
 
-本页介绍如何获取 DocBits 账户，以及忘记密码时如何登录：
+本页介绍如何获取 DocBits 账户，以及如何登录：
 
+* [使用现有账户登录](#sign-in-with-an-existing-account) — 登录屏幕上的字段和区域选择器。
 * [注册](#registration) — 创建自己的 DocBits 账户。
 * [忘记密码](#forgot-password) — 使用重置链接重置密码。
 * [管理员创建账户后的首次密码](#first-password-for-admin-created-accounts) — 为管理员创建的账户设置首次密码。
 
-使用现有账户登录以及双重身份验证，请参阅[双重身份验证 (2FA)](../../security/two-factor-authentication.md)。如果需要使用其他显示语言，请使用这些表单右上角的语言菜单。
+双重身份验证、passkey 和登录的第二步，请参阅[双重身份验证 (2FA)](../../security/two-factor-authentication.md)。如果需要使用其他显示语言，请使用这些表单右上角的语言菜单。
+
+## 使用现有账户登录 <a id="sign-in-with-an-existing-account"></a>
+
+打开组织提供的 DocBits 网址 — 例如 `https://app.docbits.com` — 并在登录屏幕上登录。
+
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/getting-access-login-en-20261107.png" alt="英文 DocBits 登录屏幕，E-Mail 和 Password 字段为空，包含 Remember me、设置为 Europe 的 Auth region 选择器、Log In、Sign in with a passkey、Sign in with Google 和 Sign in with Microsoft"><figcaption><p>登录屏幕：电子邮件和密码、Remember me、Auth region 选择器、Log In、passkey 以及 Google 和 Microsoft 登录按钮。</p></figcaption></figure>
+
+<!-- Shared English screenshot, do not re-shoot: public_docs/.gitbook/assets/getting-access-login-en-20261107.png -->
+
+1. **E-Mail** — 创建 DocBits 账户时使用的地址。
+2. **Password** — 您的 DocBits 密码。字段中的眼睛图标用于显示或隐藏您输入的内容。
+3. **Remember me** — 下次打开登录屏幕时自动填入您的电子邮件地址。
+4. **Auth region** — DocBits 在两个区域运行，即 **Europe** 和 **United States**，每个区域都有自己的登录服务。使用两个区域的部署（production、dev 和 sandbox）会显示此选择器。DocBits 会预选您上次的选择，否则选择与您计算机时区匹配的区域，再否则选择 Europe。如果您的账户是在另一个区域创建的，请在点击 **Log In** 之前在此选择该区域。
+5. 点击 **Log In**。
+
+密码字段下方：
+
+* **Sign in with a passkey** — 当浏览器支持 passkey 时显示。无需密码即可登录。请参阅[无密码登录](../../security/two-factor-authentication.md)。
+* **Sign in with Google** 和 **Sign in with Microsoft** — 适用于使用这些提供商单点登录的组织。身份提供商负责登录，因此 DocBits 密码和 DocBits 的双重验证要求不适用。
+* **Forgot password?** — 请参阅下方的[忘记密码](#forgot-password)。
+* **Register** — 请参阅下方的[注册](#registration)。
+
+{% hint style="info" %}
+在点击 **Log In** 之前，请选择组织使用的 **Auth region**：该选择决定您的凭据会发送到哪个区域的登录服务。如果不确定，请询问管理员。
+{% endhint %}
 
 ## 注册 <a id="registration"></a>
 

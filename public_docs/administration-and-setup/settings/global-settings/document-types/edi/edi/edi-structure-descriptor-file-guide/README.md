@@ -1,63 +1,57 @@
-# Guide du fichier de description de la structure EDI
+# EDI Structure Descriptor File Guide
 
-## **1. Aperçu**
+## 1. Overview
 
-Le **Fichier de Description de la Structure** définit comment les segments EDI répétitifs (par exemple, `N1`–`N4`) sont regroupés en JSON structuré. Il garantit :
+Le **Structure Descriptor File** est un fichier **JSON** qui définit comment les segments EDI répétitifs (par exemple `N1`–`N4`) sont regroupés en une sortie structurée. Il constitue la première étape du traitement EDI :
 
-* **Analyse précise** des éléments liés en tant qu'unités uniques.
-* **Sortie cohérente** pour les systèmes en aval.
+* **Analyse précise** des segments liés en tant qu'unités uniques.
+* **Sortie cohérente** pour la [Transformation](../edi-transformation-file-guide.md) et les systèmes en aval.
 
-_Pour un exemple complet avec des détails de segment, consultez_ [_Exemple de Description de la Structure_](edi-structure-descriptor.md)_._
+_Pour un exemple complet avec le détail des segments, consultez_ [_Structure Descriptor Example_](edi-structure-descriptor.md)_._
 
-## **2. Accès et Édition de Base**
+## 2. Access & Basic Editing
 
-#### **Accéder au Fichier**
+#### **Accéder au fichier**
 
-1.  **Paramètres** → **Type de Document** → \[Votre Document (par exemple, _Bon de Commande_)] → **E-Doc.**
+1. Accédez à **Settings** → **Document Types** et ouvrez **E-Doc** pour le type de document que vous souhaitez configurer (par exemple _Purchase Order_). Vous devez disposer d'un accès administrateur au sein de votre organisation pour modifier ces fichiers.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff6zyL0AvmqSvrogZdnox%252Fimage.png%3Falt%3Dmedia%26token%3D6bc9ab55-6ee9-43d1-b576-4c5833c208cf\&width=768\&dpr=4\&quality=100\&sign=a23de442\&sv=2)
-2. Sous **E-Doc**, sélectionnez votre format (par exemple, _EDI_ ).
-3.  Cliquez sur **Description de la Structure**.
+    <!-- dbdc-139-edi-sd-list-en.png --><figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-139-edi-sd-list-en.png" alt="Page E-Doc de la sandbox en anglais avec le format EDI déplié et la ligne JSON STRUCTURE DESCRIPTOR listée au-dessus de TRANSFORMATION, PREVIEW et EXTRACTION PATHS"><figcaption>Ouvrez E-Doc pour votre type de document ; le format EDI liste ses fichiers de configuration.</figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FOuNVhIuYBPJTu4PdMecy%252Fimage.png%3Falt%3Dmedia%26token%3Dd111b34e-0dd9-4436-9df4-f59490ac0d87\&width=768\&dpr=4\&quality=100\&sign=6e8e9f0e\&sv=2)
+2. Dépliez le format **EDI**. Ses fichiers de configuration sont listés ensemble : **STRUCTURE DESCRIPTOR**, **TRANSFORMATION**, **PREVIEW** et **EXTRACTION PATHS**.
+3. Cliquez sur la ligne **STRUCTURE DESCRIPTOR**, marquée **JSON**, pour l'ouvrir.
 
-#### **Gestion des Brouillons**
+#### **Gestion des brouillons**
 
-* **Créer un Brouillon** : Cliquez sur l'icône ✏️ pour commencer l'édition.
-* **Supprimer les Brouillons** : Utilisez l'icône 🗑️ pour supprimer les brouillons inutilisés.
-* **Activer les Modifications** : Cliquez sur l'icône ✅ pour approuver et publier vos modifications.
-  * **Remarque** : Activer une nouvelle version désactivera **automatiquement** la précédente.
+La colonne de gauche affiche la liste des **Version** du fichier. La version marquée **Active** est celle utilisée par DocBits.
 
-## 3. Fonction d'Aperçu (Aperçu XML analysé)
+* **Créer un brouillon** : cliquez sur l'icône crayon ✏️ à côté de la version active pour commencer la modification. Le fichier actif lui-même ne peut pas être modifié directement.
+* **Supprimer des brouillons** : utilisez l'icône corbeille 🗑️ pour supprimer les brouillons inutilisés.
+* **Activer les modifications** : cliquez sur l'icône de validation ✅ d'un brouillon pour approuver et publier vos modifications.
+  * <mark style="color:red;">**Note**</mark> : l'activation d'une nouvelle version **désactive automatiquement** la précédente.
 
-La **Fonction d'Aperçu** vous permet de tester et de prévisualiser comment un fichier EDI téléchargé est analysé en utilisant le Fichier de Description de la Structure actuel.
+<!-- dbdc-139-edi-sd-detail-en.png --><figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-139-edi-sd-detail-en.png" alt="Éditeur JSON Structure Descriptor de la sandbox en anglais avec la liste des versions à gauche, la version 1 marquée Active et une icône crayon permettant de créer un brouillon"><figcaption>Le fichier Structure Descriptor et sa liste des versions ; le crayon crée un brouillon que vous pouvez modifier.</figcaption></figure>
+
+## 3. Preview Function (Preview Parsed Output)
+
+La **Preview Function** vous permet de tester comment un fichier EDI importé est analysé avec le Structure Descriptor actuellement affiché, avant d'activer une quelconque modification.
 
 #### Utilisation
 
-* Téléchargez un fichier EDI via le flux de téléchargement standard.
-* Copiez l'**ID du Document** du fichier téléchargé.
-* Accédez à l'interface du **Fichier de Description de la Structure**.
-*   Ouvrez la **Fonction d'Aperçu**.\
+* Importez un fichier EDI via le flux d'import standard.
+* Copiez le **Document ID** du fichier importé.
+* Ouvrez le fichier **Structure Descriptor** comme décrit ci-dessus.
+* Cliquez sur **Preview** en haut à droite pour ouvrir le panneau de test.
 
+    <div align="left"><!-- dbdc-139-edi-sd-preview-en.png --><figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-139-edi-sd-preview-en.png" alt="Page Structure Descriptor de la sandbox en anglais avec le panneau de test Preview ouvert, montrant le champ de saisie Document Id et le bouton Test" width="560"><figcaption>Le panneau de test : saisissez un Document ID et cliquez sur Test.</figcaption></figure></div>
 
-    <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=36ce2b93&#x26;sv=2" alt="" width="375"></div>
-* Entrez l'**ID du Document** dans le champ et appuyez sur **Tester**.
-* La **sortie XML structurée résultante** sera affichée.
+* Saisissez le **Document ID** dans le champ et cliquez sur **Test**.
+* La **sortie structurée** obtenue s'affiche à côté de l'éditeur.
 
-Ceci est particulièrement utile pour le débogage des mappages et la validation des regroupements structurels en temps réel.
+Cette fonction est particulièrement utile pour déboguer les mappages et valider les regroupements structurels en temps réel. Un document EDI représentatif de votre propre format est nécessaire ; le résultat affiché dépend du fichier importé.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FBXU6zeFapt7ZIVFl37Iz%252Fimage.png%3Falt%3Dmedia%26token%3D9d51e329-b781-4781-a527-3258f6f933c6\&width=768\&dpr=4\&quality=100\&sign=4ca17281\&sv=2)
+## 4. Video Walkthrough
 
-## 6. Guide Vidéo
+Un guide vidéo pour ce type de fichier est disponible sur la [page Videos.](../edi-videos.md)\
+Utilisez-le pour suivre pas à pas la configuration, la modification et l'usage de Preview.
 
-Un guide vidéo pour ce type de fichier est disponible sur la [page Vidéos.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Utilisez-le pour suivre la configuration, l'édition et la prévisualisation.
-
-
-<figure><img src="../../../../../../../.gitbook/assets/site-all-edi-list-fr.png" alt="Format EDI existant avec ses quatre attributs configurés."><figcaption><p>Format EDI existant avec ses quatre attributs configurés.</p></figcaption></figure>
-
-<figure><img src="../../../../../../../.gitbook/assets/site-all-edi-detail-fr.png" alt="Attribut STRUCTUREDESCRIPTOR actif : descripteur de structure JSON dans l’éditeur en lecture seule."><figcaption><p>Attribut STRUCTUREDESCRIPTOR actif : descripteur de structure JSON dans l’éditeur en lecture seule.</p></figcaption></figure>
-
-
-Les vues montrent une configuration et une version existantes. Les paramètres varient selon le type de document et le format. Validez les modifications dans un brouillon avant leur activation.
-
-Dans la version de l’interface illustrée, certaines mentions, telles que Custom et Default, restent en anglais. Les identifiants techniques des attributs et le code de configuration restent inchangés.
+Les vues présentent une configuration et une version existantes. Les paramètres varient selon le type de document et le format. Validez les modifications dans un brouillon avant l'activation.

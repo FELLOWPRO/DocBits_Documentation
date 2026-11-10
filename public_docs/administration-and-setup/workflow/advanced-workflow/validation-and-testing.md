@@ -41,9 +41,17 @@ Enquanto constrói um Advanced Workflow, dois controlos na barra de ferramentas 
 
 ## Validate
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/pt.mp4" %}
+
+**Vídeo:** Validar um Workflow · 0:48 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/pt.vtt)
+
 Clique no controlo **Validate** (o ícone de círculo de verificação, ou prima <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). A validação verifica o grafo em busca de problemas — nós não ligados, configuração em falta e ligações inválidas — e assinala-os para que os possa corrigir antes de o fluxo de trabalho ser executado em documentos reais.
 
 ## Teste
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/pt.mp4" %}
+
+**Vídeo:** Testar um Workflow · 1:36 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/pt.vtt)
 
 Clique no controlo **Test** (o ícone de reprodução, ou prima <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>) para executar o fluxo atual contra uma amostra e observar o seu comportamento, sem afetar documentos em produção. Esta é a forma mais rápida de verificar uma alteração que acabou de fazer na tela.
 

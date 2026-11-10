@@ -72,6 +72,14 @@ A barra de ferramentas do Advanced Workflow percorre a parte inferior da tela e 
 
 ## Controlos da barra de ferramentas
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4" %}
+
+**Vídeo:** Designer de Advanced Workflow: cartões e caminhos · 2:10 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pt.mp4" %}
+
+**Vídeo:** Descrições e notas do Workflow · 1:05 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pt.vtt)
+
 - **+ Add** — abre o menu de nós para adicionar um nó (consulte [Nós](nodes.md)).
 - **Undo / Redo** — recue ou avance pelas suas alterações.
 - **Zoom in / Zoom out** — altere o nível de zoom da tela.

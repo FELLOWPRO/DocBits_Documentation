@@ -6,6 +6,14 @@ O **Painel de fluxo de trabalho** é a página inicial da área de workflows. El
 
 ## Abas
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pt.mp4" %}
+
+**Vídeo:** Pesquisar e filtrar no painel de Workflows · 0:47 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pt.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pt.mp4" %}
+
+**Vídeo:** Baixar e enviar um Workflow como JSON · 0:50 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pt.vtt)
+
 - **Painel** — métricas de execução e atividade recente (mostrados acima).
 - **Lista de fluxo de trabalho** — todos os workflows com tipo, ordem de execução e gatilho. Crie um novo com **Novo fluxo de trabalho**.
 - **Lista de Gerenciadores de Teste** — cenários de teste que validam seus workflows; execute-os com **Executar todos os testes**.

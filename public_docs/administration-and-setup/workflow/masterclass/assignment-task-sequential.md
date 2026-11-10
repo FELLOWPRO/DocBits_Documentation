@@ -12,6 +12,10 @@ Evite atribuição direta na mesma execução se espera o primeiro destinatário
 
 A aceitação de negócio requer A→aprovar→B→aprovar, rejeição por A, destinatário ausente e evento repetido. A rejeição deve impedir o export final; um destinatário não resolvido não deve parecer aprovação concluída. Verifique responsabilidade documental e tarefas separadamente. A simulação não prova uma passagem real entre utilizadores.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/pt.mp4" %}
+
+**Vídeo:** Aprovação em duas etapas com tabelas de decisão · 2:54 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/pt.vtt)
+
 ## Cartões e parâmetros de exemplo
 
 Os valores descrevem parâmetros de cartões, não um workflow completo importável. Substitua YOUR_* por seleções próprias de teste. O designer gere o ID oculto do chamador. Catálogo: Dev, DocFlow 2.10.38, 21 de outubro de 2026; confirme versões e permissões da organização.

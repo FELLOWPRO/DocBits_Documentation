@@ -14,6 +14,10 @@ Teste uma, nenhuma e várias correspondências, tipo incorreto, utilizador invá
 
 A condição de tabela de decisão chama realmente o serviço para avaliar a tabela. O teste não garante ausência de todos os efeitos; use apenas dados próprios de teste e examine as ações envolvidas.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pt.mp4" %}
+
+**Vídeo:** Tabelas de decisão em cartões de atribuição · 1:51 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pt.vtt)
+
 ## Cartões e parâmetros de exemplo
 
 Os valores descrevem parâmetros de cartões, não um workflow completo importável. Substitua YOUR_* por seleções próprias de teste. O designer gere o ID oculto do chamador. Catálogo: Dev, DocFlow 2.10.38, 21 de outubro de 2026; confirme versões e permissões da organização.

@@ -1,5 +1,21 @@
 # WatchDog Installation
 
+**Before you start: prerequisites and folders**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-installation-setup-part1/v1/en.mp4" %}
+
+**Download, link and install the service**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-installation-setup-part2/v1/en.mp4" %}
+
+**Start, verify, stop and remove**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-installation-setup-part3/v1/en.mp4" %}
+
+**Command line options and authentication**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-installation-setup-part4/v1/en.mp4" %}
+
 <figure><img src="../../../.gitbook/assets/watchdog-installation-infographic.svg" alt="WatchDog Installation Steps"><figcaption></figcaption></figure>
 
 > **Recommended:** Use the modern setup described below. WatchDog configurations are now created directly in the DocBits application — no local config files needed.

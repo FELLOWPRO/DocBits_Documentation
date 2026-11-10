@@ -1,5 +1,17 @@
 # WatchDog
 
+**1. What WatchDog is and where it runs**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-overview-part1/v1/en.mp4" %}
+
+**2. How it works and how it differs from the cloud**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-overview-part2/v1/en.mp4" %}
+
+**3. A document's path through the system**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/watchdog-overview-part3/v1/en.mp4" %}
+
 <figure><img src="../../../.gitbook/assets/watchdog-overview-infographic.svg" alt="WatchDog Overview"><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/watchdog-infographic-en.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>

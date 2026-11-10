@@ -50,7 +50,7 @@ Zeilenverschiebung
 
 3.  **Text auswählen und zuordnen** Klicken Sie auf das richtige Textstück und weisen Sie es einem **blauen** Spaltenkopf zu.
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-de-20261009.png" alt="Extrahierte Tabelle im Bearbeitungsmodus für Zeilendaten mit den blauen, noch nicht gefüllten Spaltenüberschriften, die manuell zugewiesen werden können."><figcaption><p>Blaue Spaltenüberschriften können manuell gefüllt werden.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-de-20261110.png" alt="Extrahierte Tabelle im Bearbeitungsmodus für Zeilendaten mit den blauen, noch nicht gefüllten Spaltenüberschriften, die manuell zugewiesen werden können."><figcaption><p>Blaue Spaltenüberschriften können manuell gefüllt werden.</p></figcaption></figure>
 
 > Hinweis: Violett markierte Spalten sind bereits systemmäßig zugeordnet und können nicht manuell bearbeitet werden.
 

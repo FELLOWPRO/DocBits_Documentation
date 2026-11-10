@@ -212,7 +212,7 @@
         * [Configurações de dados mestre](administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
       * [Treino de modelos](administration-and-setup/settings/global-settings/document-types/model-training/README.md)
         * [Objetivo e Uso: Treinamento do Modelo](administration-and-setup/settings/global-settings/document-types/model-training/purpose-and-use-model-training.md)
-        * [Importar Dados: Treinamento do Modelo](administration-and-setup/settings/global-settings/document-types/model-training/import-data-model-training.md)
+        * [Importar documentos de exemplo para o treinamento do modelo](administration-and-setup/settings/global-settings/document-types/model-training/import-data-model-training.md)
         * [Gerenciar dados de treinamento](administration-and-setup/settings/global-settings/document-types/model-training/manage-training-data.md)
         * [Testando o modelo](administration-and-setup/settings/global-settings/document-types/model-training/testing-the-model.md)
         * [Boas práticas](administration-and-setup/settings/global-settings/document-types/model-training/best-practices.md)

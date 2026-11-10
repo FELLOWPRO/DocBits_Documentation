@@ -8,6 +8,10 @@ De kaarten die deze berekening gebruiken:
 * [Promised delivery date for line items in table with promised delivery date](compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/README.md) – beloofde leverdata van regelitems vergeleken met de huidige datum.
 * [Promised Delivery Date on Purchase Order](compare-with-purchase-order/promised-delivery-date-on-purchase-order.md) – leverdata van regelitems vergeleken met de leverdatum op de inkooporder.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4" %}
+
+**Video:** Datumtoleranties en bereikcontroles · 2:11 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.vtt)
+
 ## Het tolerantievenster
 
 Vanaf de referentiedatum wordt de tolerantie terug en vooruit geteld. Het resultaat is een **tolerantievenster**: van de begindatum tot en met de einddatum, beide inbegrepen.

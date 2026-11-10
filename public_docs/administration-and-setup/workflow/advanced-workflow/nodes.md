@@ -56,6 +56,10 @@ De **When / And / Then** nodes gebruiken precies dezelfde kaarten die worden bes
 
 ## Nodes verbinden
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.mp4" %}
+
+**Video:** Succes, mislukte conditie en fout in een Workflow-uitvoering · 1:26 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.vtt)
+
 Nodes worden verbonden door **gekleurde verbindingen**. Sleep van een handvat aan de **rechterkant** van een node naar het invoerhandvat aan de **linkerkant** van een andere node om een verbinding te maken. Elke kleur duidt op een andere uitvoeringsuitkomst:
 
 - **Success** (blauw) — het standaardpad dat wordt gevolgd wanneer een node succesvol wordt voltooid. Beschikbaar op alle nodetypes.

@@ -12,6 +12,10 @@ Vermijd directe toewijzing in dezelfde uitvoering wanneer u de eerste opeenvolge
 
 Zakelijke acceptatie vereist A→goedkeuren→B→goedkeuren, afwijzing door A, ontbrekende ontvanger en herhaalde activering. Afwijzing moet de afsluitende export verhinderen; een onopgeloste ontvanger mag niet als voltooide goedkeuring verschijnen. Controleer documentverantwoordelijkheid en taken afzonderlijk. De simulatie bewijst geen werkelijke overdracht tussen gebruikers.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4" %}
+
+**Video:** Goedkeuring in twee stappen met beslissingstabellen · 3:00 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.vtt)
+
 ## Kaarten en voorbeeldparameters
 
 Deze waarden beschrijven kaartparameters, geen volledig importeerbare workflow. Vervang YOUR_* door eigen testkeuzes. De ontwerper beheert het verborgen aanroeper-ID. Catalogus: Dev, DocFlow 2.10.38, 21 oktober 2026; controleer versies en rechten van uw organisatie afzonderlijk.

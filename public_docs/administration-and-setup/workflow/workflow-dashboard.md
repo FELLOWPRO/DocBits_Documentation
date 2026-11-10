@@ -6,6 +6,14 @@ Het **Workflow-dashboard** is het startpunt van het workflowgedeelte. Het laat z
 
 ## Tabbladen
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/nl.mp4" %}
+
+**Video:** Zoeken en filteren op het Workflow-dashboard · 0:53 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/nl.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/nl.mp4" %}
+
+**Video:** Een Workflow als JSON downloaden en uploaden · 0:55 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/nl.vtt)
+
 - **Dashboard** — uitvoeringsstatistieken en recente activiteit (hierboven weergegeven).
 - **Workflowlijst** — elke workflow met zijn type, uitvoeringsvolgorde en trigger. Maak een nieuwe aan met **Nieuwe workflow**.
 - **Test Manager-lijst** — testscenario's die uw workflows valideren; voer ze uit met **Alle tests uitvoeren**.

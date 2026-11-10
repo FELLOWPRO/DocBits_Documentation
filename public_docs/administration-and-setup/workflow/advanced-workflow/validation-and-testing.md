@@ -41,9 +41,17 @@ Terwijl u een Advanced Workflow bouwt, kunt u deze met twee knoppen in de werkba
 
 ## Valideren
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/nl.mp4" %}
+
+**Video:** Een Workflow valideren · 0:52 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/nl.vtt)
+
 Klik op de **Validate**-knop (het check-circle-pictogram, of druk op <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). Validatie controleert de graaf op problemen — niet-verbonden nodes, ontbrekende configuratie en ongeldige verbindingen — en wijst ze aan zodat u ze kunt oplossen voordat de workflow op echte documenten wordt uitgevoerd.
 
 ## Test
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/nl.mp4" %}
+
+**Video:** Een Workflow testen · 1:45 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/nl.vtt)
 
 Klik op de **Test**-knop (het play-pictogram, of druk op <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>) om de huidige flow tegen een voorbeeld uit te voeren en te zien hoe deze zich gedraagt, zonder live documenten te beïnvloeden. Dit is de snelste manier om een wijziging die u zojuist op het canvas hebt gemaakt te controleren.
 

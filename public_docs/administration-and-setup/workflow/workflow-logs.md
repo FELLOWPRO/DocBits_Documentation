@@ -83,6 +83,10 @@ De **Workflow Logs** stellen gebruikers in staat om te analyseren welke workflow
 
 ## **Toegang tot Workflow Logs**
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4" %}
+
+**Video:** De Workflowlogboeken lezen · 1:36 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.vtt)
+
 Om toegang te krijgen tot workflowlogs:
 
 1. Navigeer naar het **Dashboard**.

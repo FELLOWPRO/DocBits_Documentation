@@ -8,6 +8,10 @@ Le schede che utilizzano questo calcolo:
 * [Promised delivery date for line items in table with promised delivery date](compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/README.md) – le date di consegna promesse delle righe confrontate con la data corrente.
 * [Promised Delivery Date on Purchase Order](compare-with-purchase-order/promised-delivery-date-on-purchase-order.md) – le date di consegna delle righe confrontate con la data di consegna dell'ordine di acquisto.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.mp4" %}
+
+**Video:** Tolleranze di data e controlli di intervallo · 2:08 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.vtt)
+
 ## La finestra di tolleranza
 
 A partire dalla data di riferimento, la tolleranza viene contata all'indietro e in avanti. Il risultato è una **finestra di tolleranza**: dalla data di inizio alla data di fine, entrambe incluse.

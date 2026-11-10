@@ -31,6 +31,14 @@ Test Manager e la finestra di test Advanced sono superfici di esecuzione diverse
 
 ## Più workflow ed esecuzioni ripetute
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/it.mp4" %}
+
+**Video:** Ordine di esecuzione dei Workflow · 1:19 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/it.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/it.mp4" %}
+
+**Video:** Limiti di esecuzione dei Workflow · 0:51 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/it.vtt)
+
 I valori inferiori dell’**ordine di esecuzione** vengono elaborati prima. Per esempio, il workflow 100 prepara un campo e il 200 lo controlla. Usare valori distinti e confermare i dati effettivamente letti in una nuova esecuzione. La posizione di una scheda Advanced sul canvas non determina l’ordine.
 
 **Change Status to → Trigger Workflows** può avviare un’altra esecuzione. **Run Workflow** richiama un workflow selezionato. Entrambi richiedono condizioni deliberate; nessuno garantisce una sola esecuzione. Limitare attività ed esportazioni mediante lo stato del processo e provare esplicitamente un secondo passaggio. Una semplice marca di completamento non protegge in generale dai duplicati simultanei.

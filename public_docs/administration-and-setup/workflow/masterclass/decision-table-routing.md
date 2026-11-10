@@ -14,6 +14,10 @@ Provare uno, nessuno e più risultati, tipo errato, utente non valido e memorizz
 
 La condizione di tabella decisionale chiama realmente il servizio per valutarla. Il test non garantisce l’assenza di ogni effetto: usare solo dati propri di test e controllare le azioni coinvolte.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/it.mp4" %}
+
+**Video:** Tabelle decisionali nelle schede di assegnazione · 2:01 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/it.vtt)
+
 ## Schede e parametri di esempio
 
 I valori descrivono parametri delle schede, non un workflow completo importabile. Sostituire YOUR_* con selezioni proprie di test. Il designer gestisce l’ID nascosto del chiamante. Catalogo: Dev, DocFlow 2.10.38, 21 ottobre 2026; verificare versioni e abilitazioni della propria organizzazione.

@@ -6,6 +6,14 @@ La **Dashboard del flusso di lavoro** è la home dell'area workflow. Mostra come
 
 ## Schede
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/it.mp4" %}
+
+**Video:** Cercare e filtrare nella dashboard dei Workflow · 0:53 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/it.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/it.mp4" %}
+
+**Video:** Scaricare e caricare un Workflow come JSON · 0:49 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/it.vtt)
+
 - **Cruscotto** — metriche delle esecuzioni e attività recente (mostrate sopra).
 - **Elenco dei flussi di lavoro** — ogni workflow con il suo tipo, l'ordine di esecuzione e il trigger. Creane uno nuovo con **Nuovo flusso di lavoro**.
 - **Elenco degli scenari di test** — scenari di test che validano i tuoi workflow; eseguili con **Esegui tutti i test**.

@@ -72,6 +72,14 @@ La barra degli strumenti dell'Advanced Workflow scorre lungo la parte inferiore 
 
 ## Controlli della barra degli strumenti
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4" %}
+
+**Video:** Designer di Advanced Workflow: schede e percorsi · 2:25 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/it.mp4" %}
+
+**Video:** Descrizioni e note del Workflow · 1:11 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/it.vtt)
+
 - **+ Add** — apre il menu nodi per aggiungere un nodo (vedi [Nodi](nodes.md)).
 - **Undo / Redo** — torna indietro o avanti tra le tue modifiche.
 - **Zoom in / Zoom out** — cambia il livello di zoom del canvas.

@@ -4,6 +4,10 @@ Il builder **Flusso standard** è l'editor lineare basato su schede per automati
 
 ## Creare e testare uno Flusso di lavoro standard <a id="standard-workflow-tutorial"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/it.mp4" %}
+
+**Video:** Creare un Workflow Standard · 1:10 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/it.vtt)
+
 Crea uno Standard Workflow completo nella vera interfaccia DocBits: seleziona la fattura, verifica il numero e un importo superiore a 1000, assegna un revisore e modifica lo stato. Salva la regola, esegui tre scenari di test e verifica il risultato effettivo sul documento.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/it.mp4" %}

@@ -176,12 +176,12 @@
 
 1. **Preview**：你会看到该设置、其范围（**Organization**）以及 **current → proposed** 值。此时尚未保存任何内容。
 2. **你的确认**：你点击 **Confirm**（或 **Yes**）。只有组织管理员可以这样做。
-3. **结果行**：聊天中会显示 **Changed: (setting) → (value)**。
+3. **Result line**：聊天中会显示 **Changed: (setting) → (value)**。
 4. **Undo**：一个带有倒计时（例如“还剩 14 分钟”）的按钮让你可以在 15 分钟内撤销该更改。该更改也会记录在日志中。
 
 **示例（仅供说明）。** 对于助手获准写入的设置，建议卡片会在 **Open setting** 旁边显示一个 **Apply** 按钮。假设该卡片涉及 **Auto export if PO matched 100%**。你点击 **Apply**。对话框 **Apply this change?** 会显示 _Current: Off → Proposed: On_。你点击 **Confirm**。随后出现消息 **Setting updated.**，并带有一个 **Undo** 按钮。如果你在大约 15 分钟内发现错误，点击 **Undo**，原来的值就会恢复。没有 **Apply** 按钮的卡片仅用于导航：使用 **Open setting** 自行更改该值。
 
-如果自你打开对话框以来该值已发生变化，你会看到 _此设置自你打开该对话框以来已更改。请重新预览。_ 并且不会应用任何内容。
+如果自你打开对话框以来该值已发生变化，你会看到 _This setting changed since you opened this dialog. Preview it again._ 并且不会应用任何内容。
 
 ### 助手可以更改什么
 

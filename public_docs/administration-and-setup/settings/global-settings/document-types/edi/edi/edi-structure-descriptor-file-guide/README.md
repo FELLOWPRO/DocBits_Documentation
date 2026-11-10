@@ -52,6 +52,6 @@ Cette fonction est particulièrement utile pour déboguer les mappages et valide
 ## 4. Video Walkthrough
 
 Un guide vidéo pour ce type de fichier est disponible sur la [page Videos.](../edi-videos.md)\
-Utilisez-le pour suivre pas à pas la configuration, la modification et la Preview.
+Utilisez-le pour suivre pas à pas la configuration, la modification et l'usage de Preview.
 
 Les vues présentent une configuration et une version existantes. Les paramètres varient selon le type de document et le format. Validez les modifications dans un brouillon avant l'activation.

@@ -18,7 +18,7 @@ De pagina toont:
 * **Recente voorbeelden** (Recent examples): voorbeelddocumenten, in twee tabbladen: **Aandacht nodig** (Needed attention) en **Werd touchless** (Went touchless).
 * **Leverancier diagnosticeren met AI** (Diagnose supplier with AI): analyseert alle clusters van de leverancier (beheerders).
 
-Een korte opmerking verklaart een lege pagina, bijvoorbeeld: *5 documents from this supplier are still being processed and have no analysis result yet.* (5 documenten van deze leverancier worden nog verwerkt en hebben nog geen analyseresultaat.) of *All 40 completed documents from this supplier ran touchless: there is nothing to diagnose.* (Alle 40 voltooide documenten van deze leverancier liepen touchless door: er valt niets te diagnosticeren.)
+Een korte opmerking verklaart een lege pagina, bijvoorbeeld: *5 documenten van deze leverancier worden nog verwerkt en hebben nog geen analyseresultaat.* of *Alle 40 voltooide documenten van deze leverancier liepen touchless door: er valt niets te diagnosticeren.*
 
 ### Probleemclusters
 

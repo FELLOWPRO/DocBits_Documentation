@@ -1,63 +1,57 @@
-# Przewodnik pliku opisującego strukturę EDI
+# Przewodnik po pliku EDI Structure Descriptor
 
-## **1. Przegląd**
+## 1. Przegląd
 
-Plik **Opisujący Strukturę** definiuje, w jaki sposób powtarzające się segmenty EDI (np. `N1`–`N4`) są grupowane w strukturalny JSON. Zapewnia:
+**Plik Structure Descriptor** to plik **JSON**, który określa, w jaki sposób powtarzające się segmenty EDI (na przykład `N1`–`N4`) są grupowane w ustrukturyzowane dane wyjściowe. To pierwszy etap przetwarzania EDI:
 
-* **Dokładny parsowanie** powiązanych elementów jako jednostek pojedynczych.
-* **Spójne wyniki** dla systemów docelowych.
+* **Dokładne parsowanie** powiązanych segmentów jako pojedynczych jednostek.
+* **Spójne dane wyjściowe** dla [Transformation](../edi-transformation-file-guide.md) i systemów docelowych.
 
-_Dla pełnego przykładu z szczegółami segmentów, zobacz_ [_Przykład opisu struktury_](edi-structure-descriptor.md)_._
+_Pełny przykład ze szczegółami segmentów znajdziesz w_ [_Przykład Structure Descriptor_](edi-structure-descriptor.md)_._
 
-## **2. Dostęp i podstawowa edycja**
+## 2. Dostęp i podstawowa edycja
 
-#### **Dostęp do pliku**
+#### **Otwieranie pliku**
 
-1.  **Ustawienia** → **Typ Dokumentu** → \[Twój Dokument (np. _Zamówienie Zakupu_)] → **E-Dok.**
+1. Przejdź do **Settings** → **Document Types** i otwórz **E-Doc** dla typu dokumentu, który chcesz skonfigurować (na przykład _Purchase Order_). Do edycji tych plików wymagane są uprawnienia administratora w organizacji.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff6zyL0AvmqSvrogZdnox%252Fimage.png%3Falt%3Dmedia%26token%3D6bc9ab55-6ee9-43d1-b576-4c5833c208cf\&width=768\&dpr=4\&quality=100\&sign=a23de442\&sv=2)
-2. W sekcji **E-Dok**, wybierz swój format (np. _EDI_ ).
-3.  Kliknij **Opis Struktury**.
+    <!-- dbdc-139-edi-sd-list-en.png --><figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-139-edi-sd-list-en.png" alt="Angielska strona E-Doc w Sandbox z rozwiniętym formatem EDI i wierszem STRUCTURE DESCRIPTOR (JSON) widocznym nad TRANSFORMATION, PREVIEW i EXTRACTION PATHS"><figcaption>Otwórz E-Doc dla swojego typu dokumentu; format EDI zawiera listę plików konfiguracyjnych.</figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FOuNVhIuYBPJTu4PdMecy%252Fimage.png%3Falt%3Dmedia%26token%3Dd111b34e-0dd9-4436-9df4-f59490ac0d87\&width=768\&dpr=4\&quality=100\&sign=6e8e9f0e\&sv=2)
+2. Rozwiń format **EDI**. Jego pliki konfiguracyjne są wymienione razem: **STRUCTURE DESCRIPTOR**, **TRANSFORMATION**, **PREVIEW** i **EXTRACTION PATHS**.
+3. Kliknij wiersz **STRUCTURE DESCRIPTOR**, oznaczony jako **JSON**, aby go otworzyć.
 
 #### **Zarządzanie wersjami roboczymi**
 
-* **Utwórz wersję roboczą**: Kliknij ikonę ✏️ ołówka, aby rozpocząć edycję.
-* **Usuń wersje robocze**: Użyj ikony 🗑️ kosza, aby usunąć nieużywane wersje robocze.
-* **Aktywuj zmiany**: Kliknij ikonę ✅ znaczka zatwierdzenia, aby zatwierdzić i opublikować zmiany.
-  * **Uwaga**: Aktywowanie nowej wersji **automatycznie dezaktywuje** poprzednią.
+W lewej kolumnie widoczna jest lista **Version** dla pliku. Wersja oznaczona jako **Active** to ta, której używa DocBits.
 
-## 3. Funkcja podglądu (Podgląd sparsowanego XML)
+* **Utworzenie wersji roboczej**: kliknij ikonę ołówka ✏️ obok aktywnej wersji, aby rozpocząć edycję. Samego aktywnego pliku nie można edytować bezpośrednio.
+* **Usuwanie wersji roboczych**: użyj ikony kosza 🗑️, aby usunąć nieużywane wersje robocze.
+* **Aktywowanie zmian**: kliknij ikonę znacznika wyboru ✅ na wersji roboczej, aby zatwierdzić i opublikować zmiany.
+  * <mark style="color:red;">**Uwaga**</mark>: aktywacja nowej wersji **automatycznie dezaktywuje** poprzednią.
 
-Funkcja **Podglądu** pozwala na testowanie i podgląd, jak przesłany plik EDI jest parsowany przy użyciu bieżącego pliku opisującego strukturę.
+<!-- dbdc-139-edi-sd-detail-en.png --><figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-139-edi-sd-detail-en.png" alt="Angielski edytor JSON Structure Descriptor w Sandbox z listą wersji po lewej stronie, wersją 1 oznaczoną jako Active i ikoną ołówka do utworzenia wersji roboczej"><figcaption>Plik Structure Descriptor z listą wersji; ikona ołówka tworzy wersję roboczą, którą można edytować.</figcaption></figure>
 
-#### Użycie
+## 3. Funkcja Preview (podgląd wyników parsowania)
 
-* Prześlij plik EDI za pomocą standardowego przepływu przesyłania.
-* Skopiuj **ID Dokumentu** przesłanego pliku.
-* Przejdź do interfejsu **Pliku Opisującego Strukturę**.
-*   Otwórz **Funkcję Podglądu**.\
+**Funkcja Preview** pozwala sprawdzić, jak przesłany plik EDI jest parsowany przy użyciu aktualnie wyświetlanego pliku Structure Descriptor, przed aktywacją jakichkolwiek zmian.
 
+#### Jak używać
 
-    <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=36ce2b93&#x26;sv=2" alt="" width="375"></div>
-* Wprowadź **ID Dokumentu** do pola i naciśnij **Test**.
-* Wynikowy **sparsowany wynik XML** zostanie wyświetlony.
+* Prześlij plik EDI w standardowym procesie przesyłania.
+* Skopiuj **Document ID** przesłanego pliku.
+* Otwórz plik **Structure Descriptor** w sposób opisany powyżej.
+* Kliknij **Preview** w prawym górnym rogu, aby otworzyć panel testowy.
 
-Jest to szczególnie przydatne do debugowania mapowań i walidacji grup strukturalnych w czasie rzeczywistym.
+    <div align="left"><!-- dbdc-139-edi-sd-preview-en.png --><figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-139-edi-sd-preview-en.png" alt="Angielska strona Structure Descriptor w Sandbox z otwartym panelem testowym Preview, pokazującym pole Document Id i przycisk Test" width="560"><figcaption>Panel testowy: wprowadź Document ID i kliknij Test.</figcaption></figure></div>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FBXU6zeFapt7ZIVFl37Iz%252Fimage.png%3Falt%3Dmedia%26token%3D9d51e329-b781-4781-a527-3258f6f933c6\&width=768\&dpr=4\&quality=100\&sign=4ca17281\&sv=2)
+* Wprowadź **Document ID** w polu formularza i kliknij **Test**.
+* Wynikowe **strukturyzowane dane wyjściowe** są wyświetlane obok edytora.
 
-## 6. Przewodnik wideo
+Jest to szczególnie przydatne do debugowania mapowań i weryfikowania grupowania struktur w czasie rzeczywistym. Wymagany jest reprezentatywny dokument EDI w danym formacie; wyświetlany wynik zależy od przesłanego pliku.
 
-Przewodnik wideo dla tego typu pliku jest dostępny na [stronie z filmami.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Użyj go, aby śledzić konfigurację, edycję i podgląd.
+## 4. Omówienie wideo
 
+Przewodnik wideo dla tego typu pliku jest dostępny na [stronie Wideo.](../edi-videos.md)\
+Skorzystaj z niego, aby prześledzić konfigurację, edycję i podgląd.
 
-<figure><img src="../../../../../../../.gitbook/assets/site-all-edi-list-pl.png" alt="Istniejący format EDI z czterema skonfigurowanymi atrybutami."><figcaption><p>Istniejący format EDI z czterema skonfigurowanymi atrybutami.</p></figcaption></figure>
-
-<figure><img src="../../../../../../../.gitbook/assets/site-all-edi-detail-pl.png" alt="Aktywny atrybut STRUCTUREDESCRIPTOR: deskryptor struktury JSON w edytorze tylko do odczytu."><figcaption><p>Aktywny atrybut STRUCTUREDESCRIPTOR: deskryptor struktury JSON w edytorze tylko do odczytu.</p></figcaption></figure>
-
-
-Widoki przedstawiają istniejącą konfigurację i wersję. Ustawienia różnią się w zależności od typu dokumentu i formatu. Sprawdź zmiany w wersji roboczej przed aktywacją.
-
-Ilustracje przedstawiają polskie karty etapów oraz aktywną wersję konfiguracji w trybie tylko do odczytu. W pokazanej wersji interfejsu przycisk podglądu ma błędny podpis „Zapowiedź”; odpowiada on funkcji podglądu, oznaczonej w karcie jako „Podgląd”. Techniczne nagłówki edytora, identyfikatory atrybutów i kod konfiguracji pozostają w oryginalnej postaci.
+Pokazane widoki przedstawiają istniejącą konfigurację i wersję. Ustawienia różnią się w zależności od typu dokumentu i formatu. Zmiany należy zweryfikować w wersji roboczej przed aktywacją.

@@ -227,3 +227,101 @@ Dla Wait ALL sprawdź każde źródło i połączony wynik. Dla ANY lub OR znajd
 Zapisz nazwę workflow, odwołanie dokumentu, czas, węzeł i dokładny komunikat. Popraw konfigurację lub dane i przetestuj powtarzalny scenariusz. Zapisz i sprawdź aktywację. Porównaj nowe wykonanie ze starym; wcześniejsze dzienniki opisują wcześniejsze zachowanie.
 
 </details>
+
+## Krótkie filmy
+
+Krótkie filmy o poszczególnych tematach Workflow, od Workflow typu Standard po projektanta Advanced Workflow.
+
+| Film | Czas trwania |
+| --- | --- |
+| 1. Tworzenie Workflow typu Standard | 6:34 |
+| 2. Wyszukiwanie i filtrowanie na panelu Workflows | 1:04 |
+| 3. Czytanie dzienników Workflow | 2:03 |
+| 4. Sukces, niespełniony warunek i błąd w działaniu Workflow | 1:58 |
+| 5. Kolejność wykonywania Workflows | 1:53 |
+| 6. Projektant Advanced Workflow: karty i ścieżki | 3:00 |
+| 7. Opisy i notatki Workflow | 1:38 |
+| 8. Walidacja Workflow | 1:08 |
+| 9. Testowanie Workflow | 2:24 |
+| 10. Tabele decyzyjne w kartach przypisania | 2:30 |
+| 11. Tolerancje dat i sprawdzanie zakresów | 2:44 |
+| 12. Limity wykonywania Workflows | 1:05 |
+| 13. Pobieranie i przesyłanie Workflow jako JSON | 1:11 |
+
+### Tworzenie Workflow typu Standard
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pl.vtt) · 6:34
+
+### Wyszukiwanie i filtrowanie na panelu Workflows
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pl.vtt) · 1:04
+
+### Czytanie dzienników Workflow
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.vtt) · 2:03
+
+### Sukces, niespełniony warunek i błąd w działaniu Workflow
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.vtt) · 1:58
+
+### Kolejność wykonywania Workflows
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pl.vtt) · 1:53
+
+### Projektant Advanced Workflow: karty i ścieżki
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.vtt) · 3:00
+
+### Opisy i notatki Workflow
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.vtt) · 1:38
+
+### Walidacja Workflow
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/pl.vtt) · 1:08
+
+### Testowanie Workflow
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/pl.vtt) · 2:24
+
+### Tabele decyzyjne w kartach przypisania
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pl.vtt) · 2:30
+
+### Tolerancje dat i sprawdzanie zakresów
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.vtt) · 2:44
+
+### Limity wykonywania Workflows
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pl.vtt) · 1:05
+
+### Pobieranie i przesyłanie Workflow jako JSON
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pl.mp4" %}
+
+[Otwórz film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pl.mp4) · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pl.vtt) · 1:11

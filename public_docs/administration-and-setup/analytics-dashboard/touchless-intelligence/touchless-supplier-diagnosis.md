@@ -6,7 +6,7 @@
 
 点击队列中的供应商即可打开其诊断页面。
 
-<figure><img src="../../../.gitbook/assets/site-complete-touchless-supplier-completed-zh.png" alt="当前中文供应商诊断的已有结果示例，显示“未知/未识别供应商”分组的处理异常和问题簇。身份数据已隐藏，已有分析文本仍包含英文；这里没有重新运行 AI 分析、应用建议或证明某个具体供应商的修复结果。"><figcaption><p>当前中文供应商诊断的已有结果示例，显示“未知/未识别供应商”分组的处理异常和问题簇。身份数据已隐藏，已有分析文本仍包含英文；这里没有重新运行 AI 分析、应用建议或证明某个具体供应商的修复结果。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-supplier-detail.png" alt="供应商诊断页面，包含结果卡片、趋势和两个问题集群"><figcaption><p>供应商诊断页面：结果卡片、带时间范围选择器的趋势，以及按预期提升幅度排序的两个问题集群。示例组织使用演示数据；供应商名称为虚构。</p></figcaption></figure>
 
 页面显示：
 
@@ -23,7 +23,7 @@
 
  **集群** 会将某个供应商因 **相同的首要原因** 而停止处理的文档归为一组。你看到的是“3 个问题”，而不是 40 个单独的问题。
 
-
+<figure><img src="../../../.gitbook/assets/touchless-issue-cluster.png" alt="已打开的问题集群卡片，显示首个阻碍因素、要更改的内容和变更提案"><figcaption><p>已打开的问题集群卡片：首个阻碍因素、<strong>What to change</strong> 和带有风险、范围及未决问题的 <strong>Change proposal</strong>。此处该集群涉及 58 份文档，价值 +18.7 pp。示例组织使用演示数据；供应商名称为虚构。</p></figcaption></figure>
 
  **集群示例（仅供说明）。**
 

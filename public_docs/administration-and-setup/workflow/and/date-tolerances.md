@@ -8,6 +8,10 @@ Las tarjetas que utilizan este cálculo:
 * [Promised delivery date for line items in table with promised delivery date](compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/README.md): las fechas de entrega prometidas de las líneas de artículo comparadas con la fecha actual.
 * [Promised Delivery Date on Purchase Order](compare-with-purchase-order/promised-delivery-date-on-purchase-order.md): las fechas de entrega de las líneas de artículo comparadas con la fecha de entrega de la orden de compra.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.mp4" %}
+
+**Vídeo:** Tolerancias de fecha y comprobación de rangos · 1:52 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.vtt)
+
 ## La ventana de tolerancia
 
 A partir de la fecha de referencia, la tolerancia se cuenta hacia atrás y hacia delante. El resultado es una **ventana de tolerancia**: desde la fecha de inicio hasta la fecha de fin, ambas incluidas.

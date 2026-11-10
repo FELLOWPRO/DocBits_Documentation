@@ -6,6 +6,14 @@ El **Panel de flujo de trabajo** es la página de inicio del área de flujos de 
 
 ## Pestañas
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/es.mp4" %}
+
+**Vídeo:** Buscar y filtrar en el panel de Workflows · 0:49 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/es.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/es.mp4" %}
+
+**Vídeo:** Descargar y subir un Workflow como JSON · 0:46 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/es.vtt)
+
 - **Panel**: métricas de ejecución y actividad reciente (se muestra arriba).
 - **Lista de flujo de trabajo**: todos los flujos de trabajo con su tipo, orden de ejecución y disparador. Cree uno nuevo con **Nuevo flujo de trabajo**.
 - **Lista de administradores de pruebas**: escenarios de prueba que validan sus flujos de trabajo; ejecútelos con **Ejecutar todas las pruebas**.

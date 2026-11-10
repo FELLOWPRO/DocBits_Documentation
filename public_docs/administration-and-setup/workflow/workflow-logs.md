@@ -83,6 +83,10 @@ Los **Registros del Flujo de Trabajo** permiten a los usuarios analizar qué flu
 
 ## **Acceso a los Registros del Flujo de Trabajo**
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/es.mp4" %}
+
+**Vídeo:** Leer los registros del Workflow · 1:22 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/es.vtt)
+
 Para acceder a los registros del flujo de trabajo:
 
 1. Navega hasta el **Tablero**.

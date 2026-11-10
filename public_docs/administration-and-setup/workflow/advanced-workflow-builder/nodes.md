@@ -56,6 +56,10 @@ Wait ANY 和 OR 在至少一个源节点选中已连接路径时合并分支。O
 
 ## 连接节点
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/zh.mp4" %}
+
+**视频:** Workflow 运行中的成功、条件失败和错误 · 1:14 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/zh.vtt)
+
 节点通过**彩色边**连接。从节点**右侧**的连接手柄拖动到另一个节点**左侧**的输入手柄，即可创建连接。每种颜色表示不同的执行结果：
 
 * **Success**（蓝色）— 节点成功完成时采用的默认路径。所有节点类型均可使用。

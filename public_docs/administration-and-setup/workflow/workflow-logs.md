@@ -83,6 +83,10 @@
 
 ## **访问工作流日志**
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/zh.mp4" %}
+
+**视频:** 阅读 Workflow 日志 · 1:24 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/zh.vtt)
+
 要访问工作流日志：
 
 1. 前往**仪表板**。

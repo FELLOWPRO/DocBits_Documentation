@@ -72,6 +72,14 @@
 
 ## 工具栏控件
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4" %}
+
+**视频:** Advanced Workflow 设计器：卡片和路径 · 2:03 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/zh.mp4" %}
+
+**视频:** Workflow 描述和笔记 · 1:00 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/zh.vtt)
+
 - **+ Add** — 打开节点菜单以添加节点（参见[节点](nodes.md)）。
 - **Undo / Redo** — 向后或向前逐步恢复或重做更改。
 - **Zoom in / Zoom out** — 更改画布缩放级别。

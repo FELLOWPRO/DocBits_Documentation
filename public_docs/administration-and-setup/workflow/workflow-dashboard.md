@@ -6,6 +6,14 @@
 
 ## 选项卡
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/zh.mp4" %}
+
+**视频:** 在 Workflow 仪表板中搜索和筛选 · 0:51 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/zh.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/zh.mp4" %}
+
+**视频:** 以 JSON 格式下载和上传 Workflow · 0:46 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/zh.vtt)
+
 * **仪表板** — 运行指标和近期活动（如上所示）。
 * **工作流列表** — 列出每个工作流及其类型、执行顺序和触发器。使用 **新工作流程** 创建新工作流。
 * **测试管理器列表** — 用于验证工作流的测试场景；使用 **运行所有测试** 运行这些场景。

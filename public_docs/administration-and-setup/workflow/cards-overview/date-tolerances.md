@@ -8,6 +8,10 @@
 * [行项目表中的承诺交货日期](and/compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/README.md) – 将行项目的承诺交货日期与当前日期进行比较。
 * [采购订单上的承诺交货日期](and/compare-with-purchase-order/promised-delivery-date-on-purchase-order.md) – 将行项目的交货日期与采购订单上的交货日期进行比较。
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.mp4" %}
+
+**视频:** 日期容差和范围检查 · 1:57 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.vtt)
+
 ## 容差窗口
 
 容差从参考日期开始，分别往前（过去）和往后（将来）计算。结果是一个 **容差窗口**：从开始日期到结束日期，两端均包含在内。

@@ -31,6 +31,14 @@ Test Manager 与 Advanced 测试对话框是不同的执行入口。仅比较状
 
 ## 多个工作流与重复执行
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/zh.mp4" %}
+
+**视频:** Workflow 的执行顺序 · 1:04 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/zh.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/zh.mp4" %}
+
+**视频:** Workflow 的执行次数限制 · 0:47 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/zh.vtt)
+
 **执行顺序**数值越小，越先运行。例如，工作流 100 准备字段，工作流 200 检查该字段。使用不同数值，并在新一次执行中核实实际读取的数据。Advanced 卡片在画布上的位置不决定执行顺序。
 
 **Change Status to → Trigger Workflows** 可以启动后续执行；**Run Workflow** 调用选定的工作流。两者都需要明确设置条件，均不保证仅执行一次。通过业务处理状态限制任务和导出，并明确测试第二次运行。仅设置完成标记，并不能普遍防止并发重复处理。

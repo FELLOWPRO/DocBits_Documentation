@@ -52,6 +52,6 @@ Esto resulta especialmente útil para depurar los mappings y validar las agrupac
 ## 4. Recorrido en vídeo
 
 En la [página de vídeos](../edi-videos.md) encontrará una guía en vídeo para este tipo de archivo.\
-Úsela para seguir la configuración, la edición y la prueba con Preview.
+Úsela para seguir la configuración, la edición y el uso de Preview.
 
 Las imágenes muestran una configuración y una versión ya existentes. Los ajustes varían según el tipo de documento y el formato. Valide los cambios en un borrador antes de activarlos.

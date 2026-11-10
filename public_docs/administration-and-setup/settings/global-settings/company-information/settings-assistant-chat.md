@@ -2,7 +2,7 @@
 
 ## Visão geral
 
-O chat do **Assistente de Configurações** responde a perguntas sobre as suas configurações, avisa quando uma importação para de funcionar e, com a sua confirmação, altera uma configuração para você. Antes de usá-lo, um administrador precisa [ativar o assistente](settings-assistant.md).
+O chat do **Settings Assistant** responde a perguntas sobre as suas configurações, avisa quando uma importação para de funcionar e, com a sua confirmação, altera uma configuração para você. Antes de usá-lo, um administrador precisa [ativar o assistente](settings-assistant.md).
 
 ### O que ele pode fazer
 
@@ -67,7 +67,7 @@ O assistente lê as configurações da sua organização e informa o que encontr
 
 ### Exemplo 4: PO Matching
 
-Você abre **Configurações → Tipos de documento** e pergunta **"Is PO matching active for invoices?"** (O PO Matching está ativo para faturas?). Esta pergunta também é uma das três sugestões nessa página.
+Você abre **Settings → Document Types** e pergunta **"Is PO matching active for invoices?"** (O PO Matching está ativo para faturas?). Esta pergunta também é uma das três sugestões nessa página.
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-pt.png" alt="A página Tipos de documento em Configurações com o Assistente de Configurações à direita, respondendo que o PO Matching está ativo para faturas e mostrando três configurações relacionadas"><figcaption><p>A página <strong>Document Types</strong> com o assistente à direita. A resposta diz <strong>PO Matching is active for invoices in your organization</strong> e mostra três configurações relacionadas: <strong>PO Matching</strong> (Current: On), as <strong>PO match rules</strong> e <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
 
@@ -78,14 +78,14 @@ O assistente lê a configuração do tipo de documento e acrescenta as configura
 
 ### Exemplo 5: validação de campos (regras de validação personalizadas)
 
-Na página **Configurações → Tipos de documento → Regras de validação personalizadas**, o painel cumprimenta você por essa página e sugere três perguntas.
+Na página **Settings → Document Types → Custom Validation Rules**, o painel cumprimenta você por essa página e sugere três perguntas.
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-pt.png" alt="A página Regras de validação personalizadas em Configurações com a lista de regras no meio e o Assistente de Configurações com três perguntas sugeridas à direita"><figcaption><p>A página <strong>Custom Validation Rules</strong> com o assistente à direita. A lista de regras fica no meio, e as três sugestões do painel são: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> e <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
 
 Use o assistente aqui para **encontrar** a configuração certa e para saber o que uma regra faz. Para **criar ou alterar** uma regra, trabalhe na própria página: veja [Regras de validação personalizadas](../document-types/custom-validation-rules.md) e [Duplicar uma regra de validação personalizada](../document-types/duplicate-a-custom-validation-rule.md). Se o assistente criar uma regra para você, ela sempre é criada **inativa**, e é você quem a ativa.
 
 {% hint style="info" %}
-Não confunda **Regras de validação personalizadas** (regras para os campos de um tipo de documento) com **E-Invoice Validation** (a verificação de arquivos XRechnung, ZUGFeRD e Factur-X). São duas páginas diferentes.
+Não confunda **Custom Validation Rules** (regras para os campos de um tipo de documento) com **E-Invoice Validation** (a verificação de arquivos XRechnung, ZUGFeRD e Factur-X). São duas páginas diferentes.
 {% endhint %}
 
 ### Exemplo 6: mais perguntas para experimentar
@@ -123,7 +123,7 @@ Atualmente há duas verificações:
 Cada cartão tem três botões:
 
 * **Show errors** (Mostrar erros, depois **Hide**): lista as caixas de e-mail ou conexões afetadas, até dez, com o estado (**Switched off** ou **Retrying**), o número de tentativas com falha e o motivo.
-* **Open import settings** (Abrir configurações de importação): abre **Configurações → Importação**.
+* **Open import settings** (Abrir configurações de importação): abre **Settings → Import**.
 * **Help me fix this** (Ajude-me a corrigir): inicia um chat. O assistente pergunta a si mesmo "My email import has stopped working. Can you help me fix it?" e conduz você pelo motivo.
 
 A linha de resumo diz qual é a gravidade:
@@ -162,7 +162,7 @@ Se outra pessoa alterou a caixa de e-mail nesse meio-tempo, você vê *This mail
 
 O assistente nunca altera nada por conta própria. Toda alteração segue os mesmos quatro passos:
 
-1. **Preview** (Pré-visualização): você vê a configuração, o seu escopo (**Organization**) e o valor **atual → proposto**. Nada é salvo ainda.
+1. **Preview** (Pré-visualização): você vê a configuração, o seu escopo (**Organization**) e o valor **current → proposed**. Nada é salvo ainda.
 2. **A sua confirmação**: você clica em **Confirm** (ou **Yes**). Somente um administrador da organização pode fazer isso.
 3. **Linha de resultado**: o chat mostra **Changed: (setting) → (value)**.
 4. **Undo**: um botão com contagem regressiva ("14 min left") permite desfazer a alteração. A alteração também fica registrada no log.
@@ -180,7 +180,7 @@ Se o valor mudou desde que você abriu a caixa de diálogo, você vê *This sett
 | Renomear um grupo de acesso | "Rename the group Buyers to Purchasing" |
 | Modo de busca de um campo de consulta (Auto ou Manual) | "Search suppliers manually instead of automatically" |
 | Excluir um campo | "Delete the field Cost Center" |
-| Criar uma regra de validação inativa a partir de um catálogo | Abra a página **Regras de validação personalizadas** e descreva a verificação |
+| Criar uma regra de validação inativa a partir de um catálogo | Abra a página **Custom Validation Rules** e descreva a verificação |
 | Criar uma regra de transformação inativa | "Create a rule that removes dashes from the supplier VAT number" |
 | Desativar ou excluir uma conexão de importação | Use os botões no cartão de alerta |
 
@@ -196,7 +196,7 @@ Com **Create rule** (Criar regra) você a salva. A regra é criada **inativa**: 
 
 ## Explicações em vídeo
 
-Em páginas selecionadas (atualmente **Layouts**, **Usuários** e **Sub-Organizations**), o assistente oferece **Watch video explanation**. O vídeo é reproduzido no painel, tem legendas e uma transcrição (**Show transcript**), e usa o seu idioma quando existe uma versão.
+Em páginas selecionadas (atualmente **Layouts**, **Users** e **Sub-Organizations**), o assistente oferece **Watch video explanation**. O vídeo é reproduzido no painel, tem legendas e uma transcrição (**Show transcript**), e usa o seu idioma quando existe uma versão.
 
 ## Limites e mensagens
 
@@ -217,7 +217,7 @@ Uma conversa mantém as últimas 50 interações no seu navegador. Uma pergunta 
 * Pergunte **uma coisa de cada vez**. "Where is the email import and is it on?" funciona melhor como duas perguntas.
 * Use a **saudação da página**. As três perguntas foram escritas para a página em que você está e são o começo mais rápido.
 * Diga **o que você quer alcançar**, não o nome de uma configuração. "I want invoices to be exported without anyone looking at them" encontra as configurações certas.
-* Confira a **pré-visualização** antes de confirmar, principalmente os valores **atual → proposto**.
+* Confira a **pré-visualização** antes de confirmar, principalmente os valores **current → proposed**.
 * Não tem certeza? Use **Open setting** e olhe a página. O assistente nunca esconde onde fica uma configuração.
 
 ## Páginas relacionadas

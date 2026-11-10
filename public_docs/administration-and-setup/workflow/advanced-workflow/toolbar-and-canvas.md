@@ -72,6 +72,14 @@ La barre d'outils du Workflow Avancé s'étend en bas du canevas et vous donne t
 
 ## Commandes de la barre d'outils
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/fr.mp4" %}
+
+**Vidéo:** Concepteur d'Advanced Workflow : cartes et chemins · 2:22 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/fr.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/fr.mp4" %}
+
+**Vidéo:** Descriptions et notes de Workflow · 1:10 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/fr.vtt)
+
 - **+ Add** — ouvre le menu de nœud pour ajouter un nœud (voir [Nœuds](nodes.md)).
 - **Undo / Redo** — recule ou avance dans vos modifications.
 - **Zoom in / Zoom out** — modifie le niveau de zoom du canevas.

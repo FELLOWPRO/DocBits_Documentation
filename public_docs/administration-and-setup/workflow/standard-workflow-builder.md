@@ -4,6 +4,10 @@ Le constructeur **Flux standard** utilise des cartes pour automatiser le traitem
 
 ## Créer et tester un Standard Workflow <a id="standard-workflow-tutorial"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/fr.mp4" %}
+
+**Vidéo:** Créer un Workflow Standard · 1:15 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/fr.vtt)
+
 Créez un Standard Workflow complet dans la véritable interface DocBits : sélectionnez la facture, vérifiez son numéro et un montant supérieur à 1000, affectez un vérificateur et modifiez le statut. Enregistrez la règle, exécutez trois scénarios de test et confirmez le résultat réel sur le document.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4" %}

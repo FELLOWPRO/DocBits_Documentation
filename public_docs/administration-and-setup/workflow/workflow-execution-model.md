@@ -31,6 +31,14 @@ Test Manager et le dialogue de test Advanced sont des surfaces d’exécution di
 
 ## Plusieurs workflows et répétitions
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/fr.mp4" %}
+
+**Vidéo:** Ordre d'exécution des Workflows · 1:16 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/fr.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/fr.mp4" %}
+
+**Vidéo:** Limites d'exécution des Workflows · 0:48 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/fr.vtt)
+
 Les plus petites valeurs d’**ordre d’exécution** passent en premier. Par exemple, le workflow 100 prépare un champ et le 200 le contrôle. Utilisez des valeurs distinctes et confirmez les données effectivement lues lors d’une nouvelle exécution. La position d’une carte Advanced sur le canevas ne détermine pas l’ordre.
 
 **Change Status to → Trigger Workflows** peut provoquer une autre exécution. **Run Workflow** appelle un workflow sélectionné. Les deux nécessitent des conditions réfléchies ; aucun ne garantit une exécution unique. Limitez les tâches et exports par l’état métier et testez explicitement un deuxième passage. Un indicateur de fin ne protège pas, à lui seul, contre tous les doublons simultanés.

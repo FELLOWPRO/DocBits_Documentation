@@ -12,6 +12,10 @@ Les cartes séquentielles collectent destinataires et ordre d’approbation. L�
 
 La recette métier nécessite A→approuver→B→approuver, refus de A, destinataire absent et nouveau déclenchement. Le refus doit empêcher l’export final ; un destinataire non résolu ne doit pas apparaître comme une approbation terminée. Vérifiez séparément responsabilité et tâches. La simulation ne prouve pas un transfert réel entre utilisateurs.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.mp4" %}
+
+**Vidéo:** Approbation en deux étapes avec des tables de décision · 3:01 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.vtt)
+
 ## Cartes et paramètres d’exemple
 
 Ces valeurs décrivent des paramètres de cartes, pas un workflow complet importable. Remplacez YOUR_* par vos choix de test. Le concepteur gère l’ID caché de l’appelant. Catalogue : Dev, DocFlow 2.10.38, 21 octobre 2026 ; contrôlez versions et droits de votre organisation.

@@ -23,6 +23,14 @@ Le graphique présente les séries de réussite et d’échec avec les mois affi
 
 ## Onglets
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/fr.mp4" %}
+
+**Vidéo:** Rechercher et filtrer dans le tableau de bord des Workflows · 0:52 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/fr.vtt)
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/fr.mp4" %}
+
+**Vidéo:** Télécharger et importer un Workflow en JSON · 0:56 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/fr.vtt)
+
 - **Tableau de bord** — indicateurs d'exécution et activité récente.
 - **Liste des flux de travail** — chaque workflow avec son type, son ordre d'exécution et son déclencheur. Créez-en un nouveau avec **Nouveau flux de travail**.
 - **Liste des gestionnaires de tests** — scénarios de test qui valident vos workflows ; exécutez-les avec **Exécuter tous les tests**.

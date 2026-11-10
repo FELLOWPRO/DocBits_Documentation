@@ -17,7 +17,7 @@ System dostosowuje Charge Per Unit do zamówienia lub zatwierdzonych poziomów, 
   * Quantity: 800 units
   * Total Charge Amount: $4,800.00
 * **Invoice Received:**
-  * Charge Per Unit: $7.00 (variance 16.67%, outside the ±5% tolerance, rejected)
+  * Charge Per Unit: $7.00 — 16.67% above the PO value, outside the configured ±5% tolerance; rejected.
   * Quantity: 800 units
   * Total Charge Amount: $5,600.00
 * **Tolerance Levels:**

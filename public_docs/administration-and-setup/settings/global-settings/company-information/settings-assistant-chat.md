@@ -1,4 +1,4 @@
-# Instellingenassistent: wat de chat kan doen
+# Settings Assistant: wat de chat kan doen
 
 ## Overzicht
 
@@ -8,12 +8,12 @@ De chat van de **Settings Assistant** beantwoordt vragen over uw instellingen, w
 
 | U wilt… | Voorbeeld | Wat u krijgt |
 | --- | --- | --- |
-| Een instelling vinden | "Waar vind ik de instellingen voor e-mailimport?" (waar vind ik de instellingen voor e-mailimport?) | Het pad (bijvoorbeeld Settings / Import) en een knop **Open setting** (instelling openen) die naar de instelling springt en deze markeert |
-| Een instelling begrijpen | "Hoe schakel ik barcodedetectie in?" (hoe schakel ik barcodedetectie in?) | Een korte uitleg van elke passende instelling: wanneer u haar inschakelt, wanneer u haar uit laat |
-| Uw configuratie controleren | "Waarom is de bestelafstemming niet actief?" (waarom is PO-matching niet actief?) | De huidige waarde van elke gerelateerde instelling in uw organisatie (**Current: On** of **Current: Off**) en welke instelling u blokkeert |
+| Een instelling vinden | "Waar vind ik de instellingen voor e-mailimport?" | Het pad (bijvoorbeeld Settings / Import) en een knop **Open setting** die naar de instelling springt en deze markeert |
+| Een instelling begrijpen | "Hoe schakel ik barcodedetectie in?" | Een korte uitleg van elke passende instelling: wanneer u haar inschakelt, wanneer u haar uit laat |
+| Uw configuratie controleren | "Waarom is de bestelafstemming niet actief?" | De huidige waarde van elke gerelateerde instelling in uw organisatie (**Current: On** of **Current: Off**) en welke instelling u blokkeert |
 | Een kapotte import opmerken | Een rode kaart bovenaan het paneel | Welke mailbox of FTP-verbinding faalt, hoe vaak en een waarschijnlijke reden |
-| Een instelling veilig wijzigen | **Switch off** (uitschakelen) bij een falende mailbox in een bevindingskaart | Een voorbeeld van de wijziging. Er wordt niets opgeslagen voordat u bevestigt. Elke wijziging kan ongedaan worden gemaakt. |
-| Een pagina leren kennen | **Watch video explanation** (uitlegvideo bekijken) | Een korte video voor de pagina waarop u zich bevindt (beschikbaar voor geselecteerde pagina's) |
+| Een instelling veilig wijzigen | **Switch off** bij een falende mailbox in een bevindingskaart | Een voorbeeld van de wijziging. Er wordt niets opgeslagen voordat u bevestigt. Elke wijziging kan ongedaan worden gemaakt. |
+| Een pagina leren kennen | **Watch video explanation** | Een korte video voor de pagina waarop u zich bevindt (beschikbaar voor geselecteerde pagina's) |
 
 {% hint style="info" %}
 De assistent draait op het AI-niveau **Fast**. Er is geen organisatie-instelling om een ander model te kiezen.
@@ -21,7 +21,7 @@ De assistent draait op het AI-niveau **Fast**. Er is geen organisatie-instelling
 
 ## Vragen stellen
 
-Typ een vraag in het veld onderaan ("Ask a question about your settings…", stel een vraag over uw instellingen) en druk op **Enter**. De assistent toont wat hij doet ("Reading configuration…", "Searching documentation…", "Writing answer…") en u kunt hem op elk moment stoppen met **Stop**.
+Typ een vraag in het veld onderaan ("Ask a question about your settings…") en druk op **Enter**. De assistent toont wat hij doet ("Reading configuration…", "Searching documentation…", "Writing answer…") en u kunt hem op elk moment stoppen met **Stop**.
 
 ### Het paneel weet op welke pagina u bent
 
@@ -29,17 +29,17 @@ Wanneer u het paneel op een instellingenpagina opent, begroet het u voor **die p
 
 | Pagina | Voorbeeldvragen |
 | --- | --- |
-| Bedrijfsinformatie | "Hoe wijzig ik ons bedrijfsadres?", "Waar upload ik ons logo?", "Welke domeinen zijn voor onze organisatie geregistreerd?" |
-| Importeren | "Is e-mailimport voor ons actief?", "Naar welk e-mailadres sturen we documenten?", "Hoe stel ik een FTP- of SFTP-import in?" |
-| Classificeren en extraheren | "Welk AI-model wordt voor extractie gebruikt?", "Is het splitsen van documenten op barcodes voor ons actief?", "Kan ik voor een leverancier een ander AI-model gebruiken?" |
-| Gebruikers | "Hoe nodig ik een nieuwe gebruiker uit?", "Hoe maak ik een gebruiker beheerder?", "Hoe deactiveer ik een gebruiker?" |
-| Instellingenoverzicht | "Hoe schakel ik barcodedetectie in?", "Waarom is de bestelafstemming niet actief?", "Waar vind ik de instellingen voor e-mailimport?" |
+| Company Information | "Hoe wijzig ik ons bedrijfsadres?", "Waar upload ik ons logo?", "Welke domeinen zijn voor onze organisatie geregistreerd?" |
+| Import | "Is e-mailimport voor ons actief?", "Naar welk e-mailadres sturen we documenten?", "Hoe stel ik een FTP- of SFTP-import in?" |
+| Classify & Extract | "Welk AI-model wordt voor extractie gebruikt?", "Is het splitsen van documenten op barcodes voor ons actief?", "Kan ik voor een leverancier een ander AI-model gebruiken?" |
+| Users | "Hoe nodig ik een nieuwe gebruiker uit?", "Hoe maak ik een gebruiker beheerder?", "Hoe deactiveer ik een gebruiker?" |
+| Settings overview | "Hoe schakel ik barcodedetectie in?", "Waarom is de bestelafstemming niet actief?", "Waar vind ik de instellingen voor e-mailimport?" |
 
-Klik op een vraag en ze wordt direct verstuurd. Onder de drie vragen zegt het paneel *I can also help with any other setting — just ask.* (ik kan ook helpen met elke andere instelling, vraag maar). Tijdens een gesprek blijft de chip **Help with this page** (hulp bij deze pagina) onderaan staan en vraagt "What can I configure on this page?" (wat kan ik op deze pagina configureren?).
+Klik op een vraag en ze wordt direct verstuurd. Onder de drie vragen zegt het paneel *I can also help with any other setting — just ask.* Tijdens een gesprek blijft de chip **Help with this page** onderaan staan en vraagt "What can I configure on this page?".
 
 ### Voorbeeld 1: Een instelling vinden
 
-U vraagt **"Hoe wijzig ik ons bedrijfsadres?"** (hoe wijzig ik ons bedrijfsadres?)
+U vraagt **"Hoe wijzig ik ons bedrijfsadres?"**
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-nl.png" alt="De assistent antwoordt met het pad naar het bedrijfsadres en een knop Open setting"><figcaption><p>Het antwoord noemt de plek, en de kaart geeft u het exacte pad en een knop <strong>Open setting</strong>.</p></figcaption></figure>
 
@@ -47,11 +47,11 @@ Het antwoord zegt waar het adres staat. De kaart eronder toont het pad (**Settin
 
 ### Voorbeeld 2: Een instelling begrijpen die meerdere namen heeft
 
-U vraagt **"Hoe schakel ik barcodedetectie in?"** (hoe schakel ik barcodedetectie in?)
+U vraagt **"Hoe schakel ik barcodedetectie in?"**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-nl.png" alt="De assistent legt de drie barcode-instellingen uit en wanneer u elk moet inschakelen"><figcaption><p>Wanneer een woord bij meerdere instellingen past, somt de assistent ze allemaal op met <strong>Enable when</strong> (inschakelen wanneer) en <strong>Leave off when</strong> (uit laten wanneer).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-nl.png" alt="De assistent legt de drie barcode-instellingen uit en wanneer u elk moet inschakelen"><figcaption><p>Wanneer een woord bij meerdere instellingen past, somt de assistent ze allemaal op met <strong>Enable when</strong> en <strong>Leave off when</strong>.</p></figcaption></figure>
 
-"Barcodedetectie" kan drie verschillende instellingen betekenen, dus de assistent vraagt *Did you mean: QR Code Extraction, Barcode Assignment, or Split Document on Barcode?* (bedoelde u: QR Code Extraction, Barcode Assignment of Split Document on Barcode?) en legt ze uit:
+"Barcodedetectie" kan drie verschillende instellingen betekenen, dus de assistent vraagt *Did you mean: QR Code Extraction, Barcode Assignment, or Split Document on Barcode?* en legt ze uit:
 
 * **QR Code Extraction**: leest ondersteunde barcodes en QR-codes automatisch tijdens de verwerking. Schakel haar in wanneer uw documenten nuttige codes bevatten.
 * **Barcode Assignment**: laat een beoordelaar tijdens de validatie gedecodeerde barcodewaarden handmatig aan velden toewijzen. Ze heeft extractie nodig om de code eerst te detecteren en maakt de verwerking niet touchless.
@@ -59,15 +59,15 @@ U vraagt **"Hoe schakel ik barcodedetectie in?"** (hoe schakel ik barcodedetecti
 
 ### Voorbeeld 3: Uitzoeken waarom iets niet gebeurt
 
-U vraagt **"Waarom is de bestelafstemming niet actief?"** (waarom is PO-matching niet actief?)
+U vraagt **"Waarom is de bestelafstemming niet actief?"**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-nl.png" alt="De assistent toont de huidige waarde van elke instelling voor PO-matching"><figcaption><p>Bij een "waarom"-vraag leest de assistent uw configuratie en toont elke instelling met haar <strong>Current</strong>-waarde (huidige waarde).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-nl.png" alt="De assistent toont de huidige waarde van elke instelling voor PO-matching"><figcaption><p>Bij een "waarom"-vraag leest de assistent uw configuratie en toont elke instelling met haar <strong>Current</strong>-waarde.</p></figcaption></figure>
 
-De assistent leest de instellingen van uw organisatie en meldt wat hij heeft gevonden. In dit voorbeeld staat PO-matching **On** (aan) voor alle vier de documenttypen, en de instelling **Auto export if PO matched 100%** staat **Off** (uit), dus automatische matching en export draaien niet. Elke kaart toont **Current: On / Off** en een knop **Open setting**, zodat u het meteen kunt oplossen.
+De assistent leest de instellingen van uw organisatie en meldt wat hij heeft gevonden. In dit voorbeeld staat PO-matching **On** voor alle vier de documenttypen, en de instelling **Auto export if PO matched 100%** staat **Off**, dus automatische matching en export draaien niet. Elke kaart toont **Current: On / Off** en een knop **Open setting**, zodat u het meteen kunt oplossen.
 
 ### Voorbeeld 4: PO-matching
 
-U opent **Instellingen → Documenttypen** en vraagt **"Is PO matching active for invoices?"** (is PO-matching actief voor facturen?) (deze vraag is ook een van de drie suggesties op die pagina).
+U opent **Settings → Document Types** en vraagt **"Is PO matching active for invoices?"** (deze vraag is ook een van de drie suggesties op die pagina).
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-nl.png" alt="De pagina Documenttypen in Instellingen met de Settings Assistant rechts, die antwoordt dat PO-matching aan staat voor facturen en drie gerelateerde instellingen toont"><figcaption><p>De pagina <strong>Document Types</strong> met de assistent rechts. Het antwoord zegt <strong>PO Matching is active for invoices in your organisation</strong> en toont drie gerelateerde instellingen: <strong>PO Matching</strong> (Current: On), de <strong>PO match rules</strong> en <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
 
@@ -78,7 +78,7 @@ De assistent leest de instelling voor het documenttype en voegt de instellingen 
 
 ### Voorbeeld 5: Veldvalidatie (aangepaste validatieregels)
 
-Op de pagina **Instellingen → Documenttypen → Custom Validation Rules** begroet het paneel u voor deze pagina en stelt het drie vragen voor.
+Op de pagina **Settings → Document Types → Custom Validation Rules** begroet het paneel u voor deze pagina en stelt het drie vragen voor.
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-nl.png" alt="De pagina Custom Validation Rules in Instellingen met de regellijst in het midden en de Settings Assistant met drie voorgestelde vragen rechts"><figcaption><p>De pagina <strong>Custom Validation Rules</strong> met de assistent rechts. De lijst met regels staat in het midden, de drie suggesties van het paneel zijn: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> en <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
 
@@ -103,9 +103,9 @@ Als een vraag buiten het gebied van de instellingen valt, of de assistent er nie
 
 ### Links en schermafbeeldingen in antwoorden
 
-* Antwoorden kunnen **View documentation**-links (documentatie bekijken) bevatten. Ze verwijzen alleen naar docs.docbits.com en openen in een nieuw tabblad. Documentatielinks verschijnen wanneer de documentatiezoekfunctie beschikbaar is voor uw omgeving.
+* Antwoorden kunnen **View documentation**-links bevatten. Ze verwijzen alleen naar docs.docbits.com en openen in een nieuw tabblad. Documentatielinks verschijnen wanneer de documentatiezoekfunctie beschikbaar is voor uw omgeving.
 * Antwoorden kunnen **schermafbeeldingen** uit de documentatie tonen. Klik op een miniatuur om die te vergroten.
-* **Copy answer** (antwoord kopiëren, het kleine kopieerpictogram naast een antwoord) kopieert de tekst.
+* **Copy answer** (het kleine kopieerpictogram naast een antwoord) kopieert de tekst.
 
 ## Bevindingen: de assistent waarschuwt u
 
@@ -122,17 +122,17 @@ Er zijn momenteel twee controles:
 
 Elke kaart heeft drie knoppen:
 
-* **Show errors** (fouten tonen; daarna **Hide**): toont de getroffen mailboxen of verbindingen, maximaal tien, met de status (**Switched off** of **Retrying**), het aantal mislukte pogingen en de reden.
-* **Open import settings** (importinstellingen openen): opent **Instellingen → Import**.
-* **Help me fix this** (help me dit op te lossen): start een chat. De assistent stelt zichzelf de vraag "My email import has stopped working. Can you help me fix it?" (mijn e-mailimport werkt niet meer, kun je me helpen het op te lossen?) en loopt met u de reden door.
+* **Show errors** (daarna **Hide**): toont de getroffen mailboxen of verbindingen, maximaal tien, met de status (**Switched off** of **Retrying**), het aantal mislukte pogingen en de reden.
+* **Open import settings**: opent **Settings → Import**.
+* **Help me fix this**: start een chat. De assistent stelt zichzelf de vraag "My email import has stopped working. Can you help me fix it?" en loopt met u de reden door.
 
 De samenvattingsregel vertelt u hoe erg het is:
 
 | Samenvattingsregel | Betekenis |
 | --- | --- |
-| *Switched off: nothing is being imported from here.* (uitgeschakeld: hier wordt niets geïmporteerd) | Alle getroffen mailboxen zijn uitgeschakeld. Er komt niets binnen. |
-| *Still being retried, but imports are probably failing.* (wordt nog opnieuw geprobeerd, maar imports mislukken waarschijnlijk) | DocBits blijft proberen, maar de aanmelding werkt niet. |
-| *1 switched off, 2 still being retried.* (1 uitgeschakeld, 2 worden nog opnieuw geprobeerd) | Een mix van beide. |
+| *Switched off: nothing is being imported from here.* | Alle getroffen mailboxen zijn uitgeschakeld. Er komt niets binnen. |
+| *Still being retried, but imports are probably failing.* | DocBits blijft proberen, maar de aanmelding werkt niet. |
+| *1 switched off, 2 still being retried.* | Een mix van beide. |
 
 ### Redenen die u kunt zien
 
@@ -140,36 +140,36 @@ De assistent vertaalt de technische fout naar een van deze redenen:
 
 | Getoonde reden | Wat te doen |
 | --- | --- |
-| Sign-in blocked by policy (aanmelding geblokkeerd door beleid; bijvoorbeeld basisverificatie uitgeschakeld, of een app-wachtwoord/MFA is vereist) | Vraag uw mailbeheerder om een app-wachtwoord of zet de mailbox over op moderne verificatie |
-| Sign-in rejected (aanmelding geweigerd; controleer gebruikersnaam en wachtwoord) | Het wachtwoord is gewijzigd. Voer het nieuwe in bij de importinstellingen |
-| Mailbox or path not found (mailbox of pad niet gevonden) | De mailbox is hernoemd of verwijderd. Controleer het adres of de map |
-| Server not reachable (server niet bereikbaar) | Controleer de servernaam en uw firewall |
-| Timeout while connecting (time-out bij het verbinden) | De server is traag of geblokkeerd. Probeer het later opnieuw |
-| Certificate or TLS connection failed (certificaat of TLS-verbinding mislukt) | Controleer de versleutelingsinstelling en het servercertificaat |
-| Reason could not be determined (reden kon niet worden vastgesteld) | Open de importinstellingen en test de verbinding |
+| Sign-in blocked by policy (bijvoorbeeld basisverificatie uitgeschakeld, of een app-wachtwoord/MFA is vereist) | Vraag uw mailbeheerder om een app-wachtwoord of zet de mailbox over op moderne verificatie |
+| Sign-in rejected (controleer gebruikersnaam en wachtwoord) | Het wachtwoord is gewijzigd. Voer het nieuwe in bij de importinstellingen |
+| Mailbox or path not found | De mailbox is hernoemd of verwijderd. Controleer het adres of de map |
+| Server not reachable | Controleer de servernaam en uw firewall |
+| Timeout while connecting | De server is traag of geblokkeerd. Probeer het later opnieuw |
+| Certificate or TLS connection failed | Controleer de versleutelingsinstelling en het servercertificaat |
+| Reason could not be determined | Open de importinstellingen en test de verbinding |
 
 ### Een falende verbinding uitschakelen of verwijderen
 
-In een uitgeklapte rij kunt u **Switch off** (alleen getoond als de verbinding nog aan staat) of **Delete** (verwijderen) gebruiken. Beide volgen dezelfde veilige stroom:
+In een uitgeklapte rij kunt u **Switch off** (alleen getoond als de verbinding nog aan staat) of **Delete** gebruiken. Beide volgen dezelfde veilige stroom:
 
-1. U klikt op de knop. De assistent vraagt *Switch off (name)? Nothing will be imported from this mailbox until it is switched on again.* (naam uitschakelen? Er wordt niets uit deze mailbox geïmporteerd totdat ze weer is ingeschakeld.) of *Delete (name)? It is removed permanently and cannot be undone.* (naam verwijderen? Ze wordt definitief verwijderd en kan niet ongedaan worden gemaakt.)
-2. U bevestigt met **Yes, switch off** of **Yes, delete**, of u klikt op **Cancel** (annuleren).
-3. De resultaatregel verschijnt: *(name) was switched off.* (naam is uitgeschakeld) met een knop **Undo** (ongedaan maken). Een verwijderde verbinding heeft geen **Undo**, omdat verwijderen definitief is.
+1. U klikt op de knop. De assistent vraagt *Switch off (name)? Nothing will be imported from this mailbox until it is switched on again.* of *Delete (name)? It is removed permanently and cannot be undone.*
+2. U bevestigt met **Yes, switch off** of **Yes, delete**, of u klikt op **Cancel**.
+3. De resultaatregel verschijnt: *(name) was switched off.* met een knop **Undo**. Een verwijderde verbinding heeft geen **Undo**, omdat verwijderen definitief is.
 
-Als iemand anders de mailbox intussen heeft gewijzigd, ziet u *This mailbox was changed in the meantime. Please check it and try again.* (deze mailbox is intussen gewijzigd, controleer haar en probeer het opnieuw). Er wordt niets gewijzigd.
+Als iemand anders de mailbox intussen heeft gewijzigd, ziet u *This mailbox was changed in the meantime. Please check it and try again.* Er wordt niets gewijzigd.
 
 ## Instellingen veilig wijzigen
 
 De assistent wijzigt nooit zelf iets. Elke wijziging volgt dezelfde vier stappen:
 
-1. **Voorbeeld**: u ziet de instelling, haar bereik (**Organization**) en de waarde **huidig → voorgesteld**. Er is nog niets opgeslagen.
+1. **Preview**: u ziet de instelling, haar bereik (**Organization**) en de waarde **current → proposed**. Er is nog niets opgeslagen.
 2. **Uw bevestiging**: u klikt op **Confirm** (of **Yes**). Alleen een organisatiebeheerder kan dit doen.
-3. **Resultaatregel**: de chat toont **Changed: (setting) → (value)** (gewijzigd: instelling → waarde).
-4. **Ongedaan maken**: met een knop met aftelling ("14 min left", nog 14 min) kunt u de wijziging terugdraaien. De wijziging wordt ook in het logboek vastgelegd.
+3. **Resultaatregel**: de chat toont **Changed: (setting) → (value)**.
+4. **Undo**: met een knop met aftelling ("14 min left") kunt u de wijziging terugdraaien. De wijziging wordt ook in het logboek vastgelegd.
 
-**Voorbeeld (illustratief).** Een aanbevelingskaart voor een instelling die de assistent mag schrijven, toont een knop **Apply** (toepassen) naast **Open setting**. Stel dat de kaart over **Auto export if PO matched 100%** gaat. U klikt op **Apply**. Het dialoogvenster **Apply this change?** (deze wijziging toepassen?) toont *Current: Off → Proposed: On*. U klikt op **Confirm**. Er verschijnt een melding **Setting updated.** (instelling bijgewerkt) met een knop **Undo**. Als u binnen ongeveer 15 minuten een fout opmerkt, klikt u op **Undo** en is de oude waarde terug. Kaarten zonder knop **Apply** zijn alleen voor navigatie: gebruik **Open setting** en wijzig de waarde zelf.
+**Voorbeeld (illustratief).** Een aanbevelingskaart voor een instelling die de assistent mag schrijven, toont een knop **Apply** naast **Open setting**. Stel dat de kaart over **Auto export if PO matched 100%** gaat. U klikt op **Apply**. Het dialoogvenster **Apply this change?** toont *Current: Off → Proposed: On*. U klikt op **Confirm**. Er verschijnt een melding **Setting updated.** met een knop **Undo**. Als u binnen ongeveer 15 minuten een fout opmerkt, klikt u op **Undo** en is de oude waarde terug. Kaarten zonder knop **Apply** zijn alleen voor navigatie: gebruik **Open setting** en wijzig de waarde zelf.
 
-Als de waarde is veranderd sinds u het dialoogvenster opende, ziet u *This setting changed since you opened this dialog. Preview it again.* (deze instelling is gewijzigd sinds u dit dialoogvenster opende, bekijk het voorbeeld opnieuw) en wordt er niets toegepast.
+Als de waarde is veranderd sinds u het dialoogvenster opende, ziet u *This setting changed since you opened this dialog. Preview it again.* en wordt er niets toegepast.
 
 ### Wat de assistent kan wijzigen
 
@@ -186,13 +186,13 @@ Als de waarde is veranderd sinds u het dialoogvenster opende, ziet u *This setti
 
 ### Regelconcepten
 
-Als u om een **transformatieregel** vraagt, toont de assistent eerst een **Rule preview** (regelvoorbeeld):
+Als u om een **transformatieregel** vraagt, toont de assistent eerst een **Rule preview**:
 
 * de naam van de regel en een gewone zin ("Remove dashes from the supplier VAT number"),
 * het doel (headerveld, kolom van een tabel, rijen van een tabel, documentattribuut),
-* een test op voorbeelddocumenten: **Applies to 4 of 5 samples** (is van toepassing op 4 van 5 voorbeelden), waarbij elk document is gemarkeerd als **Applies**, **Does not apply** of **Applies, no change**.
+* een test op voorbeelddocumenten: **Applies to 4 of 5 samples**, waarbij elk document is gemarkeerd als **Applies**, **Does not apply** of **Applies, no change**.
 
-Met **Create rule** (regel aanmaken) slaat u haar op. De regel wordt **inactief** aangemaakt: u activeert haar zelf na controle. U kunt het aanmaken **15 minuten** lang ongedaan maken. Daarna verwijdert u de regel in de regellijst. Via de assistent kunnen maximaal **10 regels per uur** worden aangemaakt.
+Met **Create rule** slaat u de regel op. De regel wordt **inactief** aangemaakt: u activeert haar zelf na controle. U kunt het aanmaken **15 minuten** lang ongedaan maken. Daarna verwijdert u de regel in de regellijst. Via de assistent kunnen maximaal **10 regels per uur** worden aangemaakt.
 
 ## Uitlegvideo's
 
@@ -202,13 +202,13 @@ Op geselecteerde pagina's (momenteel **Layouts**, **Users** en **Sub-Organizatio
 
 | Melding | Betekenis |
 | --- | --- |
-| Too many requests. Please wait a moment. (te veel verzoeken, wacht even) | U hebt snel veel vragen gestuurd. **Retry** (opnieuw proberen) wordt actief na een korte wachttijd. |
-| Available to administrators only. (alleen beschikbaar voor beheerders) | Uw account is geen organisatiebeheerder. |
-| The assistant is temporarily unavailable. (de assistent is tijdelijk niet beschikbaar) | Probeer het over een paar minuten opnieuw. |
-| The assistant is taking too long to respond. (de assistent doet er te lang over om te antwoorden) | Het antwoord is niet op tijd begonnen. Klik op **Retry**. |
-| Something went wrong. Please try again. (er is iets misgegaan, probeer het opnieuw) | Een algemene fout. De **Error ID** (fout-ID) kan voor support worden gekopieerd. |
-| The assistant is being set up (de assistent wordt ingesteld) | De functie is nog niet beschikbaar in uw omgeving. |
-| You've switched organizations — this response no longer applies here. (u bent van organisatie gewisseld, dit antwoord geldt hier niet meer) | U hebt van organisatie gewisseld terwijl een antwoord of een wijziging openstond. |
+| Too many requests. Please wait a moment. | U hebt snel veel vragen gestuurd. **Retry** wordt actief na een korte wachttijd. |
+| Available to administrators only. | Uw account is geen organisatiebeheerder. |
+| The assistant is temporarily unavailable. | Probeer het over een paar minuten opnieuw. |
+| The assistant is taking too long to respond. | Het antwoord is niet op tijd begonnen. Klik op **Retry**. |
+| Something went wrong. Please try again. | Een algemene fout. De **Error ID** kan voor support worden gekopieerd. |
+| The assistant is being set up | De functie is nog niet beschikbaar in uw omgeving. |
+| You've switched organizations — this response no longer applies here. | U hebt van organisatie gewisseld terwijl een antwoord of een wijziging openstond. |
 
 Een gesprek bewaart de laatste 50 beurten in uw browser. Een vraag kan maximaal 4000 tekens bevatten.
 
@@ -217,7 +217,7 @@ Een gesprek bewaart de laatste 50 beurten in uw browser. Een vraag kan maximaal 
 * Vraag **één ding tegelijk**. "Where is the email import and is it on?" werkt beter als twee vragen.
 * Gebruik de **paginabegroeting**. De drie vragen zijn geschreven voor de pagina waarop u zich bevindt, en ze zijn de snelste start.
 * Zeg **wat u wilt bereiken**, niet de naam van een instelling. "I want invoices to be exported without anyone looking at them" vindt de juiste instellingen.
-* Controleer het **voorbeeld** voordat u bevestigt, vooral de waarden **huidig → voorgesteld**.
+* Controleer het **voorbeeld** voordat u bevestigt, vooral de waarden **current → proposed**.
 * Weet u het niet zeker? Gebruik **Open setting** en bekijk de pagina. De assistent verbergt nooit waar een instelling staat.
 
 ## Gerelateerde pagina's

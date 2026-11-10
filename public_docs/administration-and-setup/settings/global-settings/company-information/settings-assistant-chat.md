@@ -1,19 +1,19 @@
-# Assistente impostazioni: cosa può fare la chat
+# Settings Assistant: cosa può fare la chat
 
 ## Panoramica
 
-La chat dell'**Assistente impostazioni** risponde a domande sulle tue impostazioni, ti avvisa quando un'importazione smette di funzionare e, con la tua conferma, modifica un'impostazione al posto tuo. Prima di usarla, un amministratore deve [attivare l'assistente](settings-assistant.md).
+La chat del **Settings Assistant** risponde a domande sulle tue impostazioni, ti avvisa quando un'importazione smette di funzionare e, con la tua conferma, modifica un'impostazione al posto tuo. Prima di usarla, un amministratore deve [attivare l'assistente](settings-assistant.md).
 
 ### Cosa può fare
 
 | Vuoi… | Esempio | Cosa ottieni |
 | --- | --- | --- |
-| Trovare un'impostazione | "Dove trovo le impostazioni di importazione e-mail?" | Il percorso (ad esempio Impostazioni / Importazione), un pulsante **Apri impostazione** (Open setting) che salta all'impostazione e la evidenzia |
+| Trovare un'impostazione | "Dove trovo le impostazioni di importazione e-mail?" | Il percorso (ad esempio Settings / Import), un pulsante **Open setting** che salta all'impostazione e la evidenzia |
 | Capire un'impostazione | "Come abilito il rilevamento dei codici a barre?" | Una breve spiegazione di ogni impostazione corrispondente: quando attivarla, quando lasciarla disattivata |
-| Controllare la tua configurazione | "Perché l'abbinamento ordini non è attivo?" | Il valore attuale di ogni impostazione correlata nella tua organizzazione (**Attuale: Attivo** o **Attuale: Disattivo**; in inglese **Current: On** o **Current: Off**) e quale ti blocca |
+| Controllare la tua configurazione | "Perché l'abbinamento ordini non è attivo?" | Il valore attuale di ogni impostazione correlata nella tua organizzazione (**Current: On** o **Current: Off**) e quale ti blocca |
 | Individuare un'importazione guasta | Una scheda rossa in alto nel pannello | Quale casella e-mail o connessione FTP non funziona, quante volte e un probabile motivo |
-| Modificare un'impostazione in sicurezza | **Disattiva** (Switch off) su una casella e-mail guasta in una scheda di segnalazione | Un'anteprima della modifica. Nulla viene salvato finché non confermi. Ogni modifica può essere annullata. |
-| Conoscere una pagina | **Guarda la spiegazione video** (Watch video explanation) | Un breve video per la pagina in cui ti trovi (disponibile per pagine selezionate) |
+| Modificare un'impostazione in sicurezza | **Switch off** su una casella e-mail guasta in una scheda di segnalazione | Un'anteprima della modifica. Nulla viene salvato finché non confermi. Ogni modifica può essere annullata. |
+| Conoscere una pagina | **Watch video explanation** | Un breve video per la pagina in cui ti trovi (disponibile per pagine selezionate) |
 
 {% hint style="info" %}
 L'assistente funziona con il livello IA **Fast**. Non esiste un'impostazione dell'organizzazione per scegliere un modello diverso.
@@ -21,7 +21,7 @@ L'assistente funziona con il livello IA **Fast**. Non esiste un'impostazione del
 
 ## Fare domande
 
-Scrivi una domanda nel campo in basso ("Ask a question about your settings…") e premi **Invio**. L'assistente mostra cosa sta facendo ("Reading configuration…", "Searching documentation…", "Writing answer…") e puoi fermarlo in qualsiasi momento con **Stop**.
+Scrivi una domanda nel campo in basso ("Ask a question about your settings…") e premi **Enter**. L'assistente mostra cosa sta facendo ("Reading configuration…", "Searching documentation…", "Writing answer…") e puoi fermarlo in qualsiasi momento con **Stop**.
 
 ### Il pannello sa in quale pagina ti trovi
 
@@ -29,13 +29,13 @@ Quando apri il pannello in una pagina delle impostazioni, ti saluta per **quella
 
 | Pagina | Domande di esempio |
 | --- | --- |
-| Informazioni sulla società | "Come modifico l’indirizzo della nostra azienda?", "Dove carico il nostro logo?", "Quali domini sono registrati per la nostra organizzazione?" |
-| Importazione | "L’importazione tramite e-mail è attiva per noi?", "A quale indirizzo e-mail inviamo i documenti?", "Come configuro un’importazione FTP o SFTP?" |
-| Classificazione ed estrazione | "Quale modello di IA viene utilizzato per l’estrazione?", "La suddivisione dei documenti tramite codici a barre è attiva per noi?", "Posso utilizzare un altro modello di IA per un fornitore?" |
-| Utenti | "Come invito un nuovo utente?", "Come assegno a un utente il ruolo di amministratore?", "Come disattivo un utente?" |
-| Panoramica delle impostazioni | "Come attivo il rilevamento dei codici a barre?", "Perché l’abbinamento degli ordini non è attivo?", "Dove trovo le impostazioni di importazione tramite e-mail?" |
+| Company Information | "Come modifico l’indirizzo della nostra azienda?", "Dove carico il nostro logo?", "Quali domini sono registrati per la nostra organizzazione?" |
+| Import | "L’importazione tramite e-mail è attiva per noi?", "A quale indirizzo e-mail inviamo i documenti?", "Come configuro un’importazione FTP o SFTP?" |
+| Classify & Extract | "Quale modello di IA viene utilizzato per l’estrazione?", "La suddivisione dei documenti tramite codici a barre è attiva per noi?", "Posso utilizzare un altro modello di IA per un fornitore?" |
+| Users | "Come invito un nuovo utente?", "Come assegno a un utente il ruolo di amministratore?", "Come disattivo un utente?" |
+| Settings overview | "Come attivo il rilevamento dei codici a barre?", "Perché l’abbinamento degli ordini non è attivo?", "Dove trovo le impostazioni di importazione tramite e-mail?" |
 
-Fai clic su una domanda e viene inviata subito. Sotto le tre domande il pannello dice *I can also help with any other setting — just ask.* Durante una conversazione, il chip **Aiuto per questa pagina** (Help with this page) resta in basso e chiede "What can I configure on this page?".
+Fai clic su una domanda e viene inviata subito. Sotto le tre domande il pannello dice *I can also help with any other setting — just ask.* Durante una conversazione, il chip **Help with this page** resta in basso e chiede "What can I configure on this page?".
 
 ### Esempio 1: trovare un'impostazione
 
@@ -67,7 +67,7 @@ L'assistente legge le impostazioni della tua organizzazione e riferisce ciò che
 
 ### Esempio 4: abbinamento ordini
 
-Apri **Impostazioni → Tipi di documento** e chiedi **"Is PO matching active for invoices?"** (questa domanda è anche uno dei tre suggerimenti in quella pagina).
+Apri **Settings → Document Types** e chiedi **"Is PO matching active for invoices?"** (questa domanda è anche uno dei tre suggerimenti in quella pagina).
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-it.png" alt="La pagina Document Types nelle Impostazioni con il Settings Assistant a destra, che risponde che l'abbinamento ordini è attivo per le fatture e mostra tre impostazioni correlate"><figcaption><p>La pagina <strong>Document Types</strong> con l'assistente a destra. La risposta dice <strong>PO Matching is active for invoices in your organisation</strong> e mostra tre impostazioni correlate: <strong>PO Matching</strong> (Current: On), le <strong>PO match rules</strong> e <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
 
@@ -78,14 +78,14 @@ L'assistente legge l'impostazione per il tipo di documento e aggiunge le imposta
 
 ### Esempio 5: convalida dei campi (regole di convalida personalizzate)
 
-Nella pagina **Impostazioni → Tipi di documento → Regole di convalida personalizzate** il pannello ti saluta per questa pagina e suggerisce tre domande.
+Nella pagina **Settings → Document Types → Custom Validation Rules** il pannello ti saluta per questa pagina e suggerisce tre domande.
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-it.png" alt="La pagina Custom Validation Rules nelle Impostazioni con l'elenco delle regole al centro e il Settings Assistant con tre domande suggerite a destra"><figcaption><p>La pagina <strong>Custom Validation Rules</strong> con l'assistente a destra. L'elenco delle regole è al centro, i tre suggerimenti del pannello sono: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> e <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
 
 Usa qui l'assistente per **trovare** l'impostazione giusta e per capire cosa fa una regola. Per **creare o modificare** una regola, lavora nella pagina stessa: vedi [Regole di convalida personalizzate](../document-types/custom-validation-rules.md) e [Duplicare una regola di convalida personalizzata](../document-types/duplicate-a-custom-validation-rule.md). Se l'assistente crea una regola per te, la regola viene sempre creata **inattiva**, e la attivi tu.
 
 {% hint style="info" %}
-Non confondere le **Regole di convalida personalizzate** (regole per i campi di un tipo di documento) con la **Convalida delle fatture elettroniche** (il controllo dei file XRechnung, ZUGFeRD e Factur-X). Sono due pagine diverse.
+Non confondere le **Custom Validation Rules** (regole per i campi di un tipo di documento) con la **E-Invoice Validation** (il controllo dei file XRechnung, ZUGFeRD e Factur-X). Sono due pagine diverse.
 {% endhint %}
 
 ### Esempio 6: altre domande da provare
@@ -123,7 +123,7 @@ Attualmente ci sono due controlli:
 Ogni scheda ha tre pulsanti:
 
 * **Show errors** (poi **Hide**): elenca le caselle o le connessioni interessate, fino a dieci, con lo stato (**Switched off** o **Retrying**), il numero di tentativi falliti e il motivo.
-* **Open import settings**: apre **Impostazioni → Importazione**.
+* **Open import settings**: apre **Settings → Import**.
 * **Help me fix this**: avvia una chat. L'assistente pone a se stesso la domanda "My email import has stopped working. Can you help me fix it?" e ti guida attraverso il motivo.
 
 La riga di riepilogo ti dice quanto è grave:
@@ -162,10 +162,10 @@ Se nel frattempo qualcun altro ha modificato la casella, vedi *This mailbox was 
 
 L'assistente non cambia mai nulla da solo. Ogni modifica segue gli stessi quattro passi:
 
-1. **Anteprima**: vedi l'impostazione, il suo ambito (**Organization**) e il valore **attuale → proposto**. Non è ancora stato salvato nulla.
+1. **Preview**: vedi l'impostazione, il suo ambito (**Organization**) e il valore **current → proposed**. Non è ancora stato salvato nulla.
 2. **La tua conferma**: fai clic su **Confirm** (o **Yes**). Solo un amministratore dell'organizzazione può farlo.
 3. **Riga del risultato**: la chat mostra **Changed: (setting) → (value)**.
-4. **Annulla**: un pulsante con un conto alla rovescia ("14 min left") ti permette di ripristinare la modifica. La modifica viene registrata anche nel log.
+4. **Undo**: un pulsante con un conto alla rovescia ("14 min left") ti permette di ripristinare la modifica. La modifica viene registrata anche nel log.
 
 **Esempio (illustrativo).** Una scheda di raccomandazione per un'impostazione che l'assistente può scrivere mostra un pulsante **Apply** accanto a **Open setting**. Supponi che la scheda riguardi **Auto export if PO matched 100%**. Fai clic su **Apply**. La finestra **Apply this change?** mostra *Current: Off → Proposed: On*. Fai clic su **Confirm**. Compare il messaggio **Setting updated.** con un pulsante **Undo**. Se noti un errore entro circa 15 minuti, fai clic su **Undo** e il vecchio valore torna. Le schede senza pulsante **Apply** servono solo alla navigazione: usa **Open setting** e cambia il valore tu stesso.
 
@@ -180,13 +180,13 @@ Se il valore è cambiato da quando hai aperto la finestra, vedi *This setting ch
 | Rinominare un gruppo di accesso | "Rename the group Buyers to Purchasing" |
 | Modalità di ricerca di un campo di ricerca (Auto o Manual) | "Search suppliers manually instead of automatically" |
 | Eliminare un campo | "Delete the field Cost Center" |
-| Creare da un catalogo una regola di convalida inattiva | Apri la pagina **Regole di convalida personalizzate** e descrivi il controllo |
+| Creare da un catalogo una regola di convalida inattiva | Apri la pagina **Custom Validation Rules** e descrivi il controllo |
 | Creare una regola di trasformazione inattiva | "Create a rule that removes dashes from the supplier VAT number" |
 | Disattivare o eliminare una connessione di importazione | Usa i pulsanti nella scheda di segnalazione |
 
 ### Bozze di regole
 
-Se chiedi una **regola di trasformazione**, l'assistente mostra prima un'**anteprima della regola** (Rule preview):
+Se chiedi una **regola di trasformazione**, l'assistente mostra prima una **Rule preview**:
 
 * il nome della regola e una frase semplice ("Remove dashes from the supplier VAT number"),
 * la destinazione (campo dell'intestazione, colonna di una tabella, righe di una tabella, attributo del documento),
@@ -196,7 +196,7 @@ Con **Create rule** la salvi. La regola viene creata **inattiva**: la attivi tu 
 
 ## Spiegazioni video
 
-In pagine selezionate (attualmente **Layout**, **Utenti** e **Sotto-organizzazioni**) l'assistente offre **Watch video explanation**. Il video viene riprodotto nel pannello, ha sottotitoli e una trascrizione (**Show transcript**) e usa la tua lingua quando esiste una versione.
+In pagine selezionate (attualmente **Layouts**, **Users** e **Sub-Organizations**) l'assistente offre **Watch video explanation**. Il video viene riprodotto nel pannello, ha sottotitoli e una trascrizione (**Show transcript**) e usa la tua lingua quando esiste una versione.
 
 ## Limiti e messaggi
 
@@ -217,7 +217,7 @@ Una conversazione conserva gli ultimi 50 turni nel tuo browser. Una domanda può
 * Chiedi **una cosa alla volta**. "Where is the email import and is it on?" funziona meglio come due domande.
 * Usa il **saluto della pagina**. Le tre domande sono scritte per la pagina in cui ti trovi e sono il modo più rapido per iniziare.
 * Di' **cosa vuoi ottenere**, non il nome di un'impostazione. "I want invoices to be exported without anyone looking at them" trova le impostazioni giuste.
-* Controlla l'**anteprima** prima di confermare, soprattutto i valori **attuale → proposto**.
+* Controlla l'**anteprima** prima di confermare, soprattutto i valori **current → proposed**.
 * Non sei sicuro? Usa **Open setting** e guarda la pagina. L'assistente non nasconde mai dove si trova un'impostazione.
 
 ## Pagine correlate

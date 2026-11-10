@@ -4,11 +4,11 @@ Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon
 
 ## Scenariusz:
 
-Opłata za jednostkę wykracza poza tolerancję i nie została zatwierdzona.
+Charge Per Unit wykracza poza tolerancję i nie został zatwierdzony.
 
 ## Działanie:
 
-System dostosowuje opłatę jednostkową do zamówienia lub zatwierdzonych poziomów, generując wszelkie niezbędne noty debetowe lub kredytowe.
+System dostosowuje Charge Per Unit do zamówienia lub zatwierdzonych poziomów, generując wszelkie niezbędne noty debetowe lub kredytowe.
 
 ## Przykład:
 
@@ -17,23 +17,23 @@ System dostosowuje opłatę jednostkową do zamówienia lub zatwierdzonych pozio
   * Quantity: 800 units
   * Total Charge Amount: $4,800.00
 * **Invoice Received:**
-  * Charge Per Unit: $7.00 (odchylenie 16.67%, poza tolerancją ±5%, odrzucona)
+  * Charge Per Unit: $7.00 — 16.67% above the PO value, outside the configured ±5% tolerance; rejected.
   * Quantity: 800 units
   * Total Charge Amount: $5,600.00
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±5%
 
-Ponieważ opłata jednostkowa ($7.00) przekracza dopuszczalny zakres tolerancji wynoszący 5% i nie została zatwierdzona, system:
+Ponieważ Charge Per Unit ($7.00) przekracza dopuszczalny zakres tolerancji wynoszący 5% i nie został zatwierdzony, system:
 
-1. **Reject the Invoiced Charge Per Unit:** System nie akceptuje zafakturowanej opłaty jednostkowej w wysokości $7.00 ze względu na odchylenie przekraczające limit tolerancji.
-2. **Adjust the Charge Per Unit:** System dostosowuje opłatę jednostkową, aby odpowiadała zamówieniu lub zatwierdzonej opłacie jednostkowej:
-   * Adjusted Charge Per Unit = $6.00 (od PO)
-3. **Recalculate the Total Charge Amount:** System ponownie przeliczy całkowitą kwotę opłaty w oparciu o skorygowaną opłatę jednostkową:
+1. **Reject the Invoiced Charge Per Unit:** System nie akceptuje zafakturowanego Charge Per Unit w wysokości $7.00 ze względu na odchylenie przekraczające limit tolerancji.
+2. **Adjust the Charge Per Unit:** System dostosowuje Charge Per Unit, aby odpowiadał zamówieniu lub zatwierdzonemu Charge Per Unit:
+   * Adjusted Charge Per Unit = $6.00 (from PO)
+3. **Recalculate the Total Charge Amount:** System ponownie przeliczy Total Charge Amount w oparciu o skorygowany Charge Per Unit:
    * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
    * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
-4. **Generate a Debit Note:** Ponieważ pierwotna suma faktury była wyższa niż suma skorygowana, system generuje notę debetową na zawyżoną kwotę:
+4. **Generate a Debit Note:** Ponieważ pierwotna suma faktury była wyższa niż skorygowana Total Charge Amount, system generuje notę debetową na zawyżoną kwotę:
    * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
    * **Debit Note Amount = $5,600.00 - $4,800.00 = $800.00**
-5. **Process the Invoice:** System przetwarza fakturę zawierającą skorygowaną łączną kwotę obciążenia wynoszącą $4,800.00 i wystawia notę debetową na kwotę $800.00 w celu rozliczenia nadmiernej kwoty.
+5. **Process the Invoice:** System przetwarza fakturę ze skorygowaną Total Charge Amount w wysokości $4,800.00 i wystawia notę debetową na kwotę $800.00 w celu rozliczenia nadmiernej kwoty.
 
 Takie podejście zapewnia zgodność transakcji finansowych z warunkami zamówienia zakupu, odrzucając niezatwierdzone rozbieżności i zachowując dokładne praktyki rozliczeniowe.

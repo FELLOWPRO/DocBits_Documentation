@@ -8,6 +8,10 @@ The cards that use this calculation:
 * [Promised delivery date for line items in table with promised delivery date](and/compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/README.md) – promised delivery dates of line items compared with the current date.
 * [Promised Delivery Date on Purchase Order](and/compare-with-purchase-order/promised-delivery-date-on-purchase-order.md) – delivery dates of line items compared with the delivery date on the purchase order.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4" %}
+
+**Video:** Date tolerances and range checks · 2:13 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.vtt)
+
 ## The Tolerance Window
 
 From the reference date, the tolerance is counted backwards and forwards. The result is a **tolerance window**: from the start date to the end date, both included.

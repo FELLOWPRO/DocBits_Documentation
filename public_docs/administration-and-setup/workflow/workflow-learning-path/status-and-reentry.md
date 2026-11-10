@@ -12,6 +12,10 @@ A bounded business process checks the initial status and a processing marker, pe
 
 For acceptance, compare the first and second actual runs: document status, requested follow-up execution and number of tasks or destination records. Do not alternate between two statuses merely to experiment. A status update does not grant an approval whose business condition remains unmet.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/en.mp4" %}
+
+**Video:** Change status card and loop prevention · 0:44 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/en.vtt)
+
 ## Cards and example parameters
 
 These values describe individual card parameters, not an importable complete workflow. Replace YOUR\_\* with your own test selections. The designer manages the hidden caller ID. Catalog: Dev, DocFlow 2.10.38, 21 October 2026; check available versions and entitlements in your own organization.

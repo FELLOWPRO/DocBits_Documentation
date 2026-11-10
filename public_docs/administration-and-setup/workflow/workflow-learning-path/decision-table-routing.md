@@ -14,6 +14,10 @@ Test one match, no match, multiple matches, wrong return type, invalid user ID a
 
 The decision-table condition actually calls the table service to evaluate the table. Test mode is not a blanket guarantee against side effects; use only owned test data and inspect the actions involved.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.mp4" %}
+
+**Video:** Decision tables in assignment cards · 1:59 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.vtt)
+
 ## Cards and example parameters
 
 These values describe individual card parameters, not an importable complete workflow. Replace YOUR\_\* with your own test selections. The designer manages the hidden caller ID. Catalog: Dev, DocFlow 2.10.38, 21 October 2026; check available versions and entitlements in your own organization.

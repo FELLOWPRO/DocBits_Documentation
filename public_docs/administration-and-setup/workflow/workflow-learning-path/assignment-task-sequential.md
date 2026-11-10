@@ -12,6 +12,10 @@ Avoid direct assignment in the same run when expecting the first sequential reci
 
 Business acceptance needs A→approve→B→approve, rejection by A, a missing recipient and a repeated trigger. Rejection must prevent final export; failed recipient resolution must not appear as completed approval. Inspect document responsibility and task inventory separately. Designer simulations do not prove a real user handoff.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4" %}
+
+**Video:** Two-step approval with decision tables · 3:03 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.vtt)
+
 ## Cards and example parameters
 
 These values describe individual card parameters, not an importable complete workflow. Replace YOUR\_\* with your own test selections. The designer manages the hidden caller ID. Catalog: Dev, DocFlow 2.10.38, 21 October 2026; check available versions and entitlements in your own organization.

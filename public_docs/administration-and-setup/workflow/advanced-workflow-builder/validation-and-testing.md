@@ -33,6 +33,10 @@ Auto-save keeps a local browser draft about every thirty seconds after changes. 
 
 ## Validate
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/en.mp4" %}
+
+**Video:** Validate a workflow · 0:50 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/en.vtt)
+
 Use the **check-circle** button or **Cmd/Ctrl + Shift + V**. Errors and warnings appear above the canvas. Click a message with a node reference to focus that node.
 
 | Check | Correction |
@@ -51,6 +55,10 @@ A warning can flag a questionable design, such as several outcome handles from o
 Validation cannot reliably establish that every version-specific card field contains correct runtime data. Configure the visible fields and test realistic input. Runtime tests can reveal missing data that structural checks do not detect.
 
 ## Choose test input
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4" %}
+
+**Video:** Testing a workflow · 1:42 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.vtt)
 
 Use the toolbar **play-circle** or **Cmd/Ctrl + Shift + T** to open **Select Test Document**.
 

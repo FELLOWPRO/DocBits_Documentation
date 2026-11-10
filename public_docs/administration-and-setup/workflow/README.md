@@ -87,6 +87,10 @@ Before building, I confirm the organization, access, required license, document 
 
 ### Introduction
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4" %}
+
+**Video:** Workflow terms: what is what · 1:34 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.vtt)
+
 In the realm of process automation, the DocBits Workflow Engine stands out for its straightforward and intuitive approach. This engine streamlines the creation and management of workflows through a clear and simple rule-based structure. The core principle behind its design is the "Easy When-And-Then" rule, which breaks down the automation process into three fundamental components: Trigger, Condition, and Action. This guide explains how each component functions within the system and how they work together to facilitate seamless automation.
 
 ### The "Easy When-And-Then" Rule Explained

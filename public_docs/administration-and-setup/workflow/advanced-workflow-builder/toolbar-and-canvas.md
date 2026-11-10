@@ -76,6 +76,10 @@ Use the bottom toolbar to configure the workflow and the canvas to arrange nodes
 
 ## Every toolbar control
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/en.mp4" %}
+
+**Video:** Advanced Workflow Designer: cards and paths · 2:19 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/en.vtt)
+
 Controls follow their left-to-right order.
 
 | Control | Purpose and result |
@@ -111,11 +115,19 @@ Connectivity highlighting is different from [execution evidence](../workflow-log
 
 ## Edit nodes and notes
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/en.mp4" %}
+
+**Video:** Workflow descriptions and notes · 0:57 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/en.vtt)
+
 Copy, paste or duplicate a selection to reuse a configured section, then check its fields and connections. Review the selection before deleting: removing a node also removes its connections and can disconnect a downstream path. Undo/redo corrects canvas edits.
 
 Use **Note** to explain a decision, owner or configuration context. Edit its text and use the available color and size controls to keep it readable. Notes are annotations, not execution steps or logs.
 
 ## Keyboard shortcuts
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-shortcuts/v1/en.mp4" %}
+
+**Video:** Keyboard shortcuts in the Advanced Workflow designer · 1:06 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-shortcuts/v1/en.vtt)
 
 Use **Cmd** on macOS and **Ctrl** on Windows/Linux. Finish typing in an input before using canvas-editing shortcuts. **?** opens the application's current reference.
 

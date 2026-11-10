@@ -24,7 +24,7 @@ Das System übernimmt den Charge Per Unit aus der Rechnung und verarbeitet die T
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±3%
 
-Der Charge Per Unit ($5.10) liegt im Vergleich zur Bestellung innerhalb der zulässigen Toleranz von 3%. Das System führt folgende Schritte aus:
+Da der Charge Per Unit ($5.10) im Vergleich zur Bestellung innerhalb der zulässigen Toleranz von 3% liegt, führt das System folgende Schritte aus:
 
 1. **Accept the Charge Per Unit:** Das System akzeptiert den fakturierten Charge Per Unit von $5.10, da er innerhalb der festgelegten Toleranzgrenze liegt.
 2. **Process the Transaction:** Das System verarbeitet die Rechnung mit dem Total Charge Amount, der sich aus Charge Per Unit und Quantity der Rechnung ergibt:

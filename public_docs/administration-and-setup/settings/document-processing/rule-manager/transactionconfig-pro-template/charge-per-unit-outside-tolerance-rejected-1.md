@@ -24,7 +24,7 @@ Das System passt den Charge Per Unit an die Bestellung oder den genehmigten Wert
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±5%
 
-Der Charge Per Unit ($7.00) überschreitet die zulässige Toleranz von 5% und wurde nicht genehmigt. Das System führt folgende Schritte aus:
+Da der Charge Per Unit ($7.00) die zulässige Toleranz von 5% überschreitet und nicht genehmigt wurde, führt das System folgende Schritte aus:
 
 1. **Reject the Invoiced Charge Per Unit:** Das System akzeptiert den fakturierten Charge Per Unit von $7.00 nicht, da die Abweichung die Toleranzgrenze überschreitet.
 2. **Adjust the Charge Per Unit:** Das System setzt den Charge Per Unit auf den Wert aus der Bestellung oder auf den genehmigten Wert:

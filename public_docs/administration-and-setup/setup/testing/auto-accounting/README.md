@@ -12,7 +12,7 @@ Auto Accounting precisa de um módulo ativado, dados mestres contábeis e uma fa
 
 <figure><img src="../../../../.gitbook/assets/testing-auto-accounting-on-pt-20261110.png" alt="Configurações do módulo Ordem e Finanças em português ativadas temporariamente, mostrando os seletores de contas e dimensões"><figcaption><p>Os campos exibidos quando a configuração está ativada. Ela foi desativada novamente após esta captura; nenhuma conta ou dimensão foi configurada.</p></figcaption></figure>
 
-Os outros interruptores e cartões visíveis nestas capturas não pertencem a este fluxo: os interruptores de pedidos de compra estão descritos em [Correspondência de pedidos de compra](../po-matching.md), e a [Verificação de impostos Vertex](../../settings/global-settings/document-types/more-settings/vertex-tax-verification.md) tem a sua própria página.
+Os outros interruptores e cartões visíveis nestas capturas não pertencem a este fluxo: os interruptores de pedidos de compra estão descritos em [Correspondência de pedidos de compra](../po-matching.md), e a [Verificação de impostos Vertex](../../../settings/global-settings/document-types/more-settings/vertex-tax-verification.md) tem a sua própria página.
 
 ## Testar com uma fatura configurada
 
@@ -20,14 +20,14 @@ Use uma fatura cujos itens de linha e dados mestres contábeis estejam disponív
 
 Na tela de contabilidade, verifique o seguinte com seus próprios dados LN ou M3:
 
-1. Execute **Validate Setup** onde disponível e resolva a configuração ausente de contas ou dimensões antes de prosseguir. Um resultado verde descreve apenas as verificações do seu ambiente.
+1. Execute **Validar configuração** onde disponível e resolva a configuração ausente de contas ou dimensões antes de prosseguir. Um resultado verde descreve apenas as verificações do seu ambiente.
 2. Verifique se a fatura deve ser atribuída pelo **total** ou por **itens de linha individuais**. Compare os valores contábeis com a fatura original.
 3. Se você dividir um valor, selecione a conta pretendida para cada linha da divisão. Insira valores ou porcentagens e verifique se os valores alocados somam o valor principal. Adicione ou remova uma linha apenas quando necessário.
-4. Revise qualquer **Unsettled amount** ou aviso de validação e corrija-o antes de salvar ou exportar. Confirme o resultado no sistema conectado separadamente.
+4. Revise qualquer **Valor não liquidado** ou aviso de validação e corrija-o antes de salvar ou exportar. Confirme o resultado no sistema conectado separadamente.
 
 ### Trabalhar com itens de linha
 
-Cada item de linha na tela de contabilidade tem um botão de excluir (ícone de lixeira) na coluna de ações, de modo que também é possível retirar um item de linha principal da contabilização, e não apenas as linhas de divisão abaixo dele. Ao remover uma linha, os totais são recalculados imediatamente — confira em seguida o valor em aberto e garanta que ele continua correspondendo à fatura.
+Cada item de linha na tela de contabilidade tem um botão de excluir (ícone de lixeira) na coluna de ações, de modo que também é possível retirar um item de linha principal da contabilização, e não apenas as linhas de divisão abaixo dele. Ao remover uma linha, os totais são recalculados imediatamente — confira em seguida o **Valor não liquidado** e garanta que ele continua correspondendo à fatura.
 
 As linhas adicionadas recebem um número depois da linha à qual pertencem: uma linha adicionada sob a posição 1 passa a ser **1.1**, a seguinte **1.2**. A numeração mostra de imediato quais linhas de divisão pertencem a qual item de linha quando uma posição é distribuída por várias contas.
 

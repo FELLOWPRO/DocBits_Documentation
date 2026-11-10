@@ -8,12 +8,12 @@ Maak voordat je een regel aanmaakt een e-mailsjabloon voor het documenttype **In
 
 1. Selecteer **+ Nieuw** op de pagina **E-Mailmelding**.
 2. Voer **Docs Demo Invoice Validation** als naam in, selecteer **Invoice** als documenttype en kies het voorbereide sjabloon onder **Selecteer e-mailsjabloon**. Met **Suborganisatie** beperk je de regel tot één suborganisatie; laat het veld leeg om de regel voor de hele organisatie te laten gelden.
-3. Kies **Ready for validation** als status en **Medium** als prioriteit. Zet **Tijdseenheid** op **NOTULEN** en **Vertraging** op **10**; bij minuten moet de vertraging minstens vijf zijn.
+3. Kies **Ready for validation** als status en **Medium** als prioriteit. Zet **Tijdseenheid** op **NOTULEN** (de eenheid minuten van de app) en **Vertraging** op **10**; bij die eenheid moet de vertraging minstens vijf zijn.
 4. Selecteer **E-mail verzenden naar toegewezen gebruiker/groep**. Zet **Niet herhalen** aan als het bericht maar één keer mag worden verzonden, en **Melding opnieuw verzenden bij hertoewijzing** als de ontvanger na een hertoewijzing opnieuw bericht moet krijgen. Controleer ontvanger en timing en selecteer **Opslaan**.
 
 <figure><img src="../../../../.gitbook/assets/dbdc-643-example-form-nl-20261110.png" alt="Ingevulde meldingsregel voor Invoice met status Ready for validation, prioriteit Medium, tijdseenheid NOTULEN, vertraging 10 en de toegewezen gebruiker of groep"><figcaption><p>De opgeslagen voorbeeldregel, geopend om te bewerken. De waarden tonen wanneer en naar wie de melding zou worden verzonden.</p></figcaption></figure>
 
-De regel verschijnt nu in de lijst met de kolommen **Naam**, **Documenttype**, **Suborganisatie**, **Status**, **Prioriteit**, **Vertraging**, **E-Mail Naar**, **Laatst Gewijzigd Door**, **Laatst Gewijzigd Op** en **Acties**. Het documentatievoorbeeld is daarna gedeactiveerd: het rode punt bij de status en het menu **Acties** met **Activeren** tonen dat. Controleer naam, documenttype, status, vertraging en ontvanger in je eigen lijst voordat je een regel activeert.
+De regel verschijnt nu in de lijst met de kolommen **Naam**, **Documenttype**, **Suborganisatie**, **Status**, **Prioriteit**, **Vertraging**, **E-Mail Naar**, **Laatst Gewijzigd Door**, **Laatst Gewijzigd Op** en **Acties**. Het documentatievoorbeeld is daarna gedeactiveerd: het rode punt bij de status en het menu **Acties** met **Activeren** tonen dat. Met het zoekveld boven de lijst en de pictogrammen in de kolomkoppen sorteer en filter je de regels. Controleer naam, documenttype, status, vertraging en ontvanger in je eigen lijst voordat je een regel activeert.
 
 <figure><img src="../../../../.gitbook/assets/dbdc-643-example-list-nl-20261110.png" alt="Lijst E-Mailmelding met vier voorbeeldregels in plaats van een lege tabel, waaronder de regel Docs Demo Invoice Validation"><figcaption><p>De lijst toont de opgeslagen regels die je kunt vinden en beheren.</p></figcaption></figure>
 

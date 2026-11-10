@@ -18,7 +18,7 @@ Das System übernimmt den Charge Per Unit aus der Rechnung und verarbeitet die T
   * Quantity: 500 units
   * Total Charge Amount: $2,500.00
 * **Invoice Received:**
-  * Charge Per Unit: $5.10 (variance 2%, within the ±3% tolerance)
+  * Charge Per Unit: $5.10 — 2% above the PO value, within the configured ±3% tolerance.
   * Quantity: 500 units
   * Total Charge Amount: $2,550.00
 * **Tolerance Levels:**

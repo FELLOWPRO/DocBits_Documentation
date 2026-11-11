@@ -8,7 +8,7 @@ Sekcja **Więcej ustawień** zawiera opcje, które należą do jednego typu doku
 
 ## Jak uzyskać dostęp
 
-1. Przejdź do **Ustawienia** → **Ustawienia globalne** → **Typy dokumentów**.
+1. Przejdź do **Ustawienia** → **Typy dokumentów**.
 2. Wybierz typ dokumentu i kliknij **Więcej ustawień**.
 
 Ścieżka nawigacji u góry strony pokazuje **Ustawienia / Typy dokumentów / Więcej ustawień**. Asystent ustawień po prawej stronie strony wyjaśnia ustawienia otwartej karty.
@@ -110,11 +110,15 @@ Informacje o **Kreatorze układów** znajdziesz w [Layout Manager](../layout-man
 
 ## Weryfikacja podatkowa Vertex
 
-Karta **Weryfikacja podatkowa Vertex** zawiera przycisk **Weryfikacja podatkowa Design Vertex**. Otwiera on Kreator układów dla formularza, który użytkownicy widzą, gdy DocBits porównuje podatek dostawcy z podatkiem obliczonym przez Vertex. Integrację, tolerancję i wynik opisuje strona [Weryfikacja podatkowa Vertex](vertex-tax-verification.md).
+Dla typu dokumentu Faktura rozwiń kartę **Weryfikacja podatkowa Vertex** i kliknij **Weryfikacja podatkowa Design Vertex**, aby otworzyć Kreator układów dla formularza weryfikacji. Formularz określa pola pokazywane obok porównania podatku dostawcy z podatkiem obliczonym przez Vertex.
+
+<figure><img src="../../../../../.gitbook/assets/dbdc-1029-vertex-tax-verification-pl-20261111.png" alt="Karta Weryfikacja podatkowa Vertex dla typu dokumentu Faktura z odnośnikiem do projektowania formularza"><figcaption><p>Karta Weryfikacja podatkowa Vertex na stronie Więcej ustawień typu dokumentu Faktura.</p></figcaption></figure>
+
+Przełącznik **Integracja podatkowa Vertex** znajduje się w **Ustawienia** → **Moduł** → **Zamówienia i finanse**. Konfigurację integracji, wyzwalacz **Przed eksportem** lub **Przed zatwierdzeniem**, ustawienia tolerancji i ekran wyniku opisuje strona [Weryfikacja podatkowa Vertex](vertex-tax-verification.md).
 
 ## Walidacja e-faktury
 
-Karta **Walidacja e-faktury** włącza walidację przychodzących e-faktur i pozwala zdecydować, czy dostawca jest powiadamiany o odrzuceniu faktury. Zobacz [Walidacja e-faktury](../../../document-processing/e-documents/validation-rules.md).
+Karta **Walidacja e-faktury** włącza walidację przychodzących e-faktur i pozwala zdecydować, czy dostawca jest powiadamiany o odrzuceniu faktury. Zobacz [Walidacja e-faktury](../../../document-processing/e-documents/validation-rules/).
 
 ## Ekstrakcja tabeli
 

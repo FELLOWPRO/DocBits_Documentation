@@ -40,7 +40,7 @@ Use la acción **Toggle all** al principio de la lista para aplicar el mismo est
 
 ### Pestaña Templates
 
-La pestaña Templates enumera las versiones de plantilla conocidas por el índice de Texto Completo. Use esta vista para confirmar que las versiones de plantilla de las que depende están presentes en el índice tras un nuevo despliegue.
+La pestaña Templates enumera las versiones de plantilla conocidas por el índice Fulltext. Use esta vista para confirmar que las versiones de plantilla de las que depende están presentes en el índice tras un nuevo despliegue.
 
 ## Qué se indexa
 

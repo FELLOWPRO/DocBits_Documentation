@@ -54,7 +54,7 @@ Setzen Sie **Zusätzliche Zeilen verschieben nach** auf **Papierkorb**, um den �
 
 **Ergebnis nach der Zuordnung:**
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-trash-result-de-20261111.png" alt="Ausgewertete Tabelle, in der pro Artikel nur noch eine Zeile steht; die Überlaufzeilen sind entfernt."><figcaption><p>Ergebnis: Die Überlaufzeilen sind entfernt, nur die relevanten Zeilen bleiben.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-trash-result-de-20261111.png" alt="Links das Quelldokument, in dem die Beschreibung jedes Artikels auf zusätzlichen Textzeilen weiterläuft, rechts die ausgewertete Tabelle mit genau einer Zeile pro Artikel."><figcaption><p>Ergebnis: Die Überlaufzeilen sind entfernt, nur die relevanten Zeilen bleiben.</p></figcaption></figure>
 
 ## Minimum gruppierter Zeilen
 
@@ -80,7 +80,7 @@ Die Gruppierung selbst und die weiteren Spaltenwerkzeuge, die damit zusammenspie
 
 **Ergebnis:**
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-grouped-result-de-20261111.png" alt="Ausgewertete Tabelle mit drei gruppierten Positionen, eine Zeile pro Artikel."><figcaption><p>Ergebnis: Die physischen Zeilen sind zu drei Positionen gruppiert.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-grouped-result-de-20261111.png" alt="Links das Quelldokument mit sechs physischen Zeilen, rechts die ausgewertete Tabelle mit drei gruppierten Positionen, eine Zeile pro Artikel."><figcaption><p>Ergebnis: Die physischen Zeilen sind zu drei Positionen gruppiert.</p></figcaption></figure>
 
 ### Maximal gruppierte Zeilen
 

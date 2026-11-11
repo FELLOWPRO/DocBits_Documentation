@@ -37,7 +37,7 @@ If there is no label for a user's language, DocBits displays the underlying valu
 
 ## Edit, duplicate or delete a value
 
-Select an entry in the table to open its edit form below. Change the available fields and select **Save Changes**. You can also use the three-dot menu in its **Actions** column for **Edit** or **Duplicate**. The **Delete** action appears only for entries created by your organization; system entries cannot be deleted. To duplicate several entries, select their checkboxes and use the duplicate control above the table.
+Select an entry in the table to open its edit form below. Change the available fields and select **Save Changes**. You can also use the three-dot menu in its **Actions** column for **Edit** or **Duplicate**. The **Delete** action appears only for entries created by your organization; system entries cannot be deleted. To duplicate several entries, select their checkboxes and use the duplicate control above the table. Duplicating an entry creates a copy with a new value: if the value is already used in the same list, DocBits appends -copy (then -copy-2, and so on), so the copy and the original can both be edited and saved. If a list already contains two entries with the same value and sub-organization, the edit form shows a message on the Sub-Organization field and asks you to choose a different sub-organization.
 
 System entries can have restricted fields. The form indicates which fields are read-only.
 

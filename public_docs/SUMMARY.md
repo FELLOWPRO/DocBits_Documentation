@@ -523,7 +523,7 @@
         * [Próximo passo e rejeitar um documento](administration-and-setup/settings/document-processing/e-documents/validation-rules/validation-next-step-and-reject.md)
       * [Encaminhamento de notificações](administration-and-setup/settings/document-processing/e-documents/notification-routing.md)
       * [Associar categorias de IVA de faturas eletrónicas a códigos ERP](administration-and-setup/settings/document-processing/e-documents/tax-code-mapping.md)
-    * [Import](administration-and-setup/settings/document-processing/import/README.md)
+    * [Importar](administration-and-setup/settings/document-processing/import/README.md)
       * [Tenant do Office 365](administration-and-setup/settings/document-processing/import/o365-tenant.md)
       * [Testes de importação e tratamento de e-mails](administration-and-setup/settings/document-processing/import/test-multi-email-import-and-handling-tests.md)
       * [Testes de importação e tratamento de e-mails](administration-and-setup/settings/document-processing/import/test-email-import-and-handling-tests.md)

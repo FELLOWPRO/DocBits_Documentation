@@ -18,7 +18,7 @@ Zrzut wskazuje kompilacje objęte niniejszymi notatkami. Informacje dotyczące d
 
 **Wszystkie funkcje dostępne wcześniej w wersji beta VESTA są zawarte jako funkcje standardowe w środowisku testowym NOVA.** Dla klientów, którzy nie korzystali z bety VESTA, oznacza to poszerzenie funkcjonalności dostępnych dla ich zespołu, w tym **Zarządzanie układami**, [**Niestandardowe reguły walidacji**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) oraz [**Zasady transformacji**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Ustawienia organizacji, przełączniki typów dokumentów oraz uprawnienia dostępu pozostają bez zmian.
 
-Te same wcześniejsze funkcje beta staną się standardowymi funkcjami VESTA wraz z **następnym hotfixem VESTA, planowanym na [11 listopada 2026 r.](vesta-hotfix-11-november-2026.md)**. Niniejsze ogłoszenie dotyczy wcześniejszych funkcji beta VESTA; sekcje poniżej opisują również dodatkowe nowości i ulepszenia w NOVA.
+Te same wcześniejsze funkcje beta staną się standardowymi funkcjami VESTA wraz z **następnym hotfixem VESTA, planowanym na [18 listopada 2026 r.](vesta-hotfix-18-november-2026.md)**. Niniejsze ogłoszenie dotyczy wcześniejszych funkcji beta VESTA; sekcje poniżej opisują również dodatkowe nowości i ulepszenia w NOVA.
 
 ## Co NOVA oferuje klientom <a href="#what-nova-adds-for-customers" id="what-nova-adds-for-customers"></a>
 
@@ -26,7 +26,7 @@ Poniższe porównanie obejmuje nowo dostępne wcześniejsze funkcje beta, nowe m
 
 | Możliwość | Wersja bazowa VESTA (w tym beta) | Co zyskują klienci dzięki NOVA |
 | --- | --- | --- |
-| **Korzystanie z wcześniejszych funkcji beta** | Funkcje dostępne przez betę VESTA | **Standardowe funkcje NOVA:** wszystkie wcześniejsze funkcje beta VESTA są włączone. Ich wdrożenie jako standardowych funkcji VESTA planowane jest w hotfixie z 11 listopada 2026 r. |
+| **Korzystanie z wcześniejszych funkcji beta** | Funkcje dostępne przez betę VESTA | **Standardowe funkcje NOVA:** wszystkie wcześniejsze funkcje beta VESTA są włączone. Ich wdrożenie jako standardowych funkcji VESTA planowane jest w hotfixie z 18 listopada 2026 r. |
 | **Pomoc podczas walidacji dokumentu** | Asystent ustawień i Kontrola pól nagłówka | **Nowy Asystent walidacji:** identyfikuj blokujące pola, przechodź do odpowiedniej wartości, przeglądaj sugerowane poprawki i utrzymuj czat w osobnym oknie. |
 | **Usprawnianie automatyzacji na podstawie codziennych korekt** | Panel Touchless Intelligence, diagnostyka dostawców i propozycje zmian | **Nowy proces przeglądu i pomiaru:** przesyłaj wnioski o usprawnienia, przeglądaj propozycje wyuczonych reguł, sprawdzaj dowody na dokumentach, ranguj możliwości i mierz wyniki po aktywacji. |
 | **Rozumienie i rozwiązywanie błędów faktur elektronicznych** | Kontrole dokumentów elektronicznych, katalog reguł i przeglądarka XML | **Rozszerzona Walidacja faktur elektronicznych:** raporty pogrupowane według poziomu walidacji, kontrola polityk i historia zmian, odrzucanie z poziomu raportu oraz inspekcja XML w obsługiwanych fakturach PDF. |
@@ -106,7 +106,7 @@ Istniejący pulpit [Touchless Intelligence](../../administration-and-setup/touch
 
 ## Reguły i układy: bezpośredni dostęp i lepsza diagnostyka
 
-* **Byłe funkcje beta stają się standardowymi funkcjami.** Zarządzanie układami, [niestandardowe reguły walidacji](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) i [zasady transformacji](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) są widoczne w zaawansowanych ustawieniach typu dokumentu w NOVA bez linku beta. Ich przełączniki włączenia pozostają pod kontrolą administratora. Te elementy sterujące są uwzględnione w planowanej aktualizacji VESTA z 11 listopada 2026 r. wraz ze wszystkimi innymi byłymi funkcjami beta VESTA.
+* **Byłe funkcje beta stają się standardowymi funkcjami.** Zarządzanie układami, [niestandardowe reguły walidacji](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) i [zasady transformacji](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) są widoczne w zaawansowanych ustawieniach typu dokumentu w NOVA bez linku beta. Ich przełączniki włączenia pozostają pod kontrolą administratora. Te elementy sterujące są uwzględnione w planowanej aktualizacji VESTA z 18 listopada 2026 r. wraz ze wszystkimi innymi byłymi funkcjami beta VESTA.
 * **Bardziej użyteczna diagnostyka reguł.** Reguły wyboru układu zyskują opcję **Loguj wykonanie**. Wyszukiwanie reguł akceptuje identyfikatory reguł, a otwarcie edytora ładuje aktualnie zapisaną regułę. Istniejący log wykonania reguł pozostaje miejscem do przeglądania tego, co zostało uruchomione.
 * **Wybieraj i otwieraj układy z większą ilością kontekstu.** Wyszukuj docelowe układy, podglądaj ich zawartość i otwieraj je bezpośrednio z reguły wyboru. Reguły wyboru zatwierdzania poprawnie akceptują obsługiwane typy układów zatwierdzania. Administratorzy otrzymują również skrót z walidacji dokumentu do edytora układu danego typu dokumentu.
 * **Wybieraj wiele wartości warunków.** Warunki takie jak **jest jednym z** obsługują wiele wybranych wartości.
@@ -179,7 +179,7 @@ Dla organizacji i partnerów korzystających z integracji DocBits MCP, NOVA doda
 
 ## Funkcje już dostępne w VESTA
 
-NOVA przenosi również poniższe funkcje. Tam, gdzie dostęp był wcześniej ograniczony do wersji beta VESTA, standardowa dostępność jest częścią tego wydania NOVA i jest planowana dla poprawki VESTA w dniu 11 listopada 2026 r. Lista opisuje wcześniejsze funkcje, wraz ze zmianami dostępności i ulepszeniami wyjaśnionymi powyżej:
+NOVA przenosi również poniższe funkcje. Tam, gdzie dostęp był wcześniej ograniczony do wersji beta VESTA, standardowa dostępność jest częścią tego wydania NOVA i jest planowana dla poprawki VESTA w dniu 18 listopada 2026 r. Lista opisuje wcześniejsze funkcje, wraz ze zmianami dostępności i ulepszeniami wyjaśnionymi powyżej:
 
 * Oryginalny Asystent ustawień, jego wyszukiwarka dokumentacji, podstawowy przepływ podglądu/potwierdzenia/cofnięcia oraz proaktywne ostrzeżenia dotyczące zdrowia importu e-mail/FTP.
 * Warstwy AI Fast, Full, Nexus i Auto oraz ustawienie trybu wizji.

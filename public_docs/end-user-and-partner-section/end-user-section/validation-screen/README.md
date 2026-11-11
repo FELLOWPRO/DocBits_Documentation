@@ -42,6 +42,10 @@ Jeśli numer faktury został odczytany nieprawidłowo:
 Wpisanie nowej wartości poprawia ten dokument, ale nie tworzy powiązania z obszarem źródłowym wymaganego do tego uczenia. Zaznacz wartość na oryginale, potwierdź przypisanie i zapisz regułę, aby móc wykorzystać ją w pasujących dokumentach tego dostawcy. Uczenie na podstawie obrazu nie jest dostępne dla dokumentów odczytanych bezpośrednio jako dane e-faktury.
 {% endhint %}
 
+### Przyciski w okienku wartości pola
+
+Zaznaczenie obszaru na dokumencie otwiera nad zaznaczeniem małe okienko z okrągłymi przyciskami. Najedź kursorem na przycisk, aby odczytać, co robi: usuwa odczytaną wartość, czyści ją albo potwierdza przypisanie. Podpowiedź pojawia się po krótkiej chwili i zawiera tę samą treść, którą czytnik ekranu odczytuje dla tego przycisku.
+
 ## Zapis dokumentu, reguł i przekazanie dalej
 
 | Działanie | Skutek |
@@ -105,3 +109,5 @@ Dla faktur **Więcej opcji → Przepływ dokumentów** otwiera przebieg przetwar
 ## Gdy nie można edytować lub kontynuować
 
 Przeczytaj wyświetloną przyczynę: dokument może być zablokowany, tylko do odczytu, w innym stanie lub ograniczony Twoją rolą. Usuń przyczyny komunikatów walidacji i skonsultuj dostęp lub konfigurację z odpowiednią osobą albo administratorem. Jeśli błąd pozostaje, skorzystaj z [Rozwiązywania problemów](troubleshooting/README.md) lub przygotuj zgłoszenie z dokumentem i dokładnym komunikatem.
+
+Aby uporządkować strony, zobacz [Dzielenie pliku PDF i porządkowanie stron](../dashboard/manual-pdf-splitting.md).

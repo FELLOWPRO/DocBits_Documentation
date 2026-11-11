@@ -1,48 +1,52 @@
-# Registo de atividade
+# Registro de atividades
 
-<figure><img src="../../../.gitbook/assets/prior-t011-pt.png" alt="Filtros do registo de atividade; entradas ocultas."><figcaption><p>Filtros do registo de atividade; entradas ocultas.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/activity-logging-filters-pt-20261111.png" alt="Filtros do Registro de atividades na interface portuguesa: banner Análise, Intervalo de tempo com o valor Últimos 7 dias, os chips Debug, Info, Warning e Error com contagem de registros, o filtro Serviço e o campo Pesquisar registros"><figcaption><p>Filtros do Registro de atividades na interface portuguesa: intervalo de tempo, gravidade, serviço e pesquisa. Os quatro chips Debug, Info, Warning e Error permanecem em inglês também na interface portuguesa.</p></figcaption></figure>
 
-O Activity Logging oferece uma visão em tempo real dos eventos do sistema em todos os serviços do DocBits. Use-o para monitorar a atividade de processamento, solucionar erros e auditar o comportamento do sistema.
+O Registro de atividades (menu **SISTEMA E ADMINISTRAÇÃO**) mostra os eventos do sistema de todos os serviços do DocBits em tempo real. Use-o para monitorar a atividade de processamento, solucionar erros e auditar o comportamento do sistema.
 
-## Banner de Analytics
+## Banner de Análise
 
-Na parte superior da página, um banner leva ao **Painel de Análise**, com gráficos, métricas e monitoramento em tempo real.
+No topo da página, o banner **Análise** contém o link **Visualizar Painel de Análises**, que abre o [painel de análise](analytics.md) com gráficos, métricas e monitoramento em tempo real. O subtítulo do banner permanece em inglês na interface portuguesa.
 
 ## Filtros
 
 | Filtro | Descrição |
 |--------|-------------|
-| **Intervalo de tempo** | Selecione uma janela de tempo (por exemplo, Today, Last 7 Days, Last 30 Days). |
-| **Gravidade** | Ative ou desative os níveis de severidade a incluir ou excluir: **Depurar**, **Informações**, **Aviso**, **Erro**. Cada chip mostra a contagem atual. |
-| **Serviço** | Filtre os logs por serviço (por exemplo, api, auth, api-service). |
-| **Search logs** | Pesquisa de texto livre nas mensagens de log. |
+| **Intervalo de tempo** | Selecione uma janela de tempo: **Última hora**, **Hoje**, **Últimos 7 dias**, **Últimos 30 dias** ou **Personalizado**. |
+| **Gravidade** | Ative ou desative os níveis: **Debug**, **Info**, **Warning** e **Error**. Cada chip mostra a contagem atual de registros. Esses quatro rótulos permanecem em inglês também na interface portuguesa. |
+| **Serviço** | Filtre os registros por serviço: **API**, **AUTH**, **OCR** e **EXPORT**. |
+| **Pesquisar registros...** | Pesquisa de texto livre nas mensagens de registro. |
 
 ## Tabela de Logs
 
-<figure><img src="../../../.gitbook/assets/dbdc-815-activity-logs-service-pt-20261031.png" alt="Registo de atividade na interface portuguesa: a coluna Serviço identifica o serviço que gerou o registo e corresponde ao filtro Serviço. As entradas e os metadados de exportação ficam fora desta vista."><figcaption><p>Registo de atividade na interface portuguesa: a coluna Serviço identifica o serviço que gerou o registo e corresponde ao filtro Serviço. As entradas e os metadados de exportação ficam fora desta vista.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/activity-logging-service-column-pt-20261111.png" alt="Tabela de registros na interface portuguesa com os cabeçalhos Carimbo De Data E Hora, Gravidade, Serviço e Mensagem; na coluna Serviço aparecem api, export, auth e ocr"><figcaption><p>A tabela mostra na coluna Serviço qual serviço gerou o registro: api, auth, ocr ou export. As quatro colunas podem ser ordenadas clicando no cabeçalho.</p></figcaption></figure>
 
 | Coluna | Descrição |
 |--------|-------------|
-| **Carimbo de data e hora** | Data e hora em que o evento ocorreu. Ordenável. |
-| **Gravidade** | Selo colorido: Info (azul), Warning (amarelo), Error (vermelho), Debug (cinza). |
-| **Serviço** | O serviço ou módulo que gerou o log (por exemplo, api, auth, api-service). |
-| **Mensagem** | A mensagem de log completa com os detalhes do evento. |
+| **Carimbo De Data E Hora** | Data e hora em que o evento ocorreu. |
+| **Gravidade** | Selo colorido com o texto em maiúsculas: INFO (azul), WARN (amarelo), ERROR (vermelho) e DEBUG (cinza). |
+| **Serviço** | O serviço que gerou o registro (por exemplo, api, auth, ocr, export). |
+| **Mensagem** | A mensagem de registro completa com os detalhes do evento. |
 
-Os resultados são paginados — use os controles na parte inferior para navegar entre as páginas.
+Todas as quatro colunas podem ser ordenadas clicando no cabeçalho.
 
-## Detalhes do registo
+Os resultados são paginados — use os controles na parte inferior para navegar entre as páginas. O indicador de páginas, por exemplo **Page 1 (6 total logs)**, e os botões **Previous** e **Next** permanecem em inglês na interface portuguesa. Os carimbos de data e hora são exibidos no formato inglês, por exemplo **Nov 10, 2026 09:19:35**.
 
-Selecione uma linha de registo para abrir a vista de detalhes. O resumo mostra a gravidade, o carimbo de data e hora, o serviço e o ID do registo, com a mensagem do evento por baixo.
+## Detalhes do registro
 
-A secção **Detalhes do registo** contém o evento completo formatado em JSON. Consoante o evento, pode incluir metadados como a origem, o ambiente, o utilizador, o recurso, a ação e informações de rede ou do cliente. Os campos sem valor podem aparecer como `null`.
+Selecione uma linha de registro para abrir a vista de detalhes. O cabeçalho mostra o selo de gravidade, o carimbo de data e hora, o serviço e o ID do registro, com a mensagem do evento por baixo.
 
-Selecione o ícone de cópia no canto inferior direito de **Detalhes do registo** para copiar o registo JSON completo para a área de transferência. Use a seta de retrocesso junto a **Registo de atividade** para voltar à lista.
+A seção **Log Details** contém o evento completo formatado em JSON; o nome da seção permanece em inglês. Dependendo do evento, ela pode incluir metadados como a origem, o ambiente, o usuário, o recurso, a ação e informações de rede ou do cliente. Campos sem valor podem aparecer como `null`.
+
+Selecione o ícone de cópia no canto superior direito da seção **Log Details** para copiar o registro JSON completo para a área de transferência. Use o link **BACK TO LOGS** no topo da página para voltar à lista.
 
 ## Ações do Rodapé
 
+Estas quatro ações permanecem em inglês na interface portuguesa.
+
 | Ação | Descrição |
 |--------|-------------|
-| **Auto-refresh** | Ative para atualizar automaticamente a visualização dos logs em intervalos regulares. |
-| **Refresh Now** | Atualize manualmente os dados de log. |
-| **Export JSON** | Exporte os logs filtrados atuais como um arquivo JSON. |
-| **Download Logs** | Baixe os dados de log completos. |
+| **Auto-refresh** | Ative para atualizar automaticamente a visualização dos registros em intervalos regulares. |
+| **Refresh Now** | Atualize manualmente os dados de registro. |
+| **Export JSON** | Exporte os registros filtrados atuais como um arquivo JSON. |
+| **Download Logs** | Baixe os dados de registro completos. |

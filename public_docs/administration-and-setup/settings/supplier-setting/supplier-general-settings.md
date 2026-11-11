@@ -14,7 +14,7 @@ La page **Paramètres généraux du fournisseur** définit l'apparence et le com
 * **Politique et déclaration de confidentialité** — les documents juridiques que les fournisseurs doivent accepter.
 * **Documents de référence pour l'enregistrement des fournisseurs** — les documents de référence que les fournisseurs peuvent consulter pendant l'enregistrement.
 
-Ces sections ne prennent leur sens que lorsque le module **Portail fournisseurs** est activé ; voir [Portail fournisseurs](../../setup/supplier-portal/README.md) pour savoir comment l'activer.
+La page est réservée aux personnes disposant d'un accès administrateur. Pour savoir comment les fournisseurs accèdent ensuite au portail, voir [Portail fournisseurs](../../setup/supplier-portal/README.md).
 
 ### Champs d'invitation supplémentaires du portail fournisseurs
 
@@ -72,7 +72,7 @@ La section **Télécharger le logo** permet de personnaliser le portail fourniss
 
 #### Bonnes pratiques
 
-* **Dimensions du logo** : veillez à ce que les dimensions du logo soient adaptées à l'affichage bureau comme à l'affichage mobile. Le système peut proposer des recommandations ou un redimensionnement automatique.
+* **Dimensions du logo** : choisissez une image de largeur modérée, afin qu'elle reste lisible sur l'affichage bureau comme sur l'affichage mobile.
 * **Taille du fichier** : utilisez un fichier image compressé pour réduire les temps de chargement et améliorer l'expérience utilisateur.
 * **Cohérence de la marque** : utilisez le même logo sur toutes les plateformes afin de préserver une identité de marque cohérente.
 

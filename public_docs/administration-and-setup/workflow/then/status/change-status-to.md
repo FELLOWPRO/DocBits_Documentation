@@ -6,58 +6,61 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v3-pt-pt.png" alt="Alterar status para, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
 
-## **Propósito:**
+## Finalidade
 
-O cartão de fluxo de trabalho **"Change Status"** é utilizado para alterar o estado de um documento para um dos estados predefinidos — **Erro, Rejeitado, Pronto para Validação, Aprovação Pendente, Segunda Aprovação Pendente** — e, opcionalmente, acionar fluxos de trabalho associados com base na alteração de estado. Este cartão automatiza o processo de atualização de estados e de acionamento de fluxos de trabalho, assegurando uma gestão de documentos eficiente e um tratamento de erros adequado.
+O cartão **Alterar status para** coloca o documento num novo status, por exemplo para o enviar para aprovação ou para o marcar como rejeitado. Encontra-o no designer de Workflows em **Então → Status**.
 
-## **Componentes do cartão:**
+## Definições
 
-1. **Estado**
-   * **Descrição**: Especifica o novo estado a aplicar ao documento.
-   * **Opções**:
-     * **Error**: Marca o documento como tendo encontrado um erro.
-     * **Rejeitado**: Indica que o documento foi rejeitado e não prosseguirá.
-     * **Pronto para validação**: Define o documento para ser revisto e validado pelo utilizador ou processo de sistema seguinte.
-     * **Aprovação pendente**: Coloca o documento num estado pendente de aprovação.
-     * **Segunda aprovação pendente**: Coloca o documento em espera para um segundo nível de aprovação, se aplicável.
-2. **Acionar fluxos de trabalho**
-   * **Descrição**: Determina se devem ser acionados quaisquer fluxos de trabalho subsequentes após a alteração de estado.
-   * **Opções**:
-     * **True**: Inicia quaisquer fluxos de trabalho relevantes com base na alteração de estado.
-     * **False**: Impede a execução de fluxos de trabalho após a alteração de estado.
+### Status
 
-## **Funcionalidade:**
+O status que o documento recebe. Pode escolher:
 
-* **Avaliação da condição**: O sistema avalia as condições definidas nas secções **"Quando"** e **"E seções."** Se estas condições forem verdadeiras, o cartão procede à alteração do estado do documento para o valor selecionado.
-* **Atualização de estado**: Uma vez cumpridas as condições, o estado do documento é atualizado para uma das opções predefinidas (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), consoante a seleção do utilizador.
-* **Ação de acionamento de fluxos de trabalho**: Se **Acionar fluxos de trabalho** estiver definido como **True**, o sistema inicia automaticamente quaisquer fluxos de trabalho associados após a atualização de estado. Se estiver definido como **False**, não são acionados fluxos de trabalho adicionais e o processo termina com a alteração de estado.
+| Status | Significado |
+| --- | --- |
+| **Erro** | O documento é marcado como tendo um erro. |
+| **Rejeitado** | O documento é rejeitado. |
+| **Pronto para validação** | O documento aguarda que um utilizador o verifique na validação. |
+| **Aprovação pendente** | O documento aguarda aprovação. |
+| **Pendente segunda aprovação** | O documento aguarda a segunda aprovação. |
+| **Arquivado** | O documento é movido para o arquivo. Quando é restaurado, recupera o status anterior. |
+| **Concluído** | O processamento do documento está concluído. |
+| **Exportado** | O documento foi exportado, mas continua aberto, por exemplo para que ainda possa ser enviado de volta para aprovação. |
 
-## **Configuração:**
+Definir um status não executa o passo que lhe está associado. Por exemplo, **Pendente segunda aprovação** não significa que alguém deu a primeira aprovação.
 
-Para configurar este cartão, os utilizadores precisam de:
+### Fluxos de trabalho de gatilho (apenas na versão 3)
 
-1. Especificar o **Estado** pretendido para o qual o documento será definido após a avaliação da condição (Error, Rejected, Ready for Validation, Pending Approval ou Pending Second Approval).
-2. Escolher se devem **Acionar fluxos de trabalho** após a alteração de estado, selecionando **True** ou **False**.
-3. O cartão só executa a sua ação se ambas as condições nas secções **"Quando"** e **"E Seções"** forem avaliadas como verdadeiras.
+Decide se a alteração de status pode iniciar Workflows.
 
-## **Conclusão:**
+* **Falso:** esta alteração de status não inicia nenhum Workflow. Use este valor, a menos que outro Workflow deva continuar com o documento no novo status.
+* **Verdadeiro:** o DocBits inicia os Workflows cujas condições correspondem ao documento no novo status. São iniciados depois de o Workflow atual terminar. O cartão não espera por eles nem mostra se foram bem-sucedidos; consulte os **Registros de fluxo de trabalho**.
 
-O cartão de fluxo de trabalho **"Change Status"** oferece uma abordagem simplificada para gerir os estados dos documentos e acionar fluxos de trabalho relacionados. Assegura que os documentos são automaticamente encaminhados para o estado correto e que as ações necessárias são tomadas, consoante a alteração de estado. Ao definir condições claras para a execução, reduz o esforço manual e aumenta a eficiência do fluxo de trabalho.
+Escolha sempre um valor. Com **Verdadeiro**, certifique-se de que o Workflow que contém este cartão não corresponde ele próprio ao novo status; caso contrário, é executado uma segunda vez. Consulte [Alterar o status sem reiniciar o seu Workflow](../../masterclass/status-and-reentry.md).
 
-<!-- workflow-card-practical-example-20261021 -->
+## Versões do cartão
 
-## Exemplo prático
+| Versão | Definições | Inicia Workflows após a alteração |
+| --- | --- | --- |
+| **1** | Status | Sim, sempre |
+| **2** | Status | Sim, sempre |
+| **3** | Status, Fluxos de trabalho de gatilho | Apenas com **Fluxos de trabalho de gatilho** = **Verdadeiro** |
 
-**Quando usar:** Encaminhar um documento verificado para a etapa de aprovação.
+As versões 1 e 2 funcionam da mesma forma. A versão 3 acrescenta **Fluxos de trabalho de gatilho**, para que possa decidir se o novo status inicia outros Workflows. Use a versão 3 em novos Workflows. Se mudar um cartão existente da versão 3 para uma versão anterior, **Fluxos de trabalho de gatilho** deixa de se aplicar e qualquer alteração de status pode voltar a iniciar Workflows.
 
-**Onde:** Designer de fluxos padrão → Então → Status → Alterar status para.
+## Bom saber
 
-**Configuração:** Selecione a versão 3 de `staus_change`, o estado Aprovação pendente (`validated_pending_approval`) e defina a ativação de outros fluxos como `false` (`trigger_docflow=false`). Utilize uma fatura sintética isolada que cumpra as verificações anteriores.
+* **Mesmo status, sem efeito.** Se o documento já tiver o status escolhido, nada muda e nenhum Workflow é iniciado.
+* **Arquivado nunca inicia Workflows**, em nenhuma versão.
+* **Os webhooks não são afetados.** Os webhooks de alterações de status são enviados independentemente do que escolher em **Fluxos de trabalho de gatilho**.
+* **Uma alteração pode ser recusada.** Se a sua organização bloquear documentos concluídos, um documento **Concluído** só pode passar para **Arquivado** ou **Erro**. Qualquer outra alteração é recusada, o status mantém-se e o registo do Workflow mostra um erro.
+* **Os testes apenas simulam.** Num teste de cartão ou num Advanced Test no designer de Workflows, os cartões seguintes veem o novo status, mas o status não é guardado e nenhum Workflow é iniciado.
 
-**Resultado esperado e contraexemplo:** Uma atualização permitida e bem-sucedida coloca o documento no estado escolhido. Se uma condição anterior for falsa, esta ação não é alcançada e não altera o estado. Uma atualização da API recusada ou falhada não é um sucesso: verifique o estado real e os registos. O cartão não executa por si só uma exportação.
+## Exemplo
 
-### Versões do cartão
+**Objetivo:** depois das verificações, enviar uma fatura para aprovação.
 
-O controlo explícito para ativar outros fluxos está disponível na v3. As versões 1 e 2 não o disponibilizam; o seu caminho de atualização anterior utiliza o comportamento de ativação predefinido. Não presuma que uma definição `false` da v3 se aplica ao mudar para uma versão anterior.
+1. Condições: **O tipo de documento é** _Fatura_ e **Status do documento** **É** **Pronto para validação**.
+2. **Alterar status para** (versão 3): **Status** = **Aprovação pendente**, **Fluxos de trabalho de gatilho** = **Falso**.
 
-Configuração e resultado esperado verificados no código de execução. Não foi executado qualquer fluxo ou alteração de estado.
+**Resultado:** a fatura passa para **Aprovação pendente** e aguarda aprovação. A alteração não inicia nenhum outro Workflow, e este Workflow não volta a ser executado porque o documento já não está em **Pronto para validação**.

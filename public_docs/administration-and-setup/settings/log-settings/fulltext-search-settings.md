@@ -1,46 +1,46 @@
-# Impostazioni della Ricerca a Testo Completo
+# Impostazioni della Ricerca a testo completo
 
-<figure><img src="../../../.gitbook/assets/fulltext-search-settings-module-required-it-20261011.png" alt="Impostazioni della Ricerca a Testo Completo nella sandbox, con la finestra «Modulo fulltext richiesto» e le azioni «Vai ai moduli» e «Abilita ora»"><figcaption><p>Se la Ricerca a testo completo è disattivata, questa finestra spiega i passaggi successivi.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fulltext_search_settings.png" alt="Impostazioni della Ricerca a testo completo nella sandbox, con una finestra che spiega che il modulo è necessario e i pulsanti Go to Modules ed Enable Now"><figcaption><p>Quando la Ricerca a testo completo è disattivata, questa finestra spiega i passaggi successivi.</p></figcaption></figure>
 
-Le Impostazioni della Ricerca a Testo Completo stabiliscono cosa DocBits indicizza e come questi contenuti diventano ricercabili nei documenti, nei dati anagrafici ERP e nei modelli. La pagina delle impostazioni mostra una finestra di requisito finché il **modulo Ricerca a testo completo** non è attivato — il linguaggio di interrogazione per l'utente finale è descritto in [Ricerca a testo completo](../document-processing/module/fulltext-search.md).
+Le Impostazioni della Ricerca a testo completo stabiliscono cosa DocBits indicizza e come rende tali contenuti ricercabili nei documenti, nei dati anagrafici ERP e nei modelli. La pagina delle impostazioni mostra una finestra di requisito finché il **Fulltext Search module** non è attivato — vedi [Ricerca a testo completo](../document-processing/module/fulltext-search.md) per il linguaggio di interrogazione destinato all'utente.
 
 ## Prerequisiti
 
-Il modulo Ricerca a testo completo deve essere attivato in **Impostazioni → Modulo → Dashboard e analisi → Ricerca testo completo**. Se il modulo non è attivato, la finestra offre tre azioni:
+Il modulo Fulltext Search deve essere attivato in **Settings → Module → Dashboards & Analytics → Full text search**. Se il modulo non è attivato, la finestra offre tre azioni:
 
-* **Aiuto (?)** — Apre la documentazione della Ricerca a testo completo in una nuova scheda, prima di modificare qualsiasi impostazione.
-* **Vai ai moduli** — Apre le impostazioni del modulo Dashboard e analisi per verificare la configurazione.
-* **Abilita ora** — Apre la finestra dell'abbonamento. Esamina e conferma questa finestra prima che il modulo venga attivato; un clic su questo pulsante da solo non lo attiva.
+* **Help (?)** — apre la documentazione della Ricerca a testo completo in una nuova scheda prima di modificare qualsiasi impostazione.
+* **Go to Modules** — apre le impostazioni del modulo Dashboards & Analytics per verificare la configurazione.
+* **Enable Now** — apre la finestra dell'abbonamento. Esamina e conferma quella finestra prima che il modulo venga attivato; il solo clic su questo pulsante non lo attiva.
 
 La pagina delle impostazioni stessa diventa disponibile quando il modulo è attivo.
 
 ## Struttura della pagina
 
-La pagina delle impostazioni è organizzata in tre schede, ognuna relativa a un diverso tipo di contenuto che la Ricerca a testo completo può indicizzare.
+La pagina delle impostazioni è organizzata in tre schede: **Documents**, **ERP** e **Templates**. Ogni scheda delimita un diverso tipo di contenuto che la Ricerca a testo completo può indicizzare.
 
-### Scheda «Documenti»
+### Scheda Documents
 
-La scheda Documenti copre tutto ciò che riguarda l'indicizzazione dei documenti elaborati:
+La scheda Documents copre tutto ciò che riguarda l'indicizzazione dei documenti elaborati:
 
-* **Statistiche di indicizzazione** — totali dei documenti indicizzati e in attesa, aggiornabili su richiesta.
-* **Preferenze vettoriali** — tre interruttori a livello di organizzazione che stabiliscono se l'indicizzazione vettoriale viene eseguita parallelamente all'indice testuale per i documenti. L'indicizzazione vettoriale alimenta la modalità di interrogazione `vector:` e la funzione «Trova simili».
-* **Azioni di reindicizzazione** — avvia una reindicizzazione completa o incrementale. Mentre la reindicizzazione è in corso, vedi il progresso in tempo reale (documenti al minuto, tempo rimanente stimato), lo stato del flusso e l'ultimo errore (se presente).
-* **Diagnostica di sincronizzazione** — diagnostica su richiesta per i casi in cui l'indice sembra non coincidere con l'archivio dei documenti sottostante.
+* **Indexing statistics** — totali dei documenti indicizzati e in attesa, aggiornati su richiesta.
+* **Vector preferences** — tre interruttori a livello di organizzazione che stabiliscono se l'indicizzazione vettoriale viene eseguita parallelamente all'indice testuale per i documenti. L'indicizzazione vettoriale alimenta la modalità di interrogazione `vector:` e la funzione "Find Similar".
+* **Reindex actions** — avvia una reindicizzazione completa o incrementale. Mentre una reindicizzazione è in corso, vedi il progresso in tempo reale (documenti al minuto, ETA), lo stato del flusso corrente e l'ultimo errore (se presente).
+* **Sync diagnostics** — diagnostica su richiesta per i casi in cui l'indice sembra non essere sincronizzato con l'archivio dei documenti sottostante.
 
 <mark>La reindicizzazione non è distruttiva — la ricerca esistente continua a funzionare mentre il nuovo indice viene ricostruito.</mark>
 
-### Scheda «ERP»
+### Scheda ERP
 
 La scheda ERP controlla l'indicizzazione dei dati anagrafici ERP — fornitori, clienti, articoli ed entità simili. Ogni entità ha il proprio interruttore:
 
-* **Indicizzazione** — indicizza testualmente l'entità, in modo che sia ricercabile dalla dashboard.
-* **Vettore** — indicizza vettorialmente l'entità, in modo che possa essere trovata tramite query semantiche.
+* **Indexing** — indicizza testualmente l'entità in modo che sia ricercabile dalla dashboard.
+* **Vector** — indicizza vettorialmente l'entità in modo che possa essere trovata tramite query semantiche.
 
-Usa l'azione **Attiva/disattiva tutto** in cima all'elenco per applicare lo stesso stato a tutte le entità contemporaneamente. L'indicizzazione parte in background; un indicatore su ogni riga mostra quando è in corso.
+Usa l'azione **Toggle all** in cima all'elenco per applicare lo stesso stato attivo/disattivo a tutte le entità contemporaneamente. L'indicizzazione parte in background; un indicatore su ogni riga mostra quando è in corso.
 
-### Scheda «Modelli»
+### Scheda Templates
 
-La scheda Modelli elenca le versioni dei modelli note all'indice della Ricerca a testo completo. Usa questa vista per confermare, dopo un nuovo rilascio, che le versioni dei modelli da cui dipendi siano presenti nell'indice.
+La scheda Templates elenca le versioni dei modelli note all'indice della Ricerca a testo completo. Usa questa vista per confermare che le versioni dei modelli da cui dipendi siano presenti nell'indice dopo un nuovo rilascio.
 
 ## Cosa viene indicizzato
 
@@ -52,4 +52,4 @@ Una volta attivata e configurata, la Ricerca a testo completo consente agli uten
 * Accedere ai risultati di ricerca direttamente dalla dashboard.
 * Usare la ricerca semantica (prefisso `vector:`) quando l'indicizzazione vettoriale è attiva per quel tipo di contenuto.
 
-Consulta la pagina del modulo [Ricerca a testo completo](../document-processing/module/fulltext-search.md) per il riferimento completo del linguaggio di interrogazione, incluse query per intervalli, filtri intelligenti e la modalità di ricerca AI.
+Consulta la pagina del modulo [Ricerca a testo completo](../document-processing/module/fulltext-search.md) per il riferimento completo del linguaggio di interrogazione, comprese le query per intervalli, i filtri intelligenti e la modalità di ricerca AI.

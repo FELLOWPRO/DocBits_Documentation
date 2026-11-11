@@ -18,7 +18,7 @@ Le istruzioni precedenti suggerivano di inserire qui limiti numerici o espressio
 
 ## PUNTEGGIO DI CORRISPONDENZA
 
-**PUNTEGGIO DI CORRISPONDENZA** è una soglia numerica, non un valore di riferimento fisso. Il cursore **PUNTEGGIO DI CORRISPONDENZA** in **IMPOSTAZIONI DI RICONOSCIMENTO** applica il proprio valore alle righe dei campi del tipo di documento; per un valore individuale usa l'input **PUNTEGGIO DI CORRISPONDENZA** della singola riga di campo. Nell'esempio illustrato il cursore mostra **80**, mentre la riga `invoice_number` mostra **60** sia in **OCR** sia in **PUNTEGGIO DI CORRISPONDENZA**. Verifica i campi interessati, poi fai clic su **Salva le impostazioni**.
+**PUNTEGGIO DI CORRISPONDENZA** è una soglia numerica, non un valore di riferimento fisso. Il cursore **PUNTEGGIO DI CORRISPONDENZA** in **IMPOSTAZIONI DI RICONOSCIMENTO** applica il proprio valore alle righe dei campi del tipo di documento; per un valore individuale usa l'input **PUNTEGGIO DI CORRISPONDENZA** della singola riga di campo. Accanto al cursore non è indicato un numero: i valori effettivi si leggono negli input delle righe. Nell'esempio illustrato la riga `invoice_number` mostra **60** sia in **OCR** sia in **PUNTEGGIO DI CORRISPONDENZA**. Verifica i campi interessati, poi fai clic su **Salva le impostazioni**.
 
 <figure><img src="../../../../../.gitbook/assets/setting-validation-and-match-score-invoice-number-it-20261111.png" alt="Ricerca per nome con invoice_number nella pagina Campi in italiano: la riga Numero di fattura con CONVALIDA FORZATA selezionata, OCR 60 e PUNTEGGIO DI CORRISPONDENZA 60"><figcaption><p>Cerca un campo per verificarne la casella CONVALIDA FORZATA e il valore PUNTEGGIO DI CORRISPONDENZA.</p></figcaption></figure>
 

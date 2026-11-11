@@ -42,6 +42,10 @@ Als het factuurnummer verkeerd is uitgelezen:
 Een vervangende waarde intypen corrigeert dit document, maar maakt niet de koppeling met het brongebied die voor deze extractietraining nodig is. Selecteer de waarde op het origineel, bevestig de koppeling en sla de regel op voor hergebruik bij passende documenten van deze leverancier. Training op basis van de afbeelding is niet beschikbaar voor documenten die rechtstreeks als elektronische factuurgegevens zijn gelezen.
 {% endhint %}
 
+### De knoppen in het veldwaardevenster
+
+Als je een gebied op het document selecteert, verschijnt boven de selectie een klein venster met ronde knoppen. Beweeg de aanwijzer over een knop om te lezen wat die doet: de uitgelezen waarde verwijderen, de selectie wissen of de koppeling bevestigen. De tooltip verschijnt na een korte vertraging en gebruikt dezelfde tekst die schermlezers voor de knop voorlezen.
+
 ## Opslaan, regels bewaren en verder verwerken
 
 | Actie | Resultaat |
@@ -105,3 +109,5 @@ Bij facturen opent **Meer opties → Documentstroom** het verwerkingsverloop. Af
 ## Als je niet kunt bewerken of doorgaan
 
 Lees de weergegeven reden: het document kan vergrendeld, alleen-lezen, in een andere status of beperkt voor je rol zijn. Los validatiemeldingen op en overleg met de verantwoordelijke collega of beheerder over toegang en instellingen. Blijft de fout bestaan, raadpleeg dan [Problemen oplossen](troubleshooting/README.md) of bereid een ticket voor met het document en de exacte melding.
+
+Voor het ordenen van pagina's, zie [Een PDF splitsen en pagina's ordenen](../dashboard/manual-pdf-splitting.md).

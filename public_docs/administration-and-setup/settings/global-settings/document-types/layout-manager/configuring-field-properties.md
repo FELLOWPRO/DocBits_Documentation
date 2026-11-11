@@ -33,6 +33,14 @@ The panel groups its options into collapsible sections. Only the sections that a
 
 **Banned keywords** accepts a comma-separated list, for example `_, *`. **Field length** limits how many characters the field accepts.
 
+## Hide a group
+
+A whole group, for example **Invoice Details**, can be hidden on the validation screen. Select the group on the canvas or in the **Structure** tab and switch on **Is Hidden Group** in the **Properties** panel. New groups start visible.
+
+A hidden group is only left out of the validation screen. Its fields keep their values and are still validated and exported.
+
+To hide or show a group per document instead, use the script function [`set_group_is_hidden()`](../script/scripting-in-docbits/field-functions.md#set_group_is_hidden). A script setting overrides the switch for that document: a script can show a group the layout hides, or hide a group the layout shows.
+
 ## Save the change
 
 Every change shows on the canvas immediately and stays unsaved until you select **Save** in the header of the builder. See [Save and Apply Changes](save-and-apply-changes.md) for the other header actions, including template generation and default templates.

@@ -11,18 +11,18 @@ Cette carte est conçue pour contrôler les actions du workflow en fonction du s
 1. **Opérateur**
    * **Descriptif** : détermine comment le statut du document sera évalué par rapport à une condition spécifiée.
    * **Possibilités** :
-     * **is** : déclenche les actions associées si le statut actuel du document correspond à l'un des statuts spécifiés.
-     * **n'est pas** : déclenche les actions si le statut du document ne correspond à aucun des statuts spécifiés.
+     * **Est** : déclenche les actions associées si le statut actuel du document correspond à l'un des statuts spécifiés.
+     * **N'est pas** : déclenche les actions si le statut du document ne correspond à aucun des statuts spécifiés.
 2. **Statut (Liste)**
    * **Descriptif** : liste les statuts spécifiques auxquels le statut actuel du document sera comparé.
-   * **Exemples** : « Error », « Export Error », « Ready in Validation », « Ready in Review », « Pending Approval », « Pending Second Approval ». Ils représentent les différentes étapes ou conditions dans lesquelles un document peut se trouver au sein d'un processus de workflow.
+   * **Statuts disponibles** : Erreur, Erreur d'exportation, Terminé, Rejeté, Prêt pour la révision, Prêt pour la validation, Validé en attente d'approbation, Approuvé en attente de deuxième approbation, Exporté et TVA VERTEX REJETÉE. Vous pouvez en sélectionner plusieurs.
 
 **Fonctionnalité**
 
 * **Identification du statut** : identifie automatiquement le statut actuel d'un document à mesure qu'il progresse dans le workflow du système ERP.
-* **Évaluation de la condition** : applique l'opérateur choisi (is ou is not) au statut du document par rapport aux statuts listés :
-  * Si **is**, elle vérifie si le statut du document correspond à un statut de la liste.
-  * Si **n'est pas**, elle vérifie si le statut du document n'apparaît pas dans la liste.
+* **Évaluation de la condition** : applique l'opérateur choisi (**Est** ou **N'est pas**) au statut du document par rapport aux statuts listés :
+  * Si **Est**, elle vérifie si le statut du document correspond à un statut de la liste.
+  * Si **N'est pas**, elle vérifie si le statut du document n'apparaît pas dans la liste.
 * **Exécution de l'action** : selon le résultat de l'évaluation de la condition :
   * **True** : exécute des actions ou des workflows prédéfinis si la condition est satisfaite.
   * **False** : ignore ou déclenche des workflows alternatifs si la condition n'est pas satisfaite.
@@ -42,8 +42,8 @@ La carte de workflow « Document Status Condition » est essentielle pour garant
 
 ### Exemple de liste d'état
 
-**Configuration :** Choisissez l'opérateur qui nécessite que l'état actuel soit dans la liste. Sélectionnez `Pending Approval` et `Pending Second Approval` dans la liste d'état.
+**Configuration :** Choisissez l'opérateur qui nécessite que l'état actuel soit dans la liste. Sélectionnez **Validé en attente d'approbation** et **Approuvé en attente de deuxième approbation** dans la liste des statuts.
 
-**Résultat attendu et contre-exemple :** La condition est vraie pour un document avec l'un ou l'autre statut sélectionné. C'est faux pour un document de statut `Ready in Validation`. Avec l'opérateur qui exige que le statut soit en dehors de la liste, ces résultats de condition s'inversent. Inspectez la liste réelle plutôt que de comparer une valeur de texte libre séparée par des virgules.
+**Résultat attendu et contre-exemple :** La condition est vraie pour un document avec l'un ou l'autre statut sélectionné. C'est faux pour un document de statut **Prêt pour la validation**. Avec l'opérateur qui exige que le statut soit en dehors de la liste, ces résultats de condition s'inversent. Inspectez la liste réelle plutôt que de comparer une valeur de texte libre séparée par des virgules.
 
 Il s'agit d'une configuration de test illustrative et du résultat attendu ; il n'a pas été exécuté. Utilisez les données et les destinataires configurés dans votre organisation de test.

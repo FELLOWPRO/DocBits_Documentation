@@ -11,18 +11,18 @@ Cette carte de workflow est conçue pour gérer les opérations sur les document
 1. **Opérateur**
    * **Descriptif** : spécifie la méthode d'évaluation du statut du document par rapport à la condition sélectionnée.
    * **Possibilités** :
-     * **is** : déclenche l'opération si le statut actuel du document correspond au statut sélectionné.
-     * **n'est pas** : déclenche l'opération si le statut actuel du document ne correspond pas au statut sélectionné.
+     * **Est** : déclenche l'opération si le statut actuel du document correspond au statut sélectionné.
+     * **N'est pas** : déclenche l'opération si le statut actuel du document ne correspond pas au statut sélectionné.
 2. **Statut**
    * **Descriptif** : permet de sélectionner un seul statut de document pour définir la condition.
-   * **Exemples de statuts** : « Erreur », « Erreur d'exportation », « Prêt en validation », « Prêt en révision », « En attente d'approbation », « En attente de deuxième approbation ».
+   * **Statuts disponibles** : Erreur, Erreur d'exportation, Terminé, Rejeté, Prêt pour la révision, Prêt pour la validation, Validé en attente d'approbation, Approuvé en attente de deuxième approbation, Exporté et TVA VERTEX REJETÉE.
    * **Détail** : les utilisateurs choisissent un statut dans une liste déroulante ou un ensemble de boutons radio. Ce statut sert ensuite de critère pour le fonctionnement de la carte.
 
 **Fonctionnalité**
 
 * **Identification du statut du document** : identifie le statut actuel d'un document à mesure qu'il est traité dans le système ERP.
 * **Évaluation de la condition** :
-  * En fonction de l'opérateur sélectionné (`is` ou `is not`), la carte vérifie si le statut actuel du document correspond au critère de statut choisi.
+  * En fonction de l'opérateur sélectionné (**Est** ou **N'est pas**), la carte vérifie si le statut actuel du document correspond au critère de statut choisi.
 * **Exécution de l'action** :
   * **Condition vraie** : si le statut correspond (ou ne correspond pas, selon l'opérateur), l'action correspondante est lancée. Il peut s'agir d'un acheminement pour un traitement complémentaire, de la génération de notifications ou d'autres workflows prédéfinis.
   * **Condition fausse** : si la condition n'est pas satisfaite, aucune action n'est effectuée, ou un chemin alternatif est déclenché.
@@ -42,8 +42,8 @@ La carte de workflow « Single Document Status Condition » simplifie la gestion
 
 ### Exemple de statut unique
 
-**Configuration :** Choisissez l'opérateur `is` et l'état `Pending Approval`. Ajoutez une action de révision suivante appropriée pour ce statut.
+**Configuration :** Choisissez l'opérateur **Est** et le statut **Validé en attente d'approbation**. Ajoutez une action de révision suivante appropriée pour ce statut.
 
-**Résultat attendu et contre-exemple :** La condition est vraie pour un document actuellement `Pending Approval` ; c'est faux pour un document de statut `Ready in Validation`. Utilisez le statut actuellement sélectionné dans votre version. Changer un statut n’exporte pas en soi le document.
+**Résultat attendu et contre-exemple :** La condition est vraie pour un document actuellement **Validé en attente d'approbation** ; elle est fausse pour un document de statut **Prêt pour la validation**. Utilisez le statut actuellement sélectionné dans votre version. Changer un statut n’exporte pas en soi le document.
 
 Il s'agit d'une configuration de test illustrative et du résultat attendu ; il n'a pas été exécuté. Utilisez les données et les destinataires configurés dans votre organisation de test.

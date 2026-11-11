@@ -12,10 +12,10 @@ En haut de la page, une bannière renvoie vers l'**Tableau de bord analytique** 
 
 | Filtre | Description |
 |--------|-------------|
-| **Période** | Sélectionnez une période (par exemple Today, Last 7 Days, Last 30 Days). |
-| **Gravité** | Activez ou désactivez les niveaux de gravité à inclure ou à exclure : **Déboguer**, **Info**, **Avertissement**, **Erreur**. Chaque pastille indique le nombre actuel. |
-| **Service** | Filtrez les journaux par service (par exemple api, auth, api-service). |
-| **Search logs** | Recherche en texte libre dans les messages de journal. |
+| **Période** | Sélectionnez une période (par exemple Aujourd'hui, 7 derniers jours, Les 30 derniers jours). |
+| **Gravité** | Activez ou désactivez les niveaux de gravité à inclure ou à exclure : **Debug**, **Info**, **Warning**, **Error**. Chaque pastille indique le nombre actuel. |
+| **Service** | Filtrez les journaux par service (par exemple api, auth, ocr, export). |
+| **journaux de recherche** | Recherche en texte libre dans les messages de journal. |
 
 ## Tableau des journaux
 
@@ -25,7 +25,7 @@ En haut de la page, une bannière renvoie vers l'**Tableau de bord analytique** 
 |--------|-------------|
 | **Horodatage** | Date et heure de l'événement. Triable. |
 | **Gravité** | Badge de couleur : Info (bleu), Warning (jaune), Error (rouge), Debug (gris). |
-| **Service** | Le service ou le module qui a généré le journal (par exemple api, auth, api-service). |
+| **Service** | Le service qui a généré le journal (par exemple api, auth, ocr, export). |
 | **Message** | Le message de journal complet avec les détails de l'événement. |
 
 Les résultats sont paginés — utilisez les commandes en bas de page pour naviguer entre les pages.
@@ -34,9 +34,9 @@ Les résultats sont paginés — utilisez les commandes en bas de page pour navi
 
 Sélectionnez une ligne de journal pour ouvrir sa vue détaillée. Le résumé affiche la gravité, l'horodatage, le service et l'ID du journal, avec le message de l'événement juste en dessous.
 
-La section **Détails du journal** contient l'événement complet au format JSON. Selon l'événement, elle peut inclure des métadonnées telles que la source, l'environnement, l'utilisateur, la ressource, l'action et les informations réseau ou client. Les champs sans valeur peuvent apparaître sous la forme `null`.
+La section **Log Details** contient l'événement complet au format JSON. Selon l'événement, elle peut inclure des métadonnées telles que la source, l'environnement, l'utilisateur, la ressource, l'action et les informations réseau ou client. Les champs sans valeur peuvent apparaître sous la forme `null`.
 
-Sélectionnez l'icône de copie en bas à droite de **Détails du journal** pour copier l'enregistrement JSON complet dans le presse-papiers. Utilisez la flèche de retour à côté de **Journal d’activité** pour revenir à la liste.
+Sélectionnez l'icône de copie en bas à droite de **Log Details** pour copier l'enregistrement JSON complet dans le presse-papiers. Utilisez la flèche de retour **BACK TO LOGS** en haut de la page pour revenir à la liste.
 
 ## Actions du pied de page
 

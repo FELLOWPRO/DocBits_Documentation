@@ -54,6 +54,15 @@ Select an element or a group on the canvas. **Properties** on the right is alway
 
 For the width, choose one of the presets (25, 33, 50, 66, 75 or 100 percent) instead of typing a value; check the result on the canvas. Which sections and options appear depends on the selected element. For more detail, see [Configuring Field Properties](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
 
+## Translate button labels
+
+Buttons such as **Save Rules**, **Auto Accounting**, **PO Match**, **Export**, **Export Without Validation** and **Reject** resolve their label from a translation key. The viewer shows the label in the language of the person who opens the layout. If the key has no text for that language, DocBits shows the label that was saved in the layout.
+
+* A standalone button has a **Translation Key** field in **Properties**.
+* **Invoice Buttons** groups several buttons. Set the key for a single child button, or set one key per child in the list on the panel of the group.
+
+Layouts that were built before this change keep their labels: DocBits fills in the default key of each button type for them. Layouts that are saved with a key keep that key, also after a reload.
+
 ## Review and save
 
 Arrange the groups and fields, check the layout on the canvas and use **Save** in the header when the result is correct. For origin-specific layouts, see [Origin Layouts](origin-layouts.md).

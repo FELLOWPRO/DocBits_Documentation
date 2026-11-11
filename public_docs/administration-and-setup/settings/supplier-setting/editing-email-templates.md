@@ -1,82 +1,89 @@
 # Edição de Modelos de E-mail
 
-<figure><img src="../../../.gitbook/assets/prior-t013-pt.png" alt="Lista de modelos de e-mail para fornecedores."><figcaption><p>Lista de modelos de e-mail para fornecedores.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-list-pt-20261111.png" alt="Lista de modelos de e-mail para fornecedores com as colunas Nome, Tipo, Assunto, Última Modificação Por, Última Modificação Em e Ações"><figcaption><p>Lista de modelos de e-mail para fornecedores</p></figcaption></figure>
 
-### Visão Geral
+A página **Modelos de e-mail**, na área de configurações do fornecedor em **Configurações**, permite que administradores criem os e-mails que o DocBits envia automaticamente aos fornecedores. Cada modelo é atribuído a um dos quatro tipos fixos de e-mail, para que a mensagem correta seja sempre enviada quando um fornecedor é convidado, conclui o cadastro, ou é aprovado ou rejeitado no portal do fornecedor.
 
-O recurso de Modelos de E-mail permite que administradores criem e personalizem comunicações por e-mail que são enviadas automaticamente aos fornecedores. Um dos elementos-chave utilizados nesses modelos é o `{{magic_link}}`, que fornece um link dinâmico adaptado a cada destinatário.
+O acesso requer uma conta de administrador. Consulte [Permissões do Fornecedor](supplier-permissions.md) para as funções que os próprios fornecedores recebem.
 
-#### O que é `{{magic_link}}`?
+## Lista de modelos
 
-O `{{magic_link}}` é um espaço reservado que é substituído dinamicamente por uma URL única quando o e-mail é enviado. Essa URL geralmente direciona o destinatário para concluir uma ação, como registro, aprovação ou acesso a uma parte específica do portal do fornecedor.
+A lista mostra uma linha por modelo, com estas colunas:
 
-### Edição de Modelos de E-mail
+| Coluna | Descrição |
+|--------|-----------|
+| **Nome** | O nome interno do modelo. |
+| **Tipo** | O tipo de e-mail para o qual o modelo é usado, por exemplo E-mail de convite para fornecedores. |
+| **Assunto** | A linha de assunto que os destinatários veem. |
+| **Última Modificação Por** | O usuário que editou o modelo por último. |
+| **Última Modificação Em** | Quando o modelo foi alterado pela última vez. |
 
-<figure><img src="../../../.gitbook/assets/s150-bildschirmfoto-2024-08-25-um-12-35-53-pt.png" alt="Editor de um novo modelo de e-mail para fornecedores."><figcaption><p>Editor de um novo modelo de e-mail para fornecedores.</p></figcaption></figure>
+Você pode ordenar a lista por qualquer coluna. As colunas **Nome**, **Tipo** e **Assunto** também oferecem um filtro nos menus das colunas; filtros ativos aparecem como etiquetas removíveis acima da tabela. Você pode arrastar os cabeçalhos das colunas para a ordem que preferir, e essa ordem é mantida na sua próxima visita.
 
-#### Acessando o Editor de Modelos de E-mail
+**Ações de linha**: cada linha tem a ação **Editar** no menu de três pontos da coluna **Ações**, que abre o modelo no editor, e a ação **Excluir**, que remove o modelo após uma janela de confirmação. Clicar em qualquer ponto da linha também abre o modelo para edição.
 
-1. **Navegue até Modelos de E-mail**:
-   * Vá para a seção **Modelos de E-mail** no menu principal.
-2. **Selecione um Modelo para Editar**:
-   * Escolha o modelo de e-mail que você deseja editar clicando no nome do modelo (por exemplo, "Supplier Invitation Email").
-3. **Edite o Modelo**:
-   * O editor permite modificar tanto o código HTML quanto o design visual do e-mail.
-   * Você pode alternar entre a edição visual e a edição de código usando as abas fornecidas.
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-actions-pt-20261111.png" alt="Menu de ações de uma linha da lista com as entradas Editar e Excluir"><figcaption><p>Ações de linha Editar e Excluir</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+**Novo**: o botão **Novo** acima da tabela cria um novo modelo.
 
-#### Definindo `{{magic_link}}` como um Link
+## Criar ou editar um modelo
 
-Para definir `{{magic_link}}` como um link clicável no e-mail, é preciso garantir que ele esteja formatado corretamente no código HTML do modelo. Siga estas etapas:
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-editor-pt-20261111.png" alt="Editor de um modelo de e-mail para fornecedores com os campos Nome, Assunto, Selecione o modelo de e-mail e CC à esquerda e o editor de texto à direita"><figcaption><p>Criar um novo modelo de e-mail para fornecedores</p></figcaption></figure>
 
-1. **Localize a Seção do Link no Código HTML**:
-   * No editor de código, encontre a seção onde você deseja que o magic link apareça. Isso geralmente fica dentro de uma tag `<a>` (âncora).
-2.  **Insira o Espaço Reservado `{{magic_link}}`**:
+Clique em **Novo** (ou em **Editar** num modelo existente) para abrir o editor do modelo:
 
-    * Substitua o atributo `href` da tag âncora por `{{magic_link}}`.
-    * Certifique-se de que o link esteja estilizado adequadamente para o modelo de e-mail. Aqui está um exemplo:
+1. **Nome** — informe um nome interno para o modelo. Esse nome aparece na lista, não no e-mail.
+2. **Assunto** — informe a linha de assunto do e-mail. Você pode usar espaços reservados como `{{supplier_name}}`.
+3. **Selecione o modelo de e-mail** — escolha o tipo de e-mail. Existem exatamente quatro tipos:
+   * **E-mail de convite para fornecedores** — enviado quando você convida um fornecedor para o portal do fornecedor.
+   * **E-mail de confirmação de conclusão do cadastro do fornecedor** — enviado quando um fornecedor conclui o cadastro.
+   * **E-mail de aprovação do fornecedor** — enviado quando a conta do fornecedor é aprovada.
+   * **E-mail de rejeição do fornecedor** — enviado quando a conta do fornecedor é rejeitada.
 
-    ```html
-    <a href="{{magic_link}}" target="_blank" style="
-        background-color: #B7184B;
-        border-radius: 25px;
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 12px 25px;
-        color: #FFFFFF;
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;">
-        Complete Registration
-    </a>
-    ```
+   O tipo de um modelo existente não pode ser alterado depois; o campo fica somente leitura durante a edição. Nesse caso, crie um novo modelo.
+4. **CC** — opcionalmente, selecione quem mais recebe uma cópia: **Usuário atribuído** (o usuário responsável pelo fornecedor) e **Referrer** (o usuário que convidou o fornecedor). Deixe vazio para enviar apenas ao fornecedor.
+5. Crie o corpo do e-mail no editor de texto à direita. Você pode formatar o texto, inserir listas e citações e alinhar o conteúdo. O botão **Upload** da barra de ferramentas insere uma imagem carregada diretamente no e-mail ou anexa outros arquivos como link. O ícone de código alterna para a visualização do código-fonte HTML, onde você pode editar o HTML subjacente diretamente e formatá-lo.
+6. **Espaços reservados**: o menu de propriedades da barra de ferramentas insere os espaços reservados disponíveis para o tipo de e-mail selecionado, por exemplo `{{magic_link}}` e `{{supplier_name}}`.
+7. Clique em **Salvar** para armazenar o modelo.
 
-### 3. Personalize o Texto do Link:
+### O espaço reservado `{{magic_link}}`
 
-• Modifique o texto entre as tags de abertura \<a> e de fechamento \</a> para refletir a ação que você deseja que o usuário execute. Por exemplo, “Concluir o registro” ou “Acessar sua conta”.
+O espaço reservado `{{magic_link}}` é substituído por uma URL de acesso única quando o e-mail é enviado. Ele direciona o destinatário a uma ação no portal do fornecedor, como concluir o cadastro. Para torná-lo um botão clicável, formate-o como link na visualização do código-fonte HTML:
 
-4\. Salve e Teste o Modelo:
+```html
+<a href="{{magic_link}}" target="_blank" style="
+    background-color: #B7184B;
+    border-radius: 25px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;">
+    Complete Registration
+</a>
+```
 
-• Depois de fazer as alterações, clique no botão Salvar.
+Ajuste o texto entre as tags `<a>` e `</a>` para indicar ao destinatário o que fazer, por exemplo "Concluir cadastro" ou "Acessar sua conta".
 
-• Você pode usar o botão Enviar Teste para enviar um e-mail de teste e garantir que o link funcione conforme o esperado.
+## Enviar um e-mail de teste
 
-## Melhores Práticas para Usar \{{magic\_link\}}
+Antes de usar um modelo, verifique como ele fica:
 
-• Posicionamento do link: Coloque o \{{magic\_link\}} em destaque no e-mail para garantir que os destinatários o acessem com facilidade.
+1. Clique em **Enviar teste** no canto superior direito do editor.
+2. Informe o endereço **E-mail do destinatário** para o qual o e-mail de teste deve ser enviado.
+3. Preencha os valores de exemplo exibidos para os espaços reservados (por exemplo, um nome de fornecedor de exemplo e um link de exemplo).
+4. Clique em **Enviar**. O DocBits envia o e-mail com os valores de exemplo, para que você possa verificar o layout, a substituição dos espaços reservados e o magic link.
 
-• Chamada para ação clara: O texto dentro do link deve ser uma chamada para ação clara, como “Concluir o registro” ou “Confirmar seu e-mail”.
+O e-mail de teste não é enviado a um fornecedor e não altera nenhum dado.
 
-• Estilo: Certifique-se de que o link esteja estilizado de forma consistente com o restante do modelo de e-mail e se destaque visualmente.
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-send-test-pt-20261111.png" alt="Janela Enviar Teste com o campo E-mail do destinatário, os valores de exemplo Magic link e Supplier name e os botões Cancelar e Enviar"><figcaption><p>Enviar um e-mail de teste com valores de exemplo</p></figcaption></figure>
 
-• Testes: Sempre envie um e-mail de teste depois de editar o modelo para verificar se o \{{magic\_link\}} é resolvido corretamente e se o estilo está apropriado.
+## Páginas relacionadas
 
-## Conclusão
-
-Ao definir corretamente o \{{magic\_link\}} nos seus modelos de e-mail, você garante que os destinatários recebam um e-mail personalizado e acionável, que os leve à tarefa apropriada no seu portal do fornecedor. Isso melhora a experiência do usuário e garante processos de integração e comunicação tranquilos.
-
-\
-
-Esta documentação fornece instruções passo a passo para administradores sobre como definir e usar o \{{magic\_link\}} em modelos de e-mail, garantindo que os e-mails sejam funcionais e visualmente atraentes.
+* [Notificações por e-mail](../global-settings/email-notification/README.md) — notificações para eventos internos de documentos
+* [Configurações Gerais do Fornecedor](supplier-general-settings.md)
+* [Permissões do Fornecedor](supplier-permissions.md)
+* [Portal do Fornecedor](../../setup/supplier-portal/README.md) — ativar o portal e convidar fornecedores

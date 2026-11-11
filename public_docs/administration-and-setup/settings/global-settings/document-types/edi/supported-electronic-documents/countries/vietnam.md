@@ -34,11 +34,15 @@ Een streepje betekent dat de statuscontrole geen eigen component voor deze exact
 
 ## Uitlegvideo per land
 
-{% hint style="info" %}
-De Nederlandse uitlegvideo voor Vietnam is nog niet beschikbaar. Gebruik de echte DocBits-schermafbeelding hierboven, de configuratiematrix en de acceptatiecontroles hieronder.
-{% endhint %}
+Deze rondleiding met Nederlandse uitleg toont de bestaande DocBits-configuratie voor Vietnam, zonder instellingen te wijzigen. Controleer de gebruikte bron en actieve versie en test representatieve bestanden en exports in uw eigen organisatie.
 
-<!-- Dutch Vietnam film pending: the speech submission has no recoverable request ID. No repeat submission or unavailable media link. -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_vietnam/v2/nl.mp4" %}
+
+[Afspelen met Nederlandse ondertitels en gesproken tekst](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_vietnam/v2/nl.html)
+
+[Video (MP4)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_vietnam/v2/nl.mp4) · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_vietnam/v2/nl.vtt)
+
+Vergroot de speler voor code en kleine bedieningselementen.
 
 ## Acceptatiecontroles
 

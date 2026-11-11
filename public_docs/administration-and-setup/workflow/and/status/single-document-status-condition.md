@@ -11,18 +11,18 @@ Diese Workflow-Karte ist darauf zugeschnitten, Operationen an Dokumenten auf Bas
 1. **Operator**
    * **Beschreibung**: Gibt die Methode zur Auswertung des Dokumentstatus anhand der ausgewählten Bedingung an.
    * **Optionen**:
-     * **is**: Löst die Operation aus, wenn der aktuelle Status des Dokuments mit dem ausgewählten Status übereinstimmt.
-     * **ist nicht**: Löst die Operation aus, wenn der aktuelle Status des Dokuments nicht mit dem ausgewählten Status übereinstimmt.
+     * **Ist**: Löst die Operation aus, wenn der aktuelle Status des Dokuments mit dem ausgewählten Status übereinstimmt.
+     * **Ist nicht**: Löst die Operation aus, wenn der aktuelle Status des Dokuments nicht mit dem ausgewählten Status übereinstimmt.
 2. **Status**
    * **Beschreibung**: Ermöglicht die Auswahl eines einzelnen Dokumentstatus zur Festlegung der Bedingung.
-   * **Statusbeispiele**: „Fehler“, „Exportfehler“, „Bereit zur Validierung“, „Bereit zur Überprüfung“, „Genehmigung ausstehend“, „Zweite Genehmigung ausstehend“.
+   * **Auswählbare Status**: Fehler, Exportfehler, Abgeschlossen, Abgelehnt, Bereit zur Überprüfung, Bereit zur Validierung, Genehmigung ausstehend, Zweite Genehmigung ausstehend, Exportiert und VERTEX-STEUER ABGELEHNT.
    * **Detailliert**: Benutzer wählen einen Status aus einem Dropdown oder einer Reihe von Optionsfeldern. Dieser Status dient dann als Kriterium für die Operation der Karte.
 
 **Funktionalität**
 
 * **Erkennung des Dokumentstatus**: Identifiziert den aktuellen Status eines Dokuments, während es durch das ERP-System verarbeitet wird.
 * **Bedingungsauswertung**:
-  * Basierend auf dem ausgewählten Operator (`is` oder `is not`) prüft die Karte, ob der aktuelle Status des Dokuments mit dem gewählten Statuskriterium übereinstimmt.
+  * Basierend auf dem ausgewählten Operator (**Ist** oder **Ist nicht**) prüft die Karte, ob der aktuelle Status des Dokuments mit dem gewählten Statuskriterium übereinstimmt.
 * **Ausführung der Aktion**:
   * **Bedingung erfüllt (True)**: Stimmt der Status überein (oder nicht überein, je nach Operator), wird die entsprechende Aktion eingeleitet. Dies kann das Weiterleiten zur weiteren Verarbeitung, das Erzeugen von Benachrichtigungen oder andere vordefinierte Workflows sein.
   * **Bedingung nicht erfüllt (False)**: Ist die Bedingung nicht erfüllt, wird keine Aktion ausgeführt oder ein alternativer Pfad ausgelöst.
@@ -46,7 +46,7 @@ Die Workflow-Karte "Single Document Status Condition" vereinfacht das Dokumenten
 
 **Wo:** Standard-Workflow-Designer → Und → Status.
 
-**Konfiguration:** Wählen Sie in Version 2 den Operator „ist“ (`is`) und den vorhandenen Status Genehmigung ausstehend (`validated_pending_approval`).
+**Konfiguration:** Wählen Sie in Version 2 den Operator **Ist** und den vorhandenen Status Genehmigung ausstehend (`validated_pending_approval`).
 
 **Erwartetes Ergebnis und Gegenbeispiel:** Ein Beleg mit genau diesem Status erfüllt die Bedingung. Ein bereits exportierter Beleg erfüllt sie nicht. Die Karte prüft den Status und ändert ihn nicht. Für mehrere zulässige Status verwenden Sie die gesonderte Statuslisten-Karte.
 

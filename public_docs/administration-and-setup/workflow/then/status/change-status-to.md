@@ -1,73 +1,66 @@
-# Ändern Sie den Status in
+# Status auf … ändern
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v1-de-de.png" alt="Ändern Sie den Status in, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v1-de-de.png" alt="Workflow-Karte Status auf … ändern, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v2-de-de.png" alt="Ändern Sie den Status in, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v2-de-de.png" alt="Workflow-Karte Status auf … ändern, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v3-de-de.png" alt="Ändern Sie den Status in, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v3-de-de.png" alt="Workflow-Karte Status auf … ändern, Workflows auslösen, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
-## **Zweck:**
+## Zweck
 
-Die Workflow-Karte **"Change Status"** wird verwendet, um den Status eines Dokuments in einen der vordefinierten Zustände zu ändern – **Fehler, Abgelehnt, Bereit zur Validierung, Genehmigung ausstehend, Zweite Genehmigung ausstehend** – und optional auf Basis der Statusänderung zugehörige Workflows auszulösen. Diese Karte automatisiert den Prozess von Statusaktualisierungen und Workflow-Auslösern und gewährleistet so ein effizientes Dokumentenmanagement und eine effiziente Fehlerbehandlung.
+Die Karte **Status auf … ändern** setzt das Dokument auf einen neuen Status, zum Beispiel um es zur Genehmigung weiterzugeben oder als abgelehnt zu markieren. Sie finden sie im Workflow-Designer unter **Dann → Status**.
 
-## **Bestandteile der Karte:**
+## Einstellungen
 
-1. **Status**
-   * **Beschreibung**: Gibt den neuen Status an, der auf das Dokument angewendet wird.
-   * **Optionen**:
-     * **Fehler**: Markiert das Dokument als fehlerbehaftet.
-     * **Abgelehnt**: Gibt an, dass das Dokument abgelehnt wurde und nicht weiter fortfährt.
-     * **Bereit zur Validierung**: Setzt das Dokument so, dass es vom nächsten Benutzer oder Systemprozess geprüft und validiert wird.
-     * **Genehmigung ausstehend**: Versetzt das Dokument in einen Wartezustand zur Freigabe.
-     * **Zweite Genehmigung ausstehend**: Stellt das Dokument für eine zweite Freigabestufe zurück, sofern zutreffend.
-2. **Workflows auslösen**
-   * **Beschreibung**: Legt fest, ob nach der Statusänderung nachfolgende Workflows ausgelöst werden sollen.
-   * **Optionen**:
-     * **True**: Startet alle relevanten Workflows auf Basis der Statusänderung.
-     * **False**: Verhindert die Ausführung von Workflows nach der Statusänderung.
+### Status
 
-## **Funktionalität:**
+Der Status, den das Dokument erhält. Sie können wählen:
 
-* **Bedingungsauswertung**: Das System wertet die in den Abschnitten **„Wenn“** und **„Und“** festgelegten Bedingungen aus. Sind diese Bedingungen erfüllt, fährt die Karte fort und ändert den Status des Dokuments in den ausgewählten Wert.
-* **Statusaktualisierung**: Sind die Bedingungen erfüllt, wird der Status des Dokuments je nach Auswahl des Benutzers auf eine der vordefinierten Optionen aktualisiert (Fehler, Abgelehnt, Bereit zur Validierung, Genehmigung ausstehend, Zweite Genehmigung ausstehend).
-* **Workflow-Auslöseaktion**: Ist **Workflows auslösen** auf **True** gesetzt, startet das System nach der Statusaktualisierung automatisch alle zugehörigen Workflows. Ist die Einstellung auf **False** gesetzt, werden keine zusätzlichen Workflows ausgelöst, und der Prozess endet mit der Statusänderung.
+| Status | Bedeutung |
+| --- | --- |
+| **Fehler** | Das Dokument wird als fehlerhaft markiert. |
+| **Abgelehnt** | Das Dokument wird abgelehnt. |
+| **Bereit zur Validierung** | Das Dokument wartet darauf, dass ein Benutzer es in der Validierung prüft. |
+| **Genehmigung ausstehend** | Das Dokument wartet auf die Genehmigung. |
+| **Zweite Genehmigung ausstehend** | Das Dokument wartet auf die zweite Genehmigung. |
+| **Archiviert** | Das Dokument wird ins Archiv verschoben. Wird es wiederhergestellt, erhält es seinen vorherigen Status zurück. |
+| **Abgeschlossen** | Die Verarbeitung des Dokuments ist abgeschlossen. |
+| **Exportiert** | Das Dokument wurde exportiert, bleibt aber offen, zum Beispiel damit es noch zur Genehmigung zurückgegeben werden kann. |
 
-## **Einrichtung und Konfiguration:**
+Das Setzen eines Status führt den Schritt dahinter nicht aus. **Zweite Genehmigung ausstehend** bedeutet zum Beispiel nicht, dass jemand die erste Genehmigung erteilt hat.
 
-Um diese Karte zu konfigurieren, müssen Benutzer:
+### Workflows auslösen (nur Version 3)
 
-1. Den gewünschten **Status** angeben, auf den das Dokument bei der Bedingungsauswertung gesetzt wird (Fehler, Abgelehnt, Bereit zur Validierung, Genehmigung ausstehend oder Zweite Genehmigung ausstehend).
-2. Wählen, ob nach der Statusänderung **Workflows ausgelöst** werden sollen, indem **True** oder **False** ausgewählt wird.
-3. Die Karte führt ihre Aktion nur aus, wenn beide Bedingungen in den Abschnitten **„Wenn“** und **„Und“** als erfüllt ausgewertet werden.
+Legt fest, ob der Statuswechsel Workflows starten darf.
 
-## **Fazit:**
+* **Falsch:** Dieser Statuswechsel startet keinen Workflow. Verwenden Sie diesen Wert, außer ein anderer Workflow soll mit dem Dokument in seinem neuen Status weiterarbeiten.
+* **Wahr:** DocBits startet die Workflows, deren Bedingungen auf das Dokument mit seinem neuen Status passen. Sie starten, nachdem der aktuelle Workflow beendet ist. Die Karte wartet nicht auf sie und zeigt nicht an, ob sie erfolgreich waren; siehe dazu die Workflow-Logs.
 
-Die Workflow-Karte **"Change Status"** bietet einen optimierten Ansatz zur Verwaltung von Dokumentstatus und zum Auslösen zugehöriger Workflows. Sie stellt sicher, dass Dokumente automatisch in den korrekten Status überführt und die erforderlichen Aktionen je nach Statusänderung ausgeführt werden. Durch das Festlegen klarer Bedingungen für die Ausführung reduziert sie den manuellen Aufwand und steigert die Workflow-Effizienz.
+Wählen Sie immer einen Wert. Achten Sie bei **Wahr** darauf, dass der Workflow, der diese Karte enthält, nicht selbst auf den neuen Status passt, sonst läuft er ein zweites Mal. Siehe [Status ändern, ohne den Workflow neu zu starten](../../masterclass/status-and-reentry.md).
 
-<!-- workflow-card-practical-example-20261021 -->
+## Kartenversionen
 
-## Praxisbeispiel
+| Version | Einstellungen | Startet Workflows nach dem Wechsel |
+| --- | --- | --- |
+| **1** | Status | Ja, immer |
+| **2** | Status | Ja, immer |
+| **3** | Status, Workflows auslösen | Nur mit **Workflows auslösen** = **Wahr** |
 
-**Wann nutzen:** Einen geprüften Beleg zur Freigabe weitergeben.
+Die Versionen 1 und 2 funktionieren gleich. Version 3 ergänzt **Workflows auslösen**, damit Sie entscheiden können, ob der neue Status andere Workflows startet. Verwenden Sie Version 3 für neue Workflows. Wenn Sie eine bestehende Karte von Version 3 auf eine ältere Version zurückstellen, gilt **Workflows auslösen** nicht mehr, und jeder Statuswechsel kann wieder Workflows starten.
 
-**Wo:** Standard-Workflow-Designer → Dann → Status → Status auf … ändern.
+## Gut zu wissen
 
-**Konfiguration:** Wählen Sie Version 3 von `staus_change`, den Status Genehmigung ausstehend (`validated_pending_approval`) und setzen Sie das Auslösen weiterer Workflows auf `false` (`trigger_docflow=false`). Verwenden Sie eine isolierte synthetische Rechnung, deren vorhergehende Prüfungen erfüllt sind.
+* **Gleicher Status, keine Wirkung.** Hat das Dokument bereits den gewählten Status, ändert sich nichts, und kein Workflow startet.
+* **Archiviert startet nie Workflows**, in keiner Version.
+* **Webhooks sind nicht betroffen.** Webhooks für Statuswechsel werden unabhängig davon gesendet, was Sie bei **Workflows auslösen** wählen.
+* **Ein Wechsel kann verweigert werden.** Wenn Ihre Organisation abgeschlossene Dokumente sperrt, kann ein **Abgeschlossen**-Dokument nur auf **Archiviert** oder **Fehler** gesetzt werden. Jeder andere Wechsel wird verweigert, der Status bleibt unverändert, und das Workflow-Log zeigt einen Fehler.
+* **Tests simulieren nur.** In einem Kartentest oder Advanced Test im Workflow-Designer sehen die folgenden Karten den neuen Status, aber der Status wird nicht gespeichert, und kein Workflow wird gestartet.
 
-**Erwartetes Ergebnis und Gegenbeispiel:** Eine zulässige, erfolgreiche Änderung versetzt den Beleg in den gewählten Status. Ist eine vorhergehende Bedingung falsch, wird diese Aktion nicht erreicht und ändert keinen Status. Eine abgelehnte oder fehlgeschlagene API-Änderung zählt nicht als Erfolg: Prüfen Sie den tatsächlichen Status und die Protokolle. Die Karte führt selbst keinen Export aus.
+## Beispiel
 
-### Kartenversionen
+**Ziel:** Nach den Prüfungen eine Rechnung zur Genehmigung weitergeben.
 
-Der ausdrückliche Schalter zum Auslösen weiterer Workflows ist in v3 verfügbar. Version 1 und 2 bieten ihn nicht; ihr älterer Aktualisierungspfad verwendet das Standardverhalten zum Auslösen von Workflows. Übertragen Sie eine v3-Einstellung `false` nicht ungeprüft auf eine ältere Kartenversion.
+1. Bedingungen: **Dokumenttyp** ist _Rechnung_ und **Dokumentstatus** **Ist** **Bereit zur Validierung**.
+2. **Status auf … ändern** (Version 3): **Status** = **Genehmigung ausstehend**, **Workflows auslösen** = **Falsch**.
 
-Dies ist eine am Ausführungscode geprüfte Konfiguration mit erwartetem Ergebnis. Es wurde kein Workflow und keine Statusänderung ausgeführt.
-
-## Admin-Beispielvideo
-
-Wann ich einen geprüften Beleg auf eine Freigabestufe setze und wie ich in Version 3 das Auslösen weiterer Workflows steuere. Die Beispiele zeigen erwartete Ergebnisse.
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-change-status-admin/v1/de.mp4" %}
-
-[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-change-status-admin/v1/de-theme-v4.html)
-
-[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-change-status-admin/v1/de.txt)
+**Ergebnis:** Die Rechnung wechselt auf **Genehmigung ausstehend** und wartet auf die Genehmigung. Der Wechsel startet keinen anderen Workflow, und dieser Workflow läuft nicht erneut, weil das Dokument nicht mehr **Bereit zur Validierung** ist.

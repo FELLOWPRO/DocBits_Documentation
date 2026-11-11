@@ -46,7 +46,15 @@ Um travessão significa que a verificação de estado não indicou um componente
 
 ## Vídeo explicativo do país
 
-O filme narrado deste país ainda não está disponível.
+Este percurso com narração em português mostra a configuração existente do DocBits para este país, sem alterar as definições. Confirme a origem utilizada e a versão ativa e teste ficheiros e exportações representativos na sua organização.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_brazil/v2/pt.mp4" %}
+
+[Reproduzir com legendas em português e texto da narração](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_brazil/v2/pt.html)
+
+[Vídeo (MP4)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_brazil/v2/pt.mp4) · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/edocs_country_brazil/v2/pt.vtt)
+
+Amplie o leitor para ver código e controlos pequenos.
 
 ## Verificações de aceitação
 

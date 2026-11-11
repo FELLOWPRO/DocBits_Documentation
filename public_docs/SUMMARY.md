@@ -610,6 +610,7 @@
   * [Zarządzanie pamięcią podręczną](administration-and-setup/settings/cache-management.md)
   * [Infrastruktura](administration-and-setup/settings/infrastructure.md)
   * [Wygląd](administration-and-setup/settings/appearance.md)
+* [Metryki wydajności](administration-and-setup/performance-metrics.md)
 * [Przepływ pracy](administration-and-setup/workflow/README.md)
   * [Ścieżka od początkującego do eksperta](administration-and-setup/workflow/workflow-learning-path.md "Ścieżka nauki – od początkującego do eksperta")
     * [Kiedy uruchamia się mój workflow?](administration-and-setup/workflow/workflow-execution-model.md)

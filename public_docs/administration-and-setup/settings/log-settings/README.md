@@ -6,7 +6,7 @@ Rejestrowanie aktywności (menu **SYSTEM I ADMINISTRACJA**) pokazuje zdarzenia s
 
 ## Baner analityczny
 
-U góry strony baner **Analityka** zawiera link **Wyświetl panel analityczny**, który otwiera panel analityczny z wykresami, metrykami i monitorowaniem w czasie rzeczywistym. Podtytuł banera pozostaje w polskim interfejsie po angielsku.
+U góry strony baner **Analityka** zawiera link **Wyświetl panel analityczny**, który otwiera [panel analityczny](analytics.md) z wykresami, metrykami i monitorowaniem w czasie rzeczywistym. Podtytuł banera pozostaje w polskim interfejsie po angielsku.
 
 ## Filtry
 

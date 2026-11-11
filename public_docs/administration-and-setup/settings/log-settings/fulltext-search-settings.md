@@ -1,55 +1,55 @@
 # Volltextsuche-Einstellungen
 
-<figure><img src="../../../.gitbook/assets/fulltext-search-settings-module-required-de-20261011.png" alt="Volltextsuche-Einstellungen in der Sandbox mit dem Dialog „Volltext-Modul erforderlich“ und den Schaltflächen „Zu Modulen“ und „Jetzt aktivieren“"><figcaption><p>Ist die Volltextsuche deaktiviert, erklärt dieser Dialog die nächsten Schritte.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fulltext_search_settings.png" alt="Volltextsuche-Einstellungen in der Sandbox mit einem Dialog, der das erforderliche Modul erklärt, und den Schaltflächen Go to Modules und Enable Now"><figcaption><p>Ist die Volltextsuche deaktiviert, erklärt dieser Dialog die nächsten Schritte.</p></figcaption></figure>
 
-Die Volltextsuche-Einstellungen legen fest, was DocBits indexiert und wie diese Inhalte für die Suche über Dokumente, ERP-Stammdaten und Vorlagen hinweg verfügbar werden. Die Einstellungsseite zeigt ein Anforderungs-Dialogfenster, bis das **Volltextsuche-Modul** aktiviert ist — die benutzerseitige Abfragesprache finden Sie unter [Volltextsuche](../document-processing/module/fulltext-search.md).
+Die Volltextsuche-Einstellungen legen fest, was DocBits indexiert und wie diese Inhalte über Dokumente, ERP-Stammdaten und Vorlagen hinweg durchsuchbar werden. Die Einstellungsseite zeigt einen Anforderungsdialog, bis das **Fulltext Search module** aktiviert ist — die benutzerseitige Abfragesprache finden Sie unter [Fulltext Search](../document-processing/module/fulltext-search.md).
 
 ## Voraussetzungen
 
-Das Volltextsuche-Modul muss unter **Einstellungen → Module → Dashboards & Analytics → Volltextsuche** aktiviert sein. Ist das Modul nicht aktiviert, bietet der Dialog drei Aktionen:
+Das **Fulltext Search module** muss unter **Settings → Module → Dashboards & Analytics → Full text search** aktiviert sein. Ist das Modul nicht aktiviert, bietet der Dialog drei Aktionen:
 
-* **Hilfe (?)** — Öffnet die Volltextsuche-Dokumentation in einem neuen Tab, bevor Sie eine Einstellung ändern.
-* **Zu Modulen** — Öffnet die Modul-Einstellungen unter Dashboards & Analytics, um die Konfiguration zu prüfen.
-* **Jetzt aktivieren** — Öffnet den Abonnement-Dialog. Prüfen und bestätigen Sie diesen Dialog, bevor das Modul aktiviert wird; ein Klick auf diese Schaltfläche allein aktiviert das Modul noch nicht.
+* **Help (?)** — Öffnet die Volltextsuche-Dokumentation in einem neuen Tab, bevor Sie eine Einstellung ändern.
+* **Go to Modules** — Öffnet die Moduleinstellungen von Dashboards & Analytics, um die Konfiguration zu prüfen.
+* **Enable Now** — Öffnet den Abonnement-Dialog. Prüfen und bestätigen Sie diesen Dialog, bevor das Modul aktiviert wird; ein Klick auf diese Schaltfläche allein aktiviert es nicht.
 
 Die Einstellungsseite selbst wird verfügbar, sobald das Modul aktiv ist.
 
 ## Aufbau der Seite
 
-Die Einstellungsseite ist in drei Reiter unterteilt, von denen jeder einen anderen Inhaltstyp abdeckt, den die Volltextsuche indexieren kann.
+Die Einstellungsseite ist in drei Reiter gegliedert: **Documents**, **ERP** und **Templates**. Jeder Reiter umfasst einen anderen Inhaltstyp, den die Volltextsuche indexieren kann.
 
-### Reiter „Dokumente“
+### Reiter Documents
 
-Der Reiter Dokumente umfasst alles rund um die Indexierung verarbeiteter Dokumente:
+Der Reiter Documents umfasst alles rund um die Indexierung verarbeiteter Dokumente:
 
-* **Indexierungs-Statistik** — Summen für indexierte und ausstehende Dokumente, bei Bedarf manuell aktualisierbar.
-* **Vektor-Einstellungen** — drei organisationsweite Schalter, die festlegen, ob die Vektor-Indexierung parallel zum Textindex für Dokumente läuft. Die Vektor-Indexierung versorgt den `vector:`-Suchmodus und die Funktion „Ähnliche finden“.
-* **Reindexierungs-Aktionen** — starten Sie eine vollständige oder inkrementelle Neuindexierung. Während die Neuindexierung läuft, sehen Sie den aktuellen Fortschritt (Dokumente pro Minute, voraussichtliche Restzeit), den Status des Streams und den letzten Fehler (falls vorhanden).
-* **Synchronisierungs-Diagnose** — bei Bedarf abrufbare Diagnose für Fälle, in denen der Index nicht mit dem zugrunde liegenden Dokumentenspeicher übereinzustimmen scheint.
+* **Indexing statistics** — Summen für indexierte und ausstehende Dokumente, bei Bedarf aktualisiert.
+* **Vector preferences** — drei organisationsweite Schalter, die steuern, ob die Vektorindexierung parallel zum Textindex für Dokumente läuft. Die Vektorindexierung ermöglicht den Abfragemodus `vector:` und die Funktion „Find Similar“.
+* **Reindex actions** — startet eine vollständige oder inkrementelle Neuindexierung. Während eine Neuindexierung läuft, sehen Sie den Live-Fortschritt (Dokumente pro Minute, voraussichtliche Restzeit), den aktuellen Stream-Status und den letzten Fehler (falls vorhanden).
+* **Sync diagnostics** — bei Bedarf abrufbare Diagnose für Fälle, in denen der Index nicht mit dem zugrunde liegenden Dokumentenspeicher übereinzustimmen scheint.
 
-<mark>Die Neuindexierung ist nicht zerstörerisch — die bestehende Suche funktioniert weiter, während der neue Index aufgebaut wird.</mark>
+<mark>Die Neuindexierung ist nicht destruktiv — die bestehende Suche funktioniert weiter, während der neue Index aufgebaut wird.</mark>
 
-### Reiter „ERP“
+### Reiter ERP
 
-Der Reiter ERP steuert die Indexierung der ERP-Stammdaten — Lieferanten, Kunden, Artikel und ähnliche Entitäten. Jede Entität hat eigene Schalter:
+Der Reiter ERP steuert die Indexierung der ERP-Stammdaten — Lieferanten, Kunden, Artikel und ähnliche Entitäten. Jede Entität hat einen eigenen Schalter:
 
-* **Indexierung** — die Entität wird textlich indexiert und ist im Dashboard durchsuchbar.
-* **Vektor** — die Entität wird vektoriell indexiert und kann über semantische Abfragen gefunden werden.
+* **Indexing** — indexiert die Entität im Textindex, sodass sie im Dashboard durchsuchbar ist.
+* **Vector** — indexiert die Entität im Vektorindex, sodass sie über semantische Abfragen gefunden werden kann.
 
-Über die Aktion **Alle umschalten** am Anfang der Liste lässt sich derselbe Ein/Aus-Zustand für alle Entitäten gleichzeitig anwenden. Die Indexierung startet im Hintergrund; eine Anzeige pro Zeile zeigt an, wenn sie läuft.
+Mit der Aktion **Toggle all** am Anfang der Liste wenden Sie denselben Ein-/Aus-Zustand gleichzeitig auf alle Entitäten an. Die Indexierung startet im Hintergrund; eine Anzeige in jeder Zeile zeigt an, wenn sie läuft.
 
-### Reiter „Vorlagen“
+### Reiter Templates
 
-Der Reiter Vorlagen listet die Vorlagen-Versionen, die dem Volltextindex bekannt sind. Mit dieser Ansicht bestätigen Sie nach einem erneuten Deployment, dass die von Ihnen genutzten Vorlagen-Versionen im Index vorhanden sind.
+Der Reiter Templates listet die Vorlagenversionen, die dem Volltextindex bekannt sind. Mit dieser Ansicht bestätigen Sie nach einem erneuten Deployment, dass die von Ihnen genutzten Vorlagenversionen im Index vorhanden sind.
 
 ## Was indexiert wird
 
 Sobald aktiviert und konfiguriert, ermöglicht die Volltextsuche:
 
-* Die Suche über den gesamten Inhalt von Dokumenten (nicht nur die Metadatenfelder).
-* Das Auffinden von Dokumenten anhand von Text in den hochgeladenen Dateien.
+* Die Suche über den gesamten Dokumentinhalt (nicht nur über Metadatenfelder).
+* Das Auffinden von Dokumenten anhand von Text in hochgeladenen Dateien.
 * Erweiterte Suchoperatoren für präzise Abfragen.
-* Den direkten Zugriff auf Suchergebnisse vom Dashboard aus.
-* Semantische Suche (`vector:`-Präfix), wenn die Vektor-Indexierung für den jeweiligen Inhaltstyp aktiv ist.
+* Den direkten Zugriff auf Suchergebnisse aus dem Dashboard.
+* Die semantische Suche (`vector:`-Präfix), wenn die Vektorindexierung für den jeweiligen Inhaltstyp aktiv ist.
 
-Die vollständige Referenz der Abfragesprache — einschließlich Bereichsabfragen, intelligenter Filter und KI-Suchmodus — finden Sie auf der Modul-Seite [Volltextsuche](../document-processing/module/fulltext-search.md).
+Die vollständige Referenz der Abfragesprache — einschließlich Bereichsabfragen, intelligenter Filter und des KI-Suchmodus — finden Sie auf der Modulseite [Fulltext Search](../document-processing/module/fulltext-search.md).

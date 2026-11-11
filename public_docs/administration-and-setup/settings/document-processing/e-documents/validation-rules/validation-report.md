@@ -59,6 +59,21 @@ Each finding is one row:
 
 DocBits has plain-language texts for the most common rules. For a rule without such a text, the report shows the technical message of the validator.
 
+## Work with a long report
+
+An invoice can break many rules at once. The report keeps the verdict and the counts in a fixed header while the findings scroll, so you can always see what the whole invoice is worth.
+
+* **Filter by level.** The filter buttons above the findings narrow the list to errors, warnings or information messages. The rows **Result per level** work as filters too: select a level to see only its findings.
+* **Search.** A search field filters the open list by text, for example a rule code, a field name or a word from the message.
+* **Expand and collapse.** Findings open on their own when they are errors, or when the report has at most three rows. Use the expand and collapse actions for the whole list; each row also opens on its own.
+* **Copy a code or an XPath.** Findings carry a copy action for the rule code and for the XPath of the faulty element, for example for a message to your administrator.
+* **Open details when you need them.** The document details start collapsed. Technical details such as the check number and the XPath stay inside the finding, while the row itself shows the plain check name and the rule code as a reference.
+* **Return to your place.** When you select **Show in XML** and open the report again, the open rows, the filter and the scroll position stay as you left them.
+* **Download or print.** The **Download** action in the footer of the report offers printing and a PDF, and the HTML and XML files of the report. The file name, the export date and the page number appear on the PDF.
+* **Reject from the report.** The reject action sits on the left in the footer, apart from the download action, so you do not reject an invoice while looking for the PDF.
+
+On a narrow screen, for example on a phone, each finding becomes a card instead of a row.
+
 ## Next
 
 * [Next step and reject a document](validation-next-step-and-reject.md): what to do after you read the report.

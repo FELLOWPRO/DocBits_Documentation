@@ -205,7 +205,7 @@
         * [Propósito e Uso](administration-and-setup/settings/global-settings/document-types/fields/purpose-and-use.md)
         * [Adicionando e Editando Campos](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)
         * [Configurando Propriedades de Campo](administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md)
-        * [Validação e limite de correspondência](administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md)
+        * [Validação e pontuação de correspondência](administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md)
         * [Melhores Práticas](administration-and-setup/settings/global-settings/document-types/fields/best-practices-3.md)
         * [Solução de Problemas](administration-and-setup/settings/global-settings/document-types/fields/troubleshooting-2.md)
         * [Criar campos com encargos adicionais](administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md)

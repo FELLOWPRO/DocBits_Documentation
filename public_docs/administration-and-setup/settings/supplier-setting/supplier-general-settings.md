@@ -1,6 +1,6 @@
 # Impostazioni Generali del Fornitore
 
-<figure><img src="../../../.gitbook/assets/supplier-general-settings-overview-it-20261111.png" alt="Pagina Impostazioni Generali Del Fornitore con le sezioni Generale, Stato e Raggruppamento ID fornitore"><figcaption><p>Pagina <strong>Impostazioni Generali Del Fornitore</strong>. Dall'alto verso il basso: <strong>Generale</strong> (campi di invito aggiuntivi, stato e raggruppamento ID fornitore), <strong>Carica il logo</strong>, <strong>Politica e dichiarazione sulla privacy</strong> e <strong>Documenti di riferimento per la registrazione dei fornitori</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier-general-settings-overview-it-20261111.png" alt="Pagina Impostazioni Generali Del Fornitore con le sezioni Generale, Stato e Raggruppamento ID fornitore"><figcaption><p>Pagina <strong>Impostazioni Generali Del Fornitore</strong>. Nel riquadro, dall'alto verso il basso: la sezione <strong>Generale</strong> con <strong>Portale fornitori Campi di invito aggiuntivi</strong>, poi <strong>Stato</strong> e <strong>Raggruppamento ID fornitore</strong>. Le sezioni <strong>Carica il logo</strong>, <strong>Politica e dichiarazione sulla privacy</strong> e <strong>Documenti di riferimento per la registrazione dei fornitori</strong> si trovano più in basso nella stessa pagina.</p></figcaption></figure>
 
 ### Panoramica
 
@@ -11,7 +11,7 @@ La pagina **Impostazioni Generali Del Fornitore** (Impostazioni → Impostazioni
   * **Stato**: definisce gli stati del flusso di lavoro che un fornitore può attraversare e chi può approvare ciascuno di essi.
   * **Raggruppamento ID fornitore**: raggruppa più ID fornitore in modo che vengano trattati come un unico fornitore.
 * **Carica il logo** — il logo aziendale mostrato nel portale fornitori e nelle e-mail di invito.
-* **Politica e dichiarazione sulla privacy** — i documenti legali che i fornitori devono accettare.
+* **Politica e dichiarazione sulla privacy** — il documento legale in PDF che i fornitori devono accettare.
 * **Documenti di riferimento per la registrazione dei fornitori** — documenti di riferimento che i fornitori possono consultare durante la registrazione.
 
 Queste sezioni hanno effetto solo quando il modulo **Portale fornitori** è attivo; vedere [Portale fornitori](../../setup/supplier-portal/README.md) per l'attivazione.
@@ -54,52 +54,42 @@ Usare **Raggruppamento ID fornitore** quando lo stesso fornitore compare nel sis
 
 #### Scopo
 
-La funzione **Carica il logo** consente agli amministratori di personalizzare il portale fornitori caricando il logo della propria azienda. Questo migliora il riconoscimento del marchio e fornisce un'esperienza visiva coerente per gli utenti che accedono al portale.
+La funzione **Carica il logo** consente agli amministratori di personalizzare il portale fornitori caricando il logo della propria azienda. Il logo viene memorizzato in due versioni: una per la visualizzazione su desktop e una per la visualizzazione su mobile.
 
 #### Passaggi per caricare un logo
 
-1. **Accedi alle Impostazioni Generali del Fornitore**:
-   * Naviga alla sezione **Impostazioni Generali Del Fornitore** dal menu principale.
-2. **Trova la sezione Carica il logo**:
-   * Scorri verso il basso fino alla sezione **Carica il logo** all'interno della pagina delle impostazioni.
-3. **Carica un nuovo logo**:
-   * Clicca sull'area **Carica il logo** per aprire la finestra di selezione file.
-   * Seleziona il file immagine che desideri caricare. I formati supportati includono tipicamente `.png`, `.jpg` o `.jpeg`.
-   * Il logo caricato verrà visualizzato nell'area di anteprima.
-4. **Salva il logo caricato**:
-   * Una volta caricato il logo, clicca sul pulsante **Salva** per applicare le modifiche.
-   * Il nuovo logo verrà ora visualizzato in tutto il portale fornitori.
+1. **Aprire la sezione**: in **Impostazioni Generali Del Fornitore**, scorrere fino a **Carica il logo**.
+2. **Scegliere l'area giusta**: la sezione contiene due aree di caricamento affiancate, riconoscibili dalle icone a destra del campo — l'icona del portatile per il **logo desktop** e l'icona dello smartphone per il **logo mobile**. In ciascuna area è indicato il nome del file attualmente memorizzato.
+3. **Caricare un'immagine**: fare clic sull'area per aprire la finestra di selezione del file e scegliere un'immagine in formato `.png`, `.jpg`, `.jpeg` o `.webp`. L'anteprima compare subito sotto l'area.
+4. **Ripetere per l'altra area** se serve una versione diversa per desktop e mobile: le due aree si caricano separatamente.
+5. **Salvare**: fare clic su **Salva** in basso a destra nella sezione. Fino a quel momento le immagini restano solo nell'anteprima e non vengono applicate al portale fornitori.
+
+<figure><img src="../../../.gitbook/assets/supplier-general-settings-logo-it-20261111.png" alt="Sezione Carica il logo con l'area per il logo desktop, l'area per il logo mobile e il pulsante Salva"><figcaption><p>Sezione <strong>Carica il logo</strong>: a sinistra l'area per il <strong>logo desktop</strong> (icona del portatile), a destra l'area per il <strong>logo mobile</strong> (icona dello smartphone). Sotto ogni area è mostrata l'anteprima dell'immagine memorizzata; il pulsante <strong>Salva</strong> in basso a destra applica entrambe le versioni.</p></figcaption></figure>
 
 #### Migliori pratiche
 
-* **Dimensioni del logo**: assicurati che le dimensioni del logo siano ottimizzate per le visualizzazioni desktop e mobili. Il sistema potrebbe offrire linee guida o ridimensionamento automatico.
-* **Dimensione del file**: utilizza un file immagine compresso per ridurre i tempi di caricamento e migliorare l'esperienza dell'utente.
-* **Coerenza del marchio**: utilizza lo stesso logo su tutte le piattaforme per mantenere un'identità di marchio coerente.
+* **Dimensioni del logo**: preparare due immagini, una orizzontale per il desktop e una più compatta per il mobile, così il logo resta leggibile su entrambe le visualizzazioni.
+* **Dimensione del file**: utilizzare un file immagine compresso per ridurre i tempi di caricamento e migliorare l'esperienza dell'utente.
+* **Coerenza del marchio**: utilizzare lo stesso logo su tutte le piattaforme per mantenere un'identità di marchio coerente.
 
 ### Politica e dichiarazione sulla privacy
 
 #### Scopo
 
-La sezione **Politica e dichiarazione sulla privacy** consente agli amministratori di caricare o definire i documenti legali che regolano l'uso del portale fornitori. Questi documenti sono critici per la conformità ai requisiti legali e normativi, delineando i termini di utilizzo, le politiche di protezione dei dati e altre informazioni essenziali per gli utenti.
+La sezione **Politica e dichiarazione sulla privacy** contiene il documento legale che i fornitori devono accettare nel portale fornitori. La sezione gestisce un unico documento in formato PDF.
 
 #### Passaggi per caricare la politica e la dichiarazione sulla privacy
 
-1. **Accedi alle Impostazioni Generali del Fornitore**:
-   * Naviga alla sezione **Impostazioni Generali Del Fornitore** dal menu principale.
-2. **Trova la sezione Politica e dichiarazione sulla privacy**:
-   * Scorri verso il basso fino alla sezione **Politica e dichiarazione sulla privacy**.
-3. **Carica o aggiorna i documenti**:
-   * Clicca sul pulsante **Carica documento** per selezionare il file o i file rilevanti. Finché non è presente alcun documento, la sezione mostra l'avviso **È necessario caricare il documento di dichiarazione della politica.**
-   * Scegli il file del documento dal tuo spazio di archiviazione locale. I formati supportati includono tipicamente `.pdf`, `.docx` o `.txt`.
-   * I documenti caricati verranno elencati in questa sezione per la revisione.
-4. **Salva le modifiche**:
-   * Dopo aver caricato o aggiornato i documenti, clicca sul pulsante **Salva** per garantire che le nuove politiche siano applicate.
+1. **Aprire la sezione**: in **Impostazioni Generali Del Fornitore**, scorrere fino a **Politica e dichiarazione sulla privacy**. Finché non è stato caricato alcun documento, la sezione mostra l'avviso **È necessario caricare il documento di dichiarazione della politica.**
+2. **Caricare il documento**: fare clic su **Carica documento** e scegliere un file PDF. Sono accettati solo file `.pdf`: gli altri formati non compaiono nella finestra di selezione.
+3. **Attendere il caricamento**: non serve altro. Il documento viene memorizzato appena scelto il file; in questa sezione non c'è un pulsante **Salva**.
+4. **Controllare il risultato**: al termine, la sezione mostra il PDF caricato in un'anteprima scorrevole. Per aggiornare il documento, ripetere il caricamento con lo stesso pulsante.
 
 #### Migliori pratiche
 
-* **Aggiornamenti regolari**: rivedi e aggiorna regolarmente la Politica e la dichiarazione sulla privacy per garantire che siano conformi ai più recenti requisiti legali e alle politiche aziendali.
-* **Chiarezza e accessibilità**: assicurati che i documenti caricati siano chiari, concisi e accessibili a tutti gli utenti. Considera di fornire traduzioni se la tua base di fornitori è internazionale.
-* **Revisione legale**: fai rivedere tutti i documenti da un legale prima di caricarli per garantire la conformità alle leggi e ai regolamenti pertinenti.
+* **Aggiornamenti regolari**: rivedere e aggiornare regolarmente la Politica e la dichiarazione sulla privacy per garantire che siano conformi ai più recenti requisiti legali e alle politiche aziendali.
+* **Chiarezza e accessibilità**: assicurarsi che il documento caricato sia chiaro, conciso e accessibile a tutti gli utenti.
+* **Revisione legale**: far rivedere il documento da un legale prima di caricarlo per garantire la conformità alle leggi e ai regolamenti pertinenti.
 
 ### Documenti di riferimento per la registrazione dei fornitori
 

@@ -1,14 +1,14 @@
-# Paramètres de la Recherche Plein Texte
+# Paramètres de Fulltext Search
 
 <figure><img src="../../../.gitbook/assets/fulltext_search_settings.png" alt="Paramètres de la Recherche Plein Texte dans le bac à sable, avec une boîte de dialogue expliquant que le module est requis et les boutons Go to Modules et Enable Now"><figcaption><p>Lorsque la Recherche Plein Texte est désactivée, cette boîte de dialogue explique la marche à suivre.</p></figcaption></figure>
 
-Les Paramètres de la Recherche Plein Texte déterminent ce que DocBits indexe et la manière dont ce contenu devient consultable dans les documents, les données de référence ERP et les modèles. La page de paramètres affiche une boîte de dialogue d'exigence tant que le **Fulltext Search module** n'est pas activé — consultez [Recherche plein texte](../document-processing/module/fulltext-search.md) pour le langage de requête destiné aux utilisateurs.
+Les Paramètres de Fulltext Search déterminent ce que DocBits indexe et la manière dont ce contenu devient consultable dans les documents, les données de référence ERP et les modèles. La page de paramètres affiche une boîte de dialogue d'exigence tant que le **Fulltext Search module** n'est pas activé — consultez [Recherche plein texte](../document-processing/module/fulltext-search.md) pour le langage de requête destiné aux utilisateurs.
 
 ## Prérequis
 
 Le module Recherche Plein Texte doit être activé dans **Settings → Module → Dashboards & Analytics → Full text search**. Si le module n'est pas activé, la boîte de dialogue propose trois actions :
 
-* **Help (?)** — Ouvrir la documentation de la Recherche Plein Texte dans un nouvel onglet avant de modifier un paramètre.
+* **Help (?)** — Ouvrir la documentation de Fulltext Search dans un nouvel onglet avant de modifier un paramètre.
 * **Go to Modules** — Ouvrir les paramètres du module Dashboards & Analytics pour vérifier la configuration.
 * **Enable Now** — Ouvrir la boîte de dialogue d'abonnement. Vérifiez et confirmez cette boîte de dialogue avant l'activation du module ; un clic sur ce seul bouton ne l'active pas.
 
@@ -16,7 +16,7 @@ La page de paramètres elle-même devient disponible une fois le module actif.
 
 ## Disposition de la page
 
-La page de paramètres est organisée en trois onglets : **Documents**, **ERP** et **Templates**. Chaque onglet couvre un type de contenu différent que la Recherche Plein Texte peut indexer.
+La page de paramètres est organisée en trois onglets : **Documents**, **ERP** et **Templates**. Chaque onglet couvre un type de contenu différent que Fulltext Search peut indexer.
 
 ### Onglet Documents
 
@@ -44,7 +44,7 @@ L'onglet Templates liste les versions de modèles connues de l'index plein texte
 
 ## Ce qui est indexé
 
-Une fois activée et configurée, la Recherche Plein Texte permet aux utilisateurs de :
+Une fois activée et configurée, Fulltext Search permet aux utilisateurs de :
 
 * Rechercher dans tout le contenu des documents (et pas seulement dans les champs de métadonnées).
 * Trouver des documents par le texte contenu dans les fichiers téléversés.

@@ -28,7 +28,7 @@ Use an owned test organization and a synthetic document. Check organization, rol
 
 **Completion criterion:** Before building, you can explain when the rule is considered and which evidence distinguishes simulation from a document run.
 
-Read and build: [When does my workflow run?](workflow-execution-model.md) · [P0: Change status and control re-entry](status-and-reentry.md).
+Read and build: [When does my workflow run?](workflow-execution-model.md) · [Change status without restarting your workflow](status-and-reentry.md).
 
 ## 2. Your first rule <a href="#level-2" id="level-2"></a>
 

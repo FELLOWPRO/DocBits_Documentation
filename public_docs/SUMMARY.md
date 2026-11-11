@@ -627,7 +627,7 @@
 * [Workflow](administration-and-setup/workflow/README.md)
   * [Learning path from beginner to expert](administration-and-setup/workflow/workflow-learning-path/README.md "Learning path – beginner to expert")
     * [When does my workflow run?](administration-and-setup/workflow/workflow-learning-path/workflow-execution-model.md)
-    * [P0: Change status and control re-entry](administration-and-setup/workflow/workflow-learning-path/status-and-reentry.md)
+    * [Change status without restarting your workflow](administration-and-setup/workflow/workflow-learning-path/status-and-reentry.md)
     * [Advanced case study: invoice routing](administration-and-setup/workflow/workflow-learning-path/advanced-workflow-case-study.md)
     * [Workflow training kit](administration-and-setup/workflow/workflow-learning-path/workflow-training-kit.md)
     * [P1: Choose Field is, Docfield is or Compare two Fields](administration-and-setup/workflow/workflow-learning-path/field-conditions.md)

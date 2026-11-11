@@ -11,11 +11,11 @@ This workflow card is tailored to manage operations on documents based on a sing
 1. **Operator**
    * **Description**: Specifies the method for evaluating the document’s status against the selected condition.
    * **Options**:
-     * **is**: Triggers the operation if the document's current status matches the selected status.
-     * **is not**: Triggers the operation if the document's current status does not match the selected status.
+     * **Is**: Triggers the operation if the document's current status matches the selected status.
+     * **Is Not**: Triggers the operation if the document's current status does not match the selected status.
 2. **Status**
    * **Description**: Allows the selection of a single document status to set the condition.
-   * **Examples of Statuses**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
+   * **Statuses you can choose**: Error, Export Error, Finished, Rejected, Ready for review, Ready for validation, Pending Approval, Pending second approval, Exported and VERTEX TAX REJECTED.
    * **Detail**: Users choose one status from a dropdown or a set of radio buttons. This status then serves as the criterion for the card’s operation.
 
 **Functionality**
@@ -44,6 +44,6 @@ The "Single Document Status Condition" workflow card simplifies document managem
 
 **Configuration:** Choose operator `is` and status `Pending Approval`. Add a following review action appropriate for that status.
 
-**Expected result and counterexample:** The condition is true for a document currently `Pending Approval`; it is false for a document with status `Ready in Validation`. Use the actual selected status from your release. Changing a status does not itself export the document.
+**Expected result and counterexample:** The condition is true for a document currently `Pending Approval`; it is false for a document with status `Ready for validation`. Use the actual selected status from your release. Changing a status does not itself export the document.
 
 This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.

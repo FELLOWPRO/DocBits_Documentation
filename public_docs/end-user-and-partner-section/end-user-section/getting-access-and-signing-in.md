@@ -15,6 +15,8 @@ Otwórz adres internetowy DocBits podany Twojej organizacji — na przykład `ht
 
 <figure><img src="../../.gitbook/assets/getting-access-login-pl-20261111.png" alt="Polski ekran logowania DocBits z pustymi polami E-mail i Hasło, opcją Pamiętaj mnie, selektorem Region autoryzacji ustawionym na Europa, przyciskiem Zaloguj się, logowaniem za pomocą klucza dostępu oraz przyciskami Zaloguj się za pomocą Google i Zaloguj się za pomocą konta Microsoft"><figcaption><p>Ekran logowania: e-mail i hasło, Pamiętaj mnie, selektor Region autoryzacji, Zaloguj się, klucz dostępu oraz przyciski logowania Google i Microsoft.</p></figcaption></figure>
 
+Formularz wita Cię napisem **Cześć, witamy ponownie**; poniżej znajdują się pola na dane logowania:
+
 1. **E-mail** — adres, na który utworzono Twoje konto DocBits.
 2. **Hasło** — Twoje hasło DocBits. Ikona oka w polu pokazuje lub ukrywa wpisane znaki.
 3. **Pamiętaj mnie** — wypełnia Twój adres e-mail przy następnym otwarciu ekranu logowania.
@@ -24,6 +26,7 @@ Otwórz adres internetowy DocBits podany Twojej organizacji — na przykład `ht
 Pod polami hasła:
 
 * **Zaloguj się za pomocą klucza dostępu** — pojawia się, gdy przeglądarka obsługuje klucze dostępu. Loguje Cię bez hasła. Zobacz [Logowanie bez hasła](../../security/two-factor-authentication.md).
+* **Masz problemy z logowaniem? Jesteśmy tu, żeby pomóc Tutaj.** — link pomocy pod formularzem; otwiera dokumentację DocBits pod adresem `https://docs.docbits.com`.
 * **Zaloguj się za pomocą Google** i **Zaloguj się za pomocą konta Microsoft** — dla organizacji korzystających z logowania jednokrotnego u tych dostawców. Logowanie obsługuje dostawca tożsamości, więc hasło DocBits i wymóg dwuskładnikowy DocBits nie mają zastosowania.
 * **Zapomniałeś hasła?** — zobacz [Zapomniane hasło](#zapomniane-haslo) poniżej.
 * **Zarejestruj się** — zobacz [Rejestracja](#rejestracja) poniżej.

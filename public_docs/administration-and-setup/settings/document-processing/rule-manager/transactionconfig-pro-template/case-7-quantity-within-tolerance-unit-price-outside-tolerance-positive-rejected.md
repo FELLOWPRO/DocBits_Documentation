@@ -28,7 +28,7 @@ Uma vez que a quantidade (198 unidades) está dentro do intervalo de tolerância
 
 1. **Rejeitar o preço unitário da fatura:** o sistema não aceita o preço unitário faturado de $17.00.
 2. **Ajustar o preço unitário:** o sistema ajusta o preço unitário para corresponder ao preço unitário do pedido de compra original.
-   * Adjusted Unit Price = $15.00 (from PO)
+   * Adjusted Unit Price = $15.00 (da PO)
 3. **Calcular o montante total corrigido:** com o preço unitário ajustado, o sistema recalcula o montante total.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**

@@ -21,6 +21,7 @@ A lista mostra uma linha por modelo, com estas colunas:
 | **Assunto** | A linha de assunto que os destinatários veem. |
 | **Última Modificação Por** | O usuário que editou o modelo por último. |
 | **Última Modificação Em** | Quando o modelo foi alterado pela última vez. |
+| **Ações** | Abre o menu da linha com **Editar** e **Excluir** (ver abaixo). |
 
 Você pode ordenar a lista por qualquer coluna. As colunas **Nome**, **Tipo** e **Assunto** também oferecem um filtro nos menus das colunas; filtros ativos aparecem como etiquetas removíveis acima da tabela. Você pode arrastar os cabeçalhos das colunas para a ordem que preferir, e essa ordem é mantida na sua próxima visita.
 

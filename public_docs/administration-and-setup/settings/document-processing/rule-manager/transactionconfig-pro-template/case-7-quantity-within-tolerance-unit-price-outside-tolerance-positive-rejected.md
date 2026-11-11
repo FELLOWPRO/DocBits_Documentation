@@ -1,42 +1,41 @@
-# Fall 7: Menge innerhalb der Toleranz, Stückpreis oberhalb der Toleranz abgelehnt
+# Fall 7: Menge innerhalb der Toleranz, Stückpreis außerhalb der Toleranz (positiv abgelehnt)
 
-> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
-
+Das folgende Szenario ist eine beispielhafte konfigurierte Zuordnung, keine geprüfte Standardvorlage im Einsatz. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von den aktiven Regeln und Ausdrücken in `conflict_resolution`, der Exportzuordnung und den Genehmigungsentscheidungen ab. Jede unten beschriebene Belastungsanzeige oder Gutschrift ist von dieser Konfiguration abhängig; das Beispiel garantiert weder eine automatische Ausstellung noch rechtliche Konformität.
 
 ## Szenario:
 
-Die Menge liegt innerhalb der Toleranz. Der Stückpreis überschreitet jedoch den zulässigen Bereich (positive Toleranz); die Abweichung wurde nicht genehmigt.
+Die Menge liegt innerhalb der Toleranz, der Stückpreis überschreitet jedoch den zulässigen Bereich (positive Toleranz) und ist nicht genehmigt.
 
 ## Aktion:
 
-Das System lehnt den Rechnungsstückpreis ab und passt ihn an die Bestellung an. Es kann eine Belastungsanzeige erstellen, um den zu viel berechneten Betrag auszugleichen.
+Das System lehnt den Rechnungsstückpreis ab, passt ihn an die Bestellung an und kann eine Belastungsanzeige für den zu viel berechneten Betrag erstellen.
 
 ## Beispiel:
 
-* **Bestellung (PO):**
-  * Menge: 200 Einheiten
-  * Stückpreis: $15.00 je Einheit
-  * Gesamtbetrag: $3,000.00
-* **Eingegangene Rechnung:**
-  * Menge: 198 Einheiten (Abweichung innerhalb der Toleranz: 1%)
-  * Stückpreis: $17.00 je Einheit (positive Abweichung außerhalb der Toleranz: 13.33%)
-  * Gesamtbetrag: $3,366.00
-* **Toleranzgrenzen:**
-  * Mengentoleranz: ±2%
-  * Stückpreistoleranz: ±1%
+* **Purchase Order (PO):**
+  * Quantity: 200 Einheiten
+  * Unit Price: $15.00 je Einheit
+  * Total Amount: $3,000.00
+* **Invoice Received:**
+  * Quantity: 198 Einheiten — 1% unter dem Bestellwert, innerhalb der konfigurierten Toleranz von ±2%.
+  * Unit Price: $17.00 je Einheit — 13.33% über dem Bestellwert, außerhalb der konfigurierten Toleranz von ±1%; abgelehnt.
+  * Total Amount: $3,366.00
+* **Tolerance Levels:**
+  * Quantity Tolerance: ±2%
+  * Unit Price Tolerance: ±1%
 
-Die Menge (198 Einheiten) liegt innerhalb der zulässigen Toleranz. Der Stückpreis ($17.00) überschreitet dagegen die Toleranzgrenze und wurde nicht genehmigt. Das System führt folgende Schritte aus:
+Da die Menge (198 Einheiten) innerhalb des zulässigen Toleranzbereichs liegt, der Stückpreis ($17.00) jedoch die zulässige Toleranz überschreitet und nicht genehmigt ist, führt das System Folgendes aus:
 
 1. **Rechnungsstückpreis ablehnen:** Das System akzeptiert den berechneten Stückpreis von $17.00 nicht.
-2. **Stückpreis anpassen:** Das System setzt den Stückpreis auf den ursprünglichen Wert aus der Bestellung.
+2. **Stückpreis anpassen:** Das System passt den Stückpreis an den ursprünglichen Stückpreis der Bestellung an.
    * Angepasster Stückpreis = $15.00 (aus der Bestellung)
-3. **Korrigierten Gesamtbetrag berechnen:** Das System berechnet den Gesamtbetrag mit dem angepassten Stückpreis neu.
-   * **Korrigierter Gesamtbetrag = Menge × Angepasster Stückpreis**
-   * **Korrigierter Gesamtbetrag = 198 Einheiten × $15.00 je Einheit = $2,970.00**
-4. **Belastungsanzeige erstellen:** Das System erstellt eine Belastungsanzeige über den zu viel berechneten Differenzbetrag.
-   * **Betrag der Belastungsanzeige = Ursprünglicher Rechnungsbetrag - Korrigierter Gesamtbetrag**
-   * **Betrag der Belastungsanzeige = $3,366.00 - $2,970.00 = $396.00**
+3. **Korrigierten Gesamtbetrag berechnen:** Mit dem angepassten Stückpreis berechnet das System den Gesamtbetrag neu.
+   * **Corrected Total Amount = Quantity × Adjusted Unit Price**
+   * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**
+4. **Belastungsanzeige erstellen:** Das System erstellt eine Belastungsanzeige für die Differenz aus der zu hohen Berechnung.
+   * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
+   * **Debit Note Amount = $3,366.00 - $2,970.00 = $396.00**
    * Diese Belastungsanzeige entspricht dem vom Lieferanten zu viel berechneten Betrag.
-5. **Rechnung verarbeiten:** Das System verarbeitet die Rechnung mit dem korrigierten Gesamtbetrag von $2,970.00 und erstellt eine Belastungsanzeige über $396.00, um den zu viel berechneten Betrag auszugleichen.
+5. **Rechnung verarbeiten:** Das System verarbeitet die Rechnung mit dem korrigierten Gesamtbetrag von $2,970.00 und erstellt eine Belastungsanzeige über $396.00, um die zu hohe Berechnung auszugleichen.
 
-Damit werden zu hohe Rechnungsbeträge korrigiert, die Transaktion an die Bestellbedingungen angepasst und die finanziellen Interessen des Unternehmens geschützt.
+So werden zu hohe Berechnungen korrigiert, die Transaktion an die Bedingungen der Bestellung angeglichen und die finanziellen Interessen des Unternehmens geschützt.

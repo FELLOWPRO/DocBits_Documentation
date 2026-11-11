@@ -11,18 +11,18 @@ Ta karta służy do kontrolowania akcji przepływu pracy na podstawie bieżąceg
 1. **Operatora**
    * **Opis**: Określa, w jaki sposób status dokumentu będzie oceniany względem określonego warunku.
    * **Opcje**:
-     * **is**: Wyzwala powiązane akcje, jeśli bieżący status dokumentu odpowiada jednemu z określonych statusów.
-     * **nie jest**: Wyzwala akcje, jeśli status dokumentu nie odpowiada żadnemu z określonych statusów.
+     * **Jest**: Wyzwala powiązane akcje, jeśli bieżący status dokumentu odpowiada jednemu z określonych statusów.
+     * **Nie jest**: Wyzwala akcje, jeśli status dokumentu nie odpowiada żadnemu z określonych statusów.
 2. **Stan (Lista)**
    * **Opis**: Wymienia konkretne statusy, względem których porównywany będzie bieżący status dokumentu.
-   * **Przykłady**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". Reprezentują one różne etapy lub stany, w których dokument może się znajdować w ramach procesu przepływu pracy.
+   * **Statusy do wyboru**: Błąd, Błąd eksportu, Zakończony, Odrzucony, Gotowe do recenzji, Gotowy do walidacji, Oczekujące na zatwierdzenie, Oczekiwanie na drugą akceptację, Eksportowano i Podatek Vertex odrzucony. Możesz wybrać kilka.
 
 **Funkcjonalność**
 
 * **Identyfikacja statusu**: Automatycznie identyfikuje bieżący status dokumentu w miarę jego przemieszczania się przez przepływ pracy systemu ERP.
-* **Ocena warunku**: Stosuje wybrany operator (is lub is not) do statusu dokumentu w porównaniu z wymienionymi statusami:
-  * Jeśli **is**, sprawdza, czy status dokumentu odpowiada dowolnemu statusowi z listy.
-  * Jeśli **nie jest**, sprawdza, czy status dokumentu nie pojawia się na liście.
+* **Ocena warunku**: Stosuje wybrany operator (**Jest** lub **Nie jest**) do statusu dokumentu w porównaniu z wymienionymi statusami:
+  * Jeśli **Jest**, sprawdza, czy status dokumentu odpowiada dowolnemu statusowi z listy.
+  * Jeśli **Nie jest**, sprawdza, czy status dokumentu nie pojawia się na liście.
 * **Wykonanie akcji**: W zależności od wyniku oceny warunku:
   * **True**: Wykonuje predefiniowane akcje lub przepływy pracy, jeśli warunek jest spełniony.
   * **False**: Pomija lub wyzwala alternatywne przepływy pracy, jeśli warunek nie jest spełniony.
@@ -42,8 +42,8 @@ Karta przepływu pracy "Document Status Condition" jest kluczowa dla zapewnienia
 
 ### Przykład listy statusów
 
-**Konfiguracja:** Wybierz operatora, który wymaga, aby bieżący stan znajdował się na liście. Wybierz `Pending Approval` i `Pending Second Approval` na liście statusów.
+**Konfiguracja:** Wybierz operatora, który wymaga, aby bieżący stan znajdował się na liście. Wybierz **Oczekujące na zatwierdzenie** i **Oczekiwanie na drugą akceptację** na liście statusów.
 
-**Oczekiwany wynik i kontrprzykład:** Warunek jest prawdziwy dla dokumentu o dowolnym wybranym statusie. Dla dokumentu o statusie `Ready in Validation` jest to fałsz. W przypadku operatora, który wymaga, aby status znajdował się poza listą, wyniki tych warunków są odwrotne. Sprawdź rzeczywistą listę, zamiast porównywać wartość w postaci wolnego tekstu oddzieloną przecinkami.
+**Oczekiwany wynik i kontrprzykład:** Warunek jest prawdziwy dla dokumentu o dowolnym wybranym statusie. Dla dokumentu o statusie **Gotowy do walidacji** jest to fałsz. W przypadku operatora, który wymaga, aby status znajdował się poza listą, wyniki tych warunków są odwrotne. Sprawdź rzeczywistą listę, zamiast porównywać wartość w postaci wolnego tekstu oddzieloną przecinkami.
 
 To jest ilustracyjna konfiguracja testu i oczekiwany wynik; nie zostało ono wykonane. Skorzystaj z danych i odbiorców skonfigurowanych w Twojej organizacji testowej.

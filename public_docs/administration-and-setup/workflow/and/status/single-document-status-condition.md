@@ -11,18 +11,18 @@ Ta karta przepływu pracy jest dostosowana do zarządzania operacjami na dokumen
 1. **Operatora**
    * **Opis**: Określa metodę oceny statusu dokumentu względem wybranego warunku.
    * **Opcje**:
-     * **is**: Wyzwala operację, jeśli bieżący status dokumentu odpowiada wybranemu statusowi.
-     * **nie jest**: Wyzwala operację, jeśli bieżący status dokumentu nie odpowiada wybranemu statusowi.
+     * **Jest**: Wyzwala operację, jeśli bieżący status dokumentu odpowiada wybranemu statusowi.
+     * **Nie jest**: Wyzwala operację, jeśli bieżący status dokumentu nie odpowiada wybranemu statusowi.
 2. **Stan**
    * **Opis**: Umożliwia wybór pojedynczego statusu dokumentu w celu ustawienia warunku.
-   * **Przykłady statusów**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
+   * **Statusy do wyboru**: Błąd, Błąd eksportu, Zakończony, Odrzucony, Gotowe do recenzji, Gotowy do walidacji, Oczekujące na zatwierdzenie, Oczekiwanie na drugą akceptację, Eksportowano i Podatek Vertex odrzucony.
    * **Szczegóły**: Użytkownicy wybierają jeden status z listy rozwijanej lub zestawu przycisków radiowych. Status ten służy następnie jako kryterium działania karty.
 
 **Funkcjonalność**
 
 * **Identyfikacja statusu dokumentu**: Identyfikuje bieżący status dokumentu w miarę jego przetwarzania przez system ERP.
 * **Ocena warunku**:
-  * Na podstawie wybranego operatora (`is` lub `is not`) karta sprawdza, czy bieżący status dokumentu jest zgodny z wybranym kryterium statusu.
+  * Na podstawie wybranego operatora (**Jest** lub **Nie jest**) karta sprawdza, czy bieżący status dokumentu jest zgodny z wybranym kryterium statusu.
 * **Wykonanie akcji**:
   * **Warunek prawdziwy**: Jeśli status jest zgodny (lub niezgodny, w zależności od operatora), inicjowana jest odpowiednia akcja. Może to być routing do dalszego przetwarzania, generowanie powiadomień lub inne predefiniowane przepływy pracy.
   * **Warunek fałszywy**: Jeśli warunek nie jest spełniony, nie jest podejmowana żadna akcja lub wyzwalana jest alternatywna ścieżka.
@@ -42,8 +42,8 @@ Karta przepływu pracy "Single Document Status Condition" upraszcza zarządzanie
 
 ### Przykład pojedynczego statusu
 
-**Konfiguracja:** Wybierz operatora `is` i status `Pending Approval`. Dodaj następującą akcję przeglądu odpowiednią dla tego statusu.
+**Konfiguracja:** Wybierz operatora **Jest** i status **Oczekujące na zatwierdzenie**. Dodaj następującą akcję przeglądu odpowiednią dla tego statusu.
 
-**Oczekiwany wynik i kontrprzykład:** Warunek jest prawdziwy dla dokumentu aktualnie `Pending Approval`; dla dokumentu o statusie `Ready in Validation` ma wartość false. Użyj aktualnie wybranego statusu z Twojej wersji. Zmiana statusu sama w sobie nie powoduje eksportu dokumentu.
+**Oczekiwany wynik i kontrprzykład:** Warunek jest prawdziwy dla dokumentu o statusie **Oczekujące na zatwierdzenie**; dla dokumentu o statusie **Gotowy do walidacji** ma wartość false. Użyj aktualnie wybranego statusu z Twojej wersji. Zmiana statusu sama w sobie nie powoduje eksportu dokumentu.
 
 To jest ilustracyjna konfiguracja testu i oczekiwany wynik; nie zostało ono wykonane. Skorzystaj z danych i odbiorców skonfigurowanych w Twojej organizacji testowej.

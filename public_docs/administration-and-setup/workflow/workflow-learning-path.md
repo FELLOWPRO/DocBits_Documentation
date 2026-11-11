@@ -28,7 +28,7 @@ Verwenden Sie eine eigene Testorganisation und einen synthetischen Beleg. Prüfe
 
 **Abschlusskriterium:** Sie können vor dem Aufbau sagen, wann die Regel berücksichtigt wird und welcher Nachweis eine Simulation von einem Dokumentlauf unterscheidet.
 
-Lesen und nachbauen: [Wann läuft mein Workflow?](workflow-execution-model.md) · [P0: Status wechseln und erneute Ausführung begrenzen](masterclass/status-and-reentry.md).
+Lesen und nachbauen: [Wann läuft mein Workflow?](workflow-execution-model.md) · [Status ändern, ohne den Workflow neu zu starten](masterclass/status-and-reentry.md).
 
 ## 2. Erste eigene Regel <a id="level-2"></a>
 

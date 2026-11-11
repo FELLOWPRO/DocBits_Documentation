@@ -8,7 +8,7 @@ L'**Esploratore di grafici della conoscenza** ti aiuta a vedere le connessioni t
 
 1. Apri **Esploratore di grafici della conoscenza** in DocBits. Verifica che l'organizzazione mostrata in alto sia quella che intendi esaminare.
 2. Se al centro compare **Search for a node or compute the graph to get started**, scegli **Ricostruisci il grafico** e attendi la fine del messaggio di avanzamento. Questa operazione prepara i dati del grafo; può richiedere del tempo. Se l'organizzazione non ha ancora relazioni corrispondenti, **Nodi** e **Confini** possono rimanere a zero.
-3. Inserisci un nome o un altro termine di ricerca in **Search knowledge graph** e premi Invio oppure seleziona l'icona di ricerca. Quando compaiono più risultati, scegli quello che ti serve. Un risultato unico apre direttamente il suo grafo.
+3. Inserisci un nome o un altro termine di ricerca in **Ricerca nel grafo della conoscenza...** e premi Invio oppure seleziona l'icona di ricerca. Quando compaiono più risultati, scegli quello che ti serve. Un risultato unico apre direttamente il suo grafo.
 4. Seleziona un nodo per vederne i dettagli. Chiudi il pannello dei dettagli con **X** quando vuoi tornare al grafo.
 
 ## Scegli cosa vedere

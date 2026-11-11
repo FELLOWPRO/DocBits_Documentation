@@ -2,7 +2,9 @@
 
 <figure><img src="../../../.gitbook/assets/supplier-email-templates-list-pt-20261111.png" alt="Lista de modelos de e-mail para fornecedores com as colunas Nome, Tipo, Assunto, Última Modificação Por, Última Modificação Em e Ações"><figcaption><p>Lista de modelos de e-mail para fornecedores</p></figcaption></figure>
 
-A página **Modelos de e-mail**, na área de configurações do fornecedor em **Configurações**, permite que administradores criem os e-mails que o DocBits envia automaticamente aos fornecedores. Cada modelo é atribuído a um dos quatro tipos fixos de e-mail, para que a mensagem correta seja sempre enviada quando um fornecedor é convidado, conclui o cadastro, ou é aprovado ou rejeitado no portal do fornecedor.
+A página **Modelos de e-mail** em **Configurações → Configurações do Fornecedor → Modelos de e-mail** permite que administradores criem os e-mails que o DocBits envia automaticamente aos fornecedores. Cada modelo é atribuído a um dos quatro tipos fixos de e-mail, para que a mensagem correta seja sempre enviada quando um fornecedor é convidado, conclui o cadastro, ou é aprovado ou rejeitado no portal do fornecedor.
+
+Há uma segunda página com o mesmo nome em **Comunicação e notificações**; ela trata das notificações internas de documentos. Consulte [Notificações por e-mail](../global-settings/email-notification/README.md).
 
 O acesso requer uma conta de administrador. Consulte [Permissões do Fornecedor](supplier-permissions.md) para as funções que os próprios fornecedores recebem.
 

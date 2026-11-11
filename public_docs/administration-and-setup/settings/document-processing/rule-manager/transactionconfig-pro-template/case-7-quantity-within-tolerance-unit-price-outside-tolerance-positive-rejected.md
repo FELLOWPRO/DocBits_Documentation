@@ -28,7 +28,7 @@ Ponieważ ilość (198 jednostek) mieści się w dopuszczalnym zakresie toleranc
 
 1. **Odrzuca cenę jednostkową faktury:** System nie akceptuje zafakturowanej ceny jednostkowej wynoszącej $17.00.
 2. **Dostosowuje cenę jednostkową:** System dostosowuje cenę jednostkową do ceny jednostkowej z pierwotnego zamówienia zakupu.
-   * Adjusted Unit Price = $15.00 (from PO)
+   * Adjusted Unit Price = $15.00 (z PO)
 3. **Oblicza skorygowaną kwotę całkowitą:** Na podstawie skorygowanej ceny jednostkowej system ponownie oblicza kwotę całkowitą.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**

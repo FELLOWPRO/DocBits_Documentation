@@ -14,7 +14,7 @@ In **Campi** puoi impostare le soglie di convalida e di riconoscimento di un tip
 
 Seleziona **CONVALIDA FORZATA** nella riga del campo per applicare a quel campo una convalida più rigorosa. La casella è separata da **OBBLIGATORIO**: contrassegnare un campo come obbligatorio non seleziona automaticamente CONVALIDA FORZATA. La casella può non essere disponibile quando un campo è nascosto o di sola lettura. Dopo aver modificato la configurazione del campo, fai clic su **Salva le impostazioni**.
 
-Le istruzioni precedenti suggerivano di inserire qui limiti numerici o espressioni regolari. L'attuale tabella Campi non mostra un editor di regole nella cella CONVALIDA FORZATA. Per le regole specifiche di un campo, consulta [Configurazione delle Proprietà del Campo](configuring-field-properties-1.md).
+Le istruzioni precedenti suggerivano di inserire qui limiti numerici o espressioni regolari. L'attuale tabella Campi non mostra un editor di regole nella cella CONVALIDA FORZATA. Per le regole specifiche di un campo, consulta [Configurazione delle proprietà dei campi](configuring-field-properties-1.md).
 
 ## PUNTEGGIO DI CORRISPONDENZA
 
@@ -22,7 +22,7 @@ Le istruzioni precedenti suggerivano di inserire qui limiti numerici o espressio
 
 <figure><img src="../../../../../.gitbook/assets/setting-validation-and-match-score-invoice-number-it-20261111.png" alt="Ricerca per nome con invoice_number nella pagina Campi in italiano: la riga Numero di fattura con CONVALIDA FORZATA selezionata, OCR 60 e PUNTEGGIO DI CORRISPONDENZA 60"><figcaption><p>Cerca un campo per verificarne la casella CONVALIDA FORZATA e il valore PUNTEGGIO DI CORRISPONDENZA.</p></figcaption></figure>
 
-**OCR** è una soglia di riconoscimento separata, accanto a PUNTEGGIO DI CORRISPONDENZA. **RIPRISTINARE LE IMPOSTAZIONI PREDEFINITE** reimposta le configurazioni; usalo solo se intendi scartare le tue soglie personalizzate. Per le altre opzioni dei campi, consulta la panoramica di [Campi](README.md).
+**OCR** è una soglia di riconoscimento separata, accanto a PUNTEGGIO DI CORRISPONDENZA. **RIPRISTINARE LE IMPOSTAZIONI PREDEFINITE** reimposta le configurazioni; usalo solo se intendi scartare le tue soglie personalizzate. Per gli altri controlli di questa vista, tra cui **Creare un nuovo gruppo**, **Impostazioni dei dati master** e **FORMULA**, consulta [Configurazione delle proprietà dei campi](configuring-field-properties-1.md); una panoramica dei tipi di campo è in [Campi](README.md).
 
 ## Panoramica a livello di campo
 

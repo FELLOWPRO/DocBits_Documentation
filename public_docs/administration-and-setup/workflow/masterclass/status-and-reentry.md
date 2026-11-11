@@ -1,41 +1,67 @@
 ---
-description: "P0: cambiare stato e limitare le nuove esecuzioni"
+description: >-
+  Usare la scheda Cambiare lo stato in in modo che un cambio di stato non avvii
+  di nuovo lo stesso Workflow.
 ---
 
-# P0: cambiare stato e limitare le nuove esecuzioni
+# Cambiare lo stato senza riavviare il Workflow
 
-**Change Status to** aggiorna lo stato del documento. Nella versione 3, `trigger_docflow` controlla la richiesta di ulteriore elaborazione dei workflow. Impostarlo esplicitamente. Se manca, il codice usa `true`; le versioni 1/2 non leggono il parametro nello stesso percorso di esecuzione. Controllare la versione salvata.
+Quando un documento riceve un nuovo stato, DocBits avvia i Workflow previsti per quello stato. Tra questi può esserci anche il Workflow che ha appena cambiato lo stato. Se le sue condizioni corrispondono ancora, viene eseguito di nuovo e crea una seconda attività o una seconda esportazione.
 
-Iniziare con `validated_pending_approval` e `trigger_docflow=false`. Lo stato è un’opzione tecnica: un `pending_approval` inventato non è equivalente. Advanced Test simula l’aggiornamento. Non dimostra né la persistenza dello stato né l’elaborazione di un’esecuzione successiva richiesta.
+Questa pagina mostra come impostare il Workflow in modo che ogni documento lo attraversi una sola volta.
 
-Un processo delimitato controlla stato iniziale e indicatore di elaborazione, esegue l’azione e passa allo stato seguente. Un evento ripetuto non deve più soddisfare la condizione iniziale. Due esecuzioni concorrenti possono però leggere lo stesso vecchio indicatore: attività e destinazioni di esportazione richiedono ulteriori controlli dei duplicati.
+## L'impostazione decisiva
 
-Per il collaudo, confrontare prima e seconda esecuzione reale: stato, elaborazione successiva richiesta e numero di attività o registrazioni di destinazione. Non alternare due stati solo per sperimentare. Cambiare stato non concede un’approvazione la cui condizione aziendale resta insoddisfatta.
+La scheda [Cambiare lo stato in](../then/status/change-status-to.md) imposta il nuovo stato. La sua impostazione **Attivare i flussi di lavoro** decide se questo cambio di stato può avviare Workflow:
 
-## Schede e parametri di esempio
+* **Falso:** non viene avviato nessun Workflow. Usare questo valore, a meno che un altro Workflow debba proseguire con il documento.
+* **Vero:** DocBits avvia i Workflow le cui condizioni corrispondono al documento nel suo nuovo stato. Tra questi può esserci anche il Workflow che ha eseguito il cambio.
 
-I valori descrivono parametri delle schede, non un workflow completo importabile. Sostituire YOUR_* con selezioni proprie di test. Il designer gestisce l’ID nascosto del chiamante. Catalogo: Dev, DocFlow 2.10.38, 21 ottobre 2026; verificare versioni e abilitazioni della propria organizzazione.
+La pagina della scheda descrive tutti gli stati e le versioni della scheda.
 
-### `staus_change` · v3
+## Quali Workflow si avviano dopo un cambio di stato
 
-Identità: `4e0d38a2-a0af-4c1c-b0c2-2f380d70d910`
+Con **Attivare i flussi di lavoro** impostato su **Vero**, DocBits esamina ogni Workflow attivo e ne controlla le condizioni su tipo di documento e stato, per esempio una scheda **Document status**. Un Workflow si avvia se il documento, con il suo nuovo stato, corrisponde.
 
-| Parametro | Tipo / opzioni | Esempio |
-| --- | --- | --- |
-| `trigger_docflow` | `trigger_docflow:bool` | `false` |
-| `status` | `error / rejected / ready_for_validation / validated_pending_approval / approved_pending_second_approval / archived / finished / exported` | `"validated_pending_approval"` |
+Un Workflow che non controlla lo stato corrisponde a **ogni** stato. Quindi, se cambia lui stesso lo stato, il nuovo stato lo avvia di nuovo.
 
-## Casi di prova aziendali
+Impostare un documento sullo stato che ha già non produce alcun effetto: lo stato resta invariato e non si avvia nessun Workflow.
 
-| Caso | Input / configurazione | Risultato atteso |
-| --- | --- | --- |
-| STATUS-01 | v3; trigger_docflow=false | validated_pending_approval; trigger=false |
-| STATUS-02 | v3; trigger_docflow=true | esecuzione successiva richiesta ≠ completata |
-| STATUS-03 | v3; trigger_docflow: — | default=true |
-| STATUS-04 | RUN-1 → RUN-2 | tasks=1; destination_records=1 |
+## Esempio: una esecuzione o due
 
-## Prove e limiti
+La regola: quando il Workflow ha svolto il suo compito, le sue condizioni non devono più corrispondere.
 
-Risultati selezionati di schede e nodi sono stati verificati con dati sintetici in Advanced Test. Le risposte sono nel kit. Le azioni documentali sono simulate e non provano esecuzione persistente o consegna esterna.
+<figure><img src="../../../.gitbook/assets/status-change-runs-once-vs-twice-it.png" alt="Due Workflow, entrambi con Attivare i flussi di lavoro impostato su Vero. A sinistra la condizione controlla che il tipo sia Fattura e lo stato sia Pronto per la convalida. Dopo il cambio in In attesa di approvazione la condizione non corrisponde più, il Workflow non viene riavviato, risultato 1 attività. A destra la condizione controlla solo che il tipo sia Fattura. Il nuovo stato avvia il Workflow una seconda volta, che crea una seconda attività e imposta di nuovo In attesa di approvazione, senza alcun effetto. Risultato 2 attività." width="800"><figcaption><p>Lo stesso Workflow con e senza condizione sullo stato</p></figcaption></figure>
 
-[Continuare il percorso](../workflow-learning-path.md) · [Kit di esercitazione](../workflow-training-kit.md)
+A destra il Workflow viene eseguito una seconda volta e crea un'attività duplicata. Si ferma lì solo perché il secondo cambio di stato imposta uno stato che il documento ha già.
+
+**Due Workflow possono avviarsi a vicenda.** Se un Workflow imposta **In attesa di approvazione** e un altro riporta il documento a **Pronto per la convalida**, entrambi con **Vero**, continuano ad avviarsi a vicenda. Dare a ogni Workflow una condizione sullo stato da cui parte e usare **Vero** solo dove serve.
+
+## Impostazione passo per passo
+
+1. **Usare la versione 3 di Cambiare lo stato in.** Le versioni precedenti non hanno l'impostazione **Attivare i flussi di lavoro** (vedere [Versioni della scheda](../then/status/change-status-to.md#versioni-della-scheda)).
+2. **Controllare lo stato di partenza.** Aggiungere la scheda **E** **Document status** (in **E → Stato**) e impostarla su **È** **Pronto per la convalida**. Vedere [Condizione di stato del singolo documento](../and/status/single-document-status-condition.md). Se lo stato da solo non indica se il passaggio è già stato svolto, controllare anche un campo che il Workflow compila al termine.
+3. **Aggiungere l'azione**, per esempio la creazione di un'attività o l'esportazione del documento.
+4. **Aggiungere Cambiare lo stato in** e scegliere lo stato successivo, per esempio **In attesa di approvazione**.
+5. **Scegliere Attivare i flussi di lavoro.** Iniziare con **Falso**. Scegliere **Vero** solo se un altro Workflow deve proseguire con il nuovo stato.
+6. **Provare con un documento reale.** Verificare che sia stata creata esattamente un'attività o un'esportazione e che il documento abbia il nuovo stato.
+
+{% hint style="info" %}
+I test nel designer dei Workflow simulano soltanto il cambio di stato. Lo stato non viene salvato e nessun altro Workflow si avvia. Per vedere il comportamento reale, usare un documento reale.
+{% endhint %}
+
+## Protezione integrata
+
+DocBits limita i danni quando dei Workflow si avviano a vicenda in continuazione:
+
+* **Una sola esecuzione di Workflow alla volta per documento.** Le esecuzioni per lo stesso documento si attendono a vicenda e ognuna vede il documento come l'ha lasciato la precedente.
+* **Limite di esecuzioni.** Per impostazione predefinita, lo stesso Workflow viene eseguito al massimo 50 volte su un documento. Dopo, DocBits smette di avviarlo per quel documento.
+
+Questi limiti fermano la ripetizione prima o poi, ma a quel punto possono già esistere molte attività o esportazioni. Ciò che la evita è una condizione sullo stato. Se un duplicato sarebbe un vero problema, controllarlo anche prima di agire, per esempio verificando se per il documento esiste già un'attività aperta.
+
+## Argomenti correlati
+
+* [Cambiare lo stato in](../then/status/change-status-to.md): la scheda, i suoi stati e le sue versioni
+* [Condizione di stato del singolo documento](../and/status/single-document-status-condition.md): controllare lo stato del documento in una condizione
+* [Quando viene eseguito il mio workflow?](../workflow-execution-model.md)
+* [Panoramica del percorso di apprendimento](../workflow-learning-path.md)

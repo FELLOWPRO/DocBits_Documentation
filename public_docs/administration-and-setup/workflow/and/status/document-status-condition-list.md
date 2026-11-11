@@ -11,18 +11,18 @@ Questa scheda è progettata per controllare le azioni del workflow in base allo 
 1. **Operatore**
    * **Descrizione**: Determina come lo stato del documento verrà valutato rispetto a una condizione specificata.
    * **Opzioni**:
-     * **is**: Attiva le azioni associate se lo stato corrente del documento corrisponde a uno degli stati specificati.
-     * **non lo è**: Attiva le azioni se lo stato del documento non corrisponde a nessuno degli stati specificati.
+     * **È**: Attiva le azioni associate se lo stato corrente del documento corrisponde a uno degli stati specificati.
+     * **Non è**: Attiva le azioni se lo stato del documento non corrisponde a nessuno degli stati specificati.
 2. **Stato (Lista)**
    * **Descrizione**: Elenca gli stati specifici con cui verrà confrontato lo stato corrente del documento.
-   * **Esempi**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". Questi rappresentano le diverse fasi o condizioni in cui un documento potrebbe trovarsi all'interno di un processo di workflow.
+   * **Stati selezionabili**: Errore, Errore di esportazione, Completato, Rifiutato, Pronto per la revisione, Pronto per la convalida, In attesa di approvazione, In attesa della seconda approvazione, Esportato e IMPOSTA VERTICALE RESPINTA. È possibile selezionarne più di uno.
 
 **Funzionalità**
 
 * **Identificazione dello stato**: Identifica automaticamente lo stato corrente di un documento mentre attraversa il workflow del sistema ERP.
-* **Valutazione della condizione**: Applica l'operatore scelto (is o is not) allo stato del documento confrontandolo con gli stati elencati:
-  * Con **is**, verifica se lo stato del documento corrisponde a uno stato qualsiasi nell'elenco.
-  * Con **non lo è**, verifica se lo stato del documento non compare nell'elenco.
+* **Valutazione della condizione**: Applica l'operatore scelto (**È** o **Non è**) allo stato del documento confrontandolo con gli stati elencati:
+  * Con **È**, verifica se lo stato del documento corrisponde a uno stato qualsiasi nell'elenco.
+  * Con **Non è**, verifica se lo stato del documento non compare nell'elenco.
 * **Esecuzione dell'azione**: A seconda dell'esito della valutazione della condizione:
   * **True**: Esegue azioni o workflow predefiniti se la condizione è soddisfatta.
   * **False**: Salta o attiva workflow alternativi se la condizione non è soddisfatta.
@@ -42,8 +42,8 @@ La scheda di workflow "Document Status Condition" è fondamentale per garantire 
 
 ### Esempio di elenco di stati
 
-**Configurazione:** Scegli l'operatore che richiede che lo stato corrente sia all'interno della lista. Selezionare `Pending Approval` e `Pending Second Approval` nell'elenco degli stati.
+**Configurazione:** Scegli l'operatore che richiede che lo stato corrente sia all'interno della lista. Selezionare `In attesa di approvazione` e `In attesa della seconda approvazione` nell'elenco degli stati.
 
-**Risultato previsto e controesempio:** La condizione è vera per un documento con uno degli stati selezionati. È falso per un documento con stato `Ready in Validation`. Con l'operatore che richiede che lo stato sia esterno all'elenco, queste condizioni risultano invertite. Esaminare l'elenco effettivo anziché confrontare un valore di testo libero separato da virgole.
+**Risultato previsto e controesempio:** La condizione è vera per un documento con uno degli stati selezionati. È falso per un documento con stato `Pronto per la convalida`. Con l'operatore che richiede che lo stato sia esterno all'elenco, queste condizioni risultano invertite. Esaminare l'elenco effettivo anziché confrontare un valore di testo libero separato da virgole.
 
 Questa è una configurazione di test illustrativa e il risultato atteso; non è stato eseguito. Utilizza dati e destinatari configurati nella tua organizzazione di test.

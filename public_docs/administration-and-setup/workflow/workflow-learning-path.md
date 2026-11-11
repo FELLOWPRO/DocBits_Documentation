@@ -28,7 +28,7 @@ Usare un’organizzazione di test propria e un documento sintetico. Verificare o
 
 **Criterio di completamento:** Si sa spiegare quando la regola viene considerata e quale prova distingue simulazione ed esecuzione documentale.
 
-Leggere e costruire: [Quando viene eseguito il mio workflow?](workflow-execution-model.md) · [P0: cambiare stato e limitare le nuove esecuzioni](masterclass/status-and-reentry.md).
+Leggere e costruire: [Quando viene eseguito il mio workflow?](workflow-execution-model.md) · [Cambiare lo stato senza riavviare il Workflow](masterclass/status-and-reentry.md).
 
 ## 2. Prima regola propria <a id="level-2"></a>
 

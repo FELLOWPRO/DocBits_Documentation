@@ -1,6 +1,7 @@
 root: ./public_docs/
 
 redirects:
+    overview-and-basics/release-notes/vesta-hotfix-11-november-2026: overview-and-basics/release-notes/vesta-hotfix-18-november-2026.md
     administration-and-setup/setup/watchdog-installation: administration-and-setup/setup/watchdog/watchdog-installation.md
     advanced-functions-and-tools/docbits-mcp: advanced-functions-and-tools/docbits-mcp/README.md
     advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex: advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md
@@ -129,7 +130,7 @@ redirects:
     gai-shu-yu-ji-chu/docbits-release-lifecycle-strategy: overview-and-basics/docbits-release-lifecycle-strategy.md
     gai-shu-yu-ji-chu/release-notes: overview-and-basics/release-notes/README.md
     gai-shu-yu-ji-chu/release-notes/nova-minor-release-4-november-2026: overview-and-basics/release-notes/nova-minor-release-4-november-2026.md
-    gai-shu-yu-ji-chu/release-notes/vesta-hotfix-11-november-2026: overview-and-basics/release-notes/vesta-hotfix-11-november-2026.md
+    gai-shu-yu-ji-chu/release-notes/vesta-hotfix-11-november-2026: overview-and-basics/release-notes/vesta-hotfix-18-november-2026.md
     gai-shu-yu-ji-chu/release-notes/incremental-updates-14-october-2026: overview-and-basics/release-notes/incremental-updates-14-october-2026.md
     gai-shu-yu-ji-chu/release-notes/incremental-updates-15-september-2026: overview-and-basics/release-notes/incremental-updates-15-september-2026.md
     gai-shu-yu-ji-chu/release-notes/incremental-updates-8-september-2026: overview-and-basics/release-notes/incremental-updates-8-september-2026.md

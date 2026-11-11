@@ -13,12 +13,12 @@ System odrzuca cenę jednostkową faktury, dostosowuje ją do zamówienia zakupu
 ## Przykład:
 
 * **Purchase Order (PO):**
-  * Quantity: 200 jednostek
-  * Unit Price: $15.00 za jednostkę
+  * Quantity: 200 units
+  * Unit Price: $15.00 per unit
   * Total Amount: $3,000.00
 * **Invoice Received:**
-  * Quantity: 198 jednostek — 1% poniżej wartości PO, w ramach skonfigurowanej tolerancji ±2%.
-  * Unit Price: $17.00 za jednostkę — 13.33% powyżej wartości PO, poza skonfigurowaną tolerancją ±1%; odrzucona.
+  * Quantity: 198 units — 1% below the PO value, within the configured ±2% tolerance.
+  * Unit Price: $17.00 per unit — 13.33% above the PO value, outside the configured ±1% tolerance; rejected.
   * Total Amount: $3,366.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±2%
@@ -28,7 +28,7 @@ Ponieważ ilość (198 jednostek) mieści się w dopuszczalnym zakresie toleranc
 
 1. **Odrzuca cenę jednostkową faktury:** System nie akceptuje zafakturowanej ceny jednostkowej wynoszącej $17.00.
 2. **Dostosowuje cenę jednostkową:** System dostosowuje cenę jednostkową do ceny jednostkowej z pierwotnego zamówienia zakupu.
-   * Skorygowana cena jednostkowa = $15.00 (z PO)
+   * Adjusted Unit Price = $15.00 (from PO)
 3. **Oblicza skorygowaną kwotę całkowitą:** Na podstawie skorygowanej ceny jednostkowej system ponownie oblicza kwotę całkowitą.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**

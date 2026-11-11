@@ -11,18 +11,18 @@ Esta tarjeta está diseñada para controlar las acciones del flujo de trabajo se
 1. **Operador**
    * **Descripción**: Determina cómo se evaluará el estado del documento frente a una condición especificada.
    * **Opciones**:
-     * **is**: Dispara las acciones asociadas si el estado actual del documento coincide con uno de los estados especificados.
-     * **no es**: Dispara las acciones si el estado del documento no coincide con ninguno de los estados especificados.
+     * **Es**: Dispara las acciones asociadas si el estado actual del documento coincide con uno de los estados especificados.
+     * **No Es**: Dispara las acciones si el estado del documento no coincide con ninguno de los estados especificados.
 2. **Estado (Lista)**
    * **Descripción**: Enumera los estados específicos con los que se comparará el estado actual del documento.
-   * **Ejemplos**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". Estos representan diferentes etapas o condiciones en las que puede encontrarse un documento dentro de un proceso de flujo de trabajo.
+   * **Estados que puede elegir**: Error, Error de exportación, Finalizado, Rechazado, Listo para la revisión, Listo para la validación, Aprobación pendiente, Pendiente de la segunda aprobación, Exportado e IMPUESTO DE VÉRTICE RECHAZADO. Puede seleccionar varios.
 
 **Funcionalidad**
 
 * **Identificación del estado**: Identifica automáticamente el estado actual de un documento a medida que avanza por el flujo de trabajo del sistema ERP.
-* **Evaluación de la condición**: Aplica el operador elegido (is o is not) al estado del documento en comparación con los estados enumerados:
-  * Si es **is**, comprueba si el estado del documento coincide con algún estado de la lista.
-  * Si es **no es**, comprueba si el estado del documento no aparece en la lista.
+* **Evaluación de la condición**: Aplica el operador elegido (**Es** o **No Es**) al estado del documento en comparación con los estados enumerados:
+  * Si es **Es**, comprueba si el estado del documento coincide con algún estado de la lista.
+  * Si es **No Es**, comprueba si el estado del documento no aparece en la lista.
 * **Ejecución de la acción**: Según el resultado de la evaluación de la condición:
   * **True**: Ejecuta acciones o flujos de trabajo predefinidos si se cumple la condición.
   * **False**: Omite o dispara flujos de trabajo alternativos si no se cumple la condición.
@@ -42,8 +42,8 @@ La tarjeta de flujo de trabajo "Document Status Condition" es vital para garanti
 
 ### Ejemplo de lista de estado
 
-**Configuración:** Elija el operador que requiere que el estado actual esté dentro de la lista. Seleccione `Pending Approval` y `Pending Second Approval` en la lista de estado.
+**Configuración:** Elija el operador que requiere que el estado actual esté dentro de la lista. Seleccione **Aprobación pendiente** y **Pendiente de la segunda aprobación** en la lista de estado.
 
-**Resultado esperado y contraejemplo:** La condición es verdadera para un documento con cualquiera de los estados seleccionados. Es falso para un documento con estado `Ready in Validation`. Con el operador que requiere que el estado esté fuera de la lista, estas condiciones resultan a la inversa. Inspeccione la lista real en lugar de comparar un valor de texto libre separado por comas.
+**Resultado esperado y contraejemplo:** La condición es verdadera para un documento con cualquiera de los estados seleccionados. Es falsa para un documento con estado **Listo para la validación**. Con el operador que requiere que el estado esté fuera de la lista, estas condiciones resultan a la inversa. Inspeccione la lista real en lugar de comparar un valor de texto libre separado por comas.
 
 Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.

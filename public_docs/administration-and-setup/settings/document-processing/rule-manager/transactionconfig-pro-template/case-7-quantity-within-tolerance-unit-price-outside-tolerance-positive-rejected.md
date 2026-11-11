@@ -13,12 +13,12 @@ Das System lehnt den Rechnungsstückpreis ab, passt ihn an die Bestellung an und
 ## Beispiel:
 
 * **Purchase Order (PO):**
-  * Quantity: 200 Einheiten
-  * Unit Price: $15.00 je Einheit
+  * Quantity: 200 units
+  * Unit Price: $15.00 per unit
   * Total Amount: $3,000.00
 * **Invoice Received:**
-  * Quantity: 198 Einheiten — 1% unter dem Bestellwert, innerhalb der konfigurierten Toleranz von ±2%.
-  * Unit Price: $17.00 je Einheit — 13.33% über dem Bestellwert, außerhalb der konfigurierten Toleranz von ±1%; abgelehnt.
+  * Quantity: 198 units — 1% below the PO value, within the configured ±2% tolerance.
+  * Unit Price: $17.00 per unit — 13.33% above the PO value, outside the configured ±1% tolerance; rejected.
   * Total Amount: $3,366.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±2%
@@ -28,7 +28,7 @@ Da die Menge (198 Einheiten) innerhalb des zulässigen Toleranzbereichs liegt, d
 
 1. **Rechnungsstückpreis ablehnen:** Das System akzeptiert den berechneten Stückpreis von $17.00 nicht.
 2. **Stückpreis anpassen:** Das System passt den Stückpreis an den ursprünglichen Stückpreis der Bestellung an.
-   * Angepasster Stückpreis = $15.00 (aus der Bestellung)
+   * Adjusted Unit Price = $15.00 (from PO)
 3. **Korrigierten Gesamtbetrag berechnen:** Mit dem angepassten Stückpreis berechnet das System den Gesamtbetrag neu.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**

@@ -42,6 +42,10 @@ Wenn die Rechnungsnummer nicht richtig gelesen wurde:
 Eine eingetippte Korrektur ändert den Wert dieses Dokuments; sie erzeugt nicht die für dieses Extraktionstraining nötige Zuordnung zur Belegstelle. Wähle den Wert im Original, bestätige die Zuordnung und speichere die Regel, damit DocBits sie bei passenden Dokumenten dieses Lieferanten wiederverwenden kann. Bei direkt aus E-Rechnungsdaten gelesenen Dokumenten steht dieses bildbasierte Training nicht zur Verfügung.
 {% endhint %}
 
+### Die Schaltflächen im Popup am markierten Feldwert
+
+Wenn du einen Bereich im Dokument markierst, öffnet sich über der Markierung ein kleines Popup mit runden Schaltflächen. Fahre mit der Maus über eine Schaltfläche, um zu lesen, was sie bewirkt: den extrahierten Wert löschen, ihn leeren oder die Zuordnung bestätigen. Der Hinweis erscheint nach kurzer Verzögerung und verwendet dieselbe Formulierung, die auch Screenreader vorlesen.
+
 ## Speichern, Regeln speichern und weitergeben
 
 | Aktion | Wirkung |
@@ -105,3 +109,5 @@ Bei Rechnungen öffnet **Mehr Optionen → Dokumentenfluss** den Verarbeitungsab
 ## Wenn Bearbeiten oder Weitergeben nicht möglich ist
 
 Lies den angezeigten Grund: Das Dokument kann gesperrt, schreibgeschützt, in einem anderen Verarbeitungsstatus oder für deine Rolle eingeschränkt sein. Behebe Prüfmeldungen und kläre Berechtigungen oder Einstellungen mit der zuständigen Person oder Administration. Bei einem verbleibenden Fehler helfen die [Fehlerbehebung](troubleshooting/README.md) oder ein Supportticket mit Dokument und genauer Meldung.
+
+Zum Ordnen von Seiten siehe [PDF aufteilen und Seiten ordnen](../dashboard/manual-pdf-splitting.md).

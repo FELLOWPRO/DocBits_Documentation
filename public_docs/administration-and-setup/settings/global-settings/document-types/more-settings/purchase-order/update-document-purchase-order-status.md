@@ -10,7 +10,7 @@ Antes de cambiar la configuración, elija la organización y el tipo de document
 2. Busque el tipo de documento utilizado para los documentos vinculados a la OC, como **Factura**, y seleccione el engranaje de su tarjeta para abrir **Más Ajustes**.
 3. Expanda **Orden de compra**. Busque **Actualizar el estado de la orden de compra del documento** y actívelo. El icono de ayuda cercano explica la opción dentro de la aplicación. Cambiar este interruptor no modifica las demás configuraciones de PO de la misma sección.
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc696-document-types-es-20261011.png" alt="Página de Tipos de Documento con la tarjeta Factura y su engranaje de Más Ajustes"><figcaption>Abra la configuración del tipo de documento que utiliza.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc696-document-types-es-20261111.png" alt="Página de Tipos de Documento con la tarjeta Factura y su engranaje de Más Ajustes"><figcaption>Abra la configuración del tipo de documento que utiliza.</figcaption></figure>
 
 <figure><img src="../../../../../../.gitbook/assets/dbdc696-po-settings-es-20261011.png" alt="Sección Orden de compra de Más Ajustes con el interruptor Actualizar el estado de la orden de compra del documento"><figcaption>El interruptor de actualización de estado en la configuración de Orden de compra.</figcaption></figure>
 
@@ -38,9 +38,8 @@ Utilice un documento que ya esté vinculado a una orden de compra de prueba. Cam
 
 ## Hallazgos de traducción de la aplicación
 
-Estos términos aparecen sin traducir o de forma inconsistente en la interfaz en español (versión 10.78.9.5); se citan tal cual y se han notificado, no corregido en la documentación:
+Estos términos aparecen sin traducir o de forma inconsistente en la interfaz en español (versión 11.27.7); se citan tal cual y se han notificado, no corregido en la documentación:
 
-1. En la página Tipos de Documento, los nombres de tipo **Purchase Order**, **Delivery Note**, **Order Confirmation**, **Customs Declaration** y **Freight Letter**, así como el encabezado de columna **Extraction**, permanecen en inglés.
-2. En el panel, el encabezado de columna **Suboficial** es una traducción incorrecta de "Sub-Org".
-3. En la configuración de PO, el interruptor se llama **Actualizar el estado de la orden de compra del documento**, mientras que el título de la página dice "Actualizar Estado de Orden de Compra de Documentos".
-4. En Búsqueda de datos maestros, los nombres de las configuraciones **Supplier Lookup**, **Order Header Lookup** y **Order Line Lookup** permanecen en inglés, y la etiqueta predeterminada se muestra como **Defecto**.
+1. En la página Tipos de Documento, los nombres de tipo **Purchase Order**, **Delivery Note**, **Order Confirmation**, **Customs Declaration** y **Freight Letter** permanecen en inglés; la etiqueta junto al interruptor sí está traducida y dice **Extracción**.
+2. En la configuración de PO, el interruptor se llama **Actualizar el estado de la orden de compra del documento**, mientras que el título de la página dice "Actualizar Estado de Orden de Compra de Documentos".
+3. En Búsqueda de datos maestros, los nombres de las configuraciones **Supplier Lookup**, **Order Header Lookup** y **Order Line Lookup** permanecen en inglés, y la etiqueta predeterminada se muestra como **Defecto**.

@@ -28,7 +28,7 @@ Da die Menge (198 Einheiten) innerhalb des zulässigen Toleranzbereichs liegt, d
 
 1. **Rechnungsstückpreis ablehnen:** Das System akzeptiert den berechneten Stückpreis von $17.00 nicht.
 2. **Stückpreis anpassen:** Das System passt den Stückpreis an den ursprünglichen Stückpreis der Bestellung an.
-   * Adjusted Unit Price = $15.00 (from PO)
+   * Adjusted Unit Price = $15.00 (aus der Bestellung)
 3. **Korrigierten Gesamtbetrag berechnen:** Mit dem angepassten Stückpreis berechnet das System den Gesamtbetrag neu.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**

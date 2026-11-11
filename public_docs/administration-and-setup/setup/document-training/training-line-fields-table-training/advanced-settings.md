@@ -42,6 +42,8 @@ Nachher:
 
 **Damit verwerfen Sie unerwünschte mehrzeilige Einträge, etwa überlaufende Beschreibungen.**
 
+Der Tooltip der Option fragt: _In welche Spalte möchten Sie Ihre nicht gruppierten Daten verschieben?_ Zur Auswahl steht der **Papierkorb**.
+
 In diesem Beispiel läuft die Beschreibung über mehrere Zeilen, aber nur die erste Zeile ist relevant:
 
 <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-overflow-doc-de-20261111.png" alt="Rechnungstabelle, in der die Beschreibung jedes Artikels auf zusätzlichen Textzeilen unter dem Artikel weiterläuft."><figcaption><p>Die Beschreibung läuft über mehrere Zeilen, von denen nur die erste relevant ist.</p></figcaption></figure>
@@ -57,6 +59,8 @@ Setzen Sie **Zusätzliche Zeilen verschieben nach** auf **Papierkorb**, um den �
 ## Minimum gruppierter Zeilen
 
 **Nutzen Sie diese Einstellung, wenn Zeilen unter einer Hauptzeile gruppiert werden sollen (z. B. Positionen mit mehreren Unterzeilen).**
+
+Der Tooltip der Option fragt: _Wie viele Zeilen hat Ihre gruppierte Spalte mindestens?_
 
 Hier sind nur drei von sechs Zeilen relevant. Zwei Schlüsselspalten sind zugeordnet (z. B. Position, Beschreibung), weitere Spalten werden als benutzerdefinierte Felder behandelt.
 

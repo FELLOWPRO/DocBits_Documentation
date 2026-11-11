@@ -596,7 +596,7 @@
   * [Journal d’activité](administration-and-setup/settings/log-settings/README.md)
     * [Gestion des tâches](administration-and-setup/settings/log-settings/task-management.md)
     * [Vérifier la synchronisation des données](administration-and-setup/settings/log-settings/data-synchronization.md)
-    * [Paramètres de Fulltext Search](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
+    * [Paramètres de la Recherche Plein Texte](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
     * [Audit d'Accès](administration-and-setup/settings/log-settings/access-audit.md)
     * [Analytique](administration-and-setup/settings/log-settings/analytics.md)
   * [Licences système](administration-and-setup/settings/api-licenses.md)

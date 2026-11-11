@@ -11,18 +11,18 @@ Questa scheda di workflow è concepita per gestire le operazioni sui documenti i
 1. **Operatore**
    * **Descrizione**: Specifica il metodo per valutare lo stato del documento rispetto alla condizione selezionata.
    * **Opzioni**:
-     * **is**: Attiva l'operazione se lo stato corrente del documento corrisponde allo stato selezionato.
-     * **non lo è**: Attiva l'operazione se lo stato corrente del documento non corrisponde allo stato selezionato.
+     * **È**: Attiva l'operazione se lo stato corrente del documento corrisponde allo stato selezionato.
+     * **Non è**: Attiva l'operazione se lo stato corrente del documento non corrisponde allo stato selezionato.
 2. **Stato**
    * **Descrizione**: Consente la selezione di un singolo stato del documento per impostare la condizione.
-   * **Esempi di stati**: "Errore", "Errore di esportazione", "Pronto in validazione", "Pronto in revisione", "Approvazione in attesa", "Seconda approvazione in attesa".
+   * **Stati selezionabili**: Errore, Errore di esportazione, Completato, Rifiutato, Pronto per la revisione, Pronto per la convalida, In attesa di approvazione, In attesa della seconda approvazione, Esportato e IMPOSTA VERTICALE RESPINTA.
    * **Dettaglio**: Gli utenti scelgono uno stato da un menu a discesa o da un set di pulsanti di opzione. Questo stato funge quindi da criterio per l'operazione della scheda.
 
 **Funzionalità**
 
 * **Identificazione dello stato del documento**: Identifica lo stato corrente di un documento mentre viene elaborato attraverso il sistema ERP.
 * **Valutazione della condizione**:
-  * In base all'operatore selezionato (`is` o `is not`), la scheda verifica se lo stato corrente del documento è allineato al criterio di stato scelto.
+  * In base all'operatore selezionato (**È** o **Non è**), la scheda verifica se lo stato corrente del documento è allineato al criterio di stato scelto.
 * **Esecuzione dell'azione**:
   * **Condizione vera**: Se lo stato corrisponde (o non corrisponde, a seconda dell'operatore), viene avviata l'azione corrispondente. Potrebbe trattarsi di instradamento per ulteriore elaborazione, generazione di notifiche o altri workflow predefiniti.
   * **Condizione falsa**: Se la condizione non è soddisfatta, non viene intrapresa alcuna azione, oppure viene attivato un percorso alternativo.
@@ -42,8 +42,8 @@ La scheda di workflow "Single Document Status Condition" semplifica la gestione 
 
 ### Esempio di stato singolo
 
-**Configurazione:** Scegli l'operatore `is` e lo stato `Pending Approval`. Aggiungi una successiva azione di revisione appropriata per quello stato.
+**Configurazione:** Scegli l'operatore **È** e lo stato `In attesa di approvazione`. Aggiungi una successiva azione di revisione appropriata per quello stato.
 
-**Risultato atteso e controesempio:** La condizione è vera per un documento attualmente `Pending Approval`; è falso per un documento con stato `Ready in Validation`. Utilizza lo stato effettivo selezionato dalla tua versione. La modifica di uno stato non comporta di per sé l'esportazione del documento.
+**Risultato atteso e controesempio:** La condizione è vera per un documento attualmente `In attesa di approvazione`; è falso per un documento con stato `Pronto per la convalida`. Utilizza lo stato effettivo selezionato dalla tua versione. La modifica di uno stato non comporta di per sé l'esportazione del documento.
 
 Questa è una configurazione di test illustrativa e il risultato atteso; non è stato eseguito. Utilizza dati e destinatari configurati nella tua organizzazione di test.

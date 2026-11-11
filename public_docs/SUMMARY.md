@@ -618,7 +618,7 @@
 * [工作流](administration-and-setup/workflow/README.md)
   * [从入门到专家的学习路径](administration-and-setup/workflow/workflow-learning-path.md "学习路径：从入门到专家")
     * [我的工作流何时运行？](administration-and-setup/workflow/workflow-execution-model.md)
-    * [P0：更改状态并限制重复执行](administration-and-setup/workflow/masterclass/status-and-reentry.md)
+    * [更改状态而不重新启动 Workflow](administration-and-setup/workflow/masterclass/status-and-reentry.md)
     * [高级案例：发票路由](administration-and-setup/workflow/advanced-workflow-case-study.md)
     * [工作流练习包](administration-and-setup/workflow/workflow-training-kit.md)
     * [P1：选择 Field is、Docfield is 或 Compare two Fields](administration-and-setup/workflow/masterclass/field-conditions.md)

@@ -28,7 +28,7 @@ description: "从入门到专家的学习路径"
 
 **完成标准:** 能够在搭建前说明何时会处理规则，以及哪些依据能区分模拟与实际文档运行。
 
-阅读并搭建: [我的工作流何时运行？](workflow-execution-model.md) · [P0：更改状态并限制重复执行](masterclass/status-and-reentry.md).
+阅读并搭建: [我的工作流何时运行？](workflow-execution-model.md) · [更改状态而不重新启动 Workflow](masterclass/status-and-reentry.md).
 
 ## 2. 构建第一条规则 <a id="level-2"></a>
 

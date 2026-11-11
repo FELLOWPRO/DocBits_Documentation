@@ -28,7 +28,7 @@
 
 1. **拒绝发票单价:** 系统不接受发票中的单价 $17.00。
 2. **调整单价:** 系统将单价调整为与原采购订单单价一致。
-   * Adjusted Unit Price = $15.00 (from PO)
+   * Adjusted Unit Price = $15.00 (来自 PO)
 3. **计算更正后的总金额:** 使用调整后的单价，系统重新计算总金额。
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**

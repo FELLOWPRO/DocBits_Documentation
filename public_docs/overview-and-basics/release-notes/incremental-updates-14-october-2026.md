@@ -4,7 +4,7 @@
 >
 > **Comparing with NOVA?** The [NOVA minor-release feature comparison](nova-minor-release-4-november-2026.md#what-nova-adds-for-customers) covers the Validation Assistant, reviewed automation improvements, expanded e-invoice reports, new import controls and other additions beyond this VESTA release.
 >
-> **Next VESTA hotfix: [11 November 2026 (planned)](vesta-hotfix-11-november-2026.md).** All features previously available as beta in VESTA are now regular NOVA features and will become regular VESTA features with that hotfix.
+> **Next VESTA hotfix: [18 November 2026 (planned)](vesta-hotfix-18-november-2026.md).** All features previously available as beta in VESTA are now regular NOVA features and will become regular VESTA features with that hotfix.
 
 _What changes in the DocBits production hotfix on 14 October 2026 (release
 R1.0.15), covering everything since the [15 September hotfix](incremental-updates-15-september-2026.md).

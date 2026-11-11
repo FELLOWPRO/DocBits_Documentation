@@ -612,7 +612,7 @@
 * [Workflow](administration-and-setup/workflow/README.md)
   * [Leerpad van beginner tot expert](administration-and-setup/workflow/workflow-learning-path.md "Leertraject – van beginner tot expert")
     * [Wanneer wordt mijn workflow uitgevoerd?](administration-and-setup/workflow/workflow-execution-model.md)
-    * [P0: Status wijzigen en herhaalde uitvoering begrenzen](administration-and-setup/workflow/masterclass/status-and-reentry.md)
+    * [Status wijzigen zonder uw Workflow opnieuw te starten](administration-and-setup/workflow/masterclass/status-and-reentry.md)
     * [Advanced-praktijkvoorbeeld: factuurrouting](administration-and-setup/workflow/advanced-workflow-case-study.md)
     * [Workflow-oefenpakket](administration-and-setup/workflow/workflow-training-kit.md)
     * [P1: Field is, Docfield is of Compare two Fields kiezen](administration-and-setup/workflow/masterclass/field-conditions.md)

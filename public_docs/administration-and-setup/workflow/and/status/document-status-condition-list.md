@@ -11,18 +11,18 @@ Deze kaart is ontworpen om workflow-acties te controleren op basis van de huidig
 1. **Exploitant**
    * **Beschrijving**: Bepaalt hoe de documentstatus ten opzichte van een opgegeven voorwaarde wordt geëvalueerd.
    * **Opties**:
-     * **is**: Triggert de bijbehorende acties als de huidige status van het document overeenkomt met een van de opgegeven statussen.
-     * **niet**: Triggert de acties als de status van het document met geen van de opgegeven statussen overeenkomt.
+     * **Is**: Triggert de bijbehorende acties als de huidige status van het document overeenkomt met een van de opgegeven statussen.
+     * **Is niet**: Triggert de acties als de status van het document met geen van de opgegeven statussen overeenkomt.
 2. **Status ( Lijst )**
    * **Beschrijving**: Somt de specifieke statussen op waarmee de huidige status van het document wordt vergeleken.
-   * **Voorbeelden**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". Deze vertegenwoordigen verschillende fasen of toestanden waarin een document zich binnen een workflowproces kan bevinden.
+   * **Statussen waaruit u kunt kiezen**: Fout, Exportfout, Afgerond, Afgewezen, Klaar voor beoordeling, Klaar voor validatie, In afwachting van goedkeuring, In afwachting van tweede goedkeuring, Geëxporteerd en VERTEX-BELASTING AFGEWEZEN. U kunt er meerdere selecteren.
 
 **Functionaliteit**
 
 * **Statusidentificatie**: Identificeert automatisch de huidige status van een document terwijl het door de workflow van het ERP-systeem beweegt.
-* **Voorwaarde-evaluatie**: Past de gekozen operator (is of is not) toe op de status van het document in vergelijking met de vermelde statussen:
-  * Bij **is** controleert hij of de status van het document overeenkomt met een status in de lijst.
-  * Bij **niet** controleert hij of de status van het document niet in de lijst voorkomt.
+* **Voorwaarde-evaluatie**: Past de gekozen operator (**Is** of **Is niet**) toe op de status van het document in vergelijking met de vermelde statussen:
+  * Bij **Is** controleert hij of de status van het document overeenkomt met een status in de lijst.
+  * Bij **Is niet** controleert hij of de status van het document niet in de lijst voorkomt.
 * **Actie-uitvoering**: Afhankelijk van de uitkomst van de voorwaarde-evaluatie:
   * **True**: Voert vooraf gedefinieerde acties of workflows uit als aan de voorwaarde wordt voldaan.
   * **False**: Slaat alternatieve workflows over of triggert ze als niet aan de voorwaarde wordt voldaan.
@@ -42,8 +42,8 @@ De workflow-kaart "Document Status Condition" is essentieel om ervoor te zorgen 
 
 ### Voorbeeld van een statuslijst
 
-**Configuratie:** Kies de operator die vereist dat de huidige status in de lijst staat. Selecteer `Pending Approval` en `Pending Second Approval` in de statuslijst.
+**Configuratie:** Kies de operator die vereist dat de huidige status in de lijst staat. Selecteer **In afwachting van goedkeuring** en **In afwachting van tweede goedkeuring** in de statuslijst.
 
-**Verwacht resultaat en tegenvoorbeeld:** De voorwaarde is waar voor een document met een van beide geselecteerde statussen. Dit is false voor een document met de status `Ready in Validation`. Als de operator vereist dat de status buiten de lijst valt, zijn de resultaten van deze voorwaarde omgekeerd. Inspecteer de daadwerkelijke lijst in plaats van een door komma's gescheiden vrije tekstwaarde te vergelijken.
+**Verwacht resultaat en tegenvoorbeeld:** De voorwaarde is waar voor een document met een van beide geselecteerde statussen. Dit is false voor een document met de status **Klaar voor validatie**. Als de operator vereist dat de status buiten de lijst valt, zijn de resultaten van deze voorwaarde omgekeerd. Inspecteer de daadwerkelijke lijst in plaats van een door komma's gescheiden vrije tekstwaarde te vergelijken.
 
 Dit is een illustratieve testconfiguratie en verwachte uitkomst; het werd niet uitgevoerd. Gebruik gegevens en ontvangers die in uw testorganisatie zijn geconfigureerd.

@@ -11,18 +11,18 @@ Deze workflow-kaart is afgestemd op het beheren van bewerkingen op documenten op
 1. **Exploitant**
    * **Beschrijving**: Geeft de methode op voor het evalueren van de status van het document ten opzichte van de geselecteerde voorwaarde.
    * **Opties**:
-     * **is**: Triggert de bewerking als de huidige status van het document overeenkomt met de geselecteerde status.
-     * **niet**: Triggert de bewerking als de huidige status van het document niet overeenkomt met de geselecteerde status.
+     * **Is**: Triggert de bewerking als de huidige status van het document overeenkomt met de geselecteerde status.
+     * **Is niet**: Triggert de bewerking als de huidige status van het document niet overeenkomt met de geselecteerde status.
 2. **Status**
    * **Beschrijving**: Maakt de selectie van één enkele documentstatus mogelijk om de voorwaarde in te stellen.
-   * **Voorbeelden van statussen**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
+   * **Statussen waaruit u kunt kiezen**: Fout, Exportfout, Afgerond, Afgewezen, Klaar voor beoordeling, Klaar voor validatie, In afwachting van goedkeuring, In afwachting van tweede goedkeuring, Geëxporteerd en VERTEX-BELASTING AFGEWEZEN.
    * **Details**: Gebruikers kiezen één status uit een dropdown of een set keuzerondjes. Deze status dient vervolgens als criterium voor de bewerking van de kaart.
 
 **Functionaliteit**
 
 * **Documentstatusidentificatie**: Identificeert de huidige status van een document terwijl het door het ERP-systeem wordt verwerkt.
 * **Voorwaarde-evaluatie**:
-  * Op basis van de geselecteerde operator (`is` of `is not`) controleert de kaart of de huidige status van het document overeenkomt met het gekozen statuscriterium.
+  * Op basis van de geselecteerde operator (**Is** of **Is niet**) controleert de kaart of de huidige status van het document overeenkomt met het gekozen statuscriterium.
 * **Actie-uitvoering**:
   * **True-voorwaarde**: Als de status overeenkomt (of niet overeenkomt, op basis van de operator), wordt de bijbehorende actie gestart. Dit kan routering voor verdere verwerking, het genereren van meldingen of andere vooraf gedefinieerde workflows zijn.
   * **False-voorwaarde**: Als niet aan de voorwaarde wordt voldaan, wordt geen actie ondernomen of wordt een alternatief pad getriggerd.
@@ -42,8 +42,8 @@ De workflow-kaart "Single Document Status Condition" vereenvoudigt het documentb
 
 ### Voorbeeld met één status
 
-**Configuratie:** Kies operator `is` en status `Pending Approval`. Voeg een volgende beoordelingsactie toe die geschikt is voor die status.
+**Configuratie:** Kies operator **Is** en status **In afwachting van goedkeuring**. Voeg een volgende beoordelingsactie toe die geschikt is voor die status.
 
-**Verwacht resultaat en tegenvoorbeeld:** De voorwaarde is waar voor een document dat momenteel `Pending Approval` is; het is false voor een document met status `Ready in Validation`. Gebruik de daadwerkelijk geselecteerde status uit uw release. Als u een status wijzigt, wordt het document niet zelf geëxporteerd.
+**Verwacht resultaat en tegenvoorbeeld:** De voorwaarde is waar voor een document dat momenteel **In afwachting van goedkeuring** is; het is false voor een document met status **Klaar voor validatie**. Gebruik de daadwerkelijk geselecteerde status uit uw release. Als u een status wijzigt, wordt het document niet zelf geëxporteerd.
 
 Dit is een illustratieve testconfiguratie en verwachte uitkomst; het werd niet uitgevoerd. Gebruik gegevens en ontvangers die in uw testorganisatie zijn geconfigureerd.

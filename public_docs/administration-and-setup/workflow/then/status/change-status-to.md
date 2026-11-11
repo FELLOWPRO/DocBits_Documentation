@@ -6,58 +6,61 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v3-nl-nl.png" alt="Wijzig status naar, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
 
-## **Doel:**
+## Doel
 
-De workflow-kaart **"Change Status"** wordt gebruikt om de status van een document te wijzigen naar een van de vooraf gedefinieerde toestanden — **Fout, afgewezen, gereed voor validatie, in afwachting van goedkeuring, in afwachting van tweede goedkeuring** — en optioneel bijbehorende workflows te triggeren op basis van de statuswijziging. Deze kaart automatiseert het proces van statusupdates en workflow-triggers, wat zorgt voor efficiënt documentbeheer en foutafhandeling.
+De kaart **Wijzig status naar** zet het document op een nieuwe status, bijvoorbeeld om het door te sturen voor goedkeuring of om het als afgewezen te markeren. U vindt de kaart in de Workflow-ontwerper onder **Dan → Status**.
 
-## **Onderdelen van de kaart:**
+## Instellingen
 
-1. **Status**
-   * **Beschrijving**: Geeft de nieuwe status op die op het document wordt toegepast.
-   * **Opties**:
-     * **Error**: Markeert het document als zijnde waarbij een fout is opgetreden.
-     * **Afgewezen**: Geeft aan dat het document is afgekeurd en niet verder doorgaat.
-     * **Klaar voor validatie**: Stelt het document in om door de volgende gebruiker of het volgende systeemproces te worden beoordeeld en gevalideerd.
-     * **In afwachting van goedkeuring**: Plaatst het document in een wachtstand voor goedkeuring.
-     * **In afwachting van tweede goedkeuring**: Zet het document in de wacht voor een tweede goedkeuringsniveau indien van toepassing.
-2. **Triggerwerkstromen**
-   * **Beschrijving**: Bepaalt of er na de statuswijziging eventuele vervolgworkflows moeten worden getriggerd.
-   * **Opties**:
-     * **True**: Start eventuele relevante workflows op basis van de statuswijziging.
-     * **False**: Voorkomt de uitvoering van workflows na de statuswijziging.
+### Status
 
-## **Functionaliteit:**
+De status die het document krijgt. U kunt kiezen uit:
 
-* **Voorwaarde-evaluatie**: Het systeem evalueert de voorwaarden die zijn ingesteld in de **"Wanneer"**- en **"En"**-secties. Als aan deze voorwaarden wordt voldaan, gaat de kaart verder met het wijzigen van de status van het document naar de geselecteerde waarde.
-* **Statusupdate**: Zodra aan de voorwaarden is voldaan, wordt de status van het document bijgewerkt naar een van de vooraf gedefinieerde opties (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), afhankelijk van de selectie van de gebruiker.
-* **Workflow-trigger-actie**: Als **Werkstromen activeren** op **True** is ingesteld, start het systeem automatisch eventuele bijbehorende workflows na de statusupdate. Als het op **False** is ingesteld, worden er geen aanvullende workflows getriggerd en eindigt het proces met de statuswijziging.
+| Status | Betekenis |
+| --- | --- |
+| **Fout** | Het document wordt gemarkeerd als document met een fout. |
+| **Afgewezen** | Het document is afgewezen. |
+| **Klaar voor validatie** | Het document wacht tot een gebruiker het controleert in de validatie. |
+| **In afwachting van goedkeuring** | Het document wacht op goedkeuring. |
+| **In afwachting van tweede goedkeuring** | Het document wacht op de tweede goedkeuring. |
+| **Gearchiveerd** | Het document wordt naar het archief verplaatst. Wanneer het wordt hersteld, krijgt het zijn vorige status terug. |
+| **Afgerond** | De verwerking van het document is voltooid. |
+| **Geëxporteerd** | Het document is geëxporteerd maar blijft open, bijvoorbeeld zodat het nog teruggestuurd kan worden voor goedkeuring. |
 
-## **Opzet en configuratie:**
+Een status zetten voert de stap erachter niet uit. **In afwachting van tweede goedkeuring** betekent bijvoorbeeld niet dat iemand de eerste goedkeuring heeft gegeven.
 
-Om deze kaart te configureren, moeten gebruikers:
+### Trigger-workflows (alleen versie 3)
 
-1. De gewenste **Status** opgeven waarop het document wordt ingesteld bij de voorwaarde-evaluatie (Error, Rejected, Ready for Validation, Pending Approval of Pending Second Approval).
-2. Kiezen of **Werkstromen activeren** na de statuswijziging wordt uitgevoerd door **True** of **False** te selecteren.
-3. De kaart voert de actie alleen uit als beide voorwaarden in de **"Wanneer"**- en **"En"**-secties als true worden geëvalueerd.
+Bepaalt of de statuswijziging Workflows mag starten.
 
-## **Conclusie:**
+* **Onwaar:** deze statuswijziging start geen Workflow. Kies deze waarde, tenzij een andere Workflow verder moet gaan met het document in zijn nieuwe status.
+* **WAAR:** DocBits start de Workflows waarvan de voorwaarden kloppen voor het document met zijn nieuwe status. Ze starten nadat de huidige Workflow klaar is. De kaart wacht niet op ze en laat niet zien of ze geslaagd zijn; kijk daarvoor in de Workflow-logboeken.
 
-De workflow-kaart **"Change Status"** biedt een gestroomlijnde benadering voor het beheren van documentstatussen en het triggeren van gerelateerde workflows. Hij zorgt ervoor dat documenten automatisch naar de juiste status worden gerouteerd en dat de noodzakelijke acties worden ondernomen, afhankelijk van de statuswijziging. Door duidelijke voorwaarden voor de uitvoering in te stellen, vermindert hij handmatige inspanning en verbetert hij de workflow-efficiëntie.
+Kies altijd een waarde. Zorg er bij **WAAR** voor dat de Workflow met deze kaart zelf niet klopt voor de nieuwe status, anders wordt hij een tweede keer uitgevoerd. Zie [Status wijzigen zonder uw Workflow opnieuw te starten](../../masterclass/status-and-reentry.md).
 
-<!-- workflow-card-practical-example-20261021 -->
+## Kaartversies
 
-## Praktijkvoorbeeld
+| Versie | Instellingen | Start Workflows na de wijziging |
+| --- | --- | --- |
+| **1** | Status | Ja, altijd |
+| **2** | Status | Ja, altijd |
+| **3** | Status, Trigger-workflows | Alleen met **Trigger-workflows** = **WAAR** |
 
-**Wanneer gebruiken:** Een gecontroleerd document doorgeven voor goedkeuring.
+Versie 1 en 2 werken hetzelfde. Versie 3 voegt **Trigger-workflows** toe, zodat u kunt bepalen of de nieuwe status andere Workflows start. Gebruik versie 3 voor nieuwe Workflows. Zet u een bestaande kaart van versie 3 terug naar een oudere versie, dan geldt **Trigger-workflows** niet meer en kan elke statuswijziging weer Workflows starten.
 
-**Waar:** Standaard workflowontwerper → Dan → Status → Wijzig status naar.
+## Goed om te weten
 
-**Instellen:** Kies versie 3 van `staus_change`, de status In afwachting van goedkeuring (`validated_pending_approval`) en zet het starten van andere workflows op `false` (`trigger_docflow=false`). Gebruik een geïsoleerde synthetische factuur die aan de voorafgaande controles voldoet.
+* **Zelfde status, geen effect.** Als het document de gekozen status al heeft, verandert er niets en start er geen Workflow.
+* **Gearchiveerd start nooit Workflows**, in geen enkele versie.
+* **Webhooks worden niet beïnvloed.** Webhooks voor statuswijzigingen worden verstuurd, wat u ook kiest bij **Trigger-workflows**.
+* **Een wijziging kan worden geweigerd.** Als uw organisatie afgeronde documenten vergrendelt, kan een document met status **Afgerond** alleen naar **Gearchiveerd** of **Fout**. Elke andere wijziging wordt geweigerd, de status blijft zoals hij was en het Workflow-logboek toont een fout.
+* **Tests simuleren alleen.** Bij een kaarttest of Advanced Test in de Workflow-ontwerper zien de volgende kaarten de nieuwe status, maar de status wordt niet opgeslagen en er wordt geen Workflow gestart.
 
-**Verwachte uitkomst en tegenvoorbeeld:** Een toegestane, geslaagde wijziging zet het document op de gekozen status. Als een eerdere voorwaarde onwaar is, wordt deze actie niet bereikt en wijzigt zij geen status. Een geweigerde of mislukte API-wijziging is geen succes: controleer de werkelijke status en logboeken. De kaart voert zelf geen export uit.
+## Voorbeeld
 
-### Kaartversies
+**Doel:** een factuur na de controles doorsturen voor goedkeuring.
 
-De expliciete schakelaar voor het starten van workflows is beschikbaar in v3. Versies 1 en 2 bieden deze niet; hun oudere updatepad gebruikt het standaardgedrag voor het starten van workflows. Ga er niet van uit dat een v3-instelling `false` ook geldt na overschakelen naar een oudere versie.
+1. Voorwaarden: **Documenttype** is _Factuur_ en **Documentstatus** **Is** **Klaar voor validatie**.
+2. **Wijzig status naar** (versie 3): **Status** = **In afwachting van goedkeuring**, **Trigger-workflows** = **Onwaar**.
 
-Deze configuratie en verwachte uitkomst zijn aan de uitvoeringscode getoetst. Er is geen workflow of statuswijziging uitgevoerd.
+**Resultaat:** de factuur gaat naar **In afwachting van goedkeuring** en wacht op goedkeuring. De wijziging start geen andere Workflow, en deze Workflow wordt niet opnieuw uitgevoerd omdat het document niet meer **Klaar voor validatie** is.

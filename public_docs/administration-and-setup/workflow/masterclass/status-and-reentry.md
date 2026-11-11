@@ -1,41 +1,67 @@
 ---
-description: "P0: Status wijzigen en herhaalde uitvoering begrenzen"
+description: >-
+  Gebruik de kaart Wijzig status naar zo dat een statuswijziging dezelfde
+  Workflow niet opnieuw start.
 ---
 
-# P0: Status wijzigen en herhaalde uitvoering begrenzen
+# Status wijzigen zonder uw Workflow opnieuw te starten
 
-**Change Status to** wijzigt de documentstatus. In versie 3 bepaalt `trigger_docflow` of verdere workflowverwerking wordt aangevraagd. Stel dit expliciet in. Ontbreekt het, dan gebruikt de code `true`; versies 1/2 lezen deze schakelaar niet via hetzelfde uitvoeringspad. Controleer de opgeslagen kaartversie.
+Wanneer een document een nieuwe status krijgt, start DocBits de Workflows die voor die status bedoeld zijn. Daar kan ook de Workflow bij zitten die de status net heeft gewijzigd. Als de voorwaarden daarvan nog kloppen, wordt die Workflow opnieuw uitgevoerd en maakt hij een tweede taak of export aan.
 
-Begin met `validated_pending_approval` en `trigger_docflow=false`. De status is een technische keuze: een verzonnen `pending_approval` is geen vervanging. Advanced Test simuleert de wijziging. Dit bewijst geen opgeslagen statuswijziging of verwerking van een aangevraagde vervolguitvoering.
+Op deze pagina ziet u hoe u uw Workflow zo instelt dat elk document er maar één keer doorheen gaat.
 
-Een begrensd bedrijfsproces controleert beginstatus en verwerkingskenmerk, voert de actie uit en gaat naar de volgende toestand. Een herhaald evenement mag niet meer aan de beginvoorwaarde voldoen. Twee gelijktijdige uitvoeringen kunnen echter allebei het oude kenmerk lezen: taken en exportbestemmingen hebben aanvullende controle op duplicaten nodig.
+## De instelling waar het om gaat
 
-Vergelijk voor acceptatie eerste en tweede echte uitvoering: status, aangevraagde vervolgverwerking en aantal taken of doelregistraties. Wissel niet alleen bij wijze van proef tussen twee statussen. Een statuswijziging verleent geen goedkeuring waarvan de bedrijfsvoorwaarde nog niet is vervuld.
+De kaart [Wijzig status naar](../then/status/change-status-to.md) zet de nieuwe status. Met de instelling **Trigger-workflows** bepaalt u of deze statuswijziging Workflows mag starten:
 
-## Kaarten en voorbeeldparameters
+* **Onwaar:** er wordt geen Workflow gestart. Kies deze waarde, tenzij een andere Workflow met het document verder moet gaan.
+* **WAAR:** DocBits start de Workflows waarvan de voorwaarden kloppen voor het document met zijn nieuwe status. Daar kan ook de Workflow bij zitten die de wijziging heeft gemaakt.
 
-Deze waarden beschrijven kaartparameters, geen volledig importeerbare workflow. Vervang YOUR_* door eigen testkeuzes. De ontwerper beheert het verborgen aanroeper-ID. Catalogus: Dev, DocFlow 2.10.38, 21 oktober 2026; controleer versies en rechten van uw organisatie afzonderlijk.
+Op de kaartpagina vindt u alle statussen en de kaartversies.
 
-### `staus_change` · v3
+## Welke Workflows starten na een statuswijziging
 
-Identiteit: `4e0d38a2-a0af-4c1c-b0c2-2f380d70d910`
+Als **Trigger-workflows** op **WAAR** staat, bekijkt DocBits elke ingeschakelde Workflow en controleert de voorwaarden voor documenttype en status, bijvoorbeeld een kaart **Documentstatus**. Een Workflow start als het document met zijn nieuwe status aan de voorwaarden voldoet.
 
-| Parameter | Type / keuzes | Voorbeeld |
-| --- | --- | --- |
-| `trigger_docflow` | `trigger_docflow:bool` | `false` |
-| `status` | `error / rejected / ready_for_validation / validated_pending_approval / approved_pending_second_approval / archived / finished / exported` | `"validated_pending_approval"` |
+Een Workflow die de status niet controleert, klopt voor **elke** status. Wijzigt zo'n Workflow zelf de status, dan start de nieuwe status hem opnieuw.
 
-## Zakelijke testgevallen
+Zet u een document op de status die het al heeft, dan gebeurt er niets: de status blijft gelijk en er start geen Workflow.
 
-| Geval | Invoer / configuratie | Verwacht resultaat |
-| --- | --- | --- |
-| STATUS-01 | v3; trigger_docflow=false | validated_pending_approval; trigger=false |
-| STATUS-02 | v3; trigger_docflow=true | vervolguitvoering aangevraagd ≠ voltooid |
-| STATUS-03 | v3; trigger_docflow: — | default=true |
-| STATUS-04 | RUN-1 → RUN-2 | tasks=1; destination_records=1 |
+## Voorbeeld: één keer of twee keer uitgevoerd
 
-## Bewijs en grenzen
+De regel: zodra uw Workflow zijn werk heeft gedaan, mogen zijn eigen voorwaarden niet meer kloppen.
 
-Geselecteerde kaart- en knoopresultaten zijn met synthetische gegevens in Advanced Test gecontroleerd. Antwoorden staan in het oefenpakket. Documentacties zijn gesimuleerd en bewijzen geen opgeslagen documentuitvoering of externe aflevering.
+<figure><img src="../../../.gitbook/assets/status-change-runs-once-vs-twice-nl.png" alt="Twee Workflows, allebei met Trigger-workflows op WAAR. Links: de voorwaarde controleert Type is Factuur en status is Klaar voor validatie. Na de wijziging naar In afwachting van goedkeuring klopt de voorwaarde niet meer, de Workflow wordt niet opnieuw gestart, resultaat 1 taak. Rechts: de voorwaarde controleert alleen Type is Factuur. De nieuwe status start de Workflow een tweede keer, hij maakt een tweede taak en zet opnieuw In afwachting van goedkeuring, wat niets verandert. Resultaat 2 taken." width="800"><figcaption><p>Dezelfde Workflow met en zonder statusvoorwaarde</p></figcaption></figure>
 
-[Verder leren](../workflow-learning-path.md) · [Oefenpakket](../workflow-training-kit.md)
+Rechts wordt de Workflow een tweede keer uitgevoerd en maakt hij een dubbele taak. Hij stopt daar alleen omdat de tweede statuswijziging een status zet die het document al heeft.
+
+**Twee Workflows kunnen elkaar starten.** Als de ene Workflow **In afwachting van goedkeuring** zet en een andere het document terugzet op **Klaar voor validatie**, allebei met **WAAR**, dan blijven ze elkaar starten. Geef elke Workflow een voorwaarde op de status waarmee hij begint, en gebruik **WAAR** alleen waar het nodig is.
+
+## Stap voor stap instellen
+
+1. **Gebruik versie 3 van Wijzig status naar.** Oudere versies hebben geen instelling **Trigger-workflows** (zie [Kaartversies](../then/status/change-status-to.md#kaartversies)).
+2. **Controleer de beginstatus.** Voeg de **En**-kaart **Documentstatus** toe (onder **En → Status**) en zet die op **Is** **Klaar voor validatie**. Zie [Status van één document Conditie](../and/status/single-document-status-condition.md). Als de status alleen niet laat zien of de stap klaar is, controleer dan ook een veld dat uw Workflow invult wanneer hij klaar is.
+3. **Voeg de actie toe**, bijvoorbeeld een taak maken of het document exporteren.
+4. **Voeg Wijzig status naar toe** en kies de volgende status, bijvoorbeeld **In afwachting van goedkeuring**.
+5. **Kies een waarde voor Trigger-workflows.** Begin met **Onwaar**. Kies alleen **WAAR** als een andere Workflow met de nieuwe status verder moet gaan.
+6. **Probeer het met een echt document.** Controleer dat er precies één taak of export is aangemaakt en dat het document de nieuwe status heeft.
+
+{% hint style="info" %}
+Tests in de Workflow-ontwerper simuleren de statuswijziging alleen. De status wordt niet opgeslagen en er start geen andere Workflow. Gebruik een echt document om het werkelijke gedrag te zien.
+{% endhint %}
+
+## Ingebouwde bescherming
+
+DocBits beperkt de schade als Workflows elkaar steeds opnieuw starten:
+
+* **Eén Workflow-uitvoering tegelijk per document.** Uitvoeringen voor hetzelfde document wachten op elkaar, en elke uitvoering ziet het document zoals de vorige het heeft achtergelaten.
+* **Maximaal aantal uitvoeringen.** Standaard wordt dezelfde Workflow hoogstens 50 keer op één document uitgevoerd. Daarna start DocBits hem voor dit document niet meer.
+
+Deze grenzen stoppen de herhaling uiteindelijk, maar tegen die tijd kunnen er al veel taken of exports zijn. Wat het echt voorkomt, is een voorwaarde op de status. Als een dubbele taak of export een echt probleem zou zijn, controleer dan ook vooraf of die er al is, bijvoorbeeld of er al een open taak voor het document bestaat.
+
+## Zie ook
+
+* [Wijzig status naar](../then/status/change-status-to.md): de kaart, de statussen en de versies
+* [Status van één document Conditie](../and/status/single-document-status-condition.md): de documentstatus in een voorwaarde controleren
+* [Wanneer wordt mijn workflow uitgevoerd?](../workflow-execution-model.md)
+* [Overzicht van het leerpad](../workflow-learning-path.md)

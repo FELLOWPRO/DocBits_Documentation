@@ -8,12 +8,12 @@
 
 Scegli un canale di rilascio per vedere cosa cambia per il tuo team. **Il ciclo NOVA introduce il nuovo rilascio minore di DocBits con capacità aggiuntive per i clienti. Gli hotfix di VESTA migliorano la release di produzione attuale.** Vedi il [ciclo di vita del rilascio](../docbits-release-lifecycle-strategy.md) per la disponibilità e il passaggio tra i canali.
 
-**Le precedenti funzionalità beta di VESTA sono incluse nell’ambiente di test di NOVA.** Tutte le funzionalità precedentemente disponibili in versione beta in VESTA fanno parte delle funzionalità standard di NOVA e possono essere provate prima del rilascio previsto in produzione. Diventeranno anche funzionalità standard di VESTA con il [prossimo hotfix, previsto per l’**11 novembre 2026**](vesta-hotfix-11-november-2026.md).
+**Le precedenti funzionalità beta di VESTA sono incluse nell’ambiente di test di NOVA.** Tutte le funzionalità precedentemente disponibili in versione beta in VESTA fanno parte delle funzionalità standard di NOVA e possono essere provate prima del rilascio previsto in produzione. Diventeranno anche funzionalità standard di VESTA con il [prossimo hotfix, previsto per l’**18 novembre 2026**](vesta-hotfix-18-november-2026.md).
 
 | Canale di rilascio | Note di rilascio | Focus |
 | --- | --- | --- |
 | **NOVA Rilascio di novembre N2611** | [Novità per i clienti](nova-minor-release-4-november-2026.md) · **4 novembre 2026 (previsto)** | Tutte le ex funzionalità beta di VESTA, più nuove capacità ed estensioni rispetto a VESTA R1.0.15. |
-| **VESTA Rilascio di novembre V2611 (pianificato)** | [11 novembre 2026 — V2611](vesta-hotfix-11-november-2026.md) | Introduce tutte le ex funzionalità beta di VESTA nel set di funzionalità standard di VESTA. |
+| **VESTA Rilascio di novembre V2611 (pianificato)** | [18 novembre 2026 — V2611](vesta-hotfix-18-november-2026.md) | Introduce tutte le ex funzionalità beta di VESTA nel set di funzionalità standard di VESTA. |
 | **VESTA — Rilascio hotfix** | [14 ottobre 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Miglioramenti e correzioni per la release di produzione attuale di VESTA. |
 
 ## NOVA Rilascio di novembre N2611
@@ -46,7 +46,7 @@ Scegli un canale di rilascio per vedere cosa cambia per il tuo team. **Il ciclo 
 
 ## VESTA — Rilasci hotfix <a href="#vesta-hotfix-releases" id="vesta-hotfix-releases"></a>
 
-**Prossimo hotfix pianificato: [11 novembre 2026 — V2611](vesta-hotfix-11-november-2026.md).** Tutte le funzionalità precedentemente disponibili come beta in VESTA, e ora incluse in NOVA, diventeranno funzionalità VESTA regolari in questo hotfix.
+**Prossimo hotfix pianificato: [18 novembre 2026 — V2611](vesta-hotfix-18-november-2026.md).** Tutte le funzionalità precedentemente disponibili come beta in VESTA, e ora incluse in NOVA, diventeranno funzionalità VESTA regolari in questo hotfix.
 
 **Ultimo hotfix rilasciato: [14 ottobre 2026 — R1.0.15](incremental-updates-14-october-2026.md).** Questo hotfix VESTA ha introdotto l'Assistente impostazioni, i livelli AI aggiornati, il Controllo campo intestazione, miglioramenti all'accesso e miglioramenti all'abbinamento dei costi degli ordini di acquisto.
 

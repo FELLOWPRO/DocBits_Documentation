@@ -42,6 +42,10 @@ Si el número de factura no se ha leído correctamente:
 Escribir un valor de reemplazo corrige este documento, pero no crea la asociación al área de origen necesaria para este aprendizaje. Selecciona el valor en el original, confirma la asociación y guarda la regla para reutilizarla en documentos correspondientes de este proveedor. Este aprendizaje a partir de la imagen no está disponible para documentos leídos directamente como datos de factura electrónica.
 {% endhint %}
 
+### Los botones de la ventana emergente del valor del campo
+
+Al seleccionar un área en el documento se abre una pequeña ventana emergente con botones redondos encima de la selección. Pasa el cursor sobre un botón para leer qué hace: eliminar el valor extraído, borrarlo o confirmar la asociación. El texto de ayuda aparece tras una breve pausa y coincide con el nombre accesible del botón.
+
 ## Guardar, conservar las reglas y continuar
 
 | Acción | Resultado |
@@ -105,3 +109,5 @@ En las facturas, **Más opciones → Flujo de documentos** abre el recorrido de 
 ## Si no puedes editar o continuar
 
 Lee el motivo mostrado: el documento puede estar bloqueado, ser de solo lectura, estar en otro estado o tener restricciones por tu rol. Resuelve los mensajes y consulta a la persona responsable o al administrador sobre acceso y configuración. Si el error persiste, consulta [Solución de problemas](troubleshooting/README.md) o prepara un ticket con el documento y el mensaje exacto.
+
+Para organizar las páginas, consulta [Dividir un PDF y ordenar sus páginas](../dashboard/manual-pdf-splitting.md).

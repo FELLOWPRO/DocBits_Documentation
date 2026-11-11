@@ -14,7 +14,7 @@
 * [Infrastructure Infor](overview-and-basics/infor-infrastructure.md)
 * [Stratégie de cycle de vie des versions DocBits](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [Notes de version](overview-and-basics/release-notes/README.md)
-  * [VESTA version de novembre V2611 (Prévue)](overview-and-basics/release-notes/vesta-hotfix-11-november-2026.md)
+  * [VESTA version de novembre V2611 (Prévue)](overview-and-basics/release-notes/vesta-hotfix-18-november-2026.md)
   * [NOVA version de novembre N2611](overview-and-basics/release-notes/nova-minor-release-4-november-2026.md)
   * [Correctif VESTA — 14 octobre 2026](overview-and-basics/release-notes/incremental-updates-14-october-2026.md)
   * [Notes de version DocBits — 15 septembre 2026](overview-and-basics/release-notes/incremental-updates-15-september-2026.md)

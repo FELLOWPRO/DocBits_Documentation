@@ -13,12 +13,12 @@
 ## 示例:
 
 * **Purchase Order (PO):**
-  * Quantity: 200 件
-  * Unit Price: 每件 $15.00
+  * Quantity: 200 units
+  * Unit Price: $15.00 per unit
   * Total Amount: $3,000.00
 * **Invoice Received:**
-  * Quantity: 198 件——比 PO 值低 1%，在配置的 ±2% 容差范围内。
-  * Unit Price: 每件 $17.00——比 PO 值高 13.33%，超出配置的 ±1% 容差；已拒绝。
+  * Quantity: 198 units — 1% below the PO value, within the configured ±2% tolerance.
+  * Unit Price: $17.00 per unit — 13.33% above the PO value, outside the configured ±1% tolerance; rejected.
   * Total Amount: $3,366.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±2%
@@ -28,7 +28,7 @@
 
 1. **拒绝发票单价:** 系统不接受发票中的单价 $17.00。
 2. **调整单价:** 系统将单价调整为与原采购订单单价一致。
-   * 调整后单价 = $15.00（来自 PO）
+   * Adjusted Unit Price = $15.00 (from PO)
 3. **计算更正后的总金额:** 使用调整后的单价，系统重新计算总金额。
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**

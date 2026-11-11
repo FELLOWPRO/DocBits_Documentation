@@ -28,7 +28,7 @@ Omdat de hoeveelheid (198 eenheden) binnen het aanvaardbare tolerantiebereik val
 
 1. **De gefactureerde eenheidsprijs afwijzen:** Het systeem accepteert de gefactureerde eenheidsprijs van $17.00 niet.
 2. **De eenheidsprijs aanpassen:** Het systeem past de eenheidsprijs aan zodat deze overeenkomt met de oorspronkelijke eenheidsprijs van de inkooporder.
-   * Aangepaste eenheidsprijs = $15.00 (vanuit de PO)
+   * Adjusted Unit Price = $15.00 (from PO)
 3. **Het gecorrigeerde totaalbedrag berekenen:** Met de aangepaste eenheidsprijs berekent het systeem het totaalbedrag opnieuw.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**

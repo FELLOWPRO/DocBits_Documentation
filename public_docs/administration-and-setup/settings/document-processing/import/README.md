@@ -1,78 +1,70 @@
 # Importeren
 
-<figure><img src="../../../../.gitbook/assets/s150-ftp_0-nl.png" alt="Overzicht van FTP-importverbindingen."><figcaption><p>Overzicht van FTP-importverbindingen.</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/s150-ftp_5-nl.png" alt="Serverconfiguratie in de FTP-importwizard."><figcaption><p>Serverconfiguratie in de FTP-importwizard.</p></figcaption></figure>
-
 ## Overzicht
 
-In de **Importeren** instellingen kunt u document-specifieke opties voor importeren configureren, of geautomatiseerde imports via FTP of e-mail instellen. Deze pagina biedt een gedetailleerd overzicht van alle beschikbare instellingen.
+U hebt een beheerdersaccount nodig om een verbinding te maken. Gebruik **Import** om geautomatiseerde documentimport te configureren vanaf een FTP/SFTP-server, een gekoppeld postvak of het inkomende DocBits-e-mailadres. Controleer de huidige organisatie en omgeving voordat u verbindingsgegevens invoert.
+
+<figure><img src="../../../../.gitbook/assets/import-settings-overview-nl-20261109.png" alt="Pagina Import-instellingen met het diagram Import Pipeline, de lijst FTP Import met een knop New en de lijst Email Import met een knop New"><figcaption><p>De pagina Import: het alleen-lezen diagram Import Pipeline, de lijst FTP Import en de lijst Email Import, elk met een eigen knop <strong>New</strong>.</p></figcaption></figure>
 
 ## Toegang
 
-1.  Navigeer naar **Instellingen** -> **Documentverwerking** -> **Importeren**
+1. Navigeer naar **Settings** → **Document Processing** → **Import**.
+2. Vouw de gewenste sectie uit. **FTP Import** en **Email Import** hebben elk een eigen knop **New**.
 
-    <figure><img src="../../../../.gitbook/assets/ftp_0_nl.png" alt=""><figcaption></figcaption></figure>
+## **Document Settings**
 
-## **Documentinstellingen**
+De huidige pagina Import bevat **Import Pipeline**, **FTP Import**, **Email Import** en, indien ingeschakeld, **Inbound Emails**. Paginabeperking, standaard betalingsvoorwaarden en datumpatroonvelden zijn geen bedieningselementen in deze Import-weergave.
 
-* **Beperken tot pagina's**: Deze instelling stelt u in staat om de verwerking te beperken tot een bepaald aantal pagina's per document. De standaard is **60 pagina's**, wat betekent dat documenten die deze limiet overschrijden, zullen worden ingekort tot **60 pagina's**, en eventuele **overige pagina's zullen worden weggegooid.**
-* **Betalingsvoorwaarden Dagen**: Definieert de standaard betalingsvoorwaarden (in dagen) die op documenten kunnen worden toegepast.
-* **Datumpatroon**: Stelt het patroon in voor hoe datums moeten worden herkend en opgemaakt binnen geïmporteerde documenten.
+**Import Pipeline** toont de FTP/SFTP-routeringstopologie, inclusief de bron- en doelregio's. Controleer elk weergegeven advies voordat u een verbinding wijzigt. Het tabblad **Email** van de pipeline toont momenteel een bericht dat de functie binnenkort beschikbaar komt; er wordt geen diagram voor e-mailverwerking weergegeven.
 
-<figure><img src="../../../../.gitbook/assets/document_settins_1_nl.png" alt=""><figcaption></figcaption></figure>
+## **FTP Import**
 
-## **FTP-import**
+<figure><img src="../../../../.gitbook/assets/dbdc-179-ftp-overview-en-20261030.png" alt="Tabel FTP Import met de knop New en kolommen voor type, server, gebruikersnaam, poort, suborganisatie en map"><figcaption><p>Gebruik New in FTP Import om een serververbinding toe te voegen. Bestaande verbindingsregels zijn in dit voorbeeld afgeschermd.</p></figcaption></figure>
 
 ### Vereisten
 
-Om FTP te gebruiken voor het automatisch importeren van gegevens, zorg ervoor dat aan de volgende vereisten is voldaan:
-
-* Correct geconfigureerde, Linux-compatibele FTP-server
-* FTP-hostnaam, Gebruikersnaam en Wachtwoord
-* Toegewijde importmap
+* Een FTP-, FTPS- of SFTP-server die bereikbaar is voor de importdienst.
+* Het serveradres, protocol, de poort, gebruikersnaam en het wachtwoord zoals verstrekt door uw beheerder.
+* Een importmap en, als archivering nodig is, een goedgekeurde archiveringsmap.
 
 ### Nieuwe verbinding toevoegen
 
-1.  Om een nieuwe verbinding toe te voegen, klik op de **Toevoegen** knop in de FTP-sectie.
+1. Klik op **New** in **FTP Import**.
+2. Voer de verbindingsinstellingen in. Een nieuw formulier begint met **SFTP** en poort **22**; vervang deze waarden wanneer uw server een ander protocol of een andere poort gebruikt.
 
-    <figure><img src="../../../../.gitbook/assets/ftp_7_nl.png" alt=""><figcaption></figcaption></figure>
-2.  Voer uw FTP-gegevens in de aangewezen velden in. Het veld API-sleutel wordt automatisch ingevuld.
+<figure><img src="../../../../.gitbook/assets/dbdc-179-ftp-blank-form-en-20261030.png" alt="Nieuw formulier voor een FTP-verbinding met SFTP, poort 22, mapvelden, retry-instellingen en Save en Cancel"><figcaption><p>Voer de server- en inloggegevens in en controleer daarna de mappen, de routering en de retry-instellingen. De velden voor wachtwoord en API-sleutel zijn afgeschermd; dit voorbeeld is niet opgeslagen.</p></figcaption></figure>
 
-    * **Type:** Specificeert het te gebruiken FTP-protocol. U kunt kiezen tussen **FTP**, **FTPS** of **SFTP**.
-    * **Port:** Specificeert het poortnummer dat moet worden gebruikt voor het geselecteerde FTP-protocol.
-    * **Servernaam (vereist):** Het adres van de server waar documenten van zullen worden opgehaald.
-    * **Gebruikersnaam (vereist):** De inlognaam die wordt gebruikt om toegang te krijgen tot de FTP-server.
-    * **Wachtwoord (vereist):** Het wachtwoord dat aan de gebruikersnaam is gekoppeld voor toegang tot de FTP-server.
-    * **Patronen voor het matchen van bestandsnamen:** Om op te geven welke bestanden moeten worden geïmporteerd op basis van hun namen.
-    * **Suborganisaties:** Selecteer welke suborganisatie de FTP-import moet toepassen.
-    * **API-sleutel (vereist):** Dit veld wordt automatisch ingevuld op basis van de organisatie waar u bent ingelogd.
-    * **Primaire map:** Specificeert de map op de FTP-server waaruit bestanden zullen worden geïmporteerd.
-    * **Importeer directory:** Hiermee kunt u een subdirectory binnen de primaire map opgeven waaruit bestanden zullen worden geïmporteerd.
-    * **Archiveren na importeren:** Hiermee kunt u bestanden archiveren na importeren. Zodra deze optie is geactiveerd, kunt u de map opgeven waar bestanden na een succesvolle import naartoe moeten worden verplaatst.
-    * **Inclusief submapbestanden:** Wanneer ingeschakeld, worden submappen binnen de hoofdmap ook doorzocht naar bestanden om te importeren.
+* **Type**, **Server name**, **Port**, **Username** en **Password** identificeren en authenticeren de serververbinding.
+* **Primary Directory** stelt de basismap in. Met **Import Directory** selecteert u de map die moet worden verwerkt; mapselectie wordt beschikbaar nadat de verbinding is opgeslagen.
+* **Document Type** en **Sub-Organizations** regelen de toewijzing. **File name matching patterns** beperkt welke bestandsnamen in aanmerking komen.
+* **Archive after Import** maakt het mogelijk verwerkte bestanden naar de opgegeven archiveringsmap te verplaatsen. **Include Subfolder Files** breidt de verwerking uit naar submappen.
+* **Retry interval (min)**, **Retry duration (hours)** en **Notification emails (comma-separated)** regelen het opnieuw proberen en de meldingen. De weergegeven standaardwaarden zijn 60 minuten en 48 uur.
+* **API Key** gebruikt de bestaande app-subscription-sleutel van de organisatie. Het oogpictogram toont of verbergt die sleutel; het kopieerpictogram kopieert deze naar het klembord. Deze bedieningselementen maken geen nieuwe sleutel aan. Houd de sleutel vertrouwelijk; neem deze niet op in schermafbeeldingen of supportberichten.
 
-    <figure><img src="../../../../.gitbook/assets/ftp_4_nl.png" alt=""><figcaption></figcaption></figure>
-3. Zodra u alle noodzakelijke gegevens van uw FTP hebt ingevoerd, klikt u op **REDEN**.
-4. Na het opslaan van uw verbinding, kunt u deze activeren door op de drie stippen in de **Actie** kolom van uw verbinding te klikken en vervolgens **Activeren** te selecteren.
+Gebruik **Cancel** of het sluitpictogram om een formulier voor een nieuwe verbinding te verlaten zonder het op te slaan.
+
+3. Controleer de waarden en klik op **Save** wanneer de verbinding klaar is om te worden aangemaakt.
+4. Kies in het menu **Actions** van de opgeslagen rij **Activate** wanneer imports mogen worden uitgevoerd.
 
 ### Acties voor FTP
 
-U kunt op de drie stippen in de **Actie** kolom klikken om toegang te krijgen tot de volgende opties voor uw verbinding:
+Het menu **Actions** van de opgeslagen verbinding biedt:
 
-<figure><img src="../../../../.gitbook/assets/ftp_5_nl.png" alt="" width="184"><figcaption></figcaption></figure>
+* **Test Connection**: de geconfigureerde server benaderen om de verbinding te controleren.
+* **Connection Logs**: verbindingspogingen en fouten bekijken.
+* **Activate/Deactivate**: automatische verwerking voor deze verbinding inschakelen of stoppen.
+* **Edit**: de configuratie wijzigen.
+* **Delete**: de verbinding verwijderen.
 
-* **Testverbinding:** Test de verbinding met uw FTP-server.
-* **Verbindingslogboeken:** Opent de logboeken voor uw FTP-verbinding, inclusief foutmeldingen als er problemen optreden.
-* **Activeren/Deactiveren:** Activeert/deactiveert uw verbinding.
-* **Bewerking:** Hiermee kunt u wijzigingen aanbrengen in uw verbinding.
-* **Verwijderen:** Verwijdert uw verbinding.
+Testen, activeren, bewerken en verwijderen hebben invloed op een echte verbinding. Controleer de geselecteerde rij en organisatie voordat u deze gebruikt.
 
-## **E-mail importeren**
+## **Email Import**
 
-U kunt een e-mailimport instellen die automatisch documenten uit uw inbox importeert zodra ze aankomen. U kunt ervoor kiezen om een IMAP- of OAuth-verbinding te configureren.
+Een gekoppeld postvak staat los van het inkomende DocBits-e-mailadres dat in de onderstaande handleiding wordt beschreven. Kies de methode die bij uw proces past.
 
-<mark style="color:red;">**Opmerking**</mark>: Alleen documenten met de volgende bestandstypen worden geïmporteerd:
+<figure><img src="../../../../.gitbook/assets/dbdc-179-email-overview-en-20261030.png" alt="Tabel Email Import met New, het pictogram voor het importlogboek en kolommen voor de mailboxconfiguratie"><figcaption><p>Gebruik New voor een postvakverbinding of het logboekpictogram om imports te bekijken. Bestaande verbindingsregels en de informatieve link zijn afgeschermd.</p></figcaption></figure>
+
+<mark style="color:red;">**Note**</mark>: Alleen documenten met de volgende bestandstypen worden geïmporteerd:
 
 * `.pdf`
 * `.tiff` / `.tif`
@@ -85,122 +77,94 @@ U kunt een e-mailimport instellen die automatisch documenten uit uw inbox import
 {% hint style="info" %}
 **Hoe bijlagen worden herkend**
 
-Naast de hierboven genoemde bestandsextensies identificeert DocBits een document ook op basis van de **werkelijke bestandsinhoud** (bestandshandtekening), niet alleen op basis van het inhoudstype dat door het verzendende mailsysteem wordt opgegeven. Dit is belangrijk bij **doorgestuurde** e-mails: tussenliggende mailservers/gateways voorzien een bijlage vaak van een generiek type (`application/octet-stream`) in plaats van bijvoorbeeld `application/pdf` of `application/xml`. DocBits herkent en importeert dergelijke bijlagen toch correct.
+Naast de hierboven genoemde bestandsextensies identificeert DocBits een document ook op basis van de **werkelijke bestandsinhoud** (bestandssignatuur), niet alleen op basis van het inhoudstype dat het verzendende mailsysteem opgeeft. Dit is van belang bij **doorgestuurde** e-mails: tussenliggende mailservers en gateways voorzien een bijlage vaak van een generiek type (`application/octet-stream`) in plaats van bijvoorbeeld `application/pdf` of `application/xml`. DocBits herkent en importeert dergelijke bijlagen toch correct.
 
-* **Doorgestuurde `.eml`**-berichten en Outlook `winmail.dat`-bijlagen (TNEF) worden uitgepakt en de daarin opgenomen documenten worden geïmporteerd.
-* **XML-codering:** Wanneer een XML-factuur opnieuw wordt gelabeld met een generiek type (`application/octet-stream`), herkent DocBits deze aan de `<?xml`-declaratie en tolereert daarbij een voorafgaande **UTF-8**- of **UTF-16**-bytevolgordemarkering (BOM, LE/BE) — momenteel worden alleen deze BOM-coderingen automatisch op basis van de inhoud gedetecteerd. Een bijlage die een `.xml`-bestandsnaam behoudt, wordt ongeacht de codering geïmporteerd.
-* **Genegeerd:** inline-afbeeldingen die met een e-mail meekomen (handtekeninglogo's / ingesloten afbeeldingen — PNG, JPG, GIF, BMP) worden stilzwijgend overgeslagen en **niet** als mislukte import geteld.
+* **Doorgestuurde `.eml`**-berichten en Outlook-bijlagen **`winmail.dat`** (TNEF) worden uitgepakt en de documenten daarin worden geïmporteerd.
+* **XML-codering:** wanneer een XML-factuur opnieuw wordt gelabeld met een generiek type (`application/octet-stream`), herkent DocBits deze aan de declaratie `<?xml` en tolereert daarbij een voorafgaande bytevolgordemarkering (BOM) in **UTF-8** of **UTF-16** (LE/BE) — momenteel worden alleen deze BOM-coderingen automatisch op basis van de inhoud gedetecteerd. Een bijlage die een `.xml`-bestandsnaam behoudt, wordt ongeacht de codering geïmporteerd.
+* **Genegeerd:** inline-afbeeldingen die met een e-mail meekomen (handtekeninglogo's en ingesloten afbeeldingen — PNG, JPG, GIF, BMP) worden stilzwijgend overgeslagen en **niet** als mislukte import geteld.
 
-Als een bijlage niet kan worden geïmporteerd en de optie **“Beantwoord deze e-mail als de import niet kan worden uitgevoerd”** is ingeschakeld voor het inkomende adres, wordt het geconfigureerde antwoordadres op de hoogte gesteld.
+Als een bijlage niet kan worden geïmporteerd en de optie **“Reply to this email if import can not be done”** is ingeschakeld voor het inkomende adres, wordt het geconfigureerde antwoordadres op de hoogte gesteld.
 {% endhint %}
 
 ### Nieuwe IMAP-verbinding toevoegen
 
-1.  Om een nieuwe IMAP-verbinding toe te voegen, klik op de **Toevoegen** knop in de **E-mail importeren** sectie.
+1. Klik op **New** in **Email Import** en selecteer **IMAP** onder **Protocol**.
+2. Voer in **Email Server Setup** de servernaam, poort, encryptie, gebruikersnaam, het e-mailadres en het wachtwoord in. Gebruik de waarden die uw mailprovider vereist; de weergegeven 993 is een poortvoorbeeld, geen ingevulde instelling.
 
-    <figure><img src="../../../../.gitbook/assets/email_1_nl.png" alt=""><figcaption></figcaption></figure>
-2. Selecteer IMAP als protocol.
-3. Voer uw e-mailgegevens in de aangewezen velden in. Het veld API-sleutel wordt automatisch ingevuld.
-   * **Encryptie:** Selecteer het type encryptie dat moet worden gebruikt — ofwel **SSL** of **TLS**.
-   * **Servernaam:** Het adres van de e-mailserver.
-   * **Gebruikersnaam:** De identificatie die wordt gebruikt voor uw mailimportconfiguratie in DocBits.
-   * **E-mail:** Het e-mailadres dat wordt gebruikt voor het importeren van documenten in het systeem.
-   * **Wachtwoord:** Het wachtwoord dat aan het opgegeven e-mailadres is gekoppeld.
-   * **Suborganisaties:** Selecteer de suborganisatie waarop de e-mailimport moet worden toegepast.
-   * **API-sleutel:** Dit veld wordt automatisch ingevuld op basis van de organisatie waar u bent ingelogd.
-   * **Stuur een importfoutmelding naar dit e-mailadres:** Geef een e-mailadres op om foutmeldingen te ontvangen als er iets misgaat tijdens het importproces.
-   * **Port:** Specificeert het poortnummer dat moet worden gebruikt voor de geselecteerde e-mailimportconfiguratie.
-   * **Map:** Selecteer een map waaruit de documenten zullen worden geïmporteerd.\
-     <mark style="color:red;">**Opmerking**</mark>: De **Map** optie wordt alleen beschikbaar nadat u met succes een IMAP-verbinding heeft gemaakt. Om een map toe te voegen na creatie, klikt u op de drie stippen in de **Actie** kolom en selecteert u **Bewerking**. De optie zou nu beschikbaar moeten zijn.
-   * **E-mails naar een andere map verplaatsen:** Wanneer ingeschakeld, kunt u een map opgeven waar e-mails na een succesvolle import naartoe worden verplaatst.\
-     <mark style="color:red;">**Opmerking**</mark>: De **E-mails naar een andere map verplaatsen** optie wordt alleen beschikbaar nadat u met succes een IMAP-verbinding heeft gemaakt. Om deze instelling te activeren, klikt u op de drie stippen in de **Actie** kolom en selecteert u **Bewerking**. De optie zou nu beschikbaar moeten zijn.
-   * **Bijgevoegde documenten samenvoegen:** Combineert meerdere bijgevoegde documenten tot één document.
-   * **E-mail naar afzender verzenden na import:** Stuurt een bevestigingsmail naar de oorspronkelijke afzender nadat de import is voltooid. Zodra deze optie is geactiveerd, kunt u het onderwerp en de inhoud van de e-mail opgeven.
-   * **Importeren van dubbele bestandsnamen blokkeren:** Voorkomt importeren als een document met dezelfde naam al bestaat.
-4. Na het opslaan van uw verbinding, kunt u deze activeren door op de drie stippen in de **Actie** kolom van uw verbinding te klikken en vervolgens **Activeren** te selecteren.
+<figure><img src="../../../../.gitbook/assets/dbdc-179-email-imap-step1-en-20261030.png" alt="IMAP Email Server Setup met protocol, server, poort, encryptie, accountgegevens en Next"><figcaption><p>Vul de vereiste server- en accountvelden in voordat u op Next klikt. Het wachtwoordgedeelte is afgeschermd; in dit voorbeeld zijn geen mailboxgegevens verzonden.</p></figcaption></figure>
+
+Het kopieerpictogram naast **Password** kopieert het ingevoerde wachtwoord naar het klembord. Met **Cancel** of het sluitpictogram verlaat u deze wizard voor een nieuwe verbinding zonder op te slaan.
+
+3. Klik op **Next** om **Options** te openen. Kies of u **Merge attached documents** of **Block duplicate filename import** wilt gebruiken. Met **Email Notification** schakelt u een bevestigingsmail na de import in; schakel dit alleen in wanneer dat gedrag bedoeld is.
+
+<figure><img src="../../../../.gitbook/assets/dbdc-179-email-imap-options-en-20261030.png" alt="Stap IMAP Options met samenvoegen van bijlagen, filteren op dubbele bestandsnamen, e-mailmelding, Back en Next"><figcaption><p>Options scheidt het importgedrag van de e-mailmelding. Beide selectievakjes en de meldingsschakelaar staan uit in dit niet-opgeslagen voorbeeld.</p></figcaption></figure>
+
+4. Klik op **Next** om **Config** te openen. Selecteer de vereiste **Sub-Organizations**, controleer de bestaande **API Key**, stel de ontvanger voor importfouten in en controleer **Document Routing**. Vouw **Advanced Settings** alleen uit wanneer het proces extra opties nodig heeft.
+
+<figure><img src="../../../../.gitbook/assets/dbdc-179-email-imap-config-en-20261030.png" alt="Stap IMAP Config met organisatie, afgeschermde API Key, foutmeldingen, Document Routing, Advanced Settings en Save"><figcaption><p>Config brengt de organisatietoewijzing, de bestaande sleutel, foutmeldingen en de routering samen. De sleutel is afgeschermd en Save is niet gebruikt.</p></figcaption></figure>
+
+In **Config** toont het oogpictogram de bestaande **API Key** of verbergt deze, en **Copy** kopieert de sleutel naar het klembord. Geen van beide bedieningselementen genereert een nieuwe sleutel.
+
+5. Klik op **Save** wanneer de configuratie klaar is. Gebruik daarna **Activate** in het menu **Actions** van de opgeslagen verbinding om automatische verwerking te starten.
+
+Voor een opgeslagen IMAP-verbinding biedt **Edit** opties voor mappen en voor de verwerking na de import. Selecteer de bronmap en de doelmap voor verplaatste e-mails pas nadat de verbinding is aangemaakt en de beschikbare mappen kunnen worden geladen.
 
 ### Acties voor IMAP
 
-U kunt op de drie stippen in de **Actie** kolom klikken om toegang te krijgen tot de volgende opties voor uw verbinding:
-
-<figure><img src="../../../../.gitbook/assets/email_7_nl.png" alt="" width="182"><figcaption></figcaption></figure>
-
-* **Testverbinding:** Test de verbinding met uw IMAP-client.
-* **Verbindingslogboeken:** Opent de logboeken voor uw e-mailverbinding, inclusief eventuele foutmeldingen die tijdens het proces optreden.
-* **Importlogboek:** Opent de logboeken van eerdere imports voor de respectieve verbinding, inclusief eventuele foutmeldingen die tijdens het proces zijn opgetreden.
-* **Activeren/Deactiveren:** Activeert/deactiveert uw verbinding.
-* **Bewerking:** Hiermee kunt u wijzigingen aanbrengen in uw verbinding.
-* **Verwijderen:** Verwijdert uw verbinding.
+Het menu **Actions** van de opgeslagen verbinding biedt **Test Connection**, **Connection Logs**, **Import Log**, **Activate/Deactivate**, **Edit** en **Delete**. Bij het testen van de verbinding wordt het geconfigureerde postvak benaderd; activering schakelt de verwerking in. Controleer de logboeken voordat u een mislukte import opnieuw probeert.
 
 ### Nieuwe OAuth Office365-verbinding toevoegen
 
-1.  Om een nieuwe OAuth Office365-verbinding toe te voegen, klik op de **Toevoegen** knop in de **E-mail importeren** sectie.
+1. Klik op **New** in **Email Import** en selecteer **OAuth Office365** onder **Protocol**. Selecteer **OAuth Office365 - Tenant** voor een door een beheerder beheerde tenant-applicatie en volg [O365 Tenant](o365-tenant.md).
+2. Controleer **Document Routing** vóór de authenticatie.
 
-    <figure><img src="../../../../.gitbook/assets/email_1_nl.png" alt=""><figcaption></figcaption></figure>
-2.  Selecteer **OAuth Office365** als protocol en klik vervolgens op **Authenticeren**.
+<figure><img src="../../../../.gitbook/assets/dbdc-179-email-oauth-before-authentication-en-20261030.png" alt="OAuth Office365-configuratie met Document Routing en de knop Authenticate vóór de Microsoft-authenticatie"><figcaption><p>Selecteer de route vóór Authenticate. Deze weergave is van vóór de aanmelding; er is geen Microsoft-authenticatie gestart.</p></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/email_3_nl.png" alt=""><figcaption></figcaption></figure>
-3.  U wordt doorgestuurd naar een Microsoft-pagina waar u wordt gevraagd een code in te voeren. Om deze code te verkrijgen, keert u terug naar DocBits—de code wordt daar weergegeven, zoals hieronder weergegeven. Kopieer de code en voer deze in op de Microsoft-pagina. Daarna wordt u gevraagd uw Microsoft-gegevens in te voeren.
-
-    <figure><img src="../../../../.gitbook/assets/email_4_nl.png" alt=""><figcaption></figcaption></figure>
-4. Volg de stappen op de Microsoft-pagina. Zodra u klaar bent, keert u terug naar DocBits en klikt u op **Authenticatie Voltooien**.
-5.  U kunt nu de volgende instellingen configureren:
-
-    * **Suborganisaties:** Selecteer de suborganisatie waarop de e-mailimport moet worden toegepast.
-    * **Gebruik Map:** Selecteer een map waaruit de documenten zullen worden geïmporteerd.
-    * **Gebruik Gedeelde Postvak:** Geef het gedeelde e-mailadres op waaruit documenten moeten worden geïmporteerd.
-    * **Verplaats E-mail naar andere map:** Geef een map op waar e-mails na een succesvolle import naartoe moeten worden verplaatst.
-    * **Stuur een importfoutmelding naar dit e-mailadres:** Geef een e-mailadres op om foutmeldingen te ontvangen als er iets misgaat tijdens het importproces.
-
-    <figure><img src="../../../../.gitbook/assets/email_5_nl.png" alt=""><figcaption></figcaption></figure>
-6. Zodra u het gewenste gedrag hebt geconfigureerd, kunt u e-mails importeren door op **Importeren** te klikken of uw wijzigingen opslaan door op **Opslaan** te klikken.
-7. Na het opslaan van uw verbinding, kunt u deze activeren door op de drie stippen in de **Actie** kolom van uw verbinding te klikken en vervolgens **Activeren** te selecteren.
+3. Klik op **Authenticate** wanneer de postvakverbinding is geautoriseerd. Rond de Microsoft-aanmelding met apparaatcode af met de code die DocBits toont, ga daarna terug en selecteer **Finish Authentication**.
+4. Controleer na de authenticatie de opties voor organisatie, map, gedeeld postvak, verplaatsmap en foutmeldingen die voor de verbinding worden aangeboden. Gebruik **Next** om verder te gaan naar **Config** zodra dit beschikbaar is en sla daarna de gewenste instellingen op.
+5. Activeer de opgeslagen verbinding wanneer automatische imports moeten worden uitgevoerd. **Import** start, waar dit voor een opgeslagen verbinding beschikbaar is, een daadwerkelijke import; gebruik dit bewust.
 
 ### Acties voor OAuth Office365
 
-U kunt op de drie stippen in de **Actie** kolom klikken om toegang te krijgen tot de volgende opties voor uw verbinding:
+Het menu **Actions** van de opgeslagen verbinding biedt **Connection Logs**, **Import Log**, **Activate/Deactivate**, **Edit** en **Delete**. Deactivering stopt de automatische verwerking; verwijdering verwijdert de configuratie.
 
-<figure><img src="../../../../.gitbook/assets/email_6_nl.png" alt="" width="182"><figcaption></figcaption></figure>
+### Import Log
 
-* **Verbindingslogboeken:** Opent de logboeken voor uw e-mailverbinding, inclusief eventuele foutmeldingen die tijdens het proces optreden.
-* **Importlogboek:** Opent de logboeken van eerdere imports voor de respectieve verbinding, inclusief eventuele foutmeldingen die tijdens het proces zijn opgetreden.
-* **Activeren/Deactiveren:** Activeert/deactiveert uw verbinding.
-* **Bewerking:** Hiermee kunt u wijzigingen aanbrengen in uw verbinding.
-* **Verwijderen:** Verwijdert uw verbinding.
+Gebruik het logboekpictogram rechtsboven in **Email Import** om imports over de geconfigureerde postvakverbindingen te bekijken. Gebruik de actie **Import Log** van een opgeslagen rij voor die verbinding. Controleer het onderwerp, de afzender, de status en de beschikbare foutdetails voordat u besluit of u het opnieuw probeert.
 
-### Importlogboek
+## Inbound Emails
 
-U kunt het importlogboek van alle gemaakte e-mailverbindingen bekijken, inclusief eventuele foutmeldingen die tijdens het proces zijn opgetreden, door op de **Importlogboek** knop in de rechterbovenhoek van de E-mail importeren sectie te klikken.
+De twee onderstaande schermafbeeldingen uit de handleiding tonen het inkomende DocBits-adres en de bijbehorende logboeken. Dit staat los van de postvakverbindingen hierboven.
 
-<figure><img src="../../../../.gitbook/assets/email_8_nl.png" alt=""><figcaption></figcaption></figure>
+* Gebruik het kopieerpictogram naast **E-Mail** om het ontvangstadres te kopiëren dat voor de huidige organisatie en omgeving wordt weergegeven.
+* **Add** voegt een extra rij met een toegestane afzender toe in het formulier. Kies de afzender en de eventueel bedoelde suborganisatie en gebruik **Save** om de configuratie op te slaan. Alleen een rij toevoegen slaat deze niet op.
+* **Logs** opent het logboek voor inkomende e-mail. **Errors** filtert op fouten; **Inbound** en **Outbound** selecteren de berichtrichting.
+* Vouw een logregel uit met de chevron om de bijlagedetails te bekijken. Het kopieerpictogram naast de trace-ID kopieert die ID voor probleemoplossing. **Original email** downloadt, waar beschikbaar voor een inkomende rij, het geselecteerde oorspronkelijke bericht als een `.eml`-bestand; de import wordt niet opnieuw geprobeerd.
 
-U kunt de logboeken filteren op onderwerp of afzender, kolommen sorteren in oplopende of aflopende volgorde door op de kolomkoppen te klikken, en kolommen herschikken met slepen en neerzetten.
-
-
-## Videohandleiding: Inbox en gericht fouten zoeken
+## Videohandleiding: Inbox en foutopsporing
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/nl.mp4" %}
-Inbox en gericht fouten zoeken
+E-mailinbox en foutopsporing
 {% endembed %}
 
 [Bekijken met ondertiteling en hoofdstukken](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/nl.html)
 
-Sommige oorspronkelijke productlabels kunnen in een andere taal staan. Technische veld-ID’s blijven behouden.
+Sommige oorspronkelijke productlabels kunnen in een andere taal staan. Technische veld-ID's blijven behouden.
 
-Onder instellingen en import gebruik ik in dit voorbeeld het inkomende DocBits-adres. Een direct gekoppelde mailbox is een aparte importmethode. Voor de training werk ik in een eigen demo-organisatie met synthetische facturen. Meldingen blijven uitgeschakeld.
+Bij instellingen en import gebruik ik in dit voorbeeld het inkomende DocBits-adres. Een direct gekoppelde mailbox is een aparte importmethode. Voor deze training werk ik in een eigen demo-organisatie met synthetische facturen. Meldingen blijven uitgeschakeld.
 
-Eerst controleer ik het weergegeven ontvangstadres en het bereik. Het adres hoort precies bij deze organisatie en haar omgeving. Voor een ander bedrijf of een productieomgeving gebruik ik altijd het adres dat daar daadwerkelijk wordt weergegeven.
+Eerst controleer ik het weergegeven ontvangstadres en de reikwijdte. Het adres hoort precies bij deze organisatie en bij de bijbehorende omgeving. Voor een ander bedrijf of een productieomgeving gebruik ik altijd het adres dat daar daadwerkelijk wordt weergegeven.
 
-Hier beperk ik de inkomende post tot onze goedgekeurde testafzender. Ik selecteer de toewijzing aan een suborganisatie alleen als deze bij het beoogde proces hoort. Ik sla de instelling op en open deze opnieuw. De toegestane afzender is behouden; automatische antwoordmails blijven in deze training uitgeschakeld.
+Hier beperk ik de inbox tot onze goedgekeurde testafzender. Ik selecteer de toewijzing aan een suborganisatie alleen als deze bij het bedoelde proces hoort. Ik sla de instelling op en open deze opnieuw. De toegestane afzender is behouden; automatische antwoordmails blijven in deze training uitgeschakeld.
 
-<figure><img src="../../../../.gitbook/assets/admin-save-nl-accounting-email-v2.png" alt="Toegestane afzender opgeslagen met meldingen uitgeschakeld"><figcaption><p>Toegestane afzender opgeslagen met meldingen uitgeschakeld</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-save-en-accounting-email-v1.png" alt="Toegestane afzender opgeslagen met meldingen uitgeschakeld"><figcaption><p>Toegestane afzender opgeslagen met meldingen uitgeschakeld</p></figcaption></figure>
 
-Voor deze training is een testbericht rechtstreeks aan de verwerking van inkomende e-mail in DocBits aangeboden. Deze test bevestigt geen externe e-mailbezorging. In het logboek controleer ik het onderwerp, de afzender en de geïmporteerde bijlage. Daarna controleer ik het document dat daadwerkelijk is aangemaakt.
+Voor deze training is een testbericht rechtstreeks aan de verwerking van inkomende e-mail in DocBits aangeboden. Deze test bevestigt geen externe e-mailbezorging. In het logboek controleer ik het bijbehorende onderwerp, de afzender en de geïmporteerde bijlage. Daarna controleer ik het document dat daadwerkelijk is aangemaakt.
 
-Ik open het bijbehorende document en vergelijk de PDF-bijlage met de factuur in DocBits. Bestandsnaam, factuurnummer, leverancier en bedrag moeten overeenkomen. Een succesvolle import zegt niets over een goedkeuring of een ERP-boeking.
+Ik open het bijbehorende document en vergelijk de PDF-bijlage met de factuur in DocBits. Bestandsnaam, factuurnummer, leverancier en bedrag moeten overeenkomen. Een geslaagde import zegt niets over een goedkeuring of een ERP-boeking.
 
-Ik test ook een afzender die niet is toegestaan. In het logboek zoek ik specifiek naar deze invoer en activeer ik het foutenfilter. De details noemen de afgewezen afzender.
+Een tweede gecontroleerde test komt van een niet-goedgekeurde afzender. In het logboek zoek ik gericht naar deze inkomende e-mail en activeer ik het foutenfilter. De details noemen de afgewezen afzender. Ik controleer de oorzaak aan de hand van het onderwerp en de trace-ID, in plaats van de import meerdere keren te starten.
 
-In een echt geval zoek ik eerst uit of deze afzender überhaupt bevoegd is. Een goedgekeurde wijziging in de afzenderlijst wordt opgeslagen en opnieuw gecontroleerd. Daarna verifieer ik een nieuwe unieke testinvoer tot aan het aangemaakte document. Voor technische fouten geef ik de trace-ID en de concrete foutmelding door.
+In een echt geval zoek ik eerst uit of deze afzender überhaupt bevoegd is. Een goedgekeurde wijziging van de afzenderlijst wordt opgeslagen en opnieuw gecontroleerd. Daarna verifieer ik een nieuwe, unieke testinvoer tot aan het aangemaakte document. Voor technische fouten geef ik de trace-ID en de concrete foutmelding door.
 
-<figure><img src="../../../../.gitbook/assets/admin-error-nl-accounting-email-v2.png" alt="Mislukte import met bijlage, reden en trace-ID"><figcaption><p>Mislukte import met bijlage, reden en trace-ID</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-error-en-accounting-email-v1.png" alt="Mislukte import met bijlage, reden en trace"><figcaption><p>Mislukte import met bijlage, reden en trace</p></figcaption></figure>

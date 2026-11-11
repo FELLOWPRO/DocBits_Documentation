@@ -28,7 +28,7 @@ Gebruik een eigen testorganisatie en synthetisch document. Controleer organisati
 
 **Afrondingscriterium:** U kunt uitleggen wanneer de regel wordt meegenomen en welk bewijs simulatie van documentuitvoering onderscheidt.
 
-Lezen en bouwen: [Wanneer wordt mijn workflow uitgevoerd?](workflow-execution-model.md) · [P0: Status wijzigen en herhaalde uitvoering begrenzen](masterclass/status-and-reentry.md).
+Lezen en bouwen: [Wanneer wordt mijn workflow uitgevoerd?](workflow-execution-model.md) · [Status wijzigen zonder uw Workflow opnieuw te starten](masterclass/status-and-reentry.md).
 
 ## 2. Uw eerste eigen regel <a id="level-2"></a>
 

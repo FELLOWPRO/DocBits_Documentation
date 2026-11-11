@@ -13,9 +13,9 @@ En la parte superior de la página, un banner enlaza con el **Panel de análisis
 | Filtro | Descripción |
 |--------|-------------|
 | **Intervalo de tiempo** | Seleccione un intervalo de tiempo (por ejemplo, Hoy, Últimos 7 días, Últimos 30 días). |
-| **Gravedad** | Active o desactive los niveles de gravedad que desea incluir o excluir: **Depurar**, **Información**, **Advertencia**, **Error**. Cada chip muestra el recuento actual. |
-| **Servicio** | Filtre los registros por servicio (por ejemplo, api, auth, api-service). |
-| **Search logs** | Búsqueda de texto libre en los mensajes de registro. |
+| **Gravedad** | Active o desactive los niveles de gravedad que desea incluir o excluir: **Debug**, **Info**, **Warning**, **Error**. Estos cuatro nombres aparecen también en inglés en la interfaz española. Cada chip muestra el recuento actual. |
+| **Servicio** | Filtre los registros por servicio (por ejemplo, api, auth, ocr, export). |
+| **Buscar registros** | Campo de búsqueda de texto libre en los mensajes de registro. La interfaz muestra el texto «Buscar registros...» dentro del campo. |
 
 ## Tabla de registros
 
@@ -25,7 +25,7 @@ En la parte superior de la página, un banner enlaza con el **Panel de análisis
 |--------|-------------|
 | **Marca de tiempo** | Fecha y hora en que ocurrió el evento. Se puede ordenar. |
 | **Gravedad** | Insignia de color: Info (azul), Warning (amarillo), Error (rojo), Debug (gris). |
-| **Servicio** | El servicio o módulo que generó el registro (por ejemplo, api, auth, api-service). |
+| **Servicio** | El servicio que generó el registro (por ejemplo, api, auth, ocr, export). |
 | **Mensaje** | El mensaje de registro completo con los detalles del evento. |
 
 Los resultados están paginados: utilice los controles de la parte inferior para navegar por las páginas.

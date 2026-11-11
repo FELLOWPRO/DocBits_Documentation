@@ -109,6 +109,7 @@
     * [Crear un ticket](end-user-and-partner-section/end-user-section/technical-support-in-docbits/create-a-ticket.md)
     * [Iconos de ayuda](end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md)
     * [Recopilador de depuración](end-user-and-partner-section/end-user-section/debug-collector.md)
+    * [Estado de la caché PWA](end-user-and-partner-section/end-user-section/technical-support-in-docbits/pwa-cache-status.md)
   * [Tablero de Ideas](end-user-and-partner-section/end-user-section/idea-board.md)
   * [Curso](end-user-and-partner-section/end-user-section/course/README.md)
     * [Introducción](end-user-and-partner-section/end-user-section/course/introduction.md)

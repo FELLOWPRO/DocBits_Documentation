@@ -28,7 +28,7 @@ Poiché la quantità (198 unità) rientra nell'intervallo di tolleranza accettab
 
 1. **Rifiuta il prezzo unitario della fattura:** il sistema non accetta il prezzo unitario fatturato di $17.00.
 2. **Rettifica il prezzo unitario:** il sistema rettifica il prezzo unitario per allinearlo al prezzo unitario dell'ordine di acquisto originale.
-   * Prezzo unitario rettificato = $15.00 (dal PO)
+   * Adjusted Unit Price = $15.00 (from PO)
 3. **Calcola l'importo totale corretto:** usando il prezzo unitario rettificato, il sistema ricalcola l'importo totale.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**

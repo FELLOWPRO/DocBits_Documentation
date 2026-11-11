@@ -8,7 +8,7 @@ As Configurações de Pesquisa de Texto Completo definem o que o DocBits indexa 
 
 O módulo Fulltext Search tem de estar ativado em **Settings → Module → Dashboards & Analytics → Full text search**. Se o módulo não estiver ativado, a caixa de diálogo oferece três ações:
 
-* **Help (?)** — Abre a documentação dFulltext Search num novo separador antes de alterar qualquer definição.
+* **Help (?)** — Abre a documentação de Fulltext Search num novo separador antes de alterar qualquer definição.
 * **Go to Modules** — Abre as definições do módulo Dashboards & Analytics para rever a configuração.
 * **Enable Now** — Abre a caixa de diálogo de subscrição. Reveja e confirme essa caixa de diálogo antes de o módulo ser ativado; clicar apenas neste botão não o ativa.
 

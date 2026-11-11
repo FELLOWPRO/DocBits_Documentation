@@ -28,7 +28,7 @@ Utilisez votre organisation de test et un document synthétique. Contrôlez orga
 
 **Critère de fin:** Vous expliquez quand la règle est prise en compte et quelle preuve distingue simulation et exécution documentaire.
 
-Lire et construire: [Quand mon workflow s’exécute-t-il ?](workflow-execution-model.md) · [P0 : changer le statut et maîtriser les réexécutions](masterclass/status-and-reentry.md).
+Lire et construire: [Quand mon workflow s’exécute-t-il ?](workflow-execution-model.md) · [Changer le statut sans relancer votre Workflow](masterclass/status-and-reentry.md).
 
 ## 2. Votre première règle <a id="level-2"></a>
 

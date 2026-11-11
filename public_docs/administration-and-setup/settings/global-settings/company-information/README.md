@@ -69,7 +69,7 @@ La sección **Autenticación de dos factores** controla si los miembros de esta 
 
 <figure><img src="../../../../.gitbook/assets/company_mfa_requirement_es-20261111.png" alt="Sección Autenticación de dos factores expandida con el requisito de MFA desactivado y el panel Adopción de MFA"><figcaption><p>La sección Autenticación de dos factores. El requisito está desactivado; el panel Adopción de MFA muestra cuántos miembros ya usan un segundo factor.</p></figcaption></figure>
 
-Active **Requerir autenticación de dos factores para todos los miembros** para exigir que cada miembro de la organización confirme su inicio de sesión con contraseña mediante un segundo factor. A partir de ese momento, los inicios de sesión con contraseña se bloquean hasta que el miembro configure un segundo factor. Los inicios de sesión con inicio de sesión único (SSO) están exentos: su proveedor de identidad ya aplica la MFA.
+Active **Requerir autenticación de dos factores para todos los miembros** para exigir que cada miembro de la organización confirme su inicio de sesión con contraseña mediante un segundo factor. A partir de ese momento, los inicios de sesión con contraseña se bloquean hasta que el miembro configure un segundo factor. Los inicios de sesión mediante inicio de sesión único (SSO) están exentos: su proveedor de identidad ya aplica la MFA.
 
 El panel **Adopción de MFA** muestra en qué medida se usa ya un segundo factor en la organización: el porcentaje y el número de miembros con la autenticación multifactor habilitada, desglosados por aplicación de autenticación, correo electrónico y llave maestra (passkey). Seleccione **Guardar** para aplicar un requisito modificado.
 

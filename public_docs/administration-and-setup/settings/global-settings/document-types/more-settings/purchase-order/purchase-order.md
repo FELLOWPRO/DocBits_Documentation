@@ -43,6 +43,6 @@ The switch appears only when all three apply:
 * **Purchase Order** is switched on,
 * and the matched quantity is **Received Quantity**.
 
-Change the matched quantity to another value and the switch disappears from the settings. On the [PO matching screen](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md), **Match as pre-payment** then appears below **Use Lines Net Amount for Matched Total**, with the hint *Match on ordered quantity instead of received quantity*. The switch is greyed out with a note when the supplier may not be invoiced before the goods receipt in the ERP.
+Change the matched quantity to another value and the switch disappears from the settings. On the [PO matching screen](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching.md), **Match as pre-payment** then appears below **Use Lines Net Amount for Matched Total**, with the hint *Match on ordered quantity instead of received quantity*. The switch is greyed out with a note when the supplier may not be invoiced before the goods receipt in the ERP.
 
 While the switch is on, the screen reads the ordered quantity, not the received one, for manual links and for the matched total. The choice is stored on the document and **Auto Match** runs again; if that match fails, the choice returns to its previous value.

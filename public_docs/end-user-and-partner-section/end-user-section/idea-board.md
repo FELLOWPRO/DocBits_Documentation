@@ -68,7 +68,7 @@ I moderatori possono intervenire anche direttamente in una discussione: il menu 
 
 Sopra la lista puoi combinare:
 
-* I chip dei **canali**.
+* I chip dei canali.
 * Un campo di ricerca (**Ricerca...**) che confronta titolo e descrizione.
 * Un menu a discesa **Category**.
 * Un menu a discesa **Status**.

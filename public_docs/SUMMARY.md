@@ -524,7 +524,7 @@
         * [Nächster Schritt und Dokument ablehnen](administration-and-setup/settings/document-processing/e-documents/validation-rules/validation-next-step-and-reject.md)
       * [Benachrichtigungsrouting](administration-and-setup/settings/document-processing/e-documents/notification-routing.md)
       * [E-Rechnungs-Steuerkategorien ERP-Steuercodes zuordnen](administration-and-setup/settings/document-processing/e-documents/tax-code-mapping.md)
-    * [Import](administration-and-setup/settings/document-processing/import/README.md)
+    * [Importieren](administration-and-setup/settings/document-processing/import/README.md)
       * [O365 Tenant](administration-and-setup/settings/document-processing/import/o365-tenant.md)
       * [Test: E-Mail-Import und -Verarbeitung](administration-and-setup/settings/document-processing/import/test-multi-email-import-and-handling-tests.md)
       * [Test: E-Mail-Import und -Verarbeitung](administration-and-setup/settings/document-processing/import/test-email-import-and-handling-tests.md)

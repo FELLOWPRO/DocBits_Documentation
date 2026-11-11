@@ -1,4 +1,4 @@
-# Import
+# Importieren
 
 ## Überblick
 

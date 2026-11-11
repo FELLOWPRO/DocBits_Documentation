@@ -22,6 +22,16 @@ To access workflow logs:
 
     <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="Dashboard with the workflow logs side panel showing summary counters and a table of executed workflows with result icons" width="563"><figcaption></figcaption></figure></div>
 
+## **Open a log as its own page**
+
+The side panel covers the document list. For a document whose workflow you inspect for a while, open the same log as a full page: select the new-window icon in the header of the panel. The page has the address `/workflows/logs/<document id>`, so you can keep it open in a second browser window or send the address to a colleague who has access to the document.
+
+The page shows the same summary counters, the same table of executed workflows and the same detail view as the panel.
+
+## **Switch to another document**
+
+On the full page, a search field above the list finds a document by name or by its ID. The results show the upload date, the assignee and the status of each document, so you can tell documents with similar names apart. Selecting a result loads its workflow log and puts the document into the address. The search covers the documents of your organisation that your permissions allow you to see; when nothing matches, DocBits says so below the field instead of showing an empty list.
+
 ## **Components of the Workflow Logs Panel**
 
 #### **1. Workflow Summary Counters**

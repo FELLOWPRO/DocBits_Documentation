@@ -2,13 +2,13 @@
 
 De **Kennisgrafiekverkenner** helpt u verbindingen te zien tussen leveranciers, documenten, inkooporders en andere gegevens. Gebruik hem wanneer u een relatie wilt volgen of wilt controleren hoeveel verbonden items beschikbaar zijn. Het voorbeeld hieronder toont een grafiek in de Nederlandstalige Sandbox-testorganisatie.
 
-<figure><img src="../.gitbook/assets/dbdc730-knowledge-graph-explorer-graph-explorer-nl-20261011.png" alt="Nederlandstalige Kennisgrafiekverkenner in DocBits Documentation Test A met een gevulde grafiek, zoekveld, keuze voor weergave, typefilters, aantallen knooppunten en randen, sectie Vertrouwen, knop Grafiek opnieuw opbouwen en tabblad Analyse"><figcaption><p>De voorbeeldgrafiek toont verbonden leveranciers. Zoek een item of bouw de grafiek opnieuw op om uw eigen verbindingen te zien.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/knowledge-graph-explorer-graph-explorer-nl-20261111.png" alt="Nederlandstalige Kennisgrafiekverkenner in de Sandbox met een gevulde grafiek, zoekveld, keuze voor weergave, typefilters, aantallen knooppunten en randen, sectie Vertrouwen, knop Grafiek opnieuw opbouwen en tabblad Analyse"><figcaption><p>De voorbeeldgrafiek toont verbonden leveranciers. Zoek een item of bouw de grafiek opnieuw op om uw eigen verbindingen te zien.</p></figcaption></figure>
 
 ## Aan de slag
 
 1. Open **Grafiekverkenner** in DocBits. Controleer of de organisatie die bovenaan wordt getoond, de organisatie is die u wilt inspecteren.
 2. Staat in het midden **Search for a node or compute the graph to get started**, kies dan **Grafiek opnieuw opbouwen** en wacht tot het voortgangsbericht is voltooid. Dit bereidt de grafiekgegevens voor; dit kan even duren. Heeft de organisatie nog geen overeenkomende relaties, dan kunnen **Knooppunten** en **Randen** op nul blijven.
-3. Voer een naam of een andere zoekterm in in **Search knowledge graph** en druk op Enter of selecteer het zoekpictogram. Verschijnen meerdere resultaten, kies dan het gewenste resultaat. Eén enkel resultaat opent de bijbehorende grafiek direct.
+3. Typ een naam of een andere zoekterm in het zoekveld **Zoek in de kennisgrafiek...** en druk op Enter of selecteer het zoekpictogram. Verschijnen meerdere resultaten, kies dan het gewenste resultaat. Eén enkel resultaat opent de bijbehorende grafiek direct.
 4. Selecteer een knooppunt om de details ervan te zien. Sluit het detailpaneel met **X** wanneer u terug wilt naar de grafiek.
 
 ## Kies wat u ziet

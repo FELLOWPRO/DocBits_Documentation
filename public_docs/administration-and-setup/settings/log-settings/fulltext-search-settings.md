@@ -24,7 +24,7 @@ Der Reiter Documents umfasst alles rund um die Indexierung verarbeiteter Dokumen
 
 * **Indexierungsstatistik** — Summen für indexierte und ausstehende Dokumente, bei Bedarf aktualisiert.
 * **Vektor-Einstellungen** — drei organisationsweite Schalter, die steuern, ob die Vektorindexierung parallel zum Textindex für Dokumente läuft. Die Vektorindexierung ermöglicht den Abfragemodus `vector:` und die Funktion „Find Similar“.
-* **Reindexierungs-Aktionen** — startet eine vollständige oder inkrementelle Neuindexierung. Während eine Neuindexierung läuft, sehen Sie den Live-Fortschritt (Dokumente pro Minute, voraussichtliche Restzeit), den aktuellen Stream-Status und den letzten Fehler (falls vorhanden).
+* **Reindexierungs-Aktionen** — starten eine vollständige oder inkrementelle Neuindexierung. Während eine Neuindexierung läuft, sehen Sie den Live-Fortschritt (Dokumente pro Minute, voraussichtliche Restzeit), den aktuellen Stream-Status und den letzten Fehler (falls vorhanden).
 * **Synchronisierungs-Diagnose** — bei Bedarf abrufbare Diagnose für Fälle, in denen der Index nicht mit dem zugrunde liegenden Dokumentenspeicher übereinzustimmen scheint.
 
 <mark>Die Neuindexierung ist nicht destruktiv — die bestehende Suche funktioniert weiter, während der neue Index aufgebaut wird.</mark>

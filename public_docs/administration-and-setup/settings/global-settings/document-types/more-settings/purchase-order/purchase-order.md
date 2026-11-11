@@ -32,3 +32,17 @@ Which quantity from the purchase order the match compares against depends on **P
 {% hint style="info" %}
 The capture above was taken with **PO match server side** switched on, so the **Match quantity** dropdown is not on that screen — it is configured in the matching rules instead.
 {% endhint %}
+
+### Pre-payment before goods receipt
+
+Some invoices arrive before the goods. To match such an invoice against the ordered quantity instead of the received one, switch on **Allow pre-payment before goods receipt** in the same section.
+
+The switch appears only when all three apply:
+
+* the document type is **Invoice**,
+* **Purchase Order** is switched on,
+* and the matched quantity is **Received Quantity**.
+
+Change the matched quantity to another value and the switch disappears from the settings. On the [PO matching screen](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md), **Match as pre-payment** then appears below **Use Lines Net Amount for Matched Total**, with the hint *Match on ordered quantity instead of received quantity*. The switch is greyed out with a note when the supplier may not be invoiced before the goods receipt in the ERP.
+
+While the switch is on, the screen reads the ordered quantity, not the received one, for manual links and for the matched total. The choice is stored on the document and **Auto Match** runs again; if that match fails, the choice returns to its previous value.

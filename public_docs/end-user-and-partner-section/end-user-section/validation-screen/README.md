@@ -42,6 +42,10 @@ Se il numero di fattura non è stato letto correttamente:
 Digitare un valore sostitutivo corregge questo documento, ma non crea l’associazione all’area di origine necessaria per questo apprendimento. Seleziona il valore sull’originale, conferma l’associazione e salva la regola per riutilizzarla sui documenti corrispondenti di questo fornitore. L’apprendimento dall’immagine non è disponibile per i documenti letti direttamente come dati di fattura elettronica.
 {% endhint %}
 
+### I pulsanti nella finestra del valore del campo
+
+Selezionando un’area sul documento si apre una piccola finestra con pulsanti rotondi sopra la selezione. Passa il puntatore su un pulsante per leggere cosa fa: eliminare il valore estratto, svuotarlo oppure confermare l’associazione. Il suggerimento appare dopo un breve ritardo e riporta lo stesso testo del nome accessibile del pulsante.
+
 ## Salvare, conservare le regole e proseguire
 
 | Azione | Effetto |
@@ -105,3 +109,5 @@ Per le fatture, **Altre opzioni → Flusso di documenti** apre il percorso di el
 ## Se non puoi modificare o proseguire
 
 Leggi il motivo visualizzato: il documento può essere bloccato, in sola lettura, in un altro stato o limitato dal tuo ruolo. Risolvi i messaggi di controllo e chiedi alla persona responsabile o all’amministratore per accesso e configurazione. Se l’errore rimane, consulta la [Risoluzione dei problemi](troubleshooting/README.md) oppure prepara un ticket con il documento e il messaggio esatto.
+
+Per organizzare le pagine, vedi [Dividere un PDF e organizzare le pagine](../dashboard/manual-pdf-splitting.md).

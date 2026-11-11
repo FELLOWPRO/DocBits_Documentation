@@ -22,10 +22,10 @@ La page de paramètres est organisée en trois onglets : **Documents**, **ERP** 
 
 L'onglet Documents couvre tout ce qui concerne l'indexation des documents traités :
 
-* **Indexing statistics** — totaux des documents indexés et en attente, actualisés à la demande.
-* **Vector preferences** — trois interrupteurs au niveau de l'organisation qui déterminent si l'indexation vectorielle s'exécute parallèlement à l'index texte pour les documents. L'indexation vectorielle alimente le mode de requête `vector:` et la fonction « Find Similar ».
-* **Reindex actions** — lancer une réindexation complète ou incrémentale. Pendant le déroulement d'une réindexation, vous voyez la progression en direct (documents par minute, temps restant estimé), l'état actuel du flux et la dernière défaillance (le cas échéant).
-* **Sync diagnostics** — diagnostics à la demande pour les cas où l'index semble désynchronisé du magasin de documents sous-jacent.
+* **Indexing statistics**. Totaux des documents indexés et en attente, actualisés à la demande.
+* **Vector preferences**. Trois interrupteurs au niveau de l'organisation qui déterminent si l'indexation vectorielle s'exécute parallèlement à l'index texte pour les documents. L'indexation vectorielle alimente le mode de requête `vector:` et la fonction Find Similar.
+* **Reindex actions**. Lancer une réindexation complète ou incrémentale. Pendant le déroulement d'une réindexation, vous voyez la progression en direct (documents par minute, temps restant estimé), l'état actuel du flux et la dernière défaillance (le cas échéant).
+* **Sync diagnostics**. Diagnostics à la demande pour les cas où l'index semble désynchronisé du magasin de documents sous-jacent.
 
 <mark>La réindexation n'est pas destructive — la recherche existante continue de fonctionner pendant la reconstruction du nouvel index.</mark>
 
@@ -36,7 +36,7 @@ L'onglet ERP contrôle l'indexation des données de référence ERP — fourniss
 * **Indexing** — indexer l'entité dans l'index texte afin qu'elle soit consultable depuis le tableau de bord.
 * **Vector** — indexer l'entité dans l'index vectoriel afin qu'elle puisse être mise en correspondance par des requêtes sémantiques.
 
-Utilisez l'action **Toggle all** en haut de la liste pour appliquer le même état activé ou désactivé à toutes les entités en une seule fois. L'indexation démarre en arrière-plan ; un indicateur sur chaque ligne montre qu'elle est en cours.
+Utilisez La commande **Toggle all** en haut de la liste pour appliquer le même état activé ou désactivé à toutes les entités en une seule fois. L'indexation démarre en arrière-plan ; un indicateur sur chaque ligne montre qu'elle est en cours.
 
 ### Onglet Templates
 

@@ -18,7 +18,7 @@ O instantâneo identifica as compilações cobertas por estas notas. Para dispon
 
 **Todas as antigas funcionalidades beta da VESTA estão incluídas como funcionalidades regulares no ambiente de testes da NOVA.** Para clientes que não utilizaram a beta da VESTA, isto expande as funcionalidades disponíveis para a sua equipa, incluindo **Gerir Layouts**, [**Regras de validação personalizadas**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) e [**Regras de transformação**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). As definições da organização, as opções de tipo de documento e as permissões de acesso continuam a aplicar-se.
 
-As mesmas funcionalidades beta anteriores tornar-se-ão funcionalidades regulares da VESTA com o **próximo hotfix da VESTA, planeado para [11 de novembro de 2026](vesta-hotfix-11-november-2026.md)**. Este anúncio abrange as funcionalidades beta anteriores da VESTA; as secções abaixo também descrevem adições e melhorias adicionais da NOVA.
+As mesmas funcionalidades beta anteriores tornar-se-ão funcionalidades regulares da VESTA com o **próximo hotfix da VESTA, planeado para [18 de novembro de 2026](vesta-hotfix-18-november-2026.md)**. Este anúncio abrange as funcionalidades beta anteriores da VESTA; as secções abaixo também descrevem adições e melhorias adicionais da NOVA.
 
 ## O que a NOVA acrescenta para os clientes <a href="#what-nova-adds-for-customers" id="what-nova-adds-for-customers"></a>
 
@@ -26,7 +26,7 @@ A comparação abaixo abrange funcionalidades beta anteriores agora disponíveis
 
 | Capacidade | Linha de base da VESTA (incluindo beta) | O que os clientes ganham com a NOVA |
 | --- | --- | --- |
-| **Utilizar funcionalidades beta anteriores** | Funcionalidades disponíveis através da beta da VESTA | **Funcionalidades regulares da NOVA:** todas as funcionalidades beta anteriores da VESTA estão incluídas. A sua introdução regular na VESTA está planeada para o hotfix de 11 de novembro de 2026. |
+| **Utilizar funcionalidades beta anteriores** | Funcionalidades disponíveis através da beta da VESTA | **Funcionalidades regulares da NOVA:** todas as funcionalidades beta anteriores da VESTA estão incluídas. A sua introdução regular na VESTA está planeada para o hotfix de 18 de novembro de 2026. |
 | **Ajuda ao validar um documento** | Assistente de definições e Verificação de Campos de Cabeçalho | **Novo Assistente de validação:** identificar campos bloqueantes, saltar para o valor relevante, rever correções sugeridas e manter o chat numa janela separada. |
 | **Melhorar a automação a partir de correções do dia a dia** | Painel Touchless Intelligence, diagnóstico de fornecedores e propostas de alteração | **Novo processo de revisão e medição:** submeter pedidos de melhoria, rever propostas de regras aprendidas, ver evidências de documentos afetados, classificar oportunidades e medir resultados após a ativação. |
 | **Compreender e resolver erros de faturas eletrónicas** | Verificações de documentos eletrónicos, catálogo de regras e visualizador XML | **Validação de Faturas Eletrónicas Expandida:** relatórios agrupados por nível de validação, controlos de política e histórico de alterações, rejeição a partir do relatório e inspeção XML dentro de faturas PDF suportadas. |
@@ -106,7 +106,7 @@ O [Assistente de definições](../../administration-and-setup/settings/global-se
 
 ## Regras e layouts: acesso direto e melhores diagnósticos
 
-* **Controlos beta anteriores tornam-se funcionalidades regulares.** Gerir Layouts, [Regras de validação personalizadas](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) e [Regras de transformação](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) estão visíveis nas definições avançadas do tipo de documento do NOVA sem um link beta. Os seus interruptores de ativação permanecem sob controlo do administrador. Estes controlos estão incluídos no hotfix VESTA planeado para 11 de novembro de 2026, juntamente com todas as outras funcionalidades beta anteriores do VESTA.
+* **Controlos beta anteriores tornam-se funcionalidades regulares.** Gerir Layouts, [Regras de validação personalizadas](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) e [Regras de transformação](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) estão visíveis nas definições avançadas do tipo de documento do NOVA sem um link beta. Os seus interruptores de ativação permanecem sob controlo do administrador. Estes controlos estão incluídos no hotfix VESTA planeado para 18 de novembro de 2026, juntamente com todas as outras funcionalidades beta anteriores do VESTA.
 * **Diagnósticos de regras mais úteis.** As regras de seleção de layout ganham uma opção **Registar execução**. A pesquisa de regras aceita identificadores de regras e abrir um editor carrega a regra guardada atual. O registo de execução de regras existente permanece o local para rever o que foi executado.
 * **Escolher e abrir layouts com mais contexto.** Pesquise layouts de destino, pré-visualize o seu conteúdo e abra o destino diretamente a partir de uma regra de seleção. As regras de seleção de aprovação aceitam corretamente os tipos de layout de aprovação suportados. Os administradores também recebem um atalho da validação de documentos para o editor de layouts desse tipo de documento.
 * **Selecionar vários valores de condição.** Condições como **é um de** suportam múltiplos valores selecionados.
@@ -179,7 +179,7 @@ Para organizações e parceiros que utilizam a integração DocBits MCP, o NOVA 
 
 ## Funcionalidades já presentes no VESTA
 
-O NOVA também incorpora a funcionalidade listada abaixo. Onde o acesso estava anteriormente limitado à beta do VESTA, a disponibilidade regular faz parte desta versão do NOVA e está planeada para a correção do VESTA em 11 de novembro de 2026. A lista descreve a funcionalidade anterior, juntamente com as alterações de disponibilidade e melhorias explicadas acima:
+O NOVA também incorpora a funcionalidade listada abaixo. Onde o acesso estava anteriormente limitado à beta do VESTA, a disponibilidade regular faz parte desta versão do NOVA e está planeada para a correção do VESTA em 18 de novembro de 2026. A lista descreve a funcionalidade anterior, juntamente com as alterações de disponibilidade e melhorias explicadas acima:
 
 * O Assistente de definições original, a sua pesquisa de documentação, o fluxo básico de pré-visualização/confirmação/anulação e os avisos proativos de saúde da importação por email/FTP.
 * Os níveis de IA Fast, Full, Nexus e Auto e a definição de modo de visão.

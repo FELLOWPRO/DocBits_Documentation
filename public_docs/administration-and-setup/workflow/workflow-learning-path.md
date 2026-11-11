@@ -28,7 +28,7 @@ Use uma organização própria de teste e um documento sintético. Confirme orga
 
 **Critério de conclusão:** Explica quando a regra é considerada e que prova distingue simulação de execução documental.
 
-Ler e construir: [Quando é executado o meu workflow?](workflow-execution-model.md) · [P0: mudar o estado e limitar novas execuções](masterclass/status-and-reentry.md).
+Ler e construir: [Quando é executado o meu workflow?](workflow-execution-model.md) · [Alterar o status sem reiniciar o seu Workflow](masterclass/status-and-reentry.md).
 
 ## 2. Primeira regra própria <a id="level-2"></a>
 

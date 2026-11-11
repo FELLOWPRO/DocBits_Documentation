@@ -18,7 +18,7 @@ De snapshot identificeert de builds die door deze notities worden gedekt. Voor b
 
 **Alle voormalige VESTA-bètafuncties zijn als reguliere functies opgenomen in de NOVA-sandbox.** Voor klanten die de VESTA bèta niet hebben gebruikt, breidt dit de functies uit die beschikbaar zijn voor hun team, inclusief **Lay-outs beheren**, [**Aangepaste validatieregels**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) en [**Transformatieregels**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Organisatie-instellingen, schakelaars voor documenttypes en toegangsrechten blijven van toepassing.
 
-Dezelfde voormalige bètafuncties worden reguliere VESTA-functies met de **volgende VESTA hotfix, gepland voor [11 november 2026](vesta-hotfix-11-november-2026.md)**. Deze aankondiging dekt de voormalige VESTA bètafuncties; de onderstaande secties beschrijven ook verdere NOVA-toevoegingen en verbeteringen.
+Dezelfde voormalige bètafuncties worden reguliere VESTA-functies met de **volgende VESTA hotfix, gepland voor [18 november 2026](vesta-hotfix-18-november-2026.md)**. Deze aankondiging dekt de voormalige VESTA bètafuncties; de onderstaande secties beschrijven ook verdere NOVA-toevoegingen en verbeteringen.
 
 ## Wat NOVA toevoegt voor klanten <a href="#what-nova-adds-for-customers" id="what-nova-adds-for-customers"></a>
 
@@ -26,7 +26,7 @@ De onderstaande vergelijking dekt nieuw beschikbare voormalige bètafuncties, ni
 
 | Mogelijkheid | VESTA-basislijn (inclusief bèta) | Wat klanten krijgen met NOVA |
 | --- | --- | --- |
-| **Voormalige bètafuncties gebruiken** | Functies beschikbaar via VESTA bèta | **Reguliere NOVA-functies:** alle voormalige VESTA bètafuncties zijn opgenomen. De reguliere VESTA-introductie is gepland voor de hotfix van 11 november 2026. |
+| **Voormalige bètafuncties gebruiken** | Functies beschikbaar via VESTA bèta | **Reguliere NOVA-functies:** alle voormalige VESTA bètafuncties zijn opgenomen. De reguliere VESTA-introductie is gepland voor de hotfix van 18 november 2026. |
 | **Hulp bij het valideren van een document** | Instellingenassistent en Header Field Check | **Nieuwe Validatieassistent:** identificeer blokkerende velden, spring naar de relevante waarde, bekijk voorgestelde correcties en houd de chat in een apart venster. |
 | **Automatisering verbeteren vanuit dagelijkse correcties** | Touchless Intelligence dashboard, leveranciersdiagnose en wijzigingsvoorstellen | **Nieuw review- en meetproces:** dien verbeterverzoeken in, beoordeel geleerde regelvoorstellen, bekijk bewijs van beïnvloede documenten, rangschik kansen en meet resultaten na activering. |
 | **E-factuurfouten begrijpen en oplossen** | E-documentcontroles, regencatalogus en XML-viewer | **Uitgebreide E-Invoice Validation:** rapporten gegroepeerd op validatieniveau, beleidscontroles en wijzigingsgeschiedenis, afwijzing vanuit het rapport en XML-inspectie binnen ondersteunde PDF-facturen. |
@@ -106,7 +106,7 @@ De [Instellingenassistent](../../administration-and-setup/settings/global-settin
 
 ## Regels en lay-outs: directe toegang en betere diagnostiek
 
-* **Voormalige bèta-besturingselementen worden reguliere functies.** Lay-outs beheren, [Aangepaste validatieregels](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) en [Transformatieregels](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) zijn zichtbaar in de geavanceerde instellingen voor documenttypes van NOVA zonder bètalink. Hun inschakelschakelaars blijven onder beheerderscontrole. Deze besturingselementen zijn opgenomen in de geplande VESTA-hotfix van 11 november 2026 samen met alle andere voormalige VESTA-bètafuncties.
+* **Voormalige bèta-besturingselementen worden reguliere functies.** Lay-outs beheren, [Aangepaste validatieregels](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) en [Transformatieregels](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) zijn zichtbaar in de geavanceerde instellingen voor documenttypes van NOVA zonder bètalink. Hun inschakelschakelaars blijven onder beheerderscontrole. Deze besturingselementen zijn opgenomen in de geplande VESTA-hotfix van 18 november 2026 samen met alle andere voormalige VESTA-bètafuncties.
 * **Nuttigere regeldiagnostiek.** Regels voor lay-outselectie krijgen een optie **Uitvoering loggen**. Regelzoeken accepteert regel-ID's, en het openen van een editor laadt de huidige opgeslagen regel. Het bestaande logboek voor regeluitvoering blijft de plaats om te bekijken wat er is uitgevoerd.
 * **Kies en open lay-outs met meer context.** Zoek doellay-outs, bekijk hun inhoud en open het doel rechtstreeks vanuit een selectieregel. Goedkeuringsselectieregels accepteren correct de ondersteunde lay-outtypes voor goedkeuring. Beheerders krijgen ook een snelkoppeling van documentvalidatie naar de lay-outeditor van dat documenttype.
 * **Selecteer meerdere voorwaardewaarden.** Voorwaarden zoals **is een van** ondersteunen meerdere geselecteerde waarden.
@@ -179,7 +179,7 @@ Voor organisaties en partners die de DocBits MCP-integratie gebruiken, voegt NOV
 
 ## Functies die al aanwezig zijn in VESTA
 
-NOVA brengt ook de hieronder vermelde functionaliteit over. Waar de toegang eerder beperkt was tot de VESTA-bèta, maakt de reguliere beschikbaarheid deel uit van deze NOVA-release en is deze gepland voor de VESTA-hotfix op 11 november 2026. De lijst beschrijft de eerdere functionaliteit, naast de hierboven uitgelegde wijzigingen in de beschikbaarheid en verbeteringen:
+NOVA brengt ook de hieronder vermelde functionaliteit over. Waar de toegang eerder beperkt was tot de VESTA-bèta, maakt de reguliere beschikbaarheid deel uit van deze NOVA-release en is deze gepland voor de VESTA-hotfix op 18 november 2026. De lijst beschrijft de eerdere functionaliteit, naast de hierboven uitgelegde wijzigingen in de beschikbaarheid en verbeteringen:
 
 * De oorspronkelijke Instellingenassistent, de documentatiezoekfunctie, de basisstroom van voorbeeld/bevestigen/ongedaan maken en proactieve waarschuwingen voor de importgezondheid via e-mail/FTP.
 * De AI-tiers Fast, Full, Nexus en Auto en de instelling voor de visuele modus.

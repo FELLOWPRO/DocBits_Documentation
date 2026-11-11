@@ -4,7 +4,7 @@
 >
 > **Vergelijking met NOVA?** De [NOVA-minor-release-functievergelijking](nova-minor-release-4-november-2026.md#what-nova-adds-for-customers) behandelt de Validatieassistent, beoordeelde automatiseringsverbeteringen, uitgebreide e-factuurrapporten, nieuwe importcontroles en andere toevoegingen buiten deze VESTA-release.
 >
-> **Volgende VESTA-hotfix: [11 november 2026 (gepland)](vesta-hotfix-11-november-2026.md).** Alle functies die eerder als bèta in VESTA beschikbaar waren, zijn nu reguliere NOVA-functies en worden met die hotfix reguliere VESTA-functies.
+> **Volgende VESTA-hotfix: [18 november 2026 (gepland)](vesta-hotfix-18-november-2026.md).** Alle functies die eerder als bèta in VESTA beschikbaar waren, zijn nu reguliere NOVA-functies en worden met die hotfix reguliere VESTA-functies.
 
 _Wat er verandert met de DocBits-productiehotfix van 14 oktober 2026 (release
 R1.0.15), inclusief alles sinds de [hotfix van 15 september](incremental-updates-15-september-2026.md).

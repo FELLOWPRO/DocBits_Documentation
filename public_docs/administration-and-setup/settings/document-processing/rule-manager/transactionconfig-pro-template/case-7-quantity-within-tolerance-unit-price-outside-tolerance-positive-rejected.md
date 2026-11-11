@@ -13,12 +13,12 @@ O sistema rejeita o preço unitário da fatura, ajusta-o para corresponder ao pe
 ## Exemplo:
 
 * **Purchase Order (PO):**
-  * Quantity: 200 unidades
-  * Unit Price: $15.00 por unidade
+  * Quantity: 200 units
+  * Unit Price: $15.00 per unit
   * Total Amount: $3,000.00
 * **Invoice Received:**
-  * Quantity: 198 unidades — 1% abaixo do valor do PO, dentro da tolerância configurada de ±2%.
-  * Unit Price: $17.00 por unidade — 13.33% acima do valor do PO, fora da tolerância configurada de ±1%; rejeitado.
+  * Quantity: 198 units — 1% below the PO value, within the configured ±2% tolerance.
+  * Unit Price: $17.00 per unit — 13.33% above the PO value, outside the configured ±1% tolerance; rejected.
   * Total Amount: $3,366.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±2%
@@ -28,7 +28,7 @@ Uma vez que a quantidade (198 unidades) está dentro do intervalo de tolerância
 
 1. **Rejeitar o preço unitário da fatura:** o sistema não aceita o preço unitário faturado de $17.00.
 2. **Ajustar o preço unitário:** o sistema ajusta o preço unitário para corresponder ao preço unitário do pedido de compra original.
-   * Preço unitário ajustado = $15.00 (do PO)
+   * Adjusted Unit Price = $15.00 (from PO)
 3. **Calcular o montante total corrigido:** com o preço unitário ajustado, o sistema recalcula o montante total.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**

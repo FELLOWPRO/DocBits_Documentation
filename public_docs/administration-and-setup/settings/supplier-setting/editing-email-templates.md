@@ -1,82 +1,89 @@
 # Edytowanie szablonów e-maili
 
-<figure><img src="../../../.gitbook/assets/prior-t013-pl.png" alt="Lista szablonów e-mail dla dostawców."><figcaption><p>Lista szablonów e-mail dla dostawców.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-list-pl-20261111.png" alt="Lista szablonów e-mail dla dostawców z kolumnami Nazwa, Typ, Temat, Ostatnia Modyfikacja Przez, Ostatnia Modyfikacja: i Akcje"><figcaption><p>Lista szablonów e-mail dla dostawców</p></figcaption></figure>
 
-### Przegląd
+Strona **Szablony e-maili** w obszarze **Ustawienia** (w edytorze widoczna jest ścieżka **Ustawienia → Szablony E-Maili**) pozwala administratorom zaprojektować wiadomości e-mail, które DocBits wysyła dostawcom automatycznie. Każdy szablon jest przypisany do jednego z czterech stałych typów wiadomości, dzięki czemu właściwa treść jest wysyłana zawsze, gdy dostawca zostaje zaproszony, kończy rejestrację albo zostaje zatwierdzony lub odrzucony w portalu dostawcy.
 
-Funkcja Email Templates pozwala administratorom tworzyć i dostosowywać komunikację e-mailową, która jest automatycznie wysyłana do dostawców. Jednym z kluczowych elementów używanych w tych szablonach jest `{{magic_link}}`, który zapewnia dynamiczny link dostosowany do każdego odbiorcy.
+Dostęp wymaga konta administratora. Role, które otrzymują sami dostawcy, opisuje strona [Uprawnienia dostawcy](supplier-permissions.md).
 
-#### Czym jest `{{magic_link}}`?
+## Lista szablonów
 
-`{{magic_link}}` to znacznik zastępczy, który jest dynamicznie zastępowany unikalnym adresem URL w momencie wysyłania e-maila. Ten adres zazwyczaj kieruje odbiorcę do wykonania akcji, takiej jak rejestracja, zatwierdzenie lub uzyskanie dostępu do konkretnej części portalu dostawcy.
+Lista pokazuje jeden wiersz na szablon i zawiera następujące kolumny:
 
-### Edytowanie szablonów e-maili
+| Kolumna | Opis |
+|---------|------|
+| **Nazwa** | Wewnętrzna nazwa szablonu. |
+| **Typ** | Typ wiadomości, dla którego szablon jest używany, np. E-mail z zaproszeniem do dostawcy. |
+| **Temat** | Temat, który widzą odbiorcy. |
+| **Ostatnia Modyfikacja Przez** | Użytkownik, który ostatnio edytował szablon. |
+| **Ostatnia Modyfikacja:** | Data i godzina ostatniej zmiany szablonu. |
 
-<figure><img src="../../../.gitbook/assets/s150-bildschirmfoto-2024-08-25-um-12-35-53-pl.png" alt="Edytor nowego szablonu wiadomości dla dostawców."><figcaption><p>Edytor nowego szablonu wiadomości dla dostawców.</p></figcaption></figure>
+Listę można sortować według dowolnej kolumny. Kolumny **Nazwa**, **Typ** i **Temat** oferują dodatkowo filtr w menu kolumny; aktywne filtry pojawiają się jako usuwalne znaczniki nad tabelą. Nagłówki kolumn można przeciągnąć w wybranej kolejności, a ta kolejność jest zapamiętywana przy następnej wizycie.
 
-#### Dostęp do edytora szablonów e-maili
+**Akcje wiersza**: każdy wiersz ma w kolumnie **Akcje** przycisk z trzema kropkami, który otwiera menu z pozycjami **Redagować** (ikona ołówka) i **Usuwać** (ikona kosza). Pozycja **Usuwać** usuwa szablon po potwierdzeniu w oknie dialogowym. Kliknięcie dowolnego miejsca w wierszu również otwiera szablon do edycji.
 
-1. **Przejdź do Email Templates**:
-   * Przejdź z menu głównego do sekcji **Szablony e-maili**.
-2. **Wybierz szablon do edycji**:
-   * Wybierz szablon e-maila, który chcesz edytować, klikając jego nazwę (np. „Supplier Invitation Email”).
-3. **Edytuj szablon**:
-   * Edytor pozwala modyfikować zarówno kod HTML, jak i wizualny wygląd e-maila.
-   * Możesz przełączać się między edycją wizualną a edycją kodu za pomocą dostępnych zakładek.
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-actions-pl-20261111.png" alt="Menu akcji wiersza przy szablonie z pozycjami Redagować i Usuwać"><figcaption><p>Menu akcji wiersza: Redagować i Usuwać</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+Przycisk **Nowy** nad tabelą tworzy nowy szablon.
 
-#### Definiowanie `{{magic_link}}` jako linku
+## Tworzenie i edycja szablonu
 
-Aby zdefiniować `{{magic_link}}` jako klikalny link w e-mailu, musisz upewnić się, że jest on poprawnie sformatowany w kodzie HTML szablonu. Wykonaj następujące kroki:
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-editor-pl-20261111.png" alt="Edytor szablonu e-mail dla dostawców z polami Nazwa, Temat, Wybierz szablon wiadomości e-mail i DK po lewej oraz edytorem tekstu po prawej"><figcaption><p>Tworzenie nowego szablonu e-mail dla dostawców</p></figcaption></figure>
 
-1. **Znajdź sekcję linku w kodzie HTML**:
-   * W edytorze kodu znajdź miejsce, w którym ma się pojawić magic link. Zazwyczaj znajduje się ono wewnątrz tagu `<a>` (kotwicy).
-2.  **Wstaw znacznik zastępczy `{{magic_link}}`**:
+Kliknij **Nowy** (lub **Redagować** przy istniejącym szablonie), aby otworzyć edytor szablonu:
 
-    * Zastąp atrybut `href` tagu kotwicy wartością `{{magic_link}}`.
-    * Upewnij się, że link jest odpowiednio ostylowany dla szablonu e-maila. Oto przykład:
+1. **Nazwa** — wpisz wewnętrzną nazwę szablonu. Nazwa pojawia się na liście, a nie w wiadomości.
+2. **Temat** — wpisz temat wiadomości. Możesz używać symboli zastępczych, np. `{{supplier_name}}`.
+3. **Wybierz szablon wiadomości e-mail** — wybierz typ wiadomości. Istnieją dokładnie cztery typy:
+   * **Supplier Invitation Email** (E-mail z zaproszeniem do dostawcy) — wysyłany, gdy zapraszasz dostawcę do portalu dostawcy.
+   * **Supplier Registration Completion Email** (E-mail z potwierdzeniem ukończenia rejestracji dostawcy) — wysyłany, gdy dostawca kończy rejestrację.
+   * **Supplier Approval Email** (E-mail z zatwierdzeniem dostawcy) — wysyłany, gdy konto dostawcy zostaje zatwierdzone.
+   * **Supplier Rejection Email** (E-mail z informacją o odrzuceniu dostawcy) — wysyłany, gdy konto dostawcy zostaje odrzucone.
 
-    ```html
-    <a href="{{magic_link}}" target="_blank" style="
-        background-color: #B7184B;
-        border-radius: 25px;
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 12px 25px;
-        color: #FFFFFF;
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;">
-        Complete Registration
-    </a>
-    ```
+   W polu wyboru nazwy typów są wyświetlane po angielsku, natomiast kolumna **Typ** na liście pokazuje je po polsku. Typu istniejącego szablonu nie można później zmienić: podczas edycji pole jest nieaktywne. W takim przypadku utwórz nowy szablon.
+4. **DK** — opcjonalnie wybierz, kto jeszcze otrzyma kopię: **Przypisany użytkownik** (użytkownik odpowiedzialny za dostawcę) i/lub **Referrer** (użytkownik, który zaprosił dostawcę). Pozostaw pole puste, aby wysłać wiadomość tylko do dostawcy.
+5. Treść wiadomości utwórz w edytorze tekstu po prawej stronie. Możesz formatować tekst, wstawiać listy i cytaty oraz wyrównywać zawartość. Przycisk **Upload** na pasku narzędzi wstawia przesłany obraz bezpośrednio do wiadomości lub dołącza inne pliki jako link. Ikona kodu (**Pokaż źródło**) przełącza widok na źródło HTML, w którym można bezpośrednio edytować kod HTML i formatować go.
+6. **Symbole zastępcze**: menu właściwości na pasku narzędzi wstawia dostępne symbole zastępcze dla wybranego typu wiadomości, np. `{{magic_link}}` i `{{supplier_name}}`.
+7. Kliknij **Zapisz**, aby zapisać szablon.
 
-### 3. Dostosuj tekst linku:
+### Symbol zastępczy `{{magic_link}}`
 
-• Zmień tekst między otwierającym \<a> a zamykającym \</a> tak, aby odzwierciedlał akcję, którą użytkownik ma wykonać. Na przykład „Complete Registration” lub „Access Your Account”.
+Symbol `{{magic_link}}` jest zastępowany unikalnym adresem logowania w momencie wysłania wiadomości. Prowadzi odbiorcę do akcji w portalu dostawcy, na przykład ukończenia rejestracji. Aby zamienić go w klikalny przycisk, sformatuj go jako link w widoku źródła HTML:
 
-4\. Zapisz i przetestuj szablon:
+```html
+<a href="{{magic_link}}" target="_blank" style="
+    background-color: #B7184B;
+    border-radius: 25px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;">
+    Complete Registration
+</a>
+```
 
-• Po wprowadzeniu zmian kliknij przycisk Save.
+Dostosuj tekst między znacznikami `<a>` i `</a>`, aby powiedzieć odbiorcy, co ma zrobić, na przykład "Complete Registration" lub "Access Your Account".
 
-• Możesz użyć przycisku Send Test, aby wysłać testowy e-mail i upewnić się, że link działa zgodnie z oczekiwaniami.
+## Wysyłanie testowej wiadomości e-mail
 
-## Najlepsze praktyki używania \{{magic\_link\}}
+Przed rozpoczęciem korzystania z szablonu sprawdź, jak wygląda wysyłana wiadomość:
 
-• Umiejscowienie linku: Umieść \{{magic\_link\}} w widocznym miejscu e-maila, aby odbiorcy mieli do niego łatwy dostęp.
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-send-test-pl-20261111.png" alt="Okno Wyślij Test z polem Adres e-mail odbiorcy, przykładowymi wartościami symboli zastępczych oraz przyciskami Anulować i Wysłać"><figcaption><p>Okno wysyłania testowej wiadomości e-mail</p></figcaption></figure>
 
-• Jasne wezwanie do działania: Tekst w linku powinien być jasnym wezwaniem do działania, takim jak „Complete Registration” lub „Confirm Your Email”.
+1. Kliknij **Wyślij test** w prawym górnym rogu edytora.
+2. W polu **Adres e-mail odbiorcy** wpisz adres, na który ma zostać wysłana testowa wiadomość.
+3. Wypełnij przykładowe wartości wyświetlane dla symboli zastępczych (np. przykładową nazwę dostawcy i przykładowy link).
+4. Kliknij **Wysłać**. DocBits wysyła wiadomość z przykładowymi wartościami, dzięki czemu możesz sprawdzić układ, podstawienie symboli zastępczych i magic link.
 
-• Stylizacja: Upewnij się, że link jest ostylowany spójnie z resztą szablonu e-maila i wyróżnia się wizualnie.
+Testowa wiadomość nie jest wysyłana do dostawcy i nie zmienia żadnych danych.
 
-• Testowanie: Zawsze wysyłaj testowy e-mail po edycji szablonu, aby sprawdzić, czy \{{magic\_link\}} jest poprawnie rozwiązywany, a stylizacja odpowiednia.
+## Powiązane strony
 
-## Podsumowanie
-
-Prawidłowe zdefiniowanie \{{magic\_link\}} w szablonach e-maili zapewnia, że odbiorcy otrzymują spersonalizowany e-mail z jasnym wezwaniem do działania, który prowadzi ich do odpowiedniego zadania w Twoim portalu dostawcy. Poprawia to doświadczenie użytkownika i zapewnia płynny onboarding oraz komunikację.
-
-\
-
-Ta dokumentacja zawiera administratorom instrukcje krok po kroku dotyczące definiowania i używania \{{magic\_link\}} w szablonach e-maili, dzięki czemu e-maile są zarówno funkcjonalne, jak i atrakcyjne wizualnie.
+* [Powiadomienie e-mail](../global-settings/email-notification/README.md) — powiadomienia o wewnętrznych zdarzeniach dokumentów
+* [Ustawienia ogólne dostawcy](supplier-general-settings.md)
+* [Uprawnienia dostawcy](supplier-permissions.md)
+* [Portal dostawcy](../../setup/supplier-portal/README.md) — aktywacja portalu i zapraszanie dostawców

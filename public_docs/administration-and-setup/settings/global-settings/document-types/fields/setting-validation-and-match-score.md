@@ -8,7 +8,7 @@ In **Felder** können Sie Validierung und Erkennungsschwellenwerte für einen Do
 2. Verwenden Sie **Suche nach Name**, um ein Feld zu finden, zum Beispiel `invoice_number` (angezeigt als **Rechnungsnummer**).
 3. Prüfen Sie die Feldzeile, bevor Sie eine Einstellung ändern. **ERFORDERLICH**, **Schreibgeschützt**, **Versteckt** und **ÜBERPRÜFUNG ERFORDERLICH** sind getrennte Kontrollkästchen.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-143-fields-overview-de-20261011.png" alt="Deutsche Sandbox-Seite Felder mit Erkennungseinstellungen, OCR- und Match-Score-Reglern, Feldspalten und Einstellungen speichern"><figcaption>Die Erkennungssteuerungen stehen über der Feldliste.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/fields-validation-match-score-overview-de-20261111.png" alt="Feldeinstellungen mit getrennten Spalten für Überprüfung erforderlich, OCR und Match Score"><figcaption><p>Feldeinstellungen mit getrennten Spalten für Überprüfung erforderlich, OCR und Match Score.</p></figcaption></figure>
 
 ## ÜBERPRÜFUNG ERFORDERLICH (Force Validation)
 
@@ -18,8 +18,14 @@ Die alten Anweisungen schlugen vor, hier numerische Grenzwerte oder reguläre Au
 
 ## Match Score
 
-**Match Score** ist ein numerischer Schwellenwert, kein fester Referenzwert. Die Regler **OCR** und **MATCH SCORE** unter **ERKENNUNGSEINSTELLUNGEN** wenden ihren Wert auf die Feldzeilen des Dokumenttyps an; verwenden Sie das **MATCH SCORE**-Eingabefeld einer Feldzeile für einen einzelnen Wert. In der Testorganisation zeigen beide Regler **80**, die Zeile `invoice_number` zeigt **60**. Prüfen Sie die betroffenen Felder und klicken Sie dann auf **Einstellungen speichern**.
+**Match Score** ist ein numerischer Schwellenwert, kein fester Referenzwert. Der Regler **MATCH SCORE** unter **ERKENNUNGSEINSTELLUNGEN** wendet seinen Wert auf die Feldzeilen des Dokumenttyps an; für einen einzelnen Wert verwenden Sie das **MATCH SCORE**-Eingabefeld einer Feldzeile. In der Dokumentationstestorganisation zeigen die Regler **OCR** und **MATCH SCORE** **80**, die Zeile `invoice_number` zeigt **60**. Prüfen Sie die betroffenen Felder und klicken Sie dann auf **Einstellungen speichern**.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-143-invoice-id-settings-de-20261011.png" alt="Deutsche Sandbox-Feldzeile invoice_number mit aktivierter ÜBERPRÜFUNG ERFORDERLICH und Match Score 60"><figcaption>Suchen Sie nach einem Feld, um sein Kontrollkästchen ÜBERPRÜFUNG ERFORDERLICH und seinen Match-Score-Wert zu prüfen.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/fields-validation-match-score-invoice-number-de-20261111.png" alt="Gefilterte Zeile Rechnungsnummer mit aktivierter Überprüfung erforderlich und eigenem Match-Score-Wert"><figcaption><p>Gefilterte Zeile Rechnungsnummer mit aktivierter Überprüfung erforderlich und eigenem Match-Score-Wert.</p></figcaption></figure>
 
 **OCR** ist ein separater Erkennungsschwellenwert neben dem Match Score. **STANDARDEINSTELLUNGEN WIEDERHERSTELLEN** setzt die Einstellungen zurück; verwenden Sie es nur, wenn Sie Ihre eigenen Schwellenwerte verwerfen möchten. Weitere Feldoptionen finden Sie in der [Felder-Übersicht](README.md).
+
+## Feldübersicht
+
+<figure><img src="../../../../../.gitbook/assets/fields-validation-match-score-field-level-de-20261111.png" alt="Weitere Feldzeilen mit eigenen Werten für Überprüfung erforderlich, OCR und Match Score"><figcaption><p>Weitere Feldzeilen mit eigenen Werten für Überprüfung erforderlich, OCR und Match Score.</p></figcaption></figure>
+
+ÜBERPRÜFUNG ERFORDERLICH, OCR und Match Score sind getrennte Einstellungen. Match Score ist ein numerischer Schwellenwert; er ist kein fester Referenztext und keine Auswahl eines Match-Value.

@@ -8,12 +8,12 @@
 
 选择发布渠道，了解团队将获得哪些变化。 **NOVA 周期推出全新的 DocBits 次版本，并提供更多客户功能。VESTA 热修复则改进当前生产版本。** 有关可用情况和渠道切换方式，请参阅[发布生命周期](../docbits-release-lifecycle-strategy.md)。
 
-**此前在 VESTA 中作为测试版提供的功能已纳入 NOVA 沙盒。** 此前在 VESTA 中作为测试版提供的所有功能，现已成为 NOVA 常规功能集的一部分，可在计划的生产版本发布前于沙盒中进行测试。这些功能也将在[计划于 **2026 年 11 月 11 日** 发布的下一次 VESTA 热修复](vesta-hotfix-11-november-2026.md)中成为 VESTA 常规功能。
+**此前在 VESTA 中作为测试版提供的功能已纳入 NOVA 沙盒。** 此前在 VESTA 中作为测试版提供的所有功能，现已成为 NOVA 常规功能集的一部分，可在计划的生产版本发布前于沙盒中进行测试。这些功能也将在[计划于 **2026 年 11 月 18 日** 发布的下一次 VESTA 热修复](vesta-hotfix-18-november-2026.md)中成为 VESTA 常规功能。
 
 | 发布渠道 | 发行说明 | 重点 |
 | --- | --- | --- |
 | **NOVA 11 月版本 N2611** | [客户新增功能](nova-minor-release-4-november-2026.md) · **2026 年 11 月 4 日（计划）** | 此前所有 VESTA 测试版功能，以及相较于 VESTA R1.0.15 的新功能和扩展。 |
-| **VESTA 11 月版本 V2611（计划中）** | [2026 年 11 月 11 日 — V2611](vesta-hotfix-11-november-2026.md) | 将此前所有 VESTA 测试版功能纳入 VESTA 常规功能集。 |
+| **VESTA 11 月版本 V2611（计划中）** | [2026 年 11 月 18 日 — V2611](vesta-hotfix-18-november-2026.md) | 将此前所有 VESTA 测试版功能纳入 VESTA 常规功能集。 |
 | **VESTA — 热修复版本** | [2026 年 10 月 14 日 — R1.0.15](incremental-updates-14-october-2026.md) | 改进并修复当前 VESTA 生产版本。 |
 
 ## NOVA 11 月版本 N2611
@@ -46,7 +46,7 @@
 
 ## VESTA — 热修复版本 <a id="vesta-hotfix-releases"></a>
 
-**下一次计划发布的热修复：[2026 年 11 月 11 日 — V2611](vesta-hotfix-11-november-2026.md)。** 此前在 VESTA 中作为测试版提供、现已纳入 NOVA 的所有功能，都将在此次热修复中成为 VESTA 常规功能。
+**下一次计划发布的热修复：[2026 年 11 月 18 日 — V2611](vesta-hotfix-18-november-2026.md)。** 此前在 VESTA 中作为测试版提供、现已纳入 NOVA 的所有功能，都将在此次热修复中成为 VESTA 常规功能。
 
 **最新发布的热修复：[2026 年 10 月 14 日 — R1.0.15](incremental-updates-14-october-2026.md)。** 此次 VESTA 热修复引入了设置助手、更新后的 AI 层级、页眉字段检查、登录改进和采购订单费用匹配改进。
 

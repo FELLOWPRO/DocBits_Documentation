@@ -18,7 +18,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 **所有原 VESTA 测试版功能均已作为常规功能纳入 NOVA 沙盒。** 对于未使用 VESTA 测试版的客户，这扩展了其团队可用的功能，包括 **管理布局**、[**自定义验证规则**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) 和 [**转换规则**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md)。组织设置、文档类型开关和访问权限继续适用。
 
-这些原测试版功能将在 **下一个 VESTA 热修复版本（计划于 [2026 年 11 月 11 日](vesta-hotfix-11-november-2026.md) 发布）** 中成为 VESTA 的正式功能。本公告说明原 VESTA 测试版功能的正式开放；以下章节还介绍了 NOVA 的其他新增功能和改进。
+这些原测试版功能将在 **下一个 VESTA 热修复版本（计划于 [2026 年 11 月 18 日](vesta-hotfix-18-november-2026.md) 发布）** 中成为 VESTA 的正式功能。本公告说明原 VESTA 测试版功能的正式开放；以下章节还介绍了 NOVA 的其他新增功能和改进。
 
 ## NOVA 为客户带来的新增内容 <a href="#what-nova-adds-for-customers" id="what-nova-adds-for-customers"></a>
 
@@ -26,7 +26,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 | 功能 | VESTA 基线（包括测试版） | 客户通过 NOVA 获得的内容 |
 | --- | --- | --- |
-| **使用原测试版功能** | 通过 VESTA 测试版提供的功能 | **常规 NOVA 功能：** 包含所有原 VESTA 测试版功能。其作为常规 VESTA 功能的引入计划于 2026 年 11 月 11 日的热修复版本中进行。 |
+| **使用原测试版功能** | 通过 VESTA 测试版提供的功能 | **常规 NOVA 功能：** 包含所有原 VESTA 测试版功能。其作为常规 VESTA 功能的引入计划于 2026 年 11 月 18 日的热修复版本中进行。 |
 | **验证文档时提供帮助** | 设置助手和页眉字段检查 | **新的验证助手：** 识别阻塞字段，跳转到相关值，查看建议的更正，并将聊天窗口保持在独立窗口中。 |
 | **通过日常更正改进自动化** | 无接触智能仪表板、供应商诊断和变更建议 | **新的审查和测量流程：** 提交改进请求，审查学习到的规则建议，查看受影响文档的证据，对机会进行排名，并在激活后测量结果。 |
 | **理解和解决电子发票错误** | 电子文档检查、规则目录和 XML 查看器 | **扩展的电子发票验证：** 按验证级别分组的报告、策略控制和变更历史、从报告中拒绝以及在受支持的 PDF 发票内进行 XML 检查。 |
@@ -106,7 +106,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 ## 规则和布局：直接访问和更好的诊断
 
-* **原测试版控件成为正式功能。** 管理布局、[自定义验证规则](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) 和[转换规则](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) 在 NOVA 的文档类型高级设置中直接可见，无需测试版链接。其启用开关仍由管理员控制。这些控件将随所有其他原 VESTA 测试版功能一起包含在计划于 2026 年 11 月 11 日发布的 VESTA 热修复中。
+* **原测试版控件成为正式功能。** 管理布局、[自定义验证规则](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) 和[转换规则](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) 在 NOVA 的文档类型高级设置中直接可见，无需测试版链接。其启用开关仍由管理员控制。这些控件将随所有其他原 VESTA 测试版功能一起包含在计划于 2026 年 11 月 18 日发布的 VESTA 热修复中。
 * **更实用的规则诊断。** 布局选择规则新增了 **记录执行** 选项。规则搜索支持规则标识符，打开编辑器时会加载当前已保存的规则。现有的规则执行日志仍然是查看已执行内容的位置。
 * **选择并打开布局时获得更多上下文。** 搜索目标布局、预览其内容，并从选择规则中直接打开目标。审批选择规则可正确接受受支持的审批布局类型。管理员还可以从文档验证中获取快捷方式，直接跳转到该文档类型的布局编辑器。
 * **选择多个条件值。** 诸如 **属于以下之一** 等条件支持选择多个值。
@@ -179,7 +179,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 ## VESTA 中已具备的功能
 
-NOVA 还延续了以下列出的功能。此前仅限 VESTA 测试版访问的功能，其常规可用性已包含在本次 NOVA 发布中，并计划于 2026 年 11 月 11 日的 VESTA 热修复中提供。以下列表描述了早期功能，以及上述可用性变更和增强功能：
+NOVA 还延续了以下列出的功能。此前仅限 VESTA 测试版访问的功能，其常规可用性已包含在本次 NOVA 发布中，并计划于 2026 年 11 月 18 日的 VESTA 热修复中提供。以下列表描述了早期功能，以及上述可用性变更和增强功能：
 
 * 原始设置助手、其文档搜索、基本的预览/确认/撤销流程以及主动的电子邮件/FTP 导入健康警告。
 * 快速（Fast）、完整（Full）、Nexus 和自动（Auto）AI 层级以及视觉模式设置。

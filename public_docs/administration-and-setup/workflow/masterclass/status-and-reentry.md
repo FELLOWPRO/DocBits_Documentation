@@ -1,41 +1,67 @@
 ---
-description: "P0: zmiana statusu i ograniczanie ponownych wykonań"
+description: >-
+  Użyj karty Zmień status na tak, aby zmiana statusu nie uruchamiała ponownie
+  tego samego Workflow.
 ---
 
-# P0: zmiana statusu i ograniczanie ponownych wykonań
+# Zmiana statusu bez ponownego uruchamiania Workflow
 
-**Change Status to** aktualizuje status dokumentu. W wersji 3 `trigger_docflow` steruje żądaniem dalszego przetwarzania workflow. Ustaw go jawnie. Gdy go brakuje, kod przyjmuje `true`; wersje 1/2 nie odczytują tego przełącznika w tej samej ścieżce wykonania. Sprawdź zapisaną wersję karty.
+Gdy dokument otrzymuje nowy status, DocBits uruchamia Workflow przeznaczone dla tego statusu. Może to być także Workflow, który właśnie zmienił status. Jeśli jego warunki nadal są spełnione, uruchamia się ponownie i tworzy drugie zadanie lub drugi eksport.
 
-Zacznij od `validated_pending_approval` oraz `trigger_docflow=false`. Status jest opcją techniczną: wymyślone `pending_approval` nie jest zamiennikiem. Advanced Test symuluje aktualizację. Nie dowodzi ani zapisanej zmiany statusu, ani obsługi żądanego kolejnego wykonania.
+Ta strona pokazuje, jak skonfigurować Workflow, aby każdy dokument przechodził przez niego tylko raz.
 
-Ograniczony proces sprawdza status początkowy i znacznik przetwarzania, wykonuje działanie i przechodzi do następnego stanu. Powtórzone zdarzenie nie powinno już spełniać warunku początkowego. Dwa współbieżne wykonania mogą jednak przeczytać ten sam stary znacznik: zadania i cele eksportu wymagają dodatkowej obsługi duplikatów.
+## Najważniejsze ustawienie
 
-Przy odbiorze porównaj pierwsze i drugie rzeczywiste wykonanie: status, żądane dalsze przetwarzanie oraz liczbę zadań lub rekordów docelowych. Nie przełączaj dwóch statusów tylko eksperymentalnie. Zmiana statusu nie udziela zgody, której warunek biznesowy nadal nie jest spełniony.
+Karta [Zmień status na](../then/status/change-status-to.md) ustawia nowy status. Jej ustawienie **Wyzwalanie przepływów pracy** decyduje, czy ta zmiana statusu może uruchamiać Workflow:
 
-## Karty i przykładowe parametry
+* **FAŁSZ:** żaden Workflow nie zostaje uruchomiony. Używaj tej wartości, chyba że inny Workflow ma dalej przetwarzać dokument.
+* **PRAWDA:** DocBits uruchamia Workflow, których warunki pasują do dokumentu w nowym statusie. Może to być także Workflow, który dokonał zmiany.
 
-Wartości opisują parametry kart, a nie pełny workflow do importu. Zastąp YOUR_* własnymi wyborami testowymi. Projektant zarządza ukrytym ID wywołującego. Katalog: Dev, DocFlow 2.10.38, 21 października 2026; osobno sprawdź wersje i uprawnienia swojej organizacji.
+Strona karty opisuje wszystkie statusy i wersje karty.
 
-### `staus_change` · v3
+## Które Workflow uruchamiają się po zmianie statusu
 
-Identyfikacja: `4e0d38a2-a0af-4c1c-b0c2-2f380d70d910`
+Gdy **Wyzwalanie przepływów pracy** ma wartość **PRAWDA**, DocBits sprawdza każdy włączony Workflow i jego warunki dotyczące typu i statusu dokumentu, na przykład kartę **Status dokumentu**. Workflow uruchamia się, jeśli dokument z nowym statusem spełnia te warunki.
 
-| Parametr | Typ / opcje | Przykład |
-| --- | --- | --- |
-| `trigger_docflow` | `trigger_docflow:bool` | `false` |
-| `status` | `error / rejected / ready_for_validation / validated_pending_approval / approved_pending_second_approval / archived / finished / exported` | `"validated_pending_approval"` |
+Workflow, który nie sprawdza statusu, pasuje do **każdego** statusu. Jeśli więc sam zmienia status, nowy status uruchamia go ponownie.
 
-## Biznesowe przypadki testowe
+Zmiana statusu dokumentu na status, który już ma, nic nie robi: status pozostaje bez zmian i żaden Workflow się nie uruchamia.
 
-| Przypadek | Wejście / konfiguracja | Oczekiwany wynik |
-| --- | --- | --- |
-| STATUS-01 | v3; trigger_docflow=false | validated_pending_approval; trigger=false |
-| STATUS-02 | v3; trigger_docflow=true | żądane kolejne wykonanie ≠ ukończone |
-| STATUS-03 | v3; trigger_docflow: — | default=true |
-| STATUS-04 | RUN-1 → RUN-2 | tasks=1; destination_records=1 |
+## Przykład: jedno uruchomienie czy dwa
 
-## Dowody i ograniczenia
+Zasada: gdy Workflow wykona swoje zadanie, jego własne warunki nie mogą już być spełnione.
 
-Wybrane wyniki kart i węzłów sprawdzono na danych syntetycznych w Advanced Test. Odpowiedzi są w pakiecie. Działania dokumentalne są symulowane i nie dowodzą zapisanego wykonania ani zewnętrznego dostarczenia.
+<figure><img src="../../../.gitbook/assets/status-change-runs-once-vs-twice-pl.png" alt="Dwa workflow, oba z ustawieniem Wyzwalanie przepływów pracy = PRAWDA. Po lewej: warunek sprawdza, czy typ to Faktura i status to Gotowy do walidacji. Po zmianie na Oczekujące na zatwierdzenie warunek nie jest już spełniony, workflow nie uruchamia się ponownie, wynik: 1 zadanie. Po prawej: warunek sprawdza tylko, czy typ to Faktura. Nowy status uruchamia workflow drugi raz, tworzy on drugie zadanie i ponownie ustawia Oczekujące na zatwierdzenie, co niczego nie zmienia. Wynik: 2 zadania." width="800"><figcaption><p>Ten sam workflow z warunkiem na status i bez niego</p></figcaption></figure>
 
-[Dalsza nauka](../workflow-learning-path.md) · [Pakiet ćwiczeń](../workflow-training-kit.md)
+Po prawej Workflow uruchamia się drugi raz i tworzy zduplikowane zadanie. Zatrzymuje się tylko dlatego, że druga zmiana statusu ustawia status, który dokument już ma.
+
+**Dwa Workflow mogą uruchamiać się nawzajem.** Jeśli jeden Workflow ustawia **Oczekujące na zatwierdzenie**, a drugi przywraca dokument do statusu **Gotowy do walidacji**, oba z wartością **PRAWDA**, będą się wzajemnie uruchamiać. Dodaj w każdym Workflow warunek na status, od którego zaczyna, i używaj **PRAWDA** tylko tam, gdzie jest to potrzebne.
+
+## Konfiguracja krok po kroku
+
+1. **Użyj wersji 3 karty Zmień status na.** Starsze wersje nie mają ustawienia **Wyzwalanie przepływów pracy** (zobacz [Wersje karty](../then/status/change-status-to.md#wersje-karty)).
+2. **Sprawdź status początkowy.** Dodaj kartę **I** **Status dokumentu** (w **I → Status**) i ustaw ją na **Jest** **Gotowy do walidacji**. Zobacz [Stan statusu pojedynczego dokumentu](../and/status/single-document-status-condition.md). Jeśli sam status nie mówi, czy krok został wykonany, sprawdź też pole, które Workflow wypełnia po zakończeniu.
+3. **Dodaj akcję**, na przykład utworzenie zadania lub eksport dokumentu.
+4. **Dodaj kartę Zmień status na** i wybierz następny status, na przykład **Oczekujące na zatwierdzenie**.
+5. **Wybierz wartość Wyzwalanie przepływów pracy.** Zacznij od **FAŁSZ**. Wybierz **PRAWDA** tylko wtedy, gdy inny Workflow ma dalej przetwarzać dokument w nowym statusie.
+6. **Wypróbuj to na prawdziwym dokumencie.** Sprawdź, czy powstało dokładnie jedno zadanie lub jeden eksport i czy dokument ma nowy status.
+
+{% hint style="info" %}
+Testy w projektancie Workflow tylko symulują zmianę statusu. Status nie jest zapisywany i żaden inny Workflow się nie uruchamia. Aby zobaczyć rzeczywiste działanie, użyj prawdziwego dokumentu.
+{% endhint %}
+
+## Wbudowana ochrona
+
+DocBits ogranicza szkody, gdy Workflow uruchamiają się nawzajem raz za razem:
+
+* **Jedno uruchomienie Workflow naraz na dokument.** Uruchomienia dla tego samego dokumentu czekają na siebie, a każde widzi dokument w stanie, w jakim zostawiło go poprzednie.
+* **Limit uruchomień.** Domyślnie ten sam Workflow uruchamia się na jednym dokumencie najwyżej 50 razy. Potem DocBits przestaje go uruchamiać dla tego dokumentu.
+
+Te limity w końcu zatrzymują powtórzenia, ale do tego czasu może już powstać wiele zadań lub eksportów. Zapobiega temu dopiero warunek na status. Jeśli duplikat byłby poważnym problemem, sprawdź go także przed wykonaniem akcji, na przykład czy dla dokumentu istnieje już otwarte zadanie.
+
+## Powiązane strony
+
+* [Zmień status na](../then/status/change-status-to.md): karta, jej statusy i wersje
+* [Stan statusu pojedynczego dokumentu](../and/status/single-document-status-condition.md): sprawdzanie statusu dokumentu w warunku
+* [Kiedy uruchamia się mój workflow?](../workflow-execution-model.md)
+* [Przegląd ścieżki nauki](../workflow-learning-path.md)

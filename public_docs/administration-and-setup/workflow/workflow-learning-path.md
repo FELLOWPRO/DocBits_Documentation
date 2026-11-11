@@ -28,7 +28,7 @@ Używaj własnej organizacji testowej i syntetycznego dokumentu. Sprawdź organi
 
 **Warunek ukończenia:** Wyjaśniasz, kiedy reguła jest uwzględniana i jaki dowód odróżnia symulację od wykonania dokumentu.
 
-Czytaj i buduj: [Kiedy uruchamia się mój workflow?](workflow-execution-model.md) · [P0: zmiana statusu i ograniczanie ponownych wykonań](masterclass/status-and-reentry.md).
+Czytaj i buduj: [Kiedy uruchamia się mój workflow?](workflow-execution-model.md) · [Zmiana statusu bez ponownego uruchamiania Workflow](masterclass/status-and-reentry.md).
 
 ## 2. Pierwsza własna reguła <a id="level-2"></a>
 

@@ -1,63 +1,66 @@
-# Zmień stan na
+# Zmień status na
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v1-pl-pl.png" alt="Zmień stan na, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v1-pl-pl.png" alt="Karta workflow Status: Zmień status na, wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v2-pl-pl.png" alt="Zmień stan na, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v2-pl-pl.png" alt="Karta workflow Status: Zmień status na, wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v3-pl-pl.png" alt="Zmień stan na, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v3-pl-pl.png" alt="Karta workflow Status: Zmień status na, Wyzwalanie przepływów pracy, wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
 
-## **Cel:**
+## Cel
 
-Karta przepływu pracy **"Change Status"** służy do zmiany statusu dokumentu na jeden z predefiniowanych stanów — **Błąd, odrzucony, gotowy do sprawdzenia, oczekujący na zatwierdzenie, oczekujący na drugie zatwierdzenie** — i opcjonalnie wyzwala powiązane przepływy pracy na podstawie zmiany statusu. Karta ta automatyzuje proces aktualizacji statusów i wyzwalania przepływów pracy, zapewniając efektywne zarządzanie dokumentami i obsługę błędów.
+Karta **Zmień status na** ustawia nowy status dokumentu, na przykład aby przekazać go do zatwierdzenia lub oznaczyć jako odrzucony. Znajdziesz ją w projektancie Workflow w **Następnie → Status**.
 
-## **Komponenty karty:**
+## Ustawienia
 
-1. **Stan**
-   * **Opis**: Określa nowy status, który ma zostać zastosowany do dokumentu.
-   * **Opcje**:
-     * **Error**: Oznacza dokument jako taki, który napotkał błąd.
-     * **Odrzucony**: Wskazuje, że dokument został odrzucony i nie będzie dalej procesowany.
-     * **Gotowy do walidacji**: Ustawia dokument do przeglądu i walidacji przez następnego użytkownika lub proces systemowy.
-     * **Oczekujące na zatwierdzenie**: Umieszcza dokument w stanie oczekiwania na zatwierdzenie.
-     * **Oczekuje na drugie zatwierdzenie**: Wstrzymuje dokument do drugiego poziomu zatwierdzenia, jeśli dotyczy.
-2. **Wyzwalaj przepływy pracy**
-   * **Opis**: Określa, czy po zmianie statusu powinny zostać wyzwolone jakiekolwiek kolejne przepływy pracy.
-   * **Opcje**:
-     * **True**: Inicjuje wszelkie istotne przepływy pracy na podstawie zmiany statusu.
-     * **False**: Zapobiega wykonaniu przepływu pracy po zmianie statusu.
+### Status
 
-## **Funkcjonalność:**
+Status, który otrzyma dokument. Możesz wybrać:
 
-* **Ocena warunku**: System ocenia warunki ustawione w sekcjach **„Kiedy”** i **„I sekcje”.** Jeśli te warunki są prawdziwe, karta przystępuje do zmiany statusu dokumentu na wybraną wartość.
-* **Aktualizacja statusu**: Gdy warunki są spełnione, status dokumentu jest aktualizowany na jedną z predefiniowanych opcji (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), w zależności od wyboru użytkownika.
-* **Akcja wyzwalania przepływu pracy**: Jeśli **Wyzwalaj przepływy pracy** jest ustawione na **True**, system automatycznie inicjuje wszelkie powiązane przepływy pracy po aktualizacji statusu. Jeśli ustawione na **False**, nie są wyzwalane żadne dodatkowe przepływy pracy, a proces kończy się zmianą statusu.
+| Status | Znaczenie |
+| --- | --- |
+| **Błąd** | Dokument zostaje oznaczony jako zawierający błąd. |
+| **Odrzucony** | Dokument zostaje odrzucony. |
+| **Gotowy do walidacji** | Dokument czeka, aż użytkownik sprawdzi go w walidacji. |
+| **Oczekujące na zatwierdzenie** | Dokument czeka na zatwierdzenie. |
+| **Oczekiwanie na drugą akceptację** | Dokument czeka na drugie zatwierdzenie. |
+| **Zarchiwizowano** | Dokument zostaje przeniesiony do archiwum. Po przywróceniu otrzymuje z powrotem swój poprzedni status. |
+| **Zakończony** | Przetwarzanie dokumentu jest zakończone. |
+| **Eksportowano** | Dokument został wyeksportowany, ale pozostaje otwarty, na przykład aby nadal można go było odesłać do zatwierdzenia. |
 
-## **Konfiguracja:**
+Ustawienie statusu nie wykonuje kroku, który się za nim kryje. Na przykład **Oczekiwanie na drugą akceptację** nie oznacza, że ktoś udzielił pierwszego zatwierdzenia.
 
-Aby skonfigurować tę kartę, użytkownicy muszą:
+### Wyzwalanie przepływów pracy (tylko wersja 3)
 
-1. Określić żądany **Stan**, na który dokument zostanie ustawiony po ocenie warunku (Error, Rejected, Ready for Validation, Pending Approval lub Pending Second Approval).
-2. Wybrać, czy **Wyzwalaj przepływy pracy** po zmianie statusu, wybierając **True** lub **False**.
-3. Karta wykonuje swoją akcję tylko wtedy, gdy oba warunki w sekcjach **„Kiedy”** i **„I sekcje”** są prawdziwe.
+Decyduje, czy zmiana statusu może uruchamiać Workflow.
 
-## **Podsumowanie:**
+* **FAŁSZ:** ta zmiana statusu nie uruchamia żadnego Workflow. Używaj tej wartości, chyba że inny Workflow ma dalej przetwarzać dokument w nowym statusie.
+* **PRAWDA:** DocBits uruchamia Workflow, których warunki pasują do dokumentu w nowym statusie. Uruchamiają się one po zakończeniu bieżącego Workflow. Karta nie czeka na nie i nie pokazuje, czy zakończyły się powodzeniem; sprawdź to w dziennikach Workflow.
 
-Karta przepływu pracy **"Change Status"** oferuje usprawnione podejście do zarządzania statusami dokumentów i wyzwalania powiązanych przepływów pracy. Zapewnia, że dokumenty są automatycznie kierowane do właściwego statusu i że podejmowane są niezbędne akcje, w zależności od zmiany statusu. Ustawiając jasne warunki wykonania, redukuje ręczny wysiłek i zwiększa efektywność przepływu pracy.
+Zawsze wybierz wartość. Przy **PRAWDA** upewnij się, że Workflow zawierający tę kartę sam nie pasuje do nowego statusu, w przeciwnym razie uruchomi się drugi raz. Zobacz [Zmiana statusu bez ponownego uruchamiania Workflow](../../masterclass/status-and-reentry.md).
 
-<!-- workflow-card-practical-example-20261021 -->
+## Wersje karty
 
-## Przykład praktyczny
+| Wersja | Ustawienia | Uruchamia Workflow po zmianie |
+| --- | --- | --- |
+| **1** | Status | Tak, zawsze |
+| **2** | Status | Tak, zawsze |
+| **3** | Status, Wyzwalanie przepływów pracy | Tylko przy **Wyzwalanie przepływów pracy** = **PRAWDA** |
 
-**Zastosowanie:** Przekazanie sprawdzonego dokumentu do etapu zatwierdzania.
+Wersje 1 i 2 działają tak samo. Wersja 3 dodaje **Wyzwalanie przepływów pracy**, dzięki czemu możesz zdecydować, czy nowy status uruchamia inne Workflow. W nowych Workflow używaj wersji 3. Jeśli przełączysz istniejącą kartę z wersji 3 na starszą wersję, **Wyzwalanie przepływów pracy** przestaje obowiązywać i każda zmiana statusu może znowu uruchamiać Workflow.
 
-**Gdzie:** Standardowy projektant procesów → Następnie → Status → Zmień status na.
+## Warto wiedzieć
 
-**Konfiguracja:** Wybierz wersję 3 karty `staus_change`, status Oczekujące na zatwierdzenie (`validated_pending_approval`) i ustaw uruchamianie innych procesów na `false` (`trigger_docflow=false`). Użyj odizolowanej faktury syntetycznej, która spełnia wcześniejsze warunki kontrolne.
+* **Ten sam status, brak efektu.** Jeśli dokument ma już wybrany status, nic się nie zmienia i żaden Workflow się nie uruchamia.
+* **Zarchiwizowano nigdy nie uruchamia Workflow**, w żadnej wersji.
+* **Webhooki nie są objęte tym ustawieniem.** Webhooki dotyczące zmian statusu są wysyłane niezależnie od wartości **Wyzwalanie przepływów pracy**.
+* **Zmiana może zostać odrzucona.** Jeśli Twoja organizacja blokuje zakończone dokumenty, dokument **Zakończony** można przenieść tylko do statusu **Zarchiwizowano** lub **Błąd**. Każda inna zmiana zostaje odrzucona, status pozostaje bez zmian, a dziennik Workflow pokazuje błąd.
+* **Testy tylko symulują.** W teście karty lub w Advanced Test w projektancie Workflow kolejne karty widzą nowy status, ale status nie jest zapisywany i żaden Workflow nie zostaje uruchomiony.
 
-**Oczekiwany wynik i kontrprzykład:** Dozwolona i pomyślna aktualizacja nadaje dokumentowi wybrany status. Jeśli wcześniejszy warunek jest fałszywy, ta akcja nie zostaje osiągnięta i nie zmienia statusu. Odrzucona lub nieudana aktualizacja API nie jest sukcesem: sprawdź rzeczywisty status i logi. Sama karta nie wykonuje eksportu.
+## Przykład
 
-### Wersje karty
+**Cel:** po kontrolach przekazać fakturę do zatwierdzenia.
 
-Jawny przełącznik uruchamiania innych procesów jest dostępny w wersji 3. Wersje 1 i 2 go nie mają; starsza ścieżka aktualizacji używa domyślnego sposobu wyzwalania procesów. Nie zakładaj, że ustawienie `false` z wersji 3 obowiązuje po przejściu na starszą wersję.
+1. Warunki: **Typ dokumentu** to _Faktura_ oraz **Status dokumentu** **Jest** **Gotowy do walidacji**.
+2. **Zmień status na** (wersja 3): **Status** = **Oczekujące na zatwierdzenie**, **Wyzwalanie przepływów pracy** = **FAŁSZ**.
 
-Konfigurację i oczekiwany wynik zweryfikowano w kodzie wykonawczym. Nie uruchomiono procesu ani zmiany statusu.
+**Wynik:** faktura przechodzi do statusu **Oczekujące na zatwierdzenie** i czeka na zatwierdzenie. Zmiana nie uruchamia żadnego innego Workflow, a ten Workflow nie uruchamia się ponownie, ponieważ dokument nie ma już statusu **Gotowy do walidacji**.

@@ -18,7 +18,7 @@ Der Versionsstand nennt die Builds, auf die sich diese Hinweise beziehen. Inform
 
 **Alle ehemaligen VESTA-Beta-Funktionen sind in der NOVA-Sandbox als reguläre Funktionen enthalten.** Für Kunden, die die VESTA-Beta nicht genutzt haben, erweitert dies die ihrem Team verfügbaren Funktionen, einschließlich **Layouts verwalten**, [**Benutzerdefinierte Validierungsregeln**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) und [**Transformationsregeln**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Organisationseinstellungen, Dokumenttyp-Schalter und Zugriffsrechte gelten weiterhin.
 
-Dieselben ehemaligen Beta-Funktionen werden mit dem **nächsten VESTA-Hotfix, geplant für den [11. November 2026](vesta-hotfix-11-november-2026.md)**, zu regulären VESTA-Funktionen. Diese Ankündigung deckt die ehemaligen VESTA-Beta-Funktionen ab; die folgenden Abschnitte beschreiben zusätzlich weitere NOVA-Erweiterungen und -Verbesserungen.
+Dieselben ehemaligen Beta-Funktionen werden mit dem **nächsten VESTA-Hotfix, geplant für den [18. November 2026](vesta-hotfix-18-november-2026.md)**, zu regulären VESTA-Funktionen. Diese Ankündigung deckt die ehemaligen VESTA-Beta-Funktionen ab; die folgenden Abschnitte beschreiben zusätzlich weitere NOVA-Erweiterungen und -Verbesserungen.
 
 ## Was NOVA für Kunden bietet <a href="#what-nova-adds-for-customers" id="what-nova-adds-for-customers"></a>
 
@@ -26,7 +26,7 @@ Der folgende Vergleich umfasst neu verfügbare ehemalige Beta-Funktionen, neue F
 
 | Funktion | VESTA-Ausgangsstand (einschließlich Beta) | Was Kunden mit NOVA gewinnen |
 | --- | --- | --- |
-| **Ehemalige Beta-Funktionen nutzen** | Funktionen über VESTA-Beta verfügbar | **Reguläre NOVA-Funktionen:** alle ehemaligen VESTA-Beta-Funktionen sind enthalten. Ihre reguläre VESTA-Einführung ist für den Hotfix am 11. November 2026 geplant. |
+| **Ehemalige Beta-Funktionen nutzen** | Funktionen über VESTA-Beta verfügbar | **Reguläre NOVA-Funktionen:** alle ehemaligen VESTA-Beta-Funktionen sind enthalten. Ihre reguläre VESTA-Einführung ist für den Hotfix am 18. November 2026 geplant. |
 | **Hilfe bei der Dokumentenvalidierung** | Einstellungs-Assistent und Header-Feld-Prüfung | **Neuer Validierungsassistent:** blockierende Felder identifizieren, zum relevanten Wert springen, vorgeschlagene Korrekturen prüfen und den Chat in einem separaten Fenster offenhalten. |
 | **Automatisierung durch alltägliche Korrekturen verbessern** | Touchless-Intelligence-Dashboard, Lieferanten-Diagnose und Änderungsvorschläge | **Neuer Prüf- und Messprozess:** Verbesserungsanfragen einreichen, gelernte Regelvorschläge prüfen, betroffene Dokumentennachweise einsehen, Potenziale priorisieren und Ergebnisse nach Aktivierung messen. |
 | **E-Rechnungsfehler verstehen und beheben** | E-Dokumentenprüfungen, Regelkatalog und XML-Viewer | **Erweiterte E-Rechnungsvalidierung:** Berichte nach Validierungsstufe gruppiert, Richtliniensteuerung und Änderungshistorie, Ablehnung aus dem Bericht und XML-Inspektion innerhalb unterstützter PDF-Rechnungen. |
@@ -106,7 +106,7 @@ Der [Einstellungs-Assistent](../../administration-and-setup/settings/global-sett
 
 ## Regeln und Layouts: direkter Zugriff und bessere Diagnose
 
-* **Ehemalige Beta-Steuerungen werden reguläre Funktionen.** Layoutverwaltung, [Benutzerdefinierte Validierungsregeln](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) und [Transformationsregeln](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) sind in den erweiterten Einstellungen des Dokumenttyps in NOVA ohne Beta-Link sichtbar. Ihre Aktivierungsschalter bleiben unter Administratorkontrolle. Diese Steuerungen sind im geplanten VESTA-Hotfix vom 11. November 2026 zusammen mit allen anderen ehemaligen VESTA-Beta-Funktionen enthalten.
+* **Ehemalige Beta-Steuerungen werden reguläre Funktionen.** Layoutverwaltung, [Benutzerdefinierte Validierungsregeln](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) und [Transformationsregeln](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) sind in den erweiterten Einstellungen des Dokumenttyps in NOVA ohne Beta-Link sichtbar. Ihre Aktivierungsschalter bleiben unter Administratorkontrolle. Diese Steuerungen sind im geplanten VESTA-Hotfix vom 18. November 2026 zusammen mit allen anderen ehemaligen VESTA-Beta-Funktionen enthalten.
 * **Nützlichere Regeldiagnose.** Layout-Auswahlregeln erhalten eine Option **Ausführung protokollieren**. Die Regelsuche akzeptiert Regel-IDs, und das Öffnen eines Editors lädt die aktuell gespeicherte Regel. Das bestehende Regelausführungsprotokoll bleibt der Ort, um zu prüfen, was ausgeführt wurde.
 * **Layouts mit mehr Kontext auswählen und öffnen.** Ziel-Layouts durchsuchen, deren Inhalt in der Vorschau anzeigen und das Ziel direkt aus einer Auswahlregel öffnen. Genehmigungs-Auswahlregeln akzeptieren korrekt die unterstützten Genehmigungs-Layout-Typen. Administratoren erhalten zudem eine Verknüpfung von der Dokumentenvalidierung zum Layout-Editor des jeweiligen Dokumenttyps.
 * **Mehrere Bedingungswerte auswählen.** Bedingungen wie **ist einer von** unterstützen mehrere ausgewählte Werte.
@@ -179,7 +179,7 @@ Für Organisationen und Partner, die die DocBits MCP-Integration nutzen, stellt 
 
 ## Bereits in VESTA vorhandene Funktionen
 
-NOVA übernimmt auch die unten aufgeführten Funktionen. Wo der Zugriff zuvor auf die VESTA-Beta beschränkt war, ist die reguläre Verfügbarkeit Teil dieses NOVA-Releases und für den VESTA-Hotfix am 11. November 2026 geplant. Die Liste beschreibt die früheren Funktionen zusammen mit den oben erläuterten Verfügbarkeitsänderungen und Erweiterungen:
+NOVA übernimmt auch die unten aufgeführten Funktionen. Wo der Zugriff zuvor auf die VESTA-Beta beschränkt war, ist die reguläre Verfügbarkeit Teil dieses NOVA-Releases und für den VESTA-Hotfix am 18. November 2026 geplant. Die Liste beschreibt die früheren Funktionen zusammen mit den oben erläuterten Verfügbarkeitsänderungen und Erweiterungen:
 
 * Der ursprüngliche Einstellungs-Assistent, seine Dokumentationssuche, der grundlegende Vorschau-/Bestätigungs-/Rückgängig-Machen-Flow und proaktive E-Mail-/FTP-Import-Statuswarnungen.
 * Die KI-Stufen Fast, Full, Nexus und Auto sowie die Vision-Modus-Einstellung.

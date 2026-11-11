@@ -42,6 +42,10 @@ Se o número da fatura não tiver sido lido corretamente:
 Escrever um valor de substituição corrige este documento, mas não cria a associação à área de origem necessária para esta aprendizagem. Selecione o valor no original, confirme a associação e guarde a regra para a reutilizar em documentos correspondentes deste fornecedor. A aprendizagem a partir da imagem não está disponível para documentos lidos diretamente como dados de fatura eletrónica.
 {% endhint %}
 
+### Os botões da janela do valor do campo
+
+Selecionar uma área no documento abre uma pequena janela com botões redondos por cima da seleção. Passe o cursor sobre um botão para ler o que faz: eliminar o valor extraído, limpá-lo ou confirmar a associação. A dica de ferramenta aparece após um breve intervalo e utiliza o mesmo texto que o nome acessível do botão.
+
 ## Guardar, conservar regras e prosseguir
 
 | Ação | Resultado |
@@ -105,3 +109,5 @@ Nas faturas, **Mais opções → Fluxo de documentos** abre o percurso de proces
 ## Se não conseguir editar ou prosseguir
 
 Leia o motivo apresentado: o documento pode estar bloqueado, ser só de leitura, estar noutro estado ou ter restrições associadas ao seu papel. Resolva as mensagens e consulte a pessoa responsável ou o administrador sobre acesso e configuração. Se o erro persistir, consulte a [Resolução de problemas](troubleshooting/README.md) ou prepare um ticket com o documento e a mensagem exata.
+
+Para organizar as páginas, consulte [Dividir um PDF e organizar as páginas](../dashboard/manual-pdf-splitting.md).

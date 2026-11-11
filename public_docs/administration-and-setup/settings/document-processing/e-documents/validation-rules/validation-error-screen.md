@@ -29,7 +29,19 @@ The XML is fine, but a required field is missing. For example, the seller cannot
 
 Here the card names the layer **L3 · Business Rules** and the code `BR-CO-26`. The report lists all findings of the invoice, see [Validation report](validation-report.md).
 
-## The buttons below the card
+## The next step box and the buttons
+
+For an invalid e-invoice the page leads with a **Next step** box. It carries the action that helps in this case:
+
+| Action | What it does |
+| --- | --- |
+| **Reject** | Rejects the document. The dialog names the file, the seller and the invoice number, tells you that the document gets the status **Rejected** with a note in its history and that the supplier is not told, and it explains how to undo the rejection. It asks for a reason and confirms with **Reject now**. If something fails, the message appears inside the dialog and you can try again. |
+| **Download invoice XML** | Downloads the file as it was received, for example to check it outside DocBits or to send it back to the supplier. |
+| **Print report** | Prints the [validation report](validation-report.md). |
+
+The card also names the check in plain words, with the rule code as a small reference.
+
+**Restart Processing** runs the processing of the document again, for example after you changed a setting; the check uses the current settings. It sits below the next step box because a restart of an unchanged file fails in the same way. The other buttons stay next to it:
 
 | Button                 | What it does                                                                                                             |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -39,6 +51,8 @@ Here the card names the layer **L3 · Business Rules** and the code `BR-CO-26`. 
 | **Create ticket**      | Opens a support ticket with the error details.                                                                           |
 
 Select **Show technical details** on the card for the raw technical information.
+
+While the reason loads, the page shows a placeholder instead of a half-written card. If the reason cannot be loaded, the page offers to reload it, and a step whose name is unknown is labelled as such instead of showing an empty field. On a narrow screen the XML and the explanation stack above each other instead of standing side by side.
 
 ## What to do next
 

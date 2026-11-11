@@ -56,7 +56,7 @@ A sua palavra-passe deve:
 * ter entre **8 e 20 caracteres**,
 * conter pelo menos uma letra **maiúscula** e uma **minúscula**,
 * conter pelo menos um **dígito**,
-* conter pelo menos um **caractere especial** (`!@#$%^&*()_+=\\[{]\\};:,.<>?/\\|~-`).
+* conter pelo menos um **caractere especial** (`!@#$%^&*()_+=\[{]\};:,.<>?/\|~-`).
 
 Apenas letras, dígitos e estes caracteres especiais são permitidos.
 
@@ -95,10 +95,10 @@ Quando o seu administrador o adiciona como utilizador (consulte [Usuários](../.
 
 <figure><img src="../../.gitbook/assets/dbdc-8-set-password-native-pt-20261101.png" alt="Formulário português Definir senha com mensagem de boas-vindas, Senha e Confirme sua senha vazios, ícones de olho e Acesse a página de login"><figcaption><p>Primeira palavra-passe de uma conta criada pelo administrador: preencha Senha e Confirme sua senha e escolha Definir senha. Acesse a página de login volta ao início de sessão.</p></figcaption></figure>
 
-1. Clique na ligação no e-mail de convite. A página dá-lhe as boas-vindas com \"Bem-vindo ao DocBits! Sua conta foi criada. Por favor, defina sua senha para começar.\"
+1. Clique na ligação no e-mail de convite. A página dá-lhe as boas-vindas com "Bem-vindo ao DocBits! Sua conta foi criada. Por favor, defina sua senha para começar."
 2. Introduza a sua palavra-passe duas vezes — aplicam-se as mesmas [regras de palavra-passe](#regras-de-palavra-passe).
 3. Clique em **Definir senha**. Depois pode iniciar sessão com o seu e-mail e esta palavra-passe.
 
 Os ícones de olho mostram ou ocultam o que introduziu. Se sair antes de definir uma palavra-passe, **Acesse a página de login** devolve-o ao início de sessão.
 
-A ligação está associada à sua conta e funciona apenas uma vez. Se expirar antes de a utilizar, peça ao seu administrador para reenviar o convite ou use **Esqueceu sua senha** com o seu endereço de e-mail.
+A ligação está associada à sua conta e funciona apenas uma vez. Se expirar antes de a utilizar, peça ao seu administrador para reenviar o convite ou use **Esqueceu sua senha?** com o seu endereço de e-mail.

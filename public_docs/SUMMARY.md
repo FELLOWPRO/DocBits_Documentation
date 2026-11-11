@@ -613,7 +613,7 @@
 * [Flujo de trabajo](administration-and-setup/workflow/README.md)
   * [Aprendizaje desde principiante hasta experto](administration-and-setup/workflow/workflow-learning-path.md "Ruta de aprendizaje – de principiante a experto")
     * [¿Cuándo se ejecuta mi workflow?](administration-and-setup/workflow/workflow-execution-model.md)
-    * [P0: Cambiar el estado y limitar nuevas ejecuciones](administration-and-setup/workflow/masterclass/status-and-reentry.md)
+    * [Cambiar el estado sin volver a iniciar su Workflow](administration-and-setup/workflow/masterclass/status-and-reentry.md)
     * [Caso Advanced: enrutamiento de facturas](administration-and-setup/workflow/advanced-workflow-case-study.md)
     * [Paquete de formación de workflows](administration-and-setup/workflow/workflow-training-kit.md)
     * [P1: Elegir Field is, Docfield is o Compare two Fields](administration-and-setup/workflow/masterclass/field-conditions.md)

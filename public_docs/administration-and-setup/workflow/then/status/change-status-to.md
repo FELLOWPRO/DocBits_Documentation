@@ -6,58 +6,61 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v3-es-es.png" alt="Cambiar estado a, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
-## **Propósito:**
+## Propósito
 
-La tarjeta de flujo de trabajo **"Change Status"** se utiliza para cambiar el estado de un documento a uno de los estados predefinidos —**Error, Rechazado, Listo para Validación, Pendiente de Aprobación, Pendiente de Segunda Aprobación**— y, opcionalmente, disparar flujos de trabajo asociados según el cambio de estado. Esta tarjeta automatiza el proceso de actualización de estados y disparadores de flujo de trabajo, garantizando una gestión eficiente de documentos y un manejo de errores.
+La tarjeta **Cambiar estado a** asigna un nuevo estado al documento, por ejemplo para enviarlo a aprobación o para marcarlo como rechazado. La encontrará en el diseñador de Workflows, en **Entonces → Estado**.
 
-## **Componentes de la tarjeta:**
+## Ajustes
 
-1. **Estado**
-   * **Descripción**: Especifica el nuevo estado que se aplicará al documento.
-   * **Opciones**:
-     * **Error**: Marca el documento como que ha encontrado un error.
-     * **Rechazado**: Indica que el documento ha sido rechazado y no continuará.
-     * **Listo para la validación**: Establece el documento para que sea revisado y validado por el siguiente usuario o proceso del sistema.
-     * **Pendiente de aprobación**: Coloca el documento en estado pendiente de aprobación.
-     * **Pendiente de segunda aprobación**: Pone el documento en espera de un segundo nivel de aprobación si procede.
-2. **Activar flujos de trabajo**
-   * **Descripción**: Determina si deben dispararse flujos de trabajo posteriores tras el cambio de estado.
-   * **Opciones**:
-     * **True**: Inicia los flujos de trabajo pertinentes según el cambio de estado.
-     * **False**: Impide la ejecución de flujos de trabajo tras el cambio de estado.
+### Estado
 
-## **Funcionalidad:**
+El estado que recibe el documento. Puede elegir:
 
-* **Evaluación de la condición**: El sistema evalúa las condiciones establecidas en las secciones **"Cuando"** y **"Y"**. Si estas condiciones son verdaderas, la tarjeta continúa para cambiar el estado del documento al valor seleccionado.
-* **Actualización del estado**: Una vez que se cumplen las condiciones, el estado del documento se actualiza a una de las opciones predefinidas (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), según la selección del usuario.
-* **Acción de disparar el flujo de trabajo**: Si **Activar flujos de trabajo** se establece en **True**, el sistema inicia automáticamente cualquier flujo de trabajo asociado tras la actualización del estado. Si se establece en **False**, no se disparan flujos de trabajo adicionales y el proceso finaliza con el cambio de estado.
+| Estado | Significado |
+| --- | --- |
+| **Error** | El documento se marca como erróneo. |
+| **Rechazado** | El documento se rechaza. |
+| **Listo para la validación** | El documento espera a que un usuario lo revise en la validación. |
+| **Aprobación pendiente** | El documento espera la aprobación. |
+| **Pendiente de la segunda aprobación** | El documento espera la segunda aprobación. |
+| **Archivado** | El documento se mueve al archivo. Si se restaura, recupera su estado anterior. |
+| **Finalizado** | El procesamiento del documento ha terminado. |
+| **Exportado** | El documento se ha exportado, pero sigue abierto; por ejemplo, para que todavía pueda devolverse a aprobación. |
 
-## **Configuración:**
+Asignar un estado no ejecuta el paso que hay detrás. Por ejemplo, **Pendiente de la segunda aprobación** no significa que alguien haya dado la primera aprobación.
 
-Para configurar esta tarjeta, los usuarios deben:
+### Desencadenar flujos de trabajo (solo versión 3)
 
-1. Especificar el **Estado** deseado al que se establecerá el documento tras la evaluación de la condición (Error, Rejected, Ready for Validation, Pending Approval o Pending Second Approval).
-2. Elegir si **Activar flujos de trabajo** tras el cambio de estado seleccionando **True** o **False**.
-3. La tarjeta solo ejecuta su acción si ambas condiciones de las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
+Decide si el cambio de estado puede iniciar Workflows.
 
-## **Conclusión:**
+* **Falso:** este cambio de estado no inicia ningún Workflow. Use este valor, salvo que otro Workflow deba continuar con el documento en su nuevo estado.
+* **Verdadero:** DocBits inicia los Workflows cuyas condiciones coinciden con el documento en su nuevo estado. Se inician cuando el Workflow actual ha terminado. La tarjeta no los espera ni muestra si han funcionado; consulte los **Registros de flujo de trabajo**.
 
-La tarjeta de flujo de trabajo **"Change Status"** ofrece un enfoque ágil para gestionar los estados de los documentos y disparar flujos de trabajo relacionados. Garantiza que los documentos se enruten automáticamente al estado correcto y que se tomen las acciones necesarias, según el cambio de estado. Al establecer condiciones claras para la ejecución, reduce el esfuerzo manual y mejora la eficiencia del flujo de trabajo.
+Elija siempre un valor. Con **Verdadero**, asegúrese de que el Workflow que contiene esta tarjeta no coincida él mismo con el nuevo estado; de lo contrario, se ejecuta una segunda vez. Consulte [Cambiar el estado sin volver a iniciar su Workflow](../../masterclass/status-and-reentry.md).
 
-<!-- workflow-card-practical-example-20261021 -->
+## Versiones de la tarjeta
 
-## Ejemplo práctico
+| Versión | Ajustes | Inicia Workflows después del cambio |
+| --- | --- | --- |
+| **1** | Estado | Sí, siempre |
+| **2** | Estado | Sí, siempre |
+| **3** | Estado, Desencadenar flujos de trabajo | Solo con **Desencadenar flujos de trabajo** = **Verdadero** |
 
-**Cuándo utilizarla:** Enviar un documento comprobado al paso de aprobación.
+Las versiones 1 y 2 funcionan igual. La versión 3 añade **Desencadenar flujos de trabajo**, de modo que puede decidir si el nuevo estado inicia otros Workflows. Use la versión 3 para los Workflows nuevos. Si cambia una tarjeta existente de la versión 3 a una versión anterior, **Desencadenar flujos de trabajo** deja de aplicarse y cada cambio de estado puede volver a iniciar Workflows.
 
-**Dónde:** Diseñador de flujos estándar → Entonces → Estado → Cambiar estado a.
+## Conviene saber
 
-**Configuración:** Seleccione la versión 3 de `staus_change`, el estado Aprobación pendiente (`validated_pending_approval`) y la activación de otros flujos en `false` (`trigger_docflow=false`). Use una factura sintética aislada que cumpla las comprobaciones anteriores.
+* **Mismo estado, ningún efecto.** Si el documento ya tiene el estado elegido, no cambia nada y no se inicia ningún Workflow.
+* **Archivado nunca inicia Workflows**, en ninguna versión.
+* **Los webhooks no se ven afectados.** Los webhooks de cambios de estado se envían independientemente de lo que elija en **Desencadenar flujos de trabajo**.
+* **Un cambio puede rechazarse.** Si su organización bloquea los documentos finalizados, un documento **Finalizado** solo puede pasar a **Archivado** o a **Error**. Cualquier otro cambio se rechaza, el estado se mantiene y el registro del Workflow muestra un error.
+* **Las pruebas solo simulan.** En una prueba de tarjeta o en Advanced Test del diseñador de Workflows, las tarjetas siguientes ven el nuevo estado, pero el estado no se guarda y no se inicia ningún Workflow.
 
-**Resultado esperado y contraejemplo:** Una actualización permitida y correcta coloca el documento en el estado seleccionado. Si una condición anterior es falsa, esta acción no se alcanza y no cambia el estado. Una actualización rechazada o fallida de la API no es un éxito: compruebe el estado real y los registros. La tarjeta no realiza por sí misma una exportación.
+## Ejemplo
 
-### Versiones de la tarjeta
+**Objetivo:** después de las comprobaciones, enviar una factura a aprobación.
 
-El interruptor explícito para activar otros flujos está disponible en v3. Las versiones 1 y 2 no lo ofrecen; su ruta de actualización antigua usa el comportamiento predeterminado de activación. No suponga que un ajuste `false` de v3 se conserva al cambiar a una versión anterior.
+1. Condiciones: **El tipo de documento es** _Factura_ y **El estado del documento** **Es** **Listo para la validación**.
+2. **Cambiar estado a** (versión 3): **Estado** = **Aprobación pendiente**, **Desencadenar flujos de trabajo** = **Falso**.
 
-Configuración y resultado esperado revisados contra el código. No se ejecutó ningún flujo ni cambio de estado.
+**Resultado:** la factura pasa a **Aprobación pendiente** y espera la aprobación. El cambio no inicia ningún otro Workflow, y este Workflow no vuelve a ejecutarse porque el documento ya no está en **Listo para la validación**.

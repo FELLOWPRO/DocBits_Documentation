@@ -11,18 +11,18 @@ Esta tarjeta de flujo de trabajo está adaptada para gestionar operaciones sobre
 1. **Operador**
    * **Descripción**: Especifica el método para evaluar el estado del documento frente a la condición seleccionada.
    * **Opciones**:
-     * **is**: Dispara la operación si el estado actual del documento coincide con el estado seleccionado.
-     * **no es**: Dispara la operación si el estado actual del documento no coincide con el estado seleccionado.
+     * **Es**: Dispara la operación si el estado actual del documento coincide con el estado seleccionado.
+     * **No Es**: Dispara la operación si el estado actual del documento no coincide con el estado seleccionado.
 2. **Estado**
    * **Descripción**: Permite seleccionar un único estado de documento para establecer la condición.
-   * **Ejemplos de estados**: "Error", "Error de exportación", "Listo en validación", "Listo en revisión", "Pendiente de aprobación", "Pendiente de segunda aprobación".
+   * **Estados que puede elegir**: Error, Error de exportación, Finalizado, Rechazado, Listo para la revisión, Listo para la validación, Aprobación pendiente, Pendiente de la segunda aprobación, Exportado e IMPUESTO DE VÉRTICE RECHAZADO.
    * **Detalle**: Los usuarios eligen un estado de un desplegable o de un conjunto de botones de opción. Este estado sirve entonces como criterio para la operación de la tarjeta.
 
 **Funcionalidad**
 
 * **Identificación del estado del documento**: Identifica el estado actual de un documento a medida que se procesa a través del sistema ERP.
 * **Evaluación de la condición**:
-  * Según el operador seleccionado (`is` o `is not`), la tarjeta comprueba si el estado actual del documento se ajusta al criterio de estado elegido.
+  * Según el operador seleccionado (**Es** o **No Es**), la tarjeta comprueba si el estado actual del documento se ajusta al criterio de estado elegido.
 * **Ejecución de la acción**:
   * **Condición verdadera**: Si el estado coincide (o no coincide, según el operador), se inicia la acción correspondiente. Esto podría ser el enrutamiento para un procesamiento adicional, la generación de notificaciones u otros flujos de trabajo predefinidos.
   * **Condición falsa**: Si la condición no se cumple, no se realiza ninguna acción o se dispara una ruta alternativa.
@@ -42,8 +42,8 @@ La tarjeta de flujo de trabajo "Single Document Status Condition" simplifica la 
 
 ### Ejemplo de estado único
 
-**Configuración:** Elija operador `is` y estado `Pending Approval`. Agregue una siguiente acción de revisión apropiada para ese estado.
+**Configuración:** Elija el operador **Es** y el estado **Aprobación pendiente**. Agregue una siguiente acción de revisión apropiada para ese estado.
 
-**Resultado esperado y contraejemplo:** La condición es verdadera para un documento actualmente `Pending Approval`; es falso para un documento con estado `Ready in Validation`. Utilice el estado seleccionado real de su lanzamiento. Cambiar un estado no exporta el documento.
+**Resultado esperado y contraejemplo:** La condición es verdadera para un documento que está actualmente en **Aprobación pendiente**; es falsa para un documento con estado **Listo para la validación**. Utilice el estado seleccionado real de su lanzamiento. Cambiar un estado no exporta el documento.
 
 Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.

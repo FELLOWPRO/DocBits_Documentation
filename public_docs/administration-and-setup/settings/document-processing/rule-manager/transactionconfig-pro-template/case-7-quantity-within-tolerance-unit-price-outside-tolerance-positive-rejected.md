@@ -28,7 +28,7 @@ La quantité (198 unités) se situe dans la plage de tolérance acceptable, mais
 
 1. **Rejeter le prix unitaire facturé:** Le système n'accepte pas le prix unitaire facturé de $17.00.
 2. **Ajuster le prix unitaire:** Le système ajuste le prix unitaire pour correspondre au prix unitaire du bon de commande d'origine.
-   * Adjusted Unit Price = $15.00 (from PO)
+   * Adjusted Unit Price = $15.00 (de la PO)
 3. **Calculer le montant total corrigé:** À l'aide du prix unitaire ajusté, le système recalcule le montant total.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**

@@ -1,94 +1,141 @@
 # Erweiterte Einstellungen
 
-In einigen Dokumenten können Tabellenstrukturen komplex sein - über mehrere Zeilen reichen, gruppierte Informationen enthalten oder unnötige zusätzliche Zeilen enthalten. Die _Erweiterten Einstellungen_ im Trainingsmodus ermöglichen es Ihnen, die Tabellenauswertung für solche Fälle fein abzustimmen, um Genauigkeit und Konsistenz zu verbessern.
+In manchen Dokumenten sind Tabellenstrukturen komplex: Sie reichen über mehrere Zeilen, enthalten gruppierte Informationen oder unnötige Zusatzzeilen. Mit den _Erweiterten Einstellungen_ im Trainingsmodus können Sie die Tabellenauswertung für solche Fälle fein abstimmen und damit Genauigkeit und Konsistenz verbessern.
 
-Um auf diese Einstellungen zuzugreifen, aktivieren Sie den **Trainingsmodus** und klicken Sie auf das **Einstellungen**-Zahnrad-Symbol in der oberen Aktionsleiste:
+Um diese Einstellungen zu öffnen, aktivieren Sie den **Trainingsmodus** und klicken in der oberen Aktionsleiste auf das Zahnrad **Einstellungen**:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FW1cBx4IOjycKv6IZM9AX8Wggj1eEBgzBVJWgsyWkutX9dRRJuEjQtSCsPaNZuRndd9ewMVvfqSXr45C-2cO-pxXkYFdl_9eEGVW6-UBqqZCsuhia6alJjD1ZuZawwSbjS9Yeywe1wDK5yAcIOUH5QAw\&width=768\&dpr=4\&quality=100\&sign=4bf6ac31\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-gear-de-20261111.png" alt="Tabellenauswertung im Trainingsmodus, der Mauszeiger steht auf dem Zahnrad Einstellungen in der oberen Aktionsleiste."><figcaption><p>Das Zahnrad Einstellungen in der Aktionsleiste des Trainingsmodus öffnet die Erweiterten Einstellungen.</p></figcaption></figure>
+
+Der Dialog **Einstellungen** enthält alle Optionen dieser Seite. Klappen Sie den Bereich **Erweiterte Einstellungen** auf, um die Gruppierungsoptionen zu erreichen; er bleibt zugeklappt, bis Sie ihn öffnen:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-max-rows-de-20261111.png" alt="Dialog Einstellungen mit Anzahl der Kopfzeilen 2 und aufgeklapptem Bereich Erweiterte Einstellungen: Minimum gruppierter Zeilen 2, Maximal gruppierte Zeilen 3, Eindeutige Gruppenspalten, Gruppierung umkehren und Texttrennung."><figcaption><p>Der Bereich Erweiterte Einstellungen mit allen Gruppierungsoptionen.</p></figcaption></figure>
+
+Jede Option ist unten in einem eigenen Abschnitt beschrieben, zusammen mit ihrer Wirkung auf die ausgewertete Tabelle.
 
 ## Anzahl der Kopfzeilen
 
-**Verwenden Sie diese Einstellung, um festzulegen, wie viele Zeilen den Tabellenkopf bilden.**
+**Mit dieser Einstellung legen Sie fest, aus wie vielen Zeilen der Tabellenkopf besteht.**
 
-Einige Tabellen haben mehrzeilige Kopfzeilen. Zum Beispiel erstreckt sich der Kopf dieser Tabelle über zwei Zeilen:
+Der Tooltip der Option fragt: _Aus wie vielen Zeilen besteht Ihr Tabellenkopf?_
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FJ_nYZKzUSJHcpJuNp1ykf6shnfetOuiIPhyhyTfSqh_cTsDT5obwOSIc21OsLkjF9tMBP7Q1GQ1ZQfBsEmQIrJpfX3QpdjHnLkzInsjpngeg2L7i_TAyl9MdVmgHsDpUvoURdxfqp8FOdJxuRAMCwhk\&width=768\&dpr=4\&quality=100\&sign=554fa70\&sv=2)
+Manche Tabellen haben mehrzeilige Kopfzeilen. Der Kopf dieser Tabelle erstreckt sich zum Beispiel über zwei Zeilen:
 
-Stellen Sie die **Anzahl der Kopfzeilen** entsprechend ein:
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-two-lines-de-20261111.png" alt="Rechnungstabelle, deren Kopf sich über zwei Zeilen erstreckt (Preis / in EUR und Betrag / in EUR)."><figcaption><p>Eine Kopfzeile, die sich über zwei Zeilen erstreckt.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FG8-QpKxnRin9PGPmkbtJ35r1EugXsD4_Yd5QvTkdbb7sXqRVC3a9t0cIlNILJHLr--GsykgAlMJmMYbJaUoMqHEPvAT3PlPNf-syCmPz_GVMFEMsbhcHI2DQBbT4MJXjS2Sx7M3xl4zAzcw3aa-XNms\&width=768\&dpr=4\&quality=100\&sign=a487f5a9\&sv=2)
+Stellen Sie die **Anzahl der Kopfzeilen** passend ein:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-row-count-de-20261111.png" alt="Dialog Einstellungen mit Anzahl der Kopfzeilen 2."><figcaption><p>Anzahl der Kopfzeilen ist im Dialog Einstellungen auf 2 gesetzt.</p></figcaption></figure>
 
 ### Warum ist das wichtig?
 
-Wenn Sie dies nicht einstellen, könnte DocBits die zweite Zeile als Daten anstelle eines Teils des Kopfes behandeln, was zu Extraktionsfehlern führen könnte:
+Wenn Sie diese Einstellung nicht setzen, behandelt DocBits die zweite Zeile möglicherweise als Daten statt als Teil des Kopfes. Das führt zu Auswertungsfehlern:
 
 **Vorher:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F35BElgcq-zbs8wcGcguVSKHRpwQXqQG9dQmBaYa8BT4RNwJxd6g-jL5wlQgrnVLrMxtpncr8ayaasWVV3snGpBiDUWs4Zx7Tn2Dck-YFBpanlcN500yIWkVz9RJXQhoq6op0WbYcgklp_LsmE9LXt9k\&width=768\&dpr=4\&quality=100\&sign=7c68faf7\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-before-de-20261111.png" alt="Ausgewertete Tabelle mit falscher Anzahl der Kopfzeilen: Die zweite Kopfzeile erscheint als Datenzeile, die Spalten sind nicht zugeordnet."><figcaption><p>Vorher: Die zweite Kopfzeile wird als Datenzeile behandelt.</p></figcaption></figure>
 
 Nachher:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FbPGn9eWPK3Mmbu_ab2N3tVVP8ODho4MW6r6ynSKJWiPxq-IPlP_0Q1ghfcwjN56Sp_HA0nV-fedAfzkZoAXsj5O5ata32PCXPHJQ-dizWZ1OdpdEPS5wSPNW9jjc7TSPKQiNnCGPjLtnXQDLCbwEj3U\&width=768\&dpr=4\&quality=100\&sign=b032f2da\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-after-de-20261111.png" alt="Ausgewertete Tabelle mit Anzahl der Kopfzeilen 2: Die Spalten sind Position, Beschreibung, Menge, Einzelpreis und Nettobetrag zugeordnet, die Zeilen stimmen."><figcaption><p>Nachher: Kopf- und Datenzeilen sind korrekt getrennt.</p></figcaption></figure>
 
-## Zusätzliche Zeilen in den Papierkorb verschieben
+## Zusätzliche Zeilen verschieben nach
 
-**Verwenden Sie dies, um unerwünschte mehrzeilige Einträge wie Überlaufbeschreibungen zu verwerfen.**
+**Damit verwerfen Sie unerwünschte mehrzeilige Einträge, etwa überlaufende Beschreibungen.**
 
 In diesem Beispiel läuft die Beschreibung über mehrere Zeilen, aber nur die erste Zeile ist relevant:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FAEFanKF7uUtS_78nxi5zESPW8WOESa0Do_sCQCsttC21KoFK-sB9TQgFHboJB7CMEpc_auEbeXINU4BpEh8XuNMBHDYhuwjVX40cRyygxECs3XogrurWKNdw4s4F1kxWXLGrrF4jSqd1bba0dKPVO2E\&width=768\&dpr=4\&quality=100\&sign=926d60ed\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-overflow-doc-de-20261111.png" alt="Rechnungstabelle, in der die Beschreibung jedes Artikels auf zusätzlichen Textzeilen unter dem Artikel weiterläuft."><figcaption><p>Die Beschreibung läuft über mehrere Zeilen, von denen nur die erste relevant ist.</p></figcaption></figure>
 
-Aktivieren Sie **Zusätzliche Zeilen in den Papierkorb verschieben**, um den Überlauf zu entfernen:
+Setzen Sie **Zusätzliche Zeilen verschieben nach** auf **Papierkorb**, um den Überlauf zu entfernen:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FQdYUZ0ANpuFRkvNxVZzYfEhTRVf2fk1jPmoNUZcNotdkgL6VDHV1BgBXU2xqFfjBJ7W6uvB8TRZcpKEk7Qk_c0mIohiS4Jl9ZPRpG7HdS_EktuCcAtJ4KjJ_vYvYok7lv0nz2MfVMG08oDFqRSyFHy4\&width=768\&dpr=4\&quality=100\&sign=135061e3\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-move-extra-rows-de-20261111.png" alt="Dialog Einstellungen mit Zusätzliche Zeilen verschieben nach auf Papierkorb."><figcaption><p>Zusätzliche Zeilen verschieben nach ist auf Papierkorb gesetzt.</p></figcaption></figure>
 
-**Ergebnis nach Zuordnung:**
+**Ergebnis nach der Zuordnung:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fzto-P_Knp1YQmCUBU6_vCg2IEwaBiBeAao8Jvu30-89x_Sj2BLDSTQu31vUNBlaQp73DPVy2F-UZawn8j4hxycD6bpfCf_KXZYvrqH5w0cwGwsjatBelIh6gdenY-NpzmQ372jtthucHpMrsXNz3DcA\&width=768\&dpr=4\&quality=100\&sign=741cbfd1\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-trash-result-de-20261111.png" alt="Ausgewertete Tabelle, in der pro Artikel nur noch eine Zeile steht; die Überlaufzeilen sind entfernt."><figcaption><p>Ergebnis: Die Überlaufzeilen sind entfernt, nur die relevanten Zeilen bleiben.</p></figcaption></figure>
 
-## Mindestanzahl gruppierte Zeilen
+## Minimum gruppierter Zeilen
 
-**Verwenden Sie dies, wenn Zeilen unter einer Hauptzeile gruppiert werden müssen (z. B. Positionen mit mehreren Unterzeilen).**
+**Nutzen Sie diese Einstellung, wenn Zeilen unter einer Hauptzeile gruppiert werden sollen (z. B. Positionen mit mehreren Unterzeilen).**
 
-Hier sind nur drei von sechs Zeilen relevant. Zwei Schlüsselspalten sind zugeordnet (z. B. Position, Beschreibung), während andere als benutzerdefinierte Felder behandelt werden.
+Hier sind nur drei von sechs Zeilen relevant. Zwei Schlüsselspalten sind zugeordnet (z. B. Position, Beschreibung), weitere Spalten werden als benutzerdefinierte Felder behandelt.
 
-Beginnen Sie mit der Einstellung von **Anzahl der Kopfzeilen** und der **Mindestanzahl gruppierte Zeilen**:
+Legen Sie zuerst die **Anzahl der Kopfzeilen** und die **Minimum gruppierter Zeilen** fest, also die kleinste Zeilenzahl, die zu einer Gruppe gehören muss, bevor DocBits sie zusammenfasst:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fp0k-n1IG3_FHexG4iAlISSmN4Yaq9xUjRO2cLpV3w6a67DpULRnxj4x291DOXBVx2SHqKp6Zs-ZXxr8KHKzT9O6oCwgEOkvfMqwpDGZUrfFpozdR16sbaybtrMEqDOXO1TsNmuPFz6mOKX0pR8I5RO8\&width=768\&dpr=4\&quality=100\&sign=e19a8ef6\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-min-grouped-de-20261111.png" alt="Dialog Einstellungen mit Anzahl der Kopfzeilen 2 und aufgeklapptem Bereich Erweiterte Einstellungen mit Minimum gruppierter Zeilen 2."><figcaption><p>Anzahl der Kopfzeilen und Minimum gruppierter Zeilen sind im Dialog Einstellungen gesetzt.</p></figcaption></figure>
 
-Aktivieren Sie auch **Zusätzliche Zeilen in den Papierkorb verschieben**, um irrelevante Daten zu bereinigen.
+Stellen Sie zusätzlich **Zusätzliche Zeilen verschieben nach** auf **Papierkorb**, um irrelevante Daten zu bereinigen:
 
-Definieren Sie dann die Gruppierungsschlüsselspalte, z. B. _Position_:
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-min-grouped-trash-de-20261111.png" alt="Dialog Einstellungen mit Anzahl der Kopfzeilen 2, Zusätzliche Zeilen verschieben nach auf Papierkorb und Minimum gruppierter Zeilen 2."><figcaption><p>Zusätzlich ist Zusätzliche Zeilen verschieben nach auf Papierkorb gesetzt.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F5hy2YTNQRZ6plQZnc1HwAbAUXU7LKfNpLdlfr8sPnDXMryv0KoAGgkcqAWqjvznvBa1YwW0ecTrpStpm5AIc0qiFX1zB-I_y_crIx0jKS2t6QVKdAz66Wb3XMt9sRsEUHKIuk51_AatHNCRZjOghn4A\&width=768\&dpr=4\&quality=100\&sign=6ca2a12e\&sv=2)
+Legen Sie dann die Gruppierungsschlüsselspalte fest, zum Beispiel _Position_. Öffnen Sie dazu das Spaltenmenü dieser Spalte und wählen Sie **Zeilen gruppieren**:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-group-key-de-20261111.png" alt="Ausgewertete Tabelle mit geöffnetem Spaltenmenü der Spalte Pos., das Spalte löschen, Zeilen gruppieren und Regex anbietet."><figcaption><p>Wählen Sie im Spaltenmenü der Gruppierungsschlüsselspalte (Pos.) den Eintrag Zeilen gruppieren.</p></figcaption></figure>
+
+Die Gruppierung selbst und die weiteren Spaltenwerkzeuge, die damit zusammenspielen (manuelle Zeilenauswahl, Spaltenzuordnung und Regex), sind Schritt für Schritt beschrieben unter [Strukturierung und Verbesserung der Tabellenauswertung in DocBits](improving-table-extraction-with-regex.md).
 
 **Ergebnis:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FxaorEjiOEeypLMAAOXvm3VAc5BVzhIujUeLdSt0SPwrEz5x_hd8sb3Hhc7OpnUpzj6qvjWWptOsefhxjF5pIzf12RVXah1wPhlMoa3Wwx7T3s_D7Pzw8cryaAzgh8SpN-uTxpl1FWke8v33dh2VNgJ0\&width=768\&dpr=4\&quality=100\&sign=e955b28f\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-grouped-result-de-20261111.png" alt="Ausgewertete Tabelle mit drei gruppierten Positionen, eine Zeile pro Artikel."><figcaption><p>Ergebnis: Die physischen Zeilen sind zu drei Positionen gruppiert.</p></figcaption></figure>
 
-## Umgekehrte Gruppierung
+### Maximal gruppierte Zeilen
 
-**Verwenden Sie dies, wenn die Gruppierungszeile** _**nach**_ **den Zeilen erscheint, die sie gruppieren soll.**
+**Damit begrenzen Sie, wie viele Zeilen eine Gruppe enthalten darf.** Der Tooltip der Option fragt: _Wie viele Zeilen hat Ihre gruppierte Spalte maximal?_ Sie ist das Gegenstück zu Minimum gruppierter Zeilen: Eine Gruppe, die mehr Zeilen bräuchte als hier erlaubt, wird nicht zusammengefasst.
 
-Wenn die Zeile, die mit anderen Daten gruppiert werden soll, _über_ dem Gruppierungsschlüssel erscheint, aktivieren Sie diese Option:
+Lassen Sie das Feld leer, wenn Gruppen beliebig groß sein dürfen. Füllen Sie es aus, wenn ein Dokument Positionen mit vielen Unterzeilen enthält und Sie DocBits ungewöhnlich große Blöcke ungruppiert lassen möchten, damit Sie sie selbst prüfen können.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FiH7rDa637FWtr8wWtXpdqSh68xsaOFrb_vIWf-ZOpAjExmFPHVRaDGGipdwNy30gpLmEWT0UujjqlbcSlHU7ldQ5zhAy15pMxuqbDpS2xFSuL35EjbaXfFQTOSSO3QE_I37kvdL3i5k-N7F_9tedMss\&width=768\&dpr=4\&quality=100\&sign=95d583b1\&sv=2)
+Sie setzen den Wert im selben Dialogbereich wie Minimum gruppierter Zeilen, direkt darunter:
 
-Aktivieren Sie **Umgekehrte Gruppierung**, gruppieren Sie nach einer Hauptspalte (z. B. Nettobetrag) und verwenden Sie **Zusätzliche Zeilen in den Papierkorb verschieben**, wenn nötig:
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-max-rows-de-20261111.png" alt="Dialog Einstellungen mit Minimum gruppierter Zeilen 2 und Maximal gruppierte Zeilen 3; Eindeutige Gruppenspalten, Gruppierung umkehren und Texttrennung sind nicht angehakt."><figcaption><p>Maximal gruppierte Zeilen (hier 3) steht direkt unter Minimum gruppierter Zeilen.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FFJNKYXmELlMFi-Zh_0Pjgc0pcKI2-_UbDhF7b4D5p7GA4f9r-FqjruzkJw3nfJH4NA0G_BC2xQpJEzl26GbOlPt9fPyOkGowtGWgRWt5GJ62Vj-Qd04rDP0kzDFiJnRlpWF13d9YQ1e-FurQI-gHJx4\&width=768\&dpr=4\&quality=100\&sign=4b2677ae\&sv=2)
+### Eindeutige Gruppenspalten
 
-**Endresultat:**
+**Damit behalten Sie in der Gruppierungsschlüsselspalte nur eindeutige Werte.**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fe8x8gIUV10Y_FmPeW_X-UZw6uJ8P7alQTDy_m5OGGLZ8Ev7Ip-C-6fqtTixiSU0ZnLMIc4VR_f0xJV6beDnl7bFBIh4U2dME8KHB3qokj__SrQGp-3BXeOsN63SabFNd5miRCtK-jlf49nzcbbe8UJw\&width=768\&dpr=4\&quality=100\&sign=f7571dde\&sv=2)
+Der Tooltip der Option fragt: _Möchten Sie nur eindeutige Werte für Ihre gruppierte Spalte?_ Aktivieren Sie die Option, wenn mehrere Gruppen denselben Wert in der Gruppierungsschlüsselspalte tragen und DocBits diesen Wert nur einmal behalten soll; die wiederholten Gruppen zeigen dann einen leeren Schlüssel statt des doppelten Wertes.
+
+Es ist ein Kontrollkästchen im selben Bereich wie Minimum gruppierter Zeilen:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-distinct-split-de-20261111.png" alt="Dialog Einstellungen mit angehaktem Kontrollkästchen Eindeutige Gruppenspalten unterhalb von Maximal gruppierte Zeilen."><figcaption><p>Eindeutige Gruppenspalten ist das Kontrollkästchen unter Maximal gruppierte Zeilen.</p></figcaption></figure>
+
+### Gruppierung umkehren
+
+**Nutzen Sie diese Option, wenn die Gruppierungszeile _nach_ den Zeilen steht, die sie gruppieren soll.**
+
+Der Tooltip der Option fragt: _Möchten Sie alle Zeilen oberhalb des gruppierten Attributs kombinieren?_ Aktivieren Sie die Option, wenn die Zeile mit dem Gruppierungsschlüssel (zum Beispiel die Position oder der Betrag) _unter_ ihren Fortsetzungszeilen steht; DocBits fasst dann die Zeilen oberhalb des Schlüssels zur Gruppe zusammen statt der Zeilen darunter:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-doc-de-20261111.png" alt="Rechnungstabelle, in der die Beschreibungszeile über der Zeile mit Position, Menge und Beträgen steht."><figcaption><p>Die Gruppierungszeile steht nach den Zeilen, die sie gruppieren soll.</p></figcaption></figure>
+
+Aktivieren Sie **Gruppierung umkehren**, gruppieren Sie nach einer Hauptspalte (z. B. Nettobetrag) und setzen Sie bei Bedarf **Zusätzliche Zeilen verschieben nach** auf **Papierkorb**:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-dialog-de-20261111.png" alt="Dialog Einstellungen mit angehaktem Gruppierung umkehren, Zusätzliche Zeilen verschieben nach auf Papierkorb und Anzahl der Kopfzeilen 2."><figcaption><p>Gruppierung umkehren ist zusammen mit Zusätzliche Zeilen verschieben nach aktiviert.</p></figcaption></figure>
+
+**Endergebnis:**
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-result-de-20261111.png" alt="Ausgewertete Tabelle mit drei Zeilen nach umgekehrter Gruppierung über die Betragsspalte."><figcaption><p>Endergebnis mit umgekehrter Gruppierung.</p></figcaption></figure>
+
+### Texttrennung
+
+**Damit teilen Sie Zellentext genau an der Spaltentrennlinie.**
+
+Der Tooltip der Option fragt: _Möchten Sie den Text genau an der Spaltentrennlinie aufteilen?_ Aktivieren Sie die Option, wenn eine ausgewertete Zelle den Text zweier Spalten enthält, die die Tabellentrennlinie nicht getrennt hat. DocBits wertet die Tabelle dann erneut aus und schneidet jeden Wert an der von Ihnen definierten Trennlinienposition ab, statt beide Werte in einer Zelle zu speichern.
+
+Da die Aufteilung die Auswertung erneut ausführt, fragt DocBits vorher nach: Die Bestätigung erscheint, sobald Sie das Kontrollkästchen anhaken, und die Aufteilung wird erst nach einem Klick auf **Weiter** ausgeführt. Mit **Abbrechen** schließen Sie die Bestätigung, ohne die Tabelle erneut auszuwerten.
+
+Das Kontrollkästchen ist die letzte Option im Bereich Erweiterte Einstellungen:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-distinct-split-de-20261111.png" alt="Dialog Einstellungen mit angehaktem Kontrollkästchen Texttrennung als letzte Option des Bereichs Erweiterte Einstellungen."><figcaption><p>Texttrennung ist das letzte Kontrollkästchen des Bereichs.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-split-confirm-de-20261111.png" alt="Bestätigungsdialog mit dem Text Sind Sie sicher? Die Tabelle wird erneut extrahiert sowie den Schaltflächen Abbrechen und Weiter."><figcaption><p>Das Anhaken von Texttrennung öffnet diese Bestätigung; erst Weiter führt die Aufteilung aus.</p></figcaption></figure>
 
 ## Zusammenfassung
 
-Verwenden Sie die _Erweiterten Einstellungen_, um DocBits beizubringen, wie komplexere oder inkonsistente Tabellenstrukturen genau behandelt werden sollen. Diese Einstellungen verbessern die Extraktionsgenauigkeit, indem sie berücksichtigen:
+Mit den _Erweiterten Einstellungen_ bringen Sie DocBits bei, komplexere oder uneinheitliche Tabellenstrukturen zuverlässig zu behandeln. Diese Einstellungen verbessern die Auswertungsgenauigkeit, weil sie berücksichtigen:
 
 * Mehrzeilige Kopfzeilen
 * Mehrzeilige Beschreibungen
 * Gruppierte Positionen
-* Umgekehrte Reihenfolge gruppierte Daten
+* Umgekehrte Reihenfolge gruppierter Daten
+* Text, der an einer Spaltentrennlinie geteilt werden muss
 
-Durch Aktivieren dieser Optionen während des Trainings stellt DocBits sicher, dass die richtige Struktur für zukünftige Dokumente desselben Lieferanten gespeichert wird.
+Wenn Sie diese Optionen während des Trainings aktivieren, merkt sich DocBits die richtige Struktur für künftige Dokumente desselben Lieferanten. Sobald die Auswertung passt, speichern Sie die Konfiguration mit **Regeln speichern**, wie beschrieben unter [Regeln speichern und löschen](save-and-delete-rules.md).

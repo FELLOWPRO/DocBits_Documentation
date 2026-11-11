@@ -8,7 +8,7 @@ As Configurações de Pesquisa de Texto Completo definem o que o DocBits indexa 
 
 O módulo Fulltext Search tem de estar ativado em **Settings → Module → Dashboards & Analytics → Full text search**. Se o módulo não estiver ativado, a caixa de diálogo oferece três ações:
 
-* **Help (?)** — Abre a documentação da Pesquisa de Texto Completo num novo separador antes de alterar qualquer definição.
+* **Help (?)** — Abre a documentação dFulltext Search num novo separador antes de alterar qualquer definição.
 * **Go to Modules** — Abre as definições do módulo Dashboards & Analytics para rever a configuração.
 * **Enable Now** — Abre a caixa de diálogo de subscrição. Reveja e confirme essa caixa de diálogo antes de o módulo ser ativado; clicar apenas neste botão não o ativa.
 
@@ -16,7 +16,7 @@ A própria página de definições fica disponível assim que o módulo estiver 
 
 ## Estrutura da página
 
-A página de definições está organizada em três abas: **Documents**, **ERP** e **Templates**. Cada aba abrange um tipo de conteúdo diferente que a Pesquisa de Texto Completo pode indexar.
+A página de definições está organizada em três abas: **Documents**, **ERP** e **Templates**. Cada aba abrange um tipo de conteúdo diferente que Fulltext Search pode indexar.
 
 ### Aba Documents
 
@@ -44,7 +44,7 @@ A aba Templates lista as versões de modelo conhecidas pelo índice Fulltext. Ut
 
 ## O que é indexado
 
-Uma vez ativada e configurada, a Pesquisa de Texto Completo permite aos utilizadores:
+Uma vez ativada e configurada, Fulltext Search permite aos utilizadores:
 
 * Pesquisar em todo o conteúdo dos documentos (não apenas nos campos de metadados).
 * Encontrar documentos pelo texto contido nos ficheiros carregados.

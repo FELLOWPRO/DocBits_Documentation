@@ -42,6 +42,10 @@ Si le numéro de facture est mal lu :
 Saisir une nouvelle valeur corrige ce document, mais ne crée pas l’association à la zone source nécessaire à cet apprentissage. Sélectionnez la valeur dans l’original, confirmez l’association et enregistrez la règle pour la réutiliser sur les documents correspondants de ce fournisseur. Cet apprentissage à partir de l’image n’est pas disponible pour les documents lus directement comme données de facture électronique.
 {% endhint %}
 
+### Les boutons de la fenêtre de valeur du champ
+
+Sélectionner une zone sur le document ouvre une petite fenêtre avec des boutons ronds au-dessus de la sélection. Survolez un bouton pour lire son action : supprimer la valeur extraite, effacer la sélection ou confirmer l’association. L’infobulle apparaît après un court délai et reprend le libellé accessible du bouton.
+
 ## Enregistrer, conserver les règles et poursuivre
 
 | Action | Effet |
@@ -105,3 +109,5 @@ Pour les factures, **Plus d’options → Flux de documents** ouvre le parcours 
 ## Si vous ne pouvez pas modifier ou poursuivre
 
 Lisez la raison affichée : document verrouillé, en lecture seule, dans un autre statut ou accès limité par votre rôle. Corrigez les messages de contrôle et contactez la personne responsable ou l’administrateur pour les droits et réglages. Si l’erreur persiste, consultez le [Dépannage](troubleshooting/README.md) ou préparez un ticket avec le document et le message exact.
+
+Pour l’organisation des pages, voir [Diviser un PDF et organiser ses pages](../dashboard/manual-pdf-splitting.md).

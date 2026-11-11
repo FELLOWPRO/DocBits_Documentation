@@ -1,69 +1,145 @@
 # Import
 
-W ustawieniach importu można określić sposób obsługi dokumentów oraz skonfigurować automatyczny odbiór przez FTP lub pocztę. Otwórz **Ustawienia → Przetwarzanie dokumentów → Import**.
+## Przegląd
 
-## Opcje dokumentów
+Do utworzenia połączenia potrzebne jest konto administratora. Sekcja **Import** służy do konfigurowania automatycznego importu dokumentów z serwera FTP/SFTP, podłączonej skrzynki pocztowej lub przychodzącego adresu e-mail DocBits. Przed wprowadzeniem danych połączenia sprawdź bieżącą organizację i środowisko.
 
-Sprawdź limit stron, domyślny termin płatności w dniach i format daty. Limit stron może powodować odrzucenie stron przekraczających ustawioną liczbę. Wartość domyślna opisana dla tej funkcji wynosi 60 stron; przed importem porównaj ją z konfiguracją własnej organizacji.
+<figure><img src="../../../../.gitbook/assets/import-settings-overview-pl-20261109.png" alt="Strona ustawień Import z diagramem Import Pipeline, listą FTP Import z przyciskiem New oraz listą Email Import z przyciskiem New"><figcaption><p>Strona Import: diagram Import Pipeline tylko do odczytu, lista FTP Import i lista Email Import, każda z własnym przyciskiem <strong>New</strong>.</p></figcaption></figure>
 
-## Import FTP
+## Jak uzyskać dostęp
 
-Potrzebny jest zgodny serwer FTP, zatwierdzone dane połączenia oraz wydzielony katalog importu dostępny dla konta serwera.
+1. Przejdź do **Settings** → **Document Processing** → **Import**.
+2. Rozwiń wymaganą sekcję. **FTP Import** i **Email Import** mają własne przyciski **New**.
 
-<figure><img src="../../../../.gitbook/assets/s150-ftp_0-pl.png" alt="Przegląd połączeń importu FTP."><figcaption><p>Przegląd połączeń importu FTP.</p></figcaption></figure>
+## **Document Settings**
 
-### Konfiguracja połączenia
+Bieżąca strona Import zawiera **Import Pipeline**, **FTP Import**, **Email Import** oraz, gdy jest włączona, **Inbound Emails**. Przycinanie stron, domyślne terminy płatności i pola wzorca daty nie są kontrolkami w tym widoku Import.
 
-Utwórz nowe połączenie. Kreator zaczyna od konfiguracji serwera, a następnie udostępnia opcje i konfigurację importu.
+**Import Pipeline** pokazuje topologię routingu FTP/SFTP, w tym region źródłowy i docelowy. Przed zmianą połączenia sprawdź wszelkie wyświetlane wskazówki. Karta potoku **Email** wyświetla obecnie komunikat o planowanym udostępnieniu; nie pokazuje diagramu przetwarzania wiadomości e-mail.
 
-<figure><img src="../../../../.gitbook/assets/s150-ftp_5-pl.png" alt="Konfiguracja serwera w kreatorze importu FTP."><figcaption><p>Konfiguracja serwera w kreatorze importu FTP.</p></figcaption></figure>
+## **FTP Import**
 
-| Ustawienie | Znaczenie |
-| --- | --- |
-| Protokół i port | Wybierz FTP, FTPS lub SFTP oraz port podany przez administratora serwera. |
-| Serwer i dane logowania | Adres serwera oraz konto uprawnione do odczytu katalogu importu. |
-| Wzorce nazw plików | Ograniczają import do pasujących nazw. |
-| Podorganizacja | Określa przypisanie importowanych dokumentów. |
-| Klucz API | Jeżeli jest udostępniany przez konfigurację, musi odpowiadać właściwej organizacji. Nie publikuj jego wartości. |
-| Katalog główny i katalog importu | Wskazują lokalizację plików na serwerze. |
-| Archiwizacja po imporcie | Przenosi poprawnie zaimportowane pliki do wskazanego katalogu archiwum. Konto musi mieć odpowiednie uprawnienia. |
-| Uwzględnianie podkatalogów | Rozszerza wyszukiwanie plików na katalogi podrzędne. |
+<figure><img src="../../../../.gitbook/assets/dbdc-179-ftp-overview-en-20261030.png" alt="Tabela FTP Import z przyciskiem New oraz kolumnami typu, serwera, nazwy użytkownika, portu, podorganizacji i katalogu"><figcaption><p>Użyj przycisku New w FTP Import, aby dodać połączenie z serwerem. W tym przykładzie istniejące wiersze połączeń są zasłonięte.</p></figcaption></figure>
 
-Sprawdź wszystkie etapy przed zapisaniem. Po zapisaniu kontroluj oddzielnie, czy połączenie jest aktywne. Dostępne działania obejmują test połączenia, dzienniki, aktywację lub dezaktywację, edycję i usunięcie. Przeczytaj wynik testu i dzienniki przed uruchomieniem regularnego importu. Obrazy pokazują listę oraz niezapisany początek kreatora, nie sprawdzone połączenie z serwerem.
+### Wymagania
 
-## Import poczty {#email-import}
+* Serwer FTP, FTPS lub SFTP osiągalny z poziomu usługi importu.
+* Adres serwera, protokół, port, nazwa użytkownika i hasło przekazane przez administratora.
+* Katalog importu oraz, jeśli wymagana jest archiwizacja, zatwierdzony katalog archiwum.
 
-Połączenie pocztowe pobiera dokumenty z własnej skrzynki przez IMAP lub OAuth Microsoft365. Przekazywanie poczty na adres dostarczony przez DocBits jest oddzielną metodą: zobacz [Poczta przychodząca](../module/inbound-emails.md).
+### Dodawanie nowego połączenia
 
-### Obsługiwane załączniki
+1. Kliknij **New** w **FTP Import**.
+2. Wprowadź ustawienia połączenia. Nowy formularz startuje z **SFTP** i portem **22**; zastąp te wartości, jeśli serwer używa innego protokołu lub portu.
 
-Importowane typy dokumentów obejmują `.pdf`, `.tiff` / `.tif`, `.eml`, `.dat`, `.xml`, `.edi` i `.purchaseorder`.
+<figure><img src="../../../../.gitbook/assets/dbdc-179-ftp-blank-form-en-20261030.png" alt="Nowy formularz połączenia FTP z ustawieniami SFTP, portem 22, polami katalogów, ustawieniami ponowień oraz przyciskami Save i Cancel"><figcaption><p>Wprowadź dane serwera i logowania, a następnie sprawdź katalogi, routing i ustawienia ponowień. Pola hasła i klucza API są zasłonięte; ten przykład nie został zapisany.</p></figcaption></figure>
 
-DocBits rozpoznaje dokument również po rzeczywistej zawartości, a nie tylko po typie zadeklarowanym przez serwer poczty. Jest to istotne, gdy przekazany załącznik otrzymuje ogólny typ `application/octet-stream` zamiast `application/pdf` lub `application/xml`.
+* **Type**, **Server name**, **Port**, **Username** i **Password** identyfikują połączenie z serwerem i je uwierzytelniają.
+* **Primary Directory** ustawia katalog bazowy. **Import Directory** wybiera folder do przetwarzania; wybór folderu staje się dostępny po zapisaniu połączenia.
+* **Document Type** i **Sub-Organizations** sterują przypisaniem. **File name matching patterns** ogranicza, które nazwy plików są brane pod uwagę.
+* **Archive after Import** włącza przenoszenie przetworzonych plików do wskazanego katalogu archiwum. **Include Subfolder Files** rozszerza przetwarzanie na podfoldery.
+* **Retry interval (min)**, **Retry duration (hours)** i **Notification emails (comma-separated)** sterują zachowaniem ponowień i powiadomień. Domyślne wartości na ilustracji to 60 minut i 48 godzin.
+* **API Key** korzysta z istniejącego klucza subskrypcji aplikacji organizacji. Ikona oka pokazuje lub ukrywa ten klucz; ikona kopiowania kopiuje go do schowka. Te kontrolki nie tworzą nowego klucza. Zachowaj klucz w poufności; nie umieszczaj go na zrzutach ekranu ani w wiadomościach do pomocy technicznej.
 
-* Przekazane wiadomości `.eml` i załączniki Outlook `winmail.dat` (TNEF) są rozpakowywane, aby zaimportować zawarte dokumenty.
-* XML z ogólnym typem jest rozpoznawany po deklaracji `<?xml`, z obsługą początkowego BOM UTF-8 lub UTF-16 (LE/BE). Obecnie tylko te kodowania BOM są automatycznie wykrywane na podstawie zawartości. Nazwa kończąca się `.xml` umożliwia import niezależnie od kodowania.
-* Obrazy osadzone w wiadomości, takie jak logotypy podpisów i grafiki PNG, JPG, GIF lub BMP, są pomijane i nie liczą się jako nieudane importy.
-* Jeśli włączono odpowiedź po nieudanym imporcie dla adresu przychodzącego, powiadomienie trafia na skonfigurowany adres odpowiedzi.
+Użyj **Cancel** lub ikony zamknięcia, aby opuścić formularz nowego połączenia bez zapisywania.
 
-### Połączenie IMAP
+3. Sprawdź wartości i kliknij **Save**, gdy połączenie jest gotowe do utworzenia.
+4. W menu **Actions** zapisanego wiersza wybierz **Activate**, gdy importy mają być uruchamiane.
 
-W sekcji importu poczty utwórz połączenie i wybierz IMAP. Sprawdź szyfrowanie SSL lub TLS, serwer, port, nazwę konfiguracji lub użytkownika, adres e-mail i hasło. Wybierz właściwą podorganizację i adres do powiadomień o błędach. Jeżeli konfiguracja pokazuje klucz API, sprawdź kontekst organizacji.
+### Działania dla FTP
 
-Po utworzeniu połączenia można wybrać katalog pocztowy i przenoszenie przetworzonych wiadomości do innego katalogu. Jeśli opcje nie są jeszcze dostępne, otwórz zapisane połączenie do edycji. Zależnie od konfiguracji można również łączyć załączone dokumenty, wysyłać potwierdzenie do nadawcy oraz blokować import powtórzonej nazwy pliku. Sprawdź temat i treść potwierdzenia przed jego włączeniem.
+Menu **Actions** zapisanego połączenia udostępnia:
 
-Zapisanie i aktywacja to oddzielne działania. Menu połączenia może udostępniać test połączenia, dzienniki połączenia i importu, edycję, aktywację, dezaktywację oraz usunięcie.
+* **Test Connection**: kontaktuje się ze skonfigurowanym serwerem, aby sprawdzić połączenie.
+* **Connection Logs**: przeglądanie prób połączenia i błędów.
+* **Activate/Deactivate**: włącza lub zatrzymuje automatyczne przetwarzanie dla tego połączenia.
+* **Edit**: zmiana jego konfiguracji.
+* **Delete**: usunięcie połączenia.
 
-### OAuth Office365
+Testowanie, aktywacja, edycja i usuwanie wpływają na rzeczywiste połączenie. Przed ich użyciem sprawdź wybrany wiersz i organizację.
 
-Utwórz połączenie pocztowe i wybierz OAuth Office365. Rozpocznij uwierzytelnianie Microsoft. Jeśli wyświetlany jest kod urządzenia, skopiuj kod z DocBits na wskazaną stronę Microsoft i zaloguj się właściwym kontem. Wróć do DocBits i zakończ uwierzytelnianie.
+## **Email Import**
 
-Sprawdź podorganizację, katalog, opcjonalną skrzynkę współdzieloną, katalog docelowy przetworzonych wiadomości i adres powiadomień o błędach. Sprawdź również kierowanie dokumentów do DocBits lub AI Workforce, jeżeli ta opcja jest dostępna. Zapisz konfigurację i świadomie wybierz moment aktywacji lub rozpoczęcia importu. Wariant OAuth Office365 – Tenant wymaga danych rejestracji aplikacji organizacji; omów je z administratorem i sprawdź [Pocztę przychodzącą](../module/inbound-emails.md).
+Podłączona skrzynka pocztowa jest oddzielna od przychodzącego adresu e-mail DocBits opisanego w poniższym samouczku. Wybierz metodę odpowiednią dla swojego procesu.
 
-### Dzienniki importu
+<figure><img src="../../../../.gitbook/assets/dbdc-179-email-overview-en-20261030.png" alt="Tabela Email Import z przyciskiem New, ikoną dziennika importu i kolumnami konfiguracji skrzynki pocztowej"><figcaption><p>Użyj przycisku New dla połączenia skrzynki pocztowej lub ikony dziennika, aby przejrzeć importy. Istniejące wiersze połączeń i link informacyjny są zasłonięte.</p></figcaption></figure>
 
-Dzienniki połączenia pomagają badać problemy komunikacji; dzienniki importu pokazują wyniki poprzednich importów. Zbiorczy dziennik sekcji poczty obejmuje skonfigurowane połączenia. Można filtrować według tematu lub nadawcy, sortować nagłówkami i zmieniać kolejność kolumn. Zbadaj komunikat przed ponownym importem.
+<mark style="color:red;">**Note**</mark>: Importowane będą tylko dokumenty o następujących typach plików:
 
+* `.pdf`
+* `.tiff` / `.tif`
+* `.eml`
+* `.dat`
+* `.xml`
+* `.edi`
+* `.purchaseorder`
+
+{% hint style="info" %}
+**Jak rozpoznawane są załączniki**
+
+Oprócz wymienionych powyżej rozszerzeń plików DocBits identyfikuje dokument również po jego **rzeczywistej zawartości** (sygnaturze pliku), a nie tylko po typie zawartości zadeklarowanym przez system pocztowy nadawcy. Ma to znaczenie w przypadku wiadomości **przekazywanych**: pośredniczące serwery pocztowe i bramy często oznaczają załącznik typem ogólnym (`application/octet-stream`) zamiast na przykład `application/pdf` lub `application/xml`. DocBits nadal rozpoznaje i importuje takie załączniki prawidłowo.
+
+* **Przekazane wiadomości `.eml`** oraz załączniki Outlook **`winmail.dat`** (TNEF) są rozpakowywane, a dokumenty w nich zawarte są importowane.
+* **Kodowanie XML:** gdy faktura XML zostanie oznaczona typem ogólnym (`application/octet-stream`), DocBits rozpoznaje ją po deklaracji `<?xml`, tolerując wiodący znacznik kolejności bajtów (BOM) **UTF-8** lub **UTF-16** (LE/BE) — obecnie tylko te kodowania BOM są automatycznie wykrywane na podstawie zawartości. Załącznik, który zachowuje nazwę pliku `.xml`, jest importowany niezależnie od kodowania.
+* **Pomijane:** obrazy osadzone w wiadomości (loga podpisów / grafiki wbudowane — PNG, JPG, GIF, BMP) są pomijane po cichu i **nie** są liczone jako nieudane importy.
+
+Jeśli załącznika nie można zaimportować, a opcja **„Reply to this email if import can not be done”** jest włączona dla adresu przychodzącego, skonfigurowany adres odpowiedzi otrzymuje powiadomienie.
+{% endhint %}
+
+### Dodawanie nowego połączenia IMAP
+
+1. Kliknij **New** w **Email Import** i wybierz **IMAP** w sekcji **Protocol**.
+2. W **Email Server Setup** wprowadź nazwę serwera, port, szyfrowanie, nazwę użytkownika, adres e-mail i hasło. Użyj wartości wymaganych przez Twojego dostawcę poczty; wyświetlane 993 to przykład portu, a nie ukończone ustawienie.
+
+<figure><img src="../../../../.gitbook/assets/dbdc-179-email-imap-step1-en-20261030.png" alt="Konfiguracja serwera poczty IMAP z protokołem, serwerem, portem, szyfrowaniem, danymi konta i przyciskiem Next"><figcaption><p>Przed kliknięciem Next uzupełnij wymagane pola serwera i konta. Obszar hasła jest zasłonięty; w tym przykładzie nie przesłano danych logowania do skrzynki.</p></figcaption></figure>
+
+Ikona kopiowania obok **Password** kopiuje wprowadzone hasło do schowka. **Cancel** lub ikona zamknięcia opuszcza tego kreatora nowego połączenia bez zapisywania.
+
+3. Kliknij **Next**, aby otworzyć **Options**. Zdecyduj, czy **Merge attached documents**, czy **Block duplicate filename import**. **Email Notification** włącza wiadomość potwierdzającą po imporcie; włączaj ją tylko wtedy, gdy takie zachowanie jest zamierzone.
+
+<figure><img src="../../../../.gitbook/assets/dbdc-179-email-imap-options-en-20261030.png" alt="Krok Options połączenia IMAP z łączeniem załączników, filtrowaniem zduplikowanych nazw plików, powiadomieniem e-mail oraz przyciskami Back i Next"><figcaption><p>Options oddziela zachowanie importu od powiadomień e-mail. W tym niezapisanym przykładzie oba pola wyboru i przełącznik powiadomień są wyłączone.</p></figcaption></figure>
+
+4. Kliknij **Next**, aby otworzyć **Config**. Wybierz wymagane **Sub-Organizations**, sprawdź istniejący **API Key**, ustaw odbiorcę błędów importu i sprawdź **Document Routing**. Rozwiń **Advanced Settings** tylko wtedy, gdy proces wymaga dodatkowych opcji.
+
+<figure><img src="../../../../.gitbook/assets/dbdc-179-email-imap-config-en-20261030.png" alt="Krok Config połączenia IMAP z organizacją, zasłoniętym kluczem API, powiadomieniami o błędach, routingiem dokumentów, Advanced Settings i przyciskiem Save"><figcaption><p>Config łączy przypisanie organizacji, istniejący klucz, powiadomienia o błędach i routing. Klucz jest zasłonięty, a Save nie zostało użyte.</p></figcaption></figure>
+
+W **Config** ikona oka pokazuje lub ukrywa istniejący **API Key**, a **Copy** kopiuje go do schowka. Żadna z tych kontrolek nie generuje nowego klucza.
+
+5. Kliknij **Save**, gdy konfiguracja jest gotowa. Następnie użyj **Activate** w menu **Actions** zapisanego połączenia, aby uruchomić automatyczne przetwarzanie.
+
+Dla zapisanego połączenia IMAP **Edit** udostępnia opcje folderu i obsługi po imporcie. Wybierz folder źródłowy i folder docelowy przenoszonych wiadomości dopiero po utworzeniu połączenia i możliwości wczytania dostępnych folderów.
+
+### Działania dla IMAP
+
+Menu **Actions** zapisanego połączenia udostępnia **Test Connection**, **Connection Logs**, **Import Log**, **Activate/Deactivate**, **Edit** i **Delete**. Test połączenia kontaktuje się ze skonfigurowaną skrzynką; aktywacja włącza przetwarzanie. Przed ponowieniem nieudanego importu przejrzyj dzienniki.
+
+### Dodawanie nowego połączenia OAuth Office365
+
+1. Kliknij **New** w **Email Import** i wybierz **OAuth Office365** w sekcji **Protocol**. W przypadku aplikacji dzierżawcy zarządzanej przez administratora wybierz **OAuth Office365 - Tenant** i postępuj zgodnie z opisem w [O365 Tenant](o365-tenant.md).
+2. Przed uwierzytelnieniem sprawdź **Document Routing**.
+
+<figure><img src="../../../../.gitbook/assets/dbdc-179-email-oauth-before-authentication-en-20261030.png" alt="Konfiguracja OAuth Office365 z Document Routing i przyciskiem Authenticate przed uwierzytelnieniem Microsoft"><figcaption><p>Wybierz trasę przed Authenticate. Ten widok jest sprzed logowania; nie rozpoczęto żadnego uwierzytelniania Microsoft.</p></figcaption></figure>
+
+3. Kliknij **Authenticate**, gdy połączenie ze skrzynką jest autoryzowane. Ukończ logowanie Microsoft kodem urządzenia przy użyciu kodu wyświetlonego przez DocBits, następnie wróć i wybierz **Finish Authentication**.
+4. Po uwierzytelnieniu sprawdź opcje organizacji, folderu, skrzynki współdzielonej, folderu przenoszenia i powiadomień o błędach oferowane dla połączenia. Użyj **Next**, aby przejść do **Config**, gdy stanie się dostępne, a następnie zapisz zamierzone ustawienia.
+5. Aktywuj zapisane połączenie, gdy automatyczne importy mają być uruchamiane. **Import**, jeśli jest oferowany dla zapisanego połączenia, uruchamia rzeczywisty import; używaj go świadomie.
+
+### Działania dla OAuth Office365
+
+Menu **Actions** zapisanego połączenia udostępnia **Connection Logs**, **Import Log**, **Activate/Deactivate**, **Edit** i **Delete**. Dezaktywacja zatrzymuje automatyczne przetwarzanie; usunięcie usuwa konfigurację.
+
+### Import Log
+
+Ikona dziennika w prawym górnym rogu **Email Import** służy do przeglądania importów we wszystkich skonfigurowanych połączeniach skrzynek pocztowych. Dla danego połączenia użyj akcji **Import Log** w zapisanym wierszu. Przed decyzją o ponowieniu sprawdź temat, nadawcę, status i dostępne szczegóły błędu.
+
+## Inbound Emails
+
+Dwa zrzuty ekranu samouczka poniżej pokazują przychodzący adres DocBits i jego dzienniki. Jest to oddzielne od połączeń skrzynek pocztowych opisanych powyżej.
+
+* Użyj ikony kopiowania obok **E-Mail**, aby skopiować adres odbiorczy wyświetlany dla bieżącej organizacji i środowiska.
+* **Add** wstawia kolejny wiersz dozwolonego nadawcy w formularzu. Wybierz nadawcę i zamierzoną podorganizację, a następnie użyj **Save**, aby zapisać konfigurację. Samo dodanie wiersza go nie zapisuje.
+* **Logs** otwiera dziennik wiadomości przychodzących. **Errors** filtruje błędy; **Inbound** i **Outbound** wybierają kierunek wiadomości.
+* Rozwiń wiersz dziennika strzałką, aby sprawdzić szczegóły załącznika. Ikona kopiowania obok identyfikatora śledzenia kopiuje ten identyfikator do rozwiązywania problemów. **Original email**, gdy jest dostępny dla wiersza przychodzącego, pobiera wybraną oryginalną wiadomość jako plik `.eml`; nie ponawia importu.
 
 ## Instrukcja wideo: Skrzynka odbiorcza i wyszukiwanie błędów
 
@@ -73,22 +149,22 @@ Skrzynka odbiorcza i wyszukiwanie błędów
 
 [Oglądaj z napisami i rozdziałami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/pl.html)
 
-Niektóre etykiety produktu mogą pozostać w innym języku. Zachowano techniczne identyfikatory pól.
+Niektóre natywne etykiety produktu mogą pozostać w innym języku. Techniczne identyfikatory pól są zachowane.
 
-W ustawieniach i imporcie używam w tym przykładzie adresu przychodzącego DocBits. Bezpośrednio podłączona skrzynka pocztowa to osobna metoda importu. Na potrzeby szkolenia pracuję w dedykowanej organizacji demonstracyjnej z syntetycznymi fakturami. Powiadomienia pozostają wyłączone.
+W ustawieniach i imporcie używam w tym przykładzie adresu przychodzącego DocBits. Bezpośrednio podłączona skrzynka pocztowa to osobna metoda importu. Na potrzeby tego szkolenia pracuję w dedykowanej organizacji demonstracyjnej z syntetycznymi fakturami. Powiadomienia pozostają wyłączone.
 
 Najpierw sprawdzam wyświetlany adres odbiorczy i zakres. Adres należy dokładnie do tej organizacji i jej środowiska. W przypadku innej firmy lub środowiska produkcyjnego zawsze używam adresu, który jest tam faktycznie wyświetlany.
 
-Tutaj ograniczam skrzynkę odbiorczą do naszego zatwierdzonego nadawcy testowego. Przypisanie do organizacji podrzędnej wybieram tylko wtedy, gdy należy do zamierzonego procesu. Zapisuję ustawienie i otwieram je ponownie. Dozwolony nadawca został zachowany; automatyczne e-maile z odpowiedziami pozostają wyłączone na tym szkoleniu.
+Tutaj ograniczam skrzynkę odbiorczą do naszego zatwierdzonego nadawcy testowego. Przypisanie do podorganizacji wybieram tylko wtedy, gdy należy do zamierzonego procesu. Zapisuję ustawienie i otwieram je ponownie. Dozwolony nadawca został zachowany; automatyczne e-maile z odpowiedziami pozostają wyłączone na tym szkoleniu.
 
-<figure><img src="../../../../.gitbook/assets/admin-save-pl-accounting-email-v2.png" alt="Dozwolony nadawca zapisany przy wyłączonych powiadomieniach"><figcaption><p>Dozwolony nadawca zapisany przy wyłączonych powiadomieniach</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-save-en-accounting-email-v1.png" alt="Dozwolony nadawca zapisany przy wyłączonych powiadomieniach"><figcaption><p>Dozwolony nadawca zapisany przy wyłączonych powiadomieniach</p></figcaption></figure>
 
 Na potrzeby tego szkolenia wiadomość testowa została przesłana bezpośrednio do obsługi poczty przychodzącej w DocBits. Ten test nie potwierdza dostarczenia zewnętrznego e-maila. W logu sprawdzam temat, nadawcę i zaimportowany załącznik. Następnie sprawdzam faktycznie utworzony dokument.
 
-Otwieram odpowiedni dokument i porównuję załącznik PDF z fakturą w DocBits. Nazwa pliku, numer faktury, dostawca i kwota muszą się zgadzać. Pomyślny import nie mówi nic o zatwierdzeniu ani księgowaniu w systemie ERP.
+Otwieram odpowiedni dokument i porównuję załącznik PDF z fakturą w DocBits. Nazwa pliku, numer faktury, dostawca i kwota muszą się zgadzać. Pomyślny import nie mówi nic o zatwierdzeniu ani księgowaniu w ERP.
 
 Drugi kontrolowany test pochodzi od niezatwierdzonego nadawcy. W logu szukam konkretnie tego zgłoszenia przychodzącego i aktywuję filtr błędów. Szczegóły wymieniają odrzuconego nadawcę. Sprawdzam przyczynę za pomocą tematu i identyfikatora śledzenia, zamiast wielokrotnie uruchamiać import.
 
 W prawdziwym przypadku najpierw wyjaśniam, czy ten nadawca jest w ogóle upoważniony. Zatwierdzona zmiana na liście nadawców jest zapisywana i ponownie sprawdzana. Następnie weryfikuję nowe, unikalne zgłoszenie testowe aż do utworzonego dokumentu. W przypadku błędów technicznych przekazuję identyfikator śledzenia i konkretny komunikat o błędzie.
 
-<figure><img src="../../../../.gitbook/assets/admin-error-pl-accounting-email-v2.png" alt="Nieudany import z załącznikiem, przyczyną i identyfikatorem śledzenia"><figcaption><p>Nieudany import z załącznikiem, przyczyną i identyfikatorem śledzenia</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-error-en-accounting-email-v1.png" alt="Nieudany import z załącznikiem, przyczyną i identyfikatorem śledzenia"><figcaption><p>Nieudany import z załącznikiem, przyczyną i identyfikatorem śledzenia</p></figcaption></figure>

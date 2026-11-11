@@ -1,55 +1,55 @@
 # Ustawienia Wyszukiwania Pełnotekstowego
 
-<figure><img src="../../../.gitbook/assets/fulltext-search-settings-module-required-pl-20261011.png" alt="Ustawienia Wyszukiwania Pełnotekstowego w piaskownicy z oknem informującym, że wymagany jest moduł, oraz przyciskami „Przejdź do modułów” i „Włącz teraz”"><figcaption><p>Gdy Wyszukiwanie Pełnotekstowe jest wyłączone, to okno wyjaśnia kolejne kroki.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fulltext_search_settings.png" alt="Ustawienia Wyszukiwania Pełnotekstowego w piaskownicy z oknem informującym, że wymagany jest moduł, oraz przyciskami Go to Modules i Enable Now"><figcaption><p>Gdy Wyszukiwanie Pełnotekstowe jest wyłączone, to okno wyjaśnia kolejne kroki.</p></figcaption></figure>
 
-Ustawienia Wyszukiwania Pełnotekstowego określają, co DocBits indeksuje i jak ta treść staje się przeszukiwalna w dokumentach, danych podstawowych ERP i szablonach. Strona ustawień wyświetla okno wymagania modułu, dopóki **moduł Wyszukiwania Pełnotekstowego** nie zostanie włączony — zobacz [Wyszukiwanie Pełnotekstowe](../document-processing/module/fulltext-search.md), aby poznać język zapytań skierowany do użytkownika.
+Ustawienia Wyszukiwania Pełnotekstowego określają, co DocBits indeksuje i jak udostępnia tę treść do wyszukiwania w dokumentach, danych podstawowych ERP i szablonach. Strona ustawień wyświetla okno wymagania, dopóki **moduł Wyszukiwania Pełnotekstowego** nie zostanie włączony — zobacz [Wyszukiwanie Pełnotekstowe](../document-processing/module/fulltext-search.md), aby poznać język zapytań dla użytkownika.
 
 ## Wymagania wstępne
 
-Moduł Wyszukiwania Pełnotekstowego musi być aktywowany w **Ustawienia → Moduł → Dashboards & Analytics → Full text search**. Jeśli moduł nie jest włączony, okno oferuje trzy działania:
+Moduł Wyszukiwania Pełnotekstowego musi być aktywowany w **Settings → Module → Dashboards & Analytics → Full text search**. Jeśli moduł nie jest włączony, okno oferuje trzy działania:
 
-* **Pomoc (?)** — otwiera dokumentację Wyszukiwania Pełnotekstowego w nowej karcie, zanim zmienisz jakiekolwiek ustawienie.
-* **Przejdź do modułów** — otwiera ustawienia modułu Dashboards & Analytics, aby przejrzeć konfigurację.
-* **Włącz teraz** — otwiera okno subskrypcji. Przejrzyj i potwierdź to okno, zanim moduł zostanie włączony; samo kliknięcie tego przycisku nie włącza modułu.
+* **Help (?)** — otwiera dokumentację Wyszukiwania Pełnotekstowego w nowej karcie, zanim zmienisz jakiekolwiek ustawienie.
+* **Go to Modules** — otwiera ustawienia modułu Dashboards & Analytics, aby przejrzeć konfigurację.
+* **Enable Now** — otwiera okno subskrypcji. Przejrzyj i potwierdź to okno, zanim moduł zostanie włączony; samo kliknięcie tego przycisku nie włącza modułu.
 
 Strona ustawień sama staje się dostępna, gdy moduł jest aktywny.
 
 ## Układ strony
 
-Strona ustawień jest podzielona na trzy zakładki, z których każda obejmuje inny typ treści, który Wyszukiwanie Pełnotekstowe może indeksować.
+Strona ustawień jest podzielona na trzy karty: **Documents**, **ERP** i **Templates**. Każda karta obejmuje inny typ treści, który Wyszukiwanie Pełnotekstowe może indeksować.
 
-### Zakładka „Dokumenty”
+### Karta Documents
 
-Zakładka Dokumenty obejmuje wszystko związane z indeksowaniem przetworzonych dokumentów:
+Karta Documents obejmuje wszystko, co dotyczy indeksowania przetworzonych dokumentów:
 
-* **Statystyki indeksowania** — sumy dokumentów zindeksowanych i oczekujących, odświeżane na żądanie.
-* **Preferencje wektorowe** — trzy przełączniki na poziomie organizacji decydujące, czy indeksowanie wektorowe działa równolegle z indeksem tekstowym dla dokumentów. Indeksowanie wektorowe zasila tryb zapytania `vector:` oraz funkcję „Znajdź podobne”.
-* **Akcje reindeksacji** — rozpocznij pełną lub przyrostową reindeksację. Podczas trwania reindeksacji widzisz postęp na żywo (dokumenty na minutę, szacowany czas), bieżący stan strumienia oraz ostatni błąd (jeśli wystąpił).
-* **Diagnostyka synchronizacji** — diagnostyka na żądanie dla przypadków, gdy indeks wydaje się być niesynchronizowany z bazą dokumentów.
+* **Indexing statistics** — sumy dokumentów zindeksowanych i oczekujących, odświeżane na żądanie.
+* **Vector preferences** — trzy przełączniki na poziomie organizacji, które określają, czy indeksowanie wektorowe działa równolegle z indeksem tekstowym dokumentów. Indeksowanie wektorowe obsługuje tryb zapytania `vector:` oraz funkcję „Find Similar”.
+* **Reindex actions** — uruchamiają pełną lub przyrostową reindeksację. Podczas trwania reindeksacji widoczny jest postęp na żywo (dokumenty na minutę, ETA), bieżący stan strumienia oraz ostatni błąd (jeśli wystąpił).
+* **Sync diagnostics** — diagnostyka na żądanie w przypadkach, gdy indeks wydaje się niespójny z bazą dokumentów.
 
-<mark>Reindeksacja nie jest destrukcyjna — istniejące wyszukiwanie nadal działa, podczas gdy nowy indeks jest budowany.</mark>
+<mark>Reindeksacja nie powoduje utraty danych — istniejące wyszukiwanie działa dalej, podczas gdy nowy indeks jest odbudowywany.</mark>
 
-### Zakładka „ERP”
+### Karta ERP
 
-Zakładka ERP zarządza indeksowaniem danych podstawowych ERP — dostawców, klientów, towarów i podobnych jednostek. Każda jednostka ma własne przełączniki:
+Karta ERP steruje indeksowaniem danych podstawowych ERP — dostawców, klientów, towarów i podobnych encji. Każda encja ma własny przełącznik:
 
-* **Indeksowanie** — indeksuje jednostkę tekstowo, dzięki czemu jest przeszukiwalna z pulpitu.
-* **Wektor** — indeksuje jednostkę wektorowo, dzięki czemu można ją dopasować zapytaniami semantycznymi.
+* **Indexing** — indeksuje encję tekstowo, dzięki czemu można jej szukać w Dashboard.
+* **Vector** — indeksuje encję wektorowo, dzięki czemu można ją dopasować zapytaniami semantycznymi.
 
-Akcja **Przełącz wszystko** u góry listy stosuje ten sam stan włączenia/wyłączenia do wszystkich jednostek na raz. Indeksowanie rusza w tle; wskaźnik w każdym wierszu pokazuje, kiedy trwa.
+Użyj akcji **Toggle all** u góry listy, aby zastosować ten sam stan włączenia lub wyłączenia do wszystkich encji jednocześnie. Indeksowanie uruchamia się w tle; wskaźnik w każdym wierszu pokazuje, kiedy trwa.
 
-### Zakładka „Szablony”
+### Karta Templates
 
-Zakładka Szablony wymienia wersje szablonów znane indeksowi Wyszukiwania Pełnotekstowego. Użyj tego widoku, aby po ponownym wdrożeniu potwierdzić, że wersje szablonów, od których zależysz, są obecne w indeksie.
+Karta Templates wymienia wersje szablonów znane indeksowi Wyszukiwania Pełnotekstowego. Użyj tego widoku, aby po ponownym wdrożeniu potwierdzić, że wersje szablonów, od których zależysz, są obecne w indeksie.
 
 ## Co jest indeksowane
 
-Po włączeniu i skonfigurowaniu Wyszukiwanie Pełnotekstowe pozwala użytkownikom:
+Po włączeniu i skonfigurowaniu Wyszukiwanie Pełnotekstowe umożliwia użytkownikom:
 
-* Wyszukiwać w całej treści dokumentu (nie tylko w polach metadanych).
-* Znajdować dokumenty po tekście zawartym w przesłanych plikach.
-* Używać zaawansowanych operatorów wyszukiwania do precyzyjnych zapytań.
-* Korzystać z wyników wyszukiwania bezpośrednio z pulpitu.
-* Używać wyszukiwania semantycznego (prefiks `vector:`), gdy indeksowanie wektorowe jest aktywne dla danego typu treści.
+* Wyszukiwanie w całej treści dokumentów (nie tylko w polach metadanych).
+* Znajdowanie dokumentów po tekście zawartym w przesłanych plikach.
+* Korzystanie z zaawansowanych operatorów wyszukiwania do precyzyjnych zapytań.
+* Dostęp do wyników wyszukiwania bezpośrednio w Dashboard.
+* Korzystanie z wyszukiwania semantycznego (prefiks `vector:`), gdy indeksowanie wektorowe jest włączone dla danego typu treści.
 
-Pełna referencja języka zapytań — w tym zapytania zakresowe, inteligentne filtry i tryb wyszukiwania AI — znajduje się na stronie modułu [Wyszukiwanie Pełnotekstowe](../document-processing/module/fulltext-search.md).
+Pełną referencję języka zapytań — w tym zapytania zakresowe, inteligentne filtry i tryb wyszukiwania AI — znajdziesz na stronie modułu [Wyszukiwanie Pełnotekstowe](../document-processing/module/fulltext-search.md).

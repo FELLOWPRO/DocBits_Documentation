@@ -317,6 +317,42 @@ if not document_json.get("sub_org_id"):
 
 ---
 
+## set\_group\_is\_hidden()
+
+Hides or shows a whole layout group, for example **Invoice Details**, on the validation screen of one document.
+
+```python
+set_group_is_hidden(document_data, group_name, value)
+```
+
+**Parameters:**
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| `document_data` | `dict` | The `document_data` context object |
+| `group_name` | `str` | Technical name of the group in the layout (e.g., `"invoice_details"`), not its title |
+| `value` | `bool/None` | `True` = hide the group, `False` = show the group, `None` = remove the script setting so the layout decides again |
+
+**Returns:** The `hidden_groups` dictionary of the document (group name → `True`/`False`)
+
+**Example — Show freight details only for freight invoices:**
+
+```python
+doc_type_detail = get_field_value(document_data, "document_type_detail", "")
+if doc_type_detail == "FREIGHT_INVOICE":
+    set_group_is_hidden(document_data, "freight_details", False)
+else:
+    set_group_is_hidden(document_data, "freight_details", True)
+```
+
+**What happens:** The setting is stored on the document, not in the layout, so it only affects this document. It overrides the group's **Is Hidden Group** switch in the Layout Builder: `False` shows a group the layout hides, `True` hides a group the layout shows. A document without a script setting for the group follows the layout. See [Configuring field properties](../../layout-manager/configuring-field-properties.md#hide-a-group).
+
+{% hint style="info" %}
+Hiding a group only changes what the validation screen shows. The fields inside the group keep their values and are still validated and exported. To hide a single field, use [`set_is_hidden()`](#set_is_hidden).
+{% endhint %}
+
+---
+
 ## set\_force\_validation()
 
 Forces manual validation for a field.

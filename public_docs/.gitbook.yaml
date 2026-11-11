@@ -17,7 +17,7 @@ redirects:
     overview-and-basics/other-security-controls: security/other-security-controls.md
     overview-and-basics/two-factor-authentication: security/two-factor-authentication.md
     administration-and-setup/workflow/workflow-execution-model: administration-and-setup/workflow/workflow-execution-model.md
-    administration-and-setup/workflow/status-and-reentry: administration-and-setup/workflow/masterclass/status-and-reentry.md
+    administration-and-setup/workflow/status-and-reentry: administration-and-setup/workflow/workflow-learning-path/status-and-reentry.md
     administration-and-setup/workflow/advanced-workflow-case-study: administration-and-setup/workflow/advanced-workflow-case-study.md
     administration-and-setup/workflow/workflow-training-kit: administration-and-setup/workflow/workflow-training-kit.md
     administration-and-setup/workflow/field-conditions: administration-and-setup/workflow/masterclass/field-conditions.md

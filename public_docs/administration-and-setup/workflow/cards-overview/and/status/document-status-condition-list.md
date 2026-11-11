@@ -11,11 +11,11 @@ This card is designed to control workflow actions based on the current status of
 1. **Operator**
    * **Description**: Determines how the document status will be evaluated against a specified condition.
    * **Options**:
-     * **is**: Triggers the associated actions if the document’s current status matches one of the specified statuses.
-     * **is not**: Triggers the actions if the document’s status does not match any of the specified statuses.
+     * **Is**: Triggers the associated actions if the document’s current status matches one of the specified statuses.
+     * **Is Not**: Triggers the actions if the document’s status does not match any of the specified statuses.
 2. **Status ( List )**
    * **Description**: Lists the specific statuses against which the document’s current status will be compared.
-   * **Examples**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". These represent different stages or conditions a document might be in within a workflow process.
+   * **Statuses you can choose**: Error, Export Error, Finished, Rejected, Ready for review, Ready for validation, Pending Approval, Pending second approval, Exported and VERTEX TAX REJECTED. You can select several.
 
 **Functionality**
 
@@ -42,8 +42,8 @@ The "Document Status Condition" workflow card is vital for ensuring that documen
 
 ### Status-list example
 
-**Configuration:** Choose the operator that requires the current status to be inside the list. Select `Pending Approval` and `Pending Second Approval` in the status list.
+**Configuration:** Choose the operator that requires the current status to be inside the list. Select `Pending Approval` and `Pending second approval` in the status list.
 
-**Expected result and counterexample:** The condition is true for a document with either selected status. It is false for a document with status `Ready in Validation`. With the operator that requires the status to be outside the list, these condition results reverse. Inspect the actual list rather than comparing a comma-separated free-text value.
+**Expected result and counterexample:** The condition is true for a document with either selected status. It is false for a document with status `Ready for validation`. With the operator that requires the status to be outside the list, these condition results reverse. Inspect the actual list rather than comparing a comma-separated free-text value.
 
 This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.

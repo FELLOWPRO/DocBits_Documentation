@@ -6,58 +6,65 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_staus_change_v3.png" alt="Workflow card Status: Change Status to Status, trigger Workflows, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
-## **Purpose:**
+## Purpose
 
-The **"Change Status"** workflow card is used to change the status of a document to one of the predefined states—**Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval**—and optionally trigger associated workflows based on the status change. This card automates the process of status updates and workflow triggers, ensuring efficient document management and error handling.
+The **Change Status to** card sets the document to a new status, for example to send it on to approval or to mark it as rejected. You find it in the workflow designer under **Then → Status**.
 
-## **Components of the Card:**
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/en.mp4" %}
 
-1. **Status**
-   * **Description**: Specifies the new status to be applied to the document.
-   * **Options**:
-     * **Error**: Marks the document as having encountered an error.
-     * **Rejected**: Indicates the document has been rejected and will not proceed further.
-     * **Ready for Validation**: Sets the document to be reviewed and validated by the next user or system process.
-     * **Pending Approval**: Places the document in a pending state for approval.
-     * **Pending Second Approval**: Puts the document on hold for a second level of approval if applicable.
-2. **Trigger Workflows**
-   * **Description**: Determines whether any subsequent workflows should be triggered after the status change.
-   * **Options**:
-     * **True**: Initiates any relevant workflows based on the status change.
-     * **False**: Prevents workflow execution after the status change.
+**Video:** Change status card and loop prevention · 0:44 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/en.vtt)
 
-## **Functionality:**
+## Settings
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"When"** and **"And."** If these conditions are true, the card proceeds to change the document's status to the selected value.
-* **Status Update**: Once the conditions are satisfied, the document's status is updated to one of the predefined options (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), depending on the user’s selection.
-* **Trigger Workflow Action**: If **Trigger Workflows** is set to **True**, the system automatically initiates any associated workflows following the status update. If set to **False**, no additional workflows are triggered, and the process ends with the status change.
+### Status
 
-## **Setup and Configuration:**
+The status the document gets. You can choose:
 
-To configure this card, users need to:
+| Status | Meaning |
+| --- | --- |
+| **Error** | The document is marked as having an error. |
+| **Rejected** | The document is rejected. |
+| **Ready for validation** | The document waits for a user to check it in validation. |
+| **Pending Approval** | The document waits for approval. |
+| **Pending second approval** | The document waits for the second approval. |
+| **Archived** | The document is moved to the archive. When it is restored, it gets its previous status back. |
+| **Finished** | Processing of the document is complete. |
+| **Exported** | The document has been exported but stays open, for example so that it can still be sent back for approval. |
 
-1. Specify the desired **Status** that the document will be set to upon condition evaluation (Error, Rejected, Ready for Validation, Pending Approval, or Pending Second Approval).
-2. Choose whether to **Trigger Workflows** after the status change by selecting **True** or **False**.
-3. The card only executes its action if both conditions in the **"When"** and **"And"** are evaluated as true.
+Setting a status does not carry out the step behind it. For example, **Pending second approval** does not mean that someone gave the first approval.
 
-## **Conclusion:**
+### Trigger Workflows (version 3 only)
 
-The **"Change Status"** workflow card offers a streamlined approach to managing document statuses and triggering related workflows. It ensures documents are automatically routed to the correct status and that the necessary actions are taken, depending on the status change. By setting clear conditions for execution, it reduces manual effort and enhances workflow efficiency.
+Decides whether the status change may start workflows.
 
-<!-- workflow-card-practical-example-20261021 -->
+* **false:** no workflow is started by this status change. Use this unless another workflow should continue with the document in its new status.
+* **true:** DocBits starts the workflows whose conditions match the document in its new status. They start after the current workflow has finished. The card does not wait for them and does not show whether they succeeded; see the workflow logs.
 
-## Practical example
+Always choose a value. With **true**, make sure the workflow that contains this card does not match the new status itself, or it runs a second time. See [Change status without restarting your workflow](../../../workflow-learning-path/status-and-reentry.md).
 
-**When to use:** Move a checked document to the approval step.
+## Card versions
 
-**Where:** Standard workflow designer → Then → Status → Change Status to.
+| Version | Settings | Starts workflows after the change |
+| --- | --- | --- |
+| **1** | Status | Yes, always |
+| **2** | Status | Yes, always |
+| **3** | Status, Trigger Workflows | Only with **Trigger Workflows** = **true** |
 
-**Configuration:** Select version 3 of `staus_change`, choose Pending Approval (`validated_pending_approval`) and set workflow triggering to `false` (`trigger_docflow=false`). Use an isolated synthetic invoice whose preceding checks are satisfied.
+Versions 1 and 2 work the same way. Version 3 adds **Trigger Workflows**, so you can decide whether the new status starts other workflows. Use version 3 for new workflows. If you switch an existing card from version 3 back to an older version, **Trigger Workflows** no longer applies and every status change can start workflows again.
 
-**Expected result and counterexample:** An allowed, successful update places the document in the selected status. If a preceding condition is false, this action is not reached and makes no status change. A refused or failed API update is not success: inspect the actual status and logs. This card does not itself perform an export.
+## Good to know
 
-### Card versions
+* **Same status, no effect.** If the document already has the chosen status, nothing changes and no workflow starts.
+* **Archived never starts workflows**, in any version.
+* **Webhooks are not affected.** Webhooks for status changes are sent whatever you choose for **Trigger Workflows**.
+* **A change can be refused.** If your organization locks finished documents, a **Finished** document can only be moved to **Archived** or **Error**. Any other change is refused, the status stays as it was, and the workflow log shows an error.
+* **Tests only simulate.** In a card test or Advanced Test in the workflow designer, the following cards see the new status, but the status is not saved and no workflow is started.
 
-The explicit workflow-triggering switch is available in v3. Versions 1 and 2 do not expose it; their legacy update call uses the default workflow-triggering behavior. Do not assume a v3 `false` setting applies after switching to an older card version.
+## Example
 
-This is a source-reviewed configuration and expected result. No workflow or status update was executed.
+**Goal:** after the checks, send an invoice to approval.
+
+1. Conditions: **Document type** is _Invoice_ and **Document status** **Is** **Ready for validation**.
+2. **Change Status to** (version 3): **Status** = **Pending Approval**, **Trigger Workflows** = **false**.
+
+**Result:** the invoice moves to **Pending Approval** and waits for approval. No other workflow is started by the change, and this workflow does not run again because the document is no longer **Ready for validation**.

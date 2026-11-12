@@ -47,7 +47,7 @@ Sept niveaux vous mènent du premier regard sur le concepteur de workflows jusqu
 **Objectif:** Mener une règle du concepteur jusqu’à un résultat vérifié, sans toucher à un document.
 
 1. Construisez-la dans l’Advanced Builder : When Invoice → And invoice\_id = WF-TRAINING-001 → And total\_amount > 1000 → Then wf\_training\_route = REVIEW. Une règle linéaire de cette taille n’a pas besoin de nœud de contrôle.
-2. Enregistrez-la, puis vérifiez dans la liste des règles qu’elle est encore inactive, car enregistrer une nouvelle règle peut déjà l’activer. Advanced Test est une surface d’exécution distincte : il évalue le graphe du constructeur, pas la règle activée.
+2. Enregistrez-la, puis vérifiez dans la liste des règles qu’elle est encore inactive, car enregistrer une nouvelle règle peut déjà l’activer. Advanced Test est un mode de test à part : il vérifie le graphe tel qu’il est construit, pas la règle activée.
 3. Lancez Advanced Test avec des données complètes pour 999, 1000 et 1000.01. Notez pour chaque cas le type de champ, l’opérateur et la sortie retenue, puis ajoutez un cas où le montant manque complètement.
 
 **Critère de fin:** REVIEW n’est atteint qu’avec 1000.01, un montant absent apparaît comme une erreur et non comme un résultat ordinaire sous le seuil, et la règle est de nouveau désactivée à la fin.
@@ -68,7 +68,7 @@ Sept niveaux vous mènent du premier regard sur le concepteur de workflows jusqu
 
 **Critère de fin:** Vous expliquez vrai, faux et erreur à partir de la valeur, du type, de la référence et des données présentes. Dans la version 5 de la carte de commande, un document sans ligne comparable est une erreur de données et non une approbation réussie.
 
-**Pour aller plus loin:** [P1 : Field is, Docfield is et comparer deux champs](masterclass/field-conditions.md) · [P1 : Rendre les tolérances et la référence de commande non ambiguës](masterclass/tolerances-and-po.md)
+**Pour aller plus loin:** [Field is, Docfield is et comparer deux champs](masterclass/field-conditions.md) · [Rendre les tolérances et la référence de commande non ambiguës](masterclass/tolerances-and-po.md)
 
 ## 4. Règles métier et approbations <a href="#level-4" id="level-4"></a>
 
@@ -92,7 +92,7 @@ Sept niveaux vous mènent du premier regard sur le concepteur de workflows jusqu
 
 **Critère de fin:** Vous distinguez responsabilité, tâche, notification et approbation réelle ; A → approbation → B → approbation s’est produit dans cet ordre ; un refus de A a empêché l’export ; et un destinataire manquant n’a pas été compté comme une approbation terminée.
 
-**Pour aller plus loin:** [P1 : Suivre la table de décision jusqu’à l’affectation](masterclass/decision-table-routing.md) · [P1 : Distinguer affectation, tâche et approbation séquentielle](masterclass/assignment-task-sequential.md)
+**Pour aller plus loin:** [Suivre la table de décision jusqu’à l’affectation](masterclass/decision-table-routing.md) · [Distinguer affectation, tâche et approbation séquentielle](masterclass/assignment-task-sequential.md)
 
 ## 5. Contrôle Advanced et sous-workflows <a href="#level-5" id="level-5"></a>
 
@@ -108,7 +108,7 @@ Sept niveaux vous mènent du premier regard sur le concepteur de workflows jusqu
 
 **Critère de fin:** Vous expliquez la différence du cas MERGE-04 entre test et exécution de l’étape 2, la façon dont les sources sont comptées et où va une erreur. Un appel Run Workflow au vert exige tout de même une vérification dans la cible. V2 désigne ici la deuxième version du graphe de l’étude de cas : la carte de statut de chaque chemin mène directement à la carte de clôture commune, sans nœud OR en attente.
 
-**Pour aller plus loin:** [P0 : Bien connecter Wait ALL, Wait ANY et OR](masterclass/control-nodes.md) · [P0 : Comprendre Run Workflow, les conditions de cible et les erreurs](masterclass/run-workflow.md) · [Cas métier Advanced : routage des factures](advanced-workflow-case-study.md)
+**Pour aller plus loin:** [Bien connecter Wait ALL, Wait ANY et OR](masterclass/control-nodes.md) · [Comprendre Run Workflow, les conditions de cible et les erreurs](masterclass/run-workflow.md) · [Cas métier Advanced : routage des factures](advanced-workflow-case-study.md)
 
 ## 6. Calcul, intégration et export <a href="#level-6" id="level-6"></a>
 
@@ -119,12 +119,12 @@ Sept niveaux vous mènent du premier regard sur le concepteur de workflows jusqu
 **Objectif:** Calculer des valeurs, récupérer un résultat depuis un système externe et exporter seulement après une approbation réelle.
 
 1. Calculez une colonne et comparez tout le tableau avant et après, y compris une ligne où l’expression régulière ne correspond pas et une division par zéro.
-2. Écrivez le contrat de réécriture avec le système externe : quel champ du document reprend le résultat, quelle carte ou extension l’y écrit, et comment vous vérifiez ensuite la valeur enregistrée. Un HTTP 200 seul n’est pas un résultat.
+2. Précisez avec le système externe comment la réponse externe est enregistrée dans un champ : quel champ du document reçoit le résultat de cette réponse, quelle carte ou extension l’y enregistre, et comment vous vérifiez ensuite la valeur enregistrée. Un HTTP 200 seul n’est pas un résultat.
 3. Prévoyez l’export après approbation avec votre propre configuration et notez ce que vous allez vérifier chez le destinataire.
 
 **Critère de fin:** Les valeurs suivantes dans le champ, la réception chez le destinataire et le traitement dans l’ERP ont chacun leur propre preuve. Une simulation ou un export mis en file n’est pas une livraison.
 
-**Pour aller plus loin:** [P1 : Calculer des tableaux et vérifier la dépendance à la regex](masterclass/table-calculations.md) · [P1 : Vérifier l’appel API et la réutilisation de la réponse](masterclass/api-response-contract.md) · [P1 : Variantes d’export, tâches ouvertes et statut de clôture](masterclass/export-lifecycle.md)
+**Pour aller plus loin:** [Calculer des tableaux et vérifier la dépendance à la regex](masterclass/table-calculations.md) · [Vérifier l’appel API et la réutilisation de la réponse](masterclass/api-response-contract.md) · [Variantes d’export, tâches ouvertes et statut de clôture](masterclass/export-lifecycle.md)
 
 ## 7. Gestion des changements et exploitation experte <a href="#level-7" id="level-7"></a>
 

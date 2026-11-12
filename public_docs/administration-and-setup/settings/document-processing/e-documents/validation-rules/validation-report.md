@@ -6,7 +6,7 @@ This page is for people who process invoices. Administrators set up the rules on
 
 ## When a document gets an error
 
-If validation is **on** and **blocking** for the document type, an invoice with a blocking finding gets the status **Error**. Open the document from the dashboard. The error view shows the XML on the left and the reason on the right.
+If validation is **on** and **blocking** for the document type, an invoice with a blocking finding gets the status **Error**. An invoice that the validator itself rejected carries the dedicated e-invoice validation status instead, see [The error screen for a rejected e-invoice](validation-error-screen.md). Open the document from the dashboard. The error view shows the XML on the left and the reason on the right.
 
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view.png" alt="The error view: the XML of the invoice and the first blocking finding with a next step. Example invoice with fictional names."><figcaption><p>The error view: the XML of the invoice and the first blocking finding with a next step. Example invoice with fictional names.</p></figcaption></figure>
 
@@ -28,6 +28,8 @@ The report starts with the facts about the file:
 | **Number / date**           | The invoice number and the invoice date, read from the XML.       |
 
 Below the file data you see the **verdict**, for example **Not conformant**, with the number of errors, warnings and information messages. If your organisation changed the severity of a rule, a second line **Organisation severity** shows the counts after your organisation's settings.
+
+> The verdict reads **Rejected** instead of a conformance word when the document was rejected in the e-invoice validation, and the verdict then carries a cancel icon. The next step points to the error list. A report whose result cannot be read never shows the invoice as conformant.
 
 ### Result per level
 

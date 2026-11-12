@@ -4,9 +4,9 @@ Het **Workflow-dashboard** is het startpunt van het workflowgedeelte. Het laat z
 
 De deelweergaven hieronder tonen de volumemetrieken, het resultaat van de uitvoeringen en de grafiek van de uitvoeringen. Recente activiteit en de navigatieknoppen vallen buiten deze uitsneden.
 
-<figure><img src="../../.gitbook/assets/workflow-kpi-volume-nl-20261112.png" alt="Volumemetrieken: vandaag uitgevoerde werkprocessen, in de gekozen periode aangemaakte workflows en het totale aantal runs."><figcaption><p>Volumemetrieken: vandaag uitgevoerde werkprocessen, in de gekozen periode aangemaakte workflows en het totale aantal runs.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-kpi-volume-nl-20261112.png" alt="Volumemetrieken: vandaag uitgevoerde werkprocessen, in de gekozen periode aangemaakte workflows en het totale aantal runs over meer dan 31 dagen."><figcaption><p>Volumemetrieken: vandaag uitgevoerde werkprocessen, in de gekozen periode aangemaakte workflows en het totale aantal runs over meer dan 31 dagen.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/workflow-kpi-outcomes-nl-20261112.png" alt="Resultaat van de uitvoeringen: succesvolle runs, succespercentage en faalpercentage, met het getoonde aantal runs als context."><figcaption><p>Resultaat van de uitvoeringen: succesvolle runs, succespercentage en faalpercentage, met het getoonde aantal runs als context.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-kpi-outcomes-nl-20261112.png" alt="Resultaat van de uitvoeringen: succesvolle runs van het totale aantal, succespercentage en faalpercentage, elk met een statuslabel en gebaseerd op het getoonde totale aantal runs."><figcaption><p>Resultaat van de uitvoeringen: succesvolle runs van het totale aantal, succespercentage en faalpercentage, elk met een statuslabel en gebaseerd op het getoonde totale aantal runs.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/workflow-chart-nl-20261112.png" alt="Werkstroomuitvoeringen over de zeven getoonde maanden, met de reeksen Succes en Mislukt apart weergegeven."><figcaption><p>Werkstroomuitvoeringen over de zeven getoonde maanden, met de reeksen Succes en Mislukt apart weergegeven.</p></figcaption></figure>
 

@@ -1,24 +1,72 @@
 ---
-description: "P1: jawna podstawa tolerancji i kierunek porównania PO"
+description: "Jednoznaczny punkt odniesienia tolerancji i porównania PO"
 ---
 
-# P1: jawna podstawa tolerancji i kierunek porównania PO
+# P1: Jednoznaczny punkt odniesienia tolerancji i porównania PO
 
-Tolerancja procentowa zależy od **strony odniesienia**. W sprawdzonej karcie PO v5 `document_po` porównuje dokument z zamówieniem; zamówienie jest podstawą procentu. `po_document` odwraca porównanie i podstawę. Sześć dozwolonych kierunków obejmuje też wartość otrzymaną. Jawnie wybierz kierunek, operator oraz Any/All.
+Tolerancja 2 procent to nie stała kwota. To 2 procent strony, z którą porównujesz, dlatego ta sama pozycja faktury może nie przejść w jednym kierunku, a przejść w drugim. Ta strona pokazuje to na jednej parze wartości, daje trzy ćwiczenia do odtworzenia, a następnie wymienia sześć kierunków porównania i parametry kart, które możesz przenieść do własnego testu.
 
-Przykład: zamówienie 100, dokument 102.02, równość z tolerancją 2 %. Przy odniesieniu do zamówienia przedział wynosi 98–102: poza nim. Przy odniesieniu do dokumentu wynosi 99.9796–104.0604: zamówienie 100 mieści się. Dokument 102 leży dokładnie na włączonej górnej granicy pierwszego kierunku. Tolerancja bezwzględna 2 używa jednostki porównywanej wartości.
+Ćwiczenia wykonaj w Advanced Test, we własnej organizacji testowej, na dokumencie syntetycznym i powiązanym zamówieniu.
 
-Karta normalizuje ceny na jednostkę cenową i używa danych zamówienia lub odbioru zależnie od kierunku. Sprawdź dopasowanie, ilości i jednostki. Any wymaga jednego zgodnego porównania; All wszystkich faktycznie wykonanych porównań. **Brak porównywalnej pozycji** to w v5 błąd danych, a nie automatycznie spełnione All. Licz osobno niedopasowane wiersze.
+## Strona odniesienia jest podstawą
 
-W istniejących workflow ponownie odczytaj zapisaną wersję, kierunek i operator: migracje zmieniały ustawienia. Stare etykiety nie wystarczą do odbioru. Zapisz wartości, podstawę, granicę, najmniejsze przekroczenie, precyzję, brak zamówienia i niedopasowaną pozycję. Przykład nie zastępuje odbioru z własnymi danymi PO.
+W badanej karcie PO w wersji 5 `document_po` porównuje wartość dokumentu z wartością zamówienia, więc to zamówienie jest podstawą tolerancji procentowej. `po_document` odwraca zarówno porównanie, jak i podstawę. Sześć dozwolonych kierunków obejmuje także stronę odebraną. Ustawiaj kierunek, operator i Any/All wprost, zamiast polegać na tym, co jeszcze zawiera zapisana karta.
+
+## Ćwiczenie 1: te same wartości, dwa kierunki
+
+**Cel:** zobaczyć, jak z tych samych liczb powstają dwa różne wyniki.
+
+1. Przygotuj powiązane zamówienie na `100` i cenę jednostkową w dokumencie `102.02`.
+2. Porównaj operatorem `eq` i tolerancją `2` procent, najpierw z `document_po`. Oczekuj `false`: 2 procent ze 100 to 2, więc przedział domknięty biegnie od 98 do 102, a 102.02 leży 0.02 powyżej.
+3. Powtórz ten sam przypadek z `po_document`. Oczekuj `true`: 2 procent ze 102.02 to 2.0404, przedział biegnie od 99.9796 do 104.0604, a wartość zamówienia 100 mieści się w nim.
+
+**Gotowe, gdy:** oba wyniki i oba przedziały są zapisane, a dla każdego kierunku potrafisz wskazać, z której wartości obliczono procent.
+
+Tolerancja bezwzględna `2` zachowuje się inaczej: używa jednostki porównywanej wartości i nie przesuwa się wraz z odniesieniem.
+
+## Ćwiczenie 2: znaleźć dokładną granicę
+
+**Cel:** wiedzieć, czy brzeg przedziału się liczy.
+
+1. Zachowaj `document_po`, `eq` i tolerancję 2 procent, a wartość dokumentu zmień na `102`.
+2. Uruchom przypadek, a potem jeszcze raz z `102.01`.
+
+**Gotowe, gdy:** `102` zwróci `true`, a `102.01` zwróci `false`. Granica jest włączona: 102 leży dokładnie na górnej granicy przedziału od 98 do 102.
+
+## Ćwiczenie 3: Any, All i porównane pozycje
+
+**Cel:** wiedzieć, co karta robi z wieloma pozycjami i co się dzieje, gdy nie ma czego porównywać.
+
+1. Zbuduj dokument z dwiema pozycjami wobec tego samego powiązanego zamówienia: jedną w tolerancji i jedną poza nią.
+2. Uruchom kartę z `match_any`, a następnie z `match_all`.
+3. Uruchom dokument, który nie ma żadnej porównywalnej pozycji.
+
+**Gotowe, gdy:** `match_any` przechodzi na jednej pasującej pozycji, `match_all` zawodzi, gdy zawiedzie choć jedno porównanie, a dokument bez porównywalnej pozycji zwraca błąd danych. W wersji 5 to błąd, a nie automatycznie spełnione All.
+
+## Która strona jest podstawą?
+
+| Zapisana opcja | Porównywana strona | Strona odniesienia (podstawa procentowa) |
+| --- | --- | --- |
+| `po_document` | Zamówienie | Dokument |
+| `received_document` | Odebrane dane | Dokument |
+| `po_received` | Zamówienie | Odebrane dane |
+| `document_po` | Dokument | Zamówienie |
+| `document_received` | Dokument | Odebrane dane |
+| `received_po` | Odebrane dane | Zamówienie |
+
+## Sprawdź, zanim zaufasz istniejącemu workflow
+
+Karta normalizuje ceny na jednostkę ceny i w zależności od kierunku używa danych zamówienia lub odbioru, dlatego najpierw sprawdź powiązanie, ilości i jednostki. Any potrzebuje jednego pasującego porównania, All każdego faktycznie wykonanego. Pozycje niepowiązane ujmuj osobno.
+
+W istniejących workflow odczytaj ponownie zapisaną wersję, kierunek i operator: migracje zmieniały ustawienia porównania, więc historyczne etykiety nie są wystarczającym dowodem odbioru. Zapisz wartości i odniesienie, dokładną granicę, najmniejsze przekroczenie, precyzję zaokrąglenia, brakujące zamówienie i niepowiązaną pozycję. To wyliczenie nie zastępuje odbioru na własnych danych podstawowych PO.
 
 ## Karty i przykładowe parametry
 
-Wartości opisują parametry kart, a nie pełny workflow do importu. Zastąp YOUR_* własnymi wyborami testowymi. Projektant zarządza ukrytym ID wywołującego. Katalog: Dev, DocFlow 2.10.38, 21 października 2026; osobno sprawdź wersje i uprawnienia swojej organizacji.
+Te wartości opisują parametry pojedynczych kart, a nie kompletny workflow do importu. Zastąp YOUR\_\* własnymi wyborami testowymi. Ukrytym identyfikatorem wywołującego zarządza projektant. Katalog: Dev, DocFlow 2.10.38, 21 października 2026; dostępne wersje i uprawnienia sprawdź we własnej organizacji.
 
 ### `condition_docfield_operator_docfield_tolerances` · v2
 
-Identyfikacja: `d0472648-d1a2-499d-83e3-b47306ae130a`
+Tożsamość: `d0472648-d1a2-499d-83e3-b47306ae130a`
 
 | Parametr | Typ / opcje | Przykład |
 | --- | --- | --- |
@@ -30,7 +78,7 @@ Identyfikacja: `d0472648-d1a2-499d-83e3-b47306ae130a`
 
 ### `condition_doc_to_po_unit_price` · v5
 
-Identyfikacja: `ed2cd0fe-ac87-4bae-9a86-0b0576159b28`
+Tożsamość: `ed2cd0fe-ac87-4bae-9a86-0b0576159b28`
 
 | Parametr | Typ / opcje | Przykład |
 | --- | --- | --- |
@@ -42,16 +90,16 @@ Identyfikacja: `ed2cd0fe-ac87-4bae-9a86-0b0576159b28`
 
 ## Biznesowe przypadki testowe
 
-| Przypadek | Wejście / konfiguracja | Oczekiwany wynik |
+| Przypadek | Wejście / układ | Oczekiwany wynik |
 | --- | --- | --- |
-| PO-01 | document_po; PO=100; DOC=102; eq; 2 percent | true |
-| PO-02 | document_po; PO=100; DOC=102.02; eq; 2 percent | false |
-| PO-03 | po_document; PO=100; DOC=102.02; eq; 2 percent | true |
-| PO-04 | compared_rows=0 | błąd danych |
-| PO-05 | unmatched_rows>0 | sprawdź pokrycie osobno |
+| PO-01 | document\_po; PO=100; DOC=102; eq; 2 percent | true |
+| PO-02 | document\_po; PO=100; DOC=102.02; eq; 2 percent | false |
+| PO-03 | po\_document; PO=100; DOC=102.02; eq; 2 percent | true |
+| PO-04 | compared\_rows=0 | błąd danych |
+| PO-05 | unmatched\_rows>0 | sprawdź pokrycie osobno |
 
 ## Dowody i ograniczenia
 
-Parametry i zachowanie porównano z katalogiem Dev oraz sprawdzonym kodem. Przypadki biznesowe są instrukcją odbioru. W tym rozdziale nie wykonano osobistych zatwierdzeń, rzeczywistych zmian ani dostarczeń.
+Parametry i zachowanie sprawdzono wobec katalogu Dev oraz badanej wersji kodu. Biznesowe przypadki testowe są procedurą odbioru. W tym rozdziale nie wykonano osobistych zatwierdzeń, zmian prawdziwych danych ani dostarczenia.
 
 [Dalsza nauka](../workflow-learning-path.md) · [Pakiet ćwiczeń](../workflow-training-kit.md)

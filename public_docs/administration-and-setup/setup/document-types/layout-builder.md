@@ -1,51 +1,60 @@
-# Construtor de Layouts
+# Construtor de Layout
 
-Utilize o Construtor de Layouts para organizar os campos e os controlos apresentados durante a validação ou aprovação de um documento. Cada layout está associado a um tipo de documento, uma origem e um tipo de layout. Antes de guardar alterações, confirme qual é o layout aberto.
+Use o **Construtor de Layout** para organizar os campos e os controlos que as pessoas veem quando validam ou aprovam um documento. Cada layout pertence a um tipo de documento, uma origem e um tipo de layout, por isso confirme os três na parte superior da página antes de guardar.
 
 ## Abrir o layout
 
 1. Abra **Configurações → Tipos de documentos**.
-2. Abra o Construtor de Layouts do tipo ou subtipo de documento pretendido. Se não estiver disponível, poderá ser necessário que um administrador ative o módulo para a sua organização.
-3. Confirme a origem selecionada na barra de ações e o tipo de editor indicado ao lado.
+2. Selecione o tipo de documento que quer editar e abra o **Construtor de Layout**. Para um subtipo de documento, abra a ação **Construtor de Layout** desse subtipo.
+3. Confirme a barra superior. À esquerda está o nome do layout, que pode mudar com o lápis; ao lado seguem-se o **Tipo de documento** e o **Tipo de layout**. Cada seletor abre uma lista e, ao escolher outra entrada, o DocBits carrega esse layout. Se o Construtor de Layout não estiver disponível, um administrador poderá ter de ativar o módulo para a sua organização.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-current-pt.png" alt="Vista parcial do editor: as secções Grupos, Campos e Elementos de formulário à esquerda e um exemplo simplificado de layout de fatura ao centro."><figcaption><p>Vista parcial do editor: as secções Grupos, Campos e Elementos de formulário à esquerda e um exemplo simplificado de layout de fatura ao centro.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-structure-tab-pt.png" alt="Construtor de Layout com o separador Estrutura aberto: a árvore de grupos expandida em Delivery Details com o campo Supplier ID selecionado, o layout da Fatura no canvas e o painel Propriedades à direita"><figcaption><p>A barra superior, as listas de elementos à esquerda, o canvas ao centro e o painel Propriedades à direita.</p></figcaption></figure>
 
-Ao mudar **Origem**, o DocBits pode criar um layout independente para essa origem. Confirme a origem antes de editar.
+## Trabalhar com a barra superior
 
-## Conhecer as áreas do editor
+* **Tipo de documento** e **Tipo de layout** mudam de layout: a página carrega o layout que escolher.
+* Junto a **Salvar**, o DocBits indica se o layout tem **Alterações não salvas** e, depois de guardar, mostra quando o layout foi guardado pela última vez.
+* **Salvar** guarda o layout para o tipo de documento, a origem e o tipo de layout selecionados.
+* O menu de três pontos reúne as restantes ações do layout: **Gerar modelo automaticamente**, **Editar JSON**, **Copiar JSON** e **Configurações de layout**. **Gerar modelo automaticamente** substitui o layout existente, por isso confirme primeiro qual layout está aberto. **Editar JSON** destina-se a configuração avançada e só deve ser usado se conhecer o formato do modelo.
+* Se sair da página com alterações não guardadas, o DocBits pergunta se as quer guardar ou descartar.
 
-À esquerda pode alternar entre **Elementos**, **Propriedades** e a configuração geral, representada por uma roda dentada.
+<figure><img src="../../../.gitbook/assets/layout-builder-save-more-menu-pt.png" alt="Menu de três pontos do Construtor de Layout com as entradas Gerar modelo automaticamente, Editar JSON, Copiar JSON e Configurações de layout"><figcaption><p>O menu de três pontos reúne as restantes ações do layout.</p></figcaption></figure>
 
-* O separador **Elementos** contém as secções **Grupos**, **Campos** e **Elementos de formulário**. Abra cada secção para consultar os grupos, campos e controlos disponíveis.
-* A área central mostra os grupos e campos do layout. Os grupos permitem organizar campos relacionados.
-* À direita encontra-se a vista do documento de exemplo, onde pode consultar o documento e ajustar o zoom.
+## Encontrar elementos: Estrutura, Campos, Elementos
 
-Arraste um elemento da secção correspondente à esquerda para a área do layout para adicionar um grupo, um campo ou um controlo de formulário.
+O painel à esquerda tem três separadores:
 
-<figure><img src="../../../.gitbook/assets/layout-builder-fields-current-pt.png" alt="Os campos Número da fatura e Data do grupo de exemplo. Neste layout, cada campo ocupa 50 % da largura do grupo."><figcaption><p>Os campos Número da fatura e Data do grupo de exemplo. Neste layout, cada campo ocupa 50 % da largura do grupo.</p></figcaption></figure>
+| Separador | Serve para |
+| --- | --- |
+| **Estrutura** | Ver o layout como uma árvore. Os grupos e os seus campos aparecem na ordem em que estão no canvas, com o número de campos colocados e disponíveis. |
+| **Campos** | Todos os campos configurados para o tipo de documento, agrupados por grupo de campos e recolhidos por predefinição. Os três botões de filtro alternam entre todos os campos, apenas os não utilizados e apenas os ocultos, e o nome técnico do campo aparece no painel **Propriedades**. |
+| **Elementos** | Controlos de apresentação e interação, como Text, Label, Check Box, separadores horizontais, tabelas, botões e Sub Group. |
 
-Configure os campos reutilizáveis em [Tipos de documentos](README.md). Os campos disponíveis dependem do tipo de documento selecionado e da respetiva configuração.
+<figure><img src="../../../.gitbook/assets/layout-builder-fields-tab-pt.png" alt="Separador Campos do Construtor de Layout com os três botões de filtro em ícone, o grupo INVOICE DETAIL aberto com o contador 4/14 e os campos já colocados, a cinzento e com visto"><figcaption><p>O separador Campos: filtre os campos e veja quais já estão colocados no layout.</p></figcaption></figure>
+
+Selecione um item para o adicionar, ou arraste-o para o canvas. O título de um grupo indica à pessoa que valida o documento o que pertence a essa secção. Crie ou renomeie campos de documento reutilizáveis em [Tipos de documentos](README.md) primeiro.
+
+## Trabalhar no canvas
+
+* **Layout principal** mostra o layout do próprio documento. **Tabela** mostra o layout da tabela usado para os artigos.
+* **Documento** abre ou fecha o documento de exemplo ao lado do canvas, para comparar o layout com um documento real.
+* Os grupos aparecem como cartões; os campos dentro de um grupo podem ser organizados em linhas e receber larguras diferentes.
 
 ## Alterar as propriedades de um elemento
 
-Selecione um grupo ou campo na área do layout e abra **Propriedades** à esquerda. As opções dependem do elemento selecionado e incluem, por exemplo, o rótulo, o nome técnico, a largura e o comportamento.
+Selecione um elemento ou um grupo no canvas. O painel **Propriedades**, à direita, está sempre visível e organiza as definições em secções:
 
-<figure><img src="../../../.gitbook/assets/layout-builder-properties-current-pt.png" alt="Propriedades do campo selecionado: o rótulo, o nome técnico e a largura do elemento em percentagem."><figcaption><p>Propriedades do campo selecionado: o rótulo, o nome técnico e a largura do elemento em percentagem.</p></figcaption></figure>
+* **Mostrar** – rótulo, nome do campo, posição do rótulo e a **Largura do elemento em porcentagem**.
+* **Comportamento** – somente leitura, escondido e índice de guias.
+* **Valores e listas** – os valores oferecidos para o elemento.
+* **Automação** – regras que preenchem ou alteram o elemento.
 
-Nos campos predefinidos, o rótulo e o nome técnico podem não ser editáveis. Dependendo do tipo de elemento, também pode configurar o modo de apenas leitura, a visibilidade, a ordem de tabulação, listas de valores e a execução de um fluxo de trabalho ou script quando o valor mudar. As opções de grupos e campos são diferentes.
-
-Confirme o resultado na área do layout depois de alterar as propriedades. A largura é introduzida como percentagem através de um controlo numérico; os grupos e os respetivos campos podem ter larguras diferentes. Consulte [Configurar propriedades dos campos](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
-
-## Modelos e JSON
-
-Além de guardar o layout, a barra de ações oferece funções para gerar um modelo, aplicar o layout predefinido aos layouts por origem, usar o modelo predefinido e editar JSON. A disponibilidade depende do editor aberto.
-
-Gerar ou aplicar um modelo pode substituir o layout personalizado. Confirme primeiro o tipo de documento, a origem e o layout atual. **Editar JSON** destina-se à configuração avançada e exige conhecer o formato do modelo. A cópia da configuração está disponível dentro do diálogo JSON.
+Para a largura, escolha um dos valores predefinidos (25, 33, 50, 66, 75 ou 100 por cento) em vez de escrever um valor, e confirme o resultado no canvas. As secções e opções que aparecem dependem do elemento selecionado. Para mais detalhe, veja [Configurar propriedades dos campos](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
 
 ## Rever e guardar
 
-Organize os grupos e os campos e confirme o resultado na área do layout. Quando estiver correto, utilize **Salvar** na barra de ações. Para layouts específicos de uma origem, consulte [Layouts de origem](origin-layouts.md).
+Organize os grupos e os campos, confirme o layout no canvas e use **Salvar** na barra superior quando o resultado estiver correto. Para layouts específicos de uma origem, veja [Layouts por origem](origin-layouts.md).
 
 {% hint style="info" %}
-As ilustrações utilizam um exemplo simplificado de layout de fatura. Os nomes dos campos e as opções disponíveis dependem da sua configuração.
+As capturas de ecrã mostram definições sintéticas na organização de teste do DocBits, com a interface em português. Nenhum layout foi guardado ou substituído.
 {% endhint %}

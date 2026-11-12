@@ -7,10 +7,20 @@ Los ajustes de **Procesamiento de documentos** determinan cómo DocBits lee, enr
 * [Cálculo de fecha de vencimiento](due-date-calculation.md): cómo se calculan las fechas de vencimiento.
 * [Exportar](export.md): adónde y cómo se exportan los documentos procesados.
 
-Por ejemplo, abra **Configuración de OCR** para revisar **Configuración general del OCR**. El ajuste **Utilice E-Text si está disponible** utiliza el texto electrónico incrustado. El ajuste **Utilizar DESKEW si está disponible** endereza las páginas escaneadas. El ajuste **Versión AI OCR** selecciona la versión del motor de reconocimiento. Consulte [Configuración de OCR](ocr-settings.md) para conocer los controles en detalle.
+Por ejemplo, abra **Configuración de OCR** para revisar **Configuración general del OCR**. El ajuste **Utilice E-Text si está disponible** utiliza el texto electrónico incrustado. El ajuste **Utilizar DESKEW si está disponible** endereza las páginas escaneadas. El ajuste **Versión AI OCR** selecciona la versión del motor de reconocimiento. Consulte [Configuración de OCR](ocr-settings.md#configuracion-general-de-ocr) para conocer los controles en detalle.
 
 <figure><img src="../../../.gitbook/assets/dbdc-233-general-ocr-settings-es-20261031.png" alt="Ajustes generales de OCR en la interfaz española de DocBits con los controles de E-Text, DESKEW y versión de AI OCR"><figcaption><p>Los ajustes generales de OCR son un área del procesamiento de documentos. Los valores seleccionados dependen de su organización.</p></figcaption></figure>
 
 Otras áreas de esta sección son [Importar](import/README.md), [Clasificación y extracción](classification-and-extraction/README.md), [Gestión de reglas](rule-manager/README.md), [Listas de valores](list-of-values.md) y [Módulo](module/README.md).
+
+Si necesita solucionar un problema, empiece por el paso donde ve el problema en lugar de cambiar varios ajustes a la vez:
+
+| Qué desea comprobar | Guía |
+| --- | --- |
+| Falta texto o se lee incorrectamente | [Configuración de OCR](ocr-settings.md) |
+| Un valor debe compararse con datos de referencia | [Búsqueda de datos maestros](master-data-lookup.md) o [Listas de valores](list-of-values.md) |
+| Una fecha de vencimiento es inesperada | [Cálculo de fecha de vencimiento](due-date-calculation.md) |
+| Un documento debe salir de DocBits | [Exportar](export.md) |
+| Una regla debe enrutar o modificar un documento | [Árboles de Decisión](decision-trees.md) |
 
 Si un ajuste no se comporta como se espera, compruébelo primero con un documento de prueba. Un cambio puede afectar a todos los documentos nuevos de la organización.

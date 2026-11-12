@@ -1,96 +1,139 @@
 # Paramètres avancés
 
-Dans certains documents, les structures de table peuvent être complexes, s'étendant sur plusieurs lignes, contenant des informations regroupées ou incluant des lignes supplémentaires inutiles. Les _Paramètres avancés_ en mode d'entraînement vous permettent d'affiner l'extraction de table pour de tels cas, améliorant ainsi la précision et la cohérence.
+Dans certains documents, les structures de table peuvent être complexes : elles s'étendent sur plusieurs lignes, contiennent des informations regroupées ou incluent des lignes supplémentaires inutiles. Les _Paramètres avancés_ du mode de formation vous permettent d'affiner l'extraction de table pour ces cas et d'améliorer ainsi la précision et la cohérence.
 
-Pour accéder à ces paramètres, activez le **Mode d'entraînement** et cliquez sur l'icône d'engrenage **Paramètres** dans la barre d'actions supérieure :
+Pour accéder à ces paramètres, activez le **Mode de formation** et cliquez sur l'icône d'engrenage **Paramètres de la table** dans la barre d'actions supérieure :
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FW1cBx4IOjycKv6IZM9AX8Wggj1eEBgzBVJWgsyWkutX9dRRJuEjQtSCsPaNZuRndd9ewMVvfqSXr45C-2cO-pxXkYFdl_9eEGVW6-UBqqZCsuhia6alJjD1ZuZawwSbjS9Yeywe1wDK5yAcIOUH5QAw\&width=768\&dpr=4\&quality=100\&sign=4bf6ac31\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-gear-fr-20261112.png" alt="Écran d'extraction de table en mode de formation, la souris survolant l'icône d'engrenage des paramètres dans la barre d'actions supérieure."><figcaption><p>L'icône d'engrenage de la barre d'actions du mode de formation ouvre les paramètres avancés.</p></figcaption></figure>
 
-## Nombre de lignes d'en-tête
+La fenêtre **Paramètres** contient toutes les options décrites sur cette page. Dépliez la section **Paramètres avancés** pour atteindre les options de regroupement, qui restent repliées jusqu'à ce que vous les ouvriez :
 
-**Utilisez ce paramètre pour définir le nombre de lignes constituant l'en-tête de la table.**
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-max-rows-fr-20261112.png" alt="Fenêtre Paramètres avec Nombre de lignes d'en-tête à 2 et la section Paramètres avancés dépliée montrant Nombre minimal de lignes groupées 2, Nombre maximal de lignes groupées 3, Colonnes de groupe distinctes, Groupement inversé et Texte divisé."><figcaption><p>La section Paramètres avancés avec toutes les options de regroupement.</p></figcaption></figure>
 
-Certaines tables ont des en-têtes sur plusieurs lignes. Par exemple, l'en-tête de cette table s'étend sur deux lignes :
+Chaque option est décrite dans sa propre section ci-dessous, avec l'effet qu'elle produit sur la table extraite.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FJ_nYZKzUSJHcpJuNp1ykf6shnfetOuiIPhyhyTfSqh_cTsDT5obwOSIc21OsLkjF9tMBP7Q1GQ1ZQfBsEmQIrJpfX3QpdjHnLkzInsjpngeg2L7i_TAyl9MdVmgHsDpUvoURdxfqp8FOdJxuRAMCwhk\&width=768\&dpr=4\&quality=100\&sign=554fa70\&sv=2)
+### Nombre de lignes d'en-tête
 
-Définissez le **Nombre de lignes d'en-tête** pour correspondre :
+**Utilisez ce paramètre pour définir le nombre de lignes qui composent l'en-tête de la table.**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FG8-QpKxnRin9PGPmkbtJ35r1EugXsD4_Yd5QvTkdbb7sXqRVC3a9t0cIlNILJHLr--GsykgAlMJmMYbJaUoMqHEPvAT3PlPNf-syCmPz_GVMFEMsbhcHI2DQBbT4MJXjS2Sx7M3xl4zAzcw3aa-XNms\&width=768\&dpr=4\&quality=100\&sign=a487f5a9\&sv=2)
+Certaines tables ont un en-tête sur plusieurs lignes. Par exemple, l'en-tête de cette table s'étend sur deux lignes :
 
-### Pourquoi est-ce important ?
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-two-lines-fr-20261112.png" alt="Table de facture dont l'en-tête s'étend sur deux lignes (Preis / in EUR et Betrag / in EUR)."><figcaption><p>Un en-tête de table qui s'étend sur deux lignes.</p></figcaption></figure>
 
-Si vous ne définissez pas cela, DocBits peut traiter la deuxième ligne comme des données au lieu de faire partie de l'en-tête, ce qui entraîne des erreurs d'extraction :
+Définissez le **Nombre de lignes d'en-tête** en conséquence :
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-row-count-fr-20261112.png" alt="Fenêtre Paramètres avec Nombre de lignes d'en-tête réglé sur 2."><figcaption><p>Nombre de lignes d'en-tête réglé sur 2 dans la fenêtre Paramètres.</p></figcaption></figure>
+
+#### Pourquoi est-ce important ?
+
+Si vous ne définissez pas ce paramètre, DocBits peut traiter la deuxième ligne comme une donnée au lieu de la considérer comme faisant partie de l'en-tête, ce qui provoque des erreurs d'extraction :
 
 **Avant :**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F35BElgcq-zbs8wcGcguVSKHRpwQXqQG9dQmBaYa8BT4RNwJxd6g-jL5wlQgrnVLrMxtpncr8ayaasWVV3snGpBiDUWs4Zx7Tn2Dck-YFBpanlcN500yIWkVz9RJXQhoq6op0WbYcgklp_LsmE9LXt9k\&width=768\&dpr=4\&quality=100\&sign=7c68faf7\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-before-fr-20261112.png" alt="Table extraite avec un nombre de lignes d'en-tête erroné : la deuxième ligne d'en-tête apparaît comme une ligne de données et les colonnes ne sont pas mappées."><figcaption><p>Avant : la deuxième ligne d'en-tête est traitée comme une donnée.</p></figcaption></figure>
 
 Après :
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FbPGn9eWPK3Mmbu_ab2N3tVVP8ODho4MW6r6ynSKJWiPxq-IPlP_0Q1ghfcwjN56Sp_HA0nV-fedAfzkZoAXsj5O5ata32PCXPHJQ-dizWZ1OdpdEPS5wSPNW9jjc7TSPKQiNnCGPjLtnXQDLCbwEj3U\&width=768\&dpr=4\&quality=100\&sign=b032f2da\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-after-fr-20261112.png" alt="Table extraite avec Nombre de lignes d'en-tête à 2 : les colonnes sont mappées sur Position, Description, Quantité, Prix Unitaire et Montant Net, et les lignes sont correctes."><figcaption><p>Après : lignes d'en-tête et lignes de données sont correctement séparées.</p></figcaption></figure>
 
-## Déplacer les lignes supplémentaires vers la corbeille
+### Déplacer les lignes supplémentaires vers la corbeille
 
-**Utilisez ceci pour supprimer les entrées sur plusieurs lignes non désirées, telles que les descriptions débordantes.**
+**Utilisez cette option pour écarter les entrées sur plusieurs lignes non désirées, par exemple les descriptions qui débordent.**
 
-Dans cet exemple, la description déborde sur plusieurs lignes, mais seule la première ligne est pertinente :
+Dans cet exemple, la description déborde sur plusieurs lignes alors que seule la première est pertinente :
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FAEFanKF7uUtS_78nxi5zESPW8WOESa0Do_sCQCsttC21KoFK-sB9TQgFHboJB7CMEpc_auEbeXINU4BpEh8XuNMBHDYhuwjVX40cRyygxECs3XogrurWKNdw4s4F1kxWXLGrrF4jSqd1bba0dKPVO2E\&width=768\&dpr=4\&quality=100\&sign=926d60ed\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-overflow-doc-fr-20261112.png" alt="Table de facture dans laquelle la description de chaque article continue sur des lignes de texte supplémentaires sous l'article."><figcaption><p>La description déborde sur plusieurs lignes dont seule la première est pertinente.</p></figcaption></figure>
 
-Activez **Déplacer les lignes supplémentaires vers la corbeille** pour supprimer le débordement :
+Réglez **Déplacer les lignes supplémentaires vers** sur **Corbeille** pour supprimer le débordement :
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FQdYUZ0ANpuFRkvNxVZzYfEhTRVf2fk1jPmoNUZcNotdkgL6VDHV1BgBXU2xqFfjBJ7W6uvB8TRZcpKEk7Qk_c0mIohiS4Jl9ZPRpG7HdS_EktuCcAtJ4KjJ_vYvYok7lv0nz2MfVMG08oDFqRSyFHy4\&width=768\&dpr=4\&quality=100\&sign=135061e3\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-move-extra-rows-fr-20261112.png" alt="Fenêtre Paramètres avec Déplacer les lignes supplémentaires vers réglé sur Corbeille."><figcaption><p>Déplacer les lignes supplémentaires vers réglé sur Corbeille.</p></figcaption></figure>
 
-**Résultat après le mapping :**
+**Résultat après le mappage :**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fzto-P_Knp1YQmCUBU6_vCg2IEwaBiBeAao8Jvu30-89x_Sj2BLDSTQu31vUNBlaQp73DPVy2F-UZawn8j4hxycD6bpfCf_KXZYvrqH5w0cwGwsjatBelIh6gdenY-NpzmQ372jtthucHpMrsXNz3DcA\&width=768\&dpr=4\&quality=100\&sign=741cbfd1\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-trash-result-fr-20261112.png" alt="Écran d'extraction de table : le document source montre la description de chaque article débordant sur deux lignes, alors que la table extraite à droite ne contient déjà plus qu'une ligne propre par article."><figcaption><p>Résultat après le mappage : les lignes de débordement ont disparu et seules les lignes pertinentes restent.</p></figcaption></figure>
 
-## Nombre minimum de lignes regroupées
+### Nombre minimal de lignes groupées
 
-**Utilisez ceci lorsque des lignes doivent être regroupées sous une ligne principale (par exemple, des éléments de ligne avec plusieurs sous-lignes).**
+**Utilisez cette option lorsque des lignes doivent être regroupées sous une ligne principale (par exemple des positions avec plusieurs sous-lignes).**
 
-Ici, seules trois lignes sur six sont pertinentes. Deux colonnes clés sont associées (par exemple, Position, Description), tandis que d'autres sont traitées comme des champs personnalisés.
+Ici, seules trois des six lignes sont pertinentes. Deux colonnes clés sont mappées (par exemple Position et Description), les autres sont traitées comme des champs personnalisés.
 
-Commencez par définir le **Nombre de lignes d'en-tête** et le **Nombre minimum de lignes regroupées** :
+Commencez par définir le **Nombre de lignes d'en-tête** et le **Nombre minimal de lignes groupées**, c'est-à-dire le plus petit nombre de lignes qui doivent appartenir à un groupe pour que DocBits les fusionne :
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fp0k-n1IG3_FHexG4iAlISSmN4Yaq9xUjRO2cLpV3w6a67DpULRnxj4x291DOXBVx2SHqKp6Zs-ZXxr8KHKzT9O6oCwgEOkvfMqwpDGZUrfFpozdR16sbaybtrMEqDOXO1TsNmuPFz6mOKX0pR8I5RO8\&width=768\&dpr=4\&quality=100\&sign=e19a8ef6\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-min-grouped-fr-20261112.png" alt="Fenêtre Paramètres avec Nombre de lignes d'en-tête à 2 et la section Paramètres avancés dépliée montrant Nombre minimal de lignes groupées réglé sur 2."><figcaption><p>Nombre de lignes d'en-tête et Nombre minimal de lignes groupées réglés dans la fenêtre Paramètres.</p></figcaption></figure>
 
-Activez également **Déplacer les lignes supplémentaires vers la corbeille** pour nettoyer les données non pertinentes :
+Réglez également **Déplacer les lignes supplémentaires vers** sur **Corbeille** pour nettoyer les données non pertinentes :
 
-<figure><img src="../../../../.gitbook/assets/docbits_approval_2.png" alt="DocBits Approbation 2" width="522"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-min-grouped-trash-fr-20261112.png" alt="Fenêtre Paramètres avec Nombre de lignes d'en-tête à 2, Déplacer les lignes supplémentaires vers réglé sur Corbeille et Nombre minimal de lignes groupées à 2."><figcaption><p>Déplacer les lignes supplémentaires vers réglé sur Corbeille en complément.</p></figcaption></figure>
 
-Ensuite, définissez la colonne clé de regroupement, par exemple _Position_ :
+Définissez ensuite la colonne clé du regroupement, par exemple _Position_, en ouvrant le menu de cette colonne et en choisissant **Group rows** :
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F5hy2YTNQRZ6plQZnc1HwAbAUXU7LKfNpLdlfr8sPnDXMryv0KoAGgkcqAWqjvznvBa1YwW0ecTrpStpm5AIc0qiFX1zB-I_y_crIx0jKS2t6QVKdAz66Wb3XMt9sRsEUHKIuk51_AatHNCRZjOghn4A\&width=768\&dpr=4\&quality=100\&sign=6ca2a12e\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-group-key-fr-20261112.png" alt="Table extraite avec le menu de la colonne Position ouvert, montrant Delete column, Group rows et Regex."><figcaption><p>Choisissez Group rows dans le menu de la colonne clé du regroupement (Position).</p></figcaption></figure>
+
+Le regroupement lui-même, ainsi que les autres outils de colonne qui l'accompagnent (sélection manuelle de lignes, mappage des colonnes et expression régulière), sont décrits pas à pas dans [Structuration et amélioration de l'extraction de table dans DocBits](improving-table-extraction-with-regex.md).
 
 **Résultat :**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FxaorEjiOEeypLMAAOXvm3VAc5BVzhIujUeLdSt0SPwrEz5x_hd8sb3Hhc7OpnUpzj6qvjWWptOsefhxjF5pIzf12RVXah1wPhlMoa3Wwx7T3s_D7Pzw8cryaAzgh8SpN-uTxpl1FWke8v33dh2VNgJ0\&width=768\&dpr=4\&quality=100\&sign=e955b28f\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-grouped-result-fr-20261112.png" alt="Écran d'extraction de table : le document source contient six lignes physiques, deux par article, et la table extraite à droite montre une ligne regroupée par article."><figcaption><p>Résultat : les six lignes physiques sont regroupées en trois positions.</p></figcaption></figure>
 
-## Regroupement inversé
+#### Nombre maximal de lignes groupées
 
-**Utilisez ceci lorsque la ligne de regroupement apparaît** _**après**_ **les lignes qu'elle devrait regrouper.**
+**Utilisez cette option pour limiter le nombre de lignes qu'un groupe peut contenir.** Son infobulle, à côté du libellé, porte sur le nombre maximal de lignes de la colonne regroupée. C'est le pendant du Nombre minimal de lignes groupées : un groupe qui aurait besoin de plus de lignes que ce nombre n'est pas fusionné.
 
-Si la ligne qui devrait être regroupée avec d'autres données apparaît _au-dessus_ de la clé de regroupement, activez cette option :
+Laissez le champ vide lorsque les groupes peuvent avoir n'importe quelle taille. Renseignez-le lorsqu'un document contient des positions avec de nombreuses sous-lignes et que vous voulez que DocBits laisse les blocs anormalement grands non regroupés, afin de pouvoir les contrôler vous-même.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FiH7rDa637FWtr8wWtXpdqSh68xsaOFrb_vIWf-ZOpAjExmFPHVRaDGGipdwNy30gpLmEWT0UujjqlbcSlHU7ldQ5zhAy15pMxuqbDpS2xFSuL35EjbaXfFQTOSSO3QE_I37kvdL3i5k-N7F_9tedMss\&width=768\&dpr=4\&quality=100\&sign=95d583b1\&sv=2)
+Vous le définissez dans la même zone de la fenêtre que le Nombre minimal de lignes groupées, juste en dessous :
 
-Activez le **Regroupement inversé**, regroupez par une colonne principale (par exemple, Montant net), et utilisez **Déplacer les lignes supplémentaires vers la corbeille** si nécessaire :
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-max-rows-fr-20261112.png" alt="Fenêtre Paramètres avec Nombre minimal de lignes groupées à 2 et Nombre maximal de lignes groupées à 3, Colonnes de groupe distinctes, Groupement inversé et Texte divisé non cochés."><figcaption><p>Nombre maximal de lignes groupées (ici 3) se trouve directement sous Nombre minimal de lignes groupées.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FFJNKYXmELlMFi-Zh_0Pjgc0pcKI2-_UbDhF7b4D5p7GA4f9r-FqjruzkJw3nfJH4NA0G_BC2xQpJEzl26GbOlPt9fPyOkGowtGWgRWt5GJ62Vj-Qd04rDP0kzDFiJnRlpWF13d9YQ1e-FurQI-gHJx4\&width=768\&dpr=4\&quality=100\&sign=4b2677ae\&sv=2)
+#### Colonnes de groupe distinctes
+
+**Utilisez cette option pour ne conserver que des valeurs uniques dans la colonne clé du regroupement.**
+
+L'infobulle de l'option demande si vous voulez uniquement des valeurs uniques pour votre colonne regroupée. Activez-la lorsque plusieurs groupes porteraient la même valeur dans la colonne clé et que vous voulez que DocBits ne conserve cette valeur qu'une seule fois : les groupes répétés affichent alors une clé vide au lieu de la valeur en double.
+
+Il s'agit d'une case à cocher dans la même section que le Nombre minimal de lignes groupées :
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-distinct-split-fr-20261112.png" alt="Fenêtre Paramètres avec la case à cocher Colonnes de groupe distinctes cochée sous Nombre maximal de lignes groupées."><figcaption><p>Colonnes de groupe distinctes est la case à cocher située sous Nombre maximal de lignes groupées.</p></figcaption></figure>
+
+#### Groupement inversé
+
+**Utilisez cette option lorsque la ligne de regroupement se trouve&#x20;**_**après**_**&#x20;les lignes qu'elle doit regrouper.**
+
+L'infobulle de l'option demande si vous voulez combiner toutes les lignes situées au-dessus de l'attribut regroupé. Activez-la lorsque la ligne qui porte la clé de regroupement (par exemple la position ou le montant) se trouve _sous_ ses lignes de continuation : DocBits fusionne alors les lignes situées au-dessus de la clé dans le groupe, et non celles du dessous :
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-doc-fr-20261112.png" alt="Table de facture dans laquelle la ligne de description se trouve au-dessus de la ligne qui porte la position, la quantité et les montants."><figcaption><p>La ligne de regroupement apparaît après les lignes qu'elle doit regrouper.</p></figcaption></figure>
+
+Activez **Groupement inversé**, regroupez par une colonne principale (par exemple Montant Net) et réglez **Déplacer les lignes supplémentaires vers** sur **Corbeille** si nécessaire :
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-dialog-fr-20261112.png" alt="Fenêtre Paramètres avec Groupement inversé coché, Déplacer les lignes supplémentaires vers réglé sur Corbeille et Nombre de lignes d'en-tête à 2."><figcaption><p>Groupement inversé activé en complément de Déplacer les lignes supplémentaires vers la corbeille.</p></figcaption></figure>
 
 **Résultat final :**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fe8x8gIUV10Y_FmPeW_X-UZw6uJ8P7alQTDy_m5OGGLZ8Ev7Ip-C-6fqtTixiSU0ZnLMIc4VR_f0xJV6beDnl7bFBIh4U2dME8KHB3qokj__SrQGp-3BXeOsN63SabFNd5miRCtK-jlf49nzcbbe8UJw\&width=768\&dpr=4\&quality=100\&sign=f7571dde\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-result-fr-20261112.png" alt="Table extraite avec trois lignes après un groupement inversé par la colonne des montants."><figcaption><p>Résultat final avec le groupement inversé.</p></figcaption></figure>
 
-## Résumé
+#### Texte divisé
 
-Utilisez les _Paramètres avancés_ pour apprendre à DocBits comment gérer avec précision des structures de table plus complexes ou incohérentes. Ces paramètres améliorent la précision de l'extraction en tenant compte de :
+**Utilisez cette option pour diviser le texte d'une cellule exactement au séparateur de colonne.**
+
+L'infobulle de l'option demande si vous voulez diviser le texte exactement au séparateur de colonne. Activez-la lorsqu'une cellule extraite contient le texte de deux colonnes que le séparateur de la table n'a pas séparées. DocBits extrait alors à nouveau la table et coupe chaque valeur à la position du séparateur que vous avez définie, au lieu de stocker les deux valeurs dans une seule cellule.
+
+Comme la division relance l'extraction, DocBits vous demande de confirmer avant de l'exécuter : la confirmation apparaît dès que vous cochez la case, et la division n'est appliquée qu'après avoir cliqué sur **Continuer**.
+
+La case à cocher est la dernière option de la section Paramètres avancés :
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-distinct-split-fr-20261112.png" alt="Fenêtre Paramètres avec la case à cocher Texte divisé cochée comme dernière option de la section Paramètres avancés."><figcaption><p>Texte divisé est la dernière case à cocher de la section.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-split-confirm-fr-20261112.png" alt="Fenêtre de confirmation demandant « Êtes-vous sûr? Le tableau sera extrait à nouveau » avec les boutons Annuler et Continuer."><figcaption><p>Cocher Texte divisé ouvre cette confirmation ; seul Continuer applique la division.</p></figcaption></figure>
+
+### Résumé
+
+Utilisez les _Paramètres avancés_ pour apprendre à DocBits à traiter correctement des structures de table plus complexes ou irrégulières. Ces paramètres améliorent la précision de l'extraction en tenant compte des éléments suivants :
 
 * En-têtes sur plusieurs lignes
 * Descriptions sur plusieurs lignes
-* Éléments de ligne regroupés
+* Positions regroupées
 * Ordre inverse des données regroupées
+* Texte à diviser au niveau d'un séparateur de colonne
 
-Activer ces options pendant l'entraînement garantit que DocBits se souvienne de la mise en page correcte pour les futurs documents du même fournisseur.
+Activer ces options pendant la formation garantit que DocBits mémorise la bonne disposition pour les futurs documents du même fournisseur. Une fois l'extraction correcte, enregistrez la configuration avec l'action **Règles de sauvegarde** décrite dans [Enregistrer et Supprimer les Règles](save-and-delete-rules.md).

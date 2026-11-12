@@ -60,6 +60,7 @@
     * [Statut des documents](end-user-and-partner-section/end-user-section/dashboard/document-status.md)
     * [Filtrer les documents](end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md)
     * [Recherche rapide](end-user-and-partner-section/end-user-section/dashboard/quick-search.md)
+    * [Smart Search Ranking](end-user-and-partner-section/end-user-section/dashboard/smart-search-ranking.md)
     * [Tableaux de bord personnels](end-user-and-partner-section/end-user-section/dashboard/personal-dashboards.md)
     * [Vue des documents importés](end-user-and-partner-section/end-user-section/dashboard/overview-of-uploaded-documents.md)
     * [Compteur de tâches](end-user-and-partner-section/end-user-section/dashboard/task-counter.md)

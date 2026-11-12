@@ -1,8 +1,8 @@
 # Flusso standard
 
-Il builder **Flusso standard** è l'editor lineare basato su schede per automatizzare l'elaborazione dei documenti. Un workflow è composto da tre gruppi di schede — **Quando** (il trigger), **E** (condizioni aggiuntive) e **Allora** (le azioni da eseguire). Quando un documento soddisfa le condizioni When/And, le azioni Then vengono eseguite automaticamente.
+Il builder **Flusso standard** è l'editor lineare basato su schede per automatizzare l'elaborazione dei documenti. Un workflow è composto da tre gruppi di schede — **Quando** (il trigger), **E** (condizioni aggiuntive) e **Allora** (le azioni da eseguire). Quando un documento soddisfa le condizioni Quando/E, le azioni Allora vengono eseguite automaticamente.
 
-## Creare e testare uno Flusso di lavoro standard <a id="standard-workflow-tutorial"></a>
+## Creare e testare un flusso di lavoro standard <a id="standard-workflow-tutorial"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/it.mp4" %}
 
@@ -99,16 +99,16 @@ Nell’elenco attivo la regola testata e controllo che l’interruttore sia acce
 
 ## Come accedere
 
-Apri **Dashboard dei flussi → Elenco dei flussi**, quindi clicca su **Aggiungi flusso di lavoro** per creare un nuovo workflow Standard, oppure clicca su un workflow esistente per modificarlo.
+Apri **Dashboard del flusso di lavoro → Elenco dei flussi di lavoro**, quindi clicca su **Nuovo flusso di lavoro** per creare un nuovo flusso di lavoro standard, oppure clicca su un flusso di lavoro esistente per modificarlo.
 
-<figure><img src="../../.gitbook/assets/prior-u033-it.png" alt="Elenco dei workflow e comandi di importazione."><figcaption><p>Elenco dei workflow e comandi di importazione.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-list-toolbar-it-20261112.png" alt="Elenco dei flussi di lavoro con i comandi Nuovo flusso di lavoro, Modelli e Flusso di lavoro dell'importazione nella barra degli strumenti."><figcaption><p>L'elenco dei flussi di lavoro e i comandi della barra degli strumenti.</p></figcaption></figure>
 
 ## Il modello When / And / Then
 
 <figure><img src="../../.gitbook/assets/workflow_designer_cards.png" alt="Canvas Standard Workflow con schede When, And e Then"><figcaption><p>Il canvas Standard Workflow. Questo esempio si attiva sulle fatture in una sotto-organizzazione e le assegna a un utente.</p></figcaption></figure>
 
 - **Quando** — il trigger che avvia il workflow (es. *Il tipo di documento è Fattura*).
-- **E** — condizioni aggiuntive che devono essere anch'esse vere (es. *Il documento fa parte di una sotto-organizzazione*). Lascia vuoto per eseguire a ogni corrispondenza della scheda When.
+- **E** — condizioni aggiuntive che devono essere anch'esse vere (es. *Il documento fa parte di una sotto-organizzazione*). Lascia vuoto per eseguire a ogni corrispondenza della scheda Quando.
 - **Allora** — le azioni da eseguire (es. *Assegna il documento all'utente*, crea un'attività, chiama un'API, invia un'email).
 
 ## Aggiungere schede
@@ -117,7 +117,19 @@ Clicca su **Aggiungi scheda** in qualsiasi gruppo per aprire la libreria delle s
 
 <figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Libreria Add Card raggruppata per categoria"><figcaption><p>La libreria <strong>Add Card</strong> — schede di condizione, schede di confronto, schede di azione e altro, raggruppate per categoria.</p></figcaption></figure>
 
-Salva con **Salva flusso di lavoro**, oppure salva il layout come template riutilizzabile con **Salva modello**.
+Salva con **Salva flusso di lavoro**, oppure salva il layout come modello riutilizzabile con **Salva modello**.
+
+## Modelli di flusso di lavoro
+
+Il pulsante **Modelli** nella barra degli strumenti dei flussi di lavoro apre la libreria **Modelli di flusso di lavoro**, dove gestisci i modelli salvati nella tua organizzazione:
+
+<figure><img src="../../.gitbook/assets/workflow-templates-dialog-it-20261112.png" alt="Finestra Modelli di flusso di lavoro con le colonne Nome, Aggiornato Da, Ultimo Aggiornamento Il e Azioni, l'opzione Mostra i modelli predefiniti attiva e i modelli predefiniti integrati nell'elenco."><figcaption><p>La finestra <strong>Modelli di flusso di lavoro</strong> — i modelli salvati e, con <strong>Mostra i modelli predefiniti</strong> attivo, i modelli predefiniti integrati.</p></figcaption></figure>
+
+- L'elenco mostra **Nome**, **Aggiornato Da** e **Ultimo Aggiornamento Il** di ogni modello.
+- Attiva **Mostra i modelli predefiniti** per includere nell'elenco i modelli predefiniti integrati.
+- Nel menu **Azioni** della riga scegli **Duplicato** per copiare un modello oppure **Cancellare** per eliminare un modello salvato — i modelli predefiniti integrati non si possono eliminare.
+- Clicca su una riga per aprire il modello nel designer dei modelli, che usa lo stesso canvas Quando/E/Allora del builder Flusso standard. Salva le modifiche con **Salva modello**.
+- Per creare un nuovo flusso di lavoro da un modello, apri il modello nel designer, modifica le schede e salvalo come flusso di lavoro con **Salva flusso di lavoro**.
 
 ## Prossimi passi
 

@@ -2,7 +2,7 @@
 description: "Definire riferimento delle tolleranze e confronto PO"
 ---
 
-# P1: definire riferimento delle tolleranze e confronto PO
+# definire riferimento delle tolleranze e confronto PO
 
 Una tolleranza del 2 per cento non è un importo fisso. È il 2 per cento del lato con cui confrontate, quindi la stessa riga di fattura può fallire in una direzione e passare nell’altra. Questa pagina lo mostra su una coppia di valori, vi dà tre esercizi per riprodurlo e poi elenca le sei direzioni di confronto e i parametri di scheda che potete copiare nel vostro test.
 

@@ -2,9 +2,9 @@
 description: "Scegliere Field is, Docfield is o Compare two Fields"
 ---
 
-# P1: scegliere Field is, Docfield is o Compare two Fields
+# scegliere Field is, Docfield is o Compare two Fields
 
-Tre schede di condizione si somigliano nel designer, e la loro differenza decide che cosa una regola può davvero intercettare. Questa pagina aiuta a scegliere quella giusta e poi propone tre brevi esercizi che mostrano che cosa restituisce ciascuna scheda. Alla fine saprete distinguere «vuoto» da «zero», «falso» da «assente» e una condizione non soddisfatta da un errore.
+Tre schede di condizione si somigliano nel designer, e la loro differenza decide che cosa una regola può davvero intercettare. Questa pagina aiuta a scegliere quella giusta e poi propone tre brevi esercizi che mostrano che cosa restituisce ciascuna scheda. Alla fine saprete distinguere «vuoto» dal numero `0`, «falso» da «assente» e una condizione non soddisfatta da un errore; il `null` tecnico conta come vuoto, il numero `0` no.
 
 Eseguite gli esercizi in Advanced Test, nella vostra organizzazione di test, con un documento sintetico. Qui non viene toccato alcun documento del cliente.
 

@@ -47,7 +47,7 @@ Sete níveis levam do primeiro olhar ao designer de workflows até à responsabi
 **Objetivo:** Levar uma regra do designer até um resultado verificado, sem tocar num documento.
 
 1. Crie-a no Advanced Builder: When Invoice → And invoice\_id = WF-TRAINING-001 → And total\_amount > 1000 → Then wf\_training\_route = REVIEW. Uma regra linear deste tamanho não precisa de nó de controlo.
-2. Guarde-a e verifique na lista de regras se continua inativa, porque guardar uma regra nova já a pode ativar. O Advanced Test é uma superfície de execução à parte: avalia o grafo no construtor, não a regra ativada.
+2. Guarde-a e verifique na lista de regras se continua inativa, porque guardar uma regra nova já a pode ativar. O Advanced Test é um modo de teste próprio: verifica o grafo tal como está construído no construtor, não a regra ativada.
 3. Execute o Advanced Test com dados completos para 999, 1000 e 1000.01. Anote por caso o tipo de campo, o operador e a saída escolhida, e acrescente um caso em que o montante falta por completo.
 
 **Critério de conclusão:** REVIEW só é alcançado com 1000.01, um montante em falta aparece como erro e não como resultado normal abaixo do limite, e no fim a regra volta a estar desativada.
@@ -68,7 +68,7 @@ Sete níveis levam do primeiro olhar ao designer de workflows até à responsabi
 
 **Critério de conclusão:** Explica verdadeiro, falso e erro a partir do valor, do tipo, da referência e dos dados existentes. Na versão 5 do cartão da encomenda, um documento sem linha comparável é um erro de dados e não uma aprovação bem-sucedida.
 
-**Aprofundamento:** [P1: Field is, Docfield is e comparar dois campos](masterclass/field-conditions.md) · [P1: Tornar tolerâncias e referência da encomenda inequívocas](masterclass/tolerances-and-po.md)
+**Aprofundamento:** [Field is, Docfield is e comparar dois campos](masterclass/field-conditions.md) · [Tornar tolerâncias e referência da encomenda inequívocas](masterclass/tolerances-and-po.md)
 
 ## 4. Regras de negócio e aprovações <a href="#level-4" id="level-4"></a>
 
@@ -92,7 +92,7 @@ Sete níveis levam do primeiro olhar ao designer de workflows até à responsabi
 
 **Critério de conclusão:** Distingue responsabilidade, tarefa, notificação e aprovação efetiva; A → aprovação → B → aprovação aconteceu nessa ordem; uma rejeição de A impediu a exportação; e um destinatário em falta não contou como aprovação concluída.
 
-**Aprofundamento:** [P1: Seguir a tabela de decisão até à atribuição](masterclass/decision-table-routing.md) · [P1: Distinguir atribuição, tarefa e aprovação sequencial](masterclass/assignment-task-sequential.md)
+**Aprofundamento:** [Seguir a tabela de decisão até à atribuição](masterclass/decision-table-routing.md) · [Distinguir atribuição, tarefa e aprovação sequencial](masterclass/assignment-task-sequential.md)
 
 ## 5. Controlo Advanced e subworkflows <a href="#level-5" id="level-5"></a>
 
@@ -108,7 +108,7 @@ Sete níveis levam do primeiro olhar ao designer de workflows até à responsabi
 
 **Critério de conclusão:** Explica a diferença do caso MERGE-04 entre teste e execução do passo 2, como as origens são contadas e para onde vai um erro. Uma chamada Run Workflow verde continua a exigir verificação no destino. V2 designa aqui a segunda versão do grafo do estudo de caso: o cartão de estado de cada caminho leva diretamente ao cartão de fecho comum, sem nó OR em espera.
 
-**Aprofundamento:** [P0: Ligar corretamente Wait ALL, Wait ANY e OR](masterclass/control-nodes.md) · [P0: Compreender Run Workflow, condições de destino e erros](masterclass/run-workflow.md) · [Caso de negócio Advanced: encaminhamento de faturas](advanced-workflow-case-study.md)
+**Aprofundamento:** [Ligar corretamente Wait ALL, Wait ANY e OR](masterclass/control-nodes.md) · [Compreender Run Workflow, condições de destino e erros](masterclass/run-workflow.md) · [Caso de negócio Advanced: encaminhamento de faturas](advanced-workflow-case-study.md)
 
 ## 6. Cálculo, integração e exportação <a href="#level-6" id="level-6"></a>
 
@@ -124,7 +124,7 @@ Sete níveis levam do primeiro olhar ao designer de workflows até à responsabi
 
 **Critério de conclusão:** Valores seguintes no campo, receção no destinatário e processamento no ERP têm cada um a sua prova. Uma simulação ou uma exportação em fila não é uma entrega.
 
-**Aprofundamento:** [P1: Calcular tabelas e verificar a dependência de regex](masterclass/table-calculations.md) · [P1: Verificar a chamada à API e o reaproveitamento da resposta](masterclass/api-response-contract.md) · [P1: Variantes de exportação, tarefas abertas e estado de fecho](masterclass/export-lifecycle.md)
+**Aprofundamento:** [Calcular tabelas e verificar a dependência de regex](masterclass/table-calculations.md) · [Verificar a chamada à API e o reaproveitamento da resposta](masterclass/api-response-contract.md) · [Variantes de exportação, tarefas abertas e estado de fecho](masterclass/export-lifecycle.md)
 
 ## 7. Alterações e operação especializada <a href="#level-7" id="level-7"></a>
 

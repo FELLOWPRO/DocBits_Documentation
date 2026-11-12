@@ -39,7 +39,7 @@ Ta strona opisuje przepływ Infor ION oraz konfigurację eksportu w DocBits. Zrz
 
 ## Krok 3: Utwórz przepływ dokumentów
 
-1. Otwórz **OS** -> **ION** -> **Connect** -> **Data Flows**.
+1. Otwórz **OS** > **ION** > **Connect** > **Data Flows**.
 2. Kliknij **Add** i wybierz **Document Flow**.
 3. Wypełnij szczegóły:
    * **Name**: ustaw `DocBits_Export_to_M3`

@@ -1,110 +1,42 @@
 # O365 Tenant
 
-## Zarejestruj aplikację w Azure AD
+Ten przewodnik opisuje, jak podłączyć skrzynkę pocztową Microsoft 365 należącą do organizacji za pośrednictwem aplikacji Microsoft Entra. Administrator musi mieć dostęp do właściwej dzierżawy Entra i do odpowiedniej organizacji DocBits. Przed włączeniem importu ustal skrzynkę pocztową, miejsce docelowe dokumentów oraz osobę odpowiedzialną za poświadczenia.
 
-<mark style="color:red;">**Uwaga**</mark>: Uprawnienia mogą wymagać autoryzacji od administratora.
+## 1. Przygotuj aplikację Entra <a href="#register-app-on-azure-a-d" id="register-app-on-azure-a-d"></a>
 
-1. Zaloguj się do [Portalu Azure](https://portal.azure.com/) używając swoich danych uwierzytelniających.
-2. Z usług Azure znajdź i otwórz Azure Active Directory (znany również jako Azure AD).
+W [centrum administracyjnym Microsoft Entra](https://entra.microsoft.com/) otwórz we właściwej dzierżawie sekcję rejestracji aplikacji i utwórz nową rejestrację. Wybierz rozpoznawalną nazwę oraz typ konta zatwierdzony przez administratora tożsamości. Aplikacja używana tylko w obrębie organizacji korzysta zwykle z opcji dla jednej dzierżawy. Zanotuj jej **identyfikator katalogu (dzierżawy)** i **identyfikator aplikacji (klienta)**. Nazwy w portalu Microsoft mogą się różnić w zależności od ustawionego języka; [aktualne instrukcje rejestracji](https://learn.microsoft.com/en-us/graph/auth-register-app-v2) firmy Microsoft pokazują kolejne kroki w portalu.
 
-![Pozycja Azure Active Directory w wyszukiwaniu i liście usług portalu Azure](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_1.png)
+Formularz dzierżawy w DocBits wymaga klucza tajnego klienta. W sekcji **Certyfikaty i wpisy tajne** rejestracji utwórz klucz tajny zgodnie z zatwierdzoną polityką wygasania i zanotuj jego **wartość**, dopóki jest widoczna. Przechowuj ją bezpiecznie i ustal przed terminem wygaśnięcia, kto będzie ją odnawiał. Wpisz tę wartość w polu **Wartość aplikacji klienckiej** w DocBits. Nie umieszczaj kluczy tajnych na zrzutach ekranu, w zgłoszeniach ani w dokumentacji.
 
-3. W sekcji **Manage** wybierz **App registrations**.
+W konfiguracji opartej na kluczu tajnym pozostaw przepływy dla klientów publicznych wyłączone, chyba że administrator tożsamości ustalił odrębne wymaganie. [Wskazówki firmy Microsoft dotyczące typów klientów](https://learn.microsoft.com/en-us/entra/identity-platform/msal-client-applications) wyjaśniają, dlaczego aplikacje klienckie publiczne nie mogą bezpiecznie przechowywać kluczy tajnych aplikacji.
 
-![Strona przeglądu Azure Active Directory z sekcją Manage i pozycją App registrations w lewym menu](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_2.png)
+## 2. Zatwierdź uprawnienie i zakres skrzynki pocztowej
 
-4. Na ekranie App registrations kliknij **+ New registration**.
+Poproś administratora usługi Microsoft 365 o zatwierdzenie operacji na poczcie oraz zakresu skrzynek dla tej aplikacji. Uprawnienie aplikacji **Mail.ReadWrite** programu Microsoft Graph umożliwia dostęp do poczty i jej zmienianie bez zalogowanego użytkownika i wymaga zgody administratora. Uprawnienie bez ograniczeń obejmuje skrzynki pocztowe w całej organizacji. Mail.ReadWrite nie pozwala wysyłać poczty; funkcje wysyłania wymagają odrębnego przeglądu uprawnień. Zobacz [dokumentację uprawnień programu Microsoft Graph](https://learn.microsoft.com/en-us/graph/permissions-reference#mailreadwrite).
 
-![Strona App registrations z przyciskiem + New registration na pasku narzędzi](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_3.png)
+Uzgodnij z administratorem Exchange ograniczony dostęp do skrzynek, korzystając z [funkcji RBAC dla aplikacji](https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac). Uprawnienia przyznane w Entra i uprawnienia RBAC usługi Exchange sumują się: samo dodanie uprawnienia RBAC z ograniczonym zakresem nie zawęża istniejącego uprawnienia Entra obejmującego całą organizację. Poproś administratora o potwierdzenie faktycznego dostępu do właściwej skrzynki przed włączeniem źródła.
 
-5. Wyświetli się ekran **Register an application**. Wprowadź nazwę wyświetlaną aplikacji skierowaną do użytkownika w polu **Name**.
+## 3. Skonfiguruj połączenie dzierżawy w DocBits
 
-![Formularz Register an application z polem Name i tekstem pomocy dla nazwy wyświetlanej](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_4.png)
+W odpowiedniej organizacji DocBits otwórz **Ustawienia → Import**, a w sekcji **Importowanie wiadomości e-mail** wybierz **Nowy**.
 
-6. Wybierz jeden z następujących typów kont w zależności od swoich potrzeb:
+<figure><img src="../../../../.gitbook/assets/o365-tenant-email-import-list-pl-20261112.png" alt="Sekcja Importowanie wiadomości e-mail w interfejsie polskim z przyciskiem Nowy, ikoną dziennika importu i nagłówkami kolumn; wiersze zawierają wymyślone dane przykładowe, a prawe kolumny są ucięte przy tej szerokości okna."><figcaption><p>Nowy otwiera kreator konfiguracji poczty e-mail. Ten obraz dokumentacji pokazuje wymyślone dane przykładowe; kolumny Falcówka i Trasowanie dokumentów po prawej stronie są ucięte przy szerokości zrzutu.</p></figcaption></figure>
 
-* **Konta w dowolnym katalogu organizacyjnym (dowolny katalog Azure AD Multitenant) i osobiste konta Microsoft (np. Skype, Xbox)**
-* **Konta w dowolnym katalogu organizacyjnym (dowolny katalog AD platformy Azure dla wielu dzierżawców)**
+W polu **Protokół** wybierz **OAuth Office365 - Tenant**, a w polu **Trasowanie dokumentów** wybierz miejsce docelowe. Wypełnij pola dzierżawy przekazane przez administratora:
 
-![Lista Supported account types z opcjami dla jednej dzierżawy, wielu dzierżaw i osobistych kont Microsoft](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_5.png)
+| Pole w DocBits                      | Wpis                                                           |
+| ----------------------------------- | -------------------------------------------------------------- |
+| ID najemcy                          | Identyfikator katalogu (dzierżawy) właściwej dzierżawy Entra.   |
+| Identyfikator aplikacji klienckiej  | Identyfikator aplikacji (klienta) zarejestrowanej aplikacji.    |
+| Wartość aplikacji klienckiej        | Wartość klucza tajnego klienta z tej rejestracji.               |
+| Typ najemcy                         | Środowisko chmury dzierżawy, na przykład Handlowy lub GCC High. |
 
-7. Pozostaw opcję **Redirect URI (optional)** bez zmian.
+<figure><img src="../../../../.gitbook/assets/o365-tenant-tenant-wizard-pl-20261112.png" alt="Kreator w interfejsie polskim z OAuth Office365 - Tenant, trasowaniem do DocBits, trzema pustymi polami poświadczeń, typem najemcy Handlowy oraz przyciskami Test połączenia i Zapisz."><figcaption><p>Wariant dzierżawy ma własny formularz poświadczeń. Ten przykład używa miejsca docelowego DocBits i typu najemcy Handlowy; wszystkie trzy pola poświadczeń są puste. Test połączenia i Zapisz nie zostały użyte w tym zrzucie.</p></figcaption></figure>
 
-![Formularz Register an application z obsługiwanymi typami kont i wybraną opcją wielu dzierżaw](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_6.png)
+Przed użyciem **Zapisz** sprawdź połączenie przyciskiem **Test połączenia** z autoryzowanymi poświadczeniami dzierżawy. Test łączy się ze skonfigurowaną usługą; Zapisz wysyła konfigurację dzierżawy. Udany test połączenia nie dowodzi, że wiadomość lub dokument został zaimportowany. Jeśli chcesz tylko obejrzeć formularz, wybierz **Anulować** lub symbol zamknięcia.
 
-8. Kliknij **Register**, aby zakończyć rejestrację aplikacji. Spowoduje to powrót do ekranu nowej aplikacji.
-9. Na ekranie aplikacji znajdź **Application (client) ID**. Skopiuj je, aby użyć podczas konfigurowania importu e-maili dla **DocBits**.
+## 4. Sprawdź zapisane źródło
 
-![Sekcja Redirect URI (optional) formularza rejestracji i przycisk Register pod nią](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_7.png)
+Przy autoryzowanym wdrożeniu użyj wyznaczonej skrzynki testowej i nieszkodliwego przykładowego załącznika. Po zapisaniu źródła wyślij wiadomość testową na tę skrzynkę, sprawdź listę w sekcji **Importowanie wiadomości e-mail** oraz dzienniki importu i potwierdź, że dokument dotarł do wybranego miejsca. W razie potrzeby omów z administratorem opcje wspólnej skrzynki i przenoszenia wiadomości. Zapisz trasę, skrzynkę i osobę odpowiedzialną za wygaśnięcie klucza tajnego w wewnętrznym runbooku, bez klucza.
 
-10. Z lewego panelu wybierz **Certificates & secrets**:
-
-![Strona przeglądu zarejestrowanej aplikacji z Display name, Application (client) ID oraz przyciskami Delete i Endpoints](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_8.png)
-
-11. Na ekranie **Certificates & secrets** kliknij przycisk **+ New client secret** w sekcji **Client secrets**:
-
-![Pozycja Certificates & secrets w lewym menu zarejestrowanej aplikacji](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_9.png)
-
-12. W oknie dialogowym **Add a client secret** kliknij przycisk **Add**:
-
-![Sekcja Client secrets z opisem i informacją, że nie utworzono jeszcze żadnego klucza klienta](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_10.png)
-
-Zaleca się wypełnienie opisu, aby zidentyfikować ten sekret wśród wielu (obecnie limit wynosi 2 sekrety na aplikację).
-
-![Okno Add a client secret z polem Description i opcjami wygaśnięcia 1 rok, 2 lata i nigdy](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_11.png)
-
-<mark style="color:red;">**Uwaga**</mark>: Wybierz tę datę wygaśnięcia zgodnie z polityką firmy. Po wygaśnięciu należy utworzyć nowy client secret i określić go dla każdej konfiguracji e-mail, w której był wcześniej używany.
-
-13. Nowo wygenerowany client secret będzie widoczny. Skopiuj ten client secret, aby użyć go podczas konfigurowania importu e-maili dla DocBits.
-
-![Tabela Client secrets z utworzonym kluczem, datą wygaśnięcia i ikoną kopiowania obok wartości](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_12.png)
-
-**Ważne:** Upewnij się, że skopiowałeś client secret, ponieważ client secret nie będzie wyświetlany ponownie po zamknięciu.
-
-14. Wybierz **Authentication** w lewym panelu. Spowoduje to wyświetlenie ekranu **Authentication** po prawej stronie.
-
-![Pozycja Authentication w lewym menu zarejestrowanej aplikacji](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_13.png)
-
-15. W sekcji **Advanced settings** kliknij **Yes** dla **Default client type**.
-
-![Strona Authentication, sekcja Advanced settings, z Default client type ustawionym na Yes dla klienta publicznego](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_14.png)
-
-16. Kliknij **Save**, aby potwierdzić zmiany.
-
-![Strona Authentication z przyciskami Save i Discard na pasku narzędzi](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_15.png)
-
-17. Wybierz **API permissions** w lewym panelu. Spowoduje to wyświetlenie ekranu uprawnień API.
-
-![Pozycja API permissions w lewym menu zarejestrowanej aplikacji](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_16.png)
-
-18. Domyślnie obecne jest uprawnienie **User.Read** z **Microsoft Graph**, pozostaw je bez zmian.
-
-![Tabela API permissions z delegowanym uprawnieniem User.Read programu Microsoft Graph](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_17.png)
-
-<mark style="color:red;">**Uwaga**</mark>: Jest to wymagane uprawnienie. Jeśli to uprawnienie nie jest dostępne, dodaj uprawnienie wykonując poniższe kroki dla uprawnienia **Mail.ReadWrite**.
-
-19. Kliknij **+ Add a permission**. Spowoduje to otwarcie panelu **Request API permissions**.
-
-![Panel Configured permissions z przyciskiem + Add a permission i pustą listą uprawnień](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_18.png)
-
-20. Kliknij **Microsoft Graph**.
-
-![Panel Request API permissions z pozycją Microsoft Graph wśród najczęściej używanych interfejsów API firmy Microsoft](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_19.png)
-
-21. Z dwóch podkategorii wybierz **App Permissions**.
-
-![Panel uprawnień Microsoft Graph z wyborem między Delegated permissions i Application permissions](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_20.png)
-
-22. Wpisz **Mail.ReadWrite** w polu wyszukiwania. Zaznacz pole wyboru **Mail.ReadWrite** dla uprawnienia.
-
-![Panel Request API permissions z Mail.ReadWrite w wyszukiwaniu uprawnień i pasującym uprawnieniem Mail](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_21.png)
-
-23. Spowoduje to aktywowanie przycisku **Add permissions** na dole panelu. Kliknij **Add permissions**.
-
-![Panel Request API permissions z zaznaczonym polem Mail.ReadWrite i aktywnym przyciskiem Add permissions](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_22.png)
-
-24. Spowoduje to dodanie uprawnienia **Mail.ReadWrite** do listy **Configured permissions** dla aplikacji.
-
-<mark style="color:red;">**Uwaga**</mark>: Mogą być wymagane uprawnienia administratora. Administrator będzie musiał autoryzować aplikację do używania tych uprawnień. Po autoryzacji przyznany status zostanie wskazany w następujący sposób:
-
-![Panel Configured permissions z uprawnieniem Mail.ReadWrite i przyciskiem Grant admin consent dla dzierżawy](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_23.png)
+Sprawdzenie dokumentacji objęło polską ścieżkę menu, listę oraz niewypełniony kreator dzierżawy. Nie utworzono ani nie zmieniono żadnej aplikacji Entra, żadnych poświadczeń, uprawnień, skrzynki pocztowej ani źródła importu. Nie wykonano testu połączenia, uwierzytelniania dzierżawy ani importu wiadomości. Aktualny interfejs administracyjny firmy Microsoft opisują podlinkowane instrukcje.

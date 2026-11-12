@@ -8,46 +8,70 @@ Fuentes de datos maestros, listas de valores y ajustes de datos maestros en DocB
 
 El vídeo muestra las fuentes de datos maestros, las listas de valores y los ajustes de datos maestros de un tipo de documento.
 
-Las listas de valores contienen opciones predefinidas para los campos del documento. Un campo puede utilizar una lista durante la validación. Las etiquetas se pueden traducir; el valor técnico permanece igual en todos los idiomas.
+## Descripción general
 
-## Abrir las listas
+Una lista de valores proporciona opciones predefinidas para un campo, por ejemplo tipos de factura o monedas. Cada entrada tiene un **Valor** almacenado y puede tener **Sinónimos** y etiquetas traducidas. Utilice las listas al configurar desplegables en [Campos](../global-settings/document-types/fields/) y en la validación de campos.
 
-En los ajustes, abra la consulta de datos maestros y seleccione las listas de valores. Use el campo **Listas de búsqueda** del panel izquierdo para encontrar una lista. Seleccione su nombre para abrir las entradas a la derecha. La carpeta con estrella identifica una lista del sistema; el número junto a su nombre muestra la cantidad de entradas cargadas.
+Las listas y las entradas se pueden limitar a una suborganización. Las traducciones determinan la etiqueta que se muestra en un idioma; el valor subyacente no cambia. Si no existe una etiqueta para el idioma del usuario, se muestra el valor subyacente.
 
-<figure><img src="../../../.gitbook/assets/s150-list_of_values_1-es.png" alt="Listas de valores con los nombres configurados ocultos."><figcaption><p>Listas de valores con los nombres configurados ocultos.</p></figcaption></figure>
+## ¿Cómo acceder?
 
-<figure><img src="../../../.gitbook/assets/dbdc-36-selected-system-list-es-20261031.png" alt="La lista del sistema seleccionada abre la tabla de entradas. A-Z y Z-A ordenan por valor; Añadir fila abre el formulario. Los valores y nombres personalizados están ocultos; los nombres de las listas del sistema, como ISO Currency, son datos existentes."><figcaption><p>La lista del sistema seleccionada abre la tabla de entradas. A-Z y Z-A ordenan por valor; Añadir fila abre el formulario. Los valores y nombres personalizados están ocultos; los nombres de las listas del sistema, como ISO Currency, son datos existentes.</p></figcaption></figure>
+Abra **Ajustes**. En **PROCESAMIENTO DE DOCUMENTOS**, despliegue **Búsqueda de datos maestros** y seleccione **Lista de valores**.
 
-## Crear una lista
+Utilice **Listas de búsqueda** en el panel izquierdo para encontrar una lista y seleccione su nombre. Sus entradas aparecen a la derecha. El número junto al nombre de la lista muestra la cantidad de entradas cargadas. El icono de carpeta con estrella identifica una lista definida por el sistema.
 
-1. Seleccione **Nuevo** encima de los nombres de las listas.
-2. Introduzca el **Nombre** y, si necesita limitar el ámbito, seleccione las **Suborganizaciones**.
-3. **Guardar** crea la lista. La **X** cierra el diálogo sin crear una lista nueva.
+<figure><img src="../../../.gitbook/assets/list-of-values-initial-es-20261112.png" alt="Vista inicial de Lista de valores con Listas de búsqueda y Nuevo en el panel izquierdo, antes de seleccionar una lista"><figcaption><p>Encuentre y seleccione una lista en el panel izquierdo para abrir sus entradas. Los nombres de las listas de la imagen son datos de ejemplo.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-36-new-list-es-20261031.png" alt="Nuevo abre el diálogo vacío Crear nueva lista con Nombre, Suborganizaciones, X y Guardar. Esta vista no muestra una lista guardada."><figcaption><p>Nuevo abre el diálogo vacío Crear nueva lista con Nombre, Suborganizaciones, X y Guardar. Esta vista no muestra una lista guardada.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/list-of-values-selected-es-20261112.png" alt="Lista seleccionada en el panel izquierdo con Nuevo, A-Z, Z-A, Añadir fila y los encabezados Valor, Suborganización, Sinónimos, Idioma, Etiqueta y Acciones"><figcaption><p>Al seleccionar una lista existente se abre la tabla de entradas. A-Z y Z-A ordenan sus valores; Añadir fila abre el formulario de una entrada nueva. Los valores y nombres de la imagen son datos de ejemplo.</p></figcaption></figure>
 
-Para eliminar una lista propia, utilice la opción de eliminación del menú de tres puntos junto a su nombre y confirme únicamente la lista prevista. Las listas del sistema no ofrecen ese menú de eliminación y no se pueden eliminar.
+## Cómo añadir o eliminar una lista
 
-## Añadir y editar entradas
+### Crear una nueva lista de valores
 
-1. Seleccione la lista a la izquierda y pulse **Añadir fila** encima de la tabla.
-2. Introduzca el **Valor** almacenado y, si corresponde, su **Suborganización**.
-3. Añada los **Sinónimos** necesarios. Confirme cada uno con **Enter** para que quede añadido al campo.
-4. En **Traducciones**, seleccione un **Idioma** e introduzca una **Etiqueta** no vacía. Una entrada nueva necesita al menos una traducción completa.
-5. **Guardar** crea la entrada. **Cancelar** o la **X** cierra el formulario sin guardarla.
+1. Seleccione **Nuevo** encima de los nombres de las listas en el panel izquierdo.
+2. Introduzca un **Nombre**.
+3. De forma opcional, seleccione **Suborganizaciones** para limitar el ámbito de la lista.
+4. Seleccione **Guardar** para crearla. Cierre el diálogo con **X** para salir sin crear una lista.
 
-<figure><img src="../../../.gitbook/assets/dbdc-36-add-row-es-20261031.png" alt="Añadir fila abre Crear valores debajo de la tabla: Valor, Suborganización, Sinónimos, Idioma, Etiqueta y Añadir traducción. Guardar crea la entrada; Cancelar descarta el borrador sin guardar."><figcaption><p>Añadir fila abre Crear valores debajo de la tabla: Valor, Suborganización, Sinónimos, Idioma, Etiqueta y Añadir traducción. Guardar crea la entrada; Cancelar descarta el borrador sin guardar.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/list-of-values-create-es-20261112.png" alt="Diálogo Crear nueva lista con Nombre, Suborganizaciones, el control de cierre X y Guardar"><figcaption><p>Nuevo abre este diálogo. El Nombre identifica la lista; Suborganizaciones limita su ámbito. Guardar crea la lista. El nombre escrito en la imagen es un dato de ejemplo.</p></figcaption></figure>
 
-Para editar, seleccione una fila o su opción de edición en **Acciones**. Los campos protegidos permanecen de solo lectura; el valor almacenado también puede estar bloqueado cuando ya hay traducciones. **Cancelar** descarta los cambios sin guardar.
+### Cómo eliminar una lista
 
-La opción de duplicación del menú de la fila crea otra entrada. Para varias entradas, seleccione sus casillas y use el control de copia encima de la tabla. La eliminación está disponible para las entradas propias y elimina la entrada seleccionada; las entradas del sistema no ofrecen esta acción. Una lista del sistema puede contener tanto entradas protegidas como entradas propias.
+Para una lista creada por su organización, abra el menú de tres puntos junto a su nombre y seleccione **Borrar**. Un diálogo de confirmación pregunta si desea eliminarla. Confirme únicamente la lista prevista. Las listas definidas por el sistema no tienen menú de eliminación.
 
-## Importar un archivo CSV
+## Cómo añadir, editar o quitar valores de una lista existente
 
-Esta interfaz no incluye el antiguo comando **Acciones → Cargar CSV**. Los pasos antiguos de carga CSV no se aplican a esta pantalla; utilice **Añadir fila** para introducir valores aquí.
+### Añadir valores manualmente
 
-## Añadir traducciones
+1. Seleccione la lista en el panel izquierdo.
+2. Seleccione **Añadir fila** encima de su tabla. El formulario **Crear valores** se abre debajo de la tabla.
+3. Introduzca el **Valor** almacenado y, si es necesario, su **Suborganización**.
+4. De forma opcional, añada **Sinónimos**. Pulse **Enter** después de cada uno para añadirlo a la entrada.
+5. En **Traducciones**, seleccione un **Idioma** e introduzca una **Etiqueta** no vacía. Una entrada nueva necesita al menos una traducción completa.
+6. Seleccione **Guardar** para almacenar la entrada, o **Cancelar** para cerrar el formulario sin guardarla.
 
-En el formulario de la entrada, seleccione **Idioma** e introduzca la **Etiqueta**. Use **Añadir traducción** para añadir otro idioma y etiqueta. Complete o quite las filas de traducción vacías antes de guardar. Cuando una fila de traducción se puede quitar, su papelera la elimina primero del formulario; guarde para aplicar el cambio.
+<figure><img src="../../../.gitbook/assets/list-of-values-add-row-es-20261112.png" alt="Formulario Crear valores abierto por Añadir fila debajo de la tabla, con Valor, Suborganización, Sinónimos, Idioma, Etiqueta, Añadir traducción, Cancelar y Guardar"><figcaption><p>Añadir fila abre el formulario de la entrada debajo de la tabla. Introduzca el valor y al menos una etiqueta de idioma antes de guardar; Cancelar cierra el formulario sin almacenar ninguna entrada. Los valores introducidos en la imagen son datos de ejemplo.</p></figcaption></figure>
 
-La etiqueta puede variar por idioma, pero el valor técnico permanece igual. Si no hay etiqueta para el idioma activo, se muestra el valor técnico. Las entradas del sistema y las traducciones heredadas pueden tener campos protegidos; modifique únicamente los datos propios que permiten edición.
+### Importar valores desde un archivo CSV
+
+Esta interfaz no incluye el antiguo comando **Acciones → Cargar CSV**. Los pasos anteriores de carga de CSV no se aplican a esta pantalla. Utilice **Añadir fila** para introducir valores aquí.
+
+### Editar valores existentes
+
+Seleccione una fila para abrir su formulario de edición debajo de la tabla, o use **Editar** en el menú **Acciones** de la fila. Actualice los campos editables y guarde el formulario con **Guardar cambios**. **Cancelar** descarta la edición no guardada. Los campos protegidos permanecen de solo lectura; el valor almacenado también puede estar bloqueado cuando ya existen traducciones.
+
+El menú de la fila también ofrece **Duplicar**. Para duplicar varias entradas, seleccione sus casillas y use el botón de copia que aparece encima de la tabla. La duplicación crea entradas adicionales.
+
+### Eliminar valores
+
+Para una entrada creada por su organización, el menú **Acciones** de la fila incluye **Borrar**. Esta acción elimina la entrada, así que utilícela solo con una entrada que desee quitar. Las entradas definidas por el sistema no ofrecen esta acción.
+
+## Añadir traducciones a sus valores
+
+En el formulario de la entrada, elija un **Idioma** e introduzca su **Etiqueta**. Seleccione **Añadir traducción** para otro idioma y etiqueta. Complete o quite las filas de traducción vacías adicionales antes de guardar. Cuando hay una fila de traducción que se puede quitar, su control de papelera elimina esa traducción del formulario; guarde el formulario para almacenar el cambio.
+
+## Listas y filas definidas por el sistema
+
+Las listas del sistema se marcan con un icono de carpeta con estrella y no se pueden eliminar. Pueden contener entradas adicionales creadas por su organización.
+
+Las entradas definidas por el sistema y las traducciones heredadas tienen campos protegidos. Utilice los controles editables para las entradas y traducciones propias de su organización. La ausencia de una acción de eliminación identifica una entrada protegida; una lista del sistema puede contener tanto entradas protegidas como entradas creadas por la organización.

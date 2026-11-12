@@ -1,10 +1,10 @@
 # Ordem de compra
 
-A secção **Ordem de compra** em **Mais Configurações** de um tipo de documento controla a forma como os documentos desse tipo são conciliados com as ordens de compra. As configurações aplicam-se a um tipo de documento de cada vez, por isso abra primeiro o tipo de documento que pretende alterar em **Configurações → Tipos de documento**.
+A secção **Ordem de compra** em **Mais Configurações** de um tipo de documento controla a forma como os documentos desse tipo são conciliados com as ordens de compra. As configurações aplicam-se a um tipo de documento de cada vez, por isso abra primeiro o tipo de documento que pretende alterar em **Configurações → Tipos de documentos**.
 
 Para encontrar as configurações de uma fatura:
 
-1. Abra **Configurações → Tipos de documento**.
+1. Abra **Configurações → Tipos de documentos**.
 2. Localize o cartão **Fatura** e selecione o ícone de engrenagem (**Mais Configurações**).
 3. Abra a secção **Ordem de compra** para rever as opções de conciliação e de validação.
 

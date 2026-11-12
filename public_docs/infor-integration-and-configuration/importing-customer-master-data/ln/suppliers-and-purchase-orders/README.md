@@ -16,7 +16,9 @@ Op dit scherm maakt u een nieuw verbindingspunt aan.
 
 <figure><img src="https://lh7-us.googleusercontent.com/eh1NyUDTS0k-59ePv89PjZpfh5IT0iyFPoV5M9xmo3fmai-Iz0ptQFXgI9onZM-sTICHii32MkAw22AhZZAT5iKs_Hjw3_NDT49XG_KRONAvyK4OuL-bX667F9UGr-juckRmcE2hATOkSQ5x8QlugxU" alt="Historisch scherm Connection Points met een groene pijl die naar Toevoegen wijst."><figcaption><p>Kies Toevoegen om een verbindingspunt aan te maken; de groene markering geeft de actie in deze historische interface aan.</p></figcaption></figure>
 
-Selecteer de API. Geef het verbindingspunt een naam en beschrijving die de aard en de omgeving ervan weergeeft. Importeer op het tabblad Connection het serviceaccount dat u voor de betreffende omgeving hebt aangemaakt.
+Selecteer de API.
+
+Geef het verbindingspunt een naam en beschrijving die de aard en de omgeving ervan weergeeft. Importeer op het tabblad Connection het serviceaccount dat u voor de betreffende omgeving hebt aangemaakt.
 
 <figure><img src="https://lh7-us.googleusercontent.com/WZKJSckXWzztmEHmySnz6oDSbgFDvPmxku48HCiDJn7O1vTUcpUBYnwDHMT_Ja8aSGd8sFm-YQQYzyn5DnYLw77PQeFwTxcOV6C9aPWHyj2VofevH4S6ciyduIUy5YaNvmuNV6WgVJKOZ89_6oJjuq0" alt="Historisch API-verbindingspunt DocBits-DEV-Demo-Import met het tabblad Connection geselecteerd en een importbesturing voor het serviceaccount."><figcaption><p>Historisch tabblad Connection. De getoonde serviceaccount- en verbindingsnamen horen bij de voorbeeldomgeving.</p></figcaption></figure>
 
@@ -76,7 +78,7 @@ Nadat de integratiebeheerder het verbindingspunt, de documentroutes en de actiev
 
 ### **PurchaseOrder**
 
-Selecteer in het linkermenu van het bovenstaande menu Common → BOD-Messaging → Publish BODs → Publish Order Management Transactional Data
+Kies in het linkermenu van de bovenstaande pagina Common → BOD-Messaging → Publish BODs → Publish Order Management Transactional Data
 
 Open het tabblad PurchaseOrder en schakel het selectievakje in.
 
@@ -86,7 +88,7 @@ Open het tabblad PurchaseOrder en schakel het selectievakje in.
 
 Ga vanaf de LN-startpagina in het linkermenu naar Common → BOD-Messaging → Publish BODs → Publish Logistics Master Data
 
-Open het tabblad PartyMaster en schakel het vakje Supplier → Buy-from of SupplierPartyMaster in.
+Open het tabblad PartyMaster en schakel het selectievakje Supplier → Buy-from of SupplierPartyMaster in.
 
 <figure><img src="https://lh7-us.googleusercontent.com/KY_cFaUegEZmqAlcsBLVOTaxKOkkBkMeaQUbv996H946oOa-jvxB3lDqrkWV-17elt0mZDGews6Lr_6ojbFXtReDnV1PmqzwLXfE-IX5fKJr2IeJkAdnf1R9Sk5WYoxOLGolgo2MPQ3SNeoPnQ-ysy0" alt="Historische sessie Publish Logistic Master Data met PartyMaster geselecteerd en het vakje Supplier Buy-from ingeschakeld."><figcaption><p>Historische leveranciersselectie op PartyMaster. Kies de partnerrollen die uw integratie nodig heeft en controleer het selectiebereik.</p></figcaption></figure>
 
@@ -110,4 +112,4 @@ Controleer in Infor ION of de aflevering aan de bedoelde DocBits-organisatie is 
 
 <figure><img src="../../../../.gitbook/assets/dbdc-1147-purchase-order-nl-20261112.png" alt="Nederlandse weergave van Stamgegevens opzoeken in DocBits met de tabbladen Leverancier en Inkooporder, het tabblad Inkooporder actief en een tabel met verzonnen inkooporderrijen."><figcaption><p>Controleweergave voor inkooporders in de DocBits-sandbox (versie 11.27.7). De getoonde orders PO-4500 tot en met PO-4509 zijn verzonnen voorbeeldgegevens en de kolomkoppen van de tabel blijven in deze versie Engels; vergelijk een echt testorder en het bedrijf met LN en ION.</p></figcaption></figure>
 
-De Engelse Dev-weergaven zijn op 29 oktober 2026 gecontroleerd zonder een BOD te publiceren, een bestand te importeren of stamgegevens te wijzigen. Recordrijen zijn in die afbeeldingen weggelaten; deze afbeeldingen tonen waar u controleert, niet een voltooide LN-overdracht. Als het verwachte record ontbreekt, controleer dan de LN-publicatielogs, de ION-routering, de organisatie en de BOD-mapping voordat u opnieuw uitvoert.
+De Engelse Dev-weergaven zijn op 29 oktober 2026 gecontroleerd zonder een BOD te publiceren, een bestand te importeren of stamgegevens te wijzigen. In die Engelse afbeeldingen zijn recordrijen weggelaten; de twee Nederlandse opnamen hierboven tonen verzonnen voorbeeldrijen en alleen waar u controleert, niet een voltooide LN-overdracht. Als het verwachte record ontbreekt, controleer dan de LN-publicatielogs, de ION-routering, de organisatie en de BOD-mapping voordat u opnieuw uitvoert.

@@ -22,7 +22,7 @@ Donnez au point de connexion un nom et une description qui décrivent sa nature 
 
 <figure><img src="https://lh7-us.googleusercontent.com/UCuGTwKARn3auhYdDDUbQ78Ok3qBNE1KpGEMealfPvgRju4VRLn2AfKaL5tLDcAh00poLHNQU-Q6koBhG5RdxK4CJrrL6Qeb4D52qnhw3aG1LZniuzHRXwOyzGcJvRnQtLGbp6PIseXvWxHlk-AMlz0" alt="Point de connexion historique DocBits-DEV-Demo-Import avec l'onglet Connection sélectionné et un contrôle Import de compte de service."><figcaption><p>Onglet historique Connection. Les noms affichés renvoient à l'environnement d'exemple ; utilisez votre propre compte de service.</p></figcaption></figure>
 
-Passez ensuite à l'onglet Documents. Vous devez ajouter les BOD suivants au point de connexion. Tous ne sont pas nécessaires aux données de base des fournisseurs et des commandes fournisseur, mais ils seront utiles lorsque d'autres fonctions, comme la comptabilité automatique, devront être mises en place.
+Passez ensuite à l'onglet Documents. Vous devez ajouter les BOD suivants au point de connexion. Tous ne sont pas nécessaires aux données de base des fournisseurs et des commandes fournisseur, mais ils seront utiles lorsque d'autres fonctions, comme la comptabilisation automatique, devront être mises en place.
 
 <figure><img src="https://lh7-us.googleusercontent.com/25Hizkx23i1c8-QHSrE7mPAH7zW6ux9iHTcP8_l6EJJy548CvuNPF1R86Fuqx5iYZP9HF-Z4G6hntkaUtlOMetHIzAVZyBM6VIQ-vsvy6P5YBuAj4yscdJe8ySOHwIRQwFpShRiFGC83v467LLBaXq8" alt="Onglet historique Documents listant Acknowledge.SupplierInvoice, Sync.ChartOfAccounts, Sync.PurchaseOrder, Sync.RemitToPartyMaster et Sync.SupplierPartyMaster."><figcaption><p>Liste historique des documents reçus. Le BOD fournisseur affiché est Sync.RemitToPartyMaster, sans suffixe Data.</p></figcaption></figure>
 

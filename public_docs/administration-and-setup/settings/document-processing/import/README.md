@@ -91,7 +91,7 @@ Si une pièce jointe ne peut pas être importée et que l'option **« Répondez 
 ### Ajouter une nouvelle connexion IMAP
 
 1. Cliquez sur **Nouveau** dans **Importation d'e-mails** et sélectionnez **IMAP** sous **Protocole**.
-2. Dans **Configuration du serveur de messagerie**, saisissez le nom du serveur, le port, le cryptage, le nom d'utilisateur, l'adresse e-mail et le mot de passe. Utilisez les valeurs requises par votre fournisseur de messagerie ; le 993 affiché est un exemple de port, et non un paramètre complété.
+2. Dans **Configuration du serveur de messagerie**, saisissez le nom du serveur, le port, le cryptage, le nom d'utilisateur, l'adresse e-mail et le mot de passe. Utilisez les valeurs requises par votre fournisseur de messagerie ; le serveur, le port et le nom d'utilisateur affichés sont des données d'exemple inventées, saisies pour cette prise de vue.
 
 <figure><img src="../../../../.gitbook/assets/import-settings-email-imap-step1-fr-20261112.png" alt="Premier pas Configuration du serveur de messagerie avec le protocole IMAP, le serveur imap.example.com, le port 993, le cryptage SSL, les champs Nom d'utilisateur, E-Mail et Mot de passe, ainsi que Annuler et Suivant ; toutes les valeurs sont des données d'exemple inventées"><figcaption><p>Le premier pas <strong>Configuration du serveur de messagerie</strong> avec des données d'exemple inventées : protocole <strong>IMAP</strong>, nom du serveur <strong>imap.example.com</strong>, port <strong>993</strong>, cryptage <strong>SSL</strong>, nom d'utilisateur <strong>alex.muster</strong>. Le mot de passe n'apparaît que sous forme de points. Rien n'a été enregistré dans cet exemple.</p></figcaption></figure>
 

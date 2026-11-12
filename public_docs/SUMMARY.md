@@ -60,6 +60,7 @@
     * [Documentstatus](end-user-and-partner-section/end-user-section/dashboard/document-status.md)
     * [Documenten filteren](end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md)
     * [Snel zoeken](end-user-and-partner-section/end-user-section/dashboard/quick-search.md)
+    * [Smart Search Ranking](end-user-and-partner-section/end-user-section/dashboard/smart-search-ranking.md)
     * [Persoonlijke dashboards](end-user-and-partner-section/end-user-section/dashboard/personal-dashboards.md)
     * [Overzicht van geüploade documenten](end-user-and-partner-section/end-user-section/dashboard/overview-of-uploaded-documents.md)
     * [Taakteller](end-user-and-partner-section/end-user-section/dashboard/task-counter.md)

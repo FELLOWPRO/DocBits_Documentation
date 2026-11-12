@@ -99,9 +99,22 @@ En la lista activo la regla probada y compruebo que el interruptor esté encendi
 
 ## Cómo acceder
 
-Abra **Panel de flujos de trabajo → Lista de flujos de trabajo** y, a continuación, haga clic en **Agregar flujo de trabajo** para crear un nuevo flujo de trabajo Standard, o haga clic en un flujo de trabajo existente para editarlo.
+Abra **Panel de flujo de trabajo → Lista de flujo de trabajo** y, a continuación, haga clic en **Nuevo flujo de trabajo** para crear un nuevo flujo de trabajo Standard, o haga clic en un flujo de trabajo existente para editarlo.
 
-<figure><img src="../../.gitbook/assets/prior-u033-es.png" alt="Lista de flujos de trabajo y controles de importación."><figcaption><p>Lista de flujos de trabajo y controles de importación.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-list-toolbar-es-20261112.png" alt="Lista de flujo de trabajo en español con el campo de búsqueda, los botones Nuevo flujo de trabajo, Plantillas e Importar flujo de trabajo y las columnas Nombre, Tipo, Orden De Ejecución Del Flujo De Trabajo, Cuando, Modificado Por, Creado El, Modificado En y Acciones"><figcaption><p>La <strong>Lista de flujo de trabajo</strong>: búsqueda, los botones <strong>Nuevo flujo de trabajo</strong>, <strong>Plantillas</strong> e <strong>Importar flujo de trabajo</strong>, y por cada flujo de trabajo el tipo, el orden de ejecución, el disparador y las <strong>Acciones</strong> de la fila.</p></figcaption></figure>
+
+El interruptor de la primera columna de cada fila muestra si un flujo de trabajo está activado; en la lista puede activarlo o desactivarlo.
+
+## Plantillas de flujo de trabajo <a id="workflow-templates"></a>
+
+El botón **Plantillas** de la barra de herramientas de la lista abre el diálogo **Plantillas de flujo de trabajo**, donde puede reutilizar flujos de trabajo ya diseñados en lugar de empezar un lienzo vacío:
+
+<figure><img src="../../.gitbook/assets/workflow-templates-dialog-es-20261112.png" alt="Diálogo Plantillas de flujo de trabajo con el campo de búsqueda, la opción Mostrar plantillas por defecto y las columnas Nombre, Modificado Por, Modificado En y Acciones"><figcaption><p>El diálogo <strong>Plantillas de flujo de trabajo</strong>: campo de búsqueda, la opción <strong>Mostrar plantillas por defecto</strong> y las columnas <strong>Nombre</strong>, <strong>Modificado Por</strong>, <strong>Modificado En</strong> y <strong>Acciones</strong>.</p></figcaption></figure>
+
+- La lista muestra el **Nombre**, **Modificado Por** y **Modificado En** de cada plantilla.
+- Con **Mostrar plantillas por defecto** activada, la lista incluye también las plantillas que DocBits aporta; aparecen marcadas como **Plantilla por defecto**.
+- El menú **Acciones** de cada fila ofrece **Duplicar**. Las plantillas guardadas ofrecen además **Borrar**; las plantillas por defecto no se pueden borrar.
+- Haga clic en una fila para abrir la plantilla en el diseñador de plantillas, que utiliza el mismo lienzo Cuando / Y / Entonces que el constructor **Flujo estándar**. Ajuste las tarjetas y guarde los cambios con **Guardar plantilla**, o cree un flujo de trabajo a partir de la plantilla con **Guardar flujo de trabajo**.
 
 ## El modelo When / And / Then
 

@@ -73,7 +73,7 @@
   * [Pending Input](end-user-and-partner-section/end-user-section/pending-input.md)
   * [Painel de avisos de expedição](end-user-and-partner-section/end-user-section/advance-shipment-dashboard.md)
   * [Painel de ordens de compra](end-user-and-partner-section/end-user-section/purchase-order-dashboard.md)
-  * [Detalhes do Pedido de Compra](end-user-and-partner-section/end-user-section/purchase-order-detail.md)
+    * [Detalhes do Pedido de Compra](end-user-and-partner-section/end-user-section/purchase-order-detail.md)
   * [Painel de faturas](end-user-and-partner-section/end-user-section/invoice-dashboard.md)
   * [Interpretar as estatísticas de entrega dos fornecedores](end-user-and-partner-section/end-user-section/supplier-statistics.md)
   * [Painel de ordens de expedição](end-user-and-partner-section/end-user-section/shipment-order-dashboard.md)

@@ -844,7 +844,6 @@
     * [Automatyczne księgowanie](administration-and-setup/setup/testing/auto-accounting/README.md)
       * [LN](administration-and-setup/setup/testing/auto-accounting/ln.md)
       * [M3](administration-and-setup/setup/testing/auto-accounting/m3.md)
-  * [Portal dostawców: poprzednia instrukcja](administration-and-setup/setup/supplier-portal-old.md)
   * [Portal dostawców](administration-and-setup/setup/supplier-portal/README.md)
     * [Rejestracja dostawców](administration-and-setup/setup/supplier-portal/supplier-registration.md)
   * [WatchDog](administration-and-setup/setup/watchdog/README.md)

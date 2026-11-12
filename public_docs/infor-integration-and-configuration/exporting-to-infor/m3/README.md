@@ -109,7 +109,7 @@ Dla opcji **Infor IDM + M3** formularz wymaga **Pliku API ION** (`.ionapi`, obow
 
 <figure><img src="../../../.gitbook/assets/dbdc-1155-export-files-pl-20261112.png" alt="Polski wycinek sekcji Eksportuj konfigurację z trzema pustymi obszarami przesyłania: Plik API ION, Plik mapowania IDM i Plik mapowania M3, a pod nimi komunikat o eksporcie dokumentów do Infor M3 przez interfejs API ION."><figcaption><p>Pola plików dla opcji Infor IDM + M3 w Sandbox. Nie przesłano żadnego pliku i konfiguracji nie zapisano.</p></figcaption></figure>
 
-Przejrzyj typ dokumentu, organizację i nazwy plików przed kliknięciem **Zapisz**. Gdy przepływ Infor będzie aktywny, przetestuj go na jednej fakturze poza środowiskiem produkcyjnym i potwierdź jej status w DocBits, Infor ION i M3. Zapisana konfiguracja nie jest dowodem, że faktura dotarła do M3.
+Przycisk **Anulować** zamyka formularz bez zapisywania. Przejrzyj typ dokumentu, organizację i nazwy plików przed kliknięciem **Zapisz**. Gdy przepływ Infor będzie aktywny, przetestuj go na jednej fakturze poza środowiskiem produkcyjnym i potwierdź jej status w DocBits, Infor ION i M3. Zapisana konfiguracja nie jest dowodem, że faktura dotarła do M3.
 
 ### Wymagana weryfikacja Infor
 

@@ -2,9 +2,9 @@
 description: "Field is, Docfield is of Compare two Fields kiezen"
 ---
 
-# P1: Field is, Docfield is of Compare two Fields kiezen
+# Field is, Docfield is of Compare two Fields kiezen
 
-Drie voorwaardekaarten lijken in de ontwerper op elkaar, en hun verschil bepaalt wat een regel werkelijk kan opvangen. Deze pagina helpt u de juiste te kiezen en geeft daarna drie korte oefeningen die laten zien wat elke kaart teruggeeft. Aan het eind kunt u "leeg" van "nul", "onwaar" van "ontbrekend" en een niet vervulde voorwaarde van een fout onderscheiden.
+Drie voorwaardekaarten lijken in de ontwerper op elkaar, en hun verschil bepaalt wat een regel werkelijk kan opvangen. Deze pagina helpt u de juiste te kiezen en geeft daarna drie korte oefeningen die laten zien wat elke kaart teruggeeft. Aan het eind kunt u "leeg" van het getal `0`, "onwaar" van "ontbrekend" en een niet vervulde voorwaarde van een fout onderscheiden; technische `null` telt als leeg, het getal `0` niet.
 
 Doe de oefeningen in Advanced Test, in uw eigen testorganisatie, met een synthetisch document. Hier wordt geen klantdocument aangeraakt.
 

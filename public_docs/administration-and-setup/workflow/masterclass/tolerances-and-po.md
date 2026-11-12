@@ -2,7 +2,7 @@
 description: "Referentie voor toleranties en PO-vergelijkingen vastleggen"
 ---
 
-# P1: Referentie voor toleranties en PO-vergelijkingen vastleggen
+# Referentie voor toleranties en PO-vergelijkingen vastleggen
 
 Een tolerantie van 2 procent is geen vast bedrag. Het is 2 procent van de zijde waarmee u vergelijkt, dus dezelfde factuurregel kan in de ene richting afvallen en in de andere slagen. Deze pagina laat dat zien op één waardepaar, geeft u drie oefeningen om het na te bouwen en noemt daarna de zes vergelijkingsrichtingen en de kaartparameters die u in uw eigen test kunt overnemen.
 

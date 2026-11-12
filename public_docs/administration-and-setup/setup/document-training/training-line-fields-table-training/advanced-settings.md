@@ -70,7 +70,9 @@ A continuación define la columna clave de agrupación, por ejemplo _Posición_,
 
 <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-group-key-es-20261112.png" alt="Tabla extraída con el menú de la columna Posición abierto, que muestra Eliminar columna, Hileras grupales y Regular."><figcaption><p>Elige Hileras grupales en el menú de la columna clave de agrupación (Posición).</p></figcaption></figure>
 
-La agrupación en sí y las demás herramientas de columna que funcionan junto con ella (selección manual de filas, mapeo de columnas y regex) se explican paso a paso en [Estructuración y Mejora de la Extracción de Tablas en DocBits](improving-table-extraction-with-regex.md).
+Las otras dos entradas de ese menú actúan sobre la misma columna: con **Eliminar columna** ocultas la columna de la tabla extraída (la asignación de nombre de esa columna se libera y, si era la columna de agrupación, la agrupación se cancela); con **Regular** abres el diálogo **Gestionar reglas** en la pestaña REGULAR, donde defines la expresión regular de la columna, explicada en [Estructuración y Mejora de la Extracción de Tablas en DocBits](improving-table-extraction-with-regex.md).
+
+La agrupación en sí y las demás herramientas de columna que funcionan junto con ella (selección manual de filas y mapeo de columnas) se explican paso a paso en [Estructuración y Mejora de la Extracción de Tablas en DocBits](improving-table-extraction-with-regex.md).
 
 **Resultado:**
 

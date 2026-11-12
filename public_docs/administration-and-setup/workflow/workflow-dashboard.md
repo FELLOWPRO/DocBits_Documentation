@@ -1,8 +1,14 @@
 # Dashboard
 
-Het **Workflow-dashboard** is het startpunt van het workflowgedeelte. Het laat zien hoe uw workflows presteren (uitvoeringstotalen, slaag- en faalpercentages, een grafiek van uitvoeringen in de tijd en recente activiteit) en geeft toegang tot de workflowlijst, de testmanager en de Card SDK.
+Het **Workflow-dashboard** is het startpunt van het workflowgedeelte. Het laat zien hoe uw workflows presteren (uitvoeringstotalen, slaag- en faalpercentages, een grafiek van uitvoeringen in de tijd en recente activiteit) en geeft toegang tot de workflowlijst, de testmanager en de Kaart-SDK.
 
-<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard met uitvoeringstotalen, slaag- en faalpercentages, de uitvoeringsgrafiek en recente activiteit"><figcaption><p>Het Workflow Dashboard: uitvoeringstotalen, slaag-/faalpercentages en recente activiteit voor elke workflow.</p></figcaption></figure>
+De deelweergaven hieronder tonen de volumemetrieken, het resultaat van de uitvoeringen en de grafiek van de uitvoeringen. Recente activiteit en de navigatieknoppen vallen buiten deze uitsneden.
+
+<figure><img src="../../.gitbook/assets/workflow-kpi-volume-nl-20261112.png" alt="Volumemetrieken: vandaag uitgevoerde werkprocessen, in de gekozen periode aangemaakte workflows en het totale aantal runs."><figcaption><p>Volumemetrieken: vandaag uitgevoerde werkprocessen, in de gekozen periode aangemaakte workflows en het totale aantal runs.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-kpi-outcomes-nl-20261112.png" alt="Resultaat van de uitvoeringen: succesvolle runs, succespercentage en faalpercentage, met het getoonde aantal runs als context."><figcaption><p>Resultaat van de uitvoeringen: succesvolle runs, succespercentage en faalpercentage, met het getoonde aantal runs als context.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-chart-nl-20261112.png" alt="Werkstroomuitvoeringen over de zeven getoonde maanden, met de reeksen Succes en Mislukt apart weergegeven."><figcaption><p>Werkstroomuitvoeringen over de zeven getoonde maanden, met de reeksen Succes en Mislukt apart weergegeven.</p></figcaption></figure>
 
 ## Tabbladen
 
@@ -14,19 +20,19 @@ Het **Workflow-dashboard** is het startpunt van het workflowgedeelte. Het laat z
 
 **Video:** Een Workflow als JSON downloaden en uploaden · 0:55 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/nl.vtt)
 
-- **Dashboard** — uitvoeringsstatistieken en recente activiteit (hierboven weergegeven).
+- **Dashboard** — uitvoeringsstatistieken en recente activiteit (hierboven afgebeeld).
 - **Workflowlijst** — elke workflow met zijn type, uitvoeringsvolgorde en trigger. Maak een nieuwe aan met **Nieuwe workflow**.
 - **Test Manager-lijst** — testscenario's die uw workflows valideren; voer ze uit met **Alle tests uitvoeren**.
 - **Licentie** — informatie over workflowlicenties.
-- **Card SDK** — bouw en upload aangepaste workflowkaarten (zie [Card SDK](card-sdk.md)).
+- **Kaart-SDK** — bouw en upload aangepaste workflowkaarten (zie [Kaart-SDK](card-sdk.md)).
 
-De werkbalk biedt ook **Sjablonen**, waarmee de bibliotheek [Workflow Templates](standard-workflow-builder.md#workflow-templates) wordt geopend, en **Workflow importeren**, waarmee u een workflow uit een JSON-bestand importeert.
+De werkbalk biedt ook **Sjablonen**, waarmee de bibliotheek [Workflowsjablonen](standard-workflow-builder.md#workflowsjablonen) wordt geopend, en **Workflow importeren**, waarmee u een workflow uit een JSON-bestand importeert.
 
-Met de **Testbeheer** kunt u per workflow testscenario's opslaan en gezamenlijk uitvoeren, zodat u kunt bevestigen dat uw workflows na wijzigingen nog steeds correct werken:
+Met het tabblad **Test Manager-lijst** kunt u per workflow testscenario's opslaan en gezamenlijk uitvoeren, zodat u kunt bevestigen dat uw workflows na wijzigingen nog steeds correct werken:
 
 <figure><img src="../../.gitbook/assets/prior-u032-nl.png" alt="Lijst met workflowtestscenario&#x27;s."><figcaption><p>Lijst met workflowtestscenario&#x27;s.</p></figcaption></figure>
 
 ## Volgende stappen
 
-- Bouw een lineaire automatisering met de **Standaardworkflow**-builder.
+- Bouw een lineaire automatisering met de **Standaardworkflow**-builder — zie [Toegang krijgen](standard-workflow-builder.md#toegang-krijgen).
 - Bouw een vertakkende flow met de **Geavanceerde workflow**-builder.

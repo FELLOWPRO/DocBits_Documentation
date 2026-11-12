@@ -63,12 +63,12 @@ description: "从入门到专家的学习路径"
 **目标:** 在相信条件的结果之前，先弄清它到底比较了什么。
 
 1. 用缺失字段、`null`、空文本、空格、`false`、`0`、`"0"` 和 `"false"` 测试空值检查，并记录哪些被视为空。
-2. 把同一个 2 个百分点的容差算两次：一次以采购订单为参考（订单 100、单据 102.02），一次以单据为参考。
+2. 把同一个 2%的相对容差算两次：一次以采购订单为参考（订单 100、单据 102.02），一次以单据为参考。
 3. 在订单卡片上切换 Any 和 All，数一数实际比较了多少行。
 
-**完成标准:** 您能从值、类型、参考侧和现有数据解释真、假和错误。在订单卡片的版本 5 中，单没有可比行属于数据错误，不是成功审批。
+**完成标准:** 您能从值、类型、参考侧和现有数据解释真、假和错误。在订单卡片的版本 5 中，单据没有可比行属于数据错误，不是成功审批。
 
-**延伸阅读:** [P1：Field is、Docfield is 与两个字段比较](masterclass/field-conditions.md) · [P1：让容差和订单参考侧没有歧义](masterclass/tolerances-and-po.md)
+**延伸阅读:** [Field is、Docfield is 与两个字段比较](masterclass/field-conditions.md) · [让容差和订单参考侧没有歧义](masterclass/tolerances-and-po.md)
 
 ## 4. 业务规则与审批 <a href="#level-4" id="level-4"></a>
 
@@ -92,7 +92,7 @@ description: "从入门到专家的学习路径"
 
 **完成标准:** 您能区分责任人、任务、通知和真实批准；A → 批准 → B → 批准按这个顺序发生；A 的拒绝阻止了导出；接收人缺失没有算作已完成批准。
 
-**延伸阅读:** [P1：把决策表追踪到分配](masterclass/decision-table-routing.md) · [P1：区分分配、任务和连续审批](masterclass/assignment-task-sequential.md)
+**延伸阅读:** [把决策表追踪到分配](masterclass/decision-table-routing.md) · [区分分配、任务和连续审批](masterclass/assignment-task-sequential.md)
 
 ## 5. Advanced 控制流与子工作流 <a href="#level-5" id="level-5"></a>
 
@@ -108,7 +108,7 @@ description: "从入门到专家的学习路径"
 
 **完成标准:** 您能解释 MERGE-04 案例中第 2 步的测试与运行差异、来源如何计数以及错误会往哪里走。Run Workflow 调用显示绿色仍需在目标侧核对。这里的 v2 指案例图的第二个版本：每条路径的状态卡直接进入共同的收尾卡，没有等待中的 OR 节点。
 
-**延伸阅读:** [P0：正确连接 Wait ALL、Wait ANY 和 OR](masterclass/control-nodes.md) · [P0：理解 Run Workflow、目标条件和错误](masterclass/run-workflow.md) · [Advanced 业务案例：发票路由](advanced-workflow-case-study.md)
+**延伸阅读:** [正确连接 Wait ALL、Wait ANY 和 OR](masterclass/control-nodes.md) · [理解 Run Workflow、目标条件和错误](masterclass/run-workflow.md) · [Advanced 业务案例：发票路由](advanced-workflow-case-study.md)
 
 ## 6. 计算、接口与导出 <a href="#level-6" id="level-6"></a>
 
@@ -124,7 +124,7 @@ description: "从入门到专家的学习路径"
 
 **完成标准:** 字段里的后续值、接收方收到以及 ERP 处理各自需要独立依据。模拟或排队的导出不算送达。
 
-**延伸阅读:** [P1：计算表格并检查正则依赖](masterclass/table-calculations.md) · [P1：检查 API 调用与响应的后续使用](masterclass/api-response-contract.md) · [P1：导出变体、未完成任务和收尾状态](masterclass/export-lifecycle.md)
+**延伸阅读:** [计算表格并检查正则依赖](masterclass/table-calculations.md) · [检查 API 调用与响应的后续使用](masterclass/api-response-contract.md) · [导出变体、未完成任务和收尾状态](masterclass/export-lifecycle.md)
 
 ## 7. 变更与专家运维 <a href="#level-7" id="level-7"></a>
 

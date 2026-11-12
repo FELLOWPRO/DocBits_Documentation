@@ -2,7 +2,7 @@
 description: "Préciser la référence des tolérances et des comparaisons PO"
 ---
 
-# P1 : préciser la référence des tolérances et comparaisons PO
+# préciser la référence des tolérances et comparaisons PO
 
 Une tolérance de 2 pour cent n’est pas un montant fixe. C’est 2 pour cent du côté avec lequel vous comparez, donc la même ligne de facture peut échouer dans un sens et passer dans l’autre. Cette page le montre sur une paire de valeurs, vous donne trois exercices pour le reproduire, puis liste les six directions de comparaison et les paramètres de carte que vous pouvez reprendre dans votre propre test.
 

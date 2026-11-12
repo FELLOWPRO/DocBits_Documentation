@@ -2,9 +2,9 @@
 description: "Choisir Field is, Docfield is ou Compare two Fields"
 ---
 
-# P1 : choisir Field is, Docfield is ou Compare two Fields
+# choisir Field is, Docfield is ou Compare two Fields
 
-Trois cartes de condition se ressemblent dans le concepteur, et leur différence décide de ce qu’une règle peut réellement détecter. Cette page vous aide à choisir la bonne, puis vous propose trois exercices courts qui montrent ce que chaque carte renvoie. À la fin, vous saurez distinguer « vide » de « zéro », « faux » de « absent », et une condition non remplie d’une erreur.
+Trois cartes de condition se ressemblent dans le concepteur, et leur différence décide de ce qu’une règle peut réellement détecter. Cette page vous aide à choisir la bonne, puis vous propose trois exercices courts qui montrent ce que chaque carte renvoie. À la fin, vous saurez distinguer « vide » du nombre `0`, « faux » de « absent », et une condition non remplie d’une erreur ; le `null` technique compte comme vide, le nombre `0` non.
 
 Faites les exercices dans Advanced Test, dans votre propre organisation de test, avec un document synthétique. Rien ici ne touche un document client.
 

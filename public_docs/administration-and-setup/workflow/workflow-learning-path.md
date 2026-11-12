@@ -47,7 +47,7 @@ Siedem poziomów prowadzi od pierwszego spojrzenia na projektanta workflow do sa
 **Cel:** Doprowadzić regułę od projektanta do sprawdzonego wyniku bez dotykania dokumentu.
 
 1. Zbuduj ją w Advanced Builder: When Invoice → And invoice\_id = WF-TRAINING-001 → And total\_amount > 1000 → Then wf\_training\_route = REVIEW. Reguła liniowa tej wielkości nie potrzebuje węzła sterowania.
-2. Zapisz ją i sprawdź na liście reguł, czy nadal jest nieaktywna, bo zapis nowej reguły może ją już aktywować. Advanced Test to osobna powierzchnia wykonania: ocenia graf w kreatorze, a nie aktywowaną regułę.
+2. Zapisz ją i sprawdź na liście reguł, czy nadal jest nieaktywna, bo zapis nowej reguły może ją już aktywować. Advanced Test to osobny tryb testowania: sprawdza graf zbudowany w kreatorze, a nie aktywowaną regułę.
 3. Uruchom Advanced Test z pełnymi danymi dla 999, 1000 i 1000.01. Zanotuj dla każdego przypadku typ pola, operator i wybrane wyjście, a potem dodaj przypadek, w którym kwoty brakuje całkowicie.
 
 **Warunek ukończenia:** REVIEW jest osiągane tylko przy 1000.01, brakująca kwota pojawia się jako błąd, a nie jako zwykły wynik poniżej progu, i na końcu reguła jest znów wyłączona.
@@ -68,7 +68,7 @@ Siedem poziomów prowadzi od pierwszego spojrzenia na projektanta workflow do sa
 
 **Warunek ukończenia:** Wyjaśniasz prawdę, fałsz i błąd na podstawie wartości, typu, odniesienia i dostępnych danych. W wersji 5 karty zamówienia dokument bez porównywalnej pozycji to błąd danych, a nie udane zatwierdzenie.
 
-**Pogłębienie:** [P1: Field is, Docfield is i porównanie dwóch pól](masterclass/field-conditions.md) · [P1: Jednoznaczne tolerancje i odniesienie do zamówienia](masterclass/tolerances-and-po.md)
+**Pogłębienie:** [Field is, Docfield is i porównanie dwóch pól](masterclass/field-conditions.md) · [Jednoznaczne tolerancje i odniesienie do zamówienia](masterclass/tolerances-and-po.md)
 
 ## 4. Reguły biznesowe i zatwierdzenia <a href="#level-4" id="level-4"></a>
 
@@ -92,7 +92,7 @@ Siedem poziomów prowadzi od pierwszego spojrzenia na projektanta workflow do sa
 
 **Warunek ukończenia:** Rozróżniasz odpowiedzialność, zadanie, powiadomienie i rzeczywiste zatwierdzenie; A → zatwierdzenie → B → zatwierdzenie nastąpiło w tej kolejności; odrzucenie przez A uniemożliwiło eksport; a brakujący odbiorca nie został uznany za zakończone zatwierdzenie.
 
-**Pogłębienie:** [P1: Prześledzenie tabeli decyzyjnej do przypisania](masterclass/decision-table-routing.md) · [P1: Rozróżnianie przypisania, zadania i zatwierdzenia sekwencyjnego](masterclass/assignment-task-sequential.md)
+**Pogłębienie:** [Prześledzenie tabeli decyzyjnej do przypisania](masterclass/decision-table-routing.md) · [Rozróżnianie przypisania, zadania i zatwierdzenia sekwencyjnego](masterclass/assignment-task-sequential.md)
 
 ## 5. Sterowanie Advanced i podworkflow <a href="#level-5" id="level-5"></a>
 
@@ -108,7 +108,7 @@ Siedem poziomów prowadzi od pierwszego spojrzenia na projektanta workflow do sa
 
 **Warunek ukończenia:** Wyjaśniasz różnicę z przypadku MERGE-04 między testem a przebiegiem z kroku 2, sposób liczenia źródeł i to, dokąd trafia błąd. Zielone wywołanie Run Workflow nadal wymaga sprawdzenia w celu. V2 oznacza tutaj drugą wersję grafu studium przypadku: karta statusu każdej ścieżki prowadzi bezpośrednio do wspólnej karty zakończenia, bez oczekującego węzła OR.
 
-**Pogłębienie:** [P0: Poprawne łączenie Wait ALL, Wait ANY i OR](masterclass/control-nodes.md) · [P0: Run Workflow, warunki celu i błędy](masterclass/run-workflow.md) · [Przypadek biznesowy Advanced: trasowanie faktur](advanced-workflow-case-study.md)
+**Pogłębienie:** [Poprawne łączenie Wait ALL, Wait ANY i OR](masterclass/control-nodes.md) · [Run Workflow, warunki celu i błędy](masterclass/run-workflow.md) · [Przypadek biznesowy Advanced: trasowanie faktur](advanced-workflow-case-study.md)
 
 ## 6. Obliczenia, integracja i eksport <a href="#level-6" id="level-6"></a>
 
@@ -124,7 +124,7 @@ Siedem poziomów prowadzi od pierwszego spojrzenia na projektanta workflow do sa
 
 **Warunek ukończenia:** Kolejne wartości w polu, odbiór u odbiorcy i przetworzenie w ERP mają każdy własny dowód. Symulacja ani eksport w kolejce nie są dostarczeniem.
 
-**Pogłębienie:** [P1: Obliczenia w tabeli i sprawdzenie zależności od regex](masterclass/table-calculations.md) · [P1: Wywołanie API i wykorzystanie odpowiedzi](masterclass/api-response-contract.md) · [P1: Warianty eksportu, otwarte zadania i status zakończenia](masterclass/export-lifecycle.md)
+**Pogłębienie:** [Obliczenia w tabeli i sprawdzenie zależności od regex](masterclass/table-calculations.md) · [Wywołanie API i wykorzystanie odpowiedzi](masterclass/api-response-contract.md) · [Warianty eksportu, otwarte zadania i status zakończenia](masterclass/export-lifecycle.md)
 
 ## 7. Zmiany i eksploatacja ekspercka <a href="#level-7" id="level-7"></a>
 

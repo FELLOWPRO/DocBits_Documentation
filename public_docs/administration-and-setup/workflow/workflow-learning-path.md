@@ -6,13 +6,13 @@ description: "Parcours du débutant à l’expert"
 
 Sept niveaux vous mènent du premier regard sur le concepteur de workflows jusqu’à la responsabilité d’une modification sur un workflow en production. Chaque niveau indique un objectif, les étapes à réaliser dans votre propre organisation de test et un résultat que vous pouvez vérifier. Parcourez-les dans l’ordre et construisez chaque exercice vous-même : chaque niveau s’appuie sur la configuration du précédent.
 
-1. [Orientation et modèle d’exécution](./#level-1)
-2. [Votre première règle](./#level-2)
-3. [Champs, types et limites](./#level-3)
-4. [Règles métier et approbations](./#level-4)
-5. [Contrôle Advanced et sous-workflows](./#level-5)
-6. [Calcul, intégration et export](./#level-6)
-7. [Gestion des changements et exploitation experte](./#level-7)
+1. [Orientation et modèle d’exécution](#level-1)
+2. [Votre première règle](#level-2)
+3. [Champs, types et limites](#level-3)
+4. [Règles métier et approbations](#level-4)
+5. [Contrôle Advanced et sous-workflows](#level-5)
+6. [Calcul, intégration et export](#level-6)
+7. [Gestion des changements et exploitation experte](#level-7)
 
 ## Avant de commencer
 
@@ -68,7 +68,7 @@ Sept niveaux vous mènent du premier regard sur le concepteur de workflows jusqu
 
 **Critère de fin:** Vous expliquez vrai, faux et erreur à partir de la valeur, du type, de la référence et des données présentes. Dans la version 5 de la carte de commande, un document sans ligne comparable est une erreur de données et non une approbation réussie.
 
-**Pour aller plus loin:** [P1 : Field is, Docfield is et comparer deux champs](masterclass/field-conditions.md) · [P1 : Rendre les tolérances et la référence de commande non ambiguës](masterclass/tolerances-and-po.md)
+**Pour aller plus loin:** [Field is, Docfield is et comparer deux champs](masterclass/field-conditions.md) · [Rendre les tolérances et la référence de commande non ambiguës](masterclass/tolerances-and-po.md)
 
 ## 4. Règles métier et approbations <a href="#level-4" id="level-4"></a>
 
@@ -92,7 +92,7 @@ Sept niveaux vous mènent du premier regard sur le concepteur de workflows jusqu
 
 **Critère de fin:** Vous distinguez responsabilité, tâche, notification et approbation réelle ; A → approbation → B → approbation s’est produit dans cet ordre ; un refus de A a empêché l’export ; et un destinataire manquant n’a pas été compté comme une approbation terminée.
 
-**Pour aller plus loin:** [P1 : Suivre la table de décision jusqu’à l’affectation](masterclass/decision-table-routing.md) · [P1 : Distinguer affectation, tâche et approbation séquentielle](masterclass/assignment-task-sequential.md)
+**Pour aller plus loin:** [Suivre la table de décision jusqu’à l’affectation](masterclass/decision-table-routing.md) · [Distinguer affectation, tâche et approbation séquentielle](masterclass/assignment-task-sequential.md)
 
 ## 5. Contrôle Advanced et sous-workflows <a href="#level-5" id="level-5"></a>
 
@@ -108,7 +108,7 @@ Sept niveaux vous mènent du premier regard sur le concepteur de workflows jusqu
 
 **Critère de fin:** Vous expliquez la différence du cas MERGE-04 entre test et exécution de l’étape 2, la façon dont les sources sont comptées et où va une erreur. Un appel Run Workflow au vert exige tout de même une vérification dans la cible. V2 désigne ici la deuxième version du graphe de l’étude de cas : la carte de statut de chaque chemin mène directement à la carte de clôture commune, sans nœud OR en attente.
 
-**Pour aller plus loin:** [P0 : Bien connecter Wait ALL, Wait ANY et OR](masterclass/control-nodes.md) · [P0 : Comprendre Run Workflow, les conditions de cible et les erreurs](masterclass/run-workflow.md) · [Cas métier Advanced : routage des factures](advanced-workflow-case-study.md)
+**Pour aller plus loin:** [Bien connecter Wait ALL, Wait ANY et OR](masterclass/control-nodes.md) · [Comprendre Run Workflow, les conditions de cible et les erreurs](masterclass/run-workflow.md) · [Cas métier Advanced : routage des factures](advanced-workflow-case-study.md)
 
 ## 6. Calcul, intégration et export <a href="#level-6" id="level-6"></a>
 
@@ -124,7 +124,7 @@ Sept niveaux vous mènent du premier regard sur le concepteur de workflows jusqu
 
 **Critère de fin:** Les valeurs suivantes dans le champ, la réception chez le destinataire et le traitement dans l’ERP ont chacun leur propre preuve. Une simulation ou un export mis en file n’est pas une livraison.
 
-**Pour aller plus loin:** [P1 : Calculer des tableaux et vérifier la dépendance à la regex](masterclass/table-calculations.md) · [P1 : Vérifier l’appel API et la réutilisation de la réponse](masterclass/api-response-contract.md) · [P1 : Variantes d’export, tâches ouvertes et statut de clôture](masterclass/export-lifecycle.md)
+**Pour aller plus loin:** [Calculer des tableaux et vérifier la dépendance à la regex](masterclass/table-calculations.md) · [Vérifier l’appel API et la réutilisation de la réponse](masterclass/api-response-contract.md) · [Variantes d’export, tâches ouvertes et statut de clôture](masterclass/export-lifecycle.md)
 
 ## 7. Gestion des changements et exploitation experte <a href="#level-7" id="level-7"></a>
 

@@ -61,6 +61,21 @@ Cada hallazgo es una fila en la sección **Pos**:
 
 DocBits tiene textos en lenguaje claro para las reglas más habituales. Para una regla sin ese texto, el informe muestra el mensaje técnico del validador.
 
+## Trabajar con un informe largo
+
+Una factura puede incumplir muchas reglas a la vez. El informe mantiene el veredicto y los recuentos en una cabecera fija mientras los hallazgos se desplazan, de modo que siempre ves cuánto vale la factura completa.
+
+* **Filtrar por nivel.** Los botones de filtro encima de los hallazgos reducen la lista a errores, advertencias o mensajes informativos. Las filas **Result per level** también funcionan como filtro: selecciona un nivel para ver solo sus hallazgos.
+* **Buscar.** Un campo de búsqueda filtra la lista abierta por texto, por ejemplo un código de regla, un nombre de campo o una palabra del mensaje.
+* **Expandir y contraer.** Los hallazgos se abren solos cuando son errores o cuando el informe tiene como máximo tres filas. Usa las acciones de expandir y contraer para toda la lista; cada fila también se abre por separado.
+* **Copiar un código o un XPath.** Los hallazgos incluyen una acción de copia para el código de la regla y para el XPath del elemento defectuoso, por ejemplo para un mensaje a tu administrador.
+* **Abrir los detalles cuando los necesites.** Los detalles del documento empiezan contraídos. Los detalles técnicos, como el número de comprobación y el XPath, permanecen en el hallazgo, mientras que la fila muestra el nombre comprensible de la comprobación y el código de la regla como referencia.
+* **Volver a tu sitio.** Cuando seleccionas **Show in XML** y vuelves a abrir el informe, las filas abiertas, el filtro y la posición de desplazamiento se mantienen como los dejaste.
+* **Descargar o imprimir.** La acción **Download** en el pie del informe ofrece impresión y un PDF, además de los archivos HTML y XML del informe. El nombre del archivo, la fecha de exportación y el número de página aparecen en el PDF.
+* **Rechazar desde el informe.** La acción de rechazo está a la izquierda en el pie del informe, separada de la acción de descarga, para que no rechaces una factura mientras buscas el PDF.
+
+En una pantalla estrecha, por ejemplo en un teléfono, cada hallazgo se convierte en una tarjeta en lugar de una fila.
+
 ## Siguiente
 
 * [Siguiente paso y rechazar un documento](validation-next-step-and-reject.md): qué hacer después de leer el informe.

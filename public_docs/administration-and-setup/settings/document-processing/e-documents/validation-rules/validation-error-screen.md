@@ -33,7 +33,19 @@ El XML es correcto, pero falta un campo obligatorio. Por ejemplo, no se puede id
 
 La tarjeta indica la capa **L3 · Business Rules** y el código `BR-CO-26`. El informe enumera todos los hallazgos de la factura, consulte [Informe de validación](validation-report.md).
 
-## Los botones debajo de la tarjeta
+## El cuadro Next step y los botones
+
+En una factura electrónica no válida la página empieza con un cuadro **Next step**. Contiene la acción que ayuda en este caso:
+
+| Acción | Qué hace |
+| --- | --- |
+| **Reject** | Rechaza el documento. El diálogo indica el archivo, el vendedor y el número de factura, te avisa de que el documento recibe el estado **Rejected** con una nota en su historial y de que no se informa al proveedor, y explica cómo deshacer el rechazo. Pide un motivo y confirma con **Reject now**. Si algo falla, el mensaje aparece dentro del diálogo y puedes intentarlo de nuevo. |
+| **Download invoice XML** | Descarga el archivo tal como se recibió, por ejemplo para revisarlo fuera de DocBits o para devolverlo al proveedor. |
+| **Print report** | Imprime el [informe de validación](validation-report.md). |
+
+La tarjeta también nombra la comprobación en palabras comprensibles, con el código de la regla como referencia pequeña.
+
+**Restart Processing** ejecuta de nuevo el procesamiento del documento, por ejemplo después de cambiar un ajuste; la comprobación usa los ajustes actuales. Está debajo del cuadro Next step porque un reinicio de un archivo sin cambios falla de la misma manera. Los demás botones siguen al lado:
 
 | Botón | Qué hace |
 | --- | --- |
@@ -43,6 +55,8 @@ La tarjeta indica la capa **L3 · Business Rules** y el código `BR-CO-26`. El i
 | **Create ticket** | Abre un ticket de soporte con los detalles del error. |
 
 Seleccione **Show technical details** en la tarjeta para ver la información técnica sin procesar.
+
+Mientras se carga el motivo, la página muestra un marcador de posición en lugar de una tarjeta a medio escribir. Si el motivo no se puede cargar, la página ofrece recargarlo, y un paso cuyo nombre se desconoce se etiqueta como tal en lugar de mostrar un campo vacío. En una pantalla estrecha, el XML y la explicación se apilan en lugar de estar uno al lado del otro.
 
 ## Qué hacer a continuación
 

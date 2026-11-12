@@ -61,6 +61,21 @@ Chaque résultat correspond à une ligne :
 
 DocBits propose des textes en langage clair pour les règles les plus courantes. Pour une règle sans texte de ce type, le rapport affiche le message technique du validateur.
 
+## Travailler avec un rapport long
+
+Une facture peut enfreindre plusieurs règles à la fois. Le rapport garde le verdict et les compteurs dans un en-tête fixe pendant que les résultats défilent, de sorte que vous voyez toujours ce que vaut la facture entière.
+
+* **Filtrer par niveau.** Les boutons de filtre au-dessus des résultats limitent la liste aux erreurs, aux avertissements ou aux messages d'information. Les lignes **Result per level** servent aussi de filtre : sélectionnez un niveau pour ne voir que ses résultats.
+* **Rechercher.** Un champ de recherche filtre la liste ouverte par texte, par exemple un code de règle, un nom de champ ou un mot du message.
+* **Déplier et replier.** Les résultats s'ouvrent d'eux-mêmes lorsqu'il s'agit d'erreurs ou lorsque le rapport compte au plus trois lignes. Les actions de dépliage et de repliage valent pour toute la liste ; chaque ligne s'ouvre aussi séparément.
+* **Copier un code ou un XPath.** Les résultats offrent une action de copie pour le code de la règle et pour le XPath de l'élément fautif, par exemple pour un message à votre administrateur.
+* **Ouvrir les détails quand vous en avez besoin.** Les détails du document sont repliés au départ. Les détails techniques, comme le numéro de contrôle et le XPath, restent dans le résultat, tandis que la ligne elle-même affiche le nom compréhensible du contrôle et le code de la règle comme référence.
+* **Revenir à votre place.** Lorsque vous sélectionnez **Show in XML** puis rouvrez le rapport, les lignes ouvertes, le filtre et la position de défilement restent tels que vous les avez laissés.
+* **Télécharger ou imprimer.** L'action **Download** au pied du rapport propose l'impression et un PDF, ainsi que les fichiers HTML et XML du rapport. Le nom du fichier, la date d'export et le numéro de page figurent sur le PDF.
+* **Rejeter depuis le rapport.** L'action de rejet se trouve à gauche dans le pied du rapport, séparée de l'action de téléchargement, pour que vous ne rejetiez pas une facture en cherchant le PDF.
+
+Sur un écran étroit, par exemple sur un téléphone, chaque résultat devient une carte au lieu d'une ligne.
+
 ## Suite
 
 * [Étape suivante et rejet d'un document](validation-next-step-and-reject.md) : que faire après la lecture du rapport.

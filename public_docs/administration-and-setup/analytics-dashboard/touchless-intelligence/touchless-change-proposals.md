@@ -32,6 +32,14 @@
 
 影响数值均为**估算值**。如果报告返回 _forbidden_，说明您的角色无权查看。
 
+## 说明的语言
+
+DocBits 会以您在 DocBits 中使用的语言请求说明。如果该服务无法用该语言回答，说明将以英文撰写，面板会在建议上方显示这一行：
+
+> Proposal explanations are not available in your selected language. English is shown.
+
+这一行只涉及措辞。Preview、Apply、Measure 和 Undo 的工作方式不变。
+
 关于对应的工具调用和人工操作的分类，参见 [Touchless with MCP](touchless-mcp.md)。
 
 ## 相关页面

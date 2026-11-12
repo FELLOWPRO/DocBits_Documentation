@@ -32,6 +32,14 @@ Beheerders vinden het **Consulting report** onderaan het tabblad. Klik op **Crea
 
 De effectwaarden zijn **schattingen**. Antwoordt het rapport _forbidden_, dan staat uw rol het niet toe.
 
+## Taal van de uitleg
+
+DocBits vraagt de uitleg aan in de taal die u in DocBits gebruikt. Kan de dienst niet in die taal antwoorden, dan wordt de uitleg in het Engels geschreven en toont het paneel boven de voorstellen deze regel:
+
+> Proposal explanations are not available in your selected language. English is shown.
+
+De regel gaat alleen over de formulering. Preview, Apply, Measure en Undo werken hetzelfde.
+
 Zie [Touchless met MCP](touchless-mcp.md) voor de bijbehorende toolaanroepen en de classificatie van menselijke acties.
 
 ## Gerelateerde pagina's

@@ -61,6 +61,21 @@ Elke bevinding is één rij:
 
 DocBits heeft teksten in begrijpelijke taal voor de meest voorkomende regels. Voor een regel zonder zo'n tekst toont het rapport het technische bericht van de validator.
 
+## Werken met een lang rapport
+
+Een factuur kan tegelijk tegen veel regels zondigen. Het rapport houdt het oordeel en de tellingen in een vaste kop, terwijl de bevindingen scrollen; zo ziet u altijd wat de hele factuur waard is.
+
+* **Filter op niveau.** De filterknoppen boven de bevindingen beperken de lijst tot fouten, waarschuwingen of informatiemeldingen. De rijen **Result per level** werken ook als filter: kies een niveau om alleen de bevindingen van dat niveau te zien.
+* **Zoeken.** Een zoekveld filtert de open lijst op tekst, bijvoorbeeld op een regelcode, een veldnaam of een woord uit de melding.
+* **Uitklappen en inklappen.** Bevindingen openen vanzelf wanneer het fouten zijn of wanneer het rapport hoogstens drie rijen heeft. Voor de hele lijst zijn er de acties om uit en in te klappen; elke rij opent ook afzonderlijk.
+* **Een code of een XPath kopiëren.** Bevindingen hebben een kopieeractie voor de regelcode en voor de XPath van het foutieve element, bijvoorbeeld voor een bericht aan uw beheerder.
+* **Details openen wanneer u ze nodig hebt.** De documentdetails starten ingeklapt. Technische details zoals het controlenummer en de XPath blijven in de bevinding, terwijl de rij zelf de begrijpelijke controlenaam en de regelcode als verwijzing toont.
+* **Terug naar uw plaats.** Kiest u **Show in XML** en opent u het rapport opnieuw, dan blijven de open rijen, het filter en de scrollpositie zoals u ze hebt achtergelaten.
+* **Downloaden of afdrukken.** De actie **Download** in de voettekst van het rapport biedt afdrukken en een PDF, plus de HTML- en XML-bestanden van het rapport. De bestandsnaam, de exportdatum en het paginanummer staan op de PDF.
+* **Afwijzen vanuit het rapport.** De actie om af te wijzen staat links in de voettekst, los van de downloadactie, zodat u een factuur niet afwijst terwijl u naar de PDF zoekt.
+
+Op een smal scherm, bijvoorbeeld op een telefoon, wordt elke bevinding een kaart in plaats van een rij.
+
 ## Volgende
 
 * [Volgende stap en een document afwijzen](validation-next-step-and-reject.md): wat u doet nadat u het rapport hebt gelezen.

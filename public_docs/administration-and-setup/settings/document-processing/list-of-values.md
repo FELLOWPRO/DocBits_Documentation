@@ -58,9 +58,9 @@ Cette interface ne propose pas l'ancien import CSV depuis le menu **Actions**. L
 
 ### Modifier des valeurs existantes
 
-Sélectionnez une ligne pour ouvrir son formulaire de modification sous le tableau, ou utilisez **Modifier** dans le menu **Actions** de la ligne. Mettez à jour les champs modifiables et enregistrez le formulaire. **Annuler** abandonne la modification non enregistrée. Les champs protégés restent en lecture seule ; la valeur enregistrée peut également être verrouillée dès que des traductions existent.
+Sélectionnez une ligne pour ouvrir son formulaire de modification sous le tableau, ou utilisez **Éditer** dans le menu **Actions** de la ligne. Mettez à jour les champs modifiables et enregistrez le formulaire. **Annuler** abandonne la modification non enregistrée. Les champs protégés restent en lecture seule ; la valeur enregistrée peut également être verrouillée dès que des traductions existent.
 
-Le menu de la ligne propose aussi **Dupliquer**. Pour dupliquer plusieurs entrées, cochez leurs cases et utilisez la commande de copie au-dessus du tableau. La duplication crée des entrées supplémentaires.
+Le menu de la ligne propose aussi **Duplicata**. Pour dupliquer plusieurs entrées, cochez leurs cases et utilisez la commande de copie au-dessus du tableau. La duplication crée des entrées supplémentaires.
 
 ### Supprimer des valeurs
 

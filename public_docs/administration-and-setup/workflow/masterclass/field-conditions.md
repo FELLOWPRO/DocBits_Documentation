@@ -1,76 +1,68 @@
 ---
-description: "P1: Field is, Docfield is und zwei Felder vergleichen"
+description: "Field is, Docfield is oder Compare two Fields wählen"
 ---
 
-# P1: Field is, Docfield is und zwei Felder vergleichen
+# Field is, Docfield is und zwei Felder vergleichen
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-04-admin/v1/de.mp4" %}
+Drei Bedingungskarten sehen im Designer ähnlich aus, und ihr Unterschied entscheidet, was eine Regel tatsächlich erkennen kann. Diese Seite hilft Ihnen, die richtige auszuwählen, und gibt Ihnen danach drei kurze Übungen, die zeigen, was jede Karte zurückgibt. Am Ende können Sie „leer“ von der Zahl `0`, „falsch“ von „fehlend“ und eine nicht erfüllte Bedingung von einem Fehler unterscheiden; technisches `null` gilt dabei als leer, die Zahl `0` nicht.
 
-[Vertiefungsvideo mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-04-admin/v1/de.html).
+Führen Sie die Übungen im Advanced Test in Ihrer eigenen Testorganisation mit einem synthetischen Dokument aus. Hier berührt nichts ein Kundendokument.
 
-Verwenden Sie **Field is** für den Leerzustand, **Docfield is** für den Vergleich mit einem konfigurierten Wert und **Compare two Fields** für zwei Werte desselben Dokuments. Eine Leerprüfung beweist nicht, dass das Feld im Layout existiert oder fachlich korrekt ist.
+## Welche Karte brauchen Sie?
 
-Für Field is, Version 2, ergeben fehlendes Feld, `null`, leerer Text, nur Leerzeichen und der boolesche Wert `false` den Zustand leer. Die Zahl `0`, der Text `"0"` und der Text `"false"` sind nicht leer. Diese acht Fälle wurden mit vollständigen Dokumentdaten im Dev-Test geprüft. Verwenden Sie eine explizite Checkbox-Bedingung, wenn wahr/falsch die Geschäftsentscheidung ist.
+| Wenn Sie prüfen wollen, ... | Verwenden Sie | Karte und Version |
+| --- | --- | --- |
+| ob ein Feld überhaupt einen Wert trägt | **Field is** | `condition_docfield_status` v2 |
+| ein Feld gegen einen Wert, den Sie eingeben | **Docfield is** | `condition_docfield_operator_value` v2 |
+| zwei Felder desselben Dokuments gegeneinander | **Compare two Fields** | `condition_compare_two_docfield_values` v2 |
 
-Ein Wert `"1000.01"` mit Feldtyp AMOUNT ist von einem Textfeld gleicher Schreibweise zu unterscheiden. Das v2-Übungspaket verwendet AMOUNT und Dezimalpunkte im JSON. Prüfen Sie technische Feldschlüssel, Layout und Typ gemeinsam. Eine lokalisierte Beschriftung oder ein Währungssymbol ist kein technischer Feldschlüssel beziehungsweise Zahlenwert.
+Alle drei sind Bedingungen: Sie liefern ein Ergebnis und ändern nichts am Dokument. Eine Leerprüfung beweist nicht, dass ein Feld im Layout existiert oder dass sein Inhalt fachlich gültig ist. Die einzelnen Kartenseiten führen jede Einstellung auf: [Field is](../and/document-field/field-is.md), [Docfield is](../and/document-field/docfield-is.md) und [Compare two Fields](../and/document-field/compare-two-fields.md).
 
-Für Compare two Fields legen Sie linkes Feld, Operator und rechtes Feld fest. Prüfen Sie kompatible Typen und beide Eingaben; ein fehlender oder nicht vergleichbarer Wert ist ein Datenfehler, keine bewiesene Ungleichheit. Wiederholen Sie Positivfall, Negativfall, fehlende Eingabe und den exakten Grenzwert. Das Ergebnisblatt hält Wert, Typ und gewählten Ausgang fest.
+## Übung 1: herausfinden, was „leer“ bedeutet
 
-## Eine kleine Datentyp-Matrix nachbauen
+**Ziel:** wissen, welche Werte Field is in Version 2 als leer behandelt.
 
-Verwenden Sie dieselbe Karte und denselben technischen Feldschlüssel. Ändern Sie pro Test ausschließlich den Wert beziehungsweise das Vorhandensein des Feldes. Nehmen Sie dafür vollständige Custom Data aus dem Übungspaket; ein JSON-Objekt nur mit `total_amount` ersetzt den Dokumentkontext nicht.
+1. Fügen Sie **Field is** Version 2 in Ihrer Testorganisation einer Regel hinzu und wählen Sie ein Textfeld aus Ihrem Layout.
+2. Setzen Sie den Feldstatus auf `field_empty` (Empty or missing).
+3. Führen Sie acht Advanced-Test-Fälle mit vollständigen Dokumentdaten aus: fehlendes Feld, `null`, leerer Text `""`, nur Leerzeichen `" "`, boolesches `false`, Zahl `0`, Text `"0"` und Text `"false"`.
 
-Prüfen Sie nacheinander: Feld fehlt, `null`, leerer Text, Leerzeichen, boolesches `false`, Zahl `0`, Text `"0"` und Text `"false"`. Halten Sie auch den tatsächlichen Datentyp fest. Der im Lernpaket geprüfte Leertest Field is v2 behandelt die ersten fünf Varianten als leer. Die Zahl 0 sowie die beiden Texte sind dort nicht leer.
+**Fertig, wenn:** die ersten fünf Fälle `field_empty=success` liefern und die letzten drei `field_empty=failed_condition`. Diese acht Fälle wurden in Dev mit vollständigen Dokumentdaten geprüft.
 
-Vergleichen Sie danach `total_amount > 1000` mit 999, 1000 und 1000.01. Öffnen Sie die Eingabe, die ausgefüllten Kartenparameter und das Ergebnis nebeneinander. Prüfen Sie bei einem unerwarteten Error sowohl den Feldschlüssel als auch den Typ: `not_found_in_document` trat im dokumentierten numerischen Vergleich auch bei ungültigem Zahlentext auf.
+Zahl `0`, Text `"0"` und Text `"false"` sind Werte, keine Abwesenheit. Wenn wahr oder falsch Ihre Geschäftsentscheidung ist, verwenden Sie eine ausdrückliche Checkbox-Bedingung, statt das Feld auf Leerheit zu prüfen.
 
-Verwenden Sie Compare two Fields, wenn beide Seiten aus dem Dokument stammen. Ein fester Grenzwert gehört dagegen in die entsprechende Wertkonfiguration. Eine übersetzte Feldbeschriftung ist kein austauschbarer technischer Schlüssel. Bewahren Sie Positiv-, Negativ- und Fehlerfälle getrennt auf.
+## Übung 2: ein Feld mit einem Wert vergleichen
 
-## Vollständige Eingaben und echte Designer-Ergebnisse
+**Ziel:** sehen, wie Operator und Feldtyp die Antwort verändern.
 
-Die zehn vollständigen Testeingaben, den inaktiven Beispielworkflow und die beobachteten Knotenergebnisse herunterladen. Ersetzen Sie vor dem Test beide `YOUR_ORG_ID` durch Ihre eigene Testorganisation. Ein isoliertes Objekt nur mit `total_amount` genügt nicht: Layout, Dokumenttyp und Organisationskontext gehören zur Eingabe. Die Screenshots zeigen den relevanten Feldabschnitt; die vollständigen JSON-Dateien stehen im Download.
+1. Wählen Sie ein numerisches Feld wie `total_amount`, den Operator `gt` und den Wert `1000`.
+2. Testen Sie `1000`, `1000.01`, ein fehlendes Feld und einen ungültigen Wert.
 
-{% file src="../../../.gitbook/assets/wf-practice-20261022-field-tests-de.zip" %}
-Die zehn vollständigen Testeingaben, den inaktiven Beispielworkflow und die beobachteten Knotenergebnisse
-{% endfile %}
+**Fertig, wenn:** `1000` `failed_condition` liefert, weil `gt` echt größer bedeutet, `1000.01` `success` liefert und eine fehlende oder ungültige Eingabe `error` zurückgibt.
 
-Die folgende Konfiguration verwendet zwei unabhängig erreichbare UND-Karten für dasselbe Feld: Zahlenvergleich `> 1000` und Leerprüfung. Beide Karten sind v2. Der technische Schlüssel ist `total_amount`; im Zahlen-Positivfall ist er im Layout und in den Felddaten als `AMOUNT` angegeben.
+## Übung 3: zwei Felder vergleichen
 
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-field-cards-de.png" alt="Zwei ausgefüllte v2-Karten für Gesamtbetrag größer als 1000 und Gesamtbetrag leer oder nicht im Dokument."><figcaption><p>Zahlenvergleich und Leerprüfung sind unterschiedliche Prüfungen.</p></figcaption></figure>
+**Ziel:** wissen, wann zwei Werte verglichen werden und wann die Karte sie gar nicht vergleichen kann.
 
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-field-key-de.png" alt="Native Feldkonfiguration zeigt den technischen Schlüssel total_amount."><figcaption><p>Die Anzeige Gesamtbetrag verwendet den technischen Feldschlüssel total_amount.</p></figcaption></figure>
+1. Legen Sie linkes Feld, Operator und rechtes Feld fest. Verwenden Sie zwei Felder mit zueinander passenden Typen.
+2. Testen Sie gleiche Werte, unterschiedliche Werte und eine fehlende Eingabe.
 
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-field-input-1785-de.png" alt="Tatsächlicher Feldabschnitt der Custom-Data-Eingabe mit name total_amount, type AMOUNT und value 1785."><figcaption><p>Positivfall des Zahlenvergleichs: expliziter Typ und Wert in der vollständigen Testeingabe.</p></figcaption></figure>
+**Fertig, wenn:** gleiche Werte `eq` erfüllen, unterschiedliche Werte `failed_condition` liefern und eine fehlende Eingabe `error` zurückgibt statt einer bewiesenen Ungleichheit.
 
-### Gültiger Betrag, Null und ungültiger Zahlentext
+## Was die drei Ergebnisse bedeuten
 
-Die folgenden drei Fälle wurden am 22. Oktober 2026 zusätzlich in der nativen Dev-Oberfläche ausgeführt. Im Layout bleibt `total_amount` als `AMOUNT` definiert. Der Nullfall verwendet in den Felddaten `type=STRING`, aber den JSON-Zahlenwert `0`; diese Metadaten und der tatsächliche JSON-Wert sind getrennt zu lesen. Die Download-Dateien halten diese Unterschiede vollständig fest. Daraus folgt keine allgemeine Gleichheit von STRING- und AMOUNT-Feldern.
+| Ergebnis | Was es Ihnen sagt |
+| --- | --- |
+| `success` | Die Karte hat die Werte verglichen und die Bedingung war erfüllt. |
+| `failed_condition` | Die Karte hat die Werte verglichen und die Bedingung war nicht erfüllt. `0` und `"0"` landen bei einer Leerprüfung hier. |
+| `error` | Die Karte konnte nicht vergleichen, etwa weil ein Wert fehlt oder ungültig ist. Ein Fehler ist nicht dieselbe Antwort wie „ungleich“. |
 
-| Eingabe `value` | Typ in Felddaten | `> 1000` | Leerprüfung |
-| --- | --- | --- | --- |
-| `"1785"` | AMOUNT | Wahr | Falsch |
-| `0` | STRING | Falsch | Falsch; Null ist hier nicht leer |
-| `"abc"` | AMOUNT | Fehler bei der Zahlenkonvertierung | Falsch |
+## Der Typ gehört zum Vergleich
 
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-field-input-zero-de.png" alt="Tatsächliche Custom-Data-Eingabe mit JSON-Zahlenwert 0, content als Text 0 und type STRING."><figcaption><p>Grenzfall Null: JSON-Wert, Textinhalt und Feldmetadaten ausdrücklich sichtbar.</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-field-input-invalid-de.png" alt="Tatsächliche Custom-Data-Eingabe mit total_amount als AMOUNT und ungültigem Zahlentext abc."><figcaption><p>Gezielter Datenfehler: abc ist kein gültiger Betrag.</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-field-result-1785-de.png" alt="Echter Designer-Test: Zahlenvergleich erfolgreich, Leerprüfung regulär falsch."><figcaption><p>1785 erfüllt den Zahlenvergleich. Die falsche Leerprüfung macht den Dialogkopf rot; der Zahlenvergleich ist dennoch erfolgreich.</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-field-result-zero-de.png" alt="Echter Designer-Test mit Nullwert: Zahlenvergleich und Leerprüfung beide regulär falsch."><figcaption><p>0 ist weder größer als 1000 noch leer. Beide gelben Knoten sind reguläre Nichttreffer.</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-field-result-invalid-de.png" alt="Echter Designer-Test zeigt am Zahlenvergleich den Fehler Konvertierung eines Wertes fehlgeschlagen."><figcaption><p>abc verursacht einen technischen Konvertierungsfehler. Die Detailansicht unterscheidet ihn vom regulär falschen Leerzustand.</p></figcaption></figure>
-
-### Eingabe und gespeicherten Feldwert getrennt prüfen
-
-Benutzerdefinierte Testdaten geben `value` unmittelbar vor. Ein tatsächlicher Schreibweg kann den Inhalt vorher normalisieren. Bei einer zusätzlichen Probe am eigenen INVOICE-Trainingsbeleg enthielt `total_amount.content` nach der Eingabe `-1` weiterhin `-1`, während `total_amount.value` als `1.00` gespeichert war. Diese Probe wurde deshalb nicht als tatsächlich ausgeführter negativer Betragsvergleich gewertet.
-
-Kontrollieren Sie vor einer fachlichen Grenzprüfung den tatsächlich gespeicherten Wert und seine Validierung. Die Beobachtung gilt für den geprüften Schreibweg und die Konfiguration dieses Trainingsbelegs; sie belegt keine allgemeine Regel für negative Beträge oder Gutschriften. Für den Fall ohne Tabellentreffer wurde in der [Routingübung](decision-table-routing.md) stattdessen der bestätigte positive Wert `100001.00` verwendet und anschließend auf `1785.00` zurückgestellt.
+Ein Wert `"1000.01"` in einem AMOUNT-Feld ist nicht dasselbe wie dieselben Zeichen in einem Textfeld. Das v2-Übungspaket verwendet AMOUNT und Dezimalpunkte im JSON. Prüfen Sie technischen Feldschlüssel, Layout und Typ gemeinsam. Eine übersetzte Beschriftung ist kein technischer Schlüssel, und ein Währungssymbol ist kein Zahlenwert.
 
 ## Karten und Beispielparameter
 
-Die Werte zeigen einzelne Kartenparameter, keinen importierbaren Gesamtworkflow. YOUR_* muss durch eine eigene Testauswahl ersetzt werden. Die versteckte Aufrufer-ID verwaltet der Designer. Katalogstand: Dev, DocFlow 2.10.38, 21. Oktober 2026; verfügbare Versionen und Freigaben in Ihrer Organisation separat prüfen.
+Diese Werte beschreiben einzelne Kartenparameter, nicht einen importierbaren vollständigen Workflow. Ersetzen Sie YOUR\_\* durch Ihre eigenen Testauswahlen. Die verborgene Aufrufer-ID verwaltet der Designer. Katalog: Dev, DocFlow 2.10.38, 21. Oktober 2026; prüfen Sie verfügbare Versionen und Berechtigungen in Ihrer eigenen Organisation.
 
 ### `condition_docfield_status` · v2
 
@@ -105,14 +97,14 @@ Identität: `3b3cdc55-6afe-4797-ae8b-9480ec3a8a30`
 
 | Fall | Eingabe / Aufbau | Erwartung |
 | --- | --- | --- |
-| FIELD-01 | missing / null / "" / "   " / false | field_empty=success |
-| FIELD-02 | 0 / "0" / "false" | field_empty=failed_condition |
-| FIELD-03 | AMOUNT 1000; gt 1000 | failed_condition |
+| FIELD-01 | missing / null / "" / " " / false | field\_empty=success |
+| FIELD-02 | 0 / "0" / "false" | field\_empty=failed\_condition |
+| FIELD-03 | AMOUNT 1000; gt 1000 | failed\_condition |
 | FIELD-04 | AMOUNT 1000.01; gt 1000 | success |
 | FIELD-05 | AMOUNT missing / invalid; gt 1000 | error |
 
 ## Prüfstand und Aussagegrenzen
 
-Die ausgewählten Karten- und Knotenergebnisse wurden mit synthetischen Daten in Advanced Test geprüft. Die Antworten liegen im Übungspaket. Dokumentaktionen sind simuliert; ein tatsächlicher Dokumentlauf und externe Zustellung sind damit nicht belegt.
+Ausgewählte Karten- und Knotenergebnisse wurden mit synthetischen Daten im Advanced Test geprüft. Die Antworten liegen im Übungspaket. Dokumentaktionen sind simuliert; diese Tests belegen keinen gespeicherten Dokumentlauf und keine externe Zustellung.
 
 [Weiter im Lernweg](../workflow-learning-path.md) · [Übungspaket](../workflow-training-kit.md)

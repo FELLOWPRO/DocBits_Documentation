@@ -1,81 +1,68 @@
 ---
-description: "P1: Toleranzen und PO-Vergleich mit eindeutiger Referenz"
+description: "Toleranz und Referenzrichtung beim PO-Vergleich eindeutig machen"
 ---
 
-# P1: Toleranzen und PO-Vergleich mit eindeutiger Referenz
+# Toleranzen und PO-Vergleich mit eindeutiger Referenz
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-05-admin/v1/de.mp4" %}
+Eine Toleranz von 2 Prozent ist kein fester Betrag. Sie ist 2 Prozent der Seite, gegen die Sie vergleichen, deshalb kann dieselbe Rechnungsposition in der einen Richtung durchfallen und in der anderen bestehen. Diese Seite zeigt das an einem Wertepaar, gibt Ihnen drei Übungen zum Nachbauen und listet danach die sechs Vergleichsrichtungen und die Kartenparameter auf, die Sie in Ihren eigenen Test übernehmen können.
 
-[Vertiefungsvideo mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-05-admin/v1/de.html).
+Führen Sie die Übungen im Advanced Test in Ihrer eigenen Testorganisation mit einem synthetischen Dokument und einer zugeordneten Bestellung durch.
 
-Bei einer Prozenttoleranz zählt die **Referenzseite**. In der geprüften PO-Karte, Version 5, liest sich `document_po` als Dokumentwert gegen Bestellwert; der Bestellwert ist die Prozentbasis. `po_document` kehrt Vergleich und Basis um. Die sechs zulässigen Richtungen schließen auch den empfangenen Wert ein. Wählen Sie Richtung, Operator und Any/All ausdrücklich.
+## Die Referenzseite ist die Basis
 
-Beispiel: Bestellung 100, Dokument 102.02, Gleichheit mit 2 Prozent. Mit Bestellreferenz liegt das zulässige Band bei 98 bis 102: außerhalb. Mit Dokumentreferenz liegt es bei 99.9796 bis 104.0604: der Bestellwert 100 liegt darin. Bei Dokument 102 ist die obere Grenze der ersten Richtung eingeschlossen. Eine absolute Toleranz 2 verwendet dieselbe Einheit wie der verglichene Wert.
+In der geprüften PO-Karte Version 5 vergleicht `document_po` den Dokumentwert mit dem Bestellwert, der Bestellwert ist also die Basis für eine Prozenttoleranz. `po_document` dreht sowohl den Vergleich als auch die Basis um. Die sechs zulässigen Richtungen umfassen außerdem die empfangene Seite. Setzen Sie Richtung, Operator und Any/All ausdrücklich, statt sich darauf zu verlassen, was eine gespeicherte Karte noch enthält.
 
-Die Karte normalisiert Preise je Preiseinheit und berücksichtigt je Vergleichsrichtung Bestell- beziehungsweise Empfangsdaten. Prüfen Sie Zuordnung, Mengen und Einheiten vor der Toleranz. Any benötigt einen passenden Vergleich, All alle tatsächlich verglichenen Ergebnisse. **Keine vergleichbare Position** ist in v5 ein Datenfehler und kein automatisch erfülltes All. Nicht zugeordnete Zeilen müssen separat erfasst werden.
+## Übung 1: gleiche Werte, zwei Richtungen
 
-Bei bestehenden Workflows lesen Sie die gespeicherte Version, Vergleichsrichtung und den Operator erneut: Migrationen haben Vergleichseinstellungen verändert. Die früheren Bezeichnungen reichen als Abnahme nicht. Halten Sie Ausgangswerte und Referenz, Entscheidung bei exakter Grenze, kleinste Überschreitung, Rundungspräzision, fehlende Bestellung und unzugeordnete Position fest. Die Beispielrechnung ersetzt keine PO-Abnahme mit Ihren Stammdaten.
+**Ziel:** sehen, wie aus denselben Zahlen zwei verschiedene Ergebnisse werden.
 
-## Von der Konfiguration zur nachvollziehbaren Rechnung
+1. Legen Sie eine zugeordnete Bestellung über `100` und einen Dokument-Einzelpreis von `102.02` an.
+2. Vergleichen Sie mit dem Operator `eq` und einer Toleranz von `2` Prozent, zuerst mit `document_po`. Erwarten Sie `false`: 2 Prozent von 100 sind 2, das geschlossene Intervall reicht also von 98 bis 102, und 102.02 liegt 0.02 darüber.
+3. Wiederholen Sie denselben Fall mit `po_document`. Erwarten Sie `true`: 2 Prozent von 102.02 sind 2.0404, das Intervall reicht von 99.9796 bis 104.0604, und der Bestellwert 100 liegt darin.
 
-Beginnen Sie mit genau einem tatsächlich verbundenen Rechnungs-/Bestellzeilenpaar. Vergleichen Sie Bestellreferenz, Positionszuordnung, Menge, Einzelpreis und Währung. Eine eingetragene Bestellnummer allein verbindet die Positionen noch nicht.
+**Fertig, wenn:** beide Ergebnisse und beide Intervalle notiert sind und Sie für jede Richtung sagen können, von welchem Wert der Prozentsatz berechnet wurde.
 
-Notieren Sie vor der Toleranzprüfung, welche Seite die Referenz bildet. Bei einer Referenz von 100 und einer Abweichung von 5 ergibt eine Prozenttoleranz eine andere Aussage als beim umgekehrten Bezug auf 105. Prüfen Sie die im gewählten Operator enthaltene Vergleichsrichtung; ein Prozentwert ohne Referenzseite ist unvollständig beschrieben.
+Eine absolute Toleranz von `2` verhält sich anders: Sie verwendet die Einheit des verglichenen Werts und verschiebt sich nicht mit der Referenz.
 
-Testen Sie den Wert innerhalb der Toleranz, exakt an der Grenze und außerhalb. Wiederholen Sie den Vergleich mit zwei zugeordneten Positionen: eine passende und eine abweichende. Lesen Sie danach Any und All am tatsächlich ausgewählten Kartenmodus ab. Prüfen Sie außerdem den Fall ohne vergleichbare Zeile; werten Sie ihn nicht als erfolgreiche fachliche Freigabe.
+## Übung 2: die exakte Grenze finden
 
-Für den Nachweis gehören drei Ansichten zusammen: die verbundenen Positionen, die vollständig ausgefüllte Karte mit Version/Richtung/Einheit und das konkrete Ergebnis. Trennen Sie einen berechneten Erwartungswert von einem tatsächlich ausgeführten Test. Der [Rechnungsfall](../invoice-approval-export-tutorial.md) zeigt den Bestellabgleich im Gesamtablauf.
+**Ziel:** wissen, ob der Rand des Intervalls mitzählt.
 
-## Tatsächlich zugeordnete Trainingspositionen
+1. Behalten Sie `document_po`, `eq` und die Toleranz von 2 Prozent und ändern Sie den Dokumentwert auf `102`.
+2. Führen Sie den Fall aus, danach noch einmal mit `102.01`.
 
-Die Rechnung `WF-TRAINING-PO-001` enthält zwei Positionen desselben fiktiven Lieferanten. Position 10 gehört zur Bestellung `WF-PO-20261022-CSV-A`: 2 EA zu je 500,00 EUR, netto 1.000,00 EUR. Position 20 gehört zur Bestellung `WF-PO-20261022-CSV-B`: 1 EA zu 500,00 EUR, netto 500,00 EUR. Beide Bestellungen besitzen jeweils genau diese eine Position.
+**Fertig, wenn:** `102` `true` liefert und `102.01` `false`. Die Grenze ist eingeschlossen: 102 liegt genau auf der oberen Grenze des Intervalls 98 bis 102.
 
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-po-pair-a-de.png" alt="Deutscher PO-Abgleich: Bestellung A mit Menge 2, Einzelpreis 500 und Betrag 1000; darunter die beiden verknüpften Rechnungspositionen"><figcaption><p>Bestellung A ist ausgewählt. Die Link-Symbole an beiden Rechnungspositionen zeigen deren Zuordnungen; die obere Tabelle zeigt die Stammdaten der ausgewählten Bestellung.</p></figcaption></figure>
+## Übung 3: Any, All und die verglichenen Positionen
 
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-po-pair-b-de.png" alt="Deutscher PO-Abgleich: Bestellung B mit Menge 1, Einzelpreis 500 und Betrag 500; darunter die beiden verknüpften Rechnungspositionen"><figcaption><p>Nach Auswahl von Bestellung B sind deren Menge, Preiseinheit und Betrag sichtbar. Englische Stammdatenwerte wie EA bleiben unverändert.</p></figcaption></figure>
+**Ziel:** wissen, was die Karte mit mehreren Positionen macht und was passiert, wenn es nichts zu vergleichen gibt.
 
-Nach der normalen Prüfung und Speicherung öffnete der PO-Abgleich mit zwei erfolgreich gespeicherten Zeilenverbindungen. Der Dokumentdatensatz meldete `full_matched`, die Ansicht 1.500,00 EUR abgestimmte Summe und 0,00 EUR offenen Betrag. Die Stammdatenspalte „Abgestimmte Menge“ der oberen Tabelle ist davon getrennt zu lesen; ihr angezeigter Wert 0 ist kein Zähler dieser beiden Dokumentverbindungen.
+1. Bauen Sie ein Dokument mit zwei Positionen gegen dieselbe zugeordnete Bestellung: eine innerhalb der Toleranz, eine außerhalb.
+2. Führen Sie die Karte mit `match_any` aus, danach mit `match_all`.
+3. Führen Sie ein Dokument aus, das gar keine vergleichbare Position enthält.
 
-Für diesen reinen Trainingsnachweis blieb der automatische Export ausgeschaltet. Der geplante Liefertermin wurde aus der Bestellung übernommen; der Zahlungshinweis bezeichnet ausdrücklich einen Trainingsbeleg ohne Zahlung. Eine persönliche Freigabe oder tatsächliche Lieferung ist damit nicht belegt.
+**Fertig, wenn:** `match_any` an der einen passenden Position besteht, `match_all` scheitert, sobald ein Vergleich scheitert, und das Dokument ohne vergleichbare Position einen Datenfehler zurückgibt. In Version 5 ist das ein Fehler und kein automatisch erfülltes All.
 
-Die Positionsprüfung im PO-Abgleich zeigte eine Mengentoleranz von 0,5 als Wert und eine Preistoleranz von 1 Prozent. Die unten behandelte Workflow-Karte verwendet ausdrücklich 2 Prozent. Diese Einstellungen gehören zu unterschiedlichen Prüfungen; aus einer erfolgreichen Zeilenzuordnung folgt noch kein Ergebnis der Workflow-Karte.
+## Welche Seite ist die Basis?
 
-## Ausgeführter Vergleich in Version 5
+| Gespeicherte Option | Verglichene Seite | Referenzseite (Prozentbasis) |
+| --- | --- | --- |
+| `po_document` | Bestellung | Dokument |
+| `received_document` | Empfangene Daten | Dokument |
+| `po_received` | Bestellung | Empfangene Daten |
+| `document_po` | Dokument | Bestellung |
+| `document_received` | Dokument | Empfangene Daten |
+| `received_po` | Empfangene Daten | Bestellung |
 
-Der eigene inaktive Trainingsworkflow begrenzt sich auf `INVOICE` und genau `WF-TRAINING-PO-001`. Seine einzige Fachprüfung lautet All, Gleichheit, 2 Prozent, Dokument zu Bestellung. Ein ausgewählter echter Lauf am zugeordneten Beleg führte alle drei Knoten erfolgreich aus. Geschäftsfelder, Tabellen, Zuständigkeit, Status und PO-Verbindungen blieben vor und nach dem Lauf gleich.
+## Prüfen, bevor Sie einem bestehenden Workflow trauen
 
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-po-v5-config-de.png" alt="Deutscher Designer mit Rechnungsschutz und ausgefüllter PO-Einzelpreiskarte v5: Alle, Entspricht, 2 Prozentsatz, Dokument zu Bestellung"><figcaption><p>Die gespeicherte Version und alle fünf Vergleichsparameter sind sichtbar. Der Graph enthält keine Export- oder Freigabeaktion.</p></figcaption></figure>
+Die Karte normalisiert Preise je Preiseinheit und verwendet je nach Richtung Bestell- oder Empfangsdaten. Prüfen Sie deshalb zuerst Zuordnung, Mengen und Einheiten. Any braucht einen passenden Vergleich, All jeden tatsächlich durchgeführten Vergleich. Nicht zugeordnete Zeilen erfassen Sie getrennt.
 
-Danach wurden vollständige Belegdaten mit Layout und vorhandenen Zeilenverbindungen als **benutzerdefinierte Daten im Advanced Test** verwendet. Nur diese Testkopien enthalten die abweichenden Preise beziehungsweise erneuerten Zeilen-IDs. Sie wurden nicht auf die echte Rechnung zurückgeschrieben. Die zweite Position bleibt in allen Preisfällen bei 500,00 EUR.
-
-| Ausgeführter Fall | Erster Dokumentpreis / Bestellpreis | Modus und Richtung | Tatsächlicher Kartenpfad |
-| --- | --- | --- | --- |
-| Ausgangsdaten | 500,00 / 500,00 | All, `document_po` | `success` |
-| Exakte Obergrenze | 510,00 / 500,00 | All, `document_po` | `success` |
-| Knapp darüber | 510,10 / 500,00 | All, `document_po` | `failed_condition` |
-| Dieselben zwei Positionen | 510,10 / 500,00 | Any, `document_po` | `success` |
-| Umgekehrte Basis | 510,10 / 500,00 | All, `po_document` | `success` |
-| Neue Tabellenzeilen-IDs bei alten Verbindungen | Kein tatsächlich vergleichbares Paar | All, `document_po` | `error` |
-
-500 × 2 % ergibt 10; das eingeschlossene Band lautet 490 bis 510. Bei umgekehrter Richtung ist 510,10 die Basis: 2 % sind 10,202, die Untergrenze 499,898. Deshalb liegt der Bestellpreis 500 dann innerhalb des Bands.
-
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-po-boundary-de.png" alt="Erfolgreicher nativer Advanced Test: 510 gleich 500 innerhalb von 2 Prozent und zweite Position 500 gleich 500"><figcaption><p>Der Grenzwert 510,00 besteht. Beide tatsächlichen Einzelvergleiche und das All-Ergebnis sind im Testprotokoll sichtbar.</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-po-above-all-de.png" alt="Nativer Advanced Test mit gescheiterter All-Bedingung: 510,10 gegen 500 bei zwei Prozent"><figcaption><p>Bei 510,10 scheitert die Bedingung. Der Pfad failed_condition ist von einem technischen Ausführungsfehler zu unterscheiden. Der native Kartentitel enthält hier das englische Einheitenwort percent.</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-po-above-any-de.png" alt="Erfolgreicher nativer Any-Test trotz erster abweichender Position: der zweite Einzelvergleich passt"><figcaption><p>Dieselben zwei Positionen bestehen im Any-Modus, den die Oberfläche „Irgendeine“ nennt. Die native Abschlussmeldung „Jeder Stückpreis“ ist dafür missverständlich: Maßgeblich sind die sichtbaren Einzelergebnisse Falsch/Wahr und der ausgewählte Any-Modus.</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/wf-practice-20261022-po-stale-row-de.png" alt="Nativer Advanced Test mit rotem Kartenfehler, weil alte Verbindungen keine der neuen Zeilen-IDs abdecken"><figcaption><p>Vorhandene Verbindungsdatensätze allein reichen nicht: Ohne passende aktuelle Zeilen-IDs kann v5 keinen Wert vergleichen. Der allgemeine Hinweis auf gefundene Bestellzeilen steht hier vor dem eigentlichen Vergleichsfehler.</p></figcaption></figure>
-
-Die sechs Testergebnisse und drei inaktiven Trainingsvorlagen enthalten die beobachteten Kartenpfade und Vergleichsmeldungen. Ein Any-Erfolg beweist nur einen passenden Vergleich; die Abdeckung aller Rechnungszeilen bleibt eine eigene Prüfung.
-
-{% file src="../../../.gitbook/assets/wf-practice-20261022-po-evidence-de.zip" %}
-sechs Testergebnisse und drei inaktiven Trainingsvorlagen
-{% endfile %}
+Bei bestehenden Workflows lesen Sie gespeicherte Version, Richtung und Operator erneut: Migrationen haben Vergleichseinstellungen verändert, historische Bezeichnungen sind also kein ausreichender Abnahmebeleg. Halten Sie Werte und Referenz, die exakte Grenze, die kleinste Überschreitung, die Rundungspräzision, die fehlende Bestellung und die unzugeordnete Position fest. Diese Rechnung ersetzt keine Abnahme mit Ihren eigenen PO-Stammdaten.
 
 ## Karten und Beispielparameter
 
-Die Werte zeigen einzelne Kartenparameter, keinen importierbaren Gesamtworkflow. YOUR_* muss durch eine eigene Testauswahl ersetzt werden. Die versteckte Aufrufer-ID verwaltet der Designer. Katalogstand: Dev, DocFlow 2.10.38, 21. Oktober 2026; verfügbare Versionen und Freigaben in Ihrer Organisation separat prüfen.
+Diese Werte beschreiben einzelne Kartenparameter, nicht einen importierbaren vollständigen Workflow. Ersetzen Sie YOUR\_\* durch Ihre eigenen Testauswahlen. Die verborgene Aufrufer-ID verwaltet der Designer. Katalog: Dev, DocFlow 2.10.38, 21. Oktober 2026; prüfen Sie verfügbare Versionen und Berechtigungen in Ihrer eigenen Organisation.
 
 ### `condition_docfield_operator_docfield_tolerances` · v2
 
@@ -105,14 +92,14 @@ Identität: `ed2cd0fe-ac87-4bae-9a86-0b0576159b28`
 
 | Fall | Eingabe / Aufbau | Erwartung |
 | --- | --- | --- |
-| PO-01 | document_po; PO=100; DOC=102; eq; 2 percent | true |
-| PO-02 | document_po; PO=100; DOC=102.02; eq; 2 percent | false |
-| PO-03 | po_document; PO=100; DOC=102.02; eq; 2 percent | true |
-| PO-04 | compared_rows=0 | Datenfehler |
-| PO-05 | unmatched_rows>0 | Abdeckung getrennt prüfen |
+| PO-01 | document\_po; PO=100; DOC=102; eq; 2 percent | true |
+| PO-02 | document\_po; PO=100; DOC=102.02; eq; 2 percent | false |
+| PO-03 | po\_document; PO=100; DOC=102.02; eq; 2 percent | true |
+| PO-04 | compared\_rows=0 | Datenfehler |
+| PO-05 | unmatched\_rows>0 | Abdeckung getrennt prüfen |
 
 ## Prüfstand und Aussagegrenzen
 
-Geprüft am 22. Oktober 2026 in Dev mit deutscher Oberfläche, Build 10.77.7: zwei echte PO-Zuordnungen, ein ausgewählter tatsächlicher Kartenlauf und sechs Advanced Tests. Die fachlichen PO-01 bis PO-05 oben bleiben zusätzlich eine übertragbare Abnahmeanleitung. Dieses Kapitel belegt weder persönliche Freigaben noch Exportzustellungen.
+Parameter und Verhalten wurden gegen den Dev-Katalog und die geprüfte Quellversion kontrolliert. Die fachlichen Prüffälle sind ein Abnahmeverfahren. Persönliche Freigaben, echte Datenänderungen und eine Auslieferung wurden für dieses Kapitel nicht durchgeführt.
 
 [Weiter im Lernweg](../workflow-learning-path.md) · [Übungspaket](../workflow-training-kit.md)

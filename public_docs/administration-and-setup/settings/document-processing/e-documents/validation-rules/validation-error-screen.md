@@ -4,6 +4,8 @@ When you upload an e-invoice that is wrong, DocBits does not lose it. The docume
 
 > An invoice gets the status **Error** only when validation is **on** and **blocking** for its document type. See [Validation for each document type](validation-per-document-type.md).
 
+An e-invoice that the validator rejected carries its own e-invoice validation status instead of a plain **Error**. The status badge on the dashboard adds a tooltip that says why the document stopped, so you can tell a rejected invoice from other errors while you filter the document list. The error screen and the report below are the same for both.
+
 ## Example 1: the XML file is damaged
 
 A supplier sends an XML file in which a closing tag does not match its opening tag. The file cannot be read, so DocBits stops at the first check, **L1 · Well-formedness**.
@@ -28,6 +30,16 @@ The XML is fine, but a required field is missing. For example, the seller cannot
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view.png" alt="The error screen for a business-rule error: the layer L3 · Business Rules, the rule code and a next step"><figcaption><p>The error screen for a business-rule error: the layer L3 · Business Rules, the rule code and a next step</p></figcaption></figure>
 
 Here the card names the layer **L3 · Business Rules** and the code `BR-CO-26`. The report lists all findings of the invoice, see [Validation report](validation-report.md).
+
+## When DocBits could not check the document
+
+Not every error is a rejection. If the validator cannot read the file at all, the message starts with _could not check this document_ and names the check that stopped it, for example `XML-PARSE` for a damaged XML file or `PDF-UNREADABLE` for a PDF that cannot be opened. DocBits shows the same explanation card as for a rejected invoice, with the check name, the code and the technical message.
+
+This is a technical failure, not a verdict about the invoice:
+
+* DocBits does not mark the document as rejected.
+* A restart can succeed, because the cause may lie in reading the file. Select **Restart Processing** before you ask the sender for a new invoice.
+* If the same code appears again after a restart, send the file and the code to your administrator.
 
 ## The next step box and the buttons
 

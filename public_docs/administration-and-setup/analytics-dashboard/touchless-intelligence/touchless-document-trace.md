@@ -20,6 +20,8 @@ The **Pipeline Path** shows 14 stages: Intake, Classification, E-Document Valida
 | **Nothing Recorded** (dashed) | No data was recorded for this stage |
 | **Not applicable** | The stage does not apply to this document |
 
+Select the **PO Match** step to open the PO-match drill-down with the order lines behind that step, where the trace offers it.
+
 ### Stage Log
 
 The **Stage Log** below the path lists the same stages with what each one recorded. A status dot and the status word sit on the left and right of every row.
@@ -27,6 +29,7 @@ The **Stage Log** below the path lists the same stages with what each one record
 * Each value is a **point chip**: a number with its unit, for example **Confidence 100 %**, **Threshold 60 %**, **Failed rules 0**, **8 missing fields** or **0 mapping gaps**. Percentages are shown as `97 %`, never as `0.97`.
 * **Details** opens the full list of points a stage recorded, including the alternatives it considered.
 * The stage that blocked the document says why, for example **Field validation failed**.
+* The **Intake** entry says how the document entered DocBits, for example that it arrived by email on a given date. When the run records an Intake stage of its own, the sentence sits on that row instead of a separate entry.
 * A point that no stage recorded is shown as **Not recorded**, never as an invented value. Points are numbers and fixed words, never document text.
 * **Show Raw Diagnostics** switches the raw data on when support asks for it.
 

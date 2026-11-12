@@ -4,7 +4,7 @@ description: "Lernweg vom Einstieg zum Experten"
 
 # Lernweg vom Einstieg zum Experten
 
-Arbeiten Sie die Stufen nacheinander durch. Lesen allein genügt nicht: Jede Stufe endet mit einer eigenen Konfiguration, einer überprüfbaren Erwartung und einem Nachweis. P0 schützt den Ablauf vor grundlegenden Fehlannahmen; P1 vertieft Daten, Geschäftsentscheidungen und Integrationen.
+Sieben Stufen führen vom ersten Blick in den Workflow-Designer bis zur eigenen Änderung an einem laufenden Workflow. Jede Stufe nennt ein Ziel, die Schritte in Ihrer eigenen Testorganisation und ein Ergebnis, das Sie prüfen können. Arbeiten Sie sie der Reihe nach durch und bauen Sie jede Übung selbst nach: Jede Stufe setzt auf der Konfiguration der vorherigen auf.
 
 1. [Orientierung und Ausführungsmodell](#level-1)
 2. [Erste eigene Regel](#level-2)
@@ -14,118 +14,146 @@ Arbeiten Sie die Stufen nacheinander durch. Lesen allein genügt nicht: Jede Stu
 6. [Berechnung, Schnittstelle und Export](#level-6)
 7. [Änderungen und Expertenbetrieb](#level-7)
 
-## Voraussetzungen
+## Bevor Sie beginnen
 
-Verwenden Sie eine eigene Testorganisation und einen synthetischen Beleg. Prüfen Sie Organisation, Rolle, Workflow-Lizenz und Advanced-Freigabe. Lassen Sie importierte Übungen inaktiv. Die beigefügten vollständigen JSON-Daten sind für Advanced Test → Custom Data bestimmt. Für echte Freigaben und Integrationen benötigen Sie gesonderte Testbenutzer und Testziele.
+* Eine eigene Testorganisation mit einem synthetischen Beleg darin. Üben Sie nie an Kundenbelegen.
+* Ihre Rolle, die Workflow-Lizenz und die Advanced-Freigabe, geprüft vor Stufe 1.
+* Importierte Übungen bleiben inaktiv, bis Sie sie getestet haben.
+* Vollständige JSON-Daten gehören in **Advanced Test → Custom Data**.
+* Echte Freigaben und Integrationen brauchen eigene Testbenutzer und Testziele; ein Test im Designer ersetzt das nicht.
 
-## 1. Orientierung und Ausführungsmodell <a id="level-1"></a>
+## 1. Orientierung und Ausführungsmodell <a href="#level-1" id="level-1"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/de.mp4" %}
 
 [Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/de.html).
 
-**Übung:** Erklären Sie Organisation, Zugriff, When–And–Then und den Unterschied zwischen linearer Regel und Advanced-Graph. Unterscheiden Sie Dokumenttypfilter, Ausführungsanlass, Speichern und Aktivieren.
+**Ziel:** Sie wissen, was einen Workflow startet, und was Ihnen ein Testergebnis sagen kann und was nicht.
 
-**Abschlusskriterium:** Sie können vor dem Aufbau sagen, wann die Regel berücksichtigt wird und welcher Nachweis eine Simulation von einem Dokumentlauf unterscheidet.
+1. Prüfen Sie Organisation, Ihren Zugriff, das Workflow-Modul und die Advanced-Freigabe.
+2. Sagen Sie When–And–Then in eigenen Worten und erklären Sie dann, wo eine lineare Regel endet und wie ein Advanced-Graph stattdessen seinen verbundenen Ausgängen folgt.
+3. Halten Sie vier Dinge auseinander, die im Designer ähnlich aussehen: den Dokumenttypfilter, den Ausführungsanlass, das Speichern und das Aktivieren.
 
-Lesen und nachbauen: [Wann läuft mein Workflow?](workflow-execution-model.md) · [Status ändern, ohne den Workflow neu zu starten](masterclass/status-and-reentry.md).
+**Abschlusskriterium:** Sie können sagen, wann eine Regel überhaupt betrachtet wird, und welcher Nachweis eine Simulation von einem Lauf auf einem echten Beleg trennt.
 
-## 2. Erste eigene Regel <a id="level-2"></a>
+**Vertiefung:** [Wann läuft mein Workflow?](workflow-execution-model.md) · [Status ändern, ohne den Workflow neu zu starten](masterclass/status-and-reentry.md)
+
+## 2. Erste eigene Regel <a href="#level-2" id="level-2"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/de.mp4" %}
 
 [Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/de.html).
 
-**Übung:** Bauen Sie When Rechnung → And invoice_id = WF-TRAINING-001 → And total_amount > 1000 → Then wf_training_route = REVIEW. Lassen Sie die Regel inaktiv. Testen Sie mit den vollständigen Daten für 999, 1000 und 1000.01; diese lineare Regel benötigt noch keinen Kontrollknoten.
+**Ziel:** Eine Regel vom Designer bis zu einem geprüften Ergebnis bringen, ohne einen Beleg anzufassen.
 
-**Abschlusskriterium:** REVIEW wird nur über 1000 erreicht. Sie notieren Feldtyp, Operator und gewählten Ausgang. Fehlende Eingabe wird gesondert behandelt.
+1. Bauen Sie sie im Advanced Builder: When Rechnung → And invoice\_id = WF-TRAINING-001 → And total\_amount > 1000 → Then wf\_training\_route = REVIEW. Eine lineare Regel dieser Größe braucht keinen Kontrollknoten.
+2. Speichern Sie sie und prüfen Sie in der Regelliste, ob sie noch inaktiv ist, denn das Speichern einer neuen Regel kann sie bereits aktivieren. Advanced Test ist eine eigene Ausführungsebene: Es wertet den Graphen im Builder aus, nicht die aktivierte Regel.
+3. Führen Sie Advanced Test mit vollständigen Daten für 999, 1000 und 1000.01 aus. Notieren Sie je Fall Feldtyp, Operator und gewählten Ausgang und ergänzen Sie einen Fall, in dem der Betrag ganz fehlt.
 
-Lesen und nachbauen: [Advanced-Geschäftsfall: Rechnungsrouting](advanced-workflow-case-study.md) · [Workflow-Übungspaket](workflow-training-kit.md).
+**Abschlusskriterium:** REVIEW wird nur bei 1000.01 erreicht, ein fehlender Betrag erscheint als Fehler und nicht als gewöhnliches Ergebnis unterhalb der Grenze, und die Regel ist am Ende wieder abgeschaltet.
 
-## 3. Felder, Datentypen und Grenzen <a id="level-3"></a>
+**Vertiefung:** [Advanced-Geschäftsfall: Rechnungsrouting](advanced-workflow-case-study.md) · [Workflow-Übungspaket](workflow-training-kit.md)
+
+## 3. Felder, Datentypen und Grenzen <a href="#level-3" id="level-3"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/de.mp4" %}
 
 [Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/de.html).
 
-**Übung:** Prüfen Sie fehlend, null, leeren Text, Leerzeichen, false, 0 und Zahlen als Text. Rechnen Sie eine Toleranz einmal mit Bestell- und einmal mit Dokumentreferenz. Vergleichen Sie eine und alle tatsächlich zugeordneten Positionen.
+**Ziel:** Sie wissen, was eine Bedingung tatsächlich vergleicht, bevor Sie ihrem Ergebnis trauen.
 
-**Abschlusskriterium:** Sie begründen wahr, falsch und Fehler anhand von Wert, Typ, Referenz und vorhandenen Daten; keine vergleichbare Position wird nicht als erfolgreiche Freigabe gewertet.
+1. Prüfen Sie die Leer-Prüfung gegen ein fehlendes Feld, `null`, leeren Text, Leerzeichen, `false`, `0`, `"0"` und `"false"` und notieren Sie, welche davon als leer zählen.
+2. Rechnen Sie dieselbe Toleranz von 2 Prozent zweimal: einmal mit der Bestellung als Referenz (Bestellung 100, Beleg 102.02) und einmal mit dem Beleg als Referenz.
+3. Wechseln Sie auf der Bestellkarte zwischen Any und All und zählen Sie, wie viele Positionen tatsächlich verglichen wurden.
 
-Lesen und nachbauen: [P1: Field is, Docfield is und zwei Felder vergleichen](masterclass/field-conditions.md) · [P1: Toleranzen und PO-Vergleich mit eindeutiger Referenz](masterclass/tolerances-and-po.md).
+**Abschlusskriterium:** Sie erklären wahr, falsch und Fehler aus Wert, Typ, Referenz und vorhandenen Daten. In Version 5 der Bestellkarte ist ein Beleg ohne vergleichbare Position ein Datenfehler und keine erfolgreiche Freigabe.
 
-## 4. Geschäftsregeln und Freigaben <a id="level-4"></a>
+**Vertiefung:** [Field is, Docfield is und zwei Felder vergleichen](masterclass/field-conditions.md) · [Toleranzen und Bestellreferenz eindeutig machen](masterclass/tolerances-and-po.md)
+
+## 4. Geschäftsregeln und Freigaben <a href="#level-4" id="level-4"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/de.mp4" %}
 
 [Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/de.html).
 
-**Übung:** Konfigurieren Sie eine Entscheidungstabelle mit zwei überschneidungsfreien Betragsregeln. Verfolgen Sie die gespeicherte Benutzer-Rückgabe bis zur Zuweisung. Planen Sie A mit Reihenfolge 10 und B mit 20 einschließlich Ablehnung und Rückfallroute.
+**Ziel:** Eine Rechnung über eine Entscheidungstabelle an die richtige Person schicken und anschließend eine Freigabekette laufen lassen, die auf die erste prüfende Person wartet.
 
-**Abschlusskriterium:** Sie unterscheiden Zuständigkeit, Aufgabe, Nachricht und tatsächliche Genehmigung. Ein realer Übergang zu B wird nur mit einer verarbeiteten Entscheidung von A abgenommen.
+**Übung 1: Entscheidungstabelle mit direkter Zuweisung**
 
-Lesen und nachbauen: [P1: Entscheidungstabelle bis zur Zuweisung nachvollziehen](masterclass/decision-table-routing.md) · [P1: Zuweisung, Aufgabe und sequenzielle Freigabe unterscheiden](masterclass/assignment-task-sequential.md).
+1. Legen Sie eine Entscheidungstabelle mit zwei Regeln an, die nicht beide zutreffen können: Prüfer A bis 1000, Prüfer B über 1000, mit `cost_center=4711` und `total_amount`.
+2. Setzen Sie in **Decision Table has Returns** Version 3 `store_data=wf_store_data`. Weisen Sie den Beleg mit **Assign document based on decision table** und `assignee_type=user` zu und verwenden Sie echte Benutzer aus Ihrer Testorganisation.
+3. Testen Sie einen Treffer, keinen Treffer, mehrere Treffer und eine ungültige Benutzer-ID und leiten Sie Nichttreffer und Zuweisungsfehler in einen ausdrücklichen Rückfall. Nehmen Sie die Zuweisung am Beleg selbst an.
 
-## 5. Advanced-Kontrollfluss und Unterworkflows <a id="level-5"></a>
+**Übung 2: Sequenzielle Freigabe ohne direkte Zuweisung**
+
+1. Legen Sie eine zweite, getrennte Regel mit den sequenziellen Karten an: die sequenzielle Zuweisungskarte an Position 10 für Prüfer A, dann die sequenzielle Aufgabenkarte an Position 20 für Prüfer B. Lassen Sie die direkte Zuweisung in diesem Lauf weg, denn die geprüfte Finalisierung kann den ersten sequenziellen Empfänger überspringen, wenn der Beleg im selben Lauf bereits direkt zugewiesen wurde.
+2. Geben Sie als A frei und prüfen Sie, dass B den Beleg erst nach der verarbeiteten Entscheidung von A erhält; geben Sie dann als B frei.
+3. Lehnen Sie in einem frischen Lauf als A ab und bestätigen Sie, dass der Export nicht stattfindet. Testen Sie anschließend, was passiert, wenn sich kein Empfänger ermitteln lässt.
+
+**Abschlusskriterium:** Sie unterscheiden Zuständigkeit, Aufgabe, Benachrichtigung und tatsächliche Freigabe; A → Freigabe → B → Freigabe ist in dieser Reihenfolge passiert; eine Ablehnung von A hat den Export verhindert; und ein fehlender Empfänger galt nicht als abgeschlossene Freigabe.
+
+**Vertiefung:** [Entscheidungstabelle bis zur Zuweisung nachvollziehen](masterclass/decision-table-routing.md) · [Zuweisung, Aufgabe und sequenzielle Freigabe unterscheiden](masterclass/assignment-task-sequential.md)
+
+## 5. Advanced-Kontrollfluss und Unterworkflows <a href="#level-5" id="level-5"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/de.mp4" %}
 
 [Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/de.html).
 
-**Übung:** Vergleichen Sie ALL, ANY und OR mit zwei tatsächlich erreichten Prüfungen. Untersuchen Sie zusätzlich einen nicht gewählten Zweig. Führen Sie die sieben v2-Routingfälle aus und prüfen Sie Run Workflow mit einem eigenen inaktiven Ziel.
+**Ziel:** Parallele Pfade richtig zusammenführen und Arbeit an einen anderen Workflow übergeben.
 
-**Abschlusskriterium:** Sie erklären Test-/Scheduler-Unterschied, Quellenzählung und Fehlerweitergabe. Der gemeinsame Abschluss wird in v2 ohne wartenden OR erreicht; ein grüner Unteraufruf wird am Ziel überprüft.
+1. Vergleichen Sie ALL, ANY und OR an zwei Prüfungen, die tatsächlich erreicht werden: ALL braucht einen passenden Ausgang von jeder Quelle, ANY und OR brauchen einen, und grün plus orange aus einer Quelle zählen weiterhin als eine Quelle.
+2. Sehen Sie sich einen Zweig an, den der Lauf nicht genommen hat, wie im Fall MERGE-04: Advanced Test wertet die wartende Zusammenführung weiter aus, während der normale Lauf sie überspringt, sobald ein Vorgänger nie ankommt.
+3. Führen Sie die sieben Fälle der v2-Fallstudie aus (darüber, darunter, Grenze, knapp darüber, fehlend, ungültige Zahl, anderer Beleg). Rufen Sie danach mit Run Workflow einen eigenen inaktiven Workflow auf und öffnen Sie den Pfad im Ziel selbst.
 
-Lesen und nachbauen: [P0: Wait ALL, Wait ANY und OR richtig verbinden](masterclass/control-nodes.md) · [P0: Run Workflow, Zielbedingungen und Fehler verstehen](masterclass/run-workflow.md) · [Advanced-Geschäftsfall: Rechnungsrouting](advanced-workflow-case-study.md).
+**Abschlusskriterium:** Sie erklären den Unterschied aus MERGE-04 zwischen Test und Lauf aus Schritt 2, wie Quellen gezählt werden und wohin ein Fehler wandert. Ein grüner Run-Workflow-Aufruf braucht trotzdem eine Prüfung im Ziel. V2 meint hier die zweite Version des Fallstudien-Graphen: Die Statuskarte jeder Route führt direkt zur gemeinsamen Abschlusskarte, ohne wartenden OR-Knoten.
 
-## 6. Berechnung, Schnittstelle und Export <a id="level-6"></a>
+**Vertiefung:** [Wait ALL, Wait ANY und OR richtig verbinden](masterclass/control-nodes.md) · [Run Workflow, Zielbedingungen und Fehler verstehen](masterclass/run-workflow.md) · [Advanced-Geschäftsfall: Rechnungsrouting](advanced-workflow-case-study.md)
+
+## 6. Berechnung, Schnittstelle und Export <a href="#level-6" id="level-6"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/de.mp4" %}
 
 [Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/de.html).
 
-**Übung:** Vergleichen Sie eine Tabelle vor und nach Berechnung einschließlich Regex-Nichttreffer und Division durch null. Definieren Sie für eine Schnittstelle den tatsächlichen Rückschreibweg. Planen Sie Export erst nach Freigabe mit eigener Testkonfiguration.
+**Ziel:** Werte berechnen, ein Ergebnis aus einem externen System zurückholen und erst nach einer echten Freigabe exportieren.
 
-**Abschlusskriterium:** Sie weisen gelesene Folgewerte, Empfängereingang und ERP-Verarbeitung getrennt nach. Simulation oder Exportanforderung wird nicht als Zustellung protokolliert.
+1. Berechnen Sie eine Spalte und vergleichen Sie die ganze Tabelle vorher und nachher, einschließlich einer Zeile, in der der reguläre Ausdruck nicht greift, und einer Division durch null.
+2. Schreiben Sie den Rückschreibevertrag mit dem externen System auf: Welches Belegfeld nimmt das Ergebnis auf, welche Karte oder Erweiterung schreibt es dorthin, und wie prüfen Sie den gespeicherten Wert anschließend? HTTP 200 allein ist kein Ergebnis.
+3. Planen Sie den Export nach der Freigabe mit Ihrer eigenen Exportkonfiguration und notieren Sie, was Sie beim Empfänger prüfen werden.
 
-Lesen und nachbauen: [P1: Tabellen berechnen und Regex-Abhängigkeit prüfen](masterclass/table-calculations.md) · [P1: API-Aufruf und Weiterverwendung der Antwort prüfen](masterclass/api-response-contract.md) · [P1: Exportvarianten, offene Aufgaben und Abschlussstatus](masterclass/export-lifecycle.md).
+**Abschlusskriterium:** Folgewerte im Feld, Eingang beim Empfänger und Verarbeitung im ERP haben jeweils einen eigenen Nachweis. Eine Simulation oder ein eingereihter Export ist keine Zustellung.
 
-## 7. Änderungen und Expertenbetrieb <a id="level-7"></a>
+**Vertiefung:** [Tabellen berechnen und Regex-Abhängigkeit prüfen](masterclass/table-calculations.md) · [API-Aufruf und Weiterverwendung der Antwort prüfen](masterclass/api-response-contract.md) · [Exportvarianten, offene Aufgaben und Abschlussstatus](masterclass/export-lifecycle.md)
+
+## 7. Änderungen und Expertenbetrieb <a href="#level-7" id="level-7"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/de.mp4" %}
 
 [Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/de.html).
 
-**Übung:** Sichern Sie den Workflow-Export und notieren Sie Kartenversionen vor einer Änderung. Wiederholen Sie Positiv-, Negativ-, Fehler- und Grenzfälle sowie eine zweite Ausführung. Ordnen Sie den ersten Fehler einer konkreten Eingabe und Konfiguration zu.
+**Ziel:** Einen Workflow ändern, den Sie nicht gebaut haben, und die Änderung wieder zurücknehmen können.
 
-**Abschlusskriterium:** Sie können eine Änderung abnehmen, auf den gesicherten Stand zurückgehen und einen neuen Dokumentlauf mit Wirkungsnachweisen vergleichen. Ursache, Korrektur und offene Grenzen stehen im Protokoll.
+1. Exportieren Sie den Workflow und notieren Sie die Kartenversionen, bevor Sie etwas anfassen.
+2. Wiederholen Sie nach der Änderung die Positiv-, Negativ-, Fehler- und Grenzfälle und zusätzlich einen zweiten Lauf desselben Falls.
+3. Führen Sie den ersten Fehler auf eine Eingabe und eine Konfiguration zurück und halten Sie den gesicherten Export als Rückweg bereit.
 
-Lesen und nachbauen: [Workflow-Fehler systematisch diagnostizieren](workflow-troubleshooting.md) · [Karten verstehen und zuverlässig konfigurieren](card-reference-standard.md).
+**Abschlusskriterium:** Sie können die Änderung abnehmen, die gesicherte Konfiguration wiederherstellen und einen neuen Beleglauf mit Nachweisen vergleichen. Notieren Sie Ursache, Korrektur und die Grenzen, die bleiben.
+
+**Vertiefung:** [Workflow-Fehler systematisch diagnostizieren](workflow-troubleshooting.md) · [Karten verstehen und zuverlässig konfigurieren](card-reference-standard.md)
 
 ## Wissen selbst prüfen
 
 | Frage | Antwort |
 | --- | --- |
-| Ist false bei Field is v2 leer? | Ja. 0 und der Text "false" sind dagegen nicht leer. |
-| Garantiert ein grüner OR-Test den Dokumentlauf? | Nein. Nicht erreichte Vorgänger werden im Test anders behandelt als im geprüften Scheduler. |
-| Kann Run Workflow ein inaktives Ziel aufrufen? | Ja, beim geprüften ausdrücklichen Aufruf. Zielbedingungen und Ergebnis weiterhin prüfen. |
-| Stellt HTTP 200 automatisch api.response.cost_center bereit? | Nein. Die geprüften Aktionen haben dafür keinen automatischen JSON-Ausgabevertrag. |
-| Beweist ein grüner Test den Exportempfang? | Nein. Dokumentlauf, Empfängereingang und ERP-Verarbeitung benötigen eigene Nachweise. |
+| Ist `false` bei Field is v2 leer? | Ja. Die Zahl 0 und der Text "false" sind nicht leer. |
+| Garantiert ein grüner OR-Test den Beleglauf? | Nein. Im geprüften Fall MERGE-04 wertet ein Test die Zusammenführung aus, die ein Beleglauf überspringt, wenn ein Vorgänger nie ankommt. |
+| Kann Run Workflow ein inaktives Ziel aufrufen? | Ja, beim geprüften ausdrücklichen Aufruf. Prüfen Sie trotzdem Zielbedingungen und Ergebnis. |
+| Macht HTTP 200 automatisch api.response.cost\_center verfügbar? | Nein. Die geprüften Aktionen bieten diesen automatischen JSON-Ausgabevertrag nicht. |
+| Beweist ein grüner Test den Exportempfang? | Nein. Beleglauf, Eingang beim Empfänger und ERP-Verarbeitung brauchen getrennte Nachweise. |
 
-## Die fünf Begleitkapitel
+## Festhalten, was Sie abgenommen haben
 
-Diese Kapitel begleiten die Übungen durchgehend: Ausführungsmodell → nachgebauter Geschäftsfall → Übungspaket → Diagnose → Kartenreferenz. Sie sind Arbeitsunterlagen zu den Stufen, keine fünf zusätzlichen ungeprüften Aufgaben.
+Laden Sie `workflow-training-kit-v2.zip` aus dem [Workflow-Übungspaket](workflow-training-kit.md) herunter, entpacken Sie es und öffnen Sie `acceptance-record-template.json`. Das ist ein leeres Protokoll und nichts, was Sie importieren; dieselbe ZIP enthält auch die Daten, die Erwartungen und die gespeicherten Testantworten, auf die sich die Stufen beziehen.
 
-1. [Wann läuft mein Workflow?](workflow-execution-model.md)
-2. [Advanced-Geschäftsfall: Rechnungsrouting](advanced-workflow-case-study.md)
-3. [Workflow-Übungspaket](workflow-training-kit.md)
-4. [Workflow-Fehler systematisch diagnostizieren](workflow-troubleshooting.md)
-5. [Karten verstehen und zuverlässig konfigurieren](card-reference-standard.md)
-
-## Abschlussprotokoll
-
-Verwenden Sie acceptance-record-template.json aus dem Übungspaket. Halten Sie Szenario, Konfigurationsstand, Erwartung, Beobachtung und Nachweisart fest. Unterscheiden Sie Dev-Test, isolierten Quelltest, echten Dokumentlauf, Empfang und ERP-Verarbeitung. Markieren Sie nicht geprüfte Schritte ausdrücklich als offen.
-
-## Vom Lernfall in den Betrieb
-
-Nach den Übungen helfen [kontrollierte Aktivierung](workflow-go-live.md), [Änderung und Wiederherstellung](workflow-change-and-recovery.md) sowie der [Meldungskatalog](workflow-error-catalog.md). Belegen Sie den vorgesehenen Ausführungsanlass, die tatsächliche Wirkung und eine Wiederholung getrennt.
+Tragen Sie ein, was Sie getestet haben und woran Sie das erkennen: das Szenario, die Konfiguration (Hash des Workflow-Exports, Kartenversionen), Ihre Erwartung, Ihre Beobachtung und welche Art von Nachweis Sie haben. Halten Sie einen Test in Advanced Test, eine isolierte Quellprüfung, einen echten Beleglauf, einen Eingang beim Empfänger und die ERP-Verarbeitung auseinander, und lassen Sie Schritte, die Sie nicht getestet haben, als offen stehen.

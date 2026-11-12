@@ -2,7 +2,7 @@
 description: "Jednoznaczny punkt odniesienia tolerancji i porównania PO"
 ---
 
-# P1: Jednoznaczny punkt odniesienia tolerancji i porównania PO
+# Jednoznaczny punkt odniesienia tolerancji i porównania PO
 
 Tolerancja 2 procent to nie stała kwota. To 2 procent strony, z którą porównujesz, dlatego ta sama pozycja faktury może nie przejść w jednym kierunku, a przejść w drugim. Ta strona pokazuje to na jednej parze wartości, daje trzy ćwiczenia do odtworzenia, a następnie wymienia sześć kierunków porównania i parametry kart, które możesz przenieść do własnego testu.
 

@@ -2,9 +2,9 @@
 description: "Wybór Field is, Docfield is lub Compare two Fields"
 ---
 
-# P1: Wybór Field is, Docfield is lub Compare two Fields
+# Wybór Field is, Docfield is lub Compare two Fields
 
-Trzy karty warunków wyglądają w projektancie podobnie, a ich różnica decyduje o tym, co reguła może naprawdę wychwycić. Ta strona pomaga wybrać właściwą, a potem daje trzy krótkie ćwiczenia pokazujące, co zwraca każda karta. Na koniec odróżnisz „puste” od „zera”, „fałsz” od „brak” oraz niespełniony warunek od błędu.
+Trzy karty warunków wyglądają w projektancie podobnie, a ich różnica decyduje o tym, co reguła może naprawdę wychwycić. Ta strona pomaga wybrać właściwą, a potem daje trzy krótkie ćwiczenia pokazujące, co zwraca każda karta. Na koniec odróżnisz „puste” od liczby `0`, „fałsz” od „brak” oraz niespełniony warunek od błędu; techniczne `null` jest puste, liczba `0` nie.
 
 Ćwiczenia wykonaj w Advanced Test, we własnej organizacji testowej, na dokumencie syntetycznym. Nic tutaj nie dotyka dokumentu klienta.
 

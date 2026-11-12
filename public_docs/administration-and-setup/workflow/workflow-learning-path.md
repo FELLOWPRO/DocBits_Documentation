@@ -47,7 +47,7 @@ Zeven niveaus brengen u van de eerste blik in de workflow-ontwerper tot het zelf
 **Doel:** Een regel van de ontwerper naar een gecontroleerd resultaat brengen zonder een document aan te raken.
 
 1. Bouw hem in de Advanced Builder: When Invoice → And invoice\_id = WF-TRAINING-001 → And total\_amount > 1000 → Then wf\_training\_route = REVIEW. Een lineaire regel van deze omvang heeft geen controleknooppunt nodig.
-2. Sla hem op en controleer in de regellijst of hij nog inactief is, want het opslaan van een nieuwe regel kan hem al activeren. Advanced Test is een aparte uitvoeringsoppervlakte: het evalueert de graaf in de builder, niet de geactiveerde regel.
+2. Sla hem op en controleer in de regellijst of hij nog inactief is, want het opslaan van een nieuwe regel kan hem al activeren. Advanced Test is een eigen testmodus: hij toetst de graaf zoals hij in de builder is gebouwd, niet de geactiveerde regel.
 3. Voer Advanced Test uit met volledige gegevens voor 999, 1000 en 1000.01. Noteer per geval veldtype, operator en gekozen uitgang en voeg een geval toe waarin het bedrag helemaal ontbreekt.
 
 **Afrondingscriterium:** REVIEW wordt alleen bij 1000.01 bereikt, een ontbrekend bedrag verschijnt als fout en niet als gewoon resultaat onder de grens, en de regel staat aan het eind weer uit.
@@ -68,7 +68,7 @@ Zeven niveaus brengen u van de eerste blik in de workflow-ontwerper tot het zelf
 
 **Afrondingscriterium:** U verklaart waar, onwaar en fout vanuit waarde, type, referentie en aanwezige gegevens. In versie 5 van de bestelkaart is een document zonder vergelijkbare regel een gegevensfout en geen geslaagde goedkeuring.
 
-**Verdieping:** [P1: Field is, Docfield is en twee velden vergelijken](masterclass/field-conditions.md) · [P1: Toleranties en bestelreferentie ondubbelzinnig maken](masterclass/tolerances-and-po.md)
+**Verdieping:** [Field is, Docfield is en twee velden vergelijken](masterclass/field-conditions.md) · [Toleranties en bestelreferentie ondubbelzinnig maken](masterclass/tolerances-and-po.md)
 
 ## 4. Bedrijfsregels en goedkeuringen <a href="#level-4" id="level-4"></a>
 
@@ -92,7 +92,7 @@ Zeven niveaus brengen u van de eerste blik in de workflow-ontwerper tot het zelf
 
 **Afrondingscriterium:** U onderscheidt verantwoordelijkheid, taak, melding en werkelijke goedkeuring; A → goedkeuring → B → goedkeuring is in die volgorde gebeurd; een afwijzing van A heeft de export verhinderd; en een ontbrekende ontvanger gold niet als afgeronde goedkeuring.
 
-**Verdieping:** [P1: De beslissingstabel tot en met de toewijzing volgen](masterclass/decision-table-routing.md) · [P1: Toewijzing, taak en sequentiële goedkeuring onderscheiden](masterclass/assignment-task-sequential.md)
+**Verdieping:** [De beslissingstabel tot en met de toewijzing volgen](masterclass/decision-table-routing.md) · [Toewijzing, taak en sequentiële goedkeuring onderscheiden](masterclass/assignment-task-sequential.md)
 
 ## 5. Advanced-besturing en onderliggende workflows <a href="#level-5" id="level-5"></a>
 
@@ -108,7 +108,7 @@ Zeven niveaus brengen u van de eerste blik in de workflow-ontwerper tot het zelf
 
 **Afrondingscriterium:** U legt het verschil uit geval MERGE-04 tussen test en uitvoering uit stap 2 uit, hoe bronnen worden geteld en waar een fout naartoe gaat. Een groene Run Workflow-aanroep vraagt nog steeds om een controle in het doel. V2 betekent hier de tweede versie van de casusgraaf: de statuskaart van elk pad leidt direct naar de gezamenlijke afrondingskaart, zonder wachtend OR-knooppunt.
 
-**Verdieping:** [P0: Wait ALL, Wait ANY en OR correct verbinden](masterclass/control-nodes.md) · [P0: Run Workflow, doelvoorwaarden en fouten begrijpen](masterclass/run-workflow.md) · [Advanced-bedrijfscasus: factuurroutering](advanced-workflow-case-study.md)
+**Verdieping:** [Wait ALL, Wait ANY en OR correct verbinden](masterclass/control-nodes.md) · [Run Workflow, doelvoorwaarden en fouten begrijpen](masterclass/run-workflow.md) · [Advanced-bedrijfscasus: factuurroutering](advanced-workflow-case-study.md)
 
 ## 6. Berekening, integratie en export <a href="#level-6" id="level-6"></a>
 
@@ -124,7 +124,7 @@ Zeven niveaus brengen u van de eerste blik in de workflow-ontwerper tot het zelf
 
 **Afrondingscriterium:** Vervolgwaarden in het veld, ontvangst bij de ontvanger en verwerking in het ERP hebben elk hun eigen bewijs. Een simulatie of een in de rij gezette export is geen aflevering.
 
-**Verdieping:** [P1: Tabellen berekenen en regex-afhankelijkheid controleren](masterclass/table-calculations.md) · [P1: API-aanroep en hergebruik van het antwoord controleren](masterclass/api-response-contract.md) · [P1: Exportvarianten, open taken en afrondingsstatus](masterclass/export-lifecycle.md)
+**Verdieping:** [Tabellen berekenen en regex-afhankelijkheid controleren](masterclass/table-calculations.md) · [API-aanroep en hergebruik van het antwoord controleren](masterclass/api-response-contract.md) · [Exportvarianten, open taken en afrondingsstatus](masterclass/export-lifecycle.md)
 
 ## 7. Wijzigingen en deskundig beheer <a href="#level-7" id="level-7"></a>
 

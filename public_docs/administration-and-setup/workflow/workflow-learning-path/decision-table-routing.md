@@ -4,54 +4,120 @@ description: 'P1: Trace a decision table through to assignment'
 
 # P1: Trace a decision table through to assignment
 
-A decision table connects input fields to typed returns. The example uses `cost_center=4711` and `total_amount`: reviewer A up to 1000, reviewer B above 1000. Create two non-overlapping rules and use valid users in your test organization. The kit's example describes the setup; it is not a guaranteed editor import.
+A decision table decides **who handles a document** in a workflow. It checks the document's fields against your rules and returns users, groups, or both. Workflow cards then use those returns to assign the document or create tasks.
 
-For **Decision Table has Returns** version 3, enable `store_data=wf_store_data`. Version 2 instead reads the boolean storage option. The assignment card needs returns stored in the same run. Successful table execution alone does not confirm a valid user.
+It works in **two steps**:
 
-A user return can contain `output_type=user` and `value=101`; 101 is synthetic and must be replaced with an existing test user. Then choose **Assign document based on decision table** with `assignee_type=user`. The inspected version 2 of that action selects the last matching return. Multiple matches do not automatically require approval by all users.
-
-Test one match, no match, multiple matches, wrong return type, invalid user ID and storage disabled. Route no-match and assignment errors to an explicit fallback. Establish ordering and hit policy instead of treating incidental table order as a business rule. Accept the actual assignment on the document.
-
-The decision-table condition actually calls the table service to evaluate the table. Test mode is not a blanket guarantee against side effects; use only owned test data and inspect the actions involved.
+1. An **AND card** runs the decision table and stores its returns.
+2. **THEN cards** read the stored returns and assign the document or create tasks.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.mp4" %}
 
 **Video:** Decision tables in assignment cards · 1:59 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.vtt)
 
-## Cards and example parameters
+---
 
-These values describe individual card parameters, not an importable complete workflow. Replace YOUR\_\* with your own test selections. The designer manages the hidden caller ID. Catalog: Dev, DocFlow 2.10.38, 21 October 2026; check available versions and entitlements in your own organization.
+## Example used on this page
 
-### `condition_decision_tree_data` · v3
+Invoices are routed by cost center and amount:
 
-Identity: `c40160ce-805f-4312-8726-51b0fd7af8ec`
+| Rule | Cost center | Total amount | Returns           |
+| ---- | ----------- | ------------ | ----------------- |
+| 1    | 4711        | up to 1,000.00 | Reviewer A (user) |
+| 2    | 4711        | above 1,000.00 | Reviewer B (user) |
 
-| Parameter        | Type / choices                         | Example                         |
-| ---------------- | -------------------------------------- | ------------------------------- |
-| `decision_table` | `decision_table:str`                   | `"YOUR_TEST_DECISION_TABLE_ID"` |
-| `boolean`        | `boolean:bool`                         | `true`                          |
-| `store_data`     | `wf_store_data / wf_do_not_store_data` | `"wf_store_data"`               |
+Make sure the rules **don't overlap**, so that each document matches exactly one rule. Use users that exist in your organization.
 
-### `action_assign_doc_based_on_decision_table` · v2
+---
 
-Identity: `699912a7-2369-47e0-9092-8d027e13752a`
+## Step 1: Run the decision table (AND card)
 
-| Parameter       | Type / choices | Example  |
-| --------------- | -------------- | -------- |
-| `assignee_type` | `user / group` | `"user"` |
+Add the AND card **"Decision table … has returns for the document or supplier organisation. Store returned data for use in subsequent cards."**
 
-## Business test cases
+| Setting        | What to choose                                           |
+| -------------- | -------------------------------------------------------- |
+| Decision table | The table you want to run, e.g. *Approval by cost center* |
+| Returned data  | **Store**                                                |
 
-| Case  | Input / setup                              | Expected outcome                |
-| ----- | ------------------------------------------ | ------------------------------- |
-| DT-01 | 4711; 1000; store\_data=wf\_store\_data    | USER\_A                         |
-| DT-02 | 4711; 1000.01; store\_data=wf\_store\_data | USER\_B                         |
-| DT-03 | no result / invalid user / wrong type      | FALLBACK                        |
-| DT-04 | returns=\[USER\_A, USER\_B]; assign v2     | USER\_B                         |
-| DT-05 | store\_data=wf\_do\_not\_store\_data       | no stored return for assignment |
+> ⚠️ **Important:** if you choose *Do not store*, the THEN cards after it have nothing to work with and won't assign anyone.
 
-## Evidence and limits
+<figure><img src="../../../.gitbook/assets/decision-table-routing-01-store-returns-en.png" alt="Workflow builder: a When condition on document type Invoice leads to the Logic card Decision table, returned data set to Store." width="800"><figcaption><p>The AND card runs the table and stores its returns</p></figcaption></figure>
 
-Parameters and behavior were checked against the Dev catalog and inspected source revision. Business test cases are an acceptance procedure. Personal approvals, real data changes and delivery were not performed for this chapter.
+### The three outcome paths
+
+| Path                          | When it happens                                      | What to connect                           |
+| ----------------------------- | ---------------------------------------------------- | ----------------------------------------- |
+| **Success**                   | The table returns at least one match for the document | Your assignment or task card (Step 2)     |
+| **Failed condition** (orange) | No rule matches the document                         | A fallback, e.g. assign to a default group |
+| **Error** (red)               | No decision table is selected, or the table can't run | A fallback and a notification to an admin  |
+
+> ℹ️ Always connect the **Failed condition** and **Error** paths. Otherwise the document stays unassigned and nobody is notified.
+
+---
+
+## Step 2: Choose what happens with the returns (THEN card)
+
+Connect one of these cards to the **Success** path:
+
+| Your goal                                                   | Card                                                                                                | What it does                                                                                                                                                                                                                                              |
+| ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **One person owns the document, everyone else is informed** | *Assign the document based on the first user return of the decision table and create a task for all* | Assigns the document to the **first** returned user. **Every** returned user gets a task or notification, the first one included. Groups in the returns are ignored.                                                                                        |
+| **The table decides everything, including priority**        | *Assign the document sequentially to User / Group based on decision table*                          | Has no fields. Takes users and groups from the table, each with the priority the table returns or a default. At the end of the run, the entry with the **lowest priority number** gets the document, unless another card has already assigned it directly. |
+| **Only create tasks, no assignment**                        | *Assign task with title … to user/group return of decision table*                                   | Creates a task or notification for each returned user or group. The document itself is not assigned.                                                                                                                                                        |
+| **Assign to one user or group**                             | *Assign document to user/group based on decision table*                                             | Assigns the document to the returned user or group. If several rules match, the **last** match wins.                                                                                                                                                        |
+
+<figure><img src="../../../.gitbook/assets/decision-table-routing-02-first-user-card-en.png" alt="Workflow builder with the Decision table card connected on its Success path to the Assignee card Assign the document based on the first user return of the decision table and create a task for all." width="800"><figcaption><p>The first-user card on the Success path</p></figcaption></figure>
+
+### Task settings
+
+| Setting             | Meaning                                          |
+| ------------------- | ------------------------------------------------ |
+| Task / Notification | A task needs action; a notification only informs |
+| Title / Description | Shown to the user in their task list             |
+| Priority            | Low / Medium / High                              |
+| Notify via email    | Also notify the user by email                    |
+
+<figure><img src="../../../.gitbook/assets/decision-table-routing-04-task-settings-en.png" alt="Workflow builder: the first-user card filled in with title Check invoice, description Check the invoice and approve it, priority High and email notification on, plus a second Assignee card Assign the document sequentially to User / Group based on decision table without fields." width="800"><figcaption><p>The first-user card filled in, plus the sequential card without fields</p></figcaption></figure>
+
+### Other decision-table cards
+
+| Card                                                                                                  | Use                                                                          |
+| ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| *Assign the document sequentially to user/group based on decision table, with priority of …*          | Like the sequential card above, but you set the priority on the card yourself |
+| *Assign the document to and create a task … return of decision table. Set an assignment priority of …* | Sequential assignment plus a task in one card                                |
+| *Assign the first returned user of the decision table to the supplier*                                 | Supplier workflows: sets the supplier's responsible user                      |
+
+---
+
+## When several rules match
+
+Which person gets the document depends on the card:
+
+| Card                           | Who gets the document                        |
+| ------------------------------ | -------------------------------------------- |
+| First user return + tasks      | The **first** returned user                  |
+| Assign based on decision table | The **last** returned user or group          |
+| Sequential (user and/or group) | The entry with the **lowest priority number** |
+
+> ⚠️ Several matches do **not** mean that all of those users must approve. Don't rely on the row order in the table. If the order matters, set priorities in the table and use the sequential card.
+
+<figure><img src="../../../.gitbook/assets/decision-table-routing-06-which-card-en.png" alt="Three then cards compared: assign to the first user and create tasks, assign sequentially without fields, and create tasks from the returns, each with a one-line description." width="800"><figcaption><p>Which then card for which job</p></figcaption></figure>
+
+---
+
+## Test your setup
+
+Test with test users and test documents only. The AND card really runs the decision table, even in test mode.
+
+| #   | Test                                   | Expected result                                     |
+| --- | -------------------------------------- | --------------------------------------------------- |
+| 1   | Cost center 4711, amount 1,000.00       | Reviewer A                                          |
+| 2   | Cost center 4711, amount 1,000.01       | Reviewer B                                          |
+| 3   | Cost center 9999 (no rule matches)      | Orange path → fallback                              |
+| 4   | Both rules match (overlapping amounts)  | Depends on the card (see "When several rules match") |
+| 5   | Returned data set to *Do not store*     | Nothing is assigned                                 |
+| 6   | The returned user was deleted           | Error → fallback                                    |
+
+Check the result on the document itself (assignee and tasks) and in the workflow log.
 
 [Continue learning](./) · [Training kit](workflow-training-kit.md)

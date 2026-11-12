@@ -28,7 +28,7 @@ Chaque carte de type de document affiche :
 | Contrôle | Description |
 |---------|-------------|
 | **Activer** | Commutateur qui active ou désactive ce type de document pour le traitement. Voir [Activer ou désactiver un type de document](activation.md). |
-| **Extraction** | Commutateur qui sélectionne le mode d'extraction, **Flex** ou **Fix**. Il n'active ni ne désactive l'extraction. |
+| **Extraction** | Commutateur qui sélectionne le mode d'extraction, **Flex** ou **Fix**. Il n'active ni ne désactive l'extraction ; [Activer ou désactiver un type de document](activation.md) explique la différence entre les deux commutateurs. |
 | **Engrenage** (icône de réglages) | Ouvre les [paramètres supplémentaires](more-settings/README.md) de ce type de document, page intitulée **Plus De Paramètres**, par exemple les règles de validation personnalisées, les règles de transformation et la détection des doublons. |
 
 ## Liens de configuration

@@ -15,7 +15,7 @@ Smart Search Ranking puts the documents you mean at the top of a dashboard searc
 
 Eleven test invoices all contain the word *screw*: screws, a screwdriver set, a screw compressor service, screw-cap bottles, a screw pine plant, a screw-post binder, a "screwdriver" cocktail, a toy tool case.
 
-* Search for **screw**. In keyword order the screwdriver set is the first result and the invoice for stainless-steel screws is fifth. With Smart Search Ranking the screws come first, then the screw assortment; the screwdriver set moves down.
+* Search for **screw**. In keyword order the screwdriver set is the first result and the invoice for stainless-steel screws is fifth. With Smart Search Ranking the screws come first and the screw assortment moves up; the screwdriver set drops to seventh.
 * Search for **screwdriver**. The screwdriver set is first in keyword order and stays first with Smart Search Ranking — this time it is what you meant. The professional screwdrivers move up; the cocktail and the toy move down.
 
 ## Where it applies

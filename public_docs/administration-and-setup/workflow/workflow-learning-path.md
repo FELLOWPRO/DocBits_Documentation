@@ -47,7 +47,7 @@ Siete niveles le llevan de la primera mirada al diseñador de workflows hasta la
 **Objetivo:** Llevar una regla del diseñador a un resultado comprobado sin tocar un documento.
 
 1. Créela en el Advanced Builder: When Invoice → And invoice\_id = WF-TRAINING-001 → And total\_amount > 1000 → Then wf\_training\_route = REVIEW. Una regla lineal de este tamaño no necesita nodo de control.
-2. Guárdela y compruebe en la lista de reglas que sigue inactiva, porque guardar una regla nueva ya puede activarla. Advanced Test es una superficie de ejecución aparte: evalúa el grafo del constructor, no la regla activada.
+2. Guárdela y compruebe en la lista de reglas que sigue inactiva, porque guardar una regla nueva ya puede activarla. Advanced Test es un modo de prueba propio: comprueba el grafo tal como está construido en el constructor, no la regla activada.
 3. Ejecute Advanced Test con datos completos para 999, 1000 y 1000.01. Anote por caso el tipo de campo, el operador y la salida elegida, y añada un caso en el que falte el importe por completo.
 
 **Criterio de finalización:** REVIEW solo se alcanza con 1000.01, un importe ausente aparece como error y no como resultado normal por debajo del umbral, y la regla vuelve a estar desactivada al final.
@@ -68,7 +68,7 @@ Siete niveles le llevan de la primera mirada al diseñador de workflows hasta la
 
 **Criterio de finalización:** Explica verdadero, falso y error a partir del valor, el tipo, la referencia y los datos disponibles. En la versión 5 de la tarjeta de pedido, un documento sin línea comparable es un error de datos y no una aprobación correcta.
 
-**Detalle:** [P1: Field is, Docfield is y comparar dos campos](masterclass/field-conditions.md) · [P1: Fijar tolerancias y referencia de pedido sin ambigüedad](masterclass/tolerances-and-po.md)
+**Detalle:** [Field is, Docfield is y comparar dos campos](masterclass/field-conditions.md) · [Fijar tolerancias y referencia de pedido sin ambigüedad](masterclass/tolerances-and-po.md)
 
 ## 4. Reglas de negocio y aprobaciones <a href="#level-4" id="level-4"></a>
 
@@ -92,7 +92,7 @@ Siete niveles le llevan de la primera mirada al diseñador de workflows hasta la
 
 **Criterio de finalización:** Distingue responsabilidad, tarea, notificación y aprobación efectiva; A → aprobación → B → aprobación ocurrió en ese orden; un rechazo de A impidió el export; y un destinatario ausente no contó como aprobación cerrada.
 
-**Detalle:** [P1: Seguir la tabla de decisión hasta la asignación](masterclass/decision-table-routing.md) · [P1: Distinguir asignación, tarea y aprobación secuencial](masterclass/assignment-task-sequential.md)
+**Detalle:** [Seguir la tabla de decisión hasta la asignación](masterclass/decision-table-routing.md) · [Distinguir asignación, tarea y aprobación secuencial](masterclass/assignment-task-sequential.md)
 
 ## 5. Control Advanced y subworkflows <a href="#level-5" id="level-5"></a>
 
@@ -108,7 +108,7 @@ Siete niveles le llevan de la primera mirada al diseñador de workflows hasta la
 
 **Criterio de finalización:** Explica la diferencia del caso MERGE-04 entre prueba y ejecución del paso 2, cómo se cuentan los orígenes y adónde va un error. Una llamada verde a Run Workflow sigue necesitando una comprobación en el destino. V2 se refiere aquí a la segunda versión del grafo del caso práctico: la tarjeta de estado de cada ruta lleva directamente a la tarjeta de cierre común, sin nodo OR en espera.
 
-**Detalle:** [P0: Conectar bien Wait ALL, Wait ANY y OR](masterclass/control-nodes.md) · [P0: Entender Run Workflow, las condiciones de destino y los errores](masterclass/run-workflow.md) · [Caso de negocio Advanced: enrutado de facturas](advanced-workflow-case-study.md)
+**Detalle:** [Conectar bien Wait ALL, Wait ANY y OR](masterclass/control-nodes.md) · [Entender Run Workflow, las condiciones de destino y los errores](masterclass/run-workflow.md) · [Caso de negocio Advanced: enrutado de facturas](advanced-workflow-case-study.md)
 
 ## 6. Cálculo, integración y exportación <a href="#level-6" id="level-6"></a>
 
@@ -119,12 +119,12 @@ Siete niveles le llevan de la primera mirada al diseñador de workflows hasta la
 **Objetivo:** Calcular valores, recuperar un resultado de un sistema externo y exportar solo después de una aprobación real.
 
 1. Calcule una columna y compare toda la tabla antes y después, incluida una fila en la que la expresión regular no coincide y una división por cero.
-2. Escriba el contrato de reescritura con el sistema externo: qué campo del documento recoge el resultado, qué tarjeta o extensión lo escribe ahí y cómo comprueba después el valor guardado. Un HTTP 200 por sí solo no es un resultado.
+2. Aclare con el sistema externo cómo se guarda la respuesta externa en un campo: qué campo del documento recibe el resultado de esa respuesta, qué tarjeta o extensión lo guarda allí y cómo comprueba después el valor almacenado. Un HTTP 200 por sí solo no es un resultado.
 3. Planifique el export tras la aprobación con su propia configuración y anote qué va a revisar en el destinatario.
 
 **Criterio de finalización:** Los valores posteriores en el campo, la recepción en el destinatario y el procesamiento en el ERP tienen cada uno su propia prueba. Una simulación o un export encolado no es una entrega.
 
-**Detalle:** [P1: Calcular tablas y comprobar la dependencia de regex](masterclass/table-calculations.md) · [P1: Comprobar la llamada a la API y el uso de la respuesta](masterclass/api-response-contract.md) · [P1: Variantes de export, tareas abiertas y estado de cierre](masterclass/export-lifecycle.md)
+**Detalle:** [Calcular tablas y comprobar la dependencia de regex](masterclass/table-calculations.md) · [Comprobar la llamada a la API y el uso de la respuesta](masterclass/api-response-contract.md) · [Variantes de export, tareas abiertas y estado de cierre](masterclass/export-lifecycle.md)
 
 ## 7. Cambios y operación experta <a href="#level-7" id="level-7"></a>
 

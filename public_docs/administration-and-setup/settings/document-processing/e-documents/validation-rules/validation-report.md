@@ -47,7 +47,7 @@
 | **Other rules**              | 其他规则，例如 PEPPOL 规则。            |
 | **Value checks of DocBits**  | DocBits 添加的检查，例如 IBAN 和 VAT ID。  |
 
-> 对于使用 EN 16931 或 EXTENDED 规范配置的发票，XRechnung 专用规则会显示为**Warning**，而非错误。
+> 对于使用 EN 16931 或 EXTENDED 规范配置的发票，XRechnung 专用规则会显示为**warnings**，而非错误。
 
 ## 校验问题
 

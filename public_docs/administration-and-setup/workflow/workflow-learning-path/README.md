@@ -4,7 +4,7 @@ description: Learning path from beginner to expert
 
 # Learning path from beginner to expert
 
-Seven levels take you from your first look at the workflow designer to owning a change in a running workflow. Each level names a goal, three steps you carry out in your own test organization, and a result you can check. Do them in order, and build along the way: reading the page on its own will not get you there.
+Seven levels take you from your first look at the workflow designer to owning a change in a running workflow. Each level names a goal, the steps you carry out in your own test organization, and a result you can check. Work through them in order and build each exercise yourself: every level builds on the configuration you made in the one before.
 
 1. [Orientation and execution model](./#level-1)
 2. [Your first rule](./#level-2)
@@ -46,11 +46,11 @@ Seven levels take you from your first look at the workflow designer to owning a 
 
 **Goal:** Get one rule from the designer to a checked result without touching a document.
 
-1. Build When Invoice → And invoice\_id = WF-TRAINING-001 → And total\_amount > 1000 → Then wf\_training\_route = REVIEW. Save it and leave it disabled; a linear rule this size needs no control node.
-2. Run Advanced Test with complete data for 999, 1000 and 1000.01.
-3. Write down field type, operator and selected output for each case, then add a case where the amount is missing altogether.
+1. Build it in the Advanced Builder: When Invoice → And invoice\_id = WF-TRAINING-001 → And total\_amount > 1000 → Then wf\_training\_route = REVIEW. A linear rule this size needs no control node.
+2. Save it, then open the rule list and check that it is still disabled, because saving a new rule can already enable it. Advanced Test is a separate execution surface: it evaluates the graph in the builder, not the enabled rule.
+3. Run Advanced Test with complete data for 999, 1000 and 1000.01. Write down field type, operator and selected output for each case, then add a case where the amount is missing altogether.
 
-**Done when:** REVIEW is reached for 1000.01 only, and a missing amount comes out as an error rather than as an ordinary below-the-limit result.
+**Done when:** REVIEW is reached for 1000.01 only, a missing amount comes out as an error rather than as an ordinary below-the-limit result, and the rule is switched off again when you finish.
 
 **Detail:** [Advanced case study: invoice routing](advanced-workflow-case-study.md) · [Workflow training kit](workflow-training-kit.md)
 
@@ -64,9 +64,9 @@ Seven levels take you from your first look at the workflow designer to owning a 
 
 1. Test the empty-state check against a missing field, `null`, empty text, whitespace, `false`, `0`, `"0"` and `"false"`, and note which of them count as empty.
 2. Calculate the same 2 percent tolerance twice: once with the PO as the reference (PO 100, document 102.02) and once with the document as the reference.
-3. Switch between Any and All, and count how many lines were actually compared.
+3. Switch between Any and All on the PO card, and count how many lines were actually compared.
 
-**Done when:** you can explain true, false and error from value, type, reference and available data. When no line could be compared, the outcome is a data error, not a successful approval.
+**Done when:** you can explain true, false and error from value, type, reference and available data. In the PO card version 5, a document that has no comparable line is a data error, not a successful approval.
 
 **Detail:** [Choose Field is, Docfield is or Compare two Fields](field-conditions.md) · [Make tolerance and PO reference direction explicit](tolerances-and-po.md)
 
@@ -76,13 +76,21 @@ Seven levels take you from your first look at the workflow designer to owning a 
 
 [Open the video with English captions and transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/en.html).
 
-**Goal:** Send an invoice to the right person through a decision table, and see who has actually decided what.
+**Goal:** Send an invoice to the right person through a decision table, then run an approval chain that waits for the first reviewer.
 
-1. Create a decision table with two rules that cannot both match: reviewer A up to 1000, reviewer B above 1000.
-2. Store the returned user and assign the document from that stored return; use real users from your test organization.
-3. Plan the sequence with A at order 10 and B at order 20, then add a rejection by A and a fallback for the case where no user comes back.
+**Exercise 1: decision table with direct assignment**
 
-**Done when:** you can tell responsibility, task, notification and an actual approval apart, and you accept the handover to B only after A has decided.
+1. Create a decision table with two rules that cannot both match: reviewer A up to 1000, reviewer B above 1000, using `cost_center=4711` and `total_amount`.
+2. In **Decision Table has Returns** version 3, set `store_data=wf_store_data`. Assign the document with **Assign document based on decision table** and `assignee_type=user`, using real users from your test organization.
+3. Test one match, no match, multiple matches and an invalid user ID, and route the no-match and assignment errors to an explicit fallback. Accept the assignment on the document itself.
+
+**Exercise 2: sequential approval without direct assignment**
+
+1. Create a second, separate rule with the sequential cards: the sequential assignment card at order 10 for reviewer A, then the sequential task card at order 20 for reviewer B. Keep direct assignment out of this run, because the inspected finalization can skip the first sequential recipient when a document was already directly assigned in the same run.
+2. Approve as A, then check that B receives the document only after A's processed decision, and approve as B.
+3. Reject as A in a fresh run and confirm that the export does not happen, then test what happens when no recipient can be resolved.
+
+**Done when:** you can tell responsibility, task, notification and an actual approval apart; A→approve→B→approve happened in that order; a rejection by A prevented the export; and a missing recipient did not count as a completed approval.
 
 **Detail:** [Trace a decision table through to assignment](decision-table-routing.md) · [Distinguish assignment, tasks and sequential approval](assignment-task-sequential.md)
 
@@ -94,11 +102,11 @@ Seven levels take you from your first look at the workflow designer to owning a 
 
 **Goal:** Join parallel paths correctly, and hand work to another workflow.
 
-1. Compare ALL, ANY and OR on two checks that are actually reached: ALL needs a matching output from every source, ANY and OR need one.
-2. Look at a branch the run did not take. A test still evaluates it, while the normal run skips the waiting merge once a predecessor never arrives.
+1. Compare ALL, ANY and OR on two checks that are actually reached: ALL needs a matching output from every source, ANY and OR need one, and green plus orange from one source still count as one source.
+2. Look at a branch the run did not take, as in case MERGE-04: Advanced Test still evaluates the waiting merge, while the normal run skips it once a predecessor never arrives.
 3. Run the seven cases of the v2 case study (above, below, boundary, just-above, missing, invalid-number, other-invoice), then call one of your own inactive workflows with Run Workflow and open the target's own path.
 
-**Done when:** you can explain the test-and-run difference from step 2, how sources are counted (green and orange from one source still make one source), and where an error travels. A green Run Workflow call still needs the target inspected. V2 here means the second version of the case-study graph: each route's status card connects straight to the shared completion card, with no waiting OR node.
+**Done when:** you can explain the MERGE-04 difference between test and run from step 2, how sources are counted, and where an error travels. A green Run Workflow call still needs the target inspected. V2 here means the second version of the case-study graph: each route's status card connects straight to the shared completion card, with no waiting OR node.
 
 **Detail:** [Connect Wait ALL, Wait ANY and OR correctly](control-nodes.md) · [Understand Run Workflow, target conditions and errors](run-workflow.md) · [Advanced case study: invoice routing](advanced-workflow-case-study.md)
 
@@ -136,13 +144,13 @@ Seven levels take you from your first look at the workflow designer to owning a 
 
 ## Check your understanding
 
-| Question                                                      | Answer                                                                                   |
-| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Is false empty for Field is v2?                               | Yes. Number 0 and text "false" are not empty.                                            |
-| Does a green OR test guarantee the document run?              | No. Unreached predecessors are handled differently in tests and the inspected scheduler. |
-| Can Run Workflow call an inactive target?                     | Yes, for the inspected explicit call. Still inspect target conditions and outcome.       |
-| Does HTTP 200 automatically expose api.response.cost\_center? | No. The inspected actions do not provide that automatic JSON-output contract.            |
-| Does a green test prove export receipt?                       | No. Document execution, recipient receipt and ERP processing need separate evidence.     |
+| Question                                                      | Answer                                                                                                                   |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Is false empty for Field is v2?                               | Yes. Number 0 and text "false" are not empty.                                                                            |
+| Does a green OR test guarantee the document run?              | No. In the checked case MERGE-04, a test evaluates the merge that a document run skips when a predecessor never arrives. |
+| Can Run Workflow call an inactive target?                     | Yes, for the inspected explicit call. Still inspect target conditions and outcome.                                       |
+| Does HTTP 200 automatically expose api.response.cost\_center? | No. The inspected actions do not provide that automatic JSON-output contract.                                            |
+| Does a green test prove export receipt?                       | No. Document execution, recipient receipt and ERP processing need separate evidence.                                     |
 
 ## Record what you accepted
 

@@ -68,7 +68,7 @@ Sette livelli portano dal primo sguardo al designer dei workflow fino alla respo
 
 **Criterio di completamento:** Spiegate vero, falso ed errore partendo da valore, tipo, riferimento e dati presenti. Nella versione 5 della scheda ordine un documento senza riga confrontabile è un errore di dati e non un’approvazione riuscita.
 
-**Approfondimento:** [Field is, Docfield is e confronto tra due campi](masterclass/field-conditions.md) · [Rendere tolleranze e riferimento ordine non ambigui](masterclass/tolerances-and-po.md)
+**Approfondimento:** [P1: Field is, Docfield is e confronto tra due campi](masterclass/field-conditions.md) · [P1: Rendere tolleranze e riferimento ordine non ambigui](masterclass/tolerances-and-po.md)
 
 ## 4. Regole aziendali e approvazioni <a href="#level-4" id="level-4"></a>
 
@@ -92,7 +92,7 @@ Sette livelli portano dal primo sguardo al designer dei workflow fino alla respo
 
 **Criterio di completamento:** Distinguete responsabilità, attività, notifica e approvazione reale; A → approvazione → B → approvazione è avvenuto in questo ordine; un rifiuto di A ha impedito l’export; e un destinatario mancante non è stato contato come approvazione conclusa.
 
-**Approfondimento:** [Seguire la tabella di decisione fino all’assegnazione](masterclass/decision-table-routing.md) · [Distinguere assegnazione, attività e approvazione sequenziale](masterclass/assignment-task-sequential.md)
+**Approfondimento:** [P1: Seguire la tabella di decisione fino all’assegnazione](masterclass/decision-table-routing.md) · [P1: Distinguere assegnazione, attività e approvazione sequenziale](masterclass/assignment-task-sequential.md)
 
 ## 5. Controllo Advanced e sotto-workflow <a href="#level-5" id="level-5"></a>
 
@@ -108,7 +108,7 @@ Sette livelli portano dal primo sguardo al designer dei workflow fino alla respo
 
 **Criterio di completamento:** Spiegate la differenza del caso MERGE-04 tra test ed esecuzione del passaggio 2, come vengono contate le origini e dove finisce un errore. Una chiamata Run Workflow verde richiede comunque un controllo nella destinazione. V2 qui indica la seconda versione del grafo dello studio di caso: la scheda di stato di ogni percorso porta direttamente alla scheda di chiusura comune, senza nodo OR in attesa.
 
-**Approfondimento:** [Collegare correttamente Wait ALL, Wait ANY e OR](masterclass/control-nodes.md) · [Capire Run Workflow, le condizioni di destinazione e gli errori](masterclass/run-workflow.md) · [Caso aziendale Advanced: instradamento delle fatture](advanced-workflow-case-study.md)
+**Approfondimento:** [P0: Collegare correttamente Wait ALL, Wait ANY e OR](masterclass/control-nodes.md) · [P0: Capire Run Workflow, le condizioni di destinazione e gli errori](masterclass/run-workflow.md) · [Caso aziendale Advanced: instradamento delle fatture](advanced-workflow-case-study.md)
 
 ## 6. Calcolo, integrazione ed export <a href="#level-6" id="level-6"></a>
 
@@ -124,7 +124,7 @@ Sette livelli portano dal primo sguardo al designer dei workflow fino alla respo
 
 **Criterio di completamento:** Valori successivi nel campo, ricezione presso il destinatario ed elaborazione nell’ERP hanno ciascuno una prova propria. Una simulazione o un export in coda non è una consegna.
 
-**Approfondimento:** [Calcolare tabelle e verificare la dipendenza dalla regex](masterclass/table-calculations.md) · [Verificare la chiamata API e il riuso della risposta](masterclass/api-response-contract.md) · [Varianti di export, attività aperte e stato di chiusura](masterclass/export-lifecycle.md)
+**Approfondimento:** [P1: Calcolare tabelle e verificare la dipendenza dalla regex](masterclass/table-calculations.md) · [P1: Verificare la chiamata API e il riuso della risposta](masterclass/api-response-contract.md) · [P1: Varianti di export, attività aperte e stato di chiusura](masterclass/export-lifecycle.md)
 
 ## 7. Modifiche e gestione esperta <a href="#level-7" id="level-7"></a>
 

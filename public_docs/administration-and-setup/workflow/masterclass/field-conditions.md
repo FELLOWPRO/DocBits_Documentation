@@ -2,9 +2,9 @@
 description: "Elegir Field is, Docfield is o Compare two Fields"
 ---
 
-# P1: Elegir Field is, Docfield is o Compare two Fields
+# Elegir Field is, Docfield is o Compare two Fields
 
-Tres tarjetas de condición se parecen en el diseñador, y su diferencia decide qué puede detectar realmente una regla. Esta página le ayuda a elegir la correcta y después le da tres ejercicios cortos que muestran qué devuelve cada tarjeta. Al final sabrá distinguir «vacío» de «cero», «falso» de «ausente» y una condición no cumplida de un error.
+Tres tarjetas de condición se parecen en el diseñador, y su diferencia decide qué puede detectar realmente una regla. Esta página le ayuda a elegir la correcta y después le da tres ejercicios cortos que muestran qué devuelve cada tarjeta. Al final sabrá distinguir «vacío» del número `0`, «falso» de «ausente» y una condición no cumplida de un error; el `null` técnico cuenta como vacío, el número `0` no.
 
 Haga los ejercicios en Advanced Test, en su propia organización de pruebas y con un documento sintético. Aquí no se toca ningún documento de cliente.
 

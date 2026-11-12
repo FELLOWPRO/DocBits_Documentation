@@ -2,7 +2,7 @@
 description: "Definir la referencia de tolerancias y comparación PO"
 ---
 
-# P1: Definir la referencia de tolerancias y comparación PO
+# Definir la referencia de tolerancias y comparación PO
 
 Una tolerancia del 2 por ciento no es un importe fijo. Es el 2 por ciento del lado con el que compara, así que la misma línea de factura puede fallar en una dirección y pasar en la otra. Esta página lo muestra con un par de valores, le da tres ejercicios para reproducirlo y después enumera las seis direcciones de comparación y los parámetros de tarjeta que puede copiar en su propia prueba.
 

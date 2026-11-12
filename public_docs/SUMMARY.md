@@ -73,6 +73,7 @@
   * [Pending Input](end-user-and-partner-section/end-user-section/pending-input.md)
   * [Tableau de bord des expéditions anticipées](end-user-and-partner-section/end-user-section/advance-shipment-dashboard.md)
   * [Tableau de bord des bons de commande](end-user-and-partner-section/end-user-section/purchase-order-dashboard.md)
+    * [Détail du bon de commande](end-user-and-partner-section/end-user-section/purchase-order-detail.md)
   * [Tableau de bord des factures](end-user-and-partner-section/end-user-section/invoice-dashboard.md)
   * [Comprendre les statistiques de livraison des fournisseurs](end-user-and-partner-section/end-user-section/supplier-statistics.md)
   * [Tableau de bord des ordres d'expédition](end-user-and-partner-section/end-user-section/shipment-order-dashboard.md)

@@ -1,6 +1,6 @@
 # Pannello di controllo
 
-La **Dashboard del flusso di lavoro** è la home dell'area workflow. Mostra come stanno andando i tuoi flussi di lavoro — totali delle esecuzioni, tassi di successo e di fallimento, un grafico delle esecuzioni nel tempo e l'attività recente — e ti dà accesso all'elenco dei flussi di lavoro, alla gestione dei test e al Card SDK.
+La **Dashboard del flusso di lavoro** è la home dell'area workflow. La scheda **Cruscotto** mostra come stanno andando i tuoi flussi di lavoro — totali delle esecuzioni, tassi di successo e di fallimento, un grafico delle esecuzioni nel tempo e l'attività recente — e ti dà accesso all'**Elenco dei flussi di lavoro**, alla gestione dei test e all'**SDK per schede**.
 
 Le viste parziali qui sotto mostrano le metriche di volume, l'esito delle esecuzioni e il grafico delle esecuzioni. L'attività recente e i comandi di navigazione restano fuori da questi ritagli.
 

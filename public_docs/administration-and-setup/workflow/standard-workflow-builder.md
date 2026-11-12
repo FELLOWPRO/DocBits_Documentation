@@ -99,7 +99,7 @@ Nell’elenco attivo la regola testata e controllo che l’interruttore sia acce
 
 ## Come accedere
 
-Apri **Dashboard del flusso di lavoro → Elenco dei flussi di lavoro**, quindi clicca su **Nuovo flusso di lavoro** per creare un nuovo flusso di lavoro standard, oppure clicca su un flusso di lavoro esistente per modificarlo.
+Apri **Dashboard del flusso di lavoro** e seleziona la scheda **Elenco dei flussi di lavoro**, quindi clicca su **Nuovo flusso di lavoro** per creare un nuovo flusso di lavoro standard, oppure clicca su un flusso di lavoro esistente per modificarlo.
 
 <figure><img src="../../.gitbook/assets/workflow-list-toolbar-it-20261112.png" alt="Elenco dei flussi di lavoro con i comandi Nuovo flusso di lavoro, Modelli e Flusso di lavoro dell'importazione nella barra degli strumenti."><figcaption><p>L'elenco dei flussi di lavoro e i comandi della barra degli strumenti.</p></figcaption></figure>
 

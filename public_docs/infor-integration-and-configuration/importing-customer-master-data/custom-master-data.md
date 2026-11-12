@@ -20,7 +20,7 @@ Con il modulo attivo, andare in **Impostazioni** → **ELABORAZIONE DOCUMENTI** 
 
 <figure><img src="../../.gitbook/assets/custom-master-data-lookup-it-20261112.png" alt="Pagina Ricerca di dati anagrafici con i gruppi Dati di ingresso BOD, Dati API ERP con l'icona impostazioni, Importato e Dati anagrafici DocBits a sinistra e la tabella dei fornitori a destra"><figcaption><p>Ricerca di dati anagrafici: l'icona impostazioni accanto a Dati API ERP apre la finestra Dati anagrafici personalizzati.</p></figcaption></figure>
 
-La finestra elenca le tabelle di dati anagrafici personalizzati con **Nome**, **Mode**, **Metodo** e **Tipo Di Corpo** e offre due modi per aggiungerne una nuova:
+La finestra elenca le tabelle di dati anagrafici personalizzati con **Nome**, **Mode** (mostrato in inglese), **Metodo** e **Tipo Di Corpo** e offre due modi per aggiungerne una nuova:
 
 - **Crea modello** — definire una preimpostazione riutilizzabile da scegliere durante la creazione degli endpoint.
 - **Creare un punto finale** — collegare una tabella di dati anagrafici che DocBits popola dalla propria API.

@@ -61,6 +61,21 @@ Jeder Prüfhinweis ist eine Zeile im Abschnitt **Pos**:
 
 DocBits hat verständliche Texte für die häufigsten Regeln. Für eine Regel ohne einen solchen Text zeigt der Bericht die technische Meldung des Validators.
 
+## Mit einem langen Bericht arbeiten
+
+Eine Rechnung kann gegen viele Regeln gleichzeitig verstoßen. Der Bericht hält das Urteil und die Zählwerte in einem festen Kopf fest, während die Prüfhinweise scrollen; so sehen Sie immer, was die ganze Rechnung wert ist.
+
+* **Nach Stufe filtern.** Die Filterschaltflächen über den Prüfhinweisen grenzen die Liste auf Fehler, Warnungen oder Hinweise ein. Auch die Zeilen **Result per level** wirken als Filter: Wählen Sie eine Stufe, um nur deren Prüfhinweise zu sehen.
+* **Suchen.** Ein Suchfeld filtert die offene Liste nach Text, zum Beispiel nach einem Regelcode, einem Feldnamen oder einem Wort aus der Meldung.
+* **Aufklappen und zuklappen.** Prüfhinweise öffnen sich von selbst, wenn sie Fehler sind oder wenn der Bericht höchstens drei Zeilen hat. Für die ganze Liste stehen die Aktionen zum Auf- und Zuklappen bereit; jede Zeile lässt sich zusätzlich einzeln öffnen.
+* **Einen Code oder einen XPath kopieren.** Prüfhinweise bieten eine Kopieraktion für den Regelcode und für den XPath des fehlerhaften Elements, zum Beispiel für eine Nachricht an Ihren Administrator.
+* **Details öffnen, wenn Sie sie brauchen.** Die Dokumentdetails starten zugeklappt. Technische Details wie die Prüfnummer und der XPath bleiben im Prüfhinweis, während die Zeile selbst den verständlichen Prüfnamen und den Regelcode als Referenz zeigt.
+* **An Ihre Stelle zurückkehren.** Wenn Sie **Show in XML** wählen und den Bericht erneut öffnen, bleiben die offenen Zeilen, der Filter und die Scrollposition so, wie Sie sie verlassen haben.
+* **Herunterladen oder drucken.** Die Aktion **Download** in der Fußzeile des Berichts bietet Drucken und ein PDF sowie die HTML- und XML-Dateien des Berichts. Dateiname, Exportdatum und Seitenzahl erscheinen auf dem PDF.
+* **Aus dem Bericht ablehnen.** Die Aktion zum Ablehnen sitzt links in der Fußzeile, getrennt von der Download-Aktion, damit Sie eine Rechnung nicht ablehnen, während Sie das PDF suchen.
+
+Auf einem schmalen Bildschirm, zum Beispiel auf einem Telefon, wird aus jedem Prüfhinweis eine Karte statt einer Zeile.
+
 ## Weiter
 
 * [Nächster Schritt und Dokument ablehnen](validation-next-step-and-reject.md): was Sie nach dem Lesen des Berichts tun.

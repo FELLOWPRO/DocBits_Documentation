@@ -31,7 +31,19 @@ Das XML ist in Ordnung, aber ein Pflichtfeld fehlt. Zum Beispiel kann der Verkä
 
 Die Karte nennt die Ebene **L3 · Business Rules** und den Code `BR-CO-26`. Der Bericht listet alle Prüfhinweise der Rechnung auf, siehe [Prüfbericht](validation-report.md).
 
-## Die Schaltflächen unter der Karte
+## Die Next-step-Box und die Schaltflächen
+
+Bei einer ungültigen E-Rechnung führt die Seite mit einer Box **Next step** ein. Sie trägt die Aktion, die in diesem Fall hilft:
+
+| Aktion | Was sie bewirkt |
+| --- | --- |
+| **Reject** | Lehnt das Dokument ab. Der Dialog nennt Datei, Verkäufer und Rechnungsnummer, sagt Ihnen, dass das Dokument den Status **Rejected** mit einer Notiz in seiner Historie erhält und dass der Lieferant nicht informiert wird, und er erklärt, wie Sie die Ablehnung zurücknehmen. Er fragt nach einem Grund und bestätigt mit **Reject now**. Schlägt etwas fehl, erscheint die Meldung im Dialog und Sie können es erneut versuchen. |
+| **Download invoice XML** | Lädt die Datei so herunter, wie sie empfangen wurde, zum Beispiel um sie außerhalb von DocBits zu prüfen oder an den Lieferanten zurückzusenden. |
+| **Print report** | Druckt den [Prüfbericht](validation-report.md). |
+
+Die Karte nennt die Prüfung außerdem in verständlichen Worten, mit dem Regelcode als kleine Referenz.
+
+**Restart Processing** führt die Verarbeitung des Dokuments erneut aus, zum Beispiel nachdem Sie eine Einstellung geändert haben; die Prüfung verwendet die aktuellen Einstellungen. Die Schaltfläche steht unter der Next-step-Box, weil ein Neustart einer unveränderten Datei auf dieselbe Weise scheitert. Die übrigen Schaltflächen bleiben daneben:
 
 | Schaltfläche | Was sie bewirkt |
 | --- | --- |
@@ -41,6 +53,8 @@ Die Karte nennt die Ebene **L3 · Business Rules** und den Code `BR-CO-26`. Der 
 | **Create ticket** | Öffnet ein Support-Ticket mit den Fehlerdetails. |
 
 Wählen Sie **Show technical details** auf der Karte, um die technischen Rohinformationen zu sehen.
+
+Solange der Grund lädt, zeigt die Seite einen Platzhalter statt einer halb geschriebenen Karte. Lässt sich der Grund nicht laden, bietet die Seite an, ihn neu zu laden, und ein Schritt mit unbekanntem Namen wird als solcher gekennzeichnet, statt ein leeres Feld zu zeigen. Auf einem schmalen Bildschirm stehen XML und Erläuterung übereinander, statt nebeneinander.
 
 ## Was Sie als Nächstes tun
 

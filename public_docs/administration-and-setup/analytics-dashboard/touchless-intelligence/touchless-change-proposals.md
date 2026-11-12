@@ -32,6 +32,14 @@ Administratoren finden den **Consulting report** unten im Tab. Klicken Sie auf *
 
 Die Wirkungswerte sind **Schätzungen**. Antwortet der Bericht mit _forbidden_, erlaubt Ihre Rolle ihn nicht.
 
+## Sprache der Erläuterungen
+
+DocBits fordert die Erläuterungen in der Sprache an, die Sie in DocBits verwenden. Kann der Dienst nicht in dieser Sprache antworten, werden die Erläuterungen auf Englisch verfasst, und das Panel zeigt über den Vorschlägen diese Zeile:
+
+> Proposal explanations are not available in your selected language. English is shown.
+
+Die Zeile betrifft nur den Wortlaut. Preview, Apply, Measure und Undo funktionieren unverändert.
+
 Die zugehörigen Werkzeugaufrufe und die Einordnung menschlicher Aktionen sind unter [Touchless mit MCP](touchless-mcp.md) beschrieben.
 
 ## Weiterführende Seiten

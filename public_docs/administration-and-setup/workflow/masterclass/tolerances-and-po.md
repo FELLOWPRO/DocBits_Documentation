@@ -1,20 +1,68 @@
 ---
-description: "P1: definir a referência de tolerâncias e comparação PO"
+description: "Definir a referência de tolerâncias e comparação PO"
 ---
 
-# P1: definir a referência de tolerâncias e comparação PO
+# P1: Definir a referência de tolerâncias e comparação PO
 
-A tolerância percentual depende do **lado de referência**. No cartão PO v5 analisado, `document_po` compara documento com encomenda; a encomenda é a base percentual. `po_document` inverte comparação e base. As seis direções permitidas também incluem o valor recebido. Defina direção, operador e Any/All explicitamente.
+Uma tolerância de 2 por cento não é um valor fixo. É 2 por cento do lado com que compara, por isso a mesma linha de fatura pode falhar numa direção e passar na outra. Esta página mostra-o num par de valores, dá três exercícios para o reproduzir e depois lista as seis direções de comparação e os parâmetros de cartão que pode copiar para o seu próprio teste.
 
-Exemplo: encomenda 100, documento 102.02, igualdade a 2 %. Com referência à encomenda, o intervalo é 98–102: fora. Com referência ao documento, é 99.9796–104.0604: a encomenda 100 está dentro. Documento 102 coincide com o limite superior incluído da primeira direção. Uma tolerância absoluta de 2 usa a unidade do valor comparado.
+Faça os exercícios no Advanced Test, na sua própria organização de testes, com um documento sintético e uma encomenda associada.
 
-O cartão normaliza preços por unidade de preço e usa dados de encomenda ou receção conforme a direção. Verifique correspondências, quantidades e unidades. Any exige uma comparação correspondente; All todas as comparações efetuadas. **Nenhuma linha comparável** é erro de dados em v5, não um All automaticamente satisfeito. Conte separadamente linhas sem correspondência.
+## O lado de referência é a base
 
-Nos workflows existentes, releia versão, direção e operador guardados: as migrações alteraram configurações. Etiquetas antigas não bastam para aceitar. Registe valores, referência, limite, menor excesso, precisão, encomenda ausente e linha sem correspondência. Este cálculo não substitui a aceitação com os seus dados mestre PO.
+No cartão PO versão 5 analisado, `document_po` compara o valor do documento com o valor da encomenda, pelo que a encomenda é a base de uma tolerância percentual. `po_document` inverte tanto a comparação como a base. As seis direções permitidas incluem também o lado recebido. Defina direção, operador e Any/All de forma explícita, em vez de confiar no que um cartão guardado ainda contém.
+
+## Exercício 1: os mesmos valores, duas direções
+
+**Objetivo:** ver como das mesmas cifras saem dois resultados diferentes.
+
+1. Crie uma encomenda associada de `100` e um preço unitário no documento de `102.02`.
+2. Compare com o operador `eq` e uma tolerância de `2` por cento, primeiro com `document_po`. Espere `false`: 2 por cento de 100 são 2, logo o intervalo fechado vai de 98 a 102, e 102.02 fica 0.02 acima.
+3. Repita o mesmo caso com `po_document`. Espere `true`: 2 por cento de 102.02 são 2.0404, o intervalo vai de 99.9796 a 104.0604, e o valor da encomenda 100 cai dentro.
+
+**Concluído quando:** ambos os resultados e ambos os intervalos estiverem registados, e souber dizer de que valor foi calculada a percentagem em cada direção.
+
+Uma tolerância absoluta de `2` comporta-se de outra forma: usa a unidade do valor comparado e não se desloca com a referência.
+
+## Exercício 2: encontrar a fronteira exata
+
+**Objetivo:** saber se o limite do intervalo conta.
+
+1. Mantenha `document_po`, `eq` e a tolerância de 2 por cento, e mude o valor do documento para `102`.
+2. Execute o caso e depois repita-o com `102.01`.
+
+**Concluído quando:** `102` devolver `true` e `102.01` devolver `false`. O limite é inclusive: 102 fica exatamente na fronteira superior do intervalo 98 a 102.
+
+## Exercício 3: Any, All e as linhas comparadas
+
+**Objetivo:** saber o que o cartão faz com várias linhas e o que acontece quando não há nada para comparar.
+
+1. Construa um documento com duas linhas contra a mesma encomenda associada: uma dentro da tolerância e uma fora.
+2. Execute o cartão com `match_any` e depois com `match_all`.
+3. Execute um documento que não tenha nenhuma linha comparável.
+
+**Concluído quando:** `match_any` passar na única linha correspondente, `match_all` falhar assim que uma comparação falhar, e o documento sem linha comparável devolver um erro de dados. Na versão 5 isso é um erro e não um All satisfeito automaticamente.
+
+## Que lado é a base?
+
+| Opção guardada | Lado comparado | Lado de referência (base percentual) |
+| --- | --- | --- |
+| `po_document` | Encomenda | Documento |
+| `received_document` | Dados recebidos | Documento |
+| `po_received` | Encomenda | Dados recebidos |
+| `document_po` | Documento | Encomenda |
+| `document_received` | Documento | Dados recebidos |
+| `received_po` | Dados recebidos | Encomenda |
+
+## Verifique antes de confiar num workflow existente
+
+O cartão normaliza preços por unidade de preço e usa dados de encomenda ou de receção conforme a direção, por isso verifique primeiro a associação, as quantidades e as unidades. Any precisa de uma comparação correspondente; All, de todas as comparações realmente efetuadas. As linhas não associadas registam-se à parte.
+
+Em workflows existentes, releia a versão guardada, a direção e o operador: as migrações alteraram definições de comparação, pelo que as etiquetas históricas não bastam como prova de aceitação. Registe os valores e a referência, a fronteira exata, o menor excesso, a precisão de arredondamento, a encomenda ausente e a linha não associada. Este cálculo não substitui uma aceitação com os seus próprios dados mestres de PO.
 
 ## Cartões e parâmetros de exemplo
 
-Os valores descrevem parâmetros de cartões, não um workflow completo importável. Substitua YOUR_* por seleções próprias de teste. O designer gere o ID oculto do chamador. Catálogo: Dev, DocFlow 2.10.38, 21 de outubro de 2026; confirme versões e permissões da organização.
+Estes valores descrevem parâmetros de cartões individuais, não um workflow completo importável. Substitua YOUR\_\* pelas suas próprias escolhas de teste. O ID oculto do chamador é gerido pelo designer. Catálogo: Dev, DocFlow 2.10.38, 21 de outubro de 2026; verifique as versões disponíveis e as permissões na sua própria organização.
 
 ### `condition_docfield_operator_docfield_tolerances` · v2
 
@@ -44,14 +92,14 @@ Identidade: `ed2cd0fe-ac87-4bae-9a86-0b0576159b28`
 
 | Caso | Entrada / configuração | Resultado esperado |
 | --- | --- | --- |
-| PO-01 | document_po; PO=100; DOC=102; eq; 2 percent | true |
-| PO-02 | document_po; PO=100; DOC=102.02; eq; 2 percent | false |
-| PO-03 | po_document; PO=100; DOC=102.02; eq; 2 percent | true |
-| PO-04 | compared_rows=0 | erro de dados |
-| PO-05 | unmatched_rows>0 | verificar cobertura separadamente |
+| PO-01 | document\_po; PO=100; DOC=102; eq; 2 percent | true |
+| PO-02 | document\_po; PO=100; DOC=102.02; eq; 2 percent | false |
+| PO-03 | po\_document; PO=100; DOC=102.02; eq; 2 percent | true |
+| PO-04 | compared\_rows=0 | erro de dados |
+| PO-05 | unmatched\_rows>0 | verificar cobertura separadamente |
 
-## Provas e limites
+## Evidência e limites
 
-Parâmetros e comportamento foram comparados com o catálogo Dev e o código analisado. Os casos de negócio são uma orientação de aceitação. Não foram feitas aprovações pessoais, alterações reais nem entregas neste capítulo.
+Os parâmetros e o comportamento foram verificados contra o catálogo de Dev e a revisão de código analisada. Os casos de teste de negócio são um procedimento de aceitação. Neste capítulo não foram efetuadas aprovações pessoais, alterações a dados reais nem entregas.
 
 [Continuar a aprender](../workflow-learning-path.md) · [Pacote de formação](../workflow-training-kit.md)

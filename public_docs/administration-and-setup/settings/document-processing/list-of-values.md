@@ -33,7 +33,7 @@ Mit **Listen durchsuchen** im linken Bereich finden Sie eine Liste und wählen d
 3. Wählen Sie bei Bedarf **Unter-Organisationen**, um die Liste einzuschränken.
 4. Wählen Sie **Speichern**, um die Liste anzulegen. Mit **X** schließen Sie den Dialog, ohne eine Liste anzulegen.
 
-<figure><img src="../../../.gitbook/assets/dbdc-1094-list-values-new-de-20261112.png" alt="Leerer Dialog Neue Liste erstellen mit Name, Unter-Organisationen, X und Speichern"><figcaption><p>Neu öffnet diesen Dialog. Name benennt die Liste, Unter-Organisationen schränkt ihren Gültigkeitsbereich ein und Speichern legt die Liste an.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-1094-list-values-new-de-20261112.png" alt="Dialog Neue Liste erstellen mit dem erfundenen Beispielnamen approval_levels im Feld Name, der Auswahl für Unter-Organisationen, X und Speichern"><figcaption><p>Neu öffnet diesen Dialog. Name benennt die Liste, Unter-Organisationen schränkt ihren Gültigkeitsbereich ein und Speichern legt die Liste an. Der eingetragene Name dieser Aufnahme stammt aus erfundenen Beispieldaten.</p></figcaption></figure>
 
 ### Eine Liste löschen
 

@@ -2,9 +2,9 @@
 description: "Escolher Field is, Docfield is ou Compare two Fields"
 ---
 
-# P1: Escolher Field is, Docfield is ou Compare two Fields
+# Escolher Field is, Docfield is ou Compare two Fields
 
-Três cartões de condição parecem iguais no designer, e a diferença entre eles decide o que uma regra consegue realmente detetar. Esta página ajuda a escolher o cartão certo e depois dá três exercícios curtos que mostram o que cada cartão devolve. No fim, vai distinguir «vazio» de «zero», «falso» de «ausente» e uma condição não cumprida de um erro.
+Três cartões de condição parecem iguais no designer, e a diferença entre eles decide o que uma regra consegue realmente detetar. Esta página ajuda a escolher o cartão certo e depois dá três exercícios curtos que mostram o que cada cartão devolve. No fim, vai distinguir «vazio» do número `0`, «falso» de «ausente» e uma condição não cumprida de um erro; o `null` técnico conta como vazio, o número `0` não.
 
 Faça os exercícios no Advanced Test, na sua própria organização de testes, com um documento sintético. Aqui não se toca em nenhum documento de cliente.
 

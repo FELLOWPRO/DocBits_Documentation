@@ -2,7 +2,7 @@
 description: "Definir a referência de tolerâncias e comparação PO"
 ---
 
-# P1: Definir a referência de tolerâncias e comparação PO
+# Definir a referência de tolerâncias e comparação PO
 
 Uma tolerância de 2 por cento não é um valor fixo. É 2 por cento do lado com que compara, por isso a mesma linha de fatura pode falhar numa direção e passar na outra. Esta página mostra-o num par de valores, dá três exercícios para o reproduzir e depois lista as seis direções de comparação e os parâmetros de cartão que pode copiar para o seu próprio teste.
 

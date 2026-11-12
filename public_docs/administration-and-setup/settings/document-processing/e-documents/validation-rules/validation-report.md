@@ -61,6 +61,21 @@ Cada resultado é uma linha:
 
 O DocBits tem textos em linguagem simples para as regras mais comuns. Para uma regra sem esse texto, o relatório mostra a mensagem técnica do validador.
 
+## Trabalhar com um relatório longo
+
+Uma fatura pode violar muitas regras ao mesmo tempo. O relatório mantém o veredicto e as contagens num cabeçalho fixo enquanto as conclusões deslizam, para que veja sempre quanto vale a fatura inteira.
+
+* **Filtrar por nível.** Os botões de filtro acima das conclusões reduzem a lista a erros, avisos ou mensagens informativas. As linhas **Result per level** também funcionam como filtro: selecione um nível para ver apenas as suas conclusões.
+* **Pesquisar.** Um campo de pesquisa filtra a lista aberta por texto, por exemplo um código de regra, um nome de campo ou uma palavra da mensagem.
+* **Expandir e recolher.** As conclusões abrem sozinhas quando são erros ou quando o relatório tem no máximo três linhas. Use as ações de expandir e recolher para toda a lista; cada linha também abre individualmente.
+* **Copiar um código ou um XPath.** As conclusões têm uma ação de cópia para o código da regra e para o XPath do elemento com erro, por exemplo para uma mensagem ao seu administrador.
+* **Abrir os detalhes quando precisar.** Os detalhes do documento começam recolhidos. Os detalhes técnicos, como o número de verificação e o XPath, ficam na conclusão, enquanto a linha em si mostra o nome compreensível da verificação e o código da regra como referência.
+* **Voltar ao seu lugar.** Quando seleciona **Show in XML** e abre o relatório de novo, as linhas abertas, o filtro e a posição de deslocamento ficam como os deixou.
+* **Transferir ou imprimir.** A ação **Download** no rodapé do relatório oferece impressão e um PDF, além dos ficheiros HTML e XML do relatório. O nome do ficheiro, a data de exportação e o número de página aparecem no PDF.
+* **Rejeitar a partir do relatório.** A ação de rejeição fica à esquerda no rodapé, separada da ação de transferência, para não rejeitar uma fatura enquanto procura o PDF.
+
+Num ecrã estreito, por exemplo num telemóvel, cada conclusão passa a ser um cartão em vez de uma linha.
+
 ## A seguir
 
 * [Próximo passo e rejeitar um documento](validation-next-step-and-reject.md): o que fazer depois de ler o relatório.

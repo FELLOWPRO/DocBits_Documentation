@@ -73,6 +73,7 @@
   * [Pending Input](end-user-and-partner-section/end-user-section/pending-input.md)
   * [Dashboard voor verzendberichten](end-user-and-partner-section/end-user-section/advance-shipment-dashboard.md)
   * [Dashboard voor inkooporders](end-user-and-partner-section/end-user-section/purchase-order-dashboard.md)
+    * [Inkooporderdetails](end-user-and-partner-section/end-user-section/purchase-order-detail.md)
   * [Factuurdashboard](end-user-and-partner-section/end-user-section/invoice-dashboard.md)
   * [Leveranciersstatistieken voor leveringen begrijpen](end-user-and-partner-section/end-user-section/supplier-statistics.md)
   * [Dashboard voor verzendorders](end-user-and-partner-section/end-user-section/shipment-order-dashboard.md)

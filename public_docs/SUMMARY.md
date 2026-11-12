@@ -815,7 +815,7 @@
 * [Configuração](administration-and-setup/setup/README.md)
   * [Tipos de Documento](administration-and-setup/setup/document-types/README.md)
     * [Processo de transformação de dados EDI](administration-and-setup/setup/document-types/edi-data-transformation-process.md)
-    * [Construtor de Layouts](administration-and-setup/setup/document-types/layout-builder.md)
+    * [Construtor de Layout](administration-and-setup/setup/document-types/layout-builder.md)
     * [Layouts por origem](administration-and-setup/setup/document-types/origin-layouts.md)
     * [Gestor de Regex](administration-and-setup/setup/document-types/regex-manager.md)
     * [Configuração de Dados Fuzzy com Dados Mestres](administration-and-setup/setup/document-types/fuzzy-data-configuration-with-master-data.md)

@@ -4,7 +4,7 @@ description: "Percurso de principiante a especialista"
 
 # Percurso de principiante a especialista
 
-Percorra os níveis por ordem. Ler não basta: cada nível termina com configuração própria, expectativa verificável e provas. P0 evita erros fundamentais de execução; P1 aprofunda dados, decisões de negócio e integrações.
+Sete níveis levam do primeiro olhar ao designer de workflows até à responsabilidade por uma alteração num workflow em produção. Cada nível indica um objetivo, os passos que executa na sua própria organização de teste e um resultado que pode verificar. Percorra-os por ordem e construa cada exercício: cada nível assenta na configuração do anterior.
 
 1. [Orientação e modelo de execução](#level-1)
 2. [Primeira regra própria](#level-2)
@@ -14,114 +14,146 @@ Percorra os níveis por ordem. Ler não basta: cada nível termina com configura
 6. [Cálculo, integração e exportação](#level-6)
 7. [Alterações e operação especializada](#level-7)
 
-## Pré-requisitos
+## Antes de começar
 
-Use uma organização própria de teste e um documento sintético. Confirme organização, função, licença workflow e autorização Advanced. Mantenha inativos os exercícios importados. Os JSON completos destinam-se a Advanced Test → Custom Data. Aprovações e integrações reais exigem utilizadores e destinos de teste específicos.
+* Uma organização de teste própria, com uma fatura sintética lá dentro. Nunca pratique com documentos de clientes.
+* O seu papel, a licença de workflow e a permissão Advanced, verificados antes do nível 1.
+* Os exercícios importados ficam inativos até os ter testado.
+* Os dados JSON completos vão em **Advanced Test → Custom Data**.
+* As aprovações e integrações reais precisam de utilizadores e destinos de teste próprios; um teste no designer não os substitui.
 
-## 1. Orientação e modelo de execução <a id="level-1"></a>
+## 1. Orientação e modelo de execução <a href="#level-1" id="level-1"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/pt.mp4" %}
 
-[Abrir o vídeo com legendas em português e transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/pt.html).
+[Abrir o vídeo com legendas e transcrição em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/pt.html).
 
-**Exercício:** Explique organização, acesso, When–And–Then e diferença entre regra linear e grafo Advanced. Distinga filtro documental, evento, guardar e ativar.
+**Objetivo:** Saber o que inicia um workflow e o que um resultado de teste pode afirmar, ou não, sobre uma execução real.
 
-**Critério de conclusão:** Explica quando a regra é considerada e que prova distingue simulação de execução documental.
+1. Verifique a organização, o seu acesso, o módulo de workflow e a permissão Advanced.
+2. Diga When–And–Then por palavras suas e explique depois onde termina uma regra linear e como um grafo Advanced segue, em vez disso, as saídas ligadas.
+3. Distinga quatro coisas que se parecem no designer: o filtro de tipo de documento, o evento de execução, o guardar e o ativar.
 
-Ler e construir: [Quando é executado o meu workflow?](workflow-execution-model.md) · [Alterar o status sem reiniciar o seu Workflow](masterclass/status-and-reentry.md).
+**Critério de conclusão:** Consegue dizer quando uma regra é sequer considerada e que prova separa uma simulação de uma execução sobre um documento real.
 
-## 2. Primeira regra própria <a id="level-2"></a>
+**Aprofundamento:** [Quando é que o meu workflow é executado?](workflow-execution-model.md) · [Alterar o estado sem reiniciar o workflow](masterclass/status-and-reentry.md)
+
+## 2. Primeira regra própria <a href="#level-2" id="level-2"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/pt.mp4" %}
 
-[Abrir o vídeo com legendas em português e transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/pt.html).
+[Abrir o vídeo com legendas e transcrição em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/pt.html).
 
-**Exercício:** Crie When Invoice → And invoice_id = WF-TRAINING-001 → And total_amount > 1000 → Then wf_training_route = REVIEW. Mantenha inativa. Teste dados completos para 999, 1000 e 1000.01. Esta regra linear ainda não precisa de nó de controlo.
+**Objetivo:** Levar uma regra do designer até um resultado verificado, sem tocar num documento.
 
-**Critério de conclusão:** REVIEW só é alcançado acima de 1000. Registe tipo, operador e saída escolhida. Trate a entrada ausente separadamente.
+1. Crie-a no Advanced Builder: When Invoice → And invoice\_id = WF-TRAINING-001 → And total\_amount > 1000 → Then wf\_training\_route = REVIEW. Uma regra linear deste tamanho não precisa de nó de controlo.
+2. Guarde-a e verifique na lista de regras se continua inativa, porque guardar uma regra nova já a pode ativar. O Advanced Test é um modo de teste próprio: verifica o grafo tal como está construído no construtor, não a regra ativada.
+3. Execute o Advanced Test com dados completos para 999, 1000 e 1000.01. Anote por caso o tipo de campo, o operador e a saída escolhida, e acrescente um caso em que o montante falta por completo.
 
-Ler e construir: [Caso Advanced: encaminhamento de faturas](advanced-workflow-case-study.md) · [Pacote de formação de workflows](workflow-training-kit.md).
+**Critério de conclusão:** REVIEW só é alcançado com 1000.01, um montante em falta aparece como erro e não como resultado normal abaixo do limite, e no fim a regra volta a estar desativada.
 
-## 3. Campos, tipos e limites <a id="level-3"></a>
+**Aprofundamento:** [Caso de negócio Advanced: encaminhamento de faturas](advanced-workflow-case-study.md) · [Kit de exercícios de workflow](workflow-training-kit.md)
+
+## 3. Campos, tipos e limites <a href="#level-3" id="level-3"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/pt.mp4" %}
 
-[Abrir o vídeo com legendas em português e transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/pt.html).
+[Abrir o vídeo com legendas e transcrição em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/pt.html).
 
-**Exercício:** Verifique ausente, null, texto vazio, espaços, false, 0 e números em texto. Calcule tolerância com referência à encomenda e ao documento. Compare uma e todas as linhas efetivamente associadas.
+**Objetivo:** Saber o que uma condição compara de facto antes de confiar no resultado.
 
-**Critério de conclusão:** Explique verdadeiro, falso e erro a partir de valor, tipo, referência e dados. Nenhuma linha comparável não significa aprovação bem-sucedida.
+1. Teste a verificação de vazio contra um campo em falta, `null`, texto vazio, espaços, `false`, `0`, `"0"` e `"false"`, e anote quais contam como vazios.
+2. Calcule duas vezes a mesma tolerância de 2 por cento: uma com a encomenda como referência (encomenda 100, documento 102.02) e outra com o documento como referência.
+3. Alterne entre Any e All no cartão da encomenda e conte quantas linhas foram realmente comparadas.
 
-Ler e construir: [P1: escolher Field is, Docfield is ou Compare two Fields](masterclass/field-conditions.md) · [P1: definir a referência de tolerâncias e comparação PO](masterclass/tolerances-and-po.md).
+**Critério de conclusão:** Explica verdadeiro, falso e erro a partir do valor, do tipo, da referência e dos dados existentes. Na versão 5 do cartão da encomenda, um documento sem linha comparável é um erro de dados e não uma aprovação bem-sucedida.
 
-## 4. Regras de negócio e aprovações <a id="level-4"></a>
+**Aprofundamento:** [Field is, Docfield is e comparar dois campos](masterclass/field-conditions.md) · [Tornar tolerâncias e referência da encomenda inequívocas](masterclass/tolerances-and-po.md)
+
+## 4. Regras de negócio e aprovações <a href="#level-4" id="level-4"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/pt.mp4" %}
 
-[Abrir o vídeo com legendas em português e transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/pt.html).
+[Abrir o vídeo com legendas e transcrição em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/pt.html).
 
-**Exercício:** Configure duas regras de montante sem sobreposição. Siga o resultado de utilizador guardado até à atribuição. Planeie A com ordem 10, B com 20, rejeição e alternativa.
+**Objetivo:** Enviar uma fatura à pessoa certa através de uma tabela de decisão e, depois, correr uma cadeia de aprovação que espera pela primeira pessoa revisora.
 
-**Critério de conclusão:** Distinga responsabilidade, tarefa, notificação e aprovação efetiva. Aceite a passagem a B apenas após decisão de A processada.
+**Exercício 1: tabela de decisão com atribuição direta**
 
-Ler e construir: [P1: seguir a tabela de decisão até à atribuição](masterclass/decision-table-routing.md) · [P1: distinguir atribuição, tarefa e aprovação sequencial](masterclass/assignment-task-sequential.md).
+1. Crie uma tabela de decisão com duas regras que não possam coincidir ao mesmo tempo: revisora A até 1000, revisor B acima de 1000, com `cost_center=4711` e `total_amount`.
+2. Em **Decision Table has Returns** versão 3, defina `store_data=wf_store_data`. Atribua o documento com **Assign document based on decision table** e `assignee_type=user`, usando utilizadores reais da sua organização de teste.
+3. Teste uma correspondência, nenhuma, várias e um ID de utilizador inválido, e encaminhe as não correspondências e os erros de atribuição para um recurso explícito. Aceite a atribuição no próprio documento.
 
-## 5. Controlo Advanced e subworkflows <a id="level-5"></a>
+**Exercício 2: aprovação sequencial sem atribuição direta**
+
+1. Crie uma segunda regra separada com os cartões sequenciais: o cartão de atribuição sequencial na posição 10 para a revisora A e depois o cartão de tarefa sequencial na posição 20 para o revisor B. Deixe a atribuição direta de fora nesta execução, porque a finalização verificada pode saltar o primeiro destinatário sequencial quando o documento já foi atribuído diretamente na mesma execução.
+2. Aprove como A e verifique que B só recebe o documento depois da decisão processada de A; aprove depois como B.
+3. Rejeite como A numa execução nova e confirme que a exportação não acontece. Teste em seguida o que acontece quando não é possível determinar nenhum destinatário.
+
+**Critério de conclusão:** Distingue responsabilidade, tarefa, notificação e aprovação efetiva; A → aprovação → B → aprovação aconteceu nessa ordem; uma rejeição de A impediu a exportação; e um destinatário em falta não contou como aprovação concluída.
+
+**Aprofundamento:** [Seguir a tabela de decisão até à atribuição](masterclass/decision-table-routing.md) · [Distinguir atribuição, tarefa e aprovação sequencial](masterclass/assignment-task-sequential.md)
+
+## 5. Controlo Advanced e subworkflows <a href="#level-5" id="level-5"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/pt.mp4" %}
 
-[Abrir o vídeo com legendas em português e transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/pt.html).
+[Abrir o vídeo com legendas e transcrição em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/pt.html).
 
-**Exercício:** Compare ALL, ANY e OR com duas verificações alcançadas. Examine um ramo não escolhido. Execute os sete casos v2 e teste Run Workflow com destino próprio inativo.
+**Objetivo:** Juntar corretamente caminhos paralelos e entregar trabalho a outro workflow.
 
-**Critério de conclusão:** Explique diferenças teste/escalonador, contagem de origens e erros. V2 termina sem OR bloqueado; confirme no destino uma chamada verde.
+1. Compare ALL, ANY e OR em duas verificações realmente alcançadas: ALL precisa de uma saída correspondente de cada origem, ANY e OR precisam de uma, e verde mais laranja de uma origem continuam a contar como uma só origem.
+2. Veja um ramo que a execução não seguiu, como no caso MERGE-04: o Advanced Test continua a avaliar a junção em espera, enquanto a execução normal a salta assim que um antecessor nunca chega.
+3. Execute os sete casos do estudo de caso v2 (acima, abaixo, limite, logo acima, em falta, número inválido, outra fatura). Depois chame com Run Workflow um workflow seu inativo e abra o caminho no próprio destino.
 
-Ler e construir: [P0: ligar corretamente Wait ALL, Wait ANY e OR](masterclass/control-nodes.md) · [P0: compreender Run Workflow, condições e erros](masterclass/run-workflow.md) · [Caso Advanced: encaminhamento de faturas](advanced-workflow-case-study.md).
+**Critério de conclusão:** Explica a diferença do caso MERGE-04 entre teste e execução do passo 2, como as origens são contadas e para onde vai um erro. Uma chamada Run Workflow verde continua a exigir verificação no destino. V2 designa aqui a segunda versão do grafo do estudo de caso: o cartão de estado de cada caminho leva diretamente ao cartão de fecho comum, sem nó OR em espera.
 
-## 6. Cálculo, integração e exportação <a id="level-6"></a>
+**Aprofundamento:** [Ligar corretamente Wait ALL, Wait ANY e OR](masterclass/control-nodes.md) · [Compreender Run Workflow, condições de destino e erros](masterclass/run-workflow.md) · [Caso de negócio Advanced: encaminhamento de faturas](advanced-workflow-case-study.md)
+
+## 6. Cálculo, integração e exportação <a href="#level-6" id="level-6"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/pt.mp4" %}
 
-[Abrir o vídeo com legendas em português e transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/pt.html).
+[Abrir o vídeo com legendas e transcrição em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/pt.html).
 
-**Exercício:** Compare toda a tabela antes/depois, incluindo regex sem correspondência e divisão por zero. Defina a escrita efetiva dos resultados de integração. Planeie exportação após aprovação com configuração própria de teste.
+**Objetivo:** Calcular valores, recuperar um resultado de um sistema externo e exportar só depois de uma aprovação real.
 
-**Critério de conclusão:** Prove valores posteriores, receção e processamento ERP separadamente. Não registe simulação ou pedido de exportação como entrega.
+1. Calcule uma coluna e compare a tabela toda antes e depois, incluindo uma linha em que a expressão regular não corresponde e uma divisão por zero.
+2. Escreva o contrato de escrita de retorno com o sistema externo: que campo do documento recebe o resultado, que cartão ou extensão o escreve aí e como verifica depois o valor guardado. Um HTTP 200 por si só não é um resultado.
+3. Planeie a exportação após a aprovação com a sua própria configuração e anote o que vai verificar no destinatário.
 
-Ler e construir: [P1: calcular colunas e verificar dependências regex](masterclass/table-calculations.md) · [P1: verificar chamadas API e uso posterior das respostas](masterclass/api-response-contract.md) · [P1: escolher exportação, tarefas abertas e estado final](masterclass/export-lifecycle.md).
+**Critério de conclusão:** Valores seguintes no campo, receção no destinatário e processamento no ERP têm cada um a sua prova. Uma simulação ou uma exportação em fila não é uma entrega.
 
-## 7. Alterações e operação especializada <a id="level-7"></a>
+**Aprofundamento:** [Calcular tabelas e verificar a dependência de regex](masterclass/table-calculations.md) · [Verificar a chamada à API e o reaproveitamento da resposta](masterclass/api-response-contract.md) · [Variantes de exportação, tarefas abertas e estado de fecho](masterclass/export-lifecycle.md)
+
+## 7. Alterações e operação especializada <a href="#level-7" id="level-7"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/pt.mp4" %}
 
-[Abrir o vídeo com legendas em português e transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/pt.html).
+[Abrir o vídeo com legendas e transcrição em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/pt.html).
 
-**Exercício:** Guarde exportação do workflow e versões antes de alterar. Repita positivos, negativos, erros, limites e segunda execução. Relacione o primeiro erro com entrada e configuração concretas.
+**Objetivo:** Alterar um workflow que não construiu e conseguir desfazer a alteração.
 
-**Critério de conclusão:** Consegue aceitar alterações, restaurar configuração e comparar nova execução com efeitos. Registe causa, correção e limites.
+1. Exporte o workflow e anote as versões dos cartões antes de tocar em alguma coisa.
+2. Repita depois da alteração os casos positivos, negativos, de erro e de limite, mais uma segunda execução do mesmo caso.
+3. Recue o primeiro erro até uma entrada e uma configuração concretas e mantenha a exportação guardada como caminho de volta.
 
-Ler e construir: [Diagnosticar problemas de workflow sistematicamente](workflow-troubleshooting.md) · [Compreender e configurar cartões de workflow](card-reference-standard.md).
+**Critério de conclusão:** Consegue aceitar a alteração, restaurar a configuração guardada e comparar uma nova execução documental com provas. Anote a causa, a correção e os limites que permanecem.
+
+**Aprofundamento:** [Diagnosticar erros de workflow de forma sistemática](workflow-troubleshooting.md) · [Compreender os cartões e configurá-los com fiabilidade](card-reference-standard.md)
 
 ## Verificar conhecimentos
 
 | Pergunta | Resposta |
 | --- | --- |
-| false é vazio em Field is v2? | Sim; o número 0 e o texto "false" não são vazios. |
-| Um teste OR verde garante a execução documental? | Não. Predecessores não alcançados diferem entre teste e escalonador analisado. |
-| Run Workflow pode chamar um destino inativo? | Sim, na chamada explícita analisada. Confirme condições e resultado do destino. |
-| HTTP 200 disponibiliza automaticamente api.response.cost_center? | Não. As ações analisadas não oferecem esse contrato automático de saída JSON. |
-| Um teste verde prova receção da exportação? | Não. Execução documental, receção e processamento ERP exigem provas próprias. |
+| `false` conta como vazio em Field is v2? | Sim. O número 0 e o texto "false" não estão vazios. |
+| Um teste OR verde garante a execução documental? | Não. No caso verificado MERGE-04, um teste avalia a junção que uma execução documental salta quando um antecessor nunca chega. |
+| O Run Workflow pode chamar um destino inativo? | Sim, na chamada explícita verificada. Verifique mesmo assim as condições do destino e o resultado. |
+| Um HTTP 200 expõe automaticamente api.response.cost\_center? | Não. As ações verificadas não oferecem esse contrato automático de saída JSON. |
+| Um teste verde prova a receção da exportação? | Não. Execução documental, receção no destinatário e processamento no ERP exigem provas separadas. |
 
-## Os cinco guias de apoio
+## Registar o que aceitou
 
-Use ao longo dos exercícios: modelo de execução → caso reproduzível → pacote → diagnóstico → referência dos cartões. São materiais dos níveis, não cinco tarefas adicionais não verificadas.
+Descarregue `workflow-training-kit-v2.zip` do [kit de exercícios de workflow](workflow-training-kit.md), extraia-o e abra `acceptance-record-template.json`. É um registo em branco e não algo que se importe; o mesmo ZIP contém também os dados, as expectativas e as respostas de teste guardadas a que os níveis se referem.
 
-1. [Quando é executado o meu workflow?](workflow-execution-model.md)
-2. [Caso Advanced: encaminhamento de faturas](advanced-workflow-case-study.md)
-3. [Pacote de formação de workflows](workflow-training-kit.md)
-4. [Diagnosticar problemas de workflow sistematicamente](workflow-troubleshooting.md)
-5. [Compreender e configurar cartões de workflow](card-reference-standard.md)
-
-## Registo de conclusão
-
-Use acceptance-record-template.json do pacote. Registe cenário, revisão, expectativa, observação e tipo de prova. Distinga teste Dev, verificação isolada do código, execução documental real, receção e processamento ERP. Deixe explicitamente abertos os passos não verificados.
+Anote o que testou e como o sabe: o cenário, a configuração (hash da exportação do workflow, versões dos cartões), o que esperava, o que observou e que tipo de prova tem. Mantenha separados um teste no Advanced Test, uma verificação isolada da origem, uma execução sobre documento real, a receção no destinatário e o processamento no ERP, e deixe como abertos os passos que não testou.

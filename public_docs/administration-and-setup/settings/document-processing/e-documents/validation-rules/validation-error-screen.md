@@ -31,7 +31,19 @@ De XML is in orde, maar een verplicht veld ontbreekt. De verkoper kan bijvoorbee
 
 De kaart noemt de laag **L3 · Business Rules** en de code `BR-CO-26`. Het rapport somt alle bevindingen van de factuur op, zie [Validatierapport](validation-report.md).
 
-## De knoppen onder de kaart
+## Het vak Next step en de knoppen
+
+Bij een ongeldige e-factuur begint de pagina met een vak **Next step**. Het draagt de actie die in dit geval helpt:
+
+| Actie | Wat die doet |
+| --- | --- |
+| **Reject** | Wijst het document af. De dialoog noemt het bestand, de verkoper en het factuurnummer, vertelt u dat het document de status **Rejected** krijgt met een notitie in de historie en dat de leverancier niet wordt geïnformeerd, en legt uit hoe u de afwijzing ongedaan maakt. Hij vraagt om een reden en bevestigt met **Reject now**. Mislukt er iets, dan verschijnt de melding in de dialoog en kunt u het opnieuw proberen. |
+| **Download invoice XML** | Downloadt het bestand zoals het is ontvangen, bijvoorbeeld om het buiten DocBits te controleren of naar de leverancier terug te sturen. |
+| **Print report** | Drukt het [validatierapport](validation-report.md) af. |
+
+De kaart noemt de controle ook in begrijpelijke woorden, met de regelcode als kleine verwijzing.
+
+**Restart Processing** voert de verwerking van het document opnieuw uit, bijvoorbeeld nadat u een instelling hebt gewijzigd; de controle gebruikt de huidige instellingen. De knop staat onder het vak Next step, omdat een herstart van een ongewijzigd bestand op dezelfde manier mislukt. De overige knoppen staan ernaast:
 
 | Knop | Wat hij doet |
 | --- | --- |
@@ -41,6 +53,8 @@ De kaart noemt de laag **L3 · Business Rules** en de code `BR-CO-26`. Het rappo
 | **Create ticket** | Opent een supportticket met de foutgegevens. |
 
 Selecteer **Show technical details** op de kaart voor de ruwe technische informatie.
+
+Terwijl de reden laadt, toont de pagina een plaatshouder in plaats van een half geschreven kaart. Kan de reden niet worden geladen, dan biedt de pagina aan om die opnieuw te laden, en een stap met een onbekende naam wordt als zodanig aangeduid in plaats van een leeg veld te tonen. Op een smal scherm staan XML en uitleg boven elkaar in plaats van naast elkaar.
 
 ## Wat u daarna doet
 

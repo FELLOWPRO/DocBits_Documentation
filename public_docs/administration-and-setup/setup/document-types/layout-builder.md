@@ -1,51 +1,73 @@
 # Lay-outeditor
 
-Gebruik de Lay-outbouwer om de velden en besturingselementen te ordenen die worden weergegeven wanneer u een document valideert of goedkeurt. Elke lay-out hoort bij een documenttype, een oorsprong en een lay-outtype. Controleer welke lay-out geopend is voordat u wijzigingen opslaat.
+Gebruik de **Lay-outbouwer** om de velden en besturingselementen te ordenen die gebruikers zien wanneer zij een document valideren of goedkeuren. Een indeling hoort bij één documenttype, één oorsprong en één indelingstype, dus controleer bovenaan de pagina welke indeling open is voordat u wijzigingen opslaat.
 
-## De lay-out openen
+{% embed url="https://youtu.be/-m45XGiIeig" %}
+DocBits Layout Builder Tutorial: Create Custom Document Layouts for Faster, Cleaner Validation
+{% endembed %}
 
-1. Open **Instellingen → Documenttypen**.
-2. Open de Lay-outbouwer van het gewenste documenttype of subtype. Als deze niet beschikbaar is, moet een beheerder de module mogelijk inschakelen voor uw organisatie.
-3. Controleer de geselecteerde oorsprong in de actiebalk en het type editor ernaast.
+## De indeling openen
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-current-nl.png" alt="Uitsnede van de editor: de secties Groepen, Velden en Formulierelementen links en een vereenvoudigde voorbeeldlay-out voor factuurgegevens in het midden."><figcaption><p>Uitsnede van de editor: de secties Groepen, Velden en Formulierelementen links en een vereenvoudigde voorbeeldlay-out voor factuurgegevens in het midden.</p></figcaption></figure>
+1. Ga naar **Instellingen → Documenttypen**.
+2. Selecteer het documenttype dat u wilt bewerken en open **Lay-outbouwer**. Voor een subtype opent u de actie Lay-outbouwer van dat subtype.
+3. Controleer de kop van de pagina. Bovenaan staat de naam van de indeling, die u met het potlood wijzigt, gevolgd door het **Documenttype** (bijvoorbeeld **Factuur**) en het **Indelingstype** (bijvoorbeeld **Veldvalidatie**). Elk onderdeel opent een lijst; kiest u een ander item, dan laadt DocBits die indeling. Is de Lay-outbouwer niet beschikbaar, dan moet een beheerder de module voor uw organisatie mogelijk eerst aanzetten.
 
-Wanneer u **Oorsprong** wijzigt, kan DocBits een afzonderlijke lay-out voor die oorsprong aanmaken. Controleer de oorsprong voordat u begint met bewerken.
+<figure><img src="../../../.gitbook/assets/layout-builder-structure-tab-nl.png" alt="De Lay-outbouwer met bovenaan de naam van de indeling Field Validation Layout (AR), het documenttype Factuur en het indelingstype Veldvalidatie; links de tab Structuur met de uitgeklapte groep Delivery Details en het geselecteerde veld Leveranciers-ID, in het midden het canvas en rechts het paneel Eigenschappen"><figcaption><p>De Lay-outbouwer: de kop met de indeling, de tabs links, het canvas in het midden en het paneel Eigenschappen rechts.</p></figcaption></figure>
 
-## De onderdelen van de editor
+## Werken met de kop
 
-Links kunt u wisselen tussen **Elementen**, **Eigenschappen** en de algemene instellingen, weergegeven met een tandwiel.
+* Met **Documenttype** en **Indelingstype** schakelt u tussen indelingen. DocBits laadt de gekozen indeling opnieuw.
+* Naast **Opslaan** toont DocBits of de indeling **niet-opgeslagen wijzigingen** heeft. Na het opslaan ziet u wanneer de indeling voor het laatst is opgeslagen.
+* **Opslaan** bewaart de indeling voor het gekozen documenttype en indelingstype.
+* Het menu met de drie puntjes naast **Opslaan** bevat **Automatisch sjabloon genereren**, **JSON bewerken**, **JSON kopiëren** en **Indelingsinstellingen**. **Automatisch sjabloon genereren** vervangt een eigen indeling, dus controleer eerst welk documenttype en welke indeling open is. **JSON bewerken** is bedoeld voor gevorderde configuratie en gebruikt u alleen als u het formaat van het sjabloon kent.
+* Verlaat u de pagina met niet-opgeslagen wijzigingen, dan vraagt DocBits of u ze wilt opslaan of negeren.
 
-* Het tabblad **Elementen** bevat de secties **Groepen**, **Velden** en **Formulierelementen**. Open een sectie om de beschikbare groepen, velden en besturingselementen te bekijken.
-* In het midden staan de groepen en velden van de lay-out. Met groepen ordent u velden die bij elkaar horen.
-* Rechts staat het voorbeelddocument. Hier kunt u het document bekijken en in- of uitzoomen.
+<figure><img src="../../../.gitbook/assets/layout-builder-save-more-menu-nl.png" alt="Het menu met drie puntjes in de kop van de Lay-outbouwer, met de items Automatisch sjabloon genereren, JSON bewerken, JSON kopiëren en Indelingsinstellingen"><figcaption><p>De overige acties staan in het menu met de drie puntjes naast Opslaan.</p></figcaption></figure>
 
-Sleep een element uit de betreffende sectie links naar de lay-out om een groep, een veld of een besturingselement toe te voegen.
+## Elementen vinden: Structuur, Velden, Elementen
 
-<figure><img src="../../../.gitbook/assets/layout-builder-fields-current-nl.png" alt="De velden Factuurnummer en Datum in de voorbeeldgroep. In deze lay-out beslaat elk veld 50 % van de groepsbreedte."><figcaption><p>De velden Factuurnummer en Datum in de voorbeeldgroep. In deze lay-out beslaat elk veld 50 % van de groepsbreedte.</p></figcaption></figure>
+Het paneel links heeft drie tabs:
 
-Configureer herbruikbare velden bij [Documenttypen](README.md). Welke velden beschikbaar zijn, hangt af van het geselecteerde documenttype en de configuratie daarvan.
+| Tab | Waarvoor u het gebruikt |
+| --- | --- |
+| **Structuur** | Bekijk de indeling als een boom. Groepen en hun velden staan in de volgorde waarin ze op het canvas verschijnen, met het aantal geplaatste en beschikbare velden. |
+| **Velden** | Alle velden die het documenttype aanbiedt, gegroepeerd per veldgroep en standaard ingeklapt. Met de drie pictogrammen onder het zoekveld filtert u op alle velden, op velden die nog niet in de indeling staan of op verborgen velden. De technische veldnaam leest u in het paneel **Eigenschappen** wanneer u een veld selecteert. |
+| **Elementen** | Weergave- en interactieblokken zoals Text, Label, Check Box, scheidingslijnen, tabellen, knoppen en subgroepen. |
+
+<figure><img src="../../../.gitbook/assets/layout-builder-elements-tab-nl.png" alt="De tab Elementen van de Lay-outbouwer met de sectie Groepen met de groepen van de indeling en de sectie Formulierelementen van Text tot Sub Group"><figcaption><p>De paletten Groepen en Formulierelementen in de tab Elementen.</p></figcaption></figure>
+
+Selecteer een item om het toe te voegen, of sleep het naar het canvas. Een groepstitel vertelt de gebruiker die het document valideert wat er in die sectie hoort. Maak of wijzig herbruikbare documentvelden eerst in [Documenttypen](README.md).
+
+## Op het canvas werken
+
+* **Hoofdlay-out** toont de indeling van het document zelf. **Tabel** toont de tabelindeling die voor regels wordt gebruikt.
+* **Document** opent of sluit het voorbeelddocument naast het canvas, zodat u de indeling met een echt document kunt vergelijken.
+* Groepen worden als kaarten getekend; de velden in een groep kunt u in rijen rangschikken en verschillende breedtes geven.
 
 ## De eigenschappen van een element wijzigen
 
-Selecteer een groep of veld in de lay-out en open **Eigenschappen** links. De beschikbare opties hangen af van het geselecteerde element. Voorbeelden zijn het label, de technische naam, de breedte en het gedrag.
+Selecteer een element of een groep op het canvas. **Eigenschappen** rechts is altijd zichtbaar en is ingedeeld in secties:
 
-<figure><img src="../../../.gitbook/assets/layout-builder-properties-current-nl.png" alt="Eigenschappen van het geselecteerde veld: het label, de technische naam en de elementbreedte als percentage."><figcaption><p>Eigenschappen van het geselecteerde veld: het label, de technische naam en de elementbreedte als percentage.</p></figcaption></figure>
+* **Weergave** – het label, de veldnaam, de positie van het label en de elementbreedte.
+* **Gedrag** – alleen-lezen, verborgen en tabbladindex.
+* **Waarden en lijsten** – de waarden die het element aanbiedt.
+* **Automatisering** – regels die het element vullen of wijzigen.
 
-Bij standaardvelden zijn het label en de technische naam mogelijk niet bewerkbaar. Afhankelijk van het type element kunt u ook de alleen-lezenmodus, de zichtbaarheid, de tabvolgorde, waardenlijsten en de uitvoering van een workflow of script bij een waardewijziging instellen. Groepen en velden hebben verschillende opties.
+Voor de breedte kiest u een van de voorinstellingen (25, 33, 50, 66, 75 of 100 procent) in plaats van een waarde te typen; controleer het resultaat op het canvas. Welke secties en opties verschijnen, hangt af van het geselecteerde element. Zie [Veldeigenschappen configureren](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md) voor meer detail.
 
-Controleer het resultaat in de lay-out nadat u de eigenschappen hebt gewijzigd. De breedte wordt als percentage ingevoerd met een numeriek invoerveld. Groepen en de velden daarin kunnen verschillende breedtes hebben. Zie [Veldeigenschappen configureren](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
+## Knoplabels vertalen
 
-## Sjablonen en JSON
+Knoppen zoals **Save Rules**, **Auto Accounting**, **PO Match**, **Export**, **Export Without Validation** en **Reject** halen hun label uit een vertaalsleutel. Zo ziet iedere gebruiker het label in zijn eigen taal.
 
-Naast het opslaan van de lay-out biedt de actiebalk functies om een sjabloon te genereren, de standaardlay-out op oorspronglay-outs toe te passen, het standaardsjabloon te gebruiken en JSON te bewerken. Welke functies beschikbaar zijn, hangt af van de geopende editor.
+* Voor een losse knop stelt u de vertaalsleutel in het paneel **Eigenschappen** in.
+* **Invoice Buttons** bundelt meerdere knoppen. Stel de sleutel voor één knop in, of stel per knop een sleutel in de lijst op het paneel van de groep.
 
-Het genereren of toepassen van een sjabloon kan een aangepaste lay-out vervangen. Controleer eerst het documenttype, de oorsprong en de huidige lay-out. **JSON bewerken** is bedoeld voor geavanceerde configuratie en vereist kennis van de sjabloonindeling. In het JSON-dialoogvenster kunt u de configuratie kopiëren.
+Indelingen van vóór deze wijziging houden hun labels: DocBits vult voor elke knop de standaardsleutel van dat knoptype in, zoals `save_rules` en `export`. Een opgeslagen sleutel blijft behouden, ook nadat u de indeling opnieuw laadt.
 
 ## Controleren en opslaan
 
-Orden de groepen en velden en controleer het resultaat in de lay-out. Gebruik **Opslaan** in de actiebalk wanneer alles klopt. Zie [Oorsprongindelingen](origin-layouts.md) voor lay-outs die bij een specifieke oorsprong horen.
+Rangschik de groepen en velden, controleer de indeling op het canvas en gebruik **Opslaan** in de kop als het resultaat klopt. Zie [Oorsprongindelingen](origin-layouts.md) voor indelingen die bij een specifieke oorsprong horen.
 
 {% hint style="info" %}
-De afbeeldingen gebruiken een vereenvoudigde voorbeeldlay-out voor een factuur. Veldnamen en beschikbare opties hangen af van uw configuratie.
+De schermafbeeldingen tonen een voorbeeldindeling in de Nederlandse interface. Veldnamen en beschikbare opties hangen af van uw eigen configuratie.
 {% endhint %}

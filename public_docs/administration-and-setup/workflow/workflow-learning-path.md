@@ -6,13 +6,13 @@ description: "Lernweg vom Einstieg zum Experten"
 
 Sieben Stufen führen vom ersten Blick in den Workflow-Designer bis zur eigenen Änderung an einem laufenden Workflow. Jede Stufe nennt ein Ziel, die Schritte in Ihrer eigenen Testorganisation und ein Ergebnis, das Sie prüfen können. Arbeiten Sie sie der Reihe nach durch und bauen Sie jede Übung selbst nach: Jede Stufe setzt auf der Konfiguration der vorherigen auf.
 
-1. [Orientierung und Ausführungsmodell](./#level-1)
-2. [Erste eigene Regel](./#level-2)
-3. [Felder, Datentypen und Grenzen](./#level-3)
-4. [Geschäftsregeln und Freigaben](./#level-4)
-5. [Advanced-Kontrollfluss und Unterworkflows](./#level-5)
-6. [Berechnung, Schnittstelle und Export](./#level-6)
-7. [Änderungen und Expertenbetrieb](./#level-7)
+1. [Orientierung und Ausführungsmodell](#level-1)
+2. [Erste eigene Regel](#level-2)
+3. [Felder, Datentypen und Grenzen](#level-3)
+4. [Geschäftsregeln und Freigaben](#level-4)
+5. [Advanced-Kontrollfluss und Unterworkflows](#level-5)
+6. [Berechnung, Schnittstelle und Export](#level-6)
+7. [Änderungen und Expertenbetrieb](#level-7)
 
 ## Bevor Sie beginnen
 
@@ -68,7 +68,7 @@ Sieben Stufen führen vom ersten Blick in den Workflow-Designer bis zur eigenen 
 
 **Abschlusskriterium:** Sie erklären wahr, falsch und Fehler aus Wert, Typ, Referenz und vorhandenen Daten. In Version 5 der Bestellkarte ist ein Beleg ohne vergleichbare Position ein Datenfehler und keine erfolgreiche Freigabe.
 
-**Vertiefung:** [P1: Field is, Docfield is und zwei Felder vergleichen](masterclass/field-conditions.md) · [P1: Toleranzen und Bestellreferenz eindeutig machen](masterclass/tolerances-and-po.md)
+**Vertiefung:** [Field is, Docfield is und zwei Felder vergleichen](masterclass/field-conditions.md) · [Toleranzen und Bestellreferenz eindeutig machen](masterclass/tolerances-and-po.md)
 
 ## 4. Geschäftsregeln und Freigaben <a href="#level-4" id="level-4"></a>
 
@@ -92,7 +92,7 @@ Sieben Stufen führen vom ersten Blick in den Workflow-Designer bis zur eigenen 
 
 **Abschlusskriterium:** Sie unterscheiden Zuständigkeit, Aufgabe, Benachrichtigung und tatsächliche Freigabe; A → Freigabe → B → Freigabe ist in dieser Reihenfolge passiert; eine Ablehnung von A hat den Export verhindert; und ein fehlender Empfänger galt nicht als abgeschlossene Freigabe.
 
-**Vertiefung:** [P1: Entscheidungstabelle bis zur Zuweisung nachvollziehen](masterclass/decision-table-routing.md) · [P1: Zuweisung, Aufgabe und sequenzielle Freigabe unterscheiden](masterclass/assignment-task-sequential.md)
+**Vertiefung:** [Entscheidungstabelle bis zur Zuweisung nachvollziehen](masterclass/decision-table-routing.md) · [Zuweisung, Aufgabe und sequenzielle Freigabe unterscheiden](masterclass/assignment-task-sequential.md)
 
 ## 5. Advanced-Kontrollfluss und Unterworkflows <a href="#level-5" id="level-5"></a>
 
@@ -108,7 +108,7 @@ Sieben Stufen führen vom ersten Blick in den Workflow-Designer bis zur eigenen 
 
 **Abschlusskriterium:** Sie erklären den Unterschied aus MERGE-04 zwischen Test und Lauf aus Schritt 2, wie Quellen gezählt werden und wohin ein Fehler wandert. Ein grüner Run-Workflow-Aufruf braucht trotzdem eine Prüfung im Ziel. V2 meint hier die zweite Version des Fallstudien-Graphen: Die Statuskarte jeder Route führt direkt zur gemeinsamen Abschlusskarte, ohne wartenden OR-Knoten.
 
-**Vertiefung:** [P0: Wait ALL, Wait ANY und OR richtig verbinden](masterclass/control-nodes.md) · [P0: Run Workflow, Zielbedingungen und Fehler verstehen](masterclass/run-workflow.md) · [Advanced-Geschäftsfall: Rechnungsrouting](advanced-workflow-case-study.md)
+**Vertiefung:** [Wait ALL, Wait ANY und OR richtig verbinden](masterclass/control-nodes.md) · [Run Workflow, Zielbedingungen und Fehler verstehen](masterclass/run-workflow.md) · [Advanced-Geschäftsfall: Rechnungsrouting](advanced-workflow-case-study.md)
 
 ## 6. Berechnung, Schnittstelle und Export <a href="#level-6" id="level-6"></a>
 
@@ -124,7 +124,7 @@ Sieben Stufen führen vom ersten Blick in den Workflow-Designer bis zur eigenen 
 
 **Abschlusskriterium:** Folgewerte im Feld, Eingang beim Empfänger und Verarbeitung im ERP haben jeweils einen eigenen Nachweis. Eine Simulation oder ein eingereihter Export ist keine Zustellung.
 
-**Vertiefung:** [P1: Tabellen berechnen und Regex-Abhängigkeit prüfen](masterclass/table-calculations.md) · [P1: API-Aufruf und Weiterverwendung der Antwort prüfen](masterclass/api-response-contract.md) · [P1: Exportvarianten, offene Aufgaben und Abschlussstatus](masterclass/export-lifecycle.md)
+**Vertiefung:** [Tabellen berechnen und Regex-Abhängigkeit prüfen](masterclass/table-calculations.md) · [API-Aufruf und Weiterverwendung der Antwort prüfen](masterclass/api-response-contract.md) · [Exportvarianten, offene Aufgaben und Abschlussstatus](masterclass/export-lifecycle.md)
 
 ## 7. Änderungen und Expertenbetrieb <a href="#level-7" id="level-7"></a>
 

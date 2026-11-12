@@ -1,6 +1,6 @@
 # Commande d'achat
 
-La section **Bon de commande** des **Plus de paramètres** d'un type de document détermine comment les documents de ce type sont appariés aux bons de commande. Les paramètres s'appliquent à un seul type de document à la fois : ouvrez donc d'abord, sous **Paramètres → Types de documents**, le type de document que vous souhaitez modifier.
+La section **Bon de commande**, dans les **Plus de paramètres** d'un type de document, détermine comment les documents de ce type sont appariés aux bons de commande. Les paramètres s'appliquent à un seul type de document à la fois : ouvrez donc d'abord, sous **Paramètres → Types de documents**, le type de document que vous souhaitez modifier.
 
 Pour trouver les paramètres d'une facture :
 
@@ -8,11 +8,11 @@ Pour trouver les paramètres d'une facture :
 2. Recherchez la carte **Facture** et sélectionnez son icône en forme d'engrenage (**Plus de paramètres**).
 3. Ouvrez la section **Bon de commande** pour consulter ses options d'appariement et de validation.
 
-<figure><img src="../../../../../../.gitbook/assets/purchase-order-invoice-card-fr-20261112.png" alt="Carte du type de document Facture avec l'icône en forme d'engrenage des Plus de paramètres en haut à droite"><figcaption><p>La carte Facture dans l'environnement de test actuel, en français. Utilisez l'icône en forme d'engrenage pour ouvrir les plus de paramètres ; les autres commandes concernent le type de document.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/purchase-order-invoice-card-fr-20261112.png" alt="Carte du type de document Facture avec l'icône en forme d'engrenage des Plus de paramètres en haut à droite"><figcaption><p>La carte Facture dans l'environnement de test actuel, en français. Utilisez l'icône en forme d'engrenage pour ouvrir les **Plus de paramètres** ; les autres commandes concernent le type de document.</p></figcaption></figure>
 
-Sur la carte, le badge **Standard**, **Activer**, **Extraction**, l'engrenage des plus de paramètres et les liens vers les réglages du type de document ont chacun leur fonction. Leur rôle est décrit dans [Types de documents](../../README.md), sections « Aperçu » et « Contrôles sur une carte de type de document » ; les liens affichés dépendent du type de document, des autorisations et des modules activés.
+Sur la carte, le badge **Standard**, les commutateurs **Activer** et **Extraction**, l'engrenage (**Plus de paramètres**) et les liens vers les réglages du type de document ont chacun leur fonction. Leur rôle est décrit dans [Types de documents](../../README.md), sections « Aperçu » et « Contrôles sur une carte de type de document » ; les liens affichés dépendent du type de document, des autorisations et des modules activés.
 
-<figure><img src="../../../../../../.gitbook/assets/purchase-order-po-section-fr-20261112.png" alt="Section Bon de commande fermée, intitulée Appariement et validation des bons de commande"><figcaption><p>La section Bon de commande dans les plus de paramètres, affichée fermée. Dépliez son en-tête pour voir les options ; aucun paramètre n'a été modifié pour cette capture.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/purchase-order-po-section-fr-20261112.png" alt="Section Bon de commande fermée, intitulée Appariement et validation des bons de commande"><figcaption><p>La section **Bon de commande** dans les **Plus de paramètres**, affichée fermée. Dépliez son en-tête pour voir les options ; aucun paramètre n'a été modifié pour cette capture.</p></figcaption></figure>
 
 Commencez par les règles d'appariement et les tolérances, puis ajustez le comportement autour de l'appariement et de l'exportation :
 

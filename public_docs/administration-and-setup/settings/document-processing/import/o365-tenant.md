@@ -1,110 +1,44 @@
 # O365 Tenant
 
-## App registreren op Azure AD
+Gebruik deze handleiding om een Microsoft 365-postvak van uw organisatie te verbinden via een Microsoft Entra-toepassing. Een beheerder heeft toegang nodig tot de bedoelde Entra-tenant en de bijbehorende DocBits-organisatie. Spreek vóór het inschakelen van de import af welk postvak, welke documentbestemming en wie de referenties beheert.
 
-<mark style="color:red;">**Opmerking**</mark>: De machtigingen kunnen autorisatie van een beheerder vereisen.
+## 1. De Entra-toepassing voorbereiden <a href="#register-app-on-azure-a-d" id="register-app-on-azure-a-d"></a>
 
-1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) met uw inloggegevens.
-2. Zoek en open Azure Active Directory (ook wel bekend als Azure AD) vanuit Azure-services.
+Open in het [Microsoft Entra-beheercentrum](https://entra.microsoft.com/) in de bedoelde tenant **Identiteit → Toepassingen → App-registraties → Nieuwe registratie**. Kies een herkenbare naam en het accounttype dat uw identiteitsbeheerder goedkeurt. Een toepassing die alleen binnen uw organisatie wordt gebruikt, gebruikt normaal de optie voor één tenant. Noteer de **map-id (tenant)** en de **toepassings-id (client)**. De labels in het Microsoft-portaal kunnen per taalinstelling afwijken; de [actuele registratie-instructies](https://learn.microsoft.com/en-us/graph/auth-register-app-v2) van Microsoft tonen de stappen in het portaal.
 
-![Item Azure Active Directory in de zoekbalk en de servicelijst van de Azure-portal](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_1.png)
+Het tenantformulier van DocBits vraagt om een clientgeheim. Maak het geheim aan onder **Certificaten en geheimen** volgens het goedgekeurde verloopbeleid en noteer de **waarde** zolang die beschikbaar is. Bewaar het veilig en leg vóór het verlopen vast wie het vernieuwt. Voer deze waarde in bij **Waarde van de client-app** in DocBits. Houd geheimen buiten schermafbeeldingen, tickets en documentatie.
 
-3. Selecteer in de sectie **Manage** de optie **App registrations**.
+Laat public-clientstromen uitgeschakeld voor deze opzet met een geheim, tenzij uw identiteitsbeheerder een aparte eis heeft vastgelegd. De [richtlijnen over clienttypen](https://learn.microsoft.com/en-us/entra/identity-platform/msal-client-applications) van Microsoft leggen uit waarom public-clienttoepassingen geen toepassingsgeheimen veilig kunnen bewaren.
 
-![Overzichtspagina van Azure Active Directory met de sectie Manage en het item App registrations in het linkermenu](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_2.png)
+## 2. Machtiging en postvakbereik goedkeuren
 
-4. Klik in het scherm App registrations op **+ New registration**.
+Laat de Microsoft 365-beheerder de mailbewerkingen en het postvakbereik voor deze toepassing goedkeuren. De Microsoft Graph-machtiging **Mail.ReadWrite** geeft toegang tot en wijzigingen in e-mail zonder aangemelde gebruiker en vereist toestemming van een beheerder. Een goedkeuring zonder bereik omvat de postvakken van de hele organisatie. Mail.ReadWrite geeft geen recht om e-mail te verzenden; functies voor verzenden vragen een aparte beoordeling van de machtiging. Zie de [machtigingsreferentie van Microsoft Graph](https://learn.microsoft.com/en-us/graph/permissions-reference#mailreadwrite).
 
-![Pagina App registrations met de knop + New registration in de werkbalk](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_3.png)
+Bespreek beperkte postvaktoegang met de Exchange-beheerder via [RBAC voor toepassingen](https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac). Goedkeuringen uit Entra en RBAC-goedkeuringen uit Exchange werken samen: een extra RBAC-goedkeuring met bereik verkleint een bestaande goedkeuring voor de hele organisatie niet. Laat de beheerder de feitelijke toegang tot het bedoelde postvak bevestigen voordat u de bron inschakelt.
 
-5. Het scherm **Register an application** verschijnt. Voer de gebruikersgerichte weergavenaam voor de App in bij **Name**.
+## 3. De tenantverbinding in DocBits instellen
 
-![Formulier Register an application met het veld Name en de helptekst voor de weergavenaam](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_4.png)
+Open **Instellingen → Importeren → E-mail importeren** in de bedoelde DocBits-organisatie en kies **Nieuw**.
 
-6. Selecteer een van de volgende accounttypen afhankelijk van uw behoeften:
+<figure><img src="../../../../.gitbook/assets/o365-tenant-email-import-list-nl-20261112.png" alt="Sectie E-mail importeren met de knop Nieuw, het pictogram voor het importlogboek en de kolommen Gebruikersnaam, E-Mail, Gedeeld E-Mailadres, Protocol, Encryptie, Suborganisaties, Map en Acties. De kolom Documentroutering valt buiten de opnamebreedte; de rijgegevens zijn verzonnen voorbeelden."><figcaption><p>Nieuw opent de assistent voor de e-mailserver. De rijgegevens in deze documentatieopname zijn verzonnen voorbeelden; de kolom Documentroutering ligt buiten de opnamebreedte en is horizontaal te bereiken.</p></figcaption></figure>
 
-* **Accounts in elke organisatiemap (elke Azure AD map Multitenant) en persoonlijke Microsoft-accounts (bijvoorbeeld Skype, Xbox)**
-* **Accounts in elke organisatiemap (elke Azure AD map Multitenant)**
+Bestaande verbindingen beheert u met het menu in de kolom **Acties**, met **Testverbinding**, **Verbindingslogboeken**, **Importlogboek**, **Deactiveren**, **Bewerking** en **Verwijderen**. Het pictogram naast **Nieuw** opent het importlogboek van alle e-mailverbindingen. Beide staan uitgelegd bij [de acties van de e-mailimport](../import.md#acties-voor-oauth-office365).
 
-![Lijst Supported account types met de opties voor één tenant, meerdere tenants en persoonlijke Microsoft-accounts](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_5.png)
+Kies onder **Protocol** de optie **OAuth Office365 - Tenant** en kies bij **Documentroutering** de bedoelde bestemming. Vul de tenantvelden in die uw beheerder aanlevert:
 
-7. Laat de optie **Redirect URI (optional)** zoals deze is.
+| Veld in DocBits          | Invoer                                                                |
+| ------------------------ | --------------------------------------------------------------------- |
+| Huurder-ID               | Map-id (tenant) van de bedoelde Entra-tenant.                         |
+| Client-app-ID            | Toepassings-id (client) van de geregistreerde toepassing.             |
+| Waarde van de client-app | De waarde van het clientgeheim uit die registratie.                   |
+| Huurderstype             | De cloudomgeving van de tenant, bijvoorbeeld Commercieel of GCC-hoog. |
 
-![Formulier Register an application met de ondersteunde accounttypen en de gekozen optie voor meerdere tenants](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_6.png)
+<figure><img src="../../../../.gitbook/assets/o365-tenant-tenant-wizard-nl-20261112.png" alt="Assistent E-mailserver instellen met de actieve stap E-mailserver instellen en de volgende stap Configuratie, Protocol OAuth Office365 - Tenant, Documentroutering DocBits, de drie lege referentievelden Huurder-ID, Client-app-ID en Waarde van de client-app, Huurderstype Commercieel en de knoppen Testverbinding en Opslaan."><figcaption><p>De tenantvariant heeft een eigen referentieformulier. Dit voorbeeld gebruikt de DocBits-routering en het huurderstype Commercieel; alle drie de referentievelden zijn leeg. Testverbinding en Opslaan zijn voor deze documentatieopname niet gebruikt.</p></figcaption></figure>
 
-8. Klik op **Register** om de App-registratie te voltooien. Dit brengt u terug naar het scherm van de nieuwe App.
-9. Zoek in het App-scherm de **Application (client) ID**. Kopieer deze om te gebruiken bij het configureren van e-mailimport voor **DocBits**.
+Gebruik **Testverbinding** met de goedgekeurde referenties van de tenant voordat u **Opslaan** kiest. De test neemt contact op met de geconfigureerde dienst; met Opslaan verstuurt u de tenantconfiguratie. Een geslaagde verbindingstest bewijst niet dat een bericht of document is geïmporteerd. Als u het formulier alleen bekijkt, gebruikt u **Annuleren** of het sluitpictogram.
 
-![Sectie Redirect URI (optional) van het registratieformulier en de knop Register eronder](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_7.png)
+## 4. De opgeslagen bron controleren
 
-10. Selecteer in het linkerpaneel **Certificates & secrets**:
+Gebruik voor een goedgekeurde uitrol een aangewezen testpostvak en een onschuldige voorbeeldbijlage. Stuur na het opslaan van de bron een testbericht naar dat postvak, bekijk de lijst **E-mail importeren** en de importlogboeken en bevestig dat het document op de gekozen bestemming aankomt. Bespreek de opties voor gedeelde postvakken en het verplaatsen van berichten indien nodig met de beheerder. Leg de routering, het postvak en de verantwoordelijke voor het verlopen van het geheim vast in het interne draaiboek, zonder het geheim.
 
-![Overzichtspagina van de geregistreerde toepassing met Display name, Application (client) ID en de knoppen Delete en Endpoints](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_8.png)
-
-11. Klik in het scherm **Certificates & secrets** op de knop **+ New client secret** onder de sectie **Client secrets**:
-
-![Item Certificates & secrets in het linkermenu van de geregistreerde toepassing](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_9.png)
-
-12. Klik in het dialoogvenster **Add a client secret** op de knop **Add**:
-
-![Sectie Client secrets met de beschrijving en de melding dat er nog geen clientgeheimen zijn aangemaakt](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_10.png)
-
-Het wordt aanbevolen om een beschrijving in te vullen om dit geheim te identificeren tussen vele (op dit moment is de limiet 2 geheimen per App).
-
-![Dialoogvenster Add a client secret met het veld Description en de verloopopties 1 jaar, 2 jaar en nooit](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_11.png)
-
-<mark style="color:red;">**Opmerking**</mark>: Selecteer deze vervaldatum volgens uw bedrijfsbeleid. Zodra deze is verlopen, moet een nieuw client secret worden gemaakt en gespecificeerd voor elke e-mailconfiguratie waarin deze eerder werd gebruikt.
-
-13. Het nieuw gegenereerde client secret zal zichtbaar zijn. Kopieer dit client secret om te gebruiken bij het configureren van e-mailimport voor DocBits.
-
-![Tabel Client secrets met het aangemaakte geheim, de vervaldatum en het kopieerpictogram naast de waarde](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_12.png)
-
-**Belangrijk:** Zorg ervoor dat u het client secret hebt gekopieerd, aangezien het client secret niet opnieuw wordt weergegeven zodra het is gesloten.
-
-14. Selecteer **Authentication** in het linkerpaneel. Dit toont het scherm **Authentication** aan de rechterkant.
-
-![Item Authentication in het linkermenu van de geregistreerde toepassing](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_13.png)
-
-15. Klik in de sectie **Advanced settings** op **Yes** voor **Default client type**.
-
-![Pagina Authentication, sectie Advanced settings, met Default client type op Yes voor een openbare client](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_14.png)
-
-16. Klik op **Save** om de wijzigingen te bevestigen.
-
-![Pagina Authentication met de knoppen Save en Discard in de werkbalk](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_15.png)
-
-17. Selecteer **API permissions** in het linkerpaneel. Dit toont het scherm API-machtigingen.
-
-![Item API permissions in het linkermenu van de geregistreerde toepassing](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_16.png)
-
-18. Standaard is de machtiging **User.Read** van **Microsoft Graph** aanwezig, laat deze zoals deze is.
-
-![Tabel API permissions met de gedelegeerde machtiging User.Read van Microsoft Graph](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_17.png)
-
-<mark style="color:red;">**Opmerking**</mark>: Dit is een vereiste machtiging. Als deze machtiging niet beschikbaar is, voeg dan de machtiging toe met de hieronder vermelde stappen voor de machtiging **Mail.ReadWrite**.
-
-19. Klik op **+ Add a permission**. Dit opent het paneel **Request API permissions**.
-
-![Paneel Configured permissions met de knop + Add a permission en een lege lijst met machtigingen](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_18.png)
-
-20. Klik op **Microsoft Graph**.
-
-![Paneel Request API permissions met het item Microsoft Graph bij de veelgebruikte Microsoft-API's](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_19.png)
-
-21. Selecteer uit de twee subcategorieën **App Permissions**.
-
-![Paneel met Microsoft Graph-machtigingen en de keuze tussen Delegated permissions en Application permissions](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_20.png)
-
-22. Typ **Mail.ReadWrite** in het zoekvak. Selecteer het selectievakje **Mail.ReadWrite** voor de machtiging.
-
-![Paneel Request API permissions met Mail.ReadWrite in de zoekbalk en de bijbehorende Mail-machtiging](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_21.png)
-
-23. Dit activeert de knop **Add permissions** onderaan het paneel. Klik op **Add permissions**.
-
-![Paneel Request API permissions met het selectievakje Mail.ReadWrite aangevinkt en de knop Add permissions actief](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_22.png)
-
-24. Dit voegt de machtiging **Mail.ReadWrite** toe aan de lijst met **Configured permissions** voor de App.
-
-<mark style="color:red;">**Opmerking**</mark>: Beheerdersrechten kunnen vereist zijn. De beheerder zal de App moeten autoriseren voor het gebruik van deze machtigingen. Eenmaal geautoriseerd, wordt de verleende status als volgt aangegeven:
-
-![Paneel Configured permissions met de machtiging Mail.ReadWrite en de knop Grant admin consent voor de tenant](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_23.png)
+De documentatiecontrole omvatte het actuele Nederlandse menu, de lijst en de lege tenantassistent. Er is geen Entra-toepassing, referentie, machtiging, postvak of importbron aangemaakt of gewijzigd. Er is geen verbinding, tenantauthenticatie of mailimport getest. Gebruik de gekoppelde Microsoft-instructies voor hun actuele beheerinterface.

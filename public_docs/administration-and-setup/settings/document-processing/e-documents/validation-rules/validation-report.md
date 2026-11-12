@@ -61,6 +61,21 @@ Ogni risultato è una riga:
 
 DocBits ha testi in linguaggio semplice per le regole più comuni. Per una regola senza un testo di questo tipo, il rapporto mostra il messaggio tecnico del validatore.
 
+## Lavorare con un rapporto lungo
+
+Una fattura può violare molte regole contemporaneamente. Il rapporto tiene il verdetto e i conteggi in un'intestazione fissa mentre i risultati scorrono, così vedi sempre quanto vale l'intera fattura.
+
+* **Filtra per livello.** I pulsanti di filtro sopra i risultati limitano l'elenco a errori, avvisi o messaggi informativi. Anche le righe **Result per level** funzionano da filtro: seleziona un livello per vedere solo i suoi risultati.
+* **Cerca.** Un campo di ricerca filtra l'elenco aperto per testo, ad esempio un codice di regola, un nome di campo o una parola del messaggio.
+* **Espandi e comprimi.** I risultati si aprono da soli quando sono errori o quando il rapporto ha al massimo tre righe. Usa le azioni di espansione e compressione per l'intero elenco; ogni riga si apre anche singolarmente.
+* **Copia un codice o un XPath.** I risultati offrono un'azione di copia per il codice della regola e per l'XPath dell'elemento difettoso, ad esempio per un messaggio al tuo amministratore.
+* **Apri i dettagli quando ti servono.** I dettagli del documento partono compressi. I dettagli tecnici come il numero di controllo e l'XPath restano nel risultato, mentre la riga stessa mostra il nome comprensibile del controllo e il codice della regola come riferimento.
+* **Torna al tuo punto.** Quando selezioni **Show in XML** e riapri il rapporto, le righe aperte, il filtro e la posizione di scorrimento restano come li hai lasciati.
+* **Scarica o stampa.** L'azione **Download** nel piè di pagina del rapporto offre la stampa e un PDF, oltre ai file HTML e XML del rapporto. Il nome del file, la data di esportazione e il numero di pagina compaiono sul PDF.
+* **Rifiuta dal rapporto.** L'azione di rifiuto si trova a sinistra nel piè di pagina, separata dall'azione di download, così non rifiuti una fattura mentre cerchi il PDF.
+
+Su uno schermo stretto, ad esempio su un telefono, ogni risultato diventa una scheda invece di una riga.
+
 ## Passo successivo
 
 * [Passo successivo e rifiuto di un documento](validation-next-step-and-reject.md): cosa fare dopo aver letto il rapporto.

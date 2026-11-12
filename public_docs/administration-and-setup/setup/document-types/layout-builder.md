@@ -1,53 +1,64 @@
 # Edytor układu
 
-Edytor układu służy do rozmieszczania pól i elementów sterujących widocznych podczas walidacji lub zatwierdzania dokumentu. Każdy układ jest przypisany do typu dokumentu, pochodzenia i typu układu. Przed zapisaniem zmian sprawdź, który układ jest otwarty.
+Edytor układu służy do rozmieszczania pól i elementów sterujących, które osoby walidujące i zatwierdzające widzą podczas pracy z dokumentem. Każdy układ należy do jednego typu dokumentu, jednego źródła i jednego typu układu, więc przed zapisaniem sprawdź typ dokumentu i typ układu w nagłówku.
 
 ## Otwieranie układu
 
-1. Otwórz **Ustawienia → Typy dokumentów**.
-2. Otwórz edytor układu dla wybranego typu lub podtypu dokumentu. Jeśli edytor jest niedostępny, administrator może musieć włączyć ten moduł dla Twojej organizacji.
-3. Sprawdź pochodzenie wybrane na pasku narzędzi i typ edytora wskazany obok.
+1. Przejdź do **Ustawienia → Typy dokumentów**.
+2. Wybierz typ dokumentu, który chcesz edytować, i otwórz jego **Układy**; edytor układu (**Kreator Układów**) otworzy się dla tego typu. Dla podtypu dokumentu otwórz akcję edytora układu tego podtypu.
+3. Sprawdź nagłówek. Zobaczysz w nim nazwę układu (zmienisz ją ikoną ołówka), **Typ dokumentu** (na przykład **Faktura**) i **Typ układu** (na przykład **Walidacja pola**). Każdy selektor otwiera listę; wybranie innej pozycji wczytuje odpowiedni układ. Jeśli edytor układu jest niedostępny, administrator może musieć włączyć ten moduł dla Twojej organizacji.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-current-pl.png" alt="Fragment edytora: sekcje Grupy, Pola i Elementy formularza po lewej oraz uproszczony przykładowy układ faktury pośrodku."><figcaption><p>Fragment edytora: sekcje Grupy, Pola i Elementy formularza po lewej oraz uproszczony przykładowy układ faktury pośrodku.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-structure-tab-pl.png" alt="Edytor układu dla faktury: nazwa układu, Typ dokumentu i Typ układu w nagłówku, karty Struktura, Pola i Elementy po lewej, obszar roboczy pośrodku oraz panel Właściwości po prawej, z zaznaczonym polem ID dostawcy"><figcaption><p>Edytor układu: selektory w nagłówku, listy elementów po lewej, obszar roboczy pośrodku i panel Właściwości po prawej.</p></figcaption></figure>
 
-Zmiana wartości **Pochodzenie** może spowodować utworzenie osobnego układu dla tego pochodzenia. Przed edycją sprawdź wybrane pochodzenie.
+Nagłówek i karty panelu po lewej stronie opisuje dokładniej strona [Nawigacja w Menedżerze Układów](../../settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md).
 
-## Obszary edytora
+## Praca z nagłówkiem
 
-Po lewej możesz przełączać się między kartami **Elementy**, **Właściwości** i ustawieniami ogólnymi oznaczonymi ikoną koła zębatego.
+* **Typ dokumentu** i **Typ układu** przełączają między układami. Po wybraniu innej pozycji strona wczytuje wybrany układ.
+* Obok przycisku **Zapisz** DocBits pokazuje, czy układ ma **Niezapisane zmiany**. Po zapisaniu pokazuje godzinę ostatniego zapisu.
+* **Zapisz** zapisuje układ dla wybranego typu dokumentu, źródła i typu układu.
+* Menu z trzema kropkami obok przycisku **Zapisz** zawiera akcje **Automatyczne generowanie szablonu**, **Edytuj JSON**, **Kopiuj JSON** i **Ustawienia układu**. W nagłówku możesz też wybrać **Zastosuj domyślny układ do Origins** albo **Użyj domyślnego szablonu**. **Automatyczne generowanie szablonu** i **Użyj domyślnego szablonu** zastępują układ niestandardowy, więc najpierw sprawdź wybrany typ dokumentu i układ. **Edytuj JSON** służy do zaawansowanej konfiguracji i warto z niego korzystać tylko wtedy, gdy znasz format szablonu.
+* Jeśli opuścisz stronę z niezapisanymi zmianami, DocBits zapyta **Odrzucić zmiany?**. Wybierz **Anuluj**, aby zostać i zapisać, albo **OK**, aby wyjść bez zapisywania.
 
-* Karta **Elementy** zawiera sekcje **Grupy**, **Pola** i **Elementy formularza**. Rozwiń odpowiednią sekcję, aby zobaczyć dostępne grupy, pola i elementy formularza.
-* Obszar pośrodku pokazuje grupy i pola układu. Grupy służą do porządkowania powiązanych pól.
-* Po prawej znajduje się podgląd przykładowego dokumentu z możliwością zmiany powiększenia.
+<figure><img src="../../../.gitbook/assets/layout-builder-save-more-menu-pl.png" alt="Nagłówek edytora układu z nazwą układu, Typem dokumentu i Typem układu oraz otwartym menu z trzema kropkami z pozycjami Automatyczne generowanie szablonu, Edytuj JSON, Kopiuj JSON i Ustawienia układu, obok przycisku Zapisz"><figcaption><p>Akcje układu w menu z trzema kropkami obok przycisku <strong>Zapisz</strong>.</p></figcaption></figure>
 
-Aby dodać grupę, pole lub element formularza, przeciągnij go z odpowiedniej sekcji po lewej do obszaru układu.
+## Znajdowanie elementów: Struktura, Pola, Elementy
 
-<figure><img src="../../../.gitbook/assets/layout-builder-fields-current-pl.png" alt="Pola Numer faktury i Data w przykładowej grupie. W tym układzie każde pole zajmuje 50% szerokości grupy."><figcaption><p>Pola Numer faktury i Data w przykładowej grupie. W tym układzie każde pole zajmuje 50% szerokości grupy.</p></figcaption></figure>
+Panel po lewej stronie ma trzy karty:
 
-Pola dokumentu wielokrotnego użytku skonfiguruj w sekcji [Typy dokumentów](README.md). Dostępne pola zależą od wybranego typu dokumentu i jego konfiguracji.
+| Karta | Do czego służy |
+| --- | --- |
+| **Struktura** | Pokazuje układ jako drzewo. Grupy i ich pola są wymienione w kolejności, w jakiej występują na obszarze roboczym, wraz z liczbą pól umieszczonych i dostępnych (na przykład **4/14**). |
+| **Pola** | Wszystkie pola skonfigurowane dla typu dokumentu, pogrupowane według grup i domyślnie zwinięte. Trzy przyciski filtrów przełączają listę między wszystkimi polami, polami nieużywanymi i polami ukrytymi, a pod etykietą pola widoczna jest techniczna nazwa pola. |
+| **Elementy** | Elementy prezentacji i interakcji, takie jak Text, Label, Check Box, separatory, tabele, przyciski i podgrupy. |
+
+<figure><img src="../../../.gitbook/assets/layout-builder-elements-tab-pl.png" alt="Karta Elementy z sekcjami Grupy i Elementy formularza po lewej, układem faktury pośrodku i panelem Właściwości po prawej"><figcaption><p>Karta <strong>Elementy</strong> z paletami Grupy i Elementy formularza.</p></figcaption></figure>
+
+Nazwy elementów formularza (**Text**, **Label**, **Check Box** i pozostałe) są w polskim interfejsie wyświetlane po angielsku.
+
+Wybierz element, aby go dodać, albo przeciągnij go na obszar roboczy. Tytuł grupy mówi osobie walidującej dokument, co należy do danej sekcji. Pola dokumentu wielokrotnego użytku utwórz lub zmień najpierw w sekcji [Typy dokumentów](README.md).
+
+## Praca na obszarze roboczym
+
+* **Główny układ** pokazuje układ samego dokumentu. **Tabela** pokazuje układ tabeli używany dla pozycji dokumentu.
+* **Dokument** otwiera lub zamyka przykładowy dokument obok obszaru roboczego, dzięki czemu możesz porównać układ z rzeczywistym dokumentem.
+* Grupy są rysowane jako karty; pola w grupie można rozmieścić w wierszach i nadać im różne szerokości.
 
 ## Zmiana właściwości elementu
 
-Wybierz grupę lub pole w obszarze układu i otwórz **Właściwości** po lewej. Dostępne opcje zależą od wybranego elementu i obejmują między innymi etykietę, nazwę techniczną, szerokość oraz zachowanie.
+Wybierz element lub grupę na obszarze roboczym. Panel **Właściwości** po prawej jest zawsze widoczny i podzielony na sekcje:
 
-<figure><img src="../../../.gitbook/assets/layout-builder-properties-current-pl.png" alt="Właściwości wybranego pola: Etykieta, Nazwa pola i Szerokość elementu w procentach."><figcaption><p>Właściwości wybranego pola: Etykieta, Nazwa pola i Szerokość elementu w procentach.</p></figcaption></figure>
+* **Wyświetlanie** – etykieta, nazwa pola, położenie etykiety i **Szerokość elementu w procentach**.
+* **Zachowanie** – tylko do odczytu, ukrycie i indeks kart.
+* **Wartości i listy** – wartości oferowane dla elementu.
+* **Automatyzacja** – reguły, które wypełniają lub zmieniają element.
 
-W pokazanym przykładzie **Etykieta** zawiera „Numer faktury”, **Nazwa pola** to techniczna nazwa `doku_pl_invoice_number`, a **Szerokość elementu w procentach** wynosi 50.
-
-W przypadku pól predefiniowanych etykieta i nazwa techniczna mogą być nieedytowalne. Zależnie od typu elementu można też ustawić tryb tylko do odczytu, widoczność, kolejność przechodzenia klawiszem Tab, listy wartości oraz uruchamianie przepływu pracy lub skryptu po zmianie wartości. Grupy i pola mają różne opcje.
-
-Po zmianie właściwości sprawdź rezultat w obszarze układu. Szerokość jest wprowadzana jako wartość procentowa za pomocą kontrolki liczbowej; grupy i ich pola mogą mieć różne szerokości. Więcej informacji znajdziesz w artykule [Konfigurowanie właściwości pól](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
-
-## Szablony i JSON
-
-Oprócz zapisywania układu pasek narzędzi udostępnia funkcje generowania szablonu, stosowania domyślnego układu do układów według pochodzenia, używania domyślnego szablonu oraz edycji JSON. Dostępność zależy od otwartego edytora.
-
-Wygenerowanie lub zastosowanie szablonu może zastąpić układ niestandardowy. Najpierw sprawdź typ dokumentu, pochodzenie i bieżący układ. **Edytuj JSON** służy do zaawansowanej konfiguracji i wymaga znajomości formatu szablonu. Konfigurację można skopiować w oknie JSON.
+Szerokość wybierz z gotowych wartości (25, 33, 50, 66, 75 lub 100 procent) zamiast wpisywać ją ręcznie; sprawdź wynik na obszarze roboczym. To, które sekcje i opcje są widoczne, zależy od wybranego elementu. Więcej informacji znajdziesz w artykule [Konfigurowanie właściwości pól](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
 
 ## Sprawdzanie i zapisywanie
 
-Rozmieść grupy i pola oraz sprawdź wynik w obszarze układu. Gdy jest prawidłowy, użyj przycisku **Zapisz** na pasku narzędzi. Informacje o układach specyficznych dla pochodzenia znajdziesz w artykule [Układy według pochodzenia](origin-layouts.md).
+Rozmieść grupy i pola, sprawdź układ na obszarze roboczym i użyj przycisku **Zapisz** w nagłówku, gdy wynik jest prawidłowy. Układy dla konkretnego źródła opisuje strona [Układy według źródła](origin-layouts.md).
 
 {% hint style="info" %}
-Ilustracje przedstawiają uproszczony przykładowy układ faktury. Nazwy pól i dostępne opcje zależą od konfiguracji.
+Zrzuty ekranu przedstawiają przykładowy układ faktury w organizacji testowej DocBits z wybranym językiem polskim. Nazwy pól i dostępne opcje zależą od konfiguracji.
 {% endhint %}

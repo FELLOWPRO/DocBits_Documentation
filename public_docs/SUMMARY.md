@@ -65,6 +65,7 @@
     * [文档状态](end-user-and-partner-section/end-user-section/dashboard/document-status.md)
     * [筛选文档](end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md)
     * [快速搜索](end-user-and-partner-section/end-user-section/dashboard/quick-search.md)
+    * [Smart Search Ranking 智能搜索排序](end-user-and-partner-section/end-user-section/dashboard/smart-search-ranking.md)
     * [个人仪表板](end-user-and-partner-section/end-user-section/dashboard/personal-dashboards.md)
     * [已上传文档概览](end-user-and-partner-section/end-user-section/dashboard/overview-of-uploaded-documents.md)
     * [任务计数器](end-user-and-partner-section/end-user-section/dashboard/task-counter.md)

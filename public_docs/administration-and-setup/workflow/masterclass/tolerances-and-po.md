@@ -2,7 +2,7 @@
 description: "Toleranz und Referenzrichtung beim PO-Vergleich eindeutig machen"
 ---
 
-# P1: Toleranzen und PO-Vergleich mit eindeutiger Referenz
+# Toleranzen und PO-Vergleich mit eindeutiger Referenz
 
 Eine Toleranz von 2 Prozent ist kein fester Betrag. Sie ist 2 Prozent der Seite, gegen die Sie vergleichen, deshalb kann dieselbe Rechnungsposition in der einen Richtung durchfallen und in der anderen bestehen. Diese Seite zeigt das an einem Wertepaar, gibt Ihnen drei Übungen zum Nachbauen und listet danach die sechs Vergleichsrichtungen und die Kartenparameter auf, die Sie in Ihren eigenen Test übernehmen können.
 

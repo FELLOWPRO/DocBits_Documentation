@@ -2,9 +2,9 @@
 description: "Field is, Docfield is oder Compare two Fields wählen"
 ---
 
-# P1: Field is, Docfield is und zwei Felder vergleichen
+# Field is, Docfield is und zwei Felder vergleichen
 
-Drei Bedingungskarten sehen im Designer ähnlich aus, und ihr Unterschied entscheidet, was eine Regel tatsächlich erkennen kann. Diese Seite hilft Ihnen, die richtige auszuwählen, und gibt Ihnen danach drei kurze Übungen, die zeigen, was jede Karte zurückgibt. Am Ende können Sie „leer“ von „null“, „falsch“ von „fehlend“ und eine nicht erfüllte Bedingung von einem Fehler unterscheiden.
+Drei Bedingungskarten sehen im Designer ähnlich aus, und ihr Unterschied entscheidet, was eine Regel tatsächlich erkennen kann. Diese Seite hilft Ihnen, die richtige auszuwählen, und gibt Ihnen danach drei kurze Übungen, die zeigen, was jede Karte zurückgibt. Am Ende können Sie „leer“ von der Zahl `0`, „falsch“ von „fehlend“ und eine nicht erfüllte Bedingung von einem Fehler unterscheiden; technisches `null` gilt dabei als leer, die Zahl `0` nicht.
 
 Führen Sie die Übungen im Advanced Test in Ihrer eigenen Testorganisation mit einem synthetischen Dokument aus. Hier berührt nichts ein Kundendokument.
 

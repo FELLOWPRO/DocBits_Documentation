@@ -32,6 +32,14 @@ Os administradores encontram o **Consulting report** na parte inferior da aba. C
 
 Os valores de efeito são **estimativas**. Se o relatório responder _forbidden_, a sua função não o permite.
 
+## Idioma das explicações
+
+O DocBits pede as explicações no idioma que utiliza no DocBits. Se o serviço não conseguir responder nesse idioma, as explicações são escritas em inglês e o painel mostra esta linha acima das propostas:
+
+> Proposal explanations are not available in your selected language. English is shown.
+
+A linha diz respeito apenas à formulação. Preview, Apply, Measure e Undo funcionam da mesma forma.
+
 Consulte [Touchless com MCP](touchless-mcp.md) para as chamadas de ferramenta correspondentes e a classificação das ações humanas.
 
 ## Páginas relacionadas

@@ -31,7 +31,19 @@ O XML está correto, mas falta um campo obrigatório. Por exemplo, o vendedor n�
 
 O cartão indica a camada **L3 · Business Rules** e o código `BR-CO-26`. O relatório enumera todos os resultados da fatura, consulte [Relatório de validação](validation-report.md).
 
-## Os botões por baixo do cartão
+## A caixa Next step e os botões
+
+Numa fatura eletrónica inválida a página começa com uma caixa **Next step**. Contém a ação que ajuda neste caso:
+
+| Ação | O que faz |
+| --- | --- |
+| **Reject** | Rejeita o documento. A caixa de diálogo indica o ficheiro, o fornecedor e o número da fatura, avisa que o documento recebe o estado **Rejected** com uma nota no seu histórico e que o fornecedor não é informado, e explica como anular a rejeição. Pede um motivo e confirma com **Reject now**. Se algo falhar, a mensagem aparece dentro da caixa de diálogo e pode tentar de novo. |
+| **Download invoice XML** | Transfere o ficheiro tal como foi recebido, por exemplo para o verificar fora do DocBits ou para o devolver ao fornecedor. |
+| **Print report** | Imprime o [relatório de validação](validation-report.md). |
+
+O cartão também nomeia a verificação em palavras compreensíveis, com o código da regra como pequena referência.
+
+**Restart Processing** executa de novo o processamento do documento, por exemplo depois de alterar uma definição; a verificação usa as definições atuais. Fica abaixo da caixa Next step porque um reinício de um ficheiro inalterado falha da mesma forma. Os outros botões ficam ao lado:
 
 | Botão | O que faz |
 | --- | --- |
@@ -41,6 +53,8 @@ O cartão indica a camada **L3 · Business Rules** e o código `BR-CO-26`. O rel
 | **Create ticket** | Abre um pedido de suporte com os detalhes do erro. |
 
 Selecione **Show technical details** no cartão para ver a informação técnica em bruto.
+
+Enquanto o motivo carrega, a página mostra um marcador de posição em vez de um cartão meio escrito. Se o motivo não puder ser carregado, a página propõe recarregá-lo, e um passo cujo nome é desconhecido é assinalado como tal em vez de mostrar um campo vazio. Num ecrã estreito, o XML e a explicação ficam empilhados em vez de lado a lado.
 
 ## O que fazer a seguir
 

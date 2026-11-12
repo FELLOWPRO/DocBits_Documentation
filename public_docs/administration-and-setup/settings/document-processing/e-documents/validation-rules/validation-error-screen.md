@@ -31,7 +31,19 @@ Le XML est correct, mais un champ obligatoire est manquant. Par exemple, le vend
 
 La carte indique la couche **L3 · Business Rules** et le code `BR-CO-26`. Le rapport énumère tous les résultats de la facture, voir [Rapport de validation](validation-report.md).
 
-## Les boutons sous la carte
+## Le bloc Next step et les boutons
+
+Pour une facture électronique invalide, la page commence par un bloc **Next step**. Il porte l'action qui aide dans ce cas :
+
+| Action | Ce qu'elle fait |
+| --- | --- |
+| **Reject** | Rejette le document. Le dialogue indique le fichier, le vendeur et le numéro de facture, vous informe que le document reçoit le statut **Rejected** avec une note dans son historique et que le fournisseur n'est pas informé, et explique comment annuler le rejet. Il demande un motif et confirme avec **Reject now**. Si quelque chose échoue, le message apparaît dans le dialogue et vous pouvez réessayer. |
+| **Download invoice XML** | Télécharge le fichier tel qu'il a été reçu, par exemple pour le vérifier hors de DocBits ou pour le renvoyer au fournisseur. |
+| **Print report** | Imprime le [rapport de validation](validation-report.md). |
+
+La carte nomme aussi le contrôle en mots compréhensibles, avec le code de la règle comme petite référence.
+
+**Restart Processing** relance le traitement du document, par exemple après avoir modifié un paramètre ; le contrôle utilise les paramètres actuels. Le bouton se trouve sous le bloc Next step parce qu'un redémarrage d'un fichier inchangé échoue de la même manière. Les autres boutons restent à côté :
 
 | Bouton | Ce qu'il fait |
 | --- | --- |
@@ -41,6 +53,8 @@ La carte indique la couche **L3 · Business Rules** et le code `BR-CO-26`. Le ra
 | **Create ticket** | Ouvre un ticket de support avec les détails de l'erreur. |
 
 Sélectionnez **Show technical details** sur la carte pour obtenir les informations techniques brutes.
+
+Pendant le chargement du motif, la page affiche un espace réservé au lieu d'une carte à moitié écrite. Si le motif ne peut pas être chargé, la page propose de le recharger, et une étape dont le nom est inconnu est signalée comme telle au lieu d'afficher un champ vide. Sur un écran étroit, le XML et l'explication sont empilés au lieu d'être côte à côte.
 
 ## Que faire ensuite
 

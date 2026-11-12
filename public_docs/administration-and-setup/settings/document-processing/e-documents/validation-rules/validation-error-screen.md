@@ -31,9 +31,9 @@ XML jest poprawny, ale brakuje wymaganego pola. Na przykład nie można zidentyf
 
 Karta podaje warstwę **L3 · Business Rules** i kod `BR-CO-26`. Raport wymienia wszystkie wyniki faktury, zobacz [Raport walidacyjny](validation-report.md).
 
-## Pole Next step i przyciski
+## Next step i przyciski
 
-Dla nieprawidłowej e-faktury strona zaczyna się od pola **Next step**. Zawiera ono akcję, która pomaga w tym przypadku:
+Dla nieprawidłowej e-faktury na początku strony stoi **Next step** z akcją, która pomaga w tym przypadku:
 
 | Akcja | Co robi |
 | --- | --- |

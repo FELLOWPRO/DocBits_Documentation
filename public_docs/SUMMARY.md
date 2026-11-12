@@ -886,7 +886,7 @@
       * [Mappatura BOD della contabilizzazione automatica](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/auto-accounting-bod-mapping.md)
     * [Contabilità Automatica](infor-integration-and-configuration/importing-customer-master-data/m3/auto-accounting.md)
     * [Fornitori e ordini di acquisto](infor-integration-and-configuration/importing-customer-master-data/m3/suppliers-and-purchase-orders.md)
-    * [Come importare tutti i fornitori](infor-integration-and-configuration/importing-customer-master-data/m3/how-to-import-all-suppliers.md)
+    * [Avviare un caricamento iniziale dei fornitori da Infor M3](infor-integration-and-configuration/importing-customer-master-data/m3/how-to-import-all-suppliers.md)
     * [Estrazione della tabella per l'elemento di costo](infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
   * [M3\_OLD](infor-integration-and-configuration/importing-customer-master-data/m3_old.md)
   * [Dati anagrafici personalizzati](infor-integration-and-configuration/importing-customer-master-data/custom-master-data.md)

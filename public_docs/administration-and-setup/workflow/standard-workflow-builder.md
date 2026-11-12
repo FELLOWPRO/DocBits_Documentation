@@ -1,6 +1,6 @@
 # Fluxo padrão
 
-O construtor **Fluxo padrão** é o editor linear, baseado em cartões, para automatizar o processamento de documentos. Um fluxo de trabalho é composto por três grupos de cartões — **Quando** (o gatilho), **E** (condições adicionais) e **Então** (as ações a executar). Quando um documento corresponde às condições When/And, as ações Then são executadas automaticamente.
+O construtor **Fluxo padrão** é o editor linear, baseado em cartões, para automatizar o processamento de documentos. Um fluxo de trabalho é composto por três grupos de cartões — **Quando** (o gatilho), **E** (condições adicionais) e **Então** (as ações a executar). Quando um documento corresponde às condições Quando/E, as ações Então são executadas automaticamente.
 
 ## Criar e testar um Standard Workflow <a id="standard-workflow-tutorial"></a>
 
@@ -41,7 +41,7 @@ Bem, vou criar um Standard Workflow completo para uma fatura de formação. Acim
 
 **Dar um nome ao workflow**
 
-Na lista, clico em Novo workflow. Defino um nome claro antes de adicionar cartões. Esta organização abre diretamente o designer Standard.
+Na lista, clico em Novo fluxo de trabalho. Defino um nome claro antes de adicionar cartões. Esta organização abre diretamente o designer Standard.
 
 **When: tipo de documento**
 
@@ -99,30 +99,40 @@ Na lista de workflows, ativo a regra testada e confirmo o interruptor ligado. An
 
 ## Como aceder
 
-Abra o **Painel de fluxos → Lista de fluxos** e clique em **Novo fluxo de trabalho** para criar um novo fluxo de trabalho Standard, ou clique num fluxo de trabalho existente para o editar.
+Abra o **Painel de fluxo de trabalho** → **Lista de fluxo de trabalho** e clique em **Novo fluxo de trabalho** para criar um novo fluxo de trabalho padrão, ou clique num fluxo de trabalho existente para o editar.
 
-<figure><img src="../../.gitbook/assets/workflow-list-search-detail-pt.png" alt="Vista parcial da lista de fluxos de trabalho e do campo de pesquisa, com os valores privados ocultos."><figcaption><p>Vista parcial da lista de fluxos de trabalho e do campo de pesquisa, com os valores privados ocultos.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-list-toolbar-pt-20261112.png" alt="Lista de fluxo de trabalho com os botões Novo fluxo de trabalho, Modelos e Fluxo de trabalho de importação na barra de ferramentas."><figcaption><p>A lista de fluxo de trabalho e os botões da barra de ferramentas.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/workflow-actions-detail-pt.png" alt="Pormenor das ações da lista: Novo fluxo de trabalho, Modelos e Fluxo de trabalho de importação."><figcaption><p>Pormenor das ações da lista: Novo fluxo de trabalho, Modelos e Fluxo de trabalho de importação.</p></figcaption></figure>
+## O modelo Quando / E / Então
 
-## O modelo When / And / Then
-
-<figure><img src="../../.gitbook/assets/workflow_designer_cards.png" alt="Tela do Standard Workflow com cartões When, And e Then"><figcaption><p>A tela do Standard Workflow. Este exemplo é acionado por faturas numa sub-organização e atribui-as a um utilizador.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_designer_cards.png" alt="Tela do fluxo de trabalho padrão com cartões Quando, E e Então"><figcaption><p>A tela do Standard Workflow. Este exemplo é acionado por faturas numa sub-organização e atribui-as a um utilizador.</p></figcaption></figure>
 
 - **Quando** — o gatilho que inicia o fluxo de trabalho (por exemplo, *o tipo de documento é Fatura*).
-- **E** — condições adicionais que também têm de ser verdadeiras (por exemplo, *o documento faz parte de uma sub-organização*). Deixe vazio para executar em todas as correspondências do cartão When.
+- **E** — condições adicionais que também têm de ser verdadeiras (por exemplo, *o documento faz parte de uma sub-organização*). Deixe vazio para executar em todas as correspondências do cartão Quando.
 - **Então** — as ações a realizar (por exemplo, *atribuir o documento ao utilizador*, criar uma tarefa, chamar uma API, enviar um e-mail).
 
 ## Adicionar cartões
 
 Clique em **Adicionar cartão** em qualquer grupo para abrir a biblioteca de cartões. Os cartões estão organizados por categoria para que possa encontrar o bloco de construção de que precisa:
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteca Add Card agrupada por categoria"><figcaption><p>A biblioteca <strong>Add Card</strong> — cartões de condição, cartões de comparação, cartões de ação e mais, agrupados por categoria.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteca de cartões agrupada por categoria"><figcaption><p>A biblioteca de cartões — cartões de condição, cartões de comparação, cartões de ação e mais, agrupados por categoria.</p></figcaption></figure>
 
 Guarde com **Salvar fluxo de trabalho** ou guarde o esquema como um modelo reutilizável com **Salvar modelo**.
 
+## Modelos de fluxo de trabalho
+
+O botão **Modelos** na barra de ferramentas da lista de fluxo de trabalho abre a biblioteca **Modelos de fluxo de trabalho**, onde pode gerir os modelos guardados na sua organização:
+
+<figure><img src="../../.gitbook/assets/workflow-templates-dialog-pt-20261112.png" alt="Janela Modelos de fluxo de trabalho com as colunas Nome, Atualizado Por, Última Modificação Em e Ações, a opção Mostrar modelos padrão ativada e os modelos padrão incorporados na lista."><figcaption><p>A janela <strong>Modelos de fluxo de trabalho</strong> — os modelos guardados e, com <strong>Mostrar modelos padrão</strong> ativada, os modelos padrão incorporados.</p></figcaption></figure>
+
+- A lista mostra o **Nome**, **Atualizado Por** e **Última Modificação Em** de cada modelo.
+- Ative **Mostrar modelos padrão** para incluir na lista os modelos padrão incorporados.
+- No menu **Ações** da linha, **Duplicado** copia um modelo e **Excluir** apaga um modelo guardado — os modelos padrão incorporados não podem ser eliminados.
+- Clique numa linha para abrir o modelo no editor de modelos, que utiliza o mesmo esquema Quando/E/Então do construtor de fluxo de trabalho padrão. Guarde as alterações com **Salvar modelo**.
+- Para criar um novo fluxo de trabalho a partir de um modelo, abra o modelo no editor, ajuste os cartões e guarde-o como fluxo de trabalho com **Salvar fluxo de trabalho**.
+
 ## Próximos passos
 
-- Veja o que cada cartão faz na secção **Cartas**.
-- Combine cartões em soluções comprovadas com os **Guias de padrões de fluxos**.
+- Veja o que cada cartão faz na secção **Cartões**.
+- Combine cartões em soluções comprovadas com os **Guias de padrões de fluxo de trabalho**.
 - Para fluxos com ramificações e caminhos paralelos (Wait ALL / Wait ANY / OR), utilize o construtor **Fluxo de trabalho avançado**.

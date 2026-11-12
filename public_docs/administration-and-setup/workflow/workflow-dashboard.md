@@ -1,8 +1,14 @@
 # Painel
 
-O **Painel de fluxo de trabalho** é a página inicial da área de workflows. Ele mostra o desempenho dos seus workflows — totais de execuções, taxas de sucesso e falha, um gráfico de execuções ao longo do tempo e a atividade recente — e dá acesso à lista de workflows, ao gerenciador de testes e ao Card SDK.
+O **Painel de fluxo de trabalho** é a página inicial da área de fluxos de trabalho. Mostra o desempenho dos seus fluxos de trabalho — totais de execuções, taxas de sucesso e de falha, um gráfico de execuções ao longo do tempo e a atividade recente — e dá acesso à lista de fluxos de trabalho, ao gerenciador de testes e ao SDK de cartão.
 
-<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard com totais de execuções, taxas de sucesso e falha, o gráfico de execuções e a atividade recente"><figcaption><p>O Workflow Dashboard — totais de execuções, taxas de sucesso/falha e atividade recente de cada workflow.</p></figcaption></figure>
+As vistas parciais abaixo mostram as métricas de volume, o resultado das execuções e o gráfico de execuções. A atividade recente e os controlos de navegação ficam fora destes recortes.
+
+<figure><img src="../../.gitbook/assets/workflow-kpi-volume-pt-20261112.png" alt="Métricas de volume: fluxos de trabalho executados hoje, fluxos de trabalho criados no período selecionado e total de execuções."><figcaption><p>Métricas de volume: fluxos de trabalho executados hoje, fluxos de trabalho criados no período selecionado e total de execuções.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-kpi-outcomes-pt-20261112.png" alt="Resultado das execuções: execuções bem-sucedidas, taxa de sucesso e taxa de falha, com o total de execuções em que se baseiam."><figcaption><p>Resultado das execuções: execuções bem-sucedidas, taxa de sucesso e taxa de falha, com o total de execuções em que se baseiam.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-chart-pt-20261112.png" alt="Execuções de fluxos de trabalho nos sete meses apresentados, com as séries Sucesso e Fracassado apresentadas em separado."><figcaption><p>Execuções de fluxos de trabalho nos sete meses apresentados, com as séries Sucesso e Fracassado apresentadas em separado.</p></figcaption></figure>
 
 ## Abas
 
@@ -14,15 +20,15 @@ O **Painel de fluxo de trabalho** é a página inicial da área de workflows. El
 
 **Vídeo:** Baixar e enviar um Workflow como JSON · 0:50 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pt.vtt)
 
-- **Painel** — métricas de execução e atividade recente (mostrados acima).
-- **Lista de fluxo de trabalho** — todos os workflows com tipo, ordem de execução e gatilho. Crie um novo com **Novo fluxo de trabalho**.
-- **Lista de Gerenciadores de Teste** — cenários de teste que validam seus workflows; execute-os com **Executar todos os testes**.
-- **Licença** — informações de licenciamento dos workflows.
-- **Card SDK** — crie e envie cartões de workflow personalizados (consulte [Card SDK](card-sdk.md)).
+- **Painel** — métricas de execução e atividade recente (mostradas acima).
+- **Lista de fluxo de trabalho** — todos os fluxos de trabalho com o tipo, a ordem de execução e o gatilho. Crie um novo com **Novo fluxo de trabalho**.
+- **Lista de Gerenciadores de Teste** — cenários de teste que validam os seus fluxos de trabalho; execute-os com **Executar todos os testes**.
+- **Licença** — informações de licenciamento dos fluxos de trabalho.
+- **SDK de cartão** — crie e carregue cartões de fluxo de trabalho personalizados (consulte [Card SDK](card-sdk.md)).
 
-A barra de ferramentas também oferece **Modelos**, que abre a biblioteca de [Modelos de workflow](standard-workflow-builder.md#workflow-templates), e **Fluxo de trabalho de importação**, que importa um workflow a partir de um arquivo JSON.
+A barra de ferramentas também oferece **Modelos**, que abre a biblioteca de [Modelos de fluxo de trabalho](standard-workflow-builder.md#modelos-de-fluxo-de-trabalho), e **Fluxo de trabalho de importação**, que importa um fluxo de trabalho a partir de um ficheiro JSON.
 
-A **gestão de testes** permite salvar cenários de teste por workflow e executá-los em conjunto, para confirmar que seus workflows continuam se comportando corretamente após alterações:
+A aba **Lista de Gerenciadores de Teste** permite guardar cenários de teste por fluxo de trabalho e executá-los em conjunto, para confirmar que os seus fluxos de trabalho continuam a comportar-se corretamente depois de alterações:
 
 <figure><img src="../../.gitbook/assets/workflow-test-manager-current-pt.png" alt="Vista parcial da lista de cenários de teste, com os valores privados ocultos. O botão Limpar limpa o filtro."><figcaption><p>Vista parcial da lista de cenários de teste, com os valores privados ocultos. O botão Limpar limpa o filtro.</p></figcaption></figure>
 
@@ -30,5 +36,5 @@ A **gestão de testes** permite salvar cenários de teste por workflow e execut�
 
 ## Próximos passos
 
-- Crie uma automação linear com o construtor **Fluxo padrão**.
+- Crie uma automação linear com o construtor **Fluxo padrão** — consulte [Como aceder](standard-workflow-builder.md#como-aceder).
 - Crie um fluxo com ramificações com o construtor **Fluxo de trabalho avançado**.

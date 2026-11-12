@@ -4,7 +4,7 @@ description: "从入门到专家的学习路径"
 
 # 从入门到专家的学习路径
 
-请按顺序完成各阶段。仅阅读并不足够：每个阶段都要形成自己的配置、可核对的预期与验证依据。P0 用于避免根本性的执行误判；P1 深入讲解数据、业务决策和集成。
+七个层级带您从第一次查看工作流设计器，走到能对一个正在运行的工作流负责地做出变更。每个层级都给出目标、在您自己的测试组织中要执行的步骤，以及可以核对的结果。请按顺序完成，并亲手搭建每一个练习：每个层级都建立在前一层级的配置之上。
 
 1. [认识产品与执行模型](#level-1)
 2. [构建第一条规则](#level-2)
@@ -14,114 +14,146 @@ description: "从入门到专家的学习路径"
 6. [计算、接口与导出](#level-6)
 7. [变更与专家运维](#level-7)
 
-## 前提条件
+## 开始之前
 
-使用自有测试组织及合成文档。检查组织、角色、工作流许可和 Advanced 授权。导入练习后保持未启用。完整 JSON 数据用于 Advanced Test → Custom Data。真实审批和集成验收需要专门的测试用户与目标。
+* 一个您自己的测试组织，里面有一张合成单据。绝不用客户单据练习。
+* 执行第 1 层之前，先确认您的角色、工作流许可和 Advanced 权限。
+* 导入的练习在您测试完成之前保持未启用状态。
+* 完整的 JSON 数据放在 **Advanced Test → Custom Data** 中。
+* 真实审批和集成需要各自的测试用户和测试目标；设计器里的测试不能替代它们。
 
-## 1. 认识产品与执行模型 <a id="level-1"></a>
+## 1. 认识产品与执行模型 <a href="#level-1" id="level-1"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/zh.mp4" %}
 
 [打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/zh.html)。
 
-**练习:** 说明组织、权限、When–And–Then，以及线性规则与 Advanced 图的区别。区分文档类型过滤、执行事件、保存和启用。
+**目标:** 说清是什么启动工作流，以及测试结果对真实运行能说明什么、不能说明什么。
 
-**完成标准:** 能够在搭建前说明何时会处理规则，以及哪些依据能区分模拟与实际文档运行。
+1. 检查组织、您的访问权限、工作流模块和 Advanced 权限。
+2. 用自己的话说清 When–And–Then，然后说明线性规则到哪里为止，而 Advanced 图如何改为沿着已连接的出口推进。
+3. 分清设计器里看起来相似的四个方面：单据类型过滤、执行事件、保存和启用。
 
-阅读并搭建: [我的工作流何时运行？](workflow-execution-model.md) · [更改状态而不重新启动 Workflow](masterclass/status-and-reentry.md).
+**完成标准:** 您能说出规则何时才会被考虑，以及哪类依据能把模拟与真实单据运行区分开。
 
-## 2. 构建第一条规则 <a id="level-2"></a>
+**延伸阅读:** [我的工作流什么时候运行？](workflow-execution-model.md) · [不重启工作流就改变状态](masterclass/status-and-reentry.md)
+
+## 2. 构建第一条规则 <a href="#level-2" id="level-2"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/zh.mp4" %}
 
 [打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/zh.html)。
 
-**练习:** 创建 When Invoice → And invoice_id = WF-TRAINING-001 → And total_amount > 1000 → Then wf_training_route = REVIEW，保持未启用。使用 999、1000 和 1000.01 的完整数据测试。这条线性规则暂不需要控制节点。
+**目标:** 把一条规则从设计器带到经过核对的结果，全程不碰真实单据。
 
-**完成标准:** 只有大于 1000 时到达 REVIEW；记录类型、运算符和出口，并另外处理输入缺失。
+1. 在 Advanced Builder 中搭建：When Invoice → And invoice\_id = WF-TRAINING-001 → And total\_amount > 1000 → Then wf\_training\_route = REVIEW。这种规模的线性规则不需要控制节点。
+2. 保存后到规则列表里确认它仍处于未启用状态，因为保存一条新规则可能已经把它启用了。Advanced Test 是独立的执行层面：它评估构建器里的图，而不是已启用的规则。
+3. 用 999、1000 和 1000.01 的完整数据运行 Advanced Test。逐个记录字段类型、运算符和选中的出口，再补一个金额完全缺失的用例。
 
-阅读并搭建: [高级案例：发票路由](advanced-workflow-case-study.md) · [工作流练习包](workflow-training-kit.md).
+**完成标准:** 只有 1000.01 会到达 REVIEW，缺失金额显示为错误而不是低于阈值的普通结果，并且结束时规则重新处于关闭状态。
 
-## 3. 字段、类型与边界 <a id="level-3"></a>
+**延伸阅读:** [Advanced 业务案例：发票路由](advanced-workflow-case-study.md) · [工作流练习包](workflow-training-kit.md)
+
+## 3. 字段、类型与边界 <a href="#level-3" id="level-3"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/zh.mp4" %}
 
 [打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/zh.html)。
 
-**练习:** 检查缺失、null、空文本、空格、false、0 和文本数字。分别以订单及文档为参考计算容差，比较一个和全部实际匹配行。
+**目标:** 在相信条件的结果之前，先弄清它到底比较了什么。
 
-**完成标准:** 根据值、类型、参考侧和现有数据解释真、假与错误；没有可比较行不能当作成功批准。
+1. 用缺失字段、`null`、空文本、空格、`false`、`0`、`"0"` 和 `"false"` 测试空值检查，并记录哪些被视为空。
+2. 把同一个 2%的相对容差算两次：一次以采购订单为参考（订单 100、单据 102.02），一次以单据为参考。
+3. 在订单卡片上切换 Any 和 All，数一数实际比较了多少行。
 
-阅读并搭建: [P1：选择 Field is、Docfield is 或 Compare two Fields](masterclass/field-conditions.md) · [P1：明确容差参考侧与采购订单比较方向](masterclass/tolerances-and-po.md).
+**完成标准:** 您能从值、类型、参考侧和现有数据解释真、假和错误。在订单卡片的版本 5 中，单据没有可比行属于数据错误，不是成功审批。
 
-## 4. 业务规则与审批 <a id="level-4"></a>
+**延伸阅读:** [Field is、Docfield is 与两个字段比较](masterclass/field-conditions.md) · [让容差和订单参考侧没有歧义](masterclass/tolerances-and-po.md)
+
+## 4. 业务规则与审批 <a href="#level-4" id="level-4"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/zh.mp4" %}
 
 [打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/zh.html)。
 
-**练习:** 配置两条不重叠的金额规则，追踪已保存的用户返回值直到分配。安排 A 的顺序值为 10、B 为 20，并设计拒绝与后备路径。
+**目标:** 通过决策表把发票送到正确的人，然后跑一条会等待第一位审核人的审批链。
 
-**完成标准:** 能区分责任人、任务、通知与真实批准。转交给 B 的验收必须依据已处理的 A 决定。
+**练习 1：带直接分配的决策表**
 
-阅读并搭建: [P1：从决策表追踪到文档分配](masterclass/decision-table-routing.md) · [P1：区分文档分配、任务与顺序审批](masterclass/assignment-task-sequential.md).
+1. 建一张决策表，两条规则不可能同时命中：审核人 A 到 1000，审核人 B 高于 1000，使用 `cost_center=4711` 和 `total_amount`。
+2. 在 **Decision Table has Returns** 版本 3 中设置 `store_data=wf_store_data`。用 **Assign document based on decision table** 和 `assignee_type=user` 分配单据，并使用您测试组织中的真实用户。
+3. 测试命中一条、没有命中、命中多条和用户 ID 无效四种情况，并把未命中和分配错误导向明确的兜底路径。在单据本身上接受这次分配。
 
-## 5. Advanced 控制流与子工作流 <a id="level-5"></a>
+**练习 2：不使用直接分配的连续审批**
+
+1. 用连续卡片另建一条独立规则：连续分配卡放在位置 10 给审核人 A，然后连续任务卡放在位置 20 给审核人 B。这次运行中不要加入直接分配，因为已核对的收尾逻辑在同一运行中已经直接分配过单据时，可能会跳过第一位连续接收人。
+2. 以 A 身份批准，确认 B 只有在 A 的决定被处理后才收到单据；再以 B 身份批准。
+3. 在一次新的运行中以 A 身份拒绝，确认没有发生导出，然后测试无法确定任何接收人时会发生什么。
+
+**完成标准:** 您能区分责任人、任务、通知和真实批准；A → 批准 → B → 批准按这个顺序发生；A 的拒绝阻止了导出；接收人缺失没有算作已完成批准。
+
+**延伸阅读:** [把决策表追踪到分配](masterclass/decision-table-routing.md) · [区分分配、任务和连续审批](masterclass/assignment-task-sequential.md)
+
+## 5. Advanced 控制流与子工作流 <a href="#level-5" id="level-5"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/zh.mp4" %}
 
 [打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/zh.html)。
 
-**练习:** 用两项实际执行的检查比较 ALL、ANY 和 OR，并检查未选择的分支。运行全部七个 v2 用例，使用自有未启用目标测试 Run Workflow。
+**目标:** 正确汇合并行路径，并把工作交给另一个工作流。
 
-**完成标准:** 能解释测试与调度器差异、源节点计数和错误传递。v2 不依赖停滞的 OR 即可完成；绿色子调用仍要核对目标。
+1. 用两个真正会被执行到的检查比较 ALL、ANY 和 OR：ALL 需要每个来源都有匹配出口，ANY 和 OR 只需要一个，而同一来源的绿色加橙色仍然只算一个来源。
+2. 看一个运行时没有走的分支，如 MERGE-04 案例：Advanced Test 仍会评估等待中的汇合，而正常运行一旦有前置永远不到达就跳过它。
+3. 跑完 v2 案例的七个用例（高于、低于、边界、刚好高于、缺失、无效数字、另一张发票）。然后用 Run Workflow 调用您自己的一个未启用工作流，并打开目标中的路径本身。
 
-阅读并搭建: [P0：正确连接 Wait ALL、Wait ANY 和 OR](masterclass/control-nodes.md) · [P0：理解 Run Workflow、目标条件和错误](masterclass/run-workflow.md) · [高级案例：发票路由](advanced-workflow-case-study.md).
+**完成标准:** 您能解释 MERGE-04 案例中第 2 步的测试与运行差异、来源如何计数以及错误会往哪里走。Run Workflow 调用显示绿色仍需在目标侧核对。这里的 v2 指案例图的第二个版本：每条路径的状态卡直接进入共同的收尾卡，没有等待中的 OR 节点。
 
-## 6. 计算、接口与导出 <a id="level-6"></a>
+**延伸阅读:** [正确连接 Wait ALL、Wait ANY 和 OR](masterclass/control-nodes.md) · [理解 Run Workflow、目标条件和错误](masterclass/run-workflow.md) · [Advanced 业务案例：发票路由](advanced-workflow-case-study.md)
+
+## 6. 计算、接口与导出 <a href="#level-6" id="level-6"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/zh.mp4" %}
 
 [打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/zh.html)。
 
-**练习:** 比较完整表格的计算前后结果，包含正则未命中和除零。明确接口真实回写契约，并使用自有测试配置设计审批后的导出。
+**目标:** 计算数值、从外部系统取回结果，并且只在真实批准之后导出。
 
-**完成标准:** 分别证明后续字段值、接收方收到和 ERP 已处理；不把模拟或导出请求记录为送达。
+1. 计算一列，并比较计算前后的整张表，其中包含正则不匹配的一行和除以零的一行。
+2. 写下与外部系统的回写契约：哪个单据字段接收结果、哪张卡片或扩展把它写进去，以及您之后如何核对保存的值。单有 HTTP 200 不算结果。
+3. 用您自己的导出配置规划批准后的导出，并记下您要在接收方核对什么。
 
-阅读并搭建: [P1：计算表格列并检查正则依赖](masterclass/table-calculations.md) · [P1：验证 API 调用与后续响应使用](masterclass/api-response-contract.md) · [P1：选择导出方式、待办检查与最终状态](masterclass/export-lifecycle.md).
+**完成标准:** 字段里的后续值、接收方收到以及 ERP 处理各自需要独立依据。模拟或排队的导出不算送达。
 
-## 7. 变更与专家运维 <a id="level-7"></a>
+**延伸阅读:** [计算表格并检查正则依赖](masterclass/table-calculations.md) · [检查 API 调用与响应的后续使用](masterclass/api-response-contract.md) · [导出变体、未完成任务和收尾状态](masterclass/export-lifecycle.md)
+
+## 7. 变更与专家运维 <a href="#level-7" id="level-7"></a>
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/zh.mp4" %}
 
 [打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/zh.html)。
 
-**练习:** 修改前保存工作流导出并记录卡片版本。复测正例、反例、错误、边界和第二次运行，将第一个错误关联到具体输入与配置。
+**目标:** 变更一个不是您搭建的工作流，并且能把这次变更撤回。
 
-**完成标准:** 能验收变更、恢复配置，并比较新文档运行及其效果；记录原因、修正和剩余限制。
+1. 导出工作流并记下卡片版本，然后再动手。
+2. 变更后重跑正例、反例、错误和边界用例，并额外重跑同一用例的第二次。
+3. 把第一个失败追溯到某一个输入和某一处配置，并把保存的导出留作回退路径。
 
-阅读并搭建: [系统诊断工作流问题](workflow-troubleshooting.md) · [理解并配置工作流卡片](card-reference-standard.md).
+**完成标准:** 您能验收变更、恢复已保存的配置，并用依据比较一次新的单据运行。记录原因、修正以及仍然存在的限制。
+
+**延伸阅读:** [系统地诊断工作流错误](workflow-troubleshooting.md) · [理解卡片并可靠地配置](card-reference-standard.md)
 
 ## 自测理解程度
 
 | 问题 | 答案 |
 | --- | --- |
-| 在 Field is v2 中，false 为空吗？ | 是；数字 0 和字符串 "false" 不为空。 |
-| 绿色 OR 测试能保证实际文档运行吗？ | 不能。测试与经检查的调度器对未到达前驱的处理不同。 |
-| Run Workflow 能调用未启用目标吗？ | 能，经检查的显式调用可以；仍须核对目标条件和结果。 |
-| HTTP 200 会自动提供 api.response.cost_center 吗？ | 不会。经检查的动作没有这种自动 JSON 输出契约。 |
-| 绿色测试能证明导出已经收到吗？ | 不能。文档运行、接收方收到和 ERP 处理需要分别证明。 |
+| Field is v2 中 `false` 算空吗？ | 算。数字 0 和文本 "false" 都不算空。 |
+| 绿色 OR 测试能保证单据运行吗？ | 不能。在已核对的 MERGE-04 案例中，测试会评估一个前置永远不到达时单据运行会跳过的汇合。 |
+| Run Workflow 能调用未启用的目标吗？ | 能在已核对的显式调用中。仍要核对目标条件和结果。 |
+| HTTP 200 会自动提供 api.response.cost\_center 吗？ | 不会。已核对的动作不提供这种自动 JSON 输出契约。 |
+| 绿色测试能证明导出被接收吗？ | 不能。单据运行、接收方收到和 ERP 处理需要分别提供依据。 |
 
-## 五篇配套指南
+## 记录您验收过的内容
 
-练习过程中依次使用：执行模型 → 可复现案例 → 练习包 → 诊断 → 卡片参考。这些是各阶段的工作材料，不是另外五项未经验证的任务。
+从[工作流练习包](workflow-training-kit.md)下载 `workflow-training-kit-v2.zip`，解压并打开 `acceptance-record-template.json`。这是一份空白记录，不是要导入的东西；同一个 ZIP 里还有各层级引用的数据、期望结果和已保存的测试响应。
 
-1. [我的工作流何时运行？](workflow-execution-model.md)
-2. [高级案例：发票路由](advanced-workflow-case-study.md)
-3. [工作流练习包](workflow-training-kit.md)
-4. [系统诊断工作流问题](workflow-troubleshooting.md)
-5. [理解并配置工作流卡片](card-reference-standard.md)
-
-## 完成记录
-
-使用练习包中的 acceptance-record-template.json，记录场景、配置修订、预期、观察与依据类型。区分 Dev 测试、隔离源码检查、实际文档运行、接收和 ERP 处理。未验证步骤必须明确保留为待验收。
+记录您测试了什么以及凭什么知道：场景、配置（工作流导出的哈希、卡片版本）、您的预期、您观察到的现象，以及您手上是哪一类依据。把 Advanced Test 中的测试、孤立的来源核对、真实单据运行、接收方收到和 ERP 处理分开，未测试的步骤保持为未完成。

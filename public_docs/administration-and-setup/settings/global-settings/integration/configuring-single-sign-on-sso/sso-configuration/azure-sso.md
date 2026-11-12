@@ -1,92 +1,29 @@
 ---
-description: Usar DocBits con tu inicio de sesión de Microsoft sin utilizar una contraseña (independiente)
+description: Inicia sesión en DocBits mediante Microsoft Entra ID con inicio de sesión único SAML.
 ---
 
-# SSO de Azure
+# SSO de Microsoft Entra
 
-### Crear SAML SSO en Azure AD
+Usa esta guía si tu organización quiere que los usuarios inicien sesión en DocBits mediante Microsoft Entra ID. Necesitas un administrador tanto en DocBits como en el inquilino de Microsoft Entra. Prueba con un único usuario asignado antes de cambiar el inicio de sesión para todo el mundo.
 
-Realiza los siguientes pasos para añadir SAML SSO en Azure AD:
+## 1. Obtén los datos del proveedor de servicios de DocBits
 
-*   En Azure, ve a tu consola de \`Azure Active Directory\`
+En DocBits, abre **Ajustes → Integración y SSO**. En **Configuración del proveedor de servicios SSO**, elige **Descargar metadatos** para obtener el XML de metadatos del proveedor de servicios. Contiene el ID de entidad, la URL del servicio de consumidor de aserciones (ACS) y la URL de cierre de sesión único que necesitas para la configuración de Entra. **Descargar certificado** proporciona el certificado de DocBits si tu proveedor de identidad lo solicita. Usa el archivo de tu propia organización y entorno; en la imagen aparecen direcciones de ejemplo inventadas en lugar de los valores reales.
 
-    ![Página de inicio del portal de Azure con Azure Active Directory en los favoritos de la navegación izquierda](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_1.png)
-* En el panel izquierdo, haz clic en \`Enterprise applications\`
+Los botones de copia junto a **ID de entidad**, **URL SSO** y **URL SLO** copian los valores mostrados. Antes de usarlos, compara cada dirección completa con el XML descargado. Si un valor difiere, usa el valor correspondiente de los metadatos e informa de la discrepancia. Conserva el esquema, el host y la ruta completos, incluido cualquier prefijo de ruta.
 
-![Navegación izquierda de Azure Active Directory con el grupo Administrar y la entrada Aplicaciones empresariales](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_2.png)
+<figure><img src="../../../../../../.gitbook/assets/azure-sso-settings-es-20261112.png" alt="Ajustes de Integración y SSO de DocBits en español con el ID de entidad, las URL SSO y SLO, la descarga de certificado y metadatos, el ID de inquilino, la carga de archivo y el botón Configurar"><figcaption><p>Ajustes SSO de DocBits en español con datos de ejemplo inventados: arriba revisas los valores del proveedor de servicios o descargas sus metadatos y su certificado; abajo seleccionas el XML del proveedor de identidad y lo configuras. La fila «Archivo existente» muestra un archivo de ejemplo ya cargado.</p></figcaption></figure>
 
-* Haz clic en \`+ New application
+## 2. Crea la aplicación de Microsoft Entra
 
-<figure><img src="../../../../../../.gitbook/assets/image (213).png" alt="Página Aplicaciones empresariales de Azure Active Directory con la lista Todas las aplicaciones y el botón Nueva aplicación"><figcaption></figcaption></figure>
+En el [centro de administración de Microsoft Entra](https://entra.microsoft.com/) crea una **aplicación empresarial** con **Nueva aplicación → Crear tu propia aplicación** y la opción que no procede de la galería. Abre **Inicio de sesión único → SAML**. En **Configuración básica de SAML**, usa el ID de entidad de los metadatos de DocBits (`EntityDescriptor` → `entityID`) como **Identificador (ID de entidad)** de Microsoft. Usa la dirección ACS (`AssertionConsumerService` → `Location`) como **URL de respuesta (URL de ACS)**. Define la URL de cierre de sesión desde `SingleLogoutService` → `Location` si tu configuración lo requiere. Consulta con tu administrador de identidad cualquier requisito adicional de URL de inicio de sesión y de notificaciones.
 
-* Haz clic en \`+ Create your own application\`
+Asigna un usuario o un grupo de prueba en **Usuarios y grupos**. La [guía actual de configuración de SAML y asignación de usuarios](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal-setup-sso) de Microsoft muestra los pasos en el portal de Entra y explica estos campos. Sus imágenes del portal las mantiene Microsoft; las capturas antiguas de Azure AD se han retirado de esta página.
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (215).png" alt="Diálogo Explorar la galería de Azure AD con los botones Crear su propia aplicación y Solicitar nueva aplicación de la galería y el campo de búsqueda Buscar aplicación"><figcaption></figcaption></figure></div>
+## 3. Importa los metadatos de Microsoft en DocBits
 
-* Introduce un nombre para tu aplicación. Mantén el resto de las selecciones predeterminadas.
+En la configuración SAML de la aplicación de Entra, descarga el **XML de metadatos de federación**. Microsoft documenta este archivo en su [guía de metadatos de federación](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal-setup-sso-rpsts#download-metadata-and-certificates-from-microsoft-entra). Vuelve a **Ajustes → Integración y SSO → Configuración del proveedor de servicios de identidad** en DocBits. Introduce el **ID de inquilino** de Microsoft. En la fila **Subir archivo**, usa **Importar** para seleccionar el archivo XML de metadatos de federación y, después, selecciona **Configurar** para cargarlo y guardarlo. Selecciona el archivo XML antes de elegir **Configurar**; el ID de inquilino por sí solo no es suficiente. Mantén un inicio de sesión de administrador operativo mientras pruebas el SSO.
 
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_5.png" alt="Diálogo Crear su propia aplicación con el nombre MyApplication y la opción seleccionada Integrar cualquier otra aplicación que no encuentre en la galería"><figcaption></figcaption></figure>
+## 4. Prueba el inicio de sesión
 
-* Haz clic en \`Create\`
-
-### Asignar usuarios a la configuración de SSO
-
-A continuación, asigna usuarios o grupos a la configuración de SSO.
-
-**Importante**: Ya deberías haber creado usuarios y grupos en Azure AD. Si no tienes ningún usuario o grupo, créalos ahora antes de continuar.
-
-* En \`Getting Started\`, haz clic en \`Assign Users and Groups\`.
-* Haz clic en \`+ Add user\`
-
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_6.png" alt="Página Usuarios y grupos de la aplicación MyApplication con los botones Agregar usuario, Editar, Quitar y Actualizar y el mensaje No se encontraron asignaciones de aplicaciones" width="563"><figcaption></figcaption></figure>
-
-* Selecciona los usuarios y grupos que deseas asignar a esta configuración de SSO. Estos usuarios podrán autenticarse en DocBits (mediante SSO).
-
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_7.png" alt="Panel de selección de usuarios con varios usuarios listados y la sección Seleccionados"><figcaption></figcaption></figure>
-
-* Haz clic en \`Select\`
-* Cuando estés satisfecho con tu selección, haz clic en \`Assign\`
-
-![Diálogo Agregar asignación del inquilino chimdustries con el mensaje 2 usuarios seleccionados y 2 grupos seleccionados](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_8.png)
-
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (216) (1).png" alt="Botón Asignar resaltado con un borde verde en el diálogo de asignación de Azure Active Directory"><figcaption></figcaption></figure></div>
-
-* Ve a la lista de la vista \`Groups\` y busca los grupos asignados.
-
-### Configurar SSO en Azure
-
-A continuación, debes finalizar la configuración del inicio de sesión único en Azure.\\
-
-* En el panel izquierdo, haz clic en \`Single sign-on\`
-
-![Navegación izquierda de la aplicación empresarial MyApplication con la entrada Inicio de sesión único](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_10.png)
-
-* Haz clic en \`SAML\`
-
-![Página Inicio de sesión único con el icono SAML y el texto Autenticación segura y fiable para aplicaciones mediante el protocolo SAML](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_11.png)
-
-* Haz clic en \`Upload metadata file\`
-
-![Página Inicio de sesión basado en SAML con los enlaces Cargar archivo de metadatos y Configurar el inicio de sesión único](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_12.png)
-
-* Carga el **metadata.xml** de DocBits, que puedes encontrar en el menú Configuración **Integración**, en **SSO Service Provider Settings** de tu cuenta de DocBits.
-
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_Metadata-1024x216.png" alt="Configuración del proveedor de servicios SSO en DocBits con el Entity ID, la SLO URI y la SSO URI y los botones Descargar certificado y Descargar metadatos"><figcaption></figcaption></figure>
-
-* Edita la \`Basic SAML Configuration\`
-
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_13.png" alt="Página Configurar el inicio de sesión único con SAML con la sección Configuración básica de SAML y los campos Identificador Entity ID, URL de respuesta, URL de inicio de sesión, Estado de retransmisión y URL de cierre de sesión"><figcaption></figcaption></figure>
-
-* Comprueba si los campos \`Entity ID\`, \`ACS URL\`, \`Sign on URL\` y \`Logout URL\` están rellenados correctamente.
-
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_13.1.png" alt="Configuración básica de SAML en Azure con los textos descriptivos, el Identificador Entity ID con la URL de metadatos SAML del inquilino y la URL de respuesta como Assertion Consumer Service URL"><figcaption></figcaption></figure>
-
-* Descarga el **Federation Metadata XML** recién generado.
-
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_14.png" alt="Sección Certificado de firma SAML con el estado Activo, la huella digital, la fecha de expiración, el correo de notificación y los enlaces de descarga Certificado sin formato y XML de metadatos de federación"><figcaption></figcaption></figure>
-
-* Carga el FederationMetadata.xml en **Identity Service Provider Settings** de tu cuenta de DocBits, que puedes encontrar en el menú Configuración **Integración**.
-
-\\
-
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_15-1024x204.png" alt="Configuración del proveedor de servicios de identidad en DocBits con el Tenant ID, los botones Cargar archivo e Importar y la entrada del archivo existente"><figcaption></figcaption></figure>
+Pide al usuario de prueba asignado que inicie una sesión nueva del navegador y entre con la cuenta de Microsoft configurada. Comprueba que el usuario llega a la organización de DocBits prevista y tiene el acceso esperado. Si el inicio de sesión falla, compara el ID de entidad, la URL de ACS, el inquilino, las asignaciones, las notificaciones y los metadatos en ambos sistemas antes de cambiar la configuración.

@@ -19,7 +19,7 @@ Okno **Nowy** zawiera następujące pola:
 | **Nazwa** | Nazwa, którą rozpoznasz na liście powiadomień. Używaj liter, cyfr i spacji. |
 | **Typ dokumentu** | Typ dokumentu, którego dotyczy ta reguła. Wybierz go przed wyborem szablonu wiadomości e-mail. |
 | **Podorganizacja** | Podorganizacja, której dotyczy ta reguła. |
-| **Wybierz szablon wiadomości e-mail** | Szablon dla wybranego typu dokumentu. Wybór jest niedostępny, dopóki pasujące szablony się nie wczytają. |
+| **Wybierz szablon wiadomości e-mail** | Szablon dla wybranego typu dokumentu. Wybór jest niedostępny, dopóki lista pasujących szablonów jest pusta. |
 | **Status** | Status dokumentu, który uruchamia powiadomienie. |
 | **Priorytet** | Wartość priorytetu dla tej reguły powiadomienia. |
 | **Jednostka czasu** i **Opóźnienie** | Jak długo czekać przed wysłaniem. Jednostka **PROTOKÓŁ** oznacza minuty; opóźnienie w minutach musi wynosić co najmniej 5 i być liczbą całkowitą. |
@@ -30,7 +30,7 @@ Okno **Nowy** zawiera następujące pola:
 
 <figure><img src="../../../../.gitbook/assets/configuring-notifications-create-pl-20261112.png" alt="Okno Nowy z pustymi polami Nazwa, Typ dokumentu, Podorganizacja, Wybierz szablon wiadomości e-mail, Status, Priorytet, Jednostka czasu, Opóźnienie i Adres e-mail oraz przyciskami Anulować i Zapisz"><figcaption><p>Wybierz typ dokumentu i jego szablon wiadomości e-mail, a następnie określ wyzwalacz i odbiorcę.</p></figcaption></figure>
 
-Gdy opcja **Wyślij e-mail do przypisanego użytkownika/grupy** jest zaznaczona, stałe pole **Adres e-mail** znika. Przełącznik zmienia wtedy etykietę z **Nie powtarzaj** na **Powtarzać**.
+Gdy opcja **Wyślij e-mail do przypisanego użytkownika/grupy** jest zaznaczona, stałe pole **Adres e-mail** znika. Po włączeniu przełącznika jego etykieta zmienia się z **Nie powtarzaj** na **Powtarzać**.
 
 <figure><img src="../../../../.gitbook/assets/configuring-notifications-recipient-repeat-pl-20261112.png" alt="Formularz powiadomienia z włączonym przełącznikiem Powtarzać i zaznaczoną opcją Wyślij e-mail do przypisanego użytkownika/grupy; wymyślone dane przykładowe: nazwa Faktura zatwierdzona, typ Faktura, szablon Docs Demo Invoice Notification, priorytet Średni, jednostka czasu PROTOKÓŁ, opóźnienie 15"><figcaption><p>Użyj opcji przypisanego odbiorcy, gdy wiadomość ma otrzymać osoba odpowiedzialna za dokument. Widoczne wartości to wymyślone dane przykładowe.</p></figcaption></figure>
 

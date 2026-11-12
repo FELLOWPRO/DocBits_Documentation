@@ -99,9 +99,9 @@ Dans la liste des workflows, j’active la règle testée et vérifie son interr
 
 ## Comment y accéder
 
-Ouvrez **Tableau de bord des flux → Liste des flux**, puis cliquez sur **Ajouter un flux de travail** pour créer un nouveau workflow Standard, ou cliquez sur un workflow existant pour le modifier.
+Ouvrez l’onglet **Tableau de bord**, puis **Liste des flux de travail**, et cliquez sur **Nouveau flux de travail** pour créer un workflow Standard. Cliquez sur un workflow existant de la liste pour le modifier.
 
-<figure><img src="../../.gitbook/assets/prior-u033-fr.png" alt="Liste des workflows et commandes d’import."><figcaption><p>Liste des workflows et commandes d’import.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/standard-workflow-builder-workflow-list-fr-20261112.png" alt="Liste des flux de travail avec la barre d’outils : Nouveau flux de travail, Modèles et Processus d’importation."><figcaption><p>La liste des flux de travail et sa barre d’outils — Nouveau flux de travail, Modèles et Processus d’importation.</p></figcaption></figure>
 
 ## Le modèle When / And / Then
 
@@ -124,6 +124,18 @@ Cliquez sur **Ajouter une carte** dans un groupe pour ouvrir la bibliothèque de
 <figure><img src="../../.gitbook/assets/workflow-po-condition-library-current-fr.png" alt="Carte de la catégorie « Comparaison des bons de commande » affichée dans la bibliothèque, avant sa sélection et sa configuration. Les paramètres de comparaison restent à renseigner."><figcaption><p>Carte de la catégorie « Comparaison des bons de commande » affichée dans la bibliothèque, avant sa sélection et sa configuration. Les paramètres de comparaison restent à renseigner.</p></figcaption></figure>
 
 Enregistrez avec **Enregistrer le flux de travail**, ou enregistrez la disposition comme modèle réutilisable avec **Enregistrer le modèle**.
+
+## Modèles de flux de travail <a id="modeles-de-flux-de-travail"></a>
+
+Le bouton **Modèles** de la barre d’outils des workflows ouvre la bibliothèque des **modèles de flux de travail**. Vous y gérez les modèles enregistrés dans votre organisation :
+
+<figure><img src="../../.gitbook/assets/standard-workflow-builder-templates-dialog-fr-20261112.png" alt="Boîte de dialogue « Modèles de flux de travail » : champ de recherche, option Afficher les modèles par défaut activée, colonnes Nom, Modifié Par, Modifié Le et Actions, avec trois modèles par défaut et deux modèles enregistrés."><figcaption><p>La boîte de dialogue Modèles de flux de travail — les modèles par défaut figurent dans la liste à côté des modèles enregistrés par votre organisation.</p></figcaption></figure>
+
+* Chaque ligne indique le **Nom** du modèle, qui l’a **Modifié Par** et quand il a été **Modifié Le**.
+* Activez **Afficher les modèles par défaut** pour afficher en plus les modèles fournis par DocBits.
+* Le menu **Actions** de chaque ligne propose **Duplicata** pour créer une copie du modèle et **Supprimer** pour retirer un modèle enregistré. Les modèles par défaut ne peuvent pas être supprimés.
+* Cliquez sur une ligne pour ouvrir le modèle dans le **Concepteur De Modèles**. Il utilise le même canevas que le concepteur Flux standard : **Quand....**, **Et....** et **Dans ce cas....**.
+* Adaptez les cartes dans le concepteur, puis enregistrez avec **Enregistrer le modèle**. Pour livrer le résultat comme nouveau workflow, utilisez **Enregistrer le flux de travail**.
 
 ## Étapes suivantes
 

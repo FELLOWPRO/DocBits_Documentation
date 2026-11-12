@@ -31,7 +31,19 @@ XML jest poprawny, ale brakuje wymaganego pola. Na przykład nie można zidentyf
 
 Karta podaje warstwę **L3 · Business Rules** i kod `BR-CO-26`. Raport wymienia wszystkie wyniki faktury, zobacz [Raport walidacyjny](validation-report.md).
 
-## Przyciski pod kartą
+## Next step i przyciski
+
+Dla nieprawidłowej e-faktury na początku strony stoi **Next step** z akcją, która pomaga w tym przypadku:
+
+| Akcja | Co robi |
+| --- | --- |
+| **Reject** | Odrzuca dokument. Okno podaje nazwę pliku, dostawcę i numer faktury, informuje, że dokument otrzyma status **Rejected** z notatką w historii i że dostawca nie zostanie powiadomiony, oraz wyjaśnia, jak cofnąć odrzucenie. Prosi o powód i potwierdza przyciskiem **Reject now**. Jeśli coś się nie uda, komunikat pojawia się w oknie i możesz spróbować ponownie. |
+| **Download invoice XML** | Pobiera plik w takiej postaci, w jakiej został odebrany, na przykład aby sprawdzić go poza DocBits lub odesłać dostawcy. |
+| **Print report** | Drukuje [raport walidacyjny](validation-report.md). |
+
+Karta podaje też nazwę kontroli zrozumiałymi słowami, z kodem reguły jako małym odniesieniem.
+
+**Restart Processing** uruchamia przetwarzanie dokumentu ponownie, na przykład po zmianie ustawienia; kontrola używa bieżących ustawień. Znajduje się pod polem Next step, ponieważ ponowne uruchomienie niezmienionego pliku kończy się tak samo. Pozostałe przyciski stoją obok:
 
 | Przycisk | Co robi |
 | --- | --- |
@@ -41,6 +53,8 @@ Karta podaje warstwę **L3 · Business Rules** i kod `BR-CO-26`. Raport wymienia
 | **Create ticket** | Otwiera zgłoszenie do wsparcia ze szczegółami błędu. |
 
 Wybierz **Show technical details** na karcie, aby zobaczyć surowe informacje techniczne.
+
+Podczas ładowania powodu strona pokazuje symbol zastępczy zamiast na wpół zapisanej karty. Jeśli powodu nie można wczytać, strona proponuje wczytanie go ponownie, a krok o nieznanej nazwie jest tak oznaczony zamiast pokazywać puste pole. Na wąskim ekranie XML i wyjaśnienie układają się jeden pod drugim zamiast obok siebie.
 
 ## Co zrobić dalej
 

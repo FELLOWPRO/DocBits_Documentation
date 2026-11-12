@@ -32,6 +32,14 @@ Administratorzy znajdą **Consulting report** na dole karty. Kliknij **Create re
 
 Wartości efektu są **szacunkami**. Jeśli raport zwraca _forbidden_, Twoja rola na to nie pozwala.
 
+## Język wyjaśnień
+
+DocBits prosi o wyjaśnienia w języku, którego używasz w DocBits. Jeśli usługa nie może odpowiedzieć w tym języku, wyjaśnienia są pisane po angielsku, a panel pokazuje nad propozycjami tę linię:
+
+> Proposal explanations are not available in your selected language. English is shown.
+
+Linia dotyczy tylko sformułowania. Preview, Apply, Measure i Undo działają tak samo.
+
 Dopasowane wywołania narzędzi i klasyfikację działań człowieka znajdziesz w [Touchless z MCP](touchless-mcp.md).
 
 ## Powiązane strony

@@ -61,6 +61,21 @@ Każdy wynik to jeden wiersz:
 
 DocBits ma teksty prostym językiem dla najczęstszych reguł. Dla reguły bez takiego tekstu raport pokazuje techniczny komunikat walidatora.
 
+## Praca z długim raportem
+
+Faktura może naruszać wiele reguł jednocześnie. Raport trzyma werdykt i liczniki w stałym nagłówku, podczas gdy ustalenia przewijają się, dzięki czemu zawsze widzisz, ile warta jest cała faktura.
+
+* **Filtruj według poziomu.** Przyciski filtra nad ustaleniami zawężają listę do błędów, ostrzeżeń lub komunikatów informacyjnych. Wiersze **Result per level** również działają jak filtr: wybierz poziom, aby zobaczyć tylko jego ustalenia.
+* **Szukaj.** Pole wyszukiwania filtruje otwartą listę po tekście, na przykład po kodzie reguły, nazwie pola lub słowie z komunikatu.
+* **Rozwijaj i zwijaj.** Ustalenia otwierają się same, gdy są błędami lub gdy raport ma najwyżej trzy wiersze. Dla całej listy służą akcje rozwijania i zwijania; każdy wiersz otwiera się także osobno.
+* **Kopiuj kod lub XPath.** Ustalenia mają akcję kopiowania kodu reguły i XPath błędnego elementu, na przykład do wiadomości do administratora.
+* **Otwieraj szczegóły, gdy ich potrzebujesz.** Szczegóły dokumentu są początkowo zwinięte. Szczegóły techniczne, takie jak numer kontroli i XPath, pozostają w ustaleniu, a sam wiersz pokazuje zrozumiałą nazwę kontroli i kod reguły jako odniesienie.
+* **Wróć na swoje miejsce.** Gdy wybierzesz **Show in XML** i otworzysz raport ponownie, otwarte wiersze, filtr i pozycja przewijania pozostają takie, jak je zostawiłeś.
+* **Pobierz lub wydrukuj.** Akcja **Download** w stopce raportu oferuje drukowanie i plik PDF oraz pliki HTML i XML raportu. Nazwa pliku, data eksportu i numer strony pojawiają się na pliku PDF.
+* **Odrzuć z raportu.** Akcja odrzucenia znajduje się po lewej stronie stopki, oddzielona od akcji pobierania, aby nie odrzucić faktury w trakcie szukania pliku PDF.
+
+Na wąskim ekranie, na przykład w telefonie, każde ustalenie staje się kartą zamiast wiersza.
+
 ## Dalej
 
 * [Następny krok i odrzucenie dokumentu](validation-next-step-and-reject.md): co zrobić po przeczytaniu raportu.

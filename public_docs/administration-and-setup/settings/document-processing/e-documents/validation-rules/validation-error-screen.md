@@ -31,7 +31,19 @@ L'XML è corretto, ma manca un campo obbligatorio. Ad esempio, il venditore non 
 
 La scheda indica il livello **L3 · Business Rules** e il codice `BR-CO-26`. Il rapporto elenca tutti gli esiti della fattura, vedi [Rapporto di convalida](validation-report.md).
 
-## I pulsanti sotto la scheda
+## Il riquadro Next step e i pulsanti
+
+Per una fattura elettronica non valida la pagina inizia con un riquadro **Next step**. Contiene l'azione che aiuta in questo caso:
+
+| Azione | Cosa fa |
+| --- | --- |
+| **Reject** | Rifiuta il documento. La finestra indica il file, il fornitore e il numero di fattura, ti informa che il documento riceve lo stato **Rejected** con una nota nella sua cronologia e che il fornitore non viene avvisato, e spiega come annullare il rifiuto. Chiede un motivo e conferma con **Reject now**. Se qualcosa fallisce, il messaggio compare nella finestra e puoi riprovare. |
+| **Download invoice XML** | Scarica il file così come è stato ricevuto, ad esempio per verificarlo fuori da DocBits o per restituirlo al fornitore. |
+| **Print report** | Stampa il [rapporto di convalida](validation-report.md). |
+
+La scheda nomina inoltre il controllo in parole comprensibili, con il codice della regola come piccolo riferimento.
+
+**Restart Processing** esegue di nuovo l'elaborazione del documento, ad esempio dopo aver modificato un'impostazione; il controllo usa le impostazioni attuali. Si trova sotto il riquadro Next step perché un riavvio di un file invariato fallisce allo stesso modo. Gli altri pulsanti restano accanto:
 
 | Pulsante | Cosa fa |
 | --- | --- |
@@ -41,6 +53,8 @@ La scheda indica il livello **L3 · Business Rules** e il codice `BR-CO-26`. Il 
 | **Create ticket** | Apre un ticket di supporto con i dettagli dell'errore. |
 
 Seleziona **Show technical details** sulla scheda per le informazioni tecniche grezze.
+
+Mentre il motivo si carica, la pagina mostra un segnaposto invece di una scheda scritta a metà. Se il motivo non può essere caricato, la pagina propone di ricaricarlo, e un passo il cui nome è sconosciuto viene contrassegnato come tale invece di mostrare un campo vuoto. Su uno schermo stretto XML e spiegazione sono impilati invece di stare fianco a fianco.
 
 ## Cosa fare dopo
 

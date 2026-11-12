@@ -2,6 +2,14 @@
 
 <figure><img src="../../.gitbook/assets/docnet-agents-infographic-en.png" alt="AI Workforce Agents Infographic"><figcaption><p>DocBits Multi-Agent System for Autonomous Document Processing</p></figcaption></figure>
 
+## Video: What is AI Workforce?
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-workforce-overview/v2/en.mp4" %}
+
+_2:15 · English · Why rules alone are not enough, and how your AI team handles the cases they miss._
+
+[Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-workforce-overview/v2/en.vtt) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-workforce-overview/v2/en.mp4)
+
 ## Overview
 
 **AI Workforce** is the orchestration layer inside DocBits that turns inbound work into coordinated AI agents. Instead of a person hand-walking every step, it takes a unit of incoming work — an email, a chat message in Microsoft Teams or Discord, a manual action in the UI, or an API call — and drives it to completion: classifying the document, extracting and validating fields, matching against purchase orders and master data, and exporting to the ERP, with humans in the loop where it matters.

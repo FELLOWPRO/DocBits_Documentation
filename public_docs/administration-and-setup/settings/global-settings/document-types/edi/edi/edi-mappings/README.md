@@ -4,7 +4,7 @@ As páginas de mapeamentos EDI mostram como os campos do DocBits se relacionam c
 
 Para encontrar a hierarquia de mapeamentos na aplicação atual:
 
-1. Abra **Configurações → Tipos de documento** e localize o tipo de documento que utiliza para o documento eletrónico, por exemplo **Fatura**. Os botões do cartão e as ligações no rodapé estão explicados em [Tipos de documento](../../../README.md).
+1. Abra **Configurações → Tipos de documentos** e localize o tipo de documento que utiliza para o documento eletrónico, por exemplo **Fatura**. Os botões do cartão e as ligações no rodapé estão explicados em [Tipos de documentos](../../../README.md).
 2. Selecione **E-Doc** no cartão desse tipo de documento. A vista seguinte agrupa as partes de mapeamento disponíveis por formato de documento eletrónico.
 3. Localize **EDI** na lista de formatos e expanda o grupo. A hierarquia apresentada contém [**STRUCTURE DESCRIPTOR**](../edi-structure-descriptor-file-guide/README.md), [**TRANSFORMATION**](../edi-transformation-file-guide.md), [**PREVIEW**](../edi-preview-file-guide.md) e [**EXTRACTION PATHS**](../edi-extraction-paths-file-guide.md); cada ligação abre o guia dessa parte. As colunas mostram, para cada parte, o nome, o Status, o Tipo, a Versão e a data da última modificação (**Última modificação em**).
 

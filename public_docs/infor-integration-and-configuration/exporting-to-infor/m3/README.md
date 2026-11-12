@@ -23,7 +23,7 @@ Cette page décrit le flux Infor ION et la configuration d’exportation dans Do
 
 5. Cliquez sur **Save** pour finaliser la configuration.
 
-## Étape 2 : Télécharger les mappages
+## Étape 2 : Importer les mappages
 
 {% file src="../../../.gitbook/assets/CaptureDocument_to_ProcessSupplierInvoice.xml" %}
 

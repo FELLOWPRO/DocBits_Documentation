@@ -103,6 +103,8 @@ Ouvrez l’onglet **Tableau de bord**, puis **Liste des flux de travail**, et cl
 
 <figure><img src="../../.gitbook/assets/standard-workflow-builder-workflow-list-fr-20261112.png" alt="Liste des flux de travail avec la barre d’outils : Nouveau flux de travail, Modèles et Processus d’importation."><figcaption><p>La liste des flux de travail et sa barre d’outils — Nouveau flux de travail, Modèles et Processus d’importation.</p></figcaption></figure>
 
+Dans la liste, l’interrupteur de chaque ligne active ou désactive le workflow ; la colonne **Ordre D'exécution Du Flux De Travail** fixe son ordre d’exécution (voir [Quand mon workflow s’exécute-t-il ?](workflow-execution-model.md)). **Processus d’importation**, dans la même barre d’outils, importe un workflow à partir d’un fichier JSON (voir [Tableau de bord des flux](workflow-dashboard.md)).
+
 ## Le modèle When / And / Then
 
 Les trois vues partielles suivantes montrent un workflow Standard encore vierge et non enregistré. Elles illustrent la structure de l’éditeur, avant l’ajout et la configuration des cartes.

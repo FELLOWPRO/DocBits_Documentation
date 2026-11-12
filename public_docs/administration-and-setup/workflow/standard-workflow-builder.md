@@ -1,6 +1,6 @@
 # Standaardworkflow
 
-De **Standaardworkflow** builder is de lineaire, op kaarten gebaseerde editor voor het automatiseren van documentverwerking. Een workflow bestaat uit drie groepen kaarten — **Wanneer** (de trigger), **En** (aanvullende voorwaarden) en **Dan** (de acties die worden uitgevoerd). Wanneer een document voldoet aan de When/And-voorwaarden, worden de Then-acties automatisch uitgevoerd.
+De **Standaardworkflow** builder is de lineaire, op kaarten gebaseerde editor voor het automatiseren van documentverwerking. Een workflow bestaat uit drie groepen kaarten — **Wanneer** (de trigger), **En** (aanvullende voorwaarden) en **Dan** (de acties die worden uitgevoerd). Wanneer een document voldoet aan de Wanneer/En-voorwaarden, worden de Dan-acties automatisch uitgevoerd.
 
 ## Een standaard workflow maken en testen <a id="standard-workflow-tutorial"></a>
 
@@ -99,9 +99,9 @@ In de workflowlijst schakel ik de geteste regel in en controleer de schakelaar. 
 
 ## Toegang krijgen
 
-Open **Workflowdashboard → Workflowlijst** en klik vervolgens op **Workflow toevoegen** om een nieuwe Standard-workflow aan te maken, of klik op een bestaande workflow om deze te bewerken.
+Open **Workflow-Dashboard → Workflowlijst** en klik vervolgens op **Nieuwe workflow** om een nieuwe standaardworkflow aan te maken, of klik op een bestaande workflow om deze te bewerken.
 
-<figure><img src="../../.gitbook/assets/prior-u033-nl.png" alt="Workflowlijst en importacties."><figcaption><p>Workflowlijst en importacties.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-list-toolbar-nl-20261112.png" alt="Workflowlijst met de werkbalkknoppen Nieuwe workflow, Sjablonen en Workflow importeren."><figcaption><p>De workflowlijst en de knoppen in de werkbalk.</p></figcaption></figure>
 
 ## Het When / And / Then-model
 
@@ -117,7 +117,19 @@ Klik in een willekeurige groep op **Kaart toevoegen** om de kaartbibliotheek te 
 
 <figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-bibliotheek gegroepeerd per categorie"><figcaption><p>De <strong>Add Card</strong>-bibliotheek — voorwaardekaarten, vergelijkingskaarten, actiekaarten en meer, gegroepeerd per categorie.</p></figcaption></figure>
 
-Sla op met **Workflow opslaan**, of sla de lay-out op als herbruikbare template met **Sjabloon opslaan**.
+Sla op met **Workflow opslaan**, of sla de lay-out op als herbruikbaar sjabloon met **Sjabloon opslaan**.
+
+## Workflowsjablonen
+
+Met de knop **Sjablonen** in de werkbalk van de workflowlijst opent u de bibliotheek **Workflowsjablonen**. Daar beheert u de sjablonen die in uw organisatie zijn opgeslagen:
+
+<figure><img src="../../.gitbook/assets/workflow-templates-dialog-nl-20261112.png" alt="Venster Workflowsjablonen met de kolommen Naam, Bijgewerkt Door, Laatst Gewijzigd Op en Acties, de optie Standaard sjablonen weergeven ingeschakeld en de ingebouwde standaardsjablonen in de lijst."><figcaption><p>Het venster <strong>Workflowsjablonen</strong> — de opgeslagen sjablonen en, met <strong>Standaard sjablonen weergeven</strong> ingeschakeld, de ingebouwde standaardsjablonen.</p></figcaption></figure>
+
+- De lijst toont per sjabloon de **Naam**, **Bijgewerkt Door** en **Laatst Gewijzigd Op**.
+- Schakel **Standaard sjablonen weergeven** in om de ingebouwde standaardsjablonen in de lijst op te nemen.
+- Kies in het menu **Acties** van een rij **Duplicaat** om een sjabloon te kopiëren, of **Verwijderen** om een opgeslagen sjabloon te verwijderen — de ingebouwde standaardsjablonen kunt u niet verwijderen.
+- Klik op een rij om het sjabloon in de sjabloonontwerper te openen. Die gebruikt hetzelfde Wanneer/En/Dan-canvas als de Standaardworkflow-builder. Sla uw wijzigingen op met **Sjabloon opslaan**.
+- Wilt u een nieuwe workflow op basis van een sjabloon maken, open dan het sjabloon in de ontwerper, pas de kaarten aan en sla het op als workflow met **Workflow opslaan**.
 
 ## Volgende stappen
 

@@ -8,7 +8,7 @@ Geben Sie eine Dokument-ID in **Document ID** ein oder öffnen Sie ein Beispield
 
 Die Kopfzeile zeigt die Datei, ihren Status (zum Beispiel **In progress**), den Lauf, den Sie gerade ansehen, und dessen ersten Blocker sowie eine Schaltfläche **Document** mit der Dokument-ID.
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-de.png" alt="Dev NOVA: Verarbeitungspfad und aufgezeichnete Werte des ersten Testlaufs"><figcaption><p>Neue Aufnahme aus Dev NOVA 11.0.3 vom 4. November 2026. Die fiktive Testrechnung stoppt bei der Feldvalidierung. Klassifizierung, Lieferantensuche, Kopfdatenextraktion und Tabellenextraktion enthalten tatsächlich aufgezeichnete Werte; die Karten zeigen Dokument und Laufhistorie. Dies ist die laufende Oberfläche des Produkts.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-de.png" alt="Dev NOVA: processing path and recorded points from the first test run"><figcaption><p>Neue Aufnahme aus Dev NOVA 11.0.3 vom 4. November 2026. Die fiktive Testrechnung stoppt bei der Feldvalidierung. Klassifizierung, Lieferantensuche, Kopfdatenextraktion und Tabellenextraktion enthalten tatsächlich aufgezeichnete Werte; die Karten zeigen Dokument und Laufhistorie. Dies ist die laufende Oberfläche des Produkts.</p></figcaption></figure>
 
 Der **Pipeline Path** zeigt 14 Schritte: Intake, Classification, E-Document Validation, Supplier Identification, Text Recognition, Header Extraction, Table Extraction, Field Validation, PO Lookup, PO Line Match, Approval, Workflow Routing, Export, ERP Acknowledgement. Jeder Schritt trägt genau einen Zustand:
 
@@ -33,7 +33,7 @@ Das **Stage Log** unter dem Pfad listet dieselben Schritte mit dem auf, was jede
 * Ein Wert, den kein Schritt aufgezeichnet hat, erscheint als **Not recorded**, nie als erfundener Wert. Werte sind Zahlen und feste Begriffe, nie Dokumenttext.
 * **Show Raw Diagnostics** blendet die Rohdaten ein, wenn der Support danach fragt.
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-de.png" alt="Dev NOVA: Stage Log mit Konfidenz, Extraktionswerten und blockierter Feldvalidierung"><figcaption><p>Echter erster Lauf: 100 % Klassifizierungskonfidenz, 0 Lieferantenkandidaten, 1 Tabellenzeile und 7 Mapping-Lücken. Passed bedeutet, dass ein Schritt ausgeführt wurde; es belegt weder eine Lieferantenzuordnung noch die Richtigkeit jedes Rechnungswertes. Die Feldvalidierung meldet ein fehlendes Pflichtfeld.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-de.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Echter erster Lauf: 100 % Klassifizierungskonfidenz, 0 Lieferantenkandidaten, 1 Tabellenzeile und 7 Mapping-Lücken. Passed bedeutet, dass ein Schritt ausgeführt wurde; es belegt weder eine Lieferantenzuordnung noch die Richtigkeit jedes Rechnungswertes. Die Feldvalidierung meldet ein fehlendes Pflichtfeld.</p></figcaption></figure>
 
 ### Läufe und Änderungen
 
@@ -43,15 +43,15 @@ Die Karte **Document** listet Dokumenttyp, Lieferant, Rechnungsnummer, Bestellun
 
 ### Lieferanten- und Tabellendetails lesen
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-de.png" alt="Dev NOVA: Lieferantendetails trennen gefundene Kennungen, Stammdatensuche und Zuordnungen"><figcaption><p>Dieser Lauf findet den Lieferantennamen auf der Rechnung und durchsucht die Stammdaten, ordnet aber keinen Lieferanten zu. USt-ID, IBAN, E-Mail und GLN fehlen auf dieser Testrechnung. Ein fehlender Stammdatentreffer ist eine andere Diagnose als ein fehlender Rechnungswert.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-de.png" alt="Dev NOVA: supplier details separate detected identifiers, master-data searches and matches"><figcaption><p>Dieser Lauf findet den Lieferantennamen auf der Rechnung und durchsucht die Stammdaten, ordnet aber keinen Lieferanten zu. USt-ID, IBAN, E-Mail und GLN fehlen auf dieser Testrechnung. Ein fehlender Stammdatentreffer ist eine andere Diagnose als ein fehlender Rechnungswert.</p></figcaption></figure>
 
 Prüfen Sie drei getrennte Fragen: Wurde eine Kennung auf dem Dokument gefunden, wurde sie nachgeschlagen, und wurde ein Lieferant zugeordnet? Ein grüner Schritt allein beantwortet sie nicht.
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-de.png" alt="Dev NOVA: Tabellendetails des ersten Laufs mit sieben Mapping-Lücken"><figcaption><p>Die Tabellendetails melden 7 Mapping-Lücken für 1 Tabelle und 1 Zeile. Prüfen Sie die Spaltenzuordnung, bevor Sie auf einen fehlgeschlagenen Auslesevorgang schließen. Die Vergleichsfußzeile ist für den gewählten ersten Lauf keine gültige Vergleichsbasis, weil er keinen Vorgänger hat.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-de.png" alt="Dev NOVA: first-run table details report seven mapping gaps"><figcaption><p>Die Tabellendetails melden 7 Mapping-Lücken für 1 Tabelle und 1 Zeile. Prüfen Sie die Spaltenzuordnung, bevor Sie auf einen fehlgeschlagenen Auslesevorgang schließen. Die Vergleichsfußzeile ist für den gewählten ersten Lauf keine gültige Vergleichsbasis, weil er keinen Vorgänger hat.</p></figcaption></figure>
 
 ### Einen echten Neustart erkennen
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-de.png" alt="Dev NOVA: Vergleich zweier tatsächlicher Testläufe mit unveränderten Schrittwerten"><figcaption><p>Dieselbe Testrechnung nach einem echten manuellen Neustart, ohne korrigierte Rechnungsfelder. Ein neuer Lauf belegt einen weiteren Versuch, keine Verbesserung. Unveränderte Werte zeigen No change; es wurden keine Differenz-Abzeichen erfunden.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-de.png" alt="Dev NOVA: comparison of two actual test runs with unchanged stage points"><figcaption><p>Dieselbe Testrechnung nach einem echten manuellen Neustart, ohne korrigierte Rechnungsfelder. Ein neuer Lauf belegt einen weiteren Versuch, keine Verbesserung. Unveränderte Werte zeigen No change; es wurden keine Differenz-Abzeichen erfunden.</p></figcaption></figure>
 
 Ein manueller Neustart ist ein menschlicher Eingriff. Erst ein späterer erfolgreicher Abschluss würde diesen Fall als AP Assisted einordnen. Solange er in Bearbeitung bleibt, ist er vom Nenner der abgeschlossenen Dokumente ausgeschlossen.
 

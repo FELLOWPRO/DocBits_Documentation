@@ -4,7 +4,7 @@
 
 Quando carichi una fattura elettronica errata, DocBits non la perde. Il documento riceve lo stato **Error** e la schermata di errore ti dice cosa non va, dove e cosa fare dopo. Questa pagina mostra due esempi: un file XML non ben formato e una fattura che viola una regola aziendale.
 
-> Una fattura riceve lo stato **Error** solo quando la validazione è **attiva** e **bloccante** per il suo tipo di documento. Vedi [Validazione per ogni tipo di documento](validation-per-document-type.md).
+> Una fattura riceve lo stato **Error** solo quando la validazione è **on** e **blocking** per il suo tipo di documento. Vedi [Validazione per ogni tipo di documento](validation-per-document-type.md).
 
 Una e-invoice rifiutata dal validatore porta il proprio stato di validazione e-invoice invece di un semplice **Error**. Il badge di stato nella dashboard aggiunge un tooltip che indica perché il documento si è fermato, così puoi distinguere una fattura rifiutata dagli altri errori mentre filtri l'elenco dei documenti. La schermata di errore e il report qui sotto sono identici in entrambi i casi.
 
@@ -12,7 +12,7 @@ Una e-invoice rifiutata dal validatore porta il proprio stato di validazione e-i
 
 Un fornitore invia un file XML in cui un tag di chiusura non corrisponde al tag di apertura. Il file non può essere letto, quindi DocBits si ferma al primo controllo, **L1 · Well-formedness**.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-it.png" alt="Schermata di errore di un XML fittizio con un tag di chiusura volutamente errato. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale."><figcaption><p>Schermata di errore di un XML fittizio con un tag di chiusura volutamente errato. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-it.png" alt="The error screen for a damaged XML file. The faulty line is marked in the XML. Example file with fictional data."><figcaption><p>Schermata di errore di un XML fittizio con un tag di chiusura volutamente errato. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale.</p></figcaption></figure>
 
 La schermata ha due lati:
 
@@ -21,7 +21,7 @@ La schermata ha due lati:
 
 Seleziona **View validation details** per aprire il [rapporto di convalida](validation-report.md) completo.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-it.png" alt="Rapporto del file danneggiato: un errore al livello 1 Sintassi, con il messaggio tecnico e la posizione."><figcaption><p>Rapporto del file danneggiato: un errore al livello 1 Sintassi, con il messaggio tecnico e la posizione.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-it.png" alt="The report of the damaged file: one error at level 1 Syntax, with the technical message and the position"><figcaption><p>Rapporto del file danneggiato: un errore al livello 1 Sintassi, con il messaggio tecnico e la posizione.</p></figcaption></figure>
 
 Il rapporto indica la posizione esatta (qui riga 5, colonna 4081) e riporta il messaggio tecnico del parser XML. Seleziona **Show in XML** per passare a quella riga. L'indicazione **How to fix** ti dice di chiedere al mittente un file corretto.
 
@@ -29,7 +29,7 @@ Il rapporto indica la posizione esatta (qui riga 5, colonna 4081) e riporta il m
 
 L'XML è corretto, ma manca un campo obbligatorio. Ad esempio, il venditore non può essere identificato perché non è presente alcun identificativo del venditore, identificativo di registrazione o identificativo IVA (regola `BR-CO-26`).
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-it.png" alt="Schermata di errore di una fattura di esempio interamente fittizia: il livello L3 · Business Rules, il codice della regola e un passo successivo. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale."><figcaption><p>Schermata di errore di una fattura di esempio interamente fittizia: il livello L3 · Business Rules, il codice della regola e un passo successivo. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-it.png" alt="The error screen for a business-rule error: the layer L3 · Business Rules, the rule code and a next step"><figcaption><p>Schermata di errore di una fattura di esempio interamente fittizia: il livello L3 · Business Rules, il codice della regola e un passo successivo. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale.</p></figcaption></figure>
 
 La scheda indica il livello **L3 · Business Rules** e il codice `BR-CO-26`. Il rapporto elenca tutti gli esiti della fattura, vedi [Rapporto di convalida](validation-report.md).
 

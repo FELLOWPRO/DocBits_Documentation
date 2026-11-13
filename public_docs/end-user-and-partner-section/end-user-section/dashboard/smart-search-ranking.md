@@ -2,6 +2,10 @@
 
 Smart Search Ranking puts the documents you mean at the top of a dashboard search. A keyword search finds every document that contains your word; Smart Search Ranking adds one step: an AI reads the best matches and moves the documents that are really about your search to the top. Exact matches — invoice numbers, order numbers, supplier names — always stay first.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/en.mp4" %}
+Smart Search Ranking in the dashboard (English narration). [Player with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/en.html) · [Transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/en.txt)
+{% endembed %}
+
 ## What changes
 
 | | Keyword order | With Smart Search Ranking |

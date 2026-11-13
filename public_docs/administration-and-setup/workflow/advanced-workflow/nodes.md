@@ -60,6 +60,40 @@ Os nós **When / And / Then** utilizam exatamente os mesmos cartões descritos n
 
 **Vídeo:** Sucesso, condição com falha e erro em uma execução · 1:16 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pt.vtt)
 
+<details>
+
+<summary>Transcrição</summary>
+
+**Quando, E, Então na execução** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pt.mp4#t=0.25)
+
+Quando um Workflow é executado, o cartão Quando o inicia. Os cartões E verificam condições e os cartões Então agem. O que acontece depois depende do resultado de cada cartão.
+
+**Sucesso, condição não atendida ou erro** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pt.mp4#t=12.616)
+
+Cada cartão E termina com um de três resultados. O sucesso segue o caminho azul, uma condição não atendida o caminho laranja e um erro o caminho vermelho.
+
+**Dados ausentes são um erro** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pt.mp4#t=22.916)
+
+Dados ausentes não são uma condição não atendida. Se faltar um campo de que o cartão precisa, uma variável ou o documento, o cartão informa um erro e segue o caminho vermelho.
+
+**Sem caminho laranja: a execução para** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pt.mp4#t=34.416)
+
+Se uma condição falhar e o caminho laranja dela não estiver conectado, o Workflow para nesse cartão. A execução termina como condição não atendida.
+
+**Conectado: só outro ramo** · [0:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pt.mp4#t=43.816)
+
+Se o caminho laranja estiver conectado, uma condição não atendida é só outro ramo. O Workflow continua por ali e ainda pode terminar com sucesso.
+
+**Caminho vermelho: capturar erros** · [0:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pt.mp4#t=53.05)
+
+Conecte o caminho vermelho a uma alternativa, por exemplo uma tarefa para uma pessoa, para que os erros não passem despercebidos. A alternativa é executada, mas a execução continua marcada como erro.
+
+**Como uma execução termina** · [1:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pt.mp4#t=64.85)
+
+Resumindo: qualquer erro torna a execução um erro. Uma condição não atendida sem caminho laranja conectado a torna uma condição não atendida. Todo o resto termina com sucesso.
+
+</details>
+
 Os nós são ligados por **arestas coloridas**. Arraste a partir de um conector no lado **direito** de um nó até ao conector de entrada no lado **esquerdo** de outro nó para criar uma ligação. Cada cor indica um resultado de execução diferente:
 
 - **Success** (azul) — o caminho predefinido percorrido quando um nó é concluído com sucesso. Disponível em todos os tipos de nó.

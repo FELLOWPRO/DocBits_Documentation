@@ -76,9 +76,101 @@ A barra de ferramentas do Advanced Workflow percorre a parte inferior da tela e 
 
 **Vídeo:** Designer de Advanced Workflow: cartões e caminhos · 2:10 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.vtt)
 
+<details>
+
+<summary>Transcrição</summary>
+
+**Começar um novo Workflow** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=0.25)
+
+Abra o Painel de fluxo de trabalho e selecione Novo fluxo de trabalho.
+
+**Escolher Fluxo de trabalho avançado** · [0:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=5.816)
+
+Escolha Fluxo de trabalho avançado. O designer abre com um nó de início, onde todo Workflow começa.
+
+**Quando, E e Então** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=13.05)
+
+Adicione cartões pelo menu Adicionar ou com um clique direito na tela. As três categorias de cartões são Quando, E e Então.
+
+**Quando: a condição de disparo** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=25.283)
+
+O cartão Quando é a condição de disparo. Ele decide quando o Workflow começa, por exemplo para um certo tipo de documento.
+
+**E: mais uma condição** · [0:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=38.716)
+
+Os cartões E adicionam mais condições. Eles verificam o documento, por exemplo o status. O resultado é sucesso ou uma condição não atendida.
+
+**Então: o cartão de ação** · [0:52](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=52.116)
+
+Os cartões Então são os cartões de ação. Eles alteram o documento, por exemplo preenchem um campo ou aprovam o documento.
+
+**Arrastar para conectar** · [1:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=60.483)
+
+Para conectar dois cartões, arraste de um ponto à direita de um cartão até a entrada à esquerda do próximo cartão.
+
+**Azul: sucesso** · [1:08](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=68.116)
+
+Azul é o caminho de sucesso. Todo cartão tem. O Workflow segue por ele quando o cartão termina.
+
+**Laranja: condição não atendida** · [1:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=75.116)
+
+Laranja é o caminho da condição não atendida. Só os cartões E têm. O Workflow segue por ele quando a condição não é atendida.
+
+**Vermelho: erro** · [1:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=83.716)
+
+Vermelho é o caminho de erro. Os cartões E e Então têm. O Workflow segue por ele quando um cartão falha com um erro.
+
+**Se-senão com captura de erros** · [1:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=91.883)
+
+Juntos, esses caminhos formam um se-senão com captura de erros. O sucesso executa uma ação, uma condição não atendida outra, e um erro uma alternativa, por exemplo uma tarefa para uma pessoa.
+
+**Um caminho por status** · [1:44](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=104.083)
+
+Para vários casos, encadeie cartões de Status do documento pelos caminhos de condição não atendida. Cada cartão verifica um status, então cada status ganha seu próprio caminho.
+
+**O caminho até um cartão e a partir dele** · [1:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pt.mp4#t=114.283)
+
+Clique em um cartão para destacar o caminho de execução dele: os cartões pelos quais um documento passa até chegar a ele e os que podem vir depois. O resto fica esmaecido. Aqui a tarefa só é alcançada a partir do cartão Quando, pelo caminho de erro vermelho do cartão de status.
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pt.mp4" %}
 
 **Vídeo:** Descrições e notas do Workflow · 1:05 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Explique o seu Workflow** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pt.mp4#t=0.25)
+
+Um Workflow com vários ramos é mais fácil de manter quando se explica sozinho. O designer tem duas ferramentas para isso: uma descrição do Workflow inteiro e observações na tela.
+
+**Descrever o Workflow inteiro** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pt.mp4#t=11.083)
+
+Selecione Editar descrição na barra de ferramentas e diga em uma ou duas frases para que serve o Workflow. A descrição é salva quando você salva o Workflow.
+
+**Adicionar uma observação** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pt.mp4#t=20.716)
+
+Para explicar um único passo, clique com o botão direito na tela, abra o menu de adicionar e escolha Observação. A observação aparece onde você clicou.
+
+**Clique duplo para escrever** · [0:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pt.mp4#t=30.75)
+
+Clique duas vezes na observação para escrever nela, até quinhentos caracteres. Clique ao lado quando terminar.
+
+**Mover e redimensionar** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pt.mp4#t=37.85)
+
+Arraste a observação para perto dos cartões que ela explica e puxe o canto inferior direito para aumentá-la.
+
+**Dar cor às observações** · [0:44](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pt.mp4#t=44.95)
+
+Clique com o botão direito em uma observação para mudar a cor dela. As cores ajudam a agrupar observações, por exemplo azul para explicações e vermelho para perguntas em aberto.
+
+**Observações nunca são executadas** · [0:55](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pt.mp4#t=55.25)
+
+Observações são só para pessoas. Não estão ligadas a nenhum cartão e nunca são executadas, então não mudam o que o Workflow faz.
+
+</details>
 
 - **+ Add** — abre o menu de nós para adicionar um nó (consulte [Nós](nodes.md)).
 - **Undo / Redo** — recue ou avance pelas suas alterações.

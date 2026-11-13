@@ -35,9 +35,53 @@ O Test Manager e a janela de teste Advanced são superfícies de execução dife
 
 **Vídeo:** Ordem de execução dos Workflows · 1:10 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pt.vtt)
 
+<details>
+
+<summary>Transcrição</summary>
+
+**Números menores vão primeiro** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pt.mp4#t=0.25)
+
+Quando um documento chega a um status, cada Workflow ativo que corresponde é executado, um após o outro. A coluna Ordem de Execução do Fluxo de Trabalho define a sequência: números menores vão primeiro.
+
+**Editar a ordem de execução** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pt.mp4#t=13.516)
+
+Para mudar, abra as ações de um Workflow e escolha Editar ordem de execução do fluxo de trabalho. Digite um número de zero a mil. Workflows novos começam em quinhentos, e Workflows com o mesmo número rodam em ordem alfabética.
+
+**Cada um vê o que os anteriores fizeram** · [0:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pt.mp4#t=28.616)
+
+A ordem importa porque cada Workflow trabalha com o que os anteriores deixaram. Um Workflow posterior vê os campos que um anterior preencheu. Os cartões agem na hora, também ao atribuir ou exportar o documento. Só os cartões de atribuição sequencial, o cartão de exportação em fila e os prompts do DocOperator esperam o último Workflow terminar. E se um Workflow terminar com condição não atendida ou erro, os seguintes rodam mesmo assim.
+
+**Primeiro preparar, depois decidir** · [0:55](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pt.mp4#t=55.783)
+
+Um esquema simples: dê números baixos aos Workflows que preparam dados, como preencher campos, e números mais altos aos que verificam, encaminham ou aprovam o documento. Deixe intervalos para que novos Workflows caibam no meio.
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pt.mp4" %}
 
 **Vídeo:** Limites de execução dos Workflows · 0:45 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Limite de execução atingido** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pt.mp4#t=0.25)
+
+Um Workflow só pode ser executado um número limitado de vezes no mesmo documento. Quando um Workflow atinge esse limite, os Registros de fluxo de trabalho do documento mostram isso no topo.
+
+**O ícone vermelho marca o Workflow** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pt.mp4#t=12.683)
+
+Cada execução de um Workflow que atingiu o limite tem este ícone vermelho ao lado do nome. Passe o mouse sobre ele para ver o motivo.
+
+**Por Workflow e por documento** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pt.mp4#t=21.35)
+
+O limite conta as execuções de um Workflow em um documento. Depois de atingido, esse Workflow é ignorado para este documento, enquanto todos os outros continuam rodando.
+
+**Descobrir por que rodou tanto** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pt.mp4#t=32.05)
+
+Se um Workflow atingir o limite, veja nos registros dele por que rodou tantas vezes. Verifique, por exemplo, se ele muda algo que o inicia de novo, e restrinja as condições para que rode só quando deve.
+
+</details>
 
 Os valores mais baixos da **ordem de execução** são processados primeiro. Por exemplo, o workflow 100 prepara um campo e o 200 verifica-o. Utilize valores distintos e confirme os dados efetivamente lidos numa nova execução. A posição de um cartão Advanced no canvas não determina a ordem.
 

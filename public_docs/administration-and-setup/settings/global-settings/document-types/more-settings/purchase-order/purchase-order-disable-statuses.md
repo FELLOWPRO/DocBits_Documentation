@@ -17,7 +17,10 @@ De instelling **PO-uitschakelstatussen** bepaalt welke statussen van inkooporder
 
 ### **Een uitgeschakelde inkooporder herkennen**
 
-In het [Inkooporder Matching Scherm](https://docs.docbits.com/dutch/end-user-and-partner-section/end-user-section/purchase-order-matching) wordt een regel waarvan de status is uitgeschakeld, doorgehaald weergegeven en kan deze niet in een match worden gesleept. Controleer de status van de regel en de lijst met uitgeschakelde statussen van het documenttype wanneer u wilt nagaan waarom de regel niet beschikbaar is. De schermafbeeldingen van deze pagina tonen alleen de instellingen; zij bewijzen geen uitgevoerde afstemming, goedkeuring of betaling.
+In het [Inkooporder Matching Scherm](https://docs.docbits.com/dutch/end-user-and-partner-section/end-user-section/purchase-order-matching) wordt een regel waarvan de status is uitgeschakeld, doorgehaald weergegeven en kan deze niet in een match worden gesleept. Controleer de status van de regel en de lijst met uitgeschakelde statussen van het documenttype wanneer u wilt nagaan waarom de regel niet beschikbaar is. De afbeeldingen op deze pagina tonen alleen de instellingen en het scherm zelf; zij bewijzen geen uitgevoerde afstemming, goedkeuring of betaling.
+
+<figure><img src="../../../../../../.gitbook/assets/purchase-order-disable-statuses-matching-row-nl-20261113.png" alt="Het Nederlandse PO-Matching-scherm met de factuur van het voorbeeld en de inkooporderregels in de tabel; geen regel heeft in deze opname een uitgeschakelde status"><figcaption><p>Het PO-Matching-scherm in de Nederlandse interface met voorbeeldgegevens. In deze opname heeft geen regel een uitgeschakelde status, dus er is geen doorgehaalde regel te zien. Een regel met een uitgeschakelde status wordt hier doorgehaald weergegeven.</p></figcaption></figure>
+
 
 ### **Zo stelt u het in**
 

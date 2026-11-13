@@ -35,6 +35,18 @@ The **Stage Log** below the path lists the same stages with what each one record
 
 <figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-en.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Actual first run: 100% classification confidence, 0 supplier candidates, 1 table row and 7 mapping gaps. Passed means a stage ran; it does not prove a supplier match or that every invoice value is correct. Field validation reports a missing required field.</p></figcaption></figure>
 
+### Pre-processing
+
+For the latest run the trace adds the block **Pre-processing** below the path. It lists the decisions that run before the document reaches the pipeline, in the order they ran, each with a state:
+
+| State | Meaning |
+| --- | --- |
+| **Recorded** | The module is on the record of this document. A record proves the attempt, not the success. |
+| **Skipped** | The decision did not apply to this document |
+| **Not recorded** | Nothing was stored for this decision |
+
+Where a decision depends on a configuration, the entry also shows the current organization setting and its value. The block describes the document as it stands now, so it is shown for the latest run only.
+
 ### Runs and changes
 
 Use the run selector to choose an attempt. Run History lists its result and first blocker. Recorded differences compare the selected run with its predecessor, not automatically with the current run. A difference badge includes its unit; unchanged points stay unchanged.

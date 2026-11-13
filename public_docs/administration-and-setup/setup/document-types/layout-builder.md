@@ -63,6 +63,14 @@ Buttons such as **Save Rules**, **Auto Accounting**, **PO Match**, **Export**, *
 
 Layouts that were built before this change keep their labels: DocBits fills in the default key of each button type for them. Layouts that are saved with a key keep that key, also after a reload.
 
+## Save and go back to Dashboard
+
+A button of the type **Save and go back to Dashboard** stores the document values like **Save** and then opens the Dashboard. The type suits layouts where a reviewer works through a queue of documents one after another.
+
+* Add a button element on the canvas and choose the type in its **Properties**.
+* If the save fails, the button stays on the validation screen and does not open the Dashboard, so the problem can be corrected first.
+* The label is resolved like the label of any other button; see *Translate button labels* above.
+
 ## Review and save
 
 Arrange the groups and fields, check the layout on the canvas and use **Save** in the header when the result is correct. For origin-specific layouts, see [Origin Layouts](origin-layouts.md).

@@ -33,6 +33,10 @@ When both tables contain lines, connect an invoice line to the corresponding pur
 
 If a document is not matched, read the reason shown above the purchase order area. It may say that the PO number is missing, the order was not found, its lines are unavailable, or the invoice has no extracted lines. Correct the document or configuration indicated by that reason. An administrator can inspect [matching rules](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) and [table extraction](../../administration-and-setup/settings/document-processing/classification-and-extraction/) when no invoice lines appear.
 
+### Follow a match to another purchase order tab
+
+Each purchase order opens in its own tab above the table, and an invoice line can be matched to lines that belong to different tabs. The match icon on the invoice line switches to the tab of the matched order and scrolls to the matched line; each further click shows the next matched line. If the line is connected on more than one tab, the icon first shows the list under **Matched on other PO tabs**, where you pick the order whose line you want to see. On the purchase order side the icon works the other way round: clicking it walks through the matched invoice lines, and hovering it highlights them.
+
 Common messages and next steps:
 
 | What you see                             | What to check                                                                                                                                                                             |

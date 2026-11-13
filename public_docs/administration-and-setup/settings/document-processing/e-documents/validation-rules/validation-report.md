@@ -8,7 +8,7 @@ Ta strona jest dla osób, które przetwarzają faktury. Administratorzy ustawiaj
 
 ## Kiedy dokument otrzymuje status Błąd
 
-Jeśli walidacja jest **włączona** i **blokująca** dla danego typu dokumentu, faktura z błędem blokującym otrzymuje status **Error**. Otwórz dokument z panelu. Widok błędu pokazuje XML po lewej stronie, a powód po prawej.
+Jeśli walidacja jest **włączona** i **blokująca** dla danego typu dokumentu, faktura z błędem blokującym otrzymuje status **Error**. Faktura odrzucona przez sam walidator ma natomiast dedykowany status walidacji e-invoice, zobacz [Ekran błędu odrzuconej faktury e-invoice](validation-error-screen.md). Otwórz dokument z panelu. Widok błędu pokazuje XML po lewej stronie, a powód po prawej.
 
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-pl.png" alt="Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
 
@@ -30,6 +30,8 @@ Raport zaczyna się od informacji o pliku:
 | **Number / date** | Numer faktury i data faktury odczytane z XML. |
 
 Pod danymi pliku widzisz **werdykt**, na przykład **Not conformant**, z liczbą błędów, ostrzeżeń i informacji. Jeśli Twoja organizacja zmieniła poziom ważności reguły, druga linia **Organisation severity** pokazuje liczby po uwzględnieniu ustawień organizacji.
+
+> Werdykt brzmi **Rejected** zamiast słowa o zgodności, gdy dokument został odrzucony w walidacji e-invoice, a werdykt ma wtedy ikonę anulowania. Następny krok wskazuje listę błędów. Raport, którego wyniku nie można odczytać, nigdy nie pokazuje faktury jako zgodnej.
 
 ### Wyniki według poziomu
 

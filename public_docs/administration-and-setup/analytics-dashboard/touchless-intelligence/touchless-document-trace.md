@@ -20,6 +20,8 @@ Nagłówek pokazuje plik, jego status (na przykład **In progress**), oglądane 
 | **Nothing Recorded** (przerywany) | Dla tego etapu nie zarejestrowano żadnych danych |
 | **Not applicable** | Etap nie dotyczy tego dokumentu |
 
+Wybierz krok **PO Match**, aby otworzyć widok szczegółów PO matching z wierszami zamówienia stojącymi za tym krokiem, tam gdzie ślad go udostępnia.
+
 ### Stage Log
 
 **Stage Log** pod ścieżką wymienia te same etapy wraz z tym, co każdy z nich zarejestrował. Kropka statusu i słowo statusu znajdują się po lewej i prawej stronie każdego wiersza.
@@ -27,6 +29,7 @@ Nagłówek pokazuje plik, jego status (na przykład **In progress**), oglądane 
 * Każda wartość to **point chip**: liczba z jednostką, na przykład **Confidence 100 %**, **Threshold 60 %**, **Failed rules 0**, **8 missing fields** lub **0 mapping gaps**. Procenty są pokazywane jako `97 %`, nigdy jako `0.97`.
 * **Details** otwiera pełną listę punktów zarejestrowanych przez etap, wraz z rozważanymi alternatywami.
 * Etap, który zablokował dokument, podaje przyczynę, na przykład **Field validation failed**.
+* Wpis **Intake** mówi, jak dokument trafił do DocBits, na przykład że dotarł e-mailem w danym dniu. Gdy przebieg rejestruje własny etap Intake, zdanie znajduje się w tym wierszu zamiast w osobnym wpisie.
 * Punkt, którego żaden etap nie zarejestrował, jest pokazywany jako **Not recorded**, nigdy jako wymyślona wartość. Punkty to liczby i stałe słowa, nigdy tekst dokumentu.
 * **Show Raw Diagnostics** włącza surowe dane, gdy poprosi o to wsparcie.
 

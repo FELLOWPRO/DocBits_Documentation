@@ -6,6 +6,8 @@ Gdy wgrasz błędną e-fakturę, DocBits jej nie gubi. Dokument dostaje status *
 
 > Faktura dostaje status **Error** tylko wtedy, gdy walidacja jest **włączona** i **blokująca** dla jej typu dokumentu. Zobacz [Walidacja dla każdego typu dokumentu](validation-per-document-type.md).
 
+Faktura e-invoice odrzucona przez walidator ma własny status walidacji e-invoice zamiast zwykłego **Error**. Odznaka statusu na dashboardzie dodaje podpowiedź, która mówi, dlaczego dokument się zatrzymał, dzięki czemu podczas filtrowania listy dokumentów odróżnisz odrzuconą fakturę od innych błędów. Ekran błędu i raport poniżej są w obu przypadkach takie same.
+
 ## Przykład 1: plik XML jest uszkodzony
 
 Dostawca wysyła plik XML, w którym znacznik zamykający nie pasuje do znacznika otwierającego. Pliku nie można odczytać, więc DocBits zatrzymuje się na pierwszej kontroli, **L1 · Well-formedness**.
@@ -30,6 +32,16 @@ XML jest poprawny, ale brakuje wymaganego pola. Na przykład nie można zidentyf
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-pl.png" alt="Ekran błędu całkowicie fikcyjnej przykładowej faktury: warstwa L3 · Business Rules, kod reguły i następny krok"><figcaption><p>Ekran błędu całkowicie fikcyjnej przykładowej faktury: warstwa L3 · Business Rules, kod reguły i następny krok</p></figcaption></figure>
 
 Karta podaje warstwę **L3 · Business Rules** i kod `BR-CO-26`. Raport wymienia wszystkie wyniki faktury, zobacz [Raport walidacyjny](validation-report.md).
+
+## Gdy DocBits nie mógł sprawdzić dokumentu
+
+Nie każdy błąd jest odrzuceniem. Jeśli walidator w ogóle nie może odczytać pliku, komunikat zaczyna się od _could not check this document_ i podaje sprawdzenie, które go zatrzymało, na przykład `XML-PARSE` dla uszkodzonego pliku XML albo `PDF-UNREADABLE` dla pliku PDF, którego nie da się otworzyć. DocBits pokazuje tę samą kartę wyjaśnienia co przy odrzuconej fakturze, z nazwą sprawdzenia, kodem i komunikatem technicznym.
+
+To awaria techniczna, a nie werdykt o fakturze:
+
+* DocBits nie oznacza dokumentu jako odrzuconego.
+* Ponowne uruchomienie może się udać, bo przyczyna może leżeć w odczycie pliku. Wybierz **Restart Processing**, zanim poprosisz nadawcę o nową fakturę.
+* Jeśli po ponownym uruchomieniu ten sam kod pojawi się ponownie, prześlij plik i kod administratorowi.
 
 ## Next step i przyciski
 

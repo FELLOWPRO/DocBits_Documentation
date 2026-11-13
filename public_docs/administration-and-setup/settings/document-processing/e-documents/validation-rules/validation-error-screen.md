@@ -4,13 +4,15 @@
 
 Wenn Sie eine fehlerhafte E-Rechnung hochladen, geht sie in DocBits nicht verloren. Das Dokument erhält den Status **Error**, und die Fehleransicht sagt Ihnen, was falsch ist, wo und was Sie als Nächstes tun können. Diese Seite zeigt zwei Beispiele: eine XML-Datei, die nicht wohlgeformt ist, und eine Rechnung, die gegen eine Geschäftsregel verstößt.
 
-> Eine Rechnung erhält den Status **Error** nur, wenn die Prüfung für ihren Dokumenttyp **aktiviert** und **blockierend** ist. Siehe [Prüfung je Dokumenttyp](validation-per-document-type.md).
+> Eine Rechnung erhält den Status **Error** nur, wenn die Prüfung für ihren Dokumenttyp **on** und **blocking** ist. Siehe [Prüfung je Dokumenttyp](validation-per-document-type.md).
+
+Eine E-Rechnung, die der Validator zurückgewiesen hat, trägt ihren eigenen E-Rechnungs-Validierungsstatus anstelle eines einfachen **Error**. Das Statusabzeichen im Dashboard ergänzt einen Tooltip, der den Grund für den Stopp des Dokuments nennt, sodass Sie eine zurückgewiesene Rechnung beim Filtern der Dokumentliste von anderen Fehlern unterscheiden können. Die Fehleransicht und der Bericht unten sind in beiden Fällen gleich.
 
 ## Beispiel 1: Die XML-Datei ist beschädigt
 
 Ein Lieferant sendet eine XML-Datei, in der ein schließendes Tag nicht zum öffnenden Tag passt. Die Datei kann nicht gelesen werden, daher stoppt DocBits bei der ersten Prüfung, **L1 · Well-formedness**.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-de.png" alt="Fehleransicht einer synthetischen XML-Datei mit einem absichtlich beschädigten Abschluss-Tag. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Fehleransicht einer synthetischen XML-Datei mit einem absichtlich beschädigten Abschluss-Tag. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-de.png" alt="The error screen for a damaged XML file. The faulty line is marked in the XML. Example file with fictional data."><figcaption><p>Fehleransicht einer synthetischen XML-Datei mit einem absichtlich beschädigten Abschluss-Tag. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
 
 Die Ansicht hat zwei Seiten:
 
@@ -19,7 +21,7 @@ Die Ansicht hat zwei Seiten:
 
 Wählen Sie **View validation details**, um den vollständigen [Prüfbericht](validation-report.md) zu öffnen.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-de.png" alt="Prüfbericht zur beschädigten Datei: ein Fehler auf Ebene 1 Syntax, mit der technischen Meldung und der Position"><figcaption><p>Prüfbericht zur beschädigten Datei: ein Fehler auf Ebene 1 Syntax, mit der technischen Meldung und der Position</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-de.png" alt="The report of the damaged file: one error at level 1 Syntax, with the technical message and the position"><figcaption><p>Prüfbericht zur beschädigten Datei: ein Fehler auf Ebene 1 Syntax, mit der technischen Meldung und der Position</p></figcaption></figure>
 
 Der Bericht nennt die genaue Position (hier Zeile 5, Spalte 4081) und gibt die technische Meldung des XML-Parsers wieder. Wählen Sie **Show in XML**, um zu dieser Zeile zu springen. Der Hinweis **How to fix** sagt Ihnen, dass Sie den Absender um eine korrigierte Datei bitten sollen.
 
@@ -27,9 +29,19 @@ Der Bericht nennt die genaue Position (hier Zeile 5, Spalte 4081) und gibt die t
 
 Das XML ist in Ordnung, aber ein Pflichtfeld fehlt. Zum Beispiel kann der Verkäufer nicht identifiziert werden, weil weder eine Verkäufer-Kennung, noch eine Registrierungskennung, noch eine Umsatzsteuer-Kennung vorhanden ist (Regel `BR-CO-26`).
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-de.png" alt="Fehleransicht einer rein synthetischen Beispielrechnung: die Ebene L3 · Business Rules, der Regelcode und ein nächster Schritt"><figcaption><p>Fehleransicht einer rein synthetischen Beispielrechnung: die Ebene L3 · Business Rules, der Regelcode und ein nächster Schritt</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-de.png" alt="The error screen for a business-rule error: the layer L3 · Business Rules, the rule code and a next step"><figcaption><p>Fehleransicht einer rein synthetischen Beispielrechnung: die Ebene L3 · Business Rules, der Regelcode und ein nächster Schritt</p></figcaption></figure>
 
 Die Karte nennt die Ebene **L3 · Business Rules** und den Code `BR-CO-26`. Der Bericht listet alle Prüfhinweise der Rechnung auf, siehe [Prüfbericht](validation-report.md).
+
+## Wenn DocBits das Dokument nicht prüfen konnte
+
+Nicht jeder Fehler ist eine Zurückweisung. Kann der Validator die Datei überhaupt nicht lesen, beginnt die Meldung mit _could not check this document_ und nennt die Prüfung, an der sie gestoppt ist, zum Beispiel `XML-PARSE` bei einer beschädigten XML-Datei oder `PDF-UNREADABLE` bei einem PDF, das sich nicht öffnen lässt. DocBits zeigt dieselbe Erklärungskarte wie bei einer zurückgewiesenen Rechnung, mit dem Namen der Prüfung, dem Code und der technischen Meldung.
+
+Das ist ein technischer Fehlschlag, kein Urteil über die Rechnung:
+
+* DocBits markiert das Dokument nicht als zurückgewiesen.
+* Ein Neustart kann gelingen, weil die Ursache im Lesen der Datei liegen kann. Wählen Sie **Restart Processing**, bevor Sie den Absender um eine neue Rechnung bitten.
+* Erscheint nach einem Neustart derselbe Code erneut, senden Sie die Datei und den Code an Ihren Administrator.
 
 ## Die Next-step-Box und die Schaltflächen
 

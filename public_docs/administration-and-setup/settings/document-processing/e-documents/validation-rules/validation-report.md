@@ -6,17 +6,17 @@ Wenn DocBits eine E-Rechnung ablehnt, können Sie genau nachlesen, warum. Der **
 
 Diese Seite richtet sich an Personen, die Rechnungen bearbeiten. Administratoren legen die Regeln auf der Seite [E-Rechnungs-Prüfung](./) fest und wählen je Dokumenttyp, ob eine fehlgeschlagene Prüfung die Rechnung blockiert, siehe [Prüfung je Dokumenttyp](validation-per-document-type.md).
 
-## Wann ein Dokument den Status „Fehler" erhält
+## Wann ein Dokument den Status **Error** erhält
 
-Ist die Prüfung für den Dokumenttyp **aktiviert** und **blockierend**, erhält eine Rechnung mit einem blockierenden Prüfhinweis den Status **Error**. Öffnen Sie das Dokument über das Dashboard. Die Fehleransicht zeigt links das XML und rechts den Grund.
+Ist die Prüfung für den Dokumenttyp **on** und **blocking**, erhält eine Rechnung mit einem blockierenden Prüfhinweis den Status **Error**. Eine Rechnung, die der Validator selbst zurückgewiesen hat, trägt stattdessen den eigenen E-Rechnungs-Validierungsstatus, siehe [Die Fehleransicht einer abgelehnten E-Rechnung](validation-error-screen.md). Öffnen Sie das Dokument über das Dashboard. Die Fehleransicht zeigt links das XML und rechts den Grund.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-de.png" alt="Die Fehleransicht: das XML der Rechnung und der erste blockierende Prüfhinweis mit einem nächsten Schritt. Beispielrechnung mit fiktiven Namen."><figcaption><p>Die Fehleransicht: das XML der Rechnung und der erste blockierende Prüfhinweis mit einem nächsten Schritt. Beispielrechnung mit fiktiven Namen.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-de.png" alt="The error view: the XML of the invoice and the first blocking finding with a next step. Example invoice with fictional names."><figcaption><p>Die Fehleransicht: das XML der Rechnung und der erste blockierende Prüfhinweis mit einem nächsten Schritt. Beispielrechnung mit fiktiven Namen.</p></figcaption></figure>
 
 Die Karte rechts nennt die Ebene, die die Rechnung abgelehnt hat (zum Beispiel **L3 · Business Rules**), den Regelcode (zum Beispiel `BR-CO-26`), eine kurze Erklärung und einen **Next step**. Wählen Sie **View validation details**, um den vollständigen Bericht zu öffnen.
 
 ## Den Bericht lesen
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-de.png" alt="Prüfbericht der synthetischen Beispielrechnung mit Dateiangaben und Prüfergebnis."><figcaption><p>Prüfbericht der synthetischen Beispielrechnung mit Dateiangaben und Prüfergebnis.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-de.png" alt="The top of the report: file data, the verdict and the result for each level"><figcaption><p>Prüfbericht der synthetischen Beispielrechnung mit Dateiangaben und Prüfergebnis.</p></figcaption></figure>
 
 Der Bericht beginnt mit den Fakten zur Datei:
 
@@ -30,6 +30,8 @@ Der Bericht beginnt mit den Fakten zur Datei:
 | **Number / date** | Die Rechnungsnummer und das Rechnungsdatum, aus dem XML gelesen. |
 
 Unter den Dateiangaben sehen Sie das **Ergebnis**, zum Beispiel **Not conformant**, mit der Anzahl der Fehler, Warnungen und Informationen. Hat Ihre Organisation den Schweregrad einer Regel geändert, zeigt eine zweite Angabe **Organisation severity** die Anzahlen nach den Einstellungen Ihrer Organisation.
+
+> Das Urteil lautet **Rejected** anstelle eines Konformitätsworts, wenn das Dokument in der E-Rechnungs-Validierung zurückgewiesen wurde; das Urteil trägt dann ein Abbruch-Symbol. Der nächste Schritt verweist auf die Fehlerliste. Ein Bericht, dessen Ergebnis nicht lesbar ist, zeigt die Rechnung nie als konform.
 
 ### Ergebnis je Ebene
 
@@ -49,7 +51,7 @@ Die Tabelle **Result per level** zeigt, wie viele Fehler, Warnungen und Hinweise
 
 ## Die Prüfhinweise
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-de.png" alt="Jeder Prüfhinweis hat einen Code, eine Ebene, einen lesbaren Text und einen Hinweis zur Behebung"><figcaption><p>Jeder Prüfhinweis hat einen Code, eine Ebene, einen lesbaren Text und einen Hinweis zur Behebung</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-de.png" alt="Each finding has a code, a level, a text you can read and a hint how to fix it"><figcaption><p>Jeder Prüfhinweis hat einen Code, eine Ebene, einen lesbaren Text und einen Hinweis zur Behebung</p></figcaption></figure>
 
 Jeder Prüfhinweis ist eine Zeile im Abschnitt **Pos**:
 

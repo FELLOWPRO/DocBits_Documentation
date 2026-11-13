@@ -819,7 +819,7 @@
     * [Costruttore di Layout](administration-and-setup/setup/document-types/layout-builder.md)
     * [Layout per origine](administration-and-setup/setup/document-types/origin-layouts.md)
     * [Gestore Regex](administration-and-setup/setup/document-types/regex-manager.md)
-    * [Configurazione dei Dati Fuzzy con i Dati Principali](administration-and-setup/setup/document-types/fuzzy-data-configuration-with-master-data.md)
+    * [Configurazione dei dati fuzzy con i dati master](administration-and-setup/setup/document-types/fuzzy-data-configuration-with-master-data.md)
     * [Configurazione dei dati fuzzy con elenco di valori](administration-and-setup/setup/document-types/fuzzy-data-configuration-with-list-of-values.md)
   * [Addestramento dei documenti](administration-and-setup/setup/document-training/README.md)
     * [Campi Intestazione dell'Addestramento](administration-and-setup/setup/document-training/training-header-fields.md)

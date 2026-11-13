@@ -32,7 +32,7 @@ Haga clic en **Guardar** dentro de **Preferencias de la empresa** después de ca
 
 ## Canal de lanzamiento
 
-El antiguo interruptor de aviso de nueva versión («New Version Info Dialog») ya no existe. DocBits detecta las nuevas versiones automáticamente, así que no necesita ninguna ventana emergente para estar al día.
+El antiguo interruptor de aviso de nueva versión ya no existe. DocBits detecta las nuevas versiones automáticamente, así que no necesita ninguna ventana emergente para estar al día.
 
 La entrega de versiones se controla en la sección **Canal de lanzamiento** de la misma página **Información de la empresa**. Arriba, la tarjeta muestra la versión de API que su organización utiliza en ese momento, con el texto «Esta organización actualmente gestiona API». Debajo elige por qué vía recibe su organización las versiones de DocBits: **Vesta** (solo parches de seguridad, máxima estabilidad) o **Nova** (nuevas funciones después de cada lanzamiento, la opción por defecto). El cambio hace efecto en un minuto, según el aviso «Hace efecto en un minuto.» de la sección, y se guarda con el botón **Guardar** de la propia sección.
 

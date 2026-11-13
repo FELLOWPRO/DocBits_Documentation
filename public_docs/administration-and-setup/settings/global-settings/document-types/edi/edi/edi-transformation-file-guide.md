@@ -1,78 +1,34 @@
 # Przewodnik po pliku transformacji EDI
 
-## 1. Przegląd
+Konfiguracja **TRANSFORMATION** zamienia wejście EDI na ustrukturyzowany XML używany przez DocBits. Jest to arkusz stylów **XSLT**. Ten przewodnik jest przeznaczony dla osób, które utrzymują elektroniczny format dokumentów; do sprawdzenia zmiany potrzebujesz reprezentatywnego dokumentu EDI.
 
-**Plik transformacji** definiuje, w jaki sposób strukturalny XML—utworzony za pomocą **Pliku deskryptora struktury**—jest konwertowany na niestandardowy format XML, który odpowiada wymaganiom dotyczącym konkretnego typu dokumentu lub formularza w Twojej organizacji.
+## Otwórz transformację
 
-Ta transformacja jest wykonywana za pomocą **XSLT (Extensible Stylesheet Language Transformations)**, które można tworzyć i utrzymywać za pomocą **Edytora XSLT** w interfejsie DocBits.
+1. Przejdź do **Ustawienia → Typy Dokumentów** i otwórz **E-Doc** dla typu dokumentu, który chcesz skonfigurować.
+2. Rozwiń **EDI** i wybierz **TRANSFORMATION** z oznaczeniem **XSLT**. Zrzuty ekranu pokazują typ dokumentu `PURCHASE_ORDER` (zamówienie zakupu) w organizacji demonstracyjnej na potrzeby dokumentacji.
 
-## 2. Cel i Funkcja
+<figure><img src="../../../../../../.gitbook/assets/edi-transformation-file-guide-list-pl-20261113.png" alt="Interfejs DocBits po polsku: lista EDI typu dokumentu PURCHASE_ORDER z wierszem TRANSFORMATION oznaczonym jako XSLT, powyżej PREVIEW, poniżej EXTRACTION PATHS, kolumna Status pokazuje Domyślny"><figcaption><p>Wybierz TRANSFORMATION (XSLT) na liście formatów EDI.</p></figcaption></figure>
 
-* Przekształca **pośredni XML** (wyjście z deskryptora struktury) w **ostateczny XML** zgodny z schematem dokumentu.
-* Umożliwia elastyczność w dostosowywaniu się do różnych formatów partnerów EDI i wewnętrznych wymagań systemowych.
-* Tworzony za pomocą **reguł XSLT**, które pozwalają zdefiniować odwzorowania, formatowanie wartości, logikę warunkową i strukturę.
+Gdy potrzebujesz własnego wariantu, a nie pliku domyślnego, otwórz menu z trzema kropkami w wierszu i wybierz **Dostosuj**: DocBits tworzy wtedy własną, edytowalną kopię atrybutu i od razu otwiera ją do zmian. Administrator widzi w tym menu także **Usuwać**, które usuwa atrybut. Przycisk **Nowy** powyżej listy otwiera formularz nowego atrybutu EDI, więc dodasz kolejny plik obok istniejących. Status, typ, wersję i datę ostatniej zmiany każdego pliku opisuje strona [Konfiguracja Szablonów EDI](setting-up-edi-templates.md).
 
-## 3. Dostęp i Podstawowe Edycje
+## Odczytaj arkusz stylów i wersję
 
-#### Dostęp do pliku
+Po lewej stronie widzisz wybrany typ dokumentu, format EDI i listę wersji; etykieta **Version** nad listą wersji pozostała w tej wersji interfejsu po angielsku. **Aktywny** oznacza wersję używaną obecnie. Arkusz stylów pojawia się w edytorze po prawej. Przykład zamówienia zakupu używa `xsl:value-of`, aby skopiować numer zamówienia (`//BEG/BEG03`), datę zamówienia (`//BEG/BEG05`) oraz pozycje (`//PO1_LOOP/PO1` z `PO107`, `PO102` i `PO102 * PO104`) z wejścia EDI do struktury XML `PURCHASE_ORDER`. Twój dokument może używać innych ścieżek EDI. **Format** porządkuje kod źródłowy, aby ułatwić czytanie; ta czynność nie aktywuje żadnej wersji.
 
-1.  Przejdź do **Ustawienia → Typ Dokumentu** → \[Twój Dokument (np. _Zamówienie Zakupu_)] → **E-Dok.**
+<figure><img src="../../../../../../.gitbook/assets/edi-transformation-file-guide-detail-pl-20261113.png" alt="Interfejs DocBits po polsku: edytor XSLT transformacji TRANSFORMATION typu dokumentu PURCHASE_ORDER, po lewej wersja 1 oznaczona jako Aktywny, u góry przyciski Podgląd i Format"><figcaption><p>Aktywna transformacja EDI zamówienia zakupu w organizacji demonstracyjnej.</p></figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F1yCRagLzRFmy2hPRDDc1%252Fimage.png%3Falt%3Dmedia%26token%3D020874a9-1eae-4965-9dd2-c23461fc5884\&width=768\&dpr=4\&quality=100\&sign=5e53a730\&sv=2)
-2. W zakładce **E-Dok** wybierz swój format (np. **EDI**).
-3.  Kliknij **Transformacja**, aby wyświetlić lub edytować.
+Dopóki wyświetlana jest wersja aktywna, edytora nie można zmieniać. Ikona ołówka obok aktywnej wersji tworzy **wersję roboczą**, w której możesz zmieniać kod źródłowy. Wersję roboczą sprawdź i przetestuj, a następnie aktywuj znacznikiem wyboru; aktywowana wersja zastępuje poprzednią wersję aktywną. Ikona kosza usuwa niepotrzebną wersję roboczą i pojawia się tylko wtedy, gdy istnieje więcej niż jedna wersja. Zrzuty ekranu pokazują wersję aktywną, dlatego nie widać na nich ikon wersji roboczej.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZtaE4dZT9E1exWMZ5FCI%252Fimage.png%3Falt%3Dmedia%26token%3D787868b4-47b4-455e-9a26-112f692b91f3\&width=768\&dpr=4\&quality=100\&sign=460124f1\&sv=2)
+## Przetestuj przed aktywacją
 
-#### Zarządzanie Wersjami Roboczymi
+Kliknij **Podgląd** w prawym górnym rogu, aby otworzyć panel testowy. Wpisz ID dokumentu EDI wczytanego do DocBits w pole **Document Id...**, którego etykieta pozostała w tej wersji interfejsu po angielsku, a następnie kliknij **Test**. Test obejmuje bieżącą treść edytora, więc uwzględnia również jeszcze nieaktywną wersję roboczą. Porównaj wynik z dokumentem źródłowym i oczekiwanymi polami XML. Zrzut ekranu pokazuje test w organizacji demonstracyjnej z wymyślonym przykładowym ID `e2000000-0000-4000-8000-000000000004`; wyświetlony wynik XML to również wymyślone dane przykładowe.
 
-* **Utwórz Wersję Roboczą**: Kliknij ikonę ✏️ ołówka.
-* **Usuń Wersje Robocze**: Użyj ikony 🗑️ kosza, aby usunąć nieużywane wersje robocze.
-* **Aktywuj Zmiany**: Kliknij ikonę ✅ zaznaczenia, aby opublikować wersję.
-  * **Uwaga**: Aktywowanie nowej wersji spowoduje **automatyczne dezaktywowanie** poprzedniej.
+<figure><img src="../../../../../../.gitbook/assets/edi-transformation-file-guide-panel-pl-20261113.png" alt="Interfejs DocBits po polsku: panel testowy transformacji z polem Document Id, w którym wpisano wymyślone przykładowe ID e2000000-0000-4000-8000-000000000004, przyciskiem Test i wymyślonym przykładowym wynikiem XML"><figcaption><p>Przetestuj wybraną transformację na przykładowym ID dokumentu EDI; widoczne ID i wynik XML to wymyślone dane przykładowe.</p></figcaption></figure>
 
-## 4. Edytor XSLT
+Po transformacji DocBits używa [ścieżek ekstrakcji](edi-extraction-paths-file-guide.md), aby przypisać wartości XML do pól. [Plik podglądu](edi-preview-file-guide.md) steruje czytelnym wyświetlaniem dokumentu. [Filmy EDI](edi-videos.md) pokazują cały przebieg.
 
-Plik transformacji jest edytowany za pomocą wbudowanego **Edytora XSLT**, który obsługuje podświetlanie składni i walidację.
+## Obowiązujące reguły i aktywacja
 
-* Dodaj szablony do mapowania określonych ścieżek z wejściowego XML na pożądaną strukturę.
-* Użyj logiki warunkowej (np. `<xsl:if>`, `<xsl:choose>`) do obsługi opcjonalnych lub zmiennych formatów danych.
-* Stosuj funkcje formatowania według potrzeb (np. manipulacja łańcuchami, formatowanie dat).
+Reguły właściwe dla organizacji mają pierwszeństwo przed regułami domyślnymi dla wykrytego formatu eDoc. Sprawdź aktywną konfigurację TRANSFORMATION i sprawdź, który węzeł dostarcza `invoice_type` w przekształconym XML; ścieżka zależy od formatu. Zapisanie odkłada zmiany w wersji roboczej, a po testach aktywujesz ją znacznikiem wyboru. Wyświetlony podgląd nie potwierdza zapisanego typu dokumentu. [Elektroniczna nota kredytowa jest rozpoznawana jako faktura](../credit-note-recognized-as-invoice.md) opisuje kody 381/261, później uruchamiane skrypty i środki ostrożności przed ponownym przetwarzaniem.
 
-## 5. Funkcja Podglądu (Podgląd Przekształconego XML)
-
-**Funkcja Podglądu** pozwala na testowanie i podgląd, w jaki sposób przetwarzany jest przesłany plik EDI za pomocą bieżącego **Pliku transformacji**.
-
-#### Użycie
-
-* Prześlij plik EDI za pomocą standardowego przepływu przesyłania.
-* Skopiuj **ID Dokumentu** przesłanego pliku.
-* Przejdź do interfejsu **Pliku transformacji**.
-*   Otwórz **Funkcję Podglądu**.\
-
-
-    <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=36ce2b93&#x26;sv=2" alt="" width="375"></div>
-* Wprowadź **ID Dokumentu** do pola i naciśnij **Test**.
-* Wyświetli się przetworzony **wynikowy XML**.
-
-Jest to szczególnie przydatne do debugowania odwzorowań XSLT i zapewnienia, że ostateczna struktura XML spełnia wymagania formatu.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FWbwwmXgp6nRPIb1zBpgj%252Fimage.png%3Falt%3Dmedia%26token%3Dab5766f1-45bf-484e-9aa4-ab3059705591\&width=768\&dpr=4\&quality=100\&sign=46905864\&sv=2)
-
-## 6. Przewodnik Wideo
-
-Przewodnik wideo dla tego typu pliku jest dostępny na [Stronie z Filmami.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Użyj go, aby śledzić konfigurację, edycję i podgląd.
-
-## Faktycznie używane reguły i aktywacja
-
-Reguły specyficzne dla organizacji mają pierwszeństwo przed regułami domyślnymi dla wykrytego formatu eDoc. Sprawdź aktywną TRANSFORMATION i sprawdź, który węzeł dostarcza invoice_type w przekształconym pliku XML; ścieżka zależy od formatu. Save zapisuje wersję roboczą; po testach użyj znacznika wyboru, aby ją aktywować. Wygenerowany Preview nie potwierdza zapisanego typu dokumentu. [Przewodnik rozwiązywania problemów z klasyfikacją](../credit-note-recognized-as-invoice.md) opisuje kody 381/261, późniejsze skrypty i środki ostrożności przy ponownym przetwarzaniu.
-
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-pl.png" alt="Istniejący format EDI z czterema skonfigurowanymi atrybutami."><figcaption><p>Istniejący format EDI z czterema skonfigurowanymi atrybutami.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-transformation-pl.png" alt="Aktywny atrybut TRANSFORMATION: kod źródłowy XSLT do transformacji pośredniego XML."><figcaption><p>Aktywny atrybut TRANSFORMATION: kod źródłowy XSLT do transformacji pośredniego XML.</p></figcaption></figure>
-
-
-Widoki przedstawiają istniejącą konfigurację i wersję. Ustawienia różnią się w zależności od typu dokumentu i formatu. Sprawdź zmiany w wersji roboczej przed aktywacją.
-
-Ilustracje przedstawiają polskie karty etapów oraz aktywną wersję konfiguracji w trybie tylko do odczytu. W pokazanej wersji interfejsu przycisk podglądu ma błędny podpis „Zapowiedź”; odpowiada on funkcji podglądu, oznaczonej w karcie jako „Podgląd”. Techniczne nagłówki edytora, identyfikatory atrybutów i kod konfiguracji pozostają w oryginalnej postaci.
+Techniczne nazwy atrybutów na liście, na przykład TRANSFORMATION, PREVIEW czy EXTRACTION PATHS, nie zmieniają się w zależności od języka. Widoki pokazują istniejącą konfigurację i wersję. Ustawienia różnią się w zależności od typu dokumentu i formatu. Zmiany sprawdź w wersji roboczej przed aktywacją.

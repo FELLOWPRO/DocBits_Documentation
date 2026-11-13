@@ -20,6 +20,18 @@ The **run history** below lists every run (**Run 1 · Initial run**, then each r
 
 **Example.** The documents of one supplier all stop at stage 8. In the trace you see the same five invalid fields every time. That is not an extraction problem of single documents, it is a missing default in your field configuration: fix it once and the whole cluster is recoverable.
 
+## Pre-processing decisions
+
+For the latest run the trace adds the block **Pre-processing** below the pipeline path. It lists the decisions that run before the document reaches the pipeline, in the order they ran, each with a state:
+
+| State | Meaning |
+| --- | --- |
+| **Recorded** | The module is on the record of this document. A record proves the attempt, not the success. |
+| **Skipped** | The decision did not apply to this document |
+| **Not recorded** | Nothing was stored for this decision |
+
+Where a decision depends on a configuration, the entry also shows the current organization setting and its value. The block describes the document as it stands now, so it is shown for the latest run only and not in the run history.
+
 ## Related pages
 
 * [Touchless Intelligence](touchless-intelligence.md)

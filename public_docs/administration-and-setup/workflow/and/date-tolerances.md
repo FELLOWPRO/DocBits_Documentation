@@ -12,6 +12,52 @@ Die Karten, die diese Berechnung verwenden:
 
 **Video:** Datumstoleranzen und Bereichsprüfungen · 2:09 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.vtt)
 
+<details>
+
+<summary>Transkript</summary>
+
+**Daten mit einer Toleranz** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.mp4#t=0.25)
+
+Mehrere Workflow-Karten vergleichen ein Datum mit einem Referenzdatum und erlauben eine Toleranz in Tagen. Alle zählen diese Toleranz auf dieselbe Weise.
+
+**Das Toleranzfenster** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.mp4#t=11.183)
+
+Vom Referenzdatum aus wird die Toleranz rückwärts und vorwärts gezählt. Das Ergebnis ist ein Fenster, und beide Enden gehören dazu.
+
+**Zwei Tage: Dienstag bis Samstag** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.mp4#t=21.483)
+
+Mit zwei Tagen um Donnerstag, den zweiundzwanzigsten, reicht das Fenster von Dienstag, dem zwanzigsten, bis Samstag, dem vierundzwanzigsten. Heute ist das Datum auf den DocBits-Servern, in U T C.
+
+**Sechs Operatoren, ein Fenster** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.mp4#t=34.983)
+
+Entspricht akzeptiert Daten im Fenster, Ungleich Daten außerhalb. Größer oder gleich beginnt am Anfang des Fensters, Größer als nach seinem Ende. Kleiner oder gleich und Kleiner als funktionieren umgekehrt.
+
+**Operator, Tage und Wochentage** · [0:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.mp4#t=49.416)
+
+Wählen Sie in der Karte den Operator, die Toleranz in Tagen und die Wochentage, die gezählt werden.
+
+**Nur gewählte Wochentage zählen** · [1:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.mp4#t=62.916)
+
+Erlaubte Toleranztage zählen nur die ausgewählten Wochentage. Mit Montag bis Freitag ist ein Tag nach Freitag der Montag, das Fenster reicht also von Donnerstag bis Montag.
+
+**Bereiche brauchen zwei Karten** · [1:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.mp4#t=75.05)
+
+Eine Karte allein kann nicht genau heute oder morgen akzeptieren, weil ihr Fenster in beide Richtungen gleich weit reicht. Zwei Karten nacheinander können es.
+
+**Entspricht 1 Tag, dann Größer oder gleich 0** · [1:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.mp4#t=88.016)
+
+Die erste Karte, Entspricht mit einem Tag, akzeptiert gestern, heute und morgen. Die zweite, Größer oder gleich mit null Tagen, akzeptiert heute und jeden späteren Tag. Nur heute und morgen bestehen beide.
+
+**Einen Tag mit Ungleich ausschließen** · [1:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.mp4#t=102.316)
+
+Um einen Tag auszulassen, fügen Sie eine Karte Ungleich mit null Tagen hinzu. Hier ergeben Entspricht mit drei Tagen und Größer oder gleich mit null Tagen heute bis drei Tage voraus, und Ungleich nimmt heute heraus.
+
+**Drei Karten, ein Bereich** · [1:57](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/de.mp4#t=117.083)
+
+Im Designer folgen die drei Karten auf dem Erfolgspfad aufeinander. Der Workflow läuft nur weiter, wenn alle drei erfolgreich sind: von morgen bis drei Tage voraus.
+
+</details>
+
 ## Das Toleranzfenster
 
 Vom Referenzdatum aus wird die Toleranz rückwärts und vorwärts gezählt. Das Ergebnis ist ein **Toleranzfenster**: vom Startdatum bis zum Enddatum, beide eingeschlossen.

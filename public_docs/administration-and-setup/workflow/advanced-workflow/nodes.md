@@ -61,6 +61,40 @@ Die Knoten **When / And / Then** verwenden exakt dieselben Karten, die im Abschn
 
 **Video:** Erfolg, fehlgeschlagene Bedingung und Fehler in einem Workflow-Lauf · 1:24 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/de.vtt)
 
+<details>
+
+<summary>Transkript</summary>
+
+**Wenn, Und, Dann zur Laufzeit** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/de.mp4#t=0.25)
+
+Wenn ein Workflow läuft, startet ihn die Wenn-Karte. Und-Karten prüfen Bedingungen, und Dann-Karten handeln. Was als Nächstes passiert, hängt vom Ergebnis jeder Karte ab.
+
+**Erfolg, gescheiterte Bedingung oder Fehler** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/de.mp4#t=12.216)
+
+Jede Und-Karte endet mit einem von drei Ergebnissen. Erfolg folgt dem blauen Erfolgspfad, eine gescheiterte Bedingung dem orangen Pfad und ein Fehler dem roten Fehlerpfad.
+
+**Fehlende Daten sind ein Fehler** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/de.mp4#t=24.016)
+
+Fehlende Daten sind keine gescheiterte Bedingung. Fehlt ein Feld, das die Karte braucht, fehlt eine Variable oder gibt es kein Dokument, meldet die Karte einen Fehler und nimmt den roten Fehlerpfad.
+
+**Kein oranger Pfad: Der Lauf stoppt** · [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/de.mp4#t=36.316)
+
+Schlägt eine Bedingung fehl und ihr oranger Pfad ist nicht verbunden, stoppt der Workflow an dieser Karte. Der Lauf endet als gescheiterte Bedingung.
+
+**Verbunden: nur ein weiterer Zweig** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/de.mp4#t=47.083)
+
+Ist der orange Pfad verbunden, ist eine gescheiterte Bedingung einfach ein weiterer Zweig. Der Workflow läuft dort weiter und kann trotzdem mit Erfolg enden.
+
+**Roter Fehlerpfad: Fehler auffangen** · [0:57](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/de.mp4#t=57.383)
+
+Verbinden Sie den roten Fehlerpfad mit einem Ausweg, zum Beispiel einer Aufgabe für eine Person, damit Fehler nicht unbemerkt bleiben. Der Ausweg läuft, aber der Lauf gilt trotzdem als Fehler.
+
+**Wie ein Lauf endet** · [1:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/de.mp4#t=70.783)
+
+Kurz gesagt: Jeder Fehler macht den Lauf zum Fehler. Eine gescheiterte Bedingung ohne verbundenen orangen Pfad macht ihn zur gescheiterten Bedingung. Alles andere endet mit Erfolg.
+
+</details>
+
 Knoten werden durch **farbige Kanten** verbunden. Ziehen Sie von einem Anschlusspunkt auf der **rechten** Seite eines Knotens zum Eingangsanschluss auf der **linken** Seite eines anderen Knotens, um eine Verbindung zu erstellen. Jede Farbe steht für ein anderes Ausführungsergebnis:
 
 - **Success** (blau) — der Standardpfad, der genommen wird, wenn ein Knoten erfolgreich abgeschlossen wird. Bei allen Knotentypen verfügbar.

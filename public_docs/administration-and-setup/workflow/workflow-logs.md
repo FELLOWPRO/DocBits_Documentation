@@ -10,6 +10,40 @@ Die **Workflow-Protokolle** ermöglichen es Benutzern, zu analysieren, welche Wo
 
 **Video:** Die Workflow-Logs lesen · 1:30 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.vtt)
 
+<details>
+
+<summary>Transkript</summary>
+
+**Workflow-Logs öffnen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=0.25)
+
+Jedes Dokument speichert die Logs der Workflows, die darauf gelaufen sind. Öffnen Sie im Dokumenten-Dashboard die Aktionen eines Dokuments und wählen Sie Workflow-Logs.
+
+**Läufe und ihre Ergebnisse** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=11.016)
+
+Oben sehen Sie, wie viele Läufe es gab und wie viele mit einem Fehler, einer gescheiterten Bedingung oder Erfolg endeten. Darunter steht jeder Lauf mit Workflow, Zeit, Dauer und Ergebnis.
+
+**Der Pfad eines Laufs** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=22.516)
+
+Ziehen Sie den Trenner nach links, damit die Logs mehr Platz haben. Klicken Sie dann auf einen Lauf, um seinen Pfad zu sehen. Jede Karte zeigt ihr Ergebnis: grün für Erfolg, orange für eine gescheiterte Bedingung, rot für einen Fehler. Hier endete die Und-Karte mit einer gescheiterten Bedingung, also lief die Dann-Karte danach nicht.
+
+**Warum eine Karte so endete** · [0:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=43.05)
+
+Wählen Sie eine Karte, um ihr Log zu lesen. Es sagt, was die Karte verglichen hat und warum sie so endete. Hier ist das Dokument bereit zur Prüfung, aber die Karte erwartet die zweite Genehmigung.
+
+**Ein Fehler und sein Grund** · [0:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=56.45)
+
+Ein Lauf, der mit einem Fehler endet, zeigt die fehlgeschlagene Karte in Rot. Hier konnte die Und-Karte die Lieferadresse nicht aus dem Dokument lesen. Fehlende Daten sind immer ein Fehler, also lief die Dann-Karte danach nicht.
+
+**Läufe finden** · [1:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=71.216)
+
+Bei vielen Läufen finden Sie mit der Suche einen Workflow nach Namen, und mit dem Filterknopf grenzen Sie die Liste nach Status oder Datum ein.
+
+**Hinweis zum Ausführungslimit** · [1:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=80.316)
+
+Oben erscheint ein Hinweis, wenn ein Workflow auf diesem Dokument sein Ausführungslimit erreicht hat. Das Video über Ausführungslimits erklärt ihn.
+
+</details>
+
 Um auf die Workflow-Protokolle zuzugreifen:
 
 1. Navigieren Sie zum **Dashboard**.

@@ -22,6 +22,36 @@ Eine Entscheidungstabelle wird durch ihre Prüfkarte tatsächlich beim Tabellend
 
 **Video:** Entscheidungstabellen in Zuweisungskarten · 2:04 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/de.vtt)
 
+<details>
+
+<summary>Transkript</summary>
+
+**Entscheidungstabellen in zwei Schritten** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/de.mp4#t=0.25)
+
+Entscheidungstabellen bestimmen, wer ein Dokument bearbeitet. In einem Workflow arbeiten sie in zwei Schritten. Eine Und-Karte führt die Entscheidungstabelle aus und behält, was sie zurückgibt. Dann-Karten nutzen diese Rückgaben, um das Dokument zuzuweisen oder Aufgaben anzulegen.
+
+**Erfolg, gescheiterte Bedingung oder Fehler** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/de.mp4#t=17.65)
+
+Die Und-Karte ist erfolgreich, wenn die Tabelle mindestens einen Treffer für das Dokument liefert. Ohne Treffer endet sie als gescheiterte Bedingung und folgt dem orangen Pfad. Ohne ausgewählte Tabelle oder wenn die Tabelle nicht laufen kann, endet sie als Fehler.
+
+**Tabelle ausführen, Rückgaben speichern** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/de.mp4#t=34.35)
+
+Fügen Sie die Und-Karte hinzu, die prüft, ob die Entscheidungstabelle Rückgaben hat, und wählen Sie die Tabelle. Stellen Sie dann ein, dass sie die zurückgegebenen Daten speichert. Sonst haben die Karten danach nichts, womit sie arbeiten können.
+
+**Erster Benutzer bekommt das Dokument** · [0:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/de.mp4#t=49.416)
+
+Auf dem Erfolgspfad gibt die Dann-Karte, die nach dem ersten zurückgegebenen Benutzer zuweist, das Dokument dem ersten Benutzer der Tabelle. Jeder zurückgegebene Benutzer, auch der erste, bekommt eine Aufgabe oder eine Benachrichtigung. Geben Sie der Aufgabe Titel, Beschreibung und Priorität, und wählen Sie, ob auch eine E-Mail gesendet wird. Gruppen in den Rückgaben werden ignoriert.
+
+**Keine Felder: alles aus der Tabelle** · [1:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/de.mp4#t=78.316)
+
+Die Karte, die das Dokument sequenziell einem Benutzer oder einer Gruppe nach der Entscheidungstabelle zuweist, hat dagegen gar keine Felder. Sie nimmt Benutzer und Gruppen aus der Tabelle, jeweils mit der Priorität, die die Tabelle liefert, oder einem Standardwert. Am Ende des Laufs bekommt der Eintrag mit der niedrigsten Prioritätszahl das Dokument, außer eine andere Karte hat es schon direkt zugewiesen.
+
+**Welche Karte für welche Aufgabe** · [1:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/de.mp4#t=103.65)
+
+Kurz gesagt: Um das Dokument einer Person zu geben und alle anderen zu informieren, nehmen Sie die Karte für den ersten Benutzer. Soll die Tabelle alles entscheiden, auch die Prioritäten, nehmen Sie die sequenzielle Karte ohne Felder. Um nur Aufgaben anzulegen, nehmen Sie die Aufgabenkarte für Rückgaben der Entscheidungstabelle.
+
+</details>
+
 ## Die Rückgabe bis zum Dokument verfolgen
 
 Erstellen Sie für die Übung zwei überschneidungsfreie Betragsregeln. Schreiben Sie vorab auf, welcher Benutzerbezug bei höchstens 1000 und welcher oberhalb 1000 erwartet wird. Prüfen Sie Regelmodus und Trefferverhalten im tatsächlichen Tabelleneditor.

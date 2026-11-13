@@ -87,6 +87,40 @@ De **Workflow Logs** stellen gebruikers in staat om te analyseren welke workflow
 
 **Video:** De Workflowlogboeken lezen · 1:36 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.vtt)
 
+<details>
+
+<summary>Transcriptie</summary>
+
+**Workflowlogboeken openen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=0.25)
+
+Elk document bewaart de logboeken van de Workflows die erop liepen. Open in het documentdashboard de acties van een document en kies Workflowlogboeken.
+
+**Uitvoeringen en hun resultaten** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=11.416)
+
+Bovenaan ziet u hoeveel uitvoeringen er waren, en hoeveel eindigden met een fout, een mislukte conditie of succes. Daaronder staat elke uitvoering met Workflow, tijd, duur en resultaat.
+
+**Het pad van één uitvoering** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=25.316)
+
+Sleep de scheidingslijn naar links voor meer ruimte voor de logboeken. Klik dan op een uitvoering om het pad te zien. Elke kaart toont haar resultaat: groen voor succes, oranje voor een mislukte conditie, rood voor een fout. Hier eindigde de En-kaart met een mislukte conditie, dus de Dan-kaart erna liep niet.
+
+**Waarom een kaart zo eindigde** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=47.35)
+
+Selecteer een kaart om haar logboek te lezen. Dat zegt wat de kaart vergeleek en waarom ze zo eindigde. Hier is het document klaar voor validatie, maar de kaart verwacht een tweede goedkeuring.
+
+**Een fout en de oorzaak** · [1:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=60.916)
+
+Een uitvoering die met een fout eindigt, toont de falende kaart in rood. Hier kon de En-kaart het bezorgadres niet uit het document lezen. Ontbrekende gegevens zijn altijd een fout, dus de Dan-kaart erna liep niet.
+
+**Uitvoeringen vinden** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=76.083)
+
+Bij veel uitvoeringen vindt u met de zoekfunctie een Workflow op naam, en met de filterknop beperkt u de lijst op status of datum.
+
+**Melding over de uitvoeringslimiet** · [1:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=85.716)
+
+Bovenaan verschijnt een melding als een Workflow op dit document zijn uitvoeringslimiet heeft bereikt. De video over uitvoeringslimieten legt dat uit.
+
+</details>
+
 Om toegang te krijgen tot workflowlogs:
 
 1. Navigeer naar het **Dashboard**.

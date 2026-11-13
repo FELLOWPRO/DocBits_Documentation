@@ -76,9 +76,101 @@ De Advanced Workflow-werkbalk loopt langs de onderkant van het canvas en geeft j
 
 **Video:** Advanced Workflow-designer: kaarten en paden · 2:20 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.vtt)
 
+<details>
+
+<summary>Transcriptie</summary>
+
+**Een nieuwe Workflow starten** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=0.25)
+
+Open het Workflow-dashboard en selecteer Nieuwe workflow.
+
+**Kies Geavanceerde workflow** · [0:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=5.416)
+
+Kies Geavanceerde workflow. De designer opent met een Begin-knooppunt, waar elke flow begint.
+
+**Wanneer, En en Dan** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=12.916)
+
+Voeg kaarten toe met het menu Toevoegen of met een rechtermuisklik op het canvas. De drie kaartcategorieën zijn Wanneer, En en Dan.
+
+**Wanneer: de triggerconditie** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=25.683)
+
+De Wanneer-kaart is de triggerconditie. Ze bepaalt wanneer de Workflow start, bijvoorbeeld voor een bepaald documenttype.
+
+**En: een extra conditie** · [0:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=39.183)
+
+En-kaarten voegen extra condities toe. Ze controleren het document, bijvoorbeeld de status. Het resultaat is succes, of een mislukte conditie.
+
+**Dan: de actiekaart** · [0:52](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=52.616)
+
+Dan-kaarten zijn de actiekaarten. Ze wijzigen het document, bijvoorbeeld een veld instellen of het document goedkeuren.
+
+**Slepen om te verbinden** · [1:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=61.616)
+
+Om twee kaarten te verbinden, sleept u van een aansluitpunt rechts op de ene kaart naar de ingang links op de volgende.
+
+**Blauw: Succes** · [1:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=69.983)
+
+Blauw is het succespad. Elke kaart heeft het. De flow neemt het als de kaart klaar is.
+
+**Oranje: Mislukte conditie** · [1:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=77.716)
+
+Oranje is het pad voor een mislukte conditie. Alleen En-kaarten hebben het. De flow neemt het als de conditie niet klopt.
+
+**Rood: Fout** · [1:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=87.75)
+
+Rood is het foutpad. En- en Dan-kaarten hebben het. De flow neemt het als een kaart met een fout mislukt.
+
+**Als-anders met foutafhandeling** · [1:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=96.45)
+
+Samen vormen deze paden een als-anders met foutafhandeling. Succes voert een actie uit, een mislukte conditie een andere, en een fout een terugvaloptie, bijvoorbeeld een taak voor een persoon.
+
+**Eén pad per status** · [1:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=109.383)
+
+Voor meerdere gevallen koppelt u Documentstatus-kaarten via hun oranje paden. Elke kaart controleert één status, zo krijgt elke status een eigen pad.
+
+**Het pad naar en vanaf een kaart** · [2:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/nl.mp4#t=120.783)
+
+Klik op een kaart om haar uitvoeringspad te markeren: de kaarten die een document passeert om haar te bereiken, en de kaarten die erna kunnen volgen. Al het andere wordt gedimd. Hier is de taak alleen bereikbaar vanaf de Wanneer-kaart, via het rode foutpad van de Documentstatus-kaart.
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.mp4" %}
 
 **Video:** Workflow-beschrijvingen en notities · 1:16 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Leg uw Workflow uit** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.mp4#t=0.25)
+
+Een Workflow met meerdere vertakkingen is beter te onderhouden als hij zichzelf uitlegt. De designer heeft daarvoor twee hulpmiddelen: een beschrijving van de hele Workflow en notities op het canvas.
+
+**Beschrijf de hele Workflow** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.mp4#t=14.383)
+
+Selecteer Beschrijving bewerken in de werkbalk en zeg in een of twee zinnen waarvoor de Workflow dient. De beschrijving wordt bewaard als u de Workflow opslaat.
+
+**Een notitie toevoegen** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.mp4#t=26.416)
+
+Om één stap uit te leggen, rechtsklikt u op het canvas, opent u het menu Toevoegen en kiest u Opmerking. De notitie verschijnt waar u klikte.
+
+**Dubbelklik om te schrijven** · [0:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.mp4#t=38.216)
+
+Dubbelklik op de notitie om erin te schrijven, tot vijfhonderd tekens. Klik ernaast als u klaar bent.
+
+**Verplaatsen en vergroten** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.mp4#t=47.05)
+
+Sleep de notitie naast de kaarten die ze uitlegt, en trek aan de rechteronderhoek om haar groter te maken.
+
+**Geef notities een kleur** · [0:55](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.mp4#t=55.183)
+
+Klik met rechts op een notitie om de kleur te wijzigen. Kleuren helpen notities te groeperen, bijvoorbeeld blauw voor uitleg en rood voor open vragen.
+
+**Notities worden nooit uitgevoerd** · [1:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/nl.mp4#t=66.516)
+
+Notities zijn alleen voor mensen. Ze hangen aan geen enkele kaart en worden nooit uitgevoerd, dus ze veranderen niets aan de Workflow.
+
+</details>
 
 - **+ Add** — open het nodemenu om een node toe te voegen (zie [Nodes](nodes.md)).
 - **Undo / Redo** — stap achteruit of vooruit door je wijzigingen.

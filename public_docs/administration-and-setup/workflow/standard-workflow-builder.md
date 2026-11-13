@@ -8,6 +8,32 @@ De **Standaardworkflow** builder is de lineaire, op kaarten gebaseerde editor vo
 
 **Video:** Een Standaard-Workflow maken · 1:11 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/nl.vtt)
 
+<details>
+
+<summary>Transcriptie</summary>
+
+**Nieuwe workflow, Standaard** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/nl.mp4#t=0.25)
+
+Een Standaard-Workflow automatiseert een document op de eenvoudige manier. Klik op Nieuwe workflow en kies Standaard.
+
+**Eén Wanneer-kaart start de Workflow** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/nl.mp4#t=11.216)
+
+Geef de Workflow een naam. Elke Standaard-Workflow heeft precies één Wanneer-kaart: die bepaalt wanneer de Workflow start. Hier: als het documenttype Factuur is.
+
+**En-kaarten: alle moeten slagen** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/nl.mp4#t=24.55)
+
+En-kaarten filteren verder. Voeg er zoveel toe als nodig, of geen: ze moeten allemaal slagen, anders stopt de Workflow hier.
+
+**Dan-kaarten handelen, op volgorde** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/nl.mp4#t=35.55)
+
+Dan-kaarten doen het werk, de een na de ander. Hier wordt de factuur aan een gebruiker toegewezen. Sla op met Workflow opslaan, niet Sjabloon opslaan. Een opgeslagen Workflow is meteen actief.
+
+**Grenzen van Standaard-Workflows** · [0:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/nl.mp4#t=49.75)
+
+Standaard-Workflows blijven eenvoudig. Ze hebben één Wanneer-kaart, alle En-kaarten moeten slagen, en er zijn geen andere paden: mislukt een conditie, dan stopt de Workflow gewoon. Kaarten worden één voor één getest. Voor vertakkingen, foutafhandeling, variabelen of notities gebruikt u een Advanced Workflow.
+
+</details>
+
 Maak een volledige Standard Workflow in de echte DocBits-interface: selecteer de factuur, controleer het factuurnummer en een bedrag boven 1000, wijs een beoordelaar toe en wijzig de status. Sla de regel op, voer drie testscenario’s uit en controleer het werkelijke resultaat op het document.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/nl.mp4" %}

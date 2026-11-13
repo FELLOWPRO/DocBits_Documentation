@@ -2,36 +2,37 @@
 
 ## Przegląd
 
-Ta strona opisuje, jak importować dane dostawcy i zamówienia zakupu do DocBits za pomocą pliku z wartościami oddzielonymi przecinkami (.csv).
+Ta strona opisuje, jak przygotować import danych dostawcy lub zamówienia zakupu do DocBits z pliku CSV.
 
-**Ważne:** Przed importowaniem jakichkolwiek danych, kluczowe jest **dokładne sprawdzenie pliku .csv**, aby zapewnić dokładność danych i prawidłową konfigurację. Importowanie niepoprawnych danych może prowadzić do niespójności. Zapoznaj się z sekcjami [**Specyfikacje CSV dla zamówienia zakupu**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#specyfikacje-csv-dla-zamowienia-zakupu) lub [**Specyfikacje CSV dla dostawcy**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#specyfikacje-csv-dla-dostawcy) w celu uzyskania szczegółowych informacji na temat wymaganych i opcjonalnych pól. Jeśli wymagane pola są puste, proces importu zakończy się niepowodzeniem.
+**Ważne:** Przed importem jakichkolwiek danych **dokładnie sprawdź plik .csv**, aby dane były poprawne, a konfiguracja właściwa. Import błędnych danych może prowadzić do niespójności. Szczegóły pól wymaganych i opcjonalnych znajdziesz w sekcjach [**Specyfikacje CSV dla zamówienia zakupu**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#specyfikacje-csv-dla-zamowienia-zakupu) oraz [**Specyfikacje CSV dla dostawcy**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#specyfikacje-csv-dla-dostawcy). Sprawdź akceptowane kolumny i reguły walidacji dla swojej wersji API, zanim użyjesz produkcyjnego zbioru danych.
 
-**Walidacja:** Zawsze weryfikuj, czy twój plik .csv zawiera wszystkie niezbędne kolumny, zgodnie z odpowiednią sekcją specyfikacji, przed próbą importu.
+**Walidacja:** Traktuj poniższe listy jako listę kontrolną do przygotowania importu. Potwierdź pola wymagane, pola dodatkowe i kilka reprezentatywnych wierszy dla swojego wdrożenia; listy te nie gwarantują, że każdy nieprawidłowy wiersz odrzuci cały plik. Sprawdź odpowiedź importu i dodatkowo zweryfikuj zamierzone rekordy.
 
 ## Ogólne wymagania:
 
 **Format daty:**
 
-Wszystkie daty podane w arkuszu .csv **muszą** być zgodne z następującym formatem:
+Wszystkie daty podane w pliku .csv **muszą** być zgodne z następującym formatem:
 
 YYYY-MM-DD HH:MM:SS
 
 **Wymagane pola:**
 
-Zarówno dla importów dostawcy, jak i zamówienia zakupu, wszystkie kolumny oznaczone jako "Wymagane" w odpowiednich specyfikacjach **muszą istnieć w pliku .csv i muszą zawierać wartość w każdym wierszu**. Jeśli jakiekolwiek wymagane pole jest puste lub brakujące w wierszu, proces importu zakończy się niepowodzeniem.
+Przygotuj i sprawdź identyfikatory bazowe wymienione poniżej. Nie zakładaj, że żądanie importu sprawdzi za Ciebie kompletność lub poprawność biznesową Twojego pliku CSV.
 
 ### Specyfikacje CSV dla zamówienia zakupu
 
-**Pola, które są wymagane** - (kolumna z nazwą musi istnieć i musi zawierać dane)
+**Pola bazowe, które przygotowujesz i sprawdzasz**
 
 * `purchase_order_number`
 
-**Pola, które mogą być uwzględnione**
+**Pola, które można uwzględnić**
 
 * `warehouse_id`
 * `location_id`
 * `supplier_id`
 * `supplier_name`
+* `header_total_amount`
 * `order_date`
 * `requested_shipment_date`
 * `promised_delivery_date`
@@ -75,7 +76,7 @@ Zarówno dla importów dostawcy, jak i zamówienia zakupu, wszystkie kolumny ozn
 * `received_base_mou_quantity`
 * `promised_delivery_date`
 * `requested_ship_date`
-* `unit_code`
+* `unit_of_measure`
 * `unit_code_price`
 * `unit_price`
 * `unit_price_per`
@@ -90,19 +91,21 @@ Zarówno dla importów dostawcy, jak i zamówienia zakupu, wszystkie kolumny ozn
 
 ### Specyfikacje CSV dla dostawcy
 
-**Pola, które są wymagane** - (kolumna z nazwą musi istnieć i musi zawierać dane)
+**Pola bazowe, które przygotowujesz i sprawdzasz**
 
 * `customer_number`
 * `supplier_number`
 * `supplier_name`
 * `country_code`
 
-**Pola, które mogą być uwzględnione**
+**Pola, które można uwzględnić**
 
+* `address_id`
 * `address_1`
 * `address_2`
 * `address_3`
 * `address_4`
+* `country_main_division`
 * `town_city`
 * `zip_code`
 * `supplier_phone`
@@ -127,7 +130,7 @@ Zarówno dla importów dostawcy, jak i zamówienia zakupu, wszystkie kolumny ozn
 * `custom_field_9`
 * `custom_field_10`
 * `status`
-* `account_number`
+* `account_id`
 * `financial_partner_id`
 * `financial_partner_name`
 * `iban`
@@ -135,45 +138,33 @@ Zarówno dla importów dostawcy, jak i zamówienia zakupu, wszystkie kolumny ozn
 
 ## Punkt dostępu
 
-Aby zaimportować dane, wykonaj następujące kroki:
+### Wybór środowiska i organizacji
 
-1. Odwiedź: [https://api.docbits.com/](https://api.docbits.com/)
-2.  Kliknij przycisk **"Authorize"**.
+1. Otwórz dokumentację API dla środowiska, którego chcesz użyć. Dokumentacja produkcyjna to [https://api.docbits.com/](https://api.docbits.com/); do danych testowych używaj środowiska testowego zatwierdzonego w Twojej organizacji. Przed przygotowaniem żądania sprawdź wersję API i wartość w polu **Servers**.
+2. Aby wykonać autoryzowany import, kliknij **Authorize** i użyj klucza API wydanego dla właściwej organizacji i użytkownika. Nigdy nie kopiuj klucza do zrzutu ekranu, pliku CSV ani udostępnianego przykładu. Klucz API utworzysz i sprawdzisz na stronie [Integracja i SSO](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/integration), w sekcji [Klucz API](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/integration#klucz-api).
 
-    <figure><img src="../.gitbook/assets/import_csv_1.png" alt=""><figcaption></figcaption></figure>
-3.  Wprowadź klucz API i kliknij **"Authorize"**
+Konsola API DocBits jest dostępna wyłącznie w języku angielskim. Dlatego nazwy przycisków i pól w tej sekcji podajemy po angielsku i nie dołączamy zrzutów ekranu konsoli. Poniższy zrzut ekranu pokazuje po polsku, gdzie utworzysz klucz API i gdzie znajdziesz identyfikatory swojej organizacji. Nie podano w nim klucza API ani pliku CSV i nie kliknięto **Execute**. Widoczne nazwy kluczy są wymyślonymi danymi przykładu.
 
-    * Klucz API można znaleźć w DocBits w Ustawienia -> Ustawienia globalne -> Integracja
-    * **Uwaga:** Klucz API podany w twoim żądaniu określa docelową organizację oraz kontekst użytkownika, w którym dane będą importowane.
+<figure><img src="../.gitbook/assets/csv-import-klucz-api-pl-20261113.png" alt="Strona Integracja i SSO w DocBits po polsku z kartą Klucz API, tabelą Klucze API z przyciskiem Utwórz klucz API oraz kartą ID z polami ID organizacji i ID podorganizacji"><figcaption><p>W Ustawieniach otwórz <strong>Integracja i SSO</strong>. W karcie <strong>Klucz API</strong> przycisk <strong>Utwórz klucz API</strong> tworzy nowy klucz, a tabela <strong>Klucze API</strong> pokazuje istniejące klucze. W karcie <strong>ID</strong> znajdziesz wartości <strong>ID organizacji</strong> i <strong>ID podorganizacji</strong>, których użyjesz w żądaniu importu. Widoczne klucze, nazwy i identyfikatory są wymyślonymi danymi przykładu.</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_api.png" alt=""><figcaption></figcaption></figure>
+### Otwieranie operacji importu
 
-    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="" width="563"><figcaption></figcaption></figure>
-4. Naciśnij **CTRL + F** (lub **CMD + F** na Macu), aby otworzyć funkcję wyszukiwania i wyszukaj `/master_data_lookup/import_data`.
-5.  Kliknij żądanie, aby zobaczyć jego szczegóły, a następnie kliknij "**Try it out**", aby kontynuować.
+1. Znajdź **POST /master_data_lookup/import_data** i rozwiń ten wpis.
+2. Kliknij **Try it out**, aby włączyć formularz żądania w konsoli. Ten krok sam w sobie nie wykonuje importu. Przyciskiem **Cancel** opuścisz tryb edycji bez wysyłania importu.
 
-    <figure><img src="../.gitbook/assets/import_csv_3.png" alt=""><figcaption></figcaption></figure>
+### Przygotowanie treści żądania
 
-    <figure><img src="../.gitbook/assets/import_csv_6.png" alt=""><figcaption></figcaption></figure>
-6.  Teraz możesz wprowadzić wymagane parametry w ciele żądania.\\
+* **sub_org_id:** Wpisz zamierzony, autoryzowany identyfikator podorganizacji, jeśli import należy do podorganizacji. W przeciwnym razie usuń wygenerowany przykład `string` i świadomie pozostaw pole puste, w razie potrzeby przyciskiem **Send empty value**. Puste pole nie wskazuje organizacji testowej i nie ogranicza zastąpienia do jednej podorganizacji: zakresem pozostaje cała organizacja. Identyfikator podorganizacji odczytasz na stronie [Integracja i SSO](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/integration#id).
+* **data_type:** Wpisz `supplier` lub `purchase_order` dla opisanych na tej stronie procesów. Zastąp wygenerowany przykład `string`; to pole jest wymagane.
+* **file / csv_data:** Ten przewodnik korzysta z pliku CSV. Wyczyść wygenerowany przykład w polu **csv_data**, zanim wybierzesz plik: niepuste `csv_data` jest w sprawdzonym importerze przetwarzane przed plikiem. Wybierz sprawdzony plik CSV w polu **file** i potwierdź, że wyświetlana jest jego nazwa. Nie zostawiaj wartości przykładu z formularza jako treści swojego żądania.
+* **delimiter:** Wybierz faktyczny separator swojego pliku CSV: przecinek (`,`) lub średnik (`;`). Sprawdź pierwsze wiersze w prostym edytorze tekstu. Nie zakładaj, że średnik ustawiony wstępnie w formularzu odpowiada Twojemu plikowi albo wartości domyślnej serwera.
 
-    **Parametry żądania:**
+### Sprawdzenie opcji zastępowania i obsługi konfliktów
 
-    Podczas składania żądania importu należy określić następujące parametry:
+Te opisy dotyczą sprawdzonej funkcji importu. Potwierdź zakres zastępowania i zachowanie przy konfliktach dla używanej wersji API; widoki dokumentacji API nie potwierdzają tych efektów.
 
-    * **sub\_org\_id:** Usuń wszelki tekst z pola tekstowego, aby upewnić się, że opcja "Send empty value" jest włączona.
-    * **data\_type:** Ten parametr określa typ danych, które są importowane. Może to być `supplier` lub `purchase_order`, w zależności od zawartości twojego pliku .csv.
-    * **replace\_all:** Ten parametr boolean określa, czy wszystkie istniejące dane w odpowiedniej tabeli bazy danych (`supplier` lub `purchase_order`) dla określonej organizacji powinny zostać usunięte przed wstawieniem nowych danych z pliku .csv. Ustaw to na `true`, aby zastąpić wszystkie istniejące dane lub `false`, aby dodać lub zaktualizować nowe dane.
-    *   **delimiter:** Ten parametr określa znak używany do oddzielania poszczególnych wartości w każdym wierszu twojego pliku danych. **Ważne jest, aby zidentyfikować poprawny delimiter użyty w twoim pliku.** Powszechnymi delimiterami są przecinek (`,`) i średnik (`;`).
+* **replace_all:** Podana wartość domyślna to `false`. Wartość `true` usuwa istniejące rekordy wybranego typu danych przed wczytaniem pliku CSV. Zakres zastępowania to organizacja, z filtrem podorganizacji, jeśli ją podano. Sprawdź ten zakres świadomie przed użyciem zastępowania; puste `sub_org_id` może objąć wybrany typ danych w całej organizacji. Wartość `false` oznacza, że istniejące rekordy są obsługiwane zgodnie z **on_conflict**.
+* **on_conflict:** Wybierz `IGNORE`, aby pozostawić bez zmian pasujące istniejące rekordy dostawcy lub zamówienia zakupu, albo `REPLACE`, aby zaktualizować je z pliku CSV. Podana wartość domyślna to `REPLACE`. Ta opcja nie chroni rekordów przed wcześniejszym usunięciem przez **replace_all**.
+* **auto_generate_id:** Pozostaw tę wartość na `false` i podaj wymagane identyfikatory biznesowe w pliku CSV. Opcjonalne automatyczne generowanie identyfikatorów nie jest używane przez sprawdzone importy dostawców i zamówień zakupu; nie licz na to, że utworzy brakujące numery dostawcy lub zamówienia zakupu.
 
-        **Jak sprawdzić delimiter:**
-
-        1. Otwórz swój plik danych (np. plik `.csv`) w prostym edytorze tekstu (takim jak Notatnik w Windows, TextEdit na Macu lub podobnym).
-        2. Przejrzyj pierwsze kilka wierszy danych. Szukaj znaku, który konsekwentnie pojawia się między różnymi informacjami w każdym wierszu. Ten znak to twój delimiter.
-        3. Ustaw parametr `delimiter` w swoim żądaniu importu na ten zidentyfikowany znak (czy to `,`, czy `;`). Użycie niewłaściwego delimiteru uniemożliwi poprawne przetworzenie danych i spowoduje nieudany import.
-    * **on\_conflict & auto\_generate\_id:** Funkcjonalność obsługi konfliktów danych (`on_conflict`) i automatycznego generowania identyfikatorów (`auto_generate_id`) jest obecnie **niezaimplementowana** dla tych typów danych.
-
-    <figure><img src="../.gitbook/assets/import_csv_4.png" alt=""><figcaption></figcaption></figure>
-7.  Jeśli zweryfikowałeś, że wszystkie informacje są poprawne, możesz rozpocząć proces importu, klikając przycisk **"Execute"**.
-
-    <figure><img src="../.gitbook/assets/import_csv_5.png" alt=""><figcaption></figcaption></figure>
+Kliknij **Execute** dopiero wtedy, gdy sprawdzisz środowisko docelowe, organizację, zakres podorganizacji, plik CSV i opcje oraz gdy import jest autoryzowany. Sprawdź odpowiedź i zweryfikuj zamierzone rekordy, zanim wykonasz kolejne importy. Dla zamówień zakupu zobacz [Pulpit zamówień zakupu](https://docs.docbits.com/polish/end-user-and-partner-section/end-user-section/purchase-order-dashboard). Zrzut ekranu na tej stronie pokazuje tylko, gdzie znajdziesz klucz API i identyfikatory organizacji; nie dowodzi wykonanego importu ani pełnej walidacji danych CSV.

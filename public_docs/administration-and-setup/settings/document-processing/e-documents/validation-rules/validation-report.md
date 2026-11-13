@@ -8,7 +8,7 @@ Diese Seite richtet sich an Personen, die Rechnungen bearbeiten. Administratoren
 
 ## Wann ein Dokument den Status „Fehler" erhält
 
-Ist die Prüfung für den Dokumenttyp **aktiviert** und **blockierend**, erhält eine Rechnung mit einem blockierenden Prüfhinweis den Status **Error**. Öffnen Sie das Dokument über das Dashboard. Die Fehleransicht zeigt links das XML und rechts den Grund.
+Ist die Prüfung für den Dokumenttyp **aktiviert** und **blockierend**, erhält eine Rechnung mit einem blockierenden Prüfhinweis den Status **Error**. Eine Rechnung, die der Validator selbst zurückgewiesen hat, trägt stattdessen den eigenen E-Rechnungs-Validierungsstatus, siehe [Die Fehleransicht einer abgelehnten E-Rechnung](validation-error-screen.md). Öffnen Sie das Dokument über das Dashboard. Die Fehleransicht zeigt links das XML und rechts den Grund.
 
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-de.png" alt="Die Fehleransicht: das XML der Rechnung und der erste blockierende Prüfhinweis mit einem nächsten Schritt. Beispielrechnung mit fiktiven Namen."><figcaption><p>Die Fehleransicht: das XML der Rechnung und der erste blockierende Prüfhinweis mit einem nächsten Schritt. Beispielrechnung mit fiktiven Namen.</p></figcaption></figure>
 
@@ -30,6 +30,8 @@ Der Bericht beginnt mit den Fakten zur Datei:
 | **Number / date** | Die Rechnungsnummer und das Rechnungsdatum, aus dem XML gelesen. |
 
 Unter den Dateiangaben sehen Sie das **Ergebnis**, zum Beispiel **Not conformant**, mit der Anzahl der Fehler, Warnungen und Informationen. Hat Ihre Organisation den Schweregrad einer Regel geändert, zeigt eine zweite Angabe **Organisation severity** die Anzahlen nach den Einstellungen Ihrer Organisation.
+
+> Das Urteil lautet **Rejected** anstelle eines Konformitätsworts, wenn das Dokument in der E-Rechnungs-Validierung zurückgewiesen wurde; das Urteil trägt dann ein Abbruch-Symbol. Der nächste Schritt verweist auf die Fehlerliste. Ein Bericht, dessen Ergebnis nicht lesbar ist, zeigt die Rechnung nie als konform.
 
 ### Ergebnis je Ebene
 

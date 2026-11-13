@@ -20,6 +20,8 @@ Der **Pipeline Path** zeigt 14 Schritte: Intake, Classification, E-Document Vali
 | **Nothing Recorded** (gestrichelt) | Für diesen Schritt wurden keine Daten aufgezeichnet |
 | **Not applicable** | Der Schritt gilt für dieses Dokument nicht |
 
+Wählen Sie den Schritt **PO Match**, um die PO-Match-Detailansicht mit den Auftragszeilen hinter diesem Schritt zu öffnen, wo der Verlauf sie anbietet.
+
 ### Stage Log
 
 Das **Stage Log** unter dem Pfad listet dieselben Schritte mit dem auf, was jeder von ihnen aufgezeichnet hat. Ein Statuspunkt und das Statuswort stehen links und rechts in jeder Zeile.
@@ -27,6 +29,7 @@ Das **Stage Log** unter dem Pfad listet dieselben Schritte mit dem auf, was jede
 * Jeder Wert ist ein **point chip**: eine Zahl mit ihrer Einheit, zum Beispiel **Confidence 100 %**, **Threshold 60 %**, **Failed rules 0**, **8 missing fields** oder **0 mapping gaps**. Prozentwerte erscheinen als `97 %`, nie als `0.97`.
 * **Details** öffnet die vollständige Liste der Werte, die ein Schritt aufgezeichnet hat, einschließlich der geprüften Alternativen.
 * Der Schritt, der das Dokument blockiert hat, nennt den Grund, zum Beispiel **Field validation failed**.
+* Der Eintrag **Intake** sagt, wie das Dokument in DocBits gelangt ist, zum Beispiel dass es an einem bestimmten Datum per E-Mail eingegangen ist. Zeichnet der Lauf ein eigenes Intake-Stadium auf, steht der Satz in dieser Zeile statt in einem separaten Eintrag.
 * Ein Wert, den kein Schritt aufgezeichnet hat, erscheint als **Not recorded**, nie als erfundener Wert. Werte sind Zahlen und feste Begriffe, nie Dokumenttext.
 * **Show Raw Diagnostics** blendet die Rohdaten ein, wenn der Support danach fragt.
 

@@ -6,6 +6,8 @@ Wenn Sie eine fehlerhafte E-Rechnung hochladen, geht sie in DocBits nicht verlor
 
 > Eine Rechnung erhält den Status **Error** nur, wenn die Prüfung für ihren Dokumenttyp **aktiviert** und **blockierend** ist. Siehe [Prüfung je Dokumenttyp](validation-per-document-type.md).
 
+Eine E-Rechnung, die der Validator zurückgewiesen hat, trägt ihren eigenen E-Rechnungs-Validierungsstatus anstelle eines einfachen **Error**. Das Statusabzeichen im Dashboard ergänzt einen Tooltip, der den Grund für den Stopp des Dokuments nennt, sodass Sie eine zurückgewiesene Rechnung beim Filtern der Dokumentliste von anderen Fehlern unterscheiden können. Die Fehleransicht und der Bericht unten sind in beiden Fällen gleich.
+
 ## Beispiel 1: Die XML-Datei ist beschädigt
 
 Ein Lieferant sendet eine XML-Datei, in der ein schließendes Tag nicht zum öffnenden Tag passt. Die Datei kann nicht gelesen werden, daher stoppt DocBits bei der ersten Prüfung, **L1 · Well-formedness**.
@@ -30,6 +32,16 @@ Das XML ist in Ordnung, aber ein Pflichtfeld fehlt. Zum Beispiel kann der Verkä
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-de.png" alt="Fehleransicht einer rein synthetischen Beispielrechnung: die Ebene L3 · Business Rules, der Regelcode und ein nächster Schritt"><figcaption><p>Fehleransicht einer rein synthetischen Beispielrechnung: die Ebene L3 · Business Rules, der Regelcode und ein nächster Schritt</p></figcaption></figure>
 
 Die Karte nennt die Ebene **L3 · Business Rules** und den Code `BR-CO-26`. Der Bericht listet alle Prüfhinweise der Rechnung auf, siehe [Prüfbericht](validation-report.md).
+
+## Wenn DocBits das Dokument nicht prüfen konnte
+
+Nicht jeder Fehler ist eine Zurückweisung. Kann der Validator die Datei überhaupt nicht lesen, beginnt die Meldung mit _could not check this document_ und nennt die Prüfung, an der sie gestoppt ist, zum Beispiel `XML-PARSE` bei einer beschädigten XML-Datei oder `PDF-UNREADABLE` bei einem PDF, das sich nicht öffnen lässt. DocBits zeigt dieselbe Erklärungskarte wie bei einer zurückgewiesenen Rechnung, mit dem Namen der Prüfung, dem Code und der technischen Meldung.
+
+Das ist ein technischer Fehlschlag, kein Urteil über die Rechnung:
+
+* DocBits markiert das Dokument nicht als zurückgewiesen.
+* Ein Neustart kann gelingen, weil die Ursache im Lesen der Datei liegen kann. Wählen Sie **Restart Processing**, bevor Sie den Absender um eine neue Rechnung bitten.
+* Erscheint nach einem Neustart derselbe Code erneut, senden Sie die Datei und den Code an Ihren Administrator.
 
 ## Die Next-step-Box und die Schaltflächen
 

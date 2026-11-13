@@ -8,15 +8,15 @@ Cette page s'adresse aux personnes qui traitent les factures. Les administrateur
 
 ## Quand un document passe en erreur
 
-Si la validation est **activée** et **bloquante** pour le type de document, une facture avec un résultat bloquant obtient le statut **Error**. Une facture que le validateur lui-même a rejetée porte à la place le statut dédié de validation e-invoice, voir [L'écran d'erreur d'une e-invoice rejetée](validation-error-screen.md). Ouvrez le document depuis le tableau de bord. La vue d'erreur affiche le XML à gauche et le motif à droite.
+Si la validation est **on** et **blocking** pour le type de document, une facture avec un résultat bloquant obtient le statut **Error**. Une facture que le validateur lui-même a rejetée porte à la place le statut dédié de validation e-invoice, voir [L'écran d'erreur d'une e-invoice rejetée](validation-error-screen.md). Ouvrez le document depuis le tableau de bord. La vue d'erreur affiche le XML à gauche et le motif à droite.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-fr.png" alt="Écran d’erreur d’une facture d’exemple entièrement fictive. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification."><figcaption><p>Écran d’erreur d’une facture d’exemple entièrement fictive. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-fr.png" alt="The error view: the XML of the invoice and the first blocking finding with a next step. Example invoice with fictional names."><figcaption><p>Écran d’erreur d’une facture d’exemple entièrement fictive. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
 
 La carte de droite indique la couche qui a rejeté la facture (par exemple **L3 · Business Rules**), le code de la règle (par exemple `BR-CO-26`), une courte explication et une **Next step**. Cliquez sur **View validation details** pour ouvrir le rapport complet.
 
 ## Lire le rapport
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-fr.png" alt="Rapport de la facture fictive avec les données du fichier et le résultat."><figcaption><p>Rapport de la facture fictive avec les données du fichier et le résultat.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-fr.png" alt="The top of the report: file data, the verdict and the result for each level"><figcaption><p>Rapport de la facture fictive avec les données du fichier et le résultat.</p></figcaption></figure>
 
 Le rapport commence par les informations sur le fichier :
 
@@ -51,7 +51,7 @@ Le tableau **Result per level** indique combien d'erreurs, d'avertissements et d
 
 ## Les résultats
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-fr.png" alt="Chaque résultat a un code, un niveau, un texte lisible et une indication pour le corriger."><figcaption><p>Chaque résultat a un code, un niveau, un texte lisible et une indication pour le corriger.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-fr.png" alt="Each finding has a code, a level, a text you can read and a hint how to fix it"><figcaption><p>Chaque résultat a un code, un niveau, un texte lisible et une indication pour le corriger.</p></figcaption></figure>
 
 Chaque résultat correspond à une ligne :
 

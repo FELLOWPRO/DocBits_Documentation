@@ -22,11 +22,11 @@ Wählen Sie **Lookup-Konfiguration erstellen**. Geben Sie einen **Nachschlagenam
 
 <figure><img src="../../../.gitbook/assets/fuzzy-data-create-lookup-de-20261113.png" alt="Dialog Stammdatenkonfiguration erstellen mit Dokumenttyp INVOICE, eingetragenem Beispielnamen supplier_by_tax_id, leerem Lookup Dataset Name, Konfliktverarbeitung Best Score, Kontext Typ HEADER und ausgeschaltetem Alle abgleichen"><figcaption><p>Der Dialog wurde für die Dokumentation geöffnet und mit dem erfundenen Beispielnamen <strong>supplier_by_tax_id</strong> gefüllt; eine Konfiguration wurde nicht erstellt.</p></figcaption></figure>
 
-Die Auswahl in der **Konfliktverarbeitung** sind **Best Score**, **Return None** und **Return First**. Verwenden Sie **Return None**, wenn eine Person zwischen mehrdeutigen Lieferanten entscheiden soll; lesen Sie die Beispiele unten, bevor Sie **Best Score** oder **Alle abgleichen** wählen.
+In der **Konfliktverarbeitung** stehen **Best Score**, **Return None** und **Return First** zur Auswahl. Verwenden Sie **Return None**, wenn eine Person zwischen mehrdeutigen Lieferanten entscheiden soll; lesen Sie die Beispiele unten, bevor Sie **Best Score** oder **Alle abgleichen** wählen.
 
 ## Felder für die Lieferantenerkennung wählen
 
-Klappen Sie **Supplier Lookup** auf, um die Zuordnungen zu sehen. Die Tabelle zeigt das **Nachschlagefeld** aus dem Datensatz, das **Validierungsfeld** auf dem Dokument, das optionale **Übergeordnete Feld** und ob **Suchbar** oder **Auto-Trigger** eingeschaltet ist. In der Beispielorganisation ist Supplier Name suchbar und zusätzlich als Auto-Trigger markiert, Vat Number nur suchbar; in einer anderen Organisation können die Markierungen abweichen.
+Klappen Sie **Supplier Lookup** auf, um die Zuordnungen zu sehen. Die Tabelle zeigt das **Nachschlagefeld** aus dem Datensatz, das **Validierungsfeld** auf dem Dokument, das optionale Feld **Übergeordnetes Feld** und ob **Suchbar** oder **Auto-Trigger** eingeschaltet ist. In der Beispielorganisation ist Supplier Name suchbar und zusätzlich als Auto-Trigger markiert, Vat Number nur suchbar; in einer anderen Organisation können die Markierungen abweichen.
 
 <figure><img src="../../../.gitbook/assets/fuzzy-data-supplier-fields-de-20261113.png" alt="Aufgeklappte Gruppe Supplier Lookup in der Beispielorganisation Musterfirma GmbH mit den Zuordnungen Supplier Name, Vat Number und City und den Spalten Nachschlagefeld, Validierungsfeld, Übergeordnetes Feld, Suchbar, Auto-Trigger und Aktionen"><figcaption><p>Prüfen Sie, welche Felder an der Lieferantenerkennung teilnehmen, bevor Sie die Abgleichsregel ändern.</p></figcaption></figure>
 

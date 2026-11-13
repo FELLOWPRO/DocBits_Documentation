@@ -2,6 +2,10 @@
 
 Smart Search Ranking coloca los documentos que buscas al principio de una búsqueda en el panel. Una búsqueda por palabra clave encuentra todos los documentos que contienen tu palabra; Smart Search Ranking añade un paso: una IA lee los mejores resultados y pone primero los documentos que realmente tratan de tu búsqueda. Las coincidencias exactas —números de factura, números de pedido, nombres de proveedor— siempre se quedan arriba.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/es.mp4" %}
+Smart Search Ranking en el panel (narración en español). [Reproductor con subtítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/es.html) · [Transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/es.txt)
+{% endembed %}
+
 ## Qué cambia
 
 | | Orden por palabra clave | Con Smart Search Ranking |

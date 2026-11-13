@@ -60,6 +60,40 @@ Wait ANY 和 OR 在至少一个源节点选中已连接路径时合并分支。O
 
 **视频:** Workflow 运行中的成功、条件失败和错误 · 1:14 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/zh.vtt)
 
+<details>
+
+<summary>文字稿</summary>
+
+**运行时的“当”、“和”、“然后”** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/zh.mp4#t=0.25)
+
+Workflow 运行时，由“当”卡启动。和卡检查条件，然后卡执行操作。接下来发生什么取决于每张卡片的结果。
+
+**成功、失败条件或错误** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/zh.mp4#t=11.016)
+
+每张和卡以三种结果之一结束。成功走蓝色的成功路径，失败条件走橙色路径，错误走红色的错误路径。
+
+**缺少数据是错误** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/zh.mp4#t=21.75)
+
+缺少数据不是失败条件。如果卡片需要的字段不在文档中、缺少变量或没有文档，卡片会报告错误并走红色的错误路径。
+
+**没有橙色路径：运行停止** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/zh.mp4#t=33.716)
+
+如果条件不满足且其橙色路径没有连接，Workflow 会在这张卡片处停止。这次运行以失败条件结束。
+
+**已连接：只是另一个分支** · [0:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/zh.mp4#t=43.35)
+
+如果橙色路径已连接，失败条件只是另一个分支。Workflow 在那里继续，仍然可能以成功结束。
+
+**红色错误路径：捕获错误** · [0:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/zh.mp4#t=51.65)
+
+把红色错误路径连接到一个备用方案，例如给某人的任务，这样错误就不会被忽视。备用方案会运行，但这次运行仍标记为错误。
+
+**运行如何结束** · [1:03](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/zh.mp4#t=63.45)
+
+简而言之：任何错误都会使运行成为错误。没有连接橙色路径的失败条件会使其成为失败条件。其他情况都以成功结束。
+
+</details>
+
 节点通过**彩色边**连接。从节点**右侧**的连接手柄拖动到另一个节点**左侧**的输入手柄，即可创建连接。每种颜色表示不同的执行结果：
 
 * **Success**（蓝色）— 节点成功完成时采用的默认路径。所有节点类型均可使用。

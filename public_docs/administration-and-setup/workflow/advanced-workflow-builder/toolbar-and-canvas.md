@@ -76,9 +76,101 @@
 
 **视频:** Advanced Workflow 设计器：卡片和路径 · 2:03 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.vtt)
 
+<details>
+
+<summary>文字稿</summary>
+
+**开始新的 Workflow** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=0.25)
+
+打开工作流仪表板，选择新工作流程。
+
+**选择高级工作流程** · [0:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=4.15)
+
+选择高级工作流程。设计器打开时带有一个开始节点，每个 Workflow 都从这里开始。
+
+**“当”、“和”、“然后”** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=11.65)
+
+通过添加菜单或在画布上右键单击来添加卡片。三类卡片是“当”、“和”、“然后”。
+
+**“当”：触发条件** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=23.583)
+
+“当”卡是触发条件。它决定 Workflow 何时启动，例如针对某种文档类型。
+
+**和：附加条件** · [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=36.983)
+
+和卡添加更多条件。它们检查文档，例如它的状态。结果是成功或失败条件。
+
+**然后：操作卡** · [0:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=50.316)
+
+然后卡是操作卡。它们修改文档，例如设置字段或批准文档。
+
+**拖动以连接** · [0:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=56.716)
+
+要连接两张卡片，从一张卡片右侧的连接点拖到下一张卡片左侧的输入点。
+
+**蓝色：成功** · [1:03](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=63.95)
+
+蓝色是成功路径。每张卡片都有。卡片完成时，Workflow 走这条路径。
+
+**橙色：失败条件** · [1:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=71.116)
+
+橙色是失败条件路径。只有和卡有。条件不满足时，Workflow 走这条路径。
+
+**红色：错误** · [1:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=79.116)
+
+红色是错误路径。和卡和然后卡都有。卡片出错时，Workflow 走这条路径。
+
+**带错误捕获的如果-否则** · [1:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=87.116)
+
+这些路径一起构成带错误捕获的如果-否则。成功执行一个操作，失败条件执行另一个，错误执行备用方案，例如给某人的任务。
+
+**每种状态一条路径** · [1:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=98.216)
+
+对于多种情况，通过失败条件路径把文档状态卡串起来。每张卡检查一种状态，这样每种状态都有自己的路径。
+
+**通往卡片及从卡片出发的路径** · [1:48](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/zh.mp4#t=108.35)
+
+点击一张卡片即可突出显示它的执行路径：文档到达它所经过的卡片，以及之后可能执行的卡片。其他内容会变暗。这里只能从“当”卡经由状态卡的红色错误路径到达该任务。
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/zh.mp4" %}
 
 **视频:** Workflow 描述和笔记 · 1:00 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**说明您的 Workflow** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/zh.mp4#t=0.25)
+
+有多个分支的 Workflow 如果能自我说明，就更容易维护。设计器为此提供两种工具：整个 Workflow 的描述，以及画布上的笔记。
+
+**描述整个 Workflow** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/zh.mp4#t=11.816)
+
+在工具栏中选择编辑描述，用一两句话说明 Workflow 的用途。保存 Workflow 时会一并保存描述。
+
+**添加笔记** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/zh.mp4#t=20.816)
+
+要说明某个单独的步骤，在画布上右键单击，打开添加菜单并选择笔记。笔记会出现在您点击的位置。
+
+**双击书写** · [0:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/zh.mp4#t=30.55)
+
+双击笔记即可在其中书写，最多五百个字符。写完后点击旁边。
+
+**移动和调整大小** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/zh.mp4#t=37.083)
+
+把笔记拖到它所说明的卡片旁边，拉动右下角可以放大。
+
+**为笔记设置颜色** · [0:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/zh.mp4#t=43.95)
+
+右键单击笔记可以更改颜色。颜色有助于给笔记分组，例如蓝色用于说明，红色用于待解决的问题。
+
+**笔记从不运行** · [0:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/zh.mp4#t=53.183)
+
+笔记只给人看。它们不连接任何卡片，也从不运行，所以不会改变 Workflow 的行为。
+
+</details>
 
 - **+ Add** — 打开节点菜单以添加节点（参见[节点](nodes.md)）。
 - **Undo / Redo** — 向后或向前逐步恢复或重做更改。

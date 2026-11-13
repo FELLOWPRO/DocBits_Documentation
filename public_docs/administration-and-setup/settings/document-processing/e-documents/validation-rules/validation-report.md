@@ -8,7 +8,7 @@ Esta página é para quem processa faturas. Os administradores definem as regras
 
 ## Quando um documento fica com erro
 
-Se a validação estiver **ativada** e em **bloqueio** para o tipo de documento, uma fatura com um resultado bloqueante fica com o estado **Error**. Abra o documento no painel. A vista de erro mostra o XML à esquerda e o motivo à direita.
+Se a validação estiver **ativada** e em **bloqueio** para o tipo de documento, uma fatura com um resultado bloqueante fica com o estado **Error**. Uma fatura rejeitada pelo próprio validador tem, em vez disso, o estado dedicado de validação de e-invoice, ver [O ecrã de erro de uma fatura eletrónica rejeitada](validation-error-screen.md). Abra o documento no painel. A vista de erro mostra o XML à esquerda e o motivo à direita.
 
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-pt.png" alt="Ecrã de erro de uma fatura de exemplo inteiramente fictícia. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações."><figcaption><p>Ecrã de erro de uma fatura de exemplo inteiramente fictícia. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações.</p></figcaption></figure>
 
@@ -30,6 +30,8 @@ O relatório começa com os factos sobre o ficheiro:
 | **Number / date** | O número e a data da fatura, lidos do XML. |
 
 Abaixo dos dados do ficheiro vê o **veredicto**, por exemplo **Not conformant**, com o número de erros, avisos e mensagens de informação. Se a sua organização alterou a gravidade de uma regra, uma segunda linha **Organisation severity** mostra as contagens segundo as definições da sua organização.
+
+> O veredicto apresenta **Rejected** em vez de uma palavra de conformidade quando o documento foi rejeitado na validação de e-invoice, e o veredicto passa então a ter um ícone de cancelamento. O passo seguinte remete para a lista de erros. Um relatório cujo resultado não é legível nunca apresenta a fatura como conforme.
 
 ### Resultado por nível
 

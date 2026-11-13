@@ -2,6 +2,10 @@
 
 Smart Search Ranking zet de documenten die u bedoelt bovenaan een zoekopdracht in het dashboard. Een zoekopdracht op trefwoord vindt elk document dat uw woord bevat; Smart Search Ranking voegt één stap toe: een AI leest de beste treffers en zet de documenten die echt over uw zoekopdracht gaan vooraan. Exacte treffers — factuurnummers, ordernummers, leveranciersnamen — blijven altijd bovenaan.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/nl.mp4" %}
+Smart Search Ranking in het dashboard (Nederlandse voice-over). [Speler met ondertitels](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/nl.html) · [Transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/nl.txt)
+{% endembed %}
+
 ## Wat verandert
 
 | | Trefwoordvolgorde | Met Smart Search Ranking |

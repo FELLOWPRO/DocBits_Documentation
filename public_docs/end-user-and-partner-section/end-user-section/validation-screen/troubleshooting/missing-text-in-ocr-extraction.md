@@ -1,47 +1,35 @@
 # Fehlender Text in der OCR-Extraktion
 
-Die Abbildungen zeigen den Prüfablauf an einer fiktiven Rechnung mit vorhandenem OCR-Text. Sie stellen keinen reproduzierten Fall mit fehlendem Text dar.
+Ist auf einem Dokument Text sichtbar, ein Feld lässt sich aber nicht extrahieren, prüfen Sie zuerst, ob DocBits diesen Text erkannt hat. Ein gescanntes Bild und der eingebettete Text einer PDF-Datei können unterschiedliche Ergebnisse liefern. Ändern Sie keine Extraktionsregel, bevor Sie wissen, welcher Text verfügbar ist.
 
-## **Problem**
+## OCR-Ansicht prüfen
 
-In einigen Fällen kann es vorkommen, dass Text in der **OCR-Ansicht** zu fehlen scheint, was die Extraktion mit der Extraktionsfunktion verhindert.
+1. Öffnen Sie das Dokument in der **Feldvalidierung**.
+2. Wählen Sie in der Symbolleiste rechts das Symbol **OCR-Ansicht**. Die OCR-Ansicht öffnet sich in einem eigenen Browser-Tab.
+3. Suchen Sie das fehlende Wort oder die fehlende Zahl in der eingeblendeten Textebene. Fehlt es dort, kann die Feldextraktion es nicht aus dieser Textebene übernehmen. Ist es vorhanden, prüfen Sie stattdessen die Feldzuordnung.
 
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_5-de.png" alt="Validierungsansicht zur Kontrolle erkannter Felder an einer fiktiven deutschen Rechnung."><figcaption><p>Validierungsansicht zur Kontrolle erkannter Felder an einer fiktiven deutschen Rechnung.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-1234-ocr-view-de-20261113.png" alt="OCR-Ansicht einer fiktiven deutschen Rechnung: erkannte Wörter liegen als Text über der Seite"><figcaption><p>Vergleichen Sie den Text auf dem Dokument mit den Wörtern in der OCR-Ansicht — hier sind der Titel Rechnung, die Rechnungsnummer INV-2026-0412, das Datum 14.09.2026 und der Lieferantenname Musterfirma GmbH als Text vorhanden. Das Beispiel zeigt erkannten Text, keinen fehlgeschlagenen Fall.</p></figcaption></figure>
 
-Um dies zu überprüfen, klicken Sie auf die Schaltfläche **OCR-Ansicht** in der Symbolleiste auf der rechten Seite. Wenn der Text dort nicht angezeigt wird, bedeutet dies, dass er nicht für die Extraktion verfügbar ist.
+## OCR statt eingebettetem E-Text für einen Lieferanten versuchen
 
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_6-de.png" alt="OCR-Ansicht mit erkanntem Text der fiktiven deutschen Rechnung."><figcaption><p>OCR-Ansicht mit erkanntem Text der fiktiven deutschen Rechnung.</p></figcaption></figure>
+Ist **E-Text verwenden, falls verfügbar** eingeschaltet, kann DocBits Text verwenden, der bereits in der PDF-Datei eingebettet ist. Text, der nur in einem Bild steht, kann in dieser Ebene fehlen. Gehen Sie für einen Lieferanten, dessen Dokumente dieses Problem haben, so vor:
 
-## **Ursache**
+1. Öffnen Sie ein Dokument dieses Lieferanten in der **Feldvalidierung**.
+2. Wählen Sie in der Symbolleiste rechts **Mehr Optionen** (drei Punkte).
+3. Schalten Sie **E-Text verwenden, falls verfügbar** aus.
+4. Lesen Sie den Hinweis zum Neustart und wählen Sie **Bestätigen**, um die Änderung zu speichern und das Dokument neu zu verarbeiten. Mit **Abbrechen** bleibt die Einstellung unverändert.
+5. Öffnen Sie nach der Verarbeitung erneut die **OCR-Ansicht** und prüfen Sie, ob der fehlende Text erscheint.
 
-Eine mögliche Ursache ist, dass der Text, den Sie extrahieren möchten, Teil eines Bildes (z. B. eines Logos oder eines gescannten Abschnitts) innerhalb des Dokuments ist.\
-Wenn die E-Text-Funktion aktiviert ist, wird Text, der auf Bildern oder Logos erscheint, nicht in die extrahierte Textebene aufgenommen. Daher kann dieser Text nicht über die standardmäßige Extraktionslogik zugegriffen oder extrahiert werden.
+<figure><img src="../../../../.gitbook/assets/dbdc-1234-supplier-etext-de-20261113.png" alt="Menü Mehr Optionen in der Feldvalidierung mit dem noch eingeschalteten Schalter E-Text verwenden, falls verfügbar"><figcaption><p>Der Schalter für den E-Text des Lieferanten liegt in den Mehr Optionen der Feldvalidierung und ist hier noch eingeschaltet; in Schritt 3 schalten Sie ihn aus.</p></figcaption></figure>
 
-## **Lösung**
+<figure><img src="../../../../.gitbook/assets/dbdc-1234-restart-confirm-de-20261113.png" alt="Dialog mit dem Hinweis, dass das Dokument neu gestartet werden muss, und den Schaltflächen Abbrechen und Bestätigen"><figcaption><p>Bestätigen startet die Verarbeitung des geöffneten Dokuments neu, damit die Lieferanteneinstellung wirkt.</p></figcaption></figure>
 
-Um dieses Problem zu beheben, deaktivieren Sie die E-Text-Funktion—entweder für den [spezifischen Anbieter](missing-text-in-ocr-extraction.md#e-text-fur-einen-bestimmten-anbieter-deaktivieren) oder für die [gesamte Organisation](missing-text-in-ocr-extraction.md#e-text-fur-die-gesamte-organisation-deaktivieren). Nach der Umstellung und erneuten Verarbeitung prüfen Sie die OCR-Ansicht nochmals. Ob Bildtext erkannt wird, hängt auch von Qualität und Aufbau des Dokuments ab.
+Das Menü **Mehr Optionen** enthält weitere Einträge, die andere Aufgaben betreffen: **Strukturierte Extraktion nutzen (KI)** und **KI-Modell (Kopffelder und Tabelle)** beschreibt [Lieferantenspezifisches KI-Modell für Feld- und Tabellenextraktion](../supplier-specific-ai-model-for-field-and-table-extraction.md). Was **Dokumentenfluss** zeigt, steht unter [Dokumentenfluss](../../dashboard/document-flow.md); **Layout Builder** öffnet den [Layout-Editor](../../../../administration-and-setup/setup/document-types/layout-builder.md).
 
-### **E-Text für einen bestimmten Anbieter deaktivieren**
+## Standard der Organisation ändern
 
-1. Öffnen Sie ein Dokument vom spezifischen Anbieter in der **Feldvalidierung**.
-2.  Klicken Sie auf das Drei-Punkte-Menü in der Symbolleiste auf der rechten Seite.
+Ein Administrator kann **Einstellungen → Dokumentenverarbeitung → OCR-Einstellungen → Allgemeine OCR-Einstellungen** öffnen und **E-Text verwenden, falls verfügbar** für die Organisation ausschalten. Das ändert den Standard für die spätere Verarbeitung; bereits betroffene Dokumente müssen Sie separat prüfen und neu verarbeiten. Die übrigen OCR-Steuerungen finden Sie unter [OCR-Einstellungen](../../../../administration-and-setup/settings/document-processing/ocr-settings.md).
 
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_2-de.png" alt="Weitere Optionen der Feldvalidierung öffnen."><figcaption><p>Weitere Optionen der Feldvalidierung öffnen.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-1234-org-ocr-settings-de-20261113.png" alt="Karte Allgemeine OCR-Einstellungen mit dem organisationsweiten Schalter E-Text verwenden, falls verfügbar"><figcaption><p>Die Organisationseinstellung hilft, wenn das Problem Dokumente mehrerer Lieferanten betrifft. Dieselbe Karte zeigt die Option DESKEW verwenden, wenn verfügbar und die AI OCR Version.</p></figcaption></figure>
 
-3.  Deaktivieren Sie die Option **E-Text verwenden, falls verfügbar**.
-
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_3-de.png" alt="Option E-Text verwenden, falls verfügbar im Dokumentmenü."><figcaption><p>Option E-Text verwenden, falls verfügbar im Dokumentmenü.</p></figcaption></figure>
-
-4.  Klicken Sie auf **Bestätigen**, um die Verarbeitung für das Dokument neu zu starten.
-
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_4-de.png" alt="Bestätigungsdialog vor einer Änderung der E-Text-Verwendung."><figcaption><p>Bestätigungsdialog vor einer Änderung der E-Text-Verwendung.</p></figcaption></figure>
-
-### E-Text für die gesamte Organisation deaktivieren
-
-1.  Gehen Sie zu **Einstellungen → Verarbeitung von Dokumenten → OCR-Einstellungen**.
-
-<figure><img src="../../../../.gitbook/assets/s150-settings_ocr-de.png" alt="OCR-Einstellungen in der deutschen Oberfläche."><figcaption><p>OCR-Einstellungen in der deutschen Oberfläche.</p></figcaption></figure>
-
-2.  Deaktivieren Sie unter **Allgemeine OCR-Einstellungen** die Option **E-Text verwenden, falls verfügbar**.
-
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_1-de.png" alt="Allgemeine OCR-Einstellungen mit der Option zur Verwendung von E-Text."><figcaption><p>Allgemeine OCR-Einstellungen mit der Option zur Verwendung von E-Text.</p></figcaption></figure>
+Ist der Text nach der erneuten Verarbeitung weiterhin nicht vorhanden, prüfen Sie die Scanqualität und wenden Sie sich mit der Dokument-ID und der Seitenzahl an Ihren DocBits-Administrator oder den Support. Senden Sie kein vertrauliches Dokument in einer öffentlichen Supportanfrage.

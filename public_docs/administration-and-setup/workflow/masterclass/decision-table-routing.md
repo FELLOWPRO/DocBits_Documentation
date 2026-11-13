@@ -18,6 +18,36 @@ De beslissingstabelvoorwaarde roept de tabeldienst werkelijk aan om de tabel te 
 
 **Video:** Beslissingstabellen in toewijzingskaarten · 2:01 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/nl.vtt)
 
+<details>
+
+<summary>Transcriptie</summary>
+
+**Beslissingstabellen in twee stappen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/nl.mp4#t=0.25)
+
+Beslissingstabellen bepalen wie een document behandelt. In een Workflow werken ze in twee stappen. Een En-kaart voert de tabel uit en bewaart wat die teruggeeft. Dan-kaarten gebruiken dat om het document toe te wijzen of taken te maken.
+
+**Succes, mislukte conditie of fout** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/nl.mp4#t=16.85)
+
+De En-kaart slaagt als de tabel minstens één treffer voor het document teruggeeft. Zonder treffer eindigt ze als mislukte conditie en volgt ze het oranje pad. Zonder geselecteerde tabel, of als de tabel niet kan lopen, eindigt ze als fout.
+
+**Tabel uitvoeren en resultaten opslaan** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/nl.mp4#t=33.95)
+
+Voeg de En-kaart Beslissingstabel bevat resultaten toe en kies de beslissingstabel. Stel haar dan in om de teruggegeven gegevens op te slaan. Zonder dat hebben de kaarten erna niets om mee te werken.
+
+**Eerste gebruiker krijgt het document, iedereen een taak** · [0:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/nl.mp4#t=49.05)
+
+Op het succespad geeft de Dan-kaart die toewijst aan de eerste teruggegeven gebruiker, het document aan de eerste gebruiker uit de tabel. Elke teruggegeven gebruiker, ook de eerste, krijgt een taak of melding. Geef de taak een titel, beschrijving en prioriteit, en kies of er ook een e-mail gaat. Groepen in de resultaten worden genegeerd.
+
+**Geen velden: alles uit de tabel** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/nl.mp4#t=76.416)
+
+De kaart die het document sequentieel toewijst aan Gebruiker/Groep op basis van de beslissingstabel, heeft daarentegen geen velden. Ze neemt gebruikers en groepen uit de tabel, elk met de prioriteit die de tabel geeft, of een standaardwaarde. Aan het eind van de uitvoering krijgt de regel met het laagste prioriteitsnummer het document, tenzij een andere kaart het al direct heeft toegewezen.
+
+**Welke kaart voor welke taak** · [1:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/nl.mp4#t=100.383)
+
+Kortom: om het document aan één persoon te geven en de rest te informeren, gebruikt u de kaart voor de eerste gebruiker. Laat de tabel alles beslissen, ook prioriteiten? Neem dan de sequentiële kaart zonder velden. Wilt u alleen taken, gebruik dan de taakkaart voor resultaten van de beslissingstabel.
+
+</details>
+
 ## Kaarten en voorbeeldparameters
 
 Deze waarden beschrijven kaartparameters, geen volledig importeerbare workflow. Vervang YOUR_* door eigen testkeuzes. De ontwerper beheert het verborgen aanroeper-ID. Catalogus: Dev, DocFlow 2.10.38, 21 oktober 2026; controleer versies en rechten van uw organisatie afzonderlijk.

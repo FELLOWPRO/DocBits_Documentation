@@ -12,6 +12,52 @@ De kaarten die deze berekening gebruiken:
 
 **Video:** Datumtoleranties en bereikcontroles · 2:11 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.vtt)
 
+<details>
+
+<summary>Transcriptie</summary>
+
+**Datums met een tolerantie** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4#t=0.25)
+
+Diverse Workflow-kaarten vergelijken een datum met een referentiedatum, met een tolerantie in dagen. Ze tellen die tolerantie allemaal hetzelfde.
+
+**Het tolerantievenster** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4#t=11.016)
+
+Vanaf de referentiedatum wordt de tolerantie terug en vooruit geteld. Het resultaat is een venster, en beide uiteinden horen erbij.
+
+**Twee dagen: dinsdag tot zaterdag** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4#t=20.816)
+
+Met twee dagen rond donderdag de tweeëntwintigste loopt het venster van dinsdag de twintigste tot zaterdag de vierentwintigste. Vandaag is de datum op de DocBits-servers, in U T C.
+
+**Zes operatoren, één venster** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4#t=33.583)
+
+Is gelijk aan accepteert datums binnen het venster, Niet gelijk datums erbuiten. Groter of gelijk aan begint bij het begin van het venster, Groter dan na het einde. Kleiner of gelijk aan en Kleiner dan werken andersom.
+
+**Operator, dagen en weekdagen** · [0:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4#t=49.216)
+
+Kies in de kaart de operator, de tolerantie in dagen en de weekdagen die meetellen.
+
+**Alleen geselecteerde weekdagen tellen** · [1:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4#t=62.716)
+
+Toegestane tolerantiedagen tellen alleen de geselecteerde weekdagen. Met maandag tot en met vrijdag is één dag na vrijdag maandag, dus het venster loopt van donderdag tot maandag.
+
+**Bereiken vragen twee kaarten** · [1:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4#t=74.916)
+
+Eén kaart kan niet precies vandaag of morgen accepteren, want haar venster reikt in beide richtingen even ver. Twee kaarten na elkaar kunnen dat wel.
+
+**Is gelijk aan 1 dag, dan Groter of gelijk aan 0 dagen** · [1:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4#t=88.383)
+
+De eerste kaart, Is gelijk aan met één dag, accepteert gisteren, vandaag en morgen. De tweede, Groter of gelijk aan met nul dagen, accepteert vandaag en elke latere dag. Alleen vandaag en morgen halen beide.
+
+**Een dag uitsluiten met Niet gelijk** · [1:44](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4#t=104.983)
+
+Om één dag uit te sluiten, voegt u een kaart Niet gelijk met nul dagen toe. Hier geven Is gelijk aan met drie dagen en Groter of gelijk aan met nul dagen vandaag tot drie dagen vooruit; Niet gelijk haalt vandaag weg.
+
+**Drie kaarten, één bereik** · [1:59](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/nl.mp4#t=119.883)
+
+In de designer volgen de drie kaarten elkaar op het succespad. De Workflow gaat alleen verder als alle drie slagen: van morgen tot drie dagen vooruit.
+
+</details>
+
 ## Het tolerantievenster
 
 Vanaf de referentiedatum wordt de tolerantie terug en vooruit geteld. Het resultaat is een **tolerantievenster**: van de begindatum tot en met de einddatum, beide inbegrepen.

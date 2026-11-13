@@ -60,6 +60,40 @@ De **When / And / Then** nodes gebruiken precies dezelfde kaarten die worden bes
 
 **Video:** Succes, mislukte conditie en fout in een Workflow-uitvoering · 1:26 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.vtt)
 
+<details>
+
+<summary>Transcriptie</summary>
+
+**Wanneer, En, Dan tijdens de uitvoering** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.mp4#t=0.25)
+
+Loopt een Workflow, dan start de Wanneer-kaart hem. En-kaarten controleren condities, Dan-kaarten handelen. Wat daarna gebeurt, hangt af van het resultaat van elke kaart.
+
+**Succes, mislukte conditie of fout** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.mp4#t=13.25)
+
+Elke En-kaart eindigt met een van drie resultaten. Succes volgt het blauwe succespad, een mislukte conditie het oranje pad, en een fout het rode foutpad.
+
+**Ontbrekende gegevens zijn een fout** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.mp4#t=25.183)
+
+Ontbrekende gegevens zijn geen mislukte conditie. Ontbreekt een veld dat de kaart nodig heeft, ontbreekt een variabele of is er geen document, dan meldt de kaart een fout en neemt ze het rode foutpad.
+
+**Mislukte conditie, geen oranje pad: de uitvoering stopt** · [0:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.mp4#t=38.816)
+
+Mislukt een conditie en is haar oranje pad niet verbonden, dan stopt de Workflow bij die kaart. De uitvoering eindigt als mislukte conditie.
+
+**Verbonden: een mislukte conditie is gewoon een vertakking** · [0:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.mp4#t=49.35)
+
+Is het oranje pad wel verbonden, dan is een mislukte conditie gewoon een extra vertakking. De Workflow gaat daar verder en kan toch met succes eindigen.
+
+**Rood foutpad: vang fouten op met een terugvaloptie** · [0:59](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.mp4#t=59.883)
+
+Verbind het rode foutpad met een terugvaloptie, bijvoorbeeld een taak voor een persoon, zodat fouten niet onopgemerkt blijven. De terugvaloptie loopt, maar de uitvoering telt toch als fout.
+
+**Hoe een uitvoering eindigt** · [1:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/nl.mp4#t=72.416)
+
+Kortom: elke fout maakt de uitvoering tot een fout. Een mislukte conditie zonder verbonden oranje pad maakt er een mislukte conditie van. Al het andere eindigt als succes.
+
+</details>
+
 Nodes worden verbonden door **gekleurde verbindingen**. Sleep van een handvat aan de **rechterkant** van een node naar het invoerhandvat aan de **linkerkant** van een andere node om een verbinding te maken. Elke kleur duidt op een andere uitvoeringsuitkomst:
 
 - **Success** (blauw) — het standaardpad dat wordt gevolgd wanneer een node succesvol wordt voltooid. Beschikbaar op alle nodetypes.

@@ -4,13 +4,15 @@
 
 Lorsque vous importez une facture électronique erronée, DocBits ne la perd pas. Le document reçoit le statut **Error**, et l'écran d'erreur vous indique ce qui ne va pas, où, et ce qu'il faut faire ensuite. Cette page présente deux exemples : un fichier XML mal formé et une facture qui enfreint une règle commerciale.
 
-> Une facture reçoit le statut **Error** uniquement lorsque la validation est **activée** et **bloquante** pour son type de document. Voir [Validation pour chaque type de document](validation-per-document-type.md).
+> Une facture reçoit le statut **Error** uniquement lorsque la validation est **on** et **blocking** pour son type de document. Voir [Validation pour chaque type de document](validation-per-document-type.md).
+
+Une e-invoice rejetée par le validateur porte son propre statut de validation e-invoice au lieu d'un simple **Error**. Le badge de statut du dashboard ajoute une infobulle qui indique pourquoi le document s'est arrêté, afin que vous puissiez distinguer une facture rejetée des autres erreurs lorsque vous filtrez la liste des documents. L'écran d'erreur et le rapport ci-dessous sont identiques dans les deux cas.
 
 ## Exemple 1 : le fichier XML est endommagé
 
 Un fournisseur envoie un fichier XML dans lequel une balise fermante ne correspond pas à la balise ouvrante. Le fichier ne peut pas être lu, et DocBits s'arrête donc au premier contrôle, **L1 · Well-formedness**.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-fr.png" alt="Écran d’erreur d’un XML fictif dont une balise fermante a été volontairement endommagée. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification."><figcaption><p>Écran d’erreur d’un XML fictif dont une balise fermante a été volontairement endommagée. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-fr.png" alt="The error screen for a damaged XML file. The faulty line is marked in the XML. Example file with fictional data."><figcaption><p>Écran d’erreur d’un XML fictif dont une balise fermante a été volontairement endommagée. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
 
 L'écran comporte deux parties :
 
@@ -19,7 +21,7 @@ L'écran comporte deux parties :
 
 Sélectionnez **View validation details** pour ouvrir le [rapport de validation](validation-report.md) complet.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-fr.png" alt="Rapport du fichier endommagé : une erreur au niveau 1 Syntaxe, avec le message technique et la position."><figcaption><p>Rapport du fichier endommagé : une erreur au niveau 1 Syntaxe, avec le message technique et la position.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-fr.png" alt="The report of the damaged file: one error at level 1 Syntax, with the technical message and the position"><figcaption><p>Rapport du fichier endommagé : une erreur au niveau 1 Syntaxe, avec le message technique et la position.</p></figcaption></figure>
 
 Le rapport indique la position exacte (ici ligne 5, colonne 4081) et fournit le message technique de l'analyseur XML. Sélectionnez **Show in XML** pour accéder directement à cette ligne. L'indication **How to fix** vous invite à demander un fichier corrigé à l'expéditeur.
 
@@ -27,9 +29,19 @@ Le rapport indique la position exacte (ici ligne 5, colonne 4081) et fournit le 
 
 Le XML est correct, mais un champ obligatoire est manquant. Par exemple, le vendeur ne peut pas être identifié parce qu'aucun identifiant de vendeur, identifiant d'enregistrement ou identifiant de TVA n'est présent (règle `BR-CO-26`).
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-fr.png" alt="Écran d’erreur d’une facture d’exemple entièrement fictive : la couche L3 · Business Rules, le code de la règle et une étape suivante. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification."><figcaption><p>Écran d’erreur d’une facture d’exemple entièrement fictive : la couche L3 · Business Rules, le code de la règle et une étape suivante. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-fr.png" alt="The error screen for a business-rule error: the layer L3 · Business Rules, the rule code and a next step"><figcaption><p>Écran d’erreur d’une facture d’exemple entièrement fictive : la couche L3 · Business Rules, le code de la règle et une étape suivante. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
 
 La carte indique la couche **L3 · Business Rules** et le code `BR-CO-26`. Le rapport énumère tous les résultats de la facture, voir [Rapport de validation](validation-report.md).
+
+## Quand DocBits n'a pas pu contrôler le document
+
+Toute erreur n'est pas un rejet. Si le validateur ne peut pas lire le fichier du tout, le message commence par _could not check this document_ et nomme le contrôle qui l'a arrêté, par exemple `XML-PARSE` pour un fichier XML endommagé ou `PDF-UNREADABLE` pour un PDF impossible à ouvrir. DocBits affiche la même carte d'explication que pour une facture rejetée, avec le nom du contrôle, le code et le message technique.
+
+Il s'agit d'une défaillance technique, pas d'un verdict sur la facture :
+
+* DocBits ne marque pas le document comme rejeté.
+* Un redémarrage peut aboutir, car la cause peut tenir à la lecture du fichier. Sélectionnez **Restart Processing** avant de demander une nouvelle facture à l'expéditeur.
+* Si le même code réapparaît après un redémarrage, envoyez le fichier et le code à votre administrateur.
 
 ## Le bloc Next step et les boutons
 

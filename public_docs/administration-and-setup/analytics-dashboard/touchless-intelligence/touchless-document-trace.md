@@ -8,7 +8,7 @@ Introduzca un ID de documento en **Document ID**, o abra un documento de muestra
 
 La cabecera muestra el archivo, su estado (por ejemplo **In progress**), la ejecución que está consultando y su primer bloqueo, y un botón **Document** con el ID del documento.
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-es.png" alt="Dev NOVA: ruta de procesamiento y puntos registrados de la primera ejecución de prueba"><figcaption><p>Nueva captura de Dev NOVA 11.0.3, del 4 de noviembre de 2026. La factura de prueba ficticia se detiene en la validación de campos. La clasificación, la búsqueda de proveedor, la extracción de cabecera y la extracción de tabla contienen puntos registrados reales; las tarjetas muestran el documento y el historial de ejecuciones. Es la interfaz del producto en funcionamiento.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-es.png" alt="Dev NOVA: processing path and recorded points from the first test run"><figcaption><p>Nueva captura de Dev NOVA 11.0.3, del 4 de noviembre de 2026. La factura de prueba ficticia se detiene en la validación de campos. La clasificación, la búsqueda de proveedor, la extracción de cabecera y la extracción de tabla contienen puntos registrados reales; las tarjetas muestran el documento y el historial de ejecuciones. Es la interfaz del producto en funcionamiento.</p></figcaption></figure>
 
 El **Pipeline Path** muestra 14 etapas: Intake, Classification, E-Document Validation, Supplier Identification, Text Recognition, Header Extraction, Table Extraction, Field Validation, PO Lookup, PO Line Match, Approval, Workflow Routing, Export, ERP Acknowledgement. Cada etapa lleva un solo estado:
 
@@ -20,17 +20,20 @@ El **Pipeline Path** muestra 14 etapas: Intake, Classification, E-Document Valid
 | **Nothing Recorded** (discontinuo) | No se registraron datos para esta etapa |
 | **Not applicable** | La etapa no se aplica a este documento |
 
+Seleccione el paso **PO Match** para abrir el detalle de PO matching con las líneas de pedido que hay detrás de ese paso, donde el trace lo ofrece.
+
 ### Registro de etapas
 
 El **Stage Log** situado bajo la ruta enumera las mismas etapas con lo que registró cada una. Un punto de estado y la palabra de estado aparecen a la izquierda y a la derecha de cada fila.
 
-* Cada valor es una **etiqueta de valor**: un número con su unidad, por ejemplo **Confidence 100 %**, **Threshold 60 %**, **Failed rules 0**, **8 missing fields** o **0 mapping gaps**. Los porcentajes se muestran como `97 %`, nunca como `0.97`.
+* Cada valor es una **point chip**: un número con su unidad, por ejemplo **Confidence 100 %**, **Threshold 60 %**, **Failed rules 0**, **8 missing fields** o **0 mapping gaps**. Los porcentajes se muestran como `97 %`, nunca como `0.97`.
 * **Details** abre la lista completa de puntos que registró una etapa, incluidas las alternativas que consideró.
 * La etapa que bloqueó el documento indica el motivo, por ejemplo **Field validation failed**.
+* La entrada **Intake** indica cómo entró el documento en DocBits, por ejemplo que llegó por correo electrónico en una fecha determinada. Cuando la ejecución registra un estadio Intake propio, la frase aparece en esa fila en lugar de en una entrada separada.
 * Un punto que ninguna etapa registró se muestra como **Not recorded**, nunca como un valor inventado. Los puntos son números y palabras fijas, nunca texto del documento.
 * **Show Raw Diagnostics** activa los datos en bruto cuando el soporte lo solicita.
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-es.png" alt="Dev NOVA: registro de etapas con confianza, puntos de extracción y validación de campos bloqueada"><figcaption><p>Primera ejecución real: 100 % de confianza de clasificación, 0 proveedores candidatos, 1 fila de tabla y 7 brechas de asignación. Que una etapa figure como aprobada significa que se ejecutó; no demuestra una coincidencia de proveedor ni que todos los valores de la factura sean correctos. La validación de campos informa de un campo obligatorio ausente.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-es.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Primera ejecución real: 100 % de confianza de clasificación, 0 proveedores candidatos, 1 fila de tabla y 7 brechas de asignación. Que una etapa figure como aprobada significa que se ejecutó; no demuestra una coincidencia de proveedor ni que todos los valores de la factura sean correctos. La validación de campos informa de un campo obligatorio ausente.</p></figcaption></figure>
 
 ### Ejecuciones y cambios
 
@@ -40,15 +43,15 @@ La tarjeta Document lista el tipo de documento, el proveedor, el número de fact
 
 ### Leer los detalles de proveedor y tabla
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-es.png" alt="Dev NOVA: detalles de proveedor que separan identificadores detectados, búsquedas en datos maestros y coincidencias"><figcaption><p>Esta ejecución encuentra el nombre del proveedor en la factura y busca en los datos maestros, pero no asigna ningún proveedor. El NIF-IVA, el IBAN, el correo electrónico y el GLN no aparecen en esta factura de prueba. Una coincidencia ausente en los datos maestros es un diagnóstico distinto de un valor ausente en la factura.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-es.png" alt="Dev NOVA: supplier details separate detected identifiers, master-data searches and matches"><figcaption><p>Esta ejecución encuentra el nombre del proveedor en la factura y busca en los datos maestros, pero no asigna ningún proveedor. El NIF-IVA, el IBAN, el correo electrónico y el GLN no aparecen en esta factura de prueba. Una coincidencia ausente en los datos maestros es un diagnóstico distinto de un valor ausente en la factura.</p></figcaption></figure>
 
 Compruebe tres preguntas separadas: si se encontró un identificador en el documento, si se buscó y si se asignó un proveedor. Una etapa en verde por sí sola no las responde.
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-es.png" alt="Dev NOVA: detalles de tabla de la primera ejecución que informan de siete brechas de asignación"><figcaption><p>Los detalles de tabla informan de 7 brechas de asignación para 1 tabla y 1 fila. Compruebe la asignación de columnas antes de concluir que falló la extracción. El pie de comparación no es una base válida para la ejecución inicial seleccionada, que no tiene predecesora.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-es.png" alt="Dev NOVA: first-run table details report seven mapping gaps"><figcaption><p>Los detalles de tabla informan de 7 brechas de asignación para 1 tabla y 1 fila. Compruebe la asignación de columnas antes de concluir que falló la extracción. El pie de comparación no es una base válida para la ejecución inicial seleccionada, que no tiene predecesora.</p></figcaption></figure>
 
 ### Reconocer un reinicio real
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-es.png" alt="Dev NOVA: comparación de dos ejecuciones de prueba reales con puntos de etapa sin cambios"><figcaption><p>La misma factura de prueba tras un reinicio manual real, sin corregir campos de la factura. Una nueva ejecución demuestra otro intento, no una mejora. Los puntos sin cambios muestran No change; no se han inventado insignias de diferencia.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-es.png" alt="Dev NOVA: comparison of two actual test runs with unchanged stage points"><figcaption><p>La misma factura de prueba tras un reinicio manual real, sin corregir campos de la factura. Una nueva ejecución demuestra otro intento, no una mejora. Los puntos sin cambios muestran No change; no se han inventado insignias de diferencia.</p></figcaption></figure>
 
 Un reinicio manual es una intervención humana. Solo una finalización correcta posterior clasificaría este caso como AP Assisted. Mientras siga en proceso, queda excluido del denominador de documentos finalizados.
 

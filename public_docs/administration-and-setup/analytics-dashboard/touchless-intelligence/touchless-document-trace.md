@@ -20,6 +20,8 @@ Het **Pipeline Path** toont 14 fasen: Intake, Classification, E-Document Validat
 | **Nothing Recorded** (gestreept) | Voor deze fase zijn geen gegevens vastgelegd |
 | **Not applicable** | De fase geldt niet voor dit document |
 
+Kies de stap **PO Match** om de PO-match-detailweergave met de orderregels achter die stap te openen, waar de trace die biedt.
+
 ### Stage Log
 
 Het **Stage Log** onder het pad toont dezelfde fasen met wat elke fase heeft vastgelegd. Per rij staan links en rechts een statusstip en het statuswoord.
@@ -27,6 +29,7 @@ Het **Stage Log** onder het pad toont dezelfde fasen met wat elke fase heeft vas
 * Elke waarde is een **puntchip**: een getal met zijn eenheid, bijvoorbeeld **Confidence 100 %**, **Threshold 60 %**, **Failed rules 0**, **8 missing fields** of **0 mapping gaps**. Percentages worden als `97 %` weergegeven, nooit als `0.97`.
 * **Details** opent de volledige lijst met punten die een fase heeft vastgelegd, inclusief de alternatieven die zijn overwogen.
 * De fase die het document blokkeerde, vermeldt waarom, bijvoorbeeld **Field validation failed**.
+* De vermelding **Intake** zegt hoe het document in DocBits is gekomen, bijvoorbeeld dat het op een bepaalde datum per e-mail is aangekomen. Registreert de run een eigen Intake-stadium, dan staat de zin in die rij in plaats van in een aparte vermelding.
 * Een punt dat geen enkele fase heeft vastgelegd, verschijnt als **Not recorded**, nooit als een verzonnen waarde. Punten zijn getallen en vaste woorden, nooit documenttekst.
 * **Show Raw Diagnostics** schakelt de ruwe gegevens in wanneer support daarom vraagt.
 

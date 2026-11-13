@@ -8,7 +8,7 @@ Deze pagina is bedoeld voor mensen die facturen verwerken. Beheerders stellen de
 
 ## Wanneer een document een fout krijgt
 
-Als validatie **aan** staat en **blokkeert** voor het documenttype, krijgt een factuur met een blokkerende bevinding de status **Error**. Open het document vanuit het dashboard. De foutweergave toont links de XML en rechts de reden.
+Als validatie **aan** staat en **blokkeert** voor het documenttype, krijgt een factuur met een blokkerende bevinding de status **Error**. Een factuur die de validator zelf heeft afgewezen, draagt in plaats daarvan de eigen e-invoice-validatiestatus, zie [Het foutscherm voor een afgewezen e-invoice](validation-error-screen.md). Open het document vanuit het dashboard. De foutweergave toont links de XML en rechts de reden.
 
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-nl.png" alt="Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
 
@@ -30,6 +30,8 @@ Het rapport begint met de feiten over het bestand:
 | **Number / date** | Het factuurnummer en de factuurdatum, gelezen uit de XML. |
 
 Onder de bestandsgegevens ziet u het **oordeel**, bijvoorbeeld **Not conformant**, met het aantal fouten, waarschuwingen en informatieve meldingen. Als uw organisatie de ernst van een regel heeft gewijzigd, toont een tweede regel **Organisation severity** de aantallen volgens de instellingen van uw organisatie.
+
+> De uitslag luidt **Rejected** in plaats van een conformiteitswoord wanneer het document in de e-invoice-validatie is afgewezen, en de uitslag draagt dan een annuleerpictogram. De volgende stap verwijst naar de foutenlijst. Een rapport waarvan het resultaat niet leesbaar is, toont de factuur nooit als conform.
 
 ### Resultaat per niveau
 

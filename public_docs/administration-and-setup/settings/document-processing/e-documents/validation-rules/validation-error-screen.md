@@ -6,6 +6,8 @@ Wanneer u een onjuiste e-factuur uploadt, raakt DocBits die niet kwijt. Het docu
 
 > Een factuur krijgt alleen de status **Error** wanneer validatie **aan** staat en **blokkeert** voor het documenttype. Zie [Validatie voor elk documenttype](validation-per-document-type.md).
 
+Een e-invoice die de validator heeft afgewezen, draagt zijn eigen e-invoice-validatiestatus in plaats van een gewone **Error**. De statusbadge op het dashboard voegt een tooltip toe die zegt waarom het document stopte, zodat u een afgewezen factuur bij het filteren van de documentlijst van andere fouten kunt onderscheiden. Het foutscherm en het rapport hieronder zijn voor beide gevallen gelijk.
+
 ## Voorbeeld 1: het XML-bestand is beschadigd
 
 Een leverancier stuurt een XML-bestand waarin een sluittag niet overeenkomt met de openingstag. Het bestand kan niet worden gelezen, dus DocBits stopt bij de eerste controle, **L1 · Well-formedness**.
@@ -30,6 +32,16 @@ De XML is in orde, maar een verplicht veld ontbreekt. De verkoper kan bijvoorbee
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-nl.png" alt="Foutscherm van een volledig fictieve voorbeeldfactuur: de laag L3 · Business Rules, de regelcode en een volgende stap"><figcaption><p>Foutscherm van een volledig fictieve voorbeeldfactuur: de laag L3 · Business Rules, de regelcode en een volgende stap</p></figcaption></figure>
 
 De kaart noemt de laag **L3 · Business Rules** en de code `BR-CO-26`. Het rapport somt alle bevindingen van de factuur op, zie [Validatierapport](validation-report.md).
+
+## Wanneer DocBits het document niet kon controleren
+
+Niet elke fout is een afwijzing. Kan de validator het bestand helemaal niet lezen, dan begint de melding met _could not check this document_ en noemt de controle die het stopte, bijvoorbeeld `XML-PARSE` voor een beschadigd XML-bestand of `PDF-UNREADABLE` voor een PDF die niet kan worden geopend. DocBits toont dezelfde uitlegkaart als bij een afgewezen factuur, met de naam van de controle, de code en de technische melding.
+
+Dit is een technische fout, geen oordeel over de factuur:
+
+* DocBits markeert het document niet als afgewezen.
+* Een herstart kan slagen, omdat de oorzaak in het lezen van het bestand kan liggen. Kies **Restart Processing** voordat u de afzender om een nieuwe factuur vraagt.
+* Verschijnt na een herstart dezelfde code opnieuw, stuur het bestand en de code dan naar uw administrator.
 
 ## Het vak Next step en de knoppen
 

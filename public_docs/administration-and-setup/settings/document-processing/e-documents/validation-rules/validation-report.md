@@ -8,7 +8,7 @@ Questa pagina è per chi elabora le fatture. Gli amministratori impostano le reg
 
 ## Quando un documento riceve un errore
 
-Se la validazione è **attiva** e **bloccante** per il tipo di documento, una fattura con un risultato bloccante passa allo stato **Error**. Apri il documento dal cruscotto. La vista di errore mostra l'XML a sinistra e il motivo a destra.
+Se la validazione è **attiva** e **bloccante** per il tipo di documento, una fattura con un risultato bloccante passa allo stato **Error**. Una fattura rifiutata dal validatore stesso porta invece lo stato dedicato di validazione e-invoice, vedi [La schermata di errore di una e-invoice rifiutata](validation-error-screen.md). Apri il documento dal cruscotto. La vista di errore mostra l'XML a sinistra e il motivo a destra.
 
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-it.png" alt="Schermata di errore di una fattura di esempio interamente fittizia. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale."><figcaption><p>Schermata di errore di una fattura di esempio interamente fittizia. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale.</p></figcaption></figure>
 
@@ -30,6 +30,8 @@ Il rapporto inizia con i dati del file:
 | **Number / date** | Il numero e la data della fattura, letti dall'XML. |
 
 Sotto i dati del file vedi il **verdetto**, ad esempio **Not conformant**, con il numero di errori, avvertenze e informazioni. Se la tua organizzazione ha cambiato la gravità di una regola, una seconda riga **Organisation severity** mostra i conteggi dopo le impostazioni della tua organizzazione.
+
+> Il verdetto riporta **Rejected** invece di una parola di conformità quando il documento è stato rifiutato nella validazione e-invoice, e in quel caso il verdetto mostra un'icona di annullamento. Il passo successivo rimanda all'elenco degli errori. Un report il cui esito non è leggibile non mostra mai la fattura come conforme.
 
 ### Risultato per livello
 

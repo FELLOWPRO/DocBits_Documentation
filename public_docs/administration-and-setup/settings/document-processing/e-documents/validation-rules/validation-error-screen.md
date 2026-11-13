@@ -6,6 +6,8 @@ Quando carichi una fattura elettronica errata, DocBits non la perde. Il document
 
 > Una fattura riceve lo stato **Error** solo quando la validazione è **attiva** e **bloccante** per il suo tipo di documento. Vedi [Validazione per ogni tipo di documento](validation-per-document-type.md).
 
+Una e-invoice rifiutata dal validatore porta il proprio stato di validazione e-invoice invece di un semplice **Error**. Il badge di stato nella dashboard aggiunge un tooltip che indica perché il documento si è fermato, così puoi distinguere una fattura rifiutata dagli altri errori mentre filtri l'elenco dei documenti. La schermata di errore e il report qui sotto sono identici in entrambi i casi.
+
 ## Esempio 1: il file XML è danneggiato
 
 Un fornitore invia un file XML in cui un tag di chiusura non corrisponde al tag di apertura. Il file non può essere letto, quindi DocBits si ferma al primo controllo, **L1 · Well-formedness**.
@@ -30,6 +32,16 @@ L'XML è corretto, ma manca un campo obbligatorio. Ad esempio, il venditore non 
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-it.png" alt="Schermata di errore di una fattura di esempio interamente fittizia: il livello L3 · Business Rules, il codice della regola e un passo successivo. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale."><figcaption><p>Schermata di errore di una fattura di esempio interamente fittizia: il livello L3 · Business Rules, il codice della regola e un passo successivo. In questa versione alcuni testi dell’interfaccia possono essere ancora in inglese o tradotti in modo errato. La guida ne spiega il significato; le schermate mostrano l’interfaccia originale.</p></figcaption></figure>
 
 La scheda indica il livello **L3 · Business Rules** e il codice `BR-CO-26`. Il rapporto elenca tutti gli esiti della fattura, vedi [Rapporto di convalida](validation-report.md).
+
+## Quando DocBits non ha potuto controllare il documento
+
+Non ogni errore è un rifiuto. Se il validatore non riesce a leggere il file, il messaggio inizia con _could not check this document_ e indica il controllo che lo ha fermato, per esempio `XML-PARSE` per un file XML danneggiato o `PDF-UNREADABLE` per un PDF che non si apre. DocBits mostra la stessa scheda di spiegazione di una fattura rifiutata, con il nome del controllo, il codice e il messaggio tecnico.
+
+Si tratta di un guasto tecnico, non di un giudizio sulla fattura:
+
+* DocBits non contrassegna il documento come rifiutato.
+* Un riavvio può riuscire, perché la causa può risiedere nella lettura del file. Seleziona **Restart Processing** prima di chiedere al mittente una nuova fattura.
+* Se lo stesso codice ricompare dopo un riavvio, invia il file e il codice al tuo amministratore.
 
 ## Il riquadro Next step e i pulsanti
 

@@ -64,6 +64,8 @@ Compare supplier, invoice number, dates, amounts and currency with the original.
 
 Some messages come from a **Warning** rule. They do not go away by themselves: select **Acknowledge** below the field to confirm the value, and the message is replaced by **Acknowledged. Changing the value asks again.** If you edit the value afterwards, the warning returns and you have to acknowledge it again. A field that shows a hard error has to be corrected instead — there is no button for it.
 
+If only warnings hold a save or an export back, the screen shows the warning text of the field in an amber notice with the button **Acknowledge**, and scrolls to that field. The same button confirms every warned field at once, like the link below a field. A real error still produces the red message **One or more fields needs validation.**
+
 The checks depend on the document type and your organization's configuration; see [Automatic Checks](automatic-checks-on-the-validation-screen.md).
 
 ## Use the Assistant

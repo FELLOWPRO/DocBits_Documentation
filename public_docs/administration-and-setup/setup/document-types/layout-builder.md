@@ -1,53 +1,54 @@
 # Éditeur de mise en page
 
-Utilisez l’éditeur de mise en page pour organiser les champs et les contrôles affichés lors de la validation ou de l’approbation d’un document. Chaque mise en page est associée à un type de document, à une origine et à un type de mise en page. Avant d’enregistrer des modifications, vérifiez quelle mise en page est ouverte.
+Utilisez l’éditeur de mise en page pour organiser les champs et les contrôles que les personnes voient lorsqu’elles valident ou approuvent un document. Chaque mise en page appartient à un type de document et à un type de mise en page : vérifiez ces deux indications en haut de la page avant d’enregistrer. Les mises en page propres à une origine sont décrites dans [Mises en page par origine](origin-layouts.md).
 
 ## Ouvrir la mise en page
 
 1. Ouvrez **Paramètres → Types de documents**.
-2. Ouvrez l’éditeur de mise en page du type ou sous-type de document souhaité. Si cette action n’est pas disponible, un administrateur doit peut-être activer le module pour votre organisation.
-3. Vérifiez l’origine sélectionnée dans la barre d’actions et le type d’éditeur indiqué à côté.
+2. Sous le nom du type de document à modifier, sélectionnez **Plans** pour ouvrir ses mises en page. Pour un sous-type de document, ouvrez l’action correspondante de ce sous-type.
+3. Si l’éditeur de mise en page n’est pas disponible, un administrateur doit peut-être activer le module pour votre organisation.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-current-fr.png" alt="Vue partielle de l’éditeur : les sections Groupes, Champs et Éléments de formulaire à gauche, et un exemple simplifié de mise en page de facture au centre."><figcaption><p>Vue partielle de l’éditeur : les sections Groupes, Champs et Éléments de formulaire à gauche, et un exemple simplifié de mise en page de facture au centre.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-structure-tab-fr.png" alt="Éditeur de mise en page en français pour une facture : dans l’en-tête le nom de la mise en page, le type de document Facture et le type de mise en page, à droite le bouton Enregistrer et le menu à trois points ; à gauche les onglets Structure, Champs et Éléments avec l’arborescence des groupes ouverte, au centre le canevas et à droite le panneau Propriétés du champ sélectionné"><figcaption><p>L’éditeur de mise en page : l’en-tête, les trois onglets à gauche, le canevas au centre et le panneau Propriétés à droite.</p></figcaption></figure>
 
-Lorsque vous changez d’**Origine**, DocBits peut créer une mise en page indépendante pour cette origine. Vérifiez l’origine avant d’apporter des modifications.
+## Travailler avec l’en-tête
 
-## Découvrir les zones de l’éditeur
+* À gauche de l’en-tête, le nom de la mise en page s’affiche ; le crayon à côté permet de la renommer.
+* **Type de document** et **Type de mise en page** permettent de passer d’une mise en page à l’autre : la page recharge celle que vous choisissez.
+* À côté d’**Enregistrer**, DocBits indique **Modifications non enregistrées** tant que la mise en page n’est pas enregistrée. Après un enregistrement, l’heure du dernier enregistrement s’affiche.
+* **Enregistrer** enregistre la mise en page pour le type de document et le type de mise en page sélectionnés.
+* Le menu à trois points contient **Générer automatiquement un modèle**, **Modifier JSON**, **Copier JSON** et **Paramètres de mise en page**. **Générer automatiquement un modèle** remplace une mise en page personnalisée : vérifiez donc d’abord quel type de document et quelle mise en page sont ouverts. **Modifier JSON** s’adresse aux utilisateurs avancés et ne doit être utilisé que si vous connaissez le format du modèle.
+* Si vous quittez la page alors que des modifications ne sont pas enregistrées, DocBits demande s’il faut les rejeter : **Faut-il rejeter les modifications ?** propose **Annuler** pour rester sur la page et **OK** pour la quitter sans enregistrer.
 
-À gauche, vous pouvez passer entre **Éléments**, **Propriétés** et les réglages généraux, représentés par un engrenage.
+## Trouver des éléments : Structure, Champs, Éléments
 
-* L’onglet **Éléments** contient les sections **Groupes**, **Champs** et **Éléments de formulaire**. Ouvrez chaque section pour consulter les groupes, les champs et les contrôles disponibles.
-* La zone centrale affiche les groupes et les champs de la mise en page. Les groupes permettent de réunir des champs liés.
-* À droite se trouve la vue du document d’exemple, où vous pouvez consulter le document et régler le zoom.
+La partie gauche comporte trois onglets :
 
-Faites glisser un élément depuis la section correspondante à gauche vers la zone de mise en page pour ajouter un groupe, un champ ou un contrôle de formulaire.
+| Onglet | Utilisation |
+| --- | --- |
+| **Structure** | Affiche la mise en page sous forme d’arborescence. Les groupes et leurs champs apparaissent dans l’ordre du canevas ; dépliez un groupe avec son chevron pour voir les champs qu’il contient, et le compteur à droite du nom indique combien de ses champs sont placés. La zone de recherche filtre l’arborescence et, lorsque vous sélectionnez une ligne, l’élément correspondant est sélectionné sur le canevas. |
+| **Champs** | Réunit tous les champs proposés par le type de document, classés par groupe et repliés par défaut. Trois boutons de filtre sous la recherche limitent la liste à tous les champs, à ceux qui ne sont pas encore placés ou à ceux qui sont masqués. Chaque ligne affiche le libellé du champ ; une coche verte signale les champs déjà placés, qui apparaissent en grisé. |
+| **Éléments** | Contrôles de présentation et d’interaction : **Text**, **Label**, **Check Box**, séparateurs, tableaux, boutons et sous-groupes. |
 
-<figure><img src="../../../.gitbook/assets/layout-builder-fields-current-fr.png" alt="Les champs Numéro de la facture et Date de facture du groupe d’exemple. Dans cette mise en page, chaque champ occupe 50 % de la largeur du groupe."><figcaption><p>Les champs Numéro de la facture et Date de facture du groupe d’exemple. Dans cette mise en page, chaque champ occupe 50 % de la largeur du groupe.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-elements-tab-fr.png" alt="Onglet Éléments de l’éditeur de mise en page : la section Groupes avec huit groupes dont Données de la facture, Détails de paiement et Bon de commande, et la section Éléments de formulaire avec Text, Label, Check Box, Horizontal Separator, Multi Check Box, Table Of Checkboxes, Button, Extracted Tables, Invoice Buttons, Vertex Panel, QR Code Fields et Sub Group"><figcaption><p>L’onglet Éléments : les groupes de la mise en page et les éléments de formulaire disponibles.</p></figcaption></figure>
 
-Configurez les champs réutilisables dans [Types de documents](README.md). Les champs disponibles dépendent du type de document sélectionné et de sa configuration.
+Sélectionnez un élément pour l’ajouter, ou faites-le glisser dans le canevas. Le titre d’un groupe indique à la personne qui valide le document ce que contient cette section. Créez ou renommez d’abord les champs réutilisables du document dans [Types de documents](README.md).
+
+## Travailler sur le canevas
+
+* **Mise en page principale** affiche la mise en page du document lui-même ; **Tableau** affiche la disposition en tableau utilisée pour les lignes d’articles.
+* **Document** ouvre ou ferme le document d’exemple à côté du canevas, pour comparer la mise en page avec un document réel.
+* Les groupes apparaissent sous forme de cartes ; les champs d’un groupe peuvent être disposés en lignes et recevoir des largeurs différentes.
 
 ## Modifier les propriétés d’un élément
 
-Sélectionnez un groupe ou un champ dans la zone de mise en page, puis ouvrez **Propriétés** à gauche. Les options dépendent de l’élément sélectionné et comprennent, par exemple, l’étiquette, le nom technique, la largeur et le comportement.
+Sélectionnez un élément ou un groupe sur le canevas. Le panneau **Propriétés** à droite reste toujours visible et se compose de sections : **Affichage** (libellé, nom du champ, position du libellé et largeur de l’élément), **Comportement** (lecture seule, masqué et index des onglets), **Valeurs et listes** (valeurs proposées pour l’élément) et **Automatisation** (règles qui remplissent ou modifient l’élément).
 
-<figure><img src="../../../.gitbook/assets/layout-builder-properties-current-fr.png" alt="Propriétés du champ sélectionné : Étiquette, Nom du champ et Largeur de l’élément en pourcentage."><figcaption><p>Propriétés du champ sélectionné : Étiquette, Nom du champ et Largeur de l’élément en pourcentage.</p></figcaption></figure>
-
-Dans cet exemple, **Étiquette** contient « Numéro de la facture », également affiché sur le champ dans la zone centrale. **Nom du champ** affiche le nom technique `doku_fr_invoice_number` ; ce nom identifie le champ d’exemple.
-
-Pour les champs prédéfinis, l’étiquette et le nom technique peuvent ne pas être modifiables. Selon le type d’élément, vous pouvez également régler la lecture seule, la visibilité, l’ordre de tabulation, les listes de valeurs et l’exécution d’un workflow ou d’un script lors d’un changement de valeur. Les options des groupes et des champs sont différentes.
-
-Après avoir modifié les propriétés, vérifiez le résultat dans la zone de mise en page. La largeur est saisie en pourcentage au moyen d’un contrôle numérique ; les groupes et leurs champs peuvent avoir des largeurs différentes. Consultez [Configurer les propriétés des champs](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
-
-## Modèles et JSON
-
-Outre l’enregistrement de la mise en page, la barre d’actions propose des fonctions pour générer un modèle, appliquer la mise en page par défaut aux mises en page par origine, utiliser le modèle par défaut et modifier le JSON. Leur disponibilité dépend de l’éditeur ouvert.
-
-Générer ou appliquer un modèle peut remplacer une mise en page personnalisée. Vérifiez d’abord le type de document, l’origine et la mise en page actuelle. **Modifier JSON** est destiné à la configuration avancée et nécessite de connaître le format du modèle. La fonction permettant de copier la configuration se trouve dans la boîte de dialogue JSON.
+Pour la largeur, choisissez l’une des valeurs proposées (25, 33, 50, 66, 75 ou 100 pour cent) plutôt que de saisir un nombre, puis vérifiez le résultat sur le canevas. Les sections et les options affichées dépendent de l’élément sélectionné. Pour plus de détails, consultez [Configurer les propriétés des champs](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
 
 ## Vérifier et enregistrer
 
-Organisez les groupes et les champs et vérifiez le résultat dans la zone de mise en page. Lorsqu’il vous convient, utilisez **Enregistrer** dans la barre d’actions. Pour les mises en page propres à une origine, consultez [Mises en page par origine](origin-layouts.md).
+Organisez les groupes et les champs, vérifiez le résultat sur le canevas puis utilisez **Enregistrer** dans l’en-tête. Pour les mises en page propres à une origine, consultez [Mises en page par origine](origin-layouts.md).
 
 {% hint style="info" %}
-Les illustrations utilisent un exemple simplifié de mise en page de facture. Les noms des champs et les options disponibles dépendent de la configuration.
+Les captures montrent des données d’exemple d’une organisation de test, avec l’interface en français. Aucune mise en page n’a été enregistrée ni remplacée. Dans cette version, les noms des éléments de formulaire (**Text**, **Label**, **Check Box**…) s’affichent en anglais dans l’interface française.
 {% endhint %}

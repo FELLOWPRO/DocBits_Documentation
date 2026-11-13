@@ -18,7 +18,7 @@ Esta guía está dirigida a los proveedores invitados al portal DocBits de una o
 
 3.  **DIRECCIÓN DATOS**
 
-    Indique toda la información aplicable, incluidos los campos obligatorios. Cuando haya terminado, pulse **Próximo** para continuar con la sección **PROVEEDOR CONTACTO**. Para guardar su progreso y continuar más tarde, pulse **Guardar**.
+    Indique toda la información aplicable, incluidos los campos obligatorios. Cuando haya terminado, pulse **Próximo** para continuar con la sección **PROVEEDOR CONTACTO**; con **Atrás** regresa a la sección anterior. Para guardar su progreso y continuar más tarde, pulse **Guardar**.
 
     <figure><img src="../../../.gitbook/assets/supplier-registration-step2-address-es-20261113.png" alt="Paso 2 del asistente en español, sección DIRECCIÓN DATOS: los campos Calle, Código postal, Ciudad y País, con los botones Atrás y Próximo"><figcaption><p>Paso 2 de 6, <strong>DIRECCIÓN DATOS</strong>: introduzca la calle, el código postal, la ciudad y el país y pulse <strong>Próximo</strong>.</p></figcaption></figure>
 

@@ -8,6 +8,32 @@ Kreator **Standardowy przepływ** to liniowy, oparty na kartach edytor do automa
 
 **Film:** Tworzenie Workflow typu Standard · 6:34 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pl.vtt)
 
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Nowy przepływ pracy, Standard** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pl.mp4#t=0.25)
+
+Workflow typu Standard to prosty sposób na automatyzację dokumentu. Kliknij Nowy przepływ pracy i wybierz Standard.
+
+**Jedna karta Gdy go uruchamia** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pl.mp4#t=12.983)
+
+Nadaj Workflow nazwę. Każdy Workflow typu Standard ma dokładnie jedną kartę Gdy: decyduje ona, kiedy Workflow się uruchamia. Tutaj: gdy typ dokumentu to Faktura.
+
+**Karty I: wszystkie muszą dać sukces** · [0:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pl.mp4#t=29.916)
+
+Karty I filtrują dalej. Dodaj ich tyle, ile trzeba, albo żadnej: wszystkie muszą dać sukces, inaczej Workflow zatrzymuje się tutaj.
+
+**Karty Następnie działają po kolei** · [0:44](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pl.mp4#t=44.916)
+
+Karty Następnie wykonują pracę, jedna po drugiej. Tutaj faktura zostaje przypisana użytkownikowi. Zapisz przyciskiem Zapisz przepływ pracy, a nie Zapisz szablon. Zapisany Workflow jest od razu aktywny.
+
+**Ograniczenia Workflow typu Standard** · [1:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pl.mp4#t=65.45)
+
+Workflows typu Standard są proste. Mają jedną kartę Gdy, wszystkie karty I muszą dać sukces i nie ma innych ścieżek: gdy warunek nie jest spełniony, Workflow po prostu się zatrzymuje. Karty testuje się pojedynczo. Do rozgałęzień, obsługi błędów, zmiennych i notatek użyj Advanced Workflow.
+
+</details>
+
 Utwórz kompletny Standard Workflow w prawdziwym interfejsie DocBits: wybierz fakturę, sprawdź jej numer i kwotę powyżej 1000, przypisz osobę sprawdzającą i zmień status. Zapisz regułę, uruchom trzy scenariusze testowe i potwierdź rzeczywisty wynik w dokumencie.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/pl.mp4" %}

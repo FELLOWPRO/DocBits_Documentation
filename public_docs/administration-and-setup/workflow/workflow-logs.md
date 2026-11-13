@@ -87,6 +87,40 @@ Zapisz nazwę workflow, odwołanie dokumentu, czas, węzeł i dokładny komunika
 
 **Film:** Czytanie dzienników Workflow · 2:03 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.vtt)
 
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Otwórz Dzienniki przepływu pracy** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.mp4#t=0.25)
+
+Każdy dokument przechowuje dzienniki Workflows, które na nim działały. Na panelu dokumentów otwórz akcje dokumentu i wybierz Dzienniki przepływu pracy.
+
+**Przebiegi i ich wyniki** · [0:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.mp4#t=15.883)
+
+U góry widać, ile było przebiegów i ile zakończyło się błędem, niespełnionym warunkiem lub sukcesem. Poniżej jest każdy przebieg z Workflow, czasem, długością i wynikiem.
+
+**Ścieżka jednego przebiegu** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.mp4#t=31.683)
+
+Przeciągnij separator w lewo, aby dać dziennikom więcej miejsca. Potem kliknij przebieg, aby zobaczyć jego ścieżkę. Każda karta pokazuje wynik: zielony to sukces, pomarańczowy niespełniony warunek, czerwony błąd. Tutaj karta I zakończyła się niespełnionym warunkiem, więc karta Następnie za nią się nie wykonała.
+
+**Dlaczego karta tak się zakończyła** · [1:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.mp4#t=62.116)
+
+Wybierz kartę, aby przeczytać jej dziennik. Mówi on, co karta porównała i dlaczego tak się zakończyła. Tutaj dokument jest gotowy do walidacji, ale karta oczekuje drugiej akceptacji.
+
+**Błąd i jego przyczyna** · [1:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.mp4#t=78.083)
+
+Przebieg zakończony błędem pokazuje wadliwą kartę na czerwono. Tutaj karta I nie mogła odczytać adresu dostawy z dokumentu. Brak danych to zawsze błąd, więc karta Następnie za nią się nie wykonała.
+
+**Szukanie przebiegów** · [1:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.mp4#t=96.683)
+
+Przy wielu przebiegach użyj wyszukiwania, aby znaleźć Workflow po nazwie, a przycisku filtra, aby zawęzić listę według statusu lub daty.
+
+**Uwaga o limicie wykonania** · [1:52](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pl.mp4#t=112.016)
+
+Uwaga u góry pojawia się, gdy Workflow osiągnął limit wykonania na tym dokumencie. Wyjaśnia to film o limitach wykonania.
+
+</details>
+
 Aby uzyskać dostęp do dzienników przepływu:
 
 1. Przejdź do **Pulpitu**.

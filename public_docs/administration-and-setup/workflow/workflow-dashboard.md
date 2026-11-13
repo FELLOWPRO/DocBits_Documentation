@@ -10,9 +10,57 @@
 
 **Film:** Wyszukiwanie i filtrowanie na panelu Workflows · 1:04 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pl.vtt)
 
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Szukanie po nazwie** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pl.mp4#t=0.25)
+
+Na karcie Lista przepływów pracy pole wyszukiwania znajduje Workflows po nazwie. Wpisz część nazwy, a na liście zostaną tylko pasujące Workflows.
+
+**Wyczyść wyszukiwanie** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pl.mp4#t=12.683)
+
+Wyczyść wyszukiwanie, aby znów zobaczyć wszystkie Workflows. Wyszukiwanie jest też w adresie strony, więc po powrocie do listy zostaje.
+
+**Daty i Workflow** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pl.mp4#t=26.25)
+
+Na zakładce Panel filtry u góry decydują, co zliczają liczby i wykres: data rozpoczęcia i zakończenia, domyślnie ostatni miesiąc, oraz wszystkie Workflows albo jeden.
+
+**Porównanie dwóch okresów** · [0:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pl.mp4#t=43.016)
+
+Opcja Porównaj dodaje drugi okres: wpisz jego datę rozpoczęcia i zakończenia. Każda liczba pokazuje wtedy też wartość tego okresu i różnicę. Ta przeglądarka zapamięta filtry na następną wizytę.
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pl.mp4" %}
 
 **Film:** Pobieranie i przesyłanie Workflow jako JSON · 1:11 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Pobierz jako JSON** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pl.mp4#t=0.25)
+
+Aby zachować kopię Workflow, otwórz jego akcje na liście i wybierz Pobierz. Otrzymasz jeden plik JSON z nazwą, typem oraz wszystkimi kartami i połączeniami.
+
+**Kopia lub przeniesienie** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pl.mp4#t=14.95)
+
+Użyj go jako kopii zapasowej albo do przeniesienia Workflow zbudowanego i przetestowanego w środowisku testowym.
+
+**Importuj przepływ pracy** · [0:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pl.mp4#t=27.25)
+
+Aby go przywrócić, kliknij Importuj przepływ pracy i wybierz pliki JSON, do dziesięciu naraz.
+
+**Trafia wyłączony** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pl.mp4#t=37.383)
+
+Przesłany Workflow trafia wyłączony, więc nic nie działa, zanim go nie sprawdzisz.
+
+**Sprawdź użytkowników, grupy i tabele** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/pl.mp4#t=47.016)
+
+Karty wskazujące użytkowników, grupy, podorganizacje lub tabele decyzyjne odwołują się do nich przez wewnętrzny identyfikator. Po przesłaniu z innego środowiska otwórz karty i sprawdź, czy nadal są ustawione tak, jak chcesz. Potem przetestuj go i włącz.
+
+</details>
 
 - **Panel** — metryki uruchomień i ostatnia aktywność (pokazane powyżej).
 - **Lista przepływów pracy** — każdy przepływ pracy wraz z typem, kolejnością wykonania i wyzwalaczem. Nowy przepływ pracy utworzysz przyciskiem **Nowy przepływ pracy**.

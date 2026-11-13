@@ -60,6 +60,40 @@ Węzły **When / And / Then** korzystają z dokładnie tych samych kart, które 
 
 **Film:** Sukces, niespełniony warunek i błąd w działaniu Workflow · 1:58 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.vtt)
 
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Gdy, I, Następnie w działaniu** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.mp4#t=0.25)
+
+Gdy Workflow działa, uruchamia go karta Gdy. Karty I sprawdzają warunki, a karty Następnie działają. Co dalej, zależy od wyniku każdej karty.
+
+**Sukces, Niespełniony warunek lub Błąd** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.mp4#t=17.583)
+
+Każda karta I kończy się jednym z trzech wyników. Sukces idzie niebieską ścieżką sukcesu, niespełniony warunek pomarańczową ścieżką, a błąd czerwoną ścieżką błędu.
+
+**Brak danych to błąd** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.mp4#t=33.716)
+
+Brak danych to nie jest niespełniony warunek. Jeśli w dokumencie brakuje pola potrzebnego karcie, brakuje zmiennej albo nie ma dokumentu, karta zgłasza błąd i idzie czerwoną ścieżką błędu.
+
+**Niespełniony warunek bez pomarańczowej ścieżki: przebieg staje** · [0:52](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.mp4#t=52.316)
+
+Jeśli warunek nie jest spełniony, a jego pomarańczowa ścieżka nie jest podłączona, Workflow zatrzymuje się na tej karcie. Przebieg kończy się jako niespełniony warunek.
+
+**Podłączona: niespełniony warunek to tylko gałąź** · [1:07](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.mp4#t=67.65)
+
+Jeśli pomarańczowa ścieżka jest podłączona, niespełniony warunek to po prostu kolejna gałąź. Workflow idzie tam dalej i nadal może zakończyć się sukcesem.
+
+**Czerwona ścieżka błędu: wyjście awaryjne łapie błędy** · [1:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.mp4#t=82.65)
+
+Podłącz czerwoną ścieżkę błędu do wyjścia awaryjnego, na przykład zadania dla osoby, aby błędy nie przeszły niezauważone. Wyjście awaryjne działa, ale przebieg i tak jest oznaczony jako błąd.
+
+**Jak kończy się przebieg** · [1:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/pl.mp4#t=102.783)
+
+Krótko: każdy błąd czyni przebieg błędem. Niespełniony warunek bez podłączonej pomarańczowej ścieżki daje niespełniony warunek. Wszystko inne kończy się sukcesem.
+
+</details>
+
 Węzły są połączone **kolorowymi krawędziami**. Przeciągnij od uchwytu po **prawej** stronie węzła do uchwytu wejściowego po **lewej** stronie innego węzła, aby utworzyć połączenie. Każdy kolor oznacza inny wynik wykonania:
 
 - **Success** (niebieski) — domyślna ścieżka wybierana, gdy węzeł zostanie pomyślnie ukończony. Dostępna dla wszystkich typów węzłów.

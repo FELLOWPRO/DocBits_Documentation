@@ -53,7 +53,7 @@
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list.png" alt="Custom validation rule management with configuration names hidden."><figcaption><p>隐藏了配置名称的自定义校验规则管理界面。</p></figcaption></figure>
 
-每张卡片显示规则的名称和描述，以及**级别**（Header / Line / Table）、**严重级别**（Error / Warning）、错误所附加的**字段**及其**来源**的标记。使用右侧的开关启用或停用规则，使用 **⋮** 菜单编辑、复制或删除规则。可以按级别（**All / Header / Line / Table**）和状态（**All / Active / Inactive**）筛选列表，或对列表进行搜索。
+每张卡片显示规则的名称和描述，以及**level**（Header / Line / Table）、**severity**（Error / Warning）、错误所附加的 **field** 及其 **source** 的标记。使用右侧的开关启用或停用规则，使用 **⋮** 菜单编辑、复制或删除规则。可以按 level（**All / Header / Line / Table**）和 state（**All / Active / Inactive**）筛选列表，或对列表进行搜索。
 
 ### System default、Customized 与 Custom 规则
 
@@ -243,7 +243,7 @@
 
 <figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-en.png" alt="The rule execution logs"><figcaption><p>Rule Execution Logs 页面：上方是筛选条件，下方每次评估一行。在您搜索之前，表格会提示您应输入什么。</p></figcaption></figure>
 
-打开一个条目可查看其详细信息，包括**条件跟踪**：_Applies when_ 的每一行及其期望值、文档的实际值以及是否通过。参见 [Read the condition trace](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs)。
+打开一个条目可查看其详细信息，包括 **Condition trace**：_Applies when_ 的每一行及其期望值、文档的实际值以及是否通过。参见 [Read the condition trace](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs)。
 
 同一页面也会显示转换规则和布局选择规则的日志。
 

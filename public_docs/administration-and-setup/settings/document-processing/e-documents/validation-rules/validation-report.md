@@ -8,15 +8,15 @@ Esta página é para quem processa faturas. Os administradores definem as regras
 
 ## Quando um documento fica com erro
 
-Se a validação estiver **ativada** e em **bloqueio** para o tipo de documento, uma fatura com um resultado bloqueante fica com o estado **Error**. Abra o documento no painel. A vista de erro mostra o XML à esquerda e o motivo à direita.
+Se a validação estiver **on** e **blocking** para o tipo de documento, uma fatura com um resultado bloqueante fica com o estado **Error**. Uma fatura rejeitada pelo próprio validador tem, em vez disso, o estado dedicado de validação de e-invoice, ver [O ecrã de erro de uma fatura eletrónica rejeitada](validation-error-screen.md). Abra o documento no painel. A vista de erro mostra o XML à esquerda e o motivo à direita.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-pt.png" alt="Ecrã de erro de uma fatura de exemplo inteiramente fictícia. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações."><figcaption><p>Ecrã de erro de uma fatura de exemplo inteiramente fictícia. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-pt.png" alt="The error view: the XML of the invoice and the first blocking finding with a next step. Example invoice with fictional names."><figcaption><p>Ecrã de erro de uma fatura de exemplo inteiramente fictícia. Nesta versão, alguns textos da interface podem ainda estar em inglês ou ter traduções incorretas. A documentação explica o significado; as capturas mostram a interface sem alterações.</p></figcaption></figure>
 
 O cartão à direita indica a camada que rejeitou a fatura (por exemplo **L3 · Business Rules**), o código da regra (por exemplo `BR-CO-26`), uma explicação curta e um **Next step**. Selecione **View validation details** para abrir o relatório completo.
 
 ## Ler o relatório
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-pt.png" alt="Relatório da fatura fictícia com os dados do ficheiro e o resultado."><figcaption><p>Relatório da fatura fictícia com os dados do ficheiro e o resultado.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-pt.png" alt="The top of the report: file data, the verdict and the result for each level"><figcaption><p>Relatório da fatura fictícia com os dados do ficheiro e o resultado.</p></figcaption></figure>
 
 O relatório começa com os factos sobre o ficheiro:
 
@@ -30,6 +30,8 @@ O relatório começa com os factos sobre o ficheiro:
 | **Number / date** | O número e a data da fatura, lidos do XML. |
 
 Abaixo dos dados do ficheiro vê o **veredicto**, por exemplo **Not conformant**, com o número de erros, avisos e mensagens de informação. Se a sua organização alterou a gravidade de uma regra, uma segunda linha **Organisation severity** mostra as contagens segundo as definições da sua organização.
+
+> O veredicto apresenta **Rejected** em vez de uma palavra de conformidade quando o documento foi rejeitado na validação de e-invoice, e o veredicto passa então a ter um ícone de cancelamento. O passo seguinte remete para a lista de erros. Um relatório cujo resultado não é legível nunca apresenta a fatura como conforme.
 
 ### Resultado por nível
 
@@ -49,7 +51,7 @@ A tabela **Result per level** mostra quantos erros, avisos e mensagens de inform
 
 ## Os resultados
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-pt.png" alt="Cada resultado tem um código, um nível, um texto legível e uma indicação de como corrigir"><figcaption><p>Cada resultado tem um código, um nível, um texto legível e uma indicação de como corrigir</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-pt.png" alt="Each finding has a code, a level, a text you can read and a hint how to fix it"><figcaption><p>Cada resultado tem um código, um nível, um texto legível e uma indicação de como corrigir</p></figcaption></figure>
 
 Cada resultado é uma linha:
 

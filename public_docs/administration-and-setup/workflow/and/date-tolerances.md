@@ -12,6 +12,52 @@ Le schede che utilizzano questo calcolo:
 
 **Video:** Tolleranze di data e controlli di intervallo · 2:08 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.vtt)
 
+<details>
+
+<summary>Trascrizione</summary>
+
+**Date con una tolleranza** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.mp4#t=0.25)
+
+Diverse schede del Workflow confrontano una data con una data di riferimento e accettano una tolleranza in giorni. Tutte contano questa tolleranza allo stesso modo.
+
+**La finestra di tolleranza** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.mp4#t=12.283)
+
+Dalla data di riferimento, la tolleranza si conta all'indietro e in avanti. Il risultato è una finestra, e entrambi i suoi estremi ne fanno parte.
+
+**Due giorni: da martedì a sabato** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.mp4#t=22.416)
+
+Con due giorni attorno a giovedì ventidue, la finestra va da martedì venti a sabato ventiquattro. Oggi è la data sui server di DocBits, in U T C.
+
+**Sei operatori, una finestra** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.mp4#t=33.583)
+
+Uguale a accetta le date dentro la finestra, Diverso da quelle fuori. Maggiore o uguale inizia all'inizio della finestra, Maggiore di dopo la sua fine. Minore o uguale e Minore di funzionano al contrario.
+
+**Operatore, giorni e giorni della settimana** · [0:48](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.mp4#t=48.35)
+
+Nella scheda, scegli l'operatore, la tolleranza in giorni e i giorni della settimana che contano.
+
+**Contano solo i giorni scelti** · [1:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.mp4#t=61.883)
+
+I giorni di tolleranza consentiti contano solo i giorni della settimana selezionati. Con lunedì-venerdì, un giorno dopo venerdì è lunedì, quindi la finestra va da giovedì a lunedì.
+
+**Un intervallo richiede due schede** · [1:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.mp4#t=74.883)
+
+Una sola scheda non può accettare esattamente oggi o domani, perché la sua finestra si estende ugualmente in entrambe le direzioni. Due schede una dopo l'altra possono.
+
+**Uguale a 1 giorno, poi Maggiore o uguale 0** · [1:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.mp4#t=87.983)
+
+La prima scheda, Uguale a con un giorno, accetta ieri, oggi e domani. La seconda, Maggiore o uguale con zero giorni, accetta oggi e ogni giorno successivo. Solo oggi e domani superano entrambe.
+
+**Escludere un giorno con Diverso da** · [1:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.mp4#t=102.35)
+
+Per escludere un giorno, aggiungi una scheda Diverso da con zero giorni. Qui Uguale a con tre giorni e Maggiore o uguale con zero giorni danno da oggi fino a tre giorni dopo, e Diverso da toglie oggi.
+
+**Tre schede, un intervallo** · [1:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/it.mp4#t=116.716)
+
+Nel designer, le tre schede si seguono sul percorso del successo. Il Workflow continua solo quando riescono tutte e tre: da domani fino a tre giorni dopo.
+
+</details>
+
 ## La finestra di tolleranza
 
 A partire dalla data di riferimento, la tolleranza viene contata all'indietro e in avanti. Il risultato è una **finestra di tolleranza**: dalla data di inizio alla data di fine, entrambe incluse.

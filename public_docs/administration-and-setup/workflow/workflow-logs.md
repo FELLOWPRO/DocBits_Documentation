@@ -87,6 +87,40 @@ I **Registri del Flusso di Lavoro** consentono agli utenti di analizzare quali f
 
 **Video:** Leggere i registri del Workflow · 1:41 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/it.vtt)
 
+<details>
+
+<summary>Trascrizione</summary>
+
+**Aprire i registri** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/it.mp4#t=0.25)
+
+Ogni documento conserva i registri dei Workflow eseguiti su di esso. Nel cruscotto dei documenti, apri le azioni di un documento e scegli Registri del flusso di lavoro.
+
+**Esecuzioni e risultati** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/it.mp4#t=11.483)
+
+In alto vedi quante esecuzioni ci sono state e quante sono finite con un errore, una condizione non riuscita o con successo. Sotto, ogni esecuzione è elencata con Workflow, ora, durata e risultato.
+
+**Il percorso di un'esecuzione** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/it.mp4#t=26.316)
+
+Trascina il divisore a sinistra per dare più spazio ai registri. Poi fai clic su un'esecuzione per vederne il percorso. Ogni scheda mostra il suo risultato: verde per il successo, arancione per una condizione non riuscita, rosso per un errore. Qui la scheda E è finita con una condizione non riuscita, quindi la scheda Poi successiva non è stata eseguita.
+
+**Perché una scheda è finita così** · [0:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/it.mp4#t=50.216)
+
+Seleziona una scheda per leggerne il registro. Dice cosa ha confrontato la scheda e perché è finita così. Qui il documento è pronto per la convalida, ma la scheda si aspetta la seconda approvazione.
+
+**Un errore e il suo motivo** · [1:03](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/it.mp4#t=63.95)
+
+Un'esecuzione che finisce con un errore mostra in rosso la scheda non riuscita. Qui la scheda E non ha potuto leggere l'indirizzo di consegna dal documento. I dati mancanti sono sempre un errore, quindi la scheda successiva non è stata eseguita.
+
+**Trovare le esecuzioni** · [1:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/it.mp4#t=80.25)
+
+Con molte esecuzioni, usa la ricerca per trovare un Workflow per nome e il pulsante filtro per restringere l'elenco per stato o data.
+
+**Nota sul limite di esecuzione** · [1:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/it.mp4#t=90.216)
+
+In alto compare una nota quando un Workflow ha raggiunto il suo limite di esecuzioni su questo documento. Il video sui limiti di esecuzione la spiega.
+
+</details>
+
 Per accedere ai registri del flusso di lavoro:
 
 1. Navigare nel **Dashboard**.

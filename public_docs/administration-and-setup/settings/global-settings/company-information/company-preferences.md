@@ -24,7 +24,7 @@ Abra **Patrón de fecha** y elija el orden y el separador con los que desea ver 
 
 ## Elegir el formato del importe
 
-Abra **Formato de cantidad** y elija el formato regional que utiliza su organización. En la lista, los formatos aparecen con el nombre del país en inglés, por ejemplo **Germany**, **United Kingdom**, **France** y **Spain**.
+Abra **Formato de cantidad** y elija el formato regional que utiliza su organización. La lista muestra los formatos regionales disponibles; en la captura aparecen, por ejemplo, **Germany**, **United Kingdom**, **France** y **Spain**.
 
 <figure><img src="../../../../.gitbook/assets/company-preferences-amount-options-es-20261113.png" alt="Campo desplegable Formato de cantidad abierto con las opciones Germany, United Kingdom, France y Spain; ninguna de las opciones está seleccionada."><figcaption><p>Elija un formato regional para los importes.</p></figcaption></figure>
 

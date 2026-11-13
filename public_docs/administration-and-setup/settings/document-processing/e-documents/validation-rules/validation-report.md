@@ -6,17 +6,17 @@ Gdy DocBits odrzuca e-fakturę, możesz sprawdzić przyczynę. **Raport walidacy
 
 Ta strona jest dla osób, które przetwarzają faktury. Administratorzy ustawiają reguły na stronie [Walidacja e-faktury](./) i wybierają dla każdego typu dokumentu, czy nieudana kontrola blokuje fakturę, zobacz [Walidacja dla każdego typu dokumentu](validation-per-document-type.md).
 
-## Kiedy dokument otrzymuje status Błąd
+## Kiedy dokument otrzymuje status **Error**
 
-Jeśli walidacja jest **włączona** i **blokująca** dla danego typu dokumentu, faktura z błędem blokującym otrzymuje status **Error**. Otwórz dokument z panelu. Widok błędu pokazuje XML po lewej stronie, a powód po prawej.
+Jeśli walidacja jest **on** i **blocking** dla danego typu dokumentu, faktura z błędem blokującym otrzymuje status **Error**. Faktura odrzucona przez sam walidator ma natomiast dedykowany status walidacji e-invoice, zobacz [Ekran błędu odrzuconej faktury e-invoice](validation-error-screen.md). Otwórz dokument z Dashboardu. Widok błędu pokazuje XML po lewej stronie, a powód po prawej.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-pl.png" alt="Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-pl.png" alt="The error view: the XML of the invoice and the first blocking finding with a next step. Example invoice with fictional names."><figcaption><p>Ekran błędu całkowicie fikcyjnej przykładowej faktury. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
 
 Karta po prawej wskazuje warstwę, która odrzuciła fakturę (na przykład **L3 · Business Rules**), kod reguły (na przykład `BR-CO-26`), krótkie wyjaśnienie i **Next step**. Wybierz **View validation details**, aby otworzyć pełny raport.
 
 ## Czytanie raportu
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-pl.png" alt="Raport fikcyjnej faktury z danymi pliku i wynikiem."><figcaption><p>Raport fikcyjnej faktury z danymi pliku i wynikiem.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-pl.png" alt="The top of the report: file data, the verdict and the result for each level"><figcaption><p>Raport fikcyjnej faktury z danymi pliku i wynikiem.</p></figcaption></figure>
 
 Raport zaczyna się od informacji o pliku:
 
@@ -30,6 +30,8 @@ Raport zaczyna się od informacji o pliku:
 | **Number / date** | Numer faktury i data faktury odczytane z XML. |
 
 Pod danymi pliku widzisz **werdykt**, na przykład **Not conformant**, z liczbą błędów, ostrzeżeń i informacji. Jeśli Twoja organizacja zmieniła poziom ważności reguły, druga linia **Organisation severity** pokazuje liczby po uwzględnieniu ustawień organizacji.
+
+> Werdykt brzmi **Rejected** zamiast słowa o zgodności, gdy dokument został odrzucony w walidacji e-invoice, a werdykt ma wtedy ikonę anulowania. Następny krok wskazuje listę błędów. Raport, którego wyniku nie można odczytać, nigdy nie pokazuje faktury jako zgodnej.
 
 ### Wyniki według poziomu
 
@@ -49,7 +51,7 @@ Tabela **Result per level** pokazuje, ile błędów, ostrzeżeń i informacji zn
 
 ## Wyniki
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-pl.png" alt="Każdy wynik ma kod, poziom, czytelny tekst i wskazówkę, jak go naprawić"><figcaption><p>Każdy wynik ma kod, poziom, czytelny tekst i wskazówkę, jak go naprawić</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-pl.png" alt="Each finding has a code, a level, a text you can read and a hint how to fix it"><figcaption><p>Każdy wynik ma kod, poziom, czytelny tekst i wskazówkę, jak go naprawić</p></figcaption></figure>
 
 Każdy wynik to jeden wiersz:
 

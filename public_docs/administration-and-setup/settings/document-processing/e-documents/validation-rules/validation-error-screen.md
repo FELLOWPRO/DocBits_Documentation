@@ -4,13 +4,15 @@
 
 Gdy wgrasz błędną e-fakturę, DocBits jej nie gubi. Dokument dostaje status **Error**, a ekran błędu pokazuje, co jest nie tak, gdzie i co zrobić dalej. Ta strona pokazuje dwa przykłady: plik XML, który nie jest poprawnie sformułowany, oraz fakturę, która łamie regułę biznesową.
 
-> Faktura dostaje status **Error** tylko wtedy, gdy walidacja jest **włączona** i **blokująca** dla jej typu dokumentu. Zobacz [Walidacja dla każdego typu dokumentu](validation-per-document-type.md).
+> Faktura dostaje status **Error** tylko wtedy, gdy walidacja jest **on** i **blocking** dla jej typu dokumentu. Zobacz [Walidacja dla każdego typu dokumentu](validation-per-document-type.md).
+
+Faktura e-invoice odrzucona przez walidator ma własny status walidacji e-invoice zamiast zwykłego **Error**. Odznaka statusu na dashboardzie dodaje podpowiedź, która mówi, dlaczego dokument się zatrzymał, dzięki czemu podczas filtrowania listy dokumentów odróżnisz odrzuconą fakturę od innych błędów. Ekran błędu i raport poniżej są w obu przypadkach takie same.
 
 ## Przykład 1: plik XML jest uszkodzony
 
 Dostawca wysyła plik XML, w którym znacznik zamykający nie pasuje do znacznika otwierającego. Pliku nie można odczytać, więc DocBits zatrzymuje się na pierwszej kontroli, **L1 · Well-formedness**.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-pl.png" alt="Ekran błędu fikcyjnego pliku XML z celowo uszkodzonym znacznikiem zamykającym. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Ekran błędu fikcyjnego pliku XML z celowo uszkodzonym znacznikiem zamykającym. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-pl.png" alt="The error screen for a damaged XML file. The faulty line is marked in the XML. Example file with fictional data."><figcaption><p>Ekran błędu fikcyjnego pliku XML z celowo uszkodzonym znacznikiem zamykającym. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
 
 Ekran ma dwie strony:
 
@@ -19,7 +21,7 @@ Ekran ma dwie strony:
 
 Wybierz **View validation details**, aby otworzyć pełny [raport walidacyjny](validation-report.md).
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-pl.png" alt="Raport uszkodzonego pliku: jeden błąd na poziomie 1 Składnia, z komunikatem technicznym i pozycją"><figcaption><p>Raport uszkodzonego pliku: jeden błąd na poziomie 1 Składnia, z komunikatem technicznym i pozycją</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-pl.png" alt="The report of the damaged file: one error at level 1 Syntax, with the technical message and the position"><figcaption><p>Raport uszkodzonego pliku: jeden błąd na poziomie 1 Składnia, z komunikatem technicznym i pozycją</p></figcaption></figure>
 
 Raport podaje dokładną pozycję (tutaj wiersz 5, kolumna 4081) i techniczny komunikat parsera XML. Wybierz **Show in XML**, aby przejść do tej linii. Wskazówka **How to fix** mówi, że należy poprosić nadawcę o poprawiony plik.
 
@@ -27,9 +29,19 @@ Raport podaje dokładną pozycję (tutaj wiersz 5, kolumna 4081) i techniczny ko
 
 XML jest poprawny, ale brakuje wymaganego pola. Na przykład nie można zidentyfikować sprzedawcy, ponieważ brak identyfikatora sprzedawcy, identyfikatora rejestracyjnego lub identyfikatora VAT (reguła `BR-CO-26`).
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-pl.png" alt="Ekran błędu całkowicie fikcyjnej przykładowej faktury: warstwa L3 · Business Rules, kod reguły i następny krok"><figcaption><p>Ekran błędu całkowicie fikcyjnej przykładowej faktury: warstwa L3 · Business Rules, kod reguły i następny krok</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-pl.png" alt="The error screen for a business-rule error: the layer L3 · Business Rules, the rule code and a next step"><figcaption><p>Ekran błędu całkowicie fikcyjnej przykładowej faktury: warstwa L3 · Business Rules, kod reguły i następny krok</p></figcaption></figure>
 
 Karta podaje warstwę **L3 · Business Rules** i kod `BR-CO-26`. Raport wymienia wszystkie wyniki faktury, zobacz [Raport walidacyjny](validation-report.md).
+
+## Gdy DocBits nie mógł sprawdzić dokumentu
+
+Nie każdy błąd jest odrzuceniem. Jeśli walidator w ogóle nie może odczytać pliku, komunikat zaczyna się od _could not check this document_ i podaje sprawdzenie, które go zatrzymało, na przykład `XML-PARSE` dla uszkodzonego pliku XML albo `PDF-UNREADABLE` dla pliku PDF, którego nie da się otworzyć. DocBits pokazuje tę samą kartę wyjaśnienia co przy odrzuconej fakturze, z nazwą sprawdzenia, kodem i komunikatem technicznym.
+
+To awaria techniczna, a nie werdykt o fakturze:
+
+* DocBits nie oznacza dokumentu jako odrzuconego.
+* Ponowne uruchomienie może się udać, bo przyczyna może leżeć w odczycie pliku. Wybierz **Restart Processing**, zanim poprosisz nadawcę o nową fakturę.
+* Jeśli po ponownym uruchomieniu ten sam kod pojawi się ponownie, prześlij plik i kod administratorowi.
 
 ## Next step i przyciski
 

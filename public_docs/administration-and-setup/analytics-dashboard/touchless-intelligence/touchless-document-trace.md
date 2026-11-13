@@ -8,7 +8,7 @@ Wpisz identyfikator dokumentu w **Document ID** lub otwórz przykładowy dokumen
 
 Nagłówek pokazuje plik, jego status (na przykład **In progress**), oglądane uruchomienie i jego pierwszą blokadę oraz przycisk **Document** z identyfikatorem dokumentu.
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-pl.png" alt="Dev NOVA: ścieżka przetwarzania i zarejestrowane punkty z pierwszego uruchomienia testowego"><figcaption><p>Nowe przechwycenie z Dev NOVA 11.0.3, 4 listopada 2026. Fikcyjna faktura testowa zatrzymuje się na walidacji pól. Klasyfikacja, wyszukiwanie dostawcy, odczyt nagłówka i odczyt tabeli zawierają rzeczywiste zarejestrowane punkty; karty pokazują dokument i historię uruchomień. To działający interfejs produktu.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-pl.png" alt="Dev NOVA: processing path and recorded points from the first test run"><figcaption><p>Nowe przechwycenie z Dev NOVA 11.0.3, 4 listopada 2026. Fikcyjna faktura testowa zatrzymuje się na walidacji pól. Klasyfikacja, wyszukiwanie dostawcy, odczyt nagłówka i odczyt tabeli zawierają rzeczywiste zarejestrowane punkty; karty pokazują dokument i historię uruchomień. To działający interfejs produktu.</p></figcaption></figure>
 
 **Pipeline Path** pokazuje 14 etapów: Intake, Classification, E-Document Validation, Supplier Identification, Text Recognition, Header Extraction, Table Extraction, Field Validation, PO Lookup, PO Line Match, Approval, Workflow Routing, Export, ERP Acknowledgement. Każdy etap ma jeden stan:
 
@@ -20,6 +20,8 @@ Nagłówek pokazuje plik, jego status (na przykład **In progress**), oglądane 
 | **Nothing Recorded** (przerywany) | Dla tego etapu nie zarejestrowano żadnych danych |
 | **Not applicable** | Etap nie dotyczy tego dokumentu |
 
+Wybierz krok **PO Match**, aby otworzyć widok szczegółów PO matching z wierszami zamówienia stojącymi za tym krokiem, tam gdzie ślad go udostępnia.
+
 ### Stage Log
 
 **Stage Log** pod ścieżką wymienia te same etapy wraz z tym, co każdy z nich zarejestrował. Kropka statusu i słowo statusu znajdują się po lewej i prawej stronie każdego wiersza.
@@ -27,10 +29,11 @@ Nagłówek pokazuje plik, jego status (na przykład **In progress**), oglądane 
 * Każda wartość to **point chip**: liczba z jednostką, na przykład **Confidence 100 %**, **Threshold 60 %**, **Failed rules 0**, **8 missing fields** lub **0 mapping gaps**. Procenty są pokazywane jako `97 %`, nigdy jako `0.97`.
 * **Details** otwiera pełną listę punktów zarejestrowanych przez etap, wraz z rozważanymi alternatywami.
 * Etap, który zablokował dokument, podaje przyczynę, na przykład **Field validation failed**.
+* Wpis **Intake** mówi, jak dokument trafił do DocBits, na przykład że dotarł e-mailem w danym dniu. Gdy przebieg rejestruje własny etap Intake, zdanie znajduje się w tym wierszu zamiast w osobnym wpisie.
 * Punkt, którego żaden etap nie zarejestrował, jest pokazywany jako **Not recorded**, nigdy jako wymyślona wartość. Punkty to liczby i stałe słowa, nigdy tekst dokumentu.
 * **Show Raw Diagnostics** włącza surowe dane, gdy poprosi o to wsparcie.
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-pl.png" alt="Dev NOVA: dziennik etapów z pewnością, punktami odczytu i zablokowaną walidacją pól"><figcaption><p>Rzeczywiste pierwsze uruchomienie: pewność klasyfikacji 100%, 0 kandydatów dostawcy, 1 wiersz tabeli i 7 luk w mapowaniu. Passed oznacza, że etap przebiegł; nie dowodzi dopasowania dostawcy ani tego, że każda wartość faktury jest poprawna. Walidacja pól zgłasza brak wymaganego pola.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-pl.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Rzeczywiste pierwsze uruchomienie: pewność klasyfikacji 100%, 0 kandydatów dostawcy, 1 wiersz tabeli i 7 luk w mapowaniu. Passed oznacza, że etap przebiegł; nie dowodzi dopasowania dostawcy ani tego, że każda wartość faktury jest poprawna. Walidacja pól zgłasza brak wymaganego pola.</p></figcaption></figure>
 
 ### Uruchomienia i zmiany
 
@@ -40,15 +43,15 @@ Karta Document wymienia typ dokumentu, dostawcę, numer faktury, zamówienie zak
 
 ### Odczyt szczegółów dostawcy i tabeli
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-pl.png" alt="Dev NOVA: szczegóły dostawcy rozdzielają wykryte identyfikatory, wyszukiwania w danych podstawowych i dopasowania"><figcaption><p>To uruchomienie znajduje nazwę dostawcy na fakturze i przeszukuje dane podstawowe, ale nie przypisuje dostawcy. Numer VAT, IBAN, e-mail i GLN nie występują na tej fakturze testowej. Brak dopasowania w danych podstawowych to inna diagnoza niż brakująca wartość na fakturze.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-pl.png" alt="Dev NOVA: supplier details separate detected identifiers, master-data searches and matches"><figcaption><p>To uruchomienie znajduje nazwę dostawcy na fakturze i przeszukuje dane podstawowe, ale nie przypisuje dostawcy. Numer VAT, IBAN, e-mail i GLN nie występują na tej fakturze testowej. Brak dopasowania w danych podstawowych to inna diagnoza niż brakująca wartość na fakturze.</p></figcaption></figure>
 
 Sprawdź trzy odrębne pytania: czy na dokumencie znaleziono identyfikator, czy wykonano jego wyszukanie i czy dopasowano dostawcę? Zielony etap sam na nie nie odpowiada.
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-pl.png" alt="Dev NOVA: szczegóły tabeli z pierwszego uruchomienia pokazują siedem luk w mapowaniu"><figcaption><p>Szczegóły tabeli pokazują 7 luk w mapowaniu dla 1 tabeli i 1 wiersza. Zanim uznasz, że odczyt się nie powiódł, sprawdź mapowanie kolumn. Stopka porównania nie jest prawidłową podstawą dla wybranego początkowego uruchomienia, które nie ma poprzednika.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-pl.png" alt="Dev NOVA: first-run table details report seven mapping gaps"><figcaption><p>Szczegóły tabeli pokazują 7 luk w mapowaniu dla 1 tabeli i 1 wiersza. Zanim uznasz, że odczyt się nie powiódł, sprawdź mapowanie kolumn. Stopka porównania nie jest prawidłową podstawą dla wybranego początkowego uruchomienia, które nie ma poprzednika.</p></figcaption></figure>
 
 ### Rozpoznanie rzeczywistego restartu
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-pl.png" alt="Dev NOVA: porównanie dwóch rzeczywistych uruchomień testowych z niezmienionymi punktami etapów"><figcaption><p>Ta sama faktura testowa po rzeczywistym ręcznym restarcie, bez poprawionych pól faktury. Nowe uruchomienie dowodzi kolejnej próby, a nie poprawy. Niezmienione punkty pokazują No change; nie wymyślono żadnych znaczników różnic.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-pl.png" alt="Dev NOVA: comparison of two actual test runs with unchanged stage points"><figcaption><p>Ta sama faktura testowa po rzeczywistym ręcznym restarcie, bez poprawionych pól faktury. Nowe uruchomienie dowodzi kolejnej próby, a nie poprawy. Niezmienione punkty pokazują No change; nie wymyślono żadnych znaczników różnic.</p></figcaption></figure>
 
 Ręczny restart to ingerencja człowieka. Dopiero późniejsze pomyślne zakończenie zaklasyfikowałoby ten przypadek jako AP Assisted. Dopóki dokument jest w toku, jest wyłączony z mianownika zakończonych dokumentów.
 

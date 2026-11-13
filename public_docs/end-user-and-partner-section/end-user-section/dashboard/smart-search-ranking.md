@@ -2,6 +2,10 @@
 
 Smart Search Ranking place les documents que vous cherchez en tête d'une recherche du tableau de bord. Une recherche par mot-clé trouve chaque document qui contient votre mot ; Smart Search Ranking ajoute une étape : une IA lit les meilleurs résultats et place en premier les documents qui parlent vraiment de votre recherche. Les correspondances exactes — numéros de facture, numéros de commande, noms de fournisseurs — restent toujours en tête.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/fr.mp4" %}
+Smart Search Ranking dans le tableau de bord (narration en français). [Lecteur avec sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/fr.html) · [Transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/fr.txt)
+{% endembed %}
+
 ## Ce qui change
 
 | | Ordre par mot-clé | Avec Smart Search Ranking |

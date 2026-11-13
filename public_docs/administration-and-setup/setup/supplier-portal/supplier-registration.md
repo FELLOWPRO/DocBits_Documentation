@@ -42,7 +42,7 @@ Questa guida è destinata ai fornitori invitati al portale DocBits di un’organ
 
 7.  **FORNITORE CERTIFICATI**
 
-    Caricare tutti i certificati richiesti (ad esempio certificati fiscali, assicurativi o di diversità dei fornitori). Salvare i progressi se si deve tornare più tardi per completare la registrazione. Al termine fare clic su **Inviare per l'approvazione**.
+    Caricare tutti i certificati richiesti (ad esempio certificati fiscali, assicurativi o di diversità dei fornitori). Salvare i progressi se si deve tornare più tardi per completare la registrazione. Al termine fare clic su **Inviare per l'approvazione**. In fondo alla pagina restano disponibili anche **Indietro**, **Annulla** e **Salva**.
 
     <figure><img src="../../../.gitbook/assets/supplier-registration-step6-certificates-it-20261113.png" alt="Passo 6 dell'assistente in italiano, sezione FORNITORE CERTIFICATI: le righe di caricamento Wg certificate e Supplier diversity certificate, ciascuna con le icone per visualizzare, caricare ed eliminare un file; in basso i pulsanti Indietro, Annulla, Salva e Inviare per l'approvazione"><figcaption><p>Passo 6 di 6, <strong>FORNITORE CERTIFICATI</strong>: caricare i certificati obbligatori con i pulsanti di caricamento e fare clic su <strong>Inviare per l'approvazione</strong>. Quali certificati sono obbligatori lo stabilisce l’organizzazione che invita; in questa versione le etichette di questi campi sono ancora in inglese.</p></figcaption></figure>
 

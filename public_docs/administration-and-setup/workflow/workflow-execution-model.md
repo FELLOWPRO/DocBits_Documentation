@@ -35,9 +35,53 @@ Test Manager i okno testu Advanced to różne powierzchnie wykonania. Samo poró
 
 **Film:** Kolejność wykonywania Workflows · 1:53 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pl.vtt)
 
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Niższe numery idą pierwsze** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pl.mp4#t=0.25)
+
+Gdy dokument osiąga status, uruchamia się każdy aktywny pasujący Workflow, jeden po drugim. Kolumna Kolejność wykonywania przepływu pracy ustala kolejność: niższe numery idą pierwsze.
+
+**Edycja kolejności wykonywania** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pl.mp4#t=19.816)
+
+Aby to zmienić, otwórz akcje Workflow i wybierz Edytuj kolejność wykonywania przepływu pracy. Wpisz liczbę od zera do tysiąca. Nowe Workflows zaczynają od pięciuset, a Workflows z tą samą liczbą działają alfabetycznie.
+
+**Każdy Workflow widzi, co zrobiły poprzednie** · [0:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pl.mp4#t=41.85)
+
+Kolejność ma znaczenie, bo każdy Workflow pracuje na tym, co zostawiły poprzednie. Późniejszy Workflow widzi pola ustawione przez wcześniejszy. Karty działają od razu, także gdy przypisują lub eksportują dokument. Tylko karty przypisania sekwencyjnego, karta eksportu z kolejką i prompty DocOperatora czekają, aż skończy się ostatni Workflow. A gdy Workflow skończy się niespełnionym warunkiem lub błędem, kolejne i tak działają.
+
+**Najpierw przygotuj, potem decyduj** · [1:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/pl.mp4#t=79.25)
+
+Prosty schemat: Workflows, które przygotowują dane, na przykład ustawiają pola, dostają niskie numery, a te, które sprawdzają, kierują lub zatwierdzają dokument, wyższe. Zostaw odstępy, żeby nowe Workflows zmieściły się pomiędzy.
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pl.mp4" %}
 
 **Film:** Limity wykonywania Workflows · 1:05 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Osiągnięto limit wykonania** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pl.mp4#t=0.25)
+
+Workflow może działać na tym samym dokumencie tylko ograniczoną liczbę razy. Gdy Workflow osiągnie ten limit, Dzienniki przepływu pracy dokumentu pokazują to u góry.
+
+**Czerwona ikona oznacza Workflow** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pl.mp4#t=17.183)
+
+Każdy przebieg Workflow, który osiągnął limit, ma tę czerwoną ikonę obok nazwy. Najedź na nią, aby zobaczyć powód.
+
+**Na Workflow i dokument** · [0:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pl.mp4#t=30.116)
+
+Limit liczy przebiegi jednego Workflow na jednym dokumencie. Po jego osiągnięciu ten Workflow jest pomijany dla tego dokumentu, a wszystkie inne Workflows nadal działają.
+
+**Dowiedz się, dlaczego działał tak często** · [0:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/pl.mp4#t=45.85)
+
+Gdy Workflow osiągnie limit, sprawdź w jego dziennikach, dlaczego działał tak często. Sprawdź na przykład, czy zmienia coś, co uruchamia go ponownie, i zawęź jego warunki, aby działał tylko wtedy, kiedy powinien.
+
+</details>
 
 Niższe wartości **kolejności wykonywania** są realizowane wcześniej. Na przykład workflow 100 przygotowuje pole, a 200 je sprawdza. Stosuj różne wartości i potwierdź faktycznie odczytane dane w nowym wykonaniu. Położenie karty Advanced na płótnie nie wyznacza kolejności.
 

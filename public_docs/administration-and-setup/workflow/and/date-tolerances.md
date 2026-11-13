@@ -12,6 +12,52 @@ Karty, które korzystają z tego obliczenia:
 
 **Film:** Tolerancje dat i sprawdzanie zakresów · 2:44 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.vtt)
 
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Daty z tolerancją** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4#t=0.25)
+
+Kilka kart Workflow porównuje datę z datą odniesienia i dopuszcza tolerancję w dniach. Wszystkie liczą tę tolerancję tak samo.
+
+**Okno tolerancji** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4#t=14.283)
+
+Od daty odniesienia tolerancja jest liczona wstecz i do przodu. Wynikiem jest okno, a oba jego końce do niego należą.
+
+**Dwa dni: od wtorku do soboty** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4#t=26.65)
+
+Przy dwóch dniach wokół czwartku, dwudziestego drugiego, okno trwa od wtorku, dwudziestego, do soboty, dwudziestego czwartego. Dziś to data na serwerach DocBits, w U T C.
+
+**Sześć operatorów, jedno okno** · [0:46](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4#t=46.616)
+
+Równa się akceptuje daty w oknie, Różny od daty poza nim. Większy lub równy zaczyna się na początku okna, Większy niż po jego końcu. Mniejszy lub równy oraz Mniejszy niż działają odwrotnie.
+
+**Operator, dni i dni tygodnia** · [1:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4#t=65.45)
+
+W karcie wybierz operator, tolerancję w dniach i liczone dni tygodnia.
+
+**Liczą się tylko wybrane dni tygodnia** · [1:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4#t=79.05)
+
+Dozwolone dni tolerancji liczą tylko wybrane dni tygodnia. Przy dniach od poniedziałku do piątku jeden dzień po piątku to poniedziałek, więc okno trwa od czwartku do poniedziałku.
+
+**Zakresy wymagają dwóch kart** · [1:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4#t=95.016)
+
+Jedna karta nie zaakceptuje dokładnie dziś lub jutro, bo jej okno sięga równie daleko w obie strony. Dwie karty, jedna po drugiej, to potrafią.
+
+**Równa się 1 dzień, potem Większy lub równy 0 dni** · [1:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4#t=110.583)
+
+Pierwsza karta, Równa się z jednym dniem, akceptuje wczoraj, dziś i jutro. Druga, Większy lub równy z zerem dni, akceptuje dziś i każdy późniejszy dzień. Przez obie przechodzą tylko dziś i jutro.
+
+**Wyklucz dzień przez Różny od** · [2:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4#t=129.35)
+
+Aby pominąć jeden dzień, dodaj kartę Różny od z zerem dni. Tutaj Równa się z trzema dniami i Większy lub równy z zerem dni dają dziś do trzech dni naprzód, a Różny od usuwa dziś.
+
+**Trzy karty, jeden zakres** · [2:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pl.mp4#t=148.583)
+
+W projektancie trzy karty następują po sobie na ścieżce sukcesu. Workflow idzie dalej tylko, gdy wszystkie trzy dadzą sukces: od jutra do trzech dni naprzód.
+
+</details>
+
 ## Okno tolerancji
 
 Od daty referencyjnej tolerancja jest odliczana do tyłu i do przodu. Wynikiem jest **okno tolerancji**: od daty początkowej do daty końcowej, obie włącznie.

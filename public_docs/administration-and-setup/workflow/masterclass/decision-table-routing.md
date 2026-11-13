@@ -18,6 +18,36 @@ Warunek tabeli decyzyjnej rzeczywiście wywołuje usługę w celu oceny tabeli. 
 
 **Film:** Tabele decyzyjne w kartach przypisania · 2:30 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pl.vtt)
 
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Tabele decyzyjne w dwóch krokach** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pl.mp4#t=0.25)
+
+Tabele decyzyjne decydują, kto zajmuje się dokumentem. W Workflow działają w dwóch krokach. Karta I uruchamia tabelę decyzyjną i zachowuje to, co zwraca. Karty Następnie używają tych wyników, aby przypisać dokument lub utworzyć zadania.
+
+**Sukces, Niespełniony warunek lub Błąd** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pl.mp4#t=25.483)
+
+Karta I kończy się sukcesem, gdy tabela zwraca co najmniej jedno dopasowanie dla dokumentu. Bez dopasowania kończy się jako niespełniony warunek i idzie pomarańczową ścieżką. Bez wybranej tabeli albo gdy tabela nie może działać, kończy się błędem.
+
+**Uruchom tabelę i zapisz wyniki** · [0:48](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pl.mp4#t=48.583)
+
+Dodaj kartę I Tabela decyzyjna zwraca wyniki i wybierz tabelę decyzyjną. Potem ustaw w niej zapisywanie zwróconych danych. Bez tego karty po niej nie mają z czym pracować.
+
+**Pierwszy użytkownik dostaje dokument, każdy zadanie** · [1:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pl.mp4#t=65.416)
+
+Na ścieżce sukcesu karta Następnie, która przypisuje według pierwszego zwróconego użytkownika, daje dokument pierwszemu użytkownikowi z tabeli. Każdy zwrócony użytkownik, także pierwszy, dostaje zadanie lub powiadomienie. Nadaj zadaniu tytuł, opis i priorytet i wybierz, czy wysłać też e-mail. Grupy w wynikach są ignorowane.
+
+**Bez pól: wszystko z tabeli** · [1:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pl.mp4#t=97.783)
+
+Natomiast karta Przypisz dokument sekwencyjnie do Użytkownika/Grupy na podstawie tabeli decyzyjnej nie ma żadnych pól. Bierze użytkowników i grupy z tabeli, każdego z priorytetem z tabeli lub domyślnym. Na końcu przebiegu dokument dostaje wpis z najniższym numerem priorytetu, chyba że inna karta już przypisała go bezpośrednio.
+
+**Która karta do jakiego zadania** · [2:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/pl.mp4#t=125.816)
+
+Krótko: aby dać dokument jednej osobie i poinformować pozostałych, użyj karty pierwszego użytkownika. Aby tabela decydowała o wszystkim, także o priorytetach, użyj karty sekwencyjnej bez pól. Aby tylko tworzyć zadania, użyj karty zadań dla wyników tabeli decyzyjnej.
+
+</details>
+
 ## Karty i przykładowe parametry
 
 Wartości opisują parametry kart, a nie pełny workflow do importu. Zastąp YOUR_* własnymi wyborami testowymi. Projektant zarządza ukrytym ID wywołującego. Katalog: Dev, DocFlow 2.10.38, 21 października 2026; osobno sprawdź wersje i uprawnienia swojej organizacji.

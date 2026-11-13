@@ -76,9 +76,101 @@ Pasek narzędzi Zaawansowanego Workflow biegnie wzdłuż dolnej krawędzi kanwy 
 
 **Film:** Projektant Advanced Workflow: karty i ścieżki · 3:00 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.vtt)
 
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Zacznij nowy Workflow** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=0.25)
+
+Otwórz Panel przepływu pracy i wybierz Nowy przepływ pracy.
+
+**Wybierz Zaawansowany przepływ pracy** · [0:07](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=7.983)
+
+Wybierz Zaawansowany przepływ pracy. Projektant otwiera się z węzłem Start, od którego wszystko się zaczyna.
+
+**Gdy, I oraz Następnie** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=20.016)
+
+Dodawaj karty przez menu Dodaj lub prawym kliknięciem na obszarze roboczym. Trzy kategorie kart to Gdy, I oraz Następnie.
+
+**Gdy: warunek wyzwalający** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=34.383)
+
+Karta Gdy to warunek wyzwalający. Decyduje, kiedy Workflow się uruchamia, na przykład dla określonego typu dokumentu.
+
+**I: dodatkowy warunek** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=47.983)
+
+Karty I dodają kolejne warunki. Sprawdzają dokument, na przykład jego status. Wynikiem jest sukces albo niespełniony warunek.
+
+**Następnie: karta akcji** · [1:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=61.716)
+
+Karty Następnie to karty akcji. Zmieniają dokument, na przykład ustawiają pole lub zatwierdzają dokument.
+
+**Przeciągnij, aby połączyć** · [1:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=73.05)
+
+Aby połączyć dwie karty, przeciągnij od uchwytu po prawej stronie jednej karty do wejścia po lewej stronie następnej.
+
+**Niebieska: Sukces** · [1:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=84.45)
+
+Niebieska jest ścieżka sukcesu. Ma ją każda karta. Przebieg idzie nią, gdy karta się zakończy.
+
+**Pomarańczowa: Niespełniony warunek** · [1:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=96.25)
+
+Pomarańczowa jest ścieżka niespełnionego warunku. Mają ją tylko karty I. Przebieg idzie nią, gdy warunek nie jest spełniony.
+
+**Czerwona: Błąd** · [1:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=110.85)
+
+Czerwona jest ścieżka błędu. Mają ją karty I oraz Następnie. Przebieg idzie nią, gdy karta zakończy się błędem.
+
+**If-else z obsługą błędów** · [2:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=122.183)
+
+Razem te ścieżki tworzą if-else z obsługą błędów. Sukces uruchamia jedną akcję, niespełniony warunek inną, a błąd wyjście awaryjne, na przykład zadanie dla osoby.
+
+**Jedna ścieżka na status** · [2:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=139.516)
+
+Dla kilku przypadków połącz karty Status dokumentu przez ich pomarańczowe ścieżki. Każda karta sprawdza jeden status, więc każdy status ma własną ścieżkę.
+
+**Ścieżka do karty i od niej** · [2:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/pl.mp4#t=154.05)
+
+Kliknij kartę, aby podświetlić jej ścieżkę wykonania: karty, przez które dokument do niej dochodzi, i karty, które mogą po niej nastąpić. Reszta jest przyciemniona. Tutaj do zadania prowadzi tylko droga od karty Gdy, przez czerwoną ścieżkę błędu karty Status dokumentu.
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.mp4" %}
 
 **Film:** Opisy i notatki Workflow · 1:38 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Objaśnij swój Workflow** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.mp4#t=0.25)
+
+Workflow z kilkoma gałęziami łatwiej utrzymać, gdy sam się objaśnia. Projektant ma do tego dwa narzędzia: opis całego Workflow i notatki na obszarze roboczym.
+
+**Opisz cały Workflow** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.mp4#t=17.183)
+
+Wybierz Edytuj opis na pasku narzędzi i napisz w jednym lub dwóch zdaniach, do czego służy Workflow. Opis zapisuje się razem z Workflow.
+
+**Dodaj notatkę** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.mp4#t=31.716)
+
+Aby objaśnić jeden krok, kliknij prawym przyciskiem obszar roboczy, otwórz menu Dodaj i wybierz Notatka. Pojawi się ona w miejscu kliknięcia.
+
+**Kliknij dwukrotnie, aby pisać** · [0:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.mp4#t=45.45)
+
+Kliknij notatkę dwukrotnie, aby w niej pisać, do pięciuset znaków. Gdy skończysz, kliknij obok.
+
+**Przesuń i powiększ** · [0:57](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.mp4#t=57.416)
+
+Przeciągnij notatkę obok kart, które objaśnia, i pociągnij jej prawy dolny róg, aby ją powiększyć.
+
+**Nadaj notatkom kolor** · [1:08](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.mp4#t=68.816)
+
+Kliknij notatkę prawym przyciskiem, aby zmienić kolor. Kolory grupują notatki, na przykład niebieski dla objaśnień, czerwony dla otwartych pytań.
+
+**Notatki nigdy się nie wykonują** · [1:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/pl.mp4#t=83.983)
+
+Notatki są tylko dla ludzi. Nie są połączone z żadną kartą i nigdy się nie wykonują, więc nie zmieniają działania Workflow.
+
+</details>
 
 - **+ Add** — otwiera menu węzłów, aby dodać węzeł (zobacz [Węzły](nodes.md)).
 - **Undo / Redo** — cofa lub przywraca Twoje zmiany.

@@ -12,6 +12,52 @@ Las tarjetas que utilizan este cálculo:
 
 **Vídeo:** Tolerancias de fecha y comprobación de rangos · 1:52 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.vtt)
 
+<details>
+
+<summary>Transcripción</summary>
+
+**Fechas con tolerancia** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.mp4#t=0.25)
+
+Varias tarjetas de Workflow comparan una fecha con una fecha de referencia y aceptan una tolerancia en días. Todas cuentan esa tolerancia de la misma forma.
+
+**La ventana de tolerancia** · [0:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.mp4#t=9.25)
+
+Desde la fecha de referencia, la tolerancia se cuenta hacia atrás y hacia delante. El resultado es una ventana, y sus dos extremos forman parte de ella.
+
+**Dos días: de martes a sábado** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.mp4#t=17.583)
+
+Con dos días alrededor del jueves veintidós, la ventana va del martes veinte al sábado veinticuatro. Hoy es la fecha de los servidores de DocBits, en U T C.
+
+**Seis operadores, una ventana** · [0:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.mp4#t=27.316)
+
+Es igual a acepta fechas dentro de la ventana, No es igual a las de fuera. Mayor o igual que empieza al inicio de la ventana, Mayor Que después de su final. Menor o igual que y Menor que funcionan al revés.
+
+**Operador, días y días de la semana** · [0:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.mp4#t=39.216)
+
+En la tarjeta, elija el operador, la tolerancia en días y los días de la semana que cuentan.
+
+**Solo cuentan los días elegidos** · [0:52](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.mp4#t=52.683)
+
+Los días de tolerancia permitidos solo cuentan los días de la semana elegidos. Con lunes a viernes, un día después del viernes es el lunes, así que la ventana va del jueves al lunes.
+
+**Un rango necesita dos tarjetas** · [1:03](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.mp4#t=63.916)
+
+Una sola tarjeta no puede aceptar exactamente hoy o mañana, porque su ventana llega igual de lejos en ambos sentidos. Dos tarjetas seguidas sí pueden.
+
+**Es igual a 1 día, luego Mayor o igual 0** · [1:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.mp4#t=75.05)
+
+La primera tarjeta, Es igual a con un día, acepta ayer, hoy y mañana. La segunda, Mayor o igual que con cero días, acepta hoy y cada día posterior. Solo hoy y mañana pasan las dos.
+
+**Excluir un día con No es igual a** · [1:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.mp4#t=88.383)
+
+Para dejar fuera un día, añada una tarjeta No es igual a con cero días. Aquí, Es igual a con tres días y Mayor o igual que con cero días dan desde hoy hasta tres días después, y No es igual a quita hoy.
+
+**Tres tarjetas, un rango** · [1:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/es.mp4#t=101.883)
+
+En el diseñador, las tres tarjetas van una tras otra en el camino del éxito. El Workflow solo sigue cuando las tres tienen éxito: desde mañana hasta tres días después.
+
+</details>
+
 ## La ventana de tolerancia
 
 A partir de la fecha de referencia, la tolerancia se cuenta hacia atrás y hacia delante. El resultado es una **ventana de tolerancia**: desde la fecha de inicio hasta la fecha de fin, ambas incluidas.

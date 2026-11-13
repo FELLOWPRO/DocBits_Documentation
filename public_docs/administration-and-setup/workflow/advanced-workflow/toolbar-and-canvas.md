@@ -76,9 +76,101 @@ La barra de herramientas del Advanced Workflow se extiende a lo largo de la part
 
 **Vídeo:** Diseñador de Advanced Workflow: tarjetas y caminos · 2:08 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.vtt)
 
+<details>
+
+<summary>Transcripción</summary>
+
+**Empezar un flujo nuevo** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=0.25)
+
+Abra el Panel de flujo de trabajo y seleccione Nuevo flujo de trabajo.
+
+**Elegir Flujo de trabajo avanzado** · [0:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=5.016)
+
+Elija Flujo de trabajo avanzado. El diseñador se abre con un nodo de inicio, donde empieza cada flujo.
+
+**Cuando, Y y Entonces** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=11.85)
+
+Añada tarjetas con el menú Agregar o con un clic derecho en el lienzo. Las tres categorías de tarjetas son Cuando, Y y Entonces.
+
+**Cuando: la condición de activación** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=23.916)
+
+La tarjeta Cuando es la condición de activación. Decide cuándo empieza el flujo, por ejemplo para un tipo de documento concreto.
+
+**Y: una condición más** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=37.35)
+
+Las tarjetas Y añaden más condiciones. Comprueban el documento, por ejemplo su estado. El resultado es éxito o una condición fallida.
+
+**Entonces: la tarjeta de acción** · [0:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=50.716)
+
+Las tarjetas Entonces son las tarjetas de acción. Cambian el documento, por ejemplo rellenan un campo o aprueban el documento.
+
+**Arrastrar para conectar** · [0:57](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=57.95)
+
+Para conectar dos tarjetas, arrastre desde un punto a la derecha de una tarjeta hasta la entrada a la izquierda de la siguiente.
+
+**Azul: éxito** · [1:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=65.516)
+
+El azul es el camino del éxito. Todas las tarjetas lo tienen. El flujo lo toma cuando la tarjeta termina.
+
+**Naranja: condición fallida** · [1:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=72.683)
+
+El naranja es el camino de la condición fallida. Solo lo tienen las tarjetas Y. El flujo lo toma cuando la condición no se cumple.
+
+**Rojo: error** · [1:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=81.45)
+
+El rojo es el camino de error. Lo tienen las tarjetas Y y Entonces. El flujo lo toma cuando una tarjeta falla con un error.
+
+**Si-si no con captura de errores** · [1:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=89.616)
+
+Juntos, estos caminos forman un si-si no con captura de errores. El éxito ejecuta una acción, una condición fallida otra, y un error una alternativa, por ejemplo una tarea para una persona.
+
+**Un camino por estado** · [1:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=101.416)
+
+Para varios casos, enlace tarjetas de Estado del documento por sus caminos de condición fallida. Cada tarjeta comprueba un estado, así cada estado tiene su propio camino.
+
+**El camino hacia una tarjeta y desde ella** · [1:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v2/es.mp4#t=111.85)
+
+Haga clic en una tarjeta para resaltar su camino de ejecución: las tarjetas por las que pasa un documento para llegar a ella y las que pueden seguirla. Todo lo demás se atenúa. Aquí, a la tarea solo se llega desde la tarjeta Cuando, por el camino de error rojo de la tarjeta de estado.
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/es.mp4" %}
 
 **Vídeo:** Descripciones y notas del Workflow · 1:00 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Explique su flujo** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/es.mp4#t=0.25)
+
+Un flujo con varias ramas es más fácil de mantener cuando se explica solo. El diseñador tiene dos herramientas para ello: una descripción de todo el flujo y notas en el lienzo.
+
+**Describir todo el flujo** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/es.mp4#t=10.45)
+
+Seleccione Editar descripción en la barra de herramientas y diga en una o dos frases para qué sirve el flujo. La descripción se guarda al guardar el flujo.
+
+**Añadir una nota** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/es.mp4#t=19.15)
+
+Para explicar un solo paso, haga clic derecho en el lienzo, abra el menú de añadir y elija Nota. La nota aparece donde hizo clic.
+
+**Doble clic para escribir** · [0:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/es.mp4#t=28.316)
+
+Haga doble clic en la nota para escribir en ella, hasta quinientos caracteres. Haga clic al lado cuando termine.
+
+**Mover y cambiar el tamaño** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/es.mp4#t=34.683)
+
+Arrastre la nota junto a las tarjetas que explica y tire de su esquina inferior derecha para agrandarla.
+
+**Dar color a las notas** · [0:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/es.mp4#t=41.55)
+
+Haga clic derecho en una nota para cambiar su color. Los colores ayudan a agrupar notas, por ejemplo azul para explicaciones y rojo para preguntas abiertas.
+
+**Las notas nunca se ejecutan** · [0:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/es.mp4#t=51.683)
+
+Las notas son solo para las personas. No están conectadas a ninguna tarjeta y nunca se ejecutan, así que no cambian lo que hace el flujo.
+
+</details>
 
 - **+ Add** — abre el menú de nodos para añadir un nodo (consulta [Nodos](nodes.md)).
 - **Undo / Redo** — retrocede o avanza por tus cambios.

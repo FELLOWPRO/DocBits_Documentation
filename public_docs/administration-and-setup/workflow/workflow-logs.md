@@ -87,6 +87,40 @@ Los **Registros del Flujo de Trabajo** permiten a los usuarios analizar qué flu
 
 **Vídeo:** Leer los registros del Workflow · 1:22 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/es.vtt)
 
+<details>
+
+<summary>Transcripción</summary>
+
+**Abrir los registros** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/es.mp4#t=0.25)
+
+Cada documento guarda los registros de los flujos que se ejecutaron sobre él. En el panel de documentos, abra las acciones de un documento y elija Registros de flujo de trabajo.
+
+**Ejecuciones y resultados** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/es.mp4#t=10.383)
+
+Arriba ve cuántas ejecuciones hubo y cuántas terminaron con un error, una condición fallida o éxito. Debajo aparece cada ejecución con su flujo, hora, duración y resultado.
+
+**El camino de una ejecución** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/es.mp4#t=21.783)
+
+Arrastre el divisor a la izquierda para dar más espacio a los registros. Luego haga clic en una ejecución para ver su camino. Cada tarjeta muestra su resultado: verde para éxito, naranja para una condición fallida, rojo para un error. Aquí la tarjeta Y terminó con una condición fallida, así que la tarjeta Entonces siguiente no se ejecutó.
+
+**Por qué una tarjeta terminó así** · [0:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/es.mp4#t=41.416)
+
+Seleccione una tarjeta para leer su registro. Dice qué comparó la tarjeta y por qué terminó así. Aquí el documento está listo para la validación, pero la tarjeta espera la segunda aprobación.
+
+**Un error y su motivo** · [0:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/es.mp4#t=53.15)
+
+Una ejecución que termina con un error muestra en rojo la tarjeta que falló. Aquí la tarjeta Y no pudo leer la dirección de entrega del documento. Los datos que faltan son siempre un error, así que la tarjeta siguiente no se ejecutó.
+
+**Buscar ejecuciones** · [1:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/es.mp4#t=66.383)
+
+Con muchas ejecuciones, use la búsqueda para encontrar un flujo por su nombre y el botón de filtro para acotar la lista por estado o fecha.
+
+**Nota del límite de ejecución** · [1:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/es.mp4#t=74.116)
+
+Arriba aparece una nota cuando un flujo ha alcanzado su límite de ejecuciones en este documento. El vídeo sobre los límites de ejecución la explica.
+
+</details>
+
 Para acceder a los registros del flujo de trabajo:
 
 1. Navega hasta el **Tablero**.

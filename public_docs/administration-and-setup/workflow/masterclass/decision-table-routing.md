@@ -18,6 +18,36 @@ La condición de tabla de decisión llama realmente al servicio para evaluar la 
 
 **Vídeo:** Tablas de decisión en tarjetas de asignación · 1:49 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v2/es.vtt)
 
+<details>
+
+<summary>Transcripción</summary>
+
+**Tablas de decisión en dos pasos** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v2/es.mp4#t=0.25)
+
+Las tablas de decisión deciden quién se ocupa de un documento. En un flujo trabajan en dos pasos. Una tarjeta Y ejecuta la tabla de decisión y guarda lo que devuelve. Las tarjetas Entonces usan esos resultados para asignar el documento o crear tareas.
+
+**Éxito, condición fallida o error** · [0:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v2/es.mp4#t=15.183)
+
+La tarjeta Y tiene éxito cuando la tabla devuelve al menos una coincidencia para el documento. Sin coincidencia termina como condición fallida y sigue el camino naranja. Sin tabla elegida, o si la tabla no puede ejecutarse, termina como error.
+
+**Ejecutar la tabla y guardar los resultados** · [0:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v2/es.mp4#t=29.883)
+
+Añada la tarjeta Y que comprueba si la tabla de decisión devuelve resultados y elija la tabla. Luego configúrela para que guarde los datos devueltos. Sin eso, las tarjetas siguientes no tienen con qué trabajar.
+
+**El primer usuario recibe el documento** · [0:44](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v2/es.mp4#t=44.916)
+
+En el camino del éxito, la tarjeta Entonces que asigna según el primer usuario devuelto da el documento al primer usuario de la tabla. Cada usuario devuelto, también el primero, recibe una tarea o una notificación. Dé a la tarea un título, una descripción y una prioridad, y elija si también se envía un correo. Los grupos devueltos se ignoran.
+
+**Sin campos: todo de la tabla** · [1:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v2/es.mp4#t=70.55)
+
+En cambio, la tarjeta que asigna el documento de forma secuencial a un usuario o grupo según la tabla de decisión no tiene ningún campo. Toma usuarios y grupos de la tabla, cada uno con la prioridad que devuelve la tabla, o una por defecto. Al final de la ejecución, la entrada con el número de prioridad más bajo recibe el documento, salvo que otra tarjeta ya lo haya asignado directamente.
+
+**Qué tarjeta para cada caso** · [1:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v2/es.mp4#t=90.85)
+
+En resumen: para dar el documento a una persona e informar a todos los demás, use la tarjeta del primer usuario. Para que la tabla lo decida todo, también las prioridades, use la tarjeta secuencial sin campos. Para crear solo tareas, use la tarjeta de tareas para resultados de tablas de decisión.
+
+</details>
+
 ## Tarjetas y parámetros de ejemplo
 
 Los valores describen parámetros de tarjetas, no un workflow completo importable. Sustituya YOUR_* por selecciones propias de prueba. El diseñador gestiona el ID oculto del llamante. Catálogo: Dev, DocFlow 2.10.38, 21 de octubre de 2026; compruebe versiones y permisos de su organización.

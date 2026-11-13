@@ -16,6 +16,52 @@ La aceptación requiere A→aprobar→B→aprobar, rechazo por A, destinatario a
 
 **Vídeo:** Aprobación en dos pasos con tablas de decisión · 2:50 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.vtt)
 
+<details>
+
+<summary>Transcripción</summary>
+
+**Dos pasos, dos tablas de decisión** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=0.25)
+
+Una aprobación en dos pasos: primero los aprobadores que devuelve una tabla de decisión, luego un grupo final que siempre va al final. Dos tablas de decisión: una devuelve usuarios, la otra un grupo.
+
+**Una cadena: tabla, asignación, tabla, asignación** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=12.283)
+
+Coloque cada tarjeta de asignación justo después de su propia tabla de decisión, en una sola cadena: tabla, asignación, tabla, asignación. Ambas tablas guardan sus resultados.
+
+**Cada asignación justo tras su tabla** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=25.583)
+
+Un Workflow solo conserva el último resultado de una tabla de decisión. Cada tarjeta de asignación lo lee al ejecutarse, así que debe ejecutarse antes de que la siguiente tabla lo reemplace.
+
+**Las prioridades fijan el orden** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=37.15)
+
+El orden de las aprobaciones viene de las prioridades, no del orden de las tarjetas: el número más bajo recibe el documento primero. Dé al grupo final el número más alto.
+
+**Prueba: aprobadores, luego el grupo** · [0:48](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=48.15)
+
+La prueba muestra cada tarjeta con éxito. La primera tarjeta de asignación pone en cola a los dos aprobadores, la segunda al grupo final. Al final de la ejecución, una última asignación entrega el documento al primero de ellos.
+
+**En paralelo: no funciona** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=76.216)
+
+Esta disposición no funciona. Dos rutas en paralelo parecen iguales, pero el Workflow las ejecuta paso a paso: primero ambas tablas, luego ambas tarjetas de asignación.
+
+**Se pierden los aprobadores - sin error** · [1:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=87.65)
+
+La prueba ejecuta primero ambas tablas y luego ambas tarjetas de asignación. Las dos leen el resultado de la segunda tabla: el grupo entra dos veces en la cola y los aprobadores se pierden. Cada tarjeta sigue mostrando éxito, nada le avisa. Use la cadena.
+
+**Un último aprobador fijo: prioridad 99** · [1:57](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=117.75)
+
+En un Workflow Estándar, un aprobador fijo puede ir siempre al final: asigne los usuarios de la tabla y luego añada una tarjeta que asigne un usuario con prioridad alta, por ejemplo 99.
+
+**Prioridades de la tabla más bajas** · [2:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=129.55)
+
+Las prioridades de la tabla deben quedar por debajo de ese número. Si la tabla no encuentra a nadie, el Workflow se detiene en la tarjeta de la tabla y no se asigna a nadie. Un usuario que devuelven ambas se consulta dos veces.
+
+**Comprobarlo en una prueba** · [2:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=142.083)
+
+Un Workflow Estándar prueba una tarjeta cada vez, así que pruebe las mismas tarjetas en un Advanced Workflow. La primera tarjeta pone en cola a los aprobadores de la tabla, la segunda añade el usuario fijo. Sus prioridades lo dejan al final.
+
+</details>
+
 ## Tarjetas y parámetros de ejemplo
 
 Los valores describen parámetros de tarjetas, no un workflow completo importable. Sustituya YOUR_* por selecciones propias de prueba. El diseñador gestiona el ID oculto del llamante. Catálogo: Dev, DocFlow 2.10.38, 21 de octubre de 2026; compruebe versiones y permisos de su organización.

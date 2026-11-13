@@ -8,6 +8,32 @@ El constructor **Flujo estándar** es el editor lineal basado en tarjetas para a
 
 **Vídeo:** Crear un Workflow Estándar · 1:04 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/es.vtt)
 
+<details>
+
+<summary>Transcripción</summary>
+
+**Nuevo flujo de trabajo, Estándar** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/es.mp4#t=0.25)
+
+Un flujo de trabajo Estándar es la forma sencilla de automatizar un documento. Haga clic en Nuevo flujo de trabajo y elija Estándar.
+
+**Una tarjeta Cuando lo inicia** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/es.mp4#t=10.15)
+
+Dé un nombre al flujo. Cada flujo Estándar tiene exactamente una tarjeta Cuando: decide cuándo empieza el flujo. Aquí: cuando el tipo de documento es Factura.
+
+**Tarjetas Y: todas deben tener éxito** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/es.mp4#t=22.35)
+
+Las tarjetas Y filtran más. Añada tantas como necesite, o ninguna: todas deben tener éxito; si no, el flujo se detiene aquí.
+
+**Tarjetas Entonces: actúan en orden** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/es.mp4#t=32.75)
+
+Las tarjetas Entonces hacen el trabajo, una tras otra. Aquí la factura se asigna a un usuario. Guarde con Guardar flujo de trabajo, no con Guardar plantilla. Un flujo guardado está activo enseguida.
+
+**Límites de los flujos Estándar** · [0:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/es.mp4#t=45.183)
+
+Los flujos Estándar son sencillos. Tienen una tarjeta Cuando, todas las tarjetas Y deben tener éxito y no hay otros caminos: si una condición falla, el flujo se detiene. Las tarjetas se prueban de una en una. Para ramas, gestión de errores, variables o notas, use un flujo de trabajo avanzado.
+
+</details>
+
 Cree un Standard Workflow completo en la interfaz real de DocBits: seleccione la factura, compruebe su número y un importe superior a 1000, asigne un revisor y cambie el estado. Guarde la regla, ejecute tres escenarios de prueba y confirme el resultado real en el documento.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/es.mp4" %}

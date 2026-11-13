@@ -94,6 +94,28 @@ Continue with the [five-part video guide](videos.md) for nodes and routes, varia
 
 **Video:** Converting a Standard workflow to Advanced · 1:15 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-migration/v1/en.vtt)
 
+<details>
+
+<summary>Transcript</summary>
+
+**Convert to advanced** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-migration/v1/en.mp4#t=0.25)
+
+Standard workflows can be turned into Advanced workflows from the workflow list. Open the actions of a Standard workflow and choose Convert to advanced. There is no further question: the conversion starts right away, and the new workflow opens in the designer.
+
+**One line of success paths** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-migration/v1/en.mp4#t=17.483)
+
+The new Advanced workflow has the same name and is switched on. Its cards form one straight line, connected only through blue success paths. When a condition fails or a card has an error, the workflow stops there, because the orange and red paths lead nowhere yet.
+
+**A new workflow, the old one switched off** · [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-migration/v1/en.mp4#t=36.55)
+
+What happened in detail: the conversion created a new Advanced workflow with the same name, switched on. The Standard workflow stays in the list, switched off. Its cards became one straight line, and the execution order of the new workflow starts again at five hundred.
+
+**After converting** · [0:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-migration/v1/en.mp4#t=54.116)
+
+After converting, check four things. Set the execution order again. Decide whether the new workflow should run now, because it is switched on even if the Standard one was off. Add the failed condition and error paths you need, and test the workflow. When everything works, delete the old Standard workflow.
+
+</details>
+
 1. Open **Workflow Dashboard → Workflow List**.
 2. Select **New Workflow → Advanced Workflow**. Some versions label the button **Add Workflow**.
 3. Enter a name in the toolbar. Add a description that explains the business purpose.

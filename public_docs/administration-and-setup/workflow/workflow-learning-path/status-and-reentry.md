@@ -14,6 +14,28 @@ This page shows how to set up your workflow so that each document passes through
 
 **Video:** Change status card and loop prevention · 0:44 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/en.vtt)
 
+<details>
+
+<summary>Transcript</summary>
+
+**Change status** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/en.mp4#t=0.25)
+
+The card Change status sets the document to a new status, for example Rejected.
+
+**Trigger workflows** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/en.mp4#t=10.116)
+
+Trigger workflows decides what happens next. When it is on and the new status is one that starts workflows, such as Ready for validation, the workflows run again for this document.
+
+**Off: no loop** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/en.mp4#t=23.05)
+
+If a workflow sets a status that starts the same workflow again, it can run in a loop. Switch trigger workflows off when the status change should not start any workflows.
+
+**Example: reject, no new start** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/en.mp4#t=35.416)
+
+For example: a check fails, this card sets the status to Rejected with trigger workflows off, so nothing starts again.
+
+</details>
+
 ## The setting that matters
 
 The [Change Status to](../cards-overview/then/status/change-status-to.md) card sets the new status. Its setting **Trigger Workflows** decides whether this status change may start workflows:

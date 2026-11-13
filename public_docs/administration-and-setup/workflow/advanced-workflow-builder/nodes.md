@@ -51,6 +51,32 @@ A manual Start test does not prove that the event-specific When path is selected
 
 **Video:** Changing the version of a card · 0:39 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/en.vtt)
 
+<details>
+
+<summary>Transcript</summary>
+
+**The label shows the card's version** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/en.mp4#t=0.25)
+
+Cards can have several versions. The small label on a card, for example v1, shows which version it uses. A newer version can do more.
+
+**Click to see the versions** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/en.mp4#t=11.65)
+
+Click the version label to see the versions of this card.
+
+**Version 3: Status after export** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/en.mp4#t=16.75)
+
+Choose the newer version. This one can also set the document's status after the export.
+
+**Set the values again** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/en.mp4#t=23.916)
+
+The values are not carried over. Set them again, here the export configuration and the status.
+
+**Validate and test** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/en.mp4#t=31.55)
+
+Then validate and test the workflow, as after any change. Save it when it does what you expect.
+
+</details>
+
 The version pill on a card opens its available versions. A version change can change fields and behavior: review the configuration and repeat the affected tests. Prefer supported card versions with structured results. A missing-card warning means the saved card is unavailable in the current catalog, for example an unavailable partner card.
 
 **Card version** and **Advanced Workflow type** describe different things. See the [card catalog](../cards-overview/README.md) for card-specific behavior.
@@ -68,6 +94,40 @@ Open **Help → Card setup** for this guidance and the link to Document Types. A
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.mp4" %}
 
 **Video:** Success, failed condition and error in a workflow run · 1:28 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**When, And, Then at runtime** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.mp4#t=0.25)
+
+When a workflow runs, the When card starts it. And cards check conditions, and Then cards act. What happens next depends on the result of each card.
+
+**Success, failed condition or error** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.mp4#t=11.583)
+
+Every And card ends with one of three results. Success follows the blue success path, a failed condition the orange failed condition path, and an error the red error path.
+
+**Missing data is an error** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.mp4#t=25.316)
+
+Missing data is not a failed condition. If a field the card needs is not in the document, a variable is missing, or there is no document, the card reports an error and takes the red error path.
+
+**Failed condition, no orange path: the run stops** · [0:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.mp4#t=38.65)
+
+If a condition fails and its orange failed condition path is not connected, the workflow stops at that card. The run ends as failed condition.
+
+**Connected: a failed condition is just a branch** · [0:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.mp4#t=50.283)
+
+If the orange failed condition path is connected, a failed condition is simply another branch. The workflow continues there and can still end as success.
+
+**Red error path: catch errors with a fallback** · [1:03](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.mp4#t=63.216)
+
+Connect the red error path to a fallback, for example a task for a person, so that errors do not go unnoticed. The fallback runs, but the run is still marked as error.
+
+**How a run ends** · [1:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.mp4#t=75.916)
+
+In short: any error makes the run an error. A failed condition without a connected orange path makes it a failed condition. Everything else ends as success.
+
+</details>
 
 Drag a source handle to the next node's **input**. And has two outcomes on the right and an error output below. Then has success on the right and error below.
 
@@ -88,6 +148,40 @@ If the taken result has no connection, that route has no next node. Other reacha
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4" %}
 
 **Video:** AND and OR: combining conditions · 2:28 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**AND and OR** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=0.25)
+
+Conditions can be combined in two ways. Cards one after the other work like AND: all of them must be true. Cards side by side, connected into the same next card, work like OR: one true card is enough. Join cards show this on the canvas.
+
+**AND: cards one after the other** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=19.016)
+
+AND means one card after the other: every card on the path must be true before the next one runs. This invoice is ready for validation and not pending approval, so both cards are true and the action runs.
+
+**OR: cards side by side** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=37.883)
+
+OR means cards side by side. Connect the green output of both And cards straight into the input of the next card. Test it: the first card is false, the second one is true, and one true path is enough for the action to run. The test banner still reports a failed condition, because the false card's orange exit is not connected, but the action runs.
+
+**The same with an OR card** · [1:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=61.25)
+
+You can also join the paths with an OR card. It does the same, but makes the OR visible on the canvas. Right-click the canvas, choose Add, and then OR. Connect both And cards to it, and the OR card to the action.
+
+**One true case is enough for OR** · [1:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=78.916)
+
+The test gives the same result: one true case is enough for the OR card, so the action runs. Here too, the banner reports the false card's failed condition.
+
+**AND with the Wait ALL card** · [1:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=94.316)
+
+For AND with cards side by side, use Wait ALL. Right-click the canvas, choose Add, and then Wait ALL. Connect both And cards to it, and Wait ALL to the action. Test it: Wait ALL waits for both cards, both are true, so the action runs.
+
+**Join cards: which paths were taken** · [2:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=122.883)
+
+The join cards mostly make a workflow easier to read. OR and Wait ANY continue when at least one connected path was taken. Wait ALL waits until all previous cards have finished, and continues only when all connected paths were taken. Any exit of a card can be connected, not only the green one: if a card ends with a failed condition, its orange exit counts as taken.
+
+</details>
 
 Merge nodes combine incoming routes; they do not create branches. Connect the intended upstream **outcomes** to the gate's input, then its success output to the next action.
 

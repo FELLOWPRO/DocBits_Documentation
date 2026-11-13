@@ -15,6 +15,36 @@ It works in **two steps**:
 
 **Video:** Decision tables in assignment cards · 1:59 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.vtt)
 
+<details>
+
+<summary>Transcript</summary>
+
+**Decision tables in two steps** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.mp4#t=0.25)
+
+Decision tables decide who handles a document. In a workflow they work in two steps. An And card runs the decision table and keeps what it returns. Then cards use those returns to assign the document or to create tasks.
+
+**Success, failed condition or error** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.mp4#t=16.15)
+
+The And card succeeds when the table returns at least one match for the document. Without a match it ends as failed condition and follows the orange failed condition path. Without a selected table, or when the table cannot run, it ends as error.
+
+**Run the table and store its returns** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.mp4#t=31.25)
+
+Add the And card Decision table has returns and choose the decision table. Then set it to store the returned data. Without that, the cards after it have nothing to work with.
+
+**First user gets the document, everyone a task** · [0:46](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.mp4#t=46.283)
+
+On the success path, the Then card Assign the document based on the first user return gives the document to the first user the table returns. Every returned user, the first one included, gets a task or a notification. Give the task a title, a description and a priority, and choose whether to also send an email. Groups in the returns are ignored.
+
+**No fields: everything from the table** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.mp4#t=76.483)
+
+Instead, the card Assign the document sequentially to User or Group based on decision table has no fields at all. It takes users and groups from the table, each with the priority the table returns, or a default. At the end of the run, the entry with the lowest priority number gets the document, unless another card has already assigned it directly.
+
+**Which card for which job** · [1:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.mp4#t=98.916)
+
+In short: to give the document to one person and inform everyone else, use the first user card. To let the table decide everything, including priorities, use the sequential card without fields. To only create tasks, use the task card for decision table returns.
+
+</details>
+
 ---
 
 ## Example used on this page

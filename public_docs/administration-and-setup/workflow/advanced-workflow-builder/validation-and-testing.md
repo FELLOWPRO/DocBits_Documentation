@@ -37,6 +37,28 @@ Auto-save keeps a local browser draft about every thirty seconds after changes. 
 
 **Video:** Validate a workflow · 0:50 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/en.vtt)
 
+<details>
+
+<summary>Transcript</summary>
+
+**Validate checks how the workflow is built** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/en.mp4#t=0.25)
+
+Before you save, click Validate in the toolbar. It checks how the workflow is built: whether a When card starts it, whether every card is connected, and whether the paths make sense. Problems are listed above the canvas.
+
+**Click a message to find the card** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/en.mp4#t=16.416)
+
+Click a message to jump to the card it is about. Here the assign card is not connected, so it would never run. Connect it.
+
+**No messages: the workflow is valid** · [0:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/en.mp4#t=27.416)
+
+Validate again. When nothing is left, the workflow is valid and you can save it.
+
+**Validate first, then test** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/en.mp4#t=33.95)
+
+Save runs the same checks, but it saves the workflow even if problems are left, so validate first. Validate does not check your data or the settings inside the cards. To see what a workflow does with a real document, test it.
+
+</details>
+
 Use the **check-circle** button or **Cmd/Ctrl + Shift + V**. Errors and warnings appear above the canvas. Click a message with a node reference to focus that node.
 
 | Check | Correction |
@@ -59,6 +81,44 @@ Validation cannot reliably establish that every version-specific card field cont
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4" %}
 
 **Video:** Testing a workflow · 1:42 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Test before you switch it on** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4#t=0.25)
+
+Test a workflow before you switch it on. A test runs what is on the canvas right now, also changes you have not saved yet. Actions such as assigning or exporting are only simulated, so the document stays as it is.
+
+**Test the whole workflow** · [0:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4#t=15.75)
+
+Here is a workflow that is not saved yet. To test the whole workflow, click Test Workflow in the toolbar.
+
+**Choose a test document** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4#t=23.65)
+
+Choose the document to test with. Workflows that do not need a document can also be tested without one. Search for the document by its name, select it and click Test.
+
+**Read the result on the canvas** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4#t=37.016)
+
+The test follows the path the document takes. This invoice is not pending approval, so the And card ends with a failed condition, and the orange path continues to the assign card. Paths that were not taken are greyed out, and the banner at the top shows the result and how long the test took.
+
+**Details for every card** · [0:55](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4#t=55.95)
+
+Click Details to see every card with its result and message. Re-test runs the test again after you have changed something.
+
+**Test a single card** · [1:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4#t=65.85)
+
+To test a single card, hover over it and click the play button. You can also right-click the card and choose Test from this node. The test starts at this card, with the same choice of document.
+
+**Hover the badge for details** · [1:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4#t=79.75)
+
+Only this card and the cards after it run. Hover over the badge to see the card's result. Change the card and test again until it does what you expect.
+
+**What the colours mean** · [1:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4#t=90.916)
+
+In short: green means success, orange a failed condition, and red an error. Cards that did not run are faded and get a grey badge.
+
+</details>
 
 Use the toolbar **play-circle** or **Cmd/Ctrl + Shift + T** to open **Select Test Document**.
 

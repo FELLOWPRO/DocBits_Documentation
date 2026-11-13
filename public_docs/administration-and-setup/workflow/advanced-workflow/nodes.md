@@ -60,6 +60,40 @@ Los nodos **When / And / Then** usan exactamente las mismas tarjetas descritas e
 
 **Vídeo:** Éxito, condición fallida y error en una ejecución · 1:13 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v2/es.vtt)
 
+<details>
+
+<summary>Transcripción</summary>
+
+**Cuando, Y, Entonces al ejecutarse** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v2/es.mp4#t=0.25)
+
+Cuando un flujo se ejecuta, la tarjeta Cuando lo inicia. Las tarjetas Y comprueban condiciones y las tarjetas Entonces actúan. Lo que pasa después depende del resultado de cada tarjeta.
+
+**Éxito, condición fallida o error** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v2/es.mp4#t=11.416)
+
+Cada tarjeta Y termina con uno de tres resultados. El éxito sigue el camino azul, una condición fallida el camino naranja y un error el camino rojo.
+
+**Los datos que faltan son un error** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v2/es.mp4#t=21.783)
+
+Los datos que faltan no son una condición fallida. Si falta un campo que la tarjeta necesita, una variable o el documento, la tarjeta informa de un error y toma el camino rojo.
+
+**Sin camino naranja: se detiene** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v2/es.mp4#t=32.616)
+
+Si una condición falla y su camino naranja no está conectado, el flujo se detiene en esa tarjeta. La ejecución termina como condición fallida.
+
+**Conectado: solo otra rama** · [0:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v2/es.mp4#t=41.15)
+
+Si el camino naranja está conectado, una condición fallida es solo otra rama. El flujo sigue por ahí y aún puede terminar con éxito.
+
+**Camino rojo: capturar errores** · [0:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v2/es.mp4#t=49.283)
+
+Conecte el camino rojo a una alternativa, por ejemplo una tarea para una persona, para que los errores no pasen desapercibidos. La alternativa se ejecuta, pero la ejecución sigue marcada como error.
+
+**Cómo termina una ejecución** · [1:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v2/es.mp4#t=60.916)
+
+En resumen: cualquier error convierte la ejecución en error. Una condición fallida sin camino naranja conectado la convierte en condición fallida. Todo lo demás termina con éxito.
+
+</details>
+
 Los nodos se conectan mediante **aristas de colores**. Arrastra desde un conector en el lado **derecho** de un nodo hasta el conector de entrada en el lado **izquierdo** de otro nodo para crear una conexión. Cada color indica un resultado de ejecución diferente:
 
 - **Success** (azul) — la ruta predeterminada que se toma cuando un nodo se completa correctamente. Disponible en todos los tipos de nodo.

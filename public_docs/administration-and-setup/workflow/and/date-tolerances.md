@@ -12,6 +12,52 @@ Les cartes qui utilisent ce calcul :
 
 **Vidéo:** Tolérances de date et vérification de plages · 2:05 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.vtt)
 
+<details>
+
+<summary>Transcription</summary>
+
+**Des dates avec une tolérance** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.mp4#t=0.25)
+
+Plusieurs cartes de flux comparent une date à une date de référence et acceptent une tolérance en jours. Toutes comptent cette tolérance de la même façon.
+
+**La fenêtre de tolérance** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.mp4#t=10.383)
+
+À partir de la date de référence, la tolérance se compte en arrière et en avant. Le résultat est une fenêtre, et ses deux bornes en font partie.
+
+**Deux jours : du mardi au samedi** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.mp4#t=20.983)
+
+Avec deux jours autour du jeudi vingt-deux, la fenêtre va du mardi vingt au samedi vingt-quatre. Aujourd'hui est la date des serveurs DocBits, en U T C.
+
+**Six opérateurs, une fenêtre** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.mp4#t=31.416)
+
+Égal à accepte les dates dans la fenêtre, Non égaux celles en dehors. Plus grand ou égal commence au début de la fenêtre, Supérieur à après sa fin. Inférieur ou égal et Moins que fonctionnent dans l'autre sens.
+
+**Opérateur, jours et jours de semaine** · [0:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.mp4#t=45.616)
+
+Dans la carte, choisissez l'opérateur, la tolérance en jours et les jours de la semaine qui comptent.
+
+**Seuls les jours choisis comptent** · [0:59](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.mp4#t=59.116)
+
+Les jours de tolérance autorisés ne comptent que les jours de semaine choisis. Avec lundi à vendredi, un jour après vendredi est lundi : la fenêtre va donc du jeudi au lundi.
+
+**Une plage demande deux cartes** · [1:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.mp4#t=71.15)
+
+Une seule carte ne peut pas accepter exactement aujourd'hui ou demain, car sa fenêtre s'étend autant dans les deux sens. Deux cartes à la suite le peuvent.
+
+**Égal à 1 jour, puis Plus grand ou égal 0** · [1:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.mp4#t=83.383)
+
+La première carte, Égal à avec un jour, accepte hier, aujourd'hui et demain. La seconde, Plus grand ou égal avec zéro jour, accepte aujourd'hui et chaque jour suivant. Seuls aujourd'hui et demain passent les deux.
+
+**Exclure un jour avec Non égaux** · [1:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.mp4#t=99.116)
+
+Pour exclure un jour, ajoutez une carte Non égaux avec zéro jour. Ici, Égal à avec trois jours et Plus grand ou égal avec zéro jour donnent aujourd'hui jusqu'à trois jours plus tard, et Non égaux retire aujourd'hui.
+
+**Trois cartes, une plage** · [1:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/fr.mp4#t=114.316)
+
+Dans le concepteur, les trois cartes se suivent sur le chemin du succès. Le flux ne continue que si les trois réussissent : de demain jusqu'à trois jours plus tard.
+
+</details>
+
 ## La fenêtre de tolérance
 
 À partir de la date de référence, la tolérance est comptée vers l'arrière et vers l'avant. Le résultat est une **fenêtre de tolérance** : de la date de début à la date de fin, toutes deux incluses.

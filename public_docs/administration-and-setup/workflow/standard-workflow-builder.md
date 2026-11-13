@@ -8,6 +8,32 @@ Le constructeur **Flux standard** utilise des cartes pour automatiser le traitem
 
 **Vidéo:** Créer un Workflow Standard · 1:15 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/fr.vtt)
 
+<details>
+
+<summary>Transcription</summary>
+
+**Nouveau flux de travail, Standard** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/fr.mp4#t=0.25)
+
+Un Workflow Standard est la façon simple d'automatiser un document. Cliquez sur Nouveau flux de travail et choisissez Standard.
+
+**Une carte Quand le démarre** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/fr.mp4#t=11.883)
+
+Donnez un nom au Workflow. Chaque Workflow Standard a exactement une carte Quand : elle décide quand il démarre. Ici : quand le type de document est Facture.
+
+**Cartes Et : toutes doivent réussir** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/fr.mp4#t=25.016)
+
+Les cartes Et filtrent davantage. Ajoutez-en autant qu'il faut, ou aucune : toutes doivent réussir, sinon le Workflow s'arrête ici.
+
+**Cartes Dans ce cas : elles agissent dans l'ordre** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/fr.mp4#t=35.45)
+
+Les cartes Dans ce cas font le travail, l'une après l'autre. Ici, la facture est attribuée à un utilisateur. Enregistrez avec Enregistrer le flux de travail, pas Enregistrer le modèle. Un Workflow enregistré est actif aussitôt.
+
+**Limites des Workflows Standard** · [0:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/fr.mp4#t=51.75)
+
+Les Workflows Standard restent simples. Ils ont une carte Quand, toutes les cartes Et doivent réussir, et il n'y a pas d'autres chemins : si une condition échoue, le Workflow s'arrête. Les cartes se testent une à une. Pour des branches, la gestion des erreurs, des variables ou des notes, utilisez un Advanced Workflow.
+
+</details>
+
 Créez un Standard Workflow complet dans la véritable interface DocBits : sélectionnez la facture, vérifiez son numéro et un montant supérieur à 1000, affectez un vérificateur et modifiez le statut. Enregistrez la règle, exécutez trois scénarios de test et confirmez le résultat réel sur le document.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4" %}

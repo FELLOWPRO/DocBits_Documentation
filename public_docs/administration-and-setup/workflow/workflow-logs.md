@@ -12,6 +12,40 @@ The **Workflow Logs** allow users to analyze which workflows were executed for a
 
 **Video:** Reading the workflow logs · 1:34 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.vtt)
 
+<details>
+
+<summary>Transcript</summary>
+
+**Open the workflow logs** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=0.25)
+
+Every document keeps the logs of the workflows that ran on it. In the document dashboard, open the actions of a document and choose Workflow logs.
+
+**Runs and their results** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=12.15)
+
+At the top you see how many runs there were, and how many ended with an error, a failed condition or success. Below, each run is listed with its workflow, time, duration and result.
+
+**The path of one run** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=25.716)
+
+Drag the divider to the left to give the logs more room. Then click a run to see the path it took. Each card shows its result: green for success, orange for a failed condition, red for an error. Here the And card ended with a failed condition, so the Then card after it did not run.
+
+**Why a card ended this way** · [0:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=45.35)
+
+Select a card to read its log. It says what the card compared and why it ended this way. Here, the document is ready for validation, but the card expects pending second approval.
+
+**An error and its reason** · [0:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=58.283)
+
+A run that ends with an error shows the failing card in red. Here the And card could not read the delivery address from the document. Missing data is always an error, so the Then card after it did not run.
+
+**Find runs** · [1:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=73.216)
+
+With many runs, use the search to find a workflow by name, and the filter button to narrow the list by status or date.
+
+**Execution limit note** · [1:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=83.116)
+
+A note at the top appears when a workflow has reached its execution limit on this document. The video about execution limits explains it.
+
+</details>
+
 To access workflow logs:
 
 1. Navigate to the **Dashboard**.

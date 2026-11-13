@@ -91,6 +91,52 @@ Before building, I confirm the organization, access, required license, document 
 
 **Video:** Workflow terms: what is what · 1:34 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.vtt)
 
+<details>
+
+<summary>Transcript</summary>
+
+**The words in the videos** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4#t=0.25)
+
+The videos use a few words again and again. Here is what each one means.
+
+**Standard and Advanced** · [0:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4#t=6.05)
+
+A Workflow is a set of rules for documents. There are two kinds.
+
+**Standard: a fixed list** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4#t=12.083)
+
+A Standard workflow is a fixed list: When, And and Then cards, top to bottom.
+
+**Advanced: a canvas** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4#t=20.05)
+
+An Advanced workflow is a canvas, where you place cards freely and connect them.
+
+**When, And, Then** · [0:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4#t=28.716)
+
+Cards do the work. A When card decides which documents the workflow is for. And cards check conditions. Then cards act, for example assign or export.
+
+**Every card is a node - not every node a card** · [0:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4#t=42.05)
+
+Everything on the canvas is a node. Every card is a node, but not every node is a card: OR, Wait ANY and Wait ALL join paths, and notes only hold text.
+
+**One input, three exits** · [0:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4#t=54.183)
+
+A card has one input and up to three exits: success, failed condition in orange, and error in red.
+
+**Connections make the path** · [1:03](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4#t=63.683)
+
+A connection leads from an exit to the input of the next node. The connections a document follows are its path.
+
+**Variables** · [1:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4#t=72.683)
+
+Variables are the values in a card's fields. Workflow variables hold values that later cards can read.
+
+**Run and test** · [1:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/en.mp4#t=81.283)
+
+A run is the workflow working on a real document; its log shows the path. A test runs the canvas on a document you choose, and actions are only simulated.
+
+</details>
+
 In the realm of process automation, the DocBits Workflow Engine stands out for its straightforward and intuitive approach. This engine streamlines the creation and management of workflows through a clear and simple rule-based structure. The core principle behind its design is the "Easy When-And-Then" rule, which breaks down the automation process into three fundamental components: Trigger, Condition, and Action. This guide explains how each component functions within the system and how they work together to facilitate seamless automation.
 
 ### The "Easy When-And-Then" Rule Explained

@@ -12,6 +12,52 @@ The cards that use this calculation:
 
 **Video:** Date tolerances and range checks · 2:13 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.vtt)
 
+<details>
+
+<summary>Transcript</summary>
+
+**Dates with a tolerance** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4#t=0.25)
+
+Several workflow cards compare a date with a reference date and accept a tolerance in days. All of them count that tolerance the same way.
+
+**The tolerance window** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4#t=11.583)
+
+From the reference date, the tolerance is counted backwards and forwards. The result is a window, and both of its ends belong to it.
+
+**Two days: Tuesday to Saturday** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4#t=21.95)
+
+With two days around Thursday the twenty-second, the window runs from Tuesday the twentieth to Saturday the twenty-fourth. Today is the date on the DocBits servers, in U T C.
+
+**Six operators, one window** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4#t=35.683)
+
+Equals accepts dates inside the window, Not Equals dates outside it. Greater or Equals starts at the beginning of the window, Greater Than after its end. Less or Equals and Less Than work the other way round.
+
+**Operator, days and weekdays** · [0:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4#t=51.083)
+
+In the card, choose the operator, the tolerance in days, and the weekdays that are counted.
+
+**Only selected weekdays count** · [1:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4#t=64.616)
+
+Allowed tolerance days only count the selected weekdays. With Monday to Friday selected, one day after Friday is Monday, so the window runs from Thursday to Monday.
+
+**Ranges need two cards** · [1:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4#t=77.95)
+
+One card cannot accept exactly today or tomorrow, because its window reaches equally far in both directions. Two cards, one after the other, can.
+
+**Equals 1 day, then Greater or Equals 0 days** · [1:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4#t=91.983)
+
+The first card, Equals with one day, accepts yesterday, today and tomorrow. The second, Greater or Equals with zero days, accepts today and every later day. Only today and tomorrow pass both.
+
+**Exclude a day with Not Equals** · [1:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4#t=105.716)
+
+To leave out one day, add a Not Equals card with zero days. Here, Equals with three days and Greater or Equals with zero days give today up to three days ahead, and Not Equals removes today.
+
+**Three cards, one range** · [2:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4#t=120.083)
+
+In the designer, the three cards follow each other on the success path. The workflow continues only when all three succeed: from tomorrow up to three days ahead.
+
+</details>
+
 ## The Tolerance Window
 
 From the reference date, the tolerance is counted backwards and forwards. The result is a **tolerance window**: from the start date to the end date, both included.

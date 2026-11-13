@@ -2,6 +2,10 @@
 
 Smart Search Ranking stellt die Dokumente, die Sie meinen, an den Anfang einer Dashboard-Suche. Eine Stichwortsuche findet jedes Dokument, das Ihr Wort enthält; Smart Search Ranking fügt einen Schritt hinzu: Eine KI liest die besten Treffer und stellt die Dokumente nach vorn, in denen es wirklich um Ihre Suche geht. Exakte Treffer – Rechnungsnummern, Bestellnummern, Lieferantennamen – bleiben immer ganz oben.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/de.mp4" %}
+Smart Search Ranking im Dashboard (deutsche Sprecherin). [Player mit Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/de.html) · [Transkript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/de.txt)
+{% endembed %}
+
 ## Was sich ändert
 
 | | Stichwort-Reihenfolge | Mit Smart Search Ranking |

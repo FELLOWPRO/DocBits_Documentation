@@ -8,7 +8,7 @@ Voer een document-ID in bij **Document ID**, of open een voorbeelddocument uit e
 
 De kop toont het bestand, de status ervan (bijvoorbeeld **In progress**), de uitvoering die u bekijkt met de eerste blokkade, en een knop **Document** met het document-ID.
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-nl.png" alt="Dev NOVA: verwerkingspad en vastgelegde punten uit de eerste testuitvoering"><figcaption><p>Nieuwe opname uit Dev NOVA 11.0.3, 4 november 2026. De fictieve testfactuur stopt bij veldvalidatie. Classificatie, leverancierszoekopdracht, headextractie en tabelextractie bevatten werkelijk vastgelegde punten; de kaarten tonen het document en de uitvoeringshistorie. Dit is de werkende productinterface.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-nl.png" alt="Dev NOVA: processing path and recorded points from the first test run"><figcaption><p>Nieuwe opname uit Dev NOVA 11.0.3, 4 november 2026. De fictieve testfactuur stopt bij veldvalidatie. Classificatie, leverancierszoekopdracht, headextractie en tabelextractie bevatten werkelijk vastgelegde punten; de kaarten tonen het document en de uitvoeringshistorie. Dit is de werkende productinterface.</p></figcaption></figure>
 
 Het **Pipeline Path** toont 14 fasen: Intake, Classification, E-Document Validation, Supplier Identification, Text Recognition, Header Extraction, Table Extraction, Field Validation, PO Lookup, PO Line Match, Approval, Workflow Routing, Export, ERP Acknowledgement. Elke fase heeft één toestand:
 
@@ -33,7 +33,7 @@ Het **Stage Log** onder het pad toont dezelfde fasen met wat elke fase heeft vas
 * Een punt dat geen enkele fase heeft vastgelegd, verschijnt als **Not recorded**, nooit als een verzonnen waarde. Punten zijn getallen en vaste woorden, nooit documenttekst.
 * **Show Raw Diagnostics** schakelt de ruwe gegevens in wanneer support daarom vraagt.
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-nl.png" alt="Dev NOVA: faselogboek met betrouwbaarheid, extractiepunten en geblokkeerde veldvalidatie"><figcaption><p>Werkelijke eerste uitvoering: 100% classificatiebetrouwbaarheid, 0 leverancierskandidaten, 1 tabelrij en 7 mappinghiaten. Passed betekent dat een fase liep; het bewijst geen leveranciersmatch en niet dat elke factuurwaarde correct is. Veldvalidatie meldt een ontbrekend verplicht veld.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-nl.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Werkelijke eerste uitvoering: 100% classificatiebetrouwbaarheid, 0 leverancierskandidaten, 1 tabelrij en 7 mappinghiaten. Passed betekent dat een fase liep; het bewijst geen leveranciersmatch en niet dat elke factuurwaarde correct is. Veldvalidatie meldt een ontbrekend verplicht veld.</p></figcaption></figure>
 
 ### Uitvoeringen en wijzigingen
 
@@ -43,15 +43,15 @@ De kaart Document vermeldt het documenttype, de leverancier, het factuurnummer, 
 
 ### Leveranciers- en tabeldetails lezen
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-nl.png" alt="Dev NOVA: leveranciersdetails met afzonderlijke gevonden identificatoren, zoekopdrachten in stamgegevens en matches"><figcaption><p>Deze uitvoering vindt de leveranciersnaam op de factuur en doorzoekt de stamgegevens, maar kent geen leverancier toe. Btw-ID, IBAN, e-mail en GLN ontbreken op deze testfactuur. Een ontbrekende match in de stamgegevens is een andere diagnose dan een ontbrekende factuurwaarde.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-nl.png" alt="Dev NOVA: supplier details separate detected identifiers, master-data searches and matches"><figcaption><p>Deze uitvoering vindt de leveranciersnaam op de factuur en doorzoekt de stamgegevens, maar kent geen leverancier toe. Btw-ID, IBAN, e-mail en GLN ontbreken op deze testfactuur. Een ontbrekende match in de stamgegevens is een andere diagnose dan een ontbrekende factuurwaarde.</p></figcaption></figure>
 
 Controleer drie afzonderlijke vragen: is er een identificator op het document gevonden, is die opgezocht, en is er een leverancier gematcht? Een groene fase beantwoordt die vragen niet.
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-nl.png" alt="Dev NOVA: tabeldetails van de eerste uitvoering met zeven mappinghiaten"><figcaption><p>Tabeldetails melden 7 mappinghiaten voor 1 tabel en 1 rij. Controleer de kolomtoewijzing voordat u concludeert dat de extractie mislukte. De vergelijkingsvoet is geen geldige basis voor de geselecteerde eerste uitvoering, die geen voorganger heeft.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-nl.png" alt="Dev NOVA: first-run table details report seven mapping gaps"><figcaption><p>Tabeldetails melden 7 mappinghiaten voor 1 tabel en 1 rij. Controleer de kolomtoewijzing voordat u concludeert dat de extractie mislukte. De vergelijkingsvoet is geen geldige basis voor de geselecteerde eerste uitvoering, die geen voorganger heeft.</p></figcaption></figure>
 
 ### Een echte herstart herkennen
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-nl.png" alt="Dev NOVA: vergelijking van twee werkelijke testuitvoeringen met ongewijzigde fasepunten"><figcaption><p>Dezelfde testfactuur na een echte handmatige herstart, zonder gecorrigeerde factuurvelden. Een nieuwe uitvoering bewijst een nieuwe poging, geen verbetering. Ongewijzigde punten tonen No change; er zijn geen verschilmarkeringen verzonnen.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-nl.png" alt="Dev NOVA: comparison of two actual test runs with unchanged stage points"><figcaption><p>Dezelfde testfactuur na een echte handmatige herstart, zonder gecorrigeerde factuurvelden. Een nieuwe uitvoering bewijst een nieuwe poging, geen verbetering. Ongewijzigde punten tonen No change; er zijn geen verschilmarkeringen verzonnen.</p></figcaption></figure>
 
 Een handmatige herstart is een menselijke ingreep. Alleen een latere geslaagde afronding zou dit geval als AP assisted classificeren. Zolang het in behandeling blijft, valt het buiten de noemer van afgeronde documenten.
 

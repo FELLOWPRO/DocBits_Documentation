@@ -8,15 +8,15 @@ Deze pagina is bedoeld voor mensen die facturen verwerken. Beheerders stellen de
 
 ## Wanneer een document een fout krijgt
 
-Als validatie **aan** staat en **blokkeert** voor het documenttype, krijgt een factuur met een blokkerende bevinding de status **Error**. Een factuur die de validator zelf heeft afgewezen, draagt in plaats daarvan de eigen e-invoice-validatiestatus, zie [Het foutscherm voor een afgewezen e-invoice](validation-error-screen.md). Open het document vanuit het dashboard. De foutweergave toont links de XML en rechts de reden.
+Als validatie **on** staat en **blocking** is voor het documenttype, krijgt een factuur met een blokkerende bevinding de status **Error**. Een factuur die de validator zelf heeft afgewezen, draagt in plaats daarvan de eigen e-invoice-validatiestatus, zie [Het foutscherm voor een afgewezen e-invoice](validation-error-screen.md). Open het document vanuit het dashboard. De foutweergave toont links de XML en rechts de reden.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-nl.png" alt="Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-nl.png" alt="The error view: the XML of the invoice and the first blocking finding with a next step. Example invoice with fictional names."><figcaption><p>Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
 
 De kaart rechts noemt de laag die de factuur heeft afgewezen (bijvoorbeeld **L3 · Business Rules**), de regelcode (bijvoorbeeld `BR-CO-26`), een korte uitleg en een **Next step**. Selecteer **View validation details** om het volledige rapport te openen.
 
 ## Het rapport lezen
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-nl.png" alt="Rapport van de fictieve factuur met bestandsgegevens en het resultaat."><figcaption><p>Rapport van de fictieve factuur met bestandsgegevens en het resultaat.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-nl.png" alt="The top of the report: file data, the verdict and the result for each level"><figcaption><p>Rapport van de fictieve factuur met bestandsgegevens en het resultaat.</p></figcaption></figure>
 
 Het rapport begint met de feiten over het bestand:
 
@@ -51,7 +51,7 @@ De tabel **Result per level** toont hoeveel fouten, waarschuwingen en informatie
 
 ## De bevindingen
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-nl.png" alt="Elke bevinding heeft een code, een niveau, een leesbare tekst en een hint om het op te lossen"><figcaption><p>Elke bevinding heeft een code, een niveau, een leesbare tekst en een hint om het op te lossen</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-nl.png" alt="Each finding has a code, a level, a text you can read and a hint how to fix it"><figcaption><p>Elke bevinding heeft een code, een niveau, een leesbare tekst en een hint om het op te lossen</p></figcaption></figure>
 
 Elke bevinding is één rij:
 

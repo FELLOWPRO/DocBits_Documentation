@@ -4,7 +4,7 @@
 
 Wanneer u een onjuiste e-factuur uploadt, raakt DocBits die niet kwijt. Het document krijgt de status **Error** en het foutscherm vertelt u wat er mis is, waar en wat u daarna kunt doen. Deze pagina toont twee voorbeelden: een XML-bestand dat niet goed gevormd is en een factuur die een bedrijfsregel schendt.
 
-> Een factuur krijgt alleen de status **Error** wanneer validatie **aan** staat en **blokkeert** voor het documenttype. Zie [Validatie voor elk documenttype](validation-per-document-type.md).
+> Een factuur krijgt alleen de status **Error** wanneer validatie **on** staat en **blocking** is voor het documenttype. Zie [Validatie voor elk documenttype](validation-per-document-type.md).
 
 Een e-invoice die de validator heeft afgewezen, draagt zijn eigen e-invoice-validatiestatus in plaats van een gewone **Error**. De statusbadge op het dashboard voegt een tooltip toe die zegt waarom het document stopte, zodat u een afgewezen factuur bij het filteren van de documentlijst van andere fouten kunt onderscheiden. Het foutscherm en het rapport hieronder zijn voor beide gevallen gelijk.
 
@@ -12,7 +12,7 @@ Een e-invoice die de validator heeft afgewezen, draagt zijn eigen e-invoice-vali
 
 Een leverancier stuurt een XML-bestand waarin een sluittag niet overeenkomt met de openingstag. Het bestand kan niet worden gelezen, dus DocBits stopt bij de eerste controle, **L1 · Well-formedness**.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-nl.png" alt="Foutscherm van een fictief XML-bestand met een bewust beschadigde sluittag. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Foutscherm van een fictief XML-bestand met een bewust beschadigde sluittag. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-nl.png" alt="The error screen for a damaged XML file. The faulty line is marked in the XML. Example file with fictional data."><figcaption><p>Foutscherm van een fictief XML-bestand met een bewust beschadigde sluittag. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
 
 Het scherm heeft twee kanten:
 
@@ -21,7 +21,7 @@ Het scherm heeft twee kanten:
 
 Selecteer **View validation details** om het volledige [validatierapport](validation-report.md) te openen.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-nl.png" alt="Rapport van het beschadigde bestand: één fout op niveau 1 Syntaxis, met het technische bericht en de positie"><figcaption><p>Rapport van het beschadigde bestand: één fout op niveau 1 Syntaxis, met het technische bericht en de positie</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-nl.png" alt="The report of the damaged file: one error at level 1 Syntax, with the technical message and the position"><figcaption><p>Rapport van het beschadigde bestand: één fout op niveau 1 Syntaxis, met het technische bericht en de positie</p></figcaption></figure>
 
 Het rapport noemt de exacte positie (hier regel 5, kolom 4081) en geeft het technische bericht van de XML-parser. Selecteer **Show in XML** om naar die regel te springen. De hint **How to fix** zegt dat u de afzender om een gecorrigeerd bestand moet vragen.
 
@@ -29,7 +29,7 @@ Het rapport noemt de exacte positie (hier regel 5, kolom 4081) en geeft het tech
 
 De XML is in orde, maar een verplicht veld ontbreekt. De verkoper kan bijvoorbeeld niet worden geïdentificeerd omdat er geen verkopersidentificatie, registratie-identificatie of btw-identificatie aanwezig is (regel `BR-CO-26`).
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-nl.png" alt="Foutscherm van een volledig fictieve voorbeeldfactuur: de laag L3 · Business Rules, de regelcode en een volgende stap"><figcaption><p>Foutscherm van een volledig fictieve voorbeeldfactuur: de laag L3 · Business Rules, de regelcode en een volgende stap</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-nl.png" alt="The error screen for a business-rule error: the layer L3 · Business Rules, the rule code and a next step"><figcaption><p>Foutscherm van een volledig fictieve voorbeeldfactuur: de laag L3 · Business Rules, de regelcode en een volgende stap</p></figcaption></figure>
 
 De kaart noemt de laag **L3 · Business Rules** en de code `BR-CO-26`. Het rapport somt alle bevindingen van de factuur op, zie [Validatierapport](validation-report.md).
 

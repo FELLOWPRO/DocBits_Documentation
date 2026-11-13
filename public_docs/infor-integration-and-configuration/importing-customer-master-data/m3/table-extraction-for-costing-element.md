@@ -1,51 +1,52 @@
-# Extraction de tableaux pour le calcul des coûts
+# Importer les éléments de calcul des coûts M3 pour l'extraction de tableaux
 
-<figure><img src="../../../.gitbook/assets/docbits_m3_costing_element_table_fr.jpg" alt="Docbits M3 Costing Element Table Fr"><figcaption></figcaption></figure>
+Lorsque DocBits signale, à l'ouverture d'un document, que les éléments de coût ne sont pas correctement configurés, vérifiez à la fois les données importées des éléments de coût et le réglage de l'extraction de tableaux. Ce guide montre où préparer les données et où les contrôler dans DocBits. La signification du message est décrite dans [Éléments de coût non configurés correctement](../../../overview-and-basics/faq/infor-m3-m3-integration/costing-elements-are-not-properly-configured.-please-ask-your-admin-to-configure-it..md).
 
-Pour activer l'extraction de tableau pour l'élément de coût, vous devrez importer le tableau m3costingelement dans DocBits.
+## 1. Préparer l'export M3
 
-Depuis la page d'accueil de M3, tapez Commande + r et recherchez l'invite “PPS280”.
+1. Dans votre environnement M3, ouvrez **PPS280** et sélectionnez les lignes d'éléments de calcul des coûts dont votre organisation a besoin. Les menus et les lignes disponibles dépendent de votre mandant M3 et de vos autorisations.
+2. Si votre écran M3 propose **Tools → Export to Excel**, exportez les lignes sélectionnées ou toutes les lignes nécessaires. Vérifiez l'étendue avant l'export : la fenêtre historique présentée ci-dessous a un nombre de lignes maximal.
+3. Conservez l'export d'origine. Travaillez sur une copie afin de pouvoir comparer chaque colonne affectée avec sa source M3.
 
-Sélectionnez l'une des lignes qui vous sont affichées. Dans le menu suivant, sélectionnez OUTILS et “Exporter vers Excel”.
+<figure><img src="../../../.gitbook/assets/m3-pps280-tools-export-example.png" alt="Exemple M3 historique PPS280 avec le menu Tools ouvert pour l'export Excel"><figcaption><p>Exemple M3 historique : l'action d'export se trouve à l'emplacement correspondant dans votre propre mandant.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FI8SYWm-JwpyYRHFUp2obGtXcsa7m_blJ_lTrnhczztRIXIN5gfxCt3eRw6ZI42fH6AwnsKyv4ux5-rhaT505PsyDFFI_anUNvmACFyx_ssgxaqWq25vLt_E5s310HNoiPPLf35qJlYtstjpj5Cc4aB4\&width=768\&dpr=4\&quality=100\&sign=5aa04ccf\&sv=2)
+<figure><img src="../../../.gitbook/assets/m3-export-to-excel-dialog-example.png" alt="Fenêtre M3 historique Export to Excel avec les options pour les lignes sélectionnées, toutes les lignes et le format de données"><figcaption><p>Exemple M3 historique : choisissez les lignes et le format en connaissance de cause.</p></figcaption></figure>
 
-Sélectionnez “Exporter toutes les lignes” puis appuyez sur EXPORTER.
+## 2. Préparer un CSV pour DocBits
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FwtjHI9L4YUhf-yJFjcPGu218Vis_zELtCIfpmkIUKgasfrdfNW-dr_J1DqXlfD-SBrnVduDrMLAIAQh6UTlzBqEP_JPXP48elGMyGj0ByZbX7TpqlnIfRZ4ZoD0pyCo-AKigeKjlHN6cFcdpeClZ9L4\&width=768\&dpr=4\&quality=100\&sign=7cf7a274\&sv=2)
+Affectez l'export à ces noms de colonnes avant de l'enregistrer au format CSV. Faites confirmer la signification de chaque colonne source par votre administration M3 ; les positions de lettres dans un export Excel ne constituent pas une interface stable.
 
-Une fois téléchargé, vous devrez modifier le fichier Excel avant de le convertir en fichier CSV.
+| Colonne DocBits | Valeur à contrôler dans l'export M3 |
+| --- | --- |
+| `costing_element` | Code de l'élément de calcul des coûts |
+| `description` | Nom lisible de l'élément |
+| `charge_operator` | Opérateur d'imputation |
+| `charge_type` | Type d'imputation |
+| `distribution_method` | Méthode de répartition |
+| `distribution_type` | Type de répartition |
+| `charge_sequence_number` | Numéro de séquence, si votre configuration le fournit |
 
-Vous devrez ouvrir le fichier Excel, il ressemblera à ce qui est montré ci-dessous.
+Supprimez de la copie CSV les colonnes inutiles. Contrôlez quelques lignes avant l'import, y compris les caractères spéciaux et les valeurs vides. L'image suivante montre un **exemple de tableau M3 plus ancien**, et non un modèle d'import DocBits.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FmR6GtTDYMGf48yc3GCau%252Fimage.png%3Falt%3Dmedia%26token%3Daf52d75f-bdb9-4b18-a4b0-572b76e14309\&width=768\&dpr=4\&quality=100\&sign=57660254\&sv=2)
+<figure><img src="../../../.gitbook/assets/m3-costing-element-spreadsheet-example.png" alt="Tableau M3 historique avec les codes et les noms des éléments de calcul des coûts ainsi que d'autres colonnes sources avant l'affectation"><figcaption><p>Utilisez le tableau uniquement pour reconnaître les données sources ; affectez ses colonnes selon leur signification.</p></figcaption></figure>
 
-À partir de cette feuille Excel, vous avez besoin des colonnes A, B, H, J, K et I, modifiez la feuille Excel de sorte que le résultat final ressemble à ce qui suit.
+## 3. Importer dans DocBits
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FajTC0UO55QZRMDyhBxm1%252Fimage.png%3Falt%3Dmedia%26token%3D5b29b038-8156-4e67-8536-e0bcb65c35ff\&width=768\&dpr=4\&quality=100\&sign=5e46e6c2\&sv=2)
+1. Ouvrez **Paramètres → Traitement des documents → Consultation des données de base**. Cette page est décrite dans la documentation sous [Recherche de données de référence](../../../administration-and-setup/settings/document-processing/master-data-lookup.md).
+2. Sous **Importé**, sélectionnez l'icône plus. La fenêtre **Télécharger le CSV** s'ouvre.
+3. Saisissez `costing_element` dans **Type de données** et sélectionnez votre fichier CSV sous **Fichier**.
+4. Réglez **Délimiteur** sur le séparateur utilisé par votre fichier. La fenêtre actuelle affiche d'abord `;` ; ne partez pas du principe que votre fichier utilise une virgule.
+5. Vérifiez **Sur les conflits**, **Remplacer tout** et la seconde case à cocher avec votre administration avant de cliquer sur **Télécharger**. Ces choix peuvent modifier des données déjà importées. **Annuler** ferme la fenêtre sans importer ; **Télécharger** lance l'import une fois le CSV et les options contrôlés. Dans la version française, la case à cocher qui active la génération automatique de l'identifiant porte aussi le libellé **Sur les conflits** ; seule sa position la distingue de la liste déroulante.
+6. Après l'import, ouvrez la nouvelle entrée sous **Importé** et vérifiez que les codes et les noms attendus des éléments de calcul des coûts sont visibles.
 
-Une fois cela fait, enregistrez le fichier au format CSV.
+<figure><img src="../../../.gitbook/assets/dbdc-1229-lookup-master-data-fr-20261113.png" alt="Page française actuelle Consultation des données de base dans DocBits avec les groupes BOD Données d'entrée, Données de l'API ERP, Importé et DocBits Master Data ainsi que l'icône plus à côté de Importé"><figcaption><p>L'icône plus à côté de Importé ouvre la fenêtre d'import d'un fichier CSV.</p></figcaption></figure>
 
-Une fois que vous avez votre fichier CSV, allez sur la page web suivante. Cela dépend de l'environnement que vous utilisez :
+<figure><img src="../../../.gitbook/assets/dbdc-1229-upload-csv-fr-20261113.png" alt="Fenêtre française actuelle Télécharger le CSV avec les champs Type de données, Fichier, Délimiteur et Sur les conflits ainsi que les cases à cocher Remplacer tout et Sur les conflits"><figcaption><p>Type de données et Fichier sont encore vides dans cet exemple ; le Délimiteur affiche la valeur par défaut. Contrôlez les options de remplacement avant de cliquer sur Télécharger.</p></figcaption></figure>
 
-* Prod : http://api.docbits.com/
-* Sandbox : http://sandbox.api.docbits.com/
-* Stage : http://stage.api.docbits.com/
-* Démo : http://demo.api.docbits.com/
-* Dev : http://dev.api.docbits.com/
+## 4. Contrôler le réglage de l'extraction
 
-Ici, vous téléchargerez manuellement le tableau CostingElement via une API. Cliquez sur le bouton Autoriser.
+Ouvrez **Paramètres → Traitement des documents → Classification et Extraction → Extraction** et recherchez l'interrupteur **Extraction de tableaux pour le calcul des coûts**. Vérifiez que l'interrupteur est actif pour les types de documents que vous testez. Un aperçu des réglages de cette page figure sous [Classification et extraction](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md). Ouvrez ensuite un document approprié et vérifiez que le message d'origine n'apparaît plus. S'il persiste, transmettez à votre administration le type de document, le code de l'élément de calcul des coûts et le texte exact du message.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FtyzOq3BR2QqTguQFKicxo0dE5j5hGsP-BhfVbS81O_mxN5bSVp40jYfgsVJcE_rBLFMDJNvbPkPIdjPqaqoNbHBBM-9hx0i-U4VAH9ISBYhpwKgqQeUEd67VV1E4izwNyxbAwwrhCmrAo1uIKhLherY\&width=768\&dpr=4\&quality=100\&sign=188f5712\&sv=2)
+<figure><img src="../../../.gitbook/assets/dbdc-1229-extraction-setting-fr-20261113.png" alt="Carte Extraction de la page française de paramètres Classification et Extraction avec l'interrupteur Extraction de tableaux pour le calcul des coûts"><figcaption><p>L'interrupteur Extraction de tableaux pour le calcul des coûts se trouve dans la section Extraction.</p></figcaption></figure>
 
-Ici, vous devrez insérer la clé API de votre environnement DocBits. Cela se trouve dans les Paramètres sous Intégration.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F4ADnevq6kq_vbxUJpyPbHNcGvRvpO-l9Gwd8ZaYf_vO4uWhSl1jmKNpddmHGc9ZHMMbXCgLOElLDYbNwB3INmBDETecPrDnpI601IUOZQlT7tc7OLSPXwkooOJFNwML2i_gvBPuE8CvfwRpX-ZIlb_g\&width=768\&dpr=4\&quality=100\&sign=dedfcaaf\&sv=2)
-
-Une fois terminé, recherchez l'API appelée master\_data\_lookup/import\_data et remplissez les informations requises. Une fois terminé, cliquez sur EXÉCUTER pour déclencher l'API.
-
-### data\_type doit être costing\_element
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F8UD4FhFv2dRB4cMjCDL4G9ndjH7laVMKWqdeMaJGgEo48-UVvucB1uOydzNdfFy0yPM5bb66mZB4k9uJR7TTiEREGFaV2EqW01gxJpTyuUfGNh5QmBjySkyhZ56gWV8sYs8WI5RnHcENtXgjTU0vg0Q\&width=768\&dpr=4\&quality=100\&sign=7c9f4dbb\&sv=2)
-
-Si cela est fait correctement, le tableau M3CostingElement devrait maintenant être dans votre environnement DocBits. L'extraction de tableau pour les éléments de coût a maintenant été configurée pour votre environnement.
+Les captures DocBits actuelles de ce guide proviennent d'un environnement de test avec des données d'exemple inventées. Aucun export M3 ni fichier CSV n'a été importé ; contrôlez donc le résultat de l'import dans votre propre environnement. Les exemples M3 plus anciens montrent des écrans d'un système tiers et restent indépendants de la langue de l'interface DocBits.

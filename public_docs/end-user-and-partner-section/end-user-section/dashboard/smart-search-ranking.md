@@ -2,6 +2,10 @@
 
 Smart Search Ranking umieszcza dokumenty, o które Ci chodzi, na początku wyników wyszukiwania na pulpicie. Wyszukiwanie po słowie kluczowym znajduje każdy dokument, który zawiera Twoje słowo; Smart Search Ranking dodaje jeden krok: AI czyta najlepsze trafienia i ustawia na początku dokumenty, które naprawdę dotyczą Twojego wyszukiwania. Dokładne dopasowania — numery faktur, numery zamówień, nazwy dostawców — zawsze zostają na górze.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/pl.mp4" %}
+Smart Search Ranking na pulpicie (narracja po polsku). [Odtwarzacz z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/pl.html) · [Transkrypcja](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/pl.txt)
+{% endembed %}
+
 ## Co się zmienia
 
 | | Kolejność wg słowa kluczowego | Ze Smart Search Ranking |

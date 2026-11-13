@@ -1,17 +1,27 @@
 # Personalizzare i Filtri
 
-La dashboard offre filtri di ricerca per trovare documenti. Le impostazioni amministrative dei filtri di stato configurano invece la presentazione dei relativi controlli: sono operazioni distinte.
+I filtri della dashboard limitano l'elenco dei documenti per la ricerca corrente. L'impostazione **Stile del filtro di stato** è separata: stabilisce quali stati il filtro di stato della dashboard può offrire.
 
-## Filtrare i documenti nella dashboard
+## Filtrare l'elenco dei documenti
 
-Apri il menu dei filtri accanto alla ricerca e scegli i criteri disponibili nella tua versione, ad esempio tipo di documento, persona assegnata o intervallo di date. Controlla i criteri attivi e i risultati; rimuovi il singolo criterio o azzera la selezione quando serve. Non presumere un operatore logico universale tra tutti i filtri: verifica il risultato della combinazione usata.
+Apri la dashboard e usa il campo di ricerca o i controlli dei filtri. Il menu dei filtri rapidi offre scorciatoie come **Scaduto**, **In scadenza**, **Assegnato a me**, **In attesa di validazione**, **Corrispondenza PO completa** e **Corrispondenza parziale dell'ordine di acquisto**.
 
-<figure><img src="../../../../.gitbook/assets/native-dashboard-smart-filters-it-20261023.png" alt="Menu dei filtri della dashboard con opzioni di abbinamento degli ordini e campi standard. In base alla corrispondenza PO è un’etichetta ambigua del caso di scostamento inferiore; il testo non chiarisce quale grandezza venga confrontata. Nessun filtro è stato applicato."><figcaption><p>Menu dei filtri della dashboard con opzioni di abbinamento degli ordini e campi standard. In base alla corrispondenza PO è un’etichetta ambigua del caso di scostamento inferiore; il testo non chiarisce quale grandezza venga confrontata. Nessun filtro è stato applicato.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/customizing-filters-quick-filters-it-20261113.png" alt="Dashboard di DocBits in italiano con l'elenco dei documenti e il menu dei filtri rapidi aperto sopra il campo di ricerca. Visibili sono le voci Scaduto, In scadenza, Assegnato a me, Posta in arrivo di oggi, In attesa di validazione, Documenti elettronici, Limite del flusso di lavoro raggiunto e Corrispondenza PO completa; altre voci seguono più in basso. Nessun filtro è applicato e nessuna ricerca è stata eseguita; documenti e nominativi sono esempi inventati."><figcaption><p>Il menu dei filtri rapidi sopra il campo di ricerca. Nessun filtro è applicato.</p></figcaption></figure>
 
-## Configurare i filtri di stato
+Puoi combinare più filtri. Per rimuoverne uno, fai clic sulla **X** del suo chip. Il filtro cambia solo quali documenti vedi; non modifica i valori estratti di un documento né il suo stato di approvazione o di esportazione.
 
-Apri **Impostazioni → Dashboard → Filtri**. Controlla **Stile del filtro di stato** e **Filtro di stato personalizzato**. Il valore **Custom** resta in inglese nella versione illustrata. Se devi modificare questa preferenza, scegli la configurazione desiderata e usa il comando di applicazione previsto dalla schermata.
+## Configurare il filtro di stato
 
-<figure><img src="../../../../.gitbook/assets/native-dashboard-status-filters-it-20261023.png" alt="Impostazioni dei filtri di stato della dashboard. Stile del filtro di stato e Filtro di stato personalizzato sono visibili; Custom resta in inglese. Il valore di stato selezionato è troncato. Nessuna preferenza è stata modificata."><figcaption><p>Impostazioni dei filtri di stato della dashboard. Stile del filtro di stato e Filtro di stato personalizzato sono visibili; Custom resta in inglese. Il valore di stato selezionato è troncato. Nessuna preferenza è stata modificata.</p></figcaption></figure>
+Apri **Impostazioni → Cruscotto → Filtri** e scegli uno **Stile del filtro di stato**:
 
-Il salvataggio della preferenza amministrativa non dimostra che una ricerca specifica restituisca documenti corretti. La verifica delle immagini non ha eseguito query funzionali sui filtri intelligenti.
+* **Tutti** mostra l'elenco completo degli stati.
+* **Statico** mostra un elenco predefinito più breve.
+* **Personalizzato** ti permette di scegliere gli stati di cui ha bisogno la tua organizzazione.
+
+<figure><img src="../../../../.gitbook/assets/customizing-filters-status-options-it-20261113.png" alt="Pagina Impostazioni → Cruscotto in italiano: la scheda Filtri è aperta e mostra il campo Stile del filtro di stato con il valore Tutti; il menu a discesa è aperto con le tre voci Tutti, Statico e Personalizzato. Nessuna voce è stata scelta."><figcaption><p>I tre stili del filtro di stato. Nessuna voce è stata scelta.</p></figcaption></figure>
+
+La modifica dello stile viene salvata subito. Con **Personalizzato** scegli gli stati in **Filtro di stato personalizzato** e fai clic su **Applicare**. Se applichi un elenco vuoto, lo stile torna a **Tutti**.
+
+<figure><img src="../../../../.gitbook/assets/customizing-filters-status-filter-card-it-20261113.png" alt="Pagina Impostazioni → Cruscotto in italiano: le schede Generale, Cronologia delle esportazioni e Azione sono chiuse, la scheda Filtri è aperta e mostra la riga Stile del filtro di stato con il valore Tutti; sotto è aperta la scheda Cruscotto spedizioni anticipate. In basso a sinistra è visibile la versione dell'applicazione; i dati aziendali sono esempi inventati."><figcaption><p>L'impostazione del filtro di stato nelle impostazioni della dashboard. È mostrato lo stato trovato con lo stile Tutti; nulla è stato modificato.</p></figcaption></figure>
+
+Gli amministratori dell'organizzazione impostano il valore predefinito per l'organizzazione. Dove altri utenti hanno accesso a questi controlli, la loro scelta viene salvata come preferenza personale, che ha la precedenza sul valore predefinito dell'organizzazione.

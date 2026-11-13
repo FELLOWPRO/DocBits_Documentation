@@ -42,7 +42,7 @@ La **fonction d'aperçu** vous permet de tester comment un fichier EDI importé 
 * Ouvrez le fichier **STRUCTURE DESCRIPTOR** comme décrit ci-dessus.
 * Cliquez sur **Aperçu** en haut à droite pour ouvrir le panneau de test.
 
-    <div align="left"><figure><img src="../../../../../../../.gitbook/assets/edi-structure-descriptor-file-guide-preview-fr-20261114.png" alt="Panneau de test Aperçu de la sandbox en français, ouvert à droite du fichier STRUCTURE DESCRIPTOR (JSON) : champ Document Id..., bouton Test et sortie XML structurée affichée à côté de l'éditeur" width="560"><figcaption><p>Le panneau de test : saisissez un Document ID et cliquez sur Test.</p></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../../../../../.gitbook/assets/edi-structure-descriptor-file-guide-preview-fr-20261114.png" alt="Panneau de test Aperçu de la sandbox en français, ouvert à droite du fichier STRUCTURE DESCRIPTOR (JSON) : champ Document Id..., bouton Test et sortie XML structurée affichée à côté de l'éditeur" width="560"><figcaption><p>Le panneau de test : saisissez un Document ID et cliquez sur Test ; l'identifiant affiché ici est une donnée d'exemple inventée.</p></figcaption></figure></div>
 
 * Saisissez le **Document ID** dans le champ et cliquez sur **Test**. Le libellé du champ reste en anglais dans l'interface française : **Document Id...**.
 * La **sortie structurée** obtenue s'affiche à côté de l'éditeur.

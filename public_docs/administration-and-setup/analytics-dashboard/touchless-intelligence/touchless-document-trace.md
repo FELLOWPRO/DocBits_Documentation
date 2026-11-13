@@ -20,6 +20,8 @@ Le **Pipeline Path** montre 14 étapes : Intake, Classification, E-Document Vali
 | **Nothing Recorded** (pointillés) | Aucune donnée n'a été enregistrée pour cette étape |
 | **Not applicable** | L'étape ne s'applique pas à ce document |
 
+Sélectionnez l'étape **PO Match** pour ouvrir la vue détaillée du PO matching avec les lignes de commande derrière cette étape, là où la trace le propose.
+
 ### Journal des étapes
 
 Le **Stage Log** sous le chemin liste les mêmes étapes avec ce que chacune a enregistré. Un point d'état et le mot d'état se trouvent à gauche et à droite de chaque ligne.
@@ -27,6 +29,7 @@ Le **Stage Log** sous le chemin liste les mêmes étapes avec ce que chacune a e
 * Chaque valeur est une **puce de point** : un nombre avec son unité, par exemple **Confidence 100 %**, **Threshold 60 %**, **Failed rules 0**, **8 missing fields** ou **0 mapping gaps**. Les pourcentages s'affichent sous la forme `97 %`, jamais `0.97`.
 * **Details** ouvre la liste complète des points enregistrés par une étape, y compris les alternatives qu'elle a examinées.
 * L'étape qui a bloqué le document indique pourquoi, par exemple **Field validation failed**.
+* L'entrée **Intake** indique comment le document est entré dans DocBits, par exemple qu'il est arrivé par e-mail à une date donnée. Lorsque l'exécution enregistre une étape Intake à elle, la phrase figure sur cette ligne au lieu d'une entrée séparée.
 * Un point qu'aucune étape n'a enregistré s'affiche comme **Not recorded**, jamais comme une valeur inventée. Les points sont des nombres et des mots fixes, jamais du texte du document.
 * **Show Raw Diagnostics** active les données brutes lorsque le support le demande.
 

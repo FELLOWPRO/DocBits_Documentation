@@ -8,7 +8,7 @@ Cette page s'adresse aux personnes qui traitent les factures. Les administrateur
 
 ## Quand un document passe en erreur
 
-Si la validation est **activée** et **bloquante** pour le type de document, une facture avec un résultat bloquant obtient le statut **Error**. Ouvrez le document depuis le tableau de bord. La vue d'erreur affiche le XML à gauche et le motif à droite.
+Si la validation est **activée** et **bloquante** pour le type de document, une facture avec un résultat bloquant obtient le statut **Error**. Une facture que le validateur lui-même a rejetée porte à la place le statut dédié de validation e-invoice, voir [L'écran d'erreur d'une e-invoice rejetée](validation-error-screen.md). Ouvrez le document depuis le tableau de bord. La vue d'erreur affiche le XML à gauche et le motif à droite.
 
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-fr.png" alt="Écran d’erreur d’une facture d’exemple entièrement fictive. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification."><figcaption><p>Écran d’erreur d’une facture d’exemple entièrement fictive. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
 
@@ -30,6 +30,8 @@ Le rapport commence par les informations sur le fichier :
 | **Number / date** | Le numéro et la date de la facture, lus dans le XML. |
 
 Sous ces informations, vous voyez le **verdict**, par exemple **Not conformant**, avec le nombre d'erreurs, d'avertissements et d'informations. Si votre organisation a modifié la gravité d'une règle, une seconde ligne **Organisation severity** affiche les nombres selon les paramètres de votre organisation.
+
+> Le verdict indique **Rejected** au lieu d'un mot de conformité lorsque le document a été rejeté lors de la validation e-invoice, et le verdict porte alors une icône d'annulation. L'étape suivante renvoie à la liste des erreurs. Un rapport dont le résultat n'est pas lisible ne présente jamais la facture comme conforme.
 
 ### Résultat par niveau
 

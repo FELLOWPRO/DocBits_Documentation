@@ -6,6 +6,8 @@ Lorsque vous importez une facture électronique erronée, DocBits ne la perd pas
 
 > Une facture reçoit le statut **Error** uniquement lorsque la validation est **activée** et **bloquante** pour son type de document. Voir [Validation pour chaque type de document](validation-per-document-type.md).
 
+Une e-invoice rejetée par le validateur porte son propre statut de validation e-invoice au lieu d'un simple **Error**. Le badge de statut du dashboard ajoute une infobulle qui indique pourquoi le document s'est arrêté, afin que vous puissiez distinguer une facture rejetée des autres erreurs lorsque vous filtrez la liste des documents. L'écran d'erreur et le rapport ci-dessous sont identiques dans les deux cas.
+
 ## Exemple 1 : le fichier XML est endommagé
 
 Un fournisseur envoie un fichier XML dans lequel une balise fermante ne correspond pas à la balise ouvrante. Le fichier ne peut pas être lu, et DocBits s'arrête donc au premier contrôle, **L1 · Well-formedness**.
@@ -30,6 +32,16 @@ Le XML est correct, mais un champ obligatoire est manquant. Par exemple, le vend
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-fr.png" alt="Écran d’erreur d’une facture d’exemple entièrement fictive : la couche L3 · Business Rules, le code de la règle et une étape suivante. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification."><figcaption><p>Écran d’erreur d’une facture d’exemple entièrement fictive : la couche L3 · Business Rules, le code de la règle et une étape suivante. Dans cette version, certains textes de l’interface peuvent encore être en anglais ou mal traduits. Le guide explique leur sens ; les captures montrent l’interface sans modification.</p></figcaption></figure>
 
 La carte indique la couche **L3 · Business Rules** et le code `BR-CO-26`. Le rapport énumère tous les résultats de la facture, voir [Rapport de validation](validation-report.md).
+
+## Quand DocBits n'a pas pu contrôler le document
+
+Toute erreur n'est pas un rejet. Si le validateur ne peut pas lire le fichier du tout, le message commence par _could not check this document_ et nomme le contrôle qui l'a arrêté, par exemple `XML-PARSE` pour un fichier XML endommagé ou `PDF-UNREADABLE` pour un PDF impossible à ouvrir. DocBits affiche la même carte d'explication que pour une facture rejetée, avec le nom du contrôle, le code et le message technique.
+
+Il s'agit d'une défaillance technique, pas d'un verdict sur la facture :
+
+* DocBits ne marque pas le document comme rejeté.
+* Un redémarrage peut aboutir, car la cause peut tenir à la lecture du fichier. Sélectionnez **Restart Processing** avant de demander une nouvelle facture à l'expéditeur.
+* Si le même code réapparaît après un redémarrage, envoyez le fichier et le code à votre administrateur.
 
 ## Le bloc Next step et les boutons
 

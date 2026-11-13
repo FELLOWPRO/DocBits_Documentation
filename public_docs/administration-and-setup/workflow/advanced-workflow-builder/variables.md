@@ -1,65 +1,74 @@
+---
+description: "使用 Text、Number、Yes/No 和 Document 变量，包括组织作用域与即时持久化。"
+---
+
 # 变量
 
-## 视频: 变量、测试与激活
+## 视频：变量、测试与激活
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/zh.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/en.mp4" %}
 
-[打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/zh.mp4) · [字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/zh.vtt) · 1:50
+[打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/en.mp4) · [字幕（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/en.vtt) · 1:53
 
 <details>
-<summary>文字稿</summary>
+<summary>转录文本（英文）</summary>
 
-**选择变量类型**
+使用花括号图标打开 Variables。选择 Text、Number、Yes or No 或 Document。Search 可以查找变量名称。Document 变量存储由专用 Workflow 操作设置的引用。此表单不接受文档值。
 
-点击花括号图标打开变量。选择文本、数字、是或否，或者文档，并按名称搜索。Document 变量存储由专用工作流动作设置的文档引用。此表单不接受文档值。
+选择唯一的名称、类型和初始值。创建、编辑和删除变量会立即对组织生效。其他 Workflow 可以共享这些值。保存或放弃画布都无法撤销变量的更改。
 
-**变量属于整个组织**
+选择 Validate。在画布上方查看错误和警告。点击一条消息即可聚焦其节点。检查操作、入口连接、连接点、循环和合并。结构校验并不能证明运行时数据是正确的。
 
-设置唯一名称、类型和初始值。创建、修改或删除变量会立即保存到组织。其他工作流可以共用这些值。保存或放弃画布都无法撤销变量更改。
+工具栏中的播放按钮会打开 Select Test Document。可以选择一个文档、Custom Data，或为独立卡片选择 Test Without Document。开始播放会直接运行。测试使用当前画布，包括未保存的修改，并会模拟破坏性操作。
 
-**先验证结构**
+请分别针对高于、低于和恰好等于一千的情况准备测试，并补充数据缺失的情况。运行后，检查节点消息和耗时：绿色表示成功，橙色表示为假，红色表示错误，灰色表示已跳过。修复后重新测试；对于可重复的场景，请使用 Test Manager。
 
-点击验证，查看画布上方的错误和警告。点击消息可以定位节点。检查动作、入口连接、输出、环路和合并节点。结构验证通过，并不代表运行时数据正确。
-
-**选择测试上下文**
-
-工具栏播放按钮打开测试文档选择器。选择文档、自定义数据，或对独立卡片选择无文档测试。Start 的播放按钮直接运行。测试使用当前画布，包括未保存的修改，并模拟破坏性动作。
-
-**准备和检查测试场景**
-
-分别准备用于大于、小于、等于一千以及缺少数据的测试。运行后，检查节点消息和耗时：绿色表示成功，橙色表示条件不成立，红色表示错误，灰色表示跳过。修正后重新测试。使用测试管理器重复运行测试场景。
-
-**保存后再激活**
-
-自动保存会在更改后约每三十秒保留本地浏览器草稿。请明确保存到服务器。首次保存前无法激活。在预期自动执行之前，检查工作流列表中的启用状态。
+自动保存会在更改后大约每三十秒在浏览器中保留一份本地草稿。请显式保存到服务器。首次保存之前，激活开关不可用。在期望自动执行之前，请先在 Workflow List 中检查已启用状态。
 
 </details>
 
-[查看全部五个章节](videos.md)
+[观看全部五个章节](videos.md)
 
-**变量**可让你只需存储一次值，就能在高级工作流的各个节点中重复使用，例如阈值、固定收件人，或从文档中读取并传递给后续节点的值。点击工具栏中的**变量**按钮（`{ }` 图标）打开变量面板。
+使用工具栏中的 **{ }** 图标打开 **Variables**。兼容的卡片可以读取或更新命名值，例如阈值、标签、标志或文档引用。面板按类型对变量分组；Search 用于筛选名称。
 
-<figure><img src="../../../.gitbook/assets/site-complete-advanced-variables-zh.png" alt="中文高级工作流变量窗口。变量名称和值已隐藏；界面仍使用 Text、YesNo、Document 等英文类型标签，分别表示文本、是／否和文档。未创建、修改或删除组织变量。"><figcaption><p>中文高级工作流变量窗口。变量名称和值已隐藏；界面仍使用 Text、YesNo、Document 等英文类型标签，分别表示文本、是／否和文档。未创建、修改或删除组织变量。</p></figcaption></figure>
+## 全部四种类型
 
-## 变量类型
+| 类型 | 存储内容 | 配置 |
+| --- | --- | --- |
+| **Text** | 一个字符串。 | 输入初始文本值，例如可复用的标签。 |
+| **Number** | 一个数值。 | 输入数值，例如金额阈值，不要带货币符号。 |
+| **Yes/No** | 一个布尔标志。 | 设置初始的 Yes/No 开关。 |
+| **Document** | 一个文档引用。 | 由相应的 Workflow 操作分配。此表单不接受手动输入的文档默认值。 |
 
-变量按类型分组：
+<figure><img src="../../../.gitbook/assets/advanced_workflows_variable_form_en.png" alt="New Variable form showing Text, Number, Yes/No and Document"><figcaption><p>选择一个类型，输入唯一的名称，并在适用时设置初始值。</p></figcaption></figure>
 
-- **文本** — 字符串值（例如描述或固定标签）。
-- **是/否** — 布尔标记（是 / 否）。
-- **文档** — 文档引用，由相应工作流动作设置；不是在此面板中直接输入文档字段值。
+## 创建与使用
 
-列表变长后，可使用搜索框快速查找变量。
+1. 打开 **Variables → New Variable**。
+2. 选择类型。
+3. 输入一个非空且尚未在该组织中使用的名称。
+4. 在适用的情况下设置初始值。
+5. 根据你的版本，选择 **Save** 或 **Create Variable**。
+6. 在兼容的卡片字段中选择该变量。
 
-## 创建变量
+卡片必须支持该变量类型。变量不能替代每一个卡片字段，组织变量与从文档字段中提取的值是不同的。
 
-点击**New Variable**，为变量命名、选择类型并设置值。之后，你便可以在节点卡片中引用该变量，从而将配置集中管理，并且无需逐个编辑节点即可更改配置。
+## 作用域与持久化
 
-## 后续步骤
+{% hint style="warning" %}
+变量是**组织范围**的。创建、编辑或删除变量会立即保存到服务器，与是否保存画布无关。其他 Workflow 可以引用同一个变量。放弃 Workflow 或恢复本地草稿不会撤销变量的更改。
+{% endhint %}
 
-- 查看节点如何使用这些值：[节点](nodes.md)。
-- 在[验证与测试](validation-and-testing.md)中验证并运行工作流。
+请谨慎使用共享值。如果每张发票需要不同的值，请选择卡片支持的文档字段或文档范围内的数据，而不要假定共享变量只属于某一次执行。
 
-## 数值变量
+## 编辑与删除
 
-**Number（数值）**是独立的变量类型，与 Text、Yes/No 和 Document 并列。请输入不带货币符号的数值。组织变量由多个工作流共享；创建、修改和删除会立即保存，不受画布保存或放弃操作的影响。修改前请检查使用该变量的工作流，并测试低于、等于和高于阈值的情况。
+**pencil**图标会打开变量的名称和值以供编辑。其类型保持不变；请在创建时就选择正确的类型。Save 会保存所做的更改。
+
+**delete** 图标会打开确认对话框。确认之前，请检查哪些 Workflow 使用了该变量：删除引用可能导致卡片缺少其期望的值。更改共享值后，请重新测试受影响的 Workflow。
+
+## 示例：共享的金额阈值
+
+创建一个 Number 变量，例如 `approval_threshold`。在兼容的比较卡片中选择它，并将结果路由到审批或常规处理。更改之前，请先确定还有哪些 Workflow 使用了它。请分别针对低于、恰好等于和高于阈值的情况进行测试。比较运算符仍然很重要：更改变量的值并不会把 `>` 变成 `>=`。
+
+接下来请继续阅读 [Validation & Testing](validation-and-testing.md) 和 [Workflow Logs](../workflow-logs.md)。

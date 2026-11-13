@@ -1,66 +1,106 @@
+---
+description: "验证结构，选择文档或自定义测试输入，查看节点结果并保留回归场景。"
+---
+
 # 验证与测试
 
-## 视频: 变量、测试与激活
+## 视频：变量、测试与激活
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/zh.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/en.mp4" %}
 
-[打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/zh.mp4) · [字幕文件（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/zh.vtt) · 1:50
+[打开视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/en.mp4) · [字幕（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/en.vtt) · 1:53
 
 <details>
-<summary>文字稿</summary>
+<summary>转录文本（英文）</summary>
 
-**选择变量类型**
+使用大括号图标打开 Variables。选择 Text、Number、Yes or No 或 Document。Search 会查找变量名称。Document 变量存储由专用 Workflow 操作设置的引用。此表单不接受文档值。
 
-点击花括号图标打开变量。选择文本、数字、是或否，或者文档，并按名称搜索。Document 变量存储由专用工作流动作设置的文档引用。此表单不接受文档值。
+选择一个唯一的名称、类型和初始值。创建、编辑和删除变量会立即对组织持久生效。其他 Workflow 可以共享这些值。保存或丢弃画布都无法撤销变量更改。
 
-**变量属于整个组织**
+选择 Validate。在画布上方查看错误和警告。点击一条消息以聚焦其节点。检查操作、入口连接、句柄、循环和汇合。结构验证并不能证明运行时数据是正确的。
 
-设置唯一名称、类型和初始值。创建、修改或删除变量会立即保存到组织。其他工作流可以共用这些值。保存或放弃画布都无法撤销变量更改。
+工具栏的播放按钮会打开 Select Test Document。选择一个文档、Custom Data，或对独立卡片使用 Test Without Document。Start play 会直接运行。测试使用当前画布，包括未保存的编辑，并模拟破坏性操作。
 
-**先验证结构**
+准备高于、低于和正好等于一千的单独测试，以及缺失数据的情况。运行后，检查节点消息和时长：绿色为成功，橙色为假，红色为错误，灰色为跳过。修复后重新测试；对于可重复的场景，使用 Test Manager。
 
-点击验证，查看画布上方的错误和警告。点击消息可以定位节点。检查动作、入口连接、输出、环路和合并节点。结构验证通过，并不代表运行时数据正确。
-
-**选择测试上下文**
-
-工具栏播放按钮打开测试文档选择器。选择文档、自定义数据，或对独立卡片选择无文档测试。Start 的播放按钮直接运行。测试使用当前画布，包括未保存的修改，并模拟破坏性动作。
-
-**准备和检查测试场景**
-
-分别准备用于大于、小于、等于一千以及缺少数据的测试。运行后，检查节点消息和耗时：绿色表示成功，橙色表示条件不成立，红色表示错误，灰色表示跳过。修正后重新测试。使用测试管理器重复运行测试场景。
-
-**保存后再激活**
-
-自动保存会在更改后约每三十秒保留本地浏览器草稿。请明确保存到服务器。首次保存前无法激活。在预期自动执行之前，检查工作流列表中的启用状态。
+自动保存在更改后大约每三十秒保留一份浏览器本地草稿。请显式保存到服务器。首次保存之前，激活开关不可用。在期望自动执行之前，请在 Workflow List 中检查启用状态。
 
 </details>
 
-[查看全部五个章节](videos.md)
+[观看全部五章](videos.md)
 
-构建高级工作流时，工具栏中的两个控件可让你在构建器中直接检查工作流。它们用于*构建过程中的快速检查*；如需保存可重复运行的测试，请使用[Test Manager](../test-manager.md)。
+**Validate** 检查图结构。**Test** 使用特定输入评估当前的图。一张有效的图或一个绿色的测试并不能证明所有生产场景都被覆盖。
 
 ## 验证
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/zh.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/en.mp4" %}
 
-**视频:** 验证 Workflow · 0:44 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/zh.vtt)
+**Video:** 验证一个 Workflow · 0:50 · [字幕（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/en.vtt)
 
-点击 **Validate** 控件（圆圈勾选图标，或按 <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>）。验证会检查流程图中的问题，例如未连接的节点、缺少配置和无效连接，并指出这些问题，方便你在工作流处理实际文档前进行修复。
+使用 **check-circle** 按钮或 **Cmd/Ctrl + Shift + V**。错误和警告显示在画布上方。点击带有节点引用的消息以聚焦该节点。
 
-## 测试
+| 检查项 | 修正 |
+| --- | --- |
+| 入口 | 包含并连接 Start 或 When。入口节点不能作为目标。 |
+| 操作 | 至少包含一个 Then。 |
+| 连接 | 使用受支持的输出句柄和有效的目标输入。 |
+| 循环 | 移除自连接和闭环。 |
+| 汇合 | Wait ALL/ANY 至少需要两个输入；OR 需要两个不同的源。 |
+| 未使用的节点 | 重新连接或移除孤立的处理节点。Notes 不需要连接。 |
+| 现有 Delay | 正数时长，不超过 86,400 秒。 |
+| 卡片 | 解决缺失卡片和版本兼容性警告。 |
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/zh.mp4" %}
+警告可能标记出可疑的设计，例如来自同一个源的多个结果句柄指向同一个目标。请审视其含义；这并不等于测试成功。
 
-**视频:** 测试 Workflow · 1:28 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/zh.vtt)
+验证无法可靠地确定每个版本专属卡片的字段都包含正确的运行时数据。请配置可见字段并测试真实输入。运行时测试可以发现结构检查无法检测到的缺失数据。
 
-点击 **Test** 控件（播放图标，或按 <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>），即可使用样例运行当前流程并观察其行为，且不会影响实际文档。这是快速检查画布上刚完成的更改是否正常的方式。
+## 选择测试输入
 
-## 何时使用哪种方式
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4" %}
 
-- **在构建器中验证 / 测试**（本页）——设计流程时即时获得反馈。
-- **[Test Manager](../test-manager.md)** ——保存测试场景，以便稍后重新运行，并与其他所有测试场景一起运行，从而在未来更改后发现回归问题。
+**Video:** 测试一个 Workflow · 1:42 · [字幕（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.vtt)
 
-## 后续步骤
+使用工具栏的 **play-circle** 或 **Cmd/Ctrl + Shift + T** 打开 **Select Test Document**。
 
-- 在[节点](nodes.md)中查看节点类型和连接。
-- 在[工具栏与画布](toolbar-and-canvas.md)中查看所有工具栏和画布控件。
+<figure><img src="../../../.gitbook/assets/advanced_workflows_test_picker_en.png" alt="Select Test Document 包含文档搜索、自定义数据和 Test Without Document"><figcaption><p>选择你的卡片所需的输入。与文档无关的测试无法验证依赖文档的条件。</p></figcaption></figure>
+
+| 选项 | 方式 | 适用场景 |
+| --- | --- | --- |
+| **Search Document** | 输入至少两个字符，选择一个文档，然后选择 Test。 | 使用可用文档数据的、依赖文档的检查。 |
+| **Custom Data** | 输入有效的 document-data JSON 并测试。这需要 document-data 结构，而不是任意的键值 JSON。 | 当你已知结构时，用于受控输入和边界情况。 |
+| **Test Without Document** | 不选择文档直接运行。 | 与文档无关的卡片和控制流检查。 |
+
+<figure><img src="../../../.gitbook/assets/advanced_workflows_custom_data_en.png" alt="Custom Data 选项卡，包含 document-data JSON 输入"><figcaption><p>对受控场景使用完整的 document-data JSON。仅凭占位符注释并不能提供依赖文档的卡片所需的字段。</p></figcaption></figure>
+
+**Start play control**会直接测试，不打开选择器。节点上的 **Test from here** 从该点开始。必需的下游上下文仍必须存在。部分测试不会验证被省略的触发器和上游检查。
+
+部分测试之后，请从完整的入口点重新运行该场景，尤其是当它包含汇合节点时。从图中途开始的测试，其已完成的前驱集合可能与真实的文档事件不同。
+
+测试使用**当前画布**，包括未保存的编辑。测试模式模拟破坏性操作并跳过实际延迟。模拟的 Export、电子邮件或任务并不能证明生产集成已完成。
+
+## 阅读结果
+
+查看画布上的摘要和每个节点的结果指示器。打开结果详情以查看每个节点的消息和时长。结果对话框在可用时提供 **View in Designer**、**Re-test** 和 **Close**。
+
+| 结果 | 含义 | 检查 |
+| --- | --- | --- |
+| **Green — Success** | 节点成功完成。 | 预期的操作和路由。 |
+| **Orange — Failed Condition** | 评估的条件为假。 | 橙色替代路径和输入值。 |
+| **Red — Error** | 评估或操作失败。 | 确切的节点消息和必需数据。 |
+| **Gray — Skipped** | 节点未运行。 | 前置结果、入口和分支。 |
+
+条件为假可能导致预期的替代路径，并使 Workflow 成功。成功的错误处理器可以与整体错误并存。请同时阅读单个节点和整体徽标。
+
+整体测试时长可能包含设置和文档加载。每个节点的时长描述各个操作；这些测量值不必须精确相加。
+
+## 可重复的测试
+
+使用 [Test Manager](../test-manager.md) 保存回归场景。请覆盖：
+
+- 真、假和错误结果。
+- 精确的金额/日期/容差边界。
+- 缺失数据和意外的文档类型。
+- 所有汇合输入都匹配、只有一个匹配以及都不匹配。
+- 每个相关的事件入口和预期的下游操作。
+
+对修正和替代方案重新测试。然后 **Save**，在 Workflow List 中检查启用状态，并在 [Workflow Logs](../workflow-logs.md) 中查看新的真实运行。

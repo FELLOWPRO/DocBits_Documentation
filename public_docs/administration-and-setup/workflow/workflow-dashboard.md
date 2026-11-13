@@ -10,9 +10,57 @@ Das **Workflow-Dashboard** ist die Startseite des Workflow-Bereichs. Es zeigt, w
 
 **Video:** Suchen und Filtern im Workflow-Dashboard · 0:52 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/de.vtt)
 
+<details>
+
+<summary>Transkript</summary>
+
+**Nach Namen suchen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/de.mp4#t=0.25)
+
+In der Workflow-Liste findet das Suchfeld Workflows nach ihrem Namen. Tippen Sie einen Teil des Namens ein, und nur die passenden Workflows bleiben in der Liste.
+
+**Suche leeren** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/de.mp4#t=10.383)
+
+Leeren Sie die Suche, um wieder alle Workflows zu sehen. Die Suche steht auch in der Seitenadresse, sodass sie beim Zurückgehen zur Liste erhalten bleibt.
+
+**Zeitraum und Workflow** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/de.mp4#t=20.75)
+
+Auf dem Tab Dashboard bestimmen die Filter oben, was die Zahlen und das Diagramm zählen: ein Start- und ein Enddatum, standardmäßig der letzte Monat, und alle Workflows oder ein einzelner.
+
+**Zwei Zeiträume vergleichen** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/de.mp4#t=33.516)
+
+Vergleichen fügt einen zweiten Zeitraum hinzu: Geben Sie dessen Start- und Enddatum ein. Jede Zahl zeigt dann auch den Wert dieses Zeitraums und die Differenz. Die Filter merkt sich dieser Browser für Ihren nächsten Besuch.
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/de.mp4" %}
 
 **Video:** Einen Workflow als JSON herunterladen und hochladen · 0:55 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Als JSON herunterladen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/de.mp4#t=0.25)
+
+Um eine Kopie eines Workflows zu behalten, öffnen Sie seine Aktionen in der Liste und wählen Herunterladen. Sie erhalten eine JSON-Datei mit seinem Namen, seinem Typ und allen Karten und Verbindungen.
+
+**Sichern oder übertragen** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/de.mp4#t=13.416)
+
+Nutzen Sie sie als Sicherung, oder um einen Workflow zu übertragen, den Sie in einer Testumgebung gebaut und getestet haben.
+
+**Workflow importieren** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/de.mp4#t=22.35)
+
+Um ihn zurückzuholen, klicken Sie auf Workflow importieren und wählen die JSON-Dateien, bis zu zehn auf einmal.
+
+**Kommt ausgeschaltet an** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/de.mp4#t=31.35)
+
+Ein hochgeladener Workflow kommt ausgeschaltet an, damit nichts läuft, bevor Sie ihn angesehen haben.
+
+**Benutzer, Gruppen und Tabellen prüfen** · [0:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-json/v1/de.mp4#t=38.35)
+
+Karten mit Benutzern, Gruppen, Unterorganisationen oder Entscheidungstabellen verweisen über eine interne ID darauf. Öffnen Sie nach einem Upload aus einer anderen Umgebung die Karten und prüfen Sie, ob sie noch so eingestellt sind, wie Sie es möchten. Testen Sie ihn dann und schalten Sie ihn ein.
+
+</details>
 
 - **Dashboard** — Kennzahlen zu den Ausführungen und letzte Aktivität (oben dargestellt).
 - **Workflow-Liste** — jeder Workflow mit Typ, Ausführungsreihenfolge und Auslöser. Einen neuen Workflow legen Sie mit **Neuer Workflow** an.

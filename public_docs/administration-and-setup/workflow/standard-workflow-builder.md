@@ -8,6 +8,32 @@ Der **Standard-Workflow**-Builder ist der lineare, kartenbasierte Editor zur Aut
 
 **Video:** Einen Standard-Workflow erstellen · 1:10 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/de.vtt)
 
+<details>
+
+<summary>Transkript</summary>
+
+**Neuer Workflow, Standard** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/de.mp4#t=0.25)
+
+Ein Standard-Workflow ist der einfache Weg, ein Dokument zu automatisieren. Klicken Sie auf Neuer Workflow und wählen Sie Standard.
+
+**Eine Wenn-Karte startet ihn** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/de.mp4#t=11.583)
+
+Geben Sie dem Workflow einen Namen. Jeder Standard-Workflow hat genau eine Wenn-Karte: Sie entscheidet, wann der Workflow startet. Hier: wenn der Dokumenttyp Rechnung ist.
+
+**Und-Karten: Alle müssen erfolgreich sein** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/de.mp4#t=24.35)
+
+Und-Karten filtern weiter. Fügen Sie so viele hinzu, wie Sie brauchen, oder keine: Alle müssen erfolgreich sein, sonst stoppt der Workflow hier.
+
+**Dann-Karten handeln, der Reihe nach** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/de.mp4#t=34.75)
+
+Dann-Karten erledigen die Arbeit, eine nach der anderen. Hier wird die Rechnung einem Benutzer zugewiesen. Speichern Sie mit Workflow speichern, nicht mit Vorlage speichern. Ein gespeicherter Workflow ist sofort aktiv.
+
+**Grenzen von Standard-Workflows** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/de.mp4#t=47.75)
+
+Standard-Workflows sind bewusst einfach. Sie haben eine Wenn-Karte, alle Und-Karten müssen erfolgreich sein, und es gibt keine anderen Pfade: Schlägt eine Bedingung fehl, stoppt der Workflow einfach. Karten werden einzeln getestet. Für Verzweigungen, Fehlerbehandlung, Variablen oder Notizen nutzen Sie einen Advanced Workflow.
+
+</details>
+
 Erstellen Sie einen vollständigen Standard Workflow in der echten DocBits-Oberfläche: Rechnung auswählen, Rechnungsnummer und Betrag über 1000 prüfen, einen Prüfer zuweisen und den Status ändern. Speichern Sie die Regel, führen Sie drei Testszenarien aus und prüfen Sie das tatsächliche Ergebnis am Dokument.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/de.mp4" %}

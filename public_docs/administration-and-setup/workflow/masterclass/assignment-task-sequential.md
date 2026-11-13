@@ -20,6 +20,52 @@ Die fachliche Abnahme benötigt A→Genehmigung→B→Genehmigung sowie Ablehnun
 
 **Video:** Zweistufige Genehmigung mit Entscheidungstabellen · 2:58 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.vtt)
 
+<details>
+
+<summary>Transkript</summary>
+
+**Zwei Schritte, zwei Entscheidungstabellen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.mp4#t=0.25)
+
+Eine zweistufige Genehmigung: zuerst die Genehmiger, die eine Entscheidungstabelle zurückgibt, dann eine Abschlussgruppe, die immer zuletzt kommt. Zwei Entscheidungstabellen, eine gibt Benutzer zurück, die andere eine Gruppe.
+
+**Eine Kette: Tabelle, Zuweisung, Tabelle, Zuweisung** · [0:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.mp4#t=15.483)
+
+Setzen Sie jede Zuweisungskarte direkt hinter ihre eigene Entscheidungstabelle, in einer Kette: Tabelle, Zuweisung, Tabelle, Zuweisung. Beide Entscheidungstabellen speichern ihre Rückgaben.
+
+**Jede Zuweisung direkt nach ihrer Tabelle** · [0:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.mp4#t=28.55)
+
+Ein Workflow behält nur das letzte Ergebnis einer Entscheidungstabelle. Jede Zuweisungskarte liest es, wenn sie läuft, also muss sie laufen, bevor die nächste Tabelle es ersetzt.
+
+**Prioritäten bestimmen die Reihenfolge** · [0:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.mp4#t=39.55)
+
+Die Reihenfolge der Genehmigungen kommt aus den Prioritäten, nicht aus der Reihenfolge der Karten: die kleinste Zahl bekommt das Dokument zuerst. Geben Sie der Abschlussgruppe die höchste Zahl.
+
+**Test: Genehmiger, dann die Gruppe** · [0:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.mp4#t=51.583)
+
+Der Test zeigt jede Karte als erfolgreich. Die erste Zuweisungskarte reiht die zwei Genehmiger ein, die zweite die Abschlussgruppe. Am Ende des Laufs gibt eine letzte Zuweisung das Dokument dem ersten von ihnen.
+
+**Nebeneinander: funktioniert nicht** · [1:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.mp4#t=79.616)
+
+Dieser Aufbau funktioniert nicht. Zwei Pfade nebeneinander sehen gleich aus, aber der Workflow führt sie Schritt für Schritt aus: zuerst beide Tabellen, dann beide Zuweisungskarten.
+
+**Die Genehmiger fehlen - ohne Fehler** · [1:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.mp4#t=90.783)
+
+Der Test führt zuerst beide Tabellen aus, dann beide Zuweisungskarten. Beide lesen das Ergebnis der zweiten Tabelle: Die Gruppe wird zweimal eingereiht, die Genehmiger gehen verloren. Jede Karte zeigt trotzdem Erfolg, nichts warnt Sie. Nutzen Sie die Kette.
+
+**Ein fester letzter Genehmiger: Priorität 99** · [2:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.mp4#t=120.883)
+
+In einem Standard-Workflow kann ein fester Genehmiger immer zuletzt kommen: Weisen Sie die Benutzer der Entscheidungstabelle zu, dann fügen Sie eine Karte hinzu, die einen Benutzer mit hoher Priorität zuweist, zum Beispiel 99.
+
+**Prioritäten der Tabelle niedriger halten** · [2:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.mp4#t=135.883)
+
+Die Prioritäten der Tabelle müssen unter dieser Zahl bleiben. Findet die Tabelle niemanden, stoppt der Workflow bei der Tabellenkarte und niemand wird zugewiesen. Ein Benutzer, den beide liefern, wird zweimal gefragt.
+
+**Im Test prüfen** · [2:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/de.mp4#t=150.016)
+
+Ein Standard-Workflow testet eine Karte nach der anderen, also testen Sie dieselben Karten in einem Advanced Workflow. Die erste Zuweisungskarte reiht die Genehmiger der Tabelle ein, die zweite fügt den festen Benutzer hinzu. Ihre Prioritäten setzen ihn ans Ende.
+
+</details>
+
 ## Einen Übergang von A nach B tatsächlich beobachten
 
 Legen Sie vor der Konfiguration fest, ob Sie die Zuständigkeit ändern, eine Aufgabe erzeugen oder eine persönliche Entscheidung verarbeiten wollen. Verwenden Sie hierfür die jeweils passende Karte; die drei Wirkungen sind nicht gleichbedeutend.

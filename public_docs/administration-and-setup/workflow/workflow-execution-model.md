@@ -35,9 +35,53 @@ Test Manager e la finestra di test Advanced sono superfici di esecuzione diverse
 
 **Video:** Ordine di esecuzione dei Workflow · 1:19 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/it.vtt)
 
+<details>
+
+<summary>Trascrizione</summary>
+
+**I numeri bassi vanno prima** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/it.mp4#t=0.25)
+
+Quando un documento raggiunge uno stato, ogni Workflow attivo che corrisponde viene eseguito, uno dopo l'altro. La colonna Ordine di esecuzione del flusso di lavoro fissa la sequenza: i numeri bassi vanno prima.
+
+**Modificare l'ordine di esecuzione** · [0:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/it.mp4#t=15.75)
+
+Per cambiarlo, apri le azioni di un Workflow e scegli Modifica l'ordine di esecuzione del flusso di lavoro. Inserisci un numero da zero a mille. I nuovi Workflow partono da cinquecento, e quelli con lo stesso numero vanno in ordine alfabetico.
+
+**Ognuno vede cosa hanno fatto i precedenti** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/it.mp4#t=32.283)
+
+L'ordine conta perché ogni Workflow lavora con ciò che hanno lasciato i precedenti. Un Workflow successivo vede i campi impostati da uno precedente. Le schede agiscono subito, anche quando assegnano o esportano il documento. Solo le schede di assegnazione sequenziale, la scheda di esportazione in coda e i prompt di DocOperator aspettano che l'ultimo Workflow sia finito. E se un Workflow finisce con una condizione non riuscita o un errore, i successivi vengono eseguiti comunque.
+
+**Prima preparare, poi decidere** · [1:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/it.mp4#t=62.65)
+
+Uno schema semplice: dai numeri bassi ai Workflow che preparano i dati, per esempio impostando campi, e numeri più alti a quelli che controllano, instradano o approvano il documento. Lascia degli spazi, così i nuovi Workflow ci stanno in mezzo.
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/it.mp4" %}
 
 **Video:** Limiti di esecuzione dei Workflow · 0:51 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Limite di esecuzione raggiunto** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/it.mp4#t=0.25)
+
+Un Workflow può essere eseguito sullo stesso documento solo un numero limitato di volte. Quando un Workflow ha raggiunto quel limite, i Registri del flusso di lavoro del documento lo indicano in alto.
+
+**L'icona rossa segnala il Workflow** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/it.mp4#t=14.616)
+
+Ogni esecuzione di un Workflow che ha raggiunto il limite porta questa icona rossa accanto al nome. Passaci sopra per vedere il motivo.
+
+**Per Workflow e per documento** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/it.mp4#t=24.183)
+
+Il limite conta le esecuzioni di un Workflow su un documento. Una volta raggiunto, quel Workflow viene saltato per questo documento, mentre tutti gli altri continuano a essere eseguiti.
+
+**Capire perché è partito così spesso** · [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/it.mp4#t=36.883)
+
+Se un Workflow raggiunge il limite, guarda nei suoi registri perché è stato eseguito così spesso. Controlla per esempio se cambia qualcosa che lo riavvia, e restringi le sue condizioni così che venga eseguito solo quando deve.
+
+</details>
 
 I valori inferiori dell’**ordine di esecuzione** vengono elaborati prima. Per esempio, il workflow 100 prepara un campo e il 200 lo controlla. Usare valori distinti e confermare i dati effettivamente letti in una nuova esecuzione. La posizione di una scheda Advanced sul canvas non determina l’ordine.
 

@@ -76,9 +76,101 @@ La barra degli strumenti dell'Advanced Workflow scorre lungo la parte inferiore 
 
 **Video:** Designer di Advanced Workflow: schede e percorsi · 2:25 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.vtt)
 
+<details>
+
+<summary>Trascrizione</summary>
+
+**Iniziare un nuovo Workflow** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=0.25)
+
+Apri la Dashboard del flusso di lavoro e seleziona Nuovo flusso di lavoro.
+
+**Scegliere Flusso di lavoro avanzato** · [0:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=5.983)
+
+Scegli Flusso di lavoro avanzato. Il designer si apre con un nodo di inizio, da cui parte ogni Workflow.
+
+**Quando, E e Poi** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=13.55)
+
+Aggiungi schede con il menu Aggiungi o con un clic destro sull'area di lavoro. Le tre categorie di schede sono Quando, E e Poi.
+
+**Quando: la condizione di attivazione** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=25.95)
+
+La scheda Quando è la condizione di attivazione. Decide quando parte il Workflow, per esempio per un certo tipo di documento.
+
+**E: una condizione in più** · [0:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=39.45)
+
+Le schede E aggiungono altre condizioni. Controllano il documento, per esempio il suo stato. Il risultato è un successo o una condizione non riuscita.
+
+**Poi: la scheda di azione** · [0:52](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=52.883)
+
+Le schede Poi sono le schede di azione. Cambiano il documento, per esempio impostano un campo o approvano il documento.
+
+**Trascinare per collegare** · [1:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=61.583)
+
+Per collegare due schede, trascina da un punto a destra di una scheda all'ingresso a sinistra della scheda successiva.
+
+**Blu: successo** · [1:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=69.383)
+
+Il blu è il percorso del successo. Ce l'ha ogni scheda. Il Workflow lo prende quando la scheda termina.
+
+**Arancione: condizione non riuscita** · [1:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=78.216)
+
+L'arancione è il percorso della condizione non riuscita. Ce l'hanno solo le schede E. Il Workflow lo prende quando la condizione non è soddisfatta.
+
+**Rosso: errore** · [1:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=89.383)
+
+Il rosso è il percorso di errore. Ce l'hanno le schede E e Poi. Il Workflow lo prende quando una scheda fallisce con un errore.
+
+**Se-altrimenti con gestione degli errori** · [1:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=99.816)
+
+Insieme questi percorsi formano un se-altrimenti con gestione degli errori. Il successo esegue un'azione, una condizione non riuscita un'altra, e un errore un'alternativa, per esempio un'attività per una persona.
+
+**Un percorso per ogni stato** · [1:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=114.016)
+
+Per più casi, collega le schede Stato del documento tramite i loro percorsi di condizione non riuscita. Ogni scheda controlla uno stato, così ogni stato ha il suo percorso.
+
+**Il percorso verso una scheda e da essa** · [2:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/it.mp4#t=126.616)
+
+Fai clic su una scheda per evidenziarne il percorso di esecuzione: le schede che un documento attraversa per raggiungerla e quelle che possono seguirla. Tutto il resto si attenua. Qui l'attività si raggiunge solo dalla scheda Quando, tramite il percorso di errore rosso della scheda di stato.
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/it.mp4" %}
 
 **Video:** Descrizioni e note del Workflow · 1:11 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Spiegare il Workflow** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/it.mp4#t=0.25)
+
+Un Workflow con più rami è più facile da mantenere quando si spiega da solo. Il designer ha due strumenti per questo: una descrizione dell'intero Workflow e note sull'area di lavoro.
+
+**Descrivere l'intero Workflow** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/it.mp4#t=13.483)
+
+Seleziona Modifica descrizione nella barra degli strumenti e scrivi in una o due frasi a cosa serve il Workflow. La descrizione viene salvata quando salvi il Workflow.
+
+**Aggiungere una nota** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/it.mp4#t=25.383)
+
+Per spiegare un singolo passo, fai clic destro sull'area di lavoro, apri il menu di aggiunta e scegli Nota. La nota compare dove hai fatto clic.
+
+**Doppio clic per scrivere** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/it.mp4#t=35.583)
+
+Fai doppio clic sulla nota per scriverci, fino a cinquecento caratteri. Fai clic accanto quando hai finito.
+
+**Spostare e ridimensionare** · [0:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/it.mp4#t=43.783)
+
+Trascina la nota accanto alle schede che spiega e tira il suo angolo in basso a destra per ingrandirla.
+
+**Dare un colore alle note** · [0:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/it.mp4#t=50.716)
+
+Fai clic destro su una nota per cambiarne il colore. I colori aiutano a raggruppare le note, per esempio blu per le spiegazioni e rosso per le domande aperte.
+
+**Le note non vengono mai eseguite** · [1:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/it.mp4#t=62.05)
+
+Le note sono solo per le persone. Non sono collegate a nessuna scheda e non vengono mai eseguite, quindi non cambiano ciò che fa il Workflow.
+
+</details>
 
 - **+ Add** — apre il menu nodi per aggiungere un nodo (vedi [Nodi](nodes.md)).
 - **Undo / Redo** — torna indietro o avanti tra le tue modifiche.

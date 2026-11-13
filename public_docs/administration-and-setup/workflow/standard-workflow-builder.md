@@ -8,6 +8,32 @@ Il builder **Flusso standard** è l'editor lineare basato su schede per automati
 
 **Video:** Creare un Workflow Standard · 1:10 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/it.vtt)
 
+<details>
+
+<summary>Trascrizione</summary>
+
+**Nuovo flusso di lavoro, Standard** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/it.mp4#t=0.25)
+
+Un flusso di lavoro Standard è il modo semplice per automatizzare un documento. Fai clic su Nuovo flusso di lavoro e scegli Standard.
+
+**Una scheda Quando lo avvia** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/it.mp4#t=11.716)
+
+Dai un nome al flusso. Ogni flusso Standard ha esattamente una scheda Quando: decide quando parte il flusso. Qui: quando il tipo di documento è Fattura.
+
+**Schede E: devono riuscire tutte** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/it.mp4#t=24.083)
+
+Le schede E filtrano ancora. Aggiungine quante servono, o nessuna: tutte devono riuscire, altrimenti il flusso si ferma qui.
+
+**Schede Poi: agiscono in ordine** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/it.mp4#t=34.483)
+
+Le schede Poi fanno il lavoro, una dopo l'altra. Qui la fattura viene assegnata a un utente. Salva con Salva flusso di lavoro, non con Salva modello. Un flusso salvato è subito attivo.
+
+**Limiti dei flussi Standard** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/it.mp4#t=47.716)
+
+I flussi Standard sono semplici. Hanno una scheda Quando, tutte le schede E devono riuscire e non ci sono altri percorsi: se una condizione fallisce, il flusso si ferma. Le schede si testano una alla volta. Per diramazioni, gestione degli errori, variabili o note, usa un flusso di lavoro avanzato.
+
+</details>
+
 Crea uno Standard Workflow completo nella vera interfaccia DocBits: seleziona la fattura, verifica il numero e un importo superiore a 1000, assegna un revisore e modifica lo stato. Salva la regola, esegui tre scenari di test e verifica il risultato effettivo sul documento.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/it.mp4" %}

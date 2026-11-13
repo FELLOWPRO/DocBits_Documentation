@@ -60,6 +60,40 @@ I nodi **When / And / Then** utilizzano esattamente le stesse schede descritte n
 
 **Video:** Successo, condizione non riuscita ed errore in un'esecuzione · 1:29 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/it.vtt)
 
+<details>
+
+<summary>Trascrizione</summary>
+
+**Quando, E, Poi in esecuzione** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/it.mp4#t=0.25)
+
+Quando un Workflow viene eseguito, la scheda Quando lo avvia. Le schede E controllano condizioni e le schede Poi agiscono. Cosa succede dopo dipende dal risultato di ogni scheda.
+
+**Successo, condizione non riuscita o errore** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/it.mp4#t=14.616)
+
+Ogni scheda E finisce con uno di tre risultati. Il successo segue il percorso blu, una condizione non riuscita il percorso arancione e un errore il percorso rosso.
+
+**I dati mancanti sono un errore** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/it.mp4#t=26.283)
+
+I dati mancanti non sono una condizione non riuscita. Se manca un campo che serve alla scheda, una variabile o il documento, la scheda segnala un errore e prende il percorso rosso.
+
+**Nessun percorso arancione: stop** · [0:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/it.mp4#t=40.183)
+
+Se una condizione non riesce e il suo percorso arancione non è collegato, il Workflow si ferma su quella scheda. L'esecuzione finisce come condizione non riuscita.
+
+**Collegato: solo un altro ramo** · [0:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/it.mp4#t=51.183)
+
+Se il percorso arancione è collegato, una condizione non riuscita è solo un altro ramo. Il Workflow continua lì e può comunque finire con successo.
+
+**Percorso rosso: intercettare gli errori** · [1:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/it.mp4#t=61.716)
+
+Collega il percorso rosso a un'alternativa, per esempio un'attività per una persona, così gli errori non passano inosservati. L'alternativa viene eseguita, ma l'esecuzione resta segnata come errore.
+
+**Come finisce un'esecuzione** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/it.mp4#t=76.316)
+
+In breve: qualsiasi errore rende l'esecuzione un errore. Una condizione non riuscita senza percorso arancione collegato la rende una condizione non riuscita. Tutto il resto finisce con successo.
+
+</details>
+
 I nodi sono collegati da **archi colorati**. Trascina da una maniglia sul lato **destro** di un nodo verso la maniglia di input sul lato **sinistro** di un altro nodo per creare un collegamento. Ogni colore indica un diverso esito di esecuzione:
 
 - **Success** (blu) — il percorso predefinito seguito quando un nodo si completa con successo. Disponibile su tutti i tipi di nodo.

@@ -18,6 +18,36 @@ La condizione di tabella decisionale chiama realmente il servizio per valutarla.
 
 **Video:** Tabelle decisionali nelle schede di assegnazione · 2:01 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/it.vtt)
 
+<details>
+
+<summary>Trascrizione</summary>
+
+**Tabelle decisionali in due passi** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/it.mp4#t=0.25)
+
+Le tabelle decisionali decidono chi gestisce un documento. In un Workflow lavorano in due passi. Una scheda E esegue la tabella decisionale e conserva ciò che restituisce. Le schede Poi usano questi risultati per assegnare il documento o creare attività.
+
+**Successo, condizione non riuscita o errore** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/it.mp4#t=16.616)
+
+La scheda E riesce quando la tabella restituisce almeno una corrispondenza per il documento. Senza corrispondenza finisce come condizione non riuscita e segue il percorso arancione. Senza tabella selezionata, o se la tabella non può essere eseguita, finisce come errore.
+
+**Eseguire la tabella e conservarne i risultati** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/it.mp4#t=34.583)
+
+Aggiungi la scheda E che controlla se la tabella decisionale restituisce risultati e scegli la tabella. Poi impostala in modo che memorizzi i dati restituiti. Senza questo, le schede successive non hanno nulla con cui lavorare.
+
+**Il primo utente riceve il documento** · [0:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/it.mp4#t=49.983)
+
+Sul percorso del successo, la scheda Poi che assegna in base al primo utente restituito dà il documento al primo utente della tabella. Ogni utente restituito, anche il primo, riceve un'attività o una notifica. Dai all'attività un titolo, una descrizione e una priorità, e scegli se inviare anche un'email. I gruppi restituiti vengono ignorati.
+
+**Nessun campo: tutto dalla tabella** · [1:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/it.mp4#t=78.583)
+
+La scheda che assegna il documento in sequenza a un utente o a un gruppo in base alla tabella decisionale, invece, non ha alcun campo. Prende utenti e gruppi dalla tabella, ciascuno con la priorità restituita dalla tabella o con un valore predefinito. Alla fine dell'esecuzione, la voce con il numero di priorità più basso riceve il documento, a meno che un'altra scheda non l'abbia già assegnato direttamente.
+
+**Quale scheda per quale compito** · [1:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/it.mp4#t=101.583)
+
+In breve: per dare il documento a una persona e informare tutti gli altri, usa la scheda del primo utente. Per lasciare che la tabella decida tutto, anche le priorità, usa la scheda sequenziale senza campi. Per creare solo attività, usa la scheda delle attività per i risultati della tabella decisionale.
+
+</details>
+
 ## Schede e parametri di esempio
 
 I valori descrivono parametri delle schede, non un workflow completo importabile. Sostituire YOUR_* con selezioni proprie di test. Il designer gestisce l’ID nascosto del chiamante. Catalogo: Dev, DocFlow 2.10.38, 21 ottobre 2026; verificare versioni e abilitazioni della propria organizzazione.

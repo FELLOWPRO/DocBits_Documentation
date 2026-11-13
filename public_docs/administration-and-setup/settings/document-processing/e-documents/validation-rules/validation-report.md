@@ -8,7 +8,7 @@ Esta página es para las personas que procesan facturas. Los administradores con
 
 ## Cuando un documento recibe un error
 
-Si la validación está **activada** y **bloquea** para el tipo de documento, una factura con un hallazgo bloqueante recibe el estado **Error**. Abra el documento desde el panel. La vista de error muestra el XML a la izquierda y el motivo a la derecha.
+Si la validación está **activada** y **bloquea** para el tipo de documento, una factura con un hallazgo bloqueante recibe el estado **Error**. Una factura que el propio validador ha rechazado lleva en su lugar el estado dedicado de validación de e-invoice, véase [La pantalla de error de una e-invoice rechazada](validation-error-screen.md). Abra el documento desde el panel. La vista de error muestra el XML a la izquierda y el motivo a la derecha.
 
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-es.png" alt="Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar."><figcaption><p>Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar.</p></figcaption></figure>
 
@@ -30,6 +30,8 @@ El informe empieza con los datos del archivo:
 | **Number / date** | El número y la fecha de la factura, leídos del XML. |
 
 Debajo de los datos del archivo verá el **veredicto**, por ejemplo **Not conformant**, con el número de errores, advertencias y mensajes de información. Si su organización cambió la gravedad de una regla, una segunda línea **Organisation severity** muestra los recuentos según los ajustes de su organización.
+
+> El veredicto indica **Rejected** en lugar de una palabra de conformidad cuando el documento se ha rechazado en la validación de e-invoice, y en ese caso el veredicto lleva un icono de cancelación. El siguiente paso remite a la lista de errores. Un informe cuyo resultado no se puede leer nunca muestra la factura como conforme.
 
 ### Resultado por nivel
 

@@ -8,6 +8,8 @@ Cuando carga una factura electrónica incorrecta, DocBits no la pierde. El docum
 
 > Una factura recibe el estado **Error** solo cuando la validación está **activada** y **bloquea** para su tipo de documento. Consulte [Validación para cada tipo de documento](validation-per-document-type.md).
 
+Una e-invoice que el validador ha rechazado lleva su propio estado de validación de e-invoice en lugar de un simple **Error**. La insignia de estado del dashboard añade un tooltip que indica por qué se detuvo el documento, de modo que puede distinguir una factura rechazada de otros errores mientras filtra la lista de documentos. La pantalla de error y el informe que se describen a continuación son iguales en ambos casos.
+
 ## Ejemplo 1: el archivo XML está dañado
 
 Un proveedor envía un archivo XML en el que una etiqueta de cierre no coincide con su etiqueta de apertura. El archivo no se puede leer, por lo que DocBits se detiene en la primera comprobación, **L1 · Well-formedness**.
@@ -32,6 +34,16 @@ El XML es correcto, pero falta un campo obligatorio. Por ejemplo, no se puede id
 <figure><img src="../../../../../.gitbook/assets/einvoice-error-view-es.png" alt="Pantalla de error de una factura de ejemplo totalmente ficticia: la capa L3 · Business Rules, el código de la regla y un paso siguiente"><figcaption><p>Pantalla de error de una factura de ejemplo totalmente ficticia: la capa L3 · Business Rules, el código de la regla y un paso siguiente</p></figcaption></figure>
 
 La tarjeta indica la capa **L3 · Business Rules** y el código `BR-CO-26`. El informe enumera todos los hallazgos de la factura, consulte [Informe de validación](validation-report.md).
+
+## Cuando DocBits no pudo comprobar el documento
+
+No todo error es un rechazo. Si el validador no puede leer el archivo en absoluto, el mensaje comienza con _could not check this document_ y nombra la comprobación que lo detuvo, por ejemplo `XML-PARSE` para un archivo XML dañado o `PDF-UNREADABLE` para un PDF que no se puede abrir. DocBits muestra la misma tarjeta de explicación que para una factura rechazada, con el nombre de la comprobación, el código y el mensaje técnico.
+
+Se trata de un fallo técnico, no de un veredicto sobre la factura:
+
+* DocBits no marca el documento como rechazado.
+* Un reinicio puede tener éxito, porque la causa puede estar en la lectura del archivo. Seleccione **Restart Processing** antes de pedir al remitente una nueva factura.
+* Si el mismo código vuelve a aparecer tras un reinicio, envíe el archivo y el código a su administrador.
 
 ## El cuadro Next step y los botones
 

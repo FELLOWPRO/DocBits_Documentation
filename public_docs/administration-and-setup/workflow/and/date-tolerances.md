@@ -12,6 +12,52 @@ Os cartões que utilizam este cálculo:
 
 **Vídeo:** Tolerâncias de data e verificação de intervalos · 2:02 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.vtt)
 
+<details>
+
+<summary>Transcrição</summary>
+
+**Datas com tolerância** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.mp4#t=0.25)
+
+Vários cartões de Workflow comparam uma data com uma data de referência e aceitam uma tolerância em dias. Todos contam essa tolerância do mesmo jeito.
+
+**A janela de tolerância** · [0:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.mp4#t=9.583)
+
+A partir da data de referência, a tolerância é contada para trás e para frente. O resultado é uma janela, e as duas pontas fazem parte dela.
+
+**Dois dias: de terça a sábado** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.mp4#t=19.55)
+
+Com dois dias em torno da quinta-feira, dia vinte e dois, a janela vai da terça, dia vinte, ao sábado, dia vinte e quatro. Hoje é a data nos servidores do DocBits, em U T C.
+
+**Seis operadores, uma janela** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.mp4#t=32.25)
+
+É igual a aceita datas dentro da janela, Não é igual a datas fora dela. Maior ou igual começa no início da janela, Maior que depois do fim. Menor ou igual e Menor que funcionam ao contrário.
+
+**Operador, dias e dias da semana** · [0:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.mp4#t=45.65)
+
+No cartão, escolha o operador, a tolerância em dias e os dias da semana que contam.
+
+**Só os dias escolhidos contam** · [0:59](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.mp4#t=59.083)
+
+Os dias de tolerância permitidos só contam os dias da semana selecionados. Com segunda a sexta, um dia depois da sexta é segunda, então a janela vai de quinta a segunda.
+
+**Intervalos precisam de dois cartões** · [1:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.mp4#t=69.85)
+
+Um único cartão não consegue aceitar exatamente hoje ou amanhã, porque a janela dele vai igualmente longe nos dois sentidos. Dois cartões, um após o outro, conseguem.
+
+**É igual a 1 dia, depois Maior ou igual 0** · [1:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.mp4#t=82.783)
+
+O primeiro cartão, É igual a com um dia, aceita ontem, hoje e amanhã. O segundo, Maior ou igual com zero dias, aceita hoje e todo dia depois. Só hoje e amanhã passam nos dois.
+
+**Excluir um dia com Não é igual a** · [1:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.mp4#t=96.516)
+
+Para deixar um dia de fora, adicione um cartão Não é igual a com zero dias. Aqui, É igual a com três dias e Maior ou igual com zero dias dão de hoje até três dias à frente, e Não é igual a tira o dia de hoje.
+
+**Três cartões, um intervalo** · [1:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/pt.mp4#t=110.883)
+
+No designer, os três cartões vêm um após o outro no caminho de sucesso. O Workflow só continua quando os três têm sucesso: de amanhã até três dias à frente.
+
+</details>
+
 ## A janela de tolerância
 
 A partir da data de referência, a tolerância é contada para trás e para a frente. O resultado é uma **janela de tolerância**: da data de início à data de fim, ambas incluídas.

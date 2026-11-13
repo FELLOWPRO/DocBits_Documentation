@@ -8,6 +8,32 @@ O construtor **Fluxo padrão** é o editor linear, baseado em cartões, para aut
 
 **Vídeo:** Criar um Workflow Padrão · 1:06 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pt.vtt)
 
+<details>
+
+<summary>Transcrição</summary>
+
+**Novo fluxo de trabalho, Padrão** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pt.mp4#t=0.25)
+
+Um Workflow Padrão é a forma simples de automatizar um documento. Clique em Novo fluxo de trabalho e escolha Padrão.
+
+**Um cartão Quando inicia o Workflow** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pt.mp4#t=10.25)
+
+Dê um nome ao Workflow. Cada Workflow Padrão tem exatamente um cartão Quando: ele decide quando o Workflow começa. Aqui: quando o tipo de documento é Fatura.
+
+**Cartões E: todos precisam ter sucesso** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pt.mp4#t=22.45)
+
+Os cartões E filtram mais. Adicione quantos precisar, ou nenhum: todos precisam ter sucesso, senão o Workflow para aqui.
+
+**Cartões Então: agem em ordem** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pt.mp4#t=32.85)
+
+Os cartões Então fazem o trabalho, um após o outro. Aqui a fatura é atribuída a um usuário. Salve com Salvar fluxo de trabalho, não com Salvar modelo. Um Workflow salvo fica ativo imediatamente.
+
+**Limites dos Workflows Padrão** · [0:46](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/pt.mp4#t=46.183)
+
+Os Workflows Padrão são simples. Têm um cartão Quando, todos os cartões E precisam ter sucesso e não há outros caminhos: se uma condição falhar, o Workflow para. Os cartões são testados um a um. Para ramificações, tratamento de erros, variáveis ou notas, use um Advanced Workflow.
+
+</details>
+
 Crie um Standard Workflow completo na interface real do DocBits: selecione a fatura, verifique o número e um montante superior a 1000, atribua um revisor e altere o estado. Guarde a regra, execute três cenários de teste e confirme o resultado real no documento.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/pt.mp4" %}

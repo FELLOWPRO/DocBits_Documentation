@@ -87,6 +87,40 @@ Os **Registos do Fluxo de Trabalho** permitem aos usuários analisar quais fluxo
 
 **Vídeo:** Ler os registros do Workflow · 1:25 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.vtt)
 
+<details>
+
+<summary>Transcrição</summary>
+
+**Abrir os registros** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=0.25)
+
+Cada documento guarda os registros dos Workflows executados nele. No painel de documentos, abra as ações de um documento e escolha Registros de fluxo de trabalho.
+
+**Execuções e resultados** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=10.683)
+
+No topo você vê quantas execuções houve e quantas terminaram com erro, condição não atendida ou sucesso. Abaixo, cada execução aparece com Workflow, hora, duração e resultado.
+
+**O caminho de uma execução** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=22.25)
+
+Arraste o divisor para a esquerda para dar mais espaço aos registros. Depois clique em uma execução para ver o caminho dela. Cada cartão mostra seu resultado: verde para sucesso, laranja para condição não atendida, vermelho para erro. Aqui o cartão E terminou com uma condição não atendida, então o cartão Então seguinte não foi executado.
+
+**Por que um cartão terminou assim** · [0:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=42.783)
+
+Selecione um cartão para ler o registro dele. Ele diz o que o cartão comparou e por que terminou assim. Aqui o documento está pronto para validação, mas o cartão espera a segunda aprovação.
+
+**Um erro e o motivo** · [0:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=53.616)
+
+Uma execução que termina com erro mostra em vermelho o cartão que falhou. Aqui o cartão E não conseguiu ler o endereço de entrega do documento. Dados ausentes são sempre um erro, então o cartão seguinte não foi executado.
+
+**Encontrar execuções** · [1:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=66.85)
+
+Com muitas execuções, use a pesquisa para achar um Workflow pelo nome e o botão de filtro para limitar a lista por status ou data.
+
+**Nota do limite de execução** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=76.016)
+
+Uma nota aparece no topo quando um Workflow atingiu o limite de execuções neste documento. O vídeo sobre limites de execução explica isso.
+
+</details>
+
 Para acessar os registos do fluxo de trabalho:
 
 1. Navegue até o **Dashboard**.

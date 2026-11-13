@@ -21,7 +21,7 @@ El lápiz situado junto a la versión activa crea un **borrador** para los cambi
 
 ## Probar antes de activar
 
-Haga clic en **Vista previa** en la esquina superior derecha para abrir el panel de prueba. Introduzca el **ID del documento** de un documento EDI cargado y haga clic en **Prueba**. Compare la salida devuelta con el documento original y con los campos XML que espera. La captura muestra un resultado con datos de ejemplo inventados; no demuestra que su documento se transforme correctamente.
+Haga clic en **Vista previa** en la esquina superior derecha para abrir el panel de prueba. Introduzca el **ID del documento** en el campo que la interfaz rotula **Document Id...** (ese rótulo sigue en inglés) y haga clic en **Prueba**. Compare la salida devuelta con el documento original y con los campos XML que espera. La captura muestra un resultado con datos de ejemplo inventados; no demuestra que su documento se transforme correctamente.
 
 <figure><img src="../../../../../../.gitbook/assets/edi-transformation-file-guide-panel-es-20261113.png" alt="Panel de prueba en español con el campo Document Id, el botón Prueba y el XML resultante del pedido de compra de ejemplo"><figcaption>Prueba de la transformación seleccionada con un ID de documento de ejemplo inventado (e2000000-0000-4000-8000-000000000004).</figcaption></figure>
 

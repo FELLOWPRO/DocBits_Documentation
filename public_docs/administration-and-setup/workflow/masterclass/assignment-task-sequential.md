@@ -16,6 +16,52 @@ La recette métier nécessite A→approuver→B→approuver, refus de A, destina
 
 **Vidéo:** Approbation en deux étapes avec des tables de décision · 3:01 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.vtt)
 
+<details>
+
+<summary>Transcription</summary>
+
+**Deux étapes, deux tables de décision** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.mp4#t=0.25)
+
+Une approbation en deux étapes : d'abord les approbateurs renvoyés par une table de décision, puis un groupe final qui vient toujours en dernier. Deux tables de décision : l'une renvoie des utilisateurs, l'autre un groupe.
+
+**Une chaîne : table, attribution, table, attribution** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.mp4#t=14.283)
+
+Placez chaque carte d'attribution juste après sa propre table de décision, en une seule chaîne : table, attribution, table, attribution. Les deux tables enregistrent leurs retours.
+
+**Chaque attribution juste après sa table** · [0:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.mp4#t=28.316)
+
+Un Workflow ne garde que le dernier résultat d'une table de décision. Chaque carte d'attribution le lit quand elle s'exécute : elle doit donc passer avant que la table suivante le remplace.
+
+**Les priorités fixent l'ordre** · [0:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.mp4#t=40.216)
+
+L'ordre des approbations vient des priorités, pas de l'ordre des cartes : le plus petit nombre reçoit le document en premier. Donnez au groupe final le nombre le plus élevé.
+
+**Test : approbateurs, puis le groupe** · [0:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.mp4#t=51.883)
+
+Le test montre chaque carte en succès. La première carte d'attribution met en file les deux approbateurs, la seconde le groupe final. À la fin de l'exécution, une dernière attribution donne le document au premier d'entre eux.
+
+**Côte à côte : ne fonctionne pas** · [1:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.mp4#t=79.916)
+
+Cette disposition ne fonctionne pas. Deux chemins côte à côte semblent identiques, mais le Workflow les exécute étape par étape : d'abord les deux tables, puis les deux cartes d'attribution.
+
+**Approbateurs perdus - sans erreur** · [1:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.mp4#t=92.85)
+
+Le test exécute d'abord les deux tables, puis les deux cartes d'attribution. Toutes deux lisent le résultat de la seconde table : le groupe est mis en file deux fois et les approbateurs sont perdus. Chaque carte affiche un succès, rien ne vous avertit. Utilisez la chaîne.
+
+**Un dernier approbateur fixe : priorité 99** · [2:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.mp4#t=122.983)
+
+Dans un Workflow Standard, un approbateur fixe peut toujours venir en dernier : attribuez les utilisateurs de la table, puis ajoutez une carte qui attribue un utilisateur avec une priorité élevée, par exemple 99.
+
+**Garder les priorités de la table plus basses** · [2:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.mp4#t=138.783)
+
+Les priorités de la table doivent rester inférieures à ce nombre. Si la table ne trouve personne, le Workflow s'arrête à la carte de la table et personne n'est attribué. Un utilisateur renvoyé par les deux est sollicité deux fois.
+
+**Vérifier dans un test** · [2:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/fr.mp4#t=152.983)
+
+Un Workflow Standard teste une carte à la fois : testez donc les mêmes cartes dans un Advanced Workflow. La première carte met en file les approbateurs de la table, la seconde ajoute l'utilisateur fixe. Leurs priorités le placent en dernier.
+
+</details>
+
 ## Cartes et paramètres d’exemple
 
 Ces valeurs décrivent des paramètres de cartes, pas un workflow complet importable. Remplacez YOUR_* par vos choix de test. Le concepteur gère l’ID caché de l’appelant. Catalogue : Dev, DocFlow 2.10.38, 21 octobre 2026 ; contrôlez versions et droits de votre organisation.

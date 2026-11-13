@@ -45,6 +45,28 @@ Pendant que vous construisez un Advanced Workflow, deux contrôles de la barre d
 
 **Vidéo:** Valider un Workflow · 0:52 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/fr.vtt)
 
+<details>
+
+<summary>Transcription</summary>
+
+**Valider vérifie la construction** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/fr.mp4#t=0.25)
+
+Avant d'enregistrer, cliquez sur Valider dans la barre d'outils. Cela vérifie comment le Workflow est construit : si une carte Quand le démarre, si chaque carte est reliée et si les chemins ont un sens. Les problèmes s'affichent au-dessus du canevas.
+
+**Un clic sur un message montre la carte** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/fr.mp4#t=16.116)
+
+Cliquez sur un message pour aller à la carte concernée. Ici, la carte d'attribution n'est pas reliée, elle ne s'exécuterait donc jamais. Reliez-la.
+
+**Aucun message : Workflow valide** · [0:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/fr.mp4#t=28.416)
+
+Validez à nouveau. Quand il ne reste rien, le Workflow est valide et vous pouvez l'enregistrer.
+
+**Valider d'abord, puis tester** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/fr.mp4#t=35.416)
+
+Enregistrer fait les mêmes vérifications, mais enregistre le Workflow même s'il reste des problèmes : validez donc d'abord. Valider ne vérifie ni vos données ni les réglages des cartes. Pour voir ce que fait un Workflow avec un vrai document, testez-le.
+
+</details>
+
 Cliquez sur le contrôle **Validate** (l'icône cercle coché, ou appuyez sur <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). La validation vérifie le graphe à la recherche de problèmes — nœuds non connectés, configuration manquante et connexions invalides — et les signale pour que vous puissiez les corriger avant que le workflow ne s'exécute sur des documents réels.
 
 ## Test
@@ -52,6 +74,44 @@ Cliquez sur le contrôle **Validate** (l'icône cercle coché, ou appuyez sur <k
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/fr.mp4" %}
 
 **Vidéo:** Tester un Workflow · 1:45 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Tester avant d'activer** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/fr.mp4#t=0.25)
+
+Testez un Workflow avant de l'activer. Un test exécute ce qui est sur le canevas maintenant, y compris les changements non enregistrés. Les actions comme attribuer ou exporter sont seulement simulées : le document reste tel quel.
+
+**Tester le Workflow entier** · [0:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/fr.mp4#t=15.65)
+
+Voici un Workflow pas encore enregistré. Pour tester le Workflow entier, cliquez sur Tester le flux de travail dans la barre d'outils.
+
+**Choisir un document de test** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/fr.mp4#t=24.816)
+
+Choisissez le document pour le test. Les Workflows qui n'ont pas besoin de document peuvent aussi se tester sans. Cherchez le document par son nom, sélectionnez-le et cliquez sur Test.
+
+**Lire le résultat sur le canevas** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/fr.mp4#t=37.35)
+
+Le test suit le chemin que prend le document. Cette facture n'est pas en attente d'approbation, donc la carte Et finit par une condition échouée, et le chemin orange mène à la carte d'attribution. Les chemins non pris sont grisés, et le bandeau du haut montre le résultat et la durée du test.
+
+**Les détails de chaque carte** · [0:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/fr.mp4#t=56.75)
+
+Cliquez sur Détails pour voir chaque carte avec son résultat et son message. Tester à nouveau relance le test après une modification.
+
+**Tester une seule carte** · [1:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/fr.mp4#t=66.083)
+
+Pour tester une seule carte, survolez-la et cliquez sur le bouton lecture. Vous pouvez aussi faire un clic droit sur la carte et choisir Testez à partir de ce nœud. Le test démarre à cette carte, avec le même choix de document.
+
+**Survoler le badge pour les détails** · [1:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/fr.mp4#t=81.65)
+
+Seules cette carte et les suivantes s'exécutent. Survolez le badge pour voir le résultat de la carte. Modifiez la carte et testez à nouveau jusqu'à ce qu'elle fasse ce que vous attendez.
+
+**Ce que signifient les couleurs** · [1:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/fr.mp4#t=94.083)
+
+En bref : vert signifie succès, orange une condition échouée et rouge une erreur. Les cartes qui n'ont pas tourné sont pâles et ont un badge gris.
+
+</details>
 
 Cliquez sur le contrôle **Test** (l'icône lecture, ou appuyez sur <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>) pour exécuter le flux actuel sur un exemple et observer son comportement, sans affecter les documents en production. C'est le moyen le plus rapide de vérifier une modification que vous venez d'apporter sur le canevas.
 

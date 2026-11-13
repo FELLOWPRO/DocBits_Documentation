@@ -60,6 +60,40 @@ Les nœuds **When / And / Then** utilisent exactement les mêmes cartes que cell
 
 **Vidéo:** Succès, condition échouée et erreur dans une exécution · 1:24 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/fr.vtt)
 
+<details>
+
+<summary>Transcription</summary>
+
+**Quand, Et, Dans ce cas à l'exécution** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/fr.mp4#t=0.25)
+
+Quand un Workflow s'exécute, la carte Quand le démarre. Les cartes Et vérifient des conditions et les cartes Dans ce cas agissent. La suite dépend du résultat de chaque carte.
+
+**Succès, condition échouée ou erreur** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/fr.mp4#t=12.85)
+
+Chaque carte Et se termine par l'un de trois résultats. Un succès suit le chemin bleu, une condition échouée le chemin orange et une erreur le chemin rouge.
+
+**Données manquantes : une erreur** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/fr.mp4#t=24.783)
+
+Des données manquantes ne sont pas une condition échouée. S'il manque un champ dont la carte a besoin, une variable ou le document, la carte signale une erreur et prend le chemin rouge.
+
+**Pas de chemin orange : arrêt** · [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/fr.mp4#t=36.816)
+
+Si une condition échoue et que son chemin orange n'est pas relié, le Workflow s'arrête sur cette carte. L'exécution se termine en condition échouée.
+
+**Relié : juste une autre branche** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/fr.mp4#t=47.416)
+
+Si le chemin orange est relié, une condition échouée est simplement une autre branche. Le Workflow continue par là et peut quand même finir en succès.
+
+**Chemin rouge : rattraper les erreurs** · [0:57](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/fr.mp4#t=57.716)
+
+Reliez le chemin rouge à une solution de repli, par exemple une tâche pour une personne, pour que les erreurs ne passent pas inaperçues. Le repli s'exécute, mais l'exécution reste marquée en erreur.
+
+**Comment une exécution se termine** · [1:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/fr.mp4#t=71.283)
+
+En bref : toute erreur fait de l'exécution une erreur. Une condition échouée sans chemin orange relié en fait une condition échouée. Tout le reste se termine en succès.
+
+</details>
+
 Les nœuds sont reliés par des **arêtes colorées**. Faites glisser depuis une poignée située sur le côté **droit** d'un nœud vers la poignée d'entrée située sur le côté **gauche** d'un autre nœud pour créer une connexion. Chaque couleur indique un résultat d'exécution différent :
 
 - **Success** (bleu) — le chemin par défaut emprunté lorsqu'un nœud se termine avec succès. Disponible sur tous les types de nœuds.

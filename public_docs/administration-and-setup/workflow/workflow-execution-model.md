@@ -35,9 +35,53 @@ Test Manager et le dialogue de test Advanced sont des surfaces d’exécution di
 
 **Vidéo:** Ordre d'exécution des Workflows · 1:16 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/fr.vtt)
 
+<details>
+
+<summary>Transcription</summary>
+
+**Les petits nombres d'abord** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/fr.mp4#t=0.25)
+
+Quand un document atteint un statut, chaque Workflow actif qui correspond s'exécute, l'un après l'autre. La colonne Ordre d'exécution du flux de travail fixe la séquence : les petits nombres passent en premier.
+
+**Modifier l'ordre d'exécution** · [0:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/fr.mp4#t=15.883)
+
+Pour la modifier, ouvrez les actions d'un Workflow et choisissez Modifier l'ordre d'exécution du flux de travail. Saisissez un nombre de zéro à mille. Les nouveaux Workflows commencent à cinq cents, et ceux qui ont le même nombre passent par ordre alphabétique.
+
+**Chacun voit ce qu'ont fait les précédents** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/fr.mp4#t=32.983)
+
+L'ordre compte, car chaque Workflow travaille avec ce que les précédents ont laissé. Un Workflow suivant voit les champs qu'un Workflow antérieur a remplis. Les cartes agissent tout de suite, même pour attribuer ou exporter le document. Seules les cartes d'attribution séquentielle, la carte d'export en file d'attente et les prompts DocOperator attendent la fin du dernier Workflow. Et si un Workflow finit par une condition échouée ou une erreur, les suivants tournent quand même.
+
+**Préparer d'abord, décider ensuite** · [0:59](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/fr.mp4#t=59.583)
+
+Un schéma simple : donnez des petits nombres aux Workflows qui préparent les données, par exemple en remplissant des champs, et des nombres plus grands à ceux qui vérifient, orientent ou approuvent le document. Laissez des écarts pour insérer de nouveaux Workflows.
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/fr.mp4" %}
 
 **Vidéo:** Limites d'exécution des Workflows · 0:48 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Limite d'exécution atteinte** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/fr.mp4#t=0.25)
+
+Un flux ne peut s'exécuter qu'un nombre limité de fois sur le même document. Quand un flux a atteint cette limite, les journaux de flux du document l'indiquent en haut.
+
+**L'icône rouge signale le flux** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/fr.mp4#t=13.25)
+
+Chaque exécution d'un flux qui a atteint la limite porte cette icône rouge à côté de son nom. Survolez-la pour voir pourquoi.
+
+**Par flux et par document** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/fr.mp4#t=22.683)
+
+La limite compte les exécutions d'un flux sur un document. Une fois atteinte, ce flux est ignoré pour ce document, et tous les autres flux continuent de s'exécuter.
+
+**Comprendre pourquoi il a tant tourné** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/fr.mp4#t=34.083)
+
+Si un flux atteint la limite, regardez dans ses journaux pourquoi il a tourné si souvent. Vérifiez par exemple s'il change quelque chose qui le relance, et restreignez ses conditions pour qu'il ne tourne que quand il le doit.
+
+</details>
 
 Les plus petites valeurs d’**ordre d’exécution** passent en premier. Par exemple, le workflow 100 prépare un champ et le 200 le contrôle. Utilisez des valeurs distinctes et confirmez les données effectivement lues lors d’une nouvelle exécution. La position d’une carte Advanced sur le canevas ne détermine pas l’ordre.
 

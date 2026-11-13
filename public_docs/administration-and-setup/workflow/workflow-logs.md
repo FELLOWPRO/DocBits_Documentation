@@ -87,6 +87,40 @@ Les **Journaux de flux de travail** permettent aux utilisateurs d'analyser quels
 
 **Vidéo:** Lire les journaux du Workflow · 1:38 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.vtt)
 
+<details>
+
+<summary>Transcription</summary>
+
+**Ouvrir les journaux** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=0.25)
+
+Chaque document garde les journaux des Workflows qui ont tourné dessus. Dans le tableau de bord des documents, ouvrez les actions d'un document et choisissez Journaux de flux de travail.
+
+**Exécutions et résultats** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=10.95)
+
+En haut, vous voyez combien d'exécutions il y a eu, et combien se sont terminées par une erreur, une condition échouée ou un succès. Dessous, chaque exécution est listée avec son Workflow, l'heure, la durée et le résultat.
+
+**Le chemin d'une exécution** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=25.716)
+
+Faites glisser le séparateur vers la gauche pour donner plus de place aux journaux. Cliquez ensuite sur une exécution pour voir son chemin. Chaque carte montre son résultat : vert pour un succès, orange pour une condition échouée, rouge pour une erreur. Ici, la carte Et s'est terminée par une condition échouée, donc la carte Dans ce cas suivante n'a pas tourné.
+
+**Pourquoi une carte finit ainsi** · [0:48](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=48.15)
+
+Sélectionnez une carte pour lire son journal. Il dit ce que la carte a comparé et pourquoi elle s'est terminée ainsi. Ici, le document est prêt pour la validation, mais la carte attend la deuxième approbation.
+
+**Une erreur et sa raison** · [1:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=62.45)
+
+Une exécution qui se termine par une erreur montre la carte en échec en rouge. Ici, la carte Et n'a pas pu lire l'adresse de livraison du document. Des données manquantes sont toujours une erreur, donc la carte suivante n'a pas tourné.
+
+**Trouver des exécutions** · [1:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=78.083)
+
+Avec beaucoup d'exécutions, utilisez la recherche pour trouver un Workflow par son nom, et le bouton de filtre pour réduire la liste par statut ou par date.
+
+**Note de limite d'exécution** · [1:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=88.516)
+
+Une note apparaît en haut quand un Workflow a atteint sa limite d'exécution sur ce document. La vidéo sur les limites d'exécution l'explique.
+
+</details>
+
 Pour accéder aux journaux de flux de travail :
 
 1. Naviguez jusqu'au **Tableau de bord**.

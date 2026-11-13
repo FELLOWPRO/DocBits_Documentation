@@ -18,6 +18,36 @@ La condition de table de décision appelle réellement le service pour évaluer 
 
 **Vidéo:** Tables de décision dans les cartes d'attribution · 2:02 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/fr.vtt)
 
+<details>
+
+<summary>Transcription</summary>
+
+**Les tables de décision en deux étapes** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/fr.mp4#t=0.25)
+
+Les tables de décision décident qui traite un document. Dans un Workflow, elles agissent en deux étapes. Une carte Et exécute la table de décision et garde ce qu'elle renvoie. Les cartes Dans ce cas utilisent ces retours pour attribuer le document ou créer des tâches.
+
+**Succès, condition échouée ou erreur** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/fr.mp4#t=17.483)
+
+La carte Et réussit quand la table renvoie au moins une correspondance pour le document. Sans correspondance, elle finit en condition échouée et suit le chemin orange. Sans table choisie, ou si la table ne peut pas s'exécuter, elle finit en erreur.
+
+**Exécuter la table, garder les retours** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/fr.mp4#t=34.316)
+
+Ajoutez la carte Et qui vérifie si la table de décision a des retours, et choisissez la table. Réglez-la ensuite pour qu'elle stocke les données renvoyées. Sinon, les cartes suivantes n'ont rien avec quoi travailler.
+
+**Le premier utilisateur reçoit le document** · [0:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/fr.mp4#t=49.383)
+
+Sur le chemin du succès, la carte Dans ce cas qui attribue selon le premier utilisateur renvoyé donne le document au premier utilisateur de la table. Chaque utilisateur renvoyé, le premier compris, reçoit une tâche ou une notification. Donnez à la tâche un titre, une description et une priorité, et choisissez d'envoyer aussi un e-mail ou non. Les groupes renvoyés sont ignorés.
+
+**Aucun champ : tout vient de la table** · [1:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/fr.mp4#t=79.05)
+
+La carte qui attribue le document de façon séquentielle à un utilisateur ou un groupe selon la table de décision n'a, elle, aucun champ. Elle prend les utilisateurs et les groupes de la table, chacun avec la priorité que renvoie la table, ou une valeur par défaut. À la fin de l'exécution, l'entrée au plus petit numéro de priorité reçoit le document, sauf si une autre carte l'a déjà attribué directement.
+
+**Quelle carte pour quel besoin** · [1:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/fr.mp4#t=103.483)
+
+En bref : pour donner le document à une personne et informer tous les autres, utilisez la carte du premier utilisateur. Pour laisser la table tout décider, priorités comprises, utilisez la carte séquentielle sans champs. Pour créer seulement des tâches, utilisez la carte de tâches pour les retours de table de décision.
+
+</details>
+
 ## Cartes et paramètres d’exemple
 
 Ces valeurs décrivent des paramètres de cartes, pas un workflow complet importable. Remplacez YOUR_* par vos choix de test. Le concepteur gère l’ID caché de l’appelant. Catalogue : Dev, DocFlow 2.10.38, 21 octobre 2026 ; contrôlez versions et droits de votre organisation.

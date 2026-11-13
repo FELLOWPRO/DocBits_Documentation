@@ -887,7 +887,7 @@
     * [Contabilidade automática com Infor M3](infor-integration-and-configuration/importing-customer-master-data/m3/auto-accounting.md)
     * [Fornecedores e pedidos de compra](infor-integration-and-configuration/importing-customer-master-data/m3/suppliers-and-purchase-orders.md)
     * [Como importar todos os fornecedores](infor-integration-and-configuration/importing-customer-master-data/m3/how-to-import-all-suppliers.md)
-    * [Extração de tabela para elemento de custo](infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
+    * [Importar elementos de custeio M3](infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
   * [M3\_OLD](infor-integration-and-configuration/importing-customer-master-data/m3_old.md)
   * [Dados Mestres Personalizados](infor-integration-and-configuration/importing-customer-master-data/custom-master-data.md)
 * [Exportar no DocBits](infor-integration-and-configuration/exporting-in-docbits/README.md)

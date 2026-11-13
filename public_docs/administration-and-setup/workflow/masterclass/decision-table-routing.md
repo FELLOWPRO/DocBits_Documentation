@@ -18,6 +18,36 @@ description: "P1：从决策表追踪到文档分配"
 
 **视频:** 分配卡中的决策表 · 1:40 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/zh.vtt)
 
+<details>
+
+<summary>文字稿</summary>
+
+**决策表分两步工作** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/zh.mp4#t=0.25)
+
+决策表决定由谁处理文档。在 Workflow 中，它们分两步工作。一张和卡运行决策表并保留其返回结果。然后卡使用这些返回结果来分配文档或创建任务。
+
+**成功、失败条件或错误** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/zh.mp4#t=13.816)
+
+当决策表为文档返回至少一个匹配时，和卡成功。没有匹配时，它以失败条件结束并走橙色路径。没有选择决策表，或决策表无法运行时，它以错误结束。
+
+**运行决策表并保存返回结果** · [0:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/zh.mp4#t=27.15)
+
+添加检查决策表是否有返回结果的和卡，并选择决策表。然后设置它保存返回的数据。否则后面的卡片就没有可用的数据。
+
+**第一个用户获得文档** · [0:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/zh.mp4#t=42.183)
+
+在成功路径上，按第一个返回用户分配的然后卡会把文档交给决策表返回的第一个用户。每个返回的用户，包括第一个，都会收到一个任务或通知。为任务设置标题、描述和优先级，并选择是否同时发送电子邮件。返回结果中的组会被忽略。
+
+**没有字段：全部来自决策表** · [1:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/zh.mp4#t=66.416)
+
+而按决策表把文档顺序分配给用户或组的卡片完全没有字段。它从决策表中获取用户和组，每个都带有决策表返回的优先级，或者默认值。运行结束时，优先级数字最小的条目获得文档，除非另一张卡片已经直接分配了它。
+
+**哪张卡片适合哪项工作** · [1:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/zh.mp4#t=85.35)
+
+简而言之：要把文档交给一个人并通知其他所有人，使用第一个用户卡。要让决策表决定一切（包括优先级），使用没有字段的顺序分配卡。只想创建任务时，使用针对决策表返回结果的任务卡。
+
+</details>
+
 ## 卡片与示例参数
 
 这些值描述单张卡片的参数，不是可直接导入的完整工作流。YOUR_* 必须替换为自有测试选项；隐藏的调用方 ID 由设计器管理。目录依据：Dev、DocFlow 2.10.38、2026 年 10 月 21 日。请另外核对本组织可用版本与授权。

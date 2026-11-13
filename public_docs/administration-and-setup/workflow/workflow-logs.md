@@ -87,6 +87,40 @@
 
 **视频:** 阅读 Workflow 日志 · 1:24 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/zh.vtt)
 
+<details>
+
+<summary>文字稿</summary>
+
+**打开工作流日志** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/zh.mp4#t=0.25)
+
+每个文档都会保存在其上运行过的 Workflow 日志。在文档仪表板中，打开某个文档的操作，然后选择工作流日志。
+
+**运行及其结果** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/zh.mp4#t=10.85)
+
+顶部显示一共运行了多少次，以及有多少次以错误、失败条件或成功结束。下方列出每次运行的 Workflow、时间、时长和结果。
+
+**一次运行的路径** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/zh.mp4#t=21.616)
+
+把分隔条拖到左边，给日志更多空间。然后点击一次运行，查看它走过的路径。每张卡片显示其结果：绿色表示成功，橙色表示失败条件，红色表示错误。这里和卡以失败条件结束，所以后面的然后卡没有运行。
+
+**卡片为什么这样结束** · [0:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/zh.mp4#t=40.95)
+
+选择一张卡片即可阅读它的日志。日志说明卡片比较了什么，以及为什么这样结束。这里文档已准备验证，但卡片期望的是等待第二次批准。
+
+**错误及其原因** · [0:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/zh.mp4#t=53.25)
+
+以错误结束的运行会把出错的卡片显示为红色。这里和卡无法从文档中读取送货地址。缺少数据总是错误，所以后面的然后卡没有运行。
+
+**查找运行** · [1:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/zh.mp4#t=66.183)
+
+运行次数很多时，用搜索按名称查找 Workflow，用筛选按钮按状态或日期缩小列表。
+
+**执行限制提示** · [1:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/zh.mp4#t=75.016)
+
+当某个 Workflow 在此文档上达到执行次数限制时，顶部会出现提示。关于执行限制的视频会解释它。
+
+</details>
+
 要访问工作流日志：
 
 1. 前往**仪表板**。

@@ -35,9 +35,53 @@ Test Manager 与 Advanced 测试对话框是不同的执行入口。仅比较状
 
 **视频:** Workflow 的执行顺序 · 1:04 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/zh.vtt)
 
+<details>
+
+<summary>文字稿</summary>
+
+**数字小的先运行** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/zh.mp4#t=0.25)
+
+当文档达到某个状态时，每个匹配的已启用 Workflow 会依次运行。工作流执行顺序列决定先后：数字小的先运行。
+
+**编辑执行顺序** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/zh.mp4#t=12.383)
+
+要修改，请打开 Workflow 的操作并选择编辑工作流执行顺序。输入零到一千之间的数字。新 Workflow 从五百开始，数字相同的 Workflow 按字母顺序运行。
+
+**每个都能看到前面的结果** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/zh.mp4#t=26.116)
+
+顺序很重要，因为每个 Workflow 都基于前面 Workflow 留下的结果工作。后面的 Workflow 能看到前面设置的字段。卡片会立即执行，分配或导出文档时也是如此。只有顺序分配卡、排队导出卡和 DocOperator 提示会等到最后一个 Workflow 运行完。如果某个 Workflow 以失败条件或错误结束，后面的 Workflow 仍会运行。
+
+**先准备，后决定** · [0:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/zh.mp4#t=50.416)
+
+一个简单的方案：准备数据的 Workflow（例如设置字段）用小数字，检查、分派或批准文档的 Workflow 用大数字。留出间隔，以便插入新的 Workflow。
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/zh.mp4" %}
 
 **视频:** Workflow 的执行次数限制 · 0:47 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**已达到执行限制** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/zh.mp4#t=0.25)
+
+同一个文档上，Workflow 只能运行有限的次数。Workflow 达到该限制时，文档的工作流日志会在顶部注明。
+
+**红色图标标记该 Workflow** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/zh.mp4#t=12.216)
+
+达到限制的 Workflow 的每次运行，名称旁都会显示这个红色图标。把鼠标悬停在上面可查看原因。
+
+**按 Workflow 和文档计算** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/zh.mp4#t=21.55)
+
+该限制统计一个 Workflow 在一个文档上的运行次数。达到后，此 Workflow 对该文档会被跳过，其他 Workflow 仍照常运行。
+
+**找出运行频繁的原因** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/zh.mp4#t=32.55)
+
+如果 Workflow 达到限制，请查看它的日志，了解它为什么运行这么频繁。例如检查它是否修改了会再次触发它的内容，并收紧条件，让它只在应该运行时运行。
+
+</details>
 
 **执行顺序**数值越小，越先运行。例如，工作流 100 准备字段，工作流 200 检查该字段。使用不同数值，并在新一次执行中核实实际读取的数据。Advanced 卡片在画布上的位置不决定执行顺序。
 

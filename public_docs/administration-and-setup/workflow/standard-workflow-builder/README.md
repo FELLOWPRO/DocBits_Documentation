@@ -8,9 +8,57 @@
 
 **视频：** 构建 Standard Workflow · 1:09 · [字幕（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.vtt)
 
+<details>
+
+<summary>文字稿（英文）</summary>
+
+**New Workflow, Standard** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.mp4#t=0.25)
+
+A Standard workflow is the simple way to automate a document. Click New Workflow and choose Standard.
+
+**One When card starts it** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.mp4#t=10.65)
+
+Give the workflow a name. Every Standard workflow has exactly one When card: it decides when the workflow starts. Here: when the document type is Invoice.
+
+**And cards: all must succeed** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.mp4#t=25.116)
+
+And cards filter further. Add as many as you need, or none: all of them must succeed, otherwise the workflow stops here.
+
+**Then cards act, in order** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.mp4#t=35.516)
+
+Then cards do the work, one after the other. Here the invoice is assigned to a user. Save it with Save Workflow, not Save Template. A saved workflow is active right away.
+
+**Limits of Standard workflows** · [0:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.mp4#t=49.816)
+
+Standard workflows are kept simple. They have one When card, the And cards must all succeed, and there are no other paths: if a condition fails, the workflow just stops. Cards are tested one at a time. For branches, error handling, variables or notes, use an Advanced workflow.
+
+</details>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/en.mp4" %}
 
 **视频：** 在 Standard Workflow 中测试卡片 · 0:51 · [字幕（WebVTT）](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/en.vtt)
+
+<details>
+
+<summary>文字稿（英文）</summary>
+
+**Test Card: one card at a time** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/en.mp4#t=0.25)
+
+In a Standard workflow, you test one card at a time. Open the menu of a card, here the And card, and choose Test Card. Search for a document to test it on.
+
+**The result and the card logs** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/en.mp4#t=13.35)
+
+Click Test on Document. The invoice is ready for validation, not pending approval, so the condition fails. The card logs say why.
+
+**Testing an action changes nothing** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/en.mp4#t=24.183)
+
+Actions can be tested too. The result shows what the card would do, but the document is not changed.
+
+**One card, current settings, no changes** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/en.mp4#t=35.516)
+
+Test Card uses the settings on the screen, even before you save. It tests one card, not the whole workflow, so it does not show whether the next card would run. To test a whole flow at once, use an Advanced workflow.
+
+</details>
 
 在真实的 DocBits 界面中创建一个完整的 Standard Workflow：匹配发票、检查其编号以及高于 1000 的金额、分配审核人并更改状态。保存该规则，运行三个测试场景，并确认文档的实际结果。
 

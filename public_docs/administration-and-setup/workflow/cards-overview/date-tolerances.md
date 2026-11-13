@@ -12,6 +12,52 @@
 
 **视频:** 日期容差和范围检查 · 1:57 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.vtt)
 
+<details>
+
+<summary>文字稿</summary>
+
+**带容差的日期** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.mp4#t=0.25)
+
+多种 Workflow 卡片会把一个日期与参考日期比较，并接受以天为单位的容差。它们计算容差的方式都相同。
+
+**容差窗口** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.mp4#t=10.683)
+
+从参考日期起，容差向前和向后计算。结果是一个时间窗口，两端都包含在内。
+
+**两天：星期二到星期六** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.mp4#t=19.683)
+
+以二十二号星期四为中心、容差两天时，窗口从二十号星期二到二十四号星期六。今天指的是 DocBits 服务器上的日期，采用 U T C 时间。
+
+**六个运算符，一个窗口** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.mp4#t=32.283)
+
+等于接受窗口内的日期，不等于接受窗口外的日期。大于或等于从窗口开头开始，大于从窗口结束之后开始。小于或等于和小于方向相反。
+
+**运算符、天数和星期** · [0:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.mp4#t=45.216)
+
+在卡片中选择运算符、以天为单位的容差，以及计入的星期几。
+
+**只计算所选的星期几** · [0:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.mp4#t=58.65)
+
+允许容忍天数只计算所选的星期几。选择星期一到星期五时，星期五之后的一天是星期一，所以窗口从星期四到星期一。
+
+**范围需要两张卡片** · [1:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.mp4#t=69.65)
+
+单张卡片无法只接受今天或明天，因为它的窗口向两个方向延伸得一样远。两张卡片前后相接就可以。
+
+**等于 1 天，再大于或等于 0 天** · [1:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.mp4#t=81.283)
+
+第一张卡片是等于、一天，接受昨天、今天和明天。第二张是大于或等于、零天，接受今天及之后的每一天。只有今天和明天能通过两张卡片。
+
+**用不等于排除某一天** · [1:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.mp4#t=94.116)
+
+要排除某一天，添加一张零天的不等于卡片。这里，三天的等于和零天的大于或等于给出从今天到三天后，不等于再去掉今天。
+
+**三张卡片，一个范围** · [1:46](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/zh.mp4#t=106.516)
+
+在设计器中，三张卡片在成功路径上依次相连。只有三张都成功时，Workflow 才会继续：从明天到三天后。
+
+</details>
+
 ## 容差窗口
 
 容差从参考日期开始，分别往前（过去）和往后（将来）计算。结果是一个 **容差窗口**：从开始日期到结束日期，两端均包含在内。

@@ -6,11 +6,13 @@
 
 > 只有在该文档类型已启用验证且验证设为**blocking**时，发票的状态才会变为 **Error**。请参阅[按文档类型验证](validation-per-document-type.md)。
 
+被校验器拒绝的电子发票带有自己的电子发票校验状态，而不是简单的 **Error**。仪表板上的状态徽章会附加一个工具提示，说明文档停止的原因，因此在筛选文档列表时可以把被拒绝的发票与其他错误区分开。错误界面和下方的报告在两种情况下相同。
+
 ## 示例 1：XML 文件已损坏
 
 供应商发送的 XML 文件中，结束标签与开始标签不匹配。该文件无法读取，因此 DocBits 会在第一个检查 **L1 · Well-formedness**处停止。
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-zh.png" alt="虚构 XML 文件的错误界面；结束标签已被故意损坏。 此版本的部分界面文字仍可能使用英语或存在翻译错误。本指南解释正确含义；截图保留实际界面文字。"><figcaption><p>虚构 XML 文件的错误界面；结束标签已被故意损坏。 此版本的部分界面文字仍可能使用英语或存在翻译错误。本指南解释正确含义；截图保留实际界面文字。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed-zh.png" alt="The error screen for a damaged XML file. The faulty line is marked in the XML. Example file with fictional data."><figcaption><p>虚构 XML 文件的错误界面；结束标签已被故意损坏。 此版本的部分界面文字仍可能使用英语或存在翻译错误。本指南解释正确含义；截图保留实际界面文字。</p></figcaption></figure>
 
 界面分为两部分：
 
@@ -19,7 +21,7 @@
 
 选择 **View validation details**，打开完整的[验证报告](validation-report.md)。
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-zh.png" alt="损坏文件的报告：第 1 层语法的一个错误，包含技术消息和位置。"><figcaption><p>损坏文件的报告：第 1 层语法的一个错误，包含技术消息和位置。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed-zh.png" alt="The report of the damaged file: one error at level 1 Syntax, with the technical message and the position"><figcaption><p>损坏文件的报告：第 1 层语法的一个错误，包含技术消息和位置。</p></figcaption></figure>
 
 报告会指出准确位置（此处为第 5 行、第 4081 列），并提供 XML 解析器的技术消息。选择 **Show in XML** 可跳转到该行。**How to fix** 提示建议您向发送方索取修正后的文件。
 
@@ -27,9 +29,19 @@
 
 XML 本身没有问题，但缺少必填字段。例如，没有卖方标识符、注册标识符或 VAT 标识符，因此无法识别卖方（规则 `BR-CO-26`）。
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-zh.png" alt="完全虚构的示例发票的错误界面：层级 L3 · Business Rules、规则代码和一个下一步。"><figcaption><p>完全虚构的示例发票的错误界面：层级 L3 · Business Rules、规则代码和一个下一步。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-zh.png" alt="The error screen for a business-rule error: the layer L3 · Business Rules, the rule code and a next step"><figcaption><p>完全虚构的示例发票的错误界面：层级 L3 · Business Rules、规则代码和一个下一步。</p></figcaption></figure>
 
 卡片会显示层级 **L3 · Business Rules** 和代码 `BR-CO-26`。报告中列出了该发票的所有校验问题，请参阅[验证报告](validation-report.md)。
+
+## 当 DocBits 无法检查该文档时
+
+并非每个错误都是拒绝。如果校验器根本无法读取文件，消息会以 _could not check this document_ 开头，并指明使其停止的检查，例如损坏的 XML 文件为 `XML-PARSE`，无法打开的 PDF 为 `PDF-UNREADABLE`。DocBits 显示的说明卡片与被拒绝的发票相同，包含检查名称、代码和技术消息。
+
+这是技术故障，而不是对发票的判定：
+
+* DocBits 不会将文档标记为已拒绝。
+* 重新启动可能成功，因为原因可能出在文件读取上。在要求发件人提供新发票之前，请选择 **Restart Processing**。
+* 如果重新启动后再次出现相同的代码，请将文件和代码发送给管理员。
 
 ## Next step 框和按钮
 

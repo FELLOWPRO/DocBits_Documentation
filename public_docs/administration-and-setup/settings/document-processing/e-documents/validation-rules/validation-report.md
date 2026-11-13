@@ -10,15 +10,15 @@
 
 ## 文档出现错误时
 
-如果该文档类型的验证已**on**且设为**blocking**，那么出现阻止处理的校验问题的发票状态会变为**Error**。从仪表板打开文档。错误视图左侧显示 XML，右侧显示原因。
+如果该文档类型的验证已**on**且设为**blocking**，那么出现阻止处理的校验问题的发票状态会变为**Error**。被校验器本身拒绝的发票则带有专门的电子发票校验状态，参见[被拒绝电子发票的错误界面](validation-error-screen.md)。从仪表板打开文档。错误视图左侧显示 XML，右侧显示原因。
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-zh.png" alt="完全虚构的示例发票错误界面。 此版本的部分界面文字仍可能使用英语或存在翻译错误。本指南解释正确含义；截图保留实际界面文字。"><figcaption><p>完全虚构的示例发票错误界面。 此版本的部分界面文字仍可能使用英语或存在翻译错误。本指南解释正确含义；截图保留实际界面文字。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-zh.png" alt="The error view: the XML of the invoice and the first blocking finding with a next step. Example invoice with fictional names."><figcaption><p>完全虚构的示例发票错误界面。 此版本的部分界面文字仍可能使用英语或存在翻译错误。本指南解释正确含义；截图保留实际界面文字。</p></figcaption></figure>
 
 右侧卡片会显示拒绝发票的层级（例如 **L3 · Business Rules**）、规则代码（例如 `BR-CO-26`）、简短说明和**Next step**。选择**View validation details**以打开完整报告。
 
 ## 阅读报告
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-zh.png" alt="虚构示例发票的报告，包含文件信息和检查结果。"><figcaption><p>虚构示例发票的报告，包含文件信息和检查结果。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-zh.png" alt="The top of the report: file data, the verdict and the result for each level"><figcaption><p>虚构示例发票的报告，包含文件信息和检查结果。</p></figcaption></figure>
 
 报告开头列出文件信息：
 
@@ -32,6 +32,8 @@
 | **Number / date**           | 从 XML 中读取的发票编号和发票日期。       |
 
 文件信息下方会显示**判定结果**，例如**Not conformant**，并列出错误、警告和信息消息的数量。如果您的组织更改了某条规则的严重级别，第二行**Organisation severity**会显示应用组织设置后的数量。
+
+> 当文档在电子发票校验中被拒绝时，判定显示为 **Rejected** 而不是符合性词语，此时判定带有取消图标。下一步指向错误列表。结果无法读取的报告永远不会将发票显示为符合。
 
 ### 各级别的结果
 
@@ -51,7 +53,7 @@
 
 ## 校验问题
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-zh.png" alt="每个校验问题都包含代码、级别、可读文本和修正提示。"><figcaption><p>每个校验问题都包含代码、级别、可读文本和修正提示。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-zh.png" alt="Each finding has a code, a level, a text you can read and a hint how to fix it"><figcaption><p>每个校验问题都包含代码、级别、可读文本和修正提示。</p></figcaption></figure>
 
 每项校验问题占一行：
 

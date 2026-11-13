@@ -8,7 +8,7 @@
 
 页眉显示文件、其状态（例如 **In progress**）、您正在查看的运行及其首个阻塞点，以及一个带文档 ID 的 **Document** 按钮。
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-zh.png" alt="Dev NOVA：第一次测试运行的处理路径与已记录的数据点"><figcaption><p>2026 年 11 月 4 日从 Dev NOVA 11.0.3 的新采集。虚构的测试发票停在字段校验。分类、供应商查找、表头提取和表格提取包含真实记录的数据点；卡片显示文档和运行历史。这是正在运行的产品界面。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-zh.png" alt="Dev NOVA: processing path and recorded points from the first test run"><figcaption><p>2026 年十一月 4 日从 Dev NOVA 11.0.3 的新采集。虚构的测试发票停在字段校验。分类、供应商查找、表头提取和表格提取包含真实记录的数据点；卡片显示文档和运行历史。这是正在运行的产品界面。</p></figcaption></figure>
 
 **Pipeline Path** 显示 14 个阶段：Intake、Classification、E-Document Validation、Supplier Identification、Text Recognition、Header Extraction、Table Extraction、Field Validation、PO Lookup、PO Line Match、Approval、Workflow Routing、Export、ERP Acknowledgement。每个阶段带有一种状态：
 
@@ -20,6 +20,8 @@
 | **Nothing Recorded**（虚线） | 该阶段没有记录任何数据 |
 | **Not applicable** | 该阶段不适用于此文档 |
 
+在追踪提供该视图的位置，选择 **PO Match** 步骤即可打开 PO Match 明细视图，其中包含该步骤背后的订单行。
+
 ### 阶段日志
 
 路径下方的 **Stage Log** 列出相同的阶段以及各阶段记录的内容。每一行的左右两侧分别是状态圆点和状态词。
@@ -27,10 +29,11 @@
 * 每个值都是一个**数据点标签**：带单位的数字，例如 **Confidence 100 %**、**Threshold 60 %**、**Failed rules 0**、**8 missing fields** 或 **0 mapping gaps**。百分比显示为 `97 %`，绝不显示为 `0.97`。
 * **Details** 会展开某个阶段记录的完整数据点列表，包括它考虑过的备选值。
 * 阻塞该文档的阶段会说明原因，例如 **Field validation failed**。
+* **Intake** 条目说明文档如何进入 DocBits，例如在某一天通过电子邮件到达。当运行记录了自己的 Intake 阶段时，该句出现在该行，而不是单独的条目。
 * 没有任何阶段记录的数据点显示为 **Not recorded**，绝不显示为编造的值。数据点是数字和固定词汇，绝不是文档正文。
 * **Show Raw Diagnostics** 在支持人员需要时打开原始数据。
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-zh.png" alt="Dev NOVA：阶段日志，包含置信度、提取数据点和受阻的字段校验"><figcaption><p>实际的首次运行：分类置信度 100%、0 个供应商候选、1 个表格行和 7 个映射缺口。Passed 表示某阶段已执行；它并不证明供应商匹配成功，也不证明每个发票值都正确。字段校验报告缺少必填字段。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-zh.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>实际的首次运行：分类置信度 100%、0 个供应商候选、1 个表格行和 7 个映射缺口。Passed 表示某阶段已执行；它并不证明供应商匹配成功，也不证明每个发票值都正确。字段校验报告缺少必填字段。</p></figcaption></figure>
 
 ### 运行与变更
 
@@ -40,15 +43,15 @@ Document 卡片列出文档类型、供应商、发票号、采购订单、页�
 
 ### 查看供应商和表格详情
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-zh.png" alt="Dev NOVA：供应商详情，区分检出的标识、主数据查询和匹配结果"><figcaption><p>本次运行在发票上找到了供应商名称并查询主数据，但没有分配供应商。此测试发票中没有 VAT ID、IBAN、电子邮件地址和 GLN。主数据无匹配与发票值缺失属于不同的诊断结果。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-zh.png" alt="Dev NOVA: supplier details separate detected identifiers, master-data searches and matches"><figcaption><p>本次运行在发票上找到了供应商名称并查询主数据，但没有分配供应商。此测试发票中没有 VAT ID、IBAN、电子邮件地址和 GLN。主数据无匹配与发票值缺失属于不同的诊断结果。</p></figcaption></figure>
 
 请分别检查三个问题：文档上是否找到了标识、是否进行了查询，以及是否匹配到了供应商？仅有一个绿色阶段无法回答这些问题。
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-zh.png" alt="Dev NOVA：首次运行的表格详情，报告七个映射缺口"><figcaption><p>表格详情显示 1 个表格、1 行对应 7 个映射缺口。在断定提取失败之前，请先检查列映射。比较页脚不适用于所选的首次运行，因为它没有前一次运行。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-zh.png" alt="Dev NOVA: first-run table details report seven mapping gaps"><figcaption><p>表格详情显示 1 个表格、1 行对应 7 个映射缺口。在断定提取失败之前，请先检查列映射。比较页脚不适用于所选的首次运行，因为它没有前一次运行。</p></figcaption></figure>
 
 ### 识别真正的重启
 
-<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-zh.png" alt="Dev NOVA：两次实际测试运行的比较，阶段数据点未变化"><figcaption><p>同一张测试发票经过一次真实的人工重启，期间没有更正任何发票字段。新的运行只证明又尝试了一次，并不证明有所改善。未变化的数据点显示 No change；没有编造差异标记。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-zh.png" alt="Dev NOVA: comparison of two actual test runs with unchanged stage points"><figcaption><p>同一张测试发票经过一次真实的人工重启，期间没有更正任何发票字段。新的运行只证明又尝试了一次，并不证明有所改善。未变化的数据点显示 No change；没有编造差异标记。</p></figcaption></figure>
 
 人工重启属于人工干预。只有后续成功完成，才会将此案例归为 AP Assisted。只要它仍在进行中，就不计入已完成文档的分母。
 
@@ -73,7 +76,7 @@ Document 卡片列出文档类型、供应商、发票号、采购订单、页�
 3. 如果原始提取值不可用，请将其记录为**无法评估**，而不是正确。在报告独立的提取质量结果之前，先界定字段、行覆盖范围、样本选择和样本量。
 4. 将导入的 PO 值和导入时间戳与当前 Infor 值比较。这可以区分源数据错误与副本过时。
 
-阻塞点可能相继出现：第 1 次运行可能因 PO 尚未到达而停下；导入之后，第 2 次运行可能暴露出价格差异。两者都不能证明第 1 次运行到达了后面的检查。人工重启在成功后会以 AP Assisted 的形式保留；而最终的 ERP 拒收会优先作为流程异常处理。**Not recorded** 表示缺少证据，而不是检查通过。
+阻塞点可能相继出现：第 1 次运行可能因 PO 尚未到达而停下；导入之后，第 2 次运行可能暴露出价格差异。两者都不能证明第一次运行到达了后面的检查。人工重启在成功后会以 AP Assisted 的形式保留；而最终的 ERP 拒收会优先作为流程异常处理。**Not recorded** 表示缺少证据，而不是检查通过。
 
 关于对应的工具调用和人工操作的分类，参见 [Touchless with MCP](touchless-mcp.md)。
 

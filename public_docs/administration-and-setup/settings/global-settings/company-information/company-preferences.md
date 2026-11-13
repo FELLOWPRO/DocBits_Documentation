@@ -22,7 +22,7 @@ Otwórz **Wzór daty** i wybierz kolejność oraz separator wyświetlanych dat. 
 
 ## Wybór formatowania kwot
 
-Otwórz **Formatowanie kwoty** i wybierz format regionalny używany w Twojej organizacji. Na zrzucie przykładu lista zawiera Germany, United Kingdom, France i Spain; te nazwy są wymyślonymi danymi przykładowymi, a nie pełną listą formatów.
+Otwórz **Formatowanie kwoty** i wybierz format regionalny używany w Twojej organizacji. Na zrzucie lista zawiera Germany, United Kingdom, France i Spain; te nazwy są wymyślonymi danymi przykładowymi, a nie pełną listą formatów.
 
 <figure><img src="../../../../.gitbook/assets/company-preferences-amount-options-pl-20261113.png" alt="Otwarta lista rozwijana Formatowanie kwoty z przykładowymi pozycjami Germany, United Kingdom, France i Spain"><figcaption><p>Wybierz regionalny format kwot. Widoczne pozycje to wymyślone dane przykładowe.</p></figcaption></figure>
 
@@ -32,6 +32,6 @@ Po zmianie kliknij **Zapisz** wewnątrz **Preferencje firmy**. To inny przycisk 
 
 Przełącznik, który wyświetlał powiadomienie o nowej wersji, już nie istnieje. DocBits wykrywa nowe wersje automatycznie, więc nie potrzebujesz okna popup, aby być na bieżąco.
 
-O sposobie dostarczania wydań decyduje sekcja **Kanał wydania** na tej samej stronie **Informacje o firmie**. U góry sekcja pokazuje wersję API, z której obecnie korzysta Twoja organizacja, a poniżej wybierasz kanał wydań DocBits: **Vesta** (tylko poprawki, maksymalna stabilność) albo **Nova** (nowe funkcje po każdym wydaniu, ustawienie domyślne). Zmianę zapiszesz przyciskiem **Zapisz** w samej sekcji; zgodnie z tekstem «Zaczyna działać w ciągu minuty.» nowy kanał działa w ciągu minuty.
+O sposobie dostarczania wydań decyduje sekcja **Kanał wydania** na tej samej stronie **Informacje o firmie**. U góry sekcja pokazuje wersję API, z której obecnie korzysta Twoja organizacja, a poniżej wybierasz kanał wydań DocBits: **Vesta** (tylko poprawki, maksymalna stabilność) albo **Nova** (nowe funkcje po każdym wydaniu). Zmianę zapiszesz przyciskiem **Zapisz** w samej sekcji. Jak mówi podpowiedź «Zaczyna działać w ciągu minuty.», nowy kanał zaczyna działać w ciągu minuty.
 
 <figure><img src="../../../../.gitbook/assets/company-preferences-release-channel-pl-20261113.png" alt="Rozwinięta sekcja Kanał wydania z informacją o bieżącej wersji API i przykładowym numerem v12.90.0, poniżej opcje Vesta i Nova z wybraną Nova, tekst Zaczyna działać w ciągu minuty i przycisk Zapisz"><figcaption><p>Wybierz Vesta albo Nova i zapisz zmianę w samej sekcji. Numer wersji na zrzucie jest przykładowy i wymyślony.</p></figcaption></figure>

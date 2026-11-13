@@ -1,36 +1,45 @@
 # PO-Deaktivierungsstatus
 
-## **Übersicht**
+## **Überblick**
 
-Mit **PO-Deaktivierungsstatus** legen Sie fest, welche Bestellstatus eine Bestellung vom Rechnungsabgleich ausschließen. Prüfen Sie den Status der betroffenen Bestellung und die tatsächlich angewendeten Abgleichsregeln. Die Einstellung allein ist keine allgemeine Sperre für Rechnungsverarbeitung, Export oder Zahlung.
+Die Einstellung **PO-Deaktivierungsstatus** legt fest, welche Status von Bestellpositionen (PO) im Abgleichbildschirm gesperrt sind. Eine Position mit einem gesperrten Status wird durchgestrichen dargestellt und lässt sich nicht in einen Abgleich ziehen. Mit der Einstellung steuern Sie, welche Positionen für den jeweiligen Dokumenttyp abgeglichen werden dürfen.
 
 ## **Aktivierungsschritte**
 
-1.  Öffnen Sie **Einstellungen → Dokumenttypen**
+1. Öffnen Sie **Einstellungen → Dokumenttypen**.
+2. Suchen Sie den Dokumenttyp, den Sie einrichten möchten. Das folgende Beispiel verwendet **Rechnung**. Öffnen Sie über die Zahnrad-Schaltfläche (**Weitere Einstellungen**) seine Einstellungen.
 
-    <figure><img src="../../../../../../.gitbook/assets/site-extra-document-types-de.png" alt="Aktuelle deutsche Dokumenttypenübersicht. Über das Zahnrad des gewünschten Dokumenttyps öffnen Sie dessen Einstellungen; es wurde kein Schalter geändert."><figcaption><p>Aktuelle deutsche Dokumenttypenübersicht. Über das Zahnrad des gewünschten Dokumenttyps öffnen Sie dessen Einstellungen; es wurde kein Schalter geändert.</p></figcaption></figure>
-2.  Öffnen Sie über das Zahnrad des gewünschten Dokumenttyps dessen Einstellungen.
+<figure><img src="../../../../../../.gitbook/assets/po-disable-statuses-invoice-card-de-20261113.png" alt="Deutsche Karte des Standard-Dokumenttyps Rechnung mit den Schaltern Aktivieren und Extraktion sowie dem Zahnrad für die weiteren Einstellungen"><figcaption><p>Die vorhandene Rechnung-Karte mit ihrem Zahnrad für die weiteren Einstellungen. Die Schalter Aktivieren und Extraktion sind unabhängig von der PO-Statusauswahl.</p></figcaption></figure>
 
+3. Öffnen Sie den Bereich **Bestellung** mit dem Untertitel **PO-Abgleich & Validierung** und suchen Sie **PO-Deaktivierungsstatus**.
 
-3.  Suchen Sie im Bereich **Bestellung** die Option **PO-Deaktivierungsstatus**.
+<figure><img src="../../../../../../.gitbook/assets/po-disable-statuses-field-de-20261113.png" alt="Deutsches Feld PO-Deaktivierungsstatus mit Aufklapppfeil und der Schaltfläche Anwenden"><figcaption><p>Das Feld PO-Deaktivierungsstatus mit seiner Schaltfläche Anwenden. Die hier leere Auswahl ist ein Beispiel aus der vorhandenen Testkonfiguration.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-po-settings-de.png" alt="Oberer Bereich der aktuellen deutschen Bestelleinstellungen mit Abgleichsoptionen, Einzelpreisberechnung und Toleranzen. Die Schalter zeigen den vorgefundenen Zustand; kein Abgleich oder Export wurde ausgeführt."><figcaption><p>Oberer Bereich der aktuellen deutschen Bestelleinstellungen mit Abgleichsoptionen, Einzelpreisberechnung und Toleranzen. Die Schalter zeigen den vorgefundenen Zustand; kein Abgleich oder Export wurde ausgeführt.</p></figcaption></figure>
+### **Woran Sie eine gesperrte Bestellposition erkennen**
 
-### **Wie man eine deaktivierte Bestellung identifiziert**
+Im [Bildschirm für den Bestellabgleich](https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/purchase-order-matching) wird eine Position, deren Status gesperrt ist, durchgestrichen dargestellt und lässt sich nicht in einen Abgleich ziehen. Prüfen Sie den Status der Position und die Liste der gesperrten Status des Dokumenttyps, wenn Sie wissen möchten, warum eine Position nicht verfügbar ist.
 
-Prüfen Sie im Bestellabgleich den Bestellstatus und Hinweise zur Verwendbarkeit. Eine durchgestrichene Darstellung kann je nach Ansicht einen ausgeschlossenen Eintrag kennzeichnen. Die Abbildungen dieser Anleitung zeigen nur die Einstellungen; sie belegen weder einen ausgeführten Abgleich noch eine Zahlungssperre.
+### **So richten Sie es ein**
 
-### **Wie man es einrichtet**
+1. Klicken Sie auf das Feld **PO-Deaktivierungsstatus**, um die verfügbaren Status zu öffnen.
+2. Aktivieren Sie die Kästchen der Status, die Ihr Prozess vom Abgleich ausschließt. Entfernen Sie das Häkchen, um einen Status wieder aus der Auswahl zu nehmen.
 
-1. In der **PO-Deaktivierungsstatus**-Einstellung öffnen Sie das Auswahlfeld neben der Beschriftung.
-2.  Ein Klick auf dieses Feld öffnet eine Dropdown-Liste mit verfügbaren PO-Status.
+<figure><img src="../../../../../../.gitbook/assets/po-disable-statuses-options-de-20261113.png" alt="Geöffnete deutsche Statusliste mit elf Kästchen von Abgesagt bis Geschlossen, darunter das leere Feld und die Schaltfläche Anwenden; der Seitenhintergrund rechts ist maskiert"><figcaption><p>Die aktuellen Statusoptionen im vorhandenen nicht ausgewählten Zustand. Der Seitenhintergrund rechts ist maskiert; die Liste und die Schaltfläche Anwenden sind unverändert.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-disabled-po-statuses-de.png" alt="Geöffnete deutsche Auswahl für PO-Deaktivierungsstatus. Der Status „Open“ ist noch englisch; es wurde keine Auswahl geändert und „Anwenden“ nicht betätigt. Die Einstellung betrifft den Bestellabgleich."><figcaption><p>Geöffnete deutsche Auswahl für PO-Deaktivierungsstatus. Der Status „Open“ ist noch englisch; es wurde keine Auswahl geändert und „Anwenden“ nicht betätigt. Die Einstellung betrifft den Bestellabgleich.</p></figcaption></figure>
-3. Wählen Sie die gewünschten Status; ein erneuter Klick hebt die Auswahl auf. Prüfen Sie die betroffenen Bestellungen vor dem Anwenden.
-4.  Mit **Anwenden** speichern Sie diese Konfiguration. Für die Abbildungen wurde diese Aktion nicht ausgeführt.
+3. Klicken Sie auf **Anwenden**, um die Auswahl für diesen Dokumenttyp zu speichern. Das bloße Öffnen der Liste speichert keine Änderung.
 
+**Verfügbare Status**
 
+* Abgesagt
+* Gelöscht
+* In Rechnung gestellt
+* Offen
+* Teilweise in Rechnung gestellt
+* Teilweise erhalten
+* Erhalten
+* Abgelehnt
+* Nicht genehmigt
+* on hold
+* Geschlossen
 
-**Statusbezeichnungen**
-
-Nutzen Sie die Status aus der aktuellen Auswahlliste Ihrer Umgebung. Die Abbildung zeigt beispielsweise **Abgesagt**, **Gelöscht**, **In Rechnung gestellt** und **Open**. Der noch englische Produkttext **Open** bedeutet hier **Offen**.
+Der Status **on hold** ist im Produkt noch nicht übersetzt und erscheint deshalb in der Liste englisch. Wählen Sie ihn anhand seiner Position zwischen **Nicht genehmigt** und **Geschlossen**, wenn Sie ihn sperren möchten.

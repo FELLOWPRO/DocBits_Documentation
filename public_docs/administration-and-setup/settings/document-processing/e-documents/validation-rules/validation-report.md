@@ -8,15 +8,15 @@ Esta página es para las personas que procesan facturas. Los administradores con
 
 ## Cuando un documento recibe un error
 
-Si la validación está **activada** y **bloquea** para el tipo de documento, una factura con un hallazgo bloqueante recibe el estado **Error**. Una factura que el propio validador ha rechazado lleva en su lugar el estado dedicado de validación de e-invoice, véase [La pantalla de error de una e-invoice rechazada](validation-error-screen.md). Abra el documento desde el panel. La vista de error muestra el XML a la izquierda y el motivo a la derecha.
+Si la validación está **on** y **blocking** para el tipo de documento, una factura con un hallazgo bloqueante recibe el estado **Error**. Una factura que el propio validador ha rechazado lleva en su lugar el estado dedicado de validación de e-invoice, véase [La pantalla de error de una e-invoice rechazada](validation-error-screen.md). Abra el documento desde el panel. La vista de error muestra el XML a la izquierda y el motivo a la derecha.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-es.png" alt="Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar."><figcaption><p>Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view-es.png" alt="The error view: the XML of the invoice and the first blocking finding with a next step. Example invoice with fictional names."><figcaption><p>Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar.</p></figcaption></figure>
 
 La tarjeta de la derecha indica la capa que rechazó la factura (por ejemplo, **L3 · Business Rules**), el código de la regla (por ejemplo, `BR-CO-26`), una breve explicación y un **Next step**. Seleccione **View validation details** para abrir el informe completo.
 
 ## Leer el informe
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-es.png" alt="Informe de la factura ficticia con los datos del archivo y el resultado."><figcaption><p>Informe de la factura ficticia con los datos del archivo y el resultado.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top-es.png" alt="The top of the report: file data, the verdict and the result for each level"><figcaption><p>Informe de la factura ficticia con los datos del archivo y el resultado.</p></figcaption></figure>
 
 El informe empieza con los datos del archivo:
 
@@ -51,7 +51,7 @@ La tabla **Result per level** muestra cuántos errores, advertencias y mensajes 
 
 ## Los hallazgos
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-es.png" alt="Cada hallazgo tiene un código, un nivel, un texto legible y una indicación de cómo corregirlo"><figcaption><p>Cada hallazgo tiene un código, un nivel, un texto legible y una indicación de cómo corregirlo</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings-es.png" alt="Each finding has a code, a level, a text you can read and a hint how to fix it"><figcaption><p>Cada hallazgo tiene un código, un nivel, un texto legible y una indicación de cómo corregirlo</p></figcaption></figure>
 
 Cada hallazgo es una fila en la sección **Pos**:
 

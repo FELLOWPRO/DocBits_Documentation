@@ -6,15 +6,17 @@ hidden: true
 
 ## Principi di Controllo delle Versioni
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_version_control.png" alt="Docbits Workflow Version Control"><figcaption>Sistema di Controllo delle Versioni del Workflow</figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-release-versions-card-it-20261114.png" alt="Costruttore di flussi di lavoro con una scheda Documento inserita nella sezione Quando....; l'etichetta della versione mostra v: 2 e il menu aperto elenca le versioni v: 1 e v: 2."><figcaption><p>Menu delle versioni di una scheda Documento inserita nel Costruttore di flussi di lavoro</p></figcaption></figure>
 
-### Version 8.5.2024 - Funzionalità di Versioning di Base
+Nel Costruttore di flussi di lavoro ogni scheda inserita mostra in alto a destra un'etichetta con il numero della versione attuale, nell'immagine v: 2. Un clic sull'etichetta apre l'elenco delle versioni disponibili della scheda, nell'immagine v: 1 e v: 2. Altre schede si aggiungono con il pulsante Aggiungi scheda della sezione desiderata. I nomi delle sezioni, della scheda e i valori mostrati nell'immagine sono dati di esempio inventati.
+
+### Versione 8.5.2024 - Funzionalità di base del versioning
 
 Il Motore di Workflow DocBits implementa un solido controllo delle versioni per tutte le card del workflow:
 
-1. **Version Control**: ogni card può avere più versioni, ognuna rappresentante un diverso insieme di condizioni o azioni. Questo ti consente di sperimentare o modificare le regole senza influire sul workflow attualmente attivo.
-2. **Seamless Upgrades**: quando devi aggiornare una regola o una condizione a causa di modifiche ai requisiti di elaborazione dei documenti, puoi creare una nuova versione della card. Questo approccio garantisce che eventuali modifiche siano intenzionali e testate prima di sostituire la versione corrente. Riduce al minimo gli errori e le potenziali interruzioni nell'elaborazione dei documenti.
-3. **Maintaining Consistency**: mantenere invariata la versione originale della card finché non decidi di aggiornarla garantisce che i processi in corso non vengano influenzati. Puoi eseguire test e convalide sulla nuova versione senza incidere su dati o workflow in produzione.
+1. **Controllo delle versioni**: ogni card può avere più versioni, ognuna rappresentante un diverso insieme di condizioni o azioni. Questo ti consente di sperimentare o modificare le regole senza influire sul workflow attualmente attivo.
+2. **Aggiornamenti senza interruzioni**: quando devi aggiornare una regola o una condizione a causa di modifiche ai requisiti di elaborazione dei documenti, puoi creare una nuova versione della card. Questo approccio garantisce che eventuali modifiche siano intenzionali e testate prima di sostituire la versione corrente. Riduce al minimo gli errori e le potenziali interruzioni nell'elaborazione dei documenti.
+3. **Coerenza nel tempo**: mantenere invariata la versione originale della card finché non decidi di aggiornarla garantisce che i processi in corso non vengano influenzati. Puoi eseguire test e convalide sulla nuova versione senza incidere su dati o workflow in produzione.
 4. **Flessibilità e test**: più versioni consentono di testare scenari diversi in un ambiente controllato. Puoi vedere gli effetti di nuove regole o modifiche sul tuo workflow di elaborazione dei documenti senza apportare modifiche permanenti. Una volta soddisfatto dei risultati, puoi scegliere di applicare la nuova versione.
 
 ---
@@ -650,10 +652,11 @@ v4: + "Compare as [param1] [param2]"
 
 ## Documentazione Correlata
 
-- 📖 [Riferimento al Versioning delle Card](cards-overview/card-versions-guide.md) - Informazioni dettagliate sulle versioni
+- 📖 [Confronti PO: direzione, tolleranza e versioni della carta](cards-overview/po-comparison-versions-guide.md) - Direzioni di confronto, tolleranze e versioni delle card
+- 📖 [Versioni e disponibilità delle carte](cards-overview/card-versions-guide.md) - Modifica delle carte salvate e riferimenti dipendenti dalla versione
 - 📚 [Guide ai Workflow](README.md) - Utilizzo delle card passo dopo passo
-- 🔄 [Database delle Versioni delle Card](cards-overview/card-versions-guide.md) - Cronologia completa delle versioni
-- 📋 [Log del Workflow](workflow-logs.md) - Esecuzione e debug
+- 🔄 [Panoramica del Versioning delle Card](#panoramica-del-versioning-delle-card) - Riepilogo in questa pagina
+- 📋 [Registri del Flusso di Lavoro](workflow-logs.md) - Esecuzione e debug
 
 ---
 

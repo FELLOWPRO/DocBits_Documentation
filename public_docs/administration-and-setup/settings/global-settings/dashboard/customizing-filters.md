@@ -1,21 +1,27 @@
 # Filter anpassen
 
-Mit Dashboardfiltern grenzen Sie die sichtbare Dokumentenliste ein. Suchkriterien für die Liste und die organisationsweite Konfiguration der Statusfilter sind getrennte Funktionen.
+Dashboardfilter grenzen die Dokumentenliste für Ihre aktuelle Suche ein. Die Einstellung **Statusfilter** ist davon getrennt: Sie entscheidet, welche Status der Statusfilter im Dashboard überhaupt anbietet.
 
 ## Dokumentenliste filtern
 
-Öffnen Sie die Suchleiste im Dashboard. Mit der Pfeiltaste nach unten öffnen Sie bei geschlossenem Menü die verfügbaren Vorschläge. Das Schnellfiltermenü bietet unter anderem **Überfällig**, **Bald fällig**, **Mir zugewiesen**, **Wartet auf Validierung**, **Voller PO-Abgleich** und **Teilweiser PO-Abgleich**. Scrollen Sie bei Bedarf im Menü, um weitere Einträge zu sehen.
+Öffnen Sie das Dashboard und verwenden Sie das Suchfeld oder die Filtersteuerung. Das Schnellfiltermenü bietet Kurzbefehle wie **Überfällig**, **Bald fällig**, **Mir zugewiesen**, **Wartet auf Validierung**, **Voller PO-Abgleich** und **Teilweiser PO-Abgleich**.
 
-<figure><img src="../../../../.gitbook/assets/site-complete-dashboard-smart-filters-de.png" alt="Unterer Bereich des deutschen Schnellfiltermenüs nach tatsächlichem Scrollen: voller, teilweiser und unter dem Bestellwert liegender PO-Abgleich sowie Standardfelder. Es wurde kein Filter ausgewählt und keine Suche ausgeführt."><figcaption><p>Unterer Bereich des deutschen Schnellfiltermenüs nach tatsächlichem Scrollen: voller, teilweiser und unter dem Bestellwert liegender PO-Abgleich sowie Standardfelder. Es wurde kein Filter ausgewählt und keine Suche ausgeführt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/customizing-filters-quick-filters-de-20261113.png" alt="Dashboard von DocBits in deutscher Sprache mit der Liste der Dokumente und dem geöffneten Schnellfiltermenü über dem Suchfeld. Sichtbar sind die Kurzbefehle Überfällig, Bald fällig, Mir zugewiesen, Heute eingegangen, Wartet auf Validierung, Elektronische Dokumente, Workflow-Limit erreicht, Voller PO-Abgleich und Teilweiser PO-Abgleich. Der erste Eintrag ist nur hervorgehoben, es wurde kein Filter angewendet; die Dokumente und Firmendaten sind erfundene Beispieldaten."><figcaption><p>Schnellfilter über dem Suchfeld: Der erste Eintrag ist nur hervorgehoben, es wurde kein Filter angewendet.</p></figcaption></figure>
 
-Wählen Sie ein passendes Kriterium und prüfen Sie die Ergebnisliste. Kombinieren Sie Kriterien mit den in Ihrer Version angebotenen Funktionen und kontrollieren Sie, ob das Ergebnis der beabsichtigten Suche entspricht. Ein Suchfilter ändert keine extrahierten Dokumentwerte, Freigaben oder Exportstatus.
-
-Zum Entfernen eines Kriteriums verwenden Sie dessen sichtbare X-Schaltfläche oder die angebotene Funktion zum Leeren der Filter. Prüfen Sie anschließend die Liste mit den verbleibenden Kriterien.
+Sie können mehrere Filter kombinieren. Um einen Filter zu entfernen, klicken Sie auf das **X** an seinem Chip. Das Filtern ändert nur, welche Dokumente Sie sehen; die extrahierten Werte, den Freigabe- oder den Exportstatus eines Dokuments ändert es nicht.
 
 ## Statusfilter konfigurieren
 
-Öffnen Sie **Einstellungen → Dashboard → Filter**. Wählen Sie den **Statusfilter-Stil**. Bei der derzeit englisch beschrifteten Option **Custom** legen Sie über **Benutzerdefinierter Statusfilter** die angebotenen Status fest. Mit **Anwenden** speichern Sie diese Konfiguration. Dies ist eine andere Aktion als das Filtern der Liste für eine einzelne Suche.
+Öffnen Sie **Einstellungen → Dashboard → Filter** und wählen Sie einen **Statusfilter-Stil**:
 
-<figure><img src="../../../../.gitbook/assets/site-complete-dashboard-status-filters-de.png" alt="Aktuelle deutsche Statusfilter-Einstellungen. Die Auswahl „Custom“ ist noch englisch und bedeutet „Benutzerdefiniert“. Es wurde keine Auswahl geändert und „Anwenden“ nicht betätigt."><figcaption><p>Aktuelle deutsche Statusfilter-Einstellungen. Die Auswahl „Custom“ ist noch englisch und bedeutet „Benutzerdefiniert“. Es wurde keine Auswahl geändert und „Anwenden“ nicht betätigt.</p></figcaption></figure>
+* **Alle** zeigt die vollständige Statusliste.
+* **Statisch** zeigt eine vorgegebene, kürzere Liste.
+* **Benutzerdefiniert** lässt Sie die Status auswählen, die Ihre Organisation benötigt.
 
-Die Abbildungen zeigen nur die vorgefundenen Steuerelemente. Es wurde keine Filterkonfiguration gespeichert und kein Dokument geändert.
+<figure><img src="../../../../.gitbook/assets/customizing-filters-status-options-de-20261113.png" alt="Ausschnitt der Dashboard-Einstellungen: Die Karte Filter ist geöffnet, unter Statusfilter-Stil ist das Auswahlfeld mit dem Wert Alle zu sehen, darunter das geöffnete Menü mit den drei Einträgen Alle, Statisch und Benutzerdefiniert. Es wurde keine Option ausgewählt."><figcaption><p>Die drei Statusfilter-Stile. Es wurde keine Option ausgewählt.</p></figcaption></figure>
+
+Eine Änderung des Stils wird sofort gespeichert. Bei **Benutzerdefiniert** wählen Sie die Status unter **Benutzerdefinierter Statusfilter** und klicken auf **Anwenden**. Wenn Sie eine leere Liste anwenden, wechselt der Stil zurück zu **Alle**.
+
+<figure><img src="../../../../.gitbook/assets/customizing-filters-status-filter-card-de-20261113.png" alt="Die Seite Einstellungen → Dashboard in deutscher Sprache. Alle Karten sind eingeklappt, nur die Karte Filter ist geöffnet und zeigt die Zeile Statusfilter-Stil mit dem Wert Alle. Unten links ist die Versionsnummer der Anwendung zu sehen. Die Firmendaten sind erfundene Beispieldaten."><figcaption><p>Die Statusfilter-Einstellung in den Dashboard-Einstellungen. Gezeigt ist der vorgefundene Zustand mit dem Stil Alle; es wurde nichts geändert.</p></figcaption></figure>
+
+Organisationsadministratoren legen die Vorgabe für die Organisation fest. Wo andere Benutzer Zugriff auf diese Steuerelemente haben, wird ihre Auswahl als persönliche Einstellung gespeichert; sie hat Vorrang vor der Vorgabe der Organisation.

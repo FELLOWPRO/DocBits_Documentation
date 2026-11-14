@@ -8,7 +8,7 @@ hidden: true
 
 <figure><img src="../../.gitbook/assets/workflow-release-versions-card-it-20261114.png" alt="Costruttore di flussi di lavoro con una scheda Documento inserita nella sezione Quando....; l'etichetta della versione mostra v: 2 e il menu aperto elenca le versioni v: 1 e v: 2."><figcaption><p>Menu delle versioni di una scheda Documento inserita nel Costruttore di flussi di lavoro</p></figcaption></figure>
 
-Nel Costruttore di flussi di lavoro ogni scheda inserita mostra in alto a destra un'etichetta con il numero della versione attuale, nell'immagine v: 2. Un clic sull'etichetta apre l'elenco delle versioni disponibili della scheda, nell'immagine v: 1 e v: 2. Altre schede si aggiungono con il pulsante Aggiungi scheda della sezione desiderata. I nomi delle sezioni, della scheda e i valori mostrati nell'immagine sono dati di esempio inventati.
+Nel Costruttore di flussi di lavoro ogni scheda inserita mostra in alto a destra un'etichetta con il numero della versione attuale, nell'immagine v: 2. Un clic sull'etichetta apre l'elenco delle versioni disponibili della scheda, nell'immagine v: 1 e v: 2. Altre schede si aggiungono con il pulsante Aggiungi scheda della sezione desiderata. Le etichette visibili (Quando...., E...., Poi..., Documento, Tipo di documento, Operatore) sono i nomi delle sezioni e dei campi dell'applicazione; inventata è solo la configurazione di esempio, cioè una scheda Documento con due versioni e nessun dato reale di un'organizzazione.
 
 ### Versione 8.5.2024 - Funzionalità di base del versioning
 
@@ -52,7 +52,7 @@ Il Motore di Workflow DocBits implementa un solido controllo delle versioni per 
 
 | Versione | Traduzione | Stato | Modifiche Principali |
 |---------|-------------|--------|-------------|
-| v1 | No | Active | Chiamata API di base senza chiavi di traduzione |
+| v1 | No | Attiva | Chiamata API di base senza chiavi di traduzione |
 | v2 | Sì | ✅ Corrente | Aggiunta `trnsl_%call_api` per il supporto multilingua |
 
 **Cosa è cambiato:** aggiunto il supporto all'internazionalizzazione (i18n) con chiavi di traduzione. La funzionalità rimane identica.
@@ -77,7 +77,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 
 | Versione | Traduzione | Stato | Modifiche Principali |
 |---------|-------------|--------|-------------|
-| v1 | No | Active | Richiesta HTTP semplice |
+| v1 | No | Attiva | Richiesta HTTP semplice |
 | v2 | Sì | ✅ Corrente | Aggiunte le chiavi di traduzione `trnsl_%send_https_request` |
 
 **Cosa è cambiato:** aggiunto il supporto alla traduzione. La funzionalità principale di webhook/richiesta è invariata.
@@ -90,9 +90,9 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 
 | Versione | Traduzione | Stato | Modifiche Principali |
 |---------|-------------|--------|-------------|
-| v2 | Sì | Active | Implementazione originale di DocOperator |
-| v3 | Sì | Active | Aggiunto il parametro "Execute the prompt" per un controllo aggiuntivo |
-| v4 | Sì | ❌ DEPRECATED & DISABLED | Rimosso il parametro "Execute" (ripristino) |
+| v2 | Sì | Attiva | Implementazione originale di DocOperator |
+| v3 | Sì | Attiva | Aggiunto il parametro "Execute the prompt" per un controllo aggiuntivo |
+| v4 | Sì | ❌ DEPRECATA E DISABILITATA | Rimosso il parametro "Execute" (ripristino) |
 
 **Percorso di Evoluzione:** v2 → v3 (parametro aggiunto) → v4 (ripristinato - non consigliato)
 
@@ -112,8 +112,8 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 
 | Versione | Modifiche | Stato | Parametro Type |
 |---------|---------|--------|-----------------|
-| v2 | Implementazione originale | Active | "Task" (fisso) |
-| v3 | + Supporto al decision tree | ❌ DEPRECATED | "Task" (fisso) |
+| v2 | Implementazione originale | Attiva | "Task" (fisso) |
+| v3 | + Supporto al decision tree | ❌ DEPRECATA | "Task" (fisso) |
 | v4 | - Decision tree, + Tipo generico | ✅ Corrente | Tipo generico (flessibile) |
 
 **Evoluzione:** v2 → v3 (esperimento con decision tree) → v4 (tipi generici, decision tree rimosso)
@@ -148,7 +148,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 
 | Versione | Tipo Task | Stato | Differenza Principale |
 |---------|-----------|--------|-----------------|
-| v2 | "task" (fisso) | Active | Versione originale |
+| v2 | "task" (fisso) | Attiva | Versione originale |
 | v3 | Tipo generico | ✅ Corrente | Cambiato in `[param]` flessibile |
 
 **Cosa è cambiato:** v2 → v3: "Create a new task" → "Create a new [param]" (supporta qualsiasi tipo di elemento di lavoro)
@@ -173,9 +173,9 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 
 | Versione | Modifiche | Stato | Tolleranza | Confronto |
 |---------|---------|--------|-----------|------------|
-| v2 | Confronto prezzo di base | Active | ❌ No | Base |
-| v3 | Come v2 | Active | ❌ No | Base |
-| v4 | + Parametro modalità di confronto | Active | ❌ No | ✅ Sì |
+| v2 | Confronto prezzo di base | Attiva | ❌ No | Base |
+| v3 | Come v2 | Attiva | ❌ No | Base |
+| v4 | + Parametro modalità di confronto | Attiva | ❌ No | ✅ Sì |
 | v5 | + Parametri di tolleranza | ✅ Corrente | ✅ Sì (importo + unità) | ✅ Sì |
 
 **Percorso di Evoluzione:** v2 → v3 (nessuna modifica) → v4 (modalità di confronto) → v5 (soglie di tolleranza)
@@ -217,9 +217,9 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versione | Modifiche | Stato | Funzione di Confronto |
 |---------|---------|--------|-----------------|
-| v1 | Nessuna traduzione, nessun metodo | ❌ DEPRECATED | Base |
-| v2 | + Chiavi di traduzione, + metodo | Active | Metodo di base |
-| v3 | Come v2 | Active | Metodo di base |
+| v1 | Nessuna traduzione, nessun metodo | ❌ DEPRECATA | Base |
+| v2 | + Chiavi di traduzione, + metodo | Attiva | Metodo di base |
+| v3 | Come v2 | Attiva | Metodo di base |
 | v4 | + Parametri modalità di confronto | ✅ Corrente | ✅ Flessibile |
 
 **Cosa è cambiato:**
@@ -236,7 +236,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versione | Giorni di Tolleranza | Giorni di Tolleranza Accettati | Stato |
 |---------|-----------------|------------------------|--------|
-| v2 | ❌ No | ❌ No | Active |
+| v2 | ❌ No | ❌ No | Attiva |
 | v3 | ✅ Sì | ✅ Sì | ✅ Corrente |
 
 **Cosa è cambiato:** v2 → v3: aggiunti i parametri di tolleranza:
@@ -253,8 +253,8 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versione | Modalità di Confronto | Stato |
 |---------|-----------------|--------|
-| v2 | Base | Active |
-| v3 | Base (nessuna modifica) | Active |
+| v2 | Base | Attiva |
+| v3 | Base (nessuna modifica) | Attiva |
 | v4 | ✅ Selezione modalità flessibile | ✅ Corrente |
 
 **Cosa è cambiato:** v3 → v4: aggiunto `compare [param]` per diversi approcci di confronto
@@ -267,8 +267,8 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versione | Modalità di Confronto | Stato |
 |---------|-----------------|--------|
-| v2 | Standard | Active |
-| v3 | Standard (nessuna modifica) | Active |
+| v2 | Standard | Attiva |
+| v3 | Standard (nessuna modifica) | Attiva |
 | v4 | ✅ Flessibile | ✅ Corrente |
 
 **Cosa è cambiato:** v3 → v4: aggiunto il parametro `compare [param]`
@@ -281,7 +281,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versione | Tipo di Consegna | Tabella Dati Anagrafici | Stato |
 |---------|---------------|-------------------|--------|
-| v2 | "Confirmed" (fisso) | Riferimento fisso | Active |
+| v2 | "Confirmed" (fisso) | Riferimento fisso | Attiva |
 | v3 | [Parametro configurabile] | [param] dinamico | ✅ Corrente |
 
 **Cosa è cambiato:** v2 → v3:
@@ -298,7 +298,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versione | Riferimento Tabella Fornitori | Stato |
 |---------|--------------------------|--------|
-| v2 | "supplier item price table" (fisso) | Active |
+| v2 | "supplier item price table" (fisso) | Attiva |
 | v3 | [param dinamico] | ✅ Corrente |
 
 **Cosa è cambiato:** v2 → v3: riferimento fisso alla tabella → `stored in [param]` (consente la selezione dinamica della tabella)
@@ -313,9 +313,9 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versione | Traduzione | Decision Tree | Stato |
 |---------|-------------|---------------|--------|
-| v1 | No | ❌ No | Active |
+| v1 | No | ❌ No | Attiva |
 | v2 | Sì | ❌ No | ✅ Corrente |
-| v3 | Sì | ✅ Sì | ❌ DEPRECATED |
+| v3 | Sì | ✅ Sì | ❌ DEPRECATA |
 
 **Evoluzione:** v1 (senza i18n) → v2 (con i18n) → v3 (+ esperimento decision tree, ora deprecata)
 
@@ -333,7 +333,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 | Versione | Decision Tree | Stato |
 |---------|---------------|--------|
 | v2 | ❌ No | ✅ Corrente |
-| v3 | ✅ Sì | ❌ DEPRECATED |
+| v3 | ✅ Sì | ❌ DEPRECATA |
 
 **Cosa è cambiato:** v2 → v3: aggiunto `Use decision tree, if available [param]` (poi deprecato)
 **Raccomandazione:** usa v2
@@ -357,9 +357,9 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versione | Traduzione | Decision Tree | Tipo Elemento di Lavoro | Stato |
 |---------|-------------|---------------|-----------------|--------|
-| v1 | No | No | "Task" (fisso) | ❌ DEPRECATED |
-| v2 | Sì | No | "Task" (fisso) | ❌ DEPRECATED |
-| v3 | Sì | Sì | "Task" (fisso) | ❌ DEPRECATED |
+| v1 | No | No | "Task" (fisso) | ❌ DEPRECATA |
+| v2 | Sì | No | "Task" (fisso) | ❌ DEPRECATA |
+| v3 | Sì | Sì | "Task" (fisso) | ❌ DEPRECATA |
 | v4 | Sì | No | [param generico] | ✅ Corrente |
 
 **Cronologia di Evoluzione:**
@@ -422,7 +422,7 @@ After:  "Create a new [param] with the title: [param] ... "
 
 | Versione | Tipo Elemento di Lavoro | Stato |
 |---------|-----------------|--------|
-| v1 | "Task" (fisso) | Active |
+| v1 | "Task" (fisso) | Attiva |
 | v3 | [param generico] | ✅ Corrente |
 
 **Cosa è cambiato:** v1 → v3: evoluzione del tipo generico (v2 è stata saltata in produzione)
@@ -435,7 +435,7 @@ After:  "Create a new [param] with the title: [param] ... "
 
 | Versione | Testo di Assegnazione | Stato |
 |---------|-----------------|--------|
-| v2 | "Assign task with title" | Active |
+| v2 | "Assign task with title" | Attiva |
 | v3 | "Assign [generic] with title" | ✅ Corrente |
 
 **Cosa è cambiato:** v2 → v3:
@@ -467,8 +467,8 @@ After:  "Create a new [param] with the title: [param] ... "
 
 | Versione | Trigger del Workflow | Stato |
 |---------|-----------------|--------|
-| v1 | ❌ No | Active |
-| v2 | ❌ No | Active |
+| v1 | ❌ No | Attiva |
+| v2 | ❌ No | Attiva |
 | v3 | ✅ Sì | ✅ Corrente |
 
 **Cosa è cambiato:** v2 → v3: aggiunto `trigger Workflows [param]` - Attiva automaticamente i workflow al cambio di stato
@@ -481,8 +481,8 @@ After:  "Create a new [param] with the title: [param] ... "
 
 | Versione | Convalida | Stato |
 |---------|------------|--------|
-| v1 | ❌ No | Active |
-| v2 | ❌ No | Active |
+| v1 | ❌ No | Attiva |
+| v2 | ❌ No | Attiva |
 | v3 | ✅ Sì | ✅ Corrente |
 
 **Cosa è cambiato:** v2 → v3: aggiunto `Start Export with Validation: [param]`
@@ -503,7 +503,7 @@ After:  "Create a new [param] with the title: [param] ... "
 
 | Versione | Utilizzo dei Dati | Stato |
 |---------|------------|--------|
-| v2 | "Use return data in later cards" | Active |
+| v2 | "Use return data in later cards" | Attiva |
 | v3 | "[Explicit param] returned data for use in subsequent cards" | ✅ Corrente |
 
 **Cosa è cambiato:** v2 → v3: controllo più esplicito sull'estrazione dei dati del decision tree

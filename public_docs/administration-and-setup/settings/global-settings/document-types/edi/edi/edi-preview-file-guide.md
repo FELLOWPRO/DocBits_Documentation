@@ -4,7 +4,7 @@ Die **PREVIEW**-Datei bestimmt, wie ein strukturiertes EDI-Dokument für Mensche
 
 ## Vorschau-Datei finden
 
-1. Gehen Sie zu **Einstellungen → Dokumenttypen** und öffnen Sie **E-Dok** für den betreffenden Dokumenttyp.
+1. Gehen Sie zu **Einstellungen → Dokumenttypen** und öffnen Sie **E-Doc** für den betreffenden Dokumenttyp.
 2. Klappen Sie den Bereich des elektronischen Formats auf, zum Beispiel **EDI**.
 3. Wählen Sie die Zeile **PREVIEW** mit dem Typ **XSLT**. Klicken Sie noch nicht auf **Vorschau**; diese Schaltfläche öffnet erst dann einen Testbereich, wenn die Konfiguration eingetragen ist.
 
@@ -12,7 +12,7 @@ Die **PREVIEW**-Datei bestimmt, wie ein strukturiertes EDI-Dokument für Mensche
 
 ## Editor und Versionen verstehen
 
-Die Detailseite zeigt links den Dokumenttyp, den elektronischen Dokumenttyp und die vorhandenen Versionen. **Aktiv** kennzeichnet die derzeit verwendete Version. Der Editor rechts enthält ein XSLT-Stylesheet. Sein HTML und CSS steuern Layout und Aussehen; XSLT fügt Werte aus dem strukturierten Dokument ein. **Format** ordnet den Quelltext zum Lesen und aktiviert keine Version.
+Die Detailseite zeigt links die Felder **Dokumenttyp**, **Elektronischer Dokumenttyp** und die vorhandenen **Versionen**. **Aktiv** kennzeichnet die derzeit verwendete Version. Der Editor rechts enthält ein XSLT-Stylesheet. Sein HTML und CSS steuern Layout und Aussehen; XSLT fügt Werte aus dem strukturierten Dokument ein. **Format** ordnet den Quelltext zum Lesen und aktiviert keine Version.
 
 <figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-detail-de-20261114.png" alt="Detailseite der DocBits-Sandbox mit Dokumenttyp PURCHASE_ORDER, elektronischem Dokumenttyp EDI, links der Versionsliste mit dem Vermerk Aktiv an Version 1 und rechts dem Editor PREVIEW (XSLT) mit den Schaltflächen Vorschau und Format"><figcaption>Detailansicht einer Vorschau-Konfiguration: links Dokumenttyp, elektronischer Dokumenttyp und Versionen, rechts das XSLT-Stylesheet.</figcaption></figure>
 

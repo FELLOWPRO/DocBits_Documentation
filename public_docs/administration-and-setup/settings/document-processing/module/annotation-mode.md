@@ -1,64 +1,43 @@
 # Annotatiemodus
 
-## Overzicht
+Met de Annotatiemodus kun je tijdens de validatie notities rechtstreeks op een document plaatsen. Je kunt een notitie bewerken, verplaatsen of verwijderen voordat je een geannoteerde PDF downloadt. Je beheerder moet de functie eerst voor de organisatie inschakelen. Bevat een document annotaties, dan worden deze opgenomen bij het **exporteren naar IDM**.
 
-De instelling **Annotatiemodus** stelt gebruikers in staat om annotaties rechtstreeks op de PDF te maken en te beheren. Als een document annotaties bevat, worden deze opgenomen bij het exporteren naar IDM.
+## Annotatiemodus inschakelen
 
-## Locatie
+Een beheerder opent **Instellingen → Module → Documentintegratie → Documenttype** en schakelt **Annotatiemodus** in. Zie je tijdens de validatie geen annotatieknop, vraag een beheerder dan deze instelling en je toegang te controleren.
 
-Je kunt deze instelling vinden onder: **Instellingen → Documentverwerking → Module → Documenttype → Annotatiemodus**
+<figure><img src="../../../../.gitbook/assets/annotation-mode-settings-nl-20261114.png" alt="Documenttype-sectie in Instellingen → Module → Documentintegratie met de schakelaars Workflow Builder en Annotatiemodus"><figcaption><p>Het gedeelte Documenttype onder Instellingen → Module → Documentintegratie. In dit voorbeeld staat Annotatiemodus aan.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FHNnNsYz9tcEbr4GXr11s%252FiScreen%2520Shoter%2520-%2520Google%2520Chrome%2520-%2520250224104758.jpg%3Falt%3Dmedia%26token%3Dedd16bcd-d4f9-425c-a648-8b406f81e9a4\&width=768\&dpr=4\&quality=100\&sign=f1772756\&sv=2)
+{% embed url="https://youtu.be/ay0gGtwlqRE" %}
+DocBits Annotatiemodus-tutorial: notities toevoegen tijdens de validatie en downloaden met of zonder annotaties
+{% endembed %}
 
-## Hoe de Annotatiemodus te Gebruiken
+## Een notitie toevoegen tijdens de validatie
 
-### 1. Annotatiemodus Inschakelen
+1. Open het document op het [Validatiescherm](../../../../end-user-and-partner-section/end-user-section/validation-screen/README.md).
+2. Selecteer de **spraakballon** in de werkbalk rechts. De tooltip ervan luidt **Annotatiemodus activeren**. Selecteer de knop opnieuw om de Annotatiemodus te verlaten.
+3. Sleep over het deel van de PDF waar de notitie moet komen. Naast het geselecteerde gebied verschijnt een kleine werkbalk.
+4. Selecteer de **pen** om **Aantekening maken/bewerken** te openen. Voer de notitie in bij **Annotatie-Tekst**. Je kunt het lettertype en de grootte kiezen, **Vet** of *Cursief* gebruiken en de **Tekstkleur** instellen. Met **Annuleren** sluit je het venster zonder de tekst toe te passen; met **Opslaan** wordt de tekst op de geselecteerde annotatie toegepast.
+5. Gebruik de **diskette**-knop in de annotatiewerkbalk om je wijziging op te slaan. Gebruik de **prullenbak**-knop om de annotatie te verwijderen als je die niet meer nodig hebt.
 
-* Navigeer naar het **Validatiescherm**.
-* Klik op het **spraakballon**-icoon aan de rechterkant om de Annotatiemodus in te schakelen.
+<figure><img src="../../../../.gitbook/assets/annotation-mode-toolbar-nl-20261114.png" alt="Spraakballon-knop in de validatiewerkbalk met de tooltip Annotatiemodus activeren"><figcaption><p>Open de Annotatiemodus vanuit de validatiewerkbalk.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAIQdTYrAOgceAtUu0PNf%252FiScreen%2520Shoter%2520-%2520Google%2520Chrome%2520-%2520250224105047.jpg%3Falt%3Dmedia%26token%3D3e79f03b-205e-4e89-96e6-76fd24678b7f\&width=768\&dpr=4\&quality=100\&sign=9dc03134\&sv=2)
+<figure><img src="../../../../.gitbook/assets/annotation-mode-edit-toolbar-nl-20261114.png" alt="Annotatiewerkbalk met pen om te bewerken, diskette om op te slaan en prullenbak om te verwijderen"><figcaption><p>De werkbalk verschijnt nadat je een gebied op de PDF hebt geselecteerd.</p></figcaption></figure>
 
-### 2. Een Annotatie Maken
+<figure><img src="../../../../.gitbook/assets/annotation-mode-dialog-nl-20261114.png" alt="Venster Aantekening maken/bewerken met lettertype, grootte, vet, cursief, tekstkleur, tekstvak, Annuleren en Opslaan"><figcaption><p>Schrijf en formatteer de notitie in het annotatievenster.</p></figcaption></figure>
 
-* Selecteer een gebied op de PDF waar je een annotatie wilt plaatsen.
-* Klik op het **pen**-icoon om tekst te schrijven.
-* Klik op het **document**-icoon om de annotatie op te slaan.
-* Klik op het **prullenbak**-icoon om de annotatie te verwijderen.
+<figure><img src="../../../../.gitbook/assets/annotation-mode-dialog-filled-nl-20261114.png" alt="Annotatievenster met de verzonnen voorbeeldtekst Controleer dit bedrag. in het veld Annotatie-Tekst"><figcaption><p>Controleer de notitie voordat je Opslaan selecteert. De getoonde tekst is een verzonnen voorbeeld.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FTdV1fsLkhBYNhAhIMlik%252FiScreen%2520Shoter%2520-%2520Google%2520Chrome%2520-%2520250224105556.jpg%3Falt%3Dmedia%26token%3D751ffda3-3511-4b25-bb18-9c60f6c535eb\&width=768\&dpr=4\&quality=100\&sign=d7e00cfe\&sv=2)
+## Een bestaande notitie beheren
 
-*   Pas de tekst aan met:
+Selecteer een notitie in de Annotatiemodus om de werkbalk ervan te tonen. Gebruik de **pen** om de tekst of de opmaak te wijzigen, sleep de geselecteerde notitie om die te verplaatsen, of gebruik de **prullenbak** om die te verwijderen. Je kunt meerdere annotaties in hetzelfde document maken. Annotaties zijn alleen zichtbaar zolang de Annotatiemodus is ingeschakeld en verschijnen op de PDF nadat ze zijn opgeslagen. De spraakballon-knop laat niet zien of een document al notities bevat; schakel de Annotatiemodus in om ze te zien.
 
-    * **Grootte** aanpassing
-    * **Vet**
-    * _**Cursief**_
-    * **Kleur**
-    * **Lettertype selectie**
+<figure><img src="../../../../.gitbook/assets/annotation-mode-saved-nl-20261114.png" alt="Opgeslagen voorbeeldnotitie op een synthetische factuur met knoppen om te bewerken, op te slaan en te verwijderen"><figcaption><p>Een opgeslagen notitie blijft zichtbaar op het document in de Annotatiemodus.</p></figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FMkAobvoRelI0VejPIgbW%252FiScreen%2520Shoter%2520-%2520Google%2520Chrome%2520-%2520250224105351.jpg%3Falt%3Dmedia%26token%3Df33f2f0a-4d1b-4bc4-a010-41e3bf1ac7df\&width=768\&dpr=4\&quality=100\&sign=2192f5a3\&sv=2)
+Annotaties zijn ook beschikbaar tijdens de [goedkeuring van documenten](../../global-settings/document-types/more-settings/approval/README.md); daar kun je ze bekijken, toevoegen en wijzigen. Zie voor uitvoer via Infor IDM [Exporteren naar IDM](../../../../infor-integration-and-configuration/exporting-to-infor/exporting-to-idm.md).
 
-### 3. Annotaties Beheren
+## De originele of geannoteerde PDF downloaden
 
-* **Verplaats een annotatie** door de linkermuisknop ingedrukt te houden en te slepen.
-* **Maak meerdere annotaties** binnen hetzelfde document.
-* **Annotaties zijn alleen zichtbaar** wanneer de Annotatiemodus is ingeschakeld.
-* Annotaties **worden opgenomen** bij het exporteren van het document naar **IDM.**
-* Als een document annotaties bevat, zal het **spraakballon-icoon** een klein **uitroepteken** tonen om hun aanwezigheid aan te geven.
+Open op het **Dashboard** het actiemenu met de drie stippen van het document. Kies **Download** voor de originele PDF of **Download geannoteerde PDF** voor de versie met opgeslagen notities. De geannoteerde optie verschijnt nadat een annotatie is opgeslagen. Het menu biedt ook **Valideren** (het validatiescherm openen), **Toewijzen aan** (een persoon kiezen), **Documentstroom** (de [documentstroom](../../../../end-user-and-partner-section/end-user-section/dashboard/document-flow.md) bekijken), **Opnieuw starten** (het document opnieuw verwerken), **Documentlogboeken** (activiteit bekijken) en **Verwijderen** (het document verwijderen). Gebruik die acties alleen als je het document wilt wijzigen of controleren.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FgpoMvEHMfN4rQHzQ7vR2%252FiScreen%2520Shoter%2520-%2520Google%2520Chrome%2520-%2520250224105935.jpg%3Falt%3Dmedia%26token%3D981d4c25-80e8-4e11-ab06-cf2663bf815f\&width=768\&dpr=4\&quality=100\&sign=5f51c005\&sv=2)
-
-<mark style="color:red;">**Opmerking**</mark>**:** Annotaties kunnen ook rechtstreeks binnen het **Goedkeuringsscherm** worden bekeken, toegevoegd en gewijzigd, zodat gebruikers de nodige aanpassingen kunnen maken tijdens het goedkeuringsproces.
-
-### 4. PDF's Downloaden met of zonder Annotaties
-
-* Als een document annotaties heeft, kun je ervoor kiezen om de PDF met of zonder de annotaties te downloaden.
-* Om dit te doen, ga naar het **Dashboard**.
-* Klik op de **drie stippen** in de **Actie**-kolom.
-* Selecteer een van de twee beschikbare downloadopties:
-  * **Downloaden met Annotaties**
-  * **Downloaden zonder Annotaties**
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FL5WHYoX2o80Pzn4eTGcj%252FiScreen%2520Shoter%2520-%2520Google%2520Chrome%2520-%2520250224115302.jpg%3Falt%3Dmedia%26token%3D3cbdf1d3-f8e1-41ae-adb3-12a0c85767ad\&width=768\&dpr=4\&quality=100\&sign=9dcd165f\&sv=2)
-
-Door de Annotatiemodus in te schakelen en te gebruiken, kunnen gebruikers efficiënt annotaties toevoegen, bewerken en beheren rechtstreeks op PDF's, wat de samenwerking en beoordeling van documenten verbetert.
+<figure><img src="../../../../.gitbook/assets/annotation-mode-download-menu-nl-20261114.png" alt="Actiemenu op het Dashboard met Valideren, Toewijzen aan, Documentstroom, Download, Download geannoteerde PDF, Opnieuw starten, Opnieuw beginnen met pagina's, Documentlogboeken en Verwijderen"><figcaption><p>Kies de PDF-versie die je nodig hebt in het actiemenu van het document.</p></figcaption></figure>

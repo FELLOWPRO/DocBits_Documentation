@@ -1,53 +1,80 @@
 # Edytor układu
 
-Edytor układu służy do rozmieszczania pól i elementów sterujących widocznych podczas walidacji lub zatwierdzania dokumentu. Każdy układ jest przypisany do typu dokumentu, pochodzenia i typu układu. Przed zapisaniem zmian sprawdź, który układ jest otwarty.
+Edytor układu służy do rozmieszczania pól i elementów sterujących, które użytkownik widzi podczas walidacji lub zatwierdzania dokumentu. Układ jest przypisany do jednego typu dokumentu, jednego pochodzenia i jednego typu układu, więc przed zapisaniem sprawdź te trzy wartości w nagłówku strony.
+
+{% embed url="https://youtu.be/-m45XGiIeig" %}
+DocBits Layout Builder Tutorial: Create Custom Document Layouts for Faster, Cleaner Validation
+{% endembed %}
 
 ## Otwieranie układu
 
-1. Otwórz **Ustawienia → Typy dokumentów**.
-2. Otwórz edytor układu dla wybranego typu lub podtypu dokumentu. Jeśli edytor jest niedostępny, administrator może musieć włączyć ten moduł dla Twojej organizacji.
-3. Sprawdź pochodzenie wybrane na pasku narzędzi i typ edytora wskazany obok.
+1. Otwórz **Settings → Document Types**.
+2. Wybierz typ dokumentu, który chcesz edytować, i otwórz **Layout Builder**. W przypadku podtypu dokumentu otwórz akcję Layout Builder tego podtypu.
+3. Sprawdź nagłówek. Lewy selektor to **origin** (na przykład **Default**), po nim następują **Document Type** (na przykład **Invoice**) i **Layout type** (na przykład **Field Validation**). Każdy selektor otwiera listę; wybranie innej pozycji wczytuje dany układ. Jeśli Layout Builder jest niedostępny, administrator może musieć włączyć ten moduł dla Twojej organizacji.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-current-pl.png" alt="Fragment edytora: sekcje Grupy, Pola i Elementy formularza po lewej oraz uproszczony przykładowy układ faktury pośrodku."><figcaption><p>Fragment edytora: sekcje Grupy, Pola i Elementy formularza po lewej oraz uproszczony przykładowy układ faktury pośrodku.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/layout-builder-overview.png" alt="Edytor układu dla faktury w DocBits: selektory pochodzenia, typu dokumentu i typu układu, karty Structure, Fields i Elements, obszar układu oraz panel Properties po prawej"><figcaption><p>Edytor układu: selektory w nagłówku, listy elementów po lewej, obszar układu pośrodku i panel Properties po prawej.</p></figcaption></figure>
 
-Zmiana wartości **Pochodzenie** może spowodować utworzenie osobnego układu dla tego pochodzenia. Przed edycją sprawdź wybrane pochodzenie.
+## Praca z nagłówkiem
+
+* **Document Type** i **Layout type** przełączają między układami. Strona wczytuje układ, który wybierzesz.
+* Obok **Save** DocBits pokazuje, czy układ ma **unsaved changes**. Po zapisaniu pokazuje, kiedy układ został ostatnio zapisany.
+* **Save** zapisuje układ dla wybranego typu dokumentu, pochodzenia i typu układu.
+* Menu **More** (trzy kropki) zawiera **Auto Generate template**, **Apply Default layout to Origins**, **Use default template**, **Edit JSON**, **Copy JSON** i **Layout settings**. **Auto Generate template** i **Use default template** zastępują układ niestandardowy, więc najpierw sprawdź wybrany typ dokumentu i układ. **Edit JSON** służy do zaawansowanej konfiguracji i powinien być używany tylko wtedy, gdy rozumiesz format szablonu.
+* Jeśli opuścisz stronę z niezapisanymi zmianami, DocBits zapyta, czy je zapisać, czy odrzucić.
 
 ## Obszary edytora
 
-Po lewej możesz przełączać się między kartami **Elementy**, **Właściwości** i ustawieniami ogólnymi oznaczonymi ikoną koła zębatego.
+Po lewej stronie są trzy karty:
 
-* Karta **Elementy** zawiera sekcje **Grupy**, **Pola** i **Elementy formularza**. Rozwiń odpowiednią sekcję, aby zobaczyć dostępne grupy, pola i elementy formularza.
-* Obszar pośrodku pokazuje grupy i pola układu. Grupy służą do porządkowania powiązanych pól.
-* Po prawej znajduje się podgląd przykładowego dokumentu z możliwością zmiany powiększenia.
+| Karta | Zastosowanie |
+| --- | --- |
+| **Structure** | Widok układu w formie drzewa. Grupy i ich pola są wymienione w kolejności występowania w obszarze układu, z liczbą pól umieszczonych i dostępnych. |
+| **Fields** | Wszystkie pola skonfigurowane dla typu dokumentu, pogrupowane według grupy pól i domyślnie zwinięte. Filtr przełącza między polami **All**, **Unused** i **Hidden**, a pod etykietą pola widoczna jest techniczna nazwa pola. |
+| **Elements** | Elementy prezentacji i interakcji, takie jak Text, Label, Check Box, separatory, tabele, przyciski i podgrupy. |
 
-Aby dodać grupę, pole lub element formularza, przeciągnij go z odpowiedniej sekcji po lewej do obszaru układu.
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/layout-builder-structure.png" alt="Karta Structure edytora układu z rozwiniętymi grupami Invoice details, Payment details, Purchase Order i Delivery Details wraz z ich polami"><figcaption><p>Karta Structure pokazuje zbudowany układ jako drzewo grup i pól.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/layout-builder-fields-current-pl.png" alt="Pola Numer faktury i Data w przykładowej grupie. W tym układzie każde pole zajmuje 50% szerokości grupy."><figcaption><p>Pola Numer faktury i Data w przykładowej grupie. W tym układzie każde pole zajmuje 50% szerokości grupy.</p></figcaption></figure>
+Wybierz element, aby go dodać, albo przeciągnij go do obszaru układu. Tytuł grupy mówi osobie walidującej dokument, co należy do danej sekcji. Pola dokumentu wielokrotnego użytku utwórz lub zmień ich nazwy najpierw w sekcji [Typy dokumentów](README.md).
 
-Pola dokumentu wielokrotnego użytku skonfiguruj w sekcji [Typy dokumentów](README.md). Dostępne pola zależą od wybranego typu dokumentu i jego konfiguracji.
+## Praca w obszarze układu
+
+* **Main layout** pokazuje układ samego dokumentu. **Table** pokazuje układ tabeli używany dla pozycji.
+* **Document** otwiera lub zamyka przykładowy dokument obok obszaru układu, dzięki czemu możesz porównać układ z rzeczywistym dokumentem.
+* Grupy są rysowane jako karty; pola wewnątrz grupy można rozmieścić w wierszach i nadać im różne szerokości.
 
 ## Zmiana właściwości elementu
 
-Wybierz grupę lub pole w obszarze układu i otwórz **Właściwości** po lewej. Dostępne opcje zależą od wybranego elementu i obejmują między innymi etykietę, nazwę techniczną, szerokość oraz zachowanie.
+Wybierz element lub grupę w obszarze układu. **Properties** po prawej jest zawsze widoczne i podzielone na sekcje:
 
-<figure><img src="../../../.gitbook/assets/layout-builder-properties-current-pl.png" alt="Właściwości wybranego pola: Etykieta, Nazwa pola i Szerokość elementu w procentach."><figcaption><p>Właściwości wybranego pola: Etykieta, Nazwa pola i Szerokość elementu w procentach.</p></figcaption></figure>
+* **Display** – etykieta, nazwa pola, położenie etykiety i szerokość elementu.
+* **Behaviour** – tylko do odczytu, ukrycie i indeks Tab.
+* **Values & lists** – wartości oferowane dla elementu.
+* **Automation** – reguły, które wypełniają lub zmieniają element.
+* **Borders & spacing** – wygląd elementu.
 
-W pokazanym przykładzie **Etykieta** zawiera „Numer faktury”, **Nazwa pola** to techniczna nazwa `doku_pl_invoice_number`, a **Szerokość elementu w procentach** wynosi 50.
+Dla szerokości wybierz jedną z gotowych wartości (25, 33, 50, 66, 75 lub 100 procent) zamiast wpisywać wartość; sprawdź wynik w obszarze układu. To, które sekcje i opcje są widoczne, zależy od wybranego elementu. Więcej informacji znajdziesz w artykule [Konfigurowanie właściwości pól](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
 
-W przypadku pól predefiniowanych etykieta i nazwa techniczna mogą być nieedytowalne. Zależnie od typu elementu można też ustawić tryb tylko do odczytu, widoczność, kolejność przechodzenia klawiszem Tab, listy wartości oraz uruchamianie przepływu pracy lub skryptu po zmianie wartości. Grupy i pola mają różne opcje.
+## Tłumaczenie etykiet przycisków
 
-Po zmianie właściwości sprawdź rezultat w obszarze układu. Szerokość jest wprowadzana jako wartość procentowa za pomocą kontrolki liczbowej; grupy i ich pola mogą mieć różne szerokości. Więcej informacji znajdziesz w artykule [Konfigurowanie właściwości pól](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
+Przyciski, takie jak **Save Rules**, **Auto Accounting**, **PO Match**, **Export**, **Export Without Validation** i **Reject**, pobierają etykietę z klucza tłumaczenia. Podgląd pokazuje etykietę w języku osoby, która otwiera układ. Jeśli klucz nie ma tekstu w tym języku, DocBits pokazuje etykietę zapisaną w układzie.
 
-## Szablony i JSON
+* Pojedynczy przycisk ma pole **Translation Key** w **Properties**.
+* **Invoice Buttons** grupuje kilka przycisków. Ustaw klucz dla pojedynczego przycisku podrzędnego albo ustaw jeden klucz dla każdego przycisku podrzędnego na liście w panelu grupy.
 
-Oprócz zapisywania układu pasek narzędzi udostępnia funkcje generowania szablonu, stosowania domyślnego układu do układów według pochodzenia, używania domyślnego szablonu oraz edycji JSON. Dostępność zależy od otwartego edytora.
+Układy zbudowane przed tą zmianą zachowują swoje etykiety: DocBits uzupełnia w nich domyślny klucz każdego typu przycisku. Układy zapisane z kluczem zachowują ten klucz, także po ponownym wczytaniu.
 
-Wygenerowanie lub zastosowanie szablonu może zastąpić układ niestandardowy. Najpierw sprawdź typ dokumentu, pochodzenie i bieżący układ. **Edytuj JSON** służy do zaawansowanej konfiguracji i wymaga znajomości formatu szablonu. Konfigurację można skopiować w oknie JSON.
+## Save and go back to Dashboard
+
+Przycisk typu **Save and go back to Dashboard** zapisuje wartości dokumentu tak jak **Save**, a następnie otwiera Dashboard. Ten typ sprawdza się w układach, w których osoba sprawdzająca pracuje kolejno z kolejką dokumentów.
+
+* Dodaj element przycisku w obszarze układu i wybierz typ w jego **Properties**.
+* Jeśli zapis się nie powiedzie, przycisk pozostaje na ekranie walidacji i nie otwiera Dashboard, więc problem można najpierw poprawić.
+* Etykieta jest ustalana jak etykieta każdego innego przycisku; zobacz *Tłumaczenie etykiet przycisków* powyżej.
 
 ## Sprawdzanie i zapisywanie
 
-Rozmieść grupy i pola oraz sprawdź wynik w obszarze układu. Gdy jest prawidłowy, użyj przycisku **Zapisz** na pasku narzędzi. Informacje o układach specyficznych dla pochodzenia znajdziesz w artykule [Układy według pochodzenia](origin-layouts.md).
+Rozmieść grupy i pola, sprawdź układ w obszarze układu i użyj **Save** w nagłówku, gdy wynik jest prawidłowy. Informacje o układach specyficznych dla pochodzenia znajdziesz w artykule [Układy według pochodzenia](origin-layouts.md).
 
 {% hint style="info" %}
-Ilustracje przedstawiają uproszczony przykładowy układ faktury. Nazwy pól i dostępne opcje zależą od konfiguracji.
+Zrzuty ekranu przedstawiają syntetyczne ustawienia w organizacji testowej DocBits z wybranym językiem angielskim w aplikacji. Podczas ich wykonywania żaden układ nie został zapisany ani zastąpiony.
 {% endhint %}

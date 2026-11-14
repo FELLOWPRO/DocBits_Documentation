@@ -1,69 +1,53 @@
+---
+description: Use Postman con el entorno de API de DocBits correspondiente y empiece con una solicitud de solo lectura.
+---
+
 # Postman para DocBits
 
-Con Postman puede enviar solicitudes HTTP a la API de DocBits. Empiece con una solicitud de solo lectura en un entorno que esté autorizado a usar. Separe los entornos de prueba y producción y guarde las credenciales en variables privadas o en un almacén de secretos.
+Con Postman puede enviar solicitudes HTTP a la API de DocBits. Empiece con una solicitud de solo lectura en un entorno para el que tenga autorización. Guarde las credenciales en variables privadas o en una bóveda de secretos y use entornos de Postman distintos para las pruebas y para producción.
 
-## Configuración
+## 1. Elegir el entorno de API y la URL base
 
-### API de DocBits
+Abra la documentación interactiva de la API del entorno de su organización, por ejemplo la [documentación de la API de Sandbox](https://sandbox.api.docbits.com/docs) o la [documentación de la API de producción](https://api.docbits.com/docs). Utilice las rutas de operación actuales y el valor **Servers** que se muestra allí. Esa documentación es una vista propia del entorno de DocBits y no una captura de la aplicación Postman.
 
-Abra la documentación de la API del entorno correspondiente, por ejemplo, la [API de Sandbox](https://sandbox.api.docbits.com/docs) o la [API de producción](https://api.docbits.com/docs). Utilice las rutas actuales de las operaciones y el valor **Servers** que aparece allí. Una ruta de servidor relativa se añade al origen de la API.
+Una ruta de servidor relativa se añade después del origen de la API. En la [documentación de Dev que aquí se usa como ejemplo](https://eu.dev.api.docbits.com/docs), el servidor es `/dev-api`, por lo que la URL base correspondiente es `https://eu.dev.api.docbits.com/dev-api`. Otros entornos pueden usar un valor de servidor distinto.
 
-En la [documentación de Dev comprobada aquí](https://eu.dev.api.docbits.com/docs), la ruta es `/dev-api`. Por tanto, la URL base completa es `https://eu.dev.api.docbits.com/dev-api`. Otros entornos pueden usar otra ruta de servidor.
+Cree una variable de entorno de Postman llamada `base_url` y asígnele la URL base completa del entorno elegido, incluida su ruta de servidor. Seleccione ese entorno antes de enviar una solicitud. La [guía de entornos de Postman](https://learning.postman.com/docs/use/send-requests/variables/managing-environments/) explica cómo se seleccionan y se usan las variables de entorno.
 
-La especificación de la API enumera varios esquemas de cabecera distintos:
+## 2. Enviar una primera solicitud de solo lectura
 
-| Cabecera | Finalidad |
-| --- | --- |
-| `X-ORG-ID` | Identifica la organización de destino cuando la operación lo requiere. |
-| `Authorization` | Contiene el valor de autorización exigido por el mecanismo de autenticación correspondiente. |
-| `X-API-KEY` | Contiene una clave de API para las operaciones que usan ese esquema. |
+Cree una solicitud con el método **GET** y la URL `{{base_url}}/version`. En la pestaña **Authorization** de la solicitud, seleccione **No Auth** y elija **Send**.
 
-Estas cabeceras no son intercambiables. El diálogo global **Authorize** muestra los esquemas disponibles; no todas las operaciones necesitan todos ellos. Consulte los parámetros y la autorización de la operación concreta.
-
-Solicite las credenciales adecuadas a su administrador. Los usuarios autorizados encuentran la gestión de claves en **Ajustes → Integración y SSO → Claves API**. La lista muestra el prefijo de clave, el nombre, la caducidad, el último uso y el estado. Las filas existentes están cubiertas en la captura.
-
-<figure><img src="../../.gitbook/assets/dbdc-44-key-management-es-20261031.png" alt="Vista real de Dev en español de Claves API con Crear clave API y las columnas Llave, Nombre, Caduca, Último Uso, Estado y Acciones; las filas existentes están cubiertas."><figcaption><p>Vista real de Dev en español de Claves API con Crear clave API y las columnas Llave, Nombre, Caduca, Último Uso, Estado y Acciones; las filas existentes están cubiertas.</p></figcaption></figure>
-
-**Crear clave API**, situado sobre la lista, abre primero un formulario vacío con **Nombre de la clave**, **Descripción** y **Vencimiento**. Solo al enviarlo se crea una clave. El formulario de la captura se cerró con **Cancelar**, sin enviarlo. No se creó, mostró, copió ni revocó ninguna clave. Cree claves únicamente según sus permisos y las normas de su organización.
-
-<figure><img src="../../.gitbook/assets/dbdc-44-blank-key-form-es-20261031.png" alt="Formulario vacío Crear clave API en español con Nombre de la clave, Descripción, Vencimiento, Cancelar y Crear; Crear está desactivado mientras el nombre esté vacío."><figcaption><p>Formulario vacío Crear clave API en español con Nombre de la clave, Descripción, Vencimiento, Cancelar y Crear; Crear está desactivado mientras el nombre esté vacío.</p></figcaption></figure>
-
-### Crear un espacio de trabajo en Postman
-
-Abra Postman y use un espacio de trabajo con la visibilidad adecuada para su organización. Cree un entorno con la variable `base_url` y asígnele la URL base completa, incluida la ruta del servidor. Seleccione ese entorno antes de enviar una solicitud. La [guía de entornos de Postman](https://learning.postman.com/docs/use/send-requests/variables/managing-environments/) explica cómo seleccionar y usar las variables.
-
-Cree una solicitud o añádala a su colección. Los siguientes nombres de controles de Postman corresponden a las etiquetas técnicas de la aplicación; las imágenes anteriores muestran la gestión de claves de DocBits en español.
-
-## Ejemplo del método "GET"
-
-Seleccione **GET** y la URL `{{base_url}}/version`. En **Authorization**, elija **No Auth** y después **Send**. La solicitud de Dev de solo lectura que se comprobó fue:
+Para el entorno de Dev usado como ejemplo, la solicitud comprobada fue:
 
 ```http
 GET https://eu.dev.api.docbits.com/dev-api/version
 ```
 
-El endpoint devolvió HTTP 200 sin clave de API. Comprueba la disponibilidad de la API y devuelve información de versión. No demuestra el acceso a documentos o usuarios de una organización. Revise el estado y el contenido de la respuesta; si falla, compruebe primero el entorno seleccionado, el origen de la API y la ruta del servidor.
+Este endpoint devolvió HTTP 200 sin clave de API. Comprueba la accesibilidad de la API y devuelve información de versión; no verifica el acceso a los documentos ni a los usuarios de una organización. Revise el estado y el cuerpo de la respuesta. Si la solicitud falla, confirme el entorno seleccionado, el origen y la ruta de servidor antes de añadir credenciales.
 
-Para una operación que use una clave de API, seleccione **Authorization → API Key** en Postman. Introduzca `X-API-KEY` en **Key**, use un secreto privado como **Value** y seleccione **Header** en **Add to**. Añada `X-ORG-ID` en **Headers** si la operación lo requiere. Consulte las guías oficiales de [autorización con clave de API](https://learning.postman.com/docs/use/send-requests/authorization/authorization-types/#api-key) y [secretos de Vault](https://learning.postman.com/docs/use/postman-vault/use-vault-secrets/).
+## 3. Usar las credenciales que requiere la operación
 
-## Ejemplo del método "POST"
+Abra la operación que desea usar y lea sus parámetros y su información de autorización. La especificación de la API incluye estos esquemas de cabecera distintos:
 
-**POST** puede crear datos o iniciar un procesamiento. Copie el método, la ruta, los parámetros obligatorios y el esquema del cuerpo de la especificación actual de la API. Ejecute estas solicitudes solo para una tarea concreta y autorizada. Una consulta de versión correcta no demuestra que una solicitud de escritura vaya a funcionar.
+| Cabecera | Finalidad |
+| --- | --- |
+| `X-ORG-ID` | Identifica la organización de destino cuando es necesario. |
+| `Authorization` | Contiene el valor de autorización que exige el mecanismo de autenticación correspondiente. |
+| `X-API-KEY` | Contiene una clave de API para las operaciones que usan ese esquema. |
 
-### Cargar documento
+Estas cabeceras no son intercambiables. El diálogo global **Authorize** muestra los esquemas disponibles; eso no significa que todas las operaciones necesiten todos ellos. Algunos esquemas pueden ser específicos de operaciones concretas.
 
-Antes de cargar un documento, consulte la operación documentada actualmente. Si requiere datos de formulario multipart, seleccione ese tipo de cuerpo y use los nombres de campos y tipos de archivo indicados. No los deduzca de una captura de una versión anterior de la API. No se cargó ningún documento para esta guía.
+Para una operación que use una clave de API, seleccione **Authorization → API Key** en Postman. Establezca **Key** en `X-API-KEY`, use un secreto privado como **Value** y seleccione **Header** en **Add to**. Consulte las instrucciones de Postman sobre [autorización con clave de API](https://learning.postman.com/docs/use/send-requests/authorization/authorization-types/#api-key) y la [guía de secretos de la bóveda](https://learning.postman.com/docs/use/postman-vault/use-vault-secrets/). Añada `X-ORG-ID` en **Headers** si la operación lo requiere. Solicite las credenciales adecuadas y el valor de la organización a su administrador.
 
-## Ejemplo del método "DELETE"
+Las claves de API se crean y se administran en **Ajustes → Integración y SSO → Clave API**: en la tarjeta **Claves API**, el botón **Crear clave API** abre el formulario. El procedimiento paso a paso, con los campos del formulario y la presentación única de la clave completa, está en [Administración de claves API](../../administration-and-setup/settings/global-settings/integration/api-key-management.md).
 
-**DELETE** puede eliminar datos de forma permanente. Compruebe la operación concreta, el identificador de destino y los permisos necesarios. Aquí no se ejecutó ninguna eliminación ni se afirmó que se hubiera probado con éxito.
+<figure><img src="../../.gitbook/assets/dbdc-1116-api-keys-es-20261112.png" alt="Ajustes en español, pestaña Clave API: la tarjeta Claves API con el botón Crear clave API y las columnas Llave, Nombre, Caduca, Último Uso, Estado y Acciones; las tres filas de la lista son datos de ejemplo inventados."><figcaption><p>Claves API en español, con datos de ejemplo inventados. El botón Crear clave API abre el formulario; en la lista solo se ve el prefijo de cada clave.</p></figcaption></figure>
 
-## Ejemplo del método "PUT"
+## 4. Crear más solicitudes a partir de la especificación actual
 
-**PUT** puede modificar datos existentes. Utilice únicamente los parámetros y el esquema del cuerpo de la operación actual y confirme el alcance del cambio solicitado. Aquí no se ejecutó ninguna modificación.
+Use el método HTTP exacto de la operación, su ruta, los parámetros obligatorios y el esquema del cuerpo de la solicitud. En las cargas de archivos, seleccione el tipo de cuerpo que exige esa operación, por ejemplo datos de formulario multipart cuando así se indique. No deduzca los campos actuales a partir de capturas de una versión anterior de la API.
 
-## Cambiar la dirección de correo de un usuario
+Empiece con una operación **GET** autorizada de solo lectura. **POST**, **PUT** y **DELETE** pueden modificar datos; úselos solo para la tarea prevista y autorizada. Una respuesta correcta de `/version` no demuestra que una solicitud autenticada, una carga de archivos o un cambio de datos vaya a funcionar.
 
-Obtenga la ruta y los campos obligatorios de la especificación actual de la API y haga revisar el cambio del usuario antes de ejecutarlo. Esta guía no utiliza datos reales de usuarios u organizaciones ni demuestra un cambio de correo electrónico realizado con éxito.
-
-Se comprobaron la especificación actual de la API de Dev, la consulta de versión sin autenticación y las vistas reales de DocBits en español de la gestión de claves y del formulario vacío. Para comprobar las vistas se utilizaron la cuenta de prueba autorizada y lecturas de metadatos de la interfaz. No se ejecutaron creación de claves, cargas, altas de usuarios, modificaciones ni eliminaciones. No se probaron operaciones de negocio de la API sobre documentos o registros de usuarios. No se probó ninguna solicitud en la aplicación Postman.
+Se comprobaron la documentación actual de Dev, sus controles de autorización vacíos y la respuesta no autenticada de `/version`. No se utilizó ninguna clave de API, ningún dato de organización ni ningún documento. No se ejecutaron lecturas autenticadas, cargas de archivos, altas de usuarios, modificaciones ni eliminaciones, y no se probó ninguna solicitud en la aplicación Postman.

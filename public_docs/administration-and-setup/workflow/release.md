@@ -6,7 +6,9 @@ hidden: true
 
 ## Prinzipien der Versionskontrolle
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_version_control.png" alt="DocBits-Workflow-Versionsverwaltung"><figcaption>Workflow Version Control System</figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-release-versions-card-de-20261114.png" alt="Workflow Builder mit einer platzierten Dokumenttyp-Karte im Abschnitt Wenn....; das geöffnete Versionsmenü der Karte bietet die Versionen 1 und 2 an."><figcaption><p>Versionsmenü einer platzierten Dokumenttyp-Karte im Workflow Builder</p></figcaption></figure>
+
+Im Workflow Builder trägt jede platzierte Karte rechts oben ein Versionsabzeichen mit ihrer aktuellen Versionsnummer, im Bild v: 2. Ein Klick darauf öffnet die Liste der verfügbaren Versionen, im Bild v: 1 und v: 2.
 
 ### Version 8.5.2024 - Kernfunktionen der Versionierung
 
@@ -46,7 +48,7 @@ Die DocBits Workflow Engine implementiert eine robuste Versionskontrolle für al
 #### 1. CALL_API
 **Versionen:** v1, v2 (Aktuell: v2)
 
-📖 **Anleitung:** [Call External API Guide](then/action/call-api-guide.md)
+📖 **Anleitung:** [DocBits-API aufrufen](then/action/call-api-guide.md)
 
 | Version | Übersetzung | Status | Wesentliche Änderungen |
 |---------|-------------|--------|-------------|
@@ -106,7 +108,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 #### 4. ACTION_TASK_FOR_GROUP
 **Versionen:** v2, v3 (Veraltet), v4 (Aktuell)
 
-📖 **Anleitung:** [Task Assignment Guide](then/task/task-assignment-guide.md)
+📖 **Anleitung:** [Aufgabenzuweisungs- und Erstellungskarten](then/task/task-assignment-guide.md)
 
 | Version | Änderungen | Status | Type-Parameter |
 |---------|---------|--------|-----------------|
@@ -167,7 +169,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 #### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (Am weitesten entwickelt – 5 Versionen)
 **Versionen:** v2, v3, v4, v5 (Aktuell)
 
-📖 **Anleitung:** [PO Matching Complete Guide](and/compare-with-purchase-order/po-matching-complete-guide.md)
+📖 **Anleitung:** [PO-Matching-Karten – Vollständiger Leitfaden](and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 | Version | Änderungen | Status | Toleranz | Vergleich |
 |---------|---------|--------|-----------|------------|
@@ -351,7 +353,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 #### 1. tasks_create ⭐ (Am weitesten entwickelte Task-Card – 4 Versionen)
 **Versionen:** v1 (Veraltet), v2 (Veraltet), v3 (Veraltet), v4 (Aktuell)
 
-📖 **Anleitung:** [Task Assignment Guide](then/task/task-assignment-guide.md)
+📖 **Anleitung:** [Aufgabenzuweisungs- und Erstellungskarten](then/task/task-assignment-guide.md)
 
 | Version | Übersetzung | Decision Tree | Arbeitselementtyp | Status |
 |---------|-------------|---------------|-----------------|--------|
@@ -650,9 +652,9 @@ v4: + "Compare as [param1] [param2]"
 
 ## Verwandte Dokumentation
 
-- 📖 [Card Versioning Reference](cards-overview/card-versions-guide.md) - Detaillierte Versionsinformationen
-- 📚 [Workflow Guides](README.md) - Schrittweise Card-Nutzung
-- 🔄 [Card Version Database](cards-overview/card-versions-guide.md) - Vollständiger Versionsverlauf
+- 📖 [PO-Vergleiche: Richtung, Toleranz und Kartenversionen](cards-overview/po-comparison-versions-guide.md) - Vergleichsrichtungen, Toleranzen und Kartenversionen
+- 📚 [Workflow-Leitfäden](README.md) - Schrittweise Nutzung der Karten
+- 🔄 [Überblick über die Card-Versionierung](#uberblick-uber-die-card-versionierung) - Zusammenfassung auf dieser Seite
 - 📋 [Workflow-Protokolle](workflow-logs.md) - Ausführung und Fehlerbehebung
 
 ---

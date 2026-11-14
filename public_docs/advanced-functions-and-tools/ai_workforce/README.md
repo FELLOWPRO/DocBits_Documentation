@@ -26,6 +26,47 @@ AI Workforce s'active par organisation depuis les paramètres principaux.
 
 Une fois activé, **AI Workforce** apparaît dans la barre de navigation principale et l'espace de travail devient disponible pour votre organisation.
 
+## Contrôle de mission
+
+Le **Contrôle de mission** est le centre de commande où vous **lancez des missions et les suivez en direct**. Ouvrez-le depuis la barre latérale AI Workforce. La page comporte trois parties :
+
+<figure><img src="../../.gitbook/assets/ai-workforce-1-mission-control-fr-20261111.png" alt="Contrôle de mission avec les cartes de mission, le chat de l'Orchestrateur et le panneau Boîte de réception ouvert"><figcaption><p>Contrôle de mission : les cartes de mission en haut, le chat de l'Orchestrateur au centre et le panneau Boîte de réception à droite</p></figcaption></figure>
+
+* **Cartes de mission** — la bande en haut montre les missions en cours avec leur statut, leur progression et leur nombre de problèmes. Cliquez sur une carte pour ouvrir la mission.
+* **Chat de l'Orchestrateur** — au centre de la page. Décrivez en langage naturel ce que vous voulez faire, par exemple _« Traitez toutes les factures fournisseurs arrivées cette semaine et rapprochez-les de leurs commandes d'achat »_, puis cliquez sur la flèche d'envoi du champ de saisie. L'Orchestrateur planifie le travail et lance la mission ; vous suivez ses réponses dans le même chat.
+* **Panneau Boîte de réception** — le panneau repliable à droite montre les demandes d'approbation en attente (voir [Boîte de réception](#boite-de-reception)). Cliquez sur une demande pour la lire et **Approuver**, **Rejeter** ou répondre à l'agent ; une demande qui n'appelle aucune décision peut être écartée. Le chiffre affiché sur le panneau indique combien de demandes sont en attente. Les mêmes demandes apparaissent aussi sous **Boîte de réception** dans la barre latérale.
+
+Pour créer une mission, vous pouvez aussi cliquer sur **Nouvelle mission** dans la barre latérale AI Workforce : vous arrivez dans le même chat.
+
+## Liste des agents
+
+La **Liste des agents** montre d'un coup d'œil tous les agents de votre organisation — le **Routeur**, vos **Orchestrateurs** et tous les **Spécialistes** — regroupés dans cet ordre, dans les sections **ROUTEUR**, **ORCHESTRATEURS** et **AGENTS**.
+
+<figure><img src="../../.gitbook/assets/ai-workforce-2-agent-list-fr-20261111.png" alt="Liste des agents avec les sections Routeur, Orchestrateurs et Agents et le bouton Créer un agent"><figcaption><p>Liste des agents : le Routeur en haut, puis les Orchestrateurs, puis les Agents ; la légende distingue les agents système et personnalisés, et le Routeur reste <strong>INACTIF — NÉCESSITE AU MOINS 2 ORCHESTRATEURS</strong> tant qu'un seul orchestrateur est actif</p></figcaption></figure>
+
+Chaque carte affiche le **nom** de l'agent, son **rôle**, les **compétences** qu'il peut utiliser et son état actuel. Depuis la carte, vous pouvez :
+
+* **Ouvrir l'agent** — cliquez sur la carte pour afficher son profil complet avec tous les [Paramètres de l'agent](#parametres-de-lagent).
+* **Activer ou désactiver** — utilisez l'interrupteur des cartes d'orchestrateur. Le système ne vous laisse désactiver un orchestrateur que si au moins un autre orchestrateur reste activé ; avec deux orchestrateurs actifs ou plus, le **Routeur** prend en charge la répartition du travail (voir [Règles de hiérarchie et d'activation](#regles-de-hierarchie-et-dactivation)).
+* **Modifier ou supprimer** — les agents personnalisés, signalés par la mention **Coutume** dans la légende, disposent d'un menu avec ces deux actions ; les agents système peuvent être configurés mais pas supprimés.
+* **Créer un agent** — le bouton en haut à droite lance l'assistant de création d'un nouvel agent (voir [Créer des agents personnalisés](#creer-des-agents-personnalises)).
+
+La légende en haut de la page distingue les agents **Système** des agents **Coutume** — c'est le terme que l'interface utilise pour les agents personnalisés. Vous voyez ainsi ce qui est fourni avec DocBits et ce que vous avez créé vous-même.
+
+## Activités
+
+Les **Activités** sont le journal de ce qui s'est passé dans votre AI Workforce. Chaque modification — une mission créée, un problème mis à jour, une demande d'approbation émise — apparaît ici sous forme d'une ligne qui réunit trois informations :
+
+<figure><img src="../../.gitbook/assets/ai-workforce-3-activities-fr-20261111.png" alt="Journal des activités avec les filtres domaine, action et acteur et une liste de modifications récentes"><figcaption><p>Activités : chaque ligne commence par le badge du domaine concerné (<strong>INBOX</strong>, <strong>PROBLÈMES</strong>, <strong>MISSIONS</strong>) et indique ce qui s'est passé, qui l'a fait et quand</p></figcaption></figure>
+
+* le **domaine** concerné — Boîte de réception, Problèmes, Missions, Projets, Agents ou exécutions d'agents — affiché sous forme d'un badge coloré à gauche ;
+* l'**action** effectuée — par exemple **Créé** ou **Mis à jour** — sous forme d'un second badge ;
+* le **résumé** de la modification, l'**acteur** qui l'a provoquée (un agent ou une personne) et l'**heure**.
+
+Utilisez le **champ de recherche** (_Recherche_) pour retrouver une entrée précise, et les trois listes déroulantes au-dessus du journal pour filtrer par **domaine** (entité), **action** et **acteur** — par défaut **Toutes les entités**, **Toutes les actions** et **Tous les acteurs**. Cliquez sur une ligne pour accéder à l'élément correspondant — par exemple la mission ou le problème dont parle l'entrée. Avec **Enregistrements par page**, vous choisissez le nombre d'entrées affichées à la fois ; les flèches en bas à droite permettent de parcourir les historiques plus longs.
+
+Le journal des activités répond à la question _« Que vient de faire l'AI Workforce, et qui l'a fait ? »_ — utile après une approbation, pour vérifier pourquoi un document a été classé d'une certaine façon ou pour revoir ce que vos agents personnalisés ont fait.
+
 ## Tableau de bord
 
 Le **Tableau de bord** est votre vue d'ensemble d'AI Workforce — KPI, graphiques et listes d'activité en un coup d'œil. Vous choisissez les indicateurs affichés.

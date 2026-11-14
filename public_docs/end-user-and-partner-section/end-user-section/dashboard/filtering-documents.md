@@ -1,5 +1,7 @@
 # Filtrar documentos
 
+<figure><img src="../../../.gitbook/assets/filtering-documents-filters-overview-pt-20261110.png" alt="Painel de filtros com Status, Atribuído A e Reinicialização Necessária, além de Limpar filtros e Aplicar"><figcaption>Filtros do painel para atribuição e reinicialização necessária.</figcaption></figure>
+
 Use a barra de pesquisa do painel, o painel de filtros, o intervalo de datas e as abas de tipos de documento para restringir a lista de documentos. Os controles funcionam em conjunto: um documento precisa corresponder à pesquisa ativa e aos filtros aplicados para permanecer na tabela.
 
 ## Encontrar um documento pelo nome
@@ -24,7 +26,7 @@ Use a barra de pesquisa do painel, o painel de filtros, o intervalo de datas e a
 
 <figure><img src="../../../.gitbook/assets/dbdc167_assignee-options_pt_20261010.png" alt="Menu suspenso Atribuído A mostrando os usuários sintéticos na organização de teste"><figcaption>Selecione um usuário em Atribuído A.</figcaption></figure>
 
-Para uma explicação do significado de cada status de processamento, consulte [Status do Documento](document-status.md).
+Para uma explicação do significado de cada status de processamento, consulte [Estado dos documentos](document-status.md).
 
 ## Escolher um intervalo de datas de importação
 
@@ -42,4 +44,4 @@ Acima da barra de pesquisa, selecione **30D**, **90D**, **180D**, **365D** ou **
 
 <figure><img src="../../../.gitbook/assets/dbdc167_invoice-tab_pt_20261010.png" alt="Aba do tipo de documento Fatura selecionada no painel em português, com o ícone de remoção visível"><figcaption>Escolha a aba para aplicar o filtro de tipo; use × para remover a aba.</figcaption></figure>
 
-Se o menu **+** não tiver tipos, peça a um administrador para verificar quais tipos de documento estão ativos para a sua organização. Consulte [Document Types](../../../administration-and-setup/settings/global-settings/document-types/README.md). Para salvar uma combinação de filtros para usar mais tarde, consulte [Painéis pessoais](personal-dashboards.md).
+Se o menu **+** não tiver tipos, peça a um administrador para verificar quais tipos de documento estão ativos para a sua organização. Consulte [Tipos de documento](../../../administration-and-setup/settings/global-settings/document-types/README.md). Para salvar uma combinação de filtros para usar mais tarde, consulte [Painéis pessoais](personal-dashboards.md).

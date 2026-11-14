@@ -1,94 +1,139 @@
-# Impostazioni Avanzate
+# Impostazioni avanzate
 
-In alcuni documenti, le strutture delle tabelle possono essere complesse, con più righe, contenenti informazioni raggruppate o includendo righe extra non necessarie. Le _Impostazioni Avanzate_ in modalità di addestramento ti consentono di ottimizzare l'estrazione delle tabelle per tali casi, migliorando precisione e coerenza.
+In alcuni documenti le strutture delle tabelle sono complesse: l'intestazione occupa più righe, le informazioni sono raggruppate oppure sono presenti righe extra non necessarie. Le _Impostazioni avanzate_ in modalità di allenamento ti consentono di ottimizzare l'estrazione delle tabelle in questi casi, migliorando precisione e coerenza.
 
-Per accedere a queste impostazioni, attiva la **Modalità di Addestramento** e clicca sull'icona a ingranaggio **Impostazioni** nella barra delle azioni in alto:
+Per aprire queste impostazioni, attiva la **Modalità di allenamento** e clicca sull'icona a ingranaggio **Impostazioni** nella barra delle azioni in alto:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FW1cBx4IOjycKv6IZM9AX8Wggj1eEBgzBVJWgsyWkutX9dRRJuEjQtSCsPaNZuRndd9ewMVvfqSXr45C-2cO-pxXkYFdl_9eEGVW6-UBqqZCsuhia6alJjD1ZuZawwSbjS9Yeywe1wDK5yAcIOUH5QAw\&width=768\&dpr=4\&quality=100\&sign=4bf6ac31\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-gear-it-20261112.png" alt="Schermata di estrazione delle tabelle in modalità di allenamento con il puntatore sull'icona a ingranaggio Impostazioni nella barra delle azioni in alto."><figcaption><p>L'icona a ingranaggio nella barra della modalità di allenamento apre le impostazioni avanzate.</p></figcaption></figure>
 
-## Conteggio Righe Intestazione
+La finestra **Impostazioni** contiene tutte le opzioni descritte in questa pagina. Espandi la sezione **Impostazioni avanzate** per raggiungere le opzioni di raggruppamento, che restano compresse finché non le apri:
 
-**Usa questa impostazione per definire quante righe compongono l'intestazione della tabella.**
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-max-rows-it-20261112.png" alt="Finestra Impostazioni con Conteggio delle righe dell'intestazione 2 e la sezione Impostazioni avanzate espansa: Righe minime raggruppate 2, Massimo di righe raggruppate 3, Colonne di gruppo distinte, Raggruppamento inverso e Testo diviso."><figcaption><p>La sezione Impostazioni avanzate con tutte le opzioni di raggruppamento.</p></figcaption></figure>
 
-Alcune tabelle hanno intestazioni su più righe. Ad esempio, l'intestazione di questa tabella si estende su due righe:
+Ogni opzione è descritta nella propria sezione, insieme all'effetto che produce sulla tabella estratta.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FJ_nYZKzUSJHcpJuNp1ykf6shnfetOuiIPhyhyTfSqh_cTsDT5obwOSIc21OsLkjF9tMBP7Q1GQ1ZQfBsEmQIrJpfX3QpdjHnLkzInsjpngeg2L7i_TAyl9MdVmgHsDpUvoURdxfqp8FOdJxuRAMCwhk\&width=768\&dpr=4\&quality=100\&sign=554fa70\&sv=2)
+## Conteggio delle righe dell'intestazione
 
-Imposta il **Conteggio righe intestazione** di conseguenza:
+**Usa questa impostazione per definire da quante righe è composta l'intestazione della tabella.** Il tooltip dell'opzione chiede: _Di quante righe è composta l'intestazione della tabella?_
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FG8-QpKxnRin9PGPmkbtJ35r1EugXsD4_Yd5QvTkdbb7sXqRVC3a9t0cIlNILJHLr--GsykgAlMJmMYbJaUoMqHEPvAT3PlPNf-syCmPz_GVMFEMsbhcHI2DQBbT4MJXjS2Sx7M3xl4zAzcw3aa-XNms\&width=768\&dpr=4\&quality=100\&sign=a487f5a9\&sv=2)
+Alcune tabelle hanno intestazioni su più righe. Ad esempio, l'intestazione di questa tabella occupa due righe:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-two-lines-it-20261112.png" alt="Tabella di una fattura con l'intestazione su due righe (Preis in EUR e Betrag in EUR)."><figcaption><p>Un'intestazione di tabella che occupa due righe.</p></figcaption></figure>
+
+Imposta il **Conteggio delle righe dell'intestazione** in base al numero di righe dell'intestazione:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-row-count-it-20261112.png" alt="Finestra Impostazioni con Conteggio delle righe dell'intestazione impostato su 2."><figcaption><p>Conteggio delle righe dell'intestazione impostato su 2 nella finestra Impostazioni.</p></figcaption></figure>
 
 ### Perché è importante?
 
-Se non imposti questo, DocBits potrebbe considerare la seconda riga come dati anziché parte dell'intestazione, portando a errori di estrazione:
+Se non imposti questo valore, DocBits può considerare la seconda riga come dati anziché come parte dell'intestazione, causando errori di estrazione:
 
 **Prima:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F35BElgcq-zbs8wcGcguVSKHRpwQXqQG9dQmBaYa8BT4RNwJxd6g-jL5wlQgrnVLrMxtpncr8ayaasWVV3snGpBiDUWs4Zx7Tn2Dck-YFBpanlcN500yIWkVz9RJXQhoq6op0WbYcgklp_LsmE9LXt9k\&width=768\&dpr=4\&quality=100\&sign=7c68faf7\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-before-it-20261112.png" alt="Tabella estratta con Conteggio delle righe dell'intestazione errato: la seconda riga dell'intestazione compare come riga di dati e le colonne non sono mappate."><figcaption><p>Prima: la seconda riga dell'intestazione viene trattata come dati.</p></figcaption></figure>
 
 Dopo:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FbPGn9eWPK3Mmbu_ab2N3tVVP8ODho4MW6r6ynSKJWiPxq-IPlP_0Q1ghfcwjN56Sp_HA0nV-fedAfzkZoAXsj5O5ata32PCXPHJQ-dizWZ1OdpdEPS5wSPNW9jjc7TSPKQiNnCGPjLtnXQDLCbwEj3U\&width=768\&dpr=4\&quality=100\&sign=b032f2da\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-after-it-20261112.png" alt="Tabella estratta con Conteggio delle righe dell'intestazione 2: le colonne sono mappate su Posizione, Descrizione, Quantità, Prezzo Unitario e Importo Netto e le righe sono corrette."><figcaption><p>Dopo: intestazione e righe di dati sono separate correttamente.</p></figcaption></figure>
 
-## Sposta Righe Extra nel Cestino
+## Spostare le righe extra in
 
-**Usa questa opzione per eliminare voci su più righe non desiderate, come descrizioni troppo lunghe.**
+**Usa questa opzione per eliminare le voci su più righe non desiderate, come le descrizioni che occupano più righe.** Il tooltip dell'opzione chiede: _In quale colonna si desidera spostare i dati non raggruppati?_
 
-In questo esempio, la descrizione si estende su più righe, ma solo la prima riga è rilevante:
+In questo esempio la descrizione si estende su più righe, ma solo la prima è rilevante:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FAEFanKF7uUtS_78nxi5zESPW8WOESa0Do_sCQCsttC21KoFK-sB9TQgFHboJB7CMEpc_auEbeXINU4BpEh8XuNMBHDYhuwjVX40cRyygxECs3XogrurWKNdw4s4F1kxWXLGrrF4jSqd1bba0dKPVO2E\&width=768\&dpr=4\&quality=100\&sign=926d60ed\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-overflow-doc-it-20261112.png" alt="Tabella di una fattura in cui la descrizione di ogni articolo continua su righe di testo aggiuntive sotto l'articolo."><figcaption><p>La descrizione si estende su più righe, delle quali solo la prima è rilevante.</p></figcaption></figure>
 
-Abilita **Sposta righe extra nel Cestino** per rimuovere il testo superfluo:
+Imposta **Spostare le righe extra in** su **Rifiuti** per rimuovere il testo in eccesso:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FQdYUZ0ANpuFRkvNxVZzYfEhTRVf2fk1jPmoNUZcNotdkgL6VDHV1BgBXU2xqFfjBJ7W6uvB8TRZcpKEk7Qk_c0mIohiS4Jl9ZPRpG7HdS_EktuCcAtJ4KjJ_vYvYok7lv0nz2MfVMG08oDFqRSyFHy4\&width=768\&dpr=4\&quality=100\&sign=135061e3\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-move-extra-rows-it-20261112.png" alt="Finestra Impostazioni con Spostare le righe extra in impostato su Rifiuti."><figcaption><p>Spostare le righe extra in impostato su Rifiuti.</p></figcaption></figure>
 
 **Risultato dopo la mappatura:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fzto-P_Knp1YQmCUBU6_vCg2IEwaBiBeAao8Jvu30-89x_Sj2BLDSTQu31vUNBlaQp73DPVy2F-UZawn8j4hxycD6bpfCf_KXZYvrqH5w0cwGwsjatBelIh6gdenY-NpzmQ372jtthucHpMrsXNz3DcA\&width=768\&dpr=4\&quality=100\&sign=741cbfd1\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-trash-result-it-20261112.png" alt="Schermata di estrazione delle tabelle: il documento di origine mostra la descrizione di ogni articolo su due righe, mentre la tabella estratta a destra contiene una riga pulita per articolo."><figcaption><p>Risultato dopo la mappatura: le righe in eccesso non ci sono più e restano solo le righe rilevanti.</p></figcaption></figure>
 
-## Numero Minimo di Righe Raggruppate
+## Righe minime raggruppate
 
-**Usa questa opzione quando le righe devono essere raggruppate sotto una riga principale (es. articoli con più sottorighe).**
+**Usa questa opzione quando le righe devono essere raggruppate sotto una riga principale (ad esempio articoli con più sottorighe).** Il tooltip dell'opzione chiede: _Quante righe ha la colonna minima raggruppata?_
 
-Qui, solo tre righe su sei sono rilevanti. Due colonne chiave sono mappate (es. Posizione, Descrizione), mentre altre sono considerate campi personalizzati.
+Qui solo tre righe su sei sono rilevanti. Due colonne chiave sono mappate (ad esempio Posizione e Descrizione), mentre le altre sono trattate come campi personalizzati.
 
-Inizia impostando il **Conteggio righe intestazione** e il **Numero minimo di righe raggruppate**:
+Inizia impostando il **Conteggio delle righe dell'intestazione** e le **Righe minime raggruppate**, cioè il numero minimo di righe che devono appartenere a un gruppo prima che DocBits le unisca:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fp0k-n1IG3_FHexG4iAlISSmN4Yaq9xUjRO2cLpV3w6a67DpULRnxj4x291DOXBVx2SHqKp6Zs-ZXxr8KHKzT9O6oCwgEOkvfMqwpDGZUrfFpozdR16sbaybtrMEqDOXO1TsNmuPFz6mOKX0pR8I5RO8\&width=768\&dpr=4\&quality=100\&sign=e19a8ef6\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-min-grouped-it-20261112.png" alt="Finestra Impostazioni con Conteggio delle righe dell'intestazione 2 e la sezione Impostazioni avanzate espansa con Righe minime raggruppate impostate su 2."><figcaption><p>Conteggio delle righe dell'intestazione e Righe minime raggruppate impostati nella finestra Impostazioni.</p></figcaption></figure>
 
-Abilita anche **Sposta righe extra nel Cestino** per pulire i dati non rilevanti.
+Imposta anche **Spostare le righe extra in** su **Rifiuti** per eliminare i dati non rilevanti:
 
-Successivamente, definisci la colonna chiave di raggruppamento, ad es. _Posizione_:
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-min-grouped-trash-it-20261112.png" alt="Finestra Impostazioni con Conteggio delle righe dell'intestazione 2, Spostare le righe extra in Rifiuti e Righe minime raggruppate 2."><figcaption><p>In aggiunta, Spostare le righe extra in impostato su Rifiuti.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F5hy2YTNQRZ6plQZnc1HwAbAUXU7LKfNpLdlfr8sPnDXMryv0KoAGgkcqAWqjvznvBa1YwW0ecTrpStpm5AIc0qiFX1zB-I_y_crIx0jKS2t6QVKdAz66Wb3XMt9sRsEUHKIuk51_AatHNCRZjOghn4A\&width=768\&dpr=4\&quality=100\&sign=6ca2a12e\&sv=2)
+Poi definisci la colonna chiave di raggruppamento, ad esempio _Posizione_, aprendo il menu di quella colonna e scegliendo la voce **File di gruppo** (l'opzione che raggruppa le righe):
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-group-key-it-20261112.png" alt="Tabella estratta con il menu della colonna Posizione aperto: Cancellare la colonna, File di gruppo e Regex."><figcaption><p>Scegli File di gruppo nel menu della colonna chiave di raggruppamento (Posizione).</p></figcaption></figure>
+
+Il raggruppamento stesso e gli altri strumenti delle colonne che funzionano insieme a esso (selezione manuale delle righe, mappatura delle colonne ed espressioni regolari) sono descritti passo dopo passo in [Strutturazione e Miglioramento dell'Estrazione delle Tabelle in DocBits](improving-table-extraction-with-regex.md).
 
 **Risultato:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FxaorEjiOEeypLMAAOXvm3VAc5BVzhIujUeLdSt0SPwrEz5x_hd8sb3Hhc7OpnUpzj6qvjWWptOsefhxjF5pIzf12RVXah1wPhlMoa3Wwx7T3s_D7Pzw8cryaAzgh8SpN-uTxpl1FWke8v33dh2VNgJ0\&width=768\&dpr=4\&quality=100\&sign=e955b28f\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-grouped-result-it-20261112.png" alt="Schermata di estrazione delle tabelle: il documento di origine contiene sei righe fisiche, due per articolo, e la tabella estratta a destra mostra una riga raggruppata per articolo."><figcaption><p>Risultato: le sei righe fisiche sono raggruppate in tre articoli.</p></figcaption></figure>
 
-## Raggruppamento Inverso
+### Massimo di righe raggruppate
 
-**Usa questa opzione quando la riga di raggruppamento appare** _**dopo**_ **le righe che dovrebbe raggruppare.**
+**Usa questa opzione per limitare quante righe può contenere un gruppo.** Il suo tooltip chiede: _Quante righe ha la colonna massima raggruppata?_ È la controparte di Righe minime raggruppate: un gruppo che richiederebbe più righe di questo numero non viene unito.
 
-Se la riga che dovrebbe essere raggruppata con altri dati appare _sopra_ la chiave di raggruppamento, abilita questa opzione:
+Lascia il campo vuoto quando i gruppi possono avere qualsiasi dimensione. Impostalo quando un documento contiene articoli con molte sottorighe e vuoi che DocBits lasci i blocchi insolitamente grandi non raggruppati, così puoi controllarli tu stesso.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FiH7rDa637FWtr8wWtXpdqSh68xsaOFrb_vIWf-ZOpAjExmFPHVRaDGGipdwNy30gpLmEWT0UujjqlbcSlHU7ldQ5zhAy15pMxuqbDpS2xFSuL35EjbaXfFQTOSSO3QE_I37kvdL3i5k-N7F_9tedMss\&width=768\&dpr=4\&quality=100\&sign=95d583b1\&sv=2)
+Il campo si trova nella stessa area della finestra di Righe minime raggruppate, subito sotto:
 
-Abilita il **Raggruppamento inverso**, raggruppa per una colonna principale (es. Importo Netto), e usa **Sposta righe extra nel Cestino** se necessario:
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-max-rows-it-20261112.png" alt="Finestra Impostazioni con Righe minime raggruppate 2 e Massimo di righe raggruppate 3; Colonne di gruppo distinte, Raggruppamento inverso e Testo diviso non selezionati."><figcaption><p>Massimo di righe raggruppate (qui 3) si trova subito sotto Righe minime raggruppate.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FFJNKYXmELlMFi-Zh_0Pjgc0pcKI2-_UbDhF7b4D5p7GA4f9r-FqjruzkJw3nfJH4NA0G_BC2xQpJEzl26GbOlPt9fPyOkGowtGWgRWt5GJ62Vj-Qd04rDP0kzDFiJnRlpWF13d9YQ1e-FurQI-gHJx4\&width=768\&dpr=4\&quality=100\&sign=4b2677ae\&sv=2)
+### Colonne di gruppo distinte
+
+**Usa questa opzione per mantenere solo valori unici nella colonna chiave di raggruppamento.** Il tooltip dell'opzione chiede: _Si vogliono solo valori unici per la colonna raggruppata?_
+
+Attivala quando più gruppi porterebbero lo stesso valore nella colonna chiave e vuoi che DocBits mantenga quel valore una sola volta, così i gruppi ripetuti mostrano la chiave vuota invece del valore duplicato.
+
+È una casella di controllo nella stessa sezione di Righe minime raggruppate:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-distinct-split-it-20261112.png" alt="Finestra Impostazioni con la casella Colonne di gruppo distinte selezionata sotto Massimo di righe raggruppate."><figcaption><p>Colonne di gruppo distinte è la casella di controllo sotto Massimo di righe raggruppate.</p></figcaption></figure>
+
+### Raggruppamento inverso
+
+**Usa questa opzione quando la riga di raggruppamento compare** _**dopo**_ **le righe che dovrebbe raggruppare.** Il tooltip dell'opzione chiede: _Si desidera combinare tutte le righe sopra l'attributo raggruppato?_
+
+Attivala quando la riga che contiene la chiave di raggruppamento (ad esempio la posizione o l'importo) sta _sotto_ le sue righe di continuazione: DocBits unisce così al gruppo le righe sopra la chiave, invece di quelle sotto:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-doc-it-20261112.png" alt="Tabella di una fattura in cui la riga della descrizione si trova sopra la riga che contiene posizione, quantità e importi."><figcaption><p>La riga di raggruppamento compare dopo le righe che dovrebbe raggruppare.</p></figcaption></figure>
+
+Attiva **Raggruppamento inverso**, raggruppa per una colonna principale (ad esempio Importo Netto) e imposta **Spostare le righe extra in** su **Rifiuti** se necessario:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-dialog-it-20261112.png" alt="Finestra Impostazioni con Raggruppamento inverso selezionato, Spostare le righe extra in Rifiuti e Conteggio delle righe dell'intestazione 2."><figcaption><p>Raggruppamento inverso attivo insieme a Spostare le righe extra in Rifiuti.</p></figcaption></figure>
 
 **Risultato finale:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fe8x8gIUV10Y_FmPeW_X-UZw6uJ8P7alQTDy_m5OGGLZ8Ev7Ip-C-6fqtTixiSU0ZnLMIc4VR_f0xJV6beDnl7bFBIh4U2dME8KHB3qokj__SrQGp-3BXeOsN63SabFNd5miRCtK-jlf49nzcbbe8UJw\&width=768\&dpr=4\&quality=100\&sign=f7571dde\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-result-it-20261112.png" alt="Tabella estratta con tre righe dopo il raggruppamento inverso per la colonna degli importi."><figcaption><p>Risultato finale con il raggruppamento inverso.</p></figcaption></figure>
 
-## Riassunto
+### Testo diviso
 
-Utilizza le _Impostazioni Avanzate_ per insegnare a DocBits come gestire con precisione strutture di tabelle più complesse o inconsistenti. Queste impostazioni migliorano la precisione dell'estrazione tenendo conto di:
+**Usa questa opzione per dividere il testo di una cella esattamente in corrispondenza del separatore di colonna.** Il tooltip dell'opzione chiede: _Si vuole dividere il testo esattamente in corrispondenza del separatore di colonna?_
+
+Attivala quando una cella estratta contiene il testo di due colonne che il separatore della tabella non ha separato. DocBits estrae di nuovo la tabella e taglia ogni valore nella posizione del separatore che hai definito, invece di memorizzare entrambi i valori in una sola cella.
+
+Poiché la divisione ripete l'estrazione, DocBits ti chiede conferma prima di eseguirla: la richiesta compare appena selezioni la casella di controllo e la divisione viene applicata solo dopo aver cliccato **Procedere**.
+
+La casella è l'ultima opzione della sezione Impostazioni avanzate:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-distinct-split-it-20261112.png" alt="Finestra Impostazioni con la casella Testo diviso selezionata come ultima opzione della sezione Impostazioni avanzate."><figcaption><p>Testo diviso è l'ultima casella di controllo della sezione.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-split-confirm-it-20261112.png" alt="Finestra di conferma con il testo Sei sicuro? La tabella verrà estratta di nuovo e i pulsanti Annulla e Procedere."><figcaption><p>Selezionando Testo diviso compare questa conferma; solo Procedere applica la divisione.</p></figcaption></figure>
+
+## Riepilogo
+
+Usa le _Impostazioni avanzate_ per insegnare a DocBits come gestire con precisione strutture di tabelle più complesse o irregolari. Queste impostazioni migliorano la precisione dell'estrazione tenendo conto di:
 
 * Intestazioni su più righe
 * Descrizioni su più righe
-* Articoli di linea raggruppati
+* Articoli raggruppati
 * Ordine inverso dei dati raggruppati
+* Testo da dividere in corrispondenza del separatore di colonna
 
-Abilitare queste opzioni durante l'addestramento garantisce che DocBits ricordi il layout corretto per i documenti futuri dello stesso fornitore.
+Attivare queste opzioni durante l'allenamento garantisce che DocBits ricordi il layout corretto per i documenti futuri dello stesso fornitore. Quando l'estrazione è corretta, salva la configurazione con l'azione **Salva le regole**, descritta in [Salvare ed Eliminare Regole](save-and-delete-rules.md).

@@ -15,7 +15,7 @@ Use la **Detección de duplicados** para marcar documentos que coincidan con otr
 2. En el tipo de documento que desee configurar, seleccione **Ajustes**.
 3. En **Más Ajustes**, abra **Detección de duplicados**.
 
-<figure><img src="../../../../../.gitbook/assets/more-settings-duplicate-document-handling-settings-off-es-20261011.png" alt="Más Ajustes de Factura con la sección Detección de duplicados abierta y las opciones de detección desactivadas"><figcaption><p>Los ajustes de Factura muestran cuatro interruptores independientes. Los selectores de campos e intervalo aparecen al activar la detección.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/more-settings-duplicate-document-handling-settings-off-es-20261111.png" alt="Más Ajustes de Factura con la sección Detección de duplicados abierta y las opciones de detección desactivadas"><figcaption><p>Los ajustes de Factura muestran cuatro interruptores independientes. Los selectores de campos e intervalo aparecen al activar la detección.</p></figcaption></figure>
 
 ## Definir qué cuenta como duplicado
 
@@ -25,9 +25,9 @@ Use la **Detección de duplicados** para marcar documentos que coincidan con otr
 
 Cada cambio se guarda al realizarlo; no hay ningún botón Guardar independiente en esta sección. Si desactiva la detección, los selectores de campos e intervalo se ocultan.
 
-<figure><img src="../../../../../.gitbook/assets/more-settings-duplicate-document-handling-settings-on-es-20261011.png" alt="Detección de documentos duplicados activada, mostrando los selectores de campos e intervalo"><figcaption><p>Active la detección antes de seleccionar los campos de comparación y el intervalo de tiempo.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/more-settings-duplicate-document-handling-settings-on-es-20261111.png" alt="Detección de documentos duplicados activada, mostrando los selectores de campos e intervalo"><figcaption><p>Active la detección antes de seleccionar los campos de comparación y el intervalo de tiempo.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/more-settings-duplicate-document-handling-interval-options-es-20261011.png" alt="Menú Intervalo de detección de duplicados con un mes, tres meses, seis meses y un año"><figcaption><p>Tres meses aparece marcado como el intervalo recomendado en el menú.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/more-settings-duplicate-document-handling-interval-options-es-20261111.png" alt="Menú Intervalo de detección de duplicados con un mes, tres meses, seis meses y un año"><figcaption><p>Tres meses aparece marcado como el intervalo recomendado en el menú.</p></figcaption></figure>
 
 Para **Factura**, esta sección también ofrece **Detección de facturas duplicadas**, **Exportación de documentos duplicados en bloque** e **Ignorar la línea libre de impuestos**. Son interruptores independientes; active solo el comportamiento que necesite su proceso de facturas. Los interruptores adicionales no se muestran para otros tipos de documento.
 
@@ -36,3 +36,5 @@ Para **Factura**, esta sección también ofrece **Detección de facturas duplica
 Cuando DocBits encuentra una coincidencia, la fila del documento en el **Panel** muestra un icono de duplicado. Seleccione el icono para comparar los registros coincidentes en el panel lateral. El icono aparece solo cuando existe una coincidencia.
 
 Al abrir un documento marcado, la advertencia de duplicado ofrece **Ver duplicados**, **Proceder de todos modos** y, si el documento aún no se ha archivado, **Archivo**. Revise los registros coincidentes antes de elegir una acción. Consulte [la guía del Panel](../../dashboard/README.md) para ver la lista de documentos.
+
+Al revisar posibles duplicados, compare el número de factura, el proveedor, la fecha y el importe. Use la advertencia de duplicado y los detalles del documento coincidente para decidir qué debe corregirse.

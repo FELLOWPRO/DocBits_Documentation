@@ -50,6 +50,45 @@ Geben Sie im Eingabefeld nur die Domäne ein, z. B. `example.com`, und wählen S
 
 Prüfen Sie vor dem Hinzufügen einer Domäne, welche Organisation neue Anmeldungen erhalten soll. Informationen zur Verwaltung bestehender Mitgliedschaften finden Sie unter [Benutzer](../groups-users-and-permissions/users/README.md).
 
+## Release-Kanal
+
+Der Abschnitt **Release-Kanal** legt fest, wie diese Organisation DocBits-Aktualisierungen erhält. Wählen Sie die Abschnittsüberschrift, um ihn auf- oder zuzuklappen. Den Abschnitt sehen nur Organisationsadministratoren.
+
+<figure><img src="../../../../.gitbook/assets/company-release-channel-de-20261111.png" alt="Aufgeklappter Abschnitt „Release-Kanal“ mit den Optionen Vesta und Nova, dem Hinweis zur Wirkungsdauer und der Schaltfläche Speichern"><figcaption><p>Der Abschnitt „Release-Kanal“ auf Deutsch. Vesta liefert nur Hotfixes, Nova liefert neue Funktionen nach jedem Release (Standard).</p></figcaption></figure>
+
+* **Vesta**: Erhält nur Hotfixes, für maximale Stabilität.
+* **Nova**: Erhält neue Funktionen nach jedem Release. Das ist der Standard.
+
+Es ist immer nur ein Kanal aktiv. Wählen Sie **Vesta**, wenn die Organisation auf einer bewährten Version bleiben und nur Fehlerkorrekturen erhalten soll; wählen Sie **Nova**, um mit jedem Release neue Funktionen zu erhalten. Bestätigen Sie die Änderung mit **Speichern** – die Umstellung wirkt innerhalb einer Minute.
+
+Was die beiden Kanäle voneinander unterscheiden, beschreibt die Seite [DocBits Release-Lebenszyklus-Strategie](../../../../overview-and-basics/docbits-release-lifecycle-strategy.md).
+
+## Zwei-Faktor-Authentifizierung
+
+Der Abschnitt **Zwei-Faktor-Authentifizierung** legt fest, ob Mitglieder dieser Organisation bei der Anmeldung mit Passwort eine Zwei-Faktor-Authentifizierung (MFA) verwenden müssen. Wählen Sie die Abschnittsüberschrift, um ihn auf- oder zuzuklappen. Den Abschnitt sehen nur Organisationsadministratoren.
+
+<figure><img src="../../../../.gitbook/assets/company-mfa-requirement-de-20261111.png" alt="Aufgeklappter Abschnitt „Zwei-Faktor-Authentifizierung“ mit dem Schalter für die MFA-Pflicht, dem Hinweis zu SSO-Anmeldungen und dem Feld „MFA-Nutzung“"><figcaption><p>Der Abschnitt „Zwei-Faktor-Authentifizierung“ auf Deutsch. Unter dem Schalter zeigt das Feld „MFA-Nutzung“, wie viele Mitglieder bereits einen zweiten Faktor verwenden.</p></figcaption></figure>
+
+Schalten Sie **Zwei-Faktor-Authentifizierung für alle Mitglieder erzwingen** ein, um von allen Mitgliedern der Organisation einen zweiten Faktor bei der Passwort-Anmeldung zu verlangen. Passwort-Anmeldungen werden dann blockiert, bis das Mitglied einen zweiten Faktor eingerichtet hat. Anmeldungen über Single Sign-on (SSO) sind ausgenommen – dort erzwingt der Identity Provider bereits MFA.
+
+Das Feld **MFA-Nutzung** zeigt, wie verbreitet ein zweiter Faktor in Ihrer Organisation ist: den Prozentsatz und die Anzahl der Mitglieder mit aktiver MFA sowie die Aufteilung nach Authenticator-App, E-Mail und Passkey. Wählen Sie **Speichern**, um eine geänderte Anforderung zu übernehmen.
+
+Wie Mitglieder ihren zweiten Faktor einrichten, beschreibt die Seite [Zwei-Faktor-Authentifizierung (Admin)](two-factor-authentication.md).
+
+## Einstellungs-Assistent
+
+Der Abschnitt **Assistenten** schaltet die Assistenten für Ihre Organisation ein oder aus. Wählen Sie die Abschnittsüberschrift, um ihn aufzuklappen. Den Abschnitt sehen nur Organisationsadministratoren.
+
+<figure><img src="../../../../.gitbook/assets/company-settings-assistant-de-20261111.png" alt="Aufgeklappter Abschnitt „Assistenten“ mit dem Schalter „Einstellungs-Assistent aktivieren“, dem Validierungs-Assistenten und der Sprachausgabe für Erklärvideos"><figcaption><p>Der Abschnitt „Assistenten“ auf Deutsch. Der Einstellungs-Assistent hat einen eigenen Schalter; Validierungs-Assistent und Sprachausgabe für Erklärvideos sind eigene Funktionen.</p></figcaption></figure>
+
+Der **Einstellungs-Assistent** ist ein Chat im Einstellungsbereich. Er liest die Konfiguration Ihrer Organisation und beantwortet Fragen zu den Einstellungen. Schalten Sie **Einstellungs-Assistent aktivieren** ein, damit Ihr Team ihn nutzen kann. Die Änderung wird sofort übernommen; ein weiterer Speichern-Schritt ist nicht nötig.
+
+Eine Änderung an den Einstellungen wird erst vorgenommen, nachdem ein Administrator die Vorschau bestätigt hat.
+
+Im selben Abschnitt liegen zwei weitere Schalter: **Validierungs-Assistent aktivieren** (ein Chat in der Dokument-Validierung, der erklärt, welche Felder ein Dokument blockieren) und **Sprachausgabe für Erklärvideos**. Beide sind eigene Funktionen; das Umschalten des Einstellungs-Assistenten wirkt sich nicht auf sie aus. Die Sprachausgabe lässt sich erst umschalten, wenn der Validierungs-Assistent eingeschaltet ist.
+
+Wie Sie den Assistenten öffnen und was er kann, beschreiben die Seiten [Einstellungs-Assistent](settings-assistant.md) und [Einstellungs-Assistent: Was der Chat kann](settings-assistant-chat.md).
+
 ## Unternehmenseinstellungen
 
 Konfigurieren Sie unternehmensweite Standardeinstellungen:

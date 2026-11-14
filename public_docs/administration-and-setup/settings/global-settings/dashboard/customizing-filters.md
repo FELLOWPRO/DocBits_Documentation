@@ -1,19 +1,27 @@
 # Personalizar filtros
 
-La búsqueda del **Panel** filtra documentos. La configuración administrativa del panel permite ajustar la presentación de los filtros de estado.
+Los filtros del Panel limitan la lista de documentos de la búsqueda actual. La configuración del **filtro de estado** es independiente: decide qué estados ofrece el filtro de estado del Panel.
 
-## Buscar documentos con filtros rápidos
+## Filtrar la lista de documentos
 
-En el Panel, sitúe el cursor en la búsqueda y pulse la flecha abajo para abrir el menú. Elija un filtro rápido o un campo y complete el criterio que solicite la interfaz. La imagen muestra la parte inferior del menú, desplazada hasta las últimas opciones.
+Abra el Panel y utilice el campo de búsqueda o los controles de filtro. El menú de filtros rápidos ofrece accesos como **Vencido**, **Próximo a vencer**, **Asignado a mí**, **Pendiente de validación**, **Coincidencia completa de la orden de compra** y **Coincidencia parcial de la orden de compra**.
 
-<figure><img src="../../../../.gitbook/assets/site-complete-dashboard-smart-filters-es.png" alt="Parte inferior del menú real de filtros rápidos, desplazada hasta las últimas opciones. Se muestran filtros de conciliación de pedidos y campos estándar. «Bajo coincidencia de PO» es una etiqueta defectuosa. No se seleccionó ningún filtro ni se introdujo una consulta."><figcaption><p>Parte inferior del menú real de filtros rápidos, desplazada hasta las últimas opciones. Se muestran filtros de conciliación de pedidos y campos estándar. «Bajo coincidencia de PO» es una etiqueta defectuosa. No se seleccionó ningún filtro ni se introdujo una consulta.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/customizing-filters-quick-filters-es-20261113.png" alt="Menú de filtros rápidos abierto sobre la lista de documentos del Panel. Se ven las entradas Vencido, Próximo a vencer, Asignado a mí, Bandeja de hoy, Pendiente de validación, Documentos electrónicos y las entradas de la orden de compra; la lista continúa hacia abajo y la entrada Vencido tiene el foco del teclado. Los nombres de archivo, la organización y los usuarios son datos de ejemplo inventados."><figcaption><p>Menú de filtros rápidos del Panel con datos de ejemplo inventados.</p></figcaption></figure>
 
-Revise la consulta y los resultados cuando termine la carga. Compruebe que los documentos mostrados cumplen los criterios deseados. Las etiquetas del menú no acreditan por sí solas que se haya ejecutado una conciliación o que un documento haya alcanzado un estado concreto.
+Puede combinar varios filtros. Para quitar uno, haga clic en la **X** de su etiqueta. El filtrado solo cambia los documentos que ve; no modifica los valores extraídos de un documento, su aprobación ni su estado de exportación.
 
-## Configurar los filtros de estado del panel
+## Configurar el filtro de estado
 
-Abra **Ajustes → Panel** y despliegue **Filtros**. Revise **Estilo de filtro de estado** y, cuando corresponda, **Filtro de estado personalizado**. La opción Custom sigue en inglés y significa personalizado.
+Abra **Ajustes → Panel → Filtros** y elija un **Estilo de filtro de estado**:
 
-<figure><img src="../../../../.gitbook/assets/site-complete-dashboard-status-filters-es.png" alt="Configuración actual de los filtros de estado del panel. La opción fija Custom sigue en inglés y significa personalizado. No se modificó el estilo ni se pulsó Aplicar."><figcaption><p>Configuración actual de los filtros de estado del panel. La opción fija Custom sigue en inglés y significa personalizado. No se modificó el estilo ni se pulsó Aplicar.</p></figcaption></figure>
+* **Todo** muestra la lista completa de estados.
+* **Estático** muestra una lista predefinida más corta.
+* **A medida** le permite elegir los estados que necesita su organización.
 
-El botón **Aplicar** guarda un cambio deliberado de esta configuración administrativa. Para estas imágenes no se modificó el estilo ni la selección de estados, no se pulsó Aplicar y no se seleccionó un filtro en la búsqueda de documentos.
+<figure><img src="../../../../.gitbook/assets/customizing-filters-status-options-es-20261113.png" alt="Desplegable Estilo de filtro de estado abierto en la tarjeta Filtros de los ajustes del Panel. Las opciones son Todo, Estático y A medida; Todo está marcada como valor actual."><figcaption><p>Los tres estilos de filtro de estado.</p></figcaption></figure>
+
+Cambiar el estilo se guarda de inmediato. Con **A medida**, elija los estados en **Filtro de estado personalizado** y haga clic en **Aplicar**. Si aplica una lista vacía, el estilo vuelve a **Todo**.
+
+<figure><img src="../../../../.gitbook/assets/customizing-filters-status-filter-card-es-20261113.png" alt="Ajustes y Panel en la aplicación en español. La tarjeta Filtros está desplegada y muestra el control Estilo de filtro de estado con el valor Todo; las tarjetas General, Historial de exportaciones y Acción están plegadas."><figcaption><p>La configuración del filtro de estado en los ajustes del Panel.</p></figcaption></figure>
+
+Los administradores de la organización definen el valor predeterminado para la organización. Cuando otros usuarios tienen acceso a estos controles, su selección se guarda como preferencia personal y prevalece sobre el valor predeterminado de la organización.

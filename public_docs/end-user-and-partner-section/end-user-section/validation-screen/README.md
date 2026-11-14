@@ -36,11 +36,15 @@ Si el número de factura no se ha leído correctamente:
 4. Comprueba el valor y el área de origen resaltada. Repite la selección si el número está incompleto o corresponde a otro campo.
 5. Guarda el documento. Para conservar el aprendizaje de extracción, utiliza también **Save Rules** y confirma el diálogo.
 
-<figure><img src="../../../.gitbook/assets/validation-source-selection-es-2026-v2.png" alt="El número seleccionado en el original y su asociación al campo. Confirma la asociación antes de guardar la regla."><figcaption><p>El número seleccionado en el original y su asociación al campo. Confirma la asociación antes de guardar la regla.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-source-selection-es-2026.png" alt="El número seleccionado en el original y su asociación al campo. Confirma la asociación antes de guardar la regla."><figcaption><p>El número seleccionado en el original y su asociación al campo. Confirma la asociación antes de guardar la regla.</p></figcaption></figure>
 
 {% hint style="info" %}
 Escribir un valor de reemplazo corrige este documento, pero no crea la asociación al área de origen necesaria para este aprendizaje. Selecciona el valor en el original, confirma la asociación y guarda la regla para reutilizarla en documentos correspondientes de este proveedor. Este aprendizaje a partir de la imagen no está disponible para documentos leídos directamente como datos de factura electrónica.
 {% endhint %}
+
+### Los botones de la ventana emergente del valor del campo
+
+Al seleccionar un área del documento se abre una pequeña ventana emergente con botones redondos sobre la selección. Pasa el cursor sobre un botón para leer qué hace: eliminar el valor extraído, borrarlo o confirmar la asignación. La información sobre herramientas aparece tras una breve pausa y utiliza el mismo texto que el nombre accesible del botón.
 
 ## Guardar, conservar las reglas y continuar
 
@@ -59,6 +63,8 @@ Un borde rojo o un icono de aviso llama la atención sobre un campo. Lee su mens
 Compara proveedor, número, fechas, importes y moneda con el original. Para los totales, revisa los campos de cabecera afectados y las líneas correspondientes. Corrige la causa indicada antes de continuar.
 
 Algunos mensajes proceden de una regla con la gravedad **Advertencia**. No desaparecen por sí solos: selecciona **Reconocer** bajo el campo para confirmar el valor y el mensaje se sustituye por **Entendido. Cambiar el valor vuelve a preguntar.** Si modificas el valor después, la advertencia vuelve y tienes que confirmarla de nuevo. Un campo que muestra un error estricto debe corregirse: no hay botón para él.
+
+Si solo las advertencias impiden guardar o exportar, la pantalla muestra el texto de advertencia del campo en un aviso ámbar con el botón **Acknowledge**, y se desplaza hasta ese campo. El mismo botón confirma de una vez todos los campos advertidos, como el enlace bajo un campo. Un error real sigue generando el mensaje rojo **One or more fields needs validation.**
 
 Los controles dependen del tipo de documento y de la configuración de la organización; consulta [Comprobaciones automáticas](automatic-checks-on-the-validation-screen.md).
 
@@ -105,3 +111,5 @@ En las facturas, **Más opciones → Flujo de documentos** abre el recorrido de 
 ## Si no puedes editar o continuar
 
 Lee el motivo mostrado: el documento puede estar bloqueado, ser de solo lectura, estar en otro estado o tener restricciones por tu rol. Resuelve los mensajes y consulta a la persona responsable o al administrador sobre acceso y configuración. Si el error persiste, consulta [Solución de problemas](troubleshooting/README.md) o prepara un ticket con el documento y el mensaje exacto.
+
+Para organizar las páginas, consulta [Dividir un PDF y organizar sus páginas](../dashboard/manual-pdf-splitting.md).

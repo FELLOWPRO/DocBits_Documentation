@@ -1,51 +1,80 @@
 # Editor de diseños
 
-Utilice el editor de diseños para organizar los campos y los controles que las personas ven al validar o aprobar un documento. Cada diseño está asociado a un tipo de documento, un origen y un tipo de diseño. Antes de guardar cambios, compruebe qué diseño está abierto.
+Utilice el Layout Builder para organizar los campos y los controles que las personas ven al validar o aprobar un documento. Un diseño pertenece a un tipo de documento, un origen y un tipo de diseño, así que compruebe esos tres datos en la parte superior de la página antes de guardar.
+
+{% embed url="https://youtu.be/-m45XGiIeig" %}
+DocBits Layout Builder Tutorial: Create Custom Document Layouts for Faster, Cleaner Validation
+{% endembed %}
 
 ## Abrir el diseño
 
-1. Abra **Configuración → Tipos de Documento**.
-2. Abra el editor de diseños del tipo o subtipo de documento que necesite. Si no está disponible, puede que un administrador deba activar el módulo para su organización.
-3. Compruebe el origen seleccionado en la barra de acciones y el tipo de editor indicado junto a él.
+1. Abra **Settings → Document Types**.
+2. Seleccione el tipo de documento que quiera editar y abra **Layout Builder**. Para un subtipo de documento, abra la acción Layout Builder de ese subtipo.
+3. Compruebe la cabecera. El selector de la izquierda es el **origin** (por ejemplo **Default**), seguido de **Document Type** (por ejemplo **Invoice**) y **Layout type** (por ejemplo **Field Validation**). Cada selector abre una lista; si elige otra entrada, se carga ese diseño. Si Layout Builder no está disponible, puede que un administrador deba activar el módulo para su organización.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-current-es.png" alt="Vista parcial del editor: las secciones Grupos, Campos y Elementos de formulario a la izquierda y un ejemplo simplificado de diseño de factura en el centro."><figcaption><p>Vista parcial del editor: las secciones Grupos, Campos y Elementos de formulario a la izquierda y un ejemplo simplificado de diseño de factura en el centro.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/layout-builder-overview.png" alt="El Layout Builder de una factura en DocBits, con los selectores de origin, Document Type y Layout type, las pestañas Structure, Fields y Elements, el lienzo del diseño y el panel Properties a la derecha"><figcaption><p>El Layout Builder: los selectores de la cabecera, las listas de elementos a la izquierda, el lienzo en el centro y el panel Properties a la derecha.</p></figcaption></figure>
 
-Al cambiar **Origen**, DocBits puede crear un diseño independiente para ese origen. Confirme el origen antes de editar.
+## Trabajar con la cabecera
 
-## Conocer las áreas del editor
+* **Document Type** y **Layout type** cambian de diseño. La página vuelve a cargar el diseño que elija.
+* Junto a **Save**, DocBits indica si el diseño tiene **unsaved changes**. Después de guardar, indica cuándo se guardó el diseño por última vez.
+* **Save** almacena el diseño del tipo de documento, el origen y el tipo de diseño seleccionados.
+* El menú **More** (tres puntos) contiene **Auto Generate template**, **Apply Default layout to Origins**, **Use default template**, **Edit JSON**, **Copy JSON** y **Layout settings**. **Auto Generate template** y **Use default template** sustituyen un diseño personalizado, así que compruebe primero el tipo de documento y el diseño seleccionados. **Edit JSON** es para la configuración avanzada y solo debe utilizarse cuando se conoce el formato de la plantilla.
+* Si sale de la página con cambios sin guardar, DocBits pregunta si desea guardarlos o descartarlos.
 
-A la izquierda puede alternar entre **Elementos**, **Propiedades** y la configuración general, representada por un engranaje.
+## Buscar elementos: Structure, Fields y Elements
 
-* La pestaña **Elementos** contiene las secciones **Grupos**, **Campos** y **Elementos de formulario**. Abra cada sección para consultar los grupos, campos y controles disponibles.
-* La zona central muestra los grupos y campos del diseño. Los grupos permiten organizar campos relacionados.
-* A la derecha se encuentra la vista del documento de ejemplo, donde puede consultar el documento y ajustar el zoom.
+El lado izquierdo tiene tres pestañas:
 
-Arrastre un elemento desde la sección correspondiente de la izquierda hasta la zona del diseño para añadir un grupo, un campo o un control de formulario.
+| Pestaña | Uso |
+| --- | --- |
+| **Structure** | Ver el diseño como un árbol. Los grupos y sus campos aparecen en el orden en que se muestran en el lienzo, con el número de campos colocados y disponibles. |
+| **Fields** | Todos los campos configurados para el tipo de documento, agrupados por grupo de campos y contraídos de forma predeterminada. El filtro alterna entre los campos **All**, **Unused** y **Hidden**, y el nombre técnico del campo se muestra bajo la etiqueta del campo. |
+| **Elements** | Controles de presentación e interacción como Text, Label, Check Box, separadores, tablas, botones y subgrupos. |
 
-<figure><img src="../../../.gitbook/assets/layout-builder-fields-current-es.png" alt="Los campos Número de factura y Fecha del grupo de ejemplo. En este diseño, cada campo ocupa el 50 % del ancho del grupo."><figcaption><p>Los campos Número de factura y Fecha del grupo de ejemplo. En este diseño, cada campo ocupa el 50 % del ancho del grupo.</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/layout-builder-structure.png" alt="La pestaña Structure del Layout Builder con los grupos Invoice details, Payment details, Purchase Order y Delivery Details desplegados en sus campos"><figcaption><p>La pestaña Structure muestra el diseño construido como un árbol de grupos y campos.</p></figcaption></figure>
 
-Configure los campos reutilizables en [Tipos de Documento](README.md). Los campos disponibles dependen del tipo de documento seleccionado y de su configuración.
+Seleccione un elemento para añadirlo o arrástrelo al lienzo. El título de un grupo indica a la persona que valida el documento qué corresponde a esa sección. Cree o renombre los campos de documento reutilizables en [Document Types](README.md) primero.
+
+## Trabajar en el lienzo
+
+* **Main layout** muestra el diseño del propio documento. **Table** muestra el diseño de tabla que se utiliza para las líneas.
+* **Document** abre o cierra el documento de ejemplo junto al lienzo, para que pueda comparar el diseño con un documento real.
+* Los grupos se dibujan como tarjetas; los campos de un grupo pueden organizarse en filas y tener anchos distintos.
 
 ## Cambiar las propiedades de un elemento
 
-Seleccione un grupo o campo en la zona del diseño y abra **Propiedades** a la izquierda. Las opciones dependen del elemento seleccionado e incluyen, por ejemplo, la etiqueta, el nombre técnico, el ancho y el comportamiento.
+Seleccione un elemento o un grupo en el lienzo. **Properties** a la derecha está siempre visible y se organiza en secciones:
 
-<figure><img src="../../../.gitbook/assets/layout-builder-properties-current-es.png" alt="Propiedades del campo seleccionado: su etiqueta, su nombre técnico y el ancho del elemento en porcentaje."><figcaption><p>Propiedades del campo seleccionado: su etiqueta, su nombre técnico y el ancho del elemento en porcentaje.</p></figcaption></figure>
+* **Display** – etiqueta, nombre del campo, posición de la etiqueta y ancho del elemento.
+* **Behaviour** – solo lectura, oculto e índice de tabulación.
+* **Values & lists** – los valores que se ofrecen para el elemento.
+* **Automation** – reglas que rellenan o cambian el elemento.
+* **Borders & spacing** – la apariencia del elemento.
 
-En los campos predefinidos, la etiqueta y el nombre técnico pueden no ser editables. Según el tipo de elemento, también puede configurar el modo de solo lectura, la visibilidad, el orden de tabulación, listas de valores y la ejecución de un flujo de trabajo o un script cuando cambie el valor. Las opciones de grupos y campos no son iguales.
+Para el ancho, elija uno de los valores preestablecidos (25, 33, 50, 66, 75 o 100 por ciento) en lugar de escribir un valor; compruebe el resultado en el lienzo. Las secciones y opciones que aparecen dependen del elemento seleccionado. Para más detalles, consulte [Configuring Field Properties](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
 
-Compruebe el resultado en la zona del diseño después de modificar las propiedades. El ancho se introduce como porcentaje mediante un control numérico; los grupos y sus campos pueden tener anchos distintos. Consulte [Configurar las propiedades de los campos](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
+## Traducir las etiquetas de los botones
 
-## Plantillas y JSON
+Los botones como **Save Rules**, **Auto Accounting**, **PO Match**, **Export**, **Export Without Validation** y **Reject** obtienen su etiqueta de una clave de traducción. El visor muestra la etiqueta en el idioma de la persona que abre el diseño. Si la clave no tiene texto para ese idioma, DocBits muestra la etiqueta guardada en el diseño.
 
-Además de guardar el diseño, la barra de acciones ofrece funciones para generar una plantilla, aplicar el diseño predeterminado a los diseños por origen, usar la plantilla predeterminada y editar JSON. Su disponibilidad depende del editor abierto.
+* Un botón independiente tiene un campo **Translation Key** en **Properties**.
+* **Invoice Buttons** agrupa varios botones. Defina la clave de un botón hijo concreto o defina una clave por hijo en la lista del panel del grupo.
 
-Generar o aplicar una plantilla puede sustituir el diseño personalizado. Compruebe antes el tipo de documento, el origen y el diseño actual. **Editar json** se utiliza para la configuración avanzada y requiere conocer el formato de la plantilla. La copia de la configuración está disponible dentro del diálogo JSON.
+Los diseños creados antes de este cambio conservan sus etiquetas: DocBits les asigna la clave predeterminada de cada tipo de botón. Los diseños guardados con una clave conservan esa clave, también después de recargar.
+
+## Save and go back to Dashboard
+
+Un botón del tipo **Save and go back to Dashboard** almacena los valores del documento como **Save** y después abre el Dashboard. El tipo es adecuado para diseños en los que un revisor trabaja una cola de documentos uno tras otro.
+
+* Añada un elemento de botón en el lienzo y elija el tipo en sus **Properties**.
+* Si el guardado falla, el botón permanece en la pantalla de validación y no abre el Dashboard, de modo que el problema puede corregirse primero.
+* La etiqueta se resuelve como la etiqueta de cualquier otro botón; véase *Traducir las etiquetas de los botones* arriba.
 
 ## Revisar y guardar
 
-Organice los grupos y los campos y compruebe el resultado en la zona del diseño. Cuando sea correcto, utilice **Guardar** en la barra de acciones. Para diseños específicos de un origen, consulte [Diseños por origen](origin-layouts.md).
+Organice los grupos y los campos, compruebe el diseño en el lienzo y utilice **Save** en la cabecera cuando el resultado sea correcto. Para diseños específicos de un origen, consulte [Origin Layouts](origin-layouts.md).
 
 {% hint style="info" %}
-Las ilustraciones utilizan un ejemplo simplificado de diseño de factura. Los nombres de campo y las opciones disponibles dependen de su configuración.
+Las capturas muestran ajustes sintéticos en la organización de pruebas de DocBits con inglés seleccionado en la aplicación. No se guardó ni se sustituyó ningún diseño durante su captura.
 {% endhint %}

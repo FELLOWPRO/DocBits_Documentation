@@ -12,7 +12,7 @@ Betrachten Sie es als ein Team, das Sie führen, und nicht als ein Werkzeug, das
 * Der Plan wird in **Issues** (einzelne Aufgaben) unterteilt, die jeweils von einem **Spezialisten-Agenten** oder einem **Menschen** bearbeitet werden.
 * Die Spezialisten melden ihre Ergebnisse zurück, und der Orchestrator führt das Gesamtergebnis zusammen.
 
-Die _Agenten_, die diese Rollen ausfüllen, sind nicht festgelegt: DocBits liefert einen einsatzbereiten **DocBits Orchestrator** und zwei Standard-Spezialisten mit, und Sie können eigene erstellen (siehe [Agenten](./#agents)).
+Die _Agenten_, die diese Rollen ausfüllen, sind nicht festgelegt: DocBits liefert einen einsatzbereiten **DocBits Orchestrator** und zwei Standard-Spezialisten mit, und Sie können eigene erstellen (siehe [Agenten](./#agenten)).
 
 Ein typischer Durchlauf von Anfang bis Ende: Eine Rechnung trifft per E-Mail ein → eine Mission wird erstellt → der Orchestrator plant sie und verteilt Issues an die Spezialisten (klassifizieren, extrahieren, validieren, PO-Abgleich) → ein sensibler Schritt pausiert im **Posteingang**, damit ihn ein Mensch genehmigt → nach der Genehmigung wird das Dokument exportiert und die Mission abgeschlossen. Das gesamte Geschehen verfolgen Sie über das **Dashboard**, halten zusammengehörige Durchläufe in **Projekten** zusammen und greifen über den **Posteingang** und die **Issues** ein, wann immer eine menschliche Entscheidung erforderlich ist.
 
@@ -25,6 +25,47 @@ AI Workforce wird pro Organisation über die Haupteinstellungen aktiviert.
 3. Bestätigen Sie das Abonnement im daraufhin angezeigten Dialog.
 
 Nach der Aktivierung erscheint **AI Workforce** in der Hauptnavigationsleiste, und der Arbeitsbereich steht Ihrer Organisation zur Verfügung.
+
+## Missionskontrolle
+
+**Missionskontrolle** ist die Kommandozentrale, in der Sie **Missionen starten und live verfolgen**. Sie öffnen sie über die Seitenleiste der AI Workforce. Die Seite besteht aus drei Teilen:
+
+<figure><img src="../../.gitbook/assets/ai-workforce-1-mission-control-de-20261111.png" alt="Missionskontrolle mit Missionskarten, dem Orchestrator-Chat und dem geöffneten Posteingang"><figcaption><p>Missionskontrolle: oben die Missionskarten, in der Mitte der Orchestrator-Chat und rechts der Posteingang</p></figcaption></figure>
+
+* **Missionskarten** – die Leiste oben zeigt die aktuell aktiven Missionen mit ihrem Status, ihrem Fortschritt und der Anzahl der Probleme. Ein Klick auf eine Karte öffnet die Mission.
+* **Orchestrator-Chat** – die Mitte der Seite. Beschreiben Sie in einfacher Sprache, was erledigt werden soll, zum Beispiel _„Verarbeiten Sie alle Lieferantenrechnungen, die diese Woche eingegangen sind, und gleichen Sie sie mit ihren Bestellungen ab“_, und klicken Sie auf **Senden**. Der Orchestrator plant die Arbeit und startet die Mission; seine Antworten verfolgen Sie im selben Chat.
+* **Posteingang** – das ein- und ausklappbare Panel rechts zeigt ausstehende Genehmigungsanfragen (siehe [Posteingang](./#posteingang)). Klicken Sie auf eine Anfrage, um sie zu lesen, und wählen Sie **Genehmigen**, **Ablehnen** oder antworten Sie dem Agenten; eine Anfrage, die keine Entscheidung braucht, können Sie beiseitelegen. Die Zahl am Panel zeigt, wie viele Anfragen warten. Dieselben Anfragen erscheinen auch unter **Posteingang** in der Seitenleiste.
+
+Um eine Mission zu erstellen, können Sie in der Seitenleiste der AI Workforce auch **Neue Mission** wählen – dieser Eintrag führt zum selben Chat.
+
+## Agentenliste
+
+Die **Agentenliste** zeigt alle Agenten Ihrer Organisation auf einen Blick – den **Router**, Ihre **Orchestratoren** und alle **Spezialisten** – in dieser Reihenfolge gruppiert.
+
+<figure><img src="../../.gitbook/assets/ai-workforce-2-agent-list-de-20261111.png" alt="Agentenliste mit den Bereichen Router, Orchestratoren und Agenten sowie der Schaltfläche Agent erstellen"><figcaption><p>Agentenliste: oben der Router, dann die Orchestratoren, dann die Spezialisten; die Legende unterscheidet System- und benutzerdefinierte Agenten</p></figcaption></figure>
+
+Jede Karte zeigt den **Namen** des Agenten, seine **Rolle**, die **Skills**, die er nutzen darf, und seinen aktuellen Status. Von der Karte aus können Sie:
+
+* **Den Agenten öffnen** – klicken Sie auf die Karte, um sein vollständiges Profil mit allen [Agenteneinstellungen](./#agenteneinstellungen) zu öffnen.
+* **Aktivieren oder deaktivieren** – verwenden Sie den Schalter auf den Karten der Orchestratoren. Das System lässt Sie einen Orchestrator nur dann abschalten, wenn mindestens ein weiterer Orchestrator aktiv bleibt; sind zwei oder mehr Orchestratoren aktiv, übernimmt der **Router** die Verteilung (siehe [Hierarchie- und Aktivierungsregeln](./#hierarchie-und-aktivierungsregeln)).
+* **Bearbeiten oder löschen** – benutzerdefinierte Agenten (in der Legende als **Benutzerdefiniert** gekennzeichnet) haben ein Menü mit diesen beiden Aktionen; Systemagenten lassen sich konfigurieren, aber nicht löschen.
+* **Agent erstellen** – die Schaltfläche oben rechts startet den Assistenten für einen neuen Agenten (siehe [Benutzerdefinierte Agenten erstellen](./#erstellen-benutzerdefinierter-agenten)).
+
+Die Legende oben unterscheidet **System**- und **Benutzerdefiniert**-Agenten, damit Sie immer erkennen, was mit DocBits gekommen ist und was Sie selbst erstellt haben.
+
+## Aktivitäten
+
+**Aktivitäten** ist das Protokoll dessen, was in Ihrer AI Workforce passiert ist. Jede Änderung – eine erstellte Mission, ein aktualisiertes Problem, eine ausgelöste Genehmigungsanfrage – erscheint hier als Zeile mit drei Angaben:
+
+<figure><img src="../../.gitbook/assets/ai-workforce-3-activities-de-20261111.png" alt="Aktivitätenprotokoll mit Filtern nach Entität, Aktion und Akteur und einer Liste der letzten Änderungen"><figcaption><p>Aktivitäten: jede Zeile zeigt den betroffenen Bereich, was passiert ist, wer es getan hat und wann</p></figcaption></figure>
+
+* der **Bereich**, zu dem die Änderung gehört – Posteingang, Probleme, Missionen, Projekte, Agenten oder Agentenläufe – als farbiges Abzeichen auf der linken Seite;
+* die **Aktion**, die ausgeführt wurde – zum Beispiel erstellt, aktualisiert, genehmigt oder abgelehnt – als zweites Abzeichen;
+* die **Zusammenfassung** der Änderung, der **Akteur**, der sie ausgelöst hat (ein Agent oder eine Person), und die **Uhrzeit**.
+
+Nutzen Sie das **Suchfeld**, um einen bestimmten Eintrag zu finden, und die drei Auswahllisten über der Liste, um nach **Bereich** (Entität), **Aktion** und **Akteur** zu filtern. Ein Klick auf eine Zeile springt zum zugehörigen Element – zum Beispiel zu der Mission oder dem Problem, um das es geht. Mit **Einträge pro Seite** legen Sie fest, wie viele Einträge gleichzeitig angezeigt werden, und mit den Pfeilen unten rechts blättern Sie durch längere Verläufe.
+
+Das Aktivitätenprotokoll beantwortet die Frage _„Was hat die AI Workforce gerade getan, und wer hat es getan?“_ – nützlich nach einer Genehmigung, wenn Sie prüfen möchten, warum ein Dokument auf eine bestimmte Weise klassifiziert wurde, oder wenn Sie nachvollziehen wollen, was Ihre benutzerdefinierten Agenten getan haben.
 
 ## Dashboard
 
@@ -41,7 +82,7 @@ Zu den verfügbaren Widgets gehören:
 
 ## Posteingang
 
-Der **Posteingang** ist der Ort, an dem Arbeit auf **menschliche Aufmerksamkeit** wartet. Wenn ein Agent im Begriff ist, ein Tool auszuführen, das eine Freigabe erfordert, pausiert er die Aufgabe und stellt hier eine **Genehmigungsanfrage**. Dies ist Human-in-the-Loop (HITL): Die Aktion wird erst ausgeführt, wenn ein Mensch entscheidet. Ob ein bestimmtes Tool eine Freigabe benötigt, wird durch den **Genehmigungsmodus** des Agenten und die **Kritisch**-Markierungen seiner Tools bestimmt (siehe [Agenteneinstellungen](./#agent-settings)).
+Der **Posteingang** ist der Ort, an dem Arbeit auf **menschliche Aufmerksamkeit** wartet. Wenn ein Agent im Begriff ist, ein Tool auszuführen, das eine Freigabe erfordert, pausiert er die Aufgabe und stellt hier eine **Genehmigungsanfrage**. Dies ist Human-in-the-Loop (HITL): Die Aktion wird erst ausgeführt, wenn ein Mensch entscheidet. Ob ein bestimmtes Tool eine Freigabe benötigt, wird durch den **Genehmigungsmodus** des Agenten und die **Kritisch**-Markierungen seiner Tools bestimmt (siehe [Agenteneinstellungen](./#agenteneinstellungen)).
 
 Jedes Posteingangs-Element zeigt den Titel der Anfrage, den Agenten, der sie ausgelöst hat, und eine kurze Beschreibung dessen, was eine Entscheidung erfordert. Von einem Element aus können Sie:
 
@@ -99,7 +140,7 @@ Agenten sind die Arbeitskräfte. Jeder Agent hat eine **Rolle**, die bestimmt, w
 DocBits liefert die AI Workforce einsatzbereit mit diesen Standard-Agenten:
 
 * **DocBits Orchestrator** – der Standard-Orchestrator.
-* **Document Processor** – importiert und verarbeitet hochgeladene Dokumente.
+* **Dokumentenverarbeitung** – importiert und verarbeitet hochgeladene Dokumente.
 * **Email Reply** – verfasst und sendet Antworten an den Absender.
 
 Dies sind **Systemagenten**: Sie können Teile davon konfigurieren, aber Sie können sie nicht löschen. Zusätzlich dazu können Sie eigene Orchestratoren und Spezialisten erstellen.
@@ -125,7 +166,7 @@ Jeder Agent – ob System- oder benutzerdefinierter Agent – verfügt über ein
   * **Medium** _(Standard)_ – ausgewogenes Verhältnis von Qualität und Kosten.
   * **High** – tiefgründiges Reasoning für schwierigere Aufgaben; höhere Kosten.
   * **X-High** – maximales Reasoning; höchste Kosten.
-* **Genehmigungsmodus** – wie viel der Arbeit des Agenten eine menschliche Freigabe im [Posteingang](./#inbox) erfordert:
+* **Genehmigungsmodus** – wie viel der Arbeit des Agenten eine menschliche Freigabe im [Posteingang](./#posteingang) erfordert:
   * **None** – der Agent führt jedes Tool automatisch aus; nichts wird zur Genehmigung geschickt.
   * **Critical** _(Standard)_ – nur als **kritisch** markierte Tools erfordern eine Genehmigung; alles andere läuft automatisch. Kritische Tools sind die sensiblen, schreibenden/externen Aktionen (zum Beispiel _Dokument hochladen/importieren_, _Dokumentfelder aktualisieren_, _auf E-Mail antworten_, _Benachrichtigung senden_). In diesem Modus löst ein kritisches Tool **immer** eine Genehmigungsanfrage im Posteingang aus. Sie können einzelne Tools feinabstimmen (ein normalerweise sicheres Tool als genehmigungspflichtig markieren oder ein kritisches freigeben) – diese Überschreibungen pro Tool gelten nur im Critical-Modus.
   * **All** – jedes Tool, das der Agent ausführt, erfordert eine Genehmigung.

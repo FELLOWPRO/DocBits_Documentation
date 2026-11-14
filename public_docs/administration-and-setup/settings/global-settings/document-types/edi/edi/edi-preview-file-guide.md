@@ -1,79 +1,29 @@
 # EDI Voorbeeldbestand Gids
 
-## 1. Overzicht
+Het **PREVIEW**-bestand bepaalt hoe een gestructureerd EDI-document leesbaar voor mensen wordt weergegeven. In DocBits is het een **XSLT**-configuratie, los van de JSON-toewijzing **EXTRACTION PATHS**. Gebruik deze gids als u elektronische documentformaten voor uw organisatie beheert.
 
-Het **Voorbeeldbestand** bepaalt hoe gestructureerde XML-gegevens worden weergegeven in een menselijk leesbaar, op PDF lijkend formaat. Het combineert **HTML en CSS** voor visuele presentatie en gebruikt **XSLT** `**select**` **statements** om dynamisch gegevens in te voegen vanuit de aangepaste XML. Dit voorbeeld wordt weergegeven tijdens **veldvalidatie** en wordt ook opgenomen wanneer documenten worden geëxporteerd naar **IDM**.
+## Het voorbeeldbestand vinden
 
-## 2. Doel en Functie
+1. Ga naar **Instellingen → Documenttypen** en open **E-Doc** voor het betreffende documenttype.
+2. Vouw het elektronische formaat uit, bijvoorbeeld **EDI**.
+3. Selecteer de regel **PREVIEW** met het type **XSLT**. Klik nog niet op **Voorvertoning**; die knop opent pas een testpaneel als de configuratie is ingevuld.
 
-* Converteert machineleesbare aangepaste XML naar een visueel opgemaakt voorbeeld (PDF).
-* Maakt mensvriendelijke beoordeling en validatie van geëxtraheerde gegevens mogelijk.
-* Zorgt voor consistente weergave van belangrijke documentvelden zoals koppen, tabellen, totalen, enz.
-* Gebouwd met behulp van **HTML + CSS** voor lay-out en ontwerp, en **XSLT** voor het binden van gegevens aan de lay-out.
+<figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-list-nl-20261114.png" alt="EDI-lijst van de DocBits-sandbox met de aparte regels PREVIEW van het type XSLT en EXTRACTION PATHS van het type JSON, met de kolommen Naam, Status, Type, Versie en Laatst gewijzigd op en de status Standaard"><figcaption>Kies in de EDI-lijst de regel PREVIEW met het type XSLT.</figcaption></figure>
 
-## 3. Toegang & Basisbewerking
+## De editor en versies begrijpen
 
-#### **Toegang tot het bestand:**
+De detailpagina toont links de velden **Documenttype** en **Elektronisch documenttype** en daaronder het blok **Version** met de beschikbare versies. **Actief** markeert de versie die nu wordt gebruikt. De editor rechts bevat een XSLT-stylesheet. De HTML en CSS daarin bepalen de opmaak en het uiterlijk; XSLT voegt waarden uit het gestructureerde document in. Met **Formaat** zet u de brontekst leesbaar uiteen; dat activeert geen versie.
 
-1.  Ga naar **Instellingen** → **Documenttype** → _\[Uw Document (bijv. Inkooporder)]_ → **E-Doc**.
+<figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-detail-nl-20261114.png" alt="Detailpagina van de DocBits-sandbox met Documenttype PURCHASE_ORDER, Elektronisch documenttype EDI, links de versielijst met de vermelding Actief bij versie 1 en rechts de editor PREVIEW (XSLT) met de knoppen Voorvertoning en Formaat"><figcaption>Detailweergave van een voorbeeldconfiguratie: links documenttype, elektronisch documenttype en versies, rechts het XSLT-stylesheet.</figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff6zyL0AvmqSvrogZdnox%252Fimage.png%3Falt%3Dmedia%26token%3D6bc9ab55-6ee9-43d1-b576-4c5833c208cf\&width=768\&dpr=4\&quality=100\&sign=a23de442\&sv=2)
-2. Onder het tabblad **E-Doc**, selecteer uw formaat (bijv. **EDI**).
-3.  Klik op **Voorbeeld** om het bestand te bekijken of te bewerken.
+Het potloodpictogram naast de actieve versie maakt een **concept** voor wijzigingen. Als u uw wijzigingen hebt gecontroleerd, activeert u het concept met het vinkje. Een geactiveerde versie vervangt de vorige actieve versie. Verwijder alleen een ongewenst concept, met het prullenbakpictogram.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fdo1R389GeSqFuZKLD0OP%252Fimage.png%3Falt%3Dmedia%26token%3D930903d4-44af-4188-b015-c60c2dd9d9ab\&width=768\&dpr=4\&quality=100\&sign=77bbb2ce\&sv=2)
+## Een voorbeeld testen
 
-#### **Conceptbeheer:**
+Klik rechtsboven op **Voorvertoning** om het testpaneel te openen. Voer in het veld **Document Id...** de document-ID van een geüpload EDI-document in en klik op **Test**. Controleer de weergegeven voorvertoning: zijn de labels, waarden en tabelrijen leesbaar? De afbeelding toont het testpaneel met een verzonnen voorbeeld-ID; een gerenderd resultaat is niet weergegeven.
 
-* **Maak een Concept:** Klik op het ✏️ potloodpictogram.
-* **Verwijder Concepten:** Gebruik het 🗑️ prullenbakpictogram om ongebruikte concepten te verwijderen.
-* **Wijzigingen Activeren:** Klik op het ✅ vinkje om een versie te publiceren.
-  * **Opmerking**: Het activeren van een nieuwe versie zal de vorige versie **automatisch deactiveren**.
+<figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-panel-nl-20261114.png" alt="Testpaneel van de DocBits-sandbox met het veld Document Id..., daarin een verzonnen voorbeeld-ID in de vorm 000000-0000-4000-8000-000000000006, en de knop Test, zonder gerenderd resultaat"><figcaption>Test een voorbeeldversie vóór activering met de document-ID van een geüpload EDI-document; de getoonde ID is een verzonnen voorbeeld.</figcaption></figure>
 
-## 4. HTML/XSLT/CSS Editor
+Voor het toewijzen van velden aan de XML gebruikt u de [gids voor extractiepaden](edi-extraction-paths-file-guide.md). De stap van de bronconversie staat in de [gids voor transformatie](edi-transformation-file-guide.md). Een stap-voor-stap uitleg biedt de pagina [EDI-video's](edi-videos.md).
 
-Het **Voorbeeldbestand** wordt bewerkt in een speciale editor die HTML, XSLT en CSS ondersteunt.
-
-* **HTML** definieert de structuur van het uitvoerdocument (bijv. tabellen, divs, lay-out).
-* **CSS** controleert de opmaak (bijv. lettertypen, afstand, kleuren, uitlijning).
-*   **XSLT** `**select**` **statements** worden gebruikt om velden dynamisch in te vullen vanuit de aangepaste XML, zoals:
-
-    Copy
-
-    ```
-    <xsl:value-of select="/PURCHASE_ORDER/PURCHASE_ORDER_NUMBER/text()" />
-    ```
-* U kunt ook **XSLT-logica** gebruiken (`<xsl:if>`, `<xsl:for-each>`, enz.) om conditionele weergave te behandelen of over regelitems te itereren.
-
-## 5. Voorbeeldfunctie (Uitvoer Renderen)
-
-De Voorbeeldfunctie stelt u in staat te testen en te verifiëren hoe een EDI-document wordt weergegeven met het huidige Voorbeeldbestand.
-
-#### **Gebruik:**
-
-* Upload een EDI-bestand via het standaard uploadproces.
-* Kopieer de **Document-ID** van het geüploade bestand.
-* Navigeer naar de **Voorbeeld** interface.
-* Open de **Voorbeeldfunctie**.\
-  \
-  &#x20;![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a\&width=300\&dpr=4\&quality=100\&sign=36ce2b93\&sv=2)
-* Voer de Document-ID in en klik op **Test**.
-* Het weergegeven PDF-stijl voorbeeld zal worden getoond met behulp van de HTML/CSS/XSLT-configuratie.
-
-Deze functie is cruciaal voor het debuggen van gegevensbindings, het verfijnen van de lay-out en het zorgen dat het document zowel nauwkeurig als visueel duidelijk is voor gebruikers en downstream systemen zoals **IDM**.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJH103tnbqZjuimpOniVg%252Fimage.png%3Falt%3Dmedia%26token%3D4e63cc09-b0de-488f-bdd0-ee5a9246a371\&width=768\&dpr=4\&quality=100\&sign=bfff5bba\&sv=2)
-
-## 6. Video Walkthrough
-
-Een videogids voor dit bestandstype is beschikbaar op de [Videopagina.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Gebruik het om stap voor stap de installatie, bewerking en voorbeeldweergave te volgen.
-
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-nl.png" alt="Bestaand EDI-formaat met de vier geconfigureerde attributen."><figcaption><p>Bestaand EDI-formaat met de vier geconfigureerde attributen.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-preview-nl.png" alt="Actief attribuut PREVIEW: XSLT-broncode in de editor; deze weergave toont geen gerenderd documentvoorbeeld."><figcaption><p>Actief attribuut PREVIEW: XSLT-broncode in de editor; deze weergave toont geen gerenderd documentvoorbeeld.</p></figcaption></figure>
-
-
-De weergaven tonen een bestaande configuratie en versie. De instellingen verschillen per documenttype en formaat. Valideer wijzigingen in een concept voordat u ze activeert.
-
-De afbeeldingen tonen de Nederlandstalige proceskaarten en de actieve, alleen-lezen configuratieversie. De tabnaam Builder, technische attribuutnamen en configuratiecode zijn overgenomen uit de geïllustreerde productversie.
+De weergaven tonen een bestaande configuratie en versie. De instellingen verschillen per documenttype en formaat. Controleer wijzigingen in een concept voordat u activeert.

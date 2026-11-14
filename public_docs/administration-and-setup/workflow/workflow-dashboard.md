@@ -1,8 +1,14 @@
 # Dashboard
 
-Das **Workflow-Dashboard** ist die Startseite des Workflow-Bereichs. Es zeigt, wie Ihre Workflows laufen – Ausführungssummen, Erfolgs- und Fehlerquoten, ein Diagramm der Ausführungen im Zeitverlauf und die letzte Aktivität – und bietet Zugriff auf die Workflow-Liste, den Test Manager und das Card SDK.
+Das **Workflow-Dashboard** ist die Startseite des Workflow-Bereichs. Es zeigt, wie Ihre Workflows laufen – Ausführungssummen, Erfolgs- und Ausfallrate, ein Diagramm der Ausführungen im Zeitverlauf und die letzte Aktivität – und bietet Zugriff auf die Workflow-Liste, den Testmanager und das Card SDK.
 
-<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard mit Ausführungssummen, Erfolgs- und Fehlerquoten, dem Ausführungsdiagramm und der letzten Aktivität"><figcaption><p>Das Workflow Dashboard – Ausführungssummen, Erfolgs-/Fehlerquoten und letzte Aktivität für jeden Workflow.</p></figcaption></figure>
+Die folgenden Teilansichten zeigen die Mengenkennzahlen, die Laufergebnisse und das Diagramm der Ausführungen. Letzte Aktivität und Bedienelemente liegen außerhalb dieser Ausschnitte.
+
+<figure><img src="../../.gitbook/assets/workflow-kpi-volume-de-20261112.png" alt="Mengenkennzahlen: heute ausgeführte Workflows, erstellte Workflows und Gesamtläufe"><figcaption><p>Mengenkennzahlen: <strong>Heute ausgeführter Workflow</strong>, <strong>Erstellte Workflows</strong> und <strong>Gesamtläufe</strong>, hier für die letzten 31 Tage.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-kpi-outcomes-de-20261112.png" alt="Laufergebnisse: erfolgreiche Läufe, Erfolgsquote und Ausfallrate"><figcaption><p>Laufergebnisse: <strong>Erfolgreiche Läufe</strong>, <strong>Erfolgsquote</strong> und <strong>Ausfallrate</strong>, jeweils mit Bezug auf die Gesamtläufe. Über der Quote steht eine farbige Marke, im Beispiel <strong>KRITISCH</strong> beziehungsweise <strong>GESUND</strong>.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-chart-de-20261112.png" alt="Workflow-Ausführungen über die angezeigten sieben Monate"><figcaption><p><strong>Workflow-Ausführungen</strong> über die angezeigten Monate Mai bis November, mit den Reihen <strong>Erfolg</strong> und <strong>Fehlgeschlagen</strong>.</p></figcaption></figure>
 
 ## Reiter
 
@@ -63,14 +69,14 @@ Karten mit Benutzern, Gruppen, Unterorganisationen oder Entscheidungstabellen ve
 </details>
 
 - **Dashboard** — Kennzahlen zu den Ausführungen und letzte Aktivität (oben dargestellt).
-- **Workflow-Liste** — jeder Workflow mit Typ, Ausführungsreihenfolge und Auslöser. Einen neuen Workflow legen Sie mit **Neuer Workflow** an.
+- **Workflow-Liste** — jeder Workflow mit Typ, Workflow-Ausführungsreihenfolge und Auslöser. Einen neuen Workflow legen Sie mit **Neuer Workflow** an.
 - **Testmanagerliste** — Testszenarien, die Ihre Workflows validieren; führen Sie sie mit **Alle Tests ausführen** aus.
 - **Lizenz** — Informationen zur Workflow-Lizenzierung.
 - **Card SDK** — eigene Workflow-Karten erstellen und hochladen (siehe [Card SDK](card-sdk.md)).
 
-Die Symbolleiste bietet außerdem **Vorlagen**, das die Bibliothek [Workflow Templates](standard-workflow-builder.md#workflow-templates) öffnet, und **Workflow importieren**, das einen Workflow aus einer JSON-Datei importiert.
+Die Symbolleiste bietet außerdem **Vorlagen**, das die Bibliothek [Workflow-Vorlagen](standard-workflow-builder.md#workflow-vorlagen) öffnet, und **Workflow importieren**, das einen Workflow aus einer JSON-Datei importiert.
 
-Im **Testverwaltung** können Sie Testszenarien pro Workflow speichern und gemeinsam ausführen, um zu bestätigen, dass Ihre Workflows sich nach Änderungen weiterhin korrekt verhalten:
+Mit dem **Testmanager** können Sie Testszenarien pro Workflow speichern und gemeinsam ausführen, um zu bestätigen, dass Ihre Workflows sich nach Änderungen weiterhin korrekt verhalten:
 
 <figure><img src="../../.gitbook/assets/s50-workflow_test_manager-de.png" alt="Deutsche Testmanagerliste mit Alle Tests ausführen und Testszenario hinzufügen. Szenariodaten sind ausgeblendet; Actions bleibt ein Produktbegriff."><figcaption><p>Deutsche Testmanagerliste mit Alle Tests ausführen und Testszenario hinzufügen. Szenariodaten sind ausgeblendet; Actions bleibt ein Produktbegriff.</p></figcaption></figure>
 

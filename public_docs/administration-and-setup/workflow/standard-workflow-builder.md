@@ -125,9 +125,9 @@ Zurück in der Workflow-Liste aktiviere ich die getestete Regel und prüfe den e
 
 ## Zugang
 
-Öffnen Sie **Workflow-Dashboard → Workflow-Liste** und klicken Sie auf **Workflow hinzufügen**, um einen neuen Standard-Workflow zu erstellen, oder klicken Sie einen bestehenden Workflow zum Bearbeiten an.
+Öffnen Sie **Workflow-Dashboard → Workflow-Liste** und klicken Sie auf **Neuer Workflow**, um einen neuen Standard-Workflow zu erstellen, oder klicken Sie einen bestehenden Workflow zum Bearbeiten an.
 
-<figure><img src="../../.gitbook/assets/s50-workflow_list-de.png" alt="Deutsche Workflow-Liste mit Suche, Typ und Workflow-Ausführungsreihenfolge. Konfigurierte Workflowdaten sind ausgeblendet."><figcaption><p>Deutsche Workflow-Liste mit Suche, Typ und Workflow-Ausführungsreihenfolge. Konfigurierte Workflowdaten sind ausgeblendet.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-list-toolbar-de-20261112.png" alt="Deutsche Workflow-Liste mit Suche sowie den Symbolleisten-Schaltflächen Neuer Workflow, Vorlagen und Workflow importieren"><figcaption><p>Die deutsche Workflow-Liste: Suche, die Schaltflächen <strong>Neuer Workflow</strong>, <strong>Vorlagen</strong> und <strong>Workflow importieren</strong> sowie je Workflow Typ, Workflow-Ausführungsreihenfolge und Auslöser.</p></figcaption></figure>
 
 ## Das When- / And- / Then-Modell
 
@@ -144,6 +144,12 @@ Klicken Sie in einer beliebigen Gruppe auf **Karte hinzufügen**, um die Kartenb
 <figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-Bibliothek nach Kategorie gruppiert"><figcaption><p>Die <strong>Add Card</strong>-Bibliothek — Bedingungskarten, Vergleichskarten, Aktionskarten und mehr, nach Kategorie gruppiert.</p></figcaption></figure>
 
 Speichern Sie über **Workflow speichern** oder sichern Sie das Layout als wiederverwendbare Vorlage über **Vorlage speichern**.
+
+## Workflow-Vorlagen
+
+Die Schaltfläche **Vorlagen** in der Symbolleiste der Workflow-Liste öffnet den Dialog **Workflow-Vorlagen**, in dem Sie die in Ihrer Organisation gespeicherten Vorlagen verwalten. Mit der Option **Standardvorlagen anzeigen** blenden Sie zusätzlich die mitgelieferten Standardvorlagen ein:
+
+<figure><img src="../../.gitbook/assets/workflow-templates-dialog-de-20261112.png" alt="Dialog Workflow-Vorlagen mit Vorlagensuche, der Option Standardvorlagen anzeigen und den Spalten Name, Aktualisiert Von, Zuletzt Geändert Am und Aktionen"><figcaption><p>Der Dialog <strong>Workflow-Vorlagen</strong> — gespeicherte Vorlagen und, bei aktiver Option <strong>Standardvorlagen anzeigen</strong>, die mitgelieferten Standardvorlagen. Die Spalten heißen <strong>Name</strong>, <strong>Aktualisiert Von</strong>, <strong>Zuletzt Geändert Am</strong> und <strong>Aktionen</strong>.</p></figcaption></figure>
 
 ## Nächste Schritte
 

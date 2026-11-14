@@ -610,6 +610,7 @@
   * [Gestione della cache](administration-and-setup/settings/cache-management.md)
   * [Infrastruttura](administration-and-setup/settings/infrastructure.md)
   * [Aspetto](administration-and-setup/settings/appearance.md)
+* [Misure di prestazione](administration-and-setup/performance-metrics.md)
 * [Flusso di lavoro](administration-and-setup/workflow/README.md)
   * [Percorso dal principiante all’esperto](administration-and-setup/workflow/workflow-learning-path.md "Percorso – da principiante a esperto")
     * [Quando viene eseguito il mio workflow?](administration-and-setup/workflow/workflow-execution-model.md)

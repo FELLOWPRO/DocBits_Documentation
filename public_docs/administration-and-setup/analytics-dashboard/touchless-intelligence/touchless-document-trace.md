@@ -1,4 +1,4 @@
-# Tracciamento del documento
+# Touchless Intelligence: Tracciamento del documento
 
 <!-- touchless-admin-video-v2-20261104:start -->
 **Capitolo video (versione di verifica):** [Confrontare le esecuzioni](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/it.html#chapter=08).
@@ -34,6 +34,18 @@ Il **Stage Log** sotto il percorso elenca le stesse fasi con ciò che ciascuna h
 * **Show Raw Diagnostics** attiva i dati grezzi quando l'assistenza lo richiede.
 
 <figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-it.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Prima esecuzione reale: affidabilità di classificazione del 100%, 0 fornitori candidati, 1 riga di tabella e 7 lacune di mappatura. Passed significa che una fase è stata eseguita; non dimostra un abbinamento del fornitore né che ogni valore della fattura sia corretto. La convalida dei campi segnala un campo obbligatorio mancante.</p></figcaption></figure>
+
+### Pre-processing
+
+Per l’esecuzione più recente la traccia aggiunge il blocco **Pre-processing** sotto il percorso. Elenca le decisioni eseguite prima che il documento raggiunga la pipeline, nell’ordine in cui sono state eseguite, ciascuna con uno stato:
+
+| Stato | Significato |
+| --- | --- |
+| **Recorded** | Il modulo è presente nel record di questo documento. Un record dimostra il tentativo, non il successo. |
+| **Skipped** | La decisione non si applicava a questo documento |
+| **Not recorded** | Per questa decisione non è stato memorizzato nulla |
+
+Quando una decisione dipende da una configurazione, la voce mostra anche l’impostazione attuale dell’organizzazione e il relativo valore. Il blocco descrive il documento nello stato in cui si trova ora, perciò è visualizzato solo per l’esecuzione più recente.
 
 ### Esecuzioni e modifiche
 

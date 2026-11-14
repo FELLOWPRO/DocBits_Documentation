@@ -50,6 +50,10 @@ Il salvataggio può innescare di nuovo l'abbinamento dopo un numero PO cambiato 
 
 Usa **Cronologia dell'abbinamento** (icona dell'orologio, dove i tuoi permessi lo consentono) per ispezionare come è stato deciso un abbinamento precedente. È una vista in sola lettura. Puoi rivedere quali regole sono state eseguite e perché un candidato non ha trovato corrispondenza; aprire la cronologia non esporta il documento.
 
+### Seguire un abbinamento in un’altra scheda dell’ordine di acquisto
+
+Ogni ordine di acquisto si apre in una propria scheda sopra la tabella, e una riga di fattura può essere abbinata a righe che appartengono a schede diverse. L’icona di abbinamento sulla riga di fattura passa alla scheda dell’ordine abbinato e scorre fino alla riga abbinata; ogni ulteriore clic mostra la riga abbinata successiva. Se la riga è collegata su più di una scheda, l’icona mostra dapprima l’elenco in **Matched on other PO tabs**, dove scegli l’ordine di cui vuoi vedere la riga. Sul lato dell’ordine di acquisto l’icona funziona in senso inverso: facendo clic si percorrono le righe di fattura abbinate, mentre passandoci sopra con il puntatore queste vengono evidenziate.
+
 ### Più di una riga per abbinamento
 
 Una singola riga di fattura può corrispondere a diverse righe dell'ordine, o viceversa, dove le tue regole di abbinamento lo consentono. Apri i dettagli **+** su una riga per ispezionare un eventuale abbinamento multiplo esistente. Controlla la quantità e il prezzo combinati, non solo una riga. Un pannello di dettagli vuoto significa che non c'è alcun abbinamento multiplo da ispezionare. Vedi [Strumenti di Abbinamento Ordine di Acquisto](purchase-order-matching-tools.md) per modificare i collegamenti.

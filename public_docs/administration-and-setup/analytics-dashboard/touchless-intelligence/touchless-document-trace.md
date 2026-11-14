@@ -35,6 +35,18 @@ Das **Stage Log** unter dem Pfad listet dieselben Schritte mit dem auf, was jede
 
 <figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-de.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Echter erster Lauf: 100 % Klassifizierungskonfidenz, 0 Lieferantenkandidaten, 1 Tabellenzeile und 7 Mapping-Lücken. Passed bedeutet, dass ein Schritt ausgeführt wurde; es belegt weder eine Lieferantenzuordnung noch die Richtigkeit jedes Rechnungswertes. Die Feldvalidierung meldet ein fehlendes Pflichtfeld.</p></figcaption></figure>
 
+### Pre-processing
+
+Für den letzten Lauf ergänzt der Verlauf unterhalb des Pfads den Block **Pre-processing**. Er listet die Entscheidungen auf, die laufen, bevor das Dokument die Pipeline erreicht, in der Reihenfolge ihrer Ausführung und jeweils mit einem Zustand:
+
+| Zustand | Bedeutung |
+| --- | --- |
+| **Recorded** | Das Modul steht im Datensatz dieses Dokuments. Ein Datensatz belegt den Versuch, nicht den Erfolg. |
+| **Skipped** | Die Entscheidung galt für dieses Dokument nicht |
+| **Not recorded** | Für diese Entscheidung wurde nichts gespeichert |
+
+Hängt eine Entscheidung von einer Konfiguration ab, zeigt der Eintrag zusätzlich die aktuelle Einstellung der Organisation und ihren Wert. Der Block beschreibt das Dokument in seinem jetzigen Zustand und wird deshalb nur für den letzten Lauf angezeigt.
+
 ### Läufe und Änderungen
 
 Mit der Laufauswahl wählen Sie einen Versuch. **Run History** listet dessen Ergebnis und ersten Blocker. Aufgezeichnete Unterschiede vergleichen den gewählten Lauf mit seinem Vorgänger, nicht automatisch mit dem aktuellen Lauf. Ein Differenz-Abzeichen enthält seine Einheit; unveränderte Werte bleiben unverändert.

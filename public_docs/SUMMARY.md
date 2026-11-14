@@ -611,6 +611,7 @@
   * [Cache-Verwaltung](administration-and-setup/settings/cache-management.md)
   * [Infrastruktur](administration-and-setup/settings/infrastructure.md)
   * [Erscheinungsbild](administration-and-setup/settings/appearance.md)
+* [Leistungsmetriken](administration-and-setup/performance-metrics.md)
 * [Workflow](administration-and-setup/workflow/README.md)
   * [Lernweg vom Einstieg zum Experten](administration-and-setup/workflow/workflow-learning-path.md "Lernweg – Einstieg bis Experte")
     * [Wann läuft mein Workflow?](administration-and-setup/workflow/workflow-execution-model.md)

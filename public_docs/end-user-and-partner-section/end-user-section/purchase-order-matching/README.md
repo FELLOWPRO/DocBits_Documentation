@@ -50,6 +50,10 @@ Zapisanie może ponownie uruchomić dopasowywanie po zmienionym lub nowo wykryty
 
 Użyj **Historii dopasowań** (ikona zegara, jeśli pozwalają na to Twoje uprawnienia), aby sprawdzić, jak rozstrzygnięto wcześniejsze dopasowanie. Jest to widok tylko do odczytu. Możesz przeanalizować, które reguły zostały uruchomione i dlaczego kandydat nie został dopasowany; otwarcie historii nie eksportuje dokumentu.
 
+### Przejście od dopasowania do innej karty zamówienia zakupu
+
+Każde zamówienie zakupu otwiera się na własnej karcie nad tabelą, a pozycję faktury można dopasować do pozycji należących do różnych kart. Ikona dopasowania przy pozycji faktury przełącza na kartę dopasowanego zamówienia i przewija do dopasowanej pozycji; każde kolejne kliknięcie pokazuje następną dopasowaną pozycję. Jeśli pozycja jest połączona na więcej niż jednej karcie, ikona najpierw pokazuje listę pod **Matched on other PO tabs**, gdzie wybierasz zamówienie, którego pozycję chcesz zobaczyć. Po stronie zamówienia ikona działa odwrotnie: kliknięcie przechodzi przez dopasowane pozycje faktury, a najechanie na nią je podświetla.
+
 ### Więcej niż jedna pozycja na dopasowanie
 
 Pojedyncza pozycja faktury może odpowiadać kilku pozycjom zamówienia lub odwrotnie, jeśli pozwalają na to Twoje reguły dopasowywania. Otwórz szczegóły **+** przy pozycji, aby sprawdzić istniejące dopasowanie wielokrotne. Sprawdzaj łączną ilość i cenę, a nie tylko jedną pozycję. Pusty panel szczegółów oznacza brak dopasowania wielokrotnego do sprawdzenia. Zobacz [Narzędzia dopasowywania zamówień zakupu](purchase-order-matching-tools.md) w sprawie zmiany połączeń.

@@ -36,11 +36,15 @@ Jeśli numer faktury został odczytany nieprawidłowo:
 4. Sprawdź wartość i podświetlony obszar źródłowy. Powtórz zaznaczenie, jeśli numer jest niepełny lub przypisany do niewłaściwego pola.
 5. Zapisz dokument. Aby zachować uczenie ekstrakcji, użyj także **Save Rules** i potwierdź okno dialogowe.
 
-<figure><img src="../../../.gitbook/assets/validation-source-selection-pl-2026-v2.png" alt="Numer zaznaczony na oryginale i jego przypisanie do pola. Potwierdź przypisanie przed zapisaniem reguły."><figcaption><p>Numer zaznaczony na oryginale i jego przypisanie do pola. Potwierdź przypisanie przed zapisaniem reguły.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-source-selection-pl-2026.png" alt="Numer zaznaczony na oryginale i jego przypisanie do pola. Potwierdź przypisanie przed zapisaniem reguły."><figcaption><p>Numer zaznaczony na oryginale i jego przypisanie do pola. Potwierdź przypisanie przed zapisaniem reguły.</p></figcaption></figure>
 
 {% hint style="info" %}
 Wpisanie nowej wartości poprawia ten dokument, ale nie tworzy powiązania z obszarem źródłowym wymaganego do tego uczenia. Zaznacz wartość na oryginale, potwierdź przypisanie i zapisz regułę, aby móc wykorzystać ją w pasujących dokumentach tego dostawcy. Uczenie na podstawie obrazu nie jest dostępne dla dokumentów odczytanych bezpośrednio jako dane e-faktury.
 {% endhint %}
+
+### Przyciski w okienku wartości pola
+
+Zaznaczenie obszaru na dokumencie otwiera małe okienko z okrągłymi przyciskami nad zaznaczeniem. Najedź na przycisk, aby odczytać, co robi: usuwa odczytaną wartość, czyści ją lub potwierdza przypisanie. Podpowiedź pojawia się po krótkiej chwili i używa tego samego sformułowania co nazwa dostępna przycisku.
 
 ## Zapis dokumentu, reguł i przekazanie dalej
 
@@ -59,6 +63,8 @@ Czerwona ramka lub ikona ostrzeżenia wskazuje pole wymagające uwagi. Odczytaj 
 Porównaj dostawcę, numer, daty, kwoty i walutę z oryginałem. Przy sumach sprawdź odpowiednie pola nagłówka i pozycje. Usuń przyczynę wskazaną w komunikacie przed przekazaniem dalej.
 
 Niektóre komunikaty pochodzą z reguły o ważności **Ostrzeżenie**. Nie znikają same: wybierz **Uznawać** pod polem, aby potwierdzić wartość, a komunikat zastępuje informacja **Potwierdzono. Zmiana wartości powoduje ponowne żądanie.** Jeśli wartość zostanie później zmieniona, ostrzeżenie wraca i trzeba je potwierdzić ponownie. Pole z błędem twardym trzeba natomiast poprawić — nie ma dla niego przycisku.
+
+Jeśli zapis lub eksport wstrzymują wyłącznie ostrzeżenia, ekran pokazuje tekst ostrzeżenia pola w pomarańczowym komunikacie z przyciskiem **Acknowledge** i przewija do tego pola. Ten sam przycisk potwierdza jednocześnie wszystkie pola z ostrzeżeniami, podobnie jak link pod polem. Rzeczywisty błąd nadal daje czerwony komunikat **One or more fields needs validation.**
 
 Kontrole zależą od typu dokumentu i konfiguracji organizacji; zobacz [Kontrole automatyczne](automatic-checks-on-the-validation-screen.md).
 
@@ -105,3 +111,5 @@ Dla faktur **Więcej opcji → Przepływ dokumentów** otwiera przebieg przetwar
 ## Gdy nie można edytować lub kontynuować
 
 Przeczytaj wyświetloną przyczynę: dokument może być zablokowany, tylko do odczytu, w innym stanie lub ograniczony Twoją rolą. Usuń przyczyny komunikatów walidacji i skonsultuj dostęp lub konfigurację z odpowiednią osobą albo administratorem. Jeśli błąd pozostaje, skorzystaj z [Rozwiązywania problemów](troubleshooting/README.md) lub przygotuj zgłoszenie z dokumentem i dokładnym komunikatem.
+
+Informacje o organizacji stron znajdziesz w [Dzielenie pliku PDF i porządkowanie stron](../dashboard/manual-pdf-splitting.md).

@@ -1,4 +1,4 @@
-# Ślad dokumentu
+# Touchless Intelligence: Ślad dokumentu
 
 <!-- touchless-admin-video-v2-20261104:start -->
 **Rozdział filmu (wersja do oceny):** [Porównanie uruchomień](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pl.html#chapter=08).
@@ -34,6 +34,18 @@ Wybierz krok **PO Match**, aby otworzyć widok szczegółów PO matching z wiers
 * **Show Raw Diagnostics** włącza surowe dane, gdy poprosi o to wsparcie.
 
 <figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-pl.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Rzeczywiste pierwsze uruchomienie: pewność klasyfikacji 100%, 0 kandydatów dostawcy, 1 wiersz tabeli i 7 luk w mapowaniu. Passed oznacza, że etap przebiegł; nie dowodzi dopasowania dostawcy ani tego, że każda wartość faktury jest poprawna. Walidacja pól zgłasza brak wymaganego pola.</p></figcaption></figure>
+
+### Pre-processing
+
+Dla najnowszego uruchomienia ślad dodaje blok **Pre-processing** pod ścieżką. Wymienia on decyzje wykonywane, zanim dokument dotrze do potoku przetwarzania, w kolejności ich wykonania, każdą ze stanem:
+
+| Stan | Znaczenie |
+| --- | --- |
+| **Recorded** | Moduł znajduje się na zapisie tego dokumentu. Zapis dowodzi próby, a nie powodzenia. |
+| **Skipped** | Decyzja nie dotyczyła tego dokumentu |
+| **Not recorded** | Dla tej decyzji nic nie zapisano |
+
+Gdy decyzja zależy od konfiguracji, wpis pokazuje także bieżące ustawienie organizacji i jego wartość. Blok opisuje dokument w stanie obecnym, dlatego jest wyświetlany tylko dla najnowszego uruchomienia.
 
 ### Uruchomienia i zmiany
 

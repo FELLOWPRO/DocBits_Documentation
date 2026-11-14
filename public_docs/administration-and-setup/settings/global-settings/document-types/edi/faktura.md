@@ -26,6 +26,6 @@ Wenn der normalisierte Wert fehlt, prüfen Sie **TRANSFORMATION (XSLT)** und den
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-625-fatturapa-preview-de-20261010.png" alt="FATTURAPA aktive Preview XSLT mit HTML-Ausgabe und Rechnungstabellen-Stilen"><figcaption><p>Die Preview steuert die visuelle Rechnungsausgabe.</p></figcaption></figure>
 
-Verwenden Sie den Stift auf einer Versionskarte, um eine Änderung vorzubereiten. Prüfen Sie den Entwurf und verwenden Sie **Preview** mit einer repräsentativen FatturaPA-Rechnung, bevor Sie ihn aktivieren. Die Screenshots zeigen die aktuell aktiven Versionen; in dieser Sandbox-Sitzung wurde kein Entwurf gespeichert oder kein Preview-Test ausgeführt.
+Verwenden Sie den Stift auf einer Versionskarte, um eine Änderung vorzubereiten. Prüfen Sie den Entwurf und verwenden Sie **Vorschau** mit einer repräsentativen FatturaPA-Rechnung, bevor Sie ihn aktivieren. Die Screenshots zeigen die aktuell aktiven Versionen; in dieser Sandbox-Sitzung wurde kein Entwurf gespeichert oder kein Vorschau-Test ausgeführt.
 
 Die frühere Anweisung, alle E-Dokumente hätten Großbritannien als Ursprung, ist keine sichere allgemeine Regel. Prüfen Sie Land, Währung und Zahlenformat der Rechnung anhand des Quelldokuments und der Konfiguration Ihrer Organisation.

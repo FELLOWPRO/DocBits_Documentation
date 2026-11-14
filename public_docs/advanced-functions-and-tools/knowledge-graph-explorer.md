@@ -8,7 +8,7 @@ Eksplorator grafów wiedzy (Knowledge Graph Explorer) pomaga zobaczyć powiązan
 
 1. Otwórz **Eksplorator grafów** w DocBits. Sprawdź, czy organizacja widoczna u góry to ta, którą chcesz przejrzeć.
 2. Jeśli na środku ekranu widnieje komunikat **Search for a node or compute the graph to get started**, wybierz **Odbuduj wykres** i poczekaj na zakończenie komunikatu o postępie. Przygotowuje to dane grafu; może to chwilę potrwać. Jeśli organizacja nie ma jeszcze pasujących relacji, liczniki **Węzły** i **Krawędzie** mogą pozostać na zerze.
-3. Wpisz nazwę lub inne szukane wyrażenie w polu **Search knowledge graph** i naciśnij Enter lub wybierz ikonę wyszukiwania. Gdy pojawi się kilka wyników, wybierz ten, którego potrzebujesz. Pojedynczy wynik otwiera jego graf bezpośrednio.
+3. Wpisz nazwę lub inne szukane wyrażenie w polu **Wyszukaj wykres wiedzy...** i naciśnij Enter lub wybierz ikonę wyszukiwania. Gdy pojawi się kilka wyników, wybierz ten, którego potrzebujesz. Pojedynczy wynik otwiera jego graf bezpośrednio.
 4. Wybierz węzeł, aby zobaczyć jego szczegóły. Zamknij panel szczegółów przyciskiem **X**, gdy chcesz wrócić do grafu.
 
 ## Wybierz, co widzisz

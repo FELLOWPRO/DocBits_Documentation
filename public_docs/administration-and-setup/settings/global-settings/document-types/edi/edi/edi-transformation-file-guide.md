@@ -1,78 +1,38 @@
 # Guida al File di Trasformazione EDI
 
-## 1. Panoramica
+La configurazione **TRANSFORMATION** converte l'input EDI nell'XML strutturato che DocBits utilizza. È un foglio di stile **XSLT**. Questa guida è rivolta a chi mantiene un formato di documento elettronico; per verificare una modifica serve un documento EDI rappresentativo.
 
-Il **File di Trasformazione** definisce come l'XML strutturato—creato utilizzando il **File Descrittore della Struttura**—viene convertito in un formato XML personalizzato che corrisponde ai requisiti specifici del tipo di documento o modulo della tua organizzazione.
+## Aprire la trasformazione
 
-Questa trasformazione viene eseguita utilizzando **XSLT (Extensible Stylesheet Language Transformations)**, che può essere creato e mantenuto attraverso l'**Editor XSLT** nell'interfaccia di DocBits.
+1. Vai su **Impostazioni → Tipi di Documento** e apri **Documenti elettronici** (nel percorso compare come **E-Doc**) per il tipo di documento che vuoi configurare.
+2. Espandi **EDI** e seleziona **TRANSFORMATION**, contrassegnato come **XSLT**. Gli screenshot mostrano il tipo di documento **PURCHASE_ORDER** con il formato **EDI** in un'organizzazione di test della documentazione.
 
-## 2. Scopo e Funzione
+<figure><img src="../../../../../../.gitbook/assets/edi-transformation-file-guide-list-it-20261113.png" alt="Elenco EDI in italiano con TRANSFORMATION contrassegnato come XSLT sopra PREVIEW ed EXTRACTION PATHS"><figcaption>Scegli TRANSFORMATION (XSLT) nella configurazione EDI del tipo di documento.</figcaption></figure>
 
-* Trasforma l'**XML intermedio** (output dal Descrittore della Struttura) in un **XML finale** allineato con lo schema del tuo documento.
-* Consente flessibilità per adattarsi ai formati dei partner EDI e ai requisiti interni del sistema.
-* Creato utilizzando le **regole XSLT**, che ti permettono di definire mappature, formattazione dei valori, logica condizionale e struttura.
+L'elenco mostra per ogni configurazione il nome, lo stato, il tipo, la versione e la data dell'ultima modifica. Lo stato **Predefinito** indica un valore predefinito: la colonna della versione è ancora vuota. Il pulsante a tre punti sulla riga apre **Personalizzazione**, che crea una tua copia della configurazione e apre la pagina di modifica lasciando invariato il valore predefinito, e **Cancellare**, che elimina la configurazione dopo una richiesta di conferma. **Nuovo** crea una configurazione aggiuntiva.
 
-## 3. Accesso e Modifica di Base
+## Leggere il foglio di stile e la versione
 
-#### Accesso al File
+A sinistra vedi il tipo di documento selezionato, il tipo di documento elettronico e le versioni. Il contrassegno **Attivo** indica la versione in uso. Il foglio di stile compare nell'editor a destra. L'esempio per gli ordini d'acquisto usa `xsl:value-of` per copiare valori come il numero d'ordine e la data dall'input EDI in una struttura XML `PURCHASE_ORDER`. Il tuo documento può usare percorsi EDI diversi. **Formato** dispone il sorgente per la lettura; non attiva nessuna versione.
 
-1.  Vai su **Impostazioni → Tipo di Documento** → \[Il Tuo Documento (es. _Ordine di Acquisto_)] → **E-Doc.**
+<figure><img src="../../../../../../.gitbook/assets/edi-transformation-file-guide-detail-it-20261113.png" alt="Editor TRANSFORMATION (XSLT) in italiano con la versione attiva e la mappatura dell'ordine d'acquisto"><figcaption>La trasformazione EDI attiva dell'esempio nell'organizzazione di test.</figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F1yCRagLzRFmy2hPRDDc1%252Fimage.png%3Falt%3Dmedia%26token%3D020874a9-1eae-4965-9dd2-c23461fc5884\&width=768\&dpr=4\&quality=100\&sign=5e53a730\&sv=2)
-2. Sotto la scheda **E-Doc**, seleziona il tuo formato (es. **EDI**).
-3.  Clicca su **Trasformazione** per visualizzare o modificare.
+La matita accanto alla versione attiva crea una **bozza** con le modifiche. Controlla e prova la bozza prima di attivarla con il segno di spunta: una versione attivata sostituisce quella attiva in precedenza. Il cestino elimina una bozza e compare solo quando la configurazione ha più di una versione. Sulla versione attiva è visibile solo **Formato**; il pulsante per salvare compare quando una bozza è aperta in modifica.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZtaE4dZT9E1exWMZ5FCI%252Fimage.png%3Falt%3Dmedia%26token%3D787868b4-47b4-455e-9a26-112f692b91f3\&width=768\&dpr=4\&quality=100\&sign=460124f1\&sv=2)
+## Provare prima dell'attivazione
 
-#### Gestione delle Bozze
+Fai clic su **Anteprima** in alto a destra per aprire il pannello di prova. Inserisci l'ID di un documento EDI caricato nel campo **Document Id...** e fai clic su **Test**. Confronta l'output restituito con il documento originale e con i campi XML che ti aspetti. Lo screenshot mostra una prova con un ID di esempio inventato (e2000000-0000-4000-8000-000000000004); l'XML restituito contiene dati di esempio inventati, con numero d'ordine PO-4711, data 2026-09-10 e le righe A-100 e A-200. Questo output non dimostra la trasformazione di un documento reale.
 
-* **Crea una Bozza**: Clicca sull'icona della ✏️ matita.
-* **Elimina Bozze**: Usa l'icona del 🗑️ cestino per rimuovere le bozze non utilizzate.
-* **Attiva le Modifiche**: Clicca sul segno di spunta ✅ per pubblicare una versione.
-  * **Nota**: Attivando una nuova versione si **disattiverà automaticamente** la precedente.
+<figure><img src="../../../../../../.gitbook/assets/edi-transformation-file-guide-panel-it-20261113.png" alt="Pannello di prova in italiano con il campo Document Id, il pulsante Test e l'XML risultante dell'ordine d'acquisto di esempio"><figcaption>Prova della trasformazione selezionata con un ID di documento di esempio inventato (e2000000-0000-4000-8000-000000000004).</figcaption></figure>
 
-## 4. Editor XSLT
+Dopo la trasformazione DocBits usa i [Percorsi di estrazione](edi-extraction-paths-file-guide.md) per mappare i valori XML sui campi. Il [File di anteprima](edi-preview-file-guide.md) controlla la visualizzazione leggibile. Guarda la [guida video EDI](edi-videos.md) per seguire la configurazione in un video.
 
-Il File di Trasformazione viene modificato utilizzando un **Editor XSLT** integrato che supporta l'evidenziazione della sintassi e la validazione.
+## Regole effettive e attivazione
 
-* Aggiungi modelli per mappare percorsi specifici dall'XML di input alla struttura desiderata.
-* Utilizza la logica condizionale (es. `<xsl:if>`, `<xsl:choose>`) per gestire formati di dati opzionali o variabili.
-* Applica funzioni di formattazione secondo necessità (es. manipolazione di stringhe, formattazione delle date).
+Le regole specifiche dell'organizzazione hanno la precedenza sui valori predefiniti per il formato eDoc rilevato. Controlla la TRANSFORMATION attiva e verifica quale nodo fornisce `invoice_type` nell'XML trasformato; il percorso dipende dal formato. Le modifiche restano una bozza finché non le attivi con il segno di spunta dopo le prove. Un'anteprima renderizzata non dimostra il tipo di documento memorizzato. Consulta la [guida alla diagnosi della classificazione](../credit-note-recognized-as-invoice.md) per i codici 381/261, gli script successivi e le precauzioni prima della rielaborazione.
 
-## 5. Funzione Anteprima (Anteprima XML Trasformato)
+Le viste mostrano una configurazione e una versione esistenti. Le impostazioni variano in base al tipo di documento e al formato. Verifica le modifiche in una bozza prima dell'attivazione.
 
-La **Funzione Anteprima** ti permette di testare e visualizzare come un file EDI caricato viene elaborato utilizzando il corrente **File di Trasformazione**.
+## Etichette che restano in inglese
 
-#### Utilizzo
-
-* Carica un file EDI tramite il flusso di caricamento standard.
-* Copia l'**ID del Documento** del file caricato.
-* Vai all'interfaccia del **File di Trasformazione**.
-*   Apri la **Funzione Anteprima**.\
-
-
-    <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=36ce2b93&#x26;sv=2" alt="" width="375"></div>
-* Inserisci l'**ID del Documento** nel campo e premi **Test**.
-* Verrà visualizzato l'**output XML trasformato** risultante.
-
-Questo è particolarmente utile per il debug delle mappature XSLT e per garantire che la struttura XML finale soddisfi i requisiti del tuo formato.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FWbwwmXgp6nRPIb1zBpgj%252Fimage.png%3Falt%3Dmedia%26token%3Dab5766f1-45bf-484e-9aa4-ab3059705591\&width=768\&dpr=4\&quality=100\&sign=46905864\&sv=2)
-
-## 6. Video Guida
-
-Una guida video per questo tipo di file è disponibile nella [pagina dei Video.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Utilizzala per seguire la configurazione, la modifica e l'anteprima.
-
-## Regole effettivamente utilizzate e attivazione
-
-Le regole specifiche dell’organizzazione hanno la precedenza su quelle predefinite per il formato eDoc rilevato. Verificate la TRANSFORMATION attiva e verificate quale nodo fornisce invoice_type nell’XML trasformato; il percorso dipende dal formato. Save salva una bozza; usate il segno di spunta per attivarla dopo i test. Il rendering di Preview non dimostra il tipo di documento memorizzato. Consultate la [guida alla diagnosi della classificazione](../credit-note-recognized-as-invoice.md) per i codici 381/261, gli script successivi e le precauzioni prima della rielaborazione.
-
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-it.png" alt="Formato EDI esistente con i quattro attributi configurati."><figcaption><p>Formato EDI esistente con i quattro attributi configurati.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-transformation-it.png" alt="Attributo TRANSFORMATION attivo: codice sorgente XSLT per trasformare l’XML intermedio."><figcaption><p>Attributo TRANSFORMATION attivo: codice sorgente XSLT per trasformare l’XML intermedio.</p></figcaption></figure>
-
-
-Le viste mostrano una configurazione e una versione esistenti. Le impostazioni variano in base al tipo di documento e al formato. Convalidare le modifiche in una bozza prima dell’attivazione.
-
-Nella versione dell’interfaccia illustrata, l’intestazione Version del pannello delle versioni resta in inglese. Gli identificatori tecnici degli attributi e il codice di configurazione restano invariati.
+Nella versione dell'interfaccia illustrata alcune etichette non sono tradotte in italiano e compaiono in inglese: l'intestazione **Version** del pannello delle versioni, il campo **Document Id...** e il pulsante **Test**. Restano invariati anche gli identificatori tecnici come **TRANSFORMATION**, **PREVIEW**, **EXTRACTION PATHS**, **STRUCTURE DESCRIPTOR** e **PURCHASE_ORDER**.

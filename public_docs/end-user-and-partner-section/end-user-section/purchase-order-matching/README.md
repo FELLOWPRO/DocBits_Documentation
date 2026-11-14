@@ -50,6 +50,10 @@ Opslaan kan het matchen opnieuw starten na een gewijzigd of nieuw gedetecteerd P
 
 Gebruik **Matchgeschiedenis** (klokpictogram, voor zover uw rechten dat toestaan) om te inspecteren hoe een eerdere match is bepaald. Dit is een alleen-lezen weergave. U kunt bekijken welke regels zijn uitgevoerd en waarom een kandidaat niet matchte; het openen van de geschiedenis exporteert het document niet.
 
+### Een match naar een ander tabblad van de inkooporder volgen
+
+Elke inkooporder opent in een eigen tabblad boven de tabel, en een factuurregel kan aan regels worden gematcht die op verschillende tabbladen staan. Het matchpictogram op de factuurregel schakelt naar het tabblad van de gematchte order en scrolt naar de gematchte regel; elke volgende klik toont de volgende gematchte regel. Is de regel op meer dan één tabblad gekoppeld, dan toont het pictogram eerst de lijst onder **Matched on other PO tabs**, waar u de order kiest waarvan u de regel wilt zien. Aan de kant van de inkooporder werkt het pictogram omgekeerd: een klik loopt door de gematchte factuurregels en eroverheen bewegen markeert ze.
+
 ### Meerdere regels per match
 
 Eén factuurregel kan aan meerdere orderregels corresponderen, of omgekeerd, wanneer uw matchregels dat toestaan. Open de **+**-details op een regel om een bestaande multi-match te inspecteren. Controleer de gecombineerde hoeveelheid en prijs, niet slechts één regel. Een leeg detailpaneel betekent dat er geen multi-match te inspecteren is. Zie [Hulpmiddelen voor PO-matching](purchase-order-matching-tools.md) voor het wijzigen van verbindingen.

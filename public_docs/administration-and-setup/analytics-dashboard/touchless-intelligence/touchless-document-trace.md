@@ -35,6 +35,18 @@ Het **Stage Log** onder het pad toont dezelfde fasen met wat elke fase heeft vas
 
 <figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-nl.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Werkelijke eerste uitvoering: 100% classificatiebetrouwbaarheid, 0 leverancierskandidaten, 1 tabelrij en 7 mappinghiaten. Passed betekent dat een fase liep; het bewijst geen leveranciersmatch en niet dat elke factuurwaarde correct is. Veldvalidatie meldt een ontbrekend verplicht veld.</p></figcaption></figure>
 
+### Pre-processing
+
+Voor de laatste uitvoering voegt de trace het blok **Pre-processing** onder het pad toe. Het vermeldt de beslissingen die lopen voordat het document de pipeline bereikt, in de volgorde waarin ze liepen, elk met een toestand:
+
+| Toestand | Betekenis |
+| --- | --- |
+| **Recorded** | De module staat op het record van dit document. Een record bewijst de poging, niet het succes. |
+| **Skipped** | De beslissing was niet van toepassing op dit document |
+| **Not recorded** | Voor deze beslissing is niets opgeslagen |
+
+Waar een beslissing van een configuratie afhangt, toont de vermelding ook de huidige organisatie-instelling en de waarde ervan. Het blok beschrijft het document zoals het er nu voor staat, dus het wordt alleen voor de laatste uitvoering getoond.
+
 ### Uitvoeringen en wijzigingen
 
 Gebruik de uitvoeringskeuze om een poging te kiezen. Run History vermeldt het resultaat en de eerste blokkade. Vastgelegde verschillen vergelijken de gekozen uitvoering met de voorafgaande, niet automatisch met de huidige uitvoering. Een verschilmarkering bevat de bijbehorende eenheid; ongewijzigde punten blijven ongewijzigd.

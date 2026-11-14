@@ -1,110 +1,44 @@
 # Tenant do Office 365
 
-## Registrar App no Azure AD
+Use este guia para ligar uma caixa de correio Microsoft 365 da organização através de uma aplicação Microsoft Entra. Um administrador precisa de acesso ao tenant Entra pretendido e à organização DocBits correspondente. Combine previamente a caixa de correio, o destino dos documentos e quem gere as credenciais antes de ativar a importação.
 
-<mark style="color:red;">**Nota**</mark>: As permissões podem exigir autorização de um administrador.
+## 1. Preparar a aplicação Entra <a href="#register-app-on-azure-a-d" id="register-app-on-azure-a-d"></a>
 
-1. Entre no [Portal do Azure](https://portal.azure.com/) usando suas credenciais.
-2. Nos serviços do Azure, localize e abra o Azure Active Directory (também conhecido como Azure AD).
+No [centro de administração Microsoft Entra](https://entra.microsoft.com/), abra Identidade → Aplicações → Registos de aplicações → Novo registo no tenant pretendido. Escolha um nome reconhecível e o tipo de conta aprovado pelo seu administrador de identidade. Uma aplicação usada apenas dentro da organização utiliza normalmente a opção de conta de inquilino único. Anote o ID do diretório (inquilino) e o ID da aplicação (cliente). Siga as [instruções de registo atuais](https://learn.microsoft.com/en-us/graph/auth-register-app-v2) da Microsoft para os passos no portal; os nomes no portal da Microsoft dependem do idioma configurado.
 
-![Entrada Azure Active Directory na pesquisa e na lista de serviços do portal do Azure](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_1.png)
+O formulário de tenant do DocBits pede um segredo do cliente. Em Certificados e segredos, crie o segredo segundo a política de expiração aprovada e anote o valor enquanto estiver visível. Guarde-o em segurança e defina quem o renova antes da expiração. Introduza esse valor em **Valor do aplicativo do cliente** no DocBits. Mantenha os segredos fora de capturas de ecrã, tickets e documentação.
 
-3. Na seção **Manage**, selecione **App registrations**.
+Deixe os fluxos de cliente público desativados nesta configuração baseada num segredo, a menos que o seu administrador de identidade tenha definido um requisito separado. As [orientações da Microsoft sobre tipos de cliente](https://learn.microsoft.com/en-us/entra/identity-platform/msal-client-applications) explicam porque é que as aplicações de cliente público não conseguem guardar segredos de aplicação em segurança.
 
-![Página de descrição geral do Azure Active Directory com a secção Manage e a entrada App registrations no menu esquerdo](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_2.png)
+## 2. Aprovar a permissão e o âmbito da caixa de correio
 
-4. Na tela App registrations, clique em **+ New registration**.
+Peça ao administrador do Microsoft 365 que aprove as operações de correio e o âmbito da caixa de correio para esta aplicação. A permissão de aplicação **Mail.ReadWrite** do Microsoft Graph permite aceder ao correio e alterá-lo sem um utilizador com sessão iniciada e exige o consentimento de um administrador. Uma atribuição sem âmbito abrange as caixas de correio de toda a organização. Mail.ReadWrite não permite enviar correio; as funções de envio exigem uma revisão separada da permissão. Consulte a [referência de permissões do Microsoft Graph](https://learn.microsoft.com/en-us/graph/permissions-reference#mailreadwrite).
 
-![Página App registrations com o botão + New registration na barra de ferramentas](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_3.png)
+Reveja o acesso restrito às caixas de correio com o administrador do Exchange através de [RBAC para aplicações](https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac). As atribuições de permissões do Entra e as atribuições RBAC do Exchange combinam-se: acrescentar apenas uma atribuição RBAC com âmbito não reduz uma atribuição Entra existente para toda a organização. Peça ao administrador que confirme o acesso efetivo à caixa de correio pretendida antes de ativar a origem.
 
-5. A tela **Register an application** é exibida. Insira o nome de exibição voltado para o usuário para o App em **Name**.
+## 3. Configurar a ligação do tenant no DocBits
 
-![Formulário Register an application com o campo Name e o texto de ajuda para o nome apresentado](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_4.png)
+Abra **Configurações → Importar** na organização DocBits pretendida, abra a secção **Importação de e-mail** e selecione **Novo**.
 
-6. Selecione um dos seguintes tipos de conta dependendo de suas necessidades:
+<figure><img src="../../../../.gitbook/assets/o365-tenant-email-import-list-pt-20261112.png" alt="Secção Importação de e-mail com o botão Novo, o ícone do registo de importação e as colunas Nome De Usuário, E-Mail, Endereço De E-Mail Compartilhado, Protocolo, Criptografia, Suborganizações e Ações. As colunas Pasta e Roteamento De Documentos ficam fora da largura da captura; os dados das linhas são exemplos inventados."><figcaption><p>Novo abre o assistente do servidor de e-mail. Os dados das linhas nesta captura de documentação são exemplos inventados; as colunas Pasta e Roteamento De Documentos ficam fora da largura da captura e podem ser alcançadas na horizontal.</p></figcaption></figure>
 
-* **Accounts in any organizational directory (Any Azure AD directory Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**
-* **Accounts in any organizational directory (Any Azure AD directory Multitenant)**
+As ligações existentes gerem-se com o menu da coluna **Ações**, com **Teste de conexão**, **Registros de conexão**, **Log de importação**, **Desativar**, **Editar** e **Excluir**. O ícone junto a **Novo** abre o registo de importação de todas as ligações de e-mail. [As ações da importação de e-mail](README.md#acoes-para-oauth-office365) descrevem este menu em detalhe.
 
-![Lista Supported account types com as opções para inquilino único, vários inquilinos e contas Microsoft pessoais](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_5.png)
+Em **Protocolo**, escolha **OAuth Office365 - Tenant** e, em **Roteamento de Documentos**, escolha o destino pretendido. Preencha os campos do tenant fornecidos pelo seu administrador:
 
-7. Deixe a opção **Redirect URI (optional)** como está.
+| Campo no DocBits | Introduza |
+| --- | --- |
+| ID do tenant | ID do diretório (inquilino) do tenant Entra pretendido. |
+| ID do aplicativo do cliente | ID da aplicação (cliente) da aplicação registada. |
+| Valor do aplicativo do cliente | O valor do segredo do cliente desse registo. |
+| Tipo de tenant | O ambiente cloud do tenant, por exemplo Comercial ou Alto GCC. |
 
-![Formulário Register an application com os tipos de conta suportados e a opção de vários inquilinos selecionada](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_6.png)
+<figure><img src="../../../../.gitbook/assets/o365-tenant-tenant-wizard-pt-20261112.png" alt="Assistente Configuração do servidor de e-mail com a etapa ativa Configuração do servidor de e-mail e a etapa seguinte Configuração, Protocolo OAuth Office365 - Tenant, Roteamento de Documentos DocBits, os três campos de credenciais vazios ID do tenant, ID do aplicativo do cliente e Valor do aplicativo do cliente, Tipo de tenant Comercial e os botões Teste de conexão e Salvar."><figcaption><p>A variante Tenant tem o seu próprio formulário de credenciais. Este exemplo usa o encaminhamento DocBits e o tipo de tenant Comercial; os três campos de credenciais estão vazios. Teste de conexão e Salvar não foram usados nesta captura de documentação.</p></figcaption></figure>
 
-8. Clique em **Register** para concluir o registro do App. Isso o levará de volta à tela do novo App.
-9. Na tela do App, localize o **Application (client) ID**. Copie-o para ser usado ao configurar a importação de e-mail para o **DocBits**.
+Use **Teste de conexão** com as credenciais autorizadas do tenant antes de **Salvar**. O teste contacta o serviço configurado; **Salvar** submete a configuração do tenant. Um teste de ligação com sucesso não prova que uma mensagem ou um documento foi importado. Se estiver apenas a inspecionar o formulário, use **Cancelar** ou o controlo de fechar.
 
-![Secção Redirect URI (optional) do formulário de registo e o botão Register por baixo](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_7.png)
+## 4. Verificar a origem guardada
 
-10. No painel esquerdo, selecione **Certificates & secrets**:
+Para uma implementação autorizada, use uma caixa de correio de teste designada e um anexo de exemplo inofensivo. Depois de guardar a origem, envie uma mensagem de teste para essa caixa de correio, abra a lista **Importação de e-mail** e o **Log de importação** e confirme que o documento chega ao destino escolhido. Reveja as opções de caixa de correio partilhada e de movimentação de mensagens conforme necessário com o administrador. Registe a rota, a caixa de correio e o responsável pela expiração do segredo no manual interno, sem o segredo.
 
-![Página de descrição geral da aplicação registada com Display name, Application (client) ID e os botões Delete e Endpoints](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_8.png)
-
-11. Na tela **Certificates & secrets**, clique no botão **+ New client secret** na seção **Client secrets**:
-
-![Entrada Certificates & secrets no menu esquerdo da aplicação registada](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_9.png)
-
-12. Na caixa de diálogo **Add a client secret**, clique no botão **Add**:
-
-![Secção Client secrets com a sua descrição e a indicação de que ainda não foi criado nenhum segredo de cliente](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_10.png)
-
-É recomendável preencher uma descrição para identificar este segredo entre muitos (até agora o limite é de 2 segredos por App).
-
-![Caixa de diálogo Add a client secret com o campo Description e as opções de expiração 1 ano, 2 anos e nunca](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_11.png)
-
-<mark style="color:red;">**Nota**</mark>: Selecione esta data de expiração de acordo com a política da sua empresa. Uma vez expirado, um novo client secret precisará ser criado e especificado para cada configuração de e-mail onde foi usado anteriormente.
-
-13. O client secret recém-gerado ficará visível. Copie este client secret para ser usado ao configurar a importação de e-mail para o DocBits.
-
-![Tabela Client secrets com o segredo criado, a data de expiração e o ícone de cópia junto ao valor](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_12.png)
-
-**Importante:** Certifique-se de ter copiado o client secret, pois o client secret não será exibido novamente após ser fechado.
-
-14. Selecione **Authentication** no painel esquerdo. Isso apresentará a tela **Authentication** no lado direito.
-
-![Entrada Authentication no menu esquerdo da aplicação registada](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_13.png)
-
-15. Na seção **Advanced settings**, clique em **Yes** para **Default client type**.
-
-![Página Authentication, secção Advanced settings, com Default client type em Yes para cliente público](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_14.png)
-
-16. Clique em **Save** para confirmar as alterações.
-
-![Página Authentication com os botões Save e Discard na barra de ferramentas](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_15.png)
-
-17. Selecione **API permissions** no painel esquerdo. Isso apresentará a tela de permissões de API.
-
-![Entrada API permissions no menu esquerdo da aplicação registada](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_16.png)
-
-18. Por padrão, a permissão **User.Read** do **Microsoft Graph** está presente, deixe como está.
-
-![Tabela API permissions com a permissão delegada User.Read do Microsoft Graph](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_17.png)
-
-<mark style="color:red;">**Nota**</mark>: Esta é uma permissão obrigatória. Se esta permissão não estiver disponível, adicione a permissão com as etapas mencionadas abaixo para a permissão **Mail.ReadWrite**.
-
-19. Clique em **+ Add a permission**. Isso abrirá o painel **Request API permissions**.
-
-![Painel Configured permissions com o botão + Add a permission e uma lista de permissões vazia](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_18.png)
-
-20. Clique em **Microsoft Graph**.
-
-![Painel Request API permissions com a entrada Microsoft Graph entre as APIs da Microsoft mais utilizadas](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_19.png)
-
-21. Das duas subcategorias, selecione **App Permissions**.
-
-![Painel de permissões do Microsoft Graph com a escolha entre Delegated permissions e Application permissions](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_20.png)
-
-22. Digite **Mail.ReadWrite** na caixa de pesquisa. Selecione a caixa de seleção **Mail.ReadWrite** para a permissão.
-
-![Painel Request API permissions com Mail.ReadWrite na pesquisa de permissões e a permissão Mail correspondente](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_21.png)
-
-23. Isso habilitará o botão **Add permissions** na parte inferior do painel. Clique em **Add permissions**.
-
-![Painel Request API permissions com a caixa Mail.ReadWrite marcada e o botão Add permissions ativo](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_22.png)
-
-24. Isso adicionará a permissão **Mail.ReadWrite** à lista de **Configured permissions** para o App.
-
-<mark style="color:red;">**Nota**</mark>: Permissões de administrador podem ser necessárias. O administrador terá que autorizar o App para usar essas permissões. Uma vez autorizado, o status concedido será indicado da seguinte forma:
-
-![Painel Configured permissions com a permissão Mail.ReadWrite e o botão Grant admin consent para o inquilino](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_tenant_23.png)
+A verificação da documentação abrangeu o menu atual em português, a lista e o assistente de tenant vazio. Não foi criada nem alterada qualquer aplicação Entra, credencial, permissão, caixa de correio ou origem de importação. Não foi testada qualquer ligação, autenticação de tenant ou importação de correio. Use as instruções da Microsoft indicadas acima para a interface de administração atual.

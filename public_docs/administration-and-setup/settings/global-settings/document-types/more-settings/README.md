@@ -110,11 +110,15 @@ Para o **Construtor de layout**, veja o [Layout Manager](../layout-manager/READM
 
 ## Verificação de impostos Vertex
 
-O cartão **Verificação de impostos Vertex** contém **Verificação de impostos do Design Vertex**. Ele abre o Construtor de layout para o formulário que os usuários veem quando o DocBits compara o imposto do fornecedor com o imposto calculado pela Vertex. Veja [Verificação de impostos Vertex](vertex-tax-verification.md) para a integração, a tolerância e o resultado.
+Para o tipo de documento Fatura, abra o cartão **Verificação de impostos Vertex** e use **Verificação de impostos do Design Vertex** para abrir o Construtor de layout do formulário de verificação. O formulário define os campos exibidos ao lado da comparação entre o imposto do fornecedor e o imposto calculado pela Vertex.
+
+<figure><img src="../../../../../.gitbook/assets/more-settings-vertex-tax-verification-card-pt-20261111.png" alt="O cartão Verificação de impostos Vertex aberto, do tipo de documento Fatura, com o link Verificação de impostos do Design Vertex"><figcaption><p>O cartão Verificação de impostos Vertex do tipo de documento Fatura, aberto, com o link para desenhar o formulário.</p></figcaption></figure>
+
+O interruptor **Integração de Impostos Vertex** fica em **Configurações** → **Módulo** → **Ordem e Finanças**. Veja [Verificação de impostos Vertex](vertex-tax-verification.md) para configurar a integração, o gatilho **Antes da exportação** ou **Antes da aprovação**, a tolerância e a tela do resultado da verificação.
 
 ## Validação de faturas eletrônicas
 
-O cartão **Validação de faturas eletrônicas** ativa a validação das faturas eletrônicas recebidas e permite decidir se o fornecedor é notificado quando uma fatura é rejeitada. Veja [Validação de faturas eletrônicas](../../../document-processing/e-documents/validation-rules.md).
+O cartão **Validação de faturas eletrônicas** ativa a validação das faturas eletrônicas recebidas e permite decidir se o fornecedor é notificado quando uma fatura é rejeitada. Veja [Validação de faturas eletrônicas](../../../document-processing/e-documents/validation-rules/).
 
 ## Extração de tabela
 

@@ -2,7 +2,13 @@
 
 El **Panel de flujo de trabajo** es la página de inicio del área de flujos de trabajo. Muestra cómo se comportan sus flujos de trabajo (totales de ejecuciones, tasas de éxito y de fallo, un gráfico de ejecuciones a lo largo del tiempo y la actividad reciente) y le da acceso a la lista de flujos de trabajo, al gestor de pruebas y al Card SDK.
 
-<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard con totales de ejecuciones, tasas de éxito y de fallo, el gráfico de ejecuciones y la actividad reciente"><figcaption><p>El Workflow Dashboard: totales de ejecuciones, tasas de éxito/fallo y actividad reciente de cada flujo de trabajo.</p></figcaption></figure>
+Las siguientes vistas parciales muestran las métricas de volumen, los resultados de las ejecuciones y el gráfico de ejecuciones. La actividad reciente y los controles de navegación quedan fuera de estos recortes.
+
+<figure><img src="../../.gitbook/assets/workflow-kpi-volume-es-20261112.png" alt="Métricas de volumen: flujos de trabajo ejecutados hoy, flujos de trabajo creados en el periodo y ejecuciones totales"><figcaption><p>Métricas de volumen: <strong>Flujos de trabajo ejecutados hoy</strong>, <strong>Flujos de trabajo creados (periodo)</strong> y <strong>Ejecuciones totales</strong>, en este caso de los últimos 31 días.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-kpi-outcomes-es-20261112.png" alt="Resultados de las ejecuciones: ejecuciones correctas, tasa de éxito y tasa de fallos"><figcaption><p>Resultados de las ejecuciones: <strong>Ejecuciones correctas</strong>, <strong>Tasa de éxito</strong> y <strong>Tasa de fallos</strong>, cada uno con referencia a las ejecuciones totales. Sobre la tasa aparece una etiqueta de color, en el ejemplo <strong>CRÍTICO</strong> o <strong>SALUDABLE</strong>.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-chart-es-20261112.png" alt="Ejecuciones de flujo de trabajo en los meses mostrados"><figcaption><p><strong>Ejecuciones de flujo de trabajo</strong> en los meses mostrados, de mayo a noviembre, con las series <strong>Éxito</strong> y <strong>Fallido</strong>.</p></figcaption></figure>
 
 ## Pestañas
 

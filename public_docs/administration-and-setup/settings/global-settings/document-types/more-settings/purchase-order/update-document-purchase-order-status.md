@@ -10,7 +10,7 @@ Przed zmianą ustawienia wybierz właściwą organizację i rodzaj dokumentu. Do
 2. Znajdź rodzaj dokumentu używany dla dokumentów powiązanych z zamówieniem zakupu, na przykład **Faktura**, i wybierz zębatkę na jego karcie, aby otworzyć **Więcej Ustawień**.
 3. Rozwiń sekcję **Zamówienie zakupu**. Znajdź **Aktualizacja dokumentu Status zamówienia zakupu** i włącz je. Ikona pomocy obok wyjaśnia tę opcję w aplikacji. Zmiana tego przełącznika nie zmienia pozostałych ustawień zamówienia zakupu w tej samej sekcji.
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc700-document-types-pl-20261011.png" alt="Strona Typy dokumentów z kartą Faktura i zębatką Więcej Ustawień"><figcaption>Otwórz ustawienia rodzaju dokumentu, którego używasz.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc700-document-types-pl-20261111.png" alt="Strona Typy dokumentów z kartą Faktura i zębatką Więcej Ustawień"><figcaption>Otwórz ustawienia rodzaju dokumentu, którego używasz.</figcaption></figure>
 
 <figure><img src="../../../../../../.gitbook/assets/dbdc700-po-settings-pl-20261011.png" alt="Sekcja Zamówienie zakupu w Więcej Ustawień z przełącznikiem Aktualizacja dokumentu Status zamówienia zakupu"><figcaption>Przełącznik aktualizacji statusu w ustawieniach Zamówienie zakupu.</figcaption></figure>
 
@@ -28,9 +28,9 @@ Okno kolumn zawiera sekcje **Ukryte kolumny** i **Widoczne kolumny**. Strzałki 
 
 W **Ustawienia → Przetwarzanie dokumentów → Typy dokumentów → Pola → Ustawienia Danych Głównych** rozwiń **Wyszukaj dane główne**, a następnie **Order Header Lookup**. Sprawdź, czy wymagane mapowanie pól zamówienia zakupu istnieje i czy odpowiednie wyszukiwanie ma włączone **Automatyczne Wyzwalanie**, gdy potrzebne jest automatyczne wyszukiwanie. Poniższy zrzut ekranu pokazuje listę konfiguracji; czerwone krzyżyki oznaczają, że **Automatyczne Wyzwalanie** jest wyłączone dla tych przykładowych wierszy. Zrzut nie demonstruje zaktualizowanego statusu zamówienia zakupu.
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc700-lookup-po-header-pl-20261011.png" alt="Konfiguracja wyszukiwania Order Header Lookup ze statusem Przeszukiwalny i Automatyczne Wyzwalanie dla każdego pola"><figcaption>Sprawdź faktyczne wiersze wyszukiwania dla danego rodzaju dokumentu.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc700-lookup-po-header-pl-20261111.png" alt="Konfiguracja wyszukiwania Order Header Lookup ze statusem Przeszukiwalny i Automatyczne Wyzwalanie dla każdego pola"><figcaption>Sprawdź faktyczne wiersze wyszukiwania dla danego rodzaju dokumentu.</figcaption></figure>
 
-Pomoc w konfigurowaniu wyszukiwania znajdziesz w artykule [Konfiguracja danych rozmytych z danymi głównymi](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
+Pomoc w konfigurowaniu wyszukiwania znajdziesz w artykułach [Ustawienia danych głównych](../../fields/master-data-settings.md) — tworzenie konfiguracji wyszukiwania i mapowań pól — oraz [Konfiguracja danych rozmytych z danymi głównymi](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
 
 ## Zweryfikuj na znanym dokumencie
 
@@ -38,9 +38,8 @@ Użyj dokumentu już powiązanego z testowym zamówieniem zakupu. Zmień status 
 
 ## Znalezione tłumaczenia w aplikacji
 
-Podczas weryfikacji zrzutów ekranu w języku polskim stwierdzono następujące problemy w tłumaczeniu samej aplikacji (nie w tej dokumentacji). Zgłoszono je do zespołu aplikacji; w dokumentacji użyto terminów aplikacji dokładnie tak, jak brzmią:
+Podczas weryfikacji zrzutów ekranu w języku polskim w wersji aplikacji **11.27.7** stwierdzono następujące problemy w tłumaczeniu samej aplikacji (nie w tej dokumentacji). Zgłoszono je do zespołu aplikacji; w dokumentacji użyto terminów aplikacji dokładnie tak, jak brzmią:
 
 - Przełącznik nazywa się **Aktualizacja dokumentu Status zamówienia zakupu** — dziwnie złamana składnia (dosłownie „Update Document Purchase Order Status”); angielski oryginał to „Update Document Purchase Order Status”.
-- W menu **Typy dokumentów** karty pokazują angielskie nazwy **Purchase Order**, **Delivery Note**, **Order Confirmation**, **Customs Declaration**, **Freight Letter** oraz angielskie etykiety **Extraction** i **Standard** zamiast polskich.
+- W menu **Typy dokumentów** karty pokazują angielskie nazwy **Purchase Order**, **Delivery Note**, **Order Confirmation**, **Customs Declaration**, **Freight Letter** oraz etykietę **Standard**; etykieta przy przełączniku jest przetłumaczona i brzmi **Ekstrakcja**.
 - W oknie **Ustawienia kolumn** przycisk **Zrobione** to dosłowne tłumaczenie angielskiego „Done”; w tym kontekście poprawne byłoby „Gotowe”.
-- W sekcji wyszukiwania nagłówek kolumny **Pole Walidacji** ma wartości **No Match** pozostawione po angielsku.

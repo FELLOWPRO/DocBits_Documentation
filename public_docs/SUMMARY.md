@@ -610,6 +610,7 @@
   * [Cachebeheer](administration-and-setup/settings/cache-management.md)
   * [Infrastructuur](administration-and-setup/settings/infrastructure.md)
   * [Weergave](administration-and-setup/settings/appearance.md)
+* [Prestatiegegevens](administration-and-setup/performance-metrics.md)
 * [Workflow](administration-and-setup/workflow/README.md)
   * [Leerpad van beginner tot expert](administration-and-setup/workflow/workflow-learning-path.md "Leertraject – van beginner tot expert")
     * [Wanneer wordt mijn workflow uitgevoerd?](administration-and-setup/workflow/workflow-execution-model.md)

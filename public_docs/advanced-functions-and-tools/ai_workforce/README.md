@@ -12,7 +12,7 @@ Pense nele como uma equipe que você gerencia, e não como uma ferramenta que vo
 * O plano é dividido em **Problemas** (tarefas individuais), cada um tratado por um **agente Especialista** ou por um **humano**.
 * Os Especialistas relatam seus resultados de volta e o Orquestrador sintetiza o resultado.
 
-Os _agentes_ que preenchem esses papéis não são fixos: a DocBits já vem com um **DocBits Orchestrator** pronto para uso e dois especialistas padrão, e você pode criar os seus próprios (consulte [Agentes](./#agents)).
+Os _agentes_ que preenchem esses papéis não são fixos: a DocBits já vem com um **DocBits Orchestrator** pronto para uso e dois especialistas padrão, e você pode criar os seus próprios (consulte [Agentes](./#agentes)).
 
 Uma execução típica, de ponta a ponta: uma fatura chega por e-mail → uma Missão é criada → o Orquestrador a planeja e distribui Problemas aos especialistas (classificar, extrair, validar, comparar com a ordem de compra) → uma etapa sensível é pausada na **Caixa de entrada** para que um humano aprove → após a aprovação, o documento é exportado e a Missão é concluída. Você acompanha todo o processo pelo **Painel**, mantém execuções relacionadas juntas em **Projetos** e intervém pela **Caixa de entrada** e pelos **Problemas** sempre que for necessária uma decisão humana.
 
@@ -25,6 +25,49 @@ O AI Workforce é habilitado por organização a partir das configurações prin
 3. Confirme a assinatura na caixa de diálogo que aparece.
 
 Depois de habilitado, o **AI Workforce** aparece na barra lateral de navegação principal e o espaço de trabalho fica disponível para a sua organização.
+
+## Centro de Controle da Missão
+
+O **Centro de Controle da Missão** é a central de comando onde você **inicia missões e as acompanha ao vivo**. Abra-o pela barra lateral do AI Workforce. A página tem três partes:
+
+<figure><img src="../../.gitbook/assets/ai-workforce-1-mission-control-pt-20261111.png" alt="Centro de Controle da Missão com cartões de missão, o chat do Orquestrador e o painel da Caixa de entrada aberto"><figcaption><p>Centro de Controle da Missão: cartões de missão no topo, o chat do Orquestrador no meio e o painel da Caixa de entrada à direita</p></figcaption></figure>
+
+* **Cartões de missão** — a faixa no topo mostra as missões ativas no momento, com status, progresso e número de Problemas. Clique em um cartão para abrir a missão.
+* **Chat do Orquestrador** — o centro da página. No campo **Pergunte ao orquestrador…** descreva em linguagem simples o que você quer que seja feito, por exemplo _“Processe todas as faturas de fornecedores que chegaram esta semana e compare-as com as suas ordens de compra”_, e envie com a seta à direita do campo. O Orquestrador planeja o trabalho e inicia a missão; você acompanha as respostas no mesmo chat.
+* **Painel da Caixa de entrada** — o painel recolhível à direita mostra as solicitações de aprovação pendentes (consulte [Caixa de entrada](./#caixa-de-entrada)). Clique em uma solicitação para lê-la e use **Aprovar**, **Rejeitar** ou escreva no campo de texto e envie ao agente com **Enviar**; **Missão Aberta** abre a missão à qual a solicitação pertence, e uma solicitação que não precisa de decisão pode ser deixada de lado. O número no painel mostra quantas solicitações estão à espera. Com **Ver tudo na caixa de entrada** você abre a lista completa. As mesmas solicitações também aparecem em **Caixa de entrada** na barra lateral.
+
+Para criar uma missão, você também pode pressionar **Nova Missão** na barra lateral do AI Workforce — o item leva ao mesmo chat.
+
+## Lista de agentes
+
+A **Lista de agentes** mostra todos os agentes da sua organização em um relance — o **Roteador**, os seus **Orquestradores** e todos os **Especialistas** — agrupados nessa ordem.
+
+<figure><img src="../../.gitbook/assets/ai-workforce-2-agent-list-pt-20261111.png" alt="Lista de agentes com as seções Roteador, Orquestradores e Agentes e o botão Criar agente"><figcaption><p>Lista de agentes: o Roteador no topo, depois os Orquestradores e os Especialistas; a legenda distingue agentes do sistema e personalizados</p></figcaption></figure>
+
+Cada cartão mostra o **nome** do agente, o seu **papel**, as **habilidades** que ele pode usar e o seu status atual. A partir do cartão, você pode:
+
+* **Abrir o agente** — clique no cartão para abrir o perfil completo, com todas as [Configurações do agente](./#configuracoes-do-agente).
+* **Ativar ou desativar** — use o interruptor nos cartões dos Orquestradores. O sistema só permite desativar um Orquestrador enquanto ao menos um outro Orquestrador continuar ativo, e com dois ou mais Orquestradores ativos o **Roteador** assume o despacho (consulte [Regras de hierarquia e ativação](./#regras-de-hierarquia-e-ativacao)).
+* **Editar ou excluir** — agentes personalizados (marcados na legenda como **Personalizado**) têm um menu com essas duas ações; agentes do sistema podem ser configurados, mas não excluídos.
+* **Criar agente** — o botão no canto superior direito inicia o assistente de um novo agente (consulte [Criando agentes personalizados](./#criando-agentes-personalizados)).
+
+Enquanto houver menos de dois Orquestradores ativos, o cartão do Roteador fica esmaecido e mostra **INATIVO — PRECISA DE 2 OU MAIS ORQUESTRADORES**; a partir do segundo Orquestrador ativo ele entra em operação.
+
+A legenda no topo mostra a diferença entre agentes **Sistema** e **Personalizado**, para que você sempre saiba o que veio com a DocBits e o que você mesmo criou.
+
+## Atividades
+
+**Atividades** é o registro do que já aconteceu no seu AI Workforce. Toda alteração — uma missão criada, um Problema atualizado, uma solicitação de aprovação aberta — aparece aqui como uma linha com três informações:
+
+<figure><img src="../../.gitbook/assets/ai-workforce-3-activities-pt-20261111.png" alt="Registro de Atividades com os filtros de entidade, ação e ator e uma lista de alterações recentes"><figcaption><p>Atividades: cada linha mostra a área afetada, o que aconteceu, quem fez e quando</p></figcaption></figure>
+
+* a **área** à qual a alteração pertence — Caixa de entrada, Problemas, Missões, Projetos, Agentes ou execuções de agentes — mostrada como um selo colorido à esquerda; o selo da Caixa de entrada aparece como **INBOX**;
+* a **ação** executada — por exemplo **Criado** ou **Atualizado** — como um segundo selo;
+* o **ator** que provocou a alteração (um agente ou uma pessoa), em destaque, seguido do **resumo** do que aconteceu e da **hora**, à direita.
+
+Use o **campo de busca** (**Procurar**) para encontrar uma entrada específica e os três menus acima da lista — **Todas as entidades**, **Todas as ações** e **Todos os atores** — para filtrar por **área** (entidade), **ação** e **ator**. Clique em uma linha para ir ao item relacionado — por exemplo a missão ou o Problema a que a entrada se refere. Com **Registros por página** você escolhe quantas entradas são exibidas de uma vez, e as setas no canto inferior direito percorrem históricos mais longos.
+
+O registro de Atividades responde à pergunta _“o que o AI Workforce acabou de fazer e quem fez?”_ — útil depois de uma aprovação, ao verificar por que um documento foi classificado de determinada forma ou ao revisar o que os seus agentes personalizados têm feito.
 
 ## Painel
 
@@ -41,7 +84,7 @@ Os widgets disponíveis incluem:
 
 ## Caixa de entrada
 
-A **Caixa de entrada** é onde o trabalho aguarda **atenção humana**. Quando um agente está prestes a executar uma ferramenta que precisa de autorização, ele pausa a tarefa e levanta uma **solicitação de aprovação** aqui. Isso é Human-in-the-Loop (HITL): a ação não é executada até que uma pessoa decida. Se uma determinada ferramenta precisa de autorização é definido pelo **modo de aprovação** do agente e pelos marcadores de **crítico** de suas ferramentas (consulte [Configurações do agente](./#agent-settings)).
+A **Caixa de entrada** é onde o trabalho aguarda **atenção humana**. Quando um agente está prestes a executar uma ferramenta que precisa de autorização, ele pausa a tarefa e levanta uma **solicitação de aprovação** aqui. Isso é Human-in-the-Loop (HITL): a ação não é executada até que uma pessoa decida. Se uma determinada ferramenta precisa de autorização é definido pelo **modo de aprovação** do agente e pelos marcadores de **crítico** de suas ferramentas (consulte [Configurações do agente](./#configuracoes-do-agente)).
 
 Cada item da Caixa de entrada mostra o título da solicitação, o agente que a levantou e uma breve descrição do que precisa de uma decisão. A partir do item, você pode:
 
@@ -125,7 +168,7 @@ Cada agente — de sistema ou personalizado — tem um menu de configurações c
   * **Médio** _(padrão)_ — equilíbrio entre qualidade e custo.
   * **Alto** — raciocínio profundo para tarefas mais difíceis; custo mais elevado.
   * **X-Alto** — raciocínio máximo; custo mais alto.
-* **Modo de aprovação** — quanto do trabalho do agente precisa de autorização humana na [Caixa de entrada](./#inbox):
+* **Modo de aprovação** — quanto do trabalho do agente precisa de autorização humana na [Caixa de entrada](./#caixa-de-entrada):
   * **Nenhum** — o agente executa todas as ferramentas automaticamente; nada é enviado para aprovação.
   * **Crítico** _(padrão)_ — apenas as ferramentas marcadas como **críticas** exigem aprovação; todo o resto é executado automaticamente. As ferramentas críticas são as ações sensíveis, de escrita/externas (por exemplo, _enviar/importar documento_, _atualizar campos do documento_, _responder a e-mail_, _enviar notificação_). Nesse modo, uma ferramenta crítica **sempre** levanta uma solicitação de aprovação na Caixa de entrada. Você pode ajustar ferramentas individuais (marcar uma ferramenta normalmente segura como necessitando de aprovação ou desmarcar uma crítica) — essas substituições por ferramenta se aplicam apenas no modo Crítico.
   * **Todos** — cada ferramenta que o agente executa exige aprovação.

@@ -8,27 +8,35 @@ Unternehmensinformationen, Abonnement-Plan und Audit-Protokoll in DocBits
 
 Das Video zeigt die Unternehmensinformationen und -präferenzen, den Abonnement-Plan, die Anmeldeaktivität und das Audit-Protokoll.
 
-Das Zugriffsprotokoll zeichnet auf, wer eine Ressource erstellt, geändert oder gelöscht hat und wann das geschehen ist. Öffnen Sie die Audit-Protokolle in den Einstellungen.
+Das Zugriffsprotokoll zeichnet auf, wer eine Ressource erstellt, geändert oder gelöscht hat und wann das geschehen ist. Sie öffnen die Seite über **Einstellungen → Aktivitätsprotokollierung → Zugriffsprotokoll**; die Seite selbst trägt die Überschrift **Audit-Protokolle**. Aktivieren Sie den Dienst für eine Organisation nur dann, wenn Sie Audit-Ereignisse sammeln möchten.
 
-<figure><img src="../../../.gitbook/assets/access-audit-current-de.png" alt="Aktuelle deutsche Ansicht der Audit-Protokolle mit Zeitbereich, Aktionsfilter und Übersichtskarten. Im gezeigten Beispiel ist der Audit-Trail-Dienst bereits aktiviert; dies ist keine Aussage über die Standardeinstellung."><figcaption><p>Aktuelle deutsche Ansicht der Audit-Protokolle mit Zeitbereich, Aktionsfilter und Übersichtskarten. Im gezeigten Beispiel ist der Audit-Trail-Dienst bereits aktiviert; dies ist keine Aussage über die Standardeinstellung.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/access-audit-overview-de-20261111.png" alt="Deutsche Ansicht der Seite Audit-Protokolle mit aktiviertem Audit-Trail-Dienst, den Filtern Zeitbereich, Aktions-Typ, Ressourcentyp und Protokolle durchsuchen, vier Übersichtskarten, einer Tabelle mit sechs Einträgen sowie den Bedienelementen Zeilen pro Seite, Automatisch aktualisieren, Aktualisieren und Exportieren"><figcaption><p>Die vollständige Arbeitsfläche in der deutschen Oberfläche. Der Audit-Trail-Dienst ist im gezeigten Beispiel bereits aktiviert; das ist keine Aussage über die Standardeinstellung.</p></figcaption></figure>
 
-## Protokollierung ein- oder ausschalten
+## Wenn die Protokollierung ausgeschaltet ist
 
-Der Schalter **Audit-Trail-Dienst aktivieren** ändert die Organisationseinstellung. Aktivieren Sie den Dienst für eine Organisation nur dann, wenn Sie Audit-Ereignisse sammeln möchten. Wenn der Dienst ausgeschaltet ist, stehen keine neu gesammelten Ereignisse zur Verfügung. Die Aufnahme oben zeigt einen bereits aktivierten Dienst; für die Aufnahme wurde die Einstellung nicht verändert.
+Beim ersten Aufruf in einer Browsersitzung kann ein Hinweisdialog erscheinen. **Schließen** blendet ihn aus; die Protokollierung bleibt dann ausgeschaltet. **Enable Audit Trail** schaltet den Dienst für die aktuelle Organisation ein. Dieser Dialog ist derzeit englisch beschriftet: Titel, Erklärtext und Nutzenliste sind auf Englisch, nur **Schließen** ist deutsch.
+
+Auch ohne den Dialog lässt sich der Dienst einschalten: Die leere Seite zeigt **Audit Trail ist deaktiviert** mit der Schaltfläche **Jetzt aktivieren**, und oben rechts schaltet der Schalter **Audit-Trail-Dienst aktivieren** den Dienst ein. Diese Bedienelemente ändern die Organisationseinstellung; sie zeigen die Funktion nicht nur an.
+
+Solange der Dienst ausgeschaltet ist, können Filter und Tabelle keine Ereignisse anzeigen. Ereignisse stehen nur zur Verfügung, wenn der Dienst eingeschaltet ist und Daten gesammelt hat. Nach dem Einschalten können Sie den Dienst über denselben Schalter wieder ausschalten.
 
 ## Ein Ereignis finden
 
-<figure><img src="../../../.gitbook/assets/access-audit-filter-detail-de.png" alt="Detail der deutschen Filter für Zeitbereich, Aktions-Typ und Ressourcentyp. Der Ausschnitt stammt unverändert aus der aktuellen Gesamtansicht."><figcaption><p>Detail der deutschen Filter für Zeitbereich, Aktions-Typ und Ressourcentyp. Der Ausschnitt stammt unverändert aus der aktuellen Gesamtansicht.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/access-audit-filters-de-20261111.png" alt="Ausschnitt der deutschen Filter: Zeitbereich mit der Auswahl Letzte Stunde, Aktions-Typ mit den Chips Erstellen, Aktualisieren und Löschen sowie das Feld Ressourcentyp"><figcaption><p>Zeitbereich, Aktions-Typ und Ressourcentyp in der deutschen Oberfläche.</p></figcaption></figure>
 
 | Steuerelement | Funktion |
 |---|---|
 | **Zeitbereich** | Beschränkt die Liste auf einen Zeitraum, etwa **Letzte Stunde**. |
-| **Aktions-Typ** | Filtert nach **Erstellen**, **Aktualisieren** und **Löschen**. |
+| **Erstellen**, **Aktualisieren**, **Löschen** | Nehmen diese Aktionsarten in die Liste auf oder schließen sie aus. |
 | **Ressourcentyp** | Beschränkt die Ergebnisse auf einen Ressourcentyp. |
-| **Protokolle durchsuchen...** | Durchsucht die Protokolleinträge nach Text. |
+| **Protokolle durchsuchen...** | Durchsucht die sichtbaren Protokolleinträge nach Text. |
+| **Aktualisieren** | Lädt die passenden Einträge einmal neu. |
+| **Automatisch aktualisieren** | Hält die Liste automatisch aktuell, solange die Seite geöffnet ist. |
+| **Exportieren** | Lädt die aktuellen Protokolldaten als JSON-Datei herunter. |
+| **Zeilen pro Seite** | Legt fest, wie viele Einträge die Tabelle auf einer Seite zeigt. |
 
-Die Übersichtskarten fassen die Treffer für die gewählten Filter zusammen: **Aktionen gesamt**, **Erstellt**, **Aktualisiert** und **Gelöscht**. Die Tabelle zeigt **ZEITSTEMPEL**, **BENUTZER**, **AKTION**, **TYP** und **RESSOURCE**. Öffnen Sie die Detailansicht einer Zeile, um die aufgezeichnete Änderung im Vorher-Nachher-Vergleich zu prüfen. Wenn keine Ereignisse erscheinen, prüfen Sie zuerst, ob der Dienst eingeschaltet ist, und erweitern Sie den Zeitraum, bevor Sie die übrigen Filter ändern.
+Die Übersichtskarten zeigen **Aktionen gesamt**, **Erstellt**, **Aktualisiert** und **Gelöscht** für die gewählten Filter. In der Tabelle nennt **ZEITSTEMPEL** den Zeitpunkt, **BENUTZER** die handelnde Person, **AKTION** die Art der Änderung, **TYP** den betroffenen Bereich und **RESSOURCE** das betroffene Objekt. Das Symbol am Zeilenende (**Detaillierte Änderungen anzeigen**) öffnet die aufgezeichnete Änderung im Vorher-Nachher-Vergleich; erfasste Ereignisse können dabei auch IP-Adressen enthalten.
 
-Die manuelle Aktualisierung lädt passende Einträge einmal nach; die automatische Aktualisierung hält die geöffnete Liste aktuell. Über den Export können Sie Protokolldaten als JSON-Datei herunterladen. Die Seitengröße bestimmt, wie viele Einträge pro Seite angezeigt werden.
+Einige Werte zeigt die deutsche Oberfläche derzeit noch auf Englisch: die relative Zeit (**about 1 month ago**), das Datum (**Oct 06, 2026 18:05:02**) und die Werte der Spalte **TYP** (**documents**, **preferences**). Das sind Beschriftungen der Anwendung und kein Fehler in Ihren Filtern.
 
-Bei deaktivierter Protokollierung kann ein Hinweisdialog die erfassten Aktionen und den Nutzen des Dienstes erklären. Schließen Sie diesen Hinweis, bleibt der Dienst deaktiviert. Die Aktivierungsaktion im Hinweis oder auf der Seite ändert die Organisationseinstellung. Erfasste Ereignisse können Benutzeraktivität, IP-Adressen, Zeitstempel und Änderungen im Vorher-Nachher-Vergleich enthalten. Ein leeres Protokoll ist kein Nachweis, dass der Dienst erfolgreich aktiviert wurde.
+Wenn keine Ereignisse erscheinen, prüfen Sie zuerst, ob der Dienst eingeschaltet ist, und erweitern Sie den Zeitraum, bevor Sie die übrigen Filter ändern. Ein leeres Protokoll allein belegt nicht, dass der Dienst ausgeschaltet ist, denn Zeitraum und Filter können die Liste ebenfalls leeren.

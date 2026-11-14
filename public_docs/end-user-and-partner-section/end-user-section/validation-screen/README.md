@@ -36,11 +36,15 @@ Si le numéro de facture est mal lu :
 4. Contrôlez la valeur et la zone source surlignée. Recommencez la sélection si le numéro est incomplet ou associé au mauvais champ.
 5. Enregistrez le document. Pour conserver l’apprentissage d’extraction, utilisez aussi **Save Rules** et confirmez la boîte de dialogue.
 
-<figure><img src="../../../.gitbook/assets/validation-source-selection-fr-2026-v2.png" alt="Le numéro sélectionné sur l’original et son association au champ. Confirmez cette association avant d’enregistrer la règle."><figcaption><p>Le numéro sélectionné sur l’original et son association au champ. Confirmez cette association avant d’enregistrer la règle.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-source-selection-fr-2026.png" alt="Le numéro sélectionné sur l’original et son association au champ. Confirmez cette association avant d’enregistrer la règle."><figcaption><p>Le numéro sélectionné sur l’original et son association au champ. Confirmez cette association avant d’enregistrer la règle.</p></figcaption></figure>
 
 {% hint style="info" %}
 Saisir une nouvelle valeur corrige ce document, mais ne crée pas l’association à la zone source nécessaire à cet apprentissage. Sélectionnez la valeur dans l’original, confirmez l’association et enregistrez la règle pour la réutiliser sur les documents correspondants de ce fournisseur. Cet apprentissage à partir de l’image n’est pas disponible pour les documents lus directement comme données de facture électronique.
 {% endhint %}
+
+### Les boutons de la fenêtre contextuelle des valeurs de champ
+
+Sélectionner une zone sur le document ouvre une petite fenêtre contextuelle avec des boutons ronds au-dessus de la sélection. Survolez un bouton pour lire ce qu’il fait : supprimer la valeur extraite, l’effacer ou confirmer l’association. L’infobulle apparaît après un court délai et reprend le libellé du nom accessible du bouton.
 
 ## Enregistrer, conserver les règles et poursuivre
 
@@ -59,6 +63,8 @@ Une bordure rouge ou une icône d’avertissement attire l’attention sur un ch
 Comparez fournisseur, numéro, dates, montants et devise avec l’original. Pour les totaux, vérifiez les champs d’en-tête concernés et les lignes éventuelles. Corrigez la cause indiquée avant de poursuivre.
 
 Certains messages proviennent d’une règle **Avertissement**. Ils ne disparaissent pas d’eux-mêmes : sélectionnez **Reconnaître** sous le champ pour confirmer la valeur, et le message est remplacé par la note **Compris. La modification de la valeur demande à nouveau confirmation.** Si vous modifiez la valeur par la suite, l’avertissement réapparaît et vous devez le confirmer de nouveau. Un champ qui affiche une erreur bloquante doit être corrigé à la place : aucun bouton ne s’y trouve.
+
+Si seuls des avertissements bloquent un enregistrement ou un export, l’écran affiche le texte d’avertissement du champ dans un encart orange avec le bouton **Acknowledge**, et fait défiler jusqu’à ce champ. Le même bouton confirme tous les champs signalés en une seule fois, comme le lien sous un champ. Une véritable erreur produit toujours le message rouge **One or more fields needs validation.**
 
 Les contrôles dépendent du type de document et de la configuration de l’organisation ; voir [Contrôles automatiques](automatic-checks-on-the-validation-screen.md).
 
@@ -105,3 +111,5 @@ Pour les factures, **Plus d’options → Flux de documents** ouvre le parcours 
 ## Si vous ne pouvez pas modifier ou poursuivre
 
 Lisez la raison affichée : document verrouillé, en lecture seule, dans un autre statut ou accès limité par votre rôle. Corrigez les messages de contrôle et contactez la personne responsable ou l’administrateur pour les droits et réglages. Si l’erreur persiste, consultez le [Dépannage](troubleshooting/README.md) ou préparez un ticket avec le document et le message exact.
+
+Pour l’organisation des pages, voir [Diviser un PDF et organiser ses pages](../dashboard/manual-pdf-splitting.md).

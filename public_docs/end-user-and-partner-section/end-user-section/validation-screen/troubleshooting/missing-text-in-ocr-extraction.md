@@ -1,47 +1,35 @@
 # Brakujący tekst w ekstrakcji OCR
 
-## **Problem**
+Jeśli tekst jest widoczny na dokumencie, ale pola nie można wyodrębnić, najpierw sprawdź, czy DocBits rozpoznał ten tekst. Zeskanowany obraz i tekst osadzony w pliku PDF mogą dawać różne wyniki. Nie zmieniaj reguły ekstrakcji, dopóki nie wiesz, który tekst jest dostępny.
 
-W niektórych przypadkach tekst może wydawać się brakujący w **Widoku OCR**, co uniemożliwia jego ekstrakcję za pomocą funkcji ekstrakcji.
+## Sprawdź widok OCR
 
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_5-pl.png" alt="Kontrola pól fikcyjnej faktury."><figcaption><p>Kontrola pól fikcyjnej faktury.</p></figcaption></figure>
+1. Otwórz dokument w **Walidacji Pola**.
+2. Na pasku narzędzi po prawej stronie wybierz ikonę **Widok OCR**. Widok OCR otwiera się w nowej karcie przeglądarki.
+3. Poszukaj brakującego słowa lub liczby w nałożonej warstwie rozpoznanego tekstu. Jeśli go tam nie ma, ekstrakcja pola nie może pobrać tej wartości z warstwy tekstu. Jeśli jest obecne, sprawdź mapowanie pola.
 
-Aby to zweryfikować, kliknij przycisk **Widok OCR** na pasku narzędzi po prawej stronie. Jeśli tekst się tam nie pojawia, oznacza to, że nie jest dostępny do ekstrakcji.
+<figure><img src="../../../../.gitbook/assets/dbdc-1239-ocr-view-pl-20261113.png" alt="Widok OCR fikcyjnej faktury: rozpoznane słowa są nałożone na stronę jako tekst"><figcaption><p>Porównaj tekst na dokumencie ze słowami widocznymi w widoku OCR — tutaj tytuł Faktura, numer faktury INV-2026-0412, data 14.09.2026 i nazwa dostawcy Musterfirma GmbH są dostępne jako tekst. Przykład pokazuje rozpoznany tekst, a nie nieudaną ekstrakcję.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_6-pl.png" alt="Widok OCR tekstu rozpoznanego na fikcyjnej fakturze."><figcaption><p>Widok OCR tekstu rozpoznanego na fikcyjnej fakturze.</p></figcaption></figure>
+## Wypróbuj OCR zamiast osadzonego E-Textu dla jednego dostawcy
 
-## **Przyczyna**
+Gdy opcja **Użyj E-Textu, jeśli jest dostępny** jest włączona, DocBits może używać tekstu osadzonego w pliku PDF. Tekst, który znajduje się tylko na obrazie, może w tej warstwie nie występować. Dla dostawcy, którego dokumenty mają ten problem:
 
-Najprawdopodobniej przyczyną jest to, że tekst, który próbujesz wyodrębnić, jest częścią obrazu (np. logo lub zeskanowany fragment) w dokumencie.\
-Gdy funkcja E-Text jest włączona, tekst, który pojawia się na obrazach lub logo, nie jest uwzględniany w warstwie tekstu wyodrębnionego. W rezultacie ten tekst nie może być dostępny ani wyodrębniony za pomocą standardowej logiki ekstrakcji.
+1. Otwórz jeden z dokumentów tego dostawcy w **Walidacji Pola**.
+2. Na pasku narzędzi po prawej stronie wybierz **Więcej opcji** (trzy kropki).
+3. Wyłącz **Użyj E-Textu, jeśli jest dostępny**.
+4. Przeczytaj komunikat o ponownym uruchomieniu i wybierz **Potwierdzać**, aby zapisać zmianę i przetworzyć dokument ponownie. Wybierz **Anulować**, aby pozostawić ustawienie bez zmian.
+5. Po przetworzeniu otwórz ponownie **Widok OCR** i sprawdź, czy brakujący tekst się pojawił.
 
-## **Rozwiązanie**
+<figure><img src="../../../../.gitbook/assets/dbdc-1239-supplier-etext-pl-20261113.png" alt="Menu Więcej opcji w Walidacji Pola z jeszcze włączonym przełącznikiem Użyj E-Textu, jeśli jest dostępny"><figcaption><p>Przełącznik E-Textu dostawcy znajduje się w menu Więcej opcji ekranu walidacji i jest tutaj jeszcze włączony; w kroku 3 go wyłączasz.</p></figcaption></figure>
 
-Aby rozwiązać ten problem, wyłącz funkcję E-Text—dla [konkretnego dostawcy](missing-text-in-ocr-extraction.md#wylacz-e-text-dla-konkretnego-dostawcy) lub dla [całej organizacji](missing-text-in-ocr-extraction.md#wylacz-e-text-dla-calej-organizacji). Po dezaktywowaniu E-Text, DocBits będzie polegać wyłącznie na OCR, który jest w stanie wyodrębnić tekst z obrazów i logo w dokumencie.
+<figure><img src="../../../../.gitbook/assets/dbdc-1239-restart-confirm-pl-20261113.png" alt="Okno z komunikatem, że dokument należy uruchomić ponownie, oraz przyciskami Anulować i Potwierdzać"><figcaption><p>Potwierdzenie ponownie uruchamia przetwarzanie otwartego dokumentu, aby ustawienie dostawcy zaczęło działać.</p></figcaption></figure>
 
-### **Wyłącz E-Text dla konkretnego dostawcy**
+Menu **Więcej opcji** zawiera dalsze pozycje dotyczące innych zadań: **Użyj ekstrakcji strukturalnej (AI)** oraz **Model AI (pola nagłówka i tabela)** opisuje strona [Wybór modelu AI specyficznego dla dostawcy do ekstrakcji pól i tabel](../supplier-specific-ai-model-for-field-and-table-extraction.md). Co pokazuje **Przepływ dokumentów**, opisano w sekcji [Przepływ dokumentu](../../dashboard/document-flow.md); **Kreator układów** otwiera [Edytor układu](../../../../administration-and-setup/setup/document-types/layout-builder.md).
 
-1. Otwórz dokument od konkretnego dostawcy w **Walidacji pól**.
-2.  Kliknij menu z trzema kropkami na pasku narzędzi po prawej stronie.
+## Zmień ustawienie domyślne organizacji
 
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_2-pl.png" alt="Menu dodatkowych opcji walidacji pól."><figcaption><p>Menu dodatkowych opcji walidacji pól.</p></figcaption></figure>
+Administrator może otworzyć **Ustawienia → Przetwarzanie dokumentów → Ustawienia OCR → Ogólne ustawienia OCR** i wyłączyć **Użyj E-Textu, jeśli jest dostępny** dla całej organizacji. Zmienia to ustawienie domyślne dla późniejszego przetwarzania; już dotknięte dokumenty sprawdź i przetwórz ponownie osobno. Pozostałe ustawienia OCR opisuje strona [Ustawienia OCR](../../../../administration-and-setup/settings/document-processing/ocr-settings.md).
 
-3.  Odznacz **Użyj E-Textu, jeśli jest dostępny**.
+<figure><img src="../../../../.gitbook/assets/dbdc-1239-org-ocr-settings-pl-20261113.png" alt="Karta Ogólne ustawienia OCR z organizacyjnym przełącznikiem Użyj E-Textu, jeśli jest dostępny"><figcaption><p>Ustawienie organizacji pomaga, gdy problem dotyczy dokumentów wielu dostawców. Ta sama karta pokazuje opcję Użyj DESKEW, jeśli jest dostępny oraz wersję AI OCR.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_3-pl.png" alt="Opcja tekstu elektronicznego w menu dokumentu."><figcaption><p>Opcja tekstu elektronicznego w menu dokumentu.</p></figcaption></figure>
-
-4.  Kliknij **Potwierdzać**, aby ponownie uruchomić przetwarzanie dokumentu.
-
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_4-pl.png" alt="Potwierdzenie przed zmianą użycia tekstu elektronicznego."><figcaption><p>Potwierdzenie przed zmianą użycia tekstu elektronicznego.</p></figcaption></figure>
-
-### Wyłącz E-Text dla całej organizacji
-
-1.  Przejdź do **Ustawienia → Przetwarzanie dokumentów → Ustawienia OCR**.
-
-<figure><img src="../../../../.gitbook/assets/s150-settings_ocr-pl.png" alt="Ustawienia OCR w polskim interfejsie."><figcaption><p>Ustawienia OCR w polskim interfejsie.</p></figcaption></figure>
-
-2.  W sekcji **Ogólne ustawienia OCR** odznacz opcję **Użyj E-Textu, jeśli jest dostępny**.
-
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_1-pl.png" alt="Ogólne ustawienia OCR z opcją tekstu elektronicznego."><figcaption><p>Ogólne ustawienia OCR z opcją tekstu elektronicznego.</p></figcaption></figure>
-
-Obrazy wykorzystują fikcyjną fakturę z dostępnym tekstem OCR. Pokazują elementy interfejsu, a nie odtworzony incydent brakującego tekstu.
+Jeśli tekst nadal nie występuje po ponownym przetworzeniu, sprawdź jakość skanu i skontaktuj się z administratorem DocBits lub pomocą techniczną, podając identyfikator dokumentu i numer strony. Nie wysyłaj poufnego dokumentu w publicznym zgłoszeniu do pomocy technicznej.

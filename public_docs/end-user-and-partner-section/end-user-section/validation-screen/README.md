@@ -36,11 +36,15 @@ Se il numero di fattura non è stato letto correttamente:
 4. Verifica il valore e l’area di origine evidenziata. Ripeti la selezione se il numero è incompleto o associato al campo sbagliato.
 5. Salva il documento. Per conservare l’apprendimento di estrazione, usa anche **Save Rules** e conferma la finestra.
 
-<figure><img src="../../../.gitbook/assets/validation-source-selection-it-2026-v2.png" alt="Il numero selezionato sull’originale e la sua associazione al campo. Conferma l’associazione prima di salvare la regola."><figcaption><p>Il numero selezionato sull’originale e la sua associazione al campo. Conferma l’associazione prima di salvare la regola.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-source-selection-it-2026.png" alt="Il numero selezionato sull’originale e la sua associazione al campo. Conferma l’associazione prima di salvare la regola."><figcaption><p>Il numero selezionato sull’originale e la sua associazione al campo. Conferma l’associazione prima di salvare la regola.</p></figcaption></figure>
 
 {% hint style="info" %}
 Digitare un valore sostitutivo corregge questo documento, ma non crea l’associazione all’area di origine necessaria per questo apprendimento. Seleziona il valore sull’originale, conferma l’associazione e salva la regola per riutilizzarla sui documenti corrispondenti di questo fornitore. L’apprendimento dall’immagine non è disponibile per i documenti letti direttamente come dati di fattura elettronica.
 {% endhint %}
+
+### I pulsanti nella finestra del valore del campo
+
+Selezionando un’area sul documento si apre una piccola finestra con pulsanti rotondi sopra la selezione. Passa il puntatore su un pulsante per leggere che cosa fa: eliminare il valore estratto, svuotarlo o confermare l’associazione. Il tooltip compare dopo un breve ritardo e usa lo stesso testo del nome accessibile del pulsante.
 
 ## Salvare, conservare le regole e proseguire
 
@@ -59,6 +63,8 @@ Un bordo rosso o un’icona di avviso richiama l’attenzione su un campo. Leggi
 Confronta fornitore, numero, date, importi e valuta con l’originale. Per i totali controlla i campi di intestazione interessati e le eventuali righe. Correggi la causa indicata prima di proseguire.
 
 Alcuni messaggi provengono da una regola con la gravità **Avvertimento**. Non scompaiono da soli: seleziona **Riconoscere** sotto il campo per confermare il valore; il messaggio viene sostituito dalla nota “Ricevuto. La modifica del valore richiede nuovamente l’operazione.” Se in seguito modifichi il valore, l’avviso ritorna e occorre riconoscerlo di nuovo. Un campo che mostra un errore bloccante va invece corretto: per esso non esiste alcun pulsante.
+
+Se solo gli avvisi impediscono un salvataggio o un’esportazione, la schermata mostra il testo di avviso del campo in un riquadro color ambra con il pulsante **Acknowledge** e scorre fino a quel campo. Lo stesso pulsante conferma in una sola volta tutti i campi con avvisi, come il link sotto un campo. Un errore reale produce comunque il messaggio rosso **One or more fields needs validation.**
 
 I controlli dipendono dal tipo di documento e dalla configurazione dell’organizzazione; vedi [Controlli automatici](automatic-checks-on-the-validation-screen.md).
 
@@ -105,3 +111,5 @@ Per le fatture, **Altre opzioni → Flusso di documenti** apre il percorso di el
 ## Se non puoi modificare o proseguire
 
 Leggi il motivo visualizzato: il documento può essere bloccato, in sola lettura, in un altro stato o limitato dal tuo ruolo. Risolvi i messaggi di controllo e chiedi alla persona responsabile o all’amministratore per accesso e configurazione. Se l’errore rimane, consulta la [Risoluzione dei problemi](troubleshooting/README.md) oppure prepara un ticket con il documento e il messaggio esatto.
+
+Per l’organizzazione delle pagine, vedi [Dividere un PDF e organizzare le pagine](../dashboard/manual-pdf-splitting.md).

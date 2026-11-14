@@ -36,11 +36,15 @@ Wenn die Rechnungsnummer nicht richtig gelesen wurde:
 4. Kontrolliere den Feldwert und die markierte Belegstelle. Wähle den Bereich erneut, wenn die Nummer unvollständig ist oder zu einem anderen Feld gehört.
 5. Speichere das Dokument. Um die Extraktionsregel zu behalten, wähle zusätzlich **Save Rules** und bestätige den Dialog.
 
-<figure><img src="../../../.gitbook/assets/validation-source-selection-de-2026-v2.png" alt="Die im Original ausgewählte Rechnungsnummer mit ihrer Zuordnung zum Feld. Bestätige die Zuordnung, bevor du die Regel speicherst."><figcaption><p>Die im Original ausgewählte Rechnungsnummer mit ihrer Zuordnung zum Feld. Bestätige die Zuordnung, bevor du die Regel speicherst.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-source-selection-de-2026.png" alt="Die im Original ausgewählte Rechnungsnummer mit ihrer Zuordnung zum Feld. Bestätige die Zuordnung, bevor du die Regel speicherst."><figcaption><p>Die im Original ausgewählte Rechnungsnummer mit ihrer Zuordnung zum Feld. Bestätige die Zuordnung, bevor du die Regel speicherst.</p></figcaption></figure>
 
 {% hint style="info" %}
 Eine eingetippte Korrektur ändert den Wert dieses Dokuments; sie erzeugt nicht die für dieses Extraktionstraining nötige Zuordnung zur Belegstelle. Wähle den Wert im Original, bestätige die Zuordnung und speichere die Regel, damit DocBits sie bei passenden Dokumenten dieses Lieferanten wiederverwenden kann. Bei direkt aus E-Rechnungsdaten gelesenen Dokumenten steht dieses bildbasierte Training nicht zur Verfügung.
 {% endhint %}
+
+### Die Schaltflächen im Popup für den Feldwert
+
+Wenn du auf dem Beleg einen Bereich auswählst, öffnet sich über der Auswahl ein kleines Popup mit runden Schaltflächen. Fahre über eine Schaltfläche, um zu lesen, was sie bewirkt: den extrahierten Wert löschen, ihn leeren oder die Zuordnung bestätigen. Der Tooltip erscheint nach kurzer Verzögerung und verwendet dieselbe Formulierung wie der zugängliche Name der Schaltfläche.
 
 ## Speichern, Regeln speichern und weitergeben
 
@@ -59,6 +63,8 @@ Ein roter Rahmen oder ein Warnsymbol weist auf ein Feld hin. Lies die Infomeldun
 Vergleiche Lieferant, Rechnungsnummer, Datumsangaben, Beträge und Währung mit dem Original. Prüfe bei Summen die betroffenen Kopffelder und gegebenenfalls die Positionen. Behebe vor dem Weitergeben die in der Meldung genannte Ursache.
 
 Manche Meldungen stammen aus einer Regel mit der Schwere **Warnung**. Sie verschwinden nicht von selbst: Wähle unter dem Feld **Zur Kenntnis genommen**, um den Wert zu bestätigen; die Meldung wird dann durch **Zur Kenntnis genommen. Die Änderung des Wertes erfordert eine erneute Anfrage.** ersetzt. Bearbeitest du den Wert danach, kommt die Warnung zurück und du musst sie erneut bestätigen. Ein Feld mit einem harten Fehler muss stattdessen korrigiert werden — dafür gibt es keine Schaltfläche.
+
+Halten nur Warnungen ein Speichern oder einen Export zurück, zeigt der Bildschirm den Warntext des Felds in einem gelben Hinweis mit der Schaltfläche **Acknowledge** an und scrollt zu diesem Feld. Dieselbe Schaltfläche bestätigt alle gewarnten Felder auf einmal, wie der Link unter einem Feld. Ein echter Fehler erzeugt weiterhin die rote Meldung **One or more fields needs validation.**
 
 Die Prüfungen hängen vom Dokumenttyp und der Einrichtung deiner Organisation ab; siehe [Automatische Prüfungen](automatic-checks-on-the-validation-screen.md).
 
@@ -105,3 +111,5 @@ Bei Rechnungen öffnet **Mehr Optionen → Dokumentenfluss** den Verarbeitungsab
 ## Wenn Bearbeiten oder Weitergeben nicht möglich ist
 
 Lies den angezeigten Grund: Das Dokument kann gesperrt, schreibgeschützt, in einem anderen Verarbeitungsstatus oder für deine Rolle eingeschränkt sein. Behebe Prüfmeldungen und kläre Berechtigungen oder Einstellungen mit der zuständigen Person oder Administration. Bei einem verbleibenden Fehler helfen die [Fehlerbehebung](troubleshooting/README.md) oder ein Supportticket mit Dokument und genauer Meldung.
+
+Zur Seitenorganisation siehe [PDF aufteilen und Seiten organisieren](../dashboard/manual-pdf-splitting.md).

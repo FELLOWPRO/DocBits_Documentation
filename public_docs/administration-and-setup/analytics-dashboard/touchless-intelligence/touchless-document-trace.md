@@ -35,6 +35,18 @@ El **Stage Log** situado bajo la ruta enumera las mismas etapas con lo que regis
 
 <figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-es.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Primera ejecución real: 100 % de confianza de clasificación, 0 proveedores candidatos, 1 fila de tabla y 7 brechas de asignación. Que una etapa figure como aprobada significa que se ejecutó; no demuestra una coincidencia de proveedor ni que todos los valores de la factura sean correctos. La validación de campos informa de un campo obligatorio ausente.</p></figcaption></figure>
 
+### Pre-processing
+
+Para la última ejecución, el seguimiento añade el bloque **Pre-processing** bajo la ruta. Enumera las decisiones que se ejecutan antes de que el documento llegue al pipeline, en el orden en que se ejecutaron, cada una con un estado:
+
+| Estado | Significado |
+| --- | --- |
+| **Recorded** | El módulo figura en el registro de este documento. Un registro demuestra el intento, no el éxito. |
+| **Skipped** | La decisión no se aplicaba a este documento |
+| **Not recorded** | No se almacenó nada para esta decisión |
+
+Cuando una decisión depende de una configuración, la entrada muestra también el ajuste actual de la organización y su valor. El bloque describe el documento tal como está ahora, por lo que solo se muestra para la última ejecución.
+
 ### Ejecuciones y cambios
 
 Utilice el selector de ejecuciones para elegir un intento. El historial de ejecuciones muestra su resultado y su primer bloqueo. Las diferencias registradas comparan la ejecución seleccionada con su predecesora, no automáticamente con la ejecución actual. Cada insignia de diferencia incluye su unidad; los puntos sin cambios permanecen sin cambios.

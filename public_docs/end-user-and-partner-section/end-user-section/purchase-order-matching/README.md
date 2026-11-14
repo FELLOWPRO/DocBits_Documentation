@@ -1,4 +1,4 @@
-# Pantalla de coincidencia de órdenes de compra
+# Pantalla de Coincidencia de Órdenes de Compra
 
 Use **PO Matching** (Coincidencia de OC) para comparar las líneas de la orden de compra cargadas para un documento con las líneas de factura extraídas. Los datos de la orden de compra pueden provenir de una integración con el ERP o de otra importación configurada. La pantalla muestra el documento junto a las dos tablas para que pueda comprobar números, cantidades, precios y diferencias antes de guardar o exportar.
 
@@ -49,6 +49,10 @@ Guardar puede volver a activar la coincidencia tras un número de OC cambiado o 
 {% endhint %}
 
 Use **Historial de coincidencias** (icono de reloj, si sus permisos lo permiten) para inspeccionar cómo se decidió una coincidencia anterior. Es una vista de solo lectura. Puede revisar qué reglas se ejecutaron y por qué un candidato no coincidió; abrir el historial no exporta el documento.
+
+### Seguir una coincidencia hasta otra pestaña de la orden de compra
+
+Cada orden de compra se abre en su propia pestaña sobre la tabla, y una línea de factura puede coincidir con líneas que pertenecen a pestañas distintas. El icono de coincidencia de la línea de factura cambia a la pestaña del pedido coincidente y se desplaza hasta la línea coincidente; cada clic adicional muestra la siguiente línea coincidente. Si la línea está conectada en más de una pestaña, el icono muestra primero la lista de **Matched on other PO tabs**, donde elige el pedido cuya línea desea ver. En el lado de la orden de compra el icono funciona al revés: al hacer clic recorre las líneas de factura coincidentes y, al pasar el cursor sobre él, las resalta.
 
 ### Más de una línea por coincidencia
 

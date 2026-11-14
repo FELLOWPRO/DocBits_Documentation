@@ -1,44 +1,48 @@
-# Dziennik aktywności
+# Rejestrowanie aktywności
 
-<figure><img src="../../../.gitbook/assets/prior-t011-pl.png" alt="Filtry dziennika aktywności; wpisy są ukryte."><figcaption><p>Filtry dziennika aktywności; wpisy są ukryte.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/activity-logging-filters-pl-20261111.png" alt="Filtry rejestrowania aktywności w polskim interfejsie: baner Analityka, Zakres czasu z wartością Ostatnie 7 dni, znaczniki Debug, Info, Warning i Error z liczbą wpisów, filtr Praca oraz pole Przeszukaj dzienniki"><figcaption><p>Filtry rejestrowania aktywności w polskim interfejsie: zakres czasu, powaga, praca i wyszukiwanie. Cztery etykiety Debug, Info, Warning i Error pozostają po angielsku również w polskim interfejsie.</p></figcaption></figure>
 
-Activity Logging zapewnia podgląd zdarzeń systemowych we wszystkich usługach DocBits w czasie rzeczywistym. Używaj go do monitorowania przetwarzania, diagnozowania błędów i audytu zachowania systemu.
+Rejestrowanie aktywności (menu **SYSTEM I ADMINISTRACJA**) pokazuje zdarzenia systemowe ze wszystkich usług DocBits w czasie rzeczywistym. Używaj go do monitorowania przetwarzania, diagnozowania błędów i audytu zachowania systemu.
 
 ## Baner analityczny
 
-U góry strony baner prowadzi do **Panel analityczny** z wykresami, metrykami i monitorowaniem w czasie rzeczywistym.
+U góry strony baner **Analityka** zawiera link **Wyświetl panel analityczny**, który otwiera [panel analityczny](analytics.md) z wykresami, metrykami i monitorowaniem w czasie rzeczywistym. Podtytuł banera pozostaje w polskim interfejsie po angielsku.
 
 ## Filtry
 
 | Filtr | Opis |
 |--------|-------------|
-| **Zakres czasu** | Wybierz okno czasowe (np. Today, Last 7 Days, Last 30 Days). |
-| **Poziom ważności** | Włączaj lub wyłączaj poziomy ważności: **Odpluskwić**, **Informacje**, **Ostrzeżenie**, **Błąd**. Każdy znacznik pokazuje bieżącą liczbę. |
-| **Praca** | Filtruj logi według usługi (np. api, auth, api-service). |
-| **Search logs** | Wyszukiwanie pełnotekstowe w komunikatach logów. |
+| **Zakres czasu** | Wybierz okno czasowe: **Ostatnia godzina**, **Dzisiaj**, **Ostatnie 7 dni**, **Ostatnie 30 dni** lub **Niestandardowy**. |
+| **Powaga** | Włączaj lub wyłączaj poziomy: **Debug**, **Info**, **Warning** i **Error**. Każdy znacznik pokazuje bieżącą liczbę zdarzeń. Te cztery etykiety pozostają po angielsku również w polskim interfejsie. |
+| **Praca** | Filtruj logi według usługi: **API**, **AUTH**, **OCR** i **EXPORT**. Etykieta **Praca** to tłumaczenie pola Service w interfejsie. |
+| **Przeszukaj dzienniki...** | Wyszukiwanie pełnotekstowe w komunikatach logów. |
 
 ## Tabela logów
 
-<figure><img src="../../../.gitbook/assets/dbdc-815-activity-logs-service-pl-20261031.png" alt="Rzeczywisty dziennik aktywności w polskim interfejsie: kolumna Praca wskazuje usługę, która wygenerowała wpis, i odpowiada filtrowi Praca. Wpisy dziennika i metadane eksportu pozostają poza kadrem."><figcaption><p>Rzeczywisty dziennik aktywności w polskim interfejsie: kolumna Praca wskazuje usługę, która wygenerowała wpis, i odpowiada filtrowi Praca. Wpisy dziennika i metadane eksportu pozostają poza kadrem.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/activity-logging-service-column-pl-20261111.png" alt="Tabela logów w polskim interfejsie z nagłówkami Znak Czasu, Powaga, Praca i Wiadomość; w kolumnie Praca widoczne są usługi api, auth, ocr i export"><figcaption><p>Tabela logów pokazuje w kolumnie Praca usługę, która utworzyła wpis: api, auth, ocr lub export. Każdy nagłówek można posortować kliknięciem.</p></figcaption></figure>
 
 | Kolumna | Opis |
 |--------|-------------|
-| **Znak czasu** | Data i godzina wystąpienia zdarzenia. Z możliwością sortowania. |
-| **Poziom ważności** | Kolorowa plakietka: Info (niebieska), Warning (żółta), Error (czerwona), Debug (szara). |
-| **Praca** | Usługa lub moduł, który wygenerował log (np. api, auth, api-service). |
+| **Znak Czasu** | Data i godzina wystąpienia zdarzenia. |
+| **Powaga** | Kolorowa plakietka z tekstem pisanym wielkimi literami: INFO (niebieska), WARN (żółta), ERROR (czerwona) i DEBUG (szara). |
+| **Praca** | Usługa, która utworzyła wpis (np. api, auth, ocr, export). Etykieta **Praca** to tłumaczenie pola Service w interfejsie. |
 | **Wiadomość** | Pełny komunikat logu ze szczegółami zdarzenia. |
 
-Wyniki są podzielone na strony — użyj elementów sterujących na dole, aby przechodzić między stronami.
+Wszystkie cztery kolumny można sortować, klikając nagłówek.
+
+Wyniki są podzielone na strony — użyj elementów sterujących na dole, aby przechodzić między stronami. Wskaźnik stron, np. **Page 1 (6 total logs)**, oraz przyciski **Previous** i **Next** pozostają w polskim interfejsie po angielsku. Znaczniki czasu są wyświetlane w formacie angielskim, np. **Nov 10, 2026 09:19:35**.
 
 ## Szczegóły dziennika
 
-Wybierz wiersz dziennika, aby otworzyć jego widok szczegółów. Podsumowanie pokazuje poziom ważności, znacznik czasu, usługę i identyfikator logu, a poniżej komunikat zdarzenia.
+Wybierz wiersz dziennika, aby otworzyć jego widok szczegółów. Nagłówek pokazuje plakietkę powagi, znacznik czasu, usługę i identyfikator logu, a poniżej komunikat zdarzenia.
 
-Sekcja **Szczegóły dziennika** zawiera kompletne zdarzenie w formacie JSON. W zależności od zdarzenia może ono obejmować metadane, takie jak źródło, środowisko, użytkownik, zasób, akcja oraz informacje o sieci lub kliencie. Pola bez wartości mogą być wyświetlane jako `null`.
+Sekcja **Log Details** zawiera kompletne zdarzenie w formacie JSON; jej nazwa pozostaje po angielsku. W zależności od zdarzenia może ono obejmować metadane, takie jak źródło, środowisko, użytkownik, zasób, akcja oraz informacje o sieci lub kliencie. Pola bez wartości mogą być wyświetlane jako `null`.
 
-Wybierz ikonę kopiowania w prawym dolnym rogu sekcji **Szczegóły dziennika**, aby skopiować kompletny rekord JSON do schowka. Użyj strzałki wstecz obok **Dziennik aktywności**, aby wrócić do listy.
+Wybierz ikonę kopiowania w prawym górnym rogu sekcji **Log Details**, aby skopiować kompletny rekord JSON do schowka. Użyj linku **BACK TO LOGS** u góry strony, aby wrócić do listy.
 
 ## Akcje w stopce
+
+Te cztery akcje pozostają w polskim interfejsie po angielsku.
 
 | Akcja | Opis |
 |--------|-------------|

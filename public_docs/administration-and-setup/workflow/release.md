@@ -6,7 +6,9 @@ hidden: true
 
 ## Principes van versiebeheer
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_version_control.png" alt="Docbits Workflow Version Control"><figcaption>Versiebeheersysteem voor workflows</figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-release-versions-card-nl-20261114.png" alt="Workflowbouwer met een geplaatste kaart Documenttype in het blok Wanneer.... ; rechtsboven op de kaart staat het versielabel v: 2 en de geopende lijst toont de versies v: 1 en v: 2."><figcaption><p>Versiemenu van een geplaatste kaart Documenttype in de workflowbouwer</p></figcaption></figure>
+
+In de workflowbouwer toont elke geplaatste kaart rechtsboven een versielabel met de huidige versie; op de afbeelding v: 2. Een klik op dit label opent de lijst met de beschikbare versies van die kaart; op de afbeelding v: 1 en v: 2. Zo ziet u welke versie actief is voordat u een regel wijzigt. Hoe u een kaart aan een workflow toevoegt met Wanneer...., En.... en Dan... en de workflow opslaat: [Standaardworkflow](standard-workflow-builder.md). Wat een kaartversie betekent en wanneer u die wijzigt: [Kaartversies en beschikbaarheid](cards-overview/card-versions-guide.md).
 
 ### Versie 8.5.2024 - Kernfuncties voor versiebeheer
 
@@ -46,7 +48,7 @@ De DocBits Workflow Engine implementeert robuust versiebeheer voor alle workflow
 #### 1. CALL_API
 **Versies:** v1, v2 (Huidig: v2)
 
-📖 **Gids:** [Externe API aanroepen-gids](then/action/call-api-guide.md)
+📖 **Gids:** [De DocBits-API aanroepen](then/action/call-api-guide.md)
 
 | Versie | Vertaling | Status | Belangrijkste wijzigingen |
 |---------|-------------|--------|-------------|
@@ -106,7 +108,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 #### 4. ACTION_TASK_FOR_GROUP
 **Versies:** v2, v3 (Verouderd), v4 (Huidig)
 
-📖 **Gids:** [Taaktoewijzing-gids](then/task/task-assignment-guide.md)
+📖 **Gids:** [Taaktoewijzing en creatiekaarten](then/task/task-assignment-guide.md)
 
 | Versie | Wijzigingen | Status | Type-parameter |
 |---------|---------|--------|-----------------|
@@ -167,7 +169,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 #### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (Meest geëvolueerd - 5 versies)
 **Versies:** v2, v3, v4, v5 (Huidig)
 
-📖 **Gids:** [Volledige gids voor PO-matching](and/compare-with-purchase-order/po-matching-complete-guide.md)
+📖 **Gids:** [PO-matchingkaarten - Volledige gids](and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 | Versie | Wijzigingen | Status | Tolerantie | Vergelijking |
 |---------|---------|--------|-----------|------------|
@@ -351,7 +353,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 #### 1. tasks_create ⭐ (Meest geëvolueerde taakkaart - 4 versies)
 **Versies:** v1 (Verouderd), v2 (Verouderd), v3 (Verouderd), v4 (Huidig)
 
-📖 **Gids:** [Taaktoewijzing-gids](then/task/task-assignment-guide.md)
+📖 **Gids:** [Taaktoewijzing en creatiekaarten](then/task/task-assignment-guide.md)
 
 | Versie | Vertaling | Beslisboom | Werkitemtype | Status |
 |---------|-------------|---------------|-----------------|--------|
@@ -650,10 +652,10 @@ v4: + "Compare as [param1] [param2]"
 
 ## Gerelateerde documentatie
 
-- 📖 [Referentie voor kaartversiebeheer](cards-overview/card-versions-guide.md) - Gedetailleerde versie-informatie
+- 📖 [PO-vergelijkingen: richting, tolerantie en kaartversies](cards-overview/po-comparison-versions-guide.md) - Vergelijkingsrichting, toleranties en kaartversies
 - 📚 [Workflowgidsen](README.md) - Stapsgewijs kaartgebruik
-- 🔄 [Kaartversiedatabase](cards-overview/card-versions-guide.md) - Volledige versiegeschiedenis
-- 📋 [Workflowlogs](workflow-logs.md) - Uitvoering en foutopsporing
+- 🔄 [Overzicht van kaartversiebeheer](#overzicht-van-kaartversiebeheer) - Samenvatting op deze pagina
+- 📋 [Workflowlogboeken](workflow-logs.md) - Uitvoering en foutopsporing
 
 ---
 

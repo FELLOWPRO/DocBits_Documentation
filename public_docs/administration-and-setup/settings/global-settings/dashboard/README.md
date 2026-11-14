@@ -24,7 +24,7 @@ Abra uma secção para ver os respetivos controlos. As definições são guardad
 
 No **Histórico de Exportação** encontra uma tabela com todas as exportações anteriores e a informação principal de cada pedido.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-1324-dashboard-export-history-pt-20261114.png" alt="Histórico de Exportação em português: tabela com duas linhas de exemplo, endereços example.com, estados completed e failed, formatos csv e xlsx e chips de filtro Status e Doc Type; os títulos das colunas continuam em inglês."><figcaption><p>Duas linhas de exemplo no Histórico de Exportação. Os endereços terminam em example.com; datas, estados e filtros são dados de exemplo. Os títulos Email, Status, Requested At, Completed At, Format e Filters Used continuam em inglês na interface em português.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-1324-dashboard-export-history-pt-20261114.png" alt="Histórico de Exportação em português: tabela com duas linhas de exemplo, endereços example.com, estados completed e failed, formatos csv e xlsx e chips de filtro Status, Doc Type e Assigned To; os títulos das colunas continuam em inglês."><figcaption><p>Duas linhas de exemplo no Histórico de Exportação. Os endereços terminam em example.com; datas, estados e filtros são dados de exemplo. Os títulos Email, Status, Requested At, Completed At, Format e Filters Used continuam em inglês na interface em português.</p></figcaption></figure>
 
 A tabela inclui os seguintes dados:
 
@@ -58,7 +58,7 @@ Na interface em português, os títulos das colunas e os nomes dos chips continu
 * **Estilo de filtro de status**: escolha **Todos**, **Estático** ou **Personalizado** para definir que filtros de estado são oferecidos. **Personalizado** mostra a seleção de estados e o botão **Aplicar**.
 * **Filtro de status personalizado**: permite criar e aplicar filtros próprios para estados concretos do documento, como **Novo**, **Validando** ou **Exportando**. Assim encontra rapidamente os documentos que estão numa determinada etapa do processamento.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-1324-dashboard-filters-advance-pt-20261114.png" alt="Filtros em português com Estilo de filtro de status Personalizado, a seleção de estados Pronto para validação, Exportado e o botão Aplicar; abaixo, Painel de Remessa Avançada com Delivered Orders Visibility e 30 Days."><figcaption><p>Filtros com o estilo Personalizado e o Painel de Remessa Avançada. Os estados escolhidos e os 30 dias são dados de exemplo; os rótulos Delivered Orders Visibility e Days continuam em inglês.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-1324-dashboard-filters-advance-pt-20261114.png" alt="Filtros em português com Estilo de filtro de status Personalizado, o campo do filtro personalizado com a seleção truncada Pronto para validação, E… e o botão Aplicar; abaixo, Painel de Remessa Avançada com Delivered Orders Visibility e 30 Days."><figcaption><p>Filtros com o estilo Personalizado e o Painel de Remessa Avançada. Os estados escolhidos e os 30 dias são dados de exemplo; no campo do filtro só aparece o início da lista, e os rótulos Delivered Orders Visibility e Days continuam em inglês.</p></figcaption></figure>
 
 Para saber como escolher **Personalizado**, selecionar estados, aplicar a seleção ou voltar a **Todos**, consulte [Filtros Personalizados](page-1.md).
 

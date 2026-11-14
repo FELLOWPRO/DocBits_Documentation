@@ -8,7 +8,7 @@ L'Explorateur de graphe de connaissances vous aide à visualiser les connexions 
 
 1. Ouvrez **l'Explorateur de graphe de connaissances** dans DocBits. Vérifiez que l'organisation affichée en haut est celle que vous souhaitez inspecter.
 2. Si le centre affiche **Search for a node or compute the graph to get started**, choisissez **Reconstruire le graphe** et attendez la fin du message de progression. Cela prépare les données du graphe ; cela peut prendre du temps. Si l'organisation n'a pas encore de relations correspondantes, **Nœuds** et **Bords** peuvent rester à zéro.
-3. Saisissez un nom ou un autre terme de recherche dans **Search knowledge graph** et appuyez sur Entrée ou sélectionnez l'icône de recherche. Lorsque plusieurs résultats apparaissent, choisissez celui dont vous avez besoin. Un résultat unique ouvre directement son graphe.
+3. Saisissez un nom ou un autre terme de recherche dans le champ **Rechercher dans le graphe de connaissances…** et appuyez sur Entrée ou sélectionnez l'icône de recherche. Lorsque plusieurs résultats apparaissent, choisissez celui dont vous avez besoin. Un résultat unique ouvre directement son graphe.
 4. Sélectionnez un nœud pour voir ses détails. Fermez le panneau de détails avec **X** lorsque vous souhaitez revenir au graphe.
 
 ## Choisir ce que vous voyez

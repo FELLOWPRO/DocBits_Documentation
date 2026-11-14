@@ -15,7 +15,7 @@ Tutorial do modo de anotação do DocBits: adicionar notas na validação e desc
 ## Adicionar uma anotação durante a validação
 
 1. Abra o documento no [ecrã de validação](../../../../end-user-and-partner-section/end-user-section/validation-screen/README.md).
-2. Selecione o **balão de fala** na barra de ferramentas à direita. A dica apresenta **Ativar modo de anotação**. Selecione-o novamente para sair do Modo de anotação.
+2. Selecione o **balão de fala** na barra de ferramentas à direita. A dica apresenta **Ativar modo de anotação**. Selecione-o novamente para sair do Modo de anotação; a dica passa então a **Desativar modo de anotação**.
 3. Arraste sobre a parte do PDF onde a nota deve aparecer. Surge uma pequena barra de ferramentas junto à área selecionada.
 4. Selecione a **caneta** para abrir **Criar/Editar Anotação**. Introduza a nota em **Anotação-Texto**. Pode escolher o tipo de letra e o tamanho, usar **Negrito** ou *Itálico* e definir a **Cor do texto**. **Cancelar** fecha a caixa de diálogo sem aplicar o texto; **Salvar** aplica-o à anotação selecionada.
 5. Utilize o botão **disquete** na barra de ferramentas da anotação para guardar a alteração. Utilize o botão **caixote do lixo** para eliminar a anotação, se já não for necessária.
@@ -38,6 +38,6 @@ As anotações também estão disponíveis durante a [aprovação de documentos]
 
 ## Descarregar o PDF original ou o PDF anotado
 
-No **Painel**, abra o menu de ações de três pontos do documento. Escolha **Download** para o PDF original ou **Baixar PDF anotado** para a versão com as notas guardadas. A opção anotada aparece depois de uma anotação ter sido guardada. O menu oferece também **Validar** (abrir o ecrã de validação), **Atribuir a** (escolher uma pessoa), **Fluxo de documentos** (ver o [fluxo de documentos](../../../../end-user-and-partner-section/end-user-section/dashboard/document-flow.md)), **Reiniciar** (processar o documento novamente), **Registos de documentos** (ver a atividade) e **Excluir** (remover o documento). Utilize estas ações apenas quando pretender alterar ou inspecionar o documento.
+No **Painel**, abra o menu de ações de três pontos do documento. Escolha **Download** para o PDF original ou **Baixar PDF anotado** para a versão com as notas guardadas. A opção anotada aparece depois de uma anotação ter sido guardada. O menu oferece também **Validar** (abrir o ecrã de validação), **Atribuir a** (escolher uma pessoa), **Fluxo de documentos** (ver o [fluxo de documentos](../../../../end-user-and-partner-section/end-user-section/dashboard/document-flow.md)), **Reiniciar** (processar o documento novamente), **Registros de documentos** (ver a atividade) e **Excluir** (remover o documento). Utilize estas ações apenas quando pretender alterar ou inspecionar o documento.
 
 <figure><img src="../../../../.gitbook/assets/dbdc-1317-annotation-mode-download-menu-pt-20261114.png" alt="Menu de ações do Painel com Download para o PDF original e Baixar PDF anotado para as notas guardadas"><figcaption><p>Escolha a versão do PDF de que precisa no menu de ações do documento.</p></figcaption></figure>

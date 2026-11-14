@@ -1,4 +1,4 @@
-# Scherm voor het matchen van inkooporders
+# Inkooporder Matching Scherm
 
 Gebruik **PO-matching** om de inkooporderregels die voor een document zijn geladen te vergelijken met de geëxtraheerde factuurregels. De inkoopordergegevens kunnen afkomstig zijn uit een ERP-integratie of een andere geconfigureerde import. Het scherm toont het document naast de twee tabellen, zodat u aantallen, hoeveelheden, prijzen en verschillen kunt controleren voordat u opslaat of exporteert.
 

@@ -1,4 +1,4 @@
-# Document Trace
+# Touchless Intelligence: Documentspoor
 
 <!-- touchless-admin-video-v2-20261104:start -->
 **Videohoofdstuk (controleversie):** [Uitvoeringen vergelijken](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/nl.html#chapter=08).

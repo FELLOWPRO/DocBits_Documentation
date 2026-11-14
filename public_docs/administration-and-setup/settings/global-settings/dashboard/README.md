@@ -15,6 +15,8 @@ Despliega una sección para revisar sus controles. Los ajustes se guardan al cam
 
 ## **General**
 
+La sección se llama **General** también en la interfaz en español.
+
 * **Restablecer filtros**: permite configurar cuándo deben restablecerse los filtros del panel. Las opciones son **Después de la carga del documento**, **Después del reinicio del documento** y **Después de la exportación de documentos**. Así la vista parte de un estado limpio en cada etapa del flujo de trabajo.
 * **Datos del tablero**:
   * **Actualización automática del panel de control al actualizar los documentos**: interruptor que controla si el panel recarga sus datos cuando los documentos cambian. Si está activo, los cambios —por ejemplo, un cambio de estado hecho por otra persona— se reflejan solos, sin recargar la página a mano.
@@ -29,7 +31,7 @@ En el **Historial de exportaciones** verás una tabla que lista todas las export
 La tabla incluye estos datos:
 
 * **Email**: la dirección de correo registrada para la exportación.
-* **Status**: el estado actual de la exportación (Pending, Completed o Failed).
+* **Status**: el estado actual de la exportación (en la captura, por ejemplo, completed o failed).
 * **Requested At**: la fecha y la hora en que se inició la exportación.
 * **Completed At**: la fecha y la hora en que se completó la exportación.
 * **Format**: el formato de archivo usado para la exportación (CSV, XLSX).

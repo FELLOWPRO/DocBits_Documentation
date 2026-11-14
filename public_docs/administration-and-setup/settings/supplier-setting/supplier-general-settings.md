@@ -33,6 +33,8 @@ The **Status** section defines the workflow a supplier registration moves throug
 * **Status Name**: type a name to create a new custom status (when none is selected), or rename the selected custom status.
 * **Approval Status**: turn on **Mark this as a status that requires approval** if a supplier may only leave this status after an explicit approval. The status then carries an *Approval* badge in the list.
 * **Who Can Approve**: once a status requires approval, choose which roles may approve it — **Admin User**, the **Referrer** (the user who invited the supplier), the **Assignee**, and any number of **User Groups**.
+* **M3 Export Status**: for a status that requires approval, turn on **M3 Export Status** to make approving a supplier from that status create or update the supplier in Infor M3. Only one status can be the export status: turning it on for another status clears it from the previous one automatically. If no status is marked, approving a supplier does not export it to M3.
+* **Badge Color**: pick a colour for the status. The supplier list, the supplier details and the supplier portal show the status with that colour.
 * **Save Changes** stores the selected status; **Reset** clears the form.
 * **Delete a custom status**: click the trash icon next to it and confirm. Built-in statuses cannot be deleted.
 

@@ -163,7 +163,7 @@
         * [Resolução de Problemas de Controle de Acesso e Permissões](administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/troubleshooting.md)
     * [Plano de subscrição](administration-and-setup/settings/global-settings/subscription-plan/README.md)
     * [Integração e SSO](administration-and-setup/settings/global-settings/integration/README.md)
-      * [Chave API](administration-and-setup/settings/global-settings/integration/api-key.md)
+      * [Chave de API](administration-and-setup/settings/global-settings/integration/api-key.md)
       * [Chamadas de API e Exemplos](administration-and-setup/settings/global-settings/integration/api-calls-and-examples.md)
       * [Gestão de chaves API](administration-and-setup/settings/global-settings/integration/api-key-management.md)
       * [Configurar o início de sessão único (SSO)](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/README.md)

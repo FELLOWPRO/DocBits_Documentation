@@ -594,7 +594,7 @@
       * [Ordem das Regras](administration-and-setup/settings/document-processing/decision-trees/rule-order-policy.md)
       * [Qualquer](administration-and-setup/settings/document-processing/decision-trees/any-policy.md)
       * [Primeiro e Adjacente](administration-and-setup/settings/document-processing/decision-trees/first-and-adjacent-policy.md)
-  * [Registo de atividade](administration-and-setup/settings/log-settings/README.md)
+  * [Registro de atividades](administration-and-setup/settings/log-settings/README.md)
     * [Gerenciamento de Tarefas](administration-and-setup/settings/log-settings/task-management.md)
     * [Verificar a sincronização de dados](administration-and-setup/settings/log-settings/data-synchronization.md)
     * [Configurações de Pesquisa de Texto Completo](administration-and-setup/settings/log-settings/fulltext-search-settings.md)

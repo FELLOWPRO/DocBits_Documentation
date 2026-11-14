@@ -10,7 +10,7 @@ Antes de alterar a configuração, escolha a organização e o tipo de documento
 2. Encontre o tipo de documento usado para os documentos vinculados a POs, por exemplo **Fatura**, e selecione a engrenagem no cartão dele para abrir **Mais Configurações**.
 3. Expanda **Ordem de compra**. Encontre **Atualizar status do pedido de compra do documento** e ative-o. O ícone de ajuda próximo explica a opção na aplicação. Alterar esse interruptor não altera as outras configurações de PO na mesma seção.
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc701-document-types-pt-20261011.png" alt="Página Tipos de Documentos com o cartão Fatura e a engrenagem de Mais Configurações"><figcaption>Abra as configurações do tipo de documento que você usa.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc701-document-types-pt-20261111.png" alt="Página Tipos de Documentos com o cartão Fatura, o selo Padrão e o interruptor Extração, além da engrenagem de Mais Configurações"><figcaption>Abra as configurações do tipo de documento que você usa.</figcaption></figure>
 
 <figure><img src="../../../../../../.gitbook/assets/dbdc701-po-settings-pt-20261011.png" alt="Seção Ordem de compra de Mais Configurações com o interruptor Atualizar status do pedido de compra do documento"><figcaption>O interruptor de atualização de status nas configurações de Ordem de compra.</figcaption></figure>
 
@@ -18,7 +18,7 @@ Antes de alterar a configuração, escolha a organização e o tipo de documento
 
 1. Volte ao painel e selecione a engrenagem acima da tabela de documentos.
 2. Abra **Configurações de colunas** no menu de configurações avançadas.
-3. Selecione **Adicionar campo do tipo de documento**, escolha o tipo de documento e pesquise o campo de status da PO. Se esse campo estiver disponível, selecione-o, escolha **Adicionar às colunas visíveis** e depois **Concluído**.
+3. Selecione **Adicionar campo do tipo de documento**, escolha o tipo de documento e pesquise o campo de status da PO. Se esse campo estiver disponível, selecione-o, mova-o para **Colunas visíveis** e depois escolha **Feito**.
 
 O diálogo de colunas contém **Colunas ocultas** e **Colunas visíveis**. Use as setas para mover uma coluna selecionada entre elas. Veja [Modificar as Colunas do Documento](../../../../../../end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md) para o guia completo de colunas. Se o campo de status da PO não existir para o tipo selecionado, peça a um administrador para verificar o campo e a configuração de lookup; apenas o interruptor de exibição não cria um campo ausente.
 
@@ -38,8 +38,8 @@ Use um documento já vinculado a um pedido de compra de teste. Altere o status d
 
 ## Achados de tradução da aplicação
 
-Os termos acima são as etiquetas reais da interface em português, verificados com o executável em sandbox. Alguns termos da aplicação permanecem inconsistentes ou não traduzidos em PT e são reportados aqui, sem correção na documentação:
+Os termos acima são as etiquetas reais da interface em português, verificadas na aplicação em execução no sandbox. Alguns termos da aplicação permanecem inconsistentes ou não traduzidos em PT e são reportados aqui, sem correção na documentação:
 
-- Nomes de tipo de documento sem tradução nos cartões: `Purchase Order`, `Order Confirmation`, `Customs Declaration`, `Freight Letter`; cabeçalho de coluna `Extraction`.
-- Nomes de lookup sem tradução: `Supplier Lookup`, `Order Header Lookup`, `Order Line Lookup`; valores de status `No Match`; coluna de ações `Actions`.
+- Nomes de tipo de documento sem tradução nos cartões: `Purchase Order`, `Order Confirmation`, `Customs Declaration`, `Freight Letter`. Já traduzidos: o rótulo do interruptor **Extração** e o selo **Padrão**.
+- Nomes de lookup sem tradução: `Supplier Lookup`, `Order Header Lookup`, `Order Line Lookup`; valores de status `No Match`. A coluna de ações do painel de PO já aparece como **Ações**.
 - Nomenclatura inconsistente na mesma seção: o menu mostra **Tipos De Documentos** e **Ordem de compra**, mas o cartão do tipo e o painel mostram **Fatura** (italiano para "fatura/factura").

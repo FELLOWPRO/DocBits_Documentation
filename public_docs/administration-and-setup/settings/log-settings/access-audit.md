@@ -8,28 +8,31 @@ Informazioni sulla società, piano di abbonamento e registri di controllo in Doc
 
 Il video mostra le informazioni e le preferenze della società, il piano di abbonamento, l'attività di accesso e i registri di controllo.
 
-<figure><img src="../../../.gitbook/assets/access_audit_settings_page_it.png" alt="Esempio di registro audit attivo con filtri, schede di riepilogo ed eventi registrati. I comandi del registro sono in inglese nell’illustrazione."><figcaption><p>Esempio di registro audit attivo. La navigazione è in italiano; i comandi del registro restano in inglese nell’illustrazione.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/access-audit-overview-it-20261111.png" alt="Pagina Registri di controllo in italiano con il servizio attivo: in alto l'interruttore Abilita il servizio di traccia di controllo, i filtri Intervallo di tempo, Tipo di azione e Tipo di risorsa, quattro schede di riepilogo e la tabella degli eventi con le colonne MARCA TEMPORALE, UTENTE, AZIONE, TIPO e RISORSA"><figcaption><p>Il servizio di traccia di controllo è già attivo in questo esempio. Le schede di riepilogo descrivono l'intervallo di tempo selezionato.</p></figcaption></figure>
 
 Audit Accesso registra chi ha creato, modificato o eliminato una risorsa e quando. Apri **Impostazioni → Registro Attività → Audit Accesso** per consultare il registro. Attiva il servizio per un'organizzazione solo quando intendi raccogliere eventi di audit.
 
 ## Quando la registrazione audit è disattivata
 
-<figure><img src="../../../.gitbook/assets/access_audit_disabled_dialog_it.png" alt="Finestra di dialogo « Audit Trail is Disabled » con i pulsanti Close ed Enable Audit Trail"><figcaption><p>La finestra di dialogo spiega cosa verrà registrato prima di attivare il servizio.</p></figcaption></figure>
+La prima visita in una sessione del browser può mostrare **Audit Trail is Disabled**. **Chiudere** chiude la finestra di dialogo e lascia la registrazione audit disattivata. **Enable Audit Trail** la attiva per l'organizzazione corrente. Nella pagina dietro la finestra di dialogo, anche **Abilita ora** e l'interruttore **Abilita il servizio di traccia di controllo** lo attivano. Questi controlli modificano l'impostazione dell'organizzazione; non si limitano a mostrare un'anteprima della funzione.
 
-La prima visita in una sessione del browser può mostrare **Audit Trail is Disabled**. **Close** chiude la finestra di dialogo e lascia la registrazione audit disattivata. **Enable Audit Trail** la attiva per l'organizzazione corrente. Nella pagina dietro la finestra di dialogo, anche **Enable Now** e l'interruttore **Enable Audit Trail Service** lo attivano. Questi controlli modificano l'impostazione dell'organizzazione; non si limitano a mostrare un'anteprima della funzione.
+In questa versione il titolo e il testo della finestra di dialogo sono ancora in inglese; solo **Chiudere** è tradotto.
 
-Finché il servizio è disattivato, i filtri e la tabella dei log non possono mostrare eventi. Lo stato vuoto spiega come attivare la registrazione. Dopo l'attivazione, usa l'interruttore per disattivarla di nuovo se necessario. Gli eventi sono disponibili solo quando il servizio è attivo e ha raccolto dati.
+Finché il servizio è disattivato, i filtri e la tabella dei registri non possono mostrare eventi. Lo stato vuoto **La traccia di controllo è disabilitata.** spiega come attivare la registrazione. Dopo l'attivazione, usa l'interruttore per disattivarla di nuovo se necessario. Gli eventi sono disponibili solo quando il servizio è attivo e ha raccolto dati.
 
 ## Trovare un evento
 
+<figure><img src="../../../.gitbook/assets/access-audit-filters-it-20261111.png" alt="Dettaglio dei filtri in italiano: Intervallo di tempo con il valore Ultima ora, Tipo di azione con Creare, Aggiornamento ed Eliminare, Tipo di risorsa e il campo Cerca nei registri..."><figcaption><p>Filtri Intervallo di tempo, Tipo di azione, Tipo di risorsa e Cerca nei registri...</p></figcaption></figure>
+
 | Controllo | Cosa fa |
 |---|---|
-| **Time Range** | Limita l'elenco a un periodo, ad esempio Last Hour, Today o Last 7 Days. |
-| **Create**, **Update**, **Delete** | Include o esclude questi tipi di azione. |
-| **Resource Type** | Limita i risultati a un tipo di risorsa, ad esempio documenti o impostazioni. |
-| **Search logs...** | Cerca nel testo delle voci di audit visibili. |
-| **Refresh** | Carica una volta le voci più recenti corrispondenti. |
-| **Auto-refresh** | Mantiene l'elenco aggiornato automaticamente finché la pagina è aperta. |
-| **Export** | Scarica i dati attuali del log di audit in un file JSON. |
+| **Intervallo di tempo** | Limita l'elenco a un periodo, ad esempio **Ultima ora**, **Oggi** o **Ultimi 7 giorni**. |
+| **Creare**, **Aggiornamento**, **Eliminare** | Include o esclude questi tipi di azione. |
+| **Tipo di risorsa** | Limita i risultati a un tipo di risorsa, ad esempio **Documenti** o **Modifiche al modulo**. |
+| **Cerca nei registri...** | Cerca per testo nelle voci di audit visibili. |
+| **Aggiornare** | Carica una volta le voci corrispondenti più recenti. |
+| **Aggiornamento automatico** | Mantiene l'elenco aggiornato automaticamente mentre la pagina è aperta. |
+| **Esportazione** | Scarica i dati attuali del registro di audit in un file JSON. |
+| **Righe per pagina** | Imposta quanti eventi vengono mostrati per pagina; **1-6 di 6** indica l'intervallo visualizzato. |
 
-Le schede di riepilogo mostrano le azioni totali, create, aggiornate ed eliminate per i filtri selezionati. Nella tabella **TIMESTAMP** indica quando un evento ha avuto luogo, **USER** identifica l'autore, **ACTION** nomina la modifica e **RESOURCE** identifica l'elemento interessato. Apri il controllo dei dettagli di una riga per esaminare la modifica registrata. Se non compaiono eventi, verifica che il servizio sia attivo e amplia l'intervallo di tempo prima di modificare gli altri filtri.
+Le schede di riepilogo mostrano **Azioni totali**, **Creato**, **Aggiornato** e **Soppresso** per i filtri selezionati. Nella tabella **MARCA TEMPORALE** indica quando si è verificato un evento, **UTENTE** identifica l'autore, **AZIONE** nomina la modifica, **TIPO** riporta il tipo di risorsa e **RISORSA** identifica l'elemento interessato. La colonna **TIPO** mostra i valori `documents` e `preferences`, mentre il filtro **Tipo di risorsa** usa le voci **Documenti** e **Modifiche al modulo**. L'icona dei dettagli a destra di una riga apre la finestra con la modifica registrata. Se non compaiono eventi, verifica che il servizio sia attivo e amplia l'intervallo di tempo prima di modificare gli altri filtri.

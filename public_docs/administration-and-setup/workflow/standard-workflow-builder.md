@@ -125,9 +125,11 @@ Na liście workflow włączam przetestowaną regułę i sprawdzam przełącznik.
 
 ## Jak uzyskać dostęp
 
-Otwórz **Panel przepływów → Lista przepływów**, a następnie kliknij **Dodaj przepływ pracy**, aby utworzyć nowy przepływ pracy Standard, lub kliknij istniejący przepływ pracy, aby go edytować.
+Otwórz **Panel przepływów → Lista przepływów**, a następnie kliknij **Nowy przepływ pracy**, aby utworzyć nowy przepływ pracy Standard, lub kliknij istniejący przepływ pracy, aby go edytować.
 
-<figure><img src="../../.gitbook/assets/prior-u033-pl.png" alt="Lista przepływów i działania importu."><figcaption><p>Lista przepływów i działania importu.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-list-toolbar-pl-20261112.png" alt="Lista przepływów pracy w języku polskim z polem wyszukiwania, przyciskami Nowy przepływ pracy, Szablony i Importuj przepływ pracy oraz kolumnami Nazwa, Typ, Kolejność Wykonywania Przepływu Pracy, Gdy…, Zaktualizowano Przez, Utworzono Dnia, Ostatnia Modyfikacja: i Akcje"><figcaption><p><strong>Lista przepływów pracy</strong>: wyszukiwanie, przyciski <strong>Nowy przepływ pracy</strong>, <strong>Szablony</strong> i <strong>Importuj przepływ pracy</strong>, a przy każdym przepływie pracy typ, kolejność wykonania, wyzwalacz i <strong>Akcje</strong> w wierszu.</p></figcaption></figure>
+
+Przełącznik w pierwszej kolumnie każdego wiersza pokazuje, czy przepływ pracy jest włączony; na liście możesz go włączyć lub wyłączyć.
 
 ## Model When / And / Then
 
@@ -143,7 +145,19 @@ Kliknij **Dodaj kartę** w dowolnej grupie, aby otworzyć bibliotekę kart. Kart
 
 <figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library grouped by category"><figcaption><p>Biblioteka <strong>Add Card</strong> — karty warunków, karty porównań, karty akcji i inne, pogrupowane według kategorii.</p></figcaption></figure>
 
-Zapisz za pomocą **Zapisz przepływ pracy** lub zapisz układ jako wielokrotnego użytku szablon za pomocą **Zapisz szablon**.
+Zapisz przepływ pracy przyciskiem **Zapisz przepływ pracy** lub zapisz jego układ jako szablon wielokrotnego użytku przyciskiem **Zapisz szablon**.
+
+## Szablony przepływu pracy <a id="workflow-templates"></a>
+
+Przycisk **Szablony** w pasku narzędzi listy otwiera okno **Szablony przepływu pracy**, w którym możesz wykorzystać zaprojektowane już przepływy pracy zamiast zaczynać od pustego obszaru roboczego:
+
+<figure><img src="../../.gitbook/assets/workflow-templates-dialog-pl-20261112.png" alt="Okno Szablony przepływu pracy z polem wyszukiwania Wyszukaj szablon, opcją Pokaż domyślne szablony i kolumnami Nazwa, Zaktualizowano Przez, Ostatnia Modyfikacja: oraz Akcje"><figcaption><p>Okno <strong>Szablony przepływu pracy</strong>: pole wyszukiwania, opcja <strong>Pokaż domyślne szablony</strong> i kolumny <strong>Nazwa</strong>, <strong>Zaktualizowano Przez</strong>, <strong>Ostatnia Modyfikacja:</strong> oraz <strong>Akcje</strong>.</p></figcaption></figure>
+
+- Na liście widać **Nazwę** szablonu, osobę z kolumny **Zaktualizowano Przez** oraz datę z kolumny **Ostatnia Modyfikacja:**.
+- Po włączeniu **Pokaż domyślne szablony** lista zawiera także szablony dostarczane przez DocBits; są one oznaczone jako **Szablon domyślny**.
+- Menu **Akcje** w wierszu pozwala zduplikować szablon, a zapisany szablon również usunąć. Szablonów domyślnych nie można usunąć.
+- Kliknięcie wiersza otwiera szablon w edytorze szablonów, który korzysta z tego samego obszaru roboczego Gdy / I / Następnie co kreator Standardowego przepływu. Zmiany zapisujesz przyciskiem **Zapisz szablon**.
+- Aby rozpocząć nowy przepływ pracy od szablonu, otwórz szablon w edytorze, dostosuj karty i zapisz całość jako przepływ pracy przyciskiem **Zapisz przepływ pracy**.
 
 ## Następne kroki
 

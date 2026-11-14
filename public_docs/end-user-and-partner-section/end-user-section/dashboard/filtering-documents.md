@@ -1,5 +1,7 @@
 # Filtrage des documents
 
+<figure><img src="../../../.gitbook/assets/filtering-documents-filters-overview-fr-20261110.png" alt="Filtres du tableau de bord pour l'attribution et le redémarrage requis."><figcaption><p>Filtres du tableau de bord pour l'attribution et le redémarrage requis.</p></figcaption></figure>
+
 Utilisez la barre de recherche du tableau de bord, le panneau de filtres, la plage de dates et les onglets de types de documents pour restreindre la liste des documents. Les commandes fonctionnent ensemble : un document doit correspondre à la recherche active et aux filtres actifs pour rester dans le tableau.
 
 ## Trouver un document par son nom
@@ -28,9 +30,9 @@ Pour une explication de la signification de chaque statut de traitement, consult
 
 ## Choisir une plage de dates d'importation
 
-Au-dessus de la barre de recherche, sélectionnez **30D**, **90D**, **180D**, **365D** ou **Tous** pour modifier la plage de dates d'importation. Sélectionnez **Sur mesure**, choisissez **Date De Début** et **Date De Fin**, puis sélectionnez **Appliquer** pour une plage spécifique. Le choix actuel est mis en évidence.
+Au-dessus de la barre de recherche, sélectionnez **30D**, **90D**, **180D**, **365D** ou **Tous** pour modifier la plage de dates d'importation. Sélectionnez **Personnalisé**, choisissez **Date De Début** et **Date De Fin**, puis sélectionnez **Appliquer** pour une plage spécifique. Le choix actuel est mis en évidence.
 
-<figure><img src="../../../.gitbook/assets/dbdc167_custom-dates_fr_20261010.png" alt="Plage de dates personnalisée sur le tableau de bord en français avec Date De Début, Date De Fin et Appliquer"><figcaption>Utilisez Sur mesure lorsque les plages de dates prédéfinies ne conviennent pas.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/filtering-documents-custom-dates-fr-20261110.png" alt="Option Personnalisé de la plage de dates sur le tableau de bord en français avec Date De Début, Date De Fin et Appliquer"><figcaption>Utilisez Personnalisé lorsque les plages de dates prédéfinies ne conviennent pas.</figcaption></figure>
 
 ## Utiliser les onglets de types de documents
 
@@ -42,4 +44,4 @@ Au-dessus de la barre de recherche, sélectionnez **30D**, **90D**, **180D**, **
 
 <figure><img src="../../../.gitbook/assets/dbdc167_invoice-tab_fr_20261010.png" alt="Onglet Facture sélectionné comme type de document sur le tableau de bord en français, avec son icône de suppression visible"><figcaption>Choisissez l'onglet pour appliquer le filtre de type ; utilisez × pour supprimer l'onglet.</figcaption></figure>
 
-Si le menu **+** ne contient aucun type, demandez à un administrateur de vérifier quels types de documents sont actifs pour votre organisation. Consultez [Document Types](../../../administration-and-setup/settings/global-settings/document-types/README.md). Pour enregistrer une combinaison de filtres pour plus tard, consultez [Tableaux de bord personnels](personal-dashboards.md).
+Si le menu **+** ne contient aucun type, demandez à un administrateur de vérifier quels types de documents sont actifs pour votre organisation. Consultez [Types de documents](../../../administration-and-setup/settings/global-settings/document-types/README.md). Pour enregistrer une combinaison de filtres pour plus tard, consultez [Tableaux de bord personnels](personal-dashboards.md).

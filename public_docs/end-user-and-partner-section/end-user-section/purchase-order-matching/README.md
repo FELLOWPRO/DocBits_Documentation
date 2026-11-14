@@ -50,6 +50,10 @@ Salvar pode acionar a correspondência novamente após um número de PO alterado
 
 Use o **Histórico de correspondência** (ícone de relógio, onde suas permissões permitirem) para inspecionar como uma correspondência anterior foi decidida. É uma visão somente leitura. Você pode revisar quais regras foram executadas e por que um candidato não correspondeu; abrir o histórico não exporta o documento.
 
+### Seguir uma correspondência para outro separador da ordem de compra
+
+Cada ordem de compra abre no seu próprio separador acima da tabela, e uma linha da fatura pode ser correspondida com linhas que pertencem a separadores diferentes. O ícone de correspondência na linha da fatura muda para o separador da ordem correspondida e desloca-se para a linha correspondida; cada clique adicional mostra a linha correspondida seguinte. Se a linha estiver ligada em mais de um separador, o ícone mostra primeiro a lista em **Matched on other PO tabs**, onde escolhe a ordem cuja linha pretende ver. Do lado da ordem de compra, o ícone funciona no sentido inverso: ao clicar percorre as linhas da fatura correspondidas e, ao passar o ponteiro, realça-as.
+
 ### Mais de uma linha por correspondência
 
 Uma única linha da fatura pode corresponder a várias linhas da ordem, ou o contrário, quando suas regras de correspondência permitirem. Abra os detalhes do **+** em uma linha para inspecionar qualquer correspondência múltipla existente. Verifique a quantidade e o preço combinados, não apenas uma linha. Um painel de detalhes vazio significa que não há correspondência múltipla para inspecionar. Veja [Ferramentas de Correspondência de Ordem de Compra](purchase-order-matching-tools.md) para alterar conexões.

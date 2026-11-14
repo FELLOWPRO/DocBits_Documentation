@@ -35,6 +35,18 @@ O **Stage Log** abaixo do caminho lista as mesmas etapas com o que cada uma regi
 
 <figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-pt.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Primeira execução real: 100% de confiança na classificação, 0 candidatos a fornecedor, 1 linha de tabela e 7 lacunas de mapeamento. Passed significa que uma etapa foi executada; não prova uma correspondência de fornecedor nem que todos os valores da fatura estejam corretos. A validação de campos relata um campo obrigatório ausente.</p></figcaption></figure>
 
+### Pre-processing
+
+Para a execução mais recente, o trace acrescenta o bloco **Pre-processing** por baixo do caminho. Lista as decisões executadas antes de o documento chegar ao pipeline, pela ordem em que foram executadas, cada uma com um estado:
+
+| Estado | Significado |
+| --- | --- |
+| **Recorded** | O módulo consta do registo deste documento. Um registo prova a tentativa, não o êxito. |
+| **Skipped** | A decisão não se aplicava a este documento |
+| **Not recorded** | Nada foi armazenado para esta decisão |
+
+Quando uma decisão depende de uma configuração, a entrada mostra também a definição atual da organização e o respetivo valor. O bloco descreve o documento tal como está agora, pelo que é apresentado apenas para a execução mais recente.
+
 ### Execuções e alterações
 
 Use o seletor de execução para escolher uma tentativa. O Run History lista o resultado e o primeiro bloqueio. As diferenças registradas comparam a execução selecionada com a sua predecessora, não automaticamente com a execução atual. Um selo de diferença inclui a sua unidade; pontos inalterados permanecem inalterados.

@@ -12,10 +12,10 @@ Utilisez la **Détection des doublons** pour signaler les documents qui correspo
 ## Ouvrir les paramètres
 
 1. Ouvrez **Paramètres → Types de Documents**.
-2. Sur le type de document que vous voulez configurer, sélectionnez **Plus De Paramètres**.
+2. Sur le type de document que vous voulez configurer, sélectionnez **Paramètres**.
 3. Dans **Plus De Paramètres**, ouvrez **Détection des doublons**.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc662-duplicate-settings-off-fr-20261011.png" alt="Plus De Paramètres pour Facture avec la section Détection des doublons ouverte et les options de détection désactivées"><figcaption><p>Les paramètres de Facture montrent quatre interrupteurs séparés. Les sélecteurs de champs et d'intervalle apparaissent lorsque la détection est activée.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/more-settings-duplicate-document-handling-settings-off-fr-20261111.png" alt="Plus De Paramètres pour Facture avec la section Détection des doublons ouverte et les options de détection désactivées"><figcaption><p>Les paramètres de Facture montrent quatre interrupteurs séparés. Les sélecteurs de champs et d'intervalle apparaissent lorsque la détection est activée.</p></figcaption></figure>
 
 ## Choisir ce qui compte comme doublon
 
@@ -25,9 +25,9 @@ Utilisez la **Détection des doublons** pour signaler les documents qui correspo
 
 Chaque modification est enregistrée dès que vous la faites ; il n'y a pas de bouton d'enregistrement séparé dans cette section. Si vous désactivez la détection, les sélecteurs de champs et d'intervalle sont masqués.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc662-duplicate-settings-on-fr-20261011.png" alt="Détection des documents en double activée, avec les sélecteurs de champs et d'intervalle"><figcaption><p>Activez la détection avant de choisir les champs de comparaison et l'intervalle de temps.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/more-settings-duplicate-document-handling-settings-on-fr-20261111.png" alt="Détection des documents en double activée, avec les sélecteurs de champs et d'intervalle"><figcaption><p>Activez la détection avant de choisir les champs de comparaison et l'intervalle de temps.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/dbdc662-duplicate-interval-options-fr-20261011.png" alt="Menu Intervalle de détection des doublons avec un mois, trois mois, six mois et un an"><figcaption><p>Trois mois est marqué comme intervalle recommandé dans le menu.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/more-settings-duplicate-document-handling-interval-options-fr-20261111.png" alt="Menu Intervalle de détection des doublons avec un mois, trois mois, six mois et un an"><figcaption><p>Trois mois est marqué comme intervalle recommandé dans le menu.</p></figcaption></figure>
 
 Pour **Facture**, cette section propose aussi **Détection des factures en double**, **Bloquer l'exportation de documents en double** et **Ignorer la file d'attente hors taxes**. Ce sont des interrupteurs séparés ; activez uniquement le comportement dont votre processus de facturation a besoin. Les interrupteurs supplémentaires ne sont pas affichés pour les autres types de documents.
 
@@ -36,3 +36,5 @@ Pour **Facture**, cette section propose aussi **Détection des factures en doubl
 Quand DocBits trouve une correspondance, la ligne du document sur le **Tableau de bord** affiche une icône de doublon. Sélectionnez l'icône pour comparer les enregistrements correspondants dans le panneau latéral. L'icône n'apparaît que lorsqu'une correspondance existe.
 
 Lorsque vous ouvrez un document signalé, l'avertissement de doublon propose de consulter le doublon, de continuer malgré tout et, si le document n'a pas déjà été archivé, de l'archiver. Examinez les enregistrements correspondants avant de choisir une action. Voir [le guide du Tableau de bord](../../dashboard/README.md) pour la liste des documents.
+
+Lorsque vous examinez des doublons présumés, comparez le numéro de la facture, le fournisseur, la date et le montant. Utilisez l'avertissement de doublon et les détails du document correspondant pour décider de ce qui doit être corrigé.

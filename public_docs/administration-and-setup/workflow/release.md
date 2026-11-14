@@ -6,16 +6,18 @@ hidden: true
 
 ## Princípios de controlo de versões
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_version_control.png" alt="Docbits Workflow Version Control"><figcaption>Sistema de Controlo de Versões dos Fluxos de Trabalho</figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-release-versions-card-pt-20261114.png" alt="Cartão Tipo de documento no construtor de fluxo de trabalho com o selo de versão v: 2 e a lista de versões aberta, a mostrar v: 1 e v: 2."><figcaption><p>Cartão Tipo de documento com o selo de versão v: 2 e a lista de versões aberta (v: 1, v: 2)</p></figcaption></figure>
+
+No construtor de fluxo de trabalho, cada cartão colocado mostra o número da versão ativa num selo junto ao cartão; na imagem, v: 2. Um clique no selo abre a lista das versões disponíveis desse cartão; na imagem, v: 1 e v: 2. Assim vê qual é a versão ativa antes de alterar uma regra. Como se adiciona um cartão a um fluxo Quando, E e Então e como se guarda o fluxo está descrito em [Fluxo padrão](standard-workflow-builder.md). O que significa a versão de um cartão e quando vale a pena mudá-la está descrito em [Versões e disponibilidade do cartão](cards-overview/card-versions-guide.md).
 
 ### Versão 8.5.2024 - Funcionalidades essenciais de versionamento
 
 O Motor de Fluxo de Trabalho DocBits implementa um controlo de versões robusto para todos os cartões de fluxo de trabalho:
 
-1. **Version Control**: Cada cartão pode ter várias versões, representando cada uma um conjunto diferente de condições ou ações. Isto permite-lhe experimentar ou ajustar as regras sem afetar o fluxo de trabalho atualmente ativo.
-2. **Seamless Upgrades**: Quando precisar de atualizar uma regra ou condição devido a alterações nos seus requisitos de processamento de documentos, pode criar uma nova versão do cartão. Esta abordagem garante que quaisquer modificações são deliberadas e testadas antes de substituírem a versão atual. Minimiza erros e potenciais perturbações no processamento dos seus documentos.
-3. **Maintaining Consistency**: Manter a versão original do cartão inalterada até decidir atualizá-la garante que os processos em curso não são afetados. Pode executar testes e validações na nova versão sem impacto nos dados ou fluxos de trabalho em produção.
-4. **Flexibility and Testing**: As várias versões permitem testar diferentes cenários num ambiente controlado. Pode ver os efeitos de novas regras ou alterações no seu fluxo de trabalho de processamento de documentos sem efetuar alterações permanentes. Assim que estiver satisfeito com os resultados, pode optar por aplicar a nova versão.
+1. **Controlo de versões**: Cada cartão pode ter várias versões, representando cada uma um conjunto diferente de condições ou ações. Isto permite-lhe experimentar ou ajustar as regras sem afetar o fluxo de trabalho atualmente ativo.
+2. **Atualizações sem interrupções**: Quando precisar de atualizar uma regra ou condição devido a alterações nos seus requisitos de processamento de documentos, pode criar uma nova versão do cartão. Esta abordagem garante que quaisquer modificações são deliberadas e testadas antes de substituírem a versão atual. Minimiza erros e potenciais perturbações no processamento dos seus documentos.
+3. **Consistência mantida**: Manter a versão original do cartão inalterada até decidir atualizá-la garante que os processos em curso não são afetados. Pode executar testes e validações na nova versão sem impacto nos dados ou fluxos de trabalho em produção.
+4. **Flexibilidade e testes**: As várias versões permitem testar diferentes cenários num ambiente controlado. Pode ver os efeitos de novas regras ou alterações no seu fluxo de trabalho de processamento de documentos sem efetuar alterações permanentes. Assim que estiver satisfeito com os resultados, pode optar por aplicar a nova versão.
 
 ---
 
@@ -46,12 +48,12 @@ O Motor de Fluxo de Trabalho DocBits implementa um controlo de versões robusto 
 #### 1. CALL_API
 **Versões:** v1, v2 (Atual: v2)
 
-📖 **Guia:** [Chamar uma API externa](then/action/call-api-guide.md)
+📖 **Guia:** [Chamar a API DocBits](then/action/call-api-guide.md)
 
 | Versão | Tradução | Estado | Principais alterações |
 |---------|-------------|--------|-------------|
-| v1 | Não | Active | Chamada de API básica sem chaves de tradução |
-| v2 | Sim | ✅ Current | Adicionado `trnsl_%call_api` para suporte multilíngue |
+| v1 | Não | Ativo | Chamada de API básica sem chaves de tradução |
+| v2 | Sim | ✅ Atual | Adicionado `trnsl_%call_api` para suporte multilíngue |
 
 **O que mudou:** Foi adicionado suporte de internacionalização (i18n) com chaves de tradução. A funcionalidade permanece idêntica.
 
@@ -75,8 +77,8 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 
 | Versão | Tradução | Estado | Principais alterações |
 |---------|-------------|--------|-------------|
-| v1 | Não | Active | Pedido HTTP simples |
-| v2 | Sim | ✅ Current | Adicionadas as chaves de tradução `trnsl_%send_https_request` |
+| v1 | Não | Ativo | Pedido HTTP simples |
+| v2 | Sim | ✅ Atual | Adicionadas as chaves de tradução `trnsl_%send_https_request` |
 
 **O que mudou:** Foi adicionado suporte de tradução. A funcionalidade essencial de webhook/pedido permanece inalterada.
 **Recomendação:** Utilize v2 (suporte multilíngue)
@@ -88,9 +90,9 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 
 | Versão | Tradução | Estado | Principais alterações |
 |---------|-------------|--------|-------------|
-| v2 | Sim | Active | Implementação original do DocOperator |
-| v3 | Sim | Active | Adicionado o parâmetro "Execute the prompt" para controlo adicional |
-| v4 | Sim | ❌ DEPRECATED & DISABLED | Removido o parâmetro "Execute" (revertido) |
+| v2 | Sim | Ativo | Implementação original do DocOperator |
+| v3 | Sim | Ativo | Adicionado o parâmetro "Execute the prompt" para controlo adicional |
+| v4 | Sim | ❌ OBSOLETA E DESATIVADA | Removido o parâmetro "Execute" (revertido) |
 
 **Trajetória de evolução:** v2 → v3 (parâmetro adicionado) → v4 (revertido - não recomendado)
 
@@ -106,13 +108,13 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 #### 4. ACTION_TASK_FOR_GROUP
 **Versões:** v2, v3 (Descontinuada), v4 (Atual)
 
-📖 **Guia:** [Atribuição de tarefas](then/task/task-assignment-guide.md)
+📖 **Guia:** [Cartões de atribuição e criação de tarefas](then/task/task-assignment-guide.md)
 
 | Versão | Alterações | Estado | Parâmetro de tipo |
 |---------|---------|--------|-----------------|
-| v2 | Implementação original | Active | "Task" (fixo) |
-| v3 | + Suporte de árvore de decisão | ❌ DEPRECATED | "Task" (fixo) |
-| v4 | - Árvore de decisão, + Tipo genérico | ✅ Current | Tipo genérico (flexível) |
+| v2 | Implementação original | Ativo | "Task" (fixo) |
+| v3 | + Suporte de árvore de decisão | ❌ OBSOLETA | "Task" (fixo) |
+| v4 | - Árvore de decisão, + Tipo genérico | ✅ Atual | Tipo genérico (flexível) |
 
 **Evolução:** v2 → v3 (experiência com árvore de decisão) → v4 (tipos genéricos, árvore de decisão removida)
 
@@ -146,8 +148,8 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 
 | Versão | Tipo de tarefa | Estado | Principal diferença |
 |---------|-----------|--------|-----------------|
-| v2 | "task" (fixo) | Active | Versão original |
-| v3 | Tipo genérico | ✅ Current | Alterado para `[param]` flexível |
+| v2 | "task" (fixo) | Ativo | Versão original |
+| v3 | Tipo genérico | ✅ Atual | Alterado para `[param]` flexível |
 
 **O que mudou:** v2 → v3: "Create a new task" → "Create a new [param]" (suporta qualquer tipo de item de trabalho)
 **Recomendação:** Utilize v3
@@ -167,14 +169,14 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 #### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (Mais evoluído - 5 versões)
 **Versões:** v2, v3, v4, v5 (Atual)
 
-📖 **Guia:** [Guia completo de correspondência de pedidos de compra](and/compare-with-purchase-order/po-matching-complete-guide.md)
+📖 **Guia:** [Cartões correspondentes PO: guia completo](and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 | Versão | Alterações | Estado | Tolerância | Comparação |
 |---------|---------|--------|-----------|------------|
-| v2 | Comparação de preços básica | Active | ❌ Não | Básica |
-| v3 | Igual à v2 | Active | ❌ Não | Básica |
-| v4 | + Parâmetro de modo de comparação | Active | ❌ Não | ✅ Sim |
-| v5 | + Parâmetros de tolerância | ✅ Current | ✅ Sim (montante + unidade) | ✅ Sim |
+| v2 | Comparação de preços básica | Ativo | ❌ Não | Básica |
+| v3 | Igual à v2 | Ativo | ❌ Não | Básica |
+| v4 | + Parâmetro de modo de comparação | Ativo | ❌ Não | ✅ Sim |
+| v5 | + Parâmetros de tolerância | ✅ Atual | ✅ Sim (montante + unidade) | ✅ Sim |
 
 **Trajetória de evolução:** v2 → v3 (sem alteração) → v4 (modos de comparação) → v5 (limiares de tolerância)
 
@@ -215,10 +217,10 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versão | Alterações | Estado | Funcionalidade de comparação |
 |---------|---------|--------|-----------------|
-| v1 | Sem tradução, sem método | ❌ DEPRECATED | Básica |
-| v2 | + Chaves de tradução, + método | Active | Método básico |
-| v3 | Igual à v2 | Active | Método básico |
-| v4 | + Parâmetros de modo de comparação | ✅ Current | ✅ Flexível |
+| v1 | Sem tradução, sem método | ❌ OBSOLETA | Básica |
+| v2 | + Chaves de tradução, + método | Ativo | Método básico |
+| v3 | Igual à v2 | Ativo | Método básico |
+| v4 | + Parâmetros de modo de comparação | ✅ Atual | ✅ Flexível |
 
 **O que mudou:**
 - **v1 → v2:** Adicionado `trnsl_%in_order_confirmations_matches_purchase_order` + parâmetro de método de comparação
@@ -234,7 +236,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versão | Dias de tolerância | Dias de tolerância aceites | Estado |
 |---------|-----------------|------------------------|--------|
-| v2 | ❌ Não | ❌ Não | Active |
+| v2 | ❌ Não | ❌ Não | Ativo |
 | v3 | ✅ Sim | ✅ Sim | ✅ Atual |
 
 **O que mudou:** v2 → v3: Adicionados parâmetros de tolerância:
@@ -251,9 +253,9 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versão | Modo de comparação | Estado |
 |---------|-----------------|--------|
-| v2 | Básico | Active |
-| v3 | Básico (sem alteração) | Active |
-| v4 | ✅ Seleção de modo flexível | ✅ Current |
+| v2 | Básico | Ativo |
+| v3 | Básico (sem alteração) | Ativo |
+| v4 | ✅ Seleção de modo flexível | ✅ Atual |
 
 **O que mudou:** v3 → v4: Adicionado `compare [param]` para diferentes abordagens de comparação
 **Recomendação:** Utilize v4
@@ -265,9 +267,9 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versão | Modo de comparação | Estado |
 |---------|-----------------|--------|
-| v2 | Padrão | Active |
-| v3 | Padrão (sem alteração) | Active |
-| v4 | ✅ Flexível | ✅ Current |
+| v2 | Padrão | Ativo |
+| v3 | Padrão (sem alteração) | Ativo |
+| v4 | ✅ Flexível | ✅ Atual |
 
 **O que mudou:** v3 → v4: Adicionado o parâmetro `compare [param]`
 **Recomendação:** Utilize v4
@@ -279,8 +281,8 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versão | Tipo de entrega | Tabela de dados mestre | Estado |
 |---------|---------------|-------------------|--------|
-| v2 | "Confirmed" (fixo) | Referência fixa | Active |
-| v3 | [Parâmetro configurável] | [param] dinâmico | ✅ Current |
+| v2 | "Confirmed" (fixo) | Referência fixa | Ativo |
+| v3 | [Parâmetro configurável] | [param] dinâmico | ✅ Atual |
 
 **O que mudou:** v2 → v3:
 - Alterado "Confirmed delivery" → `[param] delivery` (tipo de entrega flexível)
@@ -297,7 +299,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 | Versão | Referência da tabela de fornecedores | Estado |
 |---------|--------------------------|--------|
 | v2 | "supplier item price table" (fixo) | Ativo |
-| v3 | [param dinâmico] | ✅ Current |
+| v3 | [param dinâmico] | ✅ Atual |
 
 **O que mudou:** v2 → v3: Referência de tabela fixa → `stored in [param]` (permite seleção dinâmica de tabela)
 **Recomendação:** Utilize v3
@@ -311,8 +313,8 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versão | Tradução | Árvore de decisão | Estado |
 |---------|-------------|---------------|--------|
-| v1 | Não | ❌ Não | Active |
-| v2 | Sim | ❌ Não | ✅ Current |
+| v1 | Não | ❌ Não | Ativo |
+| v2 | Sim | ❌ Não | ✅ Atual |
 | v3 | Sim | ✅ Sim | ❌ Descontinuado |
 
 **Evolução:** v1 (sem i18n) → v2 (com i18n) → v3 (+ experiência de árvore de decisão, agora descontinuada)
@@ -330,7 +332,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versão | Árvore de decisão | Estado |
 |---------|---------------|--------|
-| v2 | ❌ Não | ✅ Current |
+| v2 | ❌ Não | ✅ Atual |
 | v3 | ✅ Sim | ❌ Descontinuado |
 
 **O que mudou:** v2 → v3: Adicionado `Use decision tree, if available [param]` (mais tarde descontinuado)
@@ -351,14 +353,14 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 #### 1. tasks_create ⭐ (Cartão de tarefa mais evoluído - 4 versões)
 **Versões:** v1 (Descontinuada), v2 (Descontinuada), v3 (Descontinuada), v4 (Atual)
 
-📖 **Guia:** [Atribuição de tarefas](then/task/task-assignment-guide.md)
+📖 **Guia:** [Cartões de atribuição e criação de tarefas](then/task/task-assignment-guide.md)
 
 | Versão | Tradução | Árvore de decisão | Tipo de item de trabalho | Estado |
 |---------|-------------|---------------|-----------------|--------|
-| v1 | Não | Não | "Task" (fixo) | ❌ DEPRECATED |
-| v2 | Sim | Não | "Task" (fixo) | ❌ DEPRECATED |
+| v1 | Não | Não | "Task" (fixo) | ❌ OBSOLETA |
+| v2 | Sim | Não | "Task" (fixo) | ❌ OBSOLETA |
 | v3 | Sim | Sim | "Task" (fixo) | ❌ Descontinuado |
-| v4 | Sim | Não | [param genérico] | ✅ Current |
+| v4 | Sim | Não | [param genérico] | ✅ Atual |
 
 **Cronologia de evolução:**
 ```
@@ -421,7 +423,7 @@ After:  "Create a new [param] with the title: [param] ... "
 | Versão | Tipo de item de trabalho | Estado |
 |---------|-----------------|--------|
 | v1 | "Task" (fixo) | Ativo |
-| v3 | [param genérico] | ✅ Current |
+| v3 | [param genérico] | ✅ Atual |
 
 **O que mudou:** v1 → v3: Evolução para tipo genérico (a v2 foi ignorada em produção)
 **Recomendação:** Utilize v3
@@ -460,13 +462,13 @@ After:  "Create a new [param] with the title: [param] ... "
 
 ---
 
-#### STAUS_CHANGE (Status Change)
+#### STAUS_CHANGE (Alteração de estado)
 **Versões:** v1, v2, v3 (Atual)
 
 | Versão | Acionar fluxo de trabalho | Estado |
 |---------|-----------------|--------|
-| v1 | ❌ Não | Active |
-| v2 | ❌ Não | Active |
+| v1 | ❌ Não | Ativo |
+| v2 | ❌ Não | Ativo |
 | v3 | ✅ Sim | ✅ Atual |
 
 **O que mudou:** v2 → v3: Adicionado `trigger Workflows [param]` - Aciona automaticamente fluxos de trabalho na mudança de estado
@@ -479,8 +481,8 @@ After:  "Create a new [param] with the title: [param] ... "
 
 | Versão | Validação | Estado |
 |---------|------------|--------|
-| v1 | ❌ Não | Active |
-| v2 | ❌ Não | Active |
+| v1 | ❌ Não | Ativo |
+| v2 | ❌ Não | Ativo |
 | v3 | ✅ Sim | ✅ Atual |
 
 **O que mudou:** v2 → v3: Adicionado `Start Export with Validation: [param]`
@@ -650,10 +652,10 @@ v4: + "Compare as [param1] [param2]"
 
 ## Documentação relacionada
 
-- 📖 [Card Versioning Reference](cards-overview/card-versions-guide.md) - Informações detalhadas sobre versões
-- 📚 [Workflow Guides](README.md) - Utilização dos cartões passo a passo
-- 🔄 [Card Version Database](cards-overview/card-versions-guide.md) - Histórico completo de versões
-- 📋 [Workflow Logs](workflow-logs.md) - Execução e depuração
+- 📖 [Comparações de PO: direção, tolerância e versões de cartão](cards-overview/po-comparison-versions-guide.md) - Direções de comparação, tolerâncias e versões dos cartões
+- 📚 [Fluxos de trabalho](README.md) - Utilização dos cartões passo a passo
+- 🔄 [Visão geral do versionamento de cartões](#visao-geral-do-versionamento-de-cartoes) - Resumo nesta página
+- 📋 [Registos do Fluxo de Trabalho](workflow-logs.md) - Execução e depuração
 
 ---
 

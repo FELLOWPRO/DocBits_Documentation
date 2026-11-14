@@ -76,6 +76,10 @@ The **Assistant** button above the fields shows open validation issues. Open it 
 
 Fields with a configured lookup can search supplier, purchase-order or other master data. Open the lookup control, narrow the results and select the correct record. A selection can populate several related fields, so review those values too. These values come from master data and may differ from the printed wording. See [Fuzzy Data](fuzzy-data.md).
 
+### Read-only fields
+
+A read-only field does not offer the lookup control. Read-only can come from a locked document, your field permissions, or the field configuration itself. Such a field keeps the value that a rule or the layout writes to it, so check that value instead of looking it up again.
+
 ## Review line items
 
 If the layout includes tables, compare the extracted rows, descriptions, quantities, prices and amounts with the document. **Extracted table** and **AI Extracted table** are different extraction views; which are available depends on the enabled extraction methods and the layout. An empty or missing tab does not by itself identify the cause of an extraction problem.

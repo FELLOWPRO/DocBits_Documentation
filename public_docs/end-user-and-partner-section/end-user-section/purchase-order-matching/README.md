@@ -1,4 +1,4 @@
-# Bildschirm „Purchase Order Matching“
+# Bildschirm für den Bestellabgleich
 
 Verwenden Sie **PO Matching**, um die für ein Dokument geladenen Bestellpositionen mit den ausgelesenen Rechnungspositionen zu vergleichen. Die Bestelldaten können aus einer ERP-Integration oder einem anderen konfigurierten Import stammen. Der Bildschirm zeigt das Dokument neben den beiden Tabellen, damit Sie Nummern, Mengen, Preise und Abweichungen prüfen können, bevor Sie speichern oder exportieren.
 

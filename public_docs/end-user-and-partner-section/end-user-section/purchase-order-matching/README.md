@@ -50,6 +50,10 @@ L'enregistrement peut relancer l'appariement après un numéro de bon de command
 
 Utilisez l'**Historique d'appariement** (icône horloge, selon vos permissions) pour inspecter la façon dont un appariement précédent a été décidé. C'est une vue en lecture seule. Vous pouvez consulter quelles règles ont été exécutées et pourquoi un candidat n'a pas été apparié ; ouvrir l'historique n'exporte pas le document.
 
+### Suivre une correspondance vers un autre onglet de bon de commande
+
+Chaque bon de commande s’ouvre dans son propre onglet au-dessus du tableau, et une ligne de facture peut être appariée à des lignes appartenant à différents onglets. L’icône de correspondance sur la ligne de facture bascule vers l’onglet du bon de commande apparié et fait défiler jusqu’à la ligne appariée ; chaque clic supplémentaire affiche la ligne appariée suivante. Si la ligne est connectée sur plusieurs onglets, l’icône affiche d’abord la liste sous **Matched on other PO tabs**, où vous choisissez le bon de commande dont vous voulez voir la ligne. Côté bon de commande, l’icône fonctionne dans l’autre sens : un clic parcourt les lignes de facture appariées, et un survol les met en évidence.
+
 ### Plusieurs lignes pour une correspondance
 
 Une seule ligne de facture peut correspondre à plusieurs lignes de bon de commande, ou l'inverse, lorsque vos règles d'appariement le permettent. Ouvrez les détails **+** d'une ligne pour inspecter une éventuelle correspondance multiple. Vérifiez la quantité et le prix combinés, pas seulement une ligne. Un panneau de détails vide signifie qu'aucune correspondance multiple n'est à inspecter. Consultez [Outils de Correspondance des Bons de Commande](purchase-order-matching-tools.md) pour modifier les connexions.

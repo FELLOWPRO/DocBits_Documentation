@@ -1,4 +1,4 @@
-# Document Trace
+# Touchless Intelligence: Documentspoor
 
 <!-- touchless-admin-video-v2-20261104:start -->
 **Videohoofdstuk (controleversie):** [Uitvoeringen vergelijken](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/nl.html#chapter=08).
@@ -34,6 +34,18 @@ Het **Stage Log** onder het pad toont dezelfde fasen met wat elke fase heeft vas
 * **Show Raw Diagnostics** schakelt de ruwe gegevens in wanneer support daarom vraagt.
 
 <figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-nl.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Werkelijke eerste uitvoering: 100% classificatiebetrouwbaarheid, 0 leverancierskandidaten, 1 tabelrij en 7 mappinghiaten. Passed betekent dat een fase liep; het bewijst geen leveranciersmatch en niet dat elke factuurwaarde correct is. Veldvalidatie meldt een ontbrekend verplicht veld.</p></figcaption></figure>
+
+### Pre-processing
+
+Voor de laatste uitvoering voegt de trace het blok **Pre-processing** onder het pad toe. Het vermeldt de beslissingen die lopen voordat het document de pipeline bereikt, in de volgorde waarin ze liepen, elk met een toestand:
+
+| Toestand | Betekenis |
+| --- | --- |
+| **Recorded** | De module staat op het record van dit document. Een record bewijst de poging, niet het succes. |
+| **Skipped** | De beslissing was niet van toepassing op dit document |
+| **Not recorded** | Voor deze beslissing is niets opgeslagen |
+
+Waar een beslissing van een configuratie afhangt, toont de vermelding ook de huidige organisatie-instelling en de waarde ervan. Het blok beschrijft het document zoals het er nu voor staat, dus het wordt alleen voor de laatste uitvoering getoond.
 
 ### Uitvoeringen en wijzigingen
 

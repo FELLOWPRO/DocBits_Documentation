@@ -1,4 +1,4 @@
-# Scherm voor het matchen van inkooporders
+# Inkooporder Matching Scherm
 
 Gebruik **PO-matching** om de inkooporderregels die voor een document zijn geladen te vergelijken met de geëxtraheerde factuurregels. De inkoopordergegevens kunnen afkomstig zijn uit een ERP-integratie of een andere geconfigureerde import. Het scherm toont het document naast de twee tabellen, zodat u aantallen, hoeveelheden, prijzen en verschillen kunt controleren voordat u opslaat of exporteert.
 
@@ -49,6 +49,10 @@ Opslaan kan het matchen opnieuw starten na een gewijzigd of nieuw gedetecteerd P
 {% endhint %}
 
 Gebruik **Matchgeschiedenis** (klokpictogram, voor zover uw rechten dat toestaan) om te inspecteren hoe een eerdere match is bepaald. Dit is een alleen-lezen weergave. U kunt bekijken welke regels zijn uitgevoerd en waarom een kandidaat niet matchte; het openen van de geschiedenis exporteert het document niet.
+
+### Een match naar een ander tabblad van de inkooporder volgen
+
+Elke inkooporder opent in een eigen tabblad boven de tabel, en een factuurregel kan aan regels worden gematcht die op verschillende tabbladen staan. Het matchpictogram op de factuurregel schakelt naar het tabblad van de gematchte order en scrolt naar de gematchte regel; elke volgende klik toont de volgende gematchte regel. Is de regel op meer dan één tabblad gekoppeld, dan toont het pictogram eerst de lijst onder **Matched on other PO tabs**, waar u de order kiest waarvan u de regel wilt zien. Aan de kant van de inkooporder werkt het pictogram omgekeerd: een klik loopt door de gematchte factuurregels en eroverheen bewegen markeert ze.
 
 ### Meerdere regels per match
 

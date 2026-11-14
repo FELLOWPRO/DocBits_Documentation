@@ -36,11 +36,15 @@ Als het factuurnummer verkeerd is uitgelezen:
 4. Controleer de veldwaarde en het gemarkeerde brongebied. Selecteer opnieuw als het nummer onvolledig is of aan het verkeerde veld is gekoppeld.
 5. Sla het document op. Gebruik daarnaast **Save Rules** en bevestig het venster om de extractietraining te bewaren.
 
-<figure><img src="../../../.gitbook/assets/validation-source-selection-nl-2026-v2.png" alt="Het nummer geselecteerd op het origineel en gekoppeld aan het veld. Bevestig de koppeling voordat je de regel opslaat."><figcaption><p>Het nummer geselecteerd op het origineel en gekoppeld aan het veld. Bevestig de koppeling voordat je de regel opslaat.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-source-selection-nl-2026.png" alt="Het nummer geselecteerd op het origineel en gekoppeld aan het veld. Bevestig de koppeling voordat je de regel opslaat."><figcaption><p>Het nummer geselecteerd op het origineel en gekoppeld aan het veld. Bevestig de koppeling voordat je de regel opslaat.</p></figcaption></figure>
 
 {% hint style="info" %}
 Een vervangende waarde intypen corrigeert dit document, maar maakt niet de koppeling met het brongebied die voor deze extractietraining nodig is. Selecteer de waarde op het origineel, bevestig de koppeling en sla de regel op voor hergebruik bij passende documenten van deze leverancier. Training op basis van de afbeelding is niet beschikbaar voor documenten die rechtstreeks als elektronische factuurgegevens zijn gelezen.
 {% endhint %}
+
+### De knoppen in de pop-up met de veldwaarde
+
+Als je een gebied op het document selecteert, opent boven de selectie een kleine pop-up met ronde knoppen. Beweeg de aanwijzer over een knop om te lezen wat die doet: de geëxtraheerde waarde verwijderen, leegmaken of de toewijzing bevestigen. De tooltip verschijnt na een korte vertraging en gebruikt dezelfde formulering als de toegankelijke naam van de knop.
 
 ## Opslaan, regels bewaren en verder verwerken
 
@@ -59,6 +63,8 @@ Een rode rand of waarschuwingspictogram vraagt aandacht voor een veld. Lees de i
 Vergelijk leverancier, nummer, datums, bedragen en valuta met het origineel. Controleer bij totalen de betreffende kopvelden en eventuele regels. Verhelp de aangegeven oorzaak voordat je verdergaat.
 
 Sommige meldingen komen van een regel met de ernst **Waarschuwing**. Ze verdwijnen niet vanzelf: selecteer **Erkennen** onder het veld om de waarde te bevestigen, waarna de melding wordt vervangen door **Bevestigd. Als de waarde wordt gewijzigd, wordt er opnieuw om gevraagd.** Wijzig je de waarde daarna, dan komt de waarschuwing terug en moet je haar opnieuw bevestigen. Een veld met een harde fout moet je in plaats daarvan corrigeren — daarvoor is er geen knop.
+
+Als alleen waarschuwingen een opslag of een export tegenhouden, toont het scherm de waarschuwingstekst van het veld in een amberkleurige melding met de knop **Acknowledge**, en scrolt het naar dat veld. Dezelfde knop bevestigt alle gewaarschuwde velden in één keer, net als de link onder een veld. Een echte fout levert nog steeds de rode melding **One or more fields needs validation.** op.
 
 De controles hangen af van het documenttype en de organisatie-instellingen; zie [Automatische controles](automatic-checks-on-the-validation-screen.md).
 
@@ -105,3 +111,5 @@ Bij facturen opent **Meer opties → Documentstroom** het verwerkingsverloop. Af
 ## Als je niet kunt bewerken of doorgaan
 
 Lees de weergegeven reden: het document kan vergrendeld, alleen-lezen, in een andere status of beperkt voor je rol zijn. Los validatiemeldingen op en overleg met de verantwoordelijke collega of beheerder over toegang en instellingen. Blijft de fout bestaan, raadpleeg dan [Problemen oplossen](troubleshooting/README.md) of bereid een ticket voor met het document en de exacte melding.
+
+Zie voor de pagina-indeling [Een pdf splitsen en de pagina’s ordenen](../dashboard/manual-pdf-splitting.md).

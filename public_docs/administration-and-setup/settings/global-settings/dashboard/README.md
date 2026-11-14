@@ -44,7 +44,7 @@ The following details are included:
   * **All Users**: All users who have been granted the necessary [permissions](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) can assign documents.
 * **Restart**: This feature allows users to define permissions for restarting documents
   * **Only for Admin**: Only users with Admin privileges can restart documents, regardless of permissions granted to non-admin users.
-  * **Only Admin and Assignee**: Only users with Admin privileges and the assigned user can restart the document.
+  * **Only Admin and Assignee**: Only users with Admin privileges and the assigned user can restart the document. The assigned user can restart it from the document's action menu and through the bulk **Restart** action; documents assigned to someone else stay protected.
   * **All Users**: All users who have been granted the necessary [permissions](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) can restart documents.
 
 * **Pending Input access (days)**: Sets how many days a user who was asked for input in the Activity Stream can open the document read-only; after that the link no longer works. The default is 14 days, and access also ends as soon as the document moves on. See [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).

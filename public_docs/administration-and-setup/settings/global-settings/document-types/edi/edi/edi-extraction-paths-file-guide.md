@@ -16,7 +16,7 @@ Wilt u een ander EDI-onderdeel wijzigen, gebruik dan de bijbehorende gids: [EDI 
 
 ## De mapping lezen
 
-De detailpagina toont links het gekozen documenttype en het EDI-formaat, daaronder de versies, en rechts de JSON-mapping. Het label **Actief** markeert de versie die nu in gebruik is. De knop **Formaat** herschikt de JSON zodat u hem kunt lezen; hij activeert geen versie.
+De detailpagina toont links het gekozen documenttype en het EDI-formaat, daaronder de versies, en rechts de JSON-mapping. Het label **Actief** markeert de versie die nu in gebruik is. De kop boven de versielijst staat in deze versie van de interface nog in het Engels (**Version**). De knop **Formaat** herschikt de JSON zodat u hem kunt lezen; hij activeert geen versie.
 
 <figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-path-detail-nl-20261114.png" alt="Detailpagina van de extractiepaden in het Nederlands: documenttype PURCHASE_ORDER, elektronisch documenttype EDI, versie 1 met het label Actief, de JSON-editor EXTRACTION PATHS en de knop Formaat"><figcaption><p>De actieve EDI-mapping van het type PURCHASE_ORDER, met versie 1 gemarkeerd als Actief en voorbeeldinhoud in de JSON-editor.</p></figcaption></figure>
 

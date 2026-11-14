@@ -22,7 +22,7 @@ _Para um exemplo completo com os detalhes dos segmentos, consulte_ [_Structure D
 
 #### **Gerenciamento de rascunhos**
 
-A coluna da esquerda mostra a lista de **Version** do arquivo. A versão marcada como **Ativo** é a que o DocBits utiliza.
+A coluna da esquerda mostra a lista de versões do arquivo; o cabeçalho dessa lista aparece como **Version** na interface em português. A versão marcada como **Ativo** é a que o DocBits utiliza.
 
 * **Criar um rascunho**: clique no ícone de lápis ✏️ ao lado da versão ativa para começar a editar. O arquivo ativo não pode ser editado diretamente.
 * **Excluir rascunhos**: use o ícone de lixeira 🗑️ para remover os rascunhos que não estão em uso.

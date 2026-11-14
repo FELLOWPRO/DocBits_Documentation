@@ -50,7 +50,42 @@ Los administradores de la organización pueden abrir **Ajustes → Información 
 
 Introduzca únicamente el dominio, por ejemplo `example.com`, en el campo de entrada y seleccione **Agregar dominio** o pulse Intro. El primer dominio se convierte en el dominio principal. Si hay más dominios en la lista, utilice **Hacer primario** en otra fila para cambiarlo, o el icono de la papelera para eliminar un dominio. Los errores, como un dominio no válido, un proveedor de correo electrónico personal o un dominio ya asignado a otra organización, aparecen debajo del campo de entrada. **Todavía no hay dominios asignados** significa que esta organización no tiene ninguna regla de dominio.
 
-Antes de añadir un dominio, compruebe qué organización debe recibir los nuevos inicios de sesión. Para gestionar las pertenencias existentes, continúe con [Users](../groups-users-and-permissions/users/README.md).
+Antes de añadir un dominio, compruebe qué organización debe recibir los nuevos inicios de sesión. Para gestionar las pertenencias existentes, continúe con [Usuarios](../groups-users-and-permissions/users/README.md).
+
+## Canal de lanzamiento
+
+La sección **Canal de lanzamiento** controla cómo recibe esta organización las actualizaciones de DocBits. Seleccione el encabezado de la sección para expandirla.
+
+<figure><img src="../../../../.gitbook/assets/company_release_channel_es-20261111.png" alt="Sección Canal de lanzamiento expandida con las opciones Vesta y Nova"><figcaption><p>La sección Canal de lanzamiento. Vesta solo entrega parches de seguridad, Nova entrega las nuevas funciones después de cada versión (opción predeterminada).</p></figcaption></figure>
+
+* **Vesta**: solo parches de seguridad, máxima estabilidad.
+* **Nova**: nuevas funciones después de cada lanzamiento (por defecto).
+
+Solo hay un canal activo a la vez. Elija **Vesta** cuando la organización deba mantenerse en una versión probada y solo recibir correcciones; elija **Nova** para obtener las nuevas funciones con cada versión. El cambio se aplica en un minuto. Seleccione **Guardar** para aplicarlo.
+
+## Autenticación de dos factores
+
+La sección **Autenticación de dos factores** controla si los miembros de esta organización deben usar la autenticación multifactor (MFA) al iniciar sesión con una contraseña. Seleccione el encabezado de la sección para expandirla o contraerla.
+
+<figure><img src="../../../../.gitbook/assets/company_mfa_requirement_es-20261111.png" alt="Sección Autenticación de dos factores expandida con el requisito de MFA desactivado y el panel Adopción de MFA"><figcaption><p>La sección Autenticación de dos factores. El requisito está desactivado; el panel Adopción de MFA muestra cuántos miembros ya usan un segundo factor.</p></figcaption></figure>
+
+Active **Requerir autenticación de dos factores para todos los miembros** para exigir que cada miembro de la organización confirme su inicio de sesión con contraseña mediante un segundo factor. A partir de ese momento, los inicios de sesión con contraseña se bloquean hasta que el miembro configure un segundo factor. Los inicios de sesión mediante inicio de sesión único (SSO) están exentos: su proveedor de identidad ya aplica la MFA.
+
+El panel **Adopción de MFA** muestra en qué medida se usa ya un segundo factor en la organización: el porcentaje y el número de miembros con la autenticación multifactor habilitada, desglosados por aplicación de autenticación, correo electrónico y llave maestra (passkey). Seleccione **Guardar** para aplicar un requisito modificado.
+
+La guía paso a paso para exigir la MFA, incluido lo que ven los miembros al iniciar sesión, se describe en [Autenticación de Dos Factores (Admin)](two-factor-authentication.md).
+
+## Asistentes
+
+La sección **Asistentes** permite activar o desactivar los asistentes para su organización. Seleccione el encabezado de la sección para expandirla.
+
+<figure><img src="../../../../.gitbook/assets/company_assistants_es-20261111.png" alt="Sección Asistentes expandida con los interruptores del asistente de configuración, del asistente de validación y de la narración de los vídeos explicativos"><figcaption><p>La sección Asistentes con sus tres ajustes. El asistente de configuración y el asistente de validación están desactivados; la narración solo puede cambiarse cuando el asistente de validación está activado.</p></figcaption></figure>
+
+* **Asistente de configuración**: es un chat en el área de configuración. Lee la configuración de su organización y responde preguntas sobre ella. Active **Habilitar el asistente de configuración**. El cambio solo se realiza después de que un administrador haya confirmado una vista previa del mismo.
+* **Asistente de validación**: es un chat en la validación de documentos. Explica qué campos bloquean la validación del documento abierto y por qué; ve los nombres de los campos y los mensajes de error, pero no sus valores. Active **Activar el asistente de validación**; todos los usuarios que pueden abrir un documento pueden usarlo, pero no puede cambiar ajustes ni valores.
+* **Narración de los vídeos explicativos**: reproduce una explicación hablada en el asistente de validación. El texto de la voz no contiene datos del documento. Active **Reproducir la narración de los vídeos explicativos** para oírla; si está desactivada, los vídeos se reproducen sin sonido, solo con subtítulos. Este ajuste solo puede cambiarse cuando el asistente de validación está activado.
+
+Para saber cómo abrir el asistente de configuración y qué puede preguntarle, continúe con [Asistente de configuración](settings-assistant.md).
 
 ## Preferencias de la empresa
 

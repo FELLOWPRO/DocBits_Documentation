@@ -14,9 +14,9 @@ En el constructor de flujos de trabajo, cada tarjeta colocada muestra arriba a l
 
 El Motor de Flujo de Trabajo DocBits implementa un control de versiones robusto para todas las tarjetas de flujo de trabajo:
 
-1. **Version Control**: Cada tarjeta puede tener varias versiones, cada una de las cuales representa un conjunto diferente de condiciones o acciones. Esto le permite experimentar o ajustar las reglas sin afectar al flujo de trabajo actualmente activo.
-2. **Seamless Upgrades**: Cuando necesite actualizar una regla o condición debido a cambios en los requisitos de procesamiento de documentos, puede crear una nueva versión de la tarjeta. Este enfoque garantiza que cualquier modificación sea deliberada y se pruebe antes de reemplazar la versión actual. Minimiza los errores y las posibles interrupciones en el procesamiento de documentos.
-3. **Maintaining Consistency**: Mantener la versión original de la tarjeta sin cambios hasta que decida actualizarla garantiza que los procesos en curso no se vean afectados. Puede ejecutar pruebas y validaciones en la nueva versión sin afectar a los datos o flujos de trabajo en producción.
+1. **Control de versiones**: Cada tarjeta puede tener varias versiones, cada una de las cuales representa un conjunto diferente de condiciones o acciones. Esto le permite experimentar o ajustar las reglas sin afectar al flujo de trabajo actualmente activo.
+2. **Actualizaciones sin interrupciones**: Cuando necesite actualizar una regla o condición debido a cambios en los requisitos de procesamiento de documentos, puede crear una nueva versión de la tarjeta. Este enfoque garantiza que cualquier modificación sea deliberada y se pruebe antes de reemplazar la versión actual. Minimiza los errores y las posibles interrupciones en el procesamiento de documentos.
+3. **Mantener la coherencia**: Mantener la versión original de la tarjeta sin cambios hasta que decida actualizarla garantiza que los procesos en curso no se vean afectados. Puede ejecutar pruebas y validaciones en la nueva versión sin afectar a los datos o flujos de trabajo en producción.
 4. **Flexibilidad y pruebas**: Varias versiones permiten probar diferentes escenarios en un entorno controlado. Puede ver los efectos de las nuevas reglas o cambios en su flujo de trabajo de procesamiento de documentos sin realizar cambios permanentes. Una vez que esté satisfecho con los resultados, puede optar por aplicar la nueva versión.
 
 ---

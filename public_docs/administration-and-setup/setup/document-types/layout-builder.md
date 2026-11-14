@@ -1,51 +1,80 @@
 # 布局构建器
 
-使用布局构建器来排列用户在验证或审批文档时看到的字段和控件。每个布局都与文档类型、来源和布局类型相关联。保存更改前，请先确认当前打开的布局。
+使用布局构建器来排列用户在验证或审批文档时看到的字段和控件。每个布局都属于一个文档类型、一个来源和一个布局类型，因此保存前请先在页面顶部确认这三项。
+
+{% embed url="https://youtu.be/-m45XGiIeig" %}
+DocBits Layout Builder Tutorial: Create Custom Document Layouts for Faster, Cleaner Validation
+{% endembed %}
 
 ## 打开布局
 
-1. 打开 **设置 → 文档类型**。
-2. 为所需的文档类型或子类型打开布局构建器。如果无法使用该编辑器，可能需要管理员先为您的组织启用相应模块。
-3. 检查操作栏中选择的 **起源**，以及旁边显示的编辑器类型。
+1. 打开 **Settings → Document Types**。
+2. 选择要编辑的文档类型并打开 **Layout Builder**。对于文档子类型，请打开该子类型的 Layout Builder 操作。
+3. 检查页眉。左侧选择器是 **origin**（例如 **Default**），其后依次是 **Document Type**（例如 **Invoice**）和 **Layout type**（例如 **Field Validation**）。每个选择器都会打开一个列表；选择其他条目即可加载该布局。如果无法使用 Layout Builder，可能需要管理员为您的组织启用该模块。
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-current-zh.png" alt="布局构建器局部视图：左侧为团体、字段和表单元素区域，中间为简化的发票布局示例。"><figcaption><p>布局构建器局部视图：左侧为团体、字段和表单元素区域，中间为简化的发票布局示例。</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/layout-builder-overview.png" alt="DocBits 中一张发票的 Layout Builder，包含 origin、文档类型和布局类型选择器，Structure、Fields 和 Elements 选项卡，布局区域以及右侧的 Properties 面板"><figcaption><p>Layout Builder：页眉中的选择器、左侧的元素列表、中间的布局区域以及右侧的 Properties 面板。</p></figcaption></figure>
 
-切换 **起源** 时，DocBits 可能会为该来源创建独立的布局。因此，编辑前请先确认所选起源。
+## 使用页眉
+
+* **Document Type** 和 **Layout type** 用于切换布局。页面会重新加载您选择的布局。
+* 在 **Save** 旁边，DocBits 显示该布局是否有**未保存的更改**。保存后，它会显示布局上次保存的时间。
+* **Save** 保存所选文档类型、来源和布局类型的布局。
+* **More** 菜单（三个点）包含 **Auto Generate template**、**Apply Default layout to Origins**、**Use default template**、**Edit JSON**、**Copy JSON** 和 **Layout settings**。**Auto Generate template** 和 **Use default template** 会替换自定义布局，因此请先确认所选的文档类型和布局。**Edit JSON** 用于高级配置，仅在您了解模板格式时才应使用。
+* 如果在存在未保存更改的情况下离开页面，DocBits 会询问是保存还是放弃这些更改。
 
 ## 认识编辑器的各个区域
 
-左侧可切换 **元素**、**特性**，以及齿轮图标所代表的常规设置。
+左侧有三个选项卡：
 
-* **元素** 选项卡包含 **团体**、**字段** 和 **表单元素** 三个区域，分别用于分组、文档字段和其他表单控件。展开相应区域，即可查看可用条目。
-* 中间的布局区域显示当前布局中的分组和字段。分组用于组织相关字段。
-* 右侧是示例文档区域，可显示文档供您对照，并可放大或缩小。
+| 选项卡 | 用途 |
+| --- | --- |
+| **Structure** | 以树状结构查看布局。分组及其字段按其在布局区域中出现的顺序列出，并显示已放置和可用的字段数量。 |
+| **Fields** | 为该文档类型配置的所有字段，按字段组分组并默认折叠。筛选器可在 **All**、**Unused** 和 **Hidden** 字段之间切换，字段标签下方显示技术字段名称。 |
+| **Elements** | 呈现和交互控件，例如 Text、Label、Check Box、分隔符、表格、按钮和子分组。 |
 
-从左侧相应区域将条目拖到布局区域，即可添加分组、字段或表单元素。
+<figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/layout-builder-structure.png" alt="Layout Builder 的 Structure 选项卡，显示展开为字段的分组 Invoice details、Payment details、Purchase Order 和 Delivery Details"><figcaption><p>Structure 选项卡以分组和字段的树状结构显示已构建的布局。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/layout-builder-fields-current-zh.png" alt="示例分组中的发票号码和日期字段。在此示例中，两个字段各占分组宽度的 50%。"><figcaption><p>示例分组中的发票号码和日期字段。在此示例中，两个字段各占分组宽度的 50%。</p></figcaption></figure>
+选择一个条目即可添加，或将其拖入布局区域。分组标题告诉验证文档的人员该部分应包含什么内容。请先在 [Document Types](README.md) 中创建或重命名可复用的文档字段。
 
-可复用的文档字段在[文档类型](README.md)中配置。编辑器中可用的字段取决于所选文档类型和您的配置。
+## 在布局区域中操作
+
+* **Main layout** 显示文档本身的布局。**Table** 显示用于行项目的表格布局。
+* **Document** 打开或关闭布局区域旁的示例文档，以便将布局与真实文档对照。
+* 分组绘制为卡片；分组内的字段可以排列成行，并设置不同的宽度。
 
 ## 更改元素特性
 
-在布局区域选择一个分组或字段，然后打开左侧的 **特性**。可用选项取决于选中的元素，例如显示名称、技术字段名称、宽度和行为。
+在布局区域选择一个元素或分组。右侧的 **Properties** 始终可见，并按区块组织：
 
-<figure><img src="../../../.gitbook/assets/layout-builder-properties-current-zh.png" alt="所选字段的特性：标签、技术字段名称，以及以百分比设置的元素宽度。"><figcaption><p>所选字段的特性：标签、技术字段名称，以及以百分比设置的元素宽度。</p></figcaption></figure>
+* **Display** – 标签、字段名称、标签位置和元素宽度。
+* **Behaviour** – 只读、隐藏和 Tab 键顺序。
+* **Values & lists** – 为该元素提供的值。
+* **Automation** – 填充或更改该元素的规则。
+* **Borders & spacing** – 元素的外观。
 
-对于预定义字段，显示名称和技术字段名称可能无法编辑。根据元素类型，您还可以设置只读状态、可见性、Tab 键切换顺序、值列表，以及在值发生变化时执行工作流或脚本。分组和字段的可用选项并不相同。
+宽度请选择预设值（25、33、50、66、75 或 100 百分比），而不要手动输入数值；然后在布局区域检查效果。显示哪些区块和选项取决于所选元素。更多详情请参阅[配置字段属性](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md)。
 
-调整属性后，请在布局区域检查效果。宽度以百分比设置；分组及其中的字段可以采用不同的宽度。更多详情请参阅[配置字段属性](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md)。
+## 翻译按钮标签
 
-## 模板与 JSON
+**Save Rules**、**Auto Accounting**、**PO Match**、**Export**、**Export Without Validation** 和 **Reject** 等按钮的标签由一个翻译键解析得出。查看器会以打开该布局的用户所用语言显示标签。如果该键没有对应语言的文本，DocBits 会显示布局中保存的标签。
 
-除了保存布局，操作栏还提供自动生成模板、将默认布局应用到各来源布局、使用默认模板和编辑 JSON 等功能。具体可用功能取决于当前打开的编辑器。
+* 独立按钮在 **Properties** 中有一个 **Translation Key** 字段。
+* **Invoice Buttons** 将多个按钮归为一组。可为单个子按钮设置键，或在分组面板的列表中为每个子按钮分别设置一个键。
 
-生成或应用模板可能会替换您自行排列的布局。因此，请先确认文档类型、来源和现有布局。**编辑 JSON** 用于高级配置，仅在了解模板格式时使用。在 JSON 对话框中，也可以复制布局配置。
+在此更改之前构建的布局会保留其标签：DocBits 会为它们填入每种按钮类型的默认键。保存了键的布局会保留该键，重新加载后也是如此。
+
+## Save and go back to Dashboard
+
+类型为 **Save and go back to Dashboard** 的按钮会像 **Save** 一样存储文档值，然后打开 Dashboard。该类型适用于审核人员依次处理文档队列的布局。
+
+* 在布局区域添加一个按钮元素，并在其 **Properties** 中选择该类型。
+* 如果保存失败，按钮会停留在验证界面，不会打开 Dashboard，因此可以先修正该问题。
+* 标签的解析方式与其他任何按钮的标签相同；参见上文的*翻译按钮标签*。
 
 ## 检查并保存
 
-排列好分组和字段后，在布局区域检查效果。确认无误后，使用操作栏中的 **保存**。有关特定来源的布局，请参阅[来源布局](origin-layouts.md)。
+排列好分组和字段，在布局区域检查布局，结果正确后使用页眉中的 **Save**。有关特定来源的布局，请参阅[来源布局](origin-layouts.md)。
 
 {% hint style="info" %}
-配图采用简化的发票布局示例。字段名称和可用选项取决于您的配置。
+截图显示的是 DocBits 测试组织中的合成设置，应用界面语言为英文。采集截图期间没有保存或替换任何布局。
 {% endhint %}

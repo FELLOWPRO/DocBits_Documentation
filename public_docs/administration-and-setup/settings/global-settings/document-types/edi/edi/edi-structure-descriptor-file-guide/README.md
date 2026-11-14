@@ -13,38 +13,38 @@ _Para um exemplo completo com os detalhes dos segmentos, consulte_ [_Structure D
 
 #### **Acessando o arquivo**
 
-1. Acesse **Settings** → **Document Types** e abra **E-Doc** para o tipo de documento que você deseja configurar (por exemplo, _Purchase Order_). Você precisa de acesso de administrador na sua organização para editar esses arquivos.
+1. Acesse **Configurações** → **Tipos de documentos** e abra **E-Doc** para o tipo de documento que você deseja configurar (por exemplo, _Purchase Order_). Você precisa de acesso de administrador na sua organização para editar esses arquivos.
 
-    <!-- dbdc-139-edi-sd-list-en.png --><figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-139-edi-sd-list-en.png" alt="Página E-Doc do Sandbox em inglês com o formato EDI expandido e a linha JSON STRUCTURE DESCRIPTOR listada acima de TRANSFORMATION, PREVIEW e EXTRACTION PATHS"><figcaption>Abra o E-Doc do seu tipo de documento; o formato EDI lista seus arquivos de configuração.</figcaption></figure>
+    <figure><img src="../../../../../../../.gitbook/assets/edi-structure-descriptor-file-guide-list-pt-20261114.png" alt="Cartão EDI da página E-Doc do DocBits em português, com o botão Novo e as colunas Nome, Status, Tipo, Versão e Última modificação em; as quatro linhas STRUCTURE DESCRIPTOR, TRANSFORMATION, PREVIEW e EXTRACTION PATHS mostram o status Padrão e o tipo JSON ou XSLT"><figcaption>Abra o E-Doc do seu tipo de documento; o formato EDI lista seus arquivos de configuração. A captura usa dados de exemplo inventados.</figcaption></figure>
 
 2. Expanda o formato **EDI**. Seus arquivos de configuração são listados juntos: **STRUCTURE DESCRIPTOR**, **TRANSFORMATION**, **PREVIEW** e **EXTRACTION PATHS**.
 3. Clique na linha **STRUCTURE DESCRIPTOR**, marcada como **JSON**, para abri-la.
 
 #### **Gerenciamento de rascunhos**
 
-A coluna da esquerda mostra a lista de **Version** do arquivo. A versão marcada como **Active** é a que o DocBits utiliza.
+A coluna da esquerda mostra a lista de versões do arquivo; o cabeçalho dessa lista aparece como **Version** na interface em português. A versão marcada como **Ativo** é a que o DocBits utiliza.
 
 * **Criar um rascunho**: clique no ícone de lápis ✏️ ao lado da versão ativa para começar a editar. O arquivo ativo não pode ser editado diretamente.
 * **Excluir rascunhos**: use o ícone de lixeira 🗑️ para remover os rascunhos que não estão em uso.
 * **Ativar alterações**: clique no ícone de confirmação ✅ em um rascunho para aprovar e publicar suas alterações.
   * <mark style="color:red;">**Nota**</mark>: ao ativar uma nova versão, a anterior é **desativada automaticamente**.
 
-<!-- dbdc-139-edi-sd-detail-en.png --><figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-139-edi-sd-detail-en.png" alt="Editor JSON do Structure Descriptor no Sandbox em inglês, com a lista de versões à esquerda mostrando a versão 1 marcada como Active e um ícone de lápis para criar um rascunho"><figcaption>O arquivo Structure Descriptor com sua lista de versões; o ícone de lápis cria um rascunho que você pode editar.</figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/edi-structure-descriptor-file-guide-detail-pt-20261114.png" alt="Editor do Structure Descriptor em português com o botão Visualização no canto superior direito, o botão Formatar acima do editor JSON e a lista de versões à esquerda, onde a versão 1 aparece com o status Ativo e um ícone de lápis"><figcaption>O arquivo Structure Descriptor com sua lista de versões; o ícone de lápis cria um rascunho que você pode editar. A captura usa dados de exemplo inventados.</figcaption></figure>
 
-## 3. Função Preview (visualizar a saída interpretada)
+## 3. Função de visualização (Preview)
 
-A **função Preview** permite testar como um arquivo EDI enviado é interpretado com o Structure Descriptor exibido no momento, antes de ativar qualquer alteração.
+A função de visualização (**Preview**) permite testar como um arquivo EDI enviado é interpretado com o Structure Descriptor exibido no momento, antes de ativar qualquer alteração.
 
 #### Uso
 
 * Envie um arquivo EDI pelo fluxo de upload padrão.
-* Copie o **Document ID** do arquivo enviado.
+* Copie o **ID do documento** do arquivo enviado.
 * Abra o arquivo **Structure Descriptor** conforme descrito acima.
-* Clique em **Preview** no canto superior direito para abrir o painel de teste.
+* Clique em **Visualização** no canto superior direito para abrir o painel de teste.
 
-    <div align="left"><!-- dbdc-139-edi-sd-preview-en.png --><figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-139-edi-sd-preview-en.png" alt="Página do Structure Descriptor no Sandbox em inglês com o painel de teste Preview aberto, mostrando o campo de entrada Document Id e o botão Test" width="560"><figcaption>O painel de teste: informe um Document ID e pressione Test.</figcaption></figure></div>
+    <div align="left"><figure><img src="../../../../../../../.gitbook/assets/edi-structure-descriptor-file-guide-preview-pt-20261114.png" alt="Editor do Structure Descriptor em português com o painel de teste aberto: o campo Document Id… preenchido com o identificador de exemplo inventado e2000000-…, o botão Teste e a saída XML estruturada ao lado do editor" width="560"><figcaption>O painel de teste: informe um ID de documento e pressione Teste. O identificador e a saída XML são dados de exemplo inventados.</figcaption></figure></div>
 
-* Informe o **Document ID** no campo e pressione **Test**.
+* Informe o **ID do documento** no campo **Document Id…** e pressione **Teste**.
 * A **saída estruturada** resultante é exibida ao lado do editor.
 
 Isso é especialmente útil para depurar mapeamentos e validar agrupamentos estruturais em tempo real. É necessário um documento EDI representativo do seu próprio formato; o resultado exibido depende do arquivo enviado.

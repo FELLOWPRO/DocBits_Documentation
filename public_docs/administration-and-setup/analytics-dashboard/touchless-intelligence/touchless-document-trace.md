@@ -35,6 +35,18 @@
 
 <figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-zh.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>实际的首次运行：分类置信度 100%、0 个供应商候选、1 个表格行和 7 个映射缺口。Passed 表示某阶段已执行；它并不证明供应商匹配成功，也不证明每个发票值都正确。字段校验报告缺少必填字段。</p></figcaption></figure>
 
+### Pre-processing
+
+对于最新一次运行，追踪会在路径下方增加 **Pre-processing** 区块。它按执行顺序列出在文档进入 Pipeline 之前运行的各项决策，并显示每项决策的状态：
+
+| 状态 | 含义 |
+| --- | --- |
+| **Recorded** | 该模块在此文档的记录中。有记录只证明曾经尝试，并不证明成功。 |
+| **Skipped** | 该决策不适用于此文档 |
+| **Not recorded** | 该决策没有存储任何内容 |
+
+如果某项决策取决于配置，该条目还会显示当前的组织设置及其值。该区块描述的是文档当前的状态，因此仅针对最新一次运行显示。
+
 ### 运行与变更
 
 使用运行选择器选择一次尝试。Run History 列出其结果和首个阻塞点。已记录的差异会将所选运行与其前一次运行比较，而不是自动与当前运行比较。差异标记会带上单位；未变化的数据点保持不变。

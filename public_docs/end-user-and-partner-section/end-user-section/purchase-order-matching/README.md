@@ -1,4 +1,4 @@
-# Pantalla de coincidencia de órdenes de compra
+# Pantalla de Coincidencia de Órdenes de Compra
 
 Use **PO Matching** (Coincidencia de OC) para comparar las líneas de la orden de compra cargadas para un documento con las líneas de factura extraídas. Los datos de la orden de compra pueden provenir de una integración con el ERP o de otra importación configurada. La pantalla muestra el documento junto a las dos tablas para que pueda comprobar números, cantidades, precios y diferencias antes de guardar o exportar.
 

@@ -6,7 +6,9 @@ hidden: true
 
 ## Principes de contrôle de version
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_version_control.png" alt="Docbits Workflow Version Control"><figcaption>Système de contrôle de version des flux de travail</figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-release-versions-card-fr-20261114.png" alt="Constructeur de flux de travail avec une carte Le type de document placée dans le bloc Quand.... ; l'insigne de version v: 2 est visible sur la carte et la liste ouverte propose les versions v: 1 et v: 2."><figcaption><p>Menu des versions d'une carte Le type de document placée dans le constructeur de flux de travail</p></figcaption></figure>
+
+Dans le constructeur de flux de travail, chaque carte placée affiche en haut à droite un insigne de version avec sa version actuelle ; sur l'image, v: 2. Un clic sur cet insigne ouvre la liste des versions disponibles de cette carte ; sur l'image, v: 1 et v: 2. Vous voyez ainsi quelle version est active avant de modifier une règle. Comment ajouter une carte à un flux avec Quand...., Et.... et Dans ce cas...., puis enregistrer le flux : [Flux standard](standard-workflow-builder.md). Ce que signifie une version de carte et quand la changer : [Versions et disponibilité des cartes](cards-overview/card-versions-guide.md).
 
 ### Version 8.5.2024 - Fonctionnalités principales de versionnage
 
@@ -46,7 +48,7 @@ Le moteur de flux de travail DocBits met en œuvre un contrôle de version robus
 #### 1. CALL_API
 **Versions :** v1, v2 (Actuelle : v2)
 
-📖 **Guide :** [Guide d'appel d'API externe](then/action/call-api-guide.md)
+📖 **Guide :** [Appeler l’API DocBits](then/action/call-api-guide.md)
 
 | Version | Traduction | Statut | Changements clés |
 |---------|-------------|--------|-------------|
@@ -106,7 +108,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 #### 4. ACTION_TASK_FOR_GROUP
 **Versions :** v2, v3 (Obsolète), v4 (Actuelle)
 
-📖 **Guide :** [Guide d'assignation de tâches](then/task/task-assignment-guide.md)
+📖 **Guide :** [Cartes d'affectation et de création de tâches](then/task/task-assignment-guide.md)
 
 | Version | Changements | Statut | Paramètre de type |
 |---------|---------|--------|-----------------|
@@ -167,7 +169,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 #### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (La plus évoluée - 5 versions)
 **Versions :** v2, v3, v4, v5 (Actuelle)
 
-📖 **Guide :** [Guide complet du rapprochement de PO](and/compare-with-purchase-order/po-matching-complete-guide.md)
+📖 **Guide :** [Cartes de correspondance de bon de commande - Guide complet](and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 | Version | Changements | Statut | Tolérance | Comparaison |
 |---------|---------|--------|-----------|------------|
@@ -351,7 +353,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 #### 1. tasks_create ⭐ (Carte de tâche la plus évoluée - 4 versions)
 **Versions :** v1 (Obsolète), v2 (Obsolète), v3 (Obsolète), v4 (Actuelle)
 
-📖 **Guide :** [Guide d'assignation de tâches](then/task/task-assignment-guide.md)
+📖 **Guide :** [Cartes d'affectation et de création de tâches](then/task/task-assignment-guide.md)
 
 | Version | Traduction | Arbre de décision | Type d'élément de travail | Statut |
 |---------|-------------|---------------|-----------------|--------|
@@ -650,9 +652,9 @@ v4: + "Compare as [param1] [param2]"
 
 ## Documentation associée
 
-- 📖 [Référence du versionnage des cartes](cards-overview/card-versions-guide.md) - Informations détaillées sur les versions
+- 📖 [Comparaison avec la commande : sens, tolérance et versions des cartes](cards-overview/po-comparison-versions-guide.md) - Sens de comparaison, tolérances et versions des cartes
 - 📚 [Guides de flux de travail](README.md) - Utilisation des cartes étape par étape
-- 🔄 [Base de données des versions de cartes](cards-overview/card-versions-guide.md) - Historique complet des versions
+- 🔄 [Aperçu du versionnage des cartes](#apercu-du-versionnage-des-cartes) - Résumé sur cette page
 - 📋 [Journaux de flux de travail](workflow-logs.md) - Exécution et débogage
 
 ---

@@ -1,94 +1,44 @@
 # EDI Extraction Paths Bestandsgids
 
-## 1. Overzicht
+De configuratie **Extraction Paths** laat DocBits zien waar de waarden van een factuur in een gestructureerd EDI/XML-document staan. Ze koppelt documentvelden en tabelkolommen aan XPath-expressies. Wijzig deze configuratie alleen als u de elektronische documentformaten van uw organisatie beheert.
 
-Het **Extraction Paths-bestand** bepaalt hoe gegevens worden geëxtraheerd uit de **gestructureerde XML** naar specifieke documentvelden en tabellen binnen de interface. Het koppelt **veld-ID's** aan **XPath-uitdrukkingen**, die worden geëvalueerd om waarden uit de XML te halen en in de overeenkomstige documentvelden te plaatsen. Dit bestand speelt een cruciale rol bij het garanderen dat geëxtraheerde gegevens correct verschijnen tijdens veldvalidatie en downstream verwerking.
+## De extractiepaden openen
 
-## 2. Doel en Functie
+1. Ga naar **Instellingen → Documenttypen**.
+2. Open **E-Doc** voor het documenttype dat u wilt configureren. De schermafbeeldingen hieronder gebruiken het type **PURCHASE_ORDER**.
+3. Vouw **EDI** uit en selecteer **EXTRACTION PATHS**. De regel heeft het label **JSON**.
 
-* Koppelt elk documentveld en tabelkolom aan een specifieke locatie in de gestructureerde XML met behulp van XPath-uitdrukkingen.
-* Zorgt ervoor dat de juiste waarden worden ingevuld in velden zoals `order_number`, `supplier_name` en `total_amount`.
-* Ondersteunt zowel **enkele velden** (via een `fields` object) als **tabellen** (via een `tables` array met rijpaden en kolomkoppelingen).
-* Maakt nauwkeurige controle mogelijk over hoe gegevens worden opgehaald uit de XML, inclusief het gebruik van XPath-functies zoals `sum()`.
+<figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-format-nl-20261114.png" alt="EDI-lijst van de sandbox in het Nederlands: knop Nieuw, kolommen Naam, Status, Type, Versie en Laatst gewijzigd op, met de regel EXTRACTION PATHS en het label JSON"><figcaption><p>Het EDI-formaat heeft aparte regels voor STRUCTURE DESCRIPTOR, TRANSFORMATION, PREVIEW en EXTRACTION PATHS.</p></figcaption></figure>
 
-Voorbeeld veldkoppeling:
+Met de knop **Nieuw** voegt u een nieuw EDI-onderdeel toe. Het menu met de drie puntjes aan het einde van elke regel bundelt de acties van die regel. Geen van beide wijzigt de actieve versie zolang u geen concept activeert.
 
-Copy
+Wilt u een ander EDI-onderdeel wijzigen, gebruik dan de bijbehorende gids: [EDI Transformatiebestand Gids](edi-transformation-file-guide.md) of [EDI Voorbeeldbestand Gids](edi-preview-file-guide.md).
 
-```
-"order_number": "//PURCHASE_ORDER/PURCHASE_ORDER/text()"
-```
+## De mapping lezen
 
-## 3. Toegang & Basisbewerking
+De detailpagina toont links het gekozen documenttype en het EDI-formaat, daaronder de versies, en rechts de JSON-mapping. Het label **Actief** markeert de versie die nu in gebruik is. De knop **Formaat** herschikt de JSON zodat u hem kunt lezen; hij activeert geen versie.
 
-#### **Toegang tot het bestand:**
+<figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-path-detail-nl-20261114.png" alt="Detailpagina van de extractiepaden in het Nederlands: documenttype PURCHASE_ORDER, elektronisch documenttype EDI, versie 1 met het label Actief, de JSON-editor EXTRACTION PATHS en de knop Formaat"><figcaption><p>De actieve EDI-mapping van het type PURCHASE_ORDER, met versie 1 gemarkeerd als Actief en voorbeeldinhoud in de JSON-editor.</p></figcaption></figure>
 
-1.  Ga naar **Instellingen** → **Documenttype** → _\[Uw Document (bijv. Inkooporder)]_ → **E-Doc**.
+De JSON heeft twee hoofdonderdelen:
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff6zyL0AvmqSvrogZdnox%252Fimage.png%3Falt%3Dmedia%26token%3D6bc9ab55-6ee9-43d1-b576-4c5833c208cf\&width=768\&dpr=4\&quality=100\&sign=a23de442\&sv=2)
-2. Onder het tabblad **E-Doc** selecteert u uw formaat (bijv. **EDI**).
-3.  Klik op **Extraction Paths** om het bestand te bekijken of te bewerken.
+* `fields` koppelt een DocBits-veld, bijvoorbeeld `order_number`, aan de XPath van de waarde in de XML.
+* `tables` benoemt een herhalende regel met `row_path` en koppelt elke tabelkolom via `name` en `path`.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FawwG5QnErp1yy1eYHrlX%252Fimage.png%3Falt%3Dmedia%26token%3D46a6d8b3-52d2-4c13-bc72-1a74955efd9f\&width=768\&dpr=4\&quality=100\&sign=e612882b\&sv=2)
+In het getoonde voorbeeld bevat de mapping van het type PURCHASE_ORDER `"order_number": "//PURCHASE_ORDER/PURCHASE_ORDER_NUMBER/text()"`. De tabel gebruikt `"row_path": "//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE"`. Uw XML-structuur en DocBits-veldnamen kunnen afwijken: kopieer paden uit uw eigen voorbeelddocument in plaats van uit deze opname.
 
-#### **Conceptbeheer:**
+## Een wijziging maken en controleren
 
-* **Maak een Concept:** Klik op het ✏️ potloodpictogram.
-* **Verwijder Concepten:** Gebruik het 🗑️ prullenbakpictogram om ongebruikte concepten te verwijderen.
-* **Wijzigingen Activeren:** Klik op het ✅ vinkje om een versie te publiceren.
-  * **Opmerking**: Het activeren van een nieuwe versie zal de vorige versie **automatisch deactiveren**.
+Het potlood naast de actieve versie maakt een **concept**. Breng uw JSON-wijzigingen in dat concept aan. Controleer veldnamen en paden op uw XML voordat u activeert. Het vinkje bij het concept activeert die versie; een nieuwe versie activeren vervangt de versie die daarvoor actief was. Gebruik het prullenbakpictogram alleen om een ongewenst concept te verwijderen.
 
-## 4. Editor & Syntax
+Klik op **Voorvertoning** om het testpaneel te openen. Vul de DocBits **Document Id...** in van een geüpload EDI-document en klik op **Test**. Vergelijk de teruggegeven waarden met het brondocument. In de opname hieronder zijn de ingevulde ID en de getoonde resultaatwaarden verzonnen voorbeeldgegevens; ze komen niet uit een document van uw organisatie. Het label van het invoerveld staat in deze versie van de interface nog in het Engels (**Document Id...**).
 
-Het Extraction Paths-bestand is geschreven in **JSON** en bevat twee hoofdcomponenten:
+<figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-preview-nl-20261114.png" alt="Voorvertoningspaneel in het Nederlands met het veld Document Id..., een ingevulde voorbeeld-ID, de knop Test en een voorbeeldresultaat in JSON"><figcaption><p>Test de gekozen mapping met een EDI-document-ID voordat u een concept activeert; de ID e2000000-0000-4000-8000-000000000003 en de getoonde waarden zijn verzonnen voorbeeldgegevens.</p></figcaption></figure>
 
-* **fields**: Een woordenboek waarbij elke sleutel een veld-ID is en elke waarde een XPath-uitdrukking is die bepaalt hoe de gegevens moeten worden geëxtraheerd.
-* **tables**: Een lijst met tabeldefinities die het volgende omvatten:
-  * `name`: Het ID van de tabel.
-  * `row_path`: Een XPath die elke rij van de tabel identificeert.
-  * `columns`: Een lijst met kolomkoppelingen (`name`, `path`).
+Hebt u de document-ID nodig? Open het geüploade document in DocBits en kopieer de ID. Voor achtergrond bij deze bestanden zie [EDI-instellingen](README.md) en de [EDI-video’s](edi-videos.md).
 
-U kunt ook XPath-functies (bijv. `sum()`) en uitdrukkingen gebruiken om waarden dynamisch te berekenen uit herhalende elementen.
+## Geldende regels en activering
 
-Copy
-
-```json
-"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
-```
-
-## 5. Voorbeeldfunctie (Evaluatie-extractie)
-
-De **Voorbeeldfunctie** stelt u in staat om te simuleren hoe de extractiepaden zich zullen gedragen met een echt geüpload document.
-
-**Gebruik:**
-
-* Upload een EDI-bestand via het standaard uploadproces.
-* Kopieer de **Document-ID**.
-* Ga naar de **Extraction Paths** interface.
-* Open de **Voorbeeldfunctie**.\
-  \
-  &#x20;![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a\&width=300\&dpr=4\&quality=100\&sign=36ce2b93\&sv=2)
-* Voer de Document-ID in en klik op **Test**.
-* Het resultaat toont hoe elk veld en elke tabel wordt ingevuld op basis van de geconfigureerde paden.
-
-Deze functie is essentieel om te controleren of uw XPath-uitdrukkingen correct zijn gedefinieerd en de verwachte waarden ophalen voordat het concept wordt geactiveerd.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F81uvH6FFVBJsSZucanWY%252Fimage.png%3Falt%3Dmedia%26token%3Dde3ba545-1ee3-44b2-a629-9660d80174f2\&width=768\&dpr=4\&quality=100\&sign=43c8b507\&sv=2)
-
-## 6. Video Walkthrough
-
-Een videogids voor dit bestandstype is beschikbaar op de [Videopagina.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Gebruik het om de installatie, bewerking en voorbeeldweergave te volgen.
-
-## Effectieve regels en activering
-
-Als een elektronische creditnota als Invoice verschijnt, volg dan de [handleiding voor het oplossen van classificatieproblemen](../credit-note-recognized-as-invoice.md). Deze behandelt de effectieve aangepaste of standaardbron, typecodes, Extraction Paths en veilige activering.
-
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-nl.png" alt="Bestaand EDI-formaat met de vier geconfigureerde attributen."><figcaption><p>Bestaand EDI-formaat met de vier geconfigureerde attributen.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-nl.png" alt="Actief attribuut EXTRACTIONPATHS: JSON-configuratie met XPath-expressies voor extractie."><figcaption><p>Actief attribuut EXTRACTIONPATHS: JSON-configuratie met XPath-expressies voor extractie.</p></figcaption></figure>
-
+Als een elektronische creditnota als factuur verschijnt, volg dan de [handleiding voor het oplossen van classificatieproblemen](../credit-note-recognized-as-invoice.md). Die behandelt de effectieve aangepaste of standaardbron, typecodes, Extraction Paths en veilig activeren.
 
 De weergaven tonen een bestaande configuratie en versie. De instellingen verschillen per documenttype en formaat. Valideer wijzigingen in een concept voordat u ze activeert.
-
-De afbeeldingen tonen de Nederlandstalige proceskaarten en de actieve, alleen-lezen configuratieversie. De tabnaam Builder, technische attribuutnamen en configuratiecode zijn overgenomen uit de geïllustreerde productversie.

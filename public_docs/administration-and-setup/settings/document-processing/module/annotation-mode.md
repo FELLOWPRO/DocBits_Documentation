@@ -1,73 +1,43 @@
 # Tryb adnotacji
 
-## Przegląd
+Tryb adnotacji pozwala umieszczać notatki bezpośrednio na dokumencie podczas walidacji. Notatkę możesz edytować, przesuwać i usuwać przed pobraniem pliku PDF z adnotacjami. Administrator musi najpierw włączyć tę funkcję dla organizacji. Jeśli dokument zawiera adnotacje, są one uwzględniane przy **eksporcie do IDM**.
 
-Ustawienie **Tryb adnotacji** umożliwia użytkownikom tworzenie adnotacji i zarządzanie nimi bezpośrednio w PDF. Jeśli dokument zawiera adnotacje, zostaną one uwzględnione podczas **eksportu do IDM**.
+## Włączanie trybu adnotacji
 
-## Lokalizacja
+Administrator otwiera **Ustawienia → Moduł → Integracja Dokumentów → Typ dokumentu** i włącza **Tryb adnotacji**. Jeśli przycisk adnotacji nie jest widoczny podczas walidacji, poproś administratora o sprawdzenie tego ustawienia i swoich uprawnień.
 
-To ustawienie znajdziesz w: **Ustawienia → Przetwarzanie dokumentu → Moduł → Typ dokumentu → Tryb adnotacji**
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224104758.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/annotation-mode-settings-pl-20261114.png" alt="Sekcja Typ dokumentu w ustawieniach z włączonym przełącznikiem Tryb adnotacji"><figcaption><p>Sekcja Typ dokumentu w sekcji Ustawienia → Moduł → Integracja Dokumentów. W tym przykładzie tryb adnotacji jest włączony.</p></figcaption></figure>
 
 {% embed url="https://youtu.be/ay0gGtwlqRE" %}
-DocBits Samouczek dotyczący trybu adnotacji: Dodawanie notatek podczas sprawdzania poprawności i pobierania z adnotacjami/bez nich
+Samouczek DocBits dotyczący trybu adnotacji: dodawanie notatek podczas walidacji i pobieranie plików z adnotacjami lub bez nich
 {% endembed %}
 
-## Korzystanie z trybu adnotacji
+## Dodawanie notatki podczas walidacji
 
-### 1. Włączanie trybu adnotacji
+1. Otwórz dokument na [ekranie walidacji](../../../../end-user-and-partner-section/end-user-section/validation-screen/README.md).
+2. Wybierz **dymek** na pasku narzędzi po prawej stronie. Podpowiedź przycisku brzmi **Aktywuj tryb adnotacji**. Wybierz go ponownie, aby opuścić tryb adnotacji; wtedy podpowiedź brzmi **Dezaktywuj tryb adnotacji**.
+3. Przeciągnij wskaźnikiem po części pliku PDF, w której ma pojawić się notatka. Obok zaznaczonego obszaru pojawi się mały pasek narzędzi.
+4. Wybierz **pióro**, aby otworzyć okno **Utwórz/Edytuj adnotację**. Wpisz notatkę w polu **Adnotacja-Tekst**. Możesz wybrać czcionkę i rozmiar, użyć pogrubienia **B** lub kursywy *I* i ustawić **Kolor tekstu**. **Anulować** zamyka okno bez zastosowania tekstu; **Zapisz** stosuje go do zaznaczonej adnotacji.
+5. Użyj przycisku **dyskietki** na pasku narzędzi adnotacji, aby zapisać zmianę. Użyj przycisku **kosza**, aby usunąć adnotację, jeśli nie jest już potrzebna.
 
-* Przejdź do **Ekranu weryfikacji**.
-* Kliknij ikonę **dymek** po prawej stronie, aby przejść do trybu adnotacji.
+<figure><img src="../../../../.gitbook/assets/annotation-mode-toolbar-pl-20261114.png" alt="Przycisk dymka na pasku narzędzi walidacji z podpowiedzią Aktywuj tryb adnotacji"><figcaption><p>Tryb adnotacji włączasz na pasku narzędzi ekranu walidacji.</p></figcaption></figure>
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105047.jpg" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../../../../.gitbook/assets/annotation-mode-edit-toolbar-pl-20261114.png" alt="Pasek narzędzi adnotacji z piórem do edycji, dyskietką do zapisu i koszem do usunięcia"><figcaption><p>Pasek narzędzi pojawia się po zaznaczeniu obszaru na pliku PDF.</p></figcaption></figure>
 
-### 2. Tworzenie adnotacji
+<figure><img src="../../../../.gitbook/assets/annotation-mode-dialog-pl-20261114.png" alt="Okno Utwórz/Edytuj adnotację z czcionką, rozmiarem, pogrubieniem, kursywą, kolorem tekstu, polem tekstowym oraz przyciskami Anulować i Zapisz"><figcaption><p>Notatkę piszesz i formatujesz w oknie adnotacji.</p></figcaption></figure>
 
-* Wybierz obszar na PDF, w którym chcesz umieścić adnotację.
-* Kliknij ikonę **pen**, aby wpisać tekst.
-* Kliknij ikonę **dokument**, aby zapisać adnotację.
-* Kliknij ikonę **kosz na śmieci**, aby usunąć adnotację.
+<figure><img src="../../../../.gitbook/assets/annotation-mode-dialog-filled-pl-20261114.png" alt="Okno adnotacji z wpisanym przykładowym tekstem Proszę sprawdzić tę kwotę. (dane przykładowe)"><figcaption><p>Przykładowa notatka „Proszę sprawdzić tę kwotę.” przed wybraniem przycisku Zapisz. Wpisany tekst jest danymi przykładowymi.</p></figcaption></figure>
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105556.jpg" alt=""><figcaption></figcaption></figure></div>
+## Zarządzanie istniejącą notatką
 
-*   Dostosuj tekst za pomocą:
+Wybierz notatkę w trybie adnotacji, aby wyświetlić jej pasek narzędzi. Użyj **pióra**, aby zmienić tekst lub formatowanie, przeciągnij zaznaczoną notatkę, aby ją przesunąć, albo użyj **kosza**, aby ją usunąć. W tym samym dokumencie możesz utworzyć wiele adnotacji. Adnotacje są widoczne tylko przy włączonym trybie adnotacji i pojawiają się w pliku PDF po zapisaniu. Przycisk dymka nie pokazuje, czy dokument ma już notatki; włącz tryb adnotacji, aby je zobaczyć.
 
-    * **Size** adjustment
-    * **Bold**
-    * _**Italic**_
-    * <mark style="color:purple;">**Color**</mark>
-    * **Font selection**
+<figure><img src="../../../../.gitbook/assets/annotation-mode-saved-pl-20261114.png" alt="Zapisana przykładowa notatka na fakturze testowej z przyciskami edycji, zapisu i usunięcia pod nią (dane przykładowe)"><figcaption><p>Zapisana notatka pozostaje widoczna na dokumencie w trybie adnotacji.</p></figcaption></figure>
 
-    <div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105351.jpg" alt=""><figcaption></figcaption></figure></div>
+Adnotacje są dostępne również podczas [zatwierdzania dokumentu](../../global-settings/document-types/more-settings/approval/README.md), gdzie można je przeglądać, dodawać i zmieniać. Informacje o wyprowadzaniu danych przez Infor IDM znajdziesz w sekcji [Eksport do IDM](../../../../infor-integration-and-configuration/exporting-to-infor/exporting-to-idm.md).
 
-### 3. Zarządzanie adnotacjami
+## Pobieranie oryginalnego lub oznaczonego adnotacjami pliku PDF
 
-* **Przesuń adnotację** klikając i przytrzymując lewy przycisk myszy.
-* **Utwórz wiele adnotacji** w tym samym dokumencie.
-* **Adnotacje są widoczne tylko** gdy włączony jest tryb adnotacji.
-* Adnotacje **zostaną uwzględnione** podczas eksportowania dokumentu do **IDM.**
-* Jeśli dokument zawiera adnotacje, **ikona dymka** wyświetli mały wykrzyknik , wskazujący ich obecność.
+W **panelu** otwórz menu akcji dokumentu z trzema kropkami. Wybierz **Pobierać**, aby pobrać oryginalny plik PDF, albo **Pobierz adnotowany plik PDF**, aby pobrać wersję z zapisanymi notatkami. Opcja pobierania z adnotacjami pojawia się po zapisaniu adnotacji. Menu oferuje również **Uprawomocnić** (otwiera ekran walidacji), **Przypisz do** (wybór osoby), **Przepływ dokumentów** (podgląd [przepływu dokumentów](../../../../end-user-and-partner-section/end-user-section/dashboard/document-flow.md)), **Uruchom ponownie** (ponowne przetworzenie dokumentu), **Dzienniki dokumentów** (podgląd aktywności) i **Usuwać** (usunięcie dokumentu). Korzystaj z tych akcji tylko wtedy, gdy chcesz zmienić lub sprawdzić dokument.
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105935.jpg" alt=""><figcaption></figcaption></figure>
-
-*
-
-<mark style="color:red;">**Uwaga:**</mark> Adnotacje można także przeglądać, dodawać i modyfikować bezpośrednio na **Ekranie zatwierdzania**, umożliwiając użytkownikom wprowadzanie niezbędnych poprawek podczas procesu zatwierdzania.
-
-### 4. Pobieranie plików PDF z adnotacjami lub bez nich
-
-* Jeśli dokument zawiera adnotacje, możesz pobrać PDF z adnotacjami lub bez.
-* Aby to zrobić, przejdź do **Dashboard**.
-* Kliknij **trzy kropki** w kolumnie **Akcja**.
-* Wybierz jedną z dwóch dostępnych opcji pobierania:
-  * **Pobierz z adnotacjami**
-  * **Pobierz bez adnotacji**
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224115302.jpg" alt=""><figcaption></figcaption></figure>
-
-Włączając i korzystając z trybu adnotacji, użytkownicy mogą efektywnie dodawać, edytować i zarządzać adnotacjami bezpośrednio w plikach PDF, usprawniając współpracę i przeglądanie dokumentów.
-
-
-
+<figure><img src="../../../../.gitbook/assets/annotation-mode-download-menu-pl-20261114.png" alt="Menu akcji dokumentu w panelu z pozycjami Pobierać i Pobierz adnotowany plik PDF oraz pozostałymi akcjami"><figcaption><p>Potrzebną wersję pliku PDF wybierasz w menu akcji dokumentu.</p></figcaption></figure>

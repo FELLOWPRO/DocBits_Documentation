@@ -6,7 +6,9 @@ hidden: true
 
 ## Principios de control de versiones
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_version_control.png" alt="Docbits Workflow Version Control"><figcaption>Sistema de control de versiones de flujo de trabajo</figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-release-versions-card-es-20261114.png" alt="Constructor de flujos de trabajo con una tarjeta de tipo de documento colocada en el bloque Cuando....; el menú de versiones abierto de la tarjeta ofrece las versiones 1 y 2."><figcaption><p>Menú de versiones de una tarjeta de tipo de documento colocada en el constructor de flujos de trabajo</p></figcaption></figure>
+
+En el constructor de flujos de trabajo, cada tarjeta colocada muestra arriba a la derecha una insignia de versión con su versión actual; en la imagen, v: 2. Al pulsar la insignia se abre la lista de versiones disponibles de esa tarjeta; en la imagen, v: 1 y v: 2. Así puede ver qué versión está activa antes de cambiar una regla. Cómo se añade una tarjeta a un flujo con Cuando, Y y Entonces, y cómo se guarda el flujo: [Crear un flujo de trabajo estándar](standard-workflow-builder.md). Qué significa una versión de tarjeta y cuándo conviene cambiarla: [Versiones de tarjeta y disponibilidad](cards-overview/card-versions-guide.md).
 
 ### Versión 8.5.2024 - Funciones básicas de versionado
 
@@ -46,7 +48,7 @@ El Motor de Flujo de Trabajo DocBits implementa un control de versiones robusto 
 #### 1. CALL_API
 **Versiones:** v1, v2 (Actual: v2)
 
-📖 **Guía:** [Call External API Guide](then/action/call-api-guide.md)
+📖 **Guía:** [Llamar a la API de DocBits](then/action/call-api-guide.md)
 
 | Versión | Traducción | Estado | Cambios clave |
 |---------|-------------|--------|-------------|
@@ -106,7 +108,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 #### 4. ACTION_TASK_FOR_GROUP
 **Versiones:** v2, v3 (Obsoleta), v4 (Actual)
 
-📖 **Guía:** [Task Assignment Guide](then/task/task-assignment-guide.md)
+📖 **Guía:** [Tarjetas de creación y asignación de tareas](then/task/task-assignment-guide.md)
 
 | Versión | Cambios | Estado | Parámetro de tipo |
 |---------|---------|--------|-----------------|
@@ -167,7 +169,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 #### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (La más evolucionada - 5 versiones)
 **Versiones:** v2, v3, v4, v5 (Actual)
 
-📖 **Guía:** [PO Guía completa de combinaciones](and/compare-with-purchase-order/po-matching-complete-guide.md)
+📖 **Guía:** [Tarjetas coincidentes de PO: guía completa](and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 | Versión | Cambios | Estado | Tolerancia | Comparación |
 |---------|---------|--------|-----------|------------|
@@ -351,7 +353,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 #### 1. tasks_create ⭐ (Tarjeta de tarea más evolucionada - 4 versiones)
 **Versiones:** v1 (Obsoleta), v2 (Obsoleta), v3 (Obsoleta), v4 (Actual)
 
-📖 **Guía:** [Task Assignment Guide](then/task/task-assignment-guide.md)
+📖 **Guía:** [Tarjetas de creación y asignación de tareas](then/task/task-assignment-guide.md)
 
 | Versión | Traducción | Árbol de decisión | Tipo de elemento de trabajo | Estado |
 |---------|-------------|---------------|-----------------|--------|
@@ -650,10 +652,10 @@ v4: + "Compare as [param1] [param2]"
 
 ## Documentación relacionada
 
-- 📖 [Card Versioning Reference](cards-overview/card-versions-guide.md) - Información detallada de versiones
-- 📚 [Workflow Guides](README.md) - Uso de tarjetas paso a paso
-- 🔄 [Card Version Database](cards-overview/card-versions-guide.md) - Historial completo de versiones
-- 📋 [Registros de flujo de trabajo](workflow-logs.md) - Ejecución y depuración
+- 📖 [Comparaciones de PO: dirección, tolerancia y versiones de tarjeta](cards-overview/po-comparison-versions-guide.md) - Direcciones de comparación, tolerancias y versiones de tarjeta
+- 📚 [Flujo de trabajo](README.md) - Uso de las tarjetas paso a paso
+- 🔄 [Resumen del versionado de tarjetas](#resumen-del-versionado-de-tarjetas) - Resumen en esta página
+- 📋 [Registros del Flujo de Trabajo](workflow-logs.md) - Ejecución y depuración
 
 ---
 

@@ -1,67 +1,91 @@
 ---
-description: Jak importować dane podstawowe bezpośrednio w DocBits.
+description: Skonfiguruj własny szablon danych podstawowych lub punkt końcowy API w DocBits.
 ---
 
 # Własne dane podstawowe
 
-#### Aktywacja własnych danych podstawowych <a href="#activating-custom-master-data" id="activating-custom-master-data"></a>
+Własne dane podstawowe (w interfejsie: **Niestandardowe dane główne**) pozwalają połączyć DocBits z własnym punktem końcowym API i używać zwracanych danych jako danych podstawowych — na przykład własnej tabeli dostawców lub artykułów — obok danych prowadzonych przez DocBits. Przed rozpoczęciem przygotuj z administratorem integracji adres URL interfejsu API, dane uwierzytelniające i przykładową odpowiedź.
 
-Na pulpicie przejdź do Ustawienia → Przetwarzanie dokumentów → Moduł.
+## Włączanie własnych danych podstawowych
 
-![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
+Własne dane podstawowe są modułem. Aby go włączyć, przejdź do **Ustawienia** → **PRZETWARZANIE DOKUMENTÓW** → **Moduł** → **Integracja dokumentów** i włącz przełącznik **Niestandardowe dane główne** w sekcji **Typ dokumentu** (podtytuł **Konfiguracja typu dokumentu**).
 
-<div align="left"><figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-pl.png" alt="Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska."><figcaption><p>Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska.</p></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/custom-master-data-module-pl-20261112.png" alt="Strona Ustawienia, Moduł, Integracja Dokumentów: sekcja Typ dokumentu z włączonym przełącznikiem Niestandardowe dane główne oraz pozostałe moduły z listy"><figcaption><p>Przełącznik Niestandardowe dane główne w sekcji Konfiguracja typu dokumentu modułu Integracja dokumentów; w tym przykładzie jest włączony.</p></figcaption></figure>
 
-W sekcji Moduł aktywuj funkcję Custom Master Data, przesuwając suwak, jak pokazano poniżej.
+Więcej o modułach znajdziesz w artykule [Moduł](../../administration-and-setup/settings/document-processing/module/README.md).
 
-<div align="left"></div>
+## Otwieranie okna Niestandardowe dane główne
 
-#### Przegląd funkcji <a href="#feature-overview" id="feature-overview"></a>
+Gdy moduł jest aktywny, przejdź do **Ustawienia** → **PRZETWARZANIE DOKUMENTÓW** → **Wyszukaj dane główne**. Na liście grup danych podstawowych po lewej stronie kliknij ikonę **Ustawienia** obok **Dane API ERP**, aby otworzyć okno **Niestandardowe dane główne**. Ikona plus obok **Importowany** służy do wgrywania plików CSV, a nie do punktów końcowych API.
 
-Aby dodać własne dane podstawowe do DocBits, przejdź w Ustawieniach do Master Data Lookup.
+<figure><img src="../../.gitbook/assets/custom-master-data-lookup-pl-20261112.png" alt="Strona Wyszukaj Dane Główne z grupami Dane wejściowe BOD, Dane API ERP z ikoną Ustawienia, Importowany i Dane główne DocBits po lewej oraz tabelą dostawców po prawej"><figcaption><p>Wyszukaj dane główne: ikona Ustawienia obok Dane API ERP otwiera okno Niestandardowe dane główne.</p></figcaption></figure>
 
-<div align="left"><figure><img src="../../.gitbook/assets/site-extra-master-data-overview-pl.png" alt="Wyszukiwanie danych podstawowych: źródła i tabela dostawców z ukrytymi wartościami."><figcaption><p>Wyszukiwanie danych podstawowych: źródła i tabela dostawców z ukrytymi wartościami.</p></figcaption></figure></div>
+Okno zawiera listę tabel własnych danych podstawowych z kolumnami **Nazwa**, **Mode** (wyświetlana po angielsku), **Metoda** i **Typ Sylwetki** (typ treści żądania) oraz dwa sposoby dodania nowej tabeli:
 
-Kliknij „Custom Master Data”
+- **Utwórz szablon** — zdefiniuj ustawienie wstępne wielokrotnego użytku, które wybierzesz podczas tworzenia punktów końcowych.
+- **Utwórz punkt końcowy** — połącz tabelę danych podstawowych, którą DocBits wypełnia z Twojego interfejsu API.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_5.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/custom-master-data-actions-pl-20261112.png" alt="Okno Niestandardowe dane główne z przyciskami Utwórz szablon i Utwórz punkt końcowy oraz pustą tabelą z komunikatem Nie znaleziono żadnego rekordu"><figcaption><p>Okno Niestandardowe dane główne z przyciskami Utwórz szablon i Utwórz punkt końcowy. W tym przykładzie nie ma zapisanych połączeń, dlatego lista pokazuje komunikat „Nie znaleziono żadnego rekordu!”.</p></figcaption></figure>
 
-Następnie możesz utworzyć szablon (Template) lub punkt końcowy (Endpoint).
+Każde istniejące połączenie ma cztery akcje wiersza:
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_6.png" alt="" width="375"><figcaption></figcaption></figure></div>
+* **Redagować** otwiera konfigurację punktu końcowego.
+* **Punkt końcowy wyzwalacza** od razu wykonuje wywołanie API, zamiast czekać na następne automatyczne wyszukiwanie.
+* **Clear data** usuwa wszystkie rekordy zbioru danych, w tym rekordy z innych źródeł, takich jak wgranie pliku CSV. Konfiguracja punktu końcowego pozostaje zapisana, więc możesz go uruchomić ponownie; do tego czasu wyszukiwania korzystające ze zbioru danych nie zwracają wyników. Interfejs pokazuje tę akcję po angielsku.
+* **Usuwać** usuwa połączenie z DocBits. Twoje źródło danych pozostaje niezmienione.
 
-#### Tworzenie szablonu <a href="#create-a-template" id="create-a-template"></a>
+## Tworzenie szablonu
 
-Pierwszym krokiem jest wybór między użyciem pliku ION API Twojej organizacji a użyciem OAuth2 i wprowadzeniem niezbędnych danych.
+Kliknij **Utwórz szablon**, aby zdefiniować ustawienie wstępne wielokrotnego użytku w kilku punktach końcowych. Szablonami zarządzasz na stronie **Utwórz Ustawienie Wstępne** (**Ustawienia** → **Wyszukaj dane główne** → **Utwórz Ustawienie Wstępne**).
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_7.png" alt="" width="375"><figcaption></figcaption></figure></div>
+Pierwszy krok to **Wybierz ustawienie wstępne**: wybierz, czy ustawienie ma korzystać z pliku **ION API** Twojej organizacji, czy z **OAUTH2**. W przypadku ION API w następnym ekranie wgrywasz plik JSON ION API organizacji; w przypadku OAUTH2 dane uwierzytelniające podajesz podczas konfigurowania ustawienia.
 
-Następnie skonfigurujemy ustawienia wstępne. Tutaj wprowadzisz nazwę tabeli danych podstawowych oraz adres URL wywołania API.
+<figure><img src="../../.gitbook/assets/custom-master-data-template-pl-20261112.png" alt="Strona Utwórz Ustawienie Wstępne z pytaniem Jakiego API chcesz użyć? i opcjami ION API oraz OAUTH2"><figcaption><p>Utwórz Ustawienie Wstępne: w kroku Wybierz ustawienie wstępne wybierasz ION API albo OAUTH2.</p></figcaption></figure>
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
+W kroku **Konfiguruj ustawienia wstępne** nadaj ustawieniu nazwę bez spacji, wybierz typ treści żądania i metodę oraz podaj **Base URL** i adres URL wywołania API. Pozostałe karty opisują samo wywołanie:
 
-Następnie należy podać ścieżkę JSON w notacji kropkowej. Więcej informacji o notacji kropkowej znajdziesz [tutaj](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
+- **Params** — parametry zapytania jako pary klucz/wartość.
+- **Headers** — pola nagłówka HTTP jako pary klucz/wartość.
+- **Authorization** — typ uwierzytelniania i powiązane dane JSON; pole wgrywania przyjmuje plik JSON z danymi uwierzytelniania.
+- **Body** — treść żądania, wysyłana dla metod, które jej używają.
 
-Na koniec musisz zmapować dane na kolumny, które chcesz utworzyć, jak w przykładzie poniżej.
+Kontynuuj krokami **Wybierz ścieżkę do tabeli danych** i **Utwórz tabelę z odpowiedzią** — opis znajdziesz poniżej przy punkcie końcowym — a następnie zakończ kreator. Zapisane ustawienie pojawi się potem w kroku **Wybierz ustawienie wstępne** kreatora punktów końcowych.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
+## Tworzenie punktu końcowego
 
-Po wykonaniu tych czynności kliknij Done, aby utworzyć i wypełnić nowe dane podstawowe.
+Kliknij **Utwórz punkt końcowy**, aby połączyć tabelę danych podstawowych. Kreator obejmuje cztery kroki.
 
-#### Tworzenie punktu końcowego <a href="#create-an-endpoint" id="create-an-endpoint"></a>
+### Krok 1: Wybierz ustawienie wstępne
 
-Pierwszym krokiem jest wybór między użyciem pliku ION API Twojej organizacji, użyciem OAuth2 lub pozostawieniem tego pola pustego i wprowadzeniem niezbędnych danych.
+Wybierz punkt wyjścia: **Pusty**, aby skonfigurować wszystko samodzielnie, **ION API**, aby wstępnie wypełnić uwierzytelnianie z pliku ION API Twojej organizacji, **OAuth2**, aby wstępnie wypełnić uwierzytelnianie OAuth2, albo jedno z zapisanych ustawień.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_10.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/custom-master-data-create-pl-20261112.png" alt="Strona Tworzyć z czterema krokami kreatora, pytaniem Wybierz ustawienie wstępne dla swojego punktu końcowego i opcjami Pusty, ION API oraz OAuth2"><figcaption><p>Utwórz punkt końcowy, krok Wybierz ustawienie wstępne: Pusty, ION API albo OAuth2. W tym przykładzie nie ma zapisanych ustawień wstępnych.</p></figcaption></figure>
 
-Następnie skonfigurujemy ustawienia wstępne. Tutaj wprowadzisz nazwę tabeli danych podstawowych oraz adres URL wywołania API.
+### Krok 2: Konfigurowanie punktu końcowego interfejsu API
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
+Wpisz **Nazwa punktu końcowego** bez spacji; ta nazwa staje się nazwą tabeli danych podstawowych.
 
-Następnie należy podać ścieżkę JSON w notacji kropkowej. Więcej informacji o notacji kropkowej znajdziesz [tutaj](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
+Włącz **Dynamiczna populacja wyszukiwania oparta na polach dokumentu**, jeśli wyszukiwanie ma zależeć od przetwarzanego dokumentu. DocBits wypełnia wtedy symbole zastępcze w wywołaniu API — w adresie URL, parametrach zapytania lub nagłówkach — wartościami z bieżącego dokumentu, dzięki czemu wywołanie może zwrócić dane pasujące do tego dokumentu.
 
-Na koniec musisz zmapować dane na kolumny, które chcesz utworzyć, jak w przykładzie poniżej.
+Wybierz **Typ sylwetki** i **Metoda** wywołania oraz podaj **Base URL**. Karty poniżej opisują wywołanie:
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
+- **Params** — parametry zapytania jako pary klucz/wartość; przy dynamicznej populacji wyszukiwania wartości mogą pochodzić z pól dokumentu.
+- **Headers** — pola nagłówka HTTP jako pary klucz/wartość, dodawane przyciskiem **Dodać**.
+- **Authorization** — typ uwierzytelniania i powiązane dane JSON. Dostępne typy zależą od wybranego ustawienia wstępnego.
+- **Body** — treść żądania dla metod, które ją wysyłają. Narzędzie formatowania porządkuje JSON, aby ułatwić czytanie.
 
-Po wykonaniu tych czynności kliknij Done, aby utworzyć i wypełnić nowe dane podstawowe.
+<figure><img src="../../.gitbook/assets/custom-master-data-endpoint-pl-20261112.png" alt="Krok Konfigurowanie punktu końcowego interfejsu API z pustymi polami Nazwa punktu końcowego i Base URL, włącznikiem Dynamiczna populacja wyszukiwania oparta na polach dokumentu, Typ sylwetki application/json, Metodą GET oraz kartami Params, Headers, Authorization i Body"><figcaption><p>Utwórz punkt końcowy, krok Konfigurowanie punktu końcowego interfejsu API; karta Params pokazuje Parametr zapytania, Key, Wartość i przycisk Dodać. W tym przykładzie nie wpisano żadnej wartości.</p></figcaption></figure>
+
+Użyj **Kontynuować**, aby przejść dalej; **Z powrotem** wraca do poprzedniego kroku bez utraty wpisanych danych.
+
+### Krok 3: Wybierz ścieżkę do tabeli danych
+
+Wpisz ścieżkę JSON w notacji kropkowej do pola w odpowiedzi API, które zawiera dane tabeli. Strona pokazuje odpowiedź API obok wyodrębnionych danych, dzięki czemu możesz sprawdzić, czy ścieżka wybiera właściwe pozycje. Więcej o notacji kropkowej znajdziesz w artykule [Writing JSONPath expressions](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/) (po angielsku).
+
+### Krok 4: Utwórz tabelę z odpowiedzią
+
+Przypisz wartości z odpowiedzi do kolumn, które chcesz utworzyć: wpisz nazwę kolumny i odpowiadającą jej wartość z odpowiedzi, a następnie kliknij **Dodać**. Funkcją testowania ekstrakcji sprawdź, czy DocBits odczytuje oczekiwane wartości, zanim zapiszesz.
+
+Na koniec zakończ kreator, aby utworzyć i wypełnić nową tabelę danych podstawowych.
+
+Pomoc w wyszukiwaniu i używaniu danych podstawowych po konfiguracji znajdziesz w artykule [Wyszukiwanie danych podstawowych](../../administration-and-setup/settings/document-processing/master-data-lookup.md).

@@ -1,94 +1,44 @@
 # Guida al File dei Percorsi di Estrazione EDI
 
-## 1. Panoramica
+La configurazione **Percorsi di Estrazione** indica a DocBits dove trovare i valori della fattura in un documento EDI/XML strutturato. Associa i campi del documento e le colonne delle tabelle a espressioni XPath. Modifica questa configurazione solo se gestisci i formati dei documenti elettronici per la tua organizzazione.
 
-Il **File dei Percorsi di Estrazione** definisce come i dati vengono estratti dal **XML strutturato** nei campi e tabelle specifiche all'interno dell'interfaccia. Mappa gli **ID dei campi** alle **espressioni XPath**, che vengono valutate per estrarre i valori dall'XML nei campi del documento corrispondenti. Questo file svolge un ruolo critico nell'assicurare che i dati estratti appaiano correttamente durante la convalida dei campi e l'elaborazione successiva.
+## Aprire i percorsi di estrazione
 
-## 2. Scopo e Funzione
+1. Vai su **Impostazioni → Tipi Di Documento**.
+2. Apri **E-Doc** per il tipo di documento che vuoi configurare. Le catture qui sotto usano **PURCHASE_ORDER**.
+3. Espandi **EDI** e seleziona **EXTRACTION PATHS**. La riga è contrassegnata come **JSON**.
 
-* Mappa ogni campo del documento e colonna della tabella in una posizione specifica nell'XML strutturato utilizzando espressioni XPath.
-* Assicura che i valori corretti siano popolati nei campi come `order_number`, `supplier_name` e `total_amount`.
-* Supporta sia **singoli campi** (tramite un oggetto `fields`) che **tabelle** (tramite un array `tables` con percorsi delle righe e mappature delle colonne).
-* Consente un controllo preciso su come i dati vengono recuperati dall'XML, inclusa l'uso di funzioni XPath come `sum()`.
+<figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-format-it-20261114.png" alt="Elenco E-Doc in italiano con le righe STRUCTURE DESCRIPTOR, TRANSFORMATION, PREVIEW ed EXTRACTION PATHS del gruppo EDI, tutte con lo stato Predefinito"><figcaption><p>Il gruppo EDI contiene voci separate per STRUCTURE DESCRIPTOR, TRANSFORMATION, PREVIEW ed EXTRACTION PATHS; quest'ultima è contrassegnata come JSON.</p></figcaption></figure>
 
-Esempio di mappatura del campo:
+Se devi modificare un altro componente EDI, usa la guida corrispondente di [Trasformazione](edi-transformation-file-guide.md) o [Anteprima](edi-preview-file-guide.md).
 
-Copy
+## Leggere la mappatura
 
-```
-"order_number": "//PURCHASE_ORDER/PURCHASE_ORDER/text()"
-```
+La pagina di dettaglio mostra a sinistra il tipo di documento e il formato elettronico selezionati, sotto le relative versioni e a destra la mappatura JSON. Il badge **Attivo** identifica la versione attualmente in uso. **Formato** ordina il JSON per la lettura; non attiva alcuna versione.
 
-## 3. Accesso e Modifica di Base
+<figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-path-detail-it-20261114.png" alt="Dettagli dei Percorsi di Estrazione in italiano con il tipo di documento PURCHASE_ORDER, il formato elettronico EDI, la versione 1 contrassegnata come Attivo e l'editor JSON con le espressioni XPath e la definizione della tabella"><figcaption><p>La mappatura EDI della versione attiva, con l'editor JSON a destra dell'elenco delle versioni.</p></figcaption></figure>
 
-#### **Accesso al File:**
+Il JSON ha due parti principali:
 
-1.  Vai su **Impostazioni** → **Tipo di Documento** → _\[Il Tuo Documento (es. Ordine di Acquisto)]_ → **E-Doc**.
+* `fields` associa un campo DocBits, ad esempio `order_number`, al percorso XPath del valore nell'XML.
+* `tables` identifica una riga ripetuta con `row_path` e associa ogni colonna della tabella con `name` e `path`.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff6zyL0AvmqSvrogZdnox%252Fimage.png%3Falt%3Dmedia%26token%3D6bc9ab55-6ee9-43d1-b576-4c5833c208cf\&width=768\&dpr=4\&quality=100\&sign=a23de442\&sv=2)
-2. Sotto la scheda **E-Doc**, seleziona il tuo formato (es. **EDI**).
-3.  Clicca su **Percorsi di Estrazione** per visualizzare o modificare il file.
+Ad esempio, la mappatura visibile include `"order_number": "//PURCHASE_ORDER/PURCHASE_ORDER_NUMBER/text()"`. La tabella `order_table` usa `"row_path": "//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE"`. La struttura del tuo XML e i nomi dei campi DocBits possono essere diversi; copia i percorsi dal tuo documento di esempio invece che da questo esempio.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FawwG5QnErp1yy1eYHrlX%252Fimage.png%3Falt%3Dmedia%26token%3D46a6d8b3-52d2-4c13-bc72-1a74955efd9f\&width=768\&dpr=4\&quality=100\&sign=e612882b\&sv=2)
+## Creare e verificare una modifica
 
-#### **Gestione delle Bozze:**
+La matita accanto alla versione attiva crea una **bozza**. Apporta le modifiche JSON in quella bozza. Verifica i nomi dei campi e i percorsi sul tuo XML prima di attivarla. Il segno di spunta della bozza attiva quella versione; attivando una nuova versione si sostituisce quella attiva in precedenza. Usa l'icona del cestino solo per eliminare una bozza indesiderata.
 
-* **Crea una Bozza:** Clicca sull'icona della ✏️ matita.
-* **Elimina le Bozze:** Usa l'icona del 🗑️ cestino per rimuovere le bozze non utilizzate.
-* **Attiva le Modifiche:** Clicca sul segno di spunta ✅ per pubblicare una versione.
-  * **Nota**: Attivare una nuova versione disattiverà **automaticamente** quella precedente.
+Fai clic su **Anteprima** per aprire il pannello di prova. Nel campo **Document Id...** inserisci l'ID di un documento EDI caricato e fai clic su **Test**. Confronta i valori restituiti con il documento di origine. La cattura mostra un identificatore di esempio inventato, visibile solo nella parte finale del campo, e la risposta di esempio del sistema; i valori non provengono da un documento reale.
 
-## 4. Editor & Sintassi
+<figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-preview-it-20261114.png" alt="Pannello di prova in italiano con il campo Document Id... compilato con un identificatore di esempio inventato, il pulsante Test e, a destra, una risposta di esempio con valori inventati"><figcaption><p>Pannello di prova con un ID di esempio inventato e una risposta di esempio; non si afferma alcun risultato reale.</p></figcaption></figure>
 
-Il File dei Percorsi di Estrazione è scritto in **JSON** e contiene due componenti principali:
+Ti serve l'ID del documento? Apri il documento caricato in DocBits e copia il suo ID. Per il contesto di questi file, consulta [Impostazioni EDI](README.md) e la [guida video EDI](edi-videos.md).
 
-* **fields**: Un dizionario in cui ogni chiave è un ID di campo e ogni valore è un'espressione XPath che definisce come estrarre i dati.
-* **tables**: Un elenco di definizioni di tabelle che includono:
-  * `name`: L'ID della tabella.
-  * `row_path`: Un XPath che identifica ogni riga della tabella.
-  * `columns`: Un elenco di mappature delle colonne (`name`, `path`).
+## Regole effettive e attivazione
 
-Puoi anche utilizzare funzioni XPath (es. `sum()`) ed espressioni per calcolare valori dinamicamente da elementi ripetuti.
+Se una nota di credito elettronica appare come Invoice, segui la [guida alla diagnosi della classificazione](../credit-note-recognized-as-invoice.md). Descrive l'origine personalizzata o predefinita effettivamente applicata, i codici del tipo, i Percorsi di Estrazione e l'attivazione sicura.
 
-Copy
+Le viste mostrano una configurazione e una versione esistenti. Le impostazioni variano in base al tipo di documento e al formato. Convalida le modifiche in una bozza prima dell'attivazione.
 
-```json
-"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
-```
-
-## 5. Funzione Anteprima (Valutazione Estrazione)
-
-La **Funzione Anteprima** ti permette di simulare come si comporteranno i percorsi di estrazione con un documento caricato effettivo.
-
-**Utilizzo:**
-
-* Carica un file EDI tramite il normale processo di caricamento.
-* Copia l'**ID del Documento**.
-* Vai all'interfaccia dei **Percorsi di Estrazione**.
-* Apri la **Funzione Anteprima**.\
-  \
-  &#x20;![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a\&width=300\&dpr=4\&quality=100\&sign=36ce2b93\&sv=2)
-* Inserisci l'ID del Documento e clicca su **Test**.
-* Il risultato mostrerà come ogni campo e tabella è popolato in base ai percorsi configurati.
-
-Questa funzionalità è essenziale per verificare che le tue espressioni XPath siano correttamente definite e che i valori attesi vengano estratti prima di attivare la bozza.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F81uvH6FFVBJsSZucanWY%252Fimage.png%3Falt%3Dmedia%26token%3Dde3ba545-1ee3-44b2-a629-9660d80174f2\&width=768\&dpr=4\&quality=100\&sign=43c8b507\&sv=2)
-
-## 6. Video Guida
-
-Una guida video per questo tipo di file è disponibile sulla [pagina dei Video.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Usala per seguire la configurazione, la modifica e l'anteprima.
-
-## Regole effettivamente utilizzate e attivazione
-
-Se una nota di credito elettronica appare come Invoice, seguite la [guida alla diagnosi della classificazione](../credit-note-recognized-as-invoice.md). Descrive la sorgente personalizzata o predefinita effettivamente utilizzata, i codici del tipo, Extraction Paths e l’attivazione in sicurezza.
-
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-it.png" alt="Formato EDI esistente con i quattro attributi configurati."><figcaption><p>Formato EDI esistente con i quattro attributi configurati.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-it.png" alt="Attributo EXTRACTIONPATHS attivo: configurazione JSON contenente espressioni XPath di estrazione."><figcaption><p>Attributo EXTRACTIONPATHS attivo: configurazione JSON contenente espressioni XPath di estrazione.</p></figcaption></figure>
-
-
-Le viste mostrano una configurazione e una versione esistenti. Le impostazioni variano in base al tipo di documento e al formato. Convalidare le modifiche in una bozza prima dell’attivazione.
-
-Nella versione dell’interfaccia illustrata, l’intestazione Version del pannello delle versioni resta in inglese. Gli identificatori tecnici degli attributi e il codice di configurazione restano invariati.
+Nella versione dell'interfaccia mostrata, alcune etichette come **Version** e **Document Id...** restano in inglese. Gli identificatori tecnici degli attributi e il codice di configurazione restano invariati.

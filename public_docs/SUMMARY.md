@@ -74,6 +74,7 @@
   * [Pending Input](end-user-and-partner-section/end-user-section/pending-input.md)
   * [Panel Kontroli Wysyłek Zaawansowanych](end-user-and-partner-section/end-user-section/advance-shipment-dashboard.md)
   * [Pulpit nawigacyjny zamówienia zakupu](end-user-and-partner-section/end-user-section/purchase-order-dashboard.md)
+    * [Szczegóły zamówienia zakupu](end-user-and-partner-section/end-user-section/purchase-order-detail.md)
   * [Dashboard Faktur](end-user-and-partner-section/end-user-section/invoice-dashboard.md)
   * [Interpretacja statystyk dostawców](end-user-and-partner-section/end-user-section/supplier-statistics.md)
   * [Panel Zamówień Wysyłkowych](end-user-and-partner-section/end-user-section/shipment-order-dashboard.md)

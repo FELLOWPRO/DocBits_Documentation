@@ -6,7 +6,9 @@ hidden: true
 
 ## Zasady kontroli wersji
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_version_control.png" alt="Docbits Workflow Version Control"><figcaption>System kontroli wersji przepływu pracy</figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-release-versions-card-pl-20261114.png" alt="Konstruktor przepływu pracy z umieszczoną kartą Typ dokumentu w bloku Gdy....; w prawym górnym rogu karty widoczne oznaczenie wersji v: 2, a otwarta lista pokazuje wersje v: 1 i v: 2."><figcaption><p>Menu wersji umieszczonej karty Typ dokumentu w konstruktorze przepływu pracy</p></figcaption></figure>
+
+W konstruktorze przepływu pracy każda umieszczona karta ma w prawym górnym rogu oznaczenie wersji z jej bieżącą wersją; na obrazie v: 2. Kliknięcie tego oznaczenia otwiera listę dostępnych wersji tej karty; na obrazie v: 1 i v: 2. Dzięki temu widzisz, która wersja jest aktywna, zanim zmienisz regułę. Nową kartę dodajesz przyciskiem Dodaj kartę w bloku Gdy...., I.... lub Następnie..., a cały przepływ zapisujesz przyciskiem Zapisz przepływ pracy. Jak wykonać te kroki krok po kroku i przetestować przepływ: [Standardowy przepływ](standard-workflow-builder.md). Co oznacza wersja karty i kiedy ją zmienić: [Wersje i dostępność kart](cards-overview/card-versions-guide.md).
 
 ### Wersja 8.5.2024 - Podstawowe funkcje wersjonowania
 
@@ -46,7 +48,7 @@ Silnik przepływów pracy DocBits wdraża solidną kontrolę wersji dla wszystki
 #### 1. CALL_API
 **Wersje:** v1, v2 (Bieżąca: v2)
 
-📖 **Przewodnik:** [Przewodnik Call External API](then/action/call-api-guide.md)
+📖 **Przewodnik:** [Wywołanie API DocBits](then/action/call-api-guide.md)
 
 | Wersja | Tłumaczenie | Status | Kluczowe zmiany |
 |---------|-------------|--------|-------------|
@@ -106,7 +108,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 #### 4. ACTION_TASK_FOR_GROUP
 **Wersje:** v2, v3 (Wycofana), v4 (Bieżąca)
 
-📖 **Przewodnik:** [Przewodnik Task Assignment](then/task/task-assignment-guide.md)
+📖 **Przewodnik:** [Karty przydzielania zadań i tworzenia](then/task/task-assignment-guide.md)
 
 | Wersja | Zmiany | Status | Parametr typu |
 |---------|---------|--------|-----------------|
@@ -167,7 +169,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 #### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (Najbardziej ewoluowana - 5 wersji)
 **Wersje:** v2, v3, v4, v5 (Bieżąca)
 
-📖 **Przewodnik:** [Pełny przewodnik PO Matching](and/compare-with-purchase-order/po-matching-complete-guide.md)
+📖 **Przewodnik:** [Karty dopasowywania PO - kompletny przewodnik](and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 | Wersja | Zmiany | Status | Tolerancja | Porównanie |
 |---------|---------|--------|-----------|------------|
@@ -351,7 +353,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 #### 1. tasks_create ⭐ (Najbardziej ewoluowana karta zadań - 4 wersje)
 **Wersje:** v1 (Wycofana), v2 (Wycofana), v3 (Wycofana), v4 (Bieżąca)
 
-📖 **Przewodnik:** [Przewodnik Task Assignment](then/task/task-assignment-guide.md)
+📖 **Przewodnik:** [Karty przydzielania zadań i tworzenia](then/task/task-assignment-guide.md)
 
 | Wersja | Tłumaczenie | Drzewo decyzyjne | Typ pozycji roboczej | Status |
 |---------|-------------|---------------|-----------------|--------|
@@ -650,9 +652,9 @@ v4: + "Compare as [param1] [param2]"
 
 ## Powiązana dokumentacja
 
-- 📖 [Odniesienie do wersjonowania kart](cards-overview/card-versions-guide.md) - Szczegółowe informacje o wersjach
+- 📖 [Porównania PO: kierunek, tolerancja i wersje kart](cards-overview/po-comparison-versions-guide.md) - Kierunki porównania, tolerancje i wersje kart
 - 📚 [Przewodniki po przepływach pracy](README.md) - Korzystanie z kart krok po kroku
-- 🔄 [Baza danych wersji kart](cards-overview/card-versions-guide.md) - Pełna historia wersji
+- 🔄 [Przegląd wersjonowania kart](#przeglad-wersjonowania-kart) - Podsumowanie na tej stronie
 - 📋 [Dzienniki przepływu](workflow-logs.md) - Wykonanie i debugowanie
 
 ---

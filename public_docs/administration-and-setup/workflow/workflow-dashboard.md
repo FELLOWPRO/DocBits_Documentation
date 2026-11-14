@@ -85,9 +85,9 @@ Les cartes qui désignent des utilisateurs, des groupes, des sous-organisations 
 - **Licence** — informations sur la licence des workflows.
 - **Kit de développement logiciel pour cartes** — créez et téléversez des cartes de workflow personnalisées (voir [Card SDK](card-sdk.md)).
 
-La barre d'outils propose également **Modèles**, qui ouvre la bibliothèque de modèles réutilisables, et **Processus d'importation**, qui importe un workflow à partir d'un fichier JSON. Pour enregistrer un workflow comme modèle, consultez le [constructeur Flux standard](standard-workflow-builder.md#ajouter-des-cartes).
+La barre d'outils propose également **Modèles**, qui ouvre la bibliothèque des [modèles de flux de travail](standard-workflow-builder.md#modeles-de-flux-de-travail) — vous pouvez y dupliquer, supprimer ou modifier un modèle — et **Processus d'importation**, qui importe un workflow à partir d'un fichier JSON.
 
-La **gestion des tests** vous permet d'enregistrer des scénarios de test par workflow et de les exécuter ensemble, afin de confirmer que vos workflows se comportent toujours correctement après des modifications :
+La **liste des gestionnaires de tests** vous permet d'enregistrer des scénarios de test par workflow et de les exécuter ensemble, afin de confirmer que vos workflows se comportent toujours correctement après des modifications (voir [Gestion des tests](test-manager.md)) :
 
 <figure><img src="../../.gitbook/assets/prior-u032-fr.png" alt="Liste des scénarios de test de workflows."><figcaption><p>Liste des scénarios de test de workflows.</p></figcaption></figure>
 

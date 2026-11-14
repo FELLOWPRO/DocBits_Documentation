@@ -2,27 +2,27 @@
 
 ## Overzicht
 
-Deze pagina beschrijft hoe je leverancier- en inkoopordergegevens in DocBits kunt importeren met behulp van een Comma Separated Values (.csv) bestand.
+Deze pagina beschrijft hoe je een CSV-import van leveranciers- of inkoopordergegevens in DocBits voorbereidt.
 
-**Belangrijk:** Voordat je gegevens importeert, is het cruciaal om het .csv-bestand grondig te **controleren** om de nauwkeurigheid van de gegevens en de juiste configuratie te waarborgen. Het importeren van onjuiste gegevens kan leiden tot inconsistenties. Raadpleeg de [**CSV-specificaties voor Inkooporder**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specificaties-voor-inkooporder) of [**CSV-specificaties voor Leverancier**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specificaties-voor-leverancier) secties voor details over vereiste en optionele velden. Als vereiste velden ontbreken, zal het importproces mislukken.
+**Belangrijk:** Controleer het .csv-bestand grondig voordat je gegevens importeert, zodat de gegevens kloppen en de configuratie juist is. Het importeren van onjuiste gegevens kan tot inconsistenties leiden. Raadpleeg de secties [**CSV-specificaties voor Inkooporder**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specificaties-voor-inkooporder) en [**CSV-specificaties voor Leverancier**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specificaties-voor-leverancier) voor de vereiste en optionele velden en controleer de geaccepteerde kolommen en validatieregels van jouw API-versie voordat je een productiedataset gebruikt.
 
-**Validatie:** Controleer altijd of je .csv-bestand alle noodzakelijke kolommen bevat zoals uiteengezet in de respectieve specificatiesectie voordat je probeert te importeren.
+**Validatie:** Gebruik de onderstaande lijsten als checklist bij de voorbereiding. Controleer de vereiste velden, de extra velden en representatieve rijen voor jouw omgeving; deze lijsten garanderen niet dat elke ongeldige rij het hele bestand afkeurt. Controleer het antwoord en verifieer de bedoelde records zelf.
 
 ## Algemene Vereisten:
 
 **Datumformaat:**
 
-Alle data die in het .csv-blad worden verstrekt, **moeten** voldoen aan het volgende formaat:
+Alle datums in het .csv-blad **moeten** de volgende notatie hebben:
 
 YYYY-MM-DD HH:MM:SS
 
 **Vereiste Velden:**
 
-Voor zowel leverancier- als inkooporderimporten moeten alle kolommen die als "Vereist" zijn gemarkeerd in hun respectieve specificaties **bestaan in het .csv-bestand en moeten ze een waarde bevatten in elke rij**. Als een verplicht veld ontbreekt of leeg is voor een rij, zal het importproces mislukken.
+Bereid de hieronder genoemde basisidentificaties voor en valideer ze. Vertrouw er niet op dat een importverzoek de volledigheid of de zakelijke juistheid van je CSV voor jou controleert.
 
 ### CSV-specificaties voor Inkooporder
 
-**Velden die Vereist zijn** - (kolom met naam moet bestaan & moet gegevens bevatten)
+**Basisvelden om voor te bereiden en te valideren**
 
 * `purchase_order_number`
 
@@ -32,6 +32,7 @@ Voor zowel leverancier- als inkooporderimporten moeten alle kolommen die als "Ve
 * `location_id`
 * `supplier_id`
 * `supplier_name`
+* `header_total_amount`
 * `order_date`
 * `requested_shipment_date`
 * `promised_delivery_date`
@@ -75,7 +76,7 @@ Voor zowel leverancier- als inkooporderimporten moeten alle kolommen die als "Ve
 * `received_base_mou_quantity`
 * `promised_delivery_date`
 * `requested_ship_date`
-* `unit_code`
+* `unit_of_measure`
 * `unit_code_price`
 * `unit_price`
 * `unit_price_per`
@@ -90,7 +91,7 @@ Voor zowel leverancier- als inkooporderimporten moeten alle kolommen die als "Ve
 
 ### CSV-specificaties voor Leverancier
 
-**Velden die Vereist zijn** - (kolom met naam moet bestaan & moet gegevens bevatten)
+**Basisvelden om voor te bereiden en te valideren**
 
 * `customer_number`
 * `supplier_number`
@@ -99,10 +100,12 @@ Voor zowel leverancier- als inkooporderimporten moeten alle kolommen die als "Ve
 
 **Velden die kunnen worden opgenomen**
 
+* `address_id`
 * `address_1`
 * `address_2`
 * `address_3`
 * `address_4`
+* `country_main_division`
 * `town_city`
 * `zip_code`
 * `supplier_phone`
@@ -127,7 +130,7 @@ Voor zowel leverancier- als inkooporderimporten moeten alle kolommen die als "Ve
 * `custom_field_9`
 * `custom_field_10`
 * `status`
-* `account_number`
+* `account_id`
 * `financial_partner_id`
 * `financial_partner_name`
 * `iban`
@@ -135,45 +138,33 @@ Voor zowel leverancier- als inkooporderimporten moeten alle kolommen die als "Ve
 
 ## Toegangseindpunt
 
-Om gegevens te importeren, volg je deze stappen:
+### De omgeving en de organisatie kiezen
 
-1. Bezoek: [https://api.docbits.com/](https://api.docbits.com/)
-2.  Klik op de **"Authorize"** knop.
+1. Open de API-referentie van de omgeving die je wilt gebruiken. De productiereferentie is [https://api.docbits.com/](https://api.docbits.com/); gebruik voor testgegevens de testomgeving die je organisatie heeft goedgekeurd. Controleer de API-versie en de waarde bij **Servers** voordat je een aanvraag voorbereidt.
+2. Klik voor een geautoriseerde import op **Authorize** en gebruik de API-sleutel die voor de bedoelde organisatie en gebruiker is verstrekt. Kopieer een sleutel nooit naar een schermafbeelding, een CSV-bestand of een gedeeld voorbeeld. Zie [Integratie & SSO](../administration-and-setup/settings/global-settings/integration/README.md) voor het aanmaken en beheren van de inloggegevens.
 
-    <figure><img src="../.gitbook/assets/import_csv_1.png" alt=""><figcaption></figcaption></figure>
-3.  Voer de API-Key in en klik op **"Authorize"**
+De interface van de API-referentie is alleen in het Engels beschikbaar. Daarom staan de namen van de bedieningselementen op deze pagina in het Engels en bevat deze pagina geen schermafbeeldingen van de referentie. De onderstaande afbeelding toont in het Nederlands waar je de API-sleutel vindt en waar de identificaties van je organisatie staan.
 
-    * De API-Key kan worden gevonden in DocBits in Instellingen -> Algemene Instellingen -> Integratie
-    * **Opmerking:** De API-sleutel die in je verzoek is opgegeven, bepaalt de doelorganisatie en de gebruikerscontext waaronder de gegevens worden geïmporteerd.
+<figure><img src="../.gitbook/assets/csv-import-api-keys-nl-20261113.png" alt="Pagina Integratie &amp; SSO in DocBits in het Nederlands met de kaart API-sleutel, de tabel API-sleutels met de knop API-sleutel aanmaken en daaronder de kaart ID met de velden Organisatie-ID en Sub-org-ID"><figcaption><p>In Instellingen → Integratie &amp; SSO maak je de API-sleutel aan: de sectie API-sleutels toont de bestaande sleutels en de knop API-sleutel aanmaken. Op dezelfde pagina staan de waarden Organisatie-ID en Sub-org-ID van je organisatie. De getoonde sleutels, namen en identificaties zijn verzonnen voorbeelden.</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_api_nl.png" alt=""><figcaption></figcaption></figure>
+### De importbewerking openen
 
-    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="" width="563"><figcaption></figcaption></figure>
-4. Druk op **CTRL + F** (of **CMD + F** op Mac) om de zoekfunctie te openen en zoek naar `/master_data_lookup/import_data`.
-5.  Klik op het verzoek om de details te bekijken, klik vervolgens op "**Try it out"** om verder te gaan.
+1. Zoek **POST /master_data_lookup/import_data** en klap de bewerking open.
+2. Klik op **Try it out** om het aanvraagformulier van de referentie te activeren. Deze stap voert nog geen import uit. Gebruik **Cancel** om de bewerkingsmodus te verlaten zonder de aanvraag te versturen.
 
-    <figure><img src="../.gitbook/assets/import_csv_3.png" alt=""><figcaption></figcaption></figure>
+### De aanvraagbody voorbereiden
 
-    <figure><img src="../.gitbook/assets/import_csv_6.png" alt=""><figcaption></figcaption></figure>
-6.  Je kunt nu de vereiste parameters in het Verzoek Lichaam invoeren.\\
+* **sub_org_id:** Voer de bedoelde, geautoriseerde suborganisatie-ID in wanneer de import bij een suborganisatie hoort. Verwijder anders het gegenereerde voorbeeld `string` en laat het veld bewust leeg met de knop **Send empty value** van het formulier, indien van toepassing. Een leeg veld wijst geen testorganisatie aan en beperkt een vervanging niet tot één suborganisatie: het bereik blijft dan de hele organisatie.
+* **data_type:** Voer `supplier` of `purchase_order` in voor de werkstromen die op deze pagina worden beschreven. Vervang het gegenereerde voorbeeld `string`; het veld is verplicht.
+* **file / csv_data:** Deze handleiding gebruikt een CSV-bestand. Wis het gegenereerde voorbeeld in **csv_data** voordat je het bestand kiest: niet-lege `csv_data` wordt in de gecontroleerde importer vóór het bestand verwerkt. Kies je gecontroleerde CSV bij **file** en controleer dat de bestandsnaam wordt weergegeven. Laat de voorbeeldwaarden van het formulier niet als inhoud van je aanvraag staan.
+* **delimiter:** Kies de werkelijke delimiter van je CSV expliciet: komma (`,`) of puntkomma (`;`). Bekijk de eerste rijen in een teksteditor zonder opmaak. Ga er niet van uit dat de beginselectie met puntkomma in het formulier overeenkomt met het bestand of met de standaardwaarde van de server.
 
-    **Verzoekparameters:**
+### Vervangings- en conflictopties controleren
 
-    Bij het doen van het importverzoek moeten de volgende parameters worden opgegeven:
+Deze beschrijvingen van de opties volgen de gecontroleerde importfunctie. Controleer het bereik van de vervanging en het gedrag bij conflicten voor de API-versie die je gebruikt; de weergaven van de referentie bewijzen die effecten niet.
 
-    * **sub\_org\_id:** Verwijder alle tekst uit het tekstveld om ervoor te zorgen dat de optie "Send empty value" is ingeschakeld.
-    * **data\_type:** Deze parameter specificeert het type gegevens dat wordt geïmporteerd. Het kan `supplier` of `purchase_order` zijn, afhankelijk van de inhoud van je .csv-bestand.
-    * **replace\_all:** Deze boolean parameter bepaalt of alle bestaande gegevens in de respectieve database tabel (`supplier` of `purchase_order`) voor de opgegeven organisatie moeten worden verwijderd voordat de nieuwe gegevens uit het .csv-bestand worden ingevoegd. Stel dit in op `true` om alle bestaande gegevens te vervangen of `false` om toe te voegen of bij te werken met de nieuwe gegevens.
-    *   **delimiter:** Deze parameter specificeert het teken dat wordt gebruikt om de individuele waarden binnen elke rij van je gegevensbestand te scheiden. **Het is essentieel om de juiste delimiter te identificeren die in je bestand wordt gebruikt.** Veelvoorkomende delimiters zijn de komma (`,`) en de puntkomma (`;`).
+* **replace_all:** De opgegeven standaardwaarde is `false`. Met `true` worden de bestaande records van het gekozen gegevenstype verwijderd voordat de CSV wordt geladen. Het bereik van de vervanging is de organisatie, met een suborganisatiefilter wanneer je er een opgeeft. Controleer dat bereik expliciet voordat je vervanging gebruikt; een lege `sub_org_id` kan het gekozen gegevenstype in de hele organisatie omvatten. Met `false` worden bestaande records behandeld volgens **on_conflict**.
+* **on_conflict:** Kies `IGNORE` om overeenkomende bestaande leveranciers- of inkooporderrecords ongewijzigd te laten, of `REPLACE` om ze uit de CSV bij te werken. De opgegeven standaardwaarde is `REPLACE`. Deze optie beschermt records niet tegen de eerdere verwijderingsstap van **replace_all**.
+* **auto_generate_id:** Laat deze op `false` en geef de verplichte zakelijke identificaties in je CSV op. De optionele vlag voor automatische generatie wordt door de gecontroleerde importers voor leveranciers en inkooporders niet gebruikt; reken er niet op dat ontbrekende leveranciers- of inkoopordernummers worden aangemaakt.
 
-        **Hoe de delimiter te controleren:**
-
-        1. Open je gegevensbestand (bijv. het `.csv` bestand) met een eenvoudige teksteditor (zoals Kladblok op Windows, TextEdit op Mac of vergelijkbaar).
-        2. Bekijk de eerste paar rijen van gegevens. Zoek naar het teken dat consistent tussen de verschillende stukken informatie in elke rij verschijnt. Dit teken is je delimiter.
-        3. Stel de `delimiter` parameter in je importverzoek in op dit geïdentificeerde teken (ofwel `,` of `;`). Het gebruik van de verkeerde delimiter voorkomt dat de gegevens correct worden geparsed en resulteert in een mislukte import.
-    * **on\_conflict & auto\_generate\_id:** De functionaliteit voor het omgaan met gegevensconflicten (`on_conflict`) en het automatisch genereren van ID's (`auto_generate_id`) is momenteel **niet geïmplementeerd** voor deze datatypes.
-
-    <figure><img src="../.gitbook/assets/import_csv_4.png" alt=""><figcaption></figcaption></figure>
-7.  Als je hebt gecontroleerd dat alle informatie correct is, kun je het importproces starten door op de **"Execute"** knop te klikken.
-
-    <figure><img src="../.gitbook/assets/import_csv_5.png" alt=""><figcaption></figcaption></figure>
+Klik pas op **Execute** nadat je de doelomgeving, de organisatie, het suborganisatiebereik, de CSV en de opties hebt gecontroleerd en de import is geautoriseerd. Controleer het antwoord en verifieer de bedoelde records voordat je verdergaat met andere imports. Voor inkooporders zie het [Inkooporderdashboard](../end-user-and-partner-section/end-user-section/purchase-order-dashboard.md). De getoonde afbeelding toont waar je de inloggegevens vindt; de afbeelding bewijst geen uitgevoerde import en geen volledige validatie van de CSV-gegevens.

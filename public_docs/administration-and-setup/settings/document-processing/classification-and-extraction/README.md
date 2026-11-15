@@ -8,10 +8,10 @@
 
 分类回答的是**“这是什么类型的文档？”**这个问题。提取回答的是**“它包含哪些值？”**。本页上的设置影响处理过程中的不同环节，不应把它们理解为一个统一的 AI 开关。
 
-1. **准备输入：** 对于 PDF，可以使用已有的文本或 OCR；受支持的电子文档可以提供结构化值。已启用的拆分可以根据配置的条形码或二维码条件，把收到的文档分开。
-2. **确定文档类型：** 分类规则和模型把文档归入某个类型，并在必要时归入某个子类型。这一归类要与后续的字段和表格提取区分开来。
-3. **提取值：** 表格可能根据配置和适用的已保存规则走不同路径。标题字段有自己的来源标示。因此，仅凭所选的 AI 模型并不能解释每一行或每一个字段值。
-4. **追踪结果：** 在验证界面中，检查包含这些行的表格选项卡是哪一个，以及某个标题字段的来源标示是什么。如果缺少某个处理步骤，请在更改设置之前阅读文档日志。
+1. **准备输入:** 对于 PDF，可以使用已有的文本或 OCR；受支持的电子文档可以提供结构化值。已启用的拆分可以根据配置的条形码或二维码条件，把收到的文档分开。
+2. **确定文档类型:** 分类规则和模型把文档归入某个类型，并在必要时归入某个子类型。这一归类要与后续的字段和表格提取区分开来。
+3. **提取值:** 表格可能根据配置和适用的已保存规则走不同路径。标题字段有自己的来源标示。因此，仅凭所选的 AI 模型并不能解释每一行或每一个字段值。
+4. **追踪结果:** 在验证界面中，检查包含这些行的表格选项卡是哪一个，以及某个标题字段的来源标示是什么。如果缺少某个处理步骤，请在更改设置之前阅读文档日志。
 
 ### 区分规则路径与 AI 路径
 
@@ -106,12 +106,12 @@
 <figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-193-table-extraction-en-20261030.png" alt="规则表格提取和 AI 表格提取的提取控件、vision 模式、结构化提取、隐藏字段以及 AI 模型选择器"><figcaption><p>提取层级选择器位于 General → Extraction 内。下方显示供应商覆盖表的表头；现有行数据已被遮盖，未更改任何设置。</p></figcaption></figure>
 <!-- English source image: dbdc-193-table-extraction-en-20261030.png -->
 
-**Table Extraction：** 启用基于规则的表格提取。表格在验证界面（*Go to table extraction view*）按供应商训练。\
+**Table Extraction:** 启用基于规则的表格提取。表格在验证界面（*Go to table extraction view*）按供应商训练。\
 在此了解有关训练的更多信息： [here](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md)。
 
-**AI Table Extraction：** 使用 AI 提取任何供应商的表格，无需训练。如果某个供应商的结果不够准确，请训练该供应商的表格；此后已保存的规则对该供应商优先于 AI。
+**AI Table Extraction:** 使用 AI 提取任何供应商的表格，无需训练。如果某个供应商的结果不够准确，请训练该供应商的表格；此后已保存的规则对该供应商优先于 AI。
 
-**Use Table Extraction Vision (AI)：** 通过四模式下拉列表选择 AI 表格提取的输入。这是模式选择，而不是单独的开关。更改所选模式会立即保存该设置：
+**Use Table Extraction Vision (AI):** 通过四模式下拉列表选择 AI 表格提取的输入。这是模式选择，而不是单独的开关。更改所选模式会立即保存该设置：
 
 * **Off (text only)** – 仅使用 OCR 文本。
 * **Images only** – 仅读取页面图像。
@@ -121,19 +121,19 @@
 <figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dbdc-3-four-vision-options-en-20261031.png" alt="当前英文 Vision 下拉列表，显示 Off (text only)、Images only、Hybrid (text and images) 和 Auto (decided per document)"><figcaption><p>当前英文 Dev 菜单中的四种输入模式。该菜单被打开并关闭，未选择其他模式；未运行任何提取。</p></figcaption></figure>
 <!-- English source image: dbdc-3-four-vision-options-en-20261031.png -->
 
-**Use Structured Extraction (AI)：** 该开关设置组织的结构化输出默认值。请求的列取决于三态 Use AI 选择；模板覆盖和供应商训练也有影响。请阅读完整的 [Structured Output for Tables 配置、预览与示例指南](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)。
+**Use Structured Extraction (AI):** 该开关设置组织的结构化输出默认值。请求的列取决于三态 Use AI 选择；模板覆盖和供应商训练也有影响。请阅读完整的 [Structured Output for Tables 配置、预览与示例指南](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)。
 
-**Table Extraction for Costing Element：** 启用后，DocBits 可以在行项目层面从表格中提取成本要素并相应分类。\
+**Table Extraction for Costing Element:** 启用后，DocBits 可以在行项目层面从表格中提取成本要素并相应分类。\
 详细说明见 [here](table-extraction-for-costing-element.md)。
 
-**Auto Extract Tax Code：** 启用后，只要配置了税码字段，系统就会在验证界面上自动填写 **Tax Code** 字段。\
+**Auto Extract Tax Code:** 启用后，只要配置了税码字段，系统就会在验证界面上自动填写 **Tax Code** 字段。\
 有关此设置的更多信息见 [here](auto-extract-tax-code.md)。
 
-**Save extraction rules (Admin only)：** 只有管理员可以在表格训练中点击 *Save Rules*。当用户不断保存破坏某供应商提取的规则时，请启用此项。
+**Save extraction rules (Admin only):** 只有管理员可以在表格训练中点击 *Save Rules*。当用户不断保存破坏某供应商提取的规则时，请启用此项。
 
-**Extract hidden fields：** 字段设置中标记为隐藏的字段也会被提取。当某个值需要用于规则或导出，但不应在验证界面上显示时使用此项。
+**Extract hidden fields:** 字段设置中标记为隐藏的字段也会被提取。当某个值需要用于规则或导出，但不应在验证界面上显示时使用此项。
 
-**AI Model：** 设置用于字段和表格提取的组织模型。菜单提供 Full、Fast、Nexus、Nexus Flash、Auto 和 Auto Nexus。请用有代表性的文档检查可用性、质量、运行时间和成本。某个层级并不总是对每份文档都最准确或最快。模板覆盖可以取代组织设置。选择器下方的表格显示：
+**AI Model:** 设置用于字段和表格提取的组织模型。菜单提供 Full、Fast、Nexus、Nexus Flash、Auto 和 Auto Nexus。请用有代表性的文档检查可用性、质量、运行时间和成本。某个层级并不总是对每份文档都最准确或最快。模板覆盖可以取代组织设置。选择器下方的表格显示：
 
 * 哪些**供应商**使用哪个 AI 模型
 * 它们是否使用结构化提取（AI）和 E-Text
@@ -147,7 +147,7 @@
 
 * **已保存的规则**（表格训练）：表格位置及其列在该供应商版式上的映射。
 * **AI 表格标签和格式规则**：用户为该供应商 AI 表格保存的提示。
-* **模板专属 AI 模型：** 在验证界面上做出的选择按组织和当前提取模板保存。它不会自动更改同一供应商的所有模板。没有覆盖时，使用适用的组织设置。
+* **模板专属 AI 模型:** 在验证界面上做出的选择按组织和当前提取模板保存。它不会自动更改同一供应商的所有模板。没有覆盖时，使用适用的组织设置。
 
 因此，具有已保存规则的供应商 A 会在验证界面的 *Extracted table* 选项卡中显示确定性表格，而没有规则的供应商 B 会得到 *AI Extracted table*。要让供应商 B 表现得像 A，请训练一次 B 的表格。要重置某个供应商，请在验证界面上删除其规则，或在 AI Model 表中重置其训练数据。
 
@@ -187,7 +187,7 @@
 
 ### Electronic Document
 
-**Process Unsupported ZUGFeRD PDF：** 如果启用，不受支持的 **ZUGFeRD** 版本将作为标准 PDF 处理，嵌入的 XML 会被忽略。
+**Process Unsupported ZUGFeRD PDF:** 如果启用，不受支持的 **ZUGFeRD** 版本将作为标准 PDF 处理，嵌入的 XML 会被忽略。
 
 受支持的 **ZUGFeRD** 版本列表见 [here](../../global-settings/document-types/edi/zugferd/README.md)。
 
@@ -205,7 +205,7 @@
 
 表格每条规则一行，包含以下列：
 
-* **Type** – 模式应用在哪里。有两种类型：**Barcode** 和 **E-Mail**。
+* **Type** – 模式应用在哪里。有两种类型:**Barcode** 和 **E-Mail**。
 * **Pattern** – 为该规则存储的正则表达式。
 * **Document Type** – 模式匹配时分配的文档类型。
 * **Sub Document Type** – 模式匹配时分配的子文档类型。
@@ -280,7 +280,7 @@
 
 * **模型名称**，以及在没有其他模型适用时所使用的模型上的 **Default** 徽标。
 * 为该模型训练的**标签**数量。
-* 展开后，每个模型还会显示：**Type**、**First page only** 和 **Version**。
+* 展开后，每个模型还会显示:**Type**、**First page only** 和 **Version**。
 
 在这些信息下方，列出该模型的标签。
 

@@ -76,6 +76,10 @@ De knop **Assistent** boven de velden toont openstaande validatieproblemen. Open
 
 Velden met een ingestelde zoekfunctie kunnen leveranciers, inkooporders of andere stamgegevens doorzoeken. Open de zoekfunctie bij het veld, beperk de resultaten en selecteer de juiste record. Hierdoor kunnen meerdere gekoppelde velden worden ingevuld: controleer die ook. Deze waarden komen uit stamgegevens en kunnen afwijken van de gedrukte tekst. Zie [Fuzzy Data](fuzzy-data.md).
 
+### Alleen-lezen velden
+
+Een alleen-lezen veld biedt de zoekfunctie niet aan. Alleen-lezen kan komen door een vergrendeld document, je veldrechten of de veldconfiguratie zelf. Zo'n veld behoudt de waarde die een regel of de lay-out erin schrijft; controleer die waarde in plaats van haar opnieuw op te zoeken.
+
 ## Factuurregels controleren
 
 Als de lay-out tabellen bevat, vergelijk je regels, omschrijvingen, aantallen, prijzen en bedragen met het document. **Geëxtraheerde tabel** en **AI-geëxtraheerde tabel** zijn verschillende extractieweergaven. Hun beschikbaarheid hangt af van de ingeschakelde methoden en de lay-out. Een leeg of ontbrekend tabblad verklaart op zichzelf geen extractieprobleem.

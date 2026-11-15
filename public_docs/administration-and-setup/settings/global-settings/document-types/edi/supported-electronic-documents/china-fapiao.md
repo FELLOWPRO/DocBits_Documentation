@@ -18,7 +18,7 @@ Check the country guide for version limits, effective configuration and the coun
 | **Standard**         | Fapiao (发票), State Taxation Administration                       |
 | **Locale**           | `zh_CN`                                                          |
 
-The catalogue includes Fapiao, E-Fapiao, General VAT Invoice and Special VAT Invoice. The documented adapter uses the XML namespace urn:china:tax:fapiao:1.0. Do not assume that every native OFD, PDF or tax-platform export uses that contract.
+The catalogue includes Fapiao, E-Fapiao, General VAT Invoice and Special VAT Invoice.
 
 | fapiao\_type value | Document Type                                      |
 | ------------------ | -------------------------------------------------- |

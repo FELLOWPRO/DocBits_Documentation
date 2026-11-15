@@ -32,10 +32,10 @@ Total Amount: $1,015.05
 
 Quantity Tolerance: ±2%
 
-Unit Price Tolerance: ±1%\
+Unit Price Tolerance: ±1%
 
 
-Since the quantity (101 units) and unit price ($10.05) are both within the acceptable tolerance levels compared to the purchase order, the system will:\
+Since the quantity (101 units) and unit price ($10.05) are both within the acceptable tolerance levels compared to the purchase order, the system will:
 
 
 1\. **Accept the Invoice Values:** The quantity and unit price on the invoice are accepted as valid because they fall within the defined tolerance limits.

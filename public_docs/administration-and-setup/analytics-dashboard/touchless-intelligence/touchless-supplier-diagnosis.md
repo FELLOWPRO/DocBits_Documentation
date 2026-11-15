@@ -11,7 +11,7 @@ Klik op een leverancier in de wachtrij om de diagnosepagina te openen.
 
 De pagina toont:
 
-* **Vier tegels met eindresultaten**: Pure Touchless, AP Touchless, AP Assisted en procesuitzondering; elke tegel opent de documenten.
+* **Vier tegels met eindresultaten**: Pure Touchless, AP Touchless, AP assisted en procesuitzondering; elke tegel opent de documenten.
 * **De trend** met een eigen periodekiezer: 30 dagen, 90 dagen, 6 maanden, 1 jaar of een zelfgekozen bereik (tot twee jaar). Dit wijzigt alleen de grafiek.
 * **Probleemclusters** (zie hieronder).
 * **Wijzigingsgeschiedenis** (Change history): de wijzigingen die u voor deze leverancier hebt toegepast en wat ze hebben gedaan.

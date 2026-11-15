@@ -370,7 +370,7 @@ This file is responsible for extracting data from a PEPPOL BIS Billing 3.0 XML f
    * **Mapped To**: `<INVOICE><BUYER_REFERENCE>`
    * **Can Appear Multiple Times**: No.
 
-2)  **Billing Reference**
+2. **Billing Reference**
 
     * **Source**: `//BillingReference`
     * **Mapped To**: `<INVOICE><BILLING_REFERENCE>`

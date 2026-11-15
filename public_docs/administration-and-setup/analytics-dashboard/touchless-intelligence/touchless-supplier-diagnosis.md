@@ -31,7 +31,7 @@ Um **cluster** agrupa os documentos de um fornecedor que pararam pelo **mesmo pr
 * **Headline**: *Required field missing* na etapa *Field Validation*
 * **Affected**: 28 documentos. **Recoverable**: 28 documentos. **Expected lift**: +2,8 pp
 * **Suspected cause**: o fornecedor imprime o número do PO abaixo da tabela, onde a extração não procura
-* **Próxima verificação**: compare o número de encomenda impresso e extraído, depois a configuração de extração antes de propor alterações
+* **What to check next**: compare o número de encomenda impresso e extraído, depois a configuração de extração antes de propor alterações
 * **Owner**: Consultant. **Confidence**: Medium. **Source**: Hypothesis
 
 O que um cartão de cluster mostra:

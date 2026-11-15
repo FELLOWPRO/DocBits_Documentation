@@ -11,7 +11,7 @@ Fai clic su un fornitore nella coda per aprire la sua pagina di diagnosi.
 
 La pagina mostra:
 
-* **Quattro riquadri degli esiti finali**: Pure Touchless, AP Touchless, AP Assisted ed eccezione di processo; ciascuno collega i documenti.
+* **Quattro riquadri degli esiti finali**: Pure Touchless, AP Touchless, AP assisted ed eccezione di processo; ciascuno collega i documenti.
 * **L'andamento** con un proprio selettore del periodo: 30 giorni, 90 giorni, 6 mesi, 1 anno o un intervallo personalizzato (fino a due anni). Questo modifica solo il grafico.
 * **Cluster di problemi** (vedi sotto).
 * **Cronologia delle modifiche** (Change history): le modifiche che hai applicato per questo fornitore e cosa hanno ottenuto.

@@ -6,7 +6,7 @@ Touchless Intelligence risponde a due domande distinte: **DocBits ha estratto co
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/it.mp4" %}
 
-Questa versione di verifica di 5:56 mostra un report con dati: filtri, KPI e calcolo, andamento, primi bloccanti, prove registrate, cronologia del documento, confronto delle esecuzioni, regole apprese, miglioramenti e cronologia, report di consulenza e risultati MCP reali.
+Questa versione di verifica di 5:41 mostra un report con dati: filtri, KPI e calcolo, andamento, primi bloccanti, prove registrate, cronologia del documento, confronto delle esecuzioni, regole apprese, miglioramenti e cronologia, report di consulenza e risultati MCP reali.
 
 [Aprire il video con sottotitoli italiani e 16 link ai capitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/it.html). La revisione di ascolto umana di questa nuova versione è ancora in sospeso.
 

@@ -16,13 +16,13 @@ Segui una fattura dalla dashboard al passaggio successivo: confronta fornitore, 
 
 ## Aprire e usare la schermata di validazione
 
-Apri un documento dalla dashboard. Nella vista **Convalida del campo**, confronta i campi modificabili con l’originale visualizzato accanto. Il tipo di documento e il layout configurato determinano campi, tabelle e pulsanti disponibili. Sposta il divisore per dare più spazio ai campi o al documento.
+Apri un documento dalla dashboard. Nella vista **Field Validation**, confronta i campi modificabili con l’originale visualizzato accanto. Il tipo di documento e il layout configurato determinano campi, tabelle e pulsanti disponibili. Sposta il divisore per dare più spazio ai campi o al documento.
 
 Per un documento di più pagine usa i comandi di pagina; usa lo zoom per leggere i caratteri piccoli. Le frecce in basso passano da un documento all’altro e sono distinte dai comandi di pagina.
 
 ### Origine del documento
 
-Controlla l’**origine del documento** prima di date e importi. Determina l’interpretazione dei formati di data e numero; non traduce il documento e non cambia la lingua dell’interfaccia. Scegli l’origine corrispondente al documento e confronta i valori con l’originale.
+Controlla l’**Document Origin** prima di date e importi. Determina l’interpretazione dei formati di data e numero; non traduce il documento e non cambia la lingua dell’interfaccia. Scegli l’origine corrispondente al documento e confronta i valori con l’originale.
 
 La modifica dell’origine apre una finestra di conferma. Se prosegui, l’elaborazione del documento riparte. Al termine, controlla i valori estratti nuovamente.
 
@@ -30,7 +30,7 @@ La modifica dell’origine apre una finestra di conferma. Se prosegui, l’elabo
 
 Se il numero di fattura non è stato letto correttamente:
 
-1. Seleziona il campo **Numero di fattura**.
+1. Seleziona il campo **Invoice number**.
 2. Fai doppio clic sul numero completo nell’originale oppure seleziona l’area che lo contiene.
 3. Controlla il campo proposto e conferma l’associazione con il segno di spunta, se richiesto.
 4. Verifica il valore e l’area di origine evidenziata. Ripeti la selezione se il numero è incompleto o associato al campo sbagliato.
@@ -50,9 +50,9 @@ Selezionando un’area sul documento si apre una piccola finestra con pulsanti r
 
 | Azione | Effetto |
 | --- | --- |
-| **Salva** — dischetto sopra i campi | Memorizza le modifiche al documento corrente. Da sola non lo approva né lo esporta. |
+| **Save** — dischetto sopra i campi | Memorizza le modifiche al documento corrente. Da sola non lo approva né lo esporta. |
 | **Save Rules** | Conserva le regole di estrazione a partire dal documento e dalle associazioni alle aree di origine. È distinto dal salvataggio dei valori. |
-| **Esportazione / Export**, approvazione o altra azione configurata | Invia il documento alla fase successiva configurata dopo i controlli pertinenti. L’azione e lo stato risultante dipendono dal processo e dai permessi. |
+| **Export**, approvazione o altra azione configurata | Invia il documento alla fase successiva configurata dopo i controlli pertinenti. L’azione e lo stato risultante dipendono dal processo e dai permessi. |
 
 Nel video la fattura verificata viene inviata per approvazione. Un pulsante **Export** non garantisce che la fattura sia già arrivata nell’ERP di destinazione. Controlla il nuovo stato nella dashboard ed eventuali errori di elaborazione.
 
@@ -62,7 +62,7 @@ Un bordo rosso o un’icona di avviso richiama l’attenzione su un campo. Leggi
 
 Confronta fornitore, numero, date, importi e valuta con l’originale. Per i totali controlla i campi di intestazione interessati e le eventuali righe. Correggi la causa indicata prima di proseguire.
 
-Alcuni messaggi provengono da una regola con la gravità **Avvertimento**. Non scompaiono da soli: seleziona **Riconoscere** sotto il campo per confermare il valore; il messaggio viene sostituito dalla nota “Ricevuto. La modifica del valore richiede nuovamente l’operazione.” Se in seguito modifichi il valore, l’avviso ritorna e occorre riconoscerlo di nuovo. Un campo che mostra un errore bloccante va invece corretto: per esso non esiste alcun pulsante.
+Alcuni messaggi provengono da una regola con la gravità **Warning**. Non scompaiono da soli: seleziona **Acknowledge** sotto il campo per confermare il valore; il messaggio viene sostituito dalla nota **Acknowledged. Changing the value asks again.** Se in seguito modifichi il valore, l’avviso ritorna e occorre riconoscerlo di nuovo. Un campo che mostra un errore bloccante va invece corretto: per esso non esiste alcun pulsante.
 
 Se solo gli avvisi impediscono un salvataggio o un’esportazione, la schermata mostra il testo di avviso del campo in un riquadro color ambra con il pulsante **Acknowledge** e scorre fino a quel campo. Lo stesso pulsante conferma in una sola volta tutti i campi con avvisi, come il link sotto un campo. Un errore reale produce comunque il messaggio rosso **One or more fields needs validation.**
 
@@ -70,7 +70,7 @@ I controlli dipendono dal tipo di documento e dalla configurazione dell’organi
 
 ## Usare l’assistente
 
-Il pulsante **Assistente** sopra i campi mostra i problemi di validazione aperti. Aprilo e usa **Vai al campo** per controllare il campo interessato. Domande e suggerimenti IA dipendono dall’attivazione per l’organizzazione e dai tuoi permessi. Se non sono disponibili, leggi il messaggio nel pannello. I suggerimenti modificano il modulo: controllali e salva il documento per conservare le modifiche.
+Il pulsante **Assistant** sopra i campi mostra i problemi di validazione aperti. Aprilo e usa **Go to field** per controllare il campo interessato. Domande e suggerimenti IA dipendono dall’attivazione per l’organizzazione e dai tuoi permessi. Se non sono disponibili, leggi il messaggio nel pannello. I suggerimenti modificano il modulo: controllali e salva il documento per conservare le modifiche.
 
 ## Selezionare i dati anagrafici
 
@@ -82,7 +82,7 @@ Un campo di sola lettura non offre il controllo di ricerca. La sola lettura può
 
 ## Verificare le righe della fattura
 
-Se il layout comprende tabelle, confronta righe, descrizioni, quantità, prezzi e importi con il documento. **Tabella estratta** e **AI Tabella estratta** sono viste di estrazione diverse. La loro disponibilità dipende dai metodi attivati e dal layout. Una scheda vuota o assente non basta a spiegare un problema di estrazione.
+Se il layout comprende tabelle, confronta righe, descrizioni, quantità, prezzi e importi con il documento. **Extracted table** e **AI Extracted table** sono viste di estrazione diverse. La loro disponibilità dipende dai metodi attivati e dal layout. Una scheda vuota o assente non basta a spiegare un problema di estrazione.
 
 Correggi celle e righe mancanti o duplicate con i comandi disponibili. Le modifiche riguardano il documento corrente. L’addestramento riutilizzabile delle tabelle, i tag IA e l’addestramento dei campi di intestazione sono operazioni distinte. Vedi [Tag delle tabelle IA](../ai-table/ai-table-tags.md) e [Addestramento delle tabelle](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
 
@@ -94,23 +94,23 @@ Passa il puntatore su un’icona per leggerne il nome. Alcuni strumenti dipendon
 
 | Strumento | Uso |
 | --- | --- |
-| **Vetro d’ingrandimento** e zoom | Leggere i piccoli dettagli dell’originale. |
-| **Aprire l’immagine in una nuova finestra** | Visualizzare la stessa immagine in una finestra separata, per esempio su un altro monitor. L’interfaccia la indica come funzione per Chrome. |
-| **Scorciatoie da tastiera** | Aprire la guida; vedi [Scorciatoie da tastiera](keyboard-shortcuts.md). |
-| **Compiti** | Creare e seguire incarichi interni assegnati a persone o gruppi. |
-| **Flusso di attività** | Consultare le attività registrate sul documento. |
-| **Storia dell’approvazione** | Consultare approvazioni e rifiuti se la funzione è attiva. |
-| **Modalità di annotazione** | Aggiungere note sul documento se le annotazioni sono attive. |
-| **Unisci / aggiungi pagine** | Unire documenti o aggiungere pagine mancanti tramite la finestra disponibile. Controllare le pagine selezionate prima di confermare. |
-| **Vista OCR** | Consultare il testo già riconosciuto. L’apertura non avvia una nuova estrazione OCR. Non è disponibile per alcuni documenti elettronici. |
-| **Assistenza (icona del ticket)** | Preparare una richiesta di assistenza con il contesto del documento e la descrizione del problema. Le attività interne sono gestite separatamente. |
-| **Registri degli script** | Consultare i messaggi degli script del documento se il modulo è attivo. È una vista dei log, non un editor di script. |
+| **Magnify Glass** e zoom | Leggere i piccoli dettagli dell’originale. |
+| **Open image in new window** | Visualizzare la stessa immagine in una finestra separata, per esempio su un altro monitor. L’interfaccia la indica come funzione per Chrome. |
+| **Keyboard shortcuts** | Aprire la guida; vedi [Scorciatoie da tastiera](keyboard-shortcuts.md). |
+| **Tasks** | Creare e seguire incarichi interni assegnati a persone o gruppi. |
+| **Activity Stream** | Consultare le attività registrate sul documento. |
+| **Approval History** | Consultare approvazioni e rifiuti se la funzione è attiva. |
+| **Annotation mode** | Aggiungere note sul documento se le annotazioni sono attive. |
+| **Merge / add pages** | Unire documenti o aggiungere pagine mancanti tramite la finestra disponibile. Controllare le pagine selezionate prima di confermare. |
+| **OCR view** | Consultare il testo già riconosciuto. L’apertura non avvia una nuova estrazione OCR. Non è disponibile per alcuni documenti elettronici. |
+| **Create ticket** | Preparare una richiesta di assistenza con il contesto del documento e la descrizione del problema. Le attività interne sono gestite separatamente. |
+| **Script Logs** | Consultare i messaggi degli script del documento se il modulo è attivo. È una vista dei log, non un editor di script. |
 
 ## Altre opzioni e impostazioni amministrative
 
-Per le fatture, **Altre opzioni → Flusso di documenti** apre il percorso di elaborazione. Secondo accesso e configurazione, il menu può anche offrire la divisione dei documenti, l’accesso al modello di layout e le preferenze di estrazione del fornitore.
+Per le fatture, **More options → Document Flow** apre il percorso di elaborazione. Secondo accesso e configurazione, il menu può anche offrire la divisione dei documenti, l’accesso al modello di layout e le preferenze di estrazione del fornitore.
 
-**Utilizzare il testo elettronico, se disponibile**, **Utilizzare l’estrazione strutturata (IA)** e **Modello AI** sono impostazioni di estrazione del fornitore, non normali correzioni dei campi. Solo gli amministratori autorizzati possono modificarle. Segui la conferma di riavvio quando è necessaria una nuova elaborazione. Un modello di layout configura il modulo di validazione; non modifica l’aspetto stampato della fattura. Vedi [Modello IA per fornitore](supplier-specific-ai-model-for-field-and-table-extraction.md).
+**Use E-Text if available**, **Use Structured Extraction (AI)** e **AI Model** sono impostazioni di estrazione del fornitore, non normali correzioni dei campi. Solo gli amministratori autorizzati possono modificarle. Segui la conferma di riavvio quando è necessaria una nuova elaborazione. Un modello di layout configura il modulo di validazione; non modifica l’aspetto stampato della fattura. Vedi [Modello IA per fornitore](supplier-specific-ai-model-for-field-and-table-extraction.md).
 
 ## Se non puoi modificare o proseguire
 

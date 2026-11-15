@@ -16,13 +16,13 @@ Przejdź od panelu do przekazania faktury dalej: porównaj dostawcę, daty, nume
 
 ## Otwieranie i obsługa ekranu walidacji
 
-Otwórz dokument z panelu. W widoku **Walidacja pola** porównaj edytowalne pola z oryginałem widocznym obok. Typ dokumentu i skonfigurowany układ określają dostępne pola, tabele i przyciski. Przesuń separator, aby powiększyć obszar pól lub dokumentu.
+Otwórz dokument z panelu. W widoku **Field Validation** porównaj edytowalne pola z oryginałem widocznym obok. Typ dokumentu i skonfigurowany układ określają dostępne pola, tabele i przyciski. Przesuń separator, aby powiększyć obszar pól lub dokumentu.
 
 W dokumentach wielostronicowych używaj nawigacji po stronach, a do małego tekstu — powiększenia. Strzałki na dole przełączają dokumenty i są odrębne od nawigacji po stronach.
 
 ### Pochodzenie dokumentu
 
-Przed sprawdzaniem dat i kwot skontroluj **pochodzenie dokumentu**. Określa ono interpretację formatów dat i liczb; nie tłumaczy dokumentu ani nie zmienia języka interfejsu. Wybierz pochodzenie zgodne z dokumentem i porównaj wartości z oryginałem.
+Przed sprawdzaniem dat i kwot skontroluj **Document Origin**. Określa ono interpretację formatów dat i liczb; nie tłumaczy dokumentu ani nie zmienia języka interfejsu. Wybierz pochodzenie zgodne z dokumentem i porównaj wartości z oryginałem.
 
 Zmiana pochodzenia otwiera okno potwierdzenia. Po kontynuowaniu przetwarzanie dokumentu rozpoczyna się ponownie. Po jego zakończeniu sprawdź ponownie odczytane wartości.
 
@@ -30,7 +30,7 @@ Zmiana pochodzenia otwiera okno potwierdzenia. Po kontynuowaniu przetwarzanie do
 
 Jeśli numer faktury został odczytany nieprawidłowo:
 
-1. Wybierz pole **Numer faktury**.
+1. Wybierz pole **Invoice number**.
 2. Kliknij dwukrotnie pełny numer na oryginale lub zaznacz obszar, który go zawiera.
 3. Sprawdź proponowane przypisanie pola i zatwierdź je znacznikiem wyboru, gdy pojawi się monit.
 4. Sprawdź wartość i podświetlony obszar źródłowy. Powtórz zaznaczenie, jeśli numer jest niepełny lub przypisany do niewłaściwego pola.
@@ -50,9 +50,9 @@ Zaznaczenie obszaru na dokumencie otwiera małe okienko z okrągłymi przyciskam
 
 | Działanie | Skutek |
 | --- | --- |
-| **Zapisz** — dyskietka nad polami | Zapisuje zmiany w bieżącym dokumencie. Samo zapisanie nie zatwierdza go ani nie eksportuje. |
+| **Save** — dyskietka nad polami | Zapisuje zmiany w bieżącym dokumencie. Samo zapisanie nie zatwierdza go ani nie eksportuje. |
 | **Save Rules** | Zachowuje reguły ekstrakcji na podstawie dokumentu i przypisań do obszarów źródłowych. Jest to odrębne od zapisu wartości. |
-| **Eksport / Export**, zatwierdzenie lub inne skonfigurowane działanie | Po odpowiednich kontrolach przekazuje dokument do następnego skonfigurowanego etapu. Działanie i nowy status zależą od procesu oraz uprawnień. |
+| **Export**, zatwierdzenie lub inne skonfigurowane działanie | Po odpowiednich kontrolach przekazuje dokument do następnego skonfigurowanego etapu. Działanie i nowy status zależą od procesu oraz uprawnień. |
 
 W filmie sprawdzona faktura jest przekazywana do zatwierdzenia. Przycisk **Export** nie gwarantuje, że faktura dotarła już do docelowego systemu ERP. Sprawdź nowy status w panelu i ewentualne błędy przetwarzania.
 
@@ -62,7 +62,7 @@ Czerwona ramka lub ikona ostrzeżenia wskazuje pole wymagające uwagi. Odczytaj 
 
 Porównaj dostawcę, numer, daty, kwoty i walutę z oryginałem. Przy sumach sprawdź odpowiednie pola nagłówka i pozycje. Usuń przyczynę wskazaną w komunikacie przed przekazaniem dalej.
 
-Niektóre komunikaty pochodzą z reguły o ważności **Ostrzeżenie**. Nie znikają same: wybierz **Uznawać** pod polem, aby potwierdzić wartość, a komunikat zastępuje informacja **Potwierdzono. Zmiana wartości powoduje ponowne żądanie.** Jeśli wartość zostanie później zmieniona, ostrzeżenie wraca i trzeba je potwierdzić ponownie. Pole z błędem twardym trzeba natomiast poprawić — nie ma dla niego przycisku.
+Niektóre komunikaty pochodzą z reguły o ważności **Warning**. Nie znikają same: wybierz **Acknowledge** pod polem, aby potwierdzić wartość, a komunikat zastępuje informacja **Acknowledged. Changing the value asks again.** Jeśli wartość zostanie później zmieniona, ostrzeżenie wraca i trzeba je potwierdzić ponownie. Pole z błędem twardym trzeba natomiast poprawić — nie ma dla niego przycisku.
 
 Jeśli zapis lub eksport wstrzymują wyłącznie ostrzeżenia, ekran pokazuje tekst ostrzeżenia pola w pomarańczowym komunikacie z przyciskiem **Acknowledge** i przewija do tego pola. Ten sam przycisk potwierdza jednocześnie wszystkie pola z ostrzeżeniami, podobnie jak link pod polem. Rzeczywisty błąd nadal daje czerwony komunikat **One or more fields needs validation.**
 
@@ -70,7 +70,7 @@ Kontrole zależą od typu dokumentu i konfiguracji organizacji; zobacz [Kontrole
 
 ## Korzystanie z asystenta
 
-Przycisk **Asystent** nad polami pokazuje otwarte problemy walidacji. Otwórz go i wybierz **Przejdź do pola**, aby sprawdzić wskazane pole. Pytania i sugestie AI zależą od włączenia asystenta w organizacji oraz Twoich uprawnień. Jeśli są niedostępne, przeczytaj komunikat w panelu. Sugestie zmieniają formularz: sprawdź je i zapisz dokument, aby zachować zmiany.
+Przycisk **Assistant** nad polami pokazuje otwarte problemy walidacji. Otwórz go i wybierz **Go to field**, aby sprawdzić wskazane pole. Pytania i sugestie AI zależą od włączenia asystenta w organizacji oraz Twoich uprawnień. Jeśli są niedostępne, przeczytaj komunikat w panelu. Sugestie zmieniają formularz: sprawdź je i zapisz dokument, aby zachować zmiany.
 
 ## Wybór danych podstawowych
 
@@ -82,7 +82,7 @@ Pole tylko do odczytu nie udostępnia kontrolki wyszukiwania. Tryb tylko do odcz
 
 ## Sprawdzanie pozycji faktury
 
-Jeśli układ zawiera tabele, porównaj wiersze, opisy, ilości, ceny i kwoty z dokumentem. **Wyodrębniona tabela** i **Wyodrębniona tabela AI** to różne widoki ekstrakcji. Ich dostępność zależy od włączonych metod i układu. Pusta lub nieobecna karta sama w sobie nie wyjaśnia przyczyny problemu ekstrakcji.
+Jeśli układ zawiera tabele, porównaj wiersze, opisy, ilości, ceny i kwoty z dokumentem. **Extracted table** i **AI Extracted table** to różne widoki ekstrakcji. Ich dostępność zależy od włączonych metod i układu. Pusta lub nieobecna karta sama w sobie nie wyjaśnia przyczyny problemu ekstrakcji.
 
 Popraw komórki oraz brakujące lub powielone wiersze za pomocą dostępnych narzędzi. Zmiany dotyczą bieżącego dokumentu. Wielokrotne wykorzystanie treningu tabel, tagi AI i trening pól nagłówka to odrębne operacje. Zobacz [Tagi tabel AI](../ai-table/ai-table-tags.md) i [Trening tabel](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
 
@@ -94,23 +94,23 @@ Najedź na ikonę, aby odczytać jej nazwę. Niektóre narzędzia zależą od mo
 
 | Narzędzie | Zastosowanie |
 | --- | --- |
-| **Szkło powiększające** i powiększenie | Oglądanie drobnych szczegółów oryginału. |
-| **Otwórz obraz w nowym oknie** | Wyświetlenie tego samego obrazu w osobnym oknie, np. na drugim monitorze. Interfejs oznacza tę funkcję jako przeznaczoną dla Chrome. |
-| **Skróty klawiaturowe** | Otwarcie pomocy; zobacz [Skróty klawiaturowe](keyboard-shortcuts.md). |
-| **Zadania** | Tworzenie i śledzenie pracy wewnętrznej przypisanej osobie lub grupie. |
-| **Strumień aktywności** | Przegląd zarejestrowanych działań na dokumencie. |
-| **Historia zatwierdzeń** | Przegląd zatwierdzeń i odrzuceń, gdy funkcja jest włączona. |
-| **Tryb adnotacji** | Dodawanie notatek na dokumencie, jeśli adnotacje są włączone. |
-| **Scal / dodaj strony** | Łączenie dokumentów lub dodawanie brakujących stron w dostępnym oknie. Przed potwierdzeniem sprawdź wybrane strony. |
-| **Widok OCR** | Przegląd tekstu już rozpoznanego. Otwarcie widoku nie uruchamia nowej ekstrakcji OCR. Funkcja jest niedostępna dla niektórych dokumentów elektronicznych. |
-| **Pomoc techniczna (ikona zgłoszenia)** | Przygotowanie prośby o pomoc z kontekstem dokumentu i opisem problemu. Zadania wewnętrzne obsługiwane są osobno. |
-| **Dzienniki skryptów** | Przegląd komunikatów skryptów dokumentu, gdy moduł jest aktywny. Jest to podgląd dzienników, a nie edytor skryptów. |
+| **Magnify Glass** i powiększenie | Oglądanie drobnych szczegółów oryginału. |
+| **Open image in new window** | Wyświetlenie tego samego obrazu w osobnym oknie, np. na drugim monitorze. Interfejs oznacza tę funkcję jako przeznaczoną dla Chrome. |
+| **Keyboard shortcuts** | Otwarcie pomocy; zobacz [Skróty klawiaturowe](keyboard-shortcuts.md). |
+| **Tasks** | Tworzenie i śledzenie pracy wewnętrznej przypisanej osobie lub grupie. |
+| **Activity Stream** | Przegląd zarejestrowanych działań na dokumencie. |
+| **Approval History** | Przegląd zatwierdzeń i odrzuceń, gdy funkcja jest włączona. |
+| **Annotation mode** | Dodawanie notatek na dokumencie, jeśli adnotacje są włączone. |
+| **Merge / add pages** | Łączenie dokumentów lub dodawanie brakujących stron w dostępnym oknie. Przed potwierdzeniem sprawdź wybrane strony. |
+| **OCR view** | Przegląd tekstu już rozpoznanego. Otwarcie widoku nie uruchamia nowej ekstrakcji OCR. Funkcja jest niedostępna dla niektórych dokumentów elektronicznych. |
+| **Create ticket** | Przygotowanie prośby o pomoc z kontekstem dokumentu i opisem problemu. Zadania wewnętrzne obsługiwane są osobno. |
+| **Script Logs** | Przegląd komunikatów skryptów dokumentu, gdy moduł jest aktywny. Jest to podgląd dzienników, a nie edytor skryptów. |
 
 ## Więcej opcji i ustawienia administratora
 
-Dla faktur **Więcej opcji → Przepływ dokumentów** otwiera przebieg przetwarzania. Zależnie od dostępu i konfiguracji menu może zawierać także dzielenie dokumentów, skrót do szablonu układu oraz preferencje ekstrakcji dostawcy.
+Dla faktur **More options → Document Flow** otwiera przebieg przetwarzania. Zależnie od dostępu i konfiguracji menu może zawierać także dzielenie dokumentów, skrót do szablonu układu oraz preferencje ekstrakcji dostawcy.
 
-**Użyj E-Textu, jeśli jest dostępny**, **Użyj ekstrakcji strukturalnej (AI)** i **Model sztucznej inteligencji** są ustawieniami ekstrakcji dostawcy, a nie zwykłymi poprawkami pól. Zmieniać je mogą tylko uprawnieni administratorzy. Jeśli zmiana wymaga ponownego przetworzenia, postępuj zgodnie z potwierdzeniem restartu. Szablon układu konfiguruje formularz walidacji; nie zmienia wyglądu wydrukowanej faktury. Zobacz [Model AI dla dostawcy](supplier-specific-ai-model-for-field-and-table-extraction.md).
+**Use E-Text if available**, **Use Structured Extraction (AI)** i **AI Model** są ustawieniami ekstrakcji dostawcy, a nie zwykłymi poprawkami pól. Zmieniać je mogą tylko uprawnieni administratorzy. Jeśli zmiana wymaga ponownego przetworzenia, postępuj zgodnie z potwierdzeniem restartu. Szablon układu konfiguruje formularz walidacji; nie zmienia wyglądu wydrukowanej faktury. Zobacz [Model AI dla dostawcy](supplier-specific-ai-model-for-field-and-table-extraction.md).
 
 ## Gdy nie można edytować lub kontynuować
 

@@ -11,7 +11,7 @@ Kliknij dostawcę w kolejce, aby otworzyć stronę jego diagnozy.
 
 Strona pokazuje:
 
-* **Cztery kafelki wyników końcowych**: Pure Touchless, AP Touchless, AP Assisted i wyjątek procesu; każdy otwiera dokumenty.
+* **Cztery kafelki wyników końcowych**: Pure Touchless, AP Touchless, AP assisted i wyjątek procesu; każdy otwiera dokumenty.
 * **Trend** z własnym wyborem okresu: 30 dni, 90 dni, 6 miesięcy, 1 rok lub zakres niestandardowy (do dwóch lat). Zmienia to tylko wykres.
 * **Klastry problemów** (patrz niżej).
 * **Historia zmian** (Change history): zmiany zastosowane dla tego dostawcy i ich efekt.

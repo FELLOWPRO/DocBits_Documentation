@@ -16,13 +16,13 @@ Acompanhe uma fatura do painel até à passagem à etapa seguinte: compare forne
 
 ## Abrir e utilizar o ecrã de validação
 
-Abra um documento no painel. Na vista **Validação de campo**, compare os campos editáveis com o documento original apresentado ao lado. O tipo de documento e o esquema configurado determinam os campos, tabelas e botões disponíveis. Mova o separador para dar mais espaço aos campos ou ao documento.
+Abra um documento no painel. Na vista **Field Validation**, compare os campos editáveis com o documento original apresentado ao lado. O tipo de documento e o esquema configurado determinam os campos, tabelas e botões disponíveis. Mova o separador para dar mais espaço aos campos ou ao documento.
 
 Utilize os controlos de página nos documentos com várias páginas e o zoom para ler texto pequeno. As setas inferiores mudam de documento e são diferentes dos controlos de página.
 
 ### Origem do documento
 
-Confira a **origem do documento** antes das datas e dos montantes. Determina como são interpretados os formatos de data e número; não traduz o documento nem altera o idioma da interface. Escolha a origem correspondente ao documento e compare os valores com o original.
+Confira a **Document Origin** antes das datas e dos montantes. Determina como são interpretados os formatos de data e número; não traduz o documento nem altera o idioma da interface. Escolha a origem correspondente ao documento e compare os valores com o original.
 
 A alteração da origem abre uma caixa de diálogo de confirmação. Ao continuar, o processamento do documento recomeça. No final, confira os valores extraídos novamente.
 
@@ -30,7 +30,7 @@ A alteração da origem abre uma caixa de diálogo de confirmação. Ao continua
 
 Se o número da fatura não tiver sido lido corretamente:
 
-1. Selecione o campo **Número da fatura**.
+1. Selecione o campo **Invoice number**.
 2. Faça duplo clique no número completo no original ou selecione a área que o contém.
 3. Verifique o campo proposto e confirme a associação com o visto quando solicitado.
 4. Confira o valor e a área de origem realçada. Repita a seleção se o número estiver incompleto ou associado ao campo errado.
@@ -50,9 +50,9 @@ Selecionar uma área no documento abre uma pequena janela com botões redondos p
 
 | Ação | Resultado |
 | --- | --- |
-| **Salvar** — ícone de disquete acima dos campos | Guarda alterações no documento atual. Por si só, não o aprova nem o exporta. |
+| **Save** — ícone de disquete acima dos campos | Guarda alterações no documento atual. Por si só, não o aprova nem o exporta. |
 | **Save Rules** | Conserva regras de extração com base no documento e nas associações às áreas de origem. É diferente de guardar os valores. |
-| **Exportar / Export**, aprovação ou outra ação configurada | Envia o documento para a etapa seguinte configurada após os controlos relevantes. A ação e o estado obtido dependem do processo e das permissões. |
+| **Export**, aprovação ou outra ação configurada | Envia o documento para a etapa seguinte configurada após os controlos relevantes. A ação e o estado obtido dependem do processo e das permissões. |
 
 No vídeo, a fatura conferida é submetida para aprovação. Um botão **Export** não garante que a fatura já chegou ao ERP de destino. Confira o novo estado no painel e eventuais erros de processamento.
 
@@ -62,7 +62,7 @@ Um contorno vermelho ou ícone de aviso chama a atenção para um campo. Leia a 
 
 Compare fornecedor, número, datas, montantes e moeda com o original. Nos totais, confira os campos de cabeçalho afetados e as linhas correspondentes. Corrija a causa indicada antes de prosseguir.
 
-Algumas mensagens vêm de uma regra **Aviso**. Não desaparecem sozinhas: selecione **Reconhecer** por baixo do campo para confirmar o valor, e a mensagem é substituída por **Entendido. Alterar o valor solicita confirmação novamente.** Se editar o valor depois, o aviso regressa e tem de o reconhecer novamente. Um campo que mostra um erro bloqueante tem de ser corrigido — não existe botão para o efeito.
+Algumas mensagens vêm de uma regra **Warning**. Não desaparecem sozinhas: selecione **Acknowledge** por baixo do campo para confirmar o valor, e a mensagem é substituída por **Acknowledged. Changing the value asks again.** Se editar o valor depois, o aviso regressa e tem de o reconhecer novamente. Um campo que mostra um erro bloqueante tem de ser corrigido — não existe botão para o efeito.
 
 Se apenas avisos impedirem uma gravação ou uma exportação, o ecrã mostra o texto de aviso do campo numa notificação âmbar com o botão **Acknowledge** e desloca-se para esse campo. O mesmo botão confirma todos os campos com aviso de uma só vez, como a ligação por baixo de um campo. Um erro real continua a produzir a mensagem vermelha **One or more fields needs validation.**
 
@@ -70,7 +70,7 @@ Os controlos dependem do tipo de documento e da configuração da organização;
 
 ## Utilizar o assistente
 
-O botão **Assistente** acima dos campos apresenta os problemas de validação pendentes. Abra-o e utilize **Ir para o campo** para conferir o campo afetado. As perguntas e sugestões IA dependem da ativação para a organização e das suas permissões. Se não estiverem disponíveis, leia o aviso no painel. As sugestões alteram o formulário: confira-as e guarde o documento para conservar as alterações.
+O botão **Assistant** acima dos campos apresenta os problemas de validação pendentes. Abra-o e utilize **Go to field** para conferir o campo afetado. As perguntas e sugestões IA dependem da ativação para a organização e das suas permissões. Se não estiverem disponíveis, leia o aviso no painel. As sugestões alteram o formulário: confira-as e guarde o documento para conservar as alterações.
 
 ## Selecionar dados mestre
 
@@ -82,7 +82,7 @@ Um campo só de leitura não oferece o controlo de pesquisa. O modo só de leitu
 
 ## Conferir as linhas da fatura
 
-Se o esquema incluir tabelas, compare linhas, descrições, quantidades, preços e montantes com o documento. **Tabela extraída** e **Tabela extraída de IA** são vistas de extração diferentes. A disponibilidade depende dos métodos ativos e do esquema. Um separador vazio ou ausente não explica, por si só, um problema de extração.
+Se o esquema incluir tabelas, compare linhas, descrições, quantidades, preços e montantes com o documento. **Extracted table** e **AI Extracted table** são vistas de extração diferentes. A disponibilidade depende dos métodos ativos e do esquema. Um separador vazio ou ausente não explica, por si só, um problema de extração.
 
 Corrija células e linhas em falta ou duplicadas com os controlos disponíveis. As alterações dizem respeito ao documento atual. O treino reutilizável de tabelas, as etiquetas de IA e o treino dos campos de cabeçalho são operações distintas. Consulte [Etiquetas das tabelas IA](../ai-table/ai-table-tags.md) e [Treino de tabelas](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
 
@@ -94,23 +94,23 @@ Passe o ponteiro sobre um ícone para ler o nome. Algumas ferramentas dependem d
 
 | Ferramenta | Utilização |
 | --- | --- |
-| **Lupa** e zoom | Examinar pequenos detalhes do original. |
-| **Abrir imagem em nova janela** | Mostrar a mesma imagem noutra janela, por exemplo num segundo monitor. A interface identifica-a como funcionalidade do Chrome. |
-| **Atalhos de teclado** | Abrir a ajuda; consulte [Atalhos de teclado](keyboard-shortcuts.md). |
-| **Tarefas** | Criar e acompanhar trabalho interno atribuído a uma pessoa ou grupo. |
-| **Fluxo de atividades** | Consultar atividades registadas no documento. |
-| **Histórico de aprovação** | Consultar aprovações e rejeições quando a funcionalidade está ativa. |
-| **Modo de anotação** | Adicionar notas ao documento se as anotações estiverem ativas. |
-| **Unir / adicionar páginas** | Unir documentos ou adicionar páginas em falta através da caixa de diálogo disponível. Conferir as páginas selecionadas antes de confirmar. |
-| **Visualização OCR** | Consultar texto já reconhecido. A abertura não inicia uma nova extração OCR. Não está disponível para certos documentos eletrónicos. |
-| **Criar tíquete** | Preparar um pedido de suporte com o contexto do documento e a descrição do problema. As tarefas internas são tratadas separadamente. |
-| **Registros de script** | Consultar mensagens dos scripts do documento se o módulo estiver ativo. É uma vista de registos, não um editor de scripts. |
+| **Magnify Glass** e zoom | Examinar pequenos detalhes do original. |
+| **Open image in new window** | Mostrar a mesma imagem noutra janela, por exemplo num segundo monitor. A interface identifica-a como funcionalidade do Chrome. |
+| **Keyboard shortcuts** | Abrir a ajuda; consulte [Atalhos de teclado](keyboard-shortcuts.md). |
+| **Tasks** | Criar e acompanhar trabalho interno atribuído a uma pessoa ou grupo. |
+| **Activity Stream** | Consultar atividades registadas no documento. |
+| **Approval History** | Consultar aprovações e rejeições quando a funcionalidade está ativa. |
+| **Annotation mode** | Adicionar notas ao documento se as anotações estiverem ativas. |
+| **Merge / add pages** | Unir documentos ou adicionar páginas em falta através da caixa de diálogo disponível. Conferir as páginas selecionadas antes de confirmar. |
+| **OCR view** | Consultar texto já reconhecido. A abertura não inicia uma nova extração OCR. Não está disponível para certos documentos eletrónicos. |
+| **Create ticket** | Preparar um pedido de suporte com o contexto do documento e a descrição do problema. As tarefas internas são tratadas separadamente. |
+| **Script Logs** | Consultar mensagens dos scripts do documento se o módulo estiver ativo. É uma vista de registos, não um editor de scripts. |
 
 ## Mais opções e definições de administração
 
-Nas faturas, **Mais opções → Fluxo de documentos** abre o percurso de processamento. Consoante as permissões e a configuração, o menu também pode incluir divisão de documentos, acesso ao modelo de esquema e preferências de extração do fornecedor.
+Nas faturas, **More options → Document Flow** abre o percurso de processamento. Consoante as permissões e a configuração, o menu também pode incluir divisão de documentos, acesso ao modelo de esquema e preferências de extração do fornecedor.
 
-**Use E-Text se disponível**, **Utilizar Extração Estruturada (IA)** e **Modelo de IA** são definições de extração do fornecedor, não correções normais de campos. Apenas administradores autorizados as podem alterar. Siga a confirmação de reinício quando for necessário voltar a processar o documento. Um modelo de esquema configura o formulário de validação; não altera a apresentação impressa da fatura. Consulte [Modelo IA por fornecedor](supplier-specific-ai-model-for-field-and-table-extraction.md).
+**Use E-Text if available**, **Use Structured Extraction (AI)** e **AI Model** são definições de extração do fornecedor, não correções normais de campos. Apenas administradores autorizados as podem alterar. Siga a confirmação de reinício quando for necessário voltar a processar o documento. Um modelo de esquema configura o formulário de validação; não altera a apresentação impressa da fatura. Consulte [Modelo IA por fornecedor](supplier-specific-ai-model-for-field-and-table-extraction.md).
 
 ## Se não conseguir editar ou prosseguir
 

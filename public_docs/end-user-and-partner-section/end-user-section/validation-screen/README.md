@@ -76,6 +76,10 @@ Il pulsante **Assistente** sopra i campi mostra i problemi di validazione aperti
 
 I campi con una ricerca configurata possono consultare fornitori, ordini d’acquisto o altri dati anagrafici. Apri la ricerca del campo, filtra i risultati e seleziona il record corretto. La selezione può compilare più campi collegati: controllali a loro volta. I valori provengono dall’anagrafica e possono differire dal testo stampato. Vedi [Dati fuzzy](fuzzy-data.md).
 
+### Campi di sola lettura
+
+Un campo di sola lettura non offre il controllo di ricerca. La sola lettura può derivare da un documento bloccato, dai permessi sui campi o dalla configurazione del campo stesso. Un campo di questo tipo conserva il valore scritto da una regola o dal layout; controlla quel valore invece di cercarlo di nuovo.
+
 ## Verificare le righe della fattura
 
 Se il layout comprende tabelle, confronta righe, descrizioni, quantità, prezzi e importi con il documento. **Tabella estratta** e **AI Tabella estratta** sono viste di estrazione diverse. La loro disponibilità dipende dai metodi attivati e dal layout. Una scheda vuota o assente non basta a spiegare un problema di estrazione.

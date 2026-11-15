@@ -76,6 +76,10 @@ Przycisk **Asystent** nad polami pokazuje otwarte problemy walidacji. Otwórz go
 
 Pola ze skonfigurowanym wyszukiwaniem mogą korzystać z danych dostawców, zamówień lub innych danych podstawowych. Otwórz wyszukiwanie przy polu, zawęź wyniki i wybierz właściwy rekord. Wybór może uzupełnić kilka powiązanych pól: sprawdź je również. Wartości pochodzą z danych podstawowych i mogą różnić się od wydrukowanego tekstu. Zobacz [Dane fuzzy](fuzzy-data.md).
 
+### Pola tylko do odczytu
+
+Pole tylko do odczytu nie udostępnia kontrolki wyszukiwania. Tryb tylko do odczytu może wynikać z zablokowanego dokumentu, uprawnień do pól lub samej konfiguracji pola. Takie pole zachowuje wartość zapisaną przez regułę lub układ, więc sprawdź tę wartość, zamiast szukać jej ponownie.
+
 ## Sprawdzanie pozycji faktury
 
 Jeśli układ zawiera tabele, porównaj wiersze, opisy, ilości, ceny i kwoty z dokumentem. **Wyodrębniona tabela** i **Wyodrębniona tabela AI** to różne widoki ekstrakcji. Ich dostępność zależy od włączonych metod i układu. Pusta lub nieobecna karta sama w sobie nie wyjaśnia przyczyny problemu ekstrakcji.

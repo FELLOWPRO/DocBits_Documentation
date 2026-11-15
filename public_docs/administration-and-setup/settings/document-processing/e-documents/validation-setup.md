@@ -10,7 +10,7 @@ The **Validation Setup** card shows your current validation profile (for example
 
 ## Accepted XRechnung versions
 
-The **Accepted XRechnung versions** gate lists every XRechnung version. Tick the versions you accept — documents whose CustomizationID falls outside this list are rejected with `VAL-VERSION-NOT-ALLOWED` before any other check. If no version is ticked, the gate is off and every version is accepted. Each version is tagged **current**, **deprecated** or **EOL** together with its release date.
+The **Accepted XRechnung versions** gate lists every XRechnung version. Tick the versions you accept — documents whose CustomizationID falls outside this list are rejected with `VAL-VERSION-NOT-ALLOWED` before any other check. An empty list means "accept everything". Each version is tagged **current**, **deprecated** or **EOL** together with its release date.
 
 ## Accepted profiles and severity model
 

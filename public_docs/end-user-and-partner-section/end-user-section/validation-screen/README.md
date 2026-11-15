@@ -16,13 +16,13 @@ Volg een factuur van het dashboard tot de overdracht: vergelijk leverancier, dat
 
 ## Het validatiescherm openen en gebruiken
 
-Open een document vanuit het dashboard. In **veldvalidatie** vergelijk je de bewerkbare velden met het origineel ernaast. Het documenttype en de ingestelde lay-out bepalen welke velden, tabellen en actieknoppen verschijnen. Versleep de scheidingslijn om de velden of het document meer ruimte te geven.
+Open een document vanuit het dashboard. In **Field Validation** vergelijk je de bewerkbare velden met het origineel ernaast. Het documenttype en de ingestelde lay-out bepalen welke velden, tabellen en actieknoppen verschijnen. Versleep de scheidingslijn om de velden of het document meer ruimte te geven.
 
 Gebruik de paginabediening bij documenten met meerdere pagina’s en de zoom om kleine tekst te lezen. De pijlen onderaan wisselen tussen documenten en staan los van de paginabediening.
 
 ### Oorsprong van het document
 
-Controleer de **Oorsprong van het document** voordat je datums en bedragen bekijkt. Deze bepaalt hoe DocBits datum- en getalnotaties interpreteert; de instelling vertaalt het document niet en wijzigt de interfacetaal niet. Kies de oorsprong die bij het document hoort en vergelijk de waarden met het origineel.
+Controleer de **Document Origin** voordat je datums en bedragen bekijkt. Deze bepaalt hoe DocBits datum- en getalnotaties interpreteert; de instelling vertaalt het document niet en wijzigt de interfacetaal niet. Kies de oorsprong die bij het document hoort en vergelijk de waarden met het origineel.
 
 Als je de oorsprong wijzigt, verschijnt een bevestigingsvenster. Ga je verder, dan wordt het document opnieuw verwerkt. Controleer daarna de opnieuw uitgelezen waarden.
 
@@ -30,7 +30,7 @@ Als je de oorsprong wijzigt, verschijnt een bevestigingsvenster. Ga je verder, d
 
 Als het factuurnummer verkeerd is uitgelezen:
 
-1. Selecteer het veld **Factuurnummer**.
+1. Selecteer het veld **Invoice number**.
 2. Dubbelklik op het volledige nummer in het origineel of selecteer het gebied waarin het staat.
 3. Controleer het voorgestelde veld en bevestig de koppeling met het vinkje wanneer daarom wordt gevraagd.
 4. Controleer de veldwaarde en het gemarkeerde brongebied. Selecteer opnieuw als het nummer onvolledig is of aan het verkeerde veld is gekoppeld.
@@ -50,9 +50,9 @@ Als je een gebied op het document selecteert, opent boven de selectie een kleine
 
 | Actie | Resultaat |
 | --- | --- |
-| **Opslaan** — diskette boven de velden | Bewaart wijzigingen aan het huidige document. Deze actie keurt het document op zichzelf niet goed en exporteert het niet. |
+| **Save** — diskette boven de velden | Bewaart wijzigingen aan het huidige document. Deze actie keurt het document op zichzelf niet goed en exporteert het niet. |
 | **Save Rules** | Bewaart extractieregels op basis van het document en de koppelingen met brongebieden. Dit staat los van het opslaan van veldwaarden. |
-| **Exporteren / Export**, goedkeuring of een andere ingestelde actie | Stuurt het document na de bijbehorende controles naar de volgende ingestelde stap. Actie en nieuwe status hangen af van het proces en je rechten. |
+| **Export**, goedkeuring of een andere ingestelde actie | Stuurt het document na de bijbehorende controles naar de volgende ingestelde stap. Actie en nieuwe status hangen af van het proces en je rechten. |
 
 In de video wordt de gecontroleerde factuur ter goedkeuring doorgestuurd. Een knop **Export** garandeert niet dat de factuur al in het doelsysteem voor ERP is aangekomen. Controleer de nieuwe status op het dashboard en eventuele verwerkingsfouten.
 
@@ -62,7 +62,7 @@ Een rode rand of waarschuwingspictogram vraagt aandacht voor een veld. Lees de i
 
 Vergelijk leverancier, nummer, datums, bedragen en valuta met het origineel. Controleer bij totalen de betreffende kopvelden en eventuele regels. Verhelp de aangegeven oorzaak voordat je verdergaat.
 
-Sommige meldingen komen van een regel met de ernst **Waarschuwing**. Ze verdwijnen niet vanzelf: selecteer **Erkennen** onder het veld om de waarde te bevestigen, waarna de melding wordt vervangen door **Bevestigd. Als de waarde wordt gewijzigd, wordt er opnieuw om gevraagd.** Wijzig je de waarde daarna, dan komt de waarschuwing terug en moet je haar opnieuw bevestigen. Een veld met een harde fout moet je in plaats daarvan corrigeren — daarvoor is er geen knop.
+Sommige meldingen komen van een regel met de ernst **Warning**. Ze verdwijnen niet vanzelf: selecteer **Acknowledge** onder het veld om de waarde te bevestigen, waarna de melding wordt vervangen door **Acknowledged. Changing the value asks again.** Wijzig je de waarde daarna, dan komt de waarschuwing terug en moet je haar opnieuw bevestigen. Een veld met een harde fout moet je in plaats daarvan corrigeren — daarvoor is er geen knop.
 
 Als alleen waarschuwingen een opslag of een export tegenhouden, toont het scherm de waarschuwingstekst van het veld in een amberkleurige melding met de knop **Acknowledge**, en scrolt het naar dat veld. Dezelfde knop bevestigt alle gewaarschuwde velden in één keer, net als de link onder een veld. Een echte fout levert nog steeds de rode melding **One or more fields needs validation.** op.
 
@@ -70,7 +70,7 @@ De controles hangen af van het documenttype en de organisatie-instellingen; zie 
 
 ## De assistent gebruiken
 
-De knop **Assistent** boven de velden toont openstaande validatieproblemen. Open deze en kies **Ga naar veld** om het betreffende veld te controleren. AI-vragen en suggesties hangen af van activering voor je organisatie en je rechten. Lees de melding in het paneel als ze niet beschikbaar zijn. Suggesties wijzigen het formulier: controleer ze en sla het document op om de wijzigingen te bewaren.
+De knop **Assistant** boven de velden toont openstaande validatieproblemen. Open deze en kies **Go to field** om het betreffende veld te controleren. AI-vragen en suggesties hangen af van activering voor je organisatie en je rechten. Lees de melding in het paneel als ze niet beschikbaar zijn. Suggesties wijzigen het formulier: controleer ze en sla het document op om de wijzigingen te bewaren.
 
 ## Stamgegevens selecteren
 
@@ -82,7 +82,7 @@ Een alleen-lezen veld biedt de zoekfunctie niet aan. Alleen-lezen kan komen door
 
 ## Factuurregels controleren
 
-Als de lay-out tabellen bevat, vergelijk je regels, omschrijvingen, aantallen, prijzen en bedragen met het document. **Geëxtraheerde tabel** en **AI-geëxtraheerde tabel** zijn verschillende extractieweergaven. Hun beschikbaarheid hangt af van de ingeschakelde methoden en de lay-out. Een leeg of ontbrekend tabblad verklaart op zichzelf geen extractieprobleem.
+Als de lay-out tabellen bevat, vergelijk je regels, omschrijvingen, aantallen, prijzen en bedragen met het document. **Extracted table** en **AI Extracted table** zijn verschillende extractieweergaven. Hun beschikbaarheid hangt af van de ingeschakelde methoden en de lay-out. Een leeg of ontbrekend tabblad verklaart op zichzelf geen extractieprobleem.
 
 Corrigeer cellen en ontbrekende of dubbele regels met de beschikbare bediening. Deze wijzigingen betreffen het huidige document. Herbruikbare tabeltraining, AI-tags en de training van kopvelden zijn afzonderlijke handelingen. Zie [AI-tabeltags](../ai-table/ai-table-tags.md) en [Tabeltraining](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
 
@@ -94,23 +94,23 @@ Beweeg de aanwijzer over een pictogram om de naam te lezen. Sommige hulpmiddelen
 
 | Hulpmiddel | Gebruik |
 | --- | --- |
-| **Vergrootglas** en zoom | Kleine details in het origineel bekijken. |
-| **Afbeelding openen in nieuw venster** | Dezelfde afbeelding in een apart venster tonen, bijvoorbeeld op een tweede monitor. De interface vermeldt dat dit een Chrome-functie is. |
-| **Sneltoetsen** | De hulp openen; zie [Sneltoetsen](keyboard-shortcuts.md). |
-| **Taken** | Intern werk voor een persoon of groep aanmaken en volgen. |
-| **Activiteitenstroom** | Vastgelegde activiteiten van het document bekijken. |
-| **Goedkeuringsgeschiedenis** | Goedkeuringen en afwijzingen bekijken wanneer de functie is ingeschakeld. |
-| **Annotatiemodus** | Notities op het document plaatsen als annotaties zijn ingeschakeld. |
-| **Samenvoegen / pagina’s toevoegen** | Documenten combineren of ontbrekende pagina’s toevoegen via het beschikbare venster. Controleer de gekozen pagina’s voordat je bevestigt. |
-| **OCR-weergave** | Reeds herkende tekst bekijken. Het openen start geen nieuwe OCR-extractie. De functie is niet beschikbaar voor bepaalde elektronische documenten. |
-| **Ticket aanmaken** | Een ondersteuningsverzoek met documentcontext en probleembeschrijving voorbereiden. Interne taken worden apart behandeld. |
-| **Scriptlogboeken** | Meldingen van documentscripts bekijken als de module is ingeschakeld. Dit is een logboekweergave, geen scripteditor. |
+| **Magnify Glass** en zoom | Kleine details in het origineel bekijken. |
+| **Open image in new window** | Dezelfde afbeelding in een apart venster tonen, bijvoorbeeld op een tweede monitor. De interface vermeldt dat dit een Chrome-functie is. |
+| **Keyboard shortcuts** | De hulp openen; zie [Sneltoetsen](keyboard-shortcuts.md). |
+| **Tasks** | Intern werk voor een persoon of groep aanmaken en volgen. |
+| **Activity Stream** | Vastgelegde activiteiten van het document bekijken. |
+| **Approval History** | Goedkeuringen en afwijzingen bekijken wanneer de functie is ingeschakeld. |
+| **Annotation mode** | Notities op het document plaatsen als annotaties zijn ingeschakeld. |
+| **Merge / add pages** | Documenten combineren of ontbrekende pagina’s toevoegen via het beschikbare venster. Controleer de gekozen pagina’s voordat je bevestigt. |
+| **OCR view** | Reeds herkende tekst bekijken. Het openen start geen nieuwe OCR-extractie. De functie is niet beschikbaar voor bepaalde elektronische documenten. |
+| **Create ticket** | Een ondersteuningsverzoek met documentcontext en probleembeschrijving voorbereiden. Interne taken worden apart behandeld. |
+| **Script Logs** | Meldingen van documentscripts bekijken als de module is ingeschakeld. Dit is een logboekweergave, geen scripteditor. |
 
 ## Meer opties en beheerinstellingen
 
-Bij facturen opent **Meer opties → Documentstroom** het verwerkingsverloop. Afhankelijk van toegang en inrichting kan het menu ook documentsplitsing, een koppeling naar de lay-outsjabloon en extractievoorkeuren voor de leverancier bevatten.
+Bij facturen opent **More options → Document Flow** het verwerkingsverloop. Afhankelijk van toegang en inrichting kan het menu ook documentsplitsing, een koppeling naar de lay-outsjabloon en extractievoorkeuren voor de leverancier bevatten.
 
-**Gebruik E-tekst indien beschikbaar**, **Gebruik gestructureerde extractie (AI)** en **AI-model** zijn extractie-instellingen voor de leverancier, geen gewone veldcorrecties. Alleen bevoegde beheerders kunnen ze wijzigen. Volg de herstartbevestiging als nieuwe verwerking nodig is. Een lay-outsjabloon stelt het validatieformulier in en wijzigt niet de gedrukte vormgeving van de factuur. Zie [AI-model per leverancier](supplier-specific-ai-model-for-field-and-table-extraction.md).
+**Use E-Text if available**, **Use Structured Extraction (AI)** en **AI Model** zijn extractie-instellingen voor de leverancier, geen gewone veldcorrecties. Alleen bevoegde beheerders kunnen ze wijzigen. Volg de herstartbevestiging als nieuwe verwerking nodig is. Een lay-outsjabloon stelt het validatieformulier in en wijzigt niet de gedrukte vormgeving van de factuur. Zie [AI-model per leverancier](supplier-specific-ai-model-for-field-and-table-extraction.md).
 
 ## Als je niet kunt bewerken of doorgaan
 

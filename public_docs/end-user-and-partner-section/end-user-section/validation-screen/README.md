@@ -76,6 +76,10 @@ O botão **Assistente** acima dos campos apresenta os problemas de validação p
 
 Os campos com uma pesquisa configurada podem consultar fornecedores, encomendas ou outros dados mestre. Abra a pesquisa do campo, filtre os resultados e selecione o registo correto. A seleção pode preencher vários campos relacionados: confira-os também. Estes valores vêm dos dados mestre e podem diferir do texto impresso. Consulte [Dados fuzzy](fuzzy-data.md).
 
+### Campos só de leitura
+
+Um campo só de leitura não oferece o controlo de pesquisa. O modo só de leitura pode dever-se a um documento bloqueado, às suas permissões de campo ou à própria configuração do campo. Esse campo mantém o valor que uma regra ou o esquema lhe escreve; confira esse valor em vez de o procurar novamente.
+
 ## Conferir as linhas da fatura
 
 Se o esquema incluir tabelas, compare linhas, descrições, quantidades, preços e montantes com o documento. **Tabela extraída** e **Tabela extraída de IA** são vistas de extração diferentes. A disponibilidade depende dos métodos ativos e do esquema. Um separador vazio ou ausente não explica, por si só, um problema de extração.

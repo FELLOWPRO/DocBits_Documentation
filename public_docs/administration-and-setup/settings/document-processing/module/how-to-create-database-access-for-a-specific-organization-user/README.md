@@ -14,21 +14,21 @@
 
 1. In the **Settings**, locate the **Document Processing** section.
 2. Under **Document Processing**, find and click on the **Module** option.
-   * This will open the relevant module configuration page where you can proceed with creation of user for database.
+   * This opens the relevant module configuration page, where you can create a user for the database.
 
 ### 4. Steps to Enable and Access the AI Document and Database User: <a href="#id-4.-steps-to-enable-and-access-the-ai-document-and-database-user" id="id-4.-steps-to-enable-and-access-the-ai-document-and-database-user"></a>
 
 1. **Toggle Features**:
    * Use the toggles on the right to enable or disable specific features:
      * **AI Document Warehouse**: Toggle this to enable access to AI-related features.
-     * **DB Access**: Toggle this to grant database access to user.
+     * **DB Access**: Toggle this to grant database access to the user.
 2. **Database Credentials**:
    * The dashboard provides the following database connection details:
      * **Username**: A unique username is displayed
      * **Password**: Ensure the password is securely stored or copied.
-     * **Database**: Is the name of the Database
-     * **Host**: Host Name
-     * **Port**: Is the Port
+     * **Database**: The name of the database
+     * **Host**: Host name
+     * **Port**: The port of the database server
      * **SSL Mode:** The connection requires `sslmode=require` for secure communication.
 3. **Copying Credentials**:
    * Use the copy icons next to each field to quickly copy the credentials for use in your database client or application.

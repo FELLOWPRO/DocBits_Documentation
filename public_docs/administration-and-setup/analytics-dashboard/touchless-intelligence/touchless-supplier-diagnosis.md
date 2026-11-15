@@ -11,7 +11,7 @@ Clique em um fornecedor na fila para abrir a sua página de diagnóstico.
 
 A página mostra:
 
-* **Quatro cartões de resultados finais**: Pure Touchless, AP Touchless, AP Assisted e exceção de processo; cada um abre os documentos.
+* **Quatro cartões de resultados finais**: Pure Touchless, AP Touchless, AP assisted e exceção de processo; cada um abre os documentos.
 * **A tendência** com o seu próprio seletor de período: 30 dias, 90 dias, 6 meses, 1 ano ou um intervalo personalizado (até dois anos). Isso altera apenas o gráfico.
 * **Clusters de problemas** (veja abaixo).
 * **Change history** (histórico de alterações): as alterações que você aplicou para este fornecedor e o que elas fizeram.

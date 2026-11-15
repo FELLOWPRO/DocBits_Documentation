@@ -11,12 +11,12 @@ Kliknij dostawcę w kolejce, aby otworzyć stronę jego diagnozy.
 
 Strona pokazuje:
 
-* **Cztery kafelki wyników końcowych**: Pure Touchless, AP Touchless, AP Assisted i wyjątek procesu; każdy otwiera dokumenty.
+* **Cztery kafelki wyników końcowych**: Pure Touchless, AP Touchless, AP assisted i wyjątek procesu; każdy otwiera dokumenty.
 * **Trend** z własnym wyborem okresu: 30 dni, 90 dni, 6 miesięcy, 1 rok lub zakres niestandardowy (do dwóch lat). Zmienia to tylko wykres.
 * **Klastry problemów** (patrz niżej).
 * **Historia zmian** (Change history): zmiany zastosowane dla tego dostawcy i ich efekt.
-* **Ostatnie przykłady** (Recent examples): przykładowe dokumenty w dwóch kartach: **Wymagały uwagi** (Needed attention) i **Przeszły touchless** (Went touchless).
-* **Diagnozuj dostawcę z AI** (Diagnose supplier with AI): analizuje wszystkie klastry dostawcy (administratorzy).
+* **Ostatnie przykłady** (Recent examples): przykładowe dokumenty w dwóch kartach: **Needed attention** i **Went touchless**.
+* **Diagnose supplier with AI**: analizuje wszystkie klastry dostawcy (administratorzy).
 
 Krótka notatka wyjaśnia pustą stronę, na przykład: *5 dokumentów tego dostawcy jest jeszcze przetwarzanych i nie ma jeszcze wyniku analizy* lub *Wszystkie 40 zakończonych dokumentów tego dostawcy przeszło touchless: nie ma czego diagnozować.*
 
@@ -24,45 +24,45 @@ Krótka notatka wyjaśnia pustą stronę, na przykład: *5 dokumentów tego dost
 
 **Klaster** (cluster) grupuje dokumenty jednego dostawcy, które zatrzymały się z **tego samego pierwszego powodu**. Zamiast 40 pojedynczych problemów widzisz „3 problemy".
 
-<figure><img src="../../../.gitbook/assets/touchless-issue-cluster-pl.png" alt="Otwarta karta klastra problemów z pierwszą blokadą, tym co zmienić i propozycją zmiany"><figcaption><p>Otwarta karta klastra: pierwsza blokada, <strong>Co zmienić</strong> (What to change) i <strong>Propozycja zmiany</strong> (Change proposal) z ryzykiem, zakresem i otwartymi pytaniami. Tutaj klaster obejmuje 58 dokumentów i jest wart +18,7 pp. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-issue-cluster-pl.png" alt="Otwarta karta klastra problemów z pierwszą blokadą, tym co zmienić i propozycją zmiany"><figcaption><p>Otwarta karta klastra: pierwsza blokada, <strong>What to change</strong> i <strong>Change proposal</strong> z ryzykiem, zakresem i otwartymi pytaniami. Tutaj klaster obejmuje 58 dokumentów i jest wart +18,7 pp. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
 
 **Przykładowy klaster (poglądowy).**
 
-* **Nagłówek**: *Brak wymaganego pola* na etapie *Walidacja pól*
-* **Dotyczy**: 28 dokumentów. **Do odzyskania**: 28 dokumentów. **Oczekiwany wzrost**: +2,8 pp
-* **Podejrzewana przyczyna**: dostawca drukuje numer PO pod tabelą, gdzie ekstrakcja nie szuka
-* **Następna kontrola**: porównaj numer zamówienia na oryginale i w odczycie, następnie konfigurację ekstrakcji przed proponowaniem zmian
-* **Właściciel**: Konsultant. **Pewność**: Średnia. **Źródło**: Hipoteza
+* **Headline**: *Required field missing* na etapie *Field Validation*
+* **Affected**: 28 dokumentów. **Recoverable**: 28 dokumentów. **Expected lift**: +2,8 pp
+* **Suspected cause**: dostawca drukuje numer PO pod tabelą, gdzie ekstrakcja nie szuka
+* **What to check next**: porównaj numer zamówienia na oryginale i w odczycie, następnie konfigurację ekstrakcji przed proponowaniem zmian
+* **Owner**: Consultant. **Confidence**: Medium. **Source**: Hypothesis
 
 Co pokazuje karta klastra:
 
 | Część | Znaczenie |
 | --- | --- |
-| **Pierwsza blokada** (First blocker) i **etap** | Powód i etap potoku, na którym dokumenty się zatrzymują. Powodów jest ponad 30, na przykład *Nie zidentyfikowano dostawcy*, *Nie znaleziono zamówienia zakupu*, *Cena jednostkowa poza tolerancją PO*, *Odrzucone przez ERP*, *Walidacja e-faktury nie powiodła się* |
-| **Dotyczy / Do odzyskania / Oczekiwany wzrost** (Affected / Recoverable / Expected lift) | Ile dokumentów, ile można odzyskać, ile punktów procentowych by to dało |
-| **Podejrzewana przyczyna / Potwierdzona przyczyna** (Suspected cause / Confirmed cause) | Co według DocBits (lub według człowieka, który to potwierdził) jest powodem |
-| **Dowody** i **Brakujące dowody** (Evidence, Missing evidence) | Na czym opiera się ustalenie i czego DocBits **nie** mógł ustalić. Przeczytaj **Brakujące dowody**, zanim zaufasz reszcie |
-| **Co zmienić** | Konkretne kroki z linkami **Otwórz** do ustawień. Etykieta podaje rodzaj: *Zmiana konfiguracji*, *Zmiana danych podstawowych*, *Zmiana szablonu dostawcy*, *Zmiana procesu*, *Wymagane działanie dostawcy*, *Nie do naprawienia* |
-| **Właściciel** (Owner) | DocBits, Klient, Konsultant, Dostawca lub Nieprzypisany |
-| **Przykładowe dokumenty** (Sample documents) | Prawdziwe dokumenty klastra do obejrzenia |
+| **First blocker** i **stage** | Powód i etap potoku, na którym dokumenty się zatrzymują. Powodów jest ponad 30, na przykład *Supplier not identified*, *Purchase order not found*, *Unit price outside PO tolerance*, *Rejected by the ERP*, *E-invoice validation failed* |
+| **Affected / Recoverable / Expected lift** | Ile dokumentów, ile można odzyskać, ile punktów procentowych by to dało |
+| **Suspected cause / Confirmed cause** | Co według DocBits (lub według człowieka, który to potwierdził) jest powodem |
+| **Evidence** i **Missing evidence** | Na czym opiera się ustalenie i czego DocBits **nie** mógł ustalić. Przeczytaj **Missing evidence**, zanim zaufasz reszcie |
+| **What to change** | Konkretne kroki z linkami **Open** do ustawień. Etykieta podaje rodzaj: *Configuration change*, *Master data change*, *Supplier template change*, *Process change*, *Supplier action needed*, *Not fixable* |
+| **Owner** | DocBits, Customer, Consultant, Supplier or Unassigned |
+| **Sample documents** | Prawdziwe dokumenty klastra do obejrzenia |
 
-**Do naprawy w DocBits** i **Tylko działanie dostawcy** są pokazane w dwóch grupach. W przypadku *Tylko działanie dostawcy* nic w DocBits nie zmienia wyniku: dostawca musi poprawić dokument i wysłać go ponownie.
+**Fixable in DocBits** i **Supplier action only** są pokazane w dwóch grupach. W przypadku *Supplier action only* nic w DocBits nie zmienia wyniku: dostawca musi poprawić dokument i wysłać go ponownie.
 
 ### Skąd pochodzi rekomendacja
 
-Każda przyczyna pokazuje swoje **źródło**, dzięki czemu odróżnisz ustalenie wyprowadzone od domysłu:
+Każda przyczyna pokazuje swoje **source**, dzięki czemu odróżnisz ustalenie wyprowadzone od domysłu:
 
 | Źródło | Znaczenie |
 | --- | --- |
-| **Deterministyczne** / **Oparte na regułach** (Deterministic / Rule-based) | Wyprowadziła je reguła z zarejestrowanych dowodów potoku. Nie użyto modelu językowego |
-| **Hipoteza** (Hypothesis) | Zaproponował ją model językowy na podstawie dowodów klastra. Traktuj ją jako trop i sprawdź, zanim zadziałasz |
-| **Potwierdzone** (Confirmed) | Człowiek przejrzał dowody i potwierdził przyczynę |
+| **Deterministic** / **Rule-based** | Wyprowadziła je reguła z zarejestrowanych dowodów potoku. Nie użyto modelu językowego |
+| **Hypothesis** | Zaproponował ją model językowy na podstawie dowodów klastra. Traktuj ją jako trop i sprawdź, zanim zadziałasz |
+| **Confirmed** | Człowiek przejrzał dowody i potwierdził przyczynę |
 
-Teksty AI są pisane w języku Twojej organizacji. Jeśli klaster został przeanalizowany w innym języku, użyj **Analizuj w tym języku** (Analyse in this language).
+Teksty AI są pisane w języku Twojej organizacji. Jeśli klaster został przeanalizowany w innym języku, użyj **Analyse in this language**.
 
 ## Klastry dopasowania PO
 
-Jeśli pierwszą blokadą klastra jest powód związany z dopasowaniem PO (na przykład *Niezgodność pozycji PO* lub *Nie znaleziono zamówienia zakupu*), karta klastra pokazuje, jak DocBits próbuje dopasować fakturę do zamówienia zakupu. Zobacz [Diagnoza dopasowania PO](touchless-po-matching-diagnosis.md).
+Jeśli pierwszą blokadą klastra jest powód związany z dopasowaniem PO (na przykład *Niezgodność pozycji PO* lub *Purchase order not found*), karta klastra pokazuje, jak DocBits próbuje dopasować fakturę do zamówienia zakupu. Zobacz [Diagnoza dopasowania PO](touchless-po-matching-diagnosis.md).
 
 ## Kto powinien poprawić dane?
 

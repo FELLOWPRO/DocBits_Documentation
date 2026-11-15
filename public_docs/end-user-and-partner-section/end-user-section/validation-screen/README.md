@@ -76,6 +76,10 @@ El botón **Asistente** situado encima de los campos muestra los problemas de va
 
 Los campos con una búsqueda configurada pueden consultar proveedores, pedidos u otros datos maestros. Abre la búsqueda del campo, filtra los resultados y selecciona el registro correcto. La selección puede rellenar varios campos relacionados: revísalos también. Estos valores proceden de los datos maestros y pueden diferir del texto impreso. Consulta [Datos difusos](fuzzy-data.md).
 
+### Campos de solo lectura
+
+Un campo de solo lectura no ofrece el control de búsqueda. El modo de solo lectura puede deberse a un documento bloqueado, a tus permisos de campo o a la propia configuración del campo. Ese campo conserva el valor que le escribe una regla o el diseño; comprueba ese valor en lugar de volver a buscarlo.
+
 ## Revisar las líneas de factura
 
 Si el diseño incluye tablas, compara filas, descripciones, cantidades, precios e importes con el documento. **TABLA EXTRAÍDA** y **TABLA AI EXTRAÍDA** son vistas de extracción diferentes. Su disponibilidad depende de los métodos activados y del diseño. Una pestaña vacía o ausente no explica por sí sola un problema de extracción.

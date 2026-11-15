@@ -76,6 +76,10 @@ Die Schaltfläche **Assistent** über den Feldern zeigt offene Prüfhinweise. Ö
 
 Felder mit einer eingerichteten Stammdatensuche können Lieferanten, Bestellungen oder andere Stammdaten durchsuchen. Öffne die Suchfunktion am Feld, grenze die Treffer ein und wähle den richtigen Datensatz. Dabei können mehrere verbundene Felder befüllt werden; kontrolliere diese ebenfalls. Die Werte stammen aus den Stammdaten und müssen nicht dem gedruckten Wortlaut entsprechen. Siehe [Fuzzy-Daten](fuzzy-data.md).
 
+### Schreibgeschützte Felder
+
+Ein schreibgeschütztes Feld bietet die Suchfunktion nicht an. Schreibgeschützt kann von einem gesperrten Dokument, von deinen Feldberechtigungen oder von der Feldkonfiguration selbst kommen. Ein solches Feld behält den Wert, den eine Regel oder das Layout hineinschreibt; prüfe diesen Wert, statt ihn erneut zu suchen.
+
 ## Rechnungspositionen prüfen
 
 Enthält das Layout Tabellen, vergleiche die gelesenen Zeilen, Beschreibungen, Mengen, Preise und Beträge mit dem Beleg. **Extrahierte Tabelle** und **KI Extrahierte Tabelle** sind verschiedene Extraktionsansichten. Ihre Verfügbarkeit hängt von den aktivierten Verfahren und dem Layout ab. Ein leerer oder fehlender Reiter erklärt allein noch nicht die Ursache eines Extraktionsproblems.

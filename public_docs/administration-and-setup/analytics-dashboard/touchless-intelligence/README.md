@@ -33,7 +33,7 @@ Questi casi didattici spiegano le funzioni del report. Una raccomandazione o un'
 
 **Settings → Module → Dashboards & Analytics**: qui un amministratore gestisce le quattro impostazioni dell'organizzazione che il report legge. Determinano l'obiettivo e la vista dei costi; un campo vuoto significa che DocBits usa il valore predefinito.
 
-| Impostazione | Predefinito | Che cosa controlla |
+| Setting | Default | What it controls |
 | --- | --- | --- |
 | Touchless target | 70 % | La quota di documenti che dovrebbe passare senza interventi di elaborazione. Il report la usa come contrassegno dell'obiettivo nel grafico del tasso. |
 | Minutes per AP intervention | 6 min | Il tempo necessario a un addetto AP per correggere e rilasciare un documento. |
@@ -44,7 +44,7 @@ L'API ricontrolla i valori memorizzati e usa il valore predefinito per un valore
 
 ## Accesso
 
-Questa area appartiene alla [Dashboard di analisi](..). Gli amministratori hanno accesso; gli altri utenti necessitano della concessione del ruolo corrispondente. Analisi IA, modifiche supportate e report di consulenza possono richiedere diritti di amministratore.
+Questa area appartiene alla [Analytics Dashboard](../). Gli amministratori hanno accesso; gli altri utenti necessitano della concessione del ruolo corrispondente. Analisi IA, modifiche supportate e report di consulenza possono richiedere diritti di amministratore.
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 <!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

@@ -11,7 +11,7 @@ Clique em um fornecedor na fila para abrir a sua página de diagnóstico.
 
 A página mostra:
 
-* **Quatro cartões de resultados finais**: Pure Touchless, AP Touchless, AP Assisted e exceção de processo; cada um abre os documentos.
+* **Quatro cartões de resultados finais**: Pure Touchless, AP Touchless, AP assisted e exceção de processo; cada um abre os documentos.
 * **A tendência** com o seu próprio seletor de período: 30 dias, 90 dias, 6 meses, 1 ano ou um intervalo personalizado (até dois anos). Isso altera apenas o gráfico.
 * **Clusters de problemas** (veja abaixo).
 * **Change history** (histórico de alterações): as alterações que você aplicou para este fornecedor e o que elas fizeram.
@@ -31,7 +31,7 @@ Um **cluster** agrupa os documentos de um fornecedor que pararam pelo **mesmo pr
 * **Headline**: *Required field missing* na etapa *Field Validation*
 * **Affected**: 28 documentos. **Recoverable**: 28 documentos. **Expected lift**: +2,8 pp
 * **Suspected cause**: o fornecedor imprime o número do PO abaixo da tabela, onde a extração não procura
-* **Próxima verificação**: compare o número de encomenda impresso e extraído, depois a configuração de extração antes de propor alterações
+* **What to check next**: compare o número de encomenda impresso e extraído, depois a configuração de extração antes de propor alterações
 * **Owner**: Consultant. **Confidence**: Medium. **Source**: Hypothesis
 
 O que um cartão de cluster mostra:

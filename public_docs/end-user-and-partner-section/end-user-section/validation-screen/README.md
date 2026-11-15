@@ -76,6 +76,10 @@ Le bouton **Assistant** au-dessus des champs indique les problèmes de validatio
 
 Les champs disposant d’une recherche configurée peuvent consulter les fournisseurs, commandes ou autres données de référence. Ouvrez la recherche du champ, filtrez les résultats et sélectionnez le bon enregistrement. Plusieurs champs liés peuvent être renseignés : contrôlez-les également. Ces valeurs proviennent du référentiel et peuvent différer du libellé imprimé. Voir [Données floues](fuzzy-data.md).
 
+### Champs en lecture seule
+
+Un champ en lecture seule ne propose pas la commande de recherche. La lecture seule peut provenir d'un document verrouillé, de vos droits sur les champs ou de la configuration du champ elle-même. Un tel champ conserve la valeur qu'une règle ou la mise en page y écrit ; contrôlez cette valeur au lieu de la rechercher à nouveau.
+
 ## Vérifier les lignes de facture
 
 Si la mise en page comprend des tableaux, comparez lignes, descriptions, quantités, prix et montants avec le document. **TABLEAU EXTRAIT** et **TABLEAU EXTRAIT IA** correspondent à des vues d’extraction différentes. Leur disponibilité dépend des méthodes activées et de la mise en page. Un onglet vide ou absent ne suffit pas à expliquer un problème d’extraction.

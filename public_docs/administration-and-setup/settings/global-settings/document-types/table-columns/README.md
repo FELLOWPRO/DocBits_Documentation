@@ -4,7 +4,7 @@ Les Table Columns définissent les colonnes du tableau des lignes d'un type de d
 
 **Où :** Settings → Document Processing → Document Types → Table Columns
 
-<figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-fr-20261104.png" alt="Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n&#x27;a été modifiée. Les cellules de titre sont masquées pour protéger les données."><figcaption><p>Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n&#x27;a été modifiée. Les cellules de titre sont masquées pour protéger les données.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-fr-20261104.png" alt="Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n'a été modifiée. Les cellules de titre sont masquées pour protéger les données."><figcaption><p>Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n'a été modifiée. Les cellules de titre sont masquées pour protéger les données.</p></figcaption></figure>
 
 ## Ce que vous voyez
 

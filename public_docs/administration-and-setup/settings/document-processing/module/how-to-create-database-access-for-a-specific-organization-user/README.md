@@ -14,7 +14,7 @@
 
 1. Em **Configurações**, localize a seção **Document Processing**.
 2. Em **Document Processing**, encontre e clique na opção **Module**.
-   * Isso abrirá a página de configuração do módulo, onde você pode prosseguir com a criação do usuário para o banco de dados.
+   * Isso abrirá a página de configuração do módulo, onde você pode criar um usuário para o banco de dados.
 
 ### 4. Passos para ativar e acessar o AI Document e o usuário do banco de dados: <a href="#id-4.-steps-to-enable-and-access-the-ai-document-and-database-user" id="id-4.-steps-to-enable-and-access-the-ai-document-and-database-user"></a>
 
@@ -28,7 +28,7 @@
      * **Password**: certifique-se de armazenar ou copiar a senha com segurança
      * **Database**: o nome do banco de dados
      * **Host**: o nome do host
-     * **Port**: a porta
+     * **Port**: a porta do servidor de base de dados
      * **SSL Mode:** a conexão exige `sslmode=require` para uma comunicação segura.
 3. **Copie as credenciais**:
    * Use os ícones de cópia ao lado de cada campo para copiar rapidamente as credenciais e usá-las no seu cliente de banco de dados ou aplicativo.

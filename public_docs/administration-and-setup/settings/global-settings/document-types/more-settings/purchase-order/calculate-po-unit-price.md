@@ -1,4 +1,4 @@
-# Bereken PO eenheidsprijs
+# Bereken PO-eenheidsprijs
 
 ## **Overzicht**
 
@@ -8,42 +8,47 @@ Je kunt ervoor kiezen om de **eenheidsprijs** van elke inkooporderregel automati
 
 1.  Navigeer naar **Settings** -> **Document Processing** -> **Document Types**.
 
-2.  Selecteer het gewenste documenttype en open de aanvullende instellingen via het **tandwiel**.
+2.  Selecteer het gewenste documenttype en klik op **More Settings**.
 
-    <figure><img src="../../../../../../.gitbook/assets/prior-u044-nl.png" alt="Documenttype Factuur met het tandwiel voor aanvullende instellingen."><figcaption><p>Documenttype Factuur met het tandwiel voor aanvullende instellingen.</p></figcaption></figure>
-3.  Schakel in de sectie **Purchase Order** de optie **Bereken PO-eenheidsprijs** in.
+    <figure><img src="../../../../../../.gitbook/assets/prior-u044-nl.png" alt="Toegang tot de aanvullende instellingen van het documenttype Factuur."><figcaption><p>Toegang tot de aanvullende instellingen van het documenttype Factuur.</p></figcaption></figure>
+3.  Schakel in de sectie **Purchase Order** de optie **Calculate PO Unit Price** in.
 
-    <figure><img src="../../../../../../.gitbook/assets/prior-u045-nl.png" alt="Inkooporderinstellingen met Bereken PO-eenheidsprijs; er is geen instelling gewijzigd."><figcaption><p>Inkooporderinstellingen met Bereken PO-eenheidsprijs; er is geen instelling gewijzigd.</p></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u045-nl.png" alt="Instellingen voor al gebruikte inkooporderregels."><figcaption><p>Instellingen voor al gebruikte inkooporderregels.</p></figcaption></figure>
 
 ## Hoe de prijs wordt berekend
 
 Zodra de instelling is geactiveerd, wordt de eenheidsprijs van een inkooporderregel als volgt berekend:
 
-**`Eenheidsprijs = Regelbedrag ÷ Hoeveelheid × Eenheidsprijs Per`**
+**`Unit Price = Line Amount ÷ Quantity × Unit Price Per`**
 
 waarbij het **regelbedrag** als volgt wordt gekozen:
 
-| Inkooporderregel bevat                                                                   | Gebruikt regelbedrag                  |
-| ---------------------------------------------------------------------------------------- | ------------------------------------ |
-| een **netto bedrag** (`extended_amount`) dat groter is dan 0 en niet boven het regel totaal uitkomt | het netto bedrag                     |
-| geen netto bedrag, of een netto bedrag boven het regel totaal                            | het regel **totaal** (`total_amount`) |
-| geen positief bedrag, of geen positieve hoeveelheid                                      | er wordt niets berekend, de PO-prijs blijft |
+| De inkooporderregel bevat                                                                      | Gebruikt regelbedrag                   |
+| ---------------------------------------------------------------------------------------------- | -------------------------------------- |
+| een **nettobedrag** (`extended_amount`) dat groter is dan 0 en niet boven het regeltotaal ligt  | het nettobedrag                        |
+| geen nettobedrag, of een nettobedrag boven het regeltotaal                                      | het **totaal** van de regel (`total_amount`) |
+| geen positief bedrag, of geen positieve hoeveelheid                                             | er wordt niets berekend, de PO-prijs blijft |
 
-Waarom het netto bedrag eerst komt: ERP-feeds (Infor BODs) sturen het netto regelbedrag als `extended_amount` en bevatten **belasting en toeslagen erbovenop** in `total_amount`. Het delen van een belast totaal door de hoeveelheid geeft een bruto eenheidsprijs, en elke factuur die netto wordt geprijsd, toont dan als _eenheidsprijs te laag_ hoewel deze correct is. Voorbeeld van een echte inkooporderregel: hoeveelheid 9, netto bedrag 879,84, totaal 954,63 (8,5% belasting) — de netto-gebaseerde prijs is 97,76 en komt overeen met de factuur; de totaal-gebaseerde prijs zou 106,07 zijn.
+Waarom het nettobedrag voorrang heeft: ERP-feeds (Infor BODs) sturen het netto regelbedrag als `extended_amount` en zetten **belastingen en kosten er bovenop** in `total_amount`. Een belast totaal door de hoeveelheid delen geeft een bruto eenheidsprijs, en elke factuur die netto is geprijsd verschijnt dan als _eenheidsprijs te laag gematcht_ terwijl hij correct is. Voorbeeld uit een echte inkooporderregel: hoeveelheid 9, nettobedrag 879,84, totaal 954,63 (8,5 % belasting) — de netto-gebaseerde prijs is 97,76 en komt overeen met de factuur; de totaal-gebaseerde prijs zou 106,07 zijn.
 
-Een netto bedrag dat **groter** is dan het regel totaal kan geen netto bedrag zijn, dus wordt in dat geval het totaal gebruikt. Een `Eenheidsprijs Per` van 0 of leeg telt als 1.
+Een nettobedrag dat **groter** is dan het regeltotaal kan geen nettobedrag zijn, dus in dat geval wordt het totaal gebruikt. Een `Unit Price Per` van 0 of leeg telt als 1.
 
 {% hint style="info" %}
-De berekende prijs wordt weggeschreven naar de inkoopordersnapshot die op het document wordt opgeslagen, en deze wordt **elke keer dat het document wordt gematcht opnieuw berekend** (Auto PO Match, handmatige match, matchen bij opslaan). Een document dat vóór het wijzigen van de instelling al was gematcht, neemt de nieuwe prijs op bij de volgende match — herladen van de inkooporder is niet nodig.
+De berekende prijs wordt geschreven naar de inkooporder-snapshot die bij het document wordt opgeslagen, en hij wordt **opnieuw berekend telkens wanneer het document wordt gematcht** (Auto PO Match, handmatige match, matchen bij opslaan). Een document dat is gematcht voordat de instelling werd gewijzigd, neemt de nieuwe prijs dus over bij de volgende match — de inkooporder hoeft niet opnieuw te worden geladen.
 {% endhint %}
 
-## Voorbeeld:
+## Rekenvoorbeeld
 
-In dit geval wordt de eenheidsprijs (zonder de korting) uit het document gehaald, terwijl de inkooporder in het ERP de eenheidsprijs met de korting opslaat. Dit resulteert in een mismatch in de eenheidsprijs. Met de instelling geactiveerd wordt de eenheidsprijs in plaats daarvan genomen uit het regelbedrag en de hoeveelheid, zodat beide kanten overeenkomen.
+Voor een hoeveelheid van 9 en Unit Price Per = 1:
+
+| Basis van het bedrag | Berekening | Eenheidsprijs |
+| --- | --- | --- |
+| Netto regelbedrag | 879,84 ÷ 9 × 1 | 97,76 |
+| Totaal inclusief 8,5 % belasting | 954,63 ÷ 9 × 1 | 106,07 |
+
+Vergelijking met een netto geprijsde factuur vraagt in dit voorbeeld de netto eenheidsprijs van 97,76.
 
 ## Gerelateerde instellingen
 
 * [Regels voor het matchen van inkooporders](purchase-order-matching-rules.md) — de regels vergelijken de **effectieve** eenheidsprijs, wat deze berekende prijs is wanneer de instelling aan staat.
 * [Instellingen voor inkoopordertolerantie](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — hoeveel de factuurprijs mag afwijken van de berekende prijs.
-
-Voorbeeld met aantal 9 en prijsbasis 1: 879,84 ÷ 9 × 1 = 97,76 netto-eenheidsprijs. Het totaal 954,63 inclusief 8,5% belasting geeft 106,07. Vergelijk bij een factuur met nettoprijzen de netto-eenheidsprijs.

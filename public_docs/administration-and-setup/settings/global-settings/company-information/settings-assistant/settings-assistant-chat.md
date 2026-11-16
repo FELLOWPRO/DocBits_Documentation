@@ -164,10 +164,10 @@ Asystent nigdy nie zmienia niczego samodzielnie. Każda zmiana przebiega według
 
 1. **Preview**: widzisz ustawienie, jego zakres (**Organization**) i wartość **current → proposed**. Nic nie jest jeszcze zapisane.
 2. **Twoje potwierdzenie**: klikasz **Confirm** (lub **Yes**). Może to zrobić tylko administrator organizacji.
-3. **Wiersz z wynikiem**: czat pokazuje **Changed: (setting) → (value)**.
+3. **Result line**: czat pokazuje **Changed: (setting) → (value)**.
 4. **Undo**: przycisk z odliczaniem (na przykład „14 min left") pozwala wycofać zmianę w ciągu 15 minut. Zmiana jest też zapisywana w logu.
 
-**Przykład (poglądowy).** Karta rekomendacji dla ustawienia, które asystent może zapisać, pokazuje przycisk **Apply** obok **Open setting**. Załóżmy, że karta dotyczy **Auto export if PO matched 100%**. Klikasz **Apply**. Okno **Apply this change?** pokazuje *Current: Off → Proposed: On*. Klikasz **Confirm**. Pojawia się komunikat **Setting updated.** z przyciskiem **Undo**. Jeśli zauważysz pomyłkę w ciągu około 15 minut, klikasz **Undo** i stara wartość wraca. Karty bez przycisku **Apply** służą tylko do nawigacji: użyj **Open setting** i zmień wartość samodzielnie.
+**Example (illustrative).** Karta rekomendacji dla ustawienia, które asystent może zapisać, pokazuje przycisk **Apply** obok **Open setting**. Załóżmy, że karta dotyczy **Auto export if PO matched 100%**. Klikasz **Apply**. Okno **Apply this change?** pokazuje *Current: Off → Proposed: On*. Klikasz **Confirm**. Pojawia się komunikat **Setting updated.** z przyciskiem **Undo**. Jeśli zauważysz pomyłkę w ciągu około 15 minut, klikasz **Undo** i stara wartość wraca. Karty bez przycisku **Apply** służą tylko do nawigacji: użyj **Open setting** i zmień wartość samodzielnie.
 
 Jeśli wartość zmieniła się od otwarcia okna, widzisz *This setting changed since you opened this dialog. Preview it again.* i nic nie zostaje zastosowane.
 

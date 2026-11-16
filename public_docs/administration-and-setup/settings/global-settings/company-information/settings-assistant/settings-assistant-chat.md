@@ -2,7 +2,7 @@
 
 ## Przegląd
 
-Czat **Settings Assistant** odpowiada na pytania o Twoje ustawienia, ostrzega, gdy import przestaje działać, i, po Twoim potwierdzeniu, zmienia za Ciebie ustawienie. Zanim go użyjesz, administrator musi [włączyć asystenta](./).
+Czat **Settings Assistant** odpowiada na pytania o Twoje ustawienia, ostrzega, gdy import przestaje działać, i, po Twoim potwierdzeniu, zmienia za Ciebie ustawienie. Zanim go użyjesz, administrator musi [włączyć asystenta](../settings-assistant.md).
 
 ### Co potrafi
 

@@ -165,7 +165,7 @@ Asystent nigdy nie zmienia niczego samodzielnie. Każda zmiana przebiega według
 1. **Preview**: widzisz ustawienie, jego zakres (**Organization**) i wartość **current → proposed**. Nic nie jest jeszcze zapisane.
 2. **Twoje potwierdzenie**: klikasz **Confirm** (lub **Yes**). Może to zrobić tylko administrator organizacji.
 3. **Wiersz z wynikiem**: czat pokazuje **Changed: (setting) → (value)**.
-4. **Undo**: przycisk z odliczaniem („14 min left") pozwala wycofać zmianę. Zmiana jest też zapisywana w logu.
+4. **Undo**: przycisk z odliczaniem (na przykład „14 min left") pozwala wycofać zmianę w ciągu 15 minut. Zmiana jest też zapisywana w logu.
 
 **Przykład (poglądowy).** Karta rekomendacji dla ustawienia, które asystent może zapisać, pokazuje przycisk **Apply** obok **Open setting**. Załóżmy, że karta dotyczy **Auto export if PO matched 100%**. Klikasz **Apply**. Okno **Apply this change?** pokazuje *Current: Off → Proposed: On*. Klikasz **Confirm**. Pojawia się komunikat **Setting updated.** z przyciskiem **Undo**. Jeśli zauważysz pomyłkę w ciągu około 15 minut, klikasz **Undo** i stara wartość wraca. Karty bez przycisku **Apply** służą tylko do nawigacji: użyj **Open setting** i zmień wartość samodzielnie.
 
@@ -225,5 +225,3 @@ Rozmowa przechowuje w Twojej przeglądarce ostatnie 50 tur. Pytanie może mieć 
 * [Asystent ustawień: włączanie](settings-assistant.md)
 * [Panel Analityczny](../../../analytics-dashboard.md)
 * [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md)
-
-<!-- Source notes (not shown): the assistant answers for custom validation rules and for PO tolerance / "why not matched" questions are weak on dev (tracked in the CORE project, CORE-6433), so this page shows only the greeting for validation and the PO matching status answer. Re-test and add answer screenshots after the fix. facts read from the doc2app code on dev (SettingsAssistant, AssistantChat components) and checked in the dev UI on 14 Oct 2026. "Fast tier, no organisation switch" and "documentation search not configured on Sandbox yet" come from the feature team (CORE-6379). Strings for the apply/action cards not verified in the UI are described, not quoted. -->

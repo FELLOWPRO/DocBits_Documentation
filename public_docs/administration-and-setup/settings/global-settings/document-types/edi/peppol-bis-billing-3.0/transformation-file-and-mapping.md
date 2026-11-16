@@ -370,7 +370,7 @@ Este archivo es responsable de extraer datos de un archivo XML Peppol BIS Billin
    * **Mapeado a**: `<INVOICE><BUYER_REFERENCE>`
    * **Puede aparecer varias veces**: No.
 
-2)  **Referencia de Facturación**
+2. **Referencia de Facturación**
 
     * **Fuente**: `//BillingReference`
     * **Mapeado a**: `<INVOICE><BILLING_REFERENCE>`

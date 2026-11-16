@@ -14,7 +14,7 @@
 
 1. In **Settings**, individua la sezione **Document Processing**.
 2. In **Document Processing**, trova e fai clic sull'opzione **Module**.
-   * Si aprirà la pagina di configurazione del modulo, dove puoi procedere con la creazione dell'utente per il database.
+   * Si aprirà la pagina di configurazione del modulo, dove puoi creare un utente per il database.
 
 ### 4. Passaggi per attivare e accedere all'utente AI Document e database: <a href="#id-4.-steps-to-enable-and-access-the-ai-document-and-database-user" id="id-4.-steps-to-enable-and-access-the-ai-document-and-database-user"></a>
 
@@ -28,7 +28,7 @@
      * **Password**: assicurati di conservare o copiare la password in modo sicuro.
      * **Database**: è il nome del database
      * **Host**: nome dell'host
-     * **Port**: è la porta
+     * **Port**: è la porta del server di database
      * **SSL Mode:** la connessione richiede `sslmode=require` per una comunicazione sicura.
 3. **Copia delle credenziali**:
    * Usa le icone di copia accanto a ciascun campo per copiare rapidamente le credenziali da usare nel tuo client di database o nella tua applicazione.

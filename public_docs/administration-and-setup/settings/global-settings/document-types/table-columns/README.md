@@ -1,10 +1,10 @@
 # Colonnes de tableau
 
-Table Columns définit les colonnes du tableau des lignes d'un type de document : ce que DocBits extrait dans chaque colonne, ce que l'utilisateur voit sur l'écran de validation et ce qui est envoyé à l'ERP lors de l'export.
+Les Table Columns définissent les colonnes du tableau des lignes d'un type de document : ce que DocBits extrait dans chaque colonne, ce que l'utilisateur voit sur l'écran de validation et ce qui est envoyé à l'ERP lors de l'export.
 
-**Where:** Settings → Document Processing → Document Types → Table Columns
+**Où :** Settings → Document Processing → Document Types → Table Columns
 
-<figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-fr-20261104.png" alt="Liste Use AI actuelle avec Default, Yes and No. Aucune option n'a été modifiée. Les cellules de titre sont masquées pour protéger les données."><figcaption><p>Liste Use AI actuelle avec Default, Yes and No. Aucune option n'a été modifiée. Les cellules de titre sont masquées pour protéger les données.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-fr-20261104.png" alt="Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n&#x27;a été modifiée. Les cellules de titre sont masquées pour protéger les données."><figcaption><p>Liste Use AI actuelle avec Par défaut, Oui et Non. Aucune option n&#x27;a été modifiée. Les cellules de titre sont masquées pour protéger les données.</p></figcaption></figure>
 
 ## Ce que vous voyez
 
@@ -51,9 +51,9 @@ Ouvrez les [colonnes de tableau](README.md) du bon type de document et du bon ta
 
 | Choix actuel | Effet sur le schéma de base |
 | --- | --- |
-| **Default · requested** ou **Default · not requested** | Applique la sélection DocBits pour ce type et ce nom de colonne. Par défaut ne signifie ni toujours activé ni toujours désactivé. |
-| **Yes · requested** | Demande explicitement cette colonne configurée à l'IA. |
-| **No · not requested** | L'exclut du schéma de base, même si elle est normalement demandée. |
+| **Default · demandé** ou **Default · non demandé** | Applique la sélection DocBits pour ce type et ce nom de colonne. Par défaut ne signifie ni toujours activé ni toujours désactivé. |
+| **Yes · demandé** | Demande explicitement cette colonne configurée à l'IA. |
+| **No · non demandé** | L'exclut du schéma de base, même si elle est normalement demandée. |
 
 Revenir à **Default** supprime le choix explicite. Une nouvelle colonne personnalisée n'appartient normalement pas à la sélection IA par défaut : choisissez **Yes** pour la demander. Les colonnes IA par défaut ne correspondent pas à toutes les colonnes fournies. Vérifiez l'effet affiché et l'aperçu.
 

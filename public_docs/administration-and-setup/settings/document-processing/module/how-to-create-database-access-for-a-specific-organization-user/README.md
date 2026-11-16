@@ -14,7 +14,7 @@
 
 1. W **Settings** znajdź sekcję **Document Processing**.
 2. W sekcji **Document Processing** znajdź i kliknij opcję **Module**.
-   * Otworzy to odpowiednią stronę konfiguracji modułu, na której możesz przejść do tworzenia użytkownika bazy danych.
+   * Otworzy to odpowiednią stronę konfiguracji modułu, na której możesz utworzyć użytkownika bazy danych.
 
 ### 4. Kroki umożliwiające włączenie i uzyskanie dostępu do AI Document oraz użytkownika bazy danych: <a href="#id-4.-steps-to-enable-and-access-the-ai-document-and-database-user" id="id-4.-steps-to-enable-and-access-the-ai-document-and-database-user"></a>
 
@@ -28,7 +28,7 @@
      * **Password**: Upewnij się, że hasło jest bezpiecznie przechowywane lub skopiowane.
      * **Database**: Nazwa bazy danych
      * **Host**: Nazwa hosta
-     * **Port**: Port
+     * **Port**: Port serwera bazy danych
      * **SSL Mode:** Połączenie wymaga `sslmode=require` dla bezpiecznej komunikacji.
 3. **Kopiowanie danych uwierzytelniających**:
    * Użyj ikon kopiowania obok każdego pola, aby szybko skopiować dane uwierzytelniające do klienta bazy danych lub aplikacji.

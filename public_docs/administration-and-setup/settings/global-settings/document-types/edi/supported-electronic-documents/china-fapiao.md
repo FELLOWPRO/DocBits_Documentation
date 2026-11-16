@@ -18,7 +18,7 @@ Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfig
 | **Standard** | Fapiao (发票), State Taxation Administration |
 | **Ustawienia regionalne** | `zh_CN` |
 
-Katalog obejmuje Fapiao, E-Fapiao, General VAT Invoice i Special VAT Invoice. Udokumentowany adapter używa przestrzeni nazw XML urn:china:tax:fapiao:1.0. Nie zakładaj, że każdy natywny plik OFD, PDF lub eksport z platformy podatkowej jest zgodny z tym kontraktem danych.
+Katalog obejmuje Fapiao, E-Fapiao, General VAT Invoice i Special VAT Invoice.
 
 | Wartość fapiao_type | Typ dokumentu |
 |-------------------|--------------|

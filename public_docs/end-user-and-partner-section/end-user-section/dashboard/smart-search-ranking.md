@@ -2,6 +2,10 @@
 
 智能搜索排序会把您真正要找的文档排在仪表板搜索结果的最前面。关键词搜索会找到所有包含该词的文档；智能搜索排序多做一步：AI 阅读靠前的结果，把真正与您的搜索相关的文档排在最前。精确匹配——发票号、订单号、供应商名称——始终排在最前面。
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/zh.mp4" %}
+仪表板中的智能搜索排序（中文解说）. [带字幕的播放器](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/zh.html) · [文字稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/features/smart-search-ranking/preview/zh.txt)
+{% endembed %}
+
 ## 有什么变化
 
 | | 关键词顺序 | 启用智能搜索排序 |

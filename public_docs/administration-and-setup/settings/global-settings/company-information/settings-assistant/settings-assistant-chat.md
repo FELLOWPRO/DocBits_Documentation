@@ -176,10 +176,10 @@ Jeśli wartość zmieniła się od otwarcia okna, widzisz *This setting changed 
 | Zmiana | Przykładowe polecenie (poglądowe) |
 | --- | --- |
 | Pojedyncze ustawienie organizacji (**Apply** na rekomendacji) | „Włącz automatyczne dopasowanie PO i eksport" |
-| Włączenie lub wyłączenie typów dokumentów | „Dezaktywuj typ dokumentu Dowód dostawy" |
+| Włączenie lub wyłączenie typów dokumentów | „Dezaktywuj typ dokumentu Delivery Note" |
 | Zmiana nazwy grupy dostępu | „Zmień nazwę grupy Kupcy na Zakupy" |
 | Tryb wyszukiwania pola wyszukiwania (Auto lub Manual) | „Wyszukuj dostawców ręcznie zamiast automatycznie" |
-| Usunięcie pola | „Usuń pole Miejsce powstawania kosztów" |
+| Usunięcie pola | „Usuń pole Cost Center" |
 | Utworzenie nieaktywnej reguły walidacji z katalogu | Otwórz stronę **Custom Validation Rules** i opisz kontrolę |
 | Utworzenie nieaktywnej reguły transformacji | „Utwórz regułę, która usuwa myślniki z numeru VAT dostawcy" |
 | Wyłączenie lub usunięcie połączenia importu | Użyj przycisków w karcie ustalenia |

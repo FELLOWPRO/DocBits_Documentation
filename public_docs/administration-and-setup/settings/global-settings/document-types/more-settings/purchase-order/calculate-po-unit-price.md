@@ -10,10 +10,10 @@
 
 2.  选择所需的文档类型，然后点击 **More Settings**。
 
-    <figure><img src="../../../../../../.gitbook/assets/prior-u044-zh.png" alt="打开发票文档类型的更多设置。 “Standard”和“Extraction”仍是当前界面保留的英文标签。"><figcaption><p>打开发票文档类型的更多设置。 “Standard”和“Extraction”仍是当前界面保留的英文标签。</p></figcaption></figure>
-3.  在 **Purchase Order** 部分，启用 **计算采购订单单价** 选项。
+    <figure><img src="../../../../../../.gitbook/assets/prior-u044-zh.png" alt="打开发票文档类型的更多设置。"><figcaption><p>打开发票文档类型的更多设置。</p></figcaption></figure>
+3.  在 **Purchase Order** 部分，启用 **Calculate PO Unit Price** 选项。
 
-    <figure><img src="../../../../../../.gitbook/assets/prior-u045-zh.png" alt="已使用采购订单行的状态设置。"><figcaption><p>已使用采购订单行的状态设置。</p></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u045-zh.png" alt="已使用采购订单行的设置。"><figcaption><p>已使用采购订单行的设置。</p></figcaption></figure>
 
 ## 价格计算方式
 
@@ -34,16 +34,21 @@
 净额如果**大于**行项目总额，就不能作为净额使用，此时改用总额。`Unit Price Per` 为 0 或为空时，按 1 处理。
 
 {% hint style="info" %}
-计算出的价格会写入存储在文档上的采购订单快照中，并且**每次匹配文档时都会重新计算**（自动采购订单匹配、手动匹配、保存时匹配）。因此，在更改此设置之前已匹配的文档会在下次匹配时使用新价格，无需重新加载采购订单。
+计算出的价格会写入存储在文档上的采购订单快照中，并且**每次匹配文档时都会重新计算**（Auto PO Match、手动匹配、保存时匹配）。因此，在更改此设置之前已匹配的文档会在下次匹配时使用新价格，无需重新加载采购订单。
 {% endhint %}
 
-## 示例：
+## 计算示例
 
-在此示例中，从文档中提取的是未折扣的单价，而 ERP 中的采购订单存储的是已应用折扣的单价，因此单价不匹配。启用此设置后，系统会改为根据行项目金额和数量计算单价，使两边的价格一致。
+数量为 9 且 Unit Price Per = 1 时：
+
+| 金额基准 | 计算 | 单价 |
+| --- | --- | --- |
+| 行项目净额 | 879.84 ÷ 9 × 1 | 97.76 |
+| 含 8.5% 税费的总额 | 954.63 ÷ 9 × 1 | 106.07 |
+
+在本示例中，与净价发票比较需要使用净单价 97.76。
 
 ## 相关设置
 
 * [采购订单匹配规则](purchase-order-matching-rules.md) — 这些规则比较的是**有效**单价；启用此设置时，有效单价就是计算得出的价格。
 * [采购订单容差设置](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — 设置发票价格与计算价格之间允许的偏差。
-
-数量为 9、价格基数为 1 时，879.84 ÷ 9 × 1 = 97.76，即未税单价。含 8.5% 税的总额 954.63 对应 106.07。对于未税价格的发票，应比较未税单价。

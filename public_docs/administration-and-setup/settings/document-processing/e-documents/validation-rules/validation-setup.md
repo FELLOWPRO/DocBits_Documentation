@@ -10,7 +10,7 @@
 
 ## 已接受的 XRechnung 版本
 
-**Accepted XRechnung versions**区域列出所有 XRechnung 版本。勾选您接受的版本——CustomizationID 不在此列表中的文档会在执行任何其他检查前被拒绝，并返回 `VAL-VERSION-NOT-ALLOWED`。列表为空表示“全部接受”。每个版本都会标记为 **current**、**deprecated** 或 **EOL**，并显示其发布日期。
+**Accepted XRechnung versions**区域列出所有 XRechnung 版本。勾选您接受的版本——CustomizationID 不在此列表中的文档会在执行任何其他检查前被拒绝，并返回 `VAL-VERSION-NOT-ALLOWED`。如果未勾选任何版本，则该区域处于关闭状态，所有版本都会被接受。每个版本都会标记为 **current**、**deprecated** 或 **EOL**，并显示其发布日期。
 
 ## 已接受的规范配置和严重级别模型 <a id="accepted-profiles-and-severity-model"></a>
 

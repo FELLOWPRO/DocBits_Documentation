@@ -33,10 +33,10 @@ Gesamtbetrag: $1,015.05
 
 Mengentoleranz: ±2%
 
-Stückpreistoleranz: ±1%\
+Stückpreistoleranz: ±1%
 
 
-Die Menge (101 Einheiten) und der Stückpreis ($10.05) liegen im Vergleich zur Bestellung innerhalb der zulässigen Toleranz. Das System führt folgende Schritte aus:\
+Die Menge (101 Einheiten) und der Stückpreis ($10.05) liegen im Vergleich zur Bestellung innerhalb der zulässigen Toleranz. Das System führt folgende Schritte aus:
 
 
 1\. **Rechnungswerte akzeptieren:** Menge und Stückpreis der Rechnung werden als gültig akzeptiert, da sie innerhalb der festgelegten Toleranzgrenzen liegen.

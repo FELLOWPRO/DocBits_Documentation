@@ -14,7 +14,7 @@
 
 1. Suchen Sie in den **Settings** den Abschnitt **Document Processing**.
 2. Suchen Sie unter **Document Processing** die Option **Module** und klicken Sie darauf.
-   * Damit öffnet sich die zugehörige Modulkonfigurationsseite, auf der Sie mit der Erstellung des Benutzers für die Datenbank fortfahren können.
+   * Damit öffnet sich die zugehörige Modulkonfigurationsseite, auf der Sie einen Benutzer für die Datenbank anlegen können.
 
 ### 4. Schritte zum Aktivieren und Aufrufen des KI-Dokument- und Datenbankbenutzers: <a href="#id-4.-steps-to-enable-and-access-the-ai-document-and-database-user" id="id-4.-steps-to-enable-and-access-the-ai-document-and-database-user"></a>
 
@@ -28,7 +28,7 @@
      * **Password**: Stellen Sie sicher, dass das Passwort sicher gespeichert oder kopiert wird.
      * **Database**: Der Name der Datenbank.
      * **Host**: Der Hostname.
-     * **Port**: Der Port.
+     * **Port**: Der Port des Datenbankservers.
      * **SSL Mode:** Die Verbindung erfordert `sslmode=require` für eine sichere Kommunikation.
 3. **Zugangsdaten kopieren**:
    * Mit den Kopiersymbolen neben den einzelnen Feldern kopieren Sie die Zugangsdaten schnell zur Verwendung in Ihrem Datenbank-Client oder Ihrer Anwendung.

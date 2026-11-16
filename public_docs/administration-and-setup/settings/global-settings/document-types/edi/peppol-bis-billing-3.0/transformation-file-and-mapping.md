@@ -370,7 +370,7 @@ Diese Datei ist dafür verantwortlich, Daten aus einer PEPPOL BIS Billing 3.0 XM
    * **Zugeordnet zu**: `<INVOICE><BUYER_REFERENCE>`
    * **Kann mehrfach vorkommen**: Nein.
 
-2)  **Abrechnungsreferenz**
+2. **Abrechnungsreferenz**
 
     * **Quelle**: `//BillingReference`
     * **Zugeordnet zu**: `<INVOICE><BILLING_REFERENCE>`

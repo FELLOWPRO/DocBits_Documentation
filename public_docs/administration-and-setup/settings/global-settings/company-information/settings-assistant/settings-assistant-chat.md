@@ -74,7 +74,7 @@ Otwierasz **Settings → Document Types** i pytasz **„Czy dopasowanie PO jest 
 Asystent odczytuje ustawienie dla typu dokumentu i dodaje ustawienia, które z nim się wiążą. W tym przykładzie dopasowanie jest włączone, ale automatyczny eksport po 100-procentowym dopasowaniu jest wyłączony, więc dopasowane faktury nadal czekają na człowieka. Każda karta ma przycisk **Open setting**.
 
 * Do **reguł dopasowania i tolerancji** użyj strony [Zasady Dopasowywania Zamówień Zakupu](../../document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
-* Aby zobaczyć, **dlaczego dokumenty dostawcy nie są dopasowywane**, otwórz [Touchless Intelligence: Diagnoza dopasowania PO](../../../../touchless-po-matching-diagnosis.md). Pokazuje powód, dotknięte dokumenty i schemat decyzyjny.
+* Aby zobaczyć, **dlaczego dokumenty dostawcy nie są dopasowywane**, otwórz [Touchless Intelligence: Diagnoza dopasowania PO](../../../../analytics-dashboard/touchless-intelligence/touchless-po-matching-diagnosis.md). Pokazuje powód, dotknięte dokumenty i schemat decyzyjny.
 
 ### Przykład 5: Walidacja pól (niestandardowe reguły walidacji)
 

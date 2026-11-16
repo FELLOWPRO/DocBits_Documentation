@@ -32,10 +32,10 @@ Total Amount: $1,015.05
 
 Quantity Tolerance: ±2%
 
-Tolerantie per eenheidsprijs: ±1%\
+Tolerantie per eenheidsprijs: ±1%
 
 
-Omdat de hoeveelheid (101 eenheden) en de eenheidsprijs ($10.05) beide binnen de aanvaardbare tolerantieniveaus vallen in vergelijking met de inkooporder, zal het systeem:\
+Omdat de hoeveelheid (101 eenheden) en de eenheidsprijs ($10.05) beide binnen de aanvaardbare tolerantieniveaus vallen in vergelijking met de inkooporder, zal het systeem:
 
 
 1\. **Accepteer de factuurwaarden:** De hoeveelheid en eenheidsprijs op de factuur worden als geldig geaccepteerd omdat ze binnen de gedefinieerde tolerantiegrenzen vallen.

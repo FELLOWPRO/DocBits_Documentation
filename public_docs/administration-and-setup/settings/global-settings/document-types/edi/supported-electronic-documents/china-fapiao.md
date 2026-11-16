@@ -18,7 +18,7 @@ Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte confi
 | **Standaard** | Fapiao (发票), State Taxation Administration |
 | **Landinstelling** | `zh_CN` |
 
-De catalogus bevat Fapiao, E-Fapiao, General VAT Invoice en Special VAT Invoice. De gedocumenteerde adapter gebruikt de XML-naamruimte urn:china:tax:fapiao:1.0. Ga er niet van uit dat elk oorspronkelijk OFD-, PDF- of belastingplatformexportbestand deze gegevensspecificatie gebruikt.
+De catalogus bevat Fapiao, E-Fapiao, General VAT Invoice en Special VAT Invoice.
 
 | Waarde fapiao_type | Documenttype |
 |-------------------|--------------|

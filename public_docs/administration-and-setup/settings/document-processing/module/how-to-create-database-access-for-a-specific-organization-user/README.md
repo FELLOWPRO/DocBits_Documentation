@@ -14,7 +14,7 @@
 
 1. Zoek in de **Settings** het onderdeel **Document Processing**.
 2. Zoek onder **Document Processing** de optie **Module** en klik erop.
-   * Hiermee opent u de bijbehorende modulepagina waar u verder kunt gaan met het aanmaken van een gebruiker voor de database.
+   * Hiermee opent u de bijbehorende modulepagina waar u een gebruiker voor de database kunt aanmaken.
 
 ### 4. Stappen om de AI Document- en databasegebruiker in te schakelen en te openen: <a href="#id-4.-steps-to-enable-and-access-the-ai-document-and-database-user" id="id-4.-steps-to-enable-and-access-the-ai-document-and-database-user"></a>
 
@@ -28,7 +28,7 @@
      * **Password**: Zorg ervoor dat het wachtwoord veilig wordt opgeslagen of gekopieerd.
      * **Database**: De naam van de database
      * **Host**: De hostnaam
-     * **Port**: De poort
+     * **Port**: De poort van de databaseserver
      * **SSL Mode:** De verbinding vereist `sslmode=require` voor beveiligde communicatie.
 3. **Gegevens kopiëren**:
    * Gebruik de kopieerpictogrammen naast elk veld om de gegevens snel te kopiëren voor gebruik in uw databaseclient of applicatie.

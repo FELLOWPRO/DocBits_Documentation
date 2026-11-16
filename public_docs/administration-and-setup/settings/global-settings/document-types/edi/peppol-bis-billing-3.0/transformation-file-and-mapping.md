@@ -370,7 +370,7 @@ Dit bestand haalt gegevens uit een PEPPOL BIS Billing 3.0-XML-bestand, verwerkt 
    * **Gekoppeld aan**: `<INVOICE><BUYER_REFERENCE>`
    * **Kan meermaals voorkomen**: nee.
 
-2)  **Factuurreferentie**
+2. **Factuurreferentie**
 
     * **Bron**: `//BillingReference`
     * **Gekoppeld aan**: `<INVOICE><BILLING_REFERENCE>`

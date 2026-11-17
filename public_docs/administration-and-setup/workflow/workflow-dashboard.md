@@ -4,6 +4,56 @@ Het **Workflow-dashboard** is het startpunt van het workflowgedeelte. Het laat z
 
 <figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard met uitvoeringstotalen, slaag- en faalpercentages, de uitvoeringsgrafiek en recente activiteit"><figcaption><p>Het Workflow Dashboard: uitvoeringstotalen, slaag-/faalpercentages en recente activiteit voor elke workflow.</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/nl.mp4" %}
+
+**Video:** De Workflowlijst · 1:56 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Standard Workflows inschakelen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/nl.mp4#t=0.25)
+
+Workflows moeten eerst voor je organisatie worden ingeschakeld. De instelling Workflow Builder onder Module geeft toegang tot Standard Workflows. Advanced Workflows hebben een eigen instelling en abonnement.
+
+**Licentie: Workflow en Geavanceerde workflow** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/nl.mp4#t=13.75)
+
+Dezelfde schakelaar staat op het tabblad Licentie van het Workflow-dashboard, naast die voor Advanced Workflows. Elke kaart toont of hij actief is.
+
+**Kies uw plan** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/nl.mp4#t=24.383)
+
+Inschakelen opent Kies uw plan. Kies een plan en bevestig, en het abonnement start. Hier annuleren we.
+
+**Abonnementen en hun status** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/nl.mp4#t=33.216)
+
+Alle abonnementen en hun status staan in de instellingen onder Abonnementsplan.
+
+**Nieuwe workflow: Standaard of Geavanceerde workflow** · [0:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/nl.mp4#t=39.416)
+
+In de Workflowlijst kies je met Nieuwe workflow tussen Standaard en Geavanceerde workflow. Elk heeft een eigen video.
+
+**Begin met een sjabloon** · [0:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/nl.mp4#t=49.316)
+
+Sjablonen zijn kant-en-klare Workflows. Open er een, pas hem aan en sla hem op: zo maak je een eigen Workflow.
+
+**Gedownloade Workflows importeren** · [0:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/nl.mp4#t=58.416)
+
+Met Workflow importeren upload je Workflows die je eerder hebt gedownload, bijvoorbeeld uit een testomgeving of een back-up: JSON-bestanden, tot tien tegelijk.
+
+**Een Workflow dupliceren** · [1:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/nl.mp4#t=70.316)
+
+Om een wijziging uit te proberen zonder een draaiende Workflow aan te raken, dupliceer je hem. De kopie heet 'copy' gevolgd door de oorspronkelijke naam en behoudt of hij aan staat.
+
+**Aan- en uitzetten** · [1:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/nl.mp4#t=88.716)
+
+Het icoon naast de naam toont of een Workflow aan staat. Gebruik Activeren of Deactiveren in het rijmenu om hem aan of uit te zetten.
+
+**Meerdere tegelijk** · [1:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/nl.mp4#t=101.816)
+
+Voor meerdere Workflows tegelijk vink je ze aan en open je het menu in de kop: samen activeren, deactiveren of verwijderen. Verwijderen vraagt nog één keer om bevestiging.
+
+</details>
+
 ## Tabbladen
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/nl.mp4" %}

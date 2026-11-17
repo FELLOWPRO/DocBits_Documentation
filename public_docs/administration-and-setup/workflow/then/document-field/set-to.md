@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2-nl-nl.png" alt="Instellen op, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/nl.mp4" %}
+
+**Video:** Kaart: Veld instellen op tekst · 0:39 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Veld instellen op tekst** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/nl.mp4#t=0.25)
+
+De kaart Veld instellen op tekst schrijft een tekst in een veld van het document. Kies het veld, bijvoorbeeld Notities, en typ de tekst.
+
+**De tekst vervangt de oude waarde** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/nl.mp4#t=16.216)
+
+De tekst vervangt wat het veld eerst bevatte, en het document wordt ermee opgeslagen. Kan het document niet worden opgeslagen, dan neemt de kaart het foutpad.
+
+**Voorbeeld: de reden in Notities** · [0:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/nl.mp4#t=27.316)
+
+Bijvoorbeeld: als de controle van de eenheidsprijs mislukt, schrijft de kaart Eenheidsprijs controleren in Notities. De validator ziet meteen waarom het document stopte.
+
+</details>
+
 ## **Doel:**
 
 Deze workflow-kaart is ontworpen om een opgegeven veld in het document automatisch op een vooraf gedefinieerde tekstwaarde in te stellen op basis van de voorwaarden die zijn gedefinieerd in de **"Wanneer"**- en **"En"**-secties. Hiermee kunnen gebruikers de gegevensinvoer stroomlijnen door ervoor te zorgen dat velden met consistente waarden worden gevuld wanneer aan bepaalde criteria wordt voldaan.

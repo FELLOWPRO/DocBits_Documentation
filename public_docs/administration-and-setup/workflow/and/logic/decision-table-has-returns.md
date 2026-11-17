@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v3-nl-nl.png" alt="Beslissingstabel geeft resultaten terug, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/nl.mp4" %}
+
+**Video:** Kaart: Beslissingstabel bevat resultaten · 0:46 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Beslissingstabel bevat resultaten** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/nl.mp4#t=0.25)
+
+De kaart Beslissingstabel bevat resultaten voert een beslissingstabel uit voor het document. Kies de tabel, bijvoorbeeld Example approvers, en of de geretourneerde gegevens voor de volgende kaarten worden bewaard.
+
+**Een passende rij betekent waar** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/nl.mp4#t=17.883)
+
+Past een rij van de tabel bij het document, dan is de kaart waar. Past geen rij, dan is ze onwaar. Bewaarde gegevens gebruiken latere kaarten, zoals de toewijzingskaarten. Een Workflow houdt alleen het laatst bewaarde resultaat.
+
+**Voorbeeld: goedkeurders uit een tabel** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/nl.mp4#t=32.483)
+
+Bijvoorbeeld: de tabel vindt de goedkeurders voor het factuurbedrag en bewaart ze, en de volgende kaart wijst hun de factuur toe. Vindt de tabel niemand, dan is de kaart onwaar en draait de toewijzing niet.
+
+</details>
+
 ## **Doel:**
 
 Deze DocBits-kaart controleert of een opgegeven beslistabel retourwaarden voor een bepaald document heeft en bepaalt of de geretourneerde gegevens in volgende workflow-stappen moeten worden gebruikt. Hij zorgt ervoor dat workflows zich dynamisch kunnen aanpassen op basis van de uitkomsten van de beslistabel.

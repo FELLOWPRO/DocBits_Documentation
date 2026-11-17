@@ -47,3 +47,21 @@ De workflow-kaart "Single Document Status Condition" vereenvoudigt het documentb
 **Verwacht resultaat en tegenvoorbeeld:** De voorwaarde is waar voor een document dat momenteel **In afwachting van goedkeuring** is; het is false voor een document met status **Klaar voor validatie**. Gebruik de daadwerkelijk geselecteerde status uit uw release. Als u een status wijzigt, wordt het document niet zelf geëxporteerd.
 
 Dit is een illustratieve testconfiguratie en verwachte uitkomst; het werd niet uitgevoerd. Gebruik gegevens en ontvangers die in uw testorganisatie zijn geconfigureerd.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/nl.mp4" %}
+
+**Video:** Kaart: Documentstatus is / is niet · 0:34 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Documentstatus is / is niet** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/nl.mp4#t=0.25)
+
+De kaart Documentstatus controleert de status van het document op het moment dat de Workflow draait. Kies Is of Is niet en dan een status, bijvoorbeeld Klaar voor validatie. Is niet past bij elke andere status.
+
+**Voorbeeld: alleen toewijzen als klaar voor validatie** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/nl.mp4#t=17.083)
+
+Bijvoorbeeld: facturen worden alleen toegewezen zolang ze klaar voor validatie zijn: de Wanneer-kaart voor facturen, dan Documentstatus is Klaar voor validatie, dan de toewijzingskaart. In elke andere status bereikt het document de toewijzing niet.
+
+</details>
+

@@ -12,51 +12,55 @@ Vermijd directe toewijzing in dezelfde uitvoering wanneer u de eerste opeenvolge
 
 Zakelijke acceptatie vereist A→goedkeuren→B→goedkeuren, afwijzing door A, ontbrekende ontvanger en herhaalde activering. Afwijzing moet de afsluitende export verhinderen; een onopgeloste ontvanger mag niet als voltooide goedkeuring verschijnen. Controleer documentverantwoordelijkheid en taken afzonderlijk. De simulatie bewijst geen werkelijke overdracht tussen gebruikers.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.mp4" %}
 
-**Video:** Goedkeuring in twee stappen met beslissingstabellen · 3:00 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.vtt)
+**Video:** Goedkeuring in twee stappen met beslissingstabellen · 3:19 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.vtt)
 
 <details>
 
 <summary>Transcriptie</summary>
 
-**Twee stappen, twee beslissingstabellen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4#t=0.25)
+**Twee stappen, twee beslissingstabellen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.mp4#t=0.25)
 
 Een goedkeuring in twee stappen: eerst de goedkeurders die een beslissingstabel teruggeeft, daarna een eindgroep die altijd als laatste komt. Twee beslissingstabellen: de ene geeft gebruikers terug, de andere een groep.
 
-**Eén keten: tabel, toewijzing, tabel, toewijzing** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4#t=14.683)
+**De tabel: wie, retourtype en prioriteit** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.mp4#t=14.683)
+
+Stel voor de opeenvolgende toewijzing de beslissingstabel zo in: elke rij geeft terug wie het document krijgt, met het retourtype Gebruiker of Groep, en een prioriteit. De toewijzingskaart neemt alleen waarden van het type waarop ze is ingesteld, en de laagste prioriteit komt eerst. Rijen zonder prioriteit krijgen de prioriteit van de kaart.
+
+**Eén keten: tabel, toewijzing, tabel, toewijzing** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.mp4#t=37.283)
 
 Zet elke toewijzingskaart direct achter haar eigen beslissingstabel, in één keten: tabel, toewijzing, tabel, toewijzing. Beide tabellen bewaren wat ze teruggeven.
 
-**Elke toewijzing direct na haar tabel** · [0:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4#t=27.95)
+**Elke toewijzing direct na haar tabel** · [0:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.mp4#t=50.55)
 
 Een Workflow bewaart alleen het laatste resultaat van een beslissingstabel. Elke toewijzingskaart leest het als ze draait, dus moet ze draaien voordat de volgende tabel het vervangt.
 
-**Prioriteiten bepalen de volgorde** · [0:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4#t=40.15)
+**Prioriteiten bepalen de volgorde** · [1:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.mp4#t=62.75)
 
 De volgorde van de goedkeuringen komt uit de prioriteiten, niet uit de volgorde van de kaarten: het laagste getal krijgt het document eerst. Geef de eindgroep het hoogste getal.
 
-**Test: goedkeurders, dan de groep** · [0:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4#t=53.95)
+**Test: goedkeurders, dan de groep** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.mp4#t=76.55)
 
 De test toont elke kaart als geslaagd. De eerste toewijzingskaart zet de twee goedkeurders in de wachtrij, de tweede de eindgroep. Aan het einde van de run geeft één laatste toewijzing het document aan de eerste van hen.
 
-**Naast elkaar: werkt niet** · [1:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4#t=82.016)
+**Naast elkaar: werkt niet** · [1:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.mp4#t=103.75)
 
 Deze opzet werkt niet. Twee paden naast elkaar zien er hetzelfde uit, maar de Workflow voert ze stap voor stap uit: eerst beide tabellen, dan beide toewijzingskaarten.
 
-**Goedkeurders kwijt - zonder fout** · [1:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4#t=94.05)
+**Goedkeurders kwijt - zonder fout** · [1:55](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.mp4#t=115.783)
 
 De test voert eerst beide tabellen uit, dan beide toewijzingskaarten. Beide lezen het resultaat van de tweede tabel: de groep komt twee keer in de wachtrij en de goedkeurders gaan verloren. Elke kaart toont toch succes, niets waarschuwt u. Gebruik de keten.
 
-**Een vaste laatste goedkeurder: prioriteit 99** · [2:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4#t=124.183)
+**Een vaste laatste goedkeurder: prioriteit 99** · [2:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.mp4#t=144.583)
 
 In een Standard Workflow kan een vaste goedkeurder altijd als laatste komen: wijs de gebruikers van de tabel toe en voeg dan een kaart toe die één gebruiker met een hoge prioriteit toewijst, bijvoorbeeld 99.
 
-**Prioriteiten van de tabel lager houden** · [2:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4#t=137.983)
+**Prioriteiten van de tabel lager houden** · [2:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.mp4#t=158.383)
 
 De prioriteiten van de tabel moeten onder dat getal blijven. Vindt de tabel niemand, dan stopt de Workflow bij de tabelkaart en wordt niemand toegewezen. Een gebruiker die beide teruggeven, wordt twee keer gevraagd.
 
-**Controleren in een test** · [2:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/nl.mp4#t=151.883)
+**Controleren in een test** · [2:52](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/nl.mp4#t=172.283)
 
 Een Standard Workflow test één kaart tegelijk, dus test dezelfde kaarten in een Advanced Workflow. De eerste toewijzingskaart zet de goedkeurders van de tabel in de wachtrij, de tweede voegt de vaste gebruiker toe. Hun prioriteiten zetten hem achteraan.
 

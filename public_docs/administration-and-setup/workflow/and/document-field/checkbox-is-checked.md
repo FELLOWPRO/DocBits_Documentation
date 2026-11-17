@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-nl-nl.png" alt="Het selectievakje is aangevinkt, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/nl.mp4" %}
+
+**Video:** Kaart: Selectievakje is aangevinkt · 0:38 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Selectievakje is aangevinkt** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/nl.mp4#t=0.25)
+
+De kaart Selectievakje controleert een selectievakjeveld van het document. Kies het veld, bijvoorbeeld Special handling, en of het aangevinkt of niet aangevinkt moet zijn.
+
+**Leeg betekent niet aangevinkt** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/nl.mp4#t=16.583)
+
+Een leeg selectievakje telt als niet aangevinkt. Heeft het document zo’n selectievakje niet, dan neemt de kaart het foutpad.
+
+**Voorbeeld: een vinkje bij Special handling** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/nl.mp4#t=25.983)
+
+Bijvoorbeeld: de validator vinkt Special handling aan, en de Workflow stuurt het document naar het logistiekteam. Documenten zonder vinkje nemen het normale pad.
+
+</details>
+
 ## Doel:
 
 Deze workflowkaart controleert of een selectievakjeveld op het document aangevinkt of niet aangevinkt is. De kaart kan worden gebruikt om een workflow pas verder te laten gaan nadat op het document een markering is gezet, bijvoorbeeld een controlemarkering.

@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_in_list_v2-nl-nl.png" alt="Documentoperator voor suborganisaties één van, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/nl.mp4" %}
+
+**Video:** Kaart: Document in een van meerdere suborganisaties · 0:41 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Document in een van meerdere suborganisaties** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/nl.mp4#t=0.25)
+
+De kaart Document in een van de volgende suborganisaties vergelijkt een document met een lijst van suborganisaties. Kies Is of Is niet en dan een of meer suborganisaties, bijvoorbeeld Hamburg plant en Munich plant.
+
+**Een uit de lijst** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/nl.mp4#t=17.95)
+
+Is klopt als het document bij een van de gekozen suborganisaties hoort, Is niet als het bij geen ervan hoort. Heeft het document geen suborganisatie, dan neemt de kaart het foutpad.
+
+**Voorbeeld: facturen van twee vestigingen** · [0:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/nl.mp4#t=30.55)
+
+Bijvoorbeeld: facturen van de twee Duitse vestigingen gaan naar het boekhoudteam in Duitsland. Documenten van Vienna office bereiken deze stap niet.
+
+</details>
+
 ## Doel:
 
 Deze workflowkaart controleert of een document bij een van meerdere suborganisaties hoort. In plaats van het document met één suborganisatie te vergelijken, vergelijkt de kaart het met een lijst. Zo dekt één kaart een hele groep suborganisaties af die op dezelfde manier behandeld moeten worden. Afhankelijk van het resultaat gaat de workflow verder met de true- of de false-voorwaarde.

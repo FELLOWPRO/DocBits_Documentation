@@ -34,6 +34,32 @@ Standaard-Workflows blijven eenvoudig. Ze hebben één Wanneer-kaart, alle En-ka
 
 </details>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/nl.mp4" %}
+
+**Video:** Kaarten testen in een Standaard-Workflow · 0:50 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Kaart testen: één kaart tegelijk** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/nl.mp4#t=0.25)
+
+In een Standard Workflow test je één kaart tegelijk. Open het menu van een kaart, hier de En-kaart, en kies Kaart testen. Zoek een document om op te testen.
+
+**Het resultaat en de kaartlogs** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/nl.mp4#t=12.283)
+
+Klik op Testen op document. De factuur is klaar voor validatie en wacht niet op goedkeuring, dus de voorwaarde is niet vervuld. De kaartlogs zeggen waarom.
+
+**Een actie testen verandert niets** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/nl.mp4#t=23.083)
+
+Ook acties kun je testen. Het resultaat laat zien wat de kaart zou doen, maar het document verandert niet.
+
+**Eén kaart, huidige instellingen, geen wijziging** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/nl.mp4#t=33.716)
+
+Kaart testen gebruikt de instellingen op het scherm, ook vóór het opslaan. Het test één kaart, niet de hele Workflow, en laat dus niet zien of de volgende kaart zou draaien. Om een hele flow in één keer te testen, gebruik je een Advanced Workflow.
+
+</details>
+
 Maak een volledige Standard Workflow in de echte DocBits-interface: selecteer de factuur, controleer het factuurnummer en een bedrag boven 1000, wijs een beoordelaar toe en wijzig de status. Sla de regel op, voer drie testscenario’s uit en controleer het werkelijke resultaat op het document.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/nl.mp4" %}

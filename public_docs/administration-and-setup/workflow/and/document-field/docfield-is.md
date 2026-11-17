@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v2-nl-nl.png" alt="Documentveld vergelijken met een referentiewaarde, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/nl.mp4" %}
+
+**Video:** Kaart: Documentveld vergeleken met een waarde · 0:46 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Documentveld vergeleken met een waarde** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/nl.mp4#t=0.25)
+
+De kaart Documentveld vergelijkt één veld van het document met een waarde die u invoert. Kies het veld, bijvoorbeeld Totaalbedrag, dan de operator, hier Groter dan, en de waarde, tienduizend.
+
+**Tekst, getallen, datums** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/nl.mp4#t=19.05)
+
+Tekstvelden kunnen alleen gelijk of niet gelijk zijn, en hoofdletters maken niet uit. Getallen en datums kunnen ook groter of kleiner dan de waarde zijn. Staat het veld niet op het document, dan neemt de kaart het foutpad.
+
+**Voorbeeld: grote facturen hebben een tweede goedkeuring nodig** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/nl.mp4#t=33.183)
+
+Bijvoorbeeld een tweede goedkeuring voor grote facturen: Totaalbedrag groter dan tienduizend, dan de toewijzingskaart voor financiën. Kleinere facturen bereiken deze stap niet.
+
+</details>
+
 ## **Doel:**
 
 Deze workflow-kaart is ontworpen om acties te automatiseren door de waarde van een opgegeven documentveld te vergelijken met een referentiewaarde of -voorwaarde. Hij zorgt voor dynamische en nauwkeurige besluitvorming in workflows op basis van validatie van documentgegevens.

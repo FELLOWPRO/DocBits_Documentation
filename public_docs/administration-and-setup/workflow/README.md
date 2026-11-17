@@ -6,6 +6,56 @@ description: DocBits Workflow Engine
 
 <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57.png" alt=""><figcaption></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/nl.mp4" %}
+
+**Video:** Workflow-begrippen: wat is wat · 1:36 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**De woorden in de video's** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/nl.mp4#t=0.25)
+
+In de video's komen een paar woorden steeds terug. Dit is wat ze betekenen.
+
+**Standard en Advanced** · [0:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/nl.mp4#t=6.383)
+
+Een Workflow is een set regels voor documenten. Er zijn twee soorten.
+
+**Standard: een vaste lijst** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/nl.mp4#t=11.95)
+
+Een Standard Workflow is een vaste lijst: Wanneer-, En- en Dan-kaarten, van boven naar beneden.
+
+**Advanced: een canvas** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/nl.mp4#t=20.15)
+
+Een Advanced Workflow is een canvas waarop je kaarten vrij plaatst en verbindt.
+
+**Wanneer, En, Dan** · [0:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/nl.mp4#t=27.816)
+
+Kaarten doen het werk. Een Wanneer-kaart bepaalt voor welke documenten de Workflow is. En-kaarten controleren voorwaarden. Dan-kaarten handelen, bijvoorbeeld toewijzen of exporteren.
+
+**Elke kaart is een knooppunt, niet elk knooppunt een kaart** · [0:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/nl.mp4#t=41.716)
+
+Alles op het canvas is een knooppunt. Elke kaart is een knooppunt, maar niet elk knooppunt is een kaart: OF, Wacht op ÉÉN en Wacht op ALLE voegen paden samen, opmerkingen bevatten alleen tekst.
+
+**Eén ingang, drie uitgangen** · [0:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/nl.mp4#t=56.65)
+
+Een kaart heeft één ingang en tot drie uitgangen: succes, mislukte conditie in oranje en fout in rood.
+
+**Verbindingen vormen het pad** · [1:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/nl.mp4#t=65.416)
+
+Een verbinding loopt van een uitgang naar de ingang van het volgende knooppunt. De verbindingen die een document volgt, vormen zijn pad.
+
+**Variabelen** · [1:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/nl.mp4#t=74.583)
+
+Variabelen zijn de waarden in de velden van een kaart. Workflow-variabelen bewaren waarden die latere kaarten kunnen lezen.
+
+**Run en test** · [1:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/nl.mp4#t=83.816)
+
+Een run is de Workflow die aan een echt document werkt; het log toont het pad. Een test voert het canvas uit op een document dat je kiest, en acties worden alleen gesimuleerd.
+
+</details>
+
 ## DocBits Workflow Engine: procesautomatisering eenvoudig gemaakt
 
 ### Workflows begrijpen en voorbereiden <a id="workflow-orientation"></a>

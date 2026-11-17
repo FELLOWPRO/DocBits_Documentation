@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v2.png" alt="Workflow card Document Field: Docfield Field Name is Operator Field Value, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/en.mp4" %}
+
+**Video:** Card: Document field compared with a value · 0:47 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Document field compared with a value** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/en.mp4#t=0.25)
+
+The card Document field compares one field of the document with a value you enter. Choose the field, for example Total amount, then the operator, here Greater than, and the value, ten thousand.
+
+**Text, numbers, dates** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/en.mp4#t=19.816)
+
+Text fields can only be equal or not equal, and capital letters do not matter. Numbers and dates can also be greater or less than the value. If the field is not on the document, the card takes its error exit.
+
+**Example: large invoices need a second approval** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/en.mp4#t=33.95)
+
+For example, a second approval for large invoices: Total amount greater than ten thousand, then the assign card for finance. Smaller invoices do not reach this step.
+
+</details>
+
 ## **Purpose:**
 
 This workflow card is designed to automate actions by comparing a specified document field's value with a reference value or condition. It ensures dynamic and accurate decision-making in workflows based on document data validation.

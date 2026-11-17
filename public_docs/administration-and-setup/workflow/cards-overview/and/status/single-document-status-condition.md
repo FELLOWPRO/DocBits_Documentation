@@ -47,3 +47,21 @@ The "Single Document Status Condition" workflow card simplifies document managem
 **Expected result and counterexample:** The condition is true for a document currently `Pending Approval`; it is false for a document with status `Ready for validation`. Use the actual selected status from your release. Changing a status does not itself export the document.
 
 This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/en.mp4" %}
+
+**Video:** Card: Document status is / is not · 0:34 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Document status is / is not** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/en.mp4#t=0.25)
+
+The card Document status checks the status of the document at the moment the workflow runs. Choose is or is not, and then a status, for example Ready for validation. Is not matches every other status.
+
+**Example: assign only when ready for validation** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/en.mp4#t=17.383)
+
+For example, invoices are assigned only while they are ready for validation: the When card for invoices, then Document status is Ready for validation, then the assign card. In any other status, the document does not reach the assignment.
+
+</details>
+

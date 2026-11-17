@@ -145,39 +145,59 @@ If the taken result has no connection, that route has no next node. Other reacha
 
 ## Merge branches
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4" %}
 
-**Video:** AND and OR: combining conditions · 2:28 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.vtt)
+**Video:** AND and OR: combining conditions · 4:17 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.vtt)
 
 <details>
 
 <summary>Transcript</summary>
 
-**AND and OR** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=0.25)
+**AND and OR** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4#t=0.25)
 
 Conditions can be combined in two ways. Cards one after the other work like AND: all of them must be true. Cards side by side, connected into the same next card, work like OR: one true card is enough. Join cards show this on the canvas.
 
-**AND: cards one after the other** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=19.016)
+**AND: cards one after the other** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4#t=19.016)
 
-AND means one card after the other: every card on the path must be true before the next one runs. This invoice is ready for validation and not pending approval, so both cards are true and the action runs.
+One card after the other is AND: every card on the path must be true before the next one runs. This invoice is ready for validation and not pending approval, so both cards are true and the action runs.
 
-**OR: cards side by side** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=37.883)
+**OR: cards side by side** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4#t=35.316)
 
 OR means cards side by side. Connect the green output of both And cards straight into the input of the next card. Test it: the first card is false, the second one is true, and one true path is enough for the action to run. The test banner still reports a failed condition, because the false card's orange exit is not connected, but the action runs.
 
-**The same with an OR card** · [1:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=61.25)
+**The same with an OR card** · [0:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4#t=58.25)
 
 You can also join the paths with an OR card. It does the same, but makes the OR visible on the canvas. Right-click the canvas, choose Add, and then OR. Connect both And cards to it, and the OR card to the action.
 
-**One true case is enough for OR** · [1:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=78.916)
+**One true case is enough for OR** · [1:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4#t=75.916)
 
 The test gives the same result: one true case is enough for the OR card, so the action runs. Here too, the banner reports the false card's failed condition.
 
-**AND with the Wait ALL card** · [1:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=94.316)
+**Wait ANY: the same as OR** · [1:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4#t=89.883)
+
+Wait ANY works exactly like OR: it waits for every card in front of it and continues when at least one path was taken. The two are interchangeable, so use whichever name reads better in your workflow.
+
+**AND with the Wait ALL card** · [1:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4#t=111.583)
 
 For AND with cards side by side, use Wait ALL. Right-click the canvas, choose Add, and then Wait ALL. Connect both And cards to it, and Wait ALL to the action. Test it: Wait ALL waits for both cards, both are true, so the action runs.
 
-**Join cards: which paths were taken** · [2:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4#t=122.883)
+**The order: as the connections were drawn** · [2:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4#t=138.75)
+
+In which order does this run? The workflow works through a list. The cards behind a card are added in the order their connections were drawn, so the upper condition runs first, then the lower one. The OR card waits until both have run, and the action runs once, however many conditions were true.
+
+**Straight into an action: no waiting** · [2:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4#t=169.783)
+
+Cards connected straight into an action do not wait. The action is reached through the short path and runs before the last card of the long path has been checked, so that card no longer changes anything. If the action should wait for every check, put an OR, Wait ANY or Wait ALL card in front of it.
+
+**Each exit can lead somewhere else** · [3:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4#t=191.916)
+
+Every card has up to three exits: success, failed condition and error. Each exit can lead to its own next card.
+
+**Several exits into one input: one is enough** · [3:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4#t=204.15)
+
+You can also connect several exits of one card to the same input. Only one of them can be taken, because a card ends with exactly one result, so the next card waits for just that one. This works for any input, not only for these join cards. Test it: the condition fails, and Wait ALL still continues.
+
+**Join cards: which paths were taken** · [3:52](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/en.mp4#t=232.583)
 
 The join cards mostly make a workflow easier to read. OR and Wait ANY continue when at least one connected path was taken. Wait ALL waits until all previous cards have finished, and continues only when all connected paths were taken. Any exit of a card can be connected, not only the green one: if a card ends with a failed condition, its orange exit counts as taken.
 

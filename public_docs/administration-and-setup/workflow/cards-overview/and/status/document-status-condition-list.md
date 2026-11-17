@@ -47,3 +47,21 @@ The "Document Status Condition" workflow card is vital for ensuring that documen
 **Expected result and counterexample:** The condition is true for a document with either selected status. It is false for a document with status `Ready for validation`. With the operator that requires the status to be outside the list, these condition results reverse. Inspect the actual list rather than comparing a comma-separated free-text value.
 
 This is an illustrative test configuration and expected outcome; it was not executed. Use data and recipients configured in your test organization.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/en.mp4" %}
+
+**Video:** Card: Document status: one of a list · 0:37 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Document status: one of a list** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/en.mp4#t=0.25)
+
+The card Document status in a list checks the status of the document against several statuses at once. Choose is or is not, and then the statuses. Is passes when the document has one of them.
+
+**Example: two statuses, one reminder** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/en.mp4#t=19.35)
+
+For example, the reminder goes out while an invoice is ready for validation or waiting for approval: the When card for invoices, then Document status in this list, then the reminder. In any other status, the document does not reach the reminder.
+
+</details>
+

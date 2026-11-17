@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2.png" alt="Workflow card Document Field: Field Field Name is Field Status, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/en.mp4" %}
+
+**Video:** Card: Field is empty or not · 0:48 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Field is empty or not** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/en.mp4#t=0.25)
+
+The card Field is checks whether a field of the document is empty. Choose the field, for example Purchase Order, and the status: Empty or not in document, or In document and not empty.
+
+**Missing counts as empty** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/en.mp4#t=18.716)
+
+A field counts as empty when it has no value, only spaces, an unticked checkbox, or an empty list. A field that is not on the document counts as empty, too. If the status matches, the card is true. Otherwise it is false.
+
+**Example: no purchase order** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/en.mp4#t=35.316)
+
+For example, an invoice without a purchase order goes to the approver for invoices without an order. Invoices with a purchase order take the other path, for example the order match.
+
+</details>
+
 ## When to use it
 
 Use this card to check whether a document field is empty or missing, for example when an invoice has no invoice number and needs an additional check. This is a condition; configure the subsequent action separately.

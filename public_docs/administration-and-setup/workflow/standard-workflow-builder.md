@@ -34,6 +34,32 @@ Los flujos Estándar son sencillos. Tienen una tarjeta Cuando, todas las tarjeta
 
 </details>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/es.mp4" %}
+
+**Vídeo:** Probar tarjetas en un Workflow Estándar · 0:49 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Probar tarjeta: una tarjeta cada vez** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/es.mp4#t=0.25)
+
+En un Workflow Estándar se prueba una tarjeta cada vez. Abra el menú de una tarjeta, aquí la tarjeta Y, y elija Probar tarjeta. Busque un documento con el que probarla.
+
+**El resultado y los registros** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/es.mp4#t=11.483)
+
+Haga clic en Prueba con este documento. La factura está lista para validación, no pendiente de aprobación, así que la condición no se cumple. Los registros de la tarjeta dicen por qué.
+
+**Probar una acción no cambia nada** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/es.mp4#t=23.116)
+
+También se pueden probar acciones. El resultado muestra lo que haría la tarjeta, pero el documento no cambia.
+
+**Una tarjeta, ajustes actuales, sin cambios** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/es.mp4#t=33.75)
+
+Probar tarjeta usa los ajustes de la pantalla, incluso antes de guardar. Prueba una tarjeta, no todo el Workflow, así que no muestra si la siguiente tarjeta se ejecutaría. Para probar un flujo completo de una vez, use un Advanced Workflow.
+
+</details>
+
 Cree un Standard Workflow completo en la interfaz real de DocBits: seleccione la factura, compruebe su número y un importe superior a 1000, asigne un revisor y cambie el estado. Guarde la regla, ejecute tres escenarios de prueba y confirme el resultado real en el documento.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/es.mp4" %}

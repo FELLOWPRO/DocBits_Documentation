@@ -6,6 +6,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-es-es.png" alt="Asignar documento al usuario, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/es.mp4" %}
+
+**Vídeo:** Tarjeta: Asignar documento a un usuario · 0:47 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Asignar documento a un usuario** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/es.mp4#t=0.25)
+
+La tarjeta Asignar documento a un usuario entrega el documento a un usuario: elíjalo. La versión tres, elegida con la etiqueta de versión, añade un segundo ajuste: si una tabla de decisión puede elegir el usuario en su lugar.
+
+**Árbol de decisión: primero el usuario de la tabla** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/es.mp4#t=21.75)
+
+Con el árbol de decisión activado, la tarjeta toma el primer usuario que devolvió una tarjeta de tabla de decisión anterior en el Workflow. Si la tabla no devolvió ningún usuario, el usuario de la tarjeta recibe el documento. La versión dos siempre asigna el usuario de la tarjeta.
+
+**Ejemplo: aprobador de la tabla, respaldo en la tarjeta** · [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/es.mp4#t=36.816)
+
+Por ejemplo, una tabla de decisión devuelve el aprobador del importe, y la tarjeta de asignación lo usa. Si la tabla no encuentra a nadie, Alex Example recibe la factura.
+
+</details>
+
 ## **Propósito:**
 
 La tarjeta de flujo de trabajo **"Assign Document to User"** permite a los usuarios asignar un documento a un usuario específico, garantizando una gestión fluida del flujo de trabajo al enrutar los documentos a la persona adecuada. La versión 3 añade la capacidad de usar un árbol de decisión para determinar dinámicamente la asignación de usuario según las condiciones disponibles.

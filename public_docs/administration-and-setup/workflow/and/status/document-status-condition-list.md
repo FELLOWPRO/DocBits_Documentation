@@ -47,3 +47,21 @@ La tarjeta de flujo de trabajo "Document Status Condition" es vital para garanti
 **Resultado esperado y contraejemplo:** La condición es verdadera para un documento con cualquiera de los estados seleccionados. Es falsa para un documento con estado **Listo para la validación**. Con el operador que requiere que el estado esté fuera de la lista, estas condiciones resultan a la inversa. Inspeccione la lista real en lugar de comparar un valor de texto libre separado por comas.
 
 Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/es.mp4" %}
+
+**Vídeo:** Tarjeta: Estado del documento: uno de una lista · 0:33 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Estado del documento: uno de una lista** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/es.mp4#t=0.25)
+
+La tarjeta Estado del documento en una lista compara el estado del documento con varios estados. Elija Es o No es y luego los estados. Es se cumple cuando el documento tiene uno de ellos.
+
+**Ejemplo: dos estados, un recordatorio** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/es.mp4#t=17.65)
+
+Por ejemplo, el recordatorio sale mientras una factura está en Listo para la validación o Aprobación pendiente: la tarjeta Cuando para facturas, luego Estado del documento en esta lista, luego el recordatorio. En cualquier otro estado, el documento no llega al recordatorio.
+
+</details>
+

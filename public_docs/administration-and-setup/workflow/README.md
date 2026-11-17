@@ -6,6 +6,56 @@ description: DocBits Workflow Engine
 
 <figure><img src="../../.gitbook/assets/workflow-list-search-detail-es.png" alt="Vista parcial de la búsqueda y de las columnas Nombre y Tipo de la lista de flujos de trabajo. Los valores privados están ocultos."><figcaption><p>Vista parcial de la búsqueda y de las columnas Nombre y Tipo de la lista de flujos de trabajo. Los valores privados están ocultos.</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/es.mp4" %}
+
+**Vídeo:** Términos de Workflow: qué es qué · 1:19 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Las palabras de los vídeos** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/es.mp4#t=0.25)
+
+Los vídeos repiten algunas palabras. Esto es lo que significa cada una.
+
+**Estándar y Advanced** · [0:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/es.mp4#t=4.783)
+
+Un Workflow es un conjunto de reglas para documentos. Hay dos tipos.
+
+**Estándar: una lista fija** · [0:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/es.mp4#t=9.783)
+
+Un Workflow Estándar es una lista fija: tarjetas Cuando, Y y Entonces, de arriba abajo.
+
+**Advanced: un lienzo** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/es.mp4#t=16.483)
+
+Un Advanced Workflow es un lienzo donde coloca tarjetas libremente y las conecta.
+
+**Cuando, Y, Entonces** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/es.mp4#t=23.716)
+
+Las tarjetas hacen el trabajo. Una tarjeta Cuando decide a qué documentos se aplica el Workflow. Las tarjetas Y comprueban condiciones. Las tarjetas Entonces actúan: asignan o exportan.
+
+**Toda tarjeta es un nodo, no todo nodo es una tarjeta** · [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/es.mp4#t=36.316)
+
+Todo en el lienzo es un nodo. Cada tarjeta es un nodo, pero no todo nodo es una tarjeta: O, Esperar a CUALQUIERA y Esperar a TODOS unen caminos, y las notas solo tienen texto.
+
+**Una entrada, tres salidas** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/es.mp4#t=47.416)
+
+Una tarjeta tiene una entrada y hasta tres salidas: éxito, condición fallida en naranja y error en rojo.
+
+**Las conexiones forman el camino** · [0:55](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/es.mp4#t=55.116)
+
+Una conexión va de una salida a la entrada del nodo siguiente. Las conexiones que sigue un documento son su camino.
+
+**Variables** · [1:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/es.mp4#t=61.883)
+
+Variables: los valores de los campos de una tarjeta. Las variables de Workflow guardan valores para después.
+
+**Ejecución y prueba** · [1:08](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/es.mp4#t=68.583)
+
+Una ejecución es el Workflow trabajando con un documento real; su registro muestra el camino. Una prueba ejecuta el lienzo con un documento que usted elige, y las acciones solo se simulan.
+
+</details>
+
 ## Motor de Flujo de Trabajo DocBits: Simplificación de la Automatización de Procesos
 
 ### Introducción

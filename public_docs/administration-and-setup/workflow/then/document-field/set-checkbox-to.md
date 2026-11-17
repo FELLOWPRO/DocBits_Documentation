@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_set_boolean_field_v2-es-es.png" alt="Establezca la casilla de verificación en, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/es.mp4" %}
+
+**Vídeo:** Tarjeta: Establecer casilla · 0:40 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Establecer casilla** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/es.mp4#t=0.25)
+
+La tarjeta Establecer casilla marca o desmarca un campo de casilla del documento. Elija el campo, por ejemplo Special handling, y si debe estar marcado.
+
+**Marcada o no, y guardada** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/es.mp4#t=16.75)
+
+La tarjeta escribe el valor y guarda el documento, aunque la casilla estuviera vacía antes. Si el campo no es una casilla, por ejemplo un importe, la tarjeta toma su salida de error. Para cambiar una casilla al valor contrario, use la tarjeta Invertir casilla.
+
+**Ejemplo: marcar Special handling** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/es.mp4#t=31.116)
+
+Por ejemplo, cuando el proveedor necesita un trato especial, el Workflow marca Special handling y el validador lo ve en el documento.
+
+</details>
+
 ## **Propósito:**
 
 Esta tarjeta de flujo de trabajo está diseñada para establecer un campo de casilla de verificación a un valor especificado (true o false) según las condiciones definidas en las secciones **"Cuando"** y **"Y"**. Proporciona una forma sencilla pero eficaz de automatizar las actualizaciones de las casillas de verificación cuando se cumplen ciertos criterios, garantizando un procesamiento de documentos ágil.

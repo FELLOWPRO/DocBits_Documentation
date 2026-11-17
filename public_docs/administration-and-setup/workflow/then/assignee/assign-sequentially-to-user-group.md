@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_no_variables_v2-es-es.png" alt="Asigne el documento secuencialmente al Usuario / Grupo en base a la tabla de decisiones. — Versión 2" width="634"><figcaption><p>Asigne el documento secuencialmente al Usuario / Grupo en base a la tabla de decisiones. — Versión 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/es.mp4" %}
+
+**Vídeo:** Tarjeta: Asignar sucesivamente según una tabla de decisión · 0:42 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Asignar sucesivamente según una tabla de decisión** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/es.mp4#t=0.25)
+
+La tarjeta Asignar sucesivamente según una tabla de decisión da el documento, uno tras otro, a los usuarios y grupos que devolvió una tabla de decisión. La tarjeta no tiene ajustes: todo viene de la tabla.
+
+**Lo que necesita la tarjeta** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/es.mp4#t=12.783)
+
+Necesita antes una tarjeta de tabla de decisión que guarde los datos devueltos. Toma todos los usuarios y grupos que devolvió la tabla, y la prioridad más baja recibe el documento primero. Las filas sin prioridad cuentan como prioridad uno. Si la tabla no devolvió a nadie, la tarjeta toma su salida de error.
+
+**Ejemplo: dos aprobadores por turno** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/es.mp4#t=31.15)
+
+Por ejemplo, la tabla Example approvers devuelve dos aprobadores con prioridad uno y dos. La factura va al primero y, tras su aprobación, al segundo.
+
+</details>
+
 ## **Propósito**
 
 La tarjeta de flujo de trabajo "**Asignar el documento secuencialmente al usuario/grupo según la tabla de decisiones**" asigna dinámicamente documentos a un usuario o a un grupo, según la evaluación de la tabla de decisión. Esto garantiza que los documentos se enruten de forma adecuada según reglas predefinidas.

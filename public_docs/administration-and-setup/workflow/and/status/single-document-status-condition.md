@@ -47,3 +47,21 @@ La tarjeta de flujo de trabajo "Single Document Status Condition" simplifica la 
 **Resultado esperado y contraejemplo:** La condición es verdadera para un documento que está actualmente en **Aprobación pendiente**; es falsa para un documento con estado **Listo para la validación**. Utilice el estado seleccionado real de su lanzamiento. Cambiar un estado no exporta el documento.
 
 Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/es.mp4" %}
+
+**Vídeo:** Tarjeta: Estado del documento es / no es · 0:33 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Estado del documento es / no es** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/es.mp4#t=0.25)
+
+La tarjeta Estado del documento comprueba el estado del documento cuando se ejecuta el Workflow. Elija Es o No es y luego un estado, por ejemplo Listo para la validación. No es coincide con cualquier otro estado.
+
+**Ejemplo: asignar solo si está listo para la validación** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/es.mp4#t=17.083)
+
+Por ejemplo, las facturas solo se asignan mientras están listas para la validación: la tarjeta Cuando para facturas, luego Estado del documento es Listo para la validación y luego la tarjeta de asignación. En otro estado, no llega a la asignación.
+
+</details>
+

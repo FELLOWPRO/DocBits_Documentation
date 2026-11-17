@@ -12,51 +12,55 @@ Evite la asignación directa en la misma ejecución si espera al primer destinat
 
 La aceptación requiere A→aprobar→B→aprobar, rechazo por A, destinatario ausente y evento repetido. El rechazo debe impedir la exportación final; un destinatario no resuelto no debe aparecer como aprobación completada. Compruebe responsabilidad documental y tareas por separado. La simulación del diseñador no demuestra un traspaso real entre usuarios.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.mp4" %}
 
-**Vídeo:** Aprobación en dos pasos con tablas de decisión · 2:50 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.vtt)
+**Vídeo:** Aprobación en dos pasos con tablas de decisión · 3:06 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.vtt)
 
 <details>
 
 <summary>Transcripción</summary>
 
-**Dos pasos, dos tablas de decisión** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=0.25)
+**Dos pasos, dos tablas de decisión** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.mp4#t=0.25)
 
 Una aprobación en dos pasos: primero los aprobadores que devuelve una tabla de decisión, luego un grupo final que siempre va al final. Dos tablas de decisión: una devuelve usuarios, la otra un grupo.
 
-**Una cadena: tabla, asignación, tabla, asignación** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=12.283)
+**La tabla: quién, tipo de retorno y prioridad** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.mp4#t=12.283)
+
+Para la asignación secuencial, configure la tabla de decisión así: cada fila devuelve quién recibe el documento, con el tipo de retorno Usuario o Grupo, y una prioridad. La tarjeta de asignación solo toma los retornos del tipo que tiene configurado, y la prioridad más baja va primero. Las filas sin prioridad reciben la prioridad de la tarjeta.
+
+**Una cadena: tabla, asignación, tabla, asignación** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.mp4#t=31.383)
 
 Coloque cada tarjeta de asignación justo después de su propia tabla de decisión, en una sola cadena: tabla, asignación, tabla, asignación. Ambas tablas guardan sus resultados.
 
-**Cada asignación justo tras su tabla** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=25.583)
+**Cada asignación justo tras su tabla** · [0:44](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.mp4#t=44.65)
 
 Un Workflow solo conserva el último resultado de una tabla de decisión. Cada tarjeta de asignación lo lee al ejecutarse, así que debe ejecutarse antes de que la siguiente tabla lo reemplace.
 
-**Las prioridades fijan el orden** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=37.15)
+**Las prioridades fijan el orden** · [0:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.mp4#t=56.216)
 
 El orden de las aprobaciones viene de las prioridades, no del orden de las tarjetas: el número más bajo recibe el documento primero. Dé al grupo final el número más alto.
 
-**Prueba: aprobadores, luego el grupo** · [0:48](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=48.15)
+**Prueba: aprobadores, luego el grupo** · [1:07](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.mp4#t=67.216)
 
 La prueba muestra cada tarjeta con éxito. La primera tarjeta de asignación pone en cola a los dos aprobadores, la segunda al grupo final. Al final de la ejecución, una última asignación entrega el documento al primero de ellos.
 
-**En paralelo: no funciona** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=76.216)
+**En paralelo: no funciona** · [1:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.mp4#t=94.383)
 
 Esta disposición no funciona. Dos rutas en paralelo parecen iguales, pero el Workflow las ejecuta paso a paso: primero ambas tablas, luego ambas tarjetas de asignación.
 
-**Se pierden los aprobadores - sin error** · [1:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=87.65)
+**Se pierden los aprobadores - sin error** · [1:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.mp4#t=105.816)
 
 La prueba ejecuta primero ambas tablas y luego ambas tarjetas de asignación. Las dos leen el resultado de la segunda tabla: el grupo entra dos veces en la cola y los aprobadores se pierden. Cada tarjeta sigue mostrando éxito, nada le avisa. Use la cadena.
 
-**Un último aprobador fijo: prioridad 99** · [1:57](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=117.75)
+**Un último aprobador fijo: prioridad 99** · [2:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.mp4#t=134.583)
 
 En un Workflow Estándar, un aprobador fijo puede ir siempre al final: asigne los usuarios de la tabla y luego añada una tarjeta que asigne un usuario con prioridad alta, por ejemplo 99.
 
-**Prioridades de la tabla más bajas** · [2:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=129.55)
+**Prioridades de la tabla más bajas** · [2:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.mp4#t=146.383)
 
 Las prioridades de la tabla deben quedar por debajo de ese número. Si la tabla no encuentra a nadie, el Workflow se detiene en la tarjeta de la tabla y no se asigna a nadie. Un usuario que devuelven ambas se consulta dos veces.
 
-**Comprobarlo en una prueba** · [2:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/es.mp4#t=142.083)
+**Comprobarlo en una prueba** · [2:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/es.mp4#t=158.916)
 
 Un Workflow Estándar prueba una tarjeta cada vez, así que pruebe las mismas tarjetas en un Advanced Workflow. La primera tarjeta pone en cola a los aprobadores de la tabla, la segunda añade el usuario fijo. Sus prioridades lo dejan al final.
 

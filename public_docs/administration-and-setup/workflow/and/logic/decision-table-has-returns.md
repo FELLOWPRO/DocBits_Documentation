@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v3-es-es.png" alt="La tabla de decisiones devuelve resultados, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/es.mp4" %}
+
+**Vídeo:** Tarjeta: Tabla de decisión devuelve resultados · 0:45 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Tabla de decisión devuelve resultados** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/es.mp4#t=0.25)
+
+La tarjeta Tabla de decisión devuelve resultados ejecuta una tabla de decisión para el documento. Elija la tabla, por ejemplo Example approvers, y si sus datos devueltos se almacenan para las siguientes tarjetas.
+
+**Una fila que coincide significa verdadero** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/es.mp4#t=16.75)
+
+Si una fila de la tabla coincide con el documento, la tarjeta es verdadera. Si ninguna fila coincide, es falsa. Los datos almacenados los usan tarjetas posteriores, como las de asignación. Un Workflow guarda solo el último resultado almacenado.
+
+**Ejemplo: aprobadores desde una tabla** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/es.mp4#t=31.983)
+
+Por ejemplo, la tabla encuentra los aprobadores para el importe de la factura y los almacena, y la siguiente tarjeta les asigna la factura. Si la tabla no encuentra a nadie, la tarjeta es falsa y la asignación no se ejecuta.
+
+</details>
+
 ## **Propósito:**
 
 Esta tarjeta de DocBits comprueba si una tabla de decisión especificada tiene valores de retorno para un documento dado y determina si los datos devueltos deben utilizarse en los pasos posteriores del flujo de trabajo. Garantiza que los flujos de trabajo puedan adaptarse dinámicamente según los resultados de la tabla de decisión.

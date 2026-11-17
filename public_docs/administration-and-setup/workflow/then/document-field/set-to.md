@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2-es-es.png" alt="Establecer en, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/es.mp4" %}
+
+**Vídeo:** Tarjeta: Establecer campo en texto · 0:36 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Establecer campo en texto** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/es.mp4#t=0.25)
+
+La tarjeta Establecer campo en texto escribe un texto en un campo del documento. Elija el campo, por ejemplo Notas, y escriba el texto.
+
+**El texto reemplaza el valor anterior** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/es.mp4#t=16.283)
+
+El texto reemplaza lo que tenía el campo, y el documento se guarda con él. Si el documento no se puede guardar, la tarjeta toma su camino de error.
+
+**Ejemplo: el motivo en Notas** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/es.mp4#t=25.516)
+
+Por ejemplo, cuando falla la comprobación del precio unitario, la tarjeta escribe Revisar el precio unitario en Notas. El validador ve enseguida por qué se detuvo el documento.
+
+</details>
+
 ## **Propósito:**
 
 Esta tarjeta de flujo de trabajo está diseñada para establecer automáticamente un campo especificado del documento a un valor de texto predefinido según las condiciones definidas en las secciones **"Cuando"** y **"Y"**. Permite a los usuarios agilizar la entrada de datos garantizando que los campos se completen con valores coherentes cuando se cumplen ciertos criterios.

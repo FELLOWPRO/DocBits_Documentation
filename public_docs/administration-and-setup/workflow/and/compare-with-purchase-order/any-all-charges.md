@@ -4,6 +4,8 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_charges_to_po_v3-de-de.png" alt="Beliebige oder alle Gebühren, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_charges_to_po_v4-de-de.png" alt="Workflow-Karte Mit Bestellung vergleichen: Beliebig/Alle Gebühren müssen Operator der Toleranz von Toleranzbetrag Toleranz Typ liegen, verglichen mit der zugeordneten Bestellung; eine Gebühr von 0,00 wird ebenfalls verglichen. Falls eine Gebühr nur auf einer Seite (Dokument oder Bestellung) vorhanden ist, Verhalten bei fehlenden Daten, Version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
+
 ## **Zweck:**
 
 Diese Workflow-Karte vergleicht die Zusatzkosten eines Dokuments mit den Zusatzkosten der zugeordneten Bestellung, innerhalb einer festgelegten Toleranz. Sie beantwortet eine einzige Frage: Stimmen Dokument und Bestellung in den Zusatzkosten überein? Verglichen wird jede Gebühr, die der Bestellabgleich einander zugeordnet hat, weshalb auf der Karte kein Feldname angegeben werden muss.
@@ -31,8 +33,8 @@ Der Bestellabgleich muss vor dieser Karte laufen. Hat das Dokument keine zugeord
    * **Optionen**:
      * **Prozentsatz**: ein Prozentsatz der Bestellgebühr.
      * **Wert**: ein fester Betrag.
-5. **Verhalten bei fehlenden Daten (nur Version 3):**
-   * **Beschreibung**: Was geschehen soll, wenn eine Gebühr nur auf einer Seite vorhanden ist, im Dokument oder in der Bestellung, sodass es kein Gegenstück zum Vergleich gibt. Die Option steht am Ende des Satzes der Version 3.
+5. **Verhalten bei fehlenden Daten (Versionen 3 und 4):**
+   * **Beschreibung**: Was geschehen soll, wenn eine Gebühr nur auf einer Seite vorhanden ist, im Dokument oder in der Bestellung, sodass es kein Gegenstück zum Vergleich gibt. Die Option steht am Ende des Satzes.
    * **Optionen**:
      * **wird dies als Abweichung gewertet**: der Workflow stoppt. Das ist die Voreinstellung.
      * **Ignorieren Sie es und behandeln Sie es als Übereinstimmung.**: der Workflow läuft weiter, als hätte die Gebühr übereingestimmt.
@@ -43,7 +45,7 @@ Die Karte durchläuft die folgenden Schritte.
 
 1. **Sie setzt eine zugeordnete Bestellung voraus.** Ohne zugeordnete Bestellung stoppt die Karte sofort und meldet fehlende Daten.
 2. **Sie liest die Toleranz** aus **Toleranzbetrag** und **Toleranz Typ** auf der Karte.
-3. **Version 3 sortiert jede zugeordnete Bestellposition** in eine von vier Situationen ein und fragt dabei nur, ob eine Seite überhaupt Gebühren trägt: Gebühren auf beiden Seiten, keine Gebühren auf beiden Seiten, Gebühren nur im Dokument oder Gebühren nur in der Bestellung. Eine Position, die den Bestelldaten des Dokuments nicht zugeordnet werden kann, ist ein Datenfehler und die Karte stoppt.
+3. **Versionen 3 und 4 sortieren jede zugeordnete Bestellposition** in eine von vier Situationen ein: Gebühren auf beiden Seiten, keine Gebühren auf beiden Seiten, Gebühren nur im Dokument oder Gebühren nur in der Bestellung. Version 3 fragt nur, ob eine Seite eine Gebühr über 0,00 trägt. Version 4 betrachtet jedes Gebührenpaar und zählt 0,00 als Wert; nur eine Gebühr ganz ohne Betrag gilt als fehlend. Siehe **Unterschiede zwischen den Versionen** unten. Eine Position, die den Bestelldaten des Dokuments nicht zugeordnet werden kann, ist ein Datenfehler und die Karte stoppt.
 4. **Eine Gebühr auf nur einer Seite entscheidet die gesamte Karte.** Sobald eine zugeordnete Position Gebühren auf einer Seite und keine auf der anderen trägt, entscheidet **Verhalten bei fehlenden Daten** das Ergebnis, und es wird überhaupt keine Gebühr verglichen, auch nicht die Gebühren korrekt zugeordneter Positionen. Operator und Toleranz werden nicht herangezogen.
 5. **Trägt keine Position auf einer der beiden Seiten Gebühren**, stimmen beide Seiten darin überein, dass es keine Zusatzkosten gibt. Der Operator **Außerhalb** ist damit nicht erfüllt, weil nichts über die Toleranz hinaus abweicht, und der Workflow stoppt. Jeder andere Operator wertet die Übereinstimmung als erfüllt und der Workflow läuft weiter. **Verhalten bei fehlenden Daten** hat hier keine Wirkung.
 6. **Andernfalls wird jede Gebühr verglichen**, Dokumentbetrag gegen Bestellbetrag, mit Operator und Toleranz. Ein Gebührenbetrag, der keine Zahl ist, stoppt die Karte mit fehlenden Daten.
@@ -57,7 +59,7 @@ Drei Folgen sind vor dem Konfigurieren der Karte wichtig zu wissen.
 
 ## **Einrichtung und Konfiguration:**
 
-Fügen Sie die Karte als And-Bedingung nach dem Bestellabgleich ein. Wählen Sie, ob jede oder irgendeine Gebühr den Vergleich erfüllen muss, wählen Sie den Operator **innerhalb** oder **Außerhalb** und geben Sie Toleranzbetrag und Toleranz Typ ein. Wählen Sie in Version 3, was geschehen soll, wenn Gebühren nur auf einer Seite auftreten.
+Fügen Sie die Karte als And-Bedingung nach dem Bestellabgleich ein. Wählen Sie, ob jede oder irgendeine Gebühr den Vergleich erfüllen muss, wählen Sie den Operator **innerhalb** oder **Außerhalb** und geben Sie Toleranzbetrag und Toleranz Typ ein. Wählen Sie in den Versionen 3 und 4, was geschehen soll, wenn Gebühren nur auf einer Seite auftreten.
 
 Um eine Konfiguration ohne Warten auf ein Dokument zu prüfen, öffnen Sie das Kartenmenü im Workflow Builder, wählen **Testkarte**, wählen ein Dokument und dann **Test auf Dokument**. Das Kartenprotokoll listet jede verglichene Gebühr mit beiden Beträgen, dem Operator und der verwendeten Toleranz auf und hält außerdem fest, welcher Wert von **Verhalten bei fehlenden Daten** das Ergebnis entschieden hat, wenn eine Gebühr nur auf einer Seite vorhanden war.
 
@@ -71,9 +73,25 @@ Trägt weder die Auftragsbestätigung noch die Bestellung eine Gebühr, wertet d
 
 Trägt die Auftragsbestätigung eine Frachtgebühr und die Bestellung keine, gilt der Operator nicht mehr. Mit **wird dies als Abweichung gewertet** stoppt der Workflow, damit jemand prüfen kann, warum die Gebühr nur auf einer Seite steht.
 
+Zeigt die Auftragsbestätigung die Frachtgebühr mit 0,00, während die Bestellung 204,00 trägt, vergleicht Version 4 die beiden Beträge und der Workflow stoppt mit einer nicht erfüllten Bedingung. Version 3 würde die 0,00 als "keine Gebühr im Dokument" lesen und das Ergebnis **Verhalten bei fehlenden Daten** überlassen.
+
 ## **Unterschiede zwischen den Versionen:**
 
-Version 3 verwenden neue Karten. Version 2 wird in bestehenden Workflows weiter unterstützt. Beide Versionen vergleichen je Gebühr und fassen die Ergebnisse dokumentweit mit der Einstellung **Beliebig/Alle** zusammen, aber Version 2 hat keine Fallunterscheidung, was ändert, was geschieht, sobald Gebühren nicht auf beiden Seiten vorhanden sind:
+Version 4 verwenden neue Karten. Versionen 2 und 3 werden in bestehenden Workflows weiter unterstützt.
+
+### Version 4 im Vergleich zu Version 3
+
+Beide Versionen haben dieselben Einstellungen und dieselben Schritte. Sie unterscheiden sich nur darin, wie eine Gebühr von 0,00 behandelt wird:
+
+* **Version 3 wertet 0,00 als keine Gebühr.** Eine Dokumentgebühr von 0,00, der eine Bestellgebühr von 204,00 zugeordnet ist, zählt als "die Bestellung hat Gebühren, das Dokument keine", sodass **Verhalten bei fehlenden Daten** entscheidet und die Beträge nie verglichen werden. Mit **Ignorieren Sie es und behandeln Sie es als Übereinstimmung.** läuft der Workflow weiter, obwohl die Beträge abweichen.
+* **Version 4 vergleicht 0,00 als Betrag.** Dasselbe Paar wird wie jedes andere verglichen: 0,00 gegen 204,00 liegt nicht innerhalb der Toleranz, sodass der Workflow mit einer nicht erfüllten Bedingung stoppt. Ein Paar mit 0,00 auf beiden Seiten wird ebenfalls verglichen und stimmt überein.
+* **Eine Gebühr ohne Betrag fehlt auch in Version 4.** Hat eine Seite eines Paares überhaupt keinen Betrag, zum Beispiel eine Gebühr, die die Bestellung nicht trägt, entscheidet **Verhalten bei fehlenden Daten**, wie in Version 3.
+
+Um dieses Verhalten in einem bestehenden Workflow zu erhalten, ersetzen Sie die Karte der Version 3 durch eine Karte der Version 4 und stellen dieselben Werte ein.
+
+### Version 2
+
+Auch Version 2 vergleicht je Gebühr und fasst die Ergebnisse dokumentweit mit der Einstellung **Beliebig/Alle** zusammen, hat aber keine Fallunterscheidung, was ändert, was geschieht, sobald Gebühren nicht auf beiden Seiten vorhanden sind:
 
 * Version 2 hat keine Option **Verhalten bei fehlenden Daten**. Ihr Satz endet nach dem Toleranz Typ.
 * Version 2 sortiert die zugeordneten Positionen nicht und erkennt daher keine Gebühr, die nur auf einer Seite vorhanden ist. Sie vergleicht den vorhandenen Betrag gegen die 0,00 der fehlenden Seite, und der Operator entscheidet: **innerhalb** ist nicht erfüllt und der Workflow stoppt, **Außerhalb** ist erfüllt und der Workflow läuft weiter. Das Kartenprotokoll zeigt den Vergleich gegen 0,00.
@@ -81,4 +99,4 @@ Version 3 verwenden neue Karten. Version 2 wird in bestehenden Workflows weiter 
 
 ## **Fazit:**
 
-Die Karte "Any / All Charges" automatisiert die Prüfung, dass die in Rechnung gestellten oder bestätigten Zusatzkosten den bestellten Zusatzkosten entsprechen. Da das Fehlen von Gebühren auf beiden Seiten in Version 3 als Übereinstimmung gilt, laufen Dokumente ohne Zusatzkosten ohne manuellen Eingriff durch, während Gebühren, die nur auf einer Seite auftreten, zur Prüfung zurückgehalten werden, sofern das nicht ausdrücklich erlaubt wird.
+Die Karte "Any / All Charges" automatisiert die Prüfung, dass die in Rechnung gestellten oder bestätigten Zusatzkosten den bestellten Zusatzkosten entsprechen. Da das Fehlen von Gebühren auf beiden Seiten in den Versionen 3 und 4 als Übereinstimmung gilt, laufen Dokumente ohne Zusatzkosten ohne manuellen Eingriff durch, während Gebühren, die nur auf einer Seite auftreten, zur Prüfung zurückgehalten werden, sofern das nicht ausdrücklich erlaubt wird.

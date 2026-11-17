@@ -10,6 +10,32 @@ Wenn ein Dokument einen neuen Status erhält, startet DocBits die Workflows, die
 
 Diese Seite zeigt, wie Sie Ihren Workflow so einrichten, dass jedes Dokument ihn nur einmal durchläuft.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/de.mp4" %}
+
+**Video:** Karte Status ändern und Schleifenschutz · 0:45 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Status ändern** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/de.mp4#t=0.25)
+
+Die Karte Status ändern setzt das Dokument auf einen neuen Status, zum Beispiel Abgelehnt.
+
+**Workflows auslösen** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/de.mp4#t=10.083)
+
+Workflows auslösen entscheidet, was danach passiert. Ist es eingeschaltet und startet der neue Status Workflows, etwa Bereit zur Validierung, laufen die Workflows für dieses Dokument erneut.
+
+**Aus: keine Schleife** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/de.mp4#t=22.216)
+
+Setzt ein Workflow einen Status, der denselben Workflow wieder startet, kann er in einer Schleife laufen. Schalten Sie Workflows auslösen aus, wenn die Statusänderung keine Workflows starten soll.
+
+**Beispiel: ablehnen, kein neuer Start** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/de.mp4#t=34.75)
+
+Zum Beispiel: Eine Prüfung schlägt fehl, diese Karte setzt den Status auf Abgelehnt mit Workflows auslösen aus, also startet nichts neu.
+
+</details>
+
 ## Die entscheidende Einstellung
 
 Die Karte [Status auf … ändern](../then/status/change-status-to.md) setzt den neuen Status. Ihre Einstellung **Workflows auslösen** legt fest, ob dieser Statuswechsel Workflows starten darf:

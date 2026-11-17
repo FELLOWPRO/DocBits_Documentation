@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v2-de-de.png" alt="Dokumentfeld mit Referenzwert vergleichen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/de.mp4" %}
+
+**Video:** Karte: Dokumentfeld mit einem Wert verglichen · 0:47 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Dokumentfeld mit einem Wert verglichen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/de.mp4#t=0.25)
+
+Die Karte Dokumentfeld vergleicht ein Feld des Dokuments mit einem Wert, den Sie eingeben. Wählen Sie das Feld, zum Beispiel Gesamtbetrag, dann den Operator, hier Größer als, und den Wert, zehntausend.
+
+**Text, Zahlen, Datumswerte** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/de.mp4#t=19.016)
+
+Textfelder können nur gleich oder ungleich sein, und Groß- und Kleinschreibung spielt keine Rolle. Zahlen und Datumswerte können auch größer oder kleiner als der Wert sein. Fehlt das Feld im Dokument, nimmt die Karte ihren Fehlerpfad.
+
+**Beispiel: große Rechnungen brauchen eine zweite Freigabe** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/de.mp4#t=34.35)
+
+Zum Beispiel eine zweite Freigabe für große Rechnungen: Gesamtbetrag größer als zehntausend, dann die Zuweisungskarte für die Finanzabteilung. Kleinere Rechnungen erreichen diesen Schritt nicht.
+
+</details>
+
 ## **Zweck:**
 
 Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie den Wert eines angegebenen Dokumentfelds mit einem Referenzwert oder einer Bedingung vergleicht. Sie sorgt für eine dynamische und präzise Entscheidungsfindung in Workflows auf Basis der Validierung von Dokumentdaten.

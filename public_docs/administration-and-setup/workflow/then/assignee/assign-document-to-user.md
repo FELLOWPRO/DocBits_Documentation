@@ -6,6 +6,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-de-de.png" alt="Dokument dem Benutzer zuweisen, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/de.mp4" %}
+
+**Video:** Karte: Dokument einem Benutzer zuweisen · 0:53 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Dokument einem Benutzer zuweisen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/de.mp4#t=0.25)
+
+Die Karte Dokument dem Benutzer zuweisen gibt das Dokument einem Benutzer: Wählen Sie den Benutzer. Version drei, gewählt über das Versionslabel, bringt eine zweite Einstellung: ob stattdessen eine Entscheidungstabelle den Benutzer wählen darf.
+
+**Entscheidungsbaum verwenden: zuerst der Benutzer der Tabelle** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/de.mp4#t=21.75)
+
+Ist Entscheidungsbaum verwenden eingeschaltet, nimmt die Karte den ersten Benutzer, den eine Entscheidungstabellen-Karte früher im Workflow zurückgegeben hat. Hat die Tabelle keinen Benutzer zurückgegeben, bekommt der Benutzer auf der Karte das Dokument. Version zwei weist immer den Benutzer auf der Karte zu.
+
+**Beispiel: Genehmiger aus der Tabelle, Ersatz auf der Karte** · [0:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/de.mp4#t=40.916)
+
+Zum Beispiel gibt eine Entscheidungstabelle den Genehmiger für den Rechnungsbetrag zurück, und die Zuweisungskarte nutzt ihn. Findet die Tabelle niemanden, bekommt Alex Example die Rechnung.
+
+</details>
+
 ## **Zweck:**
 
 Die Workflow-Karte **"Assign Document to User"** ermöglicht es Benutzern, ein Dokument einem bestimmten Benutzer zuzuweisen, und sorgt so für ein reibungsloses Workflow-Management, indem Dokumente an die passende Person weitergeleitet werden. Version 3 fügt die Möglichkeit hinzu, einen Entscheidungsbaum zu verwenden, um die Benutzerzuweisung dynamisch auf Basis verfügbarer Bedingungen zu bestimmen.

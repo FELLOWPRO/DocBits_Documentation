@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_no_variables_v2-de-de.png" alt="Ordnen Sie das Dokument auf der Grundlage der Entscheidungstabelle nacheinander einem Benutzer/einer Gruppe zu. — Version 2" width="634"><figcaption><p>Ordnen Sie das Dokument auf der Grundlage der Entscheidungstabelle nacheinander einem Benutzer/einer Gruppe zu. — Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/de.mp4" %}
+
+**Video:** Karte: Nacheinander per Entscheidungstabelle zuweisen · 0:45 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Nacheinander per Entscheidungstabelle zuweisen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/de.mp4#t=0.25)
+
+Die Karte Nacheinander per Entscheidungstabelle zuweisen gibt das Dokument nacheinander an die Benutzer und Gruppen, die eine Entscheidungstabelle zurückgegeben hat. Die Karte hat keine Einstellungen: Alles kommt aus der Tabelle.
+
+**Was die Karte braucht** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/de.mp4#t=14.85)
+
+Sie braucht davor eine Entscheidungstabellen-Karte, die ihre Rückgabe speichert. Sie nimmt alle Benutzer und Gruppen, die die Tabelle zurückgegeben hat, und die niedrigste Priorität bekommt das Dokument zuerst. Zeilen ohne Priorität zählen als Priorität eins. Hat die Tabelle niemanden zurückgegeben, nimmt die Karte ihren Fehlerpfad.
+
+**Beispiel: zwei Freigebende nacheinander** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/de.mp4#t=33.85)
+
+Zum Beispiel gibt die Tabelle Example approvers zwei Freigebende mit Priorität eins und zwei zurück. Die Rechnung geht an den ersten und nach der Freigabe an den zweiten.
+
+</details>
+
 ## **Zweck**
 
 Die Workflow-Karte "**Ordnen Sie das Dokument basierend auf der Entscheidungstabelle der Reihe nach einem Benutzer/einer Gruppe zu**" weist Dokumente dynamisch entweder einem Benutzer oder einer Gruppe zu, abhängig von der Auswertung der Entscheidungstabelle. Dadurch wird sichergestellt, dass Dokumente auf Basis vordefinierter Regeln angemessen weitergeleitet werden.

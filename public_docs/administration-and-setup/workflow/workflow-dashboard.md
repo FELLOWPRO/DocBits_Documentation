@@ -4,6 +4,56 @@ Das **Workflow-Dashboard** ist die Startseite des Workflow-Bereichs. Es zeigt, w
 
 <figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard mit Ausführungssummen, Erfolgs- und Fehlerquoten, dem Ausführungsdiagramm und der letzten Aktivität"><figcaption><p>Das Workflow Dashboard – Ausführungssummen, Erfolgs-/Fehlerquoten und letzte Aktivität für jeden Workflow.</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/de.mp4" %}
+
+**Video:** Die Workflow-Liste · 1:54 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Standard-Workflows einschalten** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/de.mp4#t=0.25)
+
+Workflows müssen zuerst für Ihre Organisation eingeschaltet werden. Die Einstellung Workflow Builder unter Module gibt Zugriff auf Standard-Workflows. Advanced Workflows haben eine eigene Einstellung und ein eigenes Abonnement.
+
+**Lizenz: Workflow und Advanced Workflow** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/de.mp4#t=14.383)
+
+Derselbe Schalter ist auf dem Tab Lizenz im Workflow-Dashboard, neben dem für Advanced Workflows. Jede Karte zeigt, ob sie aktiv ist.
+
+**Wählen Sie Ihren Tarif** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/de.mp4#t=24.75)
+
+Einschalten öffnet Wählen Sie Ihren Tarif. Nach Wahl und Bestätigen beginnt das Abonnement. Hier brechen wir ab.
+
+**Abonnements und ihr Status** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/de.mp4#t=32.916)
+
+Alle Abonnements und ihr Status stehen in den Einstellungen unter Abonnement-Plan.
+
+**Neuer Workflow: Standard oder Advanced Workflow** · [0:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/de.mp4#t=38.55)
+
+In der Workflow-Liste wählen Sie über Neuer Workflow zwischen Standard und Advanced Workflow. Zu jedem gibt es ein eigenes Video.
+
+**Mit einer Vorlage beginnen** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/de.mp4#t=47.95)
+
+Vorlagen sind fertige Workflows. Öffnen Sie eine, passen Sie sie an und speichern Sie: So entsteht ein eigener neuer Workflow.
+
+**Heruntergeladene Workflows importieren** · [0:57](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/de.mp4#t=57.983)
+
+Mit Workflow importieren laden Sie zuvor heruntergeladene Workflows hoch, etwa aus einer Testumgebung oder einem Backup: JSON-Dateien, bis zu zehn auf einmal.
+
+**Einen Workflow duplizieren** · [1:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/de.mp4#t=69.05)
+
+Um eine Änderung auszuprobieren, ohne einen laufenden Workflow anzufassen, duplizieren Sie ihn. Die Kopie heißt „copy“ plus der ursprüngliche Name und behält bei, ob sie eingeschaltet ist.
+
+**Ein- und ausschalten** · [1:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/de.mp4#t=87.616)
+
+Das Symbol neben dem Namen zeigt, ob ein Workflow eingeschaltet ist. Zum Ein- oder Ausschalten nutzen Sie Aktivieren oder Deaktivieren im Zeilenmenü.
+
+**Mehrere auf einmal** · [1:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/de.mp4#t=100.05)
+
+Für mehrere Workflows auf einmal haken Sie sie an und öffnen das Menü in der Kopfzeile: gemeinsam aktivieren, deaktivieren oder löschen. Löschen fragt noch einmal nach, bevor die Workflows weg sind.
+
+</details>
+
 ## Reiter
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/de.mp4" %}

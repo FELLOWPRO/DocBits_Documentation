@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_in_list_v2-de-de.png" alt="Dokument nach Unterorganisation aus einer Liste prüfen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/de.mp4" %}
+
+**Video:** Karte: Dokument in einer von mehreren Unterorganisationen · 0:40 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Dokument in einer von mehreren Unterorganisationen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/de.mp4#t=0.25)
+
+Die Karte Dokument in einer der folgenden Unterorganisationen prüft ein Dokument gegen eine Liste von Unterorganisationen. Wählen Sie Ist oder Ist nicht und dann eine oder mehrere Unterorganisationen, zum Beispiel Hamburg plant und Munich plant.
+
+**Eine aus der Liste** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/de.mp4#t=18.516)
+
+Ist trifft zu, wenn das Dokument zu einer der gewählten Unterorganisationen gehört, Ist nicht, wenn es zu keiner gehört. Hat das Dokument keine Unterorganisation, nimmt die Karte ihren Fehlerpfad.
+
+**Beispiel: Rechnungen zweier Werke** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/de.mp4#t=31.616)
+
+Zum Beispiel gehen Rechnungen der beiden deutschen Werke an das Buchhaltungsteam in Deutschland. Dokumente von Vienna office erreichen diesen Schritt nicht.
+
+</details>
+
 ## Zweck:
 
 Diese Workflow-Karte prüft, ob ein Dokument zu einer von mehreren Unterorganisationen gehört. Statt das Dokument mit einer einzelnen Unterorganisation zu vergleichen, vergleicht sie es mit einer Liste. So deckt eine Karte eine ganze Gruppe von Unterorganisationen ab, die gleich behandelt werden sollen. Je nach Ergebnis wird der Workflow mit der True- oder der False-Bedingung fortgesetzt.

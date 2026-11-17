@@ -40,6 +40,24 @@ Die Workflow-Karte "Document Status Condition" ist unverzichtbar, um sicherzuste
 
 <!-- workflow-card-practical-example-20261021 -->
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/de.mp4" %}
+
+**Video:** Karte: Dokumentstatus: einer aus einer Liste · 0:36 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Dokumentstatus: einer aus einer Liste** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/de.mp4#t=0.25)
+
+Die Karte Dokumentstatus in Liste prüft den Status des Dokuments gegen mehrere Status auf einmal. Wählen Sie Ist oder Ist nicht und dann die Status. Ist trifft zu, wenn das Dokument einen davon hat.
+
+**Beispiel: zwei Status, eine Erinnerung** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/de.mp4#t=18.65)
+
+Zum Beispiel geht die Erinnerung raus, solange eine Rechnung Bereit zur Validierung oder Genehmigung ausstehend ist: die Wenn-Karte für Rechnungen, dann Dokumentstatus in dieser Liste, dann die Erinnerung. In jedem anderen Status erreicht das Dokument die Erinnerung nicht.
+
+</details>
+
 ## Praxisbeispiel
 
 **Wann nutzen:** Eine gemeinsame Prüfung auf die erste oder zweite Freigabestufe anwenden.

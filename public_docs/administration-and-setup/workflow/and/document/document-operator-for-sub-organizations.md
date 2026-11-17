@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2-de-de.png" alt="Dokument nach Unterorganisation prüfen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/de.mp4" %}
+
+**Video:** Karte: Dokument Teil einer Unterorganisation · 0:41 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Dokument Teil einer Unterorganisation** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/de.mp4#t=0.25)
+
+Die Karte Dokument Teil der Unterorganisation prüft, zu welcher Unterorganisation ein Dokument gehört. Wählen Sie Ist oder Ist nicht und dann die Unterorganisation, zum Beispiel Munich plant.
+
+**Genau eine Unterorganisation** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/de.mp4#t=16.283)
+
+Die Karte vergleicht genau diese Unterorganisation. Hat das Dokument keine Unterorganisation, nimmt die Karte ihren Fehlerpfad. Um mehrere Unterorganisationen auf einmal zu prüfen, nutzen Sie die Karte in einer der folgenden Unterorganisationen.
+
+**Beispiel: Rechnungen eines Werks** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/de.mp4#t=31.45)
+
+Zum Beispiel gehen Rechnungen von Munich plant an das Buchhaltungsteam in München. Dokumente anderer Unterorganisationen erreichen diesen Schritt nicht.
+
+</details>
+
 ## Zweck:
 
 Diese Workflow-Karte wertet aus, ob ein Dokument Teil einer bestimmten Unterorganisation ist. Basierend auf dieser Auswertung kann der Workflow entweder fortgesetzt werden oder unterschiedliche Aktionen auslösen, je nachdem, ob das Dokument der angegebenen Unterorganisation zugeordnet ist oder nicht.

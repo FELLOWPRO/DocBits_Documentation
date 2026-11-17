@@ -44,6 +44,36 @@ Ein Advanced Workflow ist ein Graph aus **Knoten**, die durch Kanten verbunden s
 
 ## Knotentypen
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/de.mp4" %}
+
+**Video:** Die Version einer Karte ändern · 0:39 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Das Label zeigt die Version der Karte** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/de.mp4#t=0.25)
+
+Karten können mehrere Versionen haben. Das kleine Label auf einer Karte, zum Beispiel v1, zeigt, welche Version sie nutzt. Eine neuere Version kann mehr.
+
+**Klicken, um die Versionen zu sehen** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/de.mp4#t=11.583)
+
+Klicken Sie auf das Versionslabel, um die Versionen dieser Karte zu sehen.
+
+**Version 3: Status nach dem Export** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/de.mp4#t=16.916)
+
+Wählen Sie die neuere Version. Diese kann nach dem Export auch den Status des Dokuments setzen.
+
+**Die Werte neu setzen** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/de.mp4#t=23.683)
+
+Die Werte werden nicht übernommen. Setzen Sie sie neu, hier die Exportkonfiguration und den Status.
+
+**Validieren und testen** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/de.mp4#t=31.65)
+
+Validieren und testen Sie dann den Workflow, wie nach jeder Änderung. Speichern Sie, wenn er tut, was Sie erwarten.
+
+</details>
+
 * **Start** — manueller Einstieg; in der geprüften Oberfläche benötigt der gespeicherte Graph zusätzlich einen When-Einstieg.
 - **When** — eine Trigger-Karte, identisch mit der im Standard-Builder.
 - **And** — eine Bedingungskarte. Sie wird zu wahr oder falsch ausgewertet und kann den Ablauf verzweigen.
@@ -92,6 +122,64 @@ Verbinden Sie den roten Fehlerpfad mit einem Ausweg, zum Beispiel einer Aufgabe 
 **Wie ein Lauf endet** · [1:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/de.mp4#t=70.783)
 
 Kurz gesagt: Jeder Fehler macht den Lauf zum Fehler. Eine gescheiterte Bedingung ohne verbundenen orangen Pfad macht ihn zur gescheiterten Bedingung. Alles andere endet mit Erfolg.
+
+</details>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4" %}
+
+**Video:** UND und ODER: Bedingungen verbinden · 4:19 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**UND und ODER** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4#t=0.25)
+
+Bedingungen lassen sich auf zwei Arten verbinden. Karten hintereinander wirken wie UND: alle müssen wahr sein. Karten nebeneinander, mit derselben nächsten Karte verbunden, wirken wie ODER: eine wahre Karte genügt. Verbindungsknoten zeigen das auf der Arbeitsfläche.
+
+**UND: Karten hintereinander** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4#t=18.55)
+
+Eine Karte nach der anderen ist UND: Jede Karte auf dem Pfad muss wahr sein, bevor die nächste läuft. Diese Rechnung ist bereit zur Validierung und nicht in Genehmigung, also sind beide Karten wahr und die Aktion läuft.
+
+**ODER: Karten nebeneinander** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4#t=34.85)
+
+ODER heißt Karten nebeneinander. Verbinden Sie den grünen Ausgang beider Und-Karten direkt mit dem Eingang der nächsten Karte. Testen Sie es: Die erste Karte ist falsch, die zweite wahr, und ein wahrer Pfad reicht, damit die Aktion läuft. Das Testbanner meldet trotzdem eine nicht erfüllte Bedingung, weil der orange Ausgang der falschen Karte nicht verbunden ist, aber die Aktion läuft.
+
+**Dasselbe mit einer ODER-Karte** · [0:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4#t=58.416)
+
+Sie können die Pfade auch mit einer ODER-Karte zusammenführen. Sie bewirkt dasselbe, macht das ODER aber auf der Arbeitsfläche sichtbar. Rechtsklick auf die Arbeitsfläche, Hinzufügen, dann ODER. Verbinden Sie beide Und-Karten damit und die ODER-Karte mit der Aktion.
+
+**Ein wahrer Fall genügt für ODER** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4#t=76.316)
+
+Der Test liefert dasselbe Ergebnis: Ein wahrer Fall genügt der ODER-Karte, also läuft die Aktion. Auch hier meldet das Banner die nicht erfüllte Bedingung der falschen Karte.
+
+**Auf EINEN warten: dasselbe wie ODER** · [1:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4#t=90.283)
+
+Auf EINEN warten funktioniert genau wie ODER: Die Karte wartet auf jede Karte davor und macht weiter, wenn mindestens ein Pfad genommen wurde. Beide sind austauschbar, nehmen Sie den Namen, der in Ihrem Workflow besser passt.
+
+**UND mit Auf ALLE warten** · [1:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4#t=111.983)
+
+Für UND mit Karten nebeneinander nehmen Sie Auf ALLE warten. Rechtsklick auf die Arbeitsfläche, Hinzufügen, dann Auf ALLE warten. Verbinden Sie beide Und-Karten damit und Auf ALLE warten mit der Aktion. Testen Sie es: Die Karte wartet auf beide, beide sind wahr, also läuft die Aktion.
+
+**Die Reihenfolge: wie die Verbindungen gezogen wurden** · [2:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4#t=139.816)
+
+In welcher Reihenfolge läuft das? Der Workflow arbeitet eine Liste ab. Die Karten hinter einer Karte kommen in der Reihenfolge dazu, in der ihre Verbindungen gezogen wurden, also läuft die obere Bedingung zuerst, dann die untere. Die ODER-Karte wartet, bis beide gelaufen sind, und die Aktion läuft einmal, egal wie viele Bedingungen wahr waren.
+
+**Direkt in eine Aktion: kein Warten** · [2:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4#t=170.783)
+
+Karten, die direkt mit einer Aktion verbunden sind, warten nicht. Die Aktion wird über den kurzen Pfad erreicht und läuft, bevor die letzte Karte des langen Pfads geprüft ist, also ändert diese Karte nichts mehr. Soll die Aktion auf jede Prüfung warten, setzen Sie eine ODER-, Auf EINEN warten- oder Auf ALLE warten-Karte davor.
+
+**Jeder Ausgang kann woanders hinführen** · [3:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4#t=192.783)
+
+Jede Karte hat bis zu drei Ausgänge: Erfolg, nicht erfüllte Bedingung und Fehler. Jeder Ausgang kann zu einer eigenen nächsten Karte führen.
+
+**Mehrere Ausgänge, ein Eingang: einer genügt** · [3:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4#t=204.816)
+
+Sie können auch mehrere Ausgänge einer Karte mit demselben Eingang verbinden. Nur einer davon kann genommen werden, weil eine Karte mit genau einem Ergebnis endet, also wartet die nächste Karte nur auf diesen einen. Das gilt für jeden Eingang, nicht nur für diese Verbindungsknoten. Testen Sie es: Die Bedingung ist nicht erfüllt, und Auf ALLE warten läuft trotzdem weiter.
+
+**Verbindungsknoten: welche Pfade genommen wurden** · [3:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/de.mp4#t=233.85)
+
+Die Verbindungsknoten machen einen Workflow vor allem leichter lesbar. ODER und Auf EINEN warten laufen weiter, sobald mindestens ein verbundener Pfad genommen wurde. Auf ALLE warten wartet, bis alle vorherigen Karten fertig sind, und läuft nur weiter, wenn alle verbundenen Pfade genommen wurden. Jeder Ausgang einer Karte kann verbunden werden, nicht nur der grüne: Endet eine Karte mit nicht erfüllter Bedingung, zählt ihr orange Ausgang als genommen.
 
 </details>
 

@@ -2,6 +2,24 @@
 
 <figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2-de-de.png" alt="Dokumenttyp aus einer Liste, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/de.mp4" %}
+
+**Video:** Karte: Dokumenttyp: einer aus einer Liste · 0:31 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Dokumenttyp: einer aus einer Liste** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/de.mp4#t=0.25)
+
+Die Karte Dokumenttyp einer der folgenden prüft den Typ eines Dokuments gegen eine Liste. Wählen Sie Ist oder Ist nicht und dann einen oder mehrere Dokumenttypen. Ist trifft zu, wenn der Typ in der Liste steht, Ist nicht, wenn er nicht darin steht.
+
+**Beispiel: Rechnungen und Gutschriften** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/de.mp4#t=18.25)
+
+Zum Beispiel ein Workflow für Rechnungen und Gutschriften: Dokumenttyp ist einer von Rechnung und Gutschrift als Wenn-Karte, dann die Zuweisungskarte. Andere Dokumente starten diesen Workflow nicht.
+
+</details>
+
 ## **Zweck:**
 
 Diese DocBits-Karte gewährleistet die korrekte Klassifizierung eines Dokuments, indem überprüft wird, ob es einem der angegebenen Dokumententypen entspricht. Dies ist nützlich in Situationen, in denen ein Dokument mehreren Kategorien zugeordnet werden könnte, um eine umfassendere Validierung und automatisierte Verarbeitung zu ermöglichen.

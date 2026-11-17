@@ -47,3 +47,21 @@ Karta przepływu pracy "Document Status Condition" jest kluczowa dla zapewnienia
 **Oczekiwany wynik i kontrprzykład:** Warunek jest prawdziwy dla dokumentu o dowolnym wybranym statusie. Dla dokumentu o statusie **Gotowy do walidacji** jest to fałsz. W przypadku operatora, który wymaga, aby status znajdował się poza listą, wyniki tych warunków są odwrotne. Sprawdź rzeczywistą listę, zamiast porównywać wartość w postaci wolnego tekstu oddzieloną przecinkami.
 
 To jest ilustracyjna konfiguracja testu i oczekiwany wynik; nie zostało ono wykonane. Skorzystaj z danych i odbiorców skonfigurowanych w Twojej organizacji testowej.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/pl.mp4" %}
+
+**Film:** Karta: Status dokumentu: jeden z listy · 0:43 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Status dokumentu: jeden z listy** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/pl.mp4#t=0.25)
+
+Karta Status dokumentu na liście porównuje status dokumentu z kilkoma statusami naraz. Wybierz Jest albo Nie jest, a potem statusy. Jest pasuje, gdy dokument ma jeden z nich.
+
+**Przykład: dwa statusy, jedno przypomnienie** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/pl.mp4#t=20.683)
+
+Na przykład przypomnienie wychodzi, gdy faktura ma status Gotowy do walidacji lub Oczekujące na zatwierdzenie: karta Kiedy dla faktur, potem Status dokumentu na tej liście, potem przypomnienie. W każdym innym statusie dokument nie dociera do przypomnienia.
+
+</details>
+

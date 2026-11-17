@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_set_boolean_field_v2-pl-pl.png" alt="Ustaw pole wyboru na, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/pl.mp4" %}
+
+**Film:** Karta: Ustaw pole wyboru · 0:54 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Ustaw pole wyboru** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/pl.mp4#t=0.25)
+
+Karta Ustaw pole wyboru zaznacza lub odznacza pole wyboru dokumentu. Wybierz pole, na przykład Special handling, oraz to, czy ma być zaznaczone.
+
+**Zaznaczone lub nie, potem zapisane** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/pl.mp4#t=18.916)
+
+Karta zapisuje wartość i zapisuje dokument, nawet jeśli pole wyboru było wcześniej puste. Jeśli pole nie jest polem wyboru, na przykład kwotą, karta wybiera swoje wyjście błędu. Aby przełączyć pole wyboru na wartość przeciwną, użyj karty Odwróć pole wyboru.
+
+**Przykład: zaznaczenie Special handling** · [0:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/pl.mp4#t=43.116)
+
+Na przykład gdy dostawca wymaga specjalnej obsługi, Workflow zaznacza Special handling, a walidator widzi to na dokumencie.
+
+</details>
+
 ## **Cel:**
 
 Ta karta przepływu pracy służy do ustawienia pola wyboru na określoną wartość (true lub false) na podstawie warunków zdefiniowanych w sekcjach **„Kiedy”** i **„I”**. Zapewnia prosty, ale skuteczny sposób automatyzacji aktualizacji pól wyboru, gdy spełnione są określone kryteria, zapewniając usprawnione przetwarzanie dokumentów.

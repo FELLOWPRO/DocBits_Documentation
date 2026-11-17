@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v3-pl-pl.png" alt="Tabela decyzyjna zwraca wyniki, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/pl.mp4" %}
+
+**Film:** Karta: Tabela decyzyjna zwraca wyniki · 0:58 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Tabela decyzyjna zwraca wyniki** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/pl.mp4#t=0.25)
+
+Karta Tabela decyzyjna zwraca wyniki uruchamia tabelę decyzyjną dla dokumentu. Wybierz tabelę, na przykład Example approvers, i czy zwrócone dane mają być zapisane dla kolejnych kart.
+
+**Pasujący wiersz oznacza prawdę** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/pl.mp4#t=18.683)
+
+Jeśli wiersz tabeli pasuje do dokumentu, karta jest prawdziwa. Jeśli żaden wiersz nie pasuje, jest fałszywa. Zapisane dane wykorzystują późniejsze karty, na przykład karty przypisania. Workflow zachowuje tylko ostatni zapisany wynik.
+
+**Przykład: zatwierdzający z tabeli** · [0:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/pl.mp4#t=40.183)
+
+Na przykład tabela znajduje zatwierdzających dla kwoty faktury i zapisuje ich, a następna karta przypisuje im fakturę. Jeśli tabela nikogo nie znajdzie, karta jest fałszywa i przypisanie nie działa.
+
+</details>
+
 ## **Cel:**
 
 Ta karta DocBits sprawdza, czy określona tabela decyzyjna ma wartości zwracane dla danego dokumentu, i określa, czy zwrócone dane powinny zostać użyte w kolejnych krokach przepływu pracy. Zapewnia, że przepływy pracy mogą dynamicznie dostosowywać się na podstawie wyników tabeli decyzyjnej.

@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-pl-pl.png" alt="Pole wyboru jest zaznaczone, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/pl.mp4" %}
+
+**Film:** Karta: Pole wyboru jest zaznaczone · 0:45 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Pole wyboru jest zaznaczone** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/pl.mp4#t=0.25)
+
+Karta Pole wyboru sprawdza pole wyboru w dokumencie. Wybierz pole, na przykład Special handling, i czy ma być zaznaczone, czy niezaznaczone.
+
+**Puste znaczy niezaznaczone** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/pl.mp4#t=17.55)
+
+Puste pole wyboru liczy się jako niezaznaczone. Jeśli dokument nie ma takiego pola, karta idzie swoją ścieżką błędu.
+
+**Przykład: zaznaczenie Special handling** · [0:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/pl.mp4#t=30.783)
+
+Na przykład walidator zaznacza Special handling, a Workflow wysyła dokument do zespołu logistyki. Dokumenty bez zaznaczenia idą zwykłą ścieżką.
+
+</details>
+
 ## Cel:
 
 Ta karta przepływu pracy sprawdza, czy pole wyboru w dokumencie jest zaznaczone, czy niezaznaczone. Może być używana do tego, aby przepływ pracy był kontynuowany dopiero po ustawieniu znacznika w dokumencie, na przykład znacznika weryfikacji.

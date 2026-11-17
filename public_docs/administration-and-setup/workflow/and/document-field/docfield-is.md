@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v2-pl-pl.png" alt="Porównanie pola dokumentu z wartością odniesienia, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/pl.mp4" %}
+
+**Film:** Karta: Pole dokumentu porównane z wartością · 1:00 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Pole dokumentu porównane z wartością** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/pl.mp4#t=0.25)
+
+Karta Pole dokumentu porównuje jedno pole dokumentu z wartością, którą wpisujesz. Wybierz pole, na przykład Całkowita kwota, potem operator, tutaj Większy niż, i wartość, dziesięć tysięcy.
+
+**Tekst, liczby, daty** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/pl.mp4#t=21.916)
+
+Pola tekstowe mogą być tylko równe lub różne, a wielkość liter nie ma znaczenia. Liczby i daty mogą też być większe lub mniejsze od wartości. Jeśli pola nie ma w dokumencie, karta idzie swoją ścieżką błędu.
+
+**Przykład: duże faktury wymagają drugiego zatwierdzenia** · [0:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/pl.mp4#t=41.95)
+
+Na przykład drugie zatwierdzenie dla dużych faktur: Całkowita kwota większa niż dziesięć tysięcy, potem karta przypisania dla działu finansów. Mniejsze faktury nie docierają do tego kroku.
+
+</details>
+
 ## **Cel:**
 
 Ta karta przepływu pracy służy do automatyzacji akcji poprzez porównanie wartości określonego pola dokumentu z wartością referencyjną lub warunkiem. Zapewnia dynamiczne i dokładne podejmowanie decyzji w przepływach pracy na podstawie walidacji danych dokumentu.

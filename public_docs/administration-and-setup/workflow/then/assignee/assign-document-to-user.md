@@ -6,6 +6,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-pl-pl.png" alt="Przypisz dokument do Użytkownika, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/pl.mp4" %}
+
+**Film:** Karta: Przypisz dokument użytkownikowi · 1:07 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Przypisz dokument użytkownikowi** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/pl.mp4#t=0.25)
+
+Karta Przypisz dokument użytkownikowi daje dokument jednemu użytkownikowi: wybierz użytkownika. Wersja trzecia, wybrana etykietą wersji, dodaje drugie ustawienie: czy zamiast tego użytkownika może wybrać tabela decyzyjna.
+
+**Drzewo decyzyjne: najpierw użytkownik z tabeli** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/pl.mp4#t=24.083)
+
+Gdy drzewo decyzyjne jest włączone, karta bierze pierwszego użytkownika, którego zwróciła karta tabeli decyzyjnej wcześniej w Workflow. Jeśli tabela nie zwróciła użytkownika, dokument dostaje użytkownik z karty. Wersja druga zawsze przypisuje użytkownika z karty.
+
+**Przykład: zatwierdzający z tabeli, zapas na karcie** · [0:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/pl.mp4#t=51.716)
+
+Na przykład tabela decyzyjna zwraca zatwierdzającego dla kwoty faktury, a karta przypisania go używa. Gdy tabela nikogo nie znajdzie, fakturę dostaje Alex Example.
+
+</details>
+
 ## **Cel:**
 
 Karta przepływu pracy **"Assign Document to User"** umożliwia użytkownikom przypisanie dokumentu do określonego użytkownika, zapewniając płynne zarządzanie przepływem pracy poprzez kierowanie dokumentów do odpowiedniej osoby. Version 3 dodaje możliwość użycia drzewa decyzyjnego do dynamicznego określania przypisania użytkownika na podstawie dostępnych warunków.

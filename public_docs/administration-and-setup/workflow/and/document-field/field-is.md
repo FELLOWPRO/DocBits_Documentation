@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-fr-fr.png" alt="Vérifier la présence et le contenu d’un champ, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Champ vide ou non · 0:47 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Champ vide ou non** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/fr.mp4#t=0.25)
+
+La carte Le champ est vérifie si un champ du document est vide. Choisissez le champ, par exemple Bon de commande, et le statut : vide ou absent du document, ou présent dans le document et non vide.
+
+**Absent compte comme vide** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/fr.mp4#t=18.716)
+
+Un champ compte comme vide s'il n'a pas de valeur, seulement des espaces, une case non cochée ou une liste vide. Un champ absent du document compte aussi comme vide. Si le statut correspond, la carte est vraie. Sinon, elle est fausse.
+
+**Exemple : pas de bon de commande** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/fr.mp4#t=34.45)
+
+Par exemple, une facture sans bon de commande va à l'approbateur des factures sans commande. Les factures avec un bon de commande prennent l'autre chemin, par exemple le rapprochement de commande.
+
+</details>
+
 ## Quand l’utiliser
 
 Utilisez cette carte pour vérifier si un champ du document est vide ou absent, par exemple lorsqu’une facture sans numéro nécessite un contrôle supplémentaire. Il s’agit d’une condition ; configurez séparément l’action suivante.

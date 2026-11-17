@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v2-fr-fr.png" alt="Comparer un champ de document à une valeur de référence, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Champ du document comparé à une valeur · 0:48 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Champ du document comparé à une valeur** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/fr.mp4#t=0.25)
+
+La carte Champ du document compare un champ du document avec une valeur que vous saisissez. Choisissez le champ, par exemple Montant total, puis l'opérateur, ici Supérieur à, et la valeur, dix mille.
+
+**Texte, nombres, dates** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/fr.mp4#t=19.616)
+
+Les champs texte peuvent seulement être égaux ou différents, et les majuscules ne comptent pas. Les nombres et les dates peuvent aussi être supérieurs ou inférieurs à la valeur. Si le champ n'est pas sur le document, la carte prend son chemin d'erreur.
+
+**Exemple : les grosses factures exigent une deuxième approbation** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/fr.mp4#t=35.35)
+
+Par exemple, une deuxième approbation des grosses factures : Montant total supérieur à dix mille, puis la carte d'attribution pour la finance. Les factures petites n'atteignent pas cette étape.
+
+</details>
+
 ## **Objectif :**
 
 Cette carte de workflow est conçue pour automatiser des actions en comparant la valeur d'un champ de document spécifié à une valeur ou condition de référence. Elle garantit une prise de décision dynamique et précise dans les workflows, fondée sur la validation des données du document.

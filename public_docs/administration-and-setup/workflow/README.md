@@ -6,6 +6,56 @@ description: Moteur de workflow DocBits
 
 <figure><img src="../../.gitbook/assets/docbits_workflow_3.png" alt="DocBits Workflow 3"><figcaption></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/fr.mp4" %}
+
+**Vidéo:** Termes des Workflows : qui est quoi · 1:28 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Les mots des vidéos** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/fr.mp4#t=0.25)
+
+Les vidéos utilisent souvent quelques mots. Voici ce que chacun veut dire.
+
+**Standard et Advanced** · [0:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/fr.mp4#t=6.283)
+
+Un Workflow, c'est un ensemble de règles pour les documents, de deux types.
+
+**Standard : une liste fixe** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/fr.mp4#t=12.183)
+
+Un Workflow Standard est une liste fixe de cartes Quand, Et et Dans ce cas.
+
+**Advanced : un canevas** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/fr.mp4#t=18.15)
+
+Un Advanced Workflow est un canevas où vous placez librement des cartes et les reliez.
+
+**Quand, Et, Dans ce cas** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/fr.mp4#t=25.783)
+
+Les cartes font le travail. La carte Quand choisit les documents du Workflow, les cartes Et vérifient des conditions, les cartes Dans ce cas agissent, par exemple exporter.
+
+**Toute carte est un nœud, tout nœud n'est pas une carte** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/fr.mp4#t=37.583)
+
+Tout sur le canevas est un nœud. Toute carte est un nœud, mais tout nœud n'est pas une carte. OU, Attendre UN SEUL et Attendre TOUS réunissent des chemins, les notes contiennent juste du texte.
+
+**Une entrée, trois sorties** · [0:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/fr.mp4#t=50.983)
+
+Une carte a une entrée et jusqu'à trois sorties : succès, condition échouée en orange, et erreur en rouge.
+
+**Les connexions forment le chemin** · [0:59](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/fr.mp4#t=59.75)
+
+Une connexion va d'une sortie à l'entrée du nœud suivant. Les connexions que suit un document forment son chemin.
+
+**Variables** · [1:07](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/fr.mp4#t=67.716)
+
+Les variables sont les valeurs des champs d'une carte. Les variables de Workflow transmettent des valeurs plus loin.
+
+**Exécution et test** · [1:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/fr.mp4#t=75.616)
+
+Une exécution, c'est le Workflow qui traite un vrai document ; son journal montre le chemin. Un test exécute le canevas sur un document choisi, et les actions sont seulement simulées.
+
+</details>
+
 ## Moteur de workflow DocBits : Simplifier l'automatisation des processus
 
 ### Introduction

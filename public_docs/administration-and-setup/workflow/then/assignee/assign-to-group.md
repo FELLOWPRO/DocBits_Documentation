@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-fr-fr.png" alt="Attribuer au groupe, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Attribuer le document à un groupe · 0:49 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Attribuer le document à un groupe** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/fr.mp4#t=0.25)
+
+La carte Assigner au groupe donne le document à un groupe, par exemple Accounts payable. La version trois, choisie avec l'étiquette de version, ajoute un second réglage : une table de décision peut-elle choisir le groupe à la place.
+
+**Arbre de décision : d'abord le groupe de la table** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/fr.mp4#t=21.683)
+
+Avec l'arbre de décision activé, la carte prend le groupe renvoyé par une carte de table de décision plus tôt dans le Workflow. Si la table n'a renvoyé aucun groupe, celui de la carte reçoit le document. La version deux attribue toujours le groupe de la carte.
+
+**Exemple : groupe de la table, repli sur la carte** · [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/fr.mp4#t=36.783)
+
+Par exemple, une table de décision renvoie le groupe pour le fournisseur, et la carte d'attribution l'utilise. Si la table ne trouve aucun groupe, Accounts payable reçoit la facture.
+
+</details>
+
 ## Objectif :
 
 La carte de workflow **« Assign to Group »** facilite l'attribution de documents à un **groupe** spécifique au sein du système. Cela garantit que le document est traité par l'équipe appropriée, rationalisant le workflow. Améliorée dans les versions ultérieures, elle introduit une fonctionnalité d'arbre de décision pour l'attribution dynamique de groupe.

@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_no_variables_v2-fr-fr.png" alt="Attribuer le document de manière séquentielle à l&#x27;utilisateur / au groupe sur la base de la table de décision. — Version 2" width="634"><figcaption><p>Attribuer le document de manière séquentielle à l'utilisateur / au groupe sur la base de la table de décision. — Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Attribuer successivement selon une table de décision · 0:48 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Attribuer successivement selon une table de décision** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/fr.mp4#t=0.25)
+
+La carte Attribuer successivement selon une table de décision donne le document, l'un après l'autre, aux utilisateurs et groupes renvoyés par une table de décision. La carte n'a aucun réglage : tout vient de la table.
+
+**Ce dont la carte a besoin** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/fr.mp4#t=14.45)
+
+Elle a besoin avant elle d'une carte de table de décision qui enregistre les données renvoyées. Elle prend tous les utilisateurs et groupes renvoyés par la table, et la priorité la plus basse reçoit le document en premier. Les lignes sans priorité comptent comme priorité un. Si la table n'a renvoyé personne, la carte prend sa sortie d'erreur.
+
+**Exemple : deux approbateurs l'un après l'autre** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/fr.mp4#t=35.683)
+
+Par exemple, la table Example approvers renvoie deux approbateurs de priorité un et deux. La facture va au premier, puis, après son approbation, au second.
+
+</details>
+
 ## **Objectif**
 
 La carte de workflow « **Attribuer le document de manière séquentielle à l'utilisateur/au groupe en fonction de la table de décision** » assigne dynamiquement des documents soit à un utilisateur, soit à un groupe, selon l'évaluation de la table de décision. Cela garantit que les documents sont acheminés de manière appropriée en fonction de règles prédéfinies.

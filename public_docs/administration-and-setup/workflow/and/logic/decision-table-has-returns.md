@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v3-fr-fr.png" alt="La table de décision renvoie des résultats, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Table de décision renvoie des résultats · 0:48 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Table de décision renvoie des résultats** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/fr.mp4#t=0.25)
+
+La carte Table de décision renvoie des résultats exécute une table de décision pour le document. Choisissez la table, par exemple Example approvers, et si ses données renvoyées sont stockées pour les cartes suivantes.
+
+**Une ligne correspondante signifie vrai** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/fr.mp4#t=17.983)
+
+Si une ligne de la table correspond au document, la carte est vraie. Si aucune ligne ne correspond, elle est fausse. Les données stockées servent aux cartes suivantes, comme les cartes d'attribution. Un Workflow ne garde que le dernier résultat stocké.
+
+**Exemple : approbateurs depuis une table** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/fr.mp4#t=33.883)
+
+Par exemple, la table trouve les approbateurs pour le montant de la facture et les stocke, puis la carte suivante leur attribue la facture. Si la table ne trouve personne, la carte est fausse et l'attribution ne s'exécute pas.
+
+</details>
+
 ## **Objectif :**
 
 Cette carte DocBits vérifie si une table de décision spécifiée renvoie des valeurs pour un document donné et détermine si les données renvoyées doivent être utilisées dans les étapes ultérieures du workflow. Elle garantit que les workflows peuvent s'adapter dynamiquement en fonction des résultats de la table de décision.

@@ -34,6 +34,32 @@ Les Workflows Standard restent simples. Ils ont une carte Quand, toutes les cart
 
 </details>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/fr.mp4" %}
+
+**Vidéo:** Tester des cartes dans un Workflow Standard · 0:53 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Tester la carte : une carte à la fois** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/fr.mp4#t=0.25)
+
+Dans un Workflow Standard, vous testez une carte à la fois. Ouvrez le menu d'une carte, ici la carte Et, et choisissez Tester la carte. Cherchez un document sur lequel tester.
+
+**Le résultat et les journaux de la carte** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/fr.mp4#t=12.15)
+
+Cliquez sur Tester avec ce document. La facture est prête pour la validation, pas en attente d'approbation : la condition n'est donc pas remplie. Les journaux de la carte disent pourquoi.
+
+**Tester une action ne change rien** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/fr.mp4#t=24.916)
+
+Les actions peuvent aussi être testées. Le résultat montre ce que la carte ferait, mais le document n'est pas modifié.
+
+**Une carte, réglages actuels, aucun changement** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/fr.mp4#t=35.55)
+
+Tester la carte utilise les réglages affichés à l'écran, même avant d'enregistrer. Il teste une carte, pas tout le Workflow : il ne montre donc pas si la carte suivante s'exécuterait. Pour tester un flux entier d'un coup, utilisez un Advanced Workflow.
+
+</details>
+
 Créez un Standard Workflow complet dans la véritable interface DocBits : sélectionnez la facture, vérifiez son numéro et un montant supérieur à 1000, affectez un vérificateur et modifiez le statut. Enregistrez la règle, exécutez trois scénarios de test et confirmez le résultat réel sur le document.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/fr.mp4" %}

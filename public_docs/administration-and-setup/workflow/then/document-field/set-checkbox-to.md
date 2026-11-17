@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_set_boolean_field_v2-fr-fr.png" alt="Définissez la case à cocher sur, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Définir la case à cocher · 0:44 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Définir la case à cocher** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/fr.mp4#t=0.25)
+
+La carte Définir la case à cocher coche ou décoche un champ case à cocher du document. Choisissez le champ, par exemple Special handling, et s'il doit être coché.
+
+**Cochée ou non, puis enregistrée** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/fr.mp4#t=16.75)
+
+La carte écrit la valeur et enregistre le document, même si la case était vide avant. Si le champ n'est pas une case à cocher, par exemple un montant, la carte prend sa sortie d'erreur. Pour basculer une case vers la valeur inverse, utilisez la carte Inverser la case à cocher.
+
+**Exemple : cocher Special handling** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/fr.mp4#t=33.45)
+
+Par exemple, quand le fournisseur demande un traitement spécial, le Workflow coche Special handling, et le validateur le voit sur le document.
+
+</details>
+
 ## **Objectif :**
 
 Cette carte de workflow est conçue pour définir un champ de type case à cocher sur une valeur spécifiée (true ou false) en fonction des conditions définies dans les sections **« Quand »** et **« Et »**. Elle offre un moyen simple mais efficace d'automatiser la mise à jour des cases à cocher lorsque certains critères sont satisfaits, garantissant un traitement rationalisé des documents.

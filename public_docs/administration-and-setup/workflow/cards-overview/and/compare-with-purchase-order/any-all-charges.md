@@ -4,6 +4,8 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_charges_to_po_v3.png" alt="Workflow card Compare with Purchase Order: Any/All charges must be Operator tolerances of Tolerance Amount Tolerance Type compared to the matched purchase order&#x27;s charge, with a setting for charges that exist on only one side, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_charges_to_po_v4.png" alt="Workflow card Compare with Purchase Order: Any/All charges must be Operator tolerances of Tolerance Amount Tolerance Type compared to the matched Purchase Order&#x27;s charge; a charge of 0.00 is compared as well. If a charge exists on only one side (document or PO), Missing Data Behaviour, version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
+
 ## **Purpose:**
 
 This workflow card compares the additional charges on a document against the additional charges on the matched purchase order, within a defined tolerance. It answers one question: do the document and the purchase order agree about the additional costs? Every charge that purchase order matching paired up is compared, so no field name has to be named on the card.
@@ -31,8 +33,8 @@ Purchase order matching has to run before this card. If the document has no matc
    * **Options**:
      * **Percentage**: a percentage of the purchase order charge.
      * **Value**: a fixed amount.
-5. **Missing Data Behaviour (version 3 only):**
-   * **Description**: What to do when a charge exists on only one side, document or purchase order, so there is no counterpart to compare it against. The option sits at the end of the version 3 sentence.
+5. **Missing Data Behaviour (versions 3 and 4):**
+   * **Description**: What to do when a charge exists on only one side, document or purchase order, so there is no counterpart to compare it against. The option sits at the end of the sentence.
    * **Options**:
      * **treat as a mismatch**: the workflow stops. This is the default.
      * **ignore it and treat as a match**: the workflow continues as if the charge agreed.
@@ -43,7 +45,7 @@ The card runs through the following steps.
 
 1. **It requires a matched purchase order.** With no matched purchase order the card stops immediately and reports missing data.
 2. **It reads the tolerance** from the **Tolerance Amount** and **Tolerance Type** set on the card.
-3. **Version 3 sorts every matched purchase order line** into one of four situations, by asking only whether each side carries any charge at all: charges on both sides, no charges on either side, charges on the document only, or charges on the purchase order only. A line that cannot be resolved against the purchase order data on the document is a data error and the card stops.
+3. **Versions 3 and 4 sort every matched purchase order line** into one of four situations: charges on both sides, no charges on either side, charges on the document only, or charges on the purchase order only. Version 3 asks only whether each side carries a charge above 0.00. Version 4 looks at each charge pair and counts 0.00 as a value; only a charge with no amount at all counts as missing. See **Version Differences** below. A line that cannot be resolved against the purchase order data on the document is a data error and the card stops.
 4. **A charge on one side only settles the whole card.** As soon as one matched line carries charges on one side and none on the other, **Missing Data Behaviour** decides the result and no charge is compared at all, including the charges on lines that are properly paired. The operator and the tolerance are not consulted.
 5. **If no line has charges on either side**, both sides agree there are no additional costs. The **Outside** operator is not satisfied by that, because nothing differs beyond the tolerance, so the workflow stops. Any other operator treats the agreement as satisfied and the workflow continues. **Missing Data Behaviour** has no effect here.
 6. **Otherwise each charge is compared**, document amount against purchase order amount, using the operator and the tolerance. A charge amount that is not a number stops the card with missing data.
@@ -57,7 +59,7 @@ Three consequences are worth knowing before configuring the card.
 
 ## **Setup and Configuration:**
 
-Add the card as an And condition after purchase order matching. Choose whether every charge or any charge has to satisfy the comparison, pick the **Within** or **Outside** operator, and enter the tolerance amount and type. On version 3, choose what should happen when charges appear on one side only.
+Add the card as an And condition after purchase order matching. Choose whether every charge or any charge has to satisfy the comparison, pick the **Within** or **Outside** operator, and enter the tolerance amount and type. On versions 3 and 4, choose what should happen when charges appear on one side only.
 
 To try a configuration without waiting for a document, open the card menu in the Workflow Builder, choose **Test Card**, pick a document and select **Test on Document**. The card log lists every charge that was compared with both amounts, the operator and the tolerance used, and it also records which **Missing Data Behaviour** value resolved the result when a charge was present on one side only.
 
@@ -71,9 +73,25 @@ If neither the order confirmation nor the purchase order carries any charge, the
 
 If the order confirmation carries a freight charge and the purchase order carries none, the operator no longer applies. With **treat as a mismatch** the workflow stops so somebody can check why the charge is on one side only.
 
+If the order confirmation shows the freight charge as 0.00 while the purchase order carries 204.00, version 4 compares the two amounts and the workflow stops with an unmet condition. Version 3 would read the 0.00 as "no charge on the document" and leave the result to **Missing Data Behaviour**.
+
 ## **Version Differences:**
 
-Version 3 is what new cards use. Version 2 remains supported on existing workflows. Both versions compare per charge and combine the results document-wide with the **Any / All** setting, but version 2 has no case classification, which changes what happens whenever charges are not present on both sides:
+Version 4 is what new cards use. Versions 2 and 3 remain supported on existing workflows.
+
+### Version 4 compared with version 3
+
+The two versions have the same settings and the same steps. They differ only in how a charge of 0.00 is treated:
+
+* **Version 3 treats 0.00 as no charge.** A document charge of 0.00 paired with a purchase order charge of 204.00 counts as "the purchase order has charges, the document has none", so **Missing Data Behaviour** decides and the amounts are never compared. With **ignore it and treat as a match** the workflow continues, although the amounts differ.
+* **Version 4 compares 0.00 as an amount.** The same pair is compared like any other: 0.00 against 204.00 is not within the tolerance, so the workflow stops with an unmet condition. A pair with 0.00 on both sides is compared too and agrees.
+* **A charge with no amount is still missing in version 4.** When one side of a pair has no amount at all, for example a charge the purchase order does not carry, **Missing Data Behaviour** decides, as in version 3.
+
+To get this behaviour on an existing workflow, replace the version 3 card with a version 4 card and set the same values.
+
+### Version 2
+
+Version 2 also compares per charge and combines the results document-wide with the **Any / All** setting, but it has no case classification, which changes what happens whenever charges are not present on both sides:
 
 * Version 2 has no **Missing Data Behaviour** option. Its sentence ends after the tolerance type.
 * Version 2 does not sort the matched lines, so it does not recognise a charge that exists on one side only. It compares the amount that is there against the 0.00 held for the missing side, and the operator decides: **Within** is not satisfied and the workflow stops, **Outside** is satisfied and the workflow continues. The card log shows the comparison against 0.00.
@@ -81,4 +99,4 @@ Version 3 is what new cards use. Version 2 remains supported on existing workflo
 
 ## **Conclusion:**
 
-The "Any / All Charges" card automates the check that the additional costs invoiced or confirmed match the additional costs ordered. Because absence of charges on both sides counts as agreement on version 3, documents without additional costs pass without manual intervention, while charges that appear on only one side are held back for review unless that is deliberately allowed.
+The "Any / All Charges" card automates the check that the additional costs invoiced or confirmed match the additional costs ordered. Because absence of charges on both sides counts as agreement on versions 3 and 4, documents without additional costs pass without manual intervention, while charges that appear on only one side are held back for review unless that is deliberately allowed.

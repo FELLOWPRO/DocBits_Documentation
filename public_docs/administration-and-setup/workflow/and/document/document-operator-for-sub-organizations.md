@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2-pt-pt.png" alt="Operador de documentos para suborganizações, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/pt.mp4" %}
+
+**Vídeo:** Cartão: Documento parte de uma suborganização · 0:40 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Documento parte de uma suborganização** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/pt.mp4#t=0.25)
+
+O cartão Documento parte da suborganização verifica a qual suborganização um documento pertence. Escolha É ou Não é e depois a suborganização, por exemplo Munich plant.
+
+**Exatamente uma suborganização** · [0:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/pt.mp4#t=15.15)
+
+O cartão compara exatamente esta suborganização. Se o documento não tiver suborganização, o cartão segue o seu caminho de erro. Para verificar várias suborganizações de uma vez, use o cartão em uma das seguintes suborganizações.
+
+**Exemplo: faturas de uma fábrica** · [0:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/pt.mp4#t=30.316)
+
+Por exemplo, as faturas de Munich plant vão para a equipe de contabilidade de Munique. Documentos de outras suborganizações não chegam a esta etapa.
+
+</details>
+
 ## Propósito:
 
 Este cartão de fluxo de trabalho avalia se um documento faz parte de uma sub-organização específica. Com base nesta avaliação, o fluxo de trabalho pode continuar ou acionar diferentes ações consoante o documento esteja ou não associado à sub-organização especificada.

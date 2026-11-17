@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-pt-pt.png" alt="A caixa de seleção está marcada, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/pt.mp4" %}
+
+**Vídeo:** Cartão: A caixa de seleção está marcada · 0:34 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**A caixa de seleção está marcada** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/pt.mp4#t=0.25)
+
+O cartão Caixa de seleção verifica um campo caixa de seleção do documento. Escolha o campo, por exemplo Special handling, e se deve estar marcada ou não.
+
+**Vazia significa não marcada** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/pt.mp4#t=16.583)
+
+Uma caixa vazia conta como não marcada. Sem essa caixa no documento, o cartão segue o seu caminho de erro.
+
+**Exemplo: uma marca em Special handling** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/pt.mp4#t=23.916)
+
+Por exemplo, o validador marca Special handling, e o Workflow envia o documento para a equipe de logística. Documentos sem a marca seguem o caminho normal.
+
+</details>
+
 ## Propósito:
 
 Este cartão de fluxo de trabalho verifica se um campo de caixa de seleção do documento está marcado ou desmarcado. Pode ser utilizado para que um fluxo de trabalho só continue depois de ter sido definido um indicador no documento, por exemplo um indicador de revisão.

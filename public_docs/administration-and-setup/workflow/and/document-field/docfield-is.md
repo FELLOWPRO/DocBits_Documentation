@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v2-pt-pt.png" alt="Comparar um campo do documento com um valor de referência, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/pt.mp4" %}
+
+**Vídeo:** Cartão: Campo do documento comparado com um valor · 0:43 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Campo do documento comparado com um valor** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/pt.mp4#t=0.25)
+
+O cartão Campo do documento compara um campo do documento com um valor que você digita. Escolha o campo, por exemplo Montante total, depois o operador, aqui Maior que, e o valor, dez mil.
+
+**Texto, números, datas** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/pt.mp4#t=18.916)
+
+Campos de texto só podem ser iguais ou diferentes, e maiúsculas não importam. Números e datas também podem ser maiores ou menores que o valor. Se o campo não estiver no documento, o cartão segue o seu caminho de erro.
+
+**Exemplo: faturas grandes precisam de uma segunda aprovação** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/pt.mp4#t=32.883)
+
+Por exemplo, uma segunda aprovação para faturas grandes: Montante total maior que dez mil, depois o cartão de atribuição para o financeiro. Faturas menores não chegam a esta etapa.
+
+</details>
+
 ## **Propósito:**
 
 Este cartão de fluxo de trabalho foi concebido para automatizar ações comparando o valor de um campo de documento especificado com um valor ou condição de referência. Assegura uma tomada de decisões dinâmica e precisa nos fluxos de trabalho, com base na validação dos dados do documento.

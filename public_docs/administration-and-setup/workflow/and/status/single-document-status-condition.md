@@ -47,3 +47,21 @@ O cartão de fluxo de trabalho "Single Document Status Condition" simplifica a g
 **Resultado esperado e contra-exemplo:** A condição é verdadeira para um documento atualmente em **Aprovação pendente**; é falso para um documento com o status **Pronto para validação**. Use o status real selecionado em sua versão. A alteração de um status não exporta o documento por si só.
 
 Esta é uma configuração de teste ilustrativa e resultado esperado; não foi executado. Use dados e destinatários configurados na sua organização de teste.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/pt.mp4" %}
+
+**Vídeo:** Cartão: Status do documento é / não é · 0:33 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Status do documento é / não é** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/pt.mp4#t=0.25)
+
+O cartão Status do documento verifica o status do documento no momento em que o Workflow é executado. Escolha É ou Não é e depois um status, por exemplo Pronto para validação. Não é corresponde a qualquer outro status.
+
+**Exemplo: atribuir só quando pronto para validação** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/pt.mp4#t=17.083)
+
+Por exemplo, as faturas só são atribuídas enquanto estão prontas para validação: o cartão Quando para faturas, depois Status do documento é Pronto para validação, depois o cartão de atribuição. Em qualquer outro status, o documento não chega à atribuição.
+
+</details>
+

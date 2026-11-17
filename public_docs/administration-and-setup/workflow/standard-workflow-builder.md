@@ -34,6 +34,32 @@ Os Workflows Padrão são simples. Têm um cartão Quando, todos os cartões E p
 
 </details>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/pt.mp4" %}
+
+**Vídeo:** Testar cartões em um Workflow Padrão · 0:49 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Testar cartão: um cartão por vez** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/pt.mp4#t=0.25)
+
+Em um Workflow Padrão, você testa um cartão por vez. Abra o menu de um cartão, aqui o cartão E, e escolha Testar cartão. Procure um documento para testar.
+
+**O resultado e os logs do cartão** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/pt.mp4#t=12.283)
+
+Clique em Testar no documento. A fatura está pronta para validação, não pendente de aprovação, então a condição não é atendida. Os logs do cartão dizem por quê.
+
+**Testar uma ação não muda nada** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/pt.mp4#t=22.983)
+
+Ações também podem ser testadas. O resultado mostra o que o cartão faria, mas o documento não é alterado.
+
+**Um cartão, configurações atuais, sem mudanças** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/pt.mp4#t=33.616)
+
+Testar cartão usa as configurações da tela, mesmo antes de salvar. Testa um cartão, não o Workflow inteiro, então não mostra se o próximo cartão seria executado. Para testar um fluxo inteiro de uma vez, use um Advanced Workflow.
+
+</details>
+
 Crie um Standard Workflow completo na interface real do DocBits: selecione a fatura, verifique o número e um montante superior a 1000, atribua um revisor e altere o estado. Guarde a regra, execute três cenários de teste e confirme o resultado real no documento.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/pt.mp4" %}

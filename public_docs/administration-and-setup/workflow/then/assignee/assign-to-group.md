@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-pt-pt.png" alt="Atribuir ao grupo, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/pt.mp4" %}
+
+**Vídeo:** Cartão: Atribuir o documento a um grupo · 0:46 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Atribuir o documento a um grupo** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/pt.mp4#t=0.25)
+
+O cartão Atribuir ao grupo entrega o documento a um grupo, por exemplo Accounts payable. A versão três, escolhida com o rótulo de versão, acrescenta uma segunda configuração: se uma tabela de decisão pode escolher o grupo em vez disso.
+
+**Árvore de decisão: primeiro o grupo da tabela** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/pt.mp4#t=21.683)
+
+Com a árvore de decisão ativada, o cartão usa o grupo que um cartão de tabela de decisão anterior no Workflow retornou. Se a tabela não retornou nenhum grupo, o grupo do cartão recebe o documento. A versão dois sempre atribui o grupo do cartão.
+
+**Exemplo: grupo da tabela, alternativa no cartão** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/pt.mp4#t=35.883)
+
+Por exemplo, uma tabela de decisão retorna o grupo do fornecedor, e o cartão de atribuição o usa. Sem grupo da tabela, Accounts payable recebe a fatura.
+
+</details>
+
 ## Propósito:
 
 O cartão de fluxo de trabalho **"Assign to Group"** facilita a atribuição de documentos a um **grupo** específico dentro do sistema. Isto assegura que o documento é processado pela equipa adequada, simplificando o fluxo de trabalho. Melhorado em versões posteriores, introduz a funcionalidade de árvore de decisão para a atribuição dinâmica de grupos.

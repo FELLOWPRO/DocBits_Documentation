@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_no_variables_v2-pt-pt.png" alt="Atribua o documento sequencialmente ao Usuário/Grupo com base na tabela de decisão. — Versão 2" width="634"><figcaption><p>Atribua o documento sequencialmente ao Usuário/Grupo com base na tabela de decisão. — Versão 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/pt.mp4" %}
+
+**Vídeo:** Cartão: Atribuir em sequência com base numa tabela de decisão · 0:42 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Atribuir em sequência com base numa tabela de decisão** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/pt.mp4#t=0.25)
+
+O cartão Atribuir em sequência com base numa tabela de decisão entrega o documento, um após o outro, aos utilizadores e grupos devolvidos por uma tabela de decisão. O cartão não tem definições: tudo vem da tabela.
+
+**O que o cartão precisa** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/pt.mp4#t=13.883)
+
+Precisa antes de um cartão de tabela de decisão que guarde os dados devolvidos. Usa todos os utilizadores e grupos que a tabela devolveu, e a prioridade mais baixa recebe o documento primeiro. Linhas sem prioridade contam como prioridade um. Se a tabela não devolveu ninguém, o cartão segue a sua saída de erro.
+
+**Exemplo: dois aprovadores à vez** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/pt.mp4#t=31.116)
+
+Por exemplo, a tabela Example approvers devolve dois aprovadores com prioridade um e dois. A fatura vai para o primeiro e, depois da aprovação, para o segundo.
+
+</details>
+
 ## **Propósito**
 
 O cartão de fluxo de trabalho "**Atribuir o documento sequencialmente ao usuário/grupo com base na tabela de decisão**" atribui dinamicamente documentos a um utilizador ou a um grupo, consoante a avaliação da decision table. Isto assegura que os documentos são encaminhados de forma adequada com base em regras predefinidas.

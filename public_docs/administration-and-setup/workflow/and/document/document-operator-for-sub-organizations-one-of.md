@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_in_list_v2-pt-pt.png" alt="Operador de documentos para suborganizações um dos, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/pt.mp4" %}
+
+**Vídeo:** Cartão: Documento em uma de várias suborganizações · 0:38 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Documento em uma de várias suborganizações** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/pt.mp4#t=0.25)
+
+O cartão Documento em uma das seguintes suborganizações compara um documento com uma lista de suborganizações. Escolha É ou Não é e depois uma ou mais suborganizações, por exemplo Hamburg plant e Munich plant.
+
+**Uma da lista** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/pt.mp4#t=17.683)
+
+É passa quando o documento pertence a uma das suborganizações selecionadas, Não é quando não pertence a nenhuma. Se o documento não tiver suborganização, o cartão segue o seu caminho de erro.
+
+**Exemplo: faturas de duas fábricas** · [0:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/pt.mp4#t=29.016)
+
+Por exemplo, as faturas das duas fábricas alemãs vão para a equipe de contabilidade na Alemanha. Documentos de Vienna office não chegam a esta etapa.
+
+</details>
+
 ## Propósito:
 
 Este cartão de fluxo de trabalho verifica se um documento pertence a uma de várias suborganizações. Em vez de comparar o documento com uma única suborganização, compara-o com uma lista, de modo que um único cartão abrange todo um grupo de suborganizações que devem ser tratadas da mesma forma. Consoante o resultado, o fluxo de trabalho continua com a condição verdadeira ou com a falsa.

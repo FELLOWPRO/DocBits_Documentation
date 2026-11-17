@@ -4,6 +4,56 @@ O **Painel de fluxo de trabalho** é a página inicial da área de workflows. El
 
 <figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard com totais de execuções, taxas de sucesso e falha, o gráfico de execuções e a atividade recente"><figcaption><p>O Workflow Dashboard — totais de execuções, taxas de sucesso/falha e atividade recente de cada workflow.</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/pt.mp4" %}
+
+**Vídeo:** A lista de Workflows · 1:52 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Ativar os Workflows Padrão** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/pt.mp4#t=0.25)
+
+Primeiro, os Workflows precisam ser ativados para sua organização. A configuração Construtor de fluxo de trabalho, em Módulo, dá acesso aos Workflows Padrão. Os Advanced Workflows têm configuração e assinatura próprias.
+
+**Licença: Fluxo de trabalho e Fluxo de trabalho avançado** · [0:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/pt.mp4#t=15.483)
+
+O mesmo interruptor fica na aba Licença do Painel de fluxo de trabalho, ao lado do interruptor dos Advanced Workflows. Cada cartão mostra se está ativo.
+
+**Escolha o seu plano** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/pt.mp4#t=25.716)
+
+Ao ativar, abre-se Escolha o seu plano. Escolha um plano e confirme, e a assinatura começa. Aqui cancelamos.
+
+**Assinaturas e seu estado** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/pt.mp4#t=35.516)
+
+Todas as assinaturas e seu estado aparecem nas configurações, em Plano de Assinatura.
+
+**Novo fluxo de trabalho: Padrão ou Fluxo de trabalho avançado** · [0:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/pt.mp4#t=41.316)
+
+Na Lista de fluxo de trabalho, Novo fluxo de trabalho oferece Padrão ou Fluxo de trabalho avançado. Cada um tem seu vídeo.
+
+**Começar de um modelo** · [0:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/pt.mp4#t=49.683)
+
+Modelos são Workflows prontos. Abra um, ajuste e salve: isso cria um novo Workflow seu.
+
+**Importar Workflows baixados** · [0:59](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/pt.mp4#t=59.416)
+
+Com Importar fluxo de trabalho você envia Workflows baixados antes, por exemplo de um ambiente de teste ou de um backup: arquivos JSON, até dez por vez.
+
+**Duplicar um Workflow** · [1:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/pt.mp4#t=70.616)
+
+Para experimentar uma mudança sem mexer num Workflow em uso, duplique-o. A cópia se chama “copy” seguido do nome original e mantém se está ativada.
+
+**Ativar e desativar** · [1:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/pt.mp4#t=88.483)
+
+O ícone ao lado do nome mostra se um Workflow está ativado. Para ativar ou desativar, use Ativar ou Desativar no menu da linha.
+
+**Vários de uma vez** · [1:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/pt.mp4#t=99.316)
+
+Para vários Workflows de uma vez, marque-os e abra o menu do cabeçalho: ative, desative ou exclua todos juntos. Excluir pede confirmação antes de os Workflows sumirem.
+
+</details>
+
 ## Abas
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/pt.mp4" %}

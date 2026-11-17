@@ -47,3 +47,21 @@ O cartão de fluxo de trabalho "Document Status Condition" é vital para garanti
 **Resultado esperado e contra-exemplo:** A condição é verdadeira para um documento com qualquer um dos status selecionados. É falso para um documento com o status **Pronto para validação**. Com o operador que exige que o status esteja fora da lista, esses resultados de condição são invertidos. Inspecione a lista real em vez de comparar um valor de texto livre separado por vírgula.
 
 Esta é uma configuração de teste ilustrativa e resultado esperado; não foi executado. Use dados e destinatários configurados na sua organização de teste.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/pt.mp4" %}
+
+**Vídeo:** Cartão: Status do documento: um de uma lista · 0:32 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Status do documento: um de uma lista** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/pt.mp4#t=0.25)
+
+O cartão Status do documento em uma lista compara o status do documento com vários status de uma vez. Escolha É ou Não é e depois os status. É passa quando o documento tem um deles.
+
+**Exemplo: dois status, um lembrete** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/pt.mp4#t=17.15)
+
+Por exemplo, o lembrete sai enquanto uma fatura está em Pronto para validação ou Aprovação pendente: o cartão Quando para faturas, depois Status do documento nesta lista, depois o lembrete. Em qualquer outro status, o documento não chega ao lembrete.
+
+</details>
+

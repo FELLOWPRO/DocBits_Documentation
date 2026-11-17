@@ -2,6 +2,24 @@
 
 <figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2-pt-pt.png" alt="Tipo de Documento Um de, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/pt.mp4" %}
+
+**Vídeo:** Cartão: Tipo de documento: um de uma lista · 0:30 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Tipo de documento: um de uma lista** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/pt.mp4#t=0.25)
+
+O cartão Tipo de documento um dos seguintes compara o tipo de um documento com uma lista. Escolha É ou Não é e depois um ou mais tipos de documento. É passa quando o tipo está na lista, Não é quando não está.
+
+**Exemplo: faturas e notas de crédito** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/pt.mp4#t=17.516)
+
+Por exemplo, um Workflow para faturas e notas de crédito: Tipo de documento é um de Fatura e Nota de Crédito como cartão Quando, depois o cartão de atribuição. Outros documentos não iniciam este Workflow.
+
+</details>
+
 ## **Propósito:**
 
 Este cartão DocBits garante a classificação correta de um documento verificando se ele corresponde a qualquer um dos tipos de documento especificados. Isso é útil em situações em que um documento pode pertencer a mais de uma categoria, permitindo uma validação mais ampla e manipulação automatizada.

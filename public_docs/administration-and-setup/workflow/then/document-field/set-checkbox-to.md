@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_set_boolean_field_v2-pt-pt.png" alt="Definir caixa de seleção como, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/pt.mp4" %}
+
+**Vídeo:** Cartão: Definir caixa de seleção · 0:42 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Definir caixa de seleção** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/pt.mp4#t=0.25)
+
+O cartão Definir caixa de seleção marca ou desmarca um campo caixa de seleção do documento. Escolha o campo, por exemplo Special handling, e se ele deve ficar marcado.
+
+**Marcada ou não, depois salva** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/pt.mp4#t=16.75)
+
+O cartão grava o valor e salva o documento, mesmo que a caixa estivesse vazia antes. Se o campo não for uma caixa de seleção, por exemplo um valor monetário, o cartão segue a sua saída de erro. Para mudar uma caixa para o valor oposto, use o cartão Inverter caixa de seleção.
+
+**Exemplo: marcar Special handling** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/pt.mp4#t=33.116)
+
+Por exemplo, quando o fornecedor precisa de tratamento especial, o Workflow marca Special handling e o validador vê isso no documento.
+
+</details>
+
 ## **Propósito:**
 
 Este cartão de fluxo de trabalho foi concebido para definir um campo de caixa de verificação para um valor especificado (true ou false) com base nas condições definidas nas secções **"Quando"** e **"E"**. Oferece uma forma simples mas eficaz de automatizar atualizações de caixas de verificação quando determinados critérios são cumpridos, assegurando um processamento de documentos simplificado.

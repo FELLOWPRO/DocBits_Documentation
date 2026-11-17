@@ -43,6 +43,36 @@ Un Advanced Workflow è un grafo di **nodi** collegati da archi. Aggiungi i nodi
 
 ## Tipi di nodo
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/it.mp4" %}
+
+**Video:** Cambiare la versione di una scheda · 0:41 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**L'etichetta mostra la versione della scheda** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/it.mp4#t=0.25)
+
+Le schede possono avere più versioni. La piccola etichetta su una scheda, per esempio v1, indica quale versione usa. Una versione più recente fa di più.
+
+**Clic per vedere le versioni** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/it.mp4#t=12.15)
+
+Fai clic sull'etichetta della versione per vedere le versioni della scheda.
+
+**Versione 3: Stato dopo l'esportazione** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/it.mp4#t=17.316)
+
+Scegli la versione più recente. Questa può impostare anche lo stato del documento dopo l'esportazione.
+
+**Impostare di nuovo i valori** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/it.mp4#t=25.45)
+
+I valori non vengono riportati. Impostali di nuovo, qui la configurazione di esportazione e lo stato.
+
+**Convalidare e testare** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/it.mp4#t=33.183)
+
+Poi convalida e testa il Workflow, come dopo ogni modifica. Salvalo quando fa ciò che ti aspetti.
+
+</details>
+
 - **Start** — il punto di ingresso del workflow. Aggiunto automaticamente; ogni flusso inizia qui.
 - **When** — una scheda trigger, la stessa del builder Standard.
 - **And** — una scheda condizione. Restituisce vero o falso e può ramificare il flusso.
@@ -91,6 +121,64 @@ Collega il percorso rosso a un'alternativa, per esempio un'attività per una per
 **Come finisce un'esecuzione** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/it.mp4#t=76.316)
 
 In breve: qualsiasi errore rende l'esecuzione un errore. Una condizione non riuscita senza percorso arancione collegato la rende una condizione non riuscita. Tutto il resto finisce con successo.
+
+</details>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4" %}
+
+**Video:** E e O: combinare le condizioni · 4:27 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**E e O** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4#t=0.25)
+
+Le condizioni si combinano in due modi. Schede una dopo l'altra funzionano come E: devono essere tutte vere. Schede affiancate, collegate alla stessa scheda successiva, funzionano come O: basta una scheda vera. I nodi di unione lo mostrano sull'area di lavoro.
+
+**E: schede una dopo l'altra** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4#t=19.083)
+
+Una scheda dopo l'altra è E: ogni scheda del percorso deve essere vera prima che parta la successiva. Questa fattura è pronta per la validazione e non in attesa di approvazione, quindi entrambe le schede sono vere e l'azione parte.
+
+**O: schede affiancate** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4#t=35.416)
+
+O significa schede affiancate. Collega l'uscita verde di entrambe le schede E direttamente all'ingresso della scheda successiva. Prova: la prima scheda è falsa, la seconda vera, e basta un percorso vero perché l'azione parta. Il banner del test segnala comunque una condizione non soddisfatta, perché l'uscita arancione della scheda falsa non è collegata, ma l'azione parte.
+
+**Lo stesso con una scheda O** · [0:59](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4#t=59.85)
+
+Puoi anche unire i percorsi con una scheda O. Fa la stessa cosa, ma rende visibile l'O sull'area di lavoro. Clic destro sull'area di lavoro, Aggiungi, poi O. Collega entrambe le schede E alla scheda O, e la scheda O all'azione.
+
+**A O basta un caso vero** · [1:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4#t=78.75)
+
+Il test dà lo stesso risultato: alla scheda O basta un caso vero, quindi l'azione parte. Anche qui il banner segnala la condizione non soddisfatta della scheda falsa.
+
+**Attendi UNO: uguale a O** · [1:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4#t=92.75)
+
+Attendi UNO funziona esattamente come O: aspetta ogni scheda che ha davanti e prosegue quando è stato percorso almeno un percorso. Le due sono intercambiabili, usa il nome che si legge meglio nel tuo workflow.
+
+**E con Attendi TUTTI** · [1:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4#t=114.45)
+
+Per una E con schede affiancate usa Attendi TUTTI. Clic destro sull'area di lavoro, Aggiungi, poi Attendi TUTTI. Collega entrambe le schede E a questa scheda, e Attendi TUTTI all'azione. Prova: aspetta entrambe le schede, sono vere, quindi l'azione parte.
+
+**L'ordine: come sono stati tracciati i collegamenti** · [2:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4#t=142.816)
+
+In che ordine viene eseguito? Il workflow elabora un elenco. Le schede dopo una scheda vengono aggiunte nell'ordine in cui sono stati tracciati i loro collegamenti, quindi prima viene eseguita la condizione in alto, poi quella in basso. La scheda O aspetta finché entrambe sono state eseguite, e l'azione viene eseguita una volta, per quante condizioni siano vere.
+
+**Direttamente a un'azione: nessuna attesa** · [2:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4#t=174.783)
+
+Le schede collegate direttamente a un'azione non aspettano. L'azione viene raggiunta dal percorso breve e parte prima che l'ultima scheda del percorso lungo sia controllata, quindi quella scheda non cambia più nulla. Se l'azione deve aspettare ogni controllo, metti davanti una scheda O, Attendi UNO o Attendi TUTTI.
+
+**Ogni uscita può portare altrove** · [3:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4#t=196.883)
+
+Ogni scheda ha fino a tre uscite: successo, condizione non soddisfatta ed errore. Ogni uscita può portare a una propria scheda successiva.
+
+**Più uscite, un ingresso: ne basta una** · [3:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4#t=208.849)
+
+Puoi anche collegare più uscite di una scheda allo stesso ingresso. Se ne può prendere solo una, perché una scheda termina con un solo risultato, quindi la scheda successiva aspetta solo quella. Vale per qualsiasi ingresso, non solo per questi nodi di unione. Prova: la condizione non è soddisfatta e Attendi TUTTI prosegue comunque.
+
+**Nodi di unione: quali percorsi sono stati presi** · [3:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/it.mp4#t=238.083)
+
+I nodi di unione servono soprattutto a rendere un Workflow più leggibile. O e Attendi UNO proseguono appena è stato preso almeno un percorso collegato. Attendi TUTTI aspetta che tutte le schede precedenti siano finite e prosegue solo se sono stati presi tutti i percorsi collegati. Si può collegare qualsiasi uscita di una scheda, non solo quella verde: se una scheda termina con una condizione non soddisfatta, la sua uscita arancione conta come presa.
 
 </details>
 

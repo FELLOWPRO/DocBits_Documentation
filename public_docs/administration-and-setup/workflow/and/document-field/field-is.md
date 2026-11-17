@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-it-it.png" alt="Verificare la presenza e il contenuto di un campo, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/it.mp4" %}
+
+**Video:** Scheda: Campo vuoto o no · 0:49 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Campo vuoto o no** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/it.mp4#t=0.25)
+
+La scheda Il campo è controlla se un campo del documento è vuoto. Scegli il campo, per esempio Ordine di acquisto, e lo stato: vuoto o non presente nel documento, oppure presente nel documento e non vuoto.
+
+**Mancante conta come vuoto** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/it.mp4#t=18.716)
+
+Un campo conta come vuoto se non ha valore, solo spazi, una casella non selezionata o un elenco vuoto. Anche un campo non presente nel documento conta come vuoto. Se lo stato corrisponde, la scheda è vera. Altrimenti è falsa.
+
+**Esempio: nessun ordine di acquisto** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/it.mp4#t=34.75)
+
+Per esempio, una fattura senza ordine di acquisto va all'approvatore delle fatture senza ordine. Le fatture con un ordine di acquisto prendono l'altro percorso, per esempio l'abbinamento con l'ordine.
+
+</details>
+
 ## Quando usarla
 
 Usare questa scheda per verificare se un campo del documento è vuoto o assente, ad esempio quando una fattura senza numero richiede un controllo aggiuntivo. Si tratta di una condizione; configurare separatamente l’azione successiva.

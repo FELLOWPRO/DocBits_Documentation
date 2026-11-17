@@ -47,3 +47,21 @@ La scheda di workflow "Document Status Condition" è fondamentale per garantire 
 **Risultato previsto e controesempio:** La condizione è vera per un documento con uno degli stati selezionati. È falso per un documento con stato `Pronto per la convalida`. Con l'operatore che richiede che lo stato sia esterno all'elenco, queste condizioni risultano invertite. Esaminare l'elenco effettivo anziché confrontare un valore di testo libero separato da virgole.
 
 Questa è una configurazione di test illustrativa e il risultato atteso; non è stato eseguito. Utilizza dati e destinatari configurati nella tua organizzazione di test.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/it.mp4" %}
+
+**Video:** Scheda: Stato del documento: uno di un elenco · 0:35 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Stato del documento: uno di un elenco** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/it.mp4#t=0.25)
+
+La scheda Stato del documento in un elenco confronta lo stato del documento con più stati insieme. Scegli È o Non è e poi gli stati. È vale quando il documento ha uno di essi.
+
+**Esempio: due stati, un promemoria** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/it.mp4#t=17.783)
+
+Per esempio, il promemoria parte finché una fattura è Pronto per la convalida o In attesa di approvazione: la scheda Quando per le fatture, poi Stato del documento in questo elenco, poi il promemoria. In qualsiasi altro stato il documento non arriva al promemoria.
+
+</details>
+

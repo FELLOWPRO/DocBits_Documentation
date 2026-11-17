@@ -47,3 +47,21 @@ La scheda di workflow "Single Document Status Condition" semplifica la gestione 
 **Risultato atteso e controesempio:** La condizione è vera per un documento attualmente `In attesa di approvazione`; è falso per un documento con stato `Pronto per la convalida`. Utilizza lo stato effettivo selezionato dalla tua versione. La modifica di uno stato non comporta di per sé l'esportazione del documento.
 
 Questa è una configurazione di test illustrativa e il risultato atteso; non è stato eseguito. Utilizza dati e destinatari configurati nella tua organizzazione di test.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/it.mp4" %}
+
+**Video:** Scheda: Stato del documento è / non è · 0:35 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Stato del documento è / non è** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/it.mp4#t=0.25)
+
+La scheda Stato del documento controlla lo stato del documento quando il Workflow viene eseguito. Scegli È o Non è e poi uno stato, per esempio Pronto per la convalida. Non è corrisponde a ogni altro stato.
+
+**Esempio: assegnare solo se pronto per la convalida** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/it.mp4#t=17.083)
+
+Per esempio, le fatture vengono assegnate solo finché sono pronte per la convalida: la scheda Quando per le fatture, poi Stato del documento è Pronto per la convalida, poi la scheda di assegnazione. In qualsiasi altro stato il documento non arriva all'assegnazione.
+
+</details>
+

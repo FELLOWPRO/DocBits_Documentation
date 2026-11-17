@@ -6,6 +6,56 @@ description: DocBits Workflow Engine
 
 <figure><img src="../../.gitbook/assets/docbits_workflow_3.png" alt="DocBits Flusso di lavoro 3"><figcaption></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/it.mp4" %}
+
+**Video:** Termini dei Workflow: cosa è cosa · 1:30 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Le parole dei video** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/it.mp4#t=0.25)
+
+Nei video alcune parole tornano spesso. Ecco cosa significa ciascuna.
+
+**Standard e Advanced** · [0:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/it.mp4#t=6.383)
+
+Un Workflow è un insieme di regole per i documenti. Ne esistono due tipi.
+
+**Standard: una lista fissa** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/it.mp4#t=12.516)
+
+Un Workflow Standard è una lista fissa: schede Quando, E e Poi, dall'alto in basso.
+
+**Advanced: un'area di lavoro** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/it.mp4#t=19.916)
+
+Un Advanced Workflow è un'area di lavoro dove posizioni liberamente le schede e le colleghi.
+
+**Quando, E, Poi** · [0:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/it.mp4#t=27.583)
+
+Le schede fanno il lavoro. Una scheda Quando decide per quali documenti vale il Workflow. Le schede E controllano condizioni. Le schede Poi agiscono: assegnano o esportano.
+
+**Ogni scheda è un nodo, non tutti i nodi sono schede** · [0:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/it.mp4#t=39.616)
+
+Tutto sull'area di lavoro è un nodo. Ogni scheda è un nodo, ma non tutti i nodi sono schede: O, Attendi UNO e Attendi TUTTI uniscono percorsi, e le note contengono solo testo.
+
+**Un ingresso, tre uscite** · [0:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/it.mp4#t=53.016)
+
+Una scheda ha un ingresso e fino a tre uscite: successo, condizione non riuscita in arancione ed errore in rosso.
+
+**I collegamenti formano il percorso** · [1:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/it.mp4#t=61.383)
+
+Un collegamento va da un'uscita all'ingresso del nodo successivo. I collegamenti che un documento segue sono il suo percorso.
+
+**Variabili** · [1:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/it.mp4#t=69.683)
+
+Variabili: i valori nei campi di una scheda. Le variabili di Workflow passano valori alle schede successive.
+
+**Esecuzione e test** · [1:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/it.mp4#t=78.116)
+
+Un'esecuzione è il Workflow che lavora su un documento reale; il log mostra il percorso. Un test esegue l'area di lavoro su un documento a tua scelta, e le azioni sono solo simulate.
+
+</details>
+
 ## Motore di Workflow DocBits: Semplificazione dell'Automazione dei Processi
 
 ### Comprendere e preparare il flusso di lavoro <a id="workflow-orientation"></a>

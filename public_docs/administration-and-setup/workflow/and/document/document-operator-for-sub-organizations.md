@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2-it-it.png" alt="Operatore documentale per le sotto-organizzazioni, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/it.mp4" %}
+
+**Video:** Scheda: Documento parte di una sotto-organizzazione · 0:44 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Documento parte di una sotto-organizzazione** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/it.mp4#t=0.25)
+
+La scheda Documento parte della sottoorganizzazione controlla a quale sotto-organizzazione appartiene un documento. Scegli È o Non è e poi la sotto-organizzazione, per esempio Munich plant.
+
+**Esattamente una sotto-organizzazione** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/it.mp4#t=16.916)
+
+La scheda confronta esattamente questa sotto-organizzazione. Se il documento non ha una sotto-organizzazione, la scheda prende il suo percorso di errore. Per controllare più sotto-organizzazioni insieme, usa la scheda in una delle seguenti sotto-organizzazioni.
+
+**Esempio: le fatture di uno stabilimento** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/it.mp4#t=33.616)
+
+Per esempio, le fatture di Munich plant vanno al team contabilità di Monaco. I documenti di altre sotto-organizzazioni non arrivano a questo passo.
+
+</details>
+
 ## Scopo:
 
 Questa scheda di workflow valuta se un documento fa parte di una specifica sotto-organizzazione. In base a questa valutazione, il workflow può proseguire o attivare azioni diverse a seconda che il documento sia associato o meno alla sotto-organizzazione specificata.

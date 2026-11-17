@@ -34,6 +34,32 @@ I flussi Standard sono semplici. Hanno una scheda Quando, tutte le schede E devo
 
 </details>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/it.mp4" %}
+
+**Video:** Testare le schede in un Workflow Standard · 0:51 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Testa scheda: una scheda alla volta** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/it.mp4#t=0.25)
+
+In un Workflow Standard si testa una scheda alla volta. Apri il menu di una scheda, qui la scheda E, e scegli Testa scheda. Cerca un documento su cui testarla.
+
+**Il risultato e i log della scheda** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/it.mp4#t=12.216)
+
+Fai clic su Testa sul documento. La fattura è pronta per la validazione, non in attesa di approvazione, quindi la condizione non è soddisfatta. I log della scheda dicono perché.
+
+**Testare un'azione non cambia nulla** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/it.mp4#t=24.516)
+
+Si possono testare anche le azioni. Il risultato mostra cosa farebbe la scheda, ma il documento non viene modificato.
+
+**Una scheda, impostazioni attuali, nessuna modifica** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/it.mp4#t=35.15)
+
+Testa scheda usa le impostazioni sullo schermo, anche prima di salvare. Testa una scheda, non l'intero Workflow, quindi non mostra se la scheda successiva partirebbe. Per testare un intero flusso in una volta, usa un Advanced Workflow.
+
+</details>
+
 Crea uno Standard Workflow completo nella vera interfaccia DocBits: seleziona la fattura, verifica il numero e un importo superiore a 1000, assegna un revisore e modifica lo stato. Salva la regola, esegui tre scenari di test e verifica il risultato effettivo sul documento.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/it.mp4" %}

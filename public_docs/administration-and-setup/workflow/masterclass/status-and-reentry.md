@@ -10,6 +10,32 @@ Quando un documento riceve un nuovo stato, DocBits avvia i Workflow previsti per
 
 Questa pagina mostra come impostare il Workflow in modo che ogni documento lo attraversi una sola volta.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/it.mp4" %}
+
+**Video:** Scheda Cambia lo stato e prevenzione dei cicli · 0:45 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Cambia lo stato** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/it.mp4#t=0.25)
+
+La scheda Cambia lo stato porta il documento a un nuovo stato, per esempio Rifiutato.
+
+**Attivare i flussi di lavoro** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/it.mp4#t=10.083)
+
+Attivare i flussi di lavoro decide cosa succede dopo. Se è attivo e il nuovo stato avvia dei Workflow, come Pronto per la convalida, i Workflow ripartono per questo documento.
+
+**Disattivato: nessun loop** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/it.mp4#t=21.716)
+
+Se un Workflow imposta uno stato che riavvia lo stesso Workflow, può girare in loop. Disattiva l'opzione Attivare i flussi di lavoro quando il cambio di stato non deve avviare alcun Workflow.
+
+**Esempio: rifiuto, nessun nuovo avvio** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/it.mp4#t=34.716)
+
+Per esempio: un controllo fallisce, questa scheda imposta lo stato su Rifiutato con Attivare i flussi di lavoro disattivato, quindi nulla riparte.
+
+</details>
+
 ## L'impostazione decisiva
 
 La scheda [Cambiare lo stato in](../then/status/change-status-to.md) imposta il nuovo stato. La sua impostazione **Attivare i flussi di lavoro** decide se questo cambio di stato può avviare Workflow:

@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v3-it-it.png" alt="La tabella decisionale restituisce risultati, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/it.mp4" %}
+
+**Video:** Scheda: Tabella delle decisioni con valori restituiti · 0:49 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Tabella delle decisioni con valori restituiti** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/it.mp4#t=0.25)
+
+La scheda Tabella delle decisioni contiene valori restituiti esegue la tabella per il documento. Scegli la tabella, per esempio Example approvers, e se memorizzare i dati restituiti per le schede successive.
+
+**Una riga corrispondente significa vero** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/it.mp4#t=17.416)
+
+Se una riga della tabella corrisponde al documento, la scheda è vera. Se nessuna riga corrisponde, è falsa. I dati memorizzati servono alle schede successive, come le schede di assegnazione. Un Workflow conserva solo l'ultimo risultato memorizzato.
+
+**Esempio: approvatori da una tabella** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-decision-table/v1/it.mp4#t=34.983)
+
+Per esempio, la tabella trova gli approvatori per l'importo della fattura e li memorizza, e la scheda successiva assegna loro la fattura. Se la tabella non trova nessuno, la scheda è falsa e l'assegnazione non parte.
+
+</details>
+
 ## **Scopo:**
 
 Questa scheda DocBits verifica se una decision table specificata restituisce valori per un determinato documento e determina se i dati restituiti debbano essere utilizzati nei passaggi successivi del workflow. Garantisce che i workflow possano adattarsi dinamicamente in base agli esiti della decision table.

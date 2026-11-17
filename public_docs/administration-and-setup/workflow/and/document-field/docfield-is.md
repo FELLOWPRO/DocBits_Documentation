@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v2-it-it.png" alt="Confrontare un campo documento con un valore di riferimento, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/it.mp4" %}
+
+**Video:** Scheda: Campo del documento confrontato con un valore · 0:48 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Campo del documento confrontato con un valore** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/it.mp4#t=0.25)
+
+La scheda Campo del documento confronta un campo del documento con un valore che inserisci. Scegli il campo, per esempio Importo totale, poi l'operatore, qui Maggiore di, e il valore, diecimila.
+
+**Testo, numeri, date** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/it.mp4#t=19.25)
+
+I campi di testo possono solo essere uguali o diversi, e le maiuscole non contano. Numeri e date possono anche essere maggiori o minori del valore. Se il campo non è nel documento, la scheda prende il suo percorso di errore.
+
+**Esempio: le fatture grandi richiedono una seconda approvazione** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/it.mp4#t=34.183)
+
+Per esempio, una seconda approvazione per fatture grandi: Importo totale maggiore di diecimila, poi la scheda di assegnazione per l'ufficio finanze. Le fatture minori non arrivano a questo passo.
+
+</details>
+
 ## **Scopo:**
 
 Questa scheda di workflow è progettata per automatizzare le azioni confrontando il valore di un campo del documento specificato con un valore o una condizione di riferimento. Garantisce un processo decisionale dinamico e accurato nei workflow basato sulla validazione dei dati del documento.

@@ -2,6 +2,24 @@
 
 <figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2-it-it.png" alt="Tipo di Documento Uno di, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/it.mp4" %}
+
+**Video:** Scheda: Tipo di documento: uno di un elenco · 0:33 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Tipo di documento: uno di un elenco** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/it.mp4#t=0.25)
+
+La scheda Tipo di documento uno dei seguenti confronta il tipo di un documento con un elenco. Scegli È o Non è e poi uno o più tipi di documento. È vale quando il tipo è nell'elenco, Non è quando non c'è.
+
+**Esempio: fatture e note di credito** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/it.mp4#t=17.783)
+
+Per esempio, un Workflow per fatture e note di credito: Tipo di documento è uno di Fattura e Nota di credito come scheda Quando, poi la scheda di assegnazione. Gli altri documenti non avviano questo Workflow.
+
+</details>
+
 ## **Scopo:**
 
 Questa carta DocBits garantisce la corretta classificazione di un documento verificando se corrisponde a uno dei tipi di documento specificati. Questo è utile in situazioni in cui un documento potrebbe appartenere a più di una categoria, consentendo una validazione più ampia e una gestione automatizzata.

@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2-it-it.png" alt="Imposta su, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/it.mp4" %}
+
+**Video:** Scheda: Imposta campo a testo · 0:39 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Imposta campo a testo** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/it.mp4#t=0.25)
+
+La scheda Imposta campo a testo scrive un testo in un campo del documento. Scegli il campo, per esempio Note, e digita il testo.
+
+**Il testo sostituisce il vecchio valore** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/it.mp4#t=16.616)
+
+Il testo sostituisce il valore precedente, e il documento viene salvato. Se il documento non può essere salvato, la scheda prende il percorso di errore.
+
+**Esempio: il motivo in Note** · [0:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/it.mp4#t=27.216)
+
+Per esempio, se il controllo del prezzo unitario fallisce, la scheda scrive Controllare il prezzo unitario in Note. Il validatore vede subito perché il documento è fermo.
+
+</details>
+
 ## **Scopo:**
 
 Questa scheda di workflow è progettata per impostare automaticamente un campo specificato del documento su un valore testuale predefinito in base alle condizioni definite nelle sezioni **"Quando"** e **"E"**. Consente agli utenti di semplificare l'inserimento dei dati garantendo che i campi vengano popolati con valori coerenti quando determinati criteri sono soddisfatti.

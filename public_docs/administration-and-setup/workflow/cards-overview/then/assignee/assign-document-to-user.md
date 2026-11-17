@@ -6,6 +6,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-zh-cn.png" alt="将文档分配给用户, 版本 3" width="634"><figcaption><p>版本 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/zh.mp4" %}
+
+**视频:** 卡片: 将文档分配给用户 · 0:47 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**将文档分配给用户** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/zh.mp4#t=0.25)
+
+将文档分配给用户卡把文档交给一个用户：选择该用户。版本三通过版本标签选择，它增加了第二个设置：是否改由决策表来选择用户。
+
+**使用决策树：优先采用决策表的用户** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/zh.mp4#t=21.75)
+
+开启使用决策树后，卡片会采用 Workflow 中前面的决策表卡返回的第一个用户。如果决策表没有返回用户，就由卡片上的用户接收文档。版本二始终分配卡片上的用户。
+
+**示例：审批人来自决策表，卡片上的用户作后备** · [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/zh.mp4#t=36.283)
+
+例如，决策表按发票金额返回审批人，分配卡使用该审批人。决策表找不到人时，由 Alex Example 接收发票。
+
+</details>
+
 ## **用途：**
 
 **“Assign Document to User”（将文档分配给用户）**工作流卡片允许用户将文档分配给特定用户，确保文档能够流转到合适的人员，从而顺畅地管理工作流。版本 3 新增了使用决策树的功能，可根据现有条件动态确定分配对象。

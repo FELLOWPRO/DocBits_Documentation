@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2-zh-cn.png" alt="设置为, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/zh.mp4" %}
+
+**视频:** 卡片: 将字段设置为文本 · 0:33 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**将字段设置为文本** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/zh.mp4#t=0.25)
+
+将字段设置为文本卡把一段文本写入文档的字段。选择字段，例如笔记，然后输入文本。
+
+**文本替换旧值** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/zh.mp4#t=14.883)
+
+文本会替换字段原来的内容，文档随之保存。如果文档无法保存，卡片会走它的错误路径。
+
+**示例：笔记中写明原因** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/zh.mp4#t=23.883)
+
+例如，单价检查失败时，卡片把“请检查单价”写入笔记。验证人员一眼就能看出文档为何停下。
+
+</details>
+
 ## **用途：**
 
 此工作流卡片用于根据 **“当”** 和 **“且”** 中定义的条件，将文档中的指定字段自动设置为预定义的文本值。满足特定条件时，它可以确保字段填入一致的值，从而简化数据录入。

@@ -60,6 +60,32 @@ Test Card uses the settings on the screen, even before you save. It tests one ca
 
 </details>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/zh.mp4" %}
+
+**视频:** 在标准 Workflow 中测试卡片 · 0:46 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**测试卡：一次一张卡** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/zh.mp4#t=0.25)
+
+在标准 Workflow 中，一次测试一张卡。打开卡片的菜单（这里是和卡），选择测试卡。搜索一个用来测试的文档。
+
+**结果和卡片日志** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/zh.mp4#t=10.916)
+
+点击在文档上测试。这张发票已准备好验证，而不是待审批，所以条件未满足。卡片日志会说明原因。
+
+**测试动作不会改变任何内容** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/zh.mp4#t=20.783)
+
+动作也可以测试。结果会显示卡片将会做什么，但文档不会被更改。
+
+**一张卡、当前设置、不做更改** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/zh.mp4#t=31.416)
+
+测试卡使用屏幕上的设置，保存之前也可以。它只测试一张卡，而不是整个 Workflow，所以不会显示下一张卡是否会运行。要一次测试整个流程，请使用 Advanced Workflow。
+
+</details>
+
 在真实的 DocBits 界面中创建一个完整的 Standard Workflow：匹配发票、检查其编号以及高于 1000 的金额、分配审核人并更改状态。保存该规则，运行三个测试场景，并确认文档的实际结果。
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/en.mp4" %}

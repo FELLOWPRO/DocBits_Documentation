@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_no_variables_v2-zh-cn.png" alt="根据决策表将文档按顺序分配给用户/组。 — 版本 2" width="428"><figcaption><p>根据决策表将文档按顺序分配给用户/组。 — 版本 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/zh.mp4" %}
+
+**视频:** 卡片: 按决策表依次分配 · 0:38 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**按决策表依次分配** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/zh.mp4#t=0.25)
+
+按决策表依次分配卡片会把文档依次交给决策表返回的用户和组。这张卡片没有设置：一切都来自决策表。
+
+**卡片需要什么** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/zh.mp4#t=10.683)
+
+它前面需要一张保存返回数据的决策表卡片。它使用决策表返回的所有用户和组，优先级数字最小的最先收到文档。没有优先级的行按优先级一计算。如果决策表没有返回任何人，卡片会走它的错误路径。
+
+**示例：两位审批人依次审批** · [0:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/zh.mp4#t=27.783)
+
+例如，决策表 Example approvers 返回两位审批人，优先级为一和二。发票先交给第一位，审批后再交给第二位。
+
+</details>
+
 ## **用途**
 
 “**根据决策表将文档依次分配给用户/组**”工作流卡片会根据决策表的评估结果，动态地将文档分配给用户或组。这样可以确保文档按照预定义规则正确路由。

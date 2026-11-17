@@ -12,51 +12,55 @@ description: "P1：区分文档分配、任务与顺序审批"
 
 业务验收包括 A→批准→B→批准、A 拒绝、接收人缺失和重复触发。拒绝后不能执行最终导出，接收人无法解析也不能显示为审批完成。分别检查文档责任人与任务清单。设计器模拟不能证明真实用户交接。
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.mp4" %}
 
-**视频:** 使用决策表的两步审批 · 2:43 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.vtt)
+**视频:** 使用决策表的两步审批 · 2:59 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.vtt)
 
 <details>
 
 <summary>文字稿</summary>
 
-**两步，两个决策表** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.mp4#t=0.25)
+**两步，两个决策表** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.mp4#t=0.25)
 
 两步审批：先是决策表返回的审批人，然后是始终排在最后的最终组。两个决策表，一个返回用户，另一个返回组。
 
-**一条链：表、分配、表、分配** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.mp4#t=10.05)
+**决策表：接收人、返回值类型和优先级** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.mp4#t=10.05)
+
+顺序分配时，请这样设置决策表：每一行返回由谁接收文档，返回值类型为用户或组，并设置优先级。分配卡片只接受与其设置类型相同的返回值，优先级最低的先处理。没有优先级的行使用卡片上设置的优先级。
+
+**一条链：表、分配、表、分配** · [0:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.mp4#t=29.683)
 
 把每张分配卡紧跟在它自己的决策表后面，连成一条链：决策表、分配、决策表、分配。两个决策表都保存返回的数据。
 
-**每张分配卡紧跟它的表** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.mp4#t=22.883)
+**每张分配卡紧跟它的表** · [0:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.mp4#t=42.516)
 
 Workflow 只保留最后一个决策表结果。每张分配卡在运行时读取它，所以必须在下一个决策表替换它之前运行。
 
-**优先级决定顺序** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.mp4#t=32.516)
+**优先级决定顺序** · [0:52](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.mp4#t=52.15)
 
 审批顺序由优先级决定，而不是卡片的顺序：数字最小的先收到文档。把最高的数字给最终组。
 
-**测试：先审批人，后组** · [0:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.mp4#t=42.45)
+**测试：先审批人，后组** · [1:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.mp4#t=62.083)
 
 测试显示每张卡都成功。第一张分配卡把两位审批人排入队列，第二张把最终组排入队列。运行结束时，最后一次分配把文档交给其中第一位。
 
-**并排：行不通** · [1:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.mp4#t=70.516)
+**并排：行不通** · [1:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.mp4#t=89.25)
 
 这种布局行不通。并排的两条路径看起来一样，但 Workflow 会一步一步地运行：先运行两个决策表，再运行两张分配卡。
 
-**审批人丢失，没有报错** · [1:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.mp4#t=81.383)
+**审批人丢失，没有报错** · [1:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.mp4#t=100.083)
 
 测试先运行两个决策表，再运行两张分配卡。两张卡都读取第二个表的结果：组被排入两次，审批人丢失了。每张卡仍显示成功，没有任何警告。请使用链。
 
-**固定的最后审批人：优先级 99** · [1:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.mp4#t=111.516)
+**固定的最后审批人：优先级 99** · [2:08](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.mp4#t=128.883)
 
 在标准 Workflow 中，固定审批人可以始终排在最后：先分配决策表的用户，再添加一张以高优先级（例如 99）分配一位用户的卡。
 
-**表的优先级保持更低** · [2:03](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.mp4#t=123.483)
+**表的优先级保持更低** · [2:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.mp4#t=140.85)
 
 决策表的优先级必须低于这个数字。如果决策表没有找到任何人，Workflow 会停在决策表卡，不会分配给任何人。两者都返回的用户会被询问两次。
 
-**在测试中检查** · [2:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/zh.mp4#t=135.116)
+**在测试中检查** · [2:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/zh.mp4#t=152.483)
 
 标准 Workflow 一次只能测试一张卡，所以请在 Advanced Workflow 中测试相同的卡。第一张分配卡把表中的审批人排入队列，第二张加入固定用户。优先级让他排在最后。
 

@@ -4,6 +4,56 @@
 
 <figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="工作流仪表板，显示运行总数、成功率和失败率、运行次数图表以及近期活动"><figcaption><p>工作流仪表板 — 每个工作流的运行总数、成功率和失败率以及近期活动。</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/zh.mp4" %}
+
+**视频:** Workflow 列表 · 1:39 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**开启标准 Workflow** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/zh.mp4#t=0.25)
+
+Workflow 须先为组织开启。模块下的工作流程生成器用于标准 Workflow，Advanced Workflow 另有设置和订阅。
+
+**许可证：工作流程和高级工作流程** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/zh.mp4#t=10.85)
+
+此开关也在工作流仪表板的许可证页，紧挨 Advanced Workflow。各卡显示是否启用。
+
+**选择您的方案** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/zh.mp4#t=20.116)
+
+开启后会打开选择您的方案。选择方案并确认，订阅即开始。这里我们取消。
+
+**订阅及其状态** · [0:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/zh.mp4#t=27.883)
+
+所有订阅及其状态都列在设置中的订阅计划下。
+
+**新工作流程：标准或高级工作流程** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/zh.mp4#t=32.816)
+
+在工作流列表中，通过新工作流程可选择标准或高级工作流程。两者各有视频。
+
+**从模板开始** · [0:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/zh.mp4#t=40.783)
+
+模板是现成的 Workflow。打开、调整并保存，就会新建一个您自己的。
+
+**导入已下载的 Workflow** · [0:48](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/zh.mp4#t=48.116)
+
+用导入工作流程上传之前下载的 Workflow，如来自测试环境或备份：JSON 文件，一次最多十个。
+
+**复制 Workflow** · [0:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/zh.mp4#t=58.716)
+
+若想试改而不影响正在运行的 Workflow，就复制它。副本名为“copy”加原名称，并保留是否启用的状态。
+
+**启用和停用** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/zh.mp4#t=76.616)
+
+名称旁的图标显示 Workflow 是否已启用。要启用或停用，请使用行菜单中的激活或停用。
+
+**一次处理多个** · [1:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/zh.mp4#t=87.683)
+
+要同时处理多个 Workflow，勾选它们并打开表头菜单：一起激活、停用或删除。删除前会再确认一次。
+
+</details>
+
 ## 选项卡
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/zh.mp4" %}

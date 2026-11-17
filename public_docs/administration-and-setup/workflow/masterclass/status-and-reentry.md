@@ -9,6 +9,32 @@ description: >-
 
 本页介绍如何设置 Workflow，使每个文档只经过它一次。
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/zh.mp4" %}
+
+**视频:** “更改状态”卡与循环防护 · 0:40 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**更改状态** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/zh.mp4#t=0.25)
+
+“更改状态”卡将文档设为新状态，例如被拒绝。
+
+**触发工作流** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/zh.mp4#t=10.083)
+
+触发工作流决定后续。开启后，若新状态会启动 Workflow（如准备验证），Workflow 会为此文档重新运行。
+
+**关闭：不会循环** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/zh.mp4#t=19.983)
+
+Workflow 若设置会再启动自身的状态，就可能循环。状态更改不应启动 Workflow 时，请关闭触发工作流。
+
+**示例：拒绝，不再重新启动** · [0:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/zh.mp4#t=30.416)
+
+例如：检查失败，此卡将状态设为被拒绝，并关闭触发工作流，因此不会重新启动。
+
+</details>
+
 ## 关键设置
 
 [将状态更改为](../cards-overview/then/status/change-status-to.md)卡片用于设置新状态。它的 **触发工作流** 设置决定此次状态更改是否可以启动 Workflow：

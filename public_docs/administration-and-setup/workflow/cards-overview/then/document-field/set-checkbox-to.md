@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_action_set_boolean_field_v2-zh-cn.png" alt="将复选框设为, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/zh.mp4" %}
+
+**视频:** 卡片: 设置复选框 · 0:40 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**设置复选框** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/zh.mp4#t=0.25)
+
+设置复选框卡片会勾选或取消勾选文档的复选框字段。选择字段，例如 Special handling，以及是否勾选。
+
+**勾选或不勾选，然后保存** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/zh.mp4#t=16.75)
+
+卡片写入该值并保存文档，即使复选框之前为空。如果字段不是复选框，例如金额，卡片会走它的错误路径。要把复选框切换为相反的值，请使用反转复选框卡片。
+
+**示例：勾选 Special handling** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/zh.mp4#t=31.583)
+
+例如，供应商需要特殊处理时，Workflow 勾选 Special handling，验证人员会在文档上看到它。
+
+</details>
+
 ## **用途：**
 
 此工作流卡片旨在根据 **“当”** 和 **“还有”** 部分中定义的条件，将复选框字段设为指定值（true 或 false）。当满足特定条件时，它可以简单有效地自动更新复选框，从而简化文档处理流程。

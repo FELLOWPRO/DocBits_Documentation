@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2-zh-cn.png" alt="子组织的文档操作符, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/zh.mp4" %}
+
+**视频:** 卡片: 文档属于某个子组织 · 0:35 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**文档属于某个子组织** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/zh.mp4#t=0.25)
+
+文件属于下属组织卡检查文档属于哪个子组织。选择是或不是，然后选择子组织，例如 Munich plant。
+
+**恰好一个子组织** · [0:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/zh.mp4#t=15.183)
+
+卡片只比较这一个子组织。如果文档没有子组织，卡片会走它的错误路径。要一次检查多个子组织，请使用以下任一子组织卡。
+
+**示例：一个工厂的发票** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/zh.mp4#t=26.416)
+
+例如，Munich plant 的发票交给慕尼黑的会计团队。其他子组织的文档不会到达这一步。
+
+</details>
+
 ## 目的：
 
 此工作流卡片用于评估文档是否属于特定子组织。根据评估结果，工作流可以继续，也可以根据文档是否关联到指定子组织触发不同的操作。

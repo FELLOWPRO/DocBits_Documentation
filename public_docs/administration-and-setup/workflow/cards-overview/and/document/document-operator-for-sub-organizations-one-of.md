@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_in_list_v2-zh-cn.png" alt="子组织的文档操作符（其中之一）, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/zh.mp4" %}
+
+**视频:** 卡片: 文档属于多个子组织之一 · 0:34 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**文档属于多个子组织之一** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/zh.mp4#t=0.25)
+
+以下任一子组织卡把文档与子组织列表比较。选择是或不是，再选一个或多个子组织，例如 Hamburg plant 和 Munich plant。
+
+**列表中之一** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/zh.mp4#t=16.65)
+
+文档属于所选子组织之一时，是成立；一个都不属于时，不是成立。如果文档没有子组织，卡片会走它的错误路径。
+
+**示例：两个工厂的发票** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/zh.mp4#t=26.383)
+
+例如，两个德国工厂的发票交给德国的会计团队。Vienna office 的文档不会到达这一步。
+
+</details>
+
 ## 目的：
 
 此工作流卡片用于检查文档是否属于多个子组织中的一个。它不是将文档与单个子组织进行比较，而是与一个列表进行比较，因此一张卡片即可覆盖一组需要以相同方式处理的子组织。工作流会根据结果沿着真条件或假条件继续。

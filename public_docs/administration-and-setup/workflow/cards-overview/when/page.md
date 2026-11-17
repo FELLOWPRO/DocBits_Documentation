@@ -4,6 +4,24 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2-zh-cn.png" alt="文档类型操作, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/zh.mp4" %}
+
+**视频:** 卡片: 文档类型 是 / 不是 · 0:30 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**文档类型 是 / 不是** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/zh.mp4#t=0.25)
+
+文档类型卡检查文档的类型。选择是或不是，然后选择类型，例如发票。不是会匹配除所选类型之外的所有类型。
+
+**示例：只处理发票** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/zh.mp4#t=17.183)
+
+例如，一个只处理发票的 Workflow：把“文档类型是发票”作为当卡，然后接一张分配卡。对于贷项通知单、报价单或订单，这个 Workflow 不会启动。
+
+</details>
+
 ## **用途：**
 
 此工作流卡片专用于对按类型分类的文档执行预定义操作。它简化了 ERP 系统中各种文档的处理流程，确保每种类型的文档都按照其独特要求和组织政策进行处理。

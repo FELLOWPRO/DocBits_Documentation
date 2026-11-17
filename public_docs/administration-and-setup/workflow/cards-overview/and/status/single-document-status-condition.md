@@ -47,3 +47,21 @@
 **预期结果及反例：**对于当前状态为 **待批准** 的文档，条件为真；对于状态为 **准备验证** 的文档，条件为假。请使用您的版本中实际选择的状态。更改状态本身并不导出文档。
 
 这是一个说明性的测试配置和预期结果；它没有被执行。使用测试组织中配置的数据和收件人。
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/zh.mp4" %}
+
+**视频:** 卡片: 文档状态 是 / 不是 · 0:31 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**文档状态 是 / 不是** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/zh.mp4#t=0.25)
+
+文档状态卡检查 Workflow 运行那一刻文档的状态。选择是或不是，然后选择一个状态，例如准备验证。不是会匹配所有其他状态。
+
+**示例：仅在准备验证时分配** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/zh.mp4#t=17.083)
+
+例如，发票只在准备验证时才分配：先是发票的当卡，然后是“文档状态是准备验证”，再接分配卡。处于任何其他状态时，文档都不会到达分配这一步。
+
+</details>
+

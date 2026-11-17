@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v2-zh-cn.png" alt="将文档字段与参考值比较, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/zh.mp4" %}
+
+**视频:** 卡片: 文档字段与值比较 · 0:42 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**文档字段与值比较** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/zh.mp4#t=0.25)
+
+文档字段卡把文档的一个字段与您输入的值进行比较。选择字段，例如总金额，然后选择运算符，这里是大于，再输入值一万。
+
+**文本、数字、日期** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/zh.mp4#t=18.95)
+
+文本字段只能等于或不等于，大小写无关。数字和日期还可以大于或小于该值。如果文档中没有该字段，卡片会走它的错误路径。
+
+**示例：大额发票需要第二次审批** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/zh.mp4#t=32.35)
+
+例如，大额发票需要第二次审批：总金额大于一万，然后接分配给财务的分配卡。较小的发票不会到达这一步。
+
+</details>
+
 ## **用途：**
 
 此工作流卡片旨在通过将指定文档字段的值与参考值或条件进行比较来自动执行操作。它可根据文档数据验证结果，在工作流中实现动态且准确的决策。

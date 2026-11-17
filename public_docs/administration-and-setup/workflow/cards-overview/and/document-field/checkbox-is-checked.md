@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-zh-cn.png" alt="复选框已选中, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/zh.mp4" %}
+
+**视频:** 卡片: 复选框已选中 · 0:31 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**复选框已选中** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/zh.mp4#t=0.25)
+
+复选框卡检查复选框字段。选择字段，例如 Special handling，以及是否选中。
+
+**空即未选中** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/zh.mp4#t=16.583)
+
+空的复选框视为未选中。如果文档没有这个复选框，卡片会走它的错误路径。
+
+**示例：勾选 Special handling** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/zh.mp4#t=24.083)
+
+例如，勾选 Special handling 后，Workflow 把文档交给物流部。未勾选的走正常路径。
+
+</details>
+
 ## 用途：
 
 此工作流卡片用于检查文档上的某个复选框字段是已选中还是未选中。例如，可以用它让工作流仅在文档上设置了某个标记（例如审核标记）之后才继续执行。

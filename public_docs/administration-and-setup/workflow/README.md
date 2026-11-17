@@ -6,6 +6,56 @@ description: "DocBits 工作流引擎"
 
 <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57.png" alt=""><figcaption></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/zh.mp4" %}
+
+**视频:** Workflow 术语：各是什么 · 1:11 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**视频中的术语** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/zh.mp4#t=0.25)
+
+视频中反复出现一些词。下面说明每个词的含义。
+
+**标准与 Advanced** · [0:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/zh.mp4#t=5.016)
+
+Workflow 是一组文档规则，有两种。
+
+**标准：固定列表** · [0:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/zh.mp4#t=9.316)
+
+标准 Workflow：当、和、然后卡的固定列表。
+
+**Advanced：画布** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/zh.mp4#t=14.45)
+
+Advanced Workflow 是画布，卡片随意连接。
+
+**当、和、然后** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/zh.mp4#t=20.916)
+
+卡片负责工作。“当”卡决定 Workflow 用于哪些文档，和卡检查条件，然后卡执行分配或导出等操作。
+
+**每张卡都是节点，但节点不都是卡** · [0:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/zh.mp4#t=30.15)
+
+画布上的都是节点。每张卡都是节点，但节点不都是卡：或者、等待任一和等待全部合并路径，笔记只包含文字。
+
+**一个输入，三个出口** · [0:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/zh.mp4#t=40.05)
+
+一张卡有一个输入和最多三个出口：成功、橙色的失败条件、红色的错误。
+
+**连接构成路径** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/zh.mp4#t=47.616)
+
+连接从一个出口通向下一个节点的输入。文档所经过的连接就是它的路径。
+
+**变量** · [0:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/zh.mp4#t=54.616)
+
+变量是卡片字段中的值。Workflow 变量保存后续卡片读取的值。
+
+**运行与测试** · [1:01](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/zh.mp4#t=61.45)
+
+运行是 Workflow 处理真实文档，其日志显示路径。测试在您选择的文档上运行画布，操作只是模拟。
+
+</details>
+
 ## DocBits 工作流引擎：简化流程自动化
 
 ### 理解并准备工作流 <a id="workflow-orientation"></a>

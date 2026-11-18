@@ -10,6 +10,32 @@ Wanneer een document een nieuwe status krijgt, start DocBits de Workflows die vo
 
 Op deze pagina ziet u hoe u uw Workflow zo instelt dat elk document er maar één keer doorheen gaat.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/nl.mp4" %}
+
+**Video:** Kaart Status wijzigen en lusbeveiliging · 0:46 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Status wijzigen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/nl.mp4#t=0.25)
+
+De kaart Status wijzigen zet het document op een nieuwe status, bijvoorbeeld Afgewezen.
+
+**Workflows activeren** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/nl.mp4#t=10.083)
+
+Workflows activeren bepaalt wat er daarna gebeurt. Staat het aan en start de nieuwe status Workflows, zoals Klaar voor validatie, dan draaien de Workflows opnieuw voor dit document.
+
+**Uit: geen lus** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/nl.mp4#t=23.016)
+
+Als een Workflow een status zet die dezelfde Workflow opnieuw start, kan hij in een lus draaien. Zet Workflows activeren uit als de statuswijziging geen Workflows mag starten.
+
+**Voorbeeld: afwijzen, geen nieuwe start** · [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/nl.mp4#t=36.016)
+
+Bijvoorbeeld: een controle mislukt, deze kaart zet de status op Afgewezen met Workflows activeren uit, dus niets start opnieuw.
+
+</details>
+
 ## De instelling waar het om gaat
 
 De kaart [Wijzig status naar](../then/status/change-status-to.md) zet de nieuwe status. Met de instelling **Trigger-workflows** bepaalt u of deze statuswijziging Workflows mag starten:

@@ -47,3 +47,21 @@ De workflow-kaart "Document Status Condition" is essentieel om ervoor te zorgen 
 **Verwacht resultaat en tegenvoorbeeld:** De voorwaarde is waar voor een document met een van beide geselecteerde statussen. Dit is false voor een document met de status **Klaar voor validatie**. Als de operator vereist dat de status buiten de lijst valt, zijn de resultaten van deze voorwaarde omgekeerd. Inspecteer de daadwerkelijke lijst in plaats van een door komma's gescheiden vrije tekstwaarde te vergelijken.
 
 Dit is een illustratieve testconfiguratie en verwachte uitkomst; het werd niet uitgevoerd. Gebruik gegevens en ontvangers die in uw testorganisatie zijn geconfigureerd.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/nl.mp4" %}
+
+**Video:** Kaart: Documentstatus: een uit een lijst · 0:36 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Documentstatus: een uit een lijst** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/nl.mp4#t=0.25)
+
+De kaart Documentstatus in een lijst vergelijkt de status van het document met meerdere statussen tegelijk. Kies Is of Is niet en dan de statussen. Is klopt als het document er een van heeft.
+
+**Voorbeeld: twee statussen, één herinnering** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/nl.mp4#t=18.316)
+
+Bijvoorbeeld: de herinnering gaat uit zolang een factuur Klaar voor validatie of In afwachting van goedkeuring is: de Wanneer-kaart voor facturen, dan Documentstatus in deze lijst, dan de herinnering. In elke andere status bereikt het document de herinnering niet.
+
+</details>
+

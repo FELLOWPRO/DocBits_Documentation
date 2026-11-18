@@ -2,6 +2,24 @@
 
 <figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2-nl-nl.png" alt="Documenttype is een van, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/nl.mp4" %}
+
+**Video:** Kaart: Documenttype: een uit een lijst · 0:31 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Documenttype: een uit een lijst** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/nl.mp4#t=0.25)
+
+De kaart Documenttype een van de volgende vergelijkt het type van een document met een lijst. Kies Is of Is niet en dan een of meer documenttypen. Is klopt als het type in de lijst staat, Is niet als het er niet in staat.
+
+**Voorbeeld: facturen en creditnota’s** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/nl.mp4#t=17.55)
+
+Bijvoorbeeld één Workflow voor facturen en creditnota’s: Documenttype is een van Factuur en Creditnota als Wanneer-kaart, daarna de toewijzingskaart. Andere documenten starten deze Workflow niet.
+
+</details>
+
 ## **Doel:**
 
 Deze DocBits-kaart zorgt voor de juiste classificatie van een document door te controleren of het overeenkomt met een van de gespecificeerde documenttypen. Dit is handig voor situaties waarin een document tot meer dan één categorie kan behoren, waardoor bredere validatie en geautomatiseerde verwerking mogelijk zijn.

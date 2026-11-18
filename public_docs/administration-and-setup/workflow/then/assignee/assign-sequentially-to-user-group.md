@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_no_variables_v2-nl-nl.png" alt="Wijs het document sequentieel toe aan Gebruiker/Groep op basis van de beslissingstabel. — Versie 2" width="634"><figcaption><p>Wijs het document sequentieel toe aan Gebruiker/Groep op basis van de beslissingstabel. — Versie 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/nl.mp4" %}
+
+**Video:** Kaart: Opeenvolgend toewijzen via beslissingstabel · 0:48 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Opeenvolgend toewijzen via beslissingstabel** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/nl.mp4#t=0.25)
+
+De kaart Opeenvolgend toewijzen op basis van een beslissingstabel geeft het document na elkaar aan de gebruikers en groepen die een beslissingstabel heeft teruggegeven. De kaart heeft geen instellingen: alles komt uit de tabel.
+
+**Wat de kaart nodig heeft** · [0:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/nl.mp4#t=15.416)
+
+Ze heeft ervoor een beslissingstabelkaart nodig die haar teruggegeven gegevens opslaat. Ze neemt alle gebruikers en groepen die de tabel teruggaf, en de laagste prioriteit krijgt het document eerst. Rijen zonder prioriteit tellen als prioriteit één. Gaf de tabel niemand terug, dan neemt de kaart haar foutuitgang.
+
+**Voorbeeld: twee goedkeurders na elkaar** · [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/nl.mp4#t=36.916)
+
+De tabel Example approvers geeft bijvoorbeeld twee goedkeurders terug met prioriteit één en twee. De factuur gaat naar de eerste en na de goedkeuring naar de tweede.
+
+</details>
+
 ## **Doel**
 
 De workflow-kaart "**Wijs het document opeenvolgend toe aan de gebruiker/groep op basis van de beslissingstabel**" wijst documenten dynamisch toe aan een gebruiker of een groep, afhankelijk van de evaluatie van de decision table. Dit zorgt ervoor dat documenten op de juiste manier worden gerouteerd op basis van vooraf gedefinieerde regels.

@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-nl-nl.png" alt="Toewijzen aan groep, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/nl.mp4" %}
+
+**Video:** Kaart: Document toewijzen aan een groep · 0:50 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Document toewijzen aan een groep** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/nl.mp4#t=0.25)
+
+De kaart Toewijzen aan groep geeft het document aan een groep: kies de groep, bijvoorbeeld Accounts payable. Versie drie, gekozen met het versielabel, voegt een tweede instelling toe: of een beslissingstabel in plaats daarvan de groep mag kiezen.
+
+**Beslissingsboom: eerst de groep uit de tabel** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/nl.mp4#t=21.683)
+
+Met de beslissingsboom ingeschakeld neemt de kaart de groep die een beslissingstabelkaart eerder in de Workflow teruggaf. Gaf de tabel geen groep terug, dan krijgt de groep op de kaart het document. Versie twee wijst altijd de groep op de kaart toe.
+
+**Voorbeeld: groep uit de tabel, terugval op de kaart** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/nl.mp4#t=37.816)
+
+Bijvoorbeeld: een beslissingstabel geeft de groep voor de leverancier terug, en de toewijzingskaart gebruikt die. Vindt de tabel geen groep, dan krijgt Accounts payable de factuur.
+
+</details>
+
 ## Doel:
 
 De workflow-kaart **"Assign to Group"** faciliteert de toewijzing van documenten aan een specifieke **groep** binnen het systeem. Dit zorgt ervoor dat het document door het juiste team wordt verwerkt, wat de workflow stroomlijnt. In latere versies uitgebreid, introduceert hij beslisboomfunctionaliteit voor dynamische groepstoewijzing.

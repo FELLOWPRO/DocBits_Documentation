@@ -4,6 +4,24 @@
 
 <figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2-nl-nl.png" alt="Documenttypebewerking, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/nl.mp4" %}
+
+**Video:** Kaart: Documenttype is / is niet · 0:30 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Documenttype is / is niet** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/nl.mp4#t=0.25)
+
+De kaart Documenttype controleert het type van een document. Kies Is of Is niet en dan het type, bijvoorbeeld Factuur. Is niet past bij elk type behalve het gekozen type.
+
+**Voorbeeld: alleen facturen** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/nl.mp4#t=17.183)
+
+Bijvoorbeeld een Workflow alleen voor facturen: Documenttype is Factuur als Wanneer-kaart, daarna een toewijzingskaart. Voor creditnota’s, offertes of orders start deze Workflow niet.
+
+</details>
+
 ## **Doel:**
 
 Deze workflowkaart is speciaal ontworpen om vooraf gedefinieerde bewerkingen uit te voeren op documenten die zijn gecategoriseerd op type. Het stroomlijnt de verwerking van verschillende documentvormen binnen een ERP-systeem, waarbij wordt gegarandeerd dat elk type wordt verwerkt volgens zijn unieke vereisten en organisatorische beleid.

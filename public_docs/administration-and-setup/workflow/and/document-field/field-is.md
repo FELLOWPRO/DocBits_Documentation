@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-nl-nl.png" alt="Aanwezigheid en inhoud van een documentveld controleren, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/nl.mp4" %}
+
+**Video:** Kaart: Veld leeg of niet · 0:45 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Veld leeg of niet** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/nl.mp4#t=0.25)
+
+De kaart Veld is controleert of een veld van het document leeg is. Kies het veld, bijvoorbeeld Inkooporder, en de status: leeg of niet in het document, of in het document en niet leeg.
+
+**Ontbrekend telt als leeg** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/nl.mp4#t=18.716)
+
+Een veld telt als leeg als het geen waarde heeft, alleen spaties, een niet aangevinkt selectievakje of een lege lijst. Een veld dat niet in het document staat, telt ook als leeg. Klopt de status, dan is de kaart waar. Anders is ze onwaar.
+
+**Voorbeeld: geen inkooporder** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/nl.mp4#t=33.816)
+
+Een factuur zonder inkooporder gaat bijvoorbeeld naar de goedkeurder voor facturen zonder order. Facturen met een inkooporder nemen het andere pad, bijvoorbeeld de ordermatch.
+
+</details>
+
 ## Wanneer gebruiken
 
 Gebruik deze kaart om te controleren of een documentveld leeg is of ontbreekt, bijvoorbeeld wanneer een factuur zonder factuurnummer extra controle nodig heeft. Dit is een voorwaarde; stel de daaropvolgende actie afzonderlijk in.

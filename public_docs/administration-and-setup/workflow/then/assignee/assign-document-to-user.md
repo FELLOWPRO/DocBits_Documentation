@@ -6,6 +6,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-nl-nl.png" alt="Document toewijzen aan gebruiker, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/nl.mp4" %}
+
+**Video:** Kaart: Document toewijzen aan een gebruiker · 0:51 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/nl.vtt)
+
+<details>
+
+<summary>Transcriptie</summary>
+
+**Document toewijzen aan een gebruiker** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/nl.mp4#t=0.25)
+
+De kaart Document toewijzen aan gebruiker geeft het document aan één gebruiker: kies de gebruiker. Versie drie, gekozen met het versielabel, voegt een tweede instelling toe: of een beslissingstabel in plaats daarvan de gebruiker mag kiezen.
+
+**Beslissingsboom: eerst de gebruiker uit de tabel** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/nl.mp4#t=21.75)
+
+Met de beslissingsboom ingeschakeld neemt de kaart de eerste gebruiker die een beslissingstabelkaart eerder in de Workflow teruggaf. Gaf de tabel geen gebruiker terug, dan krijgt de gebruiker op de kaart het document. Versie twee wijst altijd de gebruiker op de kaart toe.
+
+**Voorbeeld: goedkeurder uit de tabel, terugval op de kaart** · [0:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/nl.mp4#t=38.583)
+
+Bijvoorbeeld: een beslissingstabel geeft de goedkeurder voor het factuurbedrag terug, en de toewijzingskaart gebruikt die. Vindt de tabel niemand, dan krijgt Alex Example de factuur.
+
+</details>
+
 ## **Doel:**
 
 Met de workflow-kaart **"Assign Document to User"** kunnen gebruikers een document aan een specifieke gebruiker toewijzen, wat zorgt voor soepel workflowbeheer door documenten naar de juiste persoon te routeren. Version 3 voegt de mogelijkheid toe om een beslisboom te gebruiken om de gebruikerstoewijzing dynamisch te bepalen op basis van beschikbare voorwaarden.

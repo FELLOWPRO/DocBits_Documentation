@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-zh-cn.png" alt="分配至组, 版本 3" width="634"><figcaption><p>版本 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/zh.mp4" %}
+
+**视频:** 卡片: 将文档分配给组 · 0:44 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**将文档分配给组** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/zh.mp4#t=0.25)
+
+分配给组卡把文档交给一个组：选择组，例如 Accounts payable。版本三通过版本标签选择，它增加了第二个设置：是否改由决策表来选择组。
+
+**使用决策树：优先采用决策表的组** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/zh.mp4#t=21.683)
+
+开启使用决策树后，卡片会采用 Workflow 中前面的决策表卡返回的组。如果决策表没有返回组，就由卡片上的组接收文档。版本二始终分配卡片上的组。
+
+**示例：组来自决策表，卡片上的组作后备** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/zh.mp4#t=35.583)
+
+例如，决策表按供应商返回组，分配卡使用它。找不到组时，由 Accounts payable 接收发票。
+
+</details>
+
 ## 用途：
 
 **“Assign to Group”（分配至组）**工作流卡片可将文档分配给系统中的特定**组**，确保文档由合适的团队处理，从而简化工作流。后续版本增强了此功能，并引入决策树功能，以便动态分配组。

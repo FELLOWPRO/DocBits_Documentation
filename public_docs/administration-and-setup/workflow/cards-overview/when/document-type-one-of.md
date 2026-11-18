@@ -2,6 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2-zh-cn.png" alt="文档类型之一, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/zh.mp4" %}
+
+**视频:** 卡片: 文档类型：列表中之一 · 0:29 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**文档类型：列表中之一** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/zh.mp4#t=0.25)
+
+文档类型以下之一卡把文档的类型与一个列表进行比较。选择是或不是，然后选择一个或多个文档类型。类型在列表中时，是成立；不在列表中时，不是成立。
+
+**示例：发票和贷项通知单** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/zh.mp4#t=17.55)
+
+例如，发票和贷项通知单共用一个 Workflow：当卡为“文档类型是发票、贷项通知单之一”，再接分配卡。其他文档不会启动它。
+
+</details>
+
 ## **用途：**
 
 这张 DocBits 卡片通过验证文档是否符合指定的任一文档类型，确保文档分类正确。当文档可能属于多个类别时，这张卡片尤其有用，可支持更广泛的验证和自动化处理。

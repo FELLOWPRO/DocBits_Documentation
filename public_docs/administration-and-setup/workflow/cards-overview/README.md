@@ -4,6 +4,32 @@
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-zh.png" alt="所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。"><figcaption><p>所选类别中的可用卡片。使用前请填写所需字段。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-search/v1/zh.mp4" %}
+
+**视频:** 查找卡片：搜索和类别 · 0:38 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-search/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**卡片选择器** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-search/v1/zh.mp4#t=0.25)
+
+每张卡片都来自卡片选择器。点击添加，选择卡片类型，这里是和。选择器会列出该类型的所有卡片。
+
+**类别：只看一种卡片** · [0:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-search/v1/zh.mp4#t=9.983)
+
+左侧的类别按卡片处理的内容分类：文档字段、日期、状态、表格等。点击一个类别只看它的卡片，再次点击即可看到全部卡片。
+
+**搜索卡：卡片文字中的词语** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-search/v1/zh.mp4#t=20.983)
+
+要按词语查找卡片，请在搜索卡中输入。搜索会在所有类别中查找您所用语言的卡片文字。
+
+**在类别内搜索** · [0:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-search/v1/zh.mp4#t=30.15)
+
+选中类别后，搜索只在该类别中进行。点击一张卡片即可把它添加到画布上。
+
+</details>
+
 ## 卡组
 
 * **当** — 启动工作流程的触发卡（例如文档类型、文档类型之一）。

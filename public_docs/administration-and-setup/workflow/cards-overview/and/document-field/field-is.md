@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-zh-cn.png" alt="检查文档字段是否存在及是否有值, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/zh.mp4" %}
+
+**视频:** 卡片: 字段是否为空 · 0:42 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**字段是否为空** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/zh.mp4#t=0.25)
+
+字段是卡片检查文档的某个字段是否为空。选择字段，例如采购订单，以及状态：为空或不在文档中，或者在文档中且非空。
+
+**缺失也算作空** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/zh.mp4#t=18.716)
+
+字段没有值、只有空格、复选框未勾选或列表为空时，都算作空。不在文档中的字段也算作空。状态符合时，卡片为真；否则为假。
+
+**示例：没有采购订单** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/zh.mp4#t=31.716)
+
+例如，没有采购订单的发票会交给负责无订单发票的审批人。有采购订单的发票走另一条路径，例如订单匹配。
+
+</details>
+
 ## 何时使用
 
 使用此卡片检查文档字段是否为空或不存在。例如，发票缺少发票号码，需要进一步检查。此卡片是一项条件；后续操作需要另行配置。

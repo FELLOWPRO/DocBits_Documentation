@@ -2,6 +2,24 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_doc_status_is_isnot_in_list_v2-zh-cn.png" alt="文档状态条件列表, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/zh.mp4" %}
+
+**视频:** 卡片: 文档状态：列表中之一 · 0:31 · [字幕 (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/zh.vtt)
+
+<details>
+
+<summary>文字稿</summary>
+
+**文档状态：列表中之一** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/zh.mp4#t=0.25)
+
+文档状态列表卡一次把文档的状态与多个状态进行比较。选择是或不是，然后选择这些状态。文档处于其中之一时，是成立。
+
+**示例：两个状态，一个提醒** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/zh.mp4#t=17.383)
+
+例如，发票处于待验证或待批准状态时发送提醒：先是发票的当卡，然后是这个文档状态列表卡，再接提醒。处于任何其他状态时，文档都不会到达提醒。
+
+</details>
+
 ## 何时使用
 
 当多个单据状态都应满足同一个附加条件时，使用此卡片。例如，在第一轮审批或第二轮审批期间继续执行同一项后续操作。卡片检查单据的当前状态是否属于所选列表；它不会更改单据状态。工作流的触发器和后续操作需分别配置。

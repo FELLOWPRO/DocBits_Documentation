@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2.png" alt="Workflow card Document: Document Operator part of suborganization Sub-Org, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/en.mp4" %}
+
+**Video:** Card: Document part of a sub-organisation · 0:42 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Document part of a sub-organisation** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/en.mp4#t=0.25)
+
+The card Document part of a sub-organisation checks which sub-organisation a document belongs to. Choose is or is not, and then the sub-organisation, for example Munich plant.
+
+**Exactly one sub-organisation** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/en.mp4#t=16.65)
+
+The card compares exactly this sub-organisation. If the document has no sub-organisation, the card takes its error exit. To check several sub-organisations at once, use the card in one of the following sub-organisations.
+
+**Example: invoices of one plant** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/en.mp4#t=32.45)
+
+For example, invoices of the Munich plant go to the accounting team in Munich. Documents of other sub-organisations do not reach this step.
+
+</details>
+
 ## Purpose:
 
 This workflow card evaluates whether a document is part of a specific sub-organization. Based on this evaluation, the workflow can either continue or trigger different actions depending on whether the document is associated with the specified sub-organization or not.

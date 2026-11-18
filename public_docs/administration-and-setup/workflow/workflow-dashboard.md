@@ -10,6 +10,56 @@ The partial views below show volume metrics, run outcomes and the runs chart. Re
 
 <figure><img src="../../.gitbook/assets/workflow-chart-current-en.png" alt="Workflow runs over the seven displayed months, with Success and Failed series shown separately."><figcaption><p>Workflow runs over the seven displayed months, with Success and Failed series shown separately.</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/en.mp4" %}
+
+**Video:** The workflow list · 2:00 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Switch on Standard workflows** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/en.mp4#t=0.25)
+
+Workflows have to be switched on for your organisation first. The Workflow Builder setting under Module gives access to Standard workflows. Advanced Workflows have their own setting and subscription.
+
+**License: Workflow and Advanced Workflow** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/en.mp4#t=14.55)
+
+The same switch is on the License tab of the Workflow Dashboard, next to the one for Advanced workflows. Each card shows whether it is active.
+
+**Choose your plan** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/en.mp4#t=26.15)
+
+Switching one on opens Choose your plan. Pick a plan and confirm, and the subscription starts. Here we cancel.
+
+**Subscriptions and their state** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/en.mp4#t=35.716)
+
+All subscriptions and their state are listed in the settings under Subscription Plan.
+
+**New Workflow: Standard or Advanced** · [0:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/en.mp4#t=42.55)
+
+In the workflow list, New Workflow lets you choose between a Standard and an Advanced workflow. Each has its own video.
+
+**Start from a template** · [0:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/en.mp4#t=53.25)
+
+Templates are ready-made workflows. Open one, adjust it and save it: that creates a new workflow of your own.
+
+**Import downloaded workflows** · [1:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/en.mp4#t=62.183)
+
+With Import Workflow you upload workflows you downloaded before, for example from a testing environment or a backup: JSON files, up to ten at a time.
+
+**Duplicate a workflow** · [1:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/en.mp4#t=74.55)
+
+To try out a change without touching a running workflow, duplicate it. The copy is called copy, followed by the original name, and keeps whether it is switched on.
+
+**Switch on and off** · [1:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/en.mp4#t=93.116)
+
+The icon next to the name shows whether a workflow is switched on. To switch it on or off, use Activate or Deactivate in the row menu.
+
+**Several at once** · [1:46](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/en.mp4#t=106.016)
+
+For several workflows at once, tick them and open the menu in the header: activate, deactivate or delete them together. Deleting asks once more before the workflows are gone.
+
+</details>
+
 ## Tabs
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/en.mp4" %}

@@ -2,6 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2.png" alt="Workflow card Document: Document type Operator one of the following Type, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/en.mp4" %}
+
+**Video:** Card: Document type: one of a list · 0:33 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Document type: one of a list** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/en.mp4#t=0.25)
+
+The card Document type one of the following checks the type of a document against a list. Choose is or is not, and then one or more document types. Is passes when the document's type is in the list, is not when it is not.
+
+**Example: invoices and credit notes** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/en.mp4#t=18.116)
+
+For example, one workflow for invoices and credit notes: Document type is one of Invoice and Credit note as the When card, then the assign card. Other documents do not start this workflow.
+
+</details>
+
 ## **Purpose:**
 
 This DocBits card ensures the correct classification of a document by verifying if it matches any of the specified document types. This is useful for situations where a document could belong to more than one category, allowing for broader validation and automated handling.

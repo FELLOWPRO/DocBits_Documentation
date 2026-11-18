@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_action_set_boolean_field_v2.png" alt="Workflow card Document Field: Set checkbox Field Name to Boolean, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/en.mp4" %}
+
+**Video:** Card: Set checkbox · 0:43 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Set checkbox** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/en.mp4#t=0.25)
+
+The card Set checkbox ticks or clears a checkbox field of the document. Choose the field, for example Special handling, and whether it should be checked.
+
+**Checked or not checked, then saved** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/en.mp4#t=17.183)
+
+The card writes the value and saves the document, even if the checkbox was empty before. If the field is not a checkbox, for example an amount, the card takes its error exit. To switch a checkbox to the opposite value, use the card Invert checkbox.
+
+**Example: tick Special handling** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/en.mp4#t=33.083)
+
+For example, when the supplier needs special handling, the workflow ticks Special handling, and the validator sees it on the document.
+
+</details>
+
 ## **Purpose:**
 
 This workflow card is designed to set a checkbox field to a specified value (true or false) based on the conditions defined in the **"When"** and **"And"** sections. It provides a simple yet effective way to automate checkbox updates when certain criteria are met, ensuring streamlined document processing.

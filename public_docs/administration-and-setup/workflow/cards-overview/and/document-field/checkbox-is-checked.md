@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2.png" alt="Workflow card Document Field: Checkbox Field Name is checked: Boolean, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/en.mp4" %}
+
+**Video:** Card: Checkbox is checked · 0:37 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Checkbox is checked** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/en.mp4#t=0.25)
+
+The card Checkbox checks a checkbox field of the document. Choose the field, for example Special handling, and whether it should be checked or not checked.
+
+**Empty means not checked** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/en.mp4#t=16.583)
+
+An empty checkbox counts as not checked. If the document has no such checkbox, the card takes its error exit.
+
+**Example: a tick for special handling** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/en.mp4#t=25.983)
+
+For example, the validator ticks Special handling, and the workflow sends the document to the logistics team. Documents without the tick take the normal path.
+
+</details>
+
 ## Purpose:
 
 This workflow card checks whether a checkbox field on the document is checked or unchecked. It can be used to let a workflow continue only after a flag has been set on the document, for example a review flag.

@@ -12,51 +12,55 @@ Avoid direct assignment in the same run when expecting the first sequential reci
 
 Business acceptance needs A→approve→B→approve, rejection by A, a missing recipient and a repeated trigger. Rejection must prevent final export; failed recipient resolution must not appear as completed approval. Inspect document responsibility and task inventory separately. Designer simulations do not prove a real user handoff.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.mp4" %}
 
-**Video:** Two-step approval with decision tables · 3:03 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.vtt)
+**Video:** Two-step approval with decision tables · 3:21 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.vtt)
 
 <details>
 
 <summary>Transcript</summary>
 
-**Two steps, two decision tables** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4#t=0.25)
+**Two steps, two decision tables** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.mp4#t=0.25)
 
 A two-step approval: first the approvers a decision table returns, then a final group that always comes last. Two decision tables, one returns users, the other a group.
 
-**One chain: table, assign, table, assign** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4#t=13.35)
+**The table: who, return type and priority** · [0:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.mp4#t=13.35)
+
+For the sequential assignment, set up the decision table like this: each row returns who gets the document, with the return type User or Group, and a priority. The assign card only takes returns of the type it is set to, and the lowest priority comes first. Rows without a priority get the priority set on the card.
+
+**One chain: table, assign, table, assign** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.mp4#t=33.883)
 
 Put each assign card right after its own decision table, in one chain: decision table, assign, decision table, assign. Both decision tables store their returned data.
 
-**Each assign card right after its table** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4#t=26.75)
+**Each assign card right after its table** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.mp4#t=47.283)
 
 A workflow keeps only the last decision table result. Each assign card reads it when it runs, so it must run before the next decision table replaces it.
 
-**Priorities set the order** · [0:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4#t=38.783)
+**Priorities set the order** · [0:59](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.mp4#t=59.316)
 
 The order of the approvals comes from the priorities, not from the order of the cards: the lowest number gets the document first. Give the final group the highest number.
 
-**Test: approvers, then the group** · [0:52](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4#t=52.116)
+**Test: approvers, then the group** · [1:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.mp4#t=72.65)
 
 The test shows every card succeeding. The first assign card queues the two approvers, the second one the final group. At the end of the run, one final assignment gives the document to the first of them.
 
-**Side by side: does not work** · [1:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4#t=80.216)
+**Side by side: does not work** · [1:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.mp4#t=99.75)
 
 This layout does not work. Two paths side by side look the same, but the workflow runs them step by step: both decision tables first, then both assign cards.
 
-**The approvers are lost - no error** · [1:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4#t=94.65)
+**The approvers are lost - no error** · [1:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.mp4#t=114.183)
 
 The test runs both decision tables first, then both assign cards. Both read the result of the second table: the group is queued twice, and the approvers are lost. Every card still shows success, so nothing warns you. Use the chain.
 
-**A fixed last approver: priority 99** · [2:04](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4#t=124.05)
+**A fixed last approver: priority 99** · [2:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.mp4#t=142.916)
 
 In a Standard workflow, a fixed approver can always come last: assign the decision table's users, then add a card that assigns one user with a high priority, for example 99.
 
-**Keep the table's priorities lower** · [2:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4#t=139.05)
+**Keep the table's priorities lower** · [2:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.mp4#t=157.916)
 
 The decision table's priorities must stay below that number. If the table finds nobody, the workflow stops at the decision table card, and nobody is assigned. A user returned by both is asked twice.
 
-**Check it in a test** · [2:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v1/en.mp4#t=154.616)
+**Check it in a test** · [2:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-two-step/v2/en.mp4#t=173.483)
 
 A Standard workflow tests one card at a time, so test the same cards in an Advanced workflow. The first assign card queues the table's approvers, the second adds the fixed user. Their priorities put the fixed user last.
 

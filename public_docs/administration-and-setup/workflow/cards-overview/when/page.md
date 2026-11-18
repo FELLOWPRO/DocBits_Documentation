@@ -4,6 +4,24 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2.png" alt="Workflow card Document: Document type Operator Type, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/en.mp4" %}
+
+**Video:** Card: Document type is / is not · 0:31 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Document type is / is not** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/en.mp4#t=0.25)
+
+The card Document type checks the type of a document. Choose is or is not, and then the type, for example Invoice. Is not matches every type except the one you choose.
+
+**Example: only invoices** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/en.mp4#t=17.216)
+
+For example, a workflow only for invoices: Document type is Invoice as the When card, then an assign card. For credit notes, quotes or orders, this workflow does not start.
+
+</details>
+
 ## **Purpose:**
 
 This workflow card is specifically designed to perform predefined operations on documents categorized by type. It streamlines the handling of various document forms within an ERP system, ensuring that each type is processed according to its unique requirements and organizational policies.

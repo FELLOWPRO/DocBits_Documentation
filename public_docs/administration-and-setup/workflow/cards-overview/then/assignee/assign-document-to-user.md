@@ -6,6 +6,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_doc_user_assign_v3.png" alt="Workflow card Assignee: Assign document to User, use decision tree if available, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/en.mp4" %}
+
+**Video:** Card: Assign document to a user · 0:52 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Assign document to a user** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/en.mp4#t=0.25)
+
+The card Assign document to a user gives the document to one user: choose the user. Version three, chosen with the version label, adds a second setting: whether a decision table may choose the user instead.
+
+**Use decision tree: the table's user first** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/en.mp4#t=21.75)
+
+With the decision tree switched on, the card takes the first user that a decision table card earlier in the workflow returned. If the table returned no user, the user on the card gets the document. Version two always assigns the user on the card.
+
+**Example: approver from the table, fallback on the card** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/en.mp4#t=37.783)
+
+For example, a decision table returns the approver for the invoice amount, and the assign card uses it. When the table finds nobody, Alex Example gets the invoice.
+
+</details>
+
 ## **Purpose:**
 
 The **"Assign Document to User"** workflow card allows users to assign a document to a specific user, ensuring smooth workflow management by routing documents to the appropriate person. Version 3 adds the capability to use a decision tree to dynamically determine the user assignment based on available conditions.

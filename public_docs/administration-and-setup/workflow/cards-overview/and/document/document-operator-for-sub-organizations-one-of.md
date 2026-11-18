@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_in_list_v2.png" alt="Workflow card Document: The document Operator in one of the following sub-organizations Sub-Org, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/en.mp4" %}
+
+**Video:** Card: Document in one of several sub-organisations · 0:45 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Document in one of several sub-organisations** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/en.mp4#t=0.25)
+
+The card Document in one of the following sub-organisations checks a document against a list of sub-organisations. Choose is or is not, and then one or more sub-organisations, for example Hamburg plant and Munich plant.
+
+**One of the list** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/en.mp4#t=20.116)
+
+Is passes when the document belongs to one of the selected sub-organisations, is not when it belongs to none of them. If the document has no sub-organisation, the card takes its error exit.
+
+**Example: invoices of two plants** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/en.mp4#t=34.25)
+
+For example, invoices of the two German plants go to the accounting team in Germany. Documents of the Vienna office do not reach this step.
+
+</details>
+
 ## Purpose:
 
 This workflow card checks whether a document belongs to one of several sub-organizations. Instead of comparing the document with a single sub-organization, it compares it with a list, so one card can cover a whole group of sub-organizations that should be handled the same way. Based on the result, the workflow continues with the true or the false condition.

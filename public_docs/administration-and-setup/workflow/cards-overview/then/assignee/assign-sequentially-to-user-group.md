@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_no_variables_v2.png" alt="Workflow card Assignee: Assign the document sequentially to User / Group based on decision table, version 2" width="634"><figcaption><p>Assign the document sequentially to User / Group based on decision table. — Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/en.mp4" %}
+
+**Video:** Card: Assign sequentially based on a decision table · 0:44 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Assign sequentially based on a decision table** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/en.mp4#t=0.25)
+
+The card Assign sequentially based on a decision table gives the document to the users and groups a decision table returned, one after the other. The card has no settings: everything comes from the table.
+
+**What the card needs** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/en.mp4#t=14.283)
+
+It needs a decision table card before it that stores its returned data. It takes every user and group the table returned, and the lowest priority gets the document first. Rows without a priority count as priority one. If the table returned nobody, the card takes its error exit.
+
+**Example: two approvers in turn** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/en.mp4#t=32.65)
+
+For example, the table Example approvers returns two approvers with priority one and two. The invoice goes to the first one, and after the approval to the second.
+
+</details>
+
 ## **Purpose**
 
 The "**Assign the Document Sequentially to User/Group Based on Decision Table**" workflow card dynamically assigns documents to either a user or a group, depending on the decision table's evaluation. This ensures that documents are routed appropriately based on predefined rules.

@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2.png" alt="Workflow card Document Field: Set Field Name to Text, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/en.mp4" %}
+
+**Video:** Card: Set field to text · 0:40 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/en.vtt)
+
+<details>
+
+<summary>Transcript</summary>
+
+**Set field to text** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/en.mp4#t=0.25)
+
+The card Set field to text writes a text into a field of the document. Choose the field, for example Notes, and type the text.
+
+**The text replaces the old value** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/en.mp4#t=16.516)
+
+The text replaces what the field held before, and the document is saved with it. If the document cannot be saved, the card takes its error exit.
+
+**Example: the reason in Notes** · [0:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/en.mp4#t=28.883)
+
+For example, when the unit price check fails, the card writes Check the unit price into Notes. The validator sees at once why the document stopped.
+
+</details>
+
 ## **Purpose:**
 
 This workflow card is designed to automatically set a specified field in the document to a predefined text value based on the conditions defined in the **"When"** and **"And."** It allows users to streamline data entry by ensuring fields are populated with consistent values when certain criteria are met.

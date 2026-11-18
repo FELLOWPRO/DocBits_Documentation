@@ -2,6 +2,24 @@
 
 <figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2-fr-fr.png" alt="Type de document Un de, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Type de document : l'un d'une liste · 0:30 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Type de document : l'un d'une liste** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/fr.mp4#t=0.25)
+
+La carte Type de document l'un des suivants compare le type d'un document à une liste. Choisissez Est ou N'est pas, puis un ou plusieurs types de document. Est réussit quand le type est dans la liste, N'est pas quand il n'y est pas.
+
+**Exemple : factures et notes de crédit** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type-list/v1/fr.mp4#t=17.716)
+
+Par exemple, un Workflow pour factures et notes de crédit : Type de document est l'un de Facture et Note de crédit en carte Quand, puis l'attribution. Les autres documents ne le démarrent pas.
+
+</details>
+
 ## **Objectif:**
 
 Cette carte DocBits garantit la classification correcte d'un document en vérifiant s'il correspond à l'un des types de document spécifiés. Cela est utile dans les situations où un document pourrait appartenir à plus d'une catégorie, permettant une validation plus large et une gestion automatisée.

@@ -6,6 +6,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-fr-fr.png" alt="Attribuer un document à un utilisateur, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Attribuer le document à un utilisateur · 0:53 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Attribuer le document à un utilisateur** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/fr.mp4#t=0.25)
+
+La carte Attribuer le document à un utilisateur donne le document à un utilisateur : choisissez-le. La version trois, choisie avec l'étiquette de version, ajoute un second réglage : une table de décision peut-elle choisir l'utilisateur à la place.
+
+**Arbre de décision : d'abord l'utilisateur de la table** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/fr.mp4#t=21.75)
+
+Avec l'arbre de décision activé, la carte prend le premier utilisateur renvoyé par une carte de table de décision plus tôt dans le Workflow. Si la table n'a renvoyé aucun utilisateur, celui de la carte reçoit le document. La version deux attribue toujours l'utilisateur de la carte.
+
+**Exemple : approbateur de la table, repli sur la carte** · [0:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/fr.mp4#t=40.45)
+
+Par exemple, une table de décision renvoie l'approbateur pour le montant de la facture, et la carte d'attribution l'utilise. Si la table ne trouve personne, Alex Example reçoit la facture.
+
+</details>
+
 ## **Objectif :**
 
 La carte de workflow **« Assign Document to User »** permet aux utilisateurs d'assigner un document à un utilisateur spécifique, garantissant une gestion fluide du workflow en acheminant les documents vers la personne appropriée. La Version 3 ajoute la possibilité d'utiliser un arbre de décision pour déterminer dynamiquement l'attribution de l'utilisateur en fonction des conditions disponibles.

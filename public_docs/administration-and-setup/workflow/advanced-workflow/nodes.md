@@ -43,6 +43,36 @@ Un Workflow Avancé est un graphe de **nœuds** reliés par des arêtes. Vous aj
 
 ## Types de nœuds
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/fr.mp4" %}
+
+**Vidéo:** Changer la version d'une carte · 0:40 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**L'étiquette montre la version de la carte** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/fr.mp4#t=0.25)
+
+Les cartes peuvent avoir plusieurs versions. La petite étiquette d'une carte, par exemple v1, indique la version utilisée. Une version plus récente en fait plus.
+
+**Cliquer pour voir les versions** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/fr.mp4#t=11.083)
+
+Cliquez sur l'étiquette de version pour voir les versions de cette carte.
+
+**Version 3 : Statut après exportation** · [0:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/fr.mp4#t=15.816)
+
+Choisissez la version plus récente. Celle-ci peut aussi définir le statut du document après exportation.
+
+**Redéfinir les valeurs** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/fr.mp4#t=23.55)
+
+Les valeurs ne sont pas reprises. Définissez-les à nouveau, ici la configuration d'exportation et le statut.
+
+**Valider et tester** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-version/v1/fr.mp4#t=31.916)
+
+Puis validez et testez le Workflow, comme après tout changement. Enregistrez-le quand il fait ce que vous attendez.
+
+</details>
+
 - **Start** — le point d'entrée du workflow. Ajouté automatiquement ; tout flux commence ici.
 - **When** — une carte de déclenchement, identique à celle du générateur Standard.
 - **And** — une carte de condition. Elle est évaluée à vrai ou faux et peut ramifier le flux.
@@ -91,6 +121,64 @@ Reliez le chemin rouge à une solution de repli, par exemple une tâche pour une
 **Comment une exécution se termine** · [1:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/fr.mp4#t=71.283)
 
 En bref : toute erreur fait de l'exécution une erreur. Une condition échouée sans chemin orange relié en fait une condition échouée. Tout le reste se termine en succès.
+
+</details>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4" %}
+
+**Vidéo:** ET et OU : combiner des conditions · 4:20 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**ET et OU** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4#t=0.25)
+
+Les conditions se combinent de deux façons. Des cartes l'une après l'autre agissent comme un ET : toutes doivent être vraies. Des cartes côte à côte, reliées à la même carte suivante, agissent comme un OU : une carte vraie suffit. Les nœuds de jonction le montrent sur le canevas.
+
+**ET : cartes l'une après l'autre** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4#t=19.183)
+
+Une carte après l'autre, c'est ET : chaque carte du chemin doit être vraie avant que la suivante s'exécute. Cette facture est prête pour la validation et pas en attente d'approbation : les deux cartes sont vraies et l'action s'exécute.
+
+**OU : cartes côte à côte** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4#t=35.516)
+
+OU, ce sont des cartes côte à côte. Reliez la sortie verte des deux cartes Et directement à l'entrée de la carte suivante. Testez : la première carte est fausse, la seconde vraie, et un chemin vrai suffit pour que l'action s'exécute. Le bandeau du test signale quand même une condition non remplie, car la sortie orange de la carte fausse n'est pas reliée, mais l'action s'exécute.
+
+**La même chose avec une carte OU** · [0:57](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4#t=57.95)
+
+Vous pouvez aussi réunir les chemins avec une carte OU. Elle fait la même chose, mais rend le OU visible sur le canevas. Clic droit sur le canevas, Ajouter, puis OU. Reliez les deux cartes Et à elle, et la carte OU à l'action.
+
+**Un cas vrai suffit pour OU** · [1:15](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4#t=75.85)
+
+Le test donne le même résultat : un cas vrai suffit à la carte OU, donc l'action s'exécute. Ici aussi, le bandeau signale la condition non remplie de la carte fausse.
+
+**Attendre UN SEUL : comme OU** · [1:29](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4#t=89.85)
+
+Attendre UN SEUL fonctionne exactement comme OU : la carte attend chaque carte placée avant elle et continue dès qu'au moins un chemin a été pris. Les deux sont interchangeables, prenez le nom qui se lit le mieux dans votre workflow.
+
+**ET avec Attendre TOUS** · [1:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4#t=111.55)
+
+Pour un ET avec des cartes côte à côte, utilisez Attendre TOUS. Clic droit sur le canevas, Ajouter, puis Attendre TOUS. Reliez les deux cartes Et à elle, et Attendre TOUS à l'action. Testez : elle attend les deux cartes, les deux sont vraies, donc l'action s'exécute.
+
+**L'ordre : celui des connexions tracées** · [2:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4#t=140.383)
+
+Dans quel ordre cela s'exécute-t-il ? Le workflow traite une liste. Les cartes derrière une carte y sont ajoutées dans l'ordre où leurs connexions ont été tracées, donc la condition du haut s'exécute d'abord, puis celle du bas. La carte OU attend que les deux aient été exécutées, et l'action s'exécute une fois, quel que soit le nombre de conditions vraies.
+
+**Directement vers une action : pas d'attente** · [2:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4#t=171.85)
+
+Les cartes reliées directement à une action n'attendent pas. L'action est atteinte par le chemin court et s'exécute avant que la dernière carte du chemin long soit vérifiée, donc cette carte ne change plus rien. Si l'action doit attendre chaque vérification, placez devant elle une carte OU, Attendre UN SEUL ou Attendre TOUS.
+
+**Chaque sortie peut mener ailleurs** · [3:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4#t=193.916)
+
+Chaque carte a jusqu'à trois sorties : succès, condition non remplie et erreur. Chaque sortie peut mener à sa propre carte suivante.
+
+**Plusieurs sorties, une entrée : une suffit** · [3:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4#t=205.95)
+
+Vous pouvez aussi relier plusieurs sorties d'une carte à la même entrée. Une seule peut être prise, car une carte se termine avec exactement un résultat : la carte suivante n'attend donc que celle-là. Cela vaut pour toute entrée, pas seulement pour ces nœuds de jonction. Testez : la condition échoue, et Attendre TOUS continue quand même.
+
+**Nœuds de jonction : quels chemins ont été pris** · [3:54](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v2/fr.mp4#t=234.85)
+
+Les nœuds de jonction rendent surtout un Workflow plus lisible. OU et Attendre UN SEUL continuent dès qu'au moins un chemin relié a été pris. Attendre TOUS attend que toutes les cartes précédentes soient terminées et ne continue que si tous les chemins reliés ont été pris. Toute sortie d'une carte peut être reliée, pas seulement la verte : si une carte se termine sur une condition non remplie, sa sortie orange compte comme prise.
 
 </details>
 

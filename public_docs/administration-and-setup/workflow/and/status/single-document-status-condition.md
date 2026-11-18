@@ -47,3 +47,21 @@ La carte de workflow « Single Document Status Condition » simplifie la gestion
 **Résultat attendu et contre-exemple :** La condition est vraie pour un document actuellement **Validé en attente d'approbation** ; elle est fausse pour un document de statut **Prêt pour la validation**. Utilisez le statut actuellement sélectionné dans votre version. Changer un statut n’exporte pas en soi le document.
 
 Il s'agit d'une configuration de test illustrative et du résultat attendu ; il n'a pas été exécuté. Utilisez les données et les destinataires configurés dans votre organisation de test.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Statut du document est / n'est pas · 0:34 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Statut du document est / n'est pas** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/fr.mp4#t=0.25)
+
+La carte Statut du document vérifie le statut du document au moment où le Workflow s'exécute. Choisissez Est ou N'est pas, puis un statut, par exemple Prêt pour la validation. N'est pas correspond à tous les autres statuts.
+
+**Exemple : attribuer seulement si prêt pour la validation** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/fr.mp4#t=17.083)
+
+Par exemple, les factures ne sont attribuées que lorsqu'elles sont prêtes pour la validation : la carte Quand pour les factures, puis Statut du document est Prêt pour la validation, puis la carte d'attribution. Dans tout autre statut, aucune attribution n'a lieu.
+
+</details>
+

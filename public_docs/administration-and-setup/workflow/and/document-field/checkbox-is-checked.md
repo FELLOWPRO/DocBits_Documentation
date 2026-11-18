@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-fr-fr.png" alt="La case est cochée, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Case à cocher est cochée · 0:35 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Case à cocher est cochée** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/fr.mp4#t=0.25)
+
+La carte Case à cocher vérifie un champ case à cocher du document. Choisissez le champ, par exemple Special handling, et s'il doit être coché ou non coché.
+
+**Vide signifie non cochée** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/fr.mp4#t=16.583)
+
+Une case vide compte comme non cochée. Si le document n'a pas cette case, la carte prend son chemin d'erreur.
+
+**Exemple : une coche pour Special handling** · [0:24](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/fr.mp4#t=24.216)
+
+Par exemple, le validateur coche Special handling, et le Workflow envoie le document à l'équipe logistique. Les documents sans coche suivent le chemin normal.
+
+</details>
+
 ## Objectif :
 
 Cette carte de workflow vérifie si un champ case à cocher du document est coché ou non. Elle peut servir à ne poursuivre un workflow qu'après qu'un indicateur a été défini sur le document, par exemple un indicateur de révision.

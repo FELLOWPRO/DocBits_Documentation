@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2-fr-fr.png" alt="Régler sur, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Fixer un champ à un texte · 0:39 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Fixer un champ à un texte** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/fr.mp4#t=0.25)
+
+La carte Fixer le champ à un texte écrit un texte dans un champ du document. Choisissez le champ, par exemple Notes, et saisissez le texte.
+
+**Le texte remplace l'ancienne valeur** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/fr.mp4#t=16.483)
+
+Le texte remplace ce que le champ contenait, et le document est enregistré avec. Si le document ne peut pas être enregistré, la carte prend son chemin d'erreur.
+
+**Exemple : la raison dans Notes** · [0:27](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/fr.mp4#t=27.883)
+
+Par exemple, quand le contrôle du prix unitaire échoue, la carte écrit Vérifier le prix unitaire dans Notes. Le validateur voit aussitôt pourquoi le document s'est arrêté.
+
+</details>
+
 ## **Objectif :**
 
 Cette carte de workflow est conçue pour définir automatiquement un champ spécifié du document sur une valeur texte prédéfinie en fonction des conditions définies dans les sections **« Quand »** et **« Et »**. Elle permet aux utilisateurs de rationaliser la saisie de données en garantissant que les champs sont renseignés avec des valeurs cohérentes lorsque certains critères sont satisfaits.

@@ -10,6 +10,32 @@ Lorsqu'un document reçoit un nouveau statut, DocBits lance les Workflows prévu
 
 Cette page explique comment configurer votre Workflow pour que chaque document ne le traverse qu'une seule fois.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/fr.mp4" %}
+
+**Vidéo:** Carte Modifier le statut et prévention des boucles · 0:43 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Modifier le statut** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/fr.mp4#t=0.25)
+
+La carte Modifier le statut donne un nouveau statut au document, par exemple Rejeté.
+
+**Déclencher des flux de travail** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/fr.mp4#t=10.083)
+
+Déclencher des flux de travail décide de la suite. S'il est activé et que le nouveau statut lance des Workflows, comme Prêt pour la validation, les Workflows repartent pour ce document.
+
+**Désactivé : pas de boucle** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/fr.mp4#t=21.65)
+
+Si un Workflow définit un statut qui relance ce même Workflow, il peut tourner en boucle. Désactivez Déclencher des flux de travail quand le changement de statut ne doit lancer aucun Workflow.
+
+**Exemple : rejet, pas de nouveau départ** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/fr.mp4#t=34.083)
+
+Exemple : une vérification échoue, cette carte passe le statut à Rejeté sans déclencher de flux de travail : rien ne redémarre.
+
+</details>
+
 ## Le réglage décisif
 
 La carte [Modifier le statut en](../then/status/change-status-to.md) définit le nouveau statut. Son réglage **Déclencher des flux de travail** décide si ce changement de statut peut lancer des Workflows :

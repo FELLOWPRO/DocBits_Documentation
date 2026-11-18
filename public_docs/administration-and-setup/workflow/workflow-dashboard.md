@@ -2,6 +2,56 @@
 
 Le **Tableau de bord du flux de travail** est la page d'accueil de la zone des workflows. Il montre les performances de vos workflows — totaux d'exécutions, taux de réussite et d'échec, graphique des exécutions dans le temps et activité récente — et vous donne accès à la liste des workflows, au Test Manager et au Card SDK.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/fr.mp4" %}
+
+**Vidéo:** La liste des Workflows · 1:58 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Activer les Workflows Standard** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/fr.mp4#t=0.25)
+
+Activez d'abord les Workflows pour votre organisation. Le paramètre Constructeur de flux de travail, sous Module, donne accès aux Workflows Standard. Les Advanced Workflows ont leur propre paramètre et abonnement.
+
+**Licence : Flux de travail et Flux de travail avancé** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/fr.mp4#t=14.616)
+
+Le même interrupteur est dans l'onglet Licence du Tableau de bord du flux de travail, près de celui des Advanced Workflows. Chaque carte indique si elle est active.
+
+**Choisissez votre forfait** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/fr.mp4#t=25.383)
+
+L'activer ouvre Choisissez votre forfait. Choisissez un forfait et confirmez : l'abonnement commence. Ici, nous annulons.
+
+**Les abonnements et leur état** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/fr.mp4#t=35.416)
+
+Tous les abonnements et leur état sont listés dans les paramètres, sous Formule d'abonnement.
+
+**Nouveau flux de travail : Standard ou Flux de travail avancé** · [0:41](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/fr.mp4#t=41.383)
+
+Dans la Liste des flux de travail, Nouveau flux de travail propose Standard ou Flux de travail avancé. Chacun a sa vidéo.
+
+**Partir d'un modèle** · [0:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/fr.mp4#t=50.883)
+
+Les Modèles sont des Workflows prêts à l'emploi. Ouvrez-en un, adaptez-le et enregistrez-le : cela crée votre propre Workflow.
+
+**Importer des Workflows téléchargés** · [1:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/fr.mp4#t=60.383)
+
+Avec Importer le flux de travail, vous chargez des Workflows téléchargés, depuis un environnement de test ou une sauvegarde : fichiers JSON, dix au maximum à la fois.
+
+**Dupliquer un Workflow** · [1:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/fr.mp4#t=71.95)
+
+Pour essayer un changement sans toucher à un Workflow actif, dupliquez-le. La copie s'appelle « copy » suivi du nom d'origine, et reste activée ou non comme l'original.
+
+**Activer et désactiver** · [1:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/fr.mp4#t=90.383)
+
+L'icône à côté du nom indique si un Workflow est activé. Pour l'activer ou le désactiver, utilisez Activer ou Désactiver dans le menu de la ligne.
+
+**Plusieurs à la fois** · [1:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-list/v1/fr.mp4#t=103.65)
+
+Pour plusieurs Workflows à la fois, cochez-les et ouvrez le menu de l'en-tête : activez, désactivez ou supprimez-les ensemble. La suppression demande une confirmation avant que les Workflows disparaissent.
+
+</details>
+
 ## Indicateurs de volume
 
 Les trois premières cartes présentent les workflows exécutés aujourd’hui, les workflows créés pendant la période et le nombre total d’exécutions. Le sous-titre de la carte **Exécutions totales** indique la durée de la période sélectionnée.

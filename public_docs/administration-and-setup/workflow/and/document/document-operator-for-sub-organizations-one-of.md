@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_in_list_v2-fr-fr.png" alt="Opérateur de documents pour les sous-organisations un des, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Document dans l'une de plusieurs sous-organisations · 0:42 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Document dans l'une de plusieurs sous-organisations** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/fr.mp4#t=0.25)
+
+La carte Document dans l'une des sous-organisations suivantes compare un document à une liste de sous-organisations. Choisissez Est ou N'est pas, puis une ou plusieurs sous-organisations, par exemple Hamburg plant et Munich plant.
+
+**L'une de la liste** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/fr.mp4#t=18.883)
+
+Est réussit quand le document appartient à l'une des sous-organisations choisies, N'est pas quand il n'appartient à aucune. Si le document n'a pas de sous-organisation, la carte prend son chemin d'erreur.
+
+**Exemple : les factures de deux usines** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/fr.mp4#t=31.483)
+
+Par exemple, les factures des deux usines allemandes vont à l'équipe comptable en Allemagne. Les documents de Vienna office n'atteignent pas cette étape.
+
+</details>
+
 ## Objectif :
 
 Cette carte de workflow vérifie si un document appartient à l'une de plusieurs sous-organisations. Au lieu de comparer le document à une seule sous-organisation, elle le compare à une liste : une seule carte couvre ainsi tout un groupe de sous-organisations qui doivent être traitées de la même manière. Selon le résultat, le workflow se poursuit avec la condition vraie ou la condition fausse.

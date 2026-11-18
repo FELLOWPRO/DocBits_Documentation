@@ -4,6 +4,24 @@
 
 <figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2-fr-fr.png" alt="Opération de Type de Document, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Type de document est / n'est pas · 0:31 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Type de document est / n'est pas** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/fr.mp4#t=0.25)
+
+La carte Type de document vérifie le type d'un document. Choisissez Est ou N'est pas, puis le type, par exemple Facture. N'est pas correspond à tous les types sauf celui choisi.
+
+**Exemple : seulement les factures** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/fr.mp4#t=17.183)
+
+Par exemple, un Workflow uniquement pour les factures : Type de document est Facture comme carte Quand, puis une carte d'attribution. Pour les avoirs, les devis ou les commandes, ce Workflow ne démarre pas.
+
+</details>
+
 ## **Objectif:**
 
 Cette carte de flux de travail est spécifiquement conçue pour effectuer des opérations prédéfinies sur des documents catégorisés par type. Elle rationalise la gestion de diverses formes de documents au sein d'un système ERP, garantissant que chaque type est traité selon ses exigences uniques et les politiques organisationnelles.

@@ -6,6 +6,32 @@ La vue partielle ci-dessous montre un exemple de carte de condition de la catég
 
 <figure><img src="../../.gitbook/assets/workflow-po-condition-library-current-fr.png" alt="Carte de la catégorie « Comparaison des bons de commande » affichée dans la bibliothèque, avant sa sélection et sa configuration. Les paramètres de comparaison restent à renseigner."><figcaption><p>Carte de la catégorie « Comparaison des bons de commande » affichée dans la bibliothèque, avant sa sélection et sa configuration. Les paramètres de comparaison restent à renseigner.</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-search/v1/fr.mp4" %}
+
+**Vidéo:** Trouver des cartes : recherche et catégories · 0:46 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-search/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Le sélecteur de cartes** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-search/v1/fr.mp4#t=0.25)
+
+Chaque carte vient du sélecteur de cartes. Cliquez sur Ajouter et choisissez le type de carte, ici Et. Le sélecteur affiche toutes les cartes de ce type.
+
+**Catégories : les cartes d'un seul type** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-search/v1/fr.mp4#t=11.483)
+
+Les catégories à gauche classent les cartes selon ce qu'elles traitent : champs du document, dates, statut, tableaux et plus. Cliquez sur une catégorie pour ne voir que ses cartes. Cliquez à nouveau pour toutes les voir.
+
+**Rechercher une carte : un mot du texte** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-search/v1/fr.mp4#t=26.25)
+
+Pour trouver une carte par un mot, tapez-le dans Rechercher une carte. La recherche porte sur le texte des cartes dans votre langue, dans toutes les catégories.
+
+**Rechercher dans une catégorie** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-search/v1/fr.mp4#t=37.183)
+
+Quand une catégorie est choisie, la recherche reste dans cette catégorie. Cliquez sur une carte pour l'ajouter au canevas.
+
+</details>
+
 ## Groupes de cartes
 
 * **Quand....** — les cartes de déclenchement qui démarrent un workflow, par exemple selon un type de document ou plusieurs types de document.

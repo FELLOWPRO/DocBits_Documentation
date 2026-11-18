@@ -47,3 +47,21 @@ La carte de workflow « Document Status Condition » est essentielle pour garant
 **Résultat attendu et contre-exemple :** La condition est vraie pour un document avec l'un ou l'autre statut sélectionné. C'est faux pour un document de statut **Prêt pour la validation**. Avec l'opérateur qui exige que le statut soit en dehors de la liste, ces résultats de condition s'inversent. Inspectez la liste réelle plutôt que de comparer une valeur de texte libre séparée par des virgules.
 
 Il s'agit d'une configuration de test illustrative et du résultat attendu ; il n'a pas été exécuté. Utilisez les données et les destinataires configurés dans votre organisation de test.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Statut du document : l'un d'une liste · 0:35 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Statut du document : l'un d'une liste** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/fr.mp4#t=0.25)
+
+La carte Statut du document dans une liste compare le statut du document à plusieurs statuts à la fois. Choisissez Est ou N'est pas, puis les statuts. Est réussit quand le document a l'un d'eux.
+
+**Exemple : deux statuts, un rappel** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status-list/v1/fr.mp4#t=18.25)
+
+Par exemple, le rappel part tant qu'une facture est Prêt pour la validation ou Validé en attente d'approbation : la carte Quand pour les factures, puis Statut du document dans cette liste, puis le rappel. Dans tout autre statut, le document n'atteint pas le rappel.
+
+</details>
+

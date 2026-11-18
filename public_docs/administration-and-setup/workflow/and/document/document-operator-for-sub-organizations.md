@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2-fr-fr.png" alt="Opérateur de documents pour les sous-organisations, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/fr.mp4" %}
+
+**Vidéo:** Carte: Document partie d'une sous-organisation · 0:43 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/fr.vtt)
+
+<details>
+
+<summary>Transcription</summary>
+
+**Document partie d'une sous-organisation** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/fr.mp4#t=0.25)
+
+La carte Document partie de la sous-organisation vérifie à quelle sous-organisation appartient un document. Choisissez Est ou N'est pas, puis la sous-organisation, par exemple Munich plant.
+
+**Exactement une sous-organisation** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/fr.mp4#t=16.916)
+
+La carte compare exactement cette sous-organisation. Si le document n'a pas de sous-organisation, la carte prend son chemin d'erreur. Pour vérifier plusieurs sous-organisations à la fois, utilisez la carte dans l'une des sous-organisations suivantes.
+
+**Exemple : les factures d'une usine** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/fr.mp4#t=33.216)
+
+Par exemple, les factures de Munich plant vont à l'équipe comptable de Munich. Les documents des autres sous-organisations n'atteignent pas cette étape.
+
+</details>
+
 ## Objectif :
 
 Cette carte de workflow évalue si un document fait partie d'une sous-organisation spécifique. Selon cette évaluation, le workflow peut se poursuivre ou déclencher différentes actions selon que le document est associé ou non à la sous-organisation spécifiée.

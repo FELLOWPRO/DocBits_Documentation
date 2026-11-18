@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v2-es-es.png" alt="Comparar un campo de documento con un valor de referencia, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/es.mp4" %}
+
+**Vídeo:** Tarjeta: Campo del documento comparado con un valor · 0:44 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Campo del documento comparado con un valor** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/es.mp4#t=0.25)
+
+La tarjeta Campo del documento compara un campo del documento con un valor que usted introduce. Elija el campo, por ejemplo Importe total, luego el operador, aquí Mayor que, y el valor, diez mil.
+
+**Texto, números, fechas** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/es.mp4#t=18.916)
+
+Los campos de texto solo pueden ser iguales o distintos, y las mayúsculas no importan. Los números y las fechas también pueden ser mayores o menores que el valor. Si el campo no está en el documento, la tarjeta toma su camino de error.
+
+**Ejemplo: las facturas grandes necesitan una segunda aprobación** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-field-value/v1/es.mp4#t=32.483)
+
+Por ejemplo, una segunda aprobación para facturas grandes: Importe total mayor que diez mil, luego la tarjeta de asignación para finanzas. Las facturas menores no llegan a este paso.
+
+</details>
+
 ## **Propósito:**
 
 Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones comparando el valor de un campo de documento especificado con un valor o condición de referencia. Garantiza una toma de decisiones dinámica y precisa en los flujos de trabajo basada en la validación de los datos del documento.

@@ -10,6 +10,32 @@ Cuando un documento recibe un nuevo estado, DocBits inicia los Workflows previst
 
 Esta página muestra cómo configurar su Workflow para que cada documento pase por él una sola vez.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/es.mp4" %}
+
+**Vídeo:** Tarjeta Cambiar estado y prevención de bucles · 0:41 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Cambiar estado** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/es.mp4#t=0.25)
+
+La tarjeta Cambiar estado pone el documento en un nuevo estado, por ejemplo Rechazado.
+
+**Activar flujos de trabajo** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/es.mp4#t=10.083)
+
+Activar flujos de trabajo decide qué pasa después. Si está activado y el nuevo estado inicia Workflows, como Listo para la validación, los Workflows se ejecutan de nuevo para este documento.
+
+**Desactivado: sin bucle** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/es.mp4#t=21.716)
+
+Si un Workflow fija un estado que vuelve a iniciar el mismo Workflow, puede ejecutarse en bucle. Desactive Activar flujos de trabajo cuando el cambio de estado no deba iniciar ningún Workflow.
+
+**Ejemplo: rechazar sin nuevo inicio** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/es.mp4#t=32.416)
+
+Ejemplo: una comprobación falla, esta tarjeta pone el estado en Rechazado con Activar flujos de trabajo desactivado, así que nada se reinicia.
+
+</details>
+
 ## El ajuste decisivo
 
 La tarjeta [Cambiar estado a](../then/status/change-status-to.md) asigna el nuevo estado. Su ajuste **Desencadenar flujos de trabajo** decide si este cambio de estado puede iniciar Workflows:

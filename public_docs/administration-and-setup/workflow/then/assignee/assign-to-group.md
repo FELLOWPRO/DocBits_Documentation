@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-es-es.png" alt="Asignar al grupo, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/es.mp4" %}
+
+**Vídeo:** Tarjeta: Asignar documento a un grupo · 0:48 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Asignar documento a un grupo** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/es.mp4#t=0.25)
+
+La tarjeta Asignar al grupo entrega el documento a un grupo, por ejemplo Accounts payable. La versión tres, elegida con la etiqueta de versión, añade un segundo ajuste: si una tabla de decisión puede elegir el grupo en su lugar.
+
+**Árbol de decisión: primero el grupo de la tabla** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/es.mp4#t=21.683)
+
+Con el árbol de decisión activado, la tarjeta toma el grupo que devolvió una tarjeta de tabla de decisión anterior en el Workflow. Si la tabla no devolvió ningún grupo, el grupo de la tarjeta recibe el documento. La versión dos siempre asigna el grupo de la tarjeta.
+
+**Ejemplo: grupo de la tabla, respaldo en la tarjeta** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/es.mp4#t=37.083)
+
+Por ejemplo, una tabla de decisión devuelve el grupo del proveedor, y la tarjeta de asignación lo usa. Si la tabla no encuentra grupo, Accounts payable recibe la factura.
+
+</details>
+
 ## Propósito:
 
 La tarjeta de flujo de trabajo **"Assign to Group"** facilita la asignación de documentos a un **grupo** específico dentro del sistema. Esto garantiza que el documento sea procesado por el equipo adecuado, agilizando el flujo de trabajo. Mejorada en versiones posteriores, introduce la funcionalidad de árbol de decisión para la asignación dinámica de grupos.

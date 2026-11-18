@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-es-es.png" alt="La casilla de verificación está marcada, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/es.mp4" %}
+
+**Vídeo:** Tarjeta: La casilla está marcada · 0:34 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**La casilla está marcada** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/es.mp4#t=0.25)
+
+La tarjeta Casilla comprueba un campo de casilla del documento. Elija el campo, por ejemplo Special handling, y si debe estar marcada o no marcada.
+
+**Vacía significa no marcada** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/es.mp4#t=16.583)
+
+Una casilla vacía cuenta como no marcada. Si el documento no tiene esa casilla, la tarjeta toma su camino de error.
+
+**Ejemplo: una marca en Special handling** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/es.mp4#t=23.916)
+
+Por ejemplo, el validador marca Special handling, y el Workflow envía el documento al equipo de logística. Los documentos sin la marca siguen el camino normal.
+
+</details>
+
 ## Propósito:
 
 Esta tarjeta de flujo de trabajo comprueba si un campo de casilla de verificación del documento está marcado o desmarcado. Se puede utilizar para que un flujo de trabajo continúe solo después de que se haya establecido un indicador en el documento, por ejemplo un indicador de revisión.

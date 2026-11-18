@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-es-es.png" alt="Comprobar la presencia y el contenido de un campo, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/es.mp4" %}
+
+**Vídeo:** Tarjeta: Campo vacío o no · 0:44 · [Subtítulos (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/es.vtt)
+
+<details>
+
+<summary>Transcripción</summary>
+
+**Campo vacío o no** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/es.mp4#t=0.25)
+
+La tarjeta El campo es comprueba si un campo del documento está vacío. Elija el campo, por ejemplo Orden de compra, y el estado: vacío o no está en el documento, o está en el documento y no vacío.
+
+**Si falta, cuenta como vacío** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/es.mp4#t=18.716)
+
+Un campo cuenta como vacío si no tiene valor, solo espacios, una casilla sin marcar o una lista vacía. Un campo que no está en el documento también cuenta como vacío. Si el estado coincide, la tarjeta es verdadera. Si no, es falsa.
+
+**Ejemplo: sin orden de compra** · [0:33](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/es.mp4#t=33.15)
+
+Por ejemplo, una factura sin orden de compra va al aprobador de facturas sin orden. Las facturas con orden de compra toman el otro camino, por ejemplo la conciliación con la orden.
+
+</details>
+
 ## **Propósito:**
 
 Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones según la presencia o el estado de un campo especificado dentro de un documento. Al evaluar si el campo está vacío, ausente o completado, permite que los flujos de trabajo manejen los documentos con precisión y exactitud.

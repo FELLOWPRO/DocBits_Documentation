@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-de-de.png" alt="Einer Gruppe zuweisen, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/de.mp4" %}
+
+**Video:** Karte: Dokument einer Gruppe zuordnen · 0:51 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Dokument einer Gruppe zuordnen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/de.mp4#t=0.25)
+
+Die Karte Der Gruppe zuordnen gibt das Dokument einer Gruppe: Wählen Sie die Gruppe, zum Beispiel Accounts payable. Version drei, gewählt über das Versionslabel, bringt eine zweite Einstellung: ob stattdessen eine Entscheidungstabelle die Gruppe wählen darf.
+
+**Entscheidungsbaum verwenden: zuerst die Gruppe der Tabelle** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/de.mp4#t=21.683)
+
+Ist Entscheidungsbaum verwenden eingeschaltet, nimmt die Karte die Gruppe, die eine Entscheidungstabellen-Karte früher im Workflow zurückgegeben hat. Hat die Tabelle keine Gruppe zurückgegeben, bekommt die Gruppe auf der Karte das Dokument. Version zwei weist immer die Gruppe auf der Karte zu.
+
+**Beispiel: Gruppe aus der Tabelle, Ersatz auf der Karte** · [0:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/de.mp4#t=38.916)
+
+Zum Beispiel gibt eine Entscheidungstabelle die Gruppe für den Lieferanten zurück, und die Zuweisungskarte nutzt sie. Findet die Tabelle keine Gruppe, bekommt Accounts payable die Rechnung.
+
+</details>
+
 ## Zweck:
 
 Die Workflow-Karte **"Assign to Group"** ermöglicht die Zuweisung von Dokumenten an eine bestimmte **Gruppe** innerhalb des Systems. Dadurch wird sichergestellt, dass das Dokument vom passenden Team verarbeitet wird, und der Workflow wird optimiert. In späteren Versionen erweitert, führt sie eine Entscheidungsbaum-Funktionalität für die dynamische Gruppenzuweisung ein.

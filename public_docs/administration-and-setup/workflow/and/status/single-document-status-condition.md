@@ -40,6 +40,24 @@ Die Workflow-Karte "Single Document Status Condition" vereinfacht das Dokumenten
 
 <!-- workflow-card-practical-example-20261021 -->
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/de.mp4" %}
+
+**Video:** Karte: Dokumentstatus ist / ist nicht · 0:33 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Dokumentstatus ist / ist nicht** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/de.mp4#t=0.25)
+
+Die Karte Dokumentstatus prüft den Status des Dokuments in dem Moment, in dem der Workflow läuft. Wählen Sie Ist oder Ist nicht und dann einen Status, zum Beispiel Bereit zur Validierung. Ist nicht trifft auf jeden anderen Status zu.
+
+**Beispiel: nur zuweisen, wenn bereit zur Validierung** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/de.mp4#t=17.15)
+
+Zum Beispiel werden Rechnungen nur zugewiesen, solange sie bereit zur Validierung sind: die Wenn-Karte für Rechnungen, dann Dokumentstatus ist Bereit zur Validierung, dann die Zuweisungskarte. In jedem anderen Status erreicht das Dokument die Zuweisung nicht.
+
+</details>
+
 ## Praxisbeispiel
 
 **Wann nutzen:** Eine Folgeregel auf Belege in der ersten Freigabestufe begrenzen.

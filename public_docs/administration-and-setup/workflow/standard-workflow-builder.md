@@ -34,6 +34,32 @@ Standard-Workflows sind bewusst einfach. Sie haben eine Wenn-Karte, alle Und-Kar
 
 </details>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/de.mp4" %}
+
+**Video:** Karten in einem Standard-Workflow testen · 0:51 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Karte testen: eine Karte nach der anderen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/de.mp4#t=0.25)
+
+In einem Standard-Workflow testen Sie eine Karte nach der anderen. Öffnen Sie das Menü einer Karte, hier der Und-Karte, und wählen Sie Karte testen. Suchen Sie ein Dokument, an dem Sie testen.
+
+**Das Ergebnis und die Karten-Logs** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/de.mp4#t=11.983)
+
+Klicken Sie auf Am Dokument testen. Die Rechnung ist bereit zur Validierung, nicht in Genehmigung, also ist die Bedingung nicht erfüllt. Die Karten-Logs sagen warum.
+
+**Eine Aktion testen ändert nichts** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/de.mp4#t=23.383)
+
+Auch Aktionen lassen sich testen. Das Ergebnis zeigt, was die Karte tun würde, aber das Dokument wird nicht geändert.
+
+**Eine Karte, aktuelle Einstellungen, keine Änderung** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/de.mp4#t=34.016)
+
+Karte testen nutzt die Einstellungen auf dem Bildschirm, auch vor dem Speichern. Es testet eine Karte, nicht den ganzen Workflow, und zeigt also nicht, ob die nächste Karte laufen würde. Um einen ganzen Ablauf auf einmal zu testen, nutzen Sie einen Advanced Workflow.
+
+</details>
+
 Erstellen Sie einen vollständigen Standard Workflow in der echten DocBits-Oberfläche: Rechnung auswählen, Rechnungsnummer und Betrag über 1000 prüfen, einen Prüfer zuweisen und den Status ändern. Speichern Sie die Regel, führen Sie drei Testszenarien aus und prüfen Sie das tatsächliche Ergebnis am Dokument.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/de.mp4" %}

@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2-de-de.png" alt="Feldwert setzen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/de.mp4" %}
+
+**Video:** Karte: Feld auf Text setzen · 0:37 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Feld auf Text setzen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/de.mp4#t=0.25)
+
+Die Karte Feld auf Text setzen schreibt Text in ein Feld des Dokuments. Wählen Sie das Feld, zum Beispiel Anmerkungen, und tippen Sie den Text.
+
+**Der Text ersetzt den alten Wert** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/de.mp4#t=16.216)
+
+Der Text ersetzt, was vorher im Feld stand, und das Dokument wird damit gespeichert. Kann das Dokument nicht gespeichert werden, nimmt die Karte ihren Fehlerpfad.
+
+**Beispiel: der Grund in Anmerkungen** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/de.mp4#t=26.183)
+
+Zum Beispiel schreibt die Karte bei fehlgeschlagener Stückpreisprüfung Stückpreis prüfen in Anmerkungen. Der Validierer sieht sofort, warum das Dokument angehalten hat.
+
+</details>
+
 ## **Zweck:**
 
 Diese Workflow-Karte ist darauf ausgelegt, ein angegebenes Feld im Dokument automatisch auf einen vordefinierten Textwert zu setzen, basierend auf den in den Abschnitten **„Wenn“** und **„Und“** definierten Bedingungen. Sie ermöglicht es Benutzern, die Dateneingabe zu optimieren, indem sichergestellt wird, dass Felder mit konsistenten Werten befüllt werden, wenn bestimmte Kriterien erfüllt sind.

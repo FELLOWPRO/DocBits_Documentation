@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-de-de.png" alt="Vorhandensein und Inhalt eines Dokumentfelds prüfen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/de.mp4" %}
+
+**Video:** Karte: Feld leer oder nicht · 0:47 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Feld leer oder nicht** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/de.mp4#t=0.25)
+
+Die Karte Feld ist prüft, ob ein Feld des Dokuments leer ist. Wählen Sie das Feld, zum Beispiel Bestellung, und den Status: Leer oder nicht im Dokument, oder Im Dokument und nicht leer.
+
+**Fehlend zählt als leer** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/de.mp4#t=18.716)
+
+Ein Feld gilt als leer, wenn es keinen Wert hat, nur Leerzeichen, ein nicht aktiviertes Kontrollkästchen oder eine leere Liste. Ein Feld, das nicht im Dokument ist, gilt ebenfalls als leer. Passt der Status, ist die Karte wahr. Sonst ist sie falsch.
+
+**Beispiel: keine Bestellung** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/de.mp4#t=37.083)
+
+Zum Beispiel geht eine Rechnung ohne Bestellung an den Freigebenden für Rechnungen ohne Bestellung. Rechnungen mit Bestellung nehmen den anderen Pfad, zum Beispiel den Bestellabgleich.
+
+</details>
+
 ## **Zweck:**
 
 Diese Workflow-Karte ist darauf ausgelegt, Aktionen auf Basis des Vorhandenseins oder Zustands eines angegebenen Feldes innerhalb eines Dokuments zu automatisieren. Indem sie auswertet, ob das Feld leer ist, fehlt oder befüllt ist, ermöglicht sie es Workflows, Dokumente präzise und genau zu verarbeiten.

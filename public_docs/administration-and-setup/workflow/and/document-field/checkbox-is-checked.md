@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-de-de.png" alt="Das Kontrollkästchen ist aktiviert, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/de.mp4" %}
+
+**Video:** Karte: Kontrollkästchen ist aktiviert · 0:37 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Kontrollkästchen ist aktiviert** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/de.mp4#t=0.25)
+
+Die Karte Kontrollkästchen prüft ein Kontrollkästchen-Feld des Dokuments. Wählen Sie das Feld, zum Beispiel Special handling, und ob es aktiviert oder nicht aktiviert sein soll.
+
+**Leer heißt nicht aktiviert** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/de.mp4#t=16.583)
+
+Ein leeres Kontrollkästchen gilt als nicht aktiviert. Hat das Dokument kein solches Kontrollkästchen, nimmt die Karte ihren Fehlerpfad.
+
+**Beispiel: ein Häkchen bei Special handling** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/de.mp4#t=25.35)
+
+Zum Beispiel setzt der Validierer ein Häkchen bei Special handling, und der Workflow schickt das Dokument an das Logistikteam. Dokumente ohne Häkchen nehmen den normalen Pfad.
+
+</details>
+
 ## Zweck:
 
 Diese Workflow-Karte prüft, ob ein Kontrollkästchenfeld auf dem Dokument aktiviert oder deaktiviert ist. Sie kann verwendet werden, damit ein Workflow erst weiterläuft, nachdem auf dem Dokument eine Markierung gesetzt wurde, zum Beispiel eine Prüfmarkierung.

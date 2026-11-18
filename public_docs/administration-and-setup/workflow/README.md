@@ -6,6 +6,56 @@ description: DocBits Workflow Engine
 
 [Lernweg vom Einstieg zum Experten](workflow-learning-path.md)
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/de.mp4" %}
+
+**Video:** Workflow-Begriffe: was ist was · 1:36 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/de.vtt)
+
+<details>
+
+<summary>Transkript</summary>
+
+**Die Begriffe in den Videos** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/de.mp4#t=0.25)
+
+In den Videos kommen einige Begriffe immer wieder vor. Hier erfahren Sie, was sie bedeuten.
+
+**Standard und Advanced** · [0:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/de.mp4#t=6.616)
+
+Ein Workflow ist eine Reihe von Regeln für Dokumente. Es gibt zwei Arten.
+
+**Standard: eine feste Liste** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/de.mp4#t=12.816)
+
+Ein Standard-Workflow ist eine feste Liste: Wenn-, Und- und Dann-Karten, von oben nach unten.
+
+**Advanced: eine Arbeitsfläche** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/de.mp4#t=20.616)
+
+Ein Advanced Workflow ist eine Arbeitsfläche, auf der Sie Karten frei platzieren und verbinden.
+
+**Wenn, Und, Dann** · [0:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/de.mp4#t=28.483)
+
+Karten erledigen die Arbeit. Eine Wenn-Karte entscheidet, für welche Dokumente der Workflow gilt. Und-Karten prüfen Bedingungen. Dann-Karten handeln, zum Beispiel zuweisen oder exportieren.
+
+**Jede Karte ist ein Knoten, nicht jeder Knoten eine Karte** · [0:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/de.mp4#t=42.516)
+
+Alles auf der Arbeitsfläche ist ein Knoten. Jede Karte ist ein Knoten, aber nicht jeder Knoten ist eine Karte: ODER, Auf EINEN warten und Auf ALLE warten führen Pfade zusammen, Notizen enthalten nur Text.
+
+**Ein Eingang, drei Ausgänge** · [0:57](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/de.mp4#t=57.35)
+
+Eine Karte hat einen Eingang und bis zu drei Ausgänge: Erfolg, gescheiterte Bedingung in Orange und Fehler in Rot.
+
+**Verbindungen bilden den Pfad** · [1:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/de.mp4#t=65.95)
+
+Eine Verbindung führt von einem Ausgang zum Eingang des nächsten Knotens. Die Verbindungen, denen ein Dokument folgt, sind sein Pfad.
+
+**Variablen** · [1:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/de.mp4#t=74.55)
+
+Variablen sind die Werte in den Feldern einer Karte. Workflow-Variablen speichern Werte, die spätere Karten lesen können.
+
+**Lauf und Test** · [1:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/de.mp4#t=83.95)
+
+Ein Lauf ist der Workflow bei der Arbeit an einem echten Dokument; sein Protokoll zeigt den Pfad. Ein Test führt die Arbeitsfläche an einem Dokument Ihrer Wahl aus, und Aktionen werden nur simuliert.
+
+</details>
+
 ## Lernweg vom Einstieg zum sicheren Betrieb
 
 1. [Wann läuft mein Workflow?](workflow-execution-model.md)

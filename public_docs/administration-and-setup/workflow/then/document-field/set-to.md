@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2-pl-pl.png" alt="Ustaw na, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/pl.mp4" %}
+
+**Film:** Karta: Ustaw pole na tekst · 0:48 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Ustaw pole na tekst** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/pl.mp4#t=0.25)
+
+Karta Ustaw pole na tekst wpisuje tekst do pola dokumentu. Wybierz pole, na przykład Notatki, i wpisz tekst.
+
+**Tekst zastępuje starą wartość** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/pl.mp4#t=17.85)
+
+Tekst zastępuje poprzednią zawartość pola, a dokument zostaje z nim zapisany. Jeśli dokumentu nie da się zapisać, karta idzie swoją ścieżką błędu.
+
+**Przykład: powód w Notatkach** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/pl.mp4#t=32.383)
+
+Na przykład, gdy kontrola ceny jednostkowej się nie powiedzie, karta wpisuje Sprawdź cenę jednostkową do Notatek. Walidator od razu widzi, dlaczego dokument się zatrzymał.
+
+</details>
+
 ## **Cel:**
 
 Ta karta przepływu pracy służy do automatycznego ustawienia określonego pola w dokumencie na predefiniowaną wartość tekstową na podstawie warunków zdefiniowanych w sekcjach **„Kiedy”** i **„I sekcje”.** Umożliwia użytkownikom usprawnienie wprowadzania danych poprzez zapewnienie, że pola są wypełniane spójnymi wartościami, gdy spełnione są określone kryteria.

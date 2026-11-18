@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_no_variables_v2-pl-pl.png" alt="Przypisz dokument sekwencyjnie do Użytkownika/Grupy na podstawie tabeli decyzyjnej. — Wersja 2" width="634"><figcaption><p>Przypisz dokument sekwencyjnie do Użytkownika/Grupy na podstawie tabeli decyzyjnej. — Wersja 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/pl.mp4" %}
+
+**Film:** Karta: Przypisz kolejno według tabeli decyzyjnej · 1:03 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Przypisz kolejno według tabeli decyzyjnej** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/pl.mp4#t=0.25)
+
+Karta Przypisz kolejno na podstawie tabeli decyzyjnej przekazuje dokument po kolei użytkownikom i grupom zwróconym przez tabelę decyzyjną. Karta nie ma ustawień: wszystko pochodzi z tabeli.
+
+**Czego potrzebuje karta** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/pl.mp4#t=17.883)
+
+Wymaga przed sobą karty tabeli decyzyjnej, która zapisuje zwrócone dane. Bierze wszystkich użytkowników i grupy zwrócone przez tabelę, a najniższy priorytet dostaje dokument jako pierwszy. Wiersze bez priorytetu liczą się jako priorytet jeden. Jeśli tabela nikogo nie zwróciła, karta wybiera swoje wyjście błędu.
+
+**Przykład: dwóch zatwierdzających po kolei** · [0:48](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/pl.mp4#t=48.25)
+
+Na przykład tabela Example approvers zwraca dwóch zatwierdzających z priorytetem jeden i dwa. Faktura trafia najpierw do pierwszego, a po zatwierdzeniu do drugiego.
+
+</details>
+
 ## **Cel**
 
 Karta przepływu pracy "**Przypisz dokument sekwencyjnie do użytkownika/grupy na podstawie tabeli decyzyjnej**" dynamicznie przypisuje dokumenty do użytkownika lub grupy, w zależności od oceny tabeli decyzyjnej. Zapewnia to, że dokumenty są odpowiednio kierowane na podstawie predefiniowanych reguł.

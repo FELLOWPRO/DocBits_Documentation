@@ -6,6 +6,56 @@ description: DocBits Workflow Engine
 
 <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57.png" alt=""><figcaption></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pl.mp4" %}
+
+**Film:** Pojęcia Workflow: co jest czym · 2:07 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Słowa w filmach** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pl.mp4#t=0.25)
+
+W filmach wciąż wracają te same słowa. Oto, co każde z nich znaczy.
+
+**Standard i Advanced** · [0:09](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pl.mp4#t=9.483)
+
+Workflow to zestaw reguł dla dokumentów. Są dwa rodzaje.
+
+**Standard: stała lista** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pl.mp4#t=16.883)
+
+Standard Workflow to stała lista: karty Gdy, I oraz Następnie, od góry do dołu.
+
+**Advanced: kanwa** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pl.mp4#t=26.116)
+
+Advanced Workflow to kanwa, na której swobodnie umieszczasz karty i je łączysz.
+
+**Gdy, I, Następnie** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pl.mp4#t=35.883)
+
+Karty wykonują pracę. Karta Gdy decyduje, których dokumentów dotyczy Workflow. Karty I sprawdzają warunki. Karty Następnie działają, na przykład przypisują lub eksportują.
+
+**Każda karta to węzeł, nie każdy węzeł to karta** · [0:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pl.mp4#t=53.916)
+
+Wszystko na kanwie to węzeł. Każda karta jest węzłem, ale nie każdy węzeł jest kartą: LUB, Czekaj na DOWOLNĄ i Czekaj na WSZYSTKIE łączą ścieżki, a notatki zawierają tylko tekst.
+
+**Jedno wejście, trzy wyjścia** · [1:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pl.mp4#t=74.283)
+
+Karta ma jedno wejście i do trzech wyjść: sukces, niespełniony warunek na pomarańczowo i błąd na czerwono.
+
+**Połączenia tworzą ścieżkę** · [1:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pl.mp4#t=85.116)
+
+Połączenie prowadzi z wyjścia do wejścia następnego węzła. Połączenia, którymi idzie dokument, tworzą jego ścieżkę.
+
+**Zmienne** · [1:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pl.mp4#t=99.016)
+
+Zmienne to wartości w polach karty. Zmienne Workflow przechowują wartości, które mogą odczytać kolejne karty.
+
+**Uruchomienie i test** · [1:51](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pl.mp4#t=111.15)
+
+Uruchomienie to Workflow działający na prawdziwym dokumencie; jego log pokazuje ścieżkę. Test uruchamia kanwę na wybranym dokumencie, a akcje są tylko symulowane.
+
+</details>
+
 ## DocBits Workflow Engine: uproszczona automatyzacja procesów
 
 ### Zrozumienie i przygotowanie przepływów pracy <a id="workflow-orientation"></a>

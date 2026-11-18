@@ -10,6 +10,32 @@ Gdy dokument otrzymuje nowy status, DocBits uruchamia Workflow przeznaczone dla 
 
 Ta strona pokazuje, jak skonfigurować Workflow, aby każdy dokument przechodził przez niego tylko raz.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/pl.mp4" %}
+
+**Film:** Karta Zmień status i ochrona przed pętlą · 1:03 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Zmień status** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/pl.mp4#t=0.25)
+
+Karta Zmień status ustawia dokumentowi nowy status, na przykład Odrzucony.
+
+**Wyzwalanie przepływów pracy** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/pl.mp4#t=10.383)
+
+Wyzwalanie przepływów pracy decyduje, co dzieje się dalej. Gdy jest włączone, a nowy status uruchamia Workflow, na przykład Gotowy do walidacji, Workflow uruchamiają się ponownie dla tego dokumentu.
+
+**Wyłączone: bez pętli** · [0:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/pl.mp4#t=30.416)
+
+Jeśli Workflow ustawia status, który znowu uruchamia ten sam Workflow, może działać w pętli. Wyłącz Wyzwalanie przepływów pracy, gdy zmiana statusu nie ma uruchamiać żadnych Workflow.
+
+**Przykład: odrzucenie, bez ponownego startu** · [0:48](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/pl.mp4#t=48.383)
+
+Na przykład: kontrola nie przechodzi, ta karta ustawia status Odrzucony, a Wyzwalanie przepływów pracy jest wyłączone, więc nic nie startuje ponownie.
+
+</details>
+
 ## Najważniejsze ustawienie
 
 Karta [Zmień status na](../then/status/change-status-to.md) ustawia nowy status. Jej ustawienie **Wyzwalanie przepływów pracy** decyduje, czy ta zmiana statusu może uruchamiać Workflow:

@@ -47,3 +47,21 @@ Karta przepływu pracy "Single Document Status Condition" upraszcza zarządzanie
 **Oczekiwany wynik i kontrprzykład:** Warunek jest prawdziwy dla dokumentu o statusie **Oczekujące na zatwierdzenie**; dla dokumentu o statusie **Gotowy do walidacji** ma wartość false. Użyj aktualnie wybranego statusu z Twojej wersji. Zmiana statusu sama w sobie nie powoduje eksportu dokumentu.
 
 To jest ilustracyjna konfiguracja testu i oczekiwany wynik; nie zostało ono wykonane. Skorzystaj z danych i odbiorców skonfigurowanych w Twojej organizacji testowej.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/pl.mp4" %}
+
+**Film:** Karta: Status dokumentu jest / nie jest · 0:41 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Status dokumentu jest / nie jest** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/pl.mp4#t=0.25)
+
+Karta Status dokumentu sprawdza status dokumentu w chwili, gdy działa Workflow. Wybierz Jest albo Nie jest, a potem status, na przykład Gotowy do walidacji. Nie jest pasuje do każdego innego statusu.
+
+**Przykład: przypisz tylko, gdy gotowy do walidacji** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-status/v1/pl.mp4#t=19.183)
+
+Na przykład faktury są przypisywane tylko wtedy, gdy są gotowe do walidacji: karta Kiedy dla faktur, potem Status dokumentu jest Gotowy do walidacji, potem karta przypisania. W każdym innym statusie dokument nie dociera do przypisania.
+
+</details>
+

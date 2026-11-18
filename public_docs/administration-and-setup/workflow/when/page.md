@@ -4,6 +4,24 @@
 
 <figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2-pl-pl.png" alt="Operacja typu dokumentu, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/pl.mp4" %}
+
+**Film:** Karta: Typ dokumentu jest / nie jest · 0:34 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Typ dokumentu jest / nie jest** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/pl.mp4#t=0.25)
+
+Karta Typ dokumentu sprawdza typ dokumentu. Wybierz Jest albo Nie jest, a potem typ, na przykład Faktura. Nie jest pasuje do każdego typu poza wybranym.
+
+**Przykład: tylko faktury** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-doc-type/v1/pl.mp4#t=17.183)
+
+Na przykład Workflow tylko dla faktur: Typ dokumentu jest Faktura jako karta Kiedy, potem karta przypisania. Dla korekt, ofert lub zamówień ten Workflow się nie uruchamia.
+
+</details>
+
 ## **Cel:**
 
 Ta karta przepływu pracy jest specjalnie zaprojektowana do wykonywania predefiniowanych operacji na dokumentach kategoryzowanych według typu. Usprawnia obsługę różnych form dokumentów w systemie ERP, zapewniając, że każdy typ jest przetwarzany zgodnie ze swoimi unikalnymi wymaganiami i politykami organizacyjnymi.

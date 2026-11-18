@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2-pl-pl.png" alt="Operator dokumentów dla podorganizacji, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/pl.mp4" %}
+
+**Film:** Karta: Dokument jest częścią podorganizacji · 0:55 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Dokument jest częścią podorganizacji** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/pl.mp4#t=0.25)
+
+Karta Dokument jest częścią podorganizacji sprawdza, do której podorganizacji należy dokument. Wybierz Jest albo Nie jest, a potem podorganizację, na przykład Munich plant.
+
+**Dokładnie jedna podorganizacja** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/pl.mp4#t=18.95)
+
+Karta porównuje dokładnie tę podorganizację. Jeśli dokument nie ma podorganizacji, karta idzie swoją ścieżką błędu. Aby sprawdzić kilka podorganizacji naraz, użyj karty w jednej z następujących podorganizacji.
+
+**Przykład: faktury jednego zakładu** · [0:40](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org/v1/pl.mp4#t=40.116)
+
+Na przykład faktury z Munich plant trafiają do zespołu księgowości w Monachium. Dokumenty innych podorganizacji nie docierają do tego kroku.
+
+</details>
+
 ## Cel:
 
 Ta karta przepływu pracy ocenia, czy dokument należy do określonej sub-organizacji. Na podstawie tej oceny przepływ pracy może być kontynuowany lub wyzwalać różne akcje w zależności od tego, czy dokument jest powiązany z określoną sub-organizacją, czy nie.

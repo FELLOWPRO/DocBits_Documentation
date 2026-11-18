@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-pl-pl.png" alt="Sprawdzanie obecności i zawartości pola dokumentu, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/pl.mp4" %}
+
+**Film:** Karta: Pole puste czy nie · 1:00 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Pole puste czy nie** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/pl.mp4#t=0.25)
+
+Karta Pole jest sprawdza, czy pole dokumentu jest puste. Wybierz pole, na przykład Zamówienie zakupu, oraz status: puste lub nie ma w dokumencie, albo jest w dokumencie i niepuste.
+
+**Brak liczy się jako puste** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/pl.mp4#t=19.083)
+
+Pole liczy się jako puste, gdy nie ma wartości, ma tylko spacje, niezaznaczone pole wyboru lub pustą listę. Pole, którego nie ma w dokumencie, też liczy się jako puste. Jeśli status się zgadza, karta jest prawdziwa. W przeciwnym razie jest fałszywa.
+
+**Przykład: brak zamówienia zakupu** · [0:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-docfield-status/v1/pl.mp4#t=43.516)
+
+Na przykład faktura bez zamówienia zakupu trafia do zatwierdzającego faktury bez zamówienia. Faktury z zamówieniem zakupu idą drugą ścieżką, na przykład dopasowaniem do zamówienia.
+
+</details>
+
 ## Kiedy używać
 
 Użyj tej karty, aby sprawdzić, czy pole dokumentu jest puste lub nieobecne, na przykład gdy faktura nie ma numeru i wymaga dodatkowej kontroli. To warunek; dalszą akcję konfiguruje się osobno.

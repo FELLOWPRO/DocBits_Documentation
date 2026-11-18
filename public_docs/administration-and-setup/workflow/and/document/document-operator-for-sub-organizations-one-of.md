@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_in_list_v2-pl-pl.png" alt="Operator dokumentów dla podorganizacji jeden z, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/pl.mp4" %}
+
+**Film:** Karta: Dokument w jednej z kilku podorganizacji · 0:50 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Dokument w jednej z kilku podorganizacji** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/pl.mp4#t=0.25)
+
+Karta Dokument w jednej z następujących podorganizacji porównuje dokument z listą podorganizacji. Wybierz Jest albo Nie jest, a potem jedną lub więcej podorganizacji, na przykład Hamburg plant i Munich plant.
+
+**Jedna z listy** · [0:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/pl.mp4#t=20.65)
+
+Jest pasuje, gdy dokument należy do jednej z wybranych podorganizacji, Nie jest, gdy nie należy do żadnej. Jeśli dokument nie ma podorganizacji, karta idzie swoją ścieżką błędu.
+
+**Przykład: faktury dwóch zakładów** · [0:36](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/pl.mp4#t=36.55)
+
+Na przykład faktury dwóch niemieckich zakładów trafiają do zespołu księgowości w Niemczech. Dokumenty z Vienna office nie docierają do tego kroku.
+
+</details>
+
 ## Cel:
 
 Ta karta przepływu pracy sprawdza, czy dokument należy do jednej z kilku podorganizacji. Zamiast porównywać dokument z jedną podorganizacją, porównuje go z listą. Dzięki temu jedna karta obejmuje całą grupę podorganizacji, które mają być obsługiwane w ten sam sposób. W zależności od wyniku przepływ pracy jest kontynuowany zgodnie z warunkiem prawdziwym lub fałszywym.

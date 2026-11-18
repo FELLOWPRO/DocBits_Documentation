@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-pl-pl.png" alt="Przypisz do grupy, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/pl.mp4" %}
+
+**Film:** Karta: Przypisz dokument do grupy · 1:00 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Przypisz dokument do grupy** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/pl.mp4#t=0.25)
+
+Karta Przypisz do grupy daje dokument grupie: wybierz grupę, na przykład Accounts payable. Wersja trzecia, wybrana etykietą wersji, dodaje drugie ustawienie: czy zamiast tego grupę może wybrać tabela decyzyjna.
+
+**Drzewo decyzyjne: najpierw grupa z tabeli** · [0:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/pl.mp4#t=23.05)
+
+Gdy drzewo decyzyjne jest włączone, karta bierze grupę, którą zwróciła karta tabeli decyzyjnej wcześniej w Workflow. Jeśli tabela nie zwróciła grupy, dokument dostaje grupa z karty. Wersja druga zawsze przypisuje grupę z karty.
+
+**Przykład: grupa z tabeli, zapas na karcie** · [0:44](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-group/v1/pl.mp4#t=44.55)
+
+Na przykład tabela decyzyjna zwraca grupę dla dostawcy, a karta przypisania jej używa. Gdy tabela nie znajdzie grupy, fakturę dostaje Accounts payable.
+
+</details>
+
 ## Cel:
 
 Karta przepływu pracy **"Assign to Group"** ułatwia przypisywanie dokumentów do określonej **grupy** w systemie. Zapewnia to, że dokument jest przetwarzany przez odpowiedni zespół, usprawniając przepływ pracy. Rozszerzona w późniejszych wersjach, wprowadza funkcjonalność drzewa decyzyjnego do dynamicznego przypisywania grup.

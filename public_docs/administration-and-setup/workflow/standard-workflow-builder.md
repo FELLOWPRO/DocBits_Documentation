@@ -34,6 +34,32 @@ Workflows typu Standard są proste. Mają jedną kartę Gdy, wszystkie karty I m
 
 </details>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/pl.mp4" %}
+
+**Film:** Testowanie kart w Workflow typu Standard · 1:08 · [Napisy (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/pl.vtt)
+
+<details>
+
+<summary>Transkrypcja</summary>
+
+**Testuj kartę: jedna karta naraz** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/pl.mp4#t=0.25)
+
+W Standard Workflow testujesz jedną kartę naraz. Otwórz menu karty, tutaj karty I, i wybierz Testuj kartę. Wyszukaj dokument, na którym chcesz testować.
+
+**Wynik i logi karty** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/pl.mp4#t=16.05)
+
+Kliknij Testuj na dokumencie. Faktura jest gotowa do walidacji, a nie czeka na zatwierdzenie, więc warunek nie jest spełniony. Logi karty mówią dlaczego.
+
+**Test akcji niczego nie zmienia** · [0:31](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/pl.mp4#t=31.95)
+
+Akcje też można testować. Wynik pokazuje, co karta by zrobiła, ale dokument się nie zmienia.
+
+**Jedna karta, bieżące ustawienia, bez zmian** · [0:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard-test/v1/pl.mp4#t=43.65)
+
+Testuj kartę używa ustawień z ekranu, nawet przed zapisaniem. Testuje jedną kartę, a nie cały Workflow, więc nie pokazuje, czy następna karta by się uruchomiła. Aby przetestować cały przepływ naraz, użyj Advanced Workflow.
+
+</details>
+
 Utwórz kompletny Standard Workflow w prawdziwym interfejsie DocBits: wybierz fakturę, sprawdź jej numer i kwotę powyżej 1000, przypisz osobę sprawdzającą i zmień status. Zapisz regułę, uruchom trzy scenariusze testowe i potwierdź rzeczywisty wynik w dokumencie.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/standard-workflow-admin/v2/pl.mp4" %}

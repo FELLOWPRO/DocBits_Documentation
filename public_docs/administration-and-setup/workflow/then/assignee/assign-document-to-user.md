@@ -6,6 +6,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-it-it.png" alt="Assegna documento all&#x27;utente, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/it.mp4" %}
+
+**Video:** Scheda: Assegna il documento a un utente · 0:53 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Assegna il documento a un utente** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/it.mp4#t=0.25)
+
+La scheda Assegna il documento all'utente dà il documento a un utente: scegli l'utente. La versione tre, scelta con l'etichetta della versione, aggiunge una seconda impostazione: se una tabella delle decisioni può scegliere l'utente al suo posto.
+
+**Albero decisionale: prima l'utente della tabella** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/it.mp4#t=21.75)
+
+Con l'albero decisionale attivo, la scheda prende il primo utente restituito da una scheda tabella delle decisioni precedente nel Workflow. Se la tabella non ha restituito alcun utente, l'utente sulla scheda riceve il documento. La versione due assegna sempre l'utente sulla scheda.
+
+**Esempio: approvatore dalla tabella, riserva sulla scheda** · [0:39](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/it.mp4#t=39.383)
+
+Per esempio, una tabella delle decisioni restituisce l'approvatore per l'importo della fattura, e la scheda di assegnazione lo usa. Se la tabella non trova nessuno, Alex Example riceve la fattura.
+
+</details>
+
 ## **Scopo:**
 
 La scheda di workflow **"Assign Document to User"** consente agli utenti di assegnare un documento a un utente specifico, garantendo una gestione fluida del workflow instradando i documenti alla persona appropriata. La Versione 3 aggiunge la possibilità di utilizzare una decision tree per determinare dinamicamente l'assegnazione dell'utente in base alle condizioni disponibili.

@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_set_boolean_field_v2-it-it.png" alt="Imposta la casella di controllo su, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/it.mp4" %}
+
+**Video:** Scheda: Imposta casella di controllo · 0:45 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Imposta casella di controllo** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/it.mp4#t=0.25)
+
+La scheda Imposta casella di controllo seleziona o deseleziona un campo casella di controllo del documento. Scegli il campo, per esempio Special handling, e se deve essere selezionato.
+
+**Selezionata o no, poi salvata** · [0:17](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/it.mp4#t=17.516)
+
+La scheda scrive il valore e salva il documento, anche se prima la casella era vuota. Se il campo non è una casella di controllo, per esempio un importo, la scheda prende la sua uscita di errore. Per portare una casella al valore opposto, usa la scheda Inverti casella di controllo.
+
+**Esempio: selezionare Special handling** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-checkbox/v1/it.mp4#t=35.083)
+
+Per esempio, quando il fornitore richiede una gestione speciale, il Workflow seleziona Special handling e il validatore lo vede sul documento.
+
+</details>
+
 ## **Scopo:**
 
 Questa scheda di workflow è progettata per impostare un campo casella di controllo su un valore specificato (true o false) in base alle condizioni definite nelle sezioni **"Quando"** e **"E"**. Offre un modo semplice ma efficace per automatizzare gli aggiornamenti delle caselle di controllo quando determinati criteri sono soddisfatti, garantendo un'elaborazione dei documenti semplificata.

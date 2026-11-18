@@ -4,6 +4,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_no_variables_v2-it-it.png" alt="Assegnare il documento in modo sequenziale all&#x27;utente/gruppo in base alla tabella delle decisioni. — Versione 2" width="634"><figcaption><p>Assegnare il documento in modo sequenziale all'utente/gruppo in base alla tabella delle decisioni. — Versione 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/it.mp4" %}
+
+**Video:** Scheda: Assegna in sequenza in base a una tabella decisionale · 0:46 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Assegna in sequenza in base a una tabella decisionale** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/it.mp4#t=0.25)
+
+La scheda Assegna in sequenza in base a una tabella decisionale dà il documento, uno dopo l'altro, agli utenti e ai gruppi restituiti da una tabella decisionale. La scheda non ha impostazioni: tutto viene dalla tabella.
+
+**Che cosa serve alla scheda** · [0:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/it.mp4#t=14.85)
+
+Le serve prima una scheda tabella decisionale che salvi i dati restituiti. Prende tutti gli utenti e i gruppi restituiti dalla tabella, e la priorità più bassa riceve il documento per prima. Le righe senza priorità contano come priorità uno. Se la tabella non ha restituito nessuno, la scheda prende la sua uscita di errore.
+
+**Esempio: due approvatori a turno** · [0:35](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-sequential-dt/v1/it.mp4#t=35.383)
+
+Per esempio, la tabella Example approvers restituisce due approvatori con priorità uno e due. La fattura va al primo e, dopo la sua approvazione, al secondo.
+
+</details>
+
 ## **Scopo**
 
 La scheda di workflow "**Assegnare il documento in sequenza all'utente/gruppo in base alla tabella decisionale**" assegna dinamicamente i documenti a un utente o a un gruppo, a seconda della valutazione della decision table. Ciò garantisce che i documenti vengano instradati in modo appropriato in base a regole predefinite.

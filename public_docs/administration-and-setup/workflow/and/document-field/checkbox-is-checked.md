@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-it-it.png" alt="La casella di controllo è selezionata, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/it.mp4" %}
+
+**Video:** Scheda: La casella di controllo è selezionata · 0:37 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**La casella di controllo è selezionata** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/it.mp4#t=0.25)
+
+La scheda Casella di controllo controlla un campo casella del documento. Scegli il campo, per esempio Special handling, e se deve essere selezionata o non selezionata.
+
+**Vuota significa non selezionata** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/it.mp4#t=16.583)
+
+Una casella vuota conta come non selezionata. Se il documento non ha questa casella, la scheda prende il suo percorso di errore.
+
+**Esempio: una spunta su Special handling** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-checkbox/v1/it.mp4#t=25.416)
+
+Per esempio, il validatore seleziona Special handling, e il Workflow invia il documento al team logistica. I documenti senza la spunta seguono il percorso normale.
+
+</details>
+
 ## Scopo:
 
 Questa scheda del workflow verifica se un campo casella di controllo del documento è selezionato o non selezionato. Può essere utilizzata per far proseguire un workflow solo dopo che sul documento è stato impostato un contrassegno, ad esempio un contrassegno di revisione.

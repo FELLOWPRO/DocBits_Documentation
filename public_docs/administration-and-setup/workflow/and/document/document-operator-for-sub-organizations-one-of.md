@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_in_list_v2-it-it.png" alt="Operatore documentale per le sotto-organizzazioni uno di, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/it.mp4" %}
+
+**Video:** Scheda: Documento in una di più sotto-organizzazioni · 0:43 · [Sottotitoli (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/it.vtt)
+
+<details>
+
+<summary>Trascrizione</summary>
+
+**Documento in una di più sotto-organizzazioni** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/it.mp4#t=0.25)
+
+La scheda Documento in una delle seguenti sotto-organizzazioni confronta un documento con un elenco di sotto-organizzazioni. Scegli È o Non è e poi una o più sotto-organizzazioni, per esempio Hamburg plant e Munich plant.
+
+**Una dell'elenco** · [0:19](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/it.mp4#t=19.283)
+
+È vale quando il documento appartiene a una delle sotto-organizzazioni scelte, Non è quando non appartiene a nessuna. Se il documento non ha una sotto-organizzazione, la scheda prende il suo percorso di errore.
+
+**Esempio: le fatture di due stabilimenti** · [0:32](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-sub-org-list/v1/it.mp4#t=32.85)
+
+Per esempio, le fatture dei due stabilimenti tedeschi vanno al team contabilità in Germania. I documenti di Vienna office non arrivano a questo passo.
+
+</details>
+
 ## Scopo:
 
 Questa scheda del workflow verifica se un documento appartiene a una tra più sotto-organizzazioni. Invece di confrontare il documento con una sola sotto-organizzazione, lo confronta con un elenco: così una sola scheda copre un intero gruppo di sotto-organizzazioni che devono essere gestite allo stesso modo. In base al risultato, il workflow prosegue con la condizione vera o con quella falsa.

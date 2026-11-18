@@ -2,6 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2-pt-pt.png" alt="Definir como, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/pt.mp4" %}
+
+**Vídeo:** Cartão: Definir campo para texto · 0:36 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Definir campo para texto** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/pt.mp4#t=0.25)
+
+O cartão Definir campo para texto escreve um texto em um campo do documento. Escolha o campo, por exemplo Notas, e digite o texto.
+
+**O texto substitui o valor antigo** · [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/pt.mp4#t=16.283)
+
+O texto substitui o valor anterior do campo, e o documento é salvo. Se o documento não puder ser salvo, o cartão segue o caminho de erro.
+
+**Exemplo: o motivo em Notas** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-set-field-text/v1/pt.mp4#t=25.683)
+
+Por exemplo, quando a verificação do preço unitário falha, o cartão escreve Verificar o preço unitário em Notas. O validador vê na hora por que o documento parou.
+
+</details>
+
 ## **Propósito:**
 
 Este cartão de fluxo de trabalho foi concebido para definir automaticamente um campo especificado do documento para um valor de texto predefinido com base nas condições definidas nas secções **"Quando"** e **"E seções."** Permite aos utilizadores simplificar a introdução de dados, assegurando que os campos são preenchidos com valores consistentes quando determinados critérios são cumpridos.

@@ -10,6 +10,32 @@ Quando um documento recebe um novo status, o DocBits inicia os Workflows previst
 
 Esta página mostra como configurar o seu Workflow para que cada documento passe por ele apenas uma vez.
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/pt.mp4" %}
+
+**Vídeo:** Cartão Alterar status e prevenção de loops · 0:44 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Alterar status** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/pt.mp4#t=0.25)
+
+O cartão Alterar status coloca o documento num novo status, por exemplo Rejeitado.
+
+**Acionar fluxos de trabalho** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/pt.mp4#t=10.083)
+
+Acionar fluxos de trabalho decide o que acontece depois. Se estiver ativado e o novo status iniciar Workflows, como Pronto para validação, os Workflows são executados de novo para este documento.
+
+**Desativado: sem loop** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/pt.mp4#t=22.516)
+
+Se um Workflow define um status que inicia o mesmo Workflow de novo, ele pode rodar em loop. Desative Acionar fluxos de trabalho quando a mudança de status não deva iniciar nenhum Workflow.
+
+**Exemplo: rejeitar, sem novo início** · [0:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-status-change/v1/pt.mp4#t=34.55)
+
+Por exemplo: uma verificação falha, este cartão define o status como Rejeitado com Acionar fluxos de trabalho desativado, então nada recomeça.
+
+</details>
+
 ## A definição que importa
 
 O cartão [Alterar status para](../then/status/change-status-to.md) define o novo status. A sua definição **Fluxos de trabalho de gatilho** decide se esta alteração de status pode iniciar Workflows:

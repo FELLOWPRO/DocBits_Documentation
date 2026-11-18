@@ -6,6 +6,28 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-pt-pt.png" alt="Atribuir documento ao usuário, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/pt.mp4" %}
+
+**Vídeo:** Cartão: Atribuir o documento a um usuário · 0:49 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**Atribuir o documento a um usuário** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/pt.mp4#t=0.25)
+
+O cartão Atribuir o documento ao usuário entrega o documento a um usuário: escolha-o. A versão três, escolhida com o rótulo de versão, acrescenta uma segunda configuração: se uma tabela de decisão pode escolher o usuário em vez disso.
+
+**Árvore de decisão: primeiro o usuário da tabela** · [0:21](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/pt.mp4#t=21.75)
+
+Com a árvore de decisão ativada, o cartão usa o primeiro usuário que um cartão de tabela de decisão anterior no Workflow retornou. Se a tabela não retornou nenhum usuário, o usuário do cartão recebe o documento. A versão dois sempre atribui o usuário do cartão.
+
+**Exemplo: aprovador da tabela, alternativa no cartão** · [0:37](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/card-assign-user/v1/pt.mp4#t=37.783)
+
+Por exemplo, uma tabela de decisão retorna o aprovador do valor da fatura, e o cartão de atribuição o usa. Sem ninguém na tabela, Alex Example recebe a fatura.
+
+</details>
+
 ## **Propósito:**
 
 O cartão de fluxo de trabalho **"Assign Document to User"** permite aos utilizadores atribuir um documento a um utilizador específico, assegurando uma gestão fluida do fluxo de trabalho ao encaminhar os documentos para a pessoa adequada. A Versão 3 acrescenta a capacidade de utilizar uma árvore de decisão para determinar dinamicamente a atribuição de utilizador com base nas condições disponíveis.

@@ -6,6 +6,56 @@ description: Motor de fluxos de trabalho do DocBits
 
 <figure><img src="../../.gitbook/assets/docbits_workflow_3.png" alt="DocBits Fluxo de trabalho 3"><figcaption></figcaption></figure>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pt.mp4" %}
+
+**Vídeo:** Termos de Workflow: o que é o quê · 1:24 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pt.vtt)
+
+<details>
+
+<summary>Transcrição</summary>
+
+**As palavras dos vídeos** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pt.mp4#t=0.25)
+
+Os vídeos usam algumas palavras várias vezes. Veja o que cada uma significa.
+
+**Padrão e Advanced** · [0:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pt.mp4#t=5.65)
+
+Um Workflow é um conjunto de regras para documentos. Existem dois tipos.
+
+**Padrão: uma lista fixa** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pt.mp4#t=11.383)
+
+Um Workflow Padrão é uma lista fixa: cartões Quando, E e Então, de cima para baixo.
+
+**Advanced: uma tela** · [0:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pt.mp4#t=18.616)
+
+Um Advanced Workflow é uma tela onde você posiciona cartões livremente e os liga.
+
+**Quando, E, Então** · [0:26](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pt.mp4#t=26.016)
+
+Os cartões fazem o trabalho. Um cartão Quando decide para quais documentos é o Workflow. Os cartões E verificam condições. Os cartões Então agem: atribuem ou exportam.
+
+**Todo cartão é um nó, mas nem todo nó é um cartão** · [0:38](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pt.mp4#t=38.216)
+
+Tudo na tela é um nó. Todo cartão é um nó, mas nem todo nó é um cartão: OU, Aguardar QUALQUER e Aguardar TODOS unem caminhos, e as observações só contêm texto.
+
+**Uma entrada, três saídas** · [0:50](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pt.mp4#t=50.35)
+
+Um cartão tem uma entrada e até três saídas: sucesso, condição não atendida em laranja e erro em vermelho.
+
+**As ligações formam o caminho** · [0:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pt.mp4#t=58.283)
+
+Uma ligação vai de uma saída à entrada do próximo nó. As ligações que um documento segue formam seu caminho.
+
+**Variáveis** · [1:05](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pt.mp4#t=65.116)
+
+Variáveis são os valores nos campos de um cartão. Variáveis de Workflow guardam valores para os cartões seguintes.
+
+**Execução e teste** · [1:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-terms/v1/pt.mp4#t=72.616)
+
+Uma execução é o Workflow trabalhando num documento real; seu registro mostra o caminho. Um teste executa a tela num documento que você escolhe, e as ações são só simuladas.
+
+</details>
+
 ## Motor de Fluxo de Trabalho DocBits: Simplificando a Automação de Processos
 
 ### Introdução

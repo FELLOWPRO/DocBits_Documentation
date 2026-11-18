@@ -54,6 +54,17 @@ A bar chart of **Blocked documents** per pipeline stage: the **first** stage tha
 
 **Example.** Bars: Supplier Identification 12, Field Validation 41, PO Line Match 7. The biggest bar tells you to look at **Field Validation** first. A missing extracted value is one possible cause; compare the original invoice, field rules and available source data before confirming it.
 
+#### Why documents are not touchless (Nova release channel)
+
+Organisations on the **Nova** release channel see the same question answered by an expandable list instead of the bar chart. The panel is titled **Why documents are not touchless** and sits beside **Touchless rate over time**.
+
+* The header names how many documents the list covers. Each row is one first-blocker area with its share in percent, the number of documents and a bar. Rows arrive sorted largest first.
+* Click a row to open its reasons in place. The reasons keep their own document counts, so you can see which cause inside an area costs the most. Only one area is open at a time; click it again to close it.
+* The list comes from the same report data as the key figures. Numbers are not recalculated in the browser, so a total in the header and the rows always match.
+* If your installation does not send this data yet, the panel says so instead of showing **0**. An empty list with the wording for "nothing recorded" means documents were not lost in the period; the two states are different and you should not read the first one as good news.
+
+The **Vesta** release channel keeps the bar chart described above. If your page shows bars, you are on Vesta; if it shows the expandable list, you are on Nova. Both answer the same question, so the rest of this page applies either way.
+
 ### Supplier opportunities
 
 <figure><img src="../../../.gitbook/assets/touchless-supplier-queue.png" alt="The Supplier opportunities table with volume, pure rate, lost documents, root cause, recoverable documents, expected lift, confidence and status"><figcaption><p>The supplier queue (shortened to the first four rows). The first supplier has 106 documents, a pure rate of 38.7 % and 65 recoverable documents, so fixing it is worth <strong>+21 pp</strong>. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
@@ -101,7 +112,7 @@ While it runs you see **Queued**, **Running**, **Done**, **Already analysed** or
 
 1. **Weekly**: open the tab and check the **rate** and the **trend** against the target.
 2. Look at **Diagnosis coverage**. Below about 80 %, first find out why documents stop.
-3. Read **Where touchless is lost first** and pick the biggest stage.
+3. Read **Where touchless is lost first** (Vesta) or **Why documents are not touchless** (Nova) and pick the biggest stage or area.
 4. Open **Supplier opportunities**. Sort by **Expected lift** and take the top supplier with the status **RECOVERABLE**.
 5. Read the **issue clusters**, check **Missing evidence**, then follow **What to change**.
 6. Fix one confirmed cause. For a supported DocBits proposal use preview and change history. For an Infor correction, document the source and import separately; it does not automatically create a DocBits setting-change entry.

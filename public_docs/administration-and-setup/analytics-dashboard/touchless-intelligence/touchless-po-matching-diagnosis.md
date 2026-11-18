@@ -20,6 +20,8 @@ Touchless Intelligence shows you **why** a PO match failed and **how** DocBits t
 | **Document Trace**                                                                          | The stage **PO Line Match** with the status **blocked** and the reason                                                                                                          |
 | **Settings → Document Types → More Settings → Purchase Order**                              | The matching rules themselves. See [Purchase Order Matching Rules](../../settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) |
 
+On the **Nova** release channel the first row is the panel **Why documents are not touchless**. Expand the PO matching area there to read its reasons with their document counts; the bar chart named above remains on **Vesta**.
+
 ## The two PO stages
 
 | Stage                  | Question                                    | Stops with                                                                                                            |

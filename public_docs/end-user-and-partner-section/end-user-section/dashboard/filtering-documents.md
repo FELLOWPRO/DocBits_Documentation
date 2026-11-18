@@ -40,6 +40,8 @@ Above the search bar, select **30D**, **90D**, **180D**, **365D**, or **All** to
 2. Select a type, such as **Invoice**, to add its tab. Then select the new tab to filter the table to that type. **All** removes the type restriction without deleting the tab.
 3. To remove a type tab, select its **×**. The **All** tab cannot be removed.
 
+DocBits stores your tabs with your user settings, so they are back the next time you open the dashboard. A tab you add stays until you remove it.
+
 <figure><img src="../../../.gitbook/assets/dbdc167_document_type_menu_en.png" alt="Plus menu on the English Dashboard showing Invoice as an available document type"><figcaption>Add a document type tab from the plus menu.</figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/dbdc167_invoice_tab_en.png" alt="Invoice document type tab selected on the English Dashboard, with its remove icon visible"><figcaption>Choose the tab to apply the type filter; use × to remove the tab.</figcaption></figure>

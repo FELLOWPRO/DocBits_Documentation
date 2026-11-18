@@ -54,6 +54,12 @@ Saving can trigger matching again after a changed or newly detected PO number. C
 
 Use **Matching history** (clock icon, where your permissions allow it) to inspect how a previous match was decided. It is a read-only view. You can review which rules ran and why a candidate did not match; opening history does not export the document.
 
+### Rules that were skipped
+
+Auto PO Match uses every matching rule that can run on the extracted table. A rule is skipped when the table lacks a column it reads. For example, a rule that pairs lines by item number cannot run when no item number was extracted. The other rules still run and the match is saved.
+
+A warning then names the rules that were not tried and the columns missing from the table. The lines those rules would have matched stay open. Add the missing column to the layout or to the table extraction, or connect the lines by hand, before you export.
+
 ### More than one line per match
 
 A single invoice line may correspond to several order lines, or the other way around, where your matching rules allow it. Open the **+** details on a line to inspect any existing multi-match. Check the combined quantity and price, not just one line. An empty detail panel means there is no multi-match to inspect. See [Purchase Order Matching Tools](review-quote-details/purchase-order-matching-tools.md) for changing connections.

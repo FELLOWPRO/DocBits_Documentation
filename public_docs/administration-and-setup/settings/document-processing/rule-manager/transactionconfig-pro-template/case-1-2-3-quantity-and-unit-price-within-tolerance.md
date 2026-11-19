@@ -32,10 +32,10 @@ Total Amount: $1,015.05
 
 Quantity Tolerance: ±2%
 
-Unit Price Tolerance: ±1%\
+Unit Price Tolerance: ±1%
 
 
-Étant donné que la quantité (101 unités) et le prix unitaire ($10.05) se situent tous deux dans les niveaux de tolérance acceptables par rapport au bon de commande, le système :\
+Étant donné que la quantité (101 unités) et le prix unitaire ($10.05) se situent tous deux dans les niveaux de tolérance acceptables par rapport au bon de commande, le système :
 
 
 1\. **Accepter les valeurs de la facture :** La quantité et le prix unitaire sur la facture sont acceptés comme valides car ils se situent dans les limites de tolérance définies.

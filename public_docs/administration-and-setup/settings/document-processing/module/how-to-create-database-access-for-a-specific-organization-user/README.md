@@ -28,7 +28,7 @@
      * **Password**: assicurati di conservare o copiare la password in modo sicuro.
      * **Database**: è il nome del database
      * **Host**: nome dell'host
-     * **Port**: è la porta
+     * **Port**: la porta del server di database
      * **SSL Mode:** la connessione richiede `sslmode=require` per una comunicazione sicura.
 3. **Copia delle credenziali**:
    * Usa le icone di copia accanto a ciascun campo per copiare rapidamente le credenziali da usare nel tuo client di database o nella tua applicazione.

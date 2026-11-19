@@ -10,7 +10,7 @@ La scheda **Validation Setup** mostra il tuo profilo di validazione attuale (ad 
 
 ## Versioni XRechnung accettate
 
-Il controllo di accettazione **Accepted XRechnung versions** elenca tutte le versioni di XRechnung. Seleziona le versioni che accetti: i documenti il cui CustomizationID è fuori da questo elenco vengono rifiutati con `VAL-VERSION-NOT-ALLOWED` prima di qualsiasi altro controllo. Un elenco vuoto significa "accetta tutto". Ogni versione è contrassegnata come **current**, **deprecated** o **EOL** insieme alla sua data di rilascio.
+Il controllo di accettazione **Accepted XRechnung versions** elenca tutte le versioni di XRechnung. Seleziona le versioni che accetti: i documenti il cui CustomizationID è fuori da questo elenco vengono rifiutati con `VAL-VERSION-NOT-ALLOWED` prima di qualsiasi altro controllo. Se nessuna versione è selezionata, il controllo è disattivato e ogni versione viene accettata. Ogni versione è contrassegnata come **current**, **deprecated** o **EOL** insieme alla sua data di rilascio.
 
 ## Profili accettati e modello di gravità
 

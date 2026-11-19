@@ -20,6 +20,8 @@ Touchless Intelligence ti mostra **perché** un abbinamento PO è fallito e **co
 | **Document Trace**                                                                          | La fase **PO Line Match** con lo stato **blocked** e il motivo                                                                                                                  |
 | **Settings → Document Types → More Settings → Purchase Order**                              | Le regole di abbinamento stesse. Vedi [Purchase Order Matching Rules](../../settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) |
 
+Sul canale di rilascio **Nova** la prima riga è il pannello **Why documents are not touchless**. Espandi lì l’area PO matching per leggere i motivi con i relativi conteggi dei documenti; il grafico a barre citato sopra resta su **Vesta**.
+
 ## Le due fasi PO
 
 | Fase                   | Domanda                                            | Si ferma con                                                                                                          |

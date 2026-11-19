@@ -1,52 +1,56 @@
-# Fornitori e ordini di acquisto
+# Fornitori e ordini di acquisto da Infor M3
+
+Questo esempio collega i BOD dei fornitori e degli ordini di acquisto di M3 a DocBits tramite Infor ION. Le quindici immagini Infor riportate di seguito sono esempi storici di un ambiente cliente e non dimostrano che la tua configurazione M3 funzioni attualmente. Il tuo amministratore Infor deve confermare i nomi dei BOD, le tabelle di origine, la società, la divisione, i nomi delle chiamate API e l'ambiente di destinazione prima di avviare un job. Per questo aggiornamento non è stato eseguito alcun caricamento iniziale M3 e nessun import in DocBits.
+
+La [guida al caricamento iniziale di Infor](https://docs.infor.com/m3udi/16.x/en-us/m3beud/appfoundhs/spl1567531742751.html) spiega le definizioni in EVS006, il verbo e la selezione in EVS007, l'invio e il registro storico. Iniziare con una selezione limitata; un'esecuzione senza restrizioni può generare molti eventi.
 
 ## **Punto di connessione**
 
-Sarà necessario creare il punto di connessione DocBits API per creare successivamente il flusso di dati.
+Per creare in seguito il flusso di dati è necessario creare il punto di connessione DocBits API.
 
-In InforOS, vai a ION Desk → Connetti → Punti di connessione
+In InforOS, andare su ION Desk → Connect → Connection Points
 
-![Navigazione di ION Desk con il gruppo Connect espanso e le voci Data Flows, API Flows, Mappings, Connection Points e File Templates](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH\_r3RAGOvJE6Ok67ST\_272zFfhB\_TTFYg3b-NwFq0CAv2o)
+<figure><img src="https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o" alt="Navigazione storica in ION Desk con il gruppo Connect espanso e la voce Connection Points evidenziata."><figcaption><p>Navigazione storica: ION Desk → Connect → Connection Points.</p></figcaption></figure>
 
-Una volta qui, dovrai creare un nuovo punto di connessione.
+Una volta arrivati qui, occorre creare un nuovo punto di connessione.
 
-![Pagina Connection Points di ION Desk con il gruppo Connect aperto nella navigazione e il percorso Home e Connection Points](https://lh7-us.googleusercontent.com/ZDv-F3iayFqnsvVLlAE1kr0NNncsvuYtzcE\_WQj-0ONoE7McRl-f6\_DDH9ErQ0KLspZFFJ43t5EfnPBJjVg25YISMEQ--X4MmK6SVWzB60-Fq6mtwdhiOBwSnL-8vASXsto9iab0dnve6eeG8yuqNoI)
+<figure><img src="https://lh7-us.googleusercontent.com/ZDv-F3iayFqnsvVLlAE1kr0NNncsvuYtzcE_WQj-0ONoE7McRl-f6_DDH9ErQ0KLspZFFJ43t5EfnPBJjVg25YISMEQ--X4MmK6SVWzB60-Fq6mtwdhiOBwSnL-8vASXsto9iab0dnve6eeG8yuqNoI" alt="Pagina Connection Points storica con una freccia verde che punta alla voce Add."><figcaption><p>Azione Add storica per creare un punto di connessione.</p></figcaption></figure>
 
-**Select API**
+**Selezionare API**
 
-Assegnare al punto di connessione un nome e una descrizione che descriva la sua natura e il suo ambiente. Nella scheda Connessione, importa l'account di servizio che hai creato per l'ambiente con cui stai lavorando.
+Assegnare al punto di connessione un nome e una descrizione che ne descrivano la natura e l'ambiente. Nella scheda Connection, importare l'account di servizio creato per l'ambiente con cui si sta lavorando.
 
-![Finestra API Connection Point DocBits-DEV-Demo-Import con le schede Usage, Connection e Documents, il nome DocBits-DEV-Demo-Import, la voce di autenticazione DocBits-DEV-Demo-Import Service Account e il Logical ID infor.api.docbits-dev-demo-import](https://lh7-us.googleusercontent.com/UCuGTwKARn3auhYdDDUbQ78Ok3qBNE1KpGEMealfPvgRju4VRLn2AfKaL5tLDcAh00poLHNQU-Q6koBhG5RdxK4CJrrL6Qeb4D52qnhw3aG1LZniuzHRXwOyzGcJvRnQtLGbp6PIseXvWxHlk-AMlz0)
+<figure><img src="https://lh7-us.googleusercontent.com/UCuGTwKARn3auhYdDDUbQ78Ok3qBNE1KpGEMealfPvgRju4VRLn2AfKaL5tLDcAh00poLHNQU-Q6koBhG5RdxK4CJrrL6Qeb4D52qnhw3aG1LZniuzHRXwOyzGcJvRnQtLGbp6PIseXvWxHlk-AMlz0" alt="Punto di connessione storico DocBits-DEV-Demo-Import con la scheda Connection selezionata e un controllo Import dell'account di servizio."><figcaption><p>Scheda Connection storica. I nomi mostrati si riferiscono all'ambiente di esempio; usare il proprio account di servizio.</p></figcaption></figure>
 
-Successivamente, passa alla scheda Documenti. Sarà necessario aggiungere i seguenti BOD al punto di connessione, non tutti sono necessari per i dati anagrafici del fornitore e dell'ordine d'acquisto ma saranno utili quando è necessario implementare altre funzionalità come la contabilità automatica.
+Passare quindi alla scheda Documents. Al punto di connessione vanno aggiunti i seguenti BOD: non tutti servono per i dati anagrafici di fornitori e ordini di acquisto, ma saranno utili quando si implementano altre funzioni come la contabilità automatica.
 
-![Scheda Documents del punto di connessione con i BOD Acknowledge.SupplierInvoice, Sync.ChartOfAccounts, Sync.PurchaseOrder, Sync.RemitToPartyMaster e Sync.SupplierPartyMaster e una casella di controllo per riga](https://lh7-us.googleusercontent.com/25Hizkx23i1c8-QHSrE7mPAH7zW6ux9iHTcP8\_l6EJJy548CvuNPF1R86Fuqx5iYZP9HF-Z4G6hntkaUtlOMetHIzAVZyBM6VIQ-vsvy6P5YBuAj4yscdJe8ySOHwIRQwFpShRiFGC83v467LLBaXq8)
+<figure><img src="https://lh7-us.googleusercontent.com/25Hizkx23i1c8-QHSrE7mPAH7zW6ux9iHTcP8_l6EJJy548CvuNPF1R86Fuqx5iYZP9HF-Z4G6hntkaUtlOMetHIzAVZyBM6VIQ-vsvy6P5YBuAj4yscdJe8ySOHwIRQwFpShRiFGC83v467LLBaXq8" alt="Scheda Documents storica con i BOD Acknowledge.SupplierInvoice, Sync.ChartOfAccounts, Sync.PurchaseOrder, Sync.RemitToPartyMaster e Sync.SupplierPartyMaster."><figcaption><p>Elenco storico dei documenti ricevuti. Il BOD fornitore mostrato è Sync.RemitToPartyMaster, senza il suffisso Data.</p></figcaption></figure>
 
-Per ora ci concentreremo solo sui BOD necessari, ovvero: Sync.RemitToPartyMasterData, Sync.SupplierPartyMaster e Sync.PurchaseOrder.
+Questa configurazione storica usa Sync.RemitToPartyMaster, Sync.SupplierPartyMaster e Sync.PurchaseOrder. Confermare quali BOD richiede la mappatura DocBits; la configurazione può variare in base all'ambiente e alla funzione.
 
-* Sync.RemitToPartyMasterData and Sync.SupplierPartyMaster
+* Sync.RemitToPartyMaster e Sync.SupplierPartyMaster
 
-La configurazione per questi due BOD dovrebbe essere simile alla seguente (API Nome chiamata che cambia per ciascuno)
+L'immagine storica seguente mostra Sync.SupplierPartyMaster. Configurare ogni BOD fornitore necessario con il nome della chiamata API e l'operazione di ricezione confermati per il proprio ambiente; la seconda rotta fornitore non è raffigurata.
 
-![Configurazione del BOD con le schede Input Document, ION API, Request Parameters, Request Body e Settings e i campi API Call Name Sync.SupplierPartyMaster, Product DocBits-DEV e l'operazione POST CustomerApi/DocBits-DEV/prod/import/supplier_bod](https://lh7-us.googleusercontent.com/1SeyL73b7K9vxkTzKk-pumRleoY1sx9MVwgEBMZ-oUf6GXG2C7fKIRMbnhWHHhIQhUDBS3oKQidrQIN08FZ\_7eKEt1Yp0cRqnsDlv1R5ShdZdNKmaXmU\_19DAVtiT3U0m2qm4cBOj9FcnT0eyawfJXk)
+<figure><img src="https://lh7-us.googleusercontent.com/1SeyL73b7K9vxkTzKk-pumRleoY1sx9MVwgEBMZ-oUf6GXG2C7fKIRMbnhWHHhIQhUDBS3oKQidrQIN08FZ_7eKEt1Yp0cRqnsDlv1R5ShdZdNKmaXmU_19DAVtiT3U0m2qm4cBOj9FcnT0eyawfJXk" alt="Scheda ION API storica con Send to API selezionato, API Call Name Sync.SupplierPartyMaster e operazione POST."><figcaption><p>Rotta SupplierPartyMaster storica. L'immagine mostra una rotta fornitore; confermare separatamente l'operazione di ricezione per ogni BOD richiesto.</p></figcaption></figure>
 
 * Sync.PurchaseOrder
 
-La configurazione per questo BOD dovrebbe essere simile alla seguente
+L'immagine storica seguente mostra un'operazione di ricezione degli ordini di acquisto. Confermare l'endpoint attuale e il formato della richiesta per il proprio ambiente.
 
-![Configurazione del BOD con le schede Input Document, ION API, Request Parameters, Request Body e Settings e i campi API Call Name Sync.PurchaseOrder, Product DocBits-DEV e l'operazione POST CustomerApi/DocBits-DEV/prod/import/purchase_order_bod](https://lh7-us.googleusercontent.com/ljXpQxwepI3u6kcITZfACV9yYL1ZZZtBbWimkXW6aWFTI-yd7Gajrxw2pwxdcF1Xv3KoGDalq72yXvaipjQ-OmbcTzJ0PUUKnmE0pBa5pASEPg0amqKSbU82ZDOKr5alWXynAd53IM2i9HgZ1CsYIB4)
+<figure><img src="https://lh7-us.googleusercontent.com/ljXpQxwepI3u6kcITZfACV9yYL1ZZZtBbWimkXW6aWFTI-yd7Gajrxw2pwxdcF1Xv3KoGDalq72yXvaipjQ-OmbcTzJ0PUUKnmE0pBa5pASEPg0amqKSbU82ZDOKr5alWXynAd53IM2i9HgZ1CsYIB4" alt="Scheda ION API storica con Send to API selezionato per Sync.PurchaseOrder e operazione POST."><figcaption><p>Rotta PurchaseOrder storica. Il vecchio percorso del proxy API Gateway è un esempio, non un indirizzo DocBits universale.</p></figcaption></figure>
 
-Una volta configurati questi BOD, è possibile salvare il punto di connessione premendo l'icona situata a destra del pulsante Indietro.
+Una volta configurati questi BOD, salvare il punto di connessione con l'icona situata a destra del pulsante Indietro.
 
 ## **Flusso di dati**
 
-Il flusso di dati sarà simile al seguente
+Questo flusso di dati storico è una possibile struttura; verificarne le rotte e l'organizzazione di ricezione nel proprio ambiente.
 
-![Flusso di dati in ION Desk con un nodo M3 a sinistra, diversi nodi DocBits denominati DocBits-DEV-P, DocBits-DEV-S e DocBits-DEV-D al centro, un nodo End e una condizione con i rami Yes e No](https://lh7-us.googleusercontent.com/BtszuCXPwv-WYCGtnd\_beU9t0uNntEu6U2iCSstxu1GAziuCfFafQdy2LKZkYw4kbQVfzI5lBYYajOeNwXkn84xy7AXWlCFX4GLo6dukWtfkFPMsXaPga0EkbnrI0bHSKqezXsvYJKymemZYDySIfA8)
+<figure><img src="https://lh7-us.googleusercontent.com/BtszuCXPwv-WYCGtnd_beU9t0uNntEu6U2iCSstxu1GAziuCfFafQdy2LKZkYw4kbQVfzI5lBYYajOeNwXkn84xy7AXWlCFX4GLo6dukWtfkFPMsXaPga0EkbnrI0bHSKqezXsvYJKymemZYDySIfA8" alt="Flusso storico da M3 attraverso un filtro Sì o No e una suddivisione parallela verso quattro nodi API DocBits, con nodi di unione e di fine."><figcaption><p>Flusso storico. Il ramo No termina prima dei nodi API; il ramo Sì raggiunge i quattro ambienti di esempio.</p></figcaption></figure>
 
-(Il motivo per cui sono presenti più API DocBits è dovuto al fatto che ciascuna connessione rappresenta un ambiente diverso, il che significa che, a seconda della quantità di ambienti di cui disponi, il flusso di dati potrebbe differire leggermente)
+I diversi nodi API DocBits rappresentano ambienti separati in questo esempio. La tua struttura può essere diversa; assicurarsi che i messaggi di test non raggiungano la produzione.
 
-Ai fini di questa spiegazione utilizzeremo l'esempio di avere quattro ambienti separati.
+I quattro ambienti sono mostrati solo come esempio.
 
 ### **M3**
 
@@ -56,33 +60,33 @@ L'inizio del flusso di dati è costituito dalla tua applicazione M3
 
 La configurazione del filtro è la seguente
 
-![Pannello Filter Properties con le schede Properties, Attributes e Conditions e i campi Name e Description vuoti](https://lh7-us.googleusercontent.com/-rMMaL3ToAoxqMFXybclIcd61H4S25HI90xnHANGl3J7ldZ374\_T2V0q\_\_QSwuNSuXfu829G7kYRCfVslx-l9b1j5LAVKonCQqO3aK2FuWNwmtyvytAF6PaIv8jiEJhhxSwU47eKEo1ozbzyndSW7BY)
+<figure><img src="https://lh7-us.googleusercontent.com/-rMMaL3ToAoxqMFXybclIcd61H4S25HI90xnHANGl3J7ldZ374_T2V0q__QSwuNSuXfu829G7kYRCfVslx-l9b1j5LAVKonCQqO3aK2FuWNwmtyvytAF6PaIv8jiEJhhxSwU47eKEo1ozbzyndSW7BY" alt="Area Filter Properties storica con la scheda Properties selezionata e i campi Name e Description impostati su Division."><figcaption><p>Nome e descrizione del filtro storici. Il solo nome Division non stabilisce quali record vengono filtrati.</p></figcaption></figure>
 
-![Pannello Filter Properties con la scheda Attributes aperta e le righe AccountingEntityID_3 per ChartOfAccounts, AccountingEntityID per PurchaseOrder, AccountingEntityID_1 per RemitToPartyMaster e AccountingEntityID_2 per SupplierPartyMaster, tutte di tipo STRING con il percorso DataArea/*/AccountingEntityID](https://lh7-us.googleusercontent.com/npa9V37wV661zRD-pccafrGqw4hRb-Tk7iZ84UyyjE0gtfAcI1ma6\_QWS3iEcBW35trveCG3CnXiZAnFIQyYM278XYJqIuzQh3SUmbAxLCmyTCHkiOhpDJwSfFDJtc8PlcbrmrBdZLACsK3B8sCSyDA)
+<figure><img src="https://lh7-us.googleusercontent.com/npa9V37wV661zRD-pccafrGqw4hRb-Tk7iZ84UyyjE0gtfAcI1ma6_QWS3iEcBW35trveCG3CnXiZAnFIQyYM278XYJqIuzQh3SUmbAxLCmyTCHkiOhpDJwSfFDJtc8PlcbrmrBdZLACsK3B8sCSyDA" alt="Scheda Attributes storica dell'area Filter Properties con i percorsi AccountingEntityID per ChartOfAccounts, PurchaseOrder, RemitToPartyMaster e SupplierPartyMaster."><figcaption><p>Attributi storici: ogni BOD ha un percorso AccountingEntityID. Verificare il percorso di ogni documento nel proprio ambiente.</p></figcaption></figure>
 
-![Pannello Filter Properties con la scheda Conditions aperta, il documento ChartOfAccounts, la condizione Not Filtered e la riga DIV780AAA con l'espressione AccountingEntityID_3 uguale a 780_AAA](https://lh7-us.googleusercontent.com/saiZJD9diyo2JC-XV0vYCboPZJP-87zDH7LIGuBNMNzhL5alDZkShpCARfYd21oroC8eYBfYdckJiONty9IuOc7zHkIIlUWNqoxnPfygEc1R1Tnjt1KPZpSTr7-RLaa5lqS3\_2DPj96aV0vLdZk2tzw)
+<figure><img src="https://lh7-us.googleusercontent.com/saiZJD9diyo2JC-XV0vYCboPZJP-87zDH7LIGuBNMNzhL5alDZkShpCARfYd21oroC8eYBfYdckJiONty9IuOc7zHkIIlUWNqoxnPfygEc1R1Tnjt1KPZpSTr7-RLaa5lqS3_2DPj96aV0vLdZk2tzw" alt="Scheda Conditions storica dell'area Filter Properties con il documento ChartOfAccounts, la condizione Not Filtered e un'espressione di esempio per AccountingEntityID_3."><figcaption><p>Esempio storico di Conditions. Used Condition indica Not Filtered anche quando è presente un'espressione; verificare la condizione selezionata e il suo effetto invece di presumere che l'espressione sia attiva.</p></figcaption></figure>
 
-(L'entità contabile ID ovviamente è unica per la tua organizzazione)
+(L'ID entità contabile è naturalmente univoco per la tua organizzazione)
 
 ### **API DocBits**
 
-Qui aggiungerai un'applicazione e selezionerai i DocBits API che hai creato in precedenza
+Qui si aggiunge un'applicazione e si selezionano le API DocBits create in precedenza
 
-### **File**
+### **Documenti**
 
-La configurazione dovrebbe apparire come segue
+Selezionare i documenti assegnati al nodo di origine M3 e ai nodi di ricezione. Verificare che gli attributi del filtro e le rotte di ricezione coprano ogni documento richiesto.
 
-![Dettaglio del flusso di dati con il nodo M3 a sinistra, il nodo di condizione e i nodi DocBits, i marcatori Start e End e il pannello Documents con Sync.ChartOfAccounts, Sync.PurchaseOrder, Sync.RemitToPartyMaster e Sync.SupplierPartyMaster](https://lh7-us.googleusercontent.com/GLI8kFjQHePMo4ZBWIR1WPNAhkvmtG0BfYADpdlmNqEFMYJclMInVYmKPdaElPLyPR5qtkWOKTnqDFXMDV2pML3igNOFyFj3R9fj2XHRAs6-Rl3KWz4a8-ednk15wyLDJUziAR6ZT4GjuZO2ANw1ymY)
+<figure><img src="https://lh7-us.googleusercontent.com/GLI8kFjQHePMo4ZBWIR1WPNAhkvmtG0BfYADpdlmNqEFMYJclMInVYmKPdaElPLyPR5qtkWOKTnqDFXMDV2pML3igNOFyFj3R9fj2XHRAs6-Rl3KWz4a8-ednk15wyLDJUziAR6ZT4GjuZO2ANw1ymY" alt="Flusso M3 storico con l'icona del documento evidenziata e un pannello Documents con Sync.ChartOfAccounts, Sync.PurchaseOrder, Sync.RemitToPartyMaster e Sync.SupplierPartyMaster."><figcaption><p>Selezione storica dei documenti per il flusso M3. Si tratta di un elenco di documenti BOD, non della configurazione di un nodo file.</p></figcaption></figure>
 
 ## **Attivazione dei BOD M3**
 
-Passare all'applicazione Infor M3
+Aprire l'applicazione Infor M3
 
-Una volta nel menu principale, digita Comando + R per aprire la casella di ricerca del prompt dei comandi. Quindi digita evs006 e cerca.
+In M3 aprire il controllo **Search and Start**, inserire **EVS006** e confermare il programma. Usare la navigazione supportata dal proprio client M3.
 
-![Finestra Search and Start in Infor M3 con il campo di ricerca di un comando](https://lh7-us.googleusercontent.com/Vn2WD1-8RuDURsYmzrTARO4mBafwhBUvDImM3z2Nd\_hDnVRWjbHgOoplV8QhBC9QtslnWqZyJNIhudvGFGaEl5S-qgloKn0rpwQsF0EuVnrzVplg1urqvSQ9fNa5Qetx8TwLuxZzL3N7wHz9kX4xr\_o)
+<figure><img src="https://lh7-us.googleusercontent.com/Vn2WD1-8RuDURsYmzrTARO4mBafwhBUvDImM3z2Nd_hDnVRWjbHgOoplV8QhBC9QtslnWqZyJNIhudvGFGaEl5S-qgloKn0rpwQsF0EuVnrzVplg1urqvSQ9fNa5Qetx8TwLuxZzL3N7wHz9kX4xr_o" alt="Dialogo Search and Start storico di M3 con la voce evs006 e il pulsante OK."><figcaption><p>Ricerca programma storica: inserire EVS006 in Search and Start.</p></figcaption></figure>
 
-Una volta in questa pagina, dovrai aggiungere SupplierPartyMaster, RemitToPartyMaster e PurchaseOrder all'elenco.
+In EVS006 definire i BOD noun richiesti dalla mappatura approvata. L'esempio storico usa SupplierPartyMaster, RemitToPartyMaster e PurchaseOrder. Confermare i nomi delle tabelle M3 nella propria versione prima di creare una definizione di caricamento iniziale.
 
 BOD noun: SupplierPartyMaster
 
@@ -96,18 +100,26 @@ BOD noun: PurchaseOrder
 
 Table: MPHEAD
 
-Per ogni caso dovrai premere l'icona più per aggiungerli all'elenco.
+Usare l'azione di aggiunta per ogni definizione approvata. Controllare società e divisione prima di proseguire.
 
-![Intestazione del pannello EVS006 con i menu ACTIONS, OPTIONS, RELATED e TOOLS e le colonne BOD noun, BOD variant e BOD description](https://lh7-us.googleusercontent.com/3y5xAtk4nSc5Eqk-vOJLL59jQHc1w-Fmtn0PIjSiBWTeOo974zg4UjjrK890MjfnsU1a4UtiSqtwcNlHmr6el6GRBd8GrSN\_ZlPk3W\_IQIVcppHOYwnAzHEgRF22JmeRRkJSHotXvd3k\_94\_pYjt6Uw)
+<figure><img src="https://lh7-us.googleusercontent.com/3y5xAtk4nSc5Eqk-vOJLL59jQHc1w-Fmtn0PIjSiBWTeOo974zg4UjjrK890MjfnsU1a4UtiSqtwcNlHmr6el6GRBd8GrSN_ZlPk3W_IQIVcppHOYwnAzHEgRF22JmeRRkJSHotXvd3k_94_pYjt6Uw" alt="Ritaglio storico della barra degli strumenti EVS006 con Add evidenziato sopra i campi BOD noun, BOD variant, BOD e Table vuoti."><figcaption><p>Azione Add storica in EVS006. Questo ritaglio non mostra definizioni di caricamento iniziale compilate.</p></figcaption></figure>
 
-Dopo aver aggiunto ciascuno dei BOD, fare clic con il tasto destro sul nome BOD del BOD e selezionare Correlati → Esegui
+Dopo aver aggiunto tutti i BOD, fare clic con il tasto destro sul BOD noun del BOD e selezionare Related → Run
 
-![Menu Related in Infor M3 con le voci Drill down, Select, Run, Change, History, Copy, Delete, Display e le relative scorciatoie da tastiera](https://lh7-us.googleusercontent.com/HjkKvk7khjPgpjXmfyTyOLE2vNeB2qt2oN9ShOmrQiYhhvokRlBaZ0rlPtbwWUld54EhUJZLK0OVNGH\_eIYzFj22XgFHZccEM9g2nVQ\_5BgouHYoMfzfWYQVwluSdcednqrjilSByCdt44ytHgfCNyo)
+<figure><img src="https://lh7-us.googleusercontent.com/HjkKvk7khjPgpjXmfyTyOLE2vNeB2qt2oN9ShOmrQiYhhvokRlBaZ0rlPtbwWUld54EhUJZLK0OVNGH_eIYzFj22XgFHZccEM9g2nVQ_5BgouHYoMfzfWYQVwluSdcednqrjilSByCdt44ytHgfCNyo" alt="Menu contestuale storico con Related espanso e Run evidenziato; sotto è elencata la voce History."><figcaption><p>Azione storica Related → Run. Con History si controlla in seguito il risultato del caricamento iniziale.</p></figcaption></figure>
 
-Verrai portato al menu seguente, dove dovrai cambiare il verbo BOD in Sync e quindi premere NEXT per attivare i BOD.
+L'azione collegata **Run** apre EVS007. Scegliere **Sync** solo se il flusso ION di ricezione lo prevede. Verificare la selezione e i filtri prima dell'invio definitivo; passare alla schermata successiva non dimostra la consegna.
 
-![Pannello EVS007 Initial Load Job Open con la tabella CIDMAS, il BOD noun SupplierPartyMaster, il numero di job 243249962976569068, lo stato 1-Pending e il BOD verb impostato su Sync](https://lh7-us.googleusercontent.com/FoJTP89zGI0FwRTyLjkIKfW75MbCrvcvqD\_ka--G1SFdzIhBAp7dq63\_WKMIEC-ouCHWA7sRd25rWfWclZJmWd7SGIZLwnSQ4id3nq82hOuFV9-mzMHAtGlhfCKtYwcQnrLyMSsrTmKNyME7lpYSeNA)
+<figure><img src="https://lh7-us.googleusercontent.com/FoJTP89zGI0FwRTyLjkIKfW75MbCrvcvqD_ka--G1SFdzIhBAp7dq63_WKMIEC-ouCHWA7sRd25rWfWclZJmWd7SGIZLwnSQ4id3nq82hOuFV9-mzMHAtGlhfCKtYwcQnrLyMSsrTmKNyME7lpYSeNA" alt="Schermata storica EVS007 Initial Load Job per CIDMAS e SupplierPartyMaster con stato Pending, menu BOD verb aperto e Sync annotato mentre Show è ancora visualizzato."><figcaption><p>Selezione storica del verbo in EVS007 prima dell'esecuzione. L'immagine mostra un job in attesa e un'opzione Sync annotata; non dimostra che Sync sia stato scelto o che i dati siano stati importati.</p></figcaption></figure>
 
-Una volta attivati i BOD, riceverai una notifica di conferma.
+Una notifica di invio conferma che il job è stato richiesto. In EVS006, in **History**, controllare il numero di record elaborati e gli errori. Verificare poi il messaggio e la destinazione in Infor ION.
 
-Se eseguito correttamente, le tabelle Fornitore e Ordine d'acquisto dovrebbero ora essere disponibili in Impostazioni → Ricerca dati anagrafici.
+## Verifica in DocBits
+
+Nell'organizzazione DocBits prevista aprire **Impostazioni → Elaborazione documenti → Ricerca di dati anagrafici → Dati di ingresso BOD → Fornitore**. Selezionare il campo identificativo in **Ricerca per colonna**, inserire in **Ricerca Stringa** un numero o un nome di fornitore noto e avviare la ricerca con la lente. Aprire poi **Ordine di acquisto** e cercare un numero d'ordine noto; se la mappatura separa intestazione e righe, controllare anche **Intestazione Dell'ordine Di Acquisto**. Confrontare identificativi e società con l'origine M3. Una richiesta EVS007 riuscita, da sola, non dimostra che tutti i record siano arrivati.
+
+<figure><img src="../../../.gitbook/assets/dbdc-1139-supplier-it-20261112.png" alt="Vista DocBits in italiano di Ricerca di dati anagrafici con la scheda Fornitore, i campi Ricerca per colonna e Ricerca Stringa e dieci righe fornitore inventate da SUP-1001 a SUP-1010."><figcaption><p>Vista Fornitore nella versione sandbox 11.27.7 con dati di esempio inventati. Cercare un identificativo di test noto e confrontarlo con M3 e ION.</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/dbdc-1139-purchase-order-it-20261112.png" alt="Vista DocBits in italiano Ordine di acquisto con le schede aperte Fornitore e Ordine di acquisto, gli stessi campi di ricerca e dieci righe d'ordine inventate da PO-4500 a PO-4509."><figcaption><p>Vista Ordine di acquisto nella versione sandbox 11.27.7 con dati di esempio inventati. Le righe non dimostrano un import M3.</p></figcaption></figure>
+
+Le immagini di questa sezione provengono dall'interfaccia sandbox distribuita (versione 11.27.7) con dati di esempio inventati. Non è stato avviato alcun job M3, non è stato importato alcun file e non è stato modificato alcun dato anagrafico; le immagini mostrano dove verificare, non un trasferimento completato. Se manca un record previsto, controllare il registro storico EVS006, il routing ION, la mappatura BOD e l'organizzazione DocBits prima di riprovare.

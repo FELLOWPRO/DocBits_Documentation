@@ -1,94 +1,44 @@
 # Guide du fichier des chemins d'extraction EDI
 
-## 1. Aperçu
+La configuration des **chemins d'extraction** (Extraction Paths) indique à DocBits où trouver les valeurs d'une facture dans un document EDI/XML structuré. Elle associe les champs du document et les colonnes de table à des expressions XPath. Ne modifiez cette configuration que si vous gérez les formats de documents électroniques de votre organisation.
 
-Le **Fichier des chemins d'extraction** définit comment les données sont extraites du **XML structuré** dans des champs de document spécifiques et des tables dans l'interface. Il associe les **identifiants de champ** aux **expressions XPath**, qui sont évaluées pour extraire des valeurs du XML dans les champs de document correspondants. Ce fichier joue un rôle crucial pour garantir que les données extraites apparaissent correctement lors de la validation des champs et du traitement en aval.
+## Ouvrir les chemins d'extraction
 
-## 2. Objectif et Fonction
+1. Allez dans **Paramètres → Types de Documents**.
+2. Ouvrez **E-Doc** pour le type de document à configurer. Les captures ci-dessous utilisent le type **PURCHASE_ORDER**.
+3. Dépliez **EDI** et sélectionnez **EXTRACTION PATHS**. La ligne porte la mention **JSON**.
 
-* Associe chaque champ de document et colonne de table à un emplacement spécifique dans le XML structuré en utilisant des expressions XPath.
-* Garantit que les valeurs correctes sont renseignées dans des champs tels que `order_number`, `supplier_name` et `total_amount`.
-* Prend en charge à la fois les **champs simples** (via un objet `fields`) et les **tables** (via un tableau `tables` avec des chemins de ligne et des correspondances de colonnes).
-* Permet un contrôle précis sur la manière dont les données sont extraites du XML, y compris l'utilisation de fonctions XPath comme `sum()`.
+<figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-format-fr-20261114.png" alt="Liste EDI de la sandbox en français : bouton Nouveau, colonnes Nom, Statut, Type, Version et Dernière modification en date du, ligne EXTRACTION PATHS marquée JSON"><figcaption><p>Le format EDI comporte des entrées distinctes pour TRANSFORMATION, PREVIEW et EXTRACTION PATHS.</p></figcaption></figure>
 
-Exemple de mappage de champ :
+Si vous devez modifier un autre composant EDI, utilisez le guide correspondant : [Transformation](edi-transformation-file-guide.md) ou [Aperçu](edi-preview-file-guide.md).
 
-Copier
+## Lire le mappage
 
-```
-"order_number": "//PURCHASE_ORDER/PURCHASE_ORDER/text()"
-```
+La page de détail affiche à gauche le type de document sélectionné et le format EDI, ses versions en dessous, et le mappage JSON à droite. Le badge **Actif** identifie la version actuellement utilisée. Le bouton **Format** réorganise le JSON pour la lecture ; il n'active aucune version.
 
-## 3. Accès et Édition de base
+<figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-path-detail-fr-20261114.png" alt="Détail des chemins d'extraction en français : Type de document PURCHASE_ORDER, Type de document électronique EDI, version 1 marquée Actif, éditeur JSON EXTRACTION PATHS et bouton Format"><figcaption><p>Le mappage EDI actif du type PURCHASE_ORDER, avec sa version 1 marquée Actif et le contenu d'exemple dans l'éditeur JSON.</p></figcaption></figure>
 
-#### **Accès au fichier :**
+Le JSON comporte deux parties principales :
 
-1.  Accédez à **Paramètres** → **Type de document** → _\[Votre document (par exemple, Bon de commande)]_ → **E-Doc**.
+* `fields` associe un champ DocBits, par exemple `order_number`, à l'XPath de sa valeur dans le XML.
+* `tables` identifie une ligne répétitive avec `row_path` et associe chaque colonne de la table par son `name` et son `path`.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff6zyL0AvmqSvrogZdnox%252Fimage.png%3Falt%3Dmedia%26token%3D6bc9ab55-6ee9-43d1-b576-4c5833c208cf\&width=768\&dpr=4\&quality=100\&sign=a23de442\&sv=2)
-2. Sous l'onglet **E-Doc**, sélectionnez votre format (par exemple, **EDI**).
-3.  Cliquez sur **Chemins d'extraction** pour afficher ou modifier le fichier.
+Dans l'exemple affiché, le mappage du type PURCHASE_ORDER contient `"order_number": "//PURCHASE_ORDER/PURCHASE_ORDER_NUMBER/text()"`. Sa table utilise `"row_path": "//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE"`. La structure de votre XML et les noms de champs DocBits peuvent différer : copiez les chemins depuis votre propre document exemple plutôt que depuis cette capture.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FawwG5QnErp1yy1eYHrlX%252Fimage.png%3Falt%3Dmedia%26token%3D46a6d8b3-52d2-4c13-bc72-1a74955efd9f\&width=768\&dpr=4\&quality=100\&sign=e612882b\&sv=2)
+## Créer et vérifier une modification
 
-#### **Gestion des brouillons :**
+Le crayon situé à côté de la version active crée un **brouillon**. Effectuez vos modifications JSON dans ce brouillon. Vérifiez les noms de champs et les chemins sur votre XML avant de l'activer. La coche du brouillon active cette version ; activer une nouvelle version remplace celle qui était active auparavant. Utilisez l'icône corbeille uniquement pour supprimer un brouillon indésirable.
 
-* **Créer un brouillon :** Cliquez sur l'icône ✏️.
-* **Supprimer les brouillons :** Utilisez l'icône 🗑️ pour supprimer les brouillons inutilisés.
-* **Activer les modifications :** Cliquez sur la coche ✅ pour publier une version.
-  * **Remarque** : Activer une nouvelle version désactivera **automatiquement** la précédente.
+Le bouton **Nouveau** de la liste crée un nouvel attribut EDI et le menu à trois points de chaque ligne regroupe les actions de cette ligne. Aucune de ces deux commandes ne modifie la version active tant que vous n'activez pas un brouillon.
 
-## 4. Éditeur et Syntaxe
+Cliquez sur **Aperçu** pour afficher le panneau de test. Saisissez l'**identifiant de document** DocBits d'un document EDI téléversé, puis cliquez sur **Test**. Comparez les valeurs renvoyées avec le document source. Dans la capture ci-dessous, l'identifiant saisi et les valeurs du résultat sont des données d'exemple inventées ; ils ne proviennent pas d'un document de votre organisation. Le libellé du champ de saisie reste affiché en anglais (**Document Id...**) dans cette version de l'interface.
 
-Le Fichier des chemins d'extraction est écrit en **JSON** et contient deux composants principaux :
+<figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-preview-fr-20261114.png" alt="Panneau Aperçu en français avec le champ Document Id rempli par un identifiant d'exemple, le bouton Test et le résultat JSON d'exemple"><figcaption><p>Testez le mappage sélectionné avec un identifiant de document EDI avant d'activer un brouillon ; l'identifiant e2000000-0000-4000-8000-000000000003 et les valeurs affichées sont des données d'exemple inventées.</p></figcaption></figure>
 
-* **fields** : Un dictionnaire où chaque clé est un identifiant de champ et chaque valeur est une expression XPath qui définit comment extraire les données.
-* **tables** : Une liste de définitions de table qui incluent :
-  * `name` : L'identifiant de la table.
-  * `row_path` : Un XPath qui identifie chaque ligne de la table.
-  * `columns` : Une liste de correspondances de colonnes (`name`, `path`).
+Besoin de l'identifiant du document ? Ouvrez le document téléversé dans DocBits et copiez son identifiant. Pour le contexte de ces fichiers, consultez [Paramètres EDI](README.md) et les [Vidéos EDI](edi-videos.md).
 
-Vous pouvez également utiliser des fonctions XPath (par exemple, `sum()`) et des expressions pour calculer des valeurs dynamiquement à partir d'éléments répétés.
+## Règles effectives et activation
 
-Copier
+Si un avoir électronique apparaît comme une facture, suivez le [guide de diagnostic de la classification](../credit-note-recognized-as-invoice.md). Il couvre la source personnalisée ou par défaut effectivement utilisée, les codes de type, les chemins d'extraction et une activation sûre.
 
-```json
-"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
-```
-
-## 5. Fonction d'aperçu (Évaluer l'extraction)
-
-La **Fonction d'aperçu** vous permet de simuler le comportement des chemins d'extraction avec un document réellement téléchargé.
-
-**Utilisation :**
-
-* Téléchargez un fichier EDI via le processus de téléchargement standard.
-* Copiez l'**ID du document**.
-* Accédez à l'interface des **Chemins d'extraction**.
-* Ouvrez la **Fonction d'aperçu**.\
-  \
-  &#x20;![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a\&width=300\&dpr=4\&quality=100\&sign=36ce2b93\&sv=2)
-* Entrez l'ID du document et cliquez sur **Tester**.
-* Le résultat montrera comment chaque champ et table est renseigné en fonction des chemins configurés.
-
-Cette fonction est essentielle pour vérifier que vos expressions XPath sont correctement définies et extraient les valeurs attendues avant d'activer le brouillon.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F81uvH6FFVBJsSZucanWY%252Fimage.png%3Falt%3Dmedia%26token%3Dde3ba545-1ee3-44b2-a629-9660d80174f2\&width=768\&dpr=4\&quality=100\&sign=43c8b507\&sv=2)
-
-## 6. Guide vidéo
-
-Un guide vidéo pour ce type de fichier est disponible sur la [page des vidéos.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Utilisez-le pour suivre la configuration, l'édition et l'aperçu.
-
-## Règles effectivement utilisées et activation
-
-Si un avoir électronique apparaît comme Invoice, suivez le [guide de diagnostic de la classification](../credit-note-recognized-as-invoice.md). Il couvre la source personnalisée ou par défaut effectivement utilisée, les codes de type, Extraction Paths et l’activation en toute sécurité.
-
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-fr.png" alt="Format EDI existant avec ses quatre attributs configurés."><figcaption><p>Format EDI existant avec ses quatre attributs configurés.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-fr.png" alt="Attribut EXTRACTIONPATHS actif : configuration JSON contenant des expressions XPath d’extraction."><figcaption><p>Attribut EXTRACTIONPATHS actif : configuration JSON contenant des expressions XPath d’extraction.</p></figcaption></figure>
-
-
-Les vues montrent une configuration et une version existantes. Les paramètres varient selon le type de document et le format. Validez les modifications dans un brouillon avant leur activation.
-
-Dans la version de l’interface illustrée, certaines mentions, telles que Custom et Default, restent en anglais. Les identifiants techniques des attributs et le code de configuration restent inchangés.
+Les vues montrent une configuration et une version existantes. Les paramètres varient selon le type de document et le format. Validez les modifications dans un brouillon avant de les activer.

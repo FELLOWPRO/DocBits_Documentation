@@ -1,75 +1,27 @@
 # Personalizando Filtros
 
-Se você está procurando um ou mais documentos específicos, as seguintes opções estão disponíveis para você. Dentro da barra de pesquisa, fornecemos várias ferramentas para ajudá-lo a encontrar o documento que você está procurando. Para acessá-las, selecione o seguinte ícone.
+Os filtros do painel restringem a lista de documentos à pesquisa atual. A definição **Estilo de filtro de status** é separada: determina que status o filtro de status do painel oferece.
 
-![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_1.png)
+## Filtrar a lista de documentos
 
-Usar filtros permite que os usuários encontrem rapidamente informações relevantes e reduzam a quantidade de dados ao essencial.
+Abra o painel e utilize o campo de pesquisa ou os controlos de filtro. O menu de filtros inteligentes oferece atalhos como **Atrasado**, **Em breve**, **Atribuído a mim**, **Validação pendente**, **Correspondência completa de PO** e **Correspondência parcial de PO**.
 
-## Como personalizar e aplicar filtros no DocBits
+<figure><img src="../../../../.gitbook/assets/customizing-filters-quick-filters-pt-20261113.png" alt="Pesquisa de documentos e filtros rápidos no painel com o menu FILTROS INTELIGENTES aberto e as entradas Atrasado, Em breve, Atribuído a mim, Validação pendente e Correspondência completa de PO; os nomes de ficheiro INV-2026-…, os nomes de pessoas e os valores da tabela são dados de exemplo inventados."><figcaption><p>Pesquisa de documentos e filtros rápidos.</p></figcaption></figure>
 
-### Acessando as configurações de filtro Abrindo o painel:
+Pode combinar vários filtros. Para remover um, clique no **X** do respetivo chip. A filtragem altera apenas os documentos que vê; não altera os valores extraídos de um documento, a sua aprovação nem o estado de exportação.
 
-* Faça login no DocBits e abra o painel que contém os dados que você deseja filtrar.
+## Configurar o filtro de status
 
-**Acessando o menu de filtro:**
+Abra **Configurações → Painel → Filtros** e escolha o **Estilo de filtro de status**:
 
-* Clique no ícone de filtro ou no campo de pesquisa.
+* **Todos** mostra a lista completa de status.
+* **Estático** mostra uma lista predefinida mais curta.
+* **Personalizado** permite escolher os status de que a sua organização necessita.
 
-<figure><img src="../../../../.gitbook/assets/prior-u030-pt.png" alt="Pesquisa de documentos e filtros rápidos com os dados dos documentos ocultos."><figcaption><p>Pesquisa de documentos e filtros rápidos com os dados dos documentos ocultos.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/customizing-filters-status-options-pt-20261113.png" alt="Lista pendente Estilo de filtro de status com as opções Todos, Estático e Personalizado"><figcaption><p>Os três estilos de filtro de status.</p></figcaption></figure>
 
-### Personalizando filtros
+A alteração do estilo é guardada imediatamente. Com **Personalizado**, escolha os status em **Filtro de status personalizado** e clique em **Aplicar**. Aplicar uma lista vazia repõe o estilo em **Todos**.
 
-#### **Usando filtros predefinidos**
+<figure><img src="../../../../.gitbook/assets/customizing-filters-status-filter-card-pt-20261113.png" alt="Configurações do painel com o cartão Filtros expandido: o Estilo de filtro de status está definido como Todos e, na barra lateral, estão visíveis Configurações e Painel"><figcaption><p>A definição do filtro de status nas configurações do painel.</p></figcaption></figure>
 
-* Abra o menu de filtro.
-* Escolha entre as opções de filtro predefinidas (por exemplo, Data, Tipo de Documento, Pessoa Designada).
-* Ajuste os critérios do filtro selecionando ou inserindo os valores apropriados (por exemplo, intervalo de datas, tipo de documento específico).
-
-#### **Crie seus próprios filtros**
-
-* Abra o menu de filtro nas configurações sob Painel e clique em "Filtros".
-
-<figure><img src="../../../../.gitbook/assets/prior-u015-pt.png" alt="Estilo do filtro de estado e filtro personalizado do painel."><figcaption><p>Estilo do filtro de estado e filtro personalizado do painel.</p></figcaption></figure>
-
-* Selecione o campo a ser filtrado (por exemplo, Status).
-
-
-
-* Defina os critérios do filtro, por exemplo: estilo de filtro de Status.
-
-
-
-* Menus suspensos: Escolha entre opções predefinidas.
-
-
-
-* Salve o filtro personalizado clicando em "Aplicar".
-
-
-
-#### **Use filtros combinados**
-
-* Abra o menu de filtro e selecione múltiplos critérios de filtro ao mesmo tempo.
-* Combine critérios de filtro.
-* **Exemplo:** Documentos que foram criados pelo autor "Max Mustermann" E foram criados no último mês.
-* Uma vez que você tenha selecionado um filtro, ele será aplicado automaticamente.
-
-#### **Aplicando e Gerenciando Filtros**
-
-**Aplicando Filtros**
-
-* Depois de selecionar e ajustar os filtros desejados, os filtros são aplicados automaticamente.
-
-**Removendo Filtros**
-
-* Abra o menu de Filtros.
-* Passo 2: Limpe ou remova os filtros aplicados clicando em "Limpar filtros", no ícone X ao lado do filtro selecionado, seja no menu de Filtros ou abaixo da barra de Filtros.
-
-
-
-
-
-
-
-* Os dados são exibidos novamente sem os critérios de filtro anteriores.
+Os administradores da organização definem o valor predefinido da organização. Quando outros utilizadores têm acesso a estes controlos, a sua seleção é guardada como preferência pessoal, que prevalece sobre o valor predefinido da organização.

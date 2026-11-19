@@ -14,7 +14,7 @@ Um selo de aprovação é uma anotação usada no fluxo de aprovação do docume
 
    <figure><img src="../../../../../../.gitbook/assets/dbdc-708-approval-stamp-panel-pt-20261031.png" alt="Secção Aprovação e Rejeição da Fatura na interface portuguesa atual com Selo de aprovação desativado e as outras opções do fluxo"><figcaption><p>Vista real da secção Aprovação e Rejeição no ambiente Dev em português. O estado dos controlos foi apenas lido.</p></figcaption></figure>
 
-   **Aprovar antes de exportar**, a opção **Aprovar antes da exportação V2**, **Segunda Aprovação** e **Histórico de aprovação** são definições do fluxo separadas do selo. Os links de design apresentados abrem os editores dos formulários de aprovação, revisão ou rejeição correspondentes. Não é necessário abrir esses editores para consultar a definição do selo.
+   **Aprovar antes de exportar**, a opção **Aprovar antes da exportação V2**, **Segunda Aprovação** e **Histórico de aprovação** são definições do fluxo separadas do selo. Os botões **FORMULÁRIO DE APROVAÇÃO DE DESIGN**, **DESIGN EM FORMA DE REVISÃO** e **PROJETAR FORMULÁRIO DE REJEIÇÃO** abrem os editores dos formulários de aprovação, revisão ou rejeição correspondentes. Não é necessário abrir esses editores para consultar a definição do selo.
 
 3. Altere **Selo de aprovação** somente depois de acordar como as aprovações e exportações funcionam na sua organização. **A mudança do interruptor guarda a definição imediatamente.** Guarde um registo da definição anterior para poder verificar o efeito numa fatura de teste.
 

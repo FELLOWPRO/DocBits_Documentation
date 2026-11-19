@@ -1,49 +1,35 @@
 # Benachrichtigungen konfigurieren
 
-#### Um zu den E-Mail-Benachrichtigungseinstellungen zu gelangen, führen Sie folgende Schritte aus:
+E-Mail-Benachrichtigungen können Empfänger informieren, wenn ein Dokument einen ausgewählten Status erreicht. Bevor Sie eine Benachrichtigung erstellen, stellen Sie sicher, dass für den Belegtyp, den Sie verwenden möchten, eine [E-Mail-Vorlage](../e-mail-templates.md) existiert.
 
-* Navigieren Sie zum Bereich Globale Einstellungen in Ihrem Benutzerkonto oder Administrationsbereich.
-* Suchen Sie nach der Option für E-Mail-Benachrichtigungen.
-* Klicken Sie auf die entsprechende Option, um die E-Mail-Benachrichtigungseinstellungen zu öffnen.
+## Benachrichtigungsliste öffnen
 
-Innerhalb dieser Einstellungen können Sie dann die gewünschten Konfigurationen vornehmen, um sicherzustellen, dass Sie Benachrichtigungen nach Ihren Präferenzen erhalten. Denken Sie daran, die Einstellungen basierend auf Ihren Bedürfnissen anzupassen und sicherzustellen, dass sie den Datenschutzrichtlinien und Sicherheitsstandards Ihrer Organisation entsprechen.
+Wählen Sie in **Einstellungen** den Bereich **KOMMUNIKATION & BENACHRICHTIGUNGEN** und dort **E-Mail-Benachrichtigung**. Die Liste zeigt bestehende Regeln mit Belegtyp, Status, Priorität, Verzögerung, Empfänger und letzter Änderung. Wählen Sie **Neu**, um eine Regel zu erstellen.
 
-{% embed url="https://youtu.be/R5IrCpiP__4" %}
-{% endembed %}
+<figure><img src="../../../../.gitbook/assets/configuring-notifications-list-de-20261112.png" alt="Liste der E-Mail-Benachrichtigungen mit der Schaltfläche Neu über der Regeltabelle"><figcaption><p>Wählen Sie Neu, um eine E-Mail-Benachrichtigung zu konfigurieren.</p></figcaption></figure>
 
-**Neue Benachrichtigung erstellen:**
+## Eine Regel einrichten
 
-* Klicken Sie auf die Schaltfläche, um eine neue Benachrichtigung hinzuzufügen oder zu erstellen.
+Der Dialog **Neu** enthält folgende Bedienelemente:
 
-#### Hauptmerkmale und Optionen
+| Bedienelement | Eingabe |
+| --- | --- |
+| **Name** | Ein Name, den Sie in der Benachrichtigungsliste wiedererkennen. Verwenden Sie Buchstaben, Ziffern und Leerzeichen. |
+| **Dokumenttyp** | Der Belegtyp, für den diese Regel gilt. Wählen Sie ihn vor der E-Mail-Vorlage. |
+| **Unterorganisation** | Die Unterorganisation, für die diese Regel gilt. |
+| **E-Mail-Vorlage auswählen** | Eine Vorlage für den gewählten Belegtyp. Die Auswahl ist erst verfügbar, wenn passende Vorlagen geladen sind. |
+| **Status** | Der Dokumentstatus, der die Benachrichtigung auslöst. |
+| **Priorität** | Der Prioritätswert für diese Benachrichtigungsregel. |
+| **Zeiteinheit** und **Verzögerung** | Wie lange vor dem Versand gewartet wird. In Minuten muss die Verzögerung mindestens fünf betragen; geben Sie eine ganze Zahl ein. |
+| **Nicht wiederholen / Wiederholen Sie** | Schalten Sie **Wiederholen Sie** ein, wenn die Benachrichtigung erneut gesendet werden soll, solange die Bedingung zutrifft. |
+| **E-Mail an zugewiesenen Benutzer/Gruppe senden** | An den dem Dokument zugewiesenen Empfänger senden statt an eine feste Adresse. Dadurch wird **E-Mail-Adresse** ausgeblendet. |
+| **E-Mail-Adresse** | Geben Sie eine gültige Adresse ein, wenn die Option für den zugewiesenen Empfänger ausgeschaltet ist. |
+| **Benachrichtigung bei Neuzuweisung erneut senden** | Erneut senden, wenn das Dokument einer anderen Person zugewiesen wird. |
 
-1. **Konfiguration der E-Mail-Benachrichtigung**:
+<figure><img src="../../../../.gitbook/assets/configuring-notifications-create-de-20261112.png" alt="Dialog Neue E-Mail-Benachrichtigung mit den leeren Feldern Name, Dokumenttyp, Unterorganisation, E-Mail-Vorlage auswählen, Status, Priorität, Zeiteinheit, Verzögerung, E-Mail-Adresse sowie Abbrechen und Speichern"><figcaption><p>Wählen Sie einen Dokumenttyp und seine E-Mail-Vorlage und legen Sie dann Auslöser und Empfänger fest.</p></figcaption></figure>
 
-* **Name**: Geben Sie hier den Namen ein.
-* Die Kennung für die Benachrichtigung, die Benutzern hilft, den Zweck der Benachrichtigungseinstellung zu erkennen.
+Wenn **E-Mail an zugewiesenen Benutzer/Gruppe senden** ausgewählt ist, verschwindet das feste Feld **E-Mail-Adresse**. Der Schalter ändert seine Beschriftung von **Nicht wiederholen** in **Wiederholen Sie**.
 
-* **Belegtyp**: Wählen Sie den Belegtyp aus, für den Sie eine Benachrichtigung erhalten möchten. Dies könnte das Hinzufügen eines neuen Dokuments, das Löschen eines Dokuments, das Aktualisieren eines Dokuments oder andere relevante Ereignisse sein.
-* Verknüpft die Benachrichtigung mit einem bestimmten Belegtyp, was gezielte Warnungen basierend auf dem Verarbeitungszyklus des Dokuments ermöglicht.
+<figure><img src="../../../../.gitbook/assets/configuring-notifications-recipient-repeat-de-20261112.png" alt="Benachrichtigungsformular mit eingeschalteter Wiederholung und ausgewählter Option E-Mail an zugewiesenen Benutzer/Gruppe senden; erfundene Beispieldaten: Name Rechnung freigegeben, Dokumenttyp Rechnung, Vorlage Docs Demo Invoice Notification, Priorität Mittel, 15 Minuten"><figcaption><p>Nutzen Sie die Option für zugewiesene Empfänger, wenn die für das Dokument verantwortliche Person die E-Mail erhalten soll. Die gezeigten Werte sind erfundene Beispieldaten.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/s150-image-41-1-de.png" alt="Deutscher Dialog für eine E-Mail-Benachrichtigung."><figcaption><p>Deutscher Dialog für eine E-Mail-Benachrichtigung.</p></figcaption></figure>
-
-*   **E-Mail-Vorlage auswählen**: Wählen Sie eine vorkonfigurierte Vorlage aus dem Dropdown-Menü. Vorlagen können in den [E-Mail-Vorlagen-Einstellungen](../../../../advanced-functions-and-tools/sql-access/sql-access/email-template.md) erstellt oder geändert werden.
-
-
-* **Status**: Geben Sie den Status oder die Bedingung an, die eine Benachrichtigung auslösen soll, wenn sie sich ändert. Dies könnte ein bestimmter Workflow-Status, ein Genehmigungsstatus, ein Fehlerstatus oder ein anderer relevanter Status sein.
-
-* **Priorität**: Wählen Sie die entsprechende Priorität aus. Dies könnte beispielsweise "Niedrig", "Mittel" oder "Hoch" sein.
-* Legt die Dringlichkeitsstufe der Benachrichtigung fest, was die E-Mail-Warnung im Posteingang des Empfängers priorisieren kann.
-
-* **Verzögerung**: Geben Sie die gewünschte Zeitdauer ein, um die Verzögerungszeit vor dem Senden der Benachrichtigung festzulegen. Dies könnte in Minuten, Stunden oder Tagen erfolgen, abhängig von Ihren Systemeinstellungen.
-* Durch das Konfigurieren einer Verzögerungszeit vor dem Senden der Benachrichtigung haben Benutzer genügend Zeit für eventuelle Stornierungen oder Korrekturen, bevor die Warnung ausgegeben wird. Dies kann helfen, Fehler zu vermeiden und die Benutzererfahrung zu verbessern.
-
-* **Wiederholungsoption:** Sie können auch eine Einstellung aktivieren, um **die Benachrichtigung in regelmäßigen Abständen zu wiederholen**, bis sich der Dokumentstatus ändert. Dies stellt sicher, dass wichtige Benachrichtigungen nicht übersehen werden und sichtbar bleiben, bis die erforderliche Aktion ergriffen wurde.
-
-* **E-Mail-Adresse**: Geben Sie die E-Mail-Adressen der Empfänger ein, an die die Benachrichtigung gesendet werden soll. Benutzer können mehrere E-Mail-Adressen eingeben, um mehrere Empfänger anzugeben. Dies könnte bedeuten, dass Benachrichtigungen an bestimmte E-Mail-Adressen basierend auf den Eigenschaften des betreffenden Dokuments oder der Rolle des Benutzers gesendet werden.
-
-**Umsetzbare Erkenntnisse**:
-
-* **E-Mail an zugewiesenen Benutzer/Gruppe senden**: Eine optionale Einstellung, die, wenn aktiviert, automatisch Benachrichtigungen an den Benutzer sendet, der dem Dokument zugewiesen ist, um sicherzustellen, dass die verantwortliche Partei immer informiert ist.
-
-* **Speichern:** Klicken Sie nach Eingabe aller erforderlichen Informationen auf die Schaltfläche "Speichern", um die Benachrichtigungseinstellungen zu speichern.
+Wählen Sie **Speichern**, um die Regel zur Liste hinzuzufügen, oder **Abbrechen**, um den Entwurf zu verwerfen. Wenn **E-Mail-Vorlage auswählen** keine Auswahl anbietet, erstellen Sie zuerst eine Vorlage für den ausgewählten Belegtyp und kehren Sie dann in diesen Dialog zurück.

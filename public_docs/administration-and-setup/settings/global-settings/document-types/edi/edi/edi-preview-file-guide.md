@@ -1,79 +1,29 @@
 # Guía de Archivo de Vista Previa EDI
 
-## 1. Visión general
+El archivo **PREVIEW** determina cómo se muestra un documento EDI estructurado para que una persona pueda leerlo. En DocBits es una configuración **XSLT**, independiente de la asignación JSON **EXTRACTION PATHS**. Esta guía se dirige a las personas que mantienen los formatos de documentos electrónicos de su organización.
 
-El **Archivo de Vista Previa** define cómo los datos XML estructurados se representan en un formato legible por humanos, similar a un PDF. Combina **HTML y CSS** para la presentación visual y utiliza declaraciones **XSLT** `**select**` para insertar dinámicamente datos desde el XML personalizado. Esta vista previa se muestra durante la **validación de campos** y también se incluye al exportar documentos a **IDM**.
+## Encontrar el archivo de vista previa
 
-## 2. Propósito y Función
+1. Vaya a **Ajustes → Tipos De Documento** y abra **E-Doc** para el tipo de documento correspondiente.
+2. Despliegue el formato electrónico, por ejemplo **EDI**.
+3. Seleccione la fila **PREVIEW** con el tipo **XSLT**. Todavía no pulse **Vista previa**; ese botón abre un panel de prueba una vez introducida la configuración.
 
-* Convierte XML personalizado legible por máquina en una vista previa formateada visualmente (PDF).
-* Permite la revisión y validación amigable para humanos de los datos extraídos.
-* Asegura la representación consistente de campos clave del documento como encabezados, tablas, totales, etc.
-* Se construye utilizando **HTML + CSS** para diseño y diseño, y **XSLT** para vincular datos al diseño.
+<figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-list-es-20261114.png" alt="Lista EDI de la Sandbox de DocBits con las filas separadas PREVIEW (tipo XSLT) y EXTRACTION PATHS (tipo JSON), columnas Nombre, Estado, Tipo, Version y Fecha de última modificación, con el estado Defecto en cada fila"><figcaption>En la lista EDI, seleccione la fila PREVIEW con el tipo XSLT.</figcaption></figure>
 
-## 3. Acceso y Edición Básica
+## Entender el editor y las versiones
 
-#### **Accediendo al Archivo:**
+La página de detalle muestra a la izquierda los campos **Tipo de Documento**, **Tipo de documento electrónico** y las **Version**es existentes. **Activo** marca la versión que se está usando. El editor de la derecha contiene una hoja de estilo XSLT. Su HTML y CSS controlan el diseño y el aspecto; XSLT inserta valores del documento estructurado. **Formato** ordena el código fuente para leerlo y no activa ninguna versión.
 
-1.  Ve a **Configuración** → **Tipo de Documento** → _\[Tu Documento (por ejemplo, Orden de Compra)]_ → **E-Doc**.
+<figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-detail-es-20261114.png" alt="Página de detalle de la Sandbox de DocBits con Tipo de Documento PURCHASE_ORDER, tipo de documento electrónico EDI, a la izquierda la lista de versiones con la marca Activo en la versión 1 y a la derecha el editor PREVIEW (XSLT) con los botones Vista previa y Formato"><figcaption>Detalle de una configuración de vista previa: a la izquierda el tipo de documento, el tipo de documento electrónico y las versiones; a la derecha la hoja de estilo XSLT.</figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff6zyL0AvmqSvrogZdnox%252Fimage.png%3Falt%3Dmedia%26token%3D6bc9ab55-6ee9-43d1-b576-4c5833c208cf\&width=768\&dpr=4\&quality=100\&sign=a23de442\&sv=2)
-2. Bajo la pestaña **E-Doc**, selecciona tu formato (por ejemplo, **EDI**).
-3.  Haz clic en **Vista Previa** para ver o editar el archivo.
+El icono del lápiz junto a la versión activa crea un **borrador** para los cambios. Cuando haya comprobado sus cambios, active el borrador con la marca de verificación. Una versión activada sustituye a la anterior. El icono de la papelera aparece en cuanto existe más de una versión; utilícelo solo para eliminar un borrador no deseado.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fdo1R389GeSqFuZKLD0OP%252Fimage.png%3Falt%3Dmedia%26token%3D930903d4-44af-4188-b015-c60c2dd9d9ab\&width=768\&dpr=4\&quality=100\&sign=77bbb2ce\&sv=2)
+## Probar una vista previa
 
-#### **Gestión de Borradores:**
+Pulse **Vista previa** arriba a la derecha para abrir el panel de prueba. Introduzca en el campo **Document Id...** el ID de un documento EDI ya cargado y pulse **Prueba**. Revise la vista previa mostrada: ¿se leen bien las etiquetas, los valores y las filas de la tabla? La imagen muestra el panel de prueba con un ID de ejemplo inventado; no se muestra un resultado renderizado.
 
-* **Crear un Borrador:** Haz clic en el icono de lápiz ✏️.
-* **Eliminar Borradores:** Usa el icono de papelera 🗑️ para eliminar borradores no utilizados.
-* **Activar Cambios:** Haz clic en la marca de verificación ✅ para publicar una versión.
-  * **Nota**: Activar una nueva versión **desactivará automáticamente** la anterior.
+<figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-panel-es-20261114.png" alt="Panel de prueba de la Sandbox de DocBits con el campo Document Id..., un ID de ejemplo inventado en la forma 000000-0000-4000-8000-000000000006 y el botón Prueba, sin resultado renderizado"><figcaption>Pruebe una versión de vista previa antes de activarla con el ID de un documento EDI ya cargado; el ID mostrado es un ejemplo inventado.</figcaption></figure>
 
-## 4. Editor HTML/XSLT/CSS
+Para la asignación de campos al XML, utilice la [Guía de Archivos de Rutas de Extracción EDI](edi-extraction-paths-file-guide.md). El paso de conversión del origen se describe en la [Guía de Archivo de Transformación EDI](edi-transformation-file-guide.md). Una demostración paso a paso ofrece la página [Videos EDI](edi-videos.md).
 
-El **Archivo de Vista Previa** se edita en un editor dedicado que admite HTML, XSLT y CSS.
-
-* **HTML** define la estructura del documento de salida (por ejemplo, tablas, divisiones, diseño).
-* **CSS** controla el estilo (por ejemplo, fuentes, espaciado, colores, alineación).
-*   Las declaraciones **XSLT** `**select**` se utilizan para poblar dinámicamente campos desde el XML personalizado, como:
-
-    Copy
-
-    ```
-    <xsl:value-of select="/PURCHASE_ORDER/PURCHASE_ORDER_NUMBER/text()" />
-    ```
-* También puedes usar **lógica XSLT** (`<xsl:if>`, `<xsl:for-each>`, etc.) para manejar la visualización condicional o iterar sobre elementos de línea.
-
-## 5. Función de Vista Previa (Renderizado de Salida)
-
-La Función de Vista Previa te permite probar y verificar cómo se renderiza un documento EDI con el Archivo de Vista Previa actual.
-
-#### **Uso:**
-
-* Sube un archivo EDI a través del proceso de carga estándar.
-* Copia el **ID del Documento** del archivo cargado.
-* Navega hasta la interfaz de **Vista Previa**.
-* Abre la **Función de Vista Previa**.\
-  \
-  &#x20;![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a\&width=300\&dpr=4\&quality=100\&sign=36ce2b93\&sv=2)
-* Ingresa el ID del Documento y haz clic en **Probar**.
-* La vista previa formateada en estilo PDF se mostrará utilizando la configuración HTML/CSS/XSLT.
-
-Esta función es crucial para depurar las vinculaciones de datos, refinar el diseño y garantizar que el documento sea preciso y visualmente claro para los usuarios y sistemas descendentes como **IDM**.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJH103tnbqZjuimpOniVg%252Fimage.png%3Falt%3Dmedia%26token%3D4e63cc09-b0de-488f-bdd0-ee5a9246a371\&width=768\&dpr=4\&quality=100\&sign=bfff5bba\&sv=2)
-
-## 6. Video Tutorial
-
-Una guía en video para este tipo de archivo está disponible en la [página de Videos.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Úsala para seguir la configuración, edición y vista previa.
-
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-es.png" alt="Formato EDI existente con sus cuatro atributos configurados."><figcaption><p>Formato EDI existente con sus cuatro atributos configurados.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-preview-es.png" alt="Atributo PREVIEW activo: código XSLT en el editor; esta vista no muestra la vista previa renderizada del documento."><figcaption><p>Atributo PREVIEW activo: código XSLT en el editor; esta vista no muestra la vista previa renderizada del documento.</p></figcaption></figure>
-
-
-Las vistas muestran una configuración y una versión existentes. Los ajustes varían según el tipo de documento y el formato. Valide los cambios en un borrador antes de activarlos.
-
-Algunas etiquetas, como Custom, Default, Version y Last Modified At, siguen apareciendo en inglés en la interfaz actual del producto. Los identificadores técnicos de atributos y el código de configuración se conservan sin cambios.
+Las vistas muestran una configuración y una versión existentes. Los ajustes varían según el tipo de documento y el formato. Compruebe los cambios en un borrador antes de activarlos.

@@ -1,157 +1,78 @@
 # Fuzzy Data-configuratie met Mastergegevens
 
-## **Overzicht**
+Gebruik een opzoeking in de stamgegevens om een leverancier te herkennen aan de waarden op een factuur. De opzoeking doorzoekt een geïmporteerde dataset en kan de leveranciersvelden van het document invullen. Configureer elk documenttype apart. Het voorbeeld hier gebruikt **INVOICE** in de voorbeeldorganisatie **Musterfirma GmbH**.
 
-Elk documenttype heeft zijn eigen standaardconfiguraties en moet apart worden ingesteld. Hoewel dit voorbeeld de configuratie voor **Facturen** uitlegt, is hetzelfde proces van toepassing op alle documenttypen.
+## De opzoekinstellingen openen
 
-## Om Fuzzy Data te configureren, navigeer naar:
+1. Open **Instellingen → Documentverwerking → Documenttypen**.
+2. Kies **INVOICE → Velden → Mastergegevensinstellingen**.
+3. Klap **Stamgegevens opzoeken** uit. In de voorbeeldorganisatie ziet u **Supplier Lookup**, **Order Header Lookup** en **Order Line Lookup**, plus de aparte kaart **LOV-stamgegevens**. Uw organisatie kan andere configuraties hebben; de namen zijn voorbeeldgegevens.
 
-Instellingen → Globale instellingen → Documenttypen → Factuur → Velden → Mastergegevensinstellingen → Mastergegevens opzoeken
+<figure><img src="../../../.gitbook/assets/fuzzy-data-lookup-overview-nl-20261113.png" alt="Mastergegevensinstellingen van het documenttype INVOICE in het Nederlands, met de groepen Supplier Lookup, Order Header Lookup en Order Line Lookup, de aparte kaart LOV-stamgegevens en de knop Opzoekconfiguratie maken; de namen zijn voorbeeldgegevens"><figcaption><p>Kies een opzoekconfiguratie om de velden ervan te bekijken, of kies Opzoekconfiguratie maken voor een nieuwe.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fhnn2NcPGzVkUO0mLQWTy%252Fimage.png%3Falt%3Dmedia%26token%3De2f87385-fc48-4149-9bef-ca917a7328bd\&width=768\&dpr=4\&quality=100\&sign=116ee1da\&sv=2)
+Het label **Actief** geeft aan dat een configuratie is ingeschakeld. Het menu met de drie puntjes toont de acties voor die configuratie; in het voorbeeld van een standaardgroep zijn dat **Deactiveren**, **Duplicaat** en **Weergave**. Standaardconfiguraties kunt u bekijken, maar niet bewerken of verwijderen; een eigen configuratie biedt meer acties. Deactiveer een opzoeking pas nadat u hebt gecontroleerd welke documentvelden ervan afhangen.
 
-## **Standaard opzoekingen**
+{% hint style="info" %}
+De relevante leveranciersstamgegevens moeten zijn geïmporteerd voordat een opzoeking ze kan vinden. Zie [Stamgegevens importeren](../../../infor-integration-and-configuration/importing-customer-master-data/README.md) en [Mastergegevensinstellingen](../../settings/global-settings/document-types/fields/master-data-settings.md) voor de bredere configuratie.
+{% endhint %}
 
-Er zijn **vier standaard opzoekgroepen** voor facturen:
+## Een opzoekconfiguratie maken
 
-1. **Bedrijfsgegevens**
-2. **Inkooporderkop**
-3. **Leverancier**
-4. **Belastingcode**
+Kies **Opzoekconfiguratie maken**. Voer een **Zoeknaam** in, kies een **Naam van opzoekdataset** en zet **Contexttype** op **HEADER** voor documentvelden of op **LINE** voor een tabel. Kies bij **LINE** ook de betreffende tabel als **Contextdetails**. Met de **Conflictbehandelaar** bepaalt u wat er gebeurt wanneer meerdere records overeenkomen. **Alles matchen** vereist dat elk gebruikt zoekveld op hetzelfde record past; staat het uit, dan kan één passend veld al genoeg zijn.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F4VxYFu8M62dXi6qGsPl3%252Fimage.png%3Falt%3Dmedia%26token%3Db2bc4690-805b-4b19-aa89-73f315889d88\&width=768\&dpr=4\&quality=100\&sign=835f513a\&sv=2)
+<figure><img src="../../../.gitbook/assets/fuzzy-data-create-lookup-nl-20261113.png" alt="Venster Mastergegevensconfiguratie maken in het Nederlands met documenttype INVOICE, de voorbeeldnaam supplier_by_tax_id, conflictbehandelaar Best Score, contexttype HEADER en de schakelaar Alles matchen uit"><figcaption><p>Het venster is alleen voor de documentatie geopend: de naam supplier_by_tax_id is een verzonnen voorbeeld en er is geen configuratie aangemaakt.</p></figcaption></figure>
 
-Elke groep bevat specifieke velden. Klik op een groep om deze te **uitklappen** en de velden te bekijken. Standaard opzoekgroepen zijn gelabeld met een **"Standaard" tag**.
+De keuzes voor conflicten zijn **Best Score**, **Return None** en **Return First**. Gebruik **Return None** wanneer een persoon moet beslissen tussen twijfelachtige leveranciers; lees de uitgewerkte voorbeelden hieronder voordat u **Best Score** of **Alles matchen** kiest.
 
-## **Status van opzoekconfiguratie**
+## Velden kiezen voor leveranciersherkenning
 
-* **Actieve configuraties** zijn gemarkeerd met een **"Geactiveerd" tag**.
-* **Gedeactiveerde configuraties** zijn gemarkeerd met een **"Gedeactiveerd" tag**.
+Klap **Supplier Lookup** uit om de toewijzingen te zien. De tabel toont het **Opzoekveld** van de dataset, het bijbehorende **Validatieveld** op het document, het eventuele **Bovenliggend Veld** en of **Zoekbaar** of **Automatische Trigger** is ingeschakeld. In het voorbeeld heeft **Supplier Name** beide vinkjes, **Vat Number** is alleen zoekbaar en **City** heeft geen van beide; in een andere organisatie kunnen de vinkjes anders staan. De rijnamen zijn voorbeeldgegevens.
 
-## **Vereiste: Importeren van Mastergegevens**
+<figure><img src="../../../.gitbook/assets/fuzzy-data-supplier-fields-nl-20261113.png" alt="Uitgeklapte groep Supplier Lookup in het Nederlands met de kolommen Opzoekveld, Validatieveld, Bovenliggend Veld, Zoekbaar en Automatische Trigger en drie voorbeeldrijen met voorbeeldgegevens"><figcaption><p>Controleer welke velden kunnen meedoen aan de leveranciersherkenning voordat u de matchregel wijzigt.</p></figcaption></figure>
 
-Om Fuzzy Data correct te laten functioneren, moeten de relevante **mastergegevens** worden geïmporteerd. Zonder dit heeft het systeem geen referentiegegevens om te gebruiken. Hier is hoe u mastergegevens importeert:
+Om een toewijzing toe te voegen, kiest u **Creëren** in de uitgeklapte groep en daarna **Opzoekveld**, **Validatieveld**, het eventuele **Bovenliggend veld** en de **Zoekoperator**. De operator bepaalt hoe tekst wordt vergeleken: gebruik **Exact** voor een strikte identificatie en overweeg **Smart** of **Bevat** alleen wanneer een deel van de tekst mag passen. **Automatische trigger** start een opzoeking nadat dat documentveld een waarde heeft gekregen. **Zoekbaar** neemt het veld op in de opzoeking en maakt handmatig zoeken tijdens de validatie mogelijk. Kies **Creëren** pas nadat u de toewijzing hebt gecontroleerd.
 
-{% content-ref url="../../../infor-integration-and-configuration/importing-customer-master-data/" %}
-[importing-customer-master-data](../../../infor-integration-and-configuration/importing-customer-master-data/)
-{% endcontent-ref %}
+<figure><img src="../../../.gitbook/assets/fuzzy-data-create-field-nl-20261113.png" alt="Venster Mastergegevensvelden maken in het Nederlands met de voorbeeldselecties Supplier Name en Invoice date, lege velden voor Bovenliggend veld en Zoekoperator en de uitgevinkte vakjes Automatische trigger en Zoekbaar"><figcaption><p>Het formulier toont voorbeeldselecties (Supplier Name en Invoice date) en is alleen bekeken: er is geen veld opgeslagen.</p></figcaption></figure>
 
-## **Beheer van opzoekgroepen**
+De uitgewerkte voorbeelden hieronder leggen uit hoe deze vinkjes, Alles matchen en de conflictbehandelaar samenwerken. Voor deze controle van de documentatie is geen echt resultaat van leveranciersherkenning gemaakt.
 
-Elke opzoekgroep is **standaard geactiveerd** maar kan worden aangepast door op de drie puntjes te klikken:
+### **Hoe DocBits één leverancier kiest**
 
-* **Deactiveren** → Deactiveert een groep. _(Alleen beschikbaar voor geactiveerde groepen)_
-* **Activeren** → Activeert een groep. _(Alleen beschikbaar voor gedeactiveerde groepen)_
-* **Dupliceren** → Maakt een kopie die kan worden aangepast zonder de originele te beïnvloeden.
-* **Weergeven** → Toont informatie zoals het **documenttype** waartoe het behoort en de **opzoektabel** die het gebruikt. _(Alleen beschikbaar voor standaardgroepen)_
-* **Bewerken** → Beschikbaar voor **niet-standaard** groepen. Hiermee kunnen groepsdetails worden aangepast.
-* **Verwijderen** → Verwijdert de groep volledig. _(Alleen voor niet-standaard groepen)_
+Wanneer een document binnenkomt, zoekt DocBits de leverancier in uw stamgegevens. Drie instellingen bepalen het resultaat. Dit hoofdstuk legt ze stap voor stap uit, met voorbeelden.
 
-## **Een nieuwe opzoekconfiguratie maken**
+#### **Stap 1 — Welke velden voor de opzoeking worden gebruikt**
 
-Er zijn **twee manieren** om een opzoekconfiguratie te maken:
+DocBits gebruikt een veld alleen voor de opzoeking als beide punten kloppen:
 
-1.  **Dupliceer een bestaande opzoek**
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZUlPcWGrx1oITQS3tgZP%252Fimage.png%3Falt%3Dmedia%26token%3D59fb300d-836e-40d0-84b7-4a405cf7f321\&width=768\&dpr=4\&quality=100\&sign=3442db8f\&sv=2)
-
-    * Dit kopieert alle informatie en velden van een bestaande groep.
-    * U hoeft alleen een **nieuwe naam** op te geven.
-2.  **Maak een opzoek vanaf nul**
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNbEpo2p5Q8D1d7DUchBF%252Fimage.png%3Falt%3Dmedia%26token%3D401314b5-44d0-47df-b3e6-69fea83cce82\&width=768\&dpr=4\&quality=100\&sign=1d0ce322\&sv=2)
-
-    * Klik op **"Opzoekconfiguratie maken"**.
-    * Vul de vereiste details in:
-      * **Configuratienaam**
-      * **Opzoektafel** (Te gebruiken mastergegevenstabel)
-      * **Conflictbehandelaar** (Kies een: Beste score, Geen retour, Eerste retour)
-      * **Contexttype** (Kop of regel) context nodig
-      * **Alles matchen** (Checkbox-optie) context nodig
-
-## **Beheer van velden binnen een opzoekgroep**
-
-Elke groep bevat velden die kunnen worden **toegevoegd, verwijderd, bewerkt of bekeken**, afhankelijk van of het standaardvelden of aangepaste velden zijn.
-
-### **Standaardvelden**
-
-*   Gemarkeerd met een **"Standaard" tag**.
-
-    <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fh37McVpB0tBo5wqiAttR%252Fimage.png%3Falt%3Dmedia%26token%3Dcabce083-83a5-4881-a64f-88a8757df49b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b3739019&#x26;sv=2" alt="" width="375"></div>
-* **Alleen te bekijken**, niet te bewerken of verwijderen.
-
-### **Niet-standaardvelden**
-
-* **Kunnen worden bewerkt of verwijderd** door op de drie puntjes te klikken en **Bewerken** of **Verwijderen** te selecteren.
-
-### **Een nieuw veld toevoegen**
-
-**Opmerking:** U kunt velden maken binnen standaard Opzoekconfiguraties.
-
-Om een nieuw veld toe te voegen binnen een groep:
-
-1.  Klik op **"Maken"** binnen de relevante groep.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FvmIXTEQQHKKNbvTJj1b4%252Fimage.png%3Falt%3Dmedia%26token%3D8569867b-9f5b-4865-90bd-f2e41e846979\&width=768\&dpr=4\&quality=100\&sign=603cb7df\&sv=2)
-2. Geef de volgende details op:
-   * **Opzoekveld** → Kolomnaam uit de opzoektabel van de mastergegevens.
-   * **Validatieveld** → Overeenkomstig DocBits-veld.
-   * **Ouder veld** → _(Meer details nodig)_
-   * **Zoekoperator** → Kies een:
-     * Slim
-     * Bevat
-     * Exact
-     * Begint met
-     * Eindigt op
-   * **Selectievakjes:**
-     * **Automatisch activeren** → Wanneer ingeschakeld, als een ander veld in een andere opzoekconfiguratie dezelfde kolom deelt, wordt dit veld **automatisch** bijgewerkt telkens wanneer het andere veld wordt bijgewerkt
-     * **Doorzoekbaar** → Activeert het veld als een **Fuzzy Data**-veld, waardoor zoekopdrachten mogelijk zijn in de mastergegevensopzoek (blauw pictogram in validatiescherm).
-
-## **Laatste stap: Velden toevoegen aan het ontwerp**
-
-Na het configureren van Fuzzy Data-velden, **zorg ervoor dat u ze toevoegt aan het ontwerp met de Layout Builder**. Als velden niet aan het ontwerp worden toegevoegd, zijn ze niet beschikbaar voor gebruik.
-
-{% content-ref url="../../settings/global-settings/document-types/layout-manager/" %}
-[layout-manager](../../settings/global-settings/document-types/layout-manager/)
-{% endcontent-ref %}
-
-## **Hoe DocBits één leverancier kiest**
-
-Wanneer een document binnenkomt, zoekt DocBits de leverancier in uw mastergegevens. Drie instellingen bepalen het resultaat. Dit hoofdstuk legt ze stap voor stap uit, met voorbeelden.
-
-### **Stap 1 — Welke velden voor de zoekopdracht worden gebruikt**
-
-DocBits gebruikt een veld alleen voor de zoekopdracht als beide punten kloppen:
-
-* het veld is aangevinkt als **Doorzoekbaar (Searchable)** of **Auto Trigger** in de opzoekconfiguratie, en
+* het veld is in de opzoekconfiguratie aangevinkt als **Zoekbaar** of **Automatische Trigger**, en
 * het veld heeft een waarde op het document.
 
 Hoe de waarde in het veld is gekomen, maakt niet uit. Een getraind veld, een door AI gevuld veld en een door een gebruiker getypte waarde worden hetzelfde behandeld.
 
 {% hint style="warning" %}
-**Doorzoekbaar doet twee dingen.** Het toont het blauwe zoekicoon in het validatiescherm **en** het voegt het veld toe aan de automatische leverancierszoekopdracht. Een veld dat alleen handmatig doorzocht moet worden, blijft uitgevinkt.
+**Zoekbaar doet twee dingen.** Het toont het blauwe zoekpictogram in het validatiescherm **en** het voegt het veld toe aan de automatische leveranciersopzoeking. Een veld waarmee u alleen handmatig wilt zoeken, laat u uitgevinkt.
 {% endhint %}
 
-### **Stap 2 — Eén zoekopdracht, niet één per veld**
+#### **Stap 2 — Eén opzoeking, niet één per veld**
 
-DocBits zoekt **niet** per veld apart. Het bouwt **één** zoekopdracht over alle gebruikte velden. **Alles matchen (Match All)** bepaalt hoe ze worden gecombineerd:
+DocBits zoekt **niet** per veld apart. Het bouwt **één** opzoeking over alle gebruikte velden. **Alles matchen** bepaalt hoe ze worden gecombineerd:
 
-* **Alles matchen uit** (standaard) → "vind elke leverancier die overeenkomt met het btw-nummer **OF** met de leveranciersnaam". Dit geeft een **langere** lijst.
-* **Alles matchen aan** → "vind elke leverancier die overeenkomt met het btw-nummer **EN** met de leveranciersnaam". Dit geeft een **kortere** lijst.
+* **Alles matchen uit** (standaard) → "zoek elke leverancier die past bij het btw-nummer **of** bij de leveranciersnaam". Dat geeft een **langere** lijst.
+* **Alles matchen aan** → "zoek elke leverancier die past bij het btw-nummer **en** bij de leveranciersnaam". Dat geeft een **kortere** lijst.
 
-Houd er ook rekening mee dat de zoekoperatoren **Smart** en **Contains** naar een deel van de tekst zoeken. De naam "Meier" vindt ook "Meier Bau GmbH" en "Meier & Sons Ltd". Een leveranciersnaam vindt daarom vaak meerdere leveranciers.
+Houd er rekening mee dat de operatoren **Smart** en **Bevat** naar een deel van de tekst zoeken. De naam "Meier" vindt ook "Meier Bau GmbH" en "Meier & Sons Ltd". Een leveranciersnaam levert daarom vaak meerdere leveranciers op.
 
-### **Stap 3 — Wat gebeurt er als de lijst meerdere leveranciers bevat**
+#### **Stap 3 — Wat er gebeurt wanneer de lijst meer dan één leverancier bevat**
 
-De **Conflictafhandeling (Conflict Handler)** beslist:
+De **Conflictbehandelaar** beslist:
 
-* **Best Score** → neemt de leverancier die met de meeste velden overeenkomt. Laat de leverancier nooit leeg.
+* **Best Score** → neemt de leverancier die op de meeste velden past. Laat de leverancier nooit leeg.
 * **Return None** → laat de leverancier leeg, zodat een gebruiker hem kiest.
-* **Return First** → neemt de eerste leverancier uit de lijst.
+* **Return First** → neemt de eerste leverancier van de lijst.
 
-### **Voorbeelden**
+#### **Voorbeelden**
 
-In alle voorbeelden heeft het document een btw-nummer en een leveranciersnaam, en beide velden zijn **Doorzoekbaar**.
+In alle voorbeelden heeft het document een btw-nummer en een leveranciersnaam, en beide velden zijn **Zoekbaar**.
 
 <table><thead><tr><th width="150">Btw-nummer vindt</th><th width="150">Naam vindt</th><th width="150">Alles matchen uit + Return None</th><th width="150">Alles matchen aan + Return None</th><th width="150">Alles matchen uit + Best Score</th></tr></thead><tbody>
 <tr><td>alleen A</td><td>A en B</td><td>leeg</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
@@ -161,23 +82,29 @@ In alle voorbeelden heeft het document een btw-nummer en een leveranciersnaam, e
 <tr><td>alleen A</td><td>niets</td><td><strong>A</strong></td><td>leeg</td><td><strong>A</strong></td></tr>
 </tbody></table>
 
-Hoe u de tabel leest:
+Zo leest u de tabel:
 
-* **Rij 1 tot 3** is het normale geval. Eén veld is uniek, het andere niet. Met **Alles matchen uit** bevat de lijst meerdere leveranciers en laat **Return None** het veld leeg. **Alles matchen aan** houdt alleen de leverancier over die met beide velden overeenkomt en vindt hem.
-* **Rij 4** heeft helemaal geen unieke leverancier. Het veld leeg laten is juist. **Best Score** kiest er toch een, en dat kan de verkeerde zijn.
+* **Rij 1 tot en met 3** is het normale geval. Het ene veld is uniek, het andere niet. Met **Alles matchen uit** bevat de lijst meerdere leveranciers en laat **Return None** het veld leeg. **Alles matchen aan** houdt alleen de leverancier over die op beide velden past en vindt die.
+* **Rij 4** heeft helemaal geen unieke leverancier. Het veld leeg laten is dan juist. **Best Score** kiest er toch één, en dat kan de verkeerde zijn.
 * **Rij 5** is het risico van **Alles matchen aan**. Zie de waarschuwing hieronder.
 
 {% hint style="warning" %}
-**Alles matchen kan een leverancier verliezen.** Met **Alles matchen aan** moet elk gebruikt veld overeenkomen. Als één veld een waarde bevat die niet in uw mastergegevens bestaat — een typefout, een oude bedrijfsnaam, een van de pagina gelezen waarde — levert de hele zoekopdracht niets op en wordt geen leverancier gevonden, terwijl het btw-nummer alleen de juiste had gevonden.
+**Alles matchen kan een leverancier verliezen.** Met **Alles matchen aan** moet elk gebruikt veld passen. Bevat één veld een waarde die niet in uw stamgegevens voorkomt — een typefout, een oude bedrijfsnaam, een waarde die van de pagina is gelezen — dan levert de hele opzoeking niets op en wordt er geen leverancier gevonden, ook al had het btw-nummer alleen de juiste leverancier opgeleverd.
 {% endhint %}
 
-### **Een leverancier werd eerder herkend en nu niet meer**
+#### **Een leverancier werd eerder herkend en nu niet meer**
 
-Bijna altijd levert één veld extra nu een waarde. Controleer in deze volgorde:
+Bijna altijd levert nu een extra veld een waarde. Controleer in deze volgorde:
 
-1. Open het document. Welk veld van de opzoekgroep bevat nu een waarde die eerder leeg was?
-2. Open de opzoekconfiguratie. Is dat veld aangevinkt als **Doorzoekbaar** of **Auto Trigger**? Zo ja, dan doet het nu mee aan de zoekopdracht en maakt het de resultatenlijst langer.
-3. Kies een van de drie oplossingen:
-   * **Het veld mag niet meedoen aan de zoekopdracht** → vink **Doorzoekbaar** en **Auto Trigger** uit voor dat veld. Het veld behoudt zijn waarde op het document en blijft zichtbaar voor de gebruiker. Dit is de kleinste wijziging.
+1. Open het document. Welk veld van de opzoekgroep heeft nu een waarde die eerst leeg was?
+2. Open de opzoekconfiguratie. Is dat veld aangevinkt als **Zoekbaar** of **Automatische Trigger**? Zo ja, dan doet het nu mee aan de opzoeking en wordt de resultatenlijst langer.
+3. Kies een van de drie uitwegen:
+   * **Het veld mag niet meedoen aan de opzoeking** → vink **Zoekbaar** en **Automatische Trigger** voor dat veld uit. Het veld houdt zijn waarde op het document en blijft zichtbaar voor de gebruiker. Dit is de kleinste wijziging.
    * **Het veld moet meedoen** → zet **Alles matchen** aan, maar lees eerst de waarschuwing hierboven.
-   * **U wilt in elk geval een leverancier** → zet de **Conflictafhandeling** op **Best Score**. Accepteer dat er dan een verkeerde leverancier gekozen kan worden in plaats van een leeg veld.
+   * **U wilt in elk geval een leverancier** → zet de **Conflictbehandelaar** op **Best Score**. Accepteer dat er dan een verkeerde leverancier kan worden gekozen in plaats van een leeg veld.
+
+### **Laatste stap: velden aan de lay-out toevoegen**
+
+Nadat u Fuzzy Data-velden hebt geconfigureerd, **moet u ze met de Lay-outbouwer aan de lay-out toevoegen**. Worden velden niet aan de lay-out toegevoegd, dan zijn ze niet beschikbaar.
+
+[Lay-outeditor](layout-builder.md)

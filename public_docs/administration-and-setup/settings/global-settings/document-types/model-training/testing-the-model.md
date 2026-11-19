@@ -6,17 +6,24 @@
 
 I dati di addestramento e i documenti di test hanno scopi diversi. Per i documenti di test indipendenti, definire i tipi di documenti e i valori dei campi previsti, quindi confrontarli con le previsioni. Registrare la versione del modello, il campione, le discrepanze e i guasti tecnici. Apporta miglioramenti mirati e ripeti il test con lo stesso protocollo di valutazione. I valori mostrati sono un esempio, non una misurazione di precisione.
 
-
 Il test deve misurare i risultati su documenti rappresentativi non usati per l’addestramento. Prepara le risposte attese per ciascuno: tipo di documento e, per valutare l’estrazione, valori dei campi.
 
 ## Eseguire il test
 
 1. Apri l’addestramento del tipo di documento da valutare.
-2. Scegli il test di classificazione, se disponibile nella tua versione.
+2. Scegli **Classificazione del test**, se la tua versione offre questa funzione.
 3. Seleziona il campione e avvia la valutazione con le opzioni offerte.
 4. Attendi il completamento e registra risultati ed errori. Un errore tecnico o un test incompleto non equivale a una classificazione corretta.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-it.png" alt="Comandi di importazione, addestramento e test del modello. Non è stato eseguito alcun addestramento o test: questa vista non mostra un risultato di accuratezza. La colonna Name resta in inglese nella versione illustrata."><figcaption><p>Comandi di importazione, addestramento e test del modello. Non è stato eseguito alcun addestramento o test: questa vista non mostra un risultato di accuratezza. La colonna Name resta in inglese nella versione illustrata.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/testing-the-model-overview-it-20261113.png" alt="Vista di Addestra Il Modello con dati di esempio: in alto le cifre Campione 5, Esportato 1284, Azienda ∑ 1296 e Complessivamente ∑ 48210 e i pulsanti Importazione, Addestra il modello e Classificazione del test, sotto l’elenco dei documenti di addestramento nelle colonne Nome e Azioni. Non è stato avviato alcun addestramento né alcun test, quindi non compare alcun valore di accuratezza."><figcaption><p>Vista di Addestra Il Modello con dati di esempio: le cifre Campione, Esportato, Azienda ∑ e Complessivamente ∑, i pulsanti Importazione, Addestra il modello e Classificazione del test e l’elenco dei documenti di addestramento. Non è stato avviato alcun addestramento né alcun test.</p></figcaption></figure>
+
+Le voci seguenti spiegano cosa fa ciascun comando e dove trovare la procedura completa:
+
+* **Importazione**: apre la selezione di nuovi dati di addestramento; la procedura è in [Importazione dei dati: addestramento del modello](import-data-model-training.md).
+* **Addestra il modello**: avvia l’addestramento per il tipo di documento; l’uso è in [Scopo e utilizzo: addestramento del modello](purpose-and-use-model-training.md).
+* **Classificazione del test**: avvia la verifica descritta qui sopra nella sezione «Eseguire il test»; i risultati si leggono nella sezione «Interpretare i risultati».
+* **Campione**, **Esportato**, **Azienda ∑** e **Complessivamente ∑**: le cifre dei documenti di addestramento, spiegate in [Addestramento del modello](README.md).
+* **Azioni**: il menu della riga rimuove un documento di addestramento; la procedura è in [Gestione dei dati di addestramento](manage-training-data.md).
 
 ## Interpretare i risultati
 
@@ -27,5 +34,3 @@ Le regole di classificazione e di estrazione sono impostazioni distinte dall’a
 ## Correggere e ripetere
 
 Correggi i dati di addestramento, le relative etichette o le impostazioni effettivamente disponibili nella tua installazione, poi addestra nuovamente il modello se necessario. Ripeti il test con lo stesso protocollo e mantieni un campione indipendente. Documenta versione, dati, risultati e regressioni. Un buon risultato sul campione non garantisce le stesse prestazioni su tutti i documenti futuri.
-
-Non è stato eseguito alcun test di prestazioni per le immagini di questa pagina.

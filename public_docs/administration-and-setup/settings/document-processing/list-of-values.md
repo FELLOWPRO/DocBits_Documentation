@@ -8,46 +8,70 @@ Bronnen voor stamgegevens, waardelijsten en mastergegevensinstellingen in DocBit
 
 De video toont de bronnen voor stamgegevens, de waardelijsten en de mastergegevensinstellingen van een documenttype.
 
-Waardenlijsten bevatten vooraf ingestelde opties voor documentvelden. Een veld kan een lijst gebruiken om opties tijdens validatie te tonen. Labels kunnen worden vertaald; de technische waarde blijft in alle talen gelijk.
+## Overzicht
 
-## Lijsten openen
+Een waardenlijst levert vooraf gedefinieerde keuzes voor een veld, bijvoorbeeld factuurtypen of valuta. Elke waarde heeft een opgeslagen **Waarde** en kan **Synoniemen** en vertaalde labels hebben. Gebruik lijsten bij het instellen van keuzelijsten in [Velden](../global-settings/document-types/fields/) en bij veldvalidatie.
 
-Open in de instellingen de stamgegevens en selecteer de waardenlijsten. Met het veld **Zoeklijsten** links vindt u een lijst. Selecteer de naam om de waarden rechts te openen. Een map met een ster geeft een systeemlijst aan; het getal naast de naam is het aantal geladen waarden.
+Lijsten en waarden kunnen aan een suborganisatie worden gekoppeld. Vertalingen bepalen het label dat voor een taal wordt getoond; de onderliggende waarde blijft gelijk. Is er geen label voor de taal van de gebruiker, dan wordt de onderliggende waarde getoond.
 
-<figure><img src="../../../.gitbook/assets/s150-list_of_values_1-nl.png" alt="Waardenlijsten met afgeschermde geconfigureerde namen."><figcaption><p>Waardenlijsten met afgeschermde geconfigureerde namen.</p></figcaption></figure>
+## Hoe opent u het?
 
-<figure><img src="../../../.gitbook/assets/dbdc-36-selected-system-list-nl-20261031.png" alt="De geselecteerde systeemlijst opent de tabel met waarden. A-Z en Z-A sorteren de waarden; Rij toevoegen opent het formulier. Waarden en eigen namen zijn afgeschermd; systeemlijstnamen zoals ISO Currency zijn bestaande gegevens."><figcaption><p>De geselecteerde systeemlijst opent de tabel met waarden. A-Z en Z-A sorteren de waarden; Rij toevoegen opent het formulier. Waarden en eigen namen zijn afgeschermd; systeemlijstnamen zoals ISO Currency zijn bestaande gegevens.</p></figcaption></figure>
+Open **Instellingen**. Vouw onder **DOCUMENTVERWERKING** **Stamgegevens opzoeken** uit en selecteer **Lijst met waarden**.
 
-## Een lijst maken
+Gebruik **Zoeklijsten** in het linkerpaneel om een lijst te vinden en selecteer vervolgens de naam. De waarden verschijnen rechts. Een getal naast de lijstnaam toont het aantal geladen waarden. Het pictogram met de map en de ster markeert een door het systeem gedefinieerde lijst.
 
-1. Selecteer **Nieuw** boven de lijstnamen.
-2. Voer de **Naam** in en selecteer zo nodig **Suborganisaties** om het bereik van de lijst te beperken.
-3. **Opslaan** maakt de lijst. Het **X** sluit het venster zonder een lijst te maken.
+<figure><img src="../../../.gitbook/assets/list-of-values-initial-nl-20261112.png" alt="Beginweergave van Waardenlijsten met Zoeklijsten en Nieuw, voordat een lijst is geselecteerd; lijstnamen en aantallen zijn verzonnen voorbeeldgegevens"><figcaption><p>Selecteer links een lijst om de waarden rechts te openen. Lijstnamen en aantallen in deze weergave zijn verzonnen voorbeeldgegevens.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-36-new-list-nl-20261031.png" alt="Nieuw opent het lege venster Nieuwe lijst maken met Naam, Suborganisaties, X en Opslaan. Deze weergave toont geen opgeslagen lijst."><figcaption><p>Nieuw opent het lege venster Nieuwe lijst maken met Naam, Suborganisaties, X en Opslaan. Deze weergave toont geen opgeslagen lijst.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/list-of-values-selected-nl-20261112.png" alt="Payment Terms geselecteerd in het linkerpaneel, met Nieuw, Sorteren op: Waarde met A-Z en Z-A, Rij toevoegen en de kolommen Waarde, Suborganisatie, Synoniemen, Taal, Label en Acties; waarden, labels en aantallen zijn verzonnen voorbeeldgegevens"><figcaption><p>Een lijst selecteren opent de tabel met waarden. A-Z en Z-A sorteren de waarden; Rij toevoegen opent het formulier voor een nieuwe waarde. Waarden, labels en aantallen zijn verzonnen voorbeeldgegevens.</p></figcaption></figure>
 
-Gebruik voor een lijst van uw organisatie de verwijderoptie in het menu met drie punten naast de naam en bevestig alleen de bedoelde lijst. Systeemlijsten hebben dit verwijdermenu niet en kunnen niet worden verwijderd.
+## Een lijst toevoegen of verwijderen
 
-## Waarden toevoegen en wijzigen
+### Een nieuwe waardenlijst maken
 
-1. Selecteer links de lijst en vervolgens **Rij toevoegen** boven de tabel.
-2. Voer de opgeslagen **Waarde** en zo nodig de **Suborganisatie** in.
-3. Voeg de gewenste **Synoniemen** toe. Bevestig elk synoniem met **Enter** om het aan het veld toe te voegen.
-4. Selecteer onder **Vertalingen** een **Taal** en voer een niet-leeg **Label** in. Een nieuwe waarde vereist ten minste één volledige vertaling.
-5. **Opslaan** maakt de waarde. **Annuleren** of het **X** sluit het formulier zonder op te slaan.
+1. Selecteer **Nieuw** boven de lijstnamen in het linkerpaneel.
+2. Voer een **Naam** in.
+3. Selecteer indien nodig **Suborganisaties** om het bereik van de lijst te beperken.
+4. Selecteer **Opslaan** om de lijst te maken. Met **X** sluit u het venster zonder een lijst te maken.
 
-<figure><img src="../../../.gitbook/assets/dbdc-36-add-row-nl-20261031.png" alt="Rij toevoegen opent Waarden creëren onder de tabel: Waarde, Suborganisatie, Synoniemen, Taal, Label en Vertaling toevoegen. Opslaan maakt de waarde; Annuleren verwerpt het niet-opgeslagen concept."><figcaption><p>Rij toevoegen opent Waarden creëren onder de tabel: Waarde, Suborganisatie, Synoniemen, Taal, Label en Vertaling toevoegen. Opslaan maakt de waarde; Annuleren verwerpt het niet-opgeslagen concept.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/list-of-values-create-nl-20261112.png" alt="Venster Nieuwe lijst maken met in Naam de verzonnen voorbeeldnaam approval_levels, een leeg veld Suborganisaties, de X om te sluiten en Opslaan"><figcaption><p>Nieuw opent dit venster. Naam identificeert de lijst; Suborganisaties beperkt het bereik. Opslaan maakt de lijst. De naam approval_levels is een verzonnen voorbeeldgegeven.</p></figcaption></figure>
 
-Selecteer een rij of de bewerkoptie onder **Acties** om een waarde te wijzigen. Beveiligde velden blijven alleen-lezen; ook de opgeslagen waarde kan vergrendeld zijn als er al vertalingen bestaan. **Annuleren** verwerpt niet-opgeslagen wijzigingen.
+### Een lijst verwijderen
 
-De dupliceeroptie in het rijmenu maakt een andere waarde. Voor meerdere waarden selecteert u de selectievakjes en gebruikt u de kopieerknop boven de tabel. Verwijderen is beschikbaar voor waarden van uw organisatie en verwijdert de geselecteerde waarde; systeemwaarden hebben deze actie niet. Een systeemlijst kan zowel beveiligde waarden als waarden van uw organisatie bevatten.
+Voor een lijst die door uw organisatie is gemaakt, opent u het menu met drie punten naast de naam en selecteert u **Verwijderen**. Een bevestigingsvenster vraagt of de lijst moet worden verwijderd. Bevestig alleen de bedoelde lijst. Door het systeem gedefinieerde lijsten hebben geen verwijdermenu.
 
-## Importeren uit CSV
+## Waarden van een bestaande lijst toevoegen, wijzigen of verwijderen
 
-Deze interface biedt de vroegere CSV-import via het menu **Acties** niet aan. De oude stappen voor het uploaden van een CSV-bestand gelden niet voor dit scherm; gebruik **Rij toevoegen** om hier waarden in te voeren.
+### Waarden handmatig toevoegen
 
-## Vertalingen toevoegen
+1. Selecteer de lijst in het linkerpaneel.
+2. Selecteer **Rij toevoegen** boven de tabel. Het formulier **Waarden creëren** opent onder de tabel.
+3. Voer de opgeslagen **Waarde** in en, indien nodig, de bijbehorende **Suborganisatie**.
+4. Voeg indien gewenst **Synoniemen** toe. Druk na elk synoniem op **Enter**, zodat het als label aan het veld wordt toegevoegd.
+5. Selecteer onder **Vertalingen** een **Taal** en voer een niet-leeg **Label** in. Een nieuwe waarde heeft ten minste één volledige vertaling nodig.
+6. Selecteer **Opslaan** om de waarde op te slaan, of **Annuleren** om het formulier te sluiten zonder op te slaan.
 
-Selecteer in het formulier van de waarde de **Taal** en voer het **Label** in. Gebruik **Vertaling toevoegen** voor een andere taal en het bijbehorende label. Vul extra lege vertaalregels in of verwijder ze voordat u opslaat. Als een vertaalregel kan worden verwijderd, haalt de prullenbak deze eerst uit het formulier; sla op om de wijziging toe te passen.
+<figure><img src="../../../.gitbook/assets/list-of-values-add-row-nl-20261112.png" alt="Formulier Waarden creëren onder de tabel met in Waarde de verzonnen voorbeeldwaarde NET60, een leeg veld Suborganisatie, Synoniemen met de hint Druk op Enter om toe te voegen, Vertalingen met taal Engels en het verzonnen voorbeeldlabel 60 days net, Vertaling toevoegen, Annuleren en Opslaan"><figcaption><p>Rij toevoegen opent het formulier voor de waarde onder de tabel. Voer de waarde en ten minste één taallabel in voordat u opslaat; Annuleren sluit het formulier zonder de waarde op te slaan. De waarde NET60 en het label 60 days net zijn verzonnen voorbeeldgegevens.</p></figcaption></figure>
 
-De weergegeven tekst kan per taal verschillen, maar de technische waarde blijft gelijk. Zonder label voor de actieve taal verschijnt de technische waarde. Systeemwaarden en overgenomen vertalingen kunnen beveiligde velden hebben; wijzig alleen gegevens van uw organisatie waarvan de velden bewerkbaar zijn.
+### Waarden uit een CSV-bestand importeren
+
+Deze weergave bevat de vroegere opdracht voor het uploaden van een CSV-bestand in het menu **Acties** niet. De oudere stappen voor het uploaden van een CSV-bestand gelden niet voor dit scherm. Gebruik **Rij toevoegen** om hier waarden in te voeren.
+
+### Bestaande waarden wijzigen
+
+Selecteer een rij om het bewerkingsformulier onder de tabel te openen, of gebruik **Bewerking** in het menu **Acties** van de rij. Wijzig de bewerkbare velden en sla het formulier op. **Annuleren** verwerpt de niet-opgeslagen wijziging. Beveiligde velden blijven alleen-lezen; de opgeslagen Waarde kan ook vergrendeld zijn zodra er vertalingen bestaan.
+
+Het rijmenu biedt ook **Duplicaat**. Om meerdere waarden te dupliceren, selecteert u de selectievakjes en gebruikt u de kopieerknop boven de tabel. Dupliceren maakt extra waarden aan.
+
+### Waarden verwijderen
+
+Voor een waarde die door uw organisatie is gemaakt, bevat het menu **Acties** van de rij **Verwijderen**. Deze actie verwijdert de waarde, dus kies deze alleen voor een waarde die u echt wilt verwijderen. Door het systeem gedefinieerde waarden bieden deze actie niet.
+
+## Vertalingen aan uw waarden toevoegen
+
+Kies in het formulier van de waarde de **Taal** en voer het bijbehorende **Label** in. Selecteer **Vertaling toevoegen** voor een andere taal en het bijbehorende label. Vul of verwijder extra lege vertaalregels voordat u opslaat. Als er een verwijderbare vertaalregel aanwezig is, verwijdert de prullenbak die vertaling uit het formulier; sla het formulier op om de wijziging te bewaren.
+
+## Door het systeem gedefinieerde lijsten en rijen
+
+Systeemlijsten zijn gemarkeerd met een pictogram met een map en een ster en kunnen niet worden verwijderd. Ze kunnen extra waarden bevatten die door uw organisatie zijn gemaakt.
+
+Door het systeem gedefinieerde waarden en overgenomen vertalingen hebben beveiligde velden. Gebruik de bewerkbare bedieningselementen voor de waarden en vertalingen van uw eigen organisatie. Het ontbreken van de actie Verwijderen duidt op een beveiligde waarde; een systeemlijst kan zowel beveiligde als door de organisatie gemaakte waarden bevatten.

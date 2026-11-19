@@ -1,75 +1,27 @@
 # Dostosowywanie filtrów
 
-Jeśli szukasz jednego lub więcej konkretnych dokumentów, masz do dyspozycji następujące opcje. W obrębie paska wyszukiwania udostępniliśmy różne narzędzia, które pomogą Ci znaleźć poszukiwany dokument. Aby uzyskać do nich dostęp, wybierz następujący ikonę.
+Filtry pulpitu nawigacyjnego zawężają listę dokumentów do bieżącego wyszukiwania. Ustawienie **Styl filtra statusu** jest osobne: decyduje o tym, jakie statusy oferuje w ogóle filtr statusu na pulpicie nawigacyjnym.
 
-![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_1.png)
+## Filtrowanie listy dokumentów
 
-Korzystanie z filtrów pozwala użytkownikom szybko znaleźć istotne informacje i ograniczyć ilość danych do niezbędnych.
+Otwórz pulpit nawigacyjny i skorzystaj z pola wyszukiwania lub elementów sterujących filtrem. Menu inteligentnych filtrów oferuje skróty, takie jak **Zaległy**, **Wkrótce**, **Przypisane do mnie**, **Oczekiwanie na walidację**, **Pełne dopasowanie PO** i **Częściowe dopasowanie PO**.
 
-## Jak dostosować i stosować filtry w DocBits
+<figure><img src="../../../../.gitbook/assets/customizing-filters-quick-filters-pl-20261113.png" alt="Wyszukiwanie dokumentów i szybkie filtry na pulpicie nawigacyjnym z otwartym menu INTELIGENTNE FILTRY oraz pozycjami Zaległy, Wkrótce, Przypisane do mnie, Oczekiwanie na walidację i Pełne dopasowanie PO; nazwy plików INV-2026-…, nazwiska i wartości w tabeli są wymyślonymi danymi przykładowymi."><figcaption><p>Wyszukiwanie dokumentów i szybkie filtry.</p></figcaption></figure>
 
-### Uzyskiwanie dostępu do ustawień filtrów Otwieranie panelu:
+Możesz łączyć kilka filtrów. Aby usunąć jeden z nich, kliknij **X** na jego etykiecie. Filtrowanie zmienia tylko to, które dokumenty widzisz; nie zmienia wyodrębnionych wartości dokumentu, jego zatwierdzenia ani statusu eksportu.
 
-* Zaloguj się do DocBits i otwórz panel, który zawiera dane, które chcesz filtrować.
+## Konfigurowanie filtra statusu
 
-**Uzyskiwanie dostępu do menu filtrów:**
+Otwórz **Ustawienia → Panel → Filtry** i wybierz **Styl filtra statusu**:
 
-* Kliknij ikonę filtra lub pole wyszukiwania.
+* **Wszystko** pokazuje pełną listę statusów.
+* **Statyczny** pokazuje wcześniej zdefiniowaną, krótszą listę.
+* **Niestandardowy** pozwala wybrać statusy, których potrzebuje Twoja organizacja.
 
-<figure><img src="../../../../.gitbook/assets/prior-u030-pl.png" alt="Wyszukiwanie dokumentów i szybkie filtry z ukrytymi danymi dokumentów."><figcaption><p>Wyszukiwanie dokumentów i szybkie filtry z ukrytymi danymi dokumentów.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/customizing-filters-status-options-pl-20261113.png" alt="Lista rozwijana Styl filtra statusu z opcjami Wszystko, Statyczny i Niestandardowy"><figcaption><p>Trzy style filtra statusu.</p></figcaption></figure>
 
-### Dostosowywanie filtrów
+Zmiana stylu jest zapisywana natychmiast. W przypadku opcji **Niestandardowy** wybierz statusy w sekcji **Niestandardowy filtr statusu** i kliknij **Zastosuj**. Zastosowanie pustej listy przywraca styl **Wszystko**.
 
-#### **Korzystanie z predefiniowanych filtrów**
+<figure><img src="../../../../.gitbook/assets/customizing-filters-status-filter-card-pl-20261113.png" alt="Ustawienia pulpitu nawigacyjnego z rozwiniętą kartą Filtry: Styl filtra statusu jest ustawiony na Wszystko, w panelu bocznym widoczne są Ustawienia i Panel"><figcaption><p>Ustawienie filtra statusu w ustawieniach pulpitu nawigacyjnego.</p></figcaption></figure>
 
-* Otwórz menu filtrów.
-* Wybierz z predefiniowanych opcji filtrów (np. Data, Typ dokumentu, Osoba przypisana).
-* Dostosuj kryteria filtra, wybierając lub wprowadzając odpowiednie wartości (np. zakres dat, konkretny typ dokumentu).
-
-#### **Utwórz własne filtry**
-
-* Otwórz menu filtrów w ustawieniach pod Panelem i kliknij "Filtry".
-
-<figure><img src="../../../../.gitbook/assets/prior-u015-pl.png" alt="Styl filtra statusu i niestandardowy filtr panelu."><figcaption><p>Styl filtra statusu i niestandardowy filtr panelu.</p></figcaption></figure>
-
-* Wybierz pole do filtrowania (np. Status).
-
-
-
-* Zdefiniuj kryteria filtra, np.: styl filtra statusu.
-
-
-
-* Menu rozwijane: Wybierz z predefiniowanych opcji.
-
-
-
-* Zapisz niestandardowy filtr, klikając "Stosować".
-
-
-
-#### **Korzystanie z filtrów łączonych**
-
-* Otwórz menu filtrów i wybierz jednocześnie wiele kryteriów filtrów.
-* Łącz kryteria filtrów.
-* **Przykład:** Dokumenty, które zostały stworzone przez autora "Max Mustermann" ORAZ zostały stworzone w ostatnim miesiącu.
-* Po wybraniu filtra zostanie on automatycznie zastosowany.
-
-#### **Stosowanie i zarządzanie filtrami**
-
-**Stosowanie filtrów**
-
-* Po wybraniu i dostosowaniu pożądanych filtrów, filtry są automatycznie stosowane.
-
-**Usuwanie filtrów**
-
-* Otwórz menu Filtry.
-* Krok 2: Wyczyść lub usuń zastosowane filtry, klikając "Wyczyść filtry", ikonę X obok wybranego filtra, zarówno w menu Filtry, jak i poniżej paska Filtrów.
-
-
-
-
-
-
-
-* Dane są ponownie wyświetlane bez wcześniejszych kryteriów filtra.
+Administratorzy organizacji ustawiają wartość domyślną dla organizacji. Jeśli inni użytkownicy mają dostęp do tych ustawień, ich wybór jest zapisywany jako preferencja osobista, która ma pierwszeństwo przed ustawieniem domyślnym organizacji.

@@ -13,11 +13,13 @@ L’obbligo applicabile dipende dall’ambito dell’operazione e dalla categori
 
 PEPPOL può fornire trasporto e interoperabilità tra sistemi e piattaforme connessi. Il suo utilizzo non sostituisce l’obbligo di ricorrere a una PA per lo scambio delle fatture soggette alla normativa francese. Una sola connessione PEPPOL non dimostra l’adempimento degli obblighi di scambio e trasmissione dei dati.
 
+Per il catalogo dei formati di DocBits, consultare [Panoramica degli standard di fatturazione elettronica](../../administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md).
+
 ## Contesto tecnico storico
 
 I sei diagrammi e le descrizioni API seguenti sono conservati come contesto tecnico proveniente da materiale precedente su PPF/PDP. Usano la terminologia e l’architettura passate; non descrivono un’opzione attuale per scambiare le fatture B2B obbligatorie tramite il PPF. Verificare le specifiche attuali delle PA e dei servizi pubblici prima di implementare un’integrazione.
 
-<figure><img src="../../.gitbook/assets/Picture 1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 1.png" alt="Diagramma del ciclo di vita della fatturazione elettronica francese con le fasi di preparazione, ricezione, validazione e pagamento e gli stati del fornitore e dell’acquirente"><figcaption><p>Diagramma storico del ciclo di vita: preparazione ed emissione, ricezione, validazione/restituzione e pagamento, con le etichette di stato del fornitore e dell’acquirente mostrate in ogni fase.</p></figcaption></figure>
 
 ### Modello storico dei servizi API
 
@@ -26,22 +28,24 @@ Il modello precedente descriveva l’accesso alle funzioni disponibili dagli str
 * **Sistemi informativi (IS):** Le API erano integrate nei sistemi di emittenti, destinatari o operatori di dematerializzazione (OD). Alcune API erano destinate ai sistemi PDP come alternativa all’integrazione EDI.
 * **Software di terze parti:** Gli editori potevano aggiungere un livello di comunicazione al sistema del cliente. I precedenti riferimenti a una connessione al PPF appartengono a quel modello storico e non costituiscono un canale attuale di scambio delle fatture.
 
-<figure><img src="../../.gitbook/assets/Picture 6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 6.png" alt="Diagramma di emittente e destinatario che si scambiano fatture tramite i portali di servizio OD-PDP e il PPF, con il controllo e il recupero dei dati"><figcaption><p>Diagramma storico di interconnessione: emittente e destinatario si collegano tramite software di terze parti, portali di servizio e blocchi OD/PDP attorno al blocco del PPF per il controllo e il recupero dei dati.</p></figcaption></figure>
 
 ### Diagramma storico di interconnessione
 
 Il diagramma illustra il precedente contesto di interconnessione delle piattaforme. Un’implementazione attuale deve rispettare i requisiti delle PA; qui non si afferma un obbligo generale di usare un’unica rete di trasporto per tutti gli scambi.
 
-<figure><img src="../../.gitbook/assets/Picture 2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 2.png" alt="Diagramma dei controlli su flusso, fattura e dati di fatturazione: gli invii del fornitore attraversano i controlli tecnici, applicativi e funzionali, con possibili rifiuti"><figcaption><p>Diagramma storico dei controlli: per gli invii manuali, tramite API e tramite EDI sono mostrati i controlli tecnici, applicativi e funzionali/aziendali, insieme agli esiti inammissibile, rifiutato e respinto.</p></figcaption></figure>
 
 ### Collegamento storico di un hub
 
 Il modello precedente descriveva una soluzione web o applicativa in cui **l’hub effettuava le chiamate API per conto dei clienti**. Prevedeva un account tecnico per ogni partner e, per l’hub, un’applicazione in PISTE e una connessione al PPF. Sono dettagli di un’architettura storica, non una procedura di integrazione attuale verificata.
 
-<figure><img src="../../.gitbook/assets/Picture 5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 5.png" alt="Diagramma dei partner con account tecnici che si collegano tramite un unico hub a un’applicazione in PISTE e a una connessione"><figcaption><p>Diagramma storico dell’hub: i partner con account tecnici si collegano tramite un unico hub a un’applicazione in PISTE e a una connessione.</p></figcaption></figure>
 
 ### Riferimenti storici
 
 Il materiale precedente citava [il vecchio calendario e riepilogo giuridico](https://www.ey.com/en_gl/technical/tax-alerts/france-revises-schedule-for-adopting-e-invoicing-reform), [le specifiche del 2022](https://www.avalara.com/blog/en/europe/2022/09/france-publishes-updated-specifications-for-e-invoicing-and-e-reporting.html), [una panoramica della riforma del 2025](https://www.avalara.com/blog/en/europe/2025/01/e-invoicing-reform-france.html), [il contesto di interconnessione](https://nymus.be/fr/facturation-electronique-en-france/), [il contesto PEPPOL](https://edicomgroup.com/blog/status-of-b2b-electronic-invoicing-in-france) e [il contesto dello scambio](https://nymus.be/fr/facturation-electronique-en-france/). Questi collegamenti e gli ultimi diagrammi sono conservati come contesto storico. Per gli obblighi attuali e la distinzione tra scambio tramite PA e funzioni pubbliche del PPF, utilizzare le fonti ufficiali sopra indicate. Il vecchio riferimento all’articolo 91 della legge finanziaria del 2024 non stabilisce un’opzione attuale di scambio tramite il PPF.
 
-<div><figure><img src="../../.gitbook/assets/Picture 3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Picture 4.png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/Picture 3.png" alt="Diagramma di flusso del processo di emissione: dal flusso EDI e dalla ricezione tramite API, attraverso i controlli di flusso, applicativi e funzionali, fino alla fattura emessa"><figcaption><p>Diagramma di flusso storico dell’emissione: i flussi EDI in ingresso e le chiamate API superano i controlli di flusso, applicativi e funzionali prima che i dati di fatturazione siano integrati; sono mostrati anche i percorsi di rifiuto, i flussi in uscita 1 e 2 e le notifiche del ciclo di vita.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Picture 4.png" alt="Diagramma di flusso del processo di ricezione: dal flusso EDI e dalla ricezione tramite API, attraverso i controlli con rifiuto o respingimento, fino alla fattura resa disponibile"><figcaption><p>Diagramma di flusso storico della ricezione: i controlli tecnici, applicativi e funzionali includono regole aziendali specifiche, con percorsi di rifiuto o respingimento; i dati accettati portano a una fattura ricevuta e resa disponibile, insieme al flusso 2 del destinatario e alle notifiche del ciclo di vita.</p></figcaption></figure>

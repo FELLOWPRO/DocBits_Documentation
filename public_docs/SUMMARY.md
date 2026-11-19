@@ -595,7 +595,7 @@
       * [Kolejność reguł](administration-and-setup/settings/document-processing/decision-trees/rule-order-policy.md)
       * [Każdy](administration-and-setup/settings/document-processing/decision-trees/any-policy.md)
       * [Pierwszy i Sąsiedni](administration-and-setup/settings/document-processing/decision-trees/first-and-adjacent-policy.md)
-  * [Dziennik aktywności](administration-and-setup/settings/log-settings/README.md)
+  * [Rejestrowanie aktywności](administration-and-setup/settings/log-settings/README.md)
     * [Zarządzanie Zadaniami](administration-and-setup/settings/log-settings/task-management.md)
     * [Sprawdzanie synchronizacji danych](administration-and-setup/settings/log-settings/data-synchronization.md)
     * [Ustawienia Wyszukiwania Pełnotekstowego](administration-and-setup/settings/log-settings/fulltext-search-settings.md)

@@ -1,78 +1,32 @@
 # EDI-Transformationsdatei-Anleitung
 
-## 1. Überblick
+Die Konfiguration **TRANSFORMATION** wandelt die EDI-Eingabe in das strukturierte XML um, das DocBits verwendet. Sie ist ein **XSLT**-Stylesheet. Diese Anleitung richtet sich an Personen, die ein elektronisches Dokumentformat pflegen; für die Prüfung einer Änderung brauchst du ein aussagekräftiges EDI-Dokument.
 
-Die **Transformationsdatei** definiert, wie das strukturierte XML, das mit der **Strukturdeskriptordatei** erstellt wurde, in ein benutzerdefiniertes XML-Format umgewandelt wird, das den spezifischen Dokumententypen oder Formularanforderungen Ihrer Organisation entspricht.
+## Transformation öffnen
 
-Diese Transformation wird mithilfe von **XSLT (Extensible Stylesheet Language Transformations)** durchgeführt, die im DocBits-Interface mit dem **XSLT-Editor** erstellt und gewartet werden können.
+1. Gehe zu **Einstellungen → Dokumenttypen** und öffne **E-Doc** für den Dokumenttyp, den du konfigurieren möchtest.
+2. Klappe **EDI** auf und wähle **TRANSFORMATION** mit der Kennzeichnung **XSLT**. Die Bilder zeigen das EDI-Format einer Bestellung (**PURCHASE_ORDER**) in einer Testorganisation für die Dokumentation.
 
-## 2. Zweck und Funktion
+<figure><img src="../../../../../../.gitbook/assets/edi-transformation-file-guide-list-de-20261113.png" alt="Deutsche Sandbox: EDI-Liste mit TRANSFORMATION (XSLT) zwischen PREVIEW und EXTRACTION PATHS"><figcaption>Wähle TRANSFORMATION (XSLT) in der EDI-Formatliste.</figcaption></figure>
 
-* Wandelt das **Zwischen-XML** (Ausgabe des Strukturdeskriptors) in ein **endgültiges XML** um, das mit Ihrem Dokumentschema übereinstimmt.
-* Ermöglicht die Flexibilität, um verschiedene EDI-Partnerformate und interne Systemanforderungen anzupassen.
-* Wird mit **XSLT-Regeln** erstellt, die es Ihnen ermöglichen, Zuordnungen, Wertformatierungen, bedingte Logik und Struktur zu definieren.
+## Stylesheet und Version lesen
 
-## 3. Zugriff und grundlegende Bearbeitung
+Links siehst du den gewählten Dokumenttyp, das EDI-Format und die Versionen. **Aktiv** kennzeichnet die Version, die derzeit verwendet wird. Der XSLT-Quelltext steht rechts im Editor. Das Beispiel der Bestellung nutzt `xsl:value-of`, um Werte wie die Bestellnummer (`//BEG/BEG03`), das Bestelldatum (`//BEG/BEG05`) und die Positionen aus der EDI-Eingabe in eine `PURCHASE_ORDER`-XML-Struktur zu kopieren. Dein Dokument kann andere EDI-Pfade verwenden. **Format** ordnet den Quelltext nur zum Lesen; dabei wird keine Version aktiviert.
 
-#### Dateizugriff
+<figure><img src="../../../../../../.gitbook/assets/edi-transformation-file-guide-detail-de-20261113.png" alt="Deutsche Sandbox: XSLT-Editor der TRANSFORMATION mit aktiver Version 1 und Beispielzuordnung für PURCHASE_ORDER"><figcaption>Die aktive EDI-Transformation der Bestellung in der Testorganisation.</figcaption></figure>
 
-1.  Gehen Sie zu **Einstellungen → Dokumententyp** → \[Ihr Dokument (z. B. _Bestellung_)] → **E-Dok.**
+Das Stiftsymbol neben der aktiven Version legt einen **Entwurf** für Änderungen an. Prüfe und teste den Entwurf, bevor du ihn mit seinem Häkchen aktivierst. Eine aktivierte Version ersetzt die bisher aktive Version. Das Papierkorb-Symbol löscht einen unerwünschten Entwurf; es erscheint nur, wenn mehr als eine Version vorhanden ist. Die Bilder zeigen die aktive Version, deshalb sind die Schaltflächen eines Entwurfs darin nicht abgebildet.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F1yCRagLzRFmy2hPRDDc1%252Fimage.png%3Falt%3Dmedia%26token%3D020874a9-1eae-4965-9dd2-c23461fc5884\&width=768\&dpr=4\&quality=100\&sign=5e53a730\&sv=2)
-2. Wählen Sie unter dem **E-Dok**-Tab Ihr Format aus (z. B. **EDI**).
-3.  Klicken Sie auf **Transformation**, um anzuzeigen oder zu bearbeiten.
+## Vor der Aktivierung testen
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZtaE4dZT9E1exWMZ5FCI%252Fimage.png%3Falt%3Dmedia%26token%3D787868b4-47b4-455e-9a26-112f692b91f3\&width=768\&dpr=4\&quality=100\&sign=460124f1\&sv=2)
+Klicke oben rechts auf **Vorschau**, um das Testfeld zu öffnen. Trage die Dokument-ID eines hochgeladenen EDI-Dokuments in das Feld neben **Test** ein und klicke auf **Test**. Geprüft wird der aktuelle Inhalt des Editors, also auch ein noch nicht gespeicherter Entwurf. Vergleiche die zurückgegebene Ausgabe mit dem Ausgangsdokument und den erwarteten XML-Feldern. Das Bild zeigt einen Test in einer Testorganisation mit der erfundenen Beispiel-ID `e2000000-0000-4000-8000-000000000004` (im Eingabefeld am rechten Rand abgeschnitten); auch die angezeigte Ausgabe sind erfundene Beispieldaten.
 
-#### Entwurfsverwaltung
+<figure><img src="../../../../../../.gitbook/assets/edi-transformation-file-guide-panel-de-20261113.png" alt="Deutsche Sandbox: Testfeld der Transformation mit erfundener Beispiel-Dokument-ID, Schaltfläche Test und erfundener Beispielausgabe"><figcaption>Teste die gewählte Transformation mit der Dokument-ID eines Beispiel-EDIs; die gezeigte ID und die Ausgabe sind erfundene Beispieldaten.</figcaption></figure>
 
-* **Entwurf erstellen**: Klicken Sie auf das ✏️ Stiftsymbol.
-* **Entwürfe löschen**: Verwenden Sie das 🗑️ Papierkorb-Symbol, um nicht verwendete Entwürfe zu entfernen.
-* **Änderungen aktivieren**: Klicken Sie auf das ✅ Häkchen, um eine Version zu veröffentlichen.
-  * **Hinweis**: Das Aktivieren einer neuen Version deaktiviert die vorherige **automatisch**.
+Nach der Transformation ordnet DocBits die XML-Werte über [Extraktionspfade](edi-extraction-paths-file-guide.md) den Feldern zu. Die [Vorschau-Datei](edi-preview-file-guide.md) steuert die lesbare Darstellung. Eine [Videoanleitung zu EDI](edi-videos.md) zeigt den Ablauf.
 
-## 4. XSLT-Editor
+## Geltende Regeln und Aktivierung
 
-Die Transformationsdatei wird mithilfe eines integrierten **XSLT-Editors** bearbeitet, der Syntaxhervorhebung und Validierung unterstützt.
+Organisationsspezifische Regeln haben Vorrang vor den Standardregeln für das erkannte eDoc-Format. Prüfe die aktive TRANSFORMATION und prüfe, welcher Knoten den gesuchten Wert im transformierten XML liefert; der Pfad hängt vom Format ab. Speichern sichert einen Entwurf; aktivierst du ihn nach dem Testen über das Häkchen. Eine gerenderte Vorschau belegt nicht den gespeicherten Dokumenttyp. Die [Anleitung zur Fehlerbehebung bei der Klassifizierung](../credit-note-recognized-as-invoice.md) erläutert die Codes 381/261, spätere Skripte und Vorsichtsmaßnahmen bei der erneuten Verarbeitung.
 
-* Fügen Sie Vorlagen hinzu, um spezifische Pfade aus dem Eingabe-XML auf die gewünschte Struktur abzubilden.
-* Verwenden Sie bedingte Logik (z. B. `<xsl:if>`, `<xsl:choose>`) zur Behandlung optionaler oder variabler Datenformate.
-* Wenden Sie Formatierungsfunktionen bei Bedarf an (z. B. Zeichenkettenmanipulation, Datumsformatierung).
-
-## 5. Vorschau-Funktion (Vorschau des transformierten XML)
-
-Die **Vorschau-Funktion** ermöglicht es Ihnen, zu testen und zu überprüfen, wie eine hochgeladene EDI-Datei mithilfe der aktuellen **Transformationsdatei** verarbeitet wird.
-
-#### Verwendung
-
-* Laden Sie eine EDI-Datei über den Standard-Upload-Flow hoch.
-* Kopieren Sie die **Dokumenten-ID** der hochgeladenen Datei.
-* Navigieren Sie zur **Transformationsdatei**-Schnittstelle.
-*   Öffnen Sie die **Vorschau-Funktion**.\
-
-
-    <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=36ce2b93&#x26;sv=2" alt="" width="375"></div>
-* Geben Sie die **Dokumenten-ID** in das Feld ein und drücken Sie **Test**.
-* Die resultierende **transformierte XML-Ausgabe** wird angezeigt.
-
-Dies ist besonders nützlich zum Debuggen von XSLT-Zuordnungen und zur Sicherstellung, dass die endgültige XML-Struktur Ihren Formatanforderungen entspricht.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FWbwwmXgp6nRPIb1zBpgj%252Fimage.png%3Falt%3Dmedia%26token%3Dab5766f1-45bf-484e-9aa4-ab3059705591\&width=768\&dpr=4\&quality=100\&sign=46905864\&sv=2)
-
-## 6. Video-Anleitung
-
-Eine Videoanleitung für diesen Dateityp finden Sie auf der [Videos-Seite.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Verwenden Sie sie, um die Einrichtung, Bearbeitung und Vorschau zu verfolgen.
-
-## Verwendete Regeln und Aktivierung
-
-Organisationsspezifische Regeln haben Vorrang vor den Standardregeln für das erkannte eDoc-Format. Prüfen Sie die aktive TRANSFORMATION und prüfen Sie, welcher Knoten im transformierten XML invoice_type liefert; der Pfad hängt vom Format ab. Speichern sichert einen Entwurf; aktivieren Sie ihn nach dem Testen über das Häkchen. Eine gerenderte Preview belegt nicht den gespeicherten Dokumenttyp. Die [Anleitung zur Fehlerbehebung bei der Klassifizierung](../credit-note-recognized-as-invoice.md) erläutert die Codes 381/261, spätere Skripte und Vorsichtsmaßnahmen bei der erneuten Verarbeitung.
-
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-de.png" alt="Vorhandenes EDI-Format mit seinen vier konfigurierten Attributen."><figcaption><p>Vorhandenes EDI-Format mit seinen vier konfigurierten Attributen.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-transformation-de.png" alt="Aktives Attribut TRANSFORMATION: XSLT-Quelltext zur Transformation des XML-Zwischenformats."><figcaption><p>Aktives Attribut TRANSFORMATION: XSLT-Quelltext zur Transformation des XML-Zwischenformats.</p></figcaption></figure>
-
-
-Die Ansichten zeigen eine vorhandene Konfiguration und Version. Die Einstellungen unterscheiden sich je nach Dokumenttyp und Format. Prüfen Sie Änderungen in einem Entwurf vor der Aktivierung.
-
-Einzelne Bezeichnungen wie Custom, Default und Electronice im Feldnamen entsprechen der derzeitigen Produktoberfläche. Die technischen Attributnamen und der Konfigurationscode bleiben unverändert.
+Die technischen Attributnamen in der Liste, etwa TRANSFORMATION, PREVIEW oder EXTRACTION PATHS, bleiben in jeder Sprache unverändert. Die Ansichten zeigen eine vorhandene Konfiguration und Version. Die Einstellungen unterscheiden sich je nach Dokumenttyp und Format. Prüfe Änderungen in einem Entwurf vor der Aktivierung.

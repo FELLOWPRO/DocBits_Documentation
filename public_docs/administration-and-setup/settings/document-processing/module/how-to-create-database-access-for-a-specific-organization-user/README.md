@@ -28,7 +28,7 @@
      * **Password** : veillez à stocker ou à copier le mot de passe de manière sécurisée.
      * **Database** : le nom de la base de données.
      * **Host** : le nom d'hôte.
-     * **Port** : le port.
+     * **Port** : le port du serveur de base de données.
      * **SSL Mode :** la connexion nécessite `sslmode=require` pour une communication sécurisée.
 3. **Copier les identifiants** :
    * Utilisez les icônes de copie à côté de chaque champ pour copier rapidement les identifiants et les utiliser dans votre client de base de données ou votre application.

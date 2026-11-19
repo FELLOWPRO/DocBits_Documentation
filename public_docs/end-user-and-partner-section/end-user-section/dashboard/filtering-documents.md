@@ -38,6 +38,8 @@ Au-dessus de la barre de recherche, sélectionnez **30D**, **90D**, **180D**, **
 2. Sélectionnez un type, par exemple **Facture**, pour ajouter son onglet. Sélectionnez ensuite le nouvel onglet pour filtrer le tableau sur ce type. **Tous** supprime la restriction de type sans supprimer l'onglet.
 3. Pour supprimer un onglet de type, sélectionnez son **×**. L'onglet **Tous** ne peut pas être supprimé.
 
+DocBits enregistre vos onglets dans vos paramètres utilisateur : ils sont donc de retour à la prochaine ouverture du tableau de bord. Un onglet ajouté reste jusqu’à ce que vous le supprimiez.
+
 <figure><img src="../../../.gitbook/assets/dbdc167_document-type-menu_fr_20261010.png" alt="Menu plus du tableau de bord en français montrant Facture comme type de document disponible"><figcaption>Ajoutez un onglet de type de document depuis le menu plus.</figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/dbdc167_invoice-tab_fr_20261010.png" alt="Onglet Facture sélectionné comme type de document sur le tableau de bord en français, avec son icône de suppression visible"><figcaption>Choisissez l'onglet pour appliquer le filtre de type ; utilisez × pour supprimer l'onglet.</figcaption></figure>

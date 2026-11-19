@@ -20,6 +20,8 @@ Touchless Intelligence vous montre **pourquoi** un rapprochement avec le BC a é
 | **Document Trace**                                                                          | L'étape **PO Line Match** avec le statut **blocked** et le motif                                                                                                                |
 | **Settings → Document Types → More Settings → Purchase Order**                              | Les règles de rapprochement elles-mêmes. Voir [Règles de correspondance des bons de commande](../../settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) |
 
+Sur le canal de publication **Nova**, la première ligne est le panneau **Why documents are not touchless**. Dépliez-y la zone PO matching pour lire ses motifs avec leur nombre de documents ; le diagramme à barres mentionné plus haut reste sur **Vesta**.
+
 ## Les deux étapes du BC
 
 | Étape                  | Question                                    | S'arrête avec                                                                                                         |

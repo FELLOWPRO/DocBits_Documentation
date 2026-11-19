@@ -370,7 +370,7 @@ Ce fichier est responsable de l'extraction des données d'un fichier XML Peppol 
    * **Mappé sur** : `<INVOICE><BUYER_REFERENCE>`
    * **Peut apparaître several times** : Non.
 
-2)  **Référence de facturation**
+2. **Billing Reference**
 
     * **Source** : `//BillingReference`
     * **Mappé sur** : `<INVOICE><BILLING_REFERENCE>`

@@ -54,6 +54,12 @@ Utilisez l'**Historique d'appariement** (icône horloge, selon vos permissions) 
 
 Chaque bon de commande s’ouvre dans son propre onglet au-dessus du tableau, et une ligne de facture peut être appariée à des lignes appartenant à différents onglets. L’icône de correspondance sur la ligne de facture bascule vers l’onglet du bon de commande apparié et fait défiler jusqu’à la ligne appariée ; chaque clic supplémentaire affiche la ligne appariée suivante. Si la ligne est connectée sur plusieurs onglets, l’icône affiche d’abord la liste sous **Matched on other PO tabs**, où vous choisissez le bon de commande dont vous voulez voir la ligne. Côté bon de commande, l’icône fonctionne dans l’autre sens : un clic parcourt les lignes de facture appariées, et un survol les met en évidence.
 
+### Règles ignorées
+
+Auto PO Match utilise chaque règle de rapprochement qui peut s’exécuter sur le tableau extrait. Une règle est ignorée lorsque le tableau ne contient pas une colonne qu’elle lit. Par exemple, une règle qui associe les lignes par numéro d’article ne peut pas s’exécuter si aucun numéro d’article n’a été extrait. Les autres règles s’exécutent quand même et le rapprochement est enregistré.
+
+Un avertissement indique ensuite les règles qui n’ont pas été essayées et les colonnes manquantes dans le tableau. Les lignes que ces règles auraient rapprochées restent ouvertes. Ajoutez la colonne manquante à la mise en page ou à l’extraction du tableau, ou reliez les lignes à la main, avant d’exporter.
+
 ### Plusieurs lignes pour une correspondance
 
 Une seule ligne de facture peut correspondre à plusieurs lignes de bon de commande, ou l'inverse, lorsque vos règles d'appariement le permettent. Ouvrez les détails **+** d'une ligne pour inspecter une éventuelle correspondance multiple. Vérifiez la quantité et le prix combinés, pas seulement une ligne. Un panneau de détails vide signifie qu'aucune correspondance multiple n'est à inspecter. Consultez [Outils de Correspondance des Bons de Commande](purchase-order-matching-tools.md) pour modifier les connexions.

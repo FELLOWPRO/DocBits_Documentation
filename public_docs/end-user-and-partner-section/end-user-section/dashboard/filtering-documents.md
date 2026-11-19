@@ -38,6 +38,8 @@ Nad paskiem wyszukiwania wybierz **30D**, **90D**, **180D**, **365D** lub **Wszy
 2. Wybierz typ, na przykład **Faktura**, aby dodać jego kartę. Następnie wybierz nową kartę, aby przefiltrować tabelę do tego typu. **Wszystko** usuwa ograniczenie typu bez usuwania karty.
 3. Aby usunąć kartę typu, wybierz jej **×**. Karty **Wszystko** nie można usunąć.
 
+DocBits zapisuje karty w Twoich ustawieniach użytkownika, więc wracają przy następnym otwarciu dashboardu. Dodana karta pozostaje, dopóki jej nie usuniesz.
+
 <figure><img src="../../../.gitbook/assets/filtering-documents-document-type-menu-pl-20261010.png" alt="Menu plus w polskim Panelu z pozycją Faktura jako dostępnym typem dokumentu"><figcaption>Dodaj kartę typu dokumentu z menu plus.</figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/filtering-documents-invoice-tab-pl-20261010.png" alt="Karta typu dokumentu Faktura wybrana w polskim Panelu z widoczną ikoną usuwania"><figcaption>Wybierz kartę, aby zastosować filtr typu; użyj ×, aby usunąć kartę.</figcaption></figure>

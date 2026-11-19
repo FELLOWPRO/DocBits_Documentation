@@ -20,6 +20,8 @@ Touchless Intelligence pokazuje, **dlaczego** dopasowanie PO się nie powiodło 
 | **Document Trace**                                                                          | Etap **PO Line Match** ze statusem **blocked** i przyczyną                                                                                                                      |
 | **Settings → Document Types → More Settings → Purchase Order**                              | Same reguły dopasowania. Zobacz [Purchase Order Matching Rules](../../settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) |
 
+W kanale wydania **Nova** pierwszym wierszem jest panel **Why documents are not touchless**. Rozwiń tam obszar PO matching, aby przeczytać przyczyny wraz z liczbą dokumentów; wspomniany wyżej wykres słupkowy pozostaje w **Vesta**.
+
 ## Dwa etapy PO
 
 | Etap                   | Pytanie                                        | Zatrzymuje się na                                                                                                     |

@@ -32,10 +32,10 @@ Total Amount: $1,015.05
 
 Quantity Tolerance: ±2%
 
-Tolerancja ceny jednostkowej: ±1%\
+Tolerancja ceny jednostkowej: ±1%
 
 
-Ponieważ ilość (101 sztuk) i cena jednostkowa ($10.05) mieszczą się w dopuszczalnych poziomach tolerancji w porównaniu z zamówieniem, system:\
+Ponieważ ilość (101 sztuk) i cena jednostkowa ($10.05) mieszczą się w dopuszczalnych poziomach tolerancji w porównaniu z zamówieniem, system:
 
 
 1\. **Zaakceptuj wartości z faktury:** Ilość i cena jednostkowa na fakturze są akceptowane jako ważne, ponieważ mieszczą się w zdefiniowanych granicach tolerancji.

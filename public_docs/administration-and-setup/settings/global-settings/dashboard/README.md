@@ -4,23 +4,21 @@
 
 Die Dashboard-Einstellungen sind darauf ausgelegt, Administratoren dabei zu helfen, die Datenpräsentation und Interaktion innerhalb des DocBits-Dashboards zu steuern. Diese Einstellungen bestimmen, welche Informationen sofort nach dem Einloggen verfügbar sind, sodass die Benutzer schnellen Zugriff auf die relevantesten Daten für ihre Aufgaben haben.
 
-<figure><img src="../../../../.gitbook/assets/dashboard-settings_1-de.png" alt="Die Dashboard-Einstellungen mit den Blöcken Allgemein und Exportverlauf"><figcaption><p>Die Dashboard-Einstellungen unter Globale Einstellungen → Dashboard.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-1318-dashboard-general-action-de-20261114.png" alt="Die deutschen Dashboard-Einstellungen mit aufgeklapptem Bereich Allgemein (Filter zurücksetzen, Dashboard-Daten) und aufgeklapptem Bereich Aktion; der Bereich Exportverlauf ist eingeklappt"><figcaption><p>Die Bereiche Allgemein und Aktion in der deutschen Oberfläche. Der Exportverlauf ist eingeklappt; die sichtbaren Schalterstellungen und Werte sind Beispieldaten einer Demo-Organisation.</p></figcaption></figure>
 
 ## Zugriff auf die Dashboard-Einstellungen
 
 Um auf die Dashboard-Einstellungen zuzugreifen, navigieren Sie zu:\
-**Einstellungen → Globale Einstellungen → Dashboard**
+**Einstellungen → Dashboard**
 
-<figure><img src="../../../../.gitbook/assets/settings-dashboard-de.png" alt="Der Eintrag Dashboard unter den globalen Einstellungen in der Seitenleiste"><figcaption><p>Der Bereich Dashboard in den globalen Einstellungen.</p></figcaption></figure>
+Klappen Sie einen Abschnitt auf, um seine Steuerelemente zu prüfen. Einstellungen werden gespeichert, sobald Sie einen Schalter, eine Auswahl oder einen Zahlenwert ändern; **Anwenden** speichert die benutzerdefinierte Statusauswahl.
 
 ## **Allgemein**
 
-* **Filter zurücksetzen**: Ermöglicht die Konfiguration, wann die Dashboard-Filter zurückgesetzt werden sollen, z. B. nach dem Hochladen von Dokumenten, dem Neustart von Dokumenten oder dem Export von Dokumenten. Dies hilft, eine saubere Grundlage für die Datenansicht gemäß spezifischer Arbeitsabläufe zu erhalten.
+* **Filter zurücksetzen**: Ermöglicht die Konfiguration, wann die Dashboard-Filter zurückgesetzt werden sollen, z. B. nach dem Hochladen des Dokuments, dem Neustart des Dokuments oder dem Dokumentenexport. Dies hilft, eine saubere Grundlage für die Datenansicht gemäß spezifischer Arbeitsabläufe zu erhalten.
 * **Dashboard-Daten**:
-  * **Automatisches Hochladen des Dashboards**: Steuert, ob das Dashboard Daten automatisch beim Zugriff des Benutzers laden soll, was helfen kann, die Ladezeiten zu reduzieren und die Benutzererfahrung zu verbessern, indem Daten nur bei Bedarf geladen werden.
-  *   **Dashboard-Daten exportieren**: Diese Funktion fügt der Dashboard-Toolbar einen neuen **Export**-Button hinzu, mit dem Sie die aktuelle Dashboard-Ansicht als **.csv** oder **.xlsx**-Datei exportieren können.
-
-      <figure><img src="../../../../.gitbook/assets/dashboard-settings_3-de.png" alt="Die Option Dashboard-Daten exportieren"><figcaption><p>Die Option Dashboard-Daten exportieren fügt der Dashboard-Toolbar einen Export-Button hinzu.</p></figcaption></figure>
+  * **Dashboard bei Dokumentaktualisierungen automatisch aktualisieren**: Ein Schalter, der steuert, ob das Dashboard seine Daten automatisch neu lädt, wenn Dokumente aktualisiert werden. Ist die Option aktiv, werden Änderungen an Dokumenten – zum Beispiel eine Statusänderung durch eine andere Person – automatisch übernommen, sodass die Liste immer den aktuellen Stand zeigt, ohne dass Sie manuell aktualisieren müssen.
+  * **Dashboard-Daten exportieren**: Diese Funktion fügt der Dashboard-Werkzeugleiste die Schaltfläche **Export** hinzu, mit der Sie die aktuelle Dashboard-Ansicht als **.csv**- oder **.xlsx**-Datei exportieren können. Eine Schritt-für-Schritt-Anleitung finden Sie unter [Dashboard-Daten exportieren](../../document-processing/module/export-dashboard-data.md).
 
 ## **Exportverlauf**
 
@@ -30,40 +28,47 @@ Im **Exportverlauf** sehen Sie eine Tabelle, die alle vergangenen Exporte zusamm
 
 Die folgenden Details sind enthalten:
 
-* **E-Mail**: Die E-Mail-Adresse, von der der Export angefordert wurde.
-* **Status**: Der aktuelle Status des Exports (Ausstehend, Abgeschlossen oder Fehlgeschlagen).
-* **Angefordert am**: Das Datum und die Uhrzeit, zu der der Export initiiert wurde.
-* **Abgeschlossen am**: Das Datum und die Uhrzeit, zu der der Export abgeschlossen wurde.
+* **Email**: Die für den Export hinterlegte E-Mail-Adresse des Empfängers.
+* **Status**: Der aktuelle Status des Exports (Pending, Completed oder Failed).
+* **Requested At**: Datum und Uhrzeit, zu der der Export ausgelöst wurde.
+* **Completed At**: Datum und Uhrzeit, zu der der Export abgeschlossen wurde.
 * **Format**: Das für den Export verwendete Dateiformat (CSV, XLSX).
-* **Verwendete Filter**: Bis zu drei aktive Filter erscheinen als Chips in einer Zeile. Wurden mehr Filter angewendet, zeigt ein **+N**-Chip, wie viele weitere es sind. Zeigen Sie auf die Filterzelle, um die vollständige Liste in einem Tooltip zu sehen. Filter mit dem Wert **None** werden nicht angezeigt.
+* **Filters Used**: Bis zu drei aktive Filter erscheinen als Chips in einer Zeile. Wurden mehr Filter angewendet, zeigt ein **+N**-Chip, wie viele weitere es sind. Zeigen Sie mit der Maus auf die Filterzelle, um die vollständige Liste in einem Tooltip zu sehen. Filter mit dem Wert **None** werden weggelassen.
 
-<mark style="color:red;">**Hinweis**</mark>: Um Tabellen zu exportieren, muss die Option Dashboard-Daten exportieren im [Allgemein](./#allgemein) Abschnitt aktiviert sein.
+Die Spaltenüberschriften und die Statuswerte dieser Tabelle zeigt die Oberfläche derzeit auf Englisch.
+
+<mark style="color:red;">**Hinweis**</mark>: Um Tabellen zu exportieren, muss die Option Dashboard-Daten exportieren im Abschnitt [Allgemein](./#allgemein) aktiv sein.
 
 ## **Aktion**
 
-* **Zuweisen an**: Diese Funktion ermöglicht es Benutzern, Berechtigungen für die Dokumentenzuweisung festzulegen.
-  * **Nur für Admin**: Nur Admin-Benutzer können Dokumente zuweisen, unabhängig von den Berechtigungen, die nicht-Admin-Benutzern gewährt wurden.
-  * **Alle Benutzer**: Alle Benutzer, die die erforderlichen [Berechtigungen](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) erhalten haben, können Dokumente zuweisen.
-* **Neustart**: Diese Funktion ermöglicht es Benutzern, Berechtigungen für den Neustart von Dokumenten festzulegen.
-  * **Nur für Admin**: Nur Benutzer mit Administratorrechten können Dokumente neu starten, unabhängig von den Berechtigungen, die nicht-Admin-Benutzern gewährt wurden.
-  * **Nur Admin und Zuweisung**: Nur Benutzer mit Administratorrechten und der zugewiesene Benutzer können das Dokument neu starten.
-  * **Alle Benutzer**: Alle Benutzer, die die erforderlichen [Berechtigungen](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) erhalten haben, können Dokumente neu starten.
+* **Zuweisen an**: Diese Funktion legt fest, wer Dokumente zuweisen darf.
+  * **Only for Admin**: Nur Administratorbenutzer können Dokumente zuweisen, unabhängig von den Berechtigungen, die Nicht-Administratoren erhalten haben.
+  * **All Users**: Alle Benutzer, die die erforderlichen [Berechtigungen](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) erhalten haben, können Dokumente zuweisen.
+* **Neustart**: Diese Funktion legt fest, wer Dokumente neu starten darf.
+  * **Only for Admin**: Nur Benutzer mit Administratorrechten können Dokumente neu starten, unabhängig von den Berechtigungen, die Nicht-Administratoren erhalten haben.
+  * **Only Admin and Assignee**: Nur Benutzer mit Administratorrechten und die zugewiesene Person können das Dokument neu starten.
+  * **All Users**: Alle Benutzer, die die erforderlichen [Berechtigungen](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) erhalten haben, können Dokumente neu starten.
+
+Die Auswahlwerte der Felder **Zuweisen an** und **Neustart** zeigt die Oberfläche derzeit auf Englisch.
 
 * **Ausstehender Eingabezugriff (Tage)**: Legt fest, wie viele Tage eine Person, die im Aktivitätsprotokoll um eine Eingabe gebeten wurde, das Dokument schreibgeschützt öffnen kann; danach funktioniert der Link nicht mehr. Standard sind 14 Tage, und der Zugriff endet auch, sobald das Dokument weitergeht. Siehe [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
-
-<figure><img src="../../../../.gitbook/assets/dashboard-settings_2-de.png" alt="Die Optionen Zuweisen an und Neustart im Abschnitt Aktion"><figcaption><p>Der Abschnitt Aktion steuert, wer Dokumente zuweisen und neu starten darf.</p></figcaption></figure>
+* **Zurück zur Validierung (Exportierte Dokumente)**: Steuert die Aktion „Zurück zur Validierung“ für exportierte Dokumente.
+* **Abgeschlossene Dokumente sperren**: Der Hilfetext erläutert, dass abgeschlossene Dokumente nach dem Sperren nur noch archiviert oder auf den Status **Fehler** gesetzt werden können. Arbeitsabläufe, die nach dem Export weiterlaufen müssen, verwenden den Status **Exportiert**.
+* **Fehlgeschlagene Exporte als Fehler behalten, bis sie wiederholt wurden**: Behält für eine inaktive, von einem Workflow gestartete Exportkonfiguration den **Exportfehler** so lange bei, bis diese Konfiguration erneut erfolgreich exportiert. Ein erneuter Start des Exports allein hebt den Fehler nicht auf, wie der Hilfetext des Steuerelements erläutert.
 
 ## **Filter**
 
-* **Statusfilter-Stil**: Bestimmt den Präsentationsstil der Statusfilter, der auf Standard oder benutzerdefiniert gemäß dem operativen Fokus der Benutzer eingestellt werden kann.
-* **Benutzerdefinierter Statusfilter**: Ermöglicht die Erstellung und Anwendung von benutzerdefinierten Filtern, die auf spezifische Dokumentstatus wie "Neu", "Validierung" oder "Export" abzielen. Dies ermöglicht es Benutzern, schnell auf Dokumente in bestimmten Verarbeitungsstufen zuzugreifen.
+* **Statusfilter-Stil**: Wählen Sie **Alle**, **Statisch** oder **Benutzerdefiniert**, um festzulegen, welche Statusfilter angeboten werden. **Benutzerdefiniert** zeigt die Statusauswahl und die Schaltfläche **Anwenden**.
+* **Benutzerdefinierter Statusfilter**: Ermöglicht die Erstellung und Anwendung benutzerdefinierter Filter, die auf bestimmte Dokumentstatus wie **Neu**, **Validierung** oder **Exportieren** zielen. So greifen Benutzer schnell auf Dokumente in bestimmten Verarbeitungsstufen zu.
 
-<figure><img src="../../../../.gitbook/assets/dashboard-settings_5-de.png" alt="Der Abschnitt Filter mit Statusfilter-Stil und benutzerdefiniertem Statusfilter"><figcaption><p>Der Abschnitt Filter steuert Statusfilter-Stil und benutzerdefinierte Statusfilter.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-1318-dashboard-filters-advance-de-20261114.png" alt="Die deutschen Dashboard-Einstellungen mit aufgeklapptem Bereich Filter (Statusfilter-Stil Benutzerdefiniert, Beispielauswahl Bereit zur Validierung und Exportiert, Schaltfläche Anwenden) und aufgeklapptem Bereich Versand-Dashboard mit dem Wert 30 Days"><figcaption><p>Die Bereiche Filter und Versand-Dashboard in der deutschen Oberfläche. Die Statusauswahl ist ein Beispielwert; Allgemein, Exportverlauf und Aktion sind eingeklappt.</p></figcaption></figure>
+
+Die Schritte zum Auswählen von **Benutzerdefiniert**, zum Festlegen der Status, zum Anwenden der Auswahl oder zum Zurückkehren zu **Alle** finden Sie unter [Benutzerdefinierte Filter](page-1.md).
 
 ## Versand-Dashboard
 
-* **Sichtbarkeit gelieferter Bestellungen**: Diese Funktion ermöglicht es dem Benutzer, die Dauer anzugeben, für die gelieferte Bestellungen sichtbar sind.
+* **Delivered Orders Visibility**: Diese Funktion legt fest, wie lange gelieferte Bestellungen sichtbar bleiben.
 
-<figure><img src="../../../../.gitbook/assets/dashboard-settings_6-de.png" alt="Der Abschnitt Versand-Dashboard mit der Sichtbarkeit gelieferter Bestellungen"><figcaption><p>Der Abschnitt Versand-Dashboard steuert die Sichtbarkeit gelieferter Bestellungen.</p></figcaption></figure>
+Feldbezeichnung und Einheit dieses Feldes zeigt die Oberfläche derzeit auf Englisch (**Days**).
 
 Diese Dashboard-Einstellungen sind entscheidend, um sicherzustellen, dass die DocBits-Plattform so reaktionsschnell und nützlich wie möglich ist, und den Benutzern ein leistungsstarkes Werkzeug zur Verfügung zu stellen, um Dokumentenverarbeitungsaktivitäten direkt vom Dashboard aus zu überwachen und zu verwalten.

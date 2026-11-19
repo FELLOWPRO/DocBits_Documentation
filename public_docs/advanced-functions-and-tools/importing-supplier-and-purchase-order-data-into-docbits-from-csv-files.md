@@ -1,28 +1,28 @@
-# Importieren von Lieferanten- und Bestelldaten in DocBits aus CSV-Dateien
+# Lieferanten- und Bestelldaten aus CSV-Dateien in DocBits importieren
 
 ## Übersicht
 
-Diese Seite beschreibt, wie man Lieferanten- und Bestelldaten in DocBits mithilfe einer durch Kommas getrennten Werte-Datei (.csv) importiert.
+Diese Seite beschreibt, wie Sie einen CSV-Import von Lieferanten- oder Bestelldaten in DocBits vorbereiten.
 
-**Wichtig:** Vor dem Importieren von Daten ist es entscheidend, die .csv-Datei **gründlich zu überprüfen**, um die Datenintegrität und die richtige Konfiguration sicherzustellen. Das Importieren falscher Daten kann zu Inkonsistenzen führen. Siehe die Abschnitte [**CSV-Spezifikationen für Bestellungen**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-spezifikationen-fur-bestellungen) oder [**CSV-Spezifikationen für Lieferanten**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-spezifikationen-fur-lieferanten) für Details zu erforderlichen und optionalen Feldern. Wenn erforderliche Felder fehlen, schlägt der Importprozess fehl.
+**Wichtig:** Bevor Sie Daten importieren, **prüfen Sie die CSV-Datei vollständig**, damit die Daten korrekt sind und die Konfiguration passt. Ein Import fehlerhafter Daten kann zu Inkonsistenzen führen. Details zu Pflichtfeldern und optionalen Feldern finden Sie in den Abschnitten [**CSV-Spezifikationen für Bestellungen**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-spezifikationen-fur-bestellungen) und [**CSV-Spezifikationen für Lieferanten**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-spezifikationen-fur-lieferanten). Prüfen Sie die akzeptierten Spalten und Validierungsregeln Ihrer API-Version, bevor Sie einen produktiven Datenbestand verwenden.
 
-**Validierung:** Überprüfen Sie immer, dass Ihre .csv-Datei alle notwendigen Spalten gemäß den jeweiligen Spezifikationen enthält, bevor Sie den Import versuchen.
+**Prüfung:** Verwenden Sie die folgenden Listen als Checkliste für die Vorbereitung. Bestätigen Sie die Pflichtfelder, die zusätzlichen Felder und einige repräsentative Zeilen für Ihre Installation; diese Listen sind keine Garantie dafür, dass jede ungültige Zeile die gesamte Datei zurückweist. Prüfen Sie die Antwort des Imports und verifizieren Sie die vorgesehenen Datensätze zusätzlich selbst.
 
 ## Allgemeine Anforderungen:
 
 **Datumsformat:**
 
-Alle in der .csv-Datei angegebenen Daten **müssen** dem folgenden Format entsprechen:
+Alle Datumsangaben in der CSV-Datei **müssen** dem folgenden Format entsprechen:
 
 YYYY-MM-DD HH:MM:SS
 
-**Erforderliche Felder:**
+**Pflichtfelder:**
 
-Für den Import von Lieferanten und Bestellungen müssen alle als "Erforderlich" gekennzeichneten Spalten in den jeweiligen Spezifikationen **in der .csv-Datei vorhanden sein und in jeder Zeile einen Wert enthalten**. Wenn ein erforderliches Feld für eine Zeile fehlt oder leer ist, schlägt der Importprozess fehl.
+Bereiten Sie die unten aufgeführten Basis-Identifikatoren vor und prüfen Sie sie. Verlassen Sie sich nicht darauf, dass eine Importanfrage die Vollständigkeit oder fachliche Korrektheit Ihrer CSV für Sie prüft.
 
 ### CSV-Spezifikationen für Bestellungen
 
-**Erforderliche Felder** - (Spalte mit Namen muss vorhanden sein & muss Daten enthalten)
+**Basisfelder, die Sie vorbereiten und prüfen**
 
 * `purchase_order_number`
 
@@ -32,6 +32,7 @@ Für den Import von Lieferanten und Bestellungen müssen alle als "Erforderlich"
 * `location_id`
 * `supplier_id`
 * `supplier_name`
+* `header_total_amount`
 * `order_date`
 * `requested_shipment_date`
 * `promised_delivery_date`
@@ -75,7 +76,7 @@ Für den Import von Lieferanten und Bestellungen müssen alle als "Erforderlich"
 * `received_base_mou_quantity`
 * `promised_delivery_date`
 * `requested_ship_date`
-* `unit_code`
+* `unit_of_measure`
 * `unit_code_price`
 * `unit_price`
 * `unit_price_per`
@@ -90,7 +91,7 @@ Für den Import von Lieferanten und Bestellungen müssen alle als "Erforderlich"
 
 ### CSV-Spezifikationen für Lieferanten
 
-**Erforderliche Felder** - (Spalte mit Namen muss vorhanden sein & muss Daten enthalten)
+**Basisfelder, die Sie vorbereiten und prüfen**
 
 * `customer_number`
 * `supplier_number`
@@ -99,10 +100,12 @@ Für den Import von Lieferanten und Bestellungen müssen alle als "Erforderlich"
 
 **Felder, die enthalten sein können**
 
+* `address_id`
 * `address_1`
 * `address_2`
 * `address_3`
 * `address_4`
+* `country_main_division`
 * `town_city`
 * `zip_code`
 * `supplier_phone`
@@ -127,7 +130,7 @@ Für den Import von Lieferanten und Bestellungen müssen alle als "Erforderlich"
 * `custom_field_9`
 * `custom_field_10`
 * `status`
-* `account_number`
+* `account_id`
 * `financial_partner_id`
 * `financial_partner_name`
 * `iban`
@@ -135,45 +138,39 @@ Für den Import von Lieferanten und Bestellungen müssen alle als "Erforderlich"
 
 ## Zugriffsendpunkt
 
-Um Daten zu importieren, befolgen Sie diese Schritte:
+### Umgebung und Organisation wählen
 
-1. Besuchen Sie: [https://api.docbits.com/](https://api.docbits.com/)
-2.  Klicken Sie auf die Schaltfläche **"Authorize"**.
+1. Öffnen Sie die API-Referenz für die Umgebung, die Sie verwenden möchten. Die Produktionsreferenz ist [https://api.docbits.com/](https://api.docbits.com/); für Testdaten verwenden Sie Ihre freigegebene Testumgebung. Prüfen Sie die API-Version und den Wert unter **Servers**, bevor Sie eine Anfrage vorbereiten.
+2. Für einen autorisierten Import klicken Sie auf **Authorize** und verwenden den API-Schlüssel, der für die vorgesehene Organisation und den vorgesehenen Benutzer bereitgestellt wurde. Kopieren Sie einen Schlüssel niemals in einen Screenshot, in eine CSV-Datei oder in ein geteiltes Beispiel. Zur Einrichtung der Zugangsdaten siehe [Integration und SSO](https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/integration).
 
-    <figure><img src="../.gitbook/assets/import_csv_1.png" alt=""><figcaption></figcaption></figure>
-3.  Geben Sie den API-Schlüssel ein und klicken Sie auf **"Authorize"**
+Die vier Bilder unten sind eigene Aufnahmen der Dev-API-Referenz, Version **12.83.642**, Server **/dev-api**, aufgenommen am 13.11.2026. Die API-Konsole von DocBits ist derzeit nur auf Englisch verfügbar; die Bilder zeigen deshalb die englischen Beschriftungen der Konsole. Es wurde kein API-Schlüssel und keine CSV-Datei eingegeben, und **Execute** wurde nicht angeklickt. Die sichtbaren Werte `string` sind von Swagger erzeugte Beispiele, keine gültigen Organisations-IDs und keine vorbereiteten Importdaten.
 
-    * Der API-Schlüssel kann in DocBits unter Einstellungen -> Globale Einstellungen -> Integration gefunden werden.
-    * **Hinweis:** Der in Ihrer Anfrage angegebene API-Schlüssel bestimmt die Zielorganisation und den Benutzerkontext, unter dem die Daten importiert werden.
+<figure><img src="../.gitbook/assets/csv-import-referenz-start-de-20261113.png" alt="Eigene Aufnahme der englischsprachigen Dev-API-Referenz mit Version 12.83.642, der OpenAPI-Definition, dem Server dev-api und der nicht verwendeten Schaltfläche Authorize"><figcaption><p>Prüfen Sie zuerst Version und Server der Referenz. Dies ist die Dev-Referenz ohne autorisierte Zugangsdaten.</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_api_de.png" alt=""><figcaption></figcaption></figure>
+### Die Import-Operation öffnen
 
-    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="" width="563"><figcaption></figcaption></figure>
-4. Drücken Sie **CTRL + F** (oder **CMD + F** auf Mac), um die Suchfunktion zu öffnen, und suchen Sie nach `/master_data_lookup/import_data`.
-5.  Klicken Sie auf die Anfrage, um die Details anzuzeigen, und klicken Sie dann auf "**Try it out"**, um fortzufahren.
+1. Suchen Sie **POST /master_data_lookup/import_data** und klappen Sie den Eintrag auf.
+2. Klicken Sie auf **Try it out**, um das lokale Anfrageformular zu aktivieren. Dieser Schritt allein führt keinen Import aus. Mit **Cancel** verlassen Sie den Bearbeitungsmodus, ohne den Import zu senden.
 
-    <figure><img src="../.gitbook/assets/import_csv_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/csv-import-operation-de-20261113.png" alt="Aufgeklappte Operation POST master_data_lookup import_data mit der Schaltfläche Try it out und dem erforderlichen Anfragekörper im Format multipart/form-data"><figcaption><p>Die Import-Operation erwartet einen Anfragekörper im Format multipart/form-data. Try it out aktiviert das Formular; der Import wird dabei nicht gesendet.</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_6.png" alt=""><figcaption></figcaption></figure>
-6.  Sie können jetzt die erforderlichen Parameter im Anfragekörper eingeben.\\
+### Anfragekörper vorbereiten
 
-    **Anfrageparameter:**
+* **sub_org_id:** Geben Sie die vorgesehene, autorisierte ID der Unterorganisation ein, wenn der Import zu einer Unterorganisation gehört. Entfernen Sie andernfalls das erzeugte Beispiel `string` und lassen Sie das Feld bewusst leer, gegebenenfalls über die Schaltfläche **Send empty value**. Ein leeres Feld kennzeichnet keine Testorganisation und begrenzt keine organisationsweite Ersetzung.
+* **data_type:** Geben Sie `supplier` oder `purchase_order` für die auf dieser Seite beschriebenen Abläufe ein. Ersetzen Sie das erzeugte Beispiel `string`; das Feld ist ein Pflichtfeld.
+* **file / csv_data:** Diese Anleitung verwendet eine CSV-Datei. Löschen Sie das erzeugte Beispiel in **csv_data**, bevor Sie die Datei auswählen: Ein nicht leeres `csv_data` wird im geprüften Importer vor der Datei verarbeitet. Wählen Sie Ihre geprüfte CSV unter **file** und bestätigen Sie, dass der Dateiname angezeigt wird. Übernehmen Sie die Beispielwerte der Bilder nicht als Ihre Anfrage.
+* **delimiter:** Wählen Sie das tatsächliche Trennzeichen Ihrer CSV ausdrücklich: Komma (`,`) oder Semikolon (`;`). Prüfen Sie die ersten Zeilen in einem reinen Texteditor. Gehen Sie nicht davon aus, dass das im Formular zunächst gesetzte Semikolon zu Ihrer Datei oder zum Standardwert des Servers passt.
 
-    Bei der Durchführung der Importanfrage müssen die folgenden Parameter angegeben werden:
+<figure><img src="../.gitbook/assets/csv-import-eingabefelder-de-20261113.png" alt="Eigenes Bild des Dev-Importformulars mit sub_org_id, dem Pflichtfeld data_type, csv_data, einer leeren Dateiauswahl und dem Feld delimiter mit den von Swagger erzeugten Beispielen string"><figcaption><p>Die oberen Anfragefelder vor jeder Eingabe und vor dem Hochladen einer Datei. Die sichtbaren Beispiele string müssen für eine echte Anfrage ersetzt oder geleert werden; hier ist keine Datei ausgewählt.</p></figcaption></figure>
 
-    * **sub\_org\_id:** Entfernen Sie jeglichen Text aus dem Textfeld, um sicherzustellen, dass die Option "Send empty value" aktiviert ist.
-    * **data\_type:** Dieser Parameter gibt den Typ der importierten Daten an. Er kann entweder `supplier` oder `purchase_order` sein, abhängig vom Inhalt Ihrer .csv-Datei.
-    * **replace\_all:** Dieser boolesche Parameter bestimmt, ob alle vorhandenen Daten in der jeweiligen Datenbanktabelle (`supplier` oder `purchase_order`) für die angegebene Organisation gelöscht werden sollen, bevor die neuen Daten aus der .csv-Datei eingefügt werden. Setzen Sie dies auf `true`, um alle vorhandenen Daten zu ersetzen, oder auf `false`, um die neuen Daten anzuhängen oder zu aktualisieren.
-    *   **delimiter:** Dieser Parameter gibt das Zeichen an, das verwendet wird, um die einzelnen Werte innerhalb jeder Zeile Ihrer Datendatei zu trennen. **Es ist wichtig, den richtigen Trennzeichen in Ihrer Datei zu identifizieren.** Häufige Trennzeichen sind das Komma (`,`) und das Semikolon (`;`).
+### Ersetzungs- und Konfliktoptionen prüfen
 
-        **So überprüfen Sie das Trennzeichen:**
+Diese Beschreibungen der Optionen beziehen sich auf den geprüften Importer. Bestätigen Sie Ersetzungsumfang und Konfliktverhalten für die API-Version, die Sie verwenden; die Ansichten der Referenz belegen diese Wirkungen nicht.
 
-        1. Öffnen Sie Ihre Datendatei (z. B. die `.csv`-Datei) mit einem einfachen Texteditor (wie Notepad unter Windows, TextEdit auf Mac oder ähnlichem).
-        2. Untersuchen Sie die ersten paar Zeilen der Daten. Suchen Sie nach dem Zeichen, das konsequent zwischen den verschiedenen Informationen in jeder Zeile erscheint. Dieses Zeichen ist Ihr Trennzeichen.
-        3. Setzen Sie den `delimiter`-Parameter in Ihrer Importanfrage auf dieses identifizierte Zeichen (entweder `,` oder `;`). Die Verwendung des falschen Trennzeichens verhindert, dass die Daten korrekt analysiert werden, und führt zu einem fehlgeschlagenen Import.
-    * **on\_conflict & auto\_generate\_id:** Die Funktionalität zur Handhabung von Datenkonflikten (`on_conflict`) und zur automatischen Generierung von IDs (`auto_generate_id`) ist derzeit **nicht implementiert** für diese Datentypen.
+* **replace_all:** Der angegebene Standardwert ist `false`. Mit `true` werden vorhandene Datensätze des gewählten Datentyps entfernt, bevor die CSV geladen wird. Der Ersetzungsumfang ist die Organisation, mit einem Filter auf die Unterorganisation, wenn eine angegeben ist. Prüfen Sie diesen Umfang ausdrücklich, bevor Sie die Ersetzung verwenden; ein leeres sub_org_id kann den gewählten Datentyp in der gesamten Organisation betreffen. Mit `false` werden vorhandene Datensätze gemäß **on_conflict** behandelt.
+* **on_conflict:** Wählen Sie `IGNORE`, um passende vorhandene Lieferanten- oder Bestelldatensätze unverändert zu lassen, oder `REPLACE`, um sie aus der CSV zu aktualisieren. Der angegebene Standardwert ist `REPLACE`. Diese Option schützt Datensätze nicht vor dem vorherigen Entfernungsschritt durch **replace_all**.
+* **auto_generate_id:** Lassen Sie diesen Wert auf `false` und geben Sie die erforderlichen fachlichen Identifikatoren in Ihrer CSV an. Die optionale automatische Vergabe wird von den geprüften Importvorgängen für Lieferanten und Bestellungen nicht verwendet; verlassen Sie sich nicht darauf, fehlende Lieferanten- oder Bestellnummern erzeugen zu lassen.
 
-    <figure><img src="../.gitbook/assets/import_csv_4.png" alt=""><figcaption></figcaption></figure>
-7.  Wenn Sie überprüft haben, dass alle Informationen korrekt sind, können Sie den Importprozess starten, indem Sie auf die Schaltfläche **"Execute"** klicken.
+<figure><img src="../.gitbook/assets/csv-import-optionen-de-20261113.png" alt="Eigenes Bild der Dev-Importoptionen mit replace_all false, on_conflict REPLACE, auto_generate_id false, dem Server dev-api und der unveränderten Schaltfläche Execute"><figcaption><p>Das untere Formular und die Schaltfläche Execute im vorhandenen Anzeigezustand. Es wurde keine Option geändert und Execute nicht angeklickt; dieses Bild ist kein Importergebnis.</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_5.png" alt=""><figcaption></figcaption></figure>
+Klicken Sie erst dann auf **Execute**, wenn Zielumgebung, Organisation, Umfang der Unterorganisation, CSV und Optionen geprüft sind und der Import autorisiert ist. Prüfen Sie die Antwort und verifizieren Sie die vorgesehenen Datensätze, bevor Sie weitere Importe durchführen. Für Bestellungen siehe [Bestellung](https://docs.docbits.com/deutsch/end-user-and-partner-section/end-user-section/purchase-order-dashboard). Diese Bilder zeigen die Bedienelemente; sie belegen keinen ausgeführten Import und keine vollständige Prüfung der CSV-Daten.

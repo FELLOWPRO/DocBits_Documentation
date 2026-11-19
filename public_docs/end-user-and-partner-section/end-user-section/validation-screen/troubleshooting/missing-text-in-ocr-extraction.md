@@ -1,47 +1,35 @@
 # Testo mancante nell'estrazione OCR
 
-## **Problema**
+Se il testo è visibile su un documento ma un campo non può essere estratto, controlla prima se DocBits ha riconosciuto quel testo. Un'immagine scansionata e il testo incorporato in un PDF possono produrre risultati diversi. Non modificare una regola di estrazione prima di sapere quale testo è disponibile.
 
-In alcuni casi, il testo potrebbe sembrare mancante nella **Vista OCR**, il che impedisce di essere estratto utilizzando la funzione di estrazione.
+## Controllare la vista OCR
 
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_5-it.png" alt="Verifica dei campi estratti da una fattura fittizia."><figcaption><p>Verifica dei campi estratti da una fattura fittizia.</p></figcaption></figure>
+1. Apri il documento in **Convalida Del Campo**.
+2. Nella barra degli strumenti a destra, seleziona l'icona **Vista OCR**. La vista OCR si apre in una scheda separata del browser.
+3. Cerca la parola o il numero mancante nel livello di testo riconosciuto. Se non è presente, l'estrazione del campo non può prelevarlo da quel livello di testo. Se è presente, controlla invece la mappatura del campo.
 
-Per verificare questo, fai clic sul pulsante **Vista OCR** nella barra degli strumenti a destra. Se il testo non appare lì, significa che non è disponibile per l'estrazione.
+<figure><img src="../../../../.gitbook/assets/dbdc-1237-ocr-view-it-20261113.png" alt="Vista OCR di una fattura fittizia in italiano: le parole riconosciute sono sovrapposte alla pagina"><figcaption><p>Confronta il testo sul documento con le parole mostrate nella vista OCR: qui il titolo Fattura, il numero di fattura INV-2026-0412, la data 14/09/2026 e il nome del fornitore Musterfirma GmbH sono presenti come testo. L'esempio mostra testo riconosciuto, non un'estrazione non riuscita.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_6-it.png" alt="Vista OCR del testo riconosciuto sulla fattura fittizia."><figcaption><p>Vista OCR del testo riconosciuto sulla fattura fittizia.</p></figcaption></figure>
+## Provare l'OCR invece dell'E-Text incorporato per un fornitore
 
-## **Causa**
+Quando **Utilizzare il testo elettronico, se disponibile** è attivo, DocBits può usare il testo già incorporato nel PDF. Il testo che esiste solo dentro un'immagine può mancare in quel livello. Per un fornitore i cui documenti presentano questo problema:
 
-La causa più probabile è che il testo che stai cercando di estrarre fa parte di un'immagine (ad es. un logo o una sezione scansionata) all'interno del documento.\
-Quando la funzione E-Text è attivata, il testo che appare su immagini o loghi non è incluso nel livello di testo estratto. Di conseguenza, questo testo non può essere accessibile o estratto tramite la logica di estrazione standard.
+1. Apri un documento di quel fornitore in **Convalida Del Campo**.
+2. Seleziona **Altre opzioni** (tre punti) nella barra degli strumenti a destra.
+3. Disattiva **Utilizzare il testo elettronico, se disponibile**.
+4. Leggi l'avviso di riavvio e seleziona **Confermare** per salvare la modifica e rielaborare il documento. Seleziona **Annulla** per lasciare invariata l'impostazione.
+5. Dopo l'elaborazione, apri di nuovo la **Vista OCR** e controlla se il testo mancante compare.
 
-## **Soluzione**
+<figure><img src="../../../../.gitbook/assets/dbdc-1237-supplier-etext-it-20261113.png" alt="Menu Altre opzioni nella convalida del campo con l'interruttore Utilizzare il testo elettronico, se disponibile ancora attivo"><figcaption><p>L'interruttore dell'E-Text del fornitore si trova in Altre opzioni nella schermata di convalida ed è qui ancora attivo; nel passaggio 3 lo disattivi.</p></figcaption></figure>
 
-Per risolvere questo problema, disabilita la funzione E-Text—sia per il [fornitore specifico](missing-text-in-ocr-extraction.md#disabilita-e-text-per-un-fornitore-specifico) sia per [l'intera organizzazione](missing-text-in-ocr-extraction.md#disabilita-e-text-per-lintera-organizzazione). Una volta disattivato E-Text, DocBits si baserà esclusivamente su OCR, che è in grado di estrarre testo da immagini e loghi all'interno del documento.
+<figure><img src="../../../../.gitbook/assets/dbdc-1237-restart-confirm-it-20261113.png" alt="Finestra di conferma con l'avviso che il documento deve essere riavviato e i pulsanti Annulla e Confermare"><figcaption><p>Confermare riavvia l'elaborazione del documento aperto, così l'impostazione del fornitore ha effetto.</p></figcaption></figure>
 
-### **Disabilita E-Text per un Fornitore Specifico**
+Il menu **Altre opzioni** contiene altre voci relative ad attività diverse: **Utilizzare l'estrazione strutturata (IA)** e **Modello di intelligenza artificiale (campi di intestazione e tabella)** sono descritti in [Modello di intelligenza artificiale specifico del fornitore per l'estrazione di campi e tabelle](../supplier-specific-ai-model-for-field-and-table-extraction.md). Che cosa mostra **Flusso di documenti** è descritto in [Flusso del documento](../../dashboard/document-flow.md); **Costruttore di layout** apre l'[editor di layout](../../../../administration-and-setup/setup/document-types/layout-builder.md).
 
-1. Apri un documento del fornitore specifico in **Validazione del campo**.
-2.  Fai clic sul menu a tre punti nella barra degli strumenti a destra.
+## Modificare l'impostazione predefinita dell'organizzazione
 
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_2-it.png" alt="Menu delle opzioni aggiuntive nella convalida dei campi."><figcaption><p>Menu delle opzioni aggiuntive nella convalida dei campi.</p></figcaption></figure>
+Un amministratore può aprire **Impostazioni → ELABORAZIONE DOCUMENTI → Impostazioni OCR → Impostazioni generali OCR** e disattivare **Utilizzare il testo elettronico, se disponibile** per l'organizzazione. Questo cambia l'impostazione predefinita per le elaborazioni successive; i documenti già interessati vanno controllati e rielaborati separatamente. Le altre impostazioni OCR sono descritte in [Impostazioni OCR](../../../../administration-and-setup/settings/document-processing/ocr-settings.md).
 
-3.  Deseleziona **Utilizzare il testo elettronico, se disponibile**.
+<figure><img src="../../../../.gitbook/assets/dbdc-1237-org-ocr-settings-it-20261113.png" alt="Scheda Impostazioni generali OCR con l'interruttore Utilizzare il testo elettronico, se disponibile a livello di organizzazione"><figcaption><p>L'impostazione dell'organizzazione è utile quando il problema riguarda documenti di più fornitori. La stessa scheda mostra anche l'opzione Utilizzare DESKEW se disponibile e la Versione AI OCR.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_3-it.png" alt="Opzione di utilizzo del testo elettronico nel menu del documento."><figcaption><p>Opzione di utilizzo del testo elettronico nel menu del documento.</p></figcaption></figure>
-
-4.  Fai clic su **Confermare** per riavviare l'elaborazione del documento.
-
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_4-it.png" alt="Conferma prima di modificare l’utilizzo del testo elettronico."><figcaption><p>Conferma prima di modificare l’utilizzo del testo elettronico.</p></figcaption></figure>
-
-### Disabilita E-Text per l'Intera Organizzazione
-
-1.  Vai su **Impostazioni → Elaborazione dei documenti → Impostazioni OCR**.
-
-<figure><img src="../../../../.gitbook/assets/s150-settings_ocr-it.png" alt="Impostazioni OCR nell’interfaccia italiana."><figcaption><p>Impostazioni OCR nell’interfaccia italiana.</p></figcaption></figure>
-
-2.  Sotto **Impostazioni generali OCR**, deseleziona l'opzione **Utilizzare il testo elettronico, se disponibile**.
-
-<figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_1-it.png" alt="Impostazioni OCR generali con l’opzione di utilizzo del testo elettronico."><figcaption><p>Impostazioni OCR generali con l’opzione di utilizzo del testo elettronico.</p></figcaption></figure>
-
-Le immagini utilizzano una fattura fittizia con testo OCR disponibile. Illustrano verifiche dell’interfaccia, non un incidente riprodotto di testo mancante.
+Se il testo manca ancora dopo la rielaborazione, controlla la qualità della scansione e rivolgiti all'amministratore DocBits o all'assistenza indicando l'ID del documento e il numero di pagina. Non inviare un documento riservato in una richiesta di assistenza pubblica.

@@ -1,94 +1,46 @@
 # Przewodnik po pliku ścieżek ekstrakcji EDI
 
-## 1. Przegląd
+Konfiguracja **Ścieżki ekstrakcji** wskazuje DocBits, gdzie w strukturyzowanym dokumencie EDI/XML znajdują się wartości pól dokumentu. Przypisuje pola dokumentu i kolumny tabel do wyrażeń XPath. Zmieniaj tę konfigurację tylko wtedy, gdy zarządzasz formatami dokumentów elektronicznych w swojej organizacji.
 
-**Plik ścieżek ekstrakcji** definiuje sposób ekstrakcji danych z **strukturalnego XML** do konkretnych pól dokumentów i tabel w interfejsie. Mapuje **identyfikatory pól** na **wyrażenia XPath**, które są oceniane, aby pobrać wartości z XML do odpowiadających pól dokumentów. Ten plik odgrywa kluczową rolę w zapewnieniu, że wyekstrahowane dane pojawią się poprawnie podczas walidacji pola i przetwarzania w dół.
+## Otwieranie ścieżek ekstrakcji
 
-## 2. Cel i Funkcja
+1. Przejdź do **Ustawienia → Typy Dokumentów**.
+2. Otwórz **E-Doc** dla typu dokumentu, który chcesz skonfigurować. Zrzuty ekranu poniżej pokazują typ **PURCHASE_ORDER**.
+3. Rozwiń **EDI** i wybierz **EXTRACTION PATHS**. Wiersz jest oznaczony jako **JSON**.
 
-* Mapuje każde pole dokumentu i kolumnę tabeli do określonego miejsca w strukturalnym XML za pomocą wyrażeń XPath.
-* Zapewnia, że poprawne wartości są wprowadzane do pól takich jak `order_number`, `supplier_name` i `total_amount`.
-* Obsługuje zarówno **pojedyncze pola** (za pomocą obiektu `fields`) jak i **tabelki** (za pomocą tablicy `tables` z ścieżkami wierszy i mapowaniem kolumn).
-* Umożliwia precyzyjną kontrolę nad tym, jak dane są pobierane z XML, w tym wykorzystanie funkcji XPath, takich jak `sum()`.
+<figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-format-pl-20261114.png" alt="Lista E-Doc po polsku z pozycjami STRUCTURE DESCRIPTOR, TRANSFORMATION, PREVIEW i EXTRACTION PATHS w grupie EDI, wszystkie ze statusem Domyślny"><figcaption><p>Grupa EDI zawiera osobne pozycje STRUCTURE DESCRIPTOR, TRANSFORMATION, PREVIEW i EXTRACTION PATHS; ostatnia z nich jest oznaczona jako JSON.</p></figcaption></figure>
 
-Przykład mapowania pola:
+Jeśli musisz zmienić inny składnik EDI, skorzystaj z odpowiedniego przewodnika: [Transformacja](edi-transformation-file-guide.md) lub [Podgląd](edi-preview-file-guide.md).
 
-Copy
+## Odczytywanie mapowania
 
-```
-"order_number": "//PURCHASE_ORDER/PURCHASE_ORDER/text()"
-```
+Strona szczegółów pokazuje po lewej wybrany typ dokumentu i format elektroniczny, pod nim jego wersje, a po prawej mapowanie JSON. Znacznik **Aktywny** wskazuje wersję używaną obecnie. **Format** porządkuje JSON do czytania; nie aktywuje żadnej wersji.
 
-## 3. Dostęp i Podstawowa Edycja
+<figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-path-detail-pl-20261114.png" alt="Szczegóły ścieżek ekstrakcji po polsku z typem dokumentu PURCHASE_ORDER, formatem elektronicznym EDI, wersją 1 oznaczoną jako Aktywny oraz edytorem JSON z wyrażeniami XPath i definicją tabeli"><figcaption><p>Mapowanie EDI aktywnej wersji, z edytorem JSON po prawej stronie listy wersji.</p></figcaption></figure>
 
-#### **Dostęp do Pliku:**
+JSON ma dwie główne części:
 
-1.  Przejdź do **Ustawienia** → **Typ Dokumentu** → _\[Twój Dokument (np. Zamówienie Zakupu)]_ → **E-Dok**.
+* `fields` przypisuje pole DocBits, na przykład `order_number`, do ścieżki XPath wartości w XML.
+* `tables` identyfikuje powtarzający się wiersz przez `row_path` i przypisuje każdą kolumnę tabeli przez `name` oraz `path`.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff6zyL0AvmqSvrogZdnox%252Fimage.png%3Falt%3Dmedia%26token%3D6bc9ab55-6ee9-43d1-b576-4c5833c208cf\&width=768\&dpr=4\&quality=100\&sign=a23de442\&sv=2)
-2. W zakładce **E-Dok** wybierz swój format (np. **EDI**).
-3.  Kliknij **Ścieżki Ekstrakcji**, aby wyświetlić lub edytować plik.
+Na przykład widoczne mapowanie zawiera `"order_number": "//PURCHASE_ORDER/PURCHASE_ORDER_NUMBER/text()"`. Tabela `order_table` używa `"row_path": "//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE"`. Struktura Twojego XML i nazwy pól DocBits mogą się różnić; kopiuj ścieżki z własnego dokumentu przykładowego, a nie z tego przykładu.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FawwG5QnErp1yy1eYHrlX%252Fimage.png%3Falt%3Dmedia%26token%3D46a6d8b3-52d2-4c13-bc72-1a74955efd9f\&width=768\&dpr=4\&quality=100\&sign=e612882b\&sv=2)
+## Tworzenie i sprawdzanie zmiany
 
-#### **Zarządzanie Wersjami Roboczymi:**
+Ołówek obok aktywnej wersji tworzy **wersję roboczą**. Wprowadź zmiany JSON w tej wersji roboczej. Przed aktywacją sprawdź nazwy pól i ścieżki na własnym pliku XML. Znacznik wyboru wersji roboczej aktywuje tę wersję; aktywowanie nowej wersji zastępuje poprzednio aktywną. Ikony kosza używaj tylko do usunięcia niepotrzebnej wersji roboczej.
 
-* **Utwórz Wersję Roboczą:** Kliknij ikonę ołówka ✏️.
-* **Usuń Wersje Robocze:** Użyj ikony kosza 🗑️, aby usunąć nieużywane wersje robocze.
-* **Aktywuj Zmiany:** Kliknij znacznik sprawdzania ✅, aby opublikować wersję.
-  * **Uwaga**: Aktywowanie nowej wersji spowoduje **automatyczne dezaktywowanie** poprzedniej.
+Kliknij **Podgląd**, aby otworzyć panel testowy. W polu **Document Id...** wpisz **ID dokumentu** DocBits przesłanego dokumentu EDI i kliknij **Test**. Porównaj zwrócone wartości z dokumentem źródłowym. Zrzut ekranu pokazuje wymyślony przykładowy identyfikator oraz przykładową odpowiedź systemu; te wartości nie pochodzą z rzeczywistego dokumentu.
 
-## 4. Edytor i Składnia
+<figure><img src="../../../../../../.gitbook/assets/edi-extraction-paths-file-guide-preview-pl-20261114.png" alt="Panel testowy po polsku z polem Document Id... wypełnionym wymyślonym przykładowym identyfikatorem, przyciskiem Test oraz po prawej przykładową odpowiedzią z wymyślonymi wartościami"><figcaption><p>Panel testowy z wymyślonym przykładowym ID i przykładową odpowiedzią; nie twierdzimy, że to wynik rzeczywistego dokumentu.</p></figcaption></figure>
 
-Plik ścieżek ekstrakcji jest napisany w formacie **JSON** i zawiera dwie główne składowe:
+Potrzebujesz ID dokumentu? Otwórz przesłany dokument w DocBits i skopiuj jego ID. Informacje o tych plikach znajdziesz w [Ustawienia EDI](README.md) i [przewodniku wideo EDI](edi-videos.md).
 
-* **fields**: Słownik, w którym każdy klucz to identyfikator pola, a każda wartość to wyrażenie XPath definiujące sposób ekstrakcji danych.
-* **tables**: Lista definicji tabel, która obejmuje:
-  * `name`: ID tabeli.
-  * `row_path`: XPath identyfikujący każdy wiersz tabeli.
-  * `columns`: Lista mapowań kolumn (`name`, `path`).
+Ten przewodnik opisuje zmianę istniejącej pozycji; przycisk **Nowy** na górze listy oraz menu z trzema kropkami przy wierszu nie są do tego potrzebne.
 
-Możesz również używać funkcji XPath (np. `sum()`) i wyrażeń do obliczania wartości dynamicznie z powtarzających się elementów.
+## Obowiązujące reguły i aktywacja
 
-Copy
+Jeśli elektroniczna nota kredytowa jest wyświetlana jako Invoice, skorzystaj z [przewodnika rozwiązywania problemów z klasyfikacją](../credit-note-recognized-as-invoice.md). Opisuje on faktycznie używane źródło niestandardowe lub domyślne, kody typów, ścieżki ekstrakcji i bezpieczną aktywację.
 
-```json
-"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
-```
+Widoki przedstawiają istniejącą konfigurację i wersję. Ustawienia różnią się w zależności od typu dokumentu i formatu. Zmiany sprawdź w wersji roboczej przed aktywacją.
 
-## 5. Funkcja Podglądu (Oceń Ekstrakcję)
-
-**Funkcja Podglądu** pozwala symulować zachowanie ścieżek ekstrakcji z rzeczywistym przesłanym dokumentem.
-
-**Użycie:**
-
-* Prześlij plik EDI za pomocą standardowego procesu przesyłania.
-* Skopiuj **ID Dokumentu**.
-* Przejdź do interfejsu **Ścieżki Ekstrakcji**.
-* Otwórz **Funkcję Podglądu**.\
-  \
-  &#x20;![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a\&width=300\&dpr=4\&quality=100\&sign=36ce2b93\&sv=2)
-* Wprowadź ID Dokumentu i kliknij **Test**.
-* Wynik pokaże, jak każde pole i tabela jest wypełniona na podstawie skonfigurowanych ścieżek.
-
-Ta funkcja jest istotna do weryfikacji, czy Twoje wyrażenia XPath są poprawnie zdefiniowane i pobierają oczekiwane wartości przed aktywacją wersji roboczej.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F81uvH6FFVBJsSZucanWY%252Fimage.png%3Falt%3Dmedia%26token%3Dde3ba545-1ee3-44b2-a629-9660d80174f2\&width=768\&dpr=4\&quality=100\&sign=43c8b507\&sv=2)
-
-## 6. Przewodnik Wideo
-
-Przewodnik wideo dla tego typu pliku jest dostępny na [stronie z filmami.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Użyj go, aby śledzić konfigurację, edycję i podgląd.
-
-## Faktycznie używane reguły i aktywacja
-
-Jeśli elektroniczna nota kredytowa jest wyświetlana jako Invoice, skorzystaj z [przewodnika rozwiązywania problemów z klasyfikacją](../credit-note-recognized-as-invoice.md). Opisuje on faktycznie używane źródło niestandardowe lub domyślne, kody typów, Extraction Paths i bezpieczną aktywację.
-
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-pl.png" alt="Istniejący format EDI z czterema skonfigurowanymi atrybutami."><figcaption><p>Istniejący format EDI z czterema skonfigurowanymi atrybutami.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-pl.png" alt="Aktywny atrybut EXTRACTIONPATHS: konfiguracja JSON zawierająca wyrażenia XPath do ekstrakcji."><figcaption><p>Aktywny atrybut EXTRACTIONPATHS: konfiguracja JSON zawierająca wyrażenia XPath do ekstrakcji.</p></figcaption></figure>
-
-
-Widoki przedstawiają istniejącą konfigurację i wersję. Ustawienia różnią się w zależności od typu dokumentu i formatu. Sprawdź zmiany w wersji roboczej przed aktywacją.
-
-Ilustracje przedstawiają polskie karty etapów oraz aktywną wersję konfiguracji w trybie tylko do odczytu. W pokazanej wersji interfejsu przycisk podglądu ma błędny podpis „Zapowiedź”; odpowiada on funkcji podglądu, oznaczonej w karcie jako „Podgląd”. Techniczne nagłówki edytora, identyfikatory atrybutów i kod konfiguracji pozostają w oryginalnej postaci.
+W pokazanej wersji interfejsu niektóre etykiety, takie jak **Version** i **Document Id...**, pozostają w języku angielskim. Techniczne identyfikatory atrybutów i kod konfiguracji pozostają niezmienione.

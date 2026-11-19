@@ -20,6 +20,8 @@ Touchless Intelligence 会显示采购订单匹配**为什么**失败，以及 D
 | **Document Trace** | 状态为 **blocked** 的 **PO Line Match** 阶段及其原因 |
 | **Settings → Document Types → More Settings → Purchase Order** | 匹配规则本身。参见 [Purchase Order Matching Rules](../../settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) |
 
+在 **Nova** 发布通道中，第一行是 **Why documents are not touchless** 面板。在该处展开 PO matching 区域，即可查看各项原因及其文档数量；上文提到的柱状图仍保留在 **Vesta** 中。
+
 ## 两个采购订单阶段
 
 | 阶段 | 问题 | 停止原因 |

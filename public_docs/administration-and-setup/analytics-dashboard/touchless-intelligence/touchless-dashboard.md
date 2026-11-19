@@ -54,6 +54,17 @@
 
 **示例。**柱条：Supplier Identification 12、Field Validation 41、PO Line Match 7。最高的柱子提示您先查看 **Field Validation**。提取值缺失是可能原因之一；确认之前，请比较原始发票、字段规则和可用的源数据。
 
+#### 为什么文档没有实现 touchless（Nova 发布通道）
+
+在 **Nova** 发布通道中，同一个问题由可展开列表回答，而不是柱状图。该面板标题为 **Why documents are not touchless**，位于 **Touchless rate over time** 旁边。
+
+* 表头给出列表覆盖的文档数量。每行是一个首要阻塞区域，包含其百分比占比、文档数量和一条柱状条。各行按从大到小排序。
+* 点击某一行即可在该处展开其原因。各项原因保留各自的文档数量，因此您可以看到某个区域内最耗文档的原因。同一时间只展开一个区域；再次点击即可收起。
+* 列表与关键指标来自同一份报表数据。数字不在浏览器中重新计算，因此表头的合计与各行始终一致。
+* 如果您的安装尚未发送这些数据，面板会说明这一点，而不是显示 **0**。空列表并带有“无记录”提示，表示该期间没有文档流失；这两种状态不同，不应把前者理解为好消息。
+
+**Vesta** 发布通道保留上文所述的柱状图。如果您的页面显示柱状条，说明您在使用 Vesta；如果显示可展开列表，说明您在使用 Nova。两者回答同一个问题，因此本页其余内容在两种情况下都适用。
+
 ### 供应商机会
 
 <figure><img src="../../../.gitbook/assets/touchless-supplier-queue.png" alt="Supplier opportunities 表，包含 volume、pure rate、lost documents、root cause、recoverable documents、expected lift、confidence 和 status"><figcaption><p>供应商队列（缩短为首四行）。第一家供应商有 106 份文档、38.7 % 的 pure 比率和 65 份可挽回文档，因此修复它价值 <strong>+21 pp</strong>。示例组织，使用演示数据；供应商名称为虚构。</p></figcaption></figure>
@@ -101,7 +112,7 @@
 
 1. **每周**：打开该选项卡，对照目标检查**比率**和**趋势**。
 2. 查看**诊断覆盖率**。低于约 80 % 时，先查明文档为何停下。
-3. 阅读 **Where touchless is lost first**，选择最大的阶段。
+3. 阅读 **Where touchless is lost first**（Vesta）或 **Why documents are not touchless**（Nova），并选择最大的阶段或区域。
 4. 打开 **Supplier opportunities**。按 **Expected lift** 排序，选取状态为 **RECOVERABLE** 的首家供应商。
 5. 阅读**问题集群**，检查 **Missing evidence**，然后按照 **What to change** 操作。
 6. 修复一个已确认的原因。对于受支持的 DocBits 提案，使用预览和变更历史。对于 Infor 更正，另行记录来源并导入；它不会自动生成 DocBits 设置变更条目。

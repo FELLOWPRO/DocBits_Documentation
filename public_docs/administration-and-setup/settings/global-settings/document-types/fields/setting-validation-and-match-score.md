@@ -1,25 +1,31 @@
 # Ustawianie walidacji i wyniku dopasowania
 
-W sekcji **Pola** można ustawić progi walidacji i rozpoznawania dla typu dokumentu. Strona używa typu **Faktura** w testowej organizacji dokumentacji. Opisuje aktualne pole wyboru **WYMUSZENIE WALIDACJI** oraz elementy sterujące **WYNIK MECZU**.
+W sekcji **Pola** możesz ustawić progi walidacji i rozpoznawania dla typu dokumentu. Ta strona używa typu **Faktura** w testowej organizacji dokumentacji. Opisuje aktualne pole wyboru **WYMUSZENIE WALIDACJI** oraz elementy sterujące **WYNIK DOPASOWANIA**.
 
 ## Otwieranie ustawień pól
 
-1. Przejdź do **Ustawienia → Typy dokumentów → Faktura → Pola**.
+1. Przejdź do **Ustawienia → Typy Dokumentów → Faktura → Pola**.
 2. Użyj pola **Szukaj według nazwy**, aby znaleźć pole, na przykład `invoice_number` (wyświetlane jako **Numer faktury**).
 3. Sprawdź wiersz pola przed zmianą ustawienia. **WYMAGANY**, **Tylko Do Odczytu**, **Ukryty** i **WYMUSZENIE WALIDACJI** to oddzielne pola wyboru.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-679-fields-overview-pl-20261011.png" alt="Polska strona Pola w Sandbox z ustawieniami rozpoznawania, elementami OCR i WYNIK MECZU, kolumnami pól i przyciskiem Zapisz ustawienia"><figcaption>Elementy sterujące rozpoznawaniem znajdują się nad listą pól.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/setting-validation-and-match-score-overview-pl-20261111.png" alt="Polska strona Pola w Sandbox z sekcją USTAWIENIA ROZPOZNAWANIA, suwakami OCR i WYNIK DOPASOWANIA, kolumnami pól i wierszem Numer faktury"><figcaption><p>Ustawienia rozpoznawania i kolumny pól znajdują się nad listą pól.</p></figcaption></figure>
 
-## WYMUSZENIE WALIDACJI (Force Validation)
+## WYMUSZENIE WALIDACJI
 
 Zaznacz **WYMUSZENIE WALIDACJI** w wierszu pola, aby zastosować dla tego pola surowszą walidację. Pole wyboru jest niezależne od opcji **WYMAGANY**: oznaczenie pola jako wymagane nie zaznacza automatycznie opcji WYMUSZENIE WALIDACJI. Pole wyboru może być niedostępne, gdy pole jest ukryte lub tylko do odczytu. Po zmianie konfiguracji pól kliknij **Zapisz ustawienia**.
 
-Stare instrukcje sugerowały wpisywanie w tym miejscu limitów liczbowych lub wyrażeń regularnych. Aktualna tabela pól nie wyświetla edytora reguł w komórce WYMUSZENIE WALIDACJI. Reguły specyficzne dla pól opisuje strona [Konfigurowanie właściwości pola](configuring-field-properties-1.md).
+Stare instrukcje sugerowały wpisywanie w tym miejscu limitów liczbowych lub wyrażeń regularnych. Aktualna tabela pól nie wyświetla edytora reguł w komórce WYMUSZENIE WALIDACJI. Reguły dotyczące poszczególnych pól opisuje strona [Konfigurowanie właściwości pola](configuring-field-properties-1.md).
 
-## WYNIK MECZU (Match Score)
+## WYNIK DOPASOWANIA
 
-**WYNIK MECZU** to próg liczbowy, a nie stała wartość referencyjna. Suwaki **OCR** i **WYNIK MECZU** w sekcji **USTAWIENIA ROZPOZNAWANIA** stosują swoją wartość do wierszy pól typu dokumentu; aby ustawić wartość dla pojedynczego pola, użyj pola **WYNIK MECZU** w danym wierszu. W testowej organizacji oba suwaki pokazują **80**, a wiersz `invoice_number` pokazuje **60**. Przejrzyj objęte pola, a następnie kliknij **Zapisz ustawienia**.
+**WYNIK DOPASOWANIA** to próg liczbowy, a nie stała wartość referencyjna. Suwak **WYNIK DOPASOWANIA** w sekcji **USTAWIENIA ROZPOZNAWANIA** stosuje swoją wartość do wierszy pól typu dokumentu; wartość dla pojedynczego pola ustawiasz w polu **WYNIK DOPASOWANIA** w tym wierszu. Obok suwaka nie ma liczby — rzeczywiste wartości odczytasz w polach wierszy. W przykładzie wiersz `invoice_number` pokazuje **60** w kolumnach **OCR** i **WYNIK DOPASOWANIA**. Przejrzyj objęte pola, a następnie kliknij **Zapisz ustawienia**.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-679-invoice-id-settings-pl-20261011.png" alt="Polski wiersz pola invoice_number w Sandbox z zaznaczonym WYMUSZENIEM WALIDACJI i WYNIKIEM MECZU 60"><figcaption>Wyszukaj pole, aby sprawdzić jego pole wyboru WYMUSZENIE WALIDACJI i wartość WYNIK MECZU.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/setting-validation-and-match-score-invoice-number-pl-20261111.png" alt="Wyszukane pole invoice_number w polskiej stronie Pola: wiersz Numer faktury z zaznaczonymi polami WYMAGANY i WYMUSZENIE WALIDACJI oraz wartością 60 w kolumnach OCR i WYNIK DOPASOWANIA"><figcaption><p>Wyszukaj pole, aby sprawdzić jego pole wyboru WYMUSZENIE WALIDACJI i wartość WYNIK DOPASOWANIA.</p></figcaption></figure>
 
-**OCR** to oddzielny próg rozpoznawania obok wyniku dopasowania. **PRZYWRÓĆ USTAWIENIA DOMYŚLNE** resetuje ustawienia; użyj tej opcji tylko wtedy, gdy chcesz odrzucić własne progi. Inne opcje pól opisuje [Przegląd pól](README.md).
+**OCR** to oddzielny próg rozpoznawania obok wyniku dopasowania. **PRZYWRÓĆ USTAWIENIA DOMYŚLNE** resetuje ustawienia; użyj tej opcji tylko wtedy, gdy chcesz odrzucić własne progi. Inne działania na polach, w tym **Utwórz pole**, **Utwórz nową grupę**, **Ustawienia danych głównych** i **Przypisz ponownie grupę pól**, opisuje [Konfigurowanie właściwości pola](configuring-field-properties-1.md); przegląd typów pól znajdziesz w [Przegląd pól](README.md).
+
+## Przegląd na poziomie pól
+
+<figure><img src="../../../../../.gitbook/assets/setting-validation-and-match-score-field-level-pl-20261111.png" alt="Wiersze grupy DOSTAWCA SZCZEGÓŁY w polskiej stronie Pola z osobnymi wartościami WYMUSZENIE WALIDACJI, OCR i WYNIK DOPASOWANIA w każdym wierszu"><figcaption><p>Każdy wiersz pola ma własne wartości OCR i WYNIK DOPASOWANIA.</p></figcaption></figure>
+
+**WYMUSZENIE WALIDACJI**, **OCR** i **WYNIK DOPASOWANIA** to oddzielne ustawienia. WYNIK DOPASOWANIA jest progiem liczbowym: to nie jest stały tekst referencyjny ani selektor wartości dopasowania.

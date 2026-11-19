@@ -11,15 +11,15 @@ Bereid documenten voor die representatief zijn voor de formaten, talen en docume
 
 ## Import openen
 
-Open de modeltraining bij het gewenste documenttype en kies de importfunctie.
+Open de modeltraining in de instellingen van het gewenste documenttype en kies de importfunctie.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-nl.png" alt="Bediening voor importeren, modeltraining en classificatietests. Deze opname toont geen uitgevoerd trainings- of nauwkeurigheidsresultaat."><figcaption><p>Bediening voor importeren, modeltraining en classificatietests. Deze opname toont geen uitgevoerd trainings- of nauwkeurigheidsresultaat.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc650-model-training-overview-nl-20261110.png" alt="Overzicht van modeltraining: beschikbare gegevens en acties; er is geen training of import gestart."><figcaption><p>Overzicht van modeltraining: beschikbare gegevens en acties; er is geen training of import gestart.</p></figcaption></figure>
 
 ## Formaat en bestanden kiezen
 
-Kies het getal- en datumformaat dat bij de bestanden past en selecteer vervolgens de documenten. `1.234,56` en `1,234.56` gebruiken bijvoorbeeld verschillende scheidingstekens. Ook een datum zoals `05/06/2026` moet volgens het gekozen formaat worden geïnterpreteerd.
+Kies het getal- en datumformaat dat bij de bestanden past en selecteer vervolgens de documenten om te importeren. `1.234,56` en `1,234.56` gebruiken bijvoorbeeld verschillende scheidingstekens. Ook een datum zoals `05/06/2026` moet volgens het gekozen formaat worden geïnterpreteerd.
 
-<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-nl.png" alt="Documentimport met de keuze voor bedrag- en datumnotatie; er is geen bestand geüpload."><figcaption><p>Documentimport met de keuze voor bedrag- en datumnotatie; er is geen bestand geüpload.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc650-import-dialog-nl-20261110.png" alt="Dialoogvenster Documentuploader, geopend via Model trainen, met de keuzelijst Bedrag &amp; Datumnotatie, het gebied Sleep en zet bestand(en) hier neer en het veld Uploaden; er zijn geen bestanden geselecteerd"><figcaption><p>Het dialoogvenster <strong>Documentuploader</strong>: kies eerst de optie <strong>Bedrag &amp; Datumnotatie</strong> en selecteer daarna de bestanden.</p></figcaption></figure>
 
 Controleer de selectie voordat je de import start. Wacht tot de verwerking klaar is en controleer fouten en het toegewezen documenttype. Corrigeer onjuiste classificaties en extracties voordat je de voorbeelden voor training gebruikt.
 

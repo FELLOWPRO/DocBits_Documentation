@@ -1,44 +1,51 @@
 # Frankrijk: erkende platforms en PEPPOL voor elektronische facturatie
 
-## Erkend platform vereist voor binnenlandse B2B-facturen
+## Huidige regels en tijdpad
 
-Voor binnenlandse B2B-transacties tussen Franse btw-plichtige ondernemingen die onder de hervorming vallen, verloopt de uitwisseling van elektronische facturen via een erkend platform (plateforme agréée, **PA**, voorheen **PDP**). Het openbare portaal **PPF** is geen alternatief platform voor factuuruitwisseling; het vervult functies voor het centrale adresregister en de verzameling van gegevens. PEPPOL kan het transport en de interoperabiliteit ondersteunen, maar vervangt het vereiste erkende platform niet. Zie de [officiële informatie over erkende platforms](https://www.impots.gouv.fr/facturation-electronique-et-plateformes-agreees). De onderstaande oudere verwijzingen naar [vereisten](https://www.ey.com/en_gl/technical/tax-alerts/france-revises-schedule-for-adopting-e-invoicing-reform) en het [overheidsportaal](https://www.avalara.com/blog/en/europe/2022/09/france-publishes-updated-specifications-for-e-invoicing-and-e-reporting.html) beschrijven eerdere versies van de hervorming en zijn geen actuele implementatie-instructies.
+Voor binnenlandse B2B-facturen in Frankrijk die binnen de reikwijdte van de hervorming vallen tussen btw-plichtige ondernemingen, moet de uitwisseling van facturen via een **erkend platform (plateforme agréée, PA; voorheen PDP)** verlopen. Het **openbare facturatieportaal (PPF, Portail public de facturation)** verzorgt het openbare register en het verzamelen van fiscale gegevens; het is voor deze transacties geen alternatief platform voor factuuruitwisseling.
 
-<figure><img src="../../.gitbook/assets/Picture 1.png" alt=""><figcaption></figcaption></figure>
+* **1 september 2026:** Alle ondernemingen binnen de reikwijdte moeten elektronische facturen kunnen ontvangen. Grote ondernemingen (GE) en ondernemingen van middelgrote omvang (ETI) moeten vanaf die datum ook elektronische facturen uitgeven en aan hun e-reportingverplichtingen voldoen.
+* **1 september 2027:** De verplichtingen voor uitgifte en e-reporting gelden voor kleine en middelgrote ondernemingen (PME) en micro-ondernemingen.
 
-### Historische technische context van het dienstenaanbod
+Welke verplichting geldt, hangt af van de reikwijdte van de transactie en van de categorie van de onderneming. Raadpleeg de officiële [informatie over erkende platforms](https://www.impots.gouv.fr/facturation-electronique-et-plateformes-agreees), het [tijdpad voor de invoering](https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation) en de [toelichting van het ministerie](https://www.senat.fr/questions/base/2026/qSEQ260107185.html).
 
-De volgende beschrijving en de oorspronkelijke diagrammen documenteren een eerdere technische opzet rond het PPF. Ze blijven als historische context behouden. Verwijzingen naar factuuruitwisseling via het PPF beschrijven niet de huidige rolverdeling. In die eerdere opzet bood de API-modus toegang tot functies vanuit de bestaande IT-systemen van partners, met twee integratiemethoden:
+## PEPPOL en interoperabiliteit
 
-### ·       Integratie in informatiesystemen (IS):
+PEPPOL kan zorgen voor transport en interoperabiliteit tussen aangesloten systemen en platforms. Het gebruik van PEPPOL vervangt niet de verplichting om voor factuuruitwisseling binnen het Franse mandaat een PA te gebruiken. Beschouw een PEPPOL-aansluiting op zichzelf niet als bewijs dat aan de Franse uitwisselings- en rapportageverplichtingen is voldaan.
 
-API's werden rechtstreeks geïntegreerd in informatiesystemen of beheersoftware van verzenders en ontvangers van facturen of hun digitaliseringsdienstverleners (OD's). Zo konden gebruikers vanuit hun gebruikelijke interne IT-tools of de tools van hun OD toegang krijgen tot de functies van de oplossing en de bijbehorende updates.
+Voor de formatcatalogus van DocBits zie [Overzicht van standaarden voor elektronische facturen](../../administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md).
 
-API's konden ook worden geïntegreerd in de informatiesystemen van PDP's om meer flexibiliteit te bieden dan de EDI-modus. Sommige API's waren specifiek voor deze platforms bedoeld.
+## Historische technische context
 
-### ·       Integratie in software van derden:
+De zes diagrammen en de onderstaande API-beschrijvingen zijn afkomstig uit eerder PPF-/PDP-materiaal en blijven bewaard als historische technische context. Ze gebruiken de terminologie en de architectuur van toen; ze beschrijven geen actuele mogelijkheid om voorgeschreven B2B-facturen via het PPF uit te wisselen. Controleer de actuele specificaties van de PA en van de openbare diensten voordat u een integratie implementeert.
 
-Softwareleveranciers konden software op basis van de API's aanbieden. Afhankelijk van de gekozen werkwijze werd de verbinding door de leverancier of door de klant tijdens de installatie of uitrol in het eigen informatiesysteem ingericht. Deze software voegde in de eerdere opzet een communicatielaag met het PPF toe aan het informatiesysteem van de klant.
+<figure><img src="../../.gitbook/assets/Picture 1.png" alt="Diagram van de levenscyclus van Franse e-facturatie over voorbereiding, ontvangst, validatie en betaling met statussen voor leverancier en koper"><figcaption><p>Historisch levenscyclusdiagram: voorbereiding en uitgifte, ontvangst, validatie/retour en betaling, met de labels voor de status van leverancier en koper in elke fase.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Picture 6.png" alt=""><figcaption></figcaption></figure>
+### Historisch API-servicemodel
 
-## PEPPOL als transport- en interoperabiliteitslaag
+Het eerdere API-model beschreef de toegang tot beschikbare functies vanuit de IT-hulpmiddelen die partnerorganisaties inzetten, via twee integratiemethoden:
 
-PEPPOL kan erkende platforms ondersteunen bij transport en interoperabiliteit. Het vormt geen afzonderlijke route die het gebruik van een PA vervangt. Het PPF richt zich op het centrale adresregister en de verzameling van gegevens; het is geen alternatief voor factuuruitwisseling via een erkend platform. De oudere toelichtingen over de [onderlinge verbinding](https://www.avalara.com/blog/en/europe/2025/01/e-invoicing-reform-france.html) van platforms, de uitwisseling van [facturen](https://nymus.be/fr/facturation-electronique-en-france/) en het gebruik van [PEPPOL](https://edicomgroup.com/blog/status-of-b2b-electronic-invoicing-in-france) voor die [uitwisseling](https://nymus.be/fr/facturation-electronique-en-france/) blijven achtergrondinformatie. Raadpleeg voor de huidige rolverdeling de [officiële uitleg over erkende platforms](https://www.impots.gouv.fr/facturation-electronique-et-plateformes-agreees).
+* **Informatiesystemen (IS):** API's werden beschreven als onderdeel van de systemen van factuurverzenders, ontvangers of hun dematerialiseringsoperatoren (OD's). Sommige API's waren bedoeld voor PDP-systemen en boden een alternatief voor EDI-integratie.
+* **Software van derden:** Softwareleveranciers konden een communicatielaag aan klantsystemen toevoegen. Eerdere verwijzingen naar een verbinding met het PPF horen bij dat historische model en zijn geen actuele route voor factuuruitwisseling.
 
-\
+<figure><img src="../../.gitbook/assets/Picture 6.png" alt="Diagram van verzender en ontvanger die facturen uitwisselen via OD-PDP-serviceportalen en het PPF met gegevenscontrole en herstel"><figcaption><p>Historisch interconnectiediagram: verzender en ontvanger zijn verbonden via software van derden, serviceportalen en OD-/PDP-blokken rond het PPF-blok voor gegevenscontrole en herstel.</p></figcaption></figure>
 
+### Historisch interconnectiediagram
 
-<figure><img src="../../.gitbook/assets/Picture 2.png" alt=""><figcaption></figcaption></figure>
+Dit diagram illustreert de eerdere context van de koppeling tussen platforms. De actuele implementatie moet de vereisten van de PA volgen; hier wordt niet gesteld dat elke uitwisseling via één enkel transportnetwerk moet verlopen.
 
-## Historische technische context: aansluiting van een hub
+<figure><img src="../../.gitbook/assets/Picture 2.png" alt="Diagram van flow-, factuur- en factuurgegevenscontroles: inzendingen van leveranciers doorlopen technische, applicatie- en functionele controles met afwijzingen"><figcaption><p>Historisch controlediagram: technische, applicatie- en functionele dan wel bedrijfsmatige controles voor handmatige, API- en EDI-inzendingen, naast de uitkomsten ontoelaatbaar, afgewezen en geweigerd.</p></figcaption></figure>
 
-In de eerdere opzet bood de hub klanten een web- of applicatieoplossing om API-aanroepen uit te voeren. **De hub voerde daarbij de API-aanroepen namens al zijn klanten uit**. Elke partner had een technisch account nodig, terwijl alleen de hub een toepassing onder PISTE en een verbinding met het PPF nodig had. Dit beschrijft de historische technische context van het onderstaande diagram, geen actuele instructie om facturen via het PPF uit te wisselen.
+### Historische hub-aansluiting
 
-<figure><img src="../../.gitbook/assets/Picture 5.png" alt=""><figcaption></figcaption></figure>
+Het eerdere hub-model beschreef een web- of applicatieoplossing waarbij **de hub API-aanroepen uitvoerde namens zijn klanten**. Het noemde een technisch account voor elke partner en één toepassing onder PISTE plus een PPF-verbinding voor de hub. Dit zijn historische architectuurdetails, geen geverifieerde actuele integratieprocedure.
 
+<figure><img src="../../.gitbook/assets/Picture 5.png" alt="Diagram van partners met technische accounts die via één hub zijn verbonden met één toepassing onder PISTE en één verbinding"><figcaption><p>Historisch hubdiagram: partners met technische accounts zijn via één hub verbonden met één toepassing onder PISTE en één verbinding.</p></figcaption></figure>
 
+### Historische bronnen
 
-Actueel tijdpad: ondernemingen binnen de reikwijdte van de hervorming moeten vanaf **1 september 2026** elektronische facturen kunnen ontvangen. Voor grote ondernemingen en ondernemingen van middelgrote omvang (GE/ETI) beginnen de uitgifteplicht en e-reporting op die datum; voor kleine en middelgrote ondernemingen en micro-ondernemingen (PME/micro) op **1 september 2027**. Zie het [officiële tijdpad](https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation) en de [toelichting van het ministerie](https://www.senat.fr/questions/base/2026/qSEQ260107185.html). De oorspronkelijke diagrammen hieronder blijven bewaard als historische technische context. Ze vormen geen actuele instructies of garantie dat een integratie aan alle wettelijke verplichtingen voldoet.
+Het eerdere materiaal verwees naar [het toenmalige tijdpad en het juridische overzicht](https://www.ey.com/en_gl/technical/tax-alerts/france-revises-schedule-for-adopting-e-invoicing-reform), [de specificaties van 2022](https://www.avalara.com/blog/en/europe/2022/09/france-publishes-updated-specifications-for-e-invoicing-and-e-reporting.html), [een overzicht van de hervorming uit 2025](https://www.avalara.com/blog/en/europe/2025/01/e-invoicing-reform-france.html), [achtergrond over de koppeling tussen platforms](https://nymus.be/fr/facturation-electronique-en-france/), [achtergrond over PEPPOL](https://edicomgroup.com/blog/status-of-b2b-electronic-invoicing-in-france) en [achtergrond over de uitwisseling](https://nymus.be/fr/facturation-electronique-en-france/). Deze links en de overige diagrammen blijven bewaard als historische context. Gebruik voor actuele verplichtingen de hierboven genoemde officiële bronnen, inclusief het onderscheid tussen factuuruitwisseling via een PA en de openbare functies van het PPF. De eerdere verwijzing naar artikel 91 van de Financieringswet 2024 vormt geen grondslag voor een actuele mogelijkheid tot uitwisseling via het PPF.
 
-<div><figure><img src="../../.gitbook/assets/Picture 3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Picture 4.png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/Picture 3.png" alt="Stroomschema van het uitgifteproces van EDI-flow en API-ontvangst via flow-, applicatie- en functionele controles tot de uitgegeven factuur"><figcaption><p>Historisch stroomschema voor uitgifte: inkomende EDI- en API-flows doorlopen controles van de flow, de applicatie en de functie voordat factuurgegevens worden opgenomen; ook afwijzingspaden, de uitgaande flows 1 en 2 en levenscyclusmeldingen zijn weergegeven.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Picture 4.png" alt="Stroomschema van het ontvangstproces van EDI-flow en API-ontvangst via controles met afwijzing of weigering tot de beschikbaar gestelde factuur"><figcaption><p>Historisch stroomschema voor ontvangst: technische, applicatie- en functionele controles omvatten eigen bedrijfsregels met paden voor afwijzing of weigering; geaccepteerde gegevens leiden tot een ontvangen en beschikbaar gestelde factuur, naast ontvangerflow 2 en levenscyclusmeldingen.</p></figcaption></figure>

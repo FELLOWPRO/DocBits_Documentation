@@ -990,7 +990,7 @@
     * [Adresse du fournisseur](advanced-functions-and-tools/sql-access/sql-access/supplier-address.md)
     * [Type de document de l’organisation](advanced-functions-and-tools/sql-access/sql-access/organisation-document-type.md)
     * [Cache des sous-organisations](advanced-functions-and-tools/sql-access/sql-access/sub-organisation-cache.md)
-* [Importation des données de fournisseur et de commande d'achat dans DocBits à partir de fichiers CSV](advanced-functions-and-tools/importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md)
+* [Importer les données de fournisseurs et de commandes d'achat dans DocBits à partir de fichiers CSV](advanced-functions-and-tools/importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md)
 * [Connecter DocBits à Power BI](advanced-functions-and-tools/powerbi.md)
   * [Se connecter via ClickHouse](advanced-functions-and-tools/powerbi/powerbi.md)
   * [Se connecter via la base de données en lecture seule](advanced-functions-and-tools/powerbi/connect-via-read-only-database.md)

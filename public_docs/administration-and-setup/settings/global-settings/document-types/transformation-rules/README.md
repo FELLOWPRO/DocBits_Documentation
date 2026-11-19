@@ -89,7 +89,7 @@ Then enter the **Rule Name** (the **Rule key** is generated from it), pick the *
 ### Step 2 — When it runs
 
 * **Always** — the rule runs on every document of the type.
-* **Only when…** — the rule runs only if a condition is true, for example _Supplier ID is HP0000278_. For **Table column** rules the condition can use the columns of the current row and is checked row by row. See [Rule Conditions (Applies when)](../rule-conditions-applies-when.md) for all fields, operators and examples.
+* **Only when…** — the rule runs only if a condition is true, for example _Supplier ID is HP0000278_. For **Table column** rules the condition can use the columns of the current row and is checked row by row. See [Rule Conditions (Applies when)](../rule-conditions-applies-when.md) for all fields, operators and examples. A condition can also look at the text on the document itself (**Document text** fields such as _Document Content_ and _First Page Content_, marked **Slower**) — see [Document text](../rule-conditions-applies-when.md#document-text-doc).
 
 Two options control how often the rule applies:
 

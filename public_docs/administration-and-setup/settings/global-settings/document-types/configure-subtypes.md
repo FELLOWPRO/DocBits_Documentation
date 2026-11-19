@@ -4,15 +4,15 @@ description: Configureer subtypes om velden, de lay-out en scripts per documents
 
 # Subtypes configureren
 
-Gebruik een documentsubtype wanneer facturen van hetzelfde documenttype andere velden, een andere validatielay-out of eigen verwerkingsscripts nodig hebben. Maak eerst een [subtype aan](creating-a-new-sub-type.md), open daarna **Instellingen → Documenttypen**, kies het documenttype en open **Document-Subtypen**. Open in de subtyperij het menu **Actions** (de drie puntjes). Het menu biedt **Velden**, **Lay-outbouwer** en **Scripts**; het bevat ook [Kopiëren, Bewerking en Verwijderen](using-actions.md).
+Gebruik een documentsubtype wanneer facturen van hetzelfde documenttype andere velden, een andere validatielay-out of eigen verwerkingsscripts nodig hebben. Maak eerst een [subtype aan](creating-a-new-sub-type.md), open daarna **Instellingen → Documenttypen**, kies het documenttype en open **Document-Subtypen**. Open in de subtyperij het menu **Acties** (de drie puntjes). Het menu biedt **Velden**, **Lay-outbouwer** en **Scripts**; het bevat ook [Kopiëren, Bewerking en Verwijderen](using-actions.md).
 
-<figure><img src="../../../../.gitbook/assets/dbdc685-subtype-actions-menu-nl-20261011.png" alt="Actiemenu van een documentsubtype met Velden, Lay-outbouwer, Scripts, Kopiëren, Bewerking en Verwijderen"><figcaption><p>Kies het deel van het subtype dat u wilt configureren.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc685-subtype-actions-menu-nl-20261111.png" alt="Actiemenu van een documentsubtype met Velden, Lay-outbouwer, Scripts, Kopiëren, Bewerking en Verwijderen"><figcaption><p>Kies het deel van het subtype dat u wilt configureren.</p></figcaption></figure>
 
 ## Velden
 
-Kies **Velden** om te bepalen welke informatie gebruikers voor dit subtype zien en invoeren. U kunt een veld in een groep aanmaken, een bestaand veld als vereist, alleen-lezen of verborgen markeren en de herkenningsopties aanpassen. Kies **Instellingen opslaan** nadat u wijzigingen hebt gemaakt. Gebruik [Velden toevoegen en bewerken](fields/adding-and-editing-fields.md) voor de stappen, [Veldeigenschappen configureren](fields/configuring-field-properties-1.md) voor de kolomopties en [Mastergegevensinstellingen](fields/master-data-settings.md) wanneer een veld opzoekgegevens moet gebruiken.
+Kies **Velden** om te bepalen welke informatie gebruikers voor dit subtype zien en invoeren. U kunt een veld in een groep aanmaken, een bestaand veld als vereist, alleen-lezen of verborgen markeren en de herkenningsopties aanpassen; de herkenningsdrempel heet in de app **OVEREENKOMSTSCORE**. Kies **Instellingen opslaan** nadat u wijzigingen hebt gemaakt. Gebruik [Velden toevoegen en bewerken](fields/adding-and-editing-fields.md) voor de stappen, [Veldeigenschappen configureren](fields/configuring-field-properties-1.md) voor de kolomopties en [Mastergegevensinstellingen](fields/master-data-settings.md) wanneer een veld opzoekgegevens moet gebruiken.
 
-<figure><img src="../../../../.gitbook/assets/dbdc685-subtype-fields-nl-20261011.png" alt="Nederlandse veldinstellingen voor een synthetisch factuursubtype, met veldgroepen, eigenschappenkolommen en Instellingen opslaan"><figcaption><p>Veldinstellingen in de testorganisatie van de documentatie. Er worden geen klantgegevens getoond.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc685-subtype-fields-nl-20261111.png" alt="Nederlandse veldinstellingen voor een synthetisch factuursubtype, met veldgroepen, eigenschappenkolommen en Instellingen opslaan"><figcaption><p>Veldinstellingen in de testorganisatie van de documentatie. Er worden geen klantgegevens getoond.</p></figcaption></figure>
 
 ## Lay-outbouwer
 
@@ -28,8 +28,7 @@ Kies **Scripts** om de scripts van dit subtype te bekijken. Kies in een lege lij
 
 ## Vertaalfouten van de app
 
-De Nederlandse interface gebruikt op deze pagina's een paar onjuiste of vreemde vertalingen. Deze worden hier woordelijk genoteerd zoals de app ze toont; de documentatie corrigeert de app niet:
+De Nederlandse interface gebruikt op deze pagina's nog enkele vreemde vertalingen. Deze worden hier woordelijk genoteerd zoals de app ze toont; de documentatie corrigeert de app niet:
 
-* Het actiemenu heet in de app **Actions** en de kopoptie **Bewerking** (in plaats van "Bewerken").
-* De herkenningsdrempel heet in de app **WEDSTRIJDSCORE** (letterlijk vertaald van "Match Score").
+* De kopoptie **Bewerking** is een vreemde vertaling van "Edit" (in plaats van "Bewerken").
 * De knop voor het terugzetten van de standaardwaarden heet **STANDAARDINSTELLINGEN HERSTELLEN**.

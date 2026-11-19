@@ -4,11 +4,11 @@ Los elementos de costos son cargos u otros importes representados como líneas d
 
 ## Activar el ajuste
 
-1. Abra **Ajustes → Procesamiento de documentos → Clasificación y extracción**.
+1. Abra **Ajustes → Tipos de Documento** y seleccione **Clasificación y Extracción** debajo de la entrada **Tipos de Documento**.
 2. Permanezca en **General** y despliegue **Extracción**.
 3. Busque **Extracción de tablas para el cálculo de costes** debajo de los campos solicitados para la extracción de tablas. Un administrador puede activar este interruptor para la organización.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-es-20261011.png" alt="Ajustes de Clasificación y extracción en español con el interruptor Extracción de tablas para el cálculo de costes visible y activado"><figcaption><p>El interruptor aparece activado en esta captura sintética. La imagen no demuestra el estado de una organización real.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/costing-table-extraction-setting-es-20261111.png" alt="La sección Extracción de los ajustes Clasificación y Extracción con los interruptores Extracción de tabla, Extracción de tabla de IA, Utilice la visión artificial para la extracción de tablas (IA), Utilizar extracción estructurada (IA), Extracción de tablas para el cálculo de costes, Extraer automáticamente el código fiscal, Guardar reglas de extracción (solo para administradores), Extraer campos ocultos y el selector del modelo de IA"><figcaption><p>El interruptor <strong>Extracción de tablas para el cálculo de costes</strong> se encuentra entre <strong>Utilizar extracción estructurada (IA)</strong> y <strong>Extraer automáticamente el código fiscal</strong>. En esta captura está desactivado.</p></figcaption></figure>
 
 {% hint style="info" %}
 El interruptor por sí solo no crea elementos de costos ni líneas de factura. Configure primero los elementos e importe los datos necesarios. La [guía de configuración de elementos de costos](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md) vinculada explica el ejemplo de M3. Consulte [Clasificación y extracción](README.md) para ver los demás controles de extracción.
@@ -18,4 +18,4 @@ El interruptor por sí solo no crea elementos de costos ni líneas de factura. C
 
 Abra un documento cuya tabla de factura contenga líneas extraídas y observe el icono de elemento de costos junto a la línea correspondiente. Seleccione el icono para abrir las clasificaciones disponibles. Elija el elemento de costos configurado correcto, o elija **Uncategorize** si la línea es un artículo ordinario. Después revise la línea resultante y los totales antes de guardar el documento.
 
-Si el icono o una clasificación falta, confirme primero que el documento tiene líneas extraídas, que la función está activada y que hay un elemento de costos configurado para la organización. El documento de prueba sintético usado para esta comprobación de la documentación no tenía líneas de factura extraídas, por lo que el menú de clasificación no pudo mostrarse ni probarse. Los pasos de arriba reflejan el control de documentos actual; no se guardó ninguna clasificación durante esta comprobación.
+Si el icono o una clasificación falta, confirme primero que el documento tiene líneas extraídas, que la función está activada y que hay un elemento de costos configurado para la organización.

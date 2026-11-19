@@ -12,7 +12,7 @@ Piense en ello como un equipo que usted dirige, no como una herramienta que uste
 * El plan se descompone en **Asuntos** (tareas individuales), cada uno gestionado por un **agente Especialista** o por una **persona**.
 * Los Especialistas informan de sus resultados y el Orquestador sintetiza el resultado final.
 
-Los _agentes_ que desempeñan esos roles no son fijos: DocBits incluye un **DocBits Orchestrator** listo para usar y dos especialistas predeterminados, y usted puede crear los suyos propios (consulte [Agentes](./#agents)).
+Los _agentes_ que desempeñan esos roles no son fijos: DocBits incluye un **DocBits Orchestrator** listo para usar y dos especialistas predeterminados, y usted puede crear los suyos propios (consulte [Agentes](./#agentes)).
 
 Una ejecución típica, de principio a fin: llega una factura por correo electrónico → se crea una Misión → el Orquestador la planifica y despacha Asuntos a los especialistas (clasificar, extraer, validar, conciliar con la orden de compra) → un paso sensible se detiene en la **Bandeja de entrada** para que una persona lo apruebe → tras la aprobación, el documento se exporta y la Misión se completa. Usted observa todo el proceso desde el **Panel**, mantiene juntas las ejecuciones relacionadas en **Proyectos** e interviene a través de la **Bandeja de entrada** y los **Asuntos** siempre que se necesite una decisión humana.
 
@@ -25,6 +25,47 @@ AI Workforce se habilita por organización desde los ajustes principales.
 3. Confirme la suscripción en el cuadro de diálogo que aparece.
 
 Una vez habilitada, **AI Workforce** aparece en la barra lateral de navegación principal y el espacio de trabajo queda disponible para su organización.
+
+## Control de misión
+
+El **Control de misión** es el centro de mando donde usted **inicia misiones y las sigue en vivo**. Ábralo desde la barra lateral de AI Workforce. La página tiene tres partes:
+
+<figure><img src="../../.gitbook/assets/ai-workforce-1-mission-control-es-20261111.png" alt="Control de misión con las tarjetas de misión, el chat del Orquestador y el panel de la Bandeja de entrada abierto"><figcaption><p>Control de misión: las tarjetas de misión arriba, el chat del Orquestador en el centro y el panel de la Bandeja de entrada a la derecha</p></figcaption></figure>
+
+* **Tarjetas de misión**: la franja superior muestra las misiones activas con su estado, su progreso y el número de asuntos. Haga clic en una tarjeta para abrir la misión.
+* **Chat del Orquestador**: el centro de la página. Describa en lenguaje natural lo que quiere que se haga, por ejemplo _"Procese todas las facturas de proveedores que llegaron esta semana y concilielas con sus órdenes de compra"_, y pulse **Enviar**. El Orquestador planifica el trabajo e inicia la misión; usted sigue sus respuestas en el mismo chat.
+* **Panel de la Bandeja de entrada**: el panel plegable de la derecha muestra las solicitudes de aprobación pendientes (consulte [Bandeja de entrada](./#bandeja-de-entrada)). Haga clic en una solicitud para leerla y **Aprobar**, **Rechazar** o responder al agente; una solicitud que no requiere decisión se puede dejar de lado. El número del panel indica cuántas solicitudes están esperando. Las mismas solicitudes aparecen también en **Bandeja de entrada**, en la barra lateral.
+
+Para crear una misión también puede pulsar **Nueva misión** en la barra lateral de AI Workforce: lleva al mismo chat.
+
+## Lista de agentes
+
+La **Lista de agentes** muestra de un vistazo todos los agentes de su organización —el **DocBits Router**, sus **Orquestadores** y todos los **Especialistas**— agrupados en ese orden.
+
+<figure><img src="../../.gitbook/assets/ai-workforce-2-agent-list-es-20261111.png" alt="Lista de agentes con las secciones Enrutador, Orquestadores y Agentes y el botón Crear agente"><figcaption><p>Lista de agentes: el Enrutador arriba, luego los Orquestadores y después los Especialistas; la leyenda distingue los agentes Sistema de los A medida</p></figcaption></figure>
+
+Cada tarjeta muestra el **nombre** del agente, su **rol**, las **habilidades** que puede usar y su estado actual. Desde la tarjeta puede:
+
+* **Abrir el agente**: haga clic en la tarjeta para abrir su perfil completo con todos los [Ajustes del agente](./#ajustes-del-agente).
+* **Habilitar o deshabilitar**: utilice el conmutador de las tarjetas de orquestador. El sistema solo le permite desactivar un orquestador mientras al menos otro orquestador siga habilitado, y con dos o más orquestadores activos el **DocBits Router** se encarga del despacho (consulte [Reglas de jerarquía y activación](./#reglas-de-jerarquia-y-activacion)).
+* **Editar o eliminar**: los agentes personalizados (marcados en la leyenda como **A medida**) tienen un menú con estas dos acciones; los agentes del sistema se pueden configurar, pero no eliminar.
+* **Crear agente**: el botón de arriba a la derecha inicia el asistente para un agente nuevo (consulte [Crear agentes personalizados](./#crear-agentes-personalizados)).
+
+La leyenda de la parte superior muestra la diferencia entre los agentes **Sistema** y los **A medida**, para que siempre sepa qué venía con DocBits y qué ha creado usted.
+
+## Actividades
+
+**Actividades** es el registro de lo que ha ocurrido en su AI Workforce. Cada cambio —una misión creada, un asunto actualizado, una solicitud de aprobación generada— aparece aquí como una fila con tres datos:
+
+<figure><img src="../../.gitbook/assets/ai-workforce-3-activities-es-20261111.png" alt="Registro de Actividades con el campo de búsqueda, los tres filtros y una lista de cambios recientes"><figcaption><p>Actividades: cada fila muestra el área afectada, lo que ocurrió, quién lo hizo y cuándo</p></figcaption></figure>
+
+* el **área** a la que pertenece el cambio —Bandeja de entrada, Asuntos, Misiones, Proyectos, Agentes o Ejecuciones de agentes—, mostrada como una insignia de color a la izquierda;
+* la **acción** realizada —por ejemplo **Creado** o **Modificado en**— como segunda insignia;
+* el **resumen** del cambio, el **autor** que lo causó (un agente o una persona) y la **hora**.
+
+Utilice el **campo de búsqueda** (con el texto _Buscar_) para encontrar una entrada concreta, y los tres desplegables situados encima de la lista para filtrar por **entidad** (**Todas las entidades**), **acción** (**Todas las acciones**) y **actor** (**Todos los actores**). Haga clic en una fila para ir al elemento relacionado, por ejemplo la misión o el asunto al que se refiere la entrada. Con **Registros por página** elige cuántas entradas se muestran a la vez, y las flechas de la esquina inferior derecha recorren historiales más largos.
+
+El registro de Actividades responde a la pregunta _«¿qué acaba de hacer la AI Workforce y quién lo hizo?»_: resulta útil después de una aprobación, al comprobar por qué un documento se clasificó de una forma determinada o al revisar qué han estado haciendo sus agentes personalizados.
 
 ## Panel
 
@@ -41,7 +82,7 @@ Los widgets disponibles incluyen:
 
 ## Bandeja de entrada
 
-La **Bandeja de entrada** es donde el trabajo espera la **atención humana**. Cuando un agente está a punto de ejecutar una herramienta que necesita autorización, detiene la tarea y genera aquí una **solicitud de aprobación**. Esto es la supervisión humana (HITL, Human-in-the-Loop): la acción no se ejecuta hasta que una persona lo decide. Que una herramienta concreta necesite autorización lo determinan el **modo de aprobación** del agente y los marcadores de **crítico** de sus herramientas (consulte [Ajustes del agente](./#agent-settings)).
+La **Bandeja de entrada** es donde el trabajo espera la **atención humana**. Cuando un agente está a punto de ejecutar una herramienta que necesita autorización, detiene la tarea y genera aquí una **solicitud de aprobación**. Esto es la supervisión humana (HITL, Human-in-the-Loop): la acción no se ejecuta hasta que una persona lo decide. Que una herramienta concreta necesite autorización lo determinan el **modo de aprobación** del agente y los marcadores de **crítico** de sus herramientas (consulte [Ajustes del agente](./#ajustes-del-agente)).
 
 Cada elemento de la Bandeja de entrada muestra el título de la solicitud, el agente que la generó y una breve descripción de lo que requiere una decisión. Desde el elemento puede:
 
@@ -109,7 +150,7 @@ Estos son **agentes del sistema**: puede configurar partes de ellos, pero no pue
 Dado que se requiere un orquestador para ejecutar cualquier misión, la activación sigue algunas reglas:
 
 * Los **Orquestadores** tienen un conmutador de **habilitar/deshabilitar**, pero un orquestador **solo se puede desactivar si existen al menos dos orquestadores**: el sistema nunca le deja apagar el último, ya que no quedaría nada que coordinara las misiones.
-* Cuando **hay más de un orquestador activo**, el **System Router** se activa automáticamente. Su función es examinar cada misión entrante y delegarla en el orquestador adecuado. Con un único orquestador, el router no es necesario y se mantiene al margen.
+* Cuando **hay más de un orquestador activo**, el **DocBits Router** (en la interfaz, **Enrutador**) se activa automáticamente. Su función es examinar cada misión entrante y delegarla en el orquestador adecuado. Con un único orquestador, el router no es necesario y se mantiene al margen.
 * **Los Especialistas no tienen un conmutador de habilitar/deshabilitar.** En su lugar, usted controla dónde pueden trabajar **asignándolos a orquestadores** (consulte el _Grupo de agentes_ más abajo). Un especialista que no esté asignado a ningún orquestador no está disponible en absoluto: permanece en el directorio, pero ningún orquestador puede delegarle trabajo, así que cada especialista debe estar asignado al menos a un orquestador para poder utilizarse.
 
 Puede ver y reorganizar estas relaciones en el **Organigrama**, que muestra Router → Orquestadores → Especialistas.
@@ -125,7 +166,7 @@ Cada agente —del sistema o personalizado— tiene un menú de ajustes con las 
   * **Medium** _(predeterminado)_: calidad y coste equilibrados.
   * **High**: razonamiento profundo para tareas más difíciles; mayor coste.
   * **X-High**: máximo razonamiento; coste más alto.
-* **Modo de aprobación**: cuánto del trabajo del agente necesita autorización humana en la [Bandeja de entrada](./#inbox):
+* **Modo de aprobación**: cuánto del trabajo del agente necesita autorización humana en la [Bandeja de entrada](./#bandeja-de-entrada):
   * **None**: el agente ejecuta cada herramienta automáticamente; no se envía nada para aprobación.
   * **Critical** _(predeterminado)_: solo las herramientas marcadas como **críticas** requieren aprobación; todo lo demás se ejecuta automáticamente. Las herramientas críticas son las acciones sensibles, de escritura o externas (por ejemplo, _cargar/importar documento_, _actualizar campos del documento_, _responder correo electrónico_, _enviar notificación_). En este modo, una herramienta crítica **siempre** genera una solicitud de aprobación en la Bandeja de entrada. Puede ajustar herramientas individuales (marcar una herramienta normalmente segura como que necesita aprobación, o quitar esa marca a una crítica); estas anulaciones por herramienta solo se aplican en el modo Critical.
   * **All**: cada herramienta que ejecuta el agente requiere aprobación.

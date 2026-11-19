@@ -32,10 +32,10 @@ Valor total: $1,015.05
 
 Tolerância da quantidade: ±2%
 
-Tolerância do preço unitário: ±1%\
+Tolerância do preço unitário: ±1%
 
 
-Como a quantidade (101 unidades) e o preço unitário ($10.05) estão dentro da tolerância aceite em relação ao pedido de compra, o sistema irá:\
+Como a quantidade (101 unidades) e o preço unitário ($10.05) estão dentro da tolerância aceite em relação ao pedido de compra, o sistema irá:
 
 
 1\. **Aceitar os valores da fatura:** a quantidade e o preço unitário são aceites por estarem dentro dos limites de tolerância definidos.

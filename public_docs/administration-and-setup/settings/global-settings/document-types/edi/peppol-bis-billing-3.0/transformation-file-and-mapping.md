@@ -370,7 +370,7 @@ Este arquivo é responsável por extrair dados de um arquivo XML Peppol BIS Bill
    * **Mapeado para**: `<INVOICE><BUYER_REFERENCE>`
    * **Pode aparecer várias vezes**: Não.
 
-2)  **Referência de Faturamento**
+2. **Billing Reference**
 
     * **Origem**: `//BillingReference`
     * **Mapeado para**: `<INVOICE><BILLING_REFERENCE>`

@@ -20,6 +20,8 @@ O Touchless Intelligence mostra-lhe **por que** um PO match falhou e **como** o 
 | **Document Trace**                                                                          | A etapa **PO Line Match** com o estado **blocked** e o motivo                                                                                                                    |
 | **Settings → Document Types → More Settings → Purchase Order**                              | As próprias regras de matching. Ver [Regras de matching de pedidos de compra](../../settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) |
 
+No canal de lançamento **Nova**, a primeira linha é o painel **Why documents are not touchless**. Expanda aí a área PO matching para ler os motivos com as respetivas contagens de documentos; o gráfico de barras mencionado acima mantém-se na **Vesta**.
+
 ## As duas etapas de PO
 
 | Etapa                  | Pergunta                                    | Para com                                                                                                              |

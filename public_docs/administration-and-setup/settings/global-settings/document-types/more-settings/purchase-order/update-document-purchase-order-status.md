@@ -10,7 +10,7 @@ Antes de alterar a configuração, escolha a organização e o tipo de documento
 2. Encontre o tipo de documento usado para os documentos vinculados a POs, por exemplo **Fatura**, e selecione a engrenagem no cartão dele para abrir **Mais Configurações**.
 3. Expanda **Ordem de compra**. Encontre **Atualizar status do pedido de compra do documento** e ative-o. O ícone de ajuda próximo explica a opção na aplicação. Alterar esse interruptor não altera as outras configurações de PO na mesma seção.
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc701-document-types-pt-20261011.png" alt="Página Tipos de Documentos com o cartão Fatura e a engrenagem de Mais Configurações"><figcaption>Abra as configurações do tipo de documento que você usa.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc701-document-types-pt-20261111.png" alt="Página Tipos de Documentos com o cartão Fatura e a engrenagem de Mais Configurações"><figcaption>Abra as configurações do tipo de documento que você usa.</figcaption></figure>
 
 <figure><img src="../../../../../../.gitbook/assets/dbdc701-po-settings-pt-20261011.png" alt="Seção Ordem de compra de Mais Configurações com o interruptor Atualizar status do pedido de compra do documento"><figcaption>O interruptor de atualização de status nas configurações de Ordem de compra.</figcaption></figure>
 
@@ -28,7 +28,7 @@ O diálogo de colunas contém **Colunas ocultas** e **Colunas visíveis**. Use a
 
 Em **Configurações → Processamento de Documentos → Tipos de Documentos → Campos → Configurações De Dados Mestre**, expanda **Pesquisar Dados Mestres** e depois **Order Header Lookup**. Verifique se o mapeamento necessário do campo de PO existe e se o lookup relevante tem **Gatilho Automático** quando um lookup automático for necessário. A imagem abaixo mostra a lista de configuração; os círculos riscados significam que o Gatilho Automático está desligado para essas linhas de exemplo. Ela não demonstra um status de PO atualizado.
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc701-lookup-po-header-pt-20261011.png" alt="Configuração do Order Header Lookup mostrando Pesquisável e Gatilho Automático para cada campo"><figcaption>Verifique as linhas reais de lookup do tipo de documento.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc701-lookup-po-header-pt-20261111.png" alt="Configuração do Order Header Lookup mostrando Pesquisável e Gatilho Automático para cada campo"><figcaption>Verifique as linhas reais de lookup do tipo de documento.</figcaption></figure>
 
 Para obter ajuda na configuração de um lookup, veja [Configuração de Dados Fuzzy com Dados Mestres](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
 
@@ -38,8 +38,8 @@ Use um documento já vinculado a um pedido de compra de teste. Altere o status d
 
 ## Achados de tradução da aplicação
 
-Os termos acima são as etiquetas reais da interface em português, verificados com o executável em sandbox. Alguns termos da aplicação permanecem inconsistentes ou não traduzidos em PT e são reportados aqui, sem correção na documentação:
+Os termos acima são as etiquetas reais da interface em português, verificados com o executável em sandbox (versão 11.27.7). Alguns termos da aplicação permanecem inconsistentes ou não traduzidos em PT e são reportados aqui, sem correção na documentação:
 
-- Nomes de tipo de documento sem tradução nos cartões: `Purchase Order`, `Order Confirmation`, `Customs Declaration`, `Freight Letter`; cabeçalho de coluna `Extraction`.
-- Nomes de lookup sem tradução: `Supplier Lookup`, `Order Header Lookup`, `Order Line Lookup`; valores de status `No Match`; coluna de ações `Actions`.
-- Nomenclatura inconsistente na mesma seção: o menu mostra **Tipos De Documentos** e **Ordem de compra**, mas o cartão do tipo e o painel mostram **Fatura** (italiano para "fatura/factura").
+- Nomes de tipo de documento sem tradução nos cartões: `Purchase Order`, `Delivery Note`, `Order Confirmation`, `Customs Declaration`, `Freight Letter`; o rótulo junto ao interruptor está traduzido e mostra `Extração`.
+- Nomes de lookup sem tradução: `Supplier Lookup`, `Order Header Lookup`, `Order Line Lookup`.
+- Nomenclatura inconsistente na mesma seção: o menu mostra **Tipos De Documentos** e **Ordem de compra**, mas o cartão do tipo e o painel mostram **Fatura**.

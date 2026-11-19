@@ -602,7 +602,7 @@
     * [Analyse](administration-and-setup/settings/log-settings/analytics.md)
   * [API-Licenties](administration-and-setup/settings/api-licenses.md)
   * [Leverancier Instelling](administration-and-setup/settings/supplier-setting/README.md)
-    * [Leverancier Algemene Instellingen](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)
+    * [Algemene leveranciersinstellingen](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)
     * [E-mail Sjablonen Bewerken](administration-and-setup/settings/supplier-setting/editing-email-templates.md)
     * [Leveranciersformulieren configureren](administration-and-setup/settings/supplier-setting/supplier-layout.md)
     * [Exportconfiguratie voor Leverancierportaal voor M3](administration-and-setup/settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md)

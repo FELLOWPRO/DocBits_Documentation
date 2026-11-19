@@ -1,96 +1,139 @@
 # Geavanceerde instellingen
 
-In sommige documenten kunnen tabelstructuren complex zijn - meerdere regels beslaan, gegroepeerde informatie bevatten of onnodige extra rijen bevatten. De _Geavanceerde instellingen_ in trainingsmodus stellen u in staat om de tabeluitvoer voor dergelijke gevallen nauwkeuriger en consistenter af te stemmen.
+In sommige documenten zijn tabelstructuren complex: ze lopen over meerdere regels, bevatten gegroepeerde informatie of hebben overbodige extra rijen. Met de _Geavanceerde instellingen_ in de trainingsmodus stelt u de tabelextractie voor zulke gevallen nauwkeuriger af, wat de nauwkeurigheid en de consistentie ten goede komt.
 
-Om toegang te krijgen tot deze instellingen, activeert u **Trainingsmodus** en klikt u op het **Instellingen** tandwielicoon in de bovenste actiebalk:
+Om deze instellingen te openen, activeert u de **Trainingsmodus** en klikt u op het tandwiel **Instellingen** in de bovenste actiebalk:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FW1cBx4IOjycKv6IZM9AX8Wggj1eEBgzBVJWgsyWkutX9dRRJuEjQtSCsPaNZuRndd9ewMVvfqSXr45C-2cO-pxXkYFdl_9eEGVW6-UBqqZCsuhia6alJjD1ZuZawwSbjS9Yeywe1wDK5yAcIOUH5QAw\&width=768\&dpr=4\&quality=100\&sign=4bf6ac31\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-gear-nl-20261112.png" alt="Tabel Extractie in trainingsmodus met de muis op het tandwiel Instellingen in de bovenste actiebalk."><figcaption><p>Het tandwiel Instellingen in de actiebalk van de trainingsmodus opent de Geavanceerde instellingen.</p></figcaption></figure>
 
-## Aantal koptekstrijen
+In het venster **Instellingen** staan alle opties die op deze pagina worden beschreven. Klap de sectie **Geavanceerde instellingen** open om bij de groeperingsopties te komen; die blijven ingeklapt tot u ze opent:
 
-**Gebruik deze instelling om te definiëren uit hoeveel regels de tabelkop bestaat.**
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-max-rows-nl-20261112.png" alt="Venster Instellingen met Aantal koprijen 2 en de uitgeklapte sectie Geavanceerde instellingen met Minimaal gegroepeerde rijen 2, Maximaal aantal gegroepeerde rijen 3, Verschillende groepskolommen, Omgekeerde groepering en Tekst splitsen."><figcaption><p>De sectie Geavanceerde instellingen met alle groeperingsopties.</p></figcaption></figure>
 
-Sommige tabellen hebben meerdere regels in de kop. Bijvoorbeeld, de kop van deze tabel beslaat twee regels:
+Elke optie wordt hieronder in een eigen sectie beschreven, samen met het effect ervan op de geëxtraheerde tabel.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FJ_nYZKzUSJHcpJuNp1ykf6shnfetOuiIPhyhyTfSqh_cTsDT5obwOSIc21OsLkjF9tMBP7Q1GQ1ZQfBsEmQIrJpfX3QpdjHnLkzInsjpngeg2L7i_TAyl9MdVmgHsDpUvoURdxfqp8FOdJxuRAMCwhk\&width=768\&dpr=4\&quality=100\&sign=554fa70\&sv=2)
+### Aantal koprijen
 
-Stel het **Aantal koptekstrijen** in om overeen te komen:
+**Gebruik deze instelling om te bepalen uit hoeveel regels de tabelkop bestaat.**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FG8-QpKxnRin9PGPmkbtJ35r1EugXsD4_Yd5QvTkdbb7sXqRVC3a9t0cIlNILJHLr--GsykgAlMJmMYbJaUoMqHEPvAT3PlPNf-syCmPz_GVMFEMsbhcHI2DQBbT4MJXjS2Sx7M3xl4zAzcw3aa-XNms\&width=768\&dpr=4\&quality=100\&sign=a487f5a9\&sv=2)
+Sommige tabellen hebben een kop over meerdere regels. In dit voorbeeld loopt de kop van de tabel over twee regels:
 
-### Waarom is dit belangrijk?
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-two-lines-nl-20261112.png" alt="Factuurtabel waarvan de kop over twee regels loopt (Preis / in EUR en Betrag / in EUR)."><figcaption><p>Een tabelkop die over twee regels loopt.</p></figcaption></figure>
 
-Als u dit niet instelt, kan DocBits de tweede regel behandelen als gegevens in plaats van als onderdeel van de koptekst, wat leidt tot extractiefouten:
+Stel **Aantal koprijen** daarop in:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-row-count-nl-20261112.png" alt="Venster Instellingen met Aantal koprijen ingesteld op 2."><figcaption><p>Aantal koprijen op 2 in het venster Instellingen.</p></figcaption></figure>
+
+#### Waarom is dit belangrijk?
+
+Als u dit niet instelt, kan DocBits de tweede regel als gegevens behandelen in plaats van als deel van de kop, wat tot extractiefouten leidt:
 
 **Voor:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F35BElgcq-zbs8wcGcguVSKHRpwQXqQG9dQmBaYa8BT4RNwJxd6g-jL5wlQgrnVLrMxtpncr8ayaasWVV3snGpBiDUWs4Zx7Tn2Dck-YFBpanlcN500yIWkVz9RJXQhoq6op0WbYcgklp_LsmE9LXt9k\&width=768\&dpr=4\&quality=100\&sign=7c68faf7\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-before-nl-20261112.png" alt="Geëxtraheerde tabel met een onjuist aantal koprijen: de tweede kopregel verschijnt als gegevensrij en de kolomkoppen zijn niet toegewezen."><figcaption><p>Voor: de tweede kopregel wordt als gegevens behandeld.</p></figcaption></figure>
 
 Na:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FbPGn9eWPK3Mmbu_ab2N3tVVP8ODho4MW6r6ynSKJWiPxq-IPlP_0Q1ghfcwjN56Sp_HA0nV-fedAfzkZoAXsj5O5ata32PCXPHJQ-dizWZ1OdpdEPS5wSPNW9jjc7TSPKQiNnCGPjLtnXQDLCbwEj3U\&width=768\&dpr=4\&quality=100\&sign=b032f2da\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-after-nl-20261112.png" alt="Geëxtraheerde tabel met Aantal koprijen 2: de kolommen zijn toegewezen aan Positie, Beschrijving, Hoeveelheid, Eenheidsprijs en Nettobedrag en de rijen zijn correct."><figcaption><p>Na: kop- en gegevensrijen zijn correct gescheiden.</p></figcaption></figure>
 
-## Verplaats extra rijen naar prullenbak
+### Verplaats extra rijen naar Afval
 
-**Gebruik dit om ongewenste meerregelige vermeldingen te negeren, zoals overloopbeschrijvingen.**
+**Gebruik dit om ongewenste regels met doorlopende tekst weg te gooien, zoals omschrijvingen die over meerdere regels lopen.**
 
-In dit voorbeeld loopt de beschrijving over meerdere rijen, maar alleen de eerste regel is relevant:
+In dit voorbeeld loopt de omschrijving door over meerdere regels, terwijl alleen de eerste regel relevant is:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FAEFanKF7uUtS_78nxi5zESPW8WOESa0Do_sCQCsttC21KoFK-sB9TQgFHboJB7CMEpc_auEbeXINU4BpEh8XuNMBHDYhuwjVX40cRyygxECs3XogrurWKNdw4s4F1kxWXLGrrF4jSqd1bba0dKPVO2E\&width=768\&dpr=4\&quality=100\&sign=926d60ed\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-overflow-doc-nl-20261112.png" alt="Factuurtabel waarin de omschrijving van elk artikel op extra tekstregels onder het artikel doorloopt."><figcaption><p>De omschrijving loopt door over meerdere regels, waarvan alleen de eerste relevant is.</p></figcaption></figure>
 
-Activeer **Verplaats extra rijen naar prullenbak** om de overloop te verwijderen:
+Zet **Verplaats extra rijen naar** op **Afval** om de overtollige regels te verwijderen:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FQdYUZ0ANpuFRkvNxVZzYfEhTRVf2fk1jPmoNUZcNotdkgL6VDHV1BgBXU2xqFfjBJ7W6uvB8TRZcpKEk7Qk_c0mIohiS4Jl9ZPRpG7HdS_EktuCcAtJ4KjJ_vYvYok7lv0nz2MfVMG08oDFqRSyFHy4\&width=768\&dpr=4\&quality=100\&sign=135061e3\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-move-extra-rows-nl-20261112.png" alt="Venster Instellingen met Verplaats extra rijen naar ingesteld op Afval."><figcaption><p>Verplaats extra rijen naar ingesteld op Afval.</p></figcaption></figure>
 
-**Resultaat na mapping:**
+**Resultaat na toewijzen:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fzto-P_Knp1YQmCUBU6_vCg2IEwaBiBeAao8Jvu30-89x_Sj2BLDSTQu31vUNBlaQp73DPVy2F-UZawn8j4hxycD6bpfCf_KXZYvrqH5w0cwGwsjatBelIh6gdenY-NpzmQ372jtthucHpMrsXNz3DcA\&width=768\&dpr=4\&quality=100\&sign=741cbfd1\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-trash-result-nl-20261112.png" alt="Tabel Extractie: in het brondocument loopt de omschrijving van elk artikel door over twee regels, terwijl de geëxtraheerde tabel rechts al één schone rij per artikel bevat."><figcaption><p>Resultaat na toewijzen: de doorlopende regels zijn weg en alleen de relevante rijen blijven over.</p></figcaption></figure>
 
-## Minimum gegroepeerde rijen
+### Minimaal gegroepeerde rijen
 
-**Gebruik dit wanneer rijen onder één hoofdrij moeten worden gegroepeerd (bijv. regelitems met meerdere subregels).**
+**Gebruik dit wanneer rijen onder één hoofdrij gegroepeerd moeten worden (bijv. artikelregels met meerdere subregels).**
 
-Hier zijn slechts drie van de zes rijen relevant. Twee belangrijke kolommen zijn toegewezen (bijv. Positie, Beschrijving), terwijl andere worden behandeld als aangepaste velden.
+Hier zijn slechts drie van de zes rijen relevant. Twee sleutelkolommen zijn toegewezen (bijv. Positie, Beschrijving), terwijl de andere als aangepaste velden worden behandeld.
 
-Begin met het instellen van **Aantal koptekstrijen** en de **Minimum gegroepeerde rijen**:
+Begin met **Aantal koprijen** en **Minimaal gegroepeerde rijen** — het kleinste aantal rijen dat bij een groep moet horen voordat DocBits ze samenvoegt:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fp0k-n1IG3_FHexG4iAlISSmN4Yaq9xUjRO2cLpV3w6a67DpULRnxj4x291DOXBVx2SHqKp6Zs-ZXxr8KHKzT9O6oCwgEOkvfMqwpDGZUrfFpozdR16sbaybtrMEqDOXO1TsNmuPFz6mOKX0pR8I5RO8\&width=768\&dpr=4\&quality=100\&sign=e19a8ef6\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-min-grouped-nl-20261112.png" alt="Venster Instellingen met Aantal koprijen 2 en de uitgeklapte sectie Geavanceerde instellingen met Minimaal gegroepeerde rijen ingesteld op 2."><figcaption><p>Aantal koprijen en Minimaal gegroepeerde rijen ingesteld in het venster Instellingen.</p></figcaption></figure>
 
-Schakel ook **Verplaats extra rijen naar prullenbak** in om irrelevante gegevens op te ruimen:
+Zet daarnaast **Verplaats extra rijen naar** op **Afval** om irrelevante gegevens op te ruimen:
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_supplier.png" alt="DocBits Aankoop Bestelling Leverancier" width="522"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-min-grouped-trash-nl-20261112.png" alt="Venster Instellingen met Aantal koprijen 2, Verplaats extra rijen naar Afval en Minimaal gegroepeerde rijen 2."><figcaption><p>Ook Verplaats extra rijen naar is ingesteld op Afval.</p></figcaption></figure>
 
-Definieer vervolgens de groeperingssleutelkolom, bijv. _Positie_:
+Definieer vervolgens de groeperingssleutelkolom, bijv. _Positie_, door het kolommenu van die kolom te openen en **Groepsrijen** te kiezen:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F5hy2YTNQRZ6plQZnc1HwAbAUXU7LKfNpLdlfr8sPnDXMryv0KoAGgkcqAWqjvznvBa1YwW0ecTrpStpm5AIc0qiFX1zB-I_y_crIx0jKS2t6QVKdAz66Wb3XMt9sRsEUHKIuk51_AatHNCRZjOghn4A\&width=768\&dpr=4\&quality=100\&sign=6ca2a12e\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-group-key-nl-20261112.png" alt="Geëxtraheerde tabel met het geopende kolommenu van de kolom Pos. met Kolom verwijderen, Groepsrijen en Regex."><figcaption><p>Kies Groepsrijen in het kolommenu van de groeperingssleutelkolom (Positie).</p></figcaption></figure>
+
+Groeperen zelf en de andere kolomhulpmiddelen die ermee samenwerken (handmatige rijselectie, kolomtoewijzing en regex) worden stap voor stap behandeld in [Tabellen structureren en de tabelextractie in DocBits verbeteren](improving-table-extraction-with-regex.md).
 
 **Resultaat:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FxaorEjiOEeypLMAAOXvm3VAc5BVzhIujUeLdSt0SPwrEz5x_hd8sb3Hhc7OpnUpzj6qvjWWptOsefhxjF5pIzf12RVXah1wPhlMoa3Wwx7T3s_D7Pzw8cryaAzgh8SpN-uTxpl1FWke8v33dh2VNgJ0\&width=768\&dpr=4\&quality=100\&sign=e955b28f\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-grouped-result-nl-20261112.png" alt="Tabel Extractie: het brondocument bevat zes fysieke regels, twee per artikel, en de geëxtraheerde tabel rechts toont één gegroepeerde rij per artikel."><figcaption><p>Resultaat: de zes fysieke regels zijn gegroepeerd tot drie artikelregels.</p></figcaption></figure>
 
-## Omgekeerde groepering
+#### Maximaal aantal gegroepeerde rijen
 
-**Gebruik dit wanneer de groeperingsrij** _**na**_ **de rijen verschijnt die het moet groeperen.**
+**Gebruik dit om te beperken hoeveel rijen één groep mag bevatten.** De tooltip ervan vraagt: _Hoeveel rijen heeft uw gegroepeerde kolom maximaal?_ Het is de tegenhanger van Minimaal gegroepeerde rijen: een groep die meer rijen nodig zou hebben dan dit aantal, wordt niet samengevoegd.
 
-Als de rij die met andere gegevens moet worden gegroepeerd _boven_ de groeperingssleutel verschijnt, schakel dan deze optie in:
+Laat het leeg wanneer groepen willekeurig groot mogen zijn. Stel het in wanneer een document artikelen met veel subregels bevat en u wilt dat DocBits uitzonderlijk grote blokken niet groepeert, zodat u ze zelf kunt controleren.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FiH7rDa637FWtr8wWtXpdqSh68xsaOFrb_vIWf-ZOpAjExmFPHVRaDGGipdwNy30gpLmEWT0UujjqlbcSlHU7ldQ5zhAy15pMxuqbDpS2xFSuL35EjbaXfFQTOSSO3QE_I37kvdL3i5k-N7F_9tedMss\&width=768\&dpr=4\&quality=100\&sign=95d583b1\&sv=2)
+U stelt het in hetzelfde deel van het venster in als Minimaal gegroepeerde rijen, direct daaronder:
 
-Schakel **Omgekeerde groepering** in, groepeer op een hoofdkolom (bijv. Netto bedrag), en gebruik **Verplaats extra rijen naar prullenbak** indien nodig:
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-max-rows-nl-20261112.png" alt="Venster Instellingen met Minimaal gegroepeerde rijen ingesteld op 2 en Maximaal aantal gegroepeerde rijen ingesteld op 3; Verschillende groepskolommen, Omgekeerde groepering en Tekst splitsen zijn niet aangevinkt."><figcaption><p>Maximaal aantal gegroepeerde rijen (hier 3) staat direct onder Minimaal gegroepeerde rijen.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FFJNKYXmELlMFi-Zh_0Pjgc0pcKI2-_UbDhF7b4D5p7GA4f9r-FqjruzkJw3nfJH4NA0G_BC2xQpJEzl26GbOlPt9fPyOkGowtGWgRWt5GJ62Vj-Qd04rDP0kzDFiJnRlpWF13d9YQ1e-FurQI-gHJx4\&width=768\&dpr=4\&quality=100\&sign=4b2677ae\&sv=2)
+#### Verschillende groepskolommen
 
-**Definitief resultaat:**
+**Gebruik dit om alleen unieke waarden in de groeperingssleutelkolom te behouden.**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fe8x8gIUV10Y_FmPeW_X-UZw6uJ8P7alQTDy_m5OGGLZ8Ev7Ip-C-6fqtTixiSU0ZnLMIc4VR_f0xJV6beDnl7bFBIh4U2dME8KHB3qokj__SrQGp-3BXeOsN63SabFNd5miRCtK-jlf49nzcbbe8UJw\&width=768\&dpr=4\&quality=100\&sign=f7571dde\&sv=2)
+De tooltip van de optie vraagt: _Wilt u alleen unieke waarden voor uw gegroepeerde kolom?_ Schakel de optie in wanneer meerdere groepen dezelfde waarde in de groeperingssleutelkolom zouden krijgen en u wilt dat DocBits die waarde maar één keer behoudt, zodat de herhaalde groepen een lege sleutel tonen in plaats van de dubbele waarde.
 
-## Samenvatting
+Het is een selectievakje in dezelfde sectie als Minimaal gegroepeerde rijen:
 
-Gebruik de _Geavanceerde instellingen_ om DocBits te leren hoe om te gaan met meer complexe of inconsistente tabelstructuren. Deze instellingen verbeteren de precisie van extractie door rekening te houden met:
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-distinct-split-nl-20261112.png" alt="Venster Instellingen met het selectievakje Verschillende groepskolommen aangevinkt onder Maximaal aantal gegroepeerde rijen."><figcaption><p>Verschillende groepskolommen is het selectievakje onder Maximaal aantal gegroepeerde rijen.</p></figcaption></figure>
 
-* Meerregelige kopteksten
-* Meerrijige beschrijvingen
-* Gegroepeerde regelitems
-* Omgekeerde volgorde van gegroepeerde gegevens
+#### Omgekeerde groepering
 
-Door deze opties in te schakelen tijdens de training, zorgt u ervoor dat DocBits de juiste lay-out onthoudt voor toekomstige documenten van dezelfde leverancier.
+**Gebruik dit wanneer de groeperingsrij pas _na_ de rijen staat die erbij gegroepeerd moeten worden.**
+
+De tooltip van de optie vraagt: _Wilt u alle rijen boven het gegroepeerde kenmerk combineren?_ Schakel de optie in wanneer de rij met de groeperingssleutel (bijvoorbeeld de positie of het bedrag) _onder_ de bijbehorende vervolgregels staat, zodat DocBits de rijen boven de sleutel in de groep samenvoegt in plaats van de rijen eronder:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-doc-nl-20261112.png" alt="Factuurtabel waarin de omschrijvingsregel boven de regel staat met positie, hoeveelheid en bedragen."><figcaption><p>De groeperingsrij staat na de rijen die erbij gegroepeerd moeten worden.</p></figcaption></figure>
+
+Schakel **Omgekeerde groepering** in, groepeer op een hoofdkolom (bijv. Nettobedrag) en stel indien nodig **Verplaats extra rijen naar** in op **Afval**:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-dialog-nl-20261112.png" alt="Venster Instellingen met Omgekeerde groepering aangevinkt, Verplaats extra rijen naar Afval en Aantal koprijen 2."><figcaption><p>Omgekeerde groepering ingeschakeld samen met Verplaats extra rijen naar Afval.</p></figcaption></figure>
+
+**Eindresultaat:**
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-result-nl-20261112.png" alt="Geëxtraheerde tabel met drie rijen na omgekeerde groepering op de kolom met bedragen."><figcaption><p>Eindresultaat met omgekeerde groepering.</p></figcaption></figure>
+
+#### Tekst splitsen
+
+**Gebruik dit om celtekst precies op het kolomscheidingsteken te splitsen.**
+
+De tooltip van de optie vraagt: _Wilt u de tekst precies op het punt van de kolomscheidingsteken splitsen?_ Schakel de optie in wanneer één geëxtraheerde cel de tekst van twee kolommen bevat die door het tabelscheidingsteken niet zijn gescheiden. DocBits extraheert de tabel dan opnieuw en knipt elke waarde af op de positie van het door u bepaalde scheidingsteken, in plaats van beide waarden in één cel op te slaan.
+
+Omdat het splitsen de extractie opnieuw uitvoert, vraagt DocBits eerst om bevestiging: de bevestiging verschijnt zodra u het selectievakje aanvinkt, en de splitsing wordt pas toegepast nadat u op **Doorgaan** hebt geklikt.
+
+Het selectievakje is de laatste optie in de sectie Geavanceerde instellingen:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-distinct-split-nl-20261112.png" alt="Venster Instellingen met het selectievakje Tekst splitsen aangevinkt als laatste optie van de sectie Geavanceerde instellingen."><figcaption><p>Tekst splitsen is het laatste selectievakje van de sectie.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-split-confirm-nl-20261112.png" alt="Bevestigingsvenster met de vraag 'Weet je het zeker? De tabel wordt opnieuw opgehaald.' en de knoppen Annuleren en Doorgaan."><figcaption><p>Het aanvinken van Tekst splitsen opent deze bevestiging; alleen Doorgaan past de splitsing toe.</p></figcaption></figure>
+
+### Samenvatting
+
+Gebruik de _Geavanceerde instellingen_ om DocBits te leren hoe het complexere of inconsistente tabelstructuren nauwkeurig verwerkt. Deze instellingen verbeteren de extractieprecisie door rekening te houden met:
+
+* koppen over meerdere regels
+* omschrijvingen over meerdere rijen
+* gegroepeerde artikelregels
+* omgekeerde volgorde van gegroepeerde gegevens
+* tekst die op een kolomscheidingsteken gesplitst moet worden
+
+Als u deze opties tijdens de training inschakelt, onthoudt DocBits de juiste lay-out voor toekomstige documenten van dezelfde leverancier. Zodra de extractie goed uitziet, slaat u de configuratie op met de actie **Regels opslaan**, die wordt beschreven in [Regels opslaan en verwijderen](save-and-delete-rules.md).

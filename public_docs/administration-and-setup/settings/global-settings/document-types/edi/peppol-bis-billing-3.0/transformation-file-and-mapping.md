@@ -370,7 +370,7 @@ Plik ten odpowiada za wyodrębnianie danych z pliku XML Peppol BIS Billing 3.0, 
    * **Zmapowane do**: `<INVOICE><BUYER_REFERENCE>`
    * **Może wystąpić wielokrotnie**: Nie.
 
-2)  **Referencja bilingowa**
+2. **Billing Reference**
 
     * **Źródło**: `//BillingReference`
     * **Zmapowane do**: `<INVOICE><BILLING_REFERENCE>`

@@ -10,7 +10,7 @@ Karta **Validation Setup** pokazuje Twój bieżący profil walidacji (na przykł
 
 ## Akceptowane wersje XRechnung
 
-Bramka **Accepted XRechnung versions** wymienia każdą wersję XRechnung. Zaznacz wersje, które akceptujesz — dokumenty, których CustomizationID znajduje się poza tą listą, są odrzucane z kodem `VAL-VERSION-NOT-ALLOWED` przed jakąkolwiek inną kontrolą. Pusta lista oznacza „akceptuj wszystko". Każda wersja jest oznaczona jako **current**, **deprecated** lub **EOL** wraz z datą wydania.
+Bramka **Accepted XRechnung versions** wymienia każdą wersję XRechnung. Zaznacz wersje, które akceptujesz — dokumenty, których CustomizationID znajduje się poza tą listą, są odrzucane z kodem `VAL-VERSION-NOT-ALLOWED` przed jakąkolwiek inną kontrolą. Jeśli żadna wersja nie jest zaznaczona, bramka jest wyłączona i każda wersja jest akceptowana. Każda wersja jest oznaczona jako **current**, **deprecated** lub **EOL** wraz z datą wydania.
 
 ## Akceptowane profile i poziomy ważności <a id="akceptowane-profile-i-model-wagi"></a>
 

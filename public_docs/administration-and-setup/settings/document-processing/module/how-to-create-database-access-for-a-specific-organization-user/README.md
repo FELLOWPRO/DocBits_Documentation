@@ -28,7 +28,7 @@
      * **Password**: Upewnij się, że hasło jest bezpiecznie przechowywane lub skopiowane.
      * **Database**: Nazwa bazy danych
      * **Host**: Nazwa hosta
-     * **Port**: Port
+     * **Port**: Port serwera bazy danych
      * **SSL Mode:** Połączenie wymaga `sslmode=require` dla bezpiecznej komunikacji.
 3. **Kopiowanie danych uwierzytelniających**:
    * Użyj ikon kopiowania obok każdego pola, aby szybko skopiować dane uwierzytelniające do klienta bazy danych lub aplikacji.

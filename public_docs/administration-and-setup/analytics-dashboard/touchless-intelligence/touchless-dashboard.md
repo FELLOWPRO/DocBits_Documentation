@@ -54,6 +54,17 @@ Wykres słupkowy **Blocked documents** według etapu potoku: **pierwszego** etap
 
 **Przykład.** Słupki: Supplier Identification 12, Field Validation 41, PO Line Match 7. Najwyższy słupek mówi, żeby najpierw przyjrzeć się **Field Validation**. Brakująca odczytana wartość to jedna z możliwych przyczyn; przed potwierdzeniem porównaj oryginalną fakturę, reguły pól i dostępne dane źródłowe.
 
+#### Dlaczego dokumenty nie są touchless (kanał wydania Nova)
+
+Organizacje w kanale wydania **Nova** widzą odpowiedź na to samo pytanie w postaci rozwijanej listy zamiast wykresu słupkowego. Panel nosi nazwę **Why documents are not touchless** i znajduje się obok **Touchless rate over time**.
+
+* Nagłówek podaje, ile dokumentów obejmuje lista. Każdy wiersz to jeden obszar pierwszego blokera z jego udziałem w procentach, liczbą dokumentów i słupkiem. Wiersze są sortowane od największego.
+* Kliknij wiersz, aby otworzyć jego przyczyny na miejscu. Przyczyny zachowują własne liczby dokumentów, więc widać, która przyczyna w danym obszarze kosztuje najwięcej. Jednocześnie otwarty jest tylko jeden obszar; kliknij ponownie, aby go zamknąć.
+* Lista pochodzi z tych samych danych raportu co kluczowe wskaźniki. Liczby nie są przeliczane w przeglądarce, więc suma w nagłówku i wiersze zawsze się zgadzają.
+* Jeśli Twoja instalacja nie wysyła jeszcze tych danych, panel to zgłasza zamiast pokazywać **0**. Pusta lista z opisem „nic nie zapisano” oznacza, że w tym okresie nie utracono dokumentów; te dwa stany są różne i nie należy odczytywać pierwszego jako dobrej wiadomości.
+
+Kanał wydania **Vesta** zachowuje opisany wyżej wykres słupkowy. Jeśli Twoja strona pokazuje słupki, jesteś w Vesta; jeśli pokazuje rozwijaną listę, jesteś w Nova. Oba odpowiadają na to samo pytanie, więc reszta tej strony obowiązuje w obu przypadkach.
+
 ### Możliwości u dostawców
 
 <figure><img src="../../../.gitbook/assets/touchless-supplier-queue-pl.png" alt="Tabela Supplier opportunities z wolumenem, Pure Rate, Lost Documents, Root Cause, Recoverable, Expected Lift, Confidence i Status"><figcaption><p>Kolejka dostawców (skrócona do pierwszych czterech wierszy). Pierwszy dostawca ma 106 dokumentów, Pure Rate 38.7 % i 65 dokumentów możliwych do odzyskania, więc jego naprawa jest warta <strong>+21 pp</strong>. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
@@ -101,7 +112,7 @@ W trakcie działania przy każdym klastrze widzisz **Queued**, **Running**, **Do
 
 1. **Co tydzień**: otwórz kartę i sprawdź **wskaźnik** oraz **trend** względem celu.
 2. Spójrz na **Diagnosis coverage**. Poniżej około 80 % najpierw dowiedz się, dlaczego dokumenty się zatrzymują.
-3. Przeczytaj **Gdzie touchless jest tracony najpierw** i wybierz największy etap.
+3. Przeczytaj **Where touchless is lost first** (Vesta) lub **Why documents are not touchless** (Nova) i wybierz największy etap lub obszar.
 4. Otwórz **Możliwości u dostawców**. Posortuj według **Expected lift** i weź pierwszego dostawcę ze statusem **RECOVERABLE**.
 5. Przeczytaj **klastry problemów**, sprawdź **Missing evidence**, a następnie wykonaj **What to change**.
 6. Usuń jedną potwierdzoną przyczynę. Dla obsługiwanej propozycji DocBits użyj podglądu i historii zmian. Korektę w Infor udokumentuj i zaimportuj osobno; nie tworzy ona automatycznie wpisu o zmianie ustawień DocBits.

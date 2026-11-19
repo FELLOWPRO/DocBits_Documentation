@@ -1,99 +1,139 @@
 # Ustawienia zaawansowane
 
-W niektórych dokumentach struktury tabel mogą być złożone — obejmować wiele wierszy, zawierać zgrupowane informacje lub zbędne dodatkowe wiersze. _Ustawienia zaawansowane_ w trybie trenowania pozwalają precyzyjnie dostroić ekstrakcję tabel w takich przypadkach, poprawiając dokładność i spójność.
+W niektórych dokumentach struktury tabel mogą być złożone — mogą obejmować wiele wierszy, zawierać zgrupowane informacje lub niepotrzebne dodatkowe wiersze. _Ustawienia zaawansowane_ w trybie szkoleniowym pozwalają dopasować ekstrakcję tabeli do takich przypadków, poprawiając dokładność i spójność.
 
-Aby uzyskać dostęp do tych ustawień, włącz **Tryb trenowania** i kliknij ikonę koła zębatego **Ustawienia** na górnym pasku akcji:
+Aby otworzyć te ustawienia, włącz **Tryb szkoleniowy** i kliknij ikonę zębatki **Ustawienia** na górnym pasku akcji:
 
-![advanced-settings](https://lh7-us.googleusercontent.com/W1cBx4IOjycKv6IZM9AX8Wggj1eEBgzBVJWgsyWkutX9dRRJuEjQtSCsPaNZuRndd9ewMVvfqSXr45C-2cO-pxXkYFdl_9eEGVW6-UBqqZCsuhia6alJjD1ZuZawwSbjS9Yeywe1wDK5yAcIOUH5QAw)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-gear-pl-20261112.png" alt="Ekran ekstrakcji tabeli w trybie szkoleniowym z kursorem myszy nad ikoną zębatki Ustawienia na górnym pasku akcji."><figcaption><p>Ikona zębatki Ustawienia na pasku akcji trybu szkoleniowego otwiera Ustawienia zaawansowane.</p></figcaption></figure>
+
+Okno dialogowe Ustawienia zawiera wszystkie opcje opisane na tej stronie. Rozwiń sekcję **Ustawienia zaawansowane**, aby przejść do opcji grupowania — pozostają one zwinięte do momentu otwarcia:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-max-rows-pl-20261112.png" alt="Okno dialogowe Ustawienia z liczbą wierszy nagłówka 2 i rozwiniętą sekcją Ustawienia zaawansowane: minimalna liczba wierszy zgrupowanych 2, maksymalna liczba zgrupowanych wierszy 3, Odrębne kolumny grupowe, Grupowanie odwrotne i Podziel tekst."><figcaption><p>Sekcja Ustawienia zaawansowane ze wszystkimi opcjami grupowania.</p></figcaption></figure>
+
+Każda opcja jest opisana w osobnym punkcie poniżej, wraz z efektem, jaki daje w wyodrębnionej tabeli.
 
 ### Liczba wierszy nagłówka
 
-**Użyj tego ustawienia, aby określić, ile wierszy tworzy nagłówek tabeli.**
+**Użyj tego ustawienia, aby określić, z ilu wierszy składa się nagłówek tabeli.**
 
-Niektóre tabele mają wielowierszowe nagłówki. Na przykład nagłówek tej tabeli obejmuje dwa wiersze:
+Niektóre tabele mają nagłówki zajmujące wiele wierszy. W tym przykładzie nagłówek tabeli obejmuje dwa wiersze:
 
-![](https://lh7-us.googleusercontent.com/J_nYZKzUSJHcpJuNp1ykf6shnfetOuiIPhyhyTfSqh_cTsDT5obwOSIc21OsLkjF9tMBP7Q1GQ1ZQfBsEmQIrJpfX3QpdjHnLkzInsjpngeg2L7i_TAyl9MdVmgHsDpUvoURdxfqp8FOdJxuRAMCwhk)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-two-lines-pl-20261112.png" alt="Tabela faktury, której nagłówek zajmuje dwa wiersze (Preis / in EUR oraz Betrag / in EUR)."><figcaption><p>Nagłówek tabeli zajmujący dwa wiersze.</p></figcaption></figure>
 
-Ustaw **Liczbę wierszy nagłówka** tak, aby pasowała:
+Ustaw **Liczbę wierszy nagłówka** odpowiednio do tego:
 
-![header row count](https://lh7-us.googleusercontent.com/G8-QpKxnRin9PGPmkbtJ35r1EugXsD4_Yd5QvTkdbb7sXqRVC3a9t0cIlNILJHLr--GsykgAlMJmMYbJaUoMqHEPvAT3PlPNf-syCmPz_GVMFEMsbhcHI2DQBbT4MJXjS2Sx7M3xl4zAzcw3aa-XNms)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-row-count-pl-20261112.png" alt="Okno dialogowe Ustawienia z liczbą wierszy nagłówka ustawioną na 2."><figcaption><p>Liczba wierszy nagłówka ustawiona na 2 w oknie Ustawienia.</p></figcaption></figure>
 
 #### Dlaczego jest to ważne?
 
-Jeśli tego nie ustawisz, DocBits może potraktować drugi wiersz jako dane zamiast jako część nagłówka, co prowadzi do błędów ekstrakcji:
+Jeśli tego nie ustawisz, DocBits może potraktować drugi wiersz jako dane, a nie jako część nagłówka, co prowadzi do błędów ekstrakcji:
 
 **Przed:**
 
-![](https://lh7-us.googleusercontent.com/35BElgcq-zbs8wcGcguVSKHRpwQXqQG9dQmBaYa8BT4RNwJxd6g-jL5wlQgrnVLrMxtpncr8ayaasWVV3snGpBiDUWs4Zx7Tn2Dck-YFBpanlcN500yIWkVz9RJXQhoq6op0WbYcgklp_LsmE9LXt9k)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-before-pl-20261112.png" alt="Wyodrębniona tabela z błędną liczbą wierszy nagłówka: drugi wiersz nagłówka pojawia się jako wiersz danych, a nagłówki kolumn nie są zmapowane."><figcaption><p>Przed: drugi wiersz nagłówka jest traktowany jako dane.</p></figcaption></figure>
 
 Po:
 
-![](https://lh7-us.googleusercontent.com/bPGn9eWPK3Mmbu_ab2N3tVVP8ODho4MW6r6ynSKJWiPxq-IPlP_0Q1ghfcwjN56Sp_HA0nV-fedAfzkZoAXsj5O5ata32PCXPHJQ-dizWZ1OdpdEPS5wSPNW9jjc7TSPKQiNnCGPjLtnXQDLCbwEj3U)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-after-pl-20261112.png" alt="Wyodrębniona tabela z liczbą wierszy nagłówka 2: kolumny są zmapowane na Pozycja, Opis, Ilość, Cena jednostkowa i Kwota netto, a wiersze są poprawne."><figcaption><p>Po: nagłówek i wiersze danych są prawidłowo rozdzielone.</p></figcaption></figure>
 
-### Przenieś dodatkowe wiersze do kosza
+### Przenoszenie dodatkowych wierszy do kosza
 
-**Użyj tej opcji, aby odrzucić niechciane wielowierszowe wpisy, takie jak nadmiarowe opisy.**
+**Użyj tej opcji, aby odrzucić niechciane wpisy zajmujące wiele wierszy, np. opisy przechodzące na kolejne wiersze.**
 
-W tym przykładzie opis rozlewa się na wiele wierszy, ale tylko pierwszy wiersz jest istotny:
+W tym przykładzie opis przechodzi na kilka wierszy, ale istotny jest tylko pierwszy z nich:
 
-![](https://lh7-us.googleusercontent.com/AEFanKF7uUtS_78nxi5zESPW8WOESa0Do_sCQCsttC21KoFK-sB9TQgFHboJB7CMEpc_auEbeXINU4BpEh8XuNMBHDYhuwjVX40cRyygxECs3XogrurWKNdw4s4F1kxWXLGrrF4jSqd1bba0dKPVO2E)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-overflow-doc-pl-20261112.png" alt="Tabela faktury, w której opis każdej pozycji jest kontynuowany w dodatkowych wierszach tekstu pod pozycją."><figcaption><p>Opis przechodzi na kilka wierszy, z których istotny jest tylko pierwszy.</p></figcaption></figure>
 
-Włącz opcję **Przenieś dodatkowe wiersze do kosza**, aby usunąć nadmiar:
+Ustaw **Przenieś dodatkowe wiersze do** na **Śmieci**, aby usunąć nadmiarowe wiersze:
 
-![](https://lh7-us.googleusercontent.com/QdYUZ0ANpuFRkvNxVZzYfEhTRVf2fk1jPmoNUZcNotdkgL6VDHV1BgBXU2xqFfjBJ7W6uvB8TRZcpKEk7Qk_c0mIohiS4Jl9ZPRpG7HdS_EktuCcAtJ4KjJ_vYvYok7lv0nz2MfVMG08oDFqRSyFHy4)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-move-extra-rows-pl-20261112.png" alt="Okno dialogowe Ustawienia z opcją Przenieś dodatkowe wiersze do ustawioną na Śmieci."><figcaption><p>Opcja Przenieś dodatkowe wiersze do ustawiona na Śmieci.</p></figcaption></figure>
 
-**Wynik po zmapowaniu:**
+**Wynik po mapowaniu:**
 
-![](https://lh7-us.googleusercontent.com/zto-P_Knp1YQmCUBU6_vCg2IEwaBiBeAao8Jvu30-89x_Sj2BLDSTQu31vUNBlaQp73DPVy2F-UZawn8j4hxycD6bpfCf_KXZYvrqH5w0cwGwsjatBelIh6gdenY-NpzmQ372jtthucHpMrsXNz3DcA)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-trash-result-pl-20261112.png" alt="Ekran ekstrakcji tabeli: w dokumencie źródłowym opis każdej pozycji zajmuje dwa wiersze, a wyodrębniona tabela po prawej zawiera już jeden czysty wiersz na pozycję."><figcaption><p>Wynik po mapowaniu: nadmiarowe wiersze zniknęły i pozostały tylko istotne wiersze.</p></figcaption></figure>
 
+### Minimalna liczba wierszy zgrupowanych
 
+**Użyj tej opcji, gdy wiersze mają zostać zgrupowane pod jednym wierszem głównym (np. pozycje z kilkoma wierszami podrzędnymi).**
 
-### Minimalna liczba zgrupowanych wierszy
+Tutaj istotne są tylko trzy z sześciu wierszy. Zmapowane są dwie kolumny kluczowe (np. Pozycja, Opis), a pozostałe są traktowane jako pola niestandardowe.
 
-**Użyj tej opcji, gdy wiersze muszą być grupowane razem pod jednym głównym wierszem (np. pozycje z wieloma podwierszami).**
+Zacznij od ustawienia **Liczby wierszy nagłówka** i **Minimalnej liczby wierszy zgrupowanych** — najmniejszej liczby wierszy, która musi należeć do grupy, zanim DocBits je połączy:
 
-W tym przypadku tylko trzy z sześciu wierszy są istotne. Dwie kluczowe kolumny są zmapowane (np. Pozycja, Opis), podczas gdy pozostałe są traktowane jako pola niestandardowe.
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-min-grouped-pl-20261112.png" alt="Okno dialogowe Ustawienia z liczbą wierszy nagłówka 2 i rozwiniętą sekcją Ustawienia zaawansowane z minimalną liczbą wierszy zgrupowanych 2."><figcaption><p>Liczba wierszy nagłówka i minimalna liczba wierszy zgrupowanych ustawione w oknie Ustawienia.</p></figcaption></figure>
 
-Zacznij od ustawienia **Liczby wierszy nagłówka** oraz **Minimalnej liczby zgrupowanych wierszy**:
+Ustaw także **Przenieś dodatkowe wiersze do** na **Śmieci**, aby usunąć nieistotne dane:
 
-![](https://lh7-us.googleusercontent.com/p0k-n1IG3_FHexG4iAlISSmN4Yaq9xUjRO2cLpV3w6a67DpULRnxj4x291DOXBVx2SHqKp6Zs-ZXxr8KHKzT9O6oCwgEOkvfMqwpDGZUrfFpozdR16sbaybtrMEqDOXO1TsNmuPFz6mOKX0pR8I5RO8)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-min-grouped-trash-pl-20261112.png" alt="Okno dialogowe Ustawienia z liczbą wierszy nagłówka 2, opcją Przenieś dodatkowe wiersze do ustawioną na Śmieci i minimalną liczbą wierszy zgrupowanych 2."><figcaption><p>Dodatkowo opcja Przenieś dodatkowe wiersze do ustawiona na Śmieci.</p></figcaption></figure>
 
-Włącz również opcję **Przenieś dodatkowe wiersze do kosza**, aby usunąć nieistotne dane:
+Następnie zdefiniuj kolumnę klucza grupowania, np. _Pozycja_, otwierając menu tej kolumny i wybierając **Grupuj wiersze**:
 
-![](https://lh7-us.googleusercontent.com/P9Mbga3kWRkhRFYPRQKN6IXCYTnMHpfXr7GIBqbuwz-RYyq7fMuKRxJgzU0HVdxFxkI_5S2DA8ThYNveXlgrDYZ7JP_jOYf9wd9ldDzg1abzMD7HE0sN8NC-wrWdoZvm5M2q_XVWTi6epBMBtHvbFe0)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-group-key-pl-20261112.png" alt="Wyodrębniona tabela z otwartym menu kolumny Pozycja, w którym widoczne są opcje Usuń kolumnę, Grupuj wiersze i Wyrażenie regularne."><figcaption><p>Wybierz Grupuj wiersze w menu kolumny klucza grupowania (Pozycja).</p></figcaption></figure>
 
-Następnie zdefiniuj kolumnę będącą kluczem grupowania, np. _Pozycja_:
-
-![](https://lh7-us.googleusercontent.com/5hy2YTNQRZ6plQZnc1HwAbAUXU7LKfNpLdlfr8sPnDXMryv0KoAGgkcqAWqjvznvBa1YwW0ecTrpStpm5AIc0qiFX1zB-I_y_crIx0jKS2t6QVKdAz66Wb3XMt9sRsEUHKIuk51_AatHNCRZjOghn4A)
+Samo grupowanie oraz pozostałe narzędzia kolumn, które z nim współpracują (ręczne zaznaczanie wierszy, mapowanie kolumn i wyrażenia regularne), opisano krok po kroku w [Strukturyzacja i Poprawa Ekstrakcji Tabel w DocBits](improving-table-extraction-with-regex.md).
 
 **Wynik:**
 
-<figure><img src="https://lh7-us.googleusercontent.com/xaorEjiOEeypLMAAOXvm3VAc5BVzhIujUeLdSt0SPwrEz5x_hd8sb3Hhc7OpnUpzj6qvjWWptOsefhxjF5pIzf12RVXah1wPhlMoa3Wwx7T3s_D7Pzw8cryaAzgh8SpN-uTxpl1FWke8v33dh2VNgJ0" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-grouped-result-pl-20261112.png" alt="Ekran ekstrakcji tabeli: dokument źródłowy zawiera sześć wierszy fizycznych, po dwa na pozycję, a wyodrębniona tabela po prawej pokazuje jeden zgrupowany wiersz na pozycję."><figcaption><p>Wynik: sześć wierszy fizycznych jest zgrupowanych w trzy pozycje.</p></figcaption></figure>
 
-### Grupowanie odwrócone
+#### Maksymalna liczba zgrupowanych wierszy
 
-**Użyj tej opcji, gdy wiersz grupujący pojawia się&#x20;**_**po**_**&#x20;wierszach, które ma grupować.**
+**Użyj tej opcji, aby ograniczyć liczbę wierszy w jednej grupie.** Jej podpowiedź brzmi: _Ile wierszy maksymalnie może mieć Twoja zgrupowana kolumna?_ To odpowiednik Minimalnej liczby wierszy zgrupowanych: grupa, która wymagałaby więcej wierszy niż ta liczba, nie zostanie połączona.
 
-Jeśli wiersz, który powinien być zgrupowany z innymi danymi, pojawia się _nad_ kluczem grupowania, włącz tę opcję:
+Pozostaw pole puste, jeśli grupy mogą mieć dowolną wielkość. Ustaw je, gdy dokument zawiera pozycje z wieloma wierszami podrzędnymi, a chcesz, aby DocBits pozostawił nietypowo duże bloki bez grupowania, żebyś mógł je sprawdzić samodzielnie.
 
-![](https://lh7-us.googleusercontent.com/iH7rDa637FWtr8wWtXpdqSh68xsaOFrb_vIWf-ZOpAjExmFPHVRaDGGipdwNy30gpLmEWT0UujjqlbcSlHU7ldQ5zhAy15pMxuqbDpS2xFSuL35EjbaXfFQTOSSO3QE_I37kvdL3i5k-N7F_9tedMss)
+Ustawiasz je w tym samym obszarze okna co Minimalną liczbę wierszy zgrupowanych, bezpośrednio pod nią:
 
-Włącz **Grupowanie odwrócone**, grupuj według głównej kolumny (np. Kwota netto) i w razie potrzeby użyj opcji **Przenieś dodatkowe wiersze do kosza**:
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-max-rows-pl-20261112.png" alt="Okno dialogowe Ustawienia z minimalną liczbą wierszy zgrupowanych 2 i maksymalną liczbą zgrupowanych wierszy 3; opcje Odrębne kolumny grupowe, Grupowanie odwrotne i Podziel tekst są niezaznaczone."><figcaption><p>Maksymalna liczba zgrupowanych wierszy (tu 3) znajduje się bezpośrednio pod minimalną liczbą wierszy zgrupowanych.</p></figcaption></figure>
 
-![](https://lh7-us.googleusercontent.com/FJNKYXmELlMFi-Zh_0Pjgc0pcKI2-_UbDhF7b4D5p7GA4f9r-FqjruzkJw3nfJH4NA0G_BC2xQpJEzl26GbOlPt9fPyOkGowtGWgRWt5GJ62Vj-Qd04rDP0kzDFiJnRlpWF13d9YQ1e-FurQI-gHJx4)
+#### Odrębne kolumny grupowe
 
-**Końcowy wynik:**\\
+**Użyj tej opcji, aby zachować w kolumnie klucza grupowania tylko unikalne wartości.**
 
+Podpowiedź tej opcji w aplikacji brzmi: _Czy chcesz, aby w pogrupowanej kolumnie znalazły się tylko unikalne wartości?_ Włącz ją, gdy kilka grup miałoby tę samą wartość w kolumnie klucza grupowania, a chcesz, aby DocBits zachował tę wartość tylko raz — powtarzające się grupy pokażą wtedy pusty klucz zamiast zduplikowanej wartości.
 
-<figure><img src="https://lh7-us.googleusercontent.com/e8x8gIUV10Y_FmPeW_X-UZw6uJ8P7alQTDy_m5OGGLZ8Ev7Ip-C-6fqtTixiSU0ZnLMIc4VR_f0xJV6beDnl7bFBIh4U2dME8KHB3qokj__SrQGp-3BXeOsN63SabFNd5miRCtK-jlf49nzcbbe8UJw" alt=""><figcaption></figcaption></figure>
+To pole wyboru znajduje się w tej samej sekcji co Minimalna liczba wierszy zgrupowanych:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-distinct-split-pl-20261112.png" alt="Okno dialogowe Ustawienia z zaznaczonym polem Odrębne kolumny grupowe pod maksymalną liczbą zgrupowanych wierszy."><figcaption><p>Odrębne kolumny grupowe to pole wyboru pod maksymalną liczbą zgrupowanych wierszy.</p></figcaption></figure>
+
+#### Grupowanie odwrotne
+
+**Użyj tej opcji, gdy wiersz grupowania znajduje się&#x20;**_**po**_**&#x20;wierszach, które ma zgrupować.**
+
+Podpowiedź tej opcji brzmi: _Czy chcesz połączyć wszystkie wiersze powyżej zgrupowanego atrybutu?_ Włącz ją, gdy wiersz zawierający klucz grupowania (np. pozycję lub kwotę) znajduje się _pod_ wierszami kontynuacji, aby DocBits połączył wiersze powyżej klucza w grupę, a nie wiersze poniżej:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-doc-pl-20261112.png" alt="Tabela faktury, w której wiersz opisu znajduje się nad wierszem zawierającym pozycję, ilość i kwoty."><figcaption><p>Wiersz grupowania pojawia się po wierszach, które ma zgrupować.</p></figcaption></figure>
+
+Włącz **Grupowanie odwrotne**, grupuj według kolumny głównej (np. Kwota netto) i w razie potrzeby ustaw **Przenieś dodatkowe wiersze do** na **Śmieci**:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-dialog-pl-20261112.png" alt="Okno dialogowe Ustawienia z zaznaczoną opcją Grupowanie odwrotne, opcją Przenieś dodatkowe wiersze do ustawioną na Śmieci i liczbą wierszy nagłówka 2."><figcaption><p>Grupowanie odwrotne włączone razem z opcją Przenieś dodatkowe wiersze do.</p></figcaption></figure>
+
+**Wynik końcowy:**
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-result-pl-20261112.png" alt="Wyodrębniona tabela z trzema wierszami po grupowaniu odwrotnym według kolumny kwoty."><figcaption><p>Wynik końcowy z grupowaniem odwrotnym.</p></figcaption></figure>
+
+#### Podziel tekst
+
+**Użyj tej opcji, aby podzielić tekst komórki dokładnie w miejscu separatora kolumny.**
+
+Podpowiedź tej opcji brzmi: _Czy chcesz podzielić tekst dokładnie w miejscu separatora kolumny?_ Włącz ją, gdy jedna wyodrębniona komórka zawiera tekst dwóch kolumn, których separator tabeli nie rozdzielił. DocBits ponownie wyodrębni wtedy tabelę i przetnie każdą wartość w zdefiniowanym miejscu separatora, zamiast zapisywać obie wartości w jednej komórce.
+
+Ponieważ podział uruchamia ekstrakcję ponownie, DocBits prosi o potwierdzenie: okno potwierdzenia pojawia się od razu po zaznaczeniu pola, a podział jest stosowany dopiero po kliknięciu **Przystępować**.
+
+Pole wyboru jest ostatnią opcją w sekcji Ustawienia zaawansowane:
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-distinct-split-pl-20261112.png" alt="Okno dialogowe Ustawienia z zaznaczonym polem Podziel tekst jako ostatnią opcją sekcji Ustawienia zaawansowane."><figcaption><p>Podziel tekst to ostatnie pole wyboru w sekcji.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-split-confirm-pl-20261112.png" alt="Okno potwierdzenia z pytaniem „Czy jesteś pewien? Tabela zostanie wyodrębniona ponownie” i przyciskami Anulować i Przystępować."><figcaption><p>Zaznaczenie opcji Podziel tekst otwiera to potwierdzenie; podział stosuje dopiero przycisk Przystępować.</p></figcaption></figure>
 
 ### Podsumowanie
 
-Skorzystaj z _Ustawień zaawansowanych_, aby nauczyć DocBits dokładnego obsługiwania bardziej złożonych lub niespójnych struktur tabel. Ustawienia te poprawiają precyzję ekstrakcji, uwzględniając:
+Używaj _Ustawień zaawansowanych_, aby nauczyć DocBits dokładnej obsługi bardziej złożonych lub niespójnych struktur tabel. Te ustawienia poprawiają precyzję ekstrakcji, uwzględniając:
 
-* Wielowierszowe nagłówki
-* Wielowierszowe opisy
-* Zgrupowane pozycje
-* Odwróconą kolejność zgrupowanych danych
+* nagłówki zajmujące wiele wierszy
+* opisy zajmujące wiele wierszy
+* zgrupowane pozycje
+* odwróconą kolejność zgrupowanych danych
+* tekst, który trzeba podzielić w miejscu separatora kolumny
 
-Włączenie tych opcji podczas trenowania sprawia, że DocBits zapamiętuje prawidłowy układ dla przyszłych dokumentów od tego samego dostawcy.
+Włączenie tych opcji podczas szkolenia sprawia, że DocBits zapamiętuje właściwy układ dla przyszłych dokumentów od tego samego dostawcy. Gdy ekstrakcja wygląda poprawnie, zapisz konfigurację akcją **Zapis zasady** opisaną w [Zapisywanie i Usuwanie Reguł](save-and-delete-rules.md).

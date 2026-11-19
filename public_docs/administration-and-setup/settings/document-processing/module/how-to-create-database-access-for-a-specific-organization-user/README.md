@@ -28,7 +28,7 @@
      * **Password**: Stellen Sie sicher, dass das Passwort sicher gespeichert oder kopiert wird.
      * **Database**: Der Name der Datenbank.
      * **Host**: Der Hostname.
-     * **Port**: Der Port.
+     * **Port**: Der Port des Datenbankservers.
      * **SSL Mode:** Die Verbindung erfordert `sslmode=require` für eine sichere Kommunikation.
 3. **Zugangsdaten kopieren**:
    * Mit den Kopiersymbolen neben den einzelnen Feldern kopieren Sie die Zugangsdaten schnell zur Verwendung in Ihrem Datenbank-Client oder Ihrer Anwendung.

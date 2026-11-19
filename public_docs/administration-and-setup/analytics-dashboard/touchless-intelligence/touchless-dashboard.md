@@ -54,6 +54,17 @@ Ein Balkendiagramm der **Blocked documents** je Pipeline-Schritt: der **erste** 
 
 **Beispiel.** Balken: Supplier Identification 12, Field Validation 41, PO Line Match 7. Der größte Balken sagt Ihnen, dass Sie zuerst **Field Validation** prüfen sollten. Ein nicht ausgelesener Wert ist eine mögliche Ursache; vergleichen Sie Originalrechnung, Feldregeln und verfügbare Quelldaten, bevor Sie sie bestätigen.
 
+#### Warum Dokumente nicht touchless sind (Nova-Release-Kanal)
+
+Organisationen auf dem Release-Kanal **Nova** sehen dieselbe Frage durch eine aufklappbare Liste statt durch das Balkendiagramm beantwortet. Das Panel heißt **Why documents are not touchless** und steht neben **Touchless rate over time**.
+
+* Die Kopfzeile nennt, wie viele Dokumente die Liste abdeckt. Jede Zeile ist ein Bereich des ersten Blockers mit seinem Anteil in Prozent, der Anzahl der Dokumente und einem Balken. Die Zeilen kommen nach Größe sortiert, größte zuerst.
+* Klicken Sie auf eine Zeile, um ihre Gründe direkt zu öffnen. Die Gründe behalten ihre eigenen Dokumentanzahlen, sodass Sie sehen, welche Ursache innerhalb eines Bereichs am meisten kostet. Es ist immer nur ein Bereich geöffnet; klicken Sie ihn erneut an, um ihn zu schließen.
+* Die Liste stammt aus denselben Berichtsdaten wie die Kennzahlen. Die Zahlen werden nicht im Browser neu berechnet, daher stimmen eine Summe in der Kopfzeile und die Zeilen immer überein.
+* Wenn Ihre Installation diese Daten noch nicht sendet, sagt das Panel das, statt **0** anzuzeigen. Eine leere Liste mit dem Hinweis für „nichts erfasst“ bedeutet, dass in dem Zeitraum keine Dokumente verloren gingen; die beiden Zustände sind unterschiedlich, und Sie sollten den ersten nicht als gute Nachricht lesen.
+
+Der Release-Kanal **Vesta** behält das oben beschriebene Balkendiagramm. Zeigt Ihre Seite Balken, sind Sie auf Vesta; zeigt sie die aufklappbare Liste, sind Sie auf Nova. Beide beantworten dieselbe Frage, daher gilt der Rest dieser Seite in beiden Fällen.
+
 ### Lieferantenpotenziale
 
 <figure><img src="../../../.gitbook/assets/touchless-supplier-queue-de.png" alt="Die Tabelle Supplier opportunities mit Volumen, Pure-Quote, verlorenen Dokumenten, Grundursache, rückgewinnbaren Dokumenten, erwartetem Zuwachs, Konfidenz und Status"><figcaption><p>Die Lieferanten-Warteschlange (auf die ersten vier Zeilen gekürzt). Der erste Lieferant hat 106 Dokumente, eine Pure-Quote von 38,7 % und 65 rückgewinnbare Dokumente, seine Behebung ist daher <strong>+21 pp</strong> wert. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
@@ -101,7 +112,7 @@ Während die Analyse läuft, sehen Sie für jedes Fehlermuster **Queued**, **Run
 
 1. **Wöchentlich**: Öffnen Sie den Tab und prüfen Sie die **Quote** und den **Trend** im Vergleich zum Ziel.
 2. Sehen Sie sich **Diagnosis coverage** an. Liegt der Wert unter etwa 80 %, finden Sie zuerst heraus, warum Dokumente stehen bleiben.
-3. Lesen Sie **Wo Touchless zuerst verloren geht** und wählen Sie den größten Schritt.
+3. Lesen Sie **Where touchless is lost first** (Vesta) oder **Why documents are not touchless** (Nova) und wählen Sie die größte Stufe oder den größten Bereich.
 4. Öffnen Sie die **Lieferantenpotenziale**. Sortieren Sie nach **Expected lift** und nehmen Sie den obersten Lieferanten mit dem Status **RECOVERABLE**.
 5. Lesen Sie die **Fehlermuster**, prüfen Sie **Missing evidence** und folgen Sie dann **What to change**.
 6. Beheben Sie eine bestätigte Ursache. Bei einem unterstützten DocBits-Vorschlag nutzen Sie Vorschau und Änderungshistorie. Bei einer Infor-Korrektur dokumentieren Sie Quelle und Import gesondert; sie erzeugt nicht automatisch einen DocBits-Eintrag zu einer Einstellungsänderung.

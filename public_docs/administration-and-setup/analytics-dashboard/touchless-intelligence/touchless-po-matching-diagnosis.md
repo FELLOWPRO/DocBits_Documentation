@@ -20,6 +20,8 @@ Touchless Intelligence zeigt Ihnen, **warum** ein PO-Abgleich fehlgeschlagen ist
 | **Document Trace**                                                                          | Die Stufe **PO Line Match** mit dem Status **blocked** und dem Grund                                                                                                            |
 | **Settings → Document Types → More Settings → Purchase Order**                              | Die Abgleichsregeln selbst. Siehe [Purchase Order Matching Rules](../../settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) |
 
+Auf dem Release-Kanal **Nova** ist die erste Zeile das Panel **Why documents are not touchless**. Klappen Sie dort den Bereich PO matching auf, um seine Gründe mit ihren Dokumentanzahlen zu lesen; das oben genannte Balkendiagramm bleibt auf **Vesta**.
+
 ## Die beiden PO-Stufen
 
 | Stufe                  | Frage                                        | Bleibt stehen mit                                                                                                     |

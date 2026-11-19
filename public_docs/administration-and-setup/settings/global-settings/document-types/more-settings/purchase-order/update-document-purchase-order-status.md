@@ -10,7 +10,7 @@ Voordat u de instelling wijzigt, kiest u de juiste organisatie en het juiste doc
 2. Zoek het documenttype dat wordt gebruikt voor de aan de PO gekoppelde documenten, zoals **Factuur**, en selecteer het tandwiel op de kaart om **Meer Instellingen** te openen.
 3. Vouw **Inkooporder** uit. Zoek **Status van documentinkooporder bijwerken** en zet deze aan. Het help-pictogram ernaast legt de optie in de applicatie uit. Het wijzigen van deze schakelaar verandert de andere PO-instellingen in dezelfde sectie niet.
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc699-document-types-nl-20261011.png" alt="Pagina Documenttypen met de kaart Factuur en het tandwiel voor Meer Instellingen"><figcaption>Open de instellingen van het documenttype dat u gebruikt.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc699-document-types-nl-20261111.png" alt="Pagina Documenttypen met de kaart Factuur en het tandwiel voor Meer Instellingen"><figcaption>Open de instellingen van het documenttype dat u gebruikt.</figcaption></figure>
 
 <figure><img src="../../../../../../.gitbook/assets/dbdc699-po-settings-nl-20261011.png" alt="Sectie Inkooporder van Meer Instellingen met de schakelaar Status van documentinkooporder bijwerken"><figcaption>De schakelaar voor statusupdates in de Inkooporder-instellingen.</figcaption></figure>
 
@@ -38,9 +38,9 @@ Gebruik een document dat al aan een testinkooporder is gekoppeld. Wijzig de stat
 
 ## Gevonden app-vertalingen
 
-Deze termen verschijnen onvertaald of inconsistent in de Nederlandse interface (versie 10.78.9.5); ze worden citaat-voor-citaat vermeld en gemeld, niet in de documentatie gecorrigeerd:
+Deze termen verschijnen onvertaald of inconsistent in de Nederlandse interface (versie 11.27.7); ze worden citaat-voor-citaat vermeld en gemeld, niet in de documentatie gecorrigeerd:
 
-1. Op de pagina Documenttypen blijven de typenamen **Purchase Order**, **Delivery Note**, **Order Confirmation**, **Customs Declaration** en **Freight Letter**, evenals de kolomkop **Extraction**, in het Engels.
+1. Op de pagina Documenttypen blijven de typenamen **Purchase Order**, **Delivery Note**, **Order Confirmation**, **Customs Declaration** en **Freight Letter** in het Engels staan; het label naast de schakelaar is vertaald en heet **Extractie**.
 2. In de Inkooporder-instellingen heet de schakelaar **Status van documentinkooporder bijwerken**; de oude documentatiepagina gebruikte bovendien een andere, niet-bestaande menustructuur (**Algemene Instellingen**).
 3. In Stamgegevens opzoeken luidt het labelsuffix van de standaardlookup **StandaardActief** (zonder spatie); de oude documentatie noemde **Auto Trigger** zonder dat dit label in de NL-interface voorkomt.
 4. In Stamgegevens opzoeken blijven de lookup-namen **Supplier Lookup**, **Order Header Lookup** en **Order Line Lookup**, de tabelkop **Actions** en de waarde **No Match** onvertaald, en de standaardwaarde wordt als **StandaardActief** weergegeven.

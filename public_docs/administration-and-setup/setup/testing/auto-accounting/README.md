@@ -6,11 +6,11 @@ Auto Accounting nécessite un module activé, des données comptables maîtresse
 
 1. Ouvrez **Paramètres → Module → Commande et financement** et développez **Comptabilité automatique**. L'ancien chemin **Document Processing → Module → Purchase Order / Auto Accounting** n'est plus le chemin affiché dans l'application actuelle.
 2. Choisissez le **Type** correspondant à votre système connecté (**LN** ou **M3**). Activez **Comptabilité automatique** uniquement lorsque les données maîtresses requises et la connexion sont prêtes.
-3. Une fois activé, sélectionnez la liste **Comptes** et les listes de dimensions appropriées à votre système. Pour LN, les champs visibles incluent **Dimension Range Dropdown** et **Nom de la liste de dimensions**. M3 propose d'autres champs. N'utilisez **Réinitialiser les données comptables lors de la modification d'un élément** que si un recalcul après la modification d'un élément est souhaité.
+3. Une fois activé, sélectionnez la liste **Comptes** et les listes de dimensions appropriées à votre système. Pour LN, les champs visibles incluent **Dimension Range Dropdown** et **Nom de la liste de dimensions**. M3 propose d'autres champs. N'activez **Éliminer les lignes comptables lors de la modification des données fiscales** que si vous souhaitez que les lignes comptables soient effacées lorsqu'une donnée fiscale est modifiée.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-620-auto-accounting-off-fr.png" alt="Paramètres du module Commande et financement en français avec la comptabilité automatique désactivée et le Type réglé sur LN"><figcaption><p>La comptabilité automatique est désactivée dans l'organisation de test Sandbox.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-620-auto-accounting-off-fr-20261110.png" alt="Paramètres du module Commande et financement en français avec la comptabilité automatique désactivée et le Type réglé sur LN"><figcaption><p>La comptabilité automatique est désactivée dans l'organisation de test Sandbox.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/dbdc-620-auto-accounting-on-fr.png" alt="Paramètres du module Commande et financement en français temporairement activés, révélant les sélecteurs de comptes et de dimensions"><figcaption><p>Les champs affichés lorsque le paramètre est activé. Il a été désactivé à nouveau après cette capture ; aucun compte ni dimension n'a été configuré.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-620-auto-accounting-on-fr-20261110.png" alt="Paramètres du module Commande et financement en français temporairement activés, révélant les sélecteurs de comptes et de dimensions"><figcaption><p>Les champs affichés lorsque le paramètre est activé. Il a été désactivé à nouveau après cette capture ; aucun compte ni dimension n'a été configuré.</p></figcaption></figure>
 
 ## Tester avec une facture configurée
 
@@ -23,6 +23,16 @@ Sur l'écran de comptabilisation, vérifiez les points suivants avec vos propres
 3. Si vous répartissez un montant, sélectionnez le compte prévu pour chaque ligne de répartition. Saisissez des montants ou des pourcentages et vérifiez que les valeurs allouées totalisent le montant parent. Ajoutez ou supprimez une ligne uniquement lorsque cela est nécessaire.
 4. Vérifiez tout **Unsettled amount** ou avertissement de validation et corrigez-le avant d'enregistrer ou d'exporter. Confirmez le résultat dans le système connecté séparément.
 
-L'organisation de test Sandbox utilisée pour les captures d'écran ci-dessus n'a aucun compte configuré, aucune liste de dimensions ni aucune ligne de facture pour ce flux. L'écran de comptabilisation, la répartition et l'export n'ont donc **pas été testés ni illustrés ici**. N'utilisez pas les captures d'écran des paramètres comme preuve que la comptabilisation ou l'export a réussi.
+### Travailler avec les lignes
+
+Chaque ligne de l'écran de comptabilisation dispose d'un bouton de suppression dans sa colonne d'action : une ligne principale peut donc être retirée de la comptabilisation, et pas seulement les lignes de répartition situées en dessous. La suppression d'une ligne recalcule immédiatement les totaux — vérifiez ensuite **Unsettled amount** et assurez-vous que la valeur correspond toujours à la facture.
+
+Les lignes que vous ajoutez sont numérotées après la ligne à laquelle elles appartiennent : une ligne ajoutée sous la position 1 devient **1.1**, la suivante **1.2**. Cette numérotation indique d'un coup d'œil quelles lignes de répartition appartiennent à quelle ligne lorsqu'une position est répartie sur plusieurs comptes.
+
+### Vider une dimension facultative
+
+Une dimension que vous avez renseignée peut être remise à vide : ouvrez la dimension et utilisez sa commande d'effacement. Cela fonctionne uniquement pour les dimensions **facultatives**. Une dimension obligatoire dans votre configuration, ou en lecture seule, conserve sa valeur et ne propose aucune commande d'effacement — saisissez la valeur correcte au lieu de tenter de la vider.
+
+L'organisation de test Sandbox utilisée pour les captures d'écran ci-dessus n'a aucun compte configuré, aucune liste de dimensions ni aucune ligne de facture pour ce flux. L'écran de comptabilisation, la répartition, les contrôles de lignes et de dimensions décrits ci-dessus ainsi que l'export n'ont donc **pas été illustrés ici**. N'utilisez pas les captures d'écran des paramètres comme preuve que la comptabilisation ou l'export a réussi.
 
 Pour la configuration propre à chaque système, continuez avec le [guide LN](ln.md) ou le [guide M3](m3.md).

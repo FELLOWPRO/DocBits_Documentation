@@ -10,7 +10,7 @@ La tarjeta **Validation Setup** muestra su perfil de validación actual (por eje
 
 ## Versiones de XRechnung aceptadas
 
-El control de aceptación **Accepted XRechnung versions** enumera todas las versiones de XRechnung. Marque las versiones que acepta: los documentos cuyo CustomizationID quede fuera de esta lista se rechazan con `VAL-VERSION-NOT-ALLOWED` antes de cualquier otra comprobación. Una lista vacía significa "aceptar todo". Cada versión se etiqueta como **current**, **deprecated** o **EOL** junto con su fecha de publicación.
+El control de aceptación **Accepted XRechnung versions** enumera todas las versiones de XRechnung. Marque las versiones que acepta: los documentos cuyo CustomizationID quede fuera de esta lista se rechazan con `VAL-VERSION-NOT-ALLOWED` antes de cualquier otra comprobación. Si no hay ninguna versión marcada, el control está desactivado y se acepta cualquier versión. Cada versión se etiqueta como **current**, **deprecated** o **EOL** junto con su fecha de publicación.
 
 ## Perfiles aceptados y modelo de gravedad
 

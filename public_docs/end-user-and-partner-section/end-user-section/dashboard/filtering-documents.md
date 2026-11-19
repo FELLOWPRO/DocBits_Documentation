@@ -38,6 +38,8 @@ Encima de la barra de búsqueda, selecciona **30D**, **90D**, **180D**, **365D**
 2. Selecciona un tipo, por ejemplo **Factura**, para añadir su pestaña. Después selecciona la nueva pestaña para filtrar la tabla por ese tipo. **Todo** elimina la restricción de tipo sin borrar la pestaña.
 3. Para quitar la pestaña de un tipo, selecciona su **×**. La pestaña **Todo** no se puede quitar.
 
+DocBits guarda tus pestañas en la configuración de usuario, por lo que vuelven a estar disponibles la próxima vez que abras el dashboard. Una pestaña que añadas se mantiene hasta que la quites.
+
 <figure><img src="../../../.gitbook/assets/filtering-documents-document-type-menu-es-20261010.png" alt="Menú del signo más en el Panel en español que muestra Factura como tipo de documento disponible"><figcaption>Añade una pestaña de tipo de documento desde el menú del signo más.</figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/filtering-documents-invoice-tab-es-20261010.png" alt="Pestaña del tipo de documento Factura seleccionada en el Panel en español, con su icono de eliminación visible"><figcaption>Elige la pestaña para aplicar el filtro de tipo; usa × para quitar la pestaña.</figcaption></figure>

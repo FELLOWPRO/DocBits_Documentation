@@ -20,6 +20,8 @@ Touchless Intelligence le muestra **por qué** falló una coincidencia con la OC
 | **Document Trace** | La etapa **PO Line Match** con el estado **blocked** y el motivo |
 | **Settings → Document Types → More Settings → Purchase Order** | Las propias reglas de coincidencia. Véase [Purchase Order Matching Rules](../../settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) |
 
+En el canal de publicación **Nova**, la primera fila es el panel **Why documents are not touchless**. Despliegue allí el área PO matching para leer sus motivos con sus recuentos de documentos; el gráfico de barras mencionado arriba sigue en **Vesta**.
+
 ## Las dos etapas de la OC
 
 | Etapa | Pregunta | Se detiene con |

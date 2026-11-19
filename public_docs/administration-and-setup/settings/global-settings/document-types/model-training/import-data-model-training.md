@@ -1,4 +1,4 @@
-# Datenimport: Modelltraining
+# Beispieldokumente für das Modelltraining importieren
 
 ## Beispiele vorbereiten, importieren und prüfen
 
@@ -6,41 +6,22 @@
 
 Wählen Sie repräsentative Beispielbelege, bereiten Sie die verfügbaren Importoptionen vor und kontrollieren Sie den Importstatus. Erst erfolgreich importierte Beispiele stehen für das weitere Training bereit. Klären Sie Importfehler vor dem nächsten Schritt und halten Sie unabhängige Testbelege vom Trainingsdatensatz getrennt.
 
+Wählen Sie Dokumente aus, die die Formate, Sprachen und Dokumenttypen Ihrer Organisation abbilden. Verwenden Sie nur Dateiformate, die Ihre Installation akzeptiert. Entfernen Sie Duplikate und halten Sie Trainingsdokumente von den Dokumenten getrennt, die Sie zur Bewertung aufbewahren.
 
-Verwenden Sie diese Seite, um Beispiel-PDFs für einen Dokumenttyp hinzuzufügen und anschließend sein Klassifizierungsmodell zu trainieren oder zu testen. Sie benötigen Zugriff auf **Einstellungen** und **Dokumenttypen**. Den Zweck der Trainingsfunktionen finden Sie unter [Zweck und Verwendung: Modelltraining](purpose-and-use-model-training.md).
+## Den Import öffnen
 
-## Den Dokumenttyp öffnen
+Öffnen Sie das Modelltraining in den Einstellungen des betreffenden Dokumenttyps und wählen Sie die Importfunktion.
 
-1. Wechseln Sie zu **Einstellungen → Dokumenttypen**.
-2. Suchen Sie den Dokumenttyp, den Sie trainieren möchten. Wählen Sie in seiner Zeile **Modell Training**. Das folgende Beispiel verwendet **Rechnung**.
+<figure><img src="../../../../../.gitbook/assets/dbdc646-model-training-overview-de-20261110.png" alt="Seite Modell trainieren der Rechnung mit Beispielanzahl, Trainingsstand und den Aktionen Import, Modell trainieren und Test-Klassifizierung"><figcaption><p>Überblick über das Modelltraining: Beispielanzahl, Trainingsstand und die verfügbaren Aktionen.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/dbdc646-document-types-de-20261011.png" alt="Zeile Rechnung auf der Seite Dokumenttypen mit dem Link Modell Training"><figcaption><p>Modell Training öffnen Sie über den gewählten Dokumenttyp.</p></figcaption></figure>
+## Formate und Dateien auswählen
 
-Die übrigen Steuerelemente auf dieser Karte haben andere Zwecke: **Aktivieren** schaltet den Dokumenttyp ein, **Extraction** wechselt seinen Extraktionsmodus, das Zahnrad öffnet seine Einstellungen, und die übrigen Links öffnen andere Konfigurationsbereiche. Nur um Modell Training zu öffnen, müssen Sie nichts davon ändern.
+Wählen Sie das Zahlen- und Datumsformat passend zu den Dateien und danach die zu importierenden Dokumente aus. `1.234,56` und `1,234.56` verwenden zum Beispiel unterschiedliche Trennzeichen. Auch ein Datum wie `05/06/2026` muss passend zum gewählten Format gelesen werden.
 
-Die Seite **Trainingsmodel** zeigt die Anzahl der Beispiele und eine Liste der hochgeladenen Trainingsdokumente. Im gezeigten Beispiel enthält die Liste fünf PDF-Dokumente; Ihre Organisation kann andere Dokumente und Zahlen anzeigen.
+<figure><img src="../../../../../.gitbook/assets/dbdc646-import-dialog-de-20261110.png" alt="Dialog Dokument-Uploader mit der Auswahl Betrag und Datumsformat, dem Bereich zum Ablegen von Dateien und dem Feld Upload; keine Dateien ausgewählt"><figcaption><p>Der Dialog <strong>Dokument-Uploader</strong>: Wählen Sie zuerst das Betrag- und Datumsformat, dann die Dateien.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/dbdc646-model-training-de-20261011.png" alt="Seite Trainingsmodel der Rechnung mit Beispielanzahl sowie den Schaltflächen Import, Trainingsmodel, Test-Klassifizierung und der Dokumentenliste"><figcaption><p>Die drei Aktionen befinden sich oben rechts über der Trainingsliste.</p></figcaption></figure>
+Prüfen Sie die Auswahl, bevor Sie den Import starten. Warten Sie die Verarbeitung ab und kontrollieren Sie Fehler sowie zugeordnete Dokumenttypen. Korrigieren Sie Klassifizierungs- und Extraktionsfehler, bevor Sie die Beispiele zum Training verwenden. Was Sie mit bereits importierten Beispielen tun können, lesen Sie unter [Trainingsdaten verwalten](manage-training-data.md).
 
-## Beispiel-PDFs importieren
+## Modell trainieren und bewerten
 
-1. Wählen Sie **Import**.
-2. Wählen Sie das **Betrag und Datumsformat**, das zum Beispieldokument passt. Wählen Sie zum Beispiel **United States** für US-Nummern- und Datumsformate. Diese Auswahl sagt DocBits, wie Werte im hochgeladenen Dokument zu lesen sind; sie ändert nicht die Sprache der App.
-3. Ziehen Sie PDF-Dateien in den Dialog oder wählen Sie sie über **Upload** aus. Der aktuelle Import für Beispieldokumente akzeptiert **PDF-Dateien**; andere Dateitypen werden abgelehnt. Mit der Auswahl der Dateien beginnt der Upload.
-4. Schließen Sie den Dialog und prüfen Sie, ob die Dokumente in der Trainingsliste erscheinen. Meldet DocBits einen Upload-Fehler oder dass ein Dokument bereits existiert, korrigieren Sie die Datei oder wählen Sie ein anderes Beispiel, bevor Sie fortfahren.
-
-<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-de.png" alt="Import-Dialog mit Auswahlfeld für Betrag und Datumsformat, Ablehn-Bereich für Dateien und Upload-Feld"><figcaption><p>Wählen Sie das Format, bevor Sie Beispiel-PDFs auswählen.</p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/dbdc646-format-menu-de-20261011.png" alt="Menü Betrag und Datumsformat mit Ländern und Regionen, darunter Germany und United Kingdom"><figcaption><p>Wählen Sie das Format des Dokuments, nicht Ihre bevorzugte Oberflächensprache.</p></figcaption></figure>
-
-Aktionen zu importierten Beispielen finden Sie unter [Trainingsdaten verwalten](manage-training-data.md).
-
-## Das Modell trainieren und prüfen
-
-Wenn die gewünschten Beispiel-PDFs in der Liste stehen, wählen Sie **Trainingsmodel**. DocBits kann das Training im Hintergrund verarbeiten; warten Sie die Abschlussmeldung ab, bevor Sie das neue Modell als fertig betrachten. Die Beispielanzahl und eine auf dieser Seite angezeigte Plan-Grenze gehören zu Ihrer Organisation.
-
-Um die Klassifizierung zu prüfen, wählen Sie **Test-Klassifizierung** und laden Sie in dem Dialog eine separate Beispiel Datei hoch. Nach der Verarbeitung zeigt DocBits, ob der vorhergesagte Dokumenttyp mit dieser Seite übereinstimmt, und meldet Einzelheiten zur Klassifizierung. Der leere Test-Dialog unten wird ohne hochgeladene Datei gezeigt.
-
-<figure><img src="../../../../../.gitbook/assets/dbdc646-test-dialog-de-20261011.png" alt="Dialog Test-Klassifizierung mit Bereich zum Ablegen von Dateien und Upload-Feld"><figcaption><p>Mit Test-Klassifizierung prüfen Sie das Modell mit einem weiteren Dokument.</p></figcaption></figure>
-
-Zur Deutung des Ergebnisses siehe [Das Modell testen](testing-the-model.md). Wenn das Ergebnis schlecht ist, prüfen Sie die [Trainingsdaten](manage-training-data.md) und die [Fehlerbehebung](troubleshooting.md), bevor Sie weitere Beispiele hinzufügen.
+Wählen Sie **Modell trainieren**, um das Modell mit den Funktionen und Berechtigungen zu trainieren, die in Ihrer Version verfügbar sind. Bewerten Sie es anschließend an einem separaten Beispiel. Das Hinzufügen von Dokumenten allein sorgt nicht für höhere Genauigkeit. Siehe [Testen des Modells](testing-the-model.md).

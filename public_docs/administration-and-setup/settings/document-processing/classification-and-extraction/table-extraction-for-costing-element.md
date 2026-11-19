@@ -4,11 +4,11 @@ Kostenelementen zijn toeslagen of andere bedragen die als tabelregels op een fac
 
 ## De instelling inschakelen
 
-1. Open **Instellingen → Documentverwerking → Classificatie en Extractie**.
+1. Open **Instellingen → Documenttypen** en selecteer **Classificatie en Extractie** onder het item **Documenttypen**.
 2. Blijf op **Algemeen** en vouw **Extractie** uit.
-3. Zoek **Tabelextractie voor kostenelement** onder de velden die voor tabelleextractie worden vereist. Een beheerder kan deze schakelaar voor de organisatie aanzetten.
+3. Zoek **Tabelextractie voor kostenelement** onder de velden die voor tabelextractie worden vereist. Een beheerder kan deze schakelaar voor de organisatie aanzetten.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-nl-20261011.png" alt="Nederlandstalige instellingen Classificatie en Extractie met de schakelaar Tabelextractie voor kostenelement zichtbaar en aan"><figcaption><p>De schakelaar staat aan in deze synthetische opname. De afbeelding bewijst niet de instelling van een echte organisatie.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/table-extraction-costing-setting-nl-20261111.png" alt="De sectie Extractie van de instellingen Classificatie en Extractie met de schakelaars Tabel extractie, AI-tabel extractie, Gebruik tabelextractie via visie (AI), Gebruik gestructureerde extractie (AI), Tabelextractie voor kostenelement, Automatisch belastingcode ophalen, Extractieregels opslaan, Verborgen velden extraheren en de keuze van het AI-model"><figcaption><p>De schakelaar <strong>Tabelextractie voor kostenelement</strong> staat tussen <strong>Gebruik gestructureerde extractie (AI)</strong> en <strong>Automatisch belastingcode ophalen</strong>. In de organisatie die voor deze handleiding is gebruikt, staat hij uit.</p></figcaption></figure>
 
 {% hint style="info" %}
 De schakelaar alleen maakt geen kostenelementen of factuurregels aan. Configureer eerst de elementen en importeer eventueel vereiste gegevens. De gekoppelde [handleiding voor het instellen van kostenelementen](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md) legt het M3-voorbeeld uit. Zie [Classificatie en extractie](README.md) voor de andere extractiebedieningselementen.
@@ -18,4 +18,4 @@ De schakelaar alleen maakt geen kostenelementen of factuurregels aan. Configuree
 
 Open een document waarvan de factuurtabel geëxtraheerde regels bevat en bekijk het kostenelementpictogram naast de betreffende regel. Selecteer het pictogram om de beschikbare classificaties te openen. Kies het juiste geconfigureerde kostenelement, of kies **Uncategorize** als de regel een gewoon artikel is. Controleer daarna de resulterende regel en de totalen voordat u het document opslaat.
 
-Als het pictogram of een classificatie ontbreekt, bevestig dan eerst dat het document geëxtraheerde regels heeft, de functie is ingeschakeld en er een kostenelement voor de organisatie is geconfigureerd. Het gesynthetiseerde testdocument dat voor deze documentatiecontrole werd gebruikt, had geen geëxtraheerde factuurregels, waardoor het classificatiemenu niet kon worden afgebeeld of getest. De bovenstaande stappen geven het huidige documentbedieningselement weer; er werd tijdens deze controle geen classificatie opgeslagen.
+Als het pictogram of een classificatie ontbreekt, bevestig dan eerst dat het document geëxtraheerde regels heeft, de functie is ingeschakeld en er een kostenelement voor de organisatie is geconfigureerd.

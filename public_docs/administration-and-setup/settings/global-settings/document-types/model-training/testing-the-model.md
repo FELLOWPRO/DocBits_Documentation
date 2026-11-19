@@ -16,7 +16,15 @@ Test powinien oceniać wyniki na reprezentatywnych dokumentach, których nie uż
 3. Wybierz próbę i uruchom ocenę przy użyciu dostępnych opcji.
 4. Poczekaj na zakończenie i zapisz wyniki oraz błędy. Błąd techniczny lub nieukończony test nie oznacza poprawnej klasyfikacji.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-pl.png" alt="Import, trenowanie modelu i test klasyfikacji. W przedstawionej wersji przycisk testu klasyfikacji ma błędny podpis „Klasyfikacja testów”. Nie uruchomiono treningu ani testu."><figcaption><p>Import, trenowanie modelu i test klasyfikacji. W przedstawionej wersji przycisk testu klasyfikacji ma błędny podpis „Klasyfikacja testów”. Nie uruchomiono treningu ani testu.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/testing-the-model-overview-pl-20261113.png" alt="Trenowanie modelu dla typu dokumentu Faktura w polskim interfejsie, wersja 11.27.7, z przykładowymi wartościami: liczniki Próbka, Eksportowano, Firma ∑ i Ogółem ∑, akcje Import, Trenuj model i Test klasyfikacji oraz lista pięciu dokumentów treningowych. Nie uruchomiono trenowania ani importu."><figcaption><p>Trenowanie modelu dla typu dokumentu Faktura, wersja 11.27.7: akcje Import, Trenuj model i Test klasyfikacji oraz lista dokumentów treningowych. Wartości liczników są przykładowe; nie uruchomiono trenowania ani importu.</p></figcaption></figure>
+
+Widok udostępnia trzy akcje oraz listę dokumentów treningowych. Poniższe strony opisują, dokąd prowadzi każda akcja:
+
+* **Import** otwiera wybór nowych danych treningowych: [Import danych: Trenowanie modelu](import-data-model-training.md).
+* **Trenuj model** uruchamia trenowanie modelu klasyfikacji dla tego typu dokumentu: [Import danych: Trenowanie modelu](import-data-model-training.md).
+* **Test klasyfikacji** sprawdza osobny dokument testowy w oknie dialogowym: [Import danych: Trenowanie modelu](import-data-model-training.md).
+* Liczniki **Próbka**, **Eksportowano**, **Firma ∑** i **Ogółem ∑** wyjaśnia strona [Trenowanie modelu](README.md).
+* Menu w kolumnie **Akcje** usuwa dokument treningowy: [Zarządzanie danymi treningowymi](manage-training-data.md).
 
 ## Interpretacja wyników
 

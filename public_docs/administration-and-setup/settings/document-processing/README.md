@@ -7,10 +7,20 @@ Ustawienia sekcji **Przetwarzanie Dokumentów** określają, jak DocBits odczytu
 * [Obliczanie terminu płatności](due-date-calculation.md): sposób obliczania terminów płatności.
 * [Eksport](export.md): miejsce i sposób eksportowania przetworzonych dokumentów.
 
-Na przykład otwórz **Ustawienia OCR**, aby sprawdzić **Ogólne ustawienia OCR**. Opcja **Użyj E-Textu, jeśli jest dostępny** wykorzystuje osadzony tekst elektroniczny. Opcja **Użyj DESKEW, jeśli jest dostępny** prostuje zeskanowane strony. Opcja **Wersja AI OCR** wybiera wersję silnika rozpoznawania. Szczegółowy opis elementów sterujących znajdziesz na stronie [Ustawienia OCR](ocr-settings.md).
+Na przykład otwórz **Ustawienia OCR**, aby sprawdzić **Ogólne ustawienia OCR**. Opcja **Użyj E-Textu, jeśli jest dostępny** wykorzystuje osadzony tekst elektroniczny. Opcja **Użyj DESKEW, jeśli jest dostępny** prostuje zeskanowane strony. Opcja **Wersja AI OCR** wybiera wersję silnika rozpoznawania. Szczegółowy opis elementów sterujących znajdziesz na stronie [Ustawienia OCR](ocr-settings.md#ogolne-ustawienia-ocr).
 
 <figure><img src="../../../.gitbook/assets/dbdc-233-general-ocr-settings-pl-20261031.png" alt="Ogólne ustawienia OCR w polskim interfejsie DocBits z elementami sterującymi E-Text, DESKEW i wersją AI OCR"><figcaption><p>Ogólne ustawienia OCR to jeden z obszarów przetwarzania dokumentów. Wybrane wartości zależą od organizacji.</p></figcaption></figure>
 
 Pozostałe obszary w tej sekcji to [Import](import/README.md), [Klasyfikacja i ekstrakcja](classification-and-extraction/README.md), [Zarządzanie regułami](rule-manager/README.md), [Listy wartości](list-of-values.md) i [Moduł](module/README.md).
+
+Jeśli rozwiązujesz problem, zacznij od kroku, w którym problem występuje, zamiast zmieniać kilka ustawień naraz:
+
+| Co chcesz sprawdzić | Przewodnik |
+| --- | --- |
+| Brakuje tekstu lub jest odczytywany niepoprawnie | [Ustawienia OCR](ocr-settings.md) |
+| Wartość powinna być porównana z danymi referencyjnymi | [Wyszukiwanie danych podstawowych](master-data-lookup.md) lub [Listy wartości](list-of-values.md) |
+| Termin płatności jest nieoczekiwany | [Obliczanie terminu płatności](due-date-calculation.md) |
+| Dokument powinien opuścić DocBits | [Eksport](export.md) |
+| Reguła powinna skierować lub zmienić dokument | [Drzewa decyzyjne](decision-trees.md) |
 
 Jeśli ustawienie nie działa zgodnie z oczekiwaniami, sprawdź je najpierw za pomocą dokumentu testowego. Zmiana może wpłynąć na każdy nowy dokument organizacji.

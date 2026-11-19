@@ -1,28 +1,28 @@
-# Importando Dados de Fornecedor e Pedido de Compra no DocBits a partir de Arquivos CSV
+# Importando dados de fornecedor e pedido de compra no DocBits a partir de arquivos CSV
 
-## Visão Geral
+## Visão geral
 
-Esta página descreve como importar dados de Fornecedor e Pedido de Compra no DocBits usando um arquivo de Valores Separados por Vírgula (.csv).
+Esta página descreve como preparar uma importação CSV de dados de fornecedor ou de pedido de compra no DocBits.
 
-**Importante:** Antes de importar qualquer dado, é crucial **revisar o arquivo .csv minuciosamente** para garantir a precisão dos dados e a configuração adequada. Importar dados incorretos pode levar a inconsistências. Consulte as seções [**Especificações CSV para Pedido de Compra**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#especificacoes-csv-para-pedido-de-compra) ou [**Especificações CSV para Fornecedor**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#especificacoes-csv-para-fornecedor) para detalhes sobre os campos obrigatórios e opcionais. Se campos obrigatórios estiverem ausentes, o processo de importação falhará.
+**Importante:** Antes de importar qualquer dado, é essencial **revisar o arquivo .csv minuciosamente** para garantir a exatidão dos dados e a configuração correta. A importação de dados incorretos pode causar inconsistências. Consulte as seções [**Especificações CSV para Pedido de Compra**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#especificacoes-csv-para-pedido-de-compra) ou [**Especificações CSV para Fornecedor**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#especificacoes-csv-para-fornecedor) para saber quais campos são obrigatórios e quais são opcionais. Confirme as colunas aceitas e as regras de validação da versão da API que você usa antes de trabalhar com um conjunto de dados de produção.
 
-**Validação:** Sempre verifique se o seu arquivo .csv contém todas as colunas necessárias, conforme descrito na seção de especificações correspondente, antes de tentar a importação.
+**Validação:** Use as listas abaixo como lista de verificação no preparo. Confirme os campos obrigatórios, os campos adicionais e linhas representativas para a sua instalação; estas listas não garantem que cada linha inválida rejeite o arquivo inteiro. Revise a resposta e verifique você mesmo os registros pretendidos.
 
 ## Requisitos Gerais:
 
-**Formato de Data:**
+**Formato da data:**
 
-Todas as datas fornecidas na planilha .csv **devem** seguir o seguinte formato:
+Todas as datas informadas na planilha .csv **devem** seguir o seguinte formato:
 
 YYYY-MM-DD HH:MM:SS
 
-**Campos Obrigatórios:**
+**Campos obrigatórios:**
 
-Para as importações de Fornecedor e Pedido de Compra, todas as colunas marcadas como "Obrigatórias" em suas respectivas especificações **devem existir no arquivo .csv e devem conter um valor em cada linha**. Se algum campo obrigatório estiver ausente ou vazio para uma linha, o processo de importação falhará.
+Prepare e valide os identificadores básicos listados abaixo. Não conte com uma solicitação de importação para validar a integralidade ou a correção comercial do seu CSV.
 
 ### Especificações CSV para Pedido de Compra
 
-**Campos que são Obrigatórios** - (a coluna com o nome deve existir e deve conter dados)
+**Campos de base a preparar e validar**
 
 * `purchase_order_number`
 
@@ -32,6 +32,7 @@ Para as importações de Fornecedor e Pedido de Compra, todas as colunas marcada
 * `location_id`
 * `supplier_id`
 * `supplier_name`
+* `header_total_amount`
 * `order_date`
 * `requested_shipment_date`
 * `promised_delivery_date`
@@ -75,7 +76,7 @@ Para as importações de Fornecedor e Pedido de Compra, todas as colunas marcada
 * `received_base_mou_quantity`
 * `promised_delivery_date`
 * `requested_ship_date`
-* `unit_code`
+* `unit_of_measure`
 * `unit_code_price`
 * `unit_price`
 * `unit_price_per`
@@ -90,7 +91,7 @@ Para as importações de Fornecedor e Pedido de Compra, todas as colunas marcada
 
 ### Especificações CSV para Fornecedor
 
-**Campos que são Obrigatórios** - (a coluna com o nome deve existir e deve conter dados)
+**Campos de base a preparar e validar**
 
 * `customer_number`
 * `supplier_number`
@@ -99,10 +100,12 @@ Para as importações de Fornecedor e Pedido de Compra, todas as colunas marcada
 
 **Campos que podem ser incluídos**
 
+* `address_id`
 * `address_1`
 * `address_2`
 * `address_3`
 * `address_4`
+* `country_main_division`
 * `town_city`
 * `zip_code`
 * `supplier_phone`
@@ -127,53 +130,43 @@ Para as importações de Fornecedor e Pedido de Compra, todas as colunas marcada
 * `custom_field_9`
 * `custom_field_10`
 * `status`
-* `account_number`
+* `account_id`
 * `financial_partner_id`
 * `financial_partner_name`
 * `iban`
 * `currency`
 
-## Endpoint de Acesso
+## Endpoint de acesso
 
-Para importar dados, siga estas etapas:
+### Escolher o ambiente e a organização
 
-1. Visite: [https://api.docbits.com/](https://api.docbits.com/)
-2.  Clique no botão **"Authorize"**.
+1. Abra a referência da API do ambiente que você pretende usar. A referência de produção é [https://api.docbits.com/](https://api.docbits.com/); para dados de teste, use o ambiente de teste aprovado na sua organização. Verifique a versão da API e o valor em **Servers** antes de preparar uma solicitação.
+2. Para uma importação autorizada, clique em **Authorize** e use a chave de API fornecida para a organização e o usuário pretendidos. Nunca copie uma chave para uma captura de tela, um arquivo CSV ou um exemplo compartilhado. Para criar e administrar as credenciais, consulte [Integração e SSO](../administration-and-setup/settings/global-settings/integration/README.md).
 
-    <figure><img src="../.gitbook/assets/import_csv_1.png" alt=""><figcaption></figcaption></figure>
-3.  Insira a API-Key e clique em **"Authorize"**
+O DocBits oferece a interface da referência da API apenas em inglês. Por isso, os nomes dos controles nesta página aparecem em inglês e a página não traz capturas de tela da referência; no formulário **Try it out**, os valores `string` visíveis são exemplos gerados pelo Swagger, não IDs de organização válidos nem dados de importação preparados.
 
-    * A API-Key pode ser encontrada no DocBits em Configurações -> Configurações Globais -> Integração
-    * **Nota:** A chave API fornecida em sua solicitação determina a organização alvo e o contexto do usuário sob o qual os dados serão importados.
+A imagem abaixo é uma captura em português do build 11.27.7 do DocBits. Ela mostra onde criar a chave de API e onde ficam o ID da organização e o ID da suborganização; as chaves, os nomes e os identificadores nela visíveis são exemplos inventados e nenhuma importação foi executada.
 
-    <figure><img src="../.gitbook/assets/import_csv_api.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/csv-import-api-keys-pt-20261113.png" alt="Página Integração E SSO do DocBits em português com o cartão Chave de API, a tabela Chaves de API com o botão Criar chave de API e, logo abaixo, o cartão de região com os campos ID da organização e ID da suborganização"><figcaption><p>Em Configurações → Integração e SSO você cria a chave de API: a seção Chaves de API mostra as chaves existentes e o botão Criar chave de API. Na mesma página estão os valores ID da organização e ID da suborganização da sua organização. As chaves, os nomes e os identificadores mostrados são exemplos inventados.</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="" width="563"><figcaption></figcaption></figure>
-4. Pressione **CTRL + F** (ou **CMD + F** no Mac) para abrir a função de busca e procure por `/master_data_lookup/import_data`.
-5.  Clique na solicitação para ver seus detalhes, em seguida, clique em "**Try it out**" para prosseguir.
+### Abrir a operação de importação
 
-    <figure><img src="../.gitbook/assets/import_csv_3.png" alt=""><figcaption></figcaption></figure>
+1. Localize **POST /master_data_lookup/import_data** e expanda a operação.
+2. Clique em **Try it out** para ativar o formulário de solicitação local. Esta etapa sozinha não executa uma importação. Use **Cancel** para sair do modo de edição sem enviar a importação.
 
-    <figure><img src="../.gitbook/assets/import_csv_6.png" alt=""><figcaption></figcaption></figure>
-6.  Agora você pode inserir os parâmetros necessários no Corpo da Solicitação.\\
+### Preparar o corpo da solicitação
 
-    **Parâmetros da Solicitação:**
+* **sub_org_id:** Informe o ID da suborganização pretendida e autorizada quando a importação pertencer a uma suborganização. Caso contrário, remova o exemplo `string` gerado e deixe o campo deliberadamente vazio com o controle **Send empty value** do formulário, conforme o caso. Um campo vazio não identifica uma organização de teste nem limita uma substituição a uma suborganização.
+* **data_type:** Informe `supplier` ou `purchase_order` para os fluxos descritos nesta página. Substitua o exemplo `string` gerado; o campo é obrigatório.
+* **file / csv_data:** Este guia usa um arquivo CSV. Limpe o exemplo gerado em **csv_data** antes de escolher o arquivo: um `csv_data` não vazio é processado antes do arquivo no importador revisado. Selecione o seu CSV verificado em **file** e confirme que o nome do arquivo aparece. Não deixe os valores de exemplo da captura de tela como conteúdo da sua solicitação.
+* **delimiter:** Selecione explicitamente o delimitador real do seu CSV: vírgula (`,`) ou ponto e vírgula (`;`). Inspecione as primeiras linhas em um editor de texto simples. Não presuma que a seleção inicial de ponto e vírgula no formulário corresponda ao arquivo ou ao padrão do servidor.
 
-    Ao fazer a solicitação de importação, os seguintes parâmetros precisam ser especificados:
+### Revisar as opções de substituição e de conflito
 
-    * **sub\_org\_id:** Remova qualquer texto do campo de texto para garantir que a opção "Send empty value" esteja habilitada.
-    * **data\_type:** Este parâmetro especifica o tipo de dado que está sendo importado. Pode ser `supplier` ou `purchase_order`, dependendo do conteúdo do seu arquivo .csv.
-    * **replace\_all:** Este parâmetro booleano determina se todos os dados existentes na tabela de banco de dados respectiva (`supplier` ou `purchase_order`) para a organização especificada devem ser excluídos antes de inserir os novos dados do arquivo .csv. Defina isso como `true` para substituir todos os dados existentes ou `false` para adicionar ou atualizar com os novos dados.
-    *   **delimiter:** Este parâmetro especifica o caractere usado para separar os valores individuais dentro de cada linha do seu arquivo de dados. **É essencial identificar o delimitador correto usado em seu arquivo.** Delimitadores comuns são a vírgula (`,`) e o ponto e vírgula (`;`).
+As descrições das opções refletem o importador revisado. Confirme o escopo da substituição e o comportamento em caso de conflito na versão da API que você vai usar; as telas da referência não comprovam esses efeitos.
 
-        **Como verificar o delimitador:**
+* **replace_all:** O valor padrão declarado é `false`. Com `true`, os registros existentes do tipo de dados selecionado são removidos antes do carregamento do CSV. O escopo da substituição é a organização, com um filtro de suborganização quando um é informado. Verifique esse escopo explicitamente antes de usar a substituição; um campo sub_org_id vazio pode abranger o tipo de dados selecionado em toda a organização. Com `false`, os registros existentes são tratados conforme **on_conflict**.
+* **on_conflict:** Escolha `IGNORE` para manter inalterados os registros existentes de fornecedor ou de pedido de compra que correspondam, ou `REPLACE` para atualizá-los a partir do CSV. O valor padrão declarado é `REPLACE`. Esta opção não protege os registros da etapa anterior de remoção de **replace_all**.
+* **auto_generate_id:** Mantenha este campo em `false` e informe no seu CSV os identificadores comerciais obrigatórios. O sinalizador opcional de geração automática não é usado pelos importadores revisados de fornecedor e de pedido de compra; não conte com ele para criar números de fornecedor ou de pedido de compra que estejam ausentes.
 
-        1. Abra seu arquivo de dados (por exemplo, o arquivo `.csv`) com um editor de texto simples (como o Bloco de Notas no Windows, TextEdit no Mac ou similar).
-        2. Examine as primeiras linhas de dados. Procure o caractere que aparece consistentemente entre as diferentes informações em cada linha. Este caractere é o seu delimitador.
-        3. Defina o parâmetro `delimiter` em sua solicitação de importação para este caractere identificado (seja `,` ou `;`). Usar o delimitador errado impedirá que os dados sejam analisados corretamente e resultará em uma falha na importação.
-    * **on\_conflict & auto\_generate\_id:** A funcionalidade para lidar com conflitos de dados (`on_conflict`) e gerar IDs automaticamente (`auto_generate_id`) atualmente **não está implementada** para esses tipos de dados.
-
-    <figure><img src="../.gitbook/assets/import_csv_4.png" alt=""><figcaption></figcaption></figure>
-7.  Se você verificou que todas as informações estão corretas, pode iniciar o processo de importação clicando no botão **"Execute"**.
-
-    <figure><img src="../.gitbook/assets/import_csv_5.png" alt=""><figcaption></figcaption></figure>
+Clique em **Execute** somente depois de verificar o ambiente de destino, a organização, o escopo da suborganização, o CSV e as opções, e de a importação estar autorizada. Revise a resposta e verifique os registros pretendidos antes de continuar com outras importações. Para pedidos de compra, consulte o [Painel de ordens de compra](../end-user-and-partner-section/end-user-section/purchase-order-dashboard.md). A captura de tela mostra os controles; ela não comprova uma importação executada nem uma validação completa dos dados do CSV.

@@ -86,7 +86,7 @@
     * [QR-codes](end-user-and-partner-section/end-user-section/validation-screen/qr-codes.md)
     * [Toetsenbord Sneltoetsen](end-user-and-partner-section/end-user-section/validation-screen/keyboard-shortcuts.md)
     * [Probleemoplossing](end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/README.md)
-      * [Ontbrekend Tekst in OCR Extractie](end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md)
+      * [Ontbrekende tekst in OCR-extractie](end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md)
   * [Een factuur goedkeuren of afwijzen](end-user-and-partner-section/end-user-section/approve-or-reject-invoices.md)
   * [Doel en Gebruik](end-user-and-partner-section/end-user-section/purpose-and-use.md)
   * [Inkooporder Matching Scherm](end-user-and-partner-section/end-user-section/purchase-order-matching/README.md)

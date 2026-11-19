@@ -1,79 +1,29 @@
 # Przewodnik pliku podglądu EDI
 
-## 1. Przegląd
+Plik **PREVIEW** określa, w jaki sposób ustrukturyzowany dokument EDI jest wyświetlany osobie, która go czyta. W DocBits jest to konfiguracja **XSLT**, oddzielona od mapowania JSON **EXTRACTION PATHS**. Skorzystaj z tego przewodnika, jeśli w swojej organizacji utrzymujesz elektroniczne formaty dokumentów.
 
-Plik **Podglądu** definiuje, w jaki sposób strukturalne dane XML są renderowane w czytelny dla człowieka format przypominający PDF. Łączy **HTML i CSS** dla prezentacji wizualnej i używa **XSLT** `**select**` **statements** do dynamicznego wstawiania danych z niestandardowego XML. Ten podgląd jest wyświetlany podczas **walidacji pola** i jest również dołączany podczas eksportowania dokumentów do **IDM**.
+## Znajdź plik podglądu
 
-## 2. Cel i Funkcja
+1. Przejdź do **Ustawienia → Typy Dokumentów** i otwórz **E-Doc** dla odpowiedniego typu dokumentu.
+2. Rozwiń format elektroniczny, na przykład **EDI** dla wybranego typu dokumentu.
+3. Wybierz wiersz **PREVIEW** oznaczony jako **XSLT**. Nie klikaj jeszcze przycisku **Podgląd**: otwiera on panel testowy dopiero po wprowadzeniu konfiguracji. Przycisk **Nowy** otwiera formularz nowego atrybutu EDI.
 
-* Konwertuje czytelne dla maszyny niestandardowe XML na wizualnie sformatowany podgląd (PDF).
-* Umożliwia przeglądanie i walidację wydobytych danych w sposób przyjazny dla człowieka.
-* Zapewnia spójne renderowanie kluczowych pól dokumentu, takich jak nagłówki, tabele, sumy, itp.
-* Zbudowany przy użyciu **HTML + CSS** do układu i projektowania oraz **XSLT** do wiązania danych z układem.
+<figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-list-pl-20261114.png" alt="Lista EDI w polskim interfejsie sandboxa DocBits z osobnymi wierszami PREVIEW typu XSLT i EXTRACTION PATHS typu JSON, kolumnami Nazwa, Status, Typ, Wersja i Ostatnia modyfikacja:, statusem Domyślny w każdym wierszu oraz przyciskiem Nowy"><figcaption>Wybierz na liście EDI wiersz PREVIEW typu XSLT.</figcaption></figure>
 
-## 3. Dostęp i Podstawowa Edycja
+## Poznaj edytor i wersje
 
-#### **Dostęp do Pliku:**
+Strona szczegółów pokazuje po lewej stronie pola **Typ dokumentu** i **Typ dokumentu elektronicznego** oraz dostępne wersje w sekcji **Version**. Oznaczenie **Aktywny** wskazuje wersję obecnie używaną. Edytor po prawej zawiera arkusz stylów XSLT. Jego HTML i CSS odpowiadają za układ i wygląd, a XSLT wstawia wartości z ustrukturyzowanego dokumentu. Przycisk **Format** porządkuje kod źródłowy do czytania i nie aktywuje żadnej wersji.
 
-1.  Przejdź do **Ustawienia** → **Typ Dokumentu** → _\[Twój Dokument (np. Zamówienie Zakupu)]_ → **E-Dok**.
+<figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-detail-pl-20261114.png" alt="Strona Szczegóły E-Dokumentu w polskim interfejsie sandboxa DocBits (ścieżka Ustawienia / Typy Dokumentów / E-Dokument) z polem Typ dokumentu o wartości PURCHASE_ORDER, polem Typ dokumentu elektronicznego o wartości EDI, po lewej kartą Version z wersją 1 oznaczoną jako Aktywny, datą i autorem, a po prawej edytorem PREVIEW (XSLT) z przyciskiem Format i kodem arkusza stylów"><figcaption>Szczegóły E-Dokumentu: po lewej typ dokumentu, typ dokumentu elektroniczny i wersje, po prawej arkusz stylów XSLT.</figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff6zyL0AvmqSvrogZdnox%252Fimage.png%3Falt%3Dmedia%26token%3D6bc9ab55-6ee9-43d1-b576-4c5833c208cf\&width=768\&dpr=4\&quality=100\&sign=a23de442\&sv=2)
-2. W zakładce **E-Dok** wybierz swój format (np. **EDI**).
-3.  Kliknij **Podgląd**, aby wyświetlić lub edytować plik.
+Ołówek obok aktywnej wersji tworzy **wersję roboczą** do edycji. Po sprawdzeniu zmian aktywuj wersję roboczą ikoną zaznaczenia. Aktywowana wersja zastępuje poprzednio aktywną. Ikoną kosza usuwaj tylko niepotrzebną wersję roboczą.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fdo1R389GeSqFuZKLD0OP%252Fimage.png%3Falt%3Dmedia%26token%3D930903d4-44af-4188-b015-c60c2dd9d9ab\&width=768\&dpr=4\&quality=100\&sign=77bbb2ce\&sv=2)
+## Przetestuj podgląd
 
-#### **Zarządzanie Wersjami Roboczymi:**
+Kliknij przycisk **Podgląd** w prawym górnym rogu, aby otworzyć panel testowy. W polu **Document Id...** wpisz ID wgranego dokumentu EDI i kliknij **Test**. Sprawdź wyświetlony dokument: czy etykiety, wartości i wiersze tabeli można odczytać. Ilustracja pokazuje panel testowy z wymyślonym przykładowym ID; nie pokazuje żadnego wyrenderowanego wyniku testu.
 
-* **Utwórz Wersję Roboczą:** Kliknij ikonę ✏️ ołówka.
-* **Usuń Wersje Robocze:** Użyj ikony 🗑️ kosza, aby usunąć nieużywane wersje robocze.
-* **Aktywuj Zmiany:** Kliknij ikonę ✅ zaznaczenia, aby opublikować wersję.
-  * **Uwaga**: Aktywowanie nowej wersji spowoduje **automatyczne dezaktywowanie** poprzedniej.
+<figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-panel-pl-20261114.png" alt="Panel testowy w polskim interfejsie sandboxa DocBits z polem Document Id... zawierającym wymyślony przykładowy identyfikator, którego widoczna część to 000000-0000-4000-8000-000000000006, oraz przyciskiem Test, bez wyrenderowanego wyniku"><figcaption>Przetestuj wersję podglądu przed aktywacją, podając ID wgranego dokumentu EDI; widoczne ID to wymyślony przykład.</figcaption></figure>
 
-## 4. Edytor HTML/XSLT/CSS
+Do mapowania pól na XML użyj [przewodnika po pliku ścieżek ekstrakcji EDI](edi-extraction-paths-file-guide.md). Etap konwersji źródła opisuje [przewodnik po pliku transformacji EDI](edi-transformation-file-guide.md). Na stronie [Filmy EDI](edi-videos.md) znajdziesz demonstrację krok po kroku.
 
-Plik **Podglądu** jest edytowany w dedykowanym edytorze obsługującym HTML, XSLT i CSS.
-
-* **HTML** definiuje strukturę dokumentu wyjściowego (np. tabele, divy, układ).
-* **CSS** kontroluje stylowanie (np. czcionki, odstępy, kolory, wyrównanie).
-*   **XSLT** `**select**` **statements** są używane do dynamicznego wypełniania pól z niestandardowego XML, takich jak:
-
-    Copy
-
-    ```
-    <xsl:value-of select="/PURCHASE_ORDER/PURCHASE_ORDER_NUMBER/text()" />
-    ```
-* Możesz również używać **logiki XSLT** (`<xsl:if>`, `<xsl:for-each>`, itp.) do obsługi warunkowego wyświetlania lub iterowania po pozycjach linii.
-
-## 5. Funkcja Podglądu (Renderowanie Wyjścia)
-
-Funkcja Podglądu pozwala testować i weryfikować, w jaki sposób dokument EDI jest renderowany z bieżącym plikiem podglądu.
-
-#### **Użycie:**
-
-* Prześlij plik EDI za pomocą standardowego procesu przesyłania.
-* Skopiuj **ID Dokumentu** przesłanego pliku.
-* Przejdź do interfejsu **Podglądu**.
-* Otwórz **Funkcję Podglądu**.\
-  \
-  &#x20;![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a\&width=300\&dpr=4\&quality=100\&sign=36ce2b93\&sv=2)
-* Wprowadź ID Dokumentu i kliknij **Test**.
-* Renderowany podgląd w stylu PDF zostanie wyświetlony przy użyciu konfiguracji HTML/CSS/XSLT.
-
-Ta funkcja jest kluczowa do debugowania wiązań danych, doskonalenia układu i zapewnienia, że dokument jest zarówno dokładny, jak i wizualnie czytelny dla użytkowników i systemów potokowych, takich jak **IDM**.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJH103tnbqZjuimpOniVg%252Fimage.png%3Falt%3Dmedia%26token%3D4e63cc09-b0de-488f-bdd0-ee5a9246a371\&width=768\&dpr=4\&quality=100\&sign=bfff5bba\&sv=2)
-
-## 6. Przewodnik Wideo
-
-Przewodnik wideo dla tego typu pliku jest dostępny na [stronie z Filmami.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Użyj go, aby śledzić konfigurację, edycję i podgląd.
-
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-pl.png" alt="Istniejący format EDI z czterema skonfigurowanymi atrybutami."><figcaption><p>Istniejący format EDI z czterema skonfigurowanymi atrybutami.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-preview-pl.png" alt="Aktywny atrybut PREVIEW: kod źródłowy XSLT w edytorze; ten widok nie przedstawia wyrenderowanego podglądu dokumentu."><figcaption><p>Aktywny atrybut PREVIEW: kod źródłowy XSLT w edytorze; ten widok nie przedstawia wyrenderowanego podglądu dokumentu.</p></figcaption></figure>
-
-
-Widoki przedstawiają istniejącą konfigurację i wersję. Ustawienia różnią się w zależności od typu dokumentu i formatu. Sprawdź zmiany w wersji roboczej przed aktywacją.
-
-Ilustracje przedstawiają polskie karty etapów oraz aktywną wersję konfiguracji w trybie tylko do odczytu. W pokazanej wersji interfejsu przycisk podglądu ma błędny podpis „Zapowiedź”; odpowiada on funkcji podglądu, oznaczonej w karcie jako „Podgląd”. Techniczne nagłówki edytora, identyfikatory atrybutów i kod konfiguracji pozostają w oryginalnej postaci.
+Widoki przedstawiają istniejącą konfigurację i wersję. Ustawienia zależą od typu dokumentu i formatu. Zmiany sprawdź w wersji roboczej przed aktywacją. W pokazanym interfejsie nagłówek **Version** karty wersji oraz pole **Document Id...** pozostają po angielsku; techniczne nazwy atrybutów i kod konfiguracji pozostają w oryginalnej postaci.

@@ -74,6 +74,7 @@
   * [Pending Input](end-user-and-partner-section/end-user-section/pending-input.md)
   * [Avis-Dashboard](end-user-and-partner-section/end-user-section/advance-shipment-dashboard.md)
   * [Dashboard für Bestellungen](end-user-and-partner-section/end-user-section/purchase-order-dashboard.md)
+    * [Bestelldetails](end-user-and-partner-section/end-user-section/purchase-order-detail.md)
   * [Dashboard für Rechnungen](end-user-and-partner-section/end-user-section/invoice-dashboard.md)
   * [Lieferantenstatistiken verstehen](end-user-and-partner-section/end-user-section/supplier-statistics.md)
   * [Versandauftrags-Dashboard](end-user-and-partner-section/end-user-section/shipment-order-dashboard.md)

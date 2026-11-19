@@ -7,16 +7,24 @@
 Os dados de treinamento e os documentos de teste têm finalidades diferentes. Para documentos de teste independentes, defina os tipos de documentos e valores de campo esperados e compare-os com as previsões. Registre a versão do modelo, amostra, discrepâncias e falhas técnicas. Faça melhorias direcionadas e repita o teste com o mesmo protocolo de avaliação. Os valores mostrados são um exemplo e não uma medida de precisão.
 
 
-O teste deve avaliar os resultados em documentos representativos que não tenham sido usados no treino. Prepare as respostas esperadas para cada documento: o tipo e, para avaliar a extração, os valores dos campos.
+Teste com documentos representativos que não tenham sido usados no treino. Prepare as respostas esperadas para cada documento: o tipo e, para avaliar a extração, os valores dos campos.
 
 ## Executar o teste
 
 1. Abra o treino do modelo para o tipo de documento a avaliar.
-2. Escolha o teste de classificação, quando essa função estiver disponível na sua versão.
+2. Escolha **Testar classificação**, quando essa função estiver disponível na sua versão.
 3. Selecione a amostra e inicie a avaliação com as opções disponíveis.
 4. Aguarde a conclusão e registe os resultados e os erros. Uma falha técnica ou um teste incompleto não equivale a uma classificação correta.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-pt.png" alt="Importação, treino do modelo e teste de classificação. Na versão ilustrada, a ação de teste apresenta a designação confusa Classificação do teste. Não foi iniciado nenhum treino ou teste."><figcaption><p>Importação, treino do modelo e teste de classificação. Na versão ilustrada, a ação de teste apresenta a designação confusa Classificação do teste. Não foi iniciado nenhum treino ou teste.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/testing-the-model-overview-pt-20261113.png" alt="Vista de Treinar Modelo com dados de exemplo: no topo, os números Amostra 5, Exportado 1284, Empresa ∑ 1296 e Geral ∑ 48210 e os botões Importar, Treinar modelo e Testar classificação; por baixo, a lista de documentos de treino com as colunas Nome e Ações. Não foi iniciado nenhum treino nem nenhum teste, por isso não aparece nenhum valor de precisão."><figcaption><p>Vista de Treinar Modelo com dados de exemplo: os números Amostra, Exportado, Empresa ∑ e Geral ∑, os botões Importar, Treinar modelo e Testar classificação e a lista de documentos de treino. Não foi iniciado nenhum treino nem nenhum teste.</p></figcaption></figure>
+
+As entradas seguintes explicam o que faz cada comando e onde encontrar o procedimento completo:
+
+* **Importar**: abre a seleção de novos dados de treino; o procedimento está em [Importar documentos de exemplo para o treinamento do modelo](import-data-model-training.md).
+* **Treinar modelo**: inicia o treino do tipo de documento; a utilização está em [Objetivo e Uso: Treinamento do Modelo](purpose-and-use-model-training.md).
+* **Testar classificação**: inicia a verificação descrita acima na secção «Executar o teste»; os resultados leem-se na secção «Interpretar os resultados».
+* **Amostra**, **Exportado**, **Empresa ∑** e **Geral ∑**: os números dos documentos de treino, explicados em [Treino de modelos](README.md).
+* **Ações**: o menu da linha remove um documento de treino; o procedimento está em [Gerenciar dados de treinamento](manage-training-data.md).
 
 ## Interpretar os resultados
 

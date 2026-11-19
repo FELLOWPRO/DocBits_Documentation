@@ -12,11 +12,19 @@ Test met representatieve documenten die niet voor de training zijn gebruikt. Leg
 ## Test uitvoeren
 
 1. Open de modeltraining voor het te beoordelen documenttype.
-2. Kies de classificatietest als je versie die functie biedt.
+2. Kies **Testclassificatie** als je versie die functie biedt.
 3. Selecteer de steekproef en start de evaluatie met de beschikbare opties.
 4. Wacht op voltooiing en registreer resultaten en fouten. Een technische fout of onvolledige test is geen correcte classificatie.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-nl.png" alt="Bediening voor importeren, modeltraining en classificatietests. Deze opname toont geen uitgevoerd trainings- of nauwkeurigheidsresultaat."><figcaption><p>Bediening voor importeren, modeltraining en classificatietests. Deze opname toont geen uitgevoerd trainings- of nauwkeurigheidsresultaat.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/testing-the-model-overview-nl-20261113.png" alt="Modeltraining in het Nederlands, versie 11.27.7, met voorbeeldgegevens: de tellers Steekproef, Geëxporteerd, Bedrijf ∑ en Algemeen ∑, de acties Importeren, Model trainen en Testclassificatie en een lijst met vijf trainingsdocumenten. Er is geen training gestart."><figcaption><p>Modeltraining in het Nederlands, versie 11.27.7, met voorbeeldgegevens: de acties Importeren, Model trainen en Testclassificatie en een lijst met vijf trainingsdocumenten; er is geen training gestart.</p></figcaption></figure>
+
+De weergave biedt drie acties en de lijst met trainingsdocumenten. De volgende pagina's leggen uit waar elke actie toe dient:
+
+* **Importeren** opent de selectie van nieuwe trainingsgegevens: [Gegevens importeren voor modeltraining](import-data-model-training.md).
+* **Model trainen** start de training voor het documenttype: [Doel en gebruik: modeltraining](purpose-and-use-model-training.md).
+* **Testclassificatie** start de controle die in de sectie „Test uitvoeren" hierboven wordt beschreven.
+* De tellers **Steekproef**, **Geëxporteerd**, **Bedrijf ∑** en **Algemeen ∑** worden uitgelegd in [Modeltraining](README.md).
+* **Acties** opent het menu van een trainingsdocument en verwijdert het: [Trainingsgegevens beheren](manage-training-data.md).
 
 ## Resultaten beoordelen
 

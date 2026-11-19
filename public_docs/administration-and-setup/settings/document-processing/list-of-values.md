@@ -8,46 +8,70 @@ Fonti dei dati anagrafici, elenchi di valori e impostazioni dei dati master in D
 
 Il video mostra le fonti dei dati anagrafici, gli elenchi di valori e le impostazioni dei dati master di un tipo di documento.
 
-Gli elenchi di valori contengono opzioni predefinite per i campi del documento. Un campo può usare un elenco per presentare le opzioni nella convalida. Le etichette possono essere tradotte; il valore tecnico resta uguale in tutte le lingue.
+## Panoramica
 
-## Aprire gli elenchi
+Un elenco di valori fornisce scelte predefinite per un campo, ad esempio tipi di fattura o valute. Ogni voce ha un **Valore** memorizzato e può avere **Sinonimi** ed etichette tradotte. Usare gli elenchi quando si configurano menu a discesa nei [Campi](../global-settings/document-types/fields/) e la convalida dei campi.
 
-Nelle impostazioni, aprire la ricerca dei dati anagrafici e selezionare gli elenchi di valori. Il campo **Cerca negli elenchi**, a sinistra, permette di trovare un elenco. Selezionarne il nome per aprire le voci a destra. La cartella con una stella identifica un elenco di sistema; il numero accanto al nome indica quante voci sono state caricate.
+Elenchi e voci possono essere limitati a una sotto-organizzazione. Le traduzioni determinano l'etichetta mostrata per una lingua; il valore sottostante resta uguale. Se non è disponibile un'etichetta per la lingua dell'utente, viene mostrato il valore sottostante.
 
-<figure><img src="../../../.gitbook/assets/s150-list_of_values_1-it.png" alt="Vista degli elenchi di valori con i nomi configurati nascosti."><figcaption><p>Vista degli elenchi di valori con i nomi configurati nascosti.</p></figcaption></figure>
+## Come accedere?
 
-<figure><img src="../../../.gitbook/assets/dbdc-36-selected-system-list-it-20261031.png" alt="L’elenco di sistema selezionato apre la tabella delle voci. A-Z e Z-A ordinano i valori; Aggiungi riga apre il modulo. Valori e nomi personalizzati sono nascosti; i nomi degli elenchi di sistema, come ISO Currency, sono dati esistenti."><figcaption><p>L’elenco di sistema selezionato apre la tabella delle voci. A-Z e Z-A ordinano i valori; Aggiungi riga apre il modulo. Valori e nomi personalizzati sono nascosti; i nomi degli elenchi di sistema, come ISO Currency, sono dati esistenti.</p></figcaption></figure>
+Aprire **Impostazioni**. In **ELABORAZIONE DOCUMENTI**, espandere **Ricerca di dati anagrafici** e selezionare **Elenco dei valori**.
 
-## Creare un elenco
+Usare **Cerca negli elenchi** nel pannello a sinistra per trovare un elenco, poi selezionarne il nome. A destra compaiono le sue voci. Un numero accanto al nome dell'elenco indica quante voci sono state caricate. L'icona a forma di cartella con una stella identifica un elenco definito dal sistema.
 
-1. Selezionare **Nuovo** sopra i nomi degli elenchi.
-2. Inserire il **Nome** e, se necessario, selezionare le **Sotto-organizzazioni** per limitare l’ambito dell’elenco.
-3. **Salva** crea l’elenco. La **X** chiude la finestra senza creare un elenco.
+<figure><img src="../../../.gitbook/assets/list-of-values-initial-it-20261112.png" alt="Vista iniziale di Elenco dei valori con Cerca negli elenchi e Nuovo, senza alcun elenco selezionato; nomi degli elenchi e conteggi sono dati di esempio inventati"><figcaption><p>Selezionare un elenco nel pannello a sinistra per aprire le sue voci. Nomi degli elenchi e conteggi in questa vista sono dati di esempio inventati.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-36-new-list-it-20261031.png" alt="Nuovo apre la finestra vuota Crea nuovo elenco con Nome, Sotto-organizzazioni, X e Salva. Questa vista non mostra un elenco salvato."><figcaption><p>Nuovo apre la finestra vuota Crea nuovo elenco con Nome, Sotto-organizzazioni, X e Salva. Questa vista non mostra un elenco salvato.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/list-of-values-selected-it-20261112.png" alt="Payment Terms selezionato nel pannello a sinistra; visibili Nuovo, Ordina per: Valore con A-Z e Z-A, Aggiungi riga e le intestazioni Valore, Sotto-Organizzazione, Sinonimi, Lingua, Etichetta e Azioni; voci e valori sono dati di esempio inventati"><figcaption><p>La selezione di un elenco apre la tabella delle voci. A-Z e Z-A ordinano i valori; Aggiungi riga apre il modulo di una nuova voce. Voci, etichette e conteggi sono dati di esempio inventati.</p></figcaption></figure>
 
-Per eliminare un elenco creato dalla propria organizzazione, usare l’opzione di eliminazione nel menu a tre punti accanto al nome e confermare solo l’elenco previsto. Gli elenchi di sistema non presentano questo menu di eliminazione e non possono essere eliminati.
+## Come aggiungere o eliminare un elenco
 
-## Aggiungere e modificare le voci
+### Creare un nuovo elenco di valori
 
-1. Selezionare l’elenco a sinistra, poi **Aggiungi riga** sopra la tabella.
-2. Inserire il **Valore** memorizzato e, se necessario, la sua **Sotto-organizzazione**.
-3. Aggiungere i **Sinonimi** desiderati. Confermare ciascuno con **Invio** per aggiungerlo al campo.
-4. Sotto **Traduzioni**, selezionare una **Lingua** e inserire un’**Etichetta** non vuota. Una nuova voce richiede almeno una traduzione completa.
-5. **Salva** crea la voce. **Annulla** o la **X** chiude il modulo senza salvarla.
+1. Selezionare **Nuovo** sopra i nomi degli elenchi nel pannello a sinistra.
+2. Inserire un **Nome**.
+3. Se necessario, selezionare **Sotto-organizzazioni** per limitare l'elenco.
+4. Selezionare **Salva** per crearlo. Con la **X** si chiude la finestra senza creare alcun elenco.
 
-<figure><img src="../../../.gitbook/assets/dbdc-36-add-row-it-20261031.png" alt="Aggiungi riga apre Creare valori sotto la tabella: Valore, Sotto-organizzazione, Sinonimi, Lingua, Etichetta e Aggiungi traduzione. Salva crea la voce; Annulla abbandona la bozza non salvata."><figcaption><p>Aggiungi riga apre Creare valori sotto la tabella: Valore, Sotto-organizzazione, Sinonimi, Lingua, Etichetta e Aggiungi traduzione. Salva crea la voce; Annulla abbandona la bozza non salvata.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/list-of-values-create-it-20261112.png" alt="Finestra Crea nuovo elenco con il nome di esempio inventato approval_levels nel campo Nome, il campo Sotto-organizzazioni vuoto, la X di chiusura e Salva"><figcaption><p>Nuovo apre questa finestra. Nome identifica l'elenco; Sotto-organizzazioni ne limita l'ambito. Salva crea l'elenco. Il nome approval_levels è un dato di esempio inventato.</p></figcaption></figure>
 
-Per modificare una voce, selezionare la riga o l’opzione di modifica in **Azioni**. I campi protetti restano di sola lettura; anche il valore memorizzato può essere bloccato quando esistono già traduzioni. **Annulla** abbandona le modifiche non salvate.
+### Come eliminare un elenco
 
-L’opzione di duplicazione nel menu della riga crea un’altra voce. Per più voci, selezionare le caselle e usare il pulsante di copia sopra la tabella. L’eliminazione è disponibile per le voci della propria organizzazione e rimuove la voce selezionata; le voci di sistema non presentano questa azione. Un elenco di sistema può contenere sia voci protette sia voci della propria organizzazione.
+Per un elenco creato dalla propria organizzazione, aprire il menu a tre punti accanto al nome e selezionare **Cancellare**. Una finestra di conferma chiede se rimuoverlo. Confermare solo l'elenco previsto. Gli elenchi definiti dal sistema non hanno il menu di eliminazione.
 
-## Importare da CSV
+## Come aggiungere, modificare o rimuovere valori da un elenco esistente
 
-Questa interfaccia non offre la precedente importazione CSV dal menu **Azioni**. I vecchi passaggi per caricare un CSV non si applicano a questa schermata; usare **Aggiungi riga** per inserirvi i valori.
+### Aggiungere valori manualmente
 
-## Aggiungere traduzioni
+1. Selezionare l'elenco nel pannello a sinistra.
+2. Selezionare **Aggiungi riga** sopra la sua tabella. Il modulo **Creare valori** si apre sotto la tabella.
+3. Inserire il **Valore** memorizzato e, se necessario, la sua **Sotto-organizzazione**.
+4. Aggiungere facoltativamente dei **Sinonimi**. Premere **Invio** dopo ciascuno, così diventa un'etichetta.
+5. In **Traduzioni**, selezionare una **Lingua** e inserire un'**Etichetta** non vuota. Una nuova voce richiede almeno una traduzione completata.
+6. Selezionare **Salva** per memorizzare la voce, oppure **Annulla** per chiudere il modulo senza salvarla.
 
-Nel modulo della voce, selezionare **Lingua** e inserire l’**Etichetta**. Usare **Aggiungi traduzione** per aggiungere un’altra lingua e la sua etichetta. Completare o rimuovere le righe di traduzione aggiuntive lasciate vuote prima di salvare. Quando una riga di traduzione può essere rimossa, il suo cestino la rimuove prima dal modulo; salvare per applicare la modifica.
+<figure><img src="../../../.gitbook/assets/list-of-values-add-row-it-20261112.png" alt="Modulo Creare valori aperto sotto la tabella con il valore di esempio inventato NET60, Sotto-organizzazione vuota, Sinonimi con il testo Premi Invio per aggiungere, Traduzioni con lingua Inglese ed etichetta di esempio inventata 60 days net, Aggiungi traduzione, Annulla e Salva"><figcaption><p>Aggiungi riga apre il modulo della voce sotto la tabella. Inserire il valore e almeno un'etichetta di lingua prima di salvare; Annulla chiude il modulo senza memorizzare alcuna voce. Valore ed etichetta sono dati di esempio inventati.</p></figcaption></figure>
 
-Il testo visualizzato può variare secondo la lingua, ma il valore tecnico resta identico. Senza un’etichetta per la lingua attiva, viene mostrato il valore tecnico. Le voci di sistema e le traduzioni ereditate possono avere campi protetti; modificare solo i dati della propria organizzazione i cui campi sono modificabili.
+### Importare valori da un file CSV
+
+Questa schermata non include più il precedente comando per caricare un file CSV dal menu **Azioni**. I vecchi passaggi per il caricamento di un CSV non si applicano a questa schermata. Qui i valori si inseriscono con **Aggiungi riga**.
+
+### Modificare valori esistenti
+
+Selezionare una riga per aprire il suo modulo di modifica sotto la tabella, oppure usare **Modifica** nel menu **Azioni** della riga. Aggiornare i campi modificabili e salvare il modulo. **Annulla** scarta la modifica non salvata. I campi protetti restano di sola lettura; anche il Valore memorizzato può essere bloccato quando esistono traduzioni.
+
+Il menu della riga offre anche **Duplicato**. Per duplicare più voci, selezionare le relative caselle e usare il comando di copia sopra la tabella. La duplicazione crea voci aggiuntive.
+
+### Eliminare valori
+
+Per una voce creata dalla propria organizzazione, il menu **Azioni** della riga include **Cancellare**. Questa azione rimuove la voce, quindi sceglierla solo per una voce che si intende davvero eliminare. Le voci definite dal sistema non offrono questa azione.
+
+## Aggiungere traduzioni ai valori
+
+Nel modulo della voce, scegliere la **Lingua** e inserire la sua **Etichetta**. Selezionare **Aggiungi traduzione** per un'altra lingua e la relativa etichetta. Completare o rimuovere le ulteriori righe di traduzione vuote prima di salvare. Quando è presente una riga di traduzione rimovibile, il suo comando con il cestino rimuove quella traduzione dal modulo; salvare il modulo per memorizzare la modifica.
+
+## Elenchi e voci definiti dal sistema
+
+Gli elenchi di sistema sono contrassegnati da un'icona a forma di cartella con una stella e non possono essere eliminati. Possono contenere voci aggiuntive create dalla propria organizzazione.
+
+Le voci definite dal sistema e le traduzioni ereditate hanno campi protetti. Usare i controlli modificabili per le voci e le traduzioni della propria organizzazione. L'assenza dell'azione Cancellare identifica una voce protetta; un elenco di sistema può contenere sia voci protette sia voci create dall'organizzazione.

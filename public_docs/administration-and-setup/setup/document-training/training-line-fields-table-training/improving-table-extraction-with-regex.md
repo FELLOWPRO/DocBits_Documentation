@@ -45,7 +45,7 @@ Ecco un esempio in cui la riga "PRAEF" si sovrappone a **Bezeichnung**, **Menge*
     <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-it-20261009.png" alt="Schermata Estrazione Della Tabella con Modalità di modifica dei dati della riga: On e il relativo suggerimento visibile."><figcaption><p>Modalità di modifica delle righe attivata.</p></figcaption></figure>
 3.  **Seleziona e Mappa il Testo** Clicca sulla parte corretta del testo e assegnalo a un'intestazione di colonna **blu**.
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-it-20261009.png" alt="Tabella estratta in modalità di modifica righe con le intestazioni di colonna blu, ancora vuote, assegnabili manualmente."><figcaption><p>Le intestazioni di colonna blu possono essere compilate manualmente.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-it-20261110.png" alt="Tabella estratta in modalità di modifica righe con le intestazioni di colonna blu, ancora vuote, assegnabili manualmente."><figcaption><p>Le intestazioni di colonna blu possono essere compilate manualmente.</p></figcaption></figure>
 
 > Nota: Le colonne di colore viola sono già mappate dal sistema e non possono essere modificate manualmente.
 

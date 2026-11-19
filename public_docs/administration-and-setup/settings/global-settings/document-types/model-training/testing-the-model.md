@@ -16,7 +16,15 @@ Utilisez des documents représentatifs qui n’ont pas servi à entraîner le mo
 3. Sélectionnez l’échantillon et lancez l’évaluation avec les options disponibles.
 4. Attendez la fin et consignez les résultats et les erreurs. Un échec technique ou une évaluation incomplète ne constitue pas une classification correcte.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-fr.png" alt="Vue générale de l’entraînement du modèle dans la version illustrée. Aucune importation, aucun entraînement ni test de performance n’a été lancé."><figcaption><p>Vue générale de l’entraînement du modèle dans la version illustrée. Aucune importation, aucun entraînement ni test de performance n’a été lancé.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/testing-the-model-overview-fr-20261113.png" alt="Entraînement du modèle du type de document Facture en français, version 11.27.7, avec des valeurs d’exemple : les indicateurs Échantillon entraîné, Exporté, Société ∑ et Global ∑, les actions Importer, Entraîner le modèle et Test de classification ainsi que la liste des documents d’entraînement. Aucun entraînement n’a été lancé."><figcaption><p>Entraînement du modèle du type de document Facture en français, version 11.27.7, avec des valeurs d’exemple : les actions Importer, Entraîner le modèle et Test de classification ainsi que la liste des documents d’entraînement ; aucun entraînement n’a été lancé.</p></figcaption></figure>
+
+La vue propose trois actions et la liste des documents d’entraînement. Les pages suivantes décrivent où mène chaque action :
+
+- **Importer** ouvre la sélection de nouvelles données d’entraînement : [Importer des documents d’exemple pour l’entraînement du modèle](import-data-model-training.md).
+- **Entraîner le modèle** démarre l’entraînement pour le type de document : [Objectif et utilisation : entraînement du modèle](purpose-and-use-model-training.md).
+- **Test de classification** lance le contrôle décrit dans la section « Réaliser l’évaluation » ci-dessus.
+- Les indicateurs **Échantillon entraîné**, **Exporté**, **Société ∑** et **Global ∑** sont expliqués dans [Entraînement du modèle](README.md).
+- Le menu de la colonne **Actions** supprime un document d’entraînement : [Gérer les données d’entraînement](manage-training-data.md).
 
 ## Interpréter les résultats
 
@@ -26,4 +34,4 @@ Les règles de classification et d’extraction sont des configurations distinct
 
 ## Corriger et répéter
 
-Corrigez les données d’entraînement, les étiquettes ou les réglages réellement disponibles, puis entraînez de nouveau le modèle si nécessaire. Répétez le même protocole et conservez un échantillon indépendant. Consignez la version, les données, les résultats et les régressions. Un bon résultat sur l’échantillon ne garantit pas les mêmes performances sur tous les documents futurs. Aucun test de performance n’a été exécuté pour les images de cette page.
+Corrigez les données d’entraînement, les étiquettes ou les réglages réellement disponibles, puis entraînez de nouveau le modèle si nécessaire. Répétez le même protocole et conservez un échantillon indépendant. Consignez la version, les données, les résultats et les régressions. Un bon résultat sur l’échantillon ne garantit pas les mêmes performances sur tous les documents futurs.

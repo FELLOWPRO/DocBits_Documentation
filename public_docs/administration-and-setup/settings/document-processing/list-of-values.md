@@ -8,46 +8,72 @@
 
 Film pokazuje źródła danych głównych, listy wartości oraz ustawienia danych głównych typu dokumentu.
 
-Listy wartości zawierają wstępnie zdefiniowane opcje pól dokumentu. Pole może korzystać z listy, aby wyświetlać opcje podczas walidacji. Etykiety mogą mieć tłumaczenia; wartość techniczna jest taka sama we wszystkich językach.
+## Przegląd
 
-## Otwieranie list
+Lista wartości dostarcza wstępnie zdefiniowanych opcji dla pola, na przykład typów faktur lub walut. Każda pozycja ma zapisaną **Wartość** i może mieć **Synonimy** oraz etykiety w różnych językach. List używaj podczas konfigurowania list rozwijanych w [Pola](../global-settings/document-types/fields/) i przy walidacji pól.
 
-W ustawieniach otwórz dane podstawowe i wybierz listy wartości. Pole **Wyszukaj listy** po lewej stronie pozwala znaleźć listę. Wybierz jej nazwę, aby otworzyć wartości po prawej stronie. Folder z gwiazdką oznacza listę systemową; liczba obok nazwy wskazuje liczbę wczytanych wartości.
+Listy i pozycje można ograniczyć do podorganizacji. Tłumaczenia decydują o etykiecie wyświetlanej dla danego języka; zapisana wartość pozostaje taka sama. Jeśli dla języka użytkownika nie ma etykiety, wyświetlana jest zapisana wartość.
 
-<figure><img src="../../../.gitbook/assets/s150-list_of_values_1-pl.png" alt="Listy wartości z ukrytymi skonfigurowanymi nazwami."><figcaption><p>Listy wartości z ukrytymi skonfigurowanymi nazwami.</p></figcaption></figure>
+## Jak otworzyć?
 
-<figure><img src="../../../.gitbook/assets/dbdc-36-selected-system-list-pl-20261031.png" alt="Wybrana lista systemowa otwiera tabelę wartości. A-Z i Z-A sortują wartości; Dodaj wiersz otwiera formularz. Wartości i własne nazwy są ukryte; nazwy list systemowych, takie jak ISO Currency, są istniejącymi danymi."><figcaption><p>Wybrana lista systemowa otwiera tabelę wartości. A-Z i Z-A sortują wartości; Dodaj wiersz otwiera formularz. Wartości i własne nazwy są ukryte; nazwy list systemowych, takie jak ISO Currency, są istniejącymi danymi.</p></figcaption></figure>
+Otwórz **Ustawienia**. W sekcji **PRZETWARZANIE DOKUMENTÓW** rozwiń **Wyszukaj dane główne** i wybierz **Lista wartości**.
 
-## Tworzenie listy
+Użyj pola **Wyszukaj listy** w lewym panelu, aby znaleźć listę, a następnie wybierz jej nazwę. Po prawej stronie pojawią się jej pozycje. Liczba obok nazwy listy pokazuje liczbę wczytanych pozycji. Ikona folderu z gwiazdką oznacza listę zdefiniowaną przez system.
 
-1. Wybierz **Nowy** nad nazwami list.
-2. Uzupełnij pole **Nazwa** i w razie potrzeby wybierz **Podorganizacje**, aby ograniczyć zakres listy.
-3. **Zapisz** tworzy listę. **X** zamyka okno bez tworzenia listy.
+<figure><img src="../../../.gitbook/assets/dbdc-1099-list-values-initial-pl-20261112.png" alt="Widok początkowy strony Lista Wartości z polem Wyszukaj listy i przyciskiem Nowy, przed wybraniem listy; nazwy list i liczby pozycji są zmyślonymi danymi przykładowymi"><figcaption><p>Znajdź i wybierz listę w lewym panelu, aby otworzyć jej pozycje. Nazwy list i liczby pozycji w tym widoku są zmyślonymi danymi przykładowymi.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-36-new-list-pl-20261031.png" alt="Nowy otwiera puste okno Utwórz nową listę z polami Nazwa i Podorganizacje oraz przyciskami X i Zapisz. Widok nie przedstawia zapisanej listy."><figcaption><p>Nowy otwiera puste okno Utwórz nową listę z polami Nazwa i Podorganizacje oraz przyciskami X i Zapisz. Widok nie przedstawia zapisanej listy.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-1099-list-values-selected-pl-20261112.png" alt="Lista Payment Terms wybrana w lewym panelu; widoczne Nowy, Sortuj według: Wartość z przyciskami A-Z i Z-A, Dodaj wiersz oraz nagłówki kolumn Wartość, Podorganizacja, Synonimy, Język, Etykieta i Akcje; wartości, etykiety i liczby są zmyślonymi danymi przykładowymi"><figcaption><p>Wybranie listy otwiera tabelę pozycji. Przyciski A-Z i Z-A sortują wartości, a Dodaj wiersz otwiera formularz nowej pozycji. Wartości, etykiety i liczby w tym widoku są zmyślonymi danymi przykładowymi.</p></figcaption></figure>
 
-Aby usunąć listę utworzoną przez swoją organizację, użyj opcji usuwania w menu z trzema kropkami obok jej nazwy i potwierdź tylko właściwą listę. Listy systemowe nie mają tego menu usuwania i nie można ich usuwać.
+Przyciski **A-Z** i **Z-A** obok pola **Sortuj według: Wartość** sortują wartości rosnąco lub malejąco. Kolumna **Akcje** zawiera czynności dostępne dla danego wiersza.
 
-## Dodawanie i zmienianie wartości
+## Jak dodać lub usunąć listę
 
-1. Wybierz listę po lewej stronie, a następnie **Dodaj wiersz** nad tabelą.
-2. Wprowadź techniczną **Wartość** i w razie potrzeby wybierz pole **Podorganizacja**.
-3. Dodaj potrzebne **Synonimy**. Każdy z nich potwierdź klawiszem **Enter**, aby dodać go do pola.
-4. W sekcji **Tłumaczenia** wybierz **Język** i uzupełnij pole **Etykieta**. Etykieta nie może być pusta. Nowa wartość wymaga co najmniej jednego pełnego tłumaczenia.
-5. **Zapisz** tworzy wartość. **Anulować** lub **X** zamyka formularz bez zapisywania.
+### Tworzenie nowej listy wartości
 
-<figure><img src="../../../.gitbook/assets/dbdc-36-add-row-pl-20261031.png" alt="Dodaj wiersz otwiera Utwórz wartości pod tabelą: Wartość, Podorganizacja, Synonimy, Język, Etykieta i Dodaj tłumaczenie. Zapisz tworzy wartość; Anulować odrzuca niezapisany szkic."><figcaption><p>Dodaj wiersz otwiera Utwórz wartości pod tabelą: Wartość, Podorganizacja, Synonimy, Język, Etykieta i Dodaj tłumaczenie. Zapisz tworzy wartość; Anulować odrzuca niezapisany szkic.</p></figcaption></figure>
+1. Wybierz **Nowy** nad nazwami list w lewym panelu.
+2. Wpisz **Nazwa**.
+3. W razie potrzeby wybierz **Podorganizacje**, aby ograniczyć zakres listy.
+4. Wybierz **Zapisz**, aby utworzyć listę. Okno zamkniesz przyciskiem **X** bez tworzenia listy.
 
-Aby edytować wartość, wybierz jej wiersz lub opcję edycji w kolumnie **Akcje**. Chronione pola pozostają tylko do odczytu; wartość techniczna także może być zablokowana, gdy istnieją już tłumaczenia. **Anulować** odrzuca niezapisane zmiany.
+<figure><img src="../../../.gitbook/assets/dbdc-1099-list-values-new-pl-20261112.png" alt="Okno Utwórz nową listę z wpisaną w polu Nazwa zmyśloną nazwą przykładową approval_levels, pustym polem Podorganizacje, przyciskiem zamykania X i przyciskiem Zapisz"><figcaption><p>Przycisk Nowy otwiera to okno. Nazwa identyfikuje listę, a Podorganizacje ogranicza jej zakres. Zapisz tworzy listę. Nazwa approval_levels jest zmyśloną daną przykładową.</p></figcaption></figure>
 
-Opcja duplikowania w menu wiersza tworzy inną wartość. Aby skopiować kilka wartości, zaznacz ich pola wyboru i użyj przycisku kopiowania nad tabelą. Usuwanie jest dostępne dla wartości własnej organizacji i usuwa wybraną wartość; wartości systemowe nie mają tej akcji. Lista systemowa może zawierać zarówno wartości chronione, jak i wartości własnej organizacji.
+### Jak usunąć listę
 
-## Import CSV
+Dla listy utworzonej przez Twoją organizację otwórz menu z trzema kropkami obok jej nazwy i wybierz **Usuwać**. Okno potwierdzenia pyta, czy usunąć listę. Potwierdź tylko właściwą listę. Listy zdefiniowane przez system nie mają menu usuwania.
 
-Ten interfejs nie udostępnia dawnego importu CSV z menu **Akcje**. Poprzednie kroki przesyłania pliku CSV nie dotyczą tego ekranu; użyj **Dodaj wiersz**, aby wprowadzić tutaj wartości.
+## Jak dodawać, edytować lub usuwać wartości z istniejącej listy
 
-## Dodawanie tłumaczeń
+### Ręczne dodawanie wartości
 
-W formularzu wartości wybierz **Język** i uzupełnij pole **Etykieta**. **Dodaj tłumaczenie** dodaje kolejny język i jego etykietę. Przed zapisaniem uzupełnij lub usuń dodatkowe puste wiersze tłumaczeń. Jeżeli wiersz tłumaczenia można usunąć, jego kosz najpierw usuwa go z formularza; zapisz, aby zastosować zmianę.
+1. Wybierz listę w lewym panelu.
+2. Wybierz **Dodaj wiersz** nad jej tabelą. Pod tabelą otworzy się formularz **Utwórz wartości**.
+3. Wpisz zapisywaną **Wartość** i w razie potrzeby wybierz **Podorganizacja**.
+4. Opcjonalnie dodaj **Synonimy**. Po każdym naciśnij **Enter**, aby stał się etykietą w polu.
+5. W sekcji **Tłumaczenia** wybierz **Język** i uzupełnij niepuste pole **Etykieta**. Nowa pozycja wymaga co najmniej jednego uzupełnionego tłumaczenia.
+6. Wybierz **Zapisz**, aby zapisać pozycję, albo **Anulować**, aby zamknąć formularz bez zapisywania.
 
-Wyświetlany tekst może zależeć od języka, ale wartość techniczna pozostaje taka sama. Bez etykiety dla aktywnego języka pojawia się wartość techniczna. Wartości systemowe i odziedziczone tłumaczenia mogą mieć chronione pola; zmieniaj tylko dane swojej organizacji, których pola można edytować.
+<figure><img src="../../../.gitbook/assets/dbdc-1099-list-values-add-row-pl-20261112.png" alt="Formularz Utwórz wartości otwarty pod tabelą, z wpisaną zmyśloną wartością przykładową NET60, pustym polem Podorganizacja, polem Synonimy z tekstem Naciśnij Enter, aby dodać, sekcją Tłumaczenia z językiem angielski i zmyśloną etykietą przykładową 60 days net, przyciskami Dodaj tłumaczenie, Anulować i Zapisz"><figcaption><p>Dodaj wiersz otwiera formularz pozycji pod tabelą. Przed zapisaniem wpisz wartość i co najmniej jedną etykietę języka; Anulować zamyka formularz bez zapisywania pozycji. Wartość NET60 i etykieta 60 days net są zmyślonymi danymi przykładowymi.</p></figcaption></figure>
+
+### Importowanie wartości z pliku CSV
+
+Ten widok nie zawiera dawnego polecenia wczytywania pliku CSV z menu **Akcje**. Starsze kroki przesyłania pliku CSV nie dotyczą tego ekranu. Wartości wprowadzaj przyciskiem **Dodaj wiersz**.
+
+### Edytowanie istniejących wartości
+
+Wybierz wiersz, aby otworzyć pod tabelą jego formularz edycji, albo użyj **Redagować** w menu **Akcje** tego wiersza. Zmień edytowalne pola i zapisz formularz. **Anulować** odrzuca niezapisaną zmianę. Chronione pola pozostają tylko do odczytu; zapisana Wartość może też zostać zablokowana, gdy istnieją już tłumaczenia.
+
+Menu wiersza oferuje także **Duplikat**. Aby zduplikować kilka pozycji, zaznacz ich pola wyboru i użyj przycisku kopiowania nad tabelą. Duplikowanie tworzy dodatkowe pozycje.
+
+### Usuwanie wartości
+
+Dla pozycji utworzonej przez Twoją organizację menu **Akcje** wiersza zawiera **Usuwać**. Ta czynność usuwa pozycję, więc wybieraj ją tylko dla pozycji, którą naprawdę chcesz usunąć. Pozycje zdefiniowane przez system nie udostępniają tej czynności.
+
+## Dodawanie tłumaczeń do wartości
+
+W formularzu pozycji wybierz **Język** i uzupełnij jego pole **Etykieta**. Wybierz **Dodaj tłumaczenie** dla kolejnego języka i jego etykiety. Przed zapisaniem uzupełnij lub usuń dodatkowe puste wiersze tłumaczeń. Jeśli wiersz tłumaczenia można usunąć, jego przycisk kosza usuwa to tłumaczenie z formularza; zapisz formularz, aby zachować zmianę.
+
+## Listy i pozycje zdefiniowane przez system
+
+Listy systemowe są oznaczone ikoną folderu z gwiazdką i nie można ich usunąć. Mogą zawierać dodatkowe pozycje utworzone przez Twoją organizację.
+
+Pozycje zdefiniowane przez system oraz odziedziczone tłumaczenia mają chronione pola. Korzystaj z edytowalnych pól dla pozycji i tłumaczeń własnej organizacji. Brak czynności **Usuwać** oznacza pozycję chronioną; lista systemowa może zawierać zarówno pozycje chronione, jak i pozycje utworzone przez organizację.

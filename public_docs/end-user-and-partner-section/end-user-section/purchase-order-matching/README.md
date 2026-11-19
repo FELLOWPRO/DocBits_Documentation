@@ -54,6 +54,12 @@ Use o **Histórico de correspondência** (ícone de relógio, onde suas permiss�
 
 Cada ordem de compra abre no seu próprio separador acima da tabela, e uma linha da fatura pode ser correspondida com linhas que pertencem a separadores diferentes. O ícone de correspondência na linha da fatura muda para o separador da ordem correspondida e desloca-se para a linha correspondida; cada clique adicional mostra a linha correspondida seguinte. Se a linha estiver ligada em mais de um separador, o ícone mostra primeiro a lista em **Matched on other PO tabs**, onde escolhe a ordem cuja linha pretende ver. Do lado da ordem de compra, o ícone funciona no sentido inverso: ao clicar percorre as linhas da fatura correspondidas e, ao passar o ponteiro, realça-as.
 
+### Regras ignoradas
+
+O Auto PO Match usa todas as regras de correspondência que podem ser executadas na tabela extraída. Uma regra é ignorada quando falta à tabela uma coluna que a regra lê. Por exemplo, uma regra que emparelha linhas pelo número de artigo não pode ser executada quando não foi extraído nenhum número de artigo. As restantes regras continuam a ser executadas e a correspondência é guardada.
+
+Um aviso indica então as regras que não foram tentadas e as colunas em falta na tabela. As linhas que essas regras teriam emparelhado ficam em aberto. Adicione a coluna em falta ao layout ou à extração da tabela, ou ligue as linhas manualmente, antes de exportar.
+
 ### Mais de uma linha por correspondência
 
 Uma única linha da fatura pode corresponder a várias linhas da ordem, ou o contrário, quando suas regras de correspondência permitirem. Abra os detalhes do **+** em uma linha para inspecionar qualquer correspondência múltipla existente. Verifique a quantidade e o preço combinados, não apenas uma linha. Um painel de detalhes vazio significa que não há correspondência múltipla para inspecionar. Veja [Ferramentas de Correspondência de Ordem de Compra](purchase-order-matching-tools.md) para alterar conexões.

@@ -38,6 +38,8 @@ Acima da barra de pesquisa, selecione **30D**, **90D**, **180D**, **365D** ou **
 2. Selecione um tipo, como **Fatura**, para adicionar a sua aba. Em seguida, selecione a nova aba para filtrar a tabela por esse tipo. **Todos** remove a restrição de tipo sem excluir a aba.
 3. Para remover uma aba de tipo, selecione o **×** dela. A aba **Todos** não pode ser removida.
 
+O DocBits guarda as suas abas nas definições de utilizador, por isso voltam a estar presentes na próxima vez que abrir o dashboard. Uma aba que adicionar mantém-se até a remover.
+
 <figure><img src="../../../.gitbook/assets/dbdc167_document-type-menu_pt_20261010.png" alt="Menu de adição no painel em português mostrando Fatura como um tipo de documento disponível"><figcaption>Adicione uma aba de tipo de documento pelo menu de adição.</figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/dbdc167_invoice-tab_pt_20261010.png" alt="Aba do tipo de documento Fatura selecionada no painel em português, com o ícone de remoção visível"><figcaption>Escolha a aba para aplicar o filtro de tipo; use × para remover a aba.</figcaption></figure>

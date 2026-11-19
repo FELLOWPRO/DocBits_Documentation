@@ -12,7 +12,7 @@ Traktuj to jako zespół, którym zarządzasz, a nie narzędzie, które obsługu
 * Plan jest dzielony na **Kwestie** (pojedyncze zadania), z których każdą zajmuje się **agent Specjalista** lub **człowiek**.
 * Specjaliści raportują swoje wyniki, a Orkiestrator scala rezultat.
 
-_Agenci_, którzy wypełniają te role, nie są niezmienni: DocBits dostarcza gotowego do użycia **DocBits Orchestrator** oraz dwóch domyślnych specjalistów, a Ty możesz tworzyć własnych (zobacz [Agenci](./#agents)).
+_Agenci_, którzy wypełniają te role, nie są niezmienni: DocBits dostarcza gotowego do użycia **DocBits Orchestrator** oraz dwóch domyślnych specjalistów, a Ty możesz tworzyć własnych (zobacz [Agenci](./#agenci)).
 
 Typowy przebieg od początku do końca: faktura przychodzi pocztą e-mail → tworzona jest Misja → Orkiestrator planuje ją i rozsyła Kwestie do specjalistów (klasyfikacja, ekstrakcja, weryfikacja, dopasowanie do zamówienia zakupu) → wrażliwy krok wstrzymuje się w **Skrzynce odbiorczej**, oczekując na zatwierdzenie przez człowieka → po zatwierdzeniu dokument zostaje wyeksportowany, a Misja się kończy. Obserwujesz cały ten proces z poziomu **Panelu**, utrzymujesz powiązane przebiegi razem w **Projektach** i wkraczasz do akcji przez **Skrzynkę odbiorczą** oraz **Kwestie**, ilekroć potrzebna jest decyzja człowieka.
 
@@ -25,6 +25,47 @@ AI Workforce jest włączany dla każdej organizacji z poziomu ustawień główn
 3. Potwierdź subskrypcję w wyświetlonym oknie dialogowym.
 
 Po włączeniu **AI Workforce** pojawia się w głównym pasku nawigacyjnym, a obszar roboczy staje się dostępny dla Twojej organizacji.
+
+## Kontrola misji
+
+**Kontrola misji** to centrum dowodzenia, w którym **rozpoczynasz misje i obserwujesz je na żywo**. Otwórz ją z paska bocznego AI Workforce. Strona składa się z trzech części:
+
+<figure><img src="../../.gitbook/assets/ai-workforce-1-mission-control-pl-20261112.png" alt="Kontrola misji z kartami misji, czatem Orkiestratora i otwartym panelem Skrzynki odbiorczej"><figcaption><p>Kontrola misji: karty misji u góry, czat Orkiestratora pośrodku, panel Skrzynki odbiorczej po prawej</p></figcaption></figure>
+
+* **Karty misji** — pasek u góry pokazuje aktualnie aktywne misje wraz z ich statusem, postępem i liczbą kwestii. Kliknij kartę, aby otworzyć misję.
+* **Czat Orkiestratora** — środek strony. Opisz zwykłym językiem, co ma zostać wykonane, na przykład _„Przetwórz wszystkie faktury dostawców, które przyszły w tym tygodniu, i dopasuj je do odpowiednich zamówień zakupu”_, a następnie wybierz **Wysłać**. Orkiestrator planuje pracę i rozpoczyna misję; jego odpowiedzi widzisz w tym samym czacie.
+* **Panel Skrzynki odbiorczej** — zwijany panel po prawej stronie pokazuje oczekujące prośby o zatwierdzenie (zobacz [Skrzynka odbiorcza](./#skrzynka-odbiorcza)). Kliknij prośbę, aby ją przeczytać, i wybierz **Zatwierdzić**, **Odrzucić** lub odpowiedz agentowi; prośbę, która nie wymaga decyzji, możesz odłożyć na bok. Plakietka **Otwarta misja** prowadzi do misji, do której należy prośba (zobacz [Misje](./#misje)), a link **Wyświetl całą skrzynkę odbiorczą** otwiera pełną listę. Liczba na panelu pokazuje, ile próśb oczekuje; te same prośby pojawiają się także w sekcji **Skrzynka odbiorcza** na pasku bocznym.
+
+Aby utworzyć misję, możesz też wybrać **Nowa misja** na pasku bocznym AI Workforce — prowadzi on do tego samego czatu.
+
+## Lista agentów
+
+**Lista agentów** pokazuje wszystkich agentów w Twojej organizacji w jednym miejscu — **Router**, Twoich **Orkiestratorów** oraz wszystkich **Specjalistów** — pogrupowanych w tej kolejności (sekcje **ROUTER**, **ORKIESTRATORZY** i **AGENCI**).
+
+<figure><img src="../../.gitbook/assets/ai-workforce-2-agent-list-pl-20261112.png" alt="Lista agentów z sekcjami Router, Orkiestratorzy i Agenci, legendą System i Niestandardowy oraz przyciskiem Utwórz agenta"><figcaption><p>Lista agentów: u góry Router, następnie Orkiestratorzy, a potem Specjaliści; legenda oznacza agentów systemowych i niestandardowych</p></figcaption></figure>
+
+Każda karta pokazuje **nazwę** agenta, jego **rolę**, **umiejętności**, z których może korzystać, oraz bieżący status. Z poziomu karty możesz:
+
+* **Otworzyć agenta** — kliknij kartę, aby otworzyć pełny profil agenta ze wszystkimi [ustawieniami agenta](./#ustawienia-agenta).
+* **Włączyć lub wyłączyć** — użyj przełącznika na kartach orkiestratorów. System pozwala wyłączyć orkiestratora tylko wtedy, gdy co najmniej jeden inny orkiestrator pozostaje włączony, a przy dwóch lub więcej aktywnych orkiestratorach przekazywaniem misji zajmuje się **Router** (zobacz [Hierarchia i reguły aktywacji](./#hierarchia-i-reguly-aktywacji)).
+* **Edytować lub usunąć** — agenci niestandardowi (oznaczeni w legendzie jako **Niestandardowy**) mają menu z tymi dwiema opcjami; agentów systemowych można konfigurować, ale nie można ich usunąć.
+* **Utworzyć agenta** — przycisk **Utwórz agenta** w prawym górnym rogu uruchamia kreatora nowego agenta (zobacz [Tworzenie niestandardowych agentów](./#tworzenie-niestandardowych-agentow)).
+
+Legenda u góry pokazuje różnicę między agentami **System** i **Niestandardowy**, dzięki czemu zawsze wiesz, co dostarczył DocBits, a co zbudowałeś sam.
+
+## Działania
+
+**Działania** to dziennik tego, co wydarzyło się w Twojej AI Workforce. Każda zmiana — utworzenie misji, aktualizacja kwestii, zgłoszenie prośby o zatwierdzenie — pojawia się tutaj jako wiersz z trzema informacjami:
+
+<figure><img src="../../.gitbook/assets/ai-workforce-3-activities-pl-20261112.png" alt="Dziennik działań z polem wyszukiwania, trzema filtrami i listą ostatnich zmian"><figcaption><p>Działania: każdy wiersz pokazuje obszar, którego dotyczy zmiana, co się stało, kto to zrobił i kiedy</p></figcaption></figure>
+
+* **Obszar**, do którego należy zmiana — Skrzynka odbiorcza, Kwestie, Misje, Projekty, Agenci lub przebiegi agentów — wyświetlany jako kolorowa plakietka po lewej;
+* **Akcję**, która została wykonana — na przykład utworzenie, aktualizacja, zatwierdzenie lub odrzucenie — jako druga plakietka;
+* **Podsumowanie** zmiany, **aktora**, który ją spowodował (agenta lub osobę), oraz **czas**.
+
+Użyj **pola wyszukiwania**, aby znaleźć konkretny wpis, oraz trzech list rozwijanych nad listą — **Wszystkie podmioty**, **Wszystkie akcje** i **Wszyscy aktorzy** — aby filtrować dziennik według obszaru, akcji i aktora. Kliknij wiersz, aby przejść do powiązanego elementu — na przykład misji lub kwestii, której dotyczy wpis. W polu **Rekordy na stronę** wybierasz, ile wpisów jest wyświetlanych naraz, a strzałki w prawym dolnym rogu pozwalają przeglądać dłuższą historię.
+
+Dziennik działań odpowiada na pytanie _„co AI Workforce właśnie zrobiła i kto to zrobił?”_ — przydaje się po zatwierdzeniu, przy sprawdzaniu, dlaczego dokument został sklasyfikowany w określony sposób, oraz przy przeglądaniu, co robili Twoi niestandardowi agenci.
 
 ## Panel
 
@@ -41,7 +82,7 @@ Dostępne widżety obejmują:
 
 ## Skrzynka odbiorcza
 
-**Skrzynka odbiorcza** to miejsce, w którym praca oczekuje na **uwagę człowieka**. Gdy agent ma uruchomić narzędzie wymagające akceptacji, wstrzymuje zadanie i zgłasza tutaj **prośbę o zatwierdzenie**. To Human-in-the-Loop (HITL): działanie nie zostanie uruchomione, dopóki człowiek nie podejmie decyzji. To, czy dane narzędzie wymaga akceptacji, jest określane przez **tryb zatwierdzania** agenta oraz oznaczenia **krytyczne** jego narzędzi (zobacz [Ustawienia agenta](./#agent-settings)).
+**Skrzynka odbiorcza** to miejsce, w którym praca oczekuje na **uwagę człowieka**. Gdy agent ma uruchomić narzędzie wymagające akceptacji, wstrzymuje zadanie i zgłasza tutaj **prośbę o zatwierdzenie**. To Human-in-the-Loop (HITL): działanie nie zostanie uruchomione, dopóki człowiek nie podejmie decyzji. To, czy dane narzędzie wymaga akceptacji, jest określane przez **tryb zatwierdzania** agenta oraz oznaczenia **krytyczne** jego narzędzi (zobacz [Ustawienia agenta](./#ustawienia-agenta)).
 
 Każdy element Skrzynki odbiorczej pokazuje tytuł prośby, agenta, który ją zgłosił, oraz krótki opis tego, co wymaga decyzji. Z poziomu elementu możesz:
 
@@ -56,7 +97,7 @@ Elementy pozostają w stanie **Oczekujące**, dopóki ktoś nie podejmie działa
 
 **Misja** to nadrzędna jednostka pracy oraz przebieg agenta dążący do osiągnięcia jednego celu. Każda misja może obejmować wiele zadań i jest koordynowana przez **agenta Orkiestratora**, który planuje pracę, deleguje ją jako Kwestie do specjalistów, obserwuje wyniki i scala rezultat.
 
-Misja jest tworzona z jej **źródła** — E-mail, Czat (Microsoft Teams lub Discord), Mission Control (ręcznie) lub API — i niesie ten kontekst przez całe swoje życie. Możesz sam ją rozpocząć z poziomu **Mission Control**, opisując zwykłym językiem, co ma zostać wykonane; dalej sprawą zajmuje się Orkiestrator.
+Misja jest tworzona z jej **źródła** — E-mail, Czat (Microsoft Teams lub Discord), Kontrola misji (ręcznie) lub API — i niesie ten kontekst przez całe swoje życie. Możesz sam ją rozpocząć z poziomu **Kontroli misji**, opisując zwykłym językiem, co ma zostać wykonane; dalej sprawą zajmuje się Orkiestrator.
 
 Misje przechodzą przez następujące statusy:
 
@@ -125,7 +166,7 @@ Każdy agent — systemowy lub niestandardowy — ma menu ustawień z następuj�
   * **Średni** _(domyślny)_ — zrównoważona jakość i koszt.
   * **Wysoki** — pogłębione rozumowanie do trudniejszych zadań; wyższy koszt.
   * **Bardzo wysoki** — maksymalne rozumowanie; najwyższy koszt.
-* **Tryb zatwierdzania** — jaka część pracy agenta wymaga akceptacji człowieka w [Skrzynce odbiorczej](./#inbox):
+* **Tryb zatwierdzania** — jaka część pracy agenta wymaga akceptacji człowieka w [Skrzynce odbiorczej](./#skrzynka-odbiorcza):
   * **Brak** — agent uruchamia każde narzędzie automatycznie; nic nie jest wysyłane do zatwierdzenia.
   * **Krytyczne** _(domyślne)_ — akceptacji wymagają tylko narzędzia oznaczone jako **krytyczne**; wszystko inne uruchamia się automatycznie. Narzędzia krytyczne to wrażliwe działania zapisujące/zewnętrzne (na przykład _przesłanie/import dokumentu_, _aktualizacja pól dokumentu_, _odpowiedź na e-mail_, _wysłanie powiadomienia_). W tym trybie narzędzie krytyczne **zawsze** zgłasza prośbę o zatwierdzenie w Skrzynce odbiorczej. Możesz precyzyjnie dostosować poszczególne narzędzia (oznaczyć zwykle bezpieczne narzędzie jako wymagające zatwierdzenia lub zdjąć to oznaczenie z krytycznego) — te nadpisania na poziomie narzędzia obowiązują tylko w trybie Krytyczne.
   * **Wszystkie** — każde narzędzie uruchamiane przez agenta wymaga zatwierdzenia.

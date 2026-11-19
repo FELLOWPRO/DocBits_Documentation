@@ -38,6 +38,8 @@ Boven de zoekbalk selecteer je **30D**, **90D**, **180D**, **365D** of **Alle** 
 2. Selecteer een type, bijvoorbeeld **Factuur**, om het tabblad toe te voegen. Selecteer daarna het nieuwe tabblad om de tabel tot dat type te beperken. **Alle** verwijdert de typebeperking zonder het tabblad te verwijderen.
 3. Om een typetabblad te verwijderen, selecteer je de **×**. Het tabblad **Alle** kan niet worden verwijderd.
 
+DocBits bewaart uw tabbladen in uw gebruikersinstellingen, zodat ze er bij het volgende openen van het dashboard weer zijn. Een toegevoegd tabblad blijft staan tot u het verwijdert.
+
 <figure><img src="../../../.gitbook/assets/dbdc167-filtering-document-type-menu-nl-20261011.png" alt="Menu met plusteken op het Dashboard in het Nederlands met Factuur als beschikbaar documenttype"><figcaption><p>Voeg een typetabblad toe via het menu met het plusteken.</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/dbdc167-filtering-invoice-tab-nl-20261011.png" alt="Tabblad documenttype Factuur geselecteerd op het Dashboard in het Nederlands, met het verwijderpictogram zichtbaar"><figcaption><p>Kies het tabblad om het typefilter toe te passen; gebruik × om het tabblad te verwijderen.</p></figcaption></figure>

@@ -20,6 +20,8 @@ Touchless Intelligence laat je zien **waarom** een PO-match mislukte en **hoe** 
 | **Document Trace**                                                                          | De fase **PO Line Match** met de status **blocked** en de reden                                                                                                                 |
 | **Settings → Document Types → More Settings → Purchase Order**                              | De matchingregels zelf. Zie [Purchase Order Matching Rules](../../settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)      |
 
+Op het releasekanaal **Nova** is de eerste rij het paneel **Why documents are not touchless**. Klap daar het gebied PO matching open om de redenen met hun documentaantallen te lezen; de hierboven genoemde staafgrafiek blijft op **Vesta**.
+
 ## De twee PO-fasen
 
 | Fase                   | Vraag                                         | Stopt met                                                                                                             |

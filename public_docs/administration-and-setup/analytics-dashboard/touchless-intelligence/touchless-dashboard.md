@@ -54,6 +54,17 @@ Een staafdiagram van **geblokkeerde documenten** per pipelinefase: de **eerste**
 
 **Voorbeeld.** Staven: Supplier Identification 12, Field Validation 41, PO Line Match 7. De grootste staaf zegt dat u eerst naar **Field Validation** moet kijken. Een ontbrekende geëxtraheerde waarde is één mogelijke oorzaak; vergelijk de originele factuur, veldregels en beschikbare brongegevens voordat u die bevestigt.
 
+#### Waarom documenten niet touchless zijn (Nova-releasekanaal)
+
+Organisaties op het releasekanaal **Nova** zien dezelfde vraag beantwoord door een uitklapbare lijst in plaats van de staafgrafiek. Het paneel heet **Why documents are not touchless** en staat naast **Touchless rate over time**.
+
+* De kopregel noemt hoeveel documenten de lijst dekt. Elke rij is een gebied van de eerste blokkade met zijn aandeel in procenten, het aantal documenten en een staaf. De rijen komen gesorteerd van groot naar klein.
+* Klik op een rij om de redenen ter plaatse te openen. De redenen houden hun eigen documentaantallen, zodat u ziet welke oorzaak binnen een gebied het meest kost. Er is steeds één gebied open; klik er opnieuw op om het te sluiten.
+* De lijst komt uit dezelfde rapportgegevens als de kerncijfers. Getallen worden niet in de browser herberekend, dus een totaal in de kopregel en de rijen komen altijd overeen.
+* Als uw installatie deze gegevens nog niet levert, zegt het paneel dat in plaats van **0** te tonen. Een lege lijst met de tekst voor "niets vastgelegd" betekent dat er in de periode geen documenten verloren zijn gegaan; de twee toestanden zijn verschillend en u moet de eerste niet als goed nieuws lezen.
+
+Het releasekanaal **Vesta** houdt de hierboven beschreven staafgrafiek. Toont uw pagina staven, dan zit u op Vesta; toont zij de uitklapbare lijst, dan zit u op Nova. Beide beantwoorden dezelfde vraag, dus de rest van deze pagina geldt in beide gevallen.
+
 ### Leverancierskansen
 
 <figure><img src="../../../.gitbook/assets/touchless-supplier-queue-nl.png" alt="De tabel Supplier opportunities met volume, puur percentage, verloren documenten, hoofdoorzaak, herstelbare documenten, verwachte stijging, betrouwbaarheid en status"><figcaption><p>De leverancierswachtrij (verkort tot de eerste vier rijen). De eerste leverancier heeft 106 documenten, een puur percentage van 38,7 % en 65 herstelbare documenten, dus het aanpakken ervan is <strong>+21 pp</strong> waard. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
@@ -101,7 +112,7 @@ Terwijl de analyse loopt, ziet u per cluster **Queued**, **Running**, **Done**, 
 
 1. **Wekelijks**: open het tabblad en controleer het **percentage** en de **trend** ten opzichte van het doel.
 2. Kijk naar **Diagnosis coverage**. Onder ongeveer 80 % zoekt u eerst uit waarom documenten stoppen.
-3. Lees **Waar touchless het eerst verloren gaat** en kies de grootste fase.
+3. Lees **Where touchless is lost first** (Vesta) of **Why documents are not touchless** (Nova) en kies de grootste fase of het grootste gebied.
 4. Open **Leverancierskansen**. Sorteer op **Expected lift** en neem de bovenste leverancier met de status **RECOVERABLE**.
 5. Lees de **probleemclusters**, controleer **Missing evidence** en volg daarna **What to change**.
 6. Herstel één bevestigde oorzaak. Gebruik voor een ondersteund DocBits-voorstel de voorvertoning en de wijzigingshistorie. Leg voor een Infor-correctie de bron vast en importeer apart; dat maakt niet automatisch een registratie van een instellingswijziging in DocBits aan.

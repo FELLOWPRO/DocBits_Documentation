@@ -10,7 +10,7 @@ De kaart **Validation Setup** toont uw huidige validatieprofiel (bijvoorbeeld *B
 
 ## Geaccepteerde XRechnung-versies
 
-De acceptatiecontrole **Accepted XRechnung versions** somt elke XRechnung-versie op. Vink de versies aan die u accepteert — documenten waarvan de CustomizationID buiten deze lijst valt, worden vóór elke andere controle afgewezen met `VAL-VERSION-NOT-ALLOWED`. Een lege lijst betekent "alles accepteren". Elke versie is gemarkeerd met **current**, **deprecated** of **EOL** samen met de releasedatum.
+De acceptatiecontrole **Accepted XRechnung versions** somt elke XRechnung-versie op. Vink de versies aan die u accepteert — documenten waarvan de CustomizationID buiten deze lijst valt, worden vóór elke andere controle afgewezen met `VAL-VERSION-NOT-ALLOWED`. Als geen enkele versie is aangevinkt, staat de controle uit en wordt elke versie geaccepteerd. Elke versie is gemarkeerd met **current**, **deprecated** of **EOL** samen met de releasedatum.
 
 ## Geaccepteerde profielen en het ernstmodel
 

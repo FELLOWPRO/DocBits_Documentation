@@ -38,6 +38,8 @@ Sopra la barra di ricerca, seleziona **30D**, **90D**, **180D**, **365D** o **Tu
 2. Seleziona un tipo, ad esempio **Fattura**, per aggiungere la sua scheda. Poi seleziona la nuova scheda per filtrare la tabella su quel tipo. **Tutti** rimuove la restrizione del tipo senza eliminare la scheda.
 3. Per rimuovere una scheda di tipo, seleziona la sua **×**. La scheda **Tutti** non può essere rimossa.
 
+DocBits salva le tue schede nelle impostazioni utente, quindi sono di nuovo presenti alla successiva apertura della dashboard. Una scheda aggiunta resta finché non la rimuovi.
+
 <figure><img src="../../../.gitbook/assets/dbdc167-filtering-document-type-menu-it-20261011.png" alt="Menu più del Cruscotto in italiano con Fattura tra i tipi di documento disponibili"><figcaption><p>Aggiungi una scheda di tipo di documento dal menu più.</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/dbdc167-filtering-invoice-tab-it-20261011.png" alt="Scheda del tipo di documento Fattura selezionata nel Cruscotto in italiano con l'icona di rimozione visibile"><figcaption><p>Scegli la scheda per applicare il filtro di tipo; usa × per rimuovere la scheda.</p></figcaption></figure>

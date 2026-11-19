@@ -370,7 +370,7 @@ Questo file è responsabile dell'estrazione dei dati da un file XML Peppol BIS B
    * **Mappato su**: `<INVOICE><BUYER_REFERENCE>`
    * **Può apparire più volte**: No.
 
-2)  **Riferimento di fatturazione**
+2. **Billing Reference**
 
     * **Sorgente**: `//BillingReference`
     * **Mappato su**: `<INVOICE><BILLING_REFERENCE>`

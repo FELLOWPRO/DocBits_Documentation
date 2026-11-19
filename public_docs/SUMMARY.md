@@ -499,7 +499,7 @@
           * [Exportar líneas de PO no coincidentes](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/export-not-matched-po-lines.md)
           * [Ajuste de tolerancias de órdenes de compra / Tolerancia adicional de órdenes de compra](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md)
           * [Exportación alternativa](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/alternate-export.md)
-          * [Estados de pedidos excluidos de la conciliación](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md)
+          * [Estados de pedido desactivados para la conciliación](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md)
           * [Actualizar Estado de Orden de Compra de Documentos](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/update-document-purchase-order-status.md)
           * [Mapa de Números de Artículos de Proveedores - Documentación para Administradores](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/supplier-item-number-map-admin-documentation.md)
     * [Notificación por correo electrónico](administration-and-setup/settings/global-settings/email-notification/README.md)

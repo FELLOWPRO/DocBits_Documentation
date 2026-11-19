@@ -1,15 +1,15 @@
 # Klucz API
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-pl.png" alt="Panel Klucze API z przyciskiem Utwórz klucz API, kolumnami listy i przykładowymi kluczami z widocznym przedrostkiem oraz zamaskowaną dalszą częścią."><figcaption><p>Ustawienia → Integracja i SSO → Klucz API. Przykładowe klucze mają widoczny przedrostek i zamaskowaną dalszą część.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-key-settings-page-pl-20261111.png" alt="Panel Klucze API z przyciskiem Utwórz klucz API, kolumnami Klucz, Nazwa, Wygasa, Ostatnio Używany, Status i Akcje oraz trzema przykładowymi kluczami, których widoczny jest tylko przedrostek"><figcaption><p>Ustawienia → Integracja i SSO → Klucz API. Przykładowe klucze mają widoczny przedrostek, dalsza część klucza jest zamaskowana.</p></figcaption></figure>
 
 Sekcja **Klucz API** na górze strony Integracja i SSO wymienia wszystkie klucze API utworzone przez Twoją organizację. Klucz API pozwala innemu systemowi — Twojemu ERP, skryptowi albo aplikacji partnera — uzyskać dostęp do DocBits bez logowania użytkownika. Instrukcje krok po kroku znajdziesz w sekcji [Zarządzanie Kluczami API](api-key-management.md).
 
 ### Lista kluczy API
 
-* **Klawisz:** Kilka pierwszych znaków klucza, po których następuje `****`. Pełny klucz jest pokazywany tylko raz, w momencie utworzenia, więc nie można go później ponownie wyświetlić. Ikona kopiowania obok klucza kopiuje widoczny przedrostek do schowka.
+* **Klucz:** Kilka pierwszych znaków klucza, po których następuje `****`. Pełny klucz jest pokazywany tylko raz, w momencie utworzenia, więc nie można go później ponownie wyświetlić. Ikona kopiowania obok klucza kopiuje widoczny przedrostek do schowka.
 * **Nazwa / Wygasa / Ostatnio Używany / Status:** Każdy wiersz pokazuje nazwę klucza, datę, po której klucz przestaje działać, moment ostatniego użycia klucza przez żądanie oraz informację, czy klucz jest nadal aktywny.
 * **Utwórz klucz API:** Otwiera okno dialogowe tworzenia nowego klucza dla integracji. Opis pól i jednorazowe wyświetlenie klucza znajdziesz w sekcji [Zarządzanie Kluczami API](api-key-management.md).
-* **Actions (menu z trzema kropkami):** Otwiera działania dostępne dla klucza, w których możesz edytować jego nazwę, odwołać go albo usunąć klucz już odwołany. Odwołanie wyłącza klucz na stałe.
+* **Akcje (menu z trzema kropkami):** Otwiera działania dostępne dla klucza, w których możesz edytować jego nazwę, odwołać go albo usunąć klucz już odwołany. Odwołanie wyłącza klucz na stałe.
 
 ### Ustawienia dostawcy usług SSO (logowanie jednokrotne)
 
@@ -23,7 +23,7 @@ Są to wartości, których Twój dostawca tożsamości potrzebuje, aby użytkown
 
 ### Ustawienia dostawcy usług tożsamości
 
-Skonfiguruj DocBits tak, aby do logowania używał Twojego zewnętrznego dostawcy tożsamości (IdP). Pełny przewodnik, na razie tylko w języku angielskim, znajdziesz tutaj: [Identity Service Provider Configuration](https://docs.docbits.com/administration-and-setup/settings/global-settings/integration/identity-service-provider-configuration).
+Skonfiguruj DocBits tak, aby do logowania używał Twojego zewnętrznego dostawcy tożsamości (IdP). Pełny przewodnik znajdziesz w sekcji [Konfiguracja dostawcy tożsamości (Identity Service Provider)](identity-service-provider-configuration.md).
 
 * **ID najemcy:** Identyfikator najemcy Twojego dostawcy tożsamości, używany, gdy DocBits integruje się z usługami chmurowymi zarządzającymi dostępem w podziale na najemców.
 * **Prześlij plik:** Wybierz plik XML z metadanymi otrzymany od dostawcy tożsamości.

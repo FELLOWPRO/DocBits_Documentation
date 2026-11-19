@@ -1,147 +1,68 @@
-# Configurazione dei Dati Fuzzy con i Dati Principali
+# Configurazione dei dati fuzzy con i dati master
 
-## **Panoramica**
+Usa una ricerca sui dati master per riconoscere un fornitore dai valori presenti in una fattura. La ricerca cerca in un set di dati importato e può compilare i campi fornitore del documento. Configura ogni tipo di documento separatamente. L'esempio qui usa **INVOICE** nell'organizzazione di esempio **Musterfirma GmbH**.
 
-Ogni tipo di documento ha le proprie configurazioni predefinite e deve essere impostato separatamente. Mentre questo esempio spiega la configurazione per le **Fatture**, lo stesso processo si applica a tutti i tipi di documenti.
+## Aprire le impostazioni di ricerca
 
-## Per configurare i Dati Fuzzy, vai a:
+1. Apri **Impostazioni → Elaborazione documenti → Tipi di Documento**.
+2. Seleziona **INVOICE → Campi → Impostazioni dei dati master**.
+3. Espandi **Ricerca di dati anagrafici**. Nell'esempio l'organizzazione mostra le configurazioni **Supplier Lookup**, **Order Header Lookup** e **Order Line Lookup**, più la sezione separata **Dati anagrafici LOV**. I nomi sono dati di esempio; la tua organizzazione può avere altre configurazioni.
 
-Impostazioni → Impostazioni Globali → Tipi di Documento → Fattura → Campi → Impostazioni Dati Principali → Ricerca Dati Principali
+<figure><img src="../../../.gitbook/assets/fuzzy-data-lookup-overview-it-20261113.png" alt="Impostazioni dei dati master della fattura in italiano con tre configurazioni di ricerca attive, la sezione Dati anagrafici LOV e il pulsante Creare una configurazione di ricerca; i nomi sono dati di esempio"><figcaption><p>Seleziona una configurazione di ricerca per vedere i suoi campi oppure scegli Creare una configurazione di ricerca per crearne una nuova.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fhnn2NcPGzVkUO0mLQWTy%252Fimage.png%3Falt%3Dmedia%26token%3De2f87385-fc48-4149-9bef-ca917a7328bd\&width=768\&dpr=4\&quality=100\&sign=116ee1da\&sv=2)
+Il tag **Attivo** indica che una configurazione è abilitata. Il menu a tre punti mostra le azioni disponibili per quella configurazione; nell'esempio di un gruppo predefinito sono **Disattivare**, **Duplicato** e **Vista**. Le configurazioni predefinite possono essere visualizzate ma non modificate né eliminate; una configurazione personalizzata offre più azioni. Non disattivare una ricerca prima di aver verificato quali campi del documento dipendono da essa.
 
-## **Ricerche Predefinite**
+{% hint style="info" %}
+I dati master del fornitore devono essere importati prima che una ricerca possa trovarli. Vedi [Importare i dati master](../../../infor-integration-and-configuration/importing-customer-master-data/README.md) e [Impostazioni dei dati master](../../settings/global-settings/document-types/fields/master-data-settings.md) per la configurazione generale.
+{% endhint %}
 
-Ci sono **quattro gruppi di ricerca predefiniti** per le fatture:
+## Creare una configurazione di ricerca
 
-1. **Dati Aziendali**
-2. **Intestazione Ordine di Acquisto**
-3. **Fornitore**
-4. **Codice Fiscale**
+Seleziona **Creare una configurazione di ricerca**. Inserisci un nome in **Cerca nome**, scegli un **Nome del set di dati di ricerca** e imposta **Tipo di contesto** su **HEADER** per i campi del documento o su **LINE** per una tabella. Per **LINE** scegli anche la tabella pertinente in **Dettaglio del contesto**. Imposta **Gestore dei conflitti** per decidere cosa succede quando più record corrispondono. **Abbina tutti** richiede che ogni campo di ricerca usato corrisponda allo stesso record; se è disattivato, può bastare un solo campo corrispondente.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F4VxYFu8M62dXi6qGsPl3%252Fimage.png%3Falt%3Dmedia%26token%3Db2bc4690-805b-4b19-aa89-73f315889d88\&width=768\&dpr=4\&quality=100\&sign=835f513a\&sv=2)
+<figure><img src="../../../.gitbook/assets/fuzzy-data-create-lookup-it-20261113.png" alt="Finestra Creare la configurazione dei dati master in italiano con Tipo di documento INVOICE, il nome di esempio supplier_by_tax_id, Gestore dei conflitti Best Score, Tipo di contesto HEADER e Abbina tutti disattivato"><figcaption><p>La finestra è stata aperta solo a scopo di documentazione: il nome supplier_by_tax_id è un esempio inventato e nessuna configurazione è stata creata.</p></figcaption></figure>
 
-Ogni gruppo contiene campi specifici. Clicca su un gruppo per **espanderlo** e visualizzare i campi. I gruppi di ricerca predefiniti sono contrassegnati con un tag **"Predefinito"**.
+Le scelte per i conflitti sono **Best Score**, **Return None** e **Return First**. Usa **Return None** quando una persona deve decidere tra fornitori ambigui; leggi gli esempi più sotto prima di scegliere **Best Score** o **Abbina tutti**.
 
-## **Stato Configurazione Ricerca**
+## Scegliere i campi per il riconoscimento del fornitore
 
-* Le **configurazioni attive** sono contrassegnate con un tag **"Attivato"**.
-* Le **configurazioni disattivate** sono contrassegnate con un tag **"Disattivato"**.
+Espandi **Supplier Lookup** per vedere le sue mappature. La tabella mostra il **Campo di ricerca** del set di dati, il suo **Campo di convalida** sul documento, il **Campo genitore** facoltativo e se **Ricercabile** o **Trigger automatico** sono attivi. Nell'esempio **Supplier Name** è sia ricercabile sia trigger automatico, **Vat Number** è solo ricercabile e **City** non ha alcun flag; in un'altra organizzazione i flag possono essere diversi. I nomi delle righe sono dati di esempio.
 
-## **Prerequisito: Importare i Dati Principali**
+<figure><img src="../../../.gitbook/assets/fuzzy-data-supplier-fields-it-20261113.png" alt="Gruppo Supplier Lookup espanso in italiano con le colonne Campo di ricerca, Campo di convalida, Campo genitore, Ricercabile e Trigger automatico e tre righe di esempio"><figcaption><p>Controlla quali campi possono partecipare al riconoscimento del fornitore prima di cambiare la regola di corrispondenza.</p></figcaption></figure>
 
-Per far funzionare correttamente i Dati Fuzzy, è necessario importare i **dati principali** pertinenti. Senza questo, il sistema non ha dati di riferimento da utilizzare. Ecco come importare i dati principali:
+Per aggiungere una mappatura, seleziona **Creare** all'interno del gruppo espanso, poi scegli **Campo di ricerca**, **Campo di convalida**, l'eventuale **Campo genitore** e l'**Operatore di ricerca**. L'operatore determina come viene confrontato il testo: usa **Esatto** per un identificativo rigoroso e valuta **Smart** o **Contiene** solo quando deve corrispondere una parte del testo. **Trigger automatico** avvia una ricerca dopo che quel campo del documento riceve un valore. **Ricercabile** include il campo nella ricerca e rende disponibile la ricerca manuale durante la convalida. Seleziona **Creare** solo dopo aver controllato la mappatura.
 
-{% content-ref url="../../../infor-integration-and-configuration/importing-customer-master-data/" %}
-[importing-customer-master-data](../../../infor-integration-and-configuration/importing-customer-master-data/)
-{% endcontent-ref %}
+<figure><img src="../../../.gitbook/assets/fuzzy-data-create-field-it-20261113.png" alt="Finestra Creare campi di dati master in italiano con Campo di ricerca Supplier Name, Campo di convalida Invoice date, Campo genitore e Operatore di ricerca vuoti e le caselle Trigger automatico e Ricercabile non selezionate"><figcaption><p>Il modulo mostra selezioni di esempio (Supplier Name e Invoice date) ed è stato solo ispezionato: nessun campo è stato salvato.</p></figcaption></figure>
 
-## **Gestione dei Gruppi di Ricerca**
+Il testo che segue spiega come interagiscono questi flag, Abbina tutti e il gestore dei conflitti. Per questa verifica della documentazione non è stato generato alcun risultato reale di riconoscimento del fornitore.
 
-Ogni gruppo di ricerca è **attivato per impostazione predefinita** ma può essere modificato cliccando sui tre punti:
+### Come DocBits sceglie un fornitore
 
-* **Disattiva** → Disattiva un gruppo. _(Disponibile solo per i gruppi attivati)_
-* **Attiva** → Attiva un gruppo. _(Disponibile solo per i gruppi disattivati)_
-* **Duplica** → Crea una copia che può essere modificata senza influenzare l'originale.
-* **Visualizza** → Mostra informazioni come il **tipo di documento** a cui appartiene e la **tabella di ricerca** che utilizza. _(Disponibile solo per i gruppi predefiniti)_
-* **Modifica** → Disponibile per i gruppi **non predefiniti**. Consente di modificare i dettagli del gruppo.
-* **Elimina** → Rimuove completamente il gruppo. _(Solo per i gruppi non predefiniti)_
+Quando arriva un documento, DocBits cerca il fornitore nei dati master. Tre impostazioni determinano il risultato. Questa sezione le spiega passo per passo, con esempi.
 
-## **Creazione di una Nuova Configurazione di Ricerca**
-
-Ci sono **due modi** per creare una configurazione di ricerca:
-
-1.  **Duplica una ricerca esistente**
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZUlPcWGrx1oITQS3tgZP%252Fimage.png%3Falt%3Dmedia%26token%3D59fb300d-836e-40d0-84b7-4a405cf7f321\&width=768\&dpr=4\&quality=100\&sign=3442db8f\&sv=2)
-
-    * Questo copia tutte le informazioni e i campi da un gruppo esistente.
-    * È sufficiente fornire un **nuovo nome**.
-2.  **Crea una ricerca da zero**
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNbEpo2p5Q8D1d7DUchBF%252Fimage.png%3Falt%3Dmedia%26token%3D401314b5-44d0-47df-b3e6-69fea83cce82\&width=768\&dpr=4\&quality=100\&sign=1d0ce322\&sv=2)
-
-    * Clicca su **"Crea Configurazione di Ricerca"**.
-    * Compila i dettagli richiesti:
-      * **Nome Configurazione**
-      * **Tabella di Ricerca** (Tabella Dati Principali da utilizzare)
-      * **Gestore Conflitti** (Scegli uno: Miglior Punteggio, Nessun Risultato, Primo Risultato)
-      * **Tipo Contesto** (Intestazione o Riga) necessita contesto
-      * **Corrispondenza Totale** (Opzione casella di controllo) necessita contesto
-
-## **Gestione dei Campi All'interno di un Gruppo di Ricerca**
-
-Ogni gruppo contiene campi che possono essere **aggiunti, rimossi, modificati o visualizzati**, a seconda che siano campi predefiniti o campi personalizzati.
-
-### **Campi Predefiniti**
-
-*   Contrassegnati con un tag **"Predefinito"**.
-
-    <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fh37McVpB0tBo5wqiAttR%252Fimage.png%3Falt%3Dmedia%26token%3Dcabce083-83a5-4881-a64f-88a8757df49b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b3739019&#x26;sv=2" alt="" width="375"></div>
-* **Possono essere solo visualizzati**, non modificati o eliminati.
-
-### **Campi Non Predefiniti**
-
-* **Possono essere modificati o eliminati** cliccando sui tre punti e selezionando **Modifica** o **Rimuovi**.
-
-### **Aggiunta di un Nuovo Campo**
-
-**Nota:** Puoi creare campi all'interno di configurazioni di ricerca predefinite.
-
-Per aggiungere un nuovo campo all'interno di un gruppo:
-
-1.  Clicca su **"Crea"** all'interno del gruppo pertinente.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FvmIXTEQQHKKNbvTJj1b4%252Fimage.png%3Falt%3Dmedia%26token%3D8569867b-9f5b-4865-90bd-f2e41e846979\&width=768\&dpr=4\&quality=100\&sign=603cb7df\&sv=2)
-2. Fornisci i seguenti dettagli:
-   * **Campo di Ricerca** → Nome colonna dalla tabella di ricerca dei dati principali.
-   * **Campo di Convalida** → Campo DocBits corrispondente.
-   * **Campo Genitore** → _(Ulteriori dettagli necessari)_
-   * **Operatore di Ricerca** → Scegli uno:
-     * Smart
-     * Contiene
-     * Esatto
-     * Inizia con
-     * Termina con
-   * **Caselle di Controllo:**
-     * **Attivazione Automatica** → Quando abilitato, se un altro campo in una diversa configurazione di ricerca condivide la stessa colonna, questo campo si aggiornerà **automaticamente** ogni volta che l'altro campo viene aggiornato
-     * **Ricercabile** → Abilita il campo come campo **Dati Fuzzy**, consentendo ricerche nella ricerca dei dati principali (icona blu nella schermata di convalida).
-
-## **Passo Finale: Aggiungere i Campi al Layout**
-
-Dopo aver configurato i campi dei Dati Fuzzy, **assicurati di aggiungerli al layout utilizzando il Generatore di Layout**. Se i campi non vengono aggiunti al layout, non saranno disponibili per l'uso.
-
-{% content-ref url="../../settings/global-settings/document-types/layout-manager/" %}
-[layout-manager](../../settings/global-settings/document-types/layout-manager/)
-{% endcontent-ref %}
-
-## **Come DocBits sceglie un fornitore**
-
-Quando arriva un documento, DocBits cerca il fornitore nei dati principali. Tre impostazioni determinano il risultato. Questa sezione le spiega passo per passo, con esempi.
-
-### **Passo 1 — Quali campi vengono usati per la ricerca**
+#### Passo 1 — Quali campi vengono usati per la ricerca
 
 DocBits usa un campo per la ricerca solo quando entrambi i punti sono veri:
 
-* il campo è contrassegnato come **Ricercabile (Searchable)** o **Auto Trigger** nella configurazione di ricerca, e
+* il campo è contrassegnato come **Ricercabile** o **Trigger automatico** nella configurazione di ricerca, e
 * il campo ha un valore sul documento.
 
 Non importa come il valore sia arrivato nel campo. Un campo addestrato, un campo compilato dall'IA e un valore digitato da un utente vengono trattati allo stesso modo.
 
 {% hint style="warning" %}
-**Ricercabile fa due cose.** Mostra l'icona blu di ricerca nella schermata di validazione **e** aggiunge il campo alla ricerca automatica del fornitore. Un campo che deve essere cercato solo a mano resta non contrassegnato.
+**Ricercabile fa due cose.** Mostra l'icona blu di ricerca nella schermata di convalida **e** aggiunge il campo alla ricerca automatica del fornitore. Un campo che deve essere cercato solo a mano resta non contrassegnato.
 {% endhint %}
 
-### **Passo 2 — Una ricerca, non una ricerca per campo**
+#### Passo 2 — Una ricerca, non una ricerca per campo
 
-DocBits **non** cerca ogni campo separatamente. Costruisce **una** ricerca su tutti i campi usati. **Corrispondenza totale (Match All)** decide come vengono combinati:
+DocBits **non** cerca ogni campo separatamente. Costruisce **una** ricerca su tutti i campi usati. **Abbina tutti** decide come vengono combinati:
 
-* **Corrispondenza totale disattivata** (predefinito) → "trova ogni fornitore che corrisponde alla partita IVA **O** al nome del fornitore". Questo dà un elenco **più lungo**.
-* **Corrispondenza totale attivata** → "trova ogni fornitore che corrisponde alla partita IVA **E** al nome del fornitore". Questo dà un elenco **più corto**.
+* **Abbina tutti disattivato** (predefinito) → "trova ogni fornitore che corrisponde alla partita IVA **o** al nome del fornitore". Questo dà un elenco **più lungo**.
+* **Abbina tutti attivato** → "trova ogni fornitore che corrisponde alla partita IVA **e** al nome del fornitore". Questo dà un elenco **più corto**.
 
-Tenga presente che gli operatori **Smart** e **Contains** cercano una parte del testo. Il nome "Meier" trova anche "Meier Bau GmbH" e "Meier & Sons Ltd". Un nome di fornitore trova quindi spesso più fornitori.
+Tieni presente che gli operatori **Smart** e **Contiene** cercano una parte del testo. Il nome "Meier" trova anche "Meier Bau GmbH" e "Meier & Sons Ltd". Un nome di fornitore trova quindi spesso più fornitori.
 
-### **Passo 3 — Cosa succede quando l'elenco contiene più fornitori**
+#### Passo 3 — Cosa succede quando l'elenco contiene più fornitori
 
 Il **Gestore dei conflitti** decide:
 
@@ -149,11 +70,11 @@ Il **Gestore dei conflitti** decide:
 * **Return None** → lascia il fornitore vuoto, così un utente lo sceglie.
 * **Return First** → prende il primo fornitore dell'elenco.
 
-### **Esempi**
+#### Esempi
 
 In tutti gli esempi il documento ha una partita IVA e un nome di fornitore, ed entrambi i campi sono **Ricercabili**.
 
-<table><thead><tr><th width="150">La partita IVA trova</th><th width="150">Il nome trova</th><th width="150">Corrispondenza totale disattivata + Return None</th><th width="150">Corrispondenza totale attivata + Return None</th><th width="150">Corrispondenza totale disattivata + Best Score</th></tr></thead><tbody>
+<table><thead><tr><th width="150">La partita IVA trova</th><th width="150">Il nome trova</th><th width="150">Abbina tutti disattivato + Return None</th><th width="150">Abbina tutti attivato + Return None</th><th width="150">Abbina tutti disattivato + Best Score</th></tr></thead><tbody>
 <tr><td>solo A</td><td>A e B</td><td>vuoto</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
 <tr><td>A e B</td><td>solo B</td><td>vuoto</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
 <tr><td>A, B e C</td><td>C, D e E</td><td>vuoto</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
@@ -163,21 +84,27 @@ In tutti gli esempi il documento ha una partita IVA e un nome di fornitore, ed e
 
 Come leggere la tabella:
 
-* **Le righe da 1 a 3** sono il caso normale. Un campo è univoco, l'altro no. Con **Corrispondenza totale disattivata** l'elenco contiene più fornitori e **Return None** lascia il campo vuoto. **Corrispondenza totale attivata** conserva solo il fornitore che corrisponde a entrambi i campi e lo trova.
+* **Le righe da 1 a 3** sono il caso normale. Un campo è univoco, l'altro no. Con **Abbina tutti disattivato** l'elenco contiene più fornitori e **Return None** lascia il campo vuoto. **Abbina tutti attivato** conserva solo il fornitore che corrisponde a entrambi i campi e lo trova.
 * **La riga 4** non ha alcun fornitore univoco. Lasciare il campo vuoto è corretto. **Best Score** ne sceglie comunque uno, che può essere quello sbagliato.
-* **La riga 5** è il rischio di **Corrispondenza totale attivata**. Vedere l'avviso qui sotto.
+* **La riga 5** è il rischio di **Abbina tutti attivato**. Vedi l'avviso qui sotto.
 
 {% hint style="warning" %}
-**La corrispondenza totale può perdere un fornitore.** Con **Corrispondenza totale attivata** ogni campo usato deve corrispondere. Se un campo contiene un valore che non esiste nei dati principali — un errore di battitura, un vecchio nome dell'azienda, un valore letto dalla pagina — l'intera ricerca non restituisce nulla e non viene trovato alcun fornitore, anche se la sola partita IVA avrebbe trovato quello giusto.
+**Abbina tutti può perdere un fornitore.** Con **Abbina tutti attivato** ogni campo usato deve corrispondere. Se un campo contiene un valore che non esiste nei tuoi dati master — un errore di battitura, un vecchio nome dell'azienda, un valore letto dalla pagina — l'intera ricerca non restituisce nulla e non viene trovato alcun fornitore, anche se la sola partita IVA avrebbe trovato quello giusto.
 {% endhint %}
 
-### **Un fornitore veniva riconosciuto prima e ora non viene più riconosciuto**
+#### Un fornitore veniva riconosciuto prima e ora non viene più riconosciuto
 
-Quasi sempre un campo in più fornisce ora un valore. Controlli in questo ordine:
+Quasi sempre un campo in più ha iniziato a fornire un valore. Controlla in questo ordine:
 
-1. Apra il documento. Quale campo del gruppo di ricerca contiene ora un valore che prima era vuoto?
-2. Apra la configurazione di ricerca. Quel campo è contrassegnato come **Ricercabile** o **Auto Trigger**? Se sì, ora partecipa alla ricerca e allunga l'elenco dei risultati.
-3. Scelga una delle tre soluzioni:
-   * **Il campo non deve partecipare alla ricerca** → tolga **Ricercabile** e **Auto Trigger** da quel campo. Il campo mantiene il suo valore sul documento e resta visibile all'utente. È la modifica più piccola.
-   * **Il campo deve partecipare** → attivi **Corrispondenza totale**, ma legga prima l'avviso qui sopra.
-   * **Vuole un fornitore in ogni caso** → imposti il **Gestore dei conflitti** su **Best Score**. Accetti che possa scegliere il fornitore sbagliato invece di lasciare il campo vuoto.
+1. Apri il documento. Quale campo del gruppo di ricerca contiene ora un valore che prima era vuoto?
+2. Apri la configurazione di ricerca. Quel campo è contrassegnato come **Ricercabile** o **Trigger automatico**? Se sì, ora partecipa alla ricerca e allunga l'elenco dei risultati.
+3. Scegli una delle tre soluzioni:
+   * **Il campo non deve partecipare alla ricerca** → togli **Ricercabile** e **Trigger automatico** da quel campo. Il campo mantiene il suo valore sul documento e resta visibile all'utente. È la modifica più piccola.
+   * **Il campo deve partecipare** → attiva **Abbina tutti**, ma leggi prima l'avviso qui sopra.
+   * **Vuoi un fornitore in ogni caso** → imposta il **Gestore dei conflitti** su **Best Score**. Accetta che possa scegliere il fornitore sbagliato invece di lasciare il campo vuoto.
+
+### Passo finale: aggiungere i campi al layout
+
+Dopo aver configurato i campi fuzzy, **assicurati di aggiungere i campi al layout usando il Layout Builder**. Se i campi non vengono aggiunti al layout, non saranno disponibili per l'uso.
+
+[Layout Builder](layout-builder.md)

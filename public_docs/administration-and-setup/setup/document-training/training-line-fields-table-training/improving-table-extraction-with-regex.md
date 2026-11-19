@@ -46,7 +46,7 @@ Oto przykład, gdzie linia "PRAEF" nakłada się na **Bezeichnung**, **Menge**, 
 3.  **Wybierz i Mapuj Tekst**\
     Kliknij odpowiedni fragment tekstu i przypisz go do **niebieskiego** nagłówka kolumny.
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-pl-20261009.png" alt="Wyekstrahowana tabela w trybie edycji danych wiersza z niebieskimi, jeszcze niewypełnionymi nagłówkami kolumn, które można przypisać ręcznie."><figcaption><p>Niebieskie nagłówki kolumn można wypełnić ręcznie.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-pl-20261110.png" alt="Wyekstrahowana tabela w trybie edycji danych wiersza z niebieskimi, jeszcze niewypełnionymi nagłówkami kolumn, które można przypisać ręcznie."><figcaption><p>Niebieskie nagłówki kolumn można wypełnić ręcznie.</p></figcaption></figure>
 
 > Uwaga: Kolumny o fiolecie są już zmapowane przez system i nie mogą być edytowane ręcznie.
 

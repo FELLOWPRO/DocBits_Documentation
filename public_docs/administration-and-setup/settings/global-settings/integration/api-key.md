@@ -1,6 +1,6 @@
 # Clé API
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-fr.png" alt="Panneau Clés API avec le bouton Créer une clé API, les colonnes de la liste et des clés d’exemple dont le préfixe reste visible et la suite est masquée."><figcaption><p>Paramètres → Intégration et SSO → Clé API. Les clés d’exemple affichent un préfixe suivi de caractères masqués.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-key-settings-page-fr-20261111.png" alt="Panneau Clés API dans Paramètres → Intégration et SSO : bouton Créer une clé API, colonnes Clé, Nom, Expire, Dernière Utilisation, Statut et Actions, et trois clés d’exemple dont le préfixe reste visible et la suite est masquée."><figcaption><p>Paramètres → Intégration et SSO → Clé API. La liste montre le bouton Créer une clé API, les colonnes Clé, Nom, Expire, Dernière Utilisation, Statut et Actions, et trois clés d’exemple dont le préfixe est visible et la suite masquée.</p></figcaption></figure>
 
 La section **Clé API** en haut de la page Intégration et SSO liste toutes les clés API créées par votre organisation. Une clé API permet à un autre système — votre ERP, un script ou une application partenaire — d'accéder à DocBits sans qu'un utilisateur ne se connecte. Pour les instructions étape par étape, consultez [Gestion des Clés API](api-key-management.md).
 
@@ -23,7 +23,7 @@ Voici les valeurs dont votre fournisseur d'identité a besoin pour permettre aux
 
 ### Paramètres du fournisseur de services d'identité
 
-Configurez DocBits pour utiliser votre fournisseur d'identité (IdP) externe pour la connexion.
+Configurez DocBits pour utiliser votre fournisseur d'identité (IdP) externe pour la connexion. Pour le guide complet, consultez [Configuration du fournisseur de services d'identité](identity-service-provider-configuration.md).
 
 * **ID du locataire :** L'identifiant de locataire de votre fournisseur d'identité, utilisé lorsque DocBits s'intègre à des services cloud qui gèrent l'accès par locataire.
 * **Téléverser un fichier :** Sélectionnez le fichier de métadonnées XML fourni par votre fournisseur d’identité.

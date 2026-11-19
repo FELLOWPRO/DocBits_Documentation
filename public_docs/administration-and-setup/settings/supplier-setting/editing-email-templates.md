@@ -1,82 +1,89 @@
 # E-Mail-Vorlagen bearbeiten
 
-<figure><img src="../../../.gitbook/assets/supplier_email_templates-de.png" alt="E-Mail-Vorlagen für Lieferanten"><figcaption><p>Deutsche Vorlagenübersicht. Vorlagennamen, Betreffzeilen und Benutzerangaben sind ausgeblendet.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-list-de-20261111.png" alt="Liste der E-Mail-Vorlagen für Lieferanten mit den Spalten Name, Typ, Thema, Zuletzt Geändert Von und Zuletzt Geändert Am"><figcaption><p>Liste der E-Mail-Vorlagen für Lieferanten</p></figcaption></figure>
 
-### Überblick
+Auf der Seite **E-Mail-Vorlagen** unter **Einstellungen → Lieferanteneinstellungen → E-Mail-Vorlagen** legen Administratoren die E-Mails fest, die DocBits automatisch an Lieferanten sendet. Jede Vorlage gehört zu genau einem von vier festen E-Mail-Typen. So geht immer die passende Nachricht hinaus, wenn ein Lieferant eingeladen wird, seine Registrierung abschließt oder im Lieferantenportal genehmigt beziehungsweise abgelehnt wird.
 
-Mit der Funktion E-Mail-Vorlagen können Administratoren E-Mail-Kommunikation erstellen und anpassen, die automatisch an Lieferanten gesendet wird. Eines der Schlüsselelemente dieser Vorlagen ist der `{{magic_link}}`, der einen dynamischen, auf jeden Empfänger zugeschnittenen Link bereitstellt.
+Für den Zugriff ist ein Administratorkonto erforderlich. Welche Rollen die Lieferanten selbst erhalten, steht unter [Lieferantenberechtigungen](supplier-permissions.md).
 
-#### Was ist `{{magic_link}}`?
+## Vorlagenliste
 
-Der `{{magic_link}}` ist ein Platzhalter, der beim Versand der E-Mail dynamisch durch eine eindeutige URL ersetzt wird. Diese URL leitet den Empfänger in der Regel dazu, eine Aktion abzuschließen, etwa eine Registrierung, eine Genehmigung oder den Zugriff auf einen bestimmten Bereich des Lieferantenportals.
+Die Liste zeigt eine Zeile pro Vorlage mit diesen Spalten:
 
-### E-Mail-Vorlagen bearbeiten
+| Spalte | Beschreibung |
+|--------|--------------|
+| **Name** | Der interne Name der Vorlage. |
+| **Typ** | Der E-Mail-Typ, für den die Vorlage verwendet wird, zum Beispiel E-Mail-Einladung an Lieferanten. |
+| **Thema** | Die Betreffzeile, die Empfänger sehen. |
+| **Zuletzt Geändert Von** | Der Benutzer, der die Vorlage zuletzt bearbeitet hat. |
+| **Zuletzt Geändert Am** | Wann die Vorlage zuletzt geändert wurde. |
 
-<figure><img src="../../../.gitbook/assets/s150-bildschirmfoto-2024-08-25-um-12-35-53-de.png" alt="Deutscher Editor für eine neue Lieferanten-E-Mail-Vorlage."><figcaption><p>Deutscher Editor für eine neue Lieferanten-E-Mail-Vorlage.</p></figcaption></figure>
+Sie können die Liste nach jeder Spalte sortieren. Die Spalten **Name**, **Typ** und **Thema** bieten über ihr Spaltenmenü zusätzlich einen Filter; aktive Filter erscheinen als entfernbare Markierungen über der Tabelle. Spaltenüberschriften lassen sich in die gewünschte Reihenfolge ziehen, und diese Reihenfolge bleibt für Ihren nächsten Besuch erhalten.
 
-#### Auf den E-Mail-Vorlagen-Editor zugreifen
+**Zeilenaktionen**: Am Ende jeder Zeile öffnet das Symbol mit den drei Punkten ein Menü mit **Bearbeiten** und **Löschen**. **Bearbeiten** öffnet die Vorlage im Editor, **Löschen** entfernt sie erst nach einer Rückfrage. Ein Klick auf eine beliebige Stelle der Zeile öffnet die Vorlage ebenfalls im Editor.
 
-1. **Zu den E-Mail-Vorlagen navigieren**:
-   * Gehen Sie im Hauptmenü zum Abschnitt **E-Mail-Vorlagen**.
-2. **Eine Vorlage zur Bearbeitung auswählen**:
-   * Wählen Sie die E-Mail-Vorlage, die Sie bearbeiten möchten, indem Sie auf den Vorlagennamen klicken (z. B. „Supplier Invitation Email“).
-3. **Die Vorlage bearbeiten**:
-   * Mit dem Editor können Sie sowohl den HTML-Code als auch das visuelle Design der E-Mail ändern.
-   * Über die bereitgestellten Registerkarten können Sie zwischen visueller Bearbeitung und Code-Bearbeitung wechseln.
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-actions-de-20261111.png" alt="Geöffnetes Zeilenmenü einer Vorlage mit den Einträgen Bearbeiten und Löschen"><figcaption><p>Zeilenaktionen einer Vorlage: Bearbeiten und Löschen</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+**Neu**: Die Schaltfläche **Neu** über der Tabelle legt eine neue Vorlage an.
 
-#### `{{magic_link}}` als Link definieren
+## Vorlage erstellen oder bearbeiten
 
-Damit `{{magic_link}}` in der E-Mail als anklickbarer Link erscheint, muss er im HTML-Code der Vorlage korrekt formatiert sein. Gehen Sie dazu wie folgt vor:
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-editor-de-20261111.png" alt="Editor einer Lieferanten-E-Mail-Vorlage mit den Feldern Name, Thema, E-Mail-Vorlage auswählen und CC links und dem Texteditor rechts"><figcaption><p>Eine neue E-Mail-Vorlage für Lieferanten anlegen</p></figcaption></figure>
 
-1. **Den Link-Abschnitt im HTML-Code finden**:
-   * Suchen Sie im Code-Editor den Abschnitt, in dem der Magic Link erscheinen soll. Er befindet sich in der Regel in einem `<a>`-Tag (Anker).
-2.  **Den Platzhalter `{{magic_link}}` einfügen**:
+Klicken Sie auf **Neu** oder bei einer vorhandenen Vorlage auf **Bearbeiten**, um den Editor zu öffnen:
 
-    * Ersetzen Sie das Attribut `href` des Anker-Tags durch `{{magic_link}}`.
-    * Achten Sie darauf, dass der Link passend zur E-Mail-Vorlage gestaltet ist. Hier ein Beispiel:
+1. **Name** — Geben Sie einen internen Namen für die Vorlage ein. Dieser Name erscheint in der Liste, nicht in der E-Mail.
+2. **Thema** — Geben Sie die Betreffzeile der E-Mail ein. Sie können Platzhalter wie `{{supplier_name}}` verwenden.
+3. **E-Mail-Vorlage auswählen** — Wählen Sie den E-Mail-Typ. Es gibt genau vier Typen; das Auswahlfeld zeigt sie derzeit in englischer Bezeichnung:
+   * **Supplier Invitation Email** — Einladung eines Lieferanten in das Lieferantenportal.
+   * **Supplier Registration Completion Email** — Bestätigung, wenn ein Lieferant seine Registrierung abschließt.
+   * **Supplier Approval Email** — Genehmigung des Kontos eines Lieferanten.
+   * **Supplier Rejection Email** — Ablehnung des Kontos eines Lieferanten.
 
-    ```html
-    <a href="{{magic_link}}" target="_blank" style="
-        background-color: #B7184B;
-        border-radius: 25px;
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 12px 25px;
-        color: #FFFFFF;
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;">
-        Complete Registration
-    </a>
-    ```
+   In der Vorlagenliste erscheint derselbe Typ in der Spalte **Typ** übersetzt, zum Beispiel als E-Mail-Einladung an Lieferanten. Der Typ einer bestehenden Vorlage lässt sich später nicht mehr ändern; beim Bearbeiten ist das Feld schreibgeschützt. Legen Sie in diesem Fall eine neue Vorlage an.
+4. **CC** — Wählen Sie optional, wer zusätzlich eine Kopie erhält: **Zugewiesener Benutzer** (der für den Lieferanten zuständige Benutzer) und/oder **Referrer** (der Benutzer, der den Lieferanten eingeladen hat). Bleibt das Feld leer, geht die E-Mail nur an den Lieferanten.
+5. Gestalten Sie den Text der E-Mail im Editor rechts. Sie können Text formatieren, Listen und Zitate einfügen und Inhalte ausrichten. Die Schaltfläche **Upload** in der Werkzeugleiste fügt ein hochgeladenes Bild direkt in die E-Mail ein oder hängt andere Dateien als Link an. Das Code-Symbol wechselt in die HTML-Ansicht, in der Sie das zugrunde liegende HTML direkt bearbeiten und formatieren.
+6. **Platzhalter**: Über das Eigenschaften-Menü in der Werkzeugleiste fügen Sie die Platzhalter des gewählten E-Mail-Typs ein, zum Beispiel `{{magic_link}}` und `{{supplier_name}}`.
+7. Klicken Sie auf **Speichern**, um die Vorlage zu sichern.
 
-### 3. Den Linktext anpassen:
+### Der Platzhalter `{{magic_link}}`
 
-• Ändern Sie den Text zwischen dem öffnenden \<a> und dem schließenden \</a>-Tag so, dass er die Aktion widerspiegelt, die der Benutzer ausführen soll, zum Beispiel „Registrierung abschließen“ oder „Auf Ihr Konto zugreifen“.
+Der Platzhalter `{{magic_link}}` wird beim Versand der E-Mail durch eine eindeutige Anmelde-URL ersetzt. Sie führt den Empfänger zu einer Aktion im Lieferantenportal, etwa zum Abschluss der Registrierung. Damit daraus eine anklickbare Schaltfläche wird, formatieren Sie ihn in der HTML-Ansicht als Link:
 
-4\. Die Vorlage speichern und testen:
+```html
+<a href="{{magic_link}}" target="_blank" style="
+    background-color: #B7184B;
+    border-radius: 25px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;">
+    Complete Registration
+</a>
+```
 
-• Klicken Sie nach den Änderungen auf die Schaltfläche Save.
+Passen Sie den Text zwischen `<a>` und `</a>` an, damit er beschreibt, was der Empfänger tun soll, zum Beispiel „Registrierung abschließen“ oder „Auf Ihr Konto zugreifen“.
 
-• Mit der Schaltfläche Send Test können Sie eine Test-E-Mail senden, um sicherzustellen, dass der Link wie erwartet funktioniert.
+## Test-E-Mail senden
 
-## Best Practices für die Verwendung von \{{magic\_link\}}
+Prüfen Sie vor dem Einsatz einer Vorlage, wie sie aussieht:
 
-• Platzierung des Links: Platzieren Sie den \{{magic\_link\}} gut sichtbar in der E-Mail, damit er für die Empfänger leicht zugänglich ist.
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-send-test-de-20261111.png" alt="Dialog zum Senden einer Test-E-Mail mit dem Feld E-Mail des Empfängers, je einem Feld für die Platzhalter Magic link und Supplier name sowie den Schaltflächen Abbrechen und Senden"><figcaption><p>Test-E-Mail senden: Empfängeradresse eingeben</p></figcaption></figure>
 
-• Eindeutiger Call-to-Action: Der Text im Link sollte eine klare Handlungsaufforderung sein, etwa „Registrierung abschließen“ oder „E-Mail-Adresse bestätigen“.
+1. Klicken Sie oben rechts im Editor auf **Test senden**.
+2. Geben Sie unter **E-Mail des Empfängers** die Adresse ein, an die die Test-E-Mail gehen soll.
+3. Sobald ein E-Mail-Typ gewählt ist, zeigt der Dialog für jeden Platzhalter der Vorlage ein eigenes Feld. Die Feldnamen stammen aus den Beispieldaten des Typs und erscheinen derzeit englisch, zum Beispiel **Magic link** und **Supplier name**. Über das Kopiersymbol im Feld kopieren Sie den Platzhalter selbst, etwa `{{magic_link}}`, in die Zwischenablage.
+4. Klicken Sie auf **Senden**. DocBits versendet die E-Mail an die angegebene Adresse, sodass Sie Layout, Platzhalter-Ersetzung und Magic Link prüfen können.
 
-• Gestaltung: Achten Sie darauf, dass der Link zur übrigen E-Mail-Vorlage passend gestaltet ist und optisch hervorsticht.
+Die Test-E-Mail geht nicht an einen Lieferanten und ändert keine Daten.
 
-• Testen: Senden Sie nach der Bearbeitung der Vorlage immer eine Test-E-Mail, um zu prüfen, dass der \{{magic\_link\}} korrekt aufgelöst wird und die Gestaltung passt.
+## Verwandte Seiten
 
-## Fazit
-
-Wenn Sie den \{{magic\_link\}} in Ihren E-Mail-Vorlagen korrekt definieren, stellen Sie sicher, dass Empfänger eine personalisierte und handlungsorientierte E-Mail erhalten, die sie zur passenden Aufgabe in Ihrem Lieferantenportal führt. Das verbessert die Benutzererfahrung und sorgt für ein reibungsloses Onboarding und reibungslose Kommunikationsprozesse.
-
-\
-
-Diese Dokumentation bietet Administratoren eine Schritt-für-Schritt-Anleitung, wie sie den \{{magic\_link\}} in E-Mail-Vorlagen definieren und verwenden, damit die E-Mails sowohl funktionsfähig als auch optisch ansprechend sind.
+* [E-Mail-Benachrichtigungen](../global-settings/email-notification/README.md) — Benachrichtigungen für interne Dokumentereignisse
+* [Allgemeine Lieferanteneinstellungen](supplier-general-settings.md)
+* [Lieferantenberechtigungen](supplier-permissions.md)
+* [Lieferantenportal](../../setup/supplier-portal/README.md) — Portal aktivieren und Lieferanten einladen

@@ -1,6 +1,6 @@
 # Chiave API
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-it.png" alt="Pannello Chiavi API con il pulsante Crea chiave API, le colonne dell’elenco e chiavi di esempio con un prefisso visibile seguito da caratteri mascherati."><figcaption><p>Impostazioni → Integrazione e SSO → Chiave API. Le chiavi di esempio mostrano un prefisso seguito da caratteri mascherati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-key-page-it-20261111.png" alt="Pannello Chiavi API con il pulsante Crea chiave API, le colonne dell’elenco e chiavi di esempio con un prefisso visibile seguito da caratteri mascherati."><figcaption><p>Impostazioni → Integrazione e SSO → Chiave API. Le chiavi di esempio mostrano un prefisso seguito da caratteri mascherati.</p></figcaption></figure>
 
 La sezione **Chiave API** in cima alla pagina Integrazione e SSO elenca tutte le chiavi API create dalla propria organizzazione. Una chiave API consente a un altro sistema — il proprio ERP, uno script o un'applicazione partner — di accedere a DocBits senza che un utente effettui l'accesso. Per le istruzioni passo passo, vedere [Gestione delle Chiavi API](api-key-management.md).
 
@@ -23,7 +23,7 @@ Questi sono i valori di cui il proprio provider di identità ha bisogno per cons
 
 ### Impostazioni del provider di servizi di identità
 
-Configurare DocBits per l'uso del proprio provider di identità (IdP) esterno per l'accesso. Per la guida completa, vedere la [Configurazione Single Sign-On (SSO)](configuring-single-sign-on-sso/).
+Configurare DocBits per l'uso del proprio provider di identità (IdP) esterno per l'accesso. Per la guida completa, vedere la [Configurazione dell'Identity Service Provider](identity-service-provider-configuration.md).
 
 * **ID inquilino:** L'identificatore del tenant del proprio provider di identità, utilizzato quando DocBits si integra con servizi cloud che gestiscono l'accesso per tenant.
 * **Caricare il file:** Selezionare il file XML dei metadati fornito dal proprio provider di identità.

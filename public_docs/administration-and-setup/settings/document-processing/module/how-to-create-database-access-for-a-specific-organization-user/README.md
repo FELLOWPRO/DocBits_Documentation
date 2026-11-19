@@ -28,7 +28,7 @@
      * **Password**: Zorg ervoor dat het wachtwoord veilig wordt opgeslagen of gekopieerd.
      * **Database**: De naam van de database
      * **Host**: De hostnaam
-     * **Port**: De poort
+     * **Port**: De poort van de databaseserver
      * **SSL Mode:** De verbinding vereist `sslmode=require` voor beveiligde communicatie.
 3. **Gegevens kopiëren**:
    * Gebruik de kopieerpictogrammen naast elk veld om de gegevens snel te kopiëren voor gebruik in uw databaseclient of applicatie.

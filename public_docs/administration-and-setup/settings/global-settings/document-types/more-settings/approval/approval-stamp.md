@@ -14,7 +14,7 @@ Un cachet d'approbation est une annotation du flux d'approbation lorsque l'optio
 
    <figure><img src="../../../../../../.gitbook/assets/dbdc-86-approval-stamp-panel-fr-20261031.png" alt="Section française actuelle Approbation et rejet de Facture avec Cachet d'approbation désactivé et les autres options du flux"><figcaption><p>Vue réelle d'Approbation et rejet dans Dev en français. Les états des contrôles ont uniquement été consultés.</p></figcaption></figure>
 
-   **Approuver avant l'exportation**, **Approuver avant l'exportation V2**, **Deuxième approbation avant l'exportation** et **Historique de l'approbation** sont des réglages du flux distincts du cachet. Les liens de conception ouvrent les éditeurs des formulaires d'approbation, d'examen ou de rejet correspondants. Il n'est pas nécessaire d'ouvrir ces éditeurs pour consulter le réglage du cachet.
+   **Approuver avant l'exportation**, **Approuver avant l'exportation V2**, **Deuxième approbation avant l'exportation** et **Historique de l'approbation** sont des réglages du flux distincts du cachet. Les boutons **FORMULAIRE D'APPROBATION DE CONCEPTION**, **FORMULAIRE DE CONCEPTION EN COURS D'EXAMEN** et **CONCEVOIR LE FORMULAIRE DE REJET** ouvrent les éditeurs des formulaires d'approbation, d'examen et de rejet correspondants. Il n'est pas nécessaire d'ouvrir ces éditeurs pour consulter le réglage du cachet.
 
 3. Modifiez **Cachet d'approbation** seulement après avoir convenu dans votre organisation du fonctionnement des approbations et des exports. **La modification du commutateur enregistre immédiatement le réglage.** Conservez une trace de l'état précédent afin de vérifier son effet sur une facture de test.
 

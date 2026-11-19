@@ -370,7 +370,7 @@
    * **映射到**：`<INVOICE><BUYER_REFERENCE>`
    * **可出现多次**：否。
 
-2)  **账单引用**
+2. **Billing Reference**
 
     * **源**：`//BillingReference`
     * **映射到**：`<INVOICE><BILLING_REFERENCE>`

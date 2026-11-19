@@ -54,6 +54,12 @@ Use **Historial de coincidencias** (icono de reloj, si sus permisos lo permiten)
 
 Cada orden de compra se abre en su propia pestaña sobre la tabla, y una línea de factura puede coincidir con líneas que pertenecen a pestañas distintas. El icono de coincidencia de la línea de factura cambia a la pestaña del pedido coincidente y se desplaza hasta la línea coincidente; cada clic adicional muestra la siguiente línea coincidente. Si la línea está conectada en más de una pestaña, el icono muestra primero la lista de **Matched on other PO tabs**, donde elige el pedido cuya línea desea ver. En el lado de la orden de compra el icono funciona al revés: al hacer clic recorre las líneas de factura coincidentes y, al pasar el cursor sobre él, las resalta.
 
+### Reglas que se omitieron
+
+Auto PO Match usa todas las reglas de coincidencia que pueden ejecutarse sobre la tabla extraída. Una regla se omite cuando a la tabla le falta una columna que la regla lee. Por ejemplo, una regla que empareja líneas por número de artículo no puede ejecutarse cuando no se extrajo ningún número de artículo. Las demás reglas se siguen ejecutando y la coincidencia se guarda.
+
+A continuación, un aviso indica las reglas que no se probaron y las columnas que faltan en la tabla. Las líneas que esas reglas habrían emparejado quedan abiertas. Añada la columna que falta al layout o a la extracción de la tabla, o conecte las líneas a mano, antes de exportar.
+
 ### Más de una línea por coincidencia
 
 Una sola línea de factura puede corresponder a varias líneas de pedido, o al revés, donde sus reglas de coincidencia lo permitan. Abra los detalles **+** de una línea para inspeccionar cualquier coincidencia múltiple existente. Compruebe la cantidad y el precio combinados, no solo una línea. Un panel de detalles vacío significa que no hay ninguna coincidencia múltiple que inspeccionar. Consulte [Herramientas de coincidencia de órdenes de compra](purchase-order-matching-tools.md) para cambiar las conexiones.

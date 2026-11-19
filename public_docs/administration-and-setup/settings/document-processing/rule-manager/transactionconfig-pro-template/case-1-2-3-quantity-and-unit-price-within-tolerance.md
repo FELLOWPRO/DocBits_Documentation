@@ -32,10 +32,10 @@ Total Amount: $1,015.05
 
 Quantity Tolerance: ±2%
 
-Tolerancia del precio unitario: ±1%\
+Tolerancia del precio unitario: ±1%
 
 
-Dado que la cantidad (101 unidades) y el precio unitario ($10.05) están dentro de los niveles de tolerancia aceptables en comparación con la orden de compra, el sistema:\
+Dado que la cantidad (101 unidades) y el precio unitario ($10.05) están dentro de los niveles de tolerancia aceptables en comparación con la orden de compra, el sistema:
 
 
 1\. **Aceptar los valores de la factura:** La cantidad y el precio unitario de la factura se aceptan como válidos porque se encuentran dentro de los límites de tolerancia definidos.

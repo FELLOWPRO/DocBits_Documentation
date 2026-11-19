@@ -54,6 +54,17 @@ Un gráfico de barras de **Blocked documents** por etapa del pipeline: la **prim
 
 **Ejemplo.** Barras: Supplier Identification 12, Field Validation 41, PO Line Match 7. La barra más grande indica que debe mirar primero **Field Validation**. Un valor extraído ausente es una causa posible; compare la factura original, las reglas de campo y los datos de origen disponibles antes de confirmarla.
 
+#### Por qué los documentos no son touchless (canal de publicación Nova)
+
+Las organizaciones del canal de publicación **Nova** ven la misma pregunta respondida mediante una lista expandible en lugar del gráfico de barras. El panel se titula **Why documents are not touchless** y se encuentra junto a **Touchless rate over time**.
+
+* El encabezado indica cuántos documentos abarca la lista. Cada fila es un área del primer bloqueo con su porcentaje, el número de documentos y una barra. Las filas llegan ordenadas de mayor a menor.
+* Haga clic en una fila para abrir sus motivos en el mismo lugar. Los motivos conservan sus propios recuentos de documentos, de modo que puede ver qué causa dentro de un área cuesta más. Solo hay un área abierta a la vez; vuelva a hacer clic para cerrarla.
+* La lista procede de los mismos datos de informe que las cifras clave. Los números no se recalculan en el navegador, por lo que el total del encabezado y el de las filas siempre coinciden.
+* Si su instalación todavía no envía estos datos, el panel lo indica en lugar de mostrar **0**. Una lista vacía con el texto de «nada registrado» significa que no se perdieron documentos en el periodo; los dos estados son distintos y no debe interpretar el primero como una buena noticia.
+
+El canal de publicación **Vesta** mantiene el gráfico de barras descrito arriba. Si su página muestra barras, está en Vesta; si muestra la lista expandible, está en Nova. Ambos responden a la misma pregunta, así que el resto de esta página se aplica en los dos casos.
+
 ### Oportunidades por proveedor
 
 <figure><img src="../../../.gitbook/assets/touchless-supplier-queue-es.png" alt="La tabla Supplier opportunities con volumen, tasa pure, documentos perdidos, causa raíz, documentos recuperables, mejora esperada, confianza y estado"><figcaption><p>La cola de proveedores (reducida a las cuatro primeras filas). El primer proveedor tiene 106 documentos, una tasa pure del 38,7 % y 65 documentos recuperables, así que corregirlo vale <strong>+21 pp</strong>. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
@@ -101,7 +112,7 @@ Mientras se ejecuta, verá **Queued**, **Running**, **Done**, **Already analysed
 
 1. **Cada semana**: abra la pestaña y compare la **tasa** y la **tendencia** con el objetivo.
 2. Revise **Diagnosis coverage**. Si está por debajo de aproximadamente el 80 %, averigüe primero por qué se detienen los documentos.
-3. Lea **Where touchless is lost first** y elija la etapa más grande.
+3. Lea **Where touchless is lost first** (Vesta) o **Why documents are not touchless** (Nova) y elija la etapa o el área más grande.
 4. Abra **Supplier opportunities**. Ordene por **Expected lift** y tome el primer proveedor con el estado **RECOVERABLE**.
 5. Lea los **issue clusters**, revise **Missing evidence** y siga después **What to change**.
 6. Corrija una causa confirmada. Para una propuesta compatible de DocBits use la vista previa y el historial de cambios. Para una corrección en Infor, documente la fuente e importe por separado; no crea automáticamente una entrada de cambio de ajuste en DocBits.

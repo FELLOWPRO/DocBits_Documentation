@@ -38,6 +38,8 @@ Wählen Sie oberhalb der Suchleiste **30T**, **90T**, **180T**, **365T** oder **
 2. Wählen Sie einen Typ, z. B. **Rechnung**, um dessen Tab hinzuzufügen. Wählen Sie dann den neuen Tab an, um die Tabelle auf diesen Typ zu filtern. **Alle** entfernt die Typ-Beschränkung, ohne den Tab zu löschen.
 3. Um einen Typ-Tab zu entfernen, wählen Sie sein **×** an. Der Tab **Alle** kann nicht entfernt werden.
 
+DocBits speichert Ihre Tabs in Ihren Benutzereinstellungen, sodass sie beim nächsten Öffnen des Dashboards wieder vorhanden sind. Ein hinzugefügter Tab bleibt, bis Sie ihn entfernen.
+
 <figure><img src="../../../.gitbook/assets/dbdc167_document_type_menu_de_20261010.png" alt="Plus-Menü des deutschen Dashboards mit Rechnung als verfügbarem Dokumenttyp"><figcaption>Fügen Sie über das Plus-Menü einen Dokumenttyp-Tab hinzu.</figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/dbdc167_invoice_tab_de_20261010.png" alt="Ausgewählter Rechnung-Tab als Dokumenttyp im deutschen Dashboard mit sichtbarem Entfernen-Symbol"><figcaption>Wählen Sie den Tab an, um den Typfilter anzuwenden; mit × entfernen Sie den Tab.</figcaption></figure>

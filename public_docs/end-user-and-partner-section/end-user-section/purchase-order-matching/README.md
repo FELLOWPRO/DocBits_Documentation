@@ -54,6 +54,12 @@ Das Speichern kann den Abgleich erneut auslösen, nachdem eine Bestellnummer ge�
 
 Nutzen Sie die **Matching history** (Uhr-Symbol, soweit Ihre Berechtigungen es erlauben), um nachzuvollziehen, wie ein früherer Abgleich entschieden wurde. Sie ist eine schreibgeschützte Ansicht. Sie können prüfen, welche Regeln liefen und warum ein Kandidat nicht passte; das Öffnen der Historie exportiert das Dokument nicht.
 
+### Übersprungene Regeln
+
+Auto PO Match nutzt jede Abgleichsregel, die auf der ausgelesenen Tabelle laufen kann. Eine Regel wird übersprungen, wenn der Tabelle eine Spalte fehlt, die sie liest. Eine Regel, die Positionen über die Artikelnummer paart, kann zum Beispiel nicht laufen, wenn keine Artikelnummer ausgelesen wurde. Die übrigen Regeln laufen weiterhin, und der Abgleich wird gespeichert.
+
+Ein Warnhinweis nennt dann die Regeln, die nicht versucht wurden, und die Spalten, die in der Tabelle fehlen. Die Positionen, die diese Regeln abgeglichen hätten, bleiben offen. Ergänzen Sie die fehlende Spalte im Layout oder in der Tabellenauslese oder verbinden Sie die Positionen von Hand, bevor Sie exportieren.
+
 ### Mehr als eine Position pro Abgleich
 
 Eine einzelne Rechnungsposition kann mehreren Bestellpositionen entsprechen – oder umgekehrt –, soweit Ihre Abgleichregeln das erlauben. Öffnen Sie die **+**-Details einer Position, um einen vorhandenen Multi-Match zu prüfen. Prüfen Sie die kombinierte Menge und den kombinierten Preis, nicht nur eine einzelne Position. Ein leeres Detailpanel bedeutet, dass kein Multi-Match zu prüfen ist. Siehe [Bestellabgleich-Tools](purchase-order-matching-tools.md) zum Ändern von Verbindungen.

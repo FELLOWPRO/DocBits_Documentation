@@ -10,7 +10,7 @@ Die Karte **Validation Setup** zeigt Ihr aktuelles Validierungsprofil (zum Beisp
 
 ## Akzeptierte XRechnung-Versionen
 
-Das Gate **Accepted XRechnung versions** listet jede XRechnung-Version auf. Markieren Sie die Versionen, die Sie akzeptieren – Dokumente, deren CustomizationID außerhalb dieser Liste liegt, werden bereits vor jeder weiteren Prüfung mit `VAL-VERSION-NOT-ALLOWED` abgelehnt. Eine leere Liste bedeutet „alles akzeptieren". Jede Version ist mit **current**, **deprecated** oder **EOL** sowie ihrem Veröffentlichungsdatum gekennzeichnet.
+Das Gate **Accepted XRechnung versions** listet jede XRechnung-Version auf. Markieren Sie die Versionen, die Sie akzeptieren – Dokumente, deren CustomizationID außerhalb dieser Liste liegt, werden bereits vor jeder weiteren Prüfung mit `VAL-VERSION-NOT-ALLOWED` abgelehnt. Wenn keine Version markiert ist, ist das Gate ausgeschaltet und jede Version wird akzeptiert. Jede Version ist mit **current**, **deprecated** oder **EOL** sowie ihrem Veröffentlichungsdatum gekennzeichnet.
 
 ## Akzeptierte Profile und Schweregrad-Modell
 

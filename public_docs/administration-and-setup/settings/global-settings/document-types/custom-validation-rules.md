@@ -104,7 +104,7 @@ For table line rules, the condition can also use the columns of the current row,
 
 <figure><img src="../../../../.gitbook/assets/applies-when-row-condition.png" alt="A row condition"><figcaption><p>Only article lines (rows with an item number) are checked</p></figcaption></figure>
 
-Conditions are explained in detail — every field, operator and comparison rule, with many examples — on [Rule Conditions (Applies when)](rule-conditions-applies-when.md).
+Conditions are explained in detail — every field, operator and comparison rule, with many examples — on [Rule Conditions (Applies when)](rule-conditions-applies-when.md). A condition on the header or the whole table can also look at the text on the document itself (**Document text** fields such as _Document Content_ and _First Page Content_, marked **Slower**) — see [Document text](rule-conditions-applies-when.md#document-text-doc).
 
 ### Step 3 — Check: what must be true
 

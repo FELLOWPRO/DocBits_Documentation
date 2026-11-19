@@ -88,6 +88,26 @@ Information DocBits knows about the document itself, independent of the extracte
 | **Document Status**   | `doc.status`            | Ready for validation, Pending Approval, Pending second approval … | layouts per workflow stage, rules that only apply before approval   |
 | **Sub Document Type** | `doc.sub_doc_type`      | your sub types, e.g. credit memo                                  | rules for one sub type only                                         |
 
+### Document text (`doc.`)
+
+Conditions can also look at what is written **on the document** — the text DocBits read from it (OCR), not only the extracted fields. The picker lists them in their own group, **Document text**:
+
+| Field in the picker   | Key                      | What it looks at                                              | Typical use                                                       |
+| --------------------- | ------------------------ | ------------------------------------------------------------- | ----------------------------------------------------------------- |
+| **Document Content**  | `doc.content`            | the text of all pages                                         | a phrase that can appear anywhere, such as `Reverse Charge`       |
+| **First Page Content** | `doc.first_page_content` | the text of page 1 only                                       | a title or letterhead, such as `Credit Note` or a company name    |
+| **Page Count**        | `doc.page_count`         | the number of pages of the document (a number)                | rules for single-page or very long documents                      |
+
+The two text fields offer these operators: **contains**, **contains any of**, **contains all of**, **matches (regex)**, **is empty** and **is not empty**. With the match options next to the value you can switch on **Whole words only** (`art` does not hit `party`) and **Ignore case**. Words are matched literally, and a space inside a phrase matches any run of spaces or line breaks, because OCR often breaks a line in the middle of a phrase. **Page Count** is a number and offers the number operators, for example **greater than** `1`.
+
+A condition that cannot be checked — the document has no readable text, or a regular expression takes too long — does **not** count as a match, and the `not` of it is not a match either, so a rule never fires because the text was unavailable.
+
+{% hint style="warning" %}
+**Document Content** and **First Page Content** are marked **Slower** in the picker. They load the document's full text every time the rule runs. Use them when no extracted field can answer the question, and prefer a field condition where one will do. **Page Count** is not marked: it comes from the document's own page count.
+{% endhint %}
+
+Document text can be used in transformation rules, in validation rules that run on the **header** or on the **whole table**, and in layout selection rules. It is not available in validation rules with the level **Table line**: those run once per row, and the document text is not part of a row.
+
 ### Header fields (`header.`)
 
 Every field of the document type, for example **Invoice Number** (`header.invoice_id`), **Supplier ID** (`header.supplier_id`), **Total Amount** (`header.total_amount`), **Currency** (`header.currency`), **Supplier Tax ID** (`header.supplier_tax_id`), **Purchase Order** (`header.purchase_order`). The picker shows the label and, in brackets, the technical key. The value used is the current value of the field — including corrections a user has made.
@@ -123,6 +143,7 @@ Use JSON paths sparingly. They depend on the internal structure of the extracted
 | -------------------------- | ------------------------ | ---------------------- | ----------------------- | --------------------------------------------- | ---------------------------- | ---------------- |
 | `doc.` document attributes | ✓                        | ✓                      | ✓                       | ✓                                             | ✓                            | ✓                |
 | `header.` header fields    | ✓                        | ✓                      | ✓                       | ✓                                             | ✓                            | ✓                |
+| `doc.content`, `doc.first_page_content`, `doc.page_count` document text | ✓ | – | ✓ | ✓ | ✓ | ✓ |
 | `row.` table columns       | –                        | ✓                      | –                       | –                                             | ✓                            | –                |
 | `$` JSON path              | ✓                        | ✓                      | ✓                       | ✓                                             | ✓                            | ✓                |
 

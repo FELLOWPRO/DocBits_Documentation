@@ -148,7 +148,7 @@ The condition a document must meet. You can use:
 
 Table columns are not available: the layout is chosen once for the whole document.
 
-Leave the step empty to match every document at this priority. How conditions work — ALL / ANY, nested groups, all operators, empty values, upper/lower case — is explained on [Rule Conditions (Applies when)](../rule-conditions-applies-when.md).
+Leave the step empty to match every document at this priority. How conditions work — ALL / ANY, nested groups, all operators, empty values, upper/lower case — is explained on [Rule Conditions (Applies when)](../rule-conditions-applies-when.md). A condition can also look at the text on the document itself (**Document text** fields such as _Document Content_ and _First Page Content_, marked **Slower**) — see [Document text](../rule-conditions-applies-when.md#document-text-doc).
 
 ### Step 3 — Target layout
 

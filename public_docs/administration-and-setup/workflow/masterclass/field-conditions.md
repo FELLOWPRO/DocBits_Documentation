@@ -62,7 +62,7 @@ Une valeur `"1000.01"` dans un champ AMOUNT n’est pas identique aux mêmes car
 
 ## Cartes et paramètres d’exemple
 
-Ces valeurs décrivent des paramètres de cartes individuellement, pas un workflow complet importable. Remplacez YOUR\_\* par vos propres choix de test. L’ID masqué de l’appelant est géré par le concepteur. Catalogue : Dev, DocFlow 2.10.38, 21 octobre 2026 ; vérifiez les versions disponibles et les droits dans votre propre organisation.
+Ces valeurs décrivent des paramètres de cartes individuellement, pas un Workflow complet importable. Remplacez YOUR\_\* par vos propres choix de test. L’ID masqué de l’appelant est géré par le concepteur. Catalogue : Dev, DocFlow 2.10.38, 21 octobre 2026 ; vérifiez les versions disponibles et les droits dans votre propre organisation.
 
 ### `condition_docfield_status` · v2
 
@@ -79,7 +79,7 @@ Identité : `1c35a5a0-1592-446c-9a61-6abb14d27450`
 
 | Paramètre | Type / choix | Exemple |
 | --- | --- | --- |
-| `operator` | `eq / neq / gt / ge / lt / le` | `"gt"` |
+| `operator` | `eq / neq / gt / ge / lt / le / cont / not_cont / matches_regex / not_matches_regex` | `"gt"` |
 | `field_name` | `field_name:str` | `"total_amount"` |
 | `field_value` | `field_value:str` | `"1000"` |
 

@@ -28,39 +28,94 @@ Por exemplo, uma segunda aprovação para faturas grandes: Montante total maior 
 
 ## **Propósito:**
 
-Este cartão de fluxo de trabalho foi concebido para automatizar ações comparando o valor de um campo de documento especificado com um valor ou condição de referência. Assegura uma tomada de decisões dinâmica e precisa nos fluxos de trabalho, com base na validação dos dados do documento.
+Este cartão compara um campo do documento com um valor que introduz no cartão. Utilize-o para encaminhar documentos por caminhos diferentes consoante o valor de um campo, por exemplo uma segunda aprovação para faturas de valor elevado ou um percurso especial para alguns fornecedores.
+
+O cartão lê-se: **Campo do documento** [Nome do campo] [Operador] [Valor do campo].
 
 ## **Componentes do cartão:**
 
 1. **Nome do campo**
-   * **Descrição:** Especifica o nome do campo de documento a avaliar.
-   * **Detalhe:** Tem de corresponder ao identificador exato do campo dentro do documento.
-2. **Operadores**
-   * **Descrição:** Define o tipo de comparação a realizar entre o valor do campo e o valor de referência.
-   * **Opções:**
-     * **Igual a (=):** Verifica se o valor do campo corresponde ao valor de referência.
-     * **Não é igual (≠):** Garante que o valor do campo é diferente do valor de referência.
-     * **Maior que (>):** Confirma que o valor do campo é superior ao valor de referência.
-     * **Maior ou Igual (≥):** Valida que o valor do campo é igual ou superior ao valor de referência.
-     * **Menor que (<):** Verifica se o valor do campo é inferior ao valor de referência.
-     * **Menor ou igual (≤):** Garante que o valor do campo é inferior ou igual ao valor de referência.
+   * O campo do documento a verificar, escolhido entre os campos do tipo de documento.
+2. **Operador**
+   * A forma como o valor do campo é comparado com o **Valor do campo**. Os operadores adequados dependem do tipo do campo, consulte **Operadores** abaixo.
+3. **Valor do campo**
+   * O valor com que se compara. Consoante o operador, é um valor único, uma lista separada por vírgulas ou uma expressão regular.
 
-## **Funcionalidade:**
+## **Operadores:**
 
-* **Avaliação da condição:** O sistema verifica se o valor do campo de documento, em relação à sua coluna associada, cumpre a condição de comparação especificada pelo operador e pelo valor de referência.
-* **Execução da ação:**
-  * **Condição Verdadeira:**\
-    Se o valor do campo de documento cumprir a condição especificada (por exemplo, é igual ao valor de referência), o sistema aciona as ações associadas. Estas podem incluir a atualização de registos, o avanço do fluxo de trabalho ou a geração de notificações.
-  * **Condição Falsa:**\
-    Se o valor do campo de documento não cumprir a condição especificada, são executadas ações alternativas ou nenhuma ação, consoante a configuração do fluxo de trabalho.
+| Operador | Cumprido quando | Tipos de campo |
+| --- | --- | --- |
+| **É igual a** (=) | o valor do campo é igual ao Valor do campo | texto, número, montante, data |
+| **Não é igual a** (≠) | o valor do campo é diferente do Valor do campo | texto, número, montante, data |
+| **Maior que** (>) | o valor do campo é maior do que o Valor do campo | número, montante, data |
+| **Maior ou igual** (≥) | o valor do campo é maior ou igual ao Valor do campo | número, montante, data |
+| **Menor que** (<) | o valor do campo é menor do que o Valor do campo | número, montante, data |
+| **Menor ou igual** (≤) | o valor do campo é menor ou igual ao Valor do campo | número, montante, data |
+| **É um de** | o valor do campo é igual a um elemento de uma lista separada por vírgulas | texto |
+| **Não é nenhum de** | o valor do campo não é igual a nenhum elemento da lista | texto |
+| **Corresponde à regex** | a expressão regular é encontrada no valor do campo | texto, número, montante, data |
+| **Não corresponde à regex** | a expressão regular não é encontrada no valor do campo | texto, número, montante, data |
+
+Os campos booleanos (caixas de verificação) não são suportados por este cartão. Para eles, utilize **Checkbox is checked**.
+
+### É igual a e Não é igual a em campos de texto
+
+O texto é comparado sem distinguir maiúsculas de minúsculas, e um espaço conta o mesmo que um sublinhado: `Acme Freight` é igual a `acme_freight`. Os espaços no início e no fim são ignorados.
+
+### É um de e Não é nenhum de
+
+Utilize estes operadores para verificar um campo de texto em relação a vários valores de uma só vez, por exemplo uma lista de IDs de fornecedor.
+
+* Introduza os valores como uma lista separada por vírgulas: `40321,40322,40388`.
+* O valor do campo tem de ser exatamente igual a um elemento. Um valor parcial não corresponde: `4032` não pertence a `40321,40322,40388`, nem um valor mais longo como `403210`.
+* As maiúsculas não importam, e um espaço conta o mesmo que um sublinhado. Os espaços à volta dos elementos são ignorados, e os elementos vazios, como o de `a,,b`, são saltados.
+* Para usar uma vírgula dentro de um valor, escreva-a como `\,`. `Acme Freight\, LLC,Riverside Supply` é uma lista de dois elementos: `Acme Freight, LLC` e `Riverside Supply`.
+* Um valor de campo vazio não pertence a nenhuma lista. Nesse caso, **É um de** não é cumprido e **Não é nenhum de** é cumprido.
+* Estes operadores funcionam apenas em campos de texto. Num campo de número, montante ou data, ou com uma lista sem nenhum elemento (por exemplo, apenas vírgulas), o cartão termina com um erro.
+
+### Corresponde à regex e Não corresponde à regex
+
+Utilize estes operadores quando é um padrão que decide, por exemplo «começa por» ou «é composto apenas por dígitos».
+
+* O **Valor do campo** é uma expressão regular com sintaxe Python. É procurada em qualquer posição do valor do campo: `Freight` corresponde a `Acme Freight, LLC`.
+* Utilize `^` e `$` para verificar o valor completo: `^33` significa «começa por 33», e `^(40321|40322|40388)$` significa «exatamente um destes valores».
+* O padrão distingue maiúsculas de minúsculas. Comece-o com `(?i)` para ignorar as maiúsculas: `(?i)freight` também corresponde a `Acme Freight, LLC`.
+* `^` e `$` referem-se ao valor do campo completo. Comece o padrão com `(?m)` para os aplicar a cada linha de um valor com várias linhas.
+* O padrão é usado exatamente como o escreve. Não é aparado e as maiúsculas são mantidas, pelo que `\D` (qualquer carácter que não seja um dígito) mantém o seu significado, e um padrão composto por um único espaço procura um espaço.
+* Os caracteres com significado especial em expressões regulares têm de ser escapados para corresponderem literalmente: `\(copy\)` corresponde ao texto `(copy)`, enquanto `(copy)` é um grupo que encontra a palavra `copy`.
+* Os números, montantes e datas são comparados como o texto com que estão guardados: um montante de 997.60 corresponde a `^997\.60$`.
+* Um valor de campo vazio é tratado como texto vazio, pelo que `^$` lhe corresponde.
+* Um padrão inválido, por exemplo `(20` com um parêntese em falta, termina o cartão com um erro. O mesmo acontece quando um padrão demora demasiado tempo num valor (mais de 0,05 segundos), o que só ocorre com padrões mal construídos como `(a|aa)+$`. Em ambos os casos, a condição não é considerada nem cumprida nem não cumprida, pelo que **Não corresponde à regex** nunca passa por causa de um padrão defeituoso.
+
+## **Como funciona o cartão:**
+
+* **Campo não existe no documento:** se o documento não tiver nenhum campo com o nome escolhido, o cartão para e indica que o campo não foi encontrado, seja qual for o operador.
+* **Condição cumprida:** o Workflow continua com o cartão seguinte (no Advanced Workflow, pela saída de sucesso).
+* **Condição não cumprida:** o Workflow para neste cartão (no Advanced Workflow, segue pela saída de condição não cumprida).
+* **Erro:** um operador que não se adequa ao tipo de campo, um Valor do campo em falta, uma lista vazia ou um padrão inutilizável terminam o cartão com um erro. O registo do cartão mostra o motivo.
 
 ## **Configuração:**
 
-* O utilizador seleciona o nome do campo do documento relevante e escolhe o operador no menu pendente. De seguida, o utilizador especifica o valor do campo de referência para concluir a configuração.
+Escolha o campo em **Nome do campo**, o operador em **Operador** e introduza o valor em **Valor do campo**. Para números e montantes, introduza o valor sem símbolo monetário e com ponto decimal, por exemplo `1000.50`.
+
+Para experimentar uma configuração sem esperar por um documento, abra o menu do cartão no Workflow Builder, escolha **Test Card**, selecione um documento e escolha **Test on Document**. O registo do cartão mostra o valor do campo, o operador e o resultado.
+
+## **Exemplos:**
+
+| Objetivo | Nome do campo | Operador | Valor do campo | Valor do campo no documento | Resultado |
+| --- | --- | --- | --- | --- | --- |
+| Segunda aprovação para faturas de valor elevado | Montante total | Maior que | `10000` | 12500.00 | cumprida |
+| Encaminhar alguns fornecedores | ID do fornecedor | É um de | `40321,40322,40388` | 40322 | cumprida |
+| | | | | 4032 | não cumprida |
+| Excluir um fornecedor com uma vírgula no nome | Nome do fornecedor | Não é nenhum de | `Acme Freight\, LLC` | Acme Freight, LLC | não cumprida |
+| Números de encomenda que começam por 33 | Número de encomenda | Corresponde à regex | `^33` | 33012 | cumprida |
+| | | | | 13301 | não cumprida |
+| Referência com letras | Referência | Corresponde à regex | `\D` | AB-1204 | cumprida |
+| Cópias de faturas | Número da fatura | Não corresponde à regex | `\(copy\)` | INV-1204 (copy) | não cumprida |
 
 ## **Conclusão:**
 
-O cartão de fluxo de trabalho "DocField Comparison Validation" é uma ferramenta robusta para o processamento dinâmico de documentos. Ao automatizar ações com base em comparações de campos, este cartão simplifica os fluxos de trabalho, aumenta a precisão e apoia a tomada de decisões orientada por dados.
+O cartão verifica um único campo do documento em relação a um valor, uma lista ou um padrão. Utilize **É um de** para listas fixas de valores e **Corresponde à regex** para padrões como prefixos ou formatos.
 
 <!-- workflow-card-practical-example-20261021 -->
 

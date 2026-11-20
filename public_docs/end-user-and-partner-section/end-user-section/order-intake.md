@@ -8,6 +8,8 @@ description: >-
 
 # Prise de commandes
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/order-intake/v1/fr.mp4" %}
+
 ## Vue d'ensemble
 
 La **Prise de commandes** lit les commandes que vos clients vous envoient — par e-mail ou sous forme de texte collé — et les prépare en tant que commandes client pour votre ERP. DocBits identifie le client, lit chaque position, l'associe à un article de votre fichier articles et vous montre ce qui demande encore une décision. Vous vérifiez la commande, complétez ce qui manque, interrogez le client si un point n'est pas clair, puis vous l'approuvez. Ce n'est qu'à ce moment que la commande client est créée dans l'ERP.

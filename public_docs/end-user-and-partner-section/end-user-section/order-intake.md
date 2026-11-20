@@ -8,6 +8,8 @@ description: >-
 
 # Entrada de Pedidos
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/order-intake/v1/pt.mp4" %}
+
 ## Visão geral
 
 A **Entrada de Pedidos** lê os pedidos que seus clientes enviam — por e-mail ou como texto colado — e os prepara como pedidos de venda para o seu ERP. O DocBits identifica o cliente, lê cada posição, faz a correspondência com um item do seu cadastro de itens e mostra o que ainda precisa de uma decisão. Você verifica o pedido, completa o que falta, consulta o cliente quando algo não está claro e aprova o pedido. Só então o pedido de venda é criado no ERP.

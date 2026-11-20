@@ -28,7 +28,7 @@ Choose a card by its operation and data scope. **Field is** checks presence or e
 | Input       | Example configuration                                              |
 | ----------- | ------------------------------------------------------------------ |
 | Field Name  | `total_amount`, the technical key rather than its translated label |
-| Operator    | `gt` / Greater Than                                                |
+| Operator    | `gt` / Greater Than. Text fields also offer **Is One Of** / **Is Not One Of** (comma-separated list) and every type except checkboxes **Matches Regex** / **Does Not Match Regex** (regular expression) |
 | Field Value | `1000`, without a currency symbol                                  |
 
 The card reads the current document's field and compares it with the configured value. It does not change status, create a task or export. In Advanced, true continues through Success, normally false through Failed Condition, and an evaluation error through Error. In Standard, a condition that is not met stops the linear sequence.

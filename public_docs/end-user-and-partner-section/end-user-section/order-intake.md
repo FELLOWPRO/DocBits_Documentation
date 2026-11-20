@@ -7,6 +7,8 @@ description: >-
 
 # Order Intake
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/order-intake/v1/en.mp4" %}
+
 ## Overview
 
 **Order Intake** reads the orders your customers send you — by e-mail or as pasted text — and prepares them as sales orders for your ERP. DocBits finds the customer, reads every position, matches it to an item of your item master and shows you what still needs a decision. You check the order, fix what is missing, ask the customer if something is unclear, and approve it. Only then is the sales order created in the ERP.

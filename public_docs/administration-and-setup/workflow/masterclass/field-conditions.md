@@ -62,7 +62,7 @@ AMOUNT 字段里的 `"1000.01"` 与文本字段里同样的字符并不等同。
 
 ## 卡片与示例参数
 
-这些值描述的是单张卡片的参数，而不是一份可导入的完整 workflow。请把 YOUR\_\* 替换为您自己的测试选择。隐藏的调用方 ID 由设计器管理。目录：Dev，DocFlow 2.10.38，2026 年 10 月 21 日；请在您自己的组织中确认可用版本与权限。
+这些值描述的是单张卡片的参数，而不是一份可导入的完整 Workflow。请把 YOUR\_\* 替换为您自己的测试选择。隐藏的调用方 ID 由设计器管理。目录：Dev，DocFlow 2.10.38，2026 年 10 月 21 日；请在您自己的组织中确认可用版本与权限。
 
 ### `condition_docfield_status` · v2
 
@@ -79,7 +79,7 @@ AMOUNT 字段里的 `"1000.01"` 与文本字段里同样的字符并不等同。
 
 | 参数 | 类型 / 选项 | 示例 |
 | --- | --- | --- |
-| `operator` | `eq / neq / gt / ge / lt / le` | `"gt"` |
+| `operator` | `eq / neq / gt / ge / lt / le / cont / not_cont / matches_regex / not_matches_regex` | `"gt"` |
 | `field_name` | `field_name:str` | `"total_amount"` |
 | `field_value` | `field_value:str` | `"1000"` |
 

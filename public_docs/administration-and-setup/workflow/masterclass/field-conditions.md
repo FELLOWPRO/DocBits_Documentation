@@ -62,7 +62,7 @@ Wartość `"1000.01"` w polu AMOUNT to nie to samo co te same znaki w polu tekst
 
 ## Karty i przykładowe parametry
 
-Te wartości opisują parametry pojedynczych kart, a nie kompletny workflow do importu. Zastąp YOUR\_\* własnymi wyborami testowymi. Ukrytym identyfikatorem wywołującego zarządza projektant. Katalog: Dev, DocFlow 2.10.38, 21 października 2026; dostępne wersje i uprawnienia sprawdź we własnej organizacji.
+Te wartości opisują parametry pojedynczych kart, a nie kompletny Workflow do importu. Zastąp YOUR\_\* własnymi wyborami testowymi. Ukrytym identyfikatorem wywołującego zarządza projektant. Katalog: Dev, DocFlow 2.10.38, 21 października 2026; dostępne wersje i uprawnienia sprawdź we własnej organizacji.
 
 ### `condition_docfield_status` · v2
 
@@ -79,7 +79,7 @@ Tożsamość: `1c35a5a0-1592-446c-9a61-6abb14d27450`
 
 | Parametr | Typ / opcje | Przykład |
 | --- | --- | --- |
-| `operator` | `eq / neq / gt / ge / lt / le` | `"gt"` |
+| `operator` | `eq / neq / gt / ge / lt / le / cont / not_cont / matches_regex / not_matches_regex` | `"gt"` |
 | `field_name` | `field_name:str` | `"total_amount"` |
 | `field_value` | `field_value:str` | `"1000"` |
 

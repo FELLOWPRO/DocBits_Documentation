@@ -7,6 +7,8 @@ description: >-
 
 # Przyjmowanie zamówień
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/order-intake/v1/pl.mp4" %}
+
 ## Przegląd
 
 Moduł **Przyjmowanie zamówień** odczytuje zamówienia, które wysyłają Ci klienci — e-mailem lub jako wklejony tekst — i przygotowuje je jako zamówienia sprzedaży dla Twojego systemu ERP. DocBits rozpoznaje klienta, odczytuje każdą pozycję, dopasowuje ją do artykułu z Twojej kartoteki artykułów i pokazuje, co jeszcze wymaga decyzji. Sprawdzasz zamówienie, uzupełniasz braki, w razie wątpliwości pytasz klienta i zatwierdzasz zamówienie. Dopiero wtedy zamówienie sprzedaży zostaje utworzone w ERP.

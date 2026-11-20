@@ -8,6 +8,8 @@ description: >-
 
 # Orderverwerking
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/order-intake/v1/nl.mp4" %}
+
 ## Overzicht
 
 **Orderverwerking** leest de bestellingen die uw klanten u sturen, per e-mail of als geplakte tekst, en bereidt ze voor als verkooporders voor uw ERP. DocBits herkent de klant, leest elke positie, koppelt die aan een artikel uit uw artikelstamgegevens en laat zien waarover nog een beslissing nodig is. U controleert de bestelling, vult aan wat ontbreekt, stelt de klant een vraag als iets onduidelijk is en keurt de bestelling goed. Pas dan wordt de verkooporder in het ERP aangemaakt.

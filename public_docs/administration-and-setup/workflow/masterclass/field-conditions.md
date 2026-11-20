@@ -62,7 +62,7 @@ Um valor `"1000.01"` num campo AMOUNT não é o mesmo que os mesmos caracteres n
 
 ## Cartões e parâmetros de exemplo
 
-Estes valores descrevem parâmetros de cartões individuais, não um workflow completo importável. Substitua YOUR\_\* pelas suas próprias escolhas de teste. O ID oculto do chamador é gerido pelo designer. Catálogo: Dev, DocFlow 2.10.38, 21 de outubro de 2026; verifique as versões disponíveis e as permissões na sua própria organização.
+Estes valores descrevem parâmetros de cartões individuais, não um Workflow completo importável. Substitua YOUR\_\* pelas suas próprias escolhas de teste. O ID oculto do chamador é gerido pelo designer. Catálogo: Dev, DocFlow 2.10.38, 21 de outubro de 2026; verifique as versões disponíveis e as permissões na sua própria organização.
 
 ### `condition_docfield_status` · v2
 
@@ -79,7 +79,7 @@ Identidade: `1c35a5a0-1592-446c-9a61-6abb14d27450`
 
 | Parâmetro | Tipo / opções | Exemplo |
 | --- | --- | --- |
-| `operator` | `eq / neq / gt / ge / lt / le` | `"gt"` |
+| `operator` | `eq / neq / gt / ge / lt / le / cont / not_cont / matches_regex / not_matches_regex` | `"gt"` |
 | `field_name` | `field_name:str` | `"total_amount"` |
 | `field_value` | `field_value:str` | `"1000"` |
 

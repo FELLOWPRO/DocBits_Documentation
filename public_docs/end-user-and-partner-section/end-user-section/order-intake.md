@@ -8,6 +8,8 @@ description: >-
 
 # Recepción de pedidos
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/order-intake/v1/es.mp4" %}
+
 ## Descripción general
 
 La **Recepción de pedidos** lee los pedidos que le envían sus clientes —por correo electrónico o como texto pegado— y los prepara como pedidos de venta para su ERP. DocBits identifica al cliente, lee cada posición, la asigna a un artículo de su maestro de artículos y le muestra lo que aún requiere una decisión. Usted comprueba el pedido, completa lo que falta, consulta al cliente si algo no está claro y lo aprueba. Solo entonces se crea el pedido de venta en el ERP.

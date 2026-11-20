@@ -28,39 +28,94 @@ Por ejemplo, una segunda aprobación para facturas grandes: Importe total mayor 
 
 ## **Propósito:**
 
-Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones comparando el valor de un campo de documento especificado con un valor o condición de referencia. Garantiza una toma de decisiones dinámica y precisa en los flujos de trabajo basada en la validación de los datos del documento.
+Esta tarjeta compara un campo del documento con un valor que usted introduce en la tarjeta. Úsela para enviar los documentos por caminos distintos según el valor de un campo, por ejemplo una segunda aprobación para facturas grandes o una ruta especial para unos pocos proveedores.
+
+La tarjeta dice: **Campo del documento** [Field Name] [Operator] [Field Value].
 
 ## **Componentes de la tarjeta:**
 
-1. **Nombre de campo**
-   * **Descripción:** Especifica el nombre del campo del documento que se evaluará.
-   * **Detalle:** Debe coincidir con el identificador exacto del campo dentro del documento.
-2. **Operadores**
-   * **Descripción:** Define el tipo de comparación que se realizará entre el valor del campo y el valor de referencia.
-   * **Opciones:**
-     * **Igual a (=):** Comprueba si el valor del campo coincide con el valor de referencia.
-     * **No iguales (≠):** Garantiza que el valor del campo difiera del valor de referencia.
-     * **Mayor que (>):** Confirma que el valor del campo es mayor que el valor de referencia.
-     * **Mayor o igual (≥):** Valida que el valor del campo sea igual o mayor que el valor de referencia.
-     * **Menor que (<):** Comprueba si el valor del campo es menor que el valor de referencia.
-     * **Menos o Igual (≤):** Garantiza que el valor del campo sea menor o igual que el valor de referencia.
+1. **Field Name**
+   * El campo del documento que se comprueba, elegido entre los campos del tipo de documento.
+2. **Operator**
+   * Cómo se compara el valor del campo con el **Field Value**. Qué operadores tienen sentido depende del tipo del campo, consulte **Operadores** más abajo.
+3. **Field Value**
+   * El valor con el que se compara. Según el operador, es un valor único, una lista separada por comas o una expresión regular.
 
-## **Funcionalidad:**
+## **Operadores:**
 
-* **Evaluación de la condición:** El sistema comprueba si el valor del campo del documento, en relación con su columna asociada, cumple la condición de comparación especificada por el operador y el valor de referencia.
-* **Ejecución de la acción:**
-  * **Condición verdadera:**\
-    Si el valor del campo del documento cumple la condición especificada (p. ej., es igual al valor de referencia), el sistema dispara las acciones asociadas. Estas podrían incluir actualizar registros, avanzar el flujo de trabajo o generar notificaciones.
-  * **Condición falsa:**\
-    Si el valor del campo del documento no cumple la condición especificada, se ejecutan acciones alternativas o ninguna acción, según la configuración del flujo de trabajo.
+| Operador | Se cumple cuando | Tipos de campo |
+| --- | --- | --- |
+| **Es igual a** (=) | el valor del campo es igual al Field Value | texto, número, importe, fecha |
+| **No es igual a** (≠) | el valor del campo es distinto del Field Value | texto, número, importe, fecha |
+| **Mayor Que** (>) | el valor del campo es mayor que el Field Value | número, importe, fecha |
+| **Mayor o igual que** (≥) | el valor del campo es mayor o igual que el Field Value | número, importe, fecha |
+| **Menor que** (<) | el valor del campo es menor que el Field Value | número, importe, fecha |
+| **Menos o igual** (≤) | el valor del campo es menor o igual que el Field Value | número, importe, fecha |
+| **Es uno de** | el valor del campo es igual a un elemento de una lista separada por comas | texto |
+| **No es uno de** | el valor del campo no es igual a ninguno de los elementos de la lista | texto |
+| **Coincide con regex** | la expresión regular se encuentra en el valor del campo | texto, número, importe, fecha |
+| **No coincide con regex** | la expresión regular no se encuentra en el valor del campo | texto, número, importe, fecha |
+
+Esta tarjeta no admite campos booleanos (casillas de verificación). Para ellos, use **Checkbox is checked**.
+
+### Es igual a y No es igual a en campos de texto
+
+El texto se compara sin tener en cuenta las mayúsculas, y un espacio cuenta igual que un guion bajo: `Acme Freight` es igual a `acme_freight`. Los espacios al principio y al final se ignoran.
+
+### Es uno de e No es uno de
+
+Use estos operadores para comprobar un campo de texto frente a varios valores a la vez, por ejemplo una lista de ID de proveedor.
+
+* Introduzca los valores como lista separada por comas: `40321,40322,40388`.
+* El valor del campo tiene que ser exactamente igual a un elemento. Un valor parcial no coincide: `4032` no está en `40321,40322,40388`, y tampoco un valor más largo como `403210`.
+* Las mayúsculas no importan, y un espacio cuenta igual que un guion bajo. Los espacios alrededor de los elementos se ignoran, y los elementos vacíos, como el de `a,,b`, se omiten.
+* Para usar una coma dentro de un valor, escríbala como `\,`. `Acme Freight\, LLC,Riverside Supply` es una lista de dos elementos: `Acme Freight, LLC` y `Riverside Supply`.
+* Un valor de campo vacío no está en ninguna lista. Entonces **Es uno de** no se cumple e **No es uno de** se cumple.
+* Estos operadores solo funcionan con campos de texto. En un campo de número, importe o fecha, o con una lista sin ningún elemento (por ejemplo, solo comas), la tarjeta termina con un error.
+
+### Coincide con regex y No coincide con regex
+
+Use estos operadores cuando decide un patrón, por ejemplo "empieza por" o "consta solo de dígitos".
+
+* El **Field Value** es una expresión regular con sintaxis de Python. Se busca en cualquier parte del valor del campo: `Freight` coincide con `Acme Freight, LLC`.
+* Use `^` y `$` para comprobar el valor completo: `^33` significa "empieza por 33", y `^(40321|40322|40388)$` significa "exactamente uno de estos valores".
+* El patrón distingue entre mayúsculas y minúsculas. Empiécelo con `(?i)` para ignorar las mayúsculas: `(?i)freight` también coincide con `Acme Freight, LLC`.
+* `^` y `$` se refieren al valor completo del campo. Empiece el patrón con `(?m)` para aplicarlos a cada línea de un valor con varias líneas.
+* El patrón se usa exactamente como lo escribe. No se recortan espacios y se conservan las mayúsculas, de modo que `\D` (cualquier carácter que no sea un dígito) mantiene su significado, y un patrón que consta de un solo espacio busca un espacio.
+* Los caracteres con un significado especial en las expresiones regulares deben escaparse para buscarlos literalmente: `\(copy\)` coincide con el texto `(copy)`, mientras que `(copy)` es un grupo que encuentra la palabra `copy`.
+* Los números, importes y fechas se comparan como el texto con el que están almacenados: un importe de 997.60 coincide con `^997\.60$`.
+* Un valor de campo vacío se compara como texto vacío, por lo que `^$` coincide con él.
+* Un patrón no válido, por ejemplo `(20` con un paréntesis que falta, termina la tarjeta con un error. Lo mismo ocurre cuando un patrón tarda demasiado con un valor (más de 0,05 segundos), lo que solo sucede con patrones mal construidos como `(a|aa)+$`. En ambos casos la tarjeta no se cumple ni deja de cumplirse, de modo que **No coincide con regex** nunca pasa por un patrón defectuoso.
+
+## **Funcionamiento de la tarjeta:**
+
+* **Campo que no está en el documento:** si el documento no tiene ningún campo con el nombre elegido, la tarjeta se detiene e informa de que no se encontró el campo, sea cual sea el operador.
+* **Condición cumplida:** el Workflow continúa con la siguiente tarjeta (en el Advanced Workflow, por la salida de éxito).
+* **Condición no cumplida:** el Workflow se detiene en esta tarjeta (en el Advanced Workflow, toma la salida de condición no cumplida).
+* **Error:** un operador que no corresponde al tipo de campo, un Field Value que falta, una lista vacía o un patrón inutilizable terminan la tarjeta con un error. El registro de la tarjeta muestra el motivo.
 
 ## **Configuración:**
 
-* El usuario selecciona el nombre del campo del documento pertinente y elige el operador del menú desplegable. A continuación, el usuario especifica el valor del campo de referencia para completar la configuración.
+Elija el campo en **Field Name**, el operador en **Operator** e introduzca el valor en **Field Value**. Para números e importes, introduzca el valor sin símbolo monetario y con punto decimal, por ejemplo `1000.50`.
+
+Para probar una configuración sin esperar a un documento, abra el menú de la tarjeta en el Workflow Builder, elija **Test Card**, seleccione un documento y pulse **Test on Document**. El registro de la tarjeta muestra el valor del campo, el operador y el resultado.
+
+## **Ejemplos:**
+
+| Objetivo | Field Name | Operator | Field Value | Valor del campo en el documento | Resultado |
+| --- | --- | --- | --- | --- | --- |
+| Segunda aprobación para facturas grandes | Importe total | Mayor Que | `10000` | 12500.00 | se cumple |
+| Dirigir a unos pocos proveedores | ID de proveedor | Es uno de | `40321,40322,40388` | 40322 | se cumple |
+| | | | | 4032 | no se cumple |
+| Omitir un proveedor con una coma en su nombre | Nombre del proveedor | No es uno de | `Acme Freight\, LLC` | Acme Freight, LLC | no se cumple |
+| Números de pedido que empiezan por 33 | Número de pedido | Coincide con regex | `^33` | 33012 | se cumple |
+| | | | | 13301 | no se cumple |
+| Referencia con letras | Referencia | Coincide con regex | `\D` | AB-1204 | se cumple |
+| Copias de facturas | Número de factura | No coincide con regex | `\(copy\)` | INV-1204 (copy) | no se cumple |
 
 ## **Conclusión:**
 
-La tarjeta de flujo de trabajo "DocField Comparison Validation" es una herramienta robusta para el procesamiento dinámico de documentos. Al automatizar acciones según las comparaciones de campos, esta tarjeta agiliza los flujos de trabajo, mejora la precisión y facilita la toma de decisiones basada en datos.
+La tarjeta comprueba un único campo del documento frente a un valor, una lista o un patrón. Use **Es uno de** para listas fijas de valores y **Coincide con regex** para patrones como prefijos o formatos.
 
 <!-- workflow-card-practical-example-20261021 -->
 

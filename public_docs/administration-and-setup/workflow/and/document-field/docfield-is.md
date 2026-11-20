@@ -28,39 +28,94 @@ Na przykład drugie zatwierdzenie dla dużych faktur: Całkowita kwota większa 
 
 ## **Cel:**
 
-Ta karta przepływu pracy służy do automatyzacji akcji poprzez porównanie wartości określonego pola dokumentu z wartością referencyjną lub warunkiem. Zapewnia dynamiczne i dokładne podejmowanie decyzji w przepływach pracy na podstawie walidacji danych dokumentu.
+Ta karta porównuje jedno pole dokumentu z wartością, którą wpisujesz na karcie. Użyj jej, aby kierować dokumenty różnymi ścieżkami w zależności od wartości pola, na przykład drugie zatwierdzenie dla dużych faktur albo osobna ścieżka dla kilku dostawców.
+
+Karta brzmi: **Pole dokumentu** [Nazwa pola] [Operator] [Field Value].
 
 ## **Komponenty karty:**
 
 1. **Nazwa pola**
-   * **Opis:** Określa nazwę pola dokumentu, które ma być oceniane.
-   * **Szczegóły:** Musi to odpowiadać dokładnemu identyfikatorowi pola w dokumencie.
-2. **Operatorzy**
-   * **Opis:** Definiuje typ porównania, który ma być wykonany między wartością pola a wartością referencyjną.
-   * **Opcje:**
-     * **Równa się (=):** Sprawdza, czy wartość pola odpowiada wartości referencyjnej.
-     * **Nie równa się (≠):** Zapewnia, że wartość pola różni się od wartości referencyjnej.
-     * **Większy niż (>):** Potwierdza, że wartość pola jest większa niż wartość referencyjna.
-     * **Większe lub równe (≥):** Weryfikuje, że wartość pola jest równa lub większa niż wartość referencyjna.
-     * **Mniejszy niż (<):** Sprawdza, czy wartość pola jest mniejsza niż wartość referencyjna.
-     * **Mniejszy lub równy (≤):** Zapewnia, że wartość pola jest mniejsza lub równa wartości referencyjnej.
+   * Pole dokumentu, które ma zostać sprawdzone, wybierane spośród pól typu dokumentu.
+2. **Operator**
+   * Sposób porównania wartości pola z **Field Value**. To, które operatory mają sens, zależy od typu pola, zobacz **Operatory** poniżej.
+3. **Field Value**
+   * Wartość, z którą następuje porównanie. W zależności od operatora jest to pojedyncza wartość, lista rozdzielona przecinkami lub wyrażenie regularne.
 
-## **Funkcjonalność:**
+## **Operatory:**
 
-* **Ocena warunku:** System sprawdza, czy wartość pola dokumentu, w odniesieniu do powiązanej z nim kolumny, spełnia warunek porównania określony przez operator i wartość referencyjną.
-* **Wykonanie akcji:**
-  * **Warunek prawdziwy:**\
-    Jeśli wartość pola dokumentu spełnia określony warunek (np. równa się wartości referencyjnej), system wyzwala powiązane akcje. Mogą one obejmować aktualizację rekordów, kontynuowanie przepływu pracy lub generowanie powiadomień.
-  * **Warunek fałszywy:**\
-    Jeśli wartość pola dokumentu nie spełnia określonego warunku, wykonywane są alternatywne akcje lub żadne, na podstawie konfiguracji przepływu pracy.
+| Operator | Spełniony, gdy | Typy pól |
+| --- | --- | --- |
+| **Równa się** (=) | wartość pola jest równa Field Value | tekst, liczba, kwota, data |
+| **Nie równe** (≠) | wartość pola różni się od Field Value | tekst, liczba, kwota, data |
+| **Większy niż** (>) | wartość pola jest większa niż Field Value | liczba, kwota, data |
+| **Większy lub równy** (≥) | wartość pola jest większa lub równa Field Value | liczba, kwota, data |
+| **Mniej niż** (<) | wartość pola jest mniejsza niż Field Value | liczba, kwota, data |
+| **Mniej lub Równe** (≤) | wartość pola jest mniejsza lub równa Field Value | liczba, kwota, data |
+| **Jest jednym z** | wartość pola jest równa jednemu elementowi listy rozdzielonej przecinkami | tekst |
+| **Nie jest żadnym z** | wartość pola nie jest równa żadnemu elementowi listy | tekst |
+| **Pasuje do regex** | wyrażenie regularne zostaje znalezione w wartości pola | tekst, liczba, kwota, data |
+| **Nie pasuje do regex** | wyrażenie regularne nie zostaje znalezione w wartości pola | tekst, liczba, kwota, data |
+
+Pola logiczne (pola wyboru) nie są obsługiwane przez tę kartę. Do nich użyj karty **Pole wyboru jest zaznaczone**.
+
+### Równa się i Nie równe w polach tekstowych
+
+Tekst jest porównywany bez uwzględniania wielkości liter, a spacja jest traktowana tak samo jak podkreślenie: `Acme Freight` jest równe `acme_freight`. Spacje na początku i na końcu są ignorowane.
+
+### Jest jednym z i Nie jest żadnym z
+
+Użyj tych operatorów, aby sprawdzić pole tekstowe jednocześnie względem kilku wartości, na przykład listy identyfikatorów dostawców.
+
+* Wpisz wartości jako listę rozdzieloną przecinkami: `40321,40322,40388`.
+* Wartość pola musi być dokładnie równa jednemu elementowi. Wartość częściowa nie jest dopasowaniem: `4032` nie należy do `40321,40322,40388`, podobnie jak dłuższa wartość, taka jak `403210`.
+* Wielkość liter nie ma znaczenia, a spacja jest traktowana tak samo jak podkreślenie. Spacje wokół elementów są ignorowane, a puste elementy, takie jak ten w `a,,b`, są pomijane.
+* Aby użyć przecinka wewnątrz wartości, zapisz go jako `\,`. `Acme Freight\, LLC,Riverside Supply` to lista dwóch elementów: `Acme Freight, LLC` i `Riverside Supply`.
+* Pusta wartość pola nie należy do żadnej listy. **Jest jednym z** nie jest wtedy spełniony, a **Nie jest żadnym z** jest spełniony.
+* Te operatory działają tylko w polach tekstowych. W polu liczbowym, kwotowym lub z datą albo z listą, która nie ma żadnych elementów (na przykład same przecinki), karta kończy się błędem.
+
+### Pasuje do regex i Nie pasuje do regex
+
+Użyj tych operatorów, gdy decyduje wzorzec, na przykład „zaczyna się od” albo „składa się tylko z cyfr”.
+
+* **Field Value** to wyrażenie regularne w składni Pythona. Jest wyszukiwane w dowolnym miejscu wartości pola: `Freight` pasuje do `Acme Freight, LLC`.
+* Użyj `^` i `$`, aby sprawdzić całą wartość: `^33` oznacza „zaczyna się od 33”, a `^(40321|40322|40388)$` oznacza „dokładnie jedna z tych wartości”.
+* Wzorzec uwzględnia wielkość liter. Rozpocznij go od `(?i)`, aby ją ignorować: `(?i)freight` również pasuje do `Acme Freight, LLC`.
+* `^` i `$` odnoszą się do całej wartości pola. Rozpocznij wzorzec od `(?m)`, aby stosować je do każdego wiersza wartości składającej się z kilku wierszy.
+* Wzorzec jest używany dokładnie tak, jak go wpiszesz. Nie jest przycinany, a wielkość liter zostaje zachowana, więc `\D` (dowolny znak, który nie jest cyfrą) zachowuje swoje znaczenie, a wzorzec składający się z jednej spacji wyszukuje spację.
+* Znaki o specjalnym znaczeniu w wyrażeniach regularnych trzeba poprzedzić znakiem ucieczki, aby były dopasowywane dosłownie: `\(copy\)` pasuje do tekstu `(copy)`, natomiast `(copy)` to grupa, która znajduje słowo `copy`.
+* Liczby, kwoty i daty są dopasowywane jako tekst, w postaci, w jakiej są zapisane: kwota 997.60 pasuje do `^997\.60$`.
+* Pusta wartość pola jest dopasowywana jako pusty tekst, więc pasuje do niej `^$`.
+* Niepoprawny wzorzec, na przykład `(20` z brakującym nawiasem, kończy kartę błędem. To samo dzieje się, gdy wzorzec działa na wartości zbyt długo (ponad 0,05 sekundy), co zdarza się tylko przy źle zbudowanych wzorcach, takich jak `(a|aa)+$`. W obu przypadkach karta nie jest ani spełniona, ani niespełniona, więc **Nie pasuje do regex** nigdy nie przechodzi z powodu uszkodzonego wzorca.
+
+## **Jak działa karta:**
+
+* **Pola nie ma w dokumencie:** jeśli dokument nie ma pola o wybranej nazwie, karta zatrzymuje się i zgłasza, że pole nie zostało znalezione, niezależnie od operatora.
+* **Warunek spełniony:** Workflow jest kontynuowany następną kartą (w Advanced Workflow przez wyjście sukcesu).
+* **Warunek niespełniony:** Workflow zatrzymuje się na tej karcie (w Advanced Workflow wybiera wyjście dla niespełnionego warunku).
+* **Błąd:** operator niepasujący do typu pola, brakująca Field Value, pusta lista lub nieużyteczny wzorzec kończą kartę błędem. Log karty pokazuje przyczynę.
 
 ## **Konfiguracja:**
 
-* Użytkownik wybiera nazwę pola odpowiedniego dokumentu i wybiera operator z menu rozwijanego. Następnie użytkownik określa wartość pola referencyjnego, aby zakończyć konfigurację.
+Wybierz pole w **Nazwa pola**, operator w **Operator** i wpisz wartość w **Field Value**. W przypadku liczb i kwot wpisz wartość bez symbolu waluty i z kropką dziesiętną, na przykład `1000.50`.
+
+Aby wypróbować konfigurację bez czekania na dokument, otwórz menu karty w Workflow Builder, wybierz **Testuj kartę**, wskaż dokument i wybierz **Testuj na dokumencie**. Log karty pokazuje wartość pola, operator i wynik.
+
+## **Przykłady:**
+
+| Cel | Nazwa pola | Operator | Field Value | Wartość pola w dokumencie | Wynik |
+| --- | --- | --- | --- | --- | --- |
+| Drugie zatwierdzenie dla dużych faktur | Całkowita kwota | Większy niż | `10000` | 12500.00 | spełniony |
+| Osobna ścieżka dla kilku dostawców | ID dostawcy | Jest jednym z | `40321,40322,40388` | 40322 | spełniony |
+| | | | | 4032 | niespełniony |
+| Pominięcie dostawcy z przecinkiem w nazwie | Nazwa dostawcy | Nie jest żadnym z | `Acme Freight\, LLC` | Acme Freight, LLC | niespełniony |
+| Numery zamówień zaczynające się od 33 | Numer zamówienia | Pasuje do regex | `^33` | 33012 | spełniony |
+| | | | | 13301 | niespełniony |
+| Referencja zawierająca litery | Referencja | Pasuje do regex | `\D` | AB-1204 | spełniony |
+| Kopie faktur | Numer faktury | Nie pasuje do regex | `\(copy\)` | INV-1204 (copy) | niespełniony |
 
 ## **Podsumowanie:**
 
-Karta przepływu pracy "DocField Comparison Validation" jest niezawodnym narzędziem do dynamicznego przetwarzania dokumentów. Automatyzując akcje na podstawie porównań pól, karta ta usprawnia przepływy pracy, zwiększa dokładność i wspiera podejmowanie decyzji opartych na danych.
+Karta sprawdza pojedyncze pole dokumentu względem wartości, listy lub wzorca. Użyj **Jest jednym z** dla stałych list wartości, a **Pasuje do regex** dla wzorców, takich jak prefiksy lub formaty.
 
 <!-- workflow-card-practical-example-20261021 -->
 

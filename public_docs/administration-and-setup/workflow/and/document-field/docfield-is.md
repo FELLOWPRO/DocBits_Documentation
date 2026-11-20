@@ -28,39 +28,94 @@ Per esempio, una seconda approvazione per fatture grandi: Importo totale maggior
 
 ## **Scopo:**
 
-Questa scheda di workflow è progettata per automatizzare le azioni confrontando il valore di un campo del documento specificato con un valore o una condizione di riferimento. Garantisce un processo decisionale dinamico e accurato nei workflow basato sulla validazione dei dati del documento.
+Questa scheda confronta un campo del documento con un valore che inserisci nella scheda. Usala per indirizzare i documenti su percorsi diversi in base al valore di un campo, per esempio una seconda approvazione per le fatture grandi o un percorso speciale per alcuni fornitori.
+
+La scheda si legge: **Campo del documento** [Field Name] [Operator] [Field Value].
 
 ## **Componenti della scheda:**
 
 1. **Nome campo**
-   * **Descrizione:** Specifica il nome del campo del documento da valutare.
-   * **Dettaglio:** Deve corrispondere all'identificatore esatto del campo all'interno del documento.
-2. **Operatori**
-   * **Descrizione:** Definisce il tipo di confronto da eseguire tra il valore del campo e il valore di riferimento.
-   * **Opzioni:**
-     * **Uguale (=):** Verifica se il valore del campo corrisponde al valore di riferimento.
-     * **Diverso (≠):** Garantisce che il valore del campo sia diverso dal valore di riferimento.
-     * **Maggiore di (>):** Conferma che il valore del campo sia maggiore del valore di riferimento.
-     * **Maggiore o uguale (≥):** Verifica che il valore del campo sia uguale o maggiore del valore di riferimento.
-     * **Minore di (<):** Verifica se il valore del campo è minore del valore di riferimento.
-     * **Minore o uguale (≤):** Garantisce che il valore del campo sia minore o uguale al valore di riferimento.
+   * Il campo del documento da controllare, scelto tra i campi del tipo di documento.
+2. **Operatore**
+   * Come il valore del campo viene confrontato con il **Field Value**. Gli operatori sensati dipendono dal tipo del campo, vedi **Operatori** più sotto.
+3. **Field Value**
+   * Il valore con cui confrontare. A seconda dell'operatore è un singolo valore, un elenco separato da virgole o un'espressione regolare.
 
-## **Funzionalità:**
+## **Operatori:**
 
-* **Valutazione della condizione:** Il sistema verifica se il valore del campo del documento, in relazione alla colonna associata, soddisfa la condizione di confronto specificata dall'operatore e dal valore di riferimento.
-* **Esecuzione dell'azione:**
-  * **Condizione vera:**\
-    Se il valore del campo del documento soddisfa la condizione specificata (es. è uguale al valore di riferimento), il sistema attiva le azioni associate. Queste potrebbero includere l'aggiornamento di record, l'avanzamento del workflow o la generazione di notifiche.
-  * **Condizione falsa:**\
-    Se il valore del campo del documento non soddisfa la condizione specificata, vengono eseguite azioni alternative o nessuna azione, in base alla configurazione del workflow.
+| Operatore | Soddisfatto quando | Tipi di campo |
+| --- | --- | --- |
+| **Pari** (=) | il valore del campo è uguale al Field Value | testo, numero, importo, data |
+| **Non uguali** (≠) | il valore del campo è diverso dal Field Value | testo, numero, importo, data |
+| **Maggiore di** (>) | il valore del campo è maggiore del Field Value | numero, importo, data |
+| **Maggiore o uguale** (≥) | il valore del campo è maggiore o uguale al Field Value | numero, importo, data |
+| **Meno di** (<) | il valore del campo è minore del Field Value | numero, importo, data |
+| **Meno o uguale** (≤) | il valore del campo è minore o uguale al Field Value | numero, importo, data |
+| **È uno tra** | il valore del campo è uguale a un elemento di un elenco separato da virgole | testo |
+| **Non è uno tra** | il valore del campo non è uguale a nessun elemento dell'elenco | testo |
+| **Corrisponde alla regex** | l'espressione regolare viene trovata nel valore del campo | testo, numero, importo, data |
+| **Non corrisponde alla regex** | l'espressione regolare non viene trovata nel valore del campo | testo, numero, importo, data |
+
+I campi booleani (caselle di controllo) non sono supportati da questa scheda. Per questi usa **Checkbox is checked**.
+
+### Pari e Non uguali sui campi di testo
+
+Il testo viene confrontato senza tenere conto delle maiuscole, e uno spazio vale quanto un trattino basso: `Acme Freight` è uguale a `acme_freight`. Gli spazi all'inizio e alla fine vengono ignorati.
+
+### È uno tra e Non è uno tra
+
+Usa questi operatori per confrontare un campo di testo con più valori in una volta, per esempio un elenco di ID fornitore.
+
+* Inserisci i valori come elenco separato da virgole: `40321,40322,40388`.
+* Il valore del campo deve essere esattamente uguale a un elemento. Un valore parziale non corrisponde: `4032` non è uno di `40321,40322,40388`, e neppure un valore più lungo come `403210`.
+* Le maiuscole non contano, e uno spazio vale quanto un trattino basso. Gli spazi intorno agli elementi vengono ignorati, e gli elementi vuoti, come quello in `a,,b`, vengono saltati.
+* Per usare una virgola all'interno di un valore, scrivila come `\,`. `Acme Freight\, LLC,Riverside Supply` è un elenco di due elementi: `Acme Freight, LLC` e `Riverside Supply`.
+* Un valore del campo vuoto non è in nessun elenco. **È uno tra** non è quindi soddisfatto, mentre **Non è uno tra** è soddisfatto.
+* Questi operatori funzionano solo sui campi di testo. Su un campo numero, importo o data, oppure con un elenco senza alcun elemento (per esempio solo virgole), la scheda termina con un errore.
+
+### Corrisponde alla regex e Non corrisponde alla regex
+
+Usa questi operatori quando decide un modello, per esempio "inizia con" oppure "è composto solo da cifre".
+
+* Il **Field Value** è un'espressione regolare con sintassi Python. Viene cercata in qualsiasi punto del valore del campo: `Freight` corrisponde a `Acme Freight, LLC`.
+* Usa `^` e `$` per controllare l'intero valore: `^33` significa "inizia con 33", e `^(40321|40322|40388)$` significa "esattamente uno di questi valori".
+* Il modello distingue tra maiuscole e minuscole. Inizialo con `(?i)` per ignorare le maiuscole: `(?i)freight` corrisponde anche a `Acme Freight, LLC`.
+* `^` e `$` si riferiscono all'intero valore del campo. Inizia il modello con `(?m)` per applicarli a ogni riga di un valore composto da più righe.
+* Il modello viene usato esattamente come lo scrivi. Non viene accorciato e le maiuscole restano invariate, quindi `\D` (qualsiasi carattere che non è una cifra) mantiene il suo significato, e un modello composto da un solo spazio cerca uno spazio.
+* I caratteri con un significato speciale nelle espressioni regolari vanno preceduti da una barra rovesciata per essere trovati letteralmente: `\(copy\)` corrisponde al testo `(copy)`, mentre `(copy)` è un gruppo che trova la parola `copy`.
+* Numeri, importi e date vengono confrontati come il testo in cui sono memorizzati: un importo di 997.60 corrisponde a `^997\.60$`.
+* Un valore del campo vuoto viene confrontato come testo vuoto, quindi `^$` vi corrisponde.
+* Un modello non valido, per esempio `(20` con una parentesi mancante, termina la scheda con un errore. Lo stesso accade quando un modello impiega troppo tempo su un valore (più di 0,05 secondi), cosa che succede solo con modelli costruiti male come `(a|aa)+$`. In entrambi i casi la condizione della scheda non risulta né soddisfatta né non soddisfatta, quindi **Non corrisponde alla regex** non passa mai a causa di un modello difettoso.
+
+## **Come funziona la scheda:**
+
+* **Campo non presente nel documento:** se il documento non ha un campo con il nome scelto, la scheda si ferma e segnala che il campo non è stato trovato, qualunque sia l'operatore.
+* **Condizione soddisfatta:** il Workflow prosegue con la scheda successiva (nell'Advanced Workflow, tramite l'uscita di successo).
+* **Condizione non soddisfatta:** il Workflow si ferma a questa scheda (nell'Advanced Workflow, prende l'uscita per una condizione non soddisfatta).
+* **Errore:** un operatore non adatto al tipo di campo, un Field Value mancante, un elenco vuoto o un modello inutilizzabile terminano la scheda con un errore. Il log della scheda mostra il motivo.
 
 ## **Configurazione e impostazione:**
 
-* L'utente seleziona il nome del campo del documento pertinente e sceglie l'operatore dal menu a discesa. L'utente specifica quindi il valore del campo di riferimento per completare la configurazione.
+Scegli il campo in **Nome campo**, l'operatore in **Operatore** e inserisci il valore in **Field Value**. Per numeri e importi inserisci il valore senza simbolo di valuta e con il punto decimale, per esempio `1000.50`.
+
+Per provare una configurazione senza attendere un documento, apri il menu della scheda nel Workflow Builder, scegli **Test Card**, seleziona un documento e scegli **Test on Document**. Il log della scheda mostra il valore del campo, l'operatore e il risultato.
+
+## **Esempi:**
+
+| Obiettivo | Nome campo | Operatore | Field Value | Valore del campo nel documento | Risultato |
+| --- | --- | --- | --- | --- | --- |
+| Seconda approvazione per fatture grandi | Importo totale | Maggiore di | `10000` | 12500.00 | soddisfatta |
+| Indirizzare alcuni fornitori | ID fornitore | È uno tra | `40321,40322,40388` | 40322 | soddisfatta |
+| | | | | 4032 | non soddisfatta |
+| Escludere un fornitore con una virgola nel nome | Nome fornitore | Non è uno tra | `Acme Freight\, LLC` | Acme Freight, LLC | non soddisfatta |
+| Numeri d'ordine che iniziano con 33 | Numero d'ordine | Corrisponde alla regex | `^33` | 33012 | soddisfatta |
+| | | | | 13301 | non soddisfatta |
+| Riferimento con lettere | Riferimento | Corrisponde alla regex | `\D` | AB-1204 | soddisfatta |
+| Copie di fatture | Numero fattura | Non corrisponde alla regex | `\(copy\)` | INV-1204 (copy) | non soddisfatta |
 
 ## **Conclusione:**
 
-La scheda di workflow "DocField Comparison Validation" è uno strumento robusto per l'elaborazione dinamica dei documenti. Automatizzando le azioni in base ai confronti dei campi, questa scheda semplifica i workflow, migliora l'accuratezza e supporta un processo decisionale basato sui dati.
+La scheda confronta un singolo campo del documento con un valore, un elenco o un modello. Usa **È uno tra** per elenchi fissi di valori e **Corrisponde alla regex** per modelli come prefissi o formati.
 
 <!-- workflow-card-practical-example-20261021 -->
 

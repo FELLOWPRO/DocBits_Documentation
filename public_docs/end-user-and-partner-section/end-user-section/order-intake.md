@@ -8,6 +8,8 @@ description: >-
 
 # Acquisizione ordini
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/order-intake/v1/it.mp4" %}
+
 ## Panoramica
 
 **Acquisizione ordini** legge gli ordini che i tuoi clienti ti inviano, via e-mail o come testo incollato, e li prepara come ordini di vendita per il tuo ERP. DocBits individua il cliente, legge ogni posizione, la abbina a un articolo della tua anagrafica articoli e ti mostra cosa richiede ancora una decisione. Tu controlli l'ordine, completi ciò che manca, chiedi al cliente se qualcosa non è chiaro e lo approvi. Solo allora l'ordine di vendita viene creato nell'ERP.

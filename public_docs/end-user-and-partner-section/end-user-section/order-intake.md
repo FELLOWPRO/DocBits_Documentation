@@ -5,6 +5,8 @@ description: >-
 
 # 订单接收
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/order-intake/v1/zh.mp4" %}
+
 ## 概述
 
 **订单接收**读取客户发送给您的订单（通过电子邮件或粘贴的文本），并将其准备为 ERP 中的销售订单。DocBits 会识别客户、读取每个订单行、将其与商品主数据中的商品匹配，并显示仍需决定的内容。您检查订单、补全缺失内容、在有疑问时询问客户，然后批准订单。只有这样，才会在 ERP 中创建销售订单。

@@ -45,12 +45,12 @@ The card reads: **Docfield** [Field Name] [Operator] [Field Value].
 
 | Operator | Met when | Field types |
 | --- | --- | --- |
-| **Equals** | the field value equals the Field Value | text, number, amount, date |
-| **Not Equals** | the field value differs from the Field Value | text, number, amount, date |
-| **Greater Than** | the field value is greater than the Field Value | number, amount, date |
-| **Greater or Equals** | the field value is greater than or equal to the Field Value | number, amount, date |
-| **Less Than** | the field value is less than the Field Value | number, amount, date |
-| **Less or Equals** | the field value is less than or equal to the Field Value | number, amount, date |
+| **Equals** (=) | the field value equals the Field Value | text, number, amount, date |
+| **Not Equals** (≠) | the field value differs from the Field Value | text, number, amount, date |
+| **Greater Than** (>) | the field value is greater than the Field Value | number, amount, date |
+| **Greater or Equals** (≥) | the field value is greater than or equal to the Field Value | number, amount, date |
+| **Less Than** (<) | the field value is less than the Field Value | number, amount, date |
+| **Less or Equals** (≤) | the field value is less than or equal to the Field Value | number, amount, date |
 | **Is One Of** | the field value equals one item of a comma-separated list | text |
 | **Is Not One Of** | the field value equals none of the items of the list | text |
 | **Matches Regex** | the regular expression is found in the field value | text, number, amount, date |

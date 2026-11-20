@@ -7,6 +7,8 @@ description: >-
 
 # Auftragseingang
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/order-intake/v1/de.mp4" %}
+
 ## Überblick
 
 Der **Auftragseingang** liest die Bestellungen Ihrer Kunden — per E-Mail oder als eingefügten Text — und bereitet sie als Kundenaufträge für Ihr ERP vor. DocBits erkennt den Kunden, liest jede Position, ordnet sie einem Artikel Ihres Artikelstamms zu und zeigt, was noch eine Entscheidung braucht. Sie prüfen den Auftrag, ergänzen Fehlendes, fragen bei Unklarheiten beim Kunden nach und geben ihn frei. Erst dann wird der Kundenauftrag im ERP angelegt.

@@ -1,0 +1,51 @@
+# Knowledge Assistant für Lebensmittel und Getränke
+
+Am Audittag oder bei Verdacht auf einen Vorfall finden Sie den Nachweis zu einem Rohstoff, etwa Lieferantenzertifikat, Spezifikation oder CCP-Protokoll, in gültiger Fassung und mit der genauen Stelle, sobald diese Dokumente in Ihrer Wissensdatenbank liegen.
+
+<!-- VIDEO: rag/food/v1/de.mp4 noch nicht veröffentlicht -->
+
+{% hint style="info" %}
+Die Beispiele auf dieser Seite verwenden **erfundene Demo-Daten**: 30 fiktive Dokumente für diese Branche. Firmennamen, Dokumentnummern und Werte sind ausgedacht.
+{% endhint %}
+
+## Was die Vorlage bietet
+
+Ein Administrator schaltet die Vorlage dieser Branche unter **Knowledge Assistant** → **Settings** → **Industry templates** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „On · 3 agents · 3 knowledge bases“.
+
+**Wissensdatenbanken** (in sie laden Sie Ihre Dokumente hoch):
+
+<!-- CHECK-DEV: confirm knowledge base and assistant names on dev -->
+* Suppliers and traceability
+* Quality system and HACCP
+* Specifications and labelling
+
+**Assistenten** (Sie wählen einen im Chat):
+
+* Recall and traceability assistant
+* Specification and allergen assistant
+* Weekly certificate and audit deadlines
+
+Die genauen Namen stehen auf der Vorlagenkarte und im Chat.
+
+## Beispielfragen aus dem Demo-Satz
+
+| Frage | Antwort |
+| --- | --- |
+| Welches Auditergebnis gilt aktuell für Zertifikat IFS-2606-4336? | 78,6 % laut Version 2. Sie ersetzt Version 1 mit 97,5 %. |
+| Gibt es widersprüchliche Angaben zur Haltbarkeit bei Spezifikation RS-2605-5290? | Ja: 269 Tage im Original und 464 Tage in der Kopie. Beide Dateien sind verlinkt. |
+| Nenne kritischen Grenzwert und Abweichungen für CCP-Protokoll CCP-2610-4258. | 67 °C und 2 Abweichungen, gelesen aus einem gescannten Protokoll. |
+
+Sie können auf Deutsch, Englisch oder Französisch fragen. In unseren Tests folgte die Antwort der Sprache der Frage, gleich in welcher Sprache das Dokument geschrieben war.
+
+## Was bei Ihnen bleibt
+
+* **Prüfung:** Jede Antwort nennt ihre Quelle. Öffnen Sie sie und lesen Sie die Stelle, bevor Sie handeln. Steht etwas nicht in Ihren Dokumenten, sagt der Assistent „nicht in den Unterlagen“.
+* **Kontrolle:** Die Vorlage ist aus, bis Ihr Administrator sie einschaltet. Beim Ausschalten verschwinden die Assistenten; Ihre Dokumente bleiben.
+* **Trennung:** Dokumente und Antworten sind je Organisation getrennt.
+* **Entscheidung:** Der Assistent schlägt nach und vergleicht. Freigeben, Zahlen und Bewerten bleiben bei Ihren Fachleuten. Er gibt keine Rechtsberatung.
+
+## Am Demo-Satz nicht getestet
+
+Der Assistent gibt keine Etiketten frei, entscheidet nicht über einen Rückruf und sperrt keine Lieferanten. Er zeigt, was Ihre Dokumente sagen. Listen und Summen über viele Dokumente kommen weiterhin aus Ihrem DocBits-Dashboard oder Ihrem ERP.
+
+Wie gut der Assistent mit Ihren Dokumenten arbeitet, etwa mit langen Verträgen, Handschrift, Stempeln oder schlechten Kopien, zeigt nur ein Pilot mit Ihren eigenen Dokumenten. Siehe [Was er kann und was nicht](../what-it-can-and-cannot-do.md).

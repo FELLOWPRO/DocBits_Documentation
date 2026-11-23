@@ -46,6 +46,66 @@ Once you save this Connection Point you will obtain the Logical ID as shown belo
 
 Then insert this Logical ID into the appropriate section of the BOD Mapping File and save the file.
 
+## Tables in the BOD
+
+The BOD can carry tables in `CaptureDocument/DocumentTable`. Each table row is a `Row`, and each value in it is a `Column` with a `Name` and a `Value`. The column names are free text, so use the names the system that reads the BOD expects.
+
+`Table_COMMON_PATH` sets where tables are written, `TableColumn_MappedFields` and the `TCP_` keys set how a column is built, and `Tables` lists the tables to export. Each table then maps its columns with `TN_<table>_TC_<DOCBITS_COLUMN>=<BOD column name>`. Only mapped columns are exported, and an empty value is left out.
+
+### Export the auto-accounting lines
+
+By default a table exports the document's line items. To export the auto-accounting lines (GL account, dimensions, voucher text, amount) instead, add a table whose source is `accounting`:
+
+```properties
+Tables=InvoiceTable,AccountingTable
+TN_AccountingTable_Source=accounting
+TN_AccountingTable_TC_POSITION=Position
+TN_AccountingTable_TC_LEDGER_ACCOUNT=AccountingLine_Dim1
+TN_AccountingTable_TC_DIMENSION_2=AccountingLine_Dim2
+TN_AccountingTable_TC_DIMENSION_3=AccountingLine_Dim3
+TN_AccountingTable_TC_VOUCHER_TEXT=AccountingLine_VoucherText
+TN_AccountingTable_TC_AMOUNT=ExtendedAmount
+TN_AccountingTable_TC_TAX_CODE=TaxCode
+TN_AccountingTable_Static_Fields=nameLanguageID,name
+TNP_AccountingTable_nameLanguageID=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentTable\\Name\\languageID
+TNV_AccountingTable_nameLanguageID=en-us
+TNP_AccountingTable_name=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentTable\\Name
+TNV_AccountingTable_name=AccountingRows
+```
+
+The accounting table is written as its own `DocumentTable`, after the invoice table:
+
+```xml
+<DocumentTable>
+  <Name languageID="en-us">AccountingRows</Name>
+  <Row>
+    <ID>1</ID>
+    <Column><Name languageID="en-us">AccountingLine_Dim1</Name><Value>6300</Value></Column>
+    <Column><Name languageID="en-us">ExtendedAmount</Name><Value>59.40</Value></Column>
+  </Row>
+</DocumentTable>
+```
+
+The rows are the same accounting lines the Infor M3 and LN API exports send: one row per accounting line, and one row per split of a split line. Each row can use these values:
+
+| DocBits value | Content |
+| --- | --- |
+| `LEDGER_ACCOUNT` | GL account |
+| `DIMENSION_<id>` | Accounting dimension, for example `DIMENSION_2` |
+| `AMOUNT` | Line amount |
+| `VOUCHER_TEXT` | Voucher text |
+| `TAX_CODE`, `TAX_COUNTRY` | Tax code and tax country |
+| `QUANTITY`, `QUANTITY2` | Quantities |
+| `POSITION` | Position of the accounting line |
+| `BOOKING_REFERENCE` | Booking reference |
+
+Fields added through the `AUTO_ACCOUNTING_FIELDS` preference can be mapped the same way, by their field name.
+
+* A document gets the accounting table only when its auto accounting has lines.
+* `TN_<table>_PATH` places a table somewhere other than `Table_COMMON_PATH`.
+* Table values longer than 30 characters are cut. Set `TableColumn_MaxLength` to a larger width, or to `0` for no limit. The setting applies to every table in the mapping.
+* The column names in the example follow the Infor M3 accounting line (line type 8): `AccountingLine_Dim1` to `AccountingLine_Dim7`, with dimension 1 as the GL account. Use the names the receiving system expects.
+
 ## Upload File to DocBits
 
 Drag and drop the file into your export configuration in DocBits. This is available at Settings → Export.

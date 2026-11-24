@@ -2,11 +2,11 @@
 
 Before an audit you check figures and document versions in a targeted way, with the original documents right next to them: for example a supplier certificate, a specification or a CCP record, once these documents are in your knowledge base.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/food/v2/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/food/v3/en.mp4" %}
 
-_Demo with invented data · English · 1:53 min · Full HD_
+_Demo with invented data · English · 1:55 min · Full HD_
 
-[Video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/food/v2/en.html) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/food/v2/en.mp4)
+[Video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/food/v3/en.html) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/food/v3/en.mp4)
 
 {% hint style="info" %}
 The examples on this page use **invented demo data**: 30 fictitious documents for this industry. Company names, document numbers and values are made up.

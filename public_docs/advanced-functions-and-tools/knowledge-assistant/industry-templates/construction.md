@@ -2,7 +2,11 @@
 
 Finden Sie den Vertragswert, den Nachtrag oder das Zertifikat in der gültigen Fassung, mit der genauen Stelle im Dokument. Das hilft, wenn ein Nachtrag, eine Vertragsstrafe oder ein Einbehalt strittig ist.
 
-<!-- VIDEO: rag/construction/v1/de.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/construction/v1/de.mp4" %}
+
+_Demo mit erfundenen Daten · Deutsch · 1:25 Min. · FullHD_
+
+[Video mit Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/construction/v1/de.html) · [Video herunterladen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/construction/v1/de.mp4)
 
 {% hint style="info" %}
 Die Beispiele auf dieser Seite verwenden **erfundene Demo-Daten**: 30 fiktive Dokumente für diese Branche. Firmennamen, Dokumentnummern und Werte sind ausgedacht.

@@ -2,7 +2,11 @@
 
 The Knowledge Assistant answers questions from **your own documents**, inside the DocBits client. Every answer names the document it comes from, and one click opens that document next to the answer at the place where the information was found. You do not have to trust the answer: you open the source and check it.
 
-<!-- VIDEO: rag/overview/v1/en.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/overview/v1/en.mp4" %}
+
+_Demo with invented data · English · 1:44 min · FullHD_
+
+[Video with captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/overview/v1/en.html) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/overview/v1/en.mp4)
 
 <figure><img src="../../.gitbook/assets/ka-source-preview-en.png" alt="Chat answer about a change order with the source preview on the right showing the scanned document and the note Found on page 1"><figcaption><p>An answer with its source: the document opens next to the chat.</p></figcaption></figure>
 

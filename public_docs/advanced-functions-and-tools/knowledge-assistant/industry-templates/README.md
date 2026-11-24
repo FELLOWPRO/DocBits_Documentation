@@ -8,6 +8,8 @@ An industry template gives you a starting point: three knowledge bases and three
 All examples on the industry pages use **invented demo data**: 30 short, clean fictitious documents per industry. Companies, document numbers, amounts and values are made up. Each page also says what we did not test.
 {% endhint %}
 
+<figure><img src="../../../.gitbook/assets/ka-industry-templates-en.png" alt="Industry templates tab with eight template cards, each switched on, showing three agents and three knowledge bases"><figcaption><p>The eight industry templates under Knowledge Assistant, Settings.</p></figcaption></figure>
+
 | Industry | Typical documents |
 | --- | --- |
 | [Construction, Buildings and Energy](construction.md) | Construction contracts, change orders, site diaries, energy certificates |

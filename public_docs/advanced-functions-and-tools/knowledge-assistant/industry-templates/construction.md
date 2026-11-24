@@ -14,19 +14,17 @@ An administrator switches on the template for this industry under **Knowledge As
 
 **Knowledge bases** (you upload your documents into them):
 
-<!-- CHECK-DEV: confirm knowledge base and assistant names on dev -->
-
-* Contracts and change orders
-* Site and site diary
-* Building and energy certificates
+* Bauverträge, Nachträge und Abnahmen
+* Baustelle, Sicherheit und Bautagebuch
+* Gebäude- und Energienachweise
 
 **Assistants** (you choose one in Chat):
 
-* Change order and contract checker
-* Deadline watch for construction
-* Incoming invoice check for construction
+* Nachtrags- und Vertragsprüfer
+* Fristenwächter Bau
+* Eingangsrechnungs-Check Bau
 
-The exact names appear on the template card and in Chat.
+The names and descriptions come with the template and are currently in German. The same names appear under **Knowledge Base** and in the agent selection in Chat.
 
 ## Example questions from the demo set
 

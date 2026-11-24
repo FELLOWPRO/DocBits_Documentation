@@ -14,19 +14,17 @@ An administrator switches on the template for this industry under **Knowledge As
 
 **Knowledge bases** (you upload your documents into them):
 
-<!-- CHECK-DEV: confirm knowledge base and assistant names on dev -->
-
-* Product documentation
-* Suppliers and certificates
-* Service
+* Produktdokumentation und Konformität
+* Lieferanten und Zeugnisse
+* Service, Ersatzteile und Gewährleistung
 
 **Assistants** (you choose one in Chat):
 
-* Conformity assistant
-* Invoice checker for industrial goods
-* Weekly report: expiring certificates, declarations and contracts
+* Konformitäts-Assistent
+* Rechnungsprüfer Industriegüter
+* Wochenbericht: ablaufende Zeugnisse, Erklärungen und Verträge
 
-The exact names appear on the template card and in Chat.
+The names and descriptions come with the template and are currently in German. The same names appear under **Knowledge Base** and in the agent selection in Chat.
 
 ## Example questions from the demo set
 

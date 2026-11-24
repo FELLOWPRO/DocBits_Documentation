@@ -14,19 +14,17 @@ An administrator switches on the template for this industry under **Knowledge As
 
 **Knowledge bases** (you upload your documents into them):
 
-<!-- CHECK-DEV: confirm knowledge base and assistant names on dev -->
-
-* Safety data sheets and substance data
-* Batches and certificates
-* Compliance and deadlines
+* Sicherheitsdatenblätter und Stoffdaten
+* Chargen und Zertifikate
+* Compliance und Fristen
 
 **Assistants** (you choose one in Chat):
 
-* Safety data sheet checker
-* Invoice reconciliation for chemicals
-* Weekly report of deadlines and certificates
+* SDB-Prüfer
+* Rechnungsabgleich Chemie
+* Wochenbericht Fristen und Zertifikate
 
-The exact names appear on the template card and in Chat.
+The names and descriptions come with the template and are currently in German. The same names appear under **Knowledge Base** and in the agent selection in Chat.
 
 ## Example questions from the demo set
 

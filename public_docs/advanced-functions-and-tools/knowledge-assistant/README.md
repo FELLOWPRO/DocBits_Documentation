@@ -4,6 +4,8 @@ The Knowledge Assistant answers questions from **your own documents**, inside th
 
 <!-- VIDEO: rag/overview/v1/en.mp4 noch nicht veröffentlicht -->
 
+<figure><img src="../../.gitbook/assets/ka-source-preview-en.png" alt="Chat answer about a change order with the source preview on the right showing the scanned document and the note Found on page 1"><figcaption><p>An answer with its source: the document opens next to the chat.</p></figcaption></figure>
+
 {% hint style="info" %}
 All examples in this section use **invented demo data**: fictitious companies, document numbers, amounts and values. They only show how the assistant works. They are not customer data and not a promise of results with your documents.
 {% endhint %}

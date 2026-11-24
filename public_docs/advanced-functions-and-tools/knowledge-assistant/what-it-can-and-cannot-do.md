@@ -2,13 +2,12 @@
 
 The Knowledge Assistant is a **research aid with sources**. It finds what is in your documents and shows where. It replaces neither checking at the source nor a professional, legal or quality-assurance decision. For chemistry, life sciences and dangerous goods in particular: **open the source and read the passage yourself before every decision.**
 
-Our tests used invented, short and clean demo documents (30 per industry, eight industries). How well the assistant works with your documents only a pilot with your own documents can show.
+Our tests used invented, short and clean demo documents (30 per industry, eight industries). Most of them ran on a separate test installation in November 2026. On the current development environment we additionally checked the screens, one example question with its source preview, the industry templates and the document list. Deleting documents, roles, the separation of organizations and the processing of uploads were not re-tested there. How well the assistant works with your documents only a pilot with your own documents can show.
 
 Labels used below:
 
 * **Proven in test:** observed this way in our tests (November 2026).
 * **Known limitation:** applies today; we state it explicitly.
-* **Planned / being fixed:** in progress or announced; not yet available.
 
 ## Answers
 
@@ -41,7 +40,7 @@ Labels used below:
 
 | Statement | Label |
 | --- | --- |
-| <!-- CHECK: assumption, no failure test; confirm or remove --> Tables in PDF are read **row by row**. In our tests, questions about a single entry, the highest and lowest value and the number of rows of an overview table were correct. Merged cells, several tables on one page and tables spanning several pages are not tested; check values there in the preview. | Known limitation |
+| Tables in PDF are read **row by row**. In our tests, questions about a single entry, the highest and lowest value and the number of rows of an overview table were correct. Merged cells, several tables on one page and tables spanning several pages are not tested; check values there in the preview. | Known limitation |
 
 ## Scans
 
@@ -64,7 +63,7 @@ Labels used below:
 | The gallery shows only images **embedded in documents** (for example in PDF or Word), and only if image processing is on. Photos and scans uploaded on their own do not appear there. | Known limitation |
 | Descriptions of gallery images are currently empty ("No caption"); searching for description text in the gallery returns nothing. | Known limitation |
 | Photos uploaded on their own are read by text recognition. Questions about the written text in the photo were correct in 24 of 24 runs. The assistant does not judge image content (for example "Is the pallet damaged?"). | Proven in test |
-| <!-- CHECK-DEV FIX-FOTO --> Uploading a photo in the screens is blocked until image processing is on. | Planned / being fixed |
+| In earlier test builds, uploading a photo on screen was blocked until image processing was on. We have not re-checked this on the current version. Photos can be read as text. | Known limitation |
 
 ## Organizations, permissions and data
 
@@ -73,7 +72,7 @@ Labels used below:
 | Each organization has its own area. A second organization got no access to the first one's knowledge base, documents, download and assistants. | Proven in test |
 | Roles: someone who may only read (Viewer) cannot upload, change, delete or download. Members have Contributor rights by default. | Proven in test |
 | Deleted documents no longer appear in answers; the storage is released. | Proven in test |
-| **Sub-organizations are not separated.** The Knowledge Assistant separates by organization. All users of an organization see the same knowledge bases, even if they are assigned to different sub-organizations in DocBits. Plan confidential documents accordingly. <!-- CHECK: source-code analysis, not tested live --> | Known limitation |
+| **Sub-organizations are not separated.** The Knowledge Assistant separates by organization. All users of an organization see the same knowledge bases, even if they are assigned to different sub-organizations in DocBits. Plan confidential documents accordingly. This comes from analysis of the program, not from a live test. | Known limitation |
 | There is a storage quota per organization; when it is exceeded the upload is rejected. | Proven in test |
 
 Questions about processing location, the language model used and data processing agreements are answered for your environment, bindingly, in your quotation. This documentation makes no statement about them.
@@ -83,17 +82,17 @@ Questions about processing location, the language model used and data processing
 | Statement | Label |
 | --- | --- |
 | German, English and French were tested. In all tests the answer language followed the question, even when the document was written in another language. This is **not guaranteed**; state the desired language in the question if needed. We did not test other languages. | Proven in test |
-| The Knowledge Assistant screens are in English. <!-- CHECK-DEV: UI language --> Some messages still appear in Chinese. | Known limitation |
+| The screens follow the language of your DocBits user. We checked English and German. In earlier test builds some messages appeared in Chinese. | Known limitation |
 
 ## Operation and functions
 
 | Statement | Label |
 | --- | --- |
-| <!-- CHECK-DEV FIX-CHUNK --> Saving the section size in the knowledge base settings does not work reliably at the moment. | Planned / being fixed |
+| Saving the section size in the knowledge base settings did not work reliably in our tests; we have not re-checked it on the current version. | Known limitation |
 | Mermaid diagrams in Markdown documents are not drawn. | Known limitation |
 | On screen, documents cannot be moved between knowledge bases; between folders within one knowledge base they can. | Known limitation |
 | The copy of a knowledge base has the same name as the original. | Known limitation |
-| DocBits documents (invoices, delivery notes, contracts) as a knowledge source without uploading again: the transfer is technically built, the selection on screen is missing. | In preparation |
+| DocBits documents (invoices, delivery notes, contracts) as a knowledge source without uploading again (**From DocBits**): the transfer was verified through the interface for developers and the selection panel exists. We did not add documents through the panel. Everyone who can open the knowledge base can read the added content. | Known limitation |
 | The weekly overview (Automations) is off by default, delivers its result into the assistant's history and sends no e-mail. In the tests it ran on manual start in all eight industries. | Proven in test |
 | Tools that require signing in to an external service cannot currently be signed in to in the Knowledge Assistant. | Known limitation |
 | Wiki and knowledge graph were tested on a separate demo knowledge base, not on the industry templates. | Known limitation |

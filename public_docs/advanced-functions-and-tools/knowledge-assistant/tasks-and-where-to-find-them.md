@@ -61,7 +61,7 @@ Nur Administratoren sehen den Reiter **Branchenvorlagen**. Mitglieder ohne Admin
 
 ## Eine Frage stellen und die Quelle öffnen
 
-Öffnen Sie den **Chat**. Unter dem Eingabefeld zeigt die Schaltfläche den gewählten Agenten; **Quick Answer** ist die Voreinstellung. Wählen Sie unter **Eigene Agenten** einen Agenten, um einen Assistenten einer Branchenvorlage zu nutzen. Die Wissensdatenbanken dieses Assistenten erscheinen dann als Chips über dem Eingabefeld. Tippen Sie Ihre Frage und senden Sie sie ab.
+Öffnen Sie den **Chat**. Unter dem Eingabefeld zeigt die Schaltfläche den gewählten Agenten; **Quick Answer** ist die Voreinstellung. Wählen Sie unter **Eigene Agenten** einen Agenten, um einen Assistenten einer Branchenvorlage zu nutzen. Die Wissensdatenbanken dieses Assistenten erscheinen dann als Chips über dem Eingabefeld. Tippen Sie Ihre Frage und senden Sie sie ab. [Den richtigen Agenten wählen](choose-the-right-agent.md) erklärt, wie sich die integrierten Agenten unterscheiden.
 
 <figure><img src="../../.gitbook/assets/ka-agent-picker-de.png" alt="Die Agentenauswahl unter dem Chat-Eingabefeld mit der Überschrift Agent auswählen und der Liste der eigenen Agenten"><figcaption><p>Agent auswählen: zuerst die integrierten Agenten, dann die eigenen Agenten Ihrer Vorlagen.</p></figcaption></figure>
 

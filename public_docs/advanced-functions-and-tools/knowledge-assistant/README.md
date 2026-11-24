@@ -27,7 +27,7 @@ Alle Beispiele in diesem Bereich verwenden **erfundene Demo-Daten**: fiktive Fir
 
 1. **Ein Administrator schaltet den Wissensassistent** für Ihre Organisation ein und, falls gewünscht, eine Branchenvorlage. Siehe [Aufgaben und wo Sie sie finden](tasks-and-where-to-find-them.md#den-wissensassistenten-einschalten-administrator).
 2. **Sie laden Dokumente** in eine Wissensdatenbank hoch (PDF, gescanntes PDF, Word, Excel, Markdown, Text, Fotos).
-3. **Sie stellen im Chat eine Frage** und wählen einen Assistenten.
+3. **Sie stellen im Chat eine Frage** und wählen einen Agenten. Siehe [Den richtigen Agenten wählen](choose-the-right-agent.md).
 4. **Sie öffnen die Quelle** unter der Antwort und bestätigen den Wert im Dokument.
 
 ## Was er nicht ist
@@ -46,6 +46,7 @@ Lesen Sie [Was er kann und was nicht](what-it-can-and-cannot-do.md), bevor Sie s
 | Seite | Wofür |
 | --- | --- |
 | [Aufgaben und wo Sie sie finden](tasks-and-where-to-find-them.md) | Klickweg für jede Aufgabe: einrichten, hochladen, fragen, Quellen prüfen, Wissensdatenbanken verwalten |
+| [Den richtigen Agenten wählen](choose-the-right-agent.md) | Die integrierten Agenten verstehen und den passenden für Ihre Frage wählen |
 | [Fehlerbehebung](troubleshooting.md) | Ein Symptom nachschlagen und die passende Maßnahme finden |
 | [Was er kann und was nicht](what-it-can-and-cannot-do.md) | Grenzen verstehen und wissen, was getestet wurde |
 | [Branchenvorlagen](industry-templates/README.md) | Sehen, was die Vorlage Ihrer Branche bietet, mit Beispielfragen |

@@ -927,6 +927,7 @@
 * [Wissensgraph-Explorer](advanced-functions-and-tools/knowledge-graph-explorer.md)
 * [Wissensassistent](advanced-functions-and-tools/knowledge-assistant/README.md)
   * [Aufgaben und wo Sie sie finden](advanced-functions-and-tools/knowledge-assistant/tasks-and-where-to-find-them.md)
+  * [Den richtigen Agenten wählen](advanced-functions-and-tools/knowledge-assistant/choose-the-right-agent.md)
   * [Fehlerbehebung](advanced-functions-and-tools/knowledge-assistant/troubleshooting.md)
   * [Was er kann und was nicht](advanced-functions-and-tools/knowledge-assistant/what-it-can-and-cannot-do.md)
   * [Branchenvorlagen](advanced-functions-and-tools/knowledge-assistant/industry-templates/README.md)

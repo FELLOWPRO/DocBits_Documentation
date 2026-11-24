@@ -2,7 +2,11 @@
 
 Am Audittag oder bei Verdacht auf einen Vorfall finden Sie den Nachweis zu einem Rohstoff, etwa Lieferantenzertifikat, Spezifikation oder CCP-Protokoll, in gültiger Fassung und mit der genauen Stelle, sobald diese Dokumente in Ihrer Wissensdatenbank liegen.
 
-<!-- VIDEO: rag/food/v1/de.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/food/v1/de.mp4" %}
+
+_Demo mit erfundenen Daten · Deutsch · 1:14 Min. · FullHD_
+
+[Video mit Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/food/v1/de.html) · [Video herunterladen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/food/v1/de.mp4)
 
 {% hint style="info" %}
 Die Beispiele auf dieser Seite verwenden **erfundene Demo-Daten**: 30 fiktive Dokumente für diese Branche. Firmennamen, Dokumentnummern und Werte sind ausgedacht.

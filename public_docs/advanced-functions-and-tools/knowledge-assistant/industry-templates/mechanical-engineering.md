@@ -2,7 +2,11 @@
 
 Ihr Serviceteam beantwortet jede Frage zu Wartung, Ersatzteilen und Lieferanten aus dem gültigen Dokument, mit der Quelle im Blick. So fährt kein Techniker mit dem falschen Teil oder einem überholten Plan los.
 
-<!-- VIDEO: rag/mechanical-engineering/v1/de.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/mechanical-engineering/v1/de.mp4" %}
+
+_Demo mit erfundenen Daten · Deutsch · 1:32 Min. · FullHD_
+
+[Video mit Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/mechanical-engineering/v1/de.html) · [Video herunterladen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/mechanical-engineering/v1/de.mp4)
 
 {% hint style="info" %}
 Die Beispiele auf dieser Seite verwenden **erfundene Demo-Daten**: 30 fiktive Dokumente für diese Branche. Firmennamen, Dokumentnummern und Werte sind ausgedacht.

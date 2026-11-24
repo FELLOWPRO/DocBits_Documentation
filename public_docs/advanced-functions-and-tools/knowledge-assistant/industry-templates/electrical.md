@@ -2,7 +2,11 @@
 
 Bevor ein Zeugnis an Ihren Kunden geht oder Sie eine Garantieleistung zusagen, zeigt eine Antwort, welche Fassung gilt, ob das Dokument abgelaufen ist und ob zwei Kopien einander widersprechen.
 
-<!-- VIDEO: rag/electrical/v1/de.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/electrical/v1/de.mp4" %}
+
+_Demo mit erfundenen Daten · Deutsch · 1:20 Min. · FullHD_
+
+[Video mit Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/electrical/v1/de.html) · [Video herunterladen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/electrical/v1/de.mp4)
 
 {% hint style="info" %}
 Die Beispiele auf dieser Seite verwenden **erfundene Demo-Daten**: 30 fiktive Dokumente für diese Branche. Firmennamen, Dokumentnummern und Werte sind ausgedacht.

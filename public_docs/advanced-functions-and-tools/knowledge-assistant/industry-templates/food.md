@@ -1,8 +1,12 @@
 # Knowledge Assistant for Food and Beverage
 
-On audit day or when an incident is suspected, you find the evidence for a raw material, such as a supplier certificate, a specification or a CCP record, in its valid version and with the exact passage, once these documents are in your knowledge base.
+Before an audit you check figures and document versions in a targeted way, with the original documents right next to them: for example a supplier certificate, a specification or a CCP record, once these documents are in your knowledge base.
 
-<!-- VIDEO: rag/food/v1/en.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/food/v2/en.mp4" %}
+
+_Demo with invented data · English · 1:53 min · Full HD_
+
+[Video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/food/v2/en.html) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/food/v2/en.mp4)
 
 {% hint style="info" %}
 The examples on this page use **invented demo data**: 30 fictitious documents for this industry. Company names, document numbers and values are made up.

@@ -1,19 +1,19 @@
 # Fehlerbehebung
 
-Die meisten Probleme lösen Sie mit **Rebuild Document** (das Dokument erneut verarbeiten) oder mit einer genaueren Frage. Die Tabellen nennen nur Fälle, die wir in unseren Tests beobachtet haben. Wie Sie jede Funktion erreichen, steht unter [Aufgaben und wo Sie sie finden](tasks-and-where-to-find-them.md).
+Die meisten Probleme lösen Sie mit **Dokument neu aufbauen** (das Dokument erneut verarbeiten) oder mit einer genaueren Frage. Die Tabellen nennen nur Fälle, die wir in unseren Tests beobachtet haben. Wie Sie jede Funktion erreichen, steht unter [Aufgaben und wo Sie sie finden](tasks-and-where-to-find-them.md).
 
 ## Dokumente und Verarbeitung
 
 | Symptom | Ursache (kurz) | Maßnahme |
 | --- | --- | --- |
-| Das Dokument zeigt **May be stuck**; die Zeitleiste meldet „No progress for N minutes“ | Die Verarbeitung hat lange nichts gemeldet. | Dokument öffnen, **Stop parsing** wählen, dann **Rebuild Document**. Tun Sie nichts, setzt das System das Dokument nach einer Weile selbst auf Failed. |
-| Das Dokument zeigt **Failed** mit „task stuck in processing…“ | Ein Stillstand wurde automatisch beendet. | **Rebuild Document**. Bleibt es dabei, melden Sie den Dokumentnamen dem Support. |
-| Ein gescanntes PDF hat nach der Verarbeitung keinen Text oder zeigt Failed, und die Meldung nennt die Texterkennung | Die Texterkennung war nicht erreichbar, oder das Bild deckt nur einen Teil der Seite ab und die Seite wird als Textseite behandelt. | Etwas später **Rebuild Document**. Scans nach Möglichkeit ganzseitig erstellen. Besteht das Problem weiter, wenden Sie sich an Ihren Administrator. |
-| Eine beschädigte Datei zeigt **Failed** | Die Datei lässt sich nicht lesen. Bei beschädigten Word-Dateien kann es bis zu etwa 3 Minuten dauern, bis Failed erscheint. | Datei im Originalprogramm öffnen, erneut speichern und erneut hochladen. |
+| Das Dokument zeigt einen Stillstand-Hinweis; die Verarbeitungspipeline meldet, dass seit N Minuten kein Fortschritt zu sehen ist | Die Verarbeitung hat lange nichts gemeldet. | Dokument öffnen, seine Verarbeitungspipeline öffnen, die Verarbeitung stoppen, dann **Dokument neu aufbauen**. Tun Sie nichts, setzt das System das Dokument nach einer Weile selbst auf „Fehlgeschlagen“. |
+| Das Dokument zeigt **Fehlgeschlagen** mit „task stuck in processing…“ | Ein Stillstand wurde automatisch beendet. | **Dokument neu aufbauen**. Bleibt es dabei, melden Sie den Dokumentnamen dem Support. |
+| Ein gescanntes PDF hat nach der Verarbeitung keinen Text oder zeigt „Fehlgeschlagen“, und die Meldung nennt die Texterkennung | Die Texterkennung war nicht erreichbar, oder das Bild deckt nur einen Teil der Seite ab und die Seite wird als Textseite behandelt. | Etwas später **Dokument neu aufbauen**. Scans nach Möglichkeit ganzseitig erstellen. Besteht das Problem weiter, wenden Sie sich an Ihren Administrator. |
+| Eine beschädigte Datei zeigt **Fehlgeschlagen** | Die Datei lässt sich nicht lesen. Bei beschädigten Word-Dateien kann es bis zu etwa 3 Minuten dauern, bis „Fehlgeschlagen“ erscheint. | Datei im Originalprogramm öffnen, erneut speichern und erneut hochladen. |
 | Der Upload wird abgewiesen | E-Mail-Dateien (.eml), XML-Dateien, leere Dateien und eine Datei, die schon in der Wissensdatenbank liegt, werden nicht angenommen. Der Import über Web-Adresse ist abgeschaltet. | Datei in ein unterstütztes Format umwandeln, zum Beispiel PDF. Bei einem Duplikat bleibt das vorhandene Dokument unverändert. |
-| Der Upload bricht mit **Storage quota exceeded** ab | Das Speicherkontingent Ihrer Organisation ist erreicht. | Nicht mehr benötigte Dokumente löschen; der Platz wird frei. Für mehr Platz wenden Sie sich an Ihren Administrator. Auch ein mit **Online Edit** geschriebenes Dokument kann später auf Failed enden, wenn das Kontingent erreicht ist. |
-| Ein Foto lässt sich nicht hochladen, **Upload and parse** ist grau | <!-- CHECK-DEV FIX-FOTO --> Für Fotos muss die Bildverarbeitung („Multimodal“) eingeschaltet und ein Modell gewählt sein. | Bildverarbeitung einschalten und ein Modell wählen (Administrator). |
-| Nach **Save and Close** in den Einstellungen der Wissensdatenbank stimmen die Werte nicht | <!-- CHECK-DEV FIX-CHUNK --> Das Speichern der Abschnittsgröße funktioniert derzeit nicht zuverlässig; vorhandene Einstellungen können zurückgesetzt werden. | Diese Werte vorerst nicht ändern. Ansehen und Schließen ohne Speichern ist unbedenklich. |
+| Der Upload bricht mit der Meldung **Storage quota exceeded** ab | Das Speicherkontingent Ihrer Organisation ist erreicht. | Nicht mehr benötigte Dokumente löschen; der Platz wird frei. Für mehr Platz wenden Sie sich an Ihren Administrator. Auch ein mit **Online bearbeiten** geschriebenes Dokument kann später auf „Fehlgeschlagen“ enden, wenn das Kontingent erreicht ist. |
+| Ein Foto lässt sich nicht hochladen, die Schaltfläche zum Starten der Verarbeitung ist grau | In früheren Testständen musste die Bildverarbeitung („Multimodal“) eingeschaltet und ein Modell gewählt sein, bevor sich Fotos in der Oberfläche hochladen ließen. Für die aktuelle Version haben wir das nicht erneut geprüft. | Bildverarbeitung einschalten und ein Modell wählen (Administrator). Bleibt die Schaltfläche grau, wenden Sie sich an den Support. |
+| Nach **Speichern und Schließen** in den Einstellungen der Wissensdatenbank stimmen die Werte nicht | In unseren Tests funktionierte das Speichern der Abschnittsgröße nicht zuverlässig; vorhandene Einstellungen konnten zurückgesetzt werden. Für die aktuelle Version haben wir das nicht erneut geprüft. | Werte nach dem Speichern prüfen und nicht ohne Bedarf ändern. Ansehen und Schließen ohne Speichern ist unbedenklich. |
 | Ein Excel-Dokument ist durchsuchbar, hat aber keine Kurzbeschreibung | Die automatische Beschreibung von Tabellendokumenten schlägt manchmal fehl. Der Inhalt wird trotzdem gelesen. | Keine Maßnahme nötig, Fragen funktionieren. Tragen Sie bei Bedarf eine Beschreibung von Hand ein. |
 
 ## Fragen und Antworten
@@ -32,8 +32,8 @@ Die meisten Probleme lösen Sie mit **Rebuild Document** (das Dokument erneut ve
 
 | Symptom | Ursache (kurz) | Maßnahme |
 | --- | --- | --- |
-| Der Reiter **Industry templates** fehlt in den Settings | Sie sind kein Administrator. Nur Administratoren sehen den Reiter. | Bitten Sie Ihren Administrator, die Vorlage einzuschalten. |
-| Die Vorlage ist an, aber die Assistenten fehlen im Chat | Sie sind in einer anderen Organisation angemeldet, oder die Vorlage wurde mit **Switch off** ausgeschaltet. Vorlagen gelten je Organisation; beim Ausschalten verschwinden die Assistenten, die Dokumente bleiben. | Organisation oben rechts prüfen und prüfen, ob die Karte unter **Industry templates** „On“ zeigt. |
+| Der Reiter **Branchenvorlagen** fehlt in den Einstellungen | Sie sind kein Administrator. Nur Administratoren sehen den Reiter. | Bitten Sie Ihren Administrator, die Vorlage einzuschalten. |
+| Die Vorlage ist an, aber die Assistenten fehlen im Chat | Sie sind in einer anderen Organisation angemeldet, oder die Vorlage wurde mit **Ausschalten** ausgeschaltet. Vorlagen gelten je Organisation; beim Ausschalten verschwinden die Assistenten, die Dokumente bleiben. | Organisation oben rechts prüfen und prüfen, ob die Karte unter **Branchenvorlagen** „On“ zeigt. |
 | Hochladen, Bearbeiten, Löschen und Herunterladen werden nicht angeboten | Ihre Rolle ist Viewer. | Bitten Sie Ihren Administrator, Ihre Rolle auf Contributor zu ändern. |
 
 ## Bedienung
@@ -50,7 +50,7 @@ Die meisten Probleme lösen Sie mit **Rebuild Document** (das Dokument erneut ve
 
 Diese Fälle sind in unseren Tests nicht aufgetreten:
 
-* **Ein Dokument bleibt lange auf „In queue“.** Bei großen Importen warten Dokumente der Reihe nach. Warten Sie einige Minuten; erscheint **May be stuck**, gehen Sie wie oben vor.
+* **Ein Dokument bleibt lange auf „In queue“.** Bei großen Importen warten Dokumente der Reihe nach. Warten Sie einige Minuten; erscheint ein Stillstand-Hinweis, gehen Sie wie oben vor.
 * **Zahlen aus PDF-Tabellen wirken falsch.** Prüfen Sie den Wert in der Vorschau (siehe [Was er kann und was nicht](what-it-can-and-cannot-do.md#pdf-tabellen)).
 * **Die Antwort kommt in der falschen Sprache.** In allen Tests folgte die Antwort der Sprache der Frage, auch bei Dokumenten in einer anderen Sprache. Das ist nicht garantiert. Nennen Sie bei Bedarf in der Frage die gewünschte Sprache der Antwort.
-* **Der Menüpunkt Knowledge Assistant fehlt.** Das Modul muss für Ihre Organisation eingeschaltet sein. Wenden Sie sich an Ihren Administrator.
+* **Der Menüpunkt Wissensassistent fehlt.** Das Modul muss für Ihre Organisation eingeschaltet sein. Wenden Sie sich an Ihren Administrator.

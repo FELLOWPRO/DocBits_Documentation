@@ -1,4 +1,4 @@
-# Knowledge Assistant für Handel
+# Wissensassistent für Handel
 
 Bevor Sie eine Rechnung freigeben, eine Lieferung reklamieren oder einen Vertrag verlängern, liegt die vereinbarte Bedingung samt Fundstelle im Dokument vor Ihnen.
 
@@ -10,22 +10,21 @@ Die Beispiele auf dieser Seite verwenden **erfundene Demo-Daten**: 30 fiktive Do
 
 ## Was die Vorlage bietet
 
-Ein Administrator schaltet die Vorlage dieser Branche unter **Knowledge Assistant** → **Settings** → **Industry templates** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „On · 3 agents · 3 knowledge bases“.
+Ein Administrator schaltet die Vorlage dieser Branche unter **Wissensassistent** → **Einstellungen** → **Branchenvorlagen** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „An“ und „3 Agenten · 3 Wissensbasen“.
 
 **Wissensdatenbanken** (in sie laden Sie Ihre Dokumente hoch):
 
-<!-- CHECK-DEV: confirm knowledge base and assistant names on dev -->
-* Contracts
-* Articles
-* Compliance
+* Lieferantenverträge und Konditionen
+* Artikel- und Produktdokumentation
+* Lieferanten-Compliance und Zertifikate
 
-**Assistenten** (Sie wählen einen im Chat):
+**Assistenten** (Sie wählen einen unter **Eigene Agenten** im Chat):
 
-* Terms checker
-* Complaints assistant
-* Weekly deadline report
+* Konditionen-Prüfer
+* Reklamations-Assistent
+* Wöchentlicher Fristenbericht
 
-Die genauen Namen stehen auf der Vorlagenkarte und im Chat.
+Die Namen und Beschreibungen kommen mit der Vorlage. Dieselben Namen erscheinen unter **Wissensdatenbank** und in der Agentenauswahl im Chat.
 
 ## Beispielfragen aus dem Demo-Satz
 

@@ -1,4 +1,4 @@
-# Knowledge Assistant für Maschinen- und Anlagenbau
+# Wissensassistent für Maschinen- und Anlagenbau
 
 Ihr Serviceteam beantwortet jede Frage zu Wartung, Ersatzteilen und Lieferanten aus dem gültigen Dokument, mit der Quelle im Blick. So fährt kein Techniker mit dem falschen Teil oder einem überholten Plan los.
 
@@ -10,22 +10,21 @@ Die Beispiele auf dieser Seite verwenden **erfundene Demo-Daten**: 30 fiktive Do
 
 ## Was die Vorlage bietet
 
-Ein Administrator schaltet die Vorlage dieser Branche unter **Knowledge Assistant** → **Settings** → **Industry templates** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „On · 3 agents · 3 knowledge bases“.
+Ein Administrator schaltet die Vorlage dieser Branche unter **Wissensassistent** → **Einstellungen** → **Branchenvorlagen** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „An“ und „3 Agenten · 3 Wissensbasen“.
 
 **Wissensdatenbanken** (in sie laden Sie Ihre Dokumente hoch):
 
-<!-- CHECK-DEV: confirm knowledge base and assistant names on dev -->
-* Documentation
-* Service and spare parts
-* Suppliers
+* Technische Dokumentation und Konformität
+* Service, Ersatzteile und Störungen
+* Lieferanten, Einkauf und Qualitätsnachweise
 
-**Assistenten** (Sie wählen einen im Chat):
+**Assistenten** (Sie wählen einen unter **Eigene Agenten** im Chat):
 
-* Conformity assistant for the machinery regulation
-* Service assistant for spare parts and faults
-* Weekly deadline and certificate overview
+* Konformitäts-Assistent Maschinenverordnung
+* Service-Assistent Ersatzteile und Störungen
+* Wöchentliche Frist- und Zertifikatsübersicht
 
-Die genauen Namen stehen auf der Vorlagenkarte und im Chat.
+Die Namen und Beschreibungen kommen mit der Vorlage. Dieselben Namen erscheinen unter **Wissensdatenbank** und in der Agentenauswahl im Chat.
 
 ## Beispielfragen aus dem Demo-Satz
 

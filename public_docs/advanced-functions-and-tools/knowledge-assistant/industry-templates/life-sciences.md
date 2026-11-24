@@ -1,4 +1,4 @@
-# Knowledge Assistant für Life Sciences
+# Wissensassistent für Life Sciences
 
 Finden Sie abgelaufene Lieferantendokumente, überholte Fassungen und widersprüchliche Angaben selbst, bevor es ein Auditor tut. Jede Antwort zeigt Dokument, Fassung, Status und die Stelle.
 
@@ -10,22 +10,21 @@ Die Beispiele auf dieser Seite verwenden **erfundene Demo-Daten**: 30 fiktive Do
 
 ## Was die Vorlage bietet
 
-Ein Administrator schaltet die Vorlage dieser Branche unter **Knowledge Assistant** → **Settings** → **Industry templates** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „On · 3 agents · 3 knowledge bases“.
+Ein Administrator schaltet die Vorlage dieser Branche unter **Wissensassistent** → **Einstellungen** → **Branchenvorlagen** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „An“ und „3 Agenten · 3 Wissensbasen“.
 
 **Wissensdatenbanken** (in sie laden Sie Ihre Dokumente hoch):
 
-<!-- CHECK-DEV: confirm knowledge base and assistant names on dev -->
-* Controlled documents (SOP library)
-* Regulations and guidelines
-* Suppliers, quality agreements and certificates
+* Gelenkte Dokumente (SOP-Bibliothek)
+* Regelwerke und Leitlinien (mit Stand)
+* Lieferanten, Qualitätsvereinbarungen und Zertifikate
 
-**Assistenten** (Sie wählen einen im Chat):
+**Assistenten** (Sie wählen einen unter **Eigene Agenten** im Chat):
 
-* SOP lookup
-* Regulatory researcher
-* Weekly certificate and deadline report
+* SOP-Auskunft
+* Regulatorik-Rechercheur
+* Wöchentlicher Zertifikats- und Fristenbericht
 
-Die genauen Namen stehen auf der Vorlagenkarte und im Chat.
+Die Namen und Beschreibungen kommen mit der Vorlage. Dieselben Namen erscheinen unter **Wissensdatenbank** und in der Agentenauswahl im Chat.
 
 ## Beispielfragen aus dem Demo-Satz
 
@@ -46,6 +45,6 @@ Sie können auf Deutsch, Englisch oder Französisch fragen. In unseren Tests fol
 
 ## Am Demo-Satz nicht getestet
 
-Der Knowledge Assistant ist eine Nachschlagehilfe. Er ist **kein validiertes GxP-System** und ersetzt weder Ihr Qualitätsmanagementsystem noch Ihr Fristenregister. Jede Antwort ist ein Hinweis, den Sie am Original prüfen. Patientendaten und Roh-Studiendaten gehören nicht in die Wissensdatenbanken. Der Demo-Satz enthält keine CAPA- oder Abweichungsberichte, Chargenprotokolle oder Schulungsnachweise; dazu machen wir keine Aussage.
+Der Wissensassistent ist eine Nachschlagehilfe. Er ist **kein validiertes GxP-System** und ersetzt weder Ihr Qualitätsmanagementsystem noch Ihr Fristenregister. Jede Antwort ist ein Hinweis, den Sie am Original prüfen. Patientendaten und Roh-Studiendaten gehören nicht in die Wissensdatenbanken. Der Demo-Satz enthält keine CAPA- oder Abweichungsberichte, Chargenprotokolle oder Schulungsnachweise; dazu machen wir keine Aussage.
 
 Wie gut der Assistent mit Ihren Dokumenten arbeitet, etwa mit langen Verträgen, Handschrift, Stempeln oder schlechten Kopien, zeigt nur ein Pilot mit Ihren eigenen Dokumenten. Siehe [Was er kann und was nicht](../what-it-can-and-cannot-do.md).

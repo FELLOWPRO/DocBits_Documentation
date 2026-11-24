@@ -925,7 +925,7 @@
 ## Erweiterte Funktionen und Werkzeuge <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
 
 * [Wissensgraph-Explorer](advanced-functions-and-tools/knowledge-graph-explorer.md)
-* [Knowledge Assistant](advanced-functions-and-tools/knowledge-assistant/README.md)
+* [Wissensassistent](advanced-functions-and-tools/knowledge-assistant/README.md)
   * [Aufgaben und wo Sie sie finden](advanced-functions-and-tools/knowledge-assistant/tasks-and-where-to-find-them.md)
   * [Fehlerbehebung](advanced-functions-and-tools/knowledge-assistant/troubleshooting.md)
   * [Was er kann und was nicht](advanced-functions-and-tools/knowledge-assistant/what-it-can-and-cannot-do.md)

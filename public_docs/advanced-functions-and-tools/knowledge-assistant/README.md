@@ -1,8 +1,10 @@
-# Knowledge Assistant
+# Wissensassistent
 
-Der Knowledge Assistant beantwortet Fragen aus **Ihren eigenen Dokumenten**, direkt im DocBits-Client. Jede Antwort nennt das Dokument, aus dem sie stammt. Ein Klick öffnet dieses Dokument neben der Antwort an der Stelle, an der die Information gefunden wurde. Sie müssen der Antwort nicht blind vertrauen: Sie öffnen die Quelle und prüfen sie.
+Der Wissensassistent beantwortet Fragen aus **Ihren eigenen Dokumenten**, direkt im DocBits-Client. Jede Antwort nennt das Dokument, aus dem sie stammt. Ein Klick öffnet dieses Dokument neben der Antwort an der Stelle, an der die Information gefunden wurde. Sie müssen der Antwort nicht blind vertrauen: Sie öffnen die Quelle und prüfen sie.
 
 <!-- VIDEO: rag/overview/v1/de.mp4 noch nicht veröffentlicht -->
+
+<figure><img src="../../.gitbook/assets/ka-source-preview-de.png" alt="Chat-Antwort zu einem Nachtrag mit der Quellenvorschau rechts, die das gescannte Dokument und den Hinweis Auf Seite 1 gefunden zeigt"><figcaption><p>Eine Antwort mit ihrer Quelle: Das Dokument öffnet sich neben dem Chat.</p></figcaption></figure>
 
 {% hint style="info" %}
 Alle Beispiele in diesem Bereich verwenden **erfundene Demo-Daten**: fiktive Firmen, Dokumentnummern, Beträge und Werte. Sie zeigen nur, wie der Assistent arbeitet. Es sind keine Kundendaten und keine Zusage für Ergebnisse mit Ihren Dokumenten.
@@ -19,14 +21,14 @@ Alle Beispiele in diesem Bereich verwenden **erfundene Demo-Daten**: fiktive Fir
 
 ## So funktioniert es in vier Schritten
 
-1. **Ein Administrator schaltet den Knowledge Assistant** für Ihre Organisation ein und, falls gewünscht, eine Branchenvorlage. Siehe [Aufgaben und wo Sie sie finden](tasks-and-where-to-find-them.md#den-knowledge-assistant-einschalten-administrator).
+1. **Ein Administrator schaltet den Wissensassistent** für Ihre Organisation ein und, falls gewünscht, eine Branchenvorlage. Siehe [Aufgaben und wo Sie sie finden](tasks-and-where-to-find-them.md#den-wissensassistenten-einschalten-administrator).
 2. **Sie laden Dokumente** in eine Wissensdatenbank hoch (PDF, gescanntes PDF, Word, Excel, Markdown, Text, Fotos).
 3. **Sie stellen im Chat eine Frage** und wählen einen Assistenten.
 4. **Sie öffnen die Quelle** unter der Antwort und bestätigen den Wert im Dokument.
 
 ## Was er nicht ist
 
-Der Knowledge Assistant ist eine **Recherchehilfe mit Quellen**. Er ersetzt nicht die Prüfung des Originals und entscheidet nicht für Sie.
+Der Wissensassistent ist eine **Recherchehilfe mit Quellen**. Er ersetzt nicht die Prüfung des Originals und entscheidet nicht für Sie.
 
 * Er gibt **keine Rechtsberatung** und trifft keine Freigabe-, Zahlungs- oder Compliance-Entscheidung.
 * Er ist **kein Archiv**. Ihr Archiv oder Dokumentenmanagementsystem bleibt der Ort für Originale.

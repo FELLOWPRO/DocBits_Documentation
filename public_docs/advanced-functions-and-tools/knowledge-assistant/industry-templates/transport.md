@@ -1,4 +1,4 @@
-# Knowledge Assistant für Transport, Zoll und Luftfahrtteile
+# Wissensassistent für Transport, Zoll und Luftfahrtteile
 
 Kommt eine Schadenmeldung oder eine Prüfung, haben Sie die Unterlagen zu einer Sendung schnell beisammen, auch aus einem Scan, und sehen Unterschiede zwischen den Papieren, bevor ein Nachweis verloren geht.
 
@@ -10,22 +10,21 @@ Die Beispiele auf dieser Seite verwenden **erfundene Demo-Daten**: 30 fiktive Do
 
 ## Was die Vorlage bietet
 
-Ein Administrator schaltet die Vorlage dieser Branche unter **Knowledge Assistant** → **Settings** → **Industry templates** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „On · 3 agents · 3 knowledge bases“.
+Ein Administrator schaltet die Vorlage dieser Branche unter **Wissensassistent** → **Einstellungen** → **Branchenvorlagen** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „An“ und „3 Agenten · 3 Wissensbasen“.
 
 **Wissensdatenbanken** (in sie laden Sie Ihre Dokumente hoch):
 
-<!-- CHECK-DEV: confirm knowledge base and assistant names on dev -->
-* Freight
-* Customs and dangerous goods
-* Aviation
+* Frachtverträge und Schadensfälle
+* Zoll und Gefahrgut
+* Luftfahrt: Teile und Freigaben
 
-**Assistenten** (Sie wählen einen im Chat):
+**Assistenten** (Sie wählen einen unter **Eigene Agenten** im Chat):
 
-* Freight damage assistant CMR
-* Evidence watch
-* Parts provenance checker
+* Frachtschaden-Assistent CMR
+* Nachweis-Wächter
+* Teile-Herkunftsprüfer
 
-Die genauen Namen stehen auf der Vorlagenkarte und im Chat.
+Die Namen und Beschreibungen kommen mit der Vorlage. Dieselben Namen erscheinen unter **Wissensdatenbank** und in der Agentenauswahl im Chat.
 
 ## Beispielfragen aus dem Demo-Satz
 

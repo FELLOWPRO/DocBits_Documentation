@@ -1,4 +1,4 @@
-# Knowledge Assistant für Bau, Gebäude und Energie
+# Wissensassistent für Bau, Gebäude und Energie
 
 Finden Sie den Vertragswert, den Nachtrag oder das Zertifikat in der gültigen Fassung, mit der genauen Stelle im Dokument. Das hilft, wenn ein Nachtrag, eine Vertragsstrafe oder ein Einbehalt strittig ist.
 
@@ -10,22 +10,21 @@ Die Beispiele auf dieser Seite verwenden **erfundene Demo-Daten**: 30 fiktive Do
 
 ## Was die Vorlage bietet
 
-Ein Administrator schaltet die Vorlage dieser Branche unter **Knowledge Assistant** → **Settings** → **Industry templates** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „On · 3 agents · 3 knowledge bases“.
+Ein Administrator schaltet die Vorlage dieser Branche unter **Wissensassistent** → **Einstellungen** → **Branchenvorlagen** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „An“ und „3 Agenten · 3 Wissensbasen“.
 
 **Wissensdatenbanken** (in sie laden Sie Ihre Dokumente hoch):
 
-<!-- CHECK-DEV: confirm knowledge base and assistant names on dev -->
-* Contracts and change orders
-* Site and site diary
-* Building and energy certificates
+* Bauverträge, Nachträge und Abnahmen
+* Baustelle, Sicherheit und Bautagebuch
+* Gebäude- und Energienachweise
 
-**Assistenten** (Sie wählen einen im Chat):
+**Assistenten** (Sie wählen einen unter **Eigene Agenten** im Chat):
 
-* Change order and contract checker
-* Deadline watch for construction
-* Incoming invoice check for construction
+* Nachtrags- und Vertragsprüfer
+* Fristenwächter Bau
+* Eingangsrechnungs-Check Bau
 
-Die genauen Namen stehen auf der Vorlagenkarte und im Chat.
+Die Namen und Beschreibungen kommen mit der Vorlage. Dieselben Namen erscheinen unter **Wissensdatenbank** und in der Agentenauswahl im Chat.
 
 ## Beispielfragen aus dem Demo-Satz
 

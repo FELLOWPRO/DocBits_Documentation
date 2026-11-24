@@ -1,4 +1,4 @@
-# Knowledge Assistant für Elektro und Industriegüter
+# Wissensassistent für Elektro und Industriegüter
 
 Bevor ein Zeugnis an Ihren Kunden geht oder Sie eine Garantieleistung zusagen, zeigt eine Antwort, welche Fassung gilt, ob das Dokument abgelaufen ist und ob zwei Kopien einander widersprechen.
 
@@ -10,22 +10,21 @@ Die Beispiele auf dieser Seite verwenden **erfundene Demo-Daten**: 30 fiktive Do
 
 ## Was die Vorlage bietet
 
-Ein Administrator schaltet die Vorlage dieser Branche unter **Knowledge Assistant** → **Settings** → **Industry templates** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „On · 3 agents · 3 knowledge bases“.
+Ein Administrator schaltet die Vorlage dieser Branche unter **Wissensassistent** → **Einstellungen** → **Branchenvorlagen** ein. Siehe [Aufgaben und wo Sie sie finden](../tasks-and-where-to-find-them.md#eine-branchenvorlage-einschalten-administrator). Die Karte zeigt dann „An“ und „3 Agenten · 3 Wissensbasen“.
 
 **Wissensdatenbanken** (in sie laden Sie Ihre Dokumente hoch):
 
-<!-- CHECK-DEV: confirm knowledge base and assistant names on dev -->
-* Product documentation
-* Suppliers and certificates
-* Service
+* Produktdokumentation und Konformität
+* Lieferanten und Zeugnisse
+* Service, Ersatzteile und Gewährleistung
 
-**Assistenten** (Sie wählen einen im Chat):
+**Assistenten** (Sie wählen einen unter **Eigene Agenten** im Chat):
 
-* Conformity assistant
-* Invoice checker for industrial goods
-* Weekly report: expiring certificates, declarations and contracts
+* Konformitäts-Assistent
+* Rechnungsprüfer Industriegüter
+* Wochenbericht: ablaufende Zeugnisse, Erklärungen und Verträge
 
-Die genauen Namen stehen auf der Vorlagenkarte und im Chat.
+Die Namen und Beschreibungen kommen mit der Vorlage. Dieselben Namen erscheinen unter **Wissensdatenbank** und in der Agentenauswahl im Chat.
 
 ## Beispielfragen aus dem Demo-Satz
 

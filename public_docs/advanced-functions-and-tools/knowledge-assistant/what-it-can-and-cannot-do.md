@@ -1,14 +1,13 @@
 # Was er kann und was nicht
 
-Der Knowledge Assistant ist eine **Recherchehilfe mit Quellen**. Er findet, was in Ihren Dokumenten steht, und zeigt, wo. Er ersetzt weder die Prüfung an der Quelle noch eine fachliche, rechtliche oder qualitätssichernde Entscheidung. Besonders bei Chemie, Life Sciences und Gefahrgut gilt: **Öffnen Sie vor jeder Entscheidung die Quelle und lesen Sie die Stelle selbst.**
+Der Wissensassistent ist eine **Recherchehilfe mit Quellen**. Er findet, was in Ihren Dokumenten steht, und zeigt, wo. Er ersetzt weder die Prüfung an der Quelle noch eine fachliche, rechtliche oder qualitätssichernde Entscheidung. Besonders bei Chemie, Life Sciences und Gefahrgut gilt: **Öffnen Sie vor jeder Entscheidung die Quelle und lesen Sie die Stelle selbst.**
 
-Unsere Tests nutzten erfundene, kurze und saubere Demo-Dokumente (30 je Branche, acht Branchen). Wie gut der Assistent mit Ihren Dokumenten arbeitet, zeigt nur ein Pilot mit Ihren eigenen Dokumenten.
+Unsere Tests nutzten erfundene, kurze und saubere Demo-Dokumente (30 je Branche, acht Branchen). Die meisten liefen im November 2026 auf einer separaten Testinstallation. Auf der aktuellen Entwicklungsumgebung haben wir zusätzlich die Oberfläche, eine Beispielfrage mit Quellenvorschau, die Branchenvorlagen und die Dokumentliste geprüft. Löschen von Dokumenten, Rollen, die Trennung von Organisationen und die Verarbeitung von Uploads haben wir dort nicht erneut getestet. Wie gut der Assistent mit Ihren Dokumenten arbeitet, zeigt nur ein Pilot mit Ihren eigenen Dokumenten.
 
 Kennzeichnungen in der letzten Spalte:
 
 * **Im Test belegt:** so in unseren Tests beobachtet (November 2026).
 * **Bekannte Einschränkung:** gilt heute; wir nennen sie ausdrücklich.
-* **Geplant / in Korrektur:** in Arbeit oder angekündigt; noch nicht verfügbar.
 
 ## Antworten
 
@@ -21,9 +20,9 @@ Kennzeichnungen in der letzten Spalte:
 | Bei Widersprüchen zwischen zwei Fassungen nennt der Assistent die neuere und verweist auf die ältere; bei zwei verschiedenen Werten nennt er beide mit ihren Quellen. | Im Test belegt |
 | Gültigkeitsfragen: Trägt ein abgelaufenes Dokument selbst den Vermerk „gültig“, fällt die Antwort manchmal vorsichtig aus. Mit dem Zusatz „Antworte mit Ja oder Nein und nenne das Gültig-bis-Datum.“ war sie in den geprüften Fällen eindeutig. | Im Test belegt |
 | Rechenfragen über mehrere Dokumente (Differenz zweier Werte) wurden im Test richtig beantwortet. Eine Differenzfrage zu einer Abschnittsnummer, die keine Menge ist, nicht. | Im Test belegt |
-| Summen, Listen und Filter über viele Dokumente („alle offenen Rechnungen über 10.000 EUR“) kommen aus dem DocBits-Dashboard und den extrahierten Feldern, nicht aus dem Knowledge Assistant. | Bekannte Einschränkung |
-| Der Knowledge Assistant trifft keine Entscheidungen und gibt keine Rechtsberatung. Freigeben, Zahlen und Bewerten bleiben bei Ihren Fachleuten. Er ist kein Archiv; Originale bleiben in Ihrem Archiv oder Dokumentenmanagementsystem. | Bekannte Einschränkung |
-| Der Knowledge Assistant ist kein validiertes System. Für GxP-Anwendungen, zum Beispiel in Life Sciences, nutzen Sie ihn nur als Nachschlagehilfe, nicht als validierte Entscheidungsgrundlage. | Bekannte Einschränkung |
+| Summen, Listen und Filter über viele Dokumente („alle offenen Rechnungen über 10.000 EUR“) kommen aus dem DocBits-Dashboard und den extrahierten Feldern, nicht aus dem Wissensassistenten. | Bekannte Einschränkung |
+| Der Wissensassistent trifft keine Entscheidungen und gibt keine Rechtsberatung. Freigeben, Zahlen und Bewerten bleiben bei Ihren Fachleuten. Er ist kein Archiv; Originale bleiben in Ihrem Archiv oder Dokumentenmanagementsystem. | Bekannte Einschränkung |
+| Der Wissensassistent ist kein validiertes System. Für GxP-Anwendungen, zum Beispiel in Life Sciences, nutzen Sie ihn nur als Nachschlagehilfe, nicht als validierte Entscheidungsgrundlage. | Bekannte Einschränkung |
 
 ## Dokumente und Formate
 
@@ -41,7 +40,7 @@ Kennzeichnungen in der letzten Spalte:
 
 | Aussage | Kennzeichnung |
 | --- | --- |
-| <!-- CHECK: Annahme, kein Fehlertest; bestätigen oder streichen --> Tabellen in PDF werden **zeilenweise** gelesen. In unseren Tests waren Fragen zu einem einzelnen Eintrag, zum höchsten und niedrigsten Wert und zur Zeilenzahl einer Übersichtstabelle richtig. Verbundene Zellen, mehrere Tabellen auf einer Seite und Tabellen über mehrere Seiten sind nicht getestet; prüfen Sie dort die Werte in der Vorschau. | Bekannte Einschränkung |
+| Tabellen in PDF werden **zeilenweise** gelesen. In unseren Tests waren Fragen zu einem einzelnen Eintrag, zum höchsten und niedrigsten Wert und zur Zeilenzahl einer Übersichtstabelle richtig. Verbundene Zellen, mehrere Tabellen auf einer Seite und Tabellen über mehrere Seiten sind nicht getestet; prüfen Sie dort die Werte in der Vorschau. | Bekannte Einschränkung |
 
 ## Scans
 
@@ -64,7 +63,7 @@ Kennzeichnungen in der letzten Spalte:
 | Die Gallery zeigt nur **in Dokumente eingebettete** Bilder (zum Beispiel in PDF oder Word), und nur wenn die Bildverarbeitung eingeschaltet ist. Einzeln hochgeladene Fotos und Scans erscheinen dort nicht. | Bekannte Einschränkung |
 | Beschreibungen von Gallery-Bildern sind derzeit leer („No caption“); die Suche nach Beschreibungstext in der Gallery liefert nichts. | Bekannte Einschränkung |
 | Einzeln hochgeladene Fotos werden per Texterkennung gelesen. Fragen zum geschriebenen Text im Foto waren in 24 von 24 Läufen richtig. Der Assistent beurteilt keinen Bildinhalt (zum Beispiel „Ist die Palette beschädigt?“). | Im Test belegt |
-| <!-- CHECK-DEV FIX-FOTO --> Das Hochladen eines Fotos in der Oberfläche ist gesperrt, bis die Bildverarbeitung eingeschaltet ist. | Geplant / in Korrektur |
+| In früheren Testständen war das Hochladen eines Fotos in der Oberfläche gesperrt, bis die Bildverarbeitung eingeschaltet war. Für die aktuelle Version haben wir das nicht erneut geprüft. Fotos können als Text gelesen werden. | Bekannte Einschränkung |
 
 ## Organisationen, Berechtigungen und Daten
 
@@ -73,7 +72,7 @@ Kennzeichnungen in der letzten Spalte:
 | Jede Organisation hat einen eigenen Bereich. Eine zweite Organisation erhielt keinen Zugriff auf Wissensdatenbank, Dokumente, Download und Assistenten der ersten. | Im Test belegt |
 | Rollen: Wer nur lesen darf (Viewer), kann nicht hochladen, ändern, löschen oder herunterladen. Mitglieder haben standardmäßig Contributor-Rechte. | Im Test belegt |
 | Gelöschte Dokumente erscheinen nicht mehr in Antworten; der Speicher wird freigegeben. | Im Test belegt |
-| **Unterorganisationen werden nicht getrennt.** Der Knowledge Assistant trennt nach Organisation. Alle Nutzer einer Organisation sehen dieselben Wissensdatenbanken, auch wenn sie in DocBits unterschiedlichen Unterorganisationen zugeordnet sind. Planen Sie vertrauliche Dokumente entsprechend. <!-- CHECK: Quelltextanalyse, nicht live getestet --> | Bekannte Einschränkung |
+| **Unterorganisationen werden nicht getrennt.** Der Wissensassistent trennt nach Organisation. Alle Nutzer einer Organisation sehen dieselben Wissensdatenbanken, auch wenn sie in DocBits unterschiedlichen Unterorganisationen zugeordnet sind. Planen Sie vertrauliche Dokumente entsprechend. Das stammt aus der Analyse des Programms, nicht aus einem Live-Test. | Bekannte Einschränkung |
 | Es gibt ein Speicherkontingent je Organisation; bei Überschreitung wird der Upload abgewiesen. | Im Test belegt |
 
 Fragen zu Verarbeitungsort, eingesetztem Sprachmodell und Auftragsverarbeitung beantworten wir für Ihre Umgebung verbindlich im Angebot. Diese Dokumentation macht dazu keine Aussage.
@@ -83,19 +82,19 @@ Fragen zu Verarbeitungsort, eingesetztem Sprachmodell und Auftragsverarbeitung b
 | Aussage | Kennzeichnung |
 | --- | --- |
 | Getestet wurden Deutsch, Englisch und Französisch. In allen Tests folgte die Antwortsprache der Frage, auch wenn das Dokument in einer anderen Sprache geschrieben war. Das ist **nicht garantiert**; nennen Sie bei Bedarf die gewünschte Sprache in der Frage. Andere Sprachen haben wir nicht getestet. | Im Test belegt |
-| Die Oberfläche des Knowledge Assistant ist englisch. <!-- CHECK-DEV: UI-Sprache --> Einzelne Meldungen erscheinen noch auf Chinesisch. | Bekannte Einschränkung |
+| Die Oberfläche folgt der Sprache Ihres DocBits-Benutzers. Wir haben Englisch und Deutsch geprüft. In früheren Testständen erschienen einzelne Meldungen auf Chinesisch. | Bekannte Einschränkung |
 
 ## Bedienung und Funktionen
 
 | Aussage | Kennzeichnung |
 | --- | --- |
-| <!-- CHECK-DEV FIX-CHUNK --> Das Speichern der Abschnittsgröße in den Einstellungen der Wissensdatenbank funktioniert derzeit nicht zuverlässig. | Geplant / in Korrektur |
+| Das Speichern der Abschnittsgröße in den Einstellungen der Wissensdatenbank funktionierte in unseren Tests nicht zuverlässig; für die aktuelle Version haben wir es nicht erneut geprüft. | Bekannte Einschränkung |
 | Mermaid-Diagramme in Markdown-Dokumenten werden nicht gezeichnet. | Bekannte Einschränkung |
 | In der Oberfläche lassen sich Dokumente nicht zwischen Wissensdatenbanken verschieben; zwischen Ordnern innerhalb einer Wissensdatenbank schon. | Bekannte Einschränkung |
 | Die Kopie einer Wissensdatenbank trägt denselben Namen wie das Original. | Bekannte Einschränkung |
-| DocBits-Dokumente (Rechnungen, Lieferscheine, Verträge) als Wissensquelle ohne erneutes Hochladen: Die Übernahme ist technisch gebaut, die Auswahl in der Oberfläche fehlt. | In Vorbereitung |
+| DocBits-Dokumente (Rechnungen, Lieferscheine, Verträge) als Wissensquelle ohne erneutes Hochladen (**Aus DocBits**): Die Übernahme haben wir über die Schnittstelle für Entwickler geprüft, das Auswahlpanel ist vorhanden. Dokumente über das Panel haben wir nicht hinzugefügt. Wer die Wissensdatenbank öffnen darf, kann den hinzugefügten Inhalt lesen. | Bekannte Einschränkung |
 | Die Wochenübersicht (Automations) ist standardmäßig aus, liefert ihr Ergebnis in den Verlauf des Assistenten und versendet keine E-Mail. In den Tests lief sie bei manuellem Start in allen acht Branchen. | Im Test belegt |
-| Werkzeuge, die eine Anmeldung bei einem externen Dienst verlangen, lassen sich im Knowledge Assistant derzeit nicht anmelden. | Bekannte Einschränkung |
+| Werkzeuge, die eine Anmeldung bei einem externen Dienst verlangen, lassen sich im Wissensassistenten derzeit nicht anmelden. | Bekannte Einschränkung |
 | Wiki und Wissensgraph wurden an einer eigenen Demo-Wissensdatenbank getestet, nicht an den Branchenvorlagen. | Bekannte Einschränkung |
 
 ## Antwortzeiten
@@ -106,7 +105,7 @@ Fragen zu Verarbeitungsort, eingesetztem Sprachmodell und Auftragsverarbeitung b
 
 ## Nicht verfügbar
 
-Folgendes gehört heute nicht zum Knowledge Assistant und wird nicht angeboten: Websuche, Ausführen von Code in einer Sandbox, Chat-Kanäle wie E-Mail oder Messenger, eigene Sprachmodelle, getrennte Unterorganisationen und eine Desktop-App. Einen Termin nennen wir für nichts davon.
+Folgendes gehört heute nicht zum Wissensassistenten und wird nicht angeboten: Websuche, Ausführen von Code in einer Sandbox, Chat-Kanäle wie E-Mail oder Messenger, eigene Sprachmodelle, getrennte Unterorganisationen und eine Desktop-App. Einen Termin nennen wir für nichts davon.
 
 ## Nicht getestet (keine Aussage möglich)
 

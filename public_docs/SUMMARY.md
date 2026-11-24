@@ -932,6 +932,7 @@
 * [Knowledge Graph Explorer](advanced-functions-and-tools/knowledge-graph-explorer.md)
 * [Knowledge Assistant](advanced-functions-and-tools/knowledge-assistant/README.md)
   * [Tasks and where to find them](advanced-functions-and-tools/knowledge-assistant/tasks-and-where-to-find-them.md)
+  * [Choose the right agent](advanced-functions-and-tools/knowledge-assistant/choose-the-right-agent.md)
   * [Troubleshooting](advanced-functions-and-tools/knowledge-assistant/troubleshooting.md)
   * [What it can and cannot do](advanced-functions-and-tools/knowledge-assistant/what-it-can-and-cannot-do.md)
   * [Industry templates](advanced-functions-and-tools/knowledge-assistant/industry-templates/README.md)

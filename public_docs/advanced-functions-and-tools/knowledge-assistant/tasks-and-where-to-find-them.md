@@ -61,7 +61,7 @@ Only administrators see the **Industry templates** tab. Members without administ
 
 ## Ask a question and open the source
 
-Open **Chat**. Below the input field the button shows the selected agent; **Quick Answer** is the default. Choose an agent under **Custom Agents** to use an assistant of an industry template. The knowledge bases of that assistant then appear as chips above the input field. Type your question and send it.
+Open **Chat**. Below the input field the button shows the selected agent; **Quick Answer** is the default. Choose an agent under **Custom Agents** to use an assistant of an industry template. The knowledge bases of that assistant then appear as chips above the input field. Type your question and send it. [Choose the right agent](choose-the-right-agent.md) explains how the built-in agents differ.
 
 <figure><img src="../../.gitbook/assets/ka-agent-picker-en.png" alt="The agent selection below the chat input with the heading Select Agent and the list of Custom Agents"><figcaption><p>Choose an agent: built-in agents first, then the custom agents of your templates.</p></figcaption></figure>
 

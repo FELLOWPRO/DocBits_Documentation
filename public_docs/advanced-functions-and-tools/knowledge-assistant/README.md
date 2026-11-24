@@ -27,7 +27,7 @@ All examples in this section use **invented demo data**: fictitious companies, d
 
 1. **An administrator switches the Knowledge Assistant on** for your organization and, if wanted, an industry template. See [Tasks and where to find them](tasks-and-where-to-find-them.md#switch-on-the-knowledge-assistant-administrator).
 2. **You upload documents** into a knowledge base (PDF, scanned PDF, Word, Excel, Markdown, text, photos).
-3. **You ask a question in Chat** and choose an assistant.
+3. **You ask a question in Chat** and choose an agent. See [Choose the right agent](choose-the-right-agent.md).
 4. **You open the source** below the answer and confirm the value in the document.
 
 ## What it is not
@@ -46,6 +46,7 @@ Read [What it can and cannot do](what-it-can-and-cannot-do.md) before you rely o
 | Page | Use it to |
 | --- | --- |
 | [Tasks and where to find them](tasks-and-where-to-find-them.md) | Find where to click for each task: set up, upload, ask, check sources, manage knowledge bases |
+| [Choose the right agent](choose-the-right-agent.md) | Understand the built-in agents and pick the right one for your question |
 | [Troubleshooting](troubleshooting.md) | Look up a symptom and the action that helps |
 | [What it can and cannot do](what-it-can-and-cannot-do.md) | Understand the limits and what has been tested |
 | [Industry templates](industry-templates/README.md) | See what the template for your industry provides, with example questions |

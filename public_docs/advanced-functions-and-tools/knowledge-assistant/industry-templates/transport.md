@@ -14,19 +14,17 @@ An administrator switches on the template for this industry under **Knowledge As
 
 **Knowledge bases** (you upload your documents into them):
 
-<!-- CHECK-DEV: confirm knowledge base and assistant names on dev -->
-
-* Freight
-* Customs and dangerous goods
-* Aviation
+* Frachtverträge und Schadensfälle
+* Zoll und Gefahrgut
+* Luftfahrt: Teile und Freigaben
 
 **Assistants** (you choose one in Chat):
 
-* Freight damage assistant CMR
-* Evidence watch
-* Parts provenance checker
+* Frachtschaden-Assistent CMR
+* Nachweis-Wächter
+* Teile-Herkunftsprüfer
 
-The exact names appear on the template card and in Chat.
+The names and descriptions come with the template and are currently in German. The same names appear under **Knowledge Base** and in the agent selection in Chat.
 
 ## Example questions from the demo set
 

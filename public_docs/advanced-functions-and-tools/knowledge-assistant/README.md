@@ -2,7 +2,11 @@
 
 Der Wissensassistent beantwortet Fragen aus **Ihren eigenen Dokumenten**, direkt im DocBits-Client. Jede Antwort nennt das Dokument, aus dem sie stammt. Ein Klick öffnet dieses Dokument neben der Antwort an der Stelle, an der die Information gefunden wurde. Sie müssen der Antwort nicht blind vertrauen: Sie öffnen die Quelle und prüfen sie.
 
-<!-- VIDEO: Übersichtsvideo vorübergehend ausgeblendet, neue Fassung rag/overview/v2 folgt -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/overview/v2/de.mp4" %}
+
+_Demo mit erfundenen Daten · Deutsch · 1:23 Min. · FullHD_
+
+[Video mit Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/overview/v2/de.html) · [Video herunterladen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/overview/v2/de.mp4)
 
 <figure><img src="../../.gitbook/assets/ka-source-preview-de.png" alt="Chat-Antwort zu einem Nachtrag mit der Quellenvorschau rechts, die das gescannte Dokument und den Hinweis Auf Seite 1 gefunden zeigt"><figcaption><p>Eine Antwort mit ihrer Quelle: Das Dokument öffnet sich neben dem Chat.</p></figcaption></figure>
 

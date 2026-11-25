@@ -2,7 +2,11 @@
 
 When a damage claim or an inspection comes in, you get the documents for a shipment together quickly, even from a scan, and you see differences between the papers before evidence is lost.
 
-<!-- VIDEO: rag/transport/v1/en.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/transport/v2/en.mp4" %}
+
+_Demo with invented data · English · 1:32 min · Full HD_
+
+[Video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/transport/v2/en.html) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/transport/v2/en.mp4)
 
 {% hint style="info" %}
 The examples on this page use **invented demo data**: 30 fictitious documents for this industry. Company names, document numbers and values are made up.

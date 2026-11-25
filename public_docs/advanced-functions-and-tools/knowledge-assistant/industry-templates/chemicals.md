@@ -2,7 +2,11 @@
 
 Before anyone acts on an old version, a contradictory certificate or an expired specification, one question shows which value applies and where it is written.
 
-<!-- VIDEO: rag/chemicals/v1/en.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/chemicals/v2/en.mp4" %}
+
+_Demo with invented data · English · 1:24 min · Full HD_
+
+[Video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/chemicals/v2/en.html) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/chemicals/v2/en.mp4)
 
 {% hint style="info" %}
 The examples on this page use **invented demo data**: 30 fictitious documents for this industry. Company names, document numbers and values are made up.

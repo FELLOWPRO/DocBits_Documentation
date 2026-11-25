@@ -2,7 +2,11 @@
 
 Find the contract value, change order or certificate you need in the valid version, with the exact place in the document. This helps when a change order, a contractual penalty or a retention is disputed.
 
-<!-- VIDEO: rag/construction/v1/en.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/construction/v2/en.mp4" %}
+
+_Demo with invented data · English · 1:11 min · Full HD_
+
+[Video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/construction/v2/en.html) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/construction/v2/en.mp4)
 
 {% hint style="info" %}
 The examples on this page use **invented demo data**: 30 fictitious documents for this industry. Company names, document numbers and values are made up.

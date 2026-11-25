@@ -2,7 +2,11 @@
 
 Your service team gives every answer on maintenance, spare parts and suppliers from the valid document, with the source in view, so no technician sets off with the wrong part or an outdated plan.
 
-<!-- VIDEO: rag/mechanical-engineering/v1/en.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/mechanical-engineering/v2/en.mp4" %}
+
+_Demo with invented data · English · 0:53 min · Full HD_
+
+[Video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/mechanical-engineering/v2/en.html) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/mechanical-engineering/v2/en.mp4)
 
 {% hint style="info" %}
 The examples on this page use **invented demo data**: 30 fictitious documents for this industry. Company names, document numbers and values are made up.

@@ -2,11 +2,11 @@
 
 Kommt eine Schadenmeldung oder eine Prüfung, haben Sie die Unterlagen zu einer Sendung schnell beisammen, auch aus einem Scan, und sehen Unterschiede zwischen den Papieren, bevor ein Nachweis verloren geht.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/transport/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/transport/v2/de.mp4" %}
 
-_Demo mit erfundenen Daten · Deutsch · 1:23 Min. · FullHD_
+_Demo mit erfundenen Daten · Deutsch · 1:22 Min. · FullHD_
 
-[Video mit Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/transport/v1/de.html) · [Video herunterladen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/transport/v1/de.mp4)
+[Video mit Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/transport/v2/de.html) · [Video herunterladen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/transport/v2/de.mp4)
 
 {% hint style="info" %}
 Die Beispiele auf dieser Seite verwenden **erfundene Demo-Daten**: 30 fiktive Dokumente für diese Branche. Firmennamen, Dokumentnummern und Werte sind ausgedacht.

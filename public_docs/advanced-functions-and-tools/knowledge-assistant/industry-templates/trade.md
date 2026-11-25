@@ -2,7 +2,11 @@
 
 Before you approve an invoice, file a complaint about a delivery or renew a contract, the agreed term is in front of you together with the place in the document.
 
-<!-- VIDEO: rag/trade/v1/en.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/trade/v2/en.mp4" %}
+
+_Demo with invented data · English · 1:18 min · Full HD_
+
+[Video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/trade/v2/en.html) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/trade/v2/en.mp4)
 
 {% hint style="info" %}
 The examples on this page use **invented demo data**: 30 fictitious documents for this industry. Company names, document numbers and values are made up.

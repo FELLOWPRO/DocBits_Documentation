@@ -23,26 +23,29 @@ Before applying a rule, check the type shown inside that section. If no matching
 
 ### The five key figures
 
-<figure><img src="../../../.gitbook/assets/touchless-report-kpi-en-20261104.png" alt="Current 30-day invoice report: 107 fully automatic invoices plus 11 approval-only invoices give 118 of 201, or 58.7% AP Touchless. Pure alone is 53.2%. The AP card already shows the combined count of 118. Fictional training history; no executed ERP export is established."><figcaption><p>Current 30-day invoice report: 107 fully automatic invoices plus 11 approval-only invoices give 118 of 201, or 58.7% AP Touchless. Pure alone is 53.2%. The AP card already shows the combined count of 118. Fictional training history; no executed ERP export is established.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-outcome-cards-en-20261126.png" alt="The four outcome cards show Pure touchless, Approval only, Manual intervention and Process exceptions. Each shows its share prominently and its document count below. Diagnosis coverage is the fifth card."><figcaption><p>The four outcome cards and Diagnosis coverage. This 30-day test report contains 54 process exceptions and no documents in the other outcome categories.</p></figcaption></figure>
 
-| Card                   | Shows                                             | Example (illustrative)                                                      |
-| ---------------------- | ------------------------------------------------- | --------------------------------------------------------------------------- |
-| **Pure touchless**     | The percentage and the difference to the target   | **63.2 %** · "120 documents" · "−6.8 pp vs 70 % target" (red, below target) |
-| **AP touchless** | Combined percentage and count: Pure plus approval-only | **78.9%** · "150 documents" in the example with 120 Pure and 30 approval-only |
-| **AP assisted**        | The number of documents and their share           | **30** · 15.8 %                                                             |
-| **Process exceptions** | The number of documents and their share           | **10** · 5.3 %                                                              |
-| **Diagnosis coverage** | How many blocked documents have a **known** cause | **80 %** · "10 without a known cause"                                       |
+The first four cards are **separate outcome categories**. On every card, the large value is that category's share of all counted documents and the smaller line is its document count. The four shares add up to 100%; do not add a separate combined rate to them.
 
-* In the current screenshot, 107 fully automatic plus 11 approval-only invoices give **118 ÷ 201 = 58.7% AP Touchless**. Pure alone is **107 ÷ 201 = 53.2%**. The two percentages overlap and must not be added.
+| Card | What it counts | Additional information |
+| --- | --- | --- |
+| **Pure touchless** | Documents completed without manual intervention or a separate approval | Difference in percentage points from the touchless target |
+| **Approval only** | Documents that required approval but no other manual correction | Only this category's own share and count |
+| **Manual intervention** | Documents that required a manual correction or other user interaction | Its own share and count |
+| **Process exceptions** | Documents that could not complete because of a processing or integration exception | Its own share and count |
+| **Diagnosis coverage** | How many blocked documents have a **known** first blocking cause | The number without a known cause |
+
+The separate **Touchless rate · Pure touchless + Approval only** box below the cards combines the first two categories. For example, 60 pure documents plus 15 approval-only documents out of 100 produce a **75% touchless rate**. The Approval only card still shows **15%**, not 75%.
+
 * A card shows a dash (—) instead of **0 %** when there is nothing to measure. A dash means "no data", not "zero".
 * **Diagnosis coverage** = documents with a known blocking reason ÷ all blocked documents. Example: 50 blocked documents, 10 with an unknown cause → 40 ÷ 50 = **80 %**. A low value means "we do not yet understand why documents stop". Improve it before you try to fix individual causes.
-* **Click a card** to open the document list behind the number in a new tab ("View the documents behind this number"). Cards with 0 documents are not clickable.
+* **Click a card** to open the document list behind the number in a new tab ("View the documents behind this number"). Cards with 0 documents are not clickable. Diagnosis coverage opens the documents without a known cause.
 
 ### Touchless rate over time
 
-<figure><img src="../../../.gitbook/assets/touchless-report-trend-en-20261104.png" alt="Current report trend: pink shows Pure Touchless and blue shows the combined rate including approval-only documents. The dashed line marks the 70% target. These curves use fictional training cases and do not establish an actual process improvement."><figcaption><p>Current report trend: pink shows Pure Touchless and blue shows the combined rate including approval-only documents. The dashed line marks the 70% target. These curves use fictional training cases and do not establish an actual process improvement.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-report-trend-en-20261104.png" alt="Report trend with Pure touchless, the combined Touchless rate and the dashed target line."><figcaption><p>Pure touchless and the combined Touchless rate over time. The dashed line marks the target.</p></figcaption></figure>
 
-The current chart shows **Pure Touchless**, the **combined AP Touchless rate**, and the **target line**. Blue includes Pure and approval-only, so it is on or above pink; do not add the two values. Each point has its own number of eligible completed documents, so a daily rate is not automatically the whole-period rate. Short periods show daily points, long periods weekly points. The separate approval-only outcome category is different from this combined line.
+The chart shows **Pure touchless**, the combined **Touchless rate**, and the **target line**. The combined rate includes Pure touchless and Approval only, so it is on or above the pure rate; do not add the two values. Each point has its own number of eligible completed documents, so a daily rate is not automatically the whole-period rate. Short periods show daily points, long periods weekly points. Points based on incomplete recent data are marked **Provisional**.
 
 **Example.** After you switched on automatic PO matching on 1 October, the pure rate climbs from 55 % to 68 % within two weeks. The chart shows the day the curve turns, so you can investigate the timing. A before/after association does not by itself prove that this setting caused the improvement. Compare document type, supplier mix and other changes.
 
@@ -58,10 +61,25 @@ A bar chart of **Blocked documents** per pipeline stage: the **first** stage tha
 
 Organisations on the **Nova** release channel see the same question answered by an expandable list instead of the bar chart. The panel is titled **Why documents are not touchless** and sits beside **Touchless rate over time**.
 
-* The header names how many documents the list covers. Each row is one first-blocker area with its share in percent, the number of documents and a bar. Rows arrive sorted largest first.
-* Click a row to open its reasons in place. The reasons keep their own document counts, so you can see which cause inside an area costs the most. Only one area is open at a time; click it again to close it.
-* The list comes from the same report data as the key figures. Numbers are not recalculated in the browser, so a total in the header and the rows always match.
+<figure><img src="../../../.gitbook/assets/touchless-why-reasons-en-20261126.png" alt="Expanded Validation area with 32 documents and the reason E-invoice validation failed. The Documents action opens the matching document side panel."><figcaption><p>Expand an area to see its reasons and open the documents behind a reason. The test report also contains an Export &amp; setup area with 22 documents.</p></figcaption></figure>
+
+* The header names how many documents the list covers. Each row is one first-blocker area with its share in percent, the number of documents and a bar. Rows are sorted largest first.
+* Click a row to open its reasons in place. Only one area is open at a time; click it again to close it. The first **five** reasons are shown; select **+N more** to reveal the rest. Closing the area folds it back to five.
+* **Corrected without a blocker** is a separate area for documents that a user corrected even though the report found no technical first blocker. Use it to investigate user-process and training opportunities rather than looking for a failed pipeline stage.
+* The list comes from the same report data as the key figures. Numbers are not recalculated in the browser, so the total in the header and the rows match.
 * If your installation does not send this data yet, the panel says so instead of showing **0**. An empty list with the wording for "nothing recorded" means documents were not lost in the period; the two states are different and you should not read the first one as good news.
+
+##### Documents behind a reason
+
+Select **Documents** on a reason to open a side panel without leaving the report. The header keeps the reason, area, period and document type in view.
+
+<figure><img src="../../../.gitbook/assets/touchless-reason-documents-en-20261126.png" alt="Reason documents side panel with search, Open in document list, document details and pagination."><figcaption><p>The reason-document panel lists 25 documents per page. In this test example, E-invoice validation failed has 32 matching documents.</p></figcaption></figure>
+
+* **Search** by supplier, file name or document number. Clear the search to return to all documents for the reason; a no-match message does not mean that the reason has no documents.
+* The table shows the **document, supplier, received date, outcome, first blocked stage and a short detail**. Select a row or its document name to open the **Document Trace**. **Back** from the trace returns to the same reason, search and page.
+* Use **Previous** and **Next** to move through pages of **25 documents**. The footer shows the visible range, total and current page.
+* **Open in document list** opens the full document list in a new tab with the reason, report period and document-type filters applied. Your report and side panel remain open in the original tab.
+* If loading fails, use **Retry**. An empty result and a loading error are different states.
 
 The **Vesta** release channel keeps the bar chart described above. If your page shows bars, you are on Vesta; if it shows the expandable list, you are on Nova. Both answer the same question, so the rest of this page applies either way.
 

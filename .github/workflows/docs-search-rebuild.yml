@@ -39,9 +39,7 @@ concurrency:
 
 jobs:
   rebuild:
-    runs-on:
-      group: DocBits Documentation
-      labels: k9s
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       max-parallel: 3

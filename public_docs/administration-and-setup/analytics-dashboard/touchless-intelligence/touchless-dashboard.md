@@ -23,47 +23,65 @@ Controleer het type dat in die sectie wordt getoond voordat u een regel toepast.
 
 ### De vijf kerncijfers
 
-<figure><img src="../../../.gitbook/assets/touchless-report-kpi-nl-20261104.png" alt="Huidig factuurrapport over 30 dagen: 107 volledig automatische facturen plus 11 facturen met alleen goedkeuring geven 118 van 201, oftewel 58,7% AP Touchless. Pure alleen is 53,2%. De AP-kaart toont al het gecombineerde aantal van 118. Fictieve trainingshistorie; een uitgevoerde ERP-export is niet vastgesteld."><figcaption><p>Huidig factuurrapport over 30 dagen: 107 volledig automatische facturen plus 11 facturen met alleen goedkeuring geven 118 van 201, oftewel 58,7% AP Touchless. Pure alleen is 53,2%. De AP-kaart toont al het gecombineerde aantal van 118. Fictieve trainingshistorie; een uitgevoerde ERP-export is niet vastgesteld.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-outcome-cards-nl-20261126.png" alt="De vier resultaatkaarten Volledig contactloos, Alleen ter goedkeuring, Handmatige interventie en Procesuitzonderingen tonen het aandeel groot en het aantal documenten eronder. Diagnosedekking is de vijfde kaart."><figcaption><p>De vier resultaatkaarten en Diagnosedekking. Dit testrapport over 30 dagen bevat 54 procesuitzonderingen en geen documenten in de andere resultaatcategorieën.</p></figcaption></figure>
 
-| Kaart                   | Toont                                             | Voorbeeld (illustratief)                                                      |
-| ---------------------- | ------------------------------------------------- | --------------------------------------------------------------------------- |
-| **Pure touchless**     | Het percentage en het verschil met het doel   | **63.2 %** · "120 documents" · "−6.8 pp vs 70 % target" (rood, onder het doel) |
-| **AP touchless** | Percentage en aantal gecombineerd: Pure plus alleen goedkeuring | **78.9%** · "150 documents" in het voorbeeld met 120 Pure en 30 alleen goedkeuring |
-| **AP assisted**        | Het aantal documenten en hun aandeel           | **30** · 15.8 %                                                             |
-| **Process exceptions** | Het aantal documenten en hun aandeel           | **10** · 5.3 %                                                              |
-| **Diagnosis coverage** | Hoeveel geblokkeerde documenten een **bekende** oorzaak hebben | **80 %** · "10 without a known cause"                                       |
+De eerste vier kaarten zijn **afzonderlijke resultaatcategorieën**. Op elke kaart is de grote waarde het aandeel van die categorie in alle getelde documenten en geeft de kleinere regel het aantal documenten weer. De vier aandelen zijn samen 100%; voeg daar geen apart gecombineerd percentage aan toe.
 
-* In de huidige schermopname geven 107 volledig automatische plus 11 facturen met alleen goedkeuring **118 ÷ 201 = 58.7% AP Touchless**. Pure alleen is **107 ÷ 201 = 53.2%**. De twee percentages overlappen elkaar en mogen niet worden opgeteld.
-* Een kaart toont een streepje (—) in plaats van **0 %** wanneer er niets te meten is. Een streepje betekent "geen gegevens", niet "nul".
-* **Diagnosis coverage** = documenten met een bekende blokkeringsreden ÷ alle geblokkeerde documenten. Voorbeeld: 50 geblokkeerde documenten, 10 met een onbekende oorzaak → 40 ÷ 50 = **80 %**. Een lage waarde betekent "we begrijpen nog niet waarom documenten stoppen". Verbeter die eerst voordat u afzonderlijke oorzaken probeert op te lossen.
-* **Klik op een kaart** om de documentenlijst achter het cijfer in een nieuw tabblad te openen ("View the documents behind this number"). Kaarten met 0 documenten zijn niet klikbaar.
+| Kaart | Wat wordt geteld | Aanvullende informatie |
+| --- | --- | --- |
+| **Volledig contactloos** | Documenten die zonder handmatige interventie of afzonderlijke goedkeuring zijn afgerond | Verschil in procentpunten met de touchless-doelstelling |
+| **Alleen ter goedkeuring** | Documenten die goedkeuring maar geen andere handmatige correctie vereisten | Alleen het eigen aandeel en aantal van deze categorie |
+| **Handmatige interventie** | Documenten die een handmatige correctie of andere gebruikersinteractie vereisten | Eigen aandeel en aantal |
+| **Procesuitzonderingen** | Documenten die door een verwerkings- of integratie-uitzondering niet konden worden afgerond | Eigen aandeel en aantal |
+| **Diagnosedekking** | Bij hoeveel geblokkeerde documenten de **eerste oorzaak** van de blokkade bekend is | Aantal zonder bekende oorzaak |
 
-### Touchless-percentage in de tijd
+Het afzonderlijke vak **Contactloos percentage · Volledig contactloos + Alleen ter goedkeuring** onder de kaarten combineert de eerste twee categorieën. Bijvoorbeeld: 60 volledig contactloze documenten plus 15 documenten alleen ter goedkeuring van 100 geven een **contactloos percentage van 75%**. De kaart Alleen ter goedkeuring toont nog steeds **15%**, niet 75%.
 
-<figure><img src="../../../.gitbook/assets/touchless-report-trend-nl-20261104.png" alt="Huidige trend van het rapport: roze toont Pure Touchless en blauw het gecombineerde percentage inclusief documenten met alleen goedkeuring. De stippellijn markeert het doel van 70%. Deze curven gebruiken fictieve leervoorbeelden en stellen geen werkelijke procesverbetering vast."><figcaption><p>Huidige trend van het rapport: roze toont Pure Touchless en blauw het gecombineerde percentage inclusief documenten met alleen goedkeuring. De stippellijn markeert het doel van 70%. Deze curven gebruiken fictieve leervoorbeelden en stellen geen werkelijke procesverbetering vast.</p></figcaption></figure>
+* Een kaart toont een streepje (—) in plaats van **0%** wanneer er niets te meten is. Een streepje betekent 'geen gegevens', niet 'nul'.
+* **Diagnosedekking** = documenten met een bekende blokkeringsreden ÷ alle geblokkeerde documenten. Voorbeeld: 50 geblokkeerde documenten, 10 met een onbekende oorzaak → 40 ÷ 50 = **80%**. Een lage waarde betekent dat we nog niet begrijpen waarom documenten stoppen. Verbeter dit voordat u afzonderlijke oorzaken oplost.
+* **Klik op een kaart** om de documentenlijst achter het cijfer in een nieuw tabblad te openen. Kaarten met 0 documenten zijn niet klikbaar. Diagnosedekking opent de documenten zonder bekende oorzaak.
 
-De huidige grafiek toont **Pure Touchless**, het **gecombineerde AP Touchless-percentage** en de **doellijn**. Blauw omvat Pure en alleen goedkeuring en ligt dus op of boven roze; tel de twee waarden niet op. Elk punt heeft zijn eigen aantal meetellende afgeronde documenten, dus een dagpercentage is niet automatisch het percentage over de hele periode. Korte perioden tonen dagpunten, lange perioden weekpunten. De afzonderlijke uitkomstcategorie alleen goedkeuring verschilt van deze gecombineerde lijn.
+### Contactloos gebruik over tijd
 
-**Voorbeeld.** Nadat u op 1 oktober automatische PO-matching hebt ingeschakeld, stijgt het pure percentage binnen twee weken van 55 % naar 68 %. De grafiek toont de dag waarop de curve omslaat, zodat u de timing kunt onderzoeken. Een verband voor/na bewijst op zichzelf niet dat deze instelling de verbetering heeft veroorzaakt. Vergelijk documenttype, leveranciersmix en andere wijzigingen.
+<figure><img src="../../../.gitbook/assets/touchless-report-trend-nl-20261104.png" alt="Rapportverloop met Volledig contactloos, het gecombineerde Contactloze percentage en de gestippelde doellijn."><figcaption><p>Volledig contactloos en het gecombineerde Contactloze percentage in de loop van de tijd. De gestippelde lijn markeert de doelstelling.</p></figcaption></figure>
 
-### Waar touchless het eerst verloren gaat
+De grafiek toont **Volledig contactloos**, het gecombineerde **Contactloze percentage** en de **doellijn**. Het gecombineerde percentage omvat Volledig contactloos en Alleen ter goedkeuring en is daarom gelijk aan of hoger dan het volledig contactloze percentage; tel de twee waarden niet op. Elk punt heeft een eigen aantal in aanmerking komende afgeronde documenten, dus een dagpercentage is niet automatisch het percentage voor de hele periode. Korte periodes tonen dagelijkse punten, lange periodes wekelijkse punten. Punten op basis van onvolledige recente gegevens zijn gemarkeerd als **Voorlopig**.
 
-<figure><img src="../../../.gitbook/assets/touchless-blocking-stages-nl.png" alt="Staafdiagram van de geblokkeerde documenten per eerste blokkeringsfase en reden"><figcaption><p>Geblokkeerde documenten naar de fase en reden waar ze het eerst stopten. Hier kost <strong>Field validation: Required field missing</strong> de meeste documenten (58), gevolgd door <strong>Export mapping failed</strong> (46) en <strong>PO item mismatch</strong> (27). Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
+**Voorbeeld.** Nadat u op 1 oktober automatische ordermatching hebt ingeschakeld, stijgt het volledig contactloze percentage binnen twee weken van 55% naar 68%. De grafiek toont de dag waarop de curve verandert, zodat u het tijdstip kunt onderzoeken. Een voor/na-verband bewijst op zichzelf niet dat deze instelling de verbetering heeft veroorzaakt. Vergelijk documenttype, leveranciersmix en andere wijzigingen.
 
-Een staafdiagram van **geblokkeerde documenten** per pipelinefase: de **eerste** fase die een document stopte.
+### Waar touchless eerst verloren gaat
 
-**Voorbeeld.** Staven: Supplier Identification 12, Field Validation 41, PO Line Match 7. De grootste staaf zegt dat u eerst naar **Field Validation** moet kijken. Een ontbrekende geëxtraheerde waarde is één mogelijke oorzaak; vergelijk de originele factuur, veldregels en beschikbare brongegevens voordat u die bevestigt.
+<figure><img src="../../../.gitbook/assets/touchless-blocking-stages-nl.png" alt="Staafdiagram van geblokkeerde documenten per eerste blokkerende fase en reden"><figcaption><p>Geblokkeerde documenten naar de fase en reden waar ze eerst stopten. Hier kost <strong>Field validation: Required field missing</strong> de meeste documenten (58), gevolgd door <strong>Export mapping failed</strong> (46) en <strong>PO item mismatch</strong> (27). Voorbeeldorganisatie met demogegevens; leveranciersnamen zijn fictief.</p></figcaption></figure>
 
-#### Waarom documenten niet touchless zijn (Nova-releasekanaal)
+Een staafdiagram van **Geblokkeerde documenten** per procesfase: de **eerste** fase die een document heeft gestopt.
 
-Organisaties op het releasekanaal **Nova** zien dezelfde vraag beantwoord door een uitklapbare lijst in plaats van de staafgrafiek. Het paneel heet **Why documents are not touchless** en staat naast **Touchless rate over time**.
+**Voorbeeld.** Balken: Supplier Identification 12, Field Validation 41, PO Line Match 7. De grootste balk geeft aan dat u eerst **Field Validation** moet onderzoeken. Een ontbrekende geëxtraheerde waarde is een mogelijke oorzaak; vergelijk de originele factuur, veldregels en beschikbare brongegevens voordat u deze bevestigt.
 
-* De kopregel noemt hoeveel documenten de lijst dekt. Elke rij is een gebied van de eerste blokkade met zijn aandeel in procenten, het aantal documenten en een staaf. De rijen komen gesorteerd van groot naar klein.
-* Klik op een rij om de redenen ter plaatse te openen. De redenen houden hun eigen documentaantallen, zodat u ziet welke oorzaak binnen een gebied het meest kost. Er is steeds één gebied open; klik er opnieuw op om het te sluiten.
-* De lijst komt uit dezelfde rapportgegevens als de kerncijfers. Getallen worden niet in de browser herberekend, dus een totaal in de kopregel en de rijen komen altijd overeen.
-* Als uw installatie deze gegevens nog niet levert, zegt het paneel dat in plaats van **0** te tonen. Een lege lijst met de tekst voor "niets vastgelegd" betekent dat er in de periode geen documenten verloren zijn gegaan; de twee toestanden zijn verschillend en u moet de eerste niet als goed nieuws lezen.
+#### Waarom documenten niet contactloos zijn (Nova-releasekanaal)
 
-Het releasekanaal **Vesta** houdt de hierboven beschreven staafgrafiek. Toont uw pagina staven, dan zit u op Vesta; toont zij de uitklapbare lijst, dan zit u op Nova. Beide beantwoorden dezelfde vraag, dus de rest van deze pagina geldt in beide gevallen.
+Organisaties op het **Nova**-releasekanaal zien het antwoord op dezelfde vraag in een uitvouwbare lijst in plaats van het staafdiagram. Het paneel heet **Waarom documenten niet contactloos zijn** en staat naast **Contactloos gebruik over tijd**.
+
+<figure><img src="../../../.gitbook/assets/touchless-why-reasons-nl-20261126.png" alt="Uitgevouwen gebied Geldigmaking met 32 documenten en de reden Validatie van e-factuur mislukt. De actie Documenten opent het bijbehorende zijpaneel."><figcaption><p>Vouw een gebied uit om de redenen te zien en de documenten achter een reden te openen. Het testrapport bevat ook een gebied Exporteren en instellen met 22 documenten.</p></figcaption></figure>
+
+* De kop vermeldt hoeveel documenten de lijst bestrijkt. Elke rij is een gebied van de eerste blokkade met het aandeel in procenten, het aantal documenten en een balk. De rijen zijn van groot naar klein gesorteerd.
+* Klik op een rij om de redenen te openen. Er is slechts één gebied tegelijk geopend; klik er nogmaals op om het te sluiten. De eerste **vijf** redenen worden getoond; selecteer **+N meer** om de rest te zien. Bij het sluiten wordt de lijst weer teruggebracht tot vijf.
+* **Gecorrigeerd zonder blokkade** is een afzonderlijk gebied voor documenten die een gebruiker heeft gecorrigeerd terwijl het rapport geen technische eerste blokkade heeft gevonden. Gebruik dit om mogelijkheden voor gebruikersprocessen en training te onderzoeken in plaats van een mislukte pipelinefase te zoeken.
+* De lijst komt uit dezelfde rapportgegevens als de kerncijfers. De browser berekent de aantallen niet opnieuw, zodat het totaal in de kop en de rijen overeenkomen.
+* Als uw installatie deze gegevens nog niet verzendt, vermeldt het paneel dit in plaats van **0** te tonen. Een lege lijst met de tekst 'niets geregistreerd' betekent dat er in de periode geen documenten verloren gingen; dit zijn verschillende toestanden en u moet de eerste niet als goed nieuws lezen.
+
+##### Documenten achter een reden
+
+Selecteer **Documenten** bij een reden om een zijpaneel te openen zonder het rapport te verlaten. De kop houdt reden, gebied, periode en documenttype zichtbaar.
+
+<figure><img src="../../../.gitbook/assets/touchless-reason-documents-nl-20261126.png" alt="Zijpaneel met documenten van de reden, zoeken, Openen in de documentenlijst, documentdetails en paginering."><figcaption><p>Het paneel met documenten van een reden toont 25 documenten per pagina. In dit testvoorbeeld heeft Validatie van e-factuur mislukt 32 overeenkomende documenten.</p></figcaption></figure>
+
+* **Zoek** op leverancier, bestandsnaam of documentnummer. Wis de zoekopdracht om alle documenten van de reden terug te zien; een melding zonder overeenkomsten betekent niet dat de reden geen documenten heeft.
+* De tabel toont **document, leverancier, ontvangstdatum, resultaat, eerste geblokkeerde fase en een korte toelichting**. Selecteer een rij of de documentnaam om de **Documenttrace** te openen. **Terug** vanuit de trace keert terug naar dezelfde reden, zoekopdracht en pagina.
+* Gebruik **Vorige** en **Volgende** om door pagina's van **25 documenten** te bladeren. De voettekst toont het zichtbare bereik, het totaal en de huidige pagina.
+* **Openen in de documentenlijst** opent de volledige documentenlijst in een nieuw tabblad met de filters voor reden, rapportperiode en documenttype toegepast. Het rapport en zijpaneel blijven geopend in het oorspronkelijke tabblad.
+* Gebruik bij een laadfout **Opnieuw proberen**. Een leeg resultaat en een laadfout zijn verschillende toestanden.
+
+Het **Vesta**-releasekanaal behoudt het hierboven beschreven staafdiagram. Toont uw pagina balken, dan gebruikt u Vesta; toont ze de uitvouwbare lijst, dan gebruikt u Nova. Beide beantwoorden dezelfde vraag, dus de rest van deze pagina geldt in beide gevallen.
 
 ### Leverancierskansen
 

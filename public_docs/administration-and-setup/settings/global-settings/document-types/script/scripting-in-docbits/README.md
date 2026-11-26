@@ -8,13 +8,13 @@ The most important script functions in DocBits
 
 The video shows in the script editor how to read a field (`get_field_value`), set a value (`set_field_value`), calculate a due date (`set_date_value`), mark a field as invalid (`set_field_as_invalid`) and make a field required (`set_is_required`).
 
-## Docbits Scripting Guide
+## DocBits Scripting Guide
 
-Welcome to the Docbits scripting guide! Here, you'll learn how to use scripts to automate and enhance your document processing within Docbits. Scripts allow for custom field manipulation, data transformation, and logic implementation across various document types.
+Welcome to the DocBits scripting guide! Here, you'll learn how to use scripts to automate and enhance your document processing within DocBits. Scripts allow for custom field manipulation, data transformation, and logic implementation across various document types.
 
 ### Getting Started
 
-Scripts in Docbits are written in Python. They interact with document fields and metadata to perform a wide range of operations, from simple data formatting to complex logic.
+Scripts in DocBits are written in Python. They interact with document fields and metadata to perform a wide range of operations, from simple data formatting to complex logic.
 
 #### Key Functions
 

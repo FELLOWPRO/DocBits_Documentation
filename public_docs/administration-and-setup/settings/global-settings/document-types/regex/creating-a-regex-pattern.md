@@ -22,7 +22,7 @@
 * Choose the appropriate Regex operators and constructs to describe the identified patterns.&#x20;
 *   These include metacharacters such as&#x20;
 
-    ´.´ (any character), ´\*´ (any number), ´+´ (at least one occurrence), ´? (zero or one occurrence) and character classes such as ´\d´ (digital character), ´\w´ (alphanumeric character) and ´\ (space).
+    ´.´ (any character), ´\*´ (any number), ´+´ (at least one occurrence), ´? (zero or one occurrence) and character classes such as ´\d´ (digital character), ´\w´ (alphanumeric character) and ´\ ´ (space).
 
 
 

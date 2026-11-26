@@ -34,7 +34,7 @@ Dynamic fields are replaced with document data when the email is sent. Insert th
 
 ## **Sending a Test Email**
 
-Click **Send Test** in the editor, enter a **Receiver Email** address, and click **Send**. DocBits sends a preview of the template so you can check the layout and verify that the dynamic fields resolve correctly before saving.
+Click **Send Test** in the editor, enter a **Receiver Email** address, and click **Send**. DocBits sends a preview of the template so you can check the layout and verify that the dynamic fields resolve correctly before you send it to recipients.
 
 <figure><img src="../../../.gitbook/assets/test_email_configuration_dialog.png" alt="Send Test dialog"><figcaption><p>The Send Test dialog</p></figcaption></figure>
 

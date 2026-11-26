@@ -23,7 +23,7 @@ A transformation changes existing data; it does not perform OCR again. It reads 
 
 ## Overview
 
-**Trigger:** During processing, rules can run after extraction. In newer versions, **Run after lookup population (before PO match)** adds a pass after lookup. Run-once rules using that option are held back during the after-extraction pass. Saving changed extraction data can also run rules again.
+**Scope:** A rule applies to one of the following:
 
 * a **header field** (invoice number, currency, supplier tax ID …),
 * a **column** in every row of a table (unit, item number, price basis …),

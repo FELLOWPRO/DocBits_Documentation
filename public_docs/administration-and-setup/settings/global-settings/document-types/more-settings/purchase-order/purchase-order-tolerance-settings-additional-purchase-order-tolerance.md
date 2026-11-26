@@ -23,7 +23,7 @@ When enabled, this setting allows you to define tolerances for **Quantity** and/
 1. **Enable the Setting:**
    * Turn on the PO Tolerance Setting using the toggle button.
 2. **Configure Tolerances:**
-   * Four fields will appear:
+   * Two fields will appear:
      * One field for the **Quantity Tolerance Amount**.
      * One field for the **Unit Price Tolerance Amount**.
    * Behind each field, there is a dropdown menu where you can select the tolerance type:
@@ -62,7 +62,7 @@ When enabled, this setting allows you to define tolerances for **Freight**, **Ch
 1. **Enable the Setting:**
    * Turn on the Additional PO Tolerance Setting using the toggle button.
 2. **Configure Tolerances:**
-   * Six fields will become visible:
+   * Three fields will become visible:
      * One field each for the tolerance amounts for **Freight**, **Charges**, and **Tax**.
    * Each field has an accompanying dropdown menu where you can choose the tolerance type:
      * **Percent:** The tolerance is defined as a percentage.

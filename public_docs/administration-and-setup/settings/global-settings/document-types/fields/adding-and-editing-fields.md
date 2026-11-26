@@ -69,7 +69,7 @@
 
 **Change the configuration:**
 
-* Change the properties of the field as needed. This may include changing the name, the field type, adding or removing validation rules, setting match values, or adjusting other advanced settings.
+* Change the properties of the field as needed. This may include changing the **Title**, the field type, adding or removing validation rules, setting match values, or adjusting other advanced settings.
 
 <mark style="color:red;">**Note:**</mark> If you change the **Title** of a field, you must delete and re-add the field in the layout builder for the changes to take effect.
 

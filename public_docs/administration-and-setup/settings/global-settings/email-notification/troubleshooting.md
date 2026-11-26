@@ -20,7 +20,7 @@ These are some tips and additional delayed notification troubleshooting steps yo
 
 
 * **Check firewalls and security settings:**&#x20;
-* Check firewall settings and other security settings to ensure that the email server is properly configured to send outgoing email and that no ports used for email are blocked. Shipping is required.
+* Check firewall settings and other security settings to ensure that the email server is properly configured to send outgoing email and that no ports used for email are blocked.
 
 
 

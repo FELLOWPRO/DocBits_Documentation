@@ -152,7 +152,7 @@ Add prefix `INV-`: `4711` → `INV-4711`. The reviewed server does not add an al
 
 Keep **letters and digits**, **letters**, **digits**, or **letters, digits and spaces**. Alternatively, remove a character class.
 
-Keeping letters and digits: `DE 123.456.789` → `DE123456789`. The remove input is a regular-expression character class; protect a hyphen correctly, for example `.\-/`.
+Keeping letters and digits: `DE 123.456.789` → `DE123456789`. The remove input is a regular-expression character class; place a hyphen at the end of the class so that it stays literal, for example `.-`.
 
 **Check:** punctuation can carry meaning. Do not remove characters unless the target system expects that result.
 

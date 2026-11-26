@@ -5,7 +5,7 @@ description: URUGUAY E-NOTA CREDITO electronic document support in DocBits
 # 🇺🇾 URUGUAY E-NOTA CREDITO
 
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [Uruguay](uruguay.md). Credit-note entries lack dedicated extraction bundles in the inspected status. Confirm the CFE version and the effective invoice or credit-note mapping.
+Check the country guide for version limits, effective configuration and the country explainer. [Uruguay](uruguay.md). Credit-note entries use the shared invoice extraction paths rather than a dedicated bundle in the inspected status. Confirm the CFE version and the effective invoice or credit-note mapping.
 {% endhint %}
 
 | Property             | Value                            |

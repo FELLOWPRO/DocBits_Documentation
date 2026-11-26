@@ -57,7 +57,7 @@ Execution order matters when several workflows affect the same document. I check
 
 **Standard Workflow**
 
-For a linear rule I choose Standard Workflow. When defines the trigger, And adds conditions, and Then performs the actions. The card library provides the available building blocks.
+For a linear rule I choose Standard Workflow. **When** defines the trigger, **And** adds conditions, and **Then** performs the actions. The card library provides the available building blocks.
 
 **Advanced Workflow**
 

@@ -190,7 +190,7 @@ Knowing these rules avoids most surprises:
 2. **Everything else is compared as text, after removing leading and trailing spaces.** `" EUR "` is `EUR`.
 3. **Upper and lower case matter** unless **Aa** (ignore case) is switched on.
 4. **Empty is special.** A field that is missing or blank:
-   * is true for **is empty** and **is not**,
+   * is true for **is empty** and for any negated comparison such as **is not**,
    * is false for **is**, **is one of**, **contains**, **starts with**, **ends with**, **matches** and all number comparisons.
 
 {% hint style="warning" %}

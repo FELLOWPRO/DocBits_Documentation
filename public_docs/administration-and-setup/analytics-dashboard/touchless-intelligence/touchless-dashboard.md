@@ -23,26 +23,29 @@ Prüfen Sie vor einer Regelanwendung den Typ, der in diesem Abschnitt angezeigt 
 
 ### Die fünf Kennzahlen
 
-<figure><img src="../../../.gitbook/assets/touchless-report-kpi-de-20261104.png" alt="Aktueller 30-Tage-Bericht für Rechnungen: 107 vollständig automatische Rechnungen plus 11 nur freigegebene Rechnungen ergeben 118 von 201, also 58,7 % AP Touchless. Pure allein sind 53,2 %. Die AP-Karte zeigt bereits die gemeinsame Anzahl 118. Fiktiver Schulungsbestand; kein durchgeführter ERP-Export belegt."><figcaption><p>Aktueller 30-Tage-Bericht für Rechnungen: 107 vollständig automatische Rechnungen plus 11 nur freigegebene Rechnungen ergeben 118 von 201, also 58,7 % AP Touchless. Pure allein sind 53,2 %. Die AP-Karte zeigt bereits die gemeinsame Anzahl 118. Fiktiver Schulungsbestand; kein durchgeführter ERP-Export belegt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-outcome-cards-de-20261126.png" alt="Die vier Ergebniskarten Pure Touchless, Nur Freigabe, Manueller Eingriff und Prozessausnahmen zeigen jeweils groß den Anteil und darunter die Dokumentanzahl. Diagnoseabdeckung ist die fünfte Karte."><figcaption><p>Die vier Ergebniskarten und die Diagnoseabdeckung. Dieser 30-Tage-Testbericht enthält 54 Prozessausnahmen und keine Dokumente in den anderen Ergebniskategorien.</p></figcaption></figure>
 
-| Karte                   | Zeigt                                             | Beispiel (zur Veranschaulichung)                                                      |
-| ---------------------- | ------------------------------------------------- | --------------------------------------------------------------------------- |
-| **Pure touchless**     | Den Prozentwert und die Abweichung zum Ziel   | **63,2 %** · „120 Dokumente“ · „−6,8 pp zum Ziel von 70 %“ (rot, unter dem Ziel) |
-| **AP touchless** | Gemeinsame Quote und Anzahl: Pure plus reine Freigaben | **78,9 %** · „150 Dokumente“ im Beispiel mit 120 Pure und 30 reinen Freigaben |
-| **AP assisted**        | Die Anzahl der Dokumente und ihren Anteil           | **30** · 15,8 %                                                             |
-| **Process exceptions** | Die Anzahl der Dokumente und ihren Anteil           | **10** · 5,3 %                                                              |
-| **Diagnosis coverage** | Bei wie vielen blockierten Dokumenten die Ursache **bekannt** ist | **80 %** · „10 ohne bekannte Ursache“                                       |
+Die ersten vier Karten sind **getrennte Ergebniskategorien**. Auf jeder Karte zeigt der große Wert den Anteil dieser Kategorie an allen gezählten Dokumenten; die kleinere Zeile zeigt ihre Dokumentanzahl. Die vier Anteile ergeben zusammen 100 %. Addieren Sie keine separate gemeinsame Quote hinzu.
 
-* Im aktuellen Screenshot ergeben 107 vollständig automatische plus 11 nur freigegebene Rechnungen **118 ÷ 201 = 58,7 % AP Touchless**. Pure allein sind **107 ÷ 201 = 53,2 %**. Die beiden Prozentwerte überschneiden sich und dürfen nicht addiert werden.
+| Karte | Was sie zählt | Zusätzliche Information |
+| --- | --- | --- |
+| **Pure touchless** | Dokumente, die ohne manuellen Eingriff oder separate Freigabe abgeschlossen wurden | Abweichung in Prozentpunkten vom Touchless-Ziel |
+| **Nur Freigabe** | Dokumente, die eine Freigabe, aber keine sonstige manuelle Korrektur benötigten | Nur eigener Anteil und eigene Anzahl dieser Kategorie |
+| **Manueller Eingriff** | Dokumente, die eine manuelle Korrektur oder andere Benutzerinteraktion benötigten | Eigener Anteil und eigene Anzahl |
+| **Prozessausnahmen** | Dokumente, die wegen einer Verarbeitungs- oder Integrationsausnahme nicht abgeschlossen werden konnten | Eigener Anteil und eigene Anzahl |
+| **Diagnoseabdeckung** | Bei wie vielen blockierten Dokumenten die erste blockierende Ursache **bekannt** ist | Anzahl ohne bekannte Ursache |
+
+Das separate Feld **Touchless-Quote · Pure touchless + Nur Freigabe** unter den Karten kombiniert die ersten beiden Kategorien. Beispiel: 60 Pure-Dokumente plus 15 Dokumente mit reiner Freigabe von insgesamt 100 ergeben eine **Touchless-Quote von 75 %**. Die Karte Nur Freigabe zeigt weiterhin **15 %**, nicht 75 %.
+
 * Eine Karte zeigt einen Strich (—) statt **0 %**, wenn es nichts zu messen gibt. Ein Strich bedeutet „keine Daten“, nicht „null“.
-* **Diagnosis coverage** = Dokumente mit bekanntem Blockadegrund ÷ alle blockierten Dokumente. Beispiel: 50 blockierte Dokumente, 10 mit unbekannter Ursache ergeben 40 ÷ 50 = **80 %**. Ein niedriger Wert bedeutet „wir verstehen noch nicht, warum Dokumente stehen bleiben“. Verbessern Sie ihn, bevor Sie einzelne Ursachen beheben.
-* **Klicken Sie auf eine Karte**, um die Dokumentenliste hinter der Zahl in einem neuen Tab zu öffnen („View the documents behind this number“). Karten mit 0 Dokumenten sind nicht anklickbar.
+* **Diagnoseabdeckung** = Dokumente mit bekanntem Blockadegrund ÷ alle blockierten Dokumente. Beispiel: 50 blockierte Dokumente, 10 mit unbekannter Ursache ergeben 40 ÷ 50 = **80 %**. Ein niedriger Wert bedeutet „wir verstehen noch nicht, warum Dokumente stehen bleiben“. Verbessern Sie ihn, bevor Sie einzelne Ursachen beheben.
+* **Klicken Sie auf eine Karte**, um die Dokumentenliste hinter der Zahl in einem neuen Tab zu öffnen. Karten mit 0 Dokumenten sind nicht anklickbar. Die Diagnoseabdeckung öffnet die Dokumente ohne bekannte Ursache.
 
 ### Touchless-Quote im Zeitverlauf
 
-<figure><img src="../../../.gitbook/assets/touchless-report-trend-de-20261104.png" alt="Zeitverlauf im aktuellen Bericht: Rosa zeigt Pure Touchless, Blau die gemeinsame Quote einschließlich reiner Freigaben. Die gestrichelte Linie markiert das Ziel von 70 %. Die Kurven stammen aus fiktiven Schulungsfällen und belegen keine tatsächlich erzielte Prozessverbesserung."><figcaption><p>Zeitverlauf im aktuellen Bericht: Rosa zeigt Pure Touchless, Blau die gemeinsame Quote einschließlich reiner Freigaben. Die gestrichelte Linie markiert das Ziel von 70 %. Die Kurven stammen aus fiktiven Schulungsfällen und belegen keine tatsächlich erzielte Prozessverbesserung.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-report-trend-de-20261104.png" alt="Berichtsverlauf mit Pure Touchless, der gemeinsamen Touchless-Quote und der gestrichelten Ziellinie."><figcaption><p>Pure Touchless und die gemeinsame Touchless-Quote im Zeitverlauf. Die gestrichelte Linie markiert das Ziel.</p></figcaption></figure>
 
-Das aktuelle Diagramm zeigt **Pure Touchless**, die **gemeinsame AP-Touchless-Quote** und die **Ziellinie**. Blau enthält Pure und reine Freigaben und liegt daher auf oder über Rosa; addieren Sie die beiden Werte nicht. Jeder Punkt hat seine eigene Anzahl geeigneter abgeschlossener Dokumente, ein Tageswert ist deshalb nicht automatisch die Quote des gesamten Zeitraums. Kurze Zeiträume zeigen Tagespunkte, lange Zeiträume Wochenpunkte. Die separate Ergebniskategorie der reinen Freigaben ist von dieser gemeinsamen Linie zu unterscheiden.
+Das Diagramm zeigt **Pure Touchless**, die gemeinsame **Touchless-Quote** und die **Ziellinie**. Die gemeinsame Quote enthält Pure Touchless und Nur Freigabe und liegt daher auf oder über der Pure-Quote; addieren Sie die beiden Werte nicht. Jeder Punkt hat seine eigene Anzahl geeigneter abgeschlossener Dokumente, ein Tageswert ist deshalb nicht automatisch die Quote des gesamten Zeitraums. Kurze Zeiträume zeigen Tagespunkte, lange Zeiträume Wochenpunkte. Punkte auf Grundlage unvollständiger aktueller Daten sind als **Vorläufig** markiert.
 
 **Beispiel.** Nachdem Sie am 1. Oktober den automatischen Bestellabgleich eingeschaltet haben, steigt die Pure-Quote innerhalb von zwei Wochen von 55 % auf 68 %. Das Diagramm zeigt den Tag, an dem die Kurve dreht, sodass Sie den Zeitpunkt untersuchen können. Ein Vorher/Nachher-Zusammenhang beweist für sich genommen nicht, dass diese Einstellung die Verbesserung verursacht hat. Vergleichen Sie Dokumenttyp, Lieferantenmix und weitere Änderungen.
 
@@ -56,12 +59,27 @@ Ein Balkendiagramm der **Blocked documents** je Pipeline-Schritt: der **erste** 
 
 #### Warum Dokumente nicht touchless sind (Nova-Release-Kanal)
 
-Organisationen auf dem Release-Kanal **Nova** sehen dieselbe Frage durch eine aufklappbare Liste statt durch das Balkendiagramm beantwortet. Das Panel heißt **Why documents are not touchless** und steht neben **Touchless rate over time**.
+Organisationen auf dem Release-Kanal **Nova** sehen dieselbe Frage durch eine aufklappbare Liste statt durch das Balkendiagramm beantwortet. Das Panel heißt **Warum Dokumente nicht touchless sind** und steht neben **Touchless-Quote im Zeitverlauf**.
 
-* Die Kopfzeile nennt, wie viele Dokumente die Liste abdeckt. Jede Zeile ist ein Bereich des ersten Blockers mit seinem Anteil in Prozent, der Anzahl der Dokumente und einem Balken. Die Zeilen kommen nach Größe sortiert, größte zuerst.
-* Klicken Sie auf eine Zeile, um ihre Gründe direkt zu öffnen. Die Gründe behalten ihre eigenen Dokumentanzahlen, sodass Sie sehen, welche Ursache innerhalb eines Bereichs am meisten kostet. Es ist immer nur ein Bereich geöffnet; klicken Sie ihn erneut an, um ihn zu schließen.
-* Die Liste stammt aus denselben Berichtsdaten wie die Kennzahlen. Die Zahlen werden nicht im Browser neu berechnet, daher stimmen eine Summe in der Kopfzeile und die Zeilen immer überein.
+<figure><img src="../../../.gitbook/assets/touchless-why-reasons-de-20261126.png" alt="Der aufgeklappte Bereich Validierung mit 32 Dokumenten und dem Grund E-Rechnungs-Validierung fehlgeschlagen. Die Aktion Dokumente öffnet das passende seitliche Dokumentenpanel."><figcaption><p>Klappen Sie einen Bereich auf, um seine Gründe zu sehen und die Dokumente hinter einem Grund zu öffnen. Der Testbericht enthält außerdem den Bereich Export &amp; Einrichtung mit 22 Dokumenten.</p></figcaption></figure>
+
+* Die Kopfzeile nennt, wie viele Dokumente die Liste abdeckt. Jede Zeile ist ein Bereich des ersten Blockers mit seinem Anteil in Prozent, der Anzahl der Dokumente und einem Balken. Die Zeilen sind nach Größe sortiert, größte zuerst.
+* Klicken Sie auf eine Zeile, um ihre Gründe direkt zu öffnen. Es ist immer nur ein Bereich geöffnet; klicken Sie ihn erneut an, um ihn zu schließen. Zunächst werden die **fünf** größten Gründe angezeigt; wählen Sie **+N weitere**, um die übrigen zu sehen. Beim Schließen wird die Liste wieder auf fünf reduziert.
+* **Korrigiert ohne Blocker** ist ein separater Bereich für Dokumente, die ein Benutzer korrigiert hat, obwohl der Bericht keinen technischen ersten Blocker gefunden hat. Untersuchen Sie hier Möglichkeiten zur Verbesserung von Benutzerprozessen und Schulungen, statt nach einem fehlgeschlagenen Pipeline-Schritt zu suchen.
+* Die Liste stammt aus denselben Berichtsdaten wie die Kennzahlen. Die Zahlen werden nicht im Browser neu berechnet, daher stimmen die Summe in der Kopfzeile und die Zeilen überein.
 * Wenn Ihre Installation diese Daten noch nicht sendet, sagt das Panel das, statt **0** anzuzeigen. Eine leere Liste mit dem Hinweis für „nichts erfasst“ bedeutet, dass in dem Zeitraum keine Dokumente verloren gingen; die beiden Zustände sind unterschiedlich, und Sie sollten den ersten nicht als gute Nachricht lesen.
+
+##### Dokumente hinter einem Grund
+
+Wählen Sie bei einem Grund **Dokumente**, um ein seitliches Panel zu öffnen, ohne den Bericht zu verlassen. Die Kopfzeile zeigt weiterhin Grund, Bereich, Zeitraum und Dokumenttyp.
+
+<figure><img src="../../../.gitbook/assets/touchless-reason-documents-de-20261126.png" alt="Seitliches Panel mit Gründen und Dokumenten, Suche, In der Dokumentenliste öffnen, Dokumentdetails und Seitennavigation."><figcaption><p>Das Dokumentenpanel zeigt 25 Dokumente pro Seite. In diesem Testbeispiel hat E-Rechnungs-Validierung fehlgeschlagen 32 passende Dokumente.</p></figcaption></figure>
+
+* **Suchen** Sie nach Lieferant, Dateiname oder Belegnummer. Löschen Sie die Suche, um wieder alle Dokumente des Grunds zu sehen; eine Meldung ohne Treffer bedeutet nicht, dass der Grund keine Dokumente hat.
+* Die Tabelle zeigt **Dokument, Lieferant, Eingangsdatum, Ergebnis, ersten blockierten Schritt und eine kurze Detailinformation**. Wählen Sie eine Zeile oder ihren Dokumentnamen, um die **Dokumentenverfolgung** zu öffnen. **Zurück** aus der Verfolgung kehrt zum selben Grund, zur selben Suche und Seite zurück.
+* Verwenden Sie **Zurück** und **Weiter**, um durch Seiten mit je **25 Dokumenten** zu navigieren. Die Fußzeile zeigt sichtbaren Bereich, Gesamtzahl und aktuelle Seite.
+* **In der Dokumentenliste öffnen** öffnet die vollständige Dokumentenliste in einem neuen Tab mit den Filtern für Grund, Berichtszeitraum und Dokumenttyp. Bericht und Seitenpanel bleiben im ursprünglichen Tab geöffnet.
+* Verwenden Sie bei einem Ladefehler **Wiederholen**. Ein leeres Ergebnis und ein Ladefehler sind unterschiedliche Zustände.
 
 Der Release-Kanal **Vesta** behält das oben beschriebene Balkendiagramm. Zeigt Ihre Seite Balken, sind Sie auf Vesta; zeigt sie die aufklappbare Liste, sind Sie auf Nova. Beide beantworten dieselbe Frage, daher gilt der Rest dieser Seite in beiden Fällen.
 

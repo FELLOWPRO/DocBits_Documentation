@@ -176,6 +176,7 @@ if table:
     for row in table["rows"]:
         desc = get_column_value(row, "DESCRIPTION", "")
         qty = get_column_value(row, "QUANTITY", "0")
+        price = get_column_value(row, "UNIT_PRICE", "0")
         set_column_value(row, "TOTAL", str(float(qty) * float(price)))
 ```
 

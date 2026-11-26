@@ -53,7 +53,7 @@ if tables_dict.get('INVOICE_TABLE'):
 ##################################################
 
 ##################################################
-# Validating Line total againg invoice total
+# Validating Line total against invoice total
 ##################################################
 lines_total = 0.0
 # Getting Lines Total
@@ -78,7 +78,7 @@ if abs(total_amount - lines_total) > 0.05:
     set_field_as_invalid(fields_dict, "net_amount", "Invoice total mismatches lines total", "AMOUNTS_MISMATCH")
 
 ##################################################
-# End: Validating Line total againg invoice total
+# End: Validating Line total against invoice total
 ##################################################
 
 

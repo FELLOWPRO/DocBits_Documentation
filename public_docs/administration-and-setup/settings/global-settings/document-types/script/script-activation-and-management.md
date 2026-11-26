@@ -8,27 +8,17 @@ Manage the scripts of a document type
 
 The video shows the script list with filter and sort, switching scripts on and off, copying, the version history and deleting with a confirmation.
 
+Administrators use **Scripts** to manage processing rules for a document type. This guide shows where to find scripts, how to switch them on or off, and how to change a published script safely.
+
 ## Find a script
 
 1. Open **Settings → Document Types**.
 2. On the document type you want to manage, select **Scripts**. The page lists scripts for that document type.
-3. Search by name or use **All**, **Active**, and **Inactive** to narrow the list. The list is sorted by execution order by default; the sort control switches between execution order and name (**A-Z** / **Z-A**).
+3. Search by name or use **All**, **Active**, and **Inactive** to narrow the list. The list is sorted by execution order by default; the sort control also offers name (**A-Z** / **Z-A**) and modification date.
 
 Each card shows the script name, its execution order as a numbered chip, trigger, version, and status. The pencil opens the editor; the copy icon duplicates the script. **New** opens the editor for a new script.
 
 <figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-list.png" alt="Scripts list sorted by execution order, each card showing a numbered execution-order chip next to the script name"><figcaption><p>The numbered chip on each card is the script's execution order.</p></figcaption></figure>
-
-Administrators can use **Scripts** to manage processing rules for a document type. This guide shows where to find scripts, how to switch them on or off, and how to change a published script safely.
-
-## Find a script
-
-1. Open **Settings → Document Types**.
-2. On the document type you want to manage, select **Scripts**. The page lists scripts for that document type.
-3. Search by name or use **All**, **Active**, and **Inactive** to narrow the list. You can also sort it by name or modification date.
-
-Each card shows the script name, trigger, version, and status. The pencil opens the editor; the copy icon duplicates the script. **New** opens the editor for a new script.
-
-<figure><img src="../../../../../.gitbook/assets/s150-docbits_edit_script_icon.png" alt="English script management with edit controls and script names hidden."><figcaption><p>English script management with edit controls and script names hidden.</p></figcaption></figure>
 
 ## Set the execution order
 

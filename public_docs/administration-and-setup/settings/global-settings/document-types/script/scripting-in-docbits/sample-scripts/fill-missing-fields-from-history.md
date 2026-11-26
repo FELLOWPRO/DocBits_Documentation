@@ -6,7 +6,7 @@
 
 ## What does this script do?
 
-When a document has a PO number but is missing the supplier name, this script searches the document archive for other invoices containing the same PO number and copies the vendor name from the first match.
+When a document has a PO number but is missing the supplier name, this script searches the document archive for other invoices containing the same PO number and copies the vendor name from the first match that has a vendor name set.
 
 ## Trigger
 

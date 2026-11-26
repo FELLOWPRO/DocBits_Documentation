@@ -2,7 +2,11 @@
 
 Before a certificate goes to your customer or you commit to a warranty payment, one answer shows which version applies, whether the document has expired and whether two copies contradict each other.
 
-<!-- VIDEO: rag/electrical/v1/en.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/electrical/v3/en.mp4" %}
+
+_Demo with invented data · English · 1:32 min · Full HD_
+
+[Video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/electrical/v3/en.html) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/electrical/v3/en.mp4)
 
 {% hint style="info" %}
 The examples on this page use **invented demo data**: 30 fictitious documents for this industry. Company names, document numbers and values are made up.

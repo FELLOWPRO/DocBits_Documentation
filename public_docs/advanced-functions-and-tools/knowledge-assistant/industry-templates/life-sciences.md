@@ -2,7 +2,11 @@
 
 Find expired supplier documents, superseded versions and contradictory figures yourself, before an auditor does. Every answer shows the document, its version and status, and the passage.
 
-<!-- VIDEO: rag/life-sciences/v1/en.mp4 noch nicht veröffentlicht -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/life-sciences/v2/en.mp4" %}
+
+_Demo with invented data · English · 0:52 min · Full HD_
+
+[Video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/life-sciences/v2/en.html) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/rag/life-sciences/v2/en.mp4)
 
 {% hint style="info" %}
 The examples on this page use **invented demo data**: 30 fictitious documents for this industry. Company names, document numbers and values are made up.

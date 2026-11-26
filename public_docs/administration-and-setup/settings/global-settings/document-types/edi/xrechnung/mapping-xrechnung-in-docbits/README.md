@@ -6,7 +6,7 @@ In DocBits, XRechnung invoices are mapped to specific fields using a predefined 
 
   1.  **Document Types**: XRechnung documents are mapped to specific **Document Types** in DocBits. Each document type (e.g., invoice, credit note, debit note) has its own structure and fields.
 
-  2.  **Field Mapping**: Fields in the XRechnung are mapped to corresponding fields in DocBits using a **export configuration file**. This file defines how each XRechnung field is handled and where it should be exported.
+  2.  **Field Mapping**: Fields in the XRechnung are mapped to corresponding fields in DocBits using an **export configuration file**. This file defines how each XRechnung field is handled and where it should be exported.
 
   3.  **Rules for Export**: Certain rules are defined to handle specific cases where values may differ, including tolerance checks, approval requirements, or line-level charges. These rules ensure that XRechnung data is processed and exported correctly, based on specific business logic
 

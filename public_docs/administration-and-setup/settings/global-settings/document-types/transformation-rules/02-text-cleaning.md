@@ -9,7 +9,7 @@ Header field · Target result · Test steps individually: case, trim, sanitize.
 1. Create a single step **Change case** for the training header field. Verify the modes upper, lower, title and capitalize in sequence using the table examples.
 2. For the invoice number, start a new pipeline with **Trim**. Both sides and an empty character field remove outer whitespace; `47 11` must retain its inner space.
 3. As a separate counter-test when trimming, set Side left and Character `0`: `004711` becomes `4711`, `000` becomes empty. Do not apply this step unchecked to real identifiers.
-4. For a tax identifier, use **Sanitise** with keep set to alphanumeric. `DE 123.456.789` must yield `DE123456789`. Check the other keep modes with `DE-123` and `ACME GmbH!` respectively.
+4. For a tax identifier, use **Sanitize** with keep set to alphanumeric. `DE 123.456.789` must yield `DE123456789`. Check the other keep modes with `DE-123` and `ACME GmbH!` respectively.
 5. For capitalize, explicitly compare preview and server: For the tested `aCME GMBH`, these results differ. The server result is `Acme gmbh`; a matching browser display alone is not sufficient.
 
 <figure><img src="../../../../../.gitbook/assets/transformation-series-02-steps-en-20261028.png" alt="Step configuration"><figcaption><p>Step configuration. Actual interface in English (United States). The preview does not change stored documents.</p></figcaption></figure>
@@ -26,7 +26,7 @@ Trim removes characters at the edge. Both sides removes outer whitespace, but no
 
 ## 3. Sanitize Characters
 
-When sanitizing, I can keep only letters and digits, only letters, only digits, or additionally spaces. A German tax identifier with spaces and periods thus becomes a contiguous key. In an item number, however, hyphens can be functionally important. Removing such characters must match the spelling in the target system. The alternative character removal works with a regular expression character class. A hyphen requires special attention therein. For my example, I therefore check the actual server value in addition to the preview. Already sanitized values and empty inputs belong in every test.
+When sanitizing, you can keep only letters and digits, only letters, only digits, or additionally spaces. A German tax identifier with spaces and periods thus becomes a contiguous key. In an item number, however, hyphens can be functionally important. Removing such characters must match the spelling in the target system. The alternative character removal works with a regular expression character class. A hyphen requires special attention therein. Check the actual server value in addition to the preview for your own values. Already sanitized values and empty inputs belong in every test.
 
 ## Verified Examples and Counter-Cases
 

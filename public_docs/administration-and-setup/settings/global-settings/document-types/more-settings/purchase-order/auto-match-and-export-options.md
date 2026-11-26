@@ -26,7 +26,7 @@ Administrators always see the action. The setting does not switch the feature on
 
 ## Use Lines Net Amount for Matched Total visible to
 
-The PO matching screen can calculate the **Matched Total** from the **Net Amount** of the matched invoice lines instead of computing it. This setting controls who can switch that calculation on:
+The PO matching screen can calculate the **Matched Total** from the **Net Amount** of the matched invoice lines instead of from the PO matching records. This setting controls who can switch that calculation on:
 
 | Value | Who sees the switch |
 | ----- | ------------------- |

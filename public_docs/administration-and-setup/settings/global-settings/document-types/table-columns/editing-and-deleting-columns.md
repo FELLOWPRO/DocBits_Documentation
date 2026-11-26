@@ -31,7 +31,7 @@ Not possible. Hide the column (or delete it if it is your own) and add a new one
 
 ## Deleting a column
 
-The delete action is only offered for columns your organization created. Default columns cannot be deleted, hide them.
+The delete action is only offered for columns your organization created. Default columns cannot be deleted; hide them instead.
 
 1. Open the three-dot menu in the *Actions* column and choose **Delete**. The entry is missing for default columns.
 2. Confirm.

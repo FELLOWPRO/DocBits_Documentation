@@ -6,7 +6,7 @@ This page explains the setup wizard, the accepted XRechnung versions and the acc
 
 <figure><img src="../../../../../.gitbook/assets/einvoice-setup-versions-en-20261104.png" alt="Accepted XRechnung versions in the Dev example organisation."><figcaption><p>Accepted XRechnung versions in the Dev example organisation.</p></figcaption></figure>
 
-The **Validation Setup** card shows your current validation profile (for example _B2G — Public Sector Receiver_). Click **Edit answers** to re-run the setup wizard and change which standard you validate against.
+The **Validation Setup** card shows your current validation profile — the standard and profile you chose in the wizard, for example _B2G — Public Sector Receiver_. Click **Edit answers** to re-run the setup wizard and change which standard you validate against.
 
 ## Accepted XRechnung versions
 
@@ -29,6 +29,6 @@ Each validation rule has a **severity** that decides what happens when it fires:
 
 ### What the wizard changes
 
-The card **Validation Setup** further down the page opens a wizard with **Edit answers**. The wizard replaces the whole set of rule overrides of your organisation. DocBits warns you before you save. Check the **Review and apply** step carefully.
+The **Validation Setup** card opens the same wizard with **Edit answers**. The wizard replaces the whole set of rule overrides of your organisation. DocBits warns you before you save. Check the **Review and apply** step carefully.
 
 Next: [Rule severities](validation-rule-severities.md) and [Validation for each document type](validation-per-document-type.md).

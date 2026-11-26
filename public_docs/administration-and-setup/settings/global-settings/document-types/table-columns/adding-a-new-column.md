@@ -1,6 +1,6 @@
 # Adding a new Column
 
-Add a column when a value has to be captured per line item that the default columns do not cover, a cost centre, a project number, an internal article number.
+Add a column when a value has to be captured per line item that the default columns do not cover, such as a cost centre, a project number or an internal article number.
 
 ## Before you start
 

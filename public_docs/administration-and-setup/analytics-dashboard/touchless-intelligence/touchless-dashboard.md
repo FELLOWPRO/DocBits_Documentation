@@ -23,47 +23,65 @@ Antes de aplicar uma regra, verifique o tipo mostrado dentro dessa seção. Se n
 
 ### Os cinco indicadores principais
 
-<figure><img src="../../../.gitbook/assets/touchless-report-kpi-pt-20261104.png" alt="Relatório atual de faturas de 30 dias: 107 faturas totalmente automáticas mais 11 faturas apenas com aprovação dão 118 de 201, ou 58.7% AP Touchless. Apenas Pure é 53.2%. O cartão AP já mostra a contagem combinada de 118. Histórico de treinamento fictício; nenhuma exportação ERP executada está comprovada."><figcaption><p>Relatório atual de faturas de 30 dias: 107 faturas totalmente automáticas mais 11 faturas apenas com aprovação dão 118 de 201, ou 58.7% AP Touchless. Apenas Pure é 53.2%. O cartão AP já mostra a contagem combinada de 118. Histórico de treinamento fictício; nenhuma exportação ERP executada está comprovada.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-outcome-cards-pt-20261126.png" alt="Os quatro cartões de resultados Puro sem contato, Somente para aprovação, Intervenção manual e Exceções de processo mostram a percentagem em grande e o número de documentos abaixo. Cobertura de diagnóstico é o quinto cartão."><figcaption><p>Os quatro cartões de resultados e a Cobertura de diagnóstico. Este relatório de teste de 30 dias contém 54 exceções de processo e nenhum documento nas outras categorias de resultados.</p></figcaption></figure>
 
-| Cartão                   | Mostra                                             | Exemplo (ilustrativo)                                                      |
-| ---------------------- | ------------------------------------------------- | --------------------------------------------------------------------------- |
-| **Pure touchless**     | A porcentagem e a diferença em relação à meta   | **63.2 %** · "120 documentos" · "−6.8 pp em relação à meta de 70 %" (vermelho, abaixo da meta) |
-| **AP touchless** | Porcentagem e contagem combinadas: Pure mais apenas aprovação | **78.9%** · "150 documentos" no exemplo com 120 Pure e 30 apenas aprovação |
-| **AP assisted**        | O número de documentos e a sua participação           | **30** · 15.8 %                                                             |
-| **Process exceptions** | O número de documentos e a sua participação           | **10** · 5.3 %                                                              |
-| **Diagnosis coverage** | Quantos documentos bloqueados têm uma causa **conhecida** | **80 %** · "10 sem causa conhecida"                                       |
+Os primeiros quatro cartões são **categorias de resultados independentes**. Em cada cartão, o valor grande é a participação dessa categoria em todos os documentos contados e a linha menor é o seu número de documentos. As quatro participações totalizam 100%; não adicione uma taxa combinada separada.
 
-* Na captura atual, 107 faturas totalmente automáticas mais 11 apenas com aprovação dão **118 ÷ 201 = 58.7% AP Touchless**. Apenas Pure é **107 ÷ 201 = 53.2%**. As duas porcentagens se sobrepõem e não devem ser somadas.
-* Um cartão mostra um traço (—) em vez de **0 %** quando não há nada a medir. Um traço significa "sem dados", não "zero".
-* **Diagnosis coverage** = documentos com um motivo de bloqueio conhecido ÷ todos os documentos bloqueados. Exemplo: 50 documentos bloqueados, 10 com causa desconhecida, o que dá 40 ÷ 50 = **80 %**. Um valor baixo significa "ainda não entendemos por que os documentos param". Melhore isso antes de tentar corrigir causas individuais.
-* **Clique em um cartão** para abrir, em uma nova aba, a lista de documentos por trás do número ("View the documents behind this number"). Cartões com 0 documentos não são clicáveis.
+| Cartão | O que conta | Informações adicionais |
+| --- | --- | --- |
+| **Puro sem contato** | Documentos concluídos sem intervenção manual ou aprovação separada | Diferença em pontos percentuais em relação à meta touchless |
+| **Somente para aprovação** | Documentos que exigiram aprovação, mas nenhuma outra correção manual | Apenas a participação e o número desta categoria |
+| **Intervenção manual** | Documentos que exigiram uma correção manual ou outra interação do utilizador | A sua própria participação e número |
+| **Exceções de processo** | Documentos que não puderam ser concluídos devido a uma exceção de processamento ou integração | A sua própria participação e número |
+| **Cobertura de diagnóstico** | Em quantos documentos bloqueados a **primeira causa** do bloqueio é conhecida | Número sem causa conhecida |
 
-### Taxa touchless ao longo do tempo
+A caixa separada **Taxa touchless · Puro sem contato + Somente para aprovação** abaixo dos cartões combina as duas primeiras categorias. Por exemplo, 60 documentos puros sem contato mais 15 documentos somente para aprovação de 100 produzem uma **taxa touchless de 75%**. O cartão Somente para aprovação continua a mostrar **15%**, não 75%.
 
-<figure><img src="../../../.gitbook/assets/touchless-report-trend-pt-20261104.png" alt="Tendência atual do relatório: rosa mostra Pure Touchless e azul mostra a taxa combinada, incluindo documentos apenas com aprovação. A linha tracejada marca a meta de 70%. Essas curvas usam casos de treinamento fictícios e não comprovam uma melhoria real do processo."><figcaption><p>Tendência atual do relatório: rosa mostra Pure Touchless e azul mostra a taxa combinada, incluindo documentos apenas com aprovação. A linha tracejada marca a meta de 70%. Essas curvas usam casos de treinamento fictícios e não comprovam uma melhoria real do processo.</p></figcaption></figure>
+* Um cartão mostra um travessão (—) em vez de **0%** quando não há nada para medir. Um travessão significa «sem dados», não «zero».
+* **Cobertura de diagnóstico** = documentos com uma causa de bloqueio conhecida ÷ todos os documentos bloqueados. Exemplo: 50 documentos bloqueados, 10 com causa desconhecida → 40 ÷ 50 = **80%**. Um valor baixo significa que ainda não compreendemos por que os documentos param. Melhore-o antes de corrigir causas individuais.
+* **Clique num cartão** para abrir a lista de documentos por trás do número numa nova aba. Os cartões com 0 documentos não são clicáveis. Cobertura de diagnóstico abre os documentos sem causa conhecida.
 
-O gráfico atual mostra **Pure Touchless**, a **taxa AP Touchless combinada** e a **linha da meta**. O azul inclui Pure e apenas aprovação, por isso fica na linha do rosa ou acima dele; não some os dois valores. Cada ponto tem o seu próprio número de documentos concluídos elegíveis, portanto uma taxa diária não é automaticamente a taxa de todo o período. Períodos curtos mostram pontos diários, períodos longos pontos semanais. A categoria separada de apenas aprovação é diferente desta linha combinada.
+### Taxa de contato sem contato ao longo do tempo
 
-**Exemplo.** Depois de você ativar a correspondência automática de PO em 1 de outubro, a taxa pure sobe de 55 % para 68 % em duas semanas. O gráfico mostra o dia em que a curva muda, para que você possa investigar o momento. Uma associação antes/depois não prova por si só que essa configuração causou a melhoria. Compare o tipo de documento, a composição de fornecedores e outras alterações.
+<figure><img src="../../../.gitbook/assets/touchless-report-trend-pt-20261104.png" alt="Tendência do relatório com Puro sem contato, a Taxa touchless combinada e a linha tracejada da meta."><figcaption><p>Puro sem contato e a Taxa touchless combinada ao longo do tempo. A linha tracejada marca a meta.</p></figcaption></figure>
+
+O gráfico mostra **Puro sem contato**, a **Taxa touchless** combinada e a **linha da meta**. A taxa combinada inclui Puro sem contato e Somente para aprovação, pelo que é igual ou superior à taxa pura sem contato; não some os dois valores. Cada ponto tem o seu próprio número de documentos concluídos elegíveis, portanto uma taxa diária não é automaticamente a taxa de todo o período. Períodos curtos mostram pontos diários e períodos longos, pontos semanais. Os pontos baseados em dados recentes incompletos são marcados como **Provisório**.
+
+**Exemplo.** Depois de ativar a correspondência automática de pedidos em 1 de outubro, a taxa pura sem contato sobe de 55% para 68% em duas semanas. O gráfico mostra o dia em que a curva muda, permitindo investigar o momento. Uma associação antes/depois não prova por si só que esta configuração causou a melhoria. Compare o tipo de documento, a combinação de fornecedores e outras alterações.
 
 ### Onde o touchless se perde primeiro
 
-<figure><img src="../../../.gitbook/assets/touchless-blocking-stages-pt.png" alt="Gráfico de barras dos documentos bloqueados por primeira etapa de bloqueio e motivo"><figcaption><p>Documentos bloqueados por etapa e motivo em que pararam primeiro. Aqui <strong>Field validation: Required field missing</strong> custa a maior parte dos documentos (58), depois <strong>Export mapping failed</strong> (46) e <strong>PO item mismatch</strong> (27). Organização de exemplo com dados de demonstração; os nomes dos fornecedores são fictícios.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-blocking-stages-pt.png" alt="Gráfico de barras dos documentos bloqueados por primeira etapa e motivo de bloqueio"><figcaption><p>Documentos bloqueados pela etapa e motivo em que pararam primeiro. Aqui, <strong>Field validation: Required field missing</strong> afeta o maior número de documentos (58), seguido de <strong>Export mapping failed</strong> (46) e <strong>PO item mismatch</strong> (27). Organização de exemplo com dados de demonstração; os nomes dos fornecedores são fictícios.</p></figcaption></figure>
 
-Um gráfico de barras de **Blocked documents** por etapa do pipeline: a **primeira** etapa que parou um documento.
+Um gráfico de barras de **Documentos bloqueados** por etapa do processo: a **primeira** etapa que parou um documento.
 
-**Exemplo.** Barras: Supplier Identification 12, Field Validation 41, PO Line Match 7. A maior barra indica que você deve olhar primeiro para **Field Validation**. Um valor extraído ausente é uma causa possível; compare a fatura original, as regras de campo e os dados de origem disponíveis antes de confirmá-la.
+**Exemplo.** Barras: Supplier Identification 12, Field Validation 41, PO Line Match 7. A maior barra indica que deve examinar primeiro **Field Validation**. Um valor extraído em falta é uma causa possível; compare a fatura original, as regras de campos e os dados de origem disponíveis antes de a confirmar.
 
-#### Porque os documentos não são touchless (canal de lançamento Nova)
+#### Por que os documentos não são totalmente sem contato? (canal de lançamento Nova)
 
-As organizações no canal de lançamento **Nova** veem a mesma pergunta respondida por uma lista expansível em vez do gráfico de barras. O painel chama-se **Why documents are not touchless** e fica ao lado de **Touchless rate over time**.
+As organizações no canal de lançamento **Nova** veem a resposta à mesma pergunta numa lista expansível em vez do gráfico de barras. O painel chama-se **Por que os documentos não são totalmente sem contato?** e fica ao lado de **Taxa de contato sem contato ao longo do tempo**.
 
-* O cabeçalho indica quantos documentos a lista abrange. Cada linha é uma área do primeiro bloqueio com a sua quota em percentagem, o número de documentos e uma barra. As linhas chegam ordenadas da maior para a menor.
-* Clique numa linha para abrir os respetivos motivos no local. Os motivos mantêm as suas próprias contagens de documentos, para que veja qual causa dentro de uma área custa mais. Só uma área está aberta de cada vez; clique novamente para a fechar.
-* A lista vem dos mesmos dados de relatório que os indicadores principais. Os números não são recalculados no navegador, por isso o total no cabeçalho e o das linhas coincidem sempre.
-* Se a sua instalação ainda não envia estes dados, o painel indica-o em vez de mostrar **0**. Uma lista vazia com o texto de « nada registado » significa que não se perderam documentos no período; os dois estados são diferentes e não deve ler o primeiro como boa notícia.
+<figure><img src="../../../.gitbook/assets/touchless-why-reasons-pt-20261126.png" alt="Área Validação expandida com 32 documentos e o motivo A validação da fatura eletrônica falhou. A ação Documentos abre o painel lateral correspondente."><figcaption><p>Expanda uma área para ver os seus motivos e abrir os documentos por trás de um motivo. O relatório de teste também contém uma área Exportar e configurar com 22 documentos.</p></figcaption></figure>
 
-O canal de lançamento **Vesta** mantém o gráfico de barras descrito acima. Se a sua página mostra barras, está em Vesta; se mostra a lista expansível, está em Nova. Ambos respondem à mesma pergunta, pelo que o resto desta página se aplica de qualquer forma.
+* O cabeçalho indica quantos documentos a lista abrange. Cada linha é uma área do primeiro bloqueio com a sua percentagem, número de documentos e barra. As linhas são ordenadas da maior para a menor.
+* Clique numa linha para abrir os seus motivos. Apenas uma área fica aberta de cada vez; clique novamente para a fechar. São mostrados os primeiros **cinco** motivos; selecione **+N mais** para revelar os restantes. Ao fechar a área, a lista volta a cinco.
+* **Corrigido sem um bloqueio** é uma área separada para documentos corrigidos por um utilizador, embora o relatório não tenha encontrado um primeiro bloqueio técnico. Use-a para investigar oportunidades de melhoria dos processos dos utilizadores e da formação, em vez de procurar uma etapa do processo que falhou.
+* A lista provém dos mesmos dados do relatório que os indicadores principais. Os números não são recalculados no navegador, portanto o total no cabeçalho e as linhas coincidem.
+* Se a sua instalação ainda não envia estes dados, o painel indica isso em vez de mostrar **0**. Uma lista vazia com a mensagem de «nada registado» significa que não se perderam documentos no período; são estados diferentes e não deve interpretar o primeiro como uma boa notícia.
+
+##### Documentos por trás de um motivo
+
+Selecione **Documentos** num motivo para abrir um painel lateral sem sair do relatório. O cabeçalho mantém visíveis o motivo, a área, o período e o tipo de documento.
+
+<figure><img src="../../../.gitbook/assets/touchless-reason-documents-pt-20261126.png" alt="Painel lateral de documentos do motivo com pesquisa, Abrir na lista de documentos, detalhes dos documentos e paginação."><figcaption><p>O painel de documentos do motivo apresenta 25 documentos por página. Neste exemplo de teste, A validação da fatura eletrônica falhou tem 32 documentos correspondentes.</p></figcaption></figure>
+
+* **Pesquise** por fornecedor, nome de ficheiro ou número de documento. Limpe a pesquisa para voltar a todos os documentos do motivo; uma mensagem sem correspondências não significa que o motivo não tenha documentos.
+* A tabela mostra o **documento, fornecedor, data de receção, resultado, primeira etapa bloqueada e um detalhe curto**. Selecione uma linha ou o nome do documento para abrir o **Rastreio do documento**. **Voltar** do rastreio regressa ao mesmo motivo, pesquisa e página.
+* Use **Anterior** e **Avançar** para percorrer páginas de **25 documentos**. O rodapé mostra o intervalo visível, o total e a página atual.
+* **Abrir na lista de documentos** abre a lista completa numa nova aba com os filtros de motivo, período do relatório e tipo de documento aplicados. O relatório e o painel lateral permanecem abertos na aba original.
+* Se o carregamento falhar, use **Tentar novamente**. Um resultado vazio e um erro de carregamento são estados diferentes.
+
+O canal de lançamento **Vesta** mantém o gráfico de barras descrito acima. Se a sua página mostrar barras, está em Vesta; se mostrar a lista expansível, está em Nova. Ambos respondem à mesma pergunta, portanto o resto desta página aplica-se em ambos os casos.
 
 ### Oportunidades de fornecedores
 

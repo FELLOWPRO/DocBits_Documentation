@@ -21,49 +21,67 @@ Le sélecteur principal et le type de document de **Learned rule proposals** son
 
 Avant d'appliquer une règle, vérifiez le type affiché dans cette section. Si aucun type correspondant n'y est disponible, aucune proposition n'a été établie pour lui. La section utilise également sa propre base de données, par exemple les documents corrigés des 60 derniers jours, et ne reprend pas automatiquement la période principale. Cette description porte sur les commandes actuellement séparées ; elle n'affirme pas qu'une synchronisation a été mise en œuvre.
 
-### Les cinq chiffres clés
+### Les cinq indicateurs clés
 
-<figure><img src="../../../.gitbook/assets/touchless-report-kpi-fr-20261104.png" alt="Rapport actuel sur 30 jours pour les factures : 107 factures entièrement automatiques plus 11 factures avec approbation seule donnent 118 sur 201, soit 58,7 % AP Touchless. Pure seul représente 53,2 %. La carte AP affiche déjà le total combiné de 118. Historique de formation fictif ; aucun export ERP exécuté n'est établi."><figcaption><p>Rapport actuel sur 30 jours pour les factures : 107 factures entièrement automatiques plus 11 factures avec approbation seule donnent 118 sur 201, soit 58,7 % AP Touchless. Pure seul représente 53,2 %. La carte AP affiche déjà le total combiné de 118. Historique de formation fictif ; aucun export ERP exécuté n'est établi.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-outcome-cards-fr-20261126.png" alt="Les quatre cartes de résultats 100 % sans contact, Approbation uniquement, Intervention manuelle et Exceptions de traitement affichent la part en grand et le nombre de documents en dessous. Couverture du diagnostic est la cinquième carte."><figcaption><p>Les quatre cartes de résultats et la Couverture du diagnostic. Ce rapport de test sur 30 jours contient 54 exceptions de traitement et aucun document dans les autres catégories.</p></figcaption></figure>
 
-| Carte                   | Affiche                                             | Exemple (illustratif)                                                      |
-| ---------------------- | ------------------------------------------------- | --------------------------------------------------------------------------- |
-| **Pure touchless**     | Le pourcentage et l'écart à l'objectif   | **63.2 %** · « 120 documents » · « −6.8 pp vs 70 % target » (rouge, sous l'objectif) |
-| **AP touchless** | Pourcentage et nombre combinés : Pure plus approbation seule | **78.9%** · « 150 documents » dans l'exemple avec 120 Pure et 30 avec approbation seule |
-| **AP assisted**        | Le nombre de documents et leur part           | **30** · 15.8 %                                                             |
-| **Process exceptions** | Le nombre de documents et leur part           | **10** · 5.3 %                                                              |
-| **Diagnosis coverage** | Combien de documents bloqués ont une cause **connue** | **80 %** · « 10 sans cause connue »                                       |
+Les quatre premières cartes sont **des catégories de résultats distinctes**. Sur chaque carte, la grande valeur représente la part de cette catégorie dans l'ensemble des documents comptabilisés et la petite ligne indique son nombre de documents. Les quatre parts totalisent 100 % ; n'y ajoutez pas un taux combiné distinct.
 
-* Dans la capture actuelle, 107 factures entièrement automatiques plus 11 factures avec approbation seule donnent **118 ÷ 201 = 58,7 % AP Touchless**. Pure seul représente **107 ÷ 201 = 53,2 %**. Les deux pourcentages se recouvrent et ne doivent pas être additionnés.
-* Une carte affiche un tiret (—) au lieu de **0 %** lorsqu'il n'y a rien à mesurer. Un tiret signifie « pas de données », pas « zéro ».
-* **Diagnosis coverage** = documents avec un motif de blocage connu ÷ tous les documents bloqués. Exemple : 50 documents bloqués, 10 avec une cause inconnue → 40 ÷ 50 = **80 %**. Une valeur faible signifie « nous ne comprenons pas encore pourquoi les documents s'arrêtent ». Améliorez-la avant de vouloir corriger des causes individuelles.
-* **Cliquez sur une carte** pour ouvrir dans un nouvel onglet la liste des documents derrière le chiffre (« View the documents behind this number »). Les cartes avec 0 document ne sont pas cliquables.
+| Carte | Ce qu'elle compte | Information supplémentaire |
+| --- | --- | --- |
+| **100 % sans contact** | Documents terminés sans intervention manuelle ni approbation distincte | Écart en points de pourcentage par rapport à l'objectif sans contact |
+| **Approbation uniquement** | Documents ayant nécessité une approbation, mais aucune autre correction manuelle | Uniquement la part et le nombre de cette catégorie |
+| **Intervention manuelle** | Documents ayant nécessité une correction manuelle ou une autre interaction utilisateur | Sa propre part et son propre nombre |
+| **Exceptions de traitement** | Documents n'ayant pas pu aboutir en raison d'une exception de traitement ou d'intégration | Sa propre part et son propre nombre |
+| **Couverture du diagnostic** | Nombre de documents bloqués dont la **première cause** de blocage est connue | Nombre de documents sans cause connue |
 
-### Taux touchless dans le temps
+La zone distincte **Taux sans contact · 100 % sans contact + Approbation uniquement**, située sous les cartes, combine les deux premières catégories. Par exemple, 60 documents 100 % sans contact plus 15 documents avec approbation uniquement sur 100 donnent un **taux sans contact de 75 %**. La carte Approbation uniquement affiche toujours **15 %**, et non 75 %.
 
-<figure><img src="../../../.gitbook/assets/touchless-report-trend-fr-20261104.png" alt="Tendance actuelle du rapport : le rose représente Pure Touchless et le bleu le taux combiné, approbation seule comprise. La ligne pointillée marque l'objectif de 70 %. Ces courbes utilisent des cas de formation fictifs et n'établissent pas une amélioration réelle du processus."><figcaption><p>Tendance actuelle du rapport : le rose représente Pure Touchless et le bleu le taux combiné, approbation seule comprise. La ligne pointillée marque l'objectif de 70 %. Ces courbes utilisent des cas de formation fictifs et n'établissent pas une amélioration réelle du processus.</p></figcaption></figure>
+* Une carte affiche un tiret (—) au lieu de **0 %** lorsqu'il n'y a rien à mesurer. Un tiret signifie « aucune donnée », et non « zéro ».
+* **Couverture du diagnostic** = documents avec une cause de blocage connue ÷ tous les documents bloqués. Exemple : 50 documents bloqués, dont 10 sans cause connue → 40 ÷ 50 = **80 %**. Une valeur faible signifie que nous ne comprenons pas encore pourquoi les documents s'arrêtent. Améliorez-la avant de corriger les causes individuelles.
+* **Cliquez sur une carte** pour ouvrir dans un nouvel onglet la liste des documents correspondant au chiffre. Les cartes contenant 0 document ne sont pas cliquables. Couverture du diagnostic ouvre les documents sans cause connue.
 
-Le graphique actuel montre **Pure Touchless**, le **taux AP Touchless combiné** et la **ligne d'objectif**. Le bleu inclut Pure et l'approbation seule : il est donc au niveau ou au-dessus du rose ; n'additionnez pas les deux valeurs. Chaque point a son propre nombre de documents terminés éligibles : un taux journalier n'est pas automatiquement le taux de toute la période. Les périodes courtes affichent des points quotidiens, les longues des points hebdomadaires. La catégorie distincte de l'approbation seule diffère de cette ligne combinée.
+### Taux de sans contact au fil du temps
 
-**Exemple.** Après avoir activé le rapprochement automatique des PO le 1er octobre, le taux pur passe de 55 % à 68 % en deux semaines. Le graphique montre le jour où la courbe s'inverse, ce qui vous permet d'examiner le moment. Une association avant/après ne prouve pas à elle seule que ce paramètre est à l'origine de l'amélioration. Comparez le type de document, la composition des fournisseurs et les autres changements.
+<figure><img src="../../../.gitbook/assets/touchless-report-trend-fr-20261104.png" alt="Évolution du rapport avec 100 % sans contact, le Taux sans contact combiné et la ligne d'objectif en pointillés."><figcaption><p>100 % sans contact et le Taux sans contact combiné au fil du temps. La ligne en pointillés marque l'objectif.</p></figcaption></figure>
 
-### Où le touchless est perdu en premier
+Le graphique montre **100 % sans contact**, le **Taux sans contact** combiné et la **ligne d'objectif**. Le taux combiné inclut 100 % sans contact et Approbation uniquement ; il est donc supérieur ou égal au taux 100 % sans contact. N'additionnez pas les deux valeurs. Chaque point possède son propre nombre de documents terminés éligibles : un taux quotidien n'est donc pas automatiquement celui de toute la période. Les périodes courtes affichent des points quotidiens, les longues des points hebdomadaires. Les points fondés sur des données récentes incomplètes sont marqués **Provisoire**.
 
-<figure><img src="../../../.gitbook/assets/touchless-blocking-stages-fr.png" alt="Graphique en barres des documents bloqués par première étape de blocage et par motif"><figcaption><p>Documents bloqués par étape et par motif où ils se sont arrêtés en premier. Ici, <strong>Field validation: Required field missing</strong> coûte le plus de documents (58), puis <strong>Export mapping failed</strong> (46) et <strong>PO item mismatch</strong> (27). Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
+**Exemple.** Après l'activation du rapprochement automatique des commandes le 1er octobre, le taux 100 % sans contact passe de 55 % à 68 % en deux semaines. Le graphique montre le jour où la courbe évolue afin d'examiner ce moment. Une association avant/après ne prouve pas à elle seule que ce paramètre a provoqué l'amélioration. Comparez le type de document, la répartition des fournisseurs et les autres changements.
 
-Un graphique en barres des **Blocked documents** par étape du pipeline : la **première** étape qui a arrêté un document.
+### Où le sans contact est perdu en premier
 
-**Exemple.** Barres : Supplier Identification 12, Field Validation 41, PO Line Match 7. La barre la plus élevée vous indique de regarder **Field Validation** en premier. Une valeur extraite manquante est une cause possible ; comparez la facture d'origine, les règles de champ et les données source disponibles avant de la confirmer.
+<figure><img src="../../../.gitbook/assets/touchless-blocking-stages-fr.png" alt="Graphique à barres des documents bloqués par première étape et premier motif de blocage"><figcaption><p>Documents bloqués selon l'étape et le motif de leur premier arrêt. Ici, <strong>Field validation: Required field missing</strong> concerne le plus de documents (58), suivi de <strong>Export mapping failed</strong> (46) et <strong>PO item mismatch</strong> (27). Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
 
-#### Pourquoi les documents ne sont pas touchless (canal de publication Nova)
+Un graphique à barres des **Documents bloqués** par étape du processus : la **première** étape qui a arrêté un document.
 
-Les organisations sur le canal de publication **Nova** voient la même question traitée par une liste dépliable au lieu du diagramme à barres. Le panneau s’intitule **Why documents are not touchless** et se trouve à côté de **Touchless rate over time**.
+**Exemple.** Barres : Supplier Identification 12, Field Validation 41, PO Line Match 7. La plus grande barre indique qu'il faut examiner **Field Validation** en premier. Une valeur extraite manquante est une cause possible ; comparez la facture d'origine, les règles de champs et les données sources disponibles avant de la confirmer.
 
-* L’en-tête indique combien de documents la liste couvre. Chaque ligne correspond à une zone du premier blocage, avec sa part en pourcentage, le nombre de documents et une barre. Les lignes arrivent triées de la plus grande à la plus petite.
-* Cliquez sur une ligne pour ouvrir ses motifs sur place. Les motifs conservent leurs propres nombres de documents, ce qui vous montre quelle cause, à l’intérieur d’une zone, coûte le plus. Une seule zone est ouverte à la fois ; cliquez à nouveau pour la fermer.
-* La liste provient des mêmes données de rapport que les chiffres clés. Les nombres ne sont pas recalculés dans le navigateur : le total de l’en-tête et celui des lignes concordent donc toujours.
-* Si votre installation n’envoie pas encore ces données, le panneau l’indique au lieu d’afficher **0**. Une liste vide avec la mention « rien d’enregistré » signifie qu’aucun document n’a été perdu sur la période ; les deux états sont différents et vous ne devez pas lire le premier comme une bonne nouvelle.
+#### Pourquoi les documents ne sont pas sans contact (canal de publication Nova)
 
-Le canal de publication **Vesta** conserve le diagramme à barres décrit plus haut. Si votre page affiche des barres, vous êtes sur Vesta ; si elle affiche la liste dépliable, vous êtes sur Nova. Les deux répondent à la même question, le reste de cette page s’applique donc dans les deux cas.
+Les organisations du canal de publication **Nova** voient la réponse à cette question dans une liste extensible au lieu du graphique à barres. Le panneau s'intitule **Pourquoi les documents ne sont pas sans contact** et se trouve à côté de **Taux de sans contact au fil du temps**.
+
+<figure><img src="../../../.gitbook/assets/touchless-why-reasons-fr-20261126.png" alt="Zone Validation développée avec 32 documents et le motif La validation de la facture électronique a échoué. L'action Documents ouvre le panneau latéral correspondant."><figcaption><p>Développez une zone pour voir ses motifs et ouvrir les documents associés à un motif. Le rapport de test contient également une zone Exportation et configuration avec 22 documents.</p></figcaption></figure>
+
+* L'en-tête indique combien de documents la liste couvre. Chaque ligne correspond à une zone de premier blocage avec sa part en pourcentage, son nombre de documents et une barre. Les lignes sont triées par ordre décroissant.
+* Cliquez sur une ligne pour afficher ses motifs. Une seule zone est ouverte à la fois ; cliquez de nouveau pour la fermer. Les **cinq** premiers motifs sont affichés ; sélectionnez **+N supplémentaires** pour voir les autres. La fermeture de la zone ramène la liste à cinq.
+* **Corrigé sans blocage** est une zone distincte pour les documents corrigés par un utilisateur alors que le rapport n'a trouvé aucun premier blocage technique. Utilisez-la pour examiner les possibilités d'amélioration des processus utilisateur et de la formation, plutôt que pour rechercher une étape de traitement en échec.
+* La liste provient des mêmes données de rapport que les indicateurs clés. Le navigateur ne recalcule pas les nombres : le total de l'en-tête et les lignes correspondent donc.
+* Si votre installation n'envoie pas encore ces données, le panneau l'indique au lieu d'afficher **0**. Une liste vide avec le message « rien enregistré » signifie qu'aucun document n'a été perdu pendant la période ; ces deux états sont différents et le premier ne doit pas être interprété comme une bonne nouvelle.
+
+##### Documents associés à un motif
+
+Sélectionnez **Documents** sur un motif pour ouvrir un panneau latéral sans quitter le rapport. L'en-tête conserve le motif, la zone, la période et le type de document.
+
+<figure><img src="../../../.gitbook/assets/touchless-reason-documents-fr-20261126.png" alt="Panneau latéral des documents du motif avec recherche, Ouvrir dans la liste des documents, détails des documents et pagination."><figcaption><p>Le panneau des documents du motif affiche 25 documents par page. Dans cet exemple de test, La validation de la facture électronique a échoué compte 32 documents correspondants.</p></figcaption></figure>
+
+* **Recherchez** par fournisseur, nom de fichier ou numéro de document. Effacez la recherche pour retrouver tous les documents du motif ; un message d'absence de correspondance ne signifie pas que le motif n'a aucun document.
+* Le tableau affiche le **document, le fournisseur, la date de réception, le résultat, la première étape bloquée et un détail court**. Sélectionnez une ligne ou son nom de document pour ouvrir la **Traçabilité du document**. **Retour** depuis la traçabilité ramène au même motif, à la même recherche et à la même page.
+* Utilisez **Précédent** et **Suivant** pour parcourir des pages de **25 documents**. Le pied de page indique la plage visible, le total et la page actuelle.
+* **Ouvrir dans la liste des documents** ouvre la liste complète dans un nouvel onglet avec les filtres de motif, de période du rapport et de type de document appliqués. Le rapport et le panneau latéral restent ouverts dans l'onglet d'origine.
+* Si le chargement échoue, utilisez **Réessayer**. Un résultat vide et une erreur de chargement sont des états différents.
+
+Le canal de publication **Vesta** conserve le graphique à barres décrit ci-dessus. Si votre page affiche des barres, vous utilisez Vesta ; si elle affiche la liste extensible, vous utilisez Nova. Les deux répondent à la même question et le reste de cette page s'applique dans les deux cas.
 
 ### Opportunités fournisseurs
 

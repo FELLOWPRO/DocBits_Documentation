@@ -1,79 +1,29 @@
 # Guia do Arquivo de Pré-visualização EDI
 
-## 1. Visão Geral
+O arquivo **PREVIEW** controla como um documento EDI estruturado é exibido para que uma pessoa possa lê-lo. No DocBits ele é uma configuração **XSLT**, separada do mapeamento JSON **EXTRACTION PATHS**. Use este guia se você mantém formatos de documentos eletrônicos para a sua organização.
 
-O **Arquivo de Pré-visualização** define como os dados XML estruturados são renderizados em um formato legível por humanos, semelhante a um PDF. Ele combina **HTML e CSS** para apresentação visual e usa declarações **XSLT** `**select**` para inserir dinamicamente dados do XML Personalizado. Esta pré-visualização é exibida durante a **validação de campo** e também é incluída ao exportar documentos para **IDM**.
+## Encontrar o arquivo de pré-visualização
 
-## 2. Propósito e Função
+1. Vá para **Configurações → Tipos de documentos** e abra **E-Doc** para o tipo de documento desejado.
+2. Expanda o formato eletrônico, por exemplo **EDI** para o tipo de documento **PURCHASE_ORDER** mostrado abaixo.
+3. Selecione a linha **PREVIEW** marcada como **XSLT**. Não clique ainda no botão **Visualização**: esse botão abre um painel de teste depois que você informa a configuração.
 
-* Converte o XML Personalizado legível por máquina em uma pré-visualização formatada visualmente (PDF).
-* Permite a revisão e validação amigável dos dados extraídos.
-* Garante a renderização consistente de campos de documentos-chave, como cabeçalhos, tabelas, totais, etc.
-* Construído usando **HTML + CSS** para layout e design, e **XSLT** para vincular dados ao layout.
+<figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-list-pt-20261114.png" alt="Lista E-Doc em português com as linhas STRUCTURE DESCRIPTOR e EXTRACTION PATHS em JSON e TRANSFORMATION e PREVIEW em XSLT, todas com o status Padrão"><figcaption><p>Escolha PREVIEW (XSLT) na lista E-Doc.</p></figcaption></figure>
 
-## 3. Acesso e Edição Básica
+## Entender o editor e as versões
 
-#### **Acessando o Arquivo:**
+A página de detalhes mostra à esquerda o **Tipo de documento**, o **Tipo de documento eletrônico** e a lista **Version** com as versões disponíveis. **Ativo** indica a versão em uso. O editor à direita contém a folha de estilo XSLT. O HTML e o CSS controlam o layout e a aparência; o XSLT insere os valores do documento estruturado. **Formatar** organiza o código-fonte para leitura e não ativa uma versão.
 
-1.  Vá para **Configurações** → **Tipo de Documento** → _\[Seu Documento (por exemplo, Ordem de Compra)]_ → **E-Doc**.
+<figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-detail-pt-20261114.png" alt="Detalhes do documento eletrônico EDI em português: tipo de documento PURCHASE_ORDER, versão 1 ativa e o editor PREVIEW (XSLT) com o código da folha de estilo"><figcaption><p>Configuração PREVIEW (XSLT) do tipo de documento PURCHASE_ORDER, com a versão ativa em modo somente leitura.</p></figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Ff6zyL0AvmqSvrogZdnox%252Fimage.png%3Falt%3Dmedia%26token%3D6bc9ab55-6ee9-43d1-b576-4c5833c208cf\&width=768\&dpr=4\&quality=100\&sign=a23de442\&sv=2)
-2. Na aba **E-Doc**, selecione o formato (por exemplo, **EDI**).
-3.  Clique em **Pré-visualização** para visualizar ou editar o arquivo.
+O ícone de lápis ao lado da versão ativa cria um **rascunho** para edição. Depois de conferir as alterações, ative o rascunho com o ícone de confirmação. A versão ativada substitui a anterior. O ícone de lixeira aparece apenas quando existe mais de uma versão; use-o somente para excluir um rascunho que não é mais necessário.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fdo1R389GeSqFuZKLD0OP%252Fimage.png%3Falt%3Dmedia%26token%3D930903d4-44af-4188-b015-c60c2dd9d9ab\&width=768\&dpr=4\&quality=100\&sign=77bbb2ce\&sv=2)
+## Testar uma pré-visualização
 
-#### **Gerenciamento de Rascunhos:**
+Clique em **Visualização** no canto superior direito para abrir o painel de teste. Informe no campo **Document Id...** o ID de um documento EDI já carregado e clique em **Teste**. Confira o documento exibido para verificar se rótulos, valores e linhas de tabela estão legíveis. Na interface em português o campo mantém o rótulo **Document Id...**, como no aplicativo.
 
-* **Criar um Rascunho:** Clique no ícone ✏️ lápis.
-* **Excluir Rascunhos:** Use o ícone 🗑️ lixeira para remover rascunhos não utilizados.
-* **Ativar Alterações:** Clique no ✅ marca de seleção para publicar uma versão.
-  * **Nota**: Ativar uma nova versão irá **desativar automaticamente** a anterior.
+<figure><img src="../../../../../../.gitbook/assets/edi-preview-file-guide-panel-pt-20261114.png" alt="Painel de teste da pré-visualização em português com o campo Document Id... preenchido com um identificador de exemplo inventado e o botão Teste"><figcaption><p>Painel de teste aberto: o campo contém um ID de exemplo inventado (visível apenas no final, 000000-0000-4000-8000-000000000006) e ainda não há resultado renderizado.</p></figcaption></figure>
 
-## 4. Editor HTML/XSLT/CSS
+Para o mapeamento entre campos e XML, use o [Guia do Arquivo de Caminhos de Extração](edi-extraction-paths-file-guide.md). Para a etapa de conversão da origem, consulte o [Guia do Arquivo de Transformação](edi-transformation-file-guide.md). O [guia em vídeo do EDI](edi-videos.md) traz uma demonstração passo a passo.
 
-O **Arquivo de Pré-visualização** é editado em um editor dedicado que suporta HTML, XSLT e CSS.
-
-* **HTML** define a estrutura do documento de saída (por exemplo, tabelas, divs, layout).
-* **CSS** controla o estilo (por exemplo, fontes, espaçamento, cores, alinhamento).
-*   As declarações **XSLT** `**select**` são usadas para popular dinamicamente campos do XML Personalizado, como:
-
-    Copy
-
-    ```
-    <xsl:value-of select="/PURCHASE_ORDER/PURCHASE_ORDER_NUMBER/text()" />
-    ```
-* Você também pode usar **lógica XSLT** (`<xsl:if>`, `<xsl:for-each>`, etc.) para lidar com exibição condicional ou iterar sobre itens de linha.
-
-## 5. Função de Pré-visualização (Renderização de Saída)
-
-A Função de Pré-visualização permite testar e verificar como um documento EDI é renderizado com o Arquivo de Pré-visualização atual.
-
-#### **Uso:**
-
-* Faça upload de um arquivo EDI através do processo de upload padrão.
-* Copie o **ID do Documento** do arquivo enviado.
-* Navegue até a interface de **Pré-visualização**.
-* Abra a **Função de Pré-visualização**.\
-  \
-  &#x20;![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a\&width=300\&dpr=4\&quality=100\&sign=36ce2b93\&sv=2)
-* Insira o ID do Documento e clique em **Testar**.
-* A pré-visualização em estilo PDF será exibida usando a configuração HTML/CSS/XSLT.
-
-Este recurso é crucial para depurar vinculações de dados, aprimorar o layout e garantir que o documento seja preciso e visualmente claro para os usuários e sistemas downstream como **IDM**.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJH103tnbqZjuimpOniVg%252Fimage.png%3Falt%3Dmedia%26token%3D4e63cc09-b0de-488f-bdd0-ee5a9246a371\&width=768\&dpr=4\&quality=100\&sign=bfff5bba\&sv=2)
-
-## 6. Tutorial em Vídeo
-
-Um guia em vídeo para este tipo de arquivo está disponível na [página de Vídeos.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Use-o para acompanhar a configuração, edição e pré-visualização.
-
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-pt.png" alt="Formato EDI existente com os seus quatro atributos configurados."><figcaption><p>Formato EDI existente com os seus quatro atributos configurados.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/site-all-edi-preview-pt.png" alt="Atributo PREVIEW ativo: código-fonte XSLT no editor; esta vista não mostra a pré-visualização renderizada do documento."><figcaption><p>Atributo PREVIEW ativo: código-fonte XSLT no editor; esta vista não mostra a pré-visualização renderizada do documento.</p></figcaption></figure>
-
-
-As vistas mostram uma configuração e uma versão existentes. As definições variam consoante o tipo de documento e o formato. Valide as alterações num rascunho antes da ativação.
-
-As imagens mostram as etapas em português e a versão ativa da configuração em modo só de leitura. Os nomes técnicos dos editores, os identificadores de atributos e o código de configuração mantêm-se como na versão ilustrada.
+As telas mostram uma configuração e uma versão existentes. As definições variam conforme o tipo de documento e o formato. Valide as alterações em um rascunho antes de ativá-las.

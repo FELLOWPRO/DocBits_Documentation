@@ -1,6 +1,6 @@
 # Identity Service Provider Configuration
 
-Configuring the Identity Service Provider (IdP) to integrate with DocBits requires a few specific steps.Here is a guide to doing that:
+Configuring the Identity Service Provider (IdP) to integrate with DocBits requires a few specific steps. Here is a guide to doing that:
 
 <figure><img src="../../../../.gitbook/assets/image (199).png" alt="Identity Service Provider Settings with Tenant ID field, file Import upload and Configure button"><figcaption></figcaption></figure>
 
@@ -12,7 +12,7 @@ Configuring the Identity Service Provider (IdP) to integrate with DocBits requir
 **Entering the Tenant ID:**
 
 * Look for the section that allows configuration for new SAML integrations.
-* Enter the DocBits tenant ID. This ID identifies your Docbits account to the IdP and enables secure communication between the two systems.
+* Enter the DocBits tenant ID. This ID identifies your DocBits account to the IdP and enables secure communication between the two systems.
 
 **Importing the required files:**
 
@@ -27,7 +27,7 @@ Configuring the Identity Service Provider (IdP) to integrate with DocBits requir
 **Verify configuration:**
 
 * Take time to make sure all information entered is correct and that there are no typos or misconfigurations.
-* Run tests to ensure that users can successfully log into Docbits via SAML and that Single Log-Out is working properly.
+* Run tests to ensure that users can successfully log into DocBits via SAML and that Single Log-Out is working properly.
 
 **Security considerations:**
 

@@ -32,15 +32,15 @@ Each group entry carries a **⋮** (more actions) menu:
 
 ## Menu Tab Access
 
-The group details pane contains a **Menu tabs** section. It defines, for this role, which menu tabs the role's members may see:
+The group details pane contains a **Menu tabs** section. It defines, for this group, which menu tabs the group's members may see:
 
-* Tick a tab to grant it to this role.
-* Clear a tab to take it away from this role.
+* Tick a tab to grant it to this group.
+* Clear a tab to take it away from this group.
 
-Every role is configured on its own, so two roles can see different menu tabs. The list only contains tabs that an administrator may hand to a role — currently the **Analytics dashboard**.
+Every group is configured on its own, so two groups can see different menu tabs. The list only contains tabs that an administrator may hand to a group — currently the **Analytics dashboard**.
 
 {% hint style="info" %}
-**Empty = organisation admins only.** If no tab is ticked for a role, members of that role see none of the gated tabs; only organisation admins keep access to them. The same note is shown as a hint under the **Menu tabs** heading.
+**Empty = organisation admins only.** If no tab is ticked for a group, members of that group see none of the gated tabs; only organisation admins keep access to them. The same note is shown as a hint under the **Menu tabs** heading.
 {% endhint %}
 
 <figure><img src="../../../../../.gitbook/assets/settings-roles-menu-tabs-en-20261010.png" alt="Group details with the Menu tabs section"><figcaption><p>Selecting a group in the navigator opens its details, including the <strong>Menu tabs</strong> section.</p></figcaption></figure>

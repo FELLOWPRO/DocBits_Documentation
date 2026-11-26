@@ -10,6 +10,6 @@ Here are troubleshooting steps for common issues while integrating DocBits with 
 * **Updating certificates:** Make sure the SAML certificates and metadata are up to date on both sides. If a certificate has expired, you must update it and retest the integration.
 * **Communicating with support:** If you cannot identify the cause of the problem, contact DocBits support or your identity service provider. They can help you troubleshoot and provide specific guidance for your setup.
 
-By following these troubleshooting steps, you can quickly identify and resolve the most common issues during the integration between Docbits and your identity service provider.
+By following these troubleshooting steps, you can quickly identify and resolve the most common issues during the integration between DocBits and your identity service provider.
 
 

@@ -146,7 +146,7 @@ Define how and where processed documents are exported.
 | :--- | :--- |
 | **Folder (watcher)** | Export PDF + XML to a local folder |
 | **Infor IDM** | Upload to Infor Document Management |
-| **Infor BOD** | Send BOD XML to Infor LN/M3 |
+| **Infor BOD** | Send BOD XML to Infor ERP / SAP |
 | **ION API** | Call Infor ION API endpoints |
 | **GLS840MI** | M3 batch processing (via REST API) |
 | **REST API** | Send to external API with ION OAuth authentication |

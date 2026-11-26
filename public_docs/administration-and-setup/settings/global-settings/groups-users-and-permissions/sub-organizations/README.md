@@ -31,11 +31,11 @@ Use the **Search** bar to quickly find sub-organizations by name.
 2. Enter a **Name** and optional **Description**.
 3. Click **Save** to create the sub-organization.
 
-## Show Cross Organisation Option
+## Show Cross Organization Option
 
-When enabled (using the toggle at the top of the page), users can view documents from all sub-organisations in a single combined view instead of being limited to documents from only one sub-organization.
+When enabled (using the toggle at the top of the page), users can view documents from all sub-organizations in a single combined view instead of being limited to documents from only one sub-organization.
 
-### How to Use Cross Sub-Organisations
+### How to Use Cross Sub-Organizations
 
 1. Navigate to the **Dashboard**.
 2. In the top-right corner, where sub-organizations can be switched, select **Cross**.

@@ -23,47 +23,65 @@ Przed zastosowaniem reguły sprawdź typ pokazany wewnątrz tej sekcji. Jeśli n
 
 ### Pięć kluczowych wskaźników
 
-<figure><img src="../../../.gitbook/assets/touchless-report-kpi-pl-20261104.png" alt="Aktualny raport faktur za 30 dni: 107 w pełni automatycznych faktur plus 11 faktur wymagających tylko zatwierdzenia daje 118 z 201, czyli 58.7% AP Touchless. Samo Pure to 53.2%. Karta AP pokazuje już łączną liczbę 118. Fikcyjna historia szkoleniowa; nie potwierdzono wykonanego eksportu do ERP."><figcaption><p>Aktualny raport faktur za 30 dni: 107 w pełni automatycznych faktur plus 11 faktur wymagających tylko zatwierdzenia daje 118 z 201, czyli 58.7% AP Touchless. Samo Pure to 53.2%. Karta AP pokazuje już łączną liczbę 118. Fikcyjna historia szkoleniowa; nie potwierdzono wykonanego eksportu do ERP.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-outcome-cards-pl-20261126.png" alt="Cztery karty wyników Czysta bezdotykowa, Tylko zatwierdzenie, Interwencja ręczna i Wyjątki procesu pokazują duży udział procentowy, a poniżej liczbę dokumentów. Zakres diagnostyki jest piątą kartą."><figcaption><p>Cztery karty wyników i Zakres diagnostyki. Ten 30-dniowy raport testowy zawiera 54 wyjątki procesu i nie zawiera dokumentów w pozostałych kategoriach wyników.</p></figcaption></figure>
 
-| Karta                  | Co pokazuje                                       | Przykład (ilustracyjny)                                                     |
-| ---------------------- | ------------------------------------------------- | --------------------------------------------------------------------------- |
-| **Pure touchless**     | Procent i różnicę do celu                         | **63.2 %** · "120 documents" · "−6.8 pp vs 70 % target" (czerwony, poniżej celu) |
-| **AP touchless**       | Łączny procent i liczbę: Pure plus tylko zatwierdzenie | **78.9%** · "150 documents" w przykładzie ze 120 Pure i 30 tylko zatwierdzenie |
-| **AP assisted**        | Liczbę dokumentów i ich udział                    | **30** · 15.8 %                                                             |
-| **Process exceptions** | Liczbę dokumentów i ich udział                    | **10** · 5.3 %                                                              |
-| **Diagnosis coverage** | Ile zablokowanych dokumentów ma **znaną** przyczynę | **80 %** · "10 without a known cause"                                        |
+Pierwsze cztery karty to **oddzielne kategorie wyników**. Na każdej karcie duża wartość przedstawia udział tej kategorii we wszystkich zliczonych dokumentach, a mniejszy wiersz liczbę dokumentów. Cztery udziały dają łącznie 100%; nie należy dodawać do nich osobnego współczynnika łączonego.
 
-* W aktualnym zrzucie 107 w pełni automatycznych plus 11 faktur wymagających tylko zatwierdzenia daje **118 ÷ 201 = 58.7% AP Touchless**. Samo Pure to **107 ÷ 201 = 53.2%**. Te dwa procenty się pokrywają i nie wolno ich dodawać.
-* Karta pokazuje kreskę (—) zamiast **0 %**, gdy nie ma czego mierzyć. Kreska oznacza "brak danych", a nie "zero".
-* **Diagnosis coverage** = dokumenty ze znanym powodem blokady ÷ wszystkie zablokowane dokumenty. Przykład: 50 zablokowanych dokumentów, 10 z nieznaną przyczyną daje 40 ÷ 50 = **80 %**. Niska wartość oznacza "jeszcze nie rozumiemy, dlaczego dokumenty się zatrzymują". Popraw ją, zanim spróbujesz usuwać pojedyncze przyczyny.
-* **Kliknij kartę**, aby otworzyć w nowej karcie listę dokumentów stojących za liczbą ("View the documents behind this number"). Karty z 0 dokumentów nie są klikalne.
+| Karta | Co zlicza | Dodatkowe informacje |
+| --- | --- | --- |
+| **Czysta bezdotykowa** | Dokumenty zakończone bez interwencji ręcznej lub oddzielnego zatwierdzenia | Różnica w punktach procentowych względem celu touchless |
+| **Tylko zatwierdzenie** | Dokumenty wymagające zatwierdzenia, ale żadnej innej korekty ręcznej | Tylko własny udział i liczba tej kategorii |
+| **Interwencja ręczna** | Dokumenty wymagające korekty ręcznej lub innej interakcji użytkownika | Własny udział i liczba |
+| **Wyjątki procesu** | Dokumenty, których nie można było zakończyć z powodu wyjątku przetwarzania lub integracji | Własny udział i liczba |
+| **Zakres diagnostyki** | W ilu zablokowanych dokumentach znana jest **pierwsza przyczyna** blokady | Liczba dokumentów bez znanej przyczyny |
 
-### Wskaźnik touchless w czasie
+Osobne pole **Współczynnik touchless · Czysta bezdotykowa + Tylko zatwierdzenie** pod kartami łączy dwie pierwsze kategorie. Na przykład 60 dokumentów czystych bezdotykowych plus 15 dokumentów tylko z zatwierdzeniem spośród 100 daje **współczynnik touchless 75%**. Karta Tylko zatwierdzenie nadal pokazuje **15%**, a nie 75%.
 
-<figure><img src="../../../.gitbook/assets/touchless-report-trend-pl-20261104.png" alt="Aktualny trend raportu: różowy pokazuje Pure Touchless, a niebieski wskaźnik łączny obejmujący dokumenty wymagające tylko zatwierdzenia. Linia przerywana oznacza cel 70%. Te krzywe używają fikcyjnych przypadków szkoleniowych i nie potwierdzają rzeczywistej poprawy procesu."><figcaption><p>Aktualny trend raportu: różowy pokazuje Pure Touchless, a niebieski wskaźnik łączny obejmujący dokumenty wymagające tylko zatwierdzenia. Linia przerywana oznacza cel 70%. Te krzywe używają fikcyjnych przypadków szkoleniowych i nie potwierdzają rzeczywistej poprawy procesu.</p></figcaption></figure>
+* Karta pokazuje myślnik (—) zamiast **0%**, gdy nie ma nic do zmierzenia. Myślnik oznacza „brak danych”, a nie „zero”.
+* **Zakres diagnostyki** = dokumenty ze znaną przyczyną blokady ÷ wszystkie zablokowane dokumenty. Przykład: 50 zablokowanych dokumentów, 10 z nieznaną przyczyną → 40 ÷ 50 = **80%**. Niska wartość oznacza, że nie rozumiemy jeszcze, dlaczego dokumenty się zatrzymują. Popraw ją przed usuwaniem poszczególnych przyczyn.
+* **Kliknij kartę**, aby otworzyć listę dokumentów odpowiadających danej liczbie w nowej karcie. Karty z 0 dokumentami nie są klikalne. Zakres diagnostyki otwiera dokumenty bez znanej przyczyny.
 
-Aktualny wykres pokazuje **Pure Touchless**, **łączny wskaźnik AP Touchless** oraz **linię celu**. Niebieski obejmuje Pure i dokumenty wymagające tylko zatwierdzenia, więc leży na różowym lub powyżej niego; nie dodawaj tych dwóch wartości. Każdy punkt ma własną liczbę kwalifikujących się zakończonych dokumentów, więc wskaźnik dzienny nie jest automatycznie wskaźnikiem całego okresu. Krótkie okresy pokazują punkty dzienne, długie tygodniowe. Odrębna kategoria wyniku "tylko zatwierdzenie" różni się od tej łącznej linii.
+### Współczynnik bezdotykowy w czasie
 
-**Przykład.** Po włączeniu automatycznego dopasowania PO 1 października czysty wskaźnik rośnie z 55 % do 68 % w ciągu dwóch tygodni. Wykres pokazuje dzień, w którym krzywa się zmienia, więc możesz zbadać moment. Związek przed/po sam w sobie nie dowodzi, że poprawę spowodowało to ustawienie. Porównaj typ dokumentu, strukturę dostawców i inne zmiany.
+<figure><img src="../../../.gitbook/assets/touchless-report-trend-pl-20261104.png" alt="Trend raportu z wartościami Czysta bezdotykowa, łącznym Współczynnikiem touchless i przerywaną linią celu."><figcaption><p>Czysta bezdotykowa i łączny Współczynnik touchless w czasie. Przerywana linia oznacza cel.</p></figcaption></figure>
 
-### Gdzie touchless jest tracony najpierw
+Wykres pokazuje **Czystą bezdotykową**, łączny **Współczynnik touchless** i **linię celu**. Współczynnik łączony obejmuje Czystą bezdotykową i Tylko zatwierdzenie, dlatego jest równy lub wyższy od współczynnika czystego bezdotykowego; nie dodawaj tych dwóch wartości. Każdy punkt ma własną liczbę kwalifikujących się zakończonych dokumentów, więc współczynnik dzienny nie jest automatycznie współczynnikiem całego okresu. Krótkie okresy pokazują punkty dzienne, a długie tygodniowe. Punkty oparte na niekompletnych najnowszych danych są oznaczone jako **Tymczasowy**.
 
-<figure><img src="../../../.gitbook/assets/touchless-blocking-stages-pl.png" alt="Wykres słupkowy zablokowanych dokumentów według pierwszego etapu blokady i powodu"><figcaption><p>Zablokowane dokumenty według etapu i powodu, na którym zatrzymały się najpierw. Tutaj <strong>Field validation: Required field missing</strong> kosztuje najwięcej dokumentów (58), następnie <strong>Export mapping failed</strong> (46) i <strong>PO item mismatch</strong> (27). Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
+**Przykład.** Po włączeniu automatycznego dopasowywania zamówień 1 października współczynnik czysty bezdotykowy rośnie w ciągu dwóch tygodni z 55% do 68%. Wykres pokazuje dzień zmiany krzywej, co pozwala zbadać ten moment. Samo powiązanie przed/po nie dowodzi, że to ustawienie spowodowało poprawę. Porównaj typ dokumentu, strukturę dostawców i inne zmiany.
 
-Wykres słupkowy **Blocked documents** według etapu potoku: **pierwszego** etapu, który zatrzymał dokument.
+### Gdzie touchless jest tracone najpierw
 
-**Przykład.** Słupki: Supplier Identification 12, Field Validation 41, PO Line Match 7. Najwyższy słupek mówi, żeby najpierw przyjrzeć się **Field Validation**. Brakująca odczytana wartość to jedna z możliwych przyczyn; przed potwierdzeniem porównaj oryginalną fakturę, reguły pól i dostępne dane źródłowe.
+<figure><img src="../../../.gitbook/assets/touchless-blocking-stages-pl.png" alt="Wykres słupkowy zablokowanych dokumentów według pierwszego etapu i przyczyny blokady"><figcaption><p>Dokumenty zablokowane według etapu i przyczyny, na których zatrzymały się najpierw. Tutaj <strong>Field validation: Required field missing</strong> dotyczy największej liczby dokumentów (58), następnie <strong>Export mapping failed</strong> (46) i <strong>PO item mismatch</strong> (27). Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
 
-#### Dlaczego dokumenty nie są touchless (kanał wydania Nova)
+Wykres słupkowy **Zablokowanych dokumentów** według etapu procesu: **pierwszego** etapu, który zatrzymał dokument.
 
-Organizacje w kanale wydania **Nova** widzą odpowiedź na to samo pytanie w postaci rozwijanej listy zamiast wykresu słupkowego. Panel nosi nazwę **Why documents are not touchless** i znajduje się obok **Touchless rate over time**.
+**Przykład.** Słupki: Supplier Identification 12, Field Validation 41, PO Line Match 7. Największy słupek wskazuje, że najpierw należy sprawdzić **Field Validation**. Brak wyodrębnionej wartości jest możliwą przyczyną; przed jej potwierdzeniem porównaj oryginalną fakturę, reguły pól i dostępne dane źródłowe.
 
-* Nagłówek podaje, ile dokumentów obejmuje lista. Każdy wiersz to jeden obszar pierwszego blokera z jego udziałem w procentach, liczbą dokumentów i słupkiem. Wiersze są sortowane od największego.
-* Kliknij wiersz, aby otworzyć jego przyczyny na miejscu. Przyczyny zachowują własne liczby dokumentów, więc widać, która przyczyna w danym obszarze kosztuje najwięcej. Jednocześnie otwarty jest tylko jeden obszar; kliknij ponownie, aby go zamknąć.
-* Lista pochodzi z tych samych danych raportu co kluczowe wskaźniki. Liczby nie są przeliczane w przeglądarce, więc suma w nagłówku i wiersze zawsze się zgadzają.
-* Jeśli Twoja instalacja nie wysyła jeszcze tych danych, panel to zgłasza zamiast pokazywać **0**. Pusta lista z opisem „nic nie zapisano” oznacza, że w tym okresie nie utracono dokumentów; te dwa stany są różne i nie należy odczytywać pierwszego jako dobrej wiadomości.
+#### Dlaczego dokumenty nie są bezdotykowe (kanał wydań Nova)
 
-Kanał wydania **Vesta** zachowuje opisany wyżej wykres słupkowy. Jeśli Twoja strona pokazuje słupki, jesteś w Vesta; jeśli pokazuje rozwijaną listę, jesteś w Nova. Oba odpowiadają na to samo pytanie, więc reszta tej strony obowiązuje w obu przypadkach.
+Organizacje w kanale wydań **Nova** widzą odpowiedź na to pytanie w rozwijanej liście zamiast wykresu słupkowego. Panel nosi nazwę **Dlaczego dokumenty nie są bezdotykowe** i znajduje się obok **Współczynnik bezdotykowy w czasie**.
+
+<figure><img src="../../../.gitbook/assets/touchless-why-reasons-pl-20261126.png" alt="Rozwinięty obszar Walidacja z 32 dokumentami i przyczyną Nieudana walidacja faktury elektronicznej. Akcja Dokumenty otwiera odpowiedni panel boczny."><figcaption><p>Rozwiń obszar, aby zobaczyć jego przyczyny i otworzyć dokumenty odpowiadające przyczynie. Raport testowy zawiera również obszar Eksport i konfiguracja z 22 dokumentami.</p></figcaption></figure>
+
+* Nagłówek podaje liczbę dokumentów objętych listą. Każdy wiersz to obszar pierwszej blokady z udziałem procentowym, liczbą dokumentów i paskiem. Wiersze są posortowane od największego.
+* Kliknij wiersz, aby otworzyć jego przyczyny. Jednocześnie otwarty jest tylko jeden obszar; kliknij go ponownie, aby zamknąć. Pokazywanych jest pierwszych **pięć** przyczyn; wybierz **+N więcej**, aby zobaczyć pozostałe. Zamknięcie obszaru ponownie ogranicza listę do pięciu.
+* **Poprawione bez blokady** to osobny obszar dokumentów poprawionych przez użytkownika, mimo że raport nie wykrył technicznej pierwszej blokady. Służy do badania możliwości poprawy procesów użytkowników i szkoleń, a nie szukania nieudanego etapu przetwarzania.
+* Lista pochodzi z tych samych danych raportu co kluczowe wskaźniki. Przeglądarka nie przelicza liczb, więc suma w nagłówku i wiersze są zgodne.
+* Jeśli instalacja nie przesyła jeszcze tych danych, panel to komunikuje zamiast pokazywać **0**. Pusta lista z komunikatem „nic nie zarejestrowano” oznacza, że w tym okresie nie utracono dokumentów; są to różne stany i pierwszego nie należy odczytywać jako dobrej wiadomości.
+
+##### Dokumenty odpowiadające przyczynie
+
+Wybierz **Dokumenty** przy przyczynie, aby otworzyć panel boczny bez opuszczania raportu. Nagłówek pokazuje przyczynę, obszar, okres i typ dokumentu.
+
+<figure><img src="../../../.gitbook/assets/touchless-reason-documents-pl-20261126.png" alt="Panel boczny dokumentów przyczyny z wyszukiwaniem, opcją Otwórz na liście dokumentów, szczegółami dokumentów i podziałem na strony."><figcaption><p>Panel dokumentów przyczyny pokazuje 25 dokumentów na stronę. W tym przykładzie testowym Nieudana walidacja faktury elektronicznej ma 32 pasujące dokumenty.</p></figcaption></figure>
+
+* **Wyszukuj** według dostawcy, nazwy pliku lub numeru dokumentu. Wyczyść wyszukiwanie, aby wrócić do wszystkich dokumentów przyczyny; komunikat o braku dopasowań nie oznacza, że przyczyna nie ma dokumentów.
+* Tabela pokazuje **dokument, dostawcę, datę otrzymania, wynik, pierwszy zablokowany etap i krótki opis**. Wybierz wiersz lub nazwę dokumentu, aby otworzyć **Ślad dokumentu**. **Wstecz** ze śladu wraca do tej samej przyczyny, wyszukiwania i strony.
+* Użyj **Poprzedni** i **Dalej**, aby przechodzić między stronami po **25 dokumentów**. Stopka pokazuje widoczny zakres, sumę i bieżącą stronę.
+* **Otwórz na liście dokumentów** otwiera pełną listę w nowej karcie z zastosowanymi filtrami przyczyny, okresu raportu i typu dokumentu. Raport i panel boczny pozostają otwarte w pierwotnej karcie.
+* Jeśli ładowanie nie powiedzie się, użyj **Spróbuj ponownie**. Pusty wynik i błąd ładowania to różne stany.
+
+Kanał wydań **Vesta** zachowuje opisany powyżej wykres słupkowy. Jeśli strona pokazuje słupki, korzystasz z Vesty; jeśli rozwijaną listę, z Novy. Oba odpowiadają na to samo pytanie, więc pozostała część strony obowiązuje w obu przypadkach.
 
 ### Możliwości u dostawców
 

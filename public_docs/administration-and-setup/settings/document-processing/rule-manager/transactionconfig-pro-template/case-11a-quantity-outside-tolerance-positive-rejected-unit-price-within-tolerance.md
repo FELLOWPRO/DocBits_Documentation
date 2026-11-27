@@ -12,27 +12,27 @@
 
 ## 示例：
 
-* **采购订单 (PO)：**
-  * 数量：100 件
-  * 单价：每件 $8.00
-  * 总金额：$800.00
-* **收到的发票：**
-  * 数量：110 件（超出 10% 的容差范围，被拒绝）
-  * 单价：每件 $8.00（在容差范围内）
-  * 总金额：$880.00
-* **容差级别：**
-  * 数量容差：±5%
-  * 单价容差：±2%
+* **Purchase Order (PO):**
+  * Quantity: 100 units
+  * Unit Price: $8.00 per unit
+  * Total Amount: $800.00
+* **Invoice Received:**
+  * Quantity: 110 units — 10% above the PO value, outside the configured ±5% tolerance; rejected.
+  * Unit Price: $8.00 per unit (within tolerance)
+  * Total Amount: $880.00
+* **Tolerance Levels:**
+  * Quantity Tolerance: ±5%
+  * Unit Price Tolerance: ±2%
 
 由于数量（110 件）超出可接受的容差限值（正向偏差 10%）且未获批准，而单价（$8.00）在容差范围内，系统将：
 
-1. **拒绝超出部分：**系统拒绝超出已批准容差级别的数量。
-2. **调整数量：**系统将数量调整为采购订单中指定的已批准数量。
-   * 已批准数量 = 100 件（来自 PO）
-3. **保持单价不变：**每件 $8.00 的单价在容差范围内，因此保持不变。
-4. **重新计算总金额：**系统使用已批准的数量和接受的单价计算总金额：
-   * **总金额 = 已批准数量 × 单价**
-   * **总金额 = 100 件 × 每件 $8.00 = $800.00**
-5. **处理发票：**系统按调整后的总金额 $800.00 处理发票，仅反映已批准的数量和单价。超出的 10 件数量将被拒绝且不会开票。
+1. **Reject the Excess Quantity:**系统拒绝超出已批准容差级别的数量。
+2. **Adjust the Quantity:**系统将数量调整为采购订单中指定的已批准数量。
+   * Approved Quantity = 100 units (from PO)
+3. **Maintain the Unit Price:**每件 $8.00 的单价在容差范围内，因此保持不变。
+4. **Recalculate the Total Amount:**系统使用已批准的数量和接受的单价计算总金额：
+   * **Total Amount = Approved Quantity × Unit Price**
+   * **Total Amount = 100 units × $8.00 per unit = $800.00**
+5. **Process the Invoice:**系统按调整后的总金额 $800.00 处理发票，仅反映已批准的数量和单价。超出的 10 件数量将被拒绝且不会开票。
 
 即使供应商尝试对超出部分开票，这种方式也能确保发票金额符合采购订单中约定的条款。

@@ -25,7 +25,7 @@ Il sistema elabora l'addebito della testata come fatturato, applicandolo senza r
 
 Poiché l'addebito di testata per unità ($3.55) rientra nell'intervallo di tolleranza accettabile del 2% rispetto all'ordine di acquisto, il sistema:
 
-1. **Accetta l'addebito di intestazione per unitàà:** Il sistema accetta l'addebito di intestazione fatturato per unità di $3.55 poiché rientra nel limite di tolleranza definito.
+1. **Accetta l'addebito di intestazione per unità:** Il sistema accetta l'addebito di intestazione fatturato per unità di $3.55 poiché rientra nel limite di tolleranza definito.
 2. **Elabora l'addebito di intestazione:** Il sistema elabora la fattura con l'importo totale dell'addebito di intestazione in base all'addebito fatturato per unità e quantità:
    * **Total Header Charge Amount = Quantity × Header Charge Per Unit**
    * **Total Header Charge Amount = 1,200 units × $3.55 = $4,260.00**

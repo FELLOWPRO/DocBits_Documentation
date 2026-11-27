@@ -25,8 +25,8 @@ Il sistema adegua l'addebito dell'intestazione in modo che corrisponda all'ordin
 
 Poiché il Header Charge Per Unit ($5.00) supera l'intervallo di tolleranza accettabile del 5% e non è stato approvato, il sistema:
 
-1. **Rifiutare l'addebito dell'intestazione fatturata per unitàà:** Il sistema non accetta l'addebito dell'intestazione fatturata per unità di $5.00 a causa della varianza che supera il limite di tolleranza.
-2. **Rettifica l'addebito di intestazione per unitàà:** Il sistema adegua l'addebito per unità in modo che corrisponda all'ordine di acquisto originale o all'addebito per unità approvato:
+1. **Rifiutare l'addebito dell'intestazione fatturata per unità:** Il sistema non accetta l'addebito dell'intestazione fatturata per unità di $5.00 a causa della varianza che supera il limite di tolleranza.
+2. **Rettifica l'addebito di intestazione per unità:** Il sistema adegua l'addebito per unità in modo che corrisponda all'ordine di acquisto originale o all'addebito per unità approvato:
    * Adjusted Header Charge Per Unit = $4.00 (from PO)
 3. **Ricalcola l'importo totale dell'addebito dell'intestazione:** Il sistema ricalcola l'importo dell'addebito totale in base all'addebito rettificato per unità:
    * **Corrected Total Header Charge Amount = Quantity × Adjusted Header Charge Per Unit**

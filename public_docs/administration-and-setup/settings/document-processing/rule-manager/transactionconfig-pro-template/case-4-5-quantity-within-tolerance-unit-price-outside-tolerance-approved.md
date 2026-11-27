@@ -42,9 +42,9 @@ Poiché la quantità rientra nella tolleranza ma il prezzo unitario è fuori tol
 
 1\. **Adegua il prezzo unitario**: il sistema adegua il prezzo unitario al prezzo unitario di PO perché la varianza è stata approvata:
 
-• **Prezzo unitario rettificato = $10.00 per unitàà**
+• **Prezzo unitario rettificato = $10.00 per unità**
 
-• **Importo totale rettificato = 100 unità × $10.00 per unitàà = $1,000.00**
+• **Importo totale rettificato = 100 unità × $10.00 per unità = $1,000.00**
 
 2\. **Applica un addebito di riga per la differenza**: poiché il prezzo unitario approvato di $11.00 è superiore al prezzo unitario PO di $10.00, il sistema applica un addebito di riga per tenere conto di questa differenza:
 

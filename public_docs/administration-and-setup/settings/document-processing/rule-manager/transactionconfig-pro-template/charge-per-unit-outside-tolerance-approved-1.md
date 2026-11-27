@@ -25,7 +25,7 @@ Il sistema accetta l'addebito per unità e applica gli addebiti approvati, elabo
 
 Poiché il Charge Per Unit ($5.00) non rientra nell'intervallo di tolleranza accettabile del 5% ma è stato approvato, il sistema:
 
-1. **Accetta l'addebito approvato per unitàà:** Il sistema accetta l'addebito fatturato per unità di $5.00 poiché è stato approvato nonostante il superamento del limite di tolleranza.
+1. **Accetta l'addebito approvato per unità:** Il sistema accetta l'addebito fatturato per unità di $5.00 poiché è stato approvato nonostante il superamento del limite di tolleranza.
 2. **Elabora la transazione:** Il sistema elabora la fattura utilizzando la spesa unitaria approvata e la quantità:
    * **Total Charge Amount = Quantity × Approved Charge Per Unit**
    * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**

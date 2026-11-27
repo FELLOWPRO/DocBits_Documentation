@@ -25,10 +25,10 @@
 
 由于抬头单位费用（$3.00）超出 5% 的可接受容差范围，但已获得审批，系统将：
 
-1. **Accept the Approved Header Charge Per Unit:** 尽管超出容差限值，系统仍接受已审批的发票抬头单位费用 $3.00。
-2. **Process the Header Charge:** 系统使用已审批的单位费用和数量处理发票：
+1. **接受已审批的抬头单位费用：** 尽管超出容差限值，系统仍接受已审批的发票抬头单位费用 $3.00。
+2. **处理抬头费用：** 系统使用已审批的单位费用和数量处理发票：
    * **Total Header Charge Amount = Quantity × Approved Header Charge Per Unit**
    * **Total Header Charge Amount = 2,000 units × $3.00 = $6,000.00**
-3. **Finalize the Invoice:** 系统使用已审批的费用处理交易，反映 $6,000.00 的总金额。
+3. **完成发票处理：** 系统使用已审批的费用处理交易，反映 $6,000.00 的总金额。
 
 这种处理方式使系统能够接受已审批的抬头费用差异，确保交易按照审批结果处理，同时保持财务记录准确。

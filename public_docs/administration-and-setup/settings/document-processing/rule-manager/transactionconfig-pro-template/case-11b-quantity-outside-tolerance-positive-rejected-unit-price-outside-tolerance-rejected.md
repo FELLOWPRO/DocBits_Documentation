@@ -26,13 +26,13 @@
 
 由于数量（220 件）和单价（$55.00）均超出可接受的容差限值，且都未获批准，系统将：
 
-1. **Reject the Excess Quantity:**系统不接受发票上的 220 件数量，而是将其调整为与原采购订单一致。
+1. **拒收超出部分的数量：**系统不接受发票上的 220 件数量，而是将其调整为与原采购订单一致。
    * Adjusted Quantity = 200 units (from PO)
-2. **Reject the Invoice Unit Price:**系统不接受发票上的 $55.00 单价，而是将其调整为与原采购订单一致。
+2. **拒收发票单价：**系统不接受发票上的 $55.00 单价，而是将其调整为与原采购订单一致。
    * Adjusted Unit Price = $50.00 per unit (from PO)
-3. **Recalculate the Total Amount:**系统使用调整后的数量和单价计算总金额：
+3. **重新计算总金额：**系统使用调整后的数量和单价计算总金额：
    * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 200 units × $50.00 per unit = $10,000.00**
-4. **Process the Invoice:**系统以更正后的总金额 $10,000.00 处理发票，并拒收超出部分的数量和较高的单价。
+4. **处理发票：**系统以更正后的总金额 $10,000.00 处理发票，并拒收超出部分的数量和较高的单价。
 
 这种方法可确保交易符合原采购订单的条款，在拒收未经批准的差异的同时，保持价格和数量控制的一致性。

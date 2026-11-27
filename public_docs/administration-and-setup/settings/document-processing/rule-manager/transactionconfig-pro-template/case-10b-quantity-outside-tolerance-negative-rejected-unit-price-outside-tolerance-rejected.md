@@ -26,17 +26,17 @@
 
 由于数量（140 件）和单价（$33.00）均超出可接受的容差范围，且两者都未获审批，系统将：
 
-1. **Reject the Invoice Data:**由于开票数量和单价偏离容差范围，系统不予接受。
-2. **Adjust the Quantity:**系统将数量调整为与原采购订单数量一致。
+1. **拒绝发票数据：**由于开票数量和单价偏离容差范围，系统不予接受。
+2. **调整数量：**系统将数量调整为与原采购订单数量一致。
    * Adjusted Quantity = 150 units (from PO)
-3. **Adjust the Unit Price:**系统将单价调整为与原采购订单单价一致。
+3. **调整单价：**系统将单价调整为与原采购订单单价一致。
    * Adjusted Unit Price = $30.00 per unit (from PO)
-4. **Recalculate the Total Amount:**系统使用调整后的数量和单价重新计算总金额：
+4. **重新计算总金额：**系统使用调整后的数量和单价重新计算总金额：
    * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 150 units × $30.00 per unit = $4,500.00**
-5. **Generate a Debit Note:**由于原发票总金额高于更正后的总金额，系统会针对多收金额生成借项通知单。
+5. **生成借项通知单：**由于原发票总金额高于更正后的总金额，系统会针对多收金额生成借项通知单。
    * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
    * **Debit Note Amount = $4,620.00 - $4,500.00 = $120.00**
-6. **Process the Invoice:**系统以更正后的总金额 $4,500.00 处理发票，并开具金额为 $120.00 的借项通知单，以抵消多收金额。
+6. **处理发票：**系统以更正后的总金额 $4,500.00 处理发票，并开具金额为 $120.00 的借项通知单，以抵消多收金额。
 
 这种处理方式可确保财务交易符合采购订单条款，从而保持开票准确、公平。

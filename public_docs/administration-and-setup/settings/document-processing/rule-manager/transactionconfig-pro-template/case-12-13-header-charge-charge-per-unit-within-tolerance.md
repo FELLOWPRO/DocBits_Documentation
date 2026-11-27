@@ -13,22 +13,22 @@ Het systeem verwerkt de kopheffing zoals gefactureerd en past deze zonder aanpas
 ## Voorbeeld:
 
 * **Purchase Order (PO):**
-  * Headerkosten per eenheid: $3.50
+  * Header Charge Per Unit: $3.50
   * Quantity: 1,200 units
-  * Totaal bedrag aan headerkosten: $4,200.00
+  * Total Header Charge Amount: $4,200.00
 * **Invoice Received:**
-  * Headerkosten per eenheid: $3.55 (binnen tolerantie van 1.43%)
+  * Header Charge Per Unit: $3.55 — 1.43% above the PO value, within the configured ±2% tolerance.
   * Quantity: 1,200 units
-  * Totaal bedrag aan headerkosten: $4,260.00
+  * Total Header Charge Amount: $4,260.00
 * **Tolerance Levels:**
-  * Tolerantie koptekst per eenheid: ±2%
+  * Header Charge Per Unit Tolerance: ±2%
 
 Omdat de headerkosten per eenheid ($3.55) binnen het aanvaardbare tolerantiebereik van 2% vallen in vergelijking met de inkooporder, zal het systeem:
 
 1. **Accepteer het koptoeslag per eenheid:** Het systeem accepteert het gefactureerde koptoeslag per eenheid van $3.55, aangezien dit binnen de gedefinieerde tolerantielimiet valt.
 2. **Verwerk de kopkosten:** Het systeem verwerkt de factuur met het totale bedrag aan kopkosten, gebaseerd op de gefactureerde kosten per eenheid en hoeveelheid:
-   * **Totaal bedrag kopkosten = Aantal × kopkosten per eenheid**
-   * **Totaal bedrag kopkosten = 1,200 eenheden × $3.55 = $4,260.00**
+   * **Total Header Charge Amount = Quantity × Header Charge Per Unit**
+   * **Total Header Charge Amount = 1,200 units × $3.55 = $4,260.00**
 3. **De factuur voltooien:** Het systeem verwerkt de transactie zonder enige aanpassingen en accepteert de factuur zoals deze is.
 
 Deze aanpak zorgt voor een soepele en efficiënte verwerking van transacties wanneer de headerkosten binnen het aanvaardbare tolerantiebereik vallen, waardoor onnodige afwijzingen of vertragingen worden vermeden.

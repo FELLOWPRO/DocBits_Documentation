@@ -14,23 +14,23 @@ Het systeem accepteert de goedgekeurde hoeveelheid en de eenheidsprijs volgens d
 
 * **Purchase Order (PO):**
   * Quantity: 150 units
-  * Eenheidsprijs: $12.00 per eenheid
+  * Unit Price: $12.00 per unit
   * Total Amount: $1,800.00
 * **Invoice Received:**
-  * Hoeveelheid: 160 eenheden (buiten tolerantie van 6.67% maar goedgekeurd)
-  * Eenheidsprijs: $12.00 per eenheid (binnen tolerantie)
+  * Quantity: 160 units — 6.67% above the PO value, outside the configured ±5% tolerance; approved.
+  * Unit Price: $12.00 per unit (within tolerance)
   * Total Amount: $1,920.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Tolerantie per eenheidsprijs: ±2%
+  * Unit Price Tolerance: ±2%
 
 Aangezien de hoeveelheid (160 eenheden) de aanvaardbare tolerantielimiet overschrijdt, maar is goedgekeurd, en de eenheidsprijs ($12.00) binnen het aanvaardbare bereik ligt, zal het systeem:
 
 1. **Accepteer de goedgekeurde hoeveelheid:** Het systeem bevestigt dat de hoeveelheid is goedgekeurd ondanks dat deze buiten het normale tolerantiebereik ligt.
 2. **Accepteer de eenheidsprijs:** De eenheidsprijs van $12.00 per eenheid valt binnen de aanvaardbare tolerantie en wordt daarom geaccepteerd als gefactureerd.
 3. **Verwerk de transactie:** Het systeem berekent het totaalbedrag met behulp van de goedgekeurde hoeveelheid en eenheidsprijs:
-   * **Totaalbedrag = Aantal × eenheidsprijs**
-   * **Totaalbedrag = 160 eenheden × $12.00 per eenheid = $1,920.00**
+   * **Total Amount = Quantity × Unit Price**
+   * **Total Amount = 160 units × $12.00 per unit = $1,920.00**
 4. **De factuur voltooien:** Het systeem verwerkt de factuur met een totaalbedrag van $1,920.00, wat de goedgekeurde hoeveelheid en de geaccepteerde eenheidsprijs weergeeft.
 
 Dankzij deze aanpak kan het systeem rekening houden met goedgekeurde variaties in de hoeveelheid en tegelijkertijd ervoor zorgen dat de eenheidsprijs binnen het verwachte bereik blijft, wat een soepele transactieverwerking mogelijk maakt.

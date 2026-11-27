@@ -16,15 +16,15 @@ Het systeem accepteert de factuurwaarden en berekent het totaalbedrag op basis v
 
 Quantity: 100 units
 
-Eenheidsprijs: $10.00 per eenheid
+Unit Price: $10.00 per unit
 
 Total Amount: $1,000.00
 
 **Invoice Received:**
 
-Hoeveelheid: 101 eenheden (binnen tolerantie van 1%)
+Quantity: 101 units — 1% above the PO value, within the configured ±2% tolerance.
 
-Eenheidsprijs: $10.05 per eenheid (binnen tolerantie van 0.5%)
+Unit Price: $10.05 per unit — 0.5% above the PO value, within the configured ±1% tolerance.
 
 Total Amount: $1,015.05
 
@@ -32,7 +32,7 @@ Total Amount: $1,015.05
 
 Quantity Tolerance: ±2%
 
-Tolerantie per eenheidsprijs: ±1%
+Unit Price Tolerance: ±1%
 
 
 Omdat de hoeveelheid (101 eenheden) en de eenheidsprijs ($10.05) beide binnen de aanvaardbare tolerantieniveaus vallen in vergelijking met de inkooporder, zal het systeem:
@@ -42,9 +42,9 @@ Omdat de hoeveelheid (101 eenheden) en de eenheidsprijs ($10.05) beide binnen de
 
 2\. **Bereken het totale bedrag:** Het totale bedrag wordt berekend met behulp van de geaccepteerde waarden:
 
-• Totaalbedrag = Aantal × eenheidsprijs
+• Total Amount = Quantity × Unit Price
 
-• Totaalbedrag = 101 eenheden × $10.05 per eenheid = $1,015.05
+• Total Amount = 101 units × $10.05 per unit = $1,015.05
 
 3\. **De factuur verwerken:** De factuur wordt verwerkt met een totaalbedrag van $1,015.05 en de financiële gegevens worden dienovereenkomstig bijgewerkt.
 

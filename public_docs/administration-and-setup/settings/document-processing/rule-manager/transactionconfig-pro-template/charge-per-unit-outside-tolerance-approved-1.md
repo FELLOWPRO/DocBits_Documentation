@@ -23,7 +23,7 @@ Le système accepte les frais par unité et applique les frais approuvés, trait
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±5%
 
-Puisque les frais par unité ($5.00) se situent en dehors de la plage de tolérance acceptable de 5 %, mais ont été approuvés, le système :
+Puisque le Charge Per Unit ($5.00) se situe en dehors de la plage de tolérance acceptable de 5 %, mais a été approuvé, le système :
 
 1. **Accepter les frais par unité approuvés :** Le système accepte les frais facturés par unité de $5.00 car ils ont été approuvés malgré le dépassement de la limite de tolérance.
 2. **Traitement de la transaction :** Le système traite la facture en utilisant les frais unitaires approuvés et la quantité :

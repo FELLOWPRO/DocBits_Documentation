@@ -23,7 +23,7 @@ Le système traite les frais unitaires approuvés et les applique à la transact
 * **Tolerance Levels:**
   * Header Charge Per Unit Tolerance: ±5%
 
-Étant donné que les frais d’en-tête par unité ($3.00) dépassent la plage de tolérance acceptable de 5 % mais ont été approuvés, le système :
+Étant donné que le Header Charge Per Unit ($3.00) dépasse la plage de tolérance acceptable de 5 % mais a été approuvé, le système :
 
 1. **Accepter les frais d'en-tête approuvés par unité :** Le système accepte les frais d'en-tête facturés par unité de $3.00 car ils ont été approuvés malgré le dépassement de la limite de tolérance.
 2. **Traitement des frais d'en-tête :** Le système traite la facture en utilisant les frais par unité approuvés et la quantité :

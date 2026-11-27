@@ -23,7 +23,7 @@ Le système ajuste les frais d'en-tête pour qu'ils correspondent au bon de comm
 * **Tolerance Levels:**
   * Header Charge Per Unit Tolerance: ±5%
 
-Étant donné que les frais d’en-tête par unité ($5.00) dépassent la plage de tolérance acceptable de 5 % et n'ont pas été approuvés, le système :
+Étant donné que le Header Charge Per Unit ($5.00) dépasse la plage de tolérance acceptable de 5 % et n'a pas été approuvé, le système :
 
 1. **Rejeter les frais d'en-tête facturés par unité :** Le système n'accepte pas les frais d'en-tête facturés par unité de $5.00 en raison de l'écart dépassant la limite de tolérance.
 2. **Ajustez les frais par unité d'en-tête :** Le système ajuste les frais par unité pour qu'ils correspondent au bon de commande d'origine ou aux frais par unité approuvés :

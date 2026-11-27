@@ -14,17 +14,17 @@ O sistema aceita os valores da fatura e calcula o total a partir da quantidade e
 
 **Purchase Order (PO):**
 
-Quantidade: 100 unidades
+Quantity: 100 units
 
-Preço unitário: $10.00 por unidade
+Unit Price: $10.00 per unit
 
 Total Amount: $1,000.00
 
 **Invoice Received:**
 
-Quantidade: 101 unidades (dentro da tolerância de 1%)
+Quantity: 101 units — 1% above the PO value, within the configured ±2% tolerance.
 
-Preço unitário: $10.05 por unidade (dentro da tolerância de 0.5%)
+Unit Price: $10.05 per unit — 0.5% above the PO value, within the configured ±1% tolerance.
 
 Total Amount: $1,015.05
 
@@ -38,14 +38,14 @@ Unit Price Tolerance: ±1%
 Como a quantidade (101 unidades) e o preço unitário ($10.05) estão dentro da tolerância aceite em relação ao pedido de compra, o sistema irá:
 
 
-1\. **Accept the Invoice Values:** a quantidade e o preço unitário são aceites por estarem dentro dos limites de tolerância definidos.
+1\. **Aceitar os valores da fatura:** a quantidade e o preço unitário são aceites por estarem dentro dos limites de tolerância definidos.
 
-2\. **Calculate the Total Amount:** o total é calculado com os valores aceites:
+2\. **Calcular o valor total:** o total é calculado com os valores aceites:
 
 • Total Amount = Quantity × Unit Price
 
 • Total Amount = 101 units × $10.05 per unit = $1,015.05
 
-3\. **Process the Invoice:** a fatura é processada com o total de $1,015.05 e os registos financeiros são atualizados.
+3\. **Processar a fatura:** a fatura é processada com o total de $1,015.05 e os registos financeiros são atualizados.
 
 Esta abordagem evita rejeições ou atrasos no pagamento causados por pequenas divergências dentro da tolerância aceite.

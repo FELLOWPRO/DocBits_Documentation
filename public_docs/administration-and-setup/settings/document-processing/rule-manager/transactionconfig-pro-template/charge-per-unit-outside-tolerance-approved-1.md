@@ -25,10 +25,10 @@ O sistema aceita o encargo por unidade aprovado e processa a transação.
 
 Como o encargo por unidade ($5.00) está fora da tolerância de 5%, mas foi aprovado, o sistema irá:
 
-1. **Accept the Approved Charge Per Unit:** o sistema aceita o valor faturado de $5.00, apesar de exceder a tolerância, porque foi aprovado.
-2. **Process the Transaction:** o sistema processa a fatura com o encargo por unidade aprovado e a quantidade:
+1. **Aceitar o encargo aprovado por unidade:** o sistema aceita o valor faturado de $5.00, apesar de exceder a tolerância, porque foi aprovado.
+2. **Processar a transação:** o sistema processa a fatura com o encargo por unidade aprovado e a quantidade:
    * **Total Charge Amount = Quantity × Approved Charge Per Unit**
    * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**
-3. **Finalize the Invoice:** o sistema processa a transação com os encargos aprovados, refletindo o total de $5,000.00.
+3. **Finalizar a fatura:** o sistema processa a transação com os encargos aprovados, refletindo o total de $5,000.00.
 
 Esta abordagem permite processar os desvios aprovados dos encargos, mantendo os registos financeiros.

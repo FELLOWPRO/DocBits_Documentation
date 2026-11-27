@@ -26,13 +26,13 @@ O sistema ajusta a quantidade e o preço unitário aos valores aprovados do pedi
 
 Como a quantidade (220 unidades) e o preço unitário ($55.00) excedem os limites de tolerância e nenhum dos desvios foi aprovado, o sistema irá:
 
-1. **Reject the Excess Quantity:** o sistema não aceita as 220 unidades faturadas e ajusta a quantidade ao pedido de compra original.
+1. **Rejeitar a quantidade excedente:** o sistema não aceita as 220 unidades faturadas e ajusta a quantidade ao pedido de compra original.
    * Adjusted Quantity = 200 units (from PO)
-2. **Reject the Invoice Unit Price:** o sistema não aceita o preço faturado de $55.00 e ajusta-o ao pedido de compra original.
+2. **Rejeitar o preço unitário da fatura:** o sistema não aceita o preço faturado de $55.00 e ajusta-o ao pedido de compra original.
    * Adjusted Unit Price = $50.00 per unit (from PO)
-3. **Recalculate the Total Amount:** o sistema calcula o total com a quantidade e o preço unitário ajustados:
+3. **Recalcular o valor total:** o sistema calcula o total com a quantidade e o preço unitário ajustados:
    * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 200 units × $50.00 per unit = $10,000.00**
-4. **Process the Invoice:** o sistema processa a fatura com o total corrigido de $10,000.00, rejeitando a quantidade excedente e o preço unitário superior.
+4. **Processar a fatura:** o sistema processa a fatura com o total corrigido de $10,000.00, rejeitando a quantidade excedente e o preço unitário superior.
 
 Esta abordagem alinha a transação com as condições originais do pedido de compra, mantendo os controlos de preço e quantidade e rejeitando os desvios não aprovados.

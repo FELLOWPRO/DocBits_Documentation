@@ -5,11 +5,11 @@
 
 ## Szenario:
 
-Sowohl die Menge als auch der Stückpreis liegen außerhalb der Toleranz, wurden jedoch genehmigt.
+Sowohl die Quantity als auch der Unit Price liegen außerhalb der Toleranz, wurden jedoch genehmigt.
 
 ## Aktion:
 
-Das System verarbeitet die Transaktion anhand der Rechnungswerte für Menge und Stückpreis und berücksichtigt gegebenenfalls erforderliche Anpassungen oder Positionszuschläge.
+Das System verarbeitet die Transaktion anhand der Rechnungswerte für Quantity und Unit Price und berücksichtigt gegebenenfalls erforderliche Anpassungen oder Positionszuschläge.
 
 ## Beispiel:
 
@@ -25,7 +25,7 @@ Das System verarbeitet die Transaktion anhand der Rechnungswerte für Menge und 
   * Quantity Tolerance: ±5%
   * Unit Price Tolerance: ±2%
 
-Sowohl die Menge (220 Einheiten) als auch der Stückpreis ($27.00) liegen außerhalb der zulässigen Toleranzgrenzen, wurden jedoch genehmigt. Das System führt folgende Schritte aus:
+Sowohl die Quantity (220 Einheiten) als auch der Unit Price ($27.00) liegen außerhalb der zulässigen Toleranzgrenzen, wurden jedoch genehmigt. Das System führt folgende Schritte aus:
 
 1. **Accept the Approved Quantity:** Das System akzeptiert die berechnete Menge von 220 Einheiten, da sie trotz Überschreitung des Toleranzbereichs genehmigt wurde.
 2. **Accept the Approved Unit Price:** Das System akzeptiert den berechneten Stückpreis von $27.00 je Einheit, da er trotz Überschreitung des Toleranzbereichs genehmigt wurde.

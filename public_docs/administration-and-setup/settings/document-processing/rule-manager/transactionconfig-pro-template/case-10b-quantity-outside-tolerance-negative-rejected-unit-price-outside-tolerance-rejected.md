@@ -5,7 +5,7 @@
 
 ## Szenario:
 
-Sowohl die Menge als auch der Stückpreis liegen außerhalb der Toleranz; keiner der Werte wurde genehmigt.
+Sowohl die Quantity als auch der Unit Price liegen außerhalb der Toleranz; keiner der Werte wurde genehmigt.
 
 ## Aktion:
 
@@ -25,14 +25,14 @@ Das System lehnt die Rechnungsdaten ab, passt die Werte an die Bestellung an und
   * Quantity Tolerance: ±5%
   * Unit Price Tolerance: ±2%
 
-Sowohl die Menge (140 Einheiten) als auch der Stückpreis ($33.00) liegen außerhalb der zulässigen Toleranzgrenzen; keiner der Werte wurde genehmigt. Das System führt folgende Schritte aus:
+Sowohl die Quantity (140 Einheiten) als auch der Unit Price ($33.00) liegen außerhalb der zulässigen Toleranzgrenzen; keiner der Werte wurde genehmigt. Das System führt folgende Schritte aus:
 
 1. **Reject the Invoice Data:** Das System akzeptiert weder die berechnete Menge noch den Stückpreis, da beide von den Toleranzgrenzen abweichen.
 2. **Adjust the Quantity:** Das System setzt die Menge auf den ursprünglichen Bestellwert.
    * Adjusted Quantity = 150 units (from PO)
 3. **Adjust the Unit Price:** Das System setzt den Stückpreis auf den ursprünglichen Wert aus der Bestellung.
    * Adjusted Unit Price = $30.00 per unit (from PO)
-4. **Recalculate the Total Amount:** Das System berechnet den Gesamtbetrag anhand der angepassten Menge und des angepassten Stückpreises neu:
+4. **Recalculate the Total Amount:** Das System berechnet den Total Amount anhand der angepassten Quantity und des angepassten Unit Price neu:
    * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 150 units × $30.00 per unit = $4,500.00**
 5. **Generate a Debit Note:** Da der ursprüngliche Rechnungsbetrag höher als der korrigierte Gesamtbetrag war, erstellt das System eine Belastungsanzeige über den zu viel berechneten Betrag.

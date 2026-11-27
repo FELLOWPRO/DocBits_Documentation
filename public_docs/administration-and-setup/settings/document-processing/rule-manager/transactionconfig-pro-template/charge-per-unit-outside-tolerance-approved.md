@@ -5,11 +5,11 @@
 
 ## Szenario:
 
-Der Zuschlag auf Kopfebene je Einheit liegt außerhalb der Toleranz, wurde jedoch genehmigt.
+Der Header Charge Per Unit liegt außerhalb der Toleranz, wurde jedoch genehmigt.
 
 ## Aktion:
 
-Das System übernimmt den genehmigten Zuschlag je Einheit in die Transaktion.
+Das System übernimmt den genehmigten Charge Per Unit in die Transaktion.
 
 ## Beispiel:
 
@@ -24,7 +24,7 @@ Das System übernimmt den genehmigten Zuschlag je Einheit in die Transaktion.
 * **Tolerance Levels:**
   * Header Charge Per Unit Tolerance: ±5%
 
-Der Zuschlag auf Kopfebene je Einheit ($3.00) überschreitet die zulässige Toleranz von 5%, wurde jedoch genehmigt. Das System führt folgende Schritte aus:
+Der Header Charge Per Unit ($3.00) überschreitet die zulässige Toleranz von 5%, wurde jedoch genehmigt. Das System führt folgende Schritte aus:
 
 1. **Accept the Approved Header Charge Per Unit:** Das System akzeptiert den berechneten Zuschlag von $3.00, da er trotz Überschreitung der Toleranzgrenze genehmigt wurde.
 2. **Process the Header Charge:** Das System verarbeitet die Rechnung anhand des genehmigten Zuschlags je Einheit und der Menge:

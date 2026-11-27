@@ -15,17 +15,17 @@ Das System akzeptiert die Rechnungswerte und berechnet den Gesamtbetrag anhand d
 
 **Purchase Order (PO):**
 
-Menge: 100 Einheiten
+Quantity: 100 units
 
-Stückpreis: $10.00 je Einheit
+Unit Price: $10.00 per unit
 
 Total Amount: $1,000.00
 
 **Invoice Received:**
 
-Menge: 101 Einheiten (Abweichung innerhalb der Toleranz: 1%)
+Quantity: 101 units — 1% above the PO value, within the configured ±2% tolerance.
 
-Stückpreis: $10.05 je Einheit (Abweichung innerhalb der Toleranz: 0.5%)
+Unit Price: $10.05 per unit — 0.5% above the PO value, within the configured ±1% tolerance.
 
 Total Amount: $1,015.05
 

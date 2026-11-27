@@ -2,7 +2,7 @@
 
 ## **Panoramica**
 
-L'impostazione **PO disable statuses** stabilisce quali stati delle righe d'ordine (PO) sono bloccati nella schermata di matching. Una riga con uno stato disabilitato configurato viene mostrata barrata e non può essere trascinata in un abbinamento. Usare l'impostazione per controllare l'idoneità al matching per il tipo di documento interessato.
+L'impostazione **PO disable statuses** stabilisce quali stati delle righe di Purchase Order (PO) sono bloccati nella schermata di matching. Una riga con uno stato disabilitato configurato viene mostrata barrata e non può essere trascinata in un abbinamento. Usare l'impostazione per controllare l'idoneità al matching per il tipo di documento interessato.
 
 ## **Passaggi di attivazione**
 
@@ -15,7 +15,7 @@ L'impostazione **PO disable statuses** stabilisce quali stati delle righe d'ordi
 
 <figure><img src="https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/po-disable-statuses-field-native-en-20261102.png" alt="Campo PO disable statuses attuale in inglese, con la freccia a discesa e il pulsante Apply"><figcaption><p>Il campo PO disable statuses e il relativo pulsante Apply. La selezione vuota mostrata qui è un esempio della configurazione di test esistente.</p></figcaption></figure>
 
-### **Come riconoscere un ordine di acquisto disabilitato**
+### **Come riconoscere un Purchase Order disabilitato**
 
 Nella [Purchase Order Matching Screen](https://docs.docbits.com/end-user-and-partner-section/end-user-section/purchase-order-matching) una riga il cui stato è disabilitato è contrassegnata da una barratura e non può essere trascinata in un abbinamento. Quando si verifica perché la riga non è disponibile, controllare lo stato della riga e l'elenco degli stati disabilitati del tipo di documento.
 

@@ -23,7 +23,7 @@ El sistema acepta el cargo por unidad y aplica los cargos aprobados, procesando 
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±5%
 
-Dado que el cargo por unidad ($5.00) está fuera del rango de tolerancia aceptable del 5 % pero ha sido aprobado, el sistema:
+Dado que el Charge Per Unit ($5.00) está fuera del rango de tolerancia aceptable del 5 % pero ha sido aprobado, el sistema:
 
 1. **Aceptar el cargo aprobado por unidad:** El sistema acepta el cargo facturado por unidad de $5.00 ya que ha sido aprobado a pesar de exceder el límite de tolerancia.
 2. **Procesar la Transacción:** El sistema procesa la factura utilizando el cargo aprobado por unidad y la cantidad:

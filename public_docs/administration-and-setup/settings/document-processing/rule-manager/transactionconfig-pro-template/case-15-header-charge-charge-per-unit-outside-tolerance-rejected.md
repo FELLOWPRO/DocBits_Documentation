@@ -23,7 +23,7 @@ El sistema ajusta el recargo de cabecera para que coincida con la orden de compr
 * **Tolerance Levels:**
   * Header Charge Per Unit Tolerance: ±5%
 
-Dado que el cargo por unidad ($5.00) excede el rango de tolerancia aceptable del 5% y no ha sido aprobado, el sistema:
+Dado que el Header Charge Per Unit ($5.00) excede el rango de tolerancia aceptable del 5% y no ha sido aprobado, el sistema:
 
 1. **Rechazar el recargo de cabecera facturado por unidad:** El sistema no acepta el recargo de cabecera facturado por unidad de $5.00 debido a que la variación excede el límite de tolerancia.
 2. **Ajustar el recargo de cabecera por unidad:** El sistema ajusta el cargo por unidad para que coincida con la orden de compra original o el cargo aprobado por unidad:

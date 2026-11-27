@@ -13,23 +13,23 @@ Das System übernimmt den Zuschlag auf Kopfebene aus der Rechnung ohne Anpassung
 
 ## Beispiel:
 
-* **Bestellung (PO):**
-  * Kopfzuschlag je Einheit: $3.50
-  * Menge: 1,200 Einheiten
-  * Kopfzuschlagsgesamtbetrag: $4,200.00
-* **Eingegangene Rechnung:**
-  * Kopfzuschlag je Einheit: $3.55 (Abweichung innerhalb der Toleranz: 1.43%)
-  * Menge: 1,200 Einheiten
-  * Kopfzuschlagsgesamtbetrag: $4,260.00
-* **Toleranzgrenzen:**
-  * Toleranz für Kopfzuschläge je Einheit: ±2%
+* **Purchase Order (PO):**
+  * Header Charge Per Unit: $3.50
+  * Quantity: 1,200 units
+  * Total Header Charge Amount: $4,200.00
+* **Invoice Received:**
+  * Header Charge Per Unit: $3.55 — 1.43% above the PO value, within the configured ±2% tolerance.
+  * Quantity: 1,200 units
+  * Total Header Charge Amount: $4,260.00
+* **Tolerance Levels:**
+  * Header Charge Per Unit Tolerance: ±2%
 
 Der Zuschlag auf Kopfebene je Einheit ($3.55) liegt im Vergleich zur Bestellung innerhalb der zulässigen Toleranz von 2%. Das System führt folgende Schritte aus:
 
-1. **Zuschlag auf Kopfebene je Einheit akzeptieren:** Das System akzeptiert den berechneten Zuschlag von $3.55, da er innerhalb der festgelegten Toleranzgrenze liegt.
-2. **Zuschlag auf Kopfebene verarbeiten:** Das System verarbeitet die Rechnung mit dem gesamten Kopfzuschlag, der sich aus dem berechneten Zuschlag je Einheit und der Menge ergibt:
-   * **Kopfzuschlagsgesamtbetrag = Menge × Kopfzuschlag je Einheit**
-   * **Kopfzuschlagsgesamtbetrag = 1,200 Einheiten × $3.55 = $4,260.00**
-3. **Rechnung abschließen:** Das System verarbeitet die Transaktion ohne Anpassungen und übernimmt die Rechnung unverändert.
+1. **Accept the Header Charge Per Unit:** Das System akzeptiert den berechneten Zuschlag von $3.55, da er innerhalb der festgelegten Toleranzgrenze liegt.
+2. **Process the Header Charge:** Das System verarbeitet die Rechnung mit dem gesamten Kopfzuschlag, der sich aus dem berechneten Zuschlag je Einheit und der Menge ergibt:
+   * **Total Header Charge Amount = Quantity × Header Charge Per Unit**
+   * **Total Header Charge Amount = 1,200 units × $3.55 = $4,260.00**
+3. **Finalize the Invoice:** Das System verarbeitet die Transaktion ohne Anpassungen und übernimmt die Rechnung unverändert.
 
 So lassen sich Transaktionen mit Kopfzuschlägen innerhalb der zulässigen Toleranz ohne unnötige Ablehnungen oder Verzögerungen verarbeiten.

@@ -26,16 +26,16 @@ Das System lehnt den Rechnungsstückpreis ab, passt ihn an die Bestellung an und
 
 Da die Menge (198 Einheiten) innerhalb des zulässigen Toleranzbereichs liegt, der Stückpreis ($17.00) jedoch die zulässige Toleranz überschreitet und nicht genehmigt ist, führt das System Folgendes aus:
 
-1. **Rechnungsstückpreis ablehnen:** Das System akzeptiert den berechneten Stückpreis von $17.00 nicht.
-2. **Stückpreis anpassen:** Das System passt den Stückpreis an den ursprünglichen Stückpreis der Bestellung an.
-   * Adjusted Unit Price = $15.00 (aus der Bestellung)
-3. **Korrigierten Gesamtbetrag berechnen:** Mit dem angepassten Stückpreis berechnet das System den Gesamtbetrag neu.
+1. **Reject the Invoice Unit Price:** Das System akzeptiert den berechneten Stückpreis von $17.00 nicht.
+2. **Adjust the Unit Price:** Das System passt den Stückpreis an den ursprünglichen Stückpreis der Bestellung an.
+   * Adjusted Unit Price = $15.00 (from PO)
+3. **Calculate the Corrected Total Amount:** Mit dem angepassten Stückpreis berechnet das System den Gesamtbetrag neu.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**
-4. **Belastungsanzeige erstellen:** Das System erstellt eine Belastungsanzeige für die Differenz aus der zu hohen Berechnung.
+4. **Generate a Debit Note:** Das System erstellt eine Belastungsanzeige für die Differenz aus der zu hohen Berechnung.
    * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
    * **Debit Note Amount = $3,366.00 - $2,970.00 = $396.00**
    * Diese Belastungsanzeige entspricht dem vom Lieferanten zu viel berechneten Betrag.
-5. **Rechnung verarbeiten:** Das System verarbeitet die Rechnung mit dem korrigierten Gesamtbetrag von $2,970.00 und erstellt eine Belastungsanzeige über $396.00, um die zu hohe Berechnung auszugleichen.
+5. **Process the Invoice:** Das System verarbeitet die Rechnung mit dem korrigierten Gesamtbetrag von $2,970.00 und erstellt eine Belastungsanzeige über $396.00, um die zu hohe Berechnung auszugleichen.
 
 So werden zu hohe Berechnungen korrigiert, die Transaktion an die Bedingungen der Bestellung angeglichen und die finanziellen Interessen des Unternehmens geschützt.

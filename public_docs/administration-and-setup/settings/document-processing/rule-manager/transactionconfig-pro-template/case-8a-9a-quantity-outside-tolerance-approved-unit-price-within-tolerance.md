@@ -14,23 +14,23 @@ El sistema acepta la cantidad aprobada y el precio unitario según la factura y 
 
 * **Purchase Order (PO):**
   * Quantity: 150 units
-  * Precio unitario: $12.00 por unidad
+  * Unit Price: $12.00 per unit
   * Total Amount: $1,800.00
 * **Invoice Received:**
-  * Cantidad: 160 unidades (fuera de tolerancia del 6.67% pero aprobada)
-  * Precio unitario: $12.00 por unidad (dentro de la tolerancia)
+  * Quantity: 160 units — 6.67% above the PO value, outside the configured ±5% tolerance; approved.
+  * Unit Price: $12.00 per unit (within tolerance)
   * Total Amount: $1,920.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Tolerancia del precio unitario: ±2%
+  * Unit Price Tolerance: ±2%
 
 Dado que la cantidad (160 unidades) excede el límite de tolerancia aceptable pero ha sido aprobada, y el precio unitario ($12.00) está dentro del rango aceptable, el sistema:
 
-1. **Aceptar la cantidad aprobada:** El sistema reconoce que la cantidad ha sido aprobada a pesar de estar fuera del rango de tolerancia normal.
-2. **Aceptar el Precio Unitario:** El precio unitario de $12.00 por unidad está dentro de la tolerancia aceptable, por lo que se acepta como facturado.
-3. **Procesar la transacción:** El sistema calcula el monto total utilizando la cantidad aprobada y el precio unitario:
-   * **Monto total = Cantidad × Precio unitario**
-   * **Monto total = 160 unidades × $12.00 por unidad = $1,920.00**
-4. **Finalizar la factura:** El sistema procesa la factura con el monto total de $1,920.00, reflejando la cantidad aprobada y el precio unitario aceptado.
+1. **Accept the Approved Quantity:** El sistema reconoce que la cantidad ha sido aprobada a pesar de estar fuera del rango de tolerancia normal.
+2. **Accept the Unit Price:** El precio unitario de $12.00 por unidad está dentro de la tolerancia aceptable, por lo que se acepta como facturado.
+3. **Process the Transaction:** El sistema calcula el monto total utilizando la cantidad aprobada y el precio unitario:
+   * **Total Amount = Quantity × Unit Price**
+   * **Total Amount = 160 units × $12.00 per unit = $1,920.00**
+4. **Finalize the Invoice:** El sistema procesa la factura con el monto total de $1,920.00, reflejando la cantidad aprobada y el precio unitario aceptado.
 
 Este enfoque permite que el sistema se adapte a las variaciones de cantidad aprobadas y, al mismo tiempo, garantiza que el precio unitario se mantenga dentro del rango esperado, lo que facilita el procesamiento de transacciones sin problemas.

@@ -13,27 +13,27 @@ El sistema ajusta el recargo de cabecera para que coincida con la orden de compr
 ## Ejemplo:
 
 * **Purchase Order (PO):**
-  * Recargo de cabecera por unidad: $4.00
+  * Header Charge Per Unit: $4.00
   * Quantity: 1,500 units
-  * Monto total del recargo de cabecera: $6,000.00
+  * Total Header Charge Amount: $6,000.00
 * **Invoice Received:**
-  * Recargo de cabecera por unidad: $5.00 (fuera de la tolerancia del 25%, rechazado)
+  * Header Charge Per Unit: $5.00 — 25% above the PO value, outside the configured ±5% tolerance; rejected.
   * Quantity: 1,500 units
-  * Monto total del recargo de cabecera: $7,500.00
+  * Total Header Charge Amount: $7,500.00
 * **Tolerance Levels:**
-  * Tolerancia del recargo por unidad del encabezado: ±5%
+  * Header Charge Per Unit Tolerance: ±5%
 
 Dado que el cargo por unidad ($5.00) excede el rango de tolerancia aceptable del 5% y no ha sido aprobado, el sistema:
 
-1. **Rechazar el recargo de cabecera facturado por unidad:** El sistema no acepta el recargo de cabecera facturado por unidad de $5.00 debido a que la variación excede el límite de tolerancia.
-2. **Ajustar el recargo de cabecera por unidad:** El sistema ajusta el cargo por unidad para que coincida con la orden de compra original o el cargo aprobado por unidad:
-   * Recargo de cabecera ajustado por unidad = $4.00 (desde PO)
-3. **Recalcular el monto total del recargo de cabecera:** El sistema vuelve a calcular el monto total del cargo en función del cargo ajustado por unidad:
-   * **Monto total corregido del recargo de cabecera = Cantidad × Recargo de cabecera ajustado por unidad**
-   * **Monto total corregido del recargo de cabecera = 1,500 unidades × $4.00 = $6,000.00**
-4. **Generar una nota de crédito:** Dado que el total de la factura original era mayor que el total corregido, el sistema genera una nota de crédito por el monto cobrado de más:
-   * **Monto de la nota de crédito = Total de la factura original - Monto total corregido del recargo de cabecera**
-   * **Monto de la nota de crédito = $7,500.00 - $6,000.00 = $1,500.00**
-5. **Procesar la factura:** El sistema procesa la factura con el monto de cargo total corregido de $6,000.00 y emite una nota de crédito por $1,500.00 para contabilizar el monto cobrado de más.
+1. **Reject the Invoiced Header Charge Per Unit:** El sistema no acepta el recargo de cabecera facturado por unidad de $5.00 debido a que la variación excede el límite de tolerancia.
+2. **Adjust the Header Charge Per Unit:** El sistema ajusta el cargo por unidad para que coincida con la orden de compra original o el cargo aprobado por unidad:
+   * Adjusted Header Charge Per Unit = $4.00 (from PO)
+3. **Recalculate the Total Header Charge Amount:** El sistema vuelve a calcular el monto total del cargo en función del cargo ajustado por unidad:
+   * **Corrected Total Header Charge Amount = Quantity × Adjusted Header Charge Per Unit**
+   * **Corrected Total Header Charge Amount = 1,500 units × $4.00 = $6,000.00**
+4. **Generate a Credit Note:** Dado que el total de la factura original era mayor que el total corregido, el sistema genera una nota de crédito por el monto cobrado de más:
+   * **Credit Note Amount = Original Invoice Total - Corrected Total Header Charge Amount**
+   * **Credit Note Amount = $7,500.00 - $6,000.00 = $1,500.00**
+5. **Process the Invoice:** El sistema procesa la factura con el monto de cargo total corregido de $6,000.00 y emite una nota de crédito por $1,500.00 para contabilizar el monto cobrado de más.
 
 Este enfoque garantiza que la transacción esté alineada con los términos originales de la orden de compra, manteniendo un procesamiento financiero preciso y corrigiendo cualquier sobrecargo.

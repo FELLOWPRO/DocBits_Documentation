@@ -13,22 +13,22 @@ El sistema acepta el cargo por unidad y aplica los cargos aprobados, procesando 
 ## Ejemplo:
 
 * **Purchase Order (PO):**
-  * Cargo por unidad: $4.50
+  * Charge Per Unit: $4.50
   * Quantity: 1,000 units
   * Total Charge Amount: $4,500.00
 * **Invoice Received:**
-  * Cargo por unidad: $5.00 (fuera de la tolerancia del 11.11%, aprobada)
+  * Charge Per Unit: $5.00 — 11.11% above the PO value, outside the configured ±5% tolerance; approved.
   * Quantity: 1,000 units
   * Total Charge Amount: $5,000.00
 * **Tolerance Levels:**
-  * Tolerancia del recargo por unidad: ±5%
+  * Charge Per Unit Tolerance: ±5%
 
 Dado que el cargo por unidad ($5.00) está fuera del rango de tolerancia aceptable del 5 % pero ha sido aprobado, el sistema:
 
-1. **Aceptar el cargo aprobado por unidad:** El sistema acepta el cargo facturado por unidad de $5.00 ya que ha sido aprobado a pesar de exceder el límite de tolerancia.
-2. **Procesar la Transacción:** El sistema procesa la factura utilizando el cargo aprobado por unidad y la cantidad:
-   * **Monto total del cargo = Cantidad × Cargo aprobado por unidad**
-   * **Monto total del cargo = 1,000 unidades × $5.00 = $5,000.00**
-3. **Finalizar Factura:** El sistema procesa la transacción con los cargos aprobados, reflejando el monto total de $5,000.00.
+1. **Accept the Approved Charge Per Unit:** El sistema acepta el cargo facturado por unidad de $5.00 ya que ha sido aprobado a pesar de exceder el límite de tolerancia.
+2. **Process the Transaction:** El sistema procesa la factura utilizando el cargo aprobado por unidad y la cantidad:
+   * **Total Charge Amount = Quantity × Approved Charge Per Unit**
+   * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**
+3. **Finalize the Invoice:** El sistema procesa la transacción con los cargos aprobados, reflejando el monto total de $5,000.00.
 
 Este enfoque garantiza que el sistema pueda adaptarse a las variaciones aprobadas en los cargos, lo que permite flexibilidad y al mismo tiempo mantiene registros financieros precisos.

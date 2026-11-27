@@ -13,22 +13,22 @@ El sistema procesa el cargo aprobado por unidad, aplicándolo a la transacción.
 ## Ejemplo:
 
 * **Purchase Order (PO):**
-  * Recargo de cabecera por unidad: $2.50
+  * Header Charge Per Unit: $2.50
   * Quantity: 2,000 units
-  * Monto total del recargo de cabecera: $5,000.00
+  * Total Header Charge Amount: $5,000.00
 * **Invoice Received:**
-  * Recargo de cabecera por unidad: $3.00 (fuera de la tolerancia del 20%, aprobado)
+  * Header Charge Per Unit: $3.00 — 20% above the PO value, outside the configured ±5% tolerance; approved.
   * Quantity: 2,000 units
-  * Monto total del recargo de cabecera: $6,000.00
+  * Total Header Charge Amount: $6,000.00
 * **Tolerance Levels:**
-  * Tolerancia del recargo por unidad del encabezado: ±5%
+  * Header Charge Per Unit Tolerance: ±5%
 
 Dado que el cargo por unidad ($3.00) excede el rango de tolerancia aceptable del 5% pero ha sido aprobado, el sistema:
 
-1. **Aceptar el recargo de cabecera aprobado por unidad:** El sistema acepta el recargo de cabecera facturado por unidad de $3.00 ya que ha sido aprobado a pesar de exceder el límite de tolerancia.
-2. **Procesar el Cargo de Cabecera:** El sistema procesa la factura utilizando el cargo aprobado por unidad y la cantidad:
-   * **Monto total del recargo de cabecera = Cantidad × Recargo de cabecera aprobado por unidad**
-   * **Monto total del recargo de cabecera = 2,000 unidades × $3.00 = $6,000.00**
-3. **Finalizar Factura:** El sistema procesa la transacción con los cargos aprobados, reflejando el monto total de $6,000.00.
+1. **Accept the Approved Header Charge Per Unit:** El sistema acepta el recargo de cabecera facturado por unidad de $3.00 ya que ha sido aprobado a pesar de exceder el límite de tolerancia.
+2. **Process the Header Charge:** El sistema procesa la factura utilizando el cargo aprobado por unidad y la cantidad:
+   * **Total Header Charge Amount = Quantity × Approved Header Charge Per Unit**
+   * **Total Header Charge Amount = 2,000 units × $3.00 = $6,000.00**
+3. **Finalize the Invoice:** El sistema procesa la transacción con los cargos aprobados, reflejando el monto total de $6,000.00.
 
 Este enfoque permite que el sistema se adapte a las variaciones aprobadas en los cargos de encabezado, lo que garantiza que la transacción se procese de acuerdo con la aprobación y al mismo tiempo se mantengan registros financieros precisos.

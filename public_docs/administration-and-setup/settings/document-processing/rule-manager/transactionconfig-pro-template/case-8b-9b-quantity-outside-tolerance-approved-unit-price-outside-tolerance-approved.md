@@ -14,24 +14,24 @@ El sistema procesa la transacción utilizando los valores de la factura tanto pa
 
 * **Purchase Order (PO):**
   * Quantity: 200 units
-  * Precio unitario: $25.00 por unidad
+  * Unit Price: $25.00 per unit
   * Total Amount: $5,000.00
 * **Invoice Received:**
-  * Cantidad: 220 unidades (fuera de tolerancia del 10%, aprobada)
-  * Precio unitario: $27.00 por unidad (fuera de la tolerancia del 8%, aprobado)
+  * Quantity: 220 units — 10% above the PO value, outside the configured ±5% tolerance; approved.
+  * Unit Price: $27.00 per unit — 8% above the PO value, outside the configured ±2% tolerance; approved.
   * Total Amount: $5,940.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Tolerancia del precio unitario: ±2%
+  * Unit Price Tolerance: ±2%
 
 Dado que tanto la cantidad (220 unidades) como el precio unitario ($27.00) están fuera de los límites de tolerancia aceptables pero han sido aprobados, el sistema:
 
-1. **Aceptar la Cantidad Aprobada:** El sistema acepta la cantidad facturada de 220 unidades ya que ha sido aprobada a pesar de estar fuera del rango de tolerancia.
-2. **Aceptar el precio unitario aprobado:** El sistema acepta el precio unitario facturado de $27.00 por unidad ya que ha sido aprobado a pesar de estar fuera del rango de tolerancia.
-3. **Calcular el monto total:** El sistema calcula el monto total en función de los valores de factura aprobados:
-   * **Monto total = Cantidad × Precio unitario**
-   * **Monto total = 220 unidades × $27.00 por unidad = $5,940.00**
-4. **Aplicar ajustes o cargos de línea necesarios:** Si corresponde, el sistema puede aplicar cualquier cargo o ajuste de línea adicional según las políticas de la organización para el manejo de las variaciones aprobadas.
-5. **Procesar la factura:** El sistema procesa la factura utilizando los valores aprobados tanto para cantidad como para precio unitario, finalizando la transacción por un monto total de $5,940.00.
+1. **Accept the Approved Quantity:** El sistema acepta la cantidad facturada de 220 unidades ya que ha sido aprobada a pesar de estar fuera del rango de tolerancia.
+2. **Accept the Approved Unit Price:** El sistema acepta el precio unitario facturado de $27.00 por unidad ya que ha sido aprobado a pesar de estar fuera del rango de tolerancia.
+3. **Calculate the Total Amount:** El sistema calcula el monto total en función de los valores de factura aprobados:
+   * **Total Amount = Quantity × Unit Price**
+   * **Total Amount = 220 units × $27.00 per unit = $5,940.00**
+4. **Apply Necessary Adjustments or Line Charges:** Si corresponde, el sistema puede aplicar cualquier cargo o ajuste de línea adicional según las políticas de la organización para el manejo de las variaciones aprobadas.
+5. **Process the Invoice:** El sistema procesa la factura utilizando los valores aprobados tanto para cantidad como para precio unitario, finalizando la transacción por un monto total de $5,940.00.
 
 Este enfoque garantiza que la transacción se procese de acuerdo con las variaciones aprobadas, lo que permite flexibilidad y al mismo tiempo mantiene registros financieros precisos.

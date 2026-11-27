@@ -14,29 +14,29 @@ El sistema rechaza los datos de la factura, ajusta los valores para que coincida
 
 * **Purchase Order (PO):**
   * Quantity: 150 units
-  * Precio unitario: $30.00 por unidad
+  * Unit Price: $30.00 per unit
   * Total Amount: $4,500.00
 * **Invoice Received:**
-  * Cantidad: 140 unidades (fuera de tolerancia del -6.67%, rechazada)
-  * Precio unitario: $33.00 por unidad (fuera de la tolerancia del 10%, rechazado)
+  * Quantity: 140 units — 6.67% below the PO value, outside the configured ±5% tolerance; rejected.
+  * Unit Price: $33.00 per unit — 10% above the PO value, outside the configured ±2% tolerance; rejected.
   * Total Amount: $4,620.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Tolerancia del precio unitario: ±2%
+  * Unit Price Tolerance: ±2%
 
 Dado que tanto la cantidad (140 unidades) como el precio unitario ($33.00) están fuera de los límites de tolerancia aceptables y ninguno ha sido aprobado, el sistema:
 
 1. **Rechazar los datos de la factura:** El sistema no acepta la cantidad facturada o el precio unitario debido a su desviación de los límites de tolerancia.
 2. **Ajustar la cantidad:** El sistema ajusta la cantidad para que coincida con la cantidad de la orden de compra original.
-   * Cantidad ajustada = 150 unidades (desde PO)
+   * Adjusted Quantity = 150 units (from PO)
 3. **Ajustar el precio unitario:** El sistema ajusta el precio unitario para que coincida con el precio unitario de la orden de compra original.
-   * Precio unitario ajustado = $30.00 por unidad (desde PO)
+   * Adjusted Unit Price = $30.00 per unit (from PO)
 4. **Recalcular el monto total:** El sistema vuelve a calcular el monto total utilizando la cantidad ajustada y el precio unitario:
-   * **Monto total corregido = Cantidad ajustada × Precio unitario ajustado**
-   * **Monto total corregido = 150 unidades × $30.00 por unidad = $4,500.00**
+   * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
+   * **Corrected Total Amount = 150 units × $30.00 per unit = $4,500.00**
 5. **Generar una nota de débito:** Dado que el total de la factura original era mayor que el total corregido, el sistema genera una nota de débito por el monto cobrado de más.
-   * **Monto de la nota de débito = Total de la factura original - Monto total corregido**
-   * **Monto de la Nota de Débito = $4,620.00 - $4,500.00 = $120.00**
+   * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
+   * **Debit Note Amount = $4,620.00 - $4,500.00 = $120.00**
 6. **Procesar la Factura:** El sistema procesa la factura con el monto total corregido de $4,500.00 y emite una nota de débito por $120.00 para compensar el monto cobrado de más.
 
 Este enfoque garantiza que la transacción financiera se corrija para que coincida con los términos de la orden de compra, manteniendo prácticas de facturación precisas y justas.

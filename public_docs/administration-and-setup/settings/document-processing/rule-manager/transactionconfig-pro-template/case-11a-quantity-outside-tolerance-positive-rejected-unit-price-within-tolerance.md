@@ -14,25 +14,25 @@ El sistema ajusta la cantidad al nivel aprobado, mantiene el precio unitario y p
 
 * **Purchase Order (PO):**
   * Quantity: 100 units
-  * Precio unitario: $8.00 por unidad
+  * Unit Price: $8.00 per unit
   * Total Amount: $800.00
 * **Invoice Received:**
-  * Cantidad: 110 unidades (fuera de tolerancia del 10%, rechazadas)
-  * Precio unitario: $8.00 por unidad (dentro de la tolerancia)
+  * Quantity: 110 units — 10% above the PO value, outside the configured ±5% tolerance; rejected.
+  * Unit Price: $8.00 per unit (within tolerance)
   * Total Amount: $880.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Tolerancia del precio unitario: ±2%
+  * Unit Price Tolerance: ±2%
 
 Dado que la cantidad (110 unidades) excede el límite de tolerancia aceptable (variación positiva del 10%) y no está aprobada, pero el precio unitario ($8.00) está dentro de la tolerancia, el sistema:
 
 1. **Rechazar la cantidad en exceso:** El sistema rechaza la cantidad que excede el nivel de tolerancia aprobado.
 2. **Ajustar la cantidad:** El sistema ajusta la cantidad para que coincida con el nivel aprobado especificado en la orden de compra.
-   * Cantidad aprobada = 100 unidades (desde PO)
+   * Approved Quantity = 100 units (from PO)
 3. **Mantener el precio unitario:** El precio unitario de $8.00 por unidad está dentro de la tolerancia y permanece sin cambios.
 4. **Recalcular el monto total:** El sistema calcula el monto total utilizando la cantidad aprobada y el precio unitario aceptado:
-   * **Monto total = Cantidad aprobada × Precio unitario**
-   * **Monto total = 100 unidades × $8.00 por unidad = $800.00**
+   * **Total Amount = Approved Quantity × Unit Price**
+   * **Total Amount = 100 units × $8.00 per unit = $800.00**
 5. **Procesar la factura:** El sistema procesa la factura con el monto total ajustado de $800.00, reflejando solo la cantidad aprobada y el precio unitario. La cantidad sobrante de 10 unidades se rechaza y no se factura.
 
 Este enfoque garantiza que el importe facturado se alinee con los términos acordados en la orden de compra, incluso cuando el proveedor intenta facturar una cantidad excesiva.

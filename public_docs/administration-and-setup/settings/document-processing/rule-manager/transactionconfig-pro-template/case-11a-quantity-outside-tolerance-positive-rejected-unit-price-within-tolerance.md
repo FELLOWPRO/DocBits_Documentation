@@ -13,27 +13,27 @@ Das System setzt die Menge auf den genehmigten Wert, behält den Stückpreis bei
 
 ## Beispiel:
 
-* **Bestellung (PO):**
-  * Menge: 100 Einheiten
-  * Stückpreis: $8.00 je Einheit
-  * Gesamtbetrag: $800.00
-* **Eingegangene Rechnung:**
-  * Menge: 110 Einheiten (Abweichung außerhalb der Toleranz: 10%, abgelehnt)
-  * Stückpreis: $8.00 je Einheit (innerhalb der Toleranz)
-  * Gesamtbetrag: $880.00
-* **Toleranzgrenzen:**
-  * Mengentoleranz: ±5%
-  * Stückpreistoleranz: ±2%
+* **Purchase Order (PO):**
+  * Quantity: 100 units
+  * Unit Price: $8.00 per unit
+  * Total Amount: $800.00
+* **Invoice Received:**
+  * Quantity: 110 units — 10% above the PO value, outside the configured ±5% tolerance; rejected.
+  * Unit Price: $8.00 per unit (within tolerance)
+  * Total Amount: $880.00
+* **Tolerance Levels:**
+  * Quantity Tolerance: ±5%
+  * Unit Price Tolerance: ±2%
 
 Die Menge (110 Einheiten) überschreitet die zulässige Toleranzgrenze (positive Abweichung von 10%) und wurde nicht genehmigt. Der Stückpreis ($8.00) liegt innerhalb der Toleranz. Das System führt folgende Schritte aus:
 
-1. **Mehrmenge ablehnen:** Das System lehnt die Menge ab, die über die genehmigte Toleranzgrenze hinausgeht.
-2. **Menge anpassen:** Das System setzt die Menge auf den genehmigten Wert aus der Bestellung.
-   * Genehmigte Menge = 100 Einheiten (aus der Bestellung)
-3. **Stückpreis beibehalten:** Der Stückpreis von $8.00 je Einheit liegt innerhalb der Toleranz und bleibt unverändert.
-4. **Gesamtbetrag neu berechnen:** Das System berechnet den Gesamtbetrag anhand der genehmigten Menge und des akzeptierten Stückpreises:
-   * **Gesamtbetrag = Genehmigte Menge × Stückpreis**
-   * **Gesamtbetrag = 100 Einheiten × $8.00 je Einheit = $800.00**
-5. **Rechnung verarbeiten:** Das System verarbeitet die Rechnung mit dem angepassten Gesamtbetrag von $800.00. Berücksichtigt werden nur die genehmigte Menge und der genehmigte Stückpreis. Die Mehrmenge von 10 Einheiten wird abgelehnt und nicht berechnet.
+1. **Reject the Excess Quantity:** Das System lehnt die Menge ab, die über die genehmigte Toleranzgrenze hinausgeht.
+2. **Adjust the Quantity:** Das System setzt die Menge auf den genehmigten Wert aus der Bestellung.
+   * Approved Quantity = 100 units (from PO)
+3. **Maintain the Unit Price:** Der Stückpreis von $8.00 je Einheit liegt innerhalb der Toleranz und bleibt unverändert.
+4. **Recalculate the Total Amount:** Das System berechnet den Gesamtbetrag anhand der genehmigten Menge und des akzeptierten Stückpreises:
+   * **Total Amount = Approved Quantity × Unit Price**
+   * **Total Amount = 100 units × $8.00 per unit = $800.00**
+5. **Process the Invoice:** Das System verarbeitet die Rechnung mit dem angepassten Gesamtbetrag von $800.00. Berücksichtigt werden nur die genehmigte Menge und der genehmigte Stückpreis. Die Mehrmenge von 10 Einheiten wird abgelehnt und nicht berechnet.
 
 Damit entspricht der Rechnungsbetrag den vereinbarten Bestellbedingungen, auch wenn der Lieferant eine höhere Menge in Rechnung stellt.

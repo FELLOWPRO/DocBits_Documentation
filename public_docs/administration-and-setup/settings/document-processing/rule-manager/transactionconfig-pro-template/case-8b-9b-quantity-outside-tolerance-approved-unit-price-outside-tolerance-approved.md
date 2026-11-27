@@ -5,34 +5,34 @@
 
 ## Szenario:
 
-Sowohl die Menge als auch der Stückpreis liegen außerhalb der Toleranz, wurden jedoch genehmigt.
+Sowohl die Quantity als auch der Unit Price liegen außerhalb der Toleranz, wurden jedoch genehmigt.
 
 ## Aktion:
 
-Das System verarbeitet die Transaktion anhand der Rechnungswerte für Menge und Stückpreis und berücksichtigt gegebenenfalls erforderliche Anpassungen oder Positionszuschläge.
+Das System verarbeitet die Transaktion anhand der Rechnungswerte für Quantity und Unit Price und berücksichtigt gegebenenfalls erforderliche Anpassungen oder Positionszuschläge.
 
 ## Beispiel:
 
-* **Bestellung (PO):**
-  * Menge: 200 Einheiten
-  * Stückpreis: $25.00 je Einheit
-  * Gesamtbetrag: $5,000.00
-* **Eingegangene Rechnung:**
-  * Menge: 220 Einheiten (Abweichung außerhalb der Toleranz: 10%, genehmigt)
-  * Stückpreis: $27.00 je Einheit (Abweichung außerhalb der Toleranz: 8%, genehmigt)
-  * Gesamtbetrag: $5,940.00
-* **Toleranzgrenzen:**
-  * Mengentoleranz: ±5%
-  * Stückpreistoleranz: ±2%
+* **Purchase Order (PO):**
+  * Quantity: 200 units
+  * Unit Price: $25.00 per unit
+  * Total Amount: $5,000.00
+* **Invoice Received:**
+  * Quantity: 220 units — 10% above the PO value, outside the configured ±5% tolerance; approved.
+  * Unit Price: $27.00 per unit — 8% above the PO value, outside the configured ±2% tolerance; approved.
+  * Total Amount: $5,940.00
+* **Tolerance Levels:**
+  * Quantity Tolerance: ±5%
+  * Unit Price Tolerance: ±2%
 
-Sowohl die Menge (220 Einheiten) als auch der Stückpreis ($27.00) liegen außerhalb der zulässigen Toleranzgrenzen, wurden jedoch genehmigt. Das System führt folgende Schritte aus:
+Sowohl die Quantity (220 Einheiten) als auch der Unit Price ($27.00) liegen außerhalb der zulässigen Toleranzgrenzen, wurden jedoch genehmigt. Das System führt folgende Schritte aus:
 
-1. **Genehmigte Menge akzeptieren:** Das System akzeptiert die berechnete Menge von 220 Einheiten, da sie trotz Überschreitung des Toleranzbereichs genehmigt wurde.
-2. **Genehmigten Stückpreis akzeptieren:** Das System akzeptiert den berechneten Stückpreis von $27.00 je Einheit, da er trotz Überschreitung des Toleranzbereichs genehmigt wurde.
-3. **Gesamtbetrag berechnen:** Das System berechnet den Gesamtbetrag anhand der genehmigten Rechnungswerte:
-   * **Gesamtbetrag = Menge × Stückpreis**
-   * **Gesamtbetrag = 220 Einheiten × $27.00 je Einheit = $5,940.00**
-4. **Erforderliche Anpassungen oder Positionszuschläge berücksichtigen:** Je nach den Organisationsrichtlinien zum Umgang mit genehmigten Abweichungen kann das System zusätzliche Positionszuschläge oder Anpassungen berücksichtigen.
-5. **Rechnung verarbeiten:** Das System verarbeitet die Rechnung mit den genehmigten Werten für Menge und Stückpreis und schließt die Transaktion mit dem Gesamtbetrag von $5,940.00 ab.
+1. **Accept the Approved Quantity:** Das System akzeptiert die berechnete Menge von 220 Einheiten, da sie trotz Überschreitung des Toleranzbereichs genehmigt wurde.
+2. **Accept the Approved Unit Price:** Das System akzeptiert den berechneten Stückpreis von $27.00 je Einheit, da er trotz Überschreitung des Toleranzbereichs genehmigt wurde.
+3. **Calculate the Total Amount:** Das System berechnet den Gesamtbetrag anhand der genehmigten Rechnungswerte:
+   * **Total Amount = Quantity × Unit Price**
+   * **Total Amount = 220 units × $27.00 per unit = $5,940.00**
+4. **Apply Necessary Adjustments or Line Charges:** Je nach den Organisationsrichtlinien zum Umgang mit genehmigten Abweichungen kann das System zusätzliche Positionszuschläge oder Anpassungen berücksichtigen.
+5. **Process the Invoice:** Das System verarbeitet die Rechnung mit den genehmigten Werten für Menge und Stückpreis und schließt die Transaktion mit dem Gesamtbetrag von $5,940.00 ab.
 
 Damit wird die Transaktion entsprechend den genehmigten Abweichungen flexibel verarbeitet und die Finanzdaten bleiben korrekt.

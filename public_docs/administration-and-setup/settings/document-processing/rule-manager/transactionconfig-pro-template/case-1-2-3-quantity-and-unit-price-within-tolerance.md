@@ -13,40 +13,40 @@ Das System akzeptiert die Rechnungswerte und berechnet den Gesamtbetrag anhand d
 
 ## Beispiel:
 
-**Bestellung (PO):**
+**Purchase Order (PO):**
 
-Menge: 100 Einheiten
+Quantity: 100 units
 
-Stückpreis: $10.00 je Einheit
+Unit Price: $10.00 per unit
 
-Gesamtbetrag: $1,000.00
+Total Amount: $1,000.00
 
-**Eingegangene Rechnung:**
+**Invoice Received:**
 
-Menge: 101 Einheiten (Abweichung innerhalb der Toleranz: 1%)
+Quantity: 101 units — 1% above the PO value, within the configured ±2% tolerance.
 
-Stückpreis: $10.05 je Einheit (Abweichung innerhalb der Toleranz: 0.5%)
+Unit Price: $10.05 per unit — 0.5% above the PO value, within the configured ±1% tolerance.
 
-Gesamtbetrag: $1,015.05
+Total Amount: $1,015.05
 
-**Toleranzgrenzen:**
+**Tolerance Levels:**
 
-Mengentoleranz: ±2%
+Quantity Tolerance: ±2%
 
-Stückpreistoleranz: ±1%
+Unit Price Tolerance: ±1%
 
 
 Die Menge (101 Einheiten) und der Stückpreis ($10.05) liegen im Vergleich zur Bestellung innerhalb der zulässigen Toleranz. Das System führt folgende Schritte aus:
 
 
-1\. **Rechnungswerte akzeptieren:** Menge und Stückpreis der Rechnung werden als gültig akzeptiert, da sie innerhalb der festgelegten Toleranzgrenzen liegen.
+1\. **Accept the Invoice Values:** Menge und Stückpreis der Rechnung werden als gültig akzeptiert, da sie innerhalb der festgelegten Toleranzgrenzen liegen.
 
-2\. **Gesamtbetrag berechnen:** Der Gesamtbetrag wird anhand der akzeptierten Werte berechnet:
+2\. **Calculate the Total Amount:** Der Gesamtbetrag wird anhand der akzeptierten Werte berechnet:
 
-• Gesamtbetrag = Menge × Stückpreis
+• Total Amount = Quantity × Unit Price
 
-• Gesamtbetrag = 101 Einheiten × $10.05 je Einheit = $1,015.05
+• Total Amount = 101 units × $10.05 per unit = $1,015.05
 
-3\. **Rechnung verarbeiten:** Die Rechnung wird mit dem Gesamtbetrag von $1,015.05 verarbeitet. Die Finanzdaten werden entsprechend aktualisiert.
+3\. **Process the Invoice:** Die Rechnung wird mit dem Gesamtbetrag von $1,015.05 verarbeitet. Die Finanzdaten werden entsprechend aktualisiert.
 
 So führen kleine Abweichungen innerhalb der zulässigen Toleranz weder zur Ablehnung der Rechnung noch zu Zahlungsverzögerungen. Das vereinfacht den Finanzprozess.

@@ -16,15 +16,15 @@ El sistema acepta los valores de la factura y calcula el monto total en función
 
 Quantity: 100 units
 
-Precio unitario: $10.00 por unidad
+Unit Price: $10.00 per unit
 
 Total Amount: $1,000.00
 
 **Invoice Received:**
 
-Cantidad: 101 unidades (dentro de una tolerancia del 1%)
+Quantity: 101 units — 1% above the PO value, within the configured ±2% tolerance.
 
-Precio unitario: $10.05 por unidad (dentro de una tolerancia del 0.5%)
+Unit Price: $10.05 per unit — 0.5% above the PO value, within the configured ±1% tolerance.
 
 Total Amount: $1,015.05
 
@@ -38,14 +38,14 @@ Unit Price Tolerance: ±1%
 Dado que la cantidad (101 unidades) y el precio unitario ($10.05) están dentro de los niveles de tolerancia aceptables en comparación con la orden de compra, el sistema:
 
 
-1\. **Accept the Invoice Values:** La cantidad y el precio unitario de la factura se aceptan como válidos porque se encuentran dentro de los límites de tolerancia definidos.
+1\. **Aceptar los valores de la factura:** La cantidad y el precio unitario de la factura se aceptan como válidos porque se encuentran dentro de los límites de tolerancia definidos.
 
-2\. **Calculate the Total Amount:** El monto total se calcula utilizando los valores aceptados:
+2\. **Calcular el monto total:** El monto total se calcula utilizando los valores aceptados:
 
 • Total Amount = Quantity × Unit Price
 
 • Total Amount = 101 units × $10.05 per unit = $1,015.05
 
-3\. **Process the Invoice:** La factura se procesa por un monto total de $1,015.05 y los registros financieros se actualizan en consecuencia.
+3\. **Procesar la factura:** La factura se procesa por un monto total de $1,015.05 y los registros financieros se actualizan en consecuencia.
 
 Este enfoque garantiza que las discrepancias menores que se encuentran dentro de los niveles de tolerancia aceptables no provoquen rechazos de facturas ni retrasos en los pagos, lo que agiliza el proceso financiero.

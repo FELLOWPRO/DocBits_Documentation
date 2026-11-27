@@ -26,17 +26,17 @@ El sistema rechaza los datos de la factura, ajusta los valores para que coincida
 
 Dado que tanto la cantidad (140 unidades) como el precio unitario ($33.00) están fuera de los límites de tolerancia aceptables y ninguno ha sido aprobado, el sistema:
 
-1. **Reject the Invoice Data:** El sistema no acepta la cantidad facturada o el precio unitario debido a su desviación de los límites de tolerancia.
-2. **Adjust the Quantity:** El sistema ajusta la cantidad para que coincida con la cantidad de la orden de compra original.
+1. **Rechazar los datos de la factura:** El sistema no acepta la cantidad facturada o el precio unitario debido a su desviación de los límites de tolerancia.
+2. **Ajustar la cantidad:** El sistema ajusta la cantidad para que coincida con la cantidad de la orden de compra original.
    * Adjusted Quantity = 150 units (from PO)
-3. **Adjust the Unit Price:** El sistema ajusta el precio unitario para que coincida con el precio unitario de la orden de compra original.
+3. **Ajustar el precio unitario:** El sistema ajusta el precio unitario para que coincida con el precio unitario de la orden de compra original.
    * Adjusted Unit Price = $30.00 per unit (from PO)
-4. **Recalculate the Total Amount:** El sistema vuelve a calcular el monto total utilizando la cantidad ajustada y el precio unitario:
+4. **Recalcular el monto total:** El sistema vuelve a calcular el monto total utilizando la cantidad ajustada y el precio unitario:
    * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 150 units × $30.00 per unit = $4,500.00**
-5. **Generate a Debit Note:** Dado que el total de la factura original era mayor que el total corregido, el sistema genera una nota de débito por el monto cobrado de más.
+5. **Generar una nota de débito:** Dado que el total de la factura original era mayor que el total corregido, el sistema genera una nota de débito por el monto cobrado de más.
    * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
    * **Debit Note Amount = $4,620.00 - $4,500.00 = $120.00**
-6. **Process the Invoice:** El sistema procesa la factura con el monto total corregido de $4,500.00 y emite una nota de débito por $120.00 para compensar el monto cobrado de más.
+6. **Procesar la Factura:** El sistema procesa la factura con el monto total corregido de $4,500.00 y emite una nota de débito por $120.00 para compensar el monto cobrado de más.
 
 Este enfoque garantiza que la transacción financiera se corrija para que coincida con los términos de la orden de compra, manteniendo prácticas de facturación precisas y justas.

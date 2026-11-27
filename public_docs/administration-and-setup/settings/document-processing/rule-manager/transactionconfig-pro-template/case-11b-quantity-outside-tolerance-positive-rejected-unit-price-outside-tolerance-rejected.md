@@ -26,13 +26,13 @@ El sistema ajusta la cantidad y el precio unitario para que coincidan con los ni
 
 Dado que tanto la cantidad (220 unidades) como el precio unitario ($55.00) exceden los límites de tolerancia aceptables y ninguno ha sido aprobado, el sistema:
 
-1. **Reject the Excess Quantity:** El sistema no acepta la cantidad facturada de 220 unidades y la ajusta para que coincida con la orden de compra original.
+1. **Rechazar la cantidad en exceso:** El sistema no acepta la cantidad facturada de 220 unidades y la ajusta para que coincida con la orden de compra original.
    * Adjusted Quantity = 200 units (from PO)
-2. **Reject the Invoice Unit Price:** El sistema no acepta el precio unitario facturado de $55.00 y lo ajusta para que coincida con la orden de compra original.
+2. **Rechazar el precio unitario de la factura:** El sistema no acepta el precio unitario facturado de $55.00 y lo ajusta para que coincida con la orden de compra original.
    * Adjusted Unit Price = $50.00 per unit (from PO)
-3. **Recalculate the Total Amount:** El sistema calcula el monto total utilizando la cantidad ajustada y el precio unitario:
+3. **Recalcular el monto total:** El sistema calcula el monto total utilizando la cantidad ajustada y el precio unitario:
    * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 200 units × $50.00 per unit = $10,000.00**
-4. **Process the Invoice:** El sistema procesa la factura con el monto total corregido de $10,000.00, rechazando la cantidad excedente y el precio unitario mayor.
+4. **Procesar la Factura:** El sistema procesa la factura con el monto total corregido de $10,000.00, rechazando la cantidad excedente y el precio unitario mayor.
 
 Este enfoque garantiza que la transacción se alinee con los términos originales de la orden de compra, manteniendo controles consistentes de precios y cantidades al tiempo que rechaza variaciones no aprobadas.

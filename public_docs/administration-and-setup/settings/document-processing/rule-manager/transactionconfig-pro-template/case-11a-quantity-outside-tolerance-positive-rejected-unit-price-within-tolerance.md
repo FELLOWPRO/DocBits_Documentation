@@ -26,13 +26,13 @@ El sistema ajusta la cantidad al nivel aprobado, mantiene el precio unitario y p
 
 Dado que la cantidad (110 unidades) excede el límite de tolerancia aceptable (variación positiva del 10%) y no está aprobada, pero el precio unitario ($8.00) está dentro de la tolerancia, el sistema:
 
-1. **Reject the Excess Quantity:** El sistema rechaza la cantidad que excede el nivel de tolerancia aprobado.
-2. **Adjust the Quantity:** El sistema ajusta la cantidad para que coincida con el nivel aprobado especificado en la orden de compra.
+1. **Rechazar la cantidad en exceso:** El sistema rechaza la cantidad que excede el nivel de tolerancia aprobado.
+2. **Ajustar la cantidad:** El sistema ajusta la cantidad para que coincida con el nivel aprobado especificado en la orden de compra.
    * Approved Quantity = 100 units (from PO)
-3. **Maintain the Unit Price:** El precio unitario de $8.00 por unidad está dentro de la tolerancia y permanece sin cambios.
-4. **Recalculate the Total Amount:** El sistema calcula el monto total utilizando la cantidad aprobada y el precio unitario aceptado:
+3. **Mantener el precio unitario:** El precio unitario de $8.00 por unidad está dentro de la tolerancia y permanece sin cambios.
+4. **Recalcular el monto total:** El sistema calcula el monto total utilizando la cantidad aprobada y el precio unitario aceptado:
    * **Total Amount = Approved Quantity × Unit Price**
    * **Total Amount = 100 units × $8.00 per unit = $800.00**
-5. **Process the Invoice:** El sistema procesa la factura con el monto total ajustado de $800.00, reflejando solo la cantidad aprobada y el precio unitario. La cantidad sobrante de 10 unidades se rechaza y no se factura.
+5. **Procesar la factura:** El sistema procesa la factura con el monto total ajustado de $800.00, reflejando solo la cantidad aprobada y el precio unitario. La cantidad sobrante de 10 unidades se rechaza y no se factura.
 
 Este enfoque garantiza que el importe facturado se alinee con los términos acordados en la orden de compra, incluso cuando el proveedor intenta facturar una cantidad excesiva.

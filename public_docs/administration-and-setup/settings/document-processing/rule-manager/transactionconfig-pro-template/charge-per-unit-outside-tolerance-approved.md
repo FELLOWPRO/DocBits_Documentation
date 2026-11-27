@@ -25,10 +25,10 @@ El sistema procesa el cargo aprobado por unidad, aplicándolo a la transacción.
 
 Dado que el cargo por unidad ($3.00) excede el rango de tolerancia aceptable del 5% pero ha sido aprobado, el sistema:
 
-1. **Accept the Approved Header Charge Per Unit:** El sistema acepta el recargo de cabecera facturado por unidad de $3.00 ya que ha sido aprobado a pesar de exceder el límite de tolerancia.
-2. **Process the Header Charge:** El sistema procesa la factura utilizando el cargo aprobado por unidad y la cantidad:
+1. **Aceptar el recargo de cabecera aprobado por unidad:** El sistema acepta el recargo de cabecera facturado por unidad de $3.00 ya que ha sido aprobado a pesar de exceder el límite de tolerancia.
+2. **Procesar el Cargo de Cabecera:** El sistema procesa la factura utilizando el cargo aprobado por unidad y la cantidad:
    * **Total Header Charge Amount = Quantity × Approved Header Charge Per Unit**
    * **Total Header Charge Amount = 2,000 units × $3.00 = $6,000.00**
-3. **Finalize the Invoice:** El sistema procesa la transacción con los cargos aprobados, reflejando el monto total de $6,000.00.
+3. **Finalizar Factura:** El sistema procesa la transacción con los cargos aprobados, reflejando el monto total de $6,000.00.
 
 Este enfoque permite que el sistema se adapte a las variaciones aprobadas en los cargos de encabezado, lo que garantiza que la transacción se procese de acuerdo con la aprobación y al mismo tiempo se mantengan registros financieros precisos.

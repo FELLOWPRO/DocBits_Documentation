@@ -26,13 +26,13 @@ El sistema ajusta la cantidad para que coincida con el nivel aprobado, mantenien
 
 Dado que la cantidad (140 unidades) está por debajo del límite de tolerancia aceptable (variación negativa de -6.67%) y no está aprobada, pero el precio unitario ($20.00) está dentro de la tolerancia, el sistema:
 
-1. **Reject the Lower Quantity:** El sistema no acepta la cantidad inferior porque está fuera del rango de tolerancia aprobado.
-2. **Adjust the Quantity:** El sistema ajusta la cantidad para que coincida con el nivel aprobado especificado en la orden de compra.
+1. **Rechazar la cantidad inferior:** El sistema no acepta la cantidad inferior porque está fuera del rango de tolerancia aprobado.
+2. **Ajustar la cantidad:** El sistema ajusta la cantidad para que coincida con el nivel aprobado especificado en la orden de compra.
    * Approved Quantity = 150 units (from PO)
-3. **Maintain the Unit Price:** El precio unitario de $20.00 por unidad está dentro de la tolerancia y permanece sin cambios.
-4. **Recalculate the Total Amount:** El sistema calcula el monto total utilizando la cantidad aprobada y el precio unitario aceptado:
+3. **Mantener el precio unitario:** El precio unitario de $20.00 por unidad está dentro de la tolerancia y permanece sin cambios.
+4. **Recalcular el monto total:** El sistema calcula el monto total utilizando la cantidad aprobada y el precio unitario aceptado:
    * **Total Amount = Approved Quantity × Unit Price**
    * **Total Amount = 150 units × $20.00 per unit = $3,000.00**
-5. **Process the Invoice:** El sistema procesa la factura con el monto total ajustado de $3,000.00, reflejando la cantidad aprobada y el precio unitario. Se espera que el proveedor facture la cantidad total aprobada.
+5. **Procesar la factura:** El sistema procesa la factura con el monto total ajustado de $3,000.00, reflejando la cantidad aprobada y el precio unitario. Se espera que el proveedor facture la cantidad total aprobada.
 
 Este enfoque garantiza que la transacción financiera se alinee con los términos de la orden de compra y evita la subfacturación mientras se mantienen registros financieros precisos.

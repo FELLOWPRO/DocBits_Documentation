@@ -26,11 +26,11 @@ El sistema acepta la cantidad aprobada y el precio unitario según la factura y 
 
 Dado que la cantidad (160 unidades) excede el límite de tolerancia aceptable pero ha sido aprobada, y el precio unitario ($12.00) está dentro del rango aceptable, el sistema:
 
-1. **Accept the Approved Quantity:** El sistema reconoce que la cantidad ha sido aprobada a pesar de estar fuera del rango de tolerancia normal.
-2. **Accept the Unit Price:** El precio unitario de $12.00 por unidad está dentro de la tolerancia aceptable, por lo que se acepta como facturado.
-3. **Process the Transaction:** El sistema calcula el monto total utilizando la cantidad aprobada y el precio unitario:
+1. **Aceptar la cantidad aprobada:** El sistema reconoce que la cantidad ha sido aprobada a pesar de estar fuera del rango de tolerancia normal.
+2. **Aceptar el Precio Unitario:** El precio unitario de $12.00 por unidad está dentro de la tolerancia aceptable, por lo que se acepta como facturado.
+3. **Procesar la transacción:** El sistema calcula el monto total utilizando la cantidad aprobada y el precio unitario:
    * **Total Amount = Quantity × Unit Price**
    * **Total Amount = 160 units × $12.00 per unit = $1,920.00**
-4. **Finalize the Invoice:** El sistema procesa la factura con el monto total de $1,920.00, reflejando la cantidad aprobada y el precio unitario aceptado.
+4. **Finalizar la factura:** El sistema procesa la factura con el monto total de $1,920.00, reflejando la cantidad aprobada y el precio unitario aceptado.
 
 Este enfoque permite que el sistema se adapte a las variaciones de cantidad aprobadas y, al mismo tiempo, garantiza que el precio unitario se mantenga dentro del rango esperado, lo que facilita el procesamiento de transacciones sin problemas.

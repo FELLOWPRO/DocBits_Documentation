@@ -25,10 +25,10 @@ El sistema acepta el cargo por unidad y aplica los cargos aprobados, procesando 
 
 Dado que el cargo por unidad ($5.00) está fuera del rango de tolerancia aceptable del 5 % pero ha sido aprobado, el sistema:
 
-1. **Accept the Approved Charge Per Unit:** El sistema acepta el cargo facturado por unidad de $5.00 ya que ha sido aprobado a pesar de exceder el límite de tolerancia.
-2. **Process the Transaction:** El sistema procesa la factura utilizando el cargo aprobado por unidad y la cantidad:
+1. **Aceptar el cargo aprobado por unidad:** El sistema acepta el cargo facturado por unidad de $5.00 ya que ha sido aprobado a pesar de exceder el límite de tolerancia.
+2. **Procesar la Transacción:** El sistema procesa la factura utilizando el cargo aprobado por unidad y la cantidad:
    * **Total Charge Amount = Quantity × Approved Charge Per Unit**
    * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**
-3. **Finalize the Invoice:** El sistema procesa la transacción con los cargos aprobados, reflejando el monto total de $5,000.00.
+3. **Finalizar Factura:** El sistema procesa la transacción con los cargos aprobados, reflejando el monto total de $5,000.00.
 
 Este enfoque garantiza que el sistema pueda adaptarse a las variaciones aprobadas en los cargos, lo que permite flexibilidad y al mismo tiempo mantiene registros financieros precisos.

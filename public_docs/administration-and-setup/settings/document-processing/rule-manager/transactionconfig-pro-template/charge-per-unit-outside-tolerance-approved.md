@@ -23,7 +23,7 @@ System przetwarza zatwierdzoną opłatę jednostkową i stosuje ją do transakcj
 * **Tolerance Levels:**
   * Header Charge Per Unit Tolerance: ±5%
 
-Ponieważ opłata za jednostkę nagłówka ($3.00) przekracza dopuszczalny zakres tolerancji wynoszący 5%, ale została zatwierdzona, system:
+Ponieważ Header Charge Per Unit ($3.00) przekracza dopuszczalny zakres tolerancji wynoszący 5%, ale został zatwierdzony, system:
 
 1. **Zaakceptuj zatwierdzoną opłatę za nagłówek za jednostkę:** System akceptuje zafakturowaną opłatę za nagłówek za jednostkę w wysokości $3.00, ponieważ została zatwierdzona pomimo przekroczenia limitu tolerancji.
 2. **Przetwórz opłatę nagłówkową:** System przetwarza fakturę przy użyciu zatwierdzonej opłaty jednostkowej i ilości:

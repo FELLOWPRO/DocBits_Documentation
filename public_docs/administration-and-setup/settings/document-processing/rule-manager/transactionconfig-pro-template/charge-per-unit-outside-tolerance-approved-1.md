@@ -12,23 +12,23 @@ O sistema aceita o encargo por unidade aprovado e processa a transação.
 
 ## Exemplo:
 
-* **Pedido de compra (PO):**
-  * Encargo por unidade: $4.50
-  * Quantidade: 1,000 unidades
-  * Valor total dos encargos: $4,500.00
-* **Fatura recebida:**
-  * Encargo por unidade: $5.00 (fora da tolerância de 11.11%, aprovado)
-  * Quantidade: 1,000 unidades
-  * Valor total dos encargos: $5,000.00
-* **Níveis de tolerância:**
-  * Tolerância do encargo por unidade: ±5%
+* **Purchase Order (PO):**
+  * Charge Per Unit: $4.50
+  * Quantity: 1,000 units
+  * Total Charge Amount: $4,500.00
+* **Invoice Received:**
+  * Charge Per Unit: $5.00 — 11.11% above the PO value, outside the configured ±5% tolerance; approved.
+  * Quantity: 1,000 units
+  * Total Charge Amount: $5,000.00
+* **Tolerance Levels:**
+  * Charge Per Unit Tolerance: ±5%
 
 Como o encargo por unidade ($5.00) está fora da tolerância de 5%, mas foi aprovado, o sistema irá:
 
 1. **Aceitar o encargo aprovado por unidade:** o sistema aceita o valor faturado de $5.00, apesar de exceder a tolerância, porque foi aprovado.
 2. **Processar a transação:** o sistema processa a fatura com o encargo por unidade aprovado e a quantidade:
-   * **Valor total dos encargos = Quantidade × Encargo aprovado por unidade**
-   * **Valor total dos encargos = 1,000 unidades × $5.00 = $5,000.00**
+   * **Total Charge Amount = Quantity × Approved Charge Per Unit**
+   * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**
 3. **Finalizar a fatura:** o sistema processa a transação com os encargos aprovados, refletindo o total de $5,000.00.
 
 Esta abordagem permite processar os desvios aprovados dos encargos, mantendo os registos financeiros.

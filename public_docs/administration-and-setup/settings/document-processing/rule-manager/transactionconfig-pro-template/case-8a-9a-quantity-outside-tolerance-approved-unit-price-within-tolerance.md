@@ -12,25 +12,25 @@ O sistema aceita a quantidade aprovada e o preço unitário da fatura e processa
 
 ## Exemplo:
 
-* **Pedido de compra (PO):**
-  * Quantidade: 150 unidades
-  * Preço unitário: $12.00 por unidade
-  * Valor total: $1,800.00
-* **Fatura recebida:**
-  * Quantidade: 160 unidades (fora da tolerância de 6.67% mas aprovado)
-  * Preço unitário: $12.00 por unidade (dentro da tolerância)
-  * Valor total: $1,920.00
-* **Níveis de tolerância:**
-  * Tolerância da quantidade: ±5%
-  * Tolerância do preço unitário: ±2%
+* **Purchase Order (PO):**
+  * Quantity: 150 units
+  * Unit Price: $12.00 per unit
+  * Total Amount: $1,800.00
+* **Invoice Received:**
+  * Quantity: 160 units — 6.67% above the PO value, outside the configured ±5% tolerance; approved.
+  * Unit Price: $12.00 per unit (within tolerance)
+  * Total Amount: $1,920.00
+* **Tolerance Levels:**
+  * Quantity Tolerance: ±5%
+  * Unit Price Tolerance: ±2%
 
 Como a quantidade (160 unidades) excede o limite de tolerância, mas foi aprovada, e o preço unitário ($12.00) está dentro do intervalo aceite, o sistema irá:
 
 1. **Aceitar a quantidade aprovada:** o sistema reconhece a aprovação da quantidade apesar de estar fora da tolerância normal.
 2. **Aceitar o preço unitário:** o preço de $12.00 por unidade está dentro da tolerância e é aceite tal como foi faturado.
 3. **Processar a transação:** o sistema calcula o total com a quantidade aprovada e o preço unitário:
-   * **Valor total = Quantidade × Preço unitário**
-   * **Valor total = 160 unidades × $12.00 por unidade = $1,920.00**
+   * **Total Amount = Quantity × Unit Price**
+   * **Total Amount = 160 units × $12.00 per unit = $1,920.00**
 4. **Finalizar a fatura:** o sistema processa a fatura com o total de $1,920.00, refletindo a quantidade aprovada e o preço unitário aceite.
 
 Esta abordagem permite aceitar desvios aprovados na quantidade, mantendo o preço unitário dentro do intervalo esperado.

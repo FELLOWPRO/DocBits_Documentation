@@ -14,29 +14,29 @@ System odrzuca dane do faktury, dostosowuje wartości do zamówienia i generuje 
 
 * **Purchase Order (PO):**
   * Quantity: 150 units
-  * Cena jednostkowa: $30.00 za sztukę
+  * Unit Price: $30.00 per unit
   * Total Amount: $4,500.00
 * **Invoice Received:**
-  * Ilość: 140 sztuk (poza tolerancją -6.67%, odrzucona)
-  * Cena jednostkowa: $33.00 za sztukę (poza tolerancją 10%, odrzucona)
+  * Quantity: 140 units — 6.67% below the PO value, outside the configured ±5% tolerance; rejected.
+  * Unit Price: $33.00 per unit — 10% above the PO value, outside the configured ±2% tolerance; rejected.
   * Total Amount: $4,620.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Tolerancja ceny jednostkowej: ±2%
+  * Unit Price Tolerance: ±2%
 
 Ponieważ zarówno ilość (140 jednostek), jak i cena jednostkowa ($33.00) wykraczają poza dopuszczalne granice tolerancji i żadna z nich nie została zatwierdzona, system:
 
 1. **Odrzuć dane do faktury:** System nie akceptuje zafakturowanej ilości lub ceny jednostkowej ze względu na ich odchylenie od granic tolerancji.
 2. **Dostosuj ilość:** System dostosowuje ilość, aby odpowiadała pierwotnej ilości zamówienia.
-   * Skorygowana ilość = 150 jednostek (od PO)
+   * Adjusted Quantity = 150 units (from PO)
 3. **Dostosuj cenę jednostkową:** System dostosowuje cenę jednostkową, aby odpowiadała cenie jednostkowej pierwotnego zamówienia zakupu.
-   * Skorygowana cena jednostkowa = $30.00 za jednostkę (od PO)
+   * Adjusted Unit Price = $30.00 per unit (from PO)
 4. **Przelicz kwotę całkowitą:** System przelicza całkowitą kwotę na podstawie skorygowanej ilości i ceny jednostkowej:
-   * **Skorygowana kwota całkowita = skorygowana ilość × skorygowana cena jednostkowa**
-   * **Skorygowana kwota całkowita = 150 jednostek × $30.00 za jednostkę = $4,500.00**
+   * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
+   * **Corrected Total Amount = 150 units × $30.00 per unit = $4,500.00**
 5. **Wygeneruj notę debetową:** Ponieważ pierwotna suma faktury była wyższa niż suma skorygowana, system generuje notę debetową na zawyżoną kwotę.
-   * **Kwota noty debetowej = Suma oryginalnej faktury – Skorygowana kwota całkowita**
-   * **Kwota noty debetowej = $4,620.00 - $4,500.00 = $120.00**
+   * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
+   * **Debit Note Amount = $4,620.00 - $4,500.00 = $120.00**
 6. **Przetwórz fakturę:** System przetwarza fakturę na skorygowaną łączną kwotę $4,500.00 i wystawia notę debetową na kwotę $120.00 w celu skompensowania zawyżonej kwoty.
 
 Takie podejście gwarantuje, że transakcja finansowa zostanie skorygowana w celu dopasowania do warunków zamówienia, przy zachowaniu dokładnych i uczciwych praktyk rozliczeniowych.

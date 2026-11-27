@@ -14,25 +14,25 @@ System dostosowuje ilość i cenę jednostkową do zatwierdzonych poziomów z za
 
 * **Purchase Order (PO):**
   * Quantity: 200 units
-  * Cena jednostkowa: $50.00 za sztukę
+  * Unit Price: $50.00 per unit
   * Total Amount: $10,000.00
 * **Invoice Received:**
-  * Ilość: 220 sztuk (poza tolerancją 10%, odrzucona)
-  * Cena jednostkowa: $55.00 za sztukę (poza tolerancją 10%, odrzucona)
+  * Quantity: 220 units — 10% above the PO value, outside the configured ±5% tolerance; rejected.
+  * Unit Price: $55.00 per unit — 10% above the PO value, outside the configured ±2% tolerance; rejected.
   * Total Amount: $12,100.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Tolerancja ceny jednostkowej: ±2%
+  * Unit Price Tolerance: ±2%
 
 Ponieważ zarówno ilość (220 sztuk), jak i cena jednostkowa ($55.00) przekraczają dopuszczalne granice tolerancji i żadna z nich nie została zatwierdzona, system:
 
 1. **Odrzuć nadwyżkę:** System nie akceptuje zafakturowanej ilości 220 sztuk i dostosowuje ją tak, aby odpowiadała pierwotnemu zamówieniu.
-   * Skorygowana ilość = 200 jednostek (od PO)
+   * Adjusted Quantity = 200 units (from PO)
 2. **Odrzuć fakturowaną cenę jednostkową:** System nie akceptuje zafakturowanej ceny jednostkowej wynoszącej $55.00 i dostosowuje ją do pierwotnego zamówienia.
-   * Skorygowana cena jednostkowa = $50.00 za jednostkę (od PO)
+   * Adjusted Unit Price = $50.00 per unit (from PO)
 3. **Przelicz kwotę całkowitą:** System oblicza kwotę całkowitą na podstawie skorygowanej ilości i ceny jednostkowej:
-   * **Skorygowana kwota całkowita = skorygowana ilość × skorygowana cena jednostkowa**
-   * **Skorygowana kwota całkowita = 200 sztuk × $50.00 za jednostkę = $10,000.00**
+   * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
+   * **Corrected Total Amount = 200 units × $50.00 per unit = $10,000.00**
 4. **Przetwórz fakturę:** System przetwarza fakturę ze skorygowaną kwotą całkowitą $10,000.00, odrzucając nadmierną ilość i wyższą cenę jednostkową.
 
 Takie podejście gwarantuje, że transakcja jest zgodna z pierwotnymi warunkami zamówienia, zachowując spójną kontrolę cen i ilości, jednocześnie odrzucając niezatwierdzone odchylenia.

@@ -13,22 +13,22 @@ System przetwarza zatwierdzoną opłatę jednostkową i stosuje ją do transakcj
 ## Przykład:
 
 * **Purchase Order (PO):**
-  * Opłata za nagłówek za jednostkę: $2.50
+  * Header Charge Per Unit: $2.50
   * Quantity: 2,000 units
-  * Całkowita kwota opłaty za nagłówek: $5,000.00
+  * Total Header Charge Amount: $5,000.00
 * **Invoice Received:**
-  * Opłata za nagłówek za jednostkę: $3.00 (zatwierdzona tolerancja poza 20%)
+  * Header Charge Per Unit: $3.00 — 20% above the PO value, outside the configured ±5% tolerance; approved.
   * Quantity: 2,000 units
-  * Całkowita kwota opłaty za nagłówek: $6,000.00
+  * Total Header Charge Amount: $6,000.00
 * **Tolerance Levels:**
-  * Tolerancja opłaty za głowicę na jednostkę: ±5%
+  * Header Charge Per Unit Tolerance: ±5%
 
-Ponieważ opłata za jednostkę nagłówka ($3.00) przekracza dopuszczalny zakres tolerancji wynoszący 5%, ale została zatwierdzona, system:
+Ponieważ Header Charge Per Unit ($3.00) przekracza dopuszczalny zakres tolerancji wynoszący 5%, ale został zatwierdzony, system:
 
 1. **Zaakceptuj zatwierdzoną opłatę za nagłówek za jednostkę:** System akceptuje zafakturowaną opłatę za nagłówek za jednostkę w wysokości $3.00, ponieważ została zatwierdzona pomimo przekroczenia limitu tolerancji.
 2. **Przetwórz opłatę nagłówkową:** System przetwarza fakturę przy użyciu zatwierdzonej opłaty jednostkowej i ilości:
-   * **Całkowita kwota opłaty za głowicę = ilość × Zatwierdzona opłata za głowicę na jednostkę**
-   * **Całkowita kwota opłaty za nagłówek = 2,000 jednostek × $3.00 = $6,000.00**
+   * **Total Header Charge Amount = Quantity × Approved Header Charge Per Unit**
+   * **Total Header Charge Amount = 2,000 units × $3.00 = $6,000.00**
 3. **Sfinalizuj fakturę:** System przetwarza transakcję z zatwierdzonymi opłatami, odzwierciedlającymi łączną kwotę $6,000.00.
 
 Takie podejście umożliwia systemowi uwzględnienie zatwierdzonych różnic w opłatach nagłówkowych, zapewniając, że transakcja zostanie przetworzona zgodnie z zatwierdzeniem, przy jednoczesnym zachowaniu dokładnej dokumentacji finansowej.

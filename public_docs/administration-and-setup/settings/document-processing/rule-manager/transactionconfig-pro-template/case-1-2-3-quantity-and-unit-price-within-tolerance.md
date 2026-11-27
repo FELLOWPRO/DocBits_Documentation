@@ -16,15 +16,15 @@ System akceptuje wartości faktur i oblicza łączną kwotę na podstawie podane
 
 Quantity: 100 units
 
-Cena jednostkowa: $10.00 za sztukę
+Unit Price: $10.00 per unit
 
 Total Amount: $1,000.00
 
 **Invoice Received:**
 
-Ilość: 101 szt. (w granicach tolerancji 1%)
+Quantity: 101 units — 1% above the PO value, within the configured ±2% tolerance.
 
-Cena jednostkowa: $10.05 za sztukę (w granicach tolerancji 0.5%)
+Unit Price: $10.05 per unit — 0.5% above the PO value, within the configured ±1% tolerance.
 
 Total Amount: $1,015.05
 
@@ -32,7 +32,7 @@ Total Amount: $1,015.05
 
 Quantity Tolerance: ±2%
 
-Tolerancja ceny jednostkowej: ±1%
+Unit Price Tolerance: ±1%
 
 
 Ponieważ ilość (101 sztuk) i cena jednostkowa ($10.05) mieszczą się w dopuszczalnych poziomach tolerancji w porównaniu z zamówieniem, system:
@@ -42,9 +42,9 @@ Ponieważ ilość (101 sztuk) i cena jednostkowa ($10.05) mieszczą się w dopus
 
 2\. **Oblicz kwotę całkowitą:** Całkowita kwota jest obliczana przy użyciu zaakceptowanych wartości:
 
-• Całkowita kwota = ilość × cena jednostkowa
+• Total Amount = Quantity × Unit Price
 
-• Całkowita kwota = 101 jednostek × $10.05 za jednostkę = $1,015.05
+• Total Amount = 101 units × $10.05 per unit = $1,015.05
 
 3\. **Przetwórz fakturę:** Faktura zostanie przetworzona na łączną kwotę $1,015.05, a zapisy finansowe zostaną odpowiednio zaktualizowane.
 

@@ -26,11 +26,11 @@ System akceptuje zatwierdzoną ilość oraz cenę jednostkową z faktury i zgodn
 
 Ponieważ ilość (160 sztuk) przekracza dopuszczalny limit tolerancji, ale została zatwierdzona, a cena jednostkowa ($12.00) mieści się w akceptowalnym przedziale, system:
 
-1. **Accept the Approved Quantity:** System potwierdza, że ilość została zatwierdzona, mimo że wykracza poza normalny zakres tolerancji.
-2. **Accept the Unit Price:** Cena jednostkowa wynosząca $12.00 za jednostkę mieści się w dopuszczalnej tolerancji, dlatego jest akceptowana jako zafakturowana.
-3. **Process the Transaction:** System oblicza całkowitą kwotę na podstawie zatwierdzonej ilości i ceny jednostkowej:
+1. **Zaakceptuj zatwierdzoną ilość:** System potwierdza, że ilość została zatwierdzona, mimo że wykracza poza normalny zakres tolerancji.
+2. **Zaakceptuj cenę jednostkową:** Cena jednostkowa wynosząca $12.00 za jednostkę mieści się w dopuszczalnej tolerancji, dlatego jest akceptowana jako zafakturowana.
+3. **Przetwórz transakcję:** System oblicza całkowitą kwotę na podstawie zatwierdzonej ilości i ceny jednostkowej:
    * **Total Amount = Quantity × Unit Price**
    * **Total Amount = 160 units × $12.00 per unit = $1,920.00**
-4. **Finalize the Invoice:** System przetwarza fakturę na łączną kwotę $1,920.00, odzwierciedlającą zatwierdzoną ilość i zaakceptowaną cenę jednostkową.
+4. **Sfinalizuj fakturę:** System przetwarza fakturę na łączną kwotę $1,920.00, odzwierciedlającą zatwierdzoną ilość i zaakceptowaną cenę jednostkową.
 
 Takie podejście pozwala systemowi uwzględnić zatwierdzone różnice w ilości, zapewniając jednocześnie, że cena jednostkowa pozostanie w oczekiwanym przedziale, co ułatwia płynne przetwarzanie transakcji.

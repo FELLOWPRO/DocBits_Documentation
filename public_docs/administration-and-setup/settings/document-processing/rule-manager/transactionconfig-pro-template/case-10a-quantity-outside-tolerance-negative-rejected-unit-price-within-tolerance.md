@@ -26,13 +26,13 @@ System dostosowuje ilość do zatwierdzonego poziomu, utrzymując stałą cenę 
 
 Ponieważ ilość (140 jednostek) jest poniżej akceptowalnego limitu tolerancji (ujemna wariancja -6.67%) i nie została zatwierdzona, ale cena jednostkowa ($20.00) mieści się w granicach tolerancji, system:
 
-1. **Reject the Lower Quantity:** System nie akceptuje mniejszej ilości, ponieważ wykracza ona poza zatwierdzony zakres tolerancji.
-2. **Adjust the Quantity:** System dostosowuje ilość, aby odpowiadała zatwierdzonemu poziomowi określonemu w zamówieniu.
+1. **Odrzuć niższą ilość:** System nie akceptuje mniejszej ilości, ponieważ wykracza ona poza zatwierdzony zakres tolerancji.
+2. **Dostosuj ilość:** System dostosowuje ilość, aby odpowiadała zatwierdzonemu poziomowi określonemu w zamówieniu.
    * Approved Quantity = 150 units (from PO)
-3. **Maintain the Unit Price:** Cena jednostkowa wynosząca $20.00 za jednostkę mieści się w granicach tolerancji i pozostaje niezmieniona.
-4. **Recalculate the Total Amount:** System oblicza całkowitą kwotę na podstawie zatwierdzonej ilości i zaakceptowanej ceny jednostkowej:
+3. **Utrzymaj cenę jednostkową:** Cena jednostkowa wynosząca $20.00 za jednostkę mieści się w granicach tolerancji i pozostaje niezmieniona.
+4. **Przelicz kwotę całkowitą:** System oblicza całkowitą kwotę na podstawie zatwierdzonej ilości i zaakceptowanej ceny jednostkowej:
    * **Total Amount = Approved Quantity × Unit Price**
    * **Total Amount = 150 units × $20.00 per unit = $3,000.00**
-5. **Process the Invoice:** System przetwarza fakturę na skorygowaną łączną kwotę $3,000.00, odzwierciedlającą zatwierdzoną ilość i cenę jednostkową. Oczekuje się, że dostawca wystawi fakturę na całą zatwierdzoną ilość.
+5. **Przetwórz fakturę:** System przetwarza fakturę na skorygowaną łączną kwotę $3,000.00, odzwierciedlającą zatwierdzoną ilość i cenę jednostkową. Oczekuje się, że dostawca wystawi fakturę na całą zatwierdzoną ilość.
 
 Takie podejście zapewnia zgodność transakcji finansowej z warunkami zamówienia i zapobiega zaniżaniu faktur przy jednoczesnym zachowaniu dokładnej dokumentacji finansowej.

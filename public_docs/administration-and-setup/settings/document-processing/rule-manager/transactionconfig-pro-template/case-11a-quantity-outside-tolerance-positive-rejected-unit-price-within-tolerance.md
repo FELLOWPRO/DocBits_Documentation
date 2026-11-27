@@ -26,13 +26,13 @@ System dostosowuje ilość do zatwierdzonego poziomu, zachowując cenę jednostk
 
 Ponieważ ilość (110 sztuk) przekracza akceptowalny limit tolerancji (dodatnie odchylenie 10%) i nie została zatwierdzona, ale cena jednostkowa ($8.00) mieści się w tolerancji, system:
 
-1. **Reject the Excess Quantity:** System odrzuca ilość przekraczającą zatwierdzony poziom tolerancji.
-2. **Adjust the Quantity:** System dostosowuje ilość, aby odpowiadała zatwierdzonemu poziomowi określonemu w zamówieniu.
+1. **Odrzuć nadmiarową ilość:** System odrzuca ilość przekraczającą zatwierdzony poziom tolerancji.
+2. **Dostosuj ilość:** System dostosowuje ilość, aby odpowiadała zatwierdzonemu poziomowi określonemu w zamówieniu.
    * Approved Quantity = 100 units (from PO)
-3. **Maintain the Unit Price:** Cena jednostkowa wynosząca $8.00 za jednostkę mieści się w granicach tolerancji i pozostaje niezmieniona.
-4. **Recalculate the Total Amount:** System oblicza całkowitą kwotę na podstawie zatwierdzonej ilości i zaakceptowanej ceny jednostkowej:
+3. **Utrzymaj cenę jednostkową:** Cena jednostkowa wynosząca $8.00 za jednostkę mieści się w granicach tolerancji i pozostaje niezmieniona.
+4. **Przelicz kwotę całkowitą:** System oblicza całkowitą kwotę na podstawie zatwierdzonej ilości i zaakceptowanej ceny jednostkowej:
    * **Total Amount = Approved Quantity × Unit Price**
    * **Total Amount = 100 units × $8.00 per unit = $800.00**
-5. **Process the Invoice:** System przetwarza fakturę na skorygowaną łączną kwotę $800.00, uwzględniającą jedynie zatwierdzoną ilość i cenę jednostkową. Nadwyżka wynosząca 10 sztuk jest odrzucana i nie fakturowana.
+5. **Przetwórz fakturę:** System przetwarza fakturę na skorygowaną łączną kwotę $800.00, uwzględniającą jedynie zatwierdzoną ilość i cenę jednostkową. Nadwyżka wynosząca 10 sztuk jest odrzucana i nie fakturowana.
 
 Takie podejście gwarantuje, że zafakturowana kwota jest zgodna z warunkami uzgodnionymi w zamówieniu, nawet jeśli dostawca próbuje wystawić fakturę za nadwyżkę.

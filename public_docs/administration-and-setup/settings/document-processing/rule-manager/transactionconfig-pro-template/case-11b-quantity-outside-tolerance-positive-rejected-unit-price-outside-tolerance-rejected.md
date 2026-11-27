@@ -26,13 +26,13 @@ System dostosowuje ilość i cenę jednostkową do zatwierdzonych poziomów z za
 
 Ponieważ zarówno ilość (220 sztuk), jak i cena jednostkowa ($55.00) przekraczają dopuszczalne granice tolerancji i żadna z nich nie została zatwierdzona, system:
 
-1. **Reject the Excess Quantity:** System nie akceptuje zafakturowanej ilości 220 sztuk i dostosowuje ją tak, aby odpowiadała pierwotnemu zamówieniu.
+1. **Odrzuć nadwyżkę:** System nie akceptuje zafakturowanej ilości 220 sztuk i dostosowuje ją tak, aby odpowiadała pierwotnemu zamówieniu.
    * Adjusted Quantity = 200 units (from PO)
-2. **Reject the Invoice Unit Price:** System nie akceptuje zafakturowanej ceny jednostkowej wynoszącej $55.00 i dostosowuje ją do pierwotnego zamówienia.
+2. **Odrzuć fakturowaną cenę jednostkową:** System nie akceptuje zafakturowanej ceny jednostkowej wynoszącej $55.00 i dostosowuje ją do pierwotnego zamówienia.
    * Adjusted Unit Price = $50.00 per unit (from PO)
-3. **Recalculate the Total Amount:** System oblicza kwotę całkowitą na podstawie skorygowanej ilości i ceny jednostkowej:
+3. **Przelicz kwotę całkowitą:** System oblicza kwotę całkowitą na podstawie skorygowanej ilości i ceny jednostkowej:
    * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 200 units × $50.00 per unit = $10,000.00**
-4. **Process the Invoice:** System przetwarza fakturę ze skorygowaną kwotą całkowitą $10,000.00, odrzucając nadmierną ilość i wyższą cenę jednostkową.
+4. **Przetwórz fakturę:** System przetwarza fakturę ze skorygowaną kwotą całkowitą $10,000.00, odrzucając nadmierną ilość i wyższą cenę jednostkową.
 
 Takie podejście gwarantuje, że transakcja jest zgodna z pierwotnymi warunkami zamówienia, zachowując spójną kontrolę cen i ilości, jednocześnie odrzucając niezatwierdzone odchylenia.

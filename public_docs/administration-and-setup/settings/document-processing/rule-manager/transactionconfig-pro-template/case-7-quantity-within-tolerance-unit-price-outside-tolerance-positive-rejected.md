@@ -26,16 +26,16 @@ System odrzuca cenę jednostkową faktury, dostosowuje ją do zamówienia zakupu
 
 Ponieważ ilość (198 jednostek) mieści się w dopuszczalnym zakresie tolerancji, ale cena jednostkowa ($17.00) przekracza dopuszczalną tolerancję i nie zostaje zatwierdzona, system:
 
-1. **Reject the Invoice Unit Price:** System nie akceptuje zafakturowanej ceny jednostkowej wynoszącej $17.00.
-2. **Adjust the Unit Price:** System dostosowuje cenę jednostkową do ceny jednostkowej z pierwotnego zamówienia zakupu.
+1. **Odrzuca cenę jednostkową faktury:** System nie akceptuje zafakturowanej ceny jednostkowej wynoszącej $17.00.
+2. **Dostosowuje cenę jednostkową:** System dostosowuje cenę jednostkową do ceny jednostkowej z pierwotnego zamówienia zakupu.
    * Adjusted Unit Price = $15.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Na podstawie skorygowanej ceny jednostkowej system ponownie oblicza kwotę całkowitą.
+3. **Oblicza skorygowaną kwotę całkowitą:** Na podstawie skorygowanej ceny jednostkowej system ponownie oblicza kwotę całkowitą.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**
-4. **Generate a Debit Note:** System generuje notę obciążeniową w celu rozliczenia różnicy wynikającej z zawyżenia.
+4. **Generuje notę obciążeniową:** System generuje notę obciążeniową w celu rozliczenia różnicy wynikającej z zawyżenia.
    * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
    * **Debit Note Amount = $3,366.00 - $2,970.00 = $396.00**
    * Ta nota obciążeniowa odpowiada kwocie zawyżonej przez dostawcę.
-5. **Process the Invoice:** System przetwarza fakturę ze skorygowaną kwotą całkowitą $2,970.00 i wystawia notę obciążeniową na $396.00 w celu wyrównania zawyżenia.
+5. **Przetwarza fakturę:** System przetwarza fakturę ze skorygowaną kwotą całkowitą $2,970.00 i wystawia notę obciążeniową na $396.00 w celu wyrównania zawyżenia.
 
 Takie podejście zapewnia korektę każdego zawyżenia, zgodność transakcji z warunkami zamówienia zakupu oraz ochronę interesów finansowych firmy.

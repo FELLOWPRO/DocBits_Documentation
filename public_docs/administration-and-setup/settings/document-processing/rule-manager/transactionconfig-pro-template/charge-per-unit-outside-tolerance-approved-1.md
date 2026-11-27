@@ -25,10 +25,10 @@ System akceptuje opłatę jednostkową i stosuje zatwierdzone opłaty, odpowiedn
 
 Ponieważ opłata jednostkowa ($5.00) wykracza poza dopuszczalny zakres tolerancji wynoszący 5%, ale została zatwierdzona, system:
 
-1. **Accept the Approved Charge Per Unit:** System akceptuje zafakturowaną opłatę za jednostkę w wysokości $5.00, ponieważ została zatwierdzona pomimo przekroczenia limitu tolerancji.
-2. **Process the Transaction:** System przetwarza fakturę przy użyciu zatwierdzonej opłaty jednostkowej i ilości:
+1. **Zaakceptuj zatwierdzoną opłatę za jednostkę:** System akceptuje zafakturowaną opłatę za jednostkę w wysokości $5.00, ponieważ została zatwierdzona pomimo przekroczenia limitu tolerancji.
+2. **Przetwórz transakcję:** System przetwarza fakturę przy użyciu zatwierdzonej opłaty jednostkowej i ilości:
    * **Total Charge Amount = Quantity × Approved Charge Per Unit**
    * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**
-3. **Finalize the Invoice:** System przetwarza transakcję z zatwierdzonymi opłatami, odzwierciedlającymi łączną kwotę $5,000.00.
+3. **Sfinalizuj fakturę:** System przetwarza transakcję z zatwierdzonymi opłatami, odzwierciedlającymi łączną kwotę $5,000.00.
 
 Takie podejście gwarantuje, że system będzie w stanie uwzględnić zatwierdzone różnice w opłatach, zapewniając elastyczność przy jednoczesnym zachowaniu dokładnych zapisów finansowych.

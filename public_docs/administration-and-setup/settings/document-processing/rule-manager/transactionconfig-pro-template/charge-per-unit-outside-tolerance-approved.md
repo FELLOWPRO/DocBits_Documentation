@@ -25,10 +25,10 @@ System przetwarza zatwierdzoną opłatę jednostkową i stosuje ją do transakcj
 
 Ponieważ opłata za jednostkę nagłówka ($3.00) przekracza dopuszczalny zakres tolerancji wynoszący 5%, ale została zatwierdzona, system:
 
-1. **Accept the Approved Header Charge Per Unit:** System akceptuje zafakturowaną opłatę za nagłówek za jednostkę w wysokości $3.00, ponieważ została zatwierdzona pomimo przekroczenia limitu tolerancji.
-2. **Process the Header Charge:** System przetwarza fakturę przy użyciu zatwierdzonej opłaty jednostkowej i ilości:
+1. **Zaakceptuj zatwierdzoną opłatę za nagłówek za jednostkę:** System akceptuje zafakturowaną opłatę za nagłówek za jednostkę w wysokości $3.00, ponieważ została zatwierdzona pomimo przekroczenia limitu tolerancji.
+2. **Przetwórz opłatę nagłówkową:** System przetwarza fakturę przy użyciu zatwierdzonej opłaty jednostkowej i ilości:
    * **Total Header Charge Amount = Quantity × Approved Header Charge Per Unit**
    * **Total Header Charge Amount = 2,000 units × $3.00 = $6,000.00**
-3. **Finalize the Invoice:** System przetwarza transakcję z zatwierdzonymi opłatami, odzwierciedlającymi łączną kwotę $6,000.00.
+3. **Sfinalizuj fakturę:** System przetwarza transakcję z zatwierdzonymi opłatami, odzwierciedlającymi łączną kwotę $6,000.00.
 
 Takie podejście umożliwia systemowi uwzględnienie zatwierdzonych różnic w opłatach nagłówkowych, zapewniając, że transakcja zostanie przetworzona zgodnie z zatwierdzeniem, przy jednoczesnym zachowaniu dokładnej dokumentacji finansowej.

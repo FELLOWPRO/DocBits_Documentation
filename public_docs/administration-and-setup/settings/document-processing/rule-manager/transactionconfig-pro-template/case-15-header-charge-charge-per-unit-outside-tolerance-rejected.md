@@ -12,28 +12,28 @@
 
 ## 示例：
 
-* **采购订单（PO）：**
-  * 抬头单位费用：$4.00
-  * 数量：1,500 个单位
-  * 抬头费用总额：$6,000.00
-* **收到的发票：**
-  * 抬头单位费用：$5.00（高于采购订单价格 25%，超出 ±5% 容差，已拒绝）
-  * 数量：1,500 个单位
-  * 抬头费用总额：$7,500.00
-* **容差级别：**
-  * 抬头单位费用容差：±5%
+* **Purchase Order (PO):**
+  * Header Charge Per Unit: $4.00
+  * Quantity: 1,500 units
+  * Total Header Charge Amount: $6,000.00
+* **Invoice Received:**
+  * Header Charge Per Unit: $5.00 — 25% above the PO value, outside the configured ±5% tolerance; rejected.
+  * Quantity: 1,500 units
+  * Total Header Charge Amount: $7,500.00
+* **Tolerance Levels:**
+  * Header Charge Per Unit Tolerance: ±5%
 
 由于抬头单位费用（$5.00）超出 5% 的可接受容差范围，且尚未获得批准，系统将：
 
 1. **拒绝发票中的抬头单位费用：**由于差异超出容差限值，系统不接受发票中的 $5.00 抬头单位费用。
 2. **调整抬头单位费用：**系统将单位费用调整为与原始采购订单或已批准的单位费用一致：
-   * 调整后的抬头单位费用 = $4.00（来自 PO）
+   * Adjusted Header Charge Per Unit = $4.00 (from PO)
 3. **重新计算抬头费用总额：**系统根据调整后的单位费用重新计算费用总额：
-   * **更正后的抬头费用总额 = 数量 × 调整后的抬头单位费用**
-   * **更正后的抬头费用总额 = 1,500 个单位 × $4.00 = $6,000.00**
+   * **Corrected Total Header Charge Amount = Quantity × Adjusted Header Charge Per Unit**
+   * **Corrected Total Header Charge Amount = 1,500 units × $4.00 = $6,000.00**
 4. **生成贷项通知单：**由于原始发票总额高于更正后的总额，系统会针对多收的金额生成贷项通知单：
-   * **贷项通知单金额 = 原始发票总额 - 更正后的抬头费用总额**
-   * **贷项通知单金额 = $7,500.00 - $6,000.00 = $1,500.00**
+   * **Credit Note Amount = Original Invoice Total - Corrected Total Header Charge Amount**
+   * **Credit Note Amount = $7,500.00 - $6,000.00 = $1,500.00**
 5. **处理发票：**系统按更正后的费用总额 $6,000.00 处理发票，并开具金额为 $1,500.00 的贷项通知单，以抵扣多收的金额。
 
 此方法可确保交易符合采购订单的原始条款，在更正多收费用的同时，保持财务处理准确。

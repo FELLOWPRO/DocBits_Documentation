@@ -12,27 +12,27 @@
 
 ## 示例：
 
-**采购订单 (PO)：**
+**Purchase Order (PO):**
 
-数量：100 件
+Quantity: 100 units
 
-单价：每件 $10.00
+Unit Price: $10.00 per unit
 
-总金额：$1,000.00
+Total Amount: $1,000.00
 
-**收到的发票：**
+**Invoice Received:**
 
-数量：101 件（在 1% 的容差范围内）
+Quantity: 101 units — 1% above the PO value, within the configured ±2% tolerance.
 
-单价：每件 $10.05（在 0.5% 的容差范围内）
+Unit Price: $10.05 per unit — 0.5% above the PO value, within the configured ±1% tolerance.
 
-总金额：$1,015.05
+Total Amount: $1,015.05
 
-**容差级别：**
+**Tolerance Levels:**
 
-数量容差：±2%
+Quantity Tolerance: ±2%
 
-单价容差：±1%
+Unit Price Tolerance: ±1%
 
 
 由于数量（101 件）和单价（$10.05）都在与采购订单相比可接受的容差范围内，系统将：
@@ -42,9 +42,9 @@
 
 2\. **计算总金额：**使用接受的数值计算总金额：
 
-• 总金额 = 数量 × 单价
+• Total Amount = Quantity × Unit Price
 
-• 总金额 = 101 件 × 每件 $10.05 = $1,015.05
+• Total Amount = 101 units × $10.05 per unit = $1,015.05
 
 3\. **处理发票：**系统将按总金额 $1,015.05 处理发票，并相应更新财务记录。
 

@@ -17,7 +17,7 @@ Charge Per Unit 超出容差，且尚未获得审批。
   * Quantity: 800 units
   * Total Charge Amount: $4,800.00
 * **Invoice Received:**
-  * Charge Per Unit: $7.00 (variance 16.67%, outside the ±5% tolerance, rejected)
+  * Charge Per Unit: $7.00 — 16.67% above the PO value, outside the configured ±5% tolerance; rejected.
   * Quantity: 800 units
   * Total Charge Amount: $5,600.00
 * **Tolerance Levels:**

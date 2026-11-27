@@ -26,13 +26,13 @@ Il sistema adegua la quantità al livello approvato, mantenendo il prezzo unitar
 
 Poiché la quantità (110 unità) supera il limite di tolleranza accettabile (variazione positiva del 10%) e non è approvata, ma il prezzo unitario ($8.00) rientra nella tolleranza, il sistema:
 
-1. **Reject the Excess Quantity:** Il sistema rifiuta la quantità che supera il livello di tolleranza approvato.
-2. **Adjust the Quantity:** Il sistema rettifica la quantità in modo che corrisponda al livello approvato specificato nell'ordine d'acquisto.
+1. **Rifiutare la quantità in eccesso:** Il sistema rifiuta la quantità che supera il livello di tolleranza approvato.
+2. **Rettifica la quantità:** Il sistema rettifica la quantità in modo che corrisponda al livello approvato specificato nell'ordine d'acquisto.
    * Approved Quantity = 100 units (from PO)
-3. **Maintain the Unit Price:** Il prezzo unitario di $8.00 per unità rientra nella tolleranza e rimane invariato.
-4. **Recalculate the Total Amount:** Il sistema calcola l'importo totale utilizzando la quantità approvata e il prezzo unitario accettato:
+3. **Mantenere il prezzo unitario:** Il prezzo unitario di $8.00 per unità rientra nella tolleranza e rimane invariato.
+4. **Ricalcola l'importo totale:** Il sistema calcola l'importo totale utilizzando la quantità approvata e il prezzo unitario accettato:
    * **Total Amount = Approved Quantity × Unit Price**
    * **Total Amount = 100 units × $8.00 per unit = $800.00**
-5. **Process the Invoice:** Il sistema elabora la fattura con l'importo totale rettificato di $800.00, riflettendo solo la quantità approvata e il prezzo unitario. La quantità in eccesso di 10 unità viene rifiutata e non fatturata.
+5. **Elabora la fattura:** Il sistema elabora la fattura con l'importo totale rettificato di $800.00, riflettendo solo la quantità approvata e il prezzo unitario. La quantità in eccesso di 10 unità viene rifiutata e non fatturata.
 
 Questo approccio garantisce che l'importo fatturato sia allineato ai termini concordati nell'ordine di acquisto, anche quando il fornitore tenta di fatturare una quantità in eccesso.

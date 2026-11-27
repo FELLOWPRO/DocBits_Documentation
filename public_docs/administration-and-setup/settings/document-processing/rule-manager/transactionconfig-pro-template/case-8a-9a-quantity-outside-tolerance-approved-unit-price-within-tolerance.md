@@ -26,11 +26,11 @@ Il sistema accetta la quantità approvata e il prezzo unitario come da fattura e
 
 Poiché la quantità (160 unità) supera il limite di tolleranza accettabile ma è stata approvata e il prezzo unitario ($12.00) rientra nell'intervallo accettabile, il sistema:
 
-1. **Accept the Approved Quantity:** Il sistema riconosce che la quantità è stata approvata nonostante sia al di fuori del normale intervallo di tolleranza.
-2. **Accept the Unit Price:** Il prezzo unitario di $12.00 per unità rientra nella tolleranza accettabile, quindi viene accettato come fatturato.
-3. **Process the Transaction:** Il sistema calcola l'importo totale utilizzando la quantità approvata e il prezzo unitario:
+1. **Accetta la quantità approvata:** Il sistema riconosce che la quantità è stata approvata nonostante sia al di fuori del normale intervallo di tolleranza.
+2. **Accetta il prezzo unitario:** Il prezzo unitario di $12.00 per unità rientra nella tolleranza accettabile, quindi viene accettato come fatturato.
+3. **Elabora la transazione:** Il sistema calcola l'importo totale utilizzando la quantità approvata e il prezzo unitario:
    * **Total Amount = Quantity × Unit Price**
    * **Total Amount = 160 units × $12.00 per unit = $1,920.00**
-4. **Finalize the Invoice:** Il sistema elabora la fattura con l'importo totale di $1,920.00, riflettendo la quantità approvata e il prezzo unitario accettato.
+4. **Finalizza la fattura:** Il sistema elabora la fattura con l'importo totale di $1,920.00, riflettendo la quantità approvata e il prezzo unitario accettato.
 
 Questo approccio consente al sistema di accogliere le variazioni approvate nella quantità garantendo al tempo stesso che il prezzo unitario rimanga all'interno dell'intervallo previsto, facilitando l'elaborazione regolare delle transazioni.

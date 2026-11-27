@@ -26,12 +26,12 @@ Il sistema elabora la transazione utilizzando i valori della fattura sia per la 
 
 Poiché sia la quantità (220 unità) che il prezzo unitario ($27.00) non rientrano nei limiti di tolleranza accettabili ma sono stati approvati, il sistema:
 
-1. **Accept the Approved Quantity:** Il sistema accetta la quantità fatturata di 220 unità poiché è stata approvata nonostante sia al di fuori dell'intervallo di tolleranza.
-2. **Accept the Approved Unit Price:** Il sistema accetta il prezzo unitario fatturato di $27.00 per unità poiché è stato approvato nonostante sia al di fuori dell'intervallo di tolleranza.
-3. **Calculate the Total Amount:** Il sistema calcola l'importo totale in base ai valori della fattura approvati:
+1. **Accetta la quantità approvata:** Il sistema accetta la quantità fatturata di 220 unità poiché è stata approvata nonostante sia al di fuori dell'intervallo di tolleranza.
+2. **Accetta il prezzo unitario approvato:** Il sistema accetta il prezzo unitario fatturato di $27.00 per unità poiché è stato approvato nonostante sia al di fuori dell'intervallo di tolleranza.
+3. **Calcola l'importo totale:** Il sistema calcola l'importo totale in base ai valori della fattura approvati:
    * **Total Amount = Quantity × Unit Price**
    * **Total Amount = 220 units × $27.00 per unit = $5,940.00**
-4. **Apply Necessary Adjustments or Line Charges:** Se applicabile, il sistema può applicare eventuali addebiti o rettifiche di linea aggiuntivi in base alle politiche dell'organizzazione per la gestione delle variazioni approvate.
-5. **Process the Invoice:** Il sistema elabora la fattura utilizzando i valori approvati sia per la quantità che per il prezzo unitario, finalizzando la transazione all'importo totale di $5,940.00.
+4. **Applica le rettifiche necessarie o gli addebiti di riga:** Se applicabile, il sistema può applicare eventuali addebiti o rettifiche di linea aggiuntivi in base alle politiche dell'organizzazione per la gestione delle variazioni approvate.
+5. **Elabora la fattura:** Il sistema elabora la fattura utilizzando i valori approvati sia per la quantità che per il prezzo unitario, finalizzando la transazione all'importo totale di $5,940.00.
 
 Questo approccio garantisce che la transazione venga elaborata in base alle variazioni approvate, consentendo flessibilità pur mantenendo registri finanziari accurati.

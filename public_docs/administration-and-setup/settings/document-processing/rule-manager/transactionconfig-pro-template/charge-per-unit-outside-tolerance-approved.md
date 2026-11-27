@@ -25,10 +25,10 @@ Il sistema elabora l'addebito unitario approvato, applicandolo alla transazione.
 
 Poiché l'addebito dell'intestazione per unità ($3.00) supera l'intervallo di tolleranza accettabile del 5% ma è stato approvato, il sistema:
 
-1. **Accept the Approved Header Charge Per Unit:** Il sistema accetta l'addebito dell'intestazione fatturata per unità di $3.00 poiché è stato approvato nonostante il superamento del limite di tolleranza.
-2. **Process the Header Charge:** Il sistema elabora la fattura utilizzando l'addebito unitario approvato e la quantità:
+1. **Accetta l'addebito dell'intestazione approvata per unitàà:** Il sistema accetta l'addebito dell'intestazione fatturata per unità di $3.00 poiché è stato approvato nonostante il superamento del limite di tolleranza.
+2. **Elabora l'addebito di testata:** Il sistema elabora la fattura utilizzando l'addebito unitario approvato e la quantità:
    * **Total Header Charge Amount = Quantity × Approved Header Charge Per Unit**
    * **Total Header Charge Amount = 2,000 units × $3.00 = $6,000.00**
-3. **Finalize the Invoice:** Il sistema elabora la transazione con le spese approvate, riflettendo l'importo totale di $6,000.00.
+3. **Finalizza la fattura:** Il sistema elabora la transazione con le spese approvate, riflettendo l'importo totale di $6,000.00.
 
 Questo approccio consente al sistema di accogliere le variazioni approvate nelle spese di intestazione, garantendo che la transazione venga elaborata in base all'approvazione mantenendo allo stesso tempo registri finanziari accurati.

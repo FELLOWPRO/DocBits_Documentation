@@ -26,17 +26,17 @@ Il sistema rifiuta i dati della fattura, rettifica i valori in modo che corrispo
 
 Poiché sia la quantità (140 unità) che il prezzo unitario ($33.00) non rientrano nei limiti di tolleranza accettabili e nessuno dei due è stato approvato, il sistema:
 
-1. **Reject the Invoice Data:** Il sistema non accetta la quantità fatturata o il prezzo unitario a causa della loro deviazione dai limiti di tolleranza.
-2. **Adjust the Quantity:** Il sistema rettifica la quantità in modo che corrisponda alla quantità dell'ordine d'acquisto originale.
+1. **Rifiuta i dati della fattura:** Il sistema non accetta la quantità fatturata o il prezzo unitario a causa della loro deviazione dai limiti di tolleranza.
+2. **Rettifica la quantità:** Il sistema rettifica la quantità in modo che corrisponda alla quantità dell'ordine d'acquisto originale.
    * Adjusted Quantity = 150 units (from PO)
-3. **Adjust the Unit Price:** Il sistema rettifica il prezzo unitario in modo che corrisponda al prezzo unitario dell'ordine di acquisto originale.
+3. **Rettifica il prezzo unitario:** Il sistema rettifica il prezzo unitario in modo che corrisponda al prezzo unitario dell'ordine di acquisto originale.
    * Adjusted Unit Price = $30.00 per unit (from PO)
-4. **Recalculate the Total Amount:** Il sistema ricalcola l'importo totale utilizzando la quantità rettificata e il prezzo unitario:
+4. **Ricalcola l'importo totale:** Il sistema ricalcola l'importo totale utilizzando la quantità rettificata e il prezzo unitario:
    * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 150 units × $30.00 per unit = $4,500.00**
-5. **Generate a Debit Note:** Poiché il totale della fattura originale era superiore al totale corretto, il sistema genera una nota di addebito per l'importo addebitato in eccesso.
+5. **Genera una nota di addebito:** Poiché il totale della fattura originale era superiore al totale corretto, il sistema genera una nota di addebito per l'importo addebitato in eccesso.
    * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
    * **Debit Note Amount = $4,620.00 - $4,500.00 = $120.00**
-6. **Process the Invoice:** Il sistema elabora la fattura con l'importo totale corretto di $4,500.00 ed emette una nota di addebito per $120.00 per compensare l'importo in eccesso.
+6. **Elabora la fattura:** Il sistema elabora la fattura con l'importo totale corretto di $4,500.00 ed emette una nota di addebito per $120.00 per compensare l'importo in eccesso.
 
 Questo approccio garantisce che la transazione finanziaria venga corretta per corrispondere ai termini dell'ordine di acquisto, mantenendo pratiche di fatturazione accurate ed eque.

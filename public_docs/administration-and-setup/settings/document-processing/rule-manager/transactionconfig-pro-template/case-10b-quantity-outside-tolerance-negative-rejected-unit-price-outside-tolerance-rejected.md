@@ -14,11 +14,11 @@ Le système rejette les données de la facture, ajuste les valeurs pour qu'elles
 
 * **Purchase Order (PO):**
   * Quantity: 150 units
-  * Prix unitaire : $30.00 par unité
+  * Unit Price: $30.00 per unit
   * Total Amount: $4,500.00
 * **Invoice Received:**
-  * Quantité : 140 unités (hors tolérance de -6.67%, rejeté)
-  * Prix unitaire : $33.00 par unité (hors tolérance de 10 %, rejeté)
+  * Quantity: 140 units — 6.67% below the PO value, outside the configured ±5% tolerance; rejected.
+  * Unit Price: $33.00 per unit — 10% above the PO value, outside the configured ±2% tolerance; rejected.
   * Total Amount: $4,620.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
@@ -28,15 +28,15 @@ Le système rejette les données de la facture, ajuste les valeurs pour qu'elles
 
 1. **Rejeter les données de la facture :** Le système n'accepte pas la quantité facturée ou le prix unitaire en raison de leur écart par rapport aux limites de tolérance.
 2. **Ajuster la quantité :** Le système ajuste la quantité pour qu'elle corresponde à la quantité du bon de commande d'origine.
-   * Quantité ajustée = 150 unités (à partir de PO)
+   * Adjusted Quantity = 150 units (from PO)
 3. **Ajuster le prix unitaire :** Le système ajuste le prix unitaire pour qu'il corresponde au prix unitaire du bon de commande d'origine.
-   * Prix unitaire ajusté = $30.00 par unité (à partir de PO)
+   * Adjusted Unit Price = $30.00 per unit (from PO)
 4. **Recalculer le montant total :** Le système recalcule le montant total en utilisant la quantité ajustée et le prix unitaire :
-   * **Montant total corrigé = Quantité ajustée × Prix unitaire ajusté**
-   * **Montant total corrigé = 150 unités × $30.00 par unité = $4,500.00**
+   * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
+   * **Corrected Total Amount = 150 units × $30.00 per unit = $4,500.00**
 5. **Générer une note de débit :** Le total de la facture originale étant supérieur au total corrigé, le système génère une note de débit pour le montant surfacturé.
-   * **Montant de la note de débit = Total de la facture originale - Montant total corrigé**
-   * **Montant de la note de débit = $4,620.00 - $4,500.00 = $120.00**
+   * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
+   * **Debit Note Amount = $4,620.00 - $4,500.00 = $120.00**
 6. **Traiter la facture :** Le système traite la facture pour un montant total corrigé de $4,500.00 et émet une note de débit de $120.00 pour compenser la surfacturation.
 
 Cette approche garantit que la transaction financière est corrigée pour correspondre aux conditions du bon de commande, tout en maintenant des pratiques de facturation précises et équitables.

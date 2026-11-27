@@ -17,18 +17,18 @@ Le système accepte les frais par unité et applique les frais approuvés, trait
   * Quantity: 1,000 units
   * Total Charge Amount: $4,500.00
 * **Invoice Received:**
-  * Frais par unité : $5.00 (hors tolérance de 11.11 %, approuvé)
+  * Charge Per Unit: $5.00 — 11.11% above the PO value, outside the configured ±5% tolerance; approved.
   * Quantity: 1,000 units
   * Total Charge Amount: $5,000.00
 * **Tolerance Levels:**
   * Charge Per Unit Tolerance: ±5%
 
-Puisque les frais par unité ($5.00) se situent en dehors de la plage de tolérance acceptable de 5 %, mais ont été approuvés, le système :
+Puisque le Charge Per Unit ($5.00) se situe en dehors de la plage de tolérance acceptable de 5 %, mais a été approuvé, le système :
 
 1. **Accepter les frais par unité approuvés :** Le système accepte les frais facturés par unité de $5.00 car ils ont été approuvés malgré le dépassement de la limite de tolérance.
 2. **Traitement de la transaction :** Le système traite la facture en utilisant les frais unitaires approuvés et la quantité :
-   * **Montant total des frais = Quantité × Frais approuvés par unité**
-   * **Montant total des frais = 1,000 unités × $5.00 = $5,000.00**
+   * **Total Charge Amount = Quantity × Approved Charge Per Unit**
+   * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**
 3. **Finaliser la facture :** Le système traite la transaction avec les frais approuvés, pour un montant total de $5,000.00.
 
 Cette approche garantit que le système peut prendre en compte les écarts de frais approuvés, ce qui permet une flexibilité tout en conservant des registres financiers précis.

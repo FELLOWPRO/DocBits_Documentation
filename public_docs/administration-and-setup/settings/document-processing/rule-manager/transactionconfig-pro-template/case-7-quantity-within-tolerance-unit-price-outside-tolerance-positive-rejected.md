@@ -26,16 +26,16 @@ Het systeem wijst de eenheidsprijs van de factuur af, past deze aan zodat deze o
 
 Omdat de hoeveelheid (198 eenheden) binnen het aanvaardbare tolerantiebereik valt, maar de eenheidsprijs ($17.00) de aanvaardbare tolerantie overschrijdt en niet is goedgekeurd, zal het systeem:
 
-1. **Reject the Invoice Unit Price:** Het systeem accepteert de gefactureerde eenheidsprijs van $17.00 niet.
-2. **Adjust the Unit Price:** Het systeem past de eenheidsprijs aan zodat deze overeenkomt met de oorspronkelijke eenheidsprijs van de inkooporder.
+1. **De gefactureerde eenheidsprijs afwijzen:** Het systeem accepteert de gefactureerde eenheidsprijs van $17.00 niet.
+2. **De eenheidsprijs aanpassen:** Het systeem past de eenheidsprijs aan zodat deze overeenkomt met de oorspronkelijke eenheidsprijs van de inkooporder.
    * Adjusted Unit Price = $15.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Met de aangepaste eenheidsprijs berekent het systeem het totaalbedrag opnieuw.
+3. **Het gecorrigeerde totaalbedrag berekenen:** Met de aangepaste eenheidsprijs berekent het systeem het totaalbedrag opnieuw.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**
-4. **Generate a Debit Note:** Het systeem genereert een debetnota om het verschil als gevolg van de te hoge facturering te verwerken.
+4. **Een debetnota genereren:** Het systeem genereert een debetnota om het verschil als gevolg van de te hoge facturering te verwerken.
    * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
    * **Debit Note Amount = $3,366.00 - $2,970.00 = $396.00**
    * Deze debetnota vertegenwoordigt het bedrag dat de leverancier te veel in rekening heeft gebracht.
-5. **Process the Invoice:** Het systeem verwerkt de factuur met het gecorrigeerde totaalbedrag van $2,970.00 en geeft een debetnota van $396.00 uit om de te hoge facturering te compenseren.
+5. **De factuur verwerken:** Het systeem verwerkt de factuur met het gecorrigeerde totaalbedrag van $2,970.00 en geeft een debetnota van $396.00 uit om de te hoge facturering te compenseren.
 
 Deze aanpak zorgt ervoor dat eventuele te hoge facturering wordt gecorrigeerd, zodat de transactie aansluit bij de voorwaarden van de inkooporder en de financiële belangen van het bedrijf worden beschermd.

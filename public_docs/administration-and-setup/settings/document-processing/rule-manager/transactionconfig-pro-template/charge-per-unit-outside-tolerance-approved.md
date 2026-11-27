@@ -25,10 +25,10 @@ Het systeem verwerkt de goedgekeurde kosten per eenheid en past deze toe op de t
 
 Aangezien de headertoeslag per eenheid ($3.00) het aanvaardbare tolerantiebereik van 5% overschrijdt, maar is goedgekeurd, zal het systeem:
 
-1. **Accept the Approved Header Charge Per Unit:** Het systeem accepteert het gefactureerde koptoeslag per eenheid van $3.00, aangezien dit is goedgekeurd ondanks het overschrijden van de tolerantielimiet.
-2. **Process the Header Charge:** Het systeem verwerkt de factuur met behulp van de goedgekeurde toeslag per eenheid en de hoeveelheid:
+1. **Accepteer het goedgekeurde koptoeslag per eenheid:** Het systeem accepteert het gefactureerde koptoeslag per eenheid van $3.00, aangezien dit is goedgekeurd ondanks het overschrijden van de tolerantielimiet.
+2. **Verwerk de koptoeslag:** Het systeem verwerkt de factuur met behulp van de goedgekeurde toeslag per eenheid en de hoeveelheid:
    * **Total Header Charge Amount = Quantity × Approved Header Charge Per Unit**
    * **Total Header Charge Amount = 2,000 units × $3.00 = $6,000.00**
-3. **Finalize the Invoice:** Het systeem verwerkt de transactie met de goedgekeurde kosten, die het totale bedrag van $6,000.00 weerspiegelen.
+3. **De factuur afronden:** Het systeem verwerkt de transactie met de goedgekeurde kosten, die het totale bedrag van $6,000.00 weerspiegelen.
 
 Dankzij deze aanpak kan het systeem rekening houden met goedgekeurde afwijkingen in de header-toeslagen, waardoor wordt gegarandeerd dat de transactie wordt verwerkt in overeenstemming met de goedkeuring, terwijl nauwkeurige financiële gegevens worden bijgehouden.

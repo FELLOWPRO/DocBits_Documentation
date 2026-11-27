@@ -26,11 +26,11 @@ Het systeem accepteert de goedgekeurde hoeveelheid en de eenheidsprijs volgens d
 
 Aangezien de hoeveelheid (160 eenheden) de aanvaardbare tolerantielimiet overschrijdt, maar is goedgekeurd, en de eenheidsprijs ($12.00) binnen het aanvaardbare bereik ligt, zal het systeem:
 
-1. **Accept the Approved Quantity:** Het systeem bevestigt dat de hoeveelheid is goedgekeurd ondanks dat deze buiten het normale tolerantiebereik ligt.
-2. **Accept the Unit Price:** De eenheidsprijs van $12.00 per eenheid valt binnen de aanvaardbare tolerantie en wordt daarom geaccepteerd als gefactureerd.
-3. **Process the Transaction:** Het systeem berekent het totaalbedrag met behulp van de goedgekeurde hoeveelheid en eenheidsprijs:
+1. **Accepteer de goedgekeurde hoeveelheid:** Het systeem bevestigt dat de hoeveelheid is goedgekeurd ondanks dat deze buiten het normale tolerantiebereik ligt.
+2. **Accepteer de eenheidsprijs:** De eenheidsprijs van $12.00 per eenheid valt binnen de aanvaardbare tolerantie en wordt daarom geaccepteerd als gefactureerd.
+3. **Verwerk de transactie:** Het systeem berekent het totaalbedrag met behulp van de goedgekeurde hoeveelheid en eenheidsprijs:
    * **Total Amount = Quantity × Unit Price**
    * **Total Amount = 160 units × $12.00 per unit = $1,920.00**
-4. **Finalize the Invoice:** Het systeem verwerkt de factuur met een totaalbedrag van $1,920.00, wat de goedgekeurde hoeveelheid en de geaccepteerde eenheidsprijs weergeeft.
+4. **De factuur voltooien:** Het systeem verwerkt de factuur met een totaalbedrag van $1,920.00, wat de goedgekeurde hoeveelheid en de geaccepteerde eenheidsprijs weergeeft.
 
 Dankzij deze aanpak kan het systeem rekening houden met goedgekeurde variaties in de hoeveelheid en tegelijkertijd ervoor zorgen dat de eenheidsprijs binnen het verwachte bereik blijft, wat een soepele transactieverwerking mogelijk maakt.

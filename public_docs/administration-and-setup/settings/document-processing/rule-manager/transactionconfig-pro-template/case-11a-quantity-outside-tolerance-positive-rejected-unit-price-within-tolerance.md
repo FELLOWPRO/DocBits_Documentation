@@ -26,13 +26,13 @@ Het systeem past de hoeveelheid aan tot het goedgekeurde niveau, handhaaft de ee
 
 Aangezien de hoeveelheid (110 eenheden) de aanvaardbare tolerantielimiet overschrijdt (positieve variantie van 10%) en niet is goedgekeurd, maar de eenheidsprijs ($8.00) binnen de tolerantie valt, zal het systeem:
 
-1. **Reject the Excess Quantity:** Het systeem wijst de hoeveelheid af die het goedgekeurde tolerantieniveau overschrijdt.
-2. **Adjust the Quantity:** Het systeem past de hoeveelheid aan zodat deze overeenkomt met het goedgekeurde niveau dat is opgegeven in de inkooporder.
+1. **De overtollige hoeveelheid afwijzen:** Het systeem wijst de hoeveelheid af die het goedgekeurde tolerantieniveau overschrijdt.
+2. **De hoeveelheid aanpassen:** Het systeem past de hoeveelheid aan zodat deze overeenkomt met het goedgekeurde niveau dat is opgegeven in de inkooporder.
    * Approved Quantity = 100 units (from PO)
-3. **Maintain the Unit Price:** De eenheidsprijs van $8.00 per eenheid valt binnen de tolerantie en blijft ongewijzigd.
-4. **Recalculate the Total Amount:** Het systeem berekent het totale bedrag met behulp van de goedgekeurde hoeveelheid en de geaccepteerde eenheidsprijs:
+3. **Handhaaf de eenheidsprijs:** De eenheidsprijs van $8.00 per eenheid valt binnen de tolerantie en blijft ongewijzigd.
+4. **Het totale bedrag opnieuw berekenen:** Het systeem berekent het totale bedrag met behulp van de goedgekeurde hoeveelheid en de geaccepteerde eenheidsprijs:
    * **Total Amount = Approved Quantity × Unit Price**
    * **Total Amount = 100 units × $8.00 per unit = $800.00**
-5. **Process the Invoice:** Het systeem verwerkt de factuur met het aangepaste totaalbedrag van $800.00, waarbij alleen de goedgekeurde hoeveelheid en eenheidsprijs worden weergegeven. De overtollige hoeveelheid van 10 eenheden wordt afgewezen en niet gefactureerd.
+5. **De factuur verwerken:** Het systeem verwerkt de factuur met het aangepaste totaalbedrag van $800.00, waarbij alleen de goedgekeurde hoeveelheid en eenheidsprijs worden weergegeven. De overtollige hoeveelheid van 10 eenheden wordt afgewezen en niet gefactureerd.
 
 Deze aanpak zorgt ervoor dat het gefactureerde bedrag in overeenstemming is met de overeengekomen voorwaarden in de inkooporder, zelfs wanneer de leverancier probeert een overtollige hoeveelheid te factureren.

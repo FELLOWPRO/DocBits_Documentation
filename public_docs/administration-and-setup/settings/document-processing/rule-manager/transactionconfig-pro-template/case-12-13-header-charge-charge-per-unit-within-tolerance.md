@@ -25,10 +25,10 @@ Het systeem verwerkt de kopheffing zoals gefactureerd en past deze zonder aanpas
 
 Omdat de headerkosten per eenheid ($3.55) binnen het aanvaardbare tolerantiebereik van 2% vallen in vergelijking met de inkooporder, zal het systeem:
 
-1. **Accept the Header Charge Per Unit:** Het systeem accepteert het gefactureerde koptoeslag per eenheid van $3.55, aangezien dit binnen de gedefinieerde tolerantielimiet valt.
-2. **Process the Header Charge:** Het systeem verwerkt de factuur met het totale bedrag aan kopkosten, gebaseerd op de gefactureerde kosten per eenheid en hoeveelheid:
+1. **Accepteer het koptoeslag per eenheid:** Het systeem accepteert het gefactureerde koptoeslag per eenheid van $3.55, aangezien dit binnen de gedefinieerde tolerantielimiet valt.
+2. **Verwerk de kopkosten:** Het systeem verwerkt de factuur met het totale bedrag aan kopkosten, gebaseerd op de gefactureerde kosten per eenheid en hoeveelheid:
    * **Total Header Charge Amount = Quantity × Header Charge Per Unit**
    * **Total Header Charge Amount = 1,200 units × $3.55 = $4,260.00**
-3. **Finalize the Invoice:** Het systeem verwerkt de transactie zonder enige aanpassingen en accepteert de factuur zoals deze is.
+3. **De factuur voltooien:** Het systeem verwerkt de transactie zonder enige aanpassingen en accepteert de factuur zoals deze is.
 
 Deze aanpak zorgt voor een soepele en efficiënte verwerking van transacties wanneer de headerkosten binnen het aanvaardbare tolerantiebereik vallen, waardoor onnodige afwijzingen of vertragingen worden vermeden.

@@ -26,17 +26,17 @@ Het systeem wijst de factuurgegevens af, past de waarden aan zodat deze overeenk
 
 Aangezien zowel de hoeveelheid (140 eenheden) als de eenheidsprijs ($33.00) buiten de aanvaardbare tolerantiegrenzen vallen en geen van beide is goedgekeurd, zal het systeem:
 
-1. **Reject the Invoice Data:** Het systeem accepteert de gefactureerde hoeveelheid of eenheidsprijs niet omdat deze afwijkt van de tolerantielimieten.
-2. **Adjust the Quantity:** Het systeem past de hoeveelheid aan zodat deze overeenkomt met de oorspronkelijke inkooporderhoeveelheid.
+1. **Weiger de factuurgegevens:** Het systeem accepteert de gefactureerde hoeveelheid of eenheidsprijs niet omdat deze afwijkt van de tolerantielimieten.
+2. **De hoeveelheid aanpassen:** Het systeem past de hoeveelheid aan zodat deze overeenkomt met de oorspronkelijke inkooporderhoeveelheid.
    * Adjusted Quantity = 150 units (from PO)
-3. **Adjust the Unit Price:** Het systeem past de eenheidsprijs aan zodat deze overeenkomt met de oorspronkelijke eenheidsprijs van de inkooporder.
+3. **De eenheidsprijs aanpassen:** Het systeem past de eenheidsprijs aan zodat deze overeenkomt met de oorspronkelijke eenheidsprijs van de inkooporder.
    * Adjusted Unit Price = $30.00 per unit (from PO)
-4. **Recalculate the Total Amount:** Het systeem herberekent het totaalbedrag met behulp van de aangepaste hoeveelheid en eenheidsprijs:
+4. **Herbereken het totaalbedrag:** Het systeem herberekent het totaalbedrag met behulp van de aangepaste hoeveelheid en eenheidsprijs:
    * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 150 units × $30.00 per unit = $4,500.00**
-5. **Generate a Debit Note:** Omdat het oorspronkelijke factuurtotaal hoger was dan het gecorrigeerde totaal, genereert het systeem een debetnota voor het te veel in rekening gebrachte bedrag.
+5. **Een debetnota genereren:** Omdat het oorspronkelijke factuurtotaal hoger was dan het gecorrigeerde totaal, genereert het systeem een debetnota voor het te veel in rekening gebrachte bedrag.
    * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
    * **Debit Note Amount = $4,620.00 - $4,500.00 = $120.00**
-6. **Process the Invoice:** Het systeem verwerkt de factuur met het gecorrigeerde totaalbedrag van $4,500.00 en geeft een debetnota uit van $120.00 om het te veel in rekening gebrachte bedrag te compenseren.
+6. **De factuur verwerken:** Het systeem verwerkt de factuur met het gecorrigeerde totaalbedrag van $4,500.00 en geeft een debetnota uit van $120.00 om het te veel in rekening gebrachte bedrag te compenseren.
 
 Deze aanpak zorgt ervoor dat de financiële transactie wordt gecorrigeerd zodat deze overeenkomt met de voorwaarden van de inkooporder, waardoor nauwkeurige en eerlijke factureringspraktijken worden gehandhaafd.

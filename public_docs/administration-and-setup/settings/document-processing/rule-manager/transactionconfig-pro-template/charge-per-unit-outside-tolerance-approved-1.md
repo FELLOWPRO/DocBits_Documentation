@@ -25,10 +25,10 @@ Het systeem accepteert de kosten per eenheid en past de goedgekeurde kosten toe,
 
 Aangezien de kosten per eenheid ($5.00) buiten het aanvaardbare tolerantiebereik van 5% vallen, maar wel zijn goedgekeurd, zal het systeem:
 
-1. **Accept the Approved Charge Per Unit:** Het systeem accepteert de gefactureerde kosten per eenheid van $5.00, aangezien deze zijn goedgekeurd ondanks het overschrijden van de tolerantielimiet.
-2. **Process the Transaction:** Het systeem verwerkt de factuur met behulp van de goedgekeurde kosten per eenheid en de hoeveelheid:
+1. **Accepteer de goedgekeurde kosten per eenheid:** Het systeem accepteert de gefactureerde kosten per eenheid van $5.00, aangezien deze zijn goedgekeurd ondanks het overschrijden van de tolerantielimiet.
+2. **De transactie verwerken:** Het systeem verwerkt de factuur met behulp van de goedgekeurde kosten per eenheid en de hoeveelheid:
    * **Total Charge Amount = Quantity × Approved Charge Per Unit**
    * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**
-3. **Finalize the Invoice:** Het systeem verwerkt de transactie met de goedgekeurde kosten, die het totale bedrag van $5,000.00 weerspiegelen.
+3. **De factuur afronden:** Het systeem verwerkt de transactie met de goedgekeurde kosten, die het totale bedrag van $5,000.00 weerspiegelen.
 
 Deze aanpak zorgt ervoor dat het systeem goedgekeurde afwijkingen in de kosten kan opvangen, waardoor flexibiliteit mogelijk is en tegelijkertijd nauwkeurige financiële gegevens worden bijgehouden.

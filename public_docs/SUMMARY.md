@@ -508,6 +508,7 @@
           * [Calculate PO unit price](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md)
           * [Purchase Order](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order.md)
           * [Export not matched PO lines](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/export-not-matched-po-lines.md)
+          * [Export quantity in base unit of measure](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/export-quantity-in-base-unit-of-measure.md)
           * [Purchase order tolerance settings / Additional purchase order tolerance](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md)
           * [Alternate Export](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/alternate-export.md)
           * [Purchase order disable statuses](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md)

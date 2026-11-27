@@ -110,6 +110,15 @@ The queue ranks A above B because **expected lift** is measured against your who
 
 Use the search box ("Search supplier number or name") to find a supplier. Click a row to open the **Supplier Diagnosis**.
 
+### Supplier or group view
+
+The queue has one row per supplier by default. The **Supplier | Group** switch next to the search box changes that:
+
+* **Supplier** lists every supplier key as it appears on your documents. This is the default and behaves like the queue before the graph existed.
+* **Group** collapses the supplier keys that DocBits grouped together into one row. A grouped row lists the merged names in the **Members** column and shows all of them in a tooltip.
+
+A grouped row does not open a **Supplier Diagnosis**, because the diagnosis works on a single supplier key. Switch back to **Supplier** and click the supplier you want. Until DocBits has built a graph for your organisation, the group view returns the same rows as the supplier view, without an error.
+
 ### Compare suppliers
 
 <figure><img src="../../../.gitbook/assets/touchless-compare-suppliers.png" alt="The Compare suppliers page with three suppliers side by side and a bar chart of their outcomes"><figcaption><p>Three suppliers side by side: pure rate, lost and recoverable documents, root cause, expected lift and a bar chart of the outcomes. Each <strong>Open</strong> leads to the Supplier Diagnosis. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
@@ -125,6 +134,26 @@ The comparison shows the suppliers side by side: **Pure rate**, **Lost documents
 The button **Analyse n clusters with AI** analyses the issue clusters with the highest touchless potential (at least a minimum number of documents each). It takes about 13 seconds per cluster and covers the **whole organisation**. Only administrators can start it.
 
 While it runs you see **Queued**, **Running**, **Done**, **Already analysed** or **Error** for each cluster, with a link **Open cluster**. If AI is switched off or not configured in the environment, the button is disabled with the reason, and **everything else on the page keeps working**.
+
+## Ontology: how DocBits groups your suppliers
+
+The area has two tabs: **Report** contains the dashboard described above, **Ontology** shows the supplier graph that the group view of the queue uses. The tab is read-only. It changes no setting and no document.
+
+DocBits derives the graph once a night from the documents your organisation has processed. A supplier node carries a name as it is printed on a document; an edge joins the names that DocBits reads as the same company, for example because the spelling differs only slightly or because both carry the same tax ID. Next to the title you see the version of the graph and when it was computed. **Reload** fetches the current graph again.
+
+The tab has three parts:
+
+| Part | Content |
+| --- | --- |
+| **Your suppliers, grouped** | The groups and how many spellings each one holds. A group with a single spelling is listed too. |
+| **How it all connects** | The graph: suppliers and supplier groups, the topic areas where invoices get stuck, the concrete reasons, and the fields that people have to correct most often. |
+| **Explanation** | The details of the selected node: **What this is based on** lists the evidence behind it, **Also written as** lists the other spellings DocBits has seen, and **fixed by DocBits** (with a lock icon) marks a node that DocBits maintains itself rather than your organisation. |
+
+The node types are described in plain language inside the tab: a supplier name is a name exactly as it appears on your documents, a topic area is a place where invoices typically get stuck and need a person, a reason is a concrete cause for a failed automatic run, and a field is a document field that people often have to correct or fill in.
+
+An empty graph is a normal state. It shows **DocBits is still learning** with the note that the overview is built every night and appears after the next run. A young organisation or a missed nightly run looks like this; it is not an error.
+
+The graph also works without a mouse: Tab moves to a group or a node, Enter or Space selects it and fills the **Explanation**.
 
 ## Work with Touchless Intelligence: a routine
 

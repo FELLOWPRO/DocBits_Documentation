@@ -16,6 +16,7 @@ Start with the matching rules and tolerances, then adjust the behaviour around m
 
 * [Purchase Order Matching Rules](purchase-order-matching-rules.md) and [Purchase order tolerance settings](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) define how invoice and purchase order lines are compared.
 * [Auto Match & Export options](auto-match-and-export-options.md), [Export not matched PO lines](export-not-matched-po-lines.md) and [Alternate Export](alternate-export.md) cover what happens after a match.
+* [Export quantity in base unit of measure](export-quantity-in-base-unit-of-measure.md) converts the exported quantity and unit price to the base unit of measure, for the Infor LN export.
 * [PO Table in Layout Builder](po-table-in-layout-builder.md), [Consumed PO Line Status](consumed-po-line-status.md) and [Calculate PO unit price](calculate-po-unit-price.md) change what users see in the matching view.
 * [Auto check for PO updates](auto-check-for-po-updates.md), [Purchase order disable statuses](purchase-order-disable-statuses.md) and [Update Document Purchase Order Status](update-document-purchase-order-status.md) control how purchase order data and statuses are kept current.
 * [Supplier Item Number Map](supplier-item-number-map-admin-documentation.md) and the general [Purchase Order](purchase-order.md) page provide further background.

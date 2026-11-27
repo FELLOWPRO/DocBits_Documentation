@@ -13,22 +13,22 @@ Il sistema accetta l'addebito per unità e applica gli addebiti approvati, elabo
 ## Esempio:
 
 * **Purchase Order (PO):**
-  * Costo per unità: $4.50
+  * Charge Per Unit: $4.50
   * Quantity: 1,000 units
-  * Importo totale della commissione: $4,500.00
+  * Total Charge Amount: $4,500.00
 * **Invoice Received:**
-  * Costo per unità: $5.00 (tolleranza esterna dell'11.11%, approvata)
+  * Charge Per Unit: $5.00 — 11.11% above the PO value, outside the configured ±5% tolerance; approved.
   * Quantity: 1,000 units
-  * Importo totale della commissione: $5,000.00
+  * Total Charge Amount: $5,000.00
 * **Tolerance Levels:**
-  * Tolleranza tariffa per unità: ±5%
+  * Charge Per Unit Tolerance: ±5%
 
-Poiché l'addebito per unità ($5.00) non rientra nell'intervallo di tolleranza accettabile del 5% ma è stato approvato, il sistema:
+Poiché il Charge Per Unit ($5.00) non rientra nell'intervallo di tolleranza accettabile del 5% ma è stato approvato, il sistema:
 
-1. **Accetta l'addebito approvato per unitàà:** Il sistema accetta l'addebito fatturato per unità di $5.00 poiché è stato approvato nonostante il superamento del limite di tolleranza.
+1. **Accetta l'addebito approvato per unità:** Il sistema accetta l'addebito fatturato per unità di $5.00 poiché è stato approvato nonostante il superamento del limite di tolleranza.
 2. **Elabora la transazione:** Il sistema elabora la fattura utilizzando la spesa unitaria approvata e la quantità:
-   * **Importo addebito totale = Quantità × Addebito approvato per unitàà**
-   * **Importo totale addebitato = 1,000 unità × $5.00 = $5,000.00**
+   * **Total Charge Amount = Quantity × Approved Charge Per Unit**
+   * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**
 3. **Finalizza la fattura:** Il sistema elabora la transazione con le spese approvate, riflettendo l'importo totale di $5,000.00.
 
 Questo approccio garantisce che il sistema possa accogliere le variazioni approvate delle tariffe, consentendo flessibilità pur mantenendo registrazioni finanziarie accurate.

@@ -13,22 +13,22 @@ Il sistema elabora l'addebito della testata come fatturato, applicandolo senza r
 ## Esempio:
 
 * **Purchase Order (PO):**
-  * Costo di intestazione per unità: $3.50
+  * Header Charge Per Unit: $3.50
   * Quantity: 1,200 units
-  * Importo totale addebito intestazione: $4,200.00
+  * Total Header Charge Amount: $4,200.00
 * **Invoice Received:**
-  * Addebito di intestazione per unità: $3.55 (entro la tolleranza dell'1.43%)
+  * Header Charge Per Unit: $3.55 — 1.43% above the PO value, within the configured ±2% tolerance.
   * Quantity: 1,200 units
-  * Importo totale addebito intestazione: $4,260.00
+  * Total Header Charge Amount: $4,260.00
 * **Tolerance Levels:**
-  * Tolleranza addebito intestazione per unità: ±2%
+  * Header Charge Per Unit Tolerance: ±2%
 
 Poiché l'addebito di testata per unità ($3.55) rientra nell'intervallo di tolleranza accettabile del 2% rispetto all'ordine di acquisto, il sistema:
 
-1. **Accetta l'addebito di intestazione per unitàà:** Il sistema accetta l'addebito di intestazione fatturato per unità di $3.55 poiché rientra nel limite di tolleranza definito.
+1. **Accetta l'addebito di intestazione per unità:** Il sistema accetta l'addebito di intestazione fatturato per unità di $3.55 poiché rientra nel limite di tolleranza definito.
 2. **Elabora l'addebito di intestazione:** Il sistema elabora la fattura con l'importo totale dell'addebito di intestazione in base all'addebito fatturato per unità e quantità:
-   * **Importo totale addebito intestazione = Quantità × Addebito intestazione per unitàà**
-   * **Importo totale addebito intestazione = 1,200 unità × $3.55 = $4,260.00**
+   * **Total Header Charge Amount = Quantity × Header Charge Per Unit**
+   * **Total Header Charge Amount = 1,200 units × $3.55 = $4,260.00**
 3. **Finalizza la fattura:** Il sistema elabora la transazione senza alcuna rettifica, accettando la fattura così com'è.
 
 Questo approccio garantisce un'elaborazione fluida ed efficiente delle transazioni quando le spese di intestazione rientrano nell'intervallo di tolleranza accettabile, evitando rifiuti o ritardi inutili.

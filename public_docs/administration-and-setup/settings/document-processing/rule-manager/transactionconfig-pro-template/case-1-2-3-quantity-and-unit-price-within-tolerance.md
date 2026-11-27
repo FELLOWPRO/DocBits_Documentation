@@ -32,20 +32,20 @@ Total Amount: $1,015.05
 
 Quantity Tolerance: ±2%
 
-Tolleranza prezzo unitario: ±1%
+Unit Price Tolerance: ±1%
 
 
 Poiché la quantità (101 unità) e il prezzo unitario ($10.05) rientrano entrambi nei livelli di tolleranza accettabili rispetto all'ordine di acquisto, il sistema:
 
 
-1\. **Accetta i valori della fattura:** La quantità e il prezzo unitario sulla fattura vengono accettati come validi perché rientrano nei limiti di tolleranza definiti.
+1\. **Accept the Invoice Values:** La quantità e il prezzo unitario sulla fattura vengono accettati come validi perché rientrano nei limiti di tolleranza definiti.
 
-2\. **Calcola l'importo totale:** L'importo totale viene calcolato utilizzando i valori accettati:
+2\. **Calculate the Total Amount:** L'importo totale viene calcolato utilizzando i valori accettati:
 
-• Importo totale = Quantità × Prezzo unitario
+• Total Amount = Quantity × Unit Price
 
-• Importo totale = 101 unità × $10.05 per unità = $1,015.05
+• Total Amount = 101 units × $10.05 per unit = $1,015.05
 
-3\. **Elabora la fattura:** La fattura viene elaborata con l'importo totale di $1,015.05 e i record finanziari vengono aggiornati di conseguenza.
+3\. **Process the Invoice:** La fattura viene elaborata con l'importo totale di $1,015.05 e i record finanziari vengono aggiornati di conseguenza.
 
 Questo approccio garantisce che discrepanze minori che rientrano entro livelli di tolleranza accettabili non portino al rifiuto delle fatture o a ritardi nei pagamenti, snellendo così il processo finanziario.

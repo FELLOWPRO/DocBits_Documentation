@@ -14,29 +14,29 @@ Il sistema rifiuta i dati della fattura, rettifica i valori in modo che corrispo
 
 * **Purchase Order (PO):**
   * Quantity: 150 units
-  * Prezzo unitario: $30.00 per unità
+  * Unit Price: $30.00 per unit
   * Total Amount: $4,500.00
 * **Invoice Received:**
-  * Quantità: 140 unità (tolleranza esterna di -6.67%, rifiutata)
-  * Prezzo unitario: $33.00 per unità (fuori tolleranza del 10%, rifiutato)
+  * Quantity: 140 units — 6.67% below the PO value, outside the configured ±5% tolerance; rejected.
+  * Unit Price: $33.00 per unit — 10% above the PO value, outside the configured ±2% tolerance; rejected.
   * Total Amount: $4,620.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Tolleranza prezzo unitario: ±2%
+  * Unit Price Tolerance: ±2%
 
 Poiché sia la quantità (140 unità) che il prezzo unitario ($33.00) non rientrano nei limiti di tolleranza accettabili e nessuno dei due è stato approvato, il sistema:
 
-1. **Rifiuta i dati della fattura:** Il sistema non accetta la quantità fatturata o il prezzo unitario a causa della loro deviazione dai limiti di tolleranza.
-2. **Rettifica la quantità:** Il sistema rettifica la quantità in modo che corrisponda alla quantità dell'ordine d'acquisto originale.
-   * Quantità rettificata = 150 unità (da PO)
-3. **Rettifica il prezzo unitario:** Il sistema rettifica il prezzo unitario in modo che corrisponda al prezzo unitario dell'ordine di acquisto originale.
-   * Prezzo unitario rettificato = $30.00 per unità (da PO)
-4. **Ricalcola l'importo totale:** Il sistema ricalcola l'importo totale utilizzando la quantità rettificata e il prezzo unitario:
-   * **Importo totale corretto = Quantità rettificata × Prezzo unitario rettificato**
-   * **Importo totale corretto = 150 unità × $30.00 per unitàà = $4,500.00**
-5. **Genera una nota di addebito:** Poiché il totale della fattura originale era superiore al totale corretto, il sistema genera una nota di addebito per l'importo addebitato in eccesso.
-   * **Importo della nota di addebito = Totale della fattura originale - Importo totale corretto**
-   * **Importo della nota di addebito = $4,620.00 - $4,500.00 = $120.00**
-6. **Elabora la fattura:** Il sistema elabora la fattura con l'importo totale corretto di $4,500.00 ed emette una nota di addebito per $120.00 per compensare l'importo in eccesso.
+1. **Reject the Invoice Data:** Il sistema non accetta la quantità fatturata o il prezzo unitario a causa della loro deviazione dai limiti di tolleranza.
+2. **Adjust the Quantity:** Il sistema rettifica la quantità in modo che corrisponda alla quantità dell'ordine d'acquisto originale.
+   * Adjusted Quantity = 150 units (from PO)
+3. **Adjust the Unit Price:** Il sistema rettifica il prezzo unitario in modo che corrisponda al prezzo unitario dell'ordine di acquisto originale.
+   * Adjusted Unit Price = $30.00 per unit (from PO)
+4. **Recalculate the Total Amount:** Il sistema ricalcola l'importo totale utilizzando la quantità rettificata e il prezzo unitario:
+   * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
+   * **Corrected Total Amount = 150 units × $30.00 per unit = $4,500.00**
+5. **Generate a Debit Note:** Poiché il totale della fattura originale era superiore al totale corretto, il sistema genera una nota di addebito per l'importo addebitato in eccesso.
+   * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
+   * **Debit Note Amount = $4,620.00 - $4,500.00 = $120.00**
+6. **Process the Invoice:** Il sistema elabora la fattura con l'importo totale corretto di $4,500.00 ed emette una nota di addebito per $120.00 per compensare l'importo in eccesso.
 
 Questo approccio garantisce che la transazione finanziaria venga corretta per corrispondere ai termini dell'ordine di acquisto, mantenendo pratiche di fatturazione accurate ed eque.

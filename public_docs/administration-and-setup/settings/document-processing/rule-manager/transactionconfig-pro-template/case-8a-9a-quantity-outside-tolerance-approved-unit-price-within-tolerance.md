@@ -14,23 +14,23 @@ Il sistema accetta la quantità approvata e il prezzo unitario come da fattura e
 
 * **Purchase Order (PO):**
   * Quantity: 150 units
-  * Prezzo unitario: $12.00 per unità
+  * Unit Price: $12.00 per unit
   * Total Amount: $1,800.00
 * **Invoice Received:**
-  * Quantità: 160 unità (tolleranza esterna del 6.67% ma approvata)
-  * Prezzo unitario: $12.00 per unità (entro la tolleranza)
+  * Quantity: 160 units — 6.67% above the PO value, outside the configured ±5% tolerance; approved.
+  * Unit Price: $12.00 per unit (within tolerance)
   * Total Amount: $1,920.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Tolleranza prezzo unitario: ±2%
+  * Unit Price Tolerance: ±2%
 
 Poiché la quantità (160 unità) supera il limite di tolleranza accettabile ma è stata approvata e il prezzo unitario ($12.00) rientra nell'intervallo accettabile, il sistema:
 
-1. **Accetta la quantità approvata:** Il sistema riconosce che la quantità è stata approvata nonostante sia al di fuori del normale intervallo di tolleranza.
-2. **Accetta il prezzo unitario:** Il prezzo unitario di $12.00 per unità rientra nella tolleranza accettabile, quindi viene accettato come fatturato.
-3. **Elabora la transazione:** Il sistema calcola l'importo totale utilizzando la quantità approvata e il prezzo unitario:
-   * **Importo totale = Quantità × Prezzo unitario**
-   * **Importo totale = 160 unità × $12.00 per unitàà = $1,920.00**
-4. **Finalizza la fattura:** Il sistema elabora la fattura con l'importo totale di $1,920.00, riflettendo la quantità approvata e il prezzo unitario accettato.
+1. **Accept the Approved Quantity:** Il sistema riconosce che la quantità è stata approvata nonostante sia al di fuori del normale intervallo di tolleranza.
+2. **Accept the Unit Price:** Il prezzo unitario di $12.00 per unità rientra nella tolleranza accettabile, quindi viene accettato come fatturato.
+3. **Process the Transaction:** Il sistema calcola l'importo totale utilizzando la quantità approvata e il prezzo unitario:
+   * **Total Amount = Quantity × Unit Price**
+   * **Total Amount = 160 units × $12.00 per unit = $1,920.00**
+4. **Finalize the Invoice:** Il sistema elabora la fattura con l'importo totale di $1,920.00, riflettendo la quantità approvata e il prezzo unitario accettato.
 
 Questo approccio consente al sistema di accogliere le variazioni approvate nella quantità garantendo al tempo stesso che il prezzo unitario rimanga all'interno dell'intervallo previsto, facilitando l'elaborazione regolare delle transazioni.

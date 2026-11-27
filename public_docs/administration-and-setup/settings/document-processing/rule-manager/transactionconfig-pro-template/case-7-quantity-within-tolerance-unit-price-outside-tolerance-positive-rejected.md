@@ -26,16 +26,16 @@ Il sistema rifiuta il prezzo unitario della fattura, lo rettifica per allinearlo
 
 Poiché la quantità (198 unità) rientra nell'intervallo di tolleranza accettabile ma il prezzo unitario ($17.00) supera la tolleranza accettabile e non è approvato, il sistema:
 
-1. **Rifiuta il prezzo unitario della fattura:** il sistema non accetta il prezzo unitario fatturato di $17.00.
-2. **Rettifica il prezzo unitario:** il sistema rettifica il prezzo unitario per allinearlo al prezzo unitario dell'ordine di acquisto originale.
-   * Adjusted Unit Price = $15.00 (dalla PO)
-3. **Calcola l'importo totale corretto:** usando il prezzo unitario rettificato, il sistema ricalcola l'importo totale.
+1. **Reject the Invoice Unit Price:** il sistema non accetta il prezzo unitario fatturato di $17.00.
+2. **Adjust the Unit Price:** il sistema rettifica il prezzo unitario per allinearlo al prezzo unitario dell'ordine di acquisto originale.
+   * Adjusted Unit Price = $15.00 (from PO)
+3. **Calculate the Corrected Total Amount:** usando il prezzo unitario rettificato, il sistema ricalcola l'importo totale.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**
-4. **Genera una nota di addebito:** il sistema genera una nota di addebito per tenere conto della differenza dovuta all'addebito in eccesso.
+4. **Generate a Debit Note:** il sistema genera una nota di addebito per tenere conto della differenza dovuta all'addebito in eccesso.
    * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
    * **Debit Note Amount = $3,366.00 - $2,970.00 = $396.00**
    * Questa nota di addebito rappresenta l'importo addebitato in eccesso dal fornitore.
-5. **Elabora la fattura:** il sistema elabora la fattura con l'importo totale corretto di $2,970.00 ed emette una nota di addebito di $396.00 per compensare l'addebito in eccesso.
+5. **Process the Invoice:** il sistema elabora la fattura con l'importo totale corretto di $2,970.00 ed emette una nota di addebito di $396.00 per compensare l'addebito in eccesso.
 
 Questo approccio garantisce che qualsiasi addebito in eccesso venga corretto, allineando la transazione ai termini dell'ordine di acquisto e tutelando gli interessi finanziari dell'azienda.

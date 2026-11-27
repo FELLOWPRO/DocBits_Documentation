@@ -14,25 +14,25 @@ Het systeem past de hoeveelheid en de eenheidsprijs aan zodat deze overeenkomen 
 
 * **Purchase Order (PO):**
   * Quantity: 200 units
-  * Eenheidsprijs: $50.00 per eenheid
+  * Unit Price: $50.00 per unit
   * Total Amount: $10,000.00
 * **Invoice Received:**
-  * Aantal: 220 stuks (buiten tolerantie van 10%, afgekeurd)
-  * Eenheidsprijs: $55.00 per eenheid (buiten tolerantie van 10%, afgewezen)
+  * Quantity: 220 units — 10% above the PO value, outside the configured ±5% tolerance; rejected.
+  * Unit Price: $55.00 per unit — 10% above the PO value, outside the configured ±2% tolerance; rejected.
   * Total Amount: $12,100.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Tolerantie per eenheidsprijs: ±2%
+  * Unit Price Tolerance: ±2%
 
 Aangezien zowel de hoeveelheid (220 eenheden) als de eenheidsprijs ($55.00) de aanvaardbare tolerantielimieten overschrijden en geen van beide is goedgekeurd, zal het systeem:
 
-1. **Weiger de overtollige hoeveelheid:** Het systeem accepteert de gefactureerde hoeveelheid van 220 eenheden niet en past deze aan zodat deze overeenkomt met de oorspronkelijke inkooporder.
-   * Aangepaste hoeveelheid = 200 eenheden (vanaf PO)
-2. **De eenheidsprijs van de factuur afwijzen:** Het systeem accepteert de gefactureerde eenheidsprijs van $55.00 niet en past deze aan zodat deze overeenkomt met de oorspronkelijke inkooporder.
-   * Aangepaste eenheidsprijs = $50.00 per eenheid (vanaf PO)
-3. **Herbereken het totaalbedrag:** Het systeem berekent het totaalbedrag met behulp van de aangepaste hoeveelheid en de eenheidsprijs:
-   * **Gecorrigeerd totaalbedrag = Aangepaste hoeveelheid × Aangepaste eenheidsprijs**
-   * **Gecorrigeerd totaalbedrag = 200 eenheden × $50.00 per eenheid = $10,000.00**
-4. **De factuur verwerken:** Het systeem verwerkt de factuur met het gecorrigeerde totaalbedrag van $10,000.00, waarbij de overtollige hoeveelheid en de hogere eenheidsprijs worden afgewezen.
+1. **Reject the Excess Quantity:** Het systeem accepteert de gefactureerde hoeveelheid van 220 eenheden niet en past deze aan zodat deze overeenkomt met de oorspronkelijke inkooporder.
+   * Adjusted Quantity = 200 units (from PO)
+2. **Reject the Invoice Unit Price:** Het systeem accepteert de gefactureerde eenheidsprijs van $55.00 niet en past deze aan zodat deze overeenkomt met de oorspronkelijke inkooporder.
+   * Adjusted Unit Price = $50.00 per unit (from PO)
+3. **Recalculate the Total Amount:** Het systeem berekent het totaalbedrag met behulp van de aangepaste hoeveelheid en de eenheidsprijs:
+   * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
+   * **Corrected Total Amount = 200 units × $50.00 per unit = $10,000.00**
+4. **Process the Invoice:** Het systeem verwerkt de factuur met het gecorrigeerde totaalbedrag van $10,000.00, waarbij de overtollige hoeveelheid en de hogere eenheidsprijs worden afgewezen.
 
 Deze aanpak zorgt ervoor dat de transactie in lijn is met de oorspronkelijke voorwaarden van de inkooporder, waarbij consistente prijs- en hoeveelheidscontroles worden gehandhaafd en niet-goedgekeurde afwijkingen worden afgewezen.

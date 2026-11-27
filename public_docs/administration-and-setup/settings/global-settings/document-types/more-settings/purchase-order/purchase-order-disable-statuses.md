@@ -2,7 +2,7 @@
 
 ## **Panoramica**
 
-L'impostazione **PO disable statuses** (Purchase order disable statuses) stabilisce quali stati delle righe di Purchase Order (PO) sono bloccati nella schermata di matching. Una riga con uno stato disabilitato configurato viene mostrata barrata e non può essere trascinata in un abbinamento. Usare l'impostazione per controllare l'idoneità al matching per il tipo di documento interessato.
+L'impostazione **PO disable statuses** stabilisce quali stati delle righe di Purchase Order (PO) sono bloccati nella schermata di matching. Una riga con uno stato disabilitato configurato viene mostrata barrata e non può essere trascinata in un abbinamento. Usare l'impostazione per controllare l'idoneità al matching per il tipo di documento interessato.
 
 ## **Passaggi di attivazione**
 

@@ -12,27 +12,27 @@ O sistema ajusta a quantidade ao valor aprovado, mantém o preço unitário e pr
 
 ## Exemplo:
 
-* **Pedido de compra (PO):**
-  * Quantidade: 100 unidades
-  * Preço unitário: $8.00 por unidade
-  * Valor total: $800.00
-* **Fatura recebida:**
-  * Quantidade: 110 unidades (fora da tolerância de 10%, rejeitado)
-  * Preço unitário: $8.00 por unidade (dentro da tolerância)
-  * Valor total: $880.00
-* **Níveis de tolerância:**
-  * Tolerância da quantidade: ±5%
-  * Tolerância do preço unitário: ±2%
+* **Purchase Order (PO):**
+  * Quantity: 100 units
+  * Unit Price: $8.00 per unit
+  * Total Amount: $800.00
+* **Invoice Received:**
+  * Quantity: 110 units — 10% above the PO value, outside the configured ±5% tolerance; rejected.
+  * Unit Price: $8.00 per unit (within tolerance)
+  * Total Amount: $880.00
+* **Tolerance Levels:**
+  * Quantity Tolerance: ±5%
+  * Unit Price Tolerance: ±2%
 
 Como a quantidade (110 unidades) excede o limite superior de tolerância, com um desvio de 10% não aprovado, mas o preço unitário ($8.00) está dentro da tolerância, o sistema irá:
 
-1. **Rejeitar a quantidade excedente:** o sistema rejeita a quantidade que excede a tolerância aprovada.
-2. **Ajustar a quantidade:** o sistema ajusta a quantidade ao valor aprovado no pedido de compra.
-   * Quantidade aprovada = 100 unidades (do pedido de compra)
-3. **Manter o preço unitário:** o preço de $8.00 por unidade está dentro da tolerância e mantém-se.
-4. **Recalcular o valor total:** o sistema calcula o total com a quantidade aprovada e o preço unitário aceite:
-   * **Valor total = Quantidade aprovada × Preço unitário**
-   * **Valor total = 100 unidades × $8.00 por unidade = $800.00**
-5. **Processar a fatura:** o sistema processa a fatura com o total ajustado de $800.00, refletindo apenas a quantidade e o preço aprovados. As 10 unidades excedentes são rejeitadas e não são faturadas.
+1. **Reject the Excess Quantity:** o sistema rejeita a quantidade que excede a tolerância aprovada.
+2. **Adjust the Quantity:** o sistema ajusta a quantidade ao valor aprovado no pedido de compra.
+   * Approved Quantity = 100 units (from PO)
+3. **Maintain the Unit Price:** o preço de $8.00 por unidade está dentro da tolerância e mantém-se.
+4. **Recalculate the Total Amount:** o sistema calcula o total com a quantidade aprovada e o preço unitário aceite:
+   * **Total Amount = Approved Quantity × Unit Price**
+   * **Total Amount = 100 units × $8.00 per unit = $800.00**
+5. **Process the Invoice:** o sistema processa a fatura com o total ajustado de $800.00, refletindo apenas a quantidade e o preço aprovados. As 10 unidades excedentes são rejeitadas e não são faturadas.
 
 Esta abordagem alinha o valor faturado com as condições do pedido de compra, mesmo quando o fornecedor tenta faturar uma quantidade superior.

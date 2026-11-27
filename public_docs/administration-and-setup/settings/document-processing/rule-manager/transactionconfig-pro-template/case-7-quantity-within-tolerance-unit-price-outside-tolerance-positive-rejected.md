@@ -26,16 +26,16 @@ O sistema rejeita o preço unitário da fatura, ajusta-o para corresponder ao pe
 
 Uma vez que a quantidade (198 unidades) está dentro do intervalo de tolerância aceitável, mas o preço unitário ($17.00) excede a tolerância aceitável e não foi aprovado, o sistema irá:
 
-1. **Rejeitar o preço unitário da fatura:** o sistema não aceita o preço unitário faturado de $17.00.
-2. **Ajustar o preço unitário:** o sistema ajusta o preço unitário para corresponder ao preço unitário do pedido de compra original.
-   * Adjusted Unit Price = $15.00 (da PO)
-3. **Calcular o montante total corrigido:** com o preço unitário ajustado, o sistema recalcula o montante total.
+1. **Reject the Invoice Unit Price:** o sistema não aceita o preço unitário faturado de $17.00.
+2. **Adjust the Unit Price:** o sistema ajusta o preço unitário para corresponder ao preço unitário do pedido de compra original.
+   * Adjusted Unit Price = $15.00 (from PO)
+3. **Calculate the Corrected Total Amount:** com o preço unitário ajustado, o sistema recalcula o montante total.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**
-4. **Gerar uma nota de débito:** o sistema gera uma nota de débito para refletir a diferença resultante do valor cobrado em excesso.
+4. **Generate a Debit Note:** o sistema gera uma nota de débito para refletir a diferença resultante do valor cobrado em excesso.
    * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
    * **Debit Note Amount = $3,366.00 - $2,970.00 = $396.00**
    * Esta nota de débito representa o montante cobrado em excesso pelo fornecedor.
-5. **Processar a fatura:** o sistema processa a fatura com o montante total corrigido de $2,970.00 e emite uma nota de débito de $396.00 para compensar o valor cobrado em excesso.
+5. **Process the Invoice:** o sistema processa a fatura com o montante total corrigido de $2,970.00 e emite uma nota de débito de $396.00 para compensar o valor cobrado em excesso.
 
 Esta abordagem garante que qualquer cobrança em excesso é corrigida, alinhando a transação com as condições do pedido de compra e protegendo os interesses financeiros da empresa.

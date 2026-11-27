@@ -25,10 +25,10 @@ Le système accepte les frais par unité et applique les frais approuvés, trait
 
 Puisque les frais par unité ($5.00) se situent en dehors de la plage de tolérance acceptable de 5 %, mais ont été approuvés, le système :
 
-1. **Accept the Approved Charge Per Unit:** Le système accepte les frais facturés par unité de $5.00 car ils ont été approuvés malgré le dépassement de la limite de tolérance.
-2. **Process the Transaction:** Le système traite la facture en utilisant les frais unitaires approuvés et la quantité :
+1. **Accepter les frais par unité approuvés :** Le système accepte les frais facturés par unité de $5.00 car ils ont été approuvés malgré le dépassement de la limite de tolérance.
+2. **Traitement de la transaction :** Le système traite la facture en utilisant les frais unitaires approuvés et la quantité :
    * **Total Charge Amount = Quantity × Approved Charge Per Unit**
    * **Total Charge Amount = 1,000 units × $5.00 = $5,000.00**
-3. **Finalize the Invoice:** Le système traite la transaction avec les frais approuvés, pour un montant total de $5,000.00.
+3. **Finaliser la facture :** Le système traite la transaction avec les frais approuvés, pour un montant total de $5,000.00.
 
 Cette approche garantit que le système peut prendre en compte les écarts de frais approuvés, ce qui permet une flexibilité tout en conservant des registres financiers précis.

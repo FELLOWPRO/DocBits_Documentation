@@ -26,17 +26,17 @@ Le système rejette les données de la facture, ajuste les valeurs pour qu'elles
 
 Étant donné que la quantité (140 unités) et le prix unitaire ($33.00) se situent en dehors des limites de tolérance acceptables et qu'aucun des deux n'a été approuvé, le système :
 
-1. **Reject the Invoice Data:** Le système n'accepte pas la quantité facturée ou le prix unitaire en raison de leur écart par rapport aux limites de tolérance.
-2. **Adjust the Quantity:** Le système ajuste la quantité pour qu'elle corresponde à la quantité du bon de commande d'origine.
+1. **Rejeter les données de la facture :** Le système n'accepte pas la quantité facturée ou le prix unitaire en raison de leur écart par rapport aux limites de tolérance.
+2. **Ajuster la quantité :** Le système ajuste la quantité pour qu'elle corresponde à la quantité du bon de commande d'origine.
    * Adjusted Quantity = 150 units (from PO)
-3. **Adjust the Unit Price:** Le système ajuste le prix unitaire pour qu'il corresponde au prix unitaire du bon de commande d'origine.
+3. **Ajuster le prix unitaire :** Le système ajuste le prix unitaire pour qu'il corresponde au prix unitaire du bon de commande d'origine.
    * Adjusted Unit Price = $30.00 per unit (from PO)
-4. **Recalculate the Total Amount:** Le système recalcule le montant total en utilisant la quantité ajustée et le prix unitaire :
+4. **Recalculer le montant total :** Le système recalcule le montant total en utilisant la quantité ajustée et le prix unitaire :
    * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 150 units × $30.00 per unit = $4,500.00**
-5. **Generate a Debit Note:** Le total de la facture originale étant supérieur au total corrigé, le système génère une note de débit pour le montant surfacturé.
+5. **Générer une note de débit :** Le total de la facture originale étant supérieur au total corrigé, le système génère une note de débit pour le montant surfacturé.
    * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
    * **Debit Note Amount = $4,620.00 - $4,500.00 = $120.00**
-6. **Process the Invoice:** Le système traite la facture pour un montant total corrigé de $4,500.00 et émet une note de débit de $120.00 pour compenser la surfacturation.
+6. **Traiter la facture :** Le système traite la facture pour un montant total corrigé de $4,500.00 et émet une note de débit de $120.00 pour compenser la surfacturation.
 
 Cette approche garantit que la transaction financière est corrigée pour correspondre aux conditions du bon de commande, tout en maintenant des pratiques de facturation précises et équitables.

@@ -26,11 +26,11 @@ Le système accepte la quantité approuvée et le prix unitaire selon la facture
 
 Étant donné que la quantité (160 unités) dépasse la limite de tolérance acceptable mais a été approuvée et que le prix unitaire ($12.00) se situe dans la fourchette acceptable, le système :
 
-1. **Accept the Approved Quantity:** Le système reconnaît que la quantité a été approuvée même si elle est en dehors de la plage de tolérance normale.
-2. **Accept the Unit Price:** Le prix unitaire de $12.00 par unité se situe dans la tolérance acceptable, il est donc accepté tel que facturé.
-3. **Process the Transaction:** Le système calcule le montant total en utilisant la quantité approuvée et le prix unitaire :
+1. **Accepter la quantité approuvée :** Le système reconnaît que la quantité a été approuvée même si elle est en dehors de la plage de tolérance normale.
+2. **Accepter le prix unitaire :** Le prix unitaire de $12.00 par unité se situe dans la tolérance acceptable, il est donc accepté tel que facturé.
+3. **Traitez la transaction :** Le système calcule le montant total en utilisant la quantité approuvée et le prix unitaire :
    * **Total Amount = Quantity × Unit Price**
    * **Total Amount = 160 units × $12.00 per unit = $1,920.00**
-4. **Finalize the Invoice:** Le système traite la facture pour un montant total de $1,920.00, correspondant à la quantité approuvée et au prix unitaire accepté.
+4. **Finaliser la facture :** Le système traite la facture pour un montant total de $1,920.00, correspondant à la quantité approuvée et au prix unitaire accepté.
 
 Cette approche permet au système de prendre en compte les écarts de quantité approuvés tout en garantissant que le prix unitaire reste dans la fourchette prévue, facilitant ainsi le traitement fluide des transactions.

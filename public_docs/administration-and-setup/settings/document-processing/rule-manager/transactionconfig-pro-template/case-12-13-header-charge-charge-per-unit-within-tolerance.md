@@ -25,10 +25,10 @@ Le système traite les frais d'en-tête tels que facturés et les applique sans 
 
 Étant donné que les frais d'en-tête par unité ($3.55) se situent dans la plage de tolérance acceptable de 2 % par rapport au bon de commande, le système :
 
-1. **Accept the Header Charge Per Unit:** Le système accepte les frais d'en-tête facturés par unité de $3.55 car ils se situent dans la limite de tolérance définie.
-2. **Process the Header Charge:** Le système traite la facture avec le montant total des frais d'en-tête en fonction des frais facturés par unité et par quantité :
+1. **Accepter les frais d'en-tête par unité :** Le système accepte les frais d'en-tête facturés par unité de $3.55 car ils se situent dans la limite de tolérance définie.
+2. **Traitement des frais d'en-tête :** Le système traite la facture avec le montant total des frais d'en-tête en fonction des frais facturés par unité et par quantité :
    * **Total Header Charge Amount = Quantity × Header Charge Per Unit**
    * **Total Header Charge Amount = 1,200 units × $3.55 = $4,260.00**
-3. **Finalize the Invoice:** Le système traite la transaction sans aucun ajustement, acceptant la facture telle quelle.
+3. **Finaliser la facture :** Le système traite la transaction sans aucun ajustement, acceptant la facture telle quelle.
 
 Cette approche garantit un traitement fluide et efficace des transactions lorsque les frais d'en-tête se situent dans la plage de tolérance acceptable, évitant ainsi les rejets ou les retards inutiles.

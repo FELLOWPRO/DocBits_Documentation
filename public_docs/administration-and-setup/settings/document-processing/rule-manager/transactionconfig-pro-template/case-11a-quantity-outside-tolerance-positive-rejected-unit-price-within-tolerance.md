@@ -26,13 +26,13 @@ Le système ajuste la quantité au niveau approuvé, en conservant le prix unita
 
 Étant donné que la quantité (110 unités) dépasse la limite de tolérance acceptable (écart positif de 10 %) et n'est pas approuvée, mais que le prix unitaire ($8.00) est dans la tolérance, le système :
 
-1. **Reject the Excess Quantity:** Le système rejette la quantité qui dépasse le niveau de tolérance approuvé.
-2. **Adjust the Quantity:** Le système ajuste la quantité pour qu'elle corresponde au niveau approuvé spécifié dans le bon de commande.
+1. **Rejeter la quantité excédentaire :** Le système rejette la quantité qui dépasse le niveau de tolérance approuvé.
+2. **Ajuster la quantité :** Le système ajuste la quantité pour qu'elle corresponde au niveau approuvé spécifié dans le bon de commande.
    * Approved Quantity = 100 units (from PO)
-3. **Maintain the Unit Price:** Le prix unitaire de $8.00 par unité est dans les limites de tolérance et reste inchangé.
-4. **Recalculate the Total Amount:** Le système calcule le montant total en utilisant la quantité approuvée et le prix unitaire accepté :
+3. **Maintenir le prix unitaire :** Le prix unitaire de $8.00 par unité est dans les limites de tolérance et reste inchangé.
+4. **Recalculer le montant total :** Le système calcule le montant total en utilisant la quantité approuvée et le prix unitaire accepté :
    * **Total Amount = Approved Quantity × Unit Price**
    * **Total Amount = 100 units × $8.00 per unit = $800.00**
-5. **Process the Invoice:** Le système traite la facture avec le montant total ajusté de $800.00, reflétant uniquement la quantité et le prix unitaire approuvés. La quantité excédentaire de 10 unités est rejetée et non facturée.
+5. **Traitement de la facture :** Le système traite la facture avec le montant total ajusté de $800.00, reflétant uniquement la quantité et le prix unitaire approuvés. La quantité excédentaire de 10 unités est rejetée et non facturée.
 
 Cette approche garantit que le montant facturé correspond aux conditions convenues dans le bon de commande, même lorsque le fournisseur tente de facturer une quantité excédentaire.

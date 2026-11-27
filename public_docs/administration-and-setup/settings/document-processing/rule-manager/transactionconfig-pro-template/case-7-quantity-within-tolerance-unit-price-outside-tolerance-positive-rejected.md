@@ -26,16 +26,16 @@ Le système rejette le prix unitaire facturé, l'ajuste pour correspondre au bon
 
 La quantité (198 unités) se situe dans la plage de tolérance acceptable, mais le prix unitaire ($17.00) dépasse la tolérance acceptable et n'est pas approuvé ; le système va donc :
 
-1. **Reject the Invoice Unit Price:** Le système n'accepte pas le prix unitaire facturé de $17.00.
-2. **Adjust the Unit Price:** Le système ajuste le prix unitaire pour correspondre au prix unitaire du bon de commande d'origine.
+1. **Rejeter le prix unitaire facturé:** Le système n'accepte pas le prix unitaire facturé de $17.00.
+2. **Ajuster le prix unitaire:** Le système ajuste le prix unitaire pour correspondre au prix unitaire du bon de commande d'origine.
    * Adjusted Unit Price = $15.00 (from PO)
-3. **Calculate the Corrected Total Amount:** À l'aide du prix unitaire ajusté, le système recalcule le montant total.
+3. **Calculer le montant total corrigé:** À l'aide du prix unitaire ajusté, le système recalcule le montant total.
    * **Corrected Total Amount = Quantity × Adjusted Unit Price**
    * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**
-4. **Generate a Debit Note:** Le système génère une note de débit pour tenir compte de l'écart dû à la surfacturation.
+4. **Générer une note de débit:** Le système génère une note de débit pour tenir compte de l'écart dû à la surfacturation.
    * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
    * **Debit Note Amount = $3,366.00 - $2,970.00 = $396.00**
    * Cette note de débit représente le montant surfacturé par le fournisseur.
-5. **Process the Invoice:** Le système traite la facture avec le montant total corrigé de $2,970.00 et émet une note de débit de $396.00 pour compenser la surfacturation.
+5. **Traiter la facture:** Le système traite la facture avec le montant total corrigé de $2,970.00 et émet une note de débit de $396.00 pour compenser la surfacturation.
 
 Cette approche garantit que toute surfacturation est corrigée, en alignant la transaction sur les conditions du bon de commande et en protégeant les intérêts financiers de l'entreprise.

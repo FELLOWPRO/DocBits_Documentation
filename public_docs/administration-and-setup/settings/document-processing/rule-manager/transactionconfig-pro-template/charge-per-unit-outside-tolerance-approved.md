@@ -25,10 +25,10 @@ Le système traite les frais unitaires approuvés et les applique à la transact
 
 Étant donné que les frais d’en-tête par unité ($3.00) dépassent la plage de tolérance acceptable de 5 % mais ont été approuvés, le système :
 
-1. **Accept the Approved Header Charge Per Unit:** Le système accepte les frais d'en-tête facturés par unité de $3.00 car ils ont été approuvés malgré le dépassement de la limite de tolérance.
-2. **Process the Header Charge:** Le système traite la facture en utilisant les frais par unité approuvés et la quantité :
+1. **Accepter les frais d'en-tête approuvés par unité :** Le système accepte les frais d'en-tête facturés par unité de $3.00 car ils ont été approuvés malgré le dépassement de la limite de tolérance.
+2. **Traitement des frais d'en-tête :** Le système traite la facture en utilisant les frais par unité approuvés et la quantité :
    * **Total Header Charge Amount = Quantity × Approved Header Charge Per Unit**
    * **Total Header Charge Amount = 2,000 units × $3.00 = $6,000.00**
-3. **Finalize the Invoice:** Le système traite la transaction avec les frais approuvés, pour un montant total de $6,000.00.
+3. **Finaliser la facture :** Le système traite la transaction avec les frais approuvés, pour un montant total de $6,000.00.
 
 Cette approche permet au système de prendre en compte les écarts approuvés dans les frais d'en-tête, garantissant ainsi que la transaction est traitée conformément à l'approbation tout en conservant des registres financiers précis.

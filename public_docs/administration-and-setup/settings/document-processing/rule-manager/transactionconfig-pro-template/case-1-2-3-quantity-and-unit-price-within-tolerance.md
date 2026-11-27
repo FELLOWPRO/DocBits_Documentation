@@ -38,14 +38,14 @@ Unit Price Tolerance: ±1%
 Étant donné que la quantité (101 unités) et le prix unitaire ($10.05) se situent tous deux dans les niveaux de tolérance acceptables par rapport au bon de commande, le système :
 
 
-1\. **Accepter les valeurs de la facture :** La quantité et le prix unitaire sur la facture sont acceptés comme valides car ils se situent dans les limites de tolérance définies.
+1\. **Accept the Invoice Values:** La quantité et le prix unitaire sur la facture sont acceptés comme valides car ils se situent dans les limites de tolérance définies.
 
-2\. **Calculer le Montant Total :** Le montant total est calculé à partir des valeurs acceptées :
+2\. **Calculate the Total Amount:** Le montant total est calculé à partir des valeurs acceptées :
 
-• Montant total = Quantité × Prix unitaire
+• Total Amount = Quantity × Unit Price
 
 • Total Amount = 101 units × $10.05 per unit = $1,015.05
 
-3\. **Traiter la facture :** La facture est traitée pour un montant total de $1,015.05 et les écritures comptables sont mises à jour en conséquence.
+3\. **Process the Invoice:** La facture est traitée pour un montant total de $1,015.05 et les écritures comptables sont mises à jour en conséquence.
 
 Cette approche garantit que les écarts mineurs qui se situent dans des niveaux de tolérance acceptables n'entraînent pas de rejets de factures ou de retards de paiement, rationalisant ainsi le processus financier.

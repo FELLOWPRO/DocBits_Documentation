@@ -14,11 +14,11 @@ Le système ajuste la quantité pour qu'elle corresponde au niveau approuvé, ga
 
 * **Purchase Order (PO):**
   * Quantity: 150 units
-  * Prix unitaire : $20.00 par unité
+  * Unit Price: $20.00 per unit
   * Total Amount: $3,000.00
 * **Invoice Received:**
-  * Quantité : 140 unités (hors tolérance de -6.67%, rejeté)
-  * Prix unitaire : $20.00 par unité (dans les limites de tolérance)
+  * Quantity: 140 units — 6.67% below the PO value, outside the configured ±5% tolerance; rejected.
+  * Unit Price: $20.00 per unit (within tolerance)
   * Total Amount: $2,800.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
@@ -26,13 +26,13 @@ Le système ajuste la quantité pour qu'elle corresponde au niveau approuvé, ga
 
 Étant donné que la quantité (140 unités) est inférieure à la limite de tolérance acceptable (écart négatif de -6.67 %) et n'est pas approuvée, mais que le prix unitaire ($20.00) est dans la tolérance, le système :
 
-1. **Rejeter la quantité inférieure :** Le système n'accepte pas la quantité inférieure car elle se situe en dehors de la plage de tolérance approuvée.
-2. **Ajuster la quantité :** Le système ajuste la quantité pour qu'elle corresponde au niveau approuvé spécifié dans le bon de commande.
-   * Quantité approuvée = 150 unités (à partir de PO)
-3. **Maintenir le prix unitaire :** Le prix unitaire de $20.00 par unité est dans les limites de tolérance et reste inchangé.
-4. **Recalculer le montant total :** Le système calcule le montant total en utilisant la quantité approuvée et le prix unitaire accepté :
-   * **Montant total = Quantité approuvée × Prix unitaire**
-   * **Montant total = 150 unités × $20.00 par unité = $3,000.00**
-5. **Traiter la facture :** Le système traite la facture pour un montant total ajusté de $3,000.00, correspondant à la quantité et au prix unitaire approuvés. Le fournisseur est censé facturer la totalité de la quantité approuvée.
+1. **Reject the Lower Quantity:** Le système n'accepte pas la quantité inférieure car elle se situe en dehors de la plage de tolérance approuvée.
+2. **Adjust the Quantity:** Le système ajuste la quantité pour qu'elle corresponde au niveau approuvé spécifié dans le bon de commande.
+   * Approved Quantity = 150 units (from PO)
+3. **Maintain the Unit Price:** Le prix unitaire de $20.00 par unité est dans les limites de tolérance et reste inchangé.
+4. **Recalculate the Total Amount:** Le système calcule le montant total en utilisant la quantité approuvée et le prix unitaire accepté :
+   * **Total Amount = Approved Quantity × Unit Price**
+   * **Total Amount = 150 units × $20.00 per unit = $3,000.00**
+5. **Process the Invoice:** Le système traite la facture pour un montant total ajusté de $3,000.00, correspondant à la quantité et au prix unitaire approuvés. Le fournisseur est censé facturer la totalité de la quantité approuvée.
 
 Cette approche garantit que la transaction financière est conforme aux conditions du bon de commande et évite la sous-facturation tout en conservant des registres financiers précis.

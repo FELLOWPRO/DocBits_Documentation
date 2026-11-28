@@ -2,7 +2,7 @@
 
 O seletor **Export quantity in base unit of measure** fica na seção **Purchase Order** das **More Settings** de um tipo de documento. Ele altera a quantidade e o preço unitário que a exportação para o Infor LN grava nas linhas de pedido correspondidas.
 
-Abra-o em **Settings → Document Types**, selecione o ícone de engrenagem (**More Settings**) no cartão do tipo de documento e expanda **Purchase Order**.
+Abra-o em **Settings → Document Types**, selecione o ícone de engrenagem (**More Settings**) no tipo de documento e expanda **Purchase Order**.
 
 ## O que o seletor faz
 
@@ -19,7 +19,7 @@ A conversão se aplica apenas à exportação para o Infor LN. Os demais destino
 
 Ative o seletor quando a instância do Infor LN espera quantidades de pedido na unidade de medida base. A conversão usa o fator armazenado na linha de pedido, não um fator que o DocBits calcule a partir do cadastro de itens.
 
-As configurações podem afetar documentos em produção. Verifique o resultado com um documento de teste antes de salvar a alteração em produção. O seletor altera os valores exportados; ele não altera como as linhas de fatura e de pedido são correspondidas.
+As configurações podem afetar documentos em uso. Verifique o resultado com um documento de teste antes de salvar a alteração em produção. O seletor altera os valores exportados; ele não altera como as linhas de fatura e de pedido são correspondidas.
 
 ## Páginas relacionadas
 

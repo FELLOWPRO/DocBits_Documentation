@@ -110,6 +110,15 @@ La cola clasifica a A por encima de B porque la **mejora esperada** se mide con 
 
 Utilice el cuadro de búsqueda ("Search supplier number or name") para encontrar un proveedor. Haga clic en una fila para abrir el **Supplier Diagnosis**.
 
+### Vista de proveedor o de grupo
+
+De forma predeterminada, la cola muestra una fila por proveedor. El conmutador **Supplier | Group** situado junto al cuadro de búsqueda cambia eso:
+
+* **Supplier** enumera cada clave de proveedor tal como aparece en sus documentos. Es el valor predeterminado y se comporta como la cola antes de que existiera el grafo.
+* **Group** agrupa en una sola fila las claves de proveedor que DocBits ha agrupado. Una fila agrupada muestra los nombres fusionados en la columna **Members** y los muestra todos en una información emergente.
+
+Una fila agrupada no abre un **Supplier Diagnosis**, porque el diagnóstico trabaja con una única clave de proveedor. Vuelva a **Supplier** y haga clic en el proveedor que desee. Mientras DocBits no haya creado un grafo para su organización, la vista de grupo devuelve las mismas filas que la vista de proveedor, sin error.
+
 ### Comparar proveedores
 
 <figure><img src="../../../.gitbook/assets/touchless-compare-suppliers-es.png" alt="La página Compare suppliers con tres proveedores lado a lado y un gráfico de barras de sus resultados"><figcaption><p>Tres proveedores lado a lado: tasa pure, documentos perdidos y recuperables, causa raíz, mejora esperada y un gráfico de barras de los resultados. Cada <strong>Open</strong> lleva al Supplier Diagnosis. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
@@ -125,6 +134,26 @@ La comparación muestra los proveedores lado a lado: **Pure rate**, **Lost docum
 El botón **Analyse n clusters with AI** analiza los clústeres de problemas con mayor potencial touchless (como mínimo un número mínimo de documentos cada uno). Tarda unos 13 segundos por clúster y abarca **toda la organización**. Solo los administradores pueden iniciarlo.
 
 Mientras se ejecuta, verá **Queued**, **Running**, **Done**, **Already analysed** o **Error** para cada clúster, con un enlace **Open cluster**. Si la IA está desactivada o no está configurada en el entorno, el botón aparece desactivado con el motivo, y **todo lo demás de la página sigue funcionando**.
+
+## Ontology: cómo DocBits agrupa a sus proveedores
+
+El área tiene dos pestañas: **Report** contiene el panel descrito arriba y **Ontology** muestra el grafo de proveedores que utiliza la vista de grupo de la cola. La pestaña es de solo lectura. No cambia ninguna configuración ni ningún documento.
+
+DocBits deriva el grafo una vez por noche a partir de los documentos que ha procesado su organización. Un nodo de proveedor lleva un nombre tal como aparece impreso en un documento; una arista une los nombres que DocBits interpreta como la misma empresa, por ejemplo porque la ortografía difiere solo ligeramente o porque ambos tienen el mismo número de identificación fiscal. Junto al título ve la versión del grafo y cuándo se calculó. **Reload** vuelve a obtener el grafo actual.
+
+La pestaña tiene tres partes:
+
+| Parte | Contenido |
+| --- | --- |
+| **Your suppliers, grouped** | Los grupos y cuántas grafías contiene cada uno. También se enumera un grupo con una sola grafía. |
+| **How it all connects** | El grafo: proveedores y grupos de proveedores, las áreas temáticas en las que se atascan las facturas, los motivos concretos y los campos que las personas tienen que corregir con más frecuencia. |
+| **Explanation** | Los detalles del nodo seleccionado: **What this is based on** enumera las pruebas que lo sustentan, **Also written as** enumera las otras grafías que DocBits ha visto y **fixed by DocBits** (con un icono de candado) marca un nodo que DocBits mantiene por sí mismo y no su organización. |
+
+Los tipos de nodo se explican en lenguaje sencillo dentro de la pestaña: un nombre de proveedor es un nombre exactamente como aparece en sus documentos, un área temática es un punto donde las facturas suelen atascarse y necesitan a una persona, un motivo es una causa concreta de una ejecución automática fallida y un campo es un campo del documento que las personas a menudo tienen que corregir o rellenar.
+
+Un grafo vacío es un estado normal. Muestra **DocBits is still learning** con la nota de que la descripción general se construye cada noche y aparece tras la siguiente ejecución. Una organización joven o una ejecución nocturna omitida se ven así; no es un error.
+
+El grafo también funciona sin ratón: Tab pasa a un grupo o a un nodo, Enter o Space lo selecciona y rellena **Explanation**.
 
 ## Trabajar con Touchless Intelligence: una rutina
 

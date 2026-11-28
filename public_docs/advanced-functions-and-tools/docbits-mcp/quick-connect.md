@@ -111,7 +111,7 @@ gemini mcp add --transport http docbits-prod-us https://us.api.docbits.com/v3/mc
 {% endtab %}
 {% endtabs %}
 
-对于 **Claude Desktop** 和 **claude.ai**，请改为添加自定义连接器：打开连接器设置，选择 **添加自定义连接器**，然后粘贴表格中的 Endpoint。
+对于 **Claude Desktop** 和 **claude.ai**，请改为添加自定义连接器：打开连接器设置，选择 **Add custom connector**，然后粘贴表格中的 Endpoint。
 
 ## 3. 登录一次
 

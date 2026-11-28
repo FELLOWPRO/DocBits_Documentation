@@ -19,7 +19,7 @@ La conversion ne s'applique qu'à l'export vers Infor LN. Les autres destination
 
 Activez le commutateur lorsque l'instance Infor LN attend des quantités de commande dans l'unité de mesure de base. La conversion utilise le facteur enregistré sur la ligne de commande, et non un facteur que DocBits calcule à partir de la fiche article.
 
-Les paramètres peuvent affecter des documents en production. Vérifiez le résultat avec un document de test avant d'enregistrer la modification en production. Le commutateur modifie les valeurs exportées ; il ne change pas la façon dont les lignes de facture et de commande sont appariées.
+Les paramètres peuvent affecter des documents en cours d'utilisation. Vérifiez le résultat avec un document de test avant d'enregistrer la modification en production. Le commutateur modifie les valeurs exportées ; il ne change pas la façon dont les lignes de facture et de commande sont appariées.
 
 ## Pages associées
 

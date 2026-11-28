@@ -110,6 +110,15 @@ Die Warteschlange stuft A über B ein, weil der **erwartete Zuwachs** an Ihrer g
 
 Mit dem Suchfeld („Search supplier number or name“) finden Sie einen Lieferanten. Ein Klick auf eine Zeile öffnet die **Lieferantendiagnose**.
 
+### Lieferanten- oder Gruppenansicht
+
+Standardmäßig hat die Warteschlange eine Zeile pro Lieferant. Der Umschalter **Supplier | Group** neben dem Suchfeld ändert das:
+
+* **Supplier** listet jeden Lieferantenschlüssel so auf, wie er auf Ihren Dokumenten erscheint. Das ist die Voreinstellung und verhält sich wie die Warteschlange vor dem Graphen.
+* **Group** fasst die Lieferantenschlüssel, die DocBits zusammengefasst hat, zu einer Zeile zusammen. Eine gruppierte Zeile führt die zusammengeführten Namen in der Spalte **Members** auf und zeigt sie alle in einem Tooltip.
+
+Eine gruppierte Zeile öffnet keine **Supplier Diagnosis**, weil die Diagnose mit einem einzelnen Lieferantenschlüssel arbeitet. Wechseln Sie zurück zu **Supplier** und klicken Sie den gewünschten Lieferanten an. Solange DocBits noch keinen Graphen für Ihre Organisation aufgebaut hat, liefert die Gruppenansicht dieselben Zeilen wie die Lieferantenansicht, ohne Fehler.
+
 ### Lieferanten vergleichen
 
 <figure><img src="../../../.gitbook/assets/touchless-compare-suppliers-de.png" alt="Die Seite Compare suppliers mit drei Lieferanten nebeneinander und einem Balkendiagramm ihrer Ergebnisse"><figcaption><p>Drei Lieferanten nebeneinander: Pure-Quote, verlorene und rückgewinnbare Dokumente, Grundursache, erwarteter Zuwachs und ein Balkendiagramm der Ergebnisse. Jedes <strong>Open</strong> führt zur Lieferantendiagnose. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
@@ -125,6 +134,26 @@ Der Vergleich zeigt die Lieferanten nebeneinander: **Pure rate**, **Lost documen
 Die Schaltfläche **Analyse n clusters with AI** analysiert die Fehlermuster mit dem höchsten Touchless-Potenzial (jeweils mindestens eine Mindestanzahl an Dokumenten). Sie benötigt etwa 13 Sekunden pro Cluster und betrifft die **gesamte Organisation**. Nur Administratoren können sie starten.
 
 Während die Analyse läuft, sehen Sie für jedes Fehlermuster **Queued**, **Running**, **Done**, **Already analysed** oder **Error**, mit einem Link **Open cluster**. Ist die KI abgeschaltet oder in der Umgebung nicht konfiguriert, ist die Schaltfläche mit Angabe des Grundes deaktiviert, und **alles andere auf der Seite funktioniert weiter**.
+
+## Ontology: wie DocBits Ihre Lieferanten gruppiert
+
+Der Bereich hat zwei Tabs: **Report** enthält das oben beschriebene Dashboard, **Ontology** zeigt den Lieferantengraphen, den die Gruppenansicht der Warteschlange nutzt. Der Tab ist schreibgeschützt. Er ändert keine Einstellung und kein Dokument.
+
+DocBits leitet den Graphen einmal pro Nacht aus den Dokumenten ab, die Ihre Organisation verarbeitet hat. Ein Lieferantenknoten trägt einen Namen so, wie er auf einem Dokument gedruckt ist; eine Kante verbindet die Namen, die DocBits als dasselbe Unternehmen liest, zum Beispiel weil sich die Schreibweise nur leicht unterscheidet oder weil beide dieselbe Steuer-ID tragen. Neben dem Titel sehen Sie die Version des Graphen und wann er berechnet wurde. **Reload** lädt den aktuellen Graphen erneut.
+
+Der Tab hat drei Teile:
+
+| Teil | Inhalt |
+| --- | --- |
+| **Your suppliers, grouped** | Die Gruppen und wie viele Schreibweisen jede enthält. Auch eine Gruppe mit nur einer Schreibweise wird aufgeführt. |
+| **How it all connects** | Der Graph: Lieferanten und Lieferantengruppen, die Themenbereiche, in denen Rechnungen hängen bleiben, die konkreten Gründe und die Felder, die Menschen am häufigsten korrigieren müssen. |
+| **Explanation** | Die Details des ausgewählten Knotens: **What this is based on** führt die Belege dahinter auf, **Also written as** listet die anderen Schreibweisen, die DocBits gesehen hat, und **fixed by DocBits** (mit Schloss-Symbol) kennzeichnet einen Knoten, den DocBits selbst pflegt und nicht Ihre Organisation. |
+
+Die Knotentypen werden im Tab in einfacher Sprache erklärt: Ein Lieferantenname ist ein Name genau so, wie er auf Ihren Dokumenten erscheint, ein Themenbereich ist eine Stelle, an der Rechnungen typischerweise hängen bleiben und einen Menschen brauchen, ein Grund ist eine konkrete Ursache für einen fehlgeschlagenen automatischen Lauf, und ein Feld ist ein Dokumentfeld, das Menschen oft korrigieren oder ausfüllen müssen.
+
+Ein leerer Graph ist ein normaler Zustand. Er zeigt **DocBits is still learning** mit dem Hinweis, dass die Übersicht jede Nacht aufgebaut wird und nach dem nächsten Lauf erscheint. Eine junge Organisation oder ein ausgefallener nächtlicher Lauf sehen so aus; es ist kein Fehler.
+
+Der Graph funktioniert auch ohne Maus: Tab springt zu einer Gruppe oder einem Knoten, Enter oder Space wählt ihn aus und füllt die **Explanation**.
 
 ## Mit Touchless Intelligence arbeiten: eine Routine
 

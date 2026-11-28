@@ -1,179 +1,115 @@
 # Workflowlogboeken
 
-## Video
-
-De zoekvideo is een testversie met echte DocBits-schermen. De diagnosevideo gebruikt nog steeds lesdiagrammen die als illustraties zijn aangeduid.
-### De juiste uitvoering vinden
-
-{% hint style="info" %}
-Testversie: echte DocBits-schermen met documentacties, de documentstroom, staptijden, lege workflowlogs en status- en datumfilters. Het document heeft geen opgeslagen Advanced Workflow-uitvoering. Uitvoeringsrijen, paginering en nodediagnose zijn nog niet opgenomen in deze testversie.
-{% endhint %}
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/nl.mp4" %}
-
-[Video openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/nl.mp4) · [Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/nl.vtt) · 1:52
-
-<details>
-<summary>Transcriptie</summary>
-
-**Begin bij het document**
-
-Open op het documentdashboard het actiemenu en kies Documentstroom. De echte verwerkingsgeschiedenis toont import en OCR. Open een stap om de wachttijd en verwerkingstijd te bekijken. Deze verwerkingsstappen staan los van Advanced Workflow-nodes.
-
-**Lees de echte tellers**
-
-Hier staan de workflowlogs van hetzelfde document. Blauw is het totaal, rood zijn fouten, geel zijn niet-vervulde voorwaarden en groen zijn successen. Dit demonstratiedocument heeft geen opgeslagen workflowuitvoeringen. Daarom tonen alle vier de tellers nul.
-
-**Controleer de uitvoeringskolommen**
-
-De tabel bevat kolommen voor workflownaam, aanmaaktijd, looptijd en resultaat. Gebruik de tijdstempel om herhaalde uitvoeringen te onderscheiden. Deze testversie heeft geen uitvoeringsrij om te openen. Een lege lijst bewijst op zichzelf geen uitvoeringsfout.
-
-**Open de statusfilters**
-
-Het filterpictogram opent het echte menu. Sorteer op naam of aanmaaktijd, oplopend of aflopend. Status biedt succes, een niet-vervulde voorwaarde en een fout. Je ziet hier de echte DocBits-interface.
-
-**Kies datums en wis filters**
-
-Kies een periode met de start- en einddatum of de kalender. De volgorde is jaar, maand en dag. Toepassen vraagt de resultaten op. Filters wissen herstelt de selectie. Wis de zoekopdracht afzonderlijk. In deze versie blijven de maandnamen in de kalender Engels.
-
-**Testversie: een opgeslagen uitvoering ontbreekt nog**
-
-Met deze testversie controleer je de documenttoegang, verwerkingsdetails en logbediening. Een opgeslagen Advanced Workflow-uitvoering ontbreekt nog om echte rijen, paginering, routes en nodeberichten te tonen. Deze resultaten worden niet nagebootst in de video.
-
-</details>
-
-### Knooppunten volgen en onderzoeken
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/nl.mp4" %}
-
-[Ondertiteling (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/nl.vtt) · 1:43
-
-<details>
-<summary>Transcriptie</summary>
-
-**Vouw een uitvoering uit**
-
-Vouw de workflowrij uit. Een geavanceerde uitvoering toont de graaf links en meldingen rechts; een standaardworkflow toont een reeks kaarten. De gegevens beschrijven die uitvoering en kunnen afwijken van de huidige ontwerper.
-
-**Selecteer een knooppunt**
-
-Verschuif of vergroot de graaf en klik op een knooppunt. Card Logs toont de meldingen. Wait ALL en Wait ANY kunnen ook knooppuntmeldingen hebben. Lees de melding samen met het gekozen knooppunt en tijdstempel.
-
-**Onderscheid de uitkomsten**
-
-Groen betekent succes, oranje een onware voorwaarde, rood een fout, grijs overgeslagen. Een overgeslagen knooppunt is niet uitgevoerd. Controleer eerst of een andere tak werd gekozen of een vereiste ingang van de samenvoeging ontbreekt.
-
-**Volg de eerste afwijking**
-
-Volg de werkelijke route vanaf de ingang. Bekijk oranje bij een onware bedragcontrole. Lees bij een fout de melding en volg rood. Foutafhandeling kan slagen terwijl de gehele uitvoering de oorspronkelijke fout blijft melden.
-
-**Onderzoek samenvoegingen**
-
-Controleer bij Wait ALL elke bron en verbonden uitkomst. Zoek bij ANY of OR een passende bron. Twee uitgangen van één knooppunt zijn geen onafhankelijke goedkeuringen. Een oranje voorwaarderesultaat kan bedoeld zijn.
-
-**Corrigeer en controleer**
-
-Noteer workflownaam, documentverwijzing, tijdstempel, knooppunt en exacte melding. Corrigeer instellingen of gegevens en test een herhaalbaar scenario. Sla op en controleer activering. Vergelijk een nieuwe uitvoering met de oude; eerdere logboeken beschrijven eerder gedrag.
-
-</details>
+Voor gesproken uitleg over de geavanceerde logweergave bekijkt u [De juiste uitvoering vinden](advanced-workflow-builder/videos.md#find-the-relevant-execution) en [Knooppunten volgen en onderzoeken](advanced-workflow-builder/videos.md#trace-nodes-and-diagnose). Beide hoofdstukken zijn beschikbaar in het Engels en het Duits, met ondertitelbestanden en transcripties.
 
 ## **Overzicht**
 
-De **Workflow Logs** stellen gebruikers in staat om te analyseren welke workflows zijn uitgevoerd voor een document, de uitvoeringsresultaten te begrijpen en in te zoomen op details op voorwaardeniveau voor debugging of validatie.
+Met de **Workflow Logs** kunnen gebruikers analyseren welke workflows voor een document zijn uitgevoerd, de uitvoeringsresultaten begrijpen en inzoomen op details op voorwaardenniveau voor foutopsporing of validatie.
 
 ## **Toegang tot Workflow Logs**
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4" %}
 
-**Video:** De Workflowlogboeken lezen · 1:36 · [Ondertitels (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.vtt)
+**Video:** De workflowlogboeken lezen · 1:34 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.vtt)
 
 <details>
 
 <summary>Transcriptie</summary>
 
-**Workflowlogboeken openen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=0.25)
+**De workflowlogboeken openen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=0.25)
 
-Elk document bewaart de logboeken van de Workflows die erop liepen. Open in het documentdashboard de acties van een document en kies Workflowlogboeken.
+Elk document bewaart de logboeken van de workflows die erop liepen. Open in het documentdashboard de acties van een document en kies Workflow Logs.
 
-**Uitvoeringen en hun resultaten** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=11.416)
+**Uitvoeringen en hun resultaten** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=12.15)
 
-Bovenaan ziet u hoeveel uitvoeringen er waren, en hoeveel eindigden met een fout, een mislukte conditie of succes. Daaronder staat elke uitvoering met Workflow, tijd, duur en resultaat.
+Bovenaan ziet u hoeveel uitvoeringen er waren en hoeveel ervan eindigden met een fout, een niet-vervulde voorwaarde of succes. Daaronder staat elke uitvoering met de workflow, de tijd, de duur en het resultaat.
 
-**Het pad van één uitvoering** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=25.316)
+**Het pad van één uitvoering** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=25.716)
 
-Sleep de scheidingslijn naar links voor meer ruimte voor de logboeken. Klik dan op een uitvoering om het pad te zien. Elke kaart toont haar resultaat: groen voor succes, oranje voor een mislukte conditie, rood voor een fout. Hier eindigde de En-kaart met een mislukte conditie, dus de Dan-kaart erna liep niet.
+Sleep de scheidingslijn naar links om de logboeken meer ruimte te geven. Klik dan op een uitvoering om het pad te zien dat ze volgde. Elke kaart toont haar resultaat: groen voor succes, oranje voor een niet-vervulde voorwaarde, rood voor een fout. Hier eindigde de And-kaart met een niet-vervulde voorwaarde, dus de Then-kaart erna liep niet.
 
-**Waarom een kaart zo eindigde** · [0:47](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=47.35)
+**Waarom een kaart zo eindigde** · [0:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=45.35)
 
-Selecteer een kaart om haar logboek te lezen. Dat zegt wat de kaart vergeleek en waarom ze zo eindigde. Hier is het document klaar voor validatie, maar de kaart verwacht een tweede goedkeuring.
+Selecteer een kaart om haar logboek te lezen. Dat zegt wat de kaart vergeleek en waarom ze zo eindigde. Hier is het document klaar voor validatie, maar de kaart verwacht een nog openstaande tweede goedkeuring.
 
-**Een fout en de oorzaak** · [1:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=60.916)
+**Een fout en de oorzaak** · [0:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=58.283)
 
-Een uitvoering die met een fout eindigt, toont de falende kaart in rood. Hier kon de En-kaart het bezorgadres niet uit het document lezen. Ontbrekende gegevens zijn altijd een fout, dus de Dan-kaart erna liep niet.
+Een uitvoering die met een fout eindigt, toont de falende kaart in rood. Hier kon de And-kaart het bezorgadres niet uit het document lezen. Ontbrekende gegevens zijn altijd een fout, dus de Then-kaart erna liep niet.
 
-**Uitvoeringen vinden** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=76.083)
+**Uitvoeringen vinden** · [1:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=73.216)
 
-Bij veel uitvoeringen vindt u met de zoekfunctie een Workflow op naam, en met de filterknop beperkt u de lijst op status of datum.
+Bij veel uitvoeringen gebruikt u de zoekfunctie om een workflow op naam te vinden, en de filterknop om de lijst op status of datum te beperken.
 
-**Melding over de uitvoeringslimiet** · [1:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/nl.mp4#t=85.716)
+**Melding over de uitvoeringslimiet** · [1:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=83.116)
 
-Bovenaan verschijnt een melding als een Workflow op dit document zijn uitvoeringslimiet heeft bereikt. De video over uitvoeringslimieten legt dat uit.
+Bovenaan verschijnt een melding wanneer een workflow op dit document zijn uitvoeringslimiet heeft bereikt. De video over uitvoeringslimieten legt dat uit.
 
 </details>
 
-Om toegang te krijgen tot workflowlogs:
+Om toegang te krijgen tot de workflowlogboeken:
 
 1. Navigeer naar het **Dashboard**.
-2. Klik op het **Actiemenu** (pictogram met drie stippen) naast het gewenste document.
+2. Klik op het **Actions menu** (pictogram met drie stippen) naast het gewenste document.
 3. Selecteer **Workflow Logs** in het menu.
-   * <mark style="color:red;">**Opmerking**</mark>**:** De workflowfunctie moet ingeschakeld zijn om deze optie te kunnen gebruiken.
-4.  Een **zijpaneel** wordt geopend met een samenvatting van uitgevoerde workflows.
+   * <mark style="color:red;">**Note**</mark>: De functie Workflow moet zijn ingeschakeld om deze optie te kunnen gebruiken.
+4.  Er opent een **side panel** met een samenvatting van de uitgevoerde workflows.\\
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAlgg3jnSVRVyuYxy4tAp%252Fimage.png%3Falt%3Dmedia%26token%3D4e8fcd63-6113-47eb-95a4-95a7821dc9b9\&width=768\&dpr=4\&quality=100\&sign=9e6ba9f5\&sv=2)
+    <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="Dashboard with the workflow logs side panel showing summary counters and a table of executed workflows with result icons" width="563"><figcaption></figcaption></figure></div>
+
+## **Een logboek als eigen pagina openen**
+
+Het side panel bedekt de documentenlijst. Voor een document waarvan u de workflow langere tijd onderzoekt, opent u hetzelfde logboek als volledige pagina: selecteer het pictogram voor een nieuw venster in de kop van het paneel. De pagina heeft het adres `/workflows/logs/<document id>`, zodat u haar in een tweede browservenster kunt openhouden of het adres naar een collega kunt sturen die toegang heeft tot het document.
+
+De pagina toont dezelfde samenvattingstellers, dezelfde tabel met uitgevoerde workflows en dezelfde detailweergave als het paneel.
+
+## **Naar een ander document schakelen**
+
+Op de volledige pagina vindt een zoekveld boven de lijst een document op naam of op ID. De resultaten tonen de uploaddatum, de toegewezene en de status van elk document, zodat u documenten met vergelijkbare namen kunt onderscheiden. Als u een resultaat selecteert, wordt het workflowlogboek geladen en komt het document in het adres. De zoekopdracht bestrijkt de documenten van uw organisatie die u volgens uw rechten mag zien; als er niets overeenkomt, meldt DocBits dat onder het veld in plaats van een lege lijst te tonen.
 
 ## **Onderdelen van het Workflow Logs Paneel**
 
-#### **1. Workflow Samenvattingsaantallen**
+#### **1. Samenvattingstellers van de workflows**
 
 Boven aan het logboekpaneel:
 
 * **Blauw**: Totaal aantal uitgevoerde workflows.
-* **Rood**: Workflows die eindigden in **fouten**.
-* **Geel**: Workflows die **niet zijn voltooid** vanwege voorwaardemismatches.
+* **Rood**: Workflows die eindigden met **fouten**.
+* **Geel**: Workflows die **niet zijn voltooid** door niet-vervulde voorwaarden.
 * **Groen**: Succesvol **uitgevoerde** workflows.
 
-#### **2. Workflow Uitvoertabel**
+#### **2. Tabel met workflowuitvoeringen**
 
-Elke rij in de tabel vertegenwoordigt één workflow-uitvoering en bevat:
+Elke rij in de tabel staat voor één workflowuitvoering en bevat:
 
-* **Workflownaam**
-* **Tijdstempel** (Gemaakt op)
-* **Uitvoertijd** (in seconden)
-* **Resultaatpictogram**:
+* **Workflow Name**
+* **Timestamp** (Created On)
+* **Runtime** (in seconden)
+* **Result Icon**:
   * Groen vinkje: Workflow succesvol uitgevoerd.
   * Rood kruis: Workflow uitgevoerd met een fout.
-  * Oranje streepje: Uitvoering werd gestopt omdat een voorwaarde niet werd voldaan.
+  * Oranje streepje: Uitvoering is gestopt omdat niet aan een voorwaarde was voldaan
 
-Door op de **pijl** aan de linkerkant van elke rij te klikken, wordt de **workflow detailweergave** uitgebreid.
+Als u op de **pijl** links van een rij klikt, wordt de **workflowdetailweergave** uitgevouwen.
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Expanded workflow log row showing When and And condition cards with green checks and a grayed card that was not met, plus card logs" width="563"><figcaption></figcaption></figure></div>
 
-### **Workflow Detailweergave**
+### **Workflowdetailweergave**
 
-Door op een specifieke workflowrij te klikken, wordt het **gedetailleerde uitvoeringslogboek** geopend, met:
+Als u op een specifieke workflowrij klikt, wordt het **gedetailleerde uitvoeringslogboek** geopend, met:
 
-#### **Voorwaarde Evaluatie**
+#### **Evaluatie van voorwaarden**
 
-* **Wanneer...** blok: Initiële voorwaarde.
-* **En...** blok(ken): Aanvullende voorwaarden.
-* **Dan...** blok(ken): Acties uitgevoerd wanneer aan alle voorwaarden is voldaan.
+* **When...**-blok: Initiële voorwaarde.
+* **And...**-blok(ken): Aanvullende voorwaarden.
+* **Then...**-blok(ken): Acties die worden uitgevoerd wanneer aan alle voorwaarden is voldaan.
 
-Elke voorwaardelijn toont:
+Elke voorwaarderegel toont:
 
-* **Groen vinkje**: Voorwaarde was voldaan.
-* **Oranje streepje**: Voorwaarde was niet voldaan.
-* **Rood kruis**: Voorwaarde mislukte **wegens een fout**
+* **Groen vinkje**: Voorwaarde was vervuld.
+* **Oranje streepje**: Voorwaarde was niet vervuld.
+* **Rood kruis**: Voorwaarde is **door een fout** mislukt
 
-### **Belangrijke Gedragsopmerking**
+### **Belangrijke opmerking over het gedrag**
 
-Als een voorwaarde in een workflow **niet wordt voldaan**, stopt het systeem met het evalueren van verdere workflowkaarten binnen die workflow. Dit gedrag voorkomt onnodige verwerking. Als visuele indicator wordt de kaart die **niet aan de voorwaarde voldeed** weergegeven in **grijs**, en alle **volgende kaarten** in dezelfde workflow zullen ook **grijs** verschijnen, wat aangeeft dat ze **niet zijn uitgevoerd**.
+Als een voorwaarde in een workflow **niet is vervuld**, **stopt het systeem met het evalueren van alle volgende workflowkaarten** binnen die workflow. Dit gedrag voorkomt onnodige verwerking\
+Als visuele indicator wordt de kaart die **niet aan de voorwaarde voldeed** in **grijs** weergegeven, en alle **volgende kaarten** in dezelfde workflow verschijnen ook **grijs**, wat aangeeft dat ze **niet zijn uitgevoerd**.

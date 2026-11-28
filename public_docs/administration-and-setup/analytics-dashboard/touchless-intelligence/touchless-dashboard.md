@@ -110,6 +110,15 @@ La coda mette A sopra B perché l'**incremento atteso** è misurato rispetto a t
 
 Usa la casella di ricerca ("Search supplier number or name") per trovare un fornitore. Fai clic su una riga per aprire la **Supplier Diagnosis**.
 
+### Vista fornitore o vista gruppo
+
+Per impostazione predefinita la coda ha una riga per fornitore. L'interruttore **Supplier | Group** accanto alla casella di ricerca cambia questo comportamento:
+
+* **Supplier** elenca ogni chiave fornitore così come compare nei tuoi documenti. È l'impostazione predefinita e si comporta come la coda prima che esistesse il grafo.
+* **Group** raggruppa in un'unica riga le chiavi fornitore che DocBits ha unito. Una riga raggruppata elenca i nomi uniti nella colonna **Members** e li mostra tutti in un tooltip.
+
+Una riga raggruppata non apre una **Supplier Diagnosis**, perché la diagnosi lavora su una singola chiave fornitore. Torna a **Supplier** e fai clic sul fornitore che desideri. Finché DocBits non ha creato un grafo per la tua organizzazione, la vista gruppo restituisce le stesse righe della vista fornitore, senza errori.
+
 ### Confrontare i fornitori
 
 <figure><img src="../../../.gitbook/assets/touchless-compare-suppliers-it.png" alt="La pagina Compare suppliers con tre fornitori affiancati e un grafico a barre dei loro esiti"><figcaption><p>Tre fornitori affiancati: tasso puro, documenti persi e recuperabili, causa radice, incremento atteso e un grafico a barre degli esiti. Ogni <strong>Open</strong> porta alla Supplier Diagnosis. Organizzazione di esempio con dati dimostrativi; i nomi dei fornitori sono fittizi.</p></figcaption></figure>
@@ -125,6 +134,26 @@ Il confronto mostra i fornitori affiancati: **Pure rate**, **Lost documents**, *
 Il pulsante **Analyse n clusters with AI** analizza i cluster di problemi con il maggior potenziale touchless (ciascuno con almeno un numero minimo di documenti). Richiede circa 13 secondi per cluster e copre l'**intera organizzazione**. Solo gli amministratori possono avviarlo.
 
 Mentre è in esecuzione vedi **Queued**, **Running**, **Done**, **Already analysed** o **Error** per ogni cluster, con un link **Open cluster**. Se l'IA è disattivata o non configurata nell'ambiente, il pulsante è disabilitato con il motivo, e **tutto il resto della pagina continua a funzionare**.
+
+## Ontology: come DocBits raggruppa i tuoi fornitori
+
+L'area ha due schede: **Report** contiene la dashboard descritta sopra, **Ontology** mostra il grafo dei fornitori usato dalla vista gruppo della coda. La scheda è di sola lettura. Non modifica nessuna impostazione e nessun documento.
+
+DocBits ricava il grafo una volta a notte dai documenti elaborati dalla tua organizzazione. Un nodo fornitore porta un nome così come è stampato su un documento; un arco unisce i nomi che DocBits legge come la stessa azienda, per esempio perché l'ortografia differisce solo leggermente o perché entrambi hanno la stessa partita IVA. Accanto al titolo vedi la versione del grafo e quando è stato calcolato. **Reload** recupera di nuovo il grafo attuale.
+
+La scheda ha tre parti:
+
+| Parte | Contenuto |
+| --- | --- |
+| **Your suppliers, grouped** | I gruppi e quante grafie contiene ciascuno. Viene elencato anche un gruppo con una sola grafia. |
+| **How it all connects** | Il grafo: fornitori e gruppi di fornitori, le aree tematiche in cui le fatture si bloccano, i motivi concreti e i campi che le persone devono correggere più spesso. |
+| **Explanation** | I dettagli del nodo selezionato: **What this is based on** elenca le prove alla base, **Also written as** elenca le altre grafie viste da DocBits e **fixed by DocBits** (con icona a lucchetto) contrassegna un nodo che DocBits gestisce da sé e non la tua organizzazione. |
+
+I tipi di nodo sono spiegati in linguaggio semplice nella scheda: un nome fornitore è un nome esattamente come compare nei tuoi documenti, un'area tematica è un punto in cui le fatture di solito si bloccano e richiedono una persona, un motivo è una causa concreta di un'esecuzione automatica non riuscita e un campo è un campo del documento che le persone devono spesso correggere o compilare.
+
+Un grafo vuoto è uno stato normale. Mostra **DocBits is still learning** con la nota che la panoramica viene costruita ogni notte e compare dopo l'esecuzione successiva. Un'organizzazione giovane o un'esecuzione notturna saltata si presentano così; non è un errore.
+
+Il grafo funziona anche senza mouse: Tab passa a un gruppo o a un nodo, Enter o Space lo seleziona e compila **Explanation**.
 
 ## Lavorare con Touchless Intelligence: una routine
 

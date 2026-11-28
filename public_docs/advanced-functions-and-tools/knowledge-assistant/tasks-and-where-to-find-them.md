@@ -13,6 +13,7 @@ Spalte Status: **Verfügbar** funktioniert in unseren Tests. **Eingeschränkt** 
 | Aufgabe | Klickweg | Was passiert | Status |
 | --- | --- | --- | --- |
 | Wissensassistent einschalten | Einstellungen → Module → Dokumentenintegration → Karte **Wissensassistent** (Administrator) | Der Eintrag **Wissensassistent** erscheint im linken Menü. | Verfügbar |
+| Websuche einschalten (optional) | Einstellungen → Module → Dokumentenintegration → Karte **Wissensassistent** → **Funktionen** → **Websuche** (Administrator) | Der Assistent darf im öffentlichen Internet suchen; jeder Suchtext braucht standardmäßig Ihre Bestätigung. Siehe [Websuche](web-search.md). | Eingeschränkt: Best Effort |
 | Branchenvorlage einschalten | Wissensassistent → Einstellungen → **Branchenvorlagen** (Administrator) | Drei Wissensdatenbanken und drei Assistenten werden angelegt. | Verfügbar |
 | Eine Frage stellen | Wissensassistent → Chat → unter dem Eingabefeld einen Agenten wählen → Frage eintippen | Sie erhalten eine Antwort mit Quellenhinweis. | Verfügbar |
 | Eine Quelle öffnen | Chat → Quellenhinweis unter der Antwort anklicken | Das Dokument öffnet sich rechts, mit der Seite, auf der die Antwort gefunden wurde. | Verfügbar; eingeschränkt bei Excel und Bildern |

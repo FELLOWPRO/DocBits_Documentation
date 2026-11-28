@@ -46,7 +46,7 @@ Die beiden Spezialagenten helfen nur bei Wissensdatenbanken, die den passenden I
 
 ## Was nicht verfügbar ist
 
-* **Websuche** wird im Wissensassistenten nicht angeboten. <!-- ROADMAP-RAG.md Zeile 10: Websuche nicht gebaut; Input-field.vue 496-507: Suchknopf nur mit konfigurierter Suchmaschine -->
+* Ein **eigener Suchanbieter mit eigenem Schlüssel** für die Websuche ist geplant und noch nicht verfügbar. Die Websuche selbst ist optional und standardmäßig aus: siehe [Websuche](web-search.md). <!-- Websuche: Admin-Schalter unter Funktionen, Standard aus; DocOperator-Weg ohne Schlüssel, Best Effort -->
 * Die Agenten führen keinen Code in einer Sandbox aus, nutzen keine Chat-Kanäle und keine eigenen Sprachmodelle. Siehe [Was er kann und was nicht](what-it-can-and-cannot-do.md).
 
 ## Woran Sie einen Agenten in der Liste erkennen

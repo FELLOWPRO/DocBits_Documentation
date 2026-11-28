@@ -110,6 +110,15 @@ Kolejka stawia A przed B, ponieważ **oczekiwany wzrost** jest mierzony względe
 
 Użyj pola wyszukiwania ("Search supplier number or name"), aby znaleźć dostawcę. Kliknij wiersz, aby otworzyć **Supplier Diagnosis**.
 
+### Widok dostawcy lub widok grup
+
+Domyślnie kolejka ma jeden wiersz na dostawcę. Przełącznik **Supplier | Group** obok pola wyszukiwania to zmienia:
+
+* **Supplier** wyświetla każdy klucz dostawcy tak, jak występuje na dokumentach. To ustawienie domyślne, działające jak kolejka przed powstaniem grafu.
+* **Group** zwija klucze dostawców połączone przez DocBits w jeden wiersz. Wiersz grupowy podaje scalone nazwy w kolumnie **Members** i pokazuje je wszystkie w podpowiedzi.
+
+Wiersz grupowy nie otwiera **Supplier Diagnosis**, ponieważ diagnoza działa na pojedynczym kluczu dostawcy. Wróć do **Supplier** i kliknij wybranego dostawcę. Dopóki DocBits nie zbuduje grafu dla Twojej organizacji, widok grup zwraca te same wiersze co widok dostawców, bez błędu.
+
 ### Porównaj dostawców
 
 <figure><img src="../../../.gitbook/assets/touchless-compare-suppliers-pl.png" alt="Strona Compare suppliers z trzema dostawcami obok siebie i wykresem słupkowym ich wyników"><figcaption><p>Trzej dostawcy obok siebie: Pure Rate, Lost Documents i Recoverable, Root Cause, Expected Lift oraz wykres słupkowy wyników. Każde <strong>Open</strong> prowadzi do Supplier Diagnosis. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
@@ -125,6 +134,26 @@ Porównanie pokazuje dostawców obok siebie: **Pure rate**, **Lost documents**, 
 Przycisk **Analyse n clusters with AI** analizuje klastry problemów o największym potencjale touchless (każdy z co najmniej minimalną liczbą dokumentów). Trwa to około 13 sekund na klaster i obejmuje **całą organizację**. Uruchomić go mogą tylko administratorzy.
 
 W trakcie działania przy każdym klastrze widzisz **Queued**, **Running**, **Done**, **Already analysed** lub **Error**, z linkiem **Open cluster**. Jeśli AI jest wyłączone lub nieskonfigurowane w środowisku, przycisk jest nieaktywny wraz z powodem, a **wszystko inne na stronie nadal działa**.
+
+## Ontology: jak DocBits grupuje dostawców
+
+Obszar ma dwie karty: **Report** zawiera opisany powyżej panel, **Ontology** pokazuje graf dostawców używany przez widok grup w kolejce. Karta jest tylko do odczytu. Nie zmienia żadnego ustawienia ani dokumentu.
+
+DocBits wyprowadza graf raz na noc z dokumentów przetworzonych przez Twoją organizację. Węzeł dostawcy nosi nazwę taką, jak wydrukowano ją na dokumencie; krawędź łączy nazwy, które DocBits odczytuje jako tę samą firmę, na przykład dlatego że pisownia różni się tylko nieznacznie albo że obie mają ten sam numer identyfikacji podatkowej. Obok tytułu widzisz wersję grafu i czas jego obliczenia. **Reload** ponownie pobiera bieżący graf.
+
+Karta ma trzy części:
+
+| Część | Zawartość |
+| --- | --- |
+| **Your suppliers, grouped** | Grupy i liczba pisowni w każdej z nich. Grupa z jedną pisownią też jest wymieniona. |
+| **How it all connects** | Graf: dostawcy i grupy dostawców, obszary tematyczne, na których faktury utykają, konkretne przyczyny oraz pola, które ludzie muszą najczęściej poprawiać. |
+| **Explanation** | Szczegóły wybranego węzła: **What this is based on** wymienia dowody, **Also written as** wymienia inne pisownie, które DocBits widział, a **fixed by DocBits** (z ikoną kłódki) oznacza węzeł utrzymywany przez samego DocBits, a nie przez Twoją organizację. |
+
+Typy węzłów opisano na karcie prostym językiem: nazwa dostawcy to nazwa dokładnie taka, jak występuje na dokumentach, obszar tematyczny to miejsce, w którym faktury zwykle utykają i wymagają osoby, przyczyna to konkretna przyczyna nieudanego automatycznego przebiegu, a pole to pole dokumentu, które ludzie często muszą poprawić lub uzupełnić.
+
+Pusty graf to normalny stan. Pokazuje **DocBits is still learning** z informacją, że przegląd jest budowany każdej nocy i pojawia się po następnym przebiegu. Tak wygląda młoda organizacja albo pominięty przebieg nocny; to nie błąd.
+
+Graf działa także bez myszy: Tab przechodzi do grupy lub węzła, Enter lub Space wybiera go i wypełnia **Explanation**.
 
 ## Praca z Touchless Intelligence: rutyna
 

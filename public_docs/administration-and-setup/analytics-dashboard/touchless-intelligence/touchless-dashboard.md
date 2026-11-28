@@ -110,6 +110,15 @@ A fila classifica A acima de B porque o **ganho esperado** é medido em relaçã
 
 Use a caixa de busca ("Search supplier number or name") para encontrar um fornecedor. Clique em uma linha para abrir o **Supplier Diagnosis**.
 
+### Vista de fornecedor ou de grupo
+
+Por padrão, a fila tem uma linha por fornecedor. O seletor **Supplier | Group** ao lado da caixa de busca muda isso:
+
+* **Supplier** lista cada chave de fornecedor como ela aparece nos seus documentos. É o padrão e se comporta como a fila antes de o grafo existir.
+* **Group** agrupa em uma única linha as chaves de fornecedor que o DocBits agrupou. Uma linha agrupada lista os nomes mesclados na coluna **Members** e mostra todos eles em uma dica de ferramenta.
+
+Uma linha agrupada não abre um **Supplier Diagnosis**, porque o diagnóstico trabalha com uma única chave de fornecedor. Volte para **Supplier** e clique no fornecedor desejado. Enquanto o DocBits não tiver construído um grafo para a sua organização, a vista de grupo retorna as mesmas linhas da vista de fornecedor, sem erro.
+
 ### Comparar fornecedores
 
 <figure><img src="../../../.gitbook/assets/touchless-compare-suppliers-pt.png" alt="A página Compare suppliers com três fornecedores lado a lado e um gráfico de barras dos seus resultados"><figcaption><p>Três fornecedores lado a lado: pure rate, documentos perdidos e recuperáveis, causa raiz, ganho esperado e um gráfico de barras dos resultados. Cada <strong>Open</strong> leva ao Supplier Diagnosis. Organização de exemplo com dados de demonstração; os nomes dos fornecedores são fictícios.</p></figcaption></figure>
@@ -125,6 +134,26 @@ A comparação mostra os fornecedores lado a lado: **Pure rate**, **Lost documen
 O botão **Analyse n clusters with AI** analisa os clusters de problemas com o maior potencial touchless (com pelo menos um número mínimo de documentos cada). Leva cerca de 13 segundos por cluster e abrange a **organização inteira**. Somente administradores podem iniciá-lo.
 
 Enquanto ele é executado, você vê **Queued**, **Running**, **Done**, **Already analysed** ou **Error** para cada cluster, com um link **Open cluster**. Se a IA estiver desativada ou não configurada no ambiente, o botão fica desabilitado com o motivo, e **todo o resto da página continua funcionando**.
+
+## Ontology: como o DocBits agrupa seus fornecedores
+
+A área tem duas abas: **Report** contém o painel descrito acima e **Ontology** mostra o grafo de fornecedores usado pela vista de grupo da fila. A aba é somente leitura. Ela não altera nenhuma configuração nem documento.
+
+O DocBits deriva o grafo uma vez por noite a partir dos documentos processados pela sua organização. Um nó de fornecedor carrega um nome tal como está impresso em um documento; uma aresta une os nomes que o DocBits lê como a mesma empresa, por exemplo porque a grafia difere apenas levemente ou porque ambos têm o mesmo número de identificação fiscal. Ao lado do título você vê a versão do grafo e quando ele foi calculado. **Reload** busca novamente o grafo atual.
+
+A aba tem três partes:
+
+| Parte | Conteúdo |
+| --- | --- |
+| **Your suppliers, grouped** | Os grupos e quantas grafias cada um contém. Um grupo com uma única grafia também é listado. |
+| **How it all connects** | O grafo: fornecedores e grupos de fornecedores, as áreas temáticas em que as faturas ficam presas, os motivos concretos e os campos que as pessoas precisam corrigir com mais frequência. |
+| **Explanation** | Os detalhes do nó selecionado: **What this is based on** lista as evidências por trás dele, **Also written as** lista as outras grafias que o DocBits viu e **fixed by DocBits** (com ícone de cadeado) marca um nó que o próprio DocBits mantém e não a sua organização. |
+
+Os tipos de nó são explicados em linguagem simples na aba: um nome de fornecedor é um nome exatamente como aparece nos seus documentos, uma área temática é um ponto em que as faturas costumam ficar presas e precisam de uma pessoa, um motivo é uma causa concreta de uma execução automática malsucedida e um campo é um campo do documento que as pessoas frequentemente precisam corrigir ou preencher.
+
+Um grafo vazio é um estado normal. Ele mostra **DocBits is still learning** com a nota de que a visão geral é construída todas as noites e aparece após a próxima execução. Uma organização nova ou uma execução noturna perdida se apresentam assim; não é um erro.
+
+O grafo também funciona sem mouse: Tab passa para um grupo ou nó, Enter ou Space o seleciona e preenche a **Explanation**.
 
 ## Trabalhar com o Touchless Intelligence: uma rotina
 

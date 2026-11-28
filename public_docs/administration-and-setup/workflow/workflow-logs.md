@@ -1,179 +1,115 @@
 # Registos do Fluxo de Trabalho
 
-## Vídeo
-
-O vídeo de pesquisa é uma pré-visualização com ecrãs reais do DocBits. O vídeo de diagnóstico mantém os diagramas didáticos identificados como ilustrações.
-### Encontrar a execução relevante
-
-{% hint style="info" %}
-Pré-visualização para teste: ecrãs reais do DocBits com ações do documento, fluxo de documentos, tempos dos passos, registos vazios e filtros de estado e data. O documento não tem uma execução Advanced Workflow guardada. Esta pré-visualização ainda não inclui linhas de execução, paginação ou diagnóstico dos nós.
-{% endhint %}
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/pt.mp4" %}
-
-[Abrir vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/pt.mp4) · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/pt.vtt) · 1:52
-
-<details>
-<summary>Transcrição</summary>
-
-**Começar pelo documento**
-
-No painel de documentos, abra o menu de ações e escolha Fluxo de documentos. O histórico real mostra a importação e o OCR. Abra um passo para verificar os tempos de espera e processamento. Estes passos são distintos dos nós de Advanced Workflow.
-
-**Ler os contadores reais**
-
-Aqui estão os registos de workflow do mesmo documento. Azul indica o total, vermelho os erros, amarelo as condições não cumpridas e verde os sucessos. Este documento de demonstração não tem execuções registadas. Por isso, os quatro contadores mostram zero.
-
-**Verificar as colunas de execução**
-
-As colunas mostram o nome do workflow, a data de criação, a duração e o resultado. Distinga execuções repetidas pela data e hora. Este documento não tem uma linha para abrir.
-
-**Abrir os filtros de estado**
-
-O ícone de filtros abre o menu real. Ordene por nome ou data de criação, de forma ascendente ou descendente. O estado oferece sucesso, condição não cumprida e erro.
-
-**Escolher datas e limpar filtros**
-
-Escolha um período com as datas de início e fim ou o calendário. O formato é ano, mês e dia. Aplicar pede os resultados. Limpar filtros repõe a seleção. Limpe a pesquisa separadamente.
-
-**Pré-visualização: falta uma execução guardada**
-
-Esta pré-visualização permite verificar o acesso ao documento, os detalhes do processamento e os controlos dos registos. Falta uma execução Advanced Workflow guardada para mostrar linhas reais, paginação, percursos e mensagens dos nós. Estes resultados não são simulados no vídeo.
-
-</details>
-
-### Seguir nós e diagnosticar
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/pt.mp4" %}
-
-[Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/pt.vtt) · 1:55
-
-<details>
-<summary>Transcrição</summary>
-
-**Expanda uma execução**
-
-Expanda a linha do workflow. Uma execução avançada mostra o grafo à esquerda e mensagens à direita; um workflow padrão mostra cartões em sequência. Os dados descrevem aquela execução e podem diferir do editor atual.
-
-**Selecione um nó**
-
-Desloque ou amplie o grafo e selecione um nó. Card Logs mostra as mensagens. Wait ALL e Wait ANY também podem ter mensagens de nó. Relacione a mensagem com o nó selecionado e o horário da execução.
-
-**Distinga os resultados**
-
-Verde indica sucesso; laranja, condição falsa; vermelho, erro; cinzento, ignorado. Um nó ignorado não executou. Antes de o alterar, verifique se foi escolhido outro ramo ou falta uma entrada na junção.
-
-**Siga o primeiro desvio**
-
-Siga o percurso real desde a entrada. Numa condição de montante falsa, examine laranja; num erro, leia a mensagem e siga vermelho. O tratamento de erros pode funcionar enquanto a execução mantém o erro original.
-
-**Verifique as junções**
-
-Em Wait ALL, verifique cada origem e resultado ligado. Em ANY ou OR, procure uma origem correspondente. Duas saídas do mesmo nó não são aprovações independentes. Uma condição laranja pode ser intencional.
-
-**Corrija e verifique**
-
-Registe workflow, referência do documento, horário, nó e mensagem exata. Corrija configuração ou dados e teste um cenário repetível. Guarde e verifique a ativação. Compare uma execução nova com a anterior; registos antigos conservam o comportamento anterior.
-
-</details>
+Para explicações narradas da vista avançada de registos, veja [Encontrar a execução relevante](advanced-workflow-builder/videos.md#find-the-relevant-execution) e [Seguir nós e diagnosticar](advanced-workflow-builder/videos.md#trace-nodes-and-diagnose). Ambos os capítulos estão disponíveis em inglês e alemão, com ficheiros de legendas e transcrições.
 
 ## **Visão Geral**
 
-Os **Registos do Fluxo de Trabalho** permitem aos usuários analisar quais fluxos de trabalho foram executados para um documento, entender os resultados da execução e aprofundar-se nos detalhes do nível de condição para depuração ou validação.
+Os **Registos do Fluxo de Trabalho** permitem aos utilizadores analisar quais Workflows foram executados para um documento, compreender os resultados da execução e aprofundar os detalhes ao nível das condições para depuração ou validação.
 
-## **Acessando os Registos do Fluxo de Trabalho**
+## **Aceder aos Registos do Fluxo de Trabalho**
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4" %}
 
-**Vídeo:** Ler os registros do Workflow · 1:25 · [Legendas (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.vtt)
+**Vídeo:** Ler os registos do Workflow · 1:34 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.vtt)
 
 <details>
 
 <summary>Transcrição</summary>
 
-**Abrir os registros** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=0.25)
+**Abrir os registos do Workflow** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=0.25)
 
-Cada documento guarda os registros dos Workflows executados nele. No painel de documentos, abra as ações de um documento e escolha Registros de fluxo de trabalho.
+Cada documento guarda os registos dos Workflows que nele foram executados. No Dashboard do documento, abra as ações de um documento e escolha Workflow Logs.
 
-**Execuções e resultados** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=10.683)
+**Execuções e os seus resultados** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=12.15)
 
-No topo você vê quantas execuções houve e quantas terminaram com erro, condição não atendida ou sucesso. Abaixo, cada execução aparece com Workflow, hora, duração e resultado.
+No topo vê quantas execuções houve e quantas terminaram com um erro, uma condição falhada ou sucesso. Abaixo, cada execução é listada com o seu Workflow, hora, duração e resultado.
 
-**O caminho de uma execução** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=22.25)
+**O percurso de uma execução** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=25.716)
 
-Arraste o divisor para a esquerda para dar mais espaço aos registros. Depois clique em uma execução para ver o caminho dela. Cada cartão mostra seu resultado: verde para sucesso, laranja para condição não atendida, vermelho para erro. Aqui o cartão E terminou com uma condição não atendida, então o cartão Então seguinte não foi executado.
+Arraste o divisor para a esquerda para dar mais espaço aos registos. Depois clique numa execução para ver o percurso que seguiu. Cada cartão mostra o seu resultado: verde para sucesso, laranja para uma condição falhada, vermelho para um erro. Aqui o cartão And terminou com uma condição falhada, pelo que o cartão Then seguinte não foi executado.
 
-**Por que um cartão terminou assim** · [0:42](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=42.783)
+**Porque um cartão terminou assim** · [0:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=45.35)
 
-Selecione um cartão para ler o registro dele. Ele diz o que o cartão comparou e por que terminou assim. Aqui o documento está pronto para validação, mas o cartão espera a segunda aprovação.
+Selecione um cartão para ler o seu registo. Ele indica o que o cartão comparou e porque terminou assim. Aqui, o documento está pronto para validação, mas o cartão espera uma segunda aprovação pendente.
 
-**Um erro e o motivo** · [0:53](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=53.616)
+**Um erro e o seu motivo** · [0:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=58.283)
 
-Uma execução que termina com erro mostra em vermelho o cartão que falhou. Aqui o cartão E não conseguiu ler o endereço de entrega do documento. Dados ausentes são sempre um erro, então o cartão seguinte não foi executado.
+Uma execução que termina com um erro mostra o cartão que falhou a vermelho. Aqui o cartão And não conseguiu ler a morada de entrega do documento. Dados em falta são sempre um erro, pelo que o cartão Then seguinte não foi executado.
 
-**Encontrar execuções** · [1:06](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=66.85)
+**Encontrar execuções** · [1:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=73.216)
 
-Com muitas execuções, use a pesquisa para achar um Workflow pelo nome e o botão de filtro para limitar a lista por status ou data.
+Com muitas execuções, use a pesquisa para encontrar um Workflow pelo nome e o botão de filtro para restringir a lista por estado ou data.
 
-**Nota do limite de execução** · [1:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/pt.mp4#t=76.016)
+**Nota sobre o limite de execuções** · [1:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=83.116)
 
-Uma nota aparece no topo quando um Workflow atingiu o limite de execuções neste documento. O vídeo sobre limites de execução explica isso.
+Aparece uma nota no topo quando um Workflow atingiu o seu limite de execuções neste documento. O vídeo sobre limites de execução explica-o.
 
 </details>
 
-Para acessar os registos do fluxo de trabalho:
+Para aceder aos registos do Workflow:
 
-1. Navegue até o **Dashboard**.
-2. Clique no **menu de Ações** (ícone de três pontos) ao lado do documento desejado.
-3. Selecione **Registos do Fluxo de Trabalho** no menu.
-   * <mark style="color:red;">**Nota**</mark>**:** O recurso de workflow deve estar ativado para acessar esta opção.
-4.  Um **painel lateral** é aberto mostrando um resumo dos fluxos de trabalho executados.
+1. Navegue até ao **Dashboard**.
+2. Clique no **Actions menu** (ícone de três pontos) junto do documento pretendido.
+3. Selecione **Workflow Logs** no menu.
+   * <mark style="color:red;">**Note**</mark>: O recurso Workflow tem de estar ativado para aceder a esta opção.
+4.  Um **side panel** abre-se a mostrar um resumo dos Workflows executados.\\
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAlgg3jnSVRVyuYxy4tAp%252Fimage.png%3Falt%3Dmedia%26token%3D4e8fcd63-6113-47eb-95a4-95a7821dc9b9\&width=768\&dpr=4\&quality=100\&sign=9e6ba9f5\&sv=2)
+    <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="Dashboard with the workflow logs side panel showing summary counters and a table of executed workflows with result icons" width="563"><figcaption></figcaption></figure></div>
+
+## **Abrir um registo como página própria**
+
+O side panel tapa a lista de documentos. Para um documento cujo Workflow inspeciona durante algum tempo, abra o mesmo registo como página completa: selecione o ícone de nova janela no cabeçalho do painel. A página tem o endereço `/workflows/logs/<document id>`, pelo que a pode manter aberta numa segunda janela do navegador ou enviar o endereço a um colega que tenha acesso ao documento.
+
+A página mostra os mesmos contadores de resumo, a mesma tabela de Workflows executados e a mesma vista de detalhe que o painel.
+
+## **Mudar para outro documento**
+
+Na página completa, um campo de pesquisa acima da lista encontra um documento pelo nome ou pelo seu ID. Os resultados mostram a data de carregamento, o responsável e o estado de cada documento, para poder distinguir documentos com nomes semelhantes. Selecionar um resultado carrega o respetivo registo de Workflow e coloca o documento no endereço. A pesquisa abrange os documentos da sua organização que as suas permissões lhe permitem ver; quando nada corresponde, o DocBits indica-o abaixo do campo em vez de mostrar uma lista vazia.
 
 ## **Componentes do Painel de Registos do Fluxo de Trabalho**
 
-#### **1. Contadores de Resumo do Fluxo de Trabalho**
+#### **1. Contadores de Resumo do Workflow**
 
 Localizados no topo do painel de registos:
 
-* **Azul**: Número total de fluxos de trabalho executados.
-* **Vermelho**: Fluxos de trabalho que terminaram em **erros**.
-* **Amarelo**: Fluxos de trabalho que **não foram concluídos** devido a incompatibilidades de condição.
-* **Verde**: Fluxos de trabalho **executados** com sucesso.
+* **Azul**: Número total de Workflows executados.
+* **Vermelho**: Workflows que terminaram em **erros**.
+* **Amarelo**: Workflows que **não foram concluídos** devido a condições não cumpridas.
+* **Verde**: Workflows **executados** com sucesso.
 
-#### **2. Tabela de Execução do Fluxo de Trabalho**
+#### **2. Tabela de Execução de Workflows**
 
-Cada linha na tabela representa uma execução de fluxo de trabalho e inclui:
+Cada linha da tabela representa uma execução de Workflow e inclui:
 
-* **Nome do Fluxo de Trabalho**
-* **Timestamp** (Criado Em)
-* **Tempo de Execução** (em segundos)
-* **Ícone de Resultado**:
-  * Marca de seleção verde: Fluxo de trabalho executado com sucesso.
-  * Cruz vermelha: Fluxo de trabalho executado com um erro.
-  * Traço laranja: A execução foi interrompida devido a uma condição não atendida.
+* **Workflow Name**
+* **Timestamp** (Created On)
+* **Runtime** (em segundos)
+* **Result Icon**:
+  * Marca de verificação verde: Workflow executado com sucesso.
+  * Cruz vermelha: Workflow executado com um erro.
+  * Traço laranja: A execução foi interrompida porque uma condição não foi cumprida
 
-Ao clicar na **seta** à esquerda de cada linha, expande-se a **visualização detalhada do fluxo de trabalho**.
+Clicar na **seta** à esquerda de cada linha expande a **vista de detalhe do Workflow**.
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Expanded workflow log row showing When and And condition cards with green checks and a grayed card that was not met, plus card logs" width="563"><figcaption></figcaption></figure></div>
 
-### **Visualização Detalhada do Fluxo de Trabalho**
+### **Vista de Detalhe do Workflow**
 
-Ao clicar em uma linha de fluxo de trabalho específica, abre-se o **registo de execução detalhado**, mostrando:
+Clicar numa linha de Workflow específica abre o respetivo **registo de execução detalhado**, mostrando:
 
-#### **Avaliação de Condição**
+#### **Avaliação de Condições**
 
-* Bloco **Quando...**: Condição inicial.
-* Bloco(s) **E...**: Condições adicionais.
-* Bloco(s) **Então...**: Ações realizadas quando todas as condições são atendidas.
+* Bloco **When...**: Condição inicial.
+* Bloco(s) **And...**: Condições adicionais.
+* Bloco(s) **Then...**: Ações executadas quando todas as condições são cumpridas.
 
 Cada linha de condição mostra:
 
-* Marca de seleção **verde**: Condição foi atendida.
-* Traço laranja: Condição não foi atendida.
-* Cruz vermelha: Condição falhou **devido a um erro**
+* **Marca de verificação verde**: Condição cumprida.
+* **Traço laranja**: Condição não cumprida.
+* **Cruz vermelha**: Condição falhou **devido a um erro**
 
-### **Nota Comportamental Importante**
+### **Nota Importante sobre o Comportamento**
 
-Se uma condição em um fluxo de trabalho **não for atendida**, o sistema **para de avaliar quaisquer outras cartas de fluxo de trabalho** dentro desse fluxo de trabalho. Esse comportamento evita processamento desnecessário. Como indicador visual, a carta que **não atendeu à sua condição** é mostrada em **cinza**, e todas as **cartas subsequentes** no mesmo fluxo de trabalho também aparecerão **cinza**, indicando que elas **não foram executadas**.
+Se uma condição num Workflow **não for cumprida**, o sistema **deixa de avaliar quaisquer cartões de Workflow seguintes** nesse Workflow. Este comportamento evita processamento desnecessário\
+Como indicador visual, o cartão que **não cumpriu a sua condição** é mostrado em **cinza**, e todos os **cartões seguintes** no mesmo Workflow também aparecem em **cinza**, indicando que **não foram executados**.

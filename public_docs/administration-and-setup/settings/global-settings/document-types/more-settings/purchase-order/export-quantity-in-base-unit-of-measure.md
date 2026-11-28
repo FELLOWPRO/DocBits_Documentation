@@ -1,6 +1,6 @@
 # 以基本计量单位导出数量
 
-**Export quantity in base unit of measure** 开关位于文档类型 **More Settings** 的 **Purchase Order** 部分。它决定 Infor LN 导出为已匹配采购订单行写入的数量和单价。
+**Export quantity in base unit of measure** 开关位于文档类型 **More Settings** 的 **Purchase Order** 部分。它改变 Infor LN 导出为已匹配采购订单行写入的数量和单价。
 
 在 **Settings → Document Types** 中打开它：在文档类型卡片上选择齿轮图标（**More Settings**），然后展开 **Purchase Order**。
 
@@ -19,7 +19,7 @@
 
 当 Infor LN 实例要求以基本计量单位提供订单数量时，请打开该开关。换算使用采购订单行上存储的系数，而不是 DocBits 根据物料主数据计算的系数。
 
-设置可能影响生产文档。请先用测试文档检查结果，再在生产环境中保存更改。该开关改变导出的值；它不改变发票行与采购订单行的匹配方式。
+设置可能影响正在使用的文档。请先用测试文档检查结果，再在生产环境中保存更改。该开关改变导出的值；它不改变发票行与采购订单行的匹配方式。
 
 ## 相关页面
 

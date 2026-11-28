@@ -497,6 +497,7 @@
           * [Calcular el precio unitario del pedido](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md)
           * [Orden de compra](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order.md)
           * [Exportar líneas de PO no coincidentes](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/export-not-matched-po-lines.md)
+          * [Cantidad exportada en la unidad de medida base](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/export-quantity-in-base-unit-of-measure.md)
           * [Ajuste de tolerancias de órdenes de compra / Tolerancia adicional de órdenes de compra](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md)
           * [Exportación alternativa](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/alternate-export.md)
           * [Estados de pedidos excluidos de la conciliación](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md)

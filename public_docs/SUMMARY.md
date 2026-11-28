@@ -496,6 +496,7 @@
           * [Bereken PO-eenheidsprijs](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md)
           * [Inkooporder](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order.md)
           * [Export niet gematchte PO-regels](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/export-not-matched-po-lines.md)
+          * [Exporthoeveelheid in basiseenheid](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/export-quantity-in-base-unit-of-measure.md)
           * [Aankooporder tolerantie-instellingen / Extra aankooporder tolerantie](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md)
           * [Alternatieve export](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/alternate-export.md)
           * [PO-uitschakelstatussen](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md)

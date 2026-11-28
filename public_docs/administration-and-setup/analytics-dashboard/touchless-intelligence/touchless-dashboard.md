@@ -110,6 +110,15 @@ De wachtrij plaatst A boven B omdat de **verwachte stijging** wordt afgemeten aa
 
 Gebruik het zoekvak ("Search supplier number or name") om een leverancier te vinden. Klik op een rij om de **Supplier Diagnosis** te openen.
 
+### Leverancier- of groepsweergave
+
+Standaard heeft de wachtrij één rij per leverancier. De schakelaar **Supplier | Group** naast het zoekvak verandert dat:
+
+* **Supplier** toont elke leverancierssleutel zoals die op uw documenten staat. Dit is de standaardinstelling en gedraagt zich als de wachtrij voordat de graaf bestond.
+* **Group** voegt de leverancierssleutels die DocBits heeft gegroepeerd samen tot één rij. Een gegroepeerde rij toont de samengevoegde namen in de kolom **Members** en laat ze allemaal in een tooltip zien.
+
+Een gegroepeerde rij opent geen **Supplier Diagnosis**, omdat de diagnose met één leverancierssleutel werkt. Schakel terug naar **Supplier** en klik op de leverancier die u wilt. Zolang DocBits nog geen graaf voor uw organisatie heeft opgebouwd, geeft de groepsweergave dezelfde rijen als de leveranciersweergave, zonder fout.
+
 ### Leveranciers vergelijken
 
 <figure><img src="../../../.gitbook/assets/touchless-compare-suppliers-nl.png" alt="De pagina Compare suppliers met drie leveranciers naast elkaar en een staafdiagram van hun uitkomsten"><figcaption><p>Drie leveranciers naast elkaar: puur percentage, verloren en herstelbare documenten, hoofdoorzaak, verwachte stijging en een staafdiagram van de uitkomsten. Elke <strong>Open</strong> leidt naar de Supplier Diagnosis. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
@@ -125,6 +134,26 @@ De vergelijking toont de leveranciers naast elkaar: **Pure rate**, **Lost docume
 De knop **Analyse n clusters with AI** analyseert de probleemclusters met het hoogste touchless-potentieel (elk met ten minste een minimumaantal documenten). Het duurt ongeveer 13 seconden per cluster en omvat de **hele organisatie**. Alleen beheerders kunnen de analyse starten.
 
 Terwijl de analyse loopt, ziet u per cluster **Queued**, **Running**, **Done**, **Already analysed** of **Error**, met een link **Open cluster**. Als AI is uitgeschakeld of in de omgeving niet is geconfigureerd, is de knop uitgeschakeld met de reden, en **blijft al het andere op de pagina werken**.
+
+## Ontology: hoe DocBits uw leveranciers groepeert
+
+Het gebied heeft twee tabbladen: **Report** bevat het hierboven beschreven dashboard, **Ontology** toont de leveranciersgraaf die de groepsweergave van de wachtrij gebruikt. Het tabblad is alleen-lezen. Het wijzigt geen instelling en geen document.
+
+DocBits leidt de graaf één keer per nacht af uit de documenten die uw organisatie heeft verwerkt. Een leveranciersknooppunt draagt een naam zoals die op een document is afgedrukt; een rand verbindt de namen die DocBits als hetzelfde bedrijf leest, bijvoorbeeld omdat de spelling slechts licht verschilt of omdat beide hetzelfde fiscale nummer hebben. Naast de titel ziet u de versie van de graaf en wanneer die is berekend. **Reload** haalt de actuele graaf opnieuw op.
+
+Het tabblad heeft drie delen:
+
+| Deel | Inhoud |
+| --- | --- |
+| **Your suppliers, grouped** | De groepen en hoeveel spellingen elke groep bevat. Een groep met één spelling wordt ook vermeld. |
+| **How it all connects** | De graaf: leveranciers en leveranciersgroepen, de onderwerpen waar facturen blijven hangen, de concrete redenen en de velden die mensen het vaakst moeten corrigeren. |
+| **Explanation** | De details van het geselecteerde knooppunt: **What this is based on** noemt het bewijs erachter, **Also written as** somt de andere spellingen op die DocBits heeft gezien, en **fixed by DocBits** (met slotpictogram) markeert een knooppunt dat DocBits zelf onderhoudt en niet uw organisatie. |
+
+De knooppunttypen worden in het tabblad in gewone taal uitgelegd: een leveranciersnaam is een naam precies zoals die op uw documenten staat, een onderwerp is een plek waar facturen meestal blijven hangen en een mens nodig hebben, een reden is een concrete oorzaak van een mislukte automatische run, en een veld is een documentveld dat mensen vaak moeten corrigeren of invullen.
+
+Een lege graaf is een normale toestand. Hij toont **DocBits is still learning** met de melding dat het overzicht elke nacht wordt opgebouwd en na de volgende run verschijnt. Een jonge organisatie of een gemiste nachtelijke run ziet er zo uit; het is geen fout.
+
+De graaf werkt ook zonder muis: Tab gaat naar een groep of knooppunt, Enter of Space selecteert het en vult de **Explanation**.
 
 ## Werken met Touchless Intelligence: een routine
 

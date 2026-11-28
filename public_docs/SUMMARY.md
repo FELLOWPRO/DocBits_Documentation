@@ -936,6 +936,7 @@
   * [Choose the right agent](advanced-functions-and-tools/knowledge-assistant/choose-the-right-agent.md)
   * [Troubleshooting](advanced-functions-and-tools/knowledge-assistant/troubleshooting.md)
   * [What it can and cannot do](advanced-functions-and-tools/knowledge-assistant/what-it-can-and-cannot-do.md)
+  * [Web search](advanced-functions-and-tools/knowledge-assistant/web-search.md)
   * [Industry templates](advanced-functions-and-tools/knowledge-assistant/industry-templates/README.md)
     * [Construction](advanced-functions-and-tools/knowledge-assistant/industry-templates/construction.md)
     * [Trade](advanced-functions-and-tools/knowledge-assistant/industry-templates/trade.md)

@@ -49,6 +49,7 @@ Read [What it can and cannot do](what-it-can-and-cannot-do.md) before you rely o
 | [Choose the right agent](choose-the-right-agent.md) | Understand the built-in agents and pick the right one for your question |
 | [Troubleshooting](troubleshooting.md) | Look up a symptom and the action that helps |
 | [What it can and cannot do](what-it-can-and-cannot-do.md) | Understand the limits and what has been tested |
+| [Web search](web-search.md) | Switch on the optional web search, and understand its confirmation, data protection and limits |
 | [Industry templates](industry-templates/README.md) | See what the template for your industry provides, with example questions |
 
 {% hint style="warning" %}

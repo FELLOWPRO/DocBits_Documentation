@@ -44,7 +44,7 @@ The two specialist agents only help on knowledge bases that have the matching in
 
 ## What is not available
 
-* **Web search** is not offered in the Knowledge Assistant. <!-- ROADMAP-RAG.md row 10: web search not built; Input-field.vue 496-507: search button only with a configured search engine -->
+* An **own search provider with your own key** for web search is planned and not yet available. Web search itself is optional and off by default: see [Web search](web-search.md). <!-- web search: admin switch under Functions, default off; DocOperator route without key, best effort -->
 * The agents do not run code in a sandbox, do not use chat channels and do not use your own language models. See [What it can and cannot do](what-it-can-and-cannot-do.md).
 
 ## How to recognize an agent in the list

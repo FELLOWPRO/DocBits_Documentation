@@ -13,6 +13,7 @@ Status column: **Available** works in our tests. **Limited** works with the stat
 | Task | Click path | What happens | Status |
 | --- | --- | --- | --- |
 | Switch on the Knowledge Assistant | Settings → Module → Document Integration → card **Knowledge Assistant** (administrator) | The **Knowledge Assistant** entry appears in the left menu. | Available |
+| Switch on web search (optional) | Settings → Module → Document Integration → card **Knowledge Assistant** → **Functions** → **Web search** (administrator) | The assistant may search the public internet; every search text needs your confirmation by default. See [Web search](web-search.md). | Limited: best effort |
 | Switch on an industry template | Knowledge Assistant → Settings → **Industry templates** (administrator) | Three knowledge bases and three assistants are created. | Available |
 | Ask a question | Knowledge Assistant → Chat → choose an agent below the input field → type the question | You get an answer with a source reference. | Available |
 | Open a source | Chat → click the source reference below the answer | The document opens on the right, with the page where the answer was found. | Available; limited for Excel and images |

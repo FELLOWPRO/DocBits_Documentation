@@ -2,6 +2,12 @@
 
 Touchless Intelligence odpowiada na dwa odrębne pytania: **Czy DocBits poprawnie odczytał fakturę?** Oraz: **Czy cały proces zakończył się bez ingerencji w przetwarzanie?** Poprawny odczyt może mimo to wymagać poprawki, gdy dane w Infor się różnią. AP oznacza ludzki zespół Accounts Payable.
 
+## Film: przegląd raportu Touchless
+
+Ta ilustrowana prezentacja wyjaśnia, jak DocBits przekształca dokumenty w wyniki przetwarzania bez interwencji, jak odczytywać wskaźnik i trend Touchless oraz jak ślad dokumentu pomaga wykrywać i usuwać powtarzające się blokady.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-report-xiaohei/v1/pl.mp4" %}
+
 ## Film: funkcje raportu Touchless
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/pl.mp4" %}

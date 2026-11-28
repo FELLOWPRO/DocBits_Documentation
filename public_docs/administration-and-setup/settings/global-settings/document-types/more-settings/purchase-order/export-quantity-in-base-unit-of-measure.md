@@ -7,7 +7,7 @@ Aprilo in **Settings → Document Types**, seleziona l'icona a ingranaggio (**Mo
 ## Cosa fa l'interruttore
 
 * **Off:** DocBits esporta la quantità e il prezzo unitario nell'unità della fattura.
-* **On:** DocBits converte la quantità e il prezzo unitario di ogni riga di ordine abbinata nell'unità di misura base di quella riga, usando il relativo fattore di conversione, e scrive il codice dell'unità base invece del codice dell'unità fatturata.
+* **On:** DocBits converte la quantità e il prezzo unitario di ogni riga dell'ordine di acquisto abbinata nell'unità di misura base di quella riga, usando il relativo fattore di conversione, e scrive il codice dell'unità base invece del codice dell'unità fatturata.
 
 Una riga senza fattore di conversione viene esportata invariata, quindi un fattore mancante non blocca l'esportazione.
 
@@ -19,7 +19,7 @@ La conversione vale solo per l'esportazione verso Infor LN. Gli altri destinatar
 
 Attiva l'interruttore quando l'istanza Infor LN si aspetta quantità d'ordine nell'unità di misura base. La conversione usa il fattore memorizzato sulla riga d'ordine, non un fattore che DocBits calcola dall'anagrafica articoli.
 
-Le impostazioni possono influire sui documenti in produzione. Verifica il risultato con un documento di prova prima di salvare la modifica in produzione. L'interruttore cambia i valori esportati; non cambia il modo in cui vengono abbinate le righe di fattura e d'ordine.
+Le impostazioni possono influire sui documenti in uso. Verifica il risultato con un documento di prova prima di salvare la modifica in produzione. L'interruttore cambia i valori esportati; non cambia il modo in cui vengono abbinate le righe di fattura e d'ordine.
 
 ## Pagine correlate
 

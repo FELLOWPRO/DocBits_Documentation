@@ -110,6 +110,15 @@
 
 使用搜索框（“Search supplier number or name”）查找供应商。点击某一行可打开 **Supplier Diagnosis**。
 
+### 供应商视图或分组视图
+
+默认情况下，队列中每个供应商占一行。搜索框旁的 **Supplier | Group** 切换开关可改变这一方式：
+
+* **Supplier** 按供应商键在文档中出现的原样逐条列出。这是默认设置，行为与图谱出现之前的队列相同。
+* **Group** 将 DocBits 已归并的供应商键折叠为一行。分组行在 **Members** 列中列出合并后的名称，并在工具提示中显示全部名称。
+
+分组行不会打开 **Supplier Diagnosis**，因为诊断只针对单个供应商键。请切回 **Supplier**，再点击所需的供应商。在 DocBits 为您的组织建立图谱之前，分组视图返回与供应商视图相同的行，且不报错。
+
 ### 比较供应商
 
 <figure><img src="../../../.gitbook/assets/touchless-compare-suppliers.png" alt="Compare suppliers 页面，三家供应商并排显示，并有各结果的柱状图"><figcaption><p>三家供应商并排比较：pure 比率、流失与可挽回文档、根本原因、预期提升，以及各结果的柱状图。每个 <strong>Open</strong> 都指向 Supplier Diagnosis。示例组织，使用演示数据；供应商名称为虚构。</p></figcaption></figure>
@@ -125,6 +134,26 @@
 按钮 **Analyse n clusters with AI** 会分析 touchless 潜力最高的问题集群（每个集群至少达到最低文档数）。每个集群约需 13 秒，覆盖**整个组织**。只有管理员可以启动。
 
 运行时，您会看到每个集群显示 **Queued**、**Running**、**Done**、**Already analysed** 或 **Error**，并带有 **Open cluster** 链接。如果环境中 AI 已关闭或未配置，该按钮会被禁用并说明原因，此时**页面上的其他所有内容仍可正常使用**。
+
+## Ontology：DocBits 如何将供应商分组
+
+该区域有两个选项卡：**Report** 包含上文描述的仪表板，**Ontology** 显示队列分组视图所用的供应商图谱。该选项卡为只读。它不会更改任何设置或文档。
+
+DocBits 每晚根据您的组织已处理的文档推导一次图谱。供应商节点携带的名称与文档上打印的一致；边连接 DocBits 判定为同一家公司的名称，例如拼写仅有细微差别，或两者具有相同的税号。标题旁会显示图谱版本及其计算时间。**Reload** 会重新获取当前图谱。
+
+该选项卡包含三个部分：
+
+| 部分 | 内容 |
+| --- | --- |
+| **Your suppliers, grouped** | 各分组及每组包含的拼写数量。仅含一种拼写的分组也会列出。 |
+| **How it all connects** | 图谱：供应商与供应商分组、发票停滞的主题领域、具体原因，以及人们最常需要更正的字段。 |
+| **Explanation** | 所选节点的详细信息：**What this is based on** 列出其依据，**Also written as** 列出 DocBits 见过的其他拼写，**fixed by DocBits**（带锁图标）标记由 DocBits 自身维护而非您的组织维护的节点。 |
+
+选项卡内以通俗语言说明了节点类型：供应商名称是文档上原样出现的名称，主题领域是发票通常停滞并需要人工处理的位置，原因是自动运行失败的具体起因，字段是人们经常需要更正或填写的文档字段。
+
+图谱为空是正常状态。它会显示 **DocBits is still learning**，并说明概览每晚构建、在下次运行后出现。较新的组织或某次夜间运行缺失时就是这种状态；这不是错误。
+
+图谱也支持无鼠标操作：Tab 移到分组或节点，Enter 或 Space 选中它并填充 **Explanation**。
 
 ## 使用 Touchless Intelligence：日常工作流程
 

@@ -502,6 +502,7 @@
           * [计算采购订单单价](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md)
           * [采购订单](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order.md)
           * [导出未匹配的采购订单行](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/export-not-matched-po-lines.md)
+          * [以基本计量单位导出数量](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/export-quantity-in-base-unit-of-measure.md)
           * [采购订单容差设置 / 其他采购订单容差](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md)
           * [备用导出](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/alternate-export.md)
           * [采购订单禁用状态](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md)

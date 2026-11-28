@@ -151,7 +151,7 @@ De API-host in het antwoord moet overeenkomen met het endpoint dat je hebt gekoz
 ## Volgende stappen
 
 * [Voorbeelden](examples.md): kant-en-klare prompts voor documenten, zoeken en analyses
-* [DocBits configureren met Claude of Codex](configuration-with-claude-or-codex.md): instellingen veilig wijzigen met voorbeeld, bevestigen en ongedaan maken
+* [DocBits configureren met Claude of Codex](configuration-with-claude-or-codex.md): instellingen veilig wijzigen met preview, bevestigen en ongedaan maken
 * [Installatie & configuratie](setup-and-configuration.md): aanmelden met een API key voor automatisering en hoe de OAuth-aanmelding werkt
 
 ## Problemen oplossen

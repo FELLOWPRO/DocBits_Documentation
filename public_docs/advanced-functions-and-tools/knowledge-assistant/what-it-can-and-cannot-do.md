@@ -105,7 +105,9 @@ Questions about processing location, the language model used and data processing
 
 ## Not available
 
-These are not part of the Knowledge Assistant today and are not offered: web search, running code in a sandbox, chat channels such as e-mail or messengers, your own language models, separate sub-organizations and a desktop app. We state no date for any of them.
+Web search is optional and off by default; an administrator switches it on (see [Web search](web-search.md)). It is marked best effort and does not replace a register lookup. An own search provider with your own key is planned and not yet available.
+
+These are not part of the Knowledge Assistant today and are not offered: running code in a sandbox, chat channels such as e-mail or messengers, your own language models, separate sub-organizations and a desktop app. We state no date for any of them.
 
 ## Not tested (no statement possible)
 

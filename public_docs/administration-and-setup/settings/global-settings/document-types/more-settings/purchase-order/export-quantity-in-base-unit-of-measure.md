@@ -19,7 +19,7 @@ Przeliczenie dotyczy wyłącznie eksportu do Infor LN. Pozostałe cele eksportu 
 
 Włącz przełącznik, gdy instancja Infor LN oczekuje ilości zamówienia w podstawowej jednostce miary. Przeliczenie używa współczynnika zapisanego w linii zamówienia, a nie współczynnika, który DocBits oblicza z kartoteki towarów.
 
-Ustawienia mogą wpływać na dokumenty produkcyjne. Sprawdź wynik na dokumencie testowym, zanim zapiszesz zmianę w środowisku produkcyjnym. Przełącznik zmienia eksportowane wartości; nie zmienia sposobu dopasowywania linii faktury i zamówienia.
+Ustawienia mogą wpływać na dokumenty w użyciu. Sprawdź wynik na dokumencie testowym, zanim zapiszesz zmianę w środowisku produkcyjnym. Przełącznik zmienia eksportowane wartości; nie zmienia sposobu dopasowywania linii faktury i zamówienia.
 
 ## Powiązane strony
 

@@ -921,6 +921,7 @@
   * [Ligar AI Workforce ao Teams e ao Discord](advanced-functions-and-tools/ai-workforce-chat-connections.md)
   * [Verificar o que um agente de IA aprendeu](advanced-functions-and-tools/ai-workforce-agent-memory.md)
 * [DocBits MCP](advanced-functions-and-tools/docbits-mcp/README.md)
+  * [Quick Connect](advanced-functions-and-tools/docbits-mcp/quick-connect.md)
   * [Configuração e Instalação](advanced-functions-and-tools/docbits-mcp/setup-and-configuration.md)
   * [Configurar o DocBits com Claude ou Codex](advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md)
   * [Exemplos](advanced-functions-and-tools/docbits-mcp/examples.md)

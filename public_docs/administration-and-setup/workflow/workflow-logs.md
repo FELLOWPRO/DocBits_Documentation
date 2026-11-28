@@ -1,179 +1,115 @@
-# Journaux de flux de travail
+# Journaux de workflow
 
-## Vidéo
-
-La vidéo de recherche est un aperçu avec de véritables écrans DocBits. La vidéo de diagnostic utilise encore des schémas pédagogiques identifiés comme illustrations.
-### Trouver l’exécution pertinente
-
-{% hint style="info" %}
-Aperçu à tester : véritables écrans DocBits avec actions du document, flux de documents, durée des étapes, journaux vides et filtres de statut et de date. Le document ne contient aucune exécution Advanced Workflow enregistrée. Cet aperçu ne montre pas encore les lignes d’exécution, la pagination ni le diagnostic des nœuds.
-{% endhint %}
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/fr.mp4" %}
-
-[Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/fr.vtt) · 1:46
-
-<details>
-<summary>Transcription</summary>
-
-**Commencer par le document**
-
-Dans le tableau de bord des documents, ouvrez le menu des actions et choisissez le flux de documents. L’historique réel montre l’importation et l’OCR. Ouvrez une étape pour examiner les temps d’attente et de traitement. Ces étapes sont distinctes des nœuds Advanced Workflow.
-
-**Lire les compteurs réels**
-
-Voici les journaux de workflow du même document. Le bleu indique le total, le rouge les erreurs, le jaune les conditions non remplies et le vert les réussites. Ce document de démonstration ne contient aucune exécution enregistrée. Les quatre compteurs affichent donc zéro.
-
-**Vérifier les colonnes des exécutions**
-
-Les colonnes indiquent le nom du workflow, la date de création, la durée et le résultat. Distinguez les exécutions répétées grâce à l’horodatage. Ce document ne contient aucune ligne à ouvrir.
-
-**Ouvrir les filtres de statut**
-
-L’icône des filtres ouvre le véritable menu. Triez par nom ou date de création, dans l’ordre croissant ou décroissant. Le statut propose réussite, condition non remplie et erreur.
-
-**Choisir les dates et effacer les filtres**
-
-Choisissez une période avec les dates de début et de fin ou le calendrier. Le format est année, mois et jour. Appliquer demande les résultats. Effacer les filtres réinitialise la sélection. Effacez la recherche séparément. Dans cette version, les mois du calendrier restent en anglais.
-
-**Aperçu : une exécution enregistrée manque encore**
-
-Cet aperçu permet de vérifier l’accès au document, les détails du traitement et les commandes des journaux. Une exécution Advanced Workflow enregistrée manque encore pour montrer les lignes réelles, la pagination, les routes et les messages des nœuds. Ces résultats ne sont pas simulés dans la vidéo.
-
-</details>
-
-### Suivre les nœuds et diagnostiquer
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/fr.mp4" %}
-
-[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/fr.vtt) · 1:47
-
-<details>
-<summary>Transcription</summary>
-
-**Développez une exécution**
-
-Développez la ligne du workflow. Une exécution avancée affiche le graphe à gauche et les messages à droite ; un workflow standard montre une suite de cartes. Ces données décrivent cette exécution et peuvent différer du concepteur actuel.
-
-**Sélectionnez un nœud**
-
-Déplacez ou zoomez le graphe, puis cliquez sur un nœud. Card Logs affiche ses messages. Wait ALL et Wait ANY peuvent aussi avoir des messages de nœud. Reliez le message au nœud sélectionné et à l’horodatage.
-
-**Distinguez les états**
-
-Vert signifie succès ; orange, condition fausse ; rouge, erreur ; gris, ignoré. Un nœud ignoré n’a pas été exécuté. Avant de le modifier, vérifiez si une autre branche a été choisie ou si une entrée de jonction manque.
-
-**Suivez la première divergence**
-
-Suivez le chemin réel depuis l’entrée. Pour un contrôle de montant faux, examinez orange ; pour une erreur, lisez le message et examinez rouge. Le traitement d’erreur peut réussir tandis que l’exécution conserve l’erreur initiale.
-
-**Vérifiez les jonctions**
-
-Pour Wait ALL, contrôlez chaque source et résultat connecté. Pour ANY ou OR, cherchez une source correspondante. Deux sorties du même nœud ne constituent pas des approbations indépendantes. Une condition orange peut être voulue.
-
-**Corrigez et vérifiez**
-
-Notez workflow, référence documentaire, horodatage, nœud et message exact. Corrigez données ou configuration, puis testez un scénario reproductible. Enregistrez et vérifiez l’activation. Comparez une nouvelle exécution à l’ancienne ; les anciens journaux conservent le comportement antérieur.
-
-</details>
+Pour des explications commentées de la vue avancée des journaux, regardez [Find the relevant execution](advanced-workflow-builder/videos.md#find-the-relevant-execution) et [Trace nodes and diagnose](advanced-workflow-builder/videos.md#trace-nodes-and-diagnose). Les deux chapitres sont disponibles en anglais et en allemand, avec fichiers de sous-titres et transcriptions.
 
 ## **Aperçu**
 
-Les **Journaux de flux de travail** permettent aux utilisateurs d'analyser quels flux de travail ont été exécutés pour un document, de comprendre les résultats de l'exécution et d'approfondir les détails au niveau des conditions pour le débogage ou la validation.
+Les **Workflow Logs** permettent aux utilisateurs d'analyser quels Workflows ont été exécutés pour un document, de comprendre les résultats d'exécution et d'examiner les détails au niveau des conditions pour le débogage ou la validation.
 
-## **Accès aux journaux de flux de travail**
+## **Accès aux Workflow Logs**
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4" %}
 
-**Vidéo:** Lire les journaux du Workflow · 1:38 · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.vtt)
+**Vidéo :** Lire les journaux de workflow · 1:34 · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.vtt)
 
 <details>
 
 <summary>Transcription</summary>
 
-**Ouvrir les journaux** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=0.25)
+**Ouvrir les journaux de workflow** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=0.25)
 
-Chaque document garde les journaux des Workflows qui ont tourné dessus. Dans le tableau de bord des documents, ouvrez les actions d'un document et choisissez Journaux de flux de travail.
+Chaque document conserve les journaux des Workflows qui se sont exécutés sur lui. Dans le Dashboard des documents, ouvrez les actions d'un document et choisissez Workflow Logs.
 
-**Exécutions et résultats** · [0:10](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=10.95)
+**Exécutions et leurs résultats** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=12.15)
 
-En haut, vous voyez combien d'exécutions il y a eu, et combien se sont terminées par une erreur, une condition échouée ou un succès. Dessous, chaque exécution est listée avec son Workflow, l'heure, la durée et le résultat.
+En haut, vous voyez combien d'exécutions ont eu lieu et combien se sont terminées par une erreur, une condition non remplie ou un succès. En dessous, chaque exécution est listée avec son Workflow, son heure, sa durée et son résultat.
 
-**Le chemin d'une exécution** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=25.716)
+**Le chemin d'une exécution** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=25.716)
 
-Faites glisser le séparateur vers la gauche pour donner plus de place aux journaux. Cliquez ensuite sur une exécution pour voir son chemin. Chaque carte montre son résultat : vert pour un succès, orange pour une condition échouée, rouge pour une erreur. Ici, la carte Et s'est terminée par une condition échouée, donc la carte Dans ce cas suivante n'a pas tourné.
+Faites glisser le séparateur vers la gauche pour donner plus de place aux journaux. Cliquez ensuite sur une exécution pour voir le chemin qu'elle a suivi. Chaque carte affiche son résultat : vert pour un succès, orange pour une condition non remplie, rouge pour une erreur. Ici, la carte And s'est terminée par une condition non remplie, donc la carte Then qui la suit ne s'est pas exécutée.
 
-**Pourquoi une carte finit ainsi** · [0:48](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=48.15)
+**Pourquoi une carte s'est terminée ainsi** · [0:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=45.35)
 
-Sélectionnez une carte pour lire son journal. Il dit ce que la carte a comparé et pourquoi elle s'est terminée ainsi. Ici, le document est prêt pour la validation, mais la carte attend la deuxième approbation.
+Sélectionnez une carte pour lire son journal. Il indique ce que la carte a comparé et pourquoi elle s'est terminée ainsi. Ici, le document est prêt pour la validation, mais la carte attend le statut « deuxième approbation en attente ».
 
-**Une erreur et sa raison** · [1:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=62.45)
+**Une erreur et sa raison** · [0:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=58.283)
 
-Une exécution qui se termine par une erreur montre la carte en échec en rouge. Ici, la carte Et n'a pas pu lire l'adresse de livraison du document. Des données manquantes sont toujours une erreur, donc la carte suivante n'a pas tourné.
+Une exécution qui se termine par une erreur affiche en rouge la carte en échec. Ici, la carte And n'a pas pu lire l'adresse de livraison dans le document. Une donnée manquante est toujours une erreur, donc la carte Then qui la suit ne s'est pas exécutée.
 
-**Trouver des exécutions** · [1:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=78.083)
+**Trouver des exécutions** · [1:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=73.216)
 
-Avec beaucoup d'exécutions, utilisez la recherche pour trouver un Workflow par son nom, et le bouton de filtre pour réduire la liste par statut ou par date.
+Lorsque les exécutions sont nombreuses, utilisez la recherche pour trouver un Workflow par son nom, et le bouton de filtre pour réduire la liste par statut ou par date.
 
-**Note de limite d'exécution** · [1:28](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/fr.mp4#t=88.516)
+**Note sur la limite d'exécution** · [1:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=83.116)
 
-Une note apparaît en haut quand un Workflow a atteint sa limite d'exécution sur ce document. La vidéo sur les limites d'exécution l'explique.
+Une note apparaît en haut lorsqu'un Workflow a atteint sa limite d'exécution sur ce document. La vidéo sur les limites d'exécution l'explique.
 
 </details>
 
-Pour accéder aux journaux de flux de travail :
+Pour accéder aux Workflow Logs :
 
-1. Naviguez jusqu'au **Tableau de bord**.
-2. Cliquez sur le **menu Actions** (icône à trois points) à côté du document souhaité.
-3. Sélectionnez **Journaux de flux de travail** dans le menu.
-   * <mark style="color:red;">**Remarque**</mark>**&#x20;:** La fonctionnalité de workflow doit être activée pour accéder à cette option.
-4.  Un **panneau latéral** s'ouvre montrant un résumé des flux de travail exécutés.
+1. Naviguez jusqu'au **Dashboard**.
+2. Cliquez sur le **Actions menu** (icône à trois points) à côté du document souhaité.
+3. Sélectionnez **Workflow Logs** dans le menu.
+   * <mark style="color:red;">**Note**</mark> : la fonctionnalité Workflow doit être activée pour accéder à cette option.
+4.  Un **side panel** s'ouvre et présente un résumé des Workflows exécutés.\\
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAlgg3jnSVRVyuYxy4tAp%252Fimage.png%3Falt%3Dmedia%26token%3D4e8fcd63-6113-47eb-95a4-95a7821dc9b9\&width=768\&dpr=4\&quality=100\&sign=9e6ba9f5\&sv=2)
+    <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="Dashboard with the workflow logs side panel showing summary counters and a table of executed workflows with result icons" width="563"><figcaption></figcaption></figure></div>
 
-## **Composants du panneau des journaux de flux de travail**
+## **Ouvrir un journal sur sa propre page**
 
-#### **1. Compteurs de résumé de flux de travail**
+Le side panel masque la liste des documents. Pour un document dont vous examinez le Workflow pendant un certain temps, ouvrez le même journal dans une page complète : sélectionnez l'icône de nouvelle fenêtre dans l'en-tête du panneau. Cette page a l'adresse `/workflows/logs/<document id>`, vous pouvez donc la garder ouverte dans une deuxième fenêtre du navigateur ou envoyer l'adresse à un collègue qui a accès au document.
 
-Situation en haut du panneau des journaux :
+La page affiche les mêmes compteurs de résumé, le même tableau des Workflows exécutés et la même vue détaillée que le panneau.
 
-* **Bleu** : Nombre total de flux de travail exécutés.
-* **Rouge** : Flux de travail ayant abouti à des **erreurs**.
-* **Jaune** : Flux de travail qui n'ont pas été **terminés** en raison de divergences de conditions.
-* **Vert** : Flux de travail exécutés avec succès.
+## **Passer à un autre document**
 
-#### **2. Tableau d'exécution de flux de travail**
+Sur la page complète, un champ de recherche au-dessus de la liste trouve un document par son nom ou par son ID. Les résultats affichent la date d'import, l'assigné et le statut de chaque document, ce qui vous permet de distinguer des documents aux noms similaires. La sélection d'un résultat charge son journal de Workflow et place le document dans l'adresse. La recherche couvre les documents de votre organisation que vos autorisations vous permettent de voir ; lorsque rien ne correspond, DocBits l'indique sous le champ au lieu d'afficher une liste vide.
 
-Chaque ligne dans le tableau représente une exécution de flux de travail et inclut :
+## **Composants du panneau Workflow Logs**
 
-* **Nom du flux de travail**
-* **Horodatage** (Créé le)
-* **Durée d'exécution** (en secondes)
-* **Icône de résultat**:
-  * Coche verte : Le flux de travail a été exécuté avec succès.
-  * Croix rouge : Le flux de travail a été exécuté avec une erreur.
-  * Tiret orange : L'exécution a été arrêtée en raison d'une condition non satisfaite.
+#### **1. Compteurs de résumé des Workflows**
 
-En cliquant sur la **flèche** à gauche de chaque ligne, vous pouvez développer la **vue détaillée du flux de travail**.
+Situés en haut du panneau des journaux :
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
+* **Bleu** : nombre total de Workflows exécutés.
+* **Rouge** : Workflows qui se sont terminés par des **erreurs**.
+* **Jaune** : Workflows qui n'ont **pas été terminés** en raison de conditions non remplies.
+* **Vert** : Workflows **exécutés** avec succès.
 
-### **Vue détaillée du flux de travail**
+#### **2. Tableau des exécutions de Workflow**
 
-En cliquant sur une ligne de flux de travail spécifique, vous ouvrez son **journal d'exécution détaillé**, montrant :
+Chaque ligne du tableau représente une exécution de Workflow et comprend :
+
+* **Workflow Name**
+* **Timestamp** (Created On)
+* **Runtime** (en secondes)
+* **Result Icon** :
+  * Coche verte : le Workflow a été exécuté avec succès.
+  * Croix rouge : le Workflow a été exécuté avec une erreur.
+  * Tiret orange : l'exécution a été arrêtée car une condition n'était pas remplie
+
+Cliquer sur la **flèche** à gauche de chaque ligne développe la **vue détaillée du Workflow**.
+
+<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Expanded workflow log row showing When and And condition cards with green checks and a grayed card that was not met, plus card logs" width="563"><figcaption></figcaption></figure></div>
+
+### **Vue détaillée du Workflow**
+
+Cliquer sur une ligne de Workflow spécifique ouvre son **journal d'exécution détaillé**, qui affiche :
 
 #### **Évaluation des conditions**
 
-* Bloc **Quand...** : Condition initiale.
-* Bloc(s) **Et...** : Conditions supplémentaires.
-* Bloc(s) **Alors...** : Actions effectuées lorsque toutes les conditions sont remplies.
+* Bloc **When...** : condition initiale.
+* Bloc(s) **And...** : conditions supplémentaires.
+* Bloc(s) **Then...** : actions effectuées lorsque toutes les conditions sont remplies.
 
-Chaque ligne de condition montre :
+Chaque ligne de condition indique :
 
-* Coche **verte** : Condition remplie.
-* Tiret **orange** : Condition non remplie.
-* Croix **rouge** : La condition a échoué **en raison d'une erreur**
+* **Coche verte** : la condition était remplie.
+* **Tiret orange** : la condition n'était pas remplie.
+* **Croix rouge** : la condition a échoué **en raison d'une erreur**
 
-### **Note de comportement importante**
+### **Note importante sur le comportement**
 
-Si une condition dans un flux de travail n'est **pas remplie**, le système **arrête d'évaluer d'autres cartes de flux de travail** dans ce flux de travail. Ce comportement évite un traitement inutile. En tant qu'indicateur visuel, la carte qui **n'a pas rempli sa condition** est affichée en **gris**, et toutes les **cartes suivantes** dans le même flux de travail apparaîtront également en **gris**, indiquant qu'elles n'ont pas été **exécutées**.
+Si une condition d'un Workflow n'est **pas remplie**, le système **cesse d'évaluer les autres cartes de Workflow** de ce Workflow. Ce comportement évite un traitement inutile\
+Comme indicateur visuel, la carte qui **ne remplit pas sa condition** s'affiche en **gris**, et toutes les **cartes suivantes** du même Workflow apparaissent également en **gris**, ce qui indique qu'elles n'ont **pas été exécutées**.

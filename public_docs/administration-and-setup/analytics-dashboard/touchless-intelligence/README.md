@@ -2,6 +2,12 @@
 
 Touchless Intelligence responde a dos preguntas distintas: **¿DocBits extrajo correctamente la factura?** Y **¿terminó todo el proceso sin una intervención de procesamiento?** Una extracción correcta todavía puede necesitar trabajo cuando los datos de Infor difieren. AP es el equipo humano de cuentas por pagar.
 
+## Vídeo: resumen del informe Touchless
+
+Esta introducción ilustrada explica cómo DocBits convierte los documentos en resultados de procesamiento sin intervención, cómo leer la tasa y la tendencia Touchless y cómo el seguimiento del documento ayuda a detectar y eliminar bloqueos recurrentes.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-report-xiaohei/v1/es.mp4" %}
+
 ## Vídeo: funciones del informe Touchless
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/es.mp4" %}

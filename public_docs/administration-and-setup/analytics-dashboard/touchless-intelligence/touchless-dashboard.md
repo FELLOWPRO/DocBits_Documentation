@@ -110,6 +110,15 @@ La file d'attente classe A devant B parce que le **gain attendu** est mesuré pa
 
 Utilisez le champ de recherche (« Search supplier number or name ») pour trouver un fournisseur. Cliquez sur une ligne pour ouvrir le **Supplier Diagnosis**.
 
+### Vue fournisseur ou vue groupe
+
+Par défaut, la file affiche une ligne par fournisseur. Le commutateur **Supplier | Group** à côté du champ de recherche modifie cela :
+
+* **Supplier** répertorie chaque clé de fournisseur telle qu'elle apparaît sur vos documents. C'est le réglage par défaut, qui se comporte comme la file avant l'existence du graphe.
+* **Group** regroupe sur une seule ligne les clés de fournisseur que DocBits a rassemblées. Une ligne groupée affiche les noms fusionnés dans la colonne **Members** et les montre tous dans une infobulle.
+
+Une ligne groupée n'ouvre pas de **Supplier Diagnosis**, car le diagnostic porte sur une seule clé de fournisseur. Revenez à **Supplier** et cliquez sur le fournisseur souhaité. Tant que DocBits n'a pas construit de graphe pour votre organisation, la vue groupe renvoie les mêmes lignes que la vue fournisseur, sans erreur.
+
 ### Comparer les fournisseurs
 
 <figure><img src="../../../.gitbook/assets/touchless-compare-suppliers-fr.png" alt="La page Compare suppliers avec trois fournisseurs côte à côte et un graphique en barres de leurs résultats"><figcaption><p>Trois fournisseurs côte à côte : taux pur, documents perdus et récupérables, cause racine, gain attendu et un graphique en barres des résultats. Chaque <strong>Open</strong> mène au Supplier Diagnosis. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
@@ -125,6 +134,26 @@ La comparaison affiche les fournisseurs côte à côte : **Pure rate**, **Lost d
 Le bouton **Analyse n clusters with AI** analyse les clusters de problèmes au plus fort potentiel touchless (au moins un nombre minimal de documents chacun). Il faut environ 13 secondes par cluster et cela couvre **toute l'organisation**. Seuls les administrateurs peuvent le lancer.
 
 Pendant l'exécution, vous voyez **Queued**, **Running**, **Done**, **Already analysed** ou **Error** pour chaque cluster, avec un lien **Open cluster**. Si l'IA est désactivée ou non configurée dans l'environnement, le bouton est désactivé avec la raison, et **tout le reste de la page continue de fonctionner**.
+
+## Ontology : comment DocBits regroupe vos fournisseurs
+
+La zone comporte deux onglets : **Report** contient le tableau de bord décrit ci-dessus, **Ontology** affiche le graphe des fournisseurs utilisé par la vue groupe de la file. L'onglet est en lecture seule. Il ne modifie aucun réglage et aucun document.
+
+DocBits déduit le graphe une fois par nuit à partir des documents traités par votre organisation. Un nœud fournisseur porte un nom tel qu'il est imprimé sur un document ; une arête relie les noms que DocBits lit comme une seule et même entreprise, par exemple parce que l'orthographe ne diffère que légèrement ou parce que les deux portent le même identifiant fiscal. À côté du titre, vous voyez la version du graphe et la date de son calcul. **Reload** récupère à nouveau le graphe actuel.
+
+L'onglet comporte trois parties :
+
+| Partie | Contenu |
+| --- | --- |
+| **Your suppliers, grouped** | Les groupes et le nombre d'orthographes que chacun contient. Un groupe avec une seule orthographe est également listé. |
+| **How it all connects** | Le graphe : fournisseurs et groupes de fournisseurs, les domaines thématiques où les factures restent bloquées, les raisons concrètes et les champs que les personnes doivent corriger le plus souvent. |
+| **Explanation** | Les détails du nœud sélectionné : **What this is based on** énumère les éléments de preuve, **Also written as** énumère les autres orthographes que DocBits a vues, et **fixed by DocBits** (avec une icône de cadenas) marque un nœud que DocBits gère lui-même et non votre organisation. |
+
+Les types de nœuds sont expliqués en langage simple dans l'onglet : un nom de fournisseur est un nom exactement tel qu'il apparaît sur vos documents, un domaine thématique est un endroit où les factures restent typiquement bloquées et nécessitent une personne, une raison est une cause concrète d'une exécution automatique échouée, et un champ est un champ de document que les personnes doivent souvent corriger ou remplir.
+
+Un graphe vide est un état normal. Il affiche **DocBits is still learning** avec la note que la vue d'ensemble est construite chaque nuit et apparaît après la prochaine exécution. Une organisation récente ou une exécution nocturne manquée se présentent ainsi ; ce n'est pas une erreur.
+
+Le graphe fonctionne aussi sans souris : Tab passe à un groupe ou à un nœud, Enter ou Space le sélectionne et remplit **Explanation**.
 
 ## Travailler avec Touchless Intelligence : une routine
 

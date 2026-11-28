@@ -496,6 +496,7 @@
           * [Calculer le prix unitaire de la commande](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md)
           * [Bon de commande](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order.md)
           * [Export des lignes de commande non appariées](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/export-not-matched-po-lines.md)
+          * [Quantité exportée dans l'unité de mesure de base](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/export-quantity-in-base-unit-of-measure.md)
           * [Paramètres de tolérance de commande d'achat / Tolérance de commande d'achat supplémentaire](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md)
           * [Exportation alternative](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/alternate-export.md)
           * [Statuts de commande exclus du rapprochement](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md)

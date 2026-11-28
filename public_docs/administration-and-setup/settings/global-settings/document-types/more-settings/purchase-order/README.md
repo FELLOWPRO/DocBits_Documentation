@@ -1,4 +1,4 @@
-# Bon de commande
+# Commande d'achat
 
 La carte **Purchase Order** des **More Settings** d'un type de document contrôle la manière dont les documents de ce type sont appariés aux commandes d'achat. Les paramètres s'appliquent à un seul type de document à la fois : ouvrez donc d'abord le type de document que vous voulez modifier sous **Settings → Document Types**.
 

@@ -23,7 +23,7 @@ Les paramètres peuvent affecter des documents en cours d'utilisation. Vérifiez
 
 ## Pages associées
 
-* [Bon de commande](README.md)
+* [Commande d'achat](README.md)
 * [Export des lignes de commande non appariées](export-not-matched-po-lines.md)
 * [Exportation alternative](alternate-export.md)
 

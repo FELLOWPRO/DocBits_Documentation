@@ -927,6 +927,7 @@
   * [将 AI Workforce 连接到 Teams 和 Discord](advanced-functions-and-tools/ai-workforce-chat-connections.md)
   * [检查 AI 智能体学到的内容](advanced-functions-and-tools/ai-workforce-agent-memory.md)
 * [DocBits MCP](advanced-functions-and-tools/docbits-mcp/README.md)
+  * [Quick Connect](advanced-functions-and-tools/docbits-mcp/quick-connect.md)
   * [设置与配置](advanced-functions-and-tools/docbits-mcp/setup-and-configuration.md)
   * [使用 Claude 或 Codex 配置 DocBits](advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md)
   * [示例](advanced-functions-and-tools/docbits-mcp/examples.md)

@@ -49,6 +49,7 @@ Lesen Sie [Was er kann und was nicht](what-it-can-and-cannot-do.md), bevor Sie s
 | [Den richtigen Agenten wählen](choose-the-right-agent.md) | Die integrierten Agenten verstehen und den passenden für Ihre Frage wählen |
 | [Fehlerbehebung](troubleshooting.md) | Ein Symptom nachschlagen und die passende Maßnahme finden |
 | [Was er kann und was nicht](what-it-can-and-cannot-do.md) | Grenzen verstehen und wissen, was getestet wurde |
+| [Websuche](web-search.md) | Die optionale Websuche einschalten und Rückfrage, Datenschutz und Grenzen verstehen |
 | [Branchenvorlagen](industry-templates/README.md) | Sehen, was die Vorlage Ihrer Branche bietet, mit Beispielfragen |
 
 {% hint style="warning" %}

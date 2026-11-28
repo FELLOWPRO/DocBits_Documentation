@@ -105,7 +105,9 @@ Fragen zu Verarbeitungsort, eingesetztem Sprachmodell und Auftragsverarbeitung b
 
 ## Nicht verfügbar
 
-Folgendes gehört heute nicht zum Wissensassistenten und wird nicht angeboten: Websuche, Ausführen von Code in einer Sandbox, Chat-Kanäle wie E-Mail oder Messenger, eigene Sprachmodelle, getrennte Unterorganisationen und eine Desktop-App. Einen Termin nennen wir für nichts davon.
+Die Websuche ist optional und standardmäßig aus; ein Administrator schaltet sie ein (siehe [Websuche](web-search.md)). Sie ist als Best Effort gekennzeichnet und ersetzt keine Registerabfrage. Ein eigener Suchanbieter mit eigenem Schlüssel ist geplant und noch nicht verfügbar.
+
+Folgendes gehört heute nicht zum Wissensassistenten und wird nicht angeboten: Ausführen von Code in einer Sandbox, Chat-Kanäle wie E-Mail oder Messenger, eigene Sprachmodelle, getrennte Unterorganisationen und eine Desktop-App. Einen Termin nennen wir für nichts davon.
 
 ## Nicht getestet (keine Aussage möglich)
 

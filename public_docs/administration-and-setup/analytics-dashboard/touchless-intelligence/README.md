@@ -2,6 +2,14 @@
 
 Touchless Intelligence answers two separate questions: **Did DocBits extract the invoice correctly?** And: **Did the whole process finish without a processing intervention?** Correct extraction can still need rework when Infor data differs. AP means the human Accounts Payable team.
 
+## Video: Touchless report overview
+
+This illustrated introduction explains how DocBits turns documents into touchless processing results, how to read the Touchless rate and trend, and how Document Trace helps you find and remove recurring blockers.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-report-xiaohei/v1/en.mp4" %}
+
+[Deutsche Version ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-report-xiaohei/v1/de.mp4)
+
 ## Video: Touchless report functions
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/en.mp4" %}

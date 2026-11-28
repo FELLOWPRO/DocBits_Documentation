@@ -12,7 +12,7 @@ Sie öffnen ihn unter **Settings → Document Types**, wählen auf der Karte des
 Eine Zeile ohne Umrechnungsfaktor wird unverändert exportiert; ein fehlender Faktor blockiert den Export also nicht.
 
 {% hint style="info" %}
-Die Umrechnung gilt nur für den Infor-LN-Export. Andere Exportziele behalten die berechnete Einheit.
+Die Umrechnung gilt nur für den Infor-LN-Export. Andere Exportziele behalten die abgerechnete Einheit.
 {% endhint %}
 
 ## Wann Sie ihn einsetzen

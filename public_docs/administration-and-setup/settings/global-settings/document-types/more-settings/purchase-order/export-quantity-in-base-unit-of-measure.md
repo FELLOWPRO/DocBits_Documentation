@@ -19,7 +19,7 @@ La conversión se aplica solo a la exportación a Infor LN. Los demás destinos 
 
 Active el interruptor cuando la instancia de Infor LN espere cantidades de pedido en la unidad de medida base. La conversión utiliza el factor almacenado en la línea de pedido, no un factor que DocBits calcule a partir del maestro de artículos.
 
-La configuración puede afectar a documentos en producción. Compruebe el resultado con un documento de prueba antes de guardar el cambio en producción. El interruptor cambia los valores exportados; no cambia cómo se comparan las líneas de factura y de pedido.
+La configuración puede afectar a documentos en uso. Compruebe el resultado con un documento de prueba antes de guardar el cambio en producción. El interruptor cambia los valores exportados; no cambia cómo se comparan las líneas de factura y de pedido.
 
 ## Páginas relacionadas
 

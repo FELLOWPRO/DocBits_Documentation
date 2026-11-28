@@ -7,7 +7,7 @@ Sie öffnen ihn unter **Settings → Document Types**, wählen auf der Karte des
 ## Was der Schalter bewirkt
 
 * **Off:** DocBits exportiert die Menge und den Stückpreis in der Einheit der Rechnung.
-* **On:** DocBits rechnet die Menge und den Stückpreis jeder zugeordneten Bestellzeile mit deren Umrechnungsfaktor in die Basismaßeinheit dieser Bestellzeile um und schreibt den Code der Basiseinheit statt des Codes der berechneten Einheit.
+* **On:** DocBits rechnet die Menge und den Stückpreis jeder zugeordneten Bestellzeile mit deren Umrechnungsfaktor in die Basismaßeinheit dieser Bestellzeile um und schreibt den Code der Basiseinheit statt des Codes der abgerechneten Einheit.
 
 Eine Zeile ohne Umrechnungsfaktor wird unverändert exportiert; ein fehlender Faktor blockiert den Export also nicht.
 

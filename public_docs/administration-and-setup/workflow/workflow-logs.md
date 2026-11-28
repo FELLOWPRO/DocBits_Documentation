@@ -1,110 +1,115 @@
 # Workflow-Protokolle
 
+Für erzählte Erklärungen der erweiterten Protokollansicht sehen Sie [Die relevante Ausführung finden](advanced-workflow-builder/videos.md#find-the-relevant-execution) und [Knoten verfolgen und diagnostizieren](advanced-workflow-builder/videos.md#trace-nodes-and-diagnose). Beide Kapitel sind auf Englisch und Deutsch verfügbar, mit Untertiteldateien und Transkripten.
+
 ## **Übersicht**
 
-Die **Workflow-Protokolle** ermöglichen es Benutzern, zu analysieren, welche Workflows für ein Dokument ausgeführt wurden, die Ausführungsergebnisse zu verstehen und in die Detailinformationen auf Bedingungsebene einzutauchen, um Fehlerbehebung oder Validierung durchzuführen.
+Die **Workflow Logs** ermöglichen es Benutzern zu analysieren, welche Workflows für ein Dokument ausgeführt wurden, die Ausführungsergebnisse zu verstehen und bis auf Bedingungsebene in die Details zu gehen, um Fehler zu beheben oder zu validieren.
 
-## **Zugriff auf Workflow-Protokolle**
+## **Zugriff auf die Workflow Logs**
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4" %}
 
-**Video:** Die Workflow-Logs lesen · 1:30 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.vtt)
+**Video:** Die Workflow Logs lesen · 1:34 · [Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.vtt)
 
 <details>
 
 <summary>Transkript</summary>
 
-**Workflow-Logs öffnen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=0.25)
+**Workflow Logs öffnen** · [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=0.25)
 
-Jedes Dokument speichert die Logs der Workflows, die darauf gelaufen sind. Öffnen Sie im Dokumenten-Dashboard die Aktionen eines Dokuments und wählen Sie Workflow-Logs.
+Jedes Dokument behält die Logs der Workflows, die darauf gelaufen sind. Öffnen Sie im Dashboard die Aktionen eines Dokuments und wählen Sie Workflow Logs.
 
-**Läufe und ihre Ergebnisse** · [0:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=11.016)
+**Läufe und ihre Ergebnisse** · [0:12](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=12.15)
 
-Oben sehen Sie, wie viele Läufe es gab und wie viele mit einem Fehler, einer gescheiterten Bedingung oder Erfolg endeten. Darunter steht jeder Lauf mit Workflow, Zeit, Dauer und Ergebnis.
+Oben sehen Sie, wie viele Läufe es gab und wie viele mit einem Fehler, einer nicht erfüllten Bedingung oder Erfolg endeten. Darunter ist jeder Lauf mit seinem Workflow, Zeit, Dauer und Ergebnis aufgeführt.
 
-**Der Pfad eines Laufs** · [0:22](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=22.516)
+**Der Pfad eines Laufs** · [0:25](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=25.716)
 
-Ziehen Sie den Trenner nach links, damit die Logs mehr Platz haben. Klicken Sie dann auf einen Lauf, um seinen Pfad zu sehen. Jede Karte zeigt ihr Ergebnis: grün für Erfolg, orange für eine gescheiterte Bedingung, rot für einen Fehler. Hier endete die Und-Karte mit einer gescheiterten Bedingung, also lief die Dann-Karte danach nicht.
+Ziehen Sie den Trenner nach links, damit die Logs mehr Platz haben. Klicken Sie dann auf einen Lauf, um den Pfad zu sehen, den er genommen hat. Jede Karte zeigt ihr Ergebnis: grün für Erfolg, orange für eine nicht erfüllte Bedingung, rot für einen Fehler. Hier endete die And-Karte mit einer nicht erfüllten Bedingung, daher lief die Then-Karte danach nicht.
 
-**Warum eine Karte so endete** · [0:43](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=43.05)
+**Warum eine Karte so endete** · [0:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=45.35)
 
-Wählen Sie eine Karte, um ihr Log zu lesen. Es sagt, was die Karte verglichen hat und warum sie so endete. Hier ist das Dokument bereit zur Prüfung, aber die Karte erwartet die zweite Genehmigung.
+Wählen Sie eine Karte, um ihr Log zu lesen. Es sagt, was die Karte verglichen hat und warum sie so endete. Hier ist das Dokument bereit zur Validierung, aber die Karte erwartet eine ausstehende zweite Genehmigung.
 
-**Ein Fehler und sein Grund** · [0:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=56.45)
+**Ein Fehler und sein Grund** · [0:58](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=58.283)
 
-Ein Lauf, der mit einem Fehler endet, zeigt die fehlgeschlagene Karte in Rot. Hier konnte die Und-Karte die Lieferadresse nicht aus dem Dokument lesen. Fehlende Daten sind immer ein Fehler, also lief die Dann-Karte danach nicht.
+Ein Lauf, der mit einem Fehler endet, zeigt die fehlgeschlagene Karte in Rot. Hier konnte die And-Karte die Lieferadresse nicht aus dem Dokument lesen. Fehlende Daten sind immer ein Fehler, daher lief die Then-Karte danach nicht.
 
-**Läufe finden** · [1:11](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=71.216)
+**Läufe finden** · [1:13](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=73.216)
 
-Bei vielen Läufen finden Sie mit der Suche einen Workflow nach Namen, und mit dem Filterknopf grenzen Sie die Liste nach Status oder Datum ein.
+Bei vielen Läufen finden Sie mit der Suche einen Workflow nach Namen und mit dem Filter grenzen Sie die Liste nach Status oder Datum ein.
 
-**Hinweis zum Ausführungslimit** · [1:20](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/de.mp4#t=80.316)
+**Hinweis zum Ausführungslimit** · [1:23](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4#t=83.116)
 
 Oben erscheint ein Hinweis, wenn ein Workflow auf diesem Dokument sein Ausführungslimit erreicht hat. Das Video über Ausführungslimits erklärt ihn.
 
 </details>
 
-Um auf die Workflow-Protokolle zuzugreifen:
+So greifen Sie auf die Workflow Logs zu:
 
 1. Navigieren Sie zum **Dashboard**.
-2. Klicken Sie auf das **Aktionen-Menü** (Drei-Punkte-Symbol) neben dem gewünschten Dokument.
-3. Wählen Sie **Workflow-Protokolle** aus dem Menü aus.
-   * <mark style="color:red;">**Hinweis**</mark>**:** Die Workflow-Funktion muss aktiviert sein, um diese Option nutzen zu können.
-4.  Ein **Seitenbereich** wird geöffnet, der eine Zusammenfassung der ausgeführten Workflows zeigt.
+2. Klicken Sie auf das **Actions menu** (Drei-Punkte-Symbol) neben dem gewünschten Dokument.
+3. Wählen Sie **Workflow Logs** aus dem Menü.
+   * <mark style="color:red;">**Note**</mark>: Die Workflow-Funktion muss aktiviert sein, um diese Option zu erreichen.
+4.  Ein **side panel** öffnet sich und zeigt eine Zusammenfassung der ausgeführten Workflows.\
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAlgg3jnSVRVyuYxy4tAp%252Fimage.png%3Falt%3Dmedia%26token%3D4e8fcd63-6113-47eb-95a4-95a7821dc9b9\&width=768\&dpr=4\&quality=100\&sign=9e6ba9f5\&sv=2)
+    <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="Dashboard with the workflow logs side panel showing summary counters and a table of executed workflows with result icons" width="563"><figcaption></figcaption></figure></div>
 
-## **Komponenten des Workflow-Protokoll-Panels**
+## **Ein Log als eigene Seite öffnen**
 
-#### **1. Workflow-Zusammenfassungszähler**
+Das side panel verdeckt die Dokumentenliste. Für ein Dokument, dessen Workflow Sie eine Weile untersuchen, öffnen Sie dasselbe Log als vollständige Seite: Wählen Sie das Symbol für ein neues Fenster im Kopf des Panels. Die Seite hat die Adresse `/workflows/logs/<document id>`, sodass Sie sie in einem zweiten Browserfenster offen halten oder die Adresse an eine Kollegin oder einen Kollegen senden können, der Zugriff auf das Dokument hat.
 
-Oben im Protokollbereich befinden sich:
+Die Seite zeigt dieselben Zusammenfassungszähler, dieselbe Tabelle der ausgeführten Workflows und dieselbe Detailansicht wie das Panel.
 
-* **Blau**: Gesamtanzahl der ausgeführten Workflows.
+## **Zu einem anderen Dokument wechseln**
+
+Auf der vollständigen Seite findet ein Suchfeld über der Liste ein Dokument nach Namen oder nach seiner ID. Die Ergebnisse zeigen das Upload-Datum, den Bearbeiter und den Status jedes Dokuments, sodass Sie Dokumente mit ähnlichen Namen unterscheiden können. Wenn Sie ein Ergebnis auswählen, wird dessen Workflow Log geladen und das Dokument in die Adresse übernommen. Die Suche umfasst die Dokumente Ihrer Organisation, die Sie laut Ihren Berechtigungen sehen dürfen; wenn nichts passt, sagt DocBits das unter dem Feld, statt eine leere Liste zu zeigen.
+
+## **Komponenten des Workflow Logs Panel**
+
+#### **1. Zusammenfassungszähler des Workflows**
+
+Oben im Logs-Panel:
+
+* **Blau**: Gesamtzahl der ausgeführten Workflows.
 * **Rot**: Workflows, die mit **Fehlern** endeten.
-* **Gelb**: Workflows, die aufgrund von Bedingungsfehlern **nicht abgeschlossen** wurden.
+* **Gelb**: Workflows, die wegen nicht erfüllter Bedingungen **nicht abgeschlossen** wurden.
 * **Grün**: Erfolgreich **ausgeführte** Workflows.
 
-#### **2. Workflow-Ausführungstabelle**
+#### **2. Tabelle der Workflow-Ausführungen**
 
 Jede Zeile in der Tabelle repräsentiert eine Workflow-Ausführung und enthält:
 
-* **Workflow-Name**
-* **Zeitstempel** (Erstellt am)
-* **Laufzeit** (in Sekunden)
-* **Ergebnis-Symbol**:
+* **Workflow Name**
+* **Timestamp** (Created On)
+* **Runtime** (in Sekunden)
+* **Result Icon**:
   * Grüner Haken: Workflow wurde erfolgreich ausgeführt.
   * Rotes Kreuz: Workflow wurde mit einem Fehler ausgeführt.
-  * Oranger Strich: Ausführung wurde aufgrund einer nicht erfüllten Bedingung gestoppt.
+  * Oranger Strich: Die Ausführung wurde gestoppt, weil eine Bedingung nicht erfüllt war.
 
 Durch Klicken auf den **Pfeil** links von jeder Zeile wird die **Detailansicht des Workflows** erweitert.
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Expanded workflow log row showing When and And condition cards with green checks and a grayed card that was not met, plus card logs" width="563"><figcaption></figcaption></figure></div>
 
 ### **Detailansicht des Workflows**
 
-Durch Klicken auf eine bestimmte Workflow-Zeile wird das **ausführliche Ausführungsprotokoll** geöffnet, das Folgendes zeigt:
+Durch Klicken auf eine bestimmte Workflow-Zeile wird das **ausführliche Ausführungsprotokoll** geöffnet, das zeigt:
 
 #### **Bedingungsauswertung**
 
-* **Wenn...**-Block: Anfangsbedingung.
-* **Und...**-Block(s): Zusätzliche Bedingungen.
-* **Dann...**-Block(s): Aktionen, die ausgeführt werden, wenn alle Bedingungen erfüllt sind.
+* **When...**-Block: Anfangsbedingung.
+* **And...**-Block bzw. -Blöcke: Zusätzliche Bedingungen.
+* **Then...**-Block bzw. -Blöcke: Aktionen, die ausgeführt werden, wenn alle Bedingungen erfüllt sind.
 
 Jede Bedingungszeile zeigt:
 
 * **Grüner Haken**: Bedingung wurde erfüllt.
 * **Oranger Strich**: Bedingung wurde nicht erfüllt.
-* **Rotes Kreuz**: Bedingung ist **aufgrund eines Fehlers** fehlgeschlagen.
+* **Rotes Kreuz**: Bedingung ist **aufgrund eines Fehlers** fehlgeschlagen
 
-### **Wichtiger Verhaltenshinweis**
+### **Wichtiger Hinweis zum Verhalten**
 
-In einer Standard-Kartenfolge beendet eine nicht erfüllte Bedingung die nachfolgende Folge. Im Advanced Workflow bestimmt dagegen die verbundene Ausgangsroute, welche Knoten als Nächstes erreichbar sind. Graue Karten können übersprungen worden sein; sie belegen keinen technischen Fehler. Wählen Sie den betreffenden Knoten aus und lesen Sie dessen konkreten Status.
-
-Auch ein grüner Laufkopf allein belegt keinen fachlichen Abschluss. Im [geprüften ALL-Beispiel](masterclass/control-nodes.md) enthält der gespeicherte echte Dokumentlauf vier erfolgreiche Knoten, während ALL und die Abschlussaktion übersprungen werden. Prüfen Sie deshalb die erwartete Abschlussaktion und die Wirkung am Dokument.
-
-## Einen konkreten Fehler bis zum Nachtest verfolgen
-
-Wählen Sie einen konkreten Lauf und notieren Sie Zeitpunkt, Workflow-Stand und Dokumentbezug. Öffnen Sie den ersten relevanten Knoten und vergleichen Sie dessen tatsächliche Eingabe, Kartenversion, Operator und angeschlossenen Ausgang. Unterscheiden Sie einen regulären Nichttreffer von einem technischen Fehler und von einer nicht erreichten Karte. Im Advanced Workflow kann ein regulär falscher Vergleich eine ausdrücklich verbundene Alternativroute erreichen; übertragen Sie das Stoppen einer Standard-Kartenfolge nicht pauschal auf den gesamten Graphen.
-
-Nach einer gezielten Korrektur vergleichen Sie einen neuen Lauf mit dem alten. Prüfen Sie die fachliche Wirkung am Dokument oder am eigenen Testziel. Ein alter grüner Protokolleintrag belegt den neuen Stand nicht. Konkrete Beispiele stehen unter [Workflow-Meldungen](workflow-error-catalog.md) und [systematischer Fehlerdiagnose](workflow-troubleshooting.md).
+Wenn eine Bedingung in einem Workflow **nicht erfüllt** ist, **stoppt das System die Auswertung aller weiteren Workflow-Karten** innerhalb dieses Workflows. Dieses Verhalten verhindert unnötige Verarbeitung\
+Als visueller Hinweis wird die Karte, die **ihre Bedingung nicht erfüllt hat**, in **Grau** dargestellt, und alle **nachfolgenden Karten** im selben Workflow erscheinen ebenfalls **Grau**, was anzeigt, dass sie **nicht ausgeführt** wurden.
